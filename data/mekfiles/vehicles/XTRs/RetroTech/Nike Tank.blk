@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,16 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-
-# Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 Tank
 </UnitType>
@@ -33,9 +24,9 @@ Tank
 Nike Air Defense Platform
 </Name>
 
-<model>
+<Model>
 
-</model>
+</Model>
 
 <mul id:>
 4725
@@ -44,6 +35,10 @@ Nike Air Defense Platform
 <year>
 3079
 </year>
+
+<originalBuildYear>
+3079
+</originalBuildYear>
 
 <type>
 IS Level 3
@@ -65,9 +60,17 @@ Tracked
 6
 </engine_type>
 
-<fuel>
-2
-</fuel>
+<armor_type>
+0
+</armor_type>
+
+<armor_tech_rating>
+0
+</armor_tech_rating>
+
+<armor_tech_level>
+1
+</armor_tech_level>
 
 <armor>
 35
@@ -77,21 +80,13 @@ Tracked
 35
 </armor>
 
-<barrating>
-9
-</barrating>
-
-<structural_tech_rating>
-2
-</structural_tech_rating>
-
 <Body Equipment>
 Armored Chassis
 Advanced Fire Control
-Light AC/2 Ammo
-Light AC/2 Ammo
-IS Ammo 5-X
-IS Ammo 5-X
+IS Ammo LAC/2
+IS Ammo LAC/2
+IS LB 5-X AC Ammo
+IS LB 5-X AC Ammo
 </Body Equipment>
 
 <Front Equipment>
@@ -109,8 +104,8 @@ IS Ammo 5-X
 <Turret Equipment>
 Light Auto Cannon/2
 Light Auto Cannon/2
-IS LB 5-X AC
-IS LB 5-X AC
+ISLBXAC5
+ISLBXAC5
 </Turret Equipment>
 
 <source>
@@ -120,3 +115,4 @@ XTR:RetroTech
 <tonnage>
 90.0
 </tonnage>
+

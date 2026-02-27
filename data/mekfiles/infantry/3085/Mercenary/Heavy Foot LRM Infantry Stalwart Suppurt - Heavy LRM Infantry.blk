@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,20 +15,15 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-#Write the version number just in case...
-<Version>
-MAM0
-</Version>
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 Infantry
 </UnitType>
+
 <Name>
 Heavy Foot LRM Infantry
 </Name>
+
 <Model>
 Stalwart Support - Heavy LRM Infantry
 </Model>
@@ -36,24 +31,15 @@ Stalwart Support - Heavy LRM Infantry
 <mul id:>
 1430
 </mul id:>
-<squad_size>
-7
-</squad_size>
-<squadn>
-4
-</squadn>
-<Primary>
-InfantryFederatedBarrettM42B
-</Primary>
-<Secondary>
-InfantryLRM
-</Secondary>
-<secondn>
-2
-</secondn>
-<armorKit>
-ISBallisticPlateStandard
-</armorKit>
+
+<year>
+3057
+</year>
+
+<originalBuildYear>
+3057
+</originalBuildYear>
+
 <type>
 IS Level 3
 </type>
@@ -61,12 +47,39 @@ IS Level 3
 <role>
 Ambusher
 </role>
-<year>
-3057
-</year>
-<era>
-Star League
-</era>
+
 <motion_type>
 Leg
 </motion_type>
+
+<Troopers Equipment>
+Ballistic Plate, Standard
+</Troopers Equipment>
+
+<Field Guns Equipment>
+</Field Guns Equipment>
+
+<squad_size>
+7
+</squad_size>
+
+<squadn>
+4
+</squadn>
+
+<secondn>
+2
+</secondn>
+
+<Primary>
+InfantryFederatedBarrettM42B
+</Primary>
+
+<Secondary>
+InfantryLRM
+</Secondary>
+
+<encumberingarmor>
+true
+</encumberingarmor>
+

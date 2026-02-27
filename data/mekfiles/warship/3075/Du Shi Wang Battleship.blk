@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,16 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-
-##Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 Warship
 </UnitType>
@@ -62,14 +53,14 @@ Aerodyne
 </motion_type>
 
 <transporters>
-asfbay:18.0:6:1
-cargobay:70000.0:4:3
+asfbay:18.0:6:1::-1:0
+cargobay:70000.0:4:3::-1:0
 dockingcollar
 dockingcollar
-crewquarters:1855.0:0
-1stclassquarters:650.0:0
-steeragequarters:50.0:0
-cargobay:73529.0:4:8
+crewquarters:1855.0:0:-1::-1:0
+1stclassquarters:650.0:0:-1::-1:0
+steeragequarters:50.0:0:-1::-1:0
+cargobay:73529.0:4:8::-1:0
 </transporters>
 
 <SafeThrust>
@@ -96,9 +87,13 @@ cargobay:73529.0:4:8
 41
 </armor_type>
 
-<armor_tech>
+<armor_tech_rating>
+0
+</armor_tech_rating>
+
+<armor_tech_level>
 5
-</armor_tech>
+</armor_tech_level>
 
 <armor>
 240
@@ -166,11 +161,34 @@ Naval Laser 45
 150
 </structural_integrity>
 
+# Fluff Date: 2026-02-24 13:31:06
+<capabilities>
+The Du Shi Wang battleship was designed for prolonged patrols, equipped with energy-based weaponry that eliminated the need for ammunition storage and reloading systems. Its primary offensive power came from four heavy naval PPCs mounted on the front, supported by significant frontal armor. This configuration allowed devastating frontal assaults, quickly overwhelming opponents when the battleship gained a tactical advantage. However, maneuvering relied heavily on the skill of the navigation crew, as the engines provided a standard two-and-a-half Gs of thrust. Despite its impressive capabilities, the Du Shi Wang had its limitations. The ship suffered from a class-based Capellan military mentality, with the majority of the crew residing in the forward section while senior officers, marines, and passengers occupied the rear. Lifeboats and escape pods were also insufficiently distributed, primarily serving the rear quarters and bridge, posing a challenge for crew members in other areas of the ship. These flaws became apparent during the intense fighting of the Age of War.
+</capabilities>
 
+<overview>
+The Du Shi Wang, the first battleship of the Capellan Confederation, was a formidable vessel designed to anchor the massive Capellan fleet. It was named after the god of burning suffocation, reflecting the destructive power it brought to the battlefield. As a long-range patrol ship, the Du Shi Wang featured energy-based weaponry and a pair of grav decks for crew well-being. While lacking the extensive broadsides of other battleships, its frontal assault capabilities with heavy naval PPCs and reinforced armor made it a fearsome opponent.
+</overview>
 
+<history>
+The Du Shi Wang battleship played a significant role in the opening engagements of the Age of War, showcasing its power and capabilities on the battlefield. It gained further recognition for its novel use of orbital bombardment during the Novaya Zemlya conflict in 2399. However, the Du Shi Wang class faced significant attrition over time. By the First Succession War, only a few vessels of its class remained, and by the end of the Second Succession War, all Du Shi Wang battleships had been lost. Despite its relatively short service life, the Du Shi Wang battleship left a lasting impact as the pioneering battleship of the Capellan Confederation. Its name became synonymous with devastating firepower and its involvement in crucial conflicts marked its place in the annals of warfare. The Du Shi Wang class battleships stood as a testament to the ambitious naval developments undertaken by the Duchy of Liao and the Capellan Confederation in their quest to establish a formidable fleet.
+</history>
 
+<manufacturer>
+Cynthiana Shipwrights Ltd.
+</manufacturer>
 
+<primaryFactory>
+Aldebaran
+</primaryFactory>
 
+<systemManufacturers>
+CHASSIS:Unknown
+ENGINE:Unknown
+ARMOR:Unknown
+COMMUNICATIONS:Unknown
+TARGETING:Unknown
+</systemManufacturers>
 
 <use>
 Battleship
@@ -240,47 +258,4 @@ TR:3075
 <escape_pod>
 15
 </escape_pod>
-
-# Fluff Date: 2026-02-24 13:31:06
-<overview>
-<p>The Du Shi Wang-class battleship was the first true WarShip built by the newly formed Capellan Confederation, launched in 2380 from the Cynthiana Shipwrights yards on Aldebaran. Named after the god of burning suffocation, this nine-hundred-thousand-ton vessel was designed to anchor the massive merchant fleets operated by the Duchy of Liao, projecting Capellan power across the stars through sheer intimidation and devastating forward firepower. The class is historically notable for pioneering the use of massed orbital bombardment against civilian targets at Novaya Zemlya in 2399, a grim distinction that established a dark precedent for the Age of War that followed. Less than a dozen Du Shi Wang battleships survived to see the First Succession War, and all had been lost or destroyed by the end of the Second.</p>
-</overview>
-
-<capabilities>
-<p>The Du Shi Wang carried an exclusively energy-based weapons suite, eliminating the need for ammunition storage and reloading systems and enabling the extended independent patrols for which it was designed. Four massive Heavy Naval PPCs dominated the nose arc, recently copied from stolen Terran Hegemony designs and backed by more frontal armor than had been mounted on any contemporary warship. Standard Capellan tactics involved pointing the enormous vessel directly at a target and overwhelming it with sustained heavy fire from these devastating weapons. Three NL45 naval lasers covered each fore quarter and aft quarter arc, while four NL45s protected each broadside, and a pair of Medium Naval PPCs guarded the stern. However, the engines were merely capable of two-and-a-half gravities of thrust, leaving the critical work of maneuvering to bring the strongest arcs to bear entirely in the hands of the navigation crew. The class also suffered from a deeply flawed internal arrangement reflecting Capellan class hierarchy, with senior officers enjoying exclusive access to the rear grav deck while lifeboats and escape pods were woefully insufficient for the majority of the crew quartered forward.</p>
-</capabilities>
-
-<deployment>
-<p>The CCS Mica Liao served with the Sarna Commonality Squadron on border patrol when the First Succession War erupted. At the Battle of Second Chance in February 2787, the Mica Liao engaged the Atreus-class battleship FWLS Sorunda in a brutal exchange, but the more heavily armed League vessel raked the Capellan battleship with forward batteries before turning to add a devastating broadside. Fighters exploited the weakened flank, destroying the Mica Liao. The CCS Sundermann Liao served as flagship of Task Force Devlin at the Battle of Calloway VI in 2789, where the intervention of the Free Worlds League Navy Third Fleet proved catastrophic, destroying the Sundermann Liao and most of the task force. The CCS Duncan Liao survived the disastrous first invasion of Oriente in December 2804, where nuclear-armed fighters destroyed three sister ships, but was itself shattered during the third invasion in September 2805 by forces led by the FWLS Bismarck. The CCS Jasmine Liao was captured by the SLDF and accompanied Kerensky on the Exodus, eventually serving Clan Mongoose as the Quicksilver Mongoose before being mothballed at Strana Mechty after near-destruction by the Smoke Jaguars.</p>
-</deployment>
-
-<history>
-<p>The Du Shi Wang program originated with the Duchy of Liao, which began work on a new battleship design even before the formal creation of the Capellan Confederation. Knowing that warfare was bound to escalate among the nascent Great Houses, the Duchy sought a capital ship around which to anchor its growing fleet. The resulting vessel was launched as the first Capellan battleship shortly after the Confederation coalesced, its armament built around Heavy Naval PPCs derived from designs stolen from the Terran Hegemony through espionage. Despite the wealth of both the Duchy and the Confederation, neither had the funds to outfit their craft with the massive broadside batteries that rival battleships possessed, leading designers to concentrate firepower forward in what amounted to a battering ram doctrine.</p><p>The Du Shi Wang quickly earned a fearsome reputation during the opening engagements of the Age of War. The class achieved particular infamy for the orbital bombardment of the Federated Suns world of Novaya Zemlya in 2399, the first recorded instance of massed orbital bombardment directed against civilian population centers. The devastating fighting of this era confirmed the design's internal flaws many times over, as the class-based crew arrangement left the majority of the ship's complement without adequate access to escape pods and lifeboats during catastrophic damage events.</p><p>By 2765, only five Du Shi Wang battleships remained operational, each forming the nucleus around which a Capellan commonality naval squadron was built, typically escorted by pairs of Aegis or Soyal-class heavy cruisers. The Confederation restored additional vessels to service in the buildup to the First Succession War, but fewer than twelve were available when hostilities erupted. The class fought in numerous engagements against the Free Worlds League, suffering devastating losses at Second Chance, Calloway VI, and Oriente. All Capellan Du Shi Wang battleships had been destroyed by the end of the Second Succession War. Only the Quicksilver Mongoose, captured by the SLDF and carried into exile with the Exodus fleet, survived into the Clan era before being mothballed at Strana Mechty.</p>
-</history>
-
-<manufacturer>
-Cynthiana Shipwrights Ltd.
-</manufacturer>
-
-<primaryFactory>
-Aldebaran
-</primaryFactory>
-
-<systemManufacturers>
-CHASSIS:Unknown
-ENGINE:Unknown
-ARMOR:Unknown
-JUMP_JET:Unknown
-COMMUNICATIONS:Unknown
-TARGETING:Unknown
-</systemManufacturers>
-
-<systemModels>
-CHASSIS:Unknown
-ENGINE:Unknown
-ARMOR:Standard
-JUMP_JET:Unknown
-COMMUNICATIONS:Unknown
-TARGETING:Unknown
-</systemModels>
 

@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,16 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-
-##Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 Warship
 </UnitType>
@@ -62,17 +53,17 @@ Aerodyne
 </motion_type>
 
 <transporters>
-smallcraftbay:6.0:2:1
-cargobay:139159.0:2:2
+smallcraftbay:6.0:2:1::-1:0
+cargobay:139159.0:2:2::-1:0
 dockingcollar
 dockingcollar
 dockingcollar
 dockingcollar
 dockingcollar
 dockingcollar
-steeragequarters:600.0:0
-1stclassquarters:450.0:0
-crewquarters:1204.0:0
+steeragequarters:600.0:0:-1::-1:0
+1stclassquarters:450.0:0:-1::-1:0
+crewquarters:1204.0:0:-1::-1:0
 </transporters>
 
 <SafeThrust>
@@ -99,9 +90,13 @@ crewquarters:1204.0:0
 41
 </armor_type>
 
-<armor_tech>
+<armor_tech_rating>
+0
+</armor_tech_rating>
+
+<armor_tech_level>
 5
-</armor_tech>
+</armor_tech_level>
 
 <armor>
 101
@@ -188,11 +183,34 @@ Naval PPC (Light)
 90
 </structural_integrity>
 
+# Fluff Date: 2026-02-24 13:31:06
+<capabilities>
+The Dart-class cruiser featured a unique design optimized for independent duty. It had a substantial cargo bay comprising over 15% of the ship's mass, along with six drop collars for handling military and civilian DropShips. The ship's maneuver drives, the Century 4000s, were known for their robustness and reliability. The Dart-class was equipped with a combination of heavy energy weapons and naval autocannons, providing firepower for various combat scenarios.
+</capabilities>
 
+<overview>
+The Dart-class cruiser was developed by Di Tron Heavy Industries in response to the Terran Navy's need for a versatile WarShip that could operate independently in various roles, including combat, exploration, and cargo transport. With its large fuel storage tanks, significant cargo bay, and reinforced structure, the Dart-class was designed to withstand the demands of space exploration and combat in the harsh environments of the Inner Sphere and beyond.
+</overview>
 
+<history>
+The Dart-class cruisers served the Terran Navy for nearly 200 years before being retired and replaced by the new Avatar cruisers. However, many of these retired Darts were purchased by Periphery nations and repurposed for non-military roles. They continued to see service, albeit with their weapons removed, during the Reunification War. The last known Dart-class cruiser, SLS Gettysburg, was destroyed during the New Vandenberg revolt in 2722. It faced an attempt by fanatical Periphery separatists to destroy the newer Essex-class destroyer. By the end of their operational life, the Dart-class cruisers had become a relic, making way for more advanced WarShips in the ever-evolving landscape of naval warfare.
+</history>
 
+<manufacturer>
+Di Tron Heavy Industries, Di Tron Heavy Industries
+</manufacturer>
 
+<primaryFactory>
+Terra, Zebebelgenubi
+</primaryFactory>
 
+<systemManufacturers>
+CHASSIS:Unknown
+ENGINE:Unknown
+ARMOR:Unknown
+COMMUNICATIONS:Unknown
+TARGETING:Unknown
+</systemManufacturers>
 
 <use>
 Light Cruiser
@@ -262,47 +280,4 @@ TR:3057r
 <escape_pod>
 29
 </escape_pod>
-
-# Fluff Date: 2026-02-24 13:31:06
-<overview>
-<p>The Dart-class light cruiser was among the earliest purpose-built WarShip designs produced for the Terran Alliance, conceived to address the young nation's need for a vessel capable of operating independently across the vast distances of explored and unexplored space. Built by Di Tron Heavy Industries, the Dart combined the roles of combat warship, exploration vessel, and cargo carrier into a single robust hull designed to function competently at the furthest reaches of Alliance territory and beyond. The class proved remarkably durable, serving for nearly two centuries before being retired in favor of the Avatar-class cruiser. Even after their withdrawal from front-line Hegemony service, stripped-down Darts found extended careers with Periphery nations, and remarkably individual vessels continued to appear in conflicts well into the twenty-eighth century.</p>
-</overview>
-
-<capabilities>
-<p>The Dart's design philosophy emphasized self-sufficiency above all else. Nearly nine thousand tons of fuel storage and a cargo bay massing over fifteen percent of the ship's total displacement allowed the class to sustain prolonged independent deployments without resupply. Six docking collars accommodated both military and civilian DropShips, while nearly twelve hundred tons of standard armor and a structural integrity rating uncommonly high for its tonnage class gave the vessel the durability needed for extended service in harsh conditions.</p><p>The Dart's armament centers on a diverse mix of capital weapons distributed across all arcs. The nose mounts two NAC/20 autocannons and two NL45 naval lasers alongside four Killer Whale missile launchers, providing heavy forward striking power. NAC/25 batteries cover the forward quarter, aft quarter, and aft arcs, while the broadside arcs carry paired NAC/30 batteries and two Light Naval PPCs. Six NL35 naval lasers round out the secondary capital armament. The Century 4000 maneuver drives that power the vessel earned a reputation for exceptional reliability, with engineers joking that scheduled maintenance required little more than changing the oil and filters.</p>
-</capabilities>
-
-<deployment>
-<p>The Dart-class served as the backbone of the Terran Alliance and early Hegemony naval forces for nearly two centuries, fulfilling roles from frontier patrol and exploration to convoy escort and independent combat operations. When the class was eventually retired in favor of the more capable Avatar-class cruiser, many hulls were stripped of their weapons and sold to Periphery nations, where they continued to serve in diminished capacity well into the Reunification War era. The Star League Defense Force believed the class extinct by 2722, when the SLS Gettysburg destroyed what was thought to be the last operational Dart during the New Vandenberg revolt. That aged vessel, a mere shell of its former configuration, had been pressed into service by Periphery separatists in a futile attempt to challenge the newer Essex-class destroyer. However, the class had one final appearance: the RWR Conquistador, a Dart that had somehow survived undetected, participated in Stefan Amaris's coup before being destroyed over Mars by two squadrons of SLDF Model 96 Elephant tugs from the Twenty-third Wing.</p>
-</deployment>
-
-<history>
-<p>The Dart-class emerged from the Terran Alliance's recognition that its expanding sphere of colonized worlds required a warship capable of operating far beyond established supply lines. Di Tron Heavy Industries, already one of the Alliance's premier aerospace manufacturers, responded with a design that prioritized range, endurance, and versatility over raw combat power. The result was a vessel that could serve equally as a combat platform, exploration ship, or heavy transport depending on mission requirements, an unusual degree of flexibility for a capital warship.</p><p>The class entered service in 2305 and quickly became a mainstay of the Alliance navy, with Di Tron operating production facilities on both Terra and Zebebelgenubi to meet demand. The Dart's Century 4000 drives proved exceptionally reliable even by capital ship standards, and the generous fuel and cargo allocations allowed individual vessels to operate independently for extended periods. As the Terran Alliance transitioned into the Terran Hegemony, the Dart continued as a workhorse design, though advancing naval technology gradually rendered its capabilities insufficient for front-line service.</p><p>After approximately two centuries of active duty, the Hegemony retired the Dart-class in favor of the Avatar-class cruiser. Rather than scrap the aging but still functional hulls, the Hegemony sold many to Periphery nations with their weapons systems removed. These demilitarized Darts served their new operators in cargo and transport roles through the Reunification War era and beyond. The class was believed fully extinct by 2722 following the destruction of the last known example during the New Vandenberg revolt, but one final vessel, the Rim Worlds Republic's Conquistador, emerged during the Amaris Civil War to prove that reports of the class's demise had been premature. The Conquistador's destruction over Mars by SLDF tug squadrons in 2766 marked the definitive and final end of a class that had served humanity for over four centuries across multiple operators and countless star systems.</p>
-</history>
-
-<manufacturer>
-Di Tron Heavy Industries
-</manufacturer>
-
-<primaryFactory>
-Terra
-</primaryFactory>
-
-<systemManufacturers>
-CHASSIS:Di Tron Heavy Industries
-ENGINE:Unknown
-ARMOR:Unknown
-JUMP_JET:Unknown
-COMMUNICATIONS:Unknown
-TARGETING:Unknown
-</systemManufacturers>
-
-<systemModels>
-CHASSIS:Unknown
-ENGINE:Century 4000
-ARMOR:Standard
-JUMP_JET:Unknown
-COMMUNICATIONS:Unknown
-TARGETING:Unknown
-</systemModels>
 

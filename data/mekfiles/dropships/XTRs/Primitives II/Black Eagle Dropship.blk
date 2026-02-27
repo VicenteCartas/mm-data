@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,16 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-
-# Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 Dropship
 </UnitType>
@@ -33,9 +24,9 @@ Dropship
 Black Eagle
 </Name>
 
-<model>
+<Model>
 
-</model>
+</Model>
 
 <mul id:>
 5593
@@ -57,14 +48,19 @@ IS Level 3
 None
 </role>
 
+<quirks>
+easy_maintain
+obsolete:2545
+</quirks>
+
 <motion_type>
 Spheroid
 </motion_type>
 
 <transporters>
-mekbay:12.0:2
-cargobay:430.0:1:4
-steeragequarters:140.0:0
+mekbay:12.0:2:-1::-1:0
+cargobay:430.0:1:4::-1:0
+steeragequarters:140.0:0:-1::-1:0
 </transporters>
 
 <SafeThrust>
@@ -95,9 +91,13 @@ steeragequarters:140.0:0
 40
 </armor_type>
 
-<armor_tech>
+<armor_tech_rating>
+0
+</armor_tech_rating>
+
+<armor_tech_level>
 1
-</armor_tech>
+</armor_tech_level>
 
 <internal_type>
 -1
@@ -173,8 +173,6 @@ Terra
 
 <notes>
 This unit should have 540 tons of cargo but it makes it illegal. The ship appears constucted without the correct mix of rules.
-
-We've reduced the cargo space to make the unit valid.
 </notes>
 
 <use>
@@ -240,9 +238,4 @@ XTR:Primitives II
 <escape_pod>
 8
 </escape_pod>
-
-<quirks>
-easy_maintain
-obsolete:2545
-</quirks>
 

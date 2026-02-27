@@ -1,5 +1,4 @@
-#building block data file
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,15 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-<BlockVersion>
-1
-</BlockVersion>
-
-##Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 BattleArmor
 </UnitType>
@@ -61,9 +52,6 @@ Ambusher
 Jump
 </motion_type>
 
-<transporters>
-</transporters>
-
 <cruiseMP>
 1
 </cruiseMP>
@@ -87,10 +75,6 @@ IS BA Stealth (Improved):RA
 IS BA Stealth (Improved):Body
 IS BA Stealth (Improved):Body
 IS BA Stealth (Improved):Body
-SwarmMek
-SwarmWeaponMek
-StopSwarm
-LegAttack
 </Squad Equipment>
 
 <Trooper 1 Equipment>
@@ -104,6 +88,10 @@ LegAttack
 
 <Trooper 4 Equipment>
 </Trooper 4 Equipment>
+
+<slotless_equipment>
+BAJumpJet
+</slotless_equipment>
 
 <capabilities>
 On its left arm is an Anti-Personnel Weapon Mount, typically equipped with a submachine gun, just above the wrist. Both arms end in fully functional Basic Manipulators slaved directly to the operator's own hands, giving it superior flexibility in holding and manipulating objects than other battle armor suits. While this comes at the cost of armor protection and hand-to-hand combat (hand injuries being the most common type for Achileus operators), the capability is invaluable in supporting the battlefield infiltration mission. Integral jump jets in the Achileus allow it to make leaps of 90 meters at a time, giving it good maneuverability. Its 360kg of Improved Stealth armor, while allowing the wearer to survive a couple of shots from a Small Laser, are more notable for their stealth features. Combining the aspects of an electronic and infrared-suppressing Sneak Suit, this stealth system can run indefinitely and protect the suit from being detected by a number of sensors, including Beagle Active Probes.

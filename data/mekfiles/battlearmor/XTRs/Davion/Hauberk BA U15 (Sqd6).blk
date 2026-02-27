@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,16 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-
-# Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 BattleArmor
 </UnitType>
@@ -44,6 +35,10 @@ U15(Sqd6)
 <year>
 3076
 </year>
+
+<originalBuildYear>
+3076
+</originalBuildYear>
 
 <type>
 Mixed (IS Chassis) Advanced
@@ -70,12 +65,12 @@ Leg
 </armor_tech>
 
 <Squad Equipment>
-CLDetachableWeaponPack:LA
+ISDetachableWeaponPack:LA
 CLBAERSmallLaser:DWP
-CLDetachableWeaponPack:RA
+ISDetachableWeaponPack:RA
 CLBAMicroPulseLaser:DWP
-CLDetachableWeaponPack:Body
-ISBAMagshotGR:DWP
+ISDetachableWeaponPack:Body
+ISBAMagshotGaussRifle:DWP
 CLBASRM2:Body
 BA-SRM2 Ammo:Body:Shots4#
 CL BA ECM:Body
@@ -87,6 +82,57 @@ IS BA Mimetic:RA
 IS BA Mimetic:RA
 IS BA Mimetic:LA
 </Squad Equipment>
+
+<Trooper 1 Equipment>
+</Trooper 1 Equipment>
+
+<Trooper 2 Equipment>
+</Trooper 2 Equipment>
+
+<Trooper 3 Equipment>
+</Trooper 3 Equipment>
+
+<Trooper 4 Equipment>
+</Trooper 4 Equipment>
+
+<Trooper 5 Equipment>
+</Trooper 5 Equipment>
+
+<Trooper 6 Equipment>
+</Trooper 6 Equipment>
+
+<capabilities>
+The Hauberk mounts improved stealth armor to keep from being targeted effectively. The size of the battlesuit precludes its ability to be transported on OmniMechs or perform anti-'Mech operations, though it does mount a battle claw. Its slow speed generally limits its use to defensive operations, though it has been known to travel by armored personnel carrier
+</capabilities>
+
+<overview>
+The Hauberk is a battle armor that was designed by some of the members of the New Avalon Cavaliers at the New Avalon Institute of Science.
+</overview>
+
+<deployment>
+Developed by Tech Sergeant Tim Balke at a repair depot during the Jihad, the Hauberk U15 uses three Detachable Weapon Mounts to carry several Clan made weapons. The left arm mount has an ER Small Laser while the right arm mount carries a Micro Pulse Laser. An SRM-2 with four reloads is carried on the body, and a Magshot Gauss Rifle is mounted over the right shoulder on the last Detachable Weapon Mount. There was still enough room for a Clan-made ECM Suite while Mimetic Armor from a ruined Purifier suits provides its protection.
+</deployment>
+
+<history>
+The Cavaliers wanted to take the basic idea of the Undine and make it more broadly useful. During the Jihad, the Federated Suns finally got their hands on the Undine through Clan Diamond Shark. Though they had initially planned on simply deploying the Clan suits, it quickly became clear that the Undine's aquatic nature made it of limited usefulness, especially as its technological sophistication prevented easy repair. For this reason, the Hauberk was created from the Undine chassis, leading to the similar appearances of the designs.
+</history>
+
+<manufacturer>
+Albion Advanced Technologies and Products
+</manufacturer>
+
+<primaryFactory>
+New Avalon
+</primaryFactory>
+
+<systemManufacturers>
+CHASSIS:Unknown
+ENGINE:Unknown
+ARMOR:Unknown
+JUMP_JET:Unknown
+COMMUNICATIONS:Unknown
+TARGETING:Unknown
+</systemManufacturers>
 
 <source>
 XTR:Davion
@@ -112,38 +158,3 @@ biped
 4
 </weightclass>
 
-<overview>
-The Hauberk is a battle armor that was designed by some of the members of the New Avalon Cavaliers at the New Avalon Institute of Science.
-</overview>
-
-<capabilities>
-The Hauberk mounts improved stealth armor to keep from being targeted effectively. The size of the battlesuit precludes its ability to be transported on OmniMechs or perform anti-'Mech operations, though it does mount a battle claw. Its slow speed generally limits its use to defensive operations, though it has been known to travel by armored personnel carrier
-</capabilities>
-
-<deployment>
-Developed by Tech Sergeant Tim Balke at a repair depot during the Jihad, the Hauberk U15 uses three Detachable Weapon Mounts to carry several Clan made weapons. The left arm mount has an ER Small Laser while the right arm mount carries a Micro Pulse Laser. An SRM-2 with four reloads is carried on the body, and a Magshot Gauss Rifle is mounted over the right shoulder on the last Detachable Weapon Mount. There was still enough room for a Clan-made ECM Suite while Mimetic Armor from a ruined Purifier suits provides its protection.
-</deployment>
-
-<history>
-The Cavaliers wanted to take the basic idea of the Undine and make it more broadly useful. During the Jihad, the Federated Suns finally got their hands on the Undine through Clan Diamond Shark. Though they had initially planned on simply deploying the Clan suits, it quickly became clear that the Undine's aquatic nature made it of limited usefulness, especially as its technological sophistication prevented easy repair. For this reason, the Hauberk was created from the Undine chassis, leading to the similar appearances of the designs.
-</history>
-
-<manufacturer>
-Albion Advanced Technologies and Products
-</manufacturer>
-
-<primaryFactory>
-New Avalon
-</primaryFactory>
-
-<systemManufacturers>
-CHASSIS:Unknown
-ENGINE:Unknown
-ARMOR:Unknown
-JUMPJET:Unknown
-COMMUNICATIONS:Unknown
-TARGETING:Unknown
-</systemManufacturers>
-
-<notes>
-</notes>

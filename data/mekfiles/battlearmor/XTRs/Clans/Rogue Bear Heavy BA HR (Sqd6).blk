@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,15 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-#Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 BattleArmor
 </UnitType>
@@ -40,42 +32,13 @@ HR(Sqd6)
 9026
 </mul id:>
 
-<chassis>
-biped
-</chassis>
+<year>
+3078
+</year>
 
-<weightclass>
-3
-</weightclass>
-
-<Trooper Count>
-6
-</Trooper Count>
-
-<cruiseMP>
-1
-</cruiseMP>
-
-<jumpingMP>
-2
-</jumpingMP>
-
-<Armor>
-10
-</Armor>
-
-<Point Equipment>
-BAPartialWing:Body
-BAAPMount:RA
-InfantryAssaultRifle:RA:APM
-BABattleClaw:LA
-BABattleClaw:RA
-CLBAMG:Body
-Camo System:Body
-Clan BA Stealth (Basic):Body
-Clan BA Stealth (Basic):LA
-Clan BA Stealth (Basic):RA
-</Point Equipment>
+<originalBuildYear>
+3078
+</originalBuildYear>
 
 <type>
 Mixed (Clan Chassis)
@@ -85,32 +48,69 @@ Mixed (Clan Chassis)
 Ambusher
 </role>
 
-<year>
-3078
-</year>
-
-<source>
-XTR:Clans
-</source>
+<quirks>
+prototype
+non_standard
+</quirks>
 
 <motion_type>
 Jump
 </motion_type>
 
+<cruiseMP>
+1
+</cruiseMP>
+
 <armor_type>
 31
 </armor_type>
+
 <armor_tech>
 2
 </armor_tech>
 
-<overview>
-First known to have been deployed in 3073, the Rogue Bear is a battle armor design produced by Clan Ghost Bear.
-</overview>
+<Point Equipment>
+BAPartialWing:Body
+BAAPMount:RA
+InfantryAssaultRifle:APM:RA
+BABattleClaw:LA
+BABattleClaw:RA
+CLBAMG:Body
+Camo System:Body
+Clan BA Stealth (Basic):Body
+Clan BA Stealth (Basic):LA
+Clan BA Stealth (Basic):RA
+</Point Equipment>
+
+<Trooper 1 Equipment>
+</Trooper 1 Equipment>
+
+<Trooper 2 Equipment>
+</Trooper 2 Equipment>
+
+<Trooper 3 Equipment>
+</Trooper 3 Equipment>
+
+<Trooper 4 Equipment>
+</Trooper 4 Equipment>
+
+<Trooper 5 Equipment>
+</Trooper 5 Equipment>
+
+<Trooper 6 Equipment>
+</Trooper 6 Equipment>
+
+<slotless_equipment>
+BAJumpJet
+</slotless_equipment>
 
 <capabilities>
 The Rogue Bear can jump up to sixty meters at a time. It is protected by almost enough armor to stop a Gauss rifle. The battlesuit uses mostly standard components with no disposable weaponry.
 </capabilities>
+
+<overview>
+First known to have been deployed in 3073, the Rogue Bear is a battle armor design produced by Clan Ghost Bear.
+</overview>
 
 <deployment>
 Overseen by two native Rasalhagians, the Rogue Bear-HR is a prototype battle armor suit that incorporates the best technologies of the Inner Sphere and Clan Ghost Bear. Intended as a heavy reconnaissance unit the Rogue Bear-HR replaces the standard armor with Basic Stealth armor that provides as much protection as a standard Elemental suit. To further enhance protection the armor uses a Camo System that makes the armor more difficult to find. The Partial Wing system allows it to move up to 90 meters at a time. Armed only with a Machine Gun and Anti-Personnel Weapon Mount, the Rogue Bear-HR isn't intended to face heavy forces, but to find insurgents. As it does not quite fit in with the Ghost Bear method of warfare, it was not deployed widely.
@@ -132,13 +132,32 @@ Mannedorf
 CHASSIS:Unknown
 ENGINE:Unknown
 ARMOR:Unknown
-JUMPJET:Unknown
+JUMP_JET:Unknown
 COMMUNICATIONS:Unknown
 TARGETING:Unknown
 </systemManufacturers>
 
-<quirks>
-non_standard
-prototype
-</quirks>
+<source>
+XTR:Clans
+</source>
+
+<chassis>
+biped
+</chassis>
+
+<jumpingMP>
+2
+</jumpingMP>
+
+<armor>
+10
+</armor>
+
+<Trooper Count>
+6
+</Trooper Count>
+
+<weightclass>
+3
+</weightclass>
 

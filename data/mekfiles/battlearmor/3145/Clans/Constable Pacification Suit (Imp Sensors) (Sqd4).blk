@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,16 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-
-# Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 BattleArmor
 </UnitType>
@@ -45,6 +36,10 @@ Constable Pacification Suit
 3092
 </year>
 
+<originalBuildYear>
+3092
+</originalBuildYear>
+
 <type>
 Clan Level 2
 </type>
@@ -52,6 +47,10 @@ Clan Level 2
 <role>
 Scout
 </role>
+
+<quirks>
+easy_maintain
+</quirks>
 
 <motion_type>
 Jump
@@ -61,16 +60,64 @@ Jump
 3
 </cruiseMP>
 
+<armor_type>
+28
+</armor_type>
+
+<armor_tech>
+2
+</armor_tech>
+
 <Point Equipment>
-CLBAHeavyGL:LA
-CLBAHeavyGL:RA
+CLBAHeavyGrenadeLauncher:LA
+CLBAHeavyGrenadeLauncher:RA
 BABattleClaw:LA
 BABattleClaw:RA
 BACuttingTorch:LA
 BACuttingTorch:RA
-CLBAImprovedSensors:Body
+CLImprovedSensors:Body
 BASearchlight:Body
 </Point Equipment>
+
+<Trooper 1 Equipment>
+</Trooper 1 Equipment>
+
+<Trooper 2 Equipment>
+</Trooper 2 Equipment>
+
+<Trooper 3 Equipment>
+</Trooper 3 Equipment>
+
+<Trooper 4 Equipment>
+</Trooper 4 Equipment>
+
+<slotless_equipment>
+BAJumpJet
+</slotless_equipment>
+
+<capabilities>
+The Constable's design was based on the Rogue Bear battle armor, where the Bear's appeal of mobility was paramount for the suit's role. It is extremely mobile, able to move by ground as far as it can jump. The suit's armor protection is similar to a typical military-grade suit of light battle armor. The suit's weaponry and equipment includes a pair of Heavy Grenade Launchers, giving the operator the flexibility of being able use an array of ammunition types lethal and nonlethal. A pair of Cutting Torches round out the suit's permanently mounted equipment, giving it the ability to open things that require a more delicate touch. The suit also includes a body-mounted Modular Weapon Mount that can fits up to seventy-five kilograms of optional equipment. These can include an ECM Suite, Light Machine Gun, Single-Tube SRM Launcher, Improved Sensors, or Light TAG.
+</capabilities>
+
+<overview>
+Introduced by Clan Ghost Bear, the Constable Pacification Suit was designed to help the Ghost Bear Dominion maintain order among its Inner Sphere-born citizenry.
+</overview>
+
+<deployment>
+The suit has expanded to other Clans and the paramilitary units of the Draconis Combine, including the Internal Security Force and the Civilian Guidance Corps.
+</deployment>
+
+<history>
+It was initially created by the Ghost Bear Watch to aid them in fending off the Motstånd, a Rasalhagian terrorist organisation. The Watch was able to deal with the terrorists without endangering its civilian population thanks to the suit's variety of weapon and equipment options. The Ghost Bear Watch handled the suit's initial application improperly. The Watch was able to develop less military methods as a result of the suit's sale to civilian police and other organisations.
+</history>
+
+<manufacturer>
+BA Facility Gamma
+</manufacturer>
+
+<primaryFactory>
+Mannedorf
+</primaryFactory>
 
 <source>
 TR:3145:C
@@ -95,39 +142,4 @@ biped
 <weightclass>
 1
 </weightclass>
-
-<armor_type>
-28
-</armor_type>
-<armor_tech>
-2
-</armor_tech>
-
-<overview>
-Introduced by Clan Ghost Bear, the Constable Pacification Suit was designed to help the Ghost Bear Dominion maintain order among its Inner Sphere-born citizenry.
-</overview>
-
-<history>
-It was initially created by the Ghost Bear Watch to aid them in fending off the Motstånd, a Rasalhagian terrorist organisation. The Watch was able to deal with the terrorists without endangering its civilian population thanks to the suit's variety of weapon and equipment options. The Ghost Bear Watch handled the suit's initial application improperly. The Watch was able to develop less military methods as a result of the suit's sale to civilian police and other organisations.
-</history>
-
-<capabilities>
-The Constable's design was based on the Rogue Bear battle armor, where the Bear's appeal of mobility was paramount for the suit's role. It is extremely mobile, able to move by ground as far as it can jump. The suit's armor protection is similar to a typical military-grade suit of light battle armor. The suit's weaponry and equipment includes a pair of Heavy Grenade Launchers, giving the operator the flexibility of being able use an array of ammunition types lethal and nonlethal. A pair of Cutting Torches round out the suit's permanently mounted equipment, giving it the ability to open things that require a more delicate touch. The suit also includes a body-mounted Modular Weapon Mount that can fits up to seventy-five kilograms of optional equipment. These can include an ECM Suite, Light Machine Gun, Single-Tube SRM Launcher, Improved Sensors, or Light TAG.
-</capabilities>
-
-<deployment>
-The suit has expanded to other Clans and the paramilitary units of the Draconis Combine, including the Internal Security Force and the Civilian Guidance Corps.
-</deployment>
-
-<manufacturer>
-BA Facility Gamma
-</manufacturer>
-
-<primaryFactory>
-Mannedorf
-</primaryFactory>
-
-<quirks>
-easy_maintain
-</quirks>
 

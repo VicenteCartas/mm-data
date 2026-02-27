@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,43 +15,48 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#Guns block data file
-<BlockVersion>
-1
-</BlockVersion>
-#Write the version number just in case...
-<Version>
-MAM0
-</Version>
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 BuildingEntity
 </UnitType>
+
 <Name>
 Assault Air Defense Missile Emplacement
 </Name>
-<model>
+
+<Model>
 (3075) (Fusion)
-</model>
-<Year>
+</Model>
+
+<year>
 3075
-</Year>
-<Type>
+</year>
+
+<originalBuildYear>
+3075
+</originalBuildYear>
+
+<type>
 IS Level 3
-</Type>
-<quirks>
-anti_air
-</quirks>
-<building_class>
-3
-</building_class>
-<building_type>
-4
-</building_type>
+</type>
+
+<motion_type>
+None
+</motion_type>
+
+<cruiseMP>
+0
+</cruiseMP>
+
+<armor>
+150
+</armor>
+
 <Level 0 0.0,0.0,0.0 Equipment>
-ISArrowIV (ST)
-ISArrowIV (ST)
-ISERLargeLaser (ST)
-Searchlight (ST)
+ISArrowIV(ST)
+ISArrowIV(ST)
+ISERLargeLaser(ST)
+Searchlight(ST)
 ISArrowIVAir-Defense Arrow (ADA) MissilesAmmo
 ISArrowIVAir-Defense Arrow (ADA) MissilesAmmo
 ISArrowIVAir-Defense Arrow (ADA) MissilesAmmo
@@ -65,17 +70,27 @@ ISArrowIVAir-Defense Arrow (ADA) MissilesAmmo
 FUSION PowerGenerator:SIZE:16.0
 </Level 0 0.0,0.0,0.0 Equipment>
 
-<cf>
-150
-</cf>
-<armor>
-150
-</armor>
+<height>
+1
+</height>
 
-<coords>
-0,0,0
-</coords>
+<building_class>
+3
+</building_class>
+
+<building_type>
+4
+</building_type>
 
 <height>
 1
 </height>
+
+<cf>
+150
+</cf>
+
+<coords>
+0.0,0.0,0.0
+</coords>
+

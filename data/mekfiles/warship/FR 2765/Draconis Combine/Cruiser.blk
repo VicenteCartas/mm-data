@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,16 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-
-##Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 Warship
 </UnitType>
@@ -62,12 +53,12 @@ Aerodyne
 </motion_type>
 
 <transporters>
-smallcraftbay:6.0:2:1
-dropshuttlebay:2.0:3:0:f2
-1stclassquarters:500.0:0
-crewquarters:1680.0:0
-steeragequarters:2950.0:0
-cargobay:37419.0:1:6
+smallcraftbay:6.0:2:1::-1:0
+dropshuttlebay:2.0:3:0::2:0
+1stclassquarters:500.0:0:-1::-1:0
+crewquarters:1680.0:0:-1::-1:0
+steeragequarters:2950.0:0:-1::-1:0
+cargobay:37419.0:1:6::-1:0
 </transporters>
 
 <SafeThrust>
@@ -94,9 +85,13 @@ cargobay:37419.0:1:6
 41
 </armor_type>
 
-<armor_tech>
+<armor_tech_rating>
+0
+</armor_tech_rating>
+
+<armor_tech_level>
 5
-</armor_tech>
+</armor_tech_level>
 
 <armor>
 64
@@ -242,11 +237,34 @@ Ammo Barracuda:30
 75
 </structural_integrity>
 
+# Fluff Date: 2026-02-24 13:31:06
+<capabilities>
+The Cruiser was a missile cruiser armed with bow-mounted White Shark missile launchers and Barracuda arrays for anti-fighter defense. However, the decision to use conventional kinetic-kill warheads instead of nuclear warheads limited its offensive power. The ship also had tertiary naval autocannons to deal with smaller craft and DropShuttles. Its design included interconnected large nose bays for DropShuttles, small craft, and cargo, but the shifting center of mass between empty and full bays caused maneuverability issues.
+</capabilities>
 
+<overview>
+The Cruiser-class cruiser, also known as the "Beercan Battleship" due to its squat and compact design, was originally a Terran ship class contemporary to the Dreadnought. It served as a vanguard vessel during James McKenna's campaigns in the early days of the Hegemony. However, its career with the Hegemony navy was relatively short-lived, and the last Cruisers were mothballed in 2405 before being sold to the Great Houses.
+</overview>
 
+<history>
+The Cruiser's service in the Terran navy was marked by operational and design deficiencies that led to its retirement. Crews and admirals found the ship's design unappealing, earning it nicknames like "Beercan Battleship" and "Killer Space Keg." Despite its flaws, the Cruiser performed adequately in its era, particularly in high-speed closing engagements against contemporary WarShips and armed merchant vessels. After its retirement from Terran service, several Cruisers found new life after being sold to the Great Houses, while the rest were mothballed.
+</history>
 
+<manufacturer>
+Boeing Interstellar
+</manufacturer>
 
+<primaryFactory>
+Terra
+</primaryFactory>
 
+<systemManufacturers>
+CHASSIS:Unknown
+ENGINE:Unknown
+ARMOR:Unknown
+COMMUNICATIONS:Unknown
+TARGETING:Unknown
+</systemManufacturers>
 
 <use>
 Cruiser
@@ -315,47 +333,4 @@ FR:2765-DCMS
 <escape_pod>
 150
 </escape_pod>
-
-# Fluff Date: 2026-02-24 13:31:06
-<overview>
-<p>The Cruiser-class heavy cruiser stands as one of humanity's earliest purpose-built WarShip designs, conceived from conceptual specifications drafted by Terran Alliance naval planners in the late twenty-second century. Built alongside the Dreadnought-class battleship as part of Director-General James McKenna's fleet expansion program, the Cruiser served as a frequent vanguard vessel during the Hegemony's formative Campaigns of Persuasion against neighboring star systems. The design reflected the ambitions and limitations of an era when space combat remained largely theoretical, resulting in a vessel that performed adequately against contemporary opposition but carried fundamental design compromises that would ultimately curtail its service life with the Hegemony. Several hulls nevertheless found extended careers with the Great Houses after the Hegemony retired the class, demonstrating the enduring utility of even a flawed capital ship in an era of limited naval construction capability.</p>
-</overview>
-
-<capabilities>
-<p>Originally envisioned as a missile cruiser, the Cruiser mounts batteries of White Shark launchers in the forward quarter arcs and Barracuda arrays in the nose, broadside, and aft arcs for anti-fighter screening. However, Director-General McKenna's prohibition on nuclear warheads forced the class to rely on conventional kinetic-kill munitions, substantially reducing the striking power its designers had anticipated. To compensate, thirty-six NAC/10 naval autocannons are distributed across all six firing arcs, providing the bulk of the vessel's actual offensive capability against both capital ships and smaller craft.</p><p>As a pre-docking collar design, the Cruiser carries its DropShuttles, small craft, and cargo in interconnected nose bays accessed through bow and flank doors. This arrangement places sacrificial mass forward toward the expected threat axis, but creates an unstable center of mass that shifts unpredictably as cargo is loaded or expended. The ship's squat cylindrical hull, with its flat bow and stern and prominent side doors, earned it a succession of unflattering nicknames from its crews. Seven hundred fifty tons of standard armor provide reasonable protection for the era, though the design's reliance on conventional missile warheads leaves it undergunned compared to later vessels of similar displacement.</p>
-</capabilities>
-
-<deployment>
-<p>The Cruiser-class formed a key component of the Terran Hegemony's early naval power projection capability, serving as the primary escort and vanguard vessel for the Campaigns of Persuasion that brought neighboring star systems under Hegemony influence during the early twenty-fourth century. In this role, the class performed effectively against the contemporary armed merchantmen and primitive WarShips it typically encountered, where its massed naval autocannon batteries and missile volleys proved more than sufficient to overawe or overwhelm opposition. The last Hegemony-operated Cruisers were mothballed in 2405 as newer, more capable designs entered service, but the class found a second career when several hulls were sold to the Great Houses. The Draconis Combine maintained at least two Cruiser-class vessels in active service as late as 2765, operating them as heavy cruisers within the Draconis Combine Admiralty's fleet structure alongside other aging Hegemony-era designs.</p>
-</deployment>
-
-<history>
-<p>The Cruiser-class traces its conceptual origins to the late twenty-second century, when Terran Alliance military planners drafted specifications for purpose-built combat JumpShips to counter the potential threat of separatist colonies among the stars. These plans remained theoretical for over a century until Director-General James McKenna, confronting precisely the scenario the Alliance had feared in the form of breakaway colonies freed by the Demarcation Declaration, authorized the construction of a new fleet based on those venerable designs. The result was the Dreadnought-class battleship and its supporting cruiser, which entered service in 2325.</p><p>The Cruiser quickly became a staple of McKenna's Campaigns of Persuasion, where fleets of Hegemony WarShips would arrive at recalcitrant colony worlds to demonstrate the futility of resistance. In this political-military role the class excelled, as few colonial systems possessed anything capable of challenging a purpose-built warship. However, as the Hegemony consolidated its position and the broader Inner Sphere began producing its own naval designs, the Cruiser's limitations became increasingly apparent. The prohibition on nuclear warheads left its missile batteries underwhelming against hardened targets, the center-of-mass instability caused by its pre-docking collar cargo arrangement frustrated helmsmen, and the vessel's utilitarian appearance drew constant derision from crews who dubbed it the Beercan Battleship among other less printable epithets.</p><p>The Terran Hegemony retired the last of its Cruisers to mothball storage in 2405 as the Aegis and other more modern designs rendered the class obsolete. Rather than scrap serviceable hulls, the Hegemony sold several to the Great Houses, where they continued to serve for centuries in roles their original designers never envisioned. The Draconis Combine proved the most persistent operator, maintaining a pair of Cruiser-class vessels within the Draconis Combine Admiralty as late as 2765, operating them alongside Lola I destroyers and other venerable Hegemony-era warships in the absence of sufficient domestic production capacity to replace them.</p>
-</history>
-
-<manufacturer>
-Boeing Interstellar
-</manufacturer>
-
-<primaryFactory>
-Terra
-</primaryFactory>
-
-<systemManufacturers>
-CHASSIS:Unknown
-ENGINE:Unknown
-ARMOR:Unknown
-JUMP_JET:Unknown
-COMMUNICATIONS:Unknown
-TARGETING:Unknown
-</systemManufacturers>
-
-<systemModels>
-CHASSIS:Unknown
-ENGINE:Unknown
-ARMOR:Standard
-JUMP_JET:Unknown
-COMMUNICATIONS:Unknown
-TARGETING:Unknown
-</systemModels>
 

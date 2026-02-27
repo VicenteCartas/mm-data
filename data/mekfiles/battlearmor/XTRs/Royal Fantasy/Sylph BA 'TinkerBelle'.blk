@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,16 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-
-##Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 BattleArmor
 </UnitType>
@@ -61,9 +52,6 @@ Scout
 VTOL
 </motion_type>
 
-<transporters>
-</transporters>
-
 <cruiseMP>
 1
 </cruiseMP>
@@ -95,6 +83,11 @@ CLBASRM5OS:Body
 <Trooper 4 Equipment>
 </Trooper 4 Equipment>
 
+<slotless_equipment>
+BAVTOL
+BA-SRM5 Ammo:Shots1#
+</slotless_equipment>
+
 <capabilities>
 The centerpiece of the Sylph suit's design is its advanced propulsion system, adapted from the jump jets standard on other battle suits, which can maintain a steady air speed of 53 km/h. In addition to the normal controls found in other suits the Sylph utilizes a complex system of pedals and leg harness when in flight; any loss in concentration will more likely than not send the Sylph into an uncontrollable death spiral. The ability to hover is regulated by computer controls which divert thrust from the main jets through dozens of directional exhaust ports, which also gives the suit its incredible agility. The price for this however is that the Sylph mounts half as much armor as the Elemental suit and carries only a lightweight weapons package.
 </capabilities>
@@ -123,7 +116,7 @@ Solaris VII
 CHASSIS:Unknown
 ENGINE:Unknown
 ARMOR:Unknown
-JUMPJET:Unknown
+JUMP_JET:Unknown
 COMMUNICATIONS:Unknown
 TARGETING:Unknown
 </systemManufacturers>

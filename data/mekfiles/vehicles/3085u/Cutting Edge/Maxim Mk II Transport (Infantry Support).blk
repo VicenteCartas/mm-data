@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,20 +15,15 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-#Write the version number just in case...
-<Version>
-MAM0
-</Version>
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 Tank
 </UnitType>
+
 <Name>
 Maxim Mk II Transport
 </Name>
+
 <Model>
 (Infantry Support) 'Shiloh'
 </Model>
@@ -36,36 +31,15 @@ Maxim Mk II Transport
 <mul id:>
 2128
 </mul id:>
-<Tonnage>
-50
-</Tonnage>
-<cruiseMP>
-8
-</cruiseMP>
-<Armor>
-30
-20
-20
-19
-20
-</Armor>
-<Turret Equipment>
-ISLPPC
-ISLPPC
-ISMML3
-ISMML3
-IS Machine Gun
-IS Machine Gun
-</Turret Equipment>
-<Body Equipment>
-ISMML3 LRM Ammo
-ISMML3 SRM Ammo
-ISMG Ammo (100)
-ISCASE
-</Body Equipment>
-<transporters>
-TroopSpace:8
-</transporters>
+
+<year>
+3084
+</year>
+
+<originalBuildYear>
+3084
+</originalBuildYear>
+
 <type>
 IS Level 2
 </type>
@@ -73,24 +47,70 @@ IS Level 2
 <role>
 Sniper
 </role>
-<year>
-3084
-</year>
-<internal_type>
-0
-</internal_type>
-<armor_type>
-6
-</armor_type>
-<engine_type>
-0
-</engine_type>
+
 <motion_type>
 Hover
 </motion_type>
-<source>
-TR:3085
-</source>
+
+<transporters>
+troopspace:8.0
+</transporters>
+
+<cruiseMP>
+8
+</cruiseMP>
+
+<engine_type>
+0
+</engine_type>
+
+<armor_type>
+6
+</armor_type>
+
+<armor_tech_rating>
+0
+</armor_tech_rating>
+
+<armor_tech_level>
+1
+</armor_tech_level>
+
+<armor>
+30
+20
+20
+19
+20
+</armor>
+
+<Body Equipment>
+IS Ammo MML-3 LRM
+IS Ammo MML-3 SRM
+IS Machine Gun Ammo - Half
+ISCASE
+</Body Equipment>
+
+<Front Equipment>
+</Front Equipment>
+
+<Right Equipment>
+</Right Equipment>
+
+<Left Equipment>
+</Left Equipment>
+
+<Rear Equipment>
+</Rear Equipment>
+
+<Turret Equipment>
+Light PPC
+Light PPC
+ISMML3
+ISMML3
+Machine Gun
+Machine Gun
+</Turret Equipment>
 
 <manufacturer>
 Cyclops Inc.
@@ -107,3 +127,12 @@ ARMOR:	ArcShield Heavy Ferro-Fibrous with CASE
 COMMUNICATIONS:Cyclops Surelink
 TARGETING:Scarborough Tracky 3
 </systemManufacturers>
+
+<source>
+TR:3085
+</source>
+
+<tonnage>
+50.0
+</tonnage>
+

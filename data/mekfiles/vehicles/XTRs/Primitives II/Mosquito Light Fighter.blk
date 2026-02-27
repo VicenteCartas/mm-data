@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,16 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-
-# Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 FixedWingSupport
 </UnitType>
@@ -33,9 +24,9 @@ FixedWingSupport
 Mosquito Light Fighter
 </Name>
 
-<model>
+<Model>
 
-</model>
+</Model>
 
 <mul id:>
 5591
@@ -57,12 +48,15 @@ IS Level 2
 Fire Support
 </role>
 
+<quirks>
+atmo_flyer
+easy_maintain
+obsolete:2510
+</quirks>
+
 <motion_type>
 Aerodyne
 </motion_type>
-
-<transporters>
-</transporters>
 
 <SafeThrust>
 6
@@ -87,6 +81,18 @@ Aerodyne
 <engine_type>
 0
 </engine_type>
+
+<armor_type>
+47
+</armor_type>
+
+<armor_tech_rating>
+3
+</armor_tech_rating>
+
+<armor_tech_level>
+1
+</armor_tech_level>
 
 <internal_type>
 -1
@@ -137,10 +143,6 @@ External Stores Hardpoint
 3
 </engine_tech_rating>
 
-<armor_tech_rating>
-3
-</armor_tech_rating>
-
 <source>
 XTR:Primitives II
 </source>
@@ -148,10 +150,4 @@ XTR:Primitives II
 <tonnage>
 20.0
 </tonnage>
-
-<quirks>
-atmo_flyer
-easy_maintain
-obsolete:2510
-</quirks>
 

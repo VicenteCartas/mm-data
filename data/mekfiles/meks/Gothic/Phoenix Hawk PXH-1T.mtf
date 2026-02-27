@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,17 +15,16 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-
-generator:MegaMek Suite 0.50.1-SNAPSHOT on 2024-09-07
+generator:MegaMek Suite 0.50.12 on 2026-02-26
 chassis:Phoenix Hawk
 model:PXH-1T
 
 Config:Biped
 techbase:Inner Sphere
 era:3150
+source:Gothic
 rules level:5
 role:Skirmisher
-source:Gothic
 
 quirk:command_mech
 quirk:ubiquitous_clan
@@ -34,7 +33,7 @@ quirk:imp_com
 weaponquirk:jettison_capable:RA:6:Sword
 
 mass:45
-engine:270 Fusion Engine(IS)
+engine:270 Fusion Engine
 structure:IS Endo Steel
 myomer:Standard
 
@@ -173,5 +172,4 @@ IS Endo Steel
 -Empty-
 -Empty-
 -Empty-
-
 

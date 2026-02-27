@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,16 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-
-# Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 Tank
 </UnitType>
@@ -33,9 +24,9 @@ Tank
 Ballista Artillery Trailer
 </Name>
 
-<model>
+<Model>
 
-</model>
+</Model>
 
 <mul id:>
 6330
@@ -44,6 +35,10 @@ Ballista Artillery Trailer
 <year>
 3100
 </year>
+
+<originalBuildYear>
+3100
+</originalBuildYear>
 
 <type>
 IS Level 3
@@ -73,9 +68,13 @@ troopspace:4.0
 4
 </armor_type>
 
-<armor_tech>
+<armor_tech_rating>
+0
+</armor_tech_rating>
+
+<armor_tech_level>
 5
-</armor_tech>
+</armor_tech_level>
 
 <armor>
 30
@@ -87,7 +86,7 @@ troopspace:4.0
 
 <Body Equipment>
 ISC3SlaveUnit
-Communications Equipment (4 ton)
+Communications Equipment:SIZE:4.0
 ISGuardianECMSuite
 ISCASE
 ISAMS Ammo
@@ -103,7 +102,7 @@ ISArrowIVAmmo
 ISArrowIVAmmo
 ISArrowIVAmmo
 IS Light Machine Gun Ammo - Full
-ISSponsonTurret
+SponsonTurret
 </Body Equipment>
 
 <Front Equipment>
@@ -111,14 +110,14 @@ ISSponsonTurret
 
 <Right Equipment>
 ISAntiMissileSystem
-Light Machine Gun (ST)
-Light Machine Gun (ST)
+Light Machine Gun(ST)
+Light Machine Gun(ST)
 </Right Equipment>
 
 <Left Equipment>
 ISAntiMissileSystem
-Light Machine Gun (ST)
-Light Machine Gun (ST)
+Light Machine Gun(ST)
+Light Machine Gun(ST)
 </Left Equipment>
 
 <Rear Equipment>
@@ -147,3 +146,4 @@ TR:3145:FS
 <trailer>
 1
 </trailer>
+

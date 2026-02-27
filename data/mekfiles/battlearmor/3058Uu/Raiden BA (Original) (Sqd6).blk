@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,16 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-
-#Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 BattleArmor
 </UnitType>
@@ -41,35 +32,13 @@ Raiden Battle Armor
 8938
 </mul id:>
 
-<chassis>
-biped
-</chassis>
+<year>
+3052
+</year>
 
-<weightclass>
-2
-</weightclass>
-
-<Trooper Count>
-6
-</Trooper Count>
-
-<cruiseMP>
-1
-</cruiseMP>
-
-<jumpingMP>
-3
-</jumpingMP>
-
-<Armor>
-7
-</Armor>
-
-<Squad Equipment>
-ISBASmallLaser:RA
-ISBASRM1OS:LA
-BABattleClaw:RA
-</Squad Equipment>
+<originalBuildYear>
+3052
+</originalBuildYear>
 
 <type>
 IS Level 2
@@ -79,33 +48,58 @@ IS Level 2
 Ambusher
 </role>
 
-<year>
-3052
-</year>
-
 <motion_type>
 Jump
 </motion_type>
+
+<cruiseMP>
+1
+</cruiseMP>
 
 <armor_type>
 28
 </armor_type>
 
-<source>
-TR:3058U
-</source>
-
 <armor_tech>
 3
 </armor_tech>
 
-<overview>
-The Raiden is a battle armor design that hails from the Draconis Combine. It is essentially the Combine's take on the Inner Sphere Standard which, though debuting first and also produced by the Kuritans themselves, represents an improvement on the design.
-</overview>
+<Squad Equipment>
+ISBASmallLaser:RA
+ISBASRM1OS:LA
+BABattleClaw:RA
+</Squad Equipment>
+
+<Trooper 1 Equipment>
+</Trooper 1 Equipment>
+
+<Trooper 2 Equipment>
+</Trooper 2 Equipment>
+
+<Trooper 3 Equipment>
+</Trooper 3 Equipment>
+
+<Trooper 4 Equipment>
+</Trooper 4 Equipment>
+
+<Trooper 5 Equipment>
+</Trooper 5 Equipment>
+
+<Trooper 6 Equipment>
+</Trooper 6 Equipment>
+
+<slotless_equipment>
+BAJumpJet
+BA-SRM1 Ammo:Shots1#
+</slotless_equipment>
 
 <capabilities>
 It lacks the missile launcher and anti-personnel weapon mount of the Elemental battle armor it was based on, though it has the same jump capacity of ninety meters and also mounts a Battle Claw in the left arm that enables it to hitch a ride on OmniMechs and make anti-'Mech attacks. As promised the suit's 450kg of armor does allow it to survive a hit from a Large Laser, even an Inner Sphere Large Pulse Laser, and remain functional. The suit is also slightly stronger and possess greater reflexes than the Standard suit, features which improved its hand-to-hand capabilities.
 </capabilities>
+
+<overview>
+The Raiden is a battle armor design that hails from the Draconis Combine. It is essentially the Combine's take on the Inner Sphere Standard which, though debuting first and also produced by the Kuritans themselves, represents an improvement on the design.
+</overview>
 
 <deployment>
 Like the Inner Sphere Standard, the Raiden has a Modular Weapon Mount in its right arm that can accept a Small Laser, Flamer or Machine Gun to accommodate for preference or mission parameters. Also like the Standard this mount can instead accept a pair of smaller 'secondary' weapons which may prove more suitable for anti-infantry work. Starting in 3056 Raidens could also equip the Tsunami Heavy Gauss Rifle, and in 3064 during the FedCom Civil War engineers perfected a single-tube Medium Range Missile launcher with four reloads for the Raiden.
@@ -127,7 +121,32 @@ Luthien,New Samarkand
 CHASSIS:Unknown
 ENGINE:Unknown
 ARMOR:Unknown
-JUMPJET:Unknown
+JUMP_JET:Unknown
 COMMUNICATIONS:Unknown
 TARGETING:Unknown
 </systemManufacturers>
+
+<source>
+TR:3058U
+</source>
+
+<chassis>
+biped
+</chassis>
+
+<jumpingMP>
+3
+</jumpingMP>
+
+<armor>
+7
+</armor>
+
+<Trooper Count>
+6
+</Trooper Count>
+
+<weightclass>
+2
+</weightclass>
+

@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,16 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-
-#Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 BattleArmor
 </UnitType>
@@ -41,38 +32,13 @@ Kage Light Battle Armor
 8911
 </mul id:>
 
-<chassis>
-biped
-</chassis>
+<year>
+3067
+</year>
 
-<weightclass>
-1
-</weightclass>
-
-<Trooper Count>
-6
-</Trooper Count>
-
-<cruiseMP>
-1
-</cruiseMP>
-
-<jumpingMP>
-3
-</jumpingMP>
-
-<Armor>
-5
-</Armor>
-
-<Squad Equipment>
-ISBAJumpBooster:Body
-BACuttingTorch:RA
-ISBASpaceOperationsAdaptation:Body
-BABattleClaw:RA
-BAArmoredGlove:LA
-InfantryAssaultRifle:RA:APM
-</Squad Equipment>
+<originalBuildYear>
+3067
+</originalBuildYear>
 
 <type>
 IS Level 2
@@ -82,17 +48,13 @@ IS Level 2
 Scout
 </role>
 
-<year>
-3067
-</year>
-
 <motion_type>
 Jump
 </motion_type>
 
-<source>
-TR:3085
-</source>
+<cruiseMP>
+1
+</cruiseMP>
 
 <armor_type>
 31
@@ -102,13 +64,44 @@ TR:3085
 3
 </armor_tech>
 
-<overview>
-The Kage (Japanese: "shadow") Light Battle Armor was one of the first Battle Armor designs produced by the Draconis Combine after the Truce of Tukayyid.
-</overview>
+<Squad Equipment>
+BAJumpBooster:Body
+BACuttingTorch:RA
+ISBASpaceOperationsAdaptation:Body
+BABattleClaw:RA
+BAArmoredGlove:LA
+InfantryAssaultRifle:APM:RA
+</Squad Equipment>
+
+<Trooper 1 Equipment>
+</Trooper 1 Equipment>
+
+<Trooper 2 Equipment>
+</Trooper 2 Equipment>
+
+<Trooper 3 Equipment>
+</Trooper 3 Equipment>
+
+<Trooper 4 Equipment>
+</Trooper 4 Equipment>
+
+<Trooper 5 Equipment>
+</Trooper 5 Equipment>
+
+<Trooper 6 Equipment>
+</Trooper 6 Equipment>
+
+<slotless_equipment>
+BAJumpJet
+</slotless_equipment>
 
 <capabilities>
 The standout feature of the Kage is its Partial Wing assembly which allows it to make assisted jumps of 120 meters at a time and clear obstacles up to 24 meters in height; when not in use the wing retracts in order to reduce the suit's visibility and radar signature. This mobility is enhanced by the suit's stealth features, 275kg of Basic Stealth armor. Although providing barely enough protection against a single hit from a medium laser, it incorporates aspects of a combination stealth suit with electronic and infrared suppression capabilities and can run indefinitely thanks to integral rechargers. Not even Beagle Active Probes can detect the Kage suit thanks to these features On rare occasions DEST squads will outfit their suits with additional equipment, such as laser microphones, shotgun microphones, remote sensor dispensers and ECM suites, however these are field modifications rather than official factory variants. Like most suits, the Kage normally requires the use of a special module to allow the wearer to slip easily into and out of the suit. However, given the nature of its designated mission, the Kage was specially designed so that a person by themselves could get into and out of it in the field as needed.
 </capabilities>
+
+<overview>
+The Kage (Japanese: "shadow") Light Battle Armor was one of the first Battle Armor designs produced by the Draconis Combine after the Truce of Tukayyid.
+</overview>
 
 <deployment>
 This version was introduced in 3069 and uses a Battle Claw and Cutting Torch to support boarding parties. For increased mobility, it carries Jump Boosters in the partial wing
@@ -130,7 +123,32 @@ New Samarkand
 CHASSIS:Unknown
 ENGINE:Unknown
 ARMOR:Unknown
-JUMPJET:Unknown
+JUMP_JET:Unknown
 COMMUNICATIONS:Unknown
 TARGETING:Unknown
 </systemManufacturers>
+
+<source>
+TR:3085
+</source>
+
+<chassis>
+biped
+</chassis>
+
+<jumpingMP>
+3
+</jumpingMP>
+
+<armor>
+5
+</armor>
+
+<Trooper Count>
+6
+</Trooper Count>
+
+<weightclass>
+1
+</weightclass>
+

@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,16 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-
-# Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 SupportTank
 </UnitType>
@@ -33,9 +24,9 @@ SupportTank
 Burro II Super Heavy Cargo Truck
 </Name>
 
-<model>
+<Model>
 
-</model>
+</Model>
 
 <mul id:>
 4382
@@ -44,6 +35,10 @@ Burro II Super Heavy Cargo Truck
 <year>
 3064
 </year>
+
+<originalBuildYear>
+3064
+</originalBuildYear>
 
 <type>
 IS Level 3
@@ -57,6 +52,10 @@ None
 Wheeled
 </motion_type>
 
+<transporters>
+cargobay:12.5:1:1::-1:0
+</transporters>
+
 <cruiseMP>
 3
 </cruiseMP>
@@ -65,6 +64,18 @@ Wheeled
 0
 </engine_type>
 
+<armor_type>
+50
+</armor_type>
+
+<armor_tech_rating>
+4
+</armor_tech_rating>
+
+<armor_tech_level>
+1
+</armor_tech_level>
+
 <armor>
 25
 20
@@ -72,23 +83,11 @@ Wheeled
 13
 </armor>
 
-<barrating>
-9
-</barrating>
-
-<structural_tech_rating>
-4
-</structural_tech_rating>
-
 <Body Equipment>
 Environmental Sealing
 Armored Chassis
 ISOffRoadChassis
 </Body Equipment>
-
-<transporters>
-cargobay:12.5:1
-</transporters>
 
 <Front Equipment>
 Searchlight
@@ -103,6 +102,18 @@ Searchlight
 <Rear Equipment>
 </Rear Equipment>
 
+<barrating>
+9
+</barrating>
+
+<structural_tech_rating>
+4
+</structural_tech_rating>
+
+<engine_tech_rating>
+4
+</engine_tech_rating>
+
 <source>
 TR:VAr
 </source>
@@ -110,3 +121,8 @@ TR:VAr
 <tonnage>
 50.0
 </tonnage>
+
+<fuel>
+0.0
+</fuel>
+

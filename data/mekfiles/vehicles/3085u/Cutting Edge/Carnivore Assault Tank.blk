@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,16 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-
-#Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 Tank
 </UnitType>
@@ -33,58 +24,21 @@ Tank
 Carnivore Assault Tank
 </Name>
 
-<model>
+<Model>
 
-</model>
+</Model>
 
 <mul id:>
 465
 </mul id:>
 
-<Tonnage>
-80
-</Tonnage>
+<year>
+3082
+</year>
 
-<cruiseMP>
-4
-</cruiseMP>
-
-#Order is Tank/VTOL/LST
-<Armor>
-62
-46
-46
-42
-52
-</Armor>
-
-<Front Equipment>
-CLERMediumLaser
-CLERMediumLaser
-</Front Equipment>
-
-<Left Equipment>
-CLHeavyMG
-</Left Equipment>
-
-<Right Equipment>
-CLHeavyMG
-</Right Equipment>
-
-<Turret Equipment>
-CLGaussRifle
-CLGaussRifle
-</Turret Equipment>
-
-<Body Equipment>
-CLGauss Ammo
-CLGauss Ammo
-CLGauss Ammo
-CLGauss Ammo
-CLHeavyMG Ammo (50)
-CLECMSuite
-CLCASE
-</Body Equipment>
+<originalBuildYear>
+3082
+</originalBuildYear>
 
 <type>
 Clan Level 2
@@ -94,26 +48,74 @@ Clan Level 2
 Brawler
 </role>
 
-<year>
-3082
-</year>
+<motion_type>
+Tracked
+</motion_type>
 
-<source>
-TR:3085
-</source>
-
-<internal_type>
-0
-</internal_type>
-
-<armor_type>
-0
-</armor_type>
+<cruiseMP>
+4
+</cruiseMP>
 
 <engine_type>
 2
 </engine_type>
 
-<motion_type>
-Tracked
-</motion_type>
+<armor_type>
+0
+</armor_type>
+
+<armor_tech_rating>
+0
+</armor_tech_rating>
+
+<armor_tech_level>
+2
+</armor_tech_level>
+
+<armor>
+62
+46
+46
+42
+52
+</armor>
+
+<Body Equipment>
+Clan Gauss Ammo
+Clan Gauss Ammo
+Clan Gauss Ammo
+Clan Gauss Ammo
+Clan Heavy Machine Gun Ammo - Half
+CLECMSuite
+CLCASE
+</Body Equipment>
+
+<Front Equipment>
+CLERMediumLaser
+CLERMediumLaser
+</Front Equipment>
+
+<Right Equipment>
+CLHeavyMG
+</Right Equipment>
+
+<Left Equipment>
+CLHeavyMG
+</Left Equipment>
+
+<Rear Equipment>
+</Rear Equipment>
+
+<Turret Equipment>
+CLGaussRifle
+CLGaussRifle
+</Turret Equipment>
+
+<source>
+TR:3085
+</source>
+
+<tonnage>
+80.0
+</tonnage>
+

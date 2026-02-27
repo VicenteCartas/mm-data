@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,16 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-
-##Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 Warship
 </UnitType>
@@ -62,14 +53,14 @@ Aerodyne
 </motion_type>
 
 <transporters>
-smallcraftbay:2.0:1:1
+smallcraftbay:2.0:1:1::-1:0
 dockingcollar
 dockingcollar
-1stclassquarters:250.0:0
-2ndclassquarters:630.0:0
+1stclassquarters:250.0:0:-1::-1:0
+2ndclassquarters:630.0:0:-1::-1:0
 navalrepairunpressurized:2000000.0:1:6:f0
-crewquarters:1190.0:0
-cargobay:128610.0:1:8
+crewquarters:1190.0:0:-1::-1:0
+cargobay:128610.0:1:8::-1:0
 </transporters>
 
 <SafeThrust>
@@ -96,9 +87,13 @@ cargobay:128610.0:1:8
 13
 </armor_type>
 
-<armor_tech>
+<armor_tech_rating>
+0
+</armor_tech_rating>
+
+<armor_tech_level>
 5
-</armor_tech>
+</armor_tech_level>
 
 <armor>
 16
@@ -269,11 +264,34 @@ ISArtemisIV
 30
 </structural_integrity>
 
+# Fluff Date: 2026-02-24 13:31:06
+<capabilities>
+Faslanes serve as ship-repair yards in space and support operations of the Com Guards and Explorer Corps. They are armed with anti-fighter lasers, LRM launchers, medium naval PPCs, and autocannons for defensive purposes. The presence of weaponry and armor allows them to defend against potential threats while conducting their repair and maintenance tasks. While not designed for direct combat, their weapons systems provide a respectable level of defense.
+</capabilities>
 
+<overview>
+The Faslane-class yardships are specialized WarShips constructed around ship-repair yards. Despite their relatively small size of 550,000 tons, these vessels are nearly three times the length of a Clan Whirlwind destroyer. Originally based on the Star League Newgrange class, six Faslanes were constructed by the Com Guards between 2882 and 2949. While primarily non-combat vessels, Faslanes are equipped with respectable weapon and defensive systems to protect themselves. They carry anti-fighter lasers, LRM launchers, medium naval PPCs, and autocannons. The Faslanes also feature 100 tons of ferro-aluminum armor primarily designed to withstand accidental collisions.
+</overview>
 
+<history>
+Six Faslane-class yardships were constructed by the Com Guards between 2882 and 2949, with two vessels dispatched to the Periphery to support Explorer Corps operations. The remaining Faslanes were docked at holding facilities in Luyten 68-28 and Ross 248, carefully protected from pirates and concealed from the Clans. After assisting in the search for the Clan homeworlds, most of the Faslanes were destroyed by the Word of Blake. The surviving three ships eventually merged into the naval forces of the Republic of the Sphere and are currently stationed in the Terran system. They now serve as repair tenders, aiding in the recovery and restoration of the Titan shipyards damaged during the wartime conflicts.
+</history>
 
+<manufacturer>
+O'Neil Yards - Titan Yards
+</manufacturer>
 
+<primaryFactory>
+Terra
+</primaryFactory>
 
+<systemManufacturers>
+CHASSIS:Unknown
+ENGINE:Unknown
+ARMOR:Unknown
+COMMUNICATIONS:Unknown
+TARGETING:Unknown
+</systemManufacturers>
 
 <use>
 Yardship
@@ -343,47 +361,4 @@ Interstellar Players 3
 <escape_pod>
 10
 </escape_pod>
-
-# Fluff Date: 2026-02-24 13:31:06
-<overview>
-<p>The Faslane-class yardship was developed by ComStar as a mobile ship-repair facility capable of servicing the largest vessels in humanity's combined fleets. Constructed at the Titan Yards in the Sol system beginning in the late twenty-ninth century, these enormous vessels were based on the Star League-era Newgrange-class yardship design and represented ComStar's most ambitious naval engineering undertaking during the long Succession Wars period. Classified as warships by virtue of their compact Kearny-Fuchida drive systems and respectable defensive armament, the Faslanes nonetheless served primarily as fleet support vessels rather than combatants. The class earned a quiet but essential reputation as the backbone of ComStar's naval maintenance infrastructure, enabling the Com Guards to sustain operational readiness across scattered fleet facilities throughout the Inner Sphere and Deep Periphery.</p>
-</overview>
-
-<capabilities>
-<p>Despite displacing only 550,000 tons, the Faslane stretched to an extraordinary 1,810 meters in length, nearly three times the size of a Whirlwind-class destroyer. This elongated profile reflected the vessel's primary feature: an unpressurized repair bay massing 50,000 tons with the capacity to dock and service starships weighing up to 2,000,000 tons. The entire forward section of the vessel comprised this portable drydock, making the Faslane an invaluable asset for maintaining fleet readiness in forward-deployed positions far from established shipyard facilities. Over 136,000 tons of additional cargo space provided ample storage for spare parts and raw materials.</p><p>The Faslane's defensive systems were substantial for a nominally non-combat vessel. Eight Medium Naval PPCs formed the capital weapons battery, distributed across all firing arcs, while two NAC/10 naval autocannons covered the nose and aft arcs and two NAC/20s protected the broadsides. Anti-fighter defense relied on thirty-two ER Large Lasers and sixteen LRM-20 launchers slaved to Artemis IV fire control systems. The vessel carried 100 tons of ferro-aluminum armor, protection designed primarily against accidental collisions rather than sustained combat. A compact Kearny-Fuchida drive provided interstellar mobility, while a mobile HPG enabled independent communications. The vessel achieved a safe thrust of only two gravities with a maximum of three, reflecting its role as a rear-echelon support vessel rather than a fleet combatant. Two small craft and a crew of 132 personnel, along with capacity for 100 passengers, completed the complement.</p>
-</capabilities>
-
-<deployment>
-<p>The CSV Portsmouth and CSV Rosslare were both assigned to support Explorer Corps operations at the Columbus Deep Periphery facility. In December 3068, Word of Blake warships attacked the station, destroying both yardships along with all other vessels and ground installations present. The Blakist forces conducted a thorough sweep of the system, eliminating every JumpShip and DropShip before bombarding the surface facilities from low orbit. A 3076 investigation confirmed that no human activity had occurred at the site since the attack.</p><p>The CSV Dover served with the Com Guard First Fleet at Luyten 68-28, while the CSV Dun Laoghaire and CSV Plymouth operated with the Second Fleet at Ross 248. The specific fates of these vessels during the Jihad remain partially unclear, though three Faslanes ultimately survived and were transferred to the Republic of the Sphere. Renamed the RoSS Iustitia, RoSS Harmonia, and RoSS Necessitas, they served as repair tenders at the Titan Yards until the Iustitia was lost to an industrial accident in 3117. The accident prompted the Republic to decommission and mothball the surviving pair around Phoebe. Following Clan Wolf's seizure of Terra in November 3151, ilKhan Alaric Ward rechristened the Harmonia as the Varkhana and the Necessitas as the Medeina, claiming both as Clan Wolf assets.</p>
-</deployment>
-
-<history>
-<p>ComStar's Com Guard fleet required dedicated repair facilities to maintain the aging Star League-era warships that formed its hidden naval force. Between 2882 and 2949, the Titan Yards constructed six Faslane-class yardships to fill this critical support role. These vessels were assigned to the Com Guard fleet structure, with two stationed at the Luyten 68-28 naval facility as part of the First Fleet and two based at the Ross 248 holding station with the Second Fleet. The remaining two vessels were detached to support Explorer Corps operations at the Deep Periphery station at Columbus.</p><p>ComStar took extraordinary precautions to protect these irreplaceable assets, concealing them from both pirates and the Clans while ensuring they remained available to service the Com Guard's dispersed naval force. The Faslanes proved essential to maintaining the operational readiness of ComStar's warship fleet, providing forward-deployed repair capability that eliminated the need to return damaged vessels to the Inner Sphere's few remaining fixed shipyard facilities.</p><p>The Word of Blake's campaign against ComStar's naval infrastructure during the Jihad devastated the Faslane fleet. In December 3068, Blakist warships attacked the Columbus Deep Periphery station, methodically destroying the facility and all vessels present, including at least two of the Faslane-class yardships. The attackers hovered at the edge of the atmosphere and leveled the ground installations before departing, leaving no survivors. A third vessel was lost elsewhere during the conflict, leaving only three of the original six in existence by the end of the Jihad.</p><p>The surviving Faslanes were transferred to the Republic of the Sphere following the liberation of Terra, where they were stationed in the Sol system to support repair operations at the war-damaged Titan Yards. The Republic renamed these vessels, assigning them Latin-derived designations in keeping with Republic naval tradition. One of the Republic-operated Faslanes was lost to an industrial accident in 3117, prompting the decommissioning and mothballing of the remaining vessels in storage orbits around Phoebe, a moon of Saturn. When Clan Wolf seized Terra in 3151, ilKhan Alaric Ward distributed the mothballed Faslanes as isorla, rechristening them with Clan designations and returning them to active service in support of the ilClan's nascent shipbuilding program.</p>
-</history>
-
-<manufacturer>
-O'Neil Yards - Titan Yards
-</manufacturer>
-
-<primaryFactory>
-Terra
-</primaryFactory>
-
-<systemManufacturers>
-CHASSIS:Unknown
-ENGINE:Unknown
-ARMOR:Unknown
-JUMP_JET:Unknown
-COMMUNICATIONS:Unknown
-TARGETING:Unknown
-</systemManufacturers>
-
-<systemModels>
-CHASSIS:Unknown
-ENGINE:Unknown
-ARMOR:Ferro-Aluminum
-JUMP_JET:Compact KF Drive
-COMMUNICATIONS:Unknown
-TARGETING:Unknown
-</systemModels>
 

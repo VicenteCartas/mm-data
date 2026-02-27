@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,16 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-
-# Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 Warship
 </UnitType>
@@ -62,17 +53,17 @@ Aerodyne
 </motion_type>
 
 <transporters>
-smallcraftbay:10.0:2:1
-asfbay:20.0:4:2
-cargobay:85509.0:1:3
+smallcraftbay:10.0:2:1::-1:0
+asfbay:20.0:4:2::-1:0
+cargobay:85509.0:1:3::-1:0
 dockingcollar
 dockingcollar
 dockingcollar
 dockingcollar
-1stclassquarters:490.0:0
-crewquarters:1582.0:0
-2ndclassquarters:70.0:0
-cargobay:50.0:0:7
+1stclassquarters:490.0:0:-1::-1:0
+crewquarters:1582.0:0:-1::-1:0
+2ndclassquarters:70.0:0:-1::-1:0
+cargobay:50.0:0:11::-1:0
 </transporters>
 
 <SafeThrust>
@@ -95,13 +86,21 @@ cargobay:50.0:0:7
 1
 </engine_type>
 
+<clan_engine>
+false
+</clan_engine>
+
 <armor_type>
 11
 </armor_type>
 
-<armor_tech>
+<armor_tech_rating>
+0
+</armor_tech_rating>
+
+<armor_tech_level>
 6
-</armor_tech>
+</armor_tech_level>
 
 <armor>
 91
@@ -237,6 +236,47 @@ Ammo Barracuda:10
 75
 </structural_integrity>
 
+# Fluff Date: 2026-02-26 11:44:24
+<capabilities>
+<p>Displacing 750,000 tons, the Aegis mounted a weapons suite that evolved dramatically across its service life. The original 2372-era design carried class-10 naval autocannons across all arcs, adequate for its time but outclassed by later designs. The Star League refit transformed the vessel's combat capability, replacing the original battery with eighteen Armstrong II 35-Series naval autocannons in six turrets, supplemented by Imperator-20 class-20 batteries, Randall-55 and Magna-45 naval lasers, and White Shark and Barracuda missile systems. This upgraded arsenal made the Aegis a formidable anti-ship platform whose broadsides discouraged all but the largest warships from engaging at close range.</p><p>Di Tron incorporated lithium-fusion battery systems during the refit, enabling rapid sequential jumps that greatly enhanced the vessel's operational flexibility. Improved automation reduced the crew requirement from nearly five hundred to approximately three hundred and sixty personnel, freeing internal volume that the designers used to accommodate the heavier weapons and even a zero-gravity recreational pool. The Star League configuration carried eighteen aerospace fighters, ten small craft, and four DropShip docking collars. Clan technicians later expanded the fighter complement to twenty OmniFighters while reducing cargo capacity.</p><p>The Aegis carried 627 tons of Grumman K5 ferro-carbide armor across all configurations, reduced to 597.5 tons in the Clan variant. While adequate for a vessel of its displacement, the archaic hull materials and construction techniques that survived successive refits left the class more easily detected by enemy sensors than contemporary designs. A safe thrust of two gravities and maximum of three provided standard cruiser-weight maneuverability, though the vessel's age-weakened structural members remained a persistent concern.</p>
+</capabilities>
+
+<overview>
+<p>First launched in 2372 by Di Tron Heavy Industries on Terra, the Aegis heavy cruiser ranks among the oldest WarShip designs to see continuous service across nearly eight centuries of interstellar warfare. The vessel incorporated every technological innovation of its era, including the first operational use of detachable jump sails, and won immediate acclaim for its combination of firepower and maneuverability. When newer designs rendered the class obsolescent in the mid-twenty-sixth century, the prescient decision to mothball rather than scrap the surviving fleet ensured the Aegis would return to service decades later, refitted with Star League-era technology that transformed aging hulls into frontline combatants.</p><p>This pattern of retirement, preservation, and reactivation defined the Aegis throughout its history. Few WarShip classes have demonstrated such enduring adaptability, and the heavy cruiser's presence in fleets ranging from the Terran Hegemony Navy to the Clan toumans stands as testament to the soundness of Di Tron's original design.</p>
+</overview>
+
+<deployment>
+<p>The Aegis became one of the most widely distributed WarShip classes among the Clans, with at least twelve Clans fielding one or more examples. Clan Jade Falcon maintained the largest concentration, operating nine vessels including the Jade Talon, Blue Talon, Red Talon, and Frost Falcon. Clan Nova Cat fielded a comparable fleet, while Clan Snow Raven assembled the second-largest flotilla through strategic acquisitions from other Clans. Wolf's Dragoons operated the Alexander as their flagship until its sacrifice at Outreach, where the vessel ran interference to allow the Dragoon transports to escape.</p><p>The Red Talon endured one of the most dramatic careers of any vessel of the class. Disabled and scuttled at Coventry during the Jihad, the cruiser was subsequently rebuilt and returned to service. In 3142, the Red Talon delivered devastating orbital bombardment on Timkovichi, annihilating the Kell Hounds mercenary regiment and most of Clan Hell's Horses' Beta Galaxy. The vessel fought at Terra during the ilClan Trial before being transferred to Clan Snow Raven and renamed Mariposa. The Jade Talon was less fortunate, its hull ruptured by naval PPC fire during the same battle.</p><p>The Wars of Reaving and Jihad devastated Clan holdings of the class. The Jade Falcons lost the Janice Hazen and Frost Falcon, Clan Nova Cat sacrificed the Promise at New Home to save Devlin Stone, and the former Nova Cat vessel Blade was transferred to the Republic of the Sphere as the Auspicium. Clan Cloud Cobra's Inquisitor had served since Operation Klondike, where it provided orbital support during the liberation of the Pentagon Worlds. The Lord Death, last Snow Raven vessel to depart the Homeworlds, anchored the Raven Alliance fleet into the ilClan era.</p>
+</deployment>
+
+<history>
+<p>Di Tron Heavy Industries launched the first Aegis heavy cruiser from its Terra shipyards in 2372, introducing several innovations that would become standard across the WarShip industry. The detachable jump sail, which allowed the vessel to protect its delicate energy collection mechanisms during combat maneuvering, represented a significant advancement in naval architecture. The design proved immediately successful, and the Aegis served as the Terran Hegemony Navy's primary heavy cruiser for over a century and a half, undergoing numerous refits to maintain its relevance against evolving threats.</p><p>By 2531, the class had been rendered obsolescent by the newer Avatar-class heavy cruiser. Director-General Deborah Cameron ordered all 106 surviving vessels mothballed rather than scrapped, a cautious decision that preserved the fleet in orbit between Terra and Mars for half a century. The founding of the Star League and the subsequent Reunification War created an urgent demand for capital warships, and in 2582 First Lord Ian Cameron directed the reactivation of the entire Aegis fleet. Thirty vessels were distributed to the Council Lords' navies, while the remaining seventy underwent a comprehensive decade-long refit by Di Tron that incorporated lithium-fusion batteries and modern weapons systems.</p><p>The revitalized Aegis proved remarkably effective, performing on par with contemporary designs despite its aging hulls. The class served across the SLDF's escort and fire-support squadrons through the Reunification War and the centuries that followed. By 2765, every major Star League member state operated Aegis cruisers, with the Capellan Confederation fielding six, the Federated Suns six, the Draconis Combine five, the Free Worlds League at least five, and the Lyran Commonwealth three.</p><p>The fall of the Star League scattered the remaining vessels across competing factions. Multiple Aegis cruisers accompanied Kerensky's Exodus fleet, eventually undergoing Clan refits beginning in 2843 that expanded their fighter capacity while retaining the proven weapons suite. The class became one of the most widely distributed WarShips among the Clans, with Jade Falcon alone operating nine vessels at its peak and at least eleven other Clans fielding one or more examples. In the Inner Sphere, ComStar maintained several in its hidden fleet, while the Succession Wars gradually consumed the member states' holdings through attrition.</p><p>The Jihad inflicted devastating casualties. The Word of Blake recovered four vessels from concealed caches, none of which survived the conflict. Multiple Clan vessels were lost in fleet actions across contested systems. The Wars of Reaving further reduced the Homeworld Clan fleets. By the ilClan era, the class that once numbered over a hundred operational vessels had been reduced to a handful of survivors. Despite this attrition, the Aegis remained in frontline service nearly eight centuries after its first launch, a longevity unmatched by virtually any other capital warship design in known space.</p>
+</history>
+
+<manufacturer>
+Field Refit
+</manufacturer>
+
+<primaryFactory>
+Various
+</primaryFactory>
+
+<systemManufacturers>
+CHASSIS:Unknown
+ENGINE:Unknown
+ARMOR:Grumman
+COMMUNICATIONS:OMP
+TARGETING:KTI
+</systemManufacturers>
+
+<systemModels>
+CHASSIS:Templar Steel Plus
+ENGINE:Century 5000
+ARMOR:K5
+COMMUNICATIONS:Stratacaster
+TARGETING:389
+</systemModels>
+
 <source>
 TR:3057r
 </source>
@@ -261,6 +301,10 @@ TR:3057r
 90
 90
 </grav_decks>
+
+<designtype>
+1
+</designtype>
 
 <crew>
 365
@@ -293,47 +337,4 @@ TR:3057r
 <escape_pod>
 0
 </escape_pod>
-
-# Fluff Date: 2026-02-26 11:44:24
-<overview>
-<p>The Aegis-class heavy cruiser is among the longest-serving and most prolific warship designs in human history, with variants spanning from the original 2372 production through Star League-era refits and Clan modernizations that kept the class in active service for nearly eight centuries. Built by Di Tron Heavy Industries at their Terra orbital shipyards, the 750,000-ton Aegis was designed as a replacement for the aging Black Lion I-class battlecruiser, incorporating lessons learned from decades of capital ship operations into a purpose-built heavy cruiser platform. The original Aegis was already formidable, but the 2582 Star League refit transformed the class into one of the most devastating warships in the SLDF fleet, upgrading to double heat sinks and adding a lithium-fusion battery while dramatically increasing firepower with eighteen NAC/35 and twenty-four NAC/20 naval autocannons. With approximately 65 named vessels documented across SLDF, Successor State, ComStar, Word of Blake, Clan, and Republic service, the Aegis has participated in virtually every major naval engagement in BattleTech history -- from the Reunification War through the ilClan Trial at Terra.</p>
-</overview>
-
-<capabilities>
-<p>At 750,000 tons and 725 meters in length, the Aegis heavy cruiser packs extraordinary firepower into a hull capable of two-gravity sustained acceleration with a three-gravity burst. The Star League refit variant's primary armament consists of eighteen Armstrong II 35-Series NAC/35 naval autocannons and twenty-four Imperator-20 NAC/20s distributed across all firing arcs, delivering crushing kinetic damage at any engagement range. Twelve Randall-55 NL55 and four Magna-45 NL45 naval lasers provide sustained energy firepower, while eight White Shark and four Barracuda capital missile launchers deliver long-range ordnance. The Templar Steel Plus hull is protected by 627 tons of Grumman K5 ferro-carbide armor, with twin Century 5000 engines driving the vessel through a KF Mark XIX jump drive. OMP Stratacaster communications and KTI 389 targeting systems coordinate the massive weapons suite across all arcs. The 2582 refit replaced the original 2,046 single heat sinks with double heat sink technology generating 4,092 points of effective dissipation, and added a lithium-fusion battery for rapid successive jumps. Four docking collars, eighteen fighter bays, and ten small craft bays support extensive force projection. The Clan refit expanded fighter capacity to twenty while reducing armor to 597.5 tons of ferro-carbide.</p>
-</capabilities>
-
-<deployment>
-<p>The Clan Aegis refit expanded fighter capacity from eighteen to twenty and incorporated Clan-grade technology throughout, producing a modernized heavy cruiser that served across multiple Clan navies. The CJF Red Talon traced one of the most dramatic service histories of any warship -- scuttled at Coventry, rebuilt, deployed to destroy the Kell Hounds at Timkovichi, and ultimately fought at the Battle for Terra during the ilClan Trial before being renamed Mariposa under Clan Snow Raven. The CSR Lord Death earned the distinction of being the last Raven vessel to depart the Clan Homeworlds during the Wars of Reaving, carrying irreplaceable personnel and materiel to the Inner Sphere. The NCS Promise was sacrificed at New Home to save Devlin Stone, a pivotal moment in the Republic's formation. The Republic of the Sphere operated the RSS Auspicium, formerly the Nova Cat vessel NCS Blade, which survived through the ilClan era as one of the longest-serving Aegis-class vessels. The sheer number of Aegis heavy cruisers that remained operational through the thirty-second century -- spread across Clan Wolf, Clan Snow Raven, Clan Jade Falcon, and the Republic -- speaks to the fundamental soundness of the design.</p>
-</deployment>
-
-<history>
-<p>The Aegis-class heavy cruiser entered service in 2372 from Di Tron Heavy Industries' Terra orbital shipyards as a purpose-built replacement for the aging Black Lion I-class battlecruiser. The design incorporated lessons from decades of Black Lion I operations into a 750,000-ton hull optimized for the heavy cruiser role, with four docking collars, extensive fighter capacity, and a weapons suite built around the largest naval autocannons available. The Templar Steel Plus hull and Grumman K5 ferro-carbide armor provided excellent protection for the era, while twin Century 5000 engines and a KF Mark XIX jump drive gave the vessel strategic and tactical mobility befitting its cruiser classification.</p><p>The Aegis served through the Age of War, establishing its reputation in engagements like the Battle of Kentares in 2431 where the THS Spark originated the Crazy Jane maneuver. The 2582 Star League refit was transformative -- double heat sinks replaced the original singles, a lithium-fusion battery was added, and the weapons suite was dramatically upgraded with eighteen NAC/35 and twenty-four NAC/20 naval autocannons alongside extensive naval laser and capital missile batteries. The refitted Aegis became one of the most powerful heavy cruisers in the SLDF fleet.</p><p>The class saw extensive service through the Periphery Uprising, Liberation of Terra, and Succession Wars. The SLS Manassas with its prototype 40-light-year jump range represented the pinnacle of Star League naval engineering. After the fall of the Star League, Aegis vessels served across the Inner Sphere, with ComStar, the Word of Blake, and eventually the Republic of the Sphere all operating the class.</p><p>Clan technicians modernized their inherited vessels, expanding fighter capacity and integrating Clan technology while maintaining the fundamental hull design. The Clan Aegis served across virtually every Clan navy, from the Jade Falcon's Red Talon to the Snow Raven's Lord Death to the Nova Cat's Promise. The Red Talon's journey from Coventry to Timkovichi to Terra and eventual renaming as Mariposa encapsulates the turbulent history of Clan-era warship operations. With 65 named vessels documented across all factions and eras, the Aegis holds one of the richest service histories of any warship class in human history -- a testament to Di Tron Heavy Industries' original design and the enduring soundness of the heavy cruiser concept that kept the class operational for nearly eight centuries.</p>
-</history>
-
-<manufacturer>
-Di Tron Heavy Industries
-</manufacturer>
-
-<primaryFactory>
-Terra
-</primaryFactory>
-
-<systemManufacturers>
-CHASSIS:Unknown
-ENGINE:Century
-ARMOR:Grumman
-JUMP_JET:Unknown
-COMMUNICATIONS:OMP
-TARGETING:KTI
-</systemManufacturers>
-
-<systemModels>
-CHASSIS:Templar Steel Plus
-ENGINE:5000
-ARMOR:K5 Ferro-Carbide
-JUMP_JET:KF Mark XIX
-COMMUNICATIONS:Stratacaster
-TARGETING:389
-</systemModels>
 

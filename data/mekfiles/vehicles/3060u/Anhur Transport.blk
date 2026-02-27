@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,50 +15,31 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-#Write the version number just in case...
-<Version>
-MAM0
-</Version>
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 VTOL
 </UnitType>
+
 <Name>
 Anhur Transport
 </Name>
-<model>
 
-</model>
+<Model>
+
+</Model>
 
 <mul id:>
 35
 </mul id:>
-<Tonnage>
-30
-</Tonnage>
-<cruiseMP>
-8
-</cruiseMP>
-<Armor>
-15
-14
-14
-12
-2
-</Armor>
-<Front Equipment>
-CLERMediumLaser
-CLMediumPulseLaser
-</Front Equipment>
-<Rear Equipment>
-CLMediumPulseLaser
-</Rear Equipment>
-<transporters>
-TroopSpace:7
-</transporters>
+
+<year>
+2840
+</year>
+
+<originalBuildYear>
+2840
+</originalBuildYear>
+
 <type>
 Clan Level 2
 </type>
@@ -66,26 +47,73 @@ Clan Level 2
 <role>
 Striker
 </role>
-<year>
-2840
-</year>
-<internal_type>
-0
-</internal_type>
-<armor_type>
-1
-</armor_type>
 
-<armor_tech>
-2
-</armor_tech>
+<motion_type>
+VTOL
+</motion_type>
+
+<transporters>
+troopspace:7.0
+</transporters>
+
+<cruiseMP>
+8
+</cruiseMP>
 
 <engine_type>
 0
 </engine_type>
-<motion_type>
-VTOL
-</motion_type>
+
+<clan_engine>
+false
+</clan_engine>
+
+<armor_type>
+1
+</armor_type>
+
+<armor_tech_rating>
+0
+</armor_tech_rating>
+
+<armor_tech_level>
+2
+</armor_tech_level>
+
+<armor>
+15
+14
+14
+12
+2
+</armor>
+
+<Body Equipment>
+</Body Equipment>
+
+<Front Equipment>
+CLERMediumLaser
+CLMediumPulseLaser
+</Front Equipment>
+
+<Right Equipment>
+</Right Equipment>
+
+<Left Equipment>
+</Left Equipment>
+
+<Rear Equipment>
+CLMediumPulseLaser
+</Rear Equipment>
+
+<Rotor Equipment>
+</Rotor Equipment>
+
 <source>
 RS:3067u
 </source>
+
+<tonnage>
+30.0
+</tonnage>
+

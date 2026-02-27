@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,16 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-
-# Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 Dropship
 </UnitType>
@@ -33,9 +24,9 @@ Dropship
 Duat Military Transport
 </Name>
 
-<model>
+<Model>
 
-</model>
+</Model>
 
 <mul id:>
 6696
@@ -57,24 +48,28 @@ IS Level 3
 None
 </role>
 
+<quirks>
+bad_rep_is
+</quirks>
+
 <motion_type>
 Spheroid
 </motion_type>
 
 <transporters>
-mekbay:6.0:1
-battlearmorbay:6.0:1:2:C*
-cargobay:220.0:0:4
-cargobay:220.0:0:5
-cargobay:220.0:0:6
-cargobay:220.0:0:7
-cargobay:220.0:0:8
-cargobay:220.0:0:9
-2ndclassquarters:42.0:0
-crewquarters:112.0:0
-infantrybay:1.0:6:11:Foot
-1stclassquarters:40.0:0
-cargobay:633.5:0:13
+mekbay:6.0:1:-1::-1:0
+battlearmorbay:6.0:1:2::-1:1
+cargobay:220.0:0:4::-1:0
+cargobay:220.0:0:5::-1:0
+cargobay:220.0:0:6::-1:0
+cargobay:220.0:0:7::-1:0
+cargobay:220.0:0:8::-1:0
+cargobay:220.0:0:9::-1:0
+2ndclassquarters:42.0:0:-1::-1:0
+crewquarters:112.0:0:-1::-1:0
+infantrybay:1.0:6:11:Foot:-1:0
+1stclassquarters:40.0:0:-1::-1:0
+cargobay:633.5:0:13::-1:0
 </transporters>
 
 <SafeThrust>
@@ -101,9 +96,13 @@ cargobay:633.5:0:13
 20
 </armor_type>
 
-<armor_tech>
+<armor_tech_rating>
+0
+</armor_tech_rating>
+
+<armor_tech_level>
 5
-</armor_tech>
+</armor_tech_level>
 
 <armor>
 520
@@ -215,7 +214,7 @@ ISLaserAntiMissileSystem
 </Aft Equipment>
 
 <Hull Equipment>
-ISDroneCarrierControlSystem:SIZE:6
+ISDroneCarrierControlSystem:SIZE:6.0
 </Hull Equipment>
 
 <structural_integrity>
@@ -269,8 +268,4 @@ TR:3145:RotS
 <escape_pod>
 4
 </escape_pod>
-
-<quirks>
-bad_rep_is
-</quirks>
 

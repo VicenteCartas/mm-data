@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,16 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-
-# Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 SupportVTOL
 </UnitType>
@@ -33,9 +24,9 @@ SupportVTOL
 Bishop Transport VTOL
 </Name>
 
-<model>
+<Model>
 
-</model>
+</Model>
 
 <mul id:>
 6545
@@ -45,6 +36,10 @@ Bishop Transport VTOL
 3093
 </year>
 
+<originalBuildYear>
+3093
+</originalBuildYear>
+
 <type>
 IS Level 3
 </type>
@@ -52,6 +47,11 @@ IS Level 3
 <role>
 Scout
 </role>
+
+<quirks>
+vtol_rotor_dual
+easy_pilot
+</quirks>
 
 <motion_type>
 VTOL
@@ -65,9 +65,17 @@ VTOL
 6
 </engine_type>
 
-<fuel>
+<armor_type>
+49
+</armor_type>
+
+<armor_tech_rating>
+4
+</armor_tech_rating>
+
+<armor_tech_level>
 1
-</fuel>
+</armor_tech_level>
 
 <armor>
 11
@@ -76,14 +84,6 @@ VTOL
 11
 2
 </armor>
-
-<barrating>
-8
-</barrating>
-
-<structural_tech_rating>
-4
-</structural_tech_rating>
 
 <Body Equipment>
 Cargo Container (10 tons)
@@ -105,6 +105,18 @@ Environmental Sealing
 <Rotor Equipment>
 </Rotor Equipment>
 
+<barrating>
+8
+</barrating>
+
+<structural_tech_rating>
+4
+</structural_tech_rating>
+
+<engine_tech_rating>
+4
+</engine_tech_rating>
+
 <source>
 TR:3145:Merc
 </source>
@@ -113,8 +125,7 @@ TR:3145:Merc
 45.0
 </tonnage>
 
-<quirks>
-easy_pilot
-vtol_rotor_dual
-</quirks>
+<fuel>
+1.0
+</fuel>
 

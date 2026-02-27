@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,16 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-
-# Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 SupportVTOL
 </UnitType>
@@ -33,9 +24,9 @@ SupportVTOL
 Cobra VTOL Transport
 </Name>
 
-<model>
+<Model>
 
-</model>
+</Model>
 
 <mul id:>
 7189
@@ -45,6 +36,10 @@ Cobra VTOL Transport
 2317
 </year>
 
+<originalBuildYear>
+2317
+</originalBuildYear>
+
 <type>
 IS Level 4
 </type>
@@ -52,6 +47,12 @@ IS Level 4
 <role>
 None
 </role>
+
+<quirks>
+vtol_rotor_dual
+obsolete:2470
+non_standard
+</quirks>
 
 <motion_type>
 VTOL
@@ -69,9 +70,17 @@ troopspace:9.0
 1
 </engine_type>
 
-<fuel>
-.5
-</fuel>
+<armor_type>
+47
+</armor_type>
+
+<armor_tech_rating>
+3
+</armor_tech_rating>
+
+<armor_tech_level>
+1
+</armor_tech_level>
 
 <armor>
 10
@@ -80,14 +89,6 @@ troopspace:9.0
 6
 2
 </armor>
-
-<barrating>
-6
-</barrating>
-
-<structural_tech_rating>
-3
-</structural_tech_rating>
 
 <Body Equipment>
 Advanced Fire Control
@@ -114,6 +115,18 @@ Machine Gun
 <Rotor Equipment>
 </Rotor Equipment>
 
+<barrating>
+6
+</barrating>
+
+<structural_tech_rating>
+3
+</structural_tech_rating>
+
+<engine_tech_rating>
+3
+</engine_tech_rating>
+
 <source>
 XTR:Primitives IV
 </source>
@@ -122,9 +135,11 @@ XTR:Primitives IV
 30.0
 </tonnage>
 
-<quirks>
-non_standard
-obsolete:2470
-vtol_rotor_dual
-</quirks>
+<fuel>
+0.5
+</fuel>
+
+<fuelType>
+PETROCHEMICALS
+</fuelType>
 

@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,16 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-
-# Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 SupportTank
 </UnitType>
@@ -33,9 +24,9 @@ SupportTank
 Obuzaabaa Tactical Vehicle
 </Name>
 
-<model>
+<Model>
 
-</model>
+</Model>
 
 <mul id:>
 7771
@@ -44,6 +35,10 @@ Obuzaabaa Tactical Vehicle
 <year>
 2965
 </year>
+
+<originalBuildYear>
+2965
+</originalBuildYear>
 
 <type>
 IS Level 3
@@ -59,7 +54,7 @@ Wheeled
 
 <transporters>
 troopspace:4.0
-cargobay:4.5:1
+cargobay:4.5:1:1::-1:0
 </transporters>
 
 <cruiseMP>
@@ -70,9 +65,17 @@ cargobay:4.5:1
 6
 </engine_type>
 
-<fuel>
+<armor_type>
+48
+</armor_type>
+
+<armor_tech_rating>
+4
+</armor_tech_rating>
+
+<armor_tech_level>
 1
-</fuel>
+</armor_tech_level>
 
 <armor>
 12
@@ -81,17 +84,9 @@ cargobay:4.5:1
 12
 </armor>
 
-<barrating>
-7
-</barrating>
-
-<structural_tech_rating>
-4
-</structural_tech_rating>
-
 <Body Equipment>
 ISOffRoadChassis
-Communications Equipment (2 ton)
+Communications Equipment:SIZE:2.0
 </Body Equipment>
 
 <Front Equipment>
@@ -106,6 +101,18 @@ Communications Equipment (2 ton)
 <Rear Equipment>
 </Rear Equipment>
 
+<barrating>
+7
+</barrating>
+
+<structural_tech_rating>
+4
+</structural_tech_rating>
+
+<engine_tech_rating>
+4
+</engine_tech_rating>
+
 <source>
 HB:HK
 </source>
@@ -113,3 +120,8 @@ HB:HK
 <tonnage>
 25.0
 </tonnage>
+
+<fuel>
+1.0
+</fuel>
+

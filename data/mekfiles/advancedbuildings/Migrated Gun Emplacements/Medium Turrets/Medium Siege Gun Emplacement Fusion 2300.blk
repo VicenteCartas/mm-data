@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,53 +15,71 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#Guns block data file
-<BlockVersion>
-1
-</BlockVersion>
-#Write the version number just in case...
-<Version>
-MAM0
-</Version>
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 BuildingEntity
 </UnitType>
+
 <Name>
 Medium Siege Gun Emplacement
 </Name>
+
 <Model>
 (2300) (Fusion)
 </Model>
-<Year>
-2300
-</Year>
-<Type>
-IS Level 2
-</Type>
-<building_class>
-3
-</building_class>
-<building_type>
-2
-</building_type>
-<Level 0 0.0,0.0,0.0 Equipment>
-ISPPC (ST)
-ISPPC (ST)
-Searchlight (ST)
-FUSION PowerGenerator:SIZE:10.0
-</Level 0 0.0,0.0,0.0 Equipment>
 
-<cf>
-90
-</cf>
+<year>
+2300
+</year>
+
+<originalBuildYear>
+2300
+</originalBuildYear>
+
+<type>
+IS Level 2
+</type>
+
+<motion_type>
+None
+</motion_type>
+
+<cruiseMP>
+0
+</cruiseMP>
+
 <armor>
 60
 </armor>
 
-<coords>
-0,0,0
-</coords>
+<Level 0 0.0,0.0,0.0 Equipment>
+PPC(ST)
+PPC(ST)
+Searchlight(ST)
+FUSION PowerGenerator:SIZE:10.0
+</Level 0 0.0,0.0,0.0 Equipment>
 
 <height>
 1
 </height>
+
+<building_class>
+3
+</building_class>
+
+<building_type>
+2
+</building_type>
+
+<height>
+1
+</height>
+
+<cf>
+90
+</cf>
+
+<coords>
+0.0,0.0,0.0
+</coords>
+

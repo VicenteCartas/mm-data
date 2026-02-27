@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,16 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-#Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 BattleArmor
 </UnitType>
@@ -33,43 +24,21 @@ BattleArmor
 Gray Death Strike Suit
 </Name>
 
-<model>
+<Model>
 (Prototype)(Sqd6)
-</model>
+</Model>
 
 <mul id:>
 8989
 </mul id:>
 
-<chassis>
-biped
-</chassis>
+<year>
+3073
+</year>
 
-<weightclass>
-2
-</weightclass>
-
-<Trooper Count>
-6
-</Trooper Count>
-
-<cruiseMP>
-3
-</cruiseMP>
-
-<Armor>
-9
-</Armor>
-
-<Squad Equipment>
-Clan Advanced SRM 3:Body
-BA-Advanced SRM-3 Ammo:Body:Shots3#
-ISBALightTAG:RA
-BABattleClaw:LA
-BABattleClaw:RA
-BAAPMount:LA
-InfantryAssaultRifle:LA:APM
-</Squad Equipment>
+<originalBuildYear>
+3073
+</originalBuildYear>
 
 <type>
 Mixed (IS Chassis) Advanced
@@ -79,17 +48,17 @@ Mixed (IS Chassis) Advanced
 Ambusher
 </role>
 
-<year>
-3073
-</year>
+<quirks>
+distracting
+</quirks>
 
 <motion_type>
 Leg
 </motion_type>
 
-<source>
-XTR:Steiner
-</source>
+<cruiseMP>
+3
+</cruiseMP>
 
 <armor_type>
 28
@@ -99,13 +68,41 @@ XTR:Steiner
 7
 </armor_tech>
 
-<overview>
-Gray Death Strike battle armor is a production version of the prototype.
-</overview>
+<Squad Equipment>
+CLAdvancedSRM3:Body
+BA-Advanced SRM-3 Ammo:Body:Shots3#
+CLBALightTAG:RA
+BABattleClaw:LA
+BABattleClaw:RA
+BAAPMount:LA
+InfantryAssaultRifle:APM:LA
+</Squad Equipment>
+
+<Trooper 1 Equipment>
+</Trooper 1 Equipment>
+
+<Trooper 2 Equipment>
+</Trooper 2 Equipment>
+
+<Trooper 3 Equipment>
+</Trooper 3 Equipment>
+
+<Trooper 4 Equipment>
+</Trooper 4 Equipment>
+
+<Trooper 5 Equipment>
+</Trooper 5 Equipment>
+
+<Trooper 6 Equipment>
+</Trooper 6 Equipment>
 
 <capabilities>
 Defiance Industries wasn't able to secure a source of the advanced Clan Improved SRM Launcher used on the prototype. As a result, Defiance used a single SRM-3 with two reloads. To make room for this the Gray Death Strike Suit replaced the Battle Claws of the prototype with Basic Manipulators. The launcher can be jettisoned as well, allowing the unit to move slightly more quickly. The Light TAG system mounted in the arm allows armor that has jettisoned the SRM launcher to remain useful on the battlefield, designating enemy units for artillery and missile strikes.
 </capabilities>
+
+<overview>
+Gray Death Strike battle armor is a production version of the prototype.
+</overview>
 
 <deployment>
 This original version of the Strike suit was unique for being a hybrid of Inner Sphere and Clan technology. Built under the supervision of technician Brian Kinnison, this suit removed the improved sensors and modular weapon mount of the Gray Death Standard battlesuit. In their place are a Clan-spec detachable Advanced SRM-3 launcher with three shots mounted on the suit's body and a Light TAG system in the left arm that can spot for artillery units or units carrying Semi-Guided LRM. Both arms ended in Battle Claws and the AP weapon mount was retained as were its movement capabilities and armor, although the missile launcher had to be jettisoned before anti-'Mech attacks could be made. The reliance on Clan technology prevented the suit from reaching mass production, as not even Clan Diamond Shark was willing to sell enough components to justify such a move. Although Defiance Industries eventually went with a redesigned production model using Inner Sphere technology, it was rumored they kept these prototype suits for their own security forces.
@@ -127,12 +124,32 @@ Glengarry
 CHASSIS:Unknown
 ENGINE:Unknown
 ARMOR:Unknown
-JUMPJET:Unknown
+JUMP_JET:Unknown
 COMMUNICATIONS:Unknown
 TARGETING:Unknown
 </systemManufacturers>
 
-<quirks>
-distracting
-</quirks>
+<source>
+XTR:Steiner
+</source>
+
+<chassis>
+biped
+</chassis>
+
+<jumpingMP>
+0
+</jumpingMP>
+
+<armor>
+9
+</armor>
+
+<Trooper Count>
+6
+</Trooper Count>
+
+<weightclass>
+2
+</weightclass>
 

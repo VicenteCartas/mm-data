@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,16 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-
-##Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 Warship
 </UnitType>
@@ -62,11 +53,11 @@ Aerodyne
 </motion_type>
 
 <transporters>
-asfbay:6.0:1:1
-smallcraftbay:2.0:1:2
-cargobay:110608.0:1:3
-1stclassquarters:380.0:0
-crewquarters:1288.0:0
+asfbay:6.0:1:1::-1:0
+smallcraftbay:2.0:1:2::-1:0
+cargobay:110608.0:1:3::-1:0
+1stclassquarters:380.0:0:-1::-1:0
+crewquarters:1288.0:0:-1::-1:0
 </transporters>
 
 <SafeThrust>
@@ -93,9 +84,13 @@ crewquarters:1288.0:0
 41
 </armor_type>
 
-<armor_tech>
+<armor_tech_rating>
+0
+</armor_tech_rating>
+
+<armor_tech_level>
 5
-</armor_tech>
+</armor_tech_level>
 
 <armor>
 48
@@ -187,11 +182,34 @@ Ammo Barracuda:40
 50
 </structural_integrity>
 
+# Fluff Date: 2026-02-24 17:43:28
+<capabilities>
+The Lola II-class destroyers were equipped with a variety of heavy naval lasers and autocannons, showcasing their formidable armament. They also carried a squadron of heavy fighters to enhance their escort and picket capabilities. The design emphasized durability through the use of extensive armor, although this added weight necessitated the installation of oversized drives meant for larger vessels.
+</capabilities>
 
+<overview>
+The Lola-class destroyers were developed in response to the demands of Rear Admiral Adelaide Lola, who prioritized moral and ethical excellence in addition to military skill. The Lola II variant, along with its predecessors, served as escort and picket ships with impressive armaments and heavy armor. However, the inclusion of massive Rolls Le Fay drives and additional armor increased the ship's mass and resulted in cramped living conditions for the crew.
+</overview>
 
+<history>
+In the pursuit of a replacement for the Lola Block I, the Blue Nose Clipperships, under license from Boeing Interstellar, began designing a new destroyer class. However, in their rush to bring the design to production, critical faults in the fuel system were overlooked, leading to additional design flaws. Consequently, the Star League Navy ordered the decommissioning and scrapping of the remaining Lola II vessels in 2660. Despite this, at least four Lola IIs resurfaced in the hands of Taurian rebels during the Second Periphery Uprising, raising questions about their actual fate.
+</history>
 
+<manufacturer>
+Blue Nose Clipperships,Boeing Interstellar
+</manufacturer>
 
+<primaryFactory>
+Mars,Terra
+</primaryFactory>
 
+<systemManufacturers>
+CHASSIS:Unknown
+ENGINE:Unknown
+ARMOR:Unknown
+COMMUNICATIONS:Unknown
+TARGETING:Unknown
+</systemManufacturers>
 
 <use>
 Destroyer
@@ -256,47 +274,4 @@ TR:3057r
 <escape_pod>
 20
 </escape_pod>
-
-# Fluff Date: 2026-02-24 17:43:28
-<overview>
-The Lola II-class destroyer was the second generation of the Lola escort warship lineage, produced by Blue Nose Clipperships at Mars under license from Boeing Interstellar beginning in 2622. The six hundred eighty thousand ton design attempted to address perceived shortcomings in the original Lola I's armament by replacing point defense weapons with additional naval-scale systems, but a rushed development cycle introduced critical flaws that shortened the class's operational lifespan dramatically. Despite sharing the same hull mass and general configuration as its predecessor, the Lola II suffered from chronic fuel system problems and other design deficiencies that led to its early decommissioning within four decades of entering service. The class nonetheless left an unexpected legacy, as its hulls provided the structural foundation for one of the most significant automated weapons systems in Star League history.
-</overview>
-
-<capabilities>
-The Lola II replaced the Lola I's Large Laser point defense batteries with additional Naval Autocannon/10 installations and Barracuda capital missile launchers, shifting the vessel's engagement profile toward heavier naval firepower at the expense of anti-fighter screening capability. Naval Laser 55s remained the primary energy armament with sixteen batteries distributed across all arcs, while paired Naval Laser 45s covered the broadsides. The broadside batteries combined four NAC/10 batteries with two Barracuda launchers, providing a potent mix of ballistic and missile firepower. Additional Barracuda launchers covered the nose and stern arcs, giving the Lola II capital missile capability that its predecessor entirely lacked. Forward and aft quarter arcs each mounted paired NAC/10 batteries alongside their respective Naval Laser 55 installations. Like its predecessor, the Lola II retained Primitive armor and single heat sinks, and the oversized drives still consumed excessive internal volume without resolving the cramped crew conditions that plagued all Lola variants. Six aerospace fighters and two small craft provided organic screening capability, though the loss of Large Laser point defense reduced close-range anti-fighter effectiveness.
-</capabilities>
-
-<deployment>
-<p>No individually named Lola II-class destroyers appear in surviving historical records. The class was officially decommissioned and ordered scrapped by the Star League Navy in 2660, less than four decades after entering service. However, at least four Lola II destroyers subsequently appeared in the hands of Taurian Concordat rebels during the Second Periphery Uprising shortly before the Amaris Civil War, raising serious questions about the thoroughness of the scrapping program and suggesting that some vessels were diverted to Periphery buyers rather than being destroyed.</p><p>The most significant legacy of the Lola II hull was its selection as the structural basis for the M-5 Caspar Capital Drone, first introduced in 2710. These automated warships packed firepower comparable to a battlecruiser into the familiar Lola destroyer frame, forming the primary combat units of the Terran Hegemony Space Defense System. The existence of the Caspar program indicates that a substantial number of Lola II hulls were never actually scrapped but instead diverted to the highly classified drone conversion program.</p>
-</deployment>
-
-<history>
-The Lola II-class destroyer originated when Blue Nose Clipperships of Mars secured a license from Boeing Interstellar to produce an improved version of the venerable Lola I escort destroyer. Entering service in 2622, the Lola II represented an attempt to modernize the design's armament by replacing conventional point defense weapons with additional naval-grade weapons systems, including the Barracuda capital missile launcher that gave the class its first missile capability.<p>Unfortunately, the rushed transition from design to production introduced numerous flaws that the original Lola I had avoided through its simpler engineering. The most critical problems centered on the fuel system, which proved unreliable in extended operations. These deficiencies compounded over years of service, and despite the vessel's substantial combat capability on paper, the Star League Navy concluded that the ongoing maintenance burden outweighed the design's advantages. In 2660, the Navy ordered all remaining Lola II destroyers decommissioned and scrapped, ending the class's active service after less than four decades.</p><p>The official narrative of total scrapping was contradicted when at least four Lola II destroyers appeared among Taurian Concordat rebel fleets during the Second Periphery Uprising. How these vessels survived the scrapping order remains unclear, though diversion through corrupt officials or deliberate clandestine sales to Periphery buyers have both been suggested as explanations.</p><p>The Lola II hull found its true purpose in 2710 when the Terran Hegemony selected it as the basis for the M-5 Caspar Capital Drone. These automated warships, capable of independent combat operations without human crews, formed the backbone of the Space Defense System protecting the Hegemony's most vital worlds. The Caspar program reveals that the scrapping order was at best selectively enforced, with many Lola II hulls instead entering the classified drone conversion pipeline. This final transformation proved far more consequential than the class's brief conventional career, as Caspar drones would shape the course of the Amaris Civil War and leave automated guardians orbiting abandoned worlds for centuries afterward.</p>
-</history>
-
-<manufacturer>
-Blue Nose Clipperships
-</manufacturer>
-
-<primaryFactory>
-Mars
-</primaryFactory>
-
-<systemManufacturers>
-CHASSIS:Blue Nose Clipperships
-ENGINE:Unknown
-ARMOR:Unknown
-JUMP_JET:Unknown
-COMMUNICATIONS:Unknown
-TARGETING:Unknown
-</systemManufacturers>
-
-<systemModels>
-CHASSIS:Unknown
-ENGINE:Unknown
-ARMOR:Primitive
-JUMP_JET:Unknown
-COMMUNICATIONS:Unknown
-TARGETING:Unknown
-</systemModels>
 

@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,16 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-
-# Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 BattleArmor
 </UnitType>
@@ -33,7 +24,7 @@ BattleArmor
 Centaur Battle Armor
 </Name>
 
-<model>
+<Model>
 (Sqd6)
 </Model>
 
@@ -60,9 +51,6 @@ Missile Boat
 <motion_type>
 Leg
 </motion_type>
-
-<transporters>
-</transporters>
 
 <cruiseMP>
 2
@@ -94,29 +82,23 @@ IS BA Reactive (Blazer):LA
 IS BA Reactive (Blazer):Body
 </Squad Equipment>
 
-<source>
-TR:3145:RotS
-</source>
+<Trooper 1 Equipment>
+</Trooper 1 Equipment>
 
-<chassis>
-biped
-</chassis>
+<Trooper 2 Equipment>
+</Trooper 2 Equipment>
 
-<jumpingMP>
-0
-</jumpingMP>
+<Trooper 3 Equipment>
+</Trooper 3 Equipment>
 
-<armor>
-7
-</armor>
+<Trooper 4 Equipment>
+</Trooper 4 Equipment>
 
-<Trooper Count>
-6
-</Trooper Count>
+<Trooper 5 Equipment>
+</Trooper 5 Equipment>
 
-<weightclass>
-3
-</weightclass>
+<Trooper 6 Equipment>
+</Trooper 6 Equipment>
 
 <capabilities>
 The heavy suit is weighted down by its primary weapon, the battle armor artillery battery. Intended to be an anti-infantry and battle armor weapon, this tubed artillery weapon is heavy enough to slow down the Centaur to just barely 10 km/h. However, the entire weapon is detachable, and once dropped the armor can move upwards to 20 km/h. The tubed weapon system is limited to eight rounds of fire. For its only backup weapon, the Centaur has a right arm-mounted Small Laser. To help the Centaur to get into position against a potential enemy, the suit is equipped with Magnetic Clamps. Protecting the suit from counterbattery fire or missile based weaponry is 420 kilograms of Reactive Armor.
@@ -141,3 +123,28 @@ Rhodes Foundry
 <primaryFactory>
 Devil's Rock
 </primaryFactory>
+
+<source>
+TR:3145:RotS
+</source>
+
+<chassis>
+biped
+</chassis>
+
+<jumpingMP>
+0
+</jumpingMP>
+
+<armor>
+7
+</armor>
+
+<Trooper Count>
+6
+</Trooper Count>
+
+<weightclass>
+3
+</weightclass>
+

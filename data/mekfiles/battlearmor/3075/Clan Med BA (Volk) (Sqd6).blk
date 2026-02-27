@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,11 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#Saved from version 0.49.18-SNAPSHOT on 2024-01-13
-<BlockVersion>
-1
-</BlockVersion>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 BattleArmor
 </UnitType>
@@ -48,10 +44,10 @@ Clan Medium Battle Armor
 Clan Level 2
 </type>
 
-
 <role>
 Scout
 </role>
+
 <motion_type>
 Jump
 </motion_type>
@@ -75,10 +71,6 @@ BABasicManipulator:RA
 BAHeavyBattleClaw:LA
 CLBAERMicroLaser:RA
 CLBASRM3 (OS):Body
-SwarmMek
-SwarmWeaponMek
-StopSwarm
-LegAttack
 </Point Equipment>
 
 <Trooper 1 Equipment>
@@ -98,6 +90,11 @@ LegAttack
 
 <Trooper 6 Equipment>
 </Trooper 6 Equipment>
+
+<slotless_equipment>
+BAJumpJet
+BA-SRM3 Ammo:Shots1#
+</slotless_equipment>
 
 <capabilities>
 Instead of the modular weapon ports of the Elemental Battle Armor, Clan Battle Armor mounts a fixed Flamer. Similarly, the SRM-2 pod is no longer detachable, though the new model uses a pair of One-Shot SRM-2 launchers. Interestingly, Clan Battle Armor also incorporates a standard searchlight that can be useful in and out of combat, though the design lacks an anti-personnel weapon. Like all Clan battle armor, Clan Battle Armor employs HarJel. The use of Basic Manipulators allow it to ride OmniMechs and also to make anti-'Mech attacks.

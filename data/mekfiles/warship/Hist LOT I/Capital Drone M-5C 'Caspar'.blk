@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,16 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-
-##Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 Warship
 </UnitType>
@@ -62,7 +53,7 @@ Aerodyne
 </motion_type>
 
 <transporters>
-cargobay:1840.5:1:3
+cargobay:1840.5:1:3::-1:0
 </transporters>
 
 <SafeThrust>
@@ -89,9 +80,13 @@ cargobay:1840.5:1:3
 11
 </armor_type>
 
-<armor_tech>
+<armor_tech_rating>
+0
+</armor_tech_rating>
+
+<armor_tech_level>
 5
-</armor_tech>
+</armor_tech_level>
 
 <armor>
 48
@@ -202,11 +197,30 @@ Ammo AR10 Killer Whale:20
 50
 </structural_integrity>
 
+# Fluff Date: 2026-02-24 13:31:06
+<capabilities>
+The M-5 Caspars had a formidable array of weapons, including naval lasers, heavy naval PPCs, and autocannon broadsides. Their advanced neural network, the Autonomous Tactical Analysis Computer (ATAC), allowed for precise coordination and efficient attacks. The M-5C variant, equipped with the ATAC, could direct up to fifty other SDS drones and relied on the network for targeting assistance. Although the M-5C downgraded its own SDS Drone computer, the additional naval PPCs significantly improved its bow armament.
+</capabilities>
 
+<overview>
+The M-5 drones, known as Caspars, were the pinnacle of the SDS network and became legendary in the Inner Sphere. Designed as capital-class drones, the M-5 Caspars featured heavily modified Lola block II hulls and advanced drone control systems. They possessed firepower comparable to larger WarShips while maintaining the agility of destroyer-class ships. With their slashing assaults and superior coordination, the Caspars were considered the perfect WarShips, although they had a self-destruct system as a flaw.
+</overview>
 
+<deployment>
+The SDS Drone Control System provides for (Gunnery 3, Piloting 4).
+</deployment>
 
+<history>
+The M-5 Caspar drones, as the pinnacle of the SDS network, played a pivotal role during the tumultuous period of the Amaris Civil War. Most worlds within the Terran Hegemony possessed at least a handful of M-5 drones, with key worlds fielding multiple squadrons. However, it was Terra itself that housed the largest concentration of these formidable WarShip drones, with estimates suggesting that there were at least two hundred and fifty stationed there. The M-5 Caspars, named after an ancient Terran commander, were designed to be the primary capital-class drones within the SDS network. Using the unequipped Lola block II hull as a starting point, the M-5 underwent extensive modifications to achieve its final form. Although not intended for extended deployments and requiring external support for major repairs, the M-5 sacrificed cargo space to accommodate advanced drone control systems. This allowed it to possess firepower nearly equivalent to the larger Texas-class WarShip while maintaining the agility of a destroyer-class vessel. With a battery of naval lasers and paired heavy naval PPCs mounted in the nose, the Caspars had the ability to execute slashing assaults that often struck from outside an opponent's effective attack range. The extensive array of heat sinks enabled the drones to dive into enemy formations, unleashing their autocannon broadsides without fear of overheating. Considered by many as the perfect WarShip, the only notable flaw in the design was the self-destruct system built into the engine compartment. A well-placed hit to the aft section could trigger this system and destroy the M-5 drone. Despite their formidable capabilities, the M-5 Caspars were not invincible. General Aleksandr Kerensky and his forces faced the daunting task of devising a strategy to defeat the waves of M-5 drones guarding Terra. Recognizing the coordination network of the Caspars as their greatest strength, Kerensky's technicians developed a jamming system to disrupt their communication and coordination capabilities. This countermeasure proved crucial in turning the tide of the conflict and ultimately defeating the drones. Following the fall of Amaris and the Exodus of Kerensky's forces from the Inner Sphere, the M-5 Caspars were left behind. Some of the surviving drones were likely mothballed in naval caches, serving as reminders of their once-dominant presence. The Inner Sphere would continue to recount tales of the legendary M-5 Caspar drones, acknowledging their significant impact on the outcome of the Amaris Civil War and the shaping of history
+</history>
 
+<manufacturer>
+Nicholas Spacecraft/Ulsop Robotics
+</manufacturer>
 
+<primaryFactory>
+New Earth
+</primaryFactory>
 
 <notes>
 SDS Drone Control System (Gunnery 3, Piloting 4).
@@ -275,47 +289,4 @@ His:LoT1
 <escape_pod>
 0
 </escape_pod>
-
-# Fluff Date: 2026-02-24 13:31:06
-<overview>
-<p>The Capital Drone represents the Star League's most ambitious application of autonomous warfare technology to naval combat. Developed as the cornerstone of the Space Defense System, these unmanned warships were designed to protect critical Terran Hegemony worlds without requiring the human crews that represented the most precious and irreplaceable resource in the Star League Navy. Operating entirely under machine control, drone warships could engage hostile forces with a precision unconstrained by the limitations of human reaction time or the vulnerabilities of organic crews.</p><p>The program encompassed multiple hull configurations adapted from existing warship designs, with the primary production model achieving a remarkable combination of destroyer-class mobility and battleship-grade firepower that made it one of the most feared weapons platforms of the Star League era. Though the Capital Drone achieved considerable technical success, the autonomous nature of these vessels would prove both their greatest strength and their most troubling legacy, as the loss of centralized control during the fall of the Star League left functioning drones as unpredictable hazards across the former Hegemony.</p>
-</overview>
-
-<capabilities>
-<p>The primary M-5 production model employs a heavily modified Lola II destroyer hull, retaining the original frame's thrust characteristics while mounting offensive armament nearly equal to a Texas-class battleship despite displacing barely more than half the tonnage. Eighteen naval lasers provide layered defense across all firing arcs, while paired heavy naval particle projection cannons in the nose enable devastating slashing attacks from beyond an opponent's effective engagement range. Naval autocannons in both medium and heavy calibers deliver sustained broadside firepower, and capital missile launchers including AR-10 systems provide flexible anti-ship capability at all ranges. The drone's massive heat sink array allows it to fire both autocannon broadsides simultaneously without risk of overheating.</p><p>The autonomous control systems replace the hundreds of crew members typically required aboard a warship of this displacement, eliminating all life support, quarters, and personnel-related systems to free tonnage for additional weapons and ammunition. An integrated SDS Drone Control System manages all combat functions at performance levels of a trained warship crew. The SDS Self-Destruct System prevents capture, though its placement in the engine compartment creates a critical vulnerability where a fortunate hit to the aft section can trigger premature detonation. The M-5C command variant adds an Autonomous Tactical Analysis Computer capable of coordinating up to fifty other SDS drones, creating networked defensive formations of extraordinary tactical flexibility. Ferro-carbide armor provides substantial protection relative to the hull's displacement.</p>
-</capabilities>
-
-<deployment>
-<p>The M-5C command variant served as the tactical brain of SDS defensive formations, its Autonomous Tactical Analysis Computer processing millions of combat simulations per second and relaying optimized attack solutions to all connected drones. Each SDS network node included one or more M-5C coordinators directing formations of standard M-5 drones and lighter M-3 DropShip-class platforms. To accommodate the massive ATAC computer array, the M-5C downgraded its own drone control computer, reducing individual accuracy but compensating through networked targeting assistance from subordinate units. Two additional heavy naval particle projection cannons enhanced the command variant's bow armament. The loss of an M-5C coordinator significantly degraded the combat effectiveness of its entire drone formation, making these command units priority targets during the Liberation of Terra.</p>
-</deployment>
-
-<history>
-<p>The Capital Drone program evolved from the Star League's broader Space Defense System initiative, which sought to create an automated defensive network capable of protecting the Terran Hegemony's most critical worlds without straining the navy's finite supply of trained crews. The earliest experiments began with the M-1 drone, a modified Ares Mark VII attack craft that demonstrated the basic viability of autonomous combat operations when it entered trials in 2692. The M-2 followed, adapting Hector DropShip hulls to drone control, before the M-3 scaled the concept to Pentagon-class assault DropShip frames and entered widespread production from 2698. Each iteration refined the autonomous control systems and combat protocols that would eventually enable capital-ship-class operations.</p><p>The M-4 proof-of-concept program converted ten Baron-class destroyer hulls to validate drone control at the capital warship scale, while the more ambitious M-6 program attempted to adapt the Texas-class battleship hull but proved infeasible. The breakthrough came with the M-5, which entered production in 2710 at Nicholas Spacecraft and Ulsop Robotics facilities on New Earth. Built on modified Lola II destroyer hulls, the M-5 achieved the program's ultimate goal: a fully autonomous capital warship capable of engaging and destroying crewed vessels of comparable or greater displacement. The design mounted firepower approaching that of a Texas-class battleship while maintaining destroyer-class acceleration, creating a platform that conventional warships found extraordinarily difficult to counter.</p><p>The M-5C command variant added the Autonomous Tactical Analysis Computer, enabling a single drone to coordinate the actions of up to fifty subordinate units. This networking capability transformed individual drone warships into integrated defensive formations of devastating effectiveness. The SDS network functioned as intended during the Star League era, its mere existence deterring aggression against Hegemony worlds.</p><p>When Stefan Amaris launched his coup against First Lord Richard Cameron, the SDS became a weapon turned against its creators. Amaris forces seized control of the drone network, and the Caspar drones that had been built to protect the Hegemony instead fought to defend the usurper's conquest. During the Liberation of Terra, General Kerensky's SLDF forces were forced to fight through dense formations of the very drones their government had commissioned, suffering devastating losses in the process. Only after Kerensky's technicians devised a jamming system to disrupt the drones' coordination network could the SLDF forces overcome the automated defenders. Without the jamming breakthrough, the Caspar formations defending Terra might have proven insurmountable.</p><p>The fall of the Star League effectively ended the Capital Drone as an operational system. Surviving drones lacking central coordination reverted to basic autonomous protocols, becoming unpredictable hazards in former Hegemony space. The Word of Blake would later resurrect the concept during the Jihad, developing the Caspar II program that applied updated drone technology to new hull designs, demonstrating that the fundamental principles behind the Capital Drone remained viable centuries after their original implementation.</p>
-</history>
-
-<manufacturer>
-Nicholas Spacecraft/Ulsop Robotics
-</manufacturer>
-
-<primaryFactory>
-New Earth
-</primaryFactory>
-
-<systemManufacturers>
-CHASSIS:Unknown
-ENGINE:Unknown
-ARMOR:Unknown
-JUMP_JET:Unknown
-COMMUNICATIONS:Unknown
-TARGETING:Unknown
-</systemManufacturers>
-
-<systemModels>
-CHASSIS:Modified Lola II
-ENGINE:Unknown
-ARMOR:Ferro-Carbide
-JUMP_JET:Unknown
-COMMUNICATIONS:SDS Drone Control System
-TARGETING:SDS Drone Control System
-</systemModels>
 

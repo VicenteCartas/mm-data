@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,16 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-
-# Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 Tank
 </UnitType>
@@ -45,6 +36,10 @@ XR
 3075
 </year>
 
+<originalBuildYear>
+3075
+</originalBuildYear>
+
 <type>
 Clan Level 4
 </type>
@@ -52,6 +47,12 @@ Clan Level 4
 <role>
 Striker
 </role>
+
+<quirks>
+trailer_hitch
+difficult_maintain
+prototype
+</quirks>
 
 <motion_type>
 Tracked
@@ -69,9 +70,13 @@ Tracked
 1
 </armor_type>
 
-<armor_tech>
+<armor_tech_rating>
+0
+</armor_tech_rating>
+
+<armor_tech_level>
 8
-</armor_tech>
+</armor_tech_level>
 
 <armor>
 29
@@ -82,7 +87,7 @@ Tracked
 </armor>
 
 <Body Equipment>
-CLSuperCharger
+Supercharger
 CLArmoredMotiveSystem
 </Body Equipment>
 
@@ -109,10 +114,4 @@ XTR:Clans
 <tonnage>
 55.0
 </tonnage>
-
-<quirks>
-difficult_maintain
-prototype
-trailer_hitch
-</quirks>
 

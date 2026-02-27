@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,20 +15,15 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-#Write the version number just in case...
-<Version>
-MAM0
-</Version>
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 Infantry
 </UnitType>
+
 <Name>
 Clan Space Marine
 </Name>
+
 <Model>
 Clan Snow Raven Space Marines
 </Model>
@@ -36,20 +31,15 @@ Clan Snow Raven Space Marines
 <mul id:>
 3662
 </mul id:>
-<squad_size>
-5
-</squad_size>
-<squadn>
-4
-</squadn>
-<Primary>
-InfantryClanMauserIICIAS
-</Primary>
-<spacesuit>
-</spacesuit>
-<InfantryArmor>
-2
-</InfantryArmor>
+
+<year>
+3015
+</year>
+
+<originalBuildYear>
+3015
+</originalBuildYear>
+
 <type>
 Clan Level 3
 </type>
@@ -57,16 +47,35 @@ Clan Level 3
 <role>
 Ambusher
 </role>
-<year>
-3015
-</year>
-<era>
-TRO: 3085
-</era>
+
 <motion_type>
 Leg
 </motion_type>
 
-<armorKit>
-CLEnvironmentSuitMarine
-</armorKit>
+<Troopers Equipment>
+Environment Suit, Marine
+</Troopers Equipment>
+
+<Field Guns Equipment>
+</Field Guns Equipment>
+
+<squad_size>
+5
+</squad_size>
+
+<squadn>
+4
+</squadn>
+
+<Primary>
+Laser Rifle (Mauser IIC IAS)
+</Primary>
+
+<armordivisor>
+2.0
+</armordivisor>
+
+<spacesuit>
+true
+</spacesuit>
+

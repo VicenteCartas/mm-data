@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,16 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-
-# Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 SupportTank
 </UnitType>
@@ -33,9 +24,9 @@ SupportTank
 Sturmblitz Assault Gun
 </Name>
 
-<model>
+<Model>
 
-</model>
+</Model>
 
 <mul id:>
 7191
@@ -45,6 +36,10 @@ Sturmblitz Assault Gun
 2488
 </year>
 
+<originalBuildYear>
+2488
+</originalBuildYear>
+
 <type>
 IS Level 4
 </type>
@@ -52,6 +47,13 @@ IS Level 4
 <role>
 Juggernaut
 </role>
+
+<quirks>
+easy_maintain
+distracting
+obsolete:2488
+variable_range_targeting
+</quirks>
 
 <motion_type>
 Tracked
@@ -65,9 +67,17 @@ Tracked
 1
 </engine_type>
 
-<fuel>
+<armor_type>
+51
+</armor_type>
+
+<armor_tech_rating>
+3
+</armor_tech_rating>
+
+<armor_tech_level>
 1
-</fuel>
+</armor_tech_level>
 
 <armor>
 40
@@ -76,21 +86,13 @@ Tracked
 10
 </armor>
 
-<barrating>
-10
-</barrating>
-
-<structural_tech_rating>
-3
-</structural_tech_rating>
-
 <Body Equipment>
 Armored Chassis
 Advanced Fire Control
-ISAC20p Ammo
-ISAC20p Ammo
-ISAC20p Ammo
-ISAC20p Ammo
+IS Ammo AC/20 Primitive
+IS Ammo AC/20 Primitive
+IS Ammo AC/20 Primitive
+IS Ammo AC/20 Primitive
 </Body Equipment>
 
 <Front Equipment>
@@ -106,6 +108,18 @@ Autocannon/20 Primitive
 <Rear Equipment>
 </Rear Equipment>
 
+<barrating>
+10
+</barrating>
+
+<structural_tech_rating>
+3
+</structural_tech_rating>
+
+<engine_tech_rating>
+3
+</engine_tech_rating>
+
 <source>
 XTR:Primitives IV
 </source>
@@ -114,10 +128,11 @@ XTR:Primitives IV
 75.0
 </tonnage>
 
-<quirks>
-distracting
-easy_maintain
-obsolete:2488
-variable_range_targeting
-</quirks>
+<fuel>
+1.0
+</fuel>
+
+<fuelType>
+PETROCHEMICALS
+</fuelType>
 

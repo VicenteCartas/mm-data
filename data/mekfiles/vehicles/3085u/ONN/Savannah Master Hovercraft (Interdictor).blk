@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,16 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-
-#Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 Tank
 </UnitType>
@@ -41,25 +32,13 @@ Savannah Master Hovercraft
 2805
 </mul id:>
 
-<Tonnage>
-5
-</Tonnage>
+<year>
+3077
+</year>
 
-<cruiseMP>
-13
-</cruiseMP>
-
-#Order is Tank/VTOL/LST
-<Armor>
-8
-5
-5
-1
-</Armor>
-
-<Front Equipment>
-ISGuardianECMSuite
-</Front Equipment>
+<originalBuildYear>
+3077
+</originalBuildYear>
 
 <type>
 IS Level 2
@@ -69,29 +48,52 @@ IS Level 2
 Scout
 </role>
 
-<year>
-3077
-</year>
+<motion_type>
+Hover
+</motion_type>
 
-<source>
-TR:3085
-</source>
-
-<internal_type>
-0
-</internal_type>
-
-<armor_type>
-6
-</armor_type>
+<cruiseMP>
+13
+</cruiseMP>
 
 <engine_type>
 0
 </engine_type>
 
-<motion_type>
-Hover
-</motion_type>
+<armor_type>
+6
+</armor_type>
+
+<armor_tech_rating>
+0
+</armor_tech_rating>
+
+<armor_tech_level>
+1
+</armor_tech_level>
+
+<armor>
+8
+5
+5
+1
+</armor>
+
+<Body Equipment>
+</Body Equipment>
+
+<Front Equipment>
+ISGuardianECMSuite
+</Front Equipment>
+
+<Right Equipment>
+</Right Equipment>
+
+<Left Equipment>
+</Left Equipment>
+
+<Rear Equipment>
+</Rear Equipment>
 
 <capabilities>
 The Savannah Master's attractiveness stems from its incredible ground speed—more than 200 kilometers per hour at full speed—combined with its extraordinary simplicity of design. Lewis designed it so that it could be easily maintained and repaired with readily available components. The hovercraft's electronics are made in the Lyran city of Tharkad, and its sole weapon varies.
@@ -123,3 +125,12 @@ ARMOR:Durallex Guardian Heavy Ferro-Fibrous
 COMMUNICATIONS:TharHes Hm 10 with Guardian
 TARGETING:TharHes Alpha-2a
 </systemManufacturers>
+
+<source>
+TR:3085
+</source>
+
+<tonnage>
+5.0
+</tonnage>
+

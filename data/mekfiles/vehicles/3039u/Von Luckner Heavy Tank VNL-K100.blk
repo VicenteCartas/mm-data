@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,16 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-
-# Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 Tank
 </UnitType>
@@ -45,6 +36,10 @@ VNL-K100
 3002
 </year>
 
+<originalBuildYear>
+3002
+</originalBuildYear>
+
 <type>
 IS Level 1
 </type>
@@ -52,6 +47,10 @@ IS Level 1
 <role>
 Juggernaut
 </role>
+
+<quirks>
+difficult_maintain
+</quirks>
 
 <motion_type>
 Tracked
@@ -64,6 +63,18 @@ Tracked
 <engine_type>
 0
 </engine_type>
+
+<armor_type>
+0
+</armor_type>
+
+<armor_tech_rating>
+0
+</armor_tech_rating>
+
+<armor_tech_level>
+1
+</armor_tech_level>
 
 <armor>
 43
@@ -99,14 +110,6 @@ Autocannon/20
 Autocannon/20
 </Turret Equipment>
 
-<source>
-TR:3039
-</source>
-
-<tonnage>
-75.0
-</tonnage>
-
 <capabilities>
 The Von Luckner's fusion power plant provides it with the same level of efficiency and mobility as a BattleMech of comparable weight, as well as the indefinite operating range that only fusion can deliver. The Von Luckner's primary armament is typically comprised of powerful autocannons supported by missile racks, as well as a variety of light close-in weaponry deployed to protect against infantry and battlearmor. Finally, its rather thick armor hide helps it to stay in a combat for an extended period of time.
 </capabilities>
@@ -138,7 +141,11 @@ COMMUNICATIONS:O/P 300
 TARGETING:O/P GRNDSTAT 50A
 </systemManufacturers>
 
-<quirks>
-difficult_maintain
-</quirks>
+<source>
+TR:3039
+</source>
+
+<tonnage>
+75.0
+</tonnage>
 

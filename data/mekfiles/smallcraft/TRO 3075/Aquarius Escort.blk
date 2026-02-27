@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,16 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-
-# Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 SmallCraft
 </UnitType>
@@ -33,9 +24,9 @@ SmallCraft
 Aquarius Escort
 </Name>
 
-<model>
+<Model>
 
-</model>
+</Model>
 
 <mul id:>
 3709
@@ -62,10 +53,10 @@ Aerodyne
 </motion_type>
 
 <transporters>
-2ndclassquarters:0.0:0
-crewquarters:0.0:0
-1stclassquarters:0.0:0
-steeragequarters:30.0:0
+2ndclassquarters:0.0:0:-1::-1:0
+crewquarters:0.0:0:-1::-1:0
+1stclassquarters:0.0:0:-1::-1:0
+steeragequarters:30.0:0:-1::-1:0
 </transporters>
 
 <SafeThrust>
@@ -92,9 +83,13 @@ steeragequarters:30.0:0
 41
 </armor_type>
 
-<armor_tech>
+<armor_tech_rating>
+0
+</armor_tech_rating>
+
+<armor_tech_level>
 1
-</armor_tech>
+</armor_tech_level>
 
 <armor>
 183
@@ -183,3 +178,4 @@ TR:3075
 <escape_pod>
 0
 </escape_pod>
+

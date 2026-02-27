@@ -1,4 +1,21 @@
-#Saved from version 0.50.07 on 2025-10-03
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
+#
+# NOTICE: The MegaMek organization is a non-profit group of volunteers
+# creating free software for the BattleTech community.
+#
+# MechWarrior, BattleMech, `Mech and AeroTech are registered trademarks
+# of The Topps Company, Inc. All Rights Reserved.
+#
+# Catalyst Game Labs and the Catalyst Game Labs logo are trademarks of
+# InMediaRes Productions, LLC.
+#
+# MechWarrior Copyright Microsoft Corporation. MegaMek Data was created under
+# Microsoft's "Game Content Usage Rules"
+# <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
+# affiliated with Microsoft.
+
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 BattleArmor
 </UnitType>
@@ -73,6 +90,10 @@ Mission Equipment Storage:Body:SIZE:200.0
 <Trooper 5 Equipment>
 </Trooper 5 Equipment>
 
+<slotless_equipment>
+BAUMU
+</slotless_equipment>
+
 <capabilities>
 While not intended for combat, circumstances arose that pushed the units into battle. In 2860, visiting Clan Wolf forces on the world of Dagda became aware of the Goliath Scorpions' underwater mining programs, as well as the suits they used. A Wolf Star Captain, sensing the combat potential of the suits, issued a Trial of Possession for one of the units. The defense of the suits was assigned to Goliath Scorpion Point Commander Sarah who sensed that the Wolf forces eagerness could be used against them. She selected a nearby wetland with deep water ways, dangerous fauna, and hazardous terrain as the place for the Trial. Clan Wolf bid a Star of Jump Infantry against Scorpion warriors in the Water Elemental Mining Suits. In the end, Sarah had bargained well and the mobility of the Water Elemental Mining Suits in the wetlands allowed the Scorpions to defeat the Wolves with only the loss of one pilot. This defeat convinced Clan Wolf to acquire the suits via trade between the Merchant Castes. In another instance during the Golden Century, Star Commander Vikram of Clan Goliath Scorpion pressed a Star of Water Elementals into service on Circe to defeat Clan Mongoose in a rare and unusual underwater Trial.
 </capabilities>
@@ -128,5 +149,4 @@ biped
 <weightclass>
 2
 </weightclass>
-
 

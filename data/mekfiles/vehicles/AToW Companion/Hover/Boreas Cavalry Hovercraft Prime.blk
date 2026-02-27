@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,16 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-
-# Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 SupportTank
 </UnitType>
@@ -62,8 +53,8 @@ Hover
 </motion_type>
 
 <transporters>
+standardseats:1.0:0:-1::-1:0
 BattleArmorHandles - troopers:-1
-standardseats:1.0:0
 </transporters>
 
 <cruiseMP>
@@ -77,6 +68,18 @@ standardseats:1.0:0
 <clan_engine>
 false
 </clan_engine>
+
+<armor_type>
+49
+</armor_type>
+
+<armor_tech_rating>
+5
+</armor_tech_rating>
+
+<armor_tech_level>
+2
+</armor_tech_level>
 
 <omni>
 1
@@ -96,8 +99,8 @@ Advanced Fire Control
 </Body Equipment>
 
 <Front Equipment>
-Laser Rifle (Mauser IIC IAS)
-Laser Rifle (Mauser IIC IAS)
+Laser Rifle (Mauser IIC IAS):SIZE:1.0
+Laser Rifle (Mauser IIC IAS):SIZE:1.0
 </Front Equipment>
 
 <Right Equipment>
@@ -108,6 +111,11 @@ Laser Rifle (Mauser IIC IAS)
 
 <Rear Equipment>
 </Rear Equipment>
+
+<slotless_equipment>
+Infantry Ammo
+Infantry Ammo
+</slotless_equipment>
 
 <barrating>
 8
@@ -120,10 +128,6 @@ Laser Rifle (Mauser IIC IAS)
 <engine_tech_rating>
 5
 </engine_tech_rating>
-
-<armor_tech_rating>
-5
-</armor_tech_rating>
 
 <history>
 These units have no weights in AToW. The weights are estimates. The units are considered unofficial until weights are given.
@@ -144,3 +148,4 @@ AToW Companion
 <fuel>
 0.029
 </fuel>
+

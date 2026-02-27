@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,58 +15,31 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-#Write the version number just in case...
-<Version>
-MAM0
-</Version>
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 Tank
 </UnitType>
+
 <Name>
 Pilum Heavy Tank
 </Name>
-<model>
 
-</model>
+<Model>
+
+</Model>
 
 <mul id:>
 2531
 </mul id:>
-<Tonnage>
-70
-</Tonnage>
-<cruiseMP>
-4
-</cruiseMP>
-<Armor>
-40
-33
-33
-33
-40
-</Armor>
-<Turret Equipment>
-ISLRM15
-ISArtemisIV
-ISLRM15
-ISArtemisIV
-ISStreakSRM2
-ISStreakSRM2
-</Turret Equipment>
-<Front Equipment>
-ISMediumPulseLaser
-ISMediumPulseLaser
-</Front Equipment>
-<Body Equipment>
-ISLRM15 Ammo Artemis-capable
-ISLRM15 Ammo Artemis-capable
-ISLRM15 Ammo Artemis-capable
-ISStreakSRM2 Ammo
-</Body Equipment>
+
+<year>
+3057
+</year>
+
+<originalBuildYear>
+3057
+</originalBuildYear>
+
 <type>
 IS Level 2
 </type>
@@ -74,21 +47,74 @@ IS Level 2
 <role>
 Missile Boat
 </role>
-<year>
-3057
-</year>
-<internal_type>
-0
-</internal_type>
-<armor_type>
-1
-</armor_type>
-<engine_type>
-0
-</engine_type>
+
 <motion_type>
 Wheeled
 </motion_type>
+
+<cruiseMP>
+4
+</cruiseMP>
+
+<engine_type>
+0
+</engine_type>
+
+<armor_type>
+1
+</armor_type>
+
+<armor_tech_rating>
+0
+</armor_tech_rating>
+
+<armor_tech_level>
+1
+</armor_tech_level>
+
+<armor>
+40
+33
+33
+33
+40
+</armor>
+
+<Body Equipment>
+IS Ammo LRM-15 Artemis-capable
+IS Ammo LRM-15 Artemis-capable
+IS Ammo LRM-15 Artemis-capable
+IS Streak SRM 2 Ammo
+</Body Equipment>
+
+<Front Equipment>
+ISMediumPulseLaser
+ISMediumPulseLaser
+</Front Equipment>
+
+<Right Equipment>
+</Right Equipment>
+
+<Left Equipment>
+</Left Equipment>
+
+<Rear Equipment>
+</Rear Equipment>
+
+<Turret Equipment>
+LRM 15
+ISArtemisIV
+LRM 15
+ISArtemisIV
+ISStreakSRM2
+ISStreakSRM2
+</Turret Equipment>
+
 <source>
 TR:3058U
 </source>
+
+<tonnage>
+70.0
+</tonnage>
+

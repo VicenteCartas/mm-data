@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,16 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-
-# Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 SupportTank
 </UnitType>
@@ -45,6 +36,10 @@ Chi-Ha Infantry Combat Vehicle
 2284
 </year>
 
+<originalBuildYear>
+2284
+</originalBuildYear>
+
 <type>
 IS Level 4
 </type>
@@ -52,6 +47,11 @@ IS Level 4
 <role>
 None
 </role>
+
+<quirks>
+obsolete:2350
+low_profile
+</quirks>
 
 <motion_type>
 Tracked
@@ -69,9 +69,17 @@ troopspace:3.0
 1
 </engine_type>
 
-<fuel>
+<armor_type>
+46
+</armor_type>
+
+<armor_tech_rating>
+3
+</armor_tech_rating>
+
+<armor_tech_level>
 1
-</fuel>
+</armor_tech_level>
 
 <armor>
 11
@@ -80,14 +88,6 @@ troopspace:3.0
 6
 11
 </armor>
-
-<barrating>
-5
-</barrating>
-
-<structural_tech_rating>
-3
-</structural_tech_rating>
 
 <Body Equipment>
 Basic Fire Control
@@ -113,6 +113,18 @@ Machine Gun
 Machine Gun
 </Turret Equipment>
 
+<barrating>
+5
+</barrating>
+
+<structural_tech_rating>
+3
+</structural_tech_rating>
+
+<engine_tech_rating>
+3
+</engine_tech_rating>
+
 <source>
 XTR:Primitives IV
 </source>
@@ -121,8 +133,11 @@ XTR:Primitives IV
 22.0
 </tonnage>
 
-<quirks>
-low_profile
-obsolete:2350
-</quirks>
+<fuel>
+1.0
+</fuel>
+
+<fuelType>
+PETROCHEMICALS
+</fuelType>
 

@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,20 +15,15 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-#Write the version number just in case...
-<Version>
-MAM0
-</Version>
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 Tank
 </UnitType>
+
 <Name>
 Fulcrum Heavy Hovertank
 </Name>
+
 <Model>
 III
 </Model>
@@ -36,32 +31,15 @@ III
 <mul id:>
 1156
 </mul id:>
-<Tonnage>
-50
-</Tonnage>
-<cruiseMP>
-10
-</cruiseMP>
-<Armor>
-48
-40
-40
-20
-40
-</Armor>
-<Turret Equipment>
-ISSnubNosedPPC
-ISMML7
-</Turret Equipment>
-<Front Equipment>
-ISTAG
-</Front Equipment>
-<Body Equipment>
-ISC3SlaveUnit
-ISGuardianECM
-ISMML7 LRM Ammo
-ISMML7 SRM Ammo
-</Body Equipment>
+
+<year>
+3078
+</year>
+
+<originalBuildYear>
+3078
+</originalBuildYear>
+
 <type>
 IS Level 2
 </type>
@@ -69,21 +47,69 @@ IS Level 2
 <role>
 Striker
 </role>
-<year>
-3078
-</year>
-<internal_type>
-0
-</internal_type>
-<armor_type>
-6
-</armor_type>
-<engine_type>
-2
-</engine_type>
+
 <motion_type>
 Hover
 </motion_type>
+
+<cruiseMP>
+10
+</cruiseMP>
+
+<engine_type>
+2
+</engine_type>
+
+<armor_type>
+6
+</armor_type>
+
+<armor_tech_rating>
+0
+</armor_tech_rating>
+
+<armor_tech_level>
+1
+</armor_tech_level>
+
+<armor>
+48
+40
+40
+20
+40
+</armor>
+
+<Body Equipment>
+ISC3SlaveUnit
+ISGuardianECMSuite
+IS Ammo MML-7 LRM
+IS Ammo MML-7 SRM
+</Body Equipment>
+
+<Front Equipment>
+ISTAG
+</Front Equipment>
+
+<Right Equipment>
+</Right Equipment>
+
+<Left Equipment>
+</Left Equipment>
+
+<Rear Equipment>
+</Rear Equipment>
+
+<Turret Equipment>
+ISSNPPC
+ISMML7
+</Turret Equipment>
+
 <source>
 TR:3085
 </source>
+
+<tonnage>
+50.0
+</tonnage>
+

@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,16 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-
-##Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 Dropship
 </UnitType>
@@ -62,11 +53,11 @@ Spheroid
 </motion_type>
 
 <transporters>
-asfbay:6.0:1:1
-2ndclassquarters:0.0:0
-1stclassquarters:100.0:0
-cargobay:2581.0:1:6
-steeragequarters:430.0:0
+asfbay:6.0:1:1::-1:0
+2ndclassquarters:0.0:0:-1::-1:0
+1stclassquarters:100.0:0:-1::-1:0
+cargobay:2581.0:1:6::-1:0
+steeragequarters:430.0:0:-1::-1:0
 </transporters>
 
 <SafeThrust>
@@ -93,9 +84,13 @@ steeragequarters:430.0:0
 20
 </armor_type>
 
-<armor_tech>
+<armor_tech_rating>
+0
+</armor_tech_rating>
+
+<armor_tech_level>
 7
-</armor_tech>
+</armor_tech_level>
 
 <armor>
 810
@@ -105,9 +100,9 @@ steeragequarters:430.0:0
 </armor>
 
 <Nose Equipment>
-(B) Sub-Capital Laser (SCL/3)
-Sub-Capital Laser (SCL/3)
-Sub-Capital Laser (SCL/3)
+(B) Sub-Capital Laser /3
+Sub-Capital Laser /3
+Sub-Capital Laser /3
 (B) Sub-Capital Cannon (Heavy)
 Sub-Capital Cannon (Heavy)
 Sub-Capital Cannon (Heavy)
@@ -131,12 +126,12 @@ ISLaserAntiMissileSystem
 </Nose Equipment>
 
 <Left Side Equipment>
-(B) Sub-Capital Laser (SCL/3)
-Sub-Capital Laser (SCL/3)
-Sub-Capital Laser (SCL/3)
-Sub-Capital Laser (SCL/3)
-Sub-Capital Laser (SCL/3)
-Sub-Capital Laser (SCL/3)
+(B) Sub-Capital Laser /3
+Sub-Capital Laser /3
+Sub-Capital Laser /3
+Sub-Capital Laser /3
+Sub-Capital Laser /3
+Sub-Capital Laser /3
 (B) Capital Missile Launcher (AR10 Launcher)
 Capital Missile Launcher (AR10 Launcher)
 Ammo AR10 Killer Whale:20
@@ -176,12 +171,12 @@ ISLaserAntiMissileSystem
 </Left Side Equipment>
 
 <Right Side Equipment>
-(B) Sub-Capital Laser (SCL/3)
-Sub-Capital Laser (SCL/3)
-Sub-Capital Laser (SCL/3)
-Sub-Capital Laser (SCL/3)
-Sub-Capital Laser (SCL/3)
-Sub-Capital Laser (SCL/3)
+(B) Sub-Capital Laser /3
+Sub-Capital Laser /3
+Sub-Capital Laser /3
+Sub-Capital Laser /3
+Sub-Capital Laser /3
+Sub-Capital Laser /3
 (B) Capital Missile Launcher (AR10 Launcher)
 Capital Missile Launcher (AR10 Launcher)
 Ammo AR10 Killer Whale:20

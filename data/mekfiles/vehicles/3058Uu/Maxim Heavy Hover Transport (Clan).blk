@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,16 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-
-##Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 Tank
 </UnitType>
@@ -81,9 +72,13 @@ false
 1
 </armor_type>
 
-<armor_tech>
+<armor_tech_rating>
+0
+</armor_tech_rating>
+
+<armor_tech_level>
 6
-</armor_tech>
+</armor_tech_level>
 
 <armor>
 25
@@ -124,25 +119,8 @@ CLMG
 CLStreakSRM6
 </Turret Equipment>
 
-<source>
-TR:3058U
-</source>
-
-<tonnage>
-50.0
-</tonnage>
-
-<fuelType>
-PETROCHEMICALS
-</fuelType>
-
-<source>
-TR:3058U
-</source>
-
 <capabilities>
 The Maxim transport fulfilled an infantryman's dream. Its single infantry bay is configured to carry an entire foot platoon with enough space for them to check their weapons and move around comfortably.
-The seats are all padded and face the centre of the vehicle, allowing infantry to communicate with one another and boost morale. Unlike other craft, the crew of the Maxim can deflate the rear portion of the hover skirt when disembarking or mounting up. In a combat situation, the Maxim also performs admirably. With its short- and long-range missiles, the hovertank can provide cover fire in any direction for a debarking infantry platoon.
 </capabilities>
 
 <overview>
@@ -172,3 +150,16 @@ ARMOR:ProtecTech 6
 COMMUNICATIONS:Scarborough Talky 2
 TARGETING:Scarborough Tracky 1 with TAG
 </systemManufacturers>
+
+<source>
+TR:3058U
+</source>
+
+<tonnage>
+50.0
+</tonnage>
+
+<fuelType>
+PETROCHEMICALS
+</fuelType>
+

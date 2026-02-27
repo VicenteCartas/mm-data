@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,68 +15,31 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-#Write the version number just in case...
-<Version>
-MAM0
-</Version>
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 Tank
 </UnitType>
+
 <Name>
 Shoden Assault Vehicle
 </Name>
-<model>
 
-</model>
+<Model>
+
+</Model>
 
 <mul id:>
 5056
 </mul id:>
-<Tonnage>
-70
-</Tonnage>
-<cruiseMP>
-4
-</cruiseMP>
-<Armor>
-55
-37
-37
-25
-30
-</Armor>
-<Turret Equipment>
-CLATM9
-CLATM9
-CLATM9
-</Turret Equipment>
-<Front Equipment>
-CLLightMG
-CLLightMG
-</Front Equipment>
-<Right Equipment>
-CLLightMG
-</Right Equipment>
-<Left Equipment>
-CLLightMG
-</Left Equipment>
-<Body Equipment>
-CLATM9 ER Ammo
-CLATM9 Ammo
-CLATM9 HE Ammo
-CLATM9 ER Ammo
-CLATM9 Ammo
-CLATM9 HE Ammo
-CLATM9 ER Ammo
-CLATM9 Ammo
-CLATM9 HE Ammo
-CLLightMG Ammo (200)
-CLCASE
-</Body Equipment>
+
+<year>
+3064
+</year>
+
+<originalBuildYear>
+3064
+</originalBuildYear>
+
 <type>
 Clan Level 2
 </type>
@@ -84,22 +47,84 @@ Clan Level 2
 <role>
 Brawler
 </role>
-<year>
-3064
-</year>
-<internal_type>
-0
-</internal_type>
-<armor_type>
-0
-</armor_type>
-<engine_type>
-0
-</engine_type>
+
 <motion_type>
 Wheeled
 </motion_type>
 
+<cruiseMP>
+4
+</cruiseMP>
+
+<engine_type>
+0
+</engine_type>
+
+<clan_engine>
+false
+</clan_engine>
+
+<armor_type>
+0
+</armor_type>
+
+<armor_tech_rating>
+0
+</armor_tech_rating>
+
+<armor_tech_level>
+0
+</armor_tech_level>
+
+<armor>
+55
+37
+37
+25
+30
+</armor>
+
+<Body Equipment>
+Clan Ammo ATM-9 ER
+Clan Ammo ATM-9
+Clan Ammo ATM-9 HE
+Clan Ammo ATM-9 ER
+Clan Ammo ATM-9
+Clan Ammo ATM-9 HE
+Clan Ammo ATM-9 ER
+Clan Ammo ATM-9
+Clan Ammo ATM-9 HE
+Clan Light Machine Gun Ammo - Full
+CLCASE
+</Body Equipment>
+
+<Front Equipment>
+CLLightMG
+CLLightMG
+</Front Equipment>
+
+<Right Equipment>
+CLLightMG
+</Right Equipment>
+
+<Left Equipment>
+CLLightMG
+</Left Equipment>
+
+<Rear Equipment>
+</Rear Equipment>
+
+<Turret Equipment>
+CLATM9
+CLATM9
+CLATM9
+</Turret Equipment>
+
 <source>
 TR:3067
 </source>
+
+<tonnage>
+70.0
+</tonnage>
+

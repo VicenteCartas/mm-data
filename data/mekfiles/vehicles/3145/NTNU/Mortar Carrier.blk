@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,16 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-
-# Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 Tank
 </UnitType>
@@ -33,9 +24,9 @@ Tank
 Mortar Carrier
 </Name>
 
-<model>
+<Model>
 
-</model>
+</Model>
 
 <mul id:>
 6793
@@ -44,6 +35,10 @@ Mortar Carrier
 <year>
 3083
 </year>
+
+<originalBuildYear>
+3083
+</originalBuildYear>
 
 <type>
 IS Level 2
@@ -69,9 +64,13 @@ Tracked
 6
 </armor_type>
 
-<armor_tech>
+<armor_tech_rating>
+0
+</armor_tech_rating>
+
+<armor_tech_level>
 5
-</armor_tech>
+</armor_tech_level>
 
 <armor>
 23
@@ -106,14 +105,6 @@ IS Mech Mortar-8
 <Rear Equipment>
 </Rear Equipment>
 
-<source>
-RS:3145-NTNU
-</source>
-
-<tonnage>
-60.0
-</tonnage>
-
 <capabilities>
 The chassis for missile carriers, but they are all essentially military transport vehicles, tracked being the most common, adapted to carry the huge missile launchers and loading equipment. Those adaptations generally consist of reinforcing the suspension systems and armoring the crew and critical components areas enough to survive the back blast from so many missiles. With an average top speed of 54 km/h and armor unable to survive counterbattery fire, if forced to engage in direct combat a carrier's life expectancy is measured in seconds.
 </capabilities>
@@ -144,3 +135,12 @@ ARMOR:Aldis Heavy Ferro-Fibrous
 COMMUNICATIONS:Communicator
 TARGETING:FireScan with IndirecTrack
 </systemManufacturers>
+
+<source>
+RS:3145-NTNU
+</source>
+
+<tonnage>
+60.0
+</tonnage>
+

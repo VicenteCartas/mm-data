@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,20 +15,15 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-#Write the version number just in case...
-<Version>
-MAM0
-</Version>
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 Tank
 </UnitType>
+
 <Name>
 Morrigu Fire Support Vehicle
 </Name>
+
 <Model>
 (Laser)
 </Model>
@@ -36,47 +31,85 @@ Morrigu Fire Support Vehicle
 <mul id:>
 4673
 </mul id:>
-<Tonnage>
-80
-</Tonnage>
-<cruiseMP>
-3
-</cruiseMP>
-<Armor>
-53
-35
-35
-24
-29
-</Armor>
-<Turret Equipment>
-CLERLargeLaser
-CLERLargeLaser
-CLERLargeLaser
-</Turret Equipment>
+
+<year>
+3067
+</year>
+
+<originalBuildYear>
+3067
+</originalBuildYear>
+
 <type>
-Clan
+Clan Level 2
 </type>
 
 <role>
 Sniper
 </role>
-<year>
-3067
-</year>
-<internal_type>
-0
-</internal_type>
-<armor_type>
-0
-</armor_type>
-<engine_type>
-0
-</engine_type>
+
 <motion_type>
 Tracked
 </motion_type>
 
+<cruiseMP>
+3
+</cruiseMP>
+
+<engine_type>
+0
+</engine_type>
+
+<clan_engine>
+false
+</clan_engine>
+
+<armor_type>
+0
+</armor_type>
+
+<armor_tech_rating>
+0
+</armor_tech_rating>
+
+<armor_tech_level>
+0
+</armor_tech_level>
+
+<armor>
+53
+35
+35
+24
+29
+</armor>
+
+<Body Equipment>
+</Body Equipment>
+
+<Front Equipment>
+</Front Equipment>
+
+<Right Equipment>
+</Right Equipment>
+
+<Left Equipment>
+</Left Equipment>
+
+<Rear Equipment>
+</Rear Equipment>
+
+<Turret Equipment>
+CLERLargeLaser
+CLERLargeLaser
+CLERLargeLaser
+</Turret Equipment>
+
 <source>
 TR:3067
 </source>
+
+<tonnage>
+80.0
+</tonnage>
+

@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,16 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-
-##Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 Tank
 </UnitType>
@@ -37,6 +28,10 @@ Vedette Medium Tank
 (Armor)
 </Model>
 
+<mul id:>
+9481
+</mul id:>
+
 <year>
 3111
 </year>
@@ -44,10 +39,6 @@ Vedette Medium Tank
 <originalBuildYear>
 3111
 </originalBuildYear>
-
-<mul id:>
-9481
-</mul id:>
 
 <type>
 IS Level 2
@@ -61,9 +52,6 @@ Brawler
 Tracked
 </motion_type>
 
-<transporters>
-</transporters>
-
 <cruiseMP>
 5
 </cruiseMP>
@@ -76,9 +64,13 @@ Tracked
 6
 </armor_type>
 
-<armor_tech>
+<armor_tech_rating>
+0
+</armor_tech_rating>
+
+<armor_tech_level>
 1
-</armor_tech>
+</armor_tech_level>
 
 <armor>
 40
@@ -113,14 +105,6 @@ Heavy Machine Gun
 ISUltraAC10
 </Turret Equipment>
 
-<source>
-RG32
-</source>
-
-<tonnage>
-50.0
-</tonnage>
-
 <capabilities>
 Carrying only one anti-vehicle weapon does not make it a less effective vehicle than a newer tank, but does reduce its ability to deal with a wide variety of targets. The Vedette uses its speed to great effect by moving into optimum autocannon range, opening fire, and then retreating as fast as possible to another fire position.
 </capabilities>
@@ -135,7 +119,6 @@ The combustion engine is replaced with a comparable fuel cell, freeing up enough
 
 <history>
 There will be at least one Vedette wherever there are armored vehicles. It is not unrealistic to believe that this tank exists on every globe in the Inner Sphere.
-The Vedette, which was first created by the New Earth Trading Company and included specially licensed ComStar electronics, has spread to every realm and is now in routine production in multiple factories while also being a popular special-license item. It may be found in practically every House armored force as well as several mercenary armor battalions. The current technical rebirth brought forth by the memory core discovered on Helm has only increased the popularity of the Vedette, allowing more and more manufacturers to commence manufacturing.
 </history>
 
 <manufacturer>
@@ -152,3 +135,12 @@ ARMOR:Durallex Special Heavy Ferro-fibrous w/CASE
 COMMUNICATIONS:ComStar Rover
 TARGETING:ComStar Test-2
 </systemManufacturers>
+
+<source>
+RG32
+</source>
+
+<tonnage>
+50.0
+</tonnage>
+

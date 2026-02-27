@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,15 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-#Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 BattleArmor
 </UnitType>
@@ -32,7 +24,7 @@ BattleArmor
 Shedu Assault Battle Armor
 </Name>
 
-<model>
+<Model>
 (Sqd6)
 </Model>
 
@@ -40,36 +32,13 @@ Shedu Assault Battle Armor
 9037
 </mul id:>
 
-<chassis>
-quad
-</chassis>
+<year>
+3072
+</year>
 
-<weightclass>
-4
-</weightclass>
-
-<Trooper Count>
-6
-</Trooper Count>
-
-<cruiseMP>
-3
-</cruiseMP>
-
-<Armor>
-15
-</Armor>
-
-<Squad Equipment>
-ISBAHeavy Recoilless Rifle:Body
-ISBAHeavyMG:Body
-ISBAHeavyMG:Body
-IS BA Advanced:Body
-IS BA Advanced:Body
-IS BA Advanced:Body
-IS BA Advanced:Body
-IS BA Advanced:Body
-</Squad Equipment>
+<originalBuildYear>
+3072
+</originalBuildYear>
 
 <type>
 IS Level 2
@@ -79,17 +48,13 @@ IS Level 2
 Juggernaut
 </role>
 
-<year>
-3072
-</year>
-
 <motion_type>
 Leg
 </motion_type>
 
-<source>
-TR:3075
-</source>
+<cruiseMP>
+3
+</cruiseMP>
 
 <armor_type>
 30
@@ -99,13 +64,42 @@ TR:3075
 3
 </armor_tech>
 
-<overview>
-The Shedu is a battle armor design in the Word of Blake's Demon Series that is used exclusively by Manei Domini, one of the last of the Demons to be created by Precentor Vapula.
-</overview>
+<Squad Equipment>
+CLBAHeavy Recoilless Rifle:Body
+ISBAHeavyMachineGun:Body
+ISBAHeavyMachineGun:Body
+IS BA Advanced:Body
+IS BA Advanced:Body
+IS BA Advanced:Body
+IS BA Advanced:Body
+IS BA Advanced:Body
+</Squad Equipment>
+
+<Trooper 1 Equipment>
+</Trooper 1 Equipment>
+
+<Trooper 2 Equipment>
+</Trooper 2 Equipment>
+
+<Trooper 3 Equipment>
+</Trooper 3 Equipment>
+
+<Trooper 4 Equipment>
+</Trooper 4 Equipment>
+
+<Trooper 5 Equipment>
+</Trooper 5 Equipment>
+
+<Trooper 6 Equipment>
+</Trooper 6 Equipment>
 
 <capabilities>
 The major advantage of the quad chassis is its speed, and Vapula used that to give the Shedu an excellent maximum ground speed for an assault-weight suit. Unlike other quad designs like the Fenrir or Rottweiler however Vapula did not skimp on protection and gave it 600kg of advanced armor, enough to withstand a Gauss rifle slug. Thus compared to the Fenrir the Shedu has slightly less space and weight for weaponry, though since like all Demon suits it is designed to work in groups this is less of a problem. Although equipped with modular weapon mounts three primary configurations appeared with the introduction of the Shedu, followed by a couple more exotic variants. As one of the last Demon suits to enter service the Shedu was relatively rare, though more common than its companion the Nephilim.
 </capabilities>
+
+<overview>
+The Shedu is a battle armor design in the Word of Blake's Demon Series that is used exclusively by Manei Domini, one of the last of the Demons to be created by Precentor Vapula.
+</overview>
 
 <deployment>
 The standard version of the Shedu can handle a variety of roles. It has a Modular Turret Mount that typically carries a Heavy Recoilless Rifle for anti-armor work. This is supplemented by a pair of Heavy Machine Guns that appear like horns on the battle suit's “head”. In addition to being effective against armored targets up close, they can make short work of infantry.
@@ -127,7 +121,7 @@ Gibson
 CHASSIS:Unknown
 ENGINE:Unknown
 ARMOR:Unknown
-JUMPJET:Unknown
+JUMP_JET:Unknown
 COMMUNICATIONS:Unknown
 TARGETING:Unknown
 </systemManufacturers>
@@ -135,3 +129,28 @@ TARGETING:Unknown
 <notes>
 The TRO: 3075 entry lists a 3-slot configurable turret with a weight of 40 kg. The correct weight of 80 kg would exceed the maximum 2000 kg.
 </notes>
+
+<source>
+TR:3075
+</source>
+
+<chassis>
+quad
+</chassis>
+
+<jumpingMP>
+0
+</jumpingMP>
+
+<armor>
+15
+</armor>
+
+<Trooper Count>
+6
+</Trooper Count>
+
+<weightclass>
+4
+</weightclass>
+

@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,20 +15,15 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-#Write the version number just in case...
-<Version>
-MAM0
-</Version>
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 Tank
 </UnitType>
+
 <Name>
 Goblin Infantry Support Vehicle
 </Name>
+
 <Model>
 (Sealed)
 </Model>
@@ -36,33 +31,15 @@ Goblin Infantry Support Vehicle
 <mul id:>
 1221
 </mul id:>
-<Tonnage>
-45
-</Tonnage>
-<cruiseMP>
-4
-</cruiseMP>
-<Armor>
-40
-32
-32
-26
-40
-</Armor>
-<Turret Equipment>
-ISSNPPC
-ISSRM6
-</Turret Equipment>
-<Front Equipment>
-ISMachine Gun
-ISAntiMissileSystem
-</Front Equipment>
-<Body Equipment>
-ISMG Ammo (100)
-ISSRM6 Ammo
-ISAMS Ammo
-Environmental Sealing
-</Body Equipment>
+
+<year>
+3076
+</year>
+
+<originalBuildYear>
+3076
+</originalBuildYear>
+
 <type>
 IS Level 2
 </type>
@@ -70,24 +47,64 @@ IS Level 2
 <role>
 Brawler
 </role>
-<year>
-3076
-</year>
-<internal_type>
-0
-</internal_type>
-<armor_type>
-1
-</armor_type>
-<engine_type>
-0
-</engine_type>
+
 <motion_type>
 Tracked
 </motion_type>
-<source>
-TR:3085
-</source>
+
+<cruiseMP>
+4
+</cruiseMP>
+
+<engine_type>
+0
+</engine_type>
+
+<armor_type>
+1
+</armor_type>
+
+<armor_tech_rating>
+0
+</armor_tech_rating>
+
+<armor_tech_level>
+1
+</armor_tech_level>
+
+<armor>
+40
+32
+32
+26
+40
+</armor>
+
+<Body Equipment>
+IS Machine Gun Ammo - Half
+IS Ammo SRM-6
+ISAMS Ammo
+Environmental Sealing
+</Body Equipment>
+
+<Front Equipment>
+Machine Gun
+ISAntiMissileSystem
+</Front Equipment>
+
+<Right Equipment>
+</Right Equipment>
+
+<Left Equipment>
+</Left Equipment>
+
+<Rear Equipment>
+</Rear Equipment>
+
+<Turret Equipment>
+ISSNPPC
+SRM 6
+</Turret Equipment>
 
 <capabilities>
 Goblin Infantry Support Vehicle is designed to provide close-range infantry support. Its primary weapon is a turret-mounted large Sutel pulse laser, which offers accuracy and firepower, making it effective against hostile power-armored troops. The Harpoon-6 missile system and two Johnston Miniguns further enhance its ability to combat conventional infantry. The tank boasts nearly ten tons of Durallex Light ferro-fibrous armor, making it highly durable for its weight class, and it features the MainFire anti-missile system to increase survivability. However, its major weakness lies in the lack of long-range weaponry, limiting its engagement range. Additionally, the Goblin's relatively low speed necessitates coordination with other units to provide the long-range firepower it lacks, making it vulnerable to fast-moving threats in open terrain.
@@ -120,3 +137,12 @@ ARMOR:Durallex Light Ferro-Fibrous
 COMMUNICATIONS:CommuTech XL
 TARGETING:BlazeFire Tracker with Range Check
 </systemManufacturers>
+
+<source>
+TR:3085
+</source>
+
+<tonnage>
+45.0
+</tonnage>
+

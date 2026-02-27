@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,19 +15,10 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-
-<BlockVersion>
-1
-</BlockVersion>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 Tank
 </UnitType>
-
-<blockversion>
-1
-</blockversion>
 
 <Name>
 Challenger MBT
@@ -45,6 +36,10 @@ XVc
 3075
 </year>
 
+<originalBuildYear>
+3075
+</originalBuildYear>
+
 <type>
 IS Level 4
 </type>
@@ -53,29 +48,29 @@ IS Level 4
 Sniper
 </role>
 
-<tonnage>
-90.0
-</tonnage>
-
 <motion_type>
 Tracked
 </motion_type>
-
-<engine_type>
-3
-</engine_type>
 
 <cruiseMP>
 3
 </cruiseMP>
 
+<engine_type>
+3
+</engine_type>
+
 <armor_type>
 6
 </armor_type>
 
-<armor_tech>
+<armor_tech_rating>
+0
+</armor_tech_rating>
+
+<armor_tech_level>
 7
-</armor_tech>
+</armor_tech_level>
 
 <armor>
 57
@@ -95,7 +90,7 @@ Silver Bullet Gauss Ammo
 IS Gauss Ammo
 IS Gauss Ammo
 Silver Bullet Gauss Ammo
-ISSponsonTurret
+SponsonTurret
 </Body Equipment>
 
 <Front Equipment>
@@ -123,3 +118,8 @@ ISSBGR
 <source>
 XTR:Davion
 </source>
+
+<tonnage>
+90.0
+</tonnage>
+

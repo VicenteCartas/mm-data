@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,16 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-
-#Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 Tank
 </UnitType>
@@ -41,25 +32,58 @@ Hetzer Wheeled Assault Gun
 1511
 </mul id:>
 
-<Tonnage>
-40
-</Tonnage>
+<year>
+3076
+</year>
+
+<originalBuildYear>
+3076
+</originalBuildYear>
+
+<type>
+IS Level 2
+</type>
+
+<role>
+Brawler
+</role>
+
+<quirks>
+bad_rep_is
+low_profile
+poor_work
+</quirks>
+
+<motion_type>
+Wheeled
+</motion_type>
 
 <cruiseMP>
 4
 </cruiseMP>
 
-#Order is Tank/VTOL/LST
-<Armor>
-32
-32
-32
-32
-</Armor>
+<engine_type>
+0
+</engine_type>
 
-<Front Equipment>
-ISRotaryAC5
-</Front Equipment>
+<armor_type>
+6
+</armor_type>
+
+<armor_tech_rating>
+0
+</armor_tech_rating>
+
+<armor_tech_level>
+1
+</armor_tech_level>
+
+<armor>
+32
+32
+32
+32
+</armor>
 
 <Body Equipment>
 ISRotaryAC5 Ammo
@@ -70,37 +94,18 @@ ISCASE
 Environmental Sealing
 </Body Equipment>
 
-<type>
-IS Level 2
-</type>
+<Front Equipment>
+ISRotaryAC5
+</Front Equipment>
 
-<role>
-Brawler
-</role>
+<Right Equipment>
+</Right Equipment>
 
-<year>
-3076
-</year>
+<Left Equipment>
+</Left Equipment>
 
-<source>
-TR:3085
-</source>
-
-<internal_type>
-0
-</internal_type>
-
-<armor_type>
-6
-</armor_type>
-
-<engine_type>
-0
-</engine_type>
-
-<motion_type>
-Wheeled
-</motion_type>
+<Rear Equipment>
+</Rear Equipment>
 
 <capabilities>
 Its primary and only weapon is in the front, meaning the unit lacks a turret, making it difficult to employ in roles other than defensive ones. Also, its wheeled chassis restricts its mobility.
@@ -133,9 +138,11 @@ COMMUNICATIONS:Johnston Q-Band
 TARGETING:Scantrex Dual Tac
 </systemManufacturers>
 
-<quirks>
-low_profile
-bad_rep_is
-poor_work
-</quirks>
+<source>
+TR:3085
+</source>
+
+<tonnage>
+40.0
+</tonnage>
 

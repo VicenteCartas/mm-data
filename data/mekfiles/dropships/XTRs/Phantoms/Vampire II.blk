@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,7 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#Saved from version 0.50.1-SNAPSHOT on 2024-10-05
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 Dropship
 </UnitType>
@@ -85,9 +85,13 @@ cargobay:8.0:1:6::-1:0
 19
 </armor_type>
 
-<armor_tech>
+<armor_tech_rating>
+0
+</armor_tech_rating>
+
+<armor_tech_level>
 1
-</armor_tech>
+</armor_tech_level>
 
 <armor>
 150
@@ -132,8 +136,6 @@ Communications Equipment:SIZE:0.0
 
 <capabilities>
 <p>The Vampire’s main strength lies in its speed and deceptive appearance. It could blend into aerospace formations, often being mistaken for a fighter on a bombing run due to its weapons loadout and small size.</p>
-
-<p>The Vampire was equipped with a modest weapon array more akin to aerospace fighters. It carried two medium lasers and an SRM-6 in the nose, while each wing mounted a Large Laser and LRM-20. An additional pair of medium lasers protected the aft. This fighter-like armament allowed the Vampire to blend in with aerospace squadrons during combat missions. Despite its light weapons load, two tons of SRM reloads and three tons of LRM reloads provided ample endurance for its hit-and-run role.</p>
 </capabilities>
 
 <overview>

@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,16 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-
-# Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 BattleArmor
 </UnitType>
@@ -44,6 +35,10 @@ Asura Medium Battle Armor
 <year>
 3072
 </year>
+
+<originalBuildYear>
+3072
+</originalBuildYear>
 
 <type>
 IS Level 2
@@ -70,7 +65,7 @@ Jump
 </armor_tech>
 
 <Squad Equipment>
-ISBAMG:RA
+CLBAMG:RA
 ISBAFireDrakeNeedler:LA
 Camo System:Body
 BABattleClaw:LA
@@ -80,11 +75,50 @@ IS BA Advanced:Body
 IS BA Advanced:RA
 IS BA Advanced:LA
 IS BA Advanced:Body
-SwarmMek
-SwarmWeaponMek
-StopSwarm
-LegAttack
 </Squad Equipment>
+
+<Trooper 1 Equipment>
+</Trooper 1 Equipment>
+
+<Trooper 2 Equipment>
+</Trooper 2 Equipment>
+
+<Trooper 3 Equipment>
+</Trooper 3 Equipment>
+
+<Trooper 4 Equipment>
+</Trooper 4 Equipment>
+
+<Trooper 5 Equipment>
+</Trooper 5 Equipment>
+
+<slotless_equipment>
+BAJumpJet
+</slotless_equipment>
+
+<capabilities>
+Compared to the Clan Elemental the Asura is not as well armored, although its 280kg of advanced armor can withstand a hit from a Clan ER Medium Laser. The Asura does not have any enhancements to a standard trooper's ground speed but carries jump jets to leap ninety meters at a time, matching the Elemental in terms of speed, and its weaponry has a longer reach. While only ever fielded in significant numbers by the Manei Domini, unconfirmed rumors from the Terran resistance movement claims that regular Militia units also used these suit, though if true these were most likely discarded testbed models reportedly prone to glitching.
+</capabilities>
+
+<overview>
+The closest thing the Demon Series of battle armor has to a standard, front-line model, the Asura is a medium-weight design.
+</overview>
+
+<deployment>
+Like the others in the Demon series, the Asura features an anti-infantry variant designed for maximum effectiveness in rooting out disorganized resistance to Blakist rule. A Machine Gun in the right arm is devastating to unarmored troops while a "Firedrake" Support Needler in the left destroys flesh very effectively. Both arms are equipped with battle claws and a Camo System keeps the Asura hidden from unsophisticated opponents until it is ready to strike.
+</deployment>
+
+<history>
+The Word of Blake battlesuit is named for demons of Hindu lore and is overwhelmingly fielded by Manei Domini troops whose cybernetic enhancements make them even more powerful.
+</history>
+
+<manufacturer>
+Gibson Federated BattleMechs (A Division of Free Worlds Defense Industries)
+</manufacturer>
+
+<primaryFactory>
+Gibson
+</primaryFactory>
 
 <source>
 TR:3075
@@ -110,26 +144,3 @@ biped
 2
 </weightclass>
 
-<overview>
-The closest thing the Demon Series of battle armor has to a standard, front-line model, the Asura is a medium-weight design.
-</overview>
-
-<history>
-The Word of Blake battlesuit is named for demons of Hindu lore and is overwhelmingly fielded by Manei Domini troops whose cybernetic enhancements make them even more powerful.
-</history>
-
-<capabilities>
-Compared to the Clan Elemental the Asura is not as well armored, although its 280kg of advanced armor can withstand a hit from a Clan ER Medium Laser. The Asura does not have any enhancements to a standard trooper's ground speed but carries jump jets to leap ninety meters at a time, matching the Elemental in terms of speed, and its weaponry has a longer reach. While only ever fielded in significant numbers by the Manei Domini, unconfirmed rumors from the Terran resistance movement claims that regular Militia units also used these suit, though if true these were most likely discarded testbed models reportedly prone to glitching.
-</capabilities>
-
-<deployment>
-Like the others in the Demon series, the Asura features an anti-infantry variant designed for maximum effectiveness in rooting out disorganized resistance to Blakist rule. A Machine Gun in the right arm is devastating to unarmored troops while a "Firedrake" Support Needler in the left destroys flesh very effectively. Both arms are equipped with battle claws and a Camo System keeps the Asura hidden from unsophisticated opponents until it is ready to strike.
-</deployment>
-
-<manufacturer>
-Gibson Federated BattleMechs (A Division of Free Worlds Defense Industries)
-</manufacturer>
-
-<primaryFactory>
-Gibson
-</primaryFactory>

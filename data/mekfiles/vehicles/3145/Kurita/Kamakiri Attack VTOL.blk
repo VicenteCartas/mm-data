@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,16 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-
-# Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 VTOL
 </UnitType>
@@ -33,9 +24,9 @@ VTOL
 Kamakiri Attack VTOL
 </Name>
 
-<model>
+<Model>
 
-</model>
+</Model>
 
 <mul id:>
 6382
@@ -45,6 +36,10 @@ Kamakiri Attack VTOL
 3100
 </year>
 
+<originalBuildYear>
+3100
+</originalBuildYear>
+
 <type>
 IS Level 3
 </type>
@@ -52,6 +47,11 @@ IS Level 3
 <role>
 Missile Boat
 </role>
+
+<quirks>
+vtol_rotor_dual
+hard_pilot
+</quirks>
 
 <motion_type>
 VTOL
@@ -69,9 +69,13 @@ VTOL
 3
 </armor_type>
 
-<armor_tech>
+<armor_tech_rating>
+0
+</armor_tech_rating>
+
+<armor_tech_level>
 5
-</armor_tech>
+</armor_tech_level>
 
 <armor>
 36
@@ -105,14 +109,6 @@ Thunderbolt 10
 <Rotor Equipment>
 </Rotor Equipment>
 
-<source>
-TR:3145:DC
-</source>
-
-<tonnage>
-55.0
-</tonnage>
-
 <capabilities>
 Moving as fast as many reconnaissance and strike platforms in service with the DCMS already thanks to the DAV 155 XL extra light engine, the original specification armor installed by Yan was replaced with seven tons of StarGuard Aurora Reflective at the request of the DCMS, who wanted to improve the Kamakari's protection against energy weapons, although the nature of the Reflective Armor didn't offer any additional protection against the flak commonly directed at VTOLs.
 </capabilities>
@@ -144,8 +140,11 @@ COMMUNICATIONS:Scuti Dualcom
 TARGETING:Radcom T11
 </systemManufacturers>
 
-<quirks>
-vtol_rotor_dual
-hard_pilot
-</quirks>
+<source>
+TR:3145:DC
+</source>
+
+<tonnage>
+55.0
+</tonnage>
 

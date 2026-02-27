@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,42 +15,44 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
+generator:MegaMek Suite 0.50.12 on 2026-02-26
 chassis:Ryoken III-XP
 clanname:Skinwalker
 model:A
 mul id:7379
 
-Config:Biped Omnimech
+Config:Biped OmniMek
 techbase:Mixed (Clan Chassis)
-Era:3143
-Rules Level:4
+era:3143
+source:XTR:RotS 3
+rules level:4
 role:Striker
-Source:XTR:RotS 3
 
-Mass:55
-Engine:330 XL (Clan) Engine
-Structure:Clan Endo Steel
-Myomer:Triple-Strength
-Cockpit:Interface Cockpit
-Gyro:None
 
-Heat Sinks:12 Double
-Base Chassis Heat Sinks:11
-Walk MP:6
-Jump MP:0
+mass:55
+engine:330 XL (Clan) Engine
+structure:Clan Endo Steel
+myomer:Triple-Strength
+cockpit:Interface Cockpit
+gyro:None
 
-Armor:Ferro-Lamellor(Clan)
-LA Armor:16
-RA Armor:16
-LT Armor:21
-RT Armor:21
-CT Armor:24
-HD Armor:9
-LL Armor:19
-RL Armor:19
-RTL Armor:5
-RTR Armor:5
-RTC Armor:6
+heat sinks:12 Clan Double
+base chassis heat sinks:11
+walk mp:6
+jump mp:0
+
+armor:Ferro-Lamellor(Clan)
+LA armor:16
+RA armor:16
+LT armor:21
+RT armor:21
+CT armor:24
+HD armor:9
+LL armor:19
+RL armor:19
+RTL armor:5
+RTR armor:5
+RTC armor:6
 
 Weapons:12
 ER Large Laser, Left Arm
@@ -72,12 +74,12 @@ Upper Arm Actuator
 Lower Arm Actuator
 Hand Actuator
 Clan Ferro-Lamellor
-CLERLargeLaser (omnipod)
-CLERMediumLaser (omnipod)
-CLERMediumLaser (omnipod)
-CLTargeting Computer (omnipod)
-CLTargeting Computer (omnipod)
-CLTargeting Computer (omnipod)
+CLERLargeLaser (OMNIPOD)
+CLERMediumLaser (OMNIPOD)
+CLERMediumLaser (OMNIPOD)
+CLTargeting Computer (OMNIPOD)
+CLTargeting Computer (OMNIPOD)
+CLTargeting Computer (OMNIPOD)
 Clan Ferro-Lamellor
 
 Right Arm:
@@ -85,14 +87,14 @@ Shoulder
 Upper Arm Actuator
 Lower Arm Actuator
 Hand Actuator
-TSM
-TSM
-CLERLargeLaser (omnipod)
-CLERMediumLaser (omnipod)
-CLERMediumLaser (omnipod)
-CLDoubleHeatSink (omnipod)
-CLDoubleHeatSink (omnipod)
-TSM
+Triple Strength Myomer
+Triple Strength Myomer
+CLERLargeLaser (OMNIPOD)
+CLERMediumLaser (OMNIPOD)
+CLERMediumLaser (OMNIPOD)
+CLDoubleHeatSink (OMNIPOD)
+CLDoubleHeatSink (OMNIPOD)
+Triple Strength Myomer
 
 Left Torso:
 Fusion Engine
@@ -104,9 +106,9 @@ Clan Endo Steel
 Clan Endo Steel
 Clan Endo Steel
 Clan Endo Steel
-CLERSmallLaser (omnipod)
-CLERSmallLaser (omnipod)
-CLERSmallLaser (omnipod)
+CLERSmallLaser (OMNIPOD)
+CLERSmallLaser (OMNIPOD)
+CLERSmallLaser (OMNIPOD)
 
 Right Torso:
 Fusion Engine
@@ -117,9 +119,9 @@ Clan Ferro-Lamellor
 Clan Ferro-Lamellor
 Clan Ferro-Lamellor
 Clan Ferro-Lamellor
-CLERSmallLaser (omnipod)
-CLERSmallLaser (omnipod)
-CLERSmallLaser (omnipod)
+CLERSmallLaser (OMNIPOD)
+CLERSmallLaser (OMNIPOD)
+CLERSmallLaser (OMNIPOD)
 -Empty-
 
 Center Torso:
@@ -129,12 +131,12 @@ Fusion Engine
 Fusion Engine
 Fusion Engine
 Fusion Engine
-TSM
-TSM
-TSM
-Radical Heat Sink System (omnipod)
-Radical Heat Sink System (omnipod)
-Radical Heat Sink System (omnipod)
+Triple Strength Myomer
+Triple Strength Myomer
+Triple Strength Myomer
+Radical Heat Sink System (OMNIPOD)
+Radical Heat Sink System (OMNIPOD)
+Radical Heat Sink System (OMNIPOD)
 
 Head:
 Life Support
@@ -180,15 +182,10 @@ Clan Ferro-Lamellor
 
 # Fluff Date: 2026-02-21 18:24:59
 overview:<p>Developed during the mid-Dark Ages in the thirty-second century, the Ryoken III-XP was an experimental medium OmniMech first fielded by Clan Wolf. Produced at the renovated Kali Yama Weapons Industries facility on Kalidasa, the 55-ton design served as a technology demonstrator for the Interface Cockpit, Triple Strength Myomer, and Ferro-Lamellor armor systems that would later be incorporated into the production Skinwalker. The prototype's combat debut in 3148 shocked Republic Remnant forces who encountered its exotic capabilities for the first time.</p>
-
 capabilities:<p>Built with a mix of Inner Sphere and Clan technologies, the Ryoken III-XP is a powerful and swift design. Using a combination of a 330-rated Extra-Light Fusion Engine and Triple Strength Myomer, the 'Mech is able to achieve speeds up to 110 km/h when the myomer bundles reach operating temperature. Perhaps the most startling innovation included in this design is the Clan Interface Armor, which allows a MechWarrior to interface with their 'Mech while being completely armored should they be forced to eject. This combination interface allows the Ryoken III pilot a degree of control in combat unmatched by conventional cockpit systems, and removes the need to have a Gyro mounted in the 'Mech. This technology was thought to have been lost at the time of Ryoken III's baptism in combat by Inner Sphere powers. In addition to having its pilot encased in a power-armor interface, the Mech's hull is protected by 11.5 tons of Ferro-Lamellor Armor.</p>
-
 history:<p>Also known as the Skinwalker, the Ryoken III-XP was created by the newly transplanted Clan Wolf, which had renovated a factory that had once belonged to the former Marik-Stewart Commonwealth on Kalidasa. This 'Mech, when it was first deployed into combat, surprised many with its use of a mix of experimental and exotic technologies, the likes of which was rarely seen in Clan design before. The design was first encountered in combat in 3148, when Republic Remnant forces raided Kalidasa and engaged an experimental prototype.</p><p>The lessons learned from the Ryoken III-XP prototype program were subsequently incorporated into the production Skinwalker, though the Triple Strength Myomer and other experimental systems were replaced with more reliable alternatives to enable mass production for Clan Wolf's expanding campaigns.</p>
-
 manufacturer:Kali Yama Weapons Industries Inc.
-
 primaryfactory:Kalidasa
-
 systemmanufacturer:CHASSIS:Kali Yama Weapons Industries
 systemmode:CHASSIS:Prototype Hybrid Chassis
 systemmanufacturer:ENGINE:Unknown

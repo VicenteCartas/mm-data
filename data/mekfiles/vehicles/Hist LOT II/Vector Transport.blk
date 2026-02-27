@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,16 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-
-# Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 VTOL
 </UnitType>
@@ -33,9 +24,9 @@ VTOL
 Vector Combat Support VTOL
 </Name>
 
-<model>
+<Model>
 
-</model>
+</Model>
 
 <mul id:>
 6768
@@ -44,6 +35,10 @@ Vector Combat Support VTOL
 <year>
 2730
 </year>
+
+<originalBuildYear>
+2730
+</originalBuildYear>
 
 <type>
 IS Level 2
@@ -73,9 +68,13 @@ troopspace:3.0
 1
 </armor_type>
 
-<armor_tech>
+<armor_tech_rating>
+0
+</armor_tech_rating>
+
+<armor_tech_level>
 1
-</armor_tech>
+</armor_tech_level>
 
 <armor>
 18
@@ -106,14 +105,6 @@ Medium Laser
 <Rotor Equipment>
 </Rotor Equipment>
 
-<source>
-His:LoT2
-</source>
-
-<tonnage>
-22.0
-</tonnage>
-
 <capabilities>
 The primary configuration of the Vector was used for transporting a full infantry platoon. In order to achieve its primary purpose, it sported a nose-mounted Small Pulse Laser which was controlled by the helmet of the pilot and the gunner which allowed for suppressive fire while the two Medium Lasers mounted in the wings allowed for strafing runs against massed targets.
 </capabilities>
@@ -137,3 +128,12 @@ General Motors
 <primaryFactory>
 Outreach
 </primaryFactory>
+
+<source>
+His:LoT2
+</source>
+
+<tonnage>
+22.0
+</tonnage>
+

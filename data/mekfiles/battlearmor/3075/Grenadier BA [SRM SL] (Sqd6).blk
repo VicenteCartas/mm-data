@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,15 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-#Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 BattleArmor
 </UnitType>
@@ -40,39 +32,13 @@ Grenadier Battle Armor
 8996
 </mul id:>
 
-<chassis>
-biped
-</chassis>
+<year>
+3065
+</year>
 
-<weightclass>
-4
-</weightclass>
-
-<Trooper Count>
-6
-</Trooper Count>
-
-<cruiseMP>
-2
-</cruiseMP>
-
-<Armor>
-9
-</Armor>
-
-<Squad Equipment>
-ISBASmallLaser:LA
-ISBASRM4:Body
-BA-SRM4 Ammo:Body:Shots4#
-BA-SRM4 Ammo:Body:Shots3#
-BABasicManipulator:RA
-BAAPMount:RA
-InfantryAssaultRifle:RA:APM
-IS BA Stealth:RA
-IS BA Stealth:Body
-IS BA Stealth:LA
-IS BA Stealth:Body
-</Squad Equipment>
+<originalBuildYear>
+3065
+</originalBuildYear>
 
 <type>
 IS Level 2
@@ -82,17 +48,13 @@ IS Level 2
 Ambusher
 </role>
 
-<year>
-3065
-</year>
-
 <motion_type>
 Leg
 </motion_type>
 
-<source>
-TR:3075
-</source>
+<cruiseMP>
+2
+</cruiseMP>
 
 <armor_type>
 32
@@ -102,13 +64,45 @@ TR:3075
 3
 </armor_tech>
 
-<overview>
-The Grenadier is a battle armor design created by the Hahm-Heinz Design Bureau.
-</overview>
+<Squad Equipment>
+ISBASmallLaser:LA
+ISBASRM4:Body
+BA-SRM4 Ammo:Body:Shots4#
+BA-SRM4 Ammo:Body:Shots3#
+BABasicManipulator:RA
+BAAPMount:RA
+InfantryAssaultRifle:APM:RA
+IS BA Stealth (Standard):RA
+IS BA Stealth (Standard):Body
+IS BA Stealth (Standard):LA
+IS BA Stealth (Standard):Body
+</Squad Equipment>
+
+<Trooper 1 Equipment>
+</Trooper 1 Equipment>
+
+<Trooper 2 Equipment>
+</Trooper 2 Equipment>
+
+<Trooper 3 Equipment>
+</Trooper 3 Equipment>
+
+<Trooper 4 Equipment>
+</Trooper 4 Equipment>
+
+<Trooper 5 Equipment>
+</Trooper 5 Equipment>
+
+<Trooper 6 Equipment>
+</Trooper 6 Equipment>
 
 <capabilities>
 The team still wanted mobility, however, so the Grenadier can muster up a respectable 21 km/h on the ground. The armor is where the Grenadier is lacking, having only enough to stop an Inner Sphere Large Pulse Laser, the same amount as the venerable Inner Sphere Standard. This armor, however, is standard stealth armor, so the Grenadier is a bit more difficult to target.
 </capabilities>
+
+<overview>
+The Grenadier is a battle armor design created by the Hahm-Heinz Design Bureau.
+</overview>
 
 <deployment>
 The Grenadier comes equipped with a Modular Weapon Mount on the left arm, while it has an Anti-Personnel Weapon Mount on the right. The only fixed weapon is an SRM-4 in the body, along with seven shots, giving it remarkable staying power. The left arm mount can carry a variety of weapons, though a standard Small Laser is the most common, giving the Grenadier a punch similar to (but far greater than) the Elemental battlesuit. This Grenadier variant uses a Small Laser in the arm.
@@ -130,7 +124,32 @@ New Avalon,Talcott
 CHASSIS:Unknown
 ENGINE:Unknown
 ARMOR:Unknown
-JUMPJET:Unknown
+JUMP_JET:Unknown
 COMMUNICATIONS:Unknown
 TARGETING:Unknown
 </systemManufacturers>
+
+<source>
+TR:3075
+</source>
+
+<chassis>
+biped
+</chassis>
+
+<jumpingMP>
+0
+</jumpingMP>
+
+<armor>
+9
+</armor>
+
+<Trooper Count>
+6
+</Trooper Count>
+
+<weightclass>
+4
+</weightclass>
+

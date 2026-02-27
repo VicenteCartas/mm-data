@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,20 +15,15 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-#Write the version number just in case...
-<Version>
-MAM0
-</Version>
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 Infantry
 </UnitType>
+
 <Name>
 Jump Platoon
 </Name>
+
 <Model>
 (Gauss)
 </Model>
@@ -36,21 +31,15 @@ Jump Platoon
 <mul id:>
 4411
 </mul id:>
-<squad_size>
-7
-</squad_size>
-<squadn>
-3
-</squadn>
-<Primary>
-InfantryThunderstroke
-</Primary>
-<Secondary>
-InfantryGrandMauler
-</Secondary>
-<secondn>
-1
-</secondn>
+
+<year>
+3062
+</year>
+
+<originalBuildYear>
+3062
+</originalBuildYear>
+
 <type>
 IS Level 2
 </type>
@@ -58,13 +47,35 @@ IS Level 2
 <role>
 None
 </role>
-<year>
-3062
-</year>
+
 <motion_type>
 Jump
 </motion_type>
 
-<armorKit>
-GenericKit
-</armorKit>
+<Troopers Equipment>
+Generic Infantry Kit
+</Troopers Equipment>
+
+<Field Guns Equipment>
+</Field Guns Equipment>
+
+<squad_size>
+7
+</squad_size>
+
+<squadn>
+3
+</squadn>
+
+<secondn>
+1
+</secondn>
+
+<Primary>
+Gauss Rifle (Thunderstroke)
+</Primary>
+
+<Secondary>
+Gauss Cannon (Grand Mauler)
+</Secondary>
+

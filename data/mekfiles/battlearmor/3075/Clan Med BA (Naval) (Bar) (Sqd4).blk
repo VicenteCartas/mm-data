@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,16 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-
-# Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 BattleArmor
 </UnitType>
@@ -44,6 +35,10 @@ Clan Medium Battle Armor
 <year>
 3070
 </year>
+
+<originalBuildYear>
+3070
+</originalBuildYear>
 
 <type>
 Clan Level 2
@@ -71,40 +66,28 @@ Jump
 
 <Point Equipment>
 CLBAMicroPulseLaser:RA
-CLBAJumpBooster:Body
+BAJumpBooster:Body
 BASearchlight:LA
 BAHeavyBattleClawVibro:LA
 BABasicManipulator:RA
-SwarmMek
-SwarmWeaponMek
-StopSwarm
-LegAttack
-CLBAExtendedLifeSupport:Body
+BAExtendedLifeSupport:Body
 </Point Equipment>
 
-<source>
-TR:3075
-</source>
+<Trooper 1 Equipment>
+</Trooper 1 Equipment>
 
-<chassis>
-biped
-</chassis>
+<Trooper 2 Equipment>
+</Trooper 2 Equipment>
 
-<jumpingMP>
-3
-</jumpingMP>
+<Trooper 3 Equipment>
+</Trooper 3 Equipment>
 
-<armor>
-9
-</armor>
+<Trooper 4 Equipment>
+</Trooper 4 Equipment>
 
-<Trooper Count>
-4
-</Trooper Count>
-
-<weightclass>
-2
-</weightclass>
+<slotless_equipment>
+BAJumpJet
+</slotless_equipment>
 
 <capabilities>
 Instead of the modular weapon ports of the Elemental Battle Armor, Clan Battle Armor mounts a fixed Flamer. Similarly, the SRM-2 pod is no longer detachable, though the new model uses a pair of One-Shot SRM-2 launchers. Interestingly, Clan Battle Armor also incorporates a standard searchlight that can be useful in and out of combat, though the design lacks an anti-personnel weapon. Like all Clan battle armor, Clan Battle Armor employs HarJel. The use of Basic Manipulators allow it to ride OmniMechs and also to make anti-'Mech attacks.
@@ -129,4 +112,28 @@ Sea Fox Y3
 <primaryFactory>
 Trondheim
 </primaryFactory>
+
+<source>
+TR:3075
+</source>
+
+<chassis>
+biped
+</chassis>
+
+<jumpingMP>
+3
+</jumpingMP>
+
+<armor>
+9
+</armor>
+
+<Trooper Count>
+4
+</Trooper Count>
+
+<weightclass>
+2
+</weightclass>
 

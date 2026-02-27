@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,16 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-
-# Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 Tank
 </UnitType>
@@ -33,9 +24,9 @@ Tank
 Kalki Cruise Missile Launcher
 </Name>
 
-<model>
+<Model>
 
-</model>
+</Model>
 
 <mul id:>
 4416
@@ -44,6 +35,10 @@ Kalki Cruise Missile Launcher
 <year>
 3079
 </year>
+
+<originalBuildYear>
+3079
+</originalBuildYear>
 
 <type>
 IS Level 4
@@ -64,6 +59,18 @@ Tracked
 <engine_type>
 6
 </engine_type>
+
+<armor_type>
+0
+</armor_type>
+
+<armor_tech_rating>
+0
+</armor_tech_rating>
+
+<armor_tech_level>
+1
+</armor_tech_level>
 
 <armor>
 20
@@ -104,14 +111,6 @@ ISMagshotGR
 ISMagshotGR
 </Turret Equipment>
 
-<source>
-TR:Proto
-</source>
-
-<tonnage>
-150.0
-</tonnage>
-
 <capabilities>
 For point-blank anti-infantry protection, the SturmFeur carries two huge missile racks backed up by machine guns. The SturmFeur is extensively armored, more so than many frontline tanks, in comparison to many other fire-support vehicles. The SturmFeur's 19-and-a-half tons of armor allow it to resist massive damage, which is appreciated by missile carrier operators who are used to paper-thin armor that disintegrates (as the sailors will tell you) "when given a filthy look."
 </capabilities>
@@ -142,3 +141,12 @@ ARMOR:StarSlab/7
 COMMUNICATIONS:JoLex Systems
 TARGETING:StratSight v.9
 </systemManufacturers>
+
+<source>
+TR:Proto
+</source>
+
+<tonnage>
+150.0
+</tonnage>
+

@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,20 +15,15 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-#Write the version number just in case...
-<Version>
-MAM0
-</Version>
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 Tank
 </UnitType>
+
 <Name>
 Galleon Light Tank
 </Name>
+
 <Model>
 GAL-200 (RL)
 </Model>
@@ -36,34 +31,15 @@ GAL-200 (RL)
 <mul id:>
 1180
 </mul id:>
-<Tonnage>
-30
-</Tonnage>
-<cruiseMP>
-6
-</cruiseMP>
-<Armor>
-14
-13
-13
-14
-18
-</Armor>
-<front Equipment>
-CLRocketLauncher10Prototype
-CLRocketLauncher10Prototype
-CLRocketLauncher10Prototype
-CLRocketLauncher10Prototype
-</front Equipment>
-<Turret Equipment>
-IS Machine Gun
-IS Machine Gun
-CLRocketLauncher20Prototype
-CLRocketLauncher20Prototype
-</Turret Equipment>
-<Body Equipment>
-ISMG Ammo (100)
-</Body Equipment>
+
+<year>
+2801
+</year>
+
+<originalBuildYear>
+2801
+</originalBuildYear>
+
 <type>
 IS Level 4
 </type>
@@ -71,21 +47,78 @@ IS Level 4
 <role>
 Ambusher
 </role>
-<year>
-2801
-</year>
-<internal_type>
-0
-</internal_type>
-<armor_type>
-0
-</armor_type>
-<engine_type>
-1
-</engine_type>
+
+<quirks>
+ubiquitous_is
+</quirks>
+
 <motion_type>
 Tracked
 </motion_type>
+
+<cruiseMP>
+6
+</cruiseMP>
+
+<engine_type>
+1
+</engine_type>
+
+<armor_type>
+0
+</armor_type>
+
+<armor_tech_rating>
+0
+</armor_tech_rating>
+
+<armor_tech_level>
+0
+</armor_tech_level>
+
+<armor>
+14
+13
+13
+14
+18
+</armor>
+
+<Body Equipment>
+IS Machine Gun Ammo - Half
+</Body Equipment>
+
+<Front Equipment>
+CLRocketLauncher10Prototype
+CLRocketLauncher10Prototype
+CLRocketLauncher10Prototype
+CLRocketLauncher10Prototype
+</Front Equipment>
+
+<Right Equipment>
+</Right Equipment>
+
+<Left Equipment>
+</Left Equipment>
+
+<Rear Equipment>
+</Rear Equipment>
+
+<Turret Equipment>
+Machine Gun
+Machine Gun
+RocketLauncher20Prototype
+RocketLauncher20Prototype
+</Turret Equipment>
+
+<slotless_equipment>
+IS Ammo RL-10
+IS Ammo RL-10
+IS Ammo RL-10
+IS Ammo RL-10
+IS Ammo RL-20
+IS Ammo RL-20
+</slotless_equipment>
 
 <capabilities>
 With a top speed faster than most 'Mechs, the Galleon was well-armed but lacked protection, carrying only three and a half tons of armor.
@@ -118,6 +151,10 @@ COMMUNICATIONS:Maxell 500
 TARGETING:Maxell TA50
 </systemManufacturers>
 
+<source>
+His:OK
+</source>
+
 <tonnage>
 30.0
 </tonnage>
@@ -125,12 +162,4 @@ TARGETING:Maxell TA50
 <fuelType>
 PETROCHEMICALS
 </fuelType>
-
-<source>
-His:OK
-</source>
-
-<quirks>
-ubiquitous_is
-</quirks>
 

@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,19 +15,10 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-
-<BlockVersion>
-1
-</BlockVersion>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 Tank
 </UnitType>
-
-<blockversion>
-1
-</blockversion>
 
 <Name>
 Po II Heavy Tank
@@ -45,6 +36,10 @@ Po II Heavy Tank
 3085
 </year>
 
+<originalBuildYear>
+3085
+</originalBuildYear>
+
 <type>
 IS Level 3
 </type>
@@ -53,21 +48,29 @@ IS Level 3
 Missile Boat
 </role>
 
-<tonnage>
-60
-</tonnage>
-
 <motion_type>
 Tracked
 </motion_type>
+
+<cruiseMP>
+4
+</cruiseMP>
 
 <engine_type>
 2
 </engine_type>
 
-<cruiseMP>
-4
-</cruiseMP>
+<armor_type>
+0
+</armor_type>
+
+<armor_tech_rating>
+0
+</armor_tech_rating>
+
+<armor_tech_level>
+1
+</armor_tech_level>
 
 <armor>
 40
@@ -78,13 +81,25 @@ Tracked
 </armor>
 
 <Body Equipment>
-ISArrowIV Ammo
-ISArrowIV Ammo
-ISArrowIV Homing Ammo
+ISArrowIVAmmo
+ISArrowIVAmmo
+ISArrowIVHomingAmmo
 IS Ammo LRM-5
 IS Streak SRM 2 Ammo
 IS Machine Gun Ammo - Half
 </Body Equipment>
+
+<Front Equipment>
+</Front Equipment>
+
+<Right Equipment>
+</Right Equipment>
+
+<Left Equipment>
+</Left Equipment>
+
+<Rear Equipment>
+</Rear Equipment>
 
 <Turret Equipment>
 ISArrowIV
@@ -99,3 +114,8 @@ Machine Gun
 <source>
 TR:3085
 </source>
+
+<tonnage>
+60.0
+</tonnage>
+

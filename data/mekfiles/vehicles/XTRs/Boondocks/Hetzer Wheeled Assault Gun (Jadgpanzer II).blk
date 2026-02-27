@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,67 +15,62 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-
-<mul id:>
-1664
-</mul id:>
-#building block data file
-
-<BlockVersion>
-1
-</BlockVersion>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 Tank
 </UnitType>
-
-<blockversion>
-1
-</blockversion>
 
 <Name>
 Jagdpanzer II
 </Name>
 
-<model>
+<Model>
 
-</model>
+</Model>
+
+<mul id:>
+1664
+</mul id:>
 
 <year>
 3074
 </year>
 
+<originalBuildYear>
+3074
+</originalBuildYear>
+
 <type>
 IS Level 3
 </type>
 
-
 <role>
 Brawler
 </role>
-<tonnage>
-40.0
-</tonnage>
 
 <motion_type>
 Wheeled
 </motion_type>
 
-<engine_type>
-2
-</engine_type>
-
 <cruiseMP>
 5
 </cruiseMP>
+
+<engine_type>
+2
+</engine_type>
 
 <armor_type>
 22
 </armor_type>
 
-<armor_tech>
+<armor_tech_rating>
+0
+</armor_tech_rating>
+
+<armor_tech_level>
 7
-</armor_tech>
+</armor_tech_level>
 
 <armor>
 30
@@ -85,7 +80,8 @@ Wheeled
 </armor>
 
 <Body Equipment>
-ISSponsonTurret
+IS Vehicular Stealth
+SponsonTurret
 IS Ultra AC/20 Ammo
 IS Ultra AC/20 Ammo
 IS Ultra AC/20 Ammo
@@ -143,3 +139,8 @@ TARGETING:Scantrex Dual Tac
 <source>
 XTR:Boondocks
 </source>
+
+<tonnage>
+40.0
+</tonnage>
+

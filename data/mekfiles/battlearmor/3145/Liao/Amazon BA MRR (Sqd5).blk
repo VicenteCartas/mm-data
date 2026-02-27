@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,16 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-
-# Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 BattleArmor
 </UnitType>
@@ -45,6 +36,10 @@ Amazon Battle Armor
 3101
 </year>
 
+<originalBuildYear>
+3101
+</originalBuildYear>
+
 <type>
 IS Level 2
 </type>
@@ -52,6 +47,10 @@ IS Level 2
 <role>
 Ambusher
 </role>
+
+<quirks>
+easy_pilot
+</quirks>
 
 <motion_type>
 Jump
@@ -61,15 +60,66 @@ Jump
 1
 </cruiseMP>
 
+<armor_type>
+30
+</armor_type>
+
+<armor_tech>
+3
+</armor_tech>
+
 <Squad Equipment>
 BABattleClaw:LA
-ISBAMediumRecoillessRifle:RA
+CLBAMedium Recoilless Rifle:RA
 IS BA Advanced:Body
 IS BA Advanced:LA
 IS BA Advanced:Body
 IS BA Advanced:LA
 IS BA Advanced:Body
 </Squad Equipment>
+
+<Trooper 1 Equipment>
+</Trooper 1 Equipment>
+
+<Trooper 2 Equipment>
+</Trooper 2 Equipment>
+
+<Trooper 3 Equipment>
+</Trooper 3 Equipment>
+
+<Trooper 4 Equipment>
+</Trooper 4 Equipment>
+
+<Trooper 5 Equipment>
+</Trooper 5 Equipment>
+
+<slotless_equipment>
+BAJumpJet
+</slotless_equipment>
+
+<capabilities>
+Based on the standard Inner Sphere battle armor, the Amazon uses advanced armor to increase protection and provides a jump capability of 90 meters. This allows Amazon-equipped troops to clear obstacles that would stop other battle armor units.
+</capabilities>
+
+<overview>
+The Amazon battle armor was created by the Magistracy of Canopus.
+</overview>
+
+<deployment>
+The Amazon has a Modular Weapon Mount on the right arm which can be configured to support either a Medium Recoilless Rifle or a Support PPC. The left arm carries a Battle Claw which allows Amazon pilots to make anti-'Mech attacks or ride an Omnimech into battle.
+</deployment>
+
+<history>
+The Amazon is used by both the Magistracy and the Capellan Confederation. Amazons deployed by the Capellan Confederation Armed Forces faced Cavalier battle armor and turned in a better performance.
+</history>
+
+<manufacturer>
+Foxx Infantry Systems
+</manufacturer>
+
+<primaryFactory>
+Royal Foxx
+</primaryFactory>
 
 <source>
 TR:3145:CC
@@ -87,14 +137,6 @@ biped
 10
 </armor>
 
-<armor_type>
-30
-</armor_type>
-
-<armor_tech>
-3
-</armor_tech>
-
 <Trooper Count>
 5
 </Trooper Count>
@@ -102,32 +144,4 @@ biped
 <weightclass>
 2
 </weightclass>
-
-<overview>
-The Amazon battle armor was created by the Magistracy of Canopus.
-</overview>
-
-<history>
-The Amazon is used by both the Magistracy and the Capellan Confederation. Amazons deployed by the Capellan Confederation Armed Forces faced Cavalier battle armor and turned in a better performance.
-</history>
-
-<capabilities>
-Based on the standard Inner Sphere battle armor, the Amazon uses advanced armor to increase protection and provides a jump capability of 90 meters. This allows Amazon-equipped troops to clear obstacles that would stop other battle armor units.
-</capabilities>
-
-<deployment>
-The Amazon has a Modular Weapon Mount on the right arm which can be configured to support either a Medium Recoilless Rifle or a Support PPC. The left arm carries a Battle Claw which allows Amazon pilots to make anti-'Mech attacks or ride an Omnimech into battle.
-</deployment>
-
-<manufacturer>
-Foxx Infantry Systems
-</manufacturer>
-
-<primaryFactory>
-Royal Foxx
-</primaryFactory>
-
-<quirks>
-easy_pilot
-</quirks>
 

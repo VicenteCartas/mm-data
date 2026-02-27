@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,16 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-
-# Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 Tank
 </UnitType>
@@ -45,6 +36,10 @@ Pegasus Scout Hover Tank
 2873
 </year>
 
+<originalBuildYear>
+2873
+</originalBuildYear>
+
 <type>
 IS Level 1
 </type>
@@ -58,7 +53,7 @@ Hover
 </motion_type>
 
 <transporters>
-cargobay:12.0:1
+cargobay:12.0:1:1::-1:0
 </transporters>
 
 <cruiseMP>
@@ -68,6 +63,18 @@ cargobay:12.0:1
 <engine_type>
 1
 </engine_type>
+
+<armor_type>
+0
+</armor_type>
+
+<armor_tech_rating>
+0
+</armor_tech_rating>
+
+<armor_tech_level>
+1
+</armor_tech_level>
 
 <armor>
 26
@@ -94,14 +101,6 @@ cargobay:12.0:1
 
 <Turret Equipment>
 </Turret Equipment>
-
-<source>
-TR:3039
-</source>
-
-<tonnage>
-35.0
-</tonnage>
 
 <capabilities>
 The Pegasus, often referred to as a "Harasser on Steroids," carries much of the same armament in the form of turret-mounted missile racks for its main offensive and defensive armament. The Pegasus is equipped with a single medium laser, which, despite being inefficient for its weight on this internal combustion vehicle, allows it to operate behind enemy lines even after its missiles run out. With six-and-a-half tonnes of ProtecTech on its frame, the Pegasus is reasonably armoured for a hover tank of its size. Though crews are trained to avoid enemy contact whenever possible, the tank's armour has allowed it to survive several lucky large laser hits to any location. Unless it is hidden from enemy patrols, the Pegasus has a respectable top speed of nearly 130 kph.
@@ -134,3 +133,16 @@ ARMOR:ProtecTech 6
 COMMUNICATIONS:Salamander Systems CommPhase Unit
 TARGETING:Exeter LongScan with ReconLock
 </systemManufacturers>
+
+<source>
+TR:3039
+</source>
+
+<tonnage>
+35.0
+</tonnage>
+
+<fuelType>
+PETROCHEMICALS
+</fuelType>
+

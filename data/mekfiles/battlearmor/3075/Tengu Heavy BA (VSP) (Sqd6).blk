@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,15 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-#Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 BattleArmor
 </UnitType>
@@ -40,43 +32,13 @@ Tengu Heavy Battle Armor
 9047
 </mul id:>
 
-<chassis>
-biped
-</chassis>
+<year>
+3074
+</year>
 
-<weightclass>
-3
-</weightclass>
-
-<Trooper Count>
-6
-</Trooper Count>
-
-<cruiseMP>
-2
-</cruiseMP>
-
-<jumpingMP>
-2
-</jumpingMP>
-
-<Armor>
-12
-</Armor>
-
-<Squad Equipment>
-ISDetachableWeaponPack:LA
-ISBASVSPL:DWP:LA
-BABasicManipulator:LA
-BABasicManipulator:RA
-BAAPMount:RA
-InfantryAssaultRifle:RA:APM
-IS BA Advanced:Body
-IS BA Advanced:Body
-IS BA Advanced:Body
-IS BA Advanced:Body
-IS BA Advanced:Body
-</Squad Equipment>
+<originalBuildYear>
+3074
+</originalBuildYear>
 
 <type>
 IS Level 3
@@ -86,17 +48,13 @@ IS Level 3
 Juggernaut
 </role>
 
-<year>
-3074
-</year>
-
 <motion_type>
 Leg
 </motion_type>
 
-<source>
-TR:3075
-</source>
+<cruiseMP>
+2
+</cruiseMP>
 
 <armor_type>
 30
@@ -106,13 +64,45 @@ TR:3075
 5
 </armor_tech>
 
-<overview>
-The second of the Demon Series of battle armor to be spotted, the Tengu also appears to feature the most experimentation.
-</overview>
+<Squad Equipment>
+ISDetachableWeaponPack:LA
+ISBASmallVSPLaser:DWP:LA
+BABasicManipulator:LA
+BABasicManipulator:RA
+BAAPMount:RA
+InfantryAssaultRifle:APM:RA
+IS BA Advanced:Body
+IS BA Advanced:Body
+IS BA Advanced:Body
+IS BA Advanced:Body
+IS BA Advanced:Body
+</Squad Equipment>
+
+<Trooper 1 Equipment>
+</Trooper 1 Equipment>
+
+<Trooper 2 Equipment>
+</Trooper 2 Equipment>
+
+<Trooper 3 Equipment>
+</Trooper 3 Equipment>
+
+<Trooper 4 Equipment>
+</Trooper 4 Equipment>
+
+<Trooper 5 Equipment>
+</Trooper 5 Equipment>
+
+<Trooper 6 Equipment>
+</Trooper 6 Equipment>
 
 <capabilities>
 Its 520kg of advanced armor is enough to stop two Medium Pulse Laser blasts and still have a little left, and though it has four primary configurations, the nature of the Tengu allows for a wide array of variants including several unconfirmed variations such as a weaponless electronic warfare suit and a Rocket Launcher-equipped anti-infantry suit.
 </capabilities>
+
+<overview>
+The second of the Demon Series of battle armor to be spotted, the Tengu also appears to feature the most experimentation.
+</overview>
 
 <deployment>
 A third version introduced after the first two configurations, this one carries only 480kg of armor and replaces the Modular Weapon Mount with a Detachable Weapon Mount which is used to carry a Small Variable-Speed Laser. The bulk of this mount prevents the suit from jumping and cuts its speed in half unless it is jettisoned, while the AP mount can only carry weapons 5kg or less.
@@ -134,7 +124,32 @@ Gibson
 CHASSIS:Unknown
 ENGINE:Unknown
 ARMOR:Unknown
-JUMPJET:Unknown
+JUMP_JET:Unknown
 COMMUNICATIONS:Unknown
 TARGETING:Unknown
 </systemManufacturers>
+
+<source>
+TR:3075
+</source>
+
+<chassis>
+biped
+</chassis>
+
+<jumpingMP>
+2
+</jumpingMP>
+
+<armor>
+12
+</armor>
+
+<Trooper Count>
+6
+</Trooper Count>
+
+<weightclass>
+3
+</weightclass>
+

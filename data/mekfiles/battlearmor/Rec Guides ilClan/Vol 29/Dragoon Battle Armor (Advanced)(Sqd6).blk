@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,16 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-
-##Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 BattleArmor
 </UnitType>
@@ -37,6 +28,10 @@ Dragoon Battle Armor
 (Advanced)(Sqd6)
 </Model>
 
+<mul id:>
+9384
+</mul id:>
+
 <year>
 3072
 </year>
@@ -45,24 +40,17 @@ Dragoon Battle Armor
 3072
 </originalBuildYear>
 
-<mul id:>
-9384
-</mul id:>
-
 <type>
 Mixed (IS Chassis) Advanced
 </type>
 
-
 <role>
 Ambusher
 </role>
+
 <motion_type>
 Jump
 </motion_type>
-
-<transporters>
-</transporters>
 
 <cruiseMP>
 1
@@ -79,10 +67,6 @@ Jump
 <Squad Equipment>
 BAHeavyBattleClaw:LA
 CLBALightMortar:Body
-SwarmMek
-SwarmWeaponMek
-StopSwarm
-LegAttack
 CLBAMicroPulseLaser:RA
 </Squad Equipment>
 
@@ -103,6 +87,10 @@ CLBAMicroPulseLaser:RA
 
 <Trooper 6 Equipment>
 </Trooper 6 Equipment>
+
+<slotless_equipment>
+BAJumpJet
+</slotless_equipment>
 
 <manufacturer>
 GM

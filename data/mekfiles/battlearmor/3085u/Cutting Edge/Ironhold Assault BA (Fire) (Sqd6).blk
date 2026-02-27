@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,15 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-#Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 BattleArmor
 </UnitType>
@@ -40,25 +32,29 @@ Ironhold Assault Battle Armor
 8902
 </mul id:>
 
-<chassis>
-biped
-</chassis>
+<year>
+3082
+</year>
 
-<weightclass>
-4
-</weightclass>
+<originalBuildYear>
+3082
+</originalBuildYear>
 
-<Trooper Count>
-6
-</Trooper Count>
+<type>
+Clan Level 2
+</type>
+
+<role>
+Juggernaut
+</role>
+
+<motion_type>
+Leg
+</motion_type>
 
 <cruiseMP>
 1
 </cruiseMP>
-
-<Armor>
-16
-</Armor>
 
 <armor_type>
 35
@@ -82,33 +78,31 @@ Clan BA Fire Resistant:RA
 Clan BA Fire Resistant:LA
 </Point Equipment>
 
-<type>
-Clan Level 2
-</type>
+<Trooper 1 Equipment>
+</Trooper 1 Equipment>
 
-<role>
-Juggernaut
-</role>
+<Trooper 2 Equipment>
+</Trooper 2 Equipment>
 
-<year>
-3082
-</year>
+<Trooper 3 Equipment>
+</Trooper 3 Equipment>
 
-<motion_type>
-Leg
-</motion_type>
+<Trooper 4 Equipment>
+</Trooper 4 Equipment>
 
-<source>
-TR:3085
-</source>
+<Trooper 5 Equipment>
+</Trooper 5 Equipment>
 
-<overview>
-The Ironhold Assault Battle Armor was developed by Clan Jade Falcon during the Jihad.
-</overview>
+<Trooper 6 Equipment>
+</Trooper 6 Equipment>
 
 <capabilities>
 The Ironhold is noted for being more mobile than typical Clan Assault Armor, where it can employ its Jump Jets and give itself better tactical advantage over its opponents.
 </capabilities>
+
+<overview>
+The Ironhold Assault Battle Armor was developed by Clan Jade Falcon during the Jihad.
+</overview>
 
 <deployment>
 The Fire variant of the Ironhold is geared as a more traditional Assault Battle Armor developed in 3082. It firepower is doubled by the addition of second pair of AP Gauss Rifles mounted on the main body. Due to stability issues, the Armor's Jump Jets have been removed. The armor type has been changed from Standard to Fire-Resistant Armor.
@@ -125,3 +119,28 @@ Olivetti Weaponry
 <primaryFactory>
 Sudeten
 </primaryFactory>
+
+<source>
+TR:3085
+</source>
+
+<chassis>
+biped
+</chassis>
+
+<jumpingMP>
+0
+</jumpingMP>
+
+<armor>
+16
+</armor>
+
+<Trooper Count>
+6
+</Trooper Count>
+
+<weightclass>
+4
+</weightclass>
+

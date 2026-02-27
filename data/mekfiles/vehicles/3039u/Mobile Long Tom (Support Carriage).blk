@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,16 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-
-# Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 Tank
 </UnitType>
@@ -44,6 +35,10 @@ LT-MOB-25 (Support Carriage)
 <year>
 2602
 </year>
+
+<originalBuildYear>
+2602
+</originalBuildYear>
 
 <type>
 IS Level 3
@@ -65,6 +60,18 @@ Tracked
 1
 </engine_type>
 
+<armor_type>
+0
+</armor_type>
+
+<armor_tech_rating>
+0
+</armor_tech_rating>
+
+<armor_tech_level>
+1
+</armor_tech_level>
+
 <armor>
 16
 16
@@ -73,7 +80,7 @@ Tracked
 </armor>
 
 <Body Equipment>
-Communications Equipment (4 ton)
+Communications Equipment:SIZE:4.0
 </Body Equipment>
 
 <Front Equipment>
@@ -89,18 +96,6 @@ Hitch
 <Rear Equipment>
 Hitch
 </Rear Equipment>
-
-<source>
-TR:3039
-</source>
-
-<tonnage>
-10.0
-</tonnage>
-
-<hasNoControlSystems>
-1
-</hasNoControlSystems>
 
 <capabilities>
 The main unit was a 65-ton tracked vehicle and the only one in the convoy that possessed an, admittedly meager, engine capable of only 25.6 km/h and requiring constant refueling. This piloting cab also served as the targeting center, featuring an additional ton of communication equipment and the mounted weaponry. However the vehicle was protected by a scant four tons of armor, though it was not supposed to be anywhere near combat. For this reason the Long Tom relied on defensive units for anti-air support. Included in the artillery system was a variety support carriages. The purpose of these was to carry support personnel who directed the fire of the Long Tom.
@@ -132,3 +127,20 @@ ARMOR:StarSlab/1 Ferro-Fibrous
 COMMUNICATIONS:ROMTECH 100
 TARGETING:O/P 10-40 LTR
 </systemManufacturers>
+
+<source>
+TR:3039
+</source>
+
+<tonnage>
+10.0
+</tonnage>
+
+<fuelType>
+PETROCHEMICALS
+</fuelType>
+
+<hasNoControlSystems>
+1
+</hasNoControlSystems>
+

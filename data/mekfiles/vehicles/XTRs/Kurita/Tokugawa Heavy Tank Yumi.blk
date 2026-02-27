@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,19 +15,10 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-
-<BlockVersion>
-1
-</BlockVersion>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 Tank
 </UnitType>
-
-<blockversion>
-1
-</blockversion>
 
 <Name>
 Tokugawa Heavy Tank
@@ -45,9 +36,9 @@ Yumi
 3067
 </year>
 
-<source>
-XTR:Kurita
-</source>
+<originalBuildYear>
+3067
+</originalBuildYear>
 
 <type>
 Mixed (IS Chassis) Experimental
@@ -57,29 +48,29 @@ Mixed (IS Chassis) Experimental
 Missile Boat
 </role>
 
-<tonnage>
-60.0
-</tonnage>
-
 <motion_type>
 Wheeled
 </motion_type>
-
-<engine_type>
-3
-</engine_type>
 
 <cruiseMP>
 5
 </cruiseMP>
 
+<engine_type>
+3
+</engine_type>
+
 <armor_type>
 1
 </armor_type>
 
-<armor_tech>
+<armor_tech_rating>
+0
+</armor_tech_rating>
+
+<armor_tech_level>
 2
-</armor_tech>
+</armor_tech_level>
 
 <armor>
 36
@@ -110,11 +101,15 @@ ISC3SlaveUnit
 </Rear Equipment>
 
 <Turret Equipment>
-ISExtendedLRM15
+Extended LRM 15
 Hyper Velocity Auto Cannon/10
 </Turret Equipment>
 
-<barrating>
-10
-</barrating>
+<source>
+XTR:Kurita
+</source>
+
+<tonnage>
+60.0
+</tonnage>
 

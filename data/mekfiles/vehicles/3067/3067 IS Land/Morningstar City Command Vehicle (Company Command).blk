@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,20 +15,15 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-#Write the version number just in case...
-<Version>
-MAM0
-</Version>
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 Tank
 </UnitType>
+
 <Name>
 Morningstar City Command Vehicle
 </Name>
+
 <Model>
 (Company Command)
 </Model>
@@ -36,65 +31,92 @@ Morningstar City Command Vehicle
 <mul id:>
 4669
 </mul id:>
-<Tonnage>
-60
-</Tonnage>
-<cruiseMP>
-5
-</cruiseMP>
-<Armor>
-43
-29
-29
-19
-24
-</Armor>
-<Turret Equipment>
-ISAC5
-</Turret Equipment>
-<Front Equipment>
-ISMachine Gun
-</Front Equipment>
-<Right Equipment>
-ISMachine Gun
-</Right Equipment>
-<Left Equipment>
-ISMachine Gun
-</Left Equipment>
-<transporters>
-TroopSpace:4
-</transporters>
-<Body Equipment>
-ISAC5 Ammo
-ISMG Ammo (200)
-ISTargeting Computer
-ISGuardianECM
-ISC3MasterComputer
-ISC3MasterComputer
-</Body Equipment>
+
+<year>
+3068
+</year>
+
+<originalBuildYear>
+3068
+</originalBuildYear>
+
 <type>
-IS
+IS Level 2
 </type>
 
 <role>
 Skirmisher
 </role>
-<year>
-3068
-</year>
-<internal_type>
-0
-</internal_type>
-<armor_type>
-0
-</armor_type>
-<engine_type>
-2
-</engine_type>
+
 <motion_type>
 Wheeled
 </motion_type>
 
+<transporters>
+troopspace:4.0
+</transporters>
+
+<cruiseMP>
+5
+</cruiseMP>
+
+<engine_type>
+2
+</engine_type>
+
+<armor_type>
+0
+</armor_type>
+
+<armor_tech_rating>
+0
+</armor_tech_rating>
+
+<armor_tech_level>
+1
+</armor_tech_level>
+
+<armor>
+43
+29
+29
+19
+24
+</armor>
+
+<Body Equipment>
+IS Ammo AC/5
+IS Ammo MG - Full
+ISTargeting Computer
+ISGuardianECMSuite
+ISC3MasterUnit
+ISC3MasterUnit
+</Body Equipment>
+
+<Front Equipment>
+Machine Gun
+</Front Equipment>
+
+<Right Equipment>
+Machine Gun
+</Right Equipment>
+
+<Left Equipment>
+Machine Gun
+</Left Equipment>
+
+<Rear Equipment>
+</Rear Equipment>
+
+<Turret Equipment>
+Autocannon/5
+</Turret Equipment>
+
 <source>
 TR:3067
 </source>
+
+<tonnage>
+60.0
+</tonnage>
+

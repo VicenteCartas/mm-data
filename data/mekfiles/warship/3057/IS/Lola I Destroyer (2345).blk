@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,16 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-
-##Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 Warship
 </UnitType>
@@ -62,11 +53,11 @@ Aerodyne
 </motion_type>
 
 <transporters>
-asfbay:6.0:1:1
-smallcraftbay:2.0:1:2
-cargobay:115258.0:1:3
-1stclassquarters:390.0:0
-crewquarters:1274.0:0
+asfbay:6.0:1:1::-1:0
+smallcraftbay:2.0:1:2::-1:0
+cargobay:115258.0:1:3::-1:0
+1stclassquarters:390.0:0:-1::-1:0
+crewquarters:1274.0:0:-1::-1:0
 </transporters>
 
 <SafeThrust>
@@ -93,9 +84,13 @@ crewquarters:1274.0:0
 41
 </armor_type>
 
-<armor_tech>
+<armor_tech_rating>
+0
+</armor_tech_rating>
+
+<armor_tech_level>
 5
-</armor_tech>
+</armor_tech_level>
 
 <armor>
 48
@@ -208,11 +203,34 @@ Large Laser
 50
 </structural_integrity>
 
+# Fluff Date: 2026-02-24 17:43:28
+<capabilities>
+The Lola-class destroyers were equipped with an impressive array of armaments, including heavy naval lasers and autocannons. They also carried a squadron of heavy fighters for enhanced escort and picket capabilities. The design prioritized armor protection, which increased the ship's mass and required the use of massive Rolls Le Fay drives. This resulted in cramped living conditions for the crew.
+</capabilities>
 
+<overview>
+The Lola-class destroyers were developed as a direct response to the demands of Rear Admiral Adelaide Lola, known for her emphasis on moral and ethical excellence in addition to military skill. These destroyers served as escort and picket ships for centuries and were highly regarded. However, they faced challenges with their heavy armor and mass, leading to cramped living conditions for the crew.
+</overview>
 
+<history>
+In 2345, the first Lola-class destroyer was launched, addressing the concerns raised by Rear Admiral Adelaide Lola. Over time, design flaws and issues with the fuel system emerged, leading to the decommissioning and scrapping of the remaining vessels by the Star League Navy in 2660. However, several Lola IIs resurfaced in the hands of Taurian rebels during the Second Periphery Uprising, raising doubts about the true fate of these ships.
+</history>
 
+<manufacturer>
+Boeing Interstellar
+</manufacturer>
 
+<primaryFactory>
+Terra
+</primaryFactory>
 
+<systemManufacturers>
+CHASSIS:Unknown
+ENGINE:Unknown
+ARMOR:Unknown
+COMMUNICATIONS:Unknown
+TARGETING:Unknown
+</systemManufacturers>
 
 <use>
 Destroyer
@@ -277,47 +295,4 @@ TR:3057r
 <escape_pod>
 20
 </escape_pod>
-
-# Fluff Date: 2026-02-24 17:43:28
-<overview>
-The Lola I-class destroyer was the first in a long line of escort warships bearing the name of Rear Admiral Adelaide Lola, one of the earliest members of the Terran Hegemony's WarShip Sub-Command. Built by Boeing Interstellar at Terra, the six hundred eighty thousand ton destroyer entered service in 2345, establishing a design philosophy that would persist through two successor variants spanning over three centuries. The Lola I prioritized heavy armor protection and substantial broadside firepower at the expense of crew comfort, earning the class the sardonic nickname of sardine cans among those assigned to serve aboard. Despite cramped conditions, the design proved remarkably effective in its intended roles of convoy escort throughout the Periphery and picket duty within the Terran Hegemony, serving reliably until being superseded by improved designs in the twenty-seventh century.
-</overview>
-
-<capabilities>
-The Lola I mounted Naval Laser 55s as its primary armament, with batteries distributed across all firing arcs to ensure continuous engagement capability during escort operations. Four Class 55 Naval Lasers covered the nose and an equal number protected the stern, while paired installations guarded each forward quarter, aft quarter, and broadside arc. The broadside batteries supplemented these energy weapons with four Naval Autocannon/10 batteries and a single Naval Laser 45, providing concentrated firepower for beam-riding engagements. Additional NAC/10 batteries covered the nose and all quarter arcs, giving the vessel credible ballistic coverage across nearly every approach vector. Large Lasers served as point defense weapons, with four installations in every arc providing a dense anti-fighter screen. The Lola I's heavy Primitive armor absorbed punishment well but imposed a significant mass penalty, requiring oversized Rolls Le Fay drives that consumed internal volume at the crew's expense. With six aerospace fighters and two small craft, the destroyer maintained organic screening capability but lacked a Lithium-Fusion Battery or docking collars, reflecting its intended role as a local escort rather than an independent deep-space combatant.
-</capabilities>
-
-<deployment>
-<p>The Beatrice served as the personal command ship of Director-General Richard Cameron I of the Terran Hegemony, establishing the Lola I as a vessel worthy of the highest command responsibilities despite its modest classification as a destroyer.</p><p>Five Lola I destroyers served the Draconis Combine Admiralty through the early Succession Wars. The Akiko and Maja fought together at the Battle of Dieron in April 2787, engaging the Lyran Commonwealth warship Coventry and its escorting corvettes before both Combine destroyers were overwhelmed and destroyed. The Minekaze and Shiokaze similarly fought as a pair at the Battle of Schedar in 2788, methodically picking off Armed Forces of the Federated Suns DropShips one by one before both vessels were destroyed, making the Federated Suns operation a costly disaster. The Kiaria and Mizuki were both destroyed in 2790 by Federated Suns fleets advancing toward Cholame.</p><p>The Free Worlds League deployed the Minsck and Warsaw, both destroyed at the Battle of Wazan in September 2787 when Capellan Confederation warships led by the Zulfiqar overwhelmed the League defenders. Before their destruction, the two Lola Is helped inflict sufficient damage on the Capellan cruiser Khalzan to force its eventual scuttling.</p>
-</deployment>
-
-<history>
-The Lola I-class destroyer emerged from the Terran Hegemony's need for a dedicated escort vessel in the mid-twenty-fourth century. Named for Rear Admiral Adelaide Lola, an early champion of professional excellence within the WarShip Sub-Command, the class was designed by Boeing Interstellar and launched from their Terra facilities in 2345. The design team prioritized protection above all else, wrapping the six hundred eighty thousand ton hull in heavy Primitive armor that could withstand sustained punishment from pirate raiders and hostile patrol craft. This defensive emphasis came at a cost: the massive Rolls Le Fay drives required to propel the heavily armored hull consumed so much internal volume that crew quarters were notoriously cramped, a trait that would persist through all subsequent Lola generations.<p>The Lola I proved its worth across centuries of reliable service, patrolling Periphery trade lanes and standing picket duty at critical Hegemony approach points. Multiple Star League member states eventually received Lola I transfers, with the Draconis Combine fielding five and the Lyran Commonwealth operating four by the mid-twenty-eighth century. The Capellan Confederation maintained two, while the Rim Worlds Republic accumulated the largest foreign fleet with twenty-one destroyers.</p><p>The introduction of the Lola II in 2622 and the vastly improved Lola III in 2662 gradually relegated the remaining Lola Is to secondary duties. By the time the Star League collapsed, surviving Lola I destroyers found themselves pressed into front-line combat during the First Succession War, a conflict for which many were outmatched. Draconis Combine destroyers fought doggedly in paired formations at Dieron, Schedar, and along the Federated Suns border, while Free Worlds League vessels clashed with Capellan forces at Wazan. Without exception, these engagements ended in the destruction of the participating Lola Is, their obsolescent armor and weapons unable to survive the savage naval battles of the early Succession Wars. No Lola I destroyers are known to have survived beyond the First Succession War.</p>
-</history>
-
-<manufacturer>
-Boeing Interstellar
-</manufacturer>
-
-<primaryFactory>
-Terra
-</primaryFactory>
-
-<systemManufacturers>
-CHASSIS:Boeing Interstellar
-ENGINE:Rolls Le Fay
-ARMOR:Unknown
-JUMP_JET:Unknown
-COMMUNICATIONS:Unknown
-TARGETING:Unknown
-</systemManufacturers>
-
-<systemModels>
-CHASSIS:Unknown
-ENGINE:Unknown
-ARMOR:Primitive
-JUMP_JET:Unknown
-COMMUNICATIONS:Unknown
-TARGETING:Unknown
-</systemModels>
 

@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,15 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-#Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 BattleArmor
 </UnitType>
@@ -32,7 +24,7 @@ BattleArmor
 Ravager Assault Battle Armor
 </Name>
 
-<model>
+<Model>
 (Sqd4)
 </Model>
 
@@ -40,25 +32,29 @@ Ravager Assault Battle Armor
 2661
 </mul id:>
 
-<chassis>
-biped
-</chassis>
+<year>
+3084
+</year>
 
-<weightclass>
-4
-</weightclass>
+<originalBuildYear>
+3084
+</originalBuildYear>
 
-<Trooper Count>
-4
-</Trooper Count>
+<type>
+IS Level 2
+</type>
+
+<role>
+Juggernaut
+</role>
+
+<motion_type>
+Leg
+</motion_type>
 
 <cruiseMP>
 2
 </cruiseMP>
-
-<Armor>
-18
-</Armor>
 
 <armor_type>
 28
@@ -69,39 +65,36 @@ biped
 </armor_tech>
 
 <Squad Equipment>
-ISHeavy Recoilless Rifle:RA
-BARL1:Body
-BARL1:Body
+CLBAHeavy Recoilless Rifle:RA
+ISBARL1:Body
+ISBARL1:Body
 BABattleClaw:LA
 </Squad Equipment>
 
-<type>
-IS Level 2
-</type>
+<Trooper 1 Equipment>
+</Trooper 1 Equipment>
 
-<role>
-Juggernaut
-</role>
+<Trooper 2 Equipment>
+</Trooper 2 Equipment>
 
-<year>
-3084
-</year>
+<Trooper 3 Equipment>
+</Trooper 3 Equipment>
 
-<motion_type>
-Leg
-</motion_type>
+<Trooper 4 Equipment>
+</Trooper 4 Equipment>
 
-<source>
-TR:3085
-</source>
-
-<overview>
-A product made possible from the upheaval of the chaotic Jihad era, the Ravager is an Assault Battle Armor first produced in the Marian Hegemony.
-</overview>
+<slotless_equipment>
+BARL1 Ammo:Shots1#
+BARL1 Ammo:Shots1#
+</slotless_equipment>
 
 <capabilities>
 The Ravager boasts nearly a ton of Standard Battle Armor, allowing it to survive considerable damage from even BattleMech weaponry. Its other noteworthy quality is its speed, which has been clocked at a brisk 20 km/h.
 </capabilities>
+
+<overview>
+A product made possible from the upheaval of the chaotic Jihad era, the Ravager is an Assault Battle Armor first produced in the Marian Hegemony.
+</overview>
 
 <deployment>
 The Ravager's principal weapon is a rotary style Heavy Recoilless Rifle mounted in the right arm. A pair of single tube Rocket Launchers mounted on the main body rounds out the armor's ranged weaponry. A single Battle Claw is fixed on the suit's left arm as its only physical attack weapon
@@ -123,7 +116,32 @@ Horatius
 CHASSIS:Unknown
 ENGINE:Unknown
 ARMOR:Unknown
-JUMPJET:Unknown
+JUMP_JET:Unknown
 COMMUNICATIONS:Unknown
 TARGETING:Unknown
 </systemManufacturers>
+
+<source>
+TR:3085
+</source>
+
+<chassis>
+biped
+</chassis>
+
+<jumpingMP>
+0
+</jumpingMP>
+
+<armor>
+18
+</armor>
+
+<Trooper Count>
+4
+</Trooper Count>
+
+<weightclass>
+4
+</weightclass>
+

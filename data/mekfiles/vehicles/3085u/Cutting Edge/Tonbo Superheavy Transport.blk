@@ -1,4 +1,21 @@
-#Saved from version 0.50.10 on 2025-11-11
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
+#
+# NOTICE: The MegaMek organization is a non-profit group of volunteers
+# creating free software for the BattleTech community.
+#
+# MechWarrior, BattleMech, `Mech and AeroTech are registered trademarks
+# of The Topps Company, Inc. All Rights Reserved.
+#
+# Catalyst Game Labs and the Catalyst Game Labs logo are trademarks of
+# InMediaRes Productions, LLC.
+#
+# MechWarrior Copyright Microsoft Corporation. MegaMek Data was created under
+# Microsoft's "Game Content Usage Rules"
+# <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
+# affiliated with Microsoft.
+
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 SupportVTOL
 </UnitType>
@@ -36,10 +53,6 @@ VTOL
 </motion_type>
 
 <transporters>
-megamek.common.equipment.LiftHoist@30f897d1
-megamek.common.equipment.LiftHoist@64968d41
-megamek.common.equipment.LiftHoist@32db98ff
-megamek.common.equipment.LiftHoist@14025084
 troopspace:12.0
 </transporters>
 
@@ -122,10 +135,6 @@ No factory variants of the Tonbo are currently produced.
 
 <history>
 <p>The Tonbo first entered service during Operation BULLDOG in 3059, where companies of the vehicles operated in support of major Draconis Combine DropShip operations. Their primary mission involved recovering salvageable Clan equipment from contested worlds, with the Tonbo-Rose teams proving remarkably effective at extracting valuable technology under combat conditions. The Combine's decision to classify the vehicle's existence allowed them to retain a significant salvage advantage throughout the operation and in subsequent years. Rumors of large transport VTOLs persisted in military intelligence circles, but without confirmation, most analysts dismissed such reports as exaggerated accounts of conventional recovery operations.</p>
-
-<p>The Tonbo's capabilities became undeniable during the liberation of Terra in 3078. When Coalition forces under General Redburn prepared to advance through southern Germany and Austria toward Bratislava, the direct route through the Alps presented an insurmountable obstacle. Word of Blake forces had transformed the mountain passes into heavily fortified killing zones, and conventional assault would have resulted in catastrophic casualties. Stone's Coalition briefings included offers of Tonbo support from House Kurita, and after initial hesitation, General Redburn accepted. The decision proved decisive. An armada of VTOLs, led by Tonbos and their escorts, circumvented the mountain passes entirely, dropping Coalition elements behind Blakist lines to seize critical supply depots. As the main force neutralized Innsbruck as a potential rallying point, Tonbos rapidly loaded recovered BattleMechs and transported them over the Carpathian foothills to strike Bratislava from an unexpected eastern approach. The relatively nimble craft managed to deposit their loads directly onto city streets with minimal collateral damage, giving Coalition forces equal footing in urban terrain rather than forcing them to fight their way in from the heavily defended western approaches.</p>
-
-<p>Throughout the remainder of the Terran campaign, Tonbos continued to serve in both their original salvage role and as critical logistics support, ferrying munitions and supplies to forward positions. The vehicle's performance left Lord Kurita with little choice politically but to authorize Wakazashi Enterprises to begin commercial sales. By making the Tonbo available to other factions and commercial operators, what could have become a diplomatic disaster for the Combine instead transformed into a profitable venture. The design's utility proved equal to its previous mystique, and by 3085, the Tonbo had become one of Wakazashi's best-selling products, serving in military and civilian salvage operations across the Inner Sphere.</p>
 </history>
 
 <manufacturer>
@@ -143,5 +152,4 @@ TR:3085
 <fuel>
 0.0
 </fuel>
-
 

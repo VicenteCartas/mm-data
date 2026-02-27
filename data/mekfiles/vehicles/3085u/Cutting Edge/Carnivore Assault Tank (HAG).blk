@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,19 +15,14 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-
-#Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 Tank
 </UnitType>
+
+<Name>
+Carnivore Assault Tank
+</Name>
 
 <Model>
 (HAG)
@@ -37,61 +32,13 @@ Tank
 463
 </mul id:>
 
-<Name>
-Carnivore Assault Tank
-</Name>
+<year>
+3083
+</year>
 
-<Tonnage>
-80
-</Tonnage>
-
-<cruiseMP>
-4
-</cruiseMP>
-
-#Order is Tank/VTOL/LST
-<Armor>
-62
-46
-46
-42
-52
-</Armor>
-
-<Front Equipment>
-CLMediumPulseLaser
-CLMediumPulseLaser
-</Front Equipment>
-
-<Left Equipment>
-CLAPGaussRifle
-CLAPGaussRifle
-</Left Equipment>
-
-<Right Equipment>
-CLAPGaussRifle
-CLAPGaussRifle
-</Right Equipment>
-
-<Turret Equipment>
-CLHAG40
-Clan AMS
-Clan AMS
-</Turret Equipment>
-
-<Body Equipment>
-CLHAG40 Ammo
-CLHAG40 Ammo
-CLHAG40 Ammo
-CLHAG40 Ammo
-CLHAG40 Ammo
-CLAPGaussRifle Ammo
-CLAPGaussRifle Ammo
-Clan AMS Ammo
-Clan AMS Ammo
-CLECMSuite
-CLCASE
-</Body Equipment>
+<originalBuildYear>
+3083
+</originalBuildYear>
 
 <type>
 Clan Level 2
@@ -101,26 +48,81 @@ Clan Level 2
 Brawler
 </role>
 
-<year>
-3083
-</year>
+<motion_type>
+Tracked
+</motion_type>
 
-<source>
-TR:3085
-</source>
-
-<internal_type>
-0
-</internal_type>
-
-<armor_type>
-0
-</armor_type>
+<cruiseMP>
+4
+</cruiseMP>
 
 <engine_type>
 2
 </engine_type>
 
-<motion_type>
-Tracked
-</motion_type>
+<armor_type>
+0
+</armor_type>
+
+<armor_tech_rating>
+0
+</armor_tech_rating>
+
+<armor_tech_level>
+2
+</armor_tech_level>
+
+<armor>
+62
+46
+46
+42
+52
+</armor>
+
+<Body Equipment>
+Hyper-Assault Gauss Rifle/40 Ammo
+Hyper-Assault Gauss Rifle/40 Ammo
+Hyper-Assault Gauss Rifle/40 Ammo
+Hyper-Assault Gauss Rifle/40 Ammo
+Hyper-Assault Gauss Rifle/40 Ammo
+CLAPGaussRifle Ammo
+CLAPGaussRifle Ammo
+CLAMS Ammo
+CLAMS Ammo
+CLECMSuite
+CLCASE
+</Body Equipment>
+
+<Front Equipment>
+CLMediumPulseLaser
+CLMediumPulseLaser
+</Front Equipment>
+
+<Right Equipment>
+CLAPGaussRifle
+CLAPGaussRifle
+</Right Equipment>
+
+<Left Equipment>
+CLAPGaussRifle
+CLAPGaussRifle
+</Left Equipment>
+
+<Rear Equipment>
+</Rear Equipment>
+
+<Turret Equipment>
+CLHAG40
+CLAntiMissileSystem
+CLAntiMissileSystem
+</Turret Equipment>
+
+<source>
+TR:3085
+</source>
+
+<tonnage>
+80.0
+</tonnage>
+

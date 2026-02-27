@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,15 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-#Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 VTOL
 </UnitType>
@@ -40,31 +32,13 @@ Mantis Light Attack VTOL
 2028
 </mul id:>
 
-<Tonnage>
-15
-</Tonnage>
+<year>
+3073
+</year>
 
-<cruiseMP>
-16
-</cruiseMP>
-
-<Armor>
-14
-10
-10
-8
-2
-</Armor>
-
-<Rotor Equipment>
-ISMastMount
-</Rotor Equipment>
-
-<Body Equipment>
-ISC3SlaveUnit
-ISGuardianECM
-ISGuardianECM
-</Body Equipment>
+<originalBuildYear>
+3073
+</originalBuildYear>
 
 <type>
 IS Level 3
@@ -73,26 +47,66 @@ IS Level 3
 <role>
 Scout
 </role>
-<year>
-3073
-</year>
-
-<internal_type>
-0
-</internal_type>
-
-<armor_type>
-1
-</armor_type>
-
-<engine_type>
-2
-</engine_type>
 
 <motion_type>
 VTOL
 </motion_type>
 
+<cruiseMP>
+16
+</cruiseMP>
+
+<engine_type>
+2
+</engine_type>
+
+<armor_type>
+1
+</armor_type>
+
+<armor_tech_rating>
+0
+</armor_tech_rating>
+
+<armor_tech_level>
+5
+</armor_tech_level>
+
+<armor>
+14
+10
+10
+8
+2
+</armor>
+
+<Body Equipment>
+ISC3SlaveUnit
+ISGuardianECMSuite
+ISGuardianECMSuite
+</Body Equipment>
+
+<Front Equipment>
+</Front Equipment>
+
+<Right Equipment>
+</Right Equipment>
+
+<Left Equipment>
+</Left Equipment>
+
+<Rear Equipment>
+</Rear Equipment>
+
+<Rotor Equipment>
+ISMastMount
+</Rotor Equipment>
+
 <source>
 TR:3060
 </source>
+
+<tonnage>
+15.0
+</tonnage>
+

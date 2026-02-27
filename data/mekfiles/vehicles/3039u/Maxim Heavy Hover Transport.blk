@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,16 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-
-# Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 Tank
 </UnitType>
@@ -33,9 +24,9 @@ Tank
 Maxim Heavy Hover Transport
 </Name>
 
-<model>
+<Model>
 
-</model>
+</Model>
 
 <mul id:>
 2127
@@ -44,6 +35,10 @@ Maxim Heavy Hover Transport
 <year>
 2689
 </year>
+
+<originalBuildYear>
+2689
+</originalBuildYear>
 
 <type>
 IS Level 1
@@ -68,6 +63,18 @@ troopspace:3.0
 <engine_type>
 1
 </engine_type>
+
+<armor_type>
+0
+</armor_type>
+
+<armor_tech_rating>
+0
+</armor_tech_rating>
+
+<armor_tech_level>
+1
+</armor_tech_level>
 
 <armor>
 20
@@ -108,6 +115,38 @@ Machine Gun
 SRM 6
 </Turret Equipment>
 
+<capabilities>
+The Maxim transport fulfilled an infantryman's dream. Its single infantry bay is configured to carry an entire foot platoon with enough space for them to check their weapons and move around comfortably.
+</capabilities>
+
+<overview>
+While many infantry transports have been popular, none have reached the iconic status of the Maxim.
+</overview>
+
+<deployment>
+The Maxim provides a heavy amount of firepower for an APC, designed to provide covering fire for deploying infantry and to support them in the field. Twin forward facing and a rear facing LongFire V LRM-5 provide long range fire, while side-mounted Sureshot II SRM-2s and a turret-mounted SureShot Mk VI SRM-6 provide close range support. A set of three machine guns in the turret deal with any unarmored infantry it may encounter.
+</deployment>
+
+<history>
+Nobody anticipated how quickly the Maxim would become a success after it was designed and manufactured by Maxim Transport Industries, a start-up company on Al Na'ir led by a retired infantry general. The Maxim has spread to every corner of the Inner Sphere and is now considered the standard for troop transports. Many units rejoiced at the prospect of being able to transport their infantry platoons in a single vehicle rather than three or four separate vehicles. The company thrived and later opened plants on Skye and Sian, with plans to open plants on Atreus and Kathil once several more vehicles could be produced. While the Maxim was a huge success, many of MTI's other forays into the military market were abysmal failures, and the company barely survived. During the beginning of 3037, a massive scandal erupted throughout the company, effectively ending it. Accusations of inappropriate behaviour among coworkers, embezzlement, and rumours of bizarre hazing rituals led to the company's demise and dissolution. Sensing an opportunity, prominent corporations purchased nearby Maxim facilities at low rates, and in the case of the Sian facility, with armed force.
+</history>
+
+<manufacturer>
+Maxim Transport Industries,Scarborough Manufacturers,Hellespont Industrials,Maxim Transport Industries,Cyclops, Incorporated,Maxim Transport Industries
+</manufacturer>
+
+<primaryFactory>
+Al Na'ir,Al Na'ir,Sian,Sian,Skye,Skye
+</primaryFactory>
+
+<systemManufacturers>
+CHASSIS:Unknown
+ENGINE:PowerTech 165 Highlift ICE
+ARMOR:ArcShield V
+COMMUNICATIONS:Maxim New Standard I/O
+TARGETING:Maxim New Standard TargetTrack
+</systemManufacturers>
+
 <source>
 TR:3039
 </source>
@@ -116,101 +155,7 @@ TR:3039
 50.0
 </tonnage>
 
-<capabilities>
-The Maxim transport fulfilled an infantryman's dream. Its single infantry bay is configured to carry an entire foot platoon with enough space for them to check their weapons and move around comfortably.
-The seats are all padded and face the centre of the vehicle, allowing infantry to communicate with one another and boost morale. Unlike other craft, the crew of the Maxim can deflate the rear portion of the hover skirt when disembarking or mounting up. In a combat situation, the Maxim also performs admirably. With its short- and long-range missiles, the hovertank can provide cover fire in any direction for a debarking infantry platoon.
-</capabilities>
+<fuelType>
+PETROCHEMICALS
+</fuelType>
 
-<overview>
-While many infantry transports have been popular, none have reached the iconic status of the Maxim.
-</overview>
-
-<deployment>
-The Maxim provides a heavy amount of firepower for an APC, designed to provide covering fire for deploying infantry and to support them in the field. Twin forward facing and a rear facing LongFire V LRM-5 provide long range fire, while side-mounted Sureshot II SRM-2s and a turret-mounted SureShot Mk VI SRM-6 provide close range support. A set of three machine guns in the turret deal with any unarmored infantry it may encounter.
-</deployment>
-
-<history>
-Nobody anticipated how quickly the Maxim would become a success after it was designed and manufactured by Maxim Transport Industries, a start-up company on Al Na'ir led by a retired infantry general. The Maxim has spread to every corner of the Inner Sphere and is now considered the standard for troop transports. Many units rejoiced at the prospect of being able to transport their infantry platoons in a single vehicle rather than three or four separate vehicles. The company thrived and later opened plants on Skye and Sian, with plans to open plants on Atreus and Kathil once several more vehicles could be produced. While the Maxim was a huge success, many of MTI's other forays into the military market were abysmal failures, and the company barely survived. During the beginning of 3037, a massive scandal erupted throughout the company, effectively ending it. Accusations of inappropriate behaviour among coworkers, embezzlement, and rumours of bizarre hazing rituals led to the company's demise and dissolution. Sensing an opportunity, prominent corporations purchased nearby Maxim facilities at low rates, and in the case of the Sian facility, with armed force.
-</history>
-
-<manufacturer>
-Maxim Transport Industries,Scarborough Manufacturers,Hellespont Industrials,Maxim Transport Industries,Cyclops, Incorporated,Maxim Transport Industries
-</manufacturer>
-
-<primaryFactory>
-Al Na'ir,Al Na'ir,Sian,Sian,Skye,Skye
-</primaryFactory>
-
-<systemManufacturers>
-CHASSIS:Unknown
-ENGINE:PowerTech 165 Highlift ICE
-ARMOR:ArcShield V
-COMMUNICATIONS:Maxim New Standard I/O
-TARGETING:Maxim New Standard TargetTrack
-</systemManufacturers>
-
-<capabilities>
-The Maxim transport fulfilled an infantryman's dream. Its single infantry bay is configured to carry an entire foot platoon with enough space for them to check their weapons and move around comfortably.
-The seats are all padded and face the centre of the vehicle, allowing infantry to communicate with one another and boost morale. Unlike other craft, the crew of the Maxim can deflate the rear portion of the hover skirt when disembarking or mounting up. In a combat situation, the Maxim also performs admirably. With its short- and long-range missiles, the hovertank can provide cover fire in any direction for a debarking infantry platoon.
-</capabilities>
-
-<overview>
-While many infantry transports have been popular, none have reached the iconic status of the Maxim.
-</overview>
-
-<deployment>
-The Maxim provides a heavy amount of firepower for an APC, designed to provide covering fire for deploying infantry and to support them in the field. Twin forward facing and a rear facing LongFire V LRM-5 provide long range fire, while side-mounted Sureshot II SRM-2s and a turret-mounted SureShot Mk VI SRM-6 provide close range support. A set of three machine guns in the turret deal with any unarmored infantry it may encounter.
-</deployment>
-
-<history>
-Nobody anticipated how quickly the Maxim would become a success after it was designed and manufactured by Maxim Transport Industries, a start-up company on Al Na'ir led by a retired infantry general. The Maxim has spread to every corner of the Inner Sphere and is now considered the standard for troop transports. Many units rejoiced at the prospect of being able to transport their infantry platoons in a single vehicle rather than three or four separate vehicles. The company thrived and later opened plants on Skye and Sian, with plans to open plants on Atreus and Kathil once several more vehicles could be produced. While the Maxim was a huge success, many of MTI's other forays into the military market were abysmal failures, and the company barely survived. During the beginning of 3037, a massive scandal erupted throughout the company, effectively ending it. Accusations of inappropriate behaviour among coworkers, embezzlement, and rumours of bizarre hazing rituals led to the company's demise and dissolution. Sensing an opportunity, prominent corporations purchased nearby Maxim facilities at low rates, and in the case of the Sian facility, with armed force.
-</history>
-
-<manufacturer>
-Maxim Transport Industries,Scarborough Manufacturers,Hellespont Industrials,Maxim Transport Industries,Cyclops, Incorporated,Maxim Transport Industries
-</manufacturer>
-
-<primaryFactory>
-Al Na'ir,Al Na'ir,Sian,Sian,Skye,Skye
-</primaryFactory>
-
-<systemManufacturers>
-CHASSIS:Unknown
-ENGINE:PowerTech 165 Highlift ICE
-ARMOR:ArcShield V
-COMMUNICATIONS:Maxim New Standard I/O
-TARGETING:Maxim New Standard TargetTrack
-</systemManufacturers>
-
-<capabilities>
-The Maxim transport fulfilled an infantryman's dream. Its single infantry bay is configured to carry an entire foot platoon with enough space for them to check their weapons and move around comfortably.
-The seats are all padded and face the centre of the vehicle, allowing infantry to communicate with one another and boost morale. Unlike other craft, the crew of the Maxim can deflate the rear portion of the hover skirt when disembarking or mounting up. In a combat situation, the Maxim also performs admirably. With its short- and long-range missiles, the hovertank can provide cover fire in any direction for a debarking infantry platoon.
-</capabilities>
-
-<overview>
-While many infantry transports have been popular, none have reached the iconic status of the Maxim.
-</overview>
-
-<deployment>
-The Maxim provides a heavy amount of firepower for an APC, designed to provide covering fire for deploying infantry and to support them in the field. Twin forward facing and a rear facing LongFire V LRM-5 provide long range fire, while side-mounted Sureshot II SRM-2s and a turret-mounted SureShot Mk VI SRM-6 provide close range support. A set of three machine guns in the turret deal with any unarmored infantry it may encounter.
-</deployment>
-
-<history>
-Nobody anticipated how quickly the Maxim would become a success after it was designed and manufactured by Maxim Transport Industries, a start-up company on Al Na'ir led by a retired infantry general. The Maxim has spread to every corner of the Inner Sphere and is now considered the standard for troop transports. Many units rejoiced at the prospect of being able to transport their infantry platoons in a single vehicle rather than three or four separate vehicles. The company thrived and later opened plants on Skye and Sian, with plans to open plants on Atreus and Kathil once several more vehicles could be produced. While the Maxim was a huge success, many of MTI's other forays into the military market were abysmal failures, and the company barely survived. During the beginning of 3037, a massive scandal erupted throughout the company, effectively ending it. Accusations of inappropriate behaviour among coworkers, embezzlement, and rumours of bizarre hazing rituals led to the company's demise and dissolution. Sensing an opportunity, prominent corporations purchased nearby Maxim facilities at low rates, and in the case of the Sian facility, with armed force.
-</history>
-
-<manufacturer>
-Maxim Transport Industries,Scarborough Manufacturers,Hellespont Industrials,Maxim Transport Industries,Cyclops, Incorporated,Maxim Transport Industries
-</manufacturer>
-
-<primaryFactory>
-Al Na'ir,Al Na'ir,Sian,Sian,Skye,Skye
-</primaryFactory>
-
-<systemManufacturers>
-CHASSIS:Unknown
-ENGINE:PowerTech 165 Highlift ICE
-ARMOR:ArcShield V
-COMMUNICATIONS:Maxim New Standard I/O
-TARGETING:Maxim New Standard TargetTrack
-</systemManufacturers>

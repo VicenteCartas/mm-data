@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,20 +15,15 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-#Write the version number just in case...
-<Version>
-MAM0
-</Version>
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 Tank
 </UnitType>
+
 <Name>
 Challenger MBT
 </Name>
+
 <Model>
 XII
 </Model>
@@ -36,43 +31,15 @@ XII
 <mul id:>
 540
 </mul id:>
-<Tonnage>
-90
-</Tonnage>
-<cruiseMP>
-3
-</cruiseMP>
-<Armor>
-57
-50
-50
-36
-57
-</Armor>
-<Turret Equipment>
-ISGaussRifle
-ISRotaryAC2
-ISLRM15
-ISArtemisIV
-ISStreakSRM4
-</Turret Equipment>
-<Front Equipment>
-ISERMediumLaser
-ISERMediumLaser
-</Front Equipment>
-<Body Equipment>
-ISGuardianECM
-ISC3SlaveUnit
-ISGauss Ammo
-ISGauss Ammo
-ISGauss Ammo
-ISLRM15 Ammo Artemis-capable
-ISLRM15 Ammo Artemis-capable
-ISLRM15 Ammo Artemis-capable
-ISRotaryAC2 Ammo
-ISRotaryAC2 Ammo
-ISStreakSRM4 Ammo
-</Body Equipment>
+
+<year>
+3065
+</year>
+
+<originalBuildYear>
+3065
+</originalBuildYear>
+
 <type>
 IS Level 2
 </type>
@@ -80,21 +47,80 @@ IS Level 2
 <role>
 Juggernaut
 </role>
-<year>
-3065
-</year>
-<internal_type>
-0
-</internal_type>
-<armor_type>
-1
-</armor_type>
-<engine_type>
-2
-</engine_type>
+
 <motion_type>
 Tracked
 </motion_type>
+
+<cruiseMP>
+3
+</cruiseMP>
+
+<engine_type>
+2
+</engine_type>
+
+<armor_type>
+1
+</armor_type>
+
+<armor_tech_rating>
+0
+</armor_tech_rating>
+
+<armor_tech_level>
+1
+</armor_tech_level>
+
+<armor>
+57
+50
+50
+36
+57
+</armor>
+
+<Body Equipment>
+ISGuardianECMSuite
+ISC3SlaveUnit
+IS Gauss Ammo
+IS Gauss Ammo
+IS Gauss Ammo
+IS Ammo LRM-15 Artemis-capable
+IS Ammo LRM-15 Artemis-capable
+IS Ammo LRM-15 Artemis-capable
+ISRotaryAC2 Ammo
+ISRotaryAC2 Ammo
+IS Streak SRM 4 Ammo
+</Body Equipment>
+
+<Front Equipment>
+ISERMediumLaser
+ISERMediumLaser
+</Front Equipment>
+
+<Right Equipment>
+</Right Equipment>
+
+<Left Equipment>
+</Left Equipment>
+
+<Rear Equipment>
+</Rear Equipment>
+
+<Turret Equipment>
+ISGaussRifle
+ISRotaryAC2
+LRM 15
+ISArtemisIV
+ISStreakSRM4
+</Turret Equipment>
+
 <source>
 TR:3058U
 </source>
+
+<tonnage>
+90.0
+</tonnage>
+

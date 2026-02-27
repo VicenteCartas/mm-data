@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,16 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-
-# Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 BattleArmor
 </UnitType>
@@ -44,6 +35,10 @@ Tunnel Rat III Mining Exoskeleton
 <year>
 3062
 </year>
+
+<originalBuildYear>
+3062
+</originalBuildYear>
 
 <type>
 IS Level 2
@@ -70,15 +65,63 @@ Jump
 </armor_tech>
 
 <Squad Equipment>
-ISBAExtendedLifeSupport:Body
-SwarmMek
-SwarmWeaponMek
-StopSwarm
-LegAttack
+BAExtendedLifeSupport:Body
 BAArmoredGlove:LA
 BAArmoredGlove:RA
 BASearchlight:Body
 </Squad Equipment>
+
+<Trooper 1 Equipment>
+</Trooper 1 Equipment>
+
+<Trooper 2 Equipment>
+</Trooper 2 Equipment>
+
+<Trooper 3 Equipment>
+</Trooper 3 Equipment>
+
+<Trooper 4 Equipment>
+</Trooper 4 Equipment>
+
+<Trooper 5 Equipment>
+</Trooper 5 Equipment>
+
+<slotless_equipment>
+BAJumpJet
+</slotless_equipment>
+
+<capabilities>
+The suit was given modular plug-ins to allow tools to be attached for various jobs. The suit is notable for its communication and sturdy life support features.
+</capabilities>
+
+<overview>
+The Tunnel Rat mining exoskeleton was part of GM's ambition to reenter the mining industry.
+</overview>
+
+<deployment>
+Produced on Talcott, this is a heavier version of the first two models. The suit has improved armor, extended life support, and a thirty meter jump range. It is otherwise identical to the Tunnel Rat I and II variants.
+</deployment>
+
+<history>
+This was made possible with the recovery of the Helm Memory Core. GM had originally produced the mining suits during the late Star League Era, however, the Succession Wars caused the company to lose the technological knowledge to produce such suits. The company's ambitions to expand its offerings once again in the mining market became reality when power armor technology was recovered. Utilized for the mining industry, the Tunnel Rat was created as a suit able to withstand the harsh elements of underground mining.
+</history>
+
+<manufacturer>
+General Motors
+</manufacturer>
+
+<primaryFactory>
+Talcott
+</primaryFactory>
+
+<systemManufacturers>
+CHASSIS:Unknown
+ENGINE:Unknown
+ARMOR:Unknown
+JUMP_JET:Unknown
+COMMUNICATIONS:Unknown
+TARGETING:Unknown
+</systemManufacturers>
 
 <source>
 TR:VAr
@@ -104,35 +147,3 @@ biped
 0
 </weightclass>
 
-<overview>
-The Tunnel Rat mining exoskeleton was part of GM's ambition to reenter the mining industry.
-</overview>
-
-<capabilities>
-The suit was given modular plug-ins to allow tools to be attached for various jobs. The suit is notable for its communication and sturdy life support features.
-</capabilities>
-
-<deployment>
-Produced on Talcott, this is a heavier version of the first two models. The suit has improved armor, extended life support, and a thirty meter jump range. It is otherwise identical to the Tunnel Rat I and II variants.
-</deployment>
-
-<history>
-This was made possible with the recovery of the Helm Memory Core. GM had originally produced the mining suits during the late Star League Era, however, the Succession Wars caused the company to lose the technological knowledge to produce such suits. The company's ambitions to expand its offerings once again in the mining market became reality when power armor technology was recovered. Utilized for the mining industry, the Tunnel Rat was created as a suit able to withstand the harsh elements of underground mining.
-</history>
-
-<manufacturer>
-General Motors
-</manufacturer>
-
-<primaryFactory>
-Talcott
-</primaryFactory>
-
-<systemManufacturers>
-CHASSIS:Unknown
-ENGINE:Unknown
-ARMOR:Unknown
-JUMPJET:Unknown
-COMMUNICATIONS:Unknown
-TARGETING:Unknown
-</systemManufacturers>

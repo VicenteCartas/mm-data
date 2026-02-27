@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,16 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-
-##Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 Warship
 </UnitType>
@@ -62,17 +53,17 @@ Aerodyne
 </motion_type>
 
 <transporters>
-asfbay:30.0:6:1
-battlearmorbay:10.0:2:2
-cargobay:58645.0:1:3
+asfbay:30.0:6:1::-1:0
+battlearmorbay:10.0:2:2::-1:2
+cargobay:58645.0:1:3::-1:0
 dockingcollar
 dockingcollar
 dockingcollar
 dockingcollar
 dockingcollar
 dockingcollar
-1stclassquarters:710.0:0
-crewquarters:2436.0:0
+1stclassquarters:710.0:0:-1::-1:0
+crewquarters:2436.0:0:-1::-1:0
 </transporters>
 
 <SafeThrust>
@@ -103,9 +94,13 @@ false
 11
 </armor_type>
 
-<armor_tech>
+<armor_tech_rating>
+0
+</armor_tech_rating>
+
+<armor_tech_level>
 6
-</armor_tech>
+</armor_tech_level>
 
 <armor>
 240
@@ -326,11 +321,34 @@ CLERSmallLaser
 85
 </structural_integrity>
 
+# Fluff Date: 2026-02-24 17:43:28
+<capabilities>
+The Liberator-class cruiser is armed with advanced Clan weaponry, with a particular focus on anti-fighter systems rather than anti-ship capabilities. Its ferro-carbide armor provides nearly 50% more protection compared to the Avatar's conventional armor, while still maintaining a massive cargo facility. The Liberator is equipped with three Stars of OmniFighters to enhance its armaments. Additionally, the cruiser features quarters for two Stars of battle-armored Elementals, who serve to protect the vessel against boarding actions and conduct their own boarding operations against enemy craft. The Liberator also has additional cabins that allow for the transportation of an additional Cluster of conventional troops, although this capability is rarely utilized. The versatility of the Liberator-class cruiser enables it to undertake various missions, ranging from small planetary assaults to naval battles and boarding actions, making it a formidable asset in combat.
+</capabilities>
 
+<overview>
+The Liberator-class cruiser is a refitted design based on the Avatar-class heavy cruiser of the Star League Defense Force (SLDF). Originally introduced in 2531, the Avatar was later phased out and replaced by the Luxor-class WarShip. However, a few Avatars survived and were included in Aleksandr Kerensky's Exodus fleet due to their valuable cargo and DropShip capacities. In the 31st century, the Clans upgraded and renamed these vessels to become the Liberator-class cruisers.
+</overview>
 
+<history>
+The Liberator-class cruiser is derived from the Avatar-class heavy cruiser, which was initially introduced by the SLDF in 2531. As the SLDF transitioned to newer designs like the Luxor-class, many Avatars were placed in reserve fleets or repurposed as training vessels. However, during Stephan Amaris' takeover of Terra in 2766, the usurpers gained control of three Avatar-class vessels that were undergoing refitting at the Ian Cameron yards. Only six Avatars survived until the end of the wars, with five remaining in service with the SLDF and one captured by the Rim Worlds Republic. When Aleksandr Kerensky led the Exodus fleet, the Avatars were taken along due to their valuable cargo and DropShip capacities. Upon arriving at the Pentagon worlds, the Avatars, including the Liberator-class cruisers, were mothballed and remained in storage until the Clans began preparing for their invasion of the Inner Sphere. Clan technicians upgraded and renamed the Avatars, converting them into the formidable Liberator-class cruisers. The upgrades included the installation of Ferro-Carbide armor for enhanced protection, advanced Clan weaponry, and provisions for battle-armored Elementals to engage in boarding actions. With their versatility and upgraded capabilities, the Liberator-class cruisers became valuable assets for the Clans during their conquest of the Inner Sphere, capable of executing a range of military operations independently.
+</history>
 
+<manufacturer>
+Refit
+</manufacturer>
 
+<primaryFactory>
+Unknown
+</primaryFactory>
 
+<systemManufacturers>
+CHASSIS:Unknown
+ENGINE:Unknown
+ARMOR:Unknown
+COMMUNICATIONS:Unknown
+TARGETING:Unknown
+</systemManufacturers>
 
 <use>
 Cruiser
@@ -403,47 +421,4 @@ TR:3057r
 <escape_pod>
 60
 </escape_pod>
-
-# Fluff Date: 2026-02-24 17:43:28
-<overview>
-The Liberator-class cruiser represents a comprehensive Clan refit of the venerable Avatar-class heavy cruiser, which served the Star League Defense Force beginning in the mid-twenty-sixth century. Six Avatar-class vessels survived the fall of the Star League and joined the Exodus fleet, valued primarily for their extensive cargo capacity and multiple docking collars. After decades of mothball storage in the Pentagon worlds, Clan technicians reactivated these eight hundred thirty thousand ton warships and performed sweeping upgrades to their armor, weapons, and electronics suites. The resulting Liberator-class emerged as a versatile multi-role combatant capable of independent operations across a broad mission spectrum, from convoy escort and deep patrol duties to planetary assault support and aggressive boarding actions. Multiple Clans operated Liberators throughout the invasion era and beyond, reflecting the design's enduring value as one of the few capital warships available to supplement purpose-built Clan naval construction programs.
-</overview>
-
-<capabilities>
-The most significant improvement over the original Avatar configuration is the installation of Ferro-Carbide armor plating, which provides nearly fifty percent greater protection without sacrificing the vessel's substantial internal volume. The broadside batteries mount paired Naval Autocannon/30s alongside heavy and medium Naval Gauss Rifles, supplemented by banks of Class 35 Naval Lasers for sustained engagements. Forward and aft quarter arcs carry Naval Autocannon/20 batteries and Heavy Naval PPCs, giving the Liberator credible firepower across all engagement angles. Class 45 Naval Lasers defend the nose while heavier Class 55 Naval Lasers cover the stern and aft quarters. The nose and stern sections also feature clusters of Ultra Autocannon/10s for rapid-fire point defense, while LB 20-X Autocannons on the aft flanks provide versatile close-range coverage. Missile support comes from LRM-20 launchers fitted with Artemis IV fire control systems on the forward and aft quarter arcs. ER Large Lasers, ER Small Lasers, and Medium Pulse Lasers form a comprehensive anti-fighter screen distributed across multiple arcs. A Lithium-Fusion Battery enables rapid successive jumps, while a Mobile HPG provides independent interstellar communication capability. The single one hundred forty-five meter gravity deck supports extended crew deployments, and thirty aerospace fighters organized into three Stars provide organic combat air patrol alongside bay space for ten Elemental battle armor points.
-</capabilities>
-
-<deployment>
-<p>The Constantineau served the Star League Defense Force before joining the Exodus fleet. During Operation KLONDIKE, the vessel operated under Clan Burrock command, securing the zenith jump point in the Dagda system and destroying enemy JumpShip engines to cut supply lines to the McMillan Collective. Following the absorption of Clan Burrock, the warship passed to Clan Star Adder and was assigned to Delta Galaxy. In 3068, Clan Snow Raven forces engaged and destroyed the vessel in the York system during a Trial of Possession dispute connected to Clan Blood Spirit affairs, removing one of the oldest continuously serving hulls from the diminishing Clan warship fleet.</p><p>The Korat served alongside the Black Lion-class battlecruiser Thunderbolt during Operation KLONDIKE, engaging spacefarer forces at Outpost One in the Circe system and destroying both defending warships. After receiving the standard Liberator upgrade, the vessel entered Clan Smoke Jaguar service as the flagship of Delta Galaxy under Star Commodore Clarinda Stiles. When Task Force Serpent struck at Huntress in 3060, the Korat was among the Jaguar naval assets destroyed during the desperate defense of their homeworld.</p><p>The Gauntlet served Clan Jade Falcon as part of the Emerald Talon Naval Assault Star. During the Wars of Reaving, the vessel participated in the defense of Ironhold against Clan Steel Viper forces in late 3069, helping blunt initial landing attempts before being pushed back by superior numbers including the Nightlord-class battleship Dark Asp. The Gauntlet was destroyed at Lum in February 3070 during a three-hour naval battle defending the last major Jade Falcon Homeworld enclave.</p><p>Two Liberators served Clan Wolf under the names Blood Fang and Fuego Lobo following the Refusal War, with the Fuego Lobo serving as flagship of the Jade Wolf Naval Reserve under Star Commodore Amel Radick. When Clan Jade Wolf was reabsorbed into Clan Wolf proper around 3058, both vessels were likely renamed to Jerome Winson and Victoria Ward respectively. Both warships survived the Jihad era intact and were maintained during the Dark Age with shipyard services contracted through Clan Sea Fox. As of 3145, the Jerome Winson and Victoria Ward remained two of only five active warships in the Clan Wolf Naval Star.</p><p>Clan Coyote operated the Spirit in the Sky as part of Epsilon Galaxy. The vessel survived the initial upheavals of the Wars of Reaving, escaping the destruction of the Tamaron system in December 3074 while stationed at Kirin. In 3082, the Spirit in the Sky engaged and destroyed the Clan Blood Spirit warship Exsanguine. By 3085, the vessel was one of only three Coyote warships still operational, undergoing repairs at the Kirin Shipyard.</p><p>The Morello presents a chronological anomaly in Liberator-class records. Listed as a Liberator-class vessel when the Exodus fleet assembled, this designation predates the Clan-era refit program by over two centuries. Whether the Morello represents an early prototype conversion or a retroactive classification remains debated, and its ultimate fate is unrecorded.</p>
-</deployment>
-
-<history>
-The Liberator-class traces its lineage to the Avatar-class heavy cruiser, which entered Star League Defense Force service in 2531 as a replacement for the aging Aegis-class frigate. At eight hundred thirty thousand tons, the Avatar outweighed its predecessor by some eighty thousand tons, carrying heavier armor and weaponry while maintaining superior acceleration. The Avatar served the SLDF well for over two centuries before being superseded by the Luxor-class in the early twenty-eighth century, with many vessels transferred to reserve fleets or reassigned as training ships.<p>The Amaris Civil War proved devastating to the remaining Avatar fleet. When Stefan Amaris seized Terra in December 2766, his forces captured three Avatar-class vessels undergoing refit at the Ian Cameron orbital yards. Only six Avatars survived the subsequent wars of liberation, five in SLDF service and one Rim Worlds Republic vessel recaptured at Nusakan in 2773. All six surviving hulls were selected for the Exodus fleet, their combination of substantial cargo holds and multiple docking collars making them invaluable transports for the long journey into exile.</p><p>Upon reaching the Pentagon worlds, the Avatars were mothballed along with much of the Exodus fleet. The vessels remained in storage through the founding of the Clans and the conflicts of Operation KLONDIKE, though at least two hulls saw active service during that campaign in their original Avatar configuration. After the Pentagon worlds were pacified and Clan society stabilized, the dormant fleet was largely set aside as the Clans focused on ground-based military development.</p><p>The reactivation program began in the early thirty-first century as the Clans prepared for their long-anticipated invasion of the Inner Sphere. Clan technicians performed comprehensive upgrades to the surviving Avatar hulls, replacing conventional armor with advanced Ferro-Carbide plating, installing Clan-specification weapons systems, and adding provisions for Elemental battle armor boarding parties. The refitted vessels were redesignated as the Liberator-class, entering service around 3024. Multiple Clans received Liberators, reflecting the broad distribution of former SLDF assets during the original Pentagon settlement.</p><p>The invasion era and its aftermath took a steady toll on the small Liberator fleet. The Korat fell defending Huntress against Task Force Serpent in 3060, while the Constantineau was destroyed in the York system during Wars of Reaving conflicts in 3068. The Gauntlet met its end at Lum in February 3070 defending Jade Falcon holdings against Clan Steel Viper aggression. These losses mirrored the broader attrition of irreplaceable former Star League warship designs across all Clans.</p><p>Despite these losses, the Liberator-class demonstrated remarkable staying power. Clan Wolf retained both the Jerome Winson and Victoria Ward through the Jihad and into the Dark Age, counting them among only five active warships in the Wolf Naval Star as late as 3145. Clan Coyote also maintained the Spirit in the Sky through the Wars of Reaving, keeping it operational despite the near-total collapse of Coyote naval power. The survival of these vessels more than a century after their Clan-era refit underscores both the soundness of the original Avatar design and the quality of Clan engineering that gave these ancient hulls renewed purpose.</p>
-</history>
-
-<manufacturer>
-Refit
-</manufacturer>
-
-<primaryFactory>
-Unknown
-</primaryFactory>
-
-<systemManufacturers>
-CHASSIS:Refit
-ENGINE:Unknown
-ARMOR:Unknown
-JUMP_JET:Unknown
-COMMUNICATIONS:Unknown
-TARGETING:Unknown
-</systemManufacturers>
-
-<systemModels>
-CHASSIS:Avatar-class conversion
-ENGINE:Unknown
-ARMOR:Ferro-Carbide
-JUMP_JET:Unknown
-COMMUNICATIONS:Unknown
-TARGETING:Unknown
-</systemModels>
 

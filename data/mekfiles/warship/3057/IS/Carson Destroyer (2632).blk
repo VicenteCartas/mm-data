@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,16 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-
-##Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 Warship
 </UnitType>
@@ -62,11 +53,11 @@ Aerodyne
 </motion_type>
 
 <transporters>
-asfbay:6.0:1:1
-smallcraftbay:6.0:1:2
-cargobay:144443.0:1:3
-1stclassquarters:380.0:0
-crewquarters:1190.0:0
+asfbay:6.0:1:1::-1:0
+smallcraftbay:6.0:1:2::-1:0
+cargobay:144443.0:1:3::-1:0
+1stclassquarters:380.0:0:-1::-1:0
+crewquarters:1190.0:0:-1::-1:0
 </transporters>
 
 <SafeThrust>
@@ -93,9 +84,13 @@ crewquarters:1190.0:0
 13
 </armor_type>
 
-<armor_tech>
+<armor_tech_rating>
+0
+</armor_tech_rating>
+
+<armor_tech_level>
 5
-</armor_tech>
+</armor_tech_level>
 
 <armor>
 42
@@ -166,11 +161,34 @@ Ammo NAC/30:40
 40
 </structural_integrity>
 
+# Fluff Date: 2026-02-24 13:31:06
+<capabilities>
+The Carson-class destroyers, manufactured by Thompson's Shipyards, were designed to serve as escort vessels for the expanding Star League Navy. These destroyers incorporated features suitable for extended deployment, including an eighty-meter diameter Grav deck, large cargo capacity, and fuel tank. However, issues arose due to the inexperience of Thompson's Shipyards with WarShip construction. The single Regulis-XII engine, when operated at maximum thrust for extended periods, experienced excessive wear and tear, resulting in reduced maximum thrust and a need for frequent shipyard maintenance. These limitations made the Carson-class destroyers incapable of operating effectively in the new territories, where maintenance yards were scarce.
+</capabilities>
 
+<overview>
+The Carson-class destroyers were a series of escort vessels commissioned by the Star League Navy to cover the expanding territory of the Star League. Manufactured by Thompson's Shipyards, known for their expertise in JumpShip construction, the Carsons featured a generous grav deck, large cargo capacity, and fuel tanks for extended deployment. However, due to engineering oversights, the Carson-class faced challenges with excessive wear and tear on the engines, leading to reduced thrust and a high need for maintenance. Despite their initial role, the introduction of more reliable destroyers eventually led to the retirement of the Carson-class in 2722, marking the end of their service in the Star League Navy.
+</overview>
 
+<history>
+After five years of service, problems with the Carson-class destroyers became evident due to Thompson's Shipyards' oversight in accounting for the engine's wear and tear. The lack of provisions for this issue resulted in reduced thrust and the need for frequent maintenance, making the destroyers unsuitable for operating in the "wilds" of the expanding territories. As a result, a study on replacing the drive deemed it cost-ineffective, leading to the halting of production. The completed Carson-class destroyers were reassigned to patrol more settled regions while more reliable craft, such as the Lola III-class destroyer, became available. The introduction of the Essex-class destroyer in 2722 finally allowed the Navy to retire the Carson-class destroyers from service.
+</history>
 
+<manufacturer>
+Thompson's Shipyards
+</manufacturer>
 
+<primaryFactory>
+Keid
+</primaryFactory>
 
+<systemManufacturers>
+CHASSIS:Unknown
+ENGINE:Unknown
+ARMOR:Unknown
+COMMUNICATIONS:Unknown
+TARGETING:Unknown
+</systemManufacturers>
 
 <use>
 Destroyer
@@ -239,47 +257,4 @@ TR:3057r
 <escape_pod>
 27
 </escape_pod>
-
-# Fluff Date: 2026-02-24 13:31:06
-<overview>
-<p>The Carson represents one of the Star League Navy's more cautionary tales of warship procurement. Conceived during a period of rapid territorial expansion that stretched the existing fleet beyond its capacity, this destroyer was intended to provide affordable escort coverage for the newly colonized systems proliferating across the League's expanding frontiers. The contract was awarded to a shipyard with an excellent reputation in civilian JumpShip construction but no prior experience building military capital vessels, a decision driven by the appealing practicality of the proposed design rather than the manufacturer's credentials.</p><p>The resulting vessel delivered on its promises of crew comfort, generous cargo capacity, and operational endurance, but suffered from a critical propulsion deficiency that ultimately confined the class to operations in settled space rather than the frontier territories it was built to patrol. Though the Carson served the Star League Navy for nearly a century before replacement by more capable designs, its troubled service history serves as an enduring reminder that the demands of warship engineering extend well beyond the requirements of commercial shipbuilding.</p>
-</overview>
-
-<capabilities>
-<p>The Carson mounts a respectable armament for a vessel of its displacement and classification. A pair of medium naval particle projection cannons provide the primary long-range engagement capability from the nose, supplemented by White Shark missile systems distributed between the forward and aft arcs. Naval lasers form the backbone of the broadside defense, with twelve tubes providing comprehensive coverage across all firing arcs. Naval autocannons deliver devastating close-range firepower from the broadside and aft-quarter positions. Improved ferro-aluminum armor provides solid protection for the hull's mass class.</p><p>The vessel's most notable technical feature is also its greatest weakness. The single Regulis-XII interplanetary engine, while adequately powerful on paper, proved unable to sustain the stress of extended maximum-thrust operations. After approximately five years of service, accumulated wear on engine components significantly reduced the safe maximum thrust available while simultaneously increasing the frequency of required maintenance periods. With few shipyard facilities available in the frontier territories where Carsons were deployed, this deficiency effectively confined the class to settled space. Studies into replacing the drive concluded the modification would not be cost-effective. The absence of docking collars limits combined-arms capability, though generous fighter and small-craft bays partially compensate. An eighty-meter gravity deck and substantial cargo capacity support extended independent deployments.</p>
-</capabilities>
-
-<deployment>
-<p>Thompson's Shipyards of Keid received an initial order for four hundred Carson-class destroyers, reflecting the urgent demand for escort vessels across the Star League's expanding territory. The class entered service in 2632 and initially performed well, but chronic engine reliability issues became apparent within five years of commissioning. As more capable designs entered production, the Star League Navy progressively reassigned Carsons from frontier patrol to operations in settled regions. The introduction of the Essex-class destroyer in 2711 finally allowed the Navy to begin retiring the Carson, with the last vessel withdrawn from active service in 2722. Surplus hulls were transferred to member state navies, where the vessels found new purpose in secondary roles. As of 2765, the Capellan Confederation operated a pair of Carsons, while the Rim Worlds Republic maintained eighteen. Centuries later, the Word of Blake recovered and restored two Carson hulls during their covert fleet buildup preceding the Jihad. The WoBS Sword of Promise and WoBS Sword of Enlightenment served in the Word's punitive campaigns before being destroyed along with the sect.</p>
-</deployment>
-
-<history>
-<p>The Carson program arose from a convergence of technological advancement and strategic necessity in the early twenty-seventh century. The development of the Jamerson-Ulikov water purification technique opened previously uninhabitable worlds to colonization, rapidly expanding the volume of space under Star League governance. The Navy found itself stretched increasingly thin as it struggled to provide security coverage across these new territories, and the admiralty issued a requirement for a new class of escort destroyer that could be produced in large numbers.</p><p>Thompson's Shipyards of Keid, a firm with an established reputation for manufacturing high-quality JumpShip designs, submitted a proposal that appealed to the Navy's requirements for extended-deployment capability. The design incorporated generous crew amenities including an eighty-meter gravity deck, substantial cargo capacity, and oversized fuel bunkers that would allow the Carson to operate independently in frontier regions where support infrastructure was minimal. Despite Thompson's complete lack of warship construction experience, the practical merits of their proposal won the contract, and the Navy placed an initial order for four hundred vessels.</p><p>The early years of Carson-class service appeared to validate the Navy's gamble. The destroyers performed their escort duties competently, and their comfortable accommodations and generous supply capacity made them popular with crews assigned to remote postings. Five years into their service life, however, the consequences of Thompson's inexperience with military propulsion systems began to manifest. The single Regulis-XII engine suffered from excessive wear when operated at maximum thrust for extended periods, a flaw that commercial JumpShip engineers had failed to anticipate. The degradation progressively reduced the safe maximum thrust available while dramatically increasing maintenance requirements.</p><p>With few maintenance yards available in the frontier territories the Carson had been designed to patrol, the class found itself operationally confined to the settled regions of the Inner Sphere. A feasibility study concluded that replacing the Regulis-XII would not be cost-effective, and production was halted. The Navy began reassigning completed Carsons to safer patrol routes as more reliable designs like the Lola III entered service. The introduction of the Essex-class in 2711 provided the capable replacement the Navy needed, and the last Carson was withdrawn from active SLDF service by 2722.</p><p>Surplus Carsons were transferred to member state navies, where their generous cargo capacity found new purpose in secondary roles. The Capellan Confederation maintained a pair as home guard vessels, while the Rim Worlds Republic operated eighteen, their numbers suggesting the affordable destroyer found particular favor with navies operating under tighter budget constraints. The Word of Blake resurrected two Carson hulls during their covert fleet buildup preceding the Jihad, deploying the WoBS Sword of Promise and WoBS Sword of Enlightenment in punitive campaigns before both were destroyed, bringing the Carson's troubled service history to a violent conclusion more than three centuries after the class first entered service.</p>
-</history>
-
-<manufacturer>
-Thompson's Shipyards
-</manufacturer>
-
-<primaryFactory>
-Keid
-</primaryFactory>
-
-<systemManufacturers>
-CHASSIS:Unknown
-ENGINE:Unknown
-ARMOR:Unknown
-JUMP_JET:Unknown
-COMMUNICATIONS:Unknown
-TARGETING:Unknown
-</systemManufacturers>
-
-<systemModels>
-CHASSIS:Unknown
-ENGINE:Regulis-XII
-ARMOR:Improved Ferro-Aluminum
-JUMP_JET:Unknown
-COMMUNICATIONS:Unknown
-TARGETING:Unknown
-</systemModels>
 

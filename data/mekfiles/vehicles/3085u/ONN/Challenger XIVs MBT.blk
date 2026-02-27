@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,20 +15,15 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-#Write the version number just in case...
-<Version>
-MAM0
-</Version>
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 Tank
 </UnitType>
+
 <Name>
 Challenger MBT
 </Name>
+
 <Model>
 XIVs
 </Model>
@@ -36,49 +31,15 @@ XIVs
 <mul id:>
 541
 </mul id:>
-<Tonnage>
-90
-</Tonnage>
-<cruiseMP>
-3
-</cruiseMP>
-<Armor>
-56
-50
-50
-36
-56
-</Armor>
-<Turret Equipment>
-ISERLargeLaser
-ISLBXAC10
-ISMML7
-ISAntiMissileSystem
-</Turret Equipment>
-<Front Equipment>
-ISSRM4
-ISSRT4
-</Front Equipment>
-<Right Equipment>
-ISStreakSRM2
-</Right Equipment>
-<Left Equipment>
-ISStreakSRM2
-</Left Equipment>
-<Rear Equipment>
-ISSmallPulseLaser
-</Rear Equipment>
-<Body Equipment>
-ISMML7 LRM Ammo
-ISMML7 SRM Ammo
-ISSRM4 Ammo
-ISSRT4 Ammo
-ISAMS Ammo
-ISStreakSRM2 Ammo
-ISLBXAC10 CL Ammo
-ISLBXAC10 Ammo
-Environmental Sealing
-</Body Equipment>
+
+<year>
+3077
+</year>
+
+<originalBuildYear>
+3077
+</originalBuildYear>
+
 <type>
 IS Level 3
 </type>
@@ -86,21 +47,80 @@ IS Level 3
 <role>
 Juggernaut
 </role>
-<year>
-3077
-</year>
-<internal_type>
-0
-</internal_type>
-<armor_type>
-6
-</armor_type>
-<engine_type>
-2
-</engine_type>
+
 <motion_type>
 Tracked
 </motion_type>
+
+<cruiseMP>
+3
+</cruiseMP>
+
+<engine_type>
+2
+</engine_type>
+
+<armor_type>
+6
+</armor_type>
+
+<armor_tech_rating>
+0
+</armor_tech_rating>
+
+<armor_tech_level>
+1
+</armor_tech_level>
+
+<armor>
+56
+50
+50
+36
+56
+</armor>
+
+<Body Equipment>
+IS Ammo MML-7 LRM
+IS Ammo MML-7 SRM
+IS Ammo SRM-4
+IS Ammo SRTorpedo-4
+ISAMS Ammo
+IS Streak SRM 2 Ammo
+IS LB 10-X Cluster Ammo
+IS LB 10-X AC Ammo
+Environmental Sealing
+</Body Equipment>
+
+<Front Equipment>
+SRM 4
+SRT 4
+</Front Equipment>
+
+<Right Equipment>
+ISStreakSRM2
+</Right Equipment>
+
+<Left Equipment>
+ISStreakSRM2
+</Left Equipment>
+
+<Rear Equipment>
+ISSmallPulseLaser
+</Rear Equipment>
+
+<Turret Equipment>
+ISERLargeLaser
+ISLBXAC10
+ISMML7
+ISAntiMissileSystem
+</Turret Equipment>
+
 <source>
 TR:3085
 </source>
+
+<tonnage>
+90.0
+</tonnage>
+

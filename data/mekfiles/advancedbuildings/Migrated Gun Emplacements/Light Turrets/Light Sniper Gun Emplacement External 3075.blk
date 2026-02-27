@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,61 +15,79 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#Guns block data file
-<BlockVersion>
-1
-</BlockVersion>
-#Write the version number just in case...
-<Version>
-MAM0
-</Version>
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 BuildingEntity
 </UnitType>
+
 <Name>
 Light Sniper Gun Emplacement
 </Name>
-<model>
-(3075) (External)
-</model>
-<Year>
-3075
-</Year>
-<Type>
-IS Level 3
-</Type>
-<building_class>
-3
-</building_class>
-<building_type>
-1
-</building_type>
-<Level 0 0.0,0.0,0.0 Equipment>
-ISUltraAC2 (ST)
-ISUltraAC2 (ST)
-ISMG (ST)
-ISMG (ST)
-Searchlight (ST)
-ISMG Ammo Full
-ISUltraAC2 Ammo
-ISUltraAC2 Ammo
-ISUltraAC2 Ammo
-ISUltraAC2 Ammo
-ISUltraAC2 Ammo
-EXTERNAL PowerGenerator:SIZE:4.0
-</Level 0 0.0,0.0,0.0 Equipment>
 
-<cf>
-30
-</cf>
+<Model>
+(3075) (External)
+</Model>
+
+<year>
+3075
+</year>
+
+<originalBuildYear>
+3075
+</originalBuildYear>
+
+<type>
+IS Level 3
+</type>
+
+<motion_type>
+None
+</motion_type>
+
+<cruiseMP>
+0
+</cruiseMP>
+
 <armor>
 20
 </armor>
 
-<coords>
-0,0,0
-</coords>
+<Level 0 0.0,0.0,0.0 Equipment>
+ISUltraAC2(ST)
+ISUltraAC2(ST)
+Machine Gun(ST)
+Machine Gun(ST)
+Searchlight(ST)
+IS Ammo MG - Full
+IS Ultra AC/2 Ammo
+IS Ultra AC/2 Ammo
+IS Ultra AC/2 Ammo
+IS Ultra AC/2 Ammo
+IS Ultra AC/2 Ammo
+EXTERNAL PowerGenerator:SIZE:4.0
+</Level 0 0.0,0.0,0.0 Equipment>
 
 <height>
 1
 </height>
+
+<building_class>
+3
+</building_class>
+
+<building_type>
+1
+</building_type>
+
+<height>
+1
+</height>
+
+<cf>
+30
+</cf>
+
+<coords>
+0.0,0.0,0.0
+</coords>
+

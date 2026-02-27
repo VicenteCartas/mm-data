@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,16 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-
-# Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 Tank
 </UnitType>
@@ -45,6 +36,10 @@ Schrek PPC Carrier
 3072
 </year>
 
+<originalBuildYear>
+3072
+</originalBuildYear>
+
 <type>
 IS Level 2
 </type>
@@ -53,29 +48,33 @@ IS Level 2
 Sniper
 </role>
 
-<tonnage>
-80.0
-</tonnage>
+<quirks>
+low_profile
+</quirks>
 
 <motion_type>
 Tracked
 </motion_type>
 
-<engine_type>
-0
-</engine_type>
-
 <cruiseMP>
 3
 </cruiseMP>
+
+<engine_type>
+0
+</engine_type>
 
 <armor_type>
 6
 </armor_type>
 
-<armor_tech>
+<armor_tech_rating>
+0
+</armor_tech_rating>
+
+<armor_tech_level>
 1
-</armor_tech>
+</armor_tech_level>
 
 <armor>
 38
@@ -105,10 +104,6 @@ PPC
 PPC
 PPC
 </Turret Equipment>
-
-<source>
-TR:3085
-</source>
 
 <capabilities>
 While highly effective when firing from cover and the perfect partner to the short-ranged Demolisher, the design is unpopular with crews due to the Schrek's limited mobility and pitifully low seven tons of ArcShield VII Mk 5 plate, which makes it highly vulnerable to counterbattery fire. The Schrek's reputation also suffered due to the decline of technical knowledge during the Succession Wars era. Its use of an increasingly rare fusion engine to power its weapons array drove up the cost to buy and maintain the vehicle, pricing it outside the range of all but the most elite units until after the War of 3039.
@@ -141,7 +136,11 @@ COMMUNICATIONS:Olmstead 3000
 TARGETING:Omicron IX
 </systemManufacturers>
 
-<quirks>
-low_profile
-</quirks>
+<source>
+TR:3085
+</source>
+
+<tonnage>
+80.0
+</tonnage>
 

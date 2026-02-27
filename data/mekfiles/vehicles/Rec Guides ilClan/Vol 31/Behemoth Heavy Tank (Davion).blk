@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,16 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-
-##Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 Tank
 </UnitType>
@@ -53,16 +44,13 @@ Behemoth Heavy Tank
 IS Level 2
 </type>
 
-
 <role>
 Juggernaut
 </role>
+
 <motion_type>
 Tracked
 </motion_type>
-
-<transporters>
-</transporters>
 
 <cruiseMP>
 2
@@ -76,9 +64,13 @@ Tracked
 6
 </armor_type>
 
-<armor_tech>
+<armor_tech_rating>
+0
+</armor_tech_rating>
+
+<armor_tech_level>
 1
-</armor_tech>
+</armor_tech_level>
 
 <armor>
 48
@@ -130,6 +122,11 @@ ISGaussRifle
 ISStreakSRM6
 ISStreakSRM6
 </Turret Equipment>
+
+<slotless_equipment>
+IS Ammo RL-10
+IS Ammo RL-10
+</slotless_equipment>
 
 <capabilities>
 Despite the fact that the initial design plan allowed for a whopping twenty-one tons of armor, only thirteen were used to offer greater weight for weaponry. Though not as thick as originally envisioned, the protection is adequate against the majority of threats. With a peak speed of only 32 kph, even the slowest 'Mech can readily catch up to the Behemoth if it's ready to face the firepower.

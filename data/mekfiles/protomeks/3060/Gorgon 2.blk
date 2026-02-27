@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,16 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-
-# Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 ProtoMek
 </UnitType>
@@ -61,9 +52,6 @@ Brawler
 Biped
 </motion_type>
 
-<transporters>
-</transporters>
-
 <cruiseMP>
 4
 </cruiseMP>
@@ -72,9 +60,29 @@ Biped
 4
 </jumpingMP>
 
+<interface_cockpit>
+false
+</interface_cockpit>
+
 <engine_type>
 0
 </engine_type>
+
+<clan_engine>
+false
+</clan_engine>
+
+<armor_type>
+42
+</armor_type>
+
+<armor_tech_rating>
+0
+</armor_tech_rating>
+
+<armor_tech_level>
+2
+</armor_tech_level>
 
 <internal_type>
 -1
@@ -90,10 +98,11 @@ Biped
 </armor>
 
 <Body Equipment>
-ProtomechJumpJet
-ProtomechJumpJet
-ProtomechJumpJet
-ProtomechJumpJet
+ProtoMechJumpJet
+ProtoMechJumpJet
+ProtoMechJumpJet
+ProtoMechJumpJet
+EIInterface
 </Body Equipment>
 
 <Head Equipment>
@@ -115,22 +124,14 @@ ProtomechJumpJet
 CLMediumPulseLaser
 </Main Gun Equipment>
 
-<source>
-TR:3060
-</source>
-
-<tonnage>
-8.0
-</tonnage>
-
 # Fluff Date: 2026-02-22 14:33:57
-<overview>
-<p>The Gorgon is an eight-ton first-generation ProtoMek developed by Clan Smoke Jaguar as a heavy fire support platform within the original ProtoMek program on Huntress. Anchoring the heavier end of the ProtoMek weight spectrum alongside the nine-ton Minotaur, the Gorgon is built around a ten-tube LRM launcher that gives it bombardment capability unprecedented for a unit of its size. The LRM-10 is so large relative to the ProtoMek chassis that Jaguar scientists developed the main gun mount specifically to accommodate it, creating a hand-supported weapon system anchored to the torso that became standard on several subsequent ProtoMek designs. The Gorgon served as the long-range anchor of mixed ProtoMek formations, delivering indirect fire support that could suppress or destroy targets well beyond the engagement range of lighter designs.</p>
-</overview>
-
 <capabilities>
 <p>The Gorgon defining feature is its LRM-10 launcher, a weapon system that would be respectable on a medium BattleMek and is extraordinary on an eight-ton ProtoMek. The ten-missile salvo can deliver withering fire at ranges exceeding six hundred meters, allowing the Gorgon to engage targets that cannot effectively return fire against the small ProtoMek profile at that distance. An ER Micro Laser in the main gun mount provides minimal close-range backup. The fifty-rated fusion engine delivers forty-three kilometers per hour cruising speed with no jump capability, adequate for keeping pace with heavier formations but insufficient for rapid repositioning.</p><p>The Gorgon most critical vulnerability is ammunition dependency. The LRM-10 carries only twelve salvos of ammunition, exhausting in less than three minutes of sustained fire. Once the missiles are depleted, the Gorgon is reduced to its ER Micro Laser, a weapon so small that it poses no meaningful threat to anything larger than conventional infantry. Thirty-four points of armor provide decent protection, but the Gorgon lack of speed or jump capability means it cannot easily disengage when its ammunition runs dry. Prudent commanders maintain strict fire discipline in Gorgon Points, parceling out salvos to extend engagement time and planning withdrawal routes before the first missile is launched.</p>
 </capabilities>
+
+<overview>
+<p>The Gorgon is an eight-ton first-generation ProtoMek developed by Clan Smoke Jaguar as a heavy fire support platform within the original ProtoMek program on Huntress. Anchoring the heavier end of the ProtoMek weight spectrum alongside the nine-ton Minotaur, the Gorgon is built around a ten-tube LRM launcher that gives it bombardment capability unprecedented for a unit of its size. The LRM-10 is so large relative to the ProtoMek chassis that Jaguar scientists developed the main gun mount specifically to accommodate it, creating a hand-supported weapon system anchored to the torso that became standard on several subsequent ProtoMek designs. The Gorgon served as the long-range anchor of mixed ProtoMek formations, delivering indirect fire support that could suppress or destroy targets well beyond the engagement range of lighter designs.</p>
+</overview>
 
 <deployment>
 <p>The Gorgon 2 fundamentally reimagines the chassis by replacing the LRM-10 with a Medium Pulse Laser and adding four jump jets providing one hundred and twenty meters of jumping distance. This converts the Gorgon from a long-range fire support platform into a mobile direct combat unit with ammunition-independent firepower. Thirty-six points of armor slightly exceed the base model. The pulse laser improved accuracy combined with jump jet mobility makes the Gorgon 2 effective in close terrain where the base model LRM cannot be used. This variant represents the most radical departure from the original design intent.</p>
@@ -152,7 +153,6 @@ Unknown
 CHASSIS:Unknown
 ENGINE:Unknown
 ARMOR:Unknown
-JUMP_JET:Unknown
 COMMUNICATIONS:Unknown
 TARGETING:Unknown
 </systemManufacturers>
@@ -160,4 +160,12 @@ TARGETING:Unknown
 <systemModels>
 ENGINE:50 Fusion
 </systemModels>
+
+<source>
+TR:3060
+</source>
+
+<tonnage>
+8.0
+</tonnage>
 

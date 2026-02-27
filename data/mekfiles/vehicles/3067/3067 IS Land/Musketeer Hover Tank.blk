@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,55 +15,31 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-#Write the version number just in case...
-<Version>
-MAM0
-</Version>
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 Tank
 </UnitType>
+
 <Name>
 Musketeer Hover Tank
 </Name>
-<model>
 
-</model>
+<Model>
+
+</Model>
 
 <mul id:>
 4688
 </mul id:>
-<Tonnage>
-50
-</Tonnage>
-<cruiseMP>
-7
-</cruiseMP>
-<Armor>
-36
-27
-27
-18
-26
-</Armor>
-<Turret Equipment>
-ISRotaryAC5
-ISStreakSRM2
-ISStreakSRM2
-</Turret Equipment>
-<Front Equipment>
-ISTAG
-</Front Equipment>
-<Body Equipment>
-ISRotaryAC5 Ammo
-ISRotaryAC5 Ammo
-ISRotaryAC5 Ammo
-ISStreakSRM2 Ammo
-ISCASE
-</Body Equipment>
+
+<year>
+3065
+</year>
+
+<originalBuildYear>
+3065
+</originalBuildYear>
+
 <type>
 IS Level 2
 </type>
@@ -71,22 +47,75 @@ IS Level 2
 <role>
 Striker
 </role>
-<year>
-3065
-</year>
-<internal_type>
-0
-</internal_type>
-<armor_type>
-1
-</armor_type>
-<engine_type>
-1
-</engine_type>
+
 <motion_type>
 Hover
 </motion_type>
 
+<cruiseMP>
+7
+</cruiseMP>
+
+<engine_type>
+1
+</engine_type>
+
+<armor_type>
+1
+</armor_type>
+
+<armor_tech_rating>
+0
+</armor_tech_rating>
+
+<armor_tech_level>
+1
+</armor_tech_level>
+
+<armor>
+36
+27
+27
+18
+26
+</armor>
+
+<Body Equipment>
+ISRotaryAC5 Ammo
+ISRotaryAC5 Ammo
+ISRotaryAC5 Ammo
+IS Streak SRM 2 Ammo
+ISCASE
+</Body Equipment>
+
+<Front Equipment>
+ISTAG
+</Front Equipment>
+
+<Right Equipment>
+</Right Equipment>
+
+<Left Equipment>
+</Left Equipment>
+
+<Rear Equipment>
+</Rear Equipment>
+
+<Turret Equipment>
+ISRotaryAC5
+ISStreakSRM2
+ISStreakSRM2
+</Turret Equipment>
+
 <source>
 TR:3067
 </source>
+
+<tonnage>
+50.0
+</tonnage>
+
+<fuelType>
+PETROCHEMICALS
+</fuelType>
+

@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,15 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-#Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 BattleArmor
 </UnitType>
@@ -32,7 +24,7 @@ BattleArmor
 Gray Death Strike Suit
 </Name>
 
-<model>
+<Model>
 (Sqd4)
 </Model>
 
@@ -40,25 +32,33 @@ Gray Death Strike Suit
 4237
 </mul id:>
 
-<chassis>
-biped
-</chassis>
+<year>
+3080
+</year>
 
-<weightclass>
-2
-</weightclass>
+<originalBuildYear>
+3080
+</originalBuildYear>
 
-<Trooper Count>
-4
-</Trooper Count>
+<type>
+IS Level 2
+</type>
+
+<role>
+Ambusher
+</role>
+
+<quirks>
+distracting
+</quirks>
+
+<motion_type>
+Leg
+</motion_type>
 
 <cruiseMP>
 3
 </cruiseMP>
-
-<Armor>
-9
-</Armor>
 
 <armor_type>
 28
@@ -71,38 +71,30 @@ biped
 <Squad Equipment>
 ISBASRM3:Body
 BA-SRM3 Ammo:Body:Shots2#
-ISBALightTAG:RA
+CLBALightTAG:RA
 BABasicManipulator:LA
 BABasicManipulator:RA
 </Squad Equipment>
 
-<type>
-IS Level 2
-</type>
+<Trooper 1 Equipment>
+</Trooper 1 Equipment>
 
-<role>
-Ambusher
-</role>
+<Trooper 2 Equipment>
+</Trooper 2 Equipment>
 
-<year>
-3080
-</year>
+<Trooper 3 Equipment>
+</Trooper 3 Equipment>
 
-<motion_type>
-Leg
-</motion_type>
-
-<source>
-TR:Proto
-</source>
-
-<overview>
-Gray Death Strike battle armor is a production version of the prototype.
-</overview>
+<Trooper 4 Equipment>
+</Trooper 4 Equipment>
 
 <capabilities>
 Defiance Industries wasn't able to secure a consistent source of the Clan technologies used in the prototype and made the decision to move to more accessible Inner Sphere technologies.
 </capabilities>
+
+<overview>
+Gray Death Strike battle armor is a production version of the prototype.
+</overview>
 
 <deployment>
 As a result, Defiance used a single SRM-3 with two reloads. To make room for this the Gray Death Strike Suit replaced the Battle Claws of the prototype with Basic Manipulators. The launcher can be jettisoned as well, allowing the unit to move slightly more quickly. The Light TAG system mounted in the arm allows armor that has jettisoned the SRM launcher to remain useful on the battlefield, designating enemy units for artillery and missile strikes.
@@ -124,12 +116,32 @@ Furillo
 CHASSIS:Unknown
 ENGINE:Unknown
 ARMOR:Unknown
-JUMPJET:Unknown
+JUMP_JET:Unknown
 COMMUNICATIONS:Unknown
 TARGETING:Unknown
 </systemManufacturers>
 
-<quirks>
-distracting
-</quirks>
+<source>
+TR:Proto
+</source>
+
+<chassis>
+biped
+</chassis>
+
+<jumpingMP>
+0
+</jumpingMP>
+
+<armor>
+9
+</armor>
+
+<Trooper Count>
+4
+</Trooper Count>
+
+<weightclass>
+2
+</weightclass>
 

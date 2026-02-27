@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,20 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-
-<mul id:>
-4139
-</mul id:>
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-
-#Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 SupportTank
 </UnitType>
@@ -37,60 +24,21 @@ SupportTank
 Estevez MBT
 </Name>
 
-<model>
+<Model>
 
-</model>
+</Model>
 
-<Tonnage>
-80
-</Tonnage>
+<mul id:>
+4139
+</mul id:>
 
-<cruiseMP>
-3
-</cruiseMP>
+<year>
+2310
+</year>
 
-#Order is Tank/VTOL/LST
-<Armor>
-35
-32
-32
-30
-35
-</Armor>
-
-<structural_tech_rating>
-2
-</structural_tech_rating>
-
-<Front Equipment>
-</Front Equipment>
-
-<Turret Equipment>
-Heavy Rifle
-Machine Gun
-Machine Gun
-</Turret Equipment>
-
-<Body Equipment>
-IS Ammo Heavy Rifle
-IS Ammo Heavy Rifle
-IS Ammo Heavy Rifle
-IS Ammo Heavy Rifle
-IS Ammo Heavy Rifle
-IS Ammo Heavy Rifle
-IS Ammo Heavy Rifle
-IS Machine Gun Ammo
-Armored Chassis
-Basic Fire Control
-</Body Equipment>
-
-<Right Equipment>
-ISVehicularGrenadeLauncher (FR)
-</Right Equipment>
-
-<Left Equipment>
-ISVehicularGrenadeLauncher (FL)
-</Left Equipment>
+<originalBuildYear>
+2310
+</originalBuildYear>
 
 <type>
 IS Level 4
@@ -100,40 +48,102 @@ IS Level 4
 Sniper
 </role>
 
-<year>
-2310
-</year>
-
-<source>
-ED:AoW
-</source>
-
-<internal_type>
-0
-</internal_type>
-
-<armor_type>
-0
-</armor_type>
-
-<engine_type>
-1
-</engine_type>
-
-<fuel>
-2.5
-</fuel>
-
-<barrating>
-7
-</barrating>
+<quirks>
+obsolete:2400
+gas_hog
+</quirks>
 
 <motion_type>
 Tracked
 </motion_type>
 
-<quirks>
-gas_hog
-obsolete:2400
-</quirks>
+<cruiseMP>
+3
+</cruiseMP>
+
+<engine_type>
+1
+</engine_type>
+
+<armor_type>
+0
+</armor_type>
+
+<armor_tech_rating>
+2
+</armor_tech_rating>
+
+<armor_tech_level>
+1
+</armor_tech_level>
+
+<armor>
+35
+32
+32
+30
+35
+</armor>
+
+<Body Equipment>
+IS Ammo Heavy Rifle
+IS Ammo Heavy Rifle
+IS Ammo Heavy Rifle
+IS Ammo Heavy Rifle
+IS Ammo Heavy Rifle
+IS Ammo Heavy Rifle
+IS Ammo Heavy Rifle
+IS Ammo MG - Full
+Armored Chassis
+Basic Fire Control
+</Body Equipment>
+
+<Front Equipment>
+</Front Equipment>
+
+<Right Equipment>
+ISVehicularGrenadeLauncher
+</Right Equipment>
+
+<Left Equipment>
+ISVehicularGrenadeLauncher
+</Left Equipment>
+
+<Rear Equipment>
+</Rear Equipment>
+
+<Turret Equipment>
+Rifle (Cannon, Heavy)
+Machine Gun
+Machine Gun
+</Turret Equipment>
+
+<slotless_equipment>
+IS Ammo VGL
+IS Ammo VGL
+</slotless_equipment>
+
+<structural_tech_rating>
+2
+</structural_tech_rating>
+
+<engine_tech_rating>
+2
+</engine_tech_rating>
+
+<source>
+ED:AoW
+</source>
+
+<tonnage>
+80.0
+</tonnage>
+
+<fuel>
+2.5
+</fuel>
+
+<fuelType>
+PETROCHEMICALS
+</fuelType>
 

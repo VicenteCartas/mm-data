@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,20 +15,15 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-#Write the version number just in case...
-<Version>
-MAM0
-</Version>
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 VTOL
 </UnitType>
+
 <Name>
 Cavalry Attack Helicopter
 </Name>
+
 <Model>
 (SRM)
 </Model>
@@ -36,30 +31,15 @@ Cavalry Attack Helicopter
 <mul id:>
 505
 </mul id:>
-<Tonnage>
-25
-</Tonnage>
-<cruiseMP>
-10
-</cruiseMP>
-<Armor>
-12
-10
-10
-6
-2
-</Armor>
-<Front Equipment>
-ISSRM6
-ISSRM2
-ISSRM2
-ISSRM2
-ISSRM2
-</Front Equipment>
-<Body Equipment>
-ISSRM6 Ammo
-ISSRM2 Ammo
-</Body Equipment>
+
+<year>
+3055
+</year>
+
+<originalBuildYear>
+3055
+</originalBuildYear>
+
 <type>
 IS Level 1
 </type>
@@ -67,21 +47,73 @@ IS Level 1
 <role>
 Striker
 </role>
-<year>
-3055
-</year>
-<internal_type>
-0
-</internal_type>
-<armor_type>
-0
-</armor_type>
-<engine_type>
-1
-</engine_type>
+
 <motion_type>
 VTOL
 </motion_type>
+
+<cruiseMP>
+10
+</cruiseMP>
+
+<engine_type>
+1
+</engine_type>
+
+<armor_type>
+0
+</armor_type>
+
+<armor_tech_rating>
+0
+</armor_tech_rating>
+
+<armor_tech_level>
+5
+</armor_tech_level>
+
+<armor>
+12
+10
+10
+6
+2
+</armor>
+
+<Body Equipment>
+IS Ammo SRM-6
+IS Ammo SRM-2
+</Body Equipment>
+
+<Front Equipment>
+SRM 6
+SRM 2
+SRM 2
+SRM 2
+SRM 2
+</Front Equipment>
+
+<Right Equipment>
+</Right Equipment>
+
+<Left Equipment>
+</Left Equipment>
+
+<Rear Equipment>
+</Rear Equipment>
+
+<Rotor Equipment>
+</Rotor Equipment>
+
 <source>
 TR:3058U
 </source>
+
+<tonnage>
+25.0
+</tonnage>
+
+<fuelType>
+PETROCHEMICALS
+</fuelType>
+

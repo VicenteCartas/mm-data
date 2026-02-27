@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,16 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-
-##Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 BattleArmor
 </UnitType>
@@ -49,20 +40,17 @@ IS Standard Battle Armor
 3086
 </originalBuildYear>
 
-<role>
-Ambusher
-</role>
-
 <type>
 IS Level 2
 </type>
 
+<role>
+Ambusher
+</role>
+
 <motion_type>
 Leg
 </motion_type>
-
-<transporters>
-</transporters>
 
 <cruiseMP>
 1
@@ -77,10 +65,6 @@ Leg
 </armor_tech>
 
 <Squad Equipment>
-SwarmMek
-SwarmWeaponMek
-StopSwarm
-LegAttack
 BABattleClaw:LA
 CLBALight Recoilless Rifle:RA
 ISBASRM2OS:Body
@@ -105,29 +89,10 @@ ISBASRM2OS:Body
 <Trooper 6 Equipment>
 </Trooper 6 Equipment>
 
-<source>
-TR:DA
-</source>
-
-<chassis>
-biped
-</chassis>
-
-<jumpingMP>
-0
-</jumpingMP>
-
-<armor>
-9
-</armor>
-
-<Trooper Count>
-6
-</Trooper Count>
-
-<weightclass>
-2
-</weightclass>
+<slotless_equipment>
+BA-SRM2 Ammo:Shots1#
+BA-SRM2 Ammo:Shots1#
+</slotless_equipment>
 
 <capabilities>
 Like the Elemental the final form of the Inner Sphere Standard can leap 90 meters at a time, although engineers were never able to figure out how to combine this ability with the additional SRM-2 pack. It also carries less protection than the Elemental: its 450kg of armor can withstand a full burst from an Inner Sphere Large Pulse Laser and keep the pilot alive. The Standard's left arm ends in a Battle Claw, allowing the suit to make anti-'Mech attacks or utilize an OmniMech's handholds to ride into battle. The integrated Medipack in the suit helps keep the trooper alive when injured, although not to the same degree as the Clan LSSU standard in the Elemental.
@@ -153,7 +118,32 @@ Capella,Falsterbo,Gibson,Hachiman,Hesperus II,Illyria,Irian,Kalidasa,Luthien,New
 CHASSIS:Unknown
 ENGINE:Unknown
 ARMOR:Unknown
-JUMPJET:Unknown
+JUMP_JET:Unknown
 COMMUNICATIONS:Unknown
 TARGETING:Unknown
 </systemManufacturers>
+
+<source>
+TR:DA
+</source>
+
+<chassis>
+biped
+</chassis>
+
+<jumpingMP>
+0
+</jumpingMP>
+
+<armor>
+9
+</armor>
+
+<Trooper Count>
+6
+</Trooper Count>
+
+<weightclass>
+2
+</weightclass>
+

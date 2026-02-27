@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,16 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-
-# Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 Tank
 </UnitType>
@@ -57,12 +48,13 @@ IS Level 2
 Sniper
 </role>
 
+<quirks>
+anti_air
+</quirks>
+
 <motion_type>
 Tracked
 </motion_type>
-
-<transporters>
-</transporters>
 
 <cruiseMP>
 3
@@ -71,6 +63,18 @@ Tracked
 <engine_type>
 1
 </engine_type>
+
+<armor_type>
+0
+</armor_type>
+
+<armor_tech_rating>
+0
+</armor_tech_rating>
+
+<armor_tech_level>
+1
+</armor_tech_level>
 
 <armor>
 22
@@ -106,18 +110,6 @@ Autocannon/5
 Autocannon/5
 </Turret Equipment>
 
-<source>
-TR:3058U
-</source>
-
-<tonnage>
-80.0
-</tonnage>
-
-<fuelType>
-PETROCHEMICALS
-</fuelType>
-
 <capabilities>
 The Partisan Heavy Tank variants are specialized for anti-aircraft defense, each equipped with a sophisticated targeting system for engaging airborne targets. Primary armaments include long-range autocannons, effective against air threats, complemented by machine guns for close-range anti-infantry defense. These tanks are designed as support units with moderate armor, suitable for stationary or slow-moving roles rather than direct front-line combat.<p>Key across all variants is the balance between firepower and mobility. While capable of robust air defense, they rely on proximity to ammunition resupply points due to high consumption rates during operations. Despite variations in armaments and specific capabilities, all Partisan models maintain their primary function of providing air support and defense, utilizing a mix of advanced targeting systems, autocannons, and machine guns to achieve this objective effectively.<p>
 </capabilities>
@@ -151,7 +143,7 @@ TARGETING:AntiAir Flak Systems-1
 </systemManufacturers>
 
 <source>
-TR:3039
+TR:3058U
 </source>
 
 <tonnage>
@@ -162,6 +154,3 @@ TR:3039
 PETROCHEMICALS
 </fuelType>
 
-<quirks>
-anti_air
-</quirks>

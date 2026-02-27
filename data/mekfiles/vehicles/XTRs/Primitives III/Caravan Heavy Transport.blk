@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,16 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-
-# Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 FixedWingSupport
 </UnitType>
@@ -33,9 +24,9 @@ FixedWingSupport
 Caravan Heavy Transport
 </Name>
 
-<model>
+<Model>
 
-</model>
+</Model>
 
 <mul id:>
 5624
@@ -57,12 +48,21 @@ IS Level 2
 None
 </role>
 
+<quirks>
+no_eject
+atmo_flyer
+easy_maintain
+fragile_fuel
+obsolete:2490
+gas_hog
+</quirks>
+
 <motion_type>
 Aerodyne
 </motion_type>
 
 <transporters>
-cargobay:60.0:4:1
+cargobay:60.0:4:1::-1:0
 </transporters>
 
 <SafeThrust>
@@ -88,6 +88,18 @@ cargobay:60.0:4:1
 <engine_type>
 1
 </engine_type>
+
+<armor_type>
+47
+</armor_type>
+
+<armor_tech_rating>
+3
+</armor_tech_rating>
+
+<armor_tech_level>
+1
+</armor_tech_level>
 
 <armor>
 48
@@ -122,6 +134,10 @@ cargobay:60.0:4:1
 3
 </structural_tech_rating>
 
+<engine_tech_rating>
+3
+</engine_tech_rating>
+
 <source>
 XTR:Primitives III
 </source>
@@ -129,13 +145,4 @@ XTR:Primitives III
 <tonnage>
 200.0
 </tonnage>
-
-<quirks>
-atmo_flyer
-easy_maintain
-fragile_fuel
-gas_hog
-no_eject
-obsolete:2490
-</quirks>
 

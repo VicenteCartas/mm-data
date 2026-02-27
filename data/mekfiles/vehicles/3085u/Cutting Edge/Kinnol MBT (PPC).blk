@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,20 +15,15 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-#Write the version number just in case...
-<Version>
-MAM0
-</Version>
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 Tank
 </UnitType>
+
 <Name>
 Kinnol MBT
 </Name>
+
 <Model>
 (PPC)
 </Model>
@@ -36,38 +31,15 @@ Kinnol MBT
 <mul id:>
 1788
 </mul id:>
-<Tonnage>
-70
-</Tonnage>
-<cruiseMP>
-5
-</cruiseMP>
-<Armor>
-65
-40
-40
-30
-40
-</Armor>
-<Turret Equipment>
-ISPPC
-ISMediumLaser
-ISMachine Gun
-</Turret Equipment>
-<Front Equipment>
-ISMML5
-ISMML5
-ISMachine Gun
-ISMachine Gun
-</Front Equipment>
-<Body Equipment>
-ISMML5 LRM Ammo
-ISMML5 LRM Ammo
-ISMML5 SRM Ammo
-ISMG Ammo (200)
-ISCASE
-ISC3SlaveUnit
-</Body Equipment>
+
+<year>
+3086
+</year>
+
+<originalBuildYear>
+3086
+</originalBuildYear>
+
 <type>
 IS Level 2
 </type>
@@ -75,21 +47,75 @@ IS Level 2
 <role>
 Skirmisher
 </role>
-<year>
-3086
-</year>
-<internal_type>
-0
-</internal_type>
-<armor_type>
-1
-</armor_type>
-<engine_type>
-2
-</engine_type>
+
 <motion_type>
 Tracked
 </motion_type>
+
+<cruiseMP>
+5
+</cruiseMP>
+
+<engine_type>
+2
+</engine_type>
+
+<armor_type>
+1
+</armor_type>
+
+<armor_tech_rating>
+0
+</armor_tech_rating>
+
+<armor_tech_level>
+1
+</armor_tech_level>
+
+<armor>
+65
+40
+40
+30
+40
+</armor>
+
+<Body Equipment>
+IS Ammo MML-5 LRM
+IS Ammo MML-5 LRM
+IS Ammo MML-5 SRM
+IS Ammo MG - Full
+ISCASE
+ISC3SlaveUnit
+</Body Equipment>
+
+<Front Equipment>
+ISMML5
+ISMML5
+Machine Gun
+Machine Gun
+</Front Equipment>
+
+<Right Equipment>
+</Right Equipment>
+
+<Left Equipment>
+</Left Equipment>
+
+<Rear Equipment>
+</Rear Equipment>
+
+<Turret Equipment>
+PPC
+Medium Laser
+Machine Gun
+</Turret Equipment>
+
 <source>
 TR:3085
 </source>
+
+<tonnage>
+70.0
+</tonnage>
+

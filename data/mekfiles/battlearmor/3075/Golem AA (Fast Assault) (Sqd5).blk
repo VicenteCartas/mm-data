@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,16 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-
-# Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 BattleArmor
 </UnitType>
@@ -44,6 +35,10 @@ Golem Assault Armor
 <year>
 3072
 </year>
+
+<originalBuildYear>
+3072
+</originalBuildYear>
 
 <type>
 Clan Level 2
@@ -72,12 +67,65 @@ Jump
 <Point Equipment>
 CLBAMG:RA
 CLBASRM5OS:Body
-CLBAJumpBooster:Body
+BAJumpBooster:Body
 BABasicManipulator:LA
 BABasicManipulator:RA
 BAAPMount:LA
-InfantryAssaultRifle:LA:APM
+InfantryAssaultRifle:APM:LA
 </Point Equipment>
+
+<Trooper 1 Equipment>
+</Trooper 1 Equipment>
+
+<Trooper 2 Equipment>
+</Trooper 2 Equipment>
+
+<Trooper 3 Equipment>
+</Trooper 3 Equipment>
+
+<Trooper 4 Equipment>
+</Trooper 4 Equipment>
+
+<Trooper 5 Equipment>
+</Trooper 5 Equipment>
+
+<slotless_equipment>
+BAJumpJet
+BA-SRM5 Ammo:Shots1#
+</slotless_equipment>
+
+<capabilities>
+In addition, this armor is fire resistant, so it is unaffected by Flamers and Inferno rounds. Though it cannot jump, the Golem is still speedier than the other assault-class designs. While that does not make this battlesuit fast, it does give it the ability to bring its strong weapons to bear on a target, even as it can withstand the punishment meted out by an enemy.
+</capabilities>
+
+<overview>
+The Golem is a battle armor design that was created by Clan Ghost Bear.
+</overview>
+
+<deployment>
+This Horses variant goes in the opposite direction of the Rock Golem. It replaces the armor with standard battlesuit armor and retains the downgraded SRM launcher of the earlier variant, though it has the same protection. It reduces the ground speed to 10 km/h, but includes jump packs and a Jump Booster that enable it to jump ninety meters. This necessitated downgrading the weapon systems to a single Machine Gun and an Anti-Personnel Weapon Mount.
+</deployment>
+
+<history>
+Following their conflicts with first the Draconis Combine, then Clan Hell's Horses, the Bears decided they wanted something that could compete with the Kanazuchi and Gnome. The Golem is the result of that process and features enough armor to shrug off a Heavy Large Laser.
+</history>
+
+<manufacturer>
+Csesztreg Industriplex Gamma,Transitional Facility A-4
+</manufacturer>
+
+<primaryFactory>
+Csesztreg,Nouveaux Paris
+</primaryFactory>
+
+<systemManufacturers>
+CHASSIS:Unknown
+ENGINE:Unknown
+ARMOR:Unknown
+JUMP_JET:Unknown
+COMMUNICATIONS:Unknown
+TARGETING:Unknown
+</systemManufacturers>
 
 <source>
 TR:3075
@@ -103,39 +151,3 @@ biped
 4
 </weightclass>
 
-<overview>
-The Golem is a battle armor design that was created by Clan Ghost Bear.
-</overview>
-
-<capabilities>
-In addition, this armor is fire resistant, so it is unaffected by Flamers and Inferno rounds. Though it cannot jump, the Golem is still speedier than the other assault-class designs. While that does not make this battlesuit fast, it does give it the ability to bring its strong weapons to bear on a target, even as it can withstand the punishment meted out by an enemy.
-</capabilities>
-
-<deployment>
-This Horses variant goes in the opposite direction of the Rock Golem. It replaces the armor with standard battlesuit armor and retains the downgraded SRM launcher of the earlier variant, though it has the same protection. It reduces the ground speed to 10 km/h, but includes jump packs and a Jump Booster that enable it to jump ninety meters. This necessitated downgrading the weapon systems to a single Machine Gun and an Anti-Personnel Weapon Mount.
-</deployment>
-
-<history>
-Following their conflicts with first the Draconis Combine, then Clan Hell's Horses, the Bears decided they wanted something that could compete with the Kanazuchi and Gnome. The Golem is the result of that process and features enough armor to shrug off a Heavy Large Laser.
-</history>
-
-
-<manufacturer>
-Csesztreg Industriplex Gamma,Transitional Facility A-4
-</manufacturer>
-
-<primaryFactory>
-Csesztreg,Nouveaux Paris
-</primaryFactory>
-
-<systemManufacturers>
-CHASSIS:Unknown
-ENGINE:Unknown
-ARMOR:Unknown
-JUMPJET:Unknown
-COMMUNICATIONS:Unknown
-TARGETING:Unknown
-</systemManufacturers>
-
-<notes>
-</notes>

@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,20 +15,15 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-#Write the version number just in case...
-<Version>
-MAM0
-</Version>
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 Infantry
 </UnitType>
+
 <Name>
 Space Marine
 </Name>
+
 <Model>
 Com Guards Warship Fleet Marine
 </Model>
@@ -36,24 +31,15 @@ Com Guards Warship Fleet Marine
 <mul id:>
 2985
 </mul id:>
-<squad_size>
-6
-</squad_size>
-<squadn>
-4
-</squadn>
-<Primary>
-InfantrySunbeamLaserpistol
-</Primary>
-<Secondary>
-InfantryBlazerRifle
-</Secondary>
-<secondn>
-1
-</secondn>
-<armorKit>
-ISEnvironmentSuitMarine
-</armorKit>
+
+<year>
+2900
+</year>
+
+<originalBuildYear>
+2900
+</originalBuildYear>
+
 <type>
 IS Level 3
 </type>
@@ -61,12 +47,39 @@ IS Level 3
 <role>
 Ambusher
 </role>
-<year>
-2900
-</year>
-<era>
-TRO: 3085
-</era>
+
 <motion_type>
 Leg
 </motion_type>
+
+<Troopers Equipment>
+Environment Suit, Marine
+</Troopers Equipment>
+
+<Field Guns Equipment>
+</Field Guns Equipment>
+
+<squad_size>
+6
+</squad_size>
+
+<squadn>
+4
+</squadn>
+
+<secondn>
+1
+</secondn>
+
+<Primary>
+Laser Pistol (Sunbeam)
+</Primary>
+
+<Secondary>
+Laser Rifle (Blazer)
+</Secondary>
+
+<spacesuit>
+true
+</spacesuit>
+

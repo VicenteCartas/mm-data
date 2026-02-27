@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,16 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-
-# Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 SupportVTOL
 </UnitType>
@@ -33,9 +24,9 @@ SupportVTOL
 Peacekeeper SWAT Carrier
 </Name>
 
-<model>
+<Model>
 
-</model>
+</Model>
 
 <mul id:>
 4796
@@ -44,6 +35,10 @@ Peacekeeper SWAT Carrier
 <year>
 3021
 </year>
+
+<originalBuildYear>
+3021
+</originalBuildYear>
 
 <type>
 IS Level 2
@@ -59,7 +54,7 @@ VTOL
 
 <transporters>
 troopspace:4.0
-cargobay:2:1
+cargobay:2.0:1:1::-1:0
 </transporters>
 
 <cruiseMP>
@@ -70,6 +65,18 @@ cargobay:2:1
 0
 </engine_type>
 
+<armor_type>
+51
+</armor_type>
+
+<armor_tech_rating>
+3
+</armor_tech_rating>
+
+<armor_tech_level>
+1
+</armor_tech_level>
+
 <armor>
 18
 13
@@ -77,14 +84,6 @@ cargobay:2:1
 8
 2
 </armor>
-
-<barrating>
-10
-</barrating>
-
-<structural_tech_rating>
-3
-</structural_tech_rating>
 
 <Body Equipment>
 Advanced Fire Control
@@ -113,6 +112,18 @@ Searchlight
 <Rotor Equipment>
 </Rotor Equipment>
 
+<barrating>
+10
+</barrating>
+
+<structural_tech_rating>
+3
+</structural_tech_rating>
+
+<engine_tech_rating>
+3
+</engine_tech_rating>
+
 <source>
 TR:VAr
 </source>
@@ -120,3 +131,8 @@ TR:VAr
 <tonnage>
 50.0
 </tonnage>
+
+<fuel>
+0.0
+</fuel>
+

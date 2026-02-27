@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,16 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-
-# Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 Warship
 </UnitType>
@@ -62,14 +53,14 @@ Aerodyne
 </motion_type>
 
 <transporters>
-smallcraftbay:2.0:2:1
-smallcraftbay:2.0:2:2
-battlearmorbay:5.0:0:3
+smallcraftbay:2.0:2:1::-1:0
+smallcraftbay:2.0:2:2::-1:0
+battlearmorbay:5.0:0:3::-1:2
 dockingcollar
 dockingcollar
-1stclassquarters:210.0:0
-crewquarters:735.0:0
-cargobay:98680.0:7:6
+1stclassquarters:210.0:0:-1::-1:0
+crewquarters:735.0:0:-1::-1:0
+cargobay:98680.0:7:8::-1:0
 </transporters>
 
 <SafeThrust>
@@ -92,13 +83,21 @@ cargobay:98680.0:7:6
 1
 </engine_type>
 
+<clan_engine>
+false
+</clan_engine>
+
 <armor_type>
 41
 </armor_type>
 
-<armor_tech>
+<armor_tech_rating>
+0
+</armor_tech_rating>
+
+<armor_tech_level>
 6
-</armor_tech>
+</armor_tech_level>
 
 <armor>
 6
@@ -228,6 +227,39 @@ CLArtemisIV
 15
 </structural_integrity>
 
+# Fluff Date: 2026-02-24 13:31:06
+<capabilities>
+Due to its role as a military transport, the Carrack features a light array of mixed capital class and anti-fighter weaponry. The nose bay and each broadside featured a pair of NL35s and a single NAC/20, two ER large lasers and four Large pulse lasers, rounded off by four anti-missile systems for point defense. Save for downgrading the Naval Autocannon to a NAC/10, each fore and rear angle as well as directly aft features almost the same layout as well. The Carrack's 63,446 ton cargo hold surrounds the vessel's Compact Kearny-Fuchida Drive core and is flanked in turn by two Small Craft bays on either side. These bays frequently house a pair of aerospace fighters and a pair of shuttlecraft, however the exact composition of the small craft complement appears to depend on each individual vessel's captain.
+</capabilities>
+
+<overview>
+Developed as a merchantman to ply potentially hostile Periphery shipping lanes, the Carrack-class military transport served with the Star League Defense Force and Great House navies.
+</overview>
+
+<deployment>
+A joint venture between Clans Nova Cat and Clan Diamond Shark that reduces the Carrack's offensive and defensive capacity to become true merchant vessels, the so-called Merchant Carrack removes all the Naval Lasers and Autocannons for a lighter defensive array of one ER Large and two ER Medium Lasers, one Large and two Medium Pulse Lasers and an Artemis IV-enhanced LRM-20 rack on every facing, the front and rear merely adding an additional Artemis-enhanced SRM-6 launcher. Carrying almost half the volume of standard heat sinks the Merchant Carrack carrying a minimal fifteen and a half tons of standard armor, freeing up a massive amount of space for cargo, 98,806 tons worth, nearly a third over that of the standard Carrack transport. The Merchant Carrack also carries a full Star of Elementals to help fend off boarding attempts.
+</deployment>
+
+<history>
+While no examples of the class were known to remain in the Inner Sphere following the maelstrom of the early Succession War era, an undetermined number accompanied the Exodus Fleet, with the modern Clan Carrack military transport first entering service in 2950. ComStar analysts were unable to determine how many of the Carracks which are currently in service among the various Clan toumans are upgraded Star League era vessels and how many are new, Clan-built ships. What ComStar was able to conclude following operations on Wayside V was that the differences between the original Star League and standard Clan Carrack were negligible; while mounting HarJel-based Hull Sealant technology, unlike many redesigned and upgraded Clan vessels the modern Carrack is not equipped with either advanced armor or a Lithium-Fusion Battery.
+</history>
+
+<manufacturer>
+Refit
+</manufacturer>
+
+<primaryFactory>
+Unknown
+</primaryFactory>
+
+<systemManufacturers>
+CHASSIS:Unknown
+ENGINE:Unknown
+ARMOR:Unknown
+COMMUNICATIONS:Unknown
+TARGETING:Unknown
+</systemManufacturers>
+
 <source>
 TR:3057r
 </source>
@@ -247,6 +279,10 @@ TR:3057r
 <grav_decks>
 98
 </grav_decks>
+
+<designtype>
+1
+</designtype>
 
 <crew>
 176
@@ -279,47 +315,4 @@ TR:3057r
 <escape_pod>
 10
 </escape_pod>
-
-# Fluff Date: 2026-02-24 13:31:06
-<overview>
-<p>The Carrack stands as one of the most enduring transport warship designs in interstellar history, spanning from the Star League era through the Clan Invasion and beyond. Originally conceived as an armed merchantman capable of operating independently along potentially hostile Periphery shipping lanes, the class combined substantial cargo capacity with sufficient armament to discourage all but the most determined raiders. The design's practical balance of military capability and commercial utility ensured its survival across centuries of warfare and political upheaval, as the Carrack proved equally adaptable to the logistics requirements of the Star League Defense Force, the Great House navies that inherited its remnants, and the Clan toumans that eventually adopted and refined the platform for their own purposes.</p><p>The Carrack's versatility has manifested in multiple configurations, from dedicated military transports mounting naval weaponry and layered point-defense systems to stripped-down merchant variants optimized for maximum cargo throughput, ensuring that some iteration of the design serves virtually every major faction in the modern era.</p>
-</overview>
-
-<capabilities>
-<p>The Clan military transport version mounts a mixed battery of capital-class and anti-fighter weaponry distributed across all firing arcs. Naval autocannons in both heavy and medium calibers provide the primary ship-to-ship armament, while banks of naval lasers supplement the broadside firepower. An extensive array of anti-missile systems, paired with multiple large pulse lasers and extended-range lasers, creates a layered point-defense network that gives the Carrack considerable resilience against fighter and missile attacks despite its transport classification. The hull incorporates HarJel-based hull sealant technology for improved damage control, and a mobile HPG installation provides the vessel with independent interstellar communications capability, a valuable asset for convoys operating far from established networks.</p><p>The compact Kearny-Fuchida drive and two docking collars support convoy operations, while a single ninety-eight-meter gravity deck provides crew comfort during extended deployments. Standard armor protection is modest for a vessel of this displacement, reflecting the design's emphasis on cargo capacity over combat survivability. The merchant variant dramatically reduces the Carrack's military capability, replacing all naval weapons with standard-scale defensive armament and reducing armor to minimal levels, but increases cargo capacity by nearly a third, making it one of the most capacious armed transports in Clan service. A Star of Marine Elementals provides anti-boarding defense for the merchant version.</p>
-</capabilities>
-
-<deployment>
-<p>The merchant variant emerged in 2985 from a joint venture between Clans Diamond Shark and Nova Cat, both of which recognized the need to provide their merchant castes with capable transport vessels that would not place capital warship-grade weaponry in non-warrior hands. The conversion removed all naval armament in favor of standard-scale defensive weapons and drastically reduced armor protection, freeing substantial tonnage for an expanded cargo hold. Diamond Shark subsequently sold surplus merchant Carracks to Clans Jade Falcon and Ghost Bear, generating venture capital for other enterprises. In an unusual transaction, the Nova Cats traded three cargo-laden merchant Carracks to the Star Adders in 2990 in exchange for three Lola III-class destroyers, demonstrating the considerable commercial value these vessels represented even in the austere Clan economy. The merchant Carracks typically operate in escorted convoys when traversing unsecured regions.</p>
-</deployment>
-
-<history>
-<p>The Carrack program originated in the early twenty-seventh century as the Terran Hegemony sought to develop an armed transport capable of operating independently along potentially dangerous Periphery shipping lanes. Inspired by the impressive but prohibitively expensive Sylvester-class merchant warship, the Hegemony commissioned a more economical design that would balance defensive capability with cargo capacity. Mitchell Vehicles of Graham IV won the production contract and delivered a vessel that proved well-suited to its intended role as a military supply carrier and armed escort for convoys venturing beyond the established security perimeter of the Inner Sphere.</p><p>The class served reliably throughout the Star League era with both the SLDF and the Great House navies. During the First Succession War, the desperate need for fighter carriers led the Free Worlds League to convert several Carracks into improvised aerospace platforms, demonstrating the hull's inherent adaptability. The devastation of the early Succession Wars eliminated most surviving examples from Inner Sphere service, though an undetermined number accompanied General Kerensky's Exodus fleet, preserving the design beyond the borders of the collapsing Star League.</p><p>Around 2950, Clans Nova Cat and Diamond Shark jointly developed a modernized military transport variant based on the original hull. ComStar analysts noted that the differences between the Star League and Clan versions were negligible in overall layout, though the Clan variant incorporated modern systems including HarJel hull sealant and a mobile HPG. Notably, the Clan Carrack lacked the lithium-fusion batteries and advanced armor that characterized many Clan warship upgrades, reflecting its transport role rather than any combat ambition. The military Carrack found widespread adoption across the Clan toumans, serving in the fleets of nearly every Clan for ground force transport, supply operations, and deep-space commerce.</p><p>In 2985, Diamond Shark and Nova Cat collaborated on a merchant variant designed specifically for their lower castes. This conversion stripped all naval armament and reduced armor to maximize cargo capacity, providing the merchant castes with capable transport vessels while respecting the Clan political constraint against arming non-warriors with capital-grade weaponry. Diamond Shark sold surplus examples to allied Clans, while the Nova Cats traded loaded merchant Carracks for Lola III destroyers in a transaction that underscored the vessels' commercial value.</p><p>The Carrack's continued service across centuries and multiple political entities stands as a testament to the soundness of its original design concept: a practical, adaptable transport warship that could be modified to meet changing requirements without fundamental redesign. The class remains in active service well into the thirty-second century, with variants operating under Clan, ComStar, and successor state flags.</p>
-</history>
-
-<manufacturer>
-Field Refit
-</manufacturer>
-
-<primaryFactory>
-Various
-</primaryFactory>
-
-<systemManufacturers>
-CHASSIS:Unknown
-ENGINE:Unknown
-ARMOR:Unknown
-JUMP_JET:Unknown
-COMMUNICATIONS:Unknown
-TARGETING:Unknown
-</systemManufacturers>
-
-<systemModels>
-CHASSIS:Unknown
-ENGINE:Unknown
-ARMOR:Unknown
-JUMP_JET:Unknown
-COMMUNICATIONS:Unknown
-TARGETING:Unknown
-</systemModels>
 

@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,16 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-
-##Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 Warship
 </UnitType>
@@ -62,14 +53,14 @@ Aerodyne
 </motion_type>
 
 <transporters>
-smallcraftbay:12.0:2:1
-smallcraftbay:12.0:2:2
-cargobay:132316.5:4:3
-cargobay:40000.0:2:4
-crewquarters:4312.0:0
-1stclassquarters:1660.0:0
-2ndclassquarters:350.0:0
-steeragequarters:1350.0:0
+smallcraftbay:12.0:2:1::-1:0
+smallcraftbay:12.0:2:2::-1:0
+cargobay:132316.5:4:3::-1:0
+cargobay:40000.0:2:4::-1:0
+crewquarters:4312.0:0:-1::-1:0
+1stclassquarters:1660.0:0:-1::-1:0
+2ndclassquarters:350.0:0:-1::-1:0
+steeragequarters:1350.0:0:-1::-1:0
 </transporters>
 
 <SafeThrust>
@@ -96,9 +87,13 @@ steeragequarters:1350.0:0
 41
 </armor_type>
 
-<armor_tech>
+<armor_tech_rating>
+0
+</armor_tech_rating>
+
+<armor_tech_level>
 5
-</armor_tech>
+</armor_tech_level>
 
 <armor>
 85
@@ -352,11 +347,34 @@ IS Ammo AC/2:90
 60
 </structural_integrity>
 
+# Fluff Date: 2026-02-24 13:31:06
+<capabilities>
+Designed to operate independently, the Dreadnought-class ships were equipped with a vast array of naval autocannons, both naval-grade and fighter-scale. These vessels had the ability to repulse fighter assaults and carried their own complement of fighters or small craft. With a cargo capacity of over 100,000 tons, the Dreadnought required frequent resupply due to its heavy-bore cannon consuming ammunition at a significant rate.
+</capabilities>
 
+<overview>
+The TAS Dreadnought, launched in 2300, was the first true combat vessel and the lead ship of its class. It played a crucial role in establishing the Terran Hegemony under the leadership of James McKenna. While initially perceived as mere playthings, the Dreadnought-class ships proved their worth through firepower demonstrations. Several ships of the class served the Hegemony Navy and were later surpassed by newer designs, eventually being retired and preserved as museum exhibits.
+</overview>
 
+<history>
+The Dreadnought class played a significant role in the Reunification War, performing admirably in the campaign. However, it marked the last major engagement for the class. By 2602, the Dreadnoughts were formally retired, with the remaining vessels either scrapped or gifted to Inner Sphere museums. The SLS Dreadnought, the last operational ship of the class, met its end during the Amaris Coup while escorting refugee vessels out of the occupied Hegemony before being scuttled due to catastrophic damage.
+</history>
 
+<manufacturer>
+Krester Ship Construction
+</manufacturer>
 
+<primaryFactory>
+Terra
+</primaryFactory>
 
+<systemManufacturers>
+CHASSIS:Unknown
+ENGINE:Unknown
+ARMOR:Unknown
+COMMUNICATIONS:Unknown
+TARGETING:Unknown
+</systemManufacturers>
 
 <use>
 Battleship
@@ -426,47 +444,4 @@ His:RW
 <escape_pod>
 60
 </escape_pod>
-
-# Fluff Date: 2026-02-24 13:31:06
-<overview>
-<p>The Dreadnought-class battleship stands as humanity's first true combat WarShip, a seven-vessel class launched beginning in 2300 under the direct command of Admiral James McKenna of the Terran Alliance Navy. These massive nine-hundred-meter vessels served as the very foundation upon which the Terran Hegemony was built, their devastating orbital firepower demonstrations convincing the fractured and increasingly lawless remnants of the Terran Alliance to accept McKenna's strong leadership and ushering in an entirely new era of interstellar governance. Built by Krester Ship Construction on Terra, the Dreadnought-class would go on to serve for over four and a half centuries in various capacities, from frontline battleship to reserve vessel to orbiting museum exhibit, establishing a legacy unmatched by any other WarShip class in the whole of human history.</p>
-</overview>
-
-<capabilities>
-<p>Designed to operate independently across vast interstellar distances in an era when naval doctrine was still being written, the Dreadnought mounted an exclusively autocannon-based armament of staggering proportions. Twenty-four NAC/20s provided the ship's devastating primary striking power, concentrated in the nose, broadside, and aft arcs to ensure comprehensive capital-grade coverage from virtually all angles of engagement. Sixteen NAC/10s supplemented these heavy weapons in the fore and aft quarter positions, while sixty-four conventional AC/5s and sixty-four AC/2s provided a layered anti-fighter defensive screen that few contemporary designs could hope to match. This extensive secondary battery of conventional autocannons proved particularly valuable when the class was pressed back into active service for the Reunification War centuries later, as newer warship designs had largely abandoned fighter-scale weapons entirely in favor of dedicated escort vessels and aerospace fighter screens. The Dreadnought's proven ability to repulse massed fighter assaults independently, combined with hangar capacity for twenty-four small craft of its own, made the aged but resilient design surprisingly relevant in a conflict fought centuries after its original introduction into service.</p>
-</capabilities>
-
-<deployment>
-<p>The TAS Dreadnought itself remains the most storied vessel of the class, having served as James McKenna's personal flagship during the founding of the Terran Hegemony. On 2 June 2315, the Dreadnought bombarded Strand Rock in Scotland and an Australian island from orbit, ending the Terran civil war in a single devastating demonstration of spaceborne firepower. The vessel went on to earn more battle stars and kill awards than any other WarShip in the Hegemony Armed Forces across centuries of service, surviving numerous engagements including a near-catastrophic fire caused by a Draconis Combine kamikaze aerospace fighter near Cylene. Eventually converted to a museum ship at the Luna Air, Space and Stars Museum while still maintaining near-combat readiness with a full crew, the ancient battleship was pressed into service one final time during the Amaris Coup. Under Rear Admiral Martin Castillo, the Dreadnought escorted thirty JumpShips and over sixty DropShips carrying thousands of civilian refugees through hostile space before being ambushed by a Republican squadron at Wyatt. After thirty minutes of combat left her engines and jump drive crippled, Admiral Castillo ordered the grand old queen scuttled rather than allow her capture.</p>
-</deployment>
-
-<history>
-<p>Launched in 2300, the TAS Dreadnought was the lead vessel of a seven-ship class that fundamentally changed the nature of interstellar warfare. Admiral James McKenna used these battleships as the military foundation for his overthrow of the corrupt Terran Alliance and the subsequent establishment of the Terran Hegemony. Several vessels of the class were bloodied in the early conflicts that birthed the Hegemony, though none were destroyed in combat, with the most serious damage coming from navigation accidents rather than enemy action during those formative years.</p><p>Two Dreadnoughts were lost during the tumultuous Age of War, and a third was scrapped after a series of engineering mishaps, leaving four ships with the Hegemony Navy when the Star League was formed. By that time the venerable design had been thoroughly superseded by the Monsoon and Farragut classes, and the surviving vessels were relegated to reserve status. The TAS Dreadnought herself became a floating exhibit at the Luna Air, Space and Stars Museum, though she maintained a full SLDF crew and near-operational readiness throughout her museum career.</p><p>When the Reunification War transformed from political nightmare into military reality, even these last three functional battlewagons were pressed back into active service. Though nearing their third century and vastly outclassed by newer warship designs, the Dreadnoughts performed admirably in the campaign. Their massive batteries of conventional autocannons proved unexpectedly valuable as anti-fighter platforms, a capability that newer vessels had largely abandoned. The class was formally and permanently retired in 2602 following the war, with the remaining vessels either scrapped or gifted to various Inner Sphere museums. Only the SLS Dreadnought remained in operational condition, ultimately meeting her end during the chaos of the Amaris Coup in a final blaze of glory that befitted the grandest and most storied warship lineage in all of human history.</p>
-</history>
-
-<manufacturer>
-Krester Ship Construction
-</manufacturer>
-
-<primaryFactory>
-Terra
-</primaryFactory>
-
-<systemManufacturers>
-CHASSIS:Unknown
-ENGINE:Unknown
-ARMOR:Unknown
-JUMP_JET:Unknown
-COMMUNICATIONS:Unknown
-TARGETING:Unknown
-</systemManufacturers>
-
-<systemModels>
-CHASSIS:Unknown
-ENGINE:Unknown
-ARMOR:Standard
-JUMP_JET:Unknown
-COMMUNICATIONS:Unknown
-TARGETING:Unknown
-</systemModels>
 

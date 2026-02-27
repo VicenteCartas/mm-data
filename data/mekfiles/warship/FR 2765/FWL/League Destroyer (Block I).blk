@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,16 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-
-##Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 Warship
 </UnitType>
@@ -62,13 +53,13 @@ Aerodyne
 </motion_type>
 
 <transporters>
-asfbay:12.0:3:1
-smallcraftbay:6.0:1:2
-dropshuttlebay:2.0:1:4:f4
-dropshuttlebay:2.0:1:5:f5
-1stclassquarters:400.0:0
-crewquarters:1344.0:0
-cargobay:108805.5:1:7
+asfbay:12.0:3:1::-1:0
+smallcraftbay:6.0:1:2::-1:0
+dropshuttlebay:2.0:1:4::4:0
+dropshuttlebay:2.0:1:5::5:0
+1stclassquarters:400.0:0:-1::-1:0
+crewquarters:1344.0:0:-1::-1:0
+cargobay:108805.5:1:7::-1:0
 </transporters>
 
 <SafeThrust>
@@ -95,9 +86,13 @@ cargobay:108805.5:1:7
 41
 </armor_type>
 
-<armor_tech>
+<armor_tech_rating>
+0
+</armor_tech_rating>
+
+<armor_tech_level>
 5
-</armor_tech>
+</armor_tech_level>
 
 <armor>
 35
@@ -230,11 +225,34 @@ Small Laser
 48
 </structural_integrity>
 
+# Fluff Date: 2026-02-24 16:30:43
+<capabilities>
+League destroyers were designed to engage a range of opponents and carried a mix of capital autocannons, lighter cannons, naval lasers, and conventional lasers. They also had hangars to accommodate a wing of fighters and shuttles, enhancing their versatility. These ships were well-suited for antipiracy duties and providing escort support to larger battleships like the Atreus. In the twenty-eighth century, the League-class saw a resurgence as decommissioned vessels were reactivated and upgraded to meet modern standards. The Block II Leagues featured improved armor composites and replaced their autocannon bays with naval Gauss rifles, showcasing technological advancements.
+</capabilities>
 
+<overview>
+The League-class destroyers of the Free Worlds League became the backbone of their fleet during the Age of War. Despite being constructed from components sourced across League space, these ships proved rugged and reliable. Equipped with capital autocannons as their primary firepower, complemented by lighter cannons, naval lasers, and conventional lasers, the League destroyers were versatile combatants suitable for various missions, including antipiracy patrols and escorting battleships. However, age and combat eventually led to the decommissioning or capture of many League-class ships.
+</overview>
 
+<history>
+The League-class destroyers initially served as the mainstay of the Free Worlds League fleet, constructed through distributed assembly at various locations within League space and final assembly at the SelaSys yards at Loyalty. Over time, decommissioning and piracy depleted the League-class ships, with FWLS Palatine being the last active-duty vessel destroyed in combat. In the twenty-eighth century, the League-class experienced a revival as restrictions on House fleets were eased, leading to the reactivation and upgrading of decommissioned ships. The final Block II Leagues suffered from energy shortages due to the power demands of the naval Gauss rifles and maintenance challenges.
+</history>
 
+<manufacturer>
+SelaSys Inc.
+</manufacturer>
 
+<primaryFactory>
+Loyalty
+</primaryFactory>
 
+<systemManufacturers>
+CHASSIS:Unknown
+ENGINE:Unknown
+ARMOR:Unknown
+COMMUNICATIONS:Unknown
+TARGETING:Unknown
+</systemManufacturers>
 
 <use>
 Destroyer
@@ -303,47 +321,4 @@ FR:2765-FWLM
 <escape_pod>
 12
 </escape_pod>
-
-# Fluff Date: 2026-02-24 16:30:43
-<overview>
-<p>The League-class destroyer was the first warship designed and constructed domestically by the Free Worlds League, entering service during the Age of War and becoming the backbone of the League's early naval forces. Components were sourced from manufacturing sites across League space, with final assembly conducted at the SelaSys yards in the Loyalty system, a distributed production model that proved surprisingly effective at producing rugged and reliable vessels. The class served for centuries in a variety of roles including antipiracy patrols, convoy escort, and support for larger battleships, demonstrating remarkable versatility for a design of its era. After years of attrition through combat and decommissioning had thinned their ranks, a number of surviving hulls were reactivated and upgraded in the twenty-eighth century when restrictions on House fleets were eased, giving the venerable design a second life as the modernized Block II configuration with significantly improved technology.</p>
-</overview>
-
-<capabilities>
-<p>At 550,000 tons, the League-class was a substantial destroyer mounting a diverse mix of capital weapons and conventional armament. The original Block I configuration centered its firepower on naval autocannons, with paired NAC/20s in the nose and aft arcs, NAC/10s in each quarter arc, and a single NAC/40 in each broadside bay providing devastating close-range firepower. Naval lasers in the quarter arcs, a mix of NL45s and NL35s, supplemented the autocannons at longer ranges. Conventional large lasers and small lasers in every arc provided anti-fighter defense. The vessel carried twelve aerospace fighters, six small craft, and two DropShuttles for ground operations. The Block II upgrade replaced all naval autocannons with naval gauss rifles, trading the medium and heavy NAC batteries for medium and heavy naval gauss weapons while substituting light naval gauss in the quarter arcs. The Block II also upgraded from primitive armor to improved ferro-aluminum, replaced single heat sinks with doubles, swapped the DropShuttle bays for two standard docking collars, and added a complement of fifty-six marines. Both variants sustained three thrust points safely with a maximum of five, and carried a crew of approximately two hundred and eighty personnel, with a single seventy-five meter grav deck providing crew comfort.</p>
-</capabilities>
-
-<deployment>
-<p>The FWLS Albert Marik was among the most historically significant vessels of the class, serving as the personal flagship of General Marion Marik during the Reunification War of 2578, where she used it to negotiate the readmission of Periphery worlds to the Free Worlds League. The vessel was destroyed in the Calloway system in 2763 during an engagement between the Free Worlds League Second Fleet and the Star League Defense Force Seventh Fleet, an incident that remained a source of controversy between the two powers. The FWLS Palatine was the last Block I League on active duty, destroyed in combat with a McKenna-class battleship during a raid into Capellan Confederation space. Additional Block I vessels included the FWLS Andria, FWLS Avellino, FWLS Ocuri, FWLS Ospina, and FWLS Otavalo, all of which served during the Age of War and early Star League eras.</p>
-</deployment>
-
-<history>
-<p>The League-class entered service in 2368 as the Free Worlds League's first domestically designed warship, filling a critical gap in the young nation's naval capabilities. The Star League Defense Force initially ordered a dozen hulls, and SelaSys Inc. at Loyalty handled final assembly using components manufactured across League space. The vessels quickly proved their worth in antipiracy operations and as escorts for the larger Atreus-class battleships, becoming a familiar sight throughout League territory for centuries. One notable vessel, the FWLS Albert Marik, served as the personal flagship of General Marion Marik during the Reunification War in 2578, before being destroyed in a controversial engagement with the SLDF Seventh Fleet in the Calloway system in 2763.</p><p>By the mid-twenty-eighth century, attrition through combat and decommissioning had significantly reduced the active fleet. The FWLS Palatine held the distinction of being the last Block I vessel on active duty before it was destroyed by a McKenna-class battleship during a raid into Capellan Confederation territory. When restrictions on House fleets were eased, the Free Worlds League reactivated decommissioned hulls and upgraded them to the Block II standard beginning in 2768, replacing the aging naval autocannon batteries with modern naval gauss rifles and improving the armor protection. However, the Block II vessels suffered from chronic energy shortages caused by the enormous power demands of the naval gauss weapons, and maintenance proved challenging for the aging hulls.</p><p>The First Succession War brought the upgraded League-class back into frontline combat. In March 2785, three League-class destroyers defended Bolan against a major Lyran Commonwealth invasion, fighting alongside the cruiser FWLS Manaslu. Despite inflicting significant damage on the Lyran naval forces and destroying multiple Mako-class corvettes, all three destroyers were lost covering the retreat of defending ground forces. The class continued to see service through the early Succession Wars, with vessels fighting on the Capellan front at Second Chance and Corey in 2787 and conducting a punitive strike on New Canton in 2788, until attrition finally ended the line.</p>
-</history>
-
-<manufacturer>
-SelaSys Inc.
-</manufacturer>
-
-<primaryFactory>
-Loyalty
-</primaryFactory>
-
-<systemManufacturers>
-CHASSIS:SelaSys Inc.
-ENGINE:Unknown
-ARMOR:Unknown
-JUMP_JET:Unknown
-COMMUNICATIONS:Unknown
-TARGETING:Unknown
-</systemManufacturers>
-
-<systemModels>
-CHASSIS:Unknown
-ENGINE:Unknown
-ARMOR:Unknown
-JUMP_JET:Unknown
-COMMUNICATIONS:Unknown
-TARGETING:Unknown
-</systemModels>
 

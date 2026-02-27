@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,16 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-
-# Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 LargeSupportTank
 </UnitType>
@@ -44,6 +35,10 @@ Brunel Dump Truck
 <year>
 2801
 </year>
+
+<originalBuildYear>
+2801
+</originalBuildYear>
 
 <type>
 IS Level 3
@@ -65,25 +60,17 @@ Wheeled
 1
 </engine_type>
 
-<fuel>
-4
-</fuel>
-
 <armor_type>
 0
 </armor_type>
 
-<barrating>
-6
-</barrating>
-
-<structural_tech_rating>
-3
-</structural_tech_rating>
-
 <armor_tech_rating>
 2
 </armor_tech_rating>
+
+<armor_tech_level>
+1
+</armor_tech_level>
 
 <armor>
 21
@@ -98,16 +85,16 @@ Wheeled
 Basic Fire Control
 ISOffRoadChassis
 IS Ammo MG - Full
-ISLRM20 Ammo
-ISLRM20 Ammo
-ISLRM20 Ammo
-ISLRM20 Ammo
-ISLRM20 Ammo
+IS Ammo LRM-20
+IS Ammo LRM-20
+IS Ammo LRM-20
+IS Ammo LRM-20
+IS Ammo LRM-20
 </Body Equipment>
 
 <Front Equipment>
-ISMachine Gun
-ISMachine Gun
+Machine Gun
+Machine Gun
 </Front Equipment>
 
 <Front Right Equipment>
@@ -123,21 +110,37 @@ ISMachine Gun
 </Rear Left Equipment>
 
 <Rear Equipment>
-
-ISLRM20
-ISLRM20
-ISLRM20
-ISLRM20
+LRM 20
+LRM 20
+LRM 20
+LRM 20
 </Rear Equipment>
 
-<tonnage>
-150.0
-</tonnage>
+<structural_tech_rating>
+3
+</structural_tech_rating>
+
+<engine_tech_rating>
+3
+</engine_tech_rating>
+
+<history>
+Armor is based on fluff. No Record Sheet available.
+</history>
 
 <source>
 His:OK
 </source>
 
-<history>
-Armor is based on fluff. No Record Sheet available.
-</history>
+<tonnage>
+150.0
+</tonnage>
+
+<fuel>
+4.0
+</fuel>
+
+<fuelType>
+PETROCHEMICALS
+</fuelType>
+

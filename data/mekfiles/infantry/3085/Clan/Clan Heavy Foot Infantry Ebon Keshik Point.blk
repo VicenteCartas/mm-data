@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,20 +15,15 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-#Write the version number just in case...
-<Version>
-MAM0
-</Version>
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 Infantry
 </UnitType>
+
 <Name>
 Clan Heavy Foot Infantry
 </Name>
+
 <Model>
 Ebon Keshik Point
 </Model>
@@ -36,18 +31,15 @@ Ebon Keshik Point
 <mul id:>
 608
 </mul id:>
-<squad_size>
-5
-</squad_size>
-<squadn>
-1
-</squadn>
-<Primary>
-InfantryClanMauserIICIAS
-</Primary>
-<armorKit>
-ClanKit
-</armorKit>
+
+<year>
+2875
+</year>
+
+<originalBuildYear>
+2875
+</originalBuildYear>
+
 <type>
 Clan Level 3
 </type>
@@ -55,12 +47,27 @@ Clan Level 3
 <role>
 Ambusher
 </role>
-<year>
-2875
-</year>
-<era>
-TRO: 3085
-</era>
+
 <motion_type>
 Leg
 </motion_type>
+
+<Troopers Equipment>
+Clan Armor Kit (All)
+</Troopers Equipment>
+
+<Field Guns Equipment>
+</Field Guns Equipment>
+
+<squad_size>
+5
+</squad_size>
+
+<squadn>
+1
+</squadn>
+
+<Primary>
+Laser Rifle (Mauser IIC IAS)
+</Primary>
+

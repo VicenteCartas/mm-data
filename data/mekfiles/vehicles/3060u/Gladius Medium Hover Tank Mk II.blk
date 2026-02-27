@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,20 +15,15 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-#Write the version number just in case...
-<Version>
-MAM0
-</Version>
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 Tank
 </UnitType>
+
 <Name>
 Gladius Medium Hover Tank
 </Name>
+
 <Model>
 Mk II
 </Model>
@@ -36,37 +31,15 @@ Mk II
 <mul id:>
 1213
 </mul id:>
-<Tonnage>
-40
-</Tonnage>
-<cruiseMP>
-8
-</cruiseMP>
-<Armor>
-30
-24
-24
-18
-</Armor>
-<Front Equipment>
-Light Auto Cannon/5
-ISLMGA
-ISLightMG
-ISLightMG
-ISLightMG
-ISLightMG
-RL15
-RL15
-</Front Equipment>
-<Rear Equipment>
-RL15
-RL15
-</Rear Equipment>
-<Body Equipment>
-IS Ammo LAC/5
-IS Ammo LAC/5
-ISLightMG Ammo (100)
-</Body Equipment>
+
+<year>
+3073
+</year>
+
+<originalBuildYear>
+3073
+</originalBuildYear>
+
 <type>
 IS Level 2
 </type>
@@ -74,21 +47,82 @@ IS Level 2
 <role>
 Striker
 </role>
-<year>
-3073
-</year>
-<internal_type>
-0
-</internal_type>
-<armor_type>
-0
-</armor_type>
-<engine_type>
-1
-</engine_type>
+
 <motion_type>
 Hover
 </motion_type>
+
+<cruiseMP>
+8
+</cruiseMP>
+
+<engine_type>
+1
+</engine_type>
+
+<armor_type>
+0
+</armor_type>
+
+<armor_tech_rating>
+0
+</armor_tech_rating>
+
+<armor_tech_level>
+0
+</armor_tech_level>
+
+<armor>
+30
+24
+24
+18
+</armor>
+
+<Body Equipment>
+IS Ammo LAC/5
+IS Ammo LAC/5
+IS Light Machine Gun Ammo - Half
+</Body Equipment>
+
+<Front Equipment>
+Light Auto Cannon/5
+ISLMGA
+Light Machine Gun
+Light Machine Gun
+Light Machine Gun
+Light Machine Gun
+RL15
+RL15
+</Front Equipment>
+
+<Right Equipment>
+</Right Equipment>
+
+<Left Equipment>
+</Left Equipment>
+
+<Rear Equipment>
+RL15
+RL15
+</Rear Equipment>
+
+<slotless_equipment>
+IS Ammo RL-15
+IS Ammo RL-15
+IS Ammo RL-15
+IS Ammo RL-15
+</slotless_equipment>
+
 <source>
 TR:3060
 </source>
+
+<tonnage>
+40.0
+</tonnage>
+
+<fuelType>
+PETROCHEMICALS
+</fuelType>
+

@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,16 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-
-# Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 Tank
 </UnitType>
@@ -45,6 +36,10 @@ Behemoth II Heavy Tank
 3102
 </year>
 
+<originalBuildYear>
+3102
+</originalBuildYear>
+
 <type>
 IS Level 3
 </type>
@@ -52,6 +47,10 @@ IS Level 3
 <role>
 Sniper
 </role>
+
+<quirks>
+imp_target_long
+</quirks>
 
 <motion_type>
 Tracked
@@ -69,9 +68,13 @@ Tracked
 1
 </armor_type>
 
-<armor_tech>
+<armor_tech_rating>
+0
+</armor_tech_rating>
+
+<armor_tech_level>
 5
-</armor_tech>
+</armor_tech_level>
 
 <armor>
 56
@@ -112,20 +115,12 @@ ISERLargeLaser
 ISGaussRifle
 </Turret Equipment>
 
-<source>
-TR:3145:CC
-</source>
-
-<tonnage>
-100.0
-</tonnage>
-
 <capabilities>
 The vehicle is powered by a Vlar 300 rated Extra-Light Fusion Engine, to allow it to move at 50 km/h, and allow it to carry its extensive amount of weaponry and its 15 tons of ferro-fibrous armor.
 </capabilities>
 
 <overview>
- A product of Aldis Industries, the company heavily marketed the Behemoth II to worlds who were not necessarily looking for another combat vehicle. 
+A product of Aldis Industries, the company heavily marketed the Behemoth II to worlds who were not necessarily looking for another combat vehicle.
 </overview>
 
 <deployment>
@@ -151,7 +146,11 @@ COMMUNICATIONS:Olmstead 44
 TARGETING:Omicron VIII
 </systemManufacturers>
 
-<quirks>
-imp_target_long
-</quirks>
+<source>
+TR:3145:CC
+</source>
+
+<tonnage>
+100.0
+</tonnage>
 

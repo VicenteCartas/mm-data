@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,16 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-
-##Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 SupportTank
 </UnitType>
@@ -62,8 +53,8 @@ Wheeled
 </motion_type>
 
 <transporters>
-cargobay:0.15:1:1
-pillionseats:1.0:0
+cargobay:0.15:1:1::-1:0
+pillionseats:1.0:0:-1::-1:0
 </transporters>
 
 <cruiseMP>
@@ -73,6 +64,18 @@ pillionseats:1.0:0
 <engine_type>
 1
 </engine_type>
+
+<armor_type>
+48
+</armor_type>
+
+<armor_tech_rating>
+3
+</armor_tech_rating>
+
+<armor_tech_level>
+1
+</armor_tech_level>
 
 <armor>
 2
@@ -87,7 +90,7 @@ Advanced Fire Control
 </Body Equipment>
 
 <Front Equipment>
-Grenade Launcher (Heavy)
+InfantryHeavyGrenadeLauncher:SIZE:1.0
 </Front Equipment>
 
 <Right Equipment>
@@ -98,6 +101,11 @@ Grenade Launcher (Heavy)
 
 <Rear Equipment>
 </Rear Equipment>
+
+<slotless_equipment>
+Infantry Ammo
+Infantry Inferno Ammo
+</slotless_equipment>
 
 <barrating>
 7
@@ -111,10 +119,6 @@ Grenade Launcher (Heavy)
 3
 </engine_tech_rating>
 
-<armor_tech_rating>
-3
-</armor_tech_rating>
-
 <source>
 TR:I
 </source>
@@ -123,6 +127,10 @@ TR:I
 1.0
 </tonnage>
 
+<bv>
+25
+</bv>
+
 <fuel>
 0.024
 </fuel>
@@ -130,8 +138,4 @@ TR:I
 <fuelType>
 PETROCHEMICALS
 </fuelType>
-
-<bv>
-25
-</bv>
 

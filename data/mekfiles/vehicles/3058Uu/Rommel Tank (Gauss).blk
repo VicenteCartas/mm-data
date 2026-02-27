@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,20 +15,15 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-#Write the version number just in case...
-<Version>
-MAM0
-</Version>
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 Tank
 </UnitType>
+
 <Name>
 Rommel Tank
 </Name>
+
 <Model>
 (Gauss)
 </Model>
@@ -36,38 +31,15 @@ Rommel Tank
 <mul id:>
 2735
 </mul id:>
-<Tonnage>
-65
-</Tonnage>
-<cruiseMP>
-4
-</cruiseMP>
-<Armor>
-42
-40
-40
-26
-40
-</Armor>
-<Turret Equipment>
-ISGaussRifle
-ISMediumLaser
-ISMediumLaser
-ISMachine Gun
-ISMachine Gun
-</Turret Equipment>
-<Front Equipment>
-ISMachine Gun
-ISMachine Gun
-</Front Equipment>
-<Rear Equipment>
-ISMachine Gun
-</Rear Equipment>
-<Body Equipment>
-ISGauss Ammo
-ISGauss Ammo
-ISMG Ammo (100)
-</Body Equipment>
+
+<year>
+3054
+</year>
+
+<originalBuildYear>
+3054
+</originalBuildYear>
+
 <type>
 IS Level 2
 </type>
@@ -75,21 +47,72 @@ IS Level 2
 <role>
 Brawler
 </role>
-<year>
-3054
-</year>
-<internal_type>
-0
-</internal_type>
-<armor_type>
-1
-</armor_type>
-<engine_type>
-0
-</engine_type>
+
+<quirks>
+poor_target_short
+low_profile
+</quirks>
+
 <motion_type>
 Tracked
 </motion_type>
+
+<cruiseMP>
+4
+</cruiseMP>
+
+<engine_type>
+0
+</engine_type>
+
+<armor_type>
+1
+</armor_type>
+
+<armor_tech_rating>
+0
+</armor_tech_rating>
+
+<armor_tech_level>
+1
+</armor_tech_level>
+
+<armor>
+42
+40
+40
+26
+40
+</armor>
+
+<Body Equipment>
+IS Gauss Ammo
+IS Gauss Ammo
+IS Machine Gun Ammo - Half
+</Body Equipment>
+
+<Front Equipment>
+Machine Gun
+Machine Gun
+</Front Equipment>
+
+<Right Equipment>
+</Right Equipment>
+
+<Left Equipment>
+</Left Equipment>
+
+<Rear Equipment>
+Machine Gun
+</Rear Equipment>
+
+<Turret Equipment>
+ISGaussRifle
+Medium Laser
+Medium Laser
+Machine Gun
+Machine Gun
+</Turret Equipment>
 
 <capabilities>
 With its default main weapon being the massive and immensely powerful but short-ranged AC/20, the Rommel is best suited to close range and urban fighting, where its heavy gun can be put to excellent use. A Rommel may lie in wait around a corner or down an alley, and then use its devastating armament to cripple or destroy a BattleMech when it comes into view. The main advantage the Rommel has over other, older designs is a combination of higher speed and more armor. With even more armor than a Demolisher tank, the Rommel can sustain more punishment, yet slip away faster to fight again from another position.
@@ -129,9 +152,4 @@ TR:3039
 <tonnage>
 65.0
 </tonnage>
-
-<quirks>
-low_profile
-poor_target_short
-</quirks>
 

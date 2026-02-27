@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,16 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-
-# Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 SupportTank
 </UnitType>
@@ -33,9 +24,9 @@ SupportTank
 Savior Repair Vehicle
 </Name>
 
-<model>
+<Model>
 
-</model>
+</Model>
 
 <mul id:>
 6546
@@ -45,6 +36,10 @@ Savior Repair Vehicle
 3059
 </year>
 
+<originalBuildYear>
+3059
+</originalBuildYear>
+
 <type>
 IS Level 3
 </type>
@@ -53,13 +48,17 @@ IS Level 3
 None
 </role>
 
+<quirks>
+easy_maintain
+</quirks>
+
 <motion_type>
 Tracked
 </motion_type>
 
 <transporters>
 troopspace:3.0
-cargobay:3.5:1
+cargobay:3.5:1:1::-1:0
 </transporters>
 
 <cruiseMP>
@@ -70,6 +69,18 @@ cargobay:3.5:1
 0
 </engine_type>
 
+<armor_type>
+51
+</armor_type>
+
+<armor_tech_rating>
+3
+</armor_tech_rating>
+
+<armor_tech_level>
+1
+</armor_tech_level>
+
 <armor>
 6
 5
@@ -77,10 +88,6 @@ cargobay:3.5:1
 2
 5
 </armor>
-
-<structural_tech_rating>
-3
-</structural_tech_rating>
 
 <Body Equipment>
 Armored Chassis
@@ -108,6 +115,14 @@ Small Laser
 10
 </barrating>
 
+<structural_tech_rating>
+3
+</structural_tech_rating>
+
+<engine_tech_rating>
+3
+</engine_tech_rating>
+
 <source>
 TR:3145:Merc
 </source>
@@ -116,7 +131,7 @@ TR:3145:Merc
 60.0
 </tonnage>
 
-<quirks>
-easy_maintain
-</quirks>
+<fuel>
+0.0
+</fuel>
 

@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,16 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-
-# Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 Tank
 </UnitType>
@@ -45,6 +36,10 @@ Bulldog Medium Tank
 2793
 </year>
 
+<originalBuildYear>
+2793
+</originalBuildYear>
+
 <type>
 IS Level 1
 </type>
@@ -64,6 +59,18 @@ Tracked
 <engine_type>
 1
 </engine_type>
+
+<armor_type>
+0
+</armor_type>
+
+<armor_tech_rating>
+0
+</armor_tech_rating>
+
+<armor_tech_level>
+1
+</armor_tech_level>
 
 <armor>
 24
@@ -101,14 +108,6 @@ SRM 4
 LRM 20
 </Turret Equipment>
 
-<source>
-TR:3039
-</source>
-
-<tonnage>
-60.0
-</tonnage>
-
 <capabilities>
 Its speed is not exceptional and its protection of 6½ tons of standard armor is anything but ample. On the other hand, it is easy to repair and said to be a reliable and cheap asset for any field commander that needs a backbone for his vehicle forces.
 </capabilities>
@@ -140,3 +139,16 @@ ARMOR:Bulldog Standard
 COMMUNICATIONS:Xilex-2000
 TARGETING:Xilex-2000
 </systemManufacturers>
+
+<source>
+TR:3039
+</source>
+
+<tonnage>
+60.0
+</tonnage>
+
+<fuelType>
+PETROCHEMICALS
+</fuelType>
+

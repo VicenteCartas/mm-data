@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,16 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-
-##Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 Warship
 </UnitType>
@@ -62,16 +53,16 @@ Aerodyne
 </motion_type>
 
 <transporters>
-smallcraftbay:8.0:4:1
-cargobay:25004.0:4:2
-cargobay:25003.5:4:3
+smallcraftbay:8.0:4:1::-1:0
+cargobay:25004.0:4:2::-1:0
+cargobay:25003.5:4:3::-1:0
 dockingcollar
 dockingcollar
 dockingcollar
 dockingcollar
-crewquarters:1582.0:0
-1stclassquarters:660.0:0
-steeragequarters:350.0:0
+crewquarters:1582.0:0:-1::-1:0
+1stclassquarters:660.0:0:-1::-1:0
+steeragequarters:350.0:0:-1::-1:0
 </transporters>
 
 <SafeThrust>
@@ -98,9 +89,13 @@ steeragequarters:350.0:0
 41
 </armor_type>
 
-<armor_tech>
+<armor_tech_rating>
+0
+</armor_tech_rating>
+
+<armor_tech_level>
 5
-</armor_tech>
+</armor_tech_level>
 
 <armor>
 44
@@ -260,11 +255,34 @@ IS Ammo LRM-15:80
 60
 </structural_integrity>
 
+# Fluff Date: 2026-02-24 13:31:06
+<capabilities>
+The Concordat frigate fulfilled multiple roles with its impressive capabilities. Its heavy naval lasers positioned at the fore provided effective long-range engagement, while the medium-caliber naval autocannons delivered devastating firepower against even Star League battleships. Equipped with LRM and laser turrets covering each quarter, the Concordat possessed formidable defense against fighters and DropShips. It could accommodate a single squadron of fighters or small craft, and up to four DropShips, typically carrying fighters, could dock with the WarShip. The Concordat also carried shuttles and small craft for routine inspections and boarding actions, supported by its two platoons of marines.
+</capabilities>
 
+<overview>
+The TCS Concordat, developed by the Taurian Concordat in response to the expanding borders of neighboring realms, served as a versatile frigate bridging the gap between corvettes and destroyers. Its primary role was to patrol Periphery space lanes, commanding task forces and engaging enemy WarShips. With a combination of heavy naval lasers and medium-caliber naval autocannons, the Concordat excelled in long-range engagements and anti-WarShip firepower. It also boasted a robust defense system against fighters and DropShips, with multiple turrets and screen launchers.
+</overview>
 
+<history>
+The Taurian Concordat commenced the construction of the TCS Concordat in the early 26th century amidst the expansion of the Capellan Confederation and the Federated Suns. The frigate was designed to patrol Periphery space lanes, serve as a command ship for task forces, and directly engage enemy WarShips. Throughout the 26th century, the Concordat proved instrumental to the Taurian Navy and the Magistracy of Canopus, forming the backbone of their WarShip fleets. With over four dozen frigates in operation, the Taurian Navy held the largest WarShip fleet in the Periphery. While achieving remarkable successes against Inner Sphere fleets during the Reunification War, the Taurian Navy ultimately succumbed to the might of the Star League. Although no more Concordats were built after the war, a few of them survived until the First Succession War.
+</history>
 
+<manufacturer>
+Liberty Naval Yards, Concordat Aerospace Limited
+</manufacturer>
 
+<primaryFactory>
+Horsham,Taurus
+</primaryFactory>
 
+<systemManufacturers>
+CHASSIS:Unknown
+ENGINE:Unknown
+ARMOR:Unknown
+COMMUNICATIONS:Unknown
+TARGETING:Unknown
+</systemManufacturers>
 
 <use>
 Frigate
@@ -333,47 +351,4 @@ His:RW
 <escape_pod>
 25
 </escape_pod>
-
-# Fluff Date: 2026-02-24 13:31:06
-<overview>
-<p>The Concordat Frigate represents the Taurian Concordat's principal domestically designed warship, conceived as a bridge between corvette and destroyer classifications during an era of growing territorial threat from the Inner Sphere's Great Houses. Designed to serve dual roles as both a patrol vessel for the Periphery space lanes and a task force command ship capable of directly engaging enemy warships, the class reflected a distinctly Periphery approach to naval warfare that prioritized versatile firepower over specialized roles. The design philosophy balanced heavy forward-firing capital weapons with comprehensive secondary armament in overlapping defensive arcs, creating a vessel that could anchor combined-arms naval task forces while still holding its own against individual capital ships of greater displacement.</p><p>The class served as the backbone of the Taurian navy for generations and was also exported to at least one allied Periphery state, establishing a record of reliable service across multiple decades of frontier defense. Though ultimately overwhelmed by the vastly superior numbers and technology fielded during the Reunification War, the Concordat Frigate earned a reputation for punching well above its weight class in naval engagements.</p>
-</overview>
-
-<capabilities>
-<p>The Concordat Frigate's armament reflects a design philosophy prioritizing forward-facing firepower for aggressive engagement. Fifteen NAC/20 naval autocannons form the primary anti-ship battery, with the heaviest concentrations in the broadside arcs and supplementary coverage forward and aft. These medium-caliber weapons deliver enough firepower to threaten even Star League battleships at close range. Three NL55 naval lasers in the nose provide long-range striking power, supplemented by four NL45 tubes covering the forward quarter arcs for sustained energy engagement during approach.</p><p>The secondary armament comprises thirty-two LRM 15 launchers, sixteen large lasers, and thirty-two medium lasers distributed in overlapping arcs across the entire hull, creating a comprehensive defensive screen against fighters and DropShips. Standard armor totaling 527.5 tons provides adequate hull protection for the vessel's displacement class.</p><p>The vessel's bay configuration reflects its role as a task force command ship rather than a standalone combatant. Eight small craft provide utility transport and marine delivery capability, while four docking collars allow the Concordat to anchor a mixed task force of assault DropShips and fighter carriers. A single 130-meter gravity deck and substantial cargo capacity exceeding fifty thousand tons support extended patrol deployments in frontier territories where resupply infrastructure may be limited. Crew accommodations include facilities for sixty marines organized in two platoons for boarding operations and inspection duties.</p>
-</capabilities>
-
-<deployment>
-<p>Over four dozen Concordat-class frigates served the Taurian navy before the Reunification War, forming the backbone of the largest warship fleet in the Periphery. The Magistracy of Canopus also operated at least one vessel, the MCS Fury, demonstrating the design's appeal beyond its nation of origin. Eight Concordat-class frigates formed the core of Task Force AMBER during the Battle of Tentativa in 2577, where they engaged Federated Suns naval forces in multiple engagements across three star systems. Despite achieving several notable successes against Inner Sphere fleets during the war, the Taurian navy could not hold out against the Star League's overwhelming numbers.</p><p>By 2765, seven Concordat-class frigates remained active: six in Taurian service and one in the Magistracy of Canopus. Three of the Taurian vessels, the TCS Marantha Calderon, TCS Parilicium, and TCS Parin, were assigned to II Corps of the Taurian Defense Force on the Federated Suns border, each supporting a specific regiment for rapid deployment. The SLDF annihilated virtually all Periphery warship fleets during the 2766 Periphery Uprising, destroying nearly every Concordat-class vessel including the MCS Fury. The TCS Parin alone survived as the last operational warship in the Taurian Navy, remaining stationed at Flannagan's Nebulea through the Taurian-Canopian War of 2813 without seeing combat. No Concordat-class frigates are known to have survived the First Succession War.</p>
-</deployment>
-
-<history>
-<p>The Concordat Frigate traces its origins to the early twenty-sixth century, when the Taurian Concordat found itself facing increasing territorial pressure from both the Capellan Confederation and the Federated Suns as those Great Houses expanded their borders outward toward the Periphery. Recognizing the need for a warship that could both patrol the vast expanse of Periphery space lanes and directly engage enemy capital ships, Taurian naval architects conceived a vessel that would serve as a bridge between the corvette and destroyer classifications.</p><p>Concordat Aerospace Limited, operating from facilities distributed throughout the Hyades Cluster, undertook production of the new design. While multiple CAL facilities could service warships and manufacture DropShips, only the Taurus shipyard possessed the capability to produce warship hulls. The first of class, TCS Concordat, launched from these yards and entered service in 2506. Liberty Naval Yards at Horsham provided additional construction capacity for the class.</p><p>The design philosophy reflected a distinctly Periphery approach to naval warfare. Heavy forward-firing naval autocannons gave the frigate the ability to ravage even Star League battleships at close range, while naval lasers provided long-range engagement capability during approach. Multiple LRM and laser turrets distributed in overlapping arcs defended against fighters and DropShips, creating a vessel that could anchor combined-arms task forces while still posing a genuine threat to larger adversaries.</p><p>Over four dozen Concordat-class frigates entered service before the Reunification War, giving the Taurian Concordat the largest warship fleet in the Periphery. The class also served the Magistracy of Canopus, whose navy operated at least one vessel. During the Reunification War, eight Concordat-class frigates formed the backbone of Task Force AMBER at the Battle of Tentativa in 2577, engaging Federated Suns naval forces across multiple star systems. The Taurian navy achieved several remarkable successes during the conflict, but ultimately could not prevail against the Star League's vastly superior numbers and technology.</p><p>No additional Concordats were constructed after the war's end, but the surviving vessels continued to serve. By 2765, seven frigates remained active: six in Taurian service and one in the Magistracy of Canopus. Three Taurian vessels were assigned to II Corps of the Taurian Defense Force along the Federated Suns border, each supporting a specific regiment. A new production facility had been established on Taurus in the 2750s, but it was destroyed during the upheaval of the Amaris Coup. The SLDF annihilated virtually all Periphery warship fleets during the 2766 Periphery Uprising, destroying nearly every surviving Concordat-class vessel. Only the TCS Parin is known to have escaped the devastation, becoming the last operational warship in the entire Taurian Navy. The Parin remained stationed at Flannagan's Nebulea through the Taurian-Canopian War of 2813-2814, held in reserve rather than risked in combat against the Magistracy. No Concordat-class frigates are known to have survived beyond the First Succession War, bringing the class's three-century service history to a close.</p>
-</history>
-
-<manufacturer>
-Concordat Aerospace Limited
-</manufacturer>
-
-<primaryFactory>
-Taurus
-</primaryFactory>
-
-<systemManufacturers>
-CHASSIS:Unknown
-ENGINE:Unknown
-ARMOR:Unknown
-JUMP_JET:Unknown
-COMMUNICATIONS:Unknown
-TARGETING:Unknown
-</systemManufacturers>
-
-<systemModels>
-CHASSIS:Unknown
-ENGINE:Unknown
-ARMOR:Standard
-JUMP_JET:Unknown
-COMMUNICATIONS:Unknown
-TARGETING:Unknown
-</systemModels>
 

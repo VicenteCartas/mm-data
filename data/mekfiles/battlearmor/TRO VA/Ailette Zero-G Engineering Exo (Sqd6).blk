@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,16 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-
-# Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 BattleArmor
 </UnitType>
@@ -33,7 +24,7 @@ BattleArmor
 Ailette Zero-G Engineering Exoskeleton
 </Name>
 
-<model>
+<Model>
 (Sqd6)
 </Model>
 
@@ -44,6 +35,10 @@ Ailette Zero-G Engineering Exoskeleton
 <year>
 3056
 </year>
+
+<originalBuildYear>
+3056
+</originalBuildYear>
 
 <type>
 IS Level 2
@@ -73,8 +68,50 @@ Leg
 BASalvageArm:LA
 BAArmoredGlove:RA
 ISBASpaceOperationsAdaptation:Body
-ISBAExtendedLifeSupport:Body
+BAExtendedLifeSupport:Body
 </Squad Equipment>
+
+<Trooper 1 Equipment>
+</Trooper 1 Equipment>
+
+<Trooper 2 Equipment>
+</Trooper 2 Equipment>
+
+<Trooper 3 Equipment>
+</Trooper 3 Equipment>
+
+<Trooper 4 Equipment>
+</Trooper 4 Equipment>
+
+<Trooper 5 Equipment>
+</Trooper 5 Equipment>
+
+<Trooper 6 Equipment>
+</Trooper 6 Equipment>
+
+<capabilities>
+The Ailette's exterior appearance mirrors that of a normal hardened space suit, but the suit has been equipped with advanced sensors to allow the user to be able to operate in the hazardous environment of space. This includes an automatic “attitude maintenance mode” which allows the exoskeleton to compensate for movement in Zero Gravity.
+</capabilities>
+
+<overview>
+The Ailette Zero-G Exoskeleton is an engineering Exoskeleton which was developed for heavy labor in space and produced by Federated Boeing of Galax.
+</overview>
+
+<deployment>
+This was an Experimental refit variant of the Ailette, which was produced in the Taurian Concordat during the early Jihad. Created as a SAR (Search and Rescue) Power Armor, the suit was enhanced slightly from the original model. The suit was upgraded to Power Armor (Light), had its ground speed increased to 20 km/h, and was given a Mechanical Jump Booster to improve its movement in space. Along with the Ailette's standard equipment, the suit now features Improved Sensors which are found in its right arm.
+</deployment>
+
+<history>
+The suit was created to enhance workers' performance at the orbiting Port Simon Naval Shipyards. After the destruction of Galax in 3069, it is unknown if the Ailette was put into production elsewhere for Federated Boeing. Taurus Territorial Industries did produce a version of the suit however. An experimental refit variant was later created by Taurus Territorial Industries in 3074 as a rescue Power Armor.
+</history>
+
+<manufacturer>
+Taurus Territorial Industries
+</manufacturer>
+
+<primaryFactory>
+Sterope
+</primaryFactory>
 
 <source>
 TR:VAr
@@ -100,26 +137,3 @@ biped
 0
 </weightclass>
 
-<overview>
-The Ailette Zero-G Exoskeleton is an engineering Exoskeleton which was developed for heavy labor in space and produced by Federated Boeing of Galax.
-</overview>
-
-<history>
-The suit was created to enhance workers' performance at the orbiting Port Simon Naval Shipyards. After the destruction of Galax in 3069, it is unknown if the Ailette was put into production elsewhere for Federated Boeing. Taurus Territorial Industries did produce a version of the suit however. An experimental refit variant was later created by Taurus Territorial Industries in 3074 as a rescue Power Armor.
-</history>
-
-<capabilities>
-The Ailette's exterior appearance mirrors that of a normal hardened space suit, but the suit has been equipped with advanced sensors to allow the user to be able to operate in the hazardous environment of space. This includes an automatic “attitude maintenance mode” which allows the exoskeleton to compensate for movement in Zero Gravity.
-</capabilities>
-
-<deployment>
-This was an Experimental refit variant of the Ailette, which was produced in the Taurian Concordat during the early Jihad. Created as a SAR (Search and Rescue) Power Armor, the suit was enhanced slightly from the original model. The suit was upgraded to Power Armor (Light), had its ground speed increased to 20 km/h, and was given a Mechanical Jump Booster to improve its movement in space. Along with the Ailette's standard equipment, the suit now features Improved Sensors which are found in its right arm.
-</deployment>
-
-<manufacturer>
-Taurus Territorial Industries
-</manufacturer>
-
-<primaryFactory>
-Sterope
-</primaryFactory>

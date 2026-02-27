@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,16 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-
-# Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 BattleArmor
 </UnitType>
@@ -44,6 +35,10 @@ Nephilim Assault Battle Armor
 <year>
 3071
 </year>
+
+<originalBuildYear>
+3071
+</originalBuildYear>
 
 <type>
 IS Level 2
@@ -101,6 +96,11 @@ IS BA Mimetic:LA
 <Trooper 6 Equipment>
 </Trooper 6 Equipment>
 
+<slotless_equipment>
+BA-SRM2 Ammo:Shots1#
+BA-SRM2 Ammo:Shots1#
+</slotless_equipment>
+
 <source>
 TR:3075
 </source>
@@ -124,3 +124,4 @@ biped
 <weightclass>
 4
 </weightclass>
+

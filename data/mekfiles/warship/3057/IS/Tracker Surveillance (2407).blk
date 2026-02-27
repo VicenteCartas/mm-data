@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,16 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-
-##Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 Warship
 </UnitType>
@@ -62,14 +53,14 @@ Aerodyne
 </motion_type>
 
 <transporters>
-smallcraftbay:4.0:1:1
-cargobay:23586.0:1:2
+smallcraftbay:4.0:1:1::-1:0
+cargobay:23586.0:1:2::-1:0
 dockingcollar
 dockingcollar
-steeragequarters:280.0:0
-1stclassquarters:150.0:0
-crewquarters:406.0:0
-2ndclassquarters:42.0:0
+steeragequarters:280.0:0:-1::-1:0
+1stclassquarters:150.0:0:-1::-1:0
+crewquarters:406.0:0:-1::-1:0
+2ndclassquarters:42.0:0:-1::-1:0
 </transporters>
 
 <SafeThrust>
@@ -96,9 +87,13 @@ crewquarters:406.0:0
 41
 </armor_type>
 
-<armor_tech>
+<armor_tech_rating>
+0
+</armor_tech_rating>
+
+<armor_tech_level>
 5
-</armor_tech>
+</armor_tech_level>
 
 <armor>
 17
@@ -146,11 +141,34 @@ Ammo Barracuda:24
 36
 </structural_integrity>
 
+# Fluff Date: 2026-02-26 10:08:45
+<capabilities>
+The Tracker surveillance vessel was designed to mimic a commercial JumpShip's sensor readings. It had the capability to rapidly change its silhouette by attaching special panels to hard points on the hull. The vessel could also modify its transponder, using various aliases to operate covertly. This allowed the Tracker to navigate space lanes without arousing suspicion. With sufficient speed and firepower, including the ability to engage anything short of a capital ship, the Trackers were capable of defending themselves in case their cover was exposed. Additionally, these spy ships often carried innocent DropShips on their docking collars to maintain their cover.
+</capabilities>
 
+<overview>
+Director-General Judith Cameron, concerned about the escalating conflicts with neighboring states, ordered an increase in covert monitoring operations by the Hegemony Intelligence. To fulfill this need, the Tracker surveillance vessel was developed. The Tracker was designed to provide sensor readings similar to a commercial JumpShip and had the ability to quickly alter its silhouette using special panels. It could also change its transponder, operating under different aliases for covert operations. Equipped with speed and firepower, the Trackers could gather intelligence, monitor fleet movements, and defend themselves if their cover was compromised. Despite becoming obsolete over time, some Trackers remained in service until the end of the Reunification War, primarily engaging pirates and Taurian Concordat raiders as Q-Ships.
+</overview>
 
+<history>
+Director-General Judith Cameron directed Hegemony Intelligence to intensify covert monitoring operations due to concerns over the belligerence of the Terran Hegemony's neighbors. The Tracker surveillance vessel was developed as a result, specifically to keep a close watch on the neighboring states. The success of the Tracker's design, with its ability to alter its silhouette and transponder, led to the creation of the Nightwing vessel. During the capture of Terra Firma by the Capellan Confederation in 2409, the THS Marlow, a Tracker, played a crucial role by gathering data on Capellan troop movements. This information enabled the Hegemony Armed Forces to liberate Terra Firma later that year. While the Tracker became obsolete by the beginning of the 26th century, several vessels remained in service until the end of the Reunification War, serving as Q-Ships to combat pirates and Taurian Concordat raiders.
+</history>
 
+<manufacturer>
+Bowie Industries
+</manufacturer>
 
+<primaryFactory>
+Wasat
+</primaryFactory>
 
+<systemManufacturers>
+CHASSIS:Unknown
+ENGINE:Unknown
+ARMOR:Unknown
+COMMUNICATIONS:Unknown
+TARGETING:Unknown
+</systemManufacturers>
 
 <use>
 Surveillance
@@ -219,47 +237,4 @@ TR:3057r
 <escape_pod>
 15
 </escape_pod>
-
-# Fluff Date: 2026-02-26 10:08:45
-<overview>
-<p>The Tracker-class surveillance vessel was one of the earliest purpose-built intelligence-gathering warships, entering service with the Hegemony Armed Forces in 2407 during the tumultuous Age of War. Constructed by Bowie Industries at Wasat, the Tracker was designed not to fight but to observe, carrying only a compact Kearny-Fuchida drive and the barest minimum of armament. Its defining feature was an ability to disguise itself as a civilian JumpShip through modular hull paneling mounted on specialized hardpoints that could alter both visual appearance and electronic signature. This allowed Tracker crews to assume multiple identities while plying trade routes and monitoring in-system communications. The design proved highly effective in the early Age of War but became obsolete by the early 2500s as advancing sensor technology and the exposure of its tactics rendered the disguise less reliable. The final Tracker missions involved anti-pirate Q-Ship operations during the Reunification War.</p>
-</overview>
-
-<capabilities>
-<p>At just 120,000 tons and 318 meters in length, the Tracker is among the smallest vessels to carry a Kearny-Fuchida drive, classified as a warship solely by virtue of its compact KF core. Armament is deliberately minimal: a single NL45 naval laser in the nose provides the only capital-scale weapon, supplemented by a PPC in each forward quarter for anti-fighter defense and two Barracuda missile launchers in the aft arc as a parting deterrent to pursuit. The broadsides and aft quarters carry no weapons at all. Against any determined assault the Tracker is severely outgunned, relying instead on its relatively brisk acceleration of two gravities to flee rather than fight. Only 86 tons of standard armor protect the hull, barely adequate against even light combatants. The ship's true strength lies in its intelligence-gathering equipment and its crew of fifty-six marines who can conduct boarding operations or secure captured intelligence assets. Two docking collars, four small craft, and over 23,000 tons of cargo space provide logistical flexibility, while a single 75-meter gravity deck supports the modest crew of approximately eighty personnel on extended surveillance patrols.</p>
-</capabilities>
-
-<deployment>
-<p>The THS Marlow earned distinction in 2409 following the Capellan Confederation's invasion of the Hegemony world Terra Firma. Operating covertly within the system for several weeks, the Marlow tracked, monitored, and logged Capellan troop movements from concealment. When the Capellan garrison underwent a routine rotation with fresh troops unfamiliar with their posting, the Marlow coordinated with waiting HAF forces to strike immediately, resulting in a swift and decisive Hegemony victory. The THS Krait, in service since 2415, was transferred to the Rim Worlds Republic in 2580 and secretly mothballed after the Reunification War rather than being decommissioned. Reactivated as the RWS Krait in 2764 to oppose Star League incursions, the vessel served the Republic through the Amaris crisis until Captain Marc Birch intercepted signals in 2769 revealing the true nature of Stefan Amaris's regime. Unable to support the usurper yet unwilling to betray his homeland, Birch commanded the Krait into the Deep Periphery with two attached DropShips, the Harper and the Pepperdyne, and was never seen again.</p>
-</deployment>
-
-<history>
-<p>The Tracker-class surveillance vessel was conceived in the early twenty-fifth century as the Terran Hegemony sought an asymmetric advantage in the increasingly violent Age of War. Rather than building another conventional combatant, Bowie Industries at Wasat designed a ship that could hide in plain sight. Modular hull paneling mounted on specialized hardpoints allowed the Tracker to alter its physical profile and electronic signature, making it nearly indistinguishable from the civilian JumpShips that plied interstellar trade routes. Crews could assume multiple aliases, monitoring in-system communications and tracking military movements without alerting their targets.</p><p>The design entered service in 2407 and quickly proved its worth. In 2409, the THS Marlow demonstrated the class's potential when it conducted weeks of covert surveillance over Terra Firma following a Capellan invasion. By timing the HAF counterattack to coincide with a Capellan garrison rotation, the Marlow enabled a victory that perfectly illustrated the Tracker's intelligence-gathering philosophy. The design served the Hegemony throughout the Age of War, with vessels like the THS Krait entering service from 2415 onward.</p><p>By the early 2500s, however, advancing sensor technology and the increasing exposure of Tracker tactics began to erode the design's effectiveness. The civilian disguise that was its primary asset became less reliable as navies learned to look for the telltale signatures of a compact KF drive aboard an apparently commercial vessel. The Tracker's final operational chapter came during the Reunification War, where surviving vessels were repurposed as anti-pirate Q-Ships in the Periphery, particularly along the Taurian front.</p><p>The Krait enjoyed a remarkable second life when it was transferred to the Rim Worlds Republic in 2580 and secretly mothballed. Reactivated in 2764 as tensions escalated, the RWS Krait served through the Amaris crisis until its captain, Marc Birch, intercepted signals revealing the truth of Amaris's usurpation in 2769. Birch took the extraordinary step of commanding his vessel into the Deep Periphery rather than serve the usurper, disappearing with two DropShips into the unknown. The Krait's vanishing marked the final chapter of a class that had served for over three and a half centuries.</p>
-</history>
-
-<manufacturer>
-Bowie Industries
-</manufacturer>
-
-<primaryFactory>
-Wasat
-</primaryFactory>
-
-<systemManufacturers>
-CHASSIS:Bowie Industries
-ENGINE:Unknown
-ARMOR:Unknown
-JUMP_JET:Unknown
-COMMUNICATIONS:Unknown
-TARGETING:Unknown
-</systemManufacturers>
-
-<systemModels>
-CHASSIS:Tracker
-ENGINE:Unknown
-ARMOR:Standard
-JUMP_JET:Compact
-COMMUNICATIONS:Unknown
-TARGETING:Unknown
-</systemModels>
 

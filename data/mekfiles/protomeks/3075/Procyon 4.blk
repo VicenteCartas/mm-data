@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,16 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-
-# Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 ProtoMek
 </UnitType>
@@ -61,9 +52,6 @@ Striker
 Biped
 </motion_type>
 
-<transporters>
-</transporters>
-
 <cruiseMP>
 5
 </cruiseMP>
@@ -72,9 +60,29 @@ Biped
 0
 </jumpingMP>
 
+<interface_cockpit>
+false
+</interface_cockpit>
+
 <engine_type>
 0
 </engine_type>
+
+<clan_engine>
+false
+</clan_engine>
+
+<armor_type>
+42
+</armor_type>
+
+<armor_tech_rating>
+0
+</armor_tech_rating>
+
+<armor_tech_level>
+2
+</armor_tech_level>
 
 <internal_type>
 -1
@@ -91,6 +99,7 @@ Biped
 <Body Equipment>
 Clan Streak SRM 3 Ammo (5)
 Clan Machine Gun Ammo - Proto (20)
+EIInterface
 </Body Equipment>
 
 <Head Equipment>
@@ -110,22 +119,14 @@ CLMG
 <Legs Equipment>
 </Legs Equipment>
 
-<source>
-TR:3075
-</source>
-
-<tonnage>
-5.0
-</tonnage>
-
 # Fluff Date: 2026-02-22 14:33:57
-<overview>
-<p>The Procyon is a five-ton second-generation ProtoMek designed by Clan Coyote, among the first Clans to stage Trials on Huntress for ProtoMek technology after the Smoke Jaguar Annihilation. Originally conceived as a quadruped design in the Coyotes' effort to reclaim their former reputation as the innovator Clan, practical limitations with both the technology and pilot adaptation forced Coyote engineers to re-envision their debut machine with a conventional humanoid configuration. The Procyon entered full-scale production after three years of testing, emerging as a versatile energy-weapon platform built to support heavier BattleMek and Elemental formations with maximum field endurance.</p>
-</overview>
-
 <capabilities>
 <p>The base Procyon combines good mobility with an energy weapon payload designed for maximum operational endurance. A forty-five-rated fusion engine drives the five-ton frame at sixty-four kilometers per hour cruising speed, and twin ER Small Lasers mounted in the arms provide reliable firepower without ammunition dependency. Four heat sinks manage the thermal load from sustained laser fire, allowing a Procyon Point to maintain continuous engagement without overheating concerns. Twenty points of armor provide adequate protection, comparable to many first-generation designs of similar mass.</p><p>The Procyon's all-energy weapons configuration gives it virtually unlimited combat endurance, a significant advantage during extended operations where resupply is uncertain. A Point of five Procyons puts ten ER Small Lasers on target, sufficient to threaten light Meks and overwhelm battle armor formations. The design lacks jump jets in its base configuration, limiting terrain flexibility, but several variants address this deficiency. Commanders typically deploy Procyon Points alongside heavier Mek formations, where the ProtoMeks provide flanking fire and clean up damaged targets while the main force absorbs enemy attention.</p>
 </capabilities>
+
+<overview>
+<p>The Procyon is a five-ton second-generation ProtoMek designed by Clan Coyote, among the first Clans to stage Trials on Huntress for ProtoMek technology after the Smoke Jaguar Annihilation. Originally conceived as a quadruped design in the Coyotes' effort to reclaim their former reputation as the innovator Clan, practical limitations with both the technology and pilot adaptation forced Coyote engineers to re-envision their debut machine with a conventional humanoid configuration. The Procyon entered full-scale production after three years of testing, emerging as a versatile energy-weapon platform built to support heavier BattleMek and Elemental formations with maximum field endurance.</p>
+</overview>
 
 <deployment>
 <p>The Procyon 4 mounts a Streak SRM-3 launcher in the torso with five guided salvos and a machine gun in the right arm with twenty rounds of ammunition. The Streak system ensures no missile is wasted, making this the most ammunition-efficient missile variant in the Procyon family. The machine gun provides sustained anti-infantry capability that complements the missile launcher's anti-armor punch. Twenty points of armor and sixty-four kilometers per hour cruising speed match the base configuration. Point Commander Kreig demonstrated this variant's potential by defeating a Snow Raven Mek and two Points of Elementals in a combined-arms Trial using his Procyon 4 alongside four other ProtoMeks and a pair of Donar VTOLs.</p>
@@ -158,4 +159,12 @@ ARMOR:Standard
 COMMUNICATIONS:Micro
 TARGETING:Model 4
 </systemModels>
+
+<source>
+TR:3075
+</source>
+
+<tonnage>
+5.0
+</tonnage>
 

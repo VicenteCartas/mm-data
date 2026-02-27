@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,11 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#Saved from version 0.49.18-SNAPSHOT on 2024-01-13
-<BlockVersion>
-1
-</BlockVersion>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 BattleArmor
 </UnitType>
@@ -48,10 +44,10 @@ Elemental Battle Armor
 Clan Level 3
 </type>
 
-
 <role>
 Ambusher
 </role>
+
 <motion_type>
 Jump
 </motion_type>
@@ -87,6 +83,10 @@ BABattleClaw:LA
 <Trooper 3 Equipment>
 </Trooper 3 Equipment>
 
+<slotless_equipment>
+BAJumpJet
+</slotless_equipment>
+
 <capabilities>
 The roots of the Elemental battle armor can be traced back to pressurized diving suits built by Clan Goliath Scorpion. These underwater suits already had most of the basic equipment common to current battle armor designs: myomer musculature, self-contained air-supply and life support systems, and heavy, atmospherically sealed bodies designed to handle extreme conditions. Clan Wolf saw the diving suit's military potential, but instead of claiming the designs through combat, they directed their merchant caste to acquire a number through trade. Weaponization of these suits began with adding armor, weapons, and small jump jets until proof of concept was established. Advanced manufacturing then ensued, and while Clan Wolf did experiment with specialist suits designed for specific environments, they eventually settled on a general purpose design that defined the standard used by all Clans for over two centuries. The specialist suits would later go on to inspire the Gnome, Salamander, Sylph and Undine.
 </capabilities>
@@ -115,7 +115,7 @@ Alshain,Arc-Royal,Tamar,Various
 CHASSIS:Various
 ENGINE:Various
 ARMOR:Various
-JUMPJET:Various
+JUMP_JET:Various
 COMMUNICATIONS:Various
 TARGETING:Various
 </systemManufacturers>

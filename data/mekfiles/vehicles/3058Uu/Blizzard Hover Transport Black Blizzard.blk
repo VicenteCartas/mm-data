@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,20 +15,15 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-#Write the version number just in case...
-<Version>
-MAM0
-</Version>
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 Tank
 </UnitType>
+
 <Name>
 Blizzard Hover Transport
 </Name>
+
 <Model>
 'Black Blizzard'
 </Model>
@@ -36,30 +31,15 @@ Blizzard Hover Transport
 <mul id:>
 396
 </mul id:>
-<Tonnage>
-25
-</Tonnage>
-<cruiseMP>
-9
-</cruiseMP>
-<Armor>
-14
-13
-13
-9
-13
-</Armor>
-<Turret Equipment>
-ISSRM4
-ISSRM4
-ISMachine Gun
-ISMachine Gun
-</Turret Equipment>
-<Body Equipment>
-ISSRM4 Ammo
-ISMG Ammo (200)
-ISGuardianECM
-</Body Equipment>
+
+<year>
+3064
+</year>
+
+<originalBuildYear>
+3064
+</originalBuildYear>
+
 <type>
 IS Level 2
 </type>
@@ -67,21 +47,73 @@ IS Level 2
 <role>
 Striker
 </role>
-<year>
-3064
-</year>
-<internal_type>
-0
-</internal_type>
-<armor_type>
-1
-</armor_type>
-<engine_type>
-1
-</engine_type>
+
 <motion_type>
 Hover
 </motion_type>
+
+<cruiseMP>
+9
+</cruiseMP>
+
+<engine_type>
+1
+</engine_type>
+
+<armor_type>
+1
+</armor_type>
+
+<armor_tech_rating>
+0
+</armor_tech_rating>
+
+<armor_tech_level>
+1
+</armor_tech_level>
+
+<armor>
+14
+13
+13
+9
+13
+</armor>
+
+<Body Equipment>
+IS Ammo SRM-4
+IS Ammo MG - Full
+ISGuardianECMSuite
+</Body Equipment>
+
+<Front Equipment>
+</Front Equipment>
+
+<Right Equipment>
+</Right Equipment>
+
+<Left Equipment>
+</Left Equipment>
+
+<Rear Equipment>
+</Rear Equipment>
+
+<Turret Equipment>
+SRM 4
+SRM 4
+Machine Gun
+Machine Gun
+</Turret Equipment>
+
 <source>
 TR:3058U
 </source>
+
+<tonnage>
+25.0
+</tonnage>
+
+<fuelType>
+PETROCHEMICALS
+</fuelType>
+

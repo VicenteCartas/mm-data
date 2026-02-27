@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,16 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-
-# Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 SupportTank
 </UnitType>
@@ -33,9 +24,9 @@ SupportTank
 White Tip Submarine
 </Name>
 
-<model>
+<Model>
 
-</model>
+</Model>
 
 <mul id:>
 5406
@@ -62,20 +53,20 @@ Submarine
 </motion_type>
 
 <transporters>
-1stclassquarters:10.0:1
-1stclassquarters:10.0:1
-1stclassquarters:10.0:1
-2ndclassquarters:7.0:1
-2ndclassquarters:7.0:1
-2ndclassquarters:7.0:1
-2ndclassquarters:7.0:1
-steeragequarters:5.0:1
-steeragequarters:5.0:1
-steeragequarters:5.0:1
-steeragequarters:5.0:1
-steeragequarters:5.0:1
-steeragequarters:5.0:1
-cargobay:30.0:1:14
+1stclassquarters:10.0:1:-1::-1:0
+1stclassquarters:10.0:1:-1::-1:0
+1stclassquarters:10.0:1:-1::-1:0
+2ndclassquarters:7.0:1:-1::-1:0
+2ndclassquarters:7.0:1:-1::-1:0
+2ndclassquarters:7.0:1:-1::-1:0
+2ndclassquarters:7.0:1:-1::-1:0
+steeragequarters:5.0:1:-1::-1:0
+steeragequarters:5.0:1:-1::-1:0
+steeragequarters:5.0:1:-1::-1:0
+steeragequarters:5.0:1:-1::-1:0
+steeragequarters:5.0:1:-1::-1:0
+steeragequarters:5.0:1:-1::-1:0
+cargobay:30.0:1:14::-1:0
 </transporters>
 
 <cruiseMP>
@@ -85,6 +76,18 @@ cargobay:30.0:1:14
 <engine_type>
 0
 </engine_type>
+
+<armor_type>
+49
+</armor_type>
+
+<armor_tech_rating>
+4
+</armor_tech_rating>
+
+<armor_tech_level>
+1
+</armor_tech_level>
 
 <armor>
 22
@@ -104,9 +107,9 @@ IS Ammo LRTorpedo-15
 IS Ammo LRTorpedo-15
 IS Ammo LRTorpedo-10
 IS Ammo LRTorpedo-10
-Communications Equipment (7 ton)
+Communications Equipment:SIZE:7.0
 FieldKitchen
-MASH Equipment:SIZE:1
+MASH Equipment:SIZE:1.0
 </Body Equipment>
 
 <Front Equipment>
@@ -138,6 +141,10 @@ ISERMediumLaser
 4
 </structural_tech_rating>
 
+<engine_tech_rating>
+4
+</engine_tech_rating>
+
 <source>
 XTR:RetroTech
 </source>
@@ -149,3 +156,4 @@ XTR:RetroTech
 <fuel>
 0.0
 </fuel>
+

@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,18 +15,9 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-
-# Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
-Aero
+AeroSpaceFighter
 </UnitType>
 
 <Name>
@@ -61,9 +52,6 @@ Interceptor
 Aerodyne
 </motion_type>
 
-<transporters>
-</transporters>
-
 <SafeThrust>
 10
 </SafeThrust>
@@ -92,9 +80,13 @@ Aerodyne
 19
 </armor_type>
 
-<armor_tech>
+<armor_tech_rating>
+0
+</armor_tech_rating>
+
+<armor_tech_level>
 2
-</armor_tech>
+</armor_tech_level>
 
 <omni>
 1
@@ -132,22 +124,14 @@ Clan Streak SRM 6 Ammo:OMNI
 CLCASE
 </Fuselage Equipment>
 
-<source>
-TR:3055U
-</source>
-
-<tonnage>
-35.0
-</tonnage>
-
 # Fluff Date: 2026-02-23 10:34:56
-<overview>
-<p>The Avar is a 35-ton Clan light OmniFighter that entered production in 2878. A general-purpose design, the Avar has served the Clans for centuries as a dependable workhorse. While its maneuverability and armor protection are only average for its weight class, the fighter's generous pod space provides significant mission flexibility. Commanders value the Avar's adaptability, appreciating a platform that can be reconfigured to fill a variety of combat roles at short notice. The pilots who fly the Avar tend to view it less favorably, given the fighter's age and lack of any particular specialty that might distinguish it from newer designs. Despite this reputation among its pilots, the Avar has survived repeated calls for retirement thanks to the vocal support of senior officers who recognize the practical value of a reliable, flexible airframe.</p>
-</overview>
-
 <capabilities>
 <p>Built on a Kerensky Series 9 chassis, the Avar mounts a 280-rated XL fusion engine that provides a safe thrust of ten and maximum thrust of fifteen, giving the fighter solid if unremarkable speed. Seven tons of Great Father Type XIa ferro-aluminum armor provides adequate protection for a light fighter, though it falls short of the heavier plating found on some contemporaries. The real strength of the design lies in its fourteen tons of available pod space, an impressive amount for a 35-ton frame.</p><p>Ten double heat sinks manage waste heat from the fixed systems, with additional heat management dependent on the chosen configuration. A LongTalk 2 communications system and Mark IX targeting and tracking system round out the fixed electronics, providing reliable performance proven across multiple centuries of service. The Avar's combination of moderate speed, decent pod space, and acceptable armor creates a versatile platform that, while excelling at nothing in particular, can be adapted to meet a wide range of tactical requirements. This lack of specialization is both the fighter's greatest weakness and its primary argument for continued production.</p>
 </capabilities>
+
+<overview>
+<p>The Avar is a 35-ton Clan light OmniFighter that entered production in 2878. A general-purpose design, the Avar has served the Clans for centuries as a dependable workhorse. While its maneuverability and armor protection are only average for its weight class, the fighter's generous pod space provides significant mission flexibility. Commanders value the Avar's adaptability, appreciating a platform that can be reconfigured to fill a variety of combat roles at short notice. The pilots who fly the Avar tend to view it less favorably, given the fighter's age and lack of any particular specialty that might distinguish it from newer designs. Despite this reputation among its pilots, the Avar has survived repeated calls for retirement thanks to the vocal support of senior officers who recognize the practical value of a reliable, flexible airframe.</p>
+</overview>
 
 <deployment>
 <p>The Prime configuration reflects the Avar's versatile nature, combining a nose-mounted Streak SRM-6 with an ER large laser and medium pulse laser for mixed-range engagement capability. Two additional medium pulse lasers split between the wings provide supplementary close-range firepower. A single ton of Streak missile ammunition is carried, though the efficiency of the Streak system typically provides sufficient endurance for a single sortie.</p>
@@ -180,4 +164,12 @@ ARMOR:Great Father Type XIa Ferro-aluminum
 COMMUNICATIONS:LongTalk 2
 TARGETING:Mark IX TTS
 </systemModels>
+
+<source>
+TR:3055U
+</source>
+
+<tonnage>
+35.0
+</tonnage>
 

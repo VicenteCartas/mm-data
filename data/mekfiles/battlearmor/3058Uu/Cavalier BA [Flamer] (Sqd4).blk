@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,16 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-
-##Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 BattleArmor
 </UnitType>
@@ -61,9 +52,6 @@ Ambusher
 Jump
 </motion_type>
 
-<transporters>
-</transporters>
-
 <cruiseMP>
 1
 </cruiseMP>
@@ -78,10 +66,6 @@ Jump
 
 <Squad Equipment>
 CLBAFlamer:RA
-SwarmMek
-SwarmWeaponMek
-StopSwarm
-LegAttack
 BABattleClaw:LA
 </Squad Equipment>
 
@@ -97,29 +81,9 @@ BABattleClaw:LA
 <Trooper 4 Equipment>
 </Trooper 4 Equipment>
 
-<source>
-TR:3058U
-</source>
-
-<chassis>
-biped
-</chassis>
-
-<jumpingMP>
-3
-</jumpingMP>
-
-<armor>
-9
-</armor>
-
-<Trooper Count>
-4
-</Trooper Count>
-
-<weightclass>
-2
-</weightclass>
+<slotless_equipment>
+BAJumpJet
+</slotless_equipment>
 
 <capabilities>
 Like the Inner Sphere Standard, the Cavalier has a Modular Weapon Mount in its right arm and a Battle Claw in the left. This mount can carry one standard battle armor weapon such as a Flamer, a Small Laser, a Machine Gun, or an SRM-1 with four missiles. Also like the Inner Sphere Standard, this weapon mount can instead accept two "secondary" weapons, such as Laser Rifles or Needler Rifles, for use against infantry. The Cavalier can run as fast as the Inner Sphere Standard, use jump jets to leap the same 90 meter distance, and is just as strong as the Standard. It's also protected by the same 450kg of armoring, although the shifting of armor plating between the two has increased protection around the thighs and calves while leaving the hand and arm joints more exposed to shrapnel. This armor configuration does give the Cavalier superior manual dexterity however.
@@ -148,3 +112,28 @@ New Avalon,Talcott
 <notes>
 In German products the unit's proper name was translated to Chevalier, regardless to the resulting mix-up with the Chevalier light tank, whose proper name used unaltered in German products.
 </notes>
+
+<source>
+TR:3058U
+</source>
+
+<chassis>
+biped
+</chassis>
+
+<jumpingMP>
+3
+</jumpingMP>
+
+<armor>
+9
+</armor>
+
+<Trooper Count>
+4
+</Trooper Count>
+
+<weightclass>
+2
+</weightclass>
+

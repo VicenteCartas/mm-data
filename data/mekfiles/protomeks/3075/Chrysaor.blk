@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,16 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-
-# Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 ProtoMek
 </UnitType>
@@ -33,9 +24,9 @@ ProtoMek
 Chrysaor
 </Name>
 
-<model>
+<Model>
 
-</model>
+</Model>
 
 <mul id:>
 3953
@@ -61,9 +52,6 @@ Scout
 Biped
 </motion_type>
 
-<transporters>
-</transporters>
-
 <cruiseMP>
 6
 </cruiseMP>
@@ -72,9 +60,29 @@ Biped
 0
 </jumpingMP>
 
+<interface_cockpit>
+false
+</interface_cockpit>
+
 <engine_type>
 0
 </engine_type>
+
+<clan_engine>
+false
+</clan_engine>
+
+<armor_type>
+42
+</armor_type>
+
+<armor_tech_rating>
+0
+</armor_tech_rating>
+
+<armor_tech_level>
+2
+</armor_tech_level>
 
 <internal_type>
 -1
@@ -89,6 +97,7 @@ Biped
 </armor>
 
 <Body Equipment>
+EIInterface
 </Body Equipment>
 
 <Head Equipment>
@@ -110,22 +119,14 @@ CLERMicroLaser
 <Legs Equipment>
 </Legs Equipment>
 
-<source>
-TR:3075
-</source>
-
-<tonnage>
-6.0
-</tonnage>
-
 # Fluff Date: 2026-02-22 14:33:57
-<overview>
-<p>The Chrysaor is a six-ton second-generation ProtoMek jointly developed by Clan Blood Spirit and Clan Snow Raven. Originally intended to be the first product of their ProtoMek collaboration, engineering challenges delayed the Chrysaor's introduction until after the lighter Cecerops had already reached the field. Its first battlefield appearance on Arcadia was controversial, with a Star Colonel's misuse of the design nearly dooming its acceptance among the already-skeptical Blood Spirit warrior caste. Only a dramatic Trial of Grievance by a Chrysaor pilot against the offending commander salvaged the design's reputation and demonstrated its true capabilities.</p>
-</overview>
-
 <capabilities>
 <p>The Chrysaor is a solid medium-weight ProtoMek built around four ER Micro Lasers distributed across the arms and torso. The all-energy loadout eliminates ammunition dependency, allowing extended operations critical for the resource-constrained Blood Spirits and the far-flung Snow Raven garrisons. A fifty-five-rated engine provides sixty-four kilometers per hour cruising speed with a flank approaching one hundred, sufficient to keep pace with most Meks and ProtoMeks. Twenty-eight points of armor, nearly a ton and a half, provide strong protection against lighter weapons.</p><p>At short range, the four ER Micro Lasers can deliver a potent concentrated strike. Combined-arms units that have dispensed with zellbrigen use the Chrysaor to devastating effect: larger units hammer the enemy while a Point of Chrysaors uses their score of laser beams to find the holes in damaged armor and finish targets off, freeing the heavier units to move on to the next engagement. Four heat sinks manage the thermal output from sustained fire, though aggressive pilots who alpha-strike continuously will build heat over time. The Chrysaor excels in the exploitation role, using its speed and sustained-fire capability to capitalize on openings created by heavier forces.</p>
 </capabilities>
+
+<overview>
+<p>The Chrysaor is a six-ton second-generation ProtoMek jointly developed by Clan Blood Spirit and Clan Snow Raven. Originally intended to be the first product of their ProtoMek collaboration, engineering challenges delayed the Chrysaor's introduction until after the lighter Cecerops had already reached the field. Its first battlefield appearance on Arcadia was controversial, with a Star Colonel's misuse of the design nearly dooming its acceptance among the already-skeptical Blood Spirit warrior caste. Only a dramatic Trial of Grievance by a Chrysaor pilot against the offending commander salvaged the design's reputation and demonstrated its true capabilities.</p>
+</overview>
 
 <deployment>
 <p>The base Chrysaor distributes four ER Micro Lasers across the frame, with one in each arm and two in the torso. This weapons distribution ensures combat capability is maintained even after localized damage. Four heat sinks manage the thermal load from sustained laser fire. Twenty-eight points of armor provide the strongest protection of any six-ton ProtoMek, sufficient to absorb multiple light weapon hits. The fifty-five-rated engine drives the frame at sixty-four kilometers per hour cruising speed without jump jets. Produced at both the Blood Spirit Reserve Industriplex-2 on York and the Snow Raven Aeroyard Gargain on Bearclaw, the base Chrysaor serves in both Clans' ProtoMek formations and has spread to limited numbers of Diamond Shark and pirate forces.</p>
@@ -158,4 +159,12 @@ ARMOR:90
 COMMUNICATIONS:67
 TARGETING:3.2
 </systemModels>
+
+<source>
+TR:3075
+</source>
+
+<tonnage>
+6.0
+</tonnage>
 

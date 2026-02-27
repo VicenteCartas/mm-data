@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,15 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-#Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 BattleArmor
 </UnitType>
@@ -32,50 +24,21 @@ BattleArmor
 Rogue Bear Heavy Battle Armor
 </Name>
 
-<model>
+<Model>
 (Upgrade)(Sqd4)
-</model>
+</Model>
 
 <mul id:>
 6734
 </mul id:>
 
-<chassis>
-biped
-</chassis>
+<year>
+3108
+</year>
 
-<weightclass>
-3
-</weightclass>
-
-<Trooper Count>
-4
-</Trooper Count>
-
-<cruiseMP>
-1
-</cruiseMP>
-
-<jumpingMP>
-2
-</jumpingMP>
-
-<Armor>
-13
-</Armor>
-
-<armor_type>
-38
-</armor_type>
-
-<Point Equipment>
-Clan BA Machine Gun:LA
-Clan BA Machine Gun:RA
-CLBASRM2:Body
-BASRM2 Ammo:Body:Shots4#
-BAHeavyBattleClaw:LA
-BAHeavyBattleClaw:RA
-</Point Equipment>
+<originalBuildYear>
+3108
+</originalBuildYear>
 
 <type>
 Clan Level 2
@@ -85,29 +48,54 @@ Clan Level 2
 Juggernaut
 </role>
 
-<year>
-3108
-</year>
-
 <motion_type>
 Jump
 </motion_type>
 
-<source>
-RS:3145-NTNU
-</source>
+<cruiseMP>
+1
+</cruiseMP>
+
+<armor_type>
+38
+</armor_type>
 
 <armor_tech>
 2
 </armor_tech>
 
-<overview>
-First known to have been deployed in 3073, the Rogue Bear is a battle armor design produced by Clan Ghost Bear.
-</overview>
+<Point Equipment>
+CLBAMG:LA
+CLBAMG:RA
+CLBASRM2:Body
+BA-SRM2 Ammo:Body:Shots4#
+BAHeavyBattleClaw:LA
+BAHeavyBattleClaw:RA
+</Point Equipment>
+
+<Trooper 1 Equipment>
+</Trooper 1 Equipment>
+
+<Trooper 2 Equipment>
+</Trooper 2 Equipment>
+
+<Trooper 3 Equipment>
+</Trooper 3 Equipment>
+
+<Trooper 4 Equipment>
+</Trooper 4 Equipment>
+
+<slotless_equipment>
+BAJumpJet
+</slotless_equipment>
 
 <capabilities>
 The Rogue Bear can jump up to sixty meters at a time. It is protected by almost enough armor to stop a Gauss rifle. The battlesuit uses mostly standard components with no disposable weaponry.
 </capabilities>
+
+<overview>
+First known to have been deployed in 3073, the Rogue Bear is a battle armor design produced by Clan Ghost Bear.
+</overview>
 
 <deployment>
 This Dark Age variant reduces the SRM launcher to a two pack with four shots. It keeps the machine guns but uses Heavy Battle Claws instead of Vibro-Claws. The space and weight freed up allowed engineers to install Reactive Armor instead of the standard armor used on the original Rogue Bear.
@@ -129,7 +117,32 @@ Mannedorf
 CHASSIS:Unknown
 ENGINE:Unknown
 ARMOR:Unknown
-JUMPJET:Unknown
+JUMP_JET:Unknown
 COMMUNICATIONS:Unknown
 TARGETING:Unknown
 </systemManufacturers>
+
+<source>
+RS:3145-NTNU
+</source>
+
+<chassis>
+biped
+</chassis>
+
+<jumpingMP>
+2
+</jumpingMP>
+
+<armor>
+13
+</armor>
+
+<Trooper Count>
+4
+</Trooper Count>
+
+<weightclass>
+3
+</weightclass>
+

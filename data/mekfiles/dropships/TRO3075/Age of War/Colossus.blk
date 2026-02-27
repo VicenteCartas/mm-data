@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,16 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-
-##Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 Dropship
 </UnitType>
@@ -33,9 +24,9 @@ Dropship
 Colossus
 </Name>
 
-<model>
+<Model>
 
-</model>
+</Model>
 
 <mul id:>
 3972
@@ -62,13 +53,13 @@ Spheroid
 </motion_type>
 
 <transporters>
-heavyvehiclebay:72.0:2:1
-mekbay:36.0:4
-infantrybay:12.0:2:3:Foot
-2ndclassquarters:0.0:0
-crewquarters:322.0:0
-1stclassquarters:90.0:0
-cargobay:1040.5:0:7
+heavyvehiclebay:72.0:2:1::-1:0
+mekbay:36.0:4:-1::-1:0
+infantrybay:12.0:2:3:Foot:-1:0
+2ndclassquarters:0.0:0:-1::-1:0
+crewquarters:322.0:0:-1::-1:0
+1stclassquarters:90.0:0:-1::-1:0
+cargobay:1040.5:0:7::-1:0
 </transporters>
 
 <SafeThrust>
@@ -95,9 +86,13 @@ cargobay:1040.5:0:7
 19
 </armor_type>
 
-<armor_tech>
+<armor_tech_rating>
+0
+</armor_tech_rating>
+
+<armor_tech_level>
 1
-</armor_tech>
+</armor_tech_level>
 
 <armor>
 252
@@ -203,7 +198,6 @@ The Colossus is equipped with four Cargo Bays, designed to carry elements of a R
 
 <history>
 After being embarrassed by a lack of coordination and cooperation among their units taking part in "war games" held in the Periphery in 2651, the SLDF High Command responded by creating their famous "Regimental Combat Teams" (RCT). The Colossus was designed from the start to fulfill the needs of an RCT and enhance the unit's qualities. It was equipped with the most advanced armor and weapons technologies for the era, driving the vessel costs to over 700 million Star League Dollars per ship. Despite the high cost, the Colossus was designed to be easily repaired and its components were remarkably robust, adding to its reliability.
-While they performed their intended function admirably, the cost of replacing them was too prohibitive. After both the manufacturer and the majority of the ships were destroyed during the Amaris-Kerensky Civil War, the Colossus was replaced by the smaller yet just as capable Excalibur, at half the cost. After the war, only five Colossus ships were known to have survived; those disappeared with Kerensky's army. A few examples have since been discovered: One crashed example was found on the Lyran Commonwealth world of Phecda by Snord's Irregulars in 3024, from which they salvaged unknown but presumably substantial amounts of Star League-era equipment; The ship was later cannibalized by Lyran Commonwealth forces. Another crash-landed vessel was recovered from a hidden Star League depot on Epsilon Eridani by the Lone Star Regiment in 3067 and restored to flight status. During the Jihad, a Federated Suns repair shipyard in orbit of Firgrove named Clyde Shipyards began building the ancient design once more for the AFFS.
 </history>
 
 <manufacturer>

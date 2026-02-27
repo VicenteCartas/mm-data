@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,16 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-
-# Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 Tank
 </UnitType>
@@ -45,6 +36,10 @@ Drillson Heavy Hover Tank
 3028
 </year>
 
+<originalBuildYear>
+3028
+</originalBuildYear>
+
 <type>
 IS Level 1
 </type>
@@ -64,6 +59,18 @@ Hover
 <engine_type>
 0
 </engine_type>
+
+<armor_type>
+0
+</armor_type>
+
+<armor_tech_rating>
+0
+</armor_tech_rating>
+
+<armor_tech_level>
+1
+</armor_tech_level>
 
 <armor>
 24
@@ -104,21 +111,13 @@ SRM 2
 SRM 2
 </Turret Equipment>
 
-<source>
-TR:3039
-</source>
-
-<tonnage>
-50.0
-</tonnage>
+<capabilities>
+The Drillson's electronics are its focal point. During the Fourth Succession War, the Evil Eye targeting and tracking system, a groundbreaking 360-degree vision system similar to the heads-up display in BattleMech targeting systems, proved to be one of the fi nest conventional electronics systems in use. Using a combination of energy and missile armaments, it can hit and damage targets at a variety of ranges. The Drillson's superb armor is what genuinely endears it to Lyran commanders. With over seven tons of ArcShield armor on the chassis, the Drillson can withstand more abuse than most people believe a hovercraft can.
+</capabilities>
 
 <overview>
 Its mix of thick armor, speed, and hitting power quickly made it a favorite of even the most hidebound Lyran generals.
 </overview>
-
-<capabilities>
-The Drillson's electronics are its focal point. During the Fourth Succession War, the Evil Eye targeting and tracking system, a groundbreaking 360-degree vision system similar to the heads-up display in BattleMech targeting systems, proved to be one of the fi nest conventional electronics systems in use. Using a combination of energy and missile armaments, it can hit and damage targets at a variety of ranges. The Drillson's superb armor is what genuinely endears it to Lyran commanders. With over seven tons of ArcShield armor on the chassis, the Drillson can withstand more abuse than most people believe a hovercraft can.
-</capabilities>
 
 <deployment>
 This 3028 variant features a missile armament optimized for close combat. The long-range missile system is replaced by four additional SRM-2s and three tons of ammunition. The Cyclops Eye system and the machine guns are unaltered.
@@ -142,3 +141,12 @@ ARMOR:ArcShield Heavy
 COMMUNICATIONS:Cyclops 1
 TARGETING:Evil Eye
 </systemManufacturers>
+
+<source>
+TR:3039
+</source>
+
+<tonnage>
+50.0
+</tonnage>
+

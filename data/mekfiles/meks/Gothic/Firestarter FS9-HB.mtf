@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,17 +15,16 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-
-generator:MegaMek Suite 0.50.1-SNAPSHOT on 2024-09-07
+generator:MegaMek Suite 0.50.12 on 2026-02-26
 chassis:Firestarter
 model:FS9-HB
 
 Config:Biped
 techbase:Inner Sphere
 era:3151
+source:Gothic
 rules level:5
 role:Scout
-source:Gothic
 
 quirk:ubiquitous_clan
 quirk:ubiquitous_is
@@ -33,7 +32,7 @@ weaponquirk:exposed_linkage:LA:5:Flamer
 weaponquirk:exposed_linkage:RA:5:Flamer
 
 mass:35
-engine:210 Fusion Engine(IS)
+engine:210 Fusion Engine
 structure:IS Standard
 myomer:Standard
 

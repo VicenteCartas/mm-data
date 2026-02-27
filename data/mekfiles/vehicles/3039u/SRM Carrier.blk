@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,16 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-
-# Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 Tank
 </UnitType>
@@ -33,9 +24,9 @@ Tank
 SRM Carrier
 </Name>
 
-<model>
+<Model>
 
-</model>
+</Model>
 
 <mul id:>
 3030
@@ -44,6 +35,10 @@ SRM Carrier
 <year>
 2470
 </year>
+
+<originalBuildYear>
+2470
+</originalBuildYear>
 
 <type>
 IS Level 1
@@ -64,6 +59,18 @@ Tracked
 <engine_type>
 1
 </engine_type>
+
+<armor_type>
+0
+</armor_type>
+
+<armor_tech_rating>
+0
+</armor_tech_rating>
+
+<armor_tech_level>
+1
+</armor_tech_level>
 
 <armor>
 12
@@ -101,16 +108,6 @@ SRM 6
 <Rear Equipment>
 </Rear Equipment>
 
-
-<tonnage>
-60.0
-</tonnage>
-
-<source>
-TR:3039
-</source>
-
-
 <capabilities>
 The chassis for missile carriers, but they are all essentially military transport vehicles, tracked being the most common, adapted to carry the huge missile launchers and loading equipment. Those adaptations generally consist of reinforcing the suspension systems and armoring the crew and critical components areas enough to survive the back blast from so many missiles. With an average top speed of 54 km/h and armor unable to survive counterbattery fire, if forced to engage in direct combat a carrier's life expectancy is measured in seconds.
 </capabilities>
@@ -141,3 +138,16 @@ ARMOR:Simple Armor Plate Standard
 COMMUNICATIONS:Communicator
 TARGETING:FireScan with IndirecTrack
 </systemManufacturers>
+
+<source>
+TR:3039
+</source>
+
+<tonnage>
+60.0
+</tonnage>
+
+<fuelType>
+PETROCHEMICALS
+</fuelType>
+

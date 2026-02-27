@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,16 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-
-##Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 Warship
 </UnitType>
@@ -62,14 +53,14 @@ Aerodyne
 </motion_type>
 
 <transporters>
-asfbay:18.0:6:1
-smallcraftbay:15.0:2:2
+asfbay:18.0:6:1::-1:0
+smallcraftbay:15.0:2:2::-1:0
 dockingcollar
 dockingcollar
-1stclassquarters:400.0:0
-crewquarters:1400.0:0
-2ndclassquarters:756.0:0
-cargobay:54793.0:1:8
+1stclassquarters:400.0:0:-1::-1:0
+crewquarters:1400.0:0:-1::-1:0
+2ndclassquarters:756.0:0:-1::-1:0
+cargobay:54793.0:1:8::-1:0
 </transporters>
 
 <SafeThrust>
@@ -96,9 +87,13 @@ cargobay:54793.0:1:8
 11
 </armor_type>
 
-<armor_tech>
+<armor_tech_rating>
+0
+</armor_tech_rating>
+
+<armor_tech_level>
 5
-</armor_tech>
+</armor_tech_level>
 
 <armor>
 70
@@ -310,11 +305,34 @@ ISMediumPulseLaser
 50
 </structural_integrity>
 
+# Fluff Date: 2026-02-26 11:44:24
+<capabilities>
+The Tatsumaki-class WarShip is a deadly combatant, equipped with a dominant array of pulse lasers and naval autocannons. Its primary strength lies in close-range engagements, where it can swiftly eliminate most targets, except for the most powerful ones. The ship's design also allows it to carry a full battalion of marines in battle armor, making it well-suited for boarding actions against enemy WarShips.
+</capabilities>
 
+<overview>
+The Tatsumaki-class WarShip, known as the "tornado," is designed to strike fear into the hearts of its opponents with its whirlwind of devastating weapons fire. Despite its formidable reputation, the design has been plagued by technical problems, leading to increased crew requirements. The Tatsumaki serves as an escort for unarmed JumpShip troop transports in hostile systems and excels in close-range combat, utilizing pulse lasers and naval autocannons. However, due to the technical issues faced by the class, no new vessels are planned.
+</overview>
 
+<history>
+The Tatsumaki-class WarShip was met with high expectations, as its name and reputation promised a devastating force on the battlefield. However, the ship's history has been marred by technical challenges that have plagued its construction and operation. Detractors attribute these issues to hasty contracting and construction processes, resulting in a storm of technical problems. Despite the setbacks, a limited number of Tatsumaki-class vessels were constructed and deployed. The Lair of Mighty Wyrms stands as the sole remaining active ship of this class, while The Dragon's Last Tear met its tragic end during the fatal attack on the Dominion capital of Alshain. The Tatsumaki-class, with its unique capabilities and close-range firepower, served as escorts for groups of unarmed JumpShip troop transports in hostile systems. While the class exhibited impressive combat abilities, the technical problems it encountered necessitated almost double the standard technical crew complement for each vessel. This issue hindered the Tatsumaki-class's operational effectiveness and raised concerns about its long-term viability. As a result, no new vessels of this class are currently planned, leaving The Lair of Mighty Wyrms as the last representative of the Tatsumaki-class in active service.
+</history>
 
+<manufacturer>
+Stellar Trek Enterprises - Terada Shipyards
+</manufacturer>
 
+<primaryFactory>
+Dieron
+</primaryFactory>
 
+<systemManufacturers>
+CHASSIS:Unknown
+ENGINE:Unknown
+ARMOR:Unknown
+COMMUNICATIONS:Unknown
+TARGETING:Unknown
+</systemManufacturers>
 
 <use>
 Destroyer
@@ -388,47 +406,4 @@ TR:3067
 <escape_pod>
 45
 </escape_pod>
-
-# Fluff Date: 2026-02-26 11:44:24
-<overview>
-<p>The Tatsumaki-class destroyer was the Draconis Combine's first domestically produced WarShip in centuries, built in secret at Stellar Trek Enterprises' Terada Shipyards on Dieron beginning in 3058. Named for the Japanese word for 'tornado,' the design was intended to announce the Combine's return to interstellar naval power with a fearsome whirlwind of weapons fire. Unfortunately, the name proved prophetic in an unintended way, as the class was plagued by an endless storm of technical problems stemming from rushed construction at the much-maligned Dieron facility. Faulty turrets and persistent KF Drive coolant leaks required every Tatsumaki to carry nearly double the standard complement of technical crew. Only two vessels were completed before the Combine Admiralty halted procurement, and both were eventually destroyed in separate engagements with the same enemy warship: the Clan Ghost Bear Nightlord-class battleship Ursa Major.</p>
-</overview>
-
-<capabilities>
-<p>At 520,000 tons and 585 meters, the Tatsumaki is a compact but extraordinarily well-armed destroyer designed for close-range fleet escort and boarding operations. Ten NAC/20 naval autocannons distributed across every arc except the direct stern provide devastating short-range kinetic firepower. A single heavy naval gauss rifle in the nose supplements the forward battery, while four heavy naval PPCs and six medium naval PPCs deliver sustained energy damage at capital scale. Twenty ER large lasers and thirty medium pulse lasers provide layered anti-fighter defense across the broadsides and firing arcs. Twenty-five LRM 20 launchers fitted with Artemis IV fire control systems deliver massed missile volleys, and ten Gauss rifles add long-range precision fire. Six anti-missile systems protect against incoming ordnance. Five hundred forty-four double heat sinks manage the thermal load. Four hundred seventy-five tons of ferro-carbide armor provide excellent protection, and a lithium-fusion battery enables rapid successive jumps. Eighteen aerospace fighters and fifteen small craft across two bays provide extensive screening capability. A full battalion of 108 battle armor troops makes the Tatsumaki an ideal boarding platform. Two 200-meter gravity decks and two docking collars round out the design.</p>
-</capabilities>
-
-<deployment>
-<p>The DCS Lair of Mighty Wyrms was the first Tatsumaki-class destroyer, built in secret at Dieron and initially stationed near the gas giant Gilgamesh in the Luthien system to avoid detection. It sustained damage during Operation BULLDOG but was repaired with the assistance of Clan Nova Cat technicians. By 3067, it was the sole surviving example of its class. During the Jihad, the vessel served as a command ship in Task Force CRONUS, contributing to the capture of the Titan Yards in 3078 before redeploying to New Samarkand in 3079 to defend the Combine's temporary capital. In 3100, during the Second Combine-Dominion War, the Lair of Mighty Wyrms participated in Coordinator Hohiro Kurita's strike against Rasalhague alongside the Winds of Heaven and Dieron Star. Though the Ursa Major was finally destroyed, the Lair of Mighty Wyrms suffered a catastrophic jump drive failure two jumps after escaping the battle and was scuttled by her crew in an uninhabited system.</p><p>The DCS Dragon's Last Tear was the second hull, still under construction in late 3058. In late 3062, Kokuryu-kai elements exploited discontent within the DCMS over Clan Ghost Bear's occupation of former Combine territory and sent the Dragon's Last Tear to escort the Alshain Avengers in an unauthorized assault on Alshain, the Ghost Bear capital world. The destroyer was easily destroyed by the Nightlord-class battleship CGB Ursa Major, and the surviving Avengers who reached the surface were swiftly wiped out by enraged Ghost Bear forces. The loss of Dragon's Last Tear and the attack on Alshain directly precipitated the First Dominion-Combine War.</p>
-</deployment>
-
-<history>
-<p>The Tatsumaki-class destroyer emerged from the Draconis Combine's ambitious effort to rebuild its naval capabilities in the late 3050s, a program driven by the existential threat posed by the Clan invasions. Stellar Trek Enterprises' Terada Shipyards on Dieron were tasked with constructing the new class in secret, but the rushed timeline and the yard's limited experience with capital ship construction produced chronic problems. Faulty turret mechanisms and persistent coolant leaks in the KF Drive plagued every hull, requiring nearly double the standard technical crew to keep the vessels operational.</p><p>The first vessel, DCS Lair of Mighty Wyrms, entered service around 3058 and was initially hidden near the gas giant Gilgamesh in the Luthien system. It participated in Operation BULLDOG against the Smoke Jaguars, sustaining damage that was later repaired with Clan Nova Cat assistance. The second hull, DCS Dragon's Last Tear, followed shortly after. In late 3062, rogue elements of the Kokuryu-kai secret society commandeered the Dragon's Last Tear to escort the Alshain Avengers in an unauthorized assault on Alshain, the Ghost Bear capital. The Nightlord-class battleship CGB Ursa Major destroyed the Dragon's Last Tear with ease, and the incident precipitated the First Dominion-Combine War.</p><p>With only one vessel remaining and no plans to build more, the Lair of Mighty Wyrms soldiered on through the Jihad as a command ship in Task Force CRONUS, helping capture the Titan Yards in 3078. In 3100, during the Second Combine-Dominion War, Coordinator Hohiro Kurita launched a final strike against Rasalhague. The Lair of Mighty Wyrms joined the attack alongside other Combine warships, and though the Ursa Major was finally destroyed in the battle, the Tatsumaki escaped with critical damage. Two jumps later, a catastrophic jump drive failure left the vessel stranded in an uninhabited system, and her crew scuttled her rather than allow capture by the Rasalhague Dominion. Both Tatsumaki destroyers were thus ultimately killed by the same enemy warship, separated by nearly four decades.</p>
-</history>
-
-<manufacturer>
-Stellar Trek Enterprises
-</manufacturer>
-
-<primaryFactory>
-Dieron
-</primaryFactory>
-
-<systemManufacturers>
-CHASSIS:Stellar Trek Enterprises
-ENGINE:Unknown
-ARMOR:Unknown
-JUMP_JET:Unknown
-COMMUNICATIONS:Unknown
-TARGETING:Unknown
-</systemManufacturers>
-
-<systemModels>
-CHASSIS:Tatsumaki
-ENGINE:Unknown
-ARMOR:Ferro-Carbide
-JUMP_JET:Compact
-COMMUNICATIONS:Unknown
-TARGETING:Unknown
-</systemModels>
 

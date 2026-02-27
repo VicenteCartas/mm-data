@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,16 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-
-#Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 Tank
 </UnitType>
@@ -41,67 +32,13 @@ Heavy Hover APC
 1433
 </mul id:>
 
-<Tonnage>
-20
-</Tonnage>
+<year>
+3070
+</year>
 
-<cruiseMP>
-8
-</cruiseMP>
-
-#Order is Tank/VTOL/LST
-<Armor>
-22
-15
-15
-10
-</Armor>
-
-<Front Equipment>
-Light Auto Cannon/5
-</Front Equipment>
-
-<Left Equipment>
-
-</Left Equipment>
-
-<Right Equipment>
-
-</Right Equipment>
-
-<Rear Equipment>
-
-</Rear Equipment>
-
-<Turret Equipment>
-
-</Turret Equipment>
-
-<Rotor Equipment>
-
-</Rotor Equipment>
-
-<Front Left Equipment>
-
-</Front Left Equipment>
-
-<Front Right Equipment>
-
-</Front Right Equipment>
-
-<Rear Left Equipment>
-
-</Rear Left Equipment>
-
-<Rear Right Equipment>
-
-</Rear Right Equipment>
-
-<Body Equipment>
-IS Ammo LAC/5
-IS Ammo LAC/5
-ISCASE
-</Body Equipment>
+<originalBuildYear>
+3070
+</originalBuildYear>
 
 <type>
 IS Level 2
@@ -111,30 +48,65 @@ IS Level 2
 Scout
 </role>
 
-<year>
-3070
-</year>
+<motion_type>
+Hover
+</motion_type>
 
-<internal_type>
-0
-</internal_type>
-
-<armor_type>
-1
-</armor_type>
+<cruiseMP>
+8
+</cruiseMP>
 
 <engine_type>
 1
 </engine_type>
 
-<barrating>
+<armor_type>
+1
+</armor_type>
 
-</barrating>
+<armor_tech_rating>
+0
+</armor_tech_rating>
 
-<motion_type>
-Hover
-</motion_type>
+<armor_tech_level>
+1
+</armor_tech_level>
+
+<armor>
+22
+15
+15
+10
+</armor>
+
+<Body Equipment>
+IS Ammo LAC/5
+IS Ammo LAC/5
+ISCASE
+</Body Equipment>
+
+<Front Equipment>
+Light Auto Cannon/5
+</Front Equipment>
+
+<Right Equipment>
+</Right Equipment>
+
+<Left Equipment>
+</Left Equipment>
+
+<Rear Equipment>
+</Rear Equipment>
 
 <source>
 TR:3060
 </source>
+
+<tonnage>
+20.0
+</tonnage>
+
+<fuelType>
+PETROCHEMICALS
+</fuelType>
+

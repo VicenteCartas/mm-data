@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,16 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-
-##Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 BattleArmor
 </UnitType>
@@ -61,9 +52,6 @@ Ambusher
 Jump
 </motion_type>
 
-<transporters>
-</transporters>
-
 <cruiseMP>
 1
 </cruiseMP>
@@ -81,15 +69,11 @@ BADavidLightGaussRifle:RA
 ISBASRM2OS:Body
 BAAPMount:LA
 InfantryAssaultRifle:APM:LA
-BA Advanced:RA
-BA Advanced:RA
-BA Advanced:LA
-BA Advanced:LA
-BA Advanced:Body
-SwarmMek
-SwarmWeaponMek
-StopSwarm
-LegAttack
+IS BA Advanced:RA
+IS BA Advanced:RA
+IS BA Advanced:LA
+IS BA Advanced:LA
+IS BA Advanced:Body
 BABattleClaw:RA
 </Squad Equipment>
 
@@ -104,6 +88,11 @@ BABattleClaw:RA
 
 <Trooper 4 Equipment>
 </Trooper 4 Equipment>
+
+<slotless_equipment>
+BAJumpJet
+BA-SRM2 Ammo:Shots1#
+</slotless_equipment>
 
 <source>
 TR:3058U

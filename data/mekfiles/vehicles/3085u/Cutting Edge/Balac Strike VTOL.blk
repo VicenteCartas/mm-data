@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,16 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-
-# Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 VTOL
 </UnitType>
@@ -33,9 +24,9 @@ VTOL
 Balac Strike VTOL
 </Name>
 
-<model>
+<Model>
 
-</model>
+</Model>
 
 <mul id:>
 210
@@ -45,6 +36,10 @@ Balac Strike VTOL
 3079
 </year>
 
+<originalBuildYear>
+3079
+</originalBuildYear>
+
 <type>
 Clan Level 2
 </type>
@@ -52,6 +47,10 @@ Clan Level 2
 <role>
 Striker
 </role>
+
+<quirks>
+vtol_rotor_coaxial
+</quirks>
 
 <motion_type>
 VTOL
@@ -69,9 +68,13 @@ VTOL
 1
 </armor_type>
 
-<armor_tech>
+<armor_tech_rating>
+0
+</armor_tech_rating>
+
+<armor_tech_level>
 2
-</armor_tech>
+</armor_tech_level>
 
 <armor>
 15
@@ -114,8 +117,4 @@ TR:3085
 <tonnage>
 25.0
 </tonnage>
-
-<quirks>
-vtol_rotor_coaxial
-</quirks>
 

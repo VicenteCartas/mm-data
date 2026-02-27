@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,47 +15,31 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-#Write the version number just in case...
-<Version>
-MAM0
-</Version>
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 Tank
 </UnitType>
+
 <Name>
 Myrmidon Medium Tank
 </Name>
-<model>
 
-</model>
+<Model>
+
+</Model>
 
 <mul id:>
 2245
 </mul id:>
-<Tonnage>
-40
-</Tonnage>
-<cruiseMP>
-5
-</cruiseMP>
-<Armor>
-35
-25
-25
-24
-35
-</Armor>
-<Turret Equipment>
-ISPPC
-ISSRM6
-</Turret Equipment>
-<Body Equipment>
-ISSRM6 Ammo
-</Body Equipment>
+
+<year>
+3060
+</year>
+
+<originalBuildYear>
+3060
+</originalBuildYear>
+
 <type>
 IS Level 1
 </type>
@@ -63,21 +47,65 @@ IS Level 1
 <role>
 Skirmisher
 </role>
-<year>
-3060
-</year>
-<internal_type>
-0
-</internal_type>
-<armor_type>
-0
-</armor_type>
-<engine_type>
-0
-</engine_type>
+
 <motion_type>
 Tracked
 </motion_type>
+
+<cruiseMP>
+5
+</cruiseMP>
+
+<engine_type>
+0
+</engine_type>
+
+<armor_type>
+0
+</armor_type>
+
+<armor_tech_rating>
+0
+</armor_tech_rating>
+
+<armor_tech_level>
+0
+</armor_tech_level>
+
+<armor>
+35
+25
+25
+24
+35
+</armor>
+
+<Body Equipment>
+IS Ammo SRM-6
+</Body Equipment>
+
+<Front Equipment>
+</Front Equipment>
+
+<Right Equipment>
+</Right Equipment>
+
+<Left Equipment>
+</Left Equipment>
+
+<Rear Equipment>
+</Rear Equipment>
+
+<Turret Equipment>
+PPC
+SRM 6
+</Turret Equipment>
+
 <source>
 TR:3060
 </source>
+
+<tonnage>
+40.0
+</tonnage>
+

@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,16 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-
-##Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 Warship
 </UnitType>
@@ -62,19 +53,19 @@ Aerodyne
 </motion_type>
 
 <transporters>
-smallcraftbay:26.0:6:1
-asfbay:123.0:7:3
-cargobay:27255.0:1:4
+smallcraftbay:26.0:6:1::-1:0
+asfbay:123.0:7:3::-1:0
+cargobay:27255.0:1:4::-1:0
 dockingcollar
 dockingcollar
 dockingcollar
 dockingcollar
 dockingcollar
 dockingcollar
-1stclassquarters:540.0:0
-crewquarters:3941.0:0
-2ndclassquarters:3661.0:0
-cargobay:39639.0:1:13
+1stclassquarters:540.0:0:-1::-1:0
+crewquarters:3941.0:0:-1::-1:0
+2ndclassquarters:3661.0:0:-1::-1:0
+cargobay:39639.0:1:13::-1:0
 </transporters>
 
 <SafeThrust>
@@ -101,9 +92,13 @@ cargobay:39639.0:1:13
 12
 </armor_type>
 
-<armor_tech>
+<armor_tech_rating>
+0
+</armor_tech_rating>
+
+<armor_tech_level>
 5
-</armor_tech>
+</armor_tech_level>
 
 <armor>
 310
@@ -275,11 +270,34 @@ ISERPPC
 90
 </structural_integrity>
 
+# Fluff Date: 2026-02-24 13:31:06
+<capabilities>
+The Feng Huang-class cruiser, named after the Phoenix, was intended to hold its own against the formidable Thera super-carrier. These cruisers prioritize armor and protection, a departure from the typical WarShip design that sacrifices armor for weaponry. The first cruiser of the class, Elias Jung, faced initial problems but re-entered service after an overhaul. Currently, there are four Feng Huang cruisers in service: Elias Jung, Franco Martell, Aleisha Kris, and Sundermann Rhys. However, the IIsa Hyung recently suffered a catastrophic explosion, causing extensive damage and necessitating repairs.
+</capabilities>
 
+<overview>
+The Impavido-class destroyer was the result of joint efforts between the Capellan Confederation and the Free Worlds League to develop a WarShip fleet. However, Chancellor Sun-Tzu Liao anticipated a future conflict with House Marik and secretly initiated the development of a larger cruiser with assistance from the Word of Blake. The Feng Huang-class cruiser was designed to prioritize armor protection over extensive weaponry, aligning with Sun-Tzu's strategy of maximizing defense capabilities.
+</overview>
 
+<history>
+The Impavido-class destroyer was developed through collaboration between the Capellan Confederation and the Free Worlds League to enhance their WarShip capabilities. Recognizing the growing threat posed by the League fleet, Chancellor Sun-Tzu Liao secretly pursued the construction of the Feng Huang-class cruiser with assistance from the Word of Blake. The first cruiser, Elias Jung, faced initial challenges but returned to service after improvements. The Capellan fleet currently operates four Feng Huang cruisers, while the IIsa Hyung is undergoing repairs following a suspected act of terrorism.
+</history>
 
+<manufacturer>
+Rashpur Owens, Inc. (Refit),Aris Memorial Yards (Refit)
+</manufacturer>
 
+<primaryFactory>
+Capella, Necromo
+</primaryFactory>
 
+<systemManufacturers>
+CHASSIS:Unknown
+ENGINE:Unknown
+ARMOR:Unknown
+COMMUNICATIONS:Unknown
+TARGETING:Unknown
+</systemManufacturers>
 
 <use>
 Cruiser
@@ -353,47 +371,4 @@ TR:3067
 <escape_pod>
 110
 </escape_pod>
-
-# Fluff Date: 2026-02-24 13:31:06
-<overview>
-<p>The Feng Huang-class cruiser was the first warship designed and constructed entirely by the Capellan Confederation in the modern era. Developed under the direct orders of Chancellor Sun-Tzu Liao as part of his Xin Sheng national revitalization movement, the class was assembled in utmost secrecy at a classified shipyard facility with clandestine assistance from the Word of Blake. Intended as a strategic counter to the Free Worlds League's growing naval power, the Feng Huang represented a departure from conventional warship doctrine by prioritizing armor protection and defensive resilience over raw offensive firepower. The class name translates as Phoenix, reflecting the chancellor's vision of a Capellan nation rising renewed from decades of territorial losses and political humiliation to once again stand as a sovereign military power among the Great Houses of the Inner Sphere.</p>
-</overview>
-
-<capabilities>
-<p>Displacing 970,000 tons, the Feng Huang was a formidable cruiser-weight vessel capable of sustained independent operations. The hull carried 1,692 tons of Lamellor Ferro-Carbide armor, giving it exceptional protection for its displacement class and reflecting the design philosophy of survivability over striking power. A compact Kearny-Fuchida drive provided interstellar mobility, supplemented by a lithium-fusion battery that allowed consecutive jumps without recharging, a significant tactical advantage for rapid redeployment or emergency retreat. Standard thrust performance reached a safe four gravities with a maximum of six.</p><p>The Feng Huang mounted an exclusively energy-based weapons suite, eliminating ammunition dependency and enabling extended raiding operations far from supply lines. The capital battery comprised Naval PPCs in light, medium, and heavy configurations alongside Naval Lasers in 35, 45, and 55 classes, distributed across all firing arcs with the heaviest concentration in the broadside batteries. Anti-fighter defense relied on twenty ER Large Lasers, twenty Large Pulse Lasers, and twenty ER PPCs arranged in overlapping fields of fire. Six docking collars and twenty-six small craft bays provided substantial transport capacity, while over 116,000 tons of cargo space supported extended autonomous deployments.</p>
-</capabilities>
-
-<deployment>
-<p>The Upgrade variant was introduced in 3070, featuring significantly expanded capital weapons batteries on the quarter arcs and broadside positions, along with fighter capacity increased from twenty-six small craft to one hundred twenty-three aerospace fighters. The CCS IIsa Hyung and CCS Aleisha Kris were among the vessels refitted to the Upgrade configuration. Both cruisers saw heavy combat above Sian in 3074 during the Word of Blake's assault on the Capellan homeworld, where they played a critical role in the defense of the system. The destruction of the Necromo shipyards in 3071 forced all subsequent Upgrade refits to be conducted at Rashpur Owens facilities on Capella. The CCS Aleisha Kris ultimately survived the Jihad and all subsequent conflicts to become the last operational warship in the Capellan navy by the ilClan era, carefully preserved and withheld from major deployments due to its status as an irreplaceable national asset.</p>
-</deployment>
-
-<history>
-<p>The Feng Huang's origins lay in the cooperative warship development program between the Capellan Confederation and the Free Worlds League that had already produced the Impavido-class destroyer. While the joint program continued, Chancellor Sun-Tzu Liao anticipated an eventual confrontation with his League allies and secretly initiated development of a larger, more capable warship. Working through covert channels with the Word of Blake, the Confederation established a classified construction facility at the Aris Memorial Yards in the Necromo system, located at the L4 Trojan point between Necromo and Acorna. The facility operated under extreme security protocols, with only intensely loyal workers permitted and all communications strictly censored.</p><p>Construction of the lead vessel began in the late 3050s, with five hulls planned for the class. The first ship deployed in 3058 but was immediately plagued with mechanical problems that required an extensive overhaul before it could re-enter service in 3062. Despite these early difficulties, the program eventually produced five completed cruisers, all named for notable Capellan Chancellors. Four vessels achieved operational status while the fifth suffered a catastrophic engineering explosion attributed to sabotage by the Free Capella dissident movement.</p><p>The Jihad brought devastating consequences for the Feng Huang program. In 3071, Word of Blake forces attacked the Necromo system and systematically destroyed every industrial asset present, including the Aris Memorial Yards that had constructed the class. The destruction was so thorough that nothing remained to salvage, permanently ending any possibility of building additional hulls or producing major replacement components. An Upgrade variant had been introduced in 3070, featuring substantially increased capital weapons batteries and an expanded aerospace fighter complement of 123 craft, but the loss of Necromo meant that subsequent upgrades could only be performed at the Rashpur Owens facility at Capella.</p><p>Combat losses during the Jihad further reduced the class. Heavy naval fighting above Sian in 3074 saw surviving Feng Huang cruisers engaged against Word of Blake warships in desperate defense of the Capellan homeworld. The attrition of the Jihad and subsequent decades left the Capellan Confederation with a steadily dwindling warship fleet. By the ilClan era, only a single Feng Huang remained in service, preserved as the last operational warship in the Capellan navy and deliberately withheld from major engagements due to its irreplaceable nature.</p>
-</history>
-
-<manufacturer>
-Rashpur Owens, Inc. / Aris Memorial Yards
-</manufacturer>
-
-<primaryFactory>
-Capella / Necromo
-</primaryFactory>
-
-<systemManufacturers>
-CHASSIS:Aris Memorial Yards
-ENGINE:Unknown
-ARMOR:Unknown
-JUMP_JET:Unknown
-COMMUNICATIONS:Unknown
-TARGETING:Unknown
-</systemManufacturers>
-
-<systemModels>
-CHASSIS:Unknown
-ENGINE:Unknown
-ARMOR:Lamellor Ferro-Carbide
-JUMP_JET:Compact
-COMMUNICATIONS:Unknown
-TARGETING:Unknown
-</systemModels>
 

@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,16 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-
-# Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 Dropship
 </UnitType>
@@ -62,12 +53,12 @@ Aerodyne
 </motion_type>
 
 <transporters>
-smallcraftbay:2.0:2:1
-1stclassquarters:50.0:0
-crewquarters:154.0:0
-steeragequarters:180.0:0
-2ndclassquarters:0.0:0
-cargobay:511.0:1:6
+smallcraftbay:2.0:2:1::-1:0
+1stclassquarters:50.0:0:-1::-1:0
+crewquarters:154.0:0:-1::-1:0
+steeragequarters:180.0:0:-1::-1:0
+2ndclassquarters:0.0:0:-1::-1:0
+cargobay:511.0:1:6::-1:0
 </transporters>
 
 <SafeThrust>
@@ -94,9 +85,13 @@ cargobay:511.0:1:6
 20
 </armor_type>
 
-<armor_tech>
+<armor_tech_rating>
+0
+</armor_tech_rating>
+
+<armor_tech_level>
 1
-</armor_tech>
+</armor_tech_level>
 
 <armor>
 685
@@ -126,7 +121,7 @@ ISAMS Ammo:48
 </Nose Equipment>
 
 <Left Side Equipment>
-(B) Sub-Capital Laser (SCL/1)
+(B) Sub-Capital Laser /1
 (B) Heavy PPC
 Heavy PPC
 Heavy PPC
@@ -156,7 +151,7 @@ ISAMS Ammo:48
 </Left Side Equipment>
 
 <Right Side Equipment>
-(B) Sub-Capital Laser (SCL/1)
+(B) Sub-Capital Laser /1
 (B) Heavy PPC
 Heavy PPC
 Heavy PPC
@@ -258,3 +253,4 @@ RS:3145-NTNU
 <escape_pod>
 6
 </escape_pod>
+

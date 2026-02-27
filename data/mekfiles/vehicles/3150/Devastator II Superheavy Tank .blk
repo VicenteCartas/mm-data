@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,16 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-
-##Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 Tank
 </UnitType>
@@ -34,28 +25,29 @@ Devastator II Superheavy Tank
 </Name>
 
 <Model>
+
 </Model>
 
 <mul id:>
 8037
 </mul id:>
 
-<source>
-RS:3150
-</source>
-
 <year>
 3143
 </year>
+
+<originalBuildYear>
+3143
+</originalBuildYear>
 
 <type>
 IS Level 3
 </type>
 
-
 <role>
 Juggernaut
 </role>
+
 <motion_type>
 Tracked
 </motion_type>
@@ -72,9 +64,13 @@ Tracked
 4
 </armor_type>
 
-<armor_tech>
+<armor_tech_rating>
+0
+</armor_tech_rating>
+
+<armor_tech_level>
 5
-</armor_tech>
+</armor_tech_level>
 
 <armor>
 40
@@ -100,7 +96,7 @@ ISImprovedHeavyGauss Ammo
 ISImprovedHeavyGauss Ammo
 ISImprovedHeavyGauss Ammo
 IS Ammo SRM-4
-ISSponsonTurret
+SponsonTurret
 IS Vehicle Flamer Ammo
 IS Light Machine Gun Ammo - Full
 </Body Equipment>
@@ -109,7 +105,7 @@ IS Light Machine Gun Ammo - Full
 ISImprovedHeavyGaussRifle
 ISImprovedHeavyGaussRifle
 ISAntiMissileSystem
-Vehicle Flamer
+Flamer (Vehicle)
 Small Laser
 </Front Equipment>
 
@@ -132,6 +128,10 @@ Light Machine Gun
 <Rear Equipment>
 SRM 4
 </Rear Equipment>
+
+<source>
+RS:3150
+</source>
 
 <tonnage>
 160.0

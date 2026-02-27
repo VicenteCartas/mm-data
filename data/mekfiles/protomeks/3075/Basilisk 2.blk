@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,16 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-
-# Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 ProtoMek
 </UnitType>
@@ -61,9 +52,6 @@ Brawler
 Biped
 </motion_type>
 
-<transporters>
-</transporters>
-
 <cruiseMP>
 4
 </cruiseMP>
@@ -72,9 +60,29 @@ Biped
 4
 </jumpingMP>
 
+<interface_cockpit>
+false
+</interface_cockpit>
+
 <engine_type>
 0
 </engine_type>
+
+<clan_engine>
+false
+</clan_engine>
+
+<armor_type>
+42
+</armor_type>
+
+<armor_tech_rating>
+0
+</armor_tech_rating>
+
+<armor_tech_level>
+2
+</armor_tech_level>
 
 <internal_type>
 -1
@@ -91,10 +99,11 @@ Biped
 
 <Body Equipment>
 Clan Ammo SRM-2 (10)
-ProtomechJumpJet
-ProtomechJumpJet
-ProtomechJumpJet
-ProtomechJumpJet
+ProtoMechJumpJet
+ProtoMechJumpJet
+ProtoMechJumpJet
+ProtoMechJumpJet
+EIInterface
 </Body Equipment>
 
 <Head Equipment>
@@ -119,22 +128,14 @@ CLERMicroLaser
 CLSRM2
 </Main Gun Equipment>
 
-<source>
-TR:3075
-</source>
-
-<tonnage>
-7.0
-</tonnage>
-
 # Fluff Date: 2026-02-22 14:33:57
-<overview>
-<p>The Basilisk is a seven-ton second-generation ProtoMek produced by Clan Cloud Cobra to provide reliable heavy fire support for armored infantry and BattleMek formations. With firepower to match some light BattleMeks and nearly two full tons of armor protection, the Basilisk represents a significant step up in combat capability from the lighter ProtoMek designs. Unusual for a Clan war machine, the Basilisk's trademark is sturdiness and reliability rather than speed or innovation, reflecting the Cloud Cobras' pragmatic approach to integrating ProtoMek technology into their ground forces.</p>
-</overview>
-
 <capabilities>
 <p>The Basilisk's primary armament is a full-size Mek-scale ER Medium Laser, one of the most powerful energy weapons mounted on any ProtoMek. This weapon allows the Basilisk to inflict considerable damage at ranges normally associated with light BattleMek engagements. An LRM-3 launcher in the main gun mount provides supplementary fire support with two salvos of ammunition, typically used to soften targets at long range before closing to laser range. Five heat sinks manage the substantial thermal output from the ER Medium Laser.</p><p>Thirty-eight points of armor make the Basilisk one of the most heavily protected ProtoMeks in service, capable of absorbing multiple medium weapon hits before structural compromise. The trade-off is speed: a forty-five-rated engine provides only forty-three kilometers per hour cruising speed, making the Basilisk slower than an Elemental in powered armor. Without jump jets, the design relies on its heavy armor to survive the approach to engagement range. Most Basilisk operations proceed at a slow, steady pace that contrasts sharply with standard Clan battle doctrine, but the design's exceptional protection allows this conservative approach to succeed where faster but more fragile designs would be destroyed.</p>
 </capabilities>
+
+<overview>
+<p>The Basilisk is a seven-ton second-generation ProtoMek produced by Clan Cloud Cobra to provide reliable heavy fire support for armored infantry and BattleMek formations. With firepower to match some light BattleMeks and nearly two full tons of armor protection, the Basilisk represents a significant step up in combat capability from the lighter ProtoMek designs. Unusual for a Clan war machine, the Basilisk's trademark is sturdiness and reliability rather than speed or innovation, reflecting the Cloud Cobras' pragmatic approach to integrating ProtoMek technology into their ground forces.</p>
+</overview>
 
 <deployment>
 <p>The Basilisk 2 fundamentally reimagines the design as a close-quarters brawler. The ER Medium Laser gives way to an ER Small Laser in the torso and ER Micro Lasers in each arm, while an SRM-2 launcher in the main gun mount with ten rounds replaces the LRM-3. Four body-mounted jump jets provide one hundred twenty meters of leaping distance, addressing the base model's terrain limitations. Armor drops to thirty-four points to accommodate the jump jets and expanded weapons suite. This variant is commonly assigned to the most aggressive ProtoMek pilots in Beta Galaxy, who exploit the jump capability to close rapidly with opponents and overwhelm them with the diverse close-range weapons package. First tested by warriors of Alpha Galaxy's 149th Cobra Guards, the Basilisk 2 was most fully adopted by Beta Galaxy.</p>
@@ -156,7 +157,6 @@ Homer
 CHASSIS:Unknown
 ENGINE:Unknown
 ARMOR:Unknown
-JUMP_JET:Unknown
 COMMUNICATIONS:Unknown
 TARGETING:Unknown
 </systemManufacturers>
@@ -166,4 +166,12 @@ CHASSIS:Standard
 ENGINE:45
 ARMOR:Standard
 </systemModels>
+
+<source>
+TR:3075
+</source>
+
+<tonnage>
+7.0
+</tonnage>
 

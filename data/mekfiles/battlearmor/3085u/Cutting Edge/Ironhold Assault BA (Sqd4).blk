@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,15 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-#Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 BattleArmor
 </UnitType>
@@ -32,7 +24,7 @@ BattleArmor
 Ironhold Assault Battle Armor
 </Name>
 
-<model>
+<Model>
 (Sqd4)
 </Model>
 
@@ -40,29 +32,29 @@ Ironhold Assault Battle Armor
 1623
 </mul id:>
 
-<chassis>
-biped
-</chassis>
+<year>
+3077
+</year>
 
-<weightclass>
-4
-</weightclass>
+<originalBuildYear>
+3077
+</originalBuildYear>
 
-<Trooper Count>
-4
-</Trooper Count>
+<type>
+Clan Level 2
+</type>
+
+<role>
+Juggernaut
+</role>
+
+<motion_type>
+Jump
+</motion_type>
 
 <cruiseMP>
 1
 </cruiseMP>
-
-<jumpingMP>
-2
-</jumpingMP>
-
-<Armor>
-16
-</Armor>
 
 <armor_type>
 28
@@ -79,33 +71,29 @@ BABasicManipulator:LA
 BABasicManipulator:RA
 </Point Equipment>
 
-<type>
-Clan Level 2
-</type>
+<Trooper 1 Equipment>
+</Trooper 1 Equipment>
 
-<role>
-Juggernaut
-</role>
+<Trooper 2 Equipment>
+</Trooper 2 Equipment>
 
-<year>
-3077
-</year>
+<Trooper 3 Equipment>
+</Trooper 3 Equipment>
 
-<motion_type>
-Jump
-</motion_type>
+<Trooper 4 Equipment>
+</Trooper 4 Equipment>
 
-<source>
-TR:3085
-</source>
-
-<overview>
-The Ironhold Assault Battle Armor was developed by Clan Jade Falcon during the Jihad.
-</overview>
+<slotless_equipment>
+BAJumpJet
+</slotless_equipment>
 
 <capabilities>
 The Ironhold is noted for being more mobile than typical Clan Assault Armor, where it can employ its Jump Jets and give itself better tactical advantage over its opponents.
 </capabilities>
+
+<overview>
+The Ironhold Assault Battle Armor was developed by Clan Jade Falcon during the Jihad.
+</overview>
 
 <deployment>
 The Armor's main weapons are its arm mounted AP Gauss Rifles. Each of the large guns has been allotted 20 rounds of ammunition.
@@ -127,7 +115,32 @@ Sudeten
 CHASSIS:Unknown
 ENGINE:Unknown
 ARMOR:Unknown
-JUMPJET:Unknown
+JUMP_JET:Unknown
 COMMUNICATIONS:Unknown
 TARGETING:Unknown
 </systemManufacturers>
+
+<source>
+TR:3085
+</source>
+
+<chassis>
+biped
+</chassis>
+
+<jumpingMP>
+2
+</jumpingMP>
+
+<armor>
+16
+</armor>
+
+<Trooper Count>
+4
+</Trooper Count>
+
+<weightclass>
+4
+</weightclass>
+

@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,18 +15,9 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-
-# Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
-Aero
+AeroSpaceFighter
 </UnitType>
 
 <Name>
@@ -61,9 +52,6 @@ Fast Dogfighter
 Aerodyne
 </motion_type>
 
-<transporters>
-</transporters>
-
 <SafeThrust>
 9
 </SafeThrust>
@@ -96,9 +84,13 @@ Aerodyne
 19
 </armor_type>
 
-<armor_tech>
+<armor_tech_rating>
+0
+</armor_tech_rating>
+
+<armor_tech_level>
 2
-</armor_tech>
+</armor_tech_level>
 
 <omni>
 1
@@ -136,22 +128,14 @@ CLERMediumLaser:OMNI
 <Fuselage Equipment>
 </Fuselage Equipment>
 
-<source>
-TR:3055U
-</source>
-
-<tonnage>
-40.0
-</tonnage>
-
 # Fluff Date: 2026-02-23 10:34:56
-<overview>
-<p>The Batu is a forty-ton Clan OmniFighter developed by Clan Steel Viper as a light interceptor. Introduced in 2987 at the Mercer Foundries on New Kent, the design reflects the Vipers' preference for swift, decisive strikes in both aerial and ground engagements. The Batu prioritizes agility and raw offensive potential over durability, carrying an impressive eighteen tons of pod space for a fighter of its weight class. This generous payload allows the Batu to be configured for a wide range of combat roles despite its light frame.</p><p>Over the centuries, Clans Wolf, Jade Falcon, Fire Mandrill, and others have acquired Batu fighters through Trials of Possession and battlefield salvage, redistributing the design wherever it was most needed. The fighter remains a respected, if niche, presence in Clan toumans as a fast-response interceptor.</p>
-</overview>
-
 <capabilities>
 <p>Built on the Mercer Ultralight chassis and powered by a 280-rated XL engine, the Batu achieves a safe thrust of nine and maximum thrust of fourteen, making it one of the more agile fighters in its weight class. The Cobra Pattern 12 ferro-aluminum armor provides reasonable protection while keeping weight available for weaponry, though the resulting 153 points of armor coverage is below average for a forty-ton fighter. Ten fixed double heat sinks handle baseline thermal loads, though many configurations push beyond their capacity.</p><p>The Batu's eighteen tons of pod space represent its primary advantage, allowing it to mount firepower that rivals heavier designs. This comes at a cost, however. The fighter carries only 240 points of fuel, which severely limits its operational endurance. Pilots must engage decisively and withdraw quickly, as extended patrols or prolonged dogfights will exhaust fuel reserves well before ammunition or heat become concerns. The LongTalk 2 communications suite and Mark IX targeting and tracking system provide solid electronic support across all configurations.</p>
 </capabilities>
+
+<overview>
+<p>The Batu is a forty-ton Clan OmniFighter developed by Clan Steel Viper as a light interceptor. Introduced in 2987 at the Mercer Foundries on New Kent, the design reflects the Vipers' preference for swift, decisive strikes in both aerial and ground engagements. The Batu prioritizes agility and raw offensive potential over durability, carrying an impressive eighteen tons of pod space for a fighter of its weight class. This generous payload allows the Batu to be configured for a wide range of combat roles despite its light frame.</p><p>Over the centuries, Clans Wolf, Jade Falcon, Fire Mandrill, and others have acquired Batu fighters through Trials of Possession and battlefield salvage, redistributing the design wherever it was most needed. The fighter remains a respected, if niche, presence in Clan toumans as a fast-response interceptor.</p>
+</overview>
 
 <deployment>
 <p>The Prime configuration serves as the Batu's baseline dogfighting loadout, built around a nose-mounted ER large laser supported by four medium pulse lasers split between the wing mounts. An ER medium laser covers the rear arc. All weapons are linked to a targeting computer, significantly enhancing accuracy across the entire suite. This configuration excels in close-range aerial engagements where its precision and all-energy loadout eliminate ammunition concerns.</p>
@@ -184,4 +168,12 @@ ARMOR:Pattern 12 Ferro-aluminum
 COMMUNICATIONS:LongTalk 2
 TARGETING:Mark IX TTS
 </systemModels>
+
+<source>
+TR:3055U
+</source>
+
+<tonnage>
+40.0
+</tonnage>
 

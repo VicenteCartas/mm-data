@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,16 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-
-# Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 BattleArmor
 </UnitType>
@@ -44,6 +35,10 @@ Corona Heavy Battle Armor
 <year>
 3073
 </year>
+
+<originalBuildYear>
+3073
+</originalBuildYear>
 
 <type>
 Clan Level 2
@@ -75,10 +70,52 @@ CLBAFlamer:RA
 CLBASRM5:Body
 BA-SRM5 Ammo:Body:Shots3#
 BAAPMount:RA
-InfantryAssaultRifle:RA:APM
+InfantryAssaultRifle:APM:RA
 BABasicManipulator:LA
 BABattleClaw:RA
 </Point Equipment>
+
+<Trooper 1 Equipment>
+</Trooper 1 Equipment>
+
+<Trooper 2 Equipment>
+</Trooper 2 Equipment>
+
+<Trooper 3 Equipment>
+</Trooper 3 Equipment>
+
+<Trooper 4 Equipment>
+</Trooper 4 Equipment>
+
+<Trooper 5 Equipment>
+</Trooper 5 Equipment>
+
+<Trooper 6 Equipment>
+</Trooper 6 Equipment>
+
+<capabilities>
+The Corona was constructed in this think tank, but it took 10 years for new strategies to be developed to make advantage of it because it wasn't exactly like the Elemental combat armour. The design team made the choice to centre the battlesuit around a weapon that could remotely threaten 'Mechs. Despite a fifty percent increase in mass overall, the weight of the heavy weapon required to mount led to a twenty percent reduction in armour and the loss of the jump pack. Despite not being able to jump, the Corona can be transported to the battlefield on omniMechs and has a ground speed that is twice as fast as the Elemental suit's. However, due to its size, it is unable to launch anti-'Mech strikes. They began producing the Corona after Clan Burrock was absorbed by Adder, but it took them years before they really deployed it in battle.
+</capabilities>
+
+<overview>
+The Corona is a battle armor design that was created by Clan Star Adder following the Trials to determine which Clans would take part in Operation REVIVAL.
+</overview>
+
+<deployment>
+Despite being more powerful, the weapons in this variation do not have quite the range. This version's name refers to a three-shot SRM-5 launcher. The "SRM" Corona can summon a Heavy Recoilless Rifle and a Heavy Flamer after those missiles have been fired. The Anti-Personnel Weapon Mount is still present.
+</deployment>
+
+<history>
+Khan Cassius N'Buta understood that the Clans would be forever altered by their contact with the Inner Sphere, so he created a team of warriors and scientists to create new technologies and designs to help the Adders keep their edge.
+</history>
+
+<manufacturer>
+Facility C-BA-32
+</manufacturer>
+
+<primaryFactory>
+Sheridan
+</primaryFactory>
 
 <source>
 TR:3075
@@ -104,26 +141,3 @@ biped
 3
 </weightclass>
 
-<overview>
-The Corona is a battle armor design that was created by Clan Star Adder following the Trials to determine which Clans would take part in Operation REVIVAL.
-</overview>
-
-<history>
-Khan Cassius N'Buta understood that the Clans would be forever altered by their contact with the Inner Sphere, so he created a team of warriors and scientists to create new technologies and designs to help the Adders keep their edge.
-</history>
-
-<capabilities>
-The Corona was constructed in this think tank, but it took 10 years for new strategies to be developed to make advantage of it because it wasn't exactly like the Elemental combat armour. The design team made the choice to centre the battlesuit around a weapon that could remotely threaten 'Mechs. Despite a fifty percent increase in mass overall, the weight of the heavy weapon required to mount led to a twenty percent reduction in armour and the loss of the jump pack. Despite not being able to jump, the Corona can be transported to the battlefield on omniMechs and has a ground speed that is twice as fast as the Elemental suit's. However, due to its size, it is unable to launch anti-'Mech strikes. They began producing the Corona after Clan Burrock was absorbed by Adder, but it took them years before they really deployed it in battle.
-</capabilities>
-
-<deployment>
-Despite being more powerful, the weapons in this variation do not have quite the range. This version's name refers to a three-shot SRM-5 launcher. The "SRM" Corona can summon a Heavy Recoilless Rifle and a Heavy Flamer after those missiles have been fired. The Anti-Personnel Weapon Mount is still present.
-</deployment>
-
-<manufacturer>
-Facility C-BA-32
-</manufacturer>
-
-<primaryFactory>
-Sheridan
-</primaryFactory>

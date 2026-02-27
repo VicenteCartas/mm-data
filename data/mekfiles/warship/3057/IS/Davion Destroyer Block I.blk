@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,16 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-
-##Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 Warship
 </UnitType>
@@ -58,10 +49,10 @@ Aerodyne
 </motion_type>
 
 <transporters>
-smallcraftbay:2.0:2:1
-cargobay:70458.0:2:2
-crewquarters:1295.0:0
-1stclassquarters:920.0:0
+smallcraftbay:2.0:2:1::-1:0
+cargobay:70458.0:2:2::-1:0
+crewquarters:1295.0:0:-1::-1:0
+1stclassquarters:920.0:0:-1::-1:0
 </transporters>
 
 <SafeThrust>
@@ -88,9 +79,13 @@ crewquarters:1295.0:0
 41
 </armor_type>
 
-<armor_tech>
+<armor_tech_rating>
+0
+</armor_tech_rating>
+
+<armor_tech_level>
 5
-</armor_tech>
+</armor_tech_level>
 
 <armor>
 49
@@ -193,11 +188,34 @@ IS Ammo SRM-6:300
 55
 </structural_integrity>
 
+# Fluff Date: 2026-02-24 13:31:06
+<capabilities>
+The Block I Davions lacked sufficient armor protection and firepower for their intended mission. They were not equipped with a full fighter wing, and their original design did not include the ability to dock DropShips. These ships were ill-suited for heavy combat engagements and were primarily assigned to secondary duties such as convoy escort and Periphery patrol.
+</capabilities>
 
+<overview>
+The Block I series of Davion-class destroyers, initially introduced in the early 26th century, faced various issues and shortcomings due to bureaucratic mismanagement. These ships were under-armored, under-armed, and plagued by delays and cost overruns. As a result, their utilization was limited, and they did not become the pride of the navy as originally intended.
+</overview>
 
+<history>
+Despite entering service in 2510, the Block I Davions did not meet the expectations of the AFFS Department of the Army and the Navy. They became the result of bureaucratic kickbacks and administrative issues, bearing little resemblance to the desired specifications. Several ships saw limited service during the Davion Civil War, but plans for further construction were put on hold. The surviving Block I Davions, few in number, found an unexpected future in the hands of the Clans, having been leased to the SLDF and later upgraded by the Clans.
+</history>
 
+<manufacturer>
+Challenge Systems
+</manufacturer>
 
+<primaryFactory>
+Galax
+</primaryFactory>
 
+<systemManufacturers>
+CHASSIS:Unknown
+ENGINE:Unknown
+ARMOR:Unknown
+COMMUNICATIONS:Unknown
+TARGETING:Unknown
+</systemManufacturers>
 
 <use>
 Destroyer
@@ -267,47 +285,4 @@ TR:3057r
 <escape_pod>
 0
 </escape_pod>
-
-# Fluff Date: 2026-02-24 13:31:06
-<overview>
-<p>The Davion-class destroyer served as the backbone of the Federated Suns' WarShip fleet for over three centuries, though it only achieved this distinction after extensive redesign following a deeply troubled initial development. The original Block I vessels that entered service in the early twenty-sixth century were products of bureaucratic corruption, administrative incompetence, and a decade of delays that produced ships bearing little resemblance to what the navy had requested. The subsequent Block II redesign under Prince Alexander Davion transformed the class into a capable heavy destroyer that became the most numerous warship in Federated Suns service, with fifteen vessels operational across four active fleets by the late Star League era. The class's checkered history encompasses civil wars, interstellar conflicts, and eventual total loss during the Succession Wars.</p>
-</overview>
-
-<capabilities>
-<p>The Block I Davion mounted its primary offensive power forward, with four NAC/25 autocannons and four NL45 naval lasers in the nose backed by additional NL45 batteries in the forward quarter and broadside arcs. A trio of NAC/35 autocannons covered the aft arc. However, the design's most glaring deficiency was the complete absence of weapons coverage in the aft quarter arcs, leaving the vessel critically vulnerable to flanking attacks. The lack of DropShip docking collars, escape pods, and adequate armor further underscored the design's failures.</p><p>The Block II addressed every major shortcoming. Massing sixty thousand tons more than the original, it carried over twice the armor protection using Ferro-Carbide rather than standard plating, added two DropShip collars that typically carried assault DropShips, and expanded the fighter complement from two craft to a full eighteen-fighter wing. The weapons suite was completely overhauled, with NAC/25 batteries in the nose and aft, NAC/40 autocannons in the forward quarters, NAC/30 batteries in the broadsides, and NAC/25 coverage of the previously undefended aft quarters. Sixteen PPCs and sixteen Large Lasers provided conventional anti-fighter defense across all arcs.</p>
-</capabilities>
-
-<deployment>
-<p>The Block I Davions saw limited front-line use following their troubled entry into service in 2510, assigned primarily to secondary duties including convoy escort and Periphery patrol. Several vessels served with some distinction during the Davion Civil War, but plans for further construction were shelved after Prince William Davion's death in 2512. Prince Alexander Davion eventually leased all but three of the twenty-five surviving Block I hulls to the Star League Defense Force during the buildup to the Reunification War. Most were later purchased outright by the Star League and redesignated as the Whirlwind-class after receiving weapons upgrades. The SLS Davion's Heart gained notoriety during the United Triumph Military Exercises of 2572 when it collided with the Congress-class frigate SLS Rickover above Vakarel, one of the most serious incidents of the exercises.</p>
-</deployment>
-
-<history>
-<p>The Davion-class traces its origins to the Federated Suns' desire for a heavy destroyer capable of independent operations. Under First Prince Ellen Davion's direction, the program was intended to produce the pride of the navy. Instead, a decade of bureaucratic corruption, kickbacks, and administrative failures produced the Block I, a vessel so comprehensively flawed that it became the navy's bastard child. The ships were under-armored, under-armed, and lacking basic features like DropShip collars and escape pods. Cost overruns from the ten-year delay threatened to bankrupt the naval budget before the first hull even launched in 2510.</p><p>Prince Alexander Davion's rise to power brought sweeping reforms. He dismantled the corrupt structures responsible for the Block I debacle and authorized a complete redesign. The resulting Block II, entering service in 2552, bore little more than visual resemblance to its predecessor. Sixty thousand tons heavier, with doubled armor protection, proper docking collars, a full fighter wing, and comprehensive weapons coverage across all arcs, the Block II was the ship the navy had always wanted. Assault DropShips, typically Achilles-class or later Vengeance-class, were permanently assigned to each vessel.</p><p>Meanwhile, Alexander solved the Block I problem by leasing twenty-two of the twenty-five surviving hulls to the SLDF during the Reunification War buildup. Nineteen were eventually converted into the Whirlwind-class after weapons upgrades, and these vessels ultimately passed to the Clans following the Exodus. Three Block I hulls were retained by the Federated Suns, with rumors of their reactivation persisting into the 2760s. The Block II vessels served with distinction for over two centuries, forming the backbone of the Federated Suns Navy through some of its most desperate engagements. The grinding attrition of the Succession Wars, however, proved too much for even the improved Block II design. Heavy losses at battles across the Draconis March and beyond steadily eroded the fleet until no Block II Davions remained operational, ending the class's long and tumultuous service history.</p>
-</history>
-
-<manufacturer>
-Challenge Systems
-</manufacturer>
-
-<primaryFactory>
-Galax
-</primaryFactory>
-
-<systemManufacturers>
-CHASSIS:Unknown
-ENGINE:Unknown
-ARMOR:Unknown
-JUMP_JET:Unknown
-COMMUNICATIONS:Unknown
-TARGETING:Unknown
-</systemManufacturers>
-
-<systemModels>
-CHASSIS:Unknown
-ENGINE:Unknown
-ARMOR:Standard
-JUMP_JET:Unknown
-COMMUNICATIONS:Unknown
-TARGETING:Unknown
-</systemModels>
 

@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,16 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-
-# Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 Tank
 </UnitType>
@@ -45,6 +36,10 @@ Ontos Heavy Tank
 2876
 </year>
 
+<originalBuildYear>
+2876
+</originalBuildYear>
+
 <type>
 IS Level 1
 </type>
@@ -64,6 +59,18 @@ Tracked
 <engine_type>
 1
 </engine_type>
+
+<armor_type>
+0
+</armor_type>
+
+<armor_tech_rating>
+0
+</armor_tech_rating>
+
+<armor_tech_level>
+1
+</armor_tech_level>
 
 <armor>
 30
@@ -101,14 +108,6 @@ LRM 10
 LRM 10
 </Turret Equipment>
 
-<source>
-TR:3039
-</source>
-
-<tonnage>
-95.0
-</tonnage>
-
 <capabilities>
 The Ontos weighs 95 tons and has a top speed of 54 kilometers per hour. Though typical for a vehicle of its size, its short-ranged armaments make this speed a significant disadvantage. The Ontos' incredible array of turret-mounted lasers is its heart. To keep the tank's Heavy Load Internal Combustion Engine from being damaged, support components such as power amplifiers and heat sinks take up more than three times the weight and area taken up by the energy weapons. Despite its flaws, the tank can still remove over three tons of armor in a single round, and many crews praise the tank's ability to go through long campaigns without reloading different types of ammunition.
 </capabilities>
@@ -144,6 +143,11 @@ TARGETING:GuideRite w/Laser Coordination Link
 TR:3039
 </source>
 
+<tonnage>
+95.0
+</tonnage>
+
 <fuelType>
 PETROCHEMICALS
 </fuelType>
+

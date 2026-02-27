@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,16 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-
-# Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 Tank
 </UnitType>
@@ -45,6 +36,10 @@ Partisan AA Vehicle
 3134
 </year>
 
+<originalBuildYear>
+3134
+</originalBuildYear>
+
 <type>
 IS Level 3
 </type>
@@ -52,6 +47,10 @@ IS Level 3
 <role>
 Sniper
 </role>
+
+<quirks>
+anti_air
+</quirks>
 
 <motion_type>
 Wheeled
@@ -69,9 +68,13 @@ Wheeled
 1
 </armor_type>
 
-<armor_tech>
+<armor_tech_rating>
+0
+</armor_tech_rating>
+
+<armor_tech_level>
 5
-</armor_tech>
+</armor_tech_level>
 
 <armor>
 24
@@ -106,6 +109,10 @@ Hyper Velocity Auto Cannon/2
 RL10
 </Turret Equipment>
 
+<slotless_equipment>
+IS Ammo RL-10
+</slotless_equipment>
+
 <source>
 TR:3145:FWL
 </source>
@@ -114,10 +121,3 @@ TR:3145:FWL
 50.0
 </tonnage>
 
-<quirks>
-anti_air
-</quirks>
-
-<quirks>
-anti_air
-</quirks>

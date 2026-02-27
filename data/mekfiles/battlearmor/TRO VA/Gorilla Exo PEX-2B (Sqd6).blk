@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,16 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-
-# Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 BattleArmor
 </UnitType>
@@ -44,6 +35,10 @@ PEX-2B(Sqd6)
 <year>
 3056
 </year>
+
+<originalBuildYear>
+3056
+</originalBuildYear>
 
 <type>
 IS Level 2
@@ -76,6 +71,53 @@ BACuttingTorch:Body
 BASearchlight:Body
 </Squad Equipment>
 
+<Trooper 1 Equipment>
+</Trooper 1 Equipment>
+
+<Trooper 2 Equipment>
+</Trooper 2 Equipment>
+
+<Trooper 3 Equipment>
+</Trooper 3 Equipment>
+
+<Trooper 4 Equipment>
+</Trooper 4 Equipment>
+
+<Trooper 5 Equipment>
+</Trooper 5 Equipment>
+
+<Trooper 6 Equipment>
+</Trooper 6 Equipment>
+
+<capabilities>
+The exoskeleton has been equipped with both Standard and Salvage Arm manipulators. The suit has been fitted out with a searchlight and cutting torch mounted on the body. It is protected with only 50 kilograms of standard armor. With its at maximum speed of 10 km/h, the suit is unsuited for battlefield salvage jobs.
+</capabilities>
+
+<overview>
+The PEX-2B Gorilla is an Industrial Exoskeleton which was designed as a modest-cost civilian exoskeleton.
+</overview>
+
+<history>
+The suit was created during the mid thirty-first century when Star League technology became available again. With the introduction of the Battle Armor, StarCorps used newly regained Star League technology to produce the exoskeleton. Aimed at smaller companies which wouldn't normally to be able purchase high-end Exoskeletons, StarCorps' gambit paid off. Tens of thousands of the suit have been sold across the Inner Sphere and Periphery. It has been particularly popular with the construction trades. Between 3068 and 3069, sales of the Gorilla spiked in the Arc-Royal Theater. Later investigation found that the survivors of Wolf's Dragoons were buying large numbers of the Gorilla and using them on Outreach.
+</history>
+
+<manufacturer>
+StarCorps Industries,StarCorps Industries,StarCorps Industries,StarCorps Industries
+</manufacturer>
+
+<primaryFactory>
+Crofton,Emris IV,Loburg,St. Ives
+</primaryFactory>
+
+<systemManufacturers>
+CHASSIS:Unknown
+ENGINE:Unknown
+ARMOR:Unknown
+JUMP_JET:Unknown
+COMMUNICATIONS:Unknown
+TARGETING:Unknown
+</systemManufacturers>
+
 <source>
 TR:VAr
 </source>
@@ -104,35 +146,3 @@ true
 0
 </weightclass>
 
-<overview>
-The PEX-2B Gorilla is an Industrial Exoskeleton which was designed as a modest-cost civilian exoskeleton.
-</overview>
-
-<capabilities>
-The exoskeleton has been equipped with both Standard and Salvage Arm manipulators. The suit has been fitted out with a searchlight and cutting torch mounted on the body. It is protected with only 50 kilograms of standard armor. With its at maximum speed of 10 km/h, the suit is unsuited for battlefield salvage jobs.
-</capabilities>
-
-<deployment>
-</deployment>
-
-<history>
-The suit was created during the mid thirty-first century when Star League technology became available again. With the introduction of the Battle Armor, StarCorps used newly regained Star League technology to produce the exoskeleton. Aimed at smaller companies which wouldn't normally to be able purchase high-end Exoskeletons, StarCorps' gambit paid off. Tens of thousands of the suit have been sold across the Inner Sphere and Periphery. It has been particularly popular with the construction trades. Between 3068 and 3069, sales of the Gorilla spiked in the Arc-Royal Theater. Later investigation found that the survivors of Wolf's Dragoons were buying large numbers of the Gorilla and using them on Outreach.
-</history>
-
-
-<manufacturer>
-StarCorps Industries,StarCorps Industries,StarCorps Industries,StarCorps Industries
-</manufacturer>
-
-<primaryFactory>
-Crofton,Emris IV,Loburg,St. Ives
-</primaryFactory>
-
-<systemManufacturers>
-CHASSIS:Unknown
-ENGINE:Unknown
-ARMOR:Unknown
-JUMPJET:Unknown
-COMMUNICATIONS:Unknown
-TARGETING:Unknown
-</systemManufacturers>

@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,16 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-
-# Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 BattleArmor
 </UnitType>
@@ -44,6 +35,10 @@ Phalanx Battle Armor
 <year>
 3065
 </year>
+
+<originalBuildYear>
+3065
+</originalBuildYear>
 
 <type>
 IS Level 2
@@ -75,7 +70,7 @@ BA-SRM4 Ammo:Body:Shots1#
 BA-SRM4 Ammo:Body:Shots1#
 BABattleClaw:LA
 BAArmoredGlove:RA
-Infantry Auto Rifle:APM:RA
+InfantryAssaultRifle:APM:RA
 IS BA Stealth (Improved):Body
 IS BA Stealth (Improved):Body
 IS BA Stealth (Improved):RA
@@ -84,37 +79,31 @@ IS BA Stealth (Improved):LA
 ISBAKingDavidLightGaussRifle:RA
 </Squad Equipment>
 
-<chassis>
-biped
-</chassis>
+<Trooper 1 Equipment>
+</Trooper 1 Equipment>
 
-<jumpingMP>
-0
-</jumpingMP>
+<Trooper 2 Equipment>
+</Trooper 2 Equipment>
 
-<source>
-TR:3075
-</source>
+<Trooper 3 Equipment>
+</Trooper 3 Equipment>
 
-<armor>
-7
-</armor>
+<Trooper 4 Equipment>
+</Trooper 4 Equipment>
 
-<Trooper Count>
-6
-</Trooper Count>
+<Trooper 5 Equipment>
+</Trooper 5 Equipment>
 
-<weightclass>
-3
-</weightclass>
-
-<overview>
-The Phalanx is a battle armor design created and produced by Irian Technologies in the Free Worlds League. This design is the FWLM's answer to larger, harder-hitting battle armor such as the Kanazuchi and Gnome.
-</overview>
+<Trooper 6 Equipment>
+</Trooper 6 Equipment>
 
 <capabilities>
 The Phalanx has decent speed for heavy battle armor, capable of moving on the ground at a clip up to 22 km/h. It skimps on armor protection, however, as a Large Laser is enough to completely destroy the suit and kill the trooper inside. This armor is, however, improved stealth, which means that the Phalanx is much more difficult to target than most other battle armor.
 </capabilities>
+
+<overview>
+The Phalanx is a battle armor design created and produced by Irian Technologies in the Free Worlds League. This design is the FWLM's answer to larger, harder-hitting battle armor such as the Kanazuchi and Gnome.
+</overview>
 
 <deployment>
 The Phalanx features a "King David" Light Gauss Rifle, which has good range, but only decent firepower. To supplement this, the battlesuit carries an SRM-4 with an additional reload. The missile launcher uses a detachable system similar to the one found on the Longinus. The Phalanx has a Battle Claw on the left hand and an Armored Glove on the right, meaning that it can make use of infantry weapons and can ride mounted on OmniMechs. It cannot, however, make anti-'Mech attacks.
@@ -136,7 +125,32 @@ Irian,Washburn
 CHASSIS:Unknown
 ENGINE:Unknown
 ARMOR:Unknown
-JUMPJET:Unknown
+JUMP_JET:Unknown
 COMMUNICATIONS:Unknown
 TARGETING:Unknown
 </systemManufacturers>
+
+<source>
+TR:3075
+</source>
+
+<chassis>
+biped
+</chassis>
+
+<jumpingMP>
+0
+</jumpingMP>
+
+<armor>
+7
+</armor>
+
+<Trooper Count>
+6
+</Trooper Count>
+
+<weightclass>
+3
+</weightclass>
+

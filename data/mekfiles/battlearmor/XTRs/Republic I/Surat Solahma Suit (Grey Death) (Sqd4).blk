@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,16 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-
-##Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 BattleArmor
 </UnitType>
@@ -33,7 +24,7 @@ BattleArmor
 Surat (Gray Death) Solahma Suit
 </Name>
 
-<model>
+<Model>
 (Sqd4)
 </Model>
 
@@ -57,12 +48,15 @@ Mixed (IS Chassis)
 Ambusher
 </role>
 
+<quirks>
+bad_rep_is
+easy_maintain
+poor_work
+</quirks>
+
 <motion_type>
 Leg
 </motion_type>
-
-<transporters>
-</transporters>
 
 <cruiseMP>
 3
@@ -81,10 +75,6 @@ BABattleClaw:LA
 CLBAHeavySmallLaser:RA
 BAAPMount:LA
 InfantryAssaultRifle:APM
-SwarmMek
-SwarmWeaponMek
-StopSwarm
-LegAttack
 </Squad Equipment>
 
 <Trooper 1 Equipment>
@@ -127,7 +117,7 @@ Furillo,Glengary
 CHASSIS:Unknown
 ENGINE:Unknown
 ARMOR:Unknown
-JUMPJET:Unknown
+JUMP_JET:Unknown
 COMMUNICATIONS:Unknown
 TARGETING:Unknown
 </systemManufacturers>
@@ -155,11 +145,4 @@ biped
 <weightclass>
 2
 </weightclass>
-
-
-<quirks>
-easy_maintain
-bad_rep_is
-poor_work
-</quirks>
 

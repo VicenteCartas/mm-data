@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,16 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-
-#Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 Tank
 </UnitType>
@@ -41,30 +32,53 @@ Demolisher II Heavy Tank
 867
 </mul id:>
 
-<Tonnage>
-100
-</Tonnage>
+<year>
+3074
+</year>
+
+<originalBuildYear>
+3074
+</originalBuildYear>
+
+<type>
+IS Level 3
+</type>
+
+<role>
+Missile Boat
+</role>
+
+<motion_type>
+Tracked
+</motion_type>
 
 <cruiseMP>
 3
 </cruiseMP>
 
-#Order is Tank/VTOL/LST
-<Armor>
+<engine_type>
+2
+</engine_type>
+
+<armor_type>
+6
+</armor_type>
+
+<armor_tech_rating>
+0
+</armor_tech_rating>
+
+<armor_tech_level>
+1
+</armor_tech_level>
+
+<armor>
 86
 68
 68
 70
 75
-</Armor>
-
-<Turret Equipment>
-Thunderbolt 20
-Thunderbolt 20
-ISStreakSRM6
-ISERMediumLaser
-ISERMediumLaser
-</Turret Equipment>
+</armor>
 
 <Body Equipment>
 IS Ammo Thunderbolt-20
@@ -81,37 +95,25 @@ IS Streak SRM 6 Ammo
 ISCASE
 </Body Equipment>
 
-<type>
-IS Level 3
-</type>
+<Front Equipment>
+</Front Equipment>
 
-<role>
-Missile Boat
-</role>
+<Right Equipment>
+</Right Equipment>
 
-<year>
-3074
-</year>
+<Left Equipment>
+</Left Equipment>
 
-<internal_type>
-0
-</internal_type>
+<Rear Equipment>
+</Rear Equipment>
 
-<armor_type>
-6
-</armor_type>
-
-<engine_type>
-2
-</engine_type>
-
-<motion_type>
-Tracked
-</motion_type>
-
-<source>
-TR:3060
-</source>
+<Turret Equipment>
+Thunderbolt 20
+Thunderbolt 20
+ISStreakSRM6
+ISERMediumLaser
+ISERMediumLaser
+</Turret Equipment>
 
 <capabilities>
 The result is a slow-moving tank that can literally demolish anything in its path. CASE protects the crew of this vehicle from potentially-lethal ammunition explosions. Fourteen and a half tons of ferro-fibrous armor protect the vehicle from all but the most determined and concentrated of assaults.
@@ -144,3 +146,12 @@ ARMOR:Starslab/6 ferro-fibrous w/ CASE
 COMMUNICATIONS:Neil 9000
 TARGETING:Angst Clear View 2A
 </systemManufacturers>
+
+<source>
+TR:3060
+</source>
+
+<tonnage>
+100.0
+</tonnage>
+

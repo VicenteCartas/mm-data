@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,16 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-
-# Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 BattleArmor
 </UnitType>
@@ -44,6 +35,10 @@ Elemental Battle Armor
 <year>
 3069
 </year>
+
+<originalBuildYear>
+3069
+</originalBuildYear>
 
 <type>
 Clan Level 2
@@ -73,10 +68,6 @@ Jump
 CLBAAPGaussRifle:RA
 CLBASRM2 (OS):Body
 BABattleClaw:LA
-SwarmMek
-SwarmWeaponMek
-StopSwarm
-LegAttack
 Clan BA Fire Resistant:LA
 Clan BA Fire Resistant:LA
 Clan BA Fire Resistant:LA
@@ -84,29 +75,28 @@ Clan BA Fire Resistant:Body
 Clan BA Fire Resistant:Body
 </Point Equipment>
 
-<source>
-TR:3085
-</source>
+<Trooper 1 Equipment>
+</Trooper 1 Equipment>
 
-<chassis>
-biped
-</chassis>
+<Trooper 2 Equipment>
+</Trooper 2 Equipment>
 
-<jumpingMP>
-3
-</jumpingMP>
+<Trooper 3 Equipment>
+</Trooper 3 Equipment>
 
-<armor>
-10
-</armor>
+<Trooper 4 Equipment>
+</Trooper 4 Equipment>
 
-<Trooper Count>
-6
-</Trooper Count>
+<Trooper 5 Equipment>
+</Trooper 5 Equipment>
 
-<weightclass>
-2
-</weightclass>
+<Trooper 6 Equipment>
+</Trooper 6 Equipment>
+
+<slotless_equipment>
+BAJumpJet
+BA-SRM2 Ammo:Shots1#
+</slotless_equipment>
 
 <capabilities>
 The roots of the Elemental battle armor can be traced back to pressurized diving suits built by Clan Goliath Scorpion. These underwater suits already had most of the basic equipment common to current battle armor designs: myomer musculature, self-contained air-supply and life support systems, and heavy, atmospherically sealed bodies designed to handle extreme conditions. Clan Wolf saw the diving suit's military potential, but instead of claiming the designs through combat, they directed their merchant caste to acquire a number through trade. Weaponization of these suits began with adding armor, weapons, and small jump jets until proof of concept was established. Advanced manufacturing then ensued, and while Clan Wolf did experiment with specialist suits designed for specific environments, they eventually settled on a general purpose design that defined the standard used by all Clans for over two centuries. The specialist suits would later go on to inspire the Gnome, Salamander, Sylph and Undine.
@@ -136,7 +126,32 @@ Sudeten
 CHASSIS:Various
 ENGINE:Various
 ARMOR:Various
-JUMPJET:Various
+JUMP_JET:Various
 COMMUNICATIONS:Various
 TARGETING:Various
 </systemManufacturers>
+
+<source>
+TR:3085
+</source>
+
+<chassis>
+biped
+</chassis>
+
+<jumpingMP>
+3
+</jumpingMP>
+
+<armor>
+10
+</armor>
+
+<Trooper Count>
+6
+</Trooper Count>
+
+<weightclass>
+2
+</weightclass>
+

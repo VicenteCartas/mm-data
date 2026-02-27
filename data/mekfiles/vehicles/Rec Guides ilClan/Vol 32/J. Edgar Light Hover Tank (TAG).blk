@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,16 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-
-##Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 Tank
 </UnitType>
@@ -61,9 +52,6 @@ Scout
 Hover
 </motion_type>
 
-<transporters>
-</transporters>
-
 <cruiseMP>
 11
 </cruiseMP>
@@ -76,9 +64,13 @@ Hover
 1
 </armor_type>
 
-<armor_tech>
+<armor_tech_rating>
+0
+</armor_tech_rating>
+
+<armor_tech_level>
 1
-</armor_tech>
+</armor_tech_level>
 
 <armor>
 31
@@ -110,14 +102,6 @@ Medium Laser
 ISTAG
 </Turret Equipment>
 
-<source>
-Record Sheets: 3058
-</source>
-
-<tonnage>
-25.0
-</tonnage>
-
 <capabilities>
 With very light armor, the J. Edgar is dependent on it's extreme speed for protection. Attempts over the years have aimed at improving it's armor while not sacrificing it's incredible speed.
 </capabilities>
@@ -127,7 +111,7 @@ The J. Edgar is a lightweight, speedy hovercraft. The J. Edgar's speed and the 
 </overview>
 
 <deployment>
-This 3053 spotter variant mounts a TAG and a Beagle Active Probe, in lieu of the SRMs, for spotting and acquiring targets deep behind enemy lines. Two medium lasers are also carried for self defense. The Active Probe allows it to detect powered down or hidden targets within the area. While carrying 1/2 ton less armor in order to fit the electronics, upgrading to ferro-fibrous gives it slightly more protection. 
+This 3053 spotter variant mounts a TAG and a Beagle Active Probe, in lieu of the SRMs, for spotting and acquiring targets deep behind enemy lines. Two medium lasers are also carried for self defense. The Active Probe allows it to detect powered down or hidden targets within the area. While carrying 1/2 ton less armor in order to fit the electronics, upgrading to ferro-fibrous gives it slightly more protection.
 </deployment>
 
 <history>
@@ -148,3 +132,12 @@ ARMOR:StarSlab/7
 COMMUNICATIONS:Alphard Original Two or Neil 5000
 TARGETING:RCA Instatrac Mk. II or TracTex Alpha-1
 </systemManufacturers>
+
+<source>
+Record Sheets: 3058
+</source>
+
+<tonnage>
+25.0
+</tonnage>
+

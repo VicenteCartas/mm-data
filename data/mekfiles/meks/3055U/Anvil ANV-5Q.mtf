@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,44 +15,42 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
+generator:MegaMek Suite 0.50.12 on 2026-02-26
 chassis:Anvil
 model:ANV-5Q
 mul id:51
 
 Config:Biped
-TechBase:Inner Sphere
-Era:3067
-Source:TR:3055U
-Rules Level:2
+techbase:Inner Sphere
+era:3067
+source:TR:3055U
+rules level:2
 role:Skirmisher
-
-
 
 quirk:ext_twist
 quirk:imp_target_med
 
+mass:60
+engine:300 Fusion Engine
+structure:IS Endo Steel
+myomer:Standard
 
-Mass:60
-Engine:300 Fusion Engine
-Structure:Endo Steel
-Myomer:Standard
+heat sinks:14 IS Double
+walk mp:5
+jump mp:3
 
-Heat Sinks:14 Double
-Walk MP:5
-Jump MP:3
-
-Armor:Standard(Inner Sphere)
-LA Armor:14
-RA Armor:14
-LT Armor:18
-RT Armor:18
-CT Armor:22
-HD Armor:7
-LL Armor:15
-RL Armor:15
-RTL Armor:7
-RTR Armor:7
-RTC Armor:7
+armor:Standard(Inner Sphere)
+LA armor:14
+RA armor:14
+LT armor:18
+RT armor:18
+CT armor:22
+HD armor:7
+LL armor:15
+RL armor:15
+RTL armor:7
+RTR armor:7
+RTC armor:7
 
 Weapons:4
 Large Pulse Laser, Left Torso
@@ -65,8 +63,8 @@ Shoulder
 Upper Arm Actuator
 Lower Arm Actuator
 Hand Actuator
-Endo Steel
-Endo Steel
+IS Endo Steel
+IS Endo Steel
 -Empty-
 -Empty-
 -Empty-
@@ -79,8 +77,8 @@ Shoulder
 Upper Arm Actuator
 Lower Arm Actuator
 Hand Actuator
-Endo Steel
-Endo Steel
+IS Endo Steel
+IS Endo Steel
 -Empty-
 -Empty-
 -Empty-
@@ -94,10 +92,10 @@ ISDoubleHeatSink
 ISDoubleHeatSink
 ISLargePulseLaser
 ISLargePulseLaser
-Endo Steel
-Endo Steel
-Endo Steel
-Endo Steel
+IS Endo Steel
+IS Endo Steel
+IS Endo Steel
+IS Endo Steel
 -Empty-
 -Empty-
 -Empty-
@@ -108,10 +106,10 @@ ISDoubleHeatSink
 ISDoubleHeatSink
 ISLargePulseLaser
 ISLargePulseLaser
-Endo Steel
-Endo Steel
-Endo Steel
-Endo Steel
+IS Endo Steel
+IS Endo Steel
+IS Endo Steel
+IS Endo Steel
 -Empty-
 -Empty-
 -Empty-
@@ -150,7 +148,7 @@ Upper Leg Actuator
 Lower Leg Actuator
 Foot Actuator
 Jump Jet
-Endo Steel
+IS Endo Steel
 -Empty-
 -Empty-
 -Empty-
@@ -164,7 +162,7 @@ Upper Leg Actuator
 Lower Leg Actuator
 Foot Actuator
 Jump Jet
-Endo Steel
+IS Endo Steel
 -Empty-
 -Empty-
 -Empty-
@@ -174,25 +172,17 @@ Endo Steel
 
 # Fluff Date: 2026-02-10 14:00:04
 overview:<p>The Anvil was introduced in 3055 by Free Worlds Defense Industries as a sixty-ton heavy BattleMech designed to serve as a close-combat brawler for the Free Worlds League Military. Originally conceived as an independent design codenamed the Stingray, the 'Mech's development trajectory shifted when engineers recognized its potential as a complementary partner to the Hammer light fire support 'Mech. The Free Worlds League merged elements of both designs and renamed the Stingray the Anvil, creating one of the more distinctive tactical pairings in modern Inner Sphere doctrine. Produced at the Gibson Federated BattleMechs facility on Gibson, the Anvil incorporated several advanced technologies at the cutting edge of Free Worlds League manufacturing capability during the Clan Invasion era.</p>
-
 capabilities:<p>The Anvil leverages a Duralyte 314 Endo Steel internal structure to maximize available tonnage, paired with a Vlar 300 standard fusion engine that propels the sixty-ton chassis to a top speed of eighty-six kilometers per hour. Three Chilton 365 jump jets provide ninety meters of jump capability, granting enhanced maneuverability during the close-range engagements the design was built to dominate. The primary armament consists of two Sutel Precision Line Large Pulse Lasers delivering devastating accuracy at medium ranges, supported by a pair of Martell medium lasers for supplementary firepower. An integrated Guardian ECM Suite disrupts enemy targeting and electronic warfare systems, providing significant protection against advanced sensor technology.</p><p>The Anvil's armor protection and power plant employ conventional technologies predating the Fourth Succession War, representing a deliberate design compromise that prioritized weapons sophistication over defensive innovation. This approach keeps production costs manageable while fielding a lethal close-combat package. The 'Mech's principal limitation lies in its short-range-focused arsenal, making it heavily reliant on its Hammer partner to soften targets at distance before the Anvil can close to its optimal engagement envelope.</p>
-
 deployment:<p>Introduced in 3067, the 5Q focuses on improving the Anvil's heat management capabilities. This variant removes the Guardian ECM Suite and half a ton of armor to accommodate two additional double heat sinks, allowing sustained high-tempo firing without the thermal buildup that limits the energy-intensive base model. The trade-off is significant, as the loss of electronic warfare protection leaves this variant more vulnerable to advanced targeting systems, limiting its effectiveness against technologically sophisticated opponents.</p>
-
 history:<p>Production of the Anvil began in 3055 at the Gibson Federated BattleMechs facility on Gibson, a division of Free Worlds Defense Industries. The design entered service during a period of rapid technological advancement within the Free Worlds League Military, which was investing heavily in new BattleMech designs incorporating recovered Star League-era technologies. The Anvil quickly found a home in numerous FWLM companies, with particularly heavy concentrations in formations associated with the Duchy of Andurien.</p><p>The Anvil-Hammer pairing proved its worth during Operation Guerrero in 3057, where the combination demonstrated devastating effectiveness during the FWLM's lightning assault into the Federated Commonwealth's Sarna March. The complementary doctrines of long-range suppression followed by aggressive close-quarters engagement became a hallmark of Free Worlds League combined-arms tactics during this period. The design also saw service during the multinational campaign against Clan Smoke Jaguar, where the Clans' technological superiority posed significant challenges. The Anvil's Guardian ECM systems proved critical in degrading Clan targeting advantages during these engagements.</p><p>Free Worlds Defense Industries continued investigating upgrades and modifications throughout the late 3050s and 3060s, producing both field kits and factory refits designed to extend the Anvil's service life. The development of specialized artillery-spotting and fire support variants reflected evolving FWLM tactical doctrine, including coordination with orbital bombardment assets through the Free Worlds League navy. The facility on Gibson fell under Word of Blake control during the Jihad, and production of the Anvil continued under new management. Following the liberation of Gibson, the production lines appear to have ceased operations, leaving surviving Anvils as increasingly rare artifacts of Free Worlds League military innovation.</p>
-
 manufacturer:Free Worlds Defense Industries
-
 primaryfactory:Gibson
-
 systemmanufacturer:CHASSIS:Unknown
 systemmode:CHASSIS:Duralyte 314 Endo Steel
 systemmanufacturer:ENGINE:Free Worlds Defense Industries
 systemmode:ENGINE:Vlar 300
 systemmanufacturer:ARMOR:Unknown
 systemmode:ARMOR:Jolassa-325
-systemmanufacturer:JUMP_JET:Unknown
-systemmode:JUMP_JET:Chilton 365
 systemmanufacturer:COMMUNICATIONS:Unknown
 systemmode:COMMUNICATIONS:Datacom 50
 systemmanufacturer:TARGETING:Unknown

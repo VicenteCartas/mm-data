@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,16 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-
-##Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 ProtoMek
 </UnitType>
@@ -33,9 +24,9 @@ ProtoMek
 Harpy
 </Name>
 
-<model>
+<Model>
 
-</model>
+</Model>
 
 <mul id:>
 1391
@@ -61,9 +52,6 @@ Ambusher
 Biped
 </motion_type>
 
-<transporters>
-</transporters>
-
 <cruiseMP>
 3
 </cruiseMP>
@@ -84,6 +72,18 @@ false
 false
 </clan_engine>
 
+<armor_type>
+42
+</armor_type>
+
+<armor_tech_rating>
+0
+</armor_tech_rating>
+
+<armor_tech_level>
+2
+</armor_tech_level>
+
 <internal_type>
 -1
 </internal_type>
@@ -98,9 +98,10 @@ false
 
 <Body Equipment>
 Clan Machine Gun Ammo - Proto (20)
-ProtomechJumpJet
-ProtomechJumpJet
-ProtomechJumpJet
+ProtoMechJumpJet
+ProtoMechJumpJet
+ProtoMechJumpJet
+EIInterface
 </Body Equipment>
 
 <Head Equipment>
@@ -119,29 +120,14 @@ CLMG
 <Legs Equipment>
 </Legs Equipment>
 
-
-
-
-
-
-
-
-<source>
-TR:3060
-</source>
-
-<tonnage>
-2.0
-</tonnage>
-
 # Fluff Date: 2026-02-22 14:33:57
-<overview>
-<p>The Harpy is a two-ton first-generation ProtoMek developed by Clan Smoke Jaguar as part of the original ProtoMek program on Huntress. The lightest design to emerge from the program, the Harpy blurs the line between battle armor and true combat walker, standing barely taller than an Elemental in powered armor. Despite its diminutive stature, the Harpy mounts a ballistic weapon and three jump jets that grant it remarkable tactical agility for its weight class. Intended primarily for anti-infantry operations and close-range ambush tactics, the Harpy relies on its small profile and jumping ability rather than armor protection or raw firepower to survive on the battlefield.</p>
-</overview>
-
 <capabilities>
 <p>The Harpy is defined by its jump capability. Three jump jets give the tiny machine ninety meters of leaping distance, allowing it to exploit terrain features that would block larger units and execute flanking maneuvers that heavier ProtoMeks cannot replicate. A single machine gun provides adequate firepower against infantry and battle armor formations, though it struggles to threaten anything with significant armor protection. The ten-rated fusion engine drives the two-ton frame at a modest thirty-two kilometers per hour cruising speed, making the Harpy one of the slower designs when earthbound.</p><p>The Harpy carries eleven points of armor, sufficient to absorb a medium laser hit to the torso but offering little margin against sustained fire. In standard battlefield exercises against Elemental battle armor, the Harpy generally fared poorly in direct engagements, as Elementals carry comparable firepower with better anti-Mek capability. The Harpy finds its niche in roles where its larger size offers a psychological advantage over conventional infantry and where its jump jets allow it to control engagement range. Commanders who attempt to use Harpy Points as frontline assault units quickly discover the design limitations, while those who employ them as mobile skirmishers and ambush elements find them surprisingly effective.</p>
 </capabilities>
+
+<overview>
+<p>The Harpy is a two-ton first-generation ProtoMek developed by Clan Smoke Jaguar as part of the original ProtoMek program on Huntress. The lightest design to emerge from the program, the Harpy blurs the line between battle armor and true combat walker, standing barely taller than an Elemental in powered armor. Despite its diminutive stature, the Harpy mounts a ballistic weapon and three jump jets that grant it remarkable tactical agility for its weight class. Intended primarily for anti-infantry operations and close-range ambush tactics, the Harpy relies on its small profile and jumping ability rather than armor protection or raw firepower to survive on the battlefield.</p>
+</overview>
 
 <deployment>
 <p>The original Harpy mounts a single machine gun in the torso with one hundred rounds of ammunition, backed by three body-mounted jump jets that provide ninety meters of jumping distance. This combination makes the base Harpy a competent anti-infantry platform capable of engaging conventional foot soldiers and light vehicles from unexpected angles. The machine gun exhausts its ammunition quickly in sustained engagements, typically lasting less than two minutes of continuous fire, but the Harpy is designed for hit-and-fade tactics rather than prolonged combat. First produced at the Abysmal Manufacturing Complex on Huntress under Clan Smoke Jaguar, the base Harpy subsequently entered limited production at several Homeworld facilities following the Jaguar Annihilation.</p>
@@ -163,7 +149,6 @@ Huntress (Abysmal)
 CHASSIS:Unknown
 ENGINE:Unknown
 ARMOR:Unknown
-JUMP_JET:Unknown
 COMMUNICATIONS:Unknown
 TARGETING:Unknown
 </systemManufacturers>
@@ -171,4 +156,12 @@ TARGETING:Unknown
 <systemModels>
 ENGINE:10 Fusion
 </systemModels>
+
+<source>
+TR:3060
+</source>
+
+<tonnage>
+2.0
+</tonnage>
 

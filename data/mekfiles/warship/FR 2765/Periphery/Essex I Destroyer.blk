@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,16 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-
-##Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 Warship
 </UnitType>
@@ -62,10 +53,10 @@ Aerodyne
 </motion_type>
 
 <transporters>
-smallcraftbay:12.0:2:1
-cargobay:134847.0:4:2
-1stclassquarters:230.0:0
-crewquarters:1519.0:0
+smallcraftbay:12.0:2:1::-1:0
+cargobay:134847.0:4:2::-1:0
+1stclassquarters:230.0:0:-1::-1:0
+crewquarters:1519.0:0:-1::-1:0
 </transporters>
 
 <SafeThrust>
@@ -92,9 +83,13 @@ crewquarters:1519.0:0
 41
 </armor_type>
 
-<armor_tech>
+<armor_tech_rating>
+0
+</armor_tech_rating>
+
+<armor_tech_level>
 5
-</armor_tech>
+</armor_tech_level>
 
 <armor>
 26
@@ -181,11 +176,34 @@ Naval Laser 35
 30
 </structural_integrity>
 
+# Fluff Date: 2026-02-26 11:44:24
+<capabilities>
+The Essex-class destroyers were known for their light frame and relatively simple design. While not as rugged as later ships, they introduced key features that defined Hegemony destroyers. Throughout their service, they underwent gradual replacements and enhancements. However, by the time of the Succession Wars, the Essex-class was outmatched and proved vulnerable targets.
+</capabilities>
 
+<overview>
+The Essex-class served as the Terran Hegemony's initial major destroyer class, playing a significant role in the Hegemony's early WarShip fleet. Although comparatively small and simple by Star League standards, these vessels pioneered features that became characteristic of Hegemony destroyers. They gradually gave way to more advanced ship classes like the Carson and Baron, eventually being decommissioned in favor of the Naga-class in 2645.
+</overview>
 
+<history>
+Initially decommissioned and acquired as military surplus, the Essex I-class experienced a unique revival during the turmoil of the Amaris Coup in the 2760s. With the Capellan Confederation facing naval infrastructure challenges, Delhi WarShips clandestinely smuggled the plans for the Vincent and Essex classes to Capellan shipyards, resuming production. These outdated and underweight ships bolstered the Capellan Confederation's navy during the Succession Wars, providing some operational flexibility early on. However, as the conflicts progressed, the aged Essexes became easy prey and none survived beyond 2830.
+</history>
 
+<manufacturer>
+Delhi WarShips, Delhi WarShips, Daussault-Shimmon Enterprises
+</manufacturer>
 
+<primaryFactory>
+Carver V, Capella, New Earth
+</primaryFactory>
 
+<systemManufacturers>
+CHASSIS:Unknown
+ENGINE:Unknown
+ARMOR:Unknown
+COMMUNICATIONS:Unknown
+TARGETING:Unknown
+</systemManufacturers>
 
 <use>
 Destroyer
@@ -254,47 +272,4 @@ FR:2765-Periphery
 <escape_pod>
 25
 </escape_pod>
-
-# Fluff Date: 2026-02-26 11:44:24
-<overview>
-<p>The Essex destroyer lineage encompasses two distinct but related warship classes that together span over five centuries of service -- from the original Essex I-class of 2351 through the thoroughly redesigned Essex II-class that entered production in 2711 and its Clan refit. The Essex I was a 560,000-ton destroyer built by Delhi WarShips at Carver V, one of the earliest purpose-built warship designs of the Terran Hegemony era that saw service with the Rim Worlds Republic and later the Capellan Confederation. The Essex II, produced by Mitchell Vehicles Interstellar at Graham IV, was a 620,000-ton complete redesign that retained the name but represented a generational leap in capability -- replacing the original's NAC/10 batteries with devastating NAC/20 naval autocannons and adding Barracuda capital missile launchers. Approximately 300 Essex IIs were built, making the class one of the most numerous destroyers of the Star League era. A critical design flaw in the Essex II's ammunition bay armor contributed to combat losses, but the class nevertheless served with distinction across the SLDF, multiple Clan navies, ComStar, the Word of Blake, and the Republic of the Sphere.</p>
-</overview>
-
-<capabilities>
-<p>The Essex II represents a dramatic improvement over the original Essex I in virtually every measurable parameter. At 620,000 tons and 615 meters, the Essex II is 60,000 tons heavier than the Essex I yet maintains identical three-gravity sustained and five-gravity burst acceleration profiles. The primary armament of twelve NAC/20 naval autocannons -- supplied by Karon Naval Armaments -- doubles the per-gun destructive output compared to the Essex I's twelve NAC/10s, while three Barracuda capital missile launchers add a long-range striking capability the original lacked entirely. Four NL35 naval lasers and four Medium Naval PPCs provide sustained energy firepower across broadside and aft quarter arcs. The Saro Company InterSystem Class VII engines drive the vessel, while Nirasaki Computers Collective Diamond Green fire control systems coordinate the weapons suite. Mitchell Vehicles Interstellar built the hulls with 306 tons of improved ferro-aluminum armor, though a critical flaw in the ammunition bay armor protection left the vessel vulnerable to catastrophic magazine detonations -- a deficiency that contributed to multiple combat losses. The structural integrity rating of 60 doubles the Essex I's 30, reflecting the complete redesign. The Clan refit added a lithium-fusion battery, upgraded electronics to the Nirasaki Athena-3 system, and expanded fighter bays from six to ten while increasing small craft capacity from four to ten.</p>
-</capabilities>
-
-<deployment>
-<p>The Essex I-class was among the earliest purpose-built warship designs of the Terran Hegemony, entering service in 2351 from Delhi WarShips' yards on Carver V. The Rim Worlds Republic operated approximately forty Essex Is, making the class a significant component of the Periphery state's naval forces during the Age of War era. The Capellan Confederation revived Essex I production at their Capella shipyards during the Amaris Crisis, a remarkable feat of industrial mobilization that demonstrated the relative simplicity of the original design compared to later Star League vessels. These Capellan-built Essex Is served through the early Succession Wars but were all lost by approximately 2830, their aging technology and battle attrition finally rendering the class extinct in Inner Sphere service. The Essex I's primary legacy is as a stepping stone -- its operational experience directly informed the requirements that produced the dramatically more capable Essex II-class over three centuries later.</p>
-</deployment>
-
-<history>
-<p>The Essex destroyer lineage began in 2351 with the original Essex I-class, a 560,000-ton destroyer built by Delhi WarShips at their Carver V shipyards for the Terran Hegemony. The Essex I was among the earliest purpose-built warship designs of the spacefaring era, mounting twelve NAC/10 naval autocannons with extensive NL45 and NL35 naval laser batteries in a hull capable of three-gravity sustained acceleration. The Rim Worlds Republic operated approximately forty Essex Is, and the Capellan Confederation revived production at Capella during the Amaris Crisis, though all Capellan-built vessels were lost by approximately 2830.</p><p>The Essex II-class represented a generational leap when it entered production at Mitchell Vehicles Interstellar's Graham IV yards in 2711. At 620,000 tons, the redesigned destroyer replaced the Essex I's NAC/10 batteries with twelve devastating NAC/20 naval autocannons supplied by Karon Naval Armaments, added Barracuda capital missile launchers, and incorporated Medium Naval PPCs alongside NL35 naval lasers. The Saro Company InterSystem Class VII engines maintained the same thrust profile in the heavier hull, while Nirasaki Computers Collective Diamond Green fire control provided superior targeting coordination. Approximately 300 Essex IIs were built, making the class one of the most numerous destroyers of the Star League era. A critical flaw in the ammunition bay armor protection, however, left the vessels vulnerable to catastrophic magazine detonations.</p><p>The Essex II saw extensive combat during the Periphery Uprising and Liberation of Terra. The SLS Gettysburg destroyed the last known Dart-class cruiser before itself falling to Caspar drones above Terra in 2777. Fewer than thirty Essex IIs survived the Liberation, scattered between the Inner Sphere and Kerensky's Exodus fleet.</p><p>Clan technicians refitted surviving Essex IIs with lithium-fusion batteries, upgraded Nirasaki Athena-3 electronics, and expanded aerospace capacity. These modernized vessels served across virtually every Clan navy, from the Steel Viper's Martial Legacy destroying three Jade Falcon warships at Lum to the Ghost Bear's White Claw falling at Alshain. The Dark Claw traced an extraordinary path through Smoke Jaguar, Combine, and Word of Blake service before destruction at Necromo. The WoBS Divine Forgiveness was destroyed at Terra during Operation SCOUR in 3078 but was salvaged and recommissioned by the Republic as the RSS Abundantia. The CDS Mulhacen, originally the SLS Marseilles, passed through Diamond Shark and Snow Raven ownership, remaining active with the Raven Alliance in the Dark Age era -- over three centuries after the Essex II first entered service.</p>
-</history>
-
-<manufacturer>
-Delhi WarShips
-</manufacturer>
-
-<primaryFactory>
-Carver V
-</primaryFactory>
-
-<systemManufacturers>
-CHASSIS:Delhi WarShips
-ENGINE:Unknown
-ARMOR:Unknown
-JUMP_JET:Unknown
-COMMUNICATIONS:Unknown
-TARGETING:Unknown
-</systemManufacturers>
-
-<systemModels>
-CHASSIS:Unknown
-ENGINE:Unknown
-ARMOR:Standard
-JUMP_JET:Unknown
-COMMUNICATIONS:Unknown
-TARGETING:Unknown
-</systemModels>
 

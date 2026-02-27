@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,16 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-
-##Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 Warship
 </UnitType>
@@ -62,16 +53,16 @@ Aerodyne
 </motion_type>
 
 <transporters>
-asfbay:18.0:6:1
-mekbay:108.0:2
-smallcraftbay:12.0:6:3
-cargobay:64066.0:1:4
+asfbay:18.0:6:1::-1:0
+mekbay:108.0:2:-1::-1:0
+smallcraftbay:12.0:6:3::-1:0
+cargobay:64066.0:1:4::-1:0
 dockingcollar
 dockingcollar
 dockingcollar
 dockingcollar
-1stclassquarters:460.0:0
-crewquarters:1603.0:0
+1stclassquarters:460.0:0:-1::-1:0
+crewquarters:1603.0:0:-1::-1:0
 </transporters>
 
 <SafeThrust>
@@ -98,9 +89,13 @@ crewquarters:1603.0:0
 13
 </armor_type>
 
-<armor_tech>
+<armor_tech_rating>
+0
+</armor_tech_rating>
+
+<armor_tech_level>
 5
-</armor_tech>
+</armor_tech_level>
 
 <armor>
 140
@@ -304,11 +299,34 @@ ISSmallPulseLaser
 70
 </structural_integrity>
 
+# Fluff Date: 2026-02-24 16:30:43
+<capabilities>
+Like many post-Helm Memory Core Inner Sphere designs, the Kyushu features primarily anti-fighter weaponry supported by a still sizable array of capital class weapons. The nose bays feature two NAC/40, two NAC/20s, two NL35s and a single Heavy NPPC supported by twin ER Large Lasers, two Medium Lasers, two Artemis enhanced LRM-20s, and five point defense Small Pulse Lasers. The fore angles each feature a NL35, two NAC/35s, two ER Large and two standard Medium lasers, two LRM-20s and five point defense pulse small lasers, with each broadside bay featuring the same layout while adding a NAC/20 and Medium NPPC. The vessel's aft weaponry mirrors the fore ones, apart from upgrading the NAC/35s on the aft angles for NAC/40s. The vessel’s 64,066 ton cargo capacity is divided between a small cargo area, combined berthing for eighteen AeroSpace Fighters and twelve Small Craft, and its huge BattleMech bay. The Kyushu’s most notable feature, the bay features 108 'Mech cubicles, a complete 'Mech Regiment, which can be transported to a planet’s surface either by transferring to one of the four attached DropShips, two at a time via one of the Kyushu’s twelve specially modified cargo shuttles or if the WarShip is in low orbit, directly from the cargo bay via Drop Pods.
+</capabilities>
 
+<overview>
+The initial design of the Draconis Combine’s first generation of post-Clan Invasion WarShips, the Kyushu-class frigate is intended primarily for transport/defense of invasion task forces and forms a large portion of the Combine's resurgent WarShip fleet.
+</overview>
 
+<history>
+With initial construction beginning in 3053 and finishing in late 3057, the class was among the first modern Successor States warships completed. While not intended for anti-ship operations, the frigate’s weapons array, Lithium-Fusion Battery, Ferro-Aluminum armor, and Double Heat Sinks allow the Kyushu to defend itself and the units in its care admirably. The Class is based on the Federated Suns’ Robinson Class Transport, a pair of which were captured during the early Succession Wars.
+</history>
 
+<manufacturer>
+Stellar Trek Enterprises - Terada Shipyards, Midway Warship Yard
+</manufacturer>
 
+<primaryFactory>
+Dieron,Midway
+</primaryFactory>
 
+<systemManufacturers>
+CHASSIS:Unknown
+ENGINE:Unknown
+ARMOR:Unknown
+COMMUNICATIONS:Unknown
+TARGETING:Unknown
+</systemManufacturers>
 
 <use>
 Frigate
@@ -378,47 +396,4 @@ TR:3057r
 <escape_pod>
 45
 </escape_pod>
-
-# Fluff Date: 2026-02-24 16:30:43
-<overview>
-<p>The Kyushu-class frigate was the first modern warship design produced by the Draconis Combine, and the most numerous class in its post-Clan Invasion naval fleet. Designed primarily for the transport and defense of invasion task forces, the Kyushu drew significant design inspiration from captured Federated Suns Robinson-class transports taken during the early Succession Wars. The class was distinguished by its enormous cargo capacity, most notably a dedicated bay capable of carrying a full regiment of over one hundred combat machines, a feature that made the Kyushu uniquely valuable as a force projection platform. Assembly began at the newly constructed Terada yard at Dieron in the early 3050s using components produced at facilities throughout the Combine, with additional vessels later constructed at Midway. The Kyushu served as the workhorse of the Combine's resurgent navy for decades, participating in nearly every major naval operation from the late Clan Invasion era through the Dark Age.</p>
-</overview>
-
-<capabilities>
-<p>At 630,000 tons, the Kyushu mounted an arsenal primarily of conventional anti-fighter weaponry supported by a sizable array of capital weapons. The nose and aft each carried two NAC/40s, two NAC/20s, two NL35 naval lasers, and a single heavy naval PPC, while the fore and aft quarter arcs mounted paired NAC/35s with two NL35s. The broadsides added a NAC/20 and medium naval PPC alongside the standard NL35 pair. Every firing arc carried a comprehensive anti-fighter battery of ER large lasers, medium lasers, Artemis-enhanced LRM-20 racks, and five small pulse lasers for point defense. The vessel sustained three thrust points safely with a maximum of five, and a lithium-fusion battery enabled rapid successive jumps. The 879.5 tons of improved ferro-aluminum armor provided reasonable protection for a vessel of its class. The Kyushu's most remarkable feature was its transport capacity, centered on 108 combat machine cubicles sufficient for a complete regiment. These machines could reach a planet's surface via four attached DropShips, twelve specially modified cargo shuttles carrying two units each, or direct orbital insertion through drop pods if the vessel achieved low orbit. The crew of forty-six officers, one hundred and seventy-six enlisted, fifty-three gunners, and three hundred and twelve bay personnel occupied spacious double-occupancy cabins across six decks, each with dedicated mess and recreation facilities.</p>
-</capabilities>
-
-<deployment>
-<p>The DCS Dieron Star, DCS Galedon Explorer, and DCS Pride of New Samarkand were the first three Kyushu-class frigates to enter service in late 3058. The Galedon Explorer was destroyed in the Galedon system in 3068 when a Clan Snow Raven naval Star struck the world during the opening stages of the Jihad. The Pride of New Samarkand was presumed lost during Operation BULLDOG against Clan Smoke Jaguar in 3059. The DCS Dream of Kessel completed trials at Dieron but was similarly presumed destroyed during BULLDOG. The DCS Luthien, which underwent trials in the Togura system, was destroyed in November 3072 at Benjamin alongside two Inazuma corvettes during an unsuccessful attempt to break a Word of Blake blockade. The DCS Victory at Wolcott participated in a costly engagement at Thule in November 3062 before being destroyed during the liberation of Terra in 3079 as part of Operation SCOUR. The DCS Haruna joined Task Force Serpent, capturing the Ghost Bear JumpShip Winter Wind at the Battle of Trafalgar in December 3059 and surviving engagements above Huntress in March 3060; its ultimate fate is unrecorded. The DCS Dieron Star survived the Jihad before being destroyed at the Battle of Rasalhague on April 29, 3100. The DCS Draconis Rift, the last survivor, dealt the killing blow to the Nightlord-class battleship Ursa Major at that same battle and remained operational into the ilClan era.</p>
-</deployment>
-
-<history>
-<p>The Kyushu program represented the Draconis Combine's first major step toward rebuilding naval capability following the devastating losses of the Succession Wars. The design drew heavily on a pair of Federated Suns Robinson-class transports captured during the early Succession Wars, which provided the baseline specifications for a vessel optimized for troop transport and invasion support rather than anti-ship combat. Construction of the Terada assembly facility at Dieron began in August 3053, with the prototype's keel laid that same year. Despite initial plans to launch by late 3057, the assembly proceeded smoothly and the first hulls were completed on schedule. The Midway Warship Yard also contributed to production, making the Kyushu the most numerous modern warship class in Combine service.</p><p>The first three vessels entered active service by late 3058, with four more completing shakedown trials around the same time. At least one additional hull participated in Task Force Serpent's deep strike into Clan territory in 3059. The class saw its first significant losses during Operation BULLDOG against Clan Smoke Jaguar, where two frigates were presumed destroyed. The First Combine-Dominion War in 3063 saw another vessel involved in fighting against Clan Ghost Bear. Despite not being designed as a front-line combatant, the Kyushu proved capable of defending itself and its charges admirably when called upon.</p><p>The Jihad brought further attrition. One frigate was destroyed in the Galedon system in 3068 by a Clan Snow Raven naval strike, while another was lost attempting to break a Word of Blake blockade at Benjamin in November 3072. A further vessel was destroyed during Operation SCOUR at Terra in 3079. The survivors continued to serve through the post-Jihad era and into the Second Combine-Dominion War, where one was destroyed at the Battle of Rasalhague in April 3100 while another dealt the killing blow to a Nightlord-class battleship at the same engagement. One Kyushu remained in service as of the ilClan era, the last of a class that had served the Combine faithfully for over four decades.</p>
-</history>
-
-<manufacturer>
-Stellar Trek Enterprises - Terada Shipyards, Midway Warship Yard
-</manufacturer>
-
-<primaryFactory>
-Dieron, Midway
-</primaryFactory>
-
-<systemManufacturers>
-CHASSIS:Stellar Trek Enterprises / Midway Warship Yard
-ENGINE:Unknown
-ARMOR:Unknown
-JUMP_JET:Unknown
-COMMUNICATIONS:Unknown
-TARGETING:Unknown
-</systemManufacturers>
-
-<systemModels>
-CHASSIS:Unknown
-ENGINE:Unknown
-ARMOR:Improved Ferro-Aluminum
-JUMP_JET:Unknown
-COMMUNICATIONS:Unknown
-TARGETING:Unknown
-</systemModels>
 

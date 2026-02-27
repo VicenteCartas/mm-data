@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,16 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-
-# Write the version number just in case...
-<Version>
-MAM0
-</Version>
-
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 SupportTank
 </UnitType>
@@ -45,6 +36,10 @@ SRM Carrier
 2440
 </year>
 
+<originalBuildYear>
+2440
+</originalBuildYear>
+
 <type>
 IS Level 2
 </type>
@@ -53,25 +48,37 @@ IS Level 2
 Ambusher
 </role>
 
-<tonnage>
-55.0
-</tonnage>
+<quirks>
+easy_maintain
+fast_reload
+obsolete:2580
+low_profile
+poor_performance
+</quirks>
 
 <motion_type>
 Tracked
 </motion_type>
 
+<cruiseMP>
+3
+</cruiseMP>
+
 <engine_type>
 1
 </engine_type>
 
-<fuel>
-1
-</fuel>
+<armor_type>
+47
+</armor_type>
 
-<cruiseMP>
+<armor_tech_rating>
 3
-</cruiseMP>
+</armor_tech_rating>
+
+<armor_tech_level>
+1
+</armor_tech_level>
 
 <armor>
 22
@@ -79,14 +86,6 @@ Tracked
 22
 12
 </armor>
-
-<barrating>
-6
-</barrating>
-
-<structural_tech_rating>
-3
-</structural_tech_rating>
 
 <Body Equipment>
 Advanced Fire Control
@@ -101,15 +100,15 @@ IS Ammo SRM-4
 </Body Equipment>
 
 <Front Equipment>
-ISSRM4
-ISSRM4
-ISSRM4
-ISSRM4
-ISSRM4
-ISSRM4
-ISSRM4
-ISSRM4
-ISSRM4
+SRM 4
+SRM 4
+SRM 4
+SRM 4
+SRM 4
+SRM 4
+SRM 4
+SRM 4
+SRM 4
 </Front Equipment>
 
 <Right Equipment>
@@ -121,9 +120,17 @@ ISSRM4
 <Rear Equipment>
 </Rear Equipment>
 
-<source>
-XTR:Primitives II
-</source>
+<barrating>
+6
+</barrating>
+
+<structural_tech_rating>
+3
+</structural_tech_rating>
+
+<engine_tech_rating>
+3
+</engine_tech_rating>
 
 <capabilities>
 The chassis for missile carriers, but they are all essentially military transport vehicles, tracked being the most common, adapted to carry the huge missile launchers and loading equipment. Those adaptations generally consist of reinforcing the suspension systems and armoring the crew and critical components areas enough to survive the back blast from so many missiles. With an average top speed of 54 km/h and armor unable to survive counterbattery fire, if forced to engage in direct combat a carrier's life expectancy is measured in seconds.
@@ -156,11 +163,19 @@ COMMUNICATIONS:Communicator
 TARGETING:FireScan with IndirecTrack
 </systemManufacturers>
 
-<quirks>
-easy_maintain
-low_profile
-fast_reload
-poor_performance
-obsolete:2580
-</quirks>
+<source>
+XTR:Primitives II
+</source>
+
+<tonnage>
+55.0
+</tonnage>
+
+<fuel>
+1.0
+</fuel>
+
+<fuelType>
+PETROCHEMICALS
+</fuelType>
 

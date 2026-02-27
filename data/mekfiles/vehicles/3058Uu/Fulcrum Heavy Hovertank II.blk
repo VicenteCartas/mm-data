@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,20 +15,15 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#building block data file
-<BlockVersion>
-1
-</BlockVersion>
-#Write the version number just in case...
-<Version>
-MAM0
-</Version>
+#Saved from version 0.50.12 on 2026-02-26
 <UnitType>
 Tank
 </UnitType>
+
 <Name>
 Fulcrum Heavy Hovertank
 </Name>
+
 <Model>
 II
 </Model>
@@ -36,56 +31,87 @@ II
 <mul id:>
 1155
 </mul id:>
-<Tonnage>
-50
-</Tonnage>
-<cruiseMP>
-10
-</cruiseMP>
-<Armor>
-46
-27
-27
-20
-40
-</Armor>
-<Turret Equipment>
-ISLRM10
-ISMediumLaser
-ISMediumLaser
-ISMediumLaser
-ISSRM6
-</Turret Equipment>
-<Front Equipment>
-ISTAG
-</Front Equipment>
-<Body Equipment>
-ISGuardianECM
-ISLRM10 Ammo
-ISSRM6 Ammo
-</Body Equipment>
+
+<year>
+3067
+</year>
+
+<originalBuildYear>
+3067
+</originalBuildYear>
+
 <type>
-IS
+IS Level 2
 </type>
 
 <role>
 Striker
 </role>
-<year>
-3067
-</year>
-<internal_type>
-0
-</internal_type>
-<armor_type>
-0
-</armor_type>
-<engine_type>
-2
-</engine_type>
+
 <motion_type>
 Hover
 </motion_type>
+
+<cruiseMP>
+10
+</cruiseMP>
+
+<engine_type>
+2
+</engine_type>
+
+<armor_type>
+0
+</armor_type>
+
+<armor_tech_rating>
+0
+</armor_tech_rating>
+
+<armor_tech_level>
+1
+</armor_tech_level>
+
+<armor>
+46
+27
+27
+20
+40
+</armor>
+
+<Body Equipment>
+ISGuardianECMSuite
+IS Ammo LRM-10
+IS Ammo SRM-6
+</Body Equipment>
+
+<Front Equipment>
+ISTAG
+</Front Equipment>
+
+<Right Equipment>
+</Right Equipment>
+
+<Left Equipment>
+</Left Equipment>
+
+<Rear Equipment>
+</Rear Equipment>
+
+<Turret Equipment>
+LRM 10
+Medium Laser
+Medium Laser
+Medium Laser
+SRM 6
+</Turret Equipment>
+
 <source>
 TR:3058U
 </source>
+
+<tonnage>
+50.0
+</tonnage>
+
