@@ -15,7 +15,7 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
-#Saved from version 0.50.12 on 2026-02-26
+#Saved from version 0.50.12 on 2026-02-28
 <UnitType>
 SupportTank
 </UnitType>
@@ -44,17 +44,14 @@ Heavy Combat ATV
 IS Level 2
 </type>
 
-<role>
-None
-</role>
-
 <motion_type>
 Wheeled
 </motion_type>
 
 <transporters>
-cargobay:0.145:1:1::-1:0
-pillionseats:2.0:0:-1::-1:0
+standardseats:1.0:0:-1::-1:0
+pillionseats:1.0:0:-1::-1:0
+cargobay:0.095:0:1::-1:0
 </transporters>
 
 <cruiseMP>
@@ -74,8 +71,12 @@ pillionseats:2.0:0:-1::-1:0
 </armor_tech_rating>
 
 <armor_tech_level>
-1
+-1
 </armor_tech_level>
+
+<internal_type>
+-1
+</internal_type>
 
 <armor>
 1
@@ -85,9 +86,9 @@ pillionseats:2.0:0:-1::-1:0
 </armor>
 
 <Body Equipment>
-AmphibiousChassis
 ISOffRoadChassis
 SV Chassis Mod [Tractor]
+AmphibiousChassis
 </Body Equipment>
 
 <Front Equipment>
@@ -134,4 +135,5 @@ HB:HD
 <fuelType>
 PETROCHEMICALS
 </fuelType>
+
 
