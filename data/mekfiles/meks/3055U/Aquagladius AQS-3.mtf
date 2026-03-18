@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -15,48 +15,45 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 
+generator:MegaMek Suite 0.50.12 on 2026-02-26
 chassis:Aquagladius
 model:AQS-3
 mul id:58
 
 Config:Biped
-TechBase:Inner Sphere
-Era:3065
-Source:TR:3055U
-Rules Level:4
+techbase:Inner Sphere
+era:3065
+source:TR:3055U
+rules level:4
 role:Striker
-
-
-
 
 quirk:difficult_eject
 quirk:difficult_maintain
 
+mass:50
+engine:300 Light Engine
+structure:IS Endo Steel
+myomer:Standard
 
-Mass:50
-Engine:300 Light Engine
-Structure:Endo Steel
-Myomer:Standard
+heat sinks:10 IS Double
+walk mp:6
+jump mp:0
 
-Heat Sinks:10 Double
-Walk MP:6
-Jump MP:0
-
-Armor:Light Ferro-Fibrous(Inner Sphere)
-LA Armor:15
-RA Armor:15
-LT Armor:17
-RT Armor:17
-CT Armor:22
-HD Armor:9
-LL Armor:23
-RL Armor:23
-RTL Armor:6
-RTR Armor:6
-RTC Armor:8
+armor:Light Ferro-Fibrous(Inner Sphere)
+LA armor:15
+RA armor:15
+LT armor:17
+RT armor:17
+CT armor:22
+HD armor:9
+LL armor:23
+RL armor:23
+RTL armor:6
+RTR armor:6
+RTC armor:8
 
 Weapons:1
-Taser, Left Arm
+BattleMech Taser, Left Arm
 
 Left Arm:
 Shoulder
@@ -66,9 +63,9 @@ Hand Actuator
 Mek Taser
 Mek Taser
 Mek Taser
-Light Ferro-Fibrous
-Light Ferro-Fibrous
-Light Ferro-Fibrous
+IS Light Ferro-Fibrous
+IS Light Ferro-Fibrous
+IS Light Ferro-Fibrous
 -Empty-
 -Empty-
 
@@ -80,38 +77,38 @@ IS Flail
 IS Flail
 IS Flail
 IS Flail
-Light Ferro-Fibrous
-Light Ferro-Fibrous
-Light Ferro-Fibrous
+IS Light Ferro-Fibrous
+IS Light Ferro-Fibrous
+IS Light Ferro-Fibrous
 -Empty-
 -Empty-
 
 Left Torso:
 Fusion Engine
 Fusion Engine
-ISUMU
-ISUMU
+UMU
+UMU
 Taser Ammo
 Taser Ammo
 Taser Ammo
 IS HarJel
-Endo Steel
-Endo Steel
-Endo Steel
-Endo Steel
+IS Endo Steel
+IS Endo Steel
+IS Endo Steel
+IS Endo Steel
 
 Right Torso:
 Fusion Engine
 Fusion Engine
-ISUMU
-ISUMU
+UMU
+UMU
 IS HarJel
-Endo Steel
-Endo Steel
-Endo Steel
-Endo Steel
-Endo Steel
-Endo Steel
+IS Endo Steel
+IS Endo Steel
+IS Endo Steel
+IS Endo Steel
+IS Endo Steel
+IS Endo Steel
 -Empty-
 
 Center Torso:
@@ -125,14 +122,14 @@ Gyro
 Fusion Engine
 Fusion Engine
 Fusion Engine
-ISUMU
+UMU
 IS HarJel
 
 Head:
 Life Support
 Sensors
 Cockpit
-Light Ferro-Fibrous
+IS Light Ferro-Fibrous
 Sensors
 Life Support
 -Empty-
@@ -147,8 +144,8 @@ Hip
 Upper Leg Actuator
 Lower Leg Actuator
 Foot Actuator
-Endo Steel
-Endo Steel
+IS Endo Steel
+IS Endo Steel
 -Empty-
 -Empty-
 -Empty-
@@ -161,8 +158,8 @@ Hip
 Upper Leg Actuator
 Lower Leg Actuator
 Foot Actuator
-Endo Steel
-Endo Steel
+IS Endo Steel
+IS Endo Steel
 -Empty-
 -Empty-
 -Empty-
@@ -170,7 +167,7 @@ Endo Steel
 -Empty-
 -Empty-
 
-# Fluff Date: 2026-03-03 16:18:10
+# Fluff Date: 2026-02-28 17:47:08
 overview:<p>The Aquagladius is a 50-ton medium BattleMech introduced in 3065 by Vining Engineering and Salvage Team (VEST) on Solaris VII. Seeking to push the boundaries of BattleMech design, VEST spent the early 3060s developing two radically unconventional machines: the Aquagladius and the Great Turtle. The Aquagladius was purpose-built for underwater arena combat in Solaris VII's famed Pool arena, incorporating a suite of bleeding-edge experimental technologies that made it the first BattleMech designed from the ground up for aquatic operations. Based on the chassis of the proven Crab, the design pioneered aquatic BattleMech combat and earned a fearsome reputation in Solaris arenas despite critics dismissing it as an overspecialized novelty.</p>
 
 capabilities:<p>The Aquagladius is built on a Hollis Mark 2B chassis derived from the Crab's proven frame and powered by a VLAR 300-rated Light fusion engine, providing a respectable top speed of 97 kph on land. Its defining feature is a suite of Underwater Maneuvering Units that allow the 'Mech to achieve approximately 83 percent of its walking speed while fully submerged, far outpacing any conventional BattleMech in aquatic environments. A prototype BattleMech HarJel system provides critical flooding protection by automatically sealing armor breaches underwater, while VEST's extensive modifications to the Crab's fluid dynamics and armor placement optimize hydrodynamic performance.</p><p>The 'Mech's offensive systems are deliberately unconventional. Its primary weapon is an Alpha BattleMech Taser, an experimental device capable of disrupting enemy electronics and temporarily disabling opposing 'Mechs without destroying them, ideal for arena combat where intact salvage increases prize value. A flail provides devastating close-range striking power against disabled targets. Nine and a half tons of York Industries Light Ferro-Fibrous armor offers reasonable protection while keeping weight available for the extensive experimental systems. The design's principal weaknesses include its complete reliance on close-range engagement, lack of jump capability, and the significant maintenance demands of its many experimental technologies.</p>
