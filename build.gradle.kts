@@ -26,7 +26,9 @@ tasks.withType(Checkstyle::class.java).configureEach {
     maxHeapSize = "4g"
     maxWarnings = 0  // Fail on any warning
     maxErrors = 0    // Fail on any error
-    source(project.sourceSets.main.get().allSource)
+    source(project.sourceSets.main.get().allSource.matching {
+        exclude("**/*.psd", "**/*.PSD")
+    })
     configFile = file("${rootDir}/config/checkstyle/checkstyle.xml")
 }
 
