@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,15 +16,17 @@
 # affiliated with Microsoft.
 
 id: Hellgate
-sucsId: 2946
+sucsId: 2947
 xcood: 40.343
 ycood: 1843.328
 spectralType:
-  source: Warriors of Kerensky, pg. 112
+  source: WoK
   value: F7Ia
+  page: 112
 primarySlot:
-  source: Warriors of Kerensky, pg. 112
+  source: WoK
   value: 1
+  page: 112
 planet:
   - name:
       source: canon
@@ -32,32 +34,39 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 3.64
     sysPos:
-      source: Warriors of Kerensky, pg. 112
+      source: WoK
       value: 1
+      page: 112
     icon: green54
     pressure:
-      source: Warriors of Kerensky, pg. 112
+      source: WoK
       value: STANDARD
+      page: 112
     atmosphere:
-      source: Warriors of Kerensky, pg. 112
+      source: WoK
       value: TAINTED_POISON
+      page: 112
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: Warriors of Kerensky, pg. 112
+      source: WoK
       value: 0.7
+      page: 112
     diameter: 10001
     density: 4.918694629858
     dayLength: 28
     yearLength: 7.0
     temperature:
-      source: Warriors of Kerensky, pg. 112
+      source: WoK
       value: 40
+      page: 112
     water:
-      source: Warriors of Kerensky, pg. 112
+      source: WoK
       value: 20
+      page: 112
     lifeForm:
-      source: Warriors of Kerensky, pg. 112
+      source: WoK
       value: PLANT
+      page: 112
     desc: No description available.
     landmass:
       - name: Atikokan
@@ -150,6 +159,18 @@ planet:
           value:
             - CSR
             - CJF
+      - date: '3052-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CLAN
+      - date: '3057-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CSR
       - date: '3057-12-03'
         faction:
           source: canon

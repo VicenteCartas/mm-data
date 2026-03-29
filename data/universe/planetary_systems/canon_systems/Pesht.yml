@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: Pesht
-sucsId: 2017
+sucsId: 2018
 xcood: 206.144
 ycood: 309.913
 spectralType:
-  source: House Kurita
+  source: HB:HK
   value: F7V
 primarySlot:
-  source: House Kurita
+  source: HB:HK
   value: 3
 event:
   - date: '2388-09-17'
@@ -75,7 +75,7 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 1.3
     sysPos:
-      source: House Kurita
+      source: HB:HK
       value: 3
     icon: green12
     pressure:
@@ -97,25 +97,9 @@ planet:
       source: canon
       value: 64
     lifeForm:
-      source: House Kurita
+      source: HB:HK
       value: MAMMAL
-    desc: Pesht was discovered by early explorers from the Ozawan Merchant Clan in
-      2212. The Ozawan Clan made multiple attempts over the course of several decades
-      to settle the forest covered planet, however, the world's native ape predators
-      interferred with these efforts. The Clan was eventually forced to relinquish
-      the planet to the Draconis Combine. It wasn't until 2320 world was finally settled
-      but only after the Combine "discovered" the ape-like creatures for themselves.
-      After losing an entire settlement did efforts go into nearly exterminating the
-      beast before Pesht was habitable. After clearing the predators, Combine's true
-      intentions for colonizing Pesht were revealed. The planet became a military
-      colony used by the Combine as a launch pad to conqueror neraby worlds. From
-      Pesht, DCMS forces were able to launch military engagements into the Draconis
-      Rift region. Eventually Pesht became the capital of its own military district
-      after Coordinator Martin McAllister implented his restructuring of the Combine's
-      governmental system. The majority of military forces that had been stationed
-      on Pesht when it was originally a staging base were moved to defend the Combine's
-      new capital of Luthien in mid 27th Century. The University of Pesht in Danube
-      is known for its impressive graduate studies, especially in history.
+    desc: Pesht was discovered by early explorers from the Ozawan Merchant Clan in 2212. The Ozawan Clan made multiple attempts over the course of several decades to settle the forest covered planet, however, the world's native ape predators interferred with these efforts. The Clan was eventually forced to relinquish the planet to the Draconis Combine. It wasn't until 2320 world was finally settled but only after the Combine "discovered" the ape-like creatures for themselves. After losing an entire settlement did efforts go into nearly exterminating the beast before Pesht was habitable. After clearing the predators, Combine's true intentions for colonizing Pesht were revealed. The planet became a military colony used by the Combine as a launch pad to conqueror neraby worlds. From Pesht, DCMS forces were able to launch military engagements into the Draconis Rift region. Eventually Pesht became the capital of its own military district after Coordinator Martin McAllister implented his restructuring of the Combine's governmental system. The majority of military forces that had been stationed on Pesht when it was originally a staging base were moved to defend the Combine's new capital of Luthien in mid 27th Century. The University of Pesht in Danube is known for its impressive graduate studies, especially in history.
     landmass:
       - name:
           source: canon
@@ -172,6 +156,12 @@ planet:
           value:
             - AG
       - date: '2319-09-16'
+        # administration: DC | Pesht Military District | Kagoshima Prefecture
+        # administration: DC | Pesht Military District | Kagoshima Prefecture
+        # administration: DC | Pesht Military District | Kagoshima Prefecture
+        # administration: DC | Pesht Military District | Kagoshima Prefecture
+        # administration: DC | Pesht Military District | Kagoshima Prefecture
+        # administration: DC | Pesht Military District | Kagoshima Prefecture
         faction:
           source: canon
           value:
@@ -354,6 +344,12 @@ planet:
             - CSJ
             - DC
       - date: '3059-08-04'
+        # administration: DC | Pesht Military District | Kagoshima Prefecture
+        # administration: DC | Pesht Military District | Kagoshima Prefecture
+        # administration: DC | Pesht Military District | Kagoshima Prefecture
+        # administration: DC | Pesht Military District | Kagoshima Prefecture
+        # administration: DC | Pesht Military District | Kagoshima Prefecture
+        # administration: DC | Pesht Military District | Kagoshima Prefecture
         faction:
           source: canon
           value:
@@ -378,7 +374,25 @@ planet:
           source: canon
           value:
             - CGB
+      - date: '3075-01-01'
+        # administration: DC | Pesht Military District | Kagoshima Prefecture
+        # administration: DC | Pesht Military District | Kagoshima Prefecture
+        # administration: DC | Pesht Military District | Kagoshima Prefecture
+        # administration: DC | Pesht Military District | Kagoshima Prefecture
+        # administration: DC | Pesht Military District | Kagoshima Prefecture
+        # administration: DC | Pesht Military District | Kagoshima Prefecture
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - DC
       - date: '3075-01-22'
+        # administration: DC | Pesht Military District | Kagoshima Prefecture
+        # administration: DC | Pesht Military District | Kagoshima Prefecture
+        # administration: DC | Pesht Military District | Kagoshima Prefecture
+        # administration: DC | Pesht Military District | Kagoshima Prefecture
+        # administration: DC | Pesht Military District | Kagoshima Prefecture
+        # administration: DC | Pesht Military District | Kagoshima Prefecture
         faction:
           source: canon
           value:

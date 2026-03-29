@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,15 +16,17 @@
 # affiliated with Microsoft.
 
 id: Les Halles
-sucsId: 1480
+sucsId: 1481
 xcood: -39.048
 ycood: -187.965
 spectralType:
-  source: 'Handbook: House Marik, pg. 65'
+  source: 'HB:HM'
   value: F5II
+  page: 65
 primarySlot:
-  source: 'Handbook: House Marik, pg. 65'
+  source: 'HB:HM'
   value: 2
+  page: 65
 event:
   - date: '2742-05-20'
     nadirCharge: yes
@@ -52,32 +54,39 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 3.92
     sysPos:
-      source: 'Handbook: House Marik, pg. 65'
+      source: 'HB:HM'
       value: 2
+      page: 65
     icon: wet12
     pressure:
-      source: 'Handbook: House Marik, pg. 65'
+      source: 'HB:HM'
       value: THIN
+      page: 65
     atmosphere:
-      source: 'Handbook: House Marik, pg. 65'
+      source: 'HB:HM'
       value: BREATHABLE
+      page: 65
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'Handbook: House Marik, pg. 65'
+      source: 'HB:HM'
       value: 0.85
+      page: 65
     diameter: 11797
     density: 5.063741505654
     dayLength: 20
     yearLength: 7.9
     temperature:
-      source: 'Handbook: House Marik, pg. 65'
+      source: 'HB:HM'
       value: 30
+      page: 65
     water:
-      source: 'Handbook: House Marik, pg. 65'
+      source: 'HB:HM'
       value: 85
+      page: 65
     lifeForm:
-      source: 'Handbook: House Marik, pg. 65'
+      source: 'HB:HM'
       value: MICROBE
+      page: 65
     desc: |-
       Les Halles is an arctic planet with only a narrow equatorial band that is capable of comfortably supporting human life. Les Halles is located at a strategic location along the border of the Free Worlds League and the Capellan Confederation, which has often made it a military target, the planet also serves as a major trade hub. Les Halles supports several cities built around the multiple spaceports on planet. The spaceports are often ringed by large warehouses full of various goods and resources both mundane and exotic. While trade is heavily monitored it is no secret that Les Halles has a thriving black-market.
 
@@ -94,10 +103,17 @@ planet:
           source: canon
           value: Orléans
         capital:
-          source: 'Handbook: House Marik, pg. 65'
+          source: 'HB:HM'
           value: Beauborg
+          page: 65
     event:
       - date: '2739-02-21'
+        # administration: CC | Capella Commonality | Region 6
+        # administration: CC | Capella Commonality | Region 6
+        # administration: CC | Capella Commonality | Region 6
+        # administration: CC | Capella Commonality | Region 6
+        # administration: CC | Capella Commonality | Region 6
+        # administration: CC | Capella Commonality | Region 6
         faction:
           source: canon
           value:
@@ -133,6 +149,18 @@ planet:
         population: 631649742.0
       - date: '2860-01-01'
         population: 741321815.0
+      - date: '2864-01-01'
+        # administration: FWL | Federation of Oriente
+        # administration: FWL | Federation of Oriente
+        # administration: FWL | Federation of Oriente
+        # administration: FWL | Federation of Oriente
+        # administration: FWL | Federation of Oriente
+        # administration: FWL | Federation of Oriente
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FWL
       - date: '2864-08-08'
         faction:
           source: canon
@@ -145,6 +173,12 @@ planet:
       - date: '2890-01-01'
         population: 1009225434.0
       - date: '2900-04-13'
+        # administration: FWL | Duchy of Oriente
+        # administration: FWL | Duchy of Oriente
+        # administration: FWL | Duchy of Oriente
+        # administration: FWL | Duchy of Oriente
+        # administration: FWL | Duchy of Oriente
+        # administration: FWL | Duchy of Oriente
         faction:
           source: canon
           value:
@@ -185,6 +219,12 @@ planet:
             - CC
             - FWL
       - date: '3039-08-12'
+        # administration: FWL | Duchy of Oriente
+        # administration: FWL | Duchy of Oriente
+        # administration: FWL | Duchy of Oriente
+        # administration: FWL | Duchy of Oriente
+        # administration: FWL | Duchy of Oriente
+        # administration: FWL | Duchy of Oriente
         faction:
           source: canon
           value:
@@ -235,8 +275,25 @@ planet:
       - date: '3140-01-01'
         population: 1305705557.0
       - date: '3145-01-01'
+        # administration: FWL | Oriente Protectorate
+        # administration: FWL | Oriente Protectorate
+        # administration: FWL | Oriente Protectorate
+        # administration: FWL | Oriente Protectorate
+        # administration: FWL | Oriente Protectorate
+        # administration: FWL | Oriente Protectorate
         population: 1305183379.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FWL
       - date: '3151-01-01'
+        # administration: FWL | Oriente Protectorate
+        # administration: FWL | Oriente Protectorate
+        # administration: FWL | Oriente Protectorate
+        # administration: FWL | Oriente Protectorate
+        # administration: FWL | Oriente Protectorate
+        # administration: FWL | Oriente Protectorate
         faction:
           source: sucs
           value:

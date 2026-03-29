@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -20,11 +20,13 @@ sucsId: 403
 xcood: 159.739
 ycood: -377.477
 spectralType:
-  source: FedCom Civil War, pg. 189
+  source: FCCW
   value: F9II
+  page: 189
 primarySlot:
-  source: FedCom Civil War, pg. 189
+  source: FCCW
   value: 6
+  page: 189
 event:
   - date: '2359-11-06'
     zenithCharge: yes
@@ -124,58 +126,67 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 3.08
     sysPos:
-      source: FedCom Civil War, pg. 189
+      source: FCCW
       value: 6
+      page: 189
     icon: green28
     pressure:
-      source: FedCom Civil War, pg. 189
+      source: FCCW
       value: STANDARD
+      page: 189
     atmosphere:
-      source: FedCom Civil War, pg. 189
+      source: FCCW
       value: BREATHABLE
+      page: 189
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: FedCom Civil War, pg. 189
+      source: FCCW
       value: 1.0
+      page: 189
     diameter: 13752
     density: 5.110177805644
     dayLength: 21
     yearLength: 5.5
     temperature:
-      source: FedCom Civil War, pg. 189
+      source: FCCW
       value: 40
+      page: 189
     water:
-      source: FedCom Civil War, pg. 189
+      source: FCCW
       value: 40
+      page: 189
     lifeForm:
-      source: FedCom Civil War, pg. 189
+      source: FCCW
       value: BIRD
-    desc: Bromhead is an arid planet with only modest natural resources but sufficient
-      arable land, despite the dry conditions. Bromhead has been important primarily
-      for strategic reasons due to its location on the border between the Federated
-      Suns and Capellan Confederation. The planet has two continents, the northern
-      continent of Zanzabar is more temperate and home to most of the planet's population,
-      while the southern continent Salazaar is barren desert and badlands divided
-      by the Salaarn-Zurkan mountain range, which has higher peaks than the famous
-      Mt. Everest on Terra. The AFFS used the mostly uninhabited continent of Salazaar
-      as a desert and mountain training ground for soldiers.
+      page: 189
+    desc: Bromhead is an arid planet with only modest natural resources but sufficient arable land, despite the dry conditions. Bromhead has been important primarily for strategic reasons due to its location on the border between the Federated Suns and Capellan Confederation. The planet has two continents, the northern continent of Zanzabar is more temperate and home to most of the planet's population, while the southern continent Salazaar is barren desert and badlands divided by the Salaarn-Zurkan mountain range, which has higher peaks than the famous Mt. Everest on Terra. The AFFS used the mostly uninhabited continent of Salazaar as a desert and mountain training ground for soldiers.
     landmass:
       - name:
-          source: FedCom Civil War, pg. 189
+          source: FCCW
           value: Salazaar
+          page: 189
       - name:
-          source: FedCom Civil War, pg. 189
+          source: FCCW
           value: Zanzabar
+          page: 189
         capital:
-          source: FedCom Civil War, pg. 189
+          source: FCCW
           value: Brom's Home
+          page: 189
     satellite:
       - name:
-          source: FedCom Civil War, pg. 189
+          source: FCCW
           value: Brom's Reflection
+          page: 189
         size: large
         icon: rock8
     event:
+      - date: '2341-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - TC
       - date: '2341-04-14'
         faction:
           source: canon
@@ -248,7 +259,25 @@ planet:
             - SL
       - date: '2590-01-01'
         population: 232664712.0
+      - date: '2596-01-01'
+        # administration: FS | Capellan March | Taygeta Operational Area
+        # administration: FS | Capellan March | Taygeta Operational Area
+        # administration: FS | Capellan March | Taygeta Operational Area
+        # administration: FS | Capellan March | Taygeta Operational Area
+        # administration: FS | Capellan March | Taygeta Operational Area
+        # administration: FS | Capellan March | Taygeta Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FS
       - date: '2596-09-22'
+        # administration: FS | Capellan March | Taygeta Operational Area
+        # administration: FS | Capellan March | Taygeta Operational Area
+        # administration: FS | Capellan March | Taygeta Operational Area
+        # administration: FS | Capellan March | Taygeta Operational Area
+        # administration: FS | Capellan March | Taygeta Operational Area
+        # administration: FS | Capellan March | Taygeta Operational Area
         faction:
           source: canon
           value:
@@ -351,8 +380,25 @@ planet:
       - date: '3030-01-01'
         population: 156896478.0
       - date: '3040-01-01'
+        # administration: FC | Capellan March | Taygeta Operational Area
+        # administration: FC | Capellan March | Taygeta Operational Area
+        # administration: FC | Capellan March | Taygeta Operational Area
+        # administration: FC | Capellan March | Taygeta Operational Area
+        # administration: FC | Capellan March | Taygeta Operational Area
+        # administration: FC | Capellan March | Taygeta Operational Area
         population: 158188318.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
+        # administration: FC | Capellan March | Taygeta Operational Area
+        # administration: FC | Capellan March | Taygeta Operational Area
+        # administration: FC | Capellan March | Taygeta Operational Area
+        # administration: FC | Capellan March | Taygeta Operational Area
+        # administration: FC | Capellan March | Taygeta Operational Area
+        # administration: FC | Capellan March | Taygeta Operational Area
         faction:
           source: canon
           value:
@@ -371,12 +417,42 @@ planet:
           value:
             - FC
             - LA
+      - date: '3063-01-01'
+        # administration: FC | Capellan March | Taygeta Operational Area
+        # administration: FC | Capellan March | Taygeta Operational Area
+        # administration: FC | Capellan March | Taygeta Operational Area
+        # administration: FC | Capellan March | Taygeta Operational Area
+        # administration: FC | Capellan March | Taygeta Operational Area
+        # administration: FC | Capellan March | Taygeta Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3063-02-12'
         faction:
           source: canon
           value:
             - LA
+      - date: '3067-01-01'
+        # administration: FS | Capellan March | Taygeta Operational Area
+        # administration: FS | Capellan March | Taygeta Operational Area
+        # administration: FS | Capellan March | Taygeta Operational Area
+        # administration: FS | Capellan March | Taygeta Operational Area
+        # administration: FS | Capellan March | Taygeta Operational Area
+        # administration: FS | Capellan March | Taygeta Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FS
       - date: '3067-04-20'
+        # administration: FS | Capellan March | Taygeta Operational Area
+        # administration: FS | Capellan March | Taygeta Operational Area
+        # administration: FS | Capellan March | Taygeta Operational Area
+        # administration: FS | Capellan March | Taygeta Operational Area
+        # administration: FS | Capellan March | Taygeta Operational Area
+        # administration: FS | Capellan March | Taygeta Operational Area
         faction:
           source: canon
           value:
@@ -411,7 +487,25 @@ planet:
         socioIndustrial: B-C-C-C-B
       - date: '3120-01-01'
         population: 173085590.0
+      - date: '3130-01-01'
+        # administration: CC | Victoria Commonality | Region 8
+        # administration: CC | Victoria Commonality | Region 8
+        # administration: CC | Victoria Commonality | Region 8
+        # administration: CC | Victoria Commonality | Region 8
+        # administration: CC | Victoria Commonality | Region 8
+        # administration: CC | Victoria Commonality | Region 8
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CC
       - date: '3130-06-02'
+        # administration: CC | Victoria Commonality | Region 8
+        # administration: CC | Victoria Commonality | Region 8
+        # administration: CC | Victoria Commonality | Region 8
+        # administration: CC | Victoria Commonality | Region 8
+        # administration: CC | Victoria Commonality | Region 8
+        # administration: CC | Victoria Commonality | Region 8
         faction:
           source: canon
           value:

@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Zumbo
-sucsId: 2849
+sucsId: 2850
 xcood: 711.438
 ycood: 162.875
 spectralType: G9V
@@ -69,6 +69,12 @@ planet:
       - name: Mulevala
     event:
       - date: '2609-04-01'
+        # administration: OA | Blommestein Province
+        # administration: OA | Blommestein Province
+        # administration: OA | Blommestein Province
+        # administration: OA | Blommestein Province
+        # administration: OA | Blommestein Province
+        # administration: OA | Blommestein Province
         faction:
           source: canon
           value:
@@ -131,6 +137,12 @@ planet:
         population: 4227.0
       - date: '2860-01-01'
         population: 1976.0
+      - date: '2864-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '2864-01-21'
         faction:
           source: canon

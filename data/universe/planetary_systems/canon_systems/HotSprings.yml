@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,15 +16,17 @@
 # affiliated with Microsoft.
 
 id: Hot Springs
-sucsId: 1139
+sucsId: 1140
 xcood: -170.584
 ycood: 367.787
 spectralType:
-  source: FedCom Civil War, pg. 204
+  source: FCCW
   value: G6V
+  page: 204
 primarySlot:
-  source: FedCom Civil War, pg. 204
+  source: FCCW
   value: 4
+  page: 204
 event:
   - date: '2521-06-12'
     zenithCharge: yes
@@ -85,62 +87,68 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.63
     sysPos:
-      source: FedCom Civil War, pg. 204
+      source: FCCW
       value: 4
+      page: 204
     icon: green40
     pressure:
-      source: FedCom Civil War, pg. 204
+      source: FCCW
       value: STANDARD
+      page: 204
     atmosphere:
-      source: FedCom Civil War, pg. 204
+      source: FCCW
       value: BREATHABLE
+      page: 204
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: FedCom Civil War, pg. 204
+      source: FCCW
       value: 1.0
+      page: 204
     diameter: 13103
     density: 5.363162060717
     dayLength: 22
     yearLength: 1.1
     temperature:
-      source: FedCom Civil War, pg. 204
+      source: FCCW
       value: 45
+      page: 204
     water:
-      source: FedCom Civil War, pg. 204
+      source: FCCW
       value: 60
+      page: 204
     lifeForm:
-      source: FedCom Civil War, pg. 204
+      source: FCCW
       value: MAMMAL
-    desc: Hot Springs was colonized to take advantage of the planet’s abundance of
-      mineral and metal ores, however the planet quickly became famous for its rich
-      mineral water, which quickly developed into a thriving tourist industry centered
-      around the therapeutic hot springs. However, other than the hot springs, there
-      is very little to attract vacationers to Hot Springs, the planet’s two continents
-      were formed by volcanic activity and the larger continent of Silver Springs
-      is primarily black rock and ash, with occasional outcroppings of trees and broken
-      up by dense jungle and brackish lakes. The large Lucas Mountains Range in the
-      western end of the continent is part of the mountain chain that formed the continent.
-      The second continent, Manta Springs, is more livable and is home to much of
-      the planet’s population, including the capital city Boulder. Boulder is home
-      to the renowned Institute for Advance Studies in Physical Therapy.
+      page: 204
+    desc: Hot Springs was colonized to take advantage of the planet’s abundance of mineral and metal ores, however the planet quickly became famous for its rich mineral water, which quickly developed into a thriving tourist industry centered around the therapeutic hot springs. However, other than the hot springs, there is very little to attract vacationers to Hot Springs, the planet’s two continents were formed by volcanic activity and the larger continent of Silver Springs is primarily black rock and ash, with occasional outcroppings of trees and broken up by dense jungle and brackish lakes. The large Lucas Mountains Range in the western end of the continent is part of the mountain chain that formed the continent. The second continent, Manta Springs, is more livable and is home to much of the planet’s population, including the capital city Boulder. Boulder is home to the renowned Institute for Advance Studies in Physical Therapy.
     landmass:
       - name:
-          source: FedCom Civil War, pg. 204
+          source: FCCW
           value: Manta Springs
+          page: 204
         capital:
-          source: FedCom Civil War, pg. 204
+          source: FCCW
           value: Boulder
+          page: 204
       - name:
-          source: FedCom Civil War, pg. 204
+          source: FCCW
           value: Silver Springs
+          page: 204
     satellite:
       - name:
-          source: FedCom Civil War, pg. 204
+          source: FCCW
           value: Buckstone
+          page: 204
         size: large
         icon: rock5
     event:
       - date: '2509-02-17'
+        # administration: LA | Protectorate of Donegal | Coventry Province
+        # administration: LA | Protectorate of Donegal | Coventry Province
+        # administration: LA | Protectorate of Donegal | Coventry Province
+        # administration: LA | Protectorate of Donegal | Coventry Province
+        # administration: LA | Protectorate of Donegal | Coventry Province
+        # administration: LA | Protectorate of Donegal | Coventry Province
         faction:
           source: canon
           value:
@@ -268,8 +276,25 @@ planet:
       - date: '3030-01-01'
         population: 5967349.0
       - date: '3040-01-01'
+        # administration: FC | Tamar March | Blackjack Operational Area
+        # administration: FC | Tamar March | Blackjack Operational Area
+        # administration: FC | Tamar March | Blackjack Operational Area
+        # administration: FC | Tamar March | Blackjack Operational Area
+        # administration: FC | Tamar March | Blackjack Operational Area
+        # administration: FC | Tamar March | Blackjack Operational Area
         population: 6051479.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
+        # administration: FC | Tamar March | Blackjack Operational Area
+        # administration: FC | Tamar March | Blackjack Operational Area
+        # administration: FC | Tamar March | Blackjack Operational Area
+        # administration: FC | Tamar March | Blackjack Operational Area
+        # administration: FC | Tamar March | Blackjack Operational Area
+        # administration: FC | Tamar March | Blackjack Operational Area
         faction:
           source: canon
           value:
@@ -279,7 +304,17 @@ planet:
           source: canon
           value: B-B-A-B-C
       - date: '3050-01-01'
+        # administration: FC | Tamar March | Blackjack Operational Area
+        # administration: FC | Tamar March | Blackjack Operational Area
+        # administration: FC | Tamar March | Blackjack Operational Area
+        # administration: FC | Tamar March | Blackjack Operational Area
+        # administration: FC | Tamar March | Blackjack Operational Area
         population: 6134341.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CJF
       - date: '3050-06-25'
         faction:
           source: canon
@@ -317,6 +352,12 @@ planet:
         population: 6974793.0
       - date: '3145-01-01'
         population: 7011157.0
+      - date: '3152-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CHH
       - date: '3152-03-15'
         faction:
           source: canon

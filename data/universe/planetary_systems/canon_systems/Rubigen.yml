@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: Rubigen
-sucsId: 2186
+sucsId: 2187
 xcood: 30.493
 ycood: 217.858
 spectralType:
-  source: House Kurita
+  source: HB:HK
   value: G6II
 primarySlot:
-  source: House Kurita
+  source: HB:HK
   value: 4
 event:
   - date: '2383-12-09'
@@ -84,7 +84,7 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 1.44
     sysPos:
-      source: House Kurita
+      source: HB:HK
       value: 4
     icon: green20
     pressure: STANDARD
@@ -98,18 +98,12 @@ planet:
     temperature: 32
     water: 38
     lifeForm:
-      source: House Kurita
+      source: HB:HK
       value: MAMMAL
-    desc: Rubigen is a cold, icy planet and most of the habitable terrain is covered
-      in snow and ice. While the ice does not cover the planet’s two seas they are
-      full of treacherous icebergs that make the water particularly treacherous. On
-      land there are massive glaciers, including the Bassers Glacier, which was particularly
-      fast moving for a glacier, and was expected to overtake the spaceport located
-      outside of the capital, City Rubigen, by the 3030s-3040s. The primary exports
-      from Rubigen are naval officers and fur, especially from the Rubigen red wolverine.
+    desc: Rubigen is a cold, icy planet and most of the habitable terrain is covered in snow and ice. While the ice does not cover the planet’s two seas they are full of treacherous icebergs that make the water particularly treacherous. On land there are massive glaciers, including the Bassers Glacier, which was particularly fast moving for a glacier, and was expected to overtake the spaceport located outside of the capital, City Rubigen, by the 3030s-3040s. The primary exports from Rubigen are naval officers and fur, especially from the Rubigen red wolverine.
     landmass:
       - capital:
-          source: House Kurita
+          source: HB:HK
           value: City Rubigen
     event:
       - date: '2167-06-07'
@@ -171,6 +165,12 @@ planet:
         population: 2090564232.0
       - date: '2360-01-01'
         population: 2415107193.0
+      - date: '2366-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '2370-01-01'
         population: 2730256260.0
       - date: '2380-01-01'
@@ -215,7 +215,25 @@ planet:
         population: 5417912008.0
       - date: '2570-01-01'
         population: 5409000374.0
+      - date: '2571-01-01'
+        # administration: DC | Rasalhague Military District | Tinaca Prefecture
+        # administration: DC | Rasalhague Military District | Tinaca Prefecture
+        # administration: DC | Rasalhague Military District | Tinaca Prefecture
+        # administration: DC | Rasalhague Military District | Tinaca Prefecture
+        # administration: DC | Rasalhague Military District | Tinaca Prefecture
+        # administration: DC | Rasalhague Military District | Tinaca Prefecture
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - DC
       - date: '2571-11-16'
+        # administration: DC | Rasalhague Military District | Tinaca Prefecture
+        # administration: DC | Rasalhague Military District | Tinaca Prefecture
+        # administration: DC | Rasalhague Military District | Tinaca Prefecture
+        # administration: DC | Rasalhague Military District | Tinaca Prefecture
+        # administration: DC | Rasalhague Military District | Tinaca Prefecture
+        # administration: DC | Rasalhague Military District | Tinaca Prefecture
         faction:
           source: canon
           value:
@@ -283,7 +301,25 @@ planet:
         population: 4978630910.0
       - date: '2820-01-01'
         population: 4945066369.0
+      - date: '2821-01-01'
+        # administration: LA | Tamar Pact | Camlann Shire
+        # administration: LA | Tamar Pact | Camlann Shire
+        # administration: LA | Tamar Pact | Camlann Shire
+        # administration: LA | Tamar Pact | Camlann Shire
+        # administration: LA | Tamar Pact | Camlann Shire
+        # administration: LA | Tamar Pact | Camlann Shire
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '2821-08-08'
+        # administration: LA | Tamar Pact | Camlann Shire
+        # administration: LA | Tamar Pact | Camlann Shire
+        # administration: LA | Tamar Pact | Camlann Shire
+        # administration: LA | Tamar Pact | Camlann Shire
+        # administration: LA | Tamar Pact | Camlann Shire
+        # administration: LA | Tamar Pact | Camlann Shire
         faction:
           source: canon
           value:
@@ -294,7 +330,18 @@ planet:
           value:
             - DC
       - date: '2830-01-01'
+        # administration: LA | Tamar Pact | Camlann Shire
+        # administration: LA | Tamar Pact | Camlann Shire
+        # administration: LA | Tamar Pact | Camlann Shire
+        # administration: LA | Tamar Pact | Camlann Shire
+        # administration: LA | Tamar Pact | Camlann Shire
+        # administration: LA | Tamar Pact | Camlann Shire
         population: 4965417756.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '2840-01-01'
         population: 5029405364.0
       - date: '2850-01-01'
@@ -303,7 +350,25 @@ planet:
         socioIndustrial: B-B-B-C-B
       - date: '2860-01-01'
         population: 5100374862.0
+      - date: '2864-01-01'
+        # administration: DC | Benjamin Military District | Dehgolan Prefecture
+        # administration: DC | Benjamin Military District | Dehgolan Prefecture
+        # administration: DC | Benjamin Military District | Dehgolan Prefecture
+        # administration: DC | Benjamin Military District | Dehgolan Prefecture
+        # administration: DC | Benjamin Military District | Dehgolan Prefecture
+        # administration: DC | Benjamin Military District | Dehgolan Prefecture
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - DC
       - date: '2864-09-01'
+        # administration: DC | Rasalhague Military District | Rubigen Prefecture
+        # administration: DC | Rasalhague Military District | Rubigen Prefecture
+        # administration: DC | Rasalhague Military District | Rubigen Prefecture
+        # administration: DC | Rasalhague Military District | Rubigen Prefecture
+        # administration: DC | Rasalhague Military District | Rubigen Prefecture
+        # administration: DC | Rasalhague Military District | Rubigen Prefecture
         faction:
           source: canon
           value:
@@ -355,6 +420,12 @@ planet:
         socioIndustrial: A-B-C-B-C
       - date: '3050-01-01'
         population: 1083328220.0
+      - date: '3052-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CGB
       - date: '3052-04-01'
         faction:
           source: canon
@@ -377,6 +448,12 @@ planet:
       - date: '3100-01-01'
         population: 589507561.0
       - date: '3103-03-13'
+        # administration: RD | Region 3
+        # administration: RD | Region 3
+        # administration: RD | Region 3
+        # administration: RD | Region 3
+        # administration: RD | Region 3
+        # administration: RD | Region 3
         faction:
           source: canon
           value:

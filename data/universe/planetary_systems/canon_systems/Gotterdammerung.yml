@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Gotterdammerung
-sucsId: 985
+sucsId: 986
 xcood: -179.596
 ycood: 465.608
 spectralType: M8V
@@ -40,8 +40,9 @@ planet:
     temperature: 9
     water: 60
     lifeForm:
-      source: Periphery (1ed), pg. 147
+      source: Per1e
       value: MAMMAL
+      page: 147
     landmass:
       - name: Brown
         capital: Old Nedlands
@@ -50,7 +51,19 @@ planet:
       - name: Cotterell
       - name: Laws
     event:
+      - date: '2341-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - RWR
       - date: '2341-06-15'
+        # administration: RWR | Apollo Province
+        # administration: RWR | Apollo Province
+        # administration: RWR | Apollo Province
+        # administration: RWR | Apollo Province
+        # administration: RWR | Apollo Province
+        # administration: RWR | Apollo Province
         faction:
           source: canon
           value:
@@ -209,6 +222,12 @@ planet:
       - date: '3020-01-01'
         population: 134505668.0
       - date: '3021-05-10'
+        # administration: MV | National Capital
+        # administration: MV | National Capital
+        # administration: MV | National Capital
+        # administration: MV | National Capital
+        # administration: MV | National Capital
+        # administration: MV | National Capital
         faction:
           source: canon
           value:
@@ -219,6 +238,12 @@ planet:
           value:
             - MV
       - date: '3028-04-22'
+        # administration: GV | National Capital
+        # administration: GV | National Capital
+        # administration: GV | National Capital
+        # administration: GV | National Capital
+        # administration: GV | National Capital
+        # administration: GV | National Capital
         faction:
           source: canon
           value:
@@ -229,6 +254,12 @@ planet:
         population: 135909268.0
       - date: '3043-01-01'
         socioIndustrial: C-C-B-C-B
+      - date: '3049-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CJF
       - date: '3049-09-27'
         faction:
           source: canon
@@ -252,6 +283,12 @@ planet:
             - CHH
       - date: '3080-01-01'
         population: 142592016.0
+      - date: '3085-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - RU
       - date: '3090-01-01'
         population: 145210950.0
       - date: '3092-01-01'
@@ -269,6 +306,11 @@ planet:
         population: 152747696.0
       - date: '3130-01-01'
         population: 154529886.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - RU
       - date: '3140-01-01'
         population: 156114157.0
       - date: '3145-01-01'

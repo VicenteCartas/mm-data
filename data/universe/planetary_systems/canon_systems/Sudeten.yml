@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,15 +16,17 @@
 # affiliated with Microsoft.
 
 id: Sudeten
-sucsId: 2428
+sucsId: 2429
 xcood: -83.471
 ycood: 292.084
 spectralType:
-  source: Masters and Minions, pg. 133
+  source: M&M
   value: K5V
+  page: 133
 primarySlot:
-  source: Masters and Minions, pg. 133
+  source: M&M
   value: 4
+  page: 133
 event:
   - date: '2686-09-27'
     zenithCharge: yes
@@ -93,62 +95,74 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.28
     sysPos:
-      source: Masters and Minions, pg. 133
+      source: M&M
       value: 4
+      page: 133
     icon: green17
     pressure:
-      source: Masters and Minions, pg. 133
+      source: M&M
       value: STANDARD
+      page: 133
     atmosphere:
-      source: Masters and Minions, pg. 133
+      source: M&M
       value: BREATHABLE
+      page: 133
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: Masters and Minions, pg. 133
+      source: M&M
       value: 1.0
+      page: 133
     diameter: 12326
     density: 5.701620872879
     dayLength: 23
     yearLength: 0.8
     temperature:
-      source: Masters and Minions, pg. 133
+      source: M&M
       value: 30
+      page: 133
     water:
-      source: Masters and Minions, pg. 133
+      source: M&M
       value: 70
+      page: 133
     lifeForm:
-      source: Masters and Minions, pg. 133
+      source: M&M
       value: MAMMAL
-    desc: Sudeten is a comfortable, cool-temperate world that was a holding of the
-      Lyran Commonwealth for most of its history. Sudeten has abundant natural resources
-      and possesses a moderately-high level of technology and heavy industry, while
-      the planet’s comfortable, though somewhat cool, climate means the planet has
-      sufficient agriculture to feed its population. Sudeten was captured by Clan
-      Jade Falcon during Operation Revival and eventually became the Falcon’s capital
-      in the Inner Sphere.
+      page: 133
+    desc: Sudeten is a comfortable, cool-temperate world that was a holding of the Lyran Commonwealth for most of its history. Sudeten has abundant natural resources and possesses a moderately-high level of technology and heavy industry, while the planet’s comfortable, though somewhat cool, climate means the planet has sufficient agriculture to feed its population. Sudeten was captured by Clan Jade Falcon during Operation Revival and eventually became the Falcon’s capital in the Inner Sphere.
     landmass:
       - name:
-          source: Masters and Minions, pg. 133
+          source: M&M
           value: Dargoth
+          page: 133
         capital:
-          source: Masters and Minions, pg. 133
+          source: M&M
           value: Hammarr
+          page: 133
       - name:
-          source: Masters and Minions, pg. 133
+          source: M&M
           value: Holcomb
+          page: 133
     satellite:
       - name:
-          source: Masters and Minions, pg. 133
+          source: M&M
           value: Saar
+          page: 133
         size: large
         icon: rock17
       - name:
-          source: Masters and Minions, pg. 133
+          source: M&M
           value: Sule
+          page: 133
         size: large
         icon: rock12
     event:
       - date: '2610-11-03'
+        # administration: LA | Tamar Pact | Tamar Domains
+        # administration: LA | Tamar Pact | Tamar Domains
+        # administration: LA | Tamar Pact | Tamar Domains
+        # administration: LA | Tamar Pact | Tamar Domains
+        # administration: LA | Tamar Pact | Tamar Domains
+        # administration: LA | Tamar Pact | Tamar Domains
         faction:
           source: canon
           value:
@@ -191,6 +205,12 @@ planet:
       - date: '2740-01-01'
         population: 2317219136.0
       - date: '2750-11-07'
+        # administration: LA | Tamar Pact | Tamar Domains
+        # administration: LA | Tamar Pact | Tamar Domains
+        # administration: LA | Tamar Pact | Tamar Domains
+        # administration: LA | Tamar Pact | Tamar Domains
+        # administration: LA | Tamar Pact | Tamar Domains
+        # administration: LA | Tamar Pact | Tamar Domains
         faction:
           source: canon
           value:
@@ -267,12 +287,30 @@ planet:
         socioIndustrial: B-C-C-D-C
       - date: '3033-01-01'
         socioIndustrial: B-C-B-C-C
+      - date: '3040-01-01'
+        # administration: FC | Tamar March | Benfled Operational Area
+        # administration: FC | Tamar March | Benfled Operational Area
+        # administration: FC | Tamar March | Benfled Operational Area
+        # administration: FC | Tamar March | Benfled Operational Area
+        # administration: FC | Tamar March | Benfled Operational Area
+        # administration: FC | Tamar March | Benfled Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-03-08'
         population: 2260680852.0
         socioIndustrial:
           source: canon
           value: B-B-A-B-C
       - date: '3040-01-19'
+        # administration: FC | Tamar March | Benfled Operational Area
+        # administration: FC | Tamar March | Benfled Operational Area
+        # administration: FC | Tamar March | Benfled Operational Area
+        # administration: FC | Tamar March | Benfled Operational Area
+        # administration: FC | Tamar March | Benfled Operational Area
+        # administration: FC | Tamar March | Benfled Operational Area
         faction:
           source: canon
           value:
@@ -286,6 +324,12 @@ planet:
             - CJF
             - FC
       - date: '3050-10-13'
+        # administration: CJF | National Capital
+        # administration: CJF | National Capital
+        # administration: CJF | National Capital
+        # administration: CJF | National Capital
+        # administration: CJF | National Capital
+        # administration: CJF | National Capital
         faction:
           source: canon
           value:

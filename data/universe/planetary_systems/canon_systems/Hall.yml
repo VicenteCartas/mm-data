@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,13 +16,14 @@
 # affiliated with Microsoft.
 
 id: Hall
-sucsId: 1040
+sucsId: 1041
 xcood: -13.961
 ycood: -44.251
 spectralType: K0V
 primarySlot:
-  source: 25 Years of Art and Fiction, pg. 218
+  source: 25YAF
   value: 3
+  page: 218
 event:
   - date: '2435-08-29'
     zenithCharge: yes
@@ -70,47 +71,58 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.8
     sysPos:
-      source: 25 Years of Art and Fiction, pg. 218
+      source: 25YAF
       value: 3
+      page: 218
     icon: wet20
     pressure:
-      source: 25 Years of Art and Fiction, pg. 218
+      source: 25YAF
       value: STANDARD
+      page: 218
     atmosphere:
-      source: 25 Years of Art and Fiction, pg. 218
+      source: 25YAF
       value: BREATHABLE
+      page: 218
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 25 Years of Art and Fiction, pg. 218
+      source: 25YAF
       value: 1.06
+      page: 218
     diameter: 13290
     density: 5.605330733189
     dayLength: 22
     yearLength: 1.1
     temperature:
-      source: 25 Years of Art and Fiction, pg. 218
+      source: 25YAF
       value: 35
+      page: 218
     water:
-      source: 25 Years of Art and Fiction, pg. 218
+      source: 25YAF
       value: 40
+      page: 218
     lifeForm:
-      source: 25 Years of Art and Fiction, pg. 218
+      source: 25YAF
       value: REPTILE
+      page: 218
     smallMoons: 1
     landmass:
       - name:
-          source: 25 Years of Art and Fiction, pg. 218
+          source: 25YAF
           value: Urra
+          page: 218
       - name:
-          source: 25 Years of Art and Fiction, pg. 218
+          source: 25YAF
           value: Wass
+          page: 218
         capital:
-          source: 25 Years of Art and Fiction, pg. 218
+          source: 25YAF
           value: Harney
+          page: 218
     satellite:
       - name:
-          source: 25 Years of Art and Fiction, pg. 218
+          source: 25YAF
           value: Luanda
+          page: 218
         size: medium
         icon: rock12
     event:
@@ -132,6 +144,12 @@ planet:
       - date: '2320-01-01'
         population: 16476473.0
       - date: '2321-11-18'
+        # administration: TH | Terra Firma Province
+        # administration: TH | Terra Firma Province
+        # administration: TH | Terra Firma Province
+        # administration: TH | Terra Firma Province
+        # administration: TH | Terra Firma Province
+        # administration: TH | Terra Firma Province
         faction:
           source: canon
           value:
@@ -232,6 +250,18 @@ planet:
         population: 3295716239.0
       - date: '2760-01-01'
         population: 3322669953.0
+      - date: '2767-01-01'
+        # administration: AE | Terra Firma Province
+        # administration: AE | Terra Firma Province
+        # administration: AE | Terra Firma Province
+        # administration: AE | Terra Firma Province
+        # administration: AE | Terra Firma Province
+        # administration: AE | Terra Firma Province
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - AE
       - date: '2767-10-23'
         faction:
           source: canon
@@ -240,6 +270,12 @@ planet:
       - date: '2770-01-01'
         population: 3339948610.0
       - date: '2779-01-03'
+        # administration: TH | Terra Firma Province
+        # administration: TH | Terra Firma Province
+        # administration: TH | Terra Firma Province
+        # administration: TH | Terra Firma Province
+        # administration: TH | Terra Firma Province
+        # administration: TH | Terra Firma Province
         faction:
           source: canon
           value:
@@ -247,6 +283,12 @@ planet:
       - date: '2780-01-01'
         population: 3328882680.0
       - date: '2790-12-10'
+        # administration: CC | Tikonov Commonality | Region 2
+        # administration: CC | Tikonov Commonality | Region 2
+        # administration: CC | Tikonov Commonality | Region 2
+        # administration: CC | Tikonov Commonality | Region 2
+        # administration: CC | Tikonov Commonality | Region 2
+        # administration: CC | Tikonov Commonality | Region 2
         faction:
           source: canon
           value:
@@ -259,6 +301,12 @@ planet:
       - date: '2820-01-01'
         population: 2993882137.0
       - date: '2821-03-05'
+        # administration: CC | Tikonov Commonality | Region 2
+        # administration: CC | Tikonov Commonality | Region 2
+        # administration: CC | Tikonov Commonality | Region 2
+        # administration: CC | Tikonov Commonality | Region 2
+        # administration: CC | Tikonov Commonality | Region 2
+        # administration: CC | Tikonov Commonality | Region 2
         faction:
           source: canon
           value:
@@ -339,8 +387,25 @@ planet:
             - FS
             - FWL
       - date: '3040-01-01'
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
         population: 2504523116.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
         faction:
           source: canon
           value:
@@ -349,11 +414,23 @@ planet:
         socioIndustrial: A-A-C-B-B
       - date: '3050-01-01'
         population: 2524387209.0
+      - date: '3057-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3057-11-01'
         faction:
           source: canon
           value:
             - CM
+      - date: '3058-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3060-01-01'
         population: 2539833032.0
       - date: '3066-10-10'
@@ -361,6 +438,12 @@ planet:
           source: canon
           value:
             - FWL
+      - date: '3067-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - WOB
       - date: '3068-02-01'
         faction:
           source: canon
@@ -375,7 +458,25 @@ planet:
             - Stone
       - date: '3080-01-01'
         population: 2588292375.0
+      - date: '3081-01-01'
+        # administration: ROS | Prefecture VI
+        # administration: ROS | Prefecture VI
+        # administration: ROS | Prefecture VI
+        # administration: ROS | Prefecture VI
+        # administration: ROS | Prefecture VI
+        # administration: ROS | Prefecture VI
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ROS
       - date: '3081-05-27'
+        # administration: ROS | Prefecture VI
+        # administration: ROS | Prefecture VI
+        # administration: ROS | Prefecture VI
+        # administration: ROS | Prefecture VI
+        # administration: ROS | Prefecture VI
+        # administration: ROS | Prefecture VI
         faction:
           source: canon
           value:
@@ -404,6 +505,12 @@ planet:
           value:
             - CC
       - date: '3151-01-01'
+        # administration: CC | Tikonov Commonality | Region 2
+        # administration: CC | Tikonov Commonality | Region 2
+        # administration: CC | Tikonov Commonality | Region 2
+        # administration: CC | Tikonov Commonality | Region 2
+        # administration: CC | Tikonov Commonality | Region 2
+        # administration: CC | Tikonov Commonality | Region 2
         faction:
           source: sucs
           value:

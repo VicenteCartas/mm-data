@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: Sadachbia
-sucsId: 2202
+sucsId: 2203
 xcood: 80.598
 ycood: 35.873
 spectralType:
-  source: MWDA world profiles
+  source: DA:RW
   value: K4V
 primarySlot:
-  source: MWDA world profiles
+  source: DA:RW
   value: 2
 event:
   - date: '2352-10-04'
@@ -60,66 +60,52 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.28
     sysPos:
-      source: MWDA world profiles
+      source: DA:RW
       value: 2
     icon: green15
     pressure:
-      source: MWDA world profiles
+      source: DA:RW
       value: STANDARD
     atmosphere:
-      source: MWDA world profiles
+      source: DA:RW
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: MWDA world profiles
+      source: DA:RW
       value: 0.84
     diameter: 11437
     density: 5.16137541752
     dayLength: 26
     yearLength: 0.8
     temperature:
-      source: MWDA world profiles
+      source: DA:RW
       value: 46
     water:
-      source: MWDA world profiles
+      source: DA:RW
       value: 63
     lifeForm:
-      source: MWDA world profiles
+      source: DA:RW
       value: AMPHIBIAN
-    desc: A quiet, but hot, agricultural world with only the most modest of industrial
-      capacity, most of Sadachbia‘s inland areas are little more than sun-drenched
-      desert plains. The early colonists mostly settled on the many islands and shores
-      of the northern hemisphere, where the land is most arable and the growing season
-      abnormally long, due to the planet‘s axial tilt and wind/ocean currents. Oceangoing
-      vessels keep the lines of trade and communication open between the scattered
-      settlements, with the core of planetary commercial and industrial energies,
-      the spaceport city of Kamalabad, forming the hub of all traffic. Kamalabad is
-      located on the northwestern peninsula of Grangi, Sadachbia‘s largest northern
-      continent. The planetary capital of Jalna‘ir is located on the nearby island-continent
-      of Banade. The planet also has one medium-sized equatorial continent, called
-      Lossa, and two southern continents known as Dharma and Shoquelle. These continents
-      support far fewer settlements than Grangi and Banade, largely due to the fact
-      that they are either too warm during the summer months or because their terrain
-      is too treacherous.
+    desc: A quiet, but hot, agricultural world with only the most modest of industrial capacity, most of Sadachbia‘s inland areas are little more than sun-drenched desert plains. The early colonists mostly settled on the many islands and shores of the northern hemisphere, where the land is most arable and the growing season abnormally long, due to the planet‘s axial tilt and wind/ocean currents. Oceangoing vessels keep the lines of trade and communication open between the scattered settlements, with the core of planetary commercial and industrial energies, the spaceport city of Kamalabad, forming the hub of all traffic. Kamalabad is located on the northwestern peninsula of Grangi, Sadachbia‘s largest northern continent. The planetary capital of Jalna‘ir is located on the nearby island-continent of Banade. The planet also has one medium-sized equatorial continent, called Lossa, and two southern continents known as Dharma and Shoquelle. These continents support far fewer settlements than Grangi and Banade, largely due to the fact that they are either too warm during the summer months or because their terrain is too treacherous.
     smallMoons: 1
     landmass:
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Banade
         capital:
-          source: MWDA world profiles
+          source: DA:RW
           value: Jalna'ir
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Dharma
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Grangi
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Lossa
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Shoquelle
     event:
       - date: '2272-11-04'
@@ -150,6 +136,12 @@ planet:
             - DC
       - date: '2340-01-01'
         population: 98450368.0
+      - date: '2341-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '2350-01-01'
         population: 176717235.0
       - date: '2360-01-01'
@@ -198,6 +190,18 @@ planet:
         population: 6196196383.0
       - date: '2570-01-01'
         population: 6314515447.0
+      - date: '2571-01-01'
+        # administration: DC | Benjamin Military District | Ashio Prefecture
+        # administration: DC | Benjamin Military District | Ashio Prefecture
+        # administration: DC | Benjamin Military District | Ashio Prefecture
+        # administration: DC | Benjamin Military District | Ashio Prefecture
+        # administration: DC | Benjamin Military District | Ashio Prefecture
+        # administration: DC | Benjamin Military District | Ashio Prefecture
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - DC
       - date: '2580-01-01'
         population: 6408183792.0
       - date: '2590-01-01'
@@ -312,7 +316,25 @@ planet:
         population: 4765886965.0
       - date: '3080-01-01'
         population: 4830179650.0
+      - date: '3081-01-01'
+        # administration: ROS | Prefecture III
+        # administration: ROS | Prefecture III
+        # administration: ROS | Prefecture III
+        # administration: ROS | Prefecture III
+        # administration: ROS | Prefecture III
+        # administration: ROS | Prefecture III
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ROS
       - date: '3081-05-15'
+        # administration: ROS | Prefecture III
+        # administration: ROS | Prefecture III
+        # administration: ROS | Prefecture III
+        # administration: ROS | Prefecture III
+        # administration: ROS | Prefecture III
+        # administration: ROS | Prefecture III
         faction:
           source: canon
           value:
@@ -331,7 +353,25 @@ planet:
         population: 5261855186.0
       - date: '3132-08-07'
         hpg: X
+      - date: '3135-01-01'
+        # administration: DC | Benjamin Military District | Algedi Prefecture
+        # administration: DC | Benjamin Military District | Algedi Prefecture
+        # administration: DC | Benjamin Military District | Algedi Prefecture
+        # administration: DC | Benjamin Military District | Algedi Prefecture
+        # administration: DC | Benjamin Military District | Algedi Prefecture
+        # administration: DC | Benjamin Military District | Algedi Prefecture
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - DC
       - date: '3135-05-30'
+        # administration: DC | Dieron Military District | Al Na'ir Prefecture
+        # administration: DC | Dieron Military District | Al Na'ir Prefecture
+        # administration: DC | Dieron Military District | Al Na'ir Prefecture
+        # administration: DC | Dieron Military District | Al Na'ir Prefecture
+        # administration: DC | Dieron Military District | Al Na'ir Prefecture
+        # administration: DC | Dieron Military District | Al Na'ir Prefecture
         faction:
           source: canon
           value:

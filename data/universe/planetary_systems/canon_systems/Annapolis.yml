@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -20,11 +20,13 @@ sucsId: 142
 xcood: 164.654
 ycood: 130.745
 spectralType:
-  source: A Time of War, pg. 380
+  source: AToW
   value: G2V
+  page: 380
 primarySlot:
-  source: A Time of War, pg. 380
+  source: AToW
   value: 2
+  page: 380
 event:
   - date: '2460-05-09'
     zenithCharge: yes
@@ -50,32 +52,39 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.7
     sysPos:
-      source: A Time of War, pg. 380
+      source: AToW
       value: 2
+      page: 380
     icon: green24
     pressure:
-      source: A Time of War, pg. 380
+      source: AToW
       value: STANDARD
+      page: 380
     atmosphere:
-      source: A Time of War, pg. 380
+      source: AToW
       value: BREATHABLE
+      page: 380
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: A Time of War, pg. 380
+      source: AToW
       value: 0.95
+      page: 380
     diameter: 13081
     density: 5.10378710771
     dayLength: 21
     yearLength: 1.2
     temperature:
-      source: A Time of War, pg. 380
+      source: AToW
       value: 35
+      page: 380
     water:
-      source: A Time of War, pg. 380
+      source: AToW
       value: 73
+      page: 380
     lifeForm:
-      source: A Time of War, pg. 380
+      source: AToW
       value: MAMMAL
+      page: 380
     desc: |-
       Annapolis was once like New Avalon and El Dorado, a fantastic world with plentiful fresh water, a Terran-compatible ecology, fresh air and excellent mineral resources. Discovered in 2218 and opened for colonization in 2235 to great fanfare, Annapolis was settled by the elite of the Terran Alliance (reflected in its name, drawn from a small town near one of the Alliance's centers of power). The Alliance planned the world as a showcase regional capital to solve crippling communication and control delays to Alliance colonies. Accordingly, Annapolis received massive funding and heavy immigration from Terra.
 
@@ -90,20 +99,24 @@ planet:
       A few Stone Age tribes exist in the planet's deep deserts and jungles, far from the reach of the government and dominant culture. These peoples are some of the most primitive and quixotic groups in the Inner Sphere. For example, deep in the cloud forests of Queen Anne's Land dwells a cargo cult that worships amazingly accurate mockups of Star League-era DropShips. They tend to follow the usual course of cargo cults, prophesying that their great benefactors from the stars, with magical powers and great gifts, will one day return if they maintain their mockups. One of these tribes maintains a six-meter tall, perfect likeness of Aleksandr Kerensky, carved of a type of granite isotopically confirmed to be from a completely different star system than Annapolis.
     landmass:
       - name:
-          source: A Time of War, pg. 380
+          source: AToW
           value: Queen Anne's Land
+          page: 380
         capital:
-          source: A Time of War, pg. 380
+          source: AToW
           value: Maryland
+          page: 380
     satellite:
       - name:
-          source: A Time of War, pg. 380
+          source: AToW
           value: Proctor
+          page: 380
         size: medium
         icon: rock14
       - name:
-          source: A Time of War, pg. 380
+          source: AToW
           value: Severn
+          page: 380
         size: medium
         icon: rock2
     event:
@@ -141,6 +154,12 @@ planet:
       - date: '2310-01-01'
         population: 59487271.0
       - date: '2319-09-09'
+        # administration: DC | Benjamin Military District | Irurzun Prefecture
+        # administration: DC | Benjamin Military District | Irurzun Prefecture
+        # administration: DC | Benjamin Military District | Irurzun Prefecture
+        # administration: DC | Benjamin Military District | Irurzun Prefecture
+        # administration: DC | Benjamin Military District | Irurzun Prefecture
+        # administration: DC | Benjamin Military District | Irurzun Prefecture
         faction:
           source: canon
           value:

@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,15 +16,17 @@
 # affiliated with Microsoft.
 
 id: Tamarind
-sucsId: 2475
+sucsId: 2476
 xcood: -268.942
 ycood: -83.292
 spectralType:
-  source: 'Handbook: House Marik, pg. 70'
+  source: 'HB:HM'
   value: K2IV
+  page: 70
 primarySlot:
-  source: 'Handbook: House Marik, pg. 70'
+  source: 'HB:HM'
   value: 4
+  page: 70
 event:
   - date: '2353-02-06'
     nadirCharge: yes
@@ -89,32 +91,39 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 1.12
     sysPos:
-      source: 'Handbook: House Marik, pg. 70'
+      source: 'HB:HM'
       value: 4
+      page: 70
     icon: green6
     pressure:
-      source: 'Handbook: House Marik, pg. 70'
+      source: 'HB:HM'
       value: STANDARD
+      page: 70
     atmosphere:
-      source: 'Handbook: House Marik, pg. 70'
+      source: 'HB:HM'
       value: BREATHABLE
+      page: 70
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'Handbook: House Marik, pg. 70'
+      source: 'HB:HM'
       value: 1.0
+      page: 70
     diameter: 14392
     density: 4.882898768264
     dayLength: 25
     yearLength: 1.5
     temperature:
-      source: 'Handbook: House Marik, pg. 70'
+      source: 'HB:HM'
       value: 38
+      page: 70
     water:
-      source: 'Handbook: House Marik, pg. 70'
+      source: 'HB:HM'
       value: 61
+      page: 70
     lifeForm:
-      source: 'Handbook: House Marik, pg. 70'
+      source: 'HB:HM'
       value: REPTILE
+      page: 70
     desc: |-
       Tamarind was in a state of near collapse in the early 31st Century due to mismanagement by the then Prime-Minister. Under the leadership of Therese Marik the planet’s fortunes turned around and within 30 years the planet’s debts have been paid off and where there were once food shortages, the planet can once agin fully sustain itself and produces enough extra to trade with surrounding planets.. Tamarind’s primary industries are textiles and light engineer, complemented by agriculture and some mining. The planet is also known as a center of Art, with many works selling for high prices across the League.
 
@@ -127,24 +136,33 @@ planet:
           source: canon
           value: Dhofar
         capital:
-          source: 'Handbook: House Marik, pg. 70'
+          source: 'HB:HM'
           value: Padaron City
+          page: 70
       - name:
           source: canon
           value: Moan
     satellite:
       - name:
-          source: 'Handbook: House Marik, pg. 70'
+          source: 'HB:HM'
           value: Tamarin
+          page: 70
         size: medium
         icon: oddmoon2
       - name:
-          source: 'Handbook: House Marik, pg. 70'
+          source: 'HB:HM'
           value: Teteli
+          page: 70
         size: medium
         icon: rock16
     event:
       - date: '2341-11-19'
+        # administration: FWL | Duchy of Tamarind | Region Capital
+        # administration: FWL | Duchy of Tamarind | Region Capital
+        # administration: FWL | Duchy of Tamarind | Region Capital
+        # administration: FWL | Duchy of Tamarind | Region Capital
+        # administration: FWL | Duchy of Tamarind | Region Capital
+        # administration: FWL | Duchy of Tamarind | Region Capital
         faction:
           source: canon
           value:
@@ -324,7 +342,37 @@ planet:
           value: 3581000000.0
       - date: '3070-01-01'
         population: 3592477554.0
+      - date: '3075-01-01'
+        # administration: DT | National Capital
+        # administration: DT | National Capital
+        # administration: DT | National Capital
+        # administration: DT | National Capital
+        # administration: DT | National Capital
+        # administration: DT | National Capital
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - DT
+      - date: '3079-01-01'
+        # administration: DTA | National Capital
+        # administration: DTA | National Capital
+        # administration: DTA | National Capital
+        # administration: DTA | National Capital
+        # administration: DTA | National Capital
+        # administration: DTA | National Capital
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - DTA
       - date: '3079-04-15'
+        # administration: DTA | National Capital
+        # administration: DTA | National Capital
+        # administration: DTA | National Capital
+        # administration: DTA | National Capital
+        # administration: DTA | National Capital
+        # administration: DTA | National Capital
         faction:
           source: canon
           value:
@@ -350,8 +398,25 @@ planet:
       - date: '3140-01-01'
         population: 3815386961.0
       - date: '3145-01-01'
+        # administration: FWL | Duchy of Tammarind-Abbey | District Capital
+        # administration: FWL | Duchy of Tammarind-Abbey | District Capital
+        # administration: FWL | Duchy of Tammarind-Abbey | District Capital
+        # administration: FWL | Duchy of Tammarind-Abbey | District Capital
+        # administration: FWL | Duchy of Tammarind-Abbey | District Capital
+        # administration: FWL | Duchy of Tammarind-Abbey | District Capital
         population: 3834511668.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FWL
       - date: '3151-01-01'
+        # administration: FWL | Duchy of Tammarind-Abbey | District Capital
+        # administration: FWL | Duchy of Tammarind-Abbey | District Capital
+        # administration: FWL | Duchy of Tammarind-Abbey | District Capital
+        # administration: FWL | Duchy of Tammarind-Abbey | District Capital
+        # administration: FWL | Duchy of Tammarind-Abbey | District Capital
+        # administration: FWL | Duchy of Tammarind-Abbey | District Capital
         faction:
           source: sucs
           value:

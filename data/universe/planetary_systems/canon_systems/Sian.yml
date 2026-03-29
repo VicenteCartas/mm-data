@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,15 +16,17 @@
 # affiliated with Microsoft.
 
 id: Sian
-sucsId: 2327
+sucsId: 2328
 xcood: 7.152
 ycood: -229.662
 spectralType:
-  source: 'Handbook: House Liao, pg. 77'
+  source: 'HB:HL'
   value: G0III
+  page: 77
 primarySlot:
-  source: 'Handbook: House Liao, pg. 77'
+  source: 'HB:HL'
   value: 2
+  page: 77
 event:
   - date: '2441-04-20'
     nadirCharge: yes
@@ -64,32 +66,39 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 3.08
     sysPos:
-      source: 'Handbook: House Liao, pg. 77'
+      source: 'HB:HL'
       value: 2
+      page: 77
     icon: green32
     pressure:
-      source: 'Handbook: House Liao, pg. 77'
+      source: 'HB:HL'
       value: STANDARD
+      page: 77
     atmosphere:
-      source: 'Handbook: House Liao, pg. 77'
+      source: 'HB:HL'
       value: BREATHABLE
+      page: 77
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'Handbook: House Liao, pg. 77'
+      source: 'HB:HL'
       value: 1.0
+      page: 77
     diameter: 11385
     density: 6.172805743621
     dayLength: 29
     yearLength: 5.5
     temperature:
-      source: 'Handbook: House Liao, pg. 77'
+      source: 'HB:HL'
       value: 30
+      page: 77
     water:
-      source: 'Handbook: House Liao, pg. 77'
+      source: 'HB:HL'
       value: 70
+      page: 77
     lifeForm:
-      source: 'Handbook: House Liao, pg. 77'
+      source: 'HB:HL'
       value: PLANT
+      page: 77
     desc: |-
       The planet is known for lush jungles and tropical environments. Development is controlled and limited so that much of the terrain outside of cities is virgin wilderness. The planetary capital Zi-Jin Cheng (“Forbidden City”) is also the capital of the Capellan Confederation and home to the Celestial Palace, home to House Liao.
 
@@ -104,33 +113,34 @@ planet:
       Saroyan Special Production
     landmass:
       - name:
-          source: 'Objective Raids: Capellan Confederation'
+          source: 'OR'
           value: Imarra
       - name:
-          source: 'Objective Raids: Capellan Confederation'
+          source: 'OR'
           value: Liaoning
       - name:
-          source: 'Objective Raids: Capellan Confederation'
+          source: 'OR'
           value: South Home
       - name:
-          source: 'Objective Raids: Capellan Confederation'
+          source: 'OR'
           value: Wuhan
         capital:
-          source: 'Handbook: House Liao, pg. 77'
+          source: 'HB:HL'
           value: Forbidden City
+          page: 77
     satellite:
       - name:
-          source: 'Objective Raids: Capellan Confederation'
+          source: 'OR'
           value: Fu Hsi
         size: large
         icon: rock14
       - name:
-          source: 'Objective Raids: Capellan Confederation'
+          source: 'OR'
           value: Nüwa
         size: medium
         icon: oddmoon2
       - name:
-          source: 'Objective Raids: Capellan Confederation'
+          source: 'OR'
           value: Shennong
         size: large
         icon: rock12
@@ -146,6 +156,18 @@ planet:
         population: 243589.0
       - date: '2270-01-01'
         population: 947838.0
+      - date: '2271-01-01'
+        # administration: SiS | National Capital
+        # administration: SiS | National Capital
+        # administration: SiS | National Capital
+        # administration: SiS | National Capital
+        # administration: SiS | National Capital
+        # administration: SiS | National Capital
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - SiS
       - date: '2280-01-01'
         population: 3081532.0
       - date: '2290-01-01'
@@ -167,6 +189,12 @@ planet:
       - date: '2360-01-01'
         population: 525279742.0
       - date: '2367-07-01'
+        # administration: CC | Sian Commonality | Region 4
+        # administration: CC | Sian Commonality | Region 4
+        # administration: CC | Sian Commonality | Region 4
+        # administration: CC | Sian Commonality | Region 4
+        # administration: CC | Sian Commonality | Region 4
+        # administration: CC | Sian Commonality | Region 4
         faction:
           source: canon
           value:

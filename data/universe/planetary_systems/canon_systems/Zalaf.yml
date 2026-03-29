@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Zalaf
-sucsId: 2810
+sucsId: 2811
 xcood: 388.248
 ycood: 212.179
 spectralType: M9V
@@ -55,6 +55,12 @@ planet:
       - name: Kürten
     event:
       - date: '2396-06-30'
+        # administration: DC | Galedon Military District | New Samarkand Prefecture
+        # administration: DC | Galedon Military District | New Samarkand Prefecture
+        # administration: DC | Galedon Military District | New Samarkand Prefecture
+        # administration: DC | Galedon Military District | New Samarkand Prefecture
+        # administration: DC | Galedon Military District | New Samarkand Prefecture
+        # administration: DC | Galedon Military District | New Samarkand Prefecture
         faction:
           source: canon
           value:
@@ -231,6 +237,12 @@ planet:
         hpg: X
       - date: '3140-01-01'
         population: 194957785.0
+      - date: '3145-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - RA
       - date: '3145-04-07'
         faction:
           source: canon

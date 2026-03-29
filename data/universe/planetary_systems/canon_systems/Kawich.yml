@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: Kawich
-sucsId: 1313
+sucsId: 1314
 xcood: 53.764
 ycood: -29.514
 spectralType:
-  source: MWDA world profiles
+  source: DA:RW
   value: M0V
 primarySlot:
-  source: MWDA world profiles
+  source: DA:RW
   value: 2
 event:
   - date: '2364-02-09'
@@ -53,31 +53,31 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.2
     sysPos:
-      source: MWDA world profiles
+      source: DA:RW
       value: 2
     icon: green3
     pressure:
-      source: MWDA world profiles
+      source: DA:RW
       value: STANDARD
     atmosphere:
-      source: MWDA world profiles
+      source: DA:RW
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: MWDA world profiles
+      source: DA:RW
       value: 1.1
     diameter: 15605
     density: 4.9538707445
     dayLength: 27
     yearLength: 0.7
     temperature:
-      source: MWDA world profiles
+      source: DA:RW
       value: 26
     water:
-      source: MWDA world profiles
+      source: DA:RW
       value: 60
     lifeForm:
-      source: MWDA world profiles
+      source: DA:RW
       value: REPTILE
     desc: |-
       Ten small continents dot Kawich‘s large but shallow seas. Kawich‘s soil is generally poor, but its rocks are rich in metal ores, minerals, and petroleum. Although mining and refining industries boomed on Kawich under the Terran Hegemony, Kawich‘s population has always retained a frontier attitude given the hardscrabble land they must work.
@@ -87,41 +87,41 @@ planet:
       The Blakist Holy War destroyed much of Kawich‘s industry, but The Republic of the Sphere managed to resurrect most of Kawich‘s mines, drills, and refineries during the Golden Age of Peace.
     landmass:
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Adaven
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Armagosa
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Darrough
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Hannapah
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Ione
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Nyala
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Ophir
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Pactolus
         capital:
-          source: MWDA world profiles (landmass unclear)
+          source: DA:RW
           value: Dotara
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Tolicha
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Wahmonie
     satellite:
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Cactus
         size: medium
         icon: rock4
@@ -155,7 +155,19 @@ planet:
         population: 162516831.0
       - date: '2340-01-01'
         population: 242716802.0
+      - date: '2341-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - TH
       - date: '2341-09-07'
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
         faction:
           source: canon
           value:
@@ -250,6 +262,18 @@ planet:
         population: 2282700294.0
       - date: '2760-01-01'
         population: 2263778639.0
+      - date: '2767-01-01'
+        # administration: AE | Lockdale Province
+        # administration: AE | Lockdale Province
+        # administration: AE | Lockdale Province
+        # administration: AE | Lockdale Province
+        # administration: AE | Lockdale Province
+        # administration: AE | Lockdale Province
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - AE
       - date: '2767-10-12'
         faction:
           source: canon
@@ -258,6 +282,12 @@ planet:
       - date: '2770-01-01'
         population: 2251679742.0
       - date: '2779-03-03'
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
         faction:
           source: canon
           value:
@@ -276,7 +306,25 @@ planet:
         population: 2148046015.0
       - date: '2820-01-01'
         population: 2112087484.0
+      - date: '2821-01-01'
+        # administration: CC | Tikonov Commonality | Region 4
+        # administration: CC | Tikonov Commonality | Region 4
+        # administration: CC | Tikonov Commonality | Region 4
+        # administration: CC | Tikonov Commonality | Region 4
+        # administration: CC | Tikonov Commonality | Region 4
+        # administration: CC | Tikonov Commonality | Region 4
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CC
       - date: '2821-02-10'
+        # administration: CC | Tikonov Commonality | Region 4
+        # administration: CC | Tikonov Commonality | Region 4
+        # administration: CC | Tikonov Commonality | Region 4
+        # administration: CC | Tikonov Commonality | Region 4
+        # administration: CC | Tikonov Commonality | Region 4
+        # administration: CC | Tikonov Commonality | Region 4
         faction:
           source: canon
           value:
@@ -306,6 +354,12 @@ planet:
       - date: '2920-01-01'
         population: 1896286994.0
       - date: '2929-06-01'
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
         faction:
           source: canon
           value:
@@ -335,8 +389,25 @@ planet:
       - date: '3030-01-01'
         population: 1887009091.0
       - date: '3040-01-01'
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
         population: 1911700354.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
         faction:
           source: canon
           value:
@@ -347,7 +418,25 @@ planet:
         population: 1934585485.0
       - date: '3060-01-01'
         population: 1955005651.0
+      - date: '3067-01-01'
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FS
       - date: '3067-04-20'
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
         faction:
           source: canon
           value:
@@ -372,7 +461,25 @@ planet:
             - Stone
       - date: '3080-01-01'
         population: 2008108198.0
+      - date: '3081-01-01'
+        # administration: ROS | Prefecture IV
+        # administration: ROS | Prefecture IV
+        # administration: ROS | Prefecture IV
+        # administration: ROS | Prefecture IV
+        # administration: ROS | Prefecture IV
+        # administration: ROS | Prefecture IV
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ROS
       - date: '3081-04-16'
+        # administration: ROS | Prefecture IV
+        # administration: ROS | Prefecture IV
+        # administration: ROS | Prefecture IV
+        # administration: ROS | Prefecture IV
+        # administration: ROS | Prefecture IV
+        # administration: ROS | Prefecture IV
         faction:
           source: canon
           value:
@@ -391,6 +498,12 @@ planet:
         population: 2133989183.0
       - date: '3132-08-07'
         hpg: X
+      - date: '3135-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3135-10-01'
         faction:
           source: canon
@@ -398,7 +511,25 @@ planet:
             - IND
       - date: '3140-01-01'
         population: 2137406298.0
+      - date: '3145-01-01'
+        # administration: CC | Tikonov Commonality | Region 2
+        # administration: CC | Tikonov Commonality | Region 2
+        # administration: CC | Tikonov Commonality | Region 2
+        # administration: CC | Tikonov Commonality | Region 2
+        # administration: CC | Tikonov Commonality | Region 2
+        # administration: CC | Tikonov Commonality | Region 2
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CC
       - date: '3145-06-30'
+        # administration: CC | Tikonov Commonality | Region 8
+        # administration: CC | Tikonov Commonality | Region 8
+        # administration: CC | Tikonov Commonality | Region 8
+        # administration: CC | Tikonov Commonality | Region 8
+        # administration: CC | Tikonov Commonality | Region 8
+        # administration: CC | Tikonov Commonality | Region 8
         faction:
           source: canon
           value:

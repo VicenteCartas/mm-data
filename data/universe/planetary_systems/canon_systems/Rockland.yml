@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Rockland
-sucsId: 2165
+sucsId: 2166
 xcood: 149.916
 ycood: 419.232
 spectralType: K3V
@@ -45,46 +45,62 @@ planet:
     sysPos: 2
     icon: green43
     pressure:
-      source: 25 Years of Art and Fiction, pg. 145
+      source: 25YAF
       value: STANDARD
+      page: 145
     atmosphere:
-      source: 25 Years of Art and Fiction, pg. 145
+      source: 25YAF
       value: BREATHABLE
+      page: 145
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 25 Years of Art and Fiction, pg. 145
+      source: 25YAF
       value: 1.11
+      page: 145
     diameter: 13962
     density: 5.58699596606
     dayLength: 20
     yearLength: 0.9
     temperature:
-      source: 25 Years of Art and Fiction, pg. 145
+      source: 25YAF
       value: 45
+      page: 145
     water:
-      source: 25 Years of Art and Fiction, pg. 145
+      source: 25YAF
       value: 50
+      page: 145
     lifeForm:
-      source: 25 Years of Art and Fiction, pg. 145
+      source: 25YAF
       value: PLANT
+      page: 145
     landmass:
       - name:
-          source: 25 Years of Art and Fiction, pg. 145
+          source: 25YAF
           value: Granite
+          page: 145
         capital:
-          source: 25 Years of Art and Fiction, pg. 145
+          source: 25YAF
           value: Maverick
+          page: 145
       - name:
-          source: 25 Years of Art and Fiction, pg. 145
+          source: 25YAF
           value: Limerock
+          page: 145
     satellite:
       - name:
-          source: 25 Years of Art and Fiction, pg. 145
+          source: 25YAF
           value: Haven
+          page: 145
         size: medium
         icon: rock11
     event:
       - date: '2432-07-30'
+        # administration: DC | Pesht Military District | Coudoux Prefecture
+        # administration: DC | Pesht Military District | Coudoux Prefecture
+        # administration: DC | Pesht Military District | Coudoux Prefecture
+        # administration: DC | Pesht Military District | Coudoux Prefecture
+        # administration: DC | Pesht Military District | Coudoux Prefecture
+        # administration: DC | Pesht Military District | Coudoux Prefecture
         faction:
           source: canon
           value:
@@ -226,12 +242,35 @@ planet:
         socioIndustrial: C-C-B-D-B
       - date: '3050-01-01'
         population: 97681048.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CSJ
       - date: '3050-03-01'
         faction:
           source: canon
           value:
             - CSJ
+      - date: '3059-01-01'
+        # administration: DC | Pesht Military District | Lonaconing Prefecture
+        # administration: DC | Pesht Military District | Lonaconing Prefecture
+        # administration: DC | Pesht Military District | Lonaconing Prefecture
+        # administration: DC | Pesht Military District | Lonaconing Prefecture
+        # administration: DC | Pesht Military District | Lonaconing Prefecture
+        # administration: DC | Pesht Military District | Lonaconing Prefecture
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - DC
       - date: '3059-08-01'
+        # administration: DC | Pesht Military District | Albiero Prefecture
+        # administration: DC | Pesht Military District | Albiero Prefecture
+        # administration: DC | Pesht Military District | Albiero Prefecture
+        # administration: DC | Pesht Military District | Albiero Prefecture
+        # administration: DC | Pesht Military District | Albiero Prefecture
+        # administration: DC | Pesht Military District | Albiero Prefecture
         faction:
           source: canon
           value:

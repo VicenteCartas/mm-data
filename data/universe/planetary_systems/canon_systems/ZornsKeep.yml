@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Zorn's Keep
-sucsId: 2880
+sucsId: 2881
 xcood: -428.849
 ycood: -112.788
 spectralType: G9V
@@ -171,6 +171,12 @@ planet:
         population: 1221730.0
       - date: '3080-01-01'
         population: 1233515.0
+      - date: '3081-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3081-05-01'
         faction:
           source: canon

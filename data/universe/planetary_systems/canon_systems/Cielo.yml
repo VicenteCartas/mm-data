@@ -1,0 +1,434 @@
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
+#
+# NOTICE: The MegaMek organization is a non-profit group of volunteers
+# creating free software for the BattleTech community.
+#
+# MechWarrior, BattleMech, `Mech and AeroTech are registered trademarks
+# of The Topps Company, Inc. All Rights Reserved.
+#
+# Catalyst Game Labs and the Catalyst Game Labs logo are trademarks of
+# InMediaRes Productions, LLC.
+#
+# MechWarrior Copyright Microsoft Corporation. MegaMek Data was created under
+# Microsoft's "Game Content Usage Rules"
+# <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
+# affiliated with Microsoft.
+
+id: Cielo
+sucsId: 3175
+xcood: -270.137
+ycood: -176.588
+spectralType: M1V
+primarySlot: 1
+planet:
+  - type: TERRESTRIAL
+    orbitalDist: 0.2
+    sysPos: 1
+    icon: green12
+    pressure: Low
+    atmosphere: BREATHABLE
+    composition: Nitrogen and Oxygen, plus trace gases
+    gravity: 1.17
+    diameter: 12000
+    density: 6.8337
+    dayLength: 21
+    yearLength: 0.7
+    temperature: 27
+    water: 74
+    lifeForm: AMPHIBIAN
+    name: Cielo
+    event:
+      - date: '2271-01-01'
+        population: 52831.0
+        socioIndustrial: D-D-A-D-D
+      - date: '2280-01-01'
+        population: 163807.0
+      - date: '2290-01-01'
+        population: 485855.0
+      - date: '2300-01-01'
+        population: 1240231.0
+      - date: '2310-01-01'
+        population: 2788189.0
+      - date: '2320-01-01'
+        population: 5609803.0
+      - date: '2330-01-01'
+        population: 10259162.0
+      - date: '2340-01-01'
+        population: 17360728.0
+      - date: '2350-01-01'
+        population: 27366296.0
+      - date: '2360-01-01'
+        population: 40480562.0
+      - date: '2370-01-01'
+        population: 57143285.0
+      - date: '2380-01-01'
+        population: 76846500.0
+      - date: '2390-01-01'
+        population: 98657586.0
+      - date: '2400-01-01'
+        population: 121867225.0
+      - date: '2410-01-01'
+        population: 146311411.0
+      - date: '2420-01-01'
+        population: 170737778.0
+      - date: '2430-01-01'
+        population: 195041810.0
+      - date: '2440-01-01'
+        population: 219779086.0
+      - date: '2450-01-01'
+        population: 243903959.0
+      - date: '2460-01-01'
+        population: 265531083.0
+      - date: '2470-01-01'
+        population: 286188465.0
+      - date: '2475-01-01'
+        socioIndustrial: C-C-A-C-D
+      - date: '2480-01-01'
+        population: 304484562.0
+      - date: '2490-01-01'
+        population: 320955244.0
+      - date: '2500-01-01'
+        population: 336351375.0
+      - date: '2510-01-01'
+        population: 352931829.0
+      - date: '2520-01-01'
+        population: 365914482.0
+      - date: '2530-01-01'
+        population: 375157098.0
+      - date: '2540-01-01'
+        population: 383221918.0
+      - date: '2550-01-01'
+        population: 388858627.0
+      - date: '2560-01-01'
+        population: 393655105.0
+      - date: '2570-01-01'
+        population: 396329620.0
+      - date: '2580-01-01'
+        population: 399303379.0
+      - date: '2590-01-01'
+        population: 404010130.0
+      - date: '2600-01-01'
+        population: 408501128.0
+      - date: '2610-01-01'
+        population: 413202939.0
+      - date: '2615-01-01'
+        socioIndustrial: B-B-A-B-C
+      - date: '2620-01-01'
+        population: 419637516.0
+      - date: '2630-01-01'
+        population: 426085934.0
+      - date: '2640-01-01'
+        population: 432356958.0
+      - date: '2650-01-01'
+        population: 437713221.0
+      - date: '2660-01-01'
+        population: 443856045.0
+      - date: '2670-01-01'
+        population: 446556525.0
+      - date: '2680-01-01'
+        population: 446148637.0
+      - date: '2690-01-01'
+        population: 448827015.0
+      - date: '2700-01-01'
+        population: 453951413.0
+      - date: '2710-01-01'
+        population: 460341606.0
+      - date: '2720-01-01'
+        population: 463230301.0
+      - date: '2730-01-01'
+        population: 468811416.0
+      - date: '2740-01-01'
+        population: 472546201.0
+      - date: '2750-01-01'
+        population: 476973973.0
+      - date: '2760-01-01'
+        population: 482223705.0
+      - date: '2770-01-01'
+        population: 486870711.0
+      - date: '2780-01-01'
+        population: 491791341.0
+      - date: '2790-01-01'
+        population: 486673180.0
+      - date: '2800-01-01'
+        population: 474319895.0
+      - date: '2810-01-01'
+        population: 461834679.0
+      - date: '2820-01-01'
+        population: 451633362.0
+      - date: '2830-01-01'
+        population: 448956084.0
+      - date: '2840-01-01'
+        population: 439886659.0
+      - date: '2850-01-01'
+        population: 432457335.0
+      - date: '2851-01-01'
+        socioIndustrial: B-C-B-C-C
+      - date: '2860-01-01'
+        population: 426385010.0
+      - date: '2870-01-01'
+        population: 422836972.0
+      - date: '2880-01-01'
+        population: 423176843.0
+      - date: '2890-01-01'
+        population: 422701101.0
+      - date: '2892-01-01'
+        socioIndustrial: C-D-C-D-C
+      - date: '2900-01-01'
+        population: 409990381.0
+      - date: '2910-01-01'
+        population: 395368068.0
+      - date: '2920-01-01'
+        population: 387754858.0
+      - date: '2930-01-01'
+        population: 386386472.0
+      - date: '2940-01-01'
+        population: 381328531.0
+      - date: '2950-01-01'
+        population: 374346422.0
+      - date: '2960-01-01'
+        population: 368556653.0
+      - date: '2970-01-01'
+        population: 362157404.0
+      - date: '2980-01-01'
+        population: 362448501.0
+      - date: '2990-01-01'
+        population: 364141484.0
+      - date: '3000-01-01'
+        population: 363206449.0
+      - date: '3010-01-01'
+        population: 363673666.0
+      - date: '3020-01-01'
+        population: 365372373.0
+      - date: '3027-01-01'
+        socioIndustrial: C-D-B-D-C
+      - date: '3030-01-01'
+        population: 367653854.0
+      - date: '3040-01-01'
+        population: 371014773.0
+      - date: '3045-01-01'
+        socioIndustrial: C-C-A-C-C
+      - date: '3050-01-01'
+        population: 374556209.0
+      - date: '3060-01-01'
+        population: 377677962.0
+      - date: '3070-01-01'
+        population: 381206751.0
+      - date: '3080-01-01'
+        population: 387742664.0
+      - date: '3090-01-01'
+        population: 392894796.0
+      - date: '3095-01-01'
+        socioIndustrial: C-B-A-C-C
+      - date: '3100-01-01'
+        population: 398035772.0
+      - date: '3110-01-01'
+        population: 403244018.0
+      - date: '3120-01-01'
+        population: 410403935.0
+      - date: '3130-01-01'
+        population: 417106624.0
+      - date: '3140-01-01'
+        population: 422479904.0
+      - date: '3152-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FWL
+  - type: TERRESTRIAL
+    orbitalDist: 0.5
+    sysPos: 2
+    icon: rock7
+    pressure: HIGH
+    atmosphere: TOXIC_CAUSTIC
+    composition: Nitrogen and Methane, plus trace amounts of Sulfur Dioxide
+    gravity: 0.68
+    diameter: 7500
+    density: 6.3337
+    dayLength: 24
+    yearLength: 0.8
+    temperature: -55
+    water: 48
+    smallMoons: 3
+    name: Cielo II
+  - type: TERRESTRIAL
+    orbitalDist: 0.8
+    sysPos: 3
+    icon: rock10
+    pressure: TRACE
+    atmosphere: TOXIC_POISON
+    composition: Nitrogen and Ammonia, plus trace amounts of Methane
+    gravity: 0.96
+    diameter: 11500
+    density: 5.8437
+    dayLength: 19
+    yearLength: 1
+    temperature: -119
+    water: 0
+    name: Cielo III
+  - type: GAS_GIANT
+    orbitalDist: 1.4
+    sysPos: 4
+    icon: gasg29
+    pressure: VERY_HIGH
+    atmosphere: TOXIC_POISON
+    composition: Hydrogen and Helium, plus trace gases
+    gravity: 1.99
+    diameter: 140000
+    density: 1
+    dayLength: 13
+    yearLength: 1.8
+    smallMoons: 17
+    satellite:
+      - name: 4-M1
+        size: medium
+        icon: rock1
+      - name: 4-M2
+        size: medium
+        icon: rock2
+    name: Cielo IV
+  - type: GAS_GIANT
+    orbitalDist: 2.6
+    sysPos: 5
+    icon: gasg1
+    pressure: VERY_HIGH
+    atmosphere: TOXIC_POISON
+    composition: Hydrogen and Helium, plus trace gases
+    gravity: 1.1
+    diameter: 70000
+    density: 1.1
+    dayLength: 18
+    yearLength: 4.3
+    ring: true
+    smallMoons: 20
+    satellite:
+      - name: 5-M1
+        size: medium
+        icon: rock1
+      - name: 5-M2
+        size: medium
+        icon: rock2
+      - name: 5-M3
+        size: medium
+        icon: rock3
+    name: Cielo V
+  - type: GIANT_TERRESTRIAL
+    orbitalDist: 5
+    sysPos: 6
+    icon: gasg19
+    pressure: VERY_HIGH
+    atmosphere: TOXIC_POISON
+    composition: Hydrogen and Helium, plus trace gases
+    gravity: 0.66
+    diameter: 15500
+    density: 3
+    dayLength: 11
+    yearLength: 11.2
+    satellite:
+      - name: 6-G1
+        size: giant
+        icon: oddmoon1
+    name: Cielo VI
+  - type: GAS_GIANT
+    orbitalDist: 9.8
+    sysPos: 7
+    icon: gasg15
+    pressure: VERY_HIGH
+    atmosphere: TOXIC_POISON
+    composition: Hydrogen and Helium, plus trace gases
+    gravity: 1.54
+    diameter: 120000
+    density: 0.9
+    dayLength: 14
+    yearLength: 30.7
+    smallMoons: 15
+    satellite:
+      - name: 7-L1
+        size: large
+        icon: rock1
+      - name: 7-L2
+        size: large
+        icon: rock2
+    name: Cielo VII
+  - type: ICE_GIANT
+    orbitalDist: 19.4
+    sysPos: 8
+    icon: iceg5
+    pressure: VERY_HIGH
+    atmosphere: TOXIC_POISON
+    composition: Hydrogen and Helium, plus trace gases
+    gravity: 1.02
+    diameter: 45000
+    density: 1.6
+    dayLength: 15
+    yearLength: 85.5
+    ring: true
+    smallMoons: 7
+    name: Cielo VIII
+  - type: GAS_GIANT
+    orbitalDist: 38.6
+    sysPos: 9
+    icon: gasg29
+    pressure: VERY_HIGH
+    atmosphere: TOXIC_POISON
+    composition: Hydrogen and Helium, plus trace gases
+    gravity: 1.1
+    diameter: 70000
+    density: 1.1
+    dayLength: 15
+    yearLength: 239.8
+    smallMoons: 19
+    name: Cielo IX
+  - type: GAS_GIANT
+    orbitalDist: 77
+    sysPos: 10
+    icon: gasg1
+    pressure: VERY_HIGH
+    atmosphere: TOXIC_POISON
+    composition: Hydrogen and Helium, plus trace gases
+    gravity: 2.66
+    diameter: 170000
+    density: 1.1
+    dayLength: 16
+    yearLength: 675.7
+    smallMoons: 17
+    name: Cielo X
+  - type: GAS_GIANT
+    orbitalDist: 153.8
+    sysPos: 11
+    icon: gasg8
+    pressure: VERY_HIGH
+    atmosphere: TOXIC_POISON
+    composition: Hydrogen and Helium, plus trace gases
+    gravity: 2.73
+    diameter: 120000
+    density: 1.6
+    dayLength: 10
+    yearLength: 1907.4
+    ring: true
+    smallMoons: 20
+    name: Cielo XI
+  - type: GAS_GIANT
+    orbitalDist: 307.4
+    sysPos: 12
+    icon: gasg15
+    pressure: VERY_HIGH
+    atmosphere: TOXIC_POISON
+    composition: Hydrogen and Helium, plus trace gases
+    gravity: 2.05
+    diameter: 120000
+    density: 1.2
+    dayLength: 13
+    yearLength: 5389.6
+    ring: true
+    smallMoons: 15
+    satellite:
+      - name: 12-L1
+        size: large
+        icon: rock1
+      - name: 12-L2
+        size: large
+        icon: rock2
+    name: Cielo XII
+event: [ ]

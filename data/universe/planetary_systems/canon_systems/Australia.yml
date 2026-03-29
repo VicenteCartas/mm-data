@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -20,10 +20,10 @@ sucsId: 215
 xcood: -304.298
 ycood: 289.472
 spectralType:
-  source: 'Operational Turning Points: Falcon Incursion'
+  source: 'OTP:FI'
   value: K8V
 primarySlot:
-  source: 'Operational Turning Points: Falcon Incursion'
+  source: 'OTP:FI'
   value: 3
 event:
   - date: '2794-12-04'
@@ -68,31 +68,31 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.24
     sysPos:
-      source: 'Operational Turning Points: Falcon Incursion'
+      source: 'OTP:FI'
       value: 3
     icon: wet1
     pressure:
-      source: 'Operational Turning Points: Falcon Incursion'
+      source: 'OTP:FI'
       value: STANDARD
     atmosphere:
-      source: 'Operational Turning Points: Falcon Incursion'
+      source: 'OTP:FI'
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'Operational Turning Points: Falcon Incursion'
+      source: 'OTP:FI'
       value: 1.08
     diameter: 11544
     density: 6.57441109545
     dayLength: 23
     yearLength: 0.8
     temperature:
-      source: 'Operational Turning Points: Falcon Incursion'
+      source: 'OTP:FI'
       value: 35
     water:
-      source: 'Operational Turning Points: Falcon Incursion'
+      source: 'OTP:FI'
       value: 76
     lifeForm:
-      source: 'Operational Turning Points: Falcon Incursion'
+      source: 'OTP:FI'
       value: MAMMAL
     desc: |-
       Australia is relatively uninhabited and most of the planet has been purposefully undeveloped in order to better protect one of the Lyran Commonwealth’s Mint and Reserve Banks. Without the Mint, the planet would have no strategic or tactical importance to the Commonwealth. The Mint is located some where near the planetary capital of Woolloomoloo, however the entrances are highly classified secrets and rumors indicate that anyone that has found an entrance and attempted to gain access has either been captured or killed. The Mint is rumored to be highly fortified, to the extent that it could withstand orbital bombardment.
@@ -105,16 +105,22 @@ planet:
           source: canon
           value: Queensland
         capital:
-          source: 'Operational Turning Points: Falcon Incursion'
+          source: 'OTP:FI'
           value: Woolloomoloo
     satellite:
       - name:
-          source: 'Operational Turning Points: Falcon Incursion'
+          source: 'OTP:FI'
           value: Perth
         size: medium
         icon: oddmoon3
     event:
       - date: '2725-07-29'
+        # administration: LA | Protectorate of Donegal | Coventry Province
+        # administration: LA | Protectorate of Donegal | Coventry Province
+        # administration: LA | Protectorate of Donegal | Coventry Province
+        # administration: LA | Protectorate of Donegal | Coventry Province
+        # administration: LA | Protectorate of Donegal | Coventry Province
+        # administration: LA | Protectorate of Donegal | Coventry Province
         faction:
           source: canon
           value:
@@ -188,8 +194,25 @@ planet:
       - date: '3030-01-01'
         population: 945112780.0
       - date: '3040-01-01'
+        # administration: FC | Donegal March | Coventry Operational Area
+        # administration: FC | Donegal March | Coventry Operational Area
+        # administration: FC | Donegal March | Coventry Operational Area
+        # administration: FC | Donegal March | Coventry Operational Area
+        # administration: FC | Donegal March | Coventry Operational Area
+        # administration: FC | Donegal March | Coventry Operational Area
         population: 946905299.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
+        # administration: FC | Donegal March | Coventry Operational Area
+        # administration: FC | Donegal March | Coventry Operational Area
+        # administration: FC | Donegal March | Coventry Operational Area
+        # administration: FC | Donegal March | Coventry Operational Area
+        # administration: FC | Donegal March | Coventry Operational Area
+        # administration: FC | Donegal March | Coventry Operational Area
         faction:
           source: canon
           value:
@@ -200,9 +223,39 @@ planet:
           value: B-B-C-C-B
       - date: '3050-01-01'
         population: 953213037.0
+      - date: '3057-01-01'
+        # administration: LA | Donegal March | Coventry Operational Area
+        # administration: LA | Donegal March | Coventry Operational Area
+        # administration: LA | Donegal March | Coventry Operational Area
+        # administration: LA | Donegal March | Coventry Operational Area
+        # administration: LA | Donegal March | Coventry Operational Area
+        # administration: LA | Donegal March | Coventry Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '3057-09-18'
         faction:
           source: canon
+          value:
+            - LA
+      - date: '3058-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CJF
+      - date: '3059-01-01'
+        # administration: LA | Coventry Province
+        # administration: LA | Coventry Province
+        # administration: LA | Coventry Province
+        # administration: LA | Coventry Province
+        # administration: LA | Coventry Province
+        # administration: LA | Coventry Province
+        faction:
+          source: SUCS
+          version: 2026.03.02
           value:
             - LA
       - date: '3060-01-01'

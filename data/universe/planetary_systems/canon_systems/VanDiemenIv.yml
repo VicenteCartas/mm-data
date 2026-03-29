@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Van Diemen IV
-sucsId: 2654
+sucsId: 2655
 xcood: -32.831
 ycood: -41.666
 spectralType: F0V
@@ -124,16 +124,34 @@ planet:
         population: 2505311.0
       - date: '2310-01-01'
         population: 6433797.0
+      - date: '2317-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '2320-01-01'
         population: 14469141.0
       - date: '2330-01-01'
         population: 28928476.0
       - date: '2340-01-01'
         population: 52599124.0
+      - date: '2341-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - TH
       - date: '2350-01-01'
         population: 87042301.0
       - date: '2360-01-01'
         population: 133680148.0
+      - date: '2366-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FWL
       - date: '2370-01-01'
         population: 192688723.0
       - date: '2373-01-01'
@@ -163,6 +181,12 @@ planet:
       - date: '2490-01-01'
         population: 1392514793.0
       - date: '2500-08-08'
+        # administration: TH | Terra Firma Province
+        # administration: TH | Terra Firma Province
+        # administration: TH | Terra Firma Province
+        # administration: TH | Terra Firma Province
+        # administration: TH | Terra Firma Province
+        # administration: TH | Terra Firma Province
         faction:
           source: canon
           value:
@@ -224,6 +248,18 @@ planet:
         population: 1915164614.0
       - date: '2760-01-01'
         population: 1907399934.0
+      - date: '2767-01-01'
+        # administration: AE | Terra Firma Province
+        # administration: AE | Terra Firma Province
+        # administration: AE | Terra Firma Province
+        # administration: AE | Terra Firma Province
+        # administration: AE | Terra Firma Province
+        # administration: AE | Terra Firma Province
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - AE
       - date: '2767-03-12'
         faction:
           source: canon
@@ -232,12 +268,24 @@ planet:
       - date: '2770-01-01'
         population: 1893658260.0
       - date: '2779-12-22'
+        # administration: TH | Terra Firma Province
+        # administration: TH | Terra Firma Province
+        # administration: TH | Terra Firma Province
+        # administration: TH | Terra Firma Province
+        # administration: TH | Terra Firma Province
+        # administration: TH | Terra Firma Province
         faction:
           source: canon
           value:
             - TH
       - date: '2780-01-01'
         population: 1880310775.0
+      - date: '2786-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FWL
       - date: '2786-07-20'
         faction:
           source: canon
@@ -303,6 +351,12 @@ planet:
       - date: '3030-01-01'
         population: 1654065686.0
       - date: '3032-11-11'
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
         faction:
           source: canon
           value:
@@ -315,6 +369,12 @@ planet:
         socioIndustrial: B-B-C-B-C
       - date: '3050-01-01'
         population: 1684108442.0
+      - date: '3057-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FWL
       - date: '3057-10-01'
         faction:
           source: canon
@@ -342,7 +402,25 @@ planet:
             - Stone
       - date: '3080-01-01'
         population: 1742875454.0
+      - date: '3081-01-01'
+        # administration: ROS | Prefecture VII
+        # administration: ROS | Prefecture VII
+        # administration: ROS | Prefecture VII
+        # administration: ROS | Prefecture VII
+        # administration: ROS | Prefecture VII
+        # administration: ROS | Prefecture VII
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ROS
       - date: '3081-05-04'
+        # administration: ROS | Prefecture VII
+        # administration: ROS | Prefecture VII
+        # administration: ROS | Prefecture VII
+        # administration: ROS | Prefecture VII
+        # administration: ROS | Prefecture VII
+        # administration: ROS | Prefecture VII
         faction:
           source: canon
           value:
@@ -359,6 +437,12 @@ planet:
         population: 1755820571.0
       - date: '3130-01-01'
         population: 1755469442.0
+      - date: '3135-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3135-10-01'
         faction:
           source: canon
@@ -372,13 +456,30 @@ planet:
       - date: '3140-01-01'
         population: 1763563202.0
       - date: '3145-01-01'
+        # administration: FWL | Augustine Alliance
+        # administration: FWL | Augustine Alliance
+        # administration: FWL | Augustine Alliance
+        # administration: FWL | Augustine Alliance
+        # administration: FWL | Augustine Alliance
+        # administration: FWL | Augustine Alliance
         population: 1767447312.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FWL
       - date: '3149-02-01'
         faction:
           source: canon
           value:
             - ROS
       - date: '3151-01-01'
+        # administration: FWL | Augustine Alliance
+        # administration: FWL | Augustine Alliance
+        # administration: FWL | Augustine Alliance
+        # administration: FWL | Augustine Alliance
+        # administration: FWL | Augustine Alliance
+        # administration: FWL | Augustine Alliance
         faction:
           source: sucs
           value:

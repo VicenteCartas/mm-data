@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -20,10 +20,10 @@ sucsId: 666
 xcood: 140.085
 ycood: 19.234
 spectralType:
-  source: MWDA world profiles
+  source: DA:RW
   value: F8IV
 primarySlot:
-  source: MWDA world profiles
+  source: DA:RW
   value: 2
 event:
   - date: '2401-11-16'
@@ -56,48 +56,33 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 3.36
     sysPos:
-      source: MWDA world profiles
+      source: DA:RW
       value: 2
     icon: green54
     pressure:
-      source: MWDA world profiles
+      source: DA:RW
       value: STANDARD
     atmosphere:
-      source: MWDA world profiles
+      source: DA:RW
       value: TAINTED_POISON
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: MWDA world profiles
+      source: DA:RW
       value: 0.84
     diameter: 10698
     density: 5.518001510086
     dayLength: 24
     yearLength: 6.3
     temperature:
-      source: MWDA world profiles
+      source: DA:RW
       value: 43
     water:
-      source: MWDA world profiles
+      source: DA:RW
       value: 37
     lifeForm:
-      source: MWDA world profiles
+      source: DA:RW
       value: FISH
-    desc: David‘s water table, not its atmosphere, is actually the health hazard posed
-      to humans visiting this otherwise beautiful—if somewhat arid—planet. The problem
-      has been traced to microbes that form the basis of David‘s entire food chain,
-      which cause severe—and sometimes fatal—allergic reactions in humans, but do
-      absolutely no harm to the planet‘s native wildlife. The local population has
-      long since grown immune to the effects of this taint, but visitors to David
-      who plan to do anything that involves eating, drinking, or even swimming in
-      any of the planet‘s few freshwater lakes, must take a series of inoculations
-      in advance, or risk the consequences. Over sixty percent of David‘s surface
-      is claimed by two enormous landmasses, known as Andropo and Geronomis, and a
-      host of large islands that ring them. Andropo, with its more fertile soils and
-      lodes of precious metals, is home to most of David‘s limited farming, which
-      is sufficient to support most of the planet‘s population, as well as some light
-      industry. Geronomis, more equatorial and barren in its central regions, supports
-      a slightly heavier industry, and is also home to Polis, David‘s capital city
-      and major spaceport.
+    desc: David‘s water table, not its atmosphere, is actually the health hazard posed to humans visiting this otherwise beautiful—if somewhat arid—planet. The problem has been traced to microbes that form the basis of David‘s entire food chain, which cause severe—and sometimes fatal—allergic reactions in humans, but do absolutely no harm to the planet‘s native wildlife. The local population has long since grown immune to the effects of this taint, but visitors to David who plan to do anything that involves eating, drinking, or even swimming in any of the planet‘s few freshwater lakes, must take a series of inoculations in advance, or risk the consequences. Over sixty percent of David‘s surface is claimed by two enormous landmasses, known as Andropo and Geronomis, and a host of large islands that ring them. Andropo, with its more fertile soils and lodes of precious metals, is home to most of David‘s limited farming, which is sufficient to support most of the planet‘s population, as well as some light industry. Geronomis, more equatorial and barren in its central regions, supports a slightly heavier industry, and is also home to Polis, David‘s capital city and major spaceport.
     landmass:
       - name:
           source: canon
@@ -106,7 +91,7 @@ planet:
           source: canon
           value: Geronomis
         capital:
-          source: MWDA world profiles
+          source: DA:RW
           value: Polis
     event:
       - date: '2303-03-24'
@@ -133,6 +118,12 @@ planet:
         population: 26110509.0
       - date: '2360-01-01'
         population: 60849737.0
+      - date: '2366-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '2370-01-01'
         population: 125227492.0
       - date: '2380-01-01'
@@ -178,6 +169,18 @@ planet:
         population: 5935322338.0
       - date: '2570-01-01'
         population: 6066921279.0
+      - date: '2571-01-01'
+        # administration: DC | Benjamin Military District | Proserpina Prefecture
+        # administration: DC | Benjamin Military District | Proserpina Prefecture
+        # administration: DC | Benjamin Military District | Proserpina Prefecture
+        # administration: DC | Benjamin Military District | Proserpina Prefecture
+        # administration: DC | Benjamin Military District | Proserpina Prefecture
+        # administration: DC | Benjamin Military District | Proserpina Prefecture
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - DC
       - date: '2580-01-01'
         population: 6217480696.0
       - date: '2590-01-01'
@@ -264,6 +267,12 @@ planet:
       - date: '2940-01-01'
         population: 7653493697.0
       - date: '2950-08-01'
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
         faction:
           source: canon
           value:
@@ -288,8 +297,25 @@ planet:
       - date: '3037-01-01'
         socioIndustrial: C-B-C-B-C
       - date: '3040-01-01'
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
         population: 7621775024.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
         faction:
           source: canon
           value:
@@ -300,12 +326,42 @@ planet:
         population: 7719960792.0
       - date: '3060-01-01'
         population: 7833499032.0
+      - date: '3067-01-01'
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FS
       - date: '3067-04-20'
         faction:
           source: canon
           value:
             - FS
+      - date: '3068-01-01'
+        # administration: DC | Benjamin Military District | Proserpina Prefecture
+        # administration: DC | Benjamin Military District | Proserpina Prefecture
+        # administration: DC | Benjamin Military District | Proserpina Prefecture
+        # administration: DC | Benjamin Military District | Proserpina Prefecture
+        # administration: DC | Benjamin Military District | Proserpina Prefecture
+        # administration: DC | Benjamin Military District | Proserpina Prefecture
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - DC
       - date: '3068-09-01'
+        # administration: DC | Benjamin Military District | Proserpina Prefecture
+        # administration: DC | Benjamin Military District | Proserpina Prefecture
+        # administration: DC | Benjamin Military District | Proserpina Prefecture
+        # administration: DC | Benjamin Military District | Proserpina Prefecture
+        # administration: DC | Benjamin Military District | Proserpina Prefecture
+        # administration: DC | Benjamin Military District | Proserpina Prefecture
         faction:
           source: canon
           value:
@@ -314,7 +370,25 @@ planet:
         population: 7935205768.0
       - date: '3080-01-01'
         population: 7992545424.0
+      - date: '3081-01-01'
+        # administration: ROS | Prefecture III
+        # administration: ROS | Prefecture III
+        # administration: ROS | Prefecture III
+        # administration: ROS | Prefecture III
+        # administration: ROS | Prefecture III
+        # administration: ROS | Prefecture III
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ROS
       - date: '3081-09-24'
+        # administration: ROS | Prefecture III
+        # administration: ROS | Prefecture III
+        # administration: ROS | Prefecture III
+        # administration: ROS | Prefecture III
+        # administration: ROS | Prefecture III
+        # administration: ROS | Prefecture III
         faction:
           source: canon
           value:
@@ -333,6 +407,12 @@ planet:
         population: 8063190205.0
       - date: '3132-08-07'
         hpg: X
+      - date: '3135-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3135-10-01'
         faction:
           source: canon
@@ -340,7 +420,25 @@ planet:
             - IND
       - date: '3140-01-01'
         population: 8068029571.0
+      - date: '3145-01-01'
+        # administration: DC | Benjamin Military District | Proserpina Prefecture
+        # administration: DC | Benjamin Military District | Proserpina Prefecture
+        # administration: DC | Benjamin Military District | Proserpina Prefecture
+        # administration: DC | Benjamin Military District | Proserpina Prefecture
+        # administration: DC | Benjamin Military District | Proserpina Prefecture
+        # administration: DC | Benjamin Military District | Proserpina Prefecture
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - DC
       - date: '3145-08-03'
+        # administration: DC | Benjamin Military District | Proserpina Prefecture
+        # administration: DC | Benjamin Military District | Proserpina Prefecture
+        # administration: DC | Benjamin Military District | Proserpina Prefecture
+        # administration: DC | Benjamin Military District | Proserpina Prefecture
+        # administration: DC | Benjamin Military District | Proserpina Prefecture
+        # administration: DC | Benjamin Military District | Proserpina Prefecture
         faction:
           source: canon
           value:

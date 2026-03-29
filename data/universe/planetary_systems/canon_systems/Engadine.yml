@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -20,10 +20,10 @@ sucsId: 805
 xcood: -351.28
 ycood: 354.868
 spectralType:
-  source: 'Operational Turning Points: Falcon Incursion'
+  source: 'OTP:FI'
   value: M0V
 primarySlot:
-  source: 'Operational Turning Points: Falcon Incursion'
+  source: 'OTP:FI'
   value: 6
 event:
   - date: '2658-10-24'
@@ -111,31 +111,31 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.2
     sysPos:
-      source: 'Operational Turning Points: Falcon Incursion'
+      source: 'OTP:FI'
       value: 6
     icon: green25
     pressure:
-      source: 'Operational Turning Points: Falcon Incursion'
+      source: 'OTP:FI'
       value: STANDARD
     atmosphere:
-      source: 'Operational Turning Points: Falcon Incursion'
+      source: 'OTP:FI'
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'Operational Turning Points: Falcon Incursion'
+      source: 'OTP:FI'
       value: 0.95
     diameter: 12917
     density: 5.168709142093
     dayLength: 27
     yearLength: 0.7
     temperature:
-      source: 'Operational Turning Points: Falcon Incursion'
+      source: 'OTP:FI'
       value: 23
     water:
-      source: 'Operational Turning Points: Falcon Incursion'
+      source: 'OTP:FI'
       value: 70
     lifeForm:
-      source: 'Operational Turning Points: Falcon Incursion'
+      source: 'OTP:FI'
       value: MAMMAL
     desc: |-
       Engadine was originally settled by the Rim Worlds Republic as an exile colony for political dissidents and non-violent criminals that Republic’s government did not want mixing with the rest of the nation’s populace. Engadine is a cool planet and large portions of it spend all year covered in ice, with near-constant light snowfall. The harsh temperatures hardened the original exiles/colonists into rough survivalists. The planet only became slightly more settled several decades later, after a routine inspection by a Rim Worlds Republic official decided the planet was a paradise and built a large personal compound, which later expanded into a popular resort.
@@ -151,12 +151,18 @@ planet:
       - name: Wilson's Stand Delta
     satellite:
       - name:
-          source: 'Operational Turning Points: Falcon Incursion'
+          source: 'OTP:FI'
           value: Garlyn
         size: giant
         icon: rock17
     event:
       - date: '2643-03-18'
+        # administration: RWR | Finmark Province
+        # administration: RWR | Finmark Province
+        # administration: RWR | Finmark Province
+        # administration: RWR | Finmark Province
+        # administration: RWR | Finmark Province
+        # administration: RWR | Finmark Province
         faction:
           source: canon
           value:
@@ -201,6 +207,12 @@ planet:
       - date: '2770-01-01'
         population: 242804054.0
       - date: '2779-08-18'
+        # administration: LA | Protectorate of Donegal | Coventry Province
+        # administration: LA | Protectorate of Donegal | Coventry Province
+        # administration: LA | Protectorate of Donegal | Coventry Province
+        # administration: LA | Protectorate of Donegal | Coventry Province
+        # administration: LA | Protectorate of Donegal | Coventry Province
+        # administration: LA | Protectorate of Donegal | Coventry Province
         faction:
           source: canon
           value:
@@ -267,8 +279,25 @@ planet:
       - date: '3030-01-01'
         population: 65796404.0
       - date: '3040-01-01'
+        # administration: FC | Periphery March | Tsarahavana Operational Area
+        # administration: FC | Periphery March | Tsarahavana Operational Area
+        # administration: FC | Periphery March | Tsarahavana Operational Area
+        # administration: FC | Periphery March | Tsarahavana Operational Area
+        # administration: FC | Periphery March | Tsarahavana Operational Area
+        # administration: FC | Periphery March | Tsarahavana Operational Area
         population: 66490906.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
+        # administration: FC | Periphery March | Tsarahavana Operational Area
+        # administration: FC | Periphery March | Tsarahavana Operational Area
+        # administration: FC | Periphery March | Tsarahavana Operational Area
+        # administration: FC | Periphery March | Tsarahavana Operational Area
+        # administration: FC | Periphery March | Tsarahavana Operational Area
+        # administration: FC | Periphery March | Tsarahavana Operational Area
         faction:
           source: canon
           value:
@@ -279,9 +308,39 @@ planet:
           value: C-D-D-D-C
       - date: '3050-01-01'
         population: 67186019.0
+      - date: '3057-01-01'
+        # administration: LA | Periphery March | Tsarahavana Operational Area
+        # administration: LA | Periphery March | Tsarahavana Operational Area
+        # administration: LA | Periphery March | Tsarahavana Operational Area
+        # administration: LA | Periphery March | Tsarahavana Operational Area
+        # administration: LA | Periphery March | Tsarahavana Operational Area
+        # administration: LA | Periphery March | Tsarahavana Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '3057-09-18'
         faction:
           source: canon
+          value:
+            - LA
+      - date: '3058-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CJF
+      - date: '3059-01-01'
+        # administration: LA | Coventry Province | Melissia Theater
+        # administration: LA | Coventry Province | Melissia Theater
+        # administration: LA | Coventry Province | Melissia Theater
+        # administration: LA | Coventry Province | Melissia Theater
+        # administration: LA | Coventry Province | Melissia Theater
+        # administration: LA | Coventry Province | Melissia Theater
+        faction:
+          source: SUCS
+          version: 2026.03.02
           value:
             - LA
       - date: '3060-01-01'

@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Hibernia
-sucsId: 3100
+sucsId: 3063
 xcood: 967.683
 ycood: 219.345
 spectralType: G9V
@@ -110,6 +110,12 @@ planet:
         population: 3134990.0
       - date: '2760-01-01'
         population: 3158045.0
+      - date: '2765-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - NDC
       - date: '2765-07-17'
         faction:
           source: canon
@@ -185,6 +191,18 @@ planet:
         population: 2905209.0
       - date: '3070-01-01'
         population: 2928544.0
+      - date: '3075-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - s
+      - date: '3079-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - NDC
       - date: '3080-01-01'
         population: 2969832.0
       - date: '3090-01-01'

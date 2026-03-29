@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: Holloway
-sucsId: 1125
+sucsId: 1126
 xcood: 64.875
 ycood: -301.458
 spectralType:
-  source: 'Objective Raids: Capellan Confederation'
+  source: 'OR'
   value: G2V
 primarySlot:
-  source: 'Objective Raids: Capellan Confederation'
+  source: 'OR'
   value: 5
 event:
   - date: '2412-11-30'
@@ -100,31 +100,31 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 1.0
     sysPos:
-      source: 'Objective Raids: Capellan Confederation'
+      source: 'OR'
       value: 5
     icon: green4
     pressure:
-      source: 'Objective Raids: Capellan Confederation'
+      source: 'OR'
       value: STANDARD
     atmosphere:
-      source: 'Objective Raids: Capellan Confederation'
+      source: 'OR'
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'Objective Raids: Capellan Confederation'
+      source: 'OR'
       value: 1.0
     diameter: 12795
     density: 5.492347279654
     dayLength: 19
     yearLength: 1.4
     temperature:
-      source: 'Objective Raids: Capellan Confederation'
+      source: 'OR'
       value: 35
     water:
-      source: 'Objective Raids: Capellan Confederation'
+      source: 'OR'
       value: 59
     lifeForm:
-      source: 'Objective Raids: Capellan Confederation'
+      source: 'OR'
       value: AMPHIBIAN
     desc: |-
       Holloway is an unremarkable planet with limited industry, limited natural resources. The planet is relatively comfortable to live on and the inhabitants have converted enough of the vast wetlands into farmland to not rely on outside imports.
@@ -132,22 +132,22 @@ planet:
       Holloway is home to a Duchy RTC facility, located on the Morristown continent, which trains vehicle crews and unarmored infantry.
     landmass:
       - name:
-          source: 'Objective Raids: Capellan Confederation'
+          source: 'OR'
           value: Bethesda
       - name:
-          source: 'Objective Raids: Capellan Confederation'
+          source: 'OR'
           value: Flushing
         capital:
-          source: 'Objective Raids: Capellan Confederation'
+          source: 'OR'
           value: Belmont  Morristown
     satellite:
       - name:
-          source: 'Objective Raids: Capellan Confederation'
+          source: 'OR'
           value: Jolly
         size: medium
         icon: oddmoon2
       - name:
-          source: 'Objective Raids: Capellan Confederation'
+          source: 'OR'
           value: Martin
         size: medium
         icon: rock8
@@ -182,6 +182,12 @@ planet:
       - date: '2360-01-01'
         population: 44605767.0
       - date: '2367-07-01'
+        # administration: CC | Sian Commonality | Region 10
+        # administration: CC | Sian Commonality | Region 10
+        # administration: CC | Sian Commonality | Region 10
+        # administration: CC | Sian Commonality | Region 10
+        # administration: CC | Sian Commonality | Region 10
+        # administration: CC | Sian Commonality | Region 10
         faction:
           source: canon
           value:

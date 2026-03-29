@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Tresspass
-sucsId: 2582
+sucsId: 2583
 xcood: 525.909
 ycood: 266.217
 spectralType: K2V
@@ -63,6 +63,12 @@ planet:
         capital: Shenstone Town
     event:
       - date: '2677-12-03'
+        # administration: OA | Cerberus Province
+        # administration: OA | Cerberus Province
+        # administration: OA | Cerberus Province
+        # administration: OA | Cerberus Province
+        # administration: OA | Cerberus Province
+        # administration: OA | Cerberus Province
         faction:
           source: canon
           value:
@@ -114,6 +120,12 @@ planet:
         population: 1080477.0
       - date: '2860-01-01'
         population: 324157.0
+      - date: '2864-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ABN
       - date: '2864-07-04'
         faction:
           source: canon

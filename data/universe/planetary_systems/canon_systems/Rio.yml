@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: Rio
-sucsId: 2157
+sucsId: 2158
 xcood: 95.382
 ycood: -28.74
 spectralType:
-  source: MWDA world profiles
+  source: DA:RW
   value: F8V
 primarySlot:
-  source: MWDA world profiles
+  source: DA:RW
   value: 4
 event:
   - date: '2378-04-21'
@@ -90,31 +90,31 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 1.92
     sysPos:
-      source: MWDA world profiles
+      source: DA:RW
       value: 4
     icon: green32
     pressure:
-      source: MWDA world profiles
+      source: DA:RW
       value: STANDARD
     atmosphere:
-      source: MWDA world profiles
+      source: DA:RW
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: MWDA world profiles
+      source: DA:RW
       value: 1.2
     diameter: 12942
     density: 6.516066925082
     dayLength: 25
     yearLength: 2.9
     temperature:
-      source: MWDA world profiles
+      source: DA:RW
       value: 30
     water:
-      source: MWDA world profiles
+      source: DA:RW
       value: 60
     lifeForm:
-      source: MWDA world profiles
+      source: DA:RW
       value: REPTILE
     desc: |-
       Famous for deep valleys that twist across its surface, settlers named Rio after a similar canyon in Terra‘s western hemisphere. Rio lacks significant exports and relied instead on its dramatic natural beauty to attract tourists, Tri-Vid production houses, and art colonies to boost its early economy.
@@ -130,17 +130,17 @@ planet:
       Rio only sports two continents, both which sit astride the equator: Grando and Pequeno. The capital, Reno, is on Grando.
     landmass:
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Grando
         capital:
-          source: MWDA world profiles
+          source: DA:RW
           value: Reno
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Pequeno
     satellite:
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Aires
         size: medium
         icon: rock4
@@ -210,6 +210,12 @@ planet:
       - date: '2390-01-01'
         population: 755402655.0
       - date: '2400-07-19'
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
         faction:
           source: canon
           value:
@@ -293,6 +299,18 @@ planet:
         population: 1581866546.0
       - date: '2760-01-01'
         population: 1593594592.0
+      - date: '2767-01-01'
+        # administration: AE | Lockdale Province
+        # administration: AE | Lockdale Province
+        # administration: AE | Lockdale Province
+        # administration: AE | Lockdale Province
+        # administration: AE | Lockdale Province
+        # administration: AE | Lockdale Province
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - AE
       - date: '2767-04-26'
         faction:
           source: canon
@@ -312,11 +330,29 @@ planet:
             - CC
             - DC
         population: 1583160455.0
+      - date: '2783-01-01'
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - TH
       - date: '2790-01-01'
         population: 1565398853.0
       - date: '2800-01-01'
         population: 1542958079.0
       - date: '2806-09-01'
+        # administration: CC | Tikonov Commonality | Region 4
+        # administration: CC | Tikonov Commonality | Region 4
+        # administration: CC | Tikonov Commonality | Region 4
+        # administration: CC | Tikonov Commonality | Region 4
+        # administration: CC | Tikonov Commonality | Region 4
+        # administration: CC | Tikonov Commonality | Region 4
         faction:
           source: canon
           value:
@@ -334,7 +370,25 @@ planet:
         socioIndustrial: B-B-D-B-B
       - date: '2860-01-01'
         population: 1467733538.0
+      - date: '2864-01-01'
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FS
       - date: '2864-11-08'
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
         faction:
           source: canon
           value:
@@ -378,8 +432,25 @@ planet:
       - date: '3030-01-01'
         population: 1301707289.0
       - date: '3040-01-01'
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
         population: 1318212566.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
         faction:
           source: canon
           value:
@@ -390,13 +461,37 @@ planet:
         population: 1335461202.0
       - date: '3060-01-01'
         population: 1350772569.0
+      - date: '3067-01-01'
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FS
       - date: '3067-04-20'
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
         faction:
           source: canon
           value:
             - FS
       - date: '3070-01-01'
         population: 1364348059.0
+      - date: '3075-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - WOB
       - date: '3075-02-01'
         faction:
           source: canon
@@ -415,7 +510,25 @@ planet:
             - Stone
       - date: '3080-01-01'
         population: 1381923960.0
+      - date: '3081-01-01'
+        # administration: ROS | Prefecture IV
+        # administration: ROS | Prefecture IV
+        # administration: ROS | Prefecture IV
+        # administration: ROS | Prefecture IV
+        # administration: ROS | Prefecture IV
+        # administration: ROS | Prefecture IV
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ROS
       - date: '3081-06-21'
+        # administration: ROS | Prefecture IV
+        # administration: ROS | Prefecture IV
+        # administration: ROS | Prefecture IV
+        # administration: ROS | Prefecture IV
+        # administration: ROS | Prefecture IV
+        # administration: ROS | Prefecture IV
         faction:
           source: canon
           value:
@@ -432,6 +545,12 @@ planet:
         population: 1448135261.0
       - date: '3130-01-01'
         population: 1450454132.0
+      - date: '3135-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3135-10-01'
         faction:
           source: canon
@@ -439,7 +558,25 @@ planet:
             - IND
       - date: '3140-01-01'
         population: 1454521095.0
+      - date: '3145-01-01'
+        # administration: CC | Tikonov Commonality | Region 2
+        # administration: CC | Tikonov Commonality | Region 2
+        # administration: CC | Tikonov Commonality | Region 2
+        # administration: CC | Tikonov Commonality | Region 2
+        # administration: CC | Tikonov Commonality | Region 2
+        # administration: CC | Tikonov Commonality | Region 2
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CC
       - date: '3145-07-06'
+        # administration: CC | Tikonov Commonality | Region 8
+        # administration: CC | Tikonov Commonality | Region 8
+        # administration: CC | Tikonov Commonality | Region 8
+        # administration: CC | Tikonov Commonality | Region 8
+        # administration: CC | Tikonov Commonality | Region 8
+        # administration: CC | Tikonov Commonality | Region 8
         faction:
           source: canon
           value:

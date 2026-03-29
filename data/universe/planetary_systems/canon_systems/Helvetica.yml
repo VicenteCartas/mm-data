@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Helvetica
-sucsId: 1092
+sucsId: 1093
 xcood: -232.593
 ycood: -571.418
 spectralType: M8V
@@ -50,6 +50,12 @@ planet:
       - name: Leander
     event:
       - date: '2650-06-13'
+        # administration: MOC | Ballad Province
+        # administration: MOC | Ballad Province
+        # administration: MOC | Ballad Province
+        # administration: MOC | Ballad Province
+        # administration: MOC | Ballad Province
+        # administration: MOC | Ballad Province
         faction:
           source: canon
           value:
@@ -106,6 +112,12 @@ planet:
         population: 9367870.0
       - date: '2860-01-01'
         population: 7851721.0
+      - date: '2864-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ABN
       - date: '2864-01-08'
         faction:
           source: canon
@@ -145,6 +157,12 @@ planet:
         population: 51664.0
       - date: '3020-01-01'
         population: 39643.0
+      - date: '3025-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ABN
       - date: '3025-03-30'
         faction:
           source: canon

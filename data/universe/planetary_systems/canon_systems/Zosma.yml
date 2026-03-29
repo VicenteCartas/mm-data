@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,15 +16,17 @@
 # affiliated with Microsoft.
 
 id: Zosma
-sucsId: 2847
+sucsId: 2848
 xcood: -50.158
 ycood: -10.386
 spectralType:
-  source: 'Handbook: House Marik, pg. 76'
+  source: 'HB:HM'
   value: A4V
+  page: 76
 primarySlot:
-  source: 'Handbook: House Marik, pg. 76'
+  source: 'HB:HM'
   value: 3
+  page: 76
 event:
   - date: '2405-05-09'
     zenithCharge: yes
@@ -66,44 +68,50 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 3.36
     sysPos:
-      source: 'Handbook: House Marik, pg. 76'
+      source: 'HB:HM'
       value: 3
+      page: 76
     icon: green28
     pressure:
-      source: 'Handbook: House Marik, pg. 76'
+      source: 'HB:HM'
       value: THIN
+      page: 76
     atmosphere:
-      source: 'Handbook: House Marik, pg. 76'
+      source: 'HB:HM'
       value: BREATHABLE
+      page: 76
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'Handbook: House Marik, pg. 76'
+      source: 'HB:HM'
       value: 1.21
+      page: 76
     diameter: 13150
     density: 6.466568872267
     dayLength: 28
     yearLength: 6.3
     temperature:
-      source: 'Handbook: House Marik, pg. 76'
+      source: 'HB:HM'
       value: 67
+      page: 76
     water:
-      source: 'Handbook: House Marik, pg. 76'
+      source: 'HB:HM'
       value: 22
+      page: 76
     lifeForm:
-      source: 'Handbook: House Marik, pg. 76'
+      source: 'HB:HM'
       value: PLANT
-    desc: Zosma is poor in most resources and barely inhabitable, however an abundance
-      of mineral deposits on its single continent and strategic military importance
-      are all that keep the planet inhabited. Human settlements on Zosma rely on quake-resistant,
-      pressurized and radiation-shielded habitats to survive.
+      page: 76
+    desc: Zosma is poor in most resources and barely inhabitable, however an abundance of mineral deposits on its single continent and strategic military importance are all that keep the planet inhabited. Human settlements on Zosma rely on quake-resistant, pressurized and radiation-shielded habitats to survive.
     landmass:
       - capital:
-          source: 'Handbook: House Marik, pg. 76'
+          source: 'HB:HM'
           value: Duhr Prime
+          page: 76
     satellite:
       - name:
-          source: 'Handbook: House Marik, pg. 76'
+          source: 'HB:HM'
           value: Brandeis
+          page: 76
         size: large
         icon: rock8
     event:
@@ -131,6 +139,12 @@ planet:
       - date: '2310-01-01'
         population: 15668426.0
       - date: '2316-11-07'
+        # administration: TH | Tyrfing Province
+        # administration: TH | Tyrfing Province
+        # administration: TH | Tyrfing Province
+        # administration: TH | Tyrfing Province
+        # administration: TH | Tyrfing Province
+        # administration: TH | Tyrfing Province
         faction:
           source: canon
           value:
@@ -233,6 +247,18 @@ planet:
         population: 403725358.0
       - date: '2760-01-01'
         population: 402297240.0
+      - date: '2767-01-01'
+        # administration: AE | Tyrfing Province
+        # administration: AE | Tyrfing Province
+        # administration: AE | Tyrfing Province
+        # administration: AE | Tyrfing Province
+        # administration: AE | Tyrfing Province
+        # administration: AE | Tyrfing Province
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - AE
       - date: '2767-10-10'
         faction:
           source: canon
@@ -241,6 +267,12 @@ planet:
       - date: '2770-01-01'
         population: 399928607.0
       - date: '2779-02-02'
+        # administration: TH | Tyrfing Province
+        # administration: TH | Tyrfing Province
+        # administration: TH | Tyrfing Province
+        # administration: TH | Tyrfing Province
+        # administration: TH | Tyrfing Province
+        # administration: TH | Tyrfing Province
         faction:
           source: canon
           value:
@@ -259,7 +291,25 @@ planet:
         population: 365402386.0
       - date: '2820-01-01'
         population: 358048939.0
+      - date: '2821-01-01'
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '2821-09-28'
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
         faction:
           source: canon
           value:
@@ -293,6 +343,12 @@ planet:
       - date: '2940-01-01'
         population: 272847263.0
       - date: '2950-12-04'
+        # administration: FWL | Border Protectorate
+        # administration: FWL | Border Protectorate
+        # administration: FWL | Border Protectorate
+        # administration: FWL | Border Protectorate
+        # administration: FWL | Border Protectorate
+        # administration: FWL | Border Protectorate
         faction:
           source: canon
           value:
@@ -312,6 +368,18 @@ planet:
         population: 277619654.0
       - date: '3020-01-01'
         population: 277080691.0
+      - date: '3030-01-01'
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '3030-02-03'
         faction:
           source: canon
@@ -321,8 +389,25 @@ planet:
       - date: '3031-01-01'
         socioIndustrial: C-C-D-C-D
       - date: '3040-01-01'
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
         population: 282087138.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
         faction:
           source: canon
           value:
@@ -333,7 +418,25 @@ planet:
           value: C-B-C-B-D
       - date: '3050-01-01'
         population: 285892545.0
+      - date: '3057-01-01'
+        # administration: FWL | Border Protectorate
+        # administration: FWL | Border Protectorate
+        # administration: FWL | Border Protectorate
+        # administration: FWL | Border Protectorate
+        # administration: FWL | Border Protectorate
+        # administration: FWL | Border Protectorate
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FWL
       - date: '3057-10-01'
+        # administration: FWL | Border Protectorate
+        # administration: FWL | Border Protectorate
+        # administration: FWL | Border Protectorate
+        # administration: FWL | Border Protectorate
+        # administration: FWL | Border Protectorate
+        # administration: FWL | Border Protectorate
         faction:
           source: canon
           value:
@@ -364,7 +467,25 @@ planet:
             - Stone
       - date: '3080-01-01'
         population: 295307157.0
+      - date: '3081-01-01'
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ROS
       - date: '3081-09-07'
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
         faction:
           source: canon
           value:
@@ -385,6 +506,12 @@ planet:
         hpg:
           source: canon
           value: X
+      - date: '3135-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - RR
       - date: '3135-10-01'
         faction:
           source: canon
@@ -397,6 +524,12 @@ planet:
             - RR
       - date: '3140-01-01'
         population: 315896941.0
+      - date: '3145-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CWE
       - date: '3145-08-02'
         faction:
           source: canon

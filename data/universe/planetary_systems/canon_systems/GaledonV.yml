@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: Galedon V
-sucsId: 920
+sucsId: 921
 xcood: 331.999
 ycood: 173.891
 spectralType:
-  source: House Kurita
+  source: HB:HK
   value: K5III
 primarySlot:
-  source: House Kurita
+  source: HB:HK
   value: 5
 event:
   - date: '2357-09-11'
@@ -118,7 +118,7 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.49
     sysPos:
-      source: House Kurita
+      source: HB:HK
       value: 5
     icon: green44
     pressure:
@@ -140,7 +140,7 @@ planet:
       source: canon
       value: 65
     lifeForm:
-      source: House Kurita
+      source: HB:HK
       value: MAMMAL
     desc: |-
       Galedon V is a garden world with abundant water, natural resources, and agriculture. It is one of the earliest members of the nascent Draconis Combine. Historically, it has been a prefecture and military district capital and was heavily garrisoned by the DCMS as a result.
@@ -188,6 +188,12 @@ planet:
       - date: '2300-01-01'
         population: 2680644.0
       - date: '2302-05-06'
+        # administration: AG | National Capital
+        # administration: AG | National Capital
+        # administration: AG | National Capital
+        # administration: AG | National Capital
+        # administration: AG | National Capital
+        # administration: AG | National Capital
         faction:
           source: canon
           value:
@@ -208,6 +214,12 @@ planet:
       - date: '2340-01-01'
         population: 58425310.0
       - date: '2341-09-05'
+        # administration: DC | Galedon Military District | New Samarkand Prefecture
+        # administration: DC | Galedon Military District | New Samarkand Prefecture
+        # administration: DC | Galedon Military District | New Samarkand Prefecture
+        # administration: DC | Galedon Military District | New Samarkand Prefecture
+        # administration: DC | Galedon Military District | New Samarkand Prefecture
+        # administration: DC | Galedon Military District | New Samarkand Prefecture
         faction:
           source: canon
           value:
@@ -417,6 +429,12 @@ planet:
           value:
             - DC
             - CSR
+      - date: '3075-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ABN
       - date: '3151-01-01'
         faction:
           source: sucs

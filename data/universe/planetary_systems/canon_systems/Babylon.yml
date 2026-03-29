@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,15 +16,17 @@
 # affiliated with Microsoft.
 
 id: Babylon
-sucsId: 2930
+sucsId: 2931
 xcood: -123.508
 ycood: 1600.89
 spectralType:
-  source: 'Historical: Operation Klondike, pg. 135'
+  source: 'His:OK'
   value: G7V
+  page: 135
 primarySlot:
-  source: 'Historical: Operation Klondike, pg. 135'
+  source: 'His:OK'
   value: 2
+  page: 135
 event:
   - date: '2803-07-26'
     zenithCharge: yes
@@ -65,32 +67,39 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.63
     sysPos:
-      source: 'Historical: Operation Klondike, pg. 135'
+      source: 'His:OK'
       value: 2
+      page: 135
     icon: green49
     pressure:
-      source: 'Historical: Operation Klondike, pg. 135'
+      source: 'His:OK'
       value: STANDARD
+      page: 135
     atmosphere:
-      source: 'Historical: Operation Klondike, pg. 135'
+      source: 'His:OK'
       value: BREATHABLE
+      page: 135
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'Historical: Operation Klondike, pg. 135'
+      source: 'His:OK'
       value: 1.5
+      page: 135
     diameter: 13763
     density: 7.658998039926
     dayLength: 20
     yearLength: 1.1
     temperature:
-      source: 'Historical: Operation Klondike, pg. 135'
+      source: 'His:OK'
       value: 35
+      page: 135
     water:
-      source: 'Historical: Operation Klondike, pg. 135'
+      source: 'His:OK'
       value: 40
+      page: 135
     lifeForm:
-      source: 'Historical: Operation Klondike, pg. 135'
+      source: 'His:OK'
       value: REPTILE
+      page: 135
     desc: |-
       Babylon is an arid planet that originally did not appeal to early colonists. Not only was it a harsh climate, many early colonists suffered from the "Babylon Plague" caused by native pathogens. Thousands perished in the months before scientists were able to come up with an effective vaccine.
 
@@ -99,27 +108,39 @@ planet:
       Babylon is home to the Goliath Scorpion, which were a bane of early settlers.
     landmass:
       - name:
-          source: 'Historical: Operation Klondike, pg. 135'
+          source: 'His:OK'
           value: Abyssinia
+          page: 135
       - name:
-          source: 'Historical: Operation Klondike, pg. 135'
+          source: 'His:OK'
           value: Callandra
+          page: 135
       - name:
-          source: 'Historical: Operation Klondike, pg. 135'
+          source: 'His:OK'
           value: Corsen
+          page: 135
       - name:
-          source: 'Historical: Operation Klondike, pg. 135'
+          source: 'His:OK'
           value: Solath
+          page: 135
       - name:
-          source: 'Historical: Operation Klondike, pg. 135'
+          source: 'His:OK'
           value: Valence
+          page: 135
     satellite:
       - name:
-          source: 'Historical: Operation Klondike, pg. 135'
+          source: 'His:OK'
           value: Ur
+          page: 135
         size: large
         icon: rock16
     event:
+      - date: '2786-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - SLIE
       - date: '2786-08-09'
         faction:
           source: canon
@@ -144,14 +165,18 @@ planet:
         population: 694175.0
       - date: '2820-01-01'
         population: 473163.0
+      - date: '2821-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - C/I
       - date: '2822-01-01'
         faction:
-          source: sucs
+          source: SUCS
+          version: 2026.03.02
           value:
-            - CCO
-            - CCC
-            - CDS
-            - CIH
+            - CLAN
       - date: '2830-01-01'
         population: 804707.0
       - date: '2840-01-01'
@@ -215,6 +240,12 @@ planet:
             - CCC
       - date: '3060-01-01'
         population: 9993669.0
+      - date: '3063-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CLAN
       - date: '3070-01-01'
         population: 10026034.0
       - date: '3072-01-23'

@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Vorzel
-sucsId: 2704
+sucsId: 2705
 xcood: -235.009
 ycood: 180.125
 spectralType: G1V
@@ -77,6 +77,12 @@ planet:
       - date: '2340-01-01'
         population: 934884.0
       - date: '2341-06-03'
+        # administration: LA | Protectorate of Donegal
+        # administration: LA | Protectorate of Donegal
+        # administration: LA | Protectorate of Donegal
+        # administration: LA | Protectorate of Donegal
+        # administration: LA | Protectorate of Donegal
+        # administration: LA | Protectorate of Donegal
         faction:
           source: canon
           value:
@@ -234,8 +240,25 @@ planet:
       - date: '3035-01-01'
         socioIndustrial: C-C-B-C-B
       - date: '3040-01-01'
+        # administration: FC | Donegal March | Coventry Operational Area
+        # administration: FC | Donegal March | Coventry Operational Area
+        # administration: FC | Donegal March | Coventry Operational Area
+        # administration: FC | Donegal March | Coventry Operational Area
+        # administration: FC | Donegal March | Coventry Operational Area
+        # administration: FC | Donegal March | Coventry Operational Area
         population: 258744757.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
+        # administration: FC | Donegal March | Coventry Operational Area
+        # administration: FC | Donegal March | Coventry Operational Area
+        # administration: FC | Donegal March | Coventry Operational Area
+        # administration: FC | Donegal March | Coventry Operational Area
+        # administration: FC | Donegal March | Coventry Operational Area
+        # administration: FC | Donegal March | Coventry Operational Area
         faction:
           source: canon
           value:
@@ -246,7 +269,25 @@ planet:
         socioIndustrial: C-C-A-B-C
       - date: '3050-01-01'
         population: 262261496.0
+      - date: '3057-01-01'
+        # administration: LA | Donegal March | Coventry Operational Area
+        # administration: LA | Donegal March | Coventry Operational Area
+        # administration: LA | Donegal March | Coventry Operational Area
+        # administration: LA | Donegal March | Coventry Operational Area
+        # administration: LA | Donegal March | Coventry Operational Area
+        # administration: LA | Donegal March | Coventry Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '3057-09-18'
+        # administration: LA | Coventry Province
+        # administration: LA | Coventry Province
+        # administration: LA | Coventry Province
+        # administration: LA | Coventry Province
+        # administration: LA | Coventry Province
+        # administration: LA | Coventry Province
         faction:
           source: canon
           value:
@@ -281,8 +322,7 @@ planet:
     icon: frozen35
     pressure: STANDARD
     atmosphere: TOXIC_POISON
-    composition: Methane and Ammonia, plus trace amounts of Carbon Dioxide and Water
-      Vapor
+    composition: Methane and Ammonia, plus trace amounts of Carbon Dioxide and Water Vapor
     gravity: 1.32
     diameter: 15500
     density: 6.0

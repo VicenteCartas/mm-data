@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -20,11 +20,13 @@ sucsId: 647
 xcood: 279.421
 ycood: 20.112
 spectralType:
-  source: FedCom Civil War, pg. 190
+  source: FCCW
   value: M8V
+  page: 190
 primarySlot:
-  source: FedCom Civil War, pg. 190
+  source: FCCW
   value: 4
+  page: 190
 event:
   - date: '2364-11-02'
     nadirCharge: yes
@@ -91,61 +93,64 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.04
     sysPos:
-      source: FedCom Civil War, pg. 190
+      source: FCCW
       value: 4
+      page: 190
     icon: green27
     pressure:
-      source: FedCom Civil War, pg. 190
+      source: FCCW
       value: STANDARD
+      page: 190
     atmosphere:
-      source: FedCom Civil War, pg. 190
+      source: FCCW
       value: BREATHABLE
+      page: 190
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: FedCom Civil War, pg. 190
+      source: FCCW
       value: 1.0
+      page: 190
     diameter: 11954
     density: 5.878765906091
     dayLength: 24
     yearLength: 0.3
     temperature:
-      source: FedCom Civil War, pg. 190
+      source: FCCW
       value: 55
+      page: 190
     water:
-      source: FedCom Civil War, pg. 190
+      source: FCCW
       value: 20
+      page: 190
     lifeForm:
-      source: FedCom Civil War, pg. 190
+      source: FCCW
       value: MAMMAL
-    desc: Dahar IV is a scorching desert planet known best for its hardy people and
-      the metal ores they mine from the planet. The planet has abundant deposits of
-      ores, silicon and bauxite. The planet is home to Brook Incorporated, which produces
-      some of the most advanced mining equipment in the Inner Sphere and sells their
-      machines throughout the Inner Sphere. Of the planet's two continents, Dusty
-      is more habitable and is home to most of the cities and the planet's population.
-      The other continent, Bauxum is known as 'Hell's Kitchen' to locals, due to an
-      average mean temperature of 75 degrees celcius. Due to the scorching temperatures
-      on Bauxum, the local militia is located and trains there to be better prepared
-      for the harsh, but relatively comfortable, conditions on the rest of the planet.
+      page: 190
+    desc: Dahar IV is a scorching desert planet known best for its hardy people and the metal ores they mine from the planet. The planet has abundant deposits of ores, silicon and bauxite. The planet is home to Brook Incorporated, which produces some of the most advanced mining equipment in the Inner Sphere and sells their machines throughout the Inner Sphere. Of the planet's two continents, Dusty is more habitable and is home to most of the cities and the planet's population. The other continent, Bauxum is known as 'Hell's Kitchen' to locals, due to an average mean temperature of 75 degrees celcius. Due to the scorching temperatures on Bauxum, the local militia is located and trains there to be better prepared for the harsh, but relatively comfortable, conditions on the rest of the planet.
     landmass:
       - name:
-          source: FedCom Civil War, pg. 190
+          source: FCCW
           value: Bauxum
+          page: 190
       - name:
-          source: FedCom Civil War, pg. 190
+          source: FCCW
           value: Dusty
+          page: 190
         capital:
-          source: FedCom Civil War, pg. 190
+          source: FCCW
           value: Drakaar
+          page: 190
     satellite:
       - name:
-          source: FedCom Civil War, pg. 190
+          source: FCCW
           value: Drakhar
+          page: 190
         size: medium
         icon: rock3
       - name:
-          source: FedCom Civil War, pg. 190
+          source: FCCW
           value: Drakkon
+          page: 190
         size: medium
         icon: oddmoon2
     event:
@@ -180,6 +185,12 @@ planet:
           value:
             - FS
         population: 41373683.0
+      - date: '2366-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '2370-01-01'
         population: 58201752.0
       - date: '2380-01-01'
@@ -224,6 +235,18 @@ planet:
         population: 517181809.0
       - date: '2570-01-01'
         population: 524236683.0
+      - date: '2571-01-01'
+        # administration: FS | Draconis March | Fairfax Operational Area
+        # administration: FS | Draconis March | Fairfax Operational Area
+        # administration: FS | Draconis March | Fairfax Operational Area
+        # administration: FS | Draconis March | Fairfax Operational Area
+        # administration: FS | Draconis March | Fairfax Operational Area
+        # administration: FS | Draconis March | Fairfax Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FS
       - date: '2580-01-01'
         population: 528125274.0
       - date: '2590-01-01'
@@ -328,12 +351,30 @@ planet:
         population: 452176961.0
       - date: '3034-01-01'
         socioIndustrial: C-C-C-B-D
+      - date: '3040-01-01'
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-12'
         population: 455854468.0
         socioIndustrial:
           source: canon
           value: B-B-B-A-D
       - date: '3040-01-19'
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
         faction:
           source: canon
           value:
@@ -342,7 +383,25 @@ planet:
         population: 459332161.0
       - date: '3060-01-01'
         population: 461773084.0
+      - date: '3067-01-01'
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FS
       - date: '3067-04-20'
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
         faction:
           source: canon
           value:
@@ -371,6 +430,12 @@ planet:
         population: 500482989.0
       - date: '3145-01-01'
         population: 500282836.0
+      - date: '3152-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - DC/FS
   - name: Dahar V
     type: TERRESTRIAL
     orbitalDist: 0.28

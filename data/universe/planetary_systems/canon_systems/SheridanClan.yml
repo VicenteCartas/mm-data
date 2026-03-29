@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,15 +16,17 @@
 # affiliated with Microsoft.
 
 id: Sheridan (Clan)
-sucsId: 2960
+sucsId: 2961
 xcood: 125.943
 ycood: 1794.232
 spectralType:
-  source: Warriors of Kerensky, pg. 112
+  source: WoK
   value: G0IV
+  page: 112
 primarySlot:
-  source: Warriors of Kerensky, pg. 112
+  source: WoK
   value: 1
+  page: 112
 event:
   - date: '2803-07-04'
     nadirCharge: yes
@@ -35,32 +37,39 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 1.76
     sysPos:
-      source: Warriors of Kerensky, pg. 112
+      source: WoK
       value: 1
+      page: 112
     icon: wet4
     pressure:
-      source: Warriors of Kerensky, pg. 112
+      source: WoK
       value: HIGH
+      page: 112
     atmosphere:
-      source: Warriors of Kerensky, pg. 112
+      source: WoK
       value: BREATHABLE
+      page: 112
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: Warriors of Kerensky, pg. 112
+      source: WoK
       value: 1.0
+      page: 112
     diameter: 11109
     density: 6.326168845684
     dayLength: 26
     yearLength: 2.6
     temperature:
-      source: Warriors of Kerensky, pg. 112
+      source: WoK
       value: 35
+      page: 112
     water:
-      source: Warriors of Kerensky, pg. 112
+      source: WoK
       value: 80
+      page: 112
     lifeForm:
-      source: Warriors of Kerensky, pg. 112
+      source: WoK
       value: MAMMAL
+      page: 112
     desc: No description available.
     landmass:
       - name: Jericho
@@ -69,6 +78,12 @@ planet:
       - name: Benton
     event:
       - date: '2802-06-23'
+        # administration: CSA | National Capital
+        # administration: CSA | National Capital
+        # administration: CSA | National Capital
+        # administration: CSA | National Capital
+        # administration: CSA | National Capital
+        # administration: CSA | National Capital
         faction:
           source: canon
           value:
@@ -84,6 +99,12 @@ planet:
       - date: '2820-01-01'
         population: 310357.0
       - date: '2821-10-22'
+        # administration: CSA | National Capital
+        # administration: CSA | National Capital
+        # administration: CSA | National Capital
+        # administration: CSA | National Capital
+        # administration: CSA | National Capital
+        # administration: CSA | National Capital
         faction:
           source: canon
           value:

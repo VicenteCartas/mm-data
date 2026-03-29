@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Mandal
-sucsId: 1581
+sucsId: 1582
 xcood: -8.766
 ycood: -55.98
 spectralType: K1V
@@ -39,8 +39,7 @@ planet:
     icon: barren2
     pressure: STANDARD
     atmosphere: TOXIC_POISON
-    composition: Carbon Dioxide and Nitrogen, plus trace amounts of Argon and Carbon
-      Dioxide
+    composition: Carbon Dioxide and Nitrogen, plus trace amounts of Argon and Carbon Dioxide
     gravity: 0.62
     diameter: 12500
     density: 3.5
@@ -77,6 +76,12 @@ planet:
       - name: Öndörshireet
     event:
       - date: '2319-01-14'
+        # administration: TH | Terra Firma Province
+        # administration: TH | Terra Firma Province
+        # administration: TH | Terra Firma Province
+        # administration: TH | Terra Firma Province
+        # administration: TH | Terra Firma Province
+        # administration: TH | Terra Firma Province
         faction:
           source: canon
           value:
@@ -181,6 +186,18 @@ planet:
         population: 1920258490.0
       - date: '2760-01-01'
         population: 1924994170.0
+      - date: '2767-01-01'
+        # administration: AE | Terra Firma Province
+        # administration: AE | Terra Firma Province
+        # administration: AE | Terra Firma Province
+        # administration: AE | Terra Firma Province
+        # administration: AE | Terra Firma Province
+        # administration: AE | Terra Firma Province
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - AE
       - date: '2767-10-01'
         faction:
           source: canon
@@ -199,6 +216,18 @@ planet:
           value:
             - CC
         population: 1904673430.0
+      - date: '2783-01-01'
+        # administration: TH | Terra Firma Province
+        # administration: TH | Terra Firma Province
+        # administration: TH | Terra Firma Province
+        # administration: TH | Terra Firma Province
+        # administration: TH | Terra Firma Province
+        # administration: TH | Terra Firma Province
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - TH
       - date: '2790-01-01'
         population: 1516346547.0
       - date: '2800-01-01'
@@ -207,6 +236,18 @@ planet:
         population: 184947336.0
       - date: '2820-01-01'
         population: 94611028.0
+      - date: '2821-01-01'
+        # administration: CC | Tikonov Commonality | Region 5
+        # administration: CC | Tikonov Commonality | Region 5
+        # administration: CC | Tikonov Commonality | Region 5
+        # administration: CC | Tikonov Commonality | Region 5
+        # administration: CC | Tikonov Commonality | Region 5
+        # administration: CC | Tikonov Commonality | Region 5
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CC
       - date: '2830-01-01'
         population: 54119424.0
       - date: '2840-01-01'

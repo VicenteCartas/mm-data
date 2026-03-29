@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -20,10 +20,10 @@ sucsId: 75
 xcood: -35.935
 ycood: 45.191
 spectralType:
-  source: MWDA world profiles
+  source: DA:RW
   value: A7IV
 primarySlot:
-  source: MWDA world profiles
+  source: DA:RW
   value: 3
 event:
   - date: '2373-03-12'
@@ -72,31 +72,31 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 5.04
     sysPos:
-      source: MWDA world profiles
+      source: DA:RW
       value: 3
     icon: green16
     pressure:
-      source: MWDA world profiles
+      source: DA:RW
       value: HIGH
     atmosphere:
-      source: MWDA world profiles
+      source: DA:RW
       value: TAINTED_POISON
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: MWDA world profiles
+      source: DA:RW
       value: 1.0
     diameter: 13752
     density: 5.110177805644
     dayLength: 22
     yearLength: 11.4
     temperature:
-      source: MWDA world profiles
+      source: DA:RW
       value: 55
     water:
-      source: MWDA world profiles
+      source: DA:RW
       value: 43
     lifeForm:
-      source: MWDA world profiles
+      source: DA:RW
       value: FISH
     desc: |-
       Alkalurops is a warm and oppressive world, plagued by frequent hurricanes and tornadoes that are the result of a thick atmosphere, cursed further by greenhouse gases that amplify the heat of its white A-class sun. These conditions have prevented the evolution of any form of surface animal life, though native fish do thrive in the deeper parts of the planet‘s two large oceans. Because of its inhospitable nature, colonization and development of Alkalurops proceeded slowly. Most settlements, founded on the northernmost continent of Vandika, were established close to pockets of natural gas and common metal veins, pumped and mined for export sale. To protect against the harsh weather and attain a degree of comfortable living, most of these early colonies were dug into the mountains and hills, and every structure was pressurized and outfitted with advanced air filters to make the interior air breathable.
@@ -104,10 +104,10 @@ planet:
       Allabad, the planetary capital, was originally one such colony, nestled into the base of the north-south-running Bagadell Mountain Chain, and much of the city today still retains the look of a modernized Pueblo Indian village. Mainly due to these living conditions, the inhabitants of Alkalurops developed a curiously insular—almost xenophobic—culture, intensely distrustful of off-worlders. Though more accepting overall of other citizens in the Lyran realm—particularly those from the Isle of Skye—Alkalurops‘s people showed little patience or hospitality to visitors from the Terran Hegemony. Even during the Star League era, when extra revenue resulting from trade with Nusakan, a key world in the Hegemony‘s computer industry, brought an influx of traders and entrepreneurs here, the natives of this world remained cold and aloof. During the Amaris crisis, the Usurper‘s troops struck at Alkalurops despite its being outside Hegemony borders, hoping to deny any liberation force the use of the planet as a staging area to reclaim Nusakan. Instead, native resistance repelled Amaris‘s troops, a pattern repeated whenever raiders and invading neighbors struck the world during the Succession Wars. With few resources worth fighting over and an inhospitable climate, however, such raids were rare, and even the FedCom Civil War and the Word of Blake Jihad passed Alkalurops over without incident. Upon the formation of The Republic, the Lyran Alliance ceded this world to Devlin Stone along with many others of the tumultuous Isle of Skye region, a situation that caused great unrest among the local populace when Stone‘s relocation directives were enacted. Ironically, the creation of the peace-loving Republic created Alkalurops‘s largest outbreak of violence as the insular natives clashed with the new population. Rioting and hate crimes left scores dead over the following decade, before Republic authorities, in conjunction with Lyran mediators, could once more restore order.
     landmass:
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Vandika
         capital:
-          source: MWDA world profiles
+          source: DA:RW
           value: Allabad
     event:
       - date: '2117-02-27'
@@ -169,6 +169,18 @@ planet:
         population: 641044793.0
       - date: '2310-01-01'
         population: 732920925.0
+      - date: '2317-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
+      - date: '2319-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FoS
       - date: '2320-01-01'
         population: 823882600.0
       - date: '2330-01-01'
@@ -176,6 +188,12 @@ planet:
       - date: '2340-01-01'
         population: 1005089382.0
       - date: '2341-06-08'
+        # administration: LA | Federation of Skye
+        # administration: LA | Federation of Skye
+        # administration: LA | Federation of Skye
+        # administration: LA | Federation of Skye
+        # administration: LA | Federation of Skye
+        # administration: LA | Federation of Skye
         faction:
           source: canon
           value:
@@ -329,6 +347,12 @@ planet:
       - date: '2990-01-01'
         population: 1396053543.0
       - date: '2998-03-25'
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
         faction:
           source: canon
           value:
@@ -342,8 +366,25 @@ planet:
       - date: '3030-01-01'
         population: 1264169899.0
       - date: '3040-01-01'
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
         population: 1277769143.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
         faction:
           source: canon
           value:
@@ -352,7 +393,25 @@ planet:
         socioIndustrial: C-B-C-B-D
       - date: '3050-01-01'
         population: 1289449910.0
+      - date: '3057-01-01'
+        # administration: LA | Skye March | Ryde Operational Area
+        # administration: LA | Skye March | Ryde Operational Area
+        # administration: LA | Skye March | Ryde Operational Area
+        # administration: LA | Skye March | Ryde Operational Area
+        # administration: LA | Skye March | Ryde Operational Area
+        # administration: LA | Skye March | Ryde Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '3057-09-18'
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
         faction:
           source: canon
           value:
@@ -363,7 +422,25 @@ planet:
         population: 1309330189.0
       - date: '3080-01-01'
         population: 1323282908.0
+      - date: '3081-01-01'
+        # administration: ROS | Prefecture IX
+        # administration: ROS | Prefecture IX
+        # administration: ROS | Prefecture IX
+        # administration: ROS | Prefecture IX
+        # administration: ROS | Prefecture IX
+        # administration: ROS | Prefecture IX
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ROS
       - date: '3081-09-04'
+        # administration: ROS | Prefecture IX
+        # administration: ROS | Prefecture IX
+        # administration: ROS | Prefecture IX
+        # administration: ROS | Prefecture IX
+        # administration: ROS | Prefecture IX
+        # administration: ROS | Prefecture IX
         faction:
           source: canon
           value:
@@ -382,6 +459,12 @@ planet:
         population: 1379768458.0
       - date: '3132-08-07'
         hpg: X
+      - date: '3135-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3135-10-01'
         faction:
           source: canon
@@ -395,6 +478,12 @@ planet:
         population: 1405391204.0
       - date: '3145-01-01'
         population: 1418380462.0
+      - date: '3152-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3152-06-01'
         faction:
           source: sucs

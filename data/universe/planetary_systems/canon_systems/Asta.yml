@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -20,10 +20,10 @@ sucsId: 196
 xcood: 4.129
 ycood: 25.543
 spectralType:
-  source: MWDA world profiles
+  source: DA:RW
   value: K2VI
 primarySlot:
-  source: MWDA world profiles
+  source: DA:RW
   value: 2
 event:
   - date: '2383-12-06'
@@ -52,72 +52,51 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 1.12
     sysPos:
-      source: MWDA world profiles
+      source: DA:RW
       value: 2
     icon: wet11
     pressure:
-      source: MWDA world profiles
+      source: DA:RW
       value: HIGH
     atmosphere:
-      source: MWDA world profiles
+      source: DA:RW
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: MWDA world profiles
+      source: DA:RW
       value: 0.74
     diameter: 9908
     density: 5.248828152248
     dayLength: 17
     yearLength: 1.5
     temperature:
-      source: MWDA world profiles
+      source: DA:RW
       value: 32
     water:
-      source: MWDA world profiles
+      source: DA:RW
       value: 77
     lifeForm:
-      source: MWDA world profiles
+      source: DA:RW
       value: BIRD
-    desc: 3135 - Once a beautiful, temperate trading world for the Draconis Combine
-      and Free Worlds League, and famed for the curious crystalline rock formations
-      in the desert canyons of its main continent of Balerdo, Asta was mutilated by
-      the guns of Blakist WarShips during the Jihad. Lacking much in the way of heavy
-      industry, Asta had been primarily an agricultural world, with prime exports
-      limited to foodstuffs, textiles, and civilian commercial vehicles. During the
-      Jihad, however, the planet‘s position, just a single jump from Terra, and the
-      presence of a small Combine unit, mandated that it be attacked by the Word of
-      Blake in an effort to establish a buffer zone around Terra. A sustained barrage
-      from the Blake WarShips all but destroyed the planetary capital of Excaliba,
-      and the Blakists placed a number of their “reeducation camps” on the planet
-      along with their occupation forces. The fight to eject the fanatics devastated
-      more of the planetary surface and economy, but Devlin Stone‘s efforts to revitalize
-      Asta have gradually begun to bear fruit. Today, Asta is once more a trading
-      world, with vessels regularly entering and departing the new capital and port
-      city of Logan, on the northwestern supercontinent, Balerdo. Charbyllis, the
-      largest population center on the smaller southern continent of Moolai, still
-      remains home to the majority of Asta‘s textile industries, with farmlands dominating
-      the open plains north and east of the city proper. The Desert Ice Fields of
-      Balerdo Grande, still a popular tourist site on Asta, now also include the planet‘s
-      memorial to those killed in the Jihad, a solemn reminder of the dark days before
-      The Republic.
+    desc: 3135 - Once a beautiful, temperate trading world for the Draconis Combine and Free Worlds League, and famed for the curious crystalline rock formations in the desert canyons of its main continent of Balerdo, Asta was mutilated by the guns of Blakist WarShips during the Jihad. Lacking much in the way of heavy industry, Asta had been primarily an agricultural world, with prime exports limited to foodstuffs, textiles, and civilian commercial vehicles. During the Jihad, however, the planet‘s position, just a single jump from Terra, and the presence of a small Combine unit, mandated that it be attacked by the Word of Blake in an effort to establish a buffer zone around Terra. A sustained barrage from the Blake WarShips all but destroyed the planetary capital of Excaliba, and the Blakists placed a number of their “reeducation camps” on the planet along with their occupation forces. The fight to eject the fanatics devastated more of the planetary surface and economy, but Devlin Stone‘s efforts to revitalize Asta have gradually begun to bear fruit. Today, Asta is once more a trading world, with vessels regularly entering and departing the new capital and port city of Logan, on the northwestern supercontinent, Balerdo. Charbyllis, the largest population center on the smaller southern continent of Moolai, still remains home to the majority of Asta‘s textile industries, with farmlands dominating the open plains north and east of the city proper. The Desert Ice Fields of Balerdo Grande, still a popular tourist site on Asta, now also include the planet‘s memorial to those killed in the Jihad, a solemn reminder of the dark days before The Republic.
     landmass:
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Balerdo
         capital:
-          source: MWDA world profiles
+          source: DA:RW
           value: Logan
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Moolai
     satellite:
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Arowhena
         size: large
         icon: rock6
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Eddelle
         size: large
         icon: rock14
@@ -140,6 +119,12 @@ planet:
       - date: '2310-01-01'
         population: 7926509.0
       - date: '2316-05-08'
+        # administration: TH | Alliance Core
+        # administration: TH | Alliance Core
+        # administration: TH | Alliance Core
+        # administration: TH | Alliance Core
+        # administration: TH | Alliance Core
+        # administration: TH | Alliance Core
         faction:
           source: canon
           value:
@@ -243,6 +228,18 @@ planet:
         population: 2213237460.0
       - date: '2760-01-01'
         population: 2202060580.0
+      - date: '2767-01-01'
+        # administration: AE | Alliance Core
+        # administration: AE | Alliance Core
+        # administration: AE | Alliance Core
+        # administration: AE | Alliance Core
+        # administration: AE | Alliance Core
+        # administration: AE | Alliance Core
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - AE
       - date: '2767-08-15'
         faction:
           source: canon
@@ -251,6 +248,12 @@ planet:
       - date: '2770-01-01'
         population: 2190963881.0
       - date: '2779-07-18'
+        # administration: TH | Alliance Core
+        # administration: TH | Alliance Core
+        # administration: TH | Alliance Core
+        # administration: TH | Alliance Core
+        # administration: TH | Alliance Core
+        # administration: TH | Alliance Core
         faction:
           source: canon
           value:
@@ -258,6 +261,12 @@ planet:
       - date: '2780-01-01'
         population: 2173121334.0
       - date: '2790-01-13'
+        # administration: DC | Dieron Military District | Lone Star Prefecture
+        # administration: DC | Dieron Military District | Lone Star Prefecture
+        # administration: DC | Dieron Military District | Lone Star Prefecture
+        # administration: DC | Dieron Military District | Lone Star Prefecture
+        # administration: DC | Dieron Military District | Lone Star Prefecture
+        # administration: DC | Dieron Military District | Lone Star Prefecture
         faction:
           source: canon
           value:
@@ -313,6 +322,18 @@ planet:
         population: 1862178251.0
       - date: '3020-01-01'
         population: 1832095523.0
+      - date: '3030-01-01'
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '3030-07-15'
         faction:
           source: canon
@@ -322,7 +343,18 @@ planet:
       - date: '3035-01-01'
         socioIndustrial: B-C-C-B-C
       - date: '3040-01-01'
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
         population: 1843856999.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
         faction:
           source: canon
@@ -331,6 +363,12 @@ planet:
       - date: '3045-01-01'
         socioIndustrial: A-B-B-A-C
       - date: '3048-01-04'
+        # administration: DC | Dieron Military District | Al Na'ir Prefecture
+        # administration: DC | Dieron Military District | Al Na'ir Prefecture
+        # administration: DC | Dieron Military District | Al Na'ir Prefecture
+        # administration: DC | Dieron Military District | Al Na'ir Prefecture
+        # administration: DC | Dieron Military District | Al Na'ir Prefecture
+        # administration: DC | Dieron Military District | Al Na'ir Prefecture
         faction:
           source: canon
           value:
@@ -339,6 +377,12 @@ planet:
         population: 1860526613.0
       - date: '3060-01-01'
         population: 1879413148.0
+      - date: '3068-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - WOB
       - date: '3068-06-19'
         faction:
           source: canon
@@ -359,7 +403,25 @@ planet:
             - Stone
       - date: '3080-01-01'
         population: 1913166213.0
+      - date: '3081-01-01'
+        # administration: ROS | Prefecture X
+        # administration: ROS | Prefecture X
+        # administration: ROS | Prefecture X
+        # administration: ROS | Prefecture X
+        # administration: ROS | Prefecture X
+        # administration: ROS | Prefecture X
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ROS
       - date: '3081-11-07'
+        # administration: ROS | Prefecture X
+        # administration: ROS | Prefecture X
+        # administration: ROS | Prefecture X
+        # administration: ROS | Prefecture X
+        # administration: ROS | Prefecture X
+        # administration: ROS | Prefecture X
         faction:
           source: canon
           value:
@@ -382,10 +444,22 @@ planet:
       - date: '3145-01-01'
         population: 2042877949.0
       - date: '3151-01-01'
+        # administration: DC | Dieron Military District | Dieron Prefecture
+        # administration: DC | Dieron Military District | Dieron Prefecture
+        # administration: DC | Dieron Military District | Dieron Prefecture
+        # administration: DC | Dieron Military District | Dieron Prefecture
+        # administration: DC | Dieron Military District | Dieron Prefecture
+        # administration: DC | Dieron Military District | Dieron Prefecture
         faction:
           source: sucs
           value:
             - DC
+      - date: '3152-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - 3SL
   - name: Saberi
     type: DWARF_TERRESTRIAL
     orbitalDist: 0.7

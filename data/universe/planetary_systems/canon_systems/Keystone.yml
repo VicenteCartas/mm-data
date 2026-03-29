@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,15 +16,17 @@
 # affiliated with Microsoft.
 
 id: Keystone
-sucsId: 1338
+sucsId: 1339
 xcood: -125.089
 ycood: -105.506
 spectralType:
-  source: 'Handbook: House Marik, pg. 61'
+  source: 'HB:HM'
   value: F6V
+  page: 61
 primarySlot:
-  source: 'Handbook: House Marik, pg. 61'
+  source: 'HB:HM'
   value: 2
+  page: 61
 event:
   - date: '2372-06-21'
     nadirCharge: yes
@@ -61,32 +63,39 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 1.3
     sysPos:
-      source: 'Handbook: House Marik, pg. 61'
+      source: 'HB:HM'
       value: 2
+      page: 61
     icon: green21
     pressure:
-      source: 'Handbook: House Marik, pg. 61'
+      source: 'HB:HM'
       value: THIN
+      page: 61
     atmosphere:
-      source: 'Handbook: House Marik, pg. 61'
+      source: 'HB:HM'
       value: TAINTED_POISON
+      page: 61
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'Handbook: House Marik, pg. 61'
+      source: 'HB:HM'
       value: 1.1
+      page: 61
     diameter: 11796
     density: 6.553625631014
     dayLength: 22
     yearLength: 1.9
     temperature:
-      source: 'Handbook: House Marik, pg. 61'
+      source: 'HB:HM'
       value: 35
+      page: 61
     water:
-      source: 'Handbook: House Marik, pg. 61'
+      source: 'HB:HM'
       value: 35
+      page: 61
     lifeForm:
-      source: 'Handbook: House Marik, pg. 61'
+      source: 'HB:HM'
       value: PLANT
+      page: 61
     desc: |-
       Keystone was never a comfortable world to live on and centuries of heavy industrial output have not improved the planet’s livability. The planet was originally settled to take advantage of large deposits of raw metals and a large number of heavy industries were built up to make use of the minerals mined from the planet. While the mineral deposits have since dried up, the factories remain and Keystone continued to be an industrial powerhouse in the Free Worlds League.
 
@@ -107,8 +116,9 @@ planet:
           value: Darras
     satellite:
       - name:
-          source: 'Handbook: House Marik, pg. 61'
+          source: 'HB:HM'
           value: Ea
+          page: 61
         size: large
         icon: rock7
     event:
@@ -126,6 +136,12 @@ planet:
       - date: '2270-01-01'
         population: 1789648.0
       - date: '2271-06-01'
+        # administration: FWL | Marik Commonwealth
+        # administration: FWL | Marik Commonwealth
+        # administration: FWL | Marik Commonwealth
+        # administration: FWL | Marik Commonwealth
+        # administration: FWL | Marik Commonwealth
+        # administration: FWL | Marik Commonwealth
         faction:
           source: canon
           value:
@@ -297,6 +313,12 @@ planet:
           value:
             - FWLR
       - date: '3015-03-15'
+        # administration: FWL | Marik Commonwealth
+        # administration: FWL | Marik Commonwealth
+        # administration: FWL | Marik Commonwealth
+        # administration: FWL | Marik Commonwealth
+        # administration: FWL | Marik Commonwealth
+        # administration: FWL | Marik Commonwealth
         faction:
           source: canon
           value:
@@ -323,6 +345,12 @@ planet:
           value: 3100250000.0
       - date: '3070-01-01'
         population: 3108321138.0
+      - date: '3079-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - MCM
       - date: '3079-05-09'
         faction:
           source: canon
@@ -330,6 +358,18 @@ planet:
             - MSC
       - date: '3080-01-01'
         population: 3137049641.0
+      - date: '3081-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - MCM
+      - date: '3085-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - MSC
       - date: '3090-06-18'
         population: 3157822644.0
         socioIndustrial: A-A-C-A-B
@@ -347,6 +387,12 @@ planet:
           value: X
       - date: '3140-01-01'
         population: 3247491179.0
+      - date: '3145-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CWE
       - date: '3145-08-08'
         faction:
           source: canon

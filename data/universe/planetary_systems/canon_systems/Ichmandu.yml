@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Ichmandu
-sucsId: 1169
+sucsId: 1170
 xcood: -82.899
 ycood: 525.212
 spectralType: F5V
@@ -68,6 +68,12 @@ planet:
       - name: New Mauerbach
     event:
       - date: '2686-05-10'
+        # administration: RWR | Apollo Province
+        # administration: RWR | Apollo Province
+        # administration: RWR | Apollo Province
+        # administration: RWR | Apollo Province
+        # administration: RWR | Apollo Province
+        # administration: RWR | Apollo Province
         faction:
           source: canon
           value:
@@ -124,6 +130,12 @@ planet:
         population: 51400642.0
       - date: '2860-01-01'
         population: 28704762.0
+      - date: '2864-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ABN
       - date: '2870-01-01'
         population: 12790831.0
       - date: '2880-01-01'

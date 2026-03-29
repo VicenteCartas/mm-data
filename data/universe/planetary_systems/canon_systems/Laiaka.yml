@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: Laiaka
-sucsId: 1445
+sucsId: 1446
 xcood: -100.609
 ycood: 54.238
 spectralType:
-  source: MWDA world profiles
+  source: DA:RW
   value: M9V
 primarySlot:
-  source: MWDA world profiles
+  source: DA:RW
   value: 3
 event:
   - date: '2431-06-15'
@@ -77,31 +77,31 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.04
     sysPos:
-      source: MWDA world profiles
+      source: DA:RW
       value: 3
     icon: wet17
     pressure:
-      source: MWDA world profiles
+      source: DA:RW
       value: STANDARD
     atmosphere:
-      source: MWDA world profiles
+      source: DA:RW
       value: TAINTED_POISON
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: MWDA world profiles
+      source: DA:RW
       value: 0.98
     diameter: 11268
     density: 6.111890496328
     dayLength: 19
     yearLength: 0.3
     temperature:
-      source: MWDA world profiles
+      source: DA:RW
       value: 40
     water:
-      source: MWDA world profiles
+      source: DA:RW
       value: 88
     lifeForm:
-      source: MWDA world profiles
+      source: DA:RW
       value: PLANT
     desc: |-
       Laiaka is covered in a hazy gray shroud of sulphur and carbon dioxide that blocks out the light from its dull red star and traps enough solar radiation to produce higher than expected surface temperatures. A Federation of Skye expedition discovered impressive deposits of industrial materials, including titanium and germanium, beneath the steamy surface. Mining settlements soon arose, particularly on the northern island continent of Geir. The settlers built their cities underground, making use of their expanding mining tunnels and natural subterranean caverns, some even large enough to accommodate ‘Mechs. Bunker City, the planetary capital, is located on Geir's central plains, on the shores of the Great Geir River, and features Laika‘s few surface structures, including the gantries of the Bunker City Spaceport. Yaleston is the local capital and spaceport on the southern continent of Preiska.
@@ -109,22 +109,22 @@ planet:
       As a wealthy border world, Laiaka suffered from numerous raids during the Succession Wars. Determined defenders and Laiaka's unpredictable subterranean labyrinths often thwarted these invasions, the centuries of raiding set back terraforming efforts that had commenced before the dawn of the Star League era. Laiaka‘s atmosphere returned quickly to its natural state, a steamy near-toxic hell.
     landmass:
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Geir
         capital:
-          source: MWDA world profiles
+          source: DA:RW
           value: Bunker City
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Preiska
     satellite:
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Iolana
         size: large
         icon: rock12
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Wanikiya
         size: giant
         icon: rock16
@@ -157,6 +157,12 @@ planet:
         population: 22200792.0
       - date: '2310-01-01'
         population: 36483794.0
+      - date: '2317-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '2318-01-01'
         socioIndustrial: D-D-B-D-C
       - date: '2320-01-01'
@@ -165,7 +171,19 @@ planet:
         population: 81457258.0
       - date: '2340-01-01'
         population: 113194153.0
+      - date: '2341-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FoS
       - date: '2341-04-17'
+        # administration: LA | Federation of Skye
+        # administration: LA | Federation of Skye
+        # administration: LA | Federation of Skye
+        # administration: LA | Federation of Skye
+        # administration: LA | Federation of Skye
+        # administration: LA | Federation of Skye
         faction:
           source: canon
           value:
@@ -321,8 +339,25 @@ planet:
       - date: '3030-01-01'
         population: 788073918.0
       - date: '3040-01-01'
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
         population: 799024725.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
         faction:
           source: canon
           value:
@@ -331,7 +366,25 @@ planet:
         socioIndustrial: B-C-A-D-B
       - date: '3050-01-01'
         population: 809075219.0
+      - date: '3057-01-01'
+        # administration: LA | Skye March | Alcor Operational Area
+        # administration: LA | Skye March | Alcor Operational Area
+        # administration: LA | Skye March | Alcor Operational Area
+        # administration: LA | Skye March | Alcor Operational Area
+        # administration: LA | Skye March | Alcor Operational Area
+        # administration: LA | Skye March | Alcor Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '3057-09-18'
+        # administration: LA | Skye Province
+        # administration: LA | Skye Province
+        # administration: LA | Skye Province
+        # administration: LA | Skye Province
+        # administration: LA | Skye Province
+        # administration: LA | Skye Province
         faction:
           source: canon
           value:
@@ -342,7 +395,25 @@ planet:
         population: 827568506.0
       - date: '3080-01-01'
         population: 836220128.0
+      - date: '3081-01-01'
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ROS
       - date: '3081-06-29'
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
         faction:
           source: canon
           value:
@@ -361,6 +432,12 @@ planet:
         population: 864275765.0
       - date: '3132-08-07'
         hpg: X
+      - date: '3135-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3135-10-01'
         faction:
           source: canon
@@ -368,7 +445,25 @@ planet:
             - IND
       - date: '3140-01-01'
         population: 874010064.0
+      - date: '3145-01-01'
+        # administration: LA | Donegal Province
+        # administration: LA | Donegal Province
+        # administration: LA | Donegal Province
+        # administration: LA | Donegal Province
+        # administration: LA | Donegal Province
+        # administration: LA | Donegal Province
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '3145-11-24'
+        # administration: LA | Donegal Province
+        # administration: LA | Donegal Province
+        # administration: LA | Donegal Province
+        # administration: LA | Donegal Province
+        # administration: LA | Donegal Province
+        # administration: LA | Donegal Province
         faction:
           source: canon
           value:

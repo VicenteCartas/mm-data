@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Glasgow
-sucsId: 964
+sucsId: 965
 xcood: 28.43
 ycood: -215.623
 spectralType: M1V
@@ -54,6 +54,12 @@ planet:
             - CH
         population: 38764.0
         socioIndustrial: D-D-B-D-F
+      - date: '2271-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '2280-01-01'
         population: 139383.0
       - date: '2290-01-01'
@@ -66,6 +72,12 @@ planet:
           value:
             - CCom
         population: 2553032.0
+      - date: '2317-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '2320-01-01'
         population: 5243651.0
       - date: '2330-01-01'
@@ -76,7 +88,19 @@ planet:
         population: 26901854.0
       - date: '2360-01-01'
         population: 40354336.0
+      - date: '2366-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CCom
       - date: '2367-07-01'
+        # administration: CC | Capella Commonality | Region 8
+        # administration: CC | Capella Commonality | Region 8
+        # administration: CC | Capella Commonality | Region 8
+        # administration: CC | Capella Commonality | Region 8
+        # administration: CC | Capella Commonality | Region 8
+        # administration: CC | Capella Commonality | Region 8
         faction:
           source: canon
           value:
@@ -233,8 +257,32 @@ planet:
         population: 375338342.0
       - date: '3060-01-01'
         population: 379755591.0
+      - date: '3068-01-01'
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FS
       - date: '3070-01-01'
         population: 384301678.0
+      - date: '3075-01-01'
+        # administration: CC | Capella Commonality | Region 7
+        # administration: CC | Capella Commonality | Region 7
+        # administration: CC | Capella Commonality | Region 7
+        # administration: CC | Capella Commonality | Region 7
+        # administration: CC | Capella Commonality | Region 7
+        # administration: CC | Capella Commonality | Region 7
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CC
       - date: '3080-01-01'
         population: 388241615.0
       - date: '3090-01-01'

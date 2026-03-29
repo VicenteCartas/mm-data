@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -20,11 +20,13 @@ sucsId: 780
 xcood: 266.495
 ycood: -145.054
 spectralType:
-  source: A Time of War, pg. 374
+  source: AToW
   value: G0V
+  page: 374
 primarySlot:
-  source: A Time of War, pg. 374
+  source: AToW
   value: 2
+  page: 374
 event:
   - date: '2371-03-11'
     zenithCharge: yes
@@ -52,32 +54,39 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 1.76
     sysPos:
-      source: A Time of War, pg. 374
+      source: AToW
       value: 2
+      page: 374
     icon: wet13
     pressure:
-      source: A Time of War, pg. 374
+      source: AToW
       value: STANDARD
+      page: 374
     atmosphere:
-      source: A Time of War, pg. 374
+      source: AToW
       value: BREATHABLE
+      page: 374
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: A Time of War, pg. 374
+      source: AToW
       value: 1.25
+      page: 374
     diameter: 13051
     density: 6.731129118571
     dayLength: 23
     yearLength: 2.6
     temperature:
-      source: A Time of War, pg. 374
+      source: AToW
       value: 27
+      page: 374
     water:
-      source: A Time of War, pg. 374
+      source: AToW
       value: 77
+      page: 374
     lifeForm:
-      source: A Time of War, pg. 374
+      source: AToW
       value: MAMMAL
+      page: 374
     desc: |-
       El Dorado is an Earth-like planet with 6 major continents and large tracts of arable land. This is due to the massive bodies of fresh water, know as The Super Lakes, which are located on the largest continents of San Diego and Los Angeles.
 
@@ -88,34 +97,47 @@ planet:
       For much of its early history El Dorado was known for its JumpShip yards. This ended during the 1st Succession War when the Draconis Combine left the Ship Yards in ruins after a raid. The planet itself still remains heavily industrialized and is home to many renowned universities known as the "Guilded Halls". These universities have allowed El Dorado to remain a front runner in technology and manufacturing throughout the Succession Wars. Despite some losses to the Succession Wars, El Dorado is still one of the "Golden Five" core worlds in the Federated Suns.
     landmass:
       - name:
-          source: A Time of War, pg. 374
+          source: AToW
           value: Durango
+          page: 374
       - name:
-          source: A Time of War, pg. 374
+          source: AToW
           value: Las Vegas
+          page: 374
       - name:
-          source: A Time of War, pg. 374
+          source: AToW
           value: Los Angeles
+          page: 374
         capital:
           source: canon
           value: Oro
       - name:
-          source: A Time of War, pg. 374
+          source: AToW
           value: Monterrey
+          page: 374
       - name:
-          source: A Time of War, pg. 374
+          source: AToW
           value: San Diego
+          page: 374
       - name:
-          source: A Time of War, pg. 374
+          source: AToW
           value: Santa Fe
+          page: 374
     satellite:
       - name:
-          source: A Time of War, pg. 374
+          source: AToW
           value: Boulder
+          page: 374
         size: large
         icon: rock8
     event:
       - date: '2302-11-10'
+        # administration: FS | Crucis March | Markesan Operational Area
+        # administration: FS | Crucis March | Markesan Operational Area
+        # administration: FS | Crucis March | Markesan Operational Area
+        # administration: FS | Crucis March | Markesan Operational Area
+        # administration: FS | Crucis March | Markesan Operational Area
+        # administration: FS | Crucis March | Markesan Operational Area
         faction:
           source: canon
           value:
@@ -283,8 +305,25 @@ planet:
       - date: '3034-01-01'
         socioIndustrial: B-B-B-B-B
       - date: '3040-01-01'
+        # administration: FC | Crucis March | Markesan Operational Area
+        # administration: FC | Crucis March | Markesan Operational Area
+        # administration: FC | Crucis March | Markesan Operational Area
+        # administration: FC | Crucis March | Markesan Operational Area
+        # administration: FC | Crucis March | Markesan Operational Area
+        # administration: FC | Crucis March | Markesan Operational Area
         population: 4128580807.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
+        # administration: FC | Crucis March | Markesan Operational Area
+        # administration: FC | Crucis March | Markesan Operational Area
+        # administration: FC | Crucis March | Markesan Operational Area
+        # administration: FC | Crucis March | Markesan Operational Area
+        # administration: FC | Crucis March | Markesan Operational Area
+        # administration: FC | Crucis March | Markesan Operational Area
         faction:
           source: canon
           value:
@@ -297,7 +336,25 @@ planet:
         population: 4166739009.0
       - date: '3060-01-01'
         population: 4209878206.0
+      - date: '3067-01-01'
+        # administration: FS | Crucis March | Markesan Operational Area
+        # administration: FS | Crucis March | Markesan Operational Area
+        # administration: FS | Crucis March | Markesan Operational Area
+        # administration: FS | Crucis March | Markesan Operational Area
+        # administration: FS | Crucis March | Markesan Operational Area
+        # administration: FS | Crucis March | Markesan Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FS
       - date: '3067-04-20'
+        # administration: FS | Crucis March | Markesan Operational Area
+        # administration: FS | Crucis March | Markesan Operational Area
+        # administration: FS | Crucis March | Markesan Operational Area
+        # administration: FS | Crucis March | Markesan Operational Area
+        # administration: FS | Crucis March | Markesan Operational Area
+        # administration: FS | Crucis March | Markesan Operational Area
         faction:
           source: canon
           value:

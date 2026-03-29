@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Umgard
-sucsId: 2625
+sucsId: 2626
 xcood: 124.332
 ycood: -419.083
 spectralType: K8V
@@ -54,6 +54,12 @@ planet:
       - name: Minor Collins
     event:
       - date: '2657-04-14'
+        # administration: CC | Sian Commonality | Region 14
+        # administration: CC | Sian Commonality | Region 14
+        # administration: CC | Sian Commonality | Region 14
+        # administration: CC | Sian Commonality | Region 14
+        # administration: CC | Sian Commonality | Region 14
+        # administration: CC | Sian Commonality | Region 14
         faction:
           source: canon
           value:
@@ -106,6 +112,18 @@ planet:
             - IND
       - date: '2820-01-01'
         population: 926221.0
+      - date: '2822-01-01'
+        # administration: CC | Sian Commonality | Region 15
+        # administration: CC | Sian Commonality | Region 15
+        # administration: CC | Sian Commonality | Region 15
+        # administration: CC | Sian Commonality | Region 15
+        # administration: CC | Sian Commonality | Region 15
+        # administration: CC | Sian Commonality | Region 15
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CC
       - date: '2830-01-01'
         population: 451457.0
       - date: '2840-01-01'
@@ -122,6 +140,12 @@ planet:
           source: This is the earliest the directorate could have taken over
           value:
             - ARD
+      - date: '3025-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ARC
       - date: '3025-03-15'
         faction:
           source: assumption
@@ -134,11 +158,18 @@ planet:
           value:
             - ARC
         population: 9265811.0
+      - date: '3030-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ABN
       - date: '3151-01-01'
         faction:
           source: sucs
           value:
             - ABN
+    desc: Due to the tidal stresses of Umgard's two moons, the planet is torn by volcanoes and earthquakes, and the air is a near-toxic soup of foul-smelling gases. A jungle world whose forests teem with life, but machinery tends to corrode quickly in the murky environment.
   - name: Hull
     type: ICE_GIANT
     orbitalDist: 0.42

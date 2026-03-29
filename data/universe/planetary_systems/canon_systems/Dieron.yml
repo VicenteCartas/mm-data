@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -20,11 +20,13 @@ sucsId: 714
 xcood: 12.201
 ycood: 14.909
 spectralType:
-  source: 'Jihad Turning Points: Dieron, pg. 3'
+  source: 'JTP:Dieron'
   value: G3V
+  page: 3
 primarySlot:
-  source: 'Jihad Turning Points: Dieron, pg. 3'
+  source: 'JTP:Dieron'
   value: 4
+  page: 3
 event:
   - date: '2362-01-09'
     nadirCharge: yes
@@ -96,32 +98,39 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.7
     sysPos:
-      source: 'Jihad Turning Points: Dieron, pg. 3'
+      source: 'JTP:Dieron'
       value: 4
+      page: 3
     icon: green21
     pressure:
-      source: 'Jihad Turning Points: Dieron, pg. 3'
+      source: 'JTP:Dieron'
       value: STANDARD
+      page: 3
     atmosphere:
-      source: 'Jihad Turning Points: Dieron, pg. 3'
+      source: 'JTP:Dieron'
       value: BREATHABLE
+      page: 3
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'Jihad Turning Points: Dieron, pg. 3'
+      source: 'JTP:Dieron'
       value: 1.02
+      page: 3
     diameter: 14480
     density: 4.950412147822
     dayLength: 23
     yearLength: 1.2
     temperature:
-      source: 'Jihad Turning Points: Dieron, pg. 3'
+      source: 'JTP:Dieron'
       value: 27
+      page: 3
     water:
-      source: 'Jihad Turning Points: Dieron, pg. 3'
+      source: 'JTP:Dieron'
       value: 54
+      page: 3
     lifeForm:
-      source: 'Jihad Turning Points: Dieron, pg. 3'
+      source: 'JTP:Dieron'
       value: AMPHIBIAN
+      page: 3
     desc: |-
       Dieron was one of the worlds abandoned by the Terran Alliance following the Outer Reaches Rebellion. Later the world would be incorporated into the Terran Hegemony becoming part of the Lone Star Province. Dieron is a world with numerous large mountain ranges creating countless small valleys. The planet is geologically unstable, as a result earthquakes are a common problem. Nestled into the large Mountain are cramped cities stuck between towering mountains. In the time of the Star League, Dieron was a large and thriving planet. The SLDF maintained a major command and logistics center on Dieron. The largest of the Star League complexes at the time was Fortress Dieron. After the Exodus the Draconis Combine became quite interested in acquiring Dieron. The planet's extensive natural resources, advanced technology and industry made it a prime target. When the Combine seized the planet they had underestimated how much of the planet had suffered during the war to oust Stefan Amaris. The SLDF has also been very thurough stripping the planet of all useful material. After seizing the planet the Combine began creating factories in the shells of Dieron’s deep mountains and slowly rebuilt the world into a thriving industrial powerhouse. Even with the earthquakes, claustrophobic living space, and occasional political dissent, the Dieronese are a content people. The natives are protective of their world and despite centuries of Kurita rule many natives still remember the glory days of the Terran Hegemony and the Star League and still refer to locations and cities by their original colonial names.
 
@@ -132,26 +141,32 @@ planet:
       3135 - Once a major administrative center, electronics producer, and site of orbital shipyards for the Star League, Dieron survived Amaris‘ coup intact, only to be ravaged by returning SLDF troops in the war to liberate the Hegemony. The Castles Brian in the planet‘s numerous mountain ranges were obliterated by naval bombardments during the effort, but their memory remained strong in the minds of many Dieronese, who clung to that memory of their world‘s former glory. Their cities, cramped in the valleys formed by the steep, crisscrossing mountain ranges, often became hotbeds for resistance against the Combine‘s rule after House Kurita seized the planet following the fall of the League. The Combine leadership often used rumors of a Star League cache found in the mountains to keep the locals distracted, sending many of the population into the treacherous highlands, braving the elements and chronic earthquakes, in the hope of uncovering a relic of their past. When the Blakist Jihad was launched, Dieron, as a Combine district capital, was targeted by a massive attack that included nuclear weapons and orbital bombardment. The major industrial city of Aldinga, nestled at the heart of the northern Mataeo continent, ceased to exist when shelling from a Word of Blake WarShip actually struck a nearby fault line that literally caved in the entire valley. The smaller southern continent of Voltenna remains a scarred, radiation-scorched wasteland today, dotted with the ruins of several cities and towns. Only the north polar continent of Wennisaka was spared any damage from the Jihad onslaught, despite the presence of Fort Shiro, a former Combine military headquarters and site of a major spaceport. The planetary capital city, Tahlwynn, is located on Mataeo, in the Loretta-Argus mountain basin, and also serves as the planet‘s primary spaceport.
     landmass:
       - name:
-          source: 'Jihad Turning Points: Dieron, pg. 3'
+          source: 'JTP:Dieron'
           value: Mataeo
+          page: 3
         capital:
-          source: 'Jihad Turning Points: Dieron, pg. 3'
+          source: 'JTP:Dieron'
           value: Tahlwynn
+          page: 3
       - name:
-          source: 'Jihad Turning Points: Dieron, pg. 3'
+          source: 'JTP:Dieron'
           value: Voltenna
+          page: 3
       - name:
-          source: 'Jihad Turning Points: Dieron, pg. 3'
+          source: 'JTP:Dieron'
           value: Wennisaka
+          page: 3
     satellite:
       - name:
-          source: 'Jihad Turning Points: Dieron, pg. 3'
+          source: 'JTP:Dieron'
           value: Bemer
+          page: 3
         size: medium
         icon: oddmoon3
       - name:
-          source: 'Jihad Turning Points: Dieron, pg. 3'
+          source: 'JTP:Dieron'
           value: Nebulos
+          page: 3
         size: medium
         icon: oddmoon1
     event:
@@ -228,6 +243,12 @@ planet:
       - date: '2320-01-01'
         population: 913180673.0
       - date: '2321-02-15'
+        # administration: TH | Lone Star Province
+        # administration: TH | Lone Star Province
+        # administration: TH | Lone Star Province
+        # administration: TH | Lone Star Province
+        # administration: TH | Lone Star Province
+        # administration: TH | Lone Star Province
         faction:
           source: canon
           value:
@@ -332,7 +353,18 @@ planet:
             - TH
             - RWR
       - date: '2767-01-01'
+        # administration: AE | Lone Star Province
+        # administration: AE | Lone Star Province
+        # administration: AE | Lone Star Province
+        # administration: AE | Lone Star Province
+        # administration: AE | Lone Star Province
+        # administration: AE | Lone Star Province
         population: 2398000000.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - AE
       - date: '2767-01-10'
         faction:
           source: canon
@@ -341,6 +373,12 @@ planet:
       - date: '2770-01-01'
         population: 2395771091.0
       - date: '2778-01-10'
+        # administration: TH | Lone Star Province
+        # administration: TH | Lone Star Province
+        # administration: TH | Lone Star Province
+        # administration: TH | Lone Star Province
+        # administration: TH | Lone Star Province
+        # administration: TH | Lone Star Province
         faction:
           source: canon
           value:
@@ -348,6 +386,12 @@ planet:
       - date: '2780-01-01'
         population: 2403208854.0
       - date: '2788-01-06'
+        # administration: DC | Dieron Military District | Lone Star Prefecture
+        # administration: DC | Dieron Military District | Lone Star Prefecture
+        # administration: DC | Dieron Military District | Lone Star Prefecture
+        # administration: DC | Dieron Military District | Lone Star Prefecture
+        # administration: DC | Dieron Military District | Lone Star Prefecture
+        # administration: DC | Dieron Military District | Lone Star Prefecture
         faction:
           source: canon
           value:
@@ -361,6 +405,12 @@ planet:
       - date: '2820-01-01'
         population: 2592021969.0
       - date: '2821-09-16'
+        # administration: DC | Dieron Military District | Lone Star Prefecture
+        # administration: DC | Dieron Military District | Lone Star Prefecture
+        # administration: DC | Dieron Military District | Lone Star Prefecture
+        # administration: DC | Dieron Military District | Lone Star Prefecture
+        # administration: DC | Dieron Military District | Lone Star Prefecture
+        # administration: DC | Dieron Military District | Lone Star Prefecture
         faction:
           source: canon
           value:
@@ -427,6 +477,12 @@ planet:
         population: 4043962933.0
       - date: '3060-01-01'
         population: 3527080460.0
+      - date: '3068-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - WOB
       - date: '3068-02-04'
         faction:
           source: canon
@@ -461,6 +517,11 @@ planet:
         population:
           source: canon
           value: 3231000000.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - Stone
       - date: '3079-01-14'
         faction:
           source: canon
@@ -468,7 +529,25 @@ planet:
             - Stone
       - date: '3080-01-01'
         population: 3234232616.0
+      - date: '3081-01-01'
+        # administration: ROS | Prefecture X
+        # administration: ROS | Prefecture X
+        # administration: ROS | Prefecture X
+        # administration: ROS | Prefecture X
+        # administration: ROS | Prefecture X
+        # administration: ROS | Prefecture X
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ROS
       - date: '3081-01-22'
+        # administration: ROS | Prefecture X
+        # administration: ROS | Prefecture X
+        # administration: ROS | Prefecture X
+        # administration: ROS | Prefecture X
+        # administration: ROS | Prefecture X
+        # administration: ROS | Prefecture X
         faction:
           source: canon
           value:
@@ -489,12 +568,30 @@ planet:
         hpg:
           source: canon
           value: X
+      - date: '3135-01-01'
+        # administration: IND | Region Capital
+        # administration: IND | Region Capital
+        # administration: IND | Region Capital
+        # administration: IND | Region Capital
+        # administration: IND | Region Capital
+        # administration: IND | Region Capital
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3135-10-01'
         faction:
           source: canon
           value:
             - IND
       - date: '3138-10-12'
+        # administration: DC | Dieron Military District | Dieron Prefecture
+        # administration: DC | Dieron Military District | Dieron Prefecture
+        # administration: DC | Dieron Military District | Dieron Prefecture
+        # administration: DC | Dieron Military District | Dieron Prefecture
+        # administration: DC | Dieron Military District | Dieron Prefecture
+        # administration: DC | Dieron Military District | Dieron Prefecture
         faction:
           source: canon
           value:
@@ -503,6 +600,24 @@ planet:
         population: 3319425371.0
       - date: '3145-01-01'
         population: 3322746456.0
+      - date: '3151-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CC
+      - date: '3152-01-01'
+        # administration: DC | Dieron Military District | Dieron Prefecture
+        # administration: DC | Dieron Military District | Dieron Prefecture
+        # administration: DC | Dieron Military District | Dieron Prefecture
+        # administration: DC | Dieron Military District | Dieron Prefecture
+        # administration: DC | Dieron Military District | Dieron Prefecture
+        # administration: DC | Dieron Military District | Dieron Prefecture
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - DC
   - name: Johnson
     type: GIANT_TERRESTRIAL
     orbitalDist: 2.8

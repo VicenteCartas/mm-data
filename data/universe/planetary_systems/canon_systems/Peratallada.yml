@@ -1,0 +1,151 @@
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
+#
+# NOTICE: The MegaMek organization is a non-profit group of volunteers
+# creating free software for the BattleTech community.
+#
+# MechWarrior, BattleMech, `Mech and AeroTech are registered trademarks
+# of The Topps Company, Inc. All Rights Reserved.
+#
+# Catalyst Game Labs and the Catalyst Game Labs logo are trademarks of
+# InMediaRes Productions, LLC.
+#
+# MechWarrior Copyright Microsoft Corporation. MegaMek Data was created under
+# Microsoft's "Game Content Usage Rules"
+# <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
+# affiliated with Microsoft.
+
+id: Peratallada
+sucsId: 3124
+xcood: 141.325
+ycood: -505.497
+planet:
+  - type: TERRESTRIAL
+    orbitalDist: 0.28
+    sysPos: 1
+    icon: frozen4
+    pressure: STANDARD
+    atmosphere: BREATHABLE
+    composition: Nitrogen and Oxygen, plus trace gases
+    gravity: 0.81
+    diameter: 10800
+    density: 5.2795
+    dayLength: 16
+    yearLength: 0.8
+    temperature: 37
+    water: 27
+    lifeForm: FISH
+    name: Peratallada
+    desc: A former Taurian Concordat mining colony polluted beyond recovery after centuries of industry. The surface is severely damaged with foul and unbreathable air and geological instability. The Draconis Combine maintained a covert outpost on the planet.
+    event:
+      - date: '2750-01-01'
+        population: 55420.0
+        socioIndustrial: C-D-B-D-F
+      - date: '2760-01-01'
+        population: 234971.0
+      - date: '2770-01-01'
+        population: 747137.0
+      - date: '2780-01-01'
+        population: 1882831.0
+      - date: '2790-01-01'
+        population: 3914539.0
+      - date: '2800-01-01'
+        population: 7031595.0
+      - date: '2810-01-01'
+        population: 3989565.0
+      - date: '2820-01-01'
+        population: 1513568.0
+      - date: '2822-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
+      - date: '2830-01-01'
+        population: 516530.0
+      - date: '2840-01-01'
+        population: 162486.0
+      - date: '2850-01-01'
+        population: 64206.0
+      - date: '2860-01-01'
+        population: 20363.0
+      - date: '2870-01-01'
+        population: 6893.0
+      - date: '2880-01-01'
+        population: 2099.0
+      - date: '2890-01-01'
+        population: 0.0
+        socioIndustrial: X-X-X-X-X
+      - date: '3030-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ABN
+  - type: GIANT_TERRESTRIAL
+    orbitalDist: 0.49
+    sysPos: 2
+    icon: gasg7
+    pressure: VERY_HIGH
+    atmosphere: TOXIC_POISON
+    composition: Hydrogen and Helium, plus trace gases
+    gravity: 1.54
+    diameter: 15500
+    density: 7
+    dayLength: 15
+    yearLength: 0.9
+    smallMoons: 4
+    satellite:
+      - name: 2-M1
+        size: medium
+        icon: rock1
+      - name: 2-M2
+        size: medium
+        icon: rock2
+      - name: 2-M3
+        size: medium
+        icon: rock3
+    name: Peratallada II
+  - type: GAS_GIANT
+    orbitalDist: 1.12
+    sysPos: 3
+    icon: gasg22
+    pressure: VERY_HIGH
+    atmosphere: TOXIC_POISON
+    composition: Hydrogen and Helium, plus trace gases
+    gravity: 2.35
+    diameter: 150000
+    density: 1.1
+    dayLength: 21
+    yearLength: 1.5
+    ring: true
+    smallMoons: 16
+    satellite:
+      - name: 3-M1
+        size: medium
+        icon: rock1
+    name: Peratallada III
+  - type: ASTEROID_BELT
+    orbitalDist: 1.96
+    sysPos: 4
+    icon: asteroid2
+    yearLength: 2.9
+    temperature: -126
+    name: Peratallada IV
+  - type: ICE_GIANT
+    orbitalDist: 3.64
+    sysPos: 5
+    icon: iceg8
+    pressure: VERY_HIGH
+    atmosphere: TOXIC_POISON
+    composition: Hydrogen and Helium, plus trace gases
+    gravity: 1.14
+    diameter: 50000
+    density: 1.6
+    dayLength: 16
+    yearLength: 7
+    smallMoons: 2
+    name: Peratallada V
+primarySlot: 1
+spectralType: K4V
+event: [ ]

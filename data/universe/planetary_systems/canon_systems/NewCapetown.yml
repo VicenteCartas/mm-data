@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,15 +16,17 @@
 # affiliated with Microsoft.
 
 id: New Capetown
-sucsId: 1821
+sucsId: 1822
 xcood: -252.057
 ycood: 260.773
 spectralType:
-  source: 'Handbook: House Steiner, pg. 82'
+  source: 'HB:HS'
   value: K9V
+  page: 82
 primarySlot:
-  source: 'Handbook: House Steiner, pg. 82'
+  source: 'HB:HS'
   value: 4
+  page: 82
 event:
   - date: '2411-08-11'
     zenithCharge: yes
@@ -83,53 +85,70 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.2
     sysPos:
-      source: 'Handbook: House Steiner, pg. 82'
+      source: 'HB:HS'
       value: 4
+      page: 82
     icon: green43
     pressure:
-      source: 'Handbook: House Steiner, pg. 82'
+      source: 'HB:HS'
       value: STANDARD
+      page: 82
     atmosphere:
-      source: 'Handbook: House Steiner, pg. 82'
+      source: 'HB:HS'
       value: BREATHABLE
+      page: 82
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'Handbook: House Steiner, pg. 82'
+      source: 'HB:HS'
       value: 1.1
+      page: 82
     diameter: 12399
     density: 6.2345032488
     dayLength: 19
     yearLength: 0.7
     temperature:
-      source: 'Handbook: House Steiner, pg. 82'
+      source: 'HB:HS'
       value: 29
+      page: 82
     water:
-      source: 'Handbook: House Steiner, pg. 82'
+      source: 'HB:HS'
       value: 65
+      page: 82
     lifeForm:
-      source: 'Handbook: House Steiner, pg. 82'
+      source: 'HB:HS'
       value: BIRD
+      page: 82
     desc: |-
       New Capetown is a planet with an ugly past. The original colonists were primarily White Supremacists and the laws of the planet created a massive racial divide. These laws stunted the planet’s growth as outsiders to the planet were loathe to deal with New Capetown. It was not until the 3030s that the oppressive regime was toppled and the planet was brought in line with the ideals of the Lyran Commonwealth.
 
       New Capetown is moderately industrialized and is a comfortable temperate planet with abundant arable land. The planet is also home to the Royal New Capetown Military Academy, which is located in the planetary capital of New Hope on the mild flatlands of Pretoria.
     landmass:
       - name:
-          source: 'Handbook: House Steiner, pg. 82'
+          source: 'HB:HS'
           value: Eissia
+          page: 82
       - name:
-          source: 'Handbook: House Steiner, pg. 82'
+          source: 'HB:HS'
           value: Pretoria
+          page: 82
         capital:
-          source: 'Handbook: House Steiner, pg. 82'
+          source: 'HB:HS'
           value: New Hope
+          page: 82
     satellite:
       - name:
-          source: 'Handbook: House Steiner, pg. 82'
+          source: 'HB:HS'
           value: Durban
+          page: 82
         size: large
         icon: rock4
     event:
+      - date: '2341-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '2341-07-16'
         faction:
           source: canon
@@ -140,6 +159,12 @@ planet:
       - date: '2350-01-01'
         population: 286925.0
       - date: '2355-08-26'
+        # administration: LA | Protectorate of Donegal
+        # administration: LA | Protectorate of Donegal
+        # administration: LA | Protectorate of Donegal
+        # administration: LA | Protectorate of Donegal
+        # administration: LA | Protectorate of Donegal
+        # administration: LA | Protectorate of Donegal
         faction:
           source: canon
           value:
@@ -295,8 +320,25 @@ planet:
       - date: '3030-01-01'
         population: 2996464225.0
       - date: '3040-01-01'
+        # administration: FC | Donegal March | Coventry Operational Area
+        # administration: FC | Donegal March | Coventry Operational Area
+        # administration: FC | Donegal March | Coventry Operational Area
+        # administration: FC | Donegal March | Coventry Operational Area
+        # administration: FC | Donegal March | Coventry Operational Area
+        # administration: FC | Donegal March | Coventry Operational Area
         population: 3020532082.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
+        # administration: FC | Donegal March | Coventry Operational Area
+        # administration: FC | Donegal March | Coventry Operational Area
+        # administration: FC | Donegal March | Coventry Operational Area
+        # administration: FC | Donegal March | Coventry Operational Area
+        # administration: FC | Donegal March | Coventry Operational Area
+        # administration: FC | Donegal March | Coventry Operational Area
         faction:
           source: canon
           value:
@@ -307,7 +349,25 @@ planet:
           value: B-B-C-C-B
       - date: '3050-01-01'
         population: 3048449199.0
+      - date: '3057-01-01'
+        # administration: LA | Donegal March | Coventry Operational Area
+        # administration: LA | Donegal March | Coventry Operational Area
+        # administration: LA | Donegal March | Coventry Operational Area
+        # administration: LA | Donegal March | Coventry Operational Area
+        # administration: LA | Donegal March | Coventry Operational Area
+        # administration: LA | Donegal March | Coventry Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '3057-09-18'
+        # administration: LA | Coventry Province
+        # administration: LA | Coventry Province
+        # administration: LA | Coventry Province
+        # administration: LA | Coventry Province
+        # administration: LA | Coventry Province
+        # administration: LA | Coventry Province
         faction:
           source: canon
           value:
@@ -339,12 +399,24 @@ planet:
           value: X
       - date: '3140-01-01'
         population: 3155771510.0
+      - date: '3145-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CJF
       - date: '3145-12-10'
         faction:
           source: canon
           value:
             - CJF
         population: 3162089369.0
+      - date: '3152-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3152-06-01'
         faction:
           source: canon

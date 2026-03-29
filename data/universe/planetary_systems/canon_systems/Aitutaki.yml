@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -20,11 +20,13 @@ sucsId: 45
 xcood: -164.636
 ycood: -166.561
 spectralType:
-  source: 'Handbook: House Marik, pg. 63'
+  source: 'HB:HM'
   value: K8II
+  page: 63
 primarySlot:
-  source: 'Handbook: House Marik, pg. 63'
+  source: 'HB:HM'
   value: 3
+  page: 63
 event:
   - date: '2350-11-16'
     zenithCharge: yes
@@ -63,46 +65,56 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.6
     sysPos:
-      source: 'Handbook: House Marik, pg. 63'
+      source: 'HB:HM'
       value: 3
+      page: 63
     icon: green34
     pressure:
-      source: 'Handbook: House Marik, pg. 63'
+      source: 'HB:HM'
       value: HIGH
+      page: 63
     atmosphere:
-      source: 'Handbook: House Marik, pg. 63'
+      source: 'HB:HM'
       value: BREATHABLE
+      page: 63
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'Handbook: House Marik, pg. 63'
+      source: 'HB:HM'
       value: 1.15
+      page: 63
     diameter: 12237
     density: 6.604174469783
     dayLength: 21
     yearLength: 0.9
     temperature:
-      source: 'Handbook: House Marik, pg. 63'
+      source: 'HB:HM'
       value: 45
+      page: 63
     water:
-      source: 'Handbook: House Marik, pg. 63'
+      source: 'HB:HM'
       value: 70
+      page: 63
     lifeForm:
-      source: 'Handbook: House Marik, pg. 63'
+      source: 'HB:HM'
       value: REPTILE
+      page: 63
     desc: |-
       Aitutaki was originally established as a trade way-station by the Principality of Regulus, however the planet’s economy has since switched to an agricultural center for the region. The planet has also been a primary training hub for the Regulan military since the early 25th Century.
 
       Aitutaki’s early settlers made a unique distinction by creating two capital cities, Ladakh and Srinagar. Ladakh was created as the center of government and Srinagar as the center for financial, commercial and industrial concerns with the intent of minimizing interference between commerce and government.
     landmass:
       - name:
-          source: 'Handbook: House Marik, pg. 63'
+          source: 'HB:HM'
           value: Andrine
+          page: 63
         capital:
-          source: 'Handbook: House Marik, pg. 63'
+          source: 'HB:HM'
           value: Ladakh
+          page: 63
       - name:
-          source: 'Handbook: House Marik, pg. 63'
+          source: 'HB:HM'
           value: Simla
+          page: 63
     event:
       - date: '2247-03-21'
         faction:
@@ -118,6 +130,12 @@ planet:
       - date: '2270-01-01'
         population: 908559.0
       - date: '2271-06-01'
+        # administration: FWL | Principality of Regulus
+        # administration: FWL | Principality of Regulus
+        # administration: FWL | Principality of Regulus
+        # administration: FWL | Principality of Regulus
+        # administration: FWL | Principality of Regulus
+        # administration: FWL | Principality of Regulus
         faction:
           source: canon
           value:
@@ -330,6 +348,12 @@ planet:
         population: 966222112.0
       - date: '3120-01-01'
         population: 975152372.0
+      - date: '3130-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3130-11-26'
         faction:
           source: canon
@@ -342,6 +366,12 @@ planet:
           value: X
       - date: '3140-01-01'
         population: 990087910.0
+      - date: '3145-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FWL
       - date: '3145-09-21'
         faction:
           source: canon

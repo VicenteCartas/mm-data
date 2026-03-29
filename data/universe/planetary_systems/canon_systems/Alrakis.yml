@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -20,10 +20,10 @@ sucsId: 91
 xcood: -19.908
 ycood: 81.891
 spectralType:
-  source: MWDA world profiles
+  source: DA:RW
   value: K0V
 primarySlot:
-  source: MWDA world profiles
+  source: DA:RW
   value: 2
 event:
   - date: '2402-01-06'
@@ -54,83 +54,72 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.56
     sysPos:
-      source: MWDA world profiles
+      source: DA:RW
       value: 2
     icon: green6
     pressure:
-      source: MWDA world profiles
+      source: DA:RW
       value: STANDARD
     atmosphere:
-      source: MWDA world profiles
+      source: DA:RW
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: MWDA world profiles
+      source: DA:RW
       value: 1.24
     diameter: 14421
     density: 6.042675820116
     dayLength: 24
     yearLength: 1.0
     temperature:
-      source: MWDA world profiles
+      source: DA:RW
       value: 43
     water:
-      source: MWDA world profiles
+      source: DA:RW
       value: 67
     lifeForm:
-      source: MWDA world profiles
+      source: DA:RW
       value: BIRD
-    desc: Alrakis is a comfortable temperate planet with large deposits of metal ores
-      in the mountain ranges that cross the planet’s continents and three of the planet’s
-      largest moons. Thanks to the massive deposits of raw materials numerous factories
-      were constructed and many survived through the Succession Wars, thanks primarily
-      to an avoidance of heavy military industry. For much of its history Alrakis
-      was a hotly contested industrial world with the Lyran Commonwealth and Draconis
-      Combine vying for control. While the planet’s climate is comfortable and there
-      is sufficient fertile land and large deposits of natural resources, initial
-      settlement was slow due to the high gravity on planet and the danger of the
-      native tigerfalcon. A large avian predator which was known to attack in packs
-      of three to five. By the time of the Star League the tigerfalcon population
-      had been reduced to levels that allowed for further safe inhabitation of Alrakis.
+    desc: Alrakis is a comfortable temperate planet with large deposits of metal ores in the mountain ranges that cross the planet’s continents and three of the planet’s largest moons. Thanks to the massive deposits of raw materials numerous factories were constructed and many survived through the Succession Wars, thanks primarily to an avoidance of heavy military industry. For much of its history Alrakis was a hotly contested industrial world with the Lyran Commonwealth and Draconis Combine vying for control. While the planet’s climate is comfortable and there is sufficient fertile land and large deposits of natural resources, initial settlement was slow due to the high gravity on planet and the danger of the native tigerfalcon. A large avian predator which was known to attack in packs of three to five. By the time of the Star League the tigerfalcon population had been reduced to levels that allowed for further safe inhabitation of Alrakis.
     landmass:
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Kabast
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Ronigawa
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Skopje
         capital:
-          source: MWDA world profiles
+          source: DA:RW
           value: Sigmundrac
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Strumm
     satellite:
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Cassius
         size: medium
         icon: rock7
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Delvia
         size: medium
         icon: rock1
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Fermosa
         size: medium
         icon: rock3
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Weir
         size: medium
         icon: oddmoon1
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Zalazar
         size: large
         icon: rock10
@@ -157,6 +146,18 @@ planet:
         population: 3401203.0
       - date: '2310-01-01'
         population: 8180973.0
+      - date: '2317-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
+      - date: '2319-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FoS
       - date: '2320-01-01'
         population: 17463486.0
       - date: '2321-01-01'
@@ -166,6 +167,12 @@ planet:
       - date: '2340-01-01'
         population: 59750044.0
       - date: '2341-01-10'
+        # administration: LA | Federation of Skye
+        # administration: LA | Federation of Skye
+        # administration: LA | Federation of Skye
+        # administration: LA | Federation of Skye
+        # administration: LA | Federation of Skye
+        # administration: LA | Federation of Skye
         faction:
           source: canon
           value:
@@ -291,6 +298,12 @@ planet:
       - date: '2893-01-01'
         socioIndustrial: C-C-C-C-D
       - date: '2900-12-02'
+        # administration: DC | Dieron Military District | Kessel Prefecture
+        # administration: DC | Dieron Military District | Kessel Prefecture
+        # administration: DC | Dieron Military District | Kessel Prefecture
+        # administration: DC | Dieron Military District | Kessel Prefecture
+        # administration: DC | Dieron Military District | Kessel Prefecture
+        # administration: DC | Dieron Military District | Kessel Prefecture
         faction:
           source: canon
           value:
@@ -334,7 +347,25 @@ planet:
         population: 1605335263.0
       - date: '3080-01-01'
         population: 1623091430.0
+      - date: '3081-01-01'
+        # administration: ROS | Prefecture I
+        # administration: ROS | Prefecture I
+        # administration: ROS | Prefecture I
+        # administration: ROS | Prefecture I
+        # administration: ROS | Prefecture I
+        # administration: ROS | Prefecture I
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ROS
       - date: '3081-06-21'
+        # administration: ROS | Prefecture I
+        # administration: ROS | Prefecture I
+        # administration: ROS | Prefecture I
+        # administration: ROS | Prefecture I
+        # administration: ROS | Prefecture I
+        # administration: ROS | Prefecture I
         faction:
           source: canon
           value:
@@ -351,6 +382,12 @@ planet:
         population: 1717607993.0
       - date: '3130-01-01'
         population: 1728290243.0
+      - date: '3135-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3135-10-01'
         faction:
           source: canon
@@ -358,7 +395,25 @@ planet:
             - IND
       - date: '3140-01-01'
         population: 1740082666.0
+      - date: '3145-01-01'
+        # administration: RD | Region 3 | Vega Protectorate
+        # administration: RD | Region 3 | Vega Protectorate
+        # administration: RD | Region 3 | Vega Protectorate
+        # administration: RD | Region 3 | Vega Protectorate
+        # administration: RD | Region 3 | Vega Protectorate
+        # administration: RD | Region 3 | Vega Protectorate
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - RD
       - date: '3145-10-04'
+        # administration: RD | Region 3 | Vega Protectorate
+        # administration: RD | Region 3 | Vega Protectorate
+        # administration: RD | Region 3 | Vega Protectorate
+        # administration: RD | Region 3 | Vega Protectorate
+        # administration: RD | Region 3 | Vega Protectorate
+        # administration: RD | Region 3 | Vega Protectorate
         faction:
           source: canon
           value:

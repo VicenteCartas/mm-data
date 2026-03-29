@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: Manteno
-sucsId: 1596
+sucsId: 1597
 xcood: 189.215
 ycood: -71.907
 spectralType:
-  source: House Davion
+  source: HB:HD
   value: F5V
 primarySlot:
-  source: House Davion
+  source: HB:HD
   value: 4
 event:
   - date: '2405-05-07'
@@ -92,7 +92,7 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 2.24
     sysPos:
-      source: House Davion
+      source: HB:HD
       value: 4
     icon: green36
     pressure: HIGH
@@ -106,18 +106,9 @@ planet:
     temperature: 22
     water: 38
     lifeForm:
-      source: House Davion
+      source: HB:HD
       value: MAMMAL
-    desc: For most of its history, Manteno was a stable and comfortable world with
-      vast deposits of minerals, ores and other raw materials. The rich deposits of
-      resources led to early success for the planet and extensive industry to take
-      advantage of the raw goods extracted from the planet. The planet was prosperous
-      and an important manufacturing world for the Federated Suns. Unfortunately during
-      the 1st Succession War attacks by the Draconis Combine resulted in the destruction
-      of much of the planet’s industry. Just as the planet was beginning to recover
-      in the early 31st century the planet began to be plagued by earthquakes and
-      heavy volcanic activity. The new geological activity resulted in many residents
-      fleeing to other worlds and numerous businesses relocating as well.
+    desc: For most of its history, Manteno was a stable and comfortable world with vast deposits of minerals, ores and other raw materials. The rich deposits of resources led to early success for the planet and extensive industry to take advantage of the raw goods extracted from the planet. The planet was prosperous and an important manufacturing world for the Federated Suns. Unfortunately during the 1st Succession War attacks by the Draconis Combine resulted in the destruction of much of the planet’s industry. Just as the planet was beginning to recover in the early 31st century the planet began to be plagued by earthquakes and heavy volcanic activity. The new geological activity resulted in many residents fleeing to other worlds and numerous businesses relocating as well.
     smallMoons: 2
     landmass:
       - name: Ardmore
@@ -142,7 +133,19 @@ planet:
         population: 1480831.0
       - date: '2310-01-01'
         population: 3403034.0
+      - date: '2317-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FS
       - date: '2317-06-26'
+        # administration: FS | Crucis March | Markesan Operational Area
+        # administration: FS | Crucis March | Markesan Operational Area
+        # administration: FS | Crucis March | Markesan Operational Area
+        # administration: FS | Crucis March | Markesan Operational Area
+        # administration: FS | Crucis March | Markesan Operational Area
+        # administration: FS | Crucis March | Markesan Operational Area
         faction:
           source: canon
           value:
@@ -304,8 +307,25 @@ planet:
       - date: '3030-01-01'
         population: 476941836.0
       - date: '3040-01-01'
+        # administration: FC | Crucis March | Markesan Operational Area
+        # administration: FC | Crucis March | Markesan Operational Area
+        # administration: FC | Crucis March | Markesan Operational Area
+        # administration: FC | Crucis March | Markesan Operational Area
+        # administration: FC | Crucis March | Markesan Operational Area
+        # administration: FC | Crucis March | Markesan Operational Area
         population: 480148075.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
+        # administration: FC | Crucis March | Markesan Operational Area
+        # administration: FC | Crucis March | Markesan Operational Area
+        # administration: FC | Crucis March | Markesan Operational Area
+        # administration: FC | Crucis March | Markesan Operational Area
+        # administration: FC | Crucis March | Markesan Operational Area
+        # administration: FC | Crucis March | Markesan Operational Area
         faction:
           source: canon
           value:
@@ -316,7 +336,25 @@ planet:
         population: 482892734.0
       - date: '3060-01-01'
         population: 485798800.0
+      - date: '3067-01-01'
+        # administration: FS | Crucis March | Markesan Operational Area
+        # administration: FS | Crucis March | Markesan Operational Area
+        # administration: FS | Crucis March | Markesan Operational Area
+        # administration: FS | Crucis March | Markesan Operational Area
+        # administration: FS | Crucis March | Markesan Operational Area
+        # administration: FS | Crucis March | Markesan Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FS
       - date: '3067-04-20'
+        # administration: FS | Crucis March | Markesan Operational Area
+        # administration: FS | Crucis March | Markesan Operational Area
+        # administration: FS | Crucis March | Markesan Operational Area
+        # administration: FS | Crucis March | Markesan Operational Area
+        # administration: FS | Crucis March | Markesan Operational Area
+        # administration: FS | Crucis March | Markesan Operational Area
         faction:
           source: canon
           value:

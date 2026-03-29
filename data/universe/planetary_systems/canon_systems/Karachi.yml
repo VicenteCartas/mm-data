@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Karachi
-sucsId: 1294
+sucsId: 1295
 xcood: -292.397
 ycood: -243.278
 spectralType:
@@ -68,12 +68,7 @@ planet:
     lifeForm:
       source: canon
       value: MAMMAL
-    desc: 'Karachi is an unattractive, arid planet with a thin atmosphere - it''s
-      only redeeming feature is it''s easily accessible mineral wealth. The surface
-      is one continuous landmass of flat, rocky desert, broken only by two major bodies
-      of water: the Southern Ocean and the Arctic Seas, around which most of the planet''s
-      residential and industrial infrastructure is concentrated. The Star League Defence
-      Force is known to have constructed huge military maintenance facilities here.'
+    desc: 'Karachi is an unattractive, arid planet with a thin atmosphere - it''s only redeeming feature is it''s easily accessible mineral wealth. The surface is one continuous landmass of flat, rocky desert, broken only by two major bodies of water: the Southern Ocean and the Arctic Seas, around which most of the planet''s residential and industrial infrastructure is concentrated. The Star League Defence Force is known to have constructed huge military maintenance facilities here.'
     landmass:
       - name:
           source: canon
@@ -84,6 +79,12 @@ planet:
         icon: oddmoon2
     event:
       - date: '2564-02-13'
+        # administration: FWL | Principality of Regulus
+        # administration: FWL | Principality of Regulus
+        # administration: FWL | Principality of Regulus
+        # administration: FWL | Principality of Regulus
+        # administration: FWL | Principality of Regulus
+        # administration: FWL | Principality of Regulus
         faction:
           source: canon
           value:
@@ -212,6 +213,12 @@ planet:
         population: 145456161.0
       - date: '3080-01-01'
         population: 146390066.0
+      - date: '3081-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3081-07-25'
         faction:
           source: canon
@@ -227,6 +234,12 @@ planet:
         population: 147565883.0
       - date: '3120-01-01'
         population: 148157329.0
+      - date: '3130-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - RCM
       - date: '3130-09-01'
         faction:
           source: canon
@@ -240,8 +253,25 @@ planet:
       - date: '3140-01-01'
         population: 148483634.0
       - date: '3145-01-01'
+        # administration: FWL | Rim Commonality
+        # administration: FWL | Rim Commonality
+        # administration: FWL | Rim Commonality
+        # administration: FWL | Rim Commonality
+        # administration: FWL | Rim Commonality
+        # administration: FWL | Rim Commonality
         population: 148721398.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FWL
       - date: '3151-01-01'
+        # administration: FWL | Rim Commonality
+        # administration: FWL | Rim Commonality
+        # administration: FWL | Rim Commonality
+        # administration: FWL | Rim Commonality
+        # administration: FWL | Rim Commonality
+        # administration: FWL | Rim Commonality
         faction:
           source: sucs
           value:

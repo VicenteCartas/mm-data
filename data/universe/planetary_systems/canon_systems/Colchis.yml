@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Colchis
-sucsId: 2892
+sucsId: 2893
 xcood: 458.018
 ycood: -498.371
 spectralType: K8V
@@ -74,6 +74,12 @@ planet:
           source: canon
           value:
             - CDP
+      - date: '3067-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ABN
       - date: '3070-01-01'
         population: 5249126.0
       - date: '3080-01-01'
@@ -90,6 +96,12 @@ planet:
         population: 5672680.0
       - date: '3130-01-01'
         population: 5728545.0
+      - date: '3135-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CDP
       - date: '3140-01-01'
         population: 5757260.0
       - date: '3145-01-01'

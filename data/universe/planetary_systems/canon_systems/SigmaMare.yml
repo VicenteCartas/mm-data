@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,15 +16,17 @@
 # affiliated with Microsoft.
 
 id: Sigma Mare
-sucsId: 2333
+sucsId: 2334
 xcood: 6.456
 ycood: -314.937
 spectralType:
-  source: House Liao, pg. 136
+  source: HLSB
   value: G9V
+  page: 136
 primarySlot:
-  source: House Liao, pg. 136
+  source: HLSB
   value: 4
+  page: 136
 event:
   - date: '2414-09-27'
     nadirCharge: yes
@@ -84,8 +86,9 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.56
     sysPos:
-      source: House Liao, pg. 136
+      source: HLSB
       value: 4
+      page: 136
     icon: green28
     pressure: HIGH
     atmosphere: BREATHABLE
@@ -98,15 +101,10 @@ planet:
     temperature: 39
     water: 41
     lifeForm:
-      source: House Liao, pg. 136
+      source: HLSB
       value: MAMMAL
-    desc: Sigma Mare is a small, cold and inhospitable world that has been the center
-      for geophysical/terraforming research for centuries. During this time Capellan
-      leaders have often visited Sigma Mare, pronounced its impressive potential and
-      then left without actually developing the planet further. In more recent years
-      the locals have shown little interest in galactic politics after years of neglect.
-      Horse breeding is a major industry on Sigma Mare, but on a smaller scale than
-      on Turin.
+      page: 136
+    desc: Sigma Mare is a small, cold and inhospitable world that has been the center for geophysical/terraforming research for centuries. During this time Capellan leaders have often visited Sigma Mare, pronounced its impressive potential and then left without actually developing the planet further. In more recent years the locals have shown little interest in galactic politics after years of neglect. Horse breeding is a major industry on Sigma Mare, but on a smaller scale than on Turin.
     smallMoons: 2
     landmass:
       - name: Dracut
@@ -142,6 +140,12 @@ planet:
         population: 38793341.0
       - date: '2270-01-01'
         population: 69740603.0
+      - date: '2271-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '2280-01-01'
         population: 116524023.0
       - date: '2290-01-01'
@@ -160,7 +164,19 @@ planet:
         population: 1074989900.0
       - date: '2360-01-01'
         population: 1290141913.0
+      - date: '2366-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - SiS
       - date: '2367-07-01'
+        # administration: CC | Sian Commonality | Region 7
+        # administration: CC | Sian Commonality | Region 7
+        # administration: CC | Sian Commonality | Region 7
+        # administration: CC | Sian Commonality | Region 7
+        # administration: CC | Sian Commonality | Region 7
+        # administration: CC | Sian Commonality | Region 7
         faction:
           source: canon
           value:
@@ -330,6 +346,12 @@ planet:
             - CC
             - DA
       - date: '3032-03-07'
+        # administration: CC | Sian Commonality | Region 6
+        # administration: CC | Sian Commonality | Region 6
+        # administration: CC | Sian Commonality | Region 6
+        # administration: CC | Sian Commonality | Region 6
+        # administration: CC | Sian Commonality | Region 6
+        # administration: CC | Sian Commonality | Region 6
         faction:
           source: canon
           value:
@@ -368,6 +390,12 @@ planet:
         population: 272325676.0
       - date: '3145-01-01'
         population: 272652663.0
+      - date: '3152-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - DA
       - date: '3152-06-01'
         faction:
           source: canon

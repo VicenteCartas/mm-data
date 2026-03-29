@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,15 +16,17 @@
 # affiliated with Microsoft.
 
 id: Misery
-sucsId: 1721
+sucsId: 1722
 xcood: 274.256
 ycood: 84.992
 spectralType:
-  source: 'Historical Turning Point: Misery, pg. 3'
+  source: 'HTP:Misery'
   value: F2V
+  page: 3
 primarySlot:
-  source: 'Historical Turning Point: Misery, pg. 3'
+  source: 'HTP:Misery'
   value: 4
+  page: 3
 event:
   - date: '2350-03-16'
     nadirCharge: yes
@@ -85,74 +87,84 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 2.4
     sysPos:
-      source: 'Historical Turning Point: Misery, pg. 3'
+      source: 'HTP:Misery'
       value: 4
+      page: 3
     icon: green24
     pressure:
-      source: 'Historical Turning Point: Misery, pg. 3'
+      source: 'HTP:Misery'
       value: STANDARD
+      page: 3
     atmosphere:
-      source: 'Historical Turning Point: Misery, pg. 3'
+      source: 'HTP:Misery'
       value: BREATHABLE
+      page: 3
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'Historical Turning Point: Misery, pg. 3'
+      source: 'HTP:Misery'
       value: 1.1
+      page: 3
     diameter: 14368
     density: 5.380160541948
     dayLength: 24
     yearLength: 3.9
     temperature:
-      source: 'Historical Turning Point: Misery, pg. 3'
+      source: 'HTP:Misery'
       value: 4
+      page: 3
     water:
-      source: 'Historical Turning Point: Misery, pg. 3'
+      source: 'HTP:Misery'
       value: 64
+      page: 3
     lifeForm:
-      source: 'Historical Turning Point: Misery, pg. 3'
+      source: 'HTP:Misery'
       value: MAMMAL
-    desc: Misery is a frigid world near the Federated Suns and Draconis Combine border.
-      Misery is an unappealing planet that primarily gets by on limited mining and
-      is barely able to produce sufficient food for its population. The planet boasts
-      very little industry and technology and relies primarily on imports. Misery
-      was made famous in the early 31st Century for the large battle between Wolf’s
-      Dragoon and the DCMS Ryuken.
+      page: 3
+    desc: Misery is a frigid world near the Federated Suns and Draconis Combine border. Misery is an unappealing planet that primarily gets by on limited mining and is barely able to produce sufficient food for its population. The planet boasts very little industry and technology and relies primarily on imports. Misery was made famous in the early 31st Century for the large battle between Wolf’s Dragoon and the DCMS Ryuken.
     landmass:
       - name:
-          source: 'Historical Turning Point: Misery, pg. 3'
+          source: 'HTP:Misery'
           value: Aurealis
+          page: 3
       - name:
-          source: 'Historical Turning Point: Misery, pg. 3'
+          source: 'HTP:Misery'
           value: Borealis
+          page: 3
     satellite:
       - name:
-          source: 'Historical Turning Point: Misery, pg. 3'
+          source: 'HTP:Misery'
           value: Envy
+          page: 3
         size: medium
         icon: oddmoon1
       - name:
-          source: 'Historical Turning Point: Misery, pg. 3'
+          source: 'HTP:Misery'
           value: Famine
+          page: 3
         size: medium
         icon: rock10
       - name:
-          source: 'Historical Turning Point: Misery, pg. 3'
+          source: 'HTP:Misery'
           value: Fear
+          page: 3
         size: medium
         icon: rock16
       - name:
-          source: 'Historical Turning Point: Misery, pg. 3'
+          source: 'HTP:Misery'
           value: Misfortune
+          page: 3
         size: large
         icon: rock8
       - name:
-          source: 'Historical Turning Point: Misery, pg. 3'
+          source: 'HTP:Misery'
           value: Pain
+          page: 3
         size: large
         icon: rock1
       - name:
-          source: 'Historical Turning Point: Misery, pg. 3'
+          source: 'HTP:Misery'
           value: Pestilence
+          page: 3
         size: large
         icon: rock4
     event:
@@ -174,6 +186,12 @@ planet:
         population: 150350.0
       - date: '2340-01-01'
         population: 265150.0
+      - date: '2341-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '2350-01-01'
         population: 431334.0
       - date: '2360-01-01'
@@ -222,6 +240,18 @@ planet:
         population: 8802349.0
       - date: '2570-01-01'
         population: 9021538.0
+      - date: '2571-01-01'
+        # administration: DC | Galedon Military District | Matsuida Prefecture
+        # administration: DC | Galedon Military District | Matsuida Prefecture
+        # administration: DC | Galedon Military District | Matsuida Prefecture
+        # administration: DC | Galedon Military District | Matsuida Prefecture
+        # administration: DC | Galedon Military District | Matsuida Prefecture
+        # administration: DC | Galedon Military District | Matsuida Prefecture
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - DC
       - date: '2580-01-01'
         population: 9227714.0
       - date: '2590-01-01'
@@ -355,6 +385,11 @@ planet:
         population: 500157226.0
       - date: '3130-01-01'
         population: 500457411.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - DC/FS
       - date: '3130-06-01'
         faction:
           source: canon
@@ -365,7 +400,19 @@ planet:
         hpg:
           source: canon
           value: X
+      - date: '3135-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - DC/FS
       - date: '3139-08-29'
+        # administration: DC | New Samarkand Military District | Matsuida Prefecture
+        # administration: DC | New Samarkand Military District | Matsuida Prefecture
+        # administration: DC | New Samarkand Military District | Matsuida Prefecture
+        # administration: DC | New Samarkand Military District | Matsuida Prefecture
+        # administration: DC | New Samarkand Military District | Matsuida Prefecture
+        # administration: DC | New Samarkand Military District | Matsuida Prefecture
         faction:
           source: canon
           value:

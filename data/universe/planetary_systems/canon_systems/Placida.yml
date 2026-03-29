@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Placida
-sucsId: 2917
+sucsId: 2918
 xcood: -117.687
 ycood: 490.786
 spectralType: F0V
@@ -148,6 +148,12 @@ planet:
         population: 4979552.0
       - date: '3046-01-01'
         socioIndustrial: D-D-D-D-D
+      - date: '3049-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CW
       - date: '3049-08-19'
         faction:
           source: canon
@@ -166,8 +172,20 @@ planet:
             - CHH
       - date: '3080-01-01'
         population: 5078928.0
+      - date: '3085-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3090-01-01'
         population: 5092151.0
+      - date: '3095-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - NOC
       - date: '3100-01-01'
         population: 5111538.0
       - date: '3100-02-07'
@@ -181,6 +199,11 @@ planet:
         population: 5163942.0
       - date: '3130-01-01'
         population: 5169109.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - NOC
       - date: '3140-04-16'
         population: 5192941.0
         socioIndustrial: D-D-D-D-D

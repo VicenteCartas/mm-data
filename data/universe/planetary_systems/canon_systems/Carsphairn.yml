@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -20,10 +20,10 @@ sucsId: 484
 xcood: -96.168
 ycood: 38.985
 spectralType:
-  source: MWDA world profiles
+  source: DA:RW
   value: K1V
 primarySlot:
-  source: MWDA world profiles
+  source: DA:RW
   value: 3
 event:
   - date: '2365-08-04'
@@ -86,31 +86,31 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.56
     sysPos:
-      source: MWDA world profiles
+      source: DA:RW
       value: 3
     icon: wet5
     pressure:
-      source: MWDA world profiles
+      source: DA:RW
       value: STANDARD
     atmosphere:
-      source: MWDA world profiles
+      source: DA:RW
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: MWDA world profiles
+      source: DA:RW
       value: 1.17
     diameter: 16284
     density: 5.049352126825
     dayLength: 22
     yearLength: 1.0
     temperature:
-      source: MWDA world profiles
+      source: DA:RW
       value: 33
     water:
-      source: MWDA world profiles
+      source: DA:RW
       value: 77
     lifeForm:
-      source: MWDA world profiles
+      source: DA:RW
       value: MAMMAL
     desc: |-
       3135 - Carsphairn is blessed with striking and varied landscapes but cursed with violent weather systems, largely the result of the pull of three large moons. The weather varies from continuous, weeks-long spring and autumn downpours to frequent tornadoes in the summer, and crippling blizzards and ice storms in the winter. To withstand the effects of the storms, the locals built their structures low, and erected protective domes over many of their farms. Carsphairn's fertile soil sustain hybrid Terran crops and local animals. While mineral wealth has allowed for a rudimentary level of industrialization and exports. Narcisse, the planetary capital, is located on the primary continent of Gillinia. Narcisse has a large seaport as well as a spaceport, linking travelers to the other four main landmasses of Basallia, North Teslia, South Teslia, and Yddrig.
@@ -120,24 +120,24 @@ planet:
       During the Jihad, Carsphairn was raided several times by Word of Blake forces as it was an easy stop for foodstuffs to sustain their longer campaigns. This strategy forced the stationing of a permanent garrison of a mix of Lyran, Combine, and Clan Wolf warriors in the latter half of the war. Since becoming a member-world of the Republic of the Sphere, many of these garrison troops became part of Prefecture VIII militia remain on Carsphairn.
     landmass:
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Gillinia
         capital:
-          source: MWDA world profiles
+          source: DA:RW
           value: Narcisse
     satellite:
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Ammon
         size: medium
         icon: rock5
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Jael
         size: large
         icon: rock8
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Zayit
         size: large
         icon: rock17
@@ -162,13 +162,31 @@ planet:
         population: 1762571.0
       - date: '2310-01-01'
         population: 4381657.0
+      - date: '2317-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '2320-01-01'
         population: 9571977.0
       - date: '2330-01-01'
         population: 18867205.0
       - date: '2340-01-01'
         population: 33921841.0
+      - date: '2341-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FoS
       - date: '2341-08-12'
+        # administration: LA | Federation of Skye
+        # administration: LA | Federation of Skye
+        # administration: LA | Federation of Skye
+        # administration: LA | Federation of Skye
+        # administration: LA | Federation of Skye
+        # administration: LA | Federation of Skye
         faction:
           source: canon
           value:
@@ -325,8 +343,25 @@ planet:
       - date: '3032-01-01'
         socioIndustrial: C-C-C-C-B
       - date: '3040-01-01'
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
         population: 1381968772.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
         faction:
           source: canon
           value:
@@ -335,7 +370,25 @@ planet:
         socioIndustrial: B-B-C-B-A
       - date: '3050-01-01'
         population: 1391398184.0
+      - date: '3057-01-01'
+        # administration: LA | Skye March | Alcor Operational Area
+        # administration: LA | Skye March | Alcor Operational Area
+        # administration: LA | Skye March | Alcor Operational Area
+        # administration: LA | Skye March | Alcor Operational Area
+        # administration: LA | Skye March | Alcor Operational Area
+        # administration: LA | Skye March | Alcor Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '3057-09-18'
+        # administration: LA | Skye Province
+        # administration: LA | Skye Province
+        # administration: LA | Skye Province
+        # administration: LA | Skye Province
+        # administration: LA | Skye Province
+        # administration: LA | Skye Province
         faction:
           source: canon
           value:
@@ -346,7 +399,25 @@ planet:
         population: 1416528456.0
       - date: '3080-01-01'
         population: 1429906602.0
+      - date: '3081-01-01'
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ROS
       - date: '3081-08-02'
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
         faction:
           source: canon
           value:
@@ -365,6 +436,12 @@ planet:
         population: 1496021317.0
       - date: '3132-08-07'
         hpg: X
+      - date: '3135-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3135-10-01'
         faction:
           source: canon
@@ -372,7 +449,25 @@ planet:
             - IND
       - date: '3140-01-01'
         population: 1523193517.0
+      - date: '3145-01-01'
+        # administration: LA | Donegal Province
+        # administration: LA | Donegal Province
+        # administration: LA | Donegal Province
+        # administration: LA | Donegal Province
+        # administration: LA | Donegal Province
+        # administration: LA | Donegal Province
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '3145-08-17'
+        # administration: LA | Donegal Province
+        # administration: LA | Donegal Province
+        # administration: LA | Donegal Province
+        # administration: LA | Donegal Province
+        # administration: LA | Donegal Province
+        # administration: LA | Donegal Province
         faction:
           source: canon
           value:

@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,15 +16,17 @@
 # affiliated with Microsoft.
 
 id: Freedom
-sucsId: 901
+sucsId: 902
 xcood: -64.275
 ycood: 107.739
 spectralType:
-  source: FedCom Civil War, pg. 198
+  source: FCCW
   value: M5V
+  page: 198
 primarySlot:
-  source: FedCom Civil War, pg. 198
+  source: FCCW
   value: 6
+  page: 198
 event:
   - date: '2406-03-24'
     nadirCharge: yes
@@ -144,55 +146,58 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.08
     sysPos:
-      source: FedCom Civil War, pg. 198
+      source: FCCW
       value: 6
+      page: 198
     icon: green51
     pressure:
-      source: FedCom Civil War, pg. 198
+      source: FCCW
       value: STANDARD
+      page: 198
     atmosphere:
-      source: FedCom Civil War, pg. 198
+      source: FCCW
       value: BREATHABLE
+      page: 198
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: FedCom Civil War, pg. 198
+      source: FCCW
       value: 1.0
+      page: 198
     diameter: 14520
     density: 4.839993685915
     dayLength: 27
     yearLength: 0.4
     temperature:
-      source: FedCom Civil War, pg. 198
+      source: FCCW
       value: 40
+      page: 198
     water:
-      source: FedCom Civil War, pg. 198
+      source: FCCW
       value: 70
+      page: 198
     lifeForm:
-      source: FedCom Civil War, pg. 198
+      source: FCCW
       value: MAMMAL
-    desc: Freedom is famous for being ‘the planet that brought down the Terran Alliance’
-      due to its importance in the events that led up to the collapse of the Alliance
-      and resulting in its rebirth as the Terran Hegemony decades later. The planet
-      itself has a comfortable warm-temperate atmosphere and abundant fertile land
-      that makes it a breadbasket for surrounding worlds. The planet also has strong
-      manufacturing and industry, though most of the industry is focused on civilian
-      goods and not military. A large part of the industry on Freedom is focused on
-      creating parts for Water Pure Industries located on Corridan IV and produces
-      water purifiers that are used throughout the Inner Sphere.
+      page: 198
+    desc: Freedom is famous for being ‘the planet that brought down the Terran Alliance’ due to its importance in the events that led up to the collapse of the Alliance and resulting in its rebirth as the Terran Hegemony decades later. The planet itself has a comfortable warm-temperate atmosphere and abundant fertile land that makes it a breadbasket for surrounding worlds. The planet also has strong manufacturing and industry, though most of the industry is focused on civilian goods and not military. A large part of the industry on Freedom is focused on creating parts for Water Pure Industries located on Corridan IV and produces water purifiers that are used throughout the Inner Sphere.
     landmass:
       - name:
-          source: FedCom Civil War, pg. 198
+          source: FCCW
           value: Independence
+          page: 198
       - name:
-          source: FedCom Civil War, pg. 198
+          source: FCCW
           value: Republic
+          page: 198
         capital:
-          source: FedCom Civil War, pg. 198
+          source: FCCW
           value: Jefferson City
+          page: 198
     satellite:
       - name:
-          source: FedCom Civil War, pg. 198
+          source: FCCW
           value: Vigil's Light
+          page: 198
         size: medium
         icon: oddmoon1
     event:
@@ -267,6 +272,18 @@ planet:
         population: 377543406.0
       - date: '2310-01-01'
         population: 443421737.0
+      - date: '2317-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
+      - date: '2319-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FoS
       - date: '2320-01-01'
         population: 513400233.0
       - date: '2330-01-01'
@@ -274,6 +291,12 @@ planet:
       - date: '2340-01-01'
         population: 665465642.0
       - date: '2341-01-07'
+        # administration: LA | Federation of Skye
+        # administration: LA | Federation of Skye
+        # administration: LA | Federation of Skye
+        # administration: LA | Federation of Skye
+        # administration: LA | Federation of Skye
+        # administration: LA | Federation of Skye
         faction:
           source: canon
           value:
@@ -407,6 +430,12 @@ planet:
       - date: '2900-01-01'
         population: 880530047.0
       - date: '2910-01-16'
+        # administration: LA | Federation of Skye | Virginia Shire
+        # administration: LA | Federation of Skye | Virginia Shire
+        # administration: LA | Federation of Skye | Virginia Shire
+        # administration: LA | Federation of Skye | Virginia Shire
+        # administration: LA | Federation of Skye | Virginia Shire
+        # administration: LA | Federation of Skye | Virginia Shire
         faction:
           source: canon
           value:
@@ -439,8 +468,25 @@ planet:
       - date: '3039-01-01'
         socioIndustrial: B-C-C-C-B
       - date: '3040-01-01'
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
         population: 717782894.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
         faction:
           source: canon
           value:
@@ -451,7 +497,25 @@ planet:
           value: A-B-B-B-A
       - date: '3050-01-01'
         population: 724344529.0
+      - date: '3057-01-01'
+        # administration: LA | Skye March | Ryde Operational Area
+        # administration: LA | Skye March | Ryde Operational Area
+        # administration: LA | Skye March | Ryde Operational Area
+        # administration: LA | Skye March | Ryde Operational Area
+        # administration: LA | Skye March | Ryde Operational Area
+        # administration: LA | Skye March | Ryde Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '3057-09-18'
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
         faction:
           source: canon
           value:
@@ -486,6 +550,12 @@ planet:
         population: 772758938.0
       - date: '3145-01-01'
         population: 777253963.0
+      - date: '3152-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3152-06-01'
         faction:
           source: sucs

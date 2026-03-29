@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: Gladius
-sucsId: 963
+sucsId: 964
 xcood: -95.911
 ycood: 71.81
 spectralType:
-  source: MWDA world profiles
+  source: DA:RW
   value: K3IV
 primarySlot:
-  source: MWDA world profiles
+  source: DA:RW
   value: 2
 event:
   - date: '2395-09-03'
@@ -52,31 +52,31 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.7
     sysPos:
-      source: MWDA world profiles
+      source: DA:RW
       value: 2
     icon: wet5
     pressure:
-      source: MWDA world profiles
+      source: DA:RW
       value: STANDARD
     atmosphere:
-      source: MWDA world profiles
+      source: DA:RW
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: MWDA world profiles
+      source: DA:RW
       value: 1.16
     diameter: 11350
     density: 7.182248554662
     dayLength: 24
     yearLength: 1.0
     temperature:
-      source: MWDA world profiles
+      source: DA:RW
       value: 47
     water:
-      source: MWDA world profiles
+      source: DA:RW
       value: 94
     lifeForm:
-      source: MWDA world profiles
+      source: DA:RW
       value: REPTILE
     desc: |-
       A tropical world covered in deep, green oceans, Gladius seemed a virtual paradise to the first colonists to set foot upon its soil. Fertile lands and an abundance of native fauna suitable for human consumption—particularly on its single, large continent of Garamond, located mostly north of the equator—made the establishment of the first settlements easy. However, the rugged terrain and thick, fast-growing tropical jungles of the interior lands limited the amount of arable space, and the relative lack of industrial metals and other rare materials limited significant industrial growth. Making matters worse over time was that fact that the Gladiusian soil easily “burned out” when used for farming; its rich nutrients expended easily under constant harvests, a matter largely attributed to the planet‘s subtle seasonal changes. Gladius‘s largest industry thus changed to tourism and hospitality as the world became known as a vacation spot—the kind of place people visited or retired to, but few actually lived in.
@@ -86,10 +86,10 @@ planet:
       The capital city, Hyacles, is located on the northern shores of Garamond, and is also home to the planet‘s largest spaceport and transoceanic port. Gladius AquaLines, the planet‘s largest cruise line operator, offers weekly cruise services out of Hyacles that can take passengers as far away as the Burmaise Isles, in the southern hemisphere. Eenticing stopovers include the eastern coastal cities of Narava and Pasadenia, world-renowned resorts known for their casinos and nightlife.
     landmass:
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Garamond
         capital:
-          source: MWDA world profiles
+          source: DA:RW
           value: Hyacles
     event:
       - date: '2269-09-09'
@@ -114,13 +114,31 @@ planet:
         population: 1697802.0
       - date: '2310-01-01'
         population: 4146607.0
+      - date: '2317-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '2320-01-01'
         population: 8969668.0
       - date: '2330-01-01'
         population: 17520328.0
       - date: '2340-01-01'
         population: 31115760.0
+      - date: '2341-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FoS
       - date: '2341-11-24'
+        # administration: LA | Federation of Skye
+        # administration: LA | Federation of Skye
+        # administration: LA | Federation of Skye
+        # administration: LA | Federation of Skye
+        # administration: LA | Federation of Skye
+        # administration: LA | Federation of Skye
         faction:
           source: canon
           value:
@@ -278,8 +296,25 @@ planet:
       - date: '3031-01-01'
         socioIndustrial: B-B-D-C-B
       - date: '3040-01-01'
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
         population: 1249549052.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
         faction:
           source: canon
           value:
@@ -288,7 +323,25 @@ planet:
         socioIndustrial: A-A-C-B-B
       - date: '3050-01-01'
         population: 1259711502.0
+      - date: '3057-01-01'
+        # administration: LA | Skye March | Alcor Operational Area
+        # administration: LA | Skye March | Alcor Operational Area
+        # administration: LA | Skye March | Alcor Operational Area
+        # administration: LA | Skye March | Alcor Operational Area
+        # administration: LA | Skye March | Alcor Operational Area
+        # administration: LA | Skye March | Alcor Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '3057-09-18'
+        # administration: LA | Skye Province
+        # administration: LA | Skye Province
+        # administration: LA | Skye Province
+        # administration: LA | Skye Province
+        # administration: LA | Skye Province
+        # administration: LA | Skye Province
         faction:
           source: canon
           value:
@@ -299,7 +352,25 @@ planet:
         population: 1279389138.0
       - date: '3080-01-01'
         population: 1295870575.0
+      - date: '3081-01-01'
+        # administration: ROS | Prefecture IX
+        # administration: ROS | Prefecture IX
+        # administration: ROS | Prefecture IX
+        # administration: ROS | Prefecture IX
+        # administration: ROS | Prefecture IX
+        # administration: ROS | Prefecture IX
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ROS
       - date: '3081-07-23'
+        # administration: ROS | Prefecture IX
+        # administration: ROS | Prefecture IX
+        # administration: ROS | Prefecture IX
+        # administration: ROS | Prefecture IX
+        # administration: ROS | Prefecture IX
+        # administration: ROS | Prefecture IX
         faction:
           source: canon
           value:
@@ -318,6 +389,12 @@ planet:
         population: 1298464910.0
       - date: '3132-08-07'
         hpg: X
+      - date: '3135-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3135-10-01'
         faction:
           source: canon
@@ -325,7 +402,25 @@ planet:
             - IND
       - date: '3140-01-01'
         population: 1297426553.0
+      - date: '3145-01-01'
+        # administration: LA | Donegal Province
+        # administration: LA | Donegal Province
+        # administration: LA | Donegal Province
+        # administration: LA | Donegal Province
+        # administration: LA | Donegal Province
+        # administration: LA | Donegal Province
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '3145-01-05'
+        # administration: LA | Donegal Province
+        # administration: LA | Donegal Province
+        # administration: LA | Donegal Province
+        # administration: LA | Donegal Province
+        # administration: LA | Donegal Province
+        # administration: LA | Donegal Province
         faction:
           source: canon
           value:

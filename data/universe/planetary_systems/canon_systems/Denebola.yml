@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -20,10 +20,10 @@ sucsId: 690
 xcood: -37.843
 ycood: -1.621
 spectralType:
-  source: MWDA world profiles
+  source: DA:RW
   value: K0V
 primarySlot:
-  source: MWDA world profiles
+  source: DA:RW
   value: 5
 planet:
   - name: Ninigi
@@ -89,8 +89,7 @@ planet:
     icon: barren8
     pressure: THIN
     atmosphere: TOXIC_CAUSTIC
-    composition: Ammonia and Methane, plus trace amounts of Carbon Dioxide and Sulfuric
-      Acid
+    composition: Ammonia and Methane, plus trace amounts of Carbon Dioxide and Sulfuric Acid
     gravity: 0.45
     diameter: 7500
     density: 4.1818
@@ -104,31 +103,31 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.8
     sysPos:
-      source: MWDA world profiles
+      source: DA:RW
       value: 5
     icon: green29
     pressure:
-      source: MWDA world profiles
+      source: DA:RW
       value: STANDARD
     atmosphere:
-      source: MWDA world profiles
+      source: DA:RW
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: MWDA world profiles
+      source: DA:RW
       value: 1.13
     diameter: 15044
     density: 5.278789807137
     dayLength: 23
     yearLength: 1.1
     temperature:
-      source: MWDA world profiles
+      source: DA:RW
       value: 18
     water:
-      source: MWDA world profiles
+      source: DA:RW
       value: 67
     lifeForm:
-      source: MWDA world profiles
+      source: DA:RW
       value: MAMMAL
     desc: |-
       3135 - Denebola V, also known as Everwood or Lyracropis, is a cool world with untouched woodlands covering almost eighty percent of its equatorial and tropical zones. Three large landmasses straddle these regions, Neurasia, Zadipos, and Slovakia. Most of the population live in cities sited along the winding rivers that cut through the forested lands. The northern and southern regions, are virtually devoid of life, as polar caps extend well into the temperate zones. Denebola was the first of the early Terran colonies to declare its independence from the Alliance, before becoming part of the Terran Hegemony. After the fall of the Star League, Denebola, due to its position on the border of the Lyran Commonwealth and the Free Worlds League, changed ownership a number of times through the centuries.
@@ -136,16 +135,16 @@ planet:
       The influx of off-world immigrants with each change of ownership, mixed with the planet's past, has resulted in a cosmopolitan melting pot that made Denebola an ideal choice for a Prefecture capital when it became part of The Republic of the Sphere. Fallen Star, the continental capital of Zadipos, is nestled on the western coast and is home to a thriving fishing community and regional defense post. New Bonn covers the entire northern edge of the large inland Lake Diamond on Neurasia, and maintains several prime logging and farming industries. The official planetary capital, St. Cameron, is located on the eastern Rhyde Peninsula of Slovakia, and is home not only to Denebola‘s largest spaceport, but also the Prefecture capital building and headquarters of the planetary militia.
     landmass:
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Neurasia
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Slovakia
         capital:
-          source: MWDA world profiles
+          source: DA:RW
           value: St. Cameron
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Zadipos
     event:
       - date: '2117-02-28'
@@ -223,6 +222,12 @@ planet:
       - date: '2340-01-01'
         population: 1408707164.0
       - date: '2341-10-17'
+        # administration: TH | Tyrfing Province
+        # administration: TH | Tyrfing Province
+        # administration: TH | Tyrfing Province
+        # administration: TH | Tyrfing Province
+        # administration: TH | Tyrfing Province
+        # administration: TH | Tyrfing Province
         faction:
           source: canon
           value:
@@ -317,6 +322,18 @@ planet:
         population: 3680021681.0
       - date: '2760-01-01'
         population: 3713626895.0
+      - date: '2767-01-01'
+        # administration: AE | Tyrfing Province
+        # administration: AE | Tyrfing Province
+        # administration: AE | Tyrfing Province
+        # administration: AE | Tyrfing Province
+        # administration: AE | Tyrfing Province
+        # administration: AE | Tyrfing Province
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - AE
       - date: '2767-02-12'
         faction:
           source: canon
@@ -327,6 +344,12 @@ planet:
       - date: '2770-01-01'
         population: 3717147766.0
       - date: '2779-09-05'
+        # administration: TH | Tyrfing Province
+        # administration: TH | Tyrfing Province
+        # administration: TH | Tyrfing Province
+        # administration: TH | Tyrfing Province
+        # administration: TH | Tyrfing Province
+        # administration: TH | Tyrfing Province
         faction:
           source: canon
           value:
@@ -334,6 +357,18 @@ planet:
       - date: '2780-12-21'
         hpg: B
         population: 3621371169.0
+      - date: '2786-01-01'
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '2786-08-12'
         faction:
           source: canon
@@ -347,7 +382,25 @@ planet:
         population: 3525911242.0
       - date: '2820-01-01'
         population: 3524191286.0
+      - date: '2821-01-01'
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '2821-07-29'
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
         faction:
           source: canon
           value:
@@ -396,12 +449,30 @@ planet:
         population: 2645859200.0
       - date: '3020-01-01'
         population: 2599472708.0
+      - date: '3025-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FWL/LC
       - date: '3025-04-13'
         faction:
           source: canon
           value:
             - LA
             - FWL
+      - date: '3030-01-01'
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '3030-02-09'
         faction:
           source: canon
@@ -410,21 +481,63 @@ planet:
         population: 2582403188.0
       - date: '3035-01-01'
         socioIndustrial: D-F-C-C-C
+      - date: '3040-01-01'
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-09-08'
         population: 2607574382.0
         socioIndustrial: C-C-C-A-B
       - date: '3040-01-19'
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
         faction:
           source: canon
           value:
             - FC
       - date: '3050-01-01'
         population: 2633517575.0
+      - date: '3057-01-01'
+        # administration: LA | Skye March | Alcor Operational Area
+        # administration: LA | Skye March | Alcor Operational Area
+        # administration: LA | Skye March | Alcor Operational Area
+        # administration: LA | Skye March | Alcor Operational Area
+        # administration: LA | Skye March | Alcor Operational Area
+        # administration: LA | Skye March | Alcor Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '3057-10-01'
         faction:
           source: canon
           value:
             - FWL
+      - date: '3058-01-01'
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '3060-01-01'
         population: 2667710019.0
       - date: '3067-11-09'
@@ -432,6 +545,12 @@ planet:
           source: canon
           value:
             - LA
+      - date: '3068-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FWL
       - date: '3068-09-01'
         faction:
           source: canon
@@ -463,7 +582,25 @@ planet:
             - Stone
       - date: '3080-01-01'
         population: 2727049986.0
+      - date: '3081-01-01'
+        # administration: ROS | Prefecture VIII | Region Capital
+        # administration: ROS | Prefecture VIII | Region Capital
+        # administration: ROS | Prefecture VIII | Region Capital
+        # administration: ROS | Prefecture VIII | Region Capital
+        # administration: ROS | Prefecture VIII | Region Capital
+        # administration: ROS | Prefecture VIII | Region Capital
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ROS
       - date: '3081-03-24'
+        # administration: ROS | Prefecture VIII | Region Capital
+        # administration: ROS | Prefecture VIII | Region Capital
+        # administration: ROS | Prefecture VIII | Region Capital
+        # administration: ROS | Prefecture VIII | Region Capital
+        # administration: ROS | Prefecture VIII | Region Capital
+        # administration: ROS | Prefecture VIII | Region Capital
         faction:
           source: canon
           value:

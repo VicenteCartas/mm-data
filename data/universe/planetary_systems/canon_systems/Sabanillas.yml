@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,15 +16,16 @@
 # affiliated with Microsoft.
 
 id: Sabanillas
-sucsId: 2198
+sucsId: 2199
 xcood: 433.735
 ycood: -176.369
 spectralType:
   source: canon
   value: A3III
 primarySlot:
-  source: 'Handbook: House Davion, pg. 97'
+  source: 'HB:HD'
   value: 4
+  page: 97
 event:
   - date: '2733-08-06'
     zenithCharge: yes
@@ -99,32 +100,39 @@ planet:
     type: GIANT_TERRESTRIAL
     orbitalDist: 12.48
     sysPos:
-      source: 'Handbook: House Davion, pg. 97'
+      source: 'HB:HD'
       value: 4
+      page: 97
     icon: green23
     pressure:
-      source: 'Handbook: House Davion, pg. 97'
+      source: 'HB:HD'
       value: STANDARD
+      page: 97
     atmosphere:
-      source: 'Handbook: House Davion, pg. 97'
+      source: 'HB:HD'
       value: TAINTED_POISON
+      page: 97
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'Handbook: House Davion, pg. 97'
+      source: 'HB:HD'
       value: 1.12
+      page: 97
     diameter: 20806
     density: 3.782956748652
     dayLength: 18
     yearLength: 44.1
     temperature:
-      source: 'Handbook: House Davion, pg. 97'
+      source: 'HB:HD'
       value: 11
+      page: 97
     water:
-      source: 'Handbook: House Davion, pg. 97'
+      source: 'HB:HD'
       value: 26
+      page: 97
     lifeForm:
-      source: 'Handbook: House Davion, pg. 97'
+      source: 'HB:HD'
       value: MICROBE
+      page: 97
     desc: |-
       Sabanillas is yet another Federated Suns outback, lowly populated, with low industry and low technology, the planet’s economy is primarily supported by mining of rare metals, minerals and gems as well as a plentiful supply of more common ores. The planet itself is mostly lifeless and barely able to sustain any life, the human population relies substantially on imported goods. The world is almost entirely inhabited by miners and their families and has been that way for generations. Due primarily to a lack of interest in living there otherwise. However, a little known slogan for Sabanillas is “anything goes”. While the mining companies don’t pay well and the planet is not a comfortable planet to live on, they make sure the employees and their families are happy thanks to a constant supply of imported goods and other services that would be illegal on most planets.
 
@@ -145,22 +153,31 @@ planet:
       - name: New Copey
     satellite:
       - name:
-          source: 'Handbook: House Davion, pg. 97'
+          source: 'HB:HD'
           value: Alejandro's Moon
+          page: 97
         size: medium
         icon: rock7
       - name:
-          source: 'Handbook: House Davion, pg. 97'
+          source: 'HB:HD'
           value: Coronado
+          page: 97
         size: giant
         icon: rock12
       - name:
-          source: 'Handbook: House Davion, pg. 97'
+          source: 'HB:HD'
           value: Prostitute Rock
+          page: 97
         size: large
         icon: rock6
     event:
       - date: '2711-07-28'
+        # administration: FS | Crucis March | Minette Operational Area
+        # administration: FS | Crucis March | Minette Operational Area
+        # administration: FS | Crucis March | Minette Operational Area
+        # administration: FS | Crucis March | Minette Operational Area
+        # administration: FS | Crucis March | Minette Operational Area
+        # administration: FS | Crucis March | Minette Operational Area
         faction:
           source: canon
           value:
@@ -238,8 +255,25 @@ planet:
       - date: '3030-01-01'
         population: 421216.0
       - date: '3040-01-01'
+        # administration: FC | Crucis March | Minette Operational Area
+        # administration: FC | Crucis March | Minette Operational Area
+        # administration: FC | Crucis March | Minette Operational Area
+        # administration: FC | Crucis March | Minette Operational Area
+        # administration: FC | Crucis March | Minette Operational Area
+        # administration: FC | Crucis March | Minette Operational Area
         population: 422179.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
+        # administration: FC | Crucis March | Minette Operational Area
+        # administration: FC | Crucis March | Minette Operational Area
+        # administration: FC | Crucis March | Minette Operational Area
+        # administration: FC | Crucis March | Minette Operational Area
+        # administration: FC | Crucis March | Minette Operational Area
+        # administration: FC | Crucis March | Minette Operational Area
         faction:
           source: canon
           value:
@@ -253,10 +287,27 @@ planet:
       - date: '3060-01-01'
         population: 420792.0
       - date: '3067-01-01'
+        # administration: FS | Crucis March | Minette Operational Area
+        # administration: FS | Crucis March | Minette Operational Area
+        # administration: FS | Crucis March | Minette Operational Area
+        # administration: FS | Crucis March | Minette Operational Area
+        # administration: FS | Crucis March | Minette Operational Area
+        # administration: FS | Crucis March | Minette Operational Area
         population:
           source: canon
           value: 419800.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FS
       - date: '3067-04-20'
+        # administration: FS | Crucis March | Minette Operational Area
+        # administration: FS | Crucis March | Minette Operational Area
+        # administration: FS | Crucis March | Minette Operational Area
+        # administration: FS | Crucis March | Minette Operational Area
+        # administration: FS | Crucis March | Minette Operational Area
+        # administration: FS | Crucis March | Minette Operational Area
         faction:
           source: canon
           value:

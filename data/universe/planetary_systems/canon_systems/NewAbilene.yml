@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,15 +16,17 @@
 # affiliated with Microsoft.
 
 id: New Abilene
-sucsId: 1812
+sucsId: 1813
 xcood: -71.642
 ycood: -450.564
 spectralType:
-  source: Periphery (1ed), pg. 102
+  source: Per1e
   value: K2V
+  page: 102
 primarySlot:
-  source: Periphery (1ed), pg. 102
+  source: Per1e
   value: 5
+  page: 102
 event:
   - date: '2625-07-02'
     nadirCharge: yes
@@ -97,8 +99,9 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.49
     sysPos:
-      source: Periphery (1ed), pg. 102
+      source: Per1e
       value: 5
+      page: 102
     icon: green10
     pressure: STANDARD
     atmosphere: BREATHABLE
@@ -111,19 +114,10 @@ planet:
     temperature: 27
     water: 54
     lifeForm:
-      source: Periphery (1ed), pg. 102
+      source: Per1e
       value: MAMMAL
-    desc: 3025 - New Abilene was settled in 2581 and since that time the planet has
-      seen numerous battles between the Canopians and Taurians, vying for control
-      of this border world. The planet's economy is primarily focused on agriculture
-      with large tracts of land devoted to cattle and sheep farming. The planet is
-      divided into numerous large baronies controlled by wealthy landowners who tend
-      to own the largest herds on planet. There are numerous disputes between the
-      Barons over water rights and the best grazing areas. Escalation in these disputes
-      led to the hiring of "Range Riders", MechWarriors hired to serve the local barons,
-      which only led to further fighting along the edges of the baronies. Eventually
-      forces from the Magistracy were sent to act as frontier marshalls and to keep
-      the peace.
+      page: 102
+    desc: 3025 - New Abilene was settled in 2581 and since that time the planet has seen numerous battles between the Canopians and Taurians, vying for control of this border world. The planet's economy is primarily focused on agriculture with large tracts of land devoted to cattle and sheep farming. The planet is divided into numerous large baronies controlled by wealthy landowners who tend to own the largest herds on planet. There are numerous disputes between the Barons over water rights and the best grazing areas. Escalation in these disputes led to the hiring of "Range Riders", MechWarriors hired to serve the local barons, which only led to further fighting along the edges of the baronies. Eventually forces from the Magistracy were sent to act as frontier marshalls and to keep the peace.
     smallMoons: 4
     landmass:
       - name: Hughes
@@ -162,7 +156,19 @@ planet:
             - SL
       - date: '2590-01-01'
         population: 21720312.0
+      - date: '2596-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - MOC
       - date: '2597-03-21'
+        # administration: MOC | Canopus District
+        # administration: MOC | Canopus District
+        # administration: MOC | Canopus District
+        # administration: MOC | Canopus District
+        # administration: MOC | Canopus District
+        # administration: MOC | Canopus District
         faction:
           source: canon
           value:
@@ -276,6 +282,11 @@ planet:
         population:
           source: canon
           value: 114000000.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - MOC
       - date: '3025-09-01'
         faction:
           source: canon

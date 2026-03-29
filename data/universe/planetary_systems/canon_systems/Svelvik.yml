@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Svelvik
-sucsId: 2447
+sucsId: 2448
 xcood: 17.311
 ycood: 411.468
 spectralType: G4V
@@ -119,6 +119,18 @@ planet:
             - DC
       - date: '2340-01-01'
         population: 26819970.0
+      - date: '2341-01-01'
+        # administration: DC | Principality of Rasalhague
+        # administration: DC | Principality of Rasalhague
+        # administration: DC | Principality of Rasalhague
+        # administration: DC | Principality of Rasalhague
+        # administration: DC | Principality of Rasalhague
+        # administration: DC | Principality of Rasalhague
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - DC
       - date: '2350-01-01'
         population: 37333893.0
       - date: '2360-01-01'
@@ -157,6 +169,12 @@ planet:
       - date: '2500-01-01'
         population: 231376056.0
       - date: '2510-05-09'
+        # administration: DC | Rasalhague Military District | Radstadt Prefecture
+        # administration: DC | Rasalhague Military District | Radstadt Prefecture
+        # administration: DC | Rasalhague Military District | Radstadt Prefecture
+        # administration: DC | Rasalhague Military District | Radstadt Prefecture
+        # administration: DC | Rasalhague Military District | Radstadt Prefecture
+        # administration: DC | Rasalhague Military District | Radstadt Prefecture
         faction:
           source: canon
           value:
@@ -280,11 +298,27 @@ planet:
           value:
             - FRR
       - date: '3040-01-01'
+        # administration: FR | Rasalhague Province
+        # administration: FR | Rasalhague Province
+        # administration: FR | Rasalhague Province
+        # administration: FR | Rasalhague Province
+        # administration: FR | Rasalhague Province
+        # administration: FR | Rasalhague Province
         population: 204643767.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FR
       - date: '3045-01-01'
         socioIndustrial: C-C-A-C-C
       - date: '3050-01-01'
         population: 206246230.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CW
       - date: '3050-04-05'
         faction:
           source: canon
@@ -311,7 +345,25 @@ planet:
         population: 217102750.0
       - date: '3124-01-01'
         socioIndustrial: C-C-A-C-D
+      - date: '3130-01-01'
+        # administration: RD | Region 1
+        # administration: RD | Region 1
+        # administration: RD | Region 1
+        # administration: RD | Region 1
+        # administration: RD | Region 1
+        # administration: RD | Region 1
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - RD
       - date: '3130-07-31'
+        # administration: RD | Region 1
+        # administration: RD | Region 1
+        # administration: RD | Region 1
+        # administration: RD | Region 1
+        # administration: RD | Region 1
+        # administration: RD | Region 1
         faction:
           source: canon
           value:

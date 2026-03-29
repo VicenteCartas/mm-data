@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Richmond
-sucsId: 2151
+sucsId: 2152
 xcood: 130.778
 ycood: 455.449
 spectralType: G4V
@@ -43,8 +43,7 @@ planet:
     icon: barren16
     pressure: THIN
     atmosphere: TOXIC_CAUSTIC
-    composition: Nitrogen and Ammonia, plus trace amounts of Sulfur Dioxide and Hydrogen
-      Sulfide
+    composition: Nitrogen and Ammonia, plus trace amounts of Sulfur Dioxide and Hydrogen Sulfide
     gravity: 0.77
     diameter: 8500
     density: 6.3337
@@ -78,6 +77,12 @@ planet:
       - name: Old Frank
     event:
       - date: '2673-12-22'
+        # administration: DC | Rasalhague Military District | Trondheim Prefecture
+        # administration: DC | Rasalhague Military District | Trondheim Prefecture
+        # administration: DC | Rasalhague Military District | Trondheim Prefecture
+        # administration: DC | Rasalhague Military District | Trondheim Prefecture
+        # administration: DC | Rasalhague Military District | Trondheim Prefecture
+        # administration: DC | Rasalhague Military District | Trondheim Prefecture
         faction:
           source: canon
           value:
@@ -105,6 +110,12 @@ planet:
       - date: '2740-01-01'
         population: 59389263.0
       - date: '2750-02-28'
+        # administration: DC | Rasalhague Military District | Trondheim Prefecture
+        # administration: DC | Rasalhague Military District | Trondheim Prefecture
+        # administration: DC | Rasalhague Military District | Trondheim Prefecture
+        # administration: DC | Rasalhague Military District | Trondheim Prefecture
+        # administration: DC | Rasalhague Military District | Trondheim Prefecture
+        # administration: DC | Rasalhague Military District | Trondheim Prefecture
         faction:
           source: canon
           value:
@@ -177,6 +188,11 @@ planet:
         socioIndustrial: D-F-C-F-D
       - date: '3050-01-01'
         population: 59549771.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CSJ
       - date: '3050-03-01'
         faction:
           source: canon
@@ -188,6 +204,18 @@ planet:
           source: canon
           value:
             - CSJ
+      - date: '3059-01-01'
+        # administration: DC | Pesht Military District | Lonaconing Prefecture
+        # administration: DC | Pesht Military District | Lonaconing Prefecture
+        # administration: DC | Pesht Military District | Lonaconing Prefecture
+        # administration: DC | Pesht Military District | Lonaconing Prefecture
+        # administration: DC | Pesht Military District | Lonaconing Prefecture
+        # administration: DC | Pesht Military District | Lonaconing Prefecture
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - DC
       - date: '3059-09-18'
         faction:
           source: canon
@@ -200,7 +228,25 @@ planet:
           source: canon
           value:
             - CGB
+      - date: '3063-01-01'
+        # administration: DC | Pesht Military District | Albiero Prefecture
+        # administration: DC | Pesht Military District | Albiero Prefecture
+        # administration: DC | Pesht Military District | Albiero Prefecture
+        # administration: DC | Pesht Military District | Albiero Prefecture
+        # administration: DC | Pesht Military District | Albiero Prefecture
+        # administration: DC | Pesht Military District | Albiero Prefecture
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - DC
       - date: '3064-03-01'
+        # administration: DC | Pesht Military District | Albiero Prefecture
+        # administration: DC | Pesht Military District | Albiero Prefecture
+        # administration: DC | Pesht Military District | Albiero Prefecture
+        # administration: DC | Pesht Military District | Albiero Prefecture
+        # administration: DC | Pesht Military District | Albiero Prefecture
+        # administration: DC | Pesht Military District | Albiero Prefecture
         faction:
           source: canon
           value:
@@ -219,6 +265,12 @@ planet:
           value:
             - CGB
       - date: '3103-03-13'
+        # administration: RD | Region 1
+        # administration: RD | Region 1
+        # administration: RD | Region 1
+        # administration: RD | Region 1
+        # administration: RD | Region 1
+        # administration: RD | Region 1
         faction:
           source: canon
           value:

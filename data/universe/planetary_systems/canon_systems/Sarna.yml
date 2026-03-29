@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,15 +16,17 @@
 # affiliated with Microsoft.
 
 id: Sarna
-sucsId: 2243
+sucsId: 2244
 xcood: 55.009
 ycood: -154.88
 spectralType:
-  source: 'Handbook: House Liao, pg. 76'
+  source: 'HB:HL'
   value: F8IV
+  page: 76
 primarySlot:
-  source: 'Handbook: House Liao, pg. 76'
+  source: 'HB:HL'
   value: 3
+  page: 76
 event:
   - date: '2359-07-01'
     zenithCharge: yes
@@ -79,32 +81,39 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 3.36
     sysPos:
-      source: 'Handbook: House Liao, pg. 76'
+      source: 'HB:HL'
       value: 3
+      page: 76
     icon: green2
     pressure:
-      source: 'Handbook: House Liao, pg. 76'
+      source: 'HB:HL'
       value: STANDARD
+      page: 76
     atmosphere:
-      source: 'Handbook: House Liao, pg. 76'
+      source: 'HB:HL'
       value: BREATHABLE
+      page: 76
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'Handbook: House Liao, pg. 76'
+      source: 'HB:HL'
       value: 1.03
+      page: 76
     diameter: 11554
     density: 6.264768035832
     dayLength: 22
     yearLength: 6.3
     temperature:
-      source: 'Handbook: House Liao, pg. 76'
+      source: 'HB:HL'
       value: 41
+      page: 76
     water:
-      source: 'Handbook: House Liao, pg. 76'
+      source: 'HB:HL'
       value: 70
+      page: 76
     lifeForm:
-      source: 'Handbook: House Liao, pg. 76'
+      source: 'HB:HL'
       value: REPTILE
+      page: 76
     desc: |-
       Sarna was once the capital of the Sarna Supremacy until the Supremacy was absorbed into the Capellan Confederation and Sarna is now the capital of the Sarna Commonality. The planet was heavily industrialized and wealthy. Unfortunately, Sarna suffered tremendously during the Succession Wars, with most of its industry destroyed or relocated and its cities almost wiped out by bombing. By the late 3rd Succession War, Sarna remaining industrial capacity was centered around the mining of copper and iron ore deposits.
 
@@ -115,25 +124,32 @@ planet:
       Tengo Aerospace
     landmass:
       - name:
-          source: 'Objective Raids: Capellan Confederation'
+          source: 'OR'
           value: Canoshal
       - name:
-          source: 'Objective Raids: Capellan Confederation'
+          source: 'OR'
           value: Jacarlos
         capital:
-          source: 'Objective Raids: Capellan Confederation'
+          source: 'OR'
           value: Sarna
       - name:
-          source: 'Objective Raids: Capellan Confederation'
+          source: 'OR'
           value: Oahu
     satellite:
       - name:
-          source: 'Handbook: House Liao, pg. 76'
+          source: 'HB:HL'
           value: Grace
+          page: 76
         size: medium
         icon: rock5
     event:
       - date: '2176-03-20'
+        # administration: SSUP | National Capital
+        # administration: SSUP | National Capital
+        # administration: SSUP | National Capital
+        # administration: SSUP | National Capital
+        # administration: SSUP | National Capital
+        # administration: SSUP | National Capital
         faction:
           source: canon
           value:
@@ -181,6 +197,12 @@ planet:
       - date: '2360-01-01'
         population: 1249056593.0
       - date: '2367-07-01'
+        # administration: CC | Sarna Commonality | Region 4
+        # administration: CC | Sarna Commonality | Region 4
+        # administration: CC | Sarna Commonality | Region 4
+        # administration: CC | Sarna Commonality | Region 4
+        # administration: CC | Sarna Commonality | Region 4
+        # administration: CC | Sarna Commonality | Region 4
         faction:
           source: canon
           value:
@@ -334,6 +356,18 @@ planet:
           value: 2618000000.0
       - date: '3027-01-01'
         socioIndustrial: B-B-D-D-D
+      - date: '3030-01-01'
+        # administration: LA | Sarna March | Palos Operational Area
+        # administration: LA | Sarna March | Palos Operational Area
+        # administration: LA | Sarna March | Palos Operational Area
+        # administration: LA | Sarna March | Palos Operational Area
+        # administration: LA | Sarna March | Palos Operational Area
+        # administration: LA | Sarna March | Palos Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '3030-10-22'
         faction:
           source: canon
@@ -341,8 +375,25 @@ planet:
             - FS
         population: 2746345047.0
       - date: '3040-01-01'
+        # administration: FC | Sarna March | Palos Operational Area
+        # administration: FC | Sarna March | Palos Operational Area
+        # administration: FC | Sarna March | Palos Operational Area
+        # administration: FC | Sarna March | Palos Operational Area
+        # administration: FC | Sarna March | Palos Operational Area
+        # administration: FC | Sarna March | Palos Operational Area
         population: 2966607009.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
+        # administration: FC | Sarna March | Palos Operational Area
+        # administration: FC | Sarna March | Palos Operational Area
+        # administration: FC | Sarna March | Palos Operational Area
+        # administration: FC | Sarna March | Palos Operational Area
+        # administration: FC | Sarna March | Palos Operational Area
+        # administration: FC | Sarna March | Palos Operational Area
         faction:
           source: canon
           value:
@@ -353,7 +404,25 @@ planet:
           value: A-A-D-C-D
       - date: '3050-01-01'
         population: 3154567760.0
+      - date: '3057-01-01'
+        # administration: SSUP | National Capital
+        # administration: SSUP | National Capital
+        # administration: SSUP | National Capital
+        # administration: SSUP | National Capital
+        # administration: SSUP | National Capital
+        # administration: SSUP | National Capital
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - SSUP
       - date: '3057-11-01'
+        # administration: SSUP | National Capital
+        # administration: SSUP | National Capital
+        # administration: SSUP | National Capital
+        # administration: SSUP | National Capital
+        # administration: SSUP | National Capital
+        # administration: SSUP | National Capital
         faction:
           source: canon
           value:
@@ -365,7 +434,37 @@ planet:
           source: sucs
           value:
             - CC
+      - date: '3063-01-01'
+        # administration: SSUP | National Capital
+        # administration: SSUP | National Capital
+        # administration: SSUP | National Capital
+        # administration: SSUP | National Capital
+        # administration: SSUP | National Capital
+        # administration: SSUP | National Capital
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - SSUP
+      - date: '3067-01-01'
+        # administration: CC | Liao Commonality | Region 6
+        # administration: CC | Liao Commonality | Region 6
+        # administration: CC | Liao Commonality | Region 6
+        # administration: CC | Liao Commonality | Region 6
+        # administration: CC | Liao Commonality | Region 6
+        # administration: CC | Liao Commonality | Region 6
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CC
       - date: '3067-04-20'
+        # administration: CC | Liao Commonality | Region 6
+        # administration: CC | Liao Commonality | Region 6
+        # administration: CC | Liao Commonality | Region 6
+        # administration: CC | Liao Commonality | Region 6
+        # administration: CC | Liao Commonality | Region 6
+        # administration: CC | Liao Commonality | Region 6
         faction:
           source: canon
           value:

@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,15 +16,17 @@
 # affiliated with Microsoft.
 
 id: Foster
-sucsId: 2941
+sucsId: 2942
 xcood: 44.164
 ycood: 1733.181
 spectralType:
-  source: Warriors of Kerensky, pg. 112
+  source: WoK
   value: M9III
+  page: 112
 primarySlot:
-  source: Warriors of Kerensky, pg. 112
+  source: WoK
   value: 1
+  page: 112
 event:
   - date: '2810-01-28'
     zenithCharge: yes
@@ -35,32 +37,39 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.04
     sysPos:
-      source: Warriors of Kerensky, pg. 112
+      source: WoK
       value: 1
+      page: 112
     icon: green49
     pressure:
-      source: Warriors of Kerensky, pg. 112
+      source: WoK
       value: STANDARD
+      page: 112
     atmosphere:
-      source: Warriors of Kerensky, pg. 112
+      source: WoK
       value: TAINTED_POISON
+      page: 112
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: Warriors of Kerensky, pg. 112
+      source: WoK
       value: 1.0
+      page: 112
     diameter: 12795
     density: 5.492347279654
     dayLength: 24
     yearLength: 0.3
     temperature:
-      source: Warriors of Kerensky, pg. 112
+      source: WoK
       value: 25
+      page: 112
     water:
-      source: Warriors of Kerensky, pg. 112
+      source: WoK
       value: 50
+      page: 112
     lifeForm:
-      source: Warriors of Kerensky, pg. 112
+      source: WoK
       value: AMPHIBIAN
+      page: 112
     desc: No description available.
     smallMoons: 5
     landmass:
@@ -96,6 +105,12 @@ planet:
         population: 1444168.0
       - date: '2860-01-01'
         population: 2271359.0
+      - date: '2864-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CBS
       - date: '2864-11-08'
         faction:
           source: canon
@@ -164,6 +179,12 @@ planet:
             - CCO
       - date: '3060-01-01'
         population: 11107675.0
+      - date: '3063-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CLAN
       - date: '3070-01-01'
         population: 11240393.0
       - date: '3071-07-15'
@@ -206,6 +227,12 @@ planet:
             - CGS
       - date: '3074-01-01'
         socioIndustrial: A-A-D-B-C
+      - date: '3075-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CGS
       - date: '3075-10-01'
         faction:
           source: canon
@@ -218,6 +245,12 @@ planet:
             - CSA
       - date: '3080-01-01'
         population: 11353360.0
+      - date: '3085-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CCC
       - date: '3085-04-07'
         faction:
           source: canon

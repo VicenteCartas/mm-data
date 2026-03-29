@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,15 +16,17 @@
 # affiliated with Microsoft.
 
 id: Celano
-sucsId: 2889
+sucsId: 2890
 xcood: 323.458
 ycood: -484.147
 spectralType:
-  source: Periphery (1ed), pg. 85
+  source: Per1e
   value: F4V
+  page: 85
 primarySlot:
-  source: Periphery (1ed), pg. 85
+  source: Per1e
   value: 4
+  page: 85
 planet:
   - name: Scrovegni
     type: ICE_GIANT
@@ -75,8 +77,9 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 2.24
     sysPos:
-      source: Periphery (1ed), pg. 85
+      source: Per1e
       value: 4
+      page: 85
     icon: wet1
     pressure:
       source: canon
@@ -128,6 +131,12 @@ planet:
         population: 50350.0
         socioIndustrial: C-D-C-D-C
       - date: '3025-08-10'
+        # administration: TC | Farseer Union
+        # administration: TC | Farseer Union
+        # administration: TC | Farseer Union
+        # administration: TC | Farseer Union
+        # administration: TC | Farseer Union
+        # administration: TC | Farseer Union
         faction:
           source: canon
           value:
@@ -155,6 +164,12 @@ planet:
         population: 7551443.0
       - date: '3080-01-01'
         population: 7595369.0
+      - date: '3085-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3090-01-01'
         population: 7607531.0
       - date: '3098-01-01'

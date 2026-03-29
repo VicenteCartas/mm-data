@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -20,11 +20,13 @@ sucsId: 417
 xcood: 18.092
 ycood: -341.994
 spectralType:
-  source: House Liao, pg. 134
+  source: HLSB
   value: G8V
+  page: 134
 primarySlot:
-  source: House Liao, pg. 134
+  source: HLSB
   value: 3
+  page: 134
 event:
   - date: '2351-01-04'
     nadirCharge: yes
@@ -64,8 +66,9 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.8
     sysPos:
-      source: House Liao, pg. 134
+      source: HLSB
       value: 3
+      page: 134
     icon: green1
     pressure: STANDARD
     atmosphere: BREATHABLE
@@ -78,8 +81,9 @@ planet:
     temperature: 34
     water: 47
     lifeForm:
-      source: House Liao, pg. 134
+      source: HLSB
       value: REPTILE
+      page: 134
     desc: |-
       The Confederation captured Buenos Aires from the Free World League during the Second Succession War and has managed to retain control despite numerous FWL attempts to retake it. Buenos Aires is an important warm-water, agricultural planet with much of the food production in subterranean and offshore/hydroponic centres through-out the southern hemisphere. The local outer-world commercial trade centres, established by FWL entrepreneurs, still operate in Buenos Aires City. The planet is garrisoned by a permanent Sian Commonality reserve regiment augmented by numerous local militia forces.
 
@@ -121,6 +125,12 @@ planet:
       - date: '2360-01-01'
         population: 158562798.0
       - date: '2367-07-01'
+        # administration: CC | Sian Commonality | Region 8
+        # administration: CC | Sian Commonality | Region 8
+        # administration: CC | Sian Commonality | Region 8
+        # administration: CC | Sian Commonality | Region 8
+        # administration: CC | Sian Commonality | Region 8
+        # administration: CC | Sian Commonality | Region 8
         faction:
           source: canon
           value:
@@ -289,6 +299,12 @@ planet:
             - DA
             - CC
       - date: '3034-07-17'
+        # administration: CC | Sian Commonality | Region 8
+        # administration: CC | Sian Commonality | Region 8
+        # administration: CC | Sian Commonality | Region 8
+        # administration: CC | Sian Commonality | Region 8
+        # administration: CC | Sian Commonality | Region 8
+        # administration: CC | Sian Commonality | Region 8
         faction:
           source: canon
           value:
@@ -303,6 +319,12 @@ planet:
         population: 460292522.0
       - date: '3070-01-01'
         population: 359546411.0
+      - date: '3075-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ABN
       - date: '3080-01-01'
         population: 360626670.0
       - date: '3090-01-01'

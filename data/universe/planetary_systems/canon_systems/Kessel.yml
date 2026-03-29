@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: Kessel
-sucsId: 1335
+sucsId: 1336
 xcood: -13.136
 ycood: 83.708
 spectralType:
-  source: House Kurita
+  source: HB:HK
   value: G0V
 primarySlot:
-  source: House Kurita
+  source: HB:HK
   value: 2
 event:
   - date: '2366-08-31'
@@ -54,31 +54,31 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 1.76
     sysPos:
-      source: House Kurita
+      source: HB:HK
       value: 2
     icon: wet21
     pressure:
-      source: MWDA world profiles
+      source: DA:RW
       value: STANDARD
     atmosphere:
-      source: MWDA world profiles
+      source: DA:RW
       value: TAINTED_POISON
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: MWDA world profiles
+      source: DA:RW
       value: 1.21
     diameter: 12840
     density: 6.622418757349
     dayLength: 27
     yearLength: 2.6
     temperature:
-      source: MWDA world profiles
+      source: DA:RW
       value: 42
     water:
-      source: MWDA world profiles
+      source: DA:RW
       value: 81
     lifeForm:
-      source: House Kurita
+      source: HB:HK
       value: MAMMAL
     desc: |-
       Under the sway of the Federation of Skye, known for shrewd business practices and a preponderance of heavy industrial might, Kessel was already a valuable manufacturing center even before the dawn of the Lyran Commonwealth. It therefore comes as little surprise that the Draconis Combine, a poor realm—economically, if not militarily—would covet such a prize so close to their border, when the Star League collapsed and war broke out across the Inner Sphere. House Kurita captured Kessel almost incidentally, during a drive toward Skye itself, and though the forces of House Steiner ultimately succeeded in driving back the Combine invaders, they never managed to reclaim several lost planets, including this one. The Combine saw great untapped potential in this mineral - and metal - rich world, with its many mining, refining, and manufacturing complexes that produced everything short of BattleMechs and DropShips. Thus, as Steiner forces continued to hit back over the centuries, making several failed attempts to retake worlds such as Kessel, the Combine took advantage of their possession, loosening industrial standards that protected the environment to increase output for their military needs. Freed of the constraints found on other former Isle of Skye worlds, or any other industrial/corporate niceties, for that matter, the industries on Kessel turned to such questionable practices as strip mining and chemical dumping. Worse still, these practices also attracted the attention of the yakuza, the dominant underworld force of the Draconis Combine. Over the centuries, the results of these trends were a poisoned biosphere and a poisoned society. Crime was rampant, and might made right, except in those areas where the well-armed and equipped nobility resided. Visitors to this world are still cautioned to keep respirators on when outside their vehicles and buildings, to protect against the still-lingering toxins in the local air.
@@ -90,25 +90,25 @@ planet:
       Kessel‘s capital city is Sverdlovsk, located on the northwestern continent of Novgorod. The southern continent, Gershtad, is home to the planet‘s largest spaceport and AtmoClean Enterprises, commissioned after the 3070s, prototype air purification plant. Northeast of Gershtad is the Lobopov continent, home to what little remains of Kessel‘s untamed wilderness, and several defunct strip-mining operations.
     landmass:
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Gershtad
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Lobopov
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Novgorod
         capital:
-          source: MWDA world profiles
+          source: DA:RW
           value: Sverdlovsk
     satellite:
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Kiev
         size: giant
         icon: rock11
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Svoboda
         size: medium
         icon: rock8
@@ -159,6 +159,12 @@ planet:
         population: 530770759.0
       - date: '2310-01-01'
         population: 647298303.0
+      - date: '2319-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FoS
       - date: '2319-03-19'
         faction:
           source: canon
@@ -171,6 +177,12 @@ planet:
       - date: '2340-01-01'
         population: 1012802931.0
       - date: '2341-07-31'
+        # administration: LA | Federation of Skye
+        # administration: LA | Federation of Skye
+        # administration: LA | Federation of Skye
+        # administration: LA | Federation of Skye
+        # administration: LA | Federation of Skye
+        # administration: LA | Federation of Skye
         faction:
           source: canon
           value:
@@ -288,6 +300,12 @@ planet:
       - date: '2860-01-01'
         population: 2883896864.0
       - date: '2866-12-01'
+        # administration: DC | Dieron Military District | Kessel Prefecture
+        # administration: DC | Dieron Military District | Kessel Prefecture
+        # administration: DC | Dieron Military District | Kessel Prefecture
+        # administration: DC | Dieron Military District | Kessel Prefecture
+        # administration: DC | Dieron Military District | Kessel Prefecture
+        # administration: DC | Dieron Military District | Kessel Prefecture
         faction:
           source: canon
           value:
@@ -351,6 +369,12 @@ planet:
             - DC
             - WOB
       - date: '3069-05-26'
+        # administration: DC | Dieron Military District | Kessel Prefecture
+        # administration: DC | Dieron Military District | Kessel Prefecture
+        # administration: DC | Dieron Military District | Kessel Prefecture
+        # administration: DC | Dieron Military District | Kessel Prefecture
+        # administration: DC | Dieron Military District | Kessel Prefecture
+        # administration: DC | Dieron Military District | Kessel Prefecture
         faction:
           source: canon
           value:
@@ -359,7 +383,25 @@ planet:
         population: 2001209891.0
       - date: '3080-01-01'
         population: 2018090854.0
+      - date: '3081-01-01'
+        # administration: ROS | Prefecture I
+        # administration: ROS | Prefecture I
+        # administration: ROS | Prefecture I
+        # administration: ROS | Prefecture I
+        # administration: ROS | Prefecture I
+        # administration: ROS | Prefecture I
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ROS
       - date: '3081-05-29'
+        # administration: ROS | Prefecture I
+        # administration: ROS | Prefecture I
+        # administration: ROS | Prefecture I
+        # administration: ROS | Prefecture I
+        # administration: ROS | Prefecture I
+        # administration: ROS | Prefecture I
         faction:
           source: canon
           value:
@@ -380,6 +422,12 @@ planet:
         hpg:
           source: canon
           value: X
+      - date: '3135-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3135-10-01'
         faction:
           source: canon
@@ -387,7 +435,25 @@ planet:
             - IND
       - date: '3140-01-01'
         population: 2170921958.0
+      - date: '3145-01-01'
+        # administration: RD | Region 3 | Vega Protectorate
+        # administration: RD | Region 3 | Vega Protectorate
+        # administration: RD | Region 3 | Vega Protectorate
+        # administration: RD | Region 3 | Vega Protectorate
+        # administration: RD | Region 3 | Vega Protectorate
+        # administration: RD | Region 3 | Vega Protectorate
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - RD
       - date: '3145-11-06'
+        # administration: RD | Region 3 | Vega Protectorate
+        # administration: RD | Region 3 | Vega Protectorate
+        # administration: RD | Region 3 | Vega Protectorate
+        # administration: RD | Region 3 | Vega Protectorate
+        # administration: RD | Region 3 | Vega Protectorate
+        # administration: RD | Region 3 | Vega Protectorate
         faction:
           source: canon
           value:
@@ -590,6 +656,12 @@ planet:
       - date: '2860-01-01'
         population: 1023015402.0
       - date: '2866-12-01'
+        # administration: DC | Dieron Military District | Kessel Prefecture
+        # administration: DC | Dieron Military District | Kessel Prefecture
+        # administration: DC | Dieron Military District | Kessel Prefecture
+        # administration: DC | Dieron Military District | Kessel Prefecture
+        # administration: DC | Dieron Military District | Kessel Prefecture
+        # administration: DC | Dieron Military District | Kessel Prefecture
         faction:
           source: canon
           value:
@@ -651,6 +723,12 @@ planet:
             - DC
             - WOB
       - date: '3069-05-26'
+        # administration: DC | Dieron Military District | Kessel Prefecture
+        # administration: DC | Dieron Military District | Kessel Prefecture
+        # administration: DC | Dieron Military District | Kessel Prefecture
+        # administration: DC | Dieron Military District | Kessel Prefecture
+        # administration: DC | Dieron Military District | Kessel Prefecture
+        # administration: DC | Dieron Military District | Kessel Prefecture
         faction:
           source: canon
           value:

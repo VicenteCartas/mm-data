@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,12 +16,13 @@
 # affiliated with Microsoft.
 
 id: Helen
-sucsId: 1083
+sucsId: 1084
 xcood: 57.454
 ycood: 10.034
 spectralType:
-  source: Star League, pg. 173
+  source: SLSB
   value: M0V
+  page: 173
 primarySlot: 5
 event:
   - date: '2364-06-21'
@@ -98,67 +99,54 @@ planet:
     sysPos: 5
     icon: green17
     pressure:
-      source: MWDA world profiles
+      source: DA:RW
       value: STANDARD
     atmosphere:
-      source: MWDA world profiles
+      source: DA:RW
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: MWDA world profiles
+      source: DA:RW
       value: 0.92
     diameter: 10655
     density: 6.068130560168
     dayLength: 26
     yearLength: 0.7
     temperature:
-      source: MWDA world profiles
+      source: DA:RW
       value: 33
     water:
-      source: MWDA world profiles
+      source: DA:RW
       value: 46
     lifeForm:
-      source: Star League, pg. 173
+      source: SLSB
       value: MAMMAL
-    desc: A lush tropical world settled by predominantly Greek colonists, Helen‘s
-      great claim to fame has been its remarkably beautiful and extremely diverse
-      undersea wildlife. Though land covers just over half the planet surface, broken
-      into eleven large island-continents and numerous smaller islands, Helen‘s oceans
-      are surprisingly deep, giving rise to a wide variety of sea life, including
-      the Great Helenic Whale. This nonmammalian shark-like predator can grow to approximately
-      four times the size of Terra‘s Great White, and dominates the waters of Helen‘s
-      southern hemisphere. In the days of the Star League, a sophisticated floating
-      marine-life research platform dubbed Aquanis once studied the rich undersea
-      wildlife of this world, but was sunk during the invasions brought on after the
-      fall of the Star League. Rediscovered almost three kilometers below the surface
-      of the North Helenic Ocean, off the coast of the Persephonie continent, this
-      sunken city has become one of Helen‘s major tourist attractions. The planetary
-      capital of Konstance is located on Joppa, the largest of Helen‘s continents,
-      along with the bulk of the planet‘s lumber industries, the spaceport city of
-      Corinth, and the military capital of Montague.
+      page: 173
+    desc: A lush tropical world settled by predominantly Greek colonists, Helen‘s great claim to fame has been its remarkably beautiful and extremely diverse undersea wildlife. Though land covers just over half the planet surface, broken into eleven large island-continents and numerous smaller islands, Helen‘s oceans are surprisingly deep, giving rise to a wide variety of sea life, including the Great Helenic Whale. This nonmammalian shark-like predator can grow to approximately four times the size of Terra‘s Great White, and dominates the waters of Helen‘s southern hemisphere. In the days of the Star League, a sophisticated floating marine-life research platform dubbed Aquanis once studied the rich undersea wildlife of this world, but was sunk during the invasions brought on after the fall of the Star League. Rediscovered almost three kilometers below the surface of the North Helenic Ocean, off the coast of the Persephonie continent, this sunken city has become one of Helen‘s major tourist attractions. The planetary capital of Konstance is located on Joppa, the largest of Helen‘s continents, along with the bulk of the planet‘s lumber industries, the spaceport city of Corinth, and the military capital of Montague.
     landmass:
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Joppa
         capital:
-          source: Star League, pg. 173
+          source: SLSB
           value: Parnassus City
+          page: 173
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Persephonie
     satellite:
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Agamemnon
         size: large
         icon: rock2
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Hector
         size: medium
         icon: rock16
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Heracles
         size: medium
         icon: rock9
@@ -187,6 +175,12 @@ planet:
       - date: '2310-01-01'
         population: 2487470.0
       - date: '2315-01-18'
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
         faction:
           source: canon
           value:
@@ -288,6 +282,18 @@ planet:
         population: 29961496.0
       - date: '2760-01-01'
         population: 29895970.0
+      - date: '2767-01-01'
+        # administration: AE | Lockdale Province
+        # administration: AE | Lockdale Province
+        # administration: AE | Lockdale Province
+        # administration: AE | Lockdale Province
+        # administration: AE | Lockdale Province
+        # administration: AE | Lockdale Province
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - AE
       - date: '2767-11-18'
         faction:
           source: canon
@@ -298,6 +304,12 @@ planet:
         hpg: X
         population: 28083038.0
       - date: '2779-12-03'
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
         faction:
           source: canon
           value:
@@ -305,7 +317,25 @@ planet:
       - date: '2780-08-27'
         hpg: B
         population: 27223812.0
+      - date: '2786-01-01'
+        # administration: DC | Benjamin Military District | Ashio Prefecture
+        # administration: DC | Benjamin Military District | Ashio Prefecture
+        # administration: DC | Benjamin Military District | Ashio Prefecture
+        # administration: DC | Benjamin Military District | Ashio Prefecture
+        # administration: DC | Benjamin Military District | Ashio Prefecture
+        # administration: DC | Benjamin Military District | Ashio Prefecture
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - DC
       - date: '2786-05-27'
+        # administration: DC | Dieron Military District | Addicks Prefecture
+        # administration: DC | Dieron Military District | Addicks Prefecture
+        # administration: DC | Dieron Military District | Addicks Prefecture
+        # administration: DC | Dieron Military District | Addicks Prefecture
+        # administration: DC | Dieron Military District | Addicks Prefecture
+        # administration: DC | Dieron Military District | Addicks Prefecture
         faction:
           source: canon
           value:
@@ -329,6 +359,12 @@ planet:
       - date: '2860-01-01'
         population: 3394490.0
       - date: '2870-02-11'
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
         faction:
           source: canon
           value:
@@ -373,8 +409,25 @@ planet:
         population: 555997.0
         socioIndustrial: B-C-B-B-C
       - date: '3040-01-01'
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
         population: 5095246.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
         faction:
           source: canon
           value:
@@ -385,7 +438,25 @@ planet:
         population: 47698920.0
       - date: '3060-01-01'
         population: 304323798.0
+      - date: '3067-01-01'
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FS
       - date: '3067-04-20'
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
         faction:
           source: canon
           value:
@@ -403,6 +474,12 @@ planet:
           value:
             - Stone
             - WOB
+      - date: '3079-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - Stone
       - date: '3079-05-14'
         faction:
           source: canon
@@ -410,7 +487,25 @@ planet:
             - Stone
       - date: '3080-01-01'
         population: 1550240261.0
+      - date: '3081-01-01'
+        # administration: ROS | Prefecture III
+        # administration: ROS | Prefecture III
+        # administration: ROS | Prefecture III
+        # administration: ROS | Prefecture III
+        # administration: ROS | Prefecture III
+        # administration: ROS | Prefecture III
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ROS
       - date: '3081-04-14'
+        # administration: ROS | Prefecture III
+        # administration: ROS | Prefecture III
+        # administration: ROS | Prefecture III
+        # administration: ROS | Prefecture III
+        # administration: ROS | Prefecture III
+        # administration: ROS | Prefecture III
         faction:
           source: canon
           value:
@@ -428,6 +523,12 @@ planet:
         population: 1618354555.0
       - date: '3132-08-07'
         hpg: X
+      - date: '3135-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3135-10-01'
         faction:
           source: canon
@@ -435,7 +536,25 @@ planet:
             - IND
       - date: '3140-01-01'
         population: 1642812852.0
+      - date: '3145-01-01'
+        # administration: DC | Dieron Military District | Al Na'ir Prefecture
+        # administration: DC | Dieron Military District | Al Na'ir Prefecture
+        # administration: DC | Dieron Military District | Al Na'ir Prefecture
+        # administration: DC | Dieron Military District | Al Na'ir Prefecture
+        # administration: DC | Dieron Military District | Al Na'ir Prefecture
+        # administration: DC | Dieron Military District | Al Na'ir Prefecture
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - DC
       - date: '3145-01-31'
+        # administration: DC | Dieron Military District | Al Na'ir Prefecture
+        # administration: DC | Dieron Military District | Al Na'ir Prefecture
+        # administration: DC | Dieron Military District | Al Na'ir Prefecture
+        # administration: DC | Dieron Military District | Al Na'ir Prefecture
+        # administration: DC | Dieron Military District | Al Na'ir Prefecture
+        # administration: DC | Dieron Military District | Al Na'ir Prefecture
         faction:
           source: canon
           value:

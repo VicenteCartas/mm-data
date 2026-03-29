@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: Ningpo
-sucsId: 1872
+sucsId: 1873
 xcood: 54.279
 ycood: -66.743
 spectralType:
-  source: MWDA world profiles
+  source: DA:RW
   value: G2III
 primarySlot:
-  source: MWDA world profiles
+  source: DA:RW
   value: 4
 event:
   - date: '2352-03-13'
@@ -89,31 +89,31 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 1.6
     sysPos:
-      source: MWDA world profiles
+      source: DA:RW
       value: 4
     icon: wet20
     pressure:
-      source: MWDA world profiles
+      source: DA:RW
       value: STANDARD
     atmosphere:
-      source: MWDA world profiles
+      source: DA:RW
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: MWDA world profiles
+      source: DA:RW
       value: 1.0
     diameter: 13255
     density: 5.30177108943
     dayLength: 25
     yearLength: 2.3
     temperature:
-      source: MWDA world profiles
+      source: DA:RW
       value: 38
     water:
-      source: MWDA world profiles
+      source: DA:RW
       value: 78
     lifeForm:
-      source: MWDA world profiles
+      source: DA:RW
       value: BIRD
     desc: |-
       3135 - Ningpo is a temperate world of fertile ground and beautiful seas. The planet became a moderate supplier of agricultural products to neighboring worlds like Pleione and Poznan. Ningpo has two major continents, Qingyuan and Liampo, and many islands that are home to many exotic birds. Qingyuan covers most of the northern hemisphere, and is composed of 85 percent farmland with rolling hills and dales. Ningbo, the planetary capital, is located on the southeast coast of Qingyuan. Yalosha Peninsula is located on the southwest coast of Qingyuan and flanked by a large mountain range called Yalo Rue. It is one of the most beautiful places on the planet. The mountains and the peninsula are covered with lush green forests that the timber industry has been selectively farming and using to produce some of the most beautiful furniture in the Inner Sphere. It is rumored that the Celestial Throne of the Capellan Confederation is made of Ningpo timber.
@@ -123,17 +123,17 @@ planet:
       Like other worlds, Ningpo was not immune to the effects of the Word of Blake's Jihad. Though Ningpo did not suffer a direct assault, a full generation of the planet's brightest and best was lost helping to expel the Blakists from the Confederation as many of the planet's young men and women were "volunteered" into the Confederation military.
     landmass:
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Liampo
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Qingyuan
         capital:
-          source: MWDA world profiles
+          source: DA:RW
           value: Ningbo
     satellite:
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Ningxian
         size: medium
         icon: oddmoon3
@@ -167,11 +167,29 @@ planet:
         population: 86852231.0
       - date: '2340-01-01'
         population: 131906651.0
+      - date: '2341-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '2350-01-01'
         population: 189643860.0
       - date: '2360-01-01'
         population: 260089043.0
+      - date: '2366-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - TGU
       - date: '2367-07-01'
+        # administration: CC | Tikonov Commonality | Region 3
+        # administration: CC | Tikonov Commonality | Region 3
+        # administration: CC | Tikonov Commonality | Region 3
+        # administration: CC | Tikonov Commonality | Region 3
+        # administration: CC | Tikonov Commonality | Region 3
+        # administration: CC | Tikonov Commonality | Region 3
         faction:
           source: canon
           value:
@@ -261,6 +279,18 @@ planet:
         population: 1894891800.0
       - date: '2760-01-01'
         population: 1904942776.0
+      - date: '2767-01-01'
+        # administration: AE | Terra Firma Province
+        # administration: AE | Terra Firma Province
+        # administration: AE | Terra Firma Province
+        # administration: AE | Terra Firma Province
+        # administration: AE | Terra Firma Province
+        # administration: AE | Terra Firma Province
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - AE
       - date: '2767-08-13'
         faction:
           source: canon
@@ -269,6 +299,12 @@ planet:
       - date: '2770-01-01'
         population: 1916304850.0
       - date: '2779-09-10'
+        # administration: CC | Tikonov Commonality | Region 3
+        # administration: CC | Tikonov Commonality | Region 3
+        # administration: CC | Tikonov Commonality | Region 3
+        # administration: CC | Tikonov Commonality | Region 3
+        # administration: CC | Tikonov Commonality | Region 3
+        # administration: CC | Tikonov Commonality | Region 3
         faction:
           source: canon
           value:
@@ -276,6 +312,12 @@ planet:
       - date: '2780-01-01'
         population: 1936768812.0
       - date: '2790-05-30'
+        # administration: CC | Tikonov Commonality | Region 10
+        # administration: CC | Tikonov Commonality | Region 10
+        # administration: CC | Tikonov Commonality | Region 10
+        # administration: CC | Tikonov Commonality | Region 10
+        # administration: CC | Tikonov Commonality | Region 10
+        # administration: CC | Tikonov Commonality | Region 10
         faction:
           source: canon
           value:
@@ -330,6 +372,18 @@ planet:
         population: 1234217582.0
       - date: '3020-01-01'
         population: 1237593798.0
+      - date: '3030-01-01'
+        # administration: LA | Sarna March | Tikonov Operational Area
+        # administration: LA | Sarna March | Tikonov Operational Area
+        # administration: LA | Sarna March | Tikonov Operational Area
+        # administration: LA | Sarna March | Tikonov Operational Area
+        # administration: LA | Sarna March | Tikonov Operational Area
+        # administration: LA | Sarna March | Tikonov Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '3030-04-24'
         faction:
           source: canon
@@ -339,8 +393,25 @@ planet:
       - date: '3036-01-01'
         socioIndustrial: D-D-C-C-D
       - date: '3040-01-01'
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
         population: 1251778757.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
         faction:
           source: canon
           value:
@@ -351,14 +422,44 @@ planet:
         socioIndustrial: B-B-C-B-D
       - date: '3050-01-01'
         population: 1261580809.0
+      - date: '3057-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3057-11-01'
         faction:
           source: canon
           value:
             - CM
+      - date: '3058-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3060-01-01'
         population: 1274897196.0
+      - date: '3063-01-01'
+        # administration: CC | Liao Commonality | Region 2
+        # administration: CC | Liao Commonality | Region 2
+        # administration: CC | Liao Commonality | Region 2
+        # administration: CC | Liao Commonality | Region 2
+        # administration: CC | Liao Commonality | Region 2
+        # administration: CC | Liao Commonality | Region 2
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CC
       - date: '3065-05-27'
+        # administration: CC | Liao Commonality | Region 2
+        # administration: CC | Liao Commonality | Region 2
+        # administration: CC | Liao Commonality | Region 2
+        # administration: CC | Liao Commonality | Region 2
+        # administration: CC | Liao Commonality | Region 2
+        # administration: CC | Liao Commonality | Region 2
         faction:
           source: canon
           value:
@@ -377,13 +478,37 @@ planet:
             - CC
             - WOB
       - date: '3077-08-18'
+        # administration: CC | Liao Commonality | Region 1
+        # administration: CC | Liao Commonality | Region 1
+        # administration: CC | Liao Commonality | Region 1
+        # administration: CC | Liao Commonality | Region 1
+        # administration: CC | Liao Commonality | Region 1
+        # administration: CC | Liao Commonality | Region 1
         faction:
           source: canon
           value:
             - CC
       - date: '3080-01-01'
         population: 1303777141.0
+      - date: '3085-01-01'
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ROS
       - date: '3085-07-15'
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
         faction:
           source: canon
           value:
@@ -402,7 +527,25 @@ planet:
         socioIndustrial: B-B-C-B-D
       - date: '3132-08-07'
         hpg: X
+      - date: '3135-01-01'
+        # administration: CC | Liao Commonality | Region 1
+        # administration: CC | Liao Commonality | Region 1
+        # administration: CC | Liao Commonality | Region 1
+        # administration: CC | Liao Commonality | Region 1
+        # administration: CC | Liao Commonality | Region 1
+        # administration: CC | Liao Commonality | Region 1
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CC
       - date: '3135-05-02'
+        # administration: CC | Tikonov Commonality | Region 6
+        # administration: CC | Tikonov Commonality | Region 6
+        # administration: CC | Tikonov Commonality | Region 6
+        # administration: CC | Tikonov Commonality | Region 6
+        # administration: CC | Tikonov Commonality | Region 6
+        # administration: CC | Tikonov Commonality | Region 6
         faction:
           source: canon
           value:

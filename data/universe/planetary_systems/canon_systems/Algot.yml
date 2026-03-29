@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -20,11 +20,13 @@ sucsId: 71
 xcood: 85.816
 ycood: -82.771
 spectralType:
-  source: House Liao, pg. 153
+  source: HLSB
   value: G2IV
+  page: 153
 primarySlot:
-  source: House Liao, pg. 153
+  source: HLSB
   value: 5
+  page: 153
 event:
   - date: '2360-08-30'
     zenithCharge: yes
@@ -97,32 +99,34 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 1.6
     sysPos:
-      source: House Liao, pg. 153
+      source: HLSB
       value: 5
+      page: 153
     icon: green12
     pressure:
-      source: MWDA world profiles
+      source: DA:RW
       value: STANDARD
     atmosphere:
-      source: MWDA world profiles
+      source: DA:RW
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: MWDA world profiles
+      source: DA:RW
       value: 1.1
     diameter: 13420
     density: 5.760395838504
     dayLength: 22
     yearLength: 2.3
     temperature:
-      source: MWDA world profiles
+      source: DA:RW
       value: 48
     water:
-      source: MWDA world profiles
+      source: DA:RW
       value: 56
     lifeForm:
-      source: House Liao, pg. 153
+      source: HLSB
       value: PLANT
+      page: 153
     desc: |-
       3135 - One of the first planets settled by early Tikonov explorers, by the beginning of the 29th century Algot was one of the most populous planets in the region. Algot was a major industrial centre specialising in computer and electronic sciences. Both the technological industry and population have declined significantly since.
 
@@ -133,14 +137,14 @@ planet:
       During the Jihad, Word of Blake used disabling poisons to subdue the planet. The Blakists took the world with minimal force, though they did firebomb the military compound outside of Cassol, destroying the AFFS unit stationed there.
     landmass:
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Camellias
         capital:
-          source: MWDA world profiles
+          source: DA:RW
           value: Algot Prime
     satellite:
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Victoria's Jewel
         size: medium
         icon: rock9
@@ -177,6 +181,12 @@ planet:
       - date: '2360-01-01'
         population: 293204407.0
       - date: '2367-07-01'
+        # administration: CC | Chesterton Commonality
+        # administration: CC | Chesterton Commonality
+        # administration: CC | Chesterton Commonality
+        # administration: CC | Chesterton Commonality
+        # administration: CC | Chesterton Commonality
+        # administration: CC | Chesterton Commonality
         faction:
           source: canon
           value:
@@ -302,6 +312,12 @@ planet:
       - date: '2895-01-01'
         socioIndustrial: C-C-C-C-C
       - date: '2900-04-28'
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
         faction:
           source: canon
           value:
@@ -340,8 +356,25 @@ planet:
       - date: '3036-01-01'
         socioIndustrial: C-C-C-C-B
       - date: '3040-01-01'
+        # administration: FC | Capellan March | Kathil Operational Area
+        # administration: FC | Capellan March | Kathil Operational Area
+        # administration: FC | Capellan March | Kathil Operational Area
+        # administration: FC | Capellan March | Kathil Operational Area
+        # administration: FC | Capellan March | Kathil Operational Area
+        # administration: FC | Capellan March | Kathil Operational Area
         population: 1525095884.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
+        # administration: FC | Capellan March | Kathil Operational Area
+        # administration: FC | Capellan March | Kathil Operational Area
+        # administration: FC | Capellan March | Kathil Operational Area
+        # administration: FC | Capellan March | Kathil Operational Area
+        # administration: FC | Capellan March | Kathil Operational Area
+        # administration: FC | Capellan March | Kathil Operational Area
         faction:
           source: canon
           value:
@@ -352,7 +385,25 @@ planet:
         population: 1215385273.0
       - date: '3060-01-01'
         population: 950419910.0
+      - date: '3067-01-01'
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FS
       - date: '3067-04-20'
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
         faction:
           source: canon
           value:
@@ -371,13 +422,37 @@ planet:
             - CC
             - WOB
       - date: '3077-02-27'
+        # administration: CC | Liao Commonality | Region 4
+        # administration: CC | Liao Commonality | Region 4
+        # administration: CC | Liao Commonality | Region 4
+        # administration: CC | Liao Commonality | Region 4
+        # administration: CC | Liao Commonality | Region 4
+        # administration: CC | Liao Commonality | Region 4
         faction:
           source: canon
           value:
             - CC
       - date: '3080-01-01'
         population: 809561089.0
+      - date: '3085-01-01'
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ROS
       - date: '3085-11-14'
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
         faction:
           source: canon
           value:
@@ -398,7 +473,25 @@ planet:
         hpg:
           source: canon
           value: X
+      - date: '3135-01-01'
+        # administration: CC | Liao Commonality | Region 2
+        # administration: CC | Liao Commonality | Region 2
+        # administration: CC | Liao Commonality | Region 2
+        # administration: CC | Liao Commonality | Region 2
+        # administration: CC | Liao Commonality | Region 2
+        # administration: CC | Liao Commonality | Region 2
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CC
       - date: '3135-07-11'
+        # administration: CC | Chesterton Commonality
+        # administration: CC | Chesterton Commonality
+        # administration: CC | Chesterton Commonality
+        # administration: CC | Chesterton Commonality
+        # administration: CC | Chesterton Commonality
+        # administration: CC | Chesterton Commonality
         faction:
           source: canon
           value:

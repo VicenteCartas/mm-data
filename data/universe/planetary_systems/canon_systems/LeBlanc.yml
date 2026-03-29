@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,15 +16,17 @@
 # affiliated with Microsoft.
 
 id: Le Blanc
-sucsId: 1470
+sucsId: 1471
 xcood: 207.047
 ycood: 18.309
 spectralType:
-  source: 'Handbook: House Davion, pg. 100'
+  source: 'HB:HD'
   value: G0III
+  page: 100
 primarySlot:
-  source: 'Handbook: House Davion, pg. 100'
+  source: 'HB:HD'
   value: 4
+  page: 100
 event:
   - date: '2434-10-13'
     nadirCharge: yes
@@ -82,57 +84,59 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 1.76
     sysPos:
-      source: 'Handbook: House Davion, pg. 100'
+      source: 'HB:HD'
       value: 4
+      page: 100
     icon: dry15
     pressure:
-      source: 'Handbook: House Davion, pg. 100'
+      source: 'HB:HD'
       value: THIN
+      page: 100
     atmosphere:
-      source: 'Handbook: House Davion, pg. 100'
+      source: 'HB:HD'
       value: BREATHABLE
+      page: 100
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'Handbook: House Davion, pg. 100'
+      source: 'HB:HD'
       value: 0.82
+      page: 100
     diameter: 11445
     density: 5.03524886534
     dayLength: 18
     yearLength: 2.6
     temperature:
-      source: 'Handbook: House Davion, pg. 100'
+      source: 'HB:HD'
       value: 24
+      page: 100
     water:
-      source: 'Handbook: House Davion, pg. 100'
+      source: 'HB:HD'
       value: 15
+      page: 100
     lifeForm:
-      source: 'Handbook: House Davion, pg. 100'
+      source: 'HB:HD'
       value: NONE
-    desc: Le Blanc is a small planet with lower than normal gravity and a thin atmosphere
-      with just barely enough oxygen to breathe without a rebreather. Originally settled
-      to mine the world’s deposits of ore, Le Blanc grew during the Succession Wars.
-      The planet became the site for the Kentares PDZ headquarters after the Kentares
-      Massacre. The increased military traffic resulted in a small boom in the local
-      economy to support the military traffic, which also resulted in a surge of civilian
-      improvements. For a while, Le Blanc was also home to a popular mercenary hiring
-      hall. Though never as large as Galatea or Solaris, it fell out of favor after
-      the 4th Succession War due to the rise of Outreach.
+      page: 100
+    desc: Le Blanc is a small planet with lower than normal gravity and a thin atmosphere with just barely enough oxygen to breathe without a rebreather. Originally settled to mine the world’s deposits of ore, Le Blanc grew during the Succession Wars. The planet became the site for the Kentares PDZ headquarters after the Kentares Massacre. The increased military traffic resulted in a small boom in the local economy to support the military traffic, which also resulted in a surge of civilian improvements. For a while, Le Blanc was also home to a popular mercenary hiring hall. Though never as large as Galatea or Solaris, it fell out of favor after the 4th Succession War due to the rise of Outreach.
     landmass:
       - name: Crevasse de Gayagoy
         capital:
-          source: 'Handbook: House Davion, pg. 100'
+          source: 'HB:HD'
           value: Port Paix
+          page: 100
       - name: Larger Reid
       - name: Smaller Reid
     satellite:
       - name:
-          source: 'Handbook: House Davion, pg. 100'
+          source: 'HB:HD'
           value: Jessen
+          page: 100
         size: large
         icon: rock3
       - name:
-          source: 'Handbook: House Davion, pg. 100'
+          source: 'HB:HD'
           value: Orones
+          page: 100
         size: medium
         icon: rock13
     event:
@@ -191,6 +195,12 @@ planet:
             - FS
       - date: '2360-01-01'
         population: 71070545.0
+      - date: '2366-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '2370-01-01'
         population: 77277842.0
       - date: '2380-01-01'
@@ -233,6 +243,18 @@ planet:
         population: 142034902.0
       - date: '2570-01-01'
         population: 142417268.0
+      - date: '2571-01-01'
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FS
       - date: '2580-01-01'
         population: 142179447.0
       - date: '2590-01-01'
@@ -291,6 +313,12 @@ planet:
       - date: '2800-01-01'
         population: 124327463.0
       - date: '2808-08-20'
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
         faction:
           source: canon
           value:
@@ -299,7 +327,7 @@ planet:
         population: 117826489.0
       - date: '2811-01-01'
         hiringHall:
-          source: Handbook House Davion
+          source: HB:HD
           value: MINOR
       - date: '2820-01-01'
         population: 110752446.0
@@ -350,8 +378,25 @@ planet:
       - date: '3030-01-01'
         population: 55460685.0
       - date: '3040-01-01'
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
         population: 55928517.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
         faction:
           source: canon
           value:
@@ -362,17 +407,34 @@ planet:
           value: D-D-B-F-D
       - date: '3045-01-01'
         hiringHall:
-          source: Handbook House Davion
+          source: HB:HD
           value: NONE
       - date: '3050-01-01'
         population: 56349558.0
       - date: '3060-01-01'
         population: 56858993.0
       - date: '3067-01-01'
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
         population:
           source: canon
           value: 57144000.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FS
       - date: '3067-04-20'
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
         faction:
           source: canon
           value:
@@ -399,6 +461,18 @@ planet:
         socioIndustrial: D-C-B-D-D
       - date: '3140-01-01'
         population: 62201207.0
+      - date: '3145-01-01'
+        # administration: DC | Benjamin Military District | Irurzun Prefecture
+        # administration: DC | Benjamin Military District | Irurzun Prefecture
+        # administration: DC | Benjamin Military District | Irurzun Prefecture
+        # administration: DC | Benjamin Military District | Irurzun Prefecture
+        # administration: DC | Benjamin Military District | Irurzun Prefecture
+        # administration: DC | Benjamin Military District | Irurzun Prefecture
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - DC
       - date: '3145-11-18'
         faction:
           source: canon
@@ -406,6 +480,12 @@ planet:
             - DC
         population: 62375614.0
       - date: '3151-01-01'
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
         faction:
           source: sucs
           value:

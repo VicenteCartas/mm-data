@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Piriapolis
-sucsId: 2034
+sucsId: 2035
 xcood: -98.755
 ycood: -358.351
 spectralType: M8V
@@ -45,6 +45,12 @@ planet:
         capital: Villa Carmen
       - name: Matos
     event:
+      - date: '2366-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FWL
       - date: '2366-02-19'
         faction:
           source: canon
@@ -96,7 +102,25 @@ planet:
         population: 274736015.0
       - date: '2570-01-01'
         population: 285681002.0
+      - date: '2571-01-01'
+        # administration: CC | Andurien Commonality | Region 2
+        # administration: CC | Andurien Commonality | Region 2
+        # administration: CC | Andurien Commonality | Region 2
+        # administration: CC | Andurien Commonality | Region 2
+        # administration: CC | Andurien Commonality | Region 2
+        # administration: CC | Andurien Commonality | Region 2
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CC
       - date: '2571-01-31'
+        # administration: CC | Andurien Commonality | Region 2
+        # administration: CC | Andurien Commonality | Region 2
+        # administration: CC | Andurien Commonality | Region 2
+        # administration: CC | Andurien Commonality | Region 2
+        # administration: CC | Andurien Commonality | Region 2
+        # administration: CC | Andurien Commonality | Region 2
         faction:
           source: canon
           value:
@@ -155,7 +179,25 @@ planet:
         population: 358293245.0
       - date: '2820-01-01'
         population: 353092032.0
+      - date: '2821-01-01'
+        # administration: FWL | Duchy of Andurien
+        # administration: FWL | Duchy of Andurien
+        # administration: FWL | Duchy of Andurien
+        # administration: FWL | Duchy of Andurien
+        # administration: FWL | Duchy of Andurien
+        # administration: FWL | Duchy of Andurien
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FWL
       - date: '2821-12-22'
+        # administration: FWL | Duchy of Andurien
+        # administration: FWL | Duchy of Andurien
+        # administration: FWL | Duchy of Andurien
+        # administration: FWL | Duchy of Andurien
+        # administration: FWL | Duchy of Andurien
+        # administration: FWL | Duchy of Andurien
         faction:
           source: canon
           value:
@@ -217,6 +259,12 @@ planet:
         population: 254288835.0
       - date: '3080-01-01'
         population: 255205924.0
+      - date: '3081-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3081-07-27'
         faction:
           source: canon
@@ -232,6 +280,12 @@ planet:
         population: 261561847.0
       - date: '3120-01-01'
         population: 261875910.0
+      - date: '3130-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - DA
       - date: '3130-12-14'
         faction:
           source: canon

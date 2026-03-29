@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: Kervil
-sucsId: 1333
+sucsId: 1334
 xcood: 34.119
 ycood: 45.961
 spectralType:
-  source: MWDA world profiles
+  source: DA:RW
   value: K3V
 primarySlot:
-  source: MWDA world profiles
+  source: DA:RW
   value: 2
 event:
   - date: '2380-09-04'
@@ -50,31 +50,31 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.49
     sysPos:
-      source: MWDA world profiles
+      source: DA:RW
       value: 2
     icon: wet2
     pressure:
-      source: MWDA world profiles
+      source: DA:RW
       value: STANDARD
     atmosphere:
-      source: MWDA world profiles
+      source: DA:RW
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: MWDA world profiles
+      source: DA:RW
       value: 1.26
     diameter: 12942
     density: 6.841910732262
     dayLength: 21
     yearLength: 0.9
     temperature:
-      source: MWDA world profiles
+      source: DA:RW
       value: 24
     water:
-      source: MWDA world profiles
+      source: DA:RW
       value: 92
     lifeForm:
-      source: MWDA world profiles
+      source: DA:RW
       value: MAMMAL
     desc: |-
       With water covering almost all of its surface, and the remainder given over to ten large island masses and an assortment of smaller chains dominated by volcanoes, Kervil was quickly established as a mining world. Industries geared toward locating and exploiting the valuable metals churned up by lava flows arose within a decade of the planet‘s colonization. The Ozawa Mercantile Association, a collective of merchants that dominated the region before the rise of House Kurita and the Draconis Combine, took a liking to Kervil and its vast metal deposits. Through negotiations with the local government, the Association established its own offices, outposts, offshore mining rigs and orbital processing centers, maximizing the efficiency of Kervil‘s mining operations in exchange for almost exclusive access to the refined metals. When the Dragon crushed the Association, these facilities, some damaged by Kuritan attacks, came under Combine control. At the peak of the Star League, Kervil‘s metal industry and orbital refineries became a major producer of ferro-fibrous armor and endo-steel, used extensively in the manufacture of BattleMechs and other military vehicles. It was perhaps for this reason that forces sympathetic to the Outworlds Alliance attacked Kervil during the Reunification War, attempting to demolish the distribution centers on the planet‘s surface after crippling several orbital factories. A small BattleMech unit stationed on Kervil, part of the SLDF‘s 138th BattleMech Division, was all that stood between the renegade forces and total destruction. The woefully outnumbered SLDF troops put up a brave fight, first with hit-and-run attacks and later with an assault against one of the renegade DropShips, while waiting for reinforcements to arrive. Still outnumbered nearly 5 to 1, however, the defenders were forced to fall back to Fort Steel, their main base near the planetary capital of Iron City. For three days they held out against a siege by angry renegades; then the enemy troops overwhelmed them and destroyed the fort and its defenders to the last ‘Mech and soldier. This stand, likened to the battle for the Alamo on Terra, ultimately achieved its goal, as the departing renegades ran full-on into SLDF reinforcement troops on their way out of the system, losing the entire raiding force to the guns of SLDF WarShips. The brave SLDF defenders who died at the Battle of Kervil are still remembered today: Fort Steel‘s remains are a historic site open to tourists year-round. This battle, as it happens, was the only major military action seen on Kervil; even the SLDF liberation from Amaris the Usurper was comparatively bloodless. The planet was virtually ignored throughout the Succession Wars and the Jihad, save for some minor raids that destroyed the advanced armor metal plants in orbit and several military-grade metal refineries on the surface. Today, despite these losses, mining and metallurgy remain Kervil‘s greatest industries. Iron City, still the planetary capital, is located on Greater Domain, Kervil‘s largest island continent. Greater Domain and seven other large island masses—Brahn, Northland, Satella and Lesser Domain in the north and Bellas Major, Bellas Minor and Karnophia in the south—support the majority of the planet‘s population and industries. The north polar continent of Freiholt and the equatorial continent of Infernus are sparsely settled, due to the extreme cold and lack of minerals on Freiholt and the chain of active volcanoes on Infernus.
@@ -83,20 +83,20 @@ planet:
       Wakazashi Industries
     landmass:
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Freiholt
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Greater Domain
         capital:
-          source: MWDA world profiles
+          source: DA:RW
           value: Iron City
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Infernus
     satellite:
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Paxin
         size: medium
         icon: rock12
@@ -125,6 +125,12 @@ planet:
       - date: '2310-01-01'
         population: 103729775.0
       - date: '2320-04-12'
+        # administration: TH | Lone Star Province
+        # administration: TH | Lone Star Province
+        # administration: TH | Lone Star Province
+        # administration: TH | Lone Star Province
+        # administration: TH | Lone Star Province
+        # administration: TH | Lone Star Province
         faction:
           source: canon
           value:
@@ -226,6 +232,18 @@ planet:
         population: 6547744965.0
       - date: '2760-01-01'
         population: 6515629902.0
+      - date: '2767-01-01'
+        # administration: AE | Lone Star Province
+        # administration: AE | Lone Star Province
+        # administration: AE | Lone Star Province
+        # administration: AE | Lone Star Province
+        # administration: AE | Lone Star Province
+        # administration: AE | Lone Star Province
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - AE
       - date: '2767-06-08'
         faction:
           source: canon
@@ -234,6 +252,12 @@ planet:
       - date: '2770-01-01'
         population: 6502729712.0
       - date: '2779-07-09'
+        # administration: TH | Lone Star Province
+        # administration: TH | Lone Star Province
+        # administration: TH | Lone Star Province
+        # administration: TH | Lone Star Province
+        # administration: TH | Lone Star Province
+        # administration: TH | Lone Star Province
         faction:
           source: canon
           value:
@@ -241,6 +265,12 @@ planet:
       - date: '2780-01-01'
         population: 6471078636.0
       - date: '2790-08-06'
+        # administration: DC | Dieron Military District | Lone Star Prefecture
+        # administration: DC | Dieron Military District | Lone Star Prefecture
+        # administration: DC | Dieron Military District | Lone Star Prefecture
+        # administration: DC | Dieron Military District | Lone Star Prefecture
+        # administration: DC | Dieron Military District | Lone Star Prefecture
+        # administration: DC | Dieron Military District | Lone Star Prefecture
         faction:
           source: canon
           value:
@@ -253,6 +283,12 @@ planet:
       - date: '2820-01-01'
         population: 6362284187.0
       - date: '2821-08-16'
+        # administration: DC | Dieron Military District | Lone Star Prefecture
+        # administration: DC | Dieron Military District | Lone Star Prefecture
+        # administration: DC | Dieron Military District | Lone Star Prefecture
+        # administration: DC | Dieron Military District | Lone Star Prefecture
+        # administration: DC | Dieron Military District | Lone Star Prefecture
+        # administration: DC | Dieron Military District | Lone Star Prefecture
         faction:
           source: canon
           value:
@@ -335,7 +371,25 @@ planet:
             - Stone
       - date: '3080-01-01'
         population: 4788818214.0
+      - date: '3081-01-01'
+        # administration: ROS | Prefecture II
+        # administration: ROS | Prefecture II
+        # administration: ROS | Prefecture II
+        # administration: ROS | Prefecture II
+        # administration: ROS | Prefecture II
+        # administration: ROS | Prefecture II
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ROS
       - date: '3081-11-11'
+        # administration: ROS | Prefecture II
+        # administration: ROS | Prefecture II
+        # administration: ROS | Prefecture II
+        # administration: ROS | Prefecture II
+        # administration: ROS | Prefecture II
+        # administration: ROS | Prefecture II
         faction:
           source: canon
           value:
@@ -354,7 +408,25 @@ planet:
         hpg: X
       - date: '3133-01-01'
         socioIndustrial: C-A-C-A-B
+      - date: '3135-01-01'
+        # administration: DC | Benjamin Military District | Algedi Prefecture
+        # administration: DC | Benjamin Military District | Algedi Prefecture
+        # administration: DC | Benjamin Military District | Algedi Prefecture
+        # administration: DC | Benjamin Military District | Algedi Prefecture
+        # administration: DC | Benjamin Military District | Algedi Prefecture
+        # administration: DC | Benjamin Military District | Algedi Prefecture
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - DC
       - date: '3135-02-17'
+        # administration: DC | Dieron Military District | Dieron Prefecture
+        # administration: DC | Dieron Military District | Dieron Prefecture
+        # administration: DC | Dieron Military District | Dieron Prefecture
+        # administration: DC | Dieron Military District | Dieron Prefecture
+        # administration: DC | Dieron Military District | Dieron Prefecture
+        # administration: DC | Dieron Military District | Dieron Prefecture
         faction:
           source: canon
           value:

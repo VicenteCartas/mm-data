@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Bergen
-sucsId: 2983
+sucsId: 3147
 xcood: -767.753
 ycood: 741.897
 spectralType: M4V
@@ -54,6 +54,12 @@ planet:
       - name: New West Lampeter
     event:
       - date: '2891-06-12'
+        # administration: HL | Region 4
+        # administration: HL | Region 4
+        # administration: HL | Region 4
+        # administration: HL | Region 4
+        # administration: HL | Region 4
+        # administration: HL | Region 4
         faction:
           source: canon
           value:
@@ -124,6 +130,11 @@ planet:
             - CEI
       - date: '3145-01-01'
         population: 4641895.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - SE
   - name: Lee's End
     type: GIANT_TERRESTRIAL
     orbitalDist: 0.21

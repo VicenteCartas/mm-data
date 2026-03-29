@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -120,16 +120,7 @@ planet:
     lifeForm:
       source: canon
       value: PLANT
-    desc: Erewhon was originally a holding of the Rim World Republic and fell into
-      obscurity after the Republics collapse. The planet lived on as a quiet rural
-      Periphery world, best known for its wool exports from the large sheep population.
-      Despite the planet’s relatively low gravity and low atmospheric pressure, Erewhon
-      is capable of supporting enough agriculture to make it self sufficient and feed
-      the large flocks of sheep. In the early 31st century the planet became part
-      of the Greater Valkyrate, until it was conquered by Clan Jade Falcon during
-      Operation Revival. Under the Falcons, Erewhon saw a surge in technology and
-      industry as the Falcon scientist caste migrated to the planet. The planet suffered
-      some severe infrastructure damage during the early 3070s.
+    desc: Erewhon was originally a holding of the Rim World Republic and fell into obscurity after the Republics collapse. The planet lived on as a quiet rural Periphery world, best known for its wool exports from the large sheep population. Despite the planet’s relatively low gravity and low atmospheric pressure, Erewhon is capable of supporting enough agriculture to make it self sufficient and feed the large flocks of sheep. In the early 31st century the planet became part of the Greater Valkyrate, until it was conquered by Clan Jade Falcon during Operation Revival. Under the Falcons, Erewhon saw a surge in technology and industry as the Falcon scientist caste migrated to the planet. The planet suffered some severe infrastructure damage during the early 3070s.
     smallMoons: 1
     landmass:
       - name:
@@ -143,6 +134,12 @@ planet:
           value: Rangitata
     event:
       - date: '2722-06-14'
+        # administration: RWR | Apollo Province
+        # administration: RWR | Apollo Province
+        # administration: RWR | Apollo Province
+        # administration: RWR | Apollo Province
+        # administration: RWR | Apollo Province
+        # administration: RWR | Apollo Province
         faction:
           source: canon
           value:
@@ -242,6 +239,12 @@ planet:
         socioIndustrial:
           source: canon
           value: B-B-C-B-C
+      - date: '3049-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CJF
       - date: '3049-09-13'
         faction:
           source: canon
@@ -281,6 +284,12 @@ planet:
         population: 44927765.0
       - date: '3145-01-01'
         population: 45189103.0
+      - date: '3151-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CHH
       - date: '3151-11-15'
         faction:
           source: canon

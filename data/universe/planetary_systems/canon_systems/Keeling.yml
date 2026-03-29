@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Keeling
-sucsId: 1318
+sucsId: 1319
 xcood: -173.754
 ycood: -217.409
 spectralType: G8V
@@ -91,6 +91,12 @@ planet:
       - date: '2270-01-01'
         population: 589316.0
       - date: '2271-06-01'
+        # administration: FWL | Principality of Regulus
+        # administration: FWL | Principality of Regulus
+        # administration: FWL | Principality of Regulus
+        # administration: FWL | Principality of Regulus
+        # administration: FWL | Principality of Regulus
+        # administration: FWL | Principality of Regulus
         faction:
           source: canon
           value:
@@ -291,6 +297,11 @@ planet:
         population: 478384148.0
       - date: '3130-01-01'
         population: 479054355.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ABN
       - date: '3132-08-07'
         hpg: X
       - date: '3140-01-01'

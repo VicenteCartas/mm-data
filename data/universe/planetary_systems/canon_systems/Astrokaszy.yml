@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,15 +16,17 @@
 # affiliated with Microsoft.
 
 id: Astrokaszy
-sucsId: 2859
+sucsId: 2860
 xcood: -290.632
 ycood: -315.408
 spectralType:
-  source: Mercenaries Supplemental II, pg. 15
+  source: MSII
   value: G4V
+  page: 15
 primarySlot:
-  source: Mercenaries Supplemental II, pg. 15
+  source: MSII
   value: 3
+  page: 15
 planet:
   - name: Frey
     type: DWARF_TERRESTRIAL
@@ -61,49 +63,58 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.9
     sysPos:
-      source: Mercenaries Supplemental II, pg. 15
+      source: MSII
       value: 3
+      page: 15
     icon: green31
     pressure:
-      source: Mercenaries Supplemental II, pg. 15
+      source: MSII
       value: STANDARD
+      page: 15
     atmosphere:
-      source: Mercenaries Supplemental II, pg. 15
+      source: MSII
       value: BREATHABLE
+      page: 15
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: Mercenaries Supplemental II, pg. 15
+      source: MSII
       value: 1.03
+      page: 15
     diameter: 12986
     density: 5.574107347698
     dayLength: 18
     yearLength: 1.3
     temperature:
-      source: Mercenaries Supplemental II, pg. 15
+      source: MSII
       value: 62
+      page: 15
     water:
-      source: Mercenaries Supplemental II, pg. 15
+      source: MSII
       value: 36
+      page: 15
     lifeForm:
-      source: Mercenaries Supplemental II, pg. 15
+      source: MSII
       value: MAMMAL
-    desc: Despite more than a third of Astrokaszy being covered in water, the single
-      large supercontinent is primarily dry, dusty and hot. The planet was left uninhabited
-      for most of its history until the 2890s when a rogue mercenary unit fled to
-      the planet. The unit fragmented after landing but have formed the backbone of
-      the nomads and various city-states that still compose Astrokaszy and rarely
-      get along.
+      page: 15
+    desc: Despite more than a third of Astrokaszy being covered in water, the single large supercontinent is primarily dry, dusty and hot. The planet was left uninhabited for most of its history until the 2890s when a rogue mercenary unit fled to the planet. The unit fragmented after landing but have formed the backbone of the nomads and various city-states that still compose Astrokaszy and rarely get along.
     landmass:
       - capital:
           source: canon
           value: Shervanis City
     satellite:
       - name:
-          source: Mercenaries Supplemental II, pg. 15
+          source: MSII
           value: Ghada
+          page: 15
         size: medium
         icon: rock10
     event:
+      - date: '2830-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '2900-05-09'
         faction:
           source: canon
@@ -119,7 +130,7 @@ planet:
         population: 203935.0
       - date: '2912-01-01'
         hiringHall:
-          source: Merc Supplememntal 2
+          source: MSII
           value: QUESTIONABLE
       - date: '2914-01-01'
         socioIndustrial: D-D-C-C-D
@@ -177,6 +188,12 @@ planet:
         population: 2872675.0
       - date: '3122-01-01'
         socioIndustrial: F-F-C-D-C
+      - date: '3130-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - RCM
       - date: '3130-08-06'
         faction:
           source: canon
@@ -186,8 +203,25 @@ planet:
       - date: '3140-01-01'
         population: 2879002.0
       - date: '3145-01-01'
+        # administration: FWL | Rim Commonality
+        # administration: FWL | Rim Commonality
+        # administration: FWL | Rim Commonality
+        # administration: FWL | Rim Commonality
+        # administration: FWL | Rim Commonality
+        # administration: FWL | Rim Commonality
         population: 2877851.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FWL
       - date: '3151-01-01'
+        # administration: FWL | Rim Commonality
+        # administration: FWL | Rim Commonality
+        # administration: FWL | Rim Commonality
+        # administration: FWL | Rim Commonality
+        # administration: FWL | Rim Commonality
+        # administration: FWL | Rim Commonality
         faction:
           source: sucs
           value:

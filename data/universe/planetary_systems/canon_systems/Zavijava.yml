@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: Zavijava
-sucsId: 2823
+sucsId: 2824
 xcood: -31.803
 ycood: -0.304
 spectralType:
-  source: MWDA world profiles
+  source: DA:RW
   value: M3V
 primarySlot:
-  source: MWDA world profiles
+  source: DA:RW
   value: 3
 event:
   - date: '2354-06-21'
@@ -72,77 +72,46 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.12
     sysPos:
-      source: MWDA world profiles
+      source: DA:RW
       value: 3
     icon: wet21
     pressure:
-      source: MWDA world profiles
+      source: DA:RW
       value: HIGH
     atmosphere:
-      source: MWDA world profiles
+      source: DA:RW
       value: TAINTED_POISON
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: MWDA world profiles
+      source: DA:RW
       value: 1.08
     diameter: 12460
     density: 6.091343670752
     dayLength: 24
     yearLength: 0.5
     temperature:
-      source: MWDA world profiles
+      source: DA:RW
       value: 31
     water:
-      source: MWDA world profiles
+      source: DA:RW
       value: 86
     lifeForm:
-      source: MWDA world profiles
+      source: DA:RW
       value: PLANT
-    desc: 3135 - Zavijava is an extremely volcanic world, so much so that high quantities
-      of sulfur gas and other particulate matter blown into the atmosphere by constant
-      eruptions have rendered the air difficult to breathe without filter masks, and
-      prompted an ongoing exodus from the planet. The eruptions began rather suddenly
-      in the twenty-fifth century, long after the first settlers made planetfall on
-      this otherwise unremarkable but heretofore terrestrial world. Since then, the
-      rate of eruptions has risen steadily through the years, to the point where no
-      less than seven active volcanic chains spew lava and ash on a weekly basis.
-      The cause for Zavijava‘s geological woes has never been adequately explained,
-      and even stymied the Terran Hegemony‘s experts during the Star League era, but
-      the effects have been dramatic indeed. In almost six hundred years, the worldwide
-      environment changed so radically that most of the native animal species have
-      gone extinct and temperatures worldwide have dropped nearly ten degrees due
-      to the “nuclear winter” effects of so much ash blown into the sky. The planetary
-      population, once numbering almost three billion, has also dropped steadily as
-      the disturbances continue, but enough hearty souls and mining corporations have
-      remained behind to try to make the most of the situation. Adding to the declining
-      state of this world, of course, has been its history during the Succession Wars.
-      As a Lyran-Free Worlds border planet, Zavijava has naturally been the target
-      of countless raids and military campaigns in the centuries since the fall of
-      the Star League. Like many other worlds in the region, it also suffered during
-      the Lyran-Skye conflicts that erupted during the Jihad. In the most devastating
-      of these strikes, renegade Marik troops assaulted the planetary spaceport near
-      the capital city of Tzion. The resulting firefight left the capital in flames
-      and cost the lives of over five thousand warriors and civilians. Unlike its
-      neighbors, Zavijava did not receive reconstruction assistance after the world
-      was ceded to The Republic, owing to the ongoing departure of its inhabitants
-      due to the planet‘s natural crisis. Instead, a new spaceport was constructed
-      near the city of Noé, on the northern continent of Peninah, which was also designated
-      as the new administrative capital of Zavijava. The ruins of Tzion, now cleared
-      away, stood on the southern continent, Velvel. In their place now stands a memorial
-      to the fallen on both sides of the Jihad.
+    desc: 3135 - Zavijava is an extremely volcanic world, so much so that high quantities of sulfur gas and other particulate matter blown into the atmosphere by constant eruptions have rendered the air difficult to breathe without filter masks, and prompted an ongoing exodus from the planet. The eruptions began rather suddenly in the twenty-fifth century, long after the first settlers made planetfall on this otherwise unremarkable but heretofore terrestrial world. Since then, the rate of eruptions has risen steadily through the years, to the point where no less than seven active volcanic chains spew lava and ash on a weekly basis. The cause for Zavijava‘s geological woes has never been adequately explained, and even stymied the Terran Hegemony‘s experts during the Star League era, but the effects have been dramatic indeed. In almost six hundred years, the worldwide environment changed so radically that most of the native animal species have gone extinct and temperatures worldwide have dropped nearly ten degrees due to the “nuclear winter” effects of so much ash blown into the sky. The planetary population, once numbering almost three billion, has also dropped steadily as the disturbances continue, but enough hearty souls and mining corporations have remained behind to try to make the most of the situation. Adding to the declining state of this world, of course, has been its history during the Succession Wars. As a Lyran-Free Worlds border planet, Zavijava has naturally been the target of countless raids and military campaigns in the centuries since the fall of the Star League. Like many other worlds in the region, it also suffered during the Lyran-Skye conflicts that erupted during the Jihad. In the most devastating of these strikes, renegade Marik troops assaulted the planetary spaceport near the capital city of Tzion. The resulting firefight left the capital in flames and cost the lives of over five thousand warriors and civilians. Unlike its neighbors, Zavijava did not receive reconstruction assistance after the world was ceded to The Republic, owing to the ongoing departure of its inhabitants due to the planet‘s natural crisis. Instead, a new spaceport was constructed near the city of Noé, on the northern continent of Peninah, which was also designated as the new administrative capital of Zavijava. The ruins of Tzion, now cleared away, stood on the southern continent, Velvel. In their place now stands a memorial to the fallen on both sides of the Jihad.
     landmass:
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Peninah
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Velvel
         capital:
-          source: MWDA world profiles
+          source: DA:RW
           value: 'Noé'
     satellite:
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Haldana
         size: large
         icon: rock3
@@ -179,6 +148,12 @@ planet:
           value:
             - TH
       - date: '2319-06-09'
+        # administration: TH | Tyrfing Province
+        # administration: TH | Tyrfing Province
+        # administration: TH | Tyrfing Province
+        # administration: TH | Tyrfing Province
+        # administration: TH | Tyrfing Province
+        # administration: TH | Tyrfing Province
         faction:
           source: canon
           value:
@@ -281,6 +256,18 @@ planet:
         population: 2886958279.0
       - date: '2760-01-01'
         population: 2905155542.0
+      - date: '2767-01-01'
+        # administration: AE | Tyrfing Province
+        # administration: AE | Tyrfing Province
+        # administration: AE | Tyrfing Province
+        # administration: AE | Tyrfing Province
+        # administration: AE | Tyrfing Province
+        # administration: AE | Tyrfing Province
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - AE
       - date: '2767-08-26'
         faction:
           source: canon
@@ -289,6 +276,12 @@ planet:
       - date: '2770-01-01'
         population: 2905477405.0
       - date: '2779-09-08'
+        # administration: TH | Tyrfing Province
+        # administration: TH | Tyrfing Province
+        # administration: TH | Tyrfing Province
+        # administration: TH | Tyrfing Province
+        # administration: TH | Tyrfing Province
+        # administration: TH | Tyrfing Province
         faction:
           source: canon
           value:
@@ -296,6 +289,12 @@ planet:
       - date: '2780-01-01'
         population: 2903174957.0
       - date: '2790-11-12'
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
         faction:
           source: canon
           value:
@@ -308,6 +307,12 @@ planet:
       - date: '2820-01-01'
         population: 2891403515.0
       - date: '2821-10-06'
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
         faction:
           source: canon
           value:
@@ -360,8 +365,25 @@ planet:
         population: 2558963587.0
         socioIndustrial: C-C-C-D-D
       - date: '3040-01-01'
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
         population: 2582098209.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
         faction:
           source: canon
           value:
@@ -370,7 +392,25 @@ planet:
         socioIndustrial: B-B-B-C-C
       - date: '3050-01-01'
         population: 2600236306.0
+      - date: '3057-01-01'
+        # administration: LA | Skye March | Alcor Operational Area
+        # administration: LA | Skye March | Alcor Operational Area
+        # administration: LA | Skye March | Alcor Operational Area
+        # administration: LA | Skye March | Alcor Operational Area
+        # administration: LA | Skye March | Alcor Operational Area
+        # administration: LA | Skye March | Alcor Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '3057-09-18'
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
         faction:
           source: canon
           value:
@@ -398,7 +438,25 @@ planet:
             - Stone
       - date: '3080-01-01'
         population: 2674071795.0
+      - date: '3081-01-01'
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ROS
       - date: '3081-09-02'
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
         faction:
           source: canon
           value:

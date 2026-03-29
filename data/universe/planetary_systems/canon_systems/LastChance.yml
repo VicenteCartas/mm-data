@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Last Chance
-sucsId: 1461
+sucsId: 1462
 xcood: -159.788
 ycood: 477.135
 spectralType: G9V
@@ -229,6 +229,12 @@ planet:
       - name: New Prompton
     event:
       - date: '2722-08-15'
+        # administration: RWR | Apollo Province
+        # administration: RWR | Apollo Province
+        # administration: RWR | Apollo Province
+        # administration: RWR | Apollo Province
+        # administration: RWR | Apollo Province
+        # administration: RWR | Apollo Province
         faction:
           source: canon
           value:
@@ -325,6 +331,12 @@ planet:
         population: 43560892.0
       - date: '3046-01-01'
         socioIndustrial: B-C-B-C-A
+      - date: '3049-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CJF
       - date: '3049-09-05'
         faction:
           source: canon
@@ -350,6 +362,12 @@ planet:
             - CHH
       - date: '3080-01-01'
         population: 45051723.0
+      - date: '3085-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - RU
       - date: '3090-01-01'
         population: 45169010.0
       - date: '3100-01-01'
@@ -365,6 +383,11 @@ planet:
         population: 45586483.0
       - date: '3130-01-01'
         population: 45723447.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - RU
       - date: '3139-01-01'
         socioIndustrial: C-C-B-B-A
       - date: '3140-01-01'

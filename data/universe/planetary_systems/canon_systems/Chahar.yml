@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -20,10 +20,10 @@ sucsId: 513
 xcood: -198.534
 ycood: 340.642
 spectralType:
-  source: House Steiner
+  source: HSSB
   value: G0IV
 primarySlot:
-  source: House Steiner
+  source: HSSB
   value: 2
 event:
   - date: '2417-07-08'
@@ -61,7 +61,7 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 1.76
     sysPos:
-      source: House Steiner
+      source: HSSB
       value: 2
     icon: green42
     pressure:
@@ -77,7 +77,7 @@ planet:
     temperature: 44
     water: 23
     lifeForm:
-      source: House Steiner
+      source: HSSB
       value: NONE
     desc: |-
       Chahar was first colonized in the late 24th Century, despite the planet having a comfortable temperate climate and large oceans it was originally a lifeless planet. However, this quickly caused issues for the colonies on Chahar as they were completely dependent on food from surrounding systems.
@@ -85,10 +85,16 @@ planet:
       The capital city of Chahar is Benares, which is considered sacred to Lyran Hindu believers.
     landmass:
       - capital:
-          source: House Steiner
+          source: HSSB
           value: Benares
     event:
       - date: '2409-06-26'
+        # administration: LA | Protectorate of Donegal | Coventry Province
+        # administration: LA | Protectorate of Donegal | Coventry Province
+        # administration: LA | Protectorate of Donegal | Coventry Province
+        # administration: LA | Protectorate of Donegal | Coventry Province
+        # administration: LA | Protectorate of Donegal | Coventry Province
+        # administration: LA | Protectorate of Donegal | Coventry Province
         faction:
           source: canon
           value:
@@ -232,10 +238,28 @@ planet:
         population: 167624116.0
       - date: '3030-01-01'
         population: 167388418.0
+      - date: '3040-01-01'
+        # administration: FC | Periphery March | Tsarahavana Operational Area
+        # administration: FC | Periphery March | Tsarahavana Operational Area
+        # administration: FC | Periphery March | Tsarahavana Operational Area
+        # administration: FC | Periphery March | Tsarahavana Operational Area
+        # administration: FC | Periphery March | Tsarahavana Operational Area
+        # administration: FC | Periphery March | Tsarahavana Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-06-25'
         population: 169290634.0
         socioIndustrial: B-D-B-C-D
       - date: '3040-01-19'
+        # administration: FC | Periphery March | Tsarahavana Operational Area
+        # administration: FC | Periphery March | Tsarahavana Operational Area
+        # administration: FC | Periphery March | Tsarahavana Operational Area
+        # administration: FC | Periphery March | Tsarahavana Operational Area
+        # administration: FC | Periphery March | Tsarahavana Operational Area
+        # administration: FC | Periphery March | Tsarahavana Operational Area
         faction:
           source: canon
           value:
@@ -244,13 +268,37 @@ planet:
         socioIndustrial: C-D-B-C-D
       - date: '3050-01-01'
         population: 171368630.0
+      - date: '3057-01-01'
+        # administration: LA | Periphery March | Tsarahavana Operational Area
+        # administration: LA | Periphery March | Tsarahavana Operational Area
+        # administration: LA | Periphery March | Tsarahavana Operational Area
+        # administration: LA | Periphery March | Tsarahavana Operational Area
+        # administration: LA | Periphery March | Tsarahavana Operational Area
+        # administration: LA | Periphery March | Tsarahavana Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '3057-09-18'
+        # administration: LA | Coventry Province | Melissia Theater
+        # administration: LA | Coventry Province | Melissia Theater
+        # administration: LA | Coventry Province | Melissia Theater
+        # administration: LA | Coventry Province | Melissia Theater
+        # administration: LA | Coventry Province | Melissia Theater
+        # administration: LA | Coventry Province | Melissia Theater
         faction:
           source: canon
           value:
             - LA
       - date: '3060-01-01'
         population: 173941140.0
+      - date: '3067-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CJF
       - date: '3067-09-19'
         faction:
           source: canon
@@ -280,6 +328,12 @@ planet:
         population: 186441397.0
       - date: '3145-01-01'
         population: 186926776.0
+      - date: '3152-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3152-06-01'
         faction:
           source: canon

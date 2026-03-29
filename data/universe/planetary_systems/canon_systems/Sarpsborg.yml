@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Sarpsborg
-sucsId: 2244
+sucsId: 2245
 xcood: -149.67
 ycood: 32.262
 spectralType: F4V
@@ -98,7 +98,37 @@ planet:
       - name: Fræna
       - name: Ny Brønnøy
     event:
+      - date: '2271-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
+      - date: '2341-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ABN
+      - date: '2596-01-01'
+        # administration: LA | Protectorate of Donegal | Furillo Province
+        # administration: LA | Protectorate of Donegal | Furillo Province
+        # administration: LA | Protectorate of Donegal | Furillo Province
+        # administration: LA | Protectorate of Donegal | Furillo Province
+        # administration: LA | Protectorate of Donegal | Furillo Province
+        # administration: LA | Protectorate of Donegal | Furillo Province
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '2596-10-07'
+        # administration: LA | Protectorate of Donegal | Furillo Province
+        # administration: LA | Protectorate of Donegal | Furillo Province
+        # administration: LA | Protectorate of Donegal | Furillo Province
+        # administration: LA | Protectorate of Donegal | Furillo Province
+        # administration: LA | Protectorate of Donegal | Furillo Province
+        # administration: LA | Protectorate of Donegal | Furillo Province
         faction:
           source: canon
           value:
@@ -211,8 +241,25 @@ planet:
       - date: '3030-01-01'
         population: 5903822773.0
       - date: '3040-01-01'
+        # administration: FC | Tamarind March | Soilihull Operational Area
+        # administration: FC | Tamarind March | Soilihull Operational Area
+        # administration: FC | Tamarind March | Soilihull Operational Area
+        # administration: FC | Tamarind March | Soilihull Operational Area
+        # administration: FC | Tamarind March | Soilihull Operational Area
+        # administration: FC | Tamarind March | Soilihull Operational Area
         population: 5954814599.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
+        # administration: FC | Tamarind March | Soilihull Operational Area
+        # administration: FC | Tamarind March | Soilihull Operational Area
+        # administration: FC | Tamarind March | Soilihull Operational Area
+        # administration: FC | Tamarind March | Soilihull Operational Area
+        # administration: FC | Tamarind March | Soilihull Operational Area
+        # administration: FC | Tamarind March | Soilihull Operational Area
         faction:
           source: canon
           value:
@@ -221,7 +268,25 @@ planet:
         socioIndustrial: B-B-D-A-F
       - date: '3050-01-01'
         population: 5984064795.0
+      - date: '3057-01-01'
+        # administration: LA | Tamarind March | Soilihull Operational Area
+        # administration: LA | Tamarind March | Soilihull Operational Area
+        # administration: LA | Tamarind March | Soilihull Operational Area
+        # administration: LA | Tamarind March | Soilihull Operational Area
+        # administration: LA | Tamarind March | Soilihull Operational Area
+        # administration: LA | Tamarind March | Soilihull Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '3057-09-18'
+        # administration: LA | Bolan Province | Cavanaugh Theater
+        # administration: LA | Bolan Province | Cavanaugh Theater
+        # administration: LA | Bolan Province | Cavanaugh Theater
+        # administration: LA | Bolan Province | Cavanaugh Theater
+        # administration: LA | Bolan Province | Cavanaugh Theater
+        # administration: LA | Bolan Province | Cavanaugh Theater
         faction:
           source: canon
           value:
@@ -248,6 +313,12 @@ planet:
         hpg: X
       - date: '3140-01-01'
         population: 6659870692.0
+      - date: '3145-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CWE
       - date: '3145-12-03'
         faction:
           source: canon

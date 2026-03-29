@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,15 +16,17 @@
 # affiliated with Microsoft.
 
 id: Ozawa
-sucsId: 1967
+sucsId: 1968
 xcood: 84.778
 ycood: 2.798
 spectralType:
-  source: 'Handbook: House Davion, pg. 102'
+  source: 'HB:HD'
   value: K5II
+  page: 102
 primarySlot:
-  source: 'Handbook: House Davion, pg. 102'
+  source: 'HB:HD'
   value: 2
+  page: 102
 event:
   - date: '2496-05-08'
     zenithCharge: yes
@@ -52,32 +54,39 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.49
     sysPos:
-      source: 'Handbook: House Davion, pg. 102'
+      source: 'HB:HD'
       value: 2
+      page: 102
     icon: green36
     pressure:
-      source: 'Handbook: House Davion, pg. 102'
+      source: 'HB:HD'
       value: STANDARD
+      page: 102
     atmosphere:
-      source: 'Handbook: House Davion, pg. 102'
+      source: 'HB:HD'
       value: BREATHABLE
+      page: 102
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'Handbook: House Davion, pg. 102'
+      source: 'HB:HD'
       value: 0.92
+      page: 102
     diameter: 10655
     density: 6.068130560168
     dayLength: 23
     yearLength: 0.9
     temperature:
-      source: 'Handbook: House Davion, pg. 102'
+      source: 'HB:HD'
       value: 39
+      page: 102
     water:
-      source: 'Handbook: House Davion, pg. 102'
+      source: 'HB:HD'
       value: 44
+      page: 102
     lifeForm:
-      source: 'Handbook: House Davion, pg. 102'
+      source: 'HB:HD'
       value: MAMMAL
+      page: 102
     desc: |-
       Originally a beautiful planet with rough terrain and extreme weather, Ozawa suffered significant damage during the course of the Succession Wars. The rough weather and tidal conditions kept some early colonists away, however the planet grew slowly and industry sprang up after large deposits of metal ores were discovered. The planet became a major manufacturing center, unfortunately this made the planet a major target when the Succession Wars broke out. Bitter fighting between the Capellan Confederation, Federated Suns and Draconis Combine left the planet torn apart, especially after the Combine resorted to nuclear weapons to remove entrenched Federated Suns units. The Suns finally claimed victory in 2841 and the planet has slowly begun to recover since.
 
@@ -87,27 +96,28 @@ planet:
       Wunderland Enterprises
     landmass:
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Kushiro
         capital:
-          source: MWDA world profiles
+          source: DA:RW
           value: Sapporo
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Muroran
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Niigata
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Sendai
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Todoga
     satellite:
       - name:
-          source: 'Handbook: House Davion, pg. 102'
+          source: 'HB:HD'
           value: Daikoku
+          page: 102
         size: large
         icon: rock9
     event:
@@ -146,6 +156,12 @@ planet:
         population: 296673224.0
       - date: '2340-01-01'
         population: 449070172.0
+      - date: '2341-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '2350-01-01'
         population: 645282607.0
       - date: '2360-01-01'
@@ -192,6 +208,18 @@ planet:
         population: 6212993967.0
       - date: '2570-01-01'
         population: 6313409906.0
+      - date: '2571-01-01'
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - TH
       - date: '2580-01-01'
         population: 6371098143.0
       - date: '2590-01-01'
@@ -237,6 +265,18 @@ planet:
         population: 6690783035.0
       - date: '2760-01-01'
         population: 6680642817.0
+      - date: '2767-01-01'
+        # administration: AE | Lockdale Province
+        # administration: AE | Lockdale Province
+        # administration: AE | Lockdale Province
+        # administration: AE | Lockdale Province
+        # administration: AE | Lockdale Province
+        # administration: AE | Lockdale Province
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - AE
       - date: '2767-10-06'
         faction:
           source: canon
@@ -246,6 +286,12 @@ planet:
       - date: '2770-01-01'
         population: 6084271299.0
       - date: '2779-09-26'
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
         faction:
           source: canon
           value:
@@ -253,6 +299,12 @@ planet:
       - date: '2780-01-01'
         population: 4600866363.0
       - date: '2790-12-19'
+        # administration: DC | Dieron Military District | Addicks Prefecture
+        # administration: DC | Dieron Military District | Addicks Prefecture
+        # administration: DC | Dieron Military District | Addicks Prefecture
+        # administration: DC | Dieron Military District | Addicks Prefecture
+        # administration: DC | Dieron Military District | Addicks Prefecture
+        # administration: DC | Dieron Military District | Addicks Prefecture
         faction:
           source: canon
           value:
@@ -269,6 +321,12 @@ planet:
       - date: '2840-01-01'
         population: 1470469906.0
       - date: '2841-06-09'
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
         faction:
           source: canon
           value:
@@ -320,8 +378,25 @@ planet:
       - date: '3030-01-01'
         population: 4561267.0
       - date: '3040-01-01'
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
         population: 5430944.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
         faction:
           source: canon
           value:
@@ -339,10 +414,27 @@ planet:
       - date: '3060-01-01'
         population: 7831939.0
       - date: '3067-01-01'
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
         population:
           source: canon
           value: 9150000.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FS
       - date: '3067-04-20'
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
         faction:
           source: canon
           value:
@@ -351,7 +443,25 @@ planet:
         population: 9166485.0
       - date: '3080-01-01'
         population: 9168318.0
+      - date: '3081-01-01'
+        # administration: ROS | Prefecture III | Region Capital
+        # administration: ROS | Prefecture III | Region Capital
+        # administration: ROS | Prefecture III | Region Capital
+        # administration: ROS | Prefecture III | Region Capital
+        # administration: ROS | Prefecture III | Region Capital
+        # administration: ROS | Prefecture III | Region Capital
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ROS
       - date: '3081-05-28'
+        # administration: ROS | Prefecture III | Region Capital
+        # administration: ROS | Prefecture III | Region Capital
+        # administration: ROS | Prefecture III | Region Capital
+        # administration: ROS | Prefecture III | Region Capital
+        # administration: ROS | Prefecture III | Region Capital
+        # administration: ROS | Prefecture III | Region Capital
         faction:
           source: canon
           value:
@@ -372,6 +482,18 @@ planet:
         hpg:
           source: canon
           value: X
+      - date: '3135-01-01'
+        # administration: IND | Region Capital
+        # administration: IND | Region Capital
+        # administration: IND | Region Capital
+        # administration: IND | Region Capital
+        # administration: IND | Region Capital
+        # administration: IND | Region Capital
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3135-10-01'
         faction:
           source: canon
@@ -379,7 +501,25 @@ planet:
             - IND
       - date: '3140-01-01'
         population: 9768412.0
+      - date: '3145-01-01'
+        # administration: DC | Dieron Military District | Ashio Prefecture
+        # administration: DC | Dieron Military District | Ashio Prefecture
+        # administration: DC | Dieron Military District | Ashio Prefecture
+        # administration: DC | Dieron Military District | Ashio Prefecture
+        # administration: DC | Dieron Military District | Ashio Prefecture
+        # administration: DC | Dieron Military District | Ashio Prefecture
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - DC
       - date: '3145-08-04'
+        # administration: DC | Dieron Military District | Ashio Prefecture
+        # administration: DC | Dieron Military District | Ashio Prefecture
+        # administration: DC | Dieron Military District | Ashio Prefecture
+        # administration: DC | Dieron Military District | Ashio Prefecture
+        # administration: DC | Dieron Military District | Ashio Prefecture
+        # administration: DC | Dieron Military District | Ashio Prefecture
         faction:
           source: canon
           value:

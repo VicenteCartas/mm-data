@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,15 +16,17 @@
 # affiliated with Microsoft.
 
 id: Proserpina
-sucsId: 2076
+sucsId: 2077
 xcood: 158.215
 ycood: 34.295
 spectralType:
-  source: 25 Years of Art and Fiction, pg. 97
+  source: 25YAF
   value: K2V
+  page: 97
 primarySlot:
-  source: 25 Years of Art and Fiction, pg. 97
+  source: 25YAF
   value: 4
+  page: 97
 event:
   - date: '2357-07-23'
     nadirCharge: yes
@@ -88,59 +90,73 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.49
     sysPos:
-      source: 25 Years of Art and Fiction, pg. 97
+      source: 25YAF
       value: 4
+      page: 97
     icon: green5
     pressure:
-      source: 25 Years of Art and Fiction, pg. 97
+      source: 25YAF
       value: STANDARD
+      page: 97
     atmosphere:
-      source: 25 Years of Art and Fiction, pg. 97
+      source: 25YAF
       value: TAINTED_POISON
+      page: 97
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 25 Years of Art and Fiction, pg. 97
+      source: 25YAF
       value: 0.98
+      page: 97
     diameter: 12769
     density: 5.393446755704
     dayLength: 20
     yearLength: 0.9
     temperature:
-      source: 25 Years of Art and Fiction, pg. 97
+      source: 25YAF
       value: 25
+      page: 97
     water:
-      source: 25 Years of Art and Fiction, pg. 97
+      source: 25YAF
       value: 67
+      page: 97
     lifeForm:
-      source: 25 Years of Art and Fiction, pg. 97
+      source: 25YAF
       value: REPTILE
+      page: 97
     desc: |-
       Proserpina was one of the Core Worlds and home to several major manufacturing firms, including Guided Technologies and Bulldog Enterprises. Their factories, and many others, exploited the petrochemical and mineral resources of the planet directly and refined metals from the metal ores extracted from Proserpina before shipping the refined materials to nearby planets. After the fall of the Star League the world faced nearly constant raids by the Federated Suns. During one of these raids the defending DCMS forces used a nerve gas to destroy the invaders. As a result the planet's surface is mostly poisonous after the Succession Wars; In fact two of its five continents (Amerigo and Greater Harpago) are completely uninhabitable. In 3066, despite the passage of so many years, both the air and water on planet surface are still contaminated. However, the rich minerals of the planet and well developed industry keep the planet and its inhabitants prosperous, even if they do need to wear environmental suits and breathing masks to leave their homes.
 
       The location of Proserpina on the Federated Suns border requires the DCMS to keep a strong garrison on the world. To further fortify their position, the DCMS has establishing an extensive network of refit and supply facilities for defending troops. Proserpina is also known for the University of Proserpina, a military academy that has consistently turned out high-quality graduates for the DCMS.
     landmass:
       - name:
-          source: FedCom Civil War, pg. 204
+          source: FCCW
           value: Amerigo
+          page: 204
       - name:
-          source: FedCom Civil War, pg. 204
+          source: FCCW
           value: Bragadin
+          page: 204
         capital:
-          source: FedCom Civil War, pg. 204
+          source: FCCW
           value: Conqueror's Pride
+          page: 204
       - name:
-          source: FedCom Civil War, pg. 204
+          source: FCCW
           value: Darwan
+          page: 204
       - name:
-          source: FedCom Civil War, pg. 204
+          source: FCCW
           value: Greater Harpago
+          page: 204
       - name:
-          source: FedCom Civil War, pg. 204
+          source: FCCW
           value: Lesser Harpago
+          page: 204
     satellite:
       - name:
-          source: 25 Years of Art and Fiction, pg. 97
+          source: 25YAF
           value: Taikata
+          page: 97
         size: medium
         icon: rock7
     event:
@@ -203,6 +219,12 @@ planet:
         population: 699046219.0
       - date: '2360-01-01'
         population: 803641699.0
+      - date: '2366-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '2370-01-01'
         population: 910388498.0
       - date: '2380-01-01'
@@ -247,6 +269,18 @@ planet:
         population: 2212040365.0
       - date: '2570-01-01'
         population: 2251743004.0
+      - date: '2571-01-01'
+        # administration: DC | Benjamin Military District | Proserpina Prefecture
+        # administration: DC | Benjamin Military District | Proserpina Prefecture
+        # administration: DC | Benjamin Military District | Proserpina Prefecture
+        # administration: DC | Benjamin Military District | Proserpina Prefecture
+        # administration: DC | Benjamin Military District | Proserpina Prefecture
+        # administration: DC | Benjamin Military District | Proserpina Prefecture
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - DC
       - date: '2580-01-01'
         population: 2275444688.0
       - date: '2590-01-01'
@@ -369,7 +403,25 @@ planet:
         population: 1068612369.0
       - date: '3080-01-01'
         population: 1082595020.0
+      - date: '3081-01-01'
+        # administration: ROS | Prefecture III
+        # administration: ROS | Prefecture III
+        # administration: ROS | Prefecture III
+        # administration: ROS | Prefecture III
+        # administration: ROS | Prefecture III
+        # administration: ROS | Prefecture III
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ROS
       - date: '3081-07-01'
+        # administration: ROS | Prefecture III
+        # administration: ROS | Prefecture III
+        # administration: ROS | Prefecture III
+        # administration: ROS | Prefecture III
+        # administration: ROS | Prefecture III
+        # administration: ROS | Prefecture III
         faction:
           source: canon
           value:
@@ -391,6 +443,12 @@ planet:
           source: canon
           value: X
       - date: '3134-12-26'
+        # administration: DC | Benjamin Military District | Proserpina Prefecture
+        # administration: DC | Benjamin Military District | Proserpina Prefecture
+        # administration: DC | Benjamin Military District | Proserpina Prefecture
+        # administration: DC | Benjamin Military District | Proserpina Prefecture
+        # administration: DC | Benjamin Military District | Proserpina Prefecture
+        # administration: DC | Benjamin Military District | Proserpina Prefecture
         faction:
           source: canon
           value:

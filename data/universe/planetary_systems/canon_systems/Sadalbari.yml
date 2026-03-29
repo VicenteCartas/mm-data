@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: Sadalbari
-sucsId: 2203
+sucsId: 2204
 xcood: 137.775
 ycood: 42.859
 spectralType:
-  source: MWDA world profiles
+  source: DA:RW
   value: K0VI
 primarySlot:
-  source: MWDA world profiles
+  source: DA:RW
   value: 1
 event:
   - date: '2359-05-23'
@@ -39,70 +39,49 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 1.28
     sysPos:
-      source: MWDA world profiles
+      source: DA:RW
       value: 1
     icon: green30
     pressure:
-      source: MWDA world profiles
+      source: DA:RW
       value: STANDARD
     atmosphere:
-      source: MWDA world profiles
+      source: DA:RW
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: MWDA world profiles
+      source: DA:RW
       value: 1.16
     diameter: 14987
     density: 5.439382381407
     dayLength: 17
     yearLength: 1.7
     temperature:
-      source: MWDA world profiles
+      source: DA:RW
       value: 39
     water:
-      source: MWDA world profiles
+      source: DA:RW
       value: 59
     lifeForm:
-      source: MWDA world profiles
+      source: DA:RW
       value: AMPHIBIAN
-    desc: The first settlers to come to the mostly tropical world of Sadalbari hailed
-      from the African and Middle Eastern regions of Terra. At the time, rainforests
-      covered most of the world's landmasses in the middle latitudes—a paradise, compared
-      to the rocky deserts and desolate grasslands these early colonists once called
-      home. Hoping to establish a peaceful agrarian lifestyle, most of the first settlements
-      revolved around farming and cattle ranching—processes made difficult when it
-      soon became clear that most Terrestrial food crops simply wouldn‘t grow in the
-      Sadalbarian soil. Native crops eventually came to the fore, becoming a significant
-      export item, and one of the planet's few contributions to the rest of populated
-      space, until MediTech Industries, a pharmaceutical corporation in the Star League
-      era, discovered that the world's rich jungles also offered great medicinal potential.
-      Under a grant from the Star League, MediTech set up an elaborate research and
-      development facility on the fringe of the massive Waltabu Valley jungle. This
-      facility was abandoned after the fall of the League, but eventually reclaimed
-      after the First Succession War, by a local medical research company called Sadalbari
-      Solutions. Today, Sadalbari Solutions operates a strong, interplanetary corporation
-      that develops and sells everything from specialized dietary supplements to anticancer
-      treatments. The company uses the former MediTech R and D facility as its corporate
-      headquarters, based on the large, northern continent of Aberlani. Sadalbari‘s
-      chief port city of Delhirahn is located on the nearby island-continent of New
-      Kenya. The planetary capital, Ramolia, is situated in the Green Valley region
-      on the planet's large, southern polar continent of Beth'lamel.
+    desc: The first settlers to come to the mostly tropical world of Sadalbari hailed from the African and Middle Eastern regions of Terra. At the time, rainforests covered most of the world's landmasses in the middle latitudes—a paradise, compared to the rocky deserts and desolate grasslands these early colonists once called home. Hoping to establish a peaceful agrarian lifestyle, most of the first settlements revolved around farming and cattle ranching—processes made difficult when it soon became clear that most Terrestrial food crops simply wouldn‘t grow in the Sadalbarian soil. Native crops eventually came to the fore, becoming a significant export item, and one of the planet's few contributions to the rest of populated space, until MediTech Industries, a pharmaceutical corporation in the Star League era, discovered that the world's rich jungles also offered great medicinal potential. Under a grant from the Star League, MediTech set up an elaborate research and development facility on the fringe of the massive Waltabu Valley jungle. This facility was abandoned after the fall of the League, but eventually reclaimed after the First Succession War, by a local medical research company called Sadalbari Solutions. Today, Sadalbari Solutions operates a strong, interplanetary corporation that develops and sells everything from specialized dietary supplements to anticancer treatments. The company uses the former MediTech R and D facility as its corporate headquarters, based on the large, northern continent of Aberlani. Sadalbari‘s chief port city of Delhirahn is located on the nearby island-continent of New Kenya. The planetary capital, Ramolia, is situated in the Green Valley region on the planet's large, southern polar continent of Beth'lamel.
     landmass:
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Aberlani
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Beth'lamel
         capital:
-          source: MWDA world profiles
+          source: DA:RW
           value: Ramolia
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: New Kenya
     satellite:
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Meche
         size: medium
         icon: oddmoon1
@@ -134,6 +113,11 @@ planet:
         population: 27412153.0
       - date: '2341-01-01'
         socioIndustrial: C-C-C-C-F
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '2350-01-01'
         population: 46946234.0
       - date: '2360-01-01'
@@ -182,6 +166,18 @@ planet:
         population: 1347442035.0
       - date: '2570-01-01'
         population: 1377773876.0
+      - date: '2571-01-01'
+        # administration: DC | Benjamin Military District | Proserpina Prefecture
+        # administration: DC | Benjamin Military District | Proserpina Prefecture
+        # administration: DC | Benjamin Military District | Proserpina Prefecture
+        # administration: DC | Benjamin Military District | Proserpina Prefecture
+        # administration: DC | Benjamin Military District | Proserpina Prefecture
+        # administration: DC | Benjamin Military District | Proserpina Prefecture
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - DC
       - date: '2580-01-01'
         population: 1403709328.0
       - date: '2590-01-01'
@@ -296,7 +292,25 @@ planet:
         population: 1365463715.0
       - date: '3080-01-01'
         population: 1367376703.0
+      - date: '3081-01-01'
+        # administration: ROS | Prefecture III
+        # administration: ROS | Prefecture III
+        # administration: ROS | Prefecture III
+        # administration: ROS | Prefecture III
+        # administration: ROS | Prefecture III
+        # administration: ROS | Prefecture III
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ROS
       - date: '3081-12-04'
+        # administration: ROS | Prefecture III
+        # administration: ROS | Prefecture III
+        # administration: ROS | Prefecture III
+        # administration: ROS | Prefecture III
+        # administration: ROS | Prefecture III
+        # administration: ROS | Prefecture III
         faction:
           source: canon
           value:
@@ -313,6 +327,12 @@ planet:
         population: 1369566257.0
       - date: '3130-01-01'
         population: 1372308130.0
+      - date: '3135-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3135-10-01'
         faction:
           source: canon
@@ -320,7 +340,25 @@ planet:
             - IND
       - date: '3140-01-01'
         population: 1380014614.0
+      - date: '3145-01-01'
+        # administration: DC | Benjamin Military District | Proserpina Prefecture
+        # administration: DC | Benjamin Military District | Proserpina Prefecture
+        # administration: DC | Benjamin Military District | Proserpina Prefecture
+        # administration: DC | Benjamin Military District | Proserpina Prefecture
+        # administration: DC | Benjamin Military District | Proserpina Prefecture
+        # administration: DC | Benjamin Military District | Proserpina Prefecture
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - DC
       - date: '3145-01-21'
+        # administration: DC | Benjamin Military District | Proserpina Prefecture
+        # administration: DC | Benjamin Military District | Proserpina Prefecture
+        # administration: DC | Benjamin Military District | Proserpina Prefecture
+        # administration: DC | Benjamin Military District | Proserpina Prefecture
+        # administration: DC | Benjamin Military District | Proserpina Prefecture
+        # administration: DC | Benjamin Military District | Proserpina Prefecture
         faction:
           source: canon
           value:

@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -20,11 +20,13 @@ sucsId: 359
 xcood: -277.973
 ycood: 5.192
 spectralType:
-  source: 'Handbook: House Steiner, pg. 76'
+  source: 'HB:HS'
   value: G4V
+  page: 76
 primarySlot:
-  source: 'Handbook: House Steiner, pg. 76'
+  source: 'HB:HS'
   value: 2
+  page: 76
 event:
   - date: '2387-09-03'
     zenithCharge: yes
@@ -49,32 +51,39 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.63
     sysPos:
-      source: 'Handbook: House Steiner, pg. 76'
+      source: 'HB:HS'
       value: 2
+      page: 76
     icon: green10
     pressure:
-      source: 'Handbook: House Steiner, pg. 76'
+      source: 'HB:HS'
       value: STANDARD
+      page: 76
     atmosphere:
-      source: 'Handbook: House Steiner, pg. 76'
+      source: 'HB:HS'
       value: BREATHABLE
+      page: 76
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'Handbook: House Steiner, pg. 76'
+      source: 'HB:HS'
       value: 0.78
+      page: 76
     diameter: 12289
     density: 4.46034608996
     dayLength: 26
     yearLength: 1.1
     temperature:
-      source: 'Handbook: House Steiner, pg. 76'
+      source: 'HB:HS'
       value: 54
+      page: 76
     water:
-      source: 'Handbook: House Steiner, pg. 76'
+      source: 'HB:HS'
       value: 44
+      page: 76
     lifeForm:
-      source: 'Handbook: House Steiner, pg. 76'
+      source: 'HB:HS'
       value: BIRD
+      page: 76
     desc: |-
       Bolan is a dry, mountainous world with just enough natural resources to support the planet's populace and a modest level of industrialization. Much of the industry was crippled during the 1st Succession War when the Free Worlds League abandoned the planet and used nuclear weapons on the factories as they were departing. Industry on planet has been slowly recovering ever since. Unfortunately, many locations on planet, including the entire continent of Sabari, which was once the hub of trade and major military bases in the Star League era, are uninhabited and still scarred with radiation.
 
@@ -83,17 +92,21 @@ planet:
       Bolan was primarily colonized by settlers from India, Pakistan and Afghanistan.
     landmass:
       - name:
-          source: 'Handbook: House Steiner, pg. 76'
+          source: 'HB:HS'
           value: Kashmir
+          page: 76
         capital:
-          source: 'Handbook: House Steiner, pg. 76'
+          source: 'HB:HS'
           value: Bolan City
+          page: 76
       - name:
-          source: 'Handbook: House Steiner, pg. 76'
+          source: 'HB:HS'
           value: Sabari
+          page: 76
       - name:
-          source: 'Handbook: House Steiner, pg. 76'
+          source: 'HB:HS'
           value: Sakété
+          page: 76
     event:
       - date: '2267-12-22'
         faction:
@@ -129,6 +142,12 @@ planet:
           source: canon
           value:
             - LA
+      - date: '2366-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '2370-01-01'
         population: 73587337.0
       - date: '2380-01-01'
@@ -234,7 +253,25 @@ planet:
         population: 682673437.0
       - date: '2780-01-01'
         population: 681345480.0
+      - date: '2786-01-01'
+        # administration: LA | Protectorate of Donegal | Furillo Province
+        # administration: LA | Protectorate of Donegal | Furillo Province
+        # administration: LA | Protectorate of Donegal | Furillo Province
+        # administration: LA | Protectorate of Donegal | Furillo Province
+        # administration: LA | Protectorate of Donegal | Furillo Province
+        # administration: LA | Protectorate of Donegal | Furillo Province
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '2786-08-13'
+        # administration: LA | Protectorate of Donegal | Furillo Province
+        # administration: LA | Protectorate of Donegal | Furillo Province
+        # administration: LA | Protectorate of Donegal | Furillo Province
+        # administration: LA | Protectorate of Donegal | Furillo Province
+        # administration: LA | Protectorate of Donegal | Furillo Province
+        # administration: LA | Protectorate of Donegal | Furillo Province
         faction:
           source: canon
           value:
@@ -294,8 +331,25 @@ planet:
       - date: '3030-01-01'
         population: 526747333.0
       - date: '3040-01-01'
+        # administration: FC | Tamarind March | Bolan Operational Area
+        # administration: FC | Tamarind March | Bolan Operational Area
+        # administration: FC | Tamarind March | Bolan Operational Area
+        # administration: FC | Tamarind March | Bolan Operational Area
+        # administration: FC | Tamarind March | Bolan Operational Area
+        # administration: FC | Tamarind March | Bolan Operational Area
         population: 531562610.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
+        # administration: FC | Tamarind March | Bolan Operational Area
+        # administration: FC | Tamarind March | Bolan Operational Area
+        # administration: FC | Tamarind March | Bolan Operational Area
+        # administration: FC | Tamarind March | Bolan Operational Area
+        # administration: FC | Tamarind March | Bolan Operational Area
+        # administration: FC | Tamarind March | Bolan Operational Area
         faction:
           source: canon
           value:
@@ -306,7 +360,25 @@ planet:
           value: B-C-B-C-C
       - date: '3050-01-01'
         population: 536958596.0
+      - date: '3057-01-01'
+        # administration: LA | Tamarind March | Bolan Operational Area
+        # administration: LA | Tamarind March | Bolan Operational Area
+        # administration: LA | Tamarind March | Bolan Operational Area
+        # administration: LA | Tamarind March | Bolan Operational Area
+        # administration: LA | Tamarind March | Bolan Operational Area
+        # administration: LA | Tamarind March | Bolan Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '3057-09-18'
+        # administration: LA | Bolan Province | District Capital
+        # administration: LA | Bolan Province | District Capital
+        # administration: LA | Bolan Province | District Capital
+        # administration: LA | Bolan Province | District Capital
+        # administration: LA | Bolan Province | District Capital
+        # administration: LA | Bolan Province | District Capital
         faction:
           source: canon
           value:
@@ -331,6 +403,12 @@ planet:
             - FC
             - LA
       - date: '3064-07-21'
+        # administration: LA | Bolan Province | District Capital
+        # administration: LA | Bolan Province | District Capital
+        # administration: LA | Bolan Province | District Capital
+        # administration: LA | Bolan Province | District Capital
+        # administration: LA | Bolan Province | District Capital
+        # administration: LA | Bolan Province | District Capital
         faction:
           source: canon
           value:
@@ -365,11 +443,23 @@ planet:
           value:
             - FWL
       - date: '3151-01-01'
+        # administration: FWL | Duchy of Tammarind-Abbey
+        # administration: FWL | Duchy of Tammarind-Abbey
+        # administration: FWL | Duchy of Tammarind-Abbey
+        # administration: FWL | Duchy of Tammarind-Abbey
+        # administration: FWL | Duchy of Tammarind-Abbey
+        # administration: FWL | Duchy of Tammarind-Abbey
         faction:
           source: sucs
           value:
             - FWL
       - date: '3151-06-16'
+        # administration: LA | Bolan Province | District Capital
+        # administration: LA | Bolan Province | District Capital
+        # administration: LA | Bolan Province | District Capital
+        # administration: LA | Bolan Province | District Capital
+        # administration: LA | Bolan Province | District Capital
+        # administration: LA | Bolan Province | District Capital
         faction:
           source: canon
           value:

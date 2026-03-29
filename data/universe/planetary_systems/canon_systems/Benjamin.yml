@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -20,10 +20,10 @@ sucsId: 302
 xcood: 123.977
 ycood: 134.529
 spectralType:
-  source: House Kurita
+  source: HB:HK
   value: M1V
 primarySlot:
-  source: House Kurita
+  source: HB:HK
   value: 3
 event:
   - date: '2376-03-17'
@@ -83,7 +83,7 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.2
     sysPos:
-      source: House Kurita
+      source: HB:HK
       value: 3
     icon: green14
     pressure:
@@ -105,7 +105,7 @@ planet:
       source: canon
       value: 51
     lifeForm:
-      source: House Kurita
+      source: HB:HK
       value: MAMMAL
     desc: |-
       Benjamin is a large planet that is barely habitable due to its dim sun. In order to make the planet more liveable early engineers installed twenty ‘mini-suns’ into orbit which act much like jumpship solar sails and help collect and redirect more sunlight at the surface of the planet. Despite the dim sun, Benjamin manages a cool but temperate climate that allows for the the growth of hardier crops and livestock that can survive the colder temperatures. While Benjamin does not possess abundant natural resources it does possess some deposits of petroleum and coal which make up the backbone of the limited industry on planet, which primarily produces parts for wheeled vehicles. While the light industry and modest agriculture concerns do not make Benjamin a standout planet, the fact that the planet is a Military District capital does. The entire Benjamin Military District is run from the sprawling administrative center located in the planetary capital, Deber City.
@@ -114,17 +114,20 @@ planet:
     smallMoons: 6
     landmass:
       - name:
-          source: 'Objectives: Draconis Combine, pg. 23'
+          source: 'Obj:DC'
           value: Castano
+          page: 23
         capital:
-          source: House Kurita
+          source: HB:HK
           value: Deber City
       - name:
-          source: 'Objectives: Draconis Combine, pg. 23'
+          source: 'Obj:DC'
           value: Gojjam
+          page: 23
       - name:
-          source: 'Objectives: Draconis Combine, pg. 23'
+          source: 'Obj:DC'
           value: Osaka
+          page: 23
     event:
       - date: '2169-05-09'
         faction:
@@ -197,6 +200,12 @@ planet:
           value:
             - AG
       - date: '2319-09-29'
+        # administration: DC | Benjamin Military District | Kajikazawa Prefecture
+        # administration: DC | Benjamin Military District | Kajikazawa Prefecture
+        # administration: DC | Benjamin Military District | Kajikazawa Prefecture
+        # administration: DC | Benjamin Military District | Kajikazawa Prefecture
+        # administration: DC | Benjamin Military District | Kajikazawa Prefecture
+        # administration: DC | Benjamin Military District | Kajikazawa Prefecture
         faction:
           source: canon
           value:
@@ -418,6 +427,12 @@ planet:
             - DC
             - CNC
       - date: '3072-12-22'
+        # administration: DC | Benjamin Military District | Benjamin Prefecture
+        # administration: DC | Benjamin Military District | Benjamin Prefecture
+        # administration: DC | Benjamin Military District | Benjamin Prefecture
+        # administration: DC | Benjamin Military District | Benjamin Prefecture
+        # administration: DC | Benjamin Military District | Benjamin Prefecture
+        # administration: DC | Benjamin Military District | Benjamin Prefecture
         faction:
           source: canon
           value:

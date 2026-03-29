@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Valil'yevskiy
-sucsId: 2649
+sucsId: 2650
 xcood: -329.572
 ycood: -178.153
 spectralType: G3V
@@ -199,6 +199,12 @@ planet:
         population: 238189290.0
       - date: '3080-01-01'
         population: 240583132.0
+      - date: '3081-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3081-11-18'
         faction:
           source: canon
@@ -220,6 +226,12 @@ planet:
         hpg: X
       - date: '3140-01-01'
         population: 248953391.0
+      - date: '3145-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FWL
       - date: '3145-05-01'
         faction:
           source: canon

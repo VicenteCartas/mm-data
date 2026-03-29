@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Olafsvik
-sucsId: 1931
+sucsId: 1932
 xcood: -176.532
 ycood: -239.114
 spectralType: G7V
@@ -119,6 +119,12 @@ planet:
       - date: '2270-01-01'
         population: 1337841.0
       - date: '2271-06-01'
+        # administration: FWL | Principality of Regulus
+        # administration: FWL | Principality of Regulus
+        # administration: FWL | Principality of Regulus
+        # administration: FWL | Principality of Regulus
+        # administration: FWL | Principality of Regulus
+        # administration: FWL | Principality of Regulus
         faction:
           source: canon
           value:
@@ -304,8 +310,26 @@ planet:
           source: canon
           value:
             - PR
+      - date: '3079-01-01'
+        # administration: FWL | Regulan Free States
+        # administration: FWL | Regulan Free States
+        # administration: FWL | Regulan Free States
+        # administration: FWL | Regulan Free States
+        # administration: FWL | Regulan Free States
+        # administration: FWL | Regulan Free States
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FWL
       - date: '3080-01-01'
         population: 2897413855.0
+      - date: '3081-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - RFS
       - date: '3086-02-01'
         faction:
           source: canon
@@ -315,6 +339,12 @@ planet:
         population: 2923023615.0
       - date: '3092-01-01'
         socioIndustrial: C-B-C-A-F
+      - date: '3095-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - RFS
       - date: '3100-01-01'
         population: 2958902922.0
       - date: '3110-01-01'
@@ -323,6 +353,11 @@ planet:
         population: 3061847724.0
       - date: '3130-01-01'
         population: 3111231302.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - RF
       - date: '3140-01-01'
         population: 3175352231.0
       - date: '3145-01-01'
@@ -333,6 +368,12 @@ planet:
           value:
             - FWL
       - date: '3151-01-01'
+        # administration: FWL | Regulan Fiefs
+        # administration: FWL | Regulan Fiefs
+        # administration: FWL | Regulan Fiefs
+        # administration: FWL | Regulan Fiefs
+        # administration: FWL | Regulan Fiefs
+        # administration: FWL | Regulan Fiefs
         faction:
           source: sucs
           value:

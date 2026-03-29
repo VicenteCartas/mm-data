@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: Great Gorge
-sucsId: 999
+sucsId: 1000
 xcood: 492.678
 ycood: -266.866
 spectralType:
-  source: House Davion
+  source: HB:HD
   value: A3V
 primarySlot:
-  source: House Davion
+  source: HB:HD
   value: 5
 planet:
   - name: Dĕdek
@@ -47,8 +47,7 @@ planet:
     icon: greenhouse27
     pressure: HIGH
     atmosphere: TOXIC_CAUSTIC
-    composition: Nitrogen and Carbon Dioxide, plus trace amounts of Argon and Sulfuric
-      Acid
+    composition: Nitrogen and Carbon Dioxide, plus trace amounts of Argon and Sulfuric Acid
     gravity: 0.8
     diameter: 10500
     density: 5.3284
@@ -99,7 +98,7 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 6.72
     sysPos:
-      source: House Davion
+      source: HB:HD
       value: 5
     icon: green43
     pressure: STANDARD
@@ -113,7 +112,7 @@ planet:
     temperature: 27
     water: 74
     lifeForm:
-      source: House Davion
+      source: HB:HD
       value: PLANT
     desc: |-
       Great Gorge is a planet with little to draw in settlers. The planet has a thin atmosphere, scarce water, and only primitive plant-like lifeforms. Additionally the planet is covered in rough mountains and canyons with little arable land. This all changed when a religious group from Terra decided to settle the planet just prior to the formation of the Star League.
@@ -127,7 +126,7 @@ planet:
           source: canon
           value: Wide Floor
         capital:
-          source: House Davion
+          source: HB:HD
           value: New Stockdon
     satellite:
       - name: South Bay 1
@@ -138,6 +137,12 @@ planet:
         icon: oddmoon3
     event:
       - date: '2365-10-04'
+        # administration: FS | Crucis March | Chirikof Operational Area
+        # administration: FS | Crucis March | Chirikof Operational Area
+        # administration: FS | Crucis March | Chirikof Operational Area
+        # administration: FS | Crucis March | Chirikof Operational Area
+        # administration: FS | Crucis March | Chirikof Operational Area
+        # administration: FS | Crucis March | Chirikof Operational Area
         faction:
           source: canon
           value:
@@ -296,8 +301,25 @@ planet:
       - date: '3030-01-01'
         population: 788866400.0
       - date: '3040-01-01'
+        # administration: FC | Crucis March | Chirikof Operational Area
+        # administration: FC | Crucis March | Chirikof Operational Area
+        # administration: FC | Crucis March | Chirikof Operational Area
+        # administration: FC | Crucis March | Chirikof Operational Area
+        # administration: FC | Crucis March | Chirikof Operational Area
+        # administration: FC | Crucis March | Chirikof Operational Area
         population: 794090138.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
+        # administration: FC | Crucis March | Chirikof Operational Area
+        # administration: FC | Crucis March | Chirikof Operational Area
+        # administration: FC | Crucis March | Chirikof Operational Area
+        # administration: FC | Crucis March | Chirikof Operational Area
+        # administration: FC | Crucis March | Chirikof Operational Area
+        # administration: FC | Crucis March | Chirikof Operational Area
         faction:
           source: canon
           value:
@@ -308,7 +330,25 @@ planet:
         population: 799028791.0
       - date: '3060-01-01'
         population: 805527207.0
+      - date: '3067-01-01'
+        # administration: FS | Crucis March | Chirikof Operational Area
+        # administration: FS | Crucis March | Chirikof Operational Area
+        # administration: FS | Crucis March | Chirikof Operational Area
+        # administration: FS | Crucis March | Chirikof Operational Area
+        # administration: FS | Crucis March | Chirikof Operational Area
+        # administration: FS | Crucis March | Chirikof Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FS
       - date: '3067-04-20'
+        # administration: FS | Crucis March | Chirikof Operational Area
+        # administration: FS | Crucis March | Chirikof Operational Area
+        # administration: FS | Crucis March | Chirikof Operational Area
+        # administration: FS | Crucis March | Chirikof Operational Area
+        # administration: FS | Crucis March | Chirikof Operational Area
+        # administration: FS | Crucis March | Chirikof Operational Area
         faction:
           source: canon
           value:
@@ -320,7 +360,25 @@ planet:
           source: canon
           value:
             - MC
+      - date: '3079-01-01'
+        # administration: FS | Periphery March | June Operational Area
+        # administration: FS | Periphery March | June Operational Area
+        # administration: FS | Periphery March | June Operational Area
+        # administration: FS | Periphery March | June Operational Area
+        # administration: FS | Periphery March | June Operational Area
+        # administration: FS | Periphery March | June Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FS
       - date: '3079-10-18'
+        # administration: FS | Periphery March | June Operational Area
+        # administration: FS | Periphery March | June Operational Area
+        # administration: FS | Periphery March | June Operational Area
+        # administration: FS | Periphery March | June Operational Area
+        # administration: FS | Periphery March | June Operational Area
+        # administration: FS | Periphery March | June Operational Area
         faction:
           source: canon
           value:
@@ -334,6 +392,18 @@ planet:
             - IND
       - date: '3090-01-01'
         population: 840920377.0
+      - date: '3095-01-01'
+        # administration: FS | Periphery March | June Operational Area
+        # administration: FS | Periphery March | June Operational Area
+        # administration: FS | Periphery March | June Operational Area
+        # administration: FS | Periphery March | June Operational Area
+        # administration: FS | Periphery March | June Operational Area
+        # administration: FS | Periphery March | June Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FS
       - date: '3100-01-01'
         population: 853117237.0
       - date: '3110-01-01'
@@ -342,6 +412,11 @@ planet:
         population: 879274362.0
       - date: '3130-01-01'
         population: 893813355.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3132-08-07'
         hpg:
           source: canon

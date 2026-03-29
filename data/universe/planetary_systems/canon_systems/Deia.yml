@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -20,11 +20,13 @@ sucsId: 677
 xcood: -176.045
 ycood: 303.685
 spectralType:
-  source: 'Operational Turning Points: Red Corsair, pg. 4'
+  source: 'OTP:RC'
   value: G5V
+  page: 4
 primarySlot:
-  source: 'Operational Turning Points: Red Corsair, pg. 4'
+  source: 'OTP:RC'
   value: 6
+  page: 4
 planet:
   - name: Scott's World
     type: DWARF_TERRESTRIAL
@@ -111,32 +113,39 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.9
     sysPos:
-      source: 'Operational Turning Points: Red Corsair, pg. 4'
+      source: 'OTP:RC'
       value: 6
+      page: 4
     icon: wet5
     pressure:
-      source: 'Operational Turning Points: Red Corsair, pg. 4'
+      source: 'OTP:RC'
       value: STANDARD
+      page: 4
     atmosphere:
-      source: 'Operational Turning Points: Red Corsair, pg. 4'
+      source: 'OTP:RC'
       value: BREATHABLE
+      page: 4
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'Operational Turning Points: Red Corsair, pg. 4'
+      source: 'OTP:RC'
       value: 1.0
+      page: 4
     diameter: 11385
     density: 6.172805743621
     dayLength: 24
     yearLength: 1.3
     temperature:
-      source: 'Operational Turning Points: Red Corsair, pg. 4'
+      source: 'OTP:RC'
       value: 24
+      page: 4
     water:
-      source: 'Operational Turning Points: Red Corsair, pg. 4'
+      source: 'OTP:RC'
       value: 79
+      page: 4
     lifeForm:
-      source: 'Operational Turning Points: Red Corsair, pg. 4'
+      source: 'OTP:RC'
       value: REPTILE
+      page: 4
     desc: |-
       Deia is a harsh planet deep in the Lyran interior, which protected it from the worst of the Succession Wars. Many of the original settlers died from the planet’s harsh conditions, with most of the survivors being Deists, allowing them to shape the planet over the following centuries. The population of Deia managed to eek out enough agriculture to feed the planet’s small population and mining of Deia’s abundant natural resources is the primary industry.
 
@@ -146,12 +155,19 @@ planet:
         capital: Vergette
     satellite:
       - name:
-          source: 'Operational Turning Points: Red Corsair, pg. 4'
+          source: 'OTP:RC'
           value: Honor
+          page: 4
         size: medium
         icon: oddmoon3
     event:
       - date: '2695-05-13'
+        # administration: LA | Protectorate of Donegal | Coventry Province
+        # administration: LA | Protectorate of Donegal | Coventry Province
+        # administration: LA | Protectorate of Donegal | Coventry Province
+        # administration: LA | Protectorate of Donegal | Coventry Province
+        # administration: LA | Protectorate of Donegal | Coventry Province
+        # administration: LA | Protectorate of Donegal | Coventry Province
         faction:
           source: canon
           value:
@@ -238,8 +254,25 @@ planet:
       - date: '3030-01-01'
         population: 226220002.0
       - date: '3040-01-01'
+        # administration: FC | Donegal March | Coventry Operational Area
+        # administration: FC | Donegal March | Coventry Operational Area
+        # administration: FC | Donegal March | Coventry Operational Area
+        # administration: FC | Donegal March | Coventry Operational Area
+        # administration: FC | Donegal March | Coventry Operational Area
+        # administration: FC | Donegal March | Coventry Operational Area
         population: 228790786.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
+        # administration: FC | Donegal March | Coventry Operational Area
+        # administration: FC | Donegal March | Coventry Operational Area
+        # administration: FC | Donegal March | Coventry Operational Area
+        # administration: FC | Donegal March | Coventry Operational Area
+        # administration: FC | Donegal March | Coventry Operational Area
+        # administration: FC | Donegal March | Coventry Operational Area
         faction:
           source: canon
           value:
@@ -254,11 +287,35 @@ planet:
           value: C-C-B-B-C
       - date: '3050-01-01'
         population: 231900404.0
+      - date: '3057-01-01'
+        # administration: LA | Donegal March | Coventry Operational Area
+        # administration: LA | Donegal March | Coventry Operational Area
+        # administration: LA | Donegal March | Coventry Operational Area
+        # administration: LA | Donegal March | Coventry Operational Area
+        # administration: LA | Donegal March | Coventry Operational Area
+        # administration: LA | Donegal March | Coventry Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '3057-12-01'
         faction:
           source: canon
           value:
             - ARDC
+      - date: '3058-01-01'
+        # administration: LA | Coventry Province | Melissia Theater
+        # administration: LA | Coventry Province | Melissia Theater
+        # administration: LA | Coventry Province | Melissia Theater
+        # administration: LA | Coventry Province | Melissia Theater
+        # administration: LA | Coventry Province | Melissia Theater
+        # administration: LA | Coventry Province | Melissia Theater
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '3060-01-01'
         population: 234348187.0
       - date: '3067-01-01'
@@ -266,6 +323,12 @@ planet:
           source: canon
           value: 235900000.0
       - date: '3067-04-24'
+        # administration: LA | Arc-Royal Theater
+        # administration: LA | Arc-Royal Theater
+        # administration: LA | Arc-Royal Theater
+        # administration: LA | Arc-Royal Theater
+        # administration: LA | Arc-Royal Theater
+        # administration: LA | Arc-Royal Theater
         faction:
           source: canon
           value:
@@ -305,6 +368,12 @@ planet:
         population: 257239610.0
       - date: '3145-01-01'
         population: 258270629.0
+      - date: '3152-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3152-06-01'
         faction:
           source: canon

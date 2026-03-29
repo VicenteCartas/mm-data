@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,15 +16,17 @@
 # affiliated with Microsoft.
 
 id: Dagda (Clan)
-sucsId: 2932
+sucsId: 2933
 xcood: -132.266
 ycood: 1603.856
 spectralType:
-  source: 'Historical: Operation Klondike, pg. 137'
+  source: 'His:OK'
   value: K4V
+  page: 137
 primarySlot:
-  source: 'Historical: Operation Klondike, pg. 137'
+  source: 'His:OK'
   value: 3
+  page: 137
 event:
   - date: '2787-06-15'
     nadirCharge: yes
@@ -68,67 +70,88 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.28
     sysPos:
-      source: 'Historical: Operation Klondike, pg. 137'
+      source: 'His:OK'
       value: 3
+      page: 137
     icon: green6
     pressure:
-      source: 'Historical: Operation Klondike, pg. 137'
+      source: 'His:OK'
       value: THIN
+      page: 137
     atmosphere:
-      source: 'Historical: Operation Klondike, pg. 137'
+      source: 'His:OK'
       value: BREATHABLE
+      page: 137
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'Historical: Operation Klondike, pg. 137'
+      source: 'His:OK'
       value: 1.1
+      page: 137
     diameter: 11205
     density: 6.898777148015
     dayLength: 23
     yearLength: 0.8
     temperature:
-      source: 'Historical: Operation Klondike, pg. 137'
+      source: 'His:OK'
       value: 25
+      page: 137
     water:
-      source: 'Historical: Operation Klondike, pg. 137'
+      source: 'His:OK'
       value: 60
+      page: 137
     lifeForm:
-      source: 'Historical: Operation Klondike, pg. 137'
+      source: 'His:OK'
       value: MAMMAL
+      page: 137
     desc: |-
       Dagda was the first of the Pentagon Worlds settled by the Star League in Exile. The planet is rich in minerals and was the primary source of many raw materials for the Star League in Exile.
 
       The Jade Falcon, totem animal of the Clan with the same name, is from Dagda.
     landmass:
       - name:
-          source: 'Historical: Operation Klondike, pg. 137'
+          source: 'His:OK'
           value: Dratha
+          page: 137
       - name:
-          source: 'Historical: Operation Klondike, pg. 137'
+          source: 'His:OK'
           value: Garda
+          page: 137
       - name:
-          source: 'Historical: Operation Klondike, pg. 137'
+          source: 'His:OK'
           value: Riva
+          page: 137
       - name:
-          source: 'Historical: Operation Klondike, pg. 137'
+          source: 'His:OK'
           value: Salò
+          page: 137
       - name:
-          source: 'Historical: Operation Klondike, pg. 137'
+          source: 'His:OK'
           value: San Biagio
+          page: 137
       - name:
-          source: 'Historical: Operation Klondike, pg. 137'
+          source: 'His:OK'
           value: Tenno
+          page: 137
     satellite:
       - name:
-          source: 'Historical: Operation Klondike, pg. 137'
+          source: 'His:OK'
           value: Aine
+          page: 137
         size: large
         icon: rock11
       - name:
-          source: 'Historical: Operation Klondike, pg. 137'
+          source: 'His:OK'
           value: Mebd
+          page: 137
         size: giant
         icon: rock4
     event:
+      - date: '2786-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - SLIE
       - date: '2786-07-31'
         faction:
           source: canon
@@ -153,6 +176,18 @@ planet:
         population: 561493.0
       - date: '2820-01-01'
         population: 406346.0
+      - date: '2821-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - C/I
+      - date: '2822-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CLAN
       - date: '2823-01-01'
         faction:
           source: canon
@@ -164,6 +199,11 @@ planet:
             - CW
       - date: '2830-01-01'
         population: 1003328.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CLAN
       - date: '2840-01-01'
         population: 2569334.0
       - date: '2850-01-01'
@@ -225,6 +265,12 @@ planet:
             - CGS
       - date: '3060-01-01'
         population: 51312632.0
+      - date: '3063-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CLAN
       - date: '3070-10-25'
         faction:
           source: canon
@@ -245,6 +291,12 @@ planet:
             - CSA
             - CCO
             - SOC
+      - date: '3075-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CLAN
       - date: '3075-07-26'
         faction:
           source: canon
@@ -255,6 +307,11 @@ planet:
         population:
           source: canon
           value: 52000000.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CSA
       - date: '3079-10-18'
         faction:
           source: canon

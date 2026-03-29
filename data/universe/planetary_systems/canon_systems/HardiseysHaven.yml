@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Hardisey's Haven
-sucsId: 2863
+sucsId: 2864
 xcood: -414.627
 ycood: -91.682
 spectralType: K8V
@@ -123,11 +123,23 @@ planet:
         population: 1492011.0
       - date: '3080-01-01'
         population: 1509419.0
+      - date: '3081-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3081-05-01'
         faction:
           source: canon
           value:
             - IND
+      - date: '3085-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ABN
       - date: '3090-01-01'
         population: 1529781.0
       - date: '3100-01-01'

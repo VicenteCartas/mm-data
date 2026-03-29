@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,15 +16,17 @@
 # affiliated with Microsoft.
 
 id: Quatre Belle
-sucsId: 2090
+sucsId: 2091
 xcood: 481.369
 ycood: 156.414
 spectralType:
-  source: Masters and Minions, pg. 166
+  source: M&M
   value: F4IV
+  page: 166
 primarySlot:
-  source: Masters and Minions, pg. 166
+  source: M&M
   value: 4
+  page: 166
 event:
   - date: '2449-10-15'
     zenithCharge: yes
@@ -80,63 +82,72 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 3.92
     sysPos:
-      source: Masters and Minions, pg. 166
+      source: M&M
       value: 4
+      page: 166
     icon: wet2
     pressure:
-      source: Masters and Minions, pg. 166
+      source: M&M
       value: STANDARD
+      page: 166
     atmosphere:
-      source: Masters and Minions, pg. 166
+      source: M&M
       value: BREATHABLE
+      page: 166
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: Masters and Minions, pg. 166
+      source: M&M
       value: 0.9
+      page: 166
     diameter: 12572
     density: 5.030975740322
     dayLength: 25
     yearLength: 7.9
     temperature:
-      source: Masters and Minions, pg. 166
+      source: M&M
       value: 35
+      page: 166
     water:
-      source: Masters and Minions, pg. 166
+      source: M&M
       value: 85
+      page: 166
     lifeForm:
-      source: Masters and Minions, pg. 166
+      source: M&M
       value: MAMMAL
-    desc: Quatre Belle is a pleasant breadbasket world with abundant natural resources.
-      As with most of the interior Outworlds Alliance planets, Quatre Belle’s industrial
-      and population centers were hit hard by Operation UNION HOLD. The damage was
-      so significant that the planet became little more than an agricultural center,
-      as most of the large cities and industry had been destroyed. When the Snow Ravens
-      joined the Outworlds Alliance, they chose to base their aerospace industries
-      in the Quatre Belle system and began by adding a mobile factory in orbit around
-      Pluto, one of the planet’s three moons, and reactivating the long-abandoned
-      Quatre Belle Shipyards already in orbit around Pluto.
+      page: 166
+    desc: Quatre Belle is a pleasant breadbasket world with abundant natural resources. As with most of the interior Outworlds Alliance planets, Quatre Belle’s industrial and population centers were hit hard by Operation UNION HOLD. The damage was so significant that the planet became little more than an agricultural center, as most of the large cities and industry had been destroyed. When the Snow Ravens joined the Outworlds Alliance, they chose to base their aerospace industries in the Quatre Belle system and began by adding a mobile factory in orbit around Pluto, one of the planet’s three moons, and reactivating the long-abandoned Quatre Belle Shipyards already in orbit around Pluto.
     landmass:
       - name:
-          source: Masters and Minions, pg. 166
+          source: M&M
           value: Alamance
+          page: 166
     satellite:
       - name:
-          source: Masters and Minions, pg. 166
+          source: M&M
           value: Gaia
+          page: 166
         size: medium
         icon: rock3
       - name:
-          source: Masters and Minions, pg. 166
+          source: M&M
           value: Isis
+          page: 166
         size: large
         icon: rock17
       - name:
-          source: Masters and Minions, pg. 166
+          source: M&M
           value: Pluto
+          page: 166
         size: medium
         icon: rock2
     event:
       - date: '2409-11-06'
+        # administration: OA | Alpheratz Province
+        # administration: OA | Alpheratz Province
+        # administration: OA | Alpheratz Province
+        # administration: OA | Alpheratz Province
+        # administration: OA | Alpheratz Province
+        # administration: OA | Alpheratz Province
         faction:
           source: canon
           value:
@@ -296,6 +307,12 @@ planet:
         population: 14659099.0
       - date: '3070-01-01'
         population: 14840519.0
+      - date: '3075-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CSR
       - date: '3079-01-01'
         population:
           source: canon

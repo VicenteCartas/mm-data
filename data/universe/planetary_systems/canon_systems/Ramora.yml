@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,15 +16,16 @@
 # affiliated with Microsoft.
 
 id: Ramora
-sucsId: 2116
+sucsId: 2117
 xcood: 491.303
 ycood: 99.048
 spectralType:
   source: canon
   value: G3V
 primarySlot:
-  source: Periphery (1ed), pg. 120
+  source: Per1e
   value: 3
+  page: 120
 event:
   - date: '2656-01-07'
     nadirCharge: yes
@@ -66,8 +67,9 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 1.0
     sysPos:
-      source: Periphery (1ed), pg. 120
+      source: Per1e
       value: 3
+      page: 120
     icon: green31
     pressure:
       source: canon
@@ -88,15 +90,10 @@ planet:
       source: canon
       value: 54
     lifeForm:
-      source: Periphery (1ed), pg. 120
+      source: Per1e
       value: MAMMAL
-    desc: Ramora is a comfortable, semi-tropical planet with special importance to
-      the Outworlds Alliance as one of their premier military industrial worlds after
-      Operation UNION HOLD ravaged much of the rest of the Alliance’s industry. Ramora
-      is home to one of the two United Outworlders Corporation’s major factories and
-      as of 3025, saw to the production of Lightning and Seydlitz fighters. Factories
-      on and in orbit around Ramora were greatly expanded in the 3060s and 3070s,
-      especially after the Snow Ravens joined the Alliance.
+      page: 120
+    desc: Ramora is a comfortable, semi-tropical planet with special importance to the Outworlds Alliance as one of their premier military industrial worlds after Operation UNION HOLD ravaged much of the rest of the Alliance’s industry. Ramora is home to one of the two United Outworlders Corporation’s major factories and as of 3025, saw to the production of Lightning and Seydlitz fighters. Factories on and in orbit around Ramora were greatly expanded in the 3060s and 3070s, especially after the Snow Ravens joined the Alliance.
     landmass:
       - name:
           source: canon
@@ -116,6 +113,12 @@ planet:
         icon: rock3
     event:
       - date: '2623-09-27'
+        # administration: OA | Ramora Province | District Capital
+        # administration: OA | Ramora Province | District Capital
+        # administration: OA | Ramora Province | District Capital
+        # administration: OA | Ramora Province | District Capital
+        # administration: OA | Ramora Province | District Capital
+        # administration: OA | Ramora Province | District Capital
         faction:
           source: canon
           value:

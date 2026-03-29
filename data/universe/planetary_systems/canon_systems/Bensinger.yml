@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -106,7 +106,19 @@ planet:
       - name: Sheldon
       - name: Fifi
     event:
+      - date: '2341-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - RWR
       - date: '2341-08-28'
+        # administration: RWR | Apollo Province
+        # administration: RWR | Apollo Province
+        # administration: RWR | Apollo Province
+        # administration: RWR | Apollo Province
+        # administration: RWR | Apollo Province
+        # administration: RWR | Apollo Province
         faction:
           source: canon
           value:
@@ -207,6 +219,12 @@ planet:
       - date: '2770-01-01'
         population: 309357766.0
       - date: '2779-03-20'
+        # administration: LA | Tamar Pact | Trellshire
+        # administration: LA | Tamar Pact | Trellshire
+        # administration: LA | Tamar Pact | Trellshire
+        # administration: LA | Tamar Pact | Trellshire
+        # administration: LA | Tamar Pact | Trellshire
+        # administration: LA | Tamar Pact | Trellshire
         faction:
           source: canon
           value:
@@ -267,10 +285,28 @@ planet:
         population: 226062061.0
       - date: '3030-01-01'
         population: 224881946.0
+      - date: '3040-01-01'
+        # administration: FC | Tamar March | Blackjack Operational Area
+        # administration: FC | Tamar March | Blackjack Operational Area
+        # administration: FC | Tamar March | Blackjack Operational Area
+        # administration: FC | Tamar March | Blackjack Operational Area
+        # administration: FC | Tamar March | Blackjack Operational Area
+        # administration: FC | Tamar March | Blackjack Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-03-24'
         population: 226733559.0
         socioIndustrial: B-D-C-B-B
       - date: '3040-01-19'
+        # administration: FC | Tamar March | Blackjack Operational Area
+        # administration: FC | Tamar March | Blackjack Operational Area
+        # administration: FC | Tamar March | Blackjack Operational Area
+        # administration: FC | Tamar March | Blackjack Operational Area
+        # administration: FC | Tamar March | Blackjack Operational Area
+        # administration: FC | Tamar March | Blackjack Operational Area
         faction:
           source: canon
           value:
@@ -279,11 +315,22 @@ planet:
         socioIndustrial: A-C-B-B-A
       - date: '3050-01-01'
         population: 228646143.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CJF
       - date: '3050-03-01'
         faction:
           source: canon
           value:
             - CJF
+      - date: '3057-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CSV
       - date: '3057-02-01'
         faction:
           source: canon

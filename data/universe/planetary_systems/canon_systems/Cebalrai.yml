@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -20,10 +20,10 @@ sucsId: 500
 xcood: -8.289
 ycood: 119.379
 spectralType:
-  source: MWDA world profiles
+  source: DA:RW
   value: K2III
 primarySlot:
-  source: MWDA world profiles
+  source: DA:RW
   value: 3
 event:
   - date: '2805-07-17'
@@ -69,31 +69,31 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.7
     sysPos:
-      source: MWDA world profiles
+      source: DA:RW
       value: 3
     icon: green39
     pressure:
-      source: MWDA world profiles
+      source: DA:RW
       value: THIN
     atmosphere:
-      source: MWDA world profiles
+      source: DA:RW
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: MWDA world profiles
+      source: DA:RW
       value: 0.84
     diameter: 11727
     density: 5.033706706206
     dayLength: 21
     yearLength: 1.0
     temperature:
-      source: MWDA world profiles
+      source: DA:RW
       value: 53
     water:
-      source: MWDA world profiles
+      source: DA:RW
       value: 48
     lifeForm:
-      source: MWDA world profiles
+      source: DA:RW
       value: PLANT
     desc: |-
       Less than hospitable, even before the arrival of human colonists, Cebalrai was settled more as a waystation than as a home to millions of people. With a thin atmosphere and a flimsy ozone layer, this world is continuously doused by far too much solar radiation from its giant K2 star, and so the first colonists to this world—and all their descendants since—erected partially reflective domes and screens over their structures and smaller communities.
@@ -105,28 +105,46 @@ planet:
       Cebalrai‘s capital city, New Wade, is located on the north polar continent of Sarrina, and is also home to the planet‘s single major spaceport. Lennori, the planet‘s other northern continent, is only habitable into its middle latitudes, as temperatures and other solar radiation hazards closer to the equatorial zones have rendered the southern reaches and the nearby equatorial continent of Hellesdon barren desert wastes.
     landmass:
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Dragga
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Hellesdon
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Lennori
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Sarrina
         capital:
-          source: MWDA world profiles
+          source: DA:RW
           value: New Wade
     satellite:
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Yonas
         size: large
         icon: rock15
     event:
+      - date: '2750-01-01'
+        # administration: LA | Federation of Skye | Kannon Shire
+        # administration: LA | Federation of Skye | Kannon Shire
+        # administration: LA | Federation of Skye | Kannon Shire
+        # administration: LA | Federation of Skye | Kannon Shire
+        # administration: LA | Federation of Skye | Kannon Shire
+        # administration: LA | Federation of Skye | Kannon Shire
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '2750-12-24'
+        # administration: LA | Federation of Skye | Kannon Shire
+        # administration: LA | Federation of Skye | Kannon Shire
+        # administration: LA | Federation of Skye | Kannon Shire
+        # administration: LA | Federation of Skye | Kannon Shire
+        # administration: LA | Federation of Skye | Kannon Shire
+        # administration: LA | Federation of Skye | Kannon Shire
         faction:
           source: canon
           value:
@@ -166,6 +184,12 @@ planet:
       - date: '2890-01-01'
         population: 493769679.0
       - date: '2900-01-16'
+        # administration: DC | Dieron Military District | Vega Prefecture
+        # administration: DC | Dieron Military District | Vega Prefecture
+        # administration: DC | Dieron Military District | Vega Prefecture
+        # administration: DC | Dieron Military District | Vega Prefecture
+        # administration: DC | Dieron Military District | Vega Prefecture
+        # administration: DC | Dieron Military District | Vega Prefecture
         faction:
           source: canon
           value:
@@ -196,6 +220,12 @@ planet:
       - date: '3020-01-01'
         population: 646518727.0
       - date: '3025-05-18'
+        # administration: DC | Dieron Military District | Vega Prefecture
+        # administration: DC | Dieron Military District | Vega Prefecture
+        # administration: DC | Dieron Military District | Vega Prefecture
+        # administration: DC | Dieron Military District | Vega Prefecture
+        # administration: DC | Dieron Military District | Vega Prefecture
+        # administration: DC | Dieron Military District | Vega Prefecture
         faction:
           source: canon
           value:
@@ -217,6 +247,12 @@ planet:
           source: canon
           value:
             - WOB
+      - date: '3075-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - Stone
       - date: '3075-08-21'
         faction:
           source: canon
@@ -230,7 +266,25 @@ planet:
             - Stone
       - date: '3080-01-01'
         population: 637704774.0
+      - date: '3081-01-01'
+        # administration: ROS | Prefecture I
+        # administration: ROS | Prefecture I
+        # administration: ROS | Prefecture I
+        # administration: ROS | Prefecture I
+        # administration: ROS | Prefecture I
+        # administration: ROS | Prefecture I
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ROS
       - date: '3081-04-28'
+        # administration: ROS | Prefecture I
+        # administration: ROS | Prefecture I
+        # administration: ROS | Prefecture I
+        # administration: ROS | Prefecture I
+        # administration: ROS | Prefecture I
+        # administration: ROS | Prefecture I
         faction:
           source: canon
           value:
@@ -249,6 +303,12 @@ planet:
         population: 670668811.0
       - date: '3132-08-07'
         hpg: X
+      - date: '3135-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3135-10-01'
         faction:
           source: canon
@@ -256,7 +316,25 @@ planet:
             - IND
       - date: '3140-01-01'
         population: 682577068.0
+      - date: '3145-01-01'
+        # administration: RD | Region 3 | Vega Protectorate
+        # administration: RD | Region 3 | Vega Protectorate
+        # administration: RD | Region 3 | Vega Protectorate
+        # administration: RD | Region 3 | Vega Protectorate
+        # administration: RD | Region 3 | Vega Protectorate
+        # administration: RD | Region 3 | Vega Protectorate
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - RD
       - date: '3145-02-03'
+        # administration: RD | Region 3 | Vega Protectorate
+        # administration: RD | Region 3 | Vega Protectorate
+        # administration: RD | Region 3 | Vega Protectorate
+        # administration: RD | Region 3 | Vega Protectorate
+        # administration: RD | Region 3 | Vega Protectorate
+        # administration: RD | Region 3 | Vega Protectorate
         faction:
           source: canon
           value:

@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,15 +16,16 @@
 # affiliated with Microsoft.
 
 id: Hardcore
-sucsId: 1054
+sucsId: 1055
 xcood: -198.284
 ycood: -473.209
 spectralType:
   source: canon
   value: G3V
 primarySlot:
-  source: Periphery (1ed), pg. 103
+  source: Per1e
   value: 4
+  page: 103
 event:
   - date: '2627-03-28'
     zenithCharge: yes
@@ -83,8 +84,9 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.7
     sysPos:
-      source: Periphery (1ed), pg. 103
+      source: Per1e
       value: 4
+      page: 103
     icon: green8
     pressure: HIGH
     atmosphere: BREATHABLE
@@ -97,8 +99,9 @@ planet:
     temperature: 42
     water: 28
     lifeForm:
-      source: Periphery (1ed), pg. 103
+      source: Per1e
       value: MAMMAL
+      page: 103
     desc: |-
       3025 - Hardcore is one of the Magistracy's most successful entertainment centers and the pleasure planet caters to the elite of Canopian society, as well as numerous wealth Inner Sphere clients. The planet is home to over 75,000 full-time entertainers of nearly every conceivable type of entertainment or pleasure a tourist could dream of and serves over ten-million visitors annually. Hardcore is a warm temperate world with beautiful beaches and landscapes.
 
@@ -136,7 +139,19 @@ planet:
             - SL
       - date: '2590-01-01'
         population: 11844325.0
+      - date: '2596-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - MOC
       - date: '2597-03-21'
+        # administration: MOC | Canopus District
+        # administration: MOC | Canopus District
+        # administration: MOC | Canopus District
+        # administration: MOC | Canopus District
+        # administration: MOC | Canopus District
+        # administration: MOC | Canopus District
         faction:
           source: canon
           value:

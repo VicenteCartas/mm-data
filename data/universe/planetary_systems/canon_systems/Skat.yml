@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: Skat
-sucsId: 2350
+sucsId: 2351
 xcood: 93.311
 ycood: 26.833
 spectralType:
-  source: MWDA world profiles
+  source: DA:RW
   value: F7V
 primarySlot:
-  source: MWDA world profiles
+  source: DA:RW
   value: 3
 event:
   - date: '2350-03-27'
@@ -77,84 +77,65 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 1.3
     sysPos:
-      source: MWDA world profiles
+      source: DA:RW
       value: 3
     icon: green31
     pressure:
-      source: MWDA world profiles
+      source: DA:RW
       value: STANDARD
     atmosphere:
-      source: MWDA world profiles
+      source: DA:RW
       value: TAINTED_POISON
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: MWDA world profiles
+      source: DA:RW
       value: 1.22
     diameter: 13960
     density: 6.141794300263
     dayLength: 18
     yearLength: 1.9
     temperature:
-      source: MWDA world profiles
+      source: DA:RW
       value: 33
     water:
-      source: MWDA world profiles
+      source: DA:RW
       value: 57
     lifeForm:
-      source: MWDA world profiles
+      source: DA:RW
       value: FISH
-    desc: In most respects, Skat is an unremarkable world with four large continents
-      covering almost half the planetary surface, three tiny asteroid moons in close
-      orbit, and slightly more ozone in the atmosphere than healthy for breathing
-      without either respirators or specialized antioxidant medication. The planet‘s
-      first settlers actually hailed from two distinct colonial groups—one of Japanese
-      and Korean descent, and the other from a combined German-Austrian venture. The
-      groups staked out two separate continents for settlement, with the Japanese
-      and Koreans claiming the southern landmass of Quayling, and the German-Austrian
-      group claiming Freiheim. The two colonial groups expanded to the other two continents
-      of Uchida and Unzervalt over the next several decades, when a dispute over fishing
-      territory and an island chain finally erupted into open conflict during the
-      Age of War. The conflict was settled thanks to intervention by the Terran Hegemony,
-      and Skat became part of that alliance until the fall of the Star League. Today,
-      after falling under the dominion of Houses Davion and Kurita in turn during
-      the Succession Wars, Skat‘s dominantly Germanic and Asian population continues
-      to maintain a dual-cultural world. After rising and falling from prominence
-      as the House Lords changed, the cities of Aneheim, along Freiheim‘s Kirschner
-      River, and Inyong City, on Quayling‘s southern coast, once again form the twin
-      capitals of the planet. Skat‘s largest spaceport, Jinyiang, is located on Uchida,
-      while the city of Londerhalt is arguably the planet‘s largest industrial center.
+    desc: In most respects, Skat is an unremarkable world with four large continents covering almost half the planetary surface, three tiny asteroid moons in close orbit, and slightly more ozone in the atmosphere than healthy for breathing without either respirators or specialized antioxidant medication. The planet‘s first settlers actually hailed from two distinct colonial groups—one of Japanese and Korean descent, and the other from a combined German-Austrian venture. The groups staked out two separate continents for settlement, with the Japanese and Koreans claiming the southern landmass of Quayling, and the German-Austrian group claiming Freiheim. The two colonial groups expanded to the other two continents of Uchida and Unzervalt over the next several decades, when a dispute over fishing territory and an island chain finally erupted into open conflict during the Age of War. The conflict was settled thanks to intervention by the Terran Hegemony, and Skat became part of that alliance until the fall of the Star League. Today, after falling under the dominion of Houses Davion and Kurita in turn during the Succession Wars, Skat‘s dominantly Germanic and Asian population continues to maintain a dual-cultural world. After rising and falling from prominence as the House Lords changed, the cities of Aneheim, along Freiheim‘s Kirschner River, and Inyong City, on Quayling‘s southern coast, once again form the twin capitals of the planet. Skat‘s largest spaceport, Jinyiang, is located on Uchida, while the city of Londerhalt is arguably the planet‘s largest industrial center.
     landmass:
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Freiheim
         capital:
-          source: MWDA world profiles
+          source: DA:RW
           value: Aneheim;Inyong City
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Quayling
         capital:
           source: canon
           value: Inyong City
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Uchida
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Unzervalt
     satellite:
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Escholtz
         size: large
         icon: rock6
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Tanaka
         size: giant
         icon: rock8
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Vance
         size: medium
         icon: rock14
@@ -180,6 +161,12 @@ planet:
           value:
             - DC
         population: 4703635.0
+      - date: '2341-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '2350-01-01'
         population: 9711288.0
       - date: '2360-01-01'
@@ -228,6 +215,18 @@ planet:
         population: 623574205.0
       - date: '2570-01-01'
         population: 635245487.0
+      - date: '2571-01-01'
+        # administration: DC | Benjamin Military District | Ashio Prefecture
+        # administration: DC | Benjamin Military District | Ashio Prefecture
+        # administration: DC | Benjamin Military District | Ashio Prefecture
+        # administration: DC | Benjamin Military District | Ashio Prefecture
+        # administration: DC | Benjamin Military District | Ashio Prefecture
+        # administration: DC | Benjamin Military District | Ashio Prefecture
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - DC
       - date: '2580-01-01'
         population: 643751366.0
       - date: '2590-01-01'
@@ -333,8 +332,25 @@ planet:
       - date: '3037-01-01'
         socioIndustrial: C-D-C-D-B
       - date: '3040-01-01'
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
         population: 676998093.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
         faction:
           source: canon
           value:
@@ -345,7 +361,25 @@ planet:
         population: 682299326.0
       - date: '3060-01-01'
         population: 687435809.0
+      - date: '3067-01-01'
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FS
       - date: '3067-04-20'
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
         faction:
           source: canon
           value:
@@ -354,7 +388,25 @@ planet:
         population: 693165270.0
       - date: '3080-01-01'
         population: 698732833.0
+      - date: '3081-01-01'
+        # administration: ROS | Prefecture III
+        # administration: ROS | Prefecture III
+        # administration: ROS | Prefecture III
+        # administration: ROS | Prefecture III
+        # administration: ROS | Prefecture III
+        # administration: ROS | Prefecture III
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ROS
       - date: '3081-06-01'
+        # administration: ROS | Prefecture III
+        # administration: ROS | Prefecture III
+        # administration: ROS | Prefecture III
+        # administration: ROS | Prefecture III
+        # administration: ROS | Prefecture III
+        # administration: ROS | Prefecture III
         faction:
           source: canon
           value:
@@ -369,6 +421,12 @@ planet:
         population: 710286533.0
       - date: '3130-01-01'
         population: 720012416.0
+      - date: '3135-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3135-10-01'
         faction:
           source: canon
@@ -378,7 +436,25 @@ planet:
         population: 733823441.0
       - date: '3144-01-01'
         socioIndustrial: A-C-B-C-B
+      - date: '3145-01-01'
+        # administration: DC | Dieron Military District | Ashio Prefecture
+        # administration: DC | Dieron Military District | Ashio Prefecture
+        # administration: DC | Dieron Military District | Ashio Prefecture
+        # administration: DC | Dieron Military District | Ashio Prefecture
+        # administration: DC | Dieron Military District | Ashio Prefecture
+        # administration: DC | Dieron Military District | Ashio Prefecture
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - DC
       - date: '3145-05-14'
+        # administration: DC | Dieron Military District | Ashio Prefecture
+        # administration: DC | Dieron Military District | Ashio Prefecture
+        # administration: DC | Dieron Military District | Ashio Prefecture
+        # administration: DC | Dieron Military District | Ashio Prefecture
+        # administration: DC | Dieron Military District | Ashio Prefecture
+        # administration: DC | Dieron Military District | Ashio Prefecture
         faction:
           source: canon
           value:

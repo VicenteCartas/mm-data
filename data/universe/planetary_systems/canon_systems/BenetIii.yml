@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -92,13 +92,7 @@ planet:
     lifeForm:
       source: canon
       value: REPTILE
-    desc: Benet III is an unpleasant planet for human habitation, it has only 65%
-      of the gravity of Earth, the high-pressure atmosphere is also tainted and despite
-      60% surface water, the majority of the planet’s single supercontinent is desert.
-      Benet was only settled to take advantage of the high concentrations of platinum-group
-      metals and the early mining and refining efforts attracted heavy industry to
-      the planet. The mineral wealth and factories have been enough to keep people
-      living on Benet III, despite the planet’s lack of charm and comfort.
+    desc: Benet III is an unpleasant planet for human habitation, it has only 65% of the gravity of Earth, the high-pressure atmosphere is also tainted and despite 60% surface water, the majority of the planet’s single supercontinent is desert. Benet was only settled to take advantage of the high concentrations of platinum-group metals and the early mining and refining efforts attracted heavy industry to the planet. The mineral wealth and factories have been enough to keep people living on Benet III, despite the planet’s lack of charm and comfort.
     landmass:
       - name:
           source: canon
@@ -111,6 +105,12 @@ planet:
         size: medium
         icon: rock10
     event:
+      - date: '2271-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '2284-10-03'
         faction:
           source: canon
@@ -139,6 +139,12 @@ planet:
         population: 17678530.0
       - date: '2360-01-01'
         population: 27996602.0
+      - date: '2366-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '2367-01-01'
         socioIndustrial: C-C-A-C-D
       - date: '2370-01-01'
@@ -183,6 +189,18 @@ planet:
         population: 368030219.0
       - date: '2570-01-01'
         population: 372199048.0
+      - date: '2571-01-01'
+        # administration: DC | Galedon Military District | Matsuida Prefecture
+        # administration: DC | Galedon Military District | Matsuida Prefecture
+        # administration: DC | Galedon Military District | Matsuida Prefecture
+        # administration: DC | Galedon Military District | Matsuida Prefecture
+        # administration: DC | Galedon Military District | Matsuida Prefecture
+        # administration: DC | Galedon Military District | Matsuida Prefecture
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - DC
       - date: '2580-01-01'
         population: 376423149.0
       - date: '2590-01-01'
@@ -245,6 +263,12 @@ planet:
       - date: '2842-01-01'
         socioIndustrial: C-C-B-C-D
       - date: '2843-06-19'
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
         faction:
           source: canon
           value:
@@ -291,8 +315,25 @@ planet:
       - date: '3030-01-01'
         population: 233085120.0
       - date: '3040-01-01'
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
         population: 235545407.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
         faction:
           source: canon
           value:
@@ -311,7 +352,37 @@ planet:
           value:
             - FC
             - LA
+      - date: '3063-01-01'
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
+      - date: '3067-01-01'
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FS
       - date: '3067-04-20'
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
         faction:
           source: canon
           value:
@@ -332,6 +403,11 @@ planet:
         population: 255163294.0
       - date: '3130-01-01'
         population: 256904317.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ABN
       - date: '3132-08-07'
         hpg:
           source: canon

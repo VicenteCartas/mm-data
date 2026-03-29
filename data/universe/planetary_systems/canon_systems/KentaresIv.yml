@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,15 +16,17 @@
 # affiliated with Microsoft.
 
 id: Kentares IV
-sucsId: 1329
+sucsId: 1330
 xcood: 149.4
 ycood: -13.229
 spectralType:
-  source: 'Handbook: House Davion, pg. 99'
+  source: 'HB:HD'
   value: F5IV
+  page: 99
 primarySlot:
-  source: 'Handbook: House Davion, pg. 99'
+  source: 'HB:HD'
   value: 4
+  page: 99
 event:
   - date: '2407-05-25'
     zenithCharge: yes
@@ -78,32 +80,39 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 3.92
     sysPos:
-      source: 'Handbook: House Davion, pg. 99'
+      source: 'HB:HD'
       value: 4
+      page: 99
     icon: wet10
     pressure:
-      source: 'Handbook: House Davion, pg. 99'
+      source: 'HB:HD'
       value: STANDARD
+      page: 99
     atmosphere:
-      source: 'Handbook: House Davion, pg. 99'
+      source: 'HB:HD'
       value: BREATHABLE
+      page: 99
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'Handbook: House Davion, pg. 99'
+      source: 'HB:HD'
       value: 1.0
+      page: 99
     diameter: 12639
     density: 5.560464137375
     dayLength: 19
     yearLength: 7.9
     temperature:
-      source: 'Handbook: House Davion, pg. 99'
+      source: 'HB:HD'
       value: 35
+      page: 99
     water:
-      source: 'Handbook: House Davion, pg. 99'
+      source: 'HB:HD'
       value: 88
+      page: 99
     lifeForm:
-      source: 'Handbook: House Davion, pg. 99'
+      source: 'HB:HD'
       value: INSECT
+      page: 99
     desc: |-
       Kentares IV is infamous for the Kentares Massacre which occurred in 2796-2797. Jinjiro Kurita, enraged by the death of his father Minoru, ordered the death of everyone on the planet. More than 90% of the population was killed during five months of systematic executions carried out by the DCMS. News of the atrocities turned the tide of the 1st Succession War, demoralizing the Combine and rallying the flagging Federated Suns.
 
@@ -115,8 +124,9 @@ planet:
       - name: Francis's Rift
     satellite:
       - name:
-          source: 'Handbook: House Davion, pg. 99'
+          source: 'HB:HD'
           value: Columbia
+          page: 99
         size: giant
         icon: rock16
     event:
@@ -214,6 +224,12 @@ planet:
       - date: '2490-01-01'
         population: 5754012.0
       - date: '2500-07-13'
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
         faction:
           source: canon
           value:
@@ -291,6 +307,12 @@ planet:
       - date: '2800-01-01'
         population: 7826285.0
       - date: '2808-12-02'
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
         faction:
           source: canon
           value:
@@ -346,8 +368,25 @@ planet:
       - date: '3030-01-01'
         population: 6518727.0
       - date: '3040-01-01'
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
         population: 6582266.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
         faction:
           source: canon
           value:
@@ -366,16 +405,45 @@ planet:
           value:
             - FC
             - LA
+      - date: '3063-01-01'
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3063-12-31'
         faction:
           source: canon
           value:
             - FC
       - date: '3067-01-01'
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
         population:
           source: canon
           value: 6743500.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FS
       - date: '3067-04-20'
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
         faction:
           source: canon
           value:

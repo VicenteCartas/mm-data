@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,15 +16,16 @@
 # affiliated with Microsoft.
 
 id: New St. Andrews
-sucsId: 2873
+sucsId: 2874
 xcood: -513.029
 ycood: -107.97
 spectralType:
   source: canon
   value: F4V
 primarySlot:
-  source: Periphery (1ed), pg. 137
+  source: Per1e
   value: 4
+  page: 137
 planet:
   - name: Sims
     type: TERRESTRIAL
@@ -103,8 +104,9 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 2.24
     sysPos:
-      source: Periphery (1ed), pg. 137
+      source: Per1e
       value: 4
+      page: 137
     icon: green54
     pressure:
       source: canon
@@ -125,8 +127,9 @@ planet:
       source: canon
       value: 58
     lifeForm:
-      source: Periphery (1ed), pg. 137
+      source: Per1e
       value: REPTILE
+      page: 137
     desc: |-
       New St. Andrews is a remote Periphery world settled by four Irish Clans with a long history of relocating before finally settling on New St. Andrews. In 2294, they fled their original homeworld of Stewart prior to the planet’s absorption into the Free Worlds League. From Stewart they settled York and Lancaster before fleeing again in response to the planets’ annexation by the Protectorate of Donegal. The clans found themselves on Loxley before being displaced again when Archon Robert Marsden of the Lyran Commonwealth annexed the pastoral world. They landed on Somerset in the Rim Worlds Republic, which they hoped would be their final destination and it was for several centuries until the Amaris Coup. Fearing the destruction of the Republic, the clans again abandoned a world in the late 28th century and founded New St. Andrews. Due to the haste of the final move, the clans settled the planet with little technology an established a small agriculture-driven society on New Scotland, the planet’s northern continent.
 
@@ -154,6 +157,12 @@ planet:
         size: medium
         icon: rock16
     event:
+      - date: '2822-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '2822-05-01'
         faction:
           source: canon

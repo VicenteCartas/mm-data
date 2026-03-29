@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Esteros
-sucsId: 824
+sucsId: 825
 xcood: -157.657
 ycood: 268.588
 spectralType: M7V
@@ -65,6 +65,12 @@ planet:
         icon: rock9
     event:
       - date: '2619-02-19'
+        # administration: LA | Protectorate of Donegal | District of Donegal
+        # administration: LA | Protectorate of Donegal | District of Donegal
+        # administration: LA | Protectorate of Donegal | District of Donegal
+        # administration: LA | Protectorate of Donegal | District of Donegal
+        # administration: LA | Protectorate of Donegal | District of Donegal
+        # administration: LA | Protectorate of Donegal | District of Donegal
         faction:
           source: canon
           value:
@@ -171,8 +177,25 @@ planet:
       - date: '3030-01-01'
         population: 2451345705.0
       - date: '3040-01-01'
+        # administration: FC | Donegal March | Pherkad Operational Area
+        # administration: FC | Donegal March | Pherkad Operational Area
+        # administration: FC | Donegal March | Pherkad Operational Area
+        # administration: FC | Donegal March | Pherkad Operational Area
+        # administration: FC | Donegal March | Pherkad Operational Area
+        # administration: FC | Donegal March | Pherkad Operational Area
         population: 2475486992.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
+        # administration: FC | Donegal March | Pherkad Operational Area
+        # administration: FC | Donegal March | Pherkad Operational Area
+        # administration: FC | Donegal March | Pherkad Operational Area
+        # administration: FC | Donegal March | Pherkad Operational Area
+        # administration: FC | Donegal March | Pherkad Operational Area
+        # administration: FC | Donegal March | Pherkad Operational Area
         faction:
           source: canon
           value:
@@ -181,14 +204,44 @@ planet:
         socioIndustrial: A-B-C-A-C
       - date: '3050-01-01'
         population: 2492876192.0
+      - date: '3057-01-01'
+        # administration: LA | Donegal March | Pherkad Operational Area
+        # administration: LA | Donegal March | Pherkad Operational Area
+        # administration: LA | Donegal March | Pherkad Operational Area
+        # administration: LA | Donegal March | Pherkad Operational Area
+        # administration: LA | Donegal March | Pherkad Operational Area
+        # administration: LA | Donegal March | Pherkad Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '3057-12-01'
         faction:
           source: canon
           value:
             - ARDC
+      - date: '3058-01-01'
+        # administration: LA | Donegal Province | Pandora Theater
+        # administration: LA | Donegal Province | Pandora Theater
+        # administration: LA | Donegal Province | Pandora Theater
+        # administration: LA | Donegal Province | Pandora Theater
+        # administration: LA | Donegal Province | Pandora Theater
+        # administration: LA | Donegal Province | Pandora Theater
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '3060-01-01'
         population: 2509383590.0
       - date: '3067-04-24'
+        # administration: LA | Arc-Royal Theater
+        # administration: LA | Arc-Royal Theater
+        # administration: LA | Arc-Royal Theater
+        # administration: LA | Arc-Royal Theater
+        # administration: LA | Arc-Royal Theater
+        # administration: LA | Arc-Royal Theater
         faction:
           source: canon
           value:
@@ -213,12 +266,24 @@ planet:
         hpg: X
       - date: '3140-01-01'
         population: 2786362944.0
+      - date: '3145-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CJF
       - date: '3145-02-10'
         faction:
           source: canon
           value:
             - CJF
         population: 2804252854.0
+      - date: '3152-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3152-06-01'
         faction:
           source: canon

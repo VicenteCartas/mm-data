@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,15 +16,17 @@
 # affiliated with Microsoft.
 
 id: Keid
-sucsId: 1319
+sucsId: 1320
 xcood: 3.096
 ycood: -10.127
 spectralType:
-  source: Star League, pg. 173
+  source: SLSB
   value: G6IV
+  page: 173
 primarySlot:
-  source: Star League, pg. 173
+  source: SLSB
   value: 5
+  page: 173
 event:
   - date: '2416-04-14'
     zenithCharge: yes
@@ -107,32 +109,35 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 1.44
     sysPos:
-      source: Star League, pg. 173
+      source: SLSB
       value: 5
+      page: 173
     icon: green11
     pressure:
-      source: MWDA world profiles
+      source: DA:RW
       value: STANDARD
     atmosphere:
-      source: MWDA world profiles
+      source: DA:RW
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: MWDA world profiles
+      source: DA:RW
       value: 0.94
     diameter: 13539
     density: 4.879173980153
     dayLength: 24
     yearLength: 2.0
     temperature:
-      source: MWDA world profiles
+      source: DA:RW
       value: 27
     water:
-      source: Chaos March, pg. 42
+      source: ChM
       value: 75
+      page: 42
     lifeForm:
-      source: Star League, pg. 173
+      source: SLSB
       value: MAMMAL
+      page: 173
     desc: |-
       Keid was one of the first planets colonized during the interstellar Exodus and remained part of the Terran Alliance until the Star League’s collapse, at which point the Confederation stepped in and occupied the planet. Keid has a pleasant climate, extensive commercial centers, military installations, training facilities, scientific research complexes and commercial ore deposits. As of 3025 Keid also had several secret Maskirovka covert operative training centers.
 
@@ -141,16 +146,16 @@ planet:
       3135 - One of the first worlds colonized in the first Terran exodus, Keid‘s fertile lands and predictable climate led the first settlers to establish their home as a major agricultural and food-production world. The discovery of several major deposits of rare metals and chemicals during the Star League era further enhanced Keid‘s importance to the Terran Hegemony, and several major agribusinesses, food companies, mining operations, and heavy industries established offices and facilities on Keid. The SLDF posted two Castles Brian (Forts Grisson and Settlemyer) and a naval academy on Keid, as well as the planetwide Academy of Keid, a civilian college focused on the study of metallurgy, economics, and diplomacy. During the Amaris crisis, three of the four college campuses were destroyed, along with both Castles Brian and the naval academy. Several cities, all the null-gravity factory stations established by some of the planet‘s largest industrial concerns, and a spaceborne shipyard were also obliterated by the Usurper‘s troops. Fortunately for Keid, however, Amaris‘ forces did not resort to the same use of nuclear and biological weapons they used on other Hegemony worlds, and enough of the planet‘s economic and administrative infrastructure survived the fighting to allow Keid to recover from the scars of war. Today, after centuries under Capellan rule, and later Federated Commonwealth control, Keid is home to extensive commercial and ore-mining industries that continue to thrive on all three of the planet‘s mountainous, heavily wooded continents. Ballard-Dukempic Foods, the revitalized food conglomerate with roots going back to the Star League‘s heyday, maintains its home offices in New Leningrad, the largest city on the northern continent of Keid Prime. The planet‘s largest mining community, DuGatts, is located on the southwestern continent of Mirange, and is also home to Jugens Metals Enterprises, an ore-refining and metalworking corporation that provides finished raw metals to various businesses on and off the planet. The southern polar continent of Acitaratna is less developed than the other two landmasses, largely because the extreme cold and thick glaciers make for poor settlement options. Nevertheless, Acitaratna is home to the largest of Keid‘s natural gas mining operations, located off the continent‘s farthest north shore and connected via underwater tunnel to the subterranean city of Ramey‘s Point. The planetary capital and largest spaceport on Keid is Normandy, a large industrial city two hundred kilometers northwest of New Leningrad.
     landmass:
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Acitaratna
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Keid Prime
         capital:
-          source: MWDA world profiles
+          source: DA:RW
           value: Normandy
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Mirange
     event:
       - date: '2260-10-19'
@@ -176,6 +181,12 @@ planet:
           value:
             - TH
       - date: '2317-10-24'
+        # administration: TH | Alliance Core
+        # administration: TH | Alliance Core
+        # administration: TH | Alliance Core
+        # administration: TH | Alliance Core
+        # administration: TH | Alliance Core
+        # administration: TH | Alliance Core
         faction:
           source: canon
           value:
@@ -280,6 +291,18 @@ planet:
         population: 5376033968.0
       - date: '2760-01-01'
         population: 5349909219.0
+      - date: '2767-01-01'
+        # administration: AE | Alliance Core
+        # administration: AE | Alliance Core
+        # administration: AE | Alliance Core
+        # administration: AE | Alliance Core
+        # administration: AE | Alliance Core
+        # administration: AE | Alliance Core
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - AE
       - date: '2767-11-16'
         faction:
           source: canon
@@ -293,6 +316,12 @@ planet:
       - date: '2770-01-01'
         population: 5320421955.0
       - date: '2779-08-12'
+        # administration: TH | Alliance Core
+        # administration: TH | Alliance Core
+        # administration: TH | Alliance Core
+        # administration: TH | Alliance Core
+        # administration: TH | Alliance Core
+        # administration: TH | Alliance Core
         faction:
           source: canon
           value:
@@ -303,6 +332,12 @@ planet:
           value: B
         population: 5293210116.0
       - date: '2790-11-08'
+        # administration: CC | Tikonov Commonality | Region 1
+        # administration: CC | Tikonov Commonality | Region 1
+        # administration: CC | Tikonov Commonality | Region 1
+        # administration: CC | Tikonov Commonality | Region 1
+        # administration: CC | Tikonov Commonality | Region 1
+        # administration: CC | Tikonov Commonality | Region 1
         faction:
           source: canon
           value:
@@ -315,6 +350,12 @@ planet:
       - date: '2820-01-01'
         population: 5173976131.0
       - date: '2821-06-23'
+        # administration: CC | Tikonov Commonality | Region 1
+        # administration: CC | Tikonov Commonality | Region 1
+        # administration: CC | Tikonov Commonality | Region 1
+        # administration: CC | Tikonov Commonality | Region 1
+        # administration: CC | Tikonov Commonality | Region 1
+        # administration: CC | Tikonov Commonality | Region 1
         faction:
           source: canon
           value:
@@ -377,6 +418,12 @@ planet:
       - date: '3030-01-01'
         population: 3931674131.0
       - date: '3032-01-21'
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
         faction:
           source: canon
           value:
@@ -387,11 +434,23 @@ planet:
         socioIndustrial: C-C-A-C-D
       - date: '3050-01-01'
         population: 2136250919.0
+      - date: '3057-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3057-11-01'
         faction:
           source: canon
           value:
             - CM
+      - date: '3058-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3060-01-01'
         population: 1660655132.0
       - date: '3066-02-01'
@@ -414,7 +473,25 @@ planet:
             - Stone
       - date: '3080-01-01'
         population: 1421219296.0
+      - date: '3081-01-01'
+        # administration: ROS | Prefecture X
+        # administration: ROS | Prefecture X
+        # administration: ROS | Prefecture X
+        # administration: ROS | Prefecture X
+        # administration: ROS | Prefecture X
+        # administration: ROS | Prefecture X
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ROS
       - date: '3081-09-15'
+        # administration: ROS | Prefecture X
+        # administration: ROS | Prefecture X
+        # administration: ROS | Prefecture X
+        # administration: ROS | Prefecture X
+        # administration: ROS | Prefecture X
+        # administration: ROS | Prefecture X
         faction:
           source: canon
           value:
@@ -446,9 +523,10 @@ planet:
             - CC
       - date: '3151-01-01'
         faction:
-          source: sucs
+          source: SUCS
+          version: 2026.03.02
           value:
-            - CC
+            - 3SL
   - name: Prokop's Rest
     type: TERRESTRIAL
     orbitalDist: 4.68

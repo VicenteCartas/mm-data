@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Yufu
-sucsId: 2805
+sucsId: 2806
 xcood: 231.779
 ycood: 119.701
 spectralType: M8V
@@ -51,6 +51,12 @@ planet:
       - name: Northern Izumi Ku
     event:
       - date: '2624-02-16'
+        # administration: DC | Galedon Military District | Matsuida Prefecture
+        # administration: DC | Galedon Military District | Matsuida Prefecture
+        # administration: DC | Galedon Military District | Matsuida Prefecture
+        # administration: DC | Galedon Military District | Matsuida Prefecture
+        # administration: DC | Galedon Military District | Matsuida Prefecture
+        # administration: DC | Galedon Military District | Matsuida Prefecture
         faction:
           source: canon
           value:
@@ -103,6 +109,11 @@ planet:
         population: 491004349.0
       - date: '2830-01-01'
         population: 487879439.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ABN
       - date: '2840-01-01'
         population: 482086149.0
       - date: '2844-01-01'

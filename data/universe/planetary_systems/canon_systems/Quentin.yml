@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: Quentin
-sucsId: 2093
+sucsId: 2094
 xcood: 46.002
 ycood: 12.361
 spectralType:
-  source: MWDA world profiles
+  source: DA:RW
   value: K9IV
 primarySlot:
-  source: MWDA world profiles
+  source: DA:RW
   value: 7
 event:
   - date: '2469-01-21'
@@ -145,71 +145,48 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.35
     sysPos:
-      source: MWDA world profiles
+      source: DA:RW
       value: 7
     icon: green31
     pressure:
-      source: MWDA world profiles
+      source: DA:RW
       value: STANDARD
     atmosphere:
-      source: MWDA world profiles
+      source: DA:RW
       value: TAINTED_POISON
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: MWDA world profiles
+      source: DA:RW
       value: 0.74
     diameter: 11096
     density: 4.686647474425
     dayLength: 21
     yearLength: 0.7
     temperature:
-      source: MWDA world profiles
+      source: DA:RW
       value: 26
     water:
-      source: MWDA world profiles
+      source: DA:RW
       value: 53
     lifeForm:
-      source: MWDA world profiles
+      source: DA:RW
       value: AMPHIBIAN
-    desc: A world of abundant raw materials, the first settlers to Quentin were actually
-      employees of Terran corporations hoping to exploit such valuable resources for
-      their ambitious ventures. During the Age of War, many of these industries turned
-      to military applications, and the planet‘s economy truly thrived, but with such
-      prosperity came the desire by various neighboring governments to secure Quentin
-      and its industries for themselves. Only the rise of the Star League saved Quentin
-      from the worst ravages of war. The League‘s dominion, which included Quentin,
-      brought even more wealth to the world when they established a major BattleMech
-      manufacturing plant in the densely industrialized Steel Valley region. This
-      factory ultimately became the centerpiece for Independence Weaponry in the centuries
-      after the League‘s collapse, and, in its heyday, produced scores of heavy and
-      assault BattleMech designs—including the JagerMech, Victor, and Atlas. Immediately
-      after the collapse of the League, however, forces from the Draconis Combine,
-      Capellan Confederation, and the Federated Suns fought bitterly for control of
-      this important world. The planet still retains the scars of that fighting in
-      the form of its caustic atmosphere—the result of a massive biological-weapon
-      attack, launched against the world by retreating would-be conquerors in the
-      First Succession War. The majority of the planet‘s population today resides
-      in and around Steel Valley, on the equatorial continent of Morandi, which is
-      also home to the planetary capital of Prosperity Point. The other planetary
-      continents, El Largo in the northern hemisphere, Gladius in the south, and El
-      Minoro in the southern polar region, are far less populous, due to the extreme
-      cold temperatures in those regions, and the gradual decline of these outlying
-      areas during the last few centuries of war.
+    desc: A world of abundant raw materials, the first settlers to Quentin were actually employees of Terran corporations hoping to exploit such valuable resources for their ambitious ventures. During the Age of War, many of these industries turned to military applications, and the planet‘s economy truly thrived, but with such prosperity came the desire by various neighboring governments to secure Quentin and its industries for themselves. Only the rise of the Star League saved Quentin from the worst ravages of war. The League‘s dominion, which included Quentin, brought even more wealth to the world when they established a major BattleMech manufacturing plant in the densely industrialized Steel Valley region. This factory ultimately became the centerpiece for Independence Weaponry in the centuries after the League‘s collapse, and, in its heyday, produced scores of heavy and assault BattleMech designs—including the JagerMech, Victor, and Atlas. Immediately after the collapse of the League, however, forces from the Draconis Combine, Capellan Confederation, and the Federated Suns fought bitterly for control of this important world. The planet still retains the scars of that fighting in the form of its caustic atmosphere—the result of a massive biological-weapon attack, launched against the world by retreating would-be conquerors in the First Succession War. The majority of the planet‘s population today resides in and around Steel Valley, on the equatorial continent of Morandi, which is also home to the planetary capital of Prosperity Point. The other planetary continents, El Largo in the northern hemisphere, Gladius in the south, and El Minoro in the southern polar region, are far less populous, due to the extreme cold temperatures in those regions, and the gradual decline of these outlying areas during the last few centuries of war.
     landmass:
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: El Largo
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: El Minoro
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Gladius
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Morandi
         capital:
-          source: MWDA world profiles
+          source: DA:RW
           value: Prosperity Point
     event:
       - date: '2232-08-31'
@@ -244,6 +221,12 @@ planet:
           value:
             - TH
       - date: '2317-06-01'
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
         faction:
           source: canon
           value:
@@ -343,6 +326,18 @@ planet:
         population: 1588047672.0
       - date: '2760-01-01'
         population: 1600253261.0
+      - date: '2767-01-01'
+        # administration: AE | Lockdale Province
+        # administration: AE | Lockdale Province
+        # administration: AE | Lockdale Province
+        # administration: AE | Lockdale Province
+        # administration: AE | Lockdale Province
+        # administration: AE | Lockdale Province
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - AE
       - date: '2767-06-10'
         faction:
           source: canon
@@ -351,6 +346,12 @@ planet:
       - date: '2770-01-01'
         population: 1606650954.0
       - date: '2779-07-18'
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
         faction:
           source: canon
           value:
@@ -377,7 +378,25 @@ planet:
         population: 1528329136.0
       - date: '2820-01-01'
         population: 1505737084.0
+      - date: '2821-01-01'
+        # administration: DC | Dieron Military District | Lone Star Prefecture
+        # administration: DC | Dieron Military District | Lone Star Prefecture
+        # administration: DC | Dieron Military District | Lone Star Prefecture
+        # administration: DC | Dieron Military District | Lone Star Prefecture
+        # administration: DC | Dieron Military District | Lone Star Prefecture
+        # administration: DC | Dieron Military District | Lone Star Prefecture
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - DC
       - date: '2821-04-09'
+        # administration: DC | Dieron Military District | Lone Star Prefecture
+        # administration: DC | Dieron Military District | Lone Star Prefecture
+        # administration: DC | Dieron Military District | Lone Star Prefecture
+        # administration: DC | Dieron Military District | Lone Star Prefecture
+        # administration: DC | Dieron Military District | Lone Star Prefecture
+        # administration: DC | Dieron Military District | Lone Star Prefecture
         faction:
           source: canon
           value:
@@ -392,7 +411,25 @@ planet:
         socioIndustrial: C-B-B-B-B
       - date: '2860-01-01'
         population: 1384470664.0
+      - date: '2864-01-01'
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FS
       - date: '2864-05-11'
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
         faction:
           source: canon
           value:
@@ -434,12 +471,30 @@ planet:
         population: 1212459979.0
       - date: '3037-01-01'
         socioIndustrial: C-B-B-B-C
+      - date: '3040-01-01'
+        # administration: DC | Dieron Military District | Al Na'ir Prefecture
+        # administration: DC | Dieron Military District | Al Na'ir Prefecture
+        # administration: DC | Dieron Military District | Al Na'ir Prefecture
+        # administration: DC | Dieron Military District | Al Na'ir Prefecture
+        # administration: DC | Dieron Military District | Al Na'ir Prefecture
+        # administration: DC | Dieron Military District | Al Na'ir Prefecture
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - DC
       - date: '3040-01-19'
         faction:
           source: canon
           value:
             - FC
       - date: '3040-12-25'
+        # administration: DC | Dieron Military District | Al Na'ir Prefecture
+        # administration: DC | Dieron Military District | Al Na'ir Prefecture
+        # administration: DC | Dieron Military District | Al Na'ir Prefecture
+        # administration: DC | Dieron Military District | Al Na'ir Prefecture
+        # administration: DC | Dieron Military District | Al Na'ir Prefecture
+        # administration: DC | Dieron Military District | Al Na'ir Prefecture
         faction:
           source: canon
           value:
@@ -473,7 +528,25 @@ planet:
             - Stone
       - date: '3080-01-01'
         population: 1271187288.0
+      - date: '3081-01-01'
+        # administration: ROS | Prefecture III
+        # administration: ROS | Prefecture III
+        # administration: ROS | Prefecture III
+        # administration: ROS | Prefecture III
+        # administration: ROS | Prefecture III
+        # administration: ROS | Prefecture III
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ROS
       - date: '3081-05-14'
+        # administration: ROS | Prefecture III
+        # administration: ROS | Prefecture III
+        # administration: ROS | Prefecture III
+        # administration: ROS | Prefecture III
+        # administration: ROS | Prefecture III
+        # administration: ROS | Prefecture III
         faction:
           source: canon
           value:
@@ -494,6 +567,12 @@ planet:
           value: X
       - date: '3133-01-01'
         socioIndustrial: B-B-B-B-C
+      - date: '3135-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3135-10-01'
         faction:
           source: canon
@@ -501,7 +580,25 @@ planet:
             - IND
       - date: '3140-01-01'
         population: 1303106900.0
+      - date: '3145-01-01'
+        # administration: DC | Dieron Military District | Al Na'ir Prefecture
+        # administration: DC | Dieron Military District | Al Na'ir Prefecture
+        # administration: DC | Dieron Military District | Al Na'ir Prefecture
+        # administration: DC | Dieron Military District | Al Na'ir Prefecture
+        # administration: DC | Dieron Military District | Al Na'ir Prefecture
+        # administration: DC | Dieron Military District | Al Na'ir Prefecture
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - DC
       - date: '3145-07-06'
+        # administration: DC | Dieron Military District | Al Na'ir Prefecture
+        # administration: DC | Dieron Military District | Al Na'ir Prefecture
+        # administration: DC | Dieron Military District | Al Na'ir Prefecture
+        # administration: DC | Dieron Military District | Al Na'ir Prefecture
+        # administration: DC | Dieron Military District | Al Na'ir Prefecture
+        # administration: DC | Dieron Military District | Al Na'ir Prefecture
         faction:
           source: canon
           value:

@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -20,11 +20,13 @@ sucsId: 564
 xcood: -51.972
 ycood: -369.147
 spectralType:
-  source: 'Handbook: House Marik, pg. 74'
+  source: 'HB:HM'
   value: F2IV
+  page: 74
 primarySlot:
-  source: 'Handbook: House Marik, pg. 74'
+  source: 'HB:HM'
   value: 6
+  page: 74
 event:
   - date: '2684-02-11'
     nadirCharge: yes
@@ -129,59 +131,74 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 4.2
     sysPos:
-      source: 'Handbook: House Marik, pg. 74'
+      source: 'HB:HM'
       value: 6
+      page: 74
     icon: green47
     pressure:
-      source: 'Handbook: House Marik, pg. 74'
+      source: 'HB:HM'
       value: STANDARD
+      page: 74
     atmosphere:
-      source: 'Handbook: House Marik, pg. 74'
+      source: 'HB:HM'
       value: BREATHABLE
+      page: 74
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'Handbook: House Marik, pg. 74'
+      source: 'HB:HM'
       value: 1.1
+      page: 74
     diameter: 11940
     density: 6.474273560663
     dayLength: 18
     yearLength: 8.7
     temperature:
-      source: 'Handbook: House Marik, pg. 74'
+      source: 'HB:HM'
       value: 41
+      page: 74
     water:
-      source: 'Handbook: House Marik, pg. 74'
+      source: 'HB:HM'
       value: 62
+      page: 74
     lifeForm:
-      source: 'Handbook: House Marik, pg. 74'
+      source: 'HB:HM'
       value: AMPHIBIAN
-    desc: Claybrooke is a world rich in natural resources. With large deposits of
-      raw ores and minerals on both moons and the planet itself, mining is a major
-      industry on Claybrooke. However, the primary industry on planet remains agriculture
-      thanks to the fertile soil and temperate climate.
+      page: 74
+    desc: Claybrooke is a world rich in natural resources. With large deposits of raw ores and minerals on both moons and the planet itself, mining is a major industry on Claybrooke. However, the primary industry on planet remains agriculture thanks to the fertile soil and temperate climate.
     landmass:
       - name:
-          source: 'Handbook: House Marik, pg. 74'
+          source: 'HB:HM'
           value: Hastings
+          page: 74
         capital:
-          source: 'Handbook: House Marik, pg. 74'
+          source: 'HB:HM'
           value: Sheridan
+          page: 74
       - name:
-          source: 'Handbook: House Marik, pg. 74'
+          source: 'HB:HM'
           value: Hawthorne
+          page: 74
     satellite:
       - name:
-          source: 'Handbook: House Marik, pg. 74'
+          source: 'HB:HM'
           value: Brana
+          page: 74
         size: medium
         icon: rock17
       - name:
-          source: 'Handbook: House Marik, pg. 74'
+          source: 'HB:HM'
           value: Kurna
+          page: 74
         size: large
         icon: rock16
     event:
       - date: '2684-10-27'
+        # administration: CC | Andurien Commonality | Region 2
+        # administration: CC | Andurien Commonality | Region 2
+        # administration: CC | Andurien Commonality | Region 2
+        # administration: CC | Andurien Commonality | Region 2
+        # administration: CC | Andurien Commonality | Region 2
+        # administration: CC | Andurien Commonality | Region 2
         faction:
           source: canon
           value:
@@ -236,6 +253,18 @@ planet:
         population: 4173442237.0
       - date: '2860-01-01'
         population: 4161395187.0
+      - date: '2864-01-01'
+        # administration: FWL | Duchy of Andurien
+        # administration: FWL | Duchy of Andurien
+        # administration: FWL | Duchy of Andurien
+        # administration: FWL | Duchy of Andurien
+        # administration: FWL | Duchy of Andurien
+        # administration: FWL | Duchy of Andurien
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FWL
       - date: '2864-03-11'
         faction:
           source: canon
@@ -302,6 +331,12 @@ planet:
         population: 3614709832.0
       - date: '3080-01-01'
         population: 3657616057.0
+      - date: '3081-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3081-06-29'
         faction:
           source: canon

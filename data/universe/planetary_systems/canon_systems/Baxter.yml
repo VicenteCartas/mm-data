@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -20,10 +20,10 @@ sucsId: 277
 xcood: -31.288
 ycood: 112.658
 spectralType:
-  source: MWDA world profiles
+  source: DA:RW
   value: K7II
 primarySlot:
-  source: MWDA world profiles
+  source: DA:RW
   value: 4
 event:
   - date: '2355-08-08'
@@ -83,31 +83,31 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.6
     sysPos:
-      source: MWDA world profiles
+      source: DA:RW
       value: 4
     icon: green7
     pressure:
-      source: MWDA world profiles
+      source: DA:RW
       value: STANDARD
     atmosphere:
-      source: MWDA world profiles
+      source: DA:RW
       value: TAINTED_POISON
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: MWDA world profiles
+      source: DA:RW
       value: 0.79
     diameter: 12578
     density: 4.413768369513
     dayLength: 21
     yearLength: 0.9
     temperature:
-      source: MWDA world profiles
+      source: DA:RW
       value: 44
     water:
-      source: MWDA world profiles
+      source: DA:RW
       value: 68
     lifeForm:
-      source: MWDA world profiles
+      source: DA:RW
       value: FISH
     desc: |-
       Baxter IV, the only inhabitable world in its system, is a world in turmoil. Due to an apparent near miss with a comet or rogue asteroid, the orbital path of Baxter‘s large moon, T‘Laus, has gradually grown increasingly erratic in the centuries since the first settlers came to this world. Gravitational forces have played havoc on the surface of the world below, with frequent earthquakes, powerful dust storms, and rockslides an almost daily occurrence. This shifting climate gradually turned a once-bountiful agricultural world into a giant, desolate wasteland, and is especially hard on machinery, which is constantly rocked or choked by dust. The descendants of the settlers who elected to remain today live in low structures or modified caves carved into the sides of the planet‘s many mountains and canyons, though legends today tell of a few cities that moved completely underground, only to be ripped asunder by the moon‘s tidal force. Despite the inhospitable environment, however, life has continued on this world, maintained by an economy almost entirely based on its fishing exports. Though some common industrial metals are readily accessible on the planet, there are not sufficient quantities or concentrations of these resources to support a more than sustenance-level industry, and for this reason Baxter was largely overlooked throughout its history. Scientists, however, believe that better days will one day return to Baxter IV, as the orbit of T‘Laus is expected to eventually re-stabilize. However, planetologists on Baxter appear to be uncertain as to whether such realignment is already underway, or if the moon has a few hundred more erratic orbits left to make before then.
@@ -115,20 +115,20 @@ planet:
       The capital city and primary spaceport of Baxter, Cleopolis, is located on the northern continent of Atropia. Though surrounded by a cluster of smaller cities and towns, the equatorial and southern continents of Delgado and Hermathia are more evenly populated than the Cleopolis region, thanks to fewer large mountain chains and fault lines on these two landmasses.
     landmass:
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Atropia
         capital:
-          source: MWDA world profiles
+          source: DA:RW
           value: Cleopolis
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Delgado
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Hermathia
     satellite:
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: T'laus
         size: medium
         icon: rock12
@@ -193,6 +193,12 @@ planet:
       - date: '2340-01-01'
         population: 1992512956.0
       - date: '2341-09-06'
+        # administration: LA | Federation of Skye
+        # administration: LA | Federation of Skye
+        # administration: LA | Federation of Skye
+        # administration: LA | Federation of Skye
+        # administration: LA | Federation of Skye
+        # administration: LA | Federation of Skye
         faction:
           source: canon
           value:
@@ -345,17 +351,53 @@ planet:
         socioIndustrial: C-B-D-B-F
       - date: '3030-01-01'
         population: 5745559025.0
+      - date: '3040-01-01'
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-09-23'
         population: 5799821915.0
         socioIndustrial: C-A-D-A-D
       - date: '3040-01-19'
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
         faction:
           source: canon
           value:
             - FC
       - date: '3050-01-01'
         population: 5844068486.0
+      - date: '3057-01-01'
+        # administration: LA | Skye March | Ryde Operational Area
+        # administration: LA | Skye March | Ryde Operational Area
+        # administration: LA | Skye March | Ryde Operational Area
+        # administration: LA | Skye March | Ryde Operational Area
+        # administration: LA | Skye March | Ryde Operational Area
+        # administration: LA | Skye March | Ryde Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '3057-09-18'
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
         faction:
           source: canon
           value:
@@ -366,7 +408,25 @@ planet:
         population: 5950214164.0
       - date: '3080-01-01'
         population: 6020842579.0
+      - date: '3081-01-01'
+        # administration: ROS | Prefecture IX
+        # administration: ROS | Prefecture IX
+        # administration: ROS | Prefecture IX
+        # administration: ROS | Prefecture IX
+        # administration: ROS | Prefecture IX
+        # administration: ROS | Prefecture IX
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ROS
       - date: '3081-11-21'
+        # administration: ROS | Prefecture IX
+        # administration: ROS | Prefecture IX
+        # administration: ROS | Prefecture IX
+        # administration: ROS | Prefecture IX
+        # administration: ROS | Prefecture IX
+        # administration: ROS | Prefecture IX
         faction:
           source: canon
           value:
@@ -385,6 +445,12 @@ planet:
         population: 6349824742.0
       - date: '3132-08-07'
         hpg: X
+      - date: '3135-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3135-10-01'
         faction:
           source: canon
@@ -396,7 +462,25 @@ planet:
           value:
             - CJF
         population: 6474214017.0
+      - date: '3145-01-01'
+        # administration: RD | Region 3
+        # administration: RD | Region 3
+        # administration: RD | Region 3
+        # administration: RD | Region 3
+        # administration: RD | Region 3
+        # administration: RD | Region 3
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - RD
       - date: '3145-11-01'
+        # administration: RD | Region 3
+        # administration: RD | Region 3
+        # administration: RD | Region 3
+        # administration: RD | Region 3
+        # administration: RD | Region 3
+        # administration: RD | Region 3
         faction:
           source: canon
           value:

@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: Ronel
-sucsId: 2174
+sucsId: 2175
 xcood: 95.64
 ycood: -2.635
 spectralType:
-  source: MWDA world profiles
+  source: DA:RW
   value: F2IV
 primarySlot:
-  source: MWDA world profiles
+  source: DA:RW
   value: 5
 event:
   - date: '2424-04-08'
@@ -113,31 +113,31 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 4.2
     sysPos:
-      source: MWDA world profiles
+      source: DA:RW
       value: 5
     icon: green3
     pressure:
-      source: MWDA world profiles
+      source: DA:RW
       value: STANDARD
     atmosphere:
-      source: MWDA world profiles
+      source: DA:RW
       value: TAINTED_POISON
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: MWDA world profiles
+      source: DA:RW
       value: 1.3
     diameter: 13367
     density: 6.834522038621
     dayLength: 23
     yearLength: 8.7
     temperature:
-      source: MWDA world profiles
+      source: DA:RW
       value: 34
     water:
-      source: MWDA world profiles
+      source: DA:RW
       value: 30
     lifeForm:
-      source: MWDA world profiles
+      source: DA:RW
       value: PLANT
     desc: |-
       Blasted by its large parent star, Ronel is an inhospitable world with significant mineral wealth. Although the Terran Hegemony never permanently settled Ronel, Hegemony mining companies sent teams of workers on multiyear assignments to drill deep into Ronel‘s broken terrain.
@@ -152,13 +152,13 @@ planet:
     smallMoons: 4
     landmass:
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Oxo
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Xox
         capital:
-          source: MWDA world profiles
+          source: DA:RW
           value: Lenor
     event:
       - date: '2240-09-16'
@@ -192,6 +192,12 @@ planet:
         population: 205755611.0
       - date: '2360-01-01'
         population: 275480107.0
+      - date: '2366-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FS
       - date: '2367-08-17'
         faction:
           source: canon
@@ -243,7 +249,25 @@ planet:
         population: 1645056530.0
       - date: '2570-01-01'
         population: 1667155122.0
+      - date: '2571-01-01'
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - TH
       - date: '2571-06-09'
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
         faction:
           source: canon
           value:
@@ -289,6 +313,18 @@ planet:
         population: 1877828451.0
       - date: '2760-01-01'
         population: 1887380869.0
+      - date: '2767-01-01'
+        # administration: AE | Lockdale Province
+        # administration: AE | Lockdale Province
+        # administration: AE | Lockdale Province
+        # administration: AE | Lockdale Province
+        # administration: AE | Lockdale Province
+        # administration: AE | Lockdale Province
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - AE
       - date: '2767-02-27'
         faction:
           source: canon
@@ -297,12 +333,30 @@ planet:
       - date: '2770-01-01'
         population: 1888388169.0
       - date: '2779-08-22'
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
         faction:
           source: canon
           value:
             - TH
       - date: '2780-01-01'
         population: 1885652819.0
+      - date: '2786-01-01'
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FS
       - date: '2786-12-05'
         faction:
           source: canon
@@ -320,7 +374,25 @@ planet:
         population: 1898310660.0
       - date: '2820-01-01'
         population: 1908923744.0
+      - date: '2821-01-01'
+        # administration: DC | Dieron Military District | Addicks Prefecture
+        # administration: DC | Dieron Military District | Addicks Prefecture
+        # administration: DC | Dieron Military District | Addicks Prefecture
+        # administration: DC | Dieron Military District | Addicks Prefecture
+        # administration: DC | Dieron Military District | Addicks Prefecture
+        # administration: DC | Dieron Military District | Addicks Prefecture
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - DC
       - date: '2821-11-26'
+        # administration: DC | Dieron Military District | Addicks Prefecture
+        # administration: DC | Dieron Military District | Addicks Prefecture
+        # administration: DC | Dieron Military District | Addicks Prefecture
+        # administration: DC | Dieron Military District | Addicks Prefecture
+        # administration: DC | Dieron Military District | Addicks Prefecture
+        # administration: DC | Dieron Military District | Addicks Prefecture
         faction:
           source: canon
           value:
@@ -333,7 +405,25 @@ planet:
         population: 1898099002.0
       - date: '2860-01-01'
         population: 1879565152.0
+      - date: '2864-01-01'
+        # administration: CC | Tikonov Commonality | Region 4
+        # administration: CC | Tikonov Commonality | Region 4
+        # administration: CC | Tikonov Commonality | Region 4
+        # administration: CC | Tikonov Commonality | Region 4
+        # administration: CC | Tikonov Commonality | Region 4
+        # administration: CC | Tikonov Commonality | Region 4
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CC
       - date: '2864-11-13'
+        # administration: CC | Tikonov Commonality | Region 6
+        # administration: CC | Tikonov Commonality | Region 6
+        # administration: CC | Tikonov Commonality | Region 6
+        # administration: CC | Tikonov Commonality | Region 6
+        # administration: CC | Tikonov Commonality | Region 6
+        # administration: CC | Tikonov Commonality | Region 6
         faction:
           source: canon
           value:
@@ -374,6 +464,18 @@ planet:
         population: 1550682066.0
       - date: '3020-01-01'
         population: 1523771698.0
+      - date: '3030-01-01'
+        # administration: LA | Sarna March | Tikonov Operational Area
+        # administration: LA | Sarna March | Tikonov Operational Area
+        # administration: LA | Sarna March | Tikonov Operational Area
+        # administration: LA | Sarna March | Tikonov Operational Area
+        # administration: LA | Sarna March | Tikonov Operational Area
+        # administration: LA | Sarna March | Tikonov Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '3030-02-16'
         faction:
           source: canon
@@ -383,8 +485,25 @@ planet:
       - date: '3032-01-01'
         socioIndustrial: B-C-B-B-C
       - date: '3040-01-01'
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
         population: 1535566302.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
         faction:
           source: canon
           value:
@@ -395,7 +514,25 @@ planet:
         population: 1554104102.0
       - date: '3060-01-01'
         population: 1569409195.0
+      - date: '3067-01-01'
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FS
       - date: '3067-04-20'
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
         faction:
           source: canon
           value:
@@ -404,7 +541,25 @@ planet:
         population: 1587085379.0
       - date: '3080-01-01'
         population: 1610748921.0
+      - date: '3081-01-01'
+        # administration: ROS | Prefecture IV
+        # administration: ROS | Prefecture IV
+        # administration: ROS | Prefecture IV
+        # administration: ROS | Prefecture IV
+        # administration: ROS | Prefecture IV
+        # administration: ROS | Prefecture IV
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ROS
       - date: '3081-11-02'
+        # administration: ROS | Prefecture IV
+        # administration: ROS | Prefecture IV
+        # administration: ROS | Prefecture IV
+        # administration: ROS | Prefecture IV
+        # administration: ROS | Prefecture IV
+        # administration: ROS | Prefecture IV
         faction:
           source: canon
           value:
@@ -423,6 +578,12 @@ planet:
         population: 1658144555.0
       - date: '3132-08-07'
         hpg: X
+      - date: '3135-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3135-10-01'
         faction:
           source: canon
@@ -430,6 +591,18 @@ planet:
             - IND
       - date: '3140-01-01'
         population: 1656818570.0
+      - date: '3145-01-01'
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FS
       - date: '3145-03-23'
         faction:
           source: canon
@@ -442,10 +615,22 @@ planet:
           value:
             - DC
       - date: '3151-01-01'
+        # administration: DC | Dieron Military District | Ashio Prefecture
+        # administration: DC | Dieron Military District | Ashio Prefecture
+        # administration: DC | Dieron Military District | Ashio Prefecture
+        # administration: DC | Dieron Military District | Ashio Prefecture
+        # administration: DC | Dieron Military District | Ashio Prefecture
+        # administration: DC | Dieron Military District | Ashio Prefecture
         faction:
           source: sucs
           value:
             - DC
+      - date: '3152-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - DC/FS
   - name: Morrigna
     type: DWARF_TERRESTRIAL
     orbitalDist: 7.8

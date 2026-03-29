@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Vorarlberg
-sucsId: 2702
+sucsId: 2703
 xcood: 24.296
 ycood: 303.682
 spectralType: G5V
@@ -89,6 +89,12 @@ planet:
           source: canon
           value:
             - LA
+      - date: '2366-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '2370-01-01'
         population: 46484455.0
       - date: '2380-01-01'
@@ -133,6 +139,18 @@ planet:
         population: 2871754607.0
       - date: '2570-01-01'
         population: 2994545727.0
+      - date: '2571-01-01'
+        # administration: LA | Tamar Pact | Tamar Domains
+        # administration: LA | Tamar Pact | Tamar Domains
+        # administration: LA | Tamar Pact | Tamar Domains
+        # administration: LA | Tamar Pact | Tamar Domains
+        # administration: LA | Tamar Pact | Tamar Domains
+        # administration: LA | Tamar Pact | Tamar Domains
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '2580-01-01'
         population: 3094148979.0
       - date: '2590-01-01'
@@ -181,6 +199,12 @@ planet:
       - date: '2780-01-01'
         population: 3531528871.0
       - date: '2790-11-30'
+        # administration: DC | Rasalhague Military District | Radstadt Prefecture
+        # administration: DC | Rasalhague Military District | Radstadt Prefecture
+        # administration: DC | Rasalhague Military District | Radstadt Prefecture
+        # administration: DC | Rasalhague Military District | Radstadt Prefecture
+        # administration: DC | Rasalhague Military District | Radstadt Prefecture
+        # administration: DC | Rasalhague Military District | Radstadt Prefecture
         faction:
           source: canon
           value:
@@ -243,7 +267,18 @@ planet:
           value:
             - FRR
       - date: '3040-01-01'
+        # administration: FR | Radstadt Province
+        # administration: FR | Radstadt Province
+        # administration: FR | Radstadt Province
+        # administration: FR | Radstadt Province
+        # administration: FR | Radstadt Province
+        # administration: FR | Radstadt Province
         population: 3002093278.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FR
       - date: '3041-01-01'
         socioIndustrial: B-B-D-B-B
       - date: '3050-01-01'
@@ -276,6 +311,12 @@ planet:
       - date: '3102-01-01'
         socioIndustrial: B-B-D-B-B
       - date: '3103-03-13'
+        # administration: RD | Region 2
+        # administration: RD | Region 2
+        # administration: RD | Region 2
+        # administration: RD | Region 2
+        # administration: RD | Region 2
+        # administration: RD | Region 2
         faction:
           source: canon
           value:

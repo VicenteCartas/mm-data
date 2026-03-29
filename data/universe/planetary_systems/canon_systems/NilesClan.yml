@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,15 +16,17 @@
 # affiliated with Microsoft.
 
 id: Niles (Clan)
-sucsId: 2955
+sucsId: 2956
 xcood: 118.994
 ycood: 1706.832
 spectralType:
-  source: Warriors of Kerensky, pg. 112
+  source: WoK
   value: A3II
+  page: 112
 primarySlot:
-  source: Warriors of Kerensky, pg. 112
+  source: WoK
   value: 1
+  page: 112
 event:
   - date: '2802-03-04'
     nadirCharge: yes
@@ -35,32 +37,39 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 12.48
     sysPos:
-      source: Warriors of Kerensky, pg. 112
+      source: WoK
       value: 1
+      page: 112
     icon: green46
     pressure:
-      source: Warriors of Kerensky, pg. 112
+      source: WoK
       value: STANDARD
+      page: 112
     atmosphere:
-      source: Warriors of Kerensky, pg. 112
+      source: WoK
       value: TAINTED_POISON
+      page: 112
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: Warriors of Kerensky, pg. 112
+      source: WoK
       value: 0.8
+      page: 112
     diameter: 11990
     density: 4.689138935353
     dayLength: 20
     yearLength: 44.1
     temperature:
-      source: Warriors of Kerensky, pg. 112
+      source: WoK
       value: 35
+      page: 112
     water:
-      source: Warriors of Kerensky, pg. 112
+      source: WoK
       value: 20
+      page: 112
     lifeForm:
-      source: Warriors of Kerensky, pg. 112
+      source: WoK
       value: MICROBE
+      page: 112
     desc: No description available.
     landmass:
       - name: Bowling Green
@@ -68,6 +77,12 @@ planet:
       - name: Cassia
     event:
       - date: '2802-11-28'
+        # administration: CHH | National Capital
+        # administration: CHH | National Capital
+        # administration: CHH | National Capital
+        # administration: CHH | National Capital
+        # administration: CHH | National Capital
+        # administration: CHH | National Capital
         faction:
           source: canon
           value:
@@ -91,6 +106,12 @@ planet:
       - date: '2860-01-01'
         population: 7621581.0
       - date: '2864-06-27'
+        # administration: CHH | National Capital
+        # administration: CHH | National Capital
+        # administration: CHH | National Capital
+        # administration: CHH | National Capital
+        # administration: CHH | National Capital
+        # administration: CHH | National Capital
         faction:
           source: canon
           value:
@@ -139,6 +160,12 @@ planet:
         population: 39235019.0
       - date: '3060-01-01'
         population: 39597825.0
+      - date: '3068-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CLAN
       - date: '3070-01-01'
         population: 39888157.0
       - date: '3072-02-27'
@@ -162,6 +189,12 @@ planet:
             - CHH
             - CCC
             - CCO
+      - date: '3075-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CLAN
       - date: '3075-06-01'
         faction:
           source: canon
@@ -180,6 +213,12 @@ planet:
           value: 40000000.0
       - date: '3080-01-01'
         population: 40032013.0
+      - date: '3085-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CSL
       - date: '3085-03-17'
         faction:
           source: canon

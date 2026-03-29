@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: Poznan
-sucsId: 2058
+sucsId: 2059
 xcood: 62.546
 ycood: -81.213
 spectralType:
-  source: MWDA world profiles
+  source: DA:RW
   value: G6III
 primarySlot:
-  source: MWDA world profiles
+  source: DA:RW
   value: 4
 event:
   - date: '2371-03-14'
@@ -84,81 +84,57 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 1.44
     sysPos:
-      source: MWDA world profiles
+      source: DA:RW
       value: 4
     icon: green47
     pressure:
-      source: MWDA world profiles
+      source: DA:RW
       value: STANDARD
     atmosphere:
-      source: MWDA world profiles
+      source: DA:RW
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: MWDA world profiles
+      source: DA:RW
       value: 1.2
     diameter: 14517
     density: 5.809094591141
     dayLength: 23
     yearLength: 2.0
     temperature:
-      source: MWDA world profiles
+      source: DA:RW
       value: 45
     water:
-      source: MWDA world profiles
+      source: DA:RW
       value: 65
     lifeForm:
-      source: MWDA world profiles
+      source: DA:RW
       value: REPTILE
-    desc: "3135 - Poznan was colonized by refugees from Poland, Portugal, and Spain
-      during the original Exodus from Terra. It was named after the first capital
-      of the former Terran country of Poland. The continents of Boleslaw and Mieszko,
-      located in the northern hemisphere, were settled by the Poles because the continents
-      resembled their former homeland. Both continents produce iron ore, petroleum,
-      and various agricultural products. Boleslaw is larger and more mountainous.
-      Mieszko has more flatlands and rolling hills, and Lake Lednica, the largest
-      freshwater lake on Poznan.\n\nThe Spanish were the largest group of settlers,
-      claiming the four largest continents, Barcelona, Palma, Seville, and Zaragoza,
-      located mostly in the equatorial zone. They established the planetary capital
-      of New Madrid on Barcelona, the largest of the four continents. Here they thrived
-      and traded with their neighbors in the north and south. The Portuguese settled
-      on the island continent of Galicia which is rich in minerals, precious metals,
-      and titanium ore.\n\nDuring the next two centuries, Poznan flourished. However
-      an ugly and brutal civil war was fought between the Poles and Spaniards over
-      Palma. The Spaniards won and a planetary government was formed. In 2320, Poznan
-      was offered membership into the Duchy of Liao. Over the next three hundred years,
-      Poznan‘s population increased tenfold, with many of Chinese descent immigrating
-      until the Spaniards were in the minority.\n\nDuring the Fourth Succession War,
-      Federated Suns forces captured Poznan and they helped relieve the oppression
-      caused by the Chinese population and installed a new government. When the Capellan
-      Confederation regained control, the Chancellor decreed that nothing would change
-      and left the new leadership in place. This act did more to win the hearts of
-      the people than anything else. This was apparent when the Republic of the Sphere
-      laid claim to Poznan, it has continued to harbor dissidents and malcontents. "
+    desc: "3135 - Poznan was colonized by refugees from Poland, Portugal, and Spain during the original Exodus from Terra. It was named after the first capital of the former Terran country of Poland. The continents of Boleslaw and Mieszko, located in the northern hemisphere, were settled by the Poles because the continents resembled their former homeland. Both continents produce iron ore, petroleum, and various agricultural products. Boleslaw is larger and more mountainous. Mieszko has more flatlands and rolling hills, and Lake Lednica, the largest freshwater lake on Poznan.\n\nThe Spanish were the largest group of settlers, claiming the four largest continents, Barcelona, Palma, Seville, and Zaragoza, located mostly in the equatorial zone. They established the planetary capital of New Madrid on Barcelona, the largest of the four continents. Here they thrived and traded with their neighbors in the north and south. The Portuguese settled on the island continent of Galicia which is rich in minerals, precious metals, and titanium ore.\n\nDuring the next two centuries, Poznan flourished. However an ugly and brutal civil war was fought between the Poles and Spaniards over Palma. The Spaniards won and a planetary government was formed. In 2320, Poznan was offered membership into the Duchy of Liao. Over the next three hundred years, Poznan‘s population increased tenfold, with many of Chinese descent immigrating until the Spaniards were in the minority.\n\nDuring the Fourth Succession War, Federated Suns forces captured Poznan and they helped relieve the oppression caused by the Chinese population and installed a new government. When the Capellan Confederation regained control, the Chancellor decreed that nothing would change and left the new leadership in place. This act did more to win the hearts of the people than anything else. This was apparent when the Republic of the Sphere laid claim to Poznan, it has continued to harbor dissidents and malcontents. "
     landmass:
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Barcelona
         capital:
-          source: MWDA world profiles
+          source: DA:RW
           value: New Madrid
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Boleslaw
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Galicia
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Mieszko
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Palma
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Seville
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Zaragoza
     event:
       - date: '2267-07-18'
@@ -199,6 +175,12 @@ planet:
       - date: '2360-01-01'
         population: 115115864.0
       - date: '2367-07-01'
+        # administration: CC | Tikonov Commonality | Region 3
+        # administration: CC | Tikonov Commonality | Region 3
+        # administration: CC | Tikonov Commonality | Region 3
+        # administration: CC | Tikonov Commonality | Region 3
+        # administration: CC | Tikonov Commonality | Region 3
+        # administration: CC | Tikonov Commonality | Region 3
         faction:
           source: canon
           value:
@@ -357,15 +339,43 @@ planet:
           value:
             - FS
       - date: '3030-01-01'
+        # administration: LA | Sarna March | Tikonov Operational Area
+        # administration: LA | Sarna March | Tikonov Operational Area
+        # administration: LA | Sarna March | Tikonov Operational Area
+        # administration: LA | Sarna March | Tikonov Operational Area
+        # administration: LA | Sarna March | Tikonov Operational Area
+        # administration: LA | Sarna March | Tikonov Operational Area
         population: 1229175502.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '3030-02-28'
         faction:
           source: canon
           value:
             - LA
       - date: '3040-01-01'
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
         population: 1239668024.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
         faction:
           source: canon
           value:
@@ -374,14 +384,32 @@ planet:
         socioIndustrial: C-C-B-B-D
       - date: '3050-01-01'
         population: 1253003691.0
+      - date: '3057-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3057-11-01'
         faction:
           source: canon
           value:
             - CM
+      - date: '3058-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3060-01-01'
         population: 1269018315.0
       - date: '3062-04-04'
+        # administration: CC | Liao Commonality | Region 2
+        # administration: CC | Liao Commonality | Region 2
+        # administration: CC | Liao Commonality | Region 2
+        # administration: CC | Liao Commonality | Region 2
+        # administration: CC | Liao Commonality | Region 2
+        # administration: CC | Liao Commonality | Region 2
         faction:
           source: canon
           value:
@@ -400,13 +428,37 @@ planet:
             - CC
             - WOB
       - date: '3077-08-18'
+        # administration: CC | Liao Commonality | Region 1
+        # administration: CC | Liao Commonality | Region 1
+        # administration: CC | Liao Commonality | Region 1
+        # administration: CC | Liao Commonality | Region 1
+        # administration: CC | Liao Commonality | Region 1
+        # administration: CC | Liao Commonality | Region 1
         faction:
           source: canon
           value:
             - CC
       - date: '3080-01-01'
         population: 1296338331.0
+      - date: '3085-01-01'
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ROS
       - date: '3085-01-30'
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
         faction:
           source: canon
           value:
@@ -425,6 +477,12 @@ planet:
         population: 1330485112.0
       - date: '3132-08-07'
         hpg: X
+      - date: '3135-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3135-10-01'
         faction:
           source: canon
@@ -432,7 +490,25 @@ planet:
             - IND
       - date: '3140-01-01'
         population: 1331549926.0
+      - date: '3145-01-01'
+        # administration: CC | Tikonov Commonality | Region 6
+        # administration: CC | Tikonov Commonality | Region 6
+        # administration: CC | Tikonov Commonality | Region 6
+        # administration: CC | Tikonov Commonality | Region 6
+        # administration: CC | Tikonov Commonality | Region 6
+        # administration: CC | Tikonov Commonality | Region 6
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CC
       - date: '3145-02-19'
+        # administration: CC | Tikonov Commonality | Region 10
+        # administration: CC | Tikonov Commonality | Region 10
+        # administration: CC | Tikonov Commonality | Region 10
+        # administration: CC | Tikonov Commonality | Region 10
+        # administration: CC | Tikonov Commonality | Region 10
+        # administration: CC | Tikonov Commonality | Region 10
         faction:
           source: canon
           value:

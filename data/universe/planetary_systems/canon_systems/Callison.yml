@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -20,10 +20,10 @@ sucsId: 443
 xcood: -62.556
 ycood: -15.044
 spectralType:
-  source: MWDA world profiles
+  source: DA:RW
   value: G5V
 primarySlot:
-  source: MWDA world profiles
+  source: DA:RW
   value: 2
 event:
   - date: '2372-11-14'
@@ -55,61 +55,43 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.63
     sysPos:
-      source: MWDA world profiles
+      source: DA:RW
       value: 2
     icon: wet15
     pressure:
-      source: MWDA world profiles
+      source: DA:RW
       value: STANDARD
     atmosphere:
-      source: MWDA world profiles
+      source: DA:RW
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: MWDA world profiles
+      source: DA:RW
       value: 0.99
     diameter: 12731
     density: 5.464757416155
     dayLength: 21
     yearLength: 1.1
     temperature:
-      source: MWDA world profiles
+      source: DA:RW
       value: 33
     water:
-      source: MWDA world profiles
+      source: DA:RW
       value: 84
     lifeForm:
-      source: MWDA world profiles
+      source: DA:RW
       value: MAMMAL
-    desc: 3135 - Callison possesses abundant water, mineral, and agricultural resources.
-      It was originally colonized by the Federation of Skye in the early period of
-      mankind's colonization of the stars before the heavily urbanized and industrialized
-      world was claimed by the Free World League during the Age of War. During the
-      Star League era, Callison was a key border world and trading hub, jointly administered
-      by the Free World League and the Terran Hegemony. After the Amaris Crisis and
-      the collapse of the Star League, Callison reverted to full control by the Free
-      World League. In 2966, Callison joined with other nearby worlds to form the
-      Silver Hawks Coalition to co-ordinate defences against Lyran Commonwealth raids
-      and invasions. Callison remained part of the Free World League throughout the
-      Succession Wars inspite of heavy fighting that devastated many major cities
-      until Lyran Commonwealth mercenaries finally seized the world with a decisive
-      battle at Fallosha, the capital city during the Fourth Succession War. Operation
-      Guerrero resulted in the Free World League recapturing Callison once more. When
-      the Word of Blake Jihad erupted in 3067, the Free World League was initially
-      spared. However, the Word of Blaket eventually attacked, and Callison suffered
-      from a massed assault by mercenary ‘Mech forces. Fortunately, Callison was spared
-      the atrocities committed elsewhere and the world recovered under Republic of
-      the Sphere proved easier than most.
+    desc: 3135 - Callison possesses abundant water, mineral, and agricultural resources. It was originally colonized by the Federation of Skye in the early period of mankind's colonization of the stars before the heavily urbanized and industrialized world was claimed by the Free World League during the Age of War. During the Star League era, Callison was a key border world and trading hub, jointly administered by the Free World League and the Terran Hegemony. After the Amaris Crisis and the collapse of the Star League, Callison reverted to full control by the Free World League. In 2966, Callison joined with other nearby worlds to form the Silver Hawks Coalition to co-ordinate defences against Lyran Commonwealth raids and invasions. Callison remained part of the Free World League throughout the Succession Wars inspite of heavy fighting that devastated many major cities until Lyran Commonwealth mercenaries finally seized the world with a decisive battle at Fallosha, the capital city during the Fourth Succession War. Operation Guerrero resulted in the Free World League recapturing Callison once more. When the Word of Blake Jihad erupted in 3067, the Free World League was initially spared. However, the Word of Blaket eventually attacked, and Callison suffered from a massed assault by mercenary ‘Mech forces. Fortunately, Callison was spared the atrocities committed elsewhere and the world recovered under Republic of the Sphere proved easier than most.
     landmass:
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Grayle
         capital:
-          source: MWDA world profiles
+          source: DA:RW
           value: Fallosha
     satellite:
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Yngve
         size: medium
         icon: rock9
@@ -147,6 +129,12 @@ planet:
         population: 184952534.0
       - date: '2340-01-01'
         population: 267906006.0
+      - date: '2341-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - TH
       - date: '2341-06-29'
         faction:
           source: canon
@@ -206,11 +194,29 @@ planet:
           value:
             - FWL
         population: 2371500182.0
+      - date: '2571-01-01'
+        # administration: TH | Tyrfing Province
+        # administration: TH | Tyrfing Province
+        # administration: TH | Tyrfing Province
+        # administration: TH | Tyrfing Province
+        # administration: TH | Tyrfing Province
+        # administration: TH | Tyrfing Province
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - TH
       - date: '2580-01-01'
         population: 2374738972.0
       - date: '2590-01-01'
         population: 2377069148.0
       - date: '2600-06-11'
+        # administration: TH | Tyrfing Province
+        # administration: TH | Tyrfing Province
+        # administration: TH | Tyrfing Province
+        # administration: TH | Tyrfing Province
+        # administration: TH | Tyrfing Province
+        # administration: TH | Tyrfing Province
         faction:
           source: canon
           value:
@@ -252,6 +258,18 @@ planet:
         population: 2371756579.0
       - date: '2760-01-01'
         population: 2386199762.0
+      - date: '2767-01-01'
+        # administration: AE | Tyrfing Province
+        # administration: AE | Tyrfing Province
+        # administration: AE | Tyrfing Province
+        # administration: AE | Tyrfing Province
+        # administration: AE | Tyrfing Province
+        # administration: AE | Tyrfing Province
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - AE
       - date: '2767-08-25'
         faction:
           source: canon
@@ -260,12 +278,24 @@ planet:
       - date: '2770-01-01'
         population: 2395777105.0
       - date: '2779-01-27'
+        # administration: TH | Tyrfing Province
+        # administration: TH | Tyrfing Province
+        # administration: TH | Tyrfing Province
+        # administration: TH | Tyrfing Province
+        # administration: TH | Tyrfing Province
+        # administration: TH | Tyrfing Province
         faction:
           source: canon
           value:
             - TH
       - date: '2780-01-01'
         population: 2381056425.0
+      - date: '2786-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FWL
       - date: '2786-05-16'
         faction:
           source: canon
@@ -289,6 +319,18 @@ planet:
         socioIndustrial: B-B-B-B-C
       - date: '2860-01-01'
         population: 2089769767.0
+      - date: '2864-01-01'
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '2864-03-18'
         faction:
           source: canon
@@ -318,6 +360,12 @@ planet:
       - date: '2970-01-01'
         population: 1745203667.0
       - date: '2975-02-13'
+        # administration: FWL | Silver Hawks Coalition
+        # administration: FWL | Silver Hawks Coalition
+        # administration: FWL | Silver Hawks Coalition
+        # administration: FWL | Silver Hawks Coalition
+        # administration: FWL | Silver Hawks Coalition
+        # administration: FWL | Silver Hawks Coalition
         faction:
           source: canon
           value:
@@ -334,6 +382,18 @@ planet:
         population: 1729809698.0
       - date: '3029-01-01'
         socioIndustrial: B-B-B-B-C
+      - date: '3030-01-01'
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '3030-05-10'
         faction:
           source: canon
@@ -363,8 +423,25 @@ planet:
           value:
             - LA
       - date: '3040-01-01'
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
         population: 1752943296.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
         faction:
           source: canon
           value:
@@ -373,7 +450,25 @@ planet:
         socioIndustrial: A-A-A-A-C
       - date: '3050-01-01'
         population: 1777301599.0
+      - date: '3057-01-01'
+        # administration: FWL | Silver Hawks Coalition
+        # administration: FWL | Silver Hawks Coalition
+        # administration: FWL | Silver Hawks Coalition
+        # administration: FWL | Silver Hawks Coalition
+        # administration: FWL | Silver Hawks Coalition
+        # administration: FWL | Silver Hawks Coalition
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FWL
       - date: '3057-10-01'
+        # administration: FWL | Silver Hawks Coalition
+        # administration: FWL | Silver Hawks Coalition
+        # administration: FWL | Silver Hawks Coalition
+        # administration: FWL | Silver Hawks Coalition
+        # administration: FWL | Silver Hawks Coalition
+        # administration: FWL | Silver Hawks Coalition
         faction:
           source: canon
           value:
@@ -400,7 +495,25 @@ planet:
             - Stone
       - date: '3080-01-01'
         population: 1836563676.0
+      - date: '3081-01-01'
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ROS
       - date: '3081-05-02'
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
         faction:
           source: canon
           value:
@@ -419,6 +532,12 @@ planet:
         population: 1930340203.0
       - date: '3132-08-07'
         hpg: X
+      - date: '3135-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - RR
       - date: '3135-10-01'
         faction:
           source: canon
@@ -445,10 +564,17 @@ planet:
             - CWE
       - date: '3151-01-01'
         faction:
-          source: sucs
+          source: SUCS
+          version: 2026.03.02
           value:
             - CWE
       - date: '3151-08-23'
+        # administration: FWL | Covenant Worlds
+        # administration: FWL | Covenant Worlds
+        # administration: FWL | Covenant Worlds
+        # administration: FWL | Covenant Worlds
+        # administration: FWL | Covenant Worlds
+        # administration: FWL | Covenant Worlds
         faction:
           source: canon
           value:

@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -20,11 +20,13 @@ sucsId: 118
 xcood: -128.955
 ycood: -30.813
 spectralType:
-  source: House Marik, pg. 160
+  source: HMSB
   value: M2V
+  page: 160
 primarySlot:
-  source: House Marik, pg. 160
+  source: HMSB
   value: 2
+  page: 160
 event:
   - date: '2403-07-26'
     zenithCharge: yes
@@ -53,8 +55,9 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.16
     sysPos:
-      source: House Marik, pg. 160
+      source: HMSB
       value: 2
+      page: 160
     icon: green31
     pressure:
       source: canon
@@ -75,14 +78,10 @@ planet:
       source: canon
       value: 63
     lifeForm:
-      source: House Marik, pg. 160
+      source: HMSB
       value: MAMMAL
-    desc: Amity has been a successful and prosperous industrial planet for most of
-      its history. Unfortunately the Succession Wars took their toll on the planet
-      and resulted in the destruction of most of its industry. It was not until late
-      in the 3rd Succession War that the Captain-General sent teams of engineers and
-      scientists to help the planet rebuild and over time Amity began to return to
-      its former quality of life for its citizens.
+      page: 160
+    desc: Amity has been a successful and prosperous industrial planet for most of its history. Unfortunately the Succession Wars took their toll on the planet and resulted in the destruction of most of its industry. It was not until late in the 3rd Succession War that the Captain-General sent teams of engineers and scientists to help the planet rebuild and over time Amity began to return to its former quality of life for its citizens.
     smallMoons: 2
     landmass:
       - name:
@@ -133,6 +132,18 @@ planet:
         socioIndustrial: C-C-B-F-D
       - date: '2360-01-01'
         population: 309255242.0
+      - date: '2366-01-01'
+        # administration: LA | Federation of Skye
+        # administration: LA | Federation of Skye
+        # administration: LA | Federation of Skye
+        # administration: LA | Federation of Skye
+        # administration: LA | Federation of Skye
+        # administration: LA | Federation of Skye
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '2367-10-05'
         faction:
           source: canon
@@ -246,6 +257,12 @@ planet:
       - date: '2830-01-01'
         population: 2661731656.0
       - date: '2837-12-23'
+        # administration: LA | Federation of Skye | Rahneshire
+        # administration: LA | Federation of Skye | Rahneshire
+        # administration: LA | Federation of Skye | Rahneshire
+        # administration: LA | Federation of Skye | Rahneshire
+        # administration: LA | Federation of Skye | Rahneshire
+        # administration: LA | Federation of Skye | Rahneshire
         faction:
           source: canon
           value:
@@ -293,6 +310,12 @@ planet:
             - LA
         population: 2422207339.0
       - date: '2982-08-01'
+        # administration: FWL | Silver Hawks Coalition
+        # administration: FWL | Silver Hawks Coalition
+        # administration: FWL | Silver Hawks Coalition
+        # administration: FWL | Silver Hawks Coalition
+        # administration: FWL | Silver Hawks Coalition
+        # administration: FWL | Silver Hawks Coalition
         faction:
           source: canon
           value:
@@ -341,6 +364,12 @@ planet:
         population: 975802148.0
       - date: '3094-01-01'
         socioIndustrial: A-B-A-C-C
+      - date: '3095-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - SHC
       - date: '3100-01-01'
         population: 987977425.0
       - date: '3110-01-01'
@@ -349,12 +378,23 @@ planet:
         population: 1017658673.0
       - date: '3130-01-01'
         population: 1032418977.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - MSC
       - date: '3132-08-07'
         hpg:
           source: canon
           value: X
       - date: '3140-01-01'
         population: 1037801538.0
+      - date: '3145-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CWE
       - date: '3145-12-24'
         faction:
           source: canon
@@ -362,6 +402,12 @@ planet:
             - CWE
         population: 1039879218.0
       - date: '3152-01-01'
+        # administration: FWL | Silver Hawks Coalition
+        # administration: FWL | Silver Hawks Coalition
+        # administration: FWL | Silver Hawks Coalition
+        # administration: FWL | Silver Hawks Coalition
+        # administration: FWL | Silver Hawks Coalition
+        # administration: FWL | Silver Hawks Coalition
         faction:
           source: sucs
           value:

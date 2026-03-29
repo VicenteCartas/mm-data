@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,15 +16,17 @@
 # affiliated with Microsoft.
 
 id: Rahne
-sucsId: 2109
+sucsId: 2110
 xcood: -141.926
 ycood: 9.284
 spectralType:
-  source: 'Handbook: House Steiner, pg. 89'
+  source: 'HB:HS'
   value: G7V
+  page: 89
 primarySlot:
-  source: 'Handbook: House Steiner, pg. 89'
+  source: 'HB:HS'
   value: 4
+  page: 89
 event:
   - date: '2391-12-18'
     nadirCharge: yes
@@ -90,32 +92,39 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.63
     sysPos:
-      source: 'Handbook: House Steiner, pg. 89'
+      source: 'HB:HS'
       value: 4
+      page: 89
     icon: green33
     pressure:
-      source: 'Handbook: House Steiner, pg. 89'
+      source: 'HB:HS'
       value: STANDARD
+      page: 89
     atmosphere:
-      source: 'Handbook: House Steiner, pg. 89'
+      source: 'HB:HS'
       value: BREATHABLE
+      page: 89
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'Handbook: House Steiner, pg. 89'
+      source: 'HB:HS'
       value: 0.94
+      page: 89
     diameter: 10904
     density: 6.058257644332
     dayLength: 20
     yearLength: 1.1
     temperature:
-      source: 'Handbook: House Steiner, pg. 89'
+      source: 'HB:HS'
       value: 53
+      page: 89
     water:
-      source: 'Handbook: House Steiner, pg. 89'
+      source: 'HB:HS'
       value: 44
+      page: 89
     lifeForm:
-      source: 'Handbook: House Steiner, pg. 89'
+      source: 'HB:HS'
       value: MAMMAL
+      page: 89
     desc: |-
       Rahne is a small planet with very little arable land, an extremely short growing season and scarce water. To make matters worse the planet is constantly assailed by massive dust storms, which have greatly hampered efforts to tap into the mineral wealth available near the surface of the planet. The extreme weather on Rahne is caused by its massive moon Caliban, which is nearly as large as Rahne.
 
@@ -124,21 +133,26 @@ planet:
       Even with its extreme weather, Rahne does support native life. A prime example is the ill-tempered Toad-Fox, a deadly predator with red fur and poisonous claws. The beast comes out at night during the Storm and Calm seasons to hunt, mates during the Cold season and spends the Warm season they birth their young in burrows they dig into mountains with their massive claws.
     landmass:
       - name:
-          source: 'Handbook: House Steiner, pg. 89'
+          source: 'HB:HS'
           value: Pyrammus
+          page: 89
       - name:
-          source: 'Handbook: House Steiner, pg. 89'
+          source: 'HB:HS'
           value: Tempestia
+          page: 89
         capital:
-          source: 'Handbook: House Steiner, pg. 89'
+          source: 'HB:HS'
           value: Rahne City
+          page: 89
       - name:
-          source: 'Handbook: House Steiner, pg. 89'
+          source: 'HB:HS'
           value: Tsunamus
+          page: 89
     satellite:
       - name:
-          source: 'Handbook: House Steiner, pg. 89'
+          source: 'HB:HS'
           value: Caliban
+          page: 89
         size: medium
         icon: rock13
     event:
@@ -168,13 +182,31 @@ planet:
         population: 25015500.0
       - date: '2310-01-01'
         population: 47570996.0
+      - date: '2317-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '2320-01-01'
         population: 82452368.0
       - date: '2330-01-01'
         population: 132247540.0
       - date: '2340-01-01'
         population: 199317201.0
+      - date: '2341-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FoS
       - date: '2341-07-21'
+        # administration: LA | Federation of Skye
+        # administration: LA | Federation of Skye
+        # administration: LA | Federation of Skye
+        # administration: LA | Federation of Skye
+        # administration: LA | Federation of Skye
+        # administration: LA | Federation of Skye
         faction:
           source: canon
           value:
@@ -337,8 +369,25 @@ planet:
       - date: '3038-01-01'
         socioIndustrial: C-C-C-B-D
       - date: '3040-01-01'
+        # administration: FC | Tamarind March | Soilihull Operational Area
+        # administration: FC | Tamarind March | Soilihull Operational Area
+        # administration: FC | Tamarind March | Soilihull Operational Area
+        # administration: FC | Tamarind March | Soilihull Operational Area
+        # administration: FC | Tamarind March | Soilihull Operational Area
+        # administration: FC | Tamarind March | Soilihull Operational Area
         population: 2995704989.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
+        # administration: FC | Tamarind March | Soilihull Operational Area
+        # administration: FC | Tamarind March | Soilihull Operational Area
+        # administration: FC | Tamarind March | Soilihull Operational Area
+        # administration: FC | Tamarind March | Soilihull Operational Area
+        # administration: FC | Tamarind March | Soilihull Operational Area
+        # administration: FC | Tamarind March | Soilihull Operational Area
         faction:
           source: canon
           value:
@@ -349,7 +398,25 @@ planet:
           value: B-C-B-A-D
       - date: '3050-01-01'
         population: 3017351901.0
+      - date: '3057-01-01'
+        # administration: LA | Tamarind March | Soilihull Operational Area
+        # administration: LA | Tamarind March | Soilihull Operational Area
+        # administration: LA | Tamarind March | Soilihull Operational Area
+        # administration: LA | Tamarind March | Soilihull Operational Area
+        # administration: LA | Tamarind March | Soilihull Operational Area
+        # administration: LA | Tamarind March | Soilihull Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '3057-09-18'
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
         faction:
           source: canon
           value:
@@ -382,6 +449,12 @@ planet:
           value: X
       - date: '3140-01-01'
         population: 3200092106.0
+      - date: '3145-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CWE
       - date: '3145-09-30'
         faction:
           source: canon

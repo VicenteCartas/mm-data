@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,15 +16,17 @@
 # affiliated with Microsoft.
 
 id: Nova Roma
-sucsId: 1899
+sucsId: 1900
 xcood: -83.252
 ycood: -133.95
 spectralType:
-  source: House Marik, pg. 158
+  source: HMSB
   value: F6IV
+  page: 158
 primarySlot:
-  source: House Marik, pg. 158
+  source: HMSB
   value: 3
+  page: 158
 event:
   - date: '2644-01-19'
     nadirCharge: yes
@@ -67,8 +69,9 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 3.64
     sysPos:
-      source: House Marik, pg. 158
+      source: HMSB
       value: 3
+      page: 158
     icon: green8
     pressure: HIGH
     atmosphere: BREATHABLE
@@ -81,22 +84,22 @@ planet:
     temperature: 38
     water: 44
     lifeForm:
-      source: House Marik, pg. 158
+      source: HMSB
       value: REPTILE
-    desc: For much of its history Nova Roma was an unimportant but successful agrarian
-      world that made it through most of the Succession Wars unscathed due to its
-      lack of strategic importance. Unfortunately in September of 3014 Wolf’s Dragoons
-      arrived and captured the world and Anton Marik launched his civil war from Nova
-      Roma. Unfortunately for the citizens of the planet Nova Roma also became the
-      final battle in the civil war when the final battle destroyed much of the farm
-      land and several important mines on the planet, crippling its economy. Rebuilding
-      after the Civil War has been slow.
+      page: 158
+    desc: For much of its history Nova Roma was an unimportant but successful agrarian world that made it through most of the Succession Wars unscathed due to its lack of strategic importance. Unfortunately in September of 3014 Wolf’s Dragoons arrived and captured the world and Anton Marik launched his civil war from Nova Roma. Unfortunately for the citizens of the planet Nova Roma also became the final battle in the civil war when the final battle destroyed much of the farm land and several important mines on the planet, crippling its economy. Rebuilding after the Civil War has been slow.
     landmass:
       - capital:
           source: canon
           value: Constantinople
     event:
       - date: '2620-08-11'
+        # administration: FWL | Federation of Oriente
+        # administration: FWL | Federation of Oriente
+        # administration: FWL | Federation of Oriente
+        # administration: FWL | Federation of Oriente
+        # administration: FWL | Federation of Oriente
+        # administration: FWL | Federation of Oriente
         faction:
           source: canon
           value:
@@ -209,6 +212,12 @@ planet:
           value:
             - FWLR
       - date: '3015-03-15'
+        # administration: FWL | The Protectorate
+        # administration: FWL | The Protectorate
+        # administration: FWL | The Protectorate
+        # administration: FWL | The Protectorate
+        # administration: FWL | The Protectorate
+        # administration: FWL | The Protectorate
         faction:
           source: canon
           value:
@@ -249,6 +258,12 @@ planet:
         population: 5182754256.0
       - date: '3120-01-01'
         population: 5249519899.0
+      - date: '3130-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - OP
       - date: '3130-12-02'
         faction:
           source: canon
@@ -262,8 +277,25 @@ planet:
       - date: '3140-01-01'
         population: 5386719781.0
       - date: '3145-01-01'
+        # administration: FWL | Oriente Protectorate
+        # administration: FWL | Oriente Protectorate
+        # administration: FWL | Oriente Protectorate
+        # administration: FWL | Oriente Protectorate
+        # administration: FWL | Oriente Protectorate
+        # administration: FWL | Oriente Protectorate
         population: 5436506269.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FWL
       - date: '3151-01-01'
+        # administration: FWL | Oriente Protectorate
+        # administration: FWL | Oriente Protectorate
+        # administration: FWL | Oriente Protectorate
+        # administration: FWL | Oriente Protectorate
+        # administration: FWL | Oriente Protectorate
+        # administration: FWL | Oriente Protectorate
         faction:
           source: sucs
           value:

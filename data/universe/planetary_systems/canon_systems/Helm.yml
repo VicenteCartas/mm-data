@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,15 +16,17 @@
 # affiliated with Microsoft.
 
 id: Helm
-sucsId: 1090
+sucsId: 1091
 xcood: -133.614
 ycood: -58.208
 spectralType:
-  source: 'Handbook: House Marik, pg. 68'
+  source: 'HB:HM'
   value: K4IV
+  page: 68
 primarySlot:
-  source: 'Handbook: House Marik, pg. 68'
+  source: 'HB:HM'
   value: 4
+  page: 68
 planet:
   - name: Eventus Bonus
     type: TERRESTRIAL
@@ -95,32 +97,39 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.7
     sysPos:
-      source: 'Handbook: House Marik, pg. 68'
+      source: 'HB:HM'
       value: 4
+      page: 68
     icon: green18
     pressure:
-      source: 'Handbook: House Marik, pg. 68'
+      source: 'HB:HM'
       value: STANDARD
+      page: 68
     atmosphere:
-      source: 'Handbook: House Marik, pg. 68'
+      source: 'HB:HM'
       value: BREATHABLE
+      page: 68
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'Handbook: House Marik, pg. 68'
+      source: 'HB:HM'
       value: 0.95
+      page: 68
     diameter: 12623
     density: 5.289033256731
     dayLength: 27
     yearLength: 1.0
     temperature:
-      source: 'Handbook: House Marik, pg. 68'
+      source: 'HB:HM'
       value: 30
+      page: 68
     water:
-      source: 'Handbook: House Marik, pg. 68'
+      source: 'HB:HM'
       value: 57
+      page: 68
     lifeForm:
-      source: 'Handbook: House Marik, pg. 68'
+      source: 'HB:HM'
       value: REPTILE
+      page: 68
     desc: |-
       Helm has played a crucial role in the history of the Inner Sphere despite being a cold and uninviting backwater. During the time of the Star League the city of Freeport was home to the Star League Defense Force’s Fleet provisioning center. The planetary facilities were upgraded to include a Castle Brian with significant stores of provisions and war material. After the fall of the League this resulted in both Marik and Kurita forces arriving on planet to secure these assets for themselves. However, the Castle Brian was well hidden and though the Combine held the planet they were unable to find the resources and rumors led them to believe that the stockpiles had been taken on Kerensky’s Exodus or the Free Worlds League had already taken them.
 
@@ -133,8 +142,9 @@ planet:
     smallMoons: 4
     landmass:
       - capital:
-          source: 'Handbook: House Marik, pg. 68'
+          source: 'HB:HM'
           value: Helmdown
+          page: 68
     event:
       - date: '2259-03-31'
         faction:
@@ -147,11 +157,23 @@ planet:
         population: 44179.0
       - date: '2270-01-01'
         population: 96275.0
+      - date: '2271-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - SC
       - date: '2280-01-01'
         population: 190238.0
       - date: '2290-01-01'
         population: 344653.0
       - date: '2293-12-26'
+        # administration: FWL | Stewart Confederation
+        # administration: FWL | Stewart Confederation
+        # administration: FWL | Stewart Confederation
+        # administration: FWL | Stewart Confederation
+        # administration: FWL | Stewart Confederation
+        # administration: FWL | Stewart Confederation
         faction:
           source: canon
           value:
@@ -371,6 +393,12 @@ planet:
           value: X
       - date: '3140-01-01'
         population: 25044205.0
+      - date: '3145-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CWE
       - date: '3145-12-05'
         faction:
           source: canon
@@ -378,6 +406,12 @@ planet:
             - CWE
         population: 25270620.0
       - date: '3152-01-01'
+        # administration: FWL | Clan Protectorate
+        # administration: FWL | Clan Protectorate
+        # administration: FWL | Clan Protectorate
+        # administration: FWL | Clan Protectorate
+        # administration: FWL | Clan Protectorate
+        # administration: FWL | Clan Protectorate
         faction:
           source: sucs
           value:

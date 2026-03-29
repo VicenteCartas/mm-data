@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Takata (New Start 3130+)
-sucsId: 2466
+sucsId: 2467
 xcood: 366.201
 ycood: 301.521
 spectralType: G5V
@@ -88,6 +88,12 @@ planet:
       - name: So's Heights
     event:
       - date: '2341-10-01'
+        # administration: DC | Pesht Military District | Ningxia Prefecture
+        # administration: DC | Pesht Military District | Ningxia Prefecture
+        # administration: DC | Pesht Military District | Ningxia Prefecture
+        # administration: DC | Pesht Military District | Ningxia Prefecture
+        # administration: DC | Pesht Military District | Ningxia Prefecture
+        # administration: DC | Pesht Military District | Ningxia Prefecture
         faction:
           source: canon
           value:
@@ -222,6 +228,18 @@ planet:
         hpg: X
         population: 0.0
         socioIndustrial: X-X-X-X-X
+      - date: '3135-01-01'
+        # administration: DC | Pesht Military District | Ningxia Prefecture
+        # administration: DC | Pesht Military District | Ningxia Prefecture
+        # administration: DC | Pesht Military District | Ningxia Prefecture
+        # administration: DC | Pesht Military District | Ningxia Prefecture
+        # administration: DC | Pesht Military District | Ningxia Prefecture
+        # administration: DC | Pesht Military District | Ningxia Prefecture
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - DC
       - date: '3151-01-01'
         faction:
           source: sucs
@@ -230,8 +248,19 @@ planet:
       - date: '2108-12-05'
         name: Takata
       - date: '3130-01-01'
+        # administration: DC | Pesht Military District | Ningxia Prefecture
+        # administration: DC | Pesht Military District | Ningxia Prefecture
+        # administration: DC | Pesht Military District | Ningxia Prefecture
+        # administration: DC | Pesht Military District | Ningxia Prefecture
+        # administration: DC | Pesht Military District | Ningxia Prefecture
+        # administration: DC | Pesht Military District | Ningxia Prefecture
         name: New Start
         message: Takata renamed to New Start
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - DC
   - name: Nova Kusatsu-shi
     type: GAS_GIANT
     orbitalDist: 2.52

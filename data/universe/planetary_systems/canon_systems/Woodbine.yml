@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,15 +16,17 @@
 # affiliated with Microsoft.
 
 id: Woodbine
-sucsId: 2772
+sucsId: 2773
 xcood: 503.68
 ycood: 23.77
 spectralType:
-  source: 'Handbook: House Davion, pg. 103'
+  source: 'HB:HD'
   value: G4III
+  page: 103
 primarySlot:
-  source: 'Handbook: House Davion, pg. 103'
+  source: 'HB:HD'
   value: 5
+  page: 103
 event:
   - date: '2358-10-03'
     zenithCharge: yes
@@ -116,87 +118,99 @@ planet:
     type: GIANT_TERRESTRIAL
     orbitalDist: 1.44
     sysPos:
-      source: 'Handbook: House Davion, pg. 103'
+      source: 'HB:HD'
       value: 5
+      page: 103
     icon: green54
     pressure:
-      source: 'Handbook: House Davion, pg. 103'
+      source: 'HB:HD'
       value: VERY_HIGH
+      page: 103
     atmosphere:
-      source: 'Handbook: House Davion, pg. 103'
+      source: 'HB:HD'
       value: BREATHABLE
+      page: 103
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'Handbook: House Davion, pg. 103'
+      source: 'HB:HD'
       value: 1.14
+      page: 103
     diameter: 11627
     density: 6.890285468336
     dayLength: 15
     yearLength: 2.0
     temperature:
-      source: 'Handbook: House Davion, pg. 103'
+      source: 'HB:HD'
       value: 31
+      page: 103
     water:
-      source: 'Handbook: House Davion, pg. 103'
+      source: 'HB:HD'
       value: 41
+      page: 103
     lifeForm:
-      source: 'Handbook: House Davion, pg. 103'
+      source: 'HB:HD'
       value: MAMMAL
-    desc: Woodbine is the unofficial capital of the Federated Suns’ Outback. The planet
-      was settled in order to take advantage of the large deposits of minerals and
-      metal ores and mining has continued to be the primary industry, however the
-      planet does have several military factories that produce ammunition and other
-      supplies for the AFFS. Due to the planet’s proximity to the Federated Suns and
-      Combine border and the raw materials and war materials on planet, Woodbine has
-      suffered numerous raids throughout its history.
+      page: 103
+    desc: Woodbine is the unofficial capital of the Federated Suns’ Outback. The planet was settled in order to take advantage of the large deposits of minerals and metal ores and mining has continued to be the primary industry, however the planet does have several military factories that produce ammunition and other supplies for the AFFS. Due to the planet’s proximity to the Federated Suns and Combine border and the raw materials and war materials on planet, Woodbine has suffered numerous raids throughout its history.
     landmass:
       - name:
-          source: 'Objectives: Federated Suns, p. 26'
+          source: 'Obj:FS'
           value: Arturro
+          page: 26
         capital:
-          source: 'Objectives: Federated Suns, p. 26'
+          source: 'Obj:FS'
           value: Gastogne
+          page: 26
       - name:
-          source: 'Objectives: Federated Suns, p. 26'
+          source: 'Obj:FS'
           value: Guam
+          page: 26
       - name:
-          source: 'Objectives: Federated Suns, p. 26'
+          source: 'Obj:FS'
           value: Sjardijn
 
+          page: 26
     satellite:
       - name:
-          source: 'Handbook: House Davion, pg. 103'
+          source: 'HB:HD'
           value: Akina
+          page: 103
         size: medium
         icon: rock13
       - name:
-          source: 'Handbook: House Davion, pg. 103'
+          source: 'HB:HD'
           value: Carbonvale
+          page: 103
         size: medium
         icon: oddmoon3
       - name:
-          source: 'Handbook: House Davion, pg. 103'
+          source: 'HB:HD'
           value: Galaga
+          page: 103
         size: giant
         icon: rock2
       - name:
-          source: 'Handbook: House Davion, pg. 103'
+          source: 'HB:HD'
           value: Ocheusti
+          page: 103
         size: large
         icon: rock7
       - name:
-          source: 'Handbook: House Davion, pg. 103'
+          source: 'HB:HD'
           value: Otousti
+          page: 103
         size: medium
         icon: oddmoon1
       - name:
-          source: 'Handbook: House Davion, pg. 103'
+          source: 'HB:HD'
           value: Tomb Rock
+          page: 103
         size: large
         icon: rock9
       - name:
-          source: 'Handbook: House Davion, pg. 103'
+          source: 'HB:HD'
           value: Vastek Moon
+          page: 103
         size: large
         icon: rock8
     event:
@@ -226,6 +240,12 @@ planet:
       - date: '2350-01-01'
         population: 30165755.0
       - date: '2355-03-21'
+        # administration: FS | Draconis March | Woodbine Operational Area
+        # administration: FS | Draconis March | Woodbine Operational Area
+        # administration: FS | Draconis March | Woodbine Operational Area
+        # administration: FS | Draconis March | Woodbine Operational Area
+        # administration: FS | Draconis March | Woodbine Operational Area
+        # administration: FS | Draconis March | Woodbine Operational Area
         faction:
           source: canon
           value:
@@ -390,8 +410,25 @@ planet:
       - date: '3030-01-01'
         population: 419120954.0
       - date: '3040-01-01'
+        # administration: FC | Draconis March | Woodbine Operational Area
+        # administration: FC | Draconis March | Woodbine Operational Area
+        # administration: FC | Draconis March | Woodbine Operational Area
+        # administration: FC | Draconis March | Woodbine Operational Area
+        # administration: FC | Draconis March | Woodbine Operational Area
+        # administration: FC | Draconis March | Woodbine Operational Area
         population: 422867780.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
+        # administration: FC | Draconis March | Woodbine Operational Area
+        # administration: FC | Draconis March | Woodbine Operational Area
+        # administration: FC | Draconis March | Woodbine Operational Area
+        # administration: FC | Draconis March | Woodbine Operational Area
+        # administration: FC | Draconis March | Woodbine Operational Area
+        # administration: FC | Draconis March | Woodbine Operational Area
         faction:
           source: canon
           value:
@@ -416,10 +453,27 @@ planet:
           value:
             - FC
       - date: '3067-01-01'
+        # administration: FS | Draconis March | Woodbine Operational Area
+        # administration: FS | Draconis March | Woodbine Operational Area
+        # administration: FS | Draconis March | Woodbine Operational Area
+        # administration: FS | Draconis March | Woodbine Operational Area
+        # administration: FS | Draconis March | Woodbine Operational Area
+        # administration: FS | Draconis March | Woodbine Operational Area
         population:
           source: canon
           value: 434267000.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FS
       - date: '3067-04-20'
+        # administration: FS | Draconis March | Woodbine Operational Area
+        # administration: FS | Draconis March | Woodbine Operational Area
+        # administration: FS | Draconis March | Woodbine Operational Area
+        # administration: FS | Draconis March | Woodbine Operational Area
+        # administration: FS | Draconis March | Woodbine Operational Area
+        # administration: FS | Draconis March | Woodbine Operational Area
         faction:
           source: canon
           value:

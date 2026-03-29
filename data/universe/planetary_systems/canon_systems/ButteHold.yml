@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -23,8 +23,9 @@ spectralType:
   source: canon
   value: G8V
 primarySlot:
-  source: Periphery (1ed), pg. 150
+  source: Per1e
   value: 3
+  page: 150
 planet:
   - name: Stubber
     type: GIANT_TERRESTRIAL
@@ -73,8 +74,9 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.8
     sysPos:
-      source: Periphery (1ed), pg. 150
+      source: Per1e
       value: 3
+      page: 150
     icon: green56
     pressure:
       source: canon
@@ -95,8 +97,9 @@ planet:
       source: canon
       value: 43
     lifeForm:
-      source: Periphery (1ed), pg. 150
+      source: Per1e
       value: FISH
+      page: 150
     desc: |-
       Butte Hold was originally settled by aqua-culturalists seeking to breed the fish-analogous species of Butte Hold into a source of food for the Rim World Republic in 2597. The Rim World Republic claimed the world and began settling it two decades later and unfortunately those efforts brought about the unsavory criminal organizations that would come to rule the world for centuries to come.
 
@@ -130,6 +133,12 @@ planet:
       - date: '2610-01-01'
         population: 68286.0
       - date: '2617-11-09'
+        # administration: RWR | Apollo Province
+        # administration: RWR | Apollo Province
+        # administration: RWR | Apollo Province
+        # administration: RWR | Apollo Province
+        # administration: RWR | Apollo Province
+        # administration: RWR | Apollo Province
         faction:
           source: canon
           value:
@@ -243,6 +252,11 @@ planet:
         population:
           source: canon
           value: 150000.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3028-05-14'
         faction:
           source: canon
@@ -257,6 +271,12 @@ planet:
         socioIndustrial:
           source: canon
           value: D-F-F-D-B
+      - date: '3049-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CW
       - date: '3049-09-12'
         faction:
           source: canon
@@ -279,6 +299,11 @@ planet:
         population: 117673761.0
       - date: '3095-01-01'
         socioIndustrial: D-F-D-D-A
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - NOC
       - date: '3100-01-01'
         population: 117980111.0
       - date: '3100-02-07'
@@ -292,6 +317,11 @@ planet:
         population: 118595206.0
       - date: '3130-01-01'
         population: 118856402.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - NOC
       - date: '3140-01-01'
         population: 119523865.0
       - date: '3145-01-01'

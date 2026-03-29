@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: Shiba
-sucsId: 2306
+sucsId: 2307
 xcood: 0.242
 ycood: -331.187
 spectralType:
-  source: 'Objective Raids: Capellan Confederation'
+  source: 'OR'
   value: K9V
 primarySlot:
-  source: 'Objective Raids: Capellan Confederation'
+  source: 'OR'
   value: 5
 event:
   - date: '2731-05-19'
@@ -119,31 +119,31 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.2
     sysPos:
-      source: 'Objective Raids: Capellan Confederation'
+      source: 'OR'
       value: 5
     icon: green54
     pressure:
-      source: 'Objective Raids: Capellan Confederation'
+      source: 'OR'
       value: STANDARD
     atmosphere:
-      source: 'Objective Raids: Capellan Confederation'
+      source: 'OR'
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'Objective Raids: Capellan Confederation'
+      source: 'OR'
       value: 1.09
     diameter: 12908
     density: 5.934142835198
     dayLength: 17
     yearLength: 0.7
     temperature:
-      source: 'Objective Raids: Capellan Confederation'
+      source: 'OR'
       value: 35
     water:
-      source: 'Objective Raids: Capellan Confederation'
+      source: 'OR'
       value: 52
     lifeForm:
-      source: 'Objective Raids: Capellan Confederation'
+      source: 'OR'
       value: REPTILE
     desc: |-
       Shiba is a relatively comfortable planet, with abundant natural resources and sufficient agriculture to feed its population, though the planet is not home to significant industry.
@@ -151,22 +151,28 @@ planet:
       Shiba is home to a Duchy RTC facility, which is located in the flatlands of Abbot and focuses on training vehicle crews and unarmored infantry.
     landmass:
       - name:
-          source: 'Objective Raids: Capellan Confederation'
+          source: 'OR'
           value: Abbey
         capital:
-          source: 'Objective Raids: Capellan Confederation'
+          source: 'OR'
           value: Montauk
       - name:
-          source: 'Objective Raids: Capellan Confederation'
+          source: 'OR'
           value: Abbot
     satellite:
       - name:
-          source: 'Objective Raids: Capellan Confederation'
+          source: 'OR'
           value: Amity
         size: medium
         icon: oddmoon1
     event:
       - date: '2723-04-14'
+        # administration: CC | Andurien Commonality | Region 3
+        # administration: CC | Andurien Commonality | Region 3
+        # administration: CC | Andurien Commonality | Region 3
+        # administration: CC | Andurien Commonality | Region 3
+        # administration: CC | Andurien Commonality | Region 3
+        # administration: CC | Andurien Commonality | Region 3
         faction:
           source: canon
           value:
@@ -244,6 +250,12 @@ planet:
           value:
             - DA
       - date: '3034-03-01'
+        # administration: CC | Sian Commonality | Region 7
+        # administration: CC | Sian Commonality | Region 7
+        # administration: CC | Sian Commonality | Region 7
+        # administration: CC | Sian Commonality | Region 7
+        # administration: CC | Sian Commonality | Region 7
+        # administration: CC | Sian Commonality | Region 7
         faction:
           source: canon
           value:
@@ -286,6 +298,12 @@ planet:
         population: 2195581948.0
       - date: '3145-01-01'
         population: 2214545378.0
+      - date: '3152-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - DA
       - date: '3152-06-01'
         faction:
           source: canon

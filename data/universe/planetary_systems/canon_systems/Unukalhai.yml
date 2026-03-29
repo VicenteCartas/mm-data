@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: Unukalhai
-sucsId: 2632
+sucsId: 2633
 xcood: -46.273
 ycood: 69.75
 spectralType:
-  source: MWDA world profiles
+  source: DA:RW
   value: K2V
 primarySlot:
-  source: MWDA world profiles
+  source: DA:RW
   value: 5
 event:
   - date: '2357-08-19'
@@ -130,31 +130,31 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.49
     sysPos:
-      source: MWDA world profiles
+      source: DA:RW
       value: 5
     icon: green48
     pressure:
-      source: MWDA world profiles
+      source: DA:RW
       value: STANDARD
     atmosphere:
-      source: MWDA world profiles
+      source: DA:RW
       value: TAINTED_POISON
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: MWDA world profiles
+      source: DA:RW
       value: 1.21
     diameter: 12362
     density: 6.878844001887
     dayLength: 17
     yearLength: 0.9
     temperature:
-      source: MWDA world profiles
+      source: DA:RW
       value: 35
     water:
-      source: MWDA world profiles
+      source: DA:RW
       value: 66
     lifeForm:
-      source: MWDA world profiles
+      source: DA:RW
       value: MAMMAL
     desc: |-
       Colonists from Terra‘s turbulent Middle East region first attempted to settle Unukalhai during mankind‘s Exodus into space. Unfortunately, soon after they made planetfall these settlers detected a previously unidentified biological taint in the planet‘s air and water supplies, which rendered breathing impossible without respirators and contaminated the soil in a manner harmful to human consumption. Rather than proceed further with their colonization efforts, the original settlers moved on, eventually landing on Zebeneschamali, and relayed their findings on Unukalhai back home—or so they thought.
@@ -164,25 +164,25 @@ planet:
       In the centuries of the Succession Wars, Unukalhai was largely overlooked by invaders, primarily due to its lack of significant resources, but its proximity to Skye often made it a favored jump-off world for strikes into the Lyran realm. Thus, the cities and towns of this world were largely undamaged by the wars that followed the fall of the Star League, and even the Jihad passed it by with little more than a raid or a brief influx of troops during a stopover period of R and R. Travelers coming to this planet are advised to stop first for the requisite antitoxins at the system‘s jump point station before making landfall at the capital city and spaceport of Wanalulu, located on the southern shores of Luahali.
     landmass:
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Awalia
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Luahali
         capital:
-          source: MWDA world profiles
+          source: DA:RW
           value: Wanalulu
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Lukahanna
     satellite:
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Xela
         size: large
         icon: rock8
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Yordana
         size: large
         icon: rock1
@@ -243,6 +243,18 @@ planet:
         population: 549135848.0
       - date: '2310-01-01'
         population: 638899598.0
+      - date: '2317-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
+      - date: '2319-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FoS
       - date: '2320-01-01'
         population: 729637058.0
       - date: '2330-01-01'
@@ -250,6 +262,12 @@ planet:
       - date: '2340-01-01'
         population: 919382015.0
       - date: '2341-12-25'
+        # administration: LA | Federation of Skye
+        # administration: LA | Federation of Skye
+        # administration: LA | Federation of Skye
+        # administration: LA | Federation of Skye
+        # administration: LA | Federation of Skye
+        # administration: LA | Federation of Skye
         faction:
           source: canon
           value:
@@ -405,8 +423,25 @@ planet:
       - date: '3035-01-01'
         socioIndustrial: B-B-D-B-B
       - date: '3040-01-01'
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
         population: 1822133670.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
         faction:
           source: canon
           value:
@@ -415,7 +450,25 @@ planet:
         socioIndustrial: A-A-C-A-B
       - date: '3050-01-01'
         population: 1845976047.0
+      - date: '3057-01-01'
+        # administration: LA | Skye March | Ryde Operational Area
+        # administration: LA | Skye March | Ryde Operational Area
+        # administration: LA | Skye March | Ryde Operational Area
+        # administration: LA | Skye March | Ryde Operational Area
+        # administration: LA | Skye March | Ryde Operational Area
+        # administration: LA | Skye March | Ryde Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '3057-09-18'
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
         faction:
           source: canon
           value:
@@ -426,7 +479,25 @@ planet:
         population: 1890437267.0
       - date: '3080-01-01'
         population: 1923618717.0
+      - date: '3081-01-01'
+        # administration: ROS | Prefecture IX
+        # administration: ROS | Prefecture IX
+        # administration: ROS | Prefecture IX
+        # administration: ROS | Prefecture IX
+        # administration: ROS | Prefecture IX
+        # administration: ROS | Prefecture IX
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ROS
       - date: '3081-01-18'
+        # administration: ROS | Prefecture IX
+        # administration: ROS | Prefecture IX
+        # administration: ROS | Prefecture IX
+        # administration: ROS | Prefecture IX
+        # administration: ROS | Prefecture IX
+        # administration: ROS | Prefecture IX
         faction:
           source: canon
           value:
@@ -445,6 +516,12 @@ planet:
         population: 2046657880.0
       - date: '3132-08-07'
         hpg: X
+      - date: '3135-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3135-10-01'
         faction:
           source: canon
@@ -458,6 +535,12 @@ planet:
         population: 2062684233.0
       - date: '3145-01-01'
         population: 2070951494.0
+      - date: '3152-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3152-06-01'
         faction:
           source: sucs

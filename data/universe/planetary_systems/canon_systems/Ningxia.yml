@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: Ningxia
-sucsId: 1873
+sucsId: 1874
 xcood: 314.874
 ycood: 313.336
 spectralType:
-  source: House Kurita
+  source: HB:HK
   value: K0V
 primarySlot:
-  source: House Kurita
+  source: HB:HK
   value: 3
 event:
   - date: '2482-09-05'
@@ -63,7 +63,7 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.8
     sysPos:
-      source: House Kurita
+      source: HB:HK
       value: 3
     icon: green56
     pressure:
@@ -85,27 +85,15 @@ planet:
       source: canon
       value: 32
     lifeForm:
-      source: House Kurita
+      source: HB:HK
       value: REPTILE
-    desc: While Ningxia has become known for its diamonds, which are perfect for industrial
-      processes, the world was actually settled for its beautiful landscapes. Regarded
-      as a planet sized bonsai garden, every effort to exploit the diamond deposites
-      has been stopped by highly placed nobles, including Coordinator Takashi Kurita.
-      These nobles, as well as many prominent businessmen, maintain vacation homes
-      on the picturesque world. The Ningxia has only one city, New Zephyus. It is
-      the site of the planet's primary spaceport, but in the 3020's it suffered from
-      a series of breakdowns that affected its ability to service DropShips. In fact,
-      Ningxia was the site of several DropShip related accidents during this time.
-      As a result, the agricultural companies that form the core of the planet's economy
-      experienced difficulty in shipping their products. The temporary solution was
-      to have DropShips land directly on the farms to load cargo, but most of the
-      population was opposed to the practice due to the massive damage it caused.
+    desc: While Ningxia has become known for its diamonds, which are perfect for industrial processes, the world was actually settled for its beautiful landscapes. Regarded as a planet sized bonsai garden, every effort to exploit the diamond deposites has been stopped by highly placed nobles, including Coordinator Takashi Kurita. These nobles, as well as many prominent businessmen, maintain vacation homes on the picturesque world. The Ningxia has only one city, New Zephyus. It is the site of the planet's primary spaceport, but in the 3020's it suffered from a series of breakdowns that affected its ability to service DropShips. In fact, Ningxia was the site of several DropShip related accidents during this time. As a result, the agricultural companies that form the core of the planet's economy experienced difficulty in shipping their products. The temporary solution was to have DropShips land directly on the farms to load cargo, but most of the population was opposed to the practice due to the massive damage it caused.
     landmass:
       - name:
           source: canon
           value: Anemoi
         capital:
-          source: House Kurita
+          source: HB:HK
           value: New Zephyrus
       - name:
           source: canon
@@ -158,6 +146,12 @@ planet:
       - date: '2320-01-01'
         population: 8771162.0
       - date: '2322-06-14'
+        # administration: DC | Pesht Military District | Ningxia Prefecture
+        # administration: DC | Pesht Military District | Ningxia Prefecture
+        # administration: DC | Pesht Military District | Ningxia Prefecture
+        # administration: DC | Pesht Military District | Ningxia Prefecture
+        # administration: DC | Pesht Military District | Ningxia Prefecture
+        # administration: DC | Pesht Military District | Ningxia Prefecture
         faction:
           source: canon
           value:

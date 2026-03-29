@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -23,7 +23,7 @@ spectralType:
   source: canon
   value: K7V
 primarySlot:
-  source: MWDA world profiles
+  source: DA:RW
   value: 8
 planet:
   - name: Adams
@@ -156,31 +156,31 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.24
     sysPos:
-      source: MWDA world profiles
+      source: DA:RW
       value: 8
     icon: green32
     pressure:
-      source: MWDA world profiles
+      source: DA:RW
       value: STANDARD
     atmosphere:
-      source: MWDA world profiles
+      source: DA:RW
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: MWDA world profiles
+      source: DA:RW
       value: 1.0
     diameter: 14076
     density: 4.99259858967
     dayLength: 18
     yearLength: 0.8
     temperature:
-      source: MWDA world profiles
+      source: DA:RW
       value: 20
     water:
-      source: MWDA world profiles
+      source: DA:RW
       value: 63
     lifeForm:
-      source: MWDA world profiles
+      source: DA:RW
       value: MAMMAL
     desc: |-
       Acamar was discovered early in the 23rd century by a Tikonov survey team. Acamar is locked in a perpetual winter as it orbits a great distance from its star. Acamar was only colonised after the discovery of vast titanium ore deposits, followed by deposits of gold and silver. As a result Acamar was coveted by the Capellan Confederation, Federated Suns, and the Free World League.
@@ -195,8 +195,9 @@ planet:
           source: canon
           value: Katenga
         capital:
-          source: Chaos March, pg. 25
+          source: ChM
           value: Kalskag
+          page: 25
       - name:
           source: canon
           value: Tamarack
@@ -205,7 +206,7 @@ planet:
           value: Asta
     satellite:
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Aiken
         size: medium
         icon: oddmoon1
@@ -234,6 +235,12 @@ planet:
       - date: '2310-01-01'
         population: 104683511.0
       - date: '2320-09-18'
+        # administration: TH | Terra Firma Province
+        # administration: TH | Terra Firma Province
+        # administration: TH | Terra Firma Province
+        # administration: TH | Terra Firma Province
+        # administration: TH | Terra Firma Province
+        # administration: TH | Terra Firma Province
         faction:
           source: canon
           value:
@@ -333,6 +340,18 @@ planet:
         population: 8156414563.0
       - date: '2760-01-01'
         population: 8202971940.0
+      - date: '2767-01-01'
+        # administration: AE | Terra Firma Province
+        # administration: AE | Terra Firma Province
+        # administration: AE | Terra Firma Province
+        # administration: AE | Terra Firma Province
+        # administration: AE | Terra Firma Province
+        # administration: AE | Terra Firma Province
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - AE
       - date: '2767-07-24'
         faction:
           source: canon
@@ -341,6 +360,12 @@ planet:
       - date: '2770-01-01'
         population: 8218100466.0
       - date: '2779-06-11'
+        # administration: TH | Terra Firma Province
+        # administration: TH | Terra Firma Province
+        # administration: TH | Terra Firma Province
+        # administration: TH | Terra Firma Province
+        # administration: TH | Terra Firma Province
+        # administration: TH | Terra Firma Province
         faction:
           source: canon
           value:
@@ -348,6 +373,12 @@ planet:
       - date: '2780-01-01'
         population: 8201969030.0
       - date: '2790-11-23'
+        # administration: CC | Tikonov Commonality | Region 3
+        # administration: CC | Tikonov Commonality | Region 3
+        # administration: CC | Tikonov Commonality | Region 3
+        # administration: CC | Tikonov Commonality | Region 3
+        # administration: CC | Tikonov Commonality | Region 3
+        # administration: CC | Tikonov Commonality | Region 3
         faction:
           source: canon
           value:
@@ -413,6 +444,12 @@ planet:
         population: 8039234821.0
         socioIndustrial: B-B-D-B-D
       - date: '3032-11-28'
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
         faction:
           source: canon
           value:
@@ -423,11 +460,23 @@ planet:
         socioIndustrial: A-A-D-B-D
       - date: '3050-01-01'
         population: 8231217245.0
+      - date: '3057-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3057-11-01'
         faction:
           source: canon
           value:
             - CM
+      - date: '3058-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3058-02-01'
         faction:
           source: canon
@@ -439,6 +488,12 @@ planet:
           source: canon
           value:
             - PIR
+      - date: '3059-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3060-01-01'
         population: 8333919778.0
       - date: '3061-02-09'
@@ -452,11 +507,29 @@ planet:
           source: canon
           value:
             - CM
+      - date: '3063-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3065-12-01'
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
         faction:
           source: canon
           value:
             - FS
+      - date: '3068-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - WOB
       - date: '3068-08-01'
         faction:
           source: canon
@@ -477,7 +550,25 @@ planet:
             - Stone
       - date: '3080-01-01'
         population: 8580857988.0
+      - date: '3081-01-01'
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ROS
       - date: '3081-12-07'
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
         faction:
           source: canon
           value:
@@ -494,6 +585,12 @@ planet:
         population: 9089627308.0
       - date: '3132-08-07'
         hpg: X
+      - date: '3135-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3135-10-01'
         faction:
           source: canon
@@ -503,7 +600,25 @@ planet:
         socioIndustrial: A-A-D-B-D
       - date: '3140-01-01'
         population: 9155308794.0
+      - date: '3145-01-01'
+        # administration: CC | Tikonov Commonality | Region 1
+        # administration: CC | Tikonov Commonality | Region 1
+        # administration: CC | Tikonov Commonality | Region 1
+        # administration: CC | Tikonov Commonality | Region 1
+        # administration: CC | Tikonov Commonality | Region 1
+        # administration: CC | Tikonov Commonality | Region 1
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CC
       - date: '3145-03-14'
+        # administration: CC | Tikonov Commonality | Region 6
+        # administration: CC | Tikonov Commonality | Region 6
+        # administration: CC | Tikonov Commonality | Region 6
+        # administration: CC | Tikonov Commonality | Region 6
+        # administration: CC | Tikonov Commonality | Region 6
+        # administration: CC | Tikonov Commonality | Region 6
         faction:
           source: canon
           value:

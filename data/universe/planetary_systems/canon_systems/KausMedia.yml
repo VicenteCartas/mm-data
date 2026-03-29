@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: Kaus Media
-sucsId: 1310
+sucsId: 1311
 xcood: 7.746
 ycood: 80.087
 spectralType:
-  source: MWDA world profiles
+  source: DA:RW
   value: K2V
 primarySlot:
-  source: MWDA world profiles
+  source: DA:RW
   value: 1
 event:
   - date: '2374-03-28'
@@ -39,31 +39,31 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.49
     sysPos:
-      source: MWDA world profiles
+      source: DA:RW
       value: 1
     icon: wet16
     pressure:
-      source: MWDA world profiles
+      source: DA:RW
       value: STANDARD
     atmosphere:
-      source: MWDA world profiles
+      source: DA:RW
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: MWDA world profiles
+      source: DA:RW
       value: 1.19
     diameter: 12118
     density: 6.901071175196
     dayLength: 24
     yearLength: 0.9
     temperature:
-      source: MWDA world profiles
+      source: DA:RW
       value: 32
     water:
-      source: MWDA world profiles
+      source: DA:RW
       value: 78
     lifeForm:
-      source: MWDA world profiles
+      source: DA:RW
       value: INSECT
     desc: |-
       Kaus Media is a pleasant, terrestrial world with wide, deep oceans, expansive forests and jungles, and varied—yet normally mild—seasons. Yet, for all its natural splendor, the first colonists to explore and exploit this world quickly realized that the lack of easily reached indigenous metals and minerals would doom all efforts to develop their new home. In the search for a source for raw materials to fuel their industry, traders from Kaus Media quickly discovered that their nearest neighbor, Kaus Australis, suffered from the opposite plight, surrounded by abundant and valuable raw materials, but lacking in food and water. A trade deal blossomed into a full-fledged alliance that carried the two worlds through the Age of War and continued even with the ascendance of the Draconis Combine. Efforts by the Lyran Commonwealth to turn this alliance against the Dragon proved disastrous for the so-called ―Kaus alliance worlds during the First Succession War, when the enraged forces of the DCMS bombarded DeGuilles, the planetary capital city—and with it, the governing buildings that served both worlds. Only after surrendering the Lyran instigators and rebel leaders, and agreeing to stiff reparations and an oath of fealty, did the Kaus alliance avoid further destruction, but the entire crisis underscored the strengths and weaknesses of the symbiotic relationship now shared by these twin worlds.
@@ -71,41 +71,41 @@ planet:
       Trade between both resumed again decades after the crisis, though government was less centralized, with each tending to its own affairs from its own respective capitals. Still, in memory of the broken bond, the people of Kaus Media never built over the ruins of DeGuilles. Instead, the new planetary capital, Vanguard City, located just forty kilometers to the north on the continent of Emparos, governs the affairs of this world, and maintains a diplomatic office for the benefit of its neighbor. Several major trading companies that do business under exclusive license with both Kaus planets also call Vanguard City their home, thanks to the presence of the planet‘s largest spaceport. Aside from Emparos, Kaus Media‘s other four major continents are Romana, Hyadamos, Gaul, and Normano. All but Gaul, the planet‘s frozen south polar continent, are populated with various small and medium-sized commercial and rural towns scattered along the shores of various rivers and lakes.
     landmass:
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Emparos
         capital:
-          source: MWDA world profiles
+          source: DA:RW
           value: Vanguard City
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Gaul
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Hyadamos
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Normano
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Romana
     satellite:
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Ajax
         size: large
         icon: rock10
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Nezerah
         size: medium
         icon: rock4
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Yanu
         size: medium
         icon: oddmoon1
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Zhentil
         size: medium
         icon: rock11
@@ -136,6 +136,12 @@ planet:
         population: 32858366.0
       - date: '2340-01-01'
         population: 61455955.0
+      - date: '2341-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '2350-01-01'
         population: 105601773.0
       - date: '2360-01-01'
@@ -186,6 +192,18 @@ planet:
         population: 2869969779.0
       - date: '2570-01-01'
         population: 2945606053.0
+      - date: '2571-01-01'
+        # administration: DC | Benjamin Military District | Kuzuu Prefecture
+        # administration: DC | Benjamin Military District | Kuzuu Prefecture
+        # administration: DC | Benjamin Military District | Kuzuu Prefecture
+        # administration: DC | Benjamin Military District | Kuzuu Prefecture
+        # administration: DC | Benjamin Military District | Kuzuu Prefecture
+        # administration: DC | Benjamin Military District | Kuzuu Prefecture
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - DC
       - date: '2580-01-01'
         population: 2999734832.0
       - date: '2590-01-01'
@@ -302,6 +320,12 @@ planet:
           source: canon
           value:
             - WOB
+      - date: '3075-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - Stone
       - date: '3075-08-28'
         faction:
           source: canon
@@ -315,7 +339,25 @@ planet:
             - Stone
       - date: '3080-01-01'
         population: 2333828780.0
+      - date: '3081-01-01'
+        # administration: ROS | Prefecture I
+        # administration: ROS | Prefecture I
+        # administration: ROS | Prefecture I
+        # administration: ROS | Prefecture I
+        # administration: ROS | Prefecture I
+        # administration: ROS | Prefecture I
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ROS
       - date: '3081-07-20'
+        # administration: ROS | Prefecture I
+        # administration: ROS | Prefecture I
+        # administration: ROS | Prefecture I
+        # administration: ROS | Prefecture I
+        # administration: ROS | Prefecture I
+        # administration: ROS | Prefecture I
         faction:
           source: canon
           value:
@@ -334,6 +376,12 @@ planet:
         population: 2483602612.0
       - date: '3132-08-07'
         hpg: X
+      - date: '3135-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3135-10-01'
         faction:
           source: canon
@@ -341,7 +389,25 @@ planet:
             - IND
       - date: '3140-01-01'
         population: 2492559694.0
+      - date: '3145-01-01'
+        # administration: RD | Region 3 | Vega Protectorate
+        # administration: RD | Region 3 | Vega Protectorate
+        # administration: RD | Region 3 | Vega Protectorate
+        # administration: RD | Region 3 | Vega Protectorate
+        # administration: RD | Region 3 | Vega Protectorate
+        # administration: RD | Region 3 | Vega Protectorate
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - RD
       - date: '3145-02-27'
+        # administration: RD | Region 3 | Vega Protectorate
+        # administration: RD | Region 3 | Vega Protectorate
+        # administration: RD | Region 3 | Vega Protectorate
+        # administration: RD | Region 3 | Vega Protectorate
+        # administration: RD | Region 3 | Vega Protectorate
+        # administration: RD | Region 3 | Vega Protectorate
         faction:
           source: canon
           value:

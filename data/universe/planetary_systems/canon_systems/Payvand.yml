@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Payvand
-sucsId: 2001
+sucsId: 2002
 xcood: -202.4
 ycood: -317.216
 spectralType:
@@ -101,15 +101,7 @@ planet:
     lifeForm:
       source: canon
       value: BIRD
-    desc: Payvand is a relatively unimpressive world. Despite a comfortable atmosphere
-      and climate the planet only has enough arable land to feed its population and
-      while there are deposits of natural resources, they are far from abundant. The
-      planet also supports only modest industry and its biggest claim to fame is as
-      home to the second oldest Hero Training Institute facility. The Hero Training
-      Institute is a for-profit training academy that will training any aspiring MechWarrior
-      or Aerospace Pilot with enough money to afford their program. The facility is
-      located in Payvand’s planetary capital Pejman on the Gooya continent. The academy
-      uses the hills surrounding the capital for their training grounds.
+    desc: Payvand is a relatively unimpressive world. Despite a comfortable atmosphere and climate the planet only has enough arable land to feed its population and while there are deposits of natural resources, they are far from abundant. The planet also supports only modest industry and its biggest claim to fame is as home to the second oldest Hero Training Institute facility. The Hero Training Institute is a for-profit training academy that will training any aspiring MechWarrior or Aerospace Pilot with enough money to afford their program. The facility is located in Payvand’s planetary capital Pejman on the Gooya continent. The academy uses the hills surrounding the capital for their training grounds.
     landmass:
       - name:
           source: canon
@@ -188,6 +180,12 @@ planet:
           value:
             - SL
       - date: '2579-04-01'
+        # administration: FWL | Principality of Regulus
+        # administration: FWL | Principality of Regulus
+        # administration: FWL | Principality of Regulus
+        # administration: FWL | Principality of Regulus
+        # administration: FWL | Principality of Regulus
+        # administration: FWL | Principality of Regulus
         faction:
           source: canon
           value:
@@ -308,6 +306,12 @@ planet:
         population: 212509693.0
       - date: '3080-01-01'
         population: 216066796.0
+      - date: '3081-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3081-01-31'
         faction:
           source: canon

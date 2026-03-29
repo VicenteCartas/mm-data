@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Stralsund
-sucsId: 3005
+sucsId: 3169
 xcood: -651.703
 ycood: 735.939
 spectralType: G7V
@@ -82,6 +82,12 @@ planet:
       - name: López
     event:
       - date: '2891-06-12'
+        # administration: HL | Region 8
+        # administration: HL | Region 8
+        # administration: HL | Region 8
+        # administration: HL | Region 8
+        # administration: HL | Region 8
+        # administration: HL | Region 8
         faction:
           source: canon
           value:
@@ -149,6 +155,11 @@ planet:
             - CEI
       - date: '3145-01-01'
         population: 549267.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - SE
   - name: Atlantida
     type: TERRESTRIAL
     orbitalDist: 1.44

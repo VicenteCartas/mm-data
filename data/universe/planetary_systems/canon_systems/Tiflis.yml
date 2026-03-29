@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Tiflis
-sucsId: 2543
+sucsId: 2544
 xcood: 354.133
 ycood: 195.635
 spectralType:
@@ -78,8 +78,7 @@ planet:
     icon: barren8
     pressure: STANDARD
     atmosphere: TOXIC_POISON
-    composition: Nitrogen and Ammonia, plus trace amounts of Carbon Dioxide and Nitrous
-      Oxide
+    composition: Nitrogen and Ammonia, plus trace amounts of Carbon Dioxide and Nitrous Oxide
     gravity: 0.52
     diameter: 10500
     density: 3.5
@@ -116,10 +115,7 @@ planet:
     lifeForm:
       source: canon
       value: FISH
-    desc: The planet Tiflis has little strategic importance. It is simply an average
-      agricultural world that produces large amounts of Terran timber. This timber
-      is harvested and exported, but before it leaves the world it serves as an obstacle
-      to the severe wind storms that arrive on Tiflis every six years.
+    desc: The planet Tiflis has little strategic importance. It is simply an average agricultural world that produces large amounts of Terran timber. This timber is harvested and exported, but before it leaves the world it serves as an obstacle to the severe wind storms that arrive on Tiflis every six years.
     smallMoons: 2
     landmass:
       - name:
@@ -135,6 +131,12 @@ planet:
           source: canon
           value: Erivan
     event:
+      - date: '2319-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '2319-07-23'
         faction:
           source: canon
@@ -152,6 +154,12 @@ planet:
         population: 189259.0
       - date: '2340-01-01'
         population: 550948.0
+      - date: '2341-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '2350-01-01'
         population: 1370023.0
       - date: '2360-01-01'
@@ -200,6 +208,18 @@ planet:
         population: 240769468.0
       - date: '2570-01-01'
         population: 246212147.0
+      - date: '2571-01-01'
+        # administration: DC | Galedon Military District | New Samarkand Prefecture
+        # administration: DC | Galedon Military District | New Samarkand Prefecture
+        # administration: DC | Galedon Military District | New Samarkand Prefecture
+        # administration: DC | Galedon Military District | New Samarkand Prefecture
+        # administration: DC | Galedon Military District | New Samarkand Prefecture
+        # administration: DC | Galedon Military District | New Samarkand Prefecture
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - DC
       - date: '2580-01-01'
         population: 252229767.0
       - date: '2590-01-01'

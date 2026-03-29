@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,15 +16,16 @@
 # affiliated with Microsoft.
 
 id: Northwind
-sucsId: 1895
+sucsId: 1896
 xcood: 34.118
 ycood: -2.891
 spectralType:
   source: canon
   value: G2IV
 primarySlot:
-  source: Mercenaries Supplemental, pg. 16
+  source: MS
   value: 2
+  page: 16
 event:
   - date: '2356-09-28'
     zenithCharge: yes
@@ -55,32 +56,39 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 1.6
     sysPos:
-      source: Mercenaries Supplemental, pg. 16
+      source: MS
       value: 2
+      page: 16
     icon: wet17
     pressure:
-      source: Mercenaries Supplemental, pg. 16
+      source: MS
       value: THIN
+      page: 16
     atmosphere:
-      source: Mercenaries Supplemental, pg. 16
+      source: MS
       value: BREATHABLE
+      page: 16
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: Mercenaries Supplemental, pg. 16
+      source: MS
       value: 1.01
+      page: 16
     diameter: 11441
     density: 6.20377732326
     dayLength: 25
     yearLength: 2.3
     temperature:
-      source: Mercenaries Supplemental, pg. 16
+      source: MS
       value: 32
+      page: 16
     water:
-      source: Mercenaries Supplemental, pg. 16
+      source: MS
       value: 75
+      page: 16
     lifeForm:
-      source: Mercenaries Supplemental, pg. 16
+      source: MS
       value: REPTILE
+      page: 16
     desc: |-
       Northwind was original colonized by the Stuart clan from Scotland. The Stuarts were joined by the remnants of the independent Scottish military, the Highlanders. In 2362, the ruling Clans of Northwind elected to create a military unit to defend their planet, the result was the Northwind Highlanders. The Highlanders acted as a garrison force of their home for centuries and eventually members from Northwind served in the Star League Defense Force, including the prestigious Black Watch. After the collapse of the Star League the Highlanders became mercenaries. The Highlanders became cut off from their homeworld in the 29th century while in the employ of the Capellan Confederation when Northwind was conquered by the Federated Suns.
 
@@ -91,26 +99,32 @@ planet:
       Cosara Weaponries
     landmass:
       - name:
-          source: Mercenaries Supplemental, pg. 16
+          source: MS
           value: Halidon
+          page: 16
       - name:
-          source: Mercenaries Supplemental, pg. 16
+          source: MS
           value: Kearny
+          page: 16
       - name:
-          source: Mercenaries Supplemental, pg. 16
+          source: MS
           value: New Lanark
+          page: 16
         capital:
-          source: Mercenaries Supplemental, pg. 16
+          source: MS
           value: Tara
+          page: 16
     satellite:
       - name:
-          source: Mercenaries Supplemental, pg. 16
+          source: MS
           value: Dublin
+          page: 16
         size: medium
         icon: oddmoon3
       - name:
-          source: Mercenaries Supplemental, pg. 16
+          source: MS
           value: Glasgow
+          page: 16
         size: medium
         icon: rock16
     event:
@@ -147,6 +161,12 @@ planet:
           value:
             - TH
       - date: '2319-12-30'
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
         faction:
           source: canon
           value:
@@ -250,6 +270,18 @@ planet:
         population: 2432202854.0
       - date: '2760-01-01'
         population: 2432289851.0
+      - date: '2767-01-01'
+        # administration: AE | Lockdale Province
+        # administration: AE | Lockdale Province
+        # administration: AE | Lockdale Province
+        # administration: AE | Lockdale Province
+        # administration: AE | Lockdale Province
+        # administration: AE | Lockdale Province
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - AE
       - date: '2767-11-10'
         faction:
           source: canon
@@ -258,6 +290,12 @@ planet:
       - date: '2770-01-01'
         population: 2425149221.0
       - date: '2779-02-19'
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
         faction:
           source: canon
           value:
@@ -265,6 +303,12 @@ planet:
       - date: '2780-01-01'
         population: 2421306584.0
       - date: '2790-10-13'
+        # administration: CC | Tikonov Commonality | Region 3
+        # administration: CC | Tikonov Commonality | Region 3
+        # administration: CC | Tikonov Commonality | Region 3
+        # administration: CC | Tikonov Commonality | Region 3
+        # administration: CC | Tikonov Commonality | Region 3
+        # administration: CC | Tikonov Commonality | Region 3
         faction:
           source: canon
           value:
@@ -277,6 +321,12 @@ planet:
       - date: '2820-01-01'
         population: 2377986523.0
       - date: '2821-08-01'
+        # administration: CC | Tikonov Commonality | Region 3
+        # administration: CC | Tikonov Commonality | Region 3
+        # administration: CC | Tikonov Commonality | Region 3
+        # administration: CC | Tikonov Commonality | Region 3
+        # administration: CC | Tikonov Commonality | Region 3
+        # administration: CC | Tikonov Commonality | Region 3
         faction:
           source: canon
           value:
@@ -286,6 +336,12 @@ planet:
       - date: '2840-01-01'
         population: 2286952716.0
       - date: '2841-12-12'
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
         faction:
           source: canon
           value:
@@ -297,6 +353,12 @@ planet:
       - date: '2860-01-01'
         population: 2202625637.0
       - date: '2864-07-05'
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
         faction:
           source: canon
           value:
@@ -340,8 +402,25 @@ planet:
       - date: '3038-01-01'
         socioIndustrial: C-B-B-C-B
       - date: '3040-01-01'
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
         population: 1628737733.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
         faction:
           source: canon
           value:
@@ -354,13 +433,24 @@ planet:
         population: 1638867276.0
       - date: '3057-01-01'
         hiringHall:
-          source: Merc Supplemental 1
+          source: MS
           value: STANDARD
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3057-11-01'
         faction:
           source: canon
           value:
             - MERC
+      - date: '3058-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3060-01-01'
         population: 1648894920.0
       - date: '3067-12-01'
@@ -369,6 +459,12 @@ planet:
           value:
             - MERC
             - WOB
+      - date: '3068-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - WOB
       - date: '3070-01-01'
         population: 1659481689.0
       - date: '3078-02-20'
@@ -376,11 +472,35 @@ planet:
           source: canon
           value:
             - MERC
+      - date: '3079-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - Stone
       - date: '3080-01-01'
         population: 1673814775.0
+      - date: '3081-01-01'
+        # administration: ROS | Prefecture III
+        # administration: ROS | Prefecture III
+        # administration: ROS | Prefecture III
+        # administration: ROS | Prefecture III
+        # administration: ROS | Prefecture III
+        # administration: ROS | Prefecture III
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ROS
       - date: '3081-03-15'
         hiringHall: NONE
       - date: '3081-08-13'
+        # administration: ROS | Prefecture III
+        # administration: ROS | Prefecture III
+        # administration: ROS | Prefecture III
+        # administration: ROS | Prefecture III
+        # administration: ROS | Prefecture III
+        # administration: ROS | Prefecture III
         faction:
           source: canon
           value:
@@ -400,6 +520,12 @@ planet:
         population: 1760337088.0
       - date: '3145-01-01'
         population: 1771639374.0
+      - date: '3151-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
   - name: An
     type: ICE_GIANT
     orbitalDist: 1.0

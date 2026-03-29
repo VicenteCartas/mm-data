@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,15 +16,17 @@
 # affiliated with Microsoft.
 
 id: Oriente
-sucsId: 1948
+sucsId: 1949
 xcood: -76.278
 ycood: -211.423
 spectralType:
-  source: Masters and Minions, pg. 79
+  source: M&M
   value: F2III
+  page: 79
 primarySlot:
-  source: Masters and Minions, pg. 79
+  source: M&M
   value: 4
+  page: 79
 event:
   - date: '2365-09-07'
     nadirCharge: yes
@@ -82,32 +84,39 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 4.2
     sysPos:
-      source: Masters and Minions, pg. 79
+      source: M&M
       value: 4
+      page: 79
     icon: green5
     pressure:
-      source: Masters and Minions, pg. 79
+      source: M&M
       value: STANDARD
+      page: 79
     atmosphere:
-      source: Masters and Minions, pg. 79
+      source: M&M
       value: BREATHABLE
+      page: 79
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: Masters and Minions, pg. 79
+      source: M&M
       value: 1.1
+      page: 79
     diameter: 11796
     density: 6.553625631014
     dayLength: 21
     yearLength: 8.7
     temperature:
-      source: Masters and Minions, pg. 79
+      source: M&M
       value: 45
+      page: 79
     water:
-      source: Masters and Minions, pg. 79
+      source: M&M
       value: 57
+      page: 79
     lifeForm:
-      source: Masters and Minions, pg. 79
+      source: M&M
       value: MAMMAL
+      page: 79
     desc: |-
       Oriente is the capital of the Duchy of Oriente and a key world in the Free Worlds League. While the planet is heavily industrialized its pleasant, slightly warmer than Terran, climate also allows agriculture to flourish on the temperate continents of Martigues and Navarran.
 
@@ -122,17 +131,20 @@ planet:
       Etna Foundries
     landmass:
       - name:
-          source: Masters and Minions, pg. 79
+          source: M&M
           value: Burgos
+          page: 79
     satellite:
       - name:
-          source: Masters and Minions, pg. 79
+          source: M&M
           value: Coruna
+          page: 79
         size: large
         icon: rock10
       - name:
-          source: Masters and Minions, pg. 79
+          source: M&M
           value: Escorial
+          page: 79
         size: large
         icon: rock4
     event:
@@ -149,7 +161,25 @@ planet:
         population: 653989.0
       - date: '2270-01-01'
         population: 2058099.0
+      - date: '2271-01-01'
+        # administration: FoO | National Capital
+        # administration: FoO | National Capital
+        # administration: FoO | National Capital
+        # administration: FoO | National Capital
+        # administration: FoO | National Capital
+        # administration: FoO | National Capital
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FoO
       - date: '2271-06-01'
+        # administration: FWL | Federation of Oriente | District Capital
+        # administration: FWL | Federation of Oriente | District Capital
+        # administration: FWL | Federation of Oriente | District Capital
+        # administration: FWL | Federation of Oriente | District Capital
+        # administration: FWL | Federation of Oriente | District Capital
+        # administration: FWL | Federation of Oriente | District Capital
         faction:
           source: canon
           value:
@@ -341,6 +371,12 @@ planet:
       - date: '3070-01-01'
         population: 3989297587.0
       - date: '3079-01-18'
+        # administration: DO | National Capital
+        # administration: DO | National Capital
+        # administration: DO | National Capital
+        # administration: DO | National Capital
+        # administration: DO | National Capital
+        # administration: DO | National Capital
         faction:
           source: canon
           value:
@@ -351,6 +387,12 @@ planet:
       - date: '3080-01-01'
         population: 4038265482.0
       - date: '3086-04-27'
+        # administration: OP | National Capital
+        # administration: OP | National Capital
+        # administration: OP | National Capital
+        # administration: OP | National Capital
+        # administration: OP | National Capital
+        # administration: OP | National Capital
         faction:
           source: canon
           value:
@@ -374,8 +416,25 @@ planet:
       - date: '3140-01-01'
         population: 4422102509.0
       - date: '3145-01-01'
+        # administration: FWL | Oriente Protectorate | District Capital
+        # administration: FWL | Oriente Protectorate | District Capital
+        # administration: FWL | Oriente Protectorate | District Capital
+        # administration: FWL | Oriente Protectorate | District Capital
+        # administration: FWL | Oriente Protectorate | District Capital
+        # administration: FWL | Oriente Protectorate | District Capital
         population: 4448714881.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FWL
       - date: '3151-01-01'
+        # administration: FWL | Oriente Protectorate | District Capital
+        # administration: FWL | Oriente Protectorate | District Capital
+        # administration: FWL | Oriente Protectorate | District Capital
+        # administration: FWL | Oriente Protectorate | District Capital
+        # administration: FWL | Oriente Protectorate | District Capital
+        # administration: FWL | Oriente Protectorate | District Capital
         faction:
           source: sucs
           value:

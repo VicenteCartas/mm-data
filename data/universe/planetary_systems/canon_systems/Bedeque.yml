@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -81,11 +81,23 @@ planet:
         population: 57151.0
       - date: '2270-01-01'
         population: 217607.0
+      - date: '2271-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - SC
       - date: '2280-01-01'
         population: 693584.0
       - date: '2290-01-01'
         population: 1893781.0
       - date: '2293-11-27'
+        # administration: FWL | Stewart Confederation
+        # administration: FWL | Stewart Confederation
+        # administration: FWL | Stewart Confederation
+        # administration: FWL | Stewart Confederation
+        # administration: FWL | Stewart Confederation
+        # administration: FWL | Stewart Confederation
         faction:
           source: canon
           value:
@@ -288,6 +300,12 @@ planet:
         hpg: X
       - date: '3140-01-01'
         population: 689187683.0
+      - date: '3145-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CWE
       - date: '3145-12-16'
         faction:
           source: canon
@@ -299,6 +317,18 @@ planet:
           source: canon
           value:
             - CP
+      - date: '3152-01-01'
+        # administration: FWL | Clan Protectorate
+        # administration: FWL | Clan Protectorate
+        # administration: FWL | Clan Protectorate
+        # administration: FWL | Clan Protectorate
+        # administration: FWL | Clan Protectorate
+        # administration: FWL | Clan Protectorate
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FWL
   - name: Lang Singalang Burong
     type: TERRESTRIAL
     orbitalDist: 0.9

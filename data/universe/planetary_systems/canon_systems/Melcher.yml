@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Melcher
-sucsId: 1665
+sucsId: 1666
 xcood: 367.306
 ycood: 38.472
 spectralType: F4V
@@ -110,6 +110,12 @@ planet:
       - name: Cooper Gap
     event:
       - date: '2680-09-14'
+        # administration: FS | Draconis March | Fairfax Operational Area
+        # administration: FS | Draconis March | Fairfax Operational Area
+        # administration: FS | Draconis March | Fairfax Operational Area
+        # administration: FS | Draconis March | Fairfax Operational Area
+        # administration: FS | Draconis March | Fairfax Operational Area
+        # administration: FS | Draconis March | Fairfax Operational Area
         faction:
           source: canon
           value:
@@ -195,10 +201,28 @@ planet:
         population: 102313663.0
       - date: '3030-01-01'
         population: 102096339.0
+      - date: '3040-01-01'
+        # administration: FC | Draconis March | Woodbine Operational Area
+        # administration: FC | Draconis March | Woodbine Operational Area
+        # administration: FC | Draconis March | Woodbine Operational Area
+        # administration: FC | Draconis March | Woodbine Operational Area
+        # administration: FC | Draconis March | Woodbine Operational Area
+        # administration: FC | Draconis March | Woodbine Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-10-04'
         population: 103349543.0
         socioIndustrial: C-C-A-D-C
       - date: '3040-01-19'
+        # administration: FC | Draconis March | Woodbine Operational Area
+        # administration: FC | Draconis March | Woodbine Operational Area
+        # administration: FC | Draconis March | Woodbine Operational Area
+        # administration: FC | Draconis March | Woodbine Operational Area
+        # administration: FC | Draconis March | Woodbine Operational Area
+        # administration: FC | Draconis March | Woodbine Operational Area
         faction:
           source: canon
           value:
@@ -207,7 +231,25 @@ planet:
         population: 104367348.0
       - date: '3060-01-01'
         population: 105374099.0
+      - date: '3067-01-01'
+        # administration: FS | Draconis March | Woodbine Operational Area
+        # administration: FS | Draconis March | Woodbine Operational Area
+        # administration: FS | Draconis March | Woodbine Operational Area
+        # administration: FS | Draconis March | Woodbine Operational Area
+        # administration: FS | Draconis March | Woodbine Operational Area
+        # administration: FS | Draconis March | Woodbine Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FS
       - date: '3067-04-20'
+        # administration: FS | Draconis March | Woodbine Operational Area
+        # administration: FS | Draconis March | Woodbine Operational Area
+        # administration: FS | Draconis March | Woodbine Operational Area
+        # administration: FS | Draconis March | Woodbine Operational Area
+        # administration: FS | Draconis March | Woodbine Operational Area
+        # administration: FS | Draconis March | Woodbine Operational Area
         faction:
           source: canon
           value:
@@ -230,12 +272,36 @@ planet:
         population: 111510289.0
       - date: '3140-01-01'
         population: 112002015.0
+      - date: '3145-01-01'
+        # administration: DC | New Samarkand Military District | Kaznejoy Prefecture
+        # administration: DC | New Samarkand Military District | Kaznejoy Prefecture
+        # administration: DC | New Samarkand Military District | Kaznejoy Prefecture
+        # administration: DC | New Samarkand Military District | Kaznejoy Prefecture
+        # administration: DC | New Samarkand Military District | Kaznejoy Prefecture
+        # administration: DC | New Samarkand Military District | Kaznejoy Prefecture
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - DC
       - date: '3145-02-15'
+        # administration: DC | New Samarkand Military District | Kaznejoy Prefecture
+        # administration: DC | New Samarkand Military District | Kaznejoy Prefecture
+        # administration: DC | New Samarkand Military District | Kaznejoy Prefecture
+        # administration: DC | New Samarkand Military District | Kaznejoy Prefecture
+        # administration: DC | New Samarkand Military District | Kaznejoy Prefecture
+        # administration: DC | New Samarkand Military District | Kaznejoy Prefecture
         faction:
           source: canon
           value:
             - DC
         population: 112450921.0
+      - date: '3152-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - DC/FS
   - name: Nieves
     type: TERRESTRIAL
     orbitalDist: 3.92

@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,15 +16,17 @@
 # affiliated with Microsoft.
 
 id: Matsuida
-sucsId: 1627
+sucsId: 1628
 xcood: 278.405
 ycood: 129.101
 spectralType:
-  source: FedCom Civil War, pg. 203
+  source: FCCW
   value: G5V
+  page: 203
 primarySlot:
-  source: FedCom Civil War, pg. 203
+  source: FCCW
   value: 3
+  page: 203
 event:
   - date: '2359-05-21'
     zenithCharge: yes
@@ -70,57 +72,54 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.9
     sysPos:
-      source: FedCom Civil War, pg. 203
+      source: FCCW
       value: 3
+      page: 203
     icon: green36
     pressure:
-      source: FedCom Civil War, pg. 203
+      source: FCCW
       value: STANDARD
+      page: 203
     atmosphere:
-      source: FedCom Civil War, pg. 203
+      source: FCCW
       value: BREATHABLE
+      page: 203
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: FedCom Civil War, pg. 203
+      source: FCCW
       value: 1.0
+      page: 203
     diameter: 12471
     density: 5.635064276739
     dayLength: 23
     yearLength: 1.3
     temperature:
-      source: FedCom Civil War, pg. 203
+      source: FCCW
       value: 40
+      page: 203
     water:
-      source: FedCom Civil War, pg. 203
+      source: FCCW
       value: 50
+      page: 203
     lifeForm:
-      source: FedCom Civil War, pg. 203
+      source: FCCW
       value: REPTILE
-    desc: Despite looking like a 'perfect' planet on paper, Matsuida is a miserable
-      plane to live on. The planet has only two continents and both are dominated
-      by rough badlands and deserts that are completely unlivable. The only arable
-      land on the planet is around the coastal regions, though the seas of Matsuida
-      are unique in their gelatinous peasoup colored water, leading to the planet's
-      nickname "Nausea". Despite this, the fishing industry thrives on Matsuida and
-      the capital Mystique Bay is one of the largest fishing centers in all of the
-      Combine. Matsuida is best known for its large fishing industry and infamously
-      known for the prison system. Prisoners of the Combine can agree to work the
-      often deadly fishing boats of Matsuida in exchange for having their sentences
-      shortened. The Combine has found this to be an effective way to remove troublesome
-      prisoners without actually executing them. There are also rumors that a gargantuan
-      sea serpent named Gawdzeria has been seen of its coast by fishermen, but so
-      far there has been no proof.
+      page: 203
+    desc: Despite looking like a 'perfect' planet on paper, Matsuida is a miserable plane to live on. The planet has only two continents and both are dominated by rough badlands and deserts that are completely unlivable. The only arable land on the planet is around the coastal regions, though the seas of Matsuida are unique in their gelatinous peasoup colored water, leading to the planet's nickname "Nausea". Despite this, the fishing industry thrives on Matsuida and the capital Mystique Bay is one of the largest fishing centers in all of the Combine. Matsuida is best known for its large fishing industry and infamously known for the prison system. Prisoners of the Combine can agree to work the often deadly fishing boats of Matsuida in exchange for having their sentences shortened. The Combine has found this to be an effective way to remove troublesome prisoners without actually executing them. There are also rumors that a gargantuan sea serpent named Gawdzeria has been seen of its coast by fishermen, but so far there has been no proof.
     landmass:
       - name:
-          source: FedCom Civil War, pg. 203
+          source: FCCW
           value: Pak Chua
+          page: 203
       - name:
-          source: FedCom Civil War, pg. 203
+          source: FCCW
           value: Pao Tu
+          page: 203
     satellite:
       - name:
-          source: FedCom Civil War, pg. 203
+          source: FCCW
           value: Merion
+          page: 203
         size: medium
         icon: rock13
     event:
@@ -177,6 +176,12 @@ planet:
         population: 284644294.0
       - date: '2340-01-01'
         population: 329384185.0
+      - date: '2341-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '2350-01-01'
         population: 377253121.0
       - date: '2360-01-01'
@@ -227,6 +232,18 @@ planet:
         socioIndustrial: B-B-C-C-B
       - date: '2570-01-01'
         population: 1149733082.0
+      - date: '2571-01-01'
+        # administration: DC | Galedon Military District | Matsuida Prefecture
+        # administration: DC | Galedon Military District | Matsuida Prefecture
+        # administration: DC | Galedon Military District | Matsuida Prefecture
+        # administration: DC | Galedon Military District | Matsuida Prefecture
+        # administration: DC | Galedon Military District | Matsuida Prefecture
+        # administration: DC | Galedon Military District | Matsuida Prefecture
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - DC
       - date: '2580-01-01'
         population: 1170663027.0
       - date: '2590-01-01'
@@ -362,6 +379,12 @@ planet:
             - FS
             - DC
       - date: '3069-05-23'
+        # administration: DC | New Samarkand Military District | Matsuida Prefecture
+        # administration: DC | New Samarkand Military District | Matsuida Prefecture
+        # administration: DC | New Samarkand Military District | Matsuida Prefecture
+        # administration: DC | New Samarkand Military District | Matsuida Prefecture
+        # administration: DC | New Samarkand Military District | Matsuida Prefecture
+        # administration: DC | New Samarkand Military District | Matsuida Prefecture
         faction:
           source: canon
           value:

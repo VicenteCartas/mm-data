@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Joppa
-sucsId: 3016
+sucsId: 2979
 xcood: -27.019
 ycood: -437.797
 spectralType: K3V
@@ -48,6 +48,24 @@ planet:
       - name: Nyyrikki
       - name: Ananda
     event:
+      - date: '2596-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - SL
+      - date: '2783-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
+      - date: '3067-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - MOC
       - date: '3067-10-06'
         faction:
           source: canon
@@ -69,7 +87,25 @@ planet:
         population: 212730.0
       - date: '3120-01-01'
         population: 256217.0
+      - date: '3130-01-01'
+        # administration: CC | Victoria Commonality | Region 6
+        # administration: CC | Victoria Commonality | Region 6
+        # administration: CC | Victoria Commonality | Region 6
+        # administration: CC | Victoria Commonality | Region 6
+        # administration: CC | Victoria Commonality | Region 6
+        # administration: CC | Victoria Commonality | Region 6
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CC
       - date: '3130-06-14'
+        # administration: CC | Victoria Commonality | Region 6
+        # administration: CC | Victoria Commonality | Region 6
+        # administration: CC | Victoria Commonality | Region 6
+        # administration: CC | Victoria Commonality | Region 6
+        # administration: CC | Victoria Commonality | Region 6
+        # administration: CC | Victoria Commonality | Region 6
         faction:
           source: canon
           value:

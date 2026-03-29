@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,15 +16,17 @@
 # affiliated with Microsoft.
 
 id: New Delos
-sucsId: 1826
+sucsId: 1827
 xcood: -38.009
 ycood: -140.692
 spectralType:
-  source: 'Handbook: House Marik, pg. 71'
+  source: 'HB:HM'
   value: G8III
+  page: 71
 primarySlot:
-  source: 'Handbook: House Marik, pg. 71'
+  source: 'HB:HM'
   value: 4
+  page: 71
 event:
   - date: '2417-04-06'
     zenithCharge: yes
@@ -90,55 +92,63 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 1.28
     sysPos:
-      source: 'Handbook: House Marik, pg. 71'
+      source: 'HB:HM'
       value: 4
+      page: 71
     icon: wet9
     pressure:
-      source: 'Handbook: House Marik, pg. 71'
+      source: 'HB:HM'
       value: STANDARD
+      page: 71
     atmosphere:
-      source: 'Handbook: House Marik, pg. 71'
+      source: 'HB:HM'
       value: BREATHABLE
+      page: 71
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'Handbook: House Marik, pg. 71'
+      source: 'HB:HM'
       value: 1.1
+      page: 71
     diameter: 11651
     density: 6.635080249388
     dayLength: 22
     yearLength: 1.7
     temperature:
-      source: 'Handbook: House Marik, pg. 71'
+      source: 'HB:HM'
       value: 42
+      page: 71
     water:
-      source: 'Handbook: House Marik, pg. 71'
+      source: 'HB:HM'
       value: 78
+      page: 71
     lifeForm:
-      source: 'Handbook: House Marik, pg. 71'
+      source: 'HB:HM'
       value: REPTILE
-    desc: New Delos has been a pivotal world for the Free Worlds League. The planet
-      was the homeworld of George Humphries, the seat of power of Anton Marik during
-      attempted coup, the original ruling house of Oriente died fighting on New Delos,
-      and various conferences btween the League, Confederation and Terran Hegemony
-      took place in the grand cities of New Delos. New Delos was slow to recover from
-      the aftermath of Anton Marik’s Civil War. With the planet’s political infrastructure
-      decimated by the Wolf Dragoons the planet lost its place in the Free Worlds
-      League and many citizens chose to relocate to other worlds. Many cities have
-      since become ghost towns or have been entirely reclaimed by nature.
+      page: 71
+    desc: New Delos has been a pivotal world for the Free Worlds League. The planet was the homeworld of George Humphries, the seat of power of Anton Marik during attempted coup, the original ruling house of Oriente died fighting on New Delos, and various conferences btween the League, Confederation and Terran Hegemony took place in the grand cities of New Delos. New Delos was slow to recover from the aftermath of Anton Marik’s Civil War. With the planet’s political infrastructure decimated by the Wolf Dragoons the planet lost its place in the Free Worlds League and many citizens chose to relocate to other worlds. Many cities have since become ghost towns or have been entirely reclaimed by nature.
     landmass:
       - name:
-          source: 'Handbook: House Marik, pg. 71'
+          source: 'HB:HM'
           value: Ostrov
+          page: 71
         capital:
-          source: 'Handbook: House Marik, pg. 71'
+          source: 'HB:HM'
           value: Quito
+          page: 71
     satellite:
       - name:
-          source: 'Handbook: House Marik, pg. 71'
+          source: 'HB:HM'
           value: Lot
+          page: 71
         size: large
         icon: rock12
     event:
+      - date: '2271-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '2271-03-05'
         faction:
           source: canon
@@ -158,6 +168,12 @@ planet:
         population: 1953901.0
       - date: '2310-01-01'
         population: 5189188.0
+      - date: '2317-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '2320-01-01'
         population: 12053541.0
       - date: '2330-01-01'
@@ -168,6 +184,18 @@ planet:
         population: 80855613.0
       - date: '2360-01-01'
         population: 129152024.0
+      - date: '2366-01-01'
+        # administration: FWL | Federation of Oriente
+        # administration: FWL | Federation of Oriente
+        # administration: FWL | Federation of Oriente
+        # administration: FWL | Federation of Oriente
+        # administration: FWL | Federation of Oriente
+        # administration: FWL | Federation of Oriente
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FWL
       - date: '2370-01-01'
         population: 193444132.0
       - date: '2380-01-01'
@@ -323,6 +351,12 @@ planet:
           value:
             - FWLR
       - date: '3015-03-15'
+        # administration: FWL | The Protectorate
+        # administration: FWL | The Protectorate
+        # administration: FWL | The Protectorate
+        # administration: FWL | The Protectorate
+        # administration: FWL | The Protectorate
+        # administration: FWL | The Protectorate
         faction:
           source: canon
           value:
@@ -368,6 +402,12 @@ planet:
         population: 1824330519.0
       - date: '3120-01-01'
         population: 1843771276.0
+      - date: '3130-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - OP
       - date: '3130-03-17'
         faction:
           source: canon
@@ -381,8 +421,25 @@ planet:
       - date: '3140-01-01'
         population: 1887424272.0
       - date: '3145-01-01'
+        # administration: FWL | Oriente Protectorate
+        # administration: FWL | Oriente Protectorate
+        # administration: FWL | Oriente Protectorate
+        # administration: FWL | Oriente Protectorate
+        # administration: FWL | Oriente Protectorate
+        # administration: FWL | Oriente Protectorate
         population: 1904487761.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FWL
       - date: '3151-01-01'
+        # administration: FWL | Oriente Protectorate
+        # administration: FWL | Oriente Protectorate
+        # administration: FWL | Oriente Protectorate
+        # administration: FWL | Oriente Protectorate
+        # administration: FWL | Oriente Protectorate
+        # administration: FWL | Oriente Protectorate
         faction:
           source: sucs
           value:

@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -68,6 +68,12 @@ planet:
       - name: Besse
     event:
       - date: '2546-04-17'
+        # administration: LA | Protectorate of Donegal | Coventry Province
+        # administration: LA | Protectorate of Donegal | Coventry Province
+        # administration: LA | Protectorate of Donegal | Coventry Province
+        # administration: LA | Protectorate of Donegal | Coventry Province
+        # administration: LA | Protectorate of Donegal | Coventry Province
+        # administration: LA | Protectorate of Donegal | Coventry Province
         faction:
           source: canon
           value:
@@ -183,8 +189,25 @@ planet:
       - date: '3030-01-01'
         population: 145384811.0
       - date: '3040-01-01'
+        # administration: FC | Donegal March | Coventry Operational Area
+        # administration: FC | Donegal March | Coventry Operational Area
+        # administration: FC | Donegal March | Coventry Operational Area
+        # administration: FC | Donegal March | Coventry Operational Area
+        # administration: FC | Donegal March | Coventry Operational Area
+        # administration: FC | Donegal March | Coventry Operational Area
         population: 146787226.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
+        # administration: FC | Donegal March | Coventry Operational Area
+        # administration: FC | Donegal March | Coventry Operational Area
+        # administration: FC | Donegal March | Coventry Operational Area
+        # administration: FC | Donegal March | Coventry Operational Area
+        # administration: FC | Donegal March | Coventry Operational Area
+        # administration: FC | Donegal March | Coventry Operational Area
         faction:
           source: canon
           value:
@@ -195,9 +218,39 @@ planet:
         socioIndustrial: B-C-C-B-A
       - date: '3050-01-01'
         population: 148114274.0
+      - date: '3057-01-01'
+        # administration: LA | Donegal March | Coventry Operational Area
+        # administration: LA | Donegal March | Coventry Operational Area
+        # administration: LA | Donegal March | Coventry Operational Area
+        # administration: LA | Donegal March | Coventry Operational Area
+        # administration: LA | Donegal March | Coventry Operational Area
+        # administration: LA | Donegal March | Coventry Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '3057-09-18'
         faction:
           source: canon
+          value:
+            - LA
+      - date: '3058-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CJF
+      - date: '3059-01-01'
+        # administration: LA | Coventry Province
+        # administration: LA | Coventry Province
+        # administration: LA | Coventry Province
+        # administration: LA | Coventry Province
+        # administration: LA | Coventry Province
+        # administration: LA | Coventry Province
+        faction:
+          source: SUCS
+          version: 2026.03.02
           value:
             - LA
       - date: '3060-01-01'
@@ -231,8 +284,7 @@ planet:
     icon: badwater23
     pressure: THIN
     atmosphere: TOXIC_CAUSTIC
-    composition: Nitrogen and Ammonia, plus trace amounts of Sulfur Dioxide and Hydrogen
-      Peroxide
+    composition: Nitrogen and Ammonia, plus trace amounts of Sulfur Dioxide and Hydrogen Peroxide
     gravity: 0.87
     diameter: 10500
     density: 5.8437

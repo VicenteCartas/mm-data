@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Osumi
-sucsId: 1955
+sucsId: 1956
 xcood: 74.109
 ycood: 138.808
 spectralType: K7V
@@ -57,6 +57,12 @@ planet:
       - name: Tanaka's Plains
     event:
       - date: '2340-12-20'
+        # administration: DC | Benjamin Military District | Kajikazawa Prefecture
+        # administration: DC | Benjamin Military District | Kajikazawa Prefecture
+        # administration: DC | Benjamin Military District | Kajikazawa Prefecture
+        # administration: DC | Benjamin Military District | Kajikazawa Prefecture
+        # administration: DC | Benjamin Military District | Kajikazawa Prefecture
+        # administration: DC | Benjamin Military District | Kajikazawa Prefecture
         faction:
           source: canon
           value:
@@ -169,6 +175,11 @@ planet:
         population: 1345523035.0
       - date: '2830-01-01'
         population: 1342651183.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ABN
       - date: '2840-01-01'
         population: 38459892.0
       - date: '2850-01-01'

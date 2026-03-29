@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Irece
-sucsId: 1208
+sucsId: 1209
 xcood: 179.371
 ycood: 293.992
 spectralType:
@@ -105,13 +105,7 @@ planet:
     lifeForm:
       source: canon
       value: MAMMAL
-    desc: Irece is a heavily industrialized high-tech world that is fully self-sufficient.
-      It’s ideal climate also allows it to be a huge food producer in the region.
-      It’s also an important Command and Industrial world to the Draconis Combine,
-      home to the LexaTech Industries Stinger LAM plant. The world is home of the
-      9.7 kilometer tall mountain known as Tengoku. (Japanese translation of the name
-      is Heaven.) Tengoku peaks into the planet's stratosphere and is located a hundred
-      kilometers from world's capital city New Barcella.
+    desc: Irece is a heavily industrialized high-tech world that is fully self-sufficient. It’s ideal climate also allows it to be a huge food producer in the region. It’s also an important Command and Industrial world to the Draconis Combine, home to the LexaTech Industries Stinger LAM plant. The world is home of the 9.7 kilometer tall mountain known as Tengoku. (Japanese translation of the name is Heaven.) Tengoku peaks into the planet's stratosphere and is located a hundred kilometers from world's capital city New Barcella.
     landmass:
       - name:
           source: canon
@@ -131,6 +125,12 @@ planet:
         icon: rock8
     event:
       - date: '2478-04-07'
+        # administration: DC | Pesht Military District | Kagoshima Prefecture
+        # administration: DC | Pesht Military District | Kagoshima Prefecture
+        # administration: DC | Pesht Military District | Kagoshima Prefecture
+        # administration: DC | Pesht Military District | Kagoshima Prefecture
+        # administration: DC | Pesht Military District | Kagoshima Prefecture
+        # administration: DC | Pesht Military District | Kagoshima Prefecture
         faction:
           source: canon
           value:
@@ -284,7 +284,25 @@ planet:
           source: canon
           value:
             - CNC
+      - date: '3059-01-01'
+        # administration: DC | Pesht Military District | Kagoshima Prefecture
+        # administration: DC | Pesht Military District | Kagoshima Prefecture
+        # administration: DC | Pesht Military District | Kagoshima Prefecture
+        # administration: DC | Pesht Military District | Kagoshima Prefecture
+        # administration: DC | Pesht Military District | Kagoshima Prefecture
+        # administration: DC | Pesht Military District | Kagoshima Prefecture
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - DC
       - date: '3059-06-02'
+        # administration: DC | Pesht Military District | Irece Prefecture
+        # administration: DC | Pesht Military District | Irece Prefecture
+        # administration: DC | Pesht Military District | Irece Prefecture
+        # administration: DC | Pesht Military District | Irece Prefecture
+        # administration: DC | Pesht Military District | Irece Prefecture
+        # administration: DC | Pesht Military District | Irece Prefecture
         faction:
           source: canon
           value:
@@ -309,6 +327,12 @@ planet:
             - CNC
             - CGB
       - date: '3100-07-09'
+        # administration: DC | Pesht Military District | Irece Prefecture
+        # administration: DC | Pesht Military District | Irece Prefecture
+        # administration: DC | Pesht Military District | Irece Prefecture
+        # administration: DC | Pesht Military District | Irece Prefecture
+        # administration: DC | Pesht Military District | Irece Prefecture
+        # administration: DC | Pesht Military District | Irece Prefecture
         faction:
           source: canon
           value:

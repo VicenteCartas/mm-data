@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Smithon
-sucsId: 2361
+sucsId: 2362
 xcood: 126.499
 ycood: -432.67
 spectralType:
@@ -156,6 +156,12 @@ planet:
       - name: New Gorod Buinsk Archipelago
     event:
       - date: '2737-07-14'
+        # administration: CC | Sian Commonality | Region 14
+        # administration: CC | Sian Commonality | Region 14
+        # administration: CC | Sian Commonality | Region 14
+        # administration: CC | Sian Commonality | Region 14
+        # administration: CC | Sian Commonality | Region 14
+        # administration: CC | Sian Commonality | Region 14
         faction:
           source: canon
           value:
@@ -188,6 +194,24 @@ planet:
           source: canon
           value:
             - IND
+      - date: '2822-01-01'
+        # administration: CC | Sian Commonality | Region 15
+        # administration: CC | Sian Commonality | Region 15
+        # administration: CC | Sian Commonality | Region 15
+        # administration: CC | Sian Commonality | Region 15
+        # administration: CC | Sian Commonality | Region 15
+        # administration: CC | Sian Commonality | Region 15
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CC
+      - date: '2864-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '2910-01-01'
         faction:
           source: canon
@@ -198,6 +222,12 @@ planet:
           source: This is the earliest the directorate could have taken over
           value:
             - ARD
+      - date: '3025-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ARC
       - date: '3025-03-01'
         faction:
           source: assumption
@@ -227,8 +257,21 @@ planet:
         socioIndustrial:
           source: canon
           value: D-C-C-C-D
+      - date: '3030-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ABN
       - date: '3151-01-01'
         faction:
           source: sucs
           value:
             - ABN
+      - date: '3152-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
+    desc: Smithon seems an unlikely target for colonization. The planet is arid, its soil barely supports life, surface water is mostly tied up in ice caps, and temperatures hover around freezing. The lack of moons produces a disorienting sixteen-hour day. The SLDF Corps of Engineers built fortifications and armories beneath the surface, and after the Capellans retreated these became the stronghold of House Karosas, with the structures repurposed as subterranean cities. The only other settlement is a water-purification installation at the northern ice cap that supplies hydration for agroponic farming.

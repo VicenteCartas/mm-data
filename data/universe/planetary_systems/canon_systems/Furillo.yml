@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,15 +16,17 @@
 # affiliated with Microsoft.
 
 id: Furillo
-sucsId: 909
+sucsId: 910
 xcood: -137.266
 ycood: 78.255
 spectralType:
-  source: 'Handbook: House Steiner, pg. 78'
+  source: 'HB:HS'
   value: K3V
+  page: 78
 primarySlot:
-  source: 'Handbook: House Steiner, pg. 78'
+  source: 'HB:HS'
   value: 2
+  page: 78
 event:
   - date: '2352-01-08'
     zenithCharge: yes
@@ -53,45 +55,53 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.49
     sysPos:
-      source: 'Handbook: House Steiner, pg. 78'
+      source: 'HB:HS'
       value: 2
+      page: 78
     icon: wet5
     pressure:
-      source: 'Handbook: House Steiner, pg. 78'
+      source: 'HB:HS'
       value: STANDARD
+      page: 78
     atmosphere:
-      source: 'Handbook: House Steiner, pg. 78'
+      source: 'HB:HS'
       value: BREATHABLE
+      page: 78
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'Handbook: House Steiner, pg. 78'
+      source: 'HB:HS'
       value: 1.12
+      page: 78
     diameter: 14379
     density: 5.473700526821
     dayLength: 20
     yearLength: 0.9
     temperature:
-      source: 'Handbook: House Steiner, pg. 78'
+      source: 'HB:HS'
       value: 36
+      page: 78
     water:
-      source: 'Handbook: House Steiner, pg. 78'
+      source: 'HB:HS'
       value: 81
+      page: 78
     lifeForm:
-      source: 'Handbook: House Steiner, pg. 78'
+      source: 'HB:HS'
       value: MAMMAL
-    desc: Due to large concentrations natural resources Furillo quickly became one
-      of the most successful colonies in its region of space. Furillo is home to a
-      Defiance Industries BattleMech factory and several other heavy industries.
+      page: 78
+    desc: Due to large concentrations natural resources Furillo quickly became one of the most successful colonies in its region of space. Furillo is home to a Defiance Industries BattleMech factory and several other heavy industries.
     landmass:
       - name:
-          source: 'Handbook: House Steiner, pg. 78'
+          source: 'HB:HS'
           value: Dereka
+          page: 78
       - name:
-          source: 'Handbook: House Steiner, pg. 78'
+          source: 'HB:HS'
           value: Wilda
+          page: 78
         capital:
-          source: 'Handbook: House Steiner, pg. 78'
+          source: 'HB:HS'
           value: Telesian
+          page: 78
     event:
       - date: '2268-12-22'
         faction:
@@ -125,6 +135,12 @@ planet:
         population: 59808716.0
       - date: '2360-01-01'
         population: 91041209.0
+      - date: '2366-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '2370-01-01'
         population: 131273852.0
       - date: '2380-01-01'
@@ -171,6 +187,18 @@ planet:
         population: 1029444874.0
       - date: '2570-01-01'
         population: 1051741168.0
+      - date: '2571-01-01'
+        # administration: LA | Protectorate of Donegal | Furillo Province
+        # administration: LA | Protectorate of Donegal | Furillo Province
+        # administration: LA | Protectorate of Donegal | Furillo Province
+        # administration: LA | Protectorate of Donegal | Furillo Province
+        # administration: LA | Protectorate of Donegal | Furillo Province
+        # administration: LA | Protectorate of Donegal | Furillo Province
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '2580-01-01'
         population: 1080801373.0
       - date: '2590-01-01'
@@ -273,12 +301,30 @@ planet:
         population: 1122092276.0
       - date: '3030-01-01'
         population: 1125741202.0
+      - date: '3040-01-01'
+        # administration: FC | Tamarind March | Soilihull Operational Area
+        # administration: FC | Tamarind March | Soilihull Operational Area
+        # administration: FC | Tamarind March | Soilihull Operational Area
+        # administration: FC | Tamarind March | Soilihull Operational Area
+        # administration: FC | Tamarind March | Soilihull Operational Area
+        # administration: FC | Tamarind March | Soilihull Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-03-13'
         population: 1137965097.0
         socioIndustrial:
           source: canon
           value: B-B-B-B-D
       - date: '3040-01-19'
+        # administration: FC | Tamarind March | Soilihull Operational Area
+        # administration: FC | Tamarind March | Soilihull Operational Area
+        # administration: FC | Tamarind March | Soilihull Operational Area
+        # administration: FC | Tamarind March | Soilihull Operational Area
+        # administration: FC | Tamarind March | Soilihull Operational Area
+        # administration: FC | Tamarind March | Soilihull Operational Area
         faction:
           source: canon
           value:
@@ -289,7 +335,25 @@ planet:
           value: A-A-B-A-C
       - date: '3050-01-01'
         population: 1150666874.0
+      - date: '3057-01-01'
+        # administration: LA | Tamarind March | Soilihull Operational Area
+        # administration: LA | Tamarind March | Soilihull Operational Area
+        # administration: LA | Tamarind March | Soilihull Operational Area
+        # administration: LA | Tamarind March | Soilihull Operational Area
+        # administration: LA | Tamarind March | Soilihull Operational Area
+        # administration: LA | Tamarind March | Soilihull Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '3057-09-18'
+        # administration: LA | Bolan Province
+        # administration: LA | Bolan Province
+        # administration: LA | Bolan Province
+        # administration: LA | Bolan Province
+        # administration: LA | Bolan Province
+        # administration: LA | Bolan Province
         faction:
           source: canon
           value:
@@ -303,6 +367,12 @@ planet:
             - FC
             - LA
       - date: '3064-07-17'
+        # administration: LA | Bolan Province
+        # administration: LA | Bolan Province
+        # administration: LA | Bolan Province
+        # administration: LA | Bolan Province
+        # administration: LA | Bolan Province
+        # administration: LA | Bolan Province
         faction:
           source: canon
           value:

@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,15 +16,17 @@
 # affiliated with Microsoft.
 
 id: Geifer
-sucsId: 942
+sucsId: 943
 xcood: 37.535
 ycood: -186.266
 spectralType:
-  source: 'Handbook: House Liao, pg. 72'
+  source: 'HB:HL'
   value: G9V
+  page: 72
 primarySlot:
-  source: 'Handbook: House Liao, pg. 72'
+  source: 'HB:HL'
   value: 3
+  page: 72
 planet:
   - name: Svarog
     type: TERRESTRIAL
@@ -61,32 +63,39 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.8
     sysPos:
-      source: 'Handbook: House Liao, pg. 72'
+      source: 'HB:HL'
       value: 3
+      page: 72
     icon: green31
     pressure:
-      source: 'Handbook: House Liao, pg. 72'
+      source: 'HB:HL'
       value: STANDARD
+      page: 72
     atmosphere:
-      source: 'Handbook: House Liao, pg. 72'
+      source: 'HB:HL'
       value: BREATHABLE
+      page: 72
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'Handbook: House Liao, pg. 72'
+      source: 'HB:HL'
       value: 0.99
+      page: 72
     diameter: 12264
     density: 5.673057242123
     dayLength: 29
     yearLength: 1.1
     temperature:
-      source: 'Handbook: House Liao, pg. 72'
+      source: 'HB:HL'
       value: 31
+      page: 72
     water:
-      source: 'Handbook: House Liao, pg. 72'
+      source: 'HB:HL'
       value: 62
+      page: 72
     lifeForm:
-      source: 'Handbook: House Liao, pg. 72'
+      source: 'HB:HL'
       value: MAMMAL
+      page: 72
     desc: |-
       Geifer is the site of the massive Capellan Republic Library, which was a massive facility with a wealth of knowledge. Unfortunately it suffered a great deal of damage in both the Second and Third Succession Wars. While much of the information was lost by the late Third Succession War, the remaining information was some of the most comprehensive in the settled world, primarily covering physical sciences and languages.
 
@@ -96,13 +105,15 @@ planet:
         capital: Stevens
     satellite:
       - name:
-          source: 'Handbook: House Liao, pg. 72'
+          source: 'HB:HL'
           value: Dabney
+          page: 72
         size: large
         icon: rock12
       - name:
-          source: 'Handbook: House Liao, pg. 72'
+          source: 'HB:HL'
           value: Mushu
+          page: 72
         size: giant
         icon: rock10
     event:
@@ -164,6 +175,12 @@ planet:
       - date: '2360-01-01'
         population: 350557067.0
       - date: '2367-07-01'
+        # administration: CC | Capella Commonality | Region 2
+        # administration: CC | Capella Commonality | Region 2
+        # administration: CC | Capella Commonality | Region 2
+        # administration: CC | Capella Commonality | Region 2
+        # administration: CC | Capella Commonality | Region 2
+        # administration: CC | Capella Commonality | Region 2
         faction:
           source: canon
           value:

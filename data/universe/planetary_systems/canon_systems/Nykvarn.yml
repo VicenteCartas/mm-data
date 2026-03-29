@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Nykvarn
-sucsId: 1915
+sucsId: 1916
 xcood: 123.295
 ycood: 388.723
 spectralType:
@@ -73,10 +73,7 @@ planet:
     lifeForm:
       source: canon
       value: BIRD
-    desc: When this world was freed from the Smoke Jaguars during Operation Bulldog
-      the liberators were surprised to find a monument built by the occupiers to honor
-      the Nykvarn Armored Battalion. The Clanners had felt that the Armored Battalion
-      had impressed the invaders in combat, even though they were wiped out.
+    desc: When this world was freed from the Smoke Jaguars during Operation Bulldog the liberators were surprised to find a monument built by the occupiers to honor the Nykvarn Armored Battalion. The Clanners had felt that the Armored Battalion had impressed the invaders in combat, even though they were wiped out.
     smallMoons: 1
     landmass:
       - name:
@@ -93,6 +90,12 @@ planet:
           value: Bothnia
     event:
       - date: '2322-03-24'
+        # administration: DC | Rasalhague Military District | Trondheim Prefecture
+        # administration: DC | Rasalhague Military District | Trondheim Prefecture
+        # administration: DC | Rasalhague Military District | Trondheim Prefecture
+        # administration: DC | Rasalhague Military District | Trondheim Prefecture
+        # administration: DC | Rasalhague Military District | Trondheim Prefecture
+        # administration: DC | Rasalhague Military District | Trondheim Prefecture
         faction:
           source: canon
           value:
@@ -265,13 +268,41 @@ planet:
           source: canon
           value: B-C-B-C-B
       - date: '3050-01-01'
+        # administration: DC | Alshain Military District | Garstedt Prefecture
+        # administration: DC | Alshain Military District | Garstedt Prefecture
+        # administration: DC | Alshain Military District | Garstedt Prefecture
+        # administration: DC | Alshain Military District | Garstedt Prefecture
+        # administration: DC | Alshain Military District | Garstedt Prefecture
         population: 147798942.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CSJ
       - date: '3050-05-01'
         faction:
           source: canon
           value:
             - CSJ
+      - date: '3059-01-01'
+        # administration: DC | Pesht Military District | Lonaconing Prefecture
+        # administration: DC | Pesht Military District | Lonaconing Prefecture
+        # administration: DC | Pesht Military District | Lonaconing Prefecture
+        # administration: DC | Pesht Military District | Lonaconing Prefecture
+        # administration: DC | Pesht Military District | Lonaconing Prefecture
+        # administration: DC | Pesht Military District | Lonaconing Prefecture
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - DC
       - date: '3059-06-29'
+        # administration: DC | Pesht Military District | Albiero Prefecture
+        # administration: DC | Pesht Military District | Albiero Prefecture
+        # administration: DC | Pesht Military District | Albiero Prefecture
+        # administration: DC | Pesht Military District | Albiero Prefecture
+        # administration: DC | Pesht Military District | Albiero Prefecture
+        # administration: DC | Pesht Military District | Albiero Prefecture
         faction:
           source: canon
           value:
@@ -286,6 +317,18 @@ planet:
           value:
             - DC
             - CDS
+      - date: '3079-01-01'
+        # administration: DC | Pesht Military District | Albiero Prefecture
+        # administration: DC | Pesht Military District | Albiero Prefecture
+        # administration: DC | Pesht Military District | Albiero Prefecture
+        # administration: DC | Pesht Military District | Albiero Prefecture
+        # administration: DC | Pesht Military District | Albiero Prefecture
+        # administration: DC | Pesht Military District | Albiero Prefecture
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - DC
       - date: '3080-01-01'
         population: 154077057.0
       - date: '3090-12-27'
@@ -304,6 +347,12 @@ planet:
       - date: '3145-01-01'
         population: 159437636.0
       - date: '3151-01-01'
+        # administration: DC | Pesht Military District | Albiero Prefecture
+        # administration: DC | Pesht Military District | Albiero Prefecture
+        # administration: DC | Pesht Military District | Albiero Prefecture
+        # administration: DC | Pesht Military District | Albiero Prefecture
+        # administration: DC | Pesht Military District | Albiero Prefecture
+        # administration: DC | Pesht Military District | Albiero Prefecture
         faction:
           source: sucs
           value:

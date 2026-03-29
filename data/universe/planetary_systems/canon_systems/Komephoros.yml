@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: Komephoros
-sucsId: 1392
+sucsId: 1393
 xcood: -34.132
 ycood: 91.971
 spectralType:
-  source: MWDA world profiles
+  source: DA:RW
   value: F0VI
 primarySlot:
-  source: MWDA world profiles
+  source: DA:RW
   value: 5
 event:
   - date: '2361-09-30'
@@ -103,31 +103,31 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 4.48
     sysPos:
-      source: MWDA world profiles
+      source: DA:RW
       value: 5
     icon: green7
     pressure:
-      source: MWDA world profiles
+      source: DA:RW
       value: STANDARD
     atmosphere:
-      source: MWDA world profiles
+      source: DA:RW
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: MWDA world profiles
+      source: DA:RW
       value: 1.03
     diameter: 13957
     density: 5.186204796391
     dayLength: 23
     yearLength: 9.6
     temperature:
-      source: MWDA world profiles
+      source: DA:RW
       value: 21
     water:
-      source: MWDA world profiles
+      source: DA:RW
       value: 70
     lifeForm:
-      source: MWDA world profiles
+      source: DA:RW
       value: REPTILE
     desc: |-
       3135 - A somewhat cold world, colonists were drawn to Komephoros by the promise of abundant natural resources trapped beneath its partially frozen surface. Unfortunately, the first settlers sent to this world vanished without a trace, their fate unknown until a second colony ship was launched to the world nearly a decade later. Finding no sign of the original expedition‘s JumpShip, the second expedition assumed its predecessor had simply misjumped until—after setting up a settlement on the temperate shores of the equatorial Marksenia continent—a scouting party dispatched to the southern continent of Calvinar picked up a very weak, automated distress signal, originating from what appeared to be a frozen lake. Further investigation eventually uncovered the grisly remains of the first colonial expedition, which was apparently washed out in a freakish disaster caused when a rogue asteroid struck the nearby ocean with sufficient force to generate a wave that flooded the valley their settlement had been established in. When the planet then entered its three-year-long winter cycle, the newly formed lake froze over, and subsequent snowfall eventually buried even the colonists‘ DropShip from satellite scans. To this day, local legends say the lake, dubbed Luega del Condenado (Lake of the Damned), is haunted by the spirits of the lost colonists, and no modern settlements have been established within 300 kilometers of the site.
@@ -135,16 +135,16 @@ planet:
       Over the centuries after the fall of the Star League, Komephoros traded hands a few times between Houses Steiner and Kurita, with many of its mining and ore-processing facilities damaged during each shift in control. Bypassed during the Jihad, however, the planet‘s industrial infrastructure was in excellent shape when the world was ceded to Devlin Stone‘s newborn Republic. The capital city of Komephoros is located on Marksenia‘s east coast, and is also home to the planet‘s primary spaceport. Bristalle, largest city on the northern continent of Jasonri, boasts a secondary spaceport and the corporate headquarters of Kamlarr Enterprises, a subsidiary of Bannson Universal Unlimited, which runs several specialized mining rigs located throughout the north polar region.
     landmass:
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Calvinar
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Jasonri
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Marksenia
         capital:
-          source: MWDA world profiles
+          source: DA:RW
           value: Rutilicus
     event:
       - date: '2299-06-21'
@@ -165,6 +165,12 @@ planet:
       - date: '2340-01-01'
         population: 5308958.0
       - date: '2341-04-14'
+        # administration: LA | Federation of Skye
+        # administration: LA | Federation of Skye
+        # administration: LA | Federation of Skye
+        # administration: LA | Federation of Skye
+        # administration: LA | Federation of Skye
+        # administration: LA | Federation of Skye
         faction:
           source: canon
           value:
@@ -291,6 +297,12 @@ planet:
       - date: '2890-01-01'
         population: 1133819478.0
       - date: '2900-05-22'
+        # administration: DC | Dieron Military District | Kessel Prefecture
+        # administration: DC | Dieron Military District | Kessel Prefecture
+        # administration: DC | Dieron Military District | Kessel Prefecture
+        # administration: DC | Dieron Military District | Kessel Prefecture
+        # administration: DC | Dieron Military District | Kessel Prefecture
+        # administration: DC | Dieron Military District | Kessel Prefecture
         faction:
           source: canon
           value:
@@ -321,6 +333,18 @@ planet:
         population: 930060444.0
       - date: '3020-01-01'
         population: 918141105.0
+      - date: '3030-01-01'
+        # administration: LA | Federation of Skye | Virginia Shire
+        # administration: LA | Federation of Skye | Virginia Shire
+        # administration: LA | Federation of Skye | Virginia Shire
+        # administration: LA | Federation of Skye | Virginia Shire
+        # administration: LA | Federation of Skye | Virginia Shire
+        # administration: LA | Federation of Skye | Virginia Shire
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '3030-08-29'
         faction:
           source: canon
@@ -328,7 +352,18 @@ planet:
             - LA
         population: 917096839.0
       - date: '3040-01-01'
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
         population: 925110389.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
         faction:
           source: canon
@@ -337,6 +372,12 @@ planet:
       - date: '3047-01-01'
         socioIndustrial: A-C-B-C-B
       - date: '3048-03-17'
+        # administration: DC | Dieron Military District | Kessel Prefecture
+        # administration: DC | Dieron Military District | Kessel Prefecture
+        # administration: DC | Dieron Military District | Kessel Prefecture
+        # administration: DC | Dieron Military District | Kessel Prefecture
+        # administration: DC | Dieron Military District | Kessel Prefecture
+        # administration: DC | Dieron Military District | Kessel Prefecture
         faction:
           source: canon
           value:
@@ -349,7 +390,25 @@ planet:
         population: 954428823.0
       - date: '3080-01-01'
         population: 956148342.0
+      - date: '3081-01-01'
+        # administration: ROS | Prefecture IX
+        # administration: ROS | Prefecture IX
+        # administration: ROS | Prefecture IX
+        # administration: ROS | Prefecture IX
+        # administration: ROS | Prefecture IX
+        # administration: ROS | Prefecture IX
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ROS
       - date: '3081-09-11'
+        # administration: ROS | Prefecture IX
+        # administration: ROS | Prefecture IX
+        # administration: ROS | Prefecture IX
+        # administration: ROS | Prefecture IX
+        # administration: ROS | Prefecture IX
+        # administration: ROS | Prefecture IX
         faction:
           source: canon
           value:
@@ -368,6 +427,12 @@ planet:
         population: 984676411.0
       - date: '3132-08-07'
         hpg: X
+      - date: '3135-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3135-10-01'
         faction:
           source: canon
@@ -375,7 +440,25 @@ planet:
             - IND
       - date: '3140-01-01'
         population: 985267394.0
+      - date: '3145-01-01'
+        # administration: RD | Region 3 | Vega Protectorate
+        # administration: RD | Region 3 | Vega Protectorate
+        # administration: RD | Region 3 | Vega Protectorate
+        # administration: RD | Region 3 | Vega Protectorate
+        # administration: RD | Region 3 | Vega Protectorate
+        # administration: RD | Region 3 | Vega Protectorate
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - RD
       - date: '3145-11-22'
+        # administration: RD | Region 3 | Vega Protectorate
+        # administration: RD | Region 3 | Vega Protectorate
+        # administration: RD | Region 3 | Vega Protectorate
+        # administration: RD | Region 3 | Vega Protectorate
+        # administration: RD | Region 3 | Vega Protectorate
+        # administration: RD | Region 3 | Vega Protectorate
         faction:
           source: canon
           value:

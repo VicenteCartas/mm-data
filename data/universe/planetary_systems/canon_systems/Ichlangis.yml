@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Ichlangis
-sucsId: 1168
+sucsId: 1169
 xcood: 101.656
 ycood: -401.216
 spectralType: K5V
@@ -50,6 +50,12 @@ planet:
         capital: New Front
     event:
       - date: '2612-08-06'
+        # administration: CC | Sian Commonality | Region 14
+        # administration: CC | Sian Commonality | Region 14
+        # administration: CC | Sian Commonality | Region 14
+        # administration: CC | Sian Commonality | Region 14
+        # administration: CC | Sian Commonality | Region 14
+        # administration: CC | Sian Commonality | Region 14
         faction:
           source: canon
           value:
@@ -103,6 +109,12 @@ planet:
           source: canon
           value:
             - IND
+      - date: '2822-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ABN
       - date: '2978-01-01'
         faction:
           source: canon
@@ -113,6 +125,12 @@ planet:
           source: This is the earliest the directorate could have taken over
           value:
             - ARD
+      - date: '3025-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ARC
       - date: '3025-01-25'
         faction:
           source: assumption
@@ -129,11 +147,18 @@ planet:
           source: canon
           value:
             - ARC
+      - date: '3030-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ABN
       - date: '3151-01-01'
         faction:
           source: sucs
           value:
             - ABN
+    desc: A Mars-like planet with atmosphere too thin to breathe, no surface water, and temperatures below freezing. The planet is rich in titanium, with ores made easily accessible by the deep chasms that crack the surface.
   - name: Tibaldi
     type: GAS_GIANT
     orbitalDist: 0.7

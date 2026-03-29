@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: New Westin
-sucsId: 1860
+sucsId: 1861
 xcood: 38.253
 ycood: -241.987
 spectralType: G3V
@@ -102,6 +102,12 @@ planet:
         population: 21440216.0
       - date: '2270-01-01'
         population: 32482029.0
+      - date: '2271-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '2280-01-01'
         population: 46934018.0
       - date: '2286-01-01'
@@ -122,7 +128,19 @@ planet:
         population: 224768994.0
       - date: '2360-01-01'
         population: 255106737.0
+      - date: '2366-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - SiS
       - date: '2367-07-01'
+        # administration: CC | Sian Commonality | Region 5
+        # administration: CC | Sian Commonality | Region 5
+        # administration: CC | Sian Commonality | Region 5
+        # administration: CC | Sian Commonality | Region 5
+        # administration: CC | Sian Commonality | Region 5
+        # administration: CC | Sian Commonality | Region 5
         faction:
           source: canon
           value:
@@ -280,8 +298,32 @@ planet:
         population: 573894403.0
       - date: '3060-01-01'
         population: 578214792.0
+      - date: '3068-01-01'
+        # administration: FS | Capellan March | Taygeta Operational Area
+        # administration: FS | Capellan March | Taygeta Operational Area
+        # administration: FS | Capellan March | Taygeta Operational Area
+        # administration: FS | Capellan March | Taygeta Operational Area
+        # administration: FS | Capellan March | Taygeta Operational Area
+        # administration: FS | Capellan March | Taygeta Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FS
       - date: '3070-01-01'
         population: 582101838.0
+      - date: '3075-01-01'
+        # administration: CC | Sian Commonality | Region 4
+        # administration: CC | Sian Commonality | Region 4
+        # administration: CC | Sian Commonality | Region 4
+        # administration: CC | Sian Commonality | Region 4
+        # administration: CC | Sian Commonality | Region 4
+        # administration: CC | Sian Commonality | Region 4
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CC
       - date: '3080-01-01'
         population: 587012088.0
       - date: '3090-01-01'

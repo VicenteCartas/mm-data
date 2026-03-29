@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -20,11 +20,13 @@ sucsId: 69
 xcood: 64.875
 ycood: -67.773
 spectralType:
-  source: FedCom Civil War, pg. 187
+  source: FCCW
   value: G5V
+  page: 187
 primarySlot:
-  source: FedCom Civil War, pg. 187
+  source: FCCW
   value: 4
+  page: 187
 event:
   - date: '2481-12-13'
     zenithCharge: yes
@@ -81,32 +83,39 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.9
     sysPos:
-      source: FedCom Civil War, pg. 187
+      source: FCCW
       value: 4
+      page: 187
     icon: green31
     pressure:
-      source: FedCom Civil War, pg. 187
+      source: FCCW
       value: STANDARD
+      page: 187
     atmosphere:
-      source: FedCom Civil War, pg. 187
+      source: FCCW
       value: BREATHABLE
+      page: 187
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: FedCom Civil War, pg. 187
+      source: FCCW
       value: 1.1
+      page: 187
     diameter: 13538
     density: 5.710174000786
     dayLength: 22
     yearLength: 1.3
     temperature:
-      source: FedCom Civil War, pg. 187
+      source: FCCW
       value: 30
+      page: 187
     water:
-      source: FedCom Civil War, pg. 187
+      source: FCCW
       value: 50
+      page: 187
     lifeForm:
-      source: FedCom Civil War, pg. 187
+      source: FCCW
       value: FISH
+      page: 187
     desc: |-
       3135 - Algol, originally part of the old Tikonov Union, became an important agricultural center during the height of Star League. Algol has two major continents and a few islands. The largest continent, Shalom, contains the planetary capital of Algol City, that was founded on the coast due to the abundance of fish found in the surrounding waters. Durant, the other continent, has extremely rich soil that allows the production of a wide range of agricultural products. The largest city, Kollasa, is home to the planet‘s massive food-processing plants. Algol‘s food exports are transported to Algol City for shipment off world through its large spaceport. Algol produced enough food to trade with and supply all the worlds within one jump.
 
@@ -115,23 +124,28 @@ planet:
       Unlike other nearby worlds, Algol‘s food production has kept the horrors of war from visiting it. When the Word of Blake launched the Jihad, the Federated Suns troops on planet surrendered in order to protect the planet and its people from the threat of weapons of mass destruction. The AFFS troops were interned in a makeshift prison in the AFFS depot at Groffer's Toll. The Blakist commander ordered the destruction of the depot and the deaths of all but a handful of AFFS troops after they attempted to escape.
     landmass:
       - name:
-          source: FedCom Civil War, pg. 187
+          source: FCCW
           value: Durant
+          page: 187
       - name:
-          source: FedCom Civil War, pg. 187
+          source: FCCW
           value: Shalom
+          page: 187
         capital:
-          source: FedCom Civil War, pg. 187
+          source: FCCW
           value: Algol City
+          page: 187
     satellite:
       - name:
-          source: FedCom Civil War, pg. 187
+          source: FCCW
           value: Hargrove
+          page: 187
         size: medium
         icon: oddmoon3
       - name:
-          source: FedCom Civil War, pg. 187
+          source: FCCW
           value: Sung
+          page: 187
         size: large
         icon: rock7
     event:
@@ -175,12 +189,24 @@ planet:
             - SSUP
       - date: '2360-01-01'
         population: 226287857.0
+      - date: '2366-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - TGU
       - date: '2366-10-10'
         faction:
           source: canon
           value:
             - TGU
       - date: '2367-05-11'
+        # administration: CC | Tikonov Commonality | Region 4
+        # administration: CC | Tikonov Commonality | Region 4
+        # administration: CC | Tikonov Commonality | Region 4
+        # administration: CC | Tikonov Commonality | Region 4
+        # administration: CC | Tikonov Commonality | Region 4
+        # administration: CC | Tikonov Commonality | Region 4
         faction:
           source: canon
           value:
@@ -338,15 +364,43 @@ planet:
           value:
             - FS
       - date: '3030-01-01'
+        # administration: LA | Sarna March | Tikonov Operational Area
+        # administration: LA | Sarna March | Tikonov Operational Area
+        # administration: LA | Sarna March | Tikonov Operational Area
+        # administration: LA | Sarna March | Tikonov Operational Area
+        # administration: LA | Sarna March | Tikonov Operational Area
+        # administration: LA | Sarna March | Tikonov Operational Area
         population: 1225268715.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '3030-02-28'
         faction:
           source: canon
           value:
             - LA
       - date: '3040-01-01'
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
         population: 1238078002.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
         faction:
           source: canon
           value:
@@ -365,12 +419,42 @@ planet:
           value:
             - FC
             - LA
+      - date: '3063-01-01'
+        # administration: FC | Capellan March | Kathil Operational Area
+        # administration: FC | Capellan March | Kathil Operational Area
+        # administration: FC | Capellan March | Kathil Operational Area
+        # administration: FC | Capellan March | Kathil Operational Area
+        # administration: FC | Capellan March | Kathil Operational Area
+        # administration: FC | Capellan March | Kathil Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3063-10-20'
         faction:
           source: canon
           value:
             - FC
+      - date: '3067-01-01'
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FS
       - date: '3067-04-20'
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
         faction:
           source: canon
           value:
@@ -395,7 +479,25 @@ planet:
             - Stone
       - date: '3080-01-01'
         population: 1303509417.0
+      - date: '3081-01-01'
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ROS
       - date: '3081-02-27'
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
         faction:
           source: canon
           value:
@@ -416,6 +518,12 @@ planet:
         hpg:
           source: canon
           value: X
+      - date: '3135-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3135-10-01'
         faction:
           source: canon
@@ -423,7 +531,25 @@ planet:
             - IND
       - date: '3140-01-01'
         population: 1354266770.0
+      - date: '3145-01-01'
+        # administration: CC | Tikonov Commonality | Region 7
+        # administration: CC | Tikonov Commonality | Region 7
+        # administration: CC | Tikonov Commonality | Region 7
+        # administration: CC | Tikonov Commonality | Region 7
+        # administration: CC | Tikonov Commonality | Region 7
+        # administration: CC | Tikonov Commonality | Region 7
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CC
       - date: '3145-01-15'
+        # administration: CC | Tikonov Commonality | Region 11
+        # administration: CC | Tikonov Commonality | Region 11
+        # administration: CC | Tikonov Commonality | Region 11
+        # administration: CC | Tikonov Commonality | Region 11
+        # administration: CC | Tikonov Commonality | Region 11
+        # administration: CC | Tikonov Commonality | Region 11
         faction:
           source: canon
           value:

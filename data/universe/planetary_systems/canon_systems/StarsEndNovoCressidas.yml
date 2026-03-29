@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Star's End (Novo Cressidas)
-sucsId: 2401
+sucsId: 2402
 xcood: -83.244
 ycood: 432.154
 spectralType:
@@ -66,11 +66,7 @@ planet:
     lifeForm:
       source: canon
       value: NONE
-    desc: Star’s End is an inhospitable asteroid field that was originally settled
-      by miners looking to tap into the rich sources of germanium and other precious
-      metals that were scattered throughout the asteroids. Ownership of these rich
-      sources of rare metals was hotly contested in the early days of the Rim World
-      Republic and Lyran Commonwealth but ultimately the Republic ended up in control.
+    desc: Star’s End is an inhospitable asteroid field that was originally settled by miners looking to tap into the rich sources of germanium and other precious metals that were scattered throughout the asteroids. Ownership of these rich sources of rare metals was hotly contested in the early days of the Rim World Republic and Lyran Commonwealth but ultimately the Republic ended up in control.
     landmass:
       - name: O'Neilland
         capital: Fortuna's Harbour City
@@ -135,6 +131,12 @@ planet:
       - date: '2340-01-01'
         population: 67719.0
       - date: '2341-12-28'
+        # administration: RWR | Apollo Province
+        # administration: RWR | Apollo Province
+        # administration: RWR | Apollo Province
+        # administration: RWR | Apollo Province
+        # administration: RWR | Apollo Province
+        # administration: RWR | Apollo Province
         faction:
           source: canon
           value:
@@ -309,6 +311,11 @@ planet:
             - CW
       - date: '3050-01-01'
         population: 53225.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3060-01-01'
         population: 53970.0
       - date: '3070-01-01'
@@ -330,6 +337,12 @@ planet:
           value: 55000.0
       - date: '3080-01-01'
         population: 55066.0
+      - date: '3081-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3090-01-01'
         population: 55764.0
       - date: '3100-01-01'
@@ -347,6 +360,11 @@ planet:
         population: 57119.0
       - date: '3130-01-01'
         population: 57624.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3140-01-01'
         population: 58647.0
       - date: '3145-01-01'

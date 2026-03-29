@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Mackenzie
-sucsId: 1553
+sucsId: 1554
 xcood: -275.547
 ycood: -207.893
 spectralType:
@@ -148,13 +148,7 @@ planet:
     lifeForm:
       source: canon
       value: REPTILE
-    desc: Mackenzie is a relatively comfortable planet with a similar atmosphere and
-      gravity to Earth, as well as a warm-temperate climate that allows the planet
-      to produce enough food to feed its population. Mackenzie stands out by having
-      abundant natural resources and behind home to a strong industrial base. The
-      most vital manufacturer in the Mackenize system is Brigadier Corporation whose
-      facilities orbit the planet and are capable of producing the massive Behemoth
-      class DropShip as well as repairing and refitting JumpShips.
+    desc: Mackenzie is a relatively comfortable planet with a similar atmosphere and gravity to Earth, as well as a warm-temperate climate that allows the planet to produce enough food to feed its population. Mackenzie stands out by having abundant natural resources and behind home to a strong industrial base. The most vital manufacturer in the Mackenize system is Brigadier Corporation whose facilities orbit the planet and are capable of producing the massive Behemoth class DropShip as well as repairing and refitting JumpShips.
     landmass:
       - name:
           source: canon
@@ -202,6 +196,12 @@ planet:
             - FWL
       - date: '2360-01-01'
         population: 206113055.0
+      - date: '2366-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '2370-01-01'
         population: 303140870.0
       - date: '2380-01-01'
@@ -245,6 +245,18 @@ planet:
         population: 3144566391.0
       - date: '2570-01-01'
         population: 3172974317.0
+      - date: '2571-01-01'
+        # administration: FWL | Principality of Regulus
+        # administration: FWL | Principality of Regulus
+        # administration: FWL | Principality of Regulus
+        # administration: FWL | Principality of Regulus
+        # administration: FWL | Principality of Regulus
+        # administration: FWL | Principality of Regulus
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FWL
       - date: '2580-01-01'
         population: 3187902702.0
       - date: '2590-01-01'
@@ -363,6 +375,12 @@ planet:
         population: 2679388509.0
       - date: '3080-01-01'
         population: 2711734861.0
+      - date: '3081-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3081-01-27'
         faction:
           source: canon
@@ -386,6 +404,12 @@ planet:
           value: X
       - date: '3140-01-01'
         population: 2862194391.0
+      - date: '3145-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FWL
       - date: '3145-08-06'
         faction:
           source: canon

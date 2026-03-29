@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,15 +16,17 @@
 # affiliated with Microsoft.
 
 id: Dormandaine
-sucsId: 2897
+sucsId: 2898
 xcood: 462.322
 ycood: 100.73
 spectralType:
-  source: Periphery (1ed), pg. 122
+  source: Per1e
   value: F4V
+  page: 122
 primarySlot:
-  source: Periphery (1ed), pg. 122
+  source: Per1e
   value: 5
+  page: 122
 planet:
   - name: Royersford
     type: GIANT_TERRESTRIAL
@@ -97,8 +99,9 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 2.24
     sysPos:
-      source: Periphery (1ed), pg. 122
+      source: Per1e
       value: 5
+      page: 122
     icon: green32
     pressure: STANDARD
     atmosphere: BREATHABLE
@@ -111,8 +114,9 @@ planet:
     temperature: 21
     water: 50
     lifeForm:
-      source: Periphery (1ed), pg. 122
+      source: Per1e
       value: MAMMAL
+      page: 122
     desc: No description available.
     smallMoons: 6
     landmass:
@@ -123,7 +127,25 @@ planet:
       - name: Andenes
       - name: Fort Mea
     event:
+      - date: '3025-01-01'
+        # administration: OA | Ramora Province
+        # administration: OA | Ramora Province
+        # administration: OA | Ramora Province
+        # administration: OA | Ramora Province
+        # administration: OA | Ramora Province
+        # administration: OA | Ramora Province
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - OA
       - date: '3025-03-06'
+        # administration: OA | Ramora Province
+        # administration: OA | Ramora Province
+        # administration: OA | Ramora Province
+        # administration: OA | Ramora Province
+        # administration: OA | Ramora Province
+        # administration: OA | Ramora Province
         faction:
           source: canon
           value:

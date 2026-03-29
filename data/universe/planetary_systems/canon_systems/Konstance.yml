@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: Konstance
-sucsId: 1395
+sucsId: 1396
 xcood: -20.166
 ycood: 96.371
 spectralType:
-  source: MWDA world profiles
+  source: DA:RW
   value: K1IV
 primarySlot:
-  source: MWDA world profiles
+  source: DA:RW
   value: 4
 event:
   - date: '2386-01-31'
@@ -94,31 +94,31 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 1.28
     sysPos:
-      source: MWDA world profiles
+      source: DA:RW
       value: 4
     icon: green31
     pressure:
-      source: MWDA world profiles
+      source: DA:RW
       value: STANDARD
     atmosphere:
-      source: MWDA world profiles
+      source: DA:RW
       value: TAINTED_POISON
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: MWDA world profiles
+      source: DA:RW
       value: 0.64
     diameter: 10236
     density: 4.393963490227
     dayLength: 29
     yearLength: 1.7
     temperature:
-      source: MWDA world profiles
+      source: DA:RW
       value: 62
     water:
-      source: MWDA world profiles
+      source: DA:RW
       value: 74
     lifeForm:
-      source: MWDA world profiles
+      source: DA:RW
       value: REPTILE
     desc: |-
       Brutally hot and muggy much of the time, Konstance suffers from an overabundance of carbon dioxide that casts a haze over the planet and traps heat from its weak, K-class sun. Once necessary to give life on this world a fighting chance, this environmental taint, already present to a much lesser degree when colonists first set foot here almost a thousand years ago, has been aggravated by centuries of human development. Despite efforts to control the greenhouse-effect problem in its infancy, the presence of large underground pockets of petrochemicals and natural gas inevitably led to a series of drilling and refining industries that helped develop Konstance, but over time added to the atmospheric pollution. Konstance thus continued to grow hotter over the centuries, to the point where the effects of this global warming have forced the local population to move into the cooler polar reaches of the planet.
@@ -128,30 +128,30 @@ planet:
       The capital city of Konstance, Ishtalia, is located on the southern polar continent of Perragea, and also doubles as the southern hemisphere‘s largest spaceport city. Its counterpart on the north polar continent of Epigaus, Lazarus Bay, also boasts the planet‘s largest submarine seaport, which ferries over half the harsh-environment workforce for local fuel producers like Axis PetroChem Unlimited.
     landmass:
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Epigaus
         capital:
           source: canon
           value: Lazarus Bay
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Perragea
         capital:
-          source: MWDA world profiles
+          source: DA:RW
           value: Ishtalia
     satellite:
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Drezix
         size: large
         icon: rock2
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Esther
         size: large
         icon: rock15
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Volaria
         size: medium
         icon: rock3
@@ -174,6 +174,12 @@ planet:
       - date: '2340-01-01'
         population: 16025012.0
       - date: '2341-04-18'
+        # administration: LA | Federation of Skye
+        # administration: LA | Federation of Skye
+        # administration: LA | Federation of Skye
+        # administration: LA | Federation of Skye
+        # administration: LA | Federation of Skye
+        # administration: LA | Federation of Skye
         faction:
           source: canon
           value:
@@ -302,6 +308,12 @@ planet:
       - date: '2891-01-01'
         socioIndustrial: F-C-C-C-F
       - date: '2900-06-21'
+        # administration: DC | Dieron Military District | Kessel Prefecture
+        # administration: DC | Dieron Military District | Kessel Prefecture
+        # administration: DC | Dieron Military District | Kessel Prefecture
+        # administration: DC | Dieron Military District | Kessel Prefecture
+        # administration: DC | Dieron Military District | Kessel Prefecture
+        # administration: DC | Dieron Military District | Kessel Prefecture
         faction:
           source: canon
           value:
@@ -347,7 +359,25 @@ planet:
         population: 4765886965.0
       - date: '3080-01-01'
         population: 4840817743.0
+      - date: '3081-01-01'
+        # administration: ROS | Prefecture I
+        # administration: ROS | Prefecture I
+        # administration: ROS | Prefecture I
+        # administration: ROS | Prefecture I
+        # administration: ROS | Prefecture I
+        # administration: ROS | Prefecture I
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ROS
       - date: '3081-01-28'
+        # administration: ROS | Prefecture I
+        # administration: ROS | Prefecture I
+        # administration: ROS | Prefecture I
+        # administration: ROS | Prefecture I
+        # administration: ROS | Prefecture I
+        # administration: ROS | Prefecture I
         faction:
           source: canon
           value:
@@ -368,6 +398,12 @@ planet:
         population: 5092066099.0
       - date: '3132-08-07'
         hpg: X
+      - date: '3135-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3135-10-01'
         faction:
           source: canon
@@ -375,7 +411,25 @@ planet:
             - IND
       - date: '3140-01-01'
         population: 5129887153.0
+      - date: '3145-01-01'
+        # administration: RD | Region 3 | Vega Protectorate
+        # administration: RD | Region 3 | Vega Protectorate
+        # administration: RD | Region 3 | Vega Protectorate
+        # administration: RD | Region 3 | Vega Protectorate
+        # administration: RD | Region 3 | Vega Protectorate
+        # administration: RD | Region 3 | Vega Protectorate
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - RD
       - date: '3145-02-23'
+        # administration: RD | Region 3 | Vega Protectorate
+        # administration: RD | Region 3 | Vega Protectorate
+        # administration: RD | Region 3 | Vega Protectorate
+        # administration: RD | Region 3 | Vega Protectorate
+        # administration: RD | Region 3 | Vega Protectorate
+        # administration: RD | Region 3 | Vega Protectorate
         faction:
           source: canon
           value:

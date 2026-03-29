@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,15 +16,17 @@
 # affiliated with Microsoft.
 
 id: Kestrel
-sucsId: 1336
+sucsId: 1337
 xcood: 268.309
 ycood: -46.829
 spectralType:
-  source: 'Handbook: House Davion, pg. 94'
+  source: 'HB:HD'
   value: G8IV
+  page: 94
 primarySlot:
-  source: 'Handbook: House Davion, pg. 94'
+  source: 'HB:HD'
   value: 3
+  page: 94
 event:
   - date: '2395-09-17'
     zenithCharge: yes
@@ -67,42 +69,40 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 1.28
     sysPos:
-      source: 'Handbook: House Davion, pg. 94'
+      source: 'HB:HD'
       value: 3
+      page: 94
     icon: green53
     pressure:
-      source: 'Handbook: House Davion, pg. 94'
+      source: 'HB:HD'
       value: STANDARD
+      page: 94
     atmosphere:
-      source: 'Handbook: House Davion, pg. 94'
+      source: 'HB:HD'
       value: BREATHABLE
+      page: 94
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'Handbook: House Davion, pg. 94'
+      source: 'HB:HD'
       value: 1.05
+      page: 94
     diameter: 15063
     density: 4.898698119926
     dayLength: 17
     yearLength: 1.7
     temperature:
-      source: 'Handbook: House Davion, pg. 94'
+      source: 'HB:HD'
       value: 33
+      page: 94
     water:
-      source: 'Handbook: House Davion, pg. 94'
+      source: 'HB:HD'
       value: 64
+      page: 94
     lifeForm:
-      source: 'Handbook: House Davion, pg. 94'
+      source: 'HB:HD'
       value: BIRD
-    desc: Kestrel is a bountiful world with a comfortable climate, clean air, and
-      abundant natural resources. The planet is considered one of the Federated Suns
-      garden worlds and supports a large population which primarily live in the planet's
-      many large cities. However, despite the numerous cities there are also large
-      plains and mostly untouched wilderness covering much of the planet. To reduce
-      pollution on the planet, all industry in the system is located on the planet’s
-      two moons, both of which have been terraformed into comfortable human habitats.
-      While Kestrel is a major manufacturer and possesses a high level of technology,
-      the planet is also a breadbasket world with large tracts of arable land and
-      high levels of food exports.
+      page: 94
+    desc: Kestrel is a bountiful world with a comfortable climate, clean air, and abundant natural resources. The planet is considered one of the Federated Suns garden worlds and supports a large population which primarily live in the planet's many large cities. However, despite the numerous cities there are also large plains and mostly untouched wilderness covering much of the planet. To reduce pollution on the planet, all industry in the system is located on the planet’s two moons, both of which have been terraformed into comfortable human habitats. While Kestrel is a major manufacturer and possesses a high level of technology, the planet is also a breadbasket world with large tracts of arable land and high levels of food exports.
     landmass:
       - name: Huiracocha
         capital: North Duffield
@@ -110,13 +110,15 @@ planet:
       - name: Catequil's Retreat
     satellite:
       - name:
-          source: 'Handbook: House Davion, pg. 94'
+          source: 'HB:HD'
           value: Ariel
+          page: 94
         size: large
         icon: rock2
       - name:
-          source: 'Handbook: House Davion, pg. 94'
+          source: 'HB:HD'
           value: Persephone
+          page: 94
         size: medium
         icon: rock1
     event:
@@ -178,6 +180,12 @@ planet:
         population: 1590940939.0
       - date: '2340-01-01'
         population: 1885725972.0
+      - date: '2341-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '2350-01-01'
         population: 2201135431.0
       - date: '2360-01-01'
@@ -227,7 +235,25 @@ planet:
         population: 6405201543.0
       - date: '2570-01-01'
         population: 6493585322.0
+      - date: '2571-01-01'
+        # administration: FS | Crucis March | Markesan Operational Area
+        # administration: FS | Crucis March | Markesan Operational Area
+        # administration: FS | Crucis March | Markesan Operational Area
+        # administration: FS | Crucis March | Markesan Operational Area
+        # administration: FS | Crucis March | Markesan Operational Area
+        # administration: FS | Crucis March | Markesan Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FS
       - date: '2571-08-31'
+        # administration: FS | Crucis March | Markesan Operational Area
+        # administration: FS | Crucis March | Markesan Operational Area
+        # administration: FS | Crucis March | Markesan Operational Area
+        # administration: FS | Crucis March | Markesan Operational Area
+        # administration: FS | Crucis March | Markesan Operational Area
+        # administration: FS | Crucis March | Markesan Operational Area
         faction:
           source: canon
           value:
@@ -293,7 +319,25 @@ planet:
         population: 6695488511.0
       - date: '2820-01-01'
         population: 6657619785.0
+      - date: '2821-01-01'
+        # administration: FS | Crucis March | Markesan Operational Area
+        # administration: FS | Crucis March | Markesan Operational Area
+        # administration: FS | Crucis March | Markesan Operational Area
+        # administration: FS | Crucis March | Markesan Operational Area
+        # administration: FS | Crucis March | Markesan Operational Area
+        # administration: FS | Crucis March | Markesan Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FS
       - date: '2822-05-13'
+        # administration: FS | Crucis March | Markesan Operational Area
+        # administration: FS | Crucis March | Markesan Operational Area
+        # administration: FS | Crucis March | Markesan Operational Area
+        # administration: FS | Crucis March | Markesan Operational Area
+        # administration: FS | Crucis March | Markesan Operational Area
+        # administration: FS | Crucis March | Markesan Operational Area
         faction:
           source: canon
           value:
@@ -346,8 +390,25 @@ planet:
         population: 6586077963.0
         socioIndustrial: B-C-B-C-B
       - date: '3040-01-01'
+        # administration: FC | Crucis March | Markesan Operational Area
+        # administration: FC | Crucis March | Markesan Operational Area
+        # administration: FC | Crucis March | Markesan Operational Area
+        # administration: FC | Crucis March | Markesan Operational Area
+        # administration: FC | Crucis March | Markesan Operational Area
+        # administration: FC | Crucis March | Markesan Operational Area
         population: 6655596114.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
+        # administration: FC | Crucis March | Markesan Operational Area
+        # administration: FC | Crucis March | Markesan Operational Area
+        # administration: FC | Crucis March | Markesan Operational Area
+        # administration: FC | Crucis March | Markesan Operational Area
+        # administration: FC | Crucis March | Markesan Operational Area
+        # administration: FC | Crucis March | Markesan Operational Area
         faction:
           source: canon
           value:
@@ -361,10 +422,27 @@ planet:
       - date: '3060-01-01'
         population: 6755506983.0
       - date: '3067-01-01'
+        # administration: FS | Crucis March | Markesan Operational Area
+        # administration: FS | Crucis March | Markesan Operational Area
+        # administration: FS | Crucis March | Markesan Operational Area
+        # administration: FS | Crucis March | Markesan Operational Area
+        # administration: FS | Crucis March | Markesan Operational Area
+        # administration: FS | Crucis March | Markesan Operational Area
         population:
           source: canon
           value: 6788690200.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FS
       - date: '3067-04-20'
+        # administration: FS | Crucis March | Markesan Operational Area
+        # administration: FS | Crucis March | Markesan Operational Area
+        # administration: FS | Crucis March | Markesan Operational Area
+        # administration: FS | Crucis March | Markesan Operational Area
+        # administration: FS | Crucis March | Markesan Operational Area
+        # administration: FS | Crucis March | Markesan Operational Area
         faction:
           source: canon
           value:

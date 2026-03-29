@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Fjaldr
-sucsId: 877
+sucsId: 878
 xcood: 88.314
 ycood: -404.57
 spectralType: F8V
@@ -83,6 +83,12 @@ planet:
       - name: Prè Saint Didier D
     event:
       - date: '2686-12-07'
+        # administration: CC | Sian Commonality | Region 14
+        # administration: CC | Sian Commonality | Region 14
+        # administration: CC | Sian Commonality | Region 14
+        # administration: CC | Sian Commonality | Region 14
+        # administration: CC | Sian Commonality | Region 14
+        # administration: CC | Sian Commonality | Region 14
         faction:
           source: canon
           value:
@@ -128,6 +134,18 @@ planet:
             - IND
       - date: '2820-01-01'
         population: 2457455.0
+      - date: '2822-01-01'
+        # administration: CC | Sian Commonality | Region 15
+        # administration: CC | Sian Commonality | Region 15
+        # administration: CC | Sian Commonality | Region 15
+        # administration: CC | Sian Commonality | Region 15
+        # administration: CC | Sian Commonality | Region 15
+        # administration: CC | Sian Commonality | Region 15
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CC
       - date: '2830-01-01'
         population: 2065657.0
       - date: '2840-01-01'
@@ -160,6 +178,12 @@ planet:
           source: This is the earliest the directorate could have taken over
           value:
             - ARD
+      - date: '3025-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ARC
       - date: '3025-01-25'
         faction:
           source: assumption
@@ -177,11 +201,18 @@ planet:
           value:
             - ARC
         population: 1187434.0
+      - date: '3030-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ABN
       - date: '3151-01-01'
         faction:
           source: sucs
           value:
             - ABN
+    desc: Originally a Capellan colony world lost in the Succession Wars. A bleak ice planet swept constantly by howling winds and blowing snow. The original Confederation colony was largely underground, built into the sides of deep kilometer-wide crevasses breaching the ice. Fjaldr survives thanks to rich mineral resources and its position as a well-connected hub world near the Inner Sphere.
   - name: Vaiano
     type: TERRESTRIAL
     orbitalDist: 1.92

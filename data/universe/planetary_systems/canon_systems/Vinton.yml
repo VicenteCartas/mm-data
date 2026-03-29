@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,15 +16,17 @@
 # affiliated with Microsoft.
 
 id: Vinton
-sucsId: 2968
+sucsId: 2969
 xcood: 7.675
 ycood: 1912.177
 spectralType:
-  source: Warriors of Kerensky, pg. 112
+  source: WoK
   value: G8VI
+  page: 112
 primarySlot:
-  source: Warriors of Kerensky, pg. 112
+  source: WoK
   value: 3
+  page: 112
 event:
   - date: '2803-03-07'
     nadirCharge: yes
@@ -75,32 +77,39 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 1.28
     sysPos:
-      source: Warriors of Kerensky, pg. 112
+      source: WoK
       value: 3
+      page: 112
     icon: green11
     pressure:
-      source: Warriors of Kerensky, pg. 112
+      source: WoK
       value: STANDARD
+      page: 112
     atmosphere:
-      source: Warriors of Kerensky, pg. 112
+      source: WoK
       value: BREATHABLE
+      page: 112
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: Warriors of Kerensky, pg. 112
+      source: WoK
       value: 1.1
+      page: 112
     diameter: 13719
     density: 5.634674622235
     dayLength: 23
     yearLength: 1.7
     temperature:
-      source: Warriors of Kerensky, pg. 112
+      source: WoK
       value: 30
+      page: 112
     water:
-      source: Warriors of Kerensky, pg. 112
+      source: WoK
       value: 60
+      page: 112
     lifeForm:
-      source: Warriors of Kerensky, pg. 112
+      source: WoK
       value: REPTILE
+      page: 112
     desc: No description available.
     landmass:
       - name: Ellenburg
@@ -125,6 +134,12 @@ planet:
         population: 35024.0
       - date: '2820-01-01'
         population: 119732.0
+      - date: '2821-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CLAN
       - date: '2821-05-17'
         faction:
           source: canon
@@ -199,6 +214,12 @@ planet:
           value:
             - CDS
             - CCO
+      - date: '3075-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ABN
       - date: '3151-01-01'
         faction:
           source: sucs

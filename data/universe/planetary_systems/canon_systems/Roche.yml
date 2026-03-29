@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,15 +16,17 @@
 # affiliated with Microsoft.
 
 id: Roche
-sucsId: 2958
+sucsId: 2959
 xcood: 67.865
 ycood: 1869.935
 spectralType:
-  source: Warriors of Kerensky, pg. 112
+  source: WoK
   value: F2III
+  page: 112
 primarySlot:
-  source: Warriors of Kerensky, pg. 112
+  source: WoK
   value: 1
+  page: 112
 event:
   - date: '2803-09-18'
     zenithCharge: yes
@@ -37,32 +39,39 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 4.2
     sysPos:
-      source: Warriors of Kerensky, pg. 112
+      source: WoK
       value: 1
+      page: 112
     icon: green55
     pressure:
-      source: Warriors of Kerensky, pg. 112
+      source: WoK
       value: STANDARD
+      page: 112
     atmosphere:
-      source: Warriors of Kerensky, pg. 112
+      source: WoK
       value: BREATHABLE
+      page: 112
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: Warriors of Kerensky, pg. 112
+      source: WoK
       value: 0.8
+      page: 112
     diameter: 10312
     density: 5.451915948689
     dayLength: 19
     yearLength: 8.7
     temperature:
-      source: Warriors of Kerensky, pg. 112
+      source: WoK
       value: 40
+      page: 112
     water:
-      source: Warriors of Kerensky, pg. 112
+      source: WoK
       value: 50
+      page: 112
     lifeForm:
-      source: Warriors of Kerensky, pg. 112
+      source: WoK
       value: REPTILE
+      page: 112
     desc: No description available.
     landmass:
       - name: Stalham
@@ -84,6 +93,12 @@ planet:
         population: 36307.0
       - date: '2820-01-01'
         population: 129912.0
+      - date: '2821-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CLAN
       - date: '2821-06-07'
         faction:
           source: canon
@@ -103,6 +118,12 @@ planet:
         population: 1255980.0
       - date: '2860-01-01'
         population: 1935444.0
+      - date: '2864-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CLAN
       - date: '2870-01-01'
         population: 2686262.0
       - date: '2880-01-01'
@@ -152,6 +173,12 @@ planet:
             - CGS
       - date: '3060-01-01'
         population: 8002646.0
+      - date: '3063-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CLAN
       - date: '3070-01-01'
         population: 8014413.0
       - date: '3072-04-01'
@@ -160,11 +187,29 @@ planet:
           value:
             - CGS
             - CCO
+      - date: '3075-01-01'
+        # administration: CGS | National Capital
+        # administration: CGS | National Capital
+        # administration: CGS | National Capital
+        # administration: CGS | National Capital
+        # administration: CGS | National Capital
+        # administration: CGS | National Capital
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CGS
       - date: '3075-12-06'
         faction:
           source: canon
           value:
             - CGS
+      - date: '3079-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CCC/CGS
       - date: '3079-10-08'
         faction:
           source: canon
@@ -172,6 +217,12 @@ planet:
             - CGS
             - CCC
       - date: '3079-10-24'
+        # administration: CCC | National Capital
+        # administration: CCC | National Capital
+        # administration: CCC | National Capital
+        # administration: CCC | National Capital
+        # administration: CCC | National Capital
+        # administration: CCC | National Capital
         faction:
           source: canon
           value:

@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Kirkenlaard
-sucsId: 1362
+sucsId: 1363
 xcood: -159.978
 ycood: -121.76
 spectralType: M4V
@@ -63,6 +63,12 @@ planet:
       - date: '2270-01-01'
         population: 1537242.0
       - date: '2271-06-01'
+        # administration: FWL | Marik Commonwealth
+        # administration: FWL | Marik Commonwealth
+        # administration: FWL | Marik Commonwealth
+        # administration: FWL | Marik Commonwealth
+        # administration: FWL | Marik Commonwealth
+        # administration: FWL | Marik Commonwealth
         faction:
           source: canon
           value:
@@ -245,6 +251,12 @@ planet:
         population: 763405100.0
       - date: '3070-01-01'
         population: 772080501.0
+      - date: '3079-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - MCM
       - date: '3079-07-30'
         faction:
           source: canon
@@ -252,6 +264,18 @@ planet:
             - MSC
       - date: '3080-01-01'
         population: 777037662.0
+      - date: '3081-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - MCM
+      - date: '3085-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - MSC
       - date: '3090-01-01'
         population: 780932580.0
       - date: '3097-01-01'
@@ -266,6 +290,12 @@ planet:
         population: 815082081.0
       - date: '3140-01-01'
         population: 823438463.0
+      - date: '3145-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CWE
       - date: '3145-11-05'
         faction:
           source: canon

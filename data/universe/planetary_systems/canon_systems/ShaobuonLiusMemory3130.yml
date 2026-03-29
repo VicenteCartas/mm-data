@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Shaobuon (Liu's Memory 3130+)
-sucsId: 2291
+sucsId: 2292
 xcood: -10.824
 ycood: -416.351
 spectralType: K3V
@@ -51,6 +51,12 @@ planet:
       - name: Nova Kröslin
     event:
       - date: '2731-01-05'
+        # administration: CC | Sian Commonality | Region 13
+        # administration: CC | Sian Commonality | Region 13
+        # administration: CC | Sian Commonality | Region 13
+        # administration: CC | Sian Commonality | Region 13
+        # administration: CC | Sian Commonality | Region 13
+        # administration: CC | Sian Commonality | Region 13
         faction:
           source: canon
           value:
@@ -87,6 +93,18 @@ planet:
         hpg: X
         population: 0.0
         socioIndustrial: X-X-X-X-X
+      - date: '3135-01-01'
+        # administration: CC | Victoria Commonality | Region 6
+        # administration: CC | Victoria Commonality | Region 6
+        # administration: CC | Victoria Commonality | Region 6
+        # administration: CC | Victoria Commonality | Region 6
+        # administration: CC | Victoria Commonality | Region 6
+        # administration: CC | Victoria Commonality | Region 6
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CC
       - date: '3151-01-01'
         faction:
           source: sucs
@@ -95,8 +113,19 @@ planet:
       - date: '2108-12-05'
         name: Shaobuon
       - date: '3130-01-01'
+        # administration: CC | Victoria Commonality | Region 6
+        # administration: CC | Victoria Commonality | Region 6
+        # administration: CC | Victoria Commonality | Region 6
+        # administration: CC | Victoria Commonality | Region 6
+        # administration: CC | Victoria Commonality | Region 6
+        # administration: CC | Victoria Commonality | Region 6
         name: Liu's Memory
         message: Shaobuon renamed to Liu's Memory
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CC
   - name: López
     type: TERRESTRIAL
     orbitalDist: 0.49

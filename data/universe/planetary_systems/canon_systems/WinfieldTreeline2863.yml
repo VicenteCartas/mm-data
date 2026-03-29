@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: Winfield (Treeline 2863-)
-sucsId: 2577
+sucsId: 2578
 xcood: -111.711
 ycood: 405.264
 spectralType:
   source: canon
   value: G2V
 primarySlot:
-  source: House Steiner
+  source: HSSB
   value: 5
 event:
   - date: '2398-01-04'
@@ -107,7 +107,7 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 1.0
     sysPos:
-      source: House Steiner
+      source: HSSB
       value: 5
     icon: green42
     pressure: STANDARD
@@ -121,25 +121,32 @@ planet:
     temperature: 38
     water: 43
     lifeForm:
-      source: House Steiner
+      source: HSSB
       value: PLANT
-    desc: Winfield is one of the top producers of agriculture in the entire Inner
-      Sphere. The planet has a warm mild climate with an exceptionally long growing
-      period and two small, shallow oceans that teem with fish and other aquatic life.
-      Winfield is a small planet, with very little industry. In 3025, Nicholas Electronics
-      negotiated a deal to set up a small factory in the capital city, the first real
-      manufacturer on the planet.
+    desc: Winfield is one of the top producers of agriculture in the entire Inner Sphere. The planet has a warm mild climate with an exceptionally long growing period and two small, shallow oceans that teem with fish and other aquatic life. Winfield is a small planet, with very little industry. In 3025, Nicholas Electronics negotiated a deal to set up a small factory in the capital city, the first real manufacturer on the planet.
     landmass:
       - name: McGinnity's Nest
         capital:
-          source: House Steiner
+          source: HSSB
           value: Felsonville
       - name: Proctor
       - name: Freehold
       - name: Farrell's Harbour
       - name: Suvrata
     event:
+      - date: '2341-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - RWR
       - date: '2341-02-07'
+        # administration: RWR | Apollo Province
+        # administration: RWR | Apollo Province
+        # administration: RWR | Apollo Province
+        # administration: RWR | Apollo Province
+        # administration: RWR | Apollo Province
+        # administration: RWR | Apollo Province
         faction:
           source: canon
           value:
@@ -242,6 +249,12 @@ planet:
       - date: '2770-01-01'
         population: 172693261.0
       - date: '2779-01-22'
+        # administration: LA | Tamar Pact | Trellshire
+        # administration: LA | Tamar Pact | Trellshire
+        # administration: LA | Tamar Pact | Trellshire
+        # administration: LA | Tamar Pact | Trellshire
+        # administration: LA | Tamar Pact | Trellshire
+        # administration: LA | Tamar Pact | Trellshire
         faction:
           source: canon
           value:
@@ -307,8 +320,25 @@ planet:
       - date: '3036-01-01'
         socioIndustrial: D-D-B-F-D
       - date: '3040-01-01'
+        # administration: FC | Tamar March | Blackjack Operational Area
+        # administration: FC | Tamar March | Blackjack Operational Area
+        # administration: FC | Tamar March | Blackjack Operational Area
+        # administration: FC | Tamar March | Blackjack Operational Area
+        # administration: FC | Tamar March | Blackjack Operational Area
+        # administration: FC | Tamar March | Blackjack Operational Area
         population: 156479431.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
+        # administration: FC | Tamar March | Blackjack Operational Area
+        # administration: FC | Tamar March | Blackjack Operational Area
+        # administration: FC | Tamar March | Blackjack Operational Area
+        # administration: FC | Tamar March | Blackjack Operational Area
+        # administration: FC | Tamar March | Blackjack Operational Area
+        # administration: FC | Tamar March | Blackjack Operational Area
         faction:
           source: canon
           value:
@@ -317,6 +347,11 @@ planet:
         socioIndustrial: C-D-A-D-D
       - date: '3050-01-01'
         population: 157484111.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CJF
       - date: '3050-03-09'
         faction:
           source: canon

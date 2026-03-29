@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Novgorod
-sucsId: 3002
+sucsId: 3166
 xcood: -760.155
 ycood: 940.824
 spectralType: K7V
@@ -51,6 +51,12 @@ planet:
       - name: Severo-Vostochnyy Administrativnyy Okrug
     event:
       - date: '2891-11-17'
+        # administration: HL | Region 1
+        # administration: HL | Region 1
+        # administration: HL | Region 1
+        # administration: HL | Region 1
+        # administration: HL | Region 1
+        # administration: HL | Region 1
         faction:
           source: canon
           value:
@@ -87,6 +93,12 @@ planet:
       - date: '3020-01-01'
         population: 47519.0
       - date: '3025-11-09'
+        # administration: HL | Region 1
+        # administration: HL | Region 1
+        # administration: HL | Region 1
+        # administration: HL | Region 1
+        # administration: HL | Region 1
+        # administration: HL | Region 1
         faction:
           source: canon
           value:
@@ -126,6 +138,11 @@ planet:
             - CEI
       - date: '3145-01-01'
         population: 50979.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - SE
   - name: Urakchiev's World
     type: ICE_GIANT
     orbitalDist: 0.42

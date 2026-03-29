@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,15 +16,17 @@
 # affiliated with Microsoft.
 
 id: Turin
-sucsId: 2601
+sucsId: 2602
 xcood: 21.186
 ycood: -367.858
 spectralType:
-  source: 'Handbook: House Liao, pg. 87'
+  source: 'HB:HL'
   value: G2V
+  page: 87
 primarySlot:
-  source: 'Handbook: House Liao, pg. 87'
+  source: 'HB:HL'
   value: 5
+  page: 87
 event:
   - date: '2698-04-14'
     zenithCharge: yes
@@ -103,51 +105,65 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.7
     sysPos:
-      source: 'Handbook: House Liao, pg. 87'
+      source: 'HB:HL'
       value: 5
+      page: 87
     icon: green33
     pressure:
-      source: 'Handbook: House Liao, pg. 87'
+      source: 'HB:HL'
       value: STANDARD
+      page: 87
     atmosphere:
-      source: 'Handbook: House Liao, pg. 87'
+      source: 'HB:HL'
       value: BREATHABLE
+      page: 87
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'Handbook: House Liao, pg. 87'
+      source: 'HB:HL'
       value: 1.02
+      page: 87
     diameter: 14535
     density: 4.931512793303
     dayLength: 22
     yearLength: 1.2
     temperature:
-      source: 'Handbook: House Liao, pg. 87'
+      source: 'HB:HL'
       value: 32
+      page: 87
     water:
-      source: 'Handbook: House Liao, pg. 87'
+      source: 'HB:HL'
       value: 23
+      page: 87
     lifeForm:
-      source: 'Handbook: House Liao, pg. 87'
+      source: 'HB:HL'
       value: REPTILE
+      page: 87
     desc: |-
       3025 - Turin has almost endless grassy plains that provide excellent cattle pastures. The Turin colonists discovered that Terran cows could be crossbred with a Turin native animal to create a hybrid that is meatier and better tasting. However, the milk of these hybrids is indigestible to humans, so Turin's few dairies specialise in cow's and goat's milk and cheese. Turin is also famous for horse breeding, rivaling the Eridani blood lines.
 
       Turin is home to a Duchy RTC, which focuses on training vehicle crews and unarmored infantry. The RTC on Turin is known for its specialized jump infantry program, which is considered one of the best in the Confederation.
     landmass:
       - name:
-          source: 'Objective Raids: Capellan Confederation'
+          source: 'OR'
           value: Turin
         capital:
-          source: 'Objective Raids: Capellan Confederation'
+          source: 'OR'
           value: Porter
     satellite:
       - name:
-          source: 'Handbook: House Liao, pg. 87'
+          source: 'HB:HL'
           value: Shroud
+          page: 87
         size: large
         icon: rock14
     event:
       - date: '2616-01-19'
+        # administration: CC | Sian Commonality | Region 8
+        # administration: CC | Sian Commonality | Region 8
+        # administration: CC | Sian Commonality | Region 8
+        # administration: CC | Sian Commonality | Region 8
+        # administration: CC | Sian Commonality | Region 8
+        # administration: CC | Sian Commonality | Region 8
         faction:
           source: canon
           value:
@@ -270,6 +286,12 @@ planet:
             - MOC
             - CC
       - date: '3032-04-14'
+        # administration: CC | Sian Commonality | Region 13
+        # administration: CC | Sian Commonality | Region 13
+        # administration: CC | Sian Commonality | Region 13
+        # administration: CC | Sian Commonality | Region 13
+        # administration: CC | Sian Commonality | Region 13
+        # administration: CC | Sian Commonality | Region 13
         faction:
           source: canon
           value:

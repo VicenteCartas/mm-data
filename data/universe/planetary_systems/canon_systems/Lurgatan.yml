@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Lurgatan
-sucsId: 1536
+sucsId: 1537
 xcood: -20.166
 ycood: -330.895
 spectralType: K7V
@@ -87,7 +87,19 @@ planet:
         population: 35720450.0
       - date: '2360-01-01'
         population: 47043945.0
+      - date: '2366-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - SiS
       - date: '2367-07-01'
+        # administration: CC | Andurien Commonality | Region 3
+        # administration: CC | Andurien Commonality | Region 3
+        # administration: CC | Andurien Commonality | Region 3
+        # administration: CC | Andurien Commonality | Region 3
+        # administration: CC | Andurien Commonality | Region 3
+        # administration: CC | Andurien Commonality | Region 3
         faction:
           source: canon
           value:
@@ -211,6 +223,12 @@ planet:
       - date: '2893-01-01'
         socioIndustrial: C-C-C-F-D
       - date: '2900-02-03'
+        # administration: FWL | Duchy of Andurien
+        # administration: FWL | Duchy of Andurien
+        # administration: FWL | Duchy of Andurien
+        # administration: FWL | Duchy of Andurien
+        # administration: FWL | Duchy of Andurien
+        # administration: FWL | Duchy of Andurien
         faction:
           source: canon
           value:
@@ -249,12 +267,23 @@ planet:
         socioIndustrial: C-C-B-F-D
       - date: '3030-01-01'
         population: 196289935.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - DA
       - date: '3030-09-11'
         faction:
           source: canon
           value:
             - DA
       - date: '3039-05-01'
+        # administration: FWL | Duchy of Andurien
+        # administration: FWL | Duchy of Andurien
+        # administration: FWL | Duchy of Andurien
+        # administration: FWL | Duchy of Andurien
+        # administration: FWL | Duchy of Andurien
+        # administration: FWL | Duchy of Andurien
         faction:
           source: canon
           value:
@@ -268,6 +297,12 @@ planet:
         population: 204096481.0
       - date: '3070-01-01'
         population: 205674089.0
+      - date: '3075-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - DA
       - date: '3079-07-08'
         faction:
           source: canon

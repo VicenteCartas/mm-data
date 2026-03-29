@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -91,6 +91,12 @@ planet:
       - name: Wright II
     event:
       - date: '2678-07-09'
+        # administration: TC | Brinton Union
+        # administration: TC | Brinton Union
+        # administration: TC | Brinton Union
+        # administration: TC | Brinton Union
+        # administration: TC | Brinton Union
+        # administration: TC | Brinton Union
         faction:
           source: canon
           value:
@@ -137,6 +143,18 @@ planet:
             - IND
       - date: '2820-01-01'
         population: 14305238.0
+      - date: '2821-01-01'
+        # administration: TC | Brinton Union
+        # administration: TC | Brinton Union
+        # administration: TC | Brinton Union
+        # administration: TC | Brinton Union
+        # administration: TC | Brinton Union
+        # administration: TC | Brinton Union
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - TC
       - date: '2830-01-01'
         population: 10067917.0
       - date: '2840-01-01'
@@ -175,6 +193,12 @@ planet:
           source: This is the earliest the directorate could have taken over
           value:
             - ARD
+      - date: '3025-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ARC
       - date: '3025-03-01'
         faction:
           source: assumption
@@ -192,11 +216,18 @@ planet:
           value:
             - ARC
         population: 11924.0
+      - date: '3030-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ABN
       - date: '3151-01-01'
         faction:
           source: sucs
           value:
             - ABN
+    desc: A barren, icy rock with almost nothing of value. A token staff operates massive industrial mining equipment on rocky equatorial outcrops, hunting for platinum, ruthenium, and rarer exotics. Too dangerous for permanent habitation, crews work month-long shifts before returning to orbital habitation stations. Artru is a major travel link to Hellespont, headquarters of the rimward branch of ComStar's Explorer Corps.
   - name: Back Swamp
     type: TERRESTRIAL
     orbitalDist: 1.44

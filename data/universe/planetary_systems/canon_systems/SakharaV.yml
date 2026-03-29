@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Sakhara V
-sucsId: 2212
+sucsId: 2213
 xcood: 276.586
 ycood: 34.077
 spectralType:
@@ -61,12 +61,7 @@ planet:
     lifeForm:
       source: canon
       value: REPTILE
-    desc: Sakhara was originally settled to take advantage of the high concentration
-      of rare earth metals, however the varied terrains present on the planet made
-      Sakhara an excellent location for training soldiers in a variety of different
-      conditions. The Sakhara Academy was built and is one of the premier training
-      academies in the Federated Suns. The Academy is located in Djoser, a city on
-      the desert continent of Giza.
+    desc: Sakhara was originally settled to take advantage of the high concentration of rare earth metals, however the varied terrains present on the planet made Sakhara an excellent location for training soldiers in a variety of different conditions. The Sakhara Academy was built and is one of the premier training academies in the Federated Suns. The Academy is located in Djoser, a city on the desert continent of Giza.
     landmass:
       - name:
           source: canon
@@ -156,6 +151,12 @@ planet:
           source: canon
           value:
             - FS
+      - date: '2366-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '2370-01-01'
         population: 147449950.0
       - date: '2380-01-01'
@@ -198,6 +199,18 @@ planet:
         population: 301814495.0
       - date: '2570-01-01'
         population: 302542921.0
+      - date: '2571-01-01'
+        # administration: FS | Draconis March | Fairfax Operational Area
+        # administration: FS | Draconis March | Fairfax Operational Area
+        # administration: FS | Draconis March | Fairfax Operational Area
+        # administration: FS | Draconis March | Fairfax Operational Area
+        # administration: FS | Draconis March | Fairfax Operational Area
+        # administration: FS | Draconis March | Fairfax Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FS
       - date: '2580-01-01'
         population: 304547789.0
       - date: '2590-01-01'
@@ -262,6 +275,12 @@ planet:
             - DC
         population: 377315196.0
       - date: '2831-04-28'
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
         faction:
           source: canon
           value:
@@ -313,8 +332,25 @@ planet:
       - date: '3031-01-01'
         socioIndustrial: B-B-A-C-C
       - date: '3040-01-01'
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
         population: 336327584.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
         faction:
           source: canon
           value:
@@ -327,7 +363,25 @@ planet:
         population: 340455912.0
       - date: '3060-01-01'
         population: 343636920.0
+      - date: '3067-01-01'
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FS
       - date: '3067-04-20'
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
         faction:
           source: canon
           value:
@@ -354,6 +408,18 @@ planet:
           value: X
       - date: '3140-01-01'
         population: 379549733.0
+      - date: '3145-01-01'
+        # administration: DC | New Samarkand Military District | Barlow's End Prefecture
+        # administration: DC | New Samarkand Military District | Barlow's End Prefecture
+        # administration: DC | New Samarkand Military District | Barlow's End Prefecture
+        # administration: DC | New Samarkand Military District | Barlow's End Prefecture
+        # administration: DC | New Samarkand Military District | Barlow's End Prefecture
+        # administration: DC | New Samarkand Military District | Barlow's End Prefecture
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - DC
       - date: '3145-09-05'
         faction:
           source: canon
@@ -361,10 +427,28 @@ planet:
             - DC
         population: 383057702.0
       - date: '3151-01-01'
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
         faction:
           source: sucs
           value:
             - FS
+      - date: '3152-01-01'
+        # administration: DC | New Samarkand Military District | Barlow's End Prefecture
+        # administration: DC | New Samarkand Military District | Barlow's End Prefecture
+        # administration: DC | New Samarkand Military District | Barlow's End Prefecture
+        # administration: DC | New Samarkand Military District | Barlow's End Prefecture
+        # administration: DC | New Samarkand Military District | Barlow's End Prefecture
+        # administration: DC | New Samarkand Military District | Barlow's End Prefecture
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - DC
       - date: '3152-06-01'
         faction:
           source: canon

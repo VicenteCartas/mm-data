@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Kannon
-sucsId: 1290
+sucsId: 1291
 xcood: -11.93
 ycood: 124.441
 spectralType: M7V
@@ -59,6 +59,12 @@ planet:
         size: medium
         icon: rock15
     event:
+      - date: '2319-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '2319-04-29'
         faction:
           source: canon
@@ -80,6 +86,12 @@ planet:
         population: 2857172.0
       - date: '2360-01-01'
         population: 6815055.0
+      - date: '2366-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '2370-01-01'
         population: 14213020.0
       - date: '2380-01-01'
@@ -124,6 +136,18 @@ planet:
         population: 711491019.0
       - date: '2570-01-01'
         population: 726976896.0
+      - date: '2571-01-01'
+        # administration: LA | Federation of Skye | Kannon Shire
+        # administration: LA | Federation of Skye | Kannon Shire
+        # administration: LA | Federation of Skye | Kannon Shire
+        # administration: LA | Federation of Skye | Kannon Shire
+        # administration: LA | Federation of Skye | Kannon Shire
+        # administration: LA | Federation of Skye | Kannon Shire
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '2580-01-01'
         population: 743275207.0
       - date: '2590-01-01'

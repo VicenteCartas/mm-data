@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,15 +16,17 @@
 # affiliated with Microsoft.
 
 id: Loric
-sucsId: 1517
+sucsId: 1518
 xcood: -230.35
 ycood: -38.822
 spectralType:
-  source: 'Handbook: House Steiner, pg. 79'
+  source: 'HB:HS'
   value: K8IV
+  page: 79
 primarySlot:
-  source: 'Handbook: House Steiner, pg. 79'
+  source: 'HB:HS'
   value: 2
+  page: 79
 event:
   - date: '2410-01-01'
     nadirCharge: yes
@@ -49,56 +51,74 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.42
     sysPos:
-      source: 'Handbook: House Steiner, pg. 79'
+      source: 'HB:HS'
       value: 2
+      page: 79
     icon: wet20
     pressure:
-      source: 'Handbook: House Steiner, pg. 79'
+      source: 'HB:HS'
       value: STANDARD
+      page: 79
     atmosphere:
-      source: 'Handbook: House Steiner, pg. 79'
+      source: 'HB:HS'
       value: BREATHABLE
+      page: 79
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'Handbook: House Steiner, pg. 79'
+      source: 'HB:HS'
       value: 0.98
+      page: 79
     diameter: 13451
     density: 5.120110566631
     dayLength: 23
     yearLength: 0.8
     temperature:
-      source: 'Handbook: House Steiner, pg. 79'
+      source: 'HB:HS'
       value: 47
+      page: 79
     water:
-      source: 'Handbook: House Steiner, pg. 79'
+      source: 'HB:HS'
       value: 88
+      page: 79
     lifeForm:
-      source: 'Handbook: House Steiner, pg. 79'
+      source: 'HB:HS'
       value: BIRD
+      page: 79
     desc: |-
       Loric is a picturesque world covered in calm oceans, sandy beaches, rugged mountains and green river valleys. It could easily have been a vacation planet, unfortunately its position on the border between the Lyran Commonwealth and Free Worlds League has made Loric a planet of vast strategic military importance. While the planet’s population has done its best to be an un-appealing target by means of limiting general industry and completely shunning any military industries, Loric has still been the target of raids and attacks time and time again.
 
       The continents of Sorania and Padawa are mostly temperate and are the sites of the majority of the population centers on Loric. The southern continent of Ghanadi is arctic and almost entirely uninhabited, most of Ghanadi is set aside as a nature preserve.
     landmass:
       - name:
-          source: 'Handbook: House Steiner, pg. 79'
+          source: 'HB:HS'
           value: Ghanadi
+          page: 79
       - name:
-          source: 'Handbook: House Steiner, pg. 79'
+          source: 'HB:HS'
           value: Padawa
+          page: 79
       - name:
-          source: 'Handbook: House Steiner, pg. 79'
+          source: 'HB:HS'
           value: Sorania
+          page: 79
         capital:
-          source: 'Handbook: House Steiner, pg. 79'
+          source: 'HB:HS'
           value: Madras
+          page: 79
     satellite:
       - name:
-          source: 'Handbook: House Steiner, pg. 79'
+          source: 'HB:HS'
           value: Udo
+          page: 79
         size: large
         icon: rock5
     event:
+      - date: '2341-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '2341-05-22'
         faction:
           source: canon
@@ -115,6 +135,12 @@ planet:
           source: canon
           value:
             - LA
+      - date: '2366-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '2370-01-01'
         population: 1833675.0
       - date: '2380-01-01'
@@ -138,6 +164,12 @@ planet:
       - date: '2450-01-01'
         population: 136087414.0
       - date: '2459-09-06'
+        # administration: LA | Protectorate of Donegal | Furillo Province
+        # administration: LA | Protectorate of Donegal | Furillo Province
+        # administration: LA | Protectorate of Donegal | Furillo Province
+        # administration: LA | Protectorate of Donegal | Furillo Province
+        # administration: LA | Protectorate of Donegal | Furillo Province
+        # administration: LA | Protectorate of Donegal | Furillo Province
         faction:
           source: canon
           value:
@@ -279,6 +311,12 @@ planet:
             - LA
             - FWL
       - date: '3002-03-01'
+        # administration: LA | Protectorate of Donegal | Bolan Province
+        # administration: LA | Protectorate of Donegal | Bolan Province
+        # administration: LA | Protectorate of Donegal | Bolan Province
+        # administration: LA | Protectorate of Donegal | Bolan Province
+        # administration: LA | Protectorate of Donegal | Bolan Province
+        # administration: LA | Protectorate of Donegal | Bolan Province
         faction:
           source: canon
           value:
@@ -292,8 +330,25 @@ planet:
       - date: '3030-01-01'
         population: 458378470.0
       - date: '3040-01-01'
+        # administration: FC | Tamarind March | Bolan Operational Area
+        # administration: FC | Tamarind March | Bolan Operational Area
+        # administration: FC | Tamarind March | Bolan Operational Area
+        # administration: FC | Tamarind March | Bolan Operational Area
+        # administration: FC | Tamarind March | Bolan Operational Area
+        # administration: FC | Tamarind March | Bolan Operational Area
         population: 463031551.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
+        # administration: FC | Tamarind March | Bolan Operational Area
+        # administration: FC | Tamarind March | Bolan Operational Area
+        # administration: FC | Tamarind March | Bolan Operational Area
+        # administration: FC | Tamarind March | Bolan Operational Area
+        # administration: FC | Tamarind March | Bolan Operational Area
+        # administration: FC | Tamarind March | Bolan Operational Area
         faction:
           source: canon
           value:
@@ -304,13 +359,37 @@ planet:
           value: C-C-C-D-B
       - date: '3050-01-01'
         population: 469465680.0
+      - date: '3057-01-01'
+        # administration: LA | Tamarind March | Bolan Operational Area
+        # administration: LA | Tamarind March | Bolan Operational Area
+        # administration: LA | Tamarind March | Bolan Operational Area
+        # administration: LA | Tamarind March | Bolan Operational Area
+        # administration: LA | Tamarind March | Bolan Operational Area
+        # administration: LA | Tamarind March | Bolan Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '3057-09-18'
+        # administration: LA | Bolan Province | Cavanaugh Theater
+        # administration: LA | Bolan Province | Cavanaugh Theater
+        # administration: LA | Bolan Province | Cavanaugh Theater
+        # administration: LA | Bolan Province | Cavanaugh Theater
+        # administration: LA | Bolan Province | Cavanaugh Theater
+        # administration: LA | Bolan Province | Cavanaugh Theater
         faction:
           source: canon
           value:
             - LA
       - date: '3060-01-01'
         population: 475703707.0
+      - date: '3068-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FWL
       - date: '3068-09-01'
         faction:
           source: canon
@@ -318,7 +397,25 @@ planet:
             - FWL
       - date: '3070-01-01'
         population: 481783671.0
+      - date: '3079-01-01'
+        # administration: LA | Bolan Province | Dixie Theater
+        # administration: LA | Bolan Province | Dixie Theater
+        # administration: LA | Bolan Province | Dixie Theater
+        # administration: LA | Bolan Province | Dixie Theater
+        # administration: LA | Bolan Province | Dixie Theater
+        # administration: LA | Bolan Province | Dixie Theater
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '3079-04-10'
+        # administration: LA | Bolan Province | Dixie Theater
+        # administration: LA | Bolan Province | Dixie Theater
+        # administration: LA | Bolan Province | Dixie Theater
+        # administration: LA | Bolan Province | Dixie Theater
+        # administration: LA | Bolan Province | Dixie Theater
+        # administration: LA | Bolan Province | Dixie Theater
         faction:
           source: canon
           value:
@@ -342,6 +439,12 @@ planet:
           value: X
       - date: '3140-01-01'
         population: 520138539.0
+      - date: '3145-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CWE
       - date: '3145-05-01'
         faction:
           source: canon

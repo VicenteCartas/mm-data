@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,15 +16,17 @@
 # affiliated with Microsoft.
 
 id: St. Ives
-sucsId: 2391
+sucsId: 2392
 xcood: 109.619
 ycood: -214.379
 spectralType:
-  source: 'Handbook: House Liao, pg. 81'
+  source: 'HB:HL'
   value: G8V
+  page: 81
 primarySlot:
-  source: 'Handbook: House Liao, pg. 81'
+  source: 'HB:HL'
   value: 3
+  page: 81
 event:
   - date: '2373-01-14'
     zenithCharge: yes
@@ -80,32 +82,39 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.8
     sysPos:
-      source: 'Handbook: House Liao, pg. 81'
+      source: 'HB:HL'
       value: 3
+      page: 81
     icon: green12
     pressure:
-      source: 'Handbook: House Liao, pg. 81'
+      source: 'HB:HL'
       value: STANDARD
+      page: 81
     atmosphere:
-      source: 'Handbook: House Liao, pg. 81'
+      source: 'HB:HL'
       value: BREATHABLE
+      page: 81
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'Handbook: House Liao, pg. 81'
+      source: 'HB:HL'
       value: 1.01
+      page: 81
     diameter: 12796
     density: 5.547093113805
     dayLength: 25
     yearLength: 1.1
     temperature:
-      source: 'Handbook: House Liao, pg. 81'
+      source: 'HB:HL'
       value: 34
+      page: 81
     water:
-      source: 'Handbook: House Liao, pg. 81'
+      source: 'HB:HL'
       value: 67
+      page: 81
     lifeForm:
-      source: 'Handbook: House Liao, pg. 81'
+      source: 'HB:HL'
       value: PLANT
+      page: 81
     desc: |-
       St. Ives is a comfortable planet which was first settled in 2197 by refugees from Hong Kong. The planet was an independent realm for much of its early history and did not recognize the rule of the Terran Alliance. In 2244 St. Ives became the capital of the fledgling St. Ives Mercantile League until eventually joining the Capellan Confederation as the capital of the St. Ives Commonality.
 
@@ -121,18 +130,19 @@ planet:
       Tengo Aerospace
     landmass:
       - name:
-          source: 'Objective Raids: Capellan Confederation'
+          source: 'OR'
           value: Liaoning
         capital:
-          source: 'Objective Raids: Capellan Confederation'
+          source: 'OR'
           value: Tian-tan
       - name:
-          source: 'Objective Raids: Capellan Confederation'
+          source: 'OR'
           value: Zona
     satellite:
       - name:
-          source: 'Handbook: House Liao, pg. 81'
+          source: 'HB:HL'
           value: Cochrane
+          page: 81
         size: medium
         icon: oddmoon3
     event:
@@ -164,6 +174,18 @@ planet:
         population: 36861484.0
       - date: '2270-01-01'
         population: 69645550.0
+      - date: '2271-01-01'
+        # administration: SIML | National Capital
+        # administration: SIML | National Capital
+        # administration: SIML | National Capital
+        # administration: SIML | National Capital
+        # administration: SIML | National Capital
+        # administration: SIML | National Capital
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - SIML
       - date: '2280-01-01'
         population: 121525556.0
       - date: '2283-01-01'
@@ -185,6 +207,12 @@ planet:
       - date: '2360-01-01'
         population: 1490833859.0
       - date: '2367-07-01'
+        # administration: CC | St. Ives Commonality | Region 2
+        # administration: CC | St. Ives Commonality | Region 2
+        # administration: CC | St. Ives Commonality | Region 2
+        # administration: CC | St. Ives Commonality | Region 2
+        # administration: CC | St. Ives Commonality | Region 2
+        # administration: CC | St. Ives Commonality | Region 2
         faction:
           source: canon
           value:
@@ -334,7 +362,25 @@ planet:
         population:
           source: canon
           value: 5619000000.0
+      - date: '3030-01-01'
+        # administration: SIC | Region 2 | National Capital
+        # administration: SIC | Region 2 | National Capital
+        # administration: SIC | Region 2 | National Capital
+        # administration: SIC | Region 2 | National Capital
+        # administration: SIC | Region 2 | National Capital
+        # administration: SIC | Region 2 | National Capital
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - SIC
       - date: '3030-06-21'
+        # administration: SIC | Region 2 | National Capital
+        # administration: SIC | Region 2 | National Capital
+        # administration: SIC | Region 2 | National Capital
+        # administration: SIC | Region 2 | National Capital
+        # administration: SIC | Region 2 | National Capital
+        # administration: SIC | Region 2 | National Capital
         faction:
           source: canon
           value:
@@ -356,6 +402,12 @@ planet:
         population: 5867869090.0
         socioIndustrial: A-A-A-A-C
       - date: '3062-02-18'
+        # administration: CC | St. Ives Commonality | Region 2
+        # administration: CC | St. Ives Commonality | Region 2
+        # administration: CC | St. Ives Commonality | Region 2
+        # administration: CC | St. Ives Commonality | Region 2
+        # administration: CC | St. Ives Commonality | Region 2
+        # administration: CC | St. Ives Commonality | Region 2
         faction:
           source: canon
           value:

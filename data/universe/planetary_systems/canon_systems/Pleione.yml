@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: Pleione
-sucsId: 2039
+sucsId: 2040
 xcood: 51.435
 ycood: -79.668
 spectralType:
-  source: MWDA world profiles
+  source: DA:RW
   value: M8VI
 primarySlot:
-  source: MWDA world profiles
+  source: DA:RW
   value: 3
 planet:
   - name: Giffoni Sei Casali
@@ -84,31 +84,31 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.07
     sysPos:
-      source: MWDA world profiles
+      source: DA:RW
       value: 3
     icon: wet3
     pressure:
-      source: MWDA world profiles
+      source: DA:RW
       value: STANDARD
     atmosphere:
-      source: MWDA world profiles
+      source: DA:RW
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: MWDA world profiles
+      source: DA:RW
       value: 0.89
     diameter: 11408
     density: 5.48267491074
     dayLength: 22
     yearLength: 0.3
     temperature:
-      source: MWDA world profiles
+      source: DA:RW
       value: 58
     water:
-      source: MWDA world profiles
+      source: DA:RW
       value: 84
     lifeForm:
-      source: MWDA world profiles
+      source: DA:RW
       value: FISH
     desc: |-
       3135 - Pleione was colonized during the early Exodus period and became a stepping-stone to the stars beyond. It is an inhospitable desert world, with an abundant supply of water, which it exports. Jezrael, the only continent, represents less than 20 percent of the planet's surface. It's terrain is mostly featureless, except for the large rock formations that dot the landscape.
@@ -116,11 +116,11 @@ planet:
       Pleione was part of the Tikonov Grand Union before joining the Capellan Confederation. The Star League used Pleione as a military supply world and built a massive fort atop the largest rock formation on Jezrael. This fort, known by the Capellans as "Thunder Rock", was used as a headquarters and regimental supply depot. It was here that Capellan forces fought against Federated Suns mercenaries during the Fourth Succession War. Confederation forces regained Pleione once the Sarna March collapsed as the result of the Marik-Liao invasion of 3057. Pleione, along with Ningpo and Poznan, reaffirmed its allegiance to the Celestial Throne and House Liao during the Confederation‘s Xin Sheng movement. The Confederation assigned Little Richard‘s Panzer Brigade to defend Pleione, as well as to back up Confederation forces on Ningpo and Poznan. During the FedCom Civil War, the Brigade was sent to take Genoa and Arboris in October of 3066. On Genoa, Little Richard's Panzer Brigade met with disaster when engaged by the Twelfth Vegan Ranger's Beta Regiment. In a matter of a month, their regiment was reduced to a barely operational battalion. The unit were sent back to Pleione, and was in the middle of recovering when Word of Blake forces invaded. Little Richard's forces fought valiantly, they made their last stand at "Thunder Rock" where they died to a man, after which the planet surrendered.
     landmass:
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Jezrael
     satellite:
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Caran
         size: medium
         icon: oddmoon2
@@ -152,11 +152,29 @@ planet:
         population: 66321672.0
       - date: '2340-01-01'
         population: 98324762.0
+      - date: '2341-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '2350-01-01'
         population: 138680604.0
       - date: '2360-01-01'
         population: 187199933.0
+      - date: '2366-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - TGU
       - date: '2367-07-01'
+        # administration: CC | Tikonov Commonality | Region 3
+        # administration: CC | Tikonov Commonality | Region 3
+        # administration: CC | Tikonov Commonality | Region 3
+        # administration: CC | Tikonov Commonality | Region 3
+        # administration: CC | Tikonov Commonality | Region 3
+        # administration: CC | Tikonov Commonality | Region 3
         faction:
           source: canon
           value:
@@ -317,15 +335,43 @@ planet:
           value:
             - FS
       - date: '3030-01-01'
+        # administration: LA | Sarna March | Tikonov Operational Area
+        # administration: LA | Sarna March | Tikonov Operational Area
+        # administration: LA | Sarna March | Tikonov Operational Area
+        # administration: LA | Sarna March | Tikonov Operational Area
+        # administration: LA | Sarna March | Tikonov Operational Area
+        # administration: LA | Sarna March | Tikonov Operational Area
         population: 787311833.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '3030-02-28'
         faction:
           source: canon
           value:
             - LA
       - date: '3040-01-01'
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
         population: 796338542.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
         faction:
           source: canon
           value:
@@ -334,14 +380,32 @@ planet:
         socioIndustrial: D-D-C-F-C
       - date: '3050-01-01'
         population: 805146622.0
+      - date: '3057-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3057-11-01'
         faction:
           source: canon
           value:
             - CM
+      - date: '3058-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3060-01-01'
         population: 813807946.0
       - date: '3062-06-06'
+        # administration: CC | Liao Commonality | Region 2
+        # administration: CC | Liao Commonality | Region 2
+        # administration: CC | Liao Commonality | Region 2
+        # administration: CC | Liao Commonality | Region 2
+        # administration: CC | Liao Commonality | Region 2
+        # administration: CC | Liao Commonality | Region 2
         faction:
           source: canon
           value:
@@ -382,13 +446,37 @@ planet:
             - CC
             - WOB
       - date: '3078-06-10'
+        # administration: CC | Liao Commonality | Region 1
+        # administration: CC | Liao Commonality | Region 1
+        # administration: CC | Liao Commonality | Region 1
+        # administration: CC | Liao Commonality | Region 1
+        # administration: CC | Liao Commonality | Region 1
+        # administration: CC | Liao Commonality | Region 1
         faction:
           source: canon
           value:
             - CC
       - date: '3080-01-01'
         population: 835411485.0
+      - date: '3085-01-01'
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ROS
       - date: '3085-07-19'
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
         faction:
           source: canon
           value:
@@ -407,6 +495,12 @@ planet:
         population: 900116680.0
       - date: '3132-08-07'
         hpg: X
+      - date: '3135-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3135-10-01'
         faction:
           source: canon
@@ -414,7 +508,25 @@ planet:
             - IND
       - date: '3140-01-01'
         population: 911347615.0
+      - date: '3145-01-01'
+        # administration: CC | Tikonov Commonality | Region 6
+        # administration: CC | Tikonov Commonality | Region 6
+        # administration: CC | Tikonov Commonality | Region 6
+        # administration: CC | Tikonov Commonality | Region 6
+        # administration: CC | Tikonov Commonality | Region 6
+        # administration: CC | Tikonov Commonality | Region 6
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CC
       - date: '3145-06-20'
+        # administration: CC | Tikonov Commonality | Region 10
+        # administration: CC | Tikonov Commonality | Region 10
+        # administration: CC | Tikonov Commonality | Region 10
+        # administration: CC | Tikonov Commonality | Region 10
+        # administration: CC | Tikonov Commonality | Region 10
+        # administration: CC | Tikonov Commonality | Region 10
         faction:
           source: canon
           value:

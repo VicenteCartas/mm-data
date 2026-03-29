@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -20,10 +20,10 @@ sucsId: 414
 xcood: 17.582
 ycood: 154.653
 spectralType:
-  source: House Kurita
+  source: HB:HK
   value: A9III
 primarySlot:
-  source: House Kurita
+  source: HB:HK
   value: 6
 event:
   - date: '2394-01-20'
@@ -145,7 +145,7 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 4.76
     sysPos:
-      source: House Kurita
+      source: HB:HK
       value: 6
     icon: green43
     pressure:
@@ -167,20 +167,9 @@ planet:
       source: canon
       value: 62
     lifeForm:
-      source: House Kurita
+      source: HB:HK
       value: INSECT
-    desc: Buckminster is an agricultural world that is considered one the Draconis
-      Combines' top producers of foodstuffs. The world is also a highly advanced and
-      has moderate industry, mostly to support the planets agriculture. In 3005 the
-      world became a prefecture capital. Prior to that the world enjoyed a good trading
-      relationship with the Lyran world of Port Moseby. However, after becoming a
-      capital Buckminster become a major command center for the region and the long-time
-      home planet of the Second Sword of Light.  The increased presence of military
-      forces on the world, and the exercises and training runs that they require,
-      have begun to dramatically reduced the productivity of the farmland. This is
-      starting to have an adverse impact on the planets economy. All of these changes
-      to the world since 3005 have resulted in the creation of several covert and
-      overt anti-Kurita groups.
+    desc: Buckminster is an agricultural world that is considered one the Draconis Combines' top producers of foodstuffs. The world is also a highly advanced and has moderate industry, mostly to support the planets agriculture. In 3005 the world became a prefecture capital. Prior to that the world enjoyed a good trading relationship with the Lyran world of Port Moseby. However, after becoming a capital Buckminster become a major command center for the region and the long-time home planet of the Second Sword of Light.  The increased presence of military forces on the world, and the exercises and training runs that they require, have begun to dramatically reduced the productivity of the farmland. This is starting to have an adverse impact on the planets economy. All of these changes to the world since 3005 have resulted in the creation of several covert and overt anti-Kurita groups.
     landmass:
       - name:
           source: canon
@@ -259,6 +248,12 @@ planet:
         population: 1523817575.0
       - date: '2360-01-01'
         population: 1742710205.0
+      - date: '2366-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '2370-01-01'
         population: 1958460020.0
       - date: '2380-01-01'
@@ -301,6 +296,18 @@ planet:
         population: 4342215747.0
       - date: '2570-01-01'
         population: 4404727889.0
+      - date: '2571-01-01'
+        # administration: LA | Tamar Pact | Camlann Shire
+        # administration: LA | Tamar Pact | Camlann Shire
+        # administration: LA | Tamar Pact | Camlann Shire
+        # administration: LA | Tamar Pact | Camlann Shire
+        # administration: LA | Tamar Pact | Camlann Shire
+        # administration: LA | Tamar Pact | Camlann Shire
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '2580-01-01'
         population: 4459246804.0
       - date: '2590-01-01'
@@ -358,7 +365,25 @@ planet:
         population: 4371187537.0
       - date: '2820-01-01'
         population: 4281829969.0
+      - date: '2821-01-01'
+        # administration: DC | Benjamin Military District | Baldur Prefecture
+        # administration: DC | Benjamin Military District | Baldur Prefecture
+        # administration: DC | Benjamin Military District | Baldur Prefecture
+        # administration: DC | Benjamin Military District | Baldur Prefecture
+        # administration: DC | Benjamin Military District | Baldur Prefecture
+        # administration: DC | Benjamin Military District | Baldur Prefecture
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - DC
       - date: '2821-12-31'
+        # administration: DC | Benjamin Military District | Baldur Prefecture
+        # administration: DC | Benjamin Military District | Baldur Prefecture
+        # administration: DC | Benjamin Military District | Baldur Prefecture
+        # administration: DC | Benjamin Military District | Baldur Prefecture
+        # administration: DC | Benjamin Military District | Baldur Prefecture
+        # administration: DC | Benjamin Military District | Baldur Prefecture
         faction:
           source: canon
           value:
@@ -374,6 +399,12 @@ planet:
       - date: '2860-01-01'
         population: 4243132081.0
       - date: '2863-12-31'
+        # administration: LA | Federation of Skye | Kannon Shire
+        # administration: LA | Federation of Skye | Kannon Shire
+        # administration: LA | Federation of Skye | Kannon Shire
+        # administration: LA | Federation of Skye | Kannon Shire
+        # administration: LA | Federation of Skye | Kannon Shire
+        # administration: LA | Federation of Skye | Kannon Shire
         faction:
           source: canon
           value:
@@ -385,6 +416,12 @@ planet:
       - date: '2890-01-01'
         population: 3939613481.0
       - date: '2899-12-31'
+        # administration: DC | Benjamin Military District | Buckminster Prefecture
+        # administration: DC | Benjamin Military District | Buckminster Prefecture
+        # administration: DC | Benjamin Military District | Buckminster Prefecture
+        # administration: DC | Benjamin Military District | Buckminster Prefecture
+        # administration: DC | Benjamin Military District | Buckminster Prefecture
+        # administration: DC | Benjamin Military District | Buckminster Prefecture
         faction:
           source: canon
           value:
@@ -442,6 +479,12 @@ planet:
           value:
             - WOB
       - date: '3070-04-30'
+        # administration: DC | Benjamin Military District | Buckminster Prefecture
+        # administration: DC | Benjamin Military District | Buckminster Prefecture
+        # administration: DC | Benjamin Military District | Buckminster Prefecture
+        # administration: DC | Benjamin Military District | Buckminster Prefecture
+        # administration: DC | Benjamin Military District | Buckminster Prefecture
+        # administration: DC | Benjamin Military District | Buckminster Prefecture
         faction:
           source: canon
           value:

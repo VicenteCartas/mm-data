@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,15 +16,16 @@
 # affiliated with Microsoft.
 
 id: Vixen
-sucsId: 2698
+sucsId: 2699
 xcood: -292.617
 ycood: -390.095
 spectralType:
   source: canon
   value: G3V
 primarySlot:
-  source: Periphery (1ed), pg. 104
+  source: Per1e
   value: 5
+  page: 104
 event:
   - date: '2764-11-04'
     zenithCharge: yes
@@ -124,8 +125,9 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 1.0
     sysPos:
-      source: Periphery (1ed), pg. 104
+      source: Per1e
       value: 5
+      page: 104
     icon: green41
     pressure: STANDARD
     atmosphere: BREATHABLE
@@ -138,19 +140,10 @@ planet:
     temperature: 22
     water: 51
     lifeForm:
-      source: Periphery (1ed), pg. 104
+      source: Per1e
       value: MAMMAL
-    desc: 3025 – Vixen was not settled until the early 3020s and was colonized by
-      a handful of corporations intent on making the cool-temperate world into a pleasure
-      planet. While there are only a few thousand settlers currently on Vixen, most
-      of them are engaged in the various tourist and entertainment enterprises on
-      planet and in the few years since 'opening', the planet has already attracted
-      thousands of vacationing Canopians. The planet's colder regions are home to
-      some of the magistracy's most elite winter sports competitions, with the ten-mile
-      cross-country skiing event, bobsledding and the brutal 'all-girl' hockey league,
-      known for its gamesmanship and fights. Another draw to Vixen are the extensive
-      hunting grounds in and around the untouched wilderness of the southern continent
-      and the planet's large native mammalian lifeforms.
+      page: 104
+    desc: 3025 – Vixen was not settled until the early 3020s and was colonized by a handful of corporations intent on making the cool-temperate world into a pleasure planet. While there are only a few thousand settlers currently on Vixen, most of them are engaged in the various tourist and entertainment enterprises on planet and in the few years since 'opening', the planet has already attracted thousands of vacationing Canopians. The planet's colder regions are home to some of the magistracy's most elite winter sports competitions, with the ten-mile cross-country skiing event, bobsledding and the brutal 'all-girl' hockey league, known for its gamesmanship and fights. Another draw to Vixen are the extensive hunting grounds in and around the untouched wilderness of the southern continent and the planet's large native mammalian lifeforms.
     landmass:
       - name: Meyer I
         capital: Meyer I City
@@ -161,6 +154,12 @@ planet:
       - name: Meyer VI
     event:
       - date: '2709-06-09'
+        # administration: MOC | Ballad Province
+        # administration: MOC | Ballad Province
+        # administration: MOC | Ballad Province
+        # administration: MOC | Ballad Province
+        # administration: MOC | Ballad Province
+        # administration: MOC | Ballad Province
         faction:
           source: canon
           value:
@@ -258,6 +257,23 @@ planet:
         population:
           source: canon
           value: 8300.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ABN
+      - date: '3040-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - MOC
+      - date: '3130-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3130-01-03'
         faction:
           source: canon

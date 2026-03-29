@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: Trell I
-sucsId: 2578
+sucsId: 2579
 xcood: -113.976
 ycood: 386.942
 spectralType:
   source: canon
   value: M2VII
 primarySlot:
-  source: Decision at Thunder Rift
+  source: Decision At Thunder Rift
   value: 1
 event:
   - date: '2468-08-12'
@@ -37,7 +37,7 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.28
     sysPos:
-      source: Decision at Thunder Rift
+      source: Decision At Thunder Rift
       value: 1
     icon: wet12
     pressure:
@@ -46,14 +46,14 @@ planet:
     atmosphere: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: Decision at Thunder Rift
+      source: Decision At Thunder Rift
       value: 0.86
     diameter: 11573
     density: 5.222294317986
     dayLength: 29
     yearLength: 0.6
     temperature:
-      source: Decision at Thunder Rift
+      source: Decision At Thunder Rift
       value: 40
     water:
       source: canon
@@ -69,11 +69,17 @@ planet:
     landmass:
       - name: Major Marmaton
         capital:
-          source: Decision at Thunder Rift
+          source: Decision At Thunder Rift
           value: Sarghad
       - name: Minor Marmaton
     event:
       - date: '2464-05-11'
+        # administration: LA | Tamar Pact | Trellshire
+        # administration: LA | Tamar Pact | Trellshire
+        # administration: LA | Tamar Pact | Trellshire
+        # administration: LA | Tamar Pact | Trellshire
+        # administration: LA | Tamar Pact | Trellshire
+        # administration: LA | Tamar Pact | Trellshire
         faction:
           source: canon
           value:
@@ -210,8 +216,25 @@ planet:
         population: 186005900.0
         socioIndustrial: F-D-D-F-D
       - date: '3040-01-01'
+        # administration: FC | Tamar March | Blackjack Operational Area
+        # administration: FC | Tamar March | Blackjack Operational Area
+        # administration: FC | Tamar March | Blackjack Operational Area
+        # administration: FC | Tamar March | Blackjack Operational Area
+        # administration: FC | Tamar March | Blackjack Operational Area
+        # administration: FC | Tamar March | Blackjack Operational Area
         population: 188383239.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
+        # administration: FC | Tamar March | Blackjack Operational Area
+        # administration: FC | Tamar March | Blackjack Operational Area
+        # administration: FC | Tamar March | Blackjack Operational Area
+        # administration: FC | Tamar March | Blackjack Operational Area
+        # administration: FC | Tamar March | Blackjack Operational Area
+        # administration: FC | Tamar March | Blackjack Operational Area
         faction:
           source: canon
           value:
@@ -220,6 +243,11 @@ planet:
         socioIndustrial: D-D-C-D-D
       - date: '3050-01-01'
         population: 190562151.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CJF
       - date: '3050-04-12'
         faction:
           source: canon
@@ -231,6 +259,12 @@ planet:
           source: canon
           value:
             - CJF
+      - date: '3057-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CSV
       - date: '3057-03-27'
         faction:
           source: canon
@@ -267,6 +301,12 @@ planet:
         socioIndustrial: D-D-C-D-D
       - date: '3120-01-01'
         population: 196916227.0
+      - date: '3130-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CHH
       - date: '3130-03-27'
         faction:
           source: canon

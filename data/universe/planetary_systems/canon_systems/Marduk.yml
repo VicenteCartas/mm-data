@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,15 +16,16 @@
 # affiliated with Microsoft.
 
 id: Marduk
-sucsId: 1605
+sucsId: 1606
 xcood: 208.335
 ycood: 59.926
 spectralType:
   source: canon
   value: G8III
 primarySlot:
-  source: FedCom Civil War, pg. 203
+  source: FCCW
   value: 4
+  page: 203
 planet:
   - name: Hogan
     type: ICE_GIANT
@@ -94,32 +95,39 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 1.28
     sysPos:
-      source: FedCom Civil War, pg. 203
+      source: FCCW
       value: 4
+      page: 203
     icon: green47
     pressure:
-      source: FedCom Civil War, pg. 203
+      source: FCCW
       value: STANDARD
+      page: 203
     atmosphere:
-      source: FedCom Civil War, pg. 203
+      source: FCCW
       value: BREATHABLE
+      page: 203
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: FedCom Civil War, pg. 203
+      source: FCCW
       value: 1.0
+      page: 203
     diameter: 12479
     density: 5.6313309147
     dayLength: 20
     yearLength: 1.7
     temperature:
-      source: FedCom Civil War, pg. 203
+      source: FCCW
       value: 45
+      page: 203
     water:
-      source: FedCom Civil War, pg. 203
+      source: FCCW
       value: 60
+      page: 203
     lifeForm:
-      source: FedCom Civil War, pg. 203
+      source: FCCW
       value: REPTILE
+      page: 203
     desc: |-
       Marduk is a comfortable planet with a temperate climate, mild weather, fertile land and a vast array of forests and jungles. The planet originally attracted settlers to farm the large tracts of arable land, however just prior to the formation of the Star League large deposits of minerals and ores were discovered and led to a change in the planet’s economy from agriculture to mining and soon after to heavy industry, including a large sprawling ‘Mech factory. While the planet, specifically the factories, were targeted many times during the Succession Wars, they were never destroyed and continued to churn out ‘Mechs even though the planet changed hands between the Federated Suns and the Draconis Combine several times.
 
@@ -127,21 +135,26 @@ planet:
       Norse BattleMech Works
     landmass:
       - name:
-          source: FedCom Civil War, pg. 203
+          source: FCCW
           value: Aileen
+          page: 203
       - name:
-          source: FedCom Civil War, pg. 203
+          source: FCCW
           value: Latvia
+          page: 203
       - name:
-          source: FedCom Civil War, pg. 203
+          source: FCCW
           value: Tiller
+          page: 203
         capital:
-          source: FedCom Civil War, pg. 203
+          source: FCCW
           value: Mystique Bay
+          page: 203
     satellite:
       - name:
-          source: FedCom Civil War, pg. 203
+          source: FCCW
           value: Kafuffle
+          page: 203
         size: medium
         icon: rock17
     event:
@@ -201,6 +214,12 @@ planet:
           value:
             - FS
         population: 262148281.0
+      - date: '2366-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '2370-01-01'
         population: 290288946.0
       - date: '2380-01-01'
@@ -247,6 +266,18 @@ planet:
         population: 581969071.0
       - date: '2570-01-01'
         population: 593010463.0
+      - date: '2571-01-01'
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FS
       - date: '2580-01-01'
         population: 604121062.0
       - date: '2590-01-01'
@@ -296,6 +327,12 @@ planet:
       - date: '2780-01-01'
         population: 692726355.0
       - date: '2787-05-01'
+        # administration: DC | Galedon Military District | Matsuida Prefecture
+        # administration: DC | Galedon Military District | Matsuida Prefecture
+        # administration: DC | Galedon Military District | Matsuida Prefecture
+        # administration: DC | Galedon Military District | Matsuida Prefecture
+        # administration: DC | Galedon Military District | Matsuida Prefecture
+        # administration: DC | Galedon Military District | Matsuida Prefecture
         faction:
           source: canon
           value:
@@ -337,6 +374,12 @@ planet:
       - date: '2940-01-01'
         population: 654616939.0
       - date: '2950-12-08'
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
         faction:
           source: canon
           value:
@@ -359,8 +402,25 @@ planet:
       - date: '3025-01-01'
         socioIndustrial: B-B-B-B-C
       - date: '3030-01-01'
+        # administration: DC | Benjamin Military District | Irurzun Prefecture
+        # administration: DC | Benjamin Military District | Irurzun Prefecture
+        # administration: DC | Benjamin Military District | Irurzun Prefecture
+        # administration: DC | Benjamin Military District | Irurzun Prefecture
+        # administration: DC | Benjamin Military District | Irurzun Prefecture
+        # administration: DC | Benjamin Military District | Irurzun Prefecture
         population: 582477278.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - DC
       - date: '3030-12-31'
+        # administration: DC | Benjamin Military District | Irurzun Prefecture
+        # administration: DC | Benjamin Military District | Irurzun Prefecture
+        # administration: DC | Benjamin Military District | Irurzun Prefecture
+        # administration: DC | Benjamin Military District | Irurzun Prefecture
+        # administration: DC | Benjamin Military District | Irurzun Prefecture
+        # administration: DC | Benjamin Military District | Irurzun Prefecture
         faction:
           source: canon
           value:
@@ -389,7 +449,25 @@ planet:
         socioIndustrial: A-A-A-A-B
       - date: '3120-01-01'
         population: 616334710.0
+      - date: '3130-01-01'
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FS
       - date: '3130-03-14'
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
         faction:
           source: canon
           value:
@@ -401,7 +479,25 @@ planet:
           value: X
       - date: '3140-01-01'
         population: 621533727.0
+      - date: '3145-01-01'
+        # administration: DC | Benjamin Military District | Irurzun Prefecture
+        # administration: DC | Benjamin Military District | Irurzun Prefecture
+        # administration: DC | Benjamin Military District | Irurzun Prefecture
+        # administration: DC | Benjamin Military District | Irurzun Prefecture
+        # administration: DC | Benjamin Military District | Irurzun Prefecture
+        # administration: DC | Benjamin Military District | Irurzun Prefecture
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - DC
       - date: '3145-10-08'
+        # administration: DC | Benjamin Military District | Irurzun Prefecture
+        # administration: DC | Benjamin Military District | Irurzun Prefecture
+        # administration: DC | Benjamin Military District | Irurzun Prefecture
+        # administration: DC | Benjamin Military District | Irurzun Prefecture
+        # administration: DC | Benjamin Military District | Irurzun Prefecture
+        # administration: DC | Benjamin Military District | Irurzun Prefecture
         faction:
           source: canon
           value:

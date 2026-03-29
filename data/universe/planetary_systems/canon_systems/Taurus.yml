@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,15 +16,17 @@
 # affiliated with Microsoft.
 
 id: Taurus
-sucsId: 2500
+sucsId: 2501
 xcood: 191.381
 ycood: -391.003
 spectralType:
-  source: 'Handbook: Major Periphery States, pg. 125'
+  source: 'HB:MPS'
   value: G3V
+  page: 125
 primarySlot:
-  source: 'Handbook: Major Periphery States, pg. 125'
+  source: 'HB:MPS'
   value: 4
+  page: 125
 event:
   - date: '2505-11-25'
     zenithCharge: yes
@@ -84,32 +86,39 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 1.0
     sysPos:
-      source: 'Handbook: Major Periphery States, pg. 125'
+      source: 'HB:MPS'
       value: 4
+      page: 125
     icon: green55
     pressure:
-      source: 'Handbook: Major Periphery States, pg. 125'
+      source: 'HB:MPS'
       value: STANDARD
+      page: 125
     atmosphere:
-      source: 'Handbook: Major Periphery States, pg. 125'
+      source: 'HB:MPS'
       value: BREATHABLE
+      page: 125
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'Handbook: Major Periphery States, pg. 125'
+      source: 'HB:MPS'
       value: 1.0
+      page: 125
     diameter: 12795
     density: 5.492347279654
     dayLength: 24
     yearLength: 1.4
     temperature:
-      source: 'Handbook: Major Periphery States, pg. 125'
+      source: 'HB:MPS'
       value: 30
+      page: 125
     water:
-      source: 'Handbook: Major Periphery States, pg. 125'
+      source: 'HB:MPS'
       value: 65
+      page: 125
     lifeForm:
-      source: 'Handbook: Major Periphery States, pg. 125'
+      source: 'HB:MPS'
       value: MAMMAL
+      page: 125
     desc: |-
       The first colony on Taurus was founded January 23, 2253 and the planet was the first colonized and capital of what would become the Taurian Concordat. Taurus is rich in minerals and has alwasy been a vital source of food, raw materials and manufacturing for the entire Concordat. It is the cultural, political, and industrial center of the Concordat.
 
@@ -118,18 +127,22 @@ planet:
       Taurus is home to a number of military industries and academies. Magna Metals is located in the city of Palermo on the Sicily continent and produces energy weapons and fusion weapons for BattleMechs, Aerospace fighters, DropShips and Small Craft. The headquarters for Taurus Territorial Industries is located in the old planetary capital of Samantha on the continent of Calderon and managed to survive the city's destruction, and still produces BattleMechs and combat vehicles, though at significantly reduced production levels. École Militaire is a premier training academy in the Concordat, unfortunately the campus was destroyed with the rest of Samantha, however the university is rebuilding in the Tulsa Flats on the Sicily continent and continues to train MechWarriors and infantry.
     landmass:
       - name:
-          source: Masters and Minions, pg. 190
+          source: M&M
           value: Calderon
+          page: 190
         capital:
-          source: 'Handbook: Major Periphery States, pg. 125'
+          source: 'HB:MPS'
           value: Samantha
+          page: 125
       - name:
-          source: Masters and Minions, pg. 190
+          source: M&M
           value: Sicilian
+          page: 190
     satellite:
       - name:
-          source: 'Handbook: Major Periphery States, pg. 125'
+          source: 'HB:MPS'
           value: Drusilla
+          page: 125
         size: large
         icon: rock9
     event:
@@ -144,7 +157,25 @@ planet:
         population: 172230.0
       - date: '2270-01-01'
         population: 612589.0
+      - date: '2271-01-01'
+        # administration: THW | National Capital
+        # administration: THW | National Capital
+        # administration: THW | National Capital
+        # administration: THW | National Capital
+        # administration: THW | National Capital
+        # administration: THW | National Capital
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - THW
       - date: '2271-03-24'
+        # administration: THW | National Capital
+        # administration: THW | National Capital
+        # administration: THW | National Capital
+        # administration: THW | National Capital
+        # administration: THW | National Capital
+        # administration: THW | National Capital
         faction:
           source: canon
           value:
@@ -162,6 +193,12 @@ planet:
       - date: '2330-01-01'
         population: 69951461.0
       - date: '2335-07-29'
+        # administration: TC | National Capital
+        # administration: TC | National Capital
+        # administration: TC | National Capital
+        # administration: TC | National Capital
+        # administration: TC | National Capital
+        # administration: TC | National Capital
         faction:
           source: canon
           value:
@@ -226,6 +263,12 @@ planet:
           value:
             - SL
       - date: '2597-03-21'
+        # administration: TC | Hyades Union | National Capital
+        # administration: TC | Hyades Union | National Capital
+        # administration: TC | Hyades Union | National Capital
+        # administration: TC | Hyades Union | National Capital
+        # administration: TC | Hyades Union | National Capital
+        # administration: TC | Hyades Union | National Capital
         faction:
           source: canon
           value:

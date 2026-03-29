@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,15 +16,16 @@
 # affiliated with Microsoft.
 
 id: Sevon
-sucsId: 2287
+sucsId: 2288
 xcood: 465.538
 ycood: 132.818
 spectralType:
   source: canon
   value: M2V
 primarySlot:
-  source: Periphery (1ed), pg. 119
+  source: Per1e
   value: 5
+  page: 119
 event:
   - date: '2473-03-07'
     zenithCharge: yes
@@ -119,8 +120,9 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.16
     sysPos:
-      source: Periphery (1ed), pg. 119
+      source: Per1e
       value: 5
+      page: 119
     icon: green43
     pressure:
       source: canon
@@ -141,8 +143,9 @@ planet:
       source: canon
       value: 58
     lifeForm:
-      source: Periphery (1ed), pg. 119
+      source: Per1e
       value: FISH
+      page: 119
     desc: |-
       Sevon is a quiet agricultural planet with a small population and only modest industry and technology, despite abundant natural resources and arable land. Sevon is home to Alliance Industries Diversified which produced a wide variety of items from farm equipment, to pharmaceuticals, to mining and refining natural resources such as oil and ore and even the production of military grade armor.
 
@@ -158,8 +161,9 @@ planet:
           source: canon
           value: Karaj
         capital:
-          source: Periphery (1ed), pg. 119
+          source: Per1e
           value: Shandahar
+          page: 119
     satellite:
       - name: Name Unknown
         size: medium
@@ -259,6 +263,12 @@ planet:
             - DC
             - OA
       - date: '2581-10-30'
+        # administration: OA | Ramora Province
+        # administration: OA | Ramora Province
+        # administration: OA | Ramora Province
+        # administration: OA | Ramora Province
+        # administration: OA | Ramora Province
+        # administration: OA | Ramora Province
         faction:
           source: canon
           value:

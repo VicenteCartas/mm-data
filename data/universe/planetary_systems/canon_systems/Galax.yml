@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,15 +16,17 @@
 # affiliated with Microsoft.
 
 id: Galax
-sucsId: 919
+sucsId: 920
 xcood: 283.632
 ycood: -124.547
 spectralType:
-  source: 'Handbook: House Davion, pg. 94'
+  source: 'HB:HD'
   value: F5III
+  page: 94
 primarySlot:
-  source: 'Handbook: House Davion, pg. 94'
+  source: 'HB:HD'
   value: 4
+  page: 94
 event:
   - date: '2356-07-30'
     zenithCharge: yes
@@ -67,8 +69,7 @@ planet:
     icon: greenhouse8
     pressure: HIGH
     atmosphere: TOXIC_CAUSTIC
-    composition: Carbon Dioxide and Nitrogen, plus trace amounts of Chlorine and Water
-      Vapor
+    composition: Carbon Dioxide and Nitrogen, plus trace amounts of Chlorine and Water Vapor
     gravity: 0.57
     diameter: 9500
     density: 4.1818
@@ -82,32 +83,39 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 3.92
     sysPos:
-      source: 'Handbook: House Davion, pg. 94'
+      source: 'HB:HD'
       value: 4
+      page: 94
     icon: green28
     pressure:
-      source: 'Handbook: House Davion, pg. 94'
+      source: 'HB:HD'
       value: STANDARD
+      page: 94
     atmosphere:
-      source: 'Handbook: House Davion, pg. 94'
+      source: 'HB:HD'
       value: TAINTED_POISON
+      page: 94
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'Handbook: House Davion, pg. 94'
+      source: 'HB:HD'
       value: 1.13
+      page: 94
     diameter: 13602
     density: 5.838452948253
     dayLength: 24
     yearLength: 7.9
     temperature:
-      source: 'Handbook: House Davion, pg. 94'
+      source: 'HB:HD'
       value: 33
+      page: 94
     water:
-      source: 'Handbook: House Davion, pg. 94'
+      source: 'HB:HD'
       value: 32
+      page: 94
     lifeForm:
-      source: 'Handbook: House Davion, pg. 94'
+      source: 'HB:HD'
       value: REPTILE
+      page: 94
     desc: |-
       Galax was settled entirely due to the discovery of rich deposits of minerals, ores and other raw materials needed for industry. The initial settlers came to mine the inhospitable world, unfortunately it wasn’t until the 28th century that a joint Star League - Federated Suns terraforming effort made the planet survivable, if still not comfortable, for people outside of pressurized buildings. Despite best efforts, the planet still relies on imported food.
 
@@ -123,12 +131,19 @@ planet:
       - name: Carey
     satellite:
       - name:
-          source: 'Handbook: House Davion, pg. 94'
+          source: 'HB:HD'
           value: Malabar
+          page: 94
         size: large
         icon: rock9
     event:
       - date: '2302-05-24'
+        # administration: FS | Crucis March | Markesan Operational Area
+        # administration: FS | Crucis March | Markesan Operational Area
+        # administration: FS | Crucis March | Markesan Operational Area
+        # administration: FS | Crucis March | Markesan Operational Area
+        # administration: FS | Crucis March | Markesan Operational Area
+        # administration: FS | Crucis March | Markesan Operational Area
         faction:
           source: canon
           value:
@@ -299,12 +314,30 @@ planet:
         population: 1019333644.0
       - date: '3035-01-01'
         socioIndustrial: B-B-B-B-F
+      - date: '3040-01-01'
+        # administration: FC | Crucis March | Markesan Operational Area
+        # administration: FC | Crucis March | Markesan Operational Area
+        # administration: FC | Crucis March | Markesan Operational Area
+        # administration: FC | Crucis March | Markesan Operational Area
+        # administration: FC | Crucis March | Markesan Operational Area
+        # administration: FC | Crucis March | Markesan Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-08-20'
         population: 1025160436.0
         socioIndustrial:
           source: canon
           value: A-A-A-A-F
       - date: '3040-01-19'
+        # administration: FC | Crucis March | Markesan Operational Area
+        # administration: FC | Crucis March | Markesan Operational Area
+        # administration: FC | Crucis March | Markesan Operational Area
+        # administration: FC | Crucis March | Markesan Operational Area
+        # administration: FC | Crucis March | Markesan Operational Area
+        # administration: FC | Crucis March | Markesan Operational Area
         faction:
           source: canon
           value:
@@ -314,16 +347,39 @@ planet:
       - date: '3060-01-01'
         population: 1038990037.0
       - date: '3067-01-01'
+        # administration: FS | Crucis March | Markesan Operational Area
+        # administration: FS | Crucis March | Markesan Operational Area
+        # administration: FS | Crucis March | Markesan Operational Area
+        # administration: FS | Crucis March | Markesan Operational Area
+        # administration: FS | Crucis March | Markesan Operational Area
+        # administration: FS | Crucis March | Markesan Operational Area
         population:
           source: canon
           value: 1048278320.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FS
       - date: '3067-04-20'
+        # administration: FS | Crucis March | Markesan Operational Area
+        # administration: FS | Crucis March | Markesan Operational Area
+        # administration: FS | Crucis March | Markesan Operational Area
+        # administration: FS | Crucis March | Markesan Operational Area
+        # administration: FS | Crucis March | Markesan Operational Area
+        # administration: FS | Crucis March | Markesan Operational Area
         faction:
           source: canon
           value:
             - FS
       - date: '3070-01-01'
         population: 1050797209.0
+      - date: '3075-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ABN
       - date: '3080-01-01'
         population: 1051848532.0
       - date: '3083-01-01'

@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Quimper (Chirac 3130+)
-sucsId: 2098
+sucsId: 2099
 xcood: 380.419
 ycood: -239.333
 spectralType: M8V
@@ -53,6 +53,12 @@ planet:
         capital: Badb
     event:
       - date: '2689-07-18'
+        # administration: FS | Crucis March | Chirikof Operational Area
+        # administration: FS | Crucis March | Chirikof Operational Area
+        # administration: FS | Crucis March | Chirikof Operational Area
+        # administration: FS | Crucis March | Chirikof Operational Area
+        # administration: FS | Crucis March | Chirikof Operational Area
+        # administration: FS | Crucis March | Chirikof Operational Area
         faction:
           source: canon
           value:
@@ -125,6 +131,18 @@ planet:
         hpg: X
         population: 0.0
         socioIndustrial: X-X-X-X-X
+      - date: '3135-01-01'
+        # administration: FS | Periphery March | June Operational Area
+        # administration: FS | Periphery March | June Operational Area
+        # administration: FS | Periphery March | June Operational Area
+        # administration: FS | Periphery March | June Operational Area
+        # administration: FS | Periphery March | June Operational Area
+        # administration: FS | Periphery March | June Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FS
       - date: '3151-01-01'
         faction:
           source: sucs
@@ -133,8 +151,19 @@ planet:
       - date: '2108-12-05'
         name: Quimper
       - date: '3130-01-01'
+        # administration: FS | Periphery March | June Operational Area
+        # administration: FS | Periphery March | June Operational Area
+        # administration: FS | Periphery March | June Operational Area
+        # administration: FS | Periphery March | June Operational Area
+        # administration: FS | Periphery March | June Operational Area
+        # administration: FS | Periphery March | June Operational Area
         name: Chirac
         message: Quimper renamed to Chirac
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FS
   - name: Finn Mccool
     type: GIANT_TERRESTRIAL
     orbitalDist: 0.07

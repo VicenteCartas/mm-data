@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Murrain (Richmond's World 3025-)
-sucsId: 3084
+sucsId: 3047
 xcood: 896.109
 ycood: 28.78
 spectralType:
@@ -175,6 +175,12 @@ planet:
         population: 11313992.0
       - date: '2760-01-01'
         population: 188683.0
+      - date: '2765-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ABN
       - date: '2765-03-05'
         faction:
           source: canon
@@ -188,6 +194,11 @@ planet:
       - date: '3025-01-01'
         name: Murrain
         message: Richmond's World renamed to Murrain
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IE
   - name: Matlalcueyeh
     type: TERRESTRIAL
     orbitalDist: 3.64

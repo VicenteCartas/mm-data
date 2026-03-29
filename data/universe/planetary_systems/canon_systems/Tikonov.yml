@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,15 +16,17 @@
 # affiliated with Microsoft.
 
 id: Tikonov
-sucsId: 2545
+sucsId: 2546
 xcood: 102.838
 ycood: -42.217
 spectralType:
-  source: 'Handbook: House Davion, pg. 90'
+  source: 'HB:HD'
   value: G8V
+  page: 90
 primarySlot:
-  source: 'Handbook: House Davion, pg. 90'
+  source: 'HB:HD'
   value: 3
+  page: 90
 event:
   - date: '2399-02-11'
     zenithCharge: yes
@@ -65,66 +67,81 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.8
     sysPos:
-      source: 'Handbook: House Davion, pg. 90'
+      source: 'HB:HD'
       value: 3
+      page: 90
     icon: green40
     pressure:
-      source: 'Handbook: House Davion, pg. 90'
+      source: 'HB:HD'
       value: STANDARD
+      page: 90
     atmosphere:
-      source: 'Handbook: House Davion, pg. 90'
+      source: 'HB:HD'
       value: BREATHABLE
+      page: 90
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'Handbook: House Davion, pg. 90'
+      source: 'HB:HD'
       value: 1.1
+      page: 90
     diameter: 12683
     density: 6.095151998722
     dayLength: 23
     yearLength: 1.1
     temperature:
-      source: 'Handbook: House Davion, pg. 90'
+      source: 'HB:HD'
       value: 29
+      page: 90
     water:
-      source: 'Handbook: House Davion, pg. 90'
+      source: 'HB:HD'
       value: 60
+      page: 90
     lifeForm:
-      source: 'Handbook: House Davion, pg. 90'
+      source: 'HB:HD'
       value: MAMMAL
+      page: 90
     desc: |-
       Tikonov was one of the first planets colonised in the early 22nd century during the first wave of colonial Terran expansion. The planet was originally settled by immigrants with strong Eurasian and western Asian background and named after the last premier of the Soviet Union. Tikonov established the Tikonov Union in the late 23rd century, the first political unification in the Capellan region, and the planet emerged as the political nexus of the region.
 
       The planet is heavily industrialized and for a long time was the top producer of ‘Mechs for the Capellan Confederation. As a result it was one of the most politically important planets in the Confederation and one of the most heavily defended.
     landmass:
       - name:
-          source: 'Handbook: House Davion, pg. 90'
+          source: 'HB:HD'
           value: Kazan
+          page: 90
         capital:
-          source: 'Handbook: House Davion, pg. 90'
+          source: 'HB:HD'
           value: Tikograd
+          page: 90
       - name:
-          source: 'Handbook: House Davion, pg. 90'
+          source: 'HB:HD'
           value: Krasnodar
+          page: 90
       - name:
-          source: 'Handbook: House Davion, pg. 90'
+          source: 'HB:HD'
           value: Pskov
+          page: 90
       - name:
-          source: 'Handbook: House Davion, pg. 90'
+          source: 'HB:HD'
           value: Ufa
+          page: 90
     satellite:
       - name:
-          source: 'Handbook: House Davion, pg. 90'
+          source: 'HB:HD'
           value: Andropov
+          page: 90
         size: giant
         icon: rock11
       - name:
-          source: 'Handbook: House Davion, pg. 90'
+          source: 'HB:HD'
           value: Andruyev
+          page: 90
         size: giant
         icon: rock8
       - name:
-          source: 'Handbook: House Davion, pg. 90'
+          source: 'HB:HD'
           value: Ashkilov
+          page: 90
         size: medium
         icon: rock14
     event:
@@ -150,6 +167,12 @@ planet:
       - date: '2240-01-01'
         population: 27415712.0
       - date: '2243-06-28'
+        # administration: TGU | National Capital
+        # administration: TGU | National Capital
+        # administration: TGU | National Capital
+        # administration: TGU | National Capital
+        # administration: TGU | National Capital
+        # administration: TGU | National Capital
         faction:
           source: canon
           value:
@@ -182,6 +205,12 @@ planet:
       - date: '2360-01-01'
         population: 1539699117.0
       - date: '2367-07-01'
+        # administration: CC | Tikonov Commonality | Region 4
+        # administration: CC | Tikonov Commonality | Region 4
+        # administration: CC | Tikonov Commonality | Region 4
+        # administration: CC | Tikonov Commonality | Region 4
+        # administration: CC | Tikonov Commonality | Region 4
+        # administration: CC | Tikonov Commonality | Region 4
         faction:
           source: canon
           value:
@@ -340,15 +369,43 @@ planet:
           value:
             - TFR
       - date: '3030-01-01'
+        # administration: LA | Sarna March | Tikonov Operational Area
+        # administration: LA | Sarna March | Tikonov Operational Area
+        # administration: LA | Sarna March | Tikonov Operational Area
+        # administration: LA | Sarna March | Tikonov Operational Area
+        # administration: LA | Sarna March | Tikonov Operational Area
+        # administration: LA | Sarna March | Tikonov Operational Area
         population: 5396833151.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '3032-10-02'
         faction:
           source: canon
           value:
             - FS
       - date: '3040-01-01'
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
         population: 5671025084.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
         faction:
           source: canon
           value:
@@ -371,6 +428,12 @@ planet:
           value:
             - FC
             - LA
+      - date: '3067-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CC
       - date: '3067-04-07'
         faction:
           source: canon
@@ -391,6 +454,12 @@ planet:
           source: canon
           value:
             - IND
+      - date: '3079-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - Stone
       - date: '3079-12-01'
         faction:
           source: canon
@@ -398,7 +467,25 @@ planet:
             - Stone
       - date: '3080-01-01'
         population: 6460821496.0
+      - date: '3081-01-01'
+        # administration: ROS | Prefecture IV | Region Capital
+        # administration: ROS | Prefecture IV | Region Capital
+        # administration: ROS | Prefecture IV | Region Capital
+        # administration: ROS | Prefecture IV | Region Capital
+        # administration: ROS | Prefecture IV | Region Capital
+        # administration: ROS | Prefecture IV | Region Capital
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ROS
       - date: '3085-07-21'
+        # administration: ROS | Prefecture IV | Region Capital
+        # administration: ROS | Prefecture IV | Region Capital
+        # administration: ROS | Prefecture IV | Region Capital
+        # administration: ROS | Prefecture IV | Region Capital
+        # administration: ROS | Prefecture IV | Region Capital
+        # administration: ROS | Prefecture IV | Region Capital
         faction:
           source: canon
           value:
@@ -419,6 +506,18 @@ planet:
         hpg:
           source: canon
           value: X
+      - date: '3135-01-01'
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FS
       - date: '3135-09-16'
         faction:
           source: canon
@@ -427,7 +526,18 @@ planet:
       - date: '3140-01-01'
         population: 7034006627.0
       - date: '3145-01-01'
+        # administration: CC | Tikonov Commonality | Region 7
+        # administration: CC | Tikonov Commonality | Region 7
+        # administration: CC | Tikonov Commonality | Region 7
+        # administration: CC | Tikonov Commonality | Region 7
+        # administration: CC | Tikonov Commonality | Region 7
+        # administration: CC | Tikonov Commonality | Region 7
         population: 7101858258.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CC
       - date: '3145-04-08'
         faction:
           source: canon
@@ -435,6 +545,12 @@ planet:
             - FS
             - CC
       - date: '3145-05-25'
+        # administration: CC | Tikonov Commonality | Region 11
+        # administration: CC | Tikonov Commonality | Region 11
+        # administration: CC | Tikonov Commonality | Region 11
+        # administration: CC | Tikonov Commonality | Region 11
+        # administration: CC | Tikonov Commonality | Region 11
+        # administration: CC | Tikonov Commonality | Region 11
         faction:
           source: canon
           value:

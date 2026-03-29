@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,15 +16,17 @@
 # affiliated with Microsoft.
 
 id: Giausar
-sucsId: 949
+sucsId: 950
 xcood: -207.85
 ycood: -26.411
 spectralType:
-  source: FedCom Civil War, pg. 198
+  source: FCCW
   value: M0III
+  page: 198
 primarySlot:
-  source: FedCom Civil War, pg. 198
+  source: FCCW
   value: 3
+  page: 198
 event:
   - date: '2363-02-02'
     nadirCharge: yes
@@ -72,62 +74,64 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.5
     sysPos:
-      source: FedCom Civil War, pg. 198
+      source: FCCW
       value: 3
+      page: 198
     icon: green12
     pressure:
-      source: FedCom Civil War, pg. 198
+      source: FCCW
       value: STANDARD
+      page: 198
     atmosphere:
-      source: FedCom Civil War, pg. 198
+      source: FCCW
       value: BREATHABLE
+      page: 198
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: FedCom Civil War, pg. 198
+      source: FCCW
       value: 1.0
+      page: 198
     diameter: 14700
     density: 4.780633137201
     dayLength: 15
     yearLength: 0.8
     temperature:
-      source: FedCom Civil War, pg. 198
+      source: FCCW
       value: 45
+      page: 198
     water:
-      source: FedCom Civil War, pg. 198
+      source: FCCW
       value: 70
+      page: 198
     lifeForm:
-      source: FedCom Civil War, pg. 198
+      source: FCCW
       value: MAMMAL
-    desc: Despite being overlooked for a long time, the planet Giausar, nearly by
-      accident, to be an almost perfect planet for human colonization. Giausar is
-      a planet of contrasts, the largest continent, Adelaide covers half of the planet
-      and is lush and green, covered with fertile plains, thick forests and rolling
-      hills, while Deception appears green from orbit, but only due to the reflection
-      of sunlight off of the green-tinted soil. All of Deception is desert and the
-      continent is located in the southern hemisphere. Giausar is an important trade
-      world between the Lyran Commonwealth and Free Worlds League and the planet itself
-      produces petroleum and natrual gas pulled from beneath Deception and from Adelaide,
-      coal, timber, and iron-ore are produced. Giausar is famous for its annual Oktoberfest
-      in honor of its predominantly German descended population.
+      page: 198
+    desc: Despite being overlooked for a long time, the planet Giausar, nearly by accident, to be an almost perfect planet for human colonization. Giausar is a planet of contrasts, the largest continent, Adelaide covers half of the planet and is lush and green, covered with fertile plains, thick forests and rolling hills, while Deception appears green from orbit, but only due to the reflection of sunlight off of the green-tinted soil. All of Deception is desert and the continent is located in the southern hemisphere. Giausar is an important trade world between the Lyran Commonwealth and Free Worlds League and the planet itself produces petroleum and natrual gas pulled from beneath Deception and from Adelaide, coal, timber, and iron-ore are produced. Giausar is famous for its annual Oktoberfest in honor of its predominantly German descended population.
     landmass:
       - name:
-          source: FedCom Civil War, pg. 198
+          source: FCCW
           value: Adelaide
+          page: 198
         capital:
-          source: FedCom Civil War, pg. 198
+          source: FCCW
           value: New Munich
+          page: 198
       - name:
-          source: FedCom Civil War, pg. 198
+          source: FCCW
           value: Deception
+          page: 198
     satellite:
       - name:
-          source: FedCom Civil War, pg. 198
+          source: FCCW
           value: Hoffnung
+          page: 198
         size: large
         icon: rock10
       - name:
-          source: FedCom Civil War, pg. 198
+          source: FCCW
           value: Neues Leben
+          page: 198
         size: medium
         icon: oddmoon1
     event:
@@ -162,6 +166,12 @@ planet:
           value:
             - LA
         population: 86139074.0
+      - date: '2366-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '2370-01-01'
         population: 122330583.0
       - date: '2380-01-01'
@@ -208,6 +218,18 @@ planet:
         population: 945167964.0
       - date: '2570-01-01'
         population: 959124627.0
+      - date: '2571-01-01'
+        # administration: LA | Protectorate of Donegal | Furillo Province
+        # administration: LA | Protectorate of Donegal | Furillo Province
+        # administration: LA | Protectorate of Donegal | Furillo Province
+        # administration: LA | Protectorate of Donegal | Furillo Province
+        # administration: LA | Protectorate of Donegal | Furillo Province
+        # administration: LA | Protectorate of Donegal | Furillo Province
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '2580-01-01'
         population: 964782429.0
       - date: '2590-01-01'
@@ -313,8 +335,25 @@ planet:
       - date: '3036-01-01'
         socioIndustrial: C-C-B-C-B
       - date: '3040-01-01'
+        # administration: FC | Tamarind March | Soilihull Operational Area
+        # administration: FC | Tamarind March | Soilihull Operational Area
+        # administration: FC | Tamarind March | Soilihull Operational Area
+        # administration: FC | Tamarind March | Soilihull Operational Area
+        # administration: FC | Tamarind March | Soilihull Operational Area
+        # administration: FC | Tamarind March | Soilihull Operational Area
         population: 779020512.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
+        # administration: FC | Tamarind March | Soilihull Operational Area
+        # administration: FC | Tamarind March | Soilihull Operational Area
+        # administration: FC | Tamarind March | Soilihull Operational Area
+        # administration: FC | Tamarind March | Soilihull Operational Area
+        # administration: FC | Tamarind March | Soilihull Operational Area
+        # administration: FC | Tamarind March | Soilihull Operational Area
         faction:
           source: canon
           value:
@@ -325,7 +364,25 @@ planet:
           value: B-B-A-B-B
       - date: '3050-01-01'
         population: 788425073.0
+      - date: '3057-01-01'
+        # administration: LA | Tamarind March | Soilihull Operational Area
+        # administration: LA | Tamarind March | Soilihull Operational Area
+        # administration: LA | Tamarind March | Soilihull Operational Area
+        # administration: LA | Tamarind March | Soilihull Operational Area
+        # administration: LA | Tamarind March | Soilihull Operational Area
+        # administration: LA | Tamarind March | Soilihull Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '3057-09-18'
+        # administration: LA | Bolan Province | Cavanaugh Theater
+        # administration: LA | Bolan Province | Cavanaugh Theater
+        # administration: LA | Bolan Province | Cavanaugh Theater
+        # administration: LA | Bolan Province | Cavanaugh Theater
+        # administration: LA | Bolan Province | Cavanaugh Theater
+        # administration: LA | Bolan Province | Cavanaugh Theater
         faction:
           source: canon
           value:
@@ -343,11 +400,29 @@ planet:
           value:
             - FC
             - LA
+      - date: '3067-01-01'
+        # administration: LA | Bolan Province | Cavanaugh Theater
+        # administration: LA | Bolan Province | Cavanaugh Theater
+        # administration: LA | Bolan Province | Cavanaugh Theater
+        # administration: LA | Bolan Province | Cavanaugh Theater
+        # administration: LA | Bolan Province | Cavanaugh Theater
+        # administration: LA | Bolan Province | Cavanaugh Theater
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '3067-04-20'
         faction:
           source: canon
           value:
             - LA
+      - date: '3068-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FWL
       - date: '3068-09-01'
         faction:
           source: canon
@@ -355,7 +430,25 @@ planet:
             - FWL
       - date: '3070-01-01'
         population: 810488682.0
+      - date: '3079-01-01'
+        # administration: LA | Bolan Province | Dixie Theater
+        # administration: LA | Bolan Province | Dixie Theater
+        # administration: LA | Bolan Province | Dixie Theater
+        # administration: LA | Bolan Province | Dixie Theater
+        # administration: LA | Bolan Province | Dixie Theater
+        # administration: LA | Bolan Province | Dixie Theater
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '3079-12-30'
+        # administration: LA | Bolan Province | Dixie Theater
+        # administration: LA | Bolan Province | Dixie Theater
+        # administration: LA | Bolan Province | Dixie Theater
+        # administration: LA | Bolan Province | Dixie Theater
+        # administration: LA | Bolan Province | Dixie Theater
+        # administration: LA | Bolan Province | Dixie Theater
         faction:
           source: canon
           value:
@@ -379,6 +472,12 @@ planet:
           value: X
       - date: '3140-01-01'
         population: 857856964.0
+      - date: '3145-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CWE
       - date: '3145-06-16'
         faction:
           source: canon

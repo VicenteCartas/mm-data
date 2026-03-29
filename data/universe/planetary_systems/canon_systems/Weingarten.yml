@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,15 +16,16 @@
 # affiliated with Microsoft.
 
 id: Weingarten
-sucsId: 2737
+sucsId: 2738
 xcood: -19.402
 ycood: 300.325
 spectralType:
   source: canon
   value: G6V
 primarySlot:
-  source: Masters and Minions, pg. 122
+  source: M&M
   value: 3
+  page: 122
 event:
   - date: '2627-11-25'
     zenithCharge: yes
@@ -68,46 +69,40 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.9
     sysPos:
-      source: Masters and Minions, pg. 122
+      source: M&M
       value: 3
+      page: 122
     icon: green48
     pressure:
-      source: Masters and Minions, pg. 122
+      source: M&M
       value: STANDARD
+      page: 122
     atmosphere:
-      source: Masters and Minions, pg. 122
+      source: M&M
       value: BREATHABLE
+      page: 122
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: Masters and Minions, pg. 122
+      source: M&M
       value: 1.0
+      page: 122
     diameter: 12364
     density: 5.683774263195
     dayLength: 25
     yearLength: 1.3
     temperature:
-      source: Masters and Minions, pg. 122
+      source: M&M
       value: 33
+      page: 122
     water:
-      source: Masters and Minions, pg. 122
+      source: M&M
       value: 71
+      page: 122
     lifeForm:
-      source: Masters and Minions, pg. 122
+      source: M&M
       value: MAMMAL
-    desc: Weingarten is a beautiful planet with long mild growing seasons that make
-      it ideal for agriculture, and for most of its history the planet was best known
-      for its numerous wineries. Due to the planets’ lack of military value and limited
-      industry the planet suffered very little during the Succession Wars and even
-      when battles did occur on the planet, attackers were usually careful to avoid
-      damaging the vineyards. Things remained much the same, even after the planet
-      was captured by Clan Wolf during Operation Revival, until the Word of Blake
-      Jihad inflicted serious damage on Tamar, the Wolves’ capital, and forced them
-      to relocate. With the relocation, the Wolves quickly expanded their military
-      bases and industrial production on Weingarten, going as far as to demolish several
-      vineyards to make way for their expanded military presence on the planet. The
-      Wolves’ capital returned to Tamar by 3080, unfortunately the damage was already
-      done and the industry was already in place, including the W-8 Facilities, capable
-      of producing multiple lines of ‘Mechs ‘by hand’.
+      page: 122
+    desc: Weingarten is a beautiful planet with long mild growing seasons that make it ideal for agriculture, and for most of its history the planet was best known for its numerous wineries. Due to the planets’ lack of military value and limited industry the planet suffered very little during the Succession Wars and even when battles did occur on the planet, attackers were usually careful to avoid damaging the vineyards. Things remained much the same, even after the planet was captured by Clan Wolf during Operation Revival, until the Word of Blake Jihad inflicted serious damage on Tamar, the Wolves’ capital, and forced them to relocate. With the relocation, the Wolves quickly expanded their military bases and industrial production on Weingarten, going as far as to demolish several vineyards to make way for their expanded military presence on the planet. The Wolves’ capital returned to Tamar by 3080, unfortunately the damage was already done and the industry was already in place, including the W-8 Facilities, capable of producing multiple lines of ‘Mechs ‘by hand’.
     landmass:
       - name:
           source: canon
@@ -126,12 +121,19 @@ planet:
           value: Neuberlin
     satellite:
       - name:
-          source: Masters and Minions, pg. 122
+          source: M&M
           value: Weintraube
+          page: 122
         size: giant
         icon: rock14
     event:
       - date: '2597-01-27'
+        # administration: LA | Tamar Pact | Tamar Domains
+        # administration: LA | Tamar Pact | Tamar Domains
+        # administration: LA | Tamar Pact | Tamar Domains
+        # administration: LA | Tamar Pact | Tamar Domains
+        # administration: LA | Tamar Pact | Tamar Domains
+        # administration: LA | Tamar Pact | Tamar Domains
         faction:
           source: canon
           value:
@@ -213,6 +215,12 @@ planet:
       - date: '2892-01-01'
         socioIndustrial: B-C-C-C-C
       - date: '2900-06-30'
+        # administration: DC | Rasalhague Military District | Radstadt Prefecture
+        # administration: DC | Rasalhague Military District | Radstadt Prefecture
+        # administration: DC | Rasalhague Military District | Radstadt Prefecture
+        # administration: DC | Rasalhague Military District | Radstadt Prefecture
+        # administration: DC | Rasalhague Military District | Radstadt Prefecture
+        # administration: DC | Rasalhague Military District | Radstadt Prefecture
         faction:
           source: canon
           value:
@@ -248,6 +256,12 @@ planet:
           value:
             - DC
       - date: '3030-01-01'
+        # administration: LA | Tamar Pact | Tamar Domains
+        # administration: LA | Tamar Pact | Tamar Domains
+        # administration: LA | Tamar Pact | Tamar Domains
+        # administration: LA | Tamar Pact | Tamar Domains
+        # administration: LA | Tamar Pact | Tamar Domains
+        # administration: LA | Tamar Pact | Tamar Domains
         faction:
           source: canon
           value:
@@ -261,7 +275,18 @@ planet:
           value:
             - FRR
       - date: '3040-01-01'
+        # administration: FR | Radstadt Province
+        # administration: FR | Radstadt Province
+        # administration: FR | Radstadt Province
+        # administration: FR | Radstadt Province
+        # administration: FR | Radstadt Province
+        # administration: FR | Radstadt Province
         population: 2693304742.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FR
       - date: '3044-01-01'
         socioIndustrial:
           source: canon
@@ -269,6 +294,12 @@ planet:
       - date: '3050-01-01'
         population: 2718197477.0
       - date: '3051-11-17'
+        # administration: CW | National Capital
+        # administration: CW | National Capital
+        # administration: CW | National Capital
+        # administration: CW | National Capital
+        # administration: CW | National Capital
+        # administration: CW | National Capital
         faction:
           source: canon
           value:

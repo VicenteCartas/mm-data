@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,15 +16,17 @@
 # affiliated with Microsoft.
 
 id: New Aragon
-sucsId: 1814
+sucsId: 1815
 xcood: 69.535
 ycood: -88.191
 spectralType:
-  source: FedCom Civil War, pg. 191
+  source: FCCW
   value: K2V
+  page: 191
 primarySlot:
-  source: FedCom Civil War, pg. 191
+  source: FCCW
   value: 3
+  page: 191
 event:
   - date: '2353-10-16'
     nadirCharge: yes
@@ -77,50 +79,61 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.49
     sysPos:
-      source: FedCom Civil War, pg. 191
+      source: FCCW
       value: 3
+      page: 191
     icon: green34
     pressure:
-      source: FedCom Civil War, pg. 191
+      source: FCCW
       value: STANDARD
+      page: 191
     atmosphere:
-      source: FedCom Civil War, pg. 191
+      source: FCCW
       value: BREATHABLE
+      page: 191
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: FedCom Civil War, pg. 191
+      source: FCCW
       value: 1.0
+      page: 191
     diameter: 13752
     density: 5.110177805644
     dayLength: 23
     yearLength: 0.9
     temperature:
-      source: FedCom Civil War, pg. 191
+      source: FCCW
       value: 45
+      page: 191
     water:
-      source: FedCom Civil War, pg. 191
+      source: FCCW
       value: 60
+      page: 191
     lifeForm:
-      source: FedCom Civil War, pg. 191
+      source: FCCW
       value: AMPHIBIAN
+      page: 191
     desc: |-
       The settlement of New Aragon was one of the most distressing chapters of the Exodus era. Developers sold land on New Aragon to settlers with the promise of fertile ground and abundant water but when they arrived they discovered that the land was mostly swampland infested with insect-like, biting, disease carrying creatures. In spite of this, the colony eventually expanded when the settlers drained the swamplands and turned it into productive farmland. The indigenous amphibious animals that have survived in preserves have also become a lucrative export for the settlers as gourmet food items.
 
       New Aragon is also a major medical research centre, including the preeminent New Aragon Institute for Epidemiology.
     landmass:
       - name:
-          source: FedCom Civil War, pg. 191
+          source: FCCW
           value: Dreymon
+          page: 191
       - name:
-          source: FedCom Civil War, pg. 191
+          source: FCCW
           value: Glastonbury
+          page: 191
         capital:
-          source: FedCom Civil War, pg. 191
+          source: FCCW
           value: Argos
+          page: 191
     satellite:
       - name:
-          source: FedCom Civil War, pg. 191
+          source: FCCW
           value: Dijon
+          page: 191
         size: medium
         icon: oddmoon2
     event:
@@ -177,6 +190,12 @@ planet:
       - date: '2360-01-01'
         population: 1132644113.0
       - date: '2367-07-01'
+        # administration: CC | Chesterton Commonality
+        # administration: CC | Chesterton Commonality
+        # administration: CC | Chesterton Commonality
+        # administration: CC | Chesterton Commonality
+        # administration: CC | Chesterton Commonality
+        # administration: CC | Chesterton Commonality
         faction:
           source: canon
           value:
@@ -334,6 +353,12 @@ planet:
             - FS
             - CC
       - date: '3008-04-22'
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
         faction:
           source: canon
           value:
@@ -348,12 +373,30 @@ planet:
           value: 2349000000.0
       - date: '3030-01-01'
         population: 2240371926.0
+      - date: '3040-01-01'
+        # administration: FC | Capellan March | Kathil Operational Area
+        # administration: FC | Capellan March | Kathil Operational Area
+        # administration: FC | Capellan March | Kathil Operational Area
+        # administration: FC | Capellan March | Kathil Operational Area
+        # administration: FC | Capellan March | Kathil Operational Area
+        # administration: FC | Capellan March | Kathil Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-06-28'
         population: 1967963128.0
         socioIndustrial:
           source: canon
           value: C-C-B-C-B
       - date: '3040-01-19'
+        # administration: FC | Capellan March | Kathil Operational Area
+        # administration: FC | Capellan March | Kathil Operational Area
+        # administration: FC | Capellan March | Kathil Operational Area
+        # administration: FC | Capellan March | Kathil Operational Area
+        # administration: FC | Capellan March | Kathil Operational Area
+        # administration: FC | Capellan March | Kathil Operational Area
         faction:
           source: canon
           value:
@@ -372,12 +415,42 @@ planet:
           value:
             - FC
             - LA
+      - date: '3063-01-01'
+        # administration: FC | Capellan March | Kathil Operational Area
+        # administration: FC | Capellan March | Kathil Operational Area
+        # administration: FC | Capellan March | Kathil Operational Area
+        # administration: FC | Capellan March | Kathil Operational Area
+        # administration: FC | Capellan March | Kathil Operational Area
+        # administration: FC | Capellan March | Kathil Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3063-05-11'
         faction:
           source: canon
           value:
             - FC
+      - date: '3067-01-01'
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FS
       - date: '3067-04-20'
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
         faction:
           source: canon
           value:
@@ -390,13 +463,37 @@ planet:
       - date: '3070-01-01'
         population: 1466841650.0
       - date: '3078-04-01'
+        # administration: CC | Liao Commonality | Region 3
+        # administration: CC | Liao Commonality | Region 3
+        # administration: CC | Liao Commonality | Region 3
+        # administration: CC | Liao Commonality | Region 3
+        # administration: CC | Liao Commonality | Region 3
+        # administration: CC | Liao Commonality | Region 3
         faction:
           source: canon
           value:
             - CC
       - date: '3080-01-01'
         population: 1483362621.0
+      - date: '3085-01-01'
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ROS
       - date: '3085-09-07'
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
         faction:
           source: canon
           value:
@@ -415,6 +512,12 @@ planet:
           value:
             - CC
       - date: '3113-05-01'
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
         faction:
           source: canon
           value:
@@ -423,6 +526,12 @@ planet:
         population: 1506985883.0
       - date: '3130-01-01'
         population: 1509398991.0
+      - date: '3135-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3135-10-01'
         faction:
           source: canon
@@ -430,7 +539,25 @@ planet:
             - IND
       - date: '3140-01-01'
         population: 1516661522.0
+      - date: '3145-01-01'
+        # administration: CC | Chesterton Commonality
+        # administration: CC | Chesterton Commonality
+        # administration: CC | Chesterton Commonality
+        # administration: CC | Chesterton Commonality
+        # administration: CC | Chesterton Commonality
+        # administration: CC | Chesterton Commonality
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CC
       - date: '3145-05-01'
+        # administration: CC | Chesterton Commonality
+        # administration: CC | Chesterton Commonality
+        # administration: CC | Chesterton Commonality
+        # administration: CC | Chesterton Commonality
+        # administration: CC | Chesterton Commonality
+        # administration: CC | Chesterton Commonality
         faction:
           source: canon
           value:

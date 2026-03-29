@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,15 +16,17 @@
 # affiliated with Microsoft.
 
 id: Novaya Zemlya
-sucsId: 1901
+sucsId: 1902
 xcood: 180.681
 ycood: -183.311
 spectralType:
-  source: 'Handbook: House Davion, pg. 90'
+  source: 'HB:HD'
   value: G2IV
+  page: 90
 primarySlot:
-  source: 'Handbook: House Davion, pg. 90'
+  source: 'HB:HD'
   value: 4
+  page: 90
 event:
   - date: '2366-09-13'
     zenithCharge: yes
@@ -85,32 +87,39 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 1.6
     sysPos:
-      source: 'Handbook: House Davion, pg. 90'
+      source: 'HB:HD'
       value: 4
+      page: 90
     icon: green25
     pressure:
-      source: 'Handbook: House Davion, pg. 90'
+      source: 'HB:HD'
       value: STANDARD
+      page: 90
     atmosphere:
-      source: 'Handbook: House Davion, pg. 90'
+      source: 'HB:HD'
       value: BREATHABLE
+      page: 90
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'Handbook: House Davion, pg. 90'
+      source: 'HB:HD'
       value: 1.04
+      page: 90
     diameter: 14807
     density: 4.935904489245
     dayLength: 21
     yearLength: 2.3
     temperature:
-      source: 'Handbook: House Davion, pg. 90'
+      source: 'HB:HD'
       value: 30
+      page: 90
     water:
-      source: 'Handbook: House Davion, pg. 90'
+      source: 'HB:HD'
       value: 48
+      page: 90
     lifeForm:
-      source: 'Handbook: House Davion, pg. 90'
+      source: 'HB:HD'
       value: PLANT
+      page: 90
     desc: |-
       Novaya Zemlya was initially a prosperous and thriving planet which was initially colonized in the 23rd century, the planet remained independent until choosing to join the Federated Suns in 2325. Unfortunately the planet suffered a cataclysmic event in 2399, namely the first orbital bombardment in history. The Capellan Confederation, after suffering a series of humiliating military defeats to the Federated Suns, sent a fleet to raze the planet. The attacks wiped out nearly 75% of life on the planet and the survivors had to face massive radiation and the resulting nuclear winter. Even though relief aid arrived within days, recovery was slow despite the best efforts of the Federated Suns and later the Star League. The planet only started to truly began to thrive again in the 31st century after more than 600 years.
 
@@ -121,8 +130,9 @@ planet:
           source: canon
           value: Yushny
         capital:
-          source: 'Handbook: House Davion, pg. 90'
+          source: 'HB:HD'
           value: Arkangel
+          page: 90
       - name:
           source: canon
           value: Barents
@@ -134,18 +144,21 @@ planet:
           value: Severny
     satellite:
       - name:
-          source: 'Handbook: House Davion, pg. 90'
+          source: 'HB:HD'
           value: Doriya
+          page: 90
         size: medium
         icon: oddmoon2
       - name:
-          source: 'Handbook: House Davion, pg. 90'
+          source: 'HB:HD'
           value: Kanto's Ground
+          page: 90
         size: medium
         icon: oddmoon1
       - name:
-          source: 'Handbook: House Davion, pg. 90'
+          source: 'HB:HD'
           value: Ust
+          page: 90
         size: medium
         icon: rock8
     event:
@@ -178,6 +191,12 @@ planet:
       - date: '2340-01-01'
         population: 6426982.0
       - date: '2341-09-22'
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
         faction:
           source: canon
           value:
@@ -336,8 +355,25 @@ planet:
       - date: '3038-01-01'
         socioIndustrial: B-C-B-D-C
       - date: '3040-01-01'
+        # administration: FC | Capellan March | Kathil Operational Area
+        # administration: FC | Capellan March | Kathil Operational Area
+        # administration: FC | Capellan March | Kathil Operational Area
+        # administration: FC | Capellan March | Kathil Operational Area
+        # administration: FC | Capellan March | Kathil Operational Area
+        # administration: FC | Capellan March | Kathil Operational Area
         population: 42378238.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
+        # administration: FC | Capellan March | Kathil Operational Area
+        # administration: FC | Capellan March | Kathil Operational Area
+        # administration: FC | Capellan March | Kathil Operational Area
+        # administration: FC | Capellan March | Kathil Operational Area
+        # administration: FC | Capellan March | Kathil Operational Area
+        # administration: FC | Capellan March | Kathil Operational Area
         faction:
           source: canon
           value:
@@ -351,10 +387,27 @@ planet:
       - date: '3060-01-01'
         population: 43555456.0
       - date: '3067-01-01'
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
         population:
           source: canon
           value: 43980000.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FS
       - date: '3067-04-20'
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
         faction:
           source: canon
           value:

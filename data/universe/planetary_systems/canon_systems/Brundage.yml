@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -20,10 +20,10 @@ sucsId: 408
 xcood: 403.502
 ycood: 49.323
 spectralType:
-  source: House Davion
+  source: HB:HD
   value: G4III
 primarySlot:
-  source: House Davion
+  source: HB:HD
   value: 4
 event:
   - date: '2363-03-13'
@@ -83,7 +83,7 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 1.44
     sysPos:
-      source: House Davion
+      source: HB:HD
       value: 4
     icon: green1
     pressure: STANDARD
@@ -97,17 +97,9 @@ planet:
     temperature: 33
     water: 39
     lifeForm:
-      source: House Davion
+      source: HB:HD
       value: MAMMAL
-    desc: Brundage is a lightly populated planet with scarce water supplies. The planet’s
-      early colonists were drawn by the many mountain-ranges covering the planet and
-      the hopes that they would be rich in ores and other valuable raw materials.
-      Unfortunately, this was not the case and many settlers abandoned the planet.
-      The remaining colonists primarily gravitated to the water-fed valleys, which
-      were also home to the planet’s arable land. In the early 31st century reports
-      of a treasure-trove of Star League era supplies drew a massive influx of treasure
-      hunters that nearly doubled the population and put a critical strain on the
-      planet’s food supplies.
+    desc: Brundage is a lightly populated planet with scarce water supplies. The planet’s early colonists were drawn by the many mountain-ranges covering the planet and the hopes that they would be rich in ores and other valuable raw materials. Unfortunately, this was not the case and many settlers abandoned the planet. The remaining colonists primarily gravitated to the water-fed valleys, which were also home to the planet’s arable land. In the early 31st century reports of a treasure-trove of Star League era supplies drew a massive influx of treasure hunters that nearly doubled the population and put a critical strain on the planet’s food supplies.
     smallMoons: 8
     landmass:
       - name: Perkins
@@ -115,6 +107,12 @@ planet:
       - name: Meredith
     event:
       - date: '2360-02-01'
+        # administration: FS | Draconis March | Woodbine Operational Area
+        # administration: FS | Draconis March | Woodbine Operational Area
+        # administration: FS | Draconis March | Woodbine Operational Area
+        # administration: FS | Draconis March | Woodbine Operational Area
+        # administration: FS | Draconis March | Woodbine Operational Area
+        # administration: FS | Draconis March | Woodbine Operational Area
         faction:
           source: canon
           value:
@@ -272,8 +270,25 @@ planet:
       - date: '3037-01-01'
         socioIndustrial: D-B-B-D-C
       - date: '3040-01-01'
+        # administration: FC | Draconis March | Woodbine Operational Area
+        # administration: FC | Draconis March | Woodbine Operational Area
+        # administration: FC | Draconis March | Woodbine Operational Area
+        # administration: FC | Draconis March | Woodbine Operational Area
+        # administration: FC | Draconis March | Woodbine Operational Area
+        # administration: FC | Draconis March | Woodbine Operational Area
         population: 169501668.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
+        # administration: FC | Draconis March | Woodbine Operational Area
+        # administration: FC | Draconis March | Woodbine Operational Area
+        # administration: FC | Draconis March | Woodbine Operational Area
+        # administration: FC | Draconis March | Woodbine Operational Area
+        # administration: FC | Draconis March | Woodbine Operational Area
+        # administration: FC | Draconis March | Woodbine Operational Area
         faction:
           source: canon
           value:
@@ -284,7 +299,25 @@ planet:
         population: 170555843.0
       - date: '3060-01-01'
         population: 171530787.0
+      - date: '3067-01-01'
+        # administration: FS | Draconis March | Woodbine Operational Area
+        # administration: FS | Draconis March | Woodbine Operational Area
+        # administration: FS | Draconis March | Woodbine Operational Area
+        # administration: FS | Draconis March | Woodbine Operational Area
+        # administration: FS | Draconis March | Woodbine Operational Area
+        # administration: FS | Draconis March | Woodbine Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FS
       - date: '3067-04-20'
+        # administration: FS | Draconis March | Woodbine Operational Area
+        # administration: FS | Draconis March | Woodbine Operational Area
+        # administration: FS | Draconis March | Woodbine Operational Area
+        # administration: FS | Draconis March | Woodbine Operational Area
+        # administration: FS | Draconis March | Woodbine Operational Area
+        # administration: FS | Draconis March | Woodbine Operational Area
         faction:
           source: canon
           value:
@@ -313,6 +346,12 @@ planet:
         population: 192243494.0
       - date: '3145-01-01'
         population: 193865141.0
+      - date: '3152-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - DC/FS
   - name: Perkana Belt
     type: ASTEROID_BELT
     orbitalDist: 2.52

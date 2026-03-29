@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Royal
-sucsId: 2183
+sucsId: 2184
 xcood: 222.559
 ycood: 44.416
 spectralType:
@@ -55,18 +55,7 @@ planet:
     lifeForm:
       source: canon
       value: REPTILE
-    desc: Royal is a comfortable garden world with an abundance of natural resources
-      and has spent most of its history as a fiercly contested battleground between
-      the Federated Suns and the Draconis Combine. Despite the excellent habitable
-      conditions and abundant resources, the constant raids and multiple invasions
-      have crippled technology and industry on the planet before it can ever get deeply
-      established. Royal was the focal point during the Second Hidden War during the
-      Star League and the brutal fighting on Royal saw First Prince Joseph Davion
-      personally take charge of the Federated Suns forces on planet until his Marauder
-      was disabled and he was pulled from the cockpit by Combine infantry, forced
-      to kneel and then beheaded. The loss of the First Prince left the Federated
-      Suns forces in disarray and they were quickly forced from the planet, which
-      remained in Combine hands until the Star League settled the dispute.
+    desc: Royal is a comfortable garden world with an abundance of natural resources and has spent most of its history as a fiercly contested battleground between the Federated Suns and the Draconis Combine. Despite the excellent habitable conditions and abundant resources, the constant raids and multiple invasions have crippled technology and industry on the planet before it can ever get deeply established. Royal was the focal point during the Second Hidden War during the Star League and the brutal fighting on Royal saw First Prince Joseph Davion personally take charge of the Federated Suns forces on planet until his Marauder was disabled and he was pulled from the cockpit by Combine infantry, forced to kneel and then beheaded. The loss of the First Prince left the Federated Suns forces in disarray and they were quickly forced from the planet, which remained in Combine hands until the Star League settled the dispute.
     landmass:
       - name: Tregear
         capital: Koutaniemi
@@ -103,6 +92,12 @@ planet:
             - FS
       - date: '2360-01-01'
         population: 12465447.0
+      - date: '2366-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '2370-01-01'
         population: 21482456.0
       - date: '2380-01-01'
@@ -146,6 +141,18 @@ planet:
         population: 418686156.0
       - date: '2570-01-01'
         population: 427443004.0
+      - date: '2571-01-01'
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FS
       - date: '2580-01-01'
         population: 436178060.0
       - date: '2590-01-01'
@@ -212,6 +219,18 @@ planet:
         population: 462076173.0
       - date: '2860-01-01'
         population: 455520915.0
+      - date: '2864-01-01'
+        # administration: DC | Benjamin Military District | Irurzun Prefecture
+        # administration: DC | Benjamin Military District | Irurzun Prefecture
+        # administration: DC | Benjamin Military District | Irurzun Prefecture
+        # administration: DC | Benjamin Military District | Irurzun Prefecture
+        # administration: DC | Benjamin Military District | Irurzun Prefecture
+        # administration: DC | Benjamin Military District | Irurzun Prefecture
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - DC
       - date: '2864-12-23'
         faction:
           source: canon
@@ -234,6 +253,12 @@ planet:
       - date: '2930-01-01'
         population: 449058653.0
       - date: '2935-04-29'
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
         faction:
           source: canon
           value:
@@ -256,6 +281,18 @@ planet:
         population: 435080049.0
       - date: '3020-01-01'
         population: 434608912.0
+      - date: '3030-01-01'
+        # administration: DC | Galedon Military District | Matsuida Prefecture
+        # administration: DC | Galedon Military District | Matsuida Prefecture
+        # administration: DC | Galedon Military District | Matsuida Prefecture
+        # administration: DC | Galedon Military District | Matsuida Prefecture
+        # administration: DC | Galedon Military District | Matsuida Prefecture
+        # administration: DC | Galedon Military District | Matsuida Prefecture
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - DC
       - date: '3030-02-26'
         faction:
           source: canon
@@ -263,8 +300,25 @@ planet:
             - DC
         population: 436505814.0
       - date: '3040-01-01'
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
         population: 440496146.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
         faction:
           source: canon
           value:
@@ -277,7 +331,25 @@ planet:
         population: 443723533.0
       - date: '3060-01-01'
         population: 446706463.0
+      - date: '3067-01-01'
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FS
       - date: '3067-04-20'
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
         faction:
           source: canon
           value:
@@ -304,7 +376,25 @@ planet:
           value: X
       - date: '3140-01-01'
         population: 495467468.0
+      - date: '3145-01-01'
+        # administration: DC | New Samarkand Military District | Barlow's End Prefecture
+        # administration: DC | New Samarkand Military District | Barlow's End Prefecture
+        # administration: DC | New Samarkand Military District | Barlow's End Prefecture
+        # administration: DC | New Samarkand Military District | Barlow's End Prefecture
+        # administration: DC | New Samarkand Military District | Barlow's End Prefecture
+        # administration: DC | New Samarkand Military District | Barlow's End Prefecture
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - DC
       - date: '3145-08-07'
+        # administration: DC | New Samarkand Military District | Barlow's End Prefecture
+        # administration: DC | New Samarkand Military District | Barlow's End Prefecture
+        # administration: DC | New Samarkand Military District | Barlow's End Prefecture
+        # administration: DC | New Samarkand Military District | Barlow's End Prefecture
+        # administration: DC | New Samarkand Military District | Barlow's End Prefecture
+        # administration: DC | New Samarkand Military District | Barlow's End Prefecture
         faction:
           source: canon
           value:
@@ -335,8 +425,7 @@ planet:
     icon: greenhouse8
     pressure: HIGH
     atmosphere: TOXIC_POISON
-    composition: Nitrogen and Carbon Dioxide, plus trace amounts of Nitrous Oxide
-      and Nitric Acid
+    composition: Nitrogen and Carbon Dioxide, plus trace amounts of Nitrous Oxide and Nitric Acid
     gravity: 0.5
     diameter: 5500
     density: 6.3337

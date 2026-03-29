@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,15 +16,17 @@
 # affiliated with Microsoft.
 
 id: New Ivaarsen
-sucsId: 1837
+sucsId: 1838
 xcood: 226.948
 ycood: 34.591
 spectralType:
-  source: 'Handbook: House Davion, pg. 101'
+  source: 'HB:HD'
   value: K1V
+  page: 101
 primarySlot:
-  source: 'Handbook: House Davion, pg. 101'
+  source: 'HB:HD'
   value: 3
+  page: 101
 event:
   - date: '2379-02-28'
     zenithCharge: yes
@@ -72,32 +74,39 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.56
     sysPos:
-      source: 'Handbook: House Davion, pg. 101'
+      source: 'HB:HD'
       value: 3
+      page: 101
     icon: green47
     pressure:
-      source: 'Handbook: House Davion, pg. 101'
+      source: 'HB:HD'
       value: STANDARD
+      page: 101
     atmosphere:
-      source: 'Handbook: House Davion, pg. 101'
+      source: 'HB:HD'
       value: BREATHABLE
+      page: 101
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'Handbook: House Davion, pg. 101'
+      source: 'HB:HD'
       value: 1.1
+      page: 101
     diameter: 12243
     density: 6.314323055065
     dayLength: 25
     yearLength: 1.0
     temperature:
-      source: 'Handbook: House Davion, pg. 101'
+      source: 'HB:HD'
       value: 36
+      page: 101
     water:
-      source: 'Handbook: House Davion, pg. 101'
+      source: 'HB:HD'
       value: 62
+      page: 101
     lifeForm:
-      source: 'Handbook: House Davion, pg. 101'
+      source: 'HB:HD'
       value: BIRD
+      page: 101
     desc: |-
       Settled in the 23rd century, New Ivaarsen was colonized by Nordic explorers searching for a terran-like planet comfortable for human life. New Ivaarsen was pretty close, though it always came up lacking when compared to other gems of the Inner Sphere like New Avalon and Tikonov. However, these comparisons are likely what drove the planet to become so technologically and industrially advanced.
 
@@ -110,8 +119,9 @@ planet:
     smallMoons: 7
     landmass:
       - capital:
-          source: 'Handbook: House Davion, pg. 101'
+          source: 'HB:HD'
           value: Fluute
+          page: 101
     event:
       - date: '2170-05-28'
         faction:
@@ -162,6 +172,12 @@ planet:
       - date: '2350-01-01'
         population: 2055810913.0
       - date: '2355-03-03'
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
         faction:
           source: canon
           value:
@@ -215,6 +231,12 @@ planet:
       - date: '2570-01-01'
         population: 5539486929.0
       - date: '2571-03-14'
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
         faction:
           source: canon
           value:
@@ -281,7 +303,18 @@ planet:
           value:
             - DC
       - date: '2830-01-01'
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
         population: 5685486258.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FS
       - date: '2840-01-01'
         population: 5700572570.0
       - date: '2841-01-01'
@@ -290,6 +323,18 @@ planet:
         population: 5721986513.0
       - date: '2860-01-01'
         population: 5759045794.0
+      - date: '2864-01-01'
+        # administration: DC | Benjamin Military District | Irurzun Prefecture
+        # administration: DC | Benjamin Military District | Irurzun Prefecture
+        # administration: DC | Benjamin Military District | Irurzun Prefecture
+        # administration: DC | Benjamin Military District | Irurzun Prefecture
+        # administration: DC | Benjamin Military District | Irurzun Prefecture
+        # administration: DC | Benjamin Military District | Irurzun Prefecture
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - DC
       - date: '2864-01-08'
         faction:
           source: canon
@@ -316,6 +361,12 @@ planet:
       - date: '2950-01-01'
         population: 6089647420.0
       - date: '2955-05-31'
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
         faction:
           source: canon
           value:
@@ -335,6 +386,12 @@ planet:
       - date: '3020-01-01'
         population: 6279676636.0
       - date: '3025-11-18'
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
         faction:
           source: canon
           value:
@@ -342,8 +399,25 @@ planet:
       - date: '3030-01-01'
         population: 6314276391.0
       - date: '3040-01-01'
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
         population: 6410345461.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
         faction:
           source: canon
           value:
@@ -361,10 +435,27 @@ planet:
       - date: '3060-01-01'
         population: 6601607391.0
       - date: '3067-01-01'
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
         population:
           source: canon
           value: 6665288000.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FS
       - date: '3067-04-20'
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
         faction:
           source: canon
           value:
@@ -391,7 +482,25 @@ planet:
           value: X
       - date: '3140-01-01'
         population: 7197351877.0
+      - date: '3145-01-01'
+        # administration: DC | New Samarkand Military District | Barlow's End Prefecture
+        # administration: DC | New Samarkand Military District | Barlow's End Prefecture
+        # administration: DC | New Samarkand Military District | Barlow's End Prefecture
+        # administration: DC | New Samarkand Military District | Barlow's End Prefecture
+        # administration: DC | New Samarkand Military District | Barlow's End Prefecture
+        # administration: DC | New Samarkand Military District | Barlow's End Prefecture
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - DC
       - date: '3145-08-03'
+        # administration: DC | New Samarkand Military District | Barlow's End Prefecture
+        # administration: DC | New Samarkand Military District | Barlow's End Prefecture
+        # administration: DC | New Samarkand Military District | Barlow's End Prefecture
+        # administration: DC | New Samarkand Military District | Barlow's End Prefecture
+        # administration: DC | New Samarkand Military District | Barlow's End Prefecture
+        # administration: DC | New Samarkand Military District | Barlow's End Prefecture
         faction:
           source: canon
           value:

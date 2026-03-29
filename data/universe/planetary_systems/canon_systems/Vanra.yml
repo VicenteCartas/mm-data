@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,15 +16,17 @@
 # affiliated with Microsoft.
 
 id: Vanra
-sucsId: 2659
+sucsId: 2660
 xcood: -48.342
 ycood: -163.191
 spectralType:
-  source: 'Handbook: House Marik, pg. 76'
+  source: 'HB:HM'
   value: G5II
+  page: 76
 primarySlot:
-  source: 'Handbook: House Marik, pg. 76'
+  source: 'HB:HM'
   value: 4
+  page: 76
 event:
   - date: '2391-08-05'
     nadirCharge: yes
@@ -81,50 +83,58 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 1.44
     sysPos:
-      source: 'Handbook: House Marik, pg. 76'
+      source: 'HB:HM'
       value: 4
+      page: 76
     icon: green5
     pressure:
-      source: 'Handbook: House Marik, pg. 76'
+      source: 'HB:HM'
       value: STANDARD
+      page: 76
     atmosphere:
-      source: 'Handbook: House Marik, pg. 76'
+      source: 'HB:HM'
       value: BREATHABLE
+      page: 76
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'Handbook: House Marik, pg. 76'
+      source: 'HB:HM'
       value: 0.95
+      page: 76
     diameter: 10271
     density: 6.499788110524
     dayLength: 25
     yearLength: 2.0
     temperature:
-      source: 'Handbook: House Marik, pg. 76'
+      source: 'HB:HM'
       value: 20
+      page: 76
     water:
-      source: 'Handbook: House Marik, pg. 76'
+      source: 'HB:HM'
       value: 55
+      page: 76
     lifeForm:
-      source: 'Handbook: House Marik, pg. 76'
+      source: 'HB:HM'
       value: REPTILE
-    desc: Vanra is comfortable for inhabitation, if slightly colder than Terra. The
-      planet is well developed in terms of industry and technology but it does not
-      have an abundance of natural resources or agriculture, only enough to be self
-      sufficient on both counts. The people have Vanra have a grand military tradition.
+      page: 76
+    desc: Vanra is comfortable for inhabitation, if slightly colder than Terra. The planet is well developed in terms of industry and technology but it does not have an abundance of natural resources or agriculture, only enough to be self sufficient on both counts. The people have Vanra have a grand military tradition.
     landmass:
       - name:
-          source: 'Objectives: Free Worlds League, p. 25'
+          source: 'Obj:FWL'
           value: Cantania
+          page: 25
         capital:
-          source: 'Objectives: Free Worlds League, p. 25'
+          source: 'Obj:FWL'
           value: Orloff City
+          page: 25
       - name:
-          source: 'Objectives: Free Worlds League, p. 25'
+          source: 'Obj:FWL'
           value: Modena
+          page: 25
     satellite:
       - name:
-          source: 'Objectives: Free Worlds League, p. 25'
+          source: 'Obj:FWL'
           value: Citadel
+          page: 25
         size: medium
         icon: oddmoon1
     event:
@@ -141,6 +151,12 @@ planet:
         population: 574674.0
       - date: '2270-01-01'
         population: 1576706.0
+      - date: '2271-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FoO
       - date: '2271-06-01'
         faction:
           source: canon
@@ -158,6 +174,18 @@ planet:
           value:
             - CCom
         population: 27828568.0
+      - date: '2317-01-01'
+        # administration: FWL | Federation of Oriente
+        # administration: FWL | Federation of Oriente
+        # administration: FWL | Federation of Oriente
+        # administration: FWL | Federation of Oriente
+        # administration: FWL | Federation of Oriente
+        # administration: FWL | Federation of Oriente
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FWL
       - date: '2320-01-01'
         population: 45910998.0
       - date: '2330-01-01'
@@ -168,7 +196,19 @@ planet:
         population: 141743580.0
       - date: '2360-01-01'
         population: 187322419.0
+      - date: '2366-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CCom
       - date: '2367-07-01'
+        # administration: CC | Capella Commonality | Region 1
+        # administration: CC | Capella Commonality | Region 1
+        # administration: CC | Capella Commonality | Region 1
+        # administration: CC | Capella Commonality | Region 1
+        # administration: CC | Capella Commonality | Region 1
+        # administration: CC | Capella Commonality | Region 1
         faction:
           source: canon
           value:
@@ -282,7 +322,25 @@ planet:
         population: 1193034248.0
       - date: '2820-01-01'
         population: 1193321167.0
+      - date: '2821-01-01'
+        # administration: FWL | Duchy of Orloff
+        # administration: FWL | Duchy of Orloff
+        # administration: FWL | Duchy of Orloff
+        # administration: FWL | Duchy of Orloff
+        # administration: FWL | Duchy of Orloff
+        # administration: FWL | Duchy of Orloff
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FWL
       - date: '2821-12-12'
+        # administration: FWL | Duchy of Orloff
+        # administration: FWL | Duchy of Orloff
+        # administration: FWL | Duchy of Orloff
+        # administration: FWL | Duchy of Orloff
+        # administration: FWL | Duchy of Orloff
+        # administration: FWL | Duchy of Orloff
         faction:
           source: canon
           value:
@@ -345,6 +403,12 @@ planet:
           value:
             - FWLR
       - date: '3015-03-15'
+        # administration: FWL | Duchy of Orloff
+        # administration: FWL | Duchy of Orloff
+        # administration: FWL | Duchy of Orloff
+        # administration: FWL | Duchy of Orloff
+        # administration: FWL | Duchy of Orloff
+        # administration: FWL | Duchy of Orloff
         faction:
           source: canon
           value:
@@ -378,8 +442,20 @@ planet:
             - DoO
       - date: '3080-01-01'
         population: 1271940327.0
+      - date: '3085-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - DO
       - date: '3090-01-01'
         population: 1288841240.0
+      - date: '3095-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - OP
       - date: '3100-01-01'
         population: 1304139650.0
       - date: '3110-01-01'
@@ -397,8 +473,25 @@ planet:
       - date: '3140-01-01'
         population: 1361168540.0
       - date: '3145-01-01'
+        # administration: FWL | Oriente Protectorate
+        # administration: FWL | Oriente Protectorate
+        # administration: FWL | Oriente Protectorate
+        # administration: FWL | Oriente Protectorate
+        # administration: FWL | Oriente Protectorate
+        # administration: FWL | Oriente Protectorate
         population: 1371278548.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FWL
       - date: '3151-01-01'
+        # administration: FWL | Oriente Protectorate
+        # administration: FWL | Oriente Protectorate
+        # administration: FWL | Oriente Protectorate
+        # administration: FWL | Oriente Protectorate
+        # administration: FWL | Oriente Protectorate
+        # administration: FWL | Oriente Protectorate
         faction:
           source: sucs
           value:

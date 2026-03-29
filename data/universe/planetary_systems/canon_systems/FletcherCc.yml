@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,15 +16,17 @@
 # affiliated with Microsoft.
 
 id: Fletcher (CC)
-sucsId: 881
+sucsId: 882
 xcood: 46.777
 ycood: -23.569
 spectralType:
-  source: 'Field Manual: Mercenaries, Revised, pg. 18'
+  source: 'FM:MR'
   value: G4V
+  page: 18
 primarySlot:
-  source: 'Field Manual: Mercenaries, Revised, pg. 18'
+  source: 'FM:MR'
   value: 7
+  page: 18
 event:
   - date: '2384-02-10'
     zenithCharge: yes
@@ -133,32 +135,39 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.9
     sysPos:
-      source: 'Field Manual: Mercenaries, Revised, pg. 18'
+      source: 'FM:MR'
       value: 7
+      page: 18
     icon: wet21
     pressure:
-      source: 'Field Manual: Mercenaries, Revised, pg. 18'
+      source: 'FM:MR'
       value: HIGH
+      page: 18
     atmosphere:
-      source: 'Field Manual: Mercenaries, Revised, pg. 18'
+      source: 'FM:MR'
       value: BREATHABLE
+      page: 18
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'Field Manual: Mercenaries, Revised, pg. 18'
+      source: 'FM:MR'
       value: 1.3
+      page: 18
     diameter: 15302
     density: 5.9702385367
     dayLength: 18
     yearLength: 1.3
     temperature:
-      source: 'Field Manual: Mercenaries, Revised, pg. 18'
+      source: 'FM:MR'
       value: 30
+      page: 18
     water:
-      source: 'Field Manual: Mercenaries, Revised, pg. 18'
+      source: 'FM:MR'
       value: 90
+      page: 18
     lifeForm:
-      source: 'Field Manual: Mercenaries, Revised, pg. 18'
+      source: 'FM:MR'
       value: AMPHIBIAN
+      page: 18
     desc: |-
       House Fletcher were ardent supporters of House Marik until the Duke of Oriente attacked the first planet of Fletcher, in the Free Worlds League, in 2368. House Fletcher moved, along with millions of their followers to the Capellan Confederation planet of the same name.
 
@@ -166,11 +175,12 @@ planet:
     smallMoons: 1
     landmass:
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Hamilton
         capital:
-          source: 'Field Manual: Mercenaries, Revised, pg. 18'
+          source: 'FM:MR'
           value: Royce
+          page: 18
     event:
       - date: '2264-06-21'
         faction:
@@ -192,6 +202,12 @@ planet:
       - date: '2310-01-01'
         population: 10157222.0
       - date: '2320-03-28'
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
         faction:
           source: canon
           value:
@@ -290,6 +306,18 @@ planet:
         population: 1470259640.0
       - date: '2760-01-01'
         population: 1463395418.0
+      - date: '2767-01-01'
+        # administration: AE | Lockdale Province
+        # administration: AE | Lockdale Province
+        # administration: AE | Lockdale Province
+        # administration: AE | Lockdale Province
+        # administration: AE | Lockdale Province
+        # administration: AE | Lockdale Province
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - AE
       - date: '2767-12-05'
         faction:
           source: canon
@@ -298,6 +326,12 @@ planet:
       - date: '2770-01-01'
         population: 1448928491.0
       - date: '2779-09-06'
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
         faction:
           source: canon
           value:
@@ -305,6 +339,12 @@ planet:
       - date: '2780-01-01'
         population: 1440161884.0
       - date: '2786-03-07'
+        # administration: CC | Tikonov Commonality | Region 3
+        # administration: CC | Tikonov Commonality | Region 3
+        # administration: CC | Tikonov Commonality | Region 3
+        # administration: CC | Tikonov Commonality | Region 3
+        # administration: CC | Tikonov Commonality | Region 3
+        # administration: CC | Tikonov Commonality | Region 3
         faction:
           source: canon
           value:
@@ -374,8 +414,25 @@ planet:
           value:
             - FS
       - date: '3040-01-01'
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
         population: 1054544278.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
         faction:
           source: canon
           value:
@@ -386,6 +443,12 @@ planet:
           value: C-C-B-C-B
       - date: '3050-01-01'
         population: 1060148200.0
+      - date: '3057-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3057-11-01'
         faction:
           source: canon
@@ -393,8 +456,13 @@ planet:
             - CM
       - date: '3058-01-01'
         hiringHall:
-          source: Mercenary FM Revised
+          source: FM:MR
           value: MINOR
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3060-01-01'
         population: 1068129202.0
       - date: '3067-12-30'
@@ -418,11 +486,29 @@ planet:
             - Stone
       - date: '3080-01-01'
         population: 1092871580.0
+      - date: '3081-01-01'
+        # administration: ROS | Prefecture IV
+        # administration: ROS | Prefecture IV
+        # administration: ROS | Prefecture IV
+        # administration: ROS | Prefecture IV
+        # administration: ROS | Prefecture IV
+        # administration: ROS | Prefecture IV
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ROS
       - date: '3081-03-15'
         hiringHall:
-          source: Merc Supplemental Update
+          source: MSU
           value: NONE
       - date: '3081-10-16'
+        # administration: ROS | Prefecture IV
+        # administration: ROS | Prefecture IV
+        # administration: ROS | Prefecture IV
+        # administration: ROS | Prefecture IV
+        # administration: ROS | Prefecture IV
+        # administration: ROS | Prefecture IV
         faction:
           source: canon
           value:
@@ -442,6 +528,12 @@ planet:
         hpg:
           source: canon
           value: X
+      - date: '3135-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3135-10-01'
         faction:
           source: canon
@@ -449,7 +541,25 @@ planet:
             - IND
       - date: '3140-01-01'
         population: 1138610557.0
+      - date: '3145-01-01'
+        # administration: CC | Tikonov Commonality | Region 1
+        # administration: CC | Tikonov Commonality | Region 1
+        # administration: CC | Tikonov Commonality | Region 1
+        # administration: CC | Tikonov Commonality | Region 1
+        # administration: CC | Tikonov Commonality | Region 1
+        # administration: CC | Tikonov Commonality | Region 1
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CC
       - date: '3145-04-27'
+        # administration: CC | Tikonov Commonality | Region 5
+        # administration: CC | Tikonov Commonality | Region 5
+        # administration: CC | Tikonov Commonality | Region 5
+        # administration: CC | Tikonov Commonality | Region 5
+        # administration: CC | Tikonov Commonality | Region 5
+        # administration: CC | Tikonov Commonality | Region 5
         faction:
           source: canon
           value:

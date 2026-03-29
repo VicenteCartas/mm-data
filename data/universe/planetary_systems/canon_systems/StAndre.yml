@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: St. Andre
-sucsId: 2388
+sucsId: 2389
 xcood: 65.648
 ycood: -100.649
 spectralType:
-  source: MWDA world profiles
+  source: DA:RW
   value: K7III
 primarySlot:
-  source: MWDA world profiles
+  source: DA:RW
   value: 5
 event:
   - date: '2401-09-02'
@@ -96,31 +96,31 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.42
     sysPos:
-      source: MWDA world profiles
+      source: DA:RW
       value: 5
     icon: green24
     pressure:
-      source: MWDA world profiles
+      source: DA:RW
       value: STANDARD
     atmosphere:
-      source: MWDA world profiles
+      source: DA:RW
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: MWDA world profiles
+      source: DA:RW
       value: 1.0
     diameter: 11673
     density: 6.020521334621
     dayLength: 26
     yearLength: 0.8
     temperature:
-      source: MWDA world profiles
+      source: DA:RW
       value: 65
     water:
-      source: MWDA world profiles
+      source: DA:RW
       value: 34
     lifeForm:
-      source: MWDA world profiles
+      source: DA:RW
       value: MAMMAL
     desc: |-
       3135 - Most of St. Andre's two continents are covered in red desert. The northern continent of Ravensglade is flat and featureless. Ravensglade is cold and frozen for six months of the year because it is located above the arctic circle. Only a small portion of St. Andre's population lives on Ravensglade, its industries produces petroleum and coal, as well as a small amount of uranium. The Star League built a base on Ravensglade to protect the planet. Most of St. Andre's population resides on Georama which is larger and more hospitable than Ravensglade. It is situated in the southern and equatorial regions, with a hot desert environment. Jerome, the capital of St. Andre is located on Georama.
@@ -132,17 +132,17 @@ planet:
       During the Jihad, St. Andre was attacked on three different occasions by Word of Blake forces. The Blakists were after the Star League base that had been renovated and put to good use by the CCAF. The first two attacked used conventional methods. The third attempt involved the use of chemical weapons. The prevailing trade winds blew the deadly gas back in the faces of the attackers, decimating their ranks. When The Republic of the Sphere claimed St. Andre, the planet resisted.
     landmass:
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Georama
         capital:
-          source: MWDA world profiles
+          source: DA:RW
           value: Jerome
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Ravensglade
     satellite:
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: St. Michael
         size: large
         icon: rock2
@@ -194,6 +194,12 @@ planet:
             - SSUP
       - date: '2310-01-01'
         population: 189849535.0
+      - date: '2317-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CCom
       - date: '2320-01-01'
         population: 236154691.0
       - date: '2330-01-01'
@@ -204,7 +210,19 @@ planet:
         population: 389312630.0
       - date: '2360-01-01'
         population: 442821264.0
+      - date: '2366-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - SSUP
       - date: '2367-07-01'
+        # administration: CC | Sarna Commonality | Region 1
+        # administration: CC | Sarna Commonality | Region 1
+        # administration: CC | Sarna Commonality | Region 1
+        # administration: CC | Sarna Commonality | Region 1
+        # administration: CC | Sarna Commonality | Region 1
+        # administration: CC | Sarna Commonality | Region 1
         faction:
           source: canon
           value:
@@ -365,15 +383,43 @@ planet:
           value:
             - FS
       - date: '3030-01-01'
+        # administration: LA | Sarna March | Palos Operational Area
+        # administration: LA | Sarna March | Palos Operational Area
+        # administration: LA | Sarna March | Palos Operational Area
+        # administration: LA | Sarna March | Palos Operational Area
+        # administration: LA | Sarna March | Palos Operational Area
+        # administration: LA | Sarna March | Palos Operational Area
         population: 986086116.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '3030-02-28'
         faction:
           source: canon
           value:
             - LA
       - date: '3040-01-01'
+        # administration: FC | Sarna March | Palos Operational Area
+        # administration: FC | Sarna March | Palos Operational Area
+        # administration: FC | Sarna March | Palos Operational Area
+        # administration: FC | Sarna March | Palos Operational Area
+        # administration: FC | Sarna March | Palos Operational Area
+        # administration: FC | Sarna March | Palos Operational Area
         population: 991524531.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
+        # administration: FC | Sarna March | Palos Operational Area
+        # administration: FC | Sarna March | Palos Operational Area
+        # administration: FC | Sarna March | Palos Operational Area
+        # administration: FC | Sarna March | Palos Operational Area
+        # administration: FC | Sarna March | Palos Operational Area
+        # administration: FC | Sarna March | Palos Operational Area
         faction:
           source: canon
           value:
@@ -382,14 +428,32 @@ planet:
         socioIndustrial: B-A-B-A-D
       - date: '3050-01-01'
         population: 998090236.0
+      - date: '3057-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3057-11-01'
         faction:
           source: canon
           value:
             - CM
+      - date: '3058-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3060-01-01'
         population: 1008625397.0
       - date: '3062-08-08'
+        # administration: CC | Liao Commonality | Region 3
+        # administration: CC | Liao Commonality | Region 3
+        # administration: CC | Liao Commonality | Region 3
+        # administration: CC | Liao Commonality | Region 3
+        # administration: CC | Liao Commonality | Region 3
+        # administration: CC | Liao Commonality | Region 3
         faction:
           source: canon
           value:
@@ -398,7 +462,25 @@ planet:
         population: 1019577586.0
       - date: '3080-01-01'
         population: 1024073612.0
+      - date: '3085-01-01'
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ROS
       - date: '3085-03-28'
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
         faction:
           source: canon
           value:
@@ -415,7 +497,25 @@ planet:
         population: 1024483323.0
       - date: '3130-01-01'
         population: 1024278447.0
+      - date: '3135-01-01'
+        # administration: CC | Liao Commonality | Region 1
+        # administration: CC | Liao Commonality | Region 1
+        # administration: CC | Liao Commonality | Region 1
+        # administration: CC | Liao Commonality | Region 1
+        # administration: CC | Liao Commonality | Region 1
+        # administration: CC | Liao Commonality | Region 1
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CC
       - date: '3135-02-04'
+        # administration: CC | Sarna Commonality | Region 1
+        # administration: CC | Sarna Commonality | Region 1
+        # administration: CC | Sarna Commonality | Region 1
+        # administration: CC | Sarna Commonality | Region 1
+        # administration: CC | Sarna Commonality | Region 1
+        # administration: CC | Sarna Commonality | Region 1
         faction:
           source: canon
           value:

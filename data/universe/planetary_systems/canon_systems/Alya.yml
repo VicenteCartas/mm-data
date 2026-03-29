@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -20,10 +20,10 @@ sucsId: 110
 xcood: 26.359
 ycood: 96.629
 spectralType:
-  source: MWDA world profiles
+  source: DA:RW
   value: G2VI
 primarySlot:
-  source: MWDA world profiles
+  source: DA:RW
   value: 2
 event:
   - date: '2416-09-22'
@@ -57,31 +57,31 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 1.6
     sysPos:
-      source: MWDA world profiles
+      source: DA:RW
       value: 2
     icon: green35
     pressure:
-      source: MWDA world profiles
+      source: DA:RW
       value: STANDARD
     atmosphere:
-      source: MWDA world profiles
+      source: DA:RW
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: MWDA world profiles
+      source: DA:RW
       value: 1.16
     diameter: 15441
     density: 5.279373843827
     dayLength: 24
     yearLength: 2.3
     temperature:
-      source: MWDA world profiles
+      source: DA:RW
       value: 35
     water:
-      source: MWDA world profiles
+      source: DA:RW
       value: 38
     lifeForm:
-      source: MWDA world profiles
+      source: DA:RW
       value: REPTILE
     desc: |-
       Thanks to the presence of an abnormally huge gas giant in the system‘s outermost orbit, Alya follows an elongated revolutionary cycle around its sun and has created an equally peculiar orbital path for Xanadu, Alya‘s single large moon. The effects of these eccentric orbits have created such unusual day/night and seasonal cycles for Alya that travelers to this world are given complicated native calendars and urged to use these in place of the galactic standard during their stay to minimize confusion.
@@ -91,20 +91,20 @@ planet:
       The capital city and commercial center of Alya, LeSabrea, is located on Paroasis, on the western shores of the landlocked Saline Sea, while the bulk of the planet‘s industrial might is headquartered five hundred kilometers east, in Flerise City. The southern continents of Zenishli and Desije, by comparison, are sparsely populated, covered mostly by unspoiled evergreen wilderness and a mix of rolling hills and abrupt mountain chains.
     landmass:
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Desije
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Paroasis
         capital:
-          source: MWDA world profiles
+          source: DA:RW
           value: LeSabrea
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Zenishli
     satellite:
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Xanadu
         size: giant
         icon: rock6
@@ -131,6 +131,12 @@ planet:
         population: 6227168.0
       - date: '2360-01-01'
         population: 13252138.0
+      - date: '2366-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '2370-01-01'
         population: 25197180.0
       - date: '2380-01-01'
@@ -140,6 +146,12 @@ planet:
       - date: '2390-01-01'
         population: 68837708.0
       - date: '2400-05-17'
+        # administration: DC | Benjamin Military District | Kuzuu Prefecture
+        # administration: DC | Benjamin Military District | Kuzuu Prefecture
+        # administration: DC | Benjamin Military District | Kuzuu Prefecture
+        # administration: DC | Benjamin Military District | Kuzuu Prefecture
+        # administration: DC | Benjamin Military District | Kuzuu Prefecture
+        # administration: DC | Benjamin Military District | Kuzuu Prefecture
         faction:
           source: canon
           value:
@@ -296,6 +308,12 @@ planet:
           source: canon
           value:
             - WOB
+      - date: '3075-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - Stone
       - date: '3075-08-28'
         faction:
           source: canon
@@ -309,7 +327,25 @@ planet:
             - Stone
       - date: '3080-01-01'
         population: 583478382.0
+      - date: '3081-01-01'
+        # administration: ROS | Prefecture I
+        # administration: ROS | Prefecture I
+        # administration: ROS | Prefecture I
+        # administration: ROS | Prefecture I
+        # administration: ROS | Prefecture I
+        # administration: ROS | Prefecture I
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ROS
       - date: '3081-02-18'
+        # administration: ROS | Prefecture I
+        # administration: ROS | Prefecture I
+        # administration: ROS | Prefecture I
+        # administration: ROS | Prefecture I
+        # administration: ROS | Prefecture I
+        # administration: ROS | Prefecture I
         faction:
           source: canon
           value:
@@ -328,6 +364,12 @@ planet:
         population: 588400244.0
       - date: '3132-08-07'
         hpg: X
+      - date: '3135-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3135-10-01'
         faction:
           source: canon
@@ -335,7 +377,25 @@ planet:
             - IND
       - date: '3140-01-01'
         population: 589342438.0
+      - date: '3145-01-01'
+        # administration: DC | Dieron Military District | Algedi Prefecture
+        # administration: DC | Dieron Military District | Algedi Prefecture
+        # administration: DC | Dieron Military District | Algedi Prefecture
+        # administration: DC | Dieron Military District | Algedi Prefecture
+        # administration: DC | Dieron Military District | Algedi Prefecture
+        # administration: DC | Dieron Military District | Algedi Prefecture
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - DC
       - date: '3145-10-01'
+        # administration: DC | Dieron Military District | Algedi Prefecture
+        # administration: DC | Dieron Military District | Algedi Prefecture
+        # administration: DC | Dieron Military District | Algedi Prefecture
+        # administration: DC | Dieron Military District | Algedi Prefecture
+        # administration: DC | Dieron Military District | Algedi Prefecture
+        # administration: DC | Dieron Military District | Algedi Prefecture
         faction:
           source: canon
           value:

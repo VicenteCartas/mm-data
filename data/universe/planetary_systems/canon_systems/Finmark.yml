@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Finmark
-sucsId: 872
+sucsId: 873
 xcood: -405.348
 ycood: 332.888
 spectralType: G0V
@@ -82,6 +82,12 @@ planet:
       - name: Cropper II
     event:
       - date: '2546-04-26'
+        # administration: RWR | Finmark Province | District Capital
+        # administration: RWR | Finmark Province | District Capital
+        # administration: RWR | Finmark Province | District Capital
+        # administration: RWR | Finmark Province | District Capital
+        # administration: RWR | Finmark Province | District Capital
+        # administration: RWR | Finmark Province | District Capital
         faction:
           source: canon
           value:
@@ -147,6 +153,18 @@ planet:
             - IND
       - date: '2780-01-01'
         population: 129297.0
+      - date: '2783-01-01'
+        # administration: FFR | National Capital
+        # administration: FFR | National Capital
+        # administration: FFR | National Capital
+        # administration: FFR | National Capital
+        # administration: FFR | National Capital
+        # administration: FFR | National Capital
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FFR
       - date: '2790-01-01'
         population: 65666.0
       - date: '2800-01-01'
@@ -155,8 +173,19 @@ planet:
         population: 22901.0
       - date: '2820-01-01'
         population: 13491.0
+      - date: '2821-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '2830-01-01'
         population: 7270.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ABN
       - date: '2831-07-28'
         faction:
           source: canon

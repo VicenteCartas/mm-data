@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Milligan
-sucsId: 1703
+sucsId: 1704
 xcood: 475.095
 ycood: 38.728
 spectralType: G3V
@@ -80,6 +80,12 @@ planet:
       - name: Adams
     event:
       - date: '2632-07-01'
+        # administration: FS | Draconis March | Woodbine Operational Area
+        # administration: FS | Draconis March | Woodbine Operational Area
+        # administration: FS | Draconis March | Woodbine Operational Area
+        # administration: FS | Draconis March | Woodbine Operational Area
+        # administration: FS | Draconis March | Woodbine Operational Area
+        # administration: FS | Draconis March | Woodbine Operational Area
         faction:
           source: canon
           value:
@@ -176,10 +182,28 @@ planet:
         population: 100190367.0
       - date: '3030-01-01'
         population: 100340430.0
+      - date: '3040-01-01'
+        # administration: FC | Draconis March | Woodbine Operational Area
+        # administration: FC | Draconis March | Woodbine Operational Area
+        # administration: FC | Draconis March | Woodbine Operational Area
+        # administration: FC | Draconis March | Woodbine Operational Area
+        # administration: FC | Draconis March | Woodbine Operational Area
+        # administration: FC | Draconis March | Woodbine Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-03-12'
         population: 101166604.0
         socioIndustrial: D-C-B-C-D
       - date: '3040-01-19'
+        # administration: FC | Draconis March | Woodbine Operational Area
+        # administration: FC | Draconis March | Woodbine Operational Area
+        # administration: FC | Draconis March | Woodbine Operational Area
+        # administration: FC | Draconis March | Woodbine Operational Area
+        # administration: FC | Draconis March | Woodbine Operational Area
+        # administration: FC | Draconis March | Woodbine Operational Area
         faction:
           source: canon
           value:
@@ -188,7 +212,25 @@ planet:
         population: 101989381.0
       - date: '3060-01-01'
         population: 102767453.0
+      - date: '3067-01-01'
+        # administration: FS | Draconis March | Woodbine Operational Area
+        # administration: FS | Draconis March | Woodbine Operational Area
+        # administration: FS | Draconis March | Woodbine Operational Area
+        # administration: FS | Draconis March | Woodbine Operational Area
+        # administration: FS | Draconis March | Woodbine Operational Area
+        # administration: FS | Draconis March | Woodbine Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FS
       - date: '3067-04-20'
+        # administration: FS | Draconis March | Woodbine Operational Area
+        # administration: FS | Draconis March | Woodbine Operational Area
+        # administration: FS | Draconis March | Woodbine Operational Area
+        # administration: FS | Draconis March | Woodbine Operational Area
+        # administration: FS | Draconis March | Woodbine Operational Area
+        # administration: FS | Draconis March | Woodbine Operational Area
         faction:
           source: canon
           value:
@@ -215,6 +257,12 @@ planet:
         population: 110296115.0
       - date: '3145-01-01'
         population: 110274058.0
+      - date: '3152-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - RA
       - date: '3152-06-01'
         faction:
           source: canon

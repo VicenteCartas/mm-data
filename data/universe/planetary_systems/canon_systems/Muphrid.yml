@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Muphrid
-sucsId: 1772
+sucsId: 1773
 xcood: -27.402
 ycood: 15.207
 spectralType:
@@ -50,76 +50,52 @@ planet:
     sysPos: 2
     icon: wet9
     pressure:
-      source: FedCom Civil War, pg. 200
+      source: FCCW
       value: STANDARD
+      page: 200
     atmosphere:
-      source: FedCom Civil War, pg. 200
+      source: FCCW
       value: BREATHABLE
+      page: 200
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: FedCom Civil War, pg. 200
+      source: FCCW
       value: 1.0
+      page: 200
     diameter: 12795
     density: 5.49233958876
     dayLength: 25
     yearLength: 1.0
     temperature:
-      source: FedCom Civil War, pg. 200
+      source: FCCW
       value: 50
+      page: 200
     water:
-      source: FedCom Civil War, pg. 200
+      source: FCCW
       value: 80
+      page: 200
     lifeForm:
-      source: FedCom Civil War, pg. 200
+      source: FCCW
       value: FISH
-    desc: 3135 - Muphrid, like many worlds immediately coreward and anti-spinward
-      of Terra, such as Skye and Caledonia, was initially settled largely by Irish
-      and Scottish colonists during the first wave of human expansion into space.
-      A pleasant world of mild seasons , fertile soils, expansive seas, and thick
-      vegetation on its three large temperate-zone continents, Muphrid was quickly
-      established as an agricultural world. Settled only a few months after Thorin,
-      the Muphrid colonial government looked to their neighbor world for a guide and
-      adopted similar zoning laws to contain industrial expansion and maintain the
-      natural beauty of their world. Declaring the northeasternmost continent, Shamrock,
-      as the industrial “zone,” and limiting its close western neighbor, Ridgeway,
-      to a mix of mineral mining and agricultural concerns, the colonists defined
-      the southern continent of MacArthur as a low-technology “zone” similar to Thorin‘s
-      continent of Freda. These zoning laws and their immediate effects shaped the
-      way Muphrid‘s population developed their world, and even today a distinct difference
-      can be seen between the cities and towns on each of the three continents. Shamrock,
-      the most populous and industrialized, is also home to the planetary capital
-      of New Dublin, and the large primary spaceport of Calenaton. Ridgeway, by comparison,
-      has smaller towns dominated by granite- and ore-mining operations or large agricultural
-      communities and ranches. Meanwhile, the virtually untamed wilderness of MacArthur
-      is home to a few small farming, logging, and fishing communities, but remains
-      dominated by thick jungles untouched by humankind. The few Star League Castles
-      Brian placed during the reign of the Terran Hegemony were destroyed during the
-      Amaris crisis or soon after the fall of the League, but thankfully very little
-      collateral damage was done, preserving much of Muphrid‘s native splendor and
-      its people‘s way of life. However, rumors of a Star League research facility
-      deep in the jungles of MacArthur still send prospectors into the unknown—many
-      never to return. Under the banner of the Lyran state, Muphrid continued to prosper,
-      upset only by the occasional raid by Combine or Free Worlds forces during the
-      Succession Wars. During the Jihad, Blakist forces launched a heavy strike on
-      Muphrid to cripple its infrastructure, partially destroying the capital and
-      several major cities, as well as many surrounding townships, before allied forces
-      beat them back. Though a few tactical nuclear weapons were used, the majority
-      of the damage has since been repaired and memorials to those who fell defending
-      the planet against the Word of Blake now stand in New Dublin, Calenaton, Port
-      MacArthur, and Mechanicsburg.
+      page: 200
+    desc: 3135 - Muphrid, like many worlds immediately coreward and anti-spinward of Terra, such as Skye and Caledonia, was initially settled largely by Irish and Scottish colonists during the first wave of human expansion into space. A pleasant world of mild seasons , fertile soils, expansive seas, and thick vegetation on its three large temperate-zone continents, Muphrid was quickly established as an agricultural world. Settled only a few months after Thorin, the Muphrid colonial government looked to their neighbor world for a guide and adopted similar zoning laws to contain industrial expansion and maintain the natural beauty of their world. Declaring the northeasternmost continent, Shamrock, as the industrial “zone,” and limiting its close western neighbor, Ridgeway, to a mix of mineral mining and agricultural concerns, the colonists defined the southern continent of MacArthur as a low-technology “zone” similar to Thorin‘s continent of Freda. These zoning laws and their immediate effects shaped the way Muphrid‘s population developed their world, and even today a distinct difference can be seen between the cities and towns on each of the three continents. Shamrock, the most populous and industrialized, is also home to the planetary capital of New Dublin, and the large primary spaceport of Calenaton. Ridgeway, by comparison, has smaller towns dominated by granite- and ore-mining operations or large agricultural communities and ranches. Meanwhile, the virtually untamed wilderness of MacArthur is home to a few small farming, logging, and fishing communities, but remains dominated by thick jungles untouched by humankind. The few Star League Castles Brian placed during the reign of the Terran Hegemony were destroyed during the Amaris crisis or soon after the fall of the League, but thankfully very little collateral damage was done, preserving much of Muphrid‘s native splendor and its people‘s way of life. However, rumors of a Star League research facility deep in the jungles of MacArthur still send prospectors into the unknown—many never to return. Under the banner of the Lyran state, Muphrid continued to prosper, upset only by the occasional raid by Combine or Free Worlds forces during the Succession Wars. During the Jihad, Blakist forces launched a heavy strike on Muphrid to cripple its infrastructure, partially destroying the capital and several major cities, as well as many surrounding townships, before allied forces beat them back. Though a few tactical nuclear weapons were used, the majority of the damage has since been repaired and memorials to those who fell defending the planet against the Word of Blake now stand in New Dublin, Calenaton, Port MacArthur, and Mechanicsburg.
     landmass:
       - name:
-          source: FedCom Civil War, pg. 200
+          source: FCCW
           value: MacArthur
+          page: 200
       - name:
-          source: FedCom Civil War, pg. 200
+          source: FCCW
           value: Ridgeway
+          page: 200
       - name:
-          source: FedCom Civil War, pg. 200
+          source: FCCW
           value: Shamrock
+          page: 200
         capital:
-          source: FedCom Civil War, pg. 200
+          source: FCCW
           value: New Dublin
+          page: 200
     event:
       - date: '2227-05-03'
         faction:
@@ -152,6 +128,12 @@ planet:
           value:
             - TH
       - date: '2317-08-10'
+        # administration: TH | Alliance Core
+        # administration: TH | Alliance Core
+        # administration: TH | Alliance Core
+        # administration: TH | Alliance Core
+        # administration: TH | Alliance Core
+        # administration: TH | Alliance Core
         faction:
           source: canon
           value:
@@ -255,6 +237,18 @@ planet:
         population: 2311117226.0
       - date: '2760-01-01'
         population: 2328403549.0
+      - date: '2767-01-01'
+        # administration: AE | Alliance Core
+        # administration: AE | Alliance Core
+        # administration: AE | Alliance Core
+        # administration: AE | Alliance Core
+        # administration: AE | Alliance Core
+        # administration: AE | Alliance Core
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - AE
       - date: '2767-09-05'
         faction:
           source: canon
@@ -263,6 +257,12 @@ planet:
       - date: '2770-01-01'
         population: 2338719553.0
       - date: '2779-06-24'
+        # administration: TH | Alliance Core
+        # administration: TH | Alliance Core
+        # administration: TH | Alliance Core
+        # administration: TH | Alliance Core
+        # administration: TH | Alliance Core
+        # administration: TH | Alliance Core
         faction:
           source: canon
           value:
@@ -270,6 +270,12 @@ planet:
       - date: '2780-01-01'
         population: 2306917006.0
       - date: '2790-12-26'
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
         faction:
           source: canon
           value:
@@ -282,6 +288,12 @@ planet:
       - date: '2820-01-01'
         population: 2196101765.0
       - date: '2821-07-27'
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
         faction:
           source: canon
           value:
@@ -334,8 +346,25 @@ planet:
         population: 1855886154.0
         socioIndustrial: C-C-C-C-B
       - date: '3040-01-01'
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
         population: 1866308272.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
         faction:
           source: canon
           value:
@@ -346,13 +375,37 @@ planet:
           value: B-B-B-B-A
       - date: '3050-01-01'
         population: 1883369186.0
+      - date: '3057-01-01'
+        # administration: LA | Skye March | Ryde Operational Area
+        # administration: LA | Skye March | Ryde Operational Area
+        # administration: LA | Skye March | Ryde Operational Area
+        # administration: LA | Skye March | Ryde Operational Area
+        # administration: LA | Skye March | Ryde Operational Area
+        # administration: LA | Skye March | Ryde Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '3057-09-18'
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
         faction:
           source: canon
           value:
             - LA
       - date: '3060-01-01'
         population: 1900966219.0
+      - date: '3068-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - WOB
       - date: '3068-10-07'
         faction:
           source: canon
@@ -373,7 +426,25 @@ planet:
             - Stone
       - date: '3080-01-01'
         population: 1921415768.0
+      - date: '3081-01-01'
+        # administration: ROS | Prefecture X
+        # administration: ROS | Prefecture X
+        # administration: ROS | Prefecture X
+        # administration: ROS | Prefecture X
+        # administration: ROS | Prefecture X
+        # administration: ROS | Prefecture X
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ROS
       - date: '3081-12-04'
+        # administration: ROS | Prefecture X
+        # administration: ROS | Prefecture X
+        # administration: ROS | Prefecture X
+        # administration: ROS | Prefecture X
+        # administration: ROS | Prefecture X
+        # administration: ROS | Prefecture X
         faction:
           source: canon
           value:
@@ -400,9 +471,16 @@ planet:
         population: 2124342395.0
       - date: '3151-01-01'
         faction:
-          source: sucs
+          source: SUCS
+          version: 2026.03.02
           value:
-            - CJF
+            - CC
+      - date: '3152-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - 3SL
       - date: '3152-06-01'
         faction:
           source: sucs

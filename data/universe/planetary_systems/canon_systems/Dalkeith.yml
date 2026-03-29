@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -23,8 +23,9 @@ spectralType:
   source: canon
   value: F9V
 primarySlot:
-  source: FedCom Civil War, pg. 197
+  source: FCCW
   value: 5
+  page: 197
 event:
   - date: '2359-06-20'
     zenithCharge: yes
@@ -102,68 +103,82 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 1.1
     sysPos:
-      source: FedCom Civil War, pg. 197
+      source: FCCW
       value: 5
+      page: 197
     icon: green28
     pressure:
-      source: FedCom Civil War, pg. 197
+      source: FCCW
       value: STANDARD
+      page: 197
     atmosphere:
-      source: FedCom Civil War, pg. 197
+      source: FCCW
       value: TAINTED_POISON
+      page: 197
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: FedCom Civil War, pg. 197
+      source: FCCW
       value: 1.0
+      page: 197
     diameter: 11518
     density: 6.101527243017
     dayLength: 24
     yearLength: 1.6
     temperature:
-      source: FedCom Civil War, pg. 197
+      source: FCCW
       value: 30
+      page: 197
     water:
-      source: FedCom Civil War, pg. 197
+      source: FCCW
       value: 70
+      page: 197
     lifeForm:
-      source: FedCom Civil War, pg. 197
+      source: FCCW
       value: BIRD
+      page: 197
     desc: |-
       Dalkeith was a beautiful planet in the centuries during the Star League, unfortunately after its collapse the planet was turned into a nuclear wasteland during the early Succession wars and even after three centuries, the atmosphere is still tainted, requiring filtered breathing devices to go outside. Only Dunnbar is still hospitable out of the planet’s three continents and the planet’s population shrank 90% between 2775 and the 31st century.
 
       During the First Succession War, the Draconis Combine used over a dozen 100-megaton nuclear weapons across the heavily inhabited continent of Rockmeir, destroying the Star League Castle Brian and the planet’s capital of Newhaven, along with most of the population. The continent of Devarick met a similar fate when the Combine turned more nuclear and chemical weapons against the defending Lyran forces there. The planet would likely have been abandoned after the First Succession War if not for the rich deposits of rare metals in the Alveria mountain range on Dunnbar.
     landmass:
       - name:
-          source: FedCom Civil War, pg. 197
+          source: FCCW
           value: Devarick
+          page: 197
       - name:
-          source: FedCom Civil War, pg. 197
+          source: FCCW
           value: Dunnbar
+          page: 197
       - name:
-          source: FedCom Civil War, pg. 197
+          source: FCCW
           value: Rockmeir
+          page: 197
         capital:
           source: canon
           value: Newhaven [destroyed 2810]
     satellite:
       - name:
-          source: FedCom Civil War, pg. 197
+          source: FCCW
           value: Dal-Mar
+          page: 197
         size: medium
         icon: rock2
       - name:
-          source: FedCom Civil War, pg. 197
+          source: FCCW
           value: Dal-Ra
+          page: 197
         size: medium
         icon: rock5
       - name:
-          source: FedCom Civil War, pg. 197
+          source: FCCW
           value: Dal-Rue
+          page: 197
         size: medium
         icon: oddmoon1
       - name:
-          source: FedCom Civil War, pg. 197
+          source: FCCW
           value: Dal-Tal
+          page: 197
         size: medium
         icon: oddmoon3
     event:
@@ -220,6 +235,12 @@ planet:
       - date: '2340-01-01'
         population: 420279912.0
       - date: '2341-07-27'
+        # administration: LA | Tamar Pact
+        # administration: LA | Tamar Pact
+        # administration: LA | Tamar Pact
+        # administration: LA | Tamar Pact
+        # administration: LA | Tamar Pact
+        # administration: LA | Tamar Pact
         faction:
           source: canon
           value:
@@ -380,8 +401,25 @@ planet:
       - date: '3037-01-01'
         socioIndustrial: B-C-C-C-D
       - date: '3040-01-01'
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
         population: 631270901.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
         faction:
           source: canon
           value:
@@ -392,7 +430,25 @@ planet:
           value: B-B-C-B-D
       - date: '3050-01-01'
         population: 635387526.0
+      - date: '3057-01-01'
+        # administration: LA | Skye March | Ryde Operational Area
+        # administration: LA | Skye March | Ryde Operational Area
+        # administration: LA | Skye March | Ryde Operational Area
+        # administration: LA | Skye March | Ryde Operational Area
+        # administration: LA | Skye March | Ryde Operational Area
+        # administration: LA | Skye March | Ryde Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '3057-09-18'
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
         faction:
           source: canon
           value:
@@ -405,7 +461,25 @@ planet:
           value:
             - LA
             - FC
+      - date: '3067-01-01'
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '3067-04-20'
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
         faction:
           source: canon
           value:
@@ -431,6 +505,12 @@ planet:
           source: canon
           value: X
       - date: '3140-11-19'
+        # administration: RD | Region 3
+        # administration: RD | Region 3
+        # administration: RD | Region 3
+        # administration: RD | Region 3
+        # administration: RD | Region 3
+        # administration: RD | Region 3
         faction:
           source: canon
           value:
