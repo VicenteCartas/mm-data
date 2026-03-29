@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,15 +16,17 @@
 # affiliated with Microsoft.
 
 id: Tamaron
-sucsId: 2963
+sucsId: 2964
 xcood: -2.003
 ycood: 1856.994
 spectralType:
-  source: Warriors of Kerensky, pg. 112
+  source: WoK
   value: A3III
+  page: 112
 primarySlot:
-  source: Warriors of Kerensky, pg. 112
+  source: WoK
   value: 1
+  page: 112
 event:
   - date: '2803-09-07'
     nadirCharge: yes
@@ -36,32 +38,39 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 12.48
     sysPos:
-      source: Warriors of Kerensky, pg. 112
+      source: WoK
       value: 1
+      page: 112
     icon: green50
     pressure:
-      source: Warriors of Kerensky, pg. 112
+      source: WoK
       value: THIN
+      page: 112
     atmosphere:
-      source: Warriors of Kerensky, pg. 112
+      source: WoK
       value: TAINTED_POISON
+      page: 112
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: Warriors of Kerensky, pg. 112
+      source: WoK
       value: 0.7
+      page: 112
     diameter: 9402
     density: 5.232320029559
     dayLength: 23
     yearLength: 44.1
     temperature:
-      source: Warriors of Kerensky, pg. 112
+      source: WoK
       value: 35
+      page: 112
     water:
-      source: Warriors of Kerensky, pg. 112
+      source: WoK
       value: 40
+      page: 112
     lifeForm:
-      source: Warriors of Kerensky, pg. 112
+      source: WoK
       value: PLANT
+      page: 112
     desc: No description available.
     smallMoons: 1
     landmass:
@@ -79,6 +88,12 @@ planet:
         icon: oddmoon3
     event:
       - date: '2802-05-21'
+        # administration: CCO | National Capital
+        # administration: CCO | National Capital
+        # administration: CCO | National Capital
+        # administration: CCO | National Capital
+        # administration: CCO | National Capital
+        # administration: CCO | National Capital
         faction:
           source: canon
           value:
@@ -93,6 +108,12 @@ planet:
       - date: '2820-01-01'
         population: 396031.0
       - date: '2821-08-17'
+        # administration: CCO | National Capital
+        # administration: CCO | National Capital
+        # administration: CCO | National Capital
+        # administration: CCO | National Capital
+        # administration: CCO | National Capital
+        # administration: CCO | National Capital
         faction:
           source: canon
           value:
@@ -168,6 +189,12 @@ planet:
           source: canon
           value:
             - CSV
+      - date: '3075-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CLAN
       - date: '3075-10-01'
         faction:
           source: canon
@@ -176,6 +203,12 @@ planet:
             - CSA
             - CCC
             - CGS
+      - date: '3079-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CLAN
       - date: '3079-10-13'
         faction:
           source: canon
@@ -185,6 +218,12 @@ planet:
             - CSA
       - date: '3080-01-01'
         population: 86232855.0
+      - date: '3081-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CLAN
       - date: '3090-01-01'
         population: 87711345.0
       - date: '3093-01-01'

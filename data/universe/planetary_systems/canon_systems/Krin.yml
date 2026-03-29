@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: Krin
-sucsId: 1415
+sucsId: 1416
 xcood: -7.765
 ycood: -221.268
 spectralType:
-  source: 'Objective Raids: Capellan Confederation'
+  source: 'OR'
   value: K2V
 primarySlot:
-  source: 'Objective Raids: Capellan Confederation'
+  source: 'OR'
   value: 4
 event:
   - date: '2730-12-18'
@@ -79,31 +79,31 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.49
     sysPos:
-      source: 'Objective Raids: Capellan Confederation'
+      source: 'OR'
       value: 4
     icon: green31
     pressure:
-      source: 'Objective Raids: Capellan Confederation'
+      source: 'OR'
       value: STANDARD
     atmosphere:
-      source: 'Objective Raids: Capellan Confederation'
+      source: 'OR'
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'Objective Raids: Capellan Confederation'
+      source: 'OR'
       value: 1.07
     diameter: 13073
     density: 5.751838797597
     dayLength: 17
     yearLength: 0.9
     temperature:
-      source: 'Objective Raids: Capellan Confederation'
+      source: 'OR'
       value: 28
     water:
-      source: 'Objective Raids: Capellan Confederation'
+      source: 'OR'
       value: 52
     lifeForm:
-      source: 'Objective Raids: Capellan Confederation'
+      source: 'OR'
       value: AMPHIBIAN
     desc: |-
       Krin is a relatively comfortable planet with a temperate to tropical climate and modest agricultural and mining concerns. Krin possesses a well established industrial core, however the planet is not home to any major military manufacturers.
@@ -111,16 +111,22 @@ planet:
       Krin is one of many planets in the Capellan Confederation that host a Duchy RTC facility. The facilities on Krin are located in the mountains of the Fairfax continent and focus on training vehicle crews and unarmored infantry.
     landmass:
       - name:
-          source: 'Objective Raids: Capellan Confederation'
+          source: 'OR'
           value: Auburn
         capital:
-          source: 'Objective Raids: Capellan Confederation'
+          source: 'OR'
           value: Pole
       - name:
-          source: 'Objective Raids: Capellan Confederation'
+          source: 'OR'
           value: Fairfax
     event:
       - date: '2689-12-07'
+        # administration: CC | Sian Commonality | Region 1
+        # administration: CC | Sian Commonality | Region 1
+        # administration: CC | Sian Commonality | Region 1
+        # administration: CC | Sian Commonality | Region 1
+        # administration: CC | Sian Commonality | Region 1
+        # administration: CC | Sian Commonality | Region 1
         faction:
           source: canon
           value:

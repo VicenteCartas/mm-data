@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -20,11 +20,13 @@ sucsId: 731
 xcood: -182.405
 ycood: 159.288
 spectralType:
-  source: 'Handbook: House Steiner, pg. 84'
+  source: 'HB:HS'
   value: F0V
+  page: 84
 primarySlot:
-  source: 'Handbook: House Steiner, pg. 84'
+  source: 'HB:HS'
   value: 4
+  page: 84
 event:
   - date: '2368-06-05'
     nadirCharge: yes
@@ -90,32 +92,39 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 2.56
     sysPos:
-      source: 'Handbook: House Steiner, pg. 84'
+      source: 'HB:HS'
       value: 4
+      page: 84
     icon: wet12
     pressure:
-      source: 'Handbook: House Steiner, pg. 84'
+      source: 'HB:HS'
       value: STANDARD
+      page: 84
     atmosphere:
-      source: 'Handbook: House Steiner, pg. 84'
+      source: 'HB:HS'
       value: BREATHABLE
+      page: 84
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'Handbook: House Steiner, pg. 84'
+      source: 'HB:HS'
       value: 1.01
+      page: 84
     diameter: 12796
     density: 5.547093113805
     dayLength: 25
     yearLength: 4.3
     temperature:
-      source: 'Handbook: House Steiner, pg. 84'
+      source: 'HB:HS'
       value: 40
+      page: 84
     water:
-      source: 'Handbook: House Steiner, pg. 84'
+      source: 'HB:HS'
       value: 80
+      page: 84
     lifeForm:
-      source: 'Handbook: House Steiner, pg. 84'
+      source: 'HB:HS'
       value: REPTILE
+      page: 84
     desc: |-
       The planet Donegal sits in the center of Lyran space. True to its place in the Commonwealth’s territory, Donegal is one of a handful of systems that formed the heart of the confederation that became the Lyran Commonwealth after the fall of the Terran Alliance.
 
@@ -124,25 +133,36 @@ planet:
       Donegal is the home to many major trading companies, the Supreme Court of the Commonwealth, and the Donegal Stock Exchange.
     landmass:
       - name:
-          source: 'Handbook: House Steiner, pg. 84'
+          source: 'HB:HS'
           value: Dunellen
+          page: 84
       - name:
-          source: 'Handbook: House Steiner, pg. 84'
+          source: 'HB:HS'
           value: Hinterlands
+          page: 84
       - name:
-          source: 'Handbook: House Steiner, pg. 84'
+          source: 'HB:HS'
           value: Lockenar
+          page: 84
         capital:
-          source: 'Objectives: Lyran Alliance, p. 22'
+          source: 'Obj:LA'
           value: Marsdenville
+          page: 22
     satellite:
       - name:
-          source: 'Handbook: House Steiner, pg. 84'
+          source: 'HB:HS'
           value: Seth's Jewel
+          page: 84
         size: large
         icon: rock14
     event:
       - date: '2314-01-26'
+        # administration: PD | National Capital
+        # administration: PD | National Capital
+        # administration: PD | National Capital
+        # administration: PD | National Capital
+        # administration: PD | National Capital
+        # administration: PD | National Capital
         faction:
           source: canon
           value:
@@ -156,6 +176,12 @@ planet:
       - date: '2340-01-01'
         population: 3277536.0
       - date: '2341-06-02'
+        # administration: LA | Protectorate of Donegal | District Capital
+        # administration: LA | Protectorate of Donegal | District Capital
+        # administration: LA | Protectorate of Donegal | District Capital
+        # administration: LA | Protectorate of Donegal | District Capital
+        # administration: LA | Protectorate of Donegal | District Capital
+        # administration: LA | Protectorate of Donegal | District Capital
         faction:
           source: canon
           value:
@@ -314,8 +340,25 @@ planet:
       - date: '3034-01-01'
         socioIndustrial: B-B-B-B-C
       - date: '3040-01-01'
+        # administration: FC | Donegal March | Pherkad Operational Area
+        # administration: FC | Donegal March | Pherkad Operational Area
+        # administration: FC | Donegal March | Pherkad Operational Area
+        # administration: FC | Donegal March | Pherkad Operational Area
+        # administration: FC | Donegal March | Pherkad Operational Area
+        # administration: FC | Donegal March | Pherkad Operational Area
         population: 5596856796.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
+        # administration: FC | Donegal March | Pherkad Operational Area
+        # administration: FC | Donegal March | Pherkad Operational Area
+        # administration: FC | Donegal March | Pherkad Operational Area
+        # administration: FC | Donegal March | Pherkad Operational Area
+        # administration: FC | Donegal March | Pherkad Operational Area
+        # administration: FC | Donegal March | Pherkad Operational Area
         faction:
           source: canon
           value:
@@ -326,7 +369,25 @@ planet:
           value: A-A-A-A-B
       - date: '3050-01-01'
         population: 5660459959.0
+      - date: '3057-01-01'
+        # administration: LA | Donegal March | Pherkad Operational Area
+        # administration: LA | Donegal March | Pherkad Operational Area
+        # administration: LA | Donegal March | Pherkad Operational Area
+        # administration: LA | Donegal March | Pherkad Operational Area
+        # administration: LA | Donegal March | Pherkad Operational Area
+        # administration: LA | Donegal March | Pherkad Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '3057-09-18'
+        # administration: LA | Donegal Province | District Capital
+        # administration: LA | Donegal Province | District Capital
+        # administration: LA | Donegal Province | District Capital
+        # administration: LA | Donegal Province | District Capital
+        # administration: LA | Donegal Province | District Capital
+        # administration: LA | Donegal Province | District Capital
         faction:
           source: canon
           value:
@@ -357,6 +418,12 @@ planet:
             - LA
             - WOB
       - date: '3072-02-14'
+        # administration: LA | Donegal Province | District Capital
+        # administration: LA | Donegal Province | District Capital
+        # administration: LA | Donegal Province | District Capital
+        # administration: LA | Donegal Province | District Capital
+        # administration: LA | Donegal Province | District Capital
+        # administration: LA | Donegal Province | District Capital
         faction:
           source: canon
           value:
@@ -386,8 +453,7 @@ planet:
     icon: barren21
     pressure: HIGH
     atmosphere: TOXIC_CAUSTIC
-    composition: Methane and Ammonia, plus trace amounts of Sulfur Dioxide and Hydrochloric
-      Acid
+    composition: Methane and Ammonia, plus trace amounts of Sulfur Dioxide and Hydrochloric Acid
     gravity: 0.47
     diameter: 9500
     density: 3.5

@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -20,11 +20,13 @@ sucsId: 321
 xcood: 58.927
 ycood: -41.666
 spectralType:
-  source: House Liao, pg. 139
+  source: HLSB
   value: F2III
+  page: 139
 primarySlot:
-  source: House Liao, pg. 139
+  source: HLSB
   value: 4
+  page: 139
 event:
   - date: '2392-11-10'
     zenithCharge: yes
@@ -56,8 +58,7 @@ planet:
     icon: greenhouse11
     pressure: HIGH
     atmosphere: TOXIC_POISON
-    composition: Carbon Dioxide and Nitrogen, plus trace amounts of Nitrous Oxide
-      and Methane
+    composition: Carbon Dioxide and Nitrogen, plus trace amounts of Nitrous Oxide and Methane
     gravity: 0.57
     diameter: 11500
     density: 3.5
@@ -88,51 +89,47 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 4.2
     sysPos:
-      source: House Liao, pg. 139
+      source: HLSB
       value: 4
+      page: 139
     icon: green43
     pressure:
-      source: MWDA world profiles
+      source: DA:RW
       value: STANDARD
     atmosphere:
-      source: MWDA world profiles
+      source: DA:RW
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: MWDA world profiles
+      source: DA:RW
       value: 0.6
     diameter: 9152
     density: 4.607496981649
     dayLength: 17
     yearLength: 8.7
     temperature:
-      source: MWDA world profiles
+      source: DA:RW
       value: 30
     water:
-      source: MWDA world profiles
+      source: DA:RW
       value: 70
     lifeForm:
-      source: House Liao, pg. 139
+      source: HLSB
       value: MAMMAL
-    desc: The planet Bharat is well known as a nature and hunting preserve available
-      to both noblemen and commoners. The planet has a variety of terrain and distinctive
-      native lifeforms - desert areas with large lizard-like animals, forests with
-      opossum-like creatures, graceful and fat marine and land mammals that inhabit
-      the seacoast, and a small mushroom-like plant that can move to more fertile
-      ground or to avoid danger. The only major industries on Bharat are all tooled
-      around logging of the many types of imported Terran trees.
+      page: 139
+    desc: The planet Bharat is well known as a nature and hunting preserve available to both noblemen and commoners. The planet has a variety of terrain and distinctive native lifeforms - desert areas with large lizard-like animals, forests with opossum-like creatures, graceful and fat marine and land mammals that inhabit the seacoast, and a small mushroom-like plant that can move to more fertile ground or to avoid danger. The only major industries on Bharat are all tooled around logging of the many types of imported Terran trees.
     landmass:
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Veerta
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Vidya
         capital:
-          source: MWDA world profiles
+          source: DA:RW
           value: Chakra
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Vinamrata
     event:
       - date: '2319-05-10'
@@ -152,7 +149,19 @@ planet:
         population: 4004795.0
       - date: '2360-01-01'
         population: 10964055.0
+      - date: '2366-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - TH
       - date: '2367-01-02'
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
         faction:
           source: canon
           value:
@@ -248,6 +257,18 @@ planet:
         population: 2543580462.0
       - date: '2760-01-01'
         population: 2563158845.0
+      - date: '2767-01-01'
+        # administration: AE | Lockdale Province
+        # administration: AE | Lockdale Province
+        # administration: AE | Lockdale Province
+        # administration: AE | Lockdale Province
+        # administration: AE | Lockdale Province
+        # administration: AE | Lockdale Province
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - AE
       - date: '2767-04-24'
         faction:
           source: canon
@@ -259,6 +280,12 @@ planet:
           value: X
         population: 2556281265.0
       - date: '2779-11-29'
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
         faction:
           source: canon
           value:
@@ -269,6 +296,12 @@ planet:
           value: B
         population: 2529563778.0
       - date: '2790-07-29'
+        # administration: CC | Tikonov Commonality | Region 4
+        # administration: CC | Tikonov Commonality | Region 4
+        # administration: CC | Tikonov Commonality | Region 4
+        # administration: CC | Tikonov Commonality | Region 4
+        # administration: CC | Tikonov Commonality | Region 4
+        # administration: CC | Tikonov Commonality | Region 4
         faction:
           source: canon
           value:
@@ -327,6 +360,18 @@ planet:
         population:
           source: canon
           value: 1817000000.0
+      - date: '3030-01-01'
+        # administration: LA | Sarna March | Tikonov Operational Area
+        # administration: LA | Sarna March | Tikonov Operational Area
+        # administration: LA | Sarna March | Tikonov Operational Area
+        # administration: LA | Sarna March | Tikonov Operational Area
+        # administration: LA | Sarna March | Tikonov Operational Area
+        # administration: LA | Sarna March | Tikonov Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '3030-03-14'
         faction:
           source: canon
@@ -338,8 +383,25 @@ planet:
       - date: '3037-01-01'
         socioIndustrial: C-B-B-C-D
       - date: '3040-01-01'
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
         population: 1790620073.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
         faction:
           source: canon
           value:
@@ -350,7 +412,25 @@ planet:
         population: 1778639840.0
       - date: '3060-01-01'
         population: 1766457398.0
+      - date: '3067-01-01'
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FS
       - date: '3067-04-20'
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
         faction:
           source: canon
           value:
@@ -375,7 +455,25 @@ planet:
             - Stone
       - date: '3080-01-01'
         population: 1766184604.0
+      - date: '3081-01-01'
+        # administration: ROS | Prefecture IV
+        # administration: ROS | Prefecture IV
+        # administration: ROS | Prefecture IV
+        # administration: ROS | Prefecture IV
+        # administration: ROS | Prefecture IV
+        # administration: ROS | Prefecture IV
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ROS
       - date: '3081-07-09'
+        # administration: ROS | Prefecture IV
+        # administration: ROS | Prefecture IV
+        # administration: ROS | Prefecture IV
+        # administration: ROS | Prefecture IV
+        # administration: ROS | Prefecture IV
+        # administration: ROS | Prefecture IV
         faction:
           source: canon
           value:
@@ -396,6 +494,12 @@ planet:
         hpg:
           source: canon
           value: X
+      - date: '3135-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3135-05-29'
         faction:
           source: canon
@@ -403,7 +507,25 @@ planet:
             - IND
       - date: '3140-01-01'
         population: 1796825737.0
+      - date: '3145-01-01'
+        # administration: CC | Tikonov Commonality | Region 2
+        # administration: CC | Tikonov Commonality | Region 2
+        # administration: CC | Tikonov Commonality | Region 2
+        # administration: CC | Tikonov Commonality | Region 2
+        # administration: CC | Tikonov Commonality | Region 2
+        # administration: CC | Tikonov Commonality | Region 2
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CC
       - date: '3145-08-20'
+        # administration: CC | Tikonov Commonality | Region 8
+        # administration: CC | Tikonov Commonality | Region 8
+        # administration: CC | Tikonov Commonality | Region 8
+        # administration: CC | Tikonov Commonality | Region 8
+        # administration: CC | Tikonov Commonality | Region 8
+        # administration: CC | Tikonov Commonality | Region 8
         faction:
           source: canon
           value:

@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Loburg
-sucsId: 1502
+sucsId: 1503
 xcood: -324.716
 ycood: 10.294
 spectralType:
@@ -88,19 +88,7 @@ planet:
     lifeForm:
       source: canon
       value: MAMMAL
-    desc: Loburg is an unexceptional, though relatively comfortable world that managed
-      to avoid the damages of war for most of its history. The planet has a mild-temperate
-      climate and a breathable atmosphere, along with enough arable land to support
-      its population. The most remarkable feature of Loburg is that it is home to
-      a StarCorps Industries BattleMech factory, which managed to survive the destructive
-      Succession Wars and even the Word of Blake Jihad. The plant is located in Stromhead,
-      the massive planetary capital on Loburg’s only continent, Temptation. Much of
-      the terrain outside of the city is badlands, though there are patches of arable
-      land that are used for agriculture. Most of the raw materials used in the StarCorps
-      factories come from Hiburg, the second planet in the system. Unlike Loburg,
-      the second planet has no atmosphere and has a higher gravity due to its massive
-      size. Due to the high gravity, miners can only spend a few weeks at a time on
-      Hiburg before they need to rotate back to Loburg.
+    desc: Loburg is an unexceptional, though relatively comfortable world that managed to avoid the damages of war for most of its history. The planet has a mild-temperate climate and a breathable atmosphere, along with enough arable land to support its population. The most remarkable feature of Loburg is that it is home to a StarCorps Industries BattleMech factory, which managed to survive the destructive Succession Wars and even the Word of Blake Jihad. The plant is located in Stromhead, the massive planetary capital on Loburg’s only continent, Temptation. Much of the terrain outside of the city is badlands, though there are patches of arable land that are used for agriculture. Most of the raw materials used in the StarCorps factories come from Hiburg, the second planet in the system. Unlike Loburg, the second planet has no atmosphere and has a higher gravity due to its massive size. Due to the high gravity, miners can only spend a few weeks at a time on Hiburg before they need to rotate back to Loburg.
     landmass:
       - name:
           source: canon
@@ -153,7 +141,25 @@ planet:
         population: 75483210.0
       - date: '2820-01-01'
         population: 89959927.0
+      - date: '2821-01-01'
+        # administration: LA | Protectorate of Donegal | Alarion Province
+        # administration: LA | Protectorate of Donegal | Alarion Province
+        # administration: LA | Protectorate of Donegal | Alarion Province
+        # administration: LA | Protectorate of Donegal | Alarion Province
+        # administration: LA | Protectorate of Donegal | Alarion Province
+        # administration: LA | Protectorate of Donegal | Alarion Province
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '2821-08-25'
+        # administration: LA | Protectorate of Donegal | Alarion Province
+        # administration: LA | Protectorate of Donegal | Alarion Province
+        # administration: LA | Protectorate of Donegal | Alarion Province
+        # administration: LA | Protectorate of Donegal | Alarion Province
+        # administration: LA | Protectorate of Donegal | Alarion Province
+        # administration: LA | Protectorate of Donegal | Alarion Province
         faction:
           source: canon
           value:
@@ -200,19 +206,55 @@ planet:
         population: 176184044.0
       - date: '3030-01-01'
         population: 177428289.0
+      - date: '3040-01-01'
+        # administration: FC | Donegal March | Alarion Operational Area
+        # administration: FC | Donegal March | Alarion Operational Area
+        # administration: FC | Donegal March | Alarion Operational Area
+        # administration: FC | Donegal March | Alarion Operational Area
+        # administration: FC | Donegal March | Alarion Operational Area
+        # administration: FC | Donegal March | Alarion Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-09-12'
         population: 178494048.0
         socioIndustrial:
           source: canon
           value: A-B-B-C-C
       - date: '3040-01-19'
+        # administration: FC | Donegal March | Alarion Operational Area
+        # administration: FC | Donegal March | Alarion Operational Area
+        # administration: FC | Donegal March | Alarion Operational Area
+        # administration: FC | Donegal March | Alarion Operational Area
+        # administration: FC | Donegal March | Alarion Operational Area
+        # administration: FC | Donegal March | Alarion Operational Area
         faction:
           source: canon
           value:
             - FC
       - date: '3050-01-01'
         population: 179716018.0
+      - date: '3057-01-01'
+        # administration: LA | Donegal March | Alarion Operational Area
+        # administration: LA | Donegal March | Alarion Operational Area
+        # administration: LA | Donegal March | Alarion Operational Area
+        # administration: LA | Donegal March | Alarion Operational Area
+        # administration: LA | Donegal March | Alarion Operational Area
+        # administration: LA | Donegal March | Alarion Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '3057-09-18'
+        # administration: LA | Alarion Province
+        # administration: LA | Alarion Province
+        # administration: LA | Alarion Province
+        # administration: LA | Alarion Province
+        # administration: LA | Alarion Province
+        # administration: LA | Alarion Province
         faction:
           source: canon
           value:
@@ -249,6 +291,12 @@ planet:
           value:
             - BC
       - date: '3148-01-30'
+        # administration: LA | Buena Province
+        # administration: LA | Buena Province
+        # administration: LA | Buena Province
+        # administration: LA | Buena Province
+        # administration: LA | Buena Province
+        # administration: LA | Buena Province
         faction:
           source: canon
           value:

@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,15 +16,16 @@
 # affiliated with Microsoft.
 
 id: New Earth (Tau Ceti 2116-)
-sucsId: 2498
+sucsId: 2499
 xcood: -12.415
 ycood: 3.055
 spectralType:
   source: canon
   value: F0V
 primarySlot:
-  source: Star League, pg. 175
+  source: SLSB
   value: 4
+  page: 175
 event:
   - date: '2405-03-29'
     zenithCharge: yes
@@ -89,92 +90,57 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 2.56
     sysPos:
-      source: Star League, pg. 175
+      source: SLSB
       value: 4
+      page: 175
     icon: green21
     pressure:
-      source: MWDA world profiles
+      source: DA:RW
       value: STANDARD
     atmosphere:
-      source: MWDA world profiles
+      source: DA:RW
       value: TAINTED_POISON
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: MWDA world profiles
+      source: DA:RW
       value: 1.0
     diameter: 11822
     density: 5.944466623048
     dayLength: 26
     yearLength: 4.3
     temperature:
-      source: MWDA world profiles
+      source: DA:RW
       value: 31
     water:
-      source: MWDA world profiles
+      source: DA:RW
       value: 74
     lifeForm:
-      source: Star League, pg. 175
+      source: SLSB
       value: MAMMAL
-    desc: 3135 - Originally known as Tau Ceti IV, the first inhabitable world seen
-      by human eyes beyond the Terran solar system was so much like home, its discoverers
-      on the TAS Pathfinder were quick to rename it New Earth when they arrived in
-      orbit in December of 2108. Offering almost everything found on Terra herself,
-      from abundant water supply to deep mineral, chemical, and metal ore deposits,
-      eager colonists and corporate entities alike flocked to this new world. It comes
-      as no surprise, then, that by the peak of the Star League era, New Earth was
-      one of the most heavily industrialized and developed planets in the Terran Hegemony.
-      Five major SLDF contractors set up their headquarters on New Earth, along with
-      such successful enterprises as the New Earth Trading Company (NETC). All five
-      continents—McKenna in the northwest, Lanhold to its east, the massive Neoasia
-      in the south, the island continent of Kellargo, and even the north polar continent
-      of Arctiqua—boasted major cities and heavy industry. Dozens of Castles Brian
-      were set up on New Earth as well, and the Star League even built the famous
-      Combat College of New Earth outside the capital city of Foundation Point, on
-      McKenna. During the Amaris crisis, the college, most of the Castles Brian, all
-      the major factories, and close to half the planet‘s largest population centers
-      were destroyed by Amaris troops using every means available when it became clear
-      they could not hold the planet. The world‘s gutted infrastructure and war-ravaged
-      environment left the survivors shocked and demoralized, victims of widespread
-      famine and disease—particularly the virulent New Earth Pox. The centuries of
-      decline that followed, despite being under the banner of the wealthy Lyran state,
-      did little to help pull the world out of the ruins, largely due to the continuous
-      raiding and open warfare between the Lyrans and their neighbors. Only the NETC
-      remained through it all, a last vestige of the once-mighty Star League and the
-      only viable large corporation still active on New Earth. Headquartered in Meredith,
-      on Neoasia, the NETC retained its status as a premier transport and trade facilitator
-      until the Word of Blake Jihad erased Meredith from the map along with a host
-      of other New Earth cities, including the capital, New Foundation. As the closest
-      planet to Terra, New Earth‘s strategic value made it the focus of some of the
-      Jihad‘s heaviest fighting, which leveled what industry remained and poisoned
-      the land, air, and seas. Today, New Earth is populated only by the grace of
-      Devlin Stone‘s Resettlement Act. Industry has only now begun to return to the
-      blasted, scarred world, beginning what promises to be a long and slow recovery
-      for a world that once stood so prominently beside the Cradle of Humanity. The
-      capital of New Earth today is Wiedergeburt, located on Arctiqua‘s southernmost
-      tip, where the effects of fallout from both of New Earth‘s horrible tragedies
-      has been minimal.
+      page: 175
+    desc: 3135 - Originally known as Tau Ceti IV, the first inhabitable world seen by human eyes beyond the Terran solar system was so much like home, its discoverers on the TAS Pathfinder were quick to rename it New Earth when they arrived in orbit in December of 2108. Offering almost everything found on Terra herself, from abundant water supply to deep mineral, chemical, and metal ore deposits, eager colonists and corporate entities alike flocked to this new world. It comes as no surprise, then, that by the peak of the Star League era, New Earth was one of the most heavily industrialized and developed planets in the Terran Hegemony. Five major SLDF contractors set up their headquarters on New Earth, along with such successful enterprises as the New Earth Trading Company (NETC). All five continents—McKenna in the northwest, Lanhold to its east, the massive Neoasia in the south, the island continent of Kellargo, and even the north polar continent of Arctiqua—boasted major cities and heavy industry. Dozens of Castles Brian were set up on New Earth as well, and the Star League even built the famous Combat College of New Earth outside the capital city of Foundation Point, on McKenna. During the Amaris crisis, the college, most of the Castles Brian, all the major factories, and close to half the planet‘s largest population centers were destroyed by Amaris troops using every means available when it became clear they could not hold the planet. The world‘s gutted infrastructure and war-ravaged environment left the survivors shocked and demoralized, victims of widespread famine and disease—particularly the virulent New Earth Pox. The centuries of decline that followed, despite being under the banner of the wealthy Lyran state, did little to help pull the world out of the ruins, largely due to the continuous raiding and open warfare between the Lyrans and their neighbors. Only the NETC remained through it all, a last vestige of the once-mighty Star League and the only viable large corporation still active on New Earth. Headquartered in Meredith, on Neoasia, the NETC retained its status as a premier transport and trade facilitator until the Word of Blake Jihad erased Meredith from the map along with a host of other New Earth cities, including the capital, New Foundation. As the closest planet to Terra, New Earth‘s strategic value made it the focus of some of the Jihad‘s heaviest fighting, which leveled what industry remained and poisoned the land, air, and seas. Today, New Earth is populated only by the grace of Devlin Stone‘s Resettlement Act. Industry has only now begun to return to the blasted, scarred world, beginning what promises to be a long and slow recovery for a world that once stood so prominently beside the Cradle of Humanity. The capital of New Earth today is Wiedergeburt, located on Arctiqua‘s southernmost tip, where the effects of fallout from both of New Earth‘s horrible tragedies has been minimal.
     landmass:
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Arctiqua
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Kellargo
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Lanhold
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: McKenna
         capital:
-          source: MWDA world profiles
+          source: DA:RW
           value: Wiedergeburt
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Neoasia
     satellite:
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Lanna
         size: medium
         icon: oddmoon2
@@ -237,6 +203,12 @@ planet:
           value:
             - TH
       - date: '2317-07-06'
+        # administration: TH | Alliance Core
+        # administration: TH | Alliance Core
+        # administration: TH | Alliance Core
+        # administration: TH | Alliance Core
+        # administration: TH | Alliance Core
+        # administration: TH | Alliance Core
         faction:
           source: canon
           value:
@@ -337,6 +309,18 @@ planet:
         population: 1327531654.0
       - date: '2760-01-01'
         population: 1326044570.0
+      - date: '2767-01-01'
+        # administration: AE | Alliance Core
+        # administration: AE | Alliance Core
+        # administration: AE | Alliance Core
+        # administration: AE | Alliance Core
+        # administration: AE | Alliance Core
+        # administration: AE | Alliance Core
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - AE
       - date: '2767-06-29'
         faction:
           source: canon
@@ -345,6 +329,12 @@ planet:
       - date: '2770-01-01'
         population: 1326787607.0
       - date: '2779-03-27'
+        # administration: TH | Alliance Core
+        # administration: TH | Alliance Core
+        # administration: TH | Alliance Core
+        # administration: TH | Alliance Core
+        # administration: TH | Alliance Core
+        # administration: TH | Alliance Core
         faction:
           source: canon
           value:
@@ -352,6 +342,12 @@ planet:
       - date: '2780-01-01'
         population: 1307958591.0
       - date: '2790-03-08'
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
         faction:
           source: canon
           value:
@@ -364,6 +360,12 @@ planet:
       - date: '2820-01-01'
         population: 1245610851.0
       - date: '2821-12-02'
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
         faction:
           source: canon
           value:
@@ -416,8 +418,25 @@ planet:
       - date: '3034-01-01'
         socioIndustrial: B-C-D-B-D
       - date: '3040-01-01'
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
         population: 1068229523.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
         faction:
           source: canon
           value:
@@ -426,13 +445,37 @@ planet:
         socioIndustrial: A-B-C-A-D
       - date: '3050-01-01'
         population: 1081017391.0
+      - date: '3057-01-01'
+        # administration: LA | Skye March | Ryde Operational Area
+        # administration: LA | Skye March | Ryde Operational Area
+        # administration: LA | Skye March | Ryde Operational Area
+        # administration: LA | Skye March | Ryde Operational Area
+        # administration: LA | Skye March | Ryde Operational Area
+        # administration: LA | Skye March | Ryde Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '3057-09-18'
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
         faction:
           source: canon
           value:
             - LA
       - date: '3060-01-01'
         population: 1096477344.0
+      - date: '3068-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - WOB
       - date: '3068-10-05'
         faction:
           source: canon
@@ -453,7 +496,25 @@ planet:
             - Stone
       - date: '3080-01-01'
         population: 1116057768.0
+      - date: '3081-01-01'
+        # administration: ROS | Prefecture X
+        # administration: ROS | Prefecture X
+        # administration: ROS | Prefecture X
+        # administration: ROS | Prefecture X
+        # administration: ROS | Prefecture X
+        # administration: ROS | Prefecture X
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ROS
       - date: '3081-10-21'
+        # administration: ROS | Prefecture X
+        # administration: ROS | Prefecture X
+        # administration: ROS | Prefecture X
+        # administration: ROS | Prefecture X
+        # administration: ROS | Prefecture X
+        # administration: ROS | Prefecture X
         faction:
           source: canon
           value:
@@ -476,6 +537,12 @@ planet:
         population: 1186256590.0
       - date: '3145-01-01'
         population: 1195306486.0
+      - date: '3151-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - 3SL
       - date: '3151-07-01'
         faction:
           source: canon
@@ -483,6 +550,12 @@ planet:
             - CC
       - date: '2108-12-05'
       - date: '2116-01-01'
+      - date: '3152-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - 3SL
   - name: Bracco's Belt
     type: ASTEROID_BELT
     orbitalDist: 8.32

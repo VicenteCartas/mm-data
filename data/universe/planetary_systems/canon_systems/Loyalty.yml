@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Loyalty
-sucsId: 1525
+sucsId: 1526
 xcood: -226.682
 ycood: -144.558
 spectralType:
@@ -72,15 +72,7 @@ planet:
     lifeForm:
       source: canon
       value: PLANT
-    desc: Loyalty is a hot, arid planet with limited plant-life and no native animals,
-      however it has a wealth of natural resources, which attracted the original settlers
-      to the planet. Due to the hot, dry climate there is limited agriculture on Loyalty
-      and the planet relies on imported food to keep its population fed. The initial
-      mining and refining work quickly attracted industry in the form of the Fidelity
-      Space complex, which were set up at the system’s Nadir Jump point and included
-      manufactures Kallon Industries and Selasys Inc., with the Kallon factories producing
-      DropShips and some combat vehicles and the Selasys Inc. factories producing
-      JumpShips.
+    desc: Loyalty is a hot, arid planet with limited plant-life and no native animals, however it has a wealth of natural resources, which attracted the original settlers to the planet. Due to the hot, dry climate there is limited agriculture on Loyalty and the planet relies on imported food to keep its population fed. The initial mining and refining work quickly attracted industry in the form of the Fidelity Space complex, which were set up at the system’s Nadir Jump point and included manufactures Kallon Industries and Selasys Inc., with the Kallon factories producing DropShips and some combat vehicles and the Selasys Inc. factories producing JumpShips.
     landmass:
       - name:
           source: canon
@@ -118,6 +110,12 @@ planet:
         population: 1962850.0
       - date: '2310-01-01'
         population: 4059142.0
+      - date: '2317-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '2320-01-01'
         population: 7598305.0
       - date: '2330-01-01'
@@ -171,6 +169,18 @@ planet:
         population: 378905117.0
       - date: '2570-01-01'
         population: 387460167.0
+      - date: '2571-01-01'
+        # administration: FWL | Duchy of Graham-Marik
+        # administration: FWL | Duchy of Graham-Marik
+        # administration: FWL | Duchy of Graham-Marik
+        # administration: FWL | Duchy of Graham-Marik
+        # administration: FWL | Duchy of Graham-Marik
+        # administration: FWL | Duchy of Graham-Marik
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FWL
       - date: '2580-01-01'
         population: 392766966.0
       - date: '2590-01-01'
@@ -315,6 +325,12 @@ planet:
         socioIndustrial: B-B-B-A-D
       - date: '3140-01-01'
         population: 400833916.0
+      - date: '3145-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FWL
       - date: '3145-01-11'
         faction:
           source: canon

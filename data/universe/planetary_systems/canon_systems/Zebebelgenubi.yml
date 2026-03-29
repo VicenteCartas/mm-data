@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,15 +16,17 @@
 # affiliated with Microsoft.
 
 id: Zebebelgenubi
-sucsId: 2826
+sucsId: 2827
 xcood: -52.221
 ycood: 47.517
 spectralType:
-  source: Star League, pg. 179
+  source: SLSB
   value: A3IV
+  page: 179
 primarySlot:
-  source: Star League, pg. 179
+  source: SLSB
   value: 6
+  page: 179
 event:
   - date: '2412-02-02'
     zenithCharge: yes
@@ -116,32 +118,34 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 12.48
     sysPos:
-      source: Star League, pg. 179
+      source: SLSB
       value: 6
+      page: 179
     icon: green40
     pressure:
-      source: MWDA world profiles
+      source: DA:RW
       value: STANDARD
     atmosphere:
-      source: MWDA world profiles
+      source: DA:RW
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: MWDA world profiles
+      source: DA:RW
       value: 0.92
     diameter: 11599
     density: 5.574264034366
     dayLength: 24
     yearLength: 44.1
     temperature:
-      source: MWDA world profiles
+      source: DA:RW
       value: 41
     water:
-      source: MWDA world profiles
+      source: DA:RW
       value: 27
     lifeForm:
-      source: Star League, pg. 179
+      source: SLSB
       value: PLANT
+      page: 179
     desc: |-
       3135 - Though it orbits farther out than any other body in its system, Zebebelgenubi is a warm planet dominated by mountains that often completely surround several orphaned seas and lakes. The interior lands of all five major continents are mostly rugged wastes of rock, broken only by the occasional river that has stubbornly cut its way through over eons of history. Many of these mountain ranges are covered by petrified woodlands, fossilized remains of a long-lost era when water flowed more freely across the planet‘s surface. Only in the coastal areas is there sufficient flatland on which to build, and it is in these regions that the bulk of the planetary population has lived since the planet was first settled in the twenty-third century. But, despite its rugged frontier appearance, Zebebelgenubi soon became home to a booming electronics and robotics industry, thanks to the discovery of precious gems and industrial-grade silicon in the mountains. These industries only grew more lucrative when Zebebelgenubi became part of the Terran Hegemony and Ulsop Robotics, headquartered in the planetary capital of Gray Valley City, became the prime developer for artificially intelligent space defense system networks.
 
@@ -152,26 +156,26 @@ planet:
       Today, Gray Valley City remains the largest and most industrialized of Zebebelgenubi‘s cities, but it is the city of Nantucket, on the nearby Wurscht continent, that boasts the planet‘s largest spaceport—half a kilometer longer than Gray Valley‘s, to accommodate more aerodyne DropShip traffic. All three of Zebebelgenubi‘s other continents—Hershaim in the north, Valius and Zeibleria in the south—are sparsely populated, with the majority of towns and smaller settlements located on the shorelines.
     landmass:
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Gastagne
         capital:
-          source: MWDA world profiles
+          source: DA:RW
           value: Gray Valley City
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Hershaim
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Valius
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Wurscht
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Zeibleria
     satellite:
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Nachteufel
         size: medium
         icon: rock6
@@ -233,6 +237,17 @@ planet:
         population: 2799137778.0
       - date: '2317-01-01'
         socioIndustrial: C-C-C-C-F
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
+      - date: '2319-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FoS
       - date: '2320-01-01'
         population: 3236544662.0
       - date: '2330-01-01'
@@ -240,6 +255,12 @@ planet:
       - date: '2340-01-01'
         population: 4117266114.0
       - date: '2341-03-08'
+        # administration: LA | Federation of Skye
+        # administration: LA | Federation of Skye
+        # administration: LA | Federation of Skye
+        # administration: LA | Federation of Skye
+        # administration: LA | Federation of Skye
+        # administration: LA | Federation of Skye
         faction:
           source: canon
           value:
@@ -341,6 +362,18 @@ planet:
           source: canon
           value:
             - RWR
+      - date: '2767-01-01'
+        # administration: AE | Tyrfing Province
+        # administration: AE | Tyrfing Province
+        # administration: AE | Tyrfing Province
+        # administration: AE | Tyrfing Province
+        # administration: AE | Tyrfing Province
+        # administration: AE | Tyrfing Province
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - AE
       - date: '2768-10-17'
         faction:
           source: canon
@@ -349,6 +382,12 @@ planet:
       - date: '2770-01-01'
         population: 9321801579.0
       - date: '2779-09-30'
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
         faction:
           source: canon
           value:
@@ -385,6 +424,12 @@ planet:
           value:
             - DC
       - date: '2894-10-20'
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
         faction:
           source: canon
           value:
@@ -422,8 +467,25 @@ planet:
       - date: '3036-01-01'
         socioIndustrial: C-B-F-B-D
       - date: '3040-01-01'
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
         population: 7273741178.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
         faction:
           source: canon
           value:
@@ -432,7 +494,25 @@ planet:
         socioIndustrial: B-A-D-A-D
       - date: '3050-01-01'
         population: 7330698203.0
+      - date: '3057-01-01'
+        # administration: LA | Skye March | Alcor Operational Area
+        # administration: LA | Skye March | Alcor Operational Area
+        # administration: LA | Skye March | Alcor Operational Area
+        # administration: LA | Skye March | Alcor Operational Area
+        # administration: LA | Skye March | Alcor Operational Area
+        # administration: LA | Skye March | Alcor Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '3057-09-18'
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
         faction:
           source: canon
           value:
@@ -446,6 +526,12 @@ planet:
             - LA
             - FWL
       - date: '3068-12-01'
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
         faction:
           source: canon
           value:
@@ -454,7 +540,25 @@ planet:
         population: 7436280300.0
       - date: '3080-01-01'
         population: 7500508094.0
+      - date: '3081-01-01'
+        # administration: ROS | Prefecture IX
+        # administration: ROS | Prefecture IX
+        # administration: ROS | Prefecture IX
+        # administration: ROS | Prefecture IX
+        # administration: ROS | Prefecture IX
+        # administration: ROS | Prefecture IX
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ROS
       - date: '3081-03-19'
+        # administration: ROS | Prefecture IX
+        # administration: ROS | Prefecture IX
+        # administration: ROS | Prefecture IX
+        # administration: ROS | Prefecture IX
+        # administration: ROS | Prefecture IX
+        # administration: ROS | Prefecture IX
         faction:
           source: canon
           value:
@@ -482,6 +586,12 @@ planet:
         population: 7814420151.0
       - date: '3145-01-01'
         population: 7836331188.0
+      - date: '3152-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IoS
       - date: '3152-06-01'
         faction:
           source: sucs

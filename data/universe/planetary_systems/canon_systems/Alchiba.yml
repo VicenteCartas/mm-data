@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -20,10 +20,10 @@ sucsId: 56
 xcood: -67.732
 ycood: 1.767
 spectralType:
-  source: MWDA world profiles
+  source: DA:RW
   value: F0VI
 primarySlot:
-  source: MWDA world profiles
+  source: DA:RW
   value: 3
 event:
   - date: '2362-09-26'
@@ -79,31 +79,31 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 4.48
     sysPos:
-      source: MWDA world profiles
+      source: DA:RW
       value: 3
     icon: green31
     pressure:
-      source: MWDA world profiles
+      source: DA:RW
       value: STANDARD
     atmosphere:
-      source: MWDA world profiles
+      source: DA:RW
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: MWDA world profiles
+      source: DA:RW
       value: 0.73
     diameter: 8750
     density: 5.862896146424
     dayLength: 24
     yearLength: 9.6
     temperature:
-      source: MWDA world profiles
+      source: DA:RW
       value: 50
     water:
-      source: MWDA world profiles
+      source: DA:RW
       value: 55
     lifeForm:
-      source: MWDA world profiles
+      source: DA:RW
       value: AMPHIBIAN
     desc: |-
       3135 - Alchiba is a warm world orbiting a harsh, bright yellow, sub-dwarf star. The planet's axial tilt is synchronized with its rotation and orbit so that the northern hemisphere receives less direct sunlight than the southern hemisphere and equatorial reaches. Havenri, the northern polar continent, and its surrounding island chains have been blessed with rich soils and a temperate climate that is well suited for agriculture. The three southern continents, Frome, Nakkara, and Priez, are largely dominated by deserts and barren mountains. Settlers thus developed much of Havenri for habitation and agriculture, while the southern continents host limited mining and ore-refining industries of common and industrial metals. The agricultural and light machine products trade flows through the planetary capital and port city of Fairweather, on Havenri.
@@ -111,38 +111,38 @@ planet:
       During the Star League era, Alchiba was jointly administered by the Lyran Commonwealth and the Terran Hegemony, serving as a trading post. Amaris' troops to largely ignore the planet and left it to the Lyran Commonwealth due to its lack of heavy military industries. During the Succession Wars, Alchiba was the target of the odd raid launched by the Free World League or the Draconis Combine. During the Jihad, the Word of Blake ignored this world completely. As a result, The Republic of the Sphere inherited a remarkably undamaged world.
     landmass:
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Frome
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Havenri
         capital:
-          source: MWDA world profiles
+          source: DA:RW
           value: Fairweather
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Nakkara
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Priez
     satellite:
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Kaylen
         size: giant
         icon: rock5
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Lorcan
         size: medium
         icon: rock8
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Onna
         size: medium
         icon: rock9
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Quinlin
         size: large
         icon: rock13
@@ -178,6 +178,12 @@ planet:
         population: 115523846.0
       - date: '2340-01-01'
         population: 172944153.0
+      - date: '2341-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '2350-01-01'
         population: 245255300.0
       - date: '2360-01-01'
@@ -228,7 +234,25 @@ planet:
         population: 2128521023.0
       - date: '2570-01-01'
         population: 2146286930.0
+      - date: '2571-01-01'
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '2571-05-23'
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
         faction:
           source: canon
           value:
@@ -274,6 +298,18 @@ planet:
         population: 2389557410.0
       - date: '2760-01-01'
         population: 2387373626.0
+      - date: '2767-01-01'
+        # administration: AE | Tyrfing Province
+        # administration: AE | Tyrfing Province
+        # administration: AE | Tyrfing Province
+        # administration: AE | Tyrfing Province
+        # administration: AE | Tyrfing Province
+        # administration: AE | Tyrfing Province
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - AE
       - date: '2767-11-02'
         faction:
           source: canon
@@ -282,13 +318,37 @@ planet:
       - date: '2770-01-01'
         population: 2389626586.0
       - date: '2779-06-30'
+        # administration: TH | Tyrfing Province
+        # administration: TH | Tyrfing Province
+        # administration: TH | Tyrfing Province
+        # administration: TH | Tyrfing Province
+        # administration: TH | Tyrfing Province
+        # administration: TH | Tyrfing Province
         faction:
           source: canon
           value:
             - TH
       - date: '2780-01-01'
         population: 2399730913.0
+      - date: '2786-01-01'
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '2786-06-05'
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
         faction:
           source: canon
           value:
@@ -350,8 +410,25 @@ planet:
       - date: '3030-01-01'
         population: 1826191317.0
       - date: '3040-01-01'
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
         population: 1842148494.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
         faction:
           source: canon
           value:
@@ -360,13 +437,37 @@ planet:
         socioIndustrial: A-A-A-C-C
       - date: '3050-01-01'
         population: 1857316215.0
+      - date: '3057-01-01'
+        # administration: LA | Skye March | Alcor Operational Area
+        # administration: LA | Skye March | Alcor Operational Area
+        # administration: LA | Skye March | Alcor Operational Area
+        # administration: LA | Skye March | Alcor Operational Area
+        # administration: LA | Skye March | Alcor Operational Area
+        # administration: LA | Skye March | Alcor Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '3057-09-18'
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
         faction:
           source: canon
           value:
             - LA
       - date: '3060-01-01'
         population: 1877671697.0
+      - date: '3068-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FWL
       - date: '3068-09-01'
         faction:
           source: canon
@@ -375,13 +476,37 @@ planet:
       - date: '3070-01-01'
         population: 1896921958.0
       - date: '3070-02-01'
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
         faction:
           source: canon
           value:
             - LA
       - date: '3080-01-01'
         population: 1914071312.0
+      - date: '3081-01-01'
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ROS
       - date: '3081-02-23'
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
         faction:
           source: canon
           value:
@@ -400,6 +525,12 @@ planet:
         population: 1951566826.0
       - date: '3132-08-07'
         hpg: X
+      - date: '3135-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3135-10-01'
         faction:
           source: canon
@@ -407,6 +538,12 @@ planet:
             - IND
       - date: '3140-01-01'
         population: 1951176552.0
+      - date: '3145-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CWE
       - date: '3145-04-13'
         faction:
           source: canon

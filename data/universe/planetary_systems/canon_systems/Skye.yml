@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,15 +16,16 @@
 # affiliated with Microsoft.
 
 id: Skye
-sucsId: 2356
+sucsId: 2357
 xcood: -57.009
 ycood: 51.376
 spectralType:
   source: canon
   value: G8V
 primarySlot:
-  source: Masters and Minions, pg. 95
+  source: M&M
   value: 4
+  page: 95
 event:
   - date: '2411-01-30'
     zenithCharge: yes
@@ -81,32 +82,39 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.8
     sysPos:
-      source: Masters and Minions, pg. 95
+      source: M&M
       value: 4
+      page: 95
     icon: green46
     pressure:
-      source: Masters and Minions, pg. 95
+      source: M&M
       value: STANDARD
+      page: 95
     atmosphere:
-      source: Masters and Minions, pg. 95
+      source: M&M
       value: BREATHABLE
+      page: 95
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: Masters and Minions, pg. 95
+      source: M&M
       value: 1.03
+      page: 95
     diameter: 11101
     density: 6.520510561069
     dayLength: 25
     yearLength: 1.1
     temperature:
-      source: Masters and Minions, pg. 95
+      source: M&M
       value: 30
+      page: 95
     water:
-      source: Masters and Minions, pg. 95
+      source: M&M
       value: 70
+      page: 95
     lifeForm:
-      source: Masters and Minions, pg. 95
+      source: M&M
       value: MAMMAL
+      page: 95
     desc: |-
       3135 - A rare, habitable planet in a binary star system, Skye‘s single, pan-hemispheric supercontinent of New Scotland boasts cool climates in the northern and southern reaches, coupled with moody rain, fog-wreathed hills, and deep green valleys. These features, more than the vast mineral and metallurgical wealth buried beneath, drew the first settlers, most of whom hailed from Terra‘s British Isles, to this world. These first Scottish and Irish colonists flocked to Skye to recreate the splendors of their native lands, making a fresh start on a world unspoiled by mankind‘s rampant industrialization, and they enacted strict “zoning laws” to limit commercial development and heavy industry. Mining, refining, and manufacturing were restricted to less than fifty percent of the world‘s land area, but despite this severe limitation, which left vast resources untapped by default, these laws did not impede the growth of industry and trade on Skye. A side effect of this arrangement, however, was that exploitable lands were swiftly gobbled up by the wealthiest people and corporations, locking up these resources and giving rise to a nobility that became locked in a geopolitical stasis for centuries. Ian McQuiston, entrepreneur and founder of Skye Traders, was the most powerful of Skye‘s original ruling class, whose economic empire extended to encompass many of the surrounding worlds. Under his guidance and rule, Skye rose to prominence quickly on the galactic scene, ultimately forming the Federation of Skye.
 
@@ -124,15 +132,18 @@ planet:
       Skye Pleasure Craft
     landmass:
       - name:
-          source: Masters and Minions, pg. 95
+          source: M&M
           value: New Scotland
+          page: 95
         capital:
-          source: Masters and Minions, pg. 95
+          source: M&M
           value: New Glasgow
+          page: 95
     satellite:
       - name:
-          source: Masters and Minions, pg. 95
+          source: M&M
           value: Luna
+          page: 95
         size: medium
         icon: oddmoon1
     event:
@@ -179,6 +190,12 @@ planet:
       - date: '2290-01-01'
         population: 617283648.0
       - date: '2299-06-26'
+        # administration: FoS | National Capital
+        # administration: FoS | National Capital
+        # administration: FoS | National Capital
+        # administration: FoS | National Capital
+        # administration: FoS | National Capital
+        # administration: FoS | National Capital
         faction:
           source: canon
           value:
@@ -194,6 +211,12 @@ planet:
       - date: '2340-01-01'
         population: 1481265906.0
       - date: '2341-02-26'
+        # administration: LA | Federation of Skye | District Capital
+        # administration: LA | Federation of Skye | District Capital
+        # administration: LA | Federation of Skye | District Capital
+        # administration: LA | Federation of Skye | District Capital
+        # administration: LA | Federation of Skye | District Capital
+        # administration: LA | Federation of Skye | District Capital
         faction:
           source: canon
           value:
@@ -350,19 +373,55 @@ planet:
       - date: '3030-03-13'
         population: 4153725755.0
         socioIndustrial: B-B-B-C-C
+      - date: '3040-01-01'
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-04-03'
         population: 4210181270.0
         socioIndustrial:
           source: canon
           value: A-A-A-B-B
       - date: '3040-01-19'
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
         faction:
           source: canon
           value:
             - FC
       - date: '3050-01-01'
         population: 4258877823.0
+      - date: '3057-01-01'
+        # administration: LA | Skye March | Alcor Operational Area
+        # administration: LA | Skye March | Alcor Operational Area
+        # administration: LA | Skye March | Alcor Operational Area
+        # administration: LA | Skye March | Alcor Operational Area
+        # administration: LA | Skye March | Alcor Operational Area
+        # administration: LA | Skye March | Alcor Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '3057-09-18'
+        # administration: LA | Skye Province | District Capital
+        # administration: LA | Skye Province | District Capital
+        # administration: LA | Skye Province | District Capital
+        # administration: LA | Skye Province | District Capital
+        # administration: LA | Skye Province | District Capital
+        # administration: LA | Skye Province | District Capital
         faction:
           source: canon
           value:
@@ -381,7 +440,25 @@ planet:
           value: 4347780000.0
       - date: '3080-01-01'
         population: 4352893047.0
+      - date: '3081-01-01'
+        # administration: ROS | Prefecture IX | Region Capital
+        # administration: ROS | Prefecture IX | Region Capital
+        # administration: ROS | Prefecture IX | Region Capital
+        # administration: ROS | Prefecture IX | Region Capital
+        # administration: ROS | Prefecture IX | Region Capital
+        # administration: ROS | Prefecture IX | Region Capital
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ROS
       - date: '3081-01-16'
+        # administration: ROS | Prefecture IX | Region Capital
+        # administration: ROS | Prefecture IX | Region Capital
+        # administration: ROS | Prefecture IX | Region Capital
+        # administration: ROS | Prefecture IX | Region Capital
+        # administration: ROS | Prefecture IX | Region Capital
+        # administration: ROS | Prefecture IX | Region Capital
         faction:
           source: canon
           value:
@@ -402,6 +479,12 @@ planet:
         hpg:
           source: canon
           value: X
+      - date: '3135-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CJF
       - date: '3135-04-13'
         faction:
           source: canon
@@ -421,6 +504,18 @@ planet:
           source: sucs
           value:
             - CWE
+      - date: '3152-01-01'
+        # administration: IoS | Region Capital
+        # administration: IoS | Region Capital
+        # administration: IoS | Region Capital
+        # administration: IoS | Region Capital
+        # administration: IoS | Region Capital
+        # administration: IoS | Region Capital
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IoS
       - date: '3152-06-01'
         faction:
           source: sucs

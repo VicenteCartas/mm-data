@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Sharpe (Obeedah 3025+)
-sucsId: 2293
+sucsId: 2294
 xcood: 63.639
 ycood: -207.462
 spectralType: M2V
@@ -52,6 +52,12 @@ planet:
         capital: New Mitchell Town
     event:
       - date: '2680-11-15'
+        # administration: CC | St. Ives Commonality | Region 1
+        # administration: CC | St. Ives Commonality | Region 1
+        # administration: CC | St. Ives Commonality | Region 1
+        # administration: CC | St. Ives Commonality | Region 1
+        # administration: CC | St. Ives Commonality | Region 1
+        # administration: CC | St. Ives Commonality | Region 1
         faction:
           source: canon
           value:
@@ -106,6 +112,24 @@ planet:
         hpg: X
         population: 0.0
         socioIndustrial: X-X-X-X-X
+      - date: '2864-01-01'
+        # administration: CC | St. Ives Commonality | Region 1
+        # administration: CC | St. Ives Commonality | Region 1
+        # administration: CC | St. Ives Commonality | Region 1
+        # administration: CC | St. Ives Commonality | Region 1
+        # administration: CC | St. Ives Commonality | Region 1
+        # administration: CC | St. Ives Commonality | Region 1
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CC
+      - date: '3030-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ABN
       - date: '3057-01-26'
         faction:
           source: canon
@@ -113,6 +137,12 @@ planet:
             - WOB
         population: 50055.0
         socioIndustrial: B-B-A-C-A
+      - date: '3058-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ABN
       - date: '3059-04-02'
         hpg: B
       - date: '3060-01-01'
@@ -145,6 +175,11 @@ planet:
       - date: '3025-01-01'
         name: Obeedah
         message: Sharpe renamed to Obeedah
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ABN
   - name: Pudicitia
     type: TERRESTRIAL
     orbitalDist: 0.28

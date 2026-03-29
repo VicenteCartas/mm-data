@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,15 +16,17 @@
 # affiliated with Microsoft.
 
 id: Galatea
-sucsId: 917
+sucsId: 918
 xcood: -53.775
 ycood: 34.077
 spectralType:
-  source: Masters and Minions, pg. 96
+  source: M&M
   value: F8II
+  page: 96
 primarySlot:
-  source: Masters and Minions, pg. 96
+  source: M&M
   value: 6
+  page: 96
 event:
   - date: '2376-02-25'
     zenithCharge: yes
@@ -126,50 +128,54 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 3.36
     sysPos:
-      source: Masters and Minions, pg. 96
+      source: M&M
       value: 6
+      page: 96
     icon: green35
     pressure:
-      source: Masters and Minions, pg. 96
+      source: M&M
       value: STANDARD
+      page: 96
     atmosphere:
-      source: Masters and Minions, pg. 96
+      source: M&M
       value: BREATHABLE
+      page: 96
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: Mercenaries Supplemental, pg. 10
+      source: MS
       value: 1.0
+      page: 10
     diameter: 11673
     density: 6.020521334621
     dayLength: 23
     yearLength: 6.3
     temperature:
-      source: Masters and Minions, pg. 96
+      source: M&M
       value: 55
+      page: 96
     water:
-      source: Masters and Minions, pg. 96
+      source: M&M
       value: 35
+      page: 96
     lifeForm:
-      source: Masters and Minions, pg. 96
+      source: M&M
       value: MAMMAL
-    desc: Galatea is an arid planet located just three jumps from Terra. It served
-      as a major training location for the Star League Defense force and transitioned
-      into the Mercenary Star after the League collapsed after the Amaris Coup. The
-      planet fell out of prominence with the rise of the Hiring Hall on Outreach,
-      but returned to some of its former glory during and after the Jihad due to the
-      destruction of the facilities on Outreach. The primary spaceport, Galaport,
-      is located just northwest of the planet's capital Galatean City.
+      page: 96
+    desc: Galatea is an arid planet located just three jumps from Terra. It served as a major training location for the Star League Defense force and transitioned into the Mercenary Star after the League collapsed after the Amaris Coup. The planet fell out of prominence with the rise of the Hiring Hall on Outreach, but returned to some of its former glory during and after the Jihad due to the destruction of the facilities on Outreach. The primary spaceport, Galaport, is located just northwest of the planet's capital Galatean City.
     landmass:
       - name:
-          source: Mercenaries Supplemental, pg. 10
+          source: MS
           value: Lubbocks
+          page: 10
         capital:
-          source: Masters and Minions, pg. 96
+          source: M&M
           value: Galatean City
+          page: 96
     satellite:
       - name:
-          source: Masters and Minions, pg. 96
+          source: M&M
           value: Galatea Minor
+          page: 96
         size: large
         icon: rock8
     event:
@@ -200,6 +206,12 @@ planet:
         population: 40482282.0
       - date: '2340-01-01'
         population: 57936937.0
+      - date: '2341-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - TH
       - date: '2350-01-01'
         population: 79215707.0
       - date: '2360-01-01'
@@ -257,6 +269,18 @@ planet:
         population: 541410569.0
       - date: '2570-01-01'
         population: 553628268.0
+      - date: '2571-01-01'
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '2580-01-01'
         population: 564114980.0
       - date: '2590-01-01'
@@ -280,7 +304,7 @@ planet:
       - date: '2650-01-01'
         population: 594885097.0
         hiringHall:
-          source: Merc Supplemental 1
+          source: MS
           value: GREAT
       - date: '2660-01-01'
         population: 598352411.0
@@ -301,6 +325,12 @@ planet:
       - date: '2740-01-01'
         population: 587438704.0
       - date: '2750-01-01'
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
         faction:
           source: sucs
           value:
@@ -308,6 +338,18 @@ planet:
         population: 582638215.0
       - date: '2760-01-01'
         population: 579304471.0
+      - date: '2767-01-01'
+        # administration: AE | Tyrfing Province
+        # administration: AE | Tyrfing Province
+        # administration: AE | Tyrfing Province
+        # administration: AE | Tyrfing Province
+        # administration: AE | Tyrfing Province
+        # administration: AE | Tyrfing Province
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - AE
       - date: '2767-01-14'
         faction:
           source: canon
@@ -316,6 +358,12 @@ planet:
       - date: '2770-01-01'
         population: 576358107.0
       - date: '2779-03-05'
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
         faction:
           source: canon
           value:
@@ -323,6 +371,12 @@ planet:
       - date: '2780-01-01'
         population: 570275345.0
       - date: '2790-08-02'
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
         faction:
           source: canon
           value:
@@ -381,8 +435,25 @@ planet:
       - date: '3030-01-01'
         population: 537496448.0
       - date: '3040-01-01'
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
         population: 542301517.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
         faction:
           source: canon
           value:
@@ -393,7 +464,25 @@ planet:
           value: C-C-C-C-C
       - date: '3050-01-01'
         population: 547149542.0
+      - date: '3057-01-01'
+        # administration: LA | Skye March | Alcor Operational Area
+        # administration: LA | Skye March | Alcor Operational Area
+        # administration: LA | Skye March | Alcor Operational Area
+        # administration: LA | Skye March | Alcor Operational Area
+        # administration: LA | Skye March | Alcor Operational Area
+        # administration: LA | Skye March | Alcor Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '3057-09-18'
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
         faction:
           source: canon
           value:
@@ -406,7 +495,25 @@ planet:
           value:
             - LA
             - REB
+      - date: '3063-01-01'
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '3064-06-30'
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
         faction:
           source: canon
           value:
@@ -416,6 +523,12 @@ planet:
           source: canon
           value: 556976000.0
       - date: '3067-04-20'
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
         faction:
           source: canon
           value:
@@ -438,7 +551,25 @@ planet:
           value: 552236000.0
       - date: '3080-01-01'
         population: 550901941.0
+      - date: '3081-01-01'
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ROS
       - date: '3081-08-03'
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
         faction:
           source: canon
           value:
@@ -459,6 +590,12 @@ planet:
         hpg:
           source: canon
           value: X
+      - date: '3135-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3135-10-01'
         faction:
           source: canon
@@ -473,6 +610,18 @@ planet:
             - GL
       - date: '3145-01-01'
         population: 607502826.0
+      - date: '3152-01-01'
+        # administration: IoS | Region Capital
+        # administration: IoS | Region Capital
+        # administration: IoS | Region Capital
+        # administration: IoS | Region Capital
+        # administration: IoS | Region Capital
+        # administration: IoS | Region Capital
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IoS
   - name: Zhui
     type: TERRESTRIAL
     orbitalDist: 12.0

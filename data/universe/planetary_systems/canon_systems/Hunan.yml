@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: Hunan
-sucsId: 1153
+sucsId: 1154
 xcood: 71.209
 ycood: -95.949
 spectralType:
-  source: MWDA world profiles
+  source: DA:RW
   value: F9VII
 primarySlot:
-  source: MWDA world profiles
+  source: DA:RW
   value: 4
 event:
   - date: '2354-09-06'
@@ -87,31 +87,31 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 3.08
     sysPos:
-      source: MWDA world profiles
+      source: DA:RW
       value: 4
     icon: green56
     pressure:
-      source: MWDA world profiles
+      source: DA:RW
       value: STANDARD
     atmosphere:
-      source: MWDA world profiles
+      source: DA:RW
       value: TAINTED_POISON
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: MWDA world profiles
+      source: DA:RW
       value: 1.1
     diameter: 15971
     density: 4.840121280068
     dayLength: 29
     yearLength: 5.5
     temperature:
-      source: MWDA world profiles
+      source: DA:RW
       value: 45
     water:
-      source: MWDA world profiles
+      source: DA:RW
       value: 54
     lifeForm:
-      source: MWDA world profiles
+      source: DA:RW
       value: REPTILE
     desc: |-
       3135 - Hunan's atmosphere is tainted by tons of sulfur vapor produced by hundreds of volcanoes located on the main equatorial continent of Hell. Hell is completely devoid of life. The population of the planet lives in Kamala, the only continent that can support life. Kamala's landscape is a frozen lava flow, reddish-brown in color, with sulfurous, steam-belching geysers and half-melted purple hillsides. On the outskirts of Hunan City, the capital, the Hellfire Mountains are made up of volcanoes and hot springs that make the use of infrared scans nearly impossible and the sulfur vapors hamper radar and magscans.
@@ -121,23 +121,23 @@ planet:
       Hunan was relatively peaceful throughout its history and did not see any military action until near the end of the Jihad. A retreating Word of Blake unit that had been routed at the Battle of Sian landed on Roc. After a week, the Blakists captured one of the domed cities. A few days later, the Hunanites destroyed the dome, killing nearly all the invaders. The Fire Lizards took care of the rest.
     landmass:
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Bandar
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Kamala
         capital:
-          source: MWDA world profiles
+          source: DA:RW
           value: Hunan City
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Roc
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Zeka
     satellite:
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Nefari
         size: medium
         icon: rock1
@@ -188,6 +188,12 @@ planet:
       - date: '2360-01-01'
         population: 3407240745.0
       - date: '2367-07-01'
+        # administration: CC | Sarna Commonality | Region 1
+        # administration: CC | Sarna Commonality | Region 1
+        # administration: CC | Sarna Commonality | Region 1
+        # administration: CC | Sarna Commonality | Region 1
+        # administration: CC | Sarna Commonality | Region 1
+        # administration: CC | Sarna Commonality | Region 1
         faction:
           source: canon
           value:
@@ -340,6 +346,18 @@ planet:
         population: 7611718287.0
       - date: '3026-01-01'
         socioIndustrial: B-B-D-B-D
+      - date: '3030-01-01'
+        # administration: LA | Sarna March | Palos Operational Area
+        # administration: LA | Sarna March | Palos Operational Area
+        # administration: LA | Sarna March | Palos Operational Area
+        # administration: LA | Sarna March | Palos Operational Area
+        # administration: LA | Sarna March | Palos Operational Area
+        # administration: LA | Sarna March | Palos Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '3030-05-08'
         faction:
           source: canon
@@ -349,8 +367,25 @@ planet:
       - date: '3037-01-01'
         socioIndustrial: B-B-F-B-D
       - date: '3040-01-01'
+        # administration: FC | Sarna March | Palos Operational Area
+        # administration: FC | Sarna March | Palos Operational Area
+        # administration: FC | Sarna March | Palos Operational Area
+        # administration: FC | Sarna March | Palos Operational Area
+        # administration: FC | Sarna March | Palos Operational Area
+        # administration: FC | Sarna March | Palos Operational Area
         population: 7701455102.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
+        # administration: FC | Sarna March | Palos Operational Area
+        # administration: FC | Sarna March | Palos Operational Area
+        # administration: FC | Sarna March | Palos Operational Area
+        # administration: FC | Sarna March | Palos Operational Area
+        # administration: FC | Sarna March | Palos Operational Area
+        # administration: FC | Sarna March | Palos Operational Area
         faction:
           source: canon
           value:
@@ -359,14 +394,32 @@ planet:
         socioIndustrial: A-A-F-A-C
       - date: '3050-01-01'
         population: 7784303118.0
+      - date: '3057-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3057-11-01'
         faction:
           source: canon
           value:
             - CM
+      - date: '3058-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3060-01-01'
         population: 7857820558.0
       - date: '3062-02-20'
+        # administration: CC | Liao Commonality | Region 3
+        # administration: CC | Liao Commonality | Region 3
+        # administration: CC | Liao Commonality | Region 3
+        # administration: CC | Liao Commonality | Region 3
+        # administration: CC | Liao Commonality | Region 3
+        # administration: CC | Liao Commonality | Region 3
         faction:
           source: canon
           value:
@@ -375,7 +428,25 @@ planet:
         population: 7935205768.0
       - date: '3080-01-01'
         population: 8019766328.0
+      - date: '3085-01-01'
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ROS
       - date: '3085-08-03'
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
         faction:
           source: canon
           value:
@@ -394,6 +465,12 @@ planet:
           value:
             - CC
       - date: '3113-05-01'
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
         faction:
           source: canon
           value:
@@ -402,6 +479,12 @@ planet:
         population: 8111714774.0
       - date: '3130-01-01'
         population: 8126329010.0
+      - date: '3135-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3135-10-01'
         faction:
           source: canon
@@ -409,7 +492,25 @@ planet:
             - IND
       - date: '3140-01-01'
         population: 8163796232.0
+      - date: '3145-01-01'
+        # administration: CC | Sarna Commonality | Region 1
+        # administration: CC | Sarna Commonality | Region 1
+        # administration: CC | Sarna Commonality | Region 1
+        # administration: CC | Sarna Commonality | Region 1
+        # administration: CC | Sarna Commonality | Region 1
+        # administration: CC | Sarna Commonality | Region 1
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CC
       - date: '3145-08-04'
+        # administration: CC | Sarna Commonality | Region 1
+        # administration: CC | Sarna Commonality | Region 1
+        # administration: CC | Sarna Commonality | Region 1
+        # administration: CC | Sarna Commonality | Region 1
+        # administration: CC | Sarna Commonality | Region 1
+        # administration: CC | Sarna Commonality | Region 1
         faction:
           source: canon
           value:

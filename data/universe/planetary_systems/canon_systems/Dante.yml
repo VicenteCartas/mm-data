@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,15 +16,16 @@
 # affiliated with Microsoft.
 
 id: Dante
-sucsId: 2894
+sucsId: 2895
 xcood: 427.86
 ycood: 175.122
 spectralType:
   source: canon
   value: K4V
 primarySlot:
-  source: Periphery (1ed), pg. 121
+  source: Per1e
   value: 2
+  page: 121
 planet:
   - name: Crosbyton
     type: GIANT_TERRESTRIAL
@@ -52,8 +53,9 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.28
     sysPos:
-      source: Periphery (1ed), pg. 121
+      source: Per1e
       value: 2
+      page: 121
     icon: green4
     pressure:
       source: canon
@@ -74,18 +76,10 @@ planet:
       source: canon
       value: 42
     lifeForm:
-      source: Periphery (1ed), pg. 121
+      source: Per1e
       value: AMPHIBIAN
-    desc: For most of its history, Dante was a quiet agricultural world with a cool,
-      but comfortable, climate and sufficient natural resources but only modest industrial
-      concerns and a small population dominated by pacifists. The lack of industry
-      and military presence protected the planet from the ravages of the Succession
-      Wars, but made the planet easy pickins for a Word of Blake sponsored pirate
-      group that took over in the late 3060s. This changed when the Snow Ravens came
-      to the Inner Sphere and decided to work with the Outworlds Alliance, after removing
-      the pirates that had taken over the planet the Ravens claimed Dante as their
-      own and imported several prefabricated factories from the homeworlds as well
-      as building their new genetic repository.
+      page: 121
+    desc: For most of its history, Dante was a quiet agricultural world with a cool, but comfortable, climate and sufficient natural resources but only modest industrial concerns and a small population dominated by pacifists. The lack of industry and military presence protected the planet from the ravages of the Succession Wars, but made the planet easy pickins for a Word of Blake sponsored pirate group that took over in the late 3060s. This changed when the Snow Ravens came to the Inner Sphere and decided to work with the Outworlds Alliance, after removing the pirates that had taken over the planet the Ravens claimed Dante as their own and imported several prefabricated factories from the homeworlds as well as building their new genetic repository.
     landmass:
       - name:
           source: canon
@@ -107,7 +101,25 @@ planet:
         size: large
         icon: rock7
     event:
+      - date: '2864-01-01'
+        # administration: OA | Ramora Province
+        # administration: OA | Ramora Province
+        # administration: OA | Ramora Province
+        # administration: OA | Ramora Province
+        # administration: OA | Ramora Province
+        # administration: OA | Ramora Province
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - OA
       - date: '2864-02-22'
+        # administration: OA | Ramora Province
+        # administration: OA | Ramora Province
+        # administration: OA | Ramora Province
+        # administration: OA | Ramora Province
+        # administration: OA | Ramora Province
+        # administration: OA | Ramora Province
         faction:
           source: canon
           value:
@@ -169,6 +181,12 @@ planet:
         population: 2839274.0
       - date: '3070-01-01'
         population: 2852740.0
+      - date: '3075-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CSR
       - date: '3080-01-01'
         population: 2878531.0
       - date: '3083-01-23'

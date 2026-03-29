@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -23,8 +23,9 @@ spectralType:
   source: canon
   value: F8IV
 primarySlot:
-  source: 'Handbook: House Davion, pg. 93'
+  source: 'HB:HD'
   value: 4
+  page: 93
 event:
   - date: '2364-11-12'
     nadirCharge: yes
@@ -88,32 +89,39 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 3.36
     sysPos:
-      source: 'Handbook: House Davion, pg. 93'
+      source: 'HB:HD'
       value: 4
+      page: 93
     icon: green7
     pressure:
-      source: 'Handbook: House Davion, pg. 93'
+      source: 'HB:HD'
       value: VERY_HIGH
+      page: 93
     atmosphere:
-      source: 'Handbook: House Davion, pg. 93'
+      source: 'HB:HD'
       value: BREATHABLE
+      page: 93
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'Handbook: House Davion, pg. 93'
+      source: 'HB:HD'
       value: 1.1
+      page: 93
     diameter: 12296
     density: 6.286696220205
     dayLength: 21
     yearLength: 6.3
     temperature:
-      source: 'Handbook: House Davion, pg. 93'
+      source: 'HB:HD'
       value: 22
+      page: 93
     water:
-      source: 'Handbook: House Davion, pg. 93'
+      source: 'HB:HD'
       value: 22
+      page: 93
     lifeForm:
-      source: 'Handbook: House Davion, pg. 93'
+      source: 'HB:HD'
       value: MAMMAL
+      page: 93
     desc: |-
       Chirikof was first colonized in the 24th century as a mining colony, despite the harsh living conditions. However, terraforming efforts made the planet more habitable and farms and ranches sprang up to reduce the planet’s reliance on imported food. Industries popped up to support the growing population and soon, the Federated Suns expansion deeper rimward, Chirikof was perfectly positioned to become a vital trade point. Military presence also grew on the planet at the same time to ward of raids and pirate attacks. The planet has since been a key military and trade world in the Federated Suns and has been prosperous as a result.
 
@@ -134,13 +142,15 @@ planet:
           value: Moody
     satellite:
       - name:
-          source: 'Handbook: House Davion, pg. 93'
+          source: 'HB:HD'
           value: Madden
+          page: 93
         size: medium
         icon: oddmoon3
       - name:
-          source: 'Handbook: House Davion, pg. 93'
+          source: 'HB:HD'
           value: Pietrikof
+          page: 93
         size: large
         icon: rock3
     event:
@@ -174,6 +184,12 @@ planet:
         population: 22146799.0
       - date: '2360-01-01'
         population: 33131909.0
+      - date: '2366-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '2370-01-01'
         population: 47095786.0
       - date: '2380-01-01'
@@ -218,6 +234,18 @@ planet:
         population: 343967220.0
       - date: '2570-01-01'
         population: 348600678.0
+      - date: '2571-01-01'
+        # administration: FS | Crucis March | Chirikof Operational Area
+        # administration: FS | Crucis March | Chirikof Operational Area
+        # administration: FS | Crucis March | Chirikof Operational Area
+        # administration: FS | Crucis March | Chirikof Operational Area
+        # administration: FS | Crucis March | Chirikof Operational Area
+        # administration: FS | Crucis March | Chirikof Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FS
       - date: '2580-01-01'
         population: 351055362.0
       - date: '2590-01-01'
@@ -322,8 +350,25 @@ planet:
       - date: '3035-01-01'
         socioIndustrial: C-C-B-D-C
       - date: '3040-01-01'
+        # administration: FC | Crucis March | Chirikof Operational Area
+        # administration: FC | Crucis March | Chirikof Operational Area
+        # administration: FC | Crucis March | Chirikof Operational Area
+        # administration: FC | Crucis March | Chirikof Operational Area
+        # administration: FC | Crucis March | Chirikof Operational Area
+        # administration: FC | Crucis March | Chirikof Operational Area
         population: 402359603.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
+        # administration: FC | Crucis March | Chirikof Operational Area
+        # administration: FC | Crucis March | Chirikof Operational Area
+        # administration: FC | Crucis March | Chirikof Operational Area
+        # administration: FC | Crucis March | Chirikof Operational Area
+        # administration: FC | Crucis March | Chirikof Operational Area
+        # administration: FC | Crucis March | Chirikof Operational Area
         faction:
           source: canon
           value:
@@ -341,10 +386,27 @@ planet:
       - date: '3060-01-01'
         population: 410077524.0
       - date: '3067-01-01'
+        # administration: FS | Crucis March | Chirikof Operational Area
+        # administration: FS | Crucis March | Chirikof Operational Area
+        # administration: FS | Crucis March | Chirikof Operational Area
+        # administration: FS | Crucis March | Chirikof Operational Area
+        # administration: FS | Crucis March | Chirikof Operational Area
+        # administration: FS | Crucis March | Chirikof Operational Area
         population:
           source: canon
           value: 412380400.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FS
       - date: '3067-04-20'
+        # administration: FS | Crucis March | Chirikof Operational Area
+        # administration: FS | Crucis March | Chirikof Operational Area
+        # administration: FS | Crucis March | Chirikof Operational Area
+        # administration: FS | Crucis March | Chirikof Operational Area
+        # administration: FS | Crucis March | Chirikof Operational Area
+        # administration: FS | Crucis March | Chirikof Operational Area
         faction:
           source: canon
           value:

@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Skandia
-sucsId: 2348
+sucsId: 2349
 xcood: 22.742
 ycood: 251.468
 spectralType:
@@ -83,9 +83,7 @@ planet:
     lifeForm:
       source: canon
       value: REPTILE
-    desc: Skandia is a temperate world with a comfortable atmosphere, though the planet’s
-      gravity is slightly higher than standard. Skandia has abundant arable land,
-      which is able to produce more than enough food to feed the planet’s population.
+    desc: Skandia is a temperate world with a comfortable atmosphere, though the planet’s gravity is slightly higher than standard. Skandia has abundant arable land, which is able to produce more than enough food to feed the planet’s population.
     landmass:
       - name:
           source: canon
@@ -137,6 +135,12 @@ planet:
       - date: '2340-01-01'
         population: 7023718.0
       - date: '2341-09-25'
+        # administration: LA | Tamar Pact
+        # administration: LA | Tamar Pact
+        # administration: LA | Tamar Pact
+        # administration: LA | Tamar Pact
+        # administration: LA | Tamar Pact
+        # administration: LA | Tamar Pact
         faction:
           source: canon
           value:
@@ -262,6 +266,12 @@ planet:
       - date: '2890-01-01'
         population: 28889939.0
       - date: '2900-08-14'
+        # administration: DC | Rasalhague Military District | Rubigen Prefecture
+        # administration: DC | Rasalhague Military District | Rubigen Prefecture
+        # administration: DC | Rasalhague Military District | Rubigen Prefecture
+        # administration: DC | Rasalhague Military District | Rubigen Prefecture
+        # administration: DC | Rasalhague Military District | Rubigen Prefecture
+        # administration: DC | Rasalhague Military District | Rubigen Prefecture
         faction:
           source: canon
           value:
@@ -303,13 +313,30 @@ planet:
           value:
             - FRR
       - date: '3040-01-01'
+        # administration: FR | Skandia Province | District Capital
+        # administration: FR | Skandia Province | District Capital
+        # administration: FR | Skandia Province | District Capital
+        # administration: FR | Skandia Province | District Capital
+        # administration: FR | Skandia Province | District Capital
+        # administration: FR | Skandia Province | District Capital
         population: 18058856.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FR
       - date: '3047-01-01'
         socioIndustrial:
           source: canon
           value: B-C-C-C-B
       - date: '3050-01-01'
         population: 18286008.0
+      - date: '3052-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CW
       - date: '3052-02-02'
         faction:
           source: canon
@@ -339,6 +366,12 @@ planet:
       - date: '3100-01-01'
         population: 19582498.0
       - date: '3103-03-13'
+        # administration: RD | Region 3 | District Capital
+        # administration: RD | Region 3 | District Capital
+        # administration: RD | Region 3 | District Capital
+        # administration: RD | Region 3 | District Capital
+        # administration: RD | Region 3 | District Capital
+        # administration: RD | Region 3 | District Capital
         faction:
           source: canon
           value:

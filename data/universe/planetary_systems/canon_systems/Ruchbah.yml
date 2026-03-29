@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: Ruchbah
-sucsId: 2187
+sucsId: 2188
 xcood: 57.383
 ycood: -22.794
 spectralType:
-  source: MWDA world profiles
+  source: DA:RW
   value: F0VI
 primarySlot:
-  source: MWDA world profiles
+  source: DA:RW
   value: 1
 planet:
   - name:
@@ -32,31 +32,31 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 4.48
     sysPos:
-      source: MWDA world profiles
+      source: DA:RW
       value: 1
     icon: green7
     pressure:
-      source: MWDA world profiles
+      source: DA:RW
       value: STANDARD
     atmosphere:
-      source: MWDA world profiles
+      source: DA:RW
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: MWDA world profiles
+      source: DA:RW
       value: 1.1
     diameter: 13719
     density: 5.634674622235
     dayLength: 20
     yearLength: 9.6
     temperature:
-      source: MWDA world profiles
+      source: DA:RW
       value: 25
     water:
-      source: MWDA world profiles
+      source: DA:RW
       value: 40
     lifeForm:
-      source: MWDA world profiles
+      source: DA:RW
       value: MAMMAL
     desc: |-
       Ruchbah‘s surface is dominated by a single landmass and dotted with inland seas. Most of this landmass consists of rolling grasslands, hills, and tundra, ideal for grazing animals. Lit by a small subdwarf star, Ruchbah is a relatively cool world and its higher latitudes suffer bitterly cold winters, forcing both domesticated and wild herds to migrate annually. Because so much of its population follows the animal herds, the population of Ruchbah‘s capital, Rook, and other towns varies widely depending on the season.
@@ -71,7 +71,7 @@ planet:
     smallMoons: 6
     landmass:
       - capital:
-          source: MWDA world profiles
+          source: DA:RW
           value: Rook
     event:
       - date: '2177-08-27'
@@ -142,6 +142,12 @@ planet:
       - date: '2390-01-01'
         population: 982327486.0
       - date: '2400-01-15'
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
         faction:
           source: canon
           value:
@@ -223,6 +229,18 @@ planet:
         population: 1609364904.0
       - date: '2760-01-01'
         population: 1613818512.0
+      - date: '2767-01-01'
+        # administration: AE | Lockdale Province
+        # administration: AE | Lockdale Province
+        # administration: AE | Lockdale Province
+        # administration: AE | Lockdale Province
+        # administration: AE | Lockdale Province
+        # administration: AE | Lockdale Province
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - AE
       - date: '2767-08-10'
         faction:
           source: canon
@@ -231,6 +249,12 @@ planet:
       - date: '2770-01-01'
         population: 1614676098.0
       - date: '2779-07-29'
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
         faction:
           source: canon
           value:
@@ -249,7 +273,25 @@ planet:
         population: 1481633659.0
       - date: '2820-01-01'
         population: 1460079981.0
+      - date: '2821-01-01'
+        # administration: CC | Tikonov Commonality | Region 4
+        # administration: CC | Tikonov Commonality | Region 4
+        # administration: CC | Tikonov Commonality | Region 4
+        # administration: CC | Tikonov Commonality | Region 4
+        # administration: CC | Tikonov Commonality | Region 4
+        # administration: CC | Tikonov Commonality | Region 4
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CC
       - date: '2821-04-27'
+        # administration: CC | Tikonov Commonality | Region 4
+        # administration: CC | Tikonov Commonality | Region 4
+        # administration: CC | Tikonov Commonality | Region 4
+        # administration: CC | Tikonov Commonality | Region 4
+        # administration: CC | Tikonov Commonality | Region 4
+        # administration: CC | Tikonov Commonality | Region 4
         faction:
           source: canon
           value:
@@ -278,6 +320,12 @@ planet:
       - date: '2920-01-01'
         population: 1106158323.0
       - date: '2929-10-04'
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
         faction:
           source: canon
           value:
@@ -307,8 +355,25 @@ planet:
       - date: '3031-01-01'
         socioIndustrial: D-C-F-C-D
       - date: '3040-01-01'
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
         population: 1073797365.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
         faction:
           source: canon
           value:
@@ -319,7 +384,25 @@ planet:
         population: 1085131638.0
       - date: '3060-01-01'
         population: 1098671041.0
+      - date: '3067-01-01'
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FS
       - date: '3067-04-20'
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
         faction:
           source: canon
           value:
@@ -344,7 +427,25 @@ planet:
             - Stone
       - date: '3080-01-01'
         population: 1122885044.0
+      - date: '3081-01-01'
+        # administration: ROS | Prefecture IV
+        # administration: ROS | Prefecture IV
+        # administration: ROS | Prefecture IV
+        # administration: ROS | Prefecture IV
+        # administration: ROS | Prefecture IV
+        # administration: ROS | Prefecture IV
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ROS
       - date: '3081-03-26'
+        # administration: ROS | Prefecture IV
+        # administration: ROS | Prefecture IV
+        # administration: ROS | Prefecture IV
+        # administration: ROS | Prefecture IV
+        # administration: ROS | Prefecture IV
+        # administration: ROS | Prefecture IV
         faction:
           source: canon
           value:
@@ -362,6 +463,12 @@ planet:
         population: 1156619244.0
       - date: '3132-08-07'
         hpg: X
+      - date: '3135-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3135-10-01'
         faction:
           source: canon
@@ -369,7 +476,25 @@ planet:
             - IND
       - date: '3140-01-01'
         population: 1177862441.0
+      - date: '3145-01-01'
+        # administration: CC | Tikonov Commonality | Region 2
+        # administration: CC | Tikonov Commonality | Region 2
+        # administration: CC | Tikonov Commonality | Region 2
+        # administration: CC | Tikonov Commonality | Region 2
+        # administration: CC | Tikonov Commonality | Region 2
+        # administration: CC | Tikonov Commonality | Region 2
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CC
       - date: '3145-01-09'
+        # administration: CC | Tikonov Commonality | Region 8
+        # administration: CC | Tikonov Commonality | Region 8
+        # administration: CC | Tikonov Commonality | Region 8
+        # administration: CC | Tikonov Commonality | Region 8
+        # administration: CC | Tikonov Commonality | Region 8
+        # administration: CC | Tikonov Commonality | Region 8
         faction:
           source: canon
           value:
@@ -446,8 +571,7 @@ planet:
     icon: frozen28
     pressure: THIN
     atmosphere: TOXIC_CAUSTIC
-    composition: Methane and Carbon Dioxide, plus trace amounts of Argon and Hydrogen
-      Peroxide
+    composition: Methane and Carbon Dioxide, plus trace amounts of Argon and Hydrogen Peroxide
     gravity: 1.54
     diameter: 13500
     density: 8.0

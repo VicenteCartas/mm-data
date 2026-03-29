@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: Phecda
-sucsId: 2021
+sucsId: 2022
 xcood: -74.451
 ycood: -1.595
 spectralType:
-  source: MWDA world profiles
+  source: DA:RW
   value: A0V
 primarySlot:
-  source: MWDA world profiles
+  source: DA:RW
   value: 3
 event:
   - date: '2466-02-25'
@@ -67,82 +67,54 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 8.12
     sysPos:
-      source: MWDA world profiles
+      source: DA:RW
       value: 3
     icon: wet20
     pressure:
-      source: MWDA world profiles
+      source: DA:RW
       value: STANDARD
     atmosphere:
-      source: MWDA world profiles
+      source: DA:RW
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: MWDA world profiles
+      source: DA:RW
       value: 0.98
     diameter: 14374
     density: 4.791473202243
     dayLength: 19
     yearLength: 23.2
     temperature:
-      source: MWDA world profiles
+      source: DA:RW
       value: 20
     water:
-      source: MWDA world profiles
+      source: DA:RW
       value: 86
     lifeForm:
-      source: MWDA world profiles
+      source: DA:RW
       value: PLANT
-    desc: 3135 - Though blessed by an abundance of surface water, the fact that much
-      of it is trapped beneath its growing polar caps (Phecda is entering an ice age,
-      thanks to a slight elongation in its orbit) limited the early settlers‘ ability
-      to exploit this world effectively. In fact, most colonies and cities on Phecda
-      were established on the smattering of islands surrounding Gamurmaj, the only
-      one of its three large landmasses stable enough and warm enough to support hospitable
-      settlements. Lacking in significant material resources, this world has always
-      relied on trade with its neighbors for everything from farming machinery and
-      ranching cattle to industrial construction equipment and spacecraft parts. The
-      great distance between the planet and its jump point, however, hindered trade
-      for many years, particularly during times of war. To remedy the situation somewhat,
-      four mid-range stations were placed in the Phecda system during the Star League
-      era, but none of these survived the collapse of the League and the centuries
-      of war that came after. Raiders, drawn by the local production of water purifiers,
-      or sent as a diversion for other assaults against more valuable targets on the
-      Steiner border, gradually decimated the planet‘s single major export industry.
-      The constant depredations led to the formation of several local aerospace defense
-      squadrons over the centuries, as it became clear that the long in-system flight
-      offered the planet‘s greatest defense against raiders by permitting interception
-      of inbound traffic. By the end of the Succession Wars, however, Phecda had become
-      little more than an outpost world, a well-populated backwater on a hostile border.
-      Only its location made it worthy of a spirited defense. Today, Phecda is a quiet
-      world whose people specialize in exporting common luxuries, basic metals, and
-      small-scale purifiers to their neighbors in nearby star systems. The planet‘s
-      largest city and only spaceport, Atlantic Coast, is located on the southeastern
-      shores of Gamurmaj. Travelers interested in visiting the islands around Gamurmaj
-      or the isolated communities of the northern continents, Kuld and Phreezi, must
-      often rely on the seagoing ice ships that provide for much of the planet‘s intercontinental
-      transport.
+    desc: 3135 - Though blessed by an abundance of surface water, the fact that much of it is trapped beneath its growing polar caps (Phecda is entering an ice age, thanks to a slight elongation in its orbit) limited the early settlers‘ ability to exploit this world effectively. In fact, most colonies and cities on Phecda were established on the smattering of islands surrounding Gamurmaj, the only one of its three large landmasses stable enough and warm enough to support hospitable settlements. Lacking in significant material resources, this world has always relied on trade with its neighbors for everything from farming machinery and ranching cattle to industrial construction equipment and spacecraft parts. The great distance between the planet and its jump point, however, hindered trade for many years, particularly during times of war. To remedy the situation somewhat, four mid-range stations were placed in the Phecda system during the Star League era, but none of these survived the collapse of the League and the centuries of war that came after. Raiders, drawn by the local production of water purifiers, or sent as a diversion for other assaults against more valuable targets on the Steiner border, gradually decimated the planet‘s single major export industry. The constant depredations led to the formation of several local aerospace defense squadrons over the centuries, as it became clear that the long in-system flight offered the planet‘s greatest defense against raiders by permitting interception of inbound traffic. By the end of the Succession Wars, however, Phecda had become little more than an outpost world, a well-populated backwater on a hostile border. Only its location made it worthy of a spirited defense. Today, Phecda is a quiet world whose people specialize in exporting common luxuries, basic metals, and small-scale purifiers to their neighbors in nearby star systems. The planet‘s largest city and only spaceport, Atlantic Coast, is located on the southeastern shores of Gamurmaj. Travelers interested in visiting the islands around Gamurmaj or the isolated communities of the northern continents, Kuld and Phreezi, must often rely on the seagoing ice ships that provide for much of the planet‘s intercontinental transport.
     landmass:
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Gamurmaj
         capital:
-          source: MWDA world profiles
+          source: DA:RW
           value: Atlantic Coast
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Kuld
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Phreezi
     satellite:
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Vondra
         size: medium
         icon: oddmoon1
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Xanthippe
         size: medium
         icon: oddmoon2
@@ -181,6 +153,12 @@ planet:
       - date: '2340-01-01'
         population: 337063956.0
       - date: '2341-04-26'
+        # administration: LA | Federation of Skye
+        # administration: LA | Federation of Skye
+        # administration: LA | Federation of Skye
+        # administration: LA | Federation of Skye
+        # administration: LA | Federation of Skye
+        # administration: LA | Federation of Skye
         faction:
           source: canon
           value:
@@ -336,8 +314,25 @@ planet:
       - date: '3031-01-01'
         socioIndustrial: B-C-C-B-D
       - date: '3040-01-01'
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
         population: 2051417410.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
         faction:
           source: canon
           value:
@@ -346,13 +341,37 @@ planet:
         socioIndustrial: A-B-C-A-C
       - date: '3050-01-01'
         population: 2080963429.0
+      - date: '3057-01-01'
+        # administration: LA | Skye March | Alcor Operational Area
+        # administration: LA | Skye March | Alcor Operational Area
+        # administration: LA | Skye March | Alcor Operational Area
+        # administration: LA | Skye March | Alcor Operational Area
+        # administration: LA | Skye March | Alcor Operational Area
+        # administration: LA | Skye March | Alcor Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '3057-09-18'
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
         faction:
           source: canon
           value:
             - LA
       - date: '3060-01-01'
         population: 2110723909.0
+      - date: '3068-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FWL
       - date: '3068-09-01'
         faction:
           source: canon
@@ -379,7 +398,25 @@ planet:
             - Stone
       - date: '3080-01-01'
         population: 2154009467.0
+      - date: '3081-01-01'
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ROS
       - date: '3081-05-11'
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
         faction:
           source: canon
           value:
@@ -398,6 +435,12 @@ planet:
         population: 2254506211.0
       - date: '3132-08-07'
         hpg: X
+      - date: '3135-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3135-10-01'
         faction:
           source: canon
@@ -405,6 +448,12 @@ planet:
             - IND
       - date: '3140-01-01'
         population: 2282179651.0
+      - date: '3145-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CWE
       - date: '3145-12-29'
         faction:
           source: canon

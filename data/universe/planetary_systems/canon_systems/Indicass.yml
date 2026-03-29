@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,11 +16,11 @@
 # affiliated with Microsoft.
 
 id: Indicass
-sucsId: 1194
+sucsId: 1195
 xcood: 72.368
 ycood: -249.026
 spectralType:
-  source: 'Objective Raids: Capellan Confederation'
+  source: 'OR'
   value: A7V
 primarySlot: 5
 event:
@@ -96,27 +96,27 @@ planet:
     sysPos: 5
     icon: green32
     pressure:
-      source: 'Objective Raids: Capellan Confederation'
+      source: 'OR'
       value: HIGH
     atmosphere:
-      source: 'Objective Raids: Capellan Confederation'
+      source: 'OR'
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'Objective Raids: Capellan Confederation'
+      source: 'OR'
       value: 1.0
     diameter: 12908
     density: 5.444481428031
     dayLength: 17
     yearLength: 5.1
     temperature:
-      source: 'Objective Raids: Capellan Confederation'
+      source: 'OR'
       value: 56
     water:
-      source: 'Objective Raids: Capellan Confederation'
+      source: 'OR'
       value: 22
     lifeForm:
-      source: 'Objective Raids: Capellan Confederation'
+      source: 'OR'
       value: MICROBE
     desc: |-
       Indicass is an arid planet that remains populated due to its extensive raw material reserves surrounding the planet's one body of water and the heavy industry built up around those resources. These raw materials are used by local industry to produce war materiel. Indicass is protected by a military training facility.
@@ -128,10 +128,10 @@ planet:
     smallMoons: 3
     landmass:
       - name:
-          source: 'Objective Raids: Capellan Confederation'
+          source: 'OR'
           value: Indicass
         capital:
-          source: 'Objective Raids: Capellan Confederation'
+          source: 'OR'
           value: Xin Singapore
     event:
       - date: '2245-06-13'
@@ -167,7 +167,19 @@ planet:
         population: 12199071.0
       - date: '2360-01-01'
         population: 15133250.0
+      - date: '2366-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - SIML
       - date: '2367-07-01'
+        # administration: CC | St. Ives Commonality | Region 4
+        # administration: CC | St. Ives Commonality | Region 4
+        # administration: CC | St. Ives Commonality | Region 4
+        # administration: CC | St. Ives Commonality | Region 4
+        # administration: CC | St. Ives Commonality | Region 4
+        # administration: CC | St. Ives Commonality | Region 4
         faction:
           source: canon
           value:
@@ -316,7 +328,25 @@ planet:
         population: 30202129.0
       - date: '3020-01-01'
         population: 28198068.0
+      - date: '3030-01-01'
+        # administration: SIC | Region 3
+        # administration: SIC | Region 3
+        # administration: SIC | Region 3
+        # administration: SIC | Region 3
+        # administration: SIC | Region 3
+        # administration: SIC | Region 3
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - SIC
       - date: '3030-11-10'
+        # administration: SIC | Region 3
+        # administration: SIC | Region 3
+        # administration: SIC | Region 3
+        # administration: SIC | Region 3
+        # administration: SIC | Region 3
+        # administration: SIC | Region 3
         faction:
           source: canon
           value:
@@ -337,6 +367,12 @@ planet:
       - date: '3060-01-01'
         population: 28227752.0
       - date: '3062-01-10'
+        # administration: CC | St. Ives Commonality | Region 1
+        # administration: CC | St. Ives Commonality | Region 1
+        # administration: CC | St. Ives Commonality | Region 1
+        # administration: CC | St. Ives Commonality | Region 1
+        # administration: CC | St. Ives Commonality | Region 1
+        # administration: CC | St. Ives Commonality | Region 1
         faction:
           source: canon
           value:

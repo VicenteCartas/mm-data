@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,15 +16,17 @@
 # affiliated with Microsoft.
 
 id: Graham IV
-sucsId: 989
+sucsId: 990
 xcood: -23.526
 ycood: -10.386
 spectralType:
-  source: Star League, pg. 172
+  source: SLSB
   value: G2V
+  page: 172
 primarySlot:
-  source: Star League, pg. 172
+  source: SLSB
   value: 4
+  page: 172
 event:
   - date: '2611-01-30'
     nadirCharge: yes
@@ -83,75 +85,52 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 1.0
     sysPos:
-      source: Star League, pg. 172
+      source: SLSB
       value: 4
+      page: 172
     icon: green25
     pressure:
-      source: MWDA world profiles
+      source: DA:RW
       value: STANDARD
     atmosphere:
-      source: MWDA world profiles
+      source: DA:RW
       value: TAINTED_POISON
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: MWDA world profiles
+      source: DA:RW
       value: 0.83
     diameter: 10121
     density: 5.763446900225
     dayLength: 18
     yearLength: 1.4
     temperature:
-      source: MWDA world profiles
+      source: DA:RW
       value: 33
     water:
-      source: MWDA world profiles
+      source: DA:RW
       value: 61
     lifeForm:
-      source: Star League, pg. 172
+      source: SLSB
       value: MAMMAL
-    desc: 3135 - A Terra-like world with vast metal deposits, mineral wealth, and
-      fossil fuel resources, Graham IV attracted the attention of several Terran manufacturing
-      corporations looking to expand their facilities off-world. By the time of the
-      Terran Hegemony, no fewer than six major corporations and a host of smaller
-      ones had transformed the untamed wilderness of Graham IV into a sprawling series
-      of heavily industrialized cities and factory complexes. Two of these corporations,
-      Dekirk Aerospace and Mitchell Vehicles, were primary contractors for the SLDF,
-      their products included everything from conventional vehicles and aerospace
-      fighters to BattleMechs and WarShips. The Star League even placed one of its
-      rare orbital flight academies over Graham IV, to take advantage of prototype
-      aerospace fighter designs coming out of the Dekirk Aerospace Research and Development
-      facility in Dekirk City. For these reasons, unfortunately, Amaris‘ forces were
-      particularly brutal in their efforts to seize the planet, resorting to widespread
-      nuclear attacks to obliterate any of the factories and cities they could not
-      capture. Today, the surface of Graham IV is a post-nuclear wasteland of radioactive
-      craters and demolished cities. Only a few cities are left, either because they
-      were too small and remote to be worth a nuclear strike, or because they were
-      built after the devastation. These cities, located far from the ruins on the
-      marginally habitable continents of Barvionne and Palothica, are largely maintained
-      by mining interests and small manufacturing operations that continue to exploit
-      the few remaining lodes of Graham IV‘s resources which can be safely harnessed.
-      The city of Keystone, on the southern reaches of Palothica, features the planet‘s
-      primary spaceport, a corporate trade center for the surviving planetary companies,
-      and even the garrison command for the planetary militia. A pair of large space
-      habitats, placed around the planet during the years of the Free Worlds League,
-      support a healthy share of the planetary population now. One of these, dubbed
-      New Dekirk City, serves as the planet‘s official capital in the sky.
+      page: 172
+    desc: 3135 - A Terra-like world with vast metal deposits, mineral wealth, and fossil fuel resources, Graham IV attracted the attention of several Terran manufacturing corporations looking to expand their facilities off-world. By the time of the Terran Hegemony, no fewer than six major corporations and a host of smaller ones had transformed the untamed wilderness of Graham IV into a sprawling series of heavily industrialized cities and factory complexes. Two of these corporations, Dekirk Aerospace and Mitchell Vehicles, were primary contractors for the SLDF, their products included everything from conventional vehicles and aerospace fighters to BattleMechs and WarShips. The Star League even placed one of its rare orbital flight academies over Graham IV, to take advantage of prototype aerospace fighter designs coming out of the Dekirk Aerospace Research and Development facility in Dekirk City. For these reasons, unfortunately, Amaris‘ forces were particularly brutal in their efforts to seize the planet, resorting to widespread nuclear attacks to obliterate any of the factories and cities they could not capture. Today, the surface of Graham IV is a post-nuclear wasteland of radioactive craters and demolished cities. Only a few cities are left, either because they were too small and remote to be worth a nuclear strike, or because they were built after the devastation. These cities, located far from the ruins on the marginally habitable continents of Barvionne and Palothica, are largely maintained by mining interests and small manufacturing operations that continue to exploit the few remaining lodes of Graham IV‘s resources which can be safely harnessed. The city of Keystone, on the southern reaches of Palothica, features the planet‘s primary spaceport, a corporate trade center for the surviving planetary companies, and even the garrison command for the planetary militia. A pair of large space habitats, placed around the planet during the years of the Free Worlds League, support a healthy share of the planetary population now. One of these, dubbed New Dekirk City, serves as the planet‘s official capital in the sky.
     landmass:
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Barvionne
         capital:
-          source: Star League, pg. 172
+          source: SLSB
           value: Dekirk City (Destroyed during Amaris Coup)
+          page: 172
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Palothica
       - capital:
-          source: MWDA world profiles
+          source: DA:RW
           value: New Dekirk City (orbiting space station)
     satellite:
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Krakatau
         size: giant
         icon: rock1
@@ -179,6 +158,12 @@ planet:
           value:
             - TH
       - date: '2317-03-22'
+        # administration: TH | Alliance Core
+        # administration: TH | Alliance Core
+        # administration: TH | Alliance Core
+        # administration: TH | Alliance Core
+        # administration: TH | Alliance Core
+        # administration: TH | Alliance Core
         faction:
           source: canon
           value:
@@ -282,6 +267,18 @@ planet:
         population: 206086897.0
       - date: '2760-01-01'
         population: 204913397.0
+      - date: '2767-01-01'
+        # administration: AE | Alliance Core
+        # administration: AE | Alliance Core
+        # administration: AE | Alliance Core
+        # administration: AE | Alliance Core
+        # administration: AE | Alliance Core
+        # administration: AE | Alliance Core
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - AE
       - date: '2767-11-04'
         faction:
           source: canon
@@ -292,6 +289,12 @@ planet:
       - date: '2770-01-01'
         population: 193566008.0
       - date: '2779-11-05'
+        # administration: TH | Alliance Core
+        # administration: TH | Alliance Core
+        # administration: TH | Alliance Core
+        # administration: TH | Alliance Core
+        # administration: TH | Alliance Core
+        # administration: TH | Alliance Core
         faction:
           source: canon
           value:
@@ -312,6 +315,12 @@ planet:
       - date: '2820-01-01'
         population: 61832612.0
       - date: '2821-01-11'
+        # administration: FWL | Sirian Concordat
+        # administration: FWL | Sirian Concordat
+        # administration: FWL | Sirian Concordat
+        # administration: FWL | Sirian Concordat
+        # administration: FWL | Sirian Concordat
+        # administration: FWL | Sirian Concordat
         faction:
           source: canon
           value:
@@ -363,6 +372,18 @@ planet:
         population:
           source: canon
           value: 3000000.0
+      - date: '3030-01-01'
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '3030-01-12'
         faction:
           source: canon
@@ -370,8 +391,25 @@ planet:
             - LA
         population: 8424648.0
       - date: '3040-01-01'
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
         population: 60586296.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
         faction:
           source: canon
           value:
@@ -380,7 +418,25 @@ planet:
         socioIndustrial: A-B-C-B-B
       - date: '3050-01-01'
         population: 397336607.0
+      - date: '3057-01-01'
+        # administration: FWL | Sirian Concordat
+        # administration: FWL | Sirian Concordat
+        # administration: FWL | Sirian Concordat
+        # administration: FWL | Sirian Concordat
+        # administration: FWL | Sirian Concordat
+        # administration: FWL | Sirian Concordat
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FWL
       - date: '3057-10-01'
+        # administration: FWL | Sirian Concordat
+        # administration: FWL | Sirian Concordat
+        # administration: FWL | Sirian Concordat
+        # administration: FWL | Sirian Concordat
+        # administration: FWL | Sirian Concordat
+        # administration: FWL | Sirian Concordat
         faction:
           source: canon
           value:
@@ -407,7 +463,25 @@ planet:
             - Stone
       - date: '3080-01-01'
         population: 6969739800.0
+      - date: '3081-01-01'
+        # administration: ROS | Prefecture X
+        # administration: ROS | Prefecture X
+        # administration: ROS | Prefecture X
+        # administration: ROS | Prefecture X
+        # administration: ROS | Prefecture X
+        # administration: ROS | Prefecture X
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ROS
       - date: '3081-03-20'
+        # administration: ROS | Prefecture X
+        # administration: ROS | Prefecture X
+        # administration: ROS | Prefecture X
+        # administration: ROS | Prefecture X
+        # administration: ROS | Prefecture X
+        # administration: ROS | Prefecture X
         faction:
           source: canon
           value:
@@ -437,9 +511,16 @@ planet:
             - CWE
       - date: '3151-01-01'
         faction:
-          source: sucs
+          source: SUCS
+          version: 2026.03.02
           value:
-            - CWE
+            - CC
+      - date: '3152-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - 3SL
   - name: Graham V
     type: DWARF_TERRESTRIAL
     orbitalDist: 2.8

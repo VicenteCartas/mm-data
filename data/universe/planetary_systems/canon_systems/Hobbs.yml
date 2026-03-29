@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: Hobbs
-sucsId: 1118
+sucsId: 1119
 xcood: 255.386
 ycood: -244.069
 spectralType:
-  source: House Davion
+  source: HB:HD
   value: A1III
 primarySlot:
-  source: House Davion
+  source: HB:HD
   value: 4
 planet:
   - name: Kumatani
@@ -78,7 +78,7 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 14.04
     sysPos:
-      source: House Davion
+      source: HB:HD
       value: 4
     icon: green13
     pressure: STANDARD
@@ -92,20 +92,12 @@ planet:
     temperature: 38
     water: 39
     lifeForm:
-      source: House Davion
+      source: HB:HD
       value: MAMMAL
-    desc: Hobbs is an extremely dry planet with nearly no surface water. As a result
-      all the flora and fauna of Hobbs can only survive in underground cave systems
-      that cover the planet, just below the surface. The caverns contain an incredible
-      variety of native lifeforms, including an ape-like species known as the Takooma
-      that show a high level of intelligence. The Federated Suns uses the planet’s
-      underground cave-systems as natural warehouses. Unfortunately the native life,
-      the Takooma especially make life difficult for the people of Hobbs and are known
-      to hunt down and kill settlers or soldiers who find themselves alone in the
-      caves.
+    desc: Hobbs is an extremely dry planet with nearly no surface water. As a result all the flora and fauna of Hobbs can only survive in underground cave systems that cover the planet, just below the surface. The caverns contain an incredible variety of native lifeforms, including an ape-like species known as the Takooma that show a high level of intelligence. The Federated Suns uses the planet’s underground cave-systems as natural warehouses. Unfortunately the native life, the Takooma especially make life difficult for the people of Hobbs and are known to hunt down and kill settlers or soldiers who find themselves alone in the caves.
     landmass:
       - capital:
-          source: House Davion
+          source: HB:HD
           value: Luray Caverns
     event:
       - date: '2281-12-05'
@@ -138,6 +130,12 @@ planet:
         population: 9530385.0
       - date: '2360-01-01'
         population: 14242211.0
+      - date: '2366-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '2370-01-01'
         population: 20138745.0
       - date: '2380-01-01'
@@ -182,6 +180,18 @@ planet:
         population: 161215104.0
       - date: '2570-01-01'
         population: 165463397.0
+      - date: '2571-01-01'
+        # administration: FS | Capellan March | Taygeta Operational Area
+        # administration: FS | Capellan March | Taygeta Operational Area
+        # administration: FS | Capellan March | Taygeta Operational Area
+        # administration: FS | Capellan March | Taygeta Operational Area
+        # administration: FS | Capellan March | Taygeta Operational Area
+        # administration: FS | Capellan March | Taygeta Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FS
       - date: '2580-01-01'
         population: 169489619.0
       - date: '2590-01-01'
@@ -286,8 +296,25 @@ planet:
       - date: '3030-01-01'
         population: 165668304.0
       - date: '3040-01-01'
+        # administration: FC | Capellan March | Taygeta Operational Area
+        # administration: FC | Capellan March | Taygeta Operational Area
+        # administration: FC | Capellan March | Taygeta Operational Area
+        # administration: FC | Capellan March | Taygeta Operational Area
+        # administration: FC | Capellan March | Taygeta Operational Area
+        # administration: FC | Capellan March | Taygeta Operational Area
         population: 166932180.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
+        # administration: FC | Capellan March | Taygeta Operational Area
+        # administration: FC | Capellan March | Taygeta Operational Area
+        # administration: FC | Capellan March | Taygeta Operational Area
+        # administration: FC | Capellan March | Taygeta Operational Area
+        # administration: FC | Capellan March | Taygeta Operational Area
+        # administration: FC | Capellan March | Taygeta Operational Area
         faction:
           source: canon
           value:
@@ -298,7 +325,25 @@ planet:
         population: 168272994.0
       - date: '3060-01-01'
         population: 169794286.0
+      - date: '3067-01-01'
+        # administration: FS | Capellan March | Taygeta Operational Area
+        # administration: FS | Capellan March | Taygeta Operational Area
+        # administration: FS | Capellan March | Taygeta Operational Area
+        # administration: FS | Capellan March | Taygeta Operational Area
+        # administration: FS | Capellan March | Taygeta Operational Area
+        # administration: FS | Capellan March | Taygeta Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FS
       - date: '3067-04-20'
+        # administration: FS | Capellan March | Taygeta Operational Area
+        # administration: FS | Capellan March | Taygeta Operational Area
+        # administration: FS | Capellan March | Taygeta Operational Area
+        # administration: FS | Capellan March | Taygeta Operational Area
+        # administration: FS | Capellan March | Taygeta Operational Area
+        # administration: FS | Capellan March | Taygeta Operational Area
         faction:
           source: canon
           value:

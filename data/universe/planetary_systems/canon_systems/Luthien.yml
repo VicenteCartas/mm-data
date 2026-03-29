@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,15 +16,17 @@
 # affiliated with Microsoft.
 
 id: Luthien
-sucsId: 1539
+sucsId: 1540
 xcood: 167.621
 ycood: 250.493
 spectralType:
-  source: Masters and Minions, pg. 26
+  source: M&M
   value: G0III
+  page: 26
 primarySlot:
-  source: Masters and Minions, pg. 26
+  source: M&M
   value: 4
+  page: 26
 event:
   - date: '2365-05-19'
     nadirCharge: yes
@@ -84,75 +86,79 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 1.76
     sysPos:
-      source: Masters and Minions, pg. 26
+      source: M&M
       value: 4
+      page: 26
     icon: green52
     pressure:
-      source: Masters and Minions, pg. 26
+      source: M&M
       value: STANDARD
+      page: 26
     atmosphere:
-      source: Masters and Minions, pg. 26
+      source: M&M
       value: TAINTED_POISON
+      page: 26
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: Masters and Minions, pg. 26
+      source: M&M
       value: 1.0
+      page: 26
     diameter: 14520
     density: 4.839993685915
     dayLength: 20
     yearLength: 2.6
     temperature:
-      source: Masters and Minions, pg. 26
+      source: M&M
       value: 35
+      page: 26
     water:
-      source: Masters and Minions, pg. 26
+      source: M&M
       value: 70
+      page: 26
     lifeForm:
-      source: Masters and Minions, pg. 26
+      source: M&M
       value: AMPHIBIAN
-    desc: "Luthien best known as the capital and seat of power of the Draconis Combine.
-      The second most noteable feature of the planet is the abundance of heavy industry,
-      Luthien is home to more manufacturing than any other planet in the entire Combine.
-      The heavy smog and pollution from all the manufacturing have earned the planet
-      the nickname Black Luthien. One of the major sites of untouched wilderness is
-      surrounding the capital, Imperial City, home to the Kurita family and the Imperial
-      Palace. The entire city is surrounded by gardens and virgin wilderness, in stark
-      contrast to the rest of the planet.\n\t\t"
+      page: 26
+    desc: "Luthien best known as the capital and seat of power of the Draconis Combine. The second most noteable feature of the planet is the abundance of heavy industry, Luthien is home to more manufacturing than any other planet in the entire Combine. The heavy smog and pollution from all the manufacturing have earned the planet the nickname Black Luthien. One of the major sites of untouched wilderness is surrounding the capital, Imperial City, home to the Kurita family and the Imperial Palace. The entire city is surrounded by gardens and virgin wilderness, in stark contrast to the rest of the planet.\n\t\t"
     landmass:
       - name:
-          source: 'Jihad Turning Points: Luthien'
+          source: 'JTP:Luthien'
           value: Aichi
       - name:
-          source: 'Jihad Turning Points: Luthien'
+          source: 'JTP:Luthien'
           value: Hokkaidō
         capital:
-          source: 'Jihad Turning Points: Luthien'
+          source: 'JTP:Luthien'
           value: Imperial City
       - name:
-          source: 'Jihad Turning Points: Luthien'
+          source: 'JTP:Luthien'
           value: Sakura
       - name:
-          source: 'Jihad Turning Points: Luthien'
+          source: 'JTP:Luthien'
           value: Shizuoka
     satellite:
       - name:
-          source: Masters and Minions, pg. 26
+          source: M&M
           value: Hikisaku
+          page: 26
         size: medium
         icon: rock10
       - name:
-          source: Masters and Minions, pg. 26
+          source: M&M
           value: Occidentalis
+          page: 26
         size: large
         icon: rock2
       - name:
-          source: Masters and Minions, pg. 26
+          source: M&M
           value: Orientalis
+          page: 26
         size: medium
         icon: oddmoon1
       - name:
-          source: Masters and Minions, pg. 26
+          source: M&M
           value: Tsu Shima
+          page: 26
         size: medium
         icon: oddmoon2
     event:
@@ -217,6 +223,12 @@ planet:
       - date: '2340-01-01'
         population: 1101733359.0
       - date: '2341-09-03'
+        # administration: DC | Pesht Military District | Kagoshima Prefecture
+        # administration: DC | Pesht Military District | Kagoshima Prefecture
+        # administration: DC | Pesht Military District | Kagoshima Prefecture
+        # administration: DC | Pesht Military District | Kagoshima Prefecture
+        # administration: DC | Pesht Military District | Kagoshima Prefecture
+        # administration: DC | Pesht Military District | Kagoshima Prefecture
         faction:
           source: canon
           value:
@@ -391,14 +403,39 @@ planet:
             - CNC
             - DC
       - date: '3052-01-07'
+        # administration: DC | Pesht Military District | Kagoshima Prefecture
+        # administration: DC | Pesht Military District | Kagoshima Prefecture
+        # administration: DC | Pesht Military District | Kagoshima Prefecture
+        # administration: DC | Pesht Military District | Kagoshima Prefecture
+        # administration: DC | Pesht Military District | Kagoshima Prefecture
+        # administration: DC | Pesht Military District | Kagoshima Prefecture
         faction:
           source: canon
           value:
             - DC
       - date: '3060-01-01'
         population: 6708029824.0
+      - date: '3067-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - DC
+            - WOB
       - date: '3070-01-01'
         population: 7158808465.0
+      - date: '3075-01-01'
+        # administration: DC | Pesht Military District | Kagoshima Prefecture
+        # administration: DC | Pesht Military District | Kagoshima Prefecture
+        # administration: DC | Pesht Military District | Kagoshima Prefecture
+        # administration: DC | Pesht Military District | Kagoshima Prefecture
+        # administration: DC | Pesht Military District | Kagoshima Prefecture
+        # administration: DC | Pesht Military District | Kagoshima Prefecture
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - DC
       - date: '3079-01-01'
         population:
           source: canon

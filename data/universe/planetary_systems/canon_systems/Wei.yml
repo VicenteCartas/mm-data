@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,15 +16,17 @@
 # affiliated with Microsoft.
 
 id: Wei
-sucsId: 2736
+sucsId: 2737
 xcood: 63.844
 ycood: -119.184
 spectralType:
-  source: 'Handbook: House Liao, pg. 76'
+  source: 'HB:HL'
   value: G3IV
+  page: 76
 primarySlot:
-  source: 'Handbook: House Liao, pg. 76'
+  source: 'HB:HL'
   value: 3
+  page: 76
 event:
   - date: '2373-04-30'
     nadirCharge: yes
@@ -65,52 +67,61 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 1.6
     sysPos:
-      source: 'Handbook: House Liao, pg. 76'
+      source: 'HB:HL'
       value: 3
+      page: 76
     icon: wet11
     pressure:
-      source: 'Handbook: House Liao, pg. 76'
+      source: 'HB:HL'
       value: STANDARD
+      page: 76
     atmosphere:
-      source: 'Handbook: House Liao, pg. 76'
+      source: 'HB:HL'
       value: BREATHABLE
+      page: 76
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'Handbook: House Liao, pg. 76'
+      source: 'HB:HL'
       value: 1.0
+      page: 76
     diameter: 12029
     density: 5.842348002115
     dayLength: 24
     yearLength: 2.3
     temperature:
-      source: 'Handbook: House Liao, pg. 76'
+      source: 'HB:HL'
       value: 45
+      page: 76
     water:
-      source: 'Handbook: House Liao, pg. 76'
+      source: 'HB:HL'
       value: 76
+      page: 76
     lifeForm:
-      source: 'Handbook: House Liao, pg. 76'
+      source: 'HB:HL'
       value: REPTILE
+      page: 76
     desc: |-
       Wei is hotter than Terra but is otherwise a very comfortable planet for human life. During the Star League, Wei was secretly used as a repository for a deadly nerve gas agent. After the collapse of the Star League this repository was forgotten until the early 31st Century when it was rediscovered by the Capellan Confederation.
 
       Wei is home to one of the many Duchy RTC training facilities in the Confederation. The facility specializes in training infanrty and armor crews in the mountains of Province.
     landmass:
       - name:
-          source: 'Objective Raids: Capellan Confederation'
+          source: 'OR'
           value: Province
         capital:
-          source: 'Objective Raids: Capellan Confederation'
+          source: 'OR'
           value: Vandannis City
     satellite:
       - name:
-          source: 'Handbook: House Liao, pg. 76'
+          source: 'HB:HL'
           value: Arils
+          page: 76
         size: medium
         icon: rock13
       - name:
-          source: 'Handbook: House Liao, pg. 76'
+          source: 'HB:HL'
           value: Arlis
+          page: 76
         size: medium
         icon: oddmoon2
     event:
@@ -141,6 +152,12 @@ planet:
         population: 59183040.0
       - date: '2270-01-01'
         population: 94695011.0
+      - date: '2271-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '2280-01-01'
         population: 143355533.0
       - date: '2290-01-01'
@@ -159,6 +176,18 @@ planet:
             - SSUP
       - date: '2310-01-01'
         population: 378354103.0
+      - date: '2317-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CCom
+      - date: '2319-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - SSUP
       - date: '2320-01-01'
         population: 487078102.0
       - date: '2330-01-01'
@@ -170,6 +199,12 @@ planet:
       - date: '2360-01-01'
         population: 1031695543.0
       - date: '2367-07-01'
+        # administration: CC | Sarna Commonality | Region 5
+        # administration: CC | Sarna Commonality | Region 5
+        # administration: CC | Sarna Commonality | Region 5
+        # administration: CC | Sarna Commonality | Region 5
+        # administration: CC | Sarna Commonality | Region 5
+        # administration: CC | Sarna Commonality | Region 5
         faction:
           source: canon
           value:
@@ -219,6 +254,12 @@ planet:
       - date: '2570-01-01'
         population: 3224348859.0
       - date: '2571-03-07'
+        # administration: CC | Sarna Commonality | Region 5
+        # administration: CC | Sarna Commonality | Region 5
+        # administration: CC | Sarna Commonality | Region 5
+        # administration: CC | Sarna Commonality | Region 5
+        # administration: CC | Sarna Commonality | Region 5
+        # administration: CC | Sarna Commonality | Region 5
         faction:
           source: canon
           value:
@@ -327,6 +368,18 @@ planet:
         population:
           source: canon
           value: 2920000000.0
+      - date: '3030-01-01'
+        # administration: LA | Sarna March | Palos Operational Area
+        # administration: LA | Sarna March | Palos Operational Area
+        # administration: LA | Sarna March | Palos Operational Area
+        # administration: LA | Sarna March | Palos Operational Area
+        # administration: LA | Sarna March | Palos Operational Area
+        # administration: LA | Sarna March | Palos Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '3030-09-17'
         faction:
           source: canon
@@ -334,8 +387,25 @@ planet:
             - FS
         population: 2945301546.0
       - date: '3040-01-01'
+        # administration: FC | Sarna March | Palos Operational Area
+        # administration: FC | Sarna March | Palos Operational Area
+        # administration: FC | Sarna March | Palos Operational Area
+        # administration: FC | Sarna March | Palos Operational Area
+        # administration: FC | Sarna March | Palos Operational Area
+        # administration: FC | Sarna March | Palos Operational Area
         population: 3073809790.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
+        # administration: FC | Sarna March | Palos Operational Area
+        # administration: FC | Sarna March | Palos Operational Area
+        # administration: FC | Sarna March | Palos Operational Area
+        # administration: FC | Sarna March | Palos Operational Area
+        # administration: FC | Sarna March | Palos Operational Area
+        # administration: FC | Sarna March | Palos Operational Area
         faction:
           source: canon
           value:
@@ -346,14 +416,32 @@ planet:
           value: C-D-C-F-B
       - date: '3050-01-01'
         population: 3249709832.0
+      - date: '3057-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3057-11-01'
         faction:
           source: canon
           value:
             - CM
+      - date: '3058-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3060-01-01'
         population: 3407631397.0
       - date: '3062-11-15'
+        # administration: CC | Liao Commonality | Region 7
+        # administration: CC | Liao Commonality | Region 7
+        # administration: CC | Liao Commonality | Region 7
+        # administration: CC | Liao Commonality | Region 7
+        # administration: CC | Liao Commonality | Region 7
+        # administration: CC | Liao Commonality | Region 7
         faction:
           source: canon
           value:
@@ -376,6 +464,12 @@ planet:
             - CC
             - WOB
       - date: '3075-08-01'
+        # administration: CC | Liao Commonality | Region 7
+        # administration: CC | Liao Commonality | Region 7
+        # administration: CC | Liao Commonality | Region 7
+        # administration: CC | Liao Commonality | Region 7
+        # administration: CC | Liao Commonality | Region 7
+        # administration: CC | Liao Commonality | Region 7
         faction:
           source: canon
           value:
@@ -386,7 +480,25 @@ planet:
           value: 1630000000.0
       - date: '3080-01-01'
         population: 2290605591.0
+      - date: '3085-01-01'
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ROS
       - date: '3085-02-11'
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
         faction:
           source: canon
           value:
@@ -414,6 +526,12 @@ planet:
             - ROS
             - CC
       - date: '3134-08-01'
+        # administration: CC | Liao Commonality | Region 6
+        # administration: CC | Liao Commonality | Region 6
+        # administration: CC | Liao Commonality | Region 6
+        # administration: CC | Liao Commonality | Region 6
+        # administration: CC | Liao Commonality | Region 6
+        # administration: CC | Liao Commonality | Region 6
         faction:
           source: canon
           value:

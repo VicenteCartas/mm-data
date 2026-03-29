@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,15 +16,17 @@
 # affiliated with Microsoft.
 
 id: Marik
-sucsId: 1609
+sucsId: 1610
 xcood: -79.621
 ycood: -75.28
 spectralType:
-  source: 'Handbook: House Marik, pg. 60'
+  source: 'HB:HM'
   value: K0V
+  page: 60
 primarySlot:
-  source: 'Handbook: House Marik, pg. 60'
+  source: 'HB:HM'
   value: 2
+  page: 60
 event:
   - date: '2352-05-11'
     nadirCharge: yes
@@ -52,32 +54,39 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.56
     sysPos:
-      source: 'Handbook: House Marik, pg. 60'
+      source: 'HB:HM'
       value: 2
+      page: 60
     icon: green11
     pressure:
-      source: 'Handbook: House Marik, pg. 60'
+      source: 'HB:HM'
       value: HIGH
+      page: 60
     atmosphere:
-      source: 'Handbook: House Marik, pg. 60'
+      source: 'HB:HM'
       value: BREATHABLE
+      page: 60
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'Handbook: House Marik, pg. 60'
+      source: 'HB:HM'
       value: 1.1
+      page: 60
     diameter: 13354
     density: 5.788910331148
     dayLength: 20
     yearLength: 1.0
     temperature:
-      source: 'Handbook: House Marik, pg. 60'
+      source: 'HB:HM'
       value: 40
+      page: 60
     water:
-      source: 'Handbook: House Marik, pg. 60'
+      source: 'HB:HM'
       value: 55
+      page: 60
     lifeForm:
-      source: 'Handbook: House Marik, pg. 60'
+      source: 'HB:HM'
       value: MAMMAL
+      page: 60
     desc: |-
       The planet Marik was founded by Antonin Marik in 2139 on behalf of the Terran Alliance. The planet quickly grew into a financial and industrial leader in the region, thanks to a wealth of raw materials. The wealth of the planet Marik helped spread the Marik Commonwealth to include other nearby systems.
 
@@ -88,23 +97,28 @@ planet:
       Waytani Incorporated
     landmass:
       - name:
-          source: 'Handbook: House Marik, pg. 60'
+          source: 'HB:HM'
           value: Chavalet
+          page: 60
       - name:
-          source: 'Handbook: House Marik, pg. 60'
+          source: 'HB:HM'
           value: Mondaria
+          page: 60
         capital:
-          source: 'Handbook: House Marik, pg. 60'
+          source: 'HB:HM'
           value: Dormuth
+          page: 60
     satellite:
       - name:
-          source: 'Handbook: House Marik, pg. 60'
+          source: 'HB:HM'
           value: Hradcany
+          page: 60
         size: medium
         icon: rock16
       - name:
-          source: 'Handbook: House Marik, pg. 60'
+          source: 'HB:HM'
           value: Malla Strana
+          page: 60
         size: large
         icon: rock13
     event:
@@ -149,6 +163,12 @@ planet:
       - date: '2270-01-01'
         population: 497593503.0
       - date: '2271-06-01'
+        # administration: FWL | Marik Commonwealth
+        # administration: FWL | Marik Commonwealth
+        # administration: FWL | Marik Commonwealth
+        # administration: FWL | Marik Commonwealth
+        # administration: FWL | Marik Commonwealth
+        # administration: FWL | Marik Commonwealth
         faction:
           source: canon
           value:
@@ -347,6 +367,18 @@ planet:
           value: 4805000000.0
       - date: '3070-01-01'
         population: 4819436644.0
+      - date: '3079-01-01'
+        # administration: MCM | District Capital
+        # administration: MCM | District Capital
+        # administration: MCM | District Capital
+        # administration: MCM | District Capital
+        # administration: MCM | District Capital
+        # administration: MCM | District Capital
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - MCM
       - date: '3079-01-07'
         faction:
           source: canon
@@ -354,6 +386,30 @@ planet:
             - MSC
       - date: '3080-01-01'
         population: 4841657121.0
+      - date: '3081-01-01'
+        # administration: MCM | District Capital
+        # administration: MCM | District Capital
+        # administration: MCM | District Capital
+        # administration: MCM | District Capital
+        # administration: MCM | District Capital
+        # administration: MCM | District Capital
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - MCM
+      - date: '3085-01-01'
+        # administration: MSC | National Capital
+        # administration: MSC | National Capital
+        # administration: MSC | National Capital
+        # administration: MSC | National Capital
+        # administration: MSC | National Capital
+        # administration: MSC | National Capital
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - MSC
       - date: '3090-01-01'
         population: 4865926028.0
       - date: '3100-01-01'
@@ -383,8 +439,25 @@ planet:
       - date: '3140-01-01'
         population: 5115407390.0
       - date: '3145-01-01'
+        # administration: FWL | Clan Protectorate | District Capital
+        # administration: FWL | Clan Protectorate | District Capital
+        # administration: FWL | Clan Protectorate | District Capital
+        # administration: FWL | Clan Protectorate | District Capital
+        # administration: FWL | Clan Protectorate | District Capital
+        # administration: FWL | Clan Protectorate | District Capital
         population: 5148250985.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FWL
       - date: '3151-01-01'
+        # administration: FWL | Clan Protectorate | District Capital
+        # administration: FWL | Clan Protectorate | District Capital
+        # administration: FWL | Clan Protectorate | District Capital
+        # administration: FWL | Clan Protectorate | District Capital
+        # administration: FWL | Clan Protectorate | District Capital
+        # administration: FWL | Clan Protectorate | District Capital
         faction:
           source: sucs
           value:

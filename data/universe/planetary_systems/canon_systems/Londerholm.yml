@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,15 +16,17 @@
 # affiliated with Microsoft.
 
 id: Londerholm
-sucsId: 2951
+sucsId: 2952
 xcood: -42.221
 ycood: 1872.682
 spectralType:
-  source: Warriors of Kerensky, pg. 112
+  source: WoK
   value: G7III
+  page: 112
 primarySlot:
-  source: Warriors of Kerensky, pg. 112
+  source: WoK
   value: 2
+  page: 112
 event:
   - date: '2803-03-21'
     zenithCharge: yes
@@ -50,32 +52,39 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 1.44
     sysPos:
-      source: Warriors of Kerensky, pg. 112
+      source: WoK
       value: 2
+      page: 112
     icon: green19
     pressure:
-      source: Warriors of Kerensky, pg. 112
+      source: WoK
       value: STANDARD
+      page: 112
     atmosphere:
-      source: Warriors of Kerensky, pg. 112
+      source: WoK
       value: BREATHABLE
+      page: 112
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: Warriors of Kerensky, pg. 112
+      source: WoK
       value: 1.5
+      page: 112
     diameter: 18651
     density: 5.651961970171
     dayLength: 27
     yearLength: 2.0
     temperature:
-      source: Warriors of Kerensky, pg. 112
+      source: WoK
       value: 30
+      page: 112
     water:
-      source: Warriors of Kerensky, pg. 112
+      source: WoK
       value: 70
+      page: 112
     lifeForm:
-      source: Warriors of Kerensky, pg. 112
+      source: WoK
       value: BIRD
+      page: 112
     desc: No description available.
     landmass:
       - name: Mamakating A
@@ -154,6 +163,11 @@ planet:
             - CCO
       - date: '3040-01-01'
         population: 5194034.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CLAN
       - date: '3046-01-01'
         socioIndustrial: A-B-D-A-C
       - date: '3050-01-01'
@@ -165,6 +179,12 @@ planet:
             - CIH
             - CCO
         population: 5126877.0
+      - date: '3063-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CLAN
       - date: '3070-01-01'
         population: 5133329.0
       - date: '3072-09-07'
@@ -178,6 +198,12 @@ planet:
           source: canon
           value:
             - CSV
+      - date: '3075-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CLAN
       - date: '3075-09-23'
         faction:
           source: canon
@@ -185,6 +211,12 @@ planet:
             - CCO
             - CSA
             - CCC
+      - date: '3079-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CLAN
       - date: '3080-01-01'
         population: 5197379.0
       - date: '3085-03-07'

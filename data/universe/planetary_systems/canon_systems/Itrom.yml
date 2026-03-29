@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Itrom
-sucsId: 1221
+sucsId: 1222
 xcood: 92.459
 ycood: -442.683
 spectralType:
@@ -132,6 +132,12 @@ planet:
       - name: Cerro Azul
     event:
       - date: '2679-09-10'
+        # administration: CC | Sian Commonality | Region 14
+        # administration: CC | Sian Commonality | Region 14
+        # administration: CC | Sian Commonality | Region 14
+        # administration: CC | Sian Commonality | Region 14
+        # administration: CC | Sian Commonality | Region 14
+        # administration: CC | Sian Commonality | Region 14
         faction:
           source: canon
           value:
@@ -178,6 +184,18 @@ planet:
             - IND
       - date: '2820-01-01'
         population: 140891313.0
+      - date: '2822-01-01'
+        # administration: CC | Sian Commonality | Region 15
+        # administration: CC | Sian Commonality | Region 15
+        # administration: CC | Sian Commonality | Region 15
+        # administration: CC | Sian Commonality | Region 15
+        # administration: CC | Sian Commonality | Region 15
+        # administration: CC | Sian Commonality | Region 15
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CC
       - date: '2830-01-01'
         population: 141023866.0
       - date: '2840-01-01'
@@ -186,6 +204,12 @@ planet:
         socioIndustrial: D-C-B-D-B
       - date: '2850-01-01'
         population: 78785381.0
+      - date: '2864-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '2910-01-01'
         faction:
           source: canon
@@ -196,6 +220,12 @@ planet:
           source: This is the earliest the directorate could have taken over
           value:
             - ARD
+      - date: '3025-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ARC
       - date: '3025-05-01'
         faction:
           source: assumption
@@ -218,11 +248,24 @@ planet:
         socioIndustrial:
           source: canon
           value: C-C-B-B-B
+      - date: '3030-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ABN
       - date: '3151-01-01'
         faction:
           source: sucs
           value:
             - ABN
+      - date: '3152-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
+    desc: The ancestral home of House Gallas, Itrom III is verdant and green, covered in grasslands and forests. The planet features a vast equatorial desert on its largest landmass where the Capellan Confederation built a fortress and spaceport. Over fifty million people are spread across all but one continent. The single northern hemisphere continent was devastated in the early Succession Wars by nuclear weapons, rendering most of it uninhabitable. The damage was so extensive that Itrom was officially declared a dead world and removed from most Inner Sphere starcharts.
   - name: Betoafo
     type: DWARF_TERRESTRIAL
     orbitalDist: 3.08

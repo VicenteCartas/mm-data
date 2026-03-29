@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: Gulkana
-sucsId: 1018
+sucsId: 1019
 xcood: 353.609
 ycood: -177.861
 spectralType:
-  source: House Davion
+  source: HB:HD
   value: A5V
 primarySlot:
-  source: House Davion
+  source: HB:HD
   value: 5
 planet:
   - name: Graham's Nest
@@ -90,7 +90,7 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 5.32
     sysPos:
-      source: House Davion
+      source: HB:HD
       value: 5
     icon: green55
     pressure:
@@ -112,23 +112,16 @@ planet:
       source: canon
       value: 30
     lifeForm:
-      source: House Davion
+      source: HB:HD
       value: PLANT
-    desc: Gulkana is a relatively small planet with few natural resources. However,
-      it is home to some heavy industry, which specializes in making weapons for dropships.
-      The planet faced some turmoil in the early 31st century when the democratic
-      local government was overthrown by the militia and the new ruler implemented
-      social changes that shuffled citizens to different jobs based on their score
-      on questionable IQ testing. These changes resulted in the weapons factory being
-      shut down and began the talk of insurrection. The factory shutting down also
-      brought notice from the highest levels of the Federated Suns government.
+    desc: Gulkana is a relatively small planet with few natural resources. However, it is home to some heavy industry, which specializes in making weapons for dropships. The planet faced some turmoil in the early 31st century when the democratic local government was overthrown by the militia and the new ruler implemented social changes that shuffled citizens to different jobs based on their score on questionable IQ testing. These changes resulted in the weapons factory being shut down and began the talk of insurrection. The factory shutting down also brought notice from the highest levels of the Federated Suns government.
     smallMoons: 6
     landmass:
       - name:
           source: canon
           value: Pangaea
         capital:
-          source: House Davion
+          source: HB:HD
           value: Kanpur
     event:
       - date: '2273-08-10'
@@ -156,6 +149,12 @@ planet:
           value:
             - FS
         population: 8325396.0
+      - date: '2341-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '2350-01-01'
         population: 12590364.0
       - date: '2360-01-01'
@@ -202,6 +201,18 @@ planet:
         population: 175892472.0
       - date: '2570-01-01'
         population: 179699962.0
+      - date: '2571-01-01'
+        # administration: FS | Crucis March | Chirikof Operational Area
+        # administration: FS | Crucis March | Chirikof Operational Area
+        # administration: FS | Crucis March | Chirikof Operational Area
+        # administration: FS | Crucis March | Chirikof Operational Area
+        # administration: FS | Crucis March | Chirikof Operational Area
+        # administration: FS | Crucis March | Chirikof Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FS
       - date: '2573-01-01'
         socioIndustrial: F-C-D-C-C
       - date: '2580-01-01'
@@ -315,8 +326,25 @@ planet:
         population: 178824684.0
         socioIndustrial: D-C-F-D-D
       - date: '3040-01-01'
+        # administration: FC | Crucis March | Chirikof Operational Area
+        # administration: FC | Crucis March | Chirikof Operational Area
+        # administration: FC | Crucis March | Chirikof Operational Area
+        # administration: FC | Crucis March | Chirikof Operational Area
+        # administration: FC | Crucis March | Chirikof Operational Area
+        # administration: FC | Crucis March | Chirikof Operational Area
         population: 180441370.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
+        # administration: FC | Crucis March | Chirikof Operational Area
+        # administration: FC | Crucis March | Chirikof Operational Area
+        # administration: FC | Crucis March | Chirikof Operational Area
+        # administration: FC | Crucis March | Chirikof Operational Area
+        # administration: FC | Crucis March | Chirikof Operational Area
+        # administration: FC | Crucis March | Chirikof Operational Area
         faction:
           source: canon
           value:
@@ -329,7 +357,25 @@ planet:
         population: 182546677.0
       - date: '3060-01-01'
         population: 184953771.0
+      - date: '3067-01-01'
+        # administration: FS | Crucis March | Chirikof Operational Area
+        # administration: FS | Crucis March | Chirikof Operational Area
+        # administration: FS | Crucis March | Chirikof Operational Area
+        # administration: FS | Crucis March | Chirikof Operational Area
+        # administration: FS | Crucis March | Chirikof Operational Area
+        # administration: FS | Crucis March | Chirikof Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FS
       - date: '3067-04-20'
+        # administration: FS | Crucis March | Chirikof Operational Area
+        # administration: FS | Crucis March | Chirikof Operational Area
+        # administration: FS | Crucis March | Chirikof Operational Area
+        # administration: FS | Crucis March | Chirikof Operational Area
+        # administration: FS | Crucis March | Chirikof Operational Area
+        # administration: FS | Crucis March | Chirikof Operational Area
         faction:
           source: canon
           value:

@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: Greeley
-sucsId: 1001
+sucsId: 1002
 xcood: 449.254
 ycood: 40.273
 spectralType:
-  source: House Davion
+  source: HB:HD
   value: K5V
 primarySlot:
-  source: House Davion
+  source: HB:HD
   value: 2
 planet:
   - name: Bimbogami
@@ -48,7 +48,7 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.28
     sysPos:
-      source: House Davion
+      source: HB:HD
       value: 2
     icon: green32
     pressure: STANDARD
@@ -62,7 +62,7 @@ planet:
     temperature: 31
     water: 41
     lifeForm:
-      source: House Davion
+      source: HB:HD
       value: MAMMAL
     desc: |-
       Most of the landmasses on Greeley are permanently covered by arctic tundra due in equal parts to the small sun that the planet orbits and the extreme axial tilt. The planet’s tilt also ensures that even the tropical equatorial region is often blanketed in snow due to blizzards sweeping in. The planet contains modest deposits of ores and other raw materials, but not enough for significant mining activities or any level of exporting.
@@ -77,6 +77,12 @@ planet:
       - name: Ricks's Land
     event:
       - date: '2360-09-14'
+        # administration: FS | Draconis March | Woodbine Operational Area
+        # administration: FS | Draconis March | Woodbine Operational Area
+        # administration: FS | Draconis March | Woodbine Operational Area
+        # administration: FS | Draconis March | Woodbine Operational Area
+        # administration: FS | Draconis March | Woodbine Operational Area
+        # administration: FS | Draconis March | Woodbine Operational Area
         faction:
           source: canon
           value:
@@ -232,8 +238,25 @@ planet:
       - date: '3030-01-01'
         population: 129859202.0
       - date: '3040-01-01'
+        # administration: FC | Draconis March | Woodbine Operational Area
+        # administration: FC | Draconis March | Woodbine Operational Area
+        # administration: FC | Draconis March | Woodbine Operational Area
+        # administration: FC | Draconis March | Woodbine Operational Area
+        # administration: FC | Draconis March | Woodbine Operational Area
+        # administration: FC | Draconis March | Woodbine Operational Area
         population: 131138078.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
+        # administration: FC | Draconis March | Woodbine Operational Area
+        # administration: FC | Draconis March | Woodbine Operational Area
+        # administration: FC | Draconis March | Woodbine Operational Area
+        # administration: FC | Draconis March | Woodbine Operational Area
+        # administration: FC | Draconis March | Woodbine Operational Area
+        # administration: FC | Draconis March | Woodbine Operational Area
         faction:
           source: canon
           value:
@@ -244,7 +267,25 @@ planet:
         population: 132046060.0
       - date: '3060-01-01'
         population: 132920446.0
+      - date: '3067-01-01'
+        # administration: FS | Draconis March | Woodbine Operational Area
+        # administration: FS | Draconis March | Woodbine Operational Area
+        # administration: FS | Draconis March | Woodbine Operational Area
+        # administration: FS | Draconis March | Woodbine Operational Area
+        # administration: FS | Draconis March | Woodbine Operational Area
+        # administration: FS | Draconis March | Woodbine Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FS
       - date: '3067-04-20'
+        # administration: FS | Draconis March | Woodbine Operational Area
+        # administration: FS | Draconis March | Woodbine Operational Area
+        # administration: FS | Draconis March | Woodbine Operational Area
+        # administration: FS | Draconis March | Woodbine Operational Area
+        # administration: FS | Draconis March | Woodbine Operational Area
+        # administration: FS | Draconis March | Woodbine Operational Area
         faction:
           source: canon
           value:
@@ -266,12 +307,42 @@ planet:
         population: 146943888.0
       - date: '3140-01-01'
         population: 149732564.0
+      - date: '3145-01-01'
+        # administration: DC | New Samarkand Military District | Tancredi Prefecture
+        # administration: DC | New Samarkand Military District | Tancredi Prefecture
+        # administration: DC | New Samarkand Military District | Tancredi Prefecture
+        # administration: DC | New Samarkand Military District | Tancredi Prefecture
+        # administration: DC | New Samarkand Military District | Tancredi Prefecture
+        # administration: DC | New Samarkand Military District | Tancredi Prefecture
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - DC
       - date: '3145-10-04'
+        # administration: DC | New Samarkand Military District | Tancredi Prefecture
+        # administration: DC | New Samarkand Military District | Tancredi Prefecture
+        # administration: DC | New Samarkand Military District | Tancredi Prefecture
+        # administration: DC | New Samarkand Military District | Tancredi Prefecture
+        # administration: DC | New Samarkand Military District | Tancredi Prefecture
+        # administration: DC | New Samarkand Military District | Tancredi Prefecture
         faction:
           source: canon
           value:
             - DC
         population: 150935229.0
+      - date: '3152-01-01'
+        # administration: FS | Draconis March | Tancredi Operational Area
+        # administration: FS | Draconis March | Tancredi Operational Area
+        # administration: FS | Draconis March | Tancredi Operational Area
+        # administration: FS | Draconis March | Tancredi Operational Area
+        # administration: FS | Draconis March | Tancredi Operational Area
+        # administration: FS | Draconis March | Tancredi Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FS
       - date: '3152-06-01'
         faction:
           source: sucs

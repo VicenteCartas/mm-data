@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,15 +16,17 @@
 # affiliated with Microsoft.
 
 id: Marlette
-sucsId: 1615
+sucsId: 1616
 xcood: 154.576
 ycood: -44.511
 spectralType:
-  source: 'Handbook: House Davion, pg. 95'
+  source: 'HB:HD'
   value: K2V
+  page: 95
 primarySlot:
-  source: 'Handbook: House Davion, pg. 95'
+  source: 'HB:HD'
   value: 3
+  page: 95
 event:
   - date: '2456-02-03'
     nadirCharge: yes
@@ -64,32 +66,39 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.49
     sysPos:
-      source: 'Handbook: House Davion, pg. 95'
+      source: 'HB:HD'
       value: 3
+      page: 95
     icon: green36
     pressure:
-      source: 'Handbook: House Davion, pg. 95'
+      source: 'HB:HD'
       value: STANDARD
+      page: 95
     atmosphere:
-      source: 'Handbook: House Davion, pg. 95'
+      source: 'HB:HD'
       value: BREATHABLE
+      page: 95
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'Handbook: House Davion, pg. 95'
+      source: 'HB:HD'
       value: 1.08
+      page: 95
     diameter: 12809
     density: 5.925227302173
     dayLength: 20
     yearLength: 0.9
     temperature:
-      source: 'Handbook: House Davion, pg. 95'
+      source: 'HB:HD'
       value: 37
+      page: 95
     water:
-      source: 'Handbook: House Davion, pg. 95'
+      source: 'HB:HD'
       value: 66
+      page: 95
     lifeForm:
-      source: 'Handbook: House Davion, pg. 95'
+      source: 'HB:HD'
       value: MAMMAL
+      page: 95
     desc: |-
       Marlette is a prosperous and thriving planet and capital of the nascent Marlette Association of the 23rd and 24th century. The success of Marlette and its surrounding planets throughout its history have resulted in numerous raids by the Terran Hegemony, Draconis Combine, and Capellan Confederation. This has resulted in the Federated Suns setting up major military bases on Marlette to respond to issues on planet and in the region.
 
@@ -98,19 +107,29 @@ planet:
     smallMoons: 5
     landmass:
       - name:
-          source: 'Objectives: Federated Suns, p. 21'
+          source: 'Obj:FS'
           value: Sanilac
+          page: 21
         capital:
-          source: 'Objectives: Federated Suns, p. 21'
+          source: 'Obj:FS'
           value: Achemar
+          page: 21
       - name:
-          source: 'Objectives: Federated Suns, p. 21'
+          source: 'Obj:FS'
           value: Saginaw
+          page: 21
       - name:
-          source: 'Objectives: Federated Suns, p. 21'
+          source: 'Obj:FS'
           value: Flint
+          page: 21
     event:
       - date: '2278-08-04'
+        # administration: Mara | National Capital
+        # administration: Mara | National Capital
+        # administration: Mara | National Capital
+        # administration: Mara | National Capital
+        # administration: Mara | National Capital
+        # administration: Mara | National Capital
         faction:
           source: canon
           value:
@@ -128,6 +147,12 @@ planet:
       - date: '2320-01-01'
         population: 6971665.0
       - date: '2324-10-22'
+        # administration: FS | Crucis March | Markesan Operational Area
+        # administration: FS | Crucis March | Markesan Operational Area
+        # administration: FS | Crucis March | Markesan Operational Area
+        # administration: FS | Crucis March | Markesan Operational Area
+        # administration: FS | Crucis March | Markesan Operational Area
+        # administration: FS | Crucis March | Markesan Operational Area
         faction:
           source: canon
           value:
@@ -298,8 +323,25 @@ planet:
       - date: '3030-01-01'
         population: 2422030010.0
       - date: '3040-01-01'
+        # administration: FC | Crucis March | Markesan Operational Area
+        # administration: FC | Crucis March | Markesan Operational Area
+        # administration: FC | Crucis March | Markesan Operational Area
+        # administration: FC | Crucis March | Markesan Operational Area
+        # administration: FC | Crucis March | Markesan Operational Area
+        # administration: FC | Crucis March | Markesan Operational Area
         population: 2432467163.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
+        # administration: FC | Crucis March | Markesan Operational Area
+        # administration: FC | Crucis March | Markesan Operational Area
+        # administration: FC | Crucis March | Markesan Operational Area
+        # administration: FC | Crucis March | Markesan Operational Area
+        # administration: FC | Crucis March | Markesan Operational Area
+        # administration: FC | Crucis March | Markesan Operational Area
         faction:
           source: canon
           value:
@@ -313,10 +355,27 @@ planet:
       - date: '3060-01-01'
         population: 2458880182.0
       - date: '3067-01-01'
+        # administration: FS | Crucis March | Markesan Operational Area
+        # administration: FS | Crucis March | Markesan Operational Area
+        # administration: FS | Crucis March | Markesan Operational Area
+        # administration: FS | Crucis March | Markesan Operational Area
+        # administration: FS | Crucis March | Markesan Operational Area
+        # administration: FS | Crucis March | Markesan Operational Area
         population:
           source: canon
           value: 2468735400.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FS
       - date: '3067-04-20'
+        # administration: FS | Crucis March | Markesan Operational Area
+        # administration: FS | Crucis March | Markesan Operational Area
+        # administration: FS | Crucis March | Markesan Operational Area
+        # administration: FS | Crucis March | Markesan Operational Area
+        # administration: FS | Crucis March | Markesan Operational Area
+        # administration: FS | Crucis March | Markesan Operational Area
         faction:
           source: canon
           value:

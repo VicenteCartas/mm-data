@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,15 +16,17 @@
 # affiliated with Microsoft.
 
 id: Principia
-sucsId: 2068
+sucsId: 2069
 xcood: -0.016
 ycood: -357.85
 spectralType:
-  source: House Liao, pg. 136
+  source: HLSB
   value: F5IV
+  page: 136
 primarySlot:
-  source: House Liao, pg. 136
+  source: HLSB
   value: 4
+  page: 136
 event:
   - date: '2750-04-10'
     zenithCharge: yes
@@ -83,8 +85,9 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 3.92
     sysPos:
-      source: House Liao, pg. 136
+      source: HLSB
       value: 4
+      page: 136
     icon: green4
     pressure: STANDARD
     atmosphere: BREATHABLE
@@ -97,20 +100,21 @@ planet:
     temperature: 38
     water: 46
     lifeForm:
-      source: House Liao, pg. 136
+      source: HLSB
       value: AMPHIBIAN
-    desc: As of 3025 - Due to numerous raids on Sian, the Capellan judicial system
-      was transplanted to Principia after the Third Succession War. This includes
-      the special judicial branches that adjudicate contractual dealings with mercenary
-      units in Capellan service. Principia has a warm, temperate climate that annually
-      draws numerous noble families to their "home away from home". Principia has
-      at least one reserve unit and/or mercenary regiment stationed on planet at all
-      times.
+      page: 136
+    desc: As of 3025 - Due to numerous raids on Sian, the Capellan judicial system was transplanted to Principia after the Third Succession War. This includes the special judicial branches that adjudicate contractual dealings with mercenary units in Capellan service. Principia has a warm, temperate climate that annually draws numerous noble families to their "home away from home". Principia has at least one reserve unit and/or mercenary regiment stationed on planet at all times.
     landmass:
       - name: Rosmerta
         capital: Cuvelier
     event:
       - date: '2676-04-26'
+        # administration: CC | Andurien Commonality | Region 3
+        # administration: CC | Andurien Commonality | Region 3
+        # administration: CC | Andurien Commonality | Region 3
+        # administration: CC | Andurien Commonality | Region 3
+        # administration: CC | Andurien Commonality | Region 3
+        # administration: CC | Andurien Commonality | Region 3
         faction:
           source: canon
           value:

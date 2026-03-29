@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: Xinyang
-sucsId: 2789
+sucsId: 2790
 xcood: 113.214
 ycood: 224.941
 spectralType:
-  source: House Kurita
+  source: HB:HK
   value: F0V
 primarySlot:
-  source: House Kurita
+  source: HB:HK
   value: 2
 event:
   - date: '2356-05-22'
@@ -51,7 +51,7 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 2.56
     sysPos:
-      source: House Kurita
+      source: HB:HK
       value: 2
     icon: green38
     pressure:
@@ -73,18 +73,9 @@ planet:
       source: canon
       value: 70
     lifeForm:
-      source: House Kurita
+      source: HB:HK
       value: AMPHIBIAN
-    desc: Xinyang is the capital world of the Xinyang Prefecture. Located in the center
-      of the Draconis Combine close to Luthien, Xinyang wasn't subject to raids like
-      many of the border worlds. The only resource Xinyang has a large supply of is
-      fresh water, otherwise it would be an industrial powerhouse. Given its relatively
-      central location, the DCMS and DCA use it as a trans-shipment point and administrative
-      headquarters. There is also a major military hospital on the world, and the
-      ISF maintains a facility to debrief soldiers returning from the front lines.
-      This hospital can house up to ten thousand patients at once, but the Jihad strained
-      even this massive facility. The planet cannot produce enough food to feed all
-      its residents, so shipments of food are quite common.
+    desc: Xinyang is the capital world of the Xinyang Prefecture. Located in the center of the Draconis Combine close to Luthien, Xinyang wasn't subject to raids like many of the border worlds. The only resource Xinyang has a large supply of is fresh water, otherwise it would be an industrial powerhouse. Given its relatively central location, the DCMS and DCA use it as a trans-shipment point and administrative headquarters. There is also a major military hospital on the world, and the ISF maintains a facility to debrief soldiers returning from the front lines. This hospital can house up to ten thousand patients at once, but the Jihad strained even this massive facility. The planet cannot produce enough food to feed all its residents, so shipments of food are quite common.
     landmass:
       - name:
           source: canon
@@ -151,6 +142,12 @@ planet:
         population: 204339865.0
       - date: '2340-01-01'
         population: 241519576.0
+      - date: '2341-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '2350-01-01'
         population: 279966231.0
       - date: '2360-10-04'
@@ -202,6 +199,18 @@ planet:
         population: 826744429.0
       - date: '2570-01-01'
         population: 838449590.0
+      - date: '2571-01-01'
+        # administration: DC | Benjamin Military District | Xinyang Prefecture
+        # administration: DC | Benjamin Military District | Xinyang Prefecture
+        # administration: DC | Benjamin Military District | Xinyang Prefecture
+        # administration: DC | Benjamin Military District | Xinyang Prefecture
+        # administration: DC | Benjamin Military District | Xinyang Prefecture
+        # administration: DC | Benjamin Military District | Xinyang Prefecture
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - DC
       - date: '2580-01-01'
         population: 849386198.0
       - date: '2590-01-01'

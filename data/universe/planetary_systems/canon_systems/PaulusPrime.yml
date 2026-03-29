@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Paulus Prime
-sucsId: 1998
+sucsId: 1999
 xcood: -73.035
 ycood: 480.162
 spectralType: M8V
@@ -50,6 +50,12 @@ planet:
       - name: Itabela
     event:
       - date: '2685-11-04'
+        # administration: RWR | Apollo Province
+        # administration: RWR | Apollo Province
+        # administration: RWR | Apollo Province
+        # administration: RWR | Apollo Province
+        # administration: RWR | Apollo Province
+        # administration: RWR | Apollo Province
         faction:
           source: canon
           value:
@@ -155,6 +161,12 @@ planet:
         socioIndustrial: C-C-A-D-D
       - date: '3047-01-01'
         socioIndustrial: C-D-A-D-D
+      - date: '3049-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CW
       - date: '3049-09-12'
         faction:
           source: canon
@@ -173,10 +185,22 @@ planet:
             - CHH
       - date: '3080-01-01'
         population: 50003417.0
+      - date: '3085-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3090-01-01'
         population: 50254061.0
       - date: '3093-01-01'
         socioIndustrial: D-D-A-D-D
+      - date: '3095-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - TB
       - date: '3100-01-01'
         population: 50193792.0
       - date: '3100-02-07'

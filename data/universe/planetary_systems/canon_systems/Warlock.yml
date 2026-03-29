@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,15 +16,17 @@
 # affiliated with Microsoft.
 
 id: Warlock
-sucsId: 2721
+sucsId: 2722
 xcood: 120.192
 ycood: -257.747
 spectralType:
-  source: 'Handbook: House Liao, pg. 83'
+  source: 'HB:HL'
   value: F9IV
+  page: 83
 primarySlot:
-  source: 'Handbook: House Liao, pg. 83'
+  source: 'HB:HL'
   value: 3
+  page: 83
 event:
   - date: '2365-06-30'
     zenithCharge: yes
@@ -68,32 +70,39 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 3.08
     sysPos:
-      source: 'Handbook: House Liao, pg. 83'
+      source: 'HB:HL'
       value: 3
+      page: 83
     icon: dry10
     pressure:
-      source: 'Handbook: House Liao, pg. 83'
+      source: 'HB:HL'
       value: THIN
+      page: 83
     atmosphere:
-      source: 'Handbook: House Liao, pg. 83'
+      source: 'HB:HL'
       value: BREATHABLE
+      page: 83
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'Handbook: House Liao, pg. 83'
+      source: 'HB:HL'
       value: 1.03
+      page: 83
     diameter: 13276
     density: 5.452334540832
     dayLength: 21
     yearLength: 5.5
     temperature:
-      source: 'Handbook: House Liao, pg. 83'
+      source: 'HB:HL'
       value: 5
+      page: 83
     water:
-      source: 'Handbook: House Liao, pg. 83'
+      source: 'HB:HL'
       value: 12
+      page: 83
     lifeForm:
-      source: 'Handbook: House Liao, pg. 83'
+      source: 'HB:HL'
       value: PLANT
+      page: 83
     desc: |-
       Warlock is an ice-bound planet that hosts numerous resorts for nobles including a winter retreat for the Liao family. It is also the site of a major naval base for St. Ives. The planet also hosts a weapons testing facility and specialised winter training centers are located on the southern continent, while military research and development centers are located on the equator. Throughout its history the Confederation has taken advantage of Warlock’s proximity to the Federated Suns’ border, and often used the planet as a staging point for raids and other covert military or Maskirovka strikes. It was also a regular target for raids by elements of the Capellan March military and other forces of the Federated Suns.
 
@@ -103,15 +112,16 @@ planet:
       Ceres Metals
     landmass:
       - name:
-          source: 'Objective Raids: Capellan Confederation'
+          source: 'OR'
           value: Warlock
         capital:
-          source: 'Objective Raids: Capellan Confederation'
+          source: 'OR'
           value: Solitude
     satellite:
       - name:
-          source: 'Handbook: House Liao, pg. 83'
+          source: 'HB:HL'
           value: Blackguard
+          page: 83
         size: medium
         icon: oddmoon3
     event:
@@ -148,7 +158,19 @@ planet:
         population: 389108129.0
       - date: '2360-01-01'
         population: 544002767.0
+      - date: '2366-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - SIML
       - date: '2367-07-01'
+        # administration: CC | St. Ives Commonality | Region 5
+        # administration: CC | St. Ives Commonality | Region 5
+        # administration: CC | St. Ives Commonality | Region 5
+        # administration: CC | St. Ives Commonality | Region 5
+        # administration: CC | St. Ives Commonality | Region 5
+        # administration: CC | St. Ives Commonality | Region 5
         faction:
           source: canon
           value:
@@ -302,7 +324,25 @@ planet:
         population:
           source: canon
           value: 4128000000.0
+      - date: '3030-01-01'
+        # administration: SIC | Region 4
+        # administration: SIC | Region 4
+        # administration: SIC | Region 4
+        # administration: SIC | Region 4
+        # administration: SIC | Region 4
+        # administration: SIC | Region 4
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - SIC
       - date: '3030-03-13'
+        # administration: SIC | Region 4
+        # administration: SIC | Region 4
+        # administration: SIC | Region 4
+        # administration: SIC | Region 4
+        # administration: SIC | Region 4
+        # administration: SIC | Region 4
         faction:
           source: canon
           value:
@@ -323,6 +363,12 @@ planet:
       - date: '3060-01-01'
         population: 5199957034.0
       - date: '3062-04-12'
+        # administration: CC | St. Ives Commonality | Region 3
+        # administration: CC | St. Ives Commonality | Region 3
+        # administration: CC | St. Ives Commonality | Region 3
+        # administration: CC | St. Ives Commonality | Region 3
+        # administration: CC | St. Ives Commonality | Region 3
+        # administration: CC | St. Ives Commonality | Region 3
         faction:
           source: canon
           value:

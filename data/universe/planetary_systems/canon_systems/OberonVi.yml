@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,15 +16,17 @@
 # affiliated with Microsoft.
 
 id: Oberon VI
-sucsId: 1916
+sucsId: 1917
 xcood: -111.419
 ycood: 473.251
 spectralType:
-  source: Periphery (1ed), pg. 149
+  source: Per1e
   value: F5III
+  page: 149
 primarySlot:
-  source: Periphery (1ed), pg. 149
+  source: Per1e
   value: 6
+  page: 149
 planet:
   - name: Oberon I
     type: ICE_GIANT
@@ -112,8 +114,9 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 3.92
     sysPos:
-      source: Periphery (1ed), pg. 149
+      source: Per1e
       value: 6
+      page: 149
     icon: green36
     pressure:
       source: canon
@@ -128,8 +131,9 @@ planet:
     temperature: 20
     water: 35
     lifeForm:
-      source: Periphery (1ed), pg. 149
+      source: Per1e
       value: MAMMAL
+      page: 149
     desc: No description available.
     landmass:
       - name: Aust
@@ -139,6 +143,12 @@ planet:
       - name: New South Tawton
     event:
       - date: '2684-11-23'
+        # administration: RWR | Apollo Province
+        # administration: RWR | Apollo Province
+        # administration: RWR | Apollo Province
+        # administration: RWR | Apollo Province
+        # administration: RWR | Apollo Province
+        # administration: RWR | Apollo Province
         faction:
           source: canon
           value:
@@ -179,7 +189,25 @@ planet:
             - IND
       - date: '2780-01-01'
         population: 39930.0
+      - date: '2783-01-01'
+        # administration: OC | National Capital
+        # administration: OC | National Capital
+        # administration: OC | National Capital
+        # administration: OC | National Capital
+        # administration: OC | National Capital
+        # administration: OC | National Capital
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - OC
       - date: '2783-11-13'
+        # administration: OC | National Capital
+        # administration: OC | National Capital
+        # administration: OC | National Capital
+        # administration: OC | National Capital
+        # administration: OC | National Capital
+        # administration: OC | National Capital
         faction:
           source: canon
           value:
@@ -235,6 +263,12 @@ planet:
       - date: '3010-01-01'
         population: 42352.0
       - date: '3012-10-24'
+        # administration: OC | National Capital
+        # administration: OC | National Capital
+        # administration: OC | National Capital
+        # administration: OC | National Capital
+        # administration: OC | National Capital
+        # administration: OC | National Capital
         faction:
           source: canon
           value:
@@ -250,6 +284,12 @@ planet:
       - date: '3040-11-27'
         population: 635463.0
         socioIndustrial: D-D-B-D-D
+      - date: '3049-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CW
       - date: '3049-09-02'
         faction:
           source: canon
@@ -268,8 +308,26 @@ planet:
             - CHH
       - date: '3080-01-01'
         population: 64510288.0
+      - date: '3085-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3090-01-01'
         population: 65262964.0
+      - date: '3095-01-01'
+        # administration: NOC | National Capital
+        # administration: NOC | National Capital
+        # administration: NOC | National Capital
+        # administration: NOC | National Capital
+        # administration: NOC | National Capital
+        # administration: NOC | National Capital
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - NOC
       - date: '3100-01-01'
         population: 65708265.0
       - date: '3100-02-07'
@@ -284,12 +342,29 @@ planet:
       - date: '3120-01-01'
         population: 66275792.0
       - date: '3130-01-01'
+        # administration: NOC | National Capital
+        # administration: NOC | National Capital
+        # administration: NOC | National Capital
+        # administration: NOC | National Capital
+        # administration: NOC | National Capital
+        # administration: NOC | National Capital
         population: 66941875.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - NOC
       - date: '3140-01-01'
         population: 67709379.0
       - date: '3145-01-01'
         population: 67939983.0
       - date: '3151-01-01'
+        # administration: NOC | National Capital
+        # administration: NOC | National Capital
+        # administration: NOC | National Capital
+        # administration: NOC | National Capital
+        # administration: NOC | National Capital
+        # administration: NOC | National Capital
         faction:
           source: sucs
           value:

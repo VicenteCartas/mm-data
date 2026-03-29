@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,15 +16,17 @@
 # affiliated with Microsoft.
 
 id: Necromo
-sucsId: 1804
+sucsId: 1805
 xcood: 102.876
 ycood: -188.465
 spectralType:
-  source: 'Handbook: House Liao, pg. 73'
+  source: 'HB:HL'
   value: M5V
+  page: 73
 primarySlot:
-  source: 'Handbook: House Liao, pg. 73'
+  source: 'HB:HL'
   value: 10
+  page: 73
 event:
   - date: '2361-11-19'
     nadirCharge: yes
@@ -159,8 +161,7 @@ planet:
     icon: frozen38
     pressure: THIN
     atmosphere: TOXIC_CAUSTIC
-    composition: Nitrogen and Ammonia, plus trace amounts of Sulfur Dioxide and Carbon
-      Dioxide
+    composition: Nitrogen and Ammonia, plus trace amounts of Sulfur Dioxide and Carbon Dioxide
     gravity: 0.71
     diameter: 8500
     density: 5.8437
@@ -189,44 +190,53 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.08
     sysPos:
-      source: 'Handbook: House Liao, pg. 73'
+      source: 'HB:HL'
       value: 10
+      page: 73
     icon: dry4
     pressure:
-      source: 'Handbook: House Liao, pg. 73'
+      source: 'HB:HL'
       value: THIN
+      page: 73
     atmosphere:
-      source: 'Handbook: House Liao, pg. 73'
+      source: 'HB:HL'
       value: BREATHABLE
+      page: 73
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'Handbook: House Liao, pg. 73'
+      source: 'HB:HL'
       value: 1.03
+      page: 73
     diameter: 14122
     density: 5.125566796547
     dayLength: 25
     yearLength: 0.4
     temperature:
-      source: 'Handbook: House Liao, pg. 73'
+      source: 'HB:HL'
       value: 39
+      page: 73
     water:
-      source: 'Handbook: House Liao, pg. 73'
+      source: 'HB:HL'
       value: 12
+      page: 73
     lifeForm:
-      source: 'Handbook: House Liao, pg. 73'
+      source: 'HB:HL'
       value: MAMMAL
+      page: 73
     desc: |-
       As of 3025 Necromo was populated by only 5,000 people, all of which were employed at the secret Capellan Dropship repair facilities. In order to keep the repair facilities secure only the most loyal workers were selected and even then their families were not allowed to follow them to Necromo, however workers never remained more than 3 months on planet. In 3055 the Aris Memorial Yards were relocated into orbit around Necromo and the Maskirova finally allowed people to live on the planet.
 
       Necromo is overall a comfortable planet to live despite arid conditions. The planet is primarily covered in rolling hills and forests. Almost the entire population lives inside the domed capital of Landing place.
     landmass:
       - capital:
-          source: 'Handbook: House Liao, pg. 73'
+          source: 'HB:HL'
           value: Landingplace
+          page: 73
     satellite:
       - name:
-          source: 'Handbook: House Liao, pg. 73'
+          source: 'HB:HL'
           value: Acorna
+          page: 73
         size: medium
         icon: oddmoon2
     event:
@@ -262,6 +272,12 @@ planet:
       - date: '2360-01-01'
         population: 10769.0
       - date: '2367-07-01'
+        # administration: CC | Capella Commonality | Region 4
+        # administration: CC | Capella Commonality | Region 4
+        # administration: CC | Capella Commonality | Region 4
+        # administration: CC | Capella Commonality | Region 4
+        # administration: CC | Capella Commonality | Region 4
+        # administration: CC | Capella Commonality | Region 4
         faction:
           source: canon
           value:
@@ -439,6 +455,12 @@ planet:
         population:
           source: canon
           value: 1500000.0
+      - date: '3068-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CC/FS
       - date: '3070-01-01'
         population: 15527.0
       - date: '3071-06-12'

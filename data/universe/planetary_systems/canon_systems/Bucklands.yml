@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -23,7 +23,7 @@ spectralType:
   source: canon
   value: K7V
 primarySlot:
-  source: 'Operational Turning Points: Falcon Incursion'
+  source: 'OTP:FI'
   value: 4
 event:
   - date: '2623-07-03'
@@ -54,8 +54,7 @@ planet:
     icon: badwater45
     pressure: THIN
     atmosphere: TOXIC_POISON
-    composition: Carbon Dioxide and Ammonia, plus trace amounts of Carbon Dioxide
-      and Hydrogen Sulfide
+    composition: Carbon Dioxide and Ammonia, plus trace amounts of Carbon Dioxide and Hydrogen Sulfide
     gravity: 0.51
     diameter: 7500
     density: 4.7795
@@ -83,31 +82,31 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.24
     sysPos:
-      source: 'Operational Turning Points: Falcon Incursion'
+      source: 'OTP:FI'
       value: 4
     icon: green43
     pressure:
-      source: 'Operational Turning Points: Falcon Incursion'
+      source: 'OTP:FI'
       value: STANDARD
     atmosphere:
-      source: 'Operational Turning Points: Falcon Incursion'
+      source: 'OTP:FI'
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'Operational Turning Points: Falcon Incursion'
+      source: 'OTP:FI'
       value: 1.03
     diameter: 14736
     density: 4.912168036149
     dayLength: 20
     yearLength: 0.8
     temperature:
-      source: 'Operational Turning Points: Falcon Incursion'
+      source: 'OTP:FI'
       value: 32
     water:
-      source: 'Operational Turning Points: Falcon Incursion'
+      source: 'OTP:FI'
       value: 50
     lifeForm:
-      source: 'Operational Turning Points: Falcon Incursion'
+      source: 'OTP:FI'
       value: MAMMAL
     desc: |-
       Bucklands is breadbasket world that supplies massive amounts of food to neighboring planets. The food supplies make the planet vital to the region, even if Bucklands is regarded as a backwater planet by most Lyrans. The planet is otherwise not noteworthy, with next to no industry beyond food processing and packaging and only modest deposits of common mineral resources.
@@ -123,6 +122,12 @@ planet:
       - name: Sánchez's Harvest
     event:
       - date: '2528-12-25'
+        # administration: RWR | Finmark Province
+        # administration: RWR | Finmark Province
+        # administration: RWR | Finmark Province
+        # administration: RWR | Finmark Province
+        # administration: RWR | Finmark Province
+        # administration: RWR | Finmark Province
         faction:
           source: canon
           value:
@@ -186,6 +191,12 @@ planet:
       - date: '2771-03-23'
         hpg: X
       - date: '2779-11-07'
+        # administration: LA | Protectorate of Donegal | Coventry Province
+        # administration: LA | Protectorate of Donegal | Coventry Province
+        # administration: LA | Protectorate of Donegal | Coventry Province
+        # administration: LA | Protectorate of Donegal | Coventry Province
+        # administration: LA | Protectorate of Donegal | Coventry Province
+        # administration: LA | Protectorate of Donegal | Coventry Province
         faction:
           source: canon
           value:
@@ -249,8 +260,25 @@ planet:
         population: 84831186.0
         socioIndustrial: C-C-C-D-A
       - date: '3040-01-01'
+        # administration: FC | Periphery March | Tsarahavana Operational Area
+        # administration: FC | Periphery March | Tsarahavana Operational Area
+        # administration: FC | Periphery March | Tsarahavana Operational Area
+        # administration: FC | Periphery March | Tsarahavana Operational Area
+        # administration: FC | Periphery March | Tsarahavana Operational Area
+        # administration: FC | Periphery March | Tsarahavana Operational Area
         population: 85529661.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
+        # administration: FC | Periphery March | Tsarahavana Operational Area
+        # administration: FC | Periphery March | Tsarahavana Operational Area
+        # administration: FC | Periphery March | Tsarahavana Operational Area
+        # administration: FC | Periphery March | Tsarahavana Operational Area
+        # administration: FC | Periphery March | Tsarahavana Operational Area
+        # administration: FC | Periphery March | Tsarahavana Operational Area
         faction:
           source: canon
           value:
@@ -261,11 +289,29 @@ planet:
           value: D-D-C-D-A
       - date: '3050-01-01'
         population: 86044382.0
+      - date: '3057-01-01'
+        # administration: LA | Periphery March | Tsarahavana Operational Area
+        # administration: LA | Periphery March | Tsarahavana Operational Area
+        # administration: LA | Periphery March | Tsarahavana Operational Area
+        # administration: LA | Periphery March | Tsarahavana Operational Area
+        # administration: LA | Periphery March | Tsarahavana Operational Area
+        # administration: LA | Periphery March | Tsarahavana Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '3057-09-18'
         faction:
           source: canon
           value:
             - LA
+      - date: '3058-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CJF
       - date: '3058-01-30'
         faction:
           source: canon
@@ -273,6 +319,12 @@ planet:
             - LA
             - CJF
       - date: '3058-06-09'
+        # administration: LA | Coventry Province | Melissia Theater
+        # administration: LA | Coventry Province | Melissia Theater
+        # administration: LA | Coventry Province | Melissia Theater
+        # administration: LA | Coventry Province | Melissia Theater
+        # administration: LA | Coventry Province | Melissia Theater
+        # administration: LA | Coventry Province | Melissia Theater
         faction:
           source: canon
           value:

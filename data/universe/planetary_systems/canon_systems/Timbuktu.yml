@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,15 +16,17 @@
 # affiliated with Microsoft.
 
 id: Timbuktu
-sucsId: 2547
+sucsId: 2548
 xcood: -446.638
 ycood: 154.763
 spectralType:
-  source: 'Handbook: House Steiner, pg. 75'
+  source: 'HB:HS'
   value: K0V
+  page: 75
 primarySlot:
-  source: 'Handbook: House Steiner, pg. 75'
+  source: 'HB:HS'
   value: 2
+  page: 75
 event:
   - date: '2530-01-04'
     zenithCharge: yes
@@ -50,45 +52,60 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.56
     sysPos:
-      source: 'Handbook: House Steiner, pg. 75'
+      source: 'HB:HS'
       value: 2
+      page: 75
     icon: green2
     pressure:
-      source: 'Handbook: House Steiner, pg. 75'
+      source: 'HB:HS'
       value: STANDARD
+      page: 75
     atmosphere:
-      source: 'Handbook: House Steiner, pg. 75'
+      source: 'HB:HS'
       value: BREATHABLE
+      page: 75
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'Handbook: House Steiner, pg. 75'
+      source: 'HB:HS'
       value: 0.94
+      page: 75
     diameter: 12996
     density: 5.082879268403
     dayLength: 20
     yearLength: 1.0
     temperature:
-      source: 'Handbook: House Steiner, pg. 75'
+      source: 'HB:HS'
       value: 52
+      page: 75
     water:
-      source: 'Handbook: House Steiner, pg. 75'
+      source: 'HB:HS'
       value: 63
+      page: 75
     lifeForm:
-      source: 'Handbook: House Steiner, pg. 75'
+      source: 'HB:HS'
       value: PLANT
+      page: 75
     desc: |-
       Over its history, Timbuktu's position on the Periphery border has resulted in it being the target of numerous pirate raids. Timbuktu is located relatively close to its sun and as a result most of the planet is covered in badlands and desert. The planet can barely grow enough agriculture to sustain its population and is overall a resource poor world. The only raw materials that can be found are located in the volcanic southern continent of Hades. The planets capital, Greene, is located on the northern super-continent Saharius. Saharius is covered in a mix of grasslands and desert wastes.
 
       Timbuktu has been a staging ground used by the Lyran Commonwealth to coordinate anti-piracy actions from the fringes of the realm. In later years, Timbuktu became a stop-over for merchants looking to trade with the Rim Collection.
     landmass:
       - name:
-          source: 'Handbook: House Steiner, pg. 75'
+          source: 'HB:HS'
           value: Saharius
+          page: 75
         capital:
-          source: 'Handbook: House Steiner, pg. 75'
+          source: 'HB:HS'
           value: Greene
+          page: 75
     event:
       - date: '2509-06-17'
+        # administration: RWR | Timbuktu Province | District Capital
+        # administration: RWR | Timbuktu Province | District Capital
+        # administration: RWR | Timbuktu Province | District Capital
+        # administration: RWR | Timbuktu Province | District Capital
+        # administration: RWR | Timbuktu Province | District Capital
+        # administration: RWR | Timbuktu Province | District Capital
         faction:
           source: canon
           value:
@@ -158,6 +175,12 @@ planet:
       - date: '2770-01-01'
         population: 983726072.0
       - date: '2779-02-15'
+        # administration: LA | Protectorate of Donegal | Alarion Province
+        # administration: LA | Protectorate of Donegal | Alarion Province
+        # administration: LA | Protectorate of Donegal | Alarion Province
+        # administration: LA | Protectorate of Donegal | Alarion Province
+        # administration: LA | Protectorate of Donegal | Alarion Province
+        # administration: LA | Protectorate of Donegal | Alarion Province
         faction:
           source: canon
           value:
@@ -218,8 +241,25 @@ planet:
       - date: '3030-01-01'
         population: 924157230.0
       - date: '3040-01-01'
+        # administration: FC | Periphery March | Venaria Operational Area
+        # administration: FC | Periphery March | Venaria Operational Area
+        # administration: FC | Periphery March | Venaria Operational Area
+        # administration: FC | Periphery March | Venaria Operational Area
+        # administration: FC | Periphery March | Venaria Operational Area
+        # administration: FC | Periphery March | Venaria Operational Area
         population: 934192219.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
+        # administration: FC | Periphery March | Venaria Operational Area
+        # administration: FC | Periphery March | Venaria Operational Area
+        # administration: FC | Periphery March | Venaria Operational Area
+        # administration: FC | Periphery March | Venaria Operational Area
+        # administration: FC | Periphery March | Venaria Operational Area
+        # administration: FC | Periphery March | Venaria Operational Area
         faction:
           source: canon
           value:
@@ -230,7 +270,25 @@ planet:
           value: C-C-B-C-D
       - date: '3050-01-01'
         population: 942920731.0
+      - date: '3057-01-01'
+        # administration: LA | Periphery March | Venaria Operational Area
+        # administration: LA | Periphery March | Venaria Operational Area
+        # administration: LA | Periphery March | Venaria Operational Area
+        # administration: LA | Periphery March | Venaria Operational Area
+        # administration: LA | Periphery March | Venaria Operational Area
+        # administration: LA | Periphery March | Venaria Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '3057-09-18'
+        # administration: LA | Alarion Province | Timbuktu Theater
+        # administration: LA | Alarion Province | Timbuktu Theater
+        # administration: LA | Alarion Province | Timbuktu Theater
+        # administration: LA | Alarion Province | Timbuktu Theater
+        # administration: LA | Alarion Province | Timbuktu Theater
+        # administration: LA | Alarion Province | Timbuktu Theater
         faction:
           source: canon
           value:

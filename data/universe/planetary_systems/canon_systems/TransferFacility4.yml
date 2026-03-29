@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,12 +16,13 @@
 # affiliated with Microsoft.
 
 id: Transfer Facility 4
-sucsId: 3036
+sucsId: 2998
 xcood: 293.32
 ycood: 669.005
 spectralType:
-  source: Explorer Corps, pg. 55
+  source: EC
   value: M4II
+  page: 55
 primarySlot: 2
 event:
   - date: '2864-06-15'
@@ -93,6 +94,12 @@ planet:
             - IND
         population: 925.0
         socioIndustrial: B-X-X-X-X
+      - date: '3049-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CSJ
       - date: '3049-08-01'
         faction:
           source: canon
@@ -101,6 +108,12 @@ planet:
         hpg: A
         population: 1792.0
         socioIndustrial: A-X-X-X-X
+      - date: '3063-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3063-03-17'
         faction:
           source: canon
@@ -109,6 +122,12 @@ planet:
         hpg: A
         population: 8475.0
         socioIndustrial: B-X-X-X-X
+      - date: '3067-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3075-02-07'
         faction:
           source: canon
@@ -117,6 +136,12 @@ planet:
         hpg: X
         population: 0.0
         socioIndustrial: X-X-X-X-X
+      - date: '3079-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
   - name: MP-3
     type: GAS_GIANT
     orbitalDist: 0.48

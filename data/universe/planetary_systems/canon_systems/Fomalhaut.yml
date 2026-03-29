@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: Fomalhaut
-sucsId: 890
+sucsId: 891
 xcood: 20.928
 ycood: 5.382
 spectralType:
-  source: MWDA world profiles
+  source: DA:RW
   value: A3V
 primarySlot:
-  source: MWDA world profiles
+  source: DA:RW
   value: 3
 event:
   - date: '2358-07-13'
@@ -69,82 +69,56 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 6.72
     sysPos:
-      source: MWDA world profiles
+      source: DA:RW
       value: 3
     icon: wet13
     pressure:
-      source: MWDA world profiles
+      source: DA:RW
       value: HIGH
     atmosphere:
-      source: MWDA world profiles
+      source: DA:RW
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: MWDA world profiles
+      source: DA:RW
       value: 1.11
     diameter: 11993
     density: 6.504566349089
     dayLength: 20
     yearLength: 17.5
     temperature:
-      source: MWDA world profiles
+      source: DA:RW
       value: 26
     water:
-      source: MWDA world profiles
+      source: DA:RW
       value: 92
     lifeForm:
-      source: MWDA world profiles
+      source: DA:RW
       value: AMPHIBIAN
-    desc: 3135 - The first colonists to Fomalhaut saw a world blessed with an unlimited
-      water supply and lush semi-tropical forestlands. Only a pair of small landmasses—Oanhu
-      in the southern hemisphere, and Lyria in the equatorial zone—and a few dozen
-      islands rise from the Endless Seas, Fomalhaut‘s planet-wide ocean. Settlers,
-      most descended from the Hawaiian and Filipino cultures of Terra, readily took
-      to this planet, and established themselves on every landmass that could support
-      life before too long. Exploiting the natural beauty, unique three-moon nightscape,
-      and infinite emerald seas, these settlers made Fomalhaut into a resort world.
-      Larger industries failed to take root on the planet, though an orbital ore-refining
-      station was established to take advantage of the metals found on the volcanic
-      inner moon of Scarlet. By the time of the Star League, very little had changed
-      on Fomalhaut, and the planet was a favorite getaway for the Terran Hegemony‘s
-      idle rich. The lack of heavy industry spared the world much of the damage inflicted
-      by Amaris forces during the final days of the Star League, save for the destruction
-      of the Scarlet refining station and the planetary spaceport of Otaku. Thus,
-      when the Federated Suns and later the Draconis Combine claimed the world after
-      the League‘s fall, they too benefited from the tranquil beauty of this ocean
-      world, though the centuries of near-constant warfare led to the planet being
-      raided by hostile troops on more than one occasion. During the Jihad, however,
-      Blakist forces were not as impressed with the eternal splendor of Fomalhaut.
-      As a hostile border world, just one jump from Terra, the planet was assaulted
-      and occupied in a lightning strike by mercenaries, in the Word of Blake‘s employ,
-      who had to be rooted out of the planet‘s cities by Combine troops during the
-      campaign to end the Jihad. Many of the world‘s most beautiful resort towns were
-      reduced to rubble in the fighting, and the capital city, Lollanda, on Oanhu,
-      had to be completely rebuilt after the Blakist mercenaries set it ablaze to
-      distract the liberating forces.
+    desc: 3135 - The first colonists to Fomalhaut saw a world blessed with an unlimited water supply and lush semi-tropical forestlands. Only a pair of small landmasses—Oanhu in the southern hemisphere, and Lyria in the equatorial zone—and a few dozen islands rise from the Endless Seas, Fomalhaut‘s planet-wide ocean. Settlers, most descended from the Hawaiian and Filipino cultures of Terra, readily took to this planet, and established themselves on every landmass that could support life before too long. Exploiting the natural beauty, unique three-moon nightscape, and infinite emerald seas, these settlers made Fomalhaut into a resort world. Larger industries failed to take root on the planet, though an orbital ore-refining station was established to take advantage of the metals found on the volcanic inner moon of Scarlet. By the time of the Star League, very little had changed on Fomalhaut, and the planet was a favorite getaway for the Terran Hegemony‘s idle rich. The lack of heavy industry spared the world much of the damage inflicted by Amaris forces during the final days of the Star League, save for the destruction of the Scarlet refining station and the planetary spaceport of Otaku. Thus, when the Federated Suns and later the Draconis Combine claimed the world after the League‘s fall, they too benefited from the tranquil beauty of this ocean world, though the centuries of near-constant warfare led to the planet being raided by hostile troops on more than one occasion. During the Jihad, however, Blakist forces were not as impressed with the eternal splendor of Fomalhaut. As a hostile border world, just one jump from Terra, the planet was assaulted and occupied in a lightning strike by mercenaries, in the Word of Blake‘s employ, who had to be rooted out of the planet‘s cities by Combine troops during the campaign to end the Jihad. Many of the world‘s most beautiful resort towns were reduced to rubble in the fighting, and the capital city, Lollanda, on Oanhu, had to be completely rebuilt after the Blakist mercenaries set it ablaze to distract the liberating forces.
     landmass:
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Lyria
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Oanhu
         capital:
-          source: MWDA world profiles
+          source: DA:RW
           value: Lollanda
     satellite:
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Cryos
         size: large
         icon: rock14
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Iolius
         size: medium
         icon: rock5
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Scarlet
         size: large
         icon: rock4
@@ -172,6 +146,12 @@ planet:
           value:
             - TH
       - date: '2317-12-01'
+        # administration: TH | Alliance Core
+        # administration: TH | Alliance Core
+        # administration: TH | Alliance Core
+        # administration: TH | Alliance Core
+        # administration: TH | Alliance Core
+        # administration: TH | Alliance Core
         faction:
           source: canon
           value:
@@ -274,6 +254,18 @@ planet:
         population: 2757227128.0
       - date: '2760-01-01'
         population: 2749322662.0
+      - date: '2767-01-01'
+        # administration: AE | Alliance Core
+        # administration: AE | Alliance Core
+        # administration: AE | Alliance Core
+        # administration: AE | Alliance Core
+        # administration: AE | Alliance Core
+        # administration: AE | Alliance Core
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - AE
       - date: '2767-08-02'
         faction:
           source: canon
@@ -282,6 +274,12 @@ planet:
       - date: '2770-01-01'
         population: 2742329152.0
       - date: '2779-03-16'
+        # administration: TH | Alliance Core
+        # administration: TH | Alliance Core
+        # administration: TH | Alliance Core
+        # administration: TH | Alliance Core
+        # administration: TH | Alliance Core
+        # administration: TH | Alliance Core
         faction:
           source: canon
           value:
@@ -300,7 +298,25 @@ planet:
         population: 2598029801.0
       - date: '2820-01-01'
         population: 2552813627.0
+      - date: '2821-01-01'
+        # administration: DC | Dieron Military District | Lone Star Prefecture
+        # administration: DC | Dieron Military District | Lone Star Prefecture
+        # administration: DC | Dieron Military District | Lone Star Prefecture
+        # administration: DC | Dieron Military District | Lone Star Prefecture
+        # administration: DC | Dieron Military District | Lone Star Prefecture
+        # administration: DC | Dieron Military District | Lone Star Prefecture
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - DC
       - date: '2821-01-20'
+        # administration: DC | Dieron Military District | Lone Star Prefecture
+        # administration: DC | Dieron Military District | Lone Star Prefecture
+        # administration: DC | Dieron Military District | Lone Star Prefecture
+        # administration: DC | Dieron Military District | Lone Star Prefecture
+        # administration: DC | Dieron Military District | Lone Star Prefecture
+        # administration: DC | Dieron Military District | Lone Star Prefecture
         faction:
           source: canon
           value:
@@ -314,6 +330,12 @@ planet:
       - date: '2851-01-01'
         socioIndustrial: B-B-B-B-D
       - date: '2860-10-03'
+        # administration: CC | Tikonov Commonality | Region 1
+        # administration: CC | Tikonov Commonality | Region 1
+        # administration: CC | Tikonov Commonality | Region 1
+        # administration: CC | Tikonov Commonality | Region 1
+        # administration: CC | Tikonov Commonality | Region 1
+        # administration: CC | Tikonov Commonality | Region 1
         faction:
           source: canon
           value:
@@ -338,6 +360,12 @@ planet:
       - date: '2940-01-01'
         population: 2388911935.0
       - date: '2950-02-19'
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
         faction:
           source: canon
           value:
@@ -361,12 +389,30 @@ planet:
         population: 1889846777.0
       - date: '3037-01-01'
         socioIndustrial: B-C-B-B-D
+      - date: '3040-01-01'
+        # administration: DC | Dieron Military District | Al Na'ir Prefecture
+        # administration: DC | Dieron Military District | Al Na'ir Prefecture
+        # administration: DC | Dieron Military District | Al Na'ir Prefecture
+        # administration: DC | Dieron Military District | Al Na'ir Prefecture
+        # administration: DC | Dieron Military District | Al Na'ir Prefecture
+        # administration: DC | Dieron Military District | Al Na'ir Prefecture
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - DC
       - date: '3040-01-19'
         faction:
           source: canon
           value:
             - FC
       - date: '3040-09-15'
+        # administration: DC | Dieron Military District | Al Na'ir Prefecture
+        # administration: DC | Dieron Military District | Al Na'ir Prefecture
+        # administration: DC | Dieron Military District | Al Na'ir Prefecture
+        # administration: DC | Dieron Military District | Al Na'ir Prefecture
+        # administration: DC | Dieron Military District | Al Na'ir Prefecture
+        # administration: DC | Dieron Military District | Al Na'ir Prefecture
         faction:
           source: canon
           value:
@@ -378,6 +424,12 @@ planet:
         population: 1916107445.0
       - date: '3060-01-01'
         population: 1932270537.0
+      - date: '3068-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - WOB
       - date: '3068-06-18'
         faction:
           source: canon
@@ -405,7 +457,25 @@ planet:
             - Stone
       - date: '3080-01-01'
         population: 1979601884.0
+      - date: '3081-01-01'
+        # administration: ROS | Prefecture X
+        # administration: ROS | Prefecture X
+        # administration: ROS | Prefecture X
+        # administration: ROS | Prefecture X
+        # administration: ROS | Prefecture X
+        # administration: ROS | Prefecture X
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ROS
       - date: '3081-04-23'
+        # administration: ROS | Prefecture X
+        # administration: ROS | Prefecture X
+        # administration: ROS | Prefecture X
+        # administration: ROS | Prefecture X
+        # administration: ROS | Prefecture X
+        # administration: ROS | Prefecture X
         faction:
           source: canon
           value:
@@ -430,9 +500,16 @@ planet:
         population: 2192178407.0
       - date: '3151-01-01'
         faction:
-          source: sucs
+          source: SUCS
+          version: 2026.03.02
           value:
-            - DC
+            - CC
+      - date: '3152-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - 3SL
   - name: Barendran
     type: TERRESTRIAL
     orbitalDist: 3.84

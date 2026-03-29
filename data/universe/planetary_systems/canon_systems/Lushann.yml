@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,15 +16,16 @@
 # affiliated with Microsoft.
 
 id: Lushann
-sucsId: 1537
+sucsId: 1538
 xcood: 449.617
 ycood: 140.809
 spectralType:
   source: canon
   value: M3V
 primarySlot:
-  source: Periphery (1ed), pg. 120
+  source: Per1e
   value: 8
+  page: 120
 event:
   - date: '2630-01-27'
     nadirCharge: yes
@@ -50,8 +51,7 @@ planet:
     icon: frozen61
     pressure: STANDARD
     atmosphere: TOXIC_POISON
-    composition: Ammonia and Carbon Dioxide, plus trace amounts of Water Vapor and
-      Argon
+    composition: Ammonia and Carbon Dioxide, plus trace amounts of Water Vapor and Argon
     gravity: 0.86
     diameter: 9500
     density: 6.3337
@@ -154,8 +154,9 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.12
     sysPos:
-      source: Periphery (1ed), pg. 120
+      source: Per1e
       value: 8
+      page: 120
     icon: green46
     pressure:
       source: canon
@@ -176,16 +177,10 @@ planet:
       source: canon
       value: 45
     lifeForm:
-      source: Periphery (1ed), pg. 120
+      source: Per1e
       value: MAMMAL
-    desc: Lushann is a semi-arctic planet, which was primarily settled to take advantage
-      of the abundant oil deposits in the planet. In fact, almost two-thirds of the
-      planet’s modest population work for the various petrochemical companies that
-      are based on Lushann. The planet supplies most of the petrochemicals for the
-      entire Outworlds Alliance. The other major industry on Lushann is Lushann Industries,
-      a weapons manufacturer, the regional supplier of laser weaponry. After the arrival
-      of Clan Snow Ravens, the factories on Lushann were improved to include Aerospace
-      and limited ‘Mech production.
+      page: 120
+    desc: Lushann is a semi-arctic planet, which was primarily settled to take advantage of the abundant oil deposits in the planet. In fact, almost two-thirds of the planet’s modest population work for the various petrochemical companies that are based on Lushann. The planet supplies most of the petrochemicals for the entire Outworlds Alliance. The other major industry on Lushann is Lushann Industries, a weapons manufacturer, the regional supplier of laser weaponry. After the arrival of Clan Snow Ravens, the factories on Lushann were improved to include Aerospace and limited ‘Mech production.
     smallMoons: 2
     landmass:
       - name:
@@ -209,6 +204,12 @@ planet:
         icon: oddmoon1
     event:
       - date: '2543-09-15'
+        # administration: OA | Ramora Province
+        # administration: OA | Ramora Province
+        # administration: OA | Ramora Province
+        # administration: OA | Ramora Province
+        # administration: OA | Ramora Province
+        # administration: OA | Ramora Province
         faction:
           source: canon
           value:

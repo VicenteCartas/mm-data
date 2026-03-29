@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Graceland
-sucsId: 988
+sucsId: 989
 xcood: -100.609
 ycood: 246.035
 spectralType: K6V
@@ -55,6 +55,12 @@ planet:
       - name: Hakkari
       - name: Plain View
     event:
+      - date: '2341-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '2341-01-04'
         faction:
           source: canon
@@ -71,6 +77,12 @@ planet:
         population: 205600.0
       - date: '2360-01-01'
         population: 769222.0
+      - date: '2366-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '2370-01-01'
         population: 2333523.0
       - date: '2380-01-01'
@@ -113,6 +125,18 @@ planet:
         population: 676459020.0
       - date: '2570-01-01'
         population: 699788357.0
+      - date: '2571-01-01'
+        # administration: LA | Tamar Pact | Tamar Domains
+        # administration: LA | Tamar Pact | Tamar Domains
+        # administration: LA | Tamar Pact | Tamar Domains
+        # administration: LA | Tamar Pact | Tamar Domains
+        # administration: LA | Tamar Pact | Tamar Domains
+        # administration: LA | Tamar Pact | Tamar Domains
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '2580-01-01'
         population: 724393517.0
       - date: '2590-01-01'
@@ -216,8 +240,25 @@ planet:
       - date: '3030-01-01'
         population: 481219146.0
       - date: '3040-01-01'
+        # administration: FC | Tamar March | Benfled Operational Area
+        # administration: FC | Tamar March | Benfled Operational Area
+        # administration: FC | Tamar March | Benfled Operational Area
+        # administration: FC | Tamar March | Benfled Operational Area
+        # administration: FC | Tamar March | Benfled Operational Area
+        # administration: FC | Tamar March | Benfled Operational Area
         population: 484987333.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
+        # administration: FC | Tamar March | Benfled Operational Area
+        # administration: FC | Tamar March | Benfled Operational Area
+        # administration: FC | Tamar March | Benfled Operational Area
+        # administration: FC | Tamar March | Benfled Operational Area
+        # administration: FC | Tamar March | Benfled Operational Area
+        # administration: FC | Tamar March | Benfled Operational Area
         faction:
           source: canon
           value:
@@ -226,6 +267,18 @@ planet:
         socioIndustrial: C-C-B-C-B
       - date: '3050-01-01'
         population: 490498770.0
+      - date: '3057-01-01'
+        # administration: LA | Tamar March | Pandora Operational Area
+        # administration: LA | Tamar March | Pandora Operational Area
+        # administration: LA | Tamar March | Pandora Operational Area
+        # administration: LA | Tamar March | Pandora Operational Area
+        # administration: LA | Tamar March | Pandora Operational Area
+        # administration: LA | Tamar March | Pandora Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '3057-09-18'
         faction:
           source: canon
@@ -236,9 +289,27 @@ planet:
           source: canon
           value:
             - ARDC
+      - date: '3058-01-01'
+        # administration: LA | Donegal Province | Pandora Theater
+        # administration: LA | Donegal Province | Pandora Theater
+        # administration: LA | Donegal Province | Pandora Theater
+        # administration: LA | Donegal Province | Pandora Theater
+        # administration: LA | Donegal Province | Pandora Theater
+        # administration: LA | Donegal Province | Pandora Theater
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '3060-01-01'
         population: 496420213.0
       - date: '3067-04-24'
+        # administration: LA | Arc-Royal Theater
+        # administration: LA | Arc-Royal Theater
+        # administration: LA | Arc-Royal Theater
+        # administration: LA | Arc-Royal Theater
+        # administration: LA | Arc-Royal Theater
+        # administration: LA | Arc-Royal Theater
         faction:
           source: canon
           value:
@@ -263,12 +334,24 @@ planet:
         hpg: X
       - date: '3140-01-01'
         population: 560216195.0
+      - date: '3145-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CJF
       - date: '3145-06-17'
         faction:
           source: canon
           value:
             - CJF
         population: 565280898.0
+      - date: '3152-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - TamP
       - date: '3152-05-13'
         faction:
           source: canon

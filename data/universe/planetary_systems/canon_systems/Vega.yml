@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: Vega
-sucsId: 2667
+sucsId: 2668
 xcood: -3.63
 ycood: 106.615
 spectralType:
-  source: House Kurita
+  source: HB:HK
   value: A0V
 primarySlot:
-  source: House Kurita
+  source: HB:HK
   value: 7
 event:
   - date: '2356-03-24'
@@ -123,31 +123,31 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 8.12
     sysPos:
-      source: House Kurita
+      source: HB:HK
       value: 7
     icon: green57
     pressure:
-      source: MWDA world profiles
+      source: DA:RW
       value: STANDARD
     atmosphere:
-      source: MWDA world profiles
+      source: DA:RW
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: MWDA world profiles
+      source: DA:RW
       value: 0.98
     diameter: 15414
     density: 4.467959383739
     dayLength: 15
     yearLength: 23.2
     temperature:
-      source: MWDA world profiles
+      source: DA:RW
       value: 45
     water:
-      source: MWDA world profiles
+      source: DA:RW
       value: 21
     lifeForm:
-      source: House Kurita
+      source: HB:HK
       value: NONE
     desc: |-
       Had this world formed around a different star, experts believed that Vega VII could have been a paradise. When first discovered in the earlier days of mankind‘s exploration of the stars, Vega was something of a surprise, sporting vast mineral and metallic resources as well as an ocean of drinkable water, habitable temperate and polar zones, and an atmosphere that could be readily terraformed. Within fifty years after its discovery and the arrival of the first settlers—mostly from mining corporations and other industrial enterprises—Vega was a living, breathing world, albeit a warm and dry one. By the time of the Draconis Combine‘s ascendance, Vega was home to a variety of light and medium industries, producing everything from personal computers to armored vehicle components and advanced medical equipment. Strict adherence to local pollution laws allowed the industries tothrive without damaging the terraforming efforts to clean up the native atmosphere, which allowed for the importing of off-world life-forms such as Terran horses and camels, favored modes of transportation among the Vegans. Because of its industrial importance, House Kurita established Vega as a regional capital world, and it served as a military base many times during various wars over the years.
@@ -158,20 +158,20 @@ planet:
 
       Vega‘s biggest tourist attraction by far, even over the site of the Treaty of Vega signing, is the so-called Pyramids of New Egypt, located on the rocky, arid plains of Forsair. Created during the Star League era for an eccentric megabillionaire who believed in the pantheistic religion of Terra‘s ancient Egyptian civilization, the Pyramids remain the biggest draw for off-worlders and treasure seekers on Vega. Over the centuries, the influx of tourists became so heavy that a commercial port city dubbed New Egypt has indeed grown around the Pyramids.
     ring:
-      source: MWDA world profiles
+      source: DA:RW
       value: yes
     landmass:
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Forsair
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: North Nanturo
         capital:
-          source: House Kurita
+          source: HB:HK
           value: Neucason
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: South Nanturo
     satellite:
       - name: None (asteroid ring)
@@ -237,6 +237,12 @@ planet:
             - LA
       - date: '2360-01-01'
         population: 1958025578.0
+      - date: '2366-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '2370-01-01'
         population: 2207846954.0
       - date: '2380-01-01'
@@ -286,6 +292,18 @@ planet:
         population: 4807230859.0
       - date: '2570-01-01'
         population: 4885096156.0
+      - date: '2571-01-01'
+        # administration: LA | Federation of Skye | Kannon Shire
+        # administration: LA | Federation of Skye | Kannon Shire
+        # administration: LA | Federation of Skye | Kannon Shire
+        # administration: LA | Federation of Skye | Kannon Shire
+        # administration: LA | Federation of Skye | Kannon Shire
+        # administration: LA | Federation of Skye | Kannon Shire
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '2580-01-01'
         population: 4935860006.0
       - date: '2590-01-01'
@@ -327,6 +345,12 @@ planet:
       - date: '2740-01-01'
         population: 5018919347.0
       - date: '2750-01-01'
+        # administration: LA | Federation of Skye | Kannon Shire
+        # administration: LA | Federation of Skye | Kannon Shire
+        # administration: LA | Federation of Skye | Kannon Shire
+        # administration: LA | Federation of Skye | Kannon Shire
+        # administration: LA | Federation of Skye | Kannon Shire
+        # administration: LA | Federation of Skye | Kannon Shire
         faction:
           source: sucs
           value:
@@ -346,7 +370,25 @@ planet:
         population: 4879172539.0
       - date: '2820-01-01'
         population: 4852471820.0
+      - date: '2821-01-01'
+        # administration: DC | Dieron Military District | Kuzuu Prefecture
+        # administration: DC | Dieron Military District | Kuzuu Prefecture
+        # administration: DC | Dieron Military District | Kuzuu Prefecture
+        # administration: DC | Dieron Military District | Kuzuu Prefecture
+        # administration: DC | Dieron Military District | Kuzuu Prefecture
+        # administration: DC | Dieron Military District | Kuzuu Prefecture
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - DC
       - date: '2821-02-13'
+        # administration: DC | Dieron Military District | Kuzuu Prefecture
+        # administration: DC | Dieron Military District | Kuzuu Prefecture
+        # administration: DC | Dieron Military District | Kuzuu Prefecture
+        # administration: DC | Dieron Military District | Kuzuu Prefecture
+        # administration: DC | Dieron Military District | Kuzuu Prefecture
+        # administration: DC | Dieron Military District | Kuzuu Prefecture
         faction:
           source: canon
           value:
@@ -361,6 +403,18 @@ planet:
         population: 4133803565.0
       - date: '2860-01-01'
         population: 3988380819.0
+      - date: '2864-01-01'
+        # administration: LA | Federation of Skye | Kannon Shire
+        # administration: LA | Federation of Skye | Kannon Shire
+        # administration: LA | Federation of Skye | Kannon Shire
+        # administration: LA | Federation of Skye | Kannon Shire
+        # administration: LA | Federation of Skye | Kannon Shire
+        # administration: LA | Federation of Skye | Kannon Shire
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '2864-11-12'
         faction:
           source: canon
@@ -373,6 +427,12 @@ planet:
       - date: '2890-01-01'
         population: 3852521927.0
       - date: '2895-04-29'
+        # administration: DC | Dieron Military District | Vega Prefecture
+        # administration: DC | Dieron Military District | Vega Prefecture
+        # administration: DC | Dieron Military District | Vega Prefecture
+        # administration: DC | Dieron Military District | Vega Prefecture
+        # administration: DC | Dieron Military District | Vega Prefecture
+        # administration: DC | Dieron Military District | Vega Prefecture
         faction:
           source: canon
           value:
@@ -427,6 +487,12 @@ planet:
             - WOB
       - date: '3070-01-01'
         population: 625546445.0
+      - date: '3075-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - Stone
       - date: '3075-09-02'
         faction:
           source: canon
@@ -445,7 +511,25 @@ planet:
             - Stone
       - date: '3080-01-01'
         population: 633098223.0
+      - date: '3081-01-01'
+        # administration: ROS | Prefecture I | Region Capital
+        # administration: ROS | Prefecture I | Region Capital
+        # administration: ROS | Prefecture I | Region Capital
+        # administration: ROS | Prefecture I | Region Capital
+        # administration: ROS | Prefecture I | Region Capital
+        # administration: ROS | Prefecture I | Region Capital
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ROS
       - date: '3081-03-24'
+        # administration: ROS | Prefecture I | Region Capital
+        # administration: ROS | Prefecture I | Region Capital
+        # administration: ROS | Prefecture I | Region Capital
+        # administration: ROS | Prefecture I | Region Capital
+        # administration: ROS | Prefecture I | Region Capital
+        # administration: ROS | Prefecture I | Region Capital
         faction:
           source: canon
           value:
@@ -477,12 +561,30 @@ planet:
           source: canon
           value:
             - ROS
+      - date: '3135-01-01'
+        # administration: IND | Region Capital
+        # administration: IND | Region Capital
+        # administration: IND | Region Capital
+        # administration: IND | Region Capital
+        # administration: IND | Region Capital
+        # administration: IND | Region Capital
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3135-10-01'
         faction:
           source: canon
           value:
             - IND
       - date: '3135-11-12'
+        # administration: RD | Region 3 | Vega Protectorate
+        # administration: RD | Region 3 | Vega Protectorate
+        # administration: RD | Region 3 | Vega Protectorate
+        # administration: RD | Region 3 | Vega Protectorate
+        # administration: RD | Region 3 | Vega Protectorate
+        # administration: RD | Region 3 | Vega Protectorate
         faction:
           source: canon
           value:

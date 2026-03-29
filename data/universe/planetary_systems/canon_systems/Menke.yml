@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Menke
-sucsId: 1676
+sucsId: 1677
 xcood: 90.726
 ycood: -330.895
 spectralType:
@@ -80,28 +80,34 @@ planet:
     sysPos: 4
     icon: green17
     pressure:
-      source: 'Handbook: House Liao, pg. 79'
+      source: 'HB:HL'
       value: STANDARD
+      page: 79
     atmosphere:
-      source: 'Handbook: House Liao, pg. 79'
+      source: 'HB:HL'
       value: BREATHABLE
+      page: 79
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'Handbook: House Liao, pg. 79'
+      source: 'HB:HL'
       value: 1.13
+      page: 79
     diameter: 12408
     density: 6.399807132292
     dayLength: 19
     yearLength: 1.1
     temperature:
-      source: 'Handbook: House Liao, pg. 79'
+      source: 'HB:HL'
       value: 42
+      page: 79
     water:
-      source: 'Handbook: House Liao, pg. 79'
+      source: 'HB:HL'
       value: 74
+      page: 79
     lifeForm:
-      source: 'Handbook: House Liao, pg. 79'
+      source: 'HB:HL'
       value: PLANT
+      page: 79
     desc: |-
       As of 3025 Menke is the perpetual holding of the McCarron family and the planet serves as the home base of McCarron's Armored Cavalry. Menke is part of the Duchy of Mitchel in the Capellan Confederation. Menke is a sunny, tropical planet and boasts a large civilian population that serves as a recruitment pool for the Cavalry. Menke has extensive ‘Mech repair facilities and one of the greatest concentrations of trained techs in the Confederation. The planet's southern hemisphere hosts a jungle warfare training center. One or more of the Armored Cavalry regiments are on planet at any specific time making the planet an uninviting target.
 
@@ -113,21 +119,22 @@ planet:
       Metal Industries
     landmass:
       - name:
-          source: 'Objective Raids: Capellan Confederation'
+          source: 'OR'
           value: Menke Beta
       - name:
-          source: 'Objective Raids: Capellan Confederation'
+          source: 'OR'
           value: Menke Omega
       - name:
-          source: 'Objective Raids: Capellan Confederation'
+          source: 'OR'
           value: Menke Prime
         capital:
-          source: 'Objective Raids: Capellan Confederation'
+          source: 'OR'
           value: Archibald
     satellite:
       - name:
-          source: 'Handbook: House Liao, pg. 79'
+          source: 'HB:HL'
           value: Darbonne
+          page: 79
         size: medium
         icon: oddmoon1
     event:
@@ -161,6 +168,12 @@ planet:
       - date: '2360-01-01'
         population: 178989546.0
       - date: '2367-07-01'
+        # administration: CC | Sian Commonality | Region 11
+        # administration: CC | Sian Commonality | Region 11
+        # administration: CC | Sian Commonality | Region 11
+        # administration: CC | Sian Commonality | Region 11
+        # administration: CC | Sian Commonality | Region 11
+        # administration: CC | Sian Commonality | Region 11
         faction:
           source: canon
           value:

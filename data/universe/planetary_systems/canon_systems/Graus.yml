@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,15 +16,17 @@
 # affiliated with Microsoft.
 
 id: Graus
-sucsId: 995
+sucsId: 996
 xcood: -100.617
 ycood: 297.223
 spectralType:
-  source: 'Handbook: House Steiner, pg. 86'
+  source: 'HB:HS'
   value: G4V
+  page: 86
 primarySlot:
-  source: 'Handbook: House Steiner, pg. 86'
+  source: 'HB:HS'
   value: 1
+  page: 86
 event:
   - date: '2733-11-26'
     zenithCharge: yes
@@ -37,59 +39,73 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.63
     sysPos:
-      source: 'Handbook: House Steiner, pg. 86'
+      source: 'HB:HS'
       value: 1
+      page: 86
     icon: green9
     pressure:
-      source: 'Handbook: House Steiner, pg. 86'
+      source: 'HB:HS'
       value: STANDARD
+      page: 86
     atmosphere:
-      source: 'Handbook: House Steiner, pg. 86'
+      source: 'HB:HS'
       value: BREATHABLE
+      page: 86
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'Handbook: House Steiner, pg. 86'
+      source: 'HB:HS'
       value: 1.01
+      page: 86
     diameter: 11164
     density: 6.357815670597
     dayLength: 24
     yearLength: 1.1
     temperature:
-      source: 'Handbook: House Steiner, pg. 86'
+      source: 'HB:HS'
       value: 43
+      page: 86
     water:
-      source: 'Handbook: House Steiner, pg. 86'
+      source: 'HB:HS'
       value: 71
+      page: 86
     lifeForm:
-      source: 'Handbook: House Steiner, pg. 86'
+      source: 'HB:HS'
       value: MAMMAL
-    desc: Graus was settled for its beautiful landscapes and moderate mineral deposits.
-      Primarily an agricultural planet, Graus also boasts light industry focusing
-      on luxury items, including recreational vehicles and holovids. By the early
-      31st Century the planet embraced pacifism and rejected all major military presence
-      on the planet.
+      page: 86
+    desc: Graus was settled for its beautiful landscapes and moderate mineral deposits. Primarily an agricultural planet, Graus also boasts light industry focusing on luxury items, including recreational vehicles and holovids. By the early 31st Century the planet embraced pacifism and rejected all major military presence on the planet.
     ring:
-      source: 'Handbook: House Steiner, pg. 86'
+      source: 'HB:HS'
       value: yes
+      page: 86
     landmass:
       - name:
-          source: 'Handbook: House Steiner, pg. 86'
+          source: 'HB:HS'
           value: Albion
+          page: 86
         capital:
-          source: 'Handbook: House Steiner, pg. 86'
+          source: 'HB:HS'
           value: New Paris
+          page: 86
       - name:
-          source: 'Handbook: House Steiner, pg. 86'
+          source: 'HB:HS'
           value: Bromme
+          page: 86
       - name:
-          source: 'Handbook: House Steiner, pg. 86'
+          source: 'HB:HS'
           value: Gaulia
+          page: 86
     satellite:
       - name: dust ring
         size: medium
         icon: oddmoon1
     event:
       - date: '2698-09-21'
+        # administration: LA | Tamar Pact | Tamar Domains
+        # administration: LA | Tamar Pact | Tamar Domains
+        # administration: LA | Tamar Pact | Tamar Domains
+        # administration: LA | Tamar Pact | Tamar Domains
+        # administration: LA | Tamar Pact | Tamar Domains
+        # administration: LA | Tamar Pact | Tamar Domains
         faction:
           source: canon
           value:
@@ -175,8 +191,25 @@ planet:
       - date: '3030-01-01'
         population: 2809733453.0
       - date: '3040-01-01'
+        # administration: FC | Tamar March | Benfled Operational Area
+        # administration: FC | Tamar March | Benfled Operational Area
+        # administration: FC | Tamar March | Benfled Operational Area
+        # administration: FC | Tamar March | Benfled Operational Area
+        # administration: FC | Tamar March | Benfled Operational Area
+        # administration: FC | Tamar March | Benfled Operational Area
         population: 2838255555.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
+        # administration: FC | Tamar March | Benfled Operational Area
+        # administration: FC | Tamar March | Benfled Operational Area
+        # administration: FC | Tamar March | Benfled Operational Area
+        # administration: FC | Tamar March | Benfled Operational Area
+        # administration: FC | Tamar March | Benfled Operational Area
+        # administration: FC | Tamar March | Benfled Operational Area
         faction:
           source: canon
           value:
@@ -196,6 +229,12 @@ planet:
           source: canon
           value:
             - CJF
+      - date: '3057-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CSV
       - date: '3057-04-16'
         faction:
           source: canon
@@ -208,6 +247,18 @@ planet:
           source: canon
           value:
             - CJF
+      - date: '3067-01-01'
+        # administration: LA | Arc-Royal Theater
+        # administration: LA | Arc-Royal Theater
+        # administration: LA | Arc-Royal Theater
+        # administration: LA | Arc-Royal Theater
+        # administration: LA | Arc-Royal Theater
+        # administration: LA | Arc-Royal Theater
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '3067-12-02'
         faction:
           source: canon
@@ -221,6 +272,12 @@ planet:
           source: canon
           value:
             - LA
+      - date: '3068-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CJF
       - date: '3068-10-01'
         faction:
           source: canon
@@ -228,6 +285,18 @@ planet:
             - CJF
       - date: '3070-01-01'
         population: 2951429479.0
+      - date: '3075-01-01'
+        # administration: LA | Arc-Royal Theater
+        # administration: LA | Arc-Royal Theater
+        # administration: LA | Arc-Royal Theater
+        # administration: LA | Arc-Royal Theater
+        # administration: LA | Arc-Royal Theater
+        # administration: LA | Arc-Royal Theater
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '3080-01-01'
         population: 2993040086.0
       - date: '3080-07-03'
@@ -259,6 +328,12 @@ planet:
             - CJF
             - LA
       - date: '3080-12-03'
+        # administration: LA | Arc-Royal Theater
+        # administration: LA | Arc-Royal Theater
+        # administration: LA | Arc-Royal Theater
+        # administration: LA | Arc-Royal Theater
+        # administration: LA | Arc-Royal Theater
+        # administration: LA | Arc-Royal Theater
         faction:
           source: canon
           value:
@@ -273,6 +348,12 @@ planet:
         population: 3121424981.0
       - date: '3120-01-01'
         population: 3159739610.0
+      - date: '3130-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CJF
       - date: '3130-05-20'
         faction:
           source: canon

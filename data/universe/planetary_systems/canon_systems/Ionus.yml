@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Ionus
-sucsId: 1205
+sucsId: 1206
 xcood: -183.568
 ycood: -152.784
 spectralType:
@@ -90,16 +90,7 @@ planet:
     lifeForm:
       source: canon
       value: NONE
-    desc: Ionus might be a comfortable planet to live on if it weren’t for the thin,
-      though breathable, atmosphere. Despite a comfortable climate, the thin atmosphere
-      makes agriculture difficult and as a result the population of Ionus requires
-      imported food to sustain itself. The planet was originally settled to take advantage
-      of its abundant natural resources and over time, industry grew on the planet,
-      including the Illium Naval Yard, which after the Word of Blake Jihad, was the
-      only intact shipyard capable of creating WarShips, outside of the Republic of
-      the Sphere or the Clans. However, due to the collapse of the Free Worlds League,
-      Illium was encountering issues procuring the necessary raw materials for production
-      and instead focused on refitting existing jumpships.
+    desc: Ionus might be a comfortable planet to live on if it weren’t for the thin, though breathable, atmosphere. Despite a comfortable climate, the thin atmosphere makes agriculture difficult and as a result the population of Ionus requires imported food to sustain itself. The planet was originally settled to take advantage of its abundant natural resources and over time, industry grew on the planet, including the Illium Naval Yard, which after the Word of Blake Jihad, was the only intact shipyard capable of creating WarShips, outside of the Republic of the Sphere or the Clans. However, due to the collapse of the Free Worlds League, Illium was encountering issues procuring the necessary raw materials for production and instead focused on refitting existing jumpships.
     landmass:
       - name:
           source: canon
@@ -116,6 +107,12 @@ planet:
         icon: rock16
     event:
       - date: '2431-07-18'
+        # administration: FWL | Marik Commonwealth
+        # administration: FWL | Marik Commonwealth
+        # administration: FWL | Marik Commonwealth
+        # administration: FWL | Marik Commonwealth
+        # administration: FWL | Marik Commonwealth
+        # administration: FWL | Marik Commonwealth
         faction:
           source: canon
           value:
@@ -271,6 +268,12 @@ planet:
         population: 700415934.0
       - date: '3070-01-01'
         population: 707455232.0
+      - date: '3079-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - MCM
       - date: '3079-01-07'
         faction:
           source: canon
@@ -278,6 +281,18 @@ planet:
             - MSC
       - date: '3080-01-01'
         population: 710717022.0
+      - date: '3081-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - MCM
+      - date: '3085-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - MSC
       - date: '3090-01-01'
         population: 712567291.0
       - date: '3097-01-01'
@@ -296,6 +311,12 @@ planet:
           value: X
       - date: '3140-01-01'
         population: 721602440.0
+      - date: '3145-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FWL
       - date: '3145-12-08'
         faction:
           source: canon

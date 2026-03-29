@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: Kansu
-sucsId: 1292
+sucsId: 1293
 xcood: 67.719
 ycood: -59.756
 spectralType:
   source: canon
   value: F9V
 primarySlot:
-  source: MWDA world profiles
+  source: DA:RW
   value: 4
 event:
   - date: '2442-04-08'
@@ -96,31 +96,31 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 1.76
     sysPos:
-      source: MWDA world profiles
+      source: DA:RW
       value: 4
     icon: green38
     pressure:
-      source: MWDA world profiles
+      source: DA:RW
       value: HIGH
     atmosphere:
-      source: MWDA world profiles
+      source: DA:RW
       value: TOXIC_POISON
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: MWDA world profiles
+      source: DA:RW
       value: 1.0
     diameter: 12178
     density: 5.770853077648
     dayLength: 18
     yearLength: 2.6
     temperature:
-      source: MWDA world profiles
+      source: DA:RW
       value: 135
     water:
-      source: MWDA world profiles
+      source: DA:RW
       value: 46
     lifeForm:
-      source: MWDA world profiles
+      source: DA:RW
       value: NONE
     desc: |-
       Note: Planetary data is as of 3130, climate and temperature were arctic prior to 3090.
@@ -134,20 +134,20 @@ planet:
       By 3091, in an extreme example of a runaway greenhouse effect, the average surface temperature at the equator exceeded the 100 degrees Celsius. The "Seas of Fire", where the freshly released methane burns at the ocean's surface, remains a poignant reminder of the horrors of the Jihad. Today, the remaining population lives underground, while a small portion attempts to colonize Sheng Li to begin life anew.
     landmass:
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Fetid
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Kantuene
         capital:
-          source: MWDA world profiles
+          source: DA:RW
           value: Raijianstad
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Matawan
     satellite:
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Sheng Li
         size: medium
         icon: oddmoon3
@@ -186,6 +186,12 @@ planet:
       - date: '2360-01-01'
         population: 240919550.0
       - date: '2367-07-01'
+        # administration: CC | Tikonov Commonality | Region 4
+        # administration: CC | Tikonov Commonality | Region 4
+        # administration: CC | Tikonov Commonality | Region 4
+        # administration: CC | Tikonov Commonality | Region 4
+        # administration: CC | Tikonov Commonality | Region 4
+        # administration: CC | Tikonov Commonality | Region 4
         faction:
           source: canon
           value:
@@ -336,6 +342,18 @@ planet:
         population: 1291351524.0
       - date: '3027-01-01'
         socioIndustrial: C-B-C-B-B
+      - date: '3030-01-01'
+        # administration: LA | Sarna March | Tikonov Operational Area
+        # administration: LA | Sarna March | Tikonov Operational Area
+        # administration: LA | Sarna March | Tikonov Operational Area
+        # administration: LA | Sarna March | Tikonov Operational Area
+        # administration: LA | Sarna March | Tikonov Operational Area
+        # administration: LA | Sarna March | Tikonov Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '3030-10-28'
         faction:
           source: canon
@@ -343,8 +361,25 @@ planet:
             - FS
         population: 1287739195.0
       - date: '3040-01-01'
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
         population: 1297563297.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
         faction:
           source: canon
           value:
@@ -355,7 +390,25 @@ planet:
         population: 1306939467.0
       - date: '3060-01-01'
         population: 1316383388.0
+      - date: '3067-01-01'
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FS
       - date: '3067-04-20'
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
         faction:
           source: canon
           value:
@@ -373,6 +426,12 @@ planet:
             - WOB
       - date: '3070-01-01'
         population: 1327487581.0
+      - date: '3079-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - Stone
       - date: '3079-03-10'
         faction:
           source: canon
@@ -386,7 +445,25 @@ planet:
             - Stone
       - date: '3080-01-01'
         population: 1339221023.0
+      - date: '3081-01-01'
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ROS
       - date: '3081-06-07'
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
         faction:
           source: canon
           value:
@@ -403,6 +480,12 @@ planet:
           value:
             - CC
       - date: '3113-05-01'
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
         faction:
           source: canon
           value:
@@ -415,6 +498,11 @@ planet:
         hpg: X
       - date: '3135-01-01'
         socioIndustrial: B-A-C-A-A
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3135-10-01'
         faction:
           source: canon
@@ -422,7 +510,25 @@ planet:
             - IND
       - date: '3140-01-01'
         population: 1363545263.0
+      - date: '3145-01-01'
+        # administration: CC | Tikonov Commonality | Region 7
+        # administration: CC | Tikonov Commonality | Region 7
+        # administration: CC | Tikonov Commonality | Region 7
+        # administration: CC | Tikonov Commonality | Region 7
+        # administration: CC | Tikonov Commonality | Region 7
+        # administration: CC | Tikonov Commonality | Region 7
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CC
       - date: '3145-10-31'
+        # administration: CC | Tikonov Commonality | Region 11
+        # administration: CC | Tikonov Commonality | Region 11
+        # administration: CC | Tikonov Commonality | Region 11
+        # administration: CC | Tikonov Commonality | Region 11
+        # administration: CC | Tikonov Commonality | Region 11
+        # administration: CC | Tikonov Commonality | Region 11
         faction:
           source: canon
           value:

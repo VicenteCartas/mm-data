@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -20,10 +20,10 @@ sucsId: 325
 xcood: 71.853
 ycood: 36.654
 spectralType:
-  source: MWDA world profiles
+  source: DA:RW
   value: A0VI
 primarySlot:
-  source: MWDA world profiles
+  source: DA:RW
   value: 1
 planet:
   - name:
@@ -32,72 +32,54 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 15.08
     sysPos:
-      source: MWDA world profiles
+      source: DA:RW
       value: 1
     icon: green12
     pressure:
-      source: MWDA world profiles
+      source: DA:RW
       value: STANDARD
     atmosphere:
-      source: MWDA world profiles
+      source: DA:RW
       value: TAINTED_POISON
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: MWDA world profiles
+      source: DA:RW
       value: 0.84
     diameter: 13636
     density: 4.329089850215
     dayLength: 21
     yearLength: 58.6
     temperature:
-      source: MWDA world profiles
+      source: DA:RW
       value: 37
     water:
-      source: MWDA world profiles
+      source: DA:RW
       value: 52
     lifeForm:
-      source: MWDA world profiles
+      source: DA:RW
       value: AMPHIBIAN
-    desc: A world of modest mineral or agricultural wealth, but rich in raw hydrocarbons,
-      Biham became a haven for industrial magnates who still saw a future in petrochemical
-      fuels. Coal, oil, and natural gas refineries formed the central businesses,
-      around which settlements sprang up, even on the polar continent of Borellas.
-      The runaway mining, drilling, and petrochemical processing rapidly devastated
-      what had proven to be an extremely fragile ecosystem. By the time the planetary
-      government finally stepped in to regulate the industries, the damage was so
-      extreme travelers were urged to stay clear of the planet for health considerations,
-      and all material shipped off-world had to undergo decontamination at special
-      orbital outposts. Only Yoshimatsu Chemicals, one of the Draconis Combine‘s greatest
-      chemical corporations, with its track record for rigorous safety procedures
-      and strict clean-air guidelines, met the harsh restrictions suddenly imposed
-      by the planetary government. Yoshimatsu today maintains the most extensive chemical
-      facilities in the system, including processing centers on both moons, and even
-      a space-fuel refinery over Tiberius, the smaller of the Biham system‘s gas giants.
-      Apart from Borellas, Biham also has two temperate continents, Hoshina and Quang-tze.
-      Siang, the planetary capital and home to Yoshimatsu Chemical‘s corporate headquarters—as
-      well as a sprawling plastics and polymers plant—is located on the north shore
-      of Hoshina.
+    desc: A world of modest mineral or agricultural wealth, but rich in raw hydrocarbons, Biham became a haven for industrial magnates who still saw a future in petrochemical fuels. Coal, oil, and natural gas refineries formed the central businesses, around which settlements sprang up, even on the polar continent of Borellas. The runaway mining, drilling, and petrochemical processing rapidly devastated what had proven to be an extremely fragile ecosystem. By the time the planetary government finally stepped in to regulate the industries, the damage was so extreme travelers were urged to stay clear of the planet for health considerations, and all material shipped off-world had to undergo decontamination at special orbital outposts. Only Yoshimatsu Chemicals, one of the Draconis Combine‘s greatest chemical corporations, with its track record for rigorous safety procedures and strict clean-air guidelines, met the harsh restrictions suddenly imposed by the planetary government. Yoshimatsu today maintains the most extensive chemical facilities in the system, including processing centers on both moons, and even a space-fuel refinery over Tiberius, the smaller of the Biham system‘s gas giants. Apart from Borellas, Biham also has two temperate continents, Hoshina and Quang-tze. Siang, the planetary capital and home to Yoshimatsu Chemical‘s corporate headquarters—as well as a sprawling plastics and polymers plant—is located on the north shore of Hoshina.
     landmass:
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Borellas
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Hoshina
         capital:
-          source: MWDA world profiles
+          source: DA:RW
           value: Siang
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Quang-tze
     satellite:
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Kyoko
         size: medium
         icon: rock8
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Valus
         size: medium
         icon: rock7
@@ -124,6 +106,12 @@ planet:
             - DC
       - date: '2340-01-01'
         population: 7842004.0
+      - date: '2341-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '2350-01-01'
         population: 17083195.0
       - date: '2360-01-01'
@@ -174,6 +162,18 @@ planet:
         population: 1420049926.0
       - date: '2570-01-01'
         population: 1467898874.0
+      - date: '2571-01-01'
+        # administration: DC | Benjamin Military District | Ashio Prefecture
+        # administration: DC | Benjamin Military District | Ashio Prefecture
+        # administration: DC | Benjamin Military District | Ashio Prefecture
+        # administration: DC | Benjamin Military District | Ashio Prefecture
+        # administration: DC | Benjamin Military District | Ashio Prefecture
+        # administration: DC | Benjamin Military District | Ashio Prefecture
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - DC
       - date: '2580-01-01'
         population: 1510726401.0
       - date: '2590-01-01'
@@ -286,7 +286,25 @@ planet:
         population: 1181977874.0
       - date: '3080-01-01'
         population: 1186003439.0
+      - date: '3081-01-01'
+        # administration: ROS | Prefecture III
+        # administration: ROS | Prefecture III
+        # administration: ROS | Prefecture III
+        # administration: ROS | Prefecture III
+        # administration: ROS | Prefecture III
+        # administration: ROS | Prefecture III
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ROS
       - date: '3081-08-15'
+        # administration: ROS | Prefecture III
+        # administration: ROS | Prefecture III
+        # administration: ROS | Prefecture III
+        # administration: ROS | Prefecture III
+        # administration: ROS | Prefecture III
+        # administration: ROS | Prefecture III
         faction:
           source: canon
           value:
@@ -304,7 +322,25 @@ planet:
         population: 1222856114.0
       - date: '3132-08-07'
         hpg: X
+      - date: '3135-01-01'
+        # administration: DC | Benjamin Military District | Algedi Prefecture
+        # administration: DC | Benjamin Military District | Algedi Prefecture
+        # administration: DC | Benjamin Military District | Algedi Prefecture
+        # administration: DC | Benjamin Military District | Algedi Prefecture
+        # administration: DC | Benjamin Military District | Algedi Prefecture
+        # administration: DC | Benjamin Military District | Algedi Prefecture
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - DC
       - date: '3135-09-11'
+        # administration: DC | Dieron Military District | Al Na'ir Prefecture
+        # administration: DC | Dieron Military District | Al Na'ir Prefecture
+        # administration: DC | Dieron Military District | Al Na'ir Prefecture
+        # administration: DC | Dieron Military District | Al Na'ir Prefecture
+        # administration: DC | Dieron Military District | Al Na'ir Prefecture
+        # administration: DC | Dieron Military District | Al Na'ir Prefecture
         faction:
           source: canon
           value:

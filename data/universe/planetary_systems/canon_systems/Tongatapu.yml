@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Tongatapu
-sucsId: 2564
+sucsId: 2565
 xcood: -171.248
 ycood: -141.356
 spectralType: M9V
@@ -61,6 +61,12 @@ planet:
       - date: '2270-01-01'
         population: 1570947.0
       - date: '2271-06-01'
+        # administration: FWL | Marik Commonwealth
+        # administration: FWL | Marik Commonwealth
+        # administration: FWL | Marik Commonwealth
+        # administration: FWL | Marik Commonwealth
+        # administration: FWL | Marik Commonwealth
+        # administration: FWL | Marik Commonwealth
         faction:
           source: canon
           value:
@@ -241,6 +247,12 @@ planet:
         population: 822287683.0
       - date: '3070-01-01'
         population: 829389853.0
+      - date: '3079-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - MCM
       - date: '3079-01-05'
         faction:
           source: canon
@@ -248,6 +260,18 @@ planet:
             - MSC
       - date: '3080-01-01'
         population: 834381151.0
+      - date: '3081-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - MCM
+      - date: '3085-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - MSC
       - date: '3090-01-01'
         population: 843441304.0
       - date: '3097-01-01'
@@ -264,12 +288,24 @@ planet:
         hpg: X
       - date: '3140-01-01'
         population: 908404999.0
+      - date: '3145-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CWE
       - date: '3145-02-07'
         faction:
           source: canon
           value:
             - CWE
         population: 914054606.0
+      - date: '3152-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FWL
       - date: '3152-06-01'
         faction:
           source: canon

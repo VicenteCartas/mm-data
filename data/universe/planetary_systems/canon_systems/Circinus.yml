@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -20,11 +20,13 @@ sucsId: 561
 xcood: -388.555
 ycood: -66.824
 spectralType:
-  source: Masters and Minions, pg. 237
+  source: M&M
   value: G5IV
+  page: 237
 primarySlot:
-  source: Masters and Minions, pg. 237
+  source: M&M
   value: 4
+  page: 237
 event:
   - date: '3081-02-16'
     nadirCharge: no
@@ -73,8 +75,7 @@ planet:
     icon: rock2
     pressure: TRACE
     atmosphere: TOXIC_POISON
-    composition: Nitrogen and Carbon Dioxide, plus trace amounts of Water Vapor and
-      Argon
+    composition: Nitrogen and Carbon Dioxide, plus trace amounts of Water Vapor and Argon
     gravity: 0.58
     diameter: 8500
     density: 4.7795
@@ -89,52 +90,66 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 1.44
     sysPos:
-      source: Masters and Minions, pg. 237
+      source: M&M
       value: 4
+      page: 237
     icon: green12
     pressure:
-      source: Masters and Minions, pg. 237
+      source: M&M
       value: STANDARD
+      page: 237
     atmosphere:
-      source: Masters and Minions, pg. 237
+      source: M&M
       value: BREATHABLE
+      page: 237
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: Masters and Minions, pg. 237
+      source: M&M
       value: 0.98
+      page: 237
     diameter: 12354
     density: 5.574879955927
     dayLength: 21
     yearLength: 2.0
     temperature:
-      source: Masters and Minions, pg. 237
+      source: M&M
       value: 45
+      page: 237
     water:
-      source: Masters and Minions, pg. 237
+      source: M&M
       value: 50
+      page: 237
     lifeForm:
-      source: Masters and Minions, pg. 237
+      source: M&M
       value: REPTILE
-    desc: Circinus is an arid world that contains vast deposits of raw minerals and
-      gemstones. Rumors persist of hidden training facilities and supply caches of
-      stolen Lyran and League goods in the remote northern deserts.
+      page: 237
+    desc: Circinus is an arid world that contains vast deposits of raw minerals and gemstones. Rumors persist of hidden training facilities and supply caches of stolen Lyran and League goods in the remote northern deserts.
     landmass:
       - capital:
-          source: Masters and Minions, pg. 237
+          source: M&M
           value: Zachariah
+          page: 237
     satellite:
       - name:
-          source: Masters and Minions, pg. 237
+          source: M&M
           value: Bronco
+          page: 237
         size: medium
         icon: oddmoon2
       - name:
-          source: Masters and Minions, pg. 237
+          source: M&M
           value: Raxx
+          page: 237
         size: large
         icon: rock12
     event:
       - date: '2677-08-18'
+        # administration: RWR | Erdvynn Province
+        # administration: RWR | Erdvynn Province
+        # administration: RWR | Erdvynn Province
+        # administration: RWR | Erdvynn Province
+        # administration: RWR | Erdvynn Province
+        # administration: RWR | Erdvynn Province
         faction:
           source: canon
           value:
@@ -179,6 +194,12 @@ planet:
       - date: '2780-01-01'
         population: 41774383.0
       - date: '2785-04-24'
+        # administration: CIR | National Capital
+        # administration: CIR | National Capital
+        # administration: CIR | National Capital
+        # administration: CIR | National Capital
+        # administration: CIR | National Capital
+        # administration: CIR | National Capital
         faction:
           source: canon
           value:
@@ -236,6 +257,12 @@ planet:
       - date: '3020-01-01'
         population: 41271.0
       - date: '3025-08-29'
+        # administration: CIR | National Capital
+        # administration: CIR | National Capital
+        # administration: CIR | National Capital
+        # administration: CIR | National Capital
+        # administration: CIR | National Capital
+        # administration: CIR | National Capital
         faction:
           source: canon
           value:
@@ -262,6 +289,12 @@ planet:
           value: 23070000.0
       - date: '3080-01-01'
         population: 8759.0
+      - date: '3081-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ABN
       - date: '3081-05-01'
         faction:
           source: canon

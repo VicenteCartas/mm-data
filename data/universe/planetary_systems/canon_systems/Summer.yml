@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,15 +16,17 @@
 # affiliated with Microsoft.
 
 id: Summer
-sucsId: 2433
+sucsId: 2434
 xcood: -44.468
 ycood: 26.058
 spectralType:
-  source: 'Handbook: House Steiner, pg. 90'
+  source: 'HB:HS'
   value: M4V
+  page: 90
 primarySlot:
-  source: 'Handbook: House Steiner, pg. 90'
+  source: 'HB:HS'
   value: 1
+  page: 90
 event:
   - date: '2400-02-04'
     zenithCharge: yes
@@ -39,61 +41,62 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.12
     sysPos:
-      source: 'Handbook: House Steiner, pg. 90'
+      source: 'HB:HS'
       value: 1
+      page: 90
     icon: wet17
     pressure:
-      source: 'Handbook: House Steiner, pg. 90'
+      source: 'HB:HS'
       value: STANDARD
+      page: 90
     atmosphere:
-      source: 'Handbook: House Steiner, pg. 90'
+      source: 'HB:HS'
       value: BREATHABLE
+      page: 90
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'Handbook: House Steiner, pg. 90'
+      source: 'HB:HS'
       value: 1.03
+      page: 90
     diameter: 15455
     density: 4.68359018552
     dayLength: 22
     yearLength: 0.5
     temperature:
-      source: 'Handbook: House Steiner, pg. 90'
+      source: 'HB:HS'
       value: 42
+      page: 90
     water:
-      source: 'Handbook: House Steiner, pg. 90'
+      source: 'HB:HS'
       value: 77
+      page: 90
     lifeForm:
-      source: 'Handbook: House Steiner, pg. 90'
+      source: 'HB:HS'
       value: PLANT
-    desc: Summer is a world of rocky hills and valleys cloaked in shadows, mostly
-      barren except for swaths of purplish scrub-grass.  During the summer months
-      the air is replete with the unusual odors from the blooming native plants. Despite
-      its weak sun, Summer is a warm world, due to its thinning ozone layer. Fuel
-      production is the main industry of Summer. The world is rich in crude oil and
-      radioactive metals.  Summer is not an agriculturally sound world. The soil is
-      not fertile enough to grow enough crops to support the planet’s population.
-      Summer must rely on trade with neighboring worlds, trading fuel for food. A
-      collection of commercial refineries on the polar continent of Aberdale are by
-      far the largest producers on the planet. Deposits of germanium are mined in
-      the Balise Mountains on the continent of Wessler. The continent of Lestrade
-      holds the capital city of Curitiba.
+      page: 90
+    desc: Summer is a world of rocky hills and valleys cloaked in shadows, mostly barren except for swaths of purplish scrub-grass.  During the summer months the air is replete with the unusual odors from the blooming native plants. Despite its weak sun, Summer is a warm world, due to its thinning ozone layer. Fuel production is the main industry of Summer. The world is rich in crude oil and radioactive metals.  Summer is not an agriculturally sound world. The soil is not fertile enough to grow enough crops to support the planet’s population. Summer must rely on trade with neighboring worlds, trading fuel for food. A collection of commercial refineries on the polar continent of Aberdale are by far the largest producers on the planet. Deposits of germanium are mined in the Balise Mountains on the continent of Wessler. The continent of Lestrade holds the capital city of Curitiba.
     landmass:
       - name:
-          source: 'Handbook: House Steiner, pg. 90'
+          source: 'HB:HS'
           value: Aberdale
+          page: 90
       - name:
-          source: 'Handbook: House Steiner, pg. 90'
+          source: 'HB:HS'
           value: Lestrade
+          page: 90
         capital:
-          source: 'Handbook: House Steiner, pg. 90'
+          source: 'HB:HS'
           value: Curitiba
+          page: 90
       - name:
-          source: 'Handbook: House Steiner, pg. 90'
+          source: 'HB:HS'
           value: Wessler
+          page: 90
     satellite:
       - name:
-          source: 'Handbook: House Steiner, pg. 90'
+          source: 'HB:HS'
           value: Niflheim
+          page: 90
         size: medium
         icon: oddmoon2
     event:
@@ -119,6 +122,12 @@ planet:
       - date: '2310-01-01'
         population: 49859292.0
       - date: '2320-07-11'
+        # administration: TH | Tyrfing Province
+        # administration: TH | Tyrfing Province
+        # administration: TH | Tyrfing Province
+        # administration: TH | Tyrfing Province
+        # administration: TH | Tyrfing Province
+        # administration: TH | Tyrfing Province
         faction:
           source: canon
           value:
@@ -224,6 +233,18 @@ planet:
         population: 2785353565.0
       - date: '2760-01-01'
         population: 2811893047.0
+      - date: '2767-01-01'
+        # administration: AE | Tyrfing Province
+        # administration: AE | Tyrfing Province
+        # administration: AE | Tyrfing Province
+        # administration: AE | Tyrfing Province
+        # administration: AE | Tyrfing Province
+        # administration: AE | Tyrfing Province
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - AE
       - date: '2767-01-27'
         faction:
           source: canon
@@ -232,13 +253,37 @@ planet:
       - date: '2770-01-01'
         population: 2822567086.0
       - date: '2779-06-29'
+        # administration: TH | Tyrfing Province
+        # administration: TH | Tyrfing Province
+        # administration: TH | Tyrfing Province
+        # administration: TH | Tyrfing Province
+        # administration: TH | Tyrfing Province
+        # administration: TH | Tyrfing Province
         faction:
           source: canon
           value:
             - TH
       - date: '2780-01-01'
         population: 2824520747.0
+      - date: '2786-01-01'
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '2786-09-27'
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
         faction:
           source: canon
           value:
@@ -298,8 +343,25 @@ planet:
       - date: '3030-01-01'
         population: 2438779739.0
       - date: '3040-01-01'
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
         population: 2473657457.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
         faction:
           source: canon
           value:
@@ -310,7 +372,25 @@ planet:
           value: B-B-A-B-F
       - date: '3050-01-01'
         population: 2508281374.0
+      - date: '3057-01-01'
+        # administration: LA | Skye March | Alcor Operational Area
+        # administration: LA | Skye March | Alcor Operational Area
+        # administration: LA | Skye March | Alcor Operational Area
+        # administration: LA | Skye March | Alcor Operational Area
+        # administration: LA | Skye March | Alcor Operational Area
+        # administration: LA | Skye March | Alcor Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '3057-09-18'
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
         faction:
           source: canon
           value:
@@ -321,6 +401,12 @@ planet:
         population:
           source: canon
           value: 2561000000.0
+      - date: '3068-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FWL
       - date: '3068-09-01'
         faction:
           source: canon
@@ -344,9 +430,33 @@ planet:
           source: sucs
           value:
             - WOB
+      - date: '3079-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - Stone
       - date: '3080-01-01'
         population: 2603867415.0
+      - date: '3081-01-01'
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ROS
       - date: '3081-10-31'
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
         faction:
           source: canon
           value:
@@ -367,6 +477,12 @@ planet:
         hpg:
           source: canon
           value: X
+      - date: '3135-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CJF
       - date: '3135-09-24'
         faction:
           source: canon
@@ -383,9 +499,10 @@ planet:
             - ROS
       - date: '3151-01-01'
         faction:
-          source: sucs
+          source: SUCS
+          version: 2026.03.02
           value:
-            - ROS
+            - IND
       - date: '3152-06-01'
         faction:
           source: sucs

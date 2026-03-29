@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -20,10 +20,10 @@ sucsId: 198
 xcood: 17.569
 ycood: 30.974
 spectralType:
-  source: MWDA world profiles
+  source: DA:RW
   value: F8IV
 primarySlot:
-  source: MWDA world profiles
+  source: DA:RW
   value: 1
 event:
   - date: '2356-12-12'
@@ -39,62 +39,33 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 3.36
     sysPos:
-      source: MWDA world profiles
+      source: DA:RW
       value: 1
     icon: wet12
     pressure:
-      source: MWDA world profiles
+      source: DA:RW
       value: HIGH
     atmosphere:
-      source: MWDA world profiles
+      source: DA:RW
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: MWDA world profiles
+      source: DA:RW
       value: 1.04
     diameter: 11904
     density: 6.139800343548
     dayLength: 17
     yearLength: 6.3
     temperature:
-      source: MWDA world profiles
+      source: DA:RW
       value: 40
     water:
-      source: MWDA world profiles
+      source: DA:RW
       value: 88
     lifeForm:
-      source: MWDA world profiles
+      source: DA:RW
       value: BIRD
-    desc: 3130 - A warm world, with an oppressive atmosphere and active volcanoes
-      in all four of its great island chains, Athenry resembles prehistoric Terra
-      in many ways. Tropical foliage and steep, rocky mountains dominate most of the
-      four island chains that make up the planet‘s landmass. Too close to its sun
-      for polar ice caps to form, the planet‘s most habitable regions for the early
-      Terran colonists were the highlands of the large islands in the northern and
-      southern latitudes, where the air is thinner and the heat more bearable. Frequent
-      rains keep the lowlands of Athenry lush, giving rise to exotic flora and thousands
-      of interesting animal species. Many of the planet‘s native life forms, scientists
-      learned, held great medicinal potential, leading to the founding of the Athenry
-      Institute of Medicine on the primary northern island of Golas, in the Larsen
-      Chain. The AIM was destroyed by a tactical nuke during the First Succession
-      War, however, leaving only a radioactive hulk where the facilities once stood.
-      In recent years, after the Blakist Jihad and the influx of new inhabitants from
-      Devlin Stone‘s relocation plan, ancient ruins were uncovered in the thick jungles
-      of the southern Zubeckis Chain, particularly on the secondary island of Vasquez.
-      Studies of these ruins revealed that they are the remains of colonies established
-      almost a full century before the first settlers were thought to have made planetfall
-      on Athenry. Though no one knows what fate befell these colonists, the so-called
-      Zubeckis ruins, which exhibit architectural styles and techniques common to
-      Southeast Asian cultures of the 22nd century, have become a tourist attraction
-      and an archaeological curiosity, drawing millions of visitors each year. The
-      apparent capital of these ruined colonies has been dubbed ―City of the Lost,
-      and parts of the site were recently opened to the public. Athenry‘s capital
-      city of New Senna is perched in the rocky mountains of Lisbon, the primary mass
-      of the southern polar Espalar Chain. Though cities dot much of the Espalar,
-      Zubeckis and Larsen Chains, only a few towns have been established on the mostly
-      equatorial Wandessa Chain, largely due to the extreme temperatures and humidity
-      of that region. Largest among these settlements is the seaport city of Ricobar,
-      which serves as a port of call for the planet‘s ocean-going trade.
+    desc: 3130 - A warm world, with an oppressive atmosphere and active volcanoes in all four of its great island chains, Athenry resembles prehistoric Terra in many ways. Tropical foliage and steep, rocky mountains dominate most of the four island chains that make up the planet‘s landmass. Too close to its sun for polar ice caps to form, the planet‘s most habitable regions for the early Terran colonists were the highlands of the large islands in the northern and southern latitudes, where the air is thinner and the heat more bearable. Frequent rains keep the lowlands of Athenry lush, giving rise to exotic flora and thousands of interesting animal species. Many of the planet‘s native life forms, scientists learned, held great medicinal potential, leading to the founding of the Athenry Institute of Medicine on the primary northern island of Golas, in the Larsen Chain. The AIM was destroyed by a tactical nuke during the First Succession War, however, leaving only a radioactive hulk where the facilities once stood. In recent years, after the Blakist Jihad and the influx of new inhabitants from Devlin Stone‘s relocation plan, ancient ruins were uncovered in the thick jungles of the southern Zubeckis Chain, particularly on the secondary island of Vasquez. Studies of these ruins revealed that they are the remains of colonies established almost a full century before the first settlers were thought to have made planetfall on Athenry. Though no one knows what fate befell these colonists, the so-called Zubeckis ruins, which exhibit architectural styles and techniques common to Southeast Asian cultures of the 22nd century, have become a tourist attraction and an archaeological curiosity, drawing millions of visitors each year. The apparent capital of these ruined colonies has been dubbed ―City of the Lost, and parts of the site were recently opened to the public. Athenry‘s capital city of New Senna is perched in the rocky mountains of Lisbon, the primary mass of the southern polar Espalar Chain. Though cities dot much of the Espalar, Zubeckis and Larsen Chains, only a few towns have been established on the mostly equatorial Wandessa Chain, largely due to the extreme temperatures and humidity of that region. Largest among these settlements is the seaport city of Ricobar, which serves as a port of call for the planet‘s ocean-going trade.
     landmass:
       - name:
           source: canon
@@ -106,7 +77,7 @@ planet:
           source: canon
           value: Lisbon Island Chain
         capital:
-          source: MWDA world profiles
+          source: DA:RW
           value: New Senna
       - name:
           source: canon
@@ -116,22 +87,22 @@ planet:
           value: Zubeckis Island Chain
     satellite:
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Batha
         size: medium
         icon: rock2
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Illusa
         size: large
         icon: rock14
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Kylos
         size: medium
         icon: oddmoon2
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Zule
         size: large
         icon: rock10
@@ -166,6 +137,12 @@ planet:
       - date: '2310-01-01'
         population: 116658458.0
       - date: '2320-03-17'
+        # administration: TH | Lone Star Province
+        # administration: TH | Lone Star Province
+        # administration: TH | Lone Star Province
+        # administration: TH | Lone Star Province
+        # administration: TH | Lone Star Province
+        # administration: TH | Lone Star Province
         faction:
           source: canon
           value:
@@ -269,6 +246,18 @@ planet:
         population: 1830318079.0
       - date: '2760-01-01'
         population: 1815037470.0
+      - date: '2767-01-01'
+        # administration: AE | Lone Star Province
+        # administration: AE | Lone Star Province
+        # administration: AE | Lone Star Province
+        # administration: AE | Lone Star Province
+        # administration: AE | Lone Star Province
+        # administration: AE | Lone Star Province
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - AE
       - date: '2767-11-07'
         faction:
           source: canon
@@ -277,6 +266,12 @@ planet:
       - date: '2770-01-01'
         population: 1800707254.0
       - date: '2779-07-28'
+        # administration: TH | Lone Star Province
+        # administration: TH | Lone Star Province
+        # administration: TH | Lone Star Province
+        # administration: TH | Lone Star Province
+        # administration: TH | Lone Star Province
+        # administration: TH | Lone Star Province
         faction:
           source: canon
           value:
@@ -284,6 +279,12 @@ planet:
       - date: '2780-01-01'
         population: 1800618035.0
       - date: '2790-11-13'
+        # administration: DC | Dieron Military District | Lone Star Prefecture
+        # administration: DC | Dieron Military District | Lone Star Prefecture
+        # administration: DC | Dieron Military District | Lone Star Prefecture
+        # administration: DC | Dieron Military District | Lone Star Prefecture
+        # administration: DC | Dieron Military District | Lone Star Prefecture
+        # administration: DC | Dieron Military District | Lone Star Prefecture
         faction:
           source: canon
           value:
@@ -371,7 +372,25 @@ planet:
             - Stone
       - date: '3080-01-01'
         population: 1723833518.0
+      - date: '3081-01-01'
+        # administration: ROS | Prefecture II
+        # administration: ROS | Prefecture II
+        # administration: ROS | Prefecture II
+        # administration: ROS | Prefecture II
+        # administration: ROS | Prefecture II
+        # administration: ROS | Prefecture II
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ROS
       - date: '3081-03-05'
+        # administration: ROS | Prefecture II
+        # administration: ROS | Prefecture II
+        # administration: ROS | Prefecture II
+        # administration: ROS | Prefecture II
+        # administration: ROS | Prefecture II
+        # administration: ROS | Prefecture II
         faction:
           source: canon
           value:
@@ -390,6 +409,12 @@ planet:
         population: 1831161748.0
       - date: '3132-08-07'
         hpg: X
+      - date: '3135-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3135-10-01'
         faction:
           source: canon
@@ -397,7 +422,25 @@ planet:
             - IND
       - date: '3140-01-01'
         population: 1846608291.0
+      - date: '3145-01-01'
+        # administration: DC | Dieron Military District | Dieron Prefecture
+        # administration: DC | Dieron Military District | Dieron Prefecture
+        # administration: DC | Dieron Military District | Dieron Prefecture
+        # administration: DC | Dieron Military District | Dieron Prefecture
+        # administration: DC | Dieron Military District | Dieron Prefecture
+        # administration: DC | Dieron Military District | Dieron Prefecture
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - DC
       - date: '3145-05-11'
+        # administration: DC | Dieron Military District | Dieron Prefecture
+        # administration: DC | Dieron Military District | Dieron Prefecture
+        # administration: DC | Dieron Military District | Dieron Prefecture
+        # administration: DC | Dieron Military District | Dieron Prefecture
+        # administration: DC | Dieron Military District | Dieron Prefecture
+        # administration: DC | Dieron Military District | Dieron Prefecture
         faction:
           source: canon
           value:

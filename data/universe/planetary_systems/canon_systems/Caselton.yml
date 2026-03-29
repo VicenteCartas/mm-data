@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -20,10 +20,10 @@ sucsId: 489
 xcood: 115.467
 ycood: -32.666
 spectralType:
-  source: MWDA world profiles
+  source: DA:RW
   value: K2IV
 primarySlot:
-  source: MWDA world profiles
+  source: DA:RW
   value: 2
 event:
   - date: '2378-04-20'
@@ -51,31 +51,31 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.7
     sysPos:
-      source: MWDA world profiles
+      source: DA:RW
       value: 2
     icon: green14
     pressure:
-      source: MWDA world profiles
+      source: DA:RW
       value: STANDARD
     atmosphere:
-      source: MWDA world profiles
+      source: DA:RW
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: MWDA world profiles
+      source: DA:RW
       value: 1.0
     diameter: 11673
     density: 6.020521334621
     dayLength: 19
     yearLength: 1.0
     temperature:
-      source: MWDA world profiles
+      source: DA:RW
       value: 24
     water:
-      source: MWDA world profiles
+      source: DA:RW
       value: 70
     lifeForm:
-      source: MWDA world profiles
+      source: DA:RW
       value: BIRD
     desc: |-
       Caselton is a highly habitable planet that closely resembles Terra in several key respects. However, Caselton‘s climate is slightly too cold and dry to support widespread agriculture, and its geology contains limited deposits of useful metals and minerals. Although self-sufficient, Caselton‘s economy has never supported significant exports and thus never attracted a large population.
@@ -85,17 +85,17 @@ planet:
       These fortifications served Caselton well in the Blakist Holy War, stopping repeated assaults by Blakist mercenaries. However, during the Golden Age of Peace, The Republic of the Sphere dismantled many of Caselton‘s defenses. The two continents are Embrasure and Merlon; the capital of Battlement is located on Embrasure.
     landmass:
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Embrasure
         capital:
-          source: MWDA world profiles
+          source: DA:RW
           value: Battlement
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Merlon
     satellite:
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Asteroid Belt
         size: medium
         icon: rock4
@@ -147,6 +147,12 @@ planet:
       - date: '2340-01-01'
         population: 257409100.0
       - date: '2350-08-25'
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
         faction:
           source: canon
           value:
@@ -254,7 +260,25 @@ planet:
         population: 863785864.0
       - date: '2820-01-01'
         population: 859844229.0
+      - date: '2821-01-01'
+        # administration: CC | Tikonov Commonality | Region 7
+        # administration: CC | Tikonov Commonality | Region 7
+        # administration: CC | Tikonov Commonality | Region 7
+        # administration: CC | Tikonov Commonality | Region 7
+        # administration: CC | Tikonov Commonality | Region 7
+        # administration: CC | Tikonov Commonality | Region 7
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CC
       - date: '2821-10-27'
+        # administration: CC | Tikonov Commonality | Region 7
+        # administration: CC | Tikonov Commonality | Region 7
+        # administration: CC | Tikonov Commonality | Region 7
+        # administration: CC | Tikonov Commonality | Region 7
+        # administration: CC | Tikonov Commonality | Region 7
+        # administration: CC | Tikonov Commonality | Region 7
         faction:
           source: canon
           value:
@@ -265,7 +289,18 @@ planet:
           value:
             - CC
       - date: '2830-01-01'
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
         population: 856140123.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FS
       - date: '2840-01-01'
         population: 852834655.0
       - date: '2844-01-01'
@@ -275,6 +310,12 @@ planet:
       - date: '2860-01-01'
         population: 847891304.0
       - date: '2864-02-28'
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
         faction:
           source: canon
           value:
@@ -314,6 +355,12 @@ planet:
       - date: '3020-01-01'
         population: 787251802.0
       - date: '3025-01-05'
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
         faction:
           source: canon
           value:
@@ -323,8 +370,25 @@ planet:
       - date: '3030-01-01'
         population: 789402732.0
       - date: '3040-01-01'
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
         population: 798772859.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
         faction:
           source: canon
           value:
@@ -335,7 +399,25 @@ planet:
         population: 809143778.0
       - date: '3060-01-01'
         population: 820961836.0
+      - date: '3067-01-01'
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FS
       - date: '3067-04-20'
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
         faction:
           source: canon
           value:
@@ -365,7 +447,25 @@ planet:
             - Stone
       - date: '3080-01-01'
         population: 832286410.0
+      - date: '3081-01-01'
+        # administration: ROS | Prefecture IV
+        # administration: ROS | Prefecture IV
+        # administration: ROS | Prefecture IV
+        # administration: ROS | Prefecture IV
+        # administration: ROS | Prefecture IV
+        # administration: ROS | Prefecture IV
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ROS
       - date: '3081-06-03'
+        # administration: ROS | Prefecture IV
+        # administration: ROS | Prefecture IV
+        # administration: ROS | Prefecture IV
+        # administration: ROS | Prefecture IV
+        # administration: ROS | Prefecture IV
+        # administration: ROS | Prefecture IV
         faction:
           source: canon
           value:
@@ -384,7 +484,25 @@ planet:
         population: 848590403.0
       - date: '3132-08-07'
         hpg: X
+      - date: '3135-01-01'
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FS
       - date: '3135-08-04'
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
         faction:
           source: canon
           value:

@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,15 +16,17 @@
 # affiliated with Microsoft.
 
 id: Hesperus II
-sucsId: 1104
+sucsId: 1105
 xcood: -123.603
 ycood: 46.734
 spectralType:
-  source: 'Handbook: House Steiner, pg. 88'
+  source: 'HB:HS'
   value: F2IV
+  page: 88
 primarySlot:
-  source: 'Handbook: House Steiner, pg. 88'
+  source: 'HB:HS'
   value: 2
+  page: 88
 event:
   - date: '2366-09-29'
     nadirCharge: yes
@@ -52,32 +54,39 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 4.2
     sysPos:
-      source: 'Handbook: House Steiner, pg. 88'
+      source: 'HB:HS'
       value: 2
+      page: 88
     icon: green50
     pressure:
-      source: 'Handbook: House Steiner, pg. 88'
+      source: 'HB:HS'
       value: STANDARD
+      page: 88
     atmosphere:
-      source: 'Handbook: House Steiner, pg. 88'
+      source: 'HB:HS'
       value: BREATHABLE
+      page: 88
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'Handbook: House Steiner, pg. 88'
+      source: 'HB:HS'
       value: 1.01
+      page: 88
     diameter: 14592
     density: 4.864229746215
     dayLength: 26
     yearLength: 8.7
     temperature:
-      source: 'Handbook: House Steiner, pg. 88'
+      source: 'HB:HS'
       value: 85
+      page: 88
     water:
-      source: 'Handbook: House Steiner, pg. 88'
+      source: 'HB:HS'
       value: 40
+      page: 88
     lifeForm:
-      source: 'Handbook: House Steiner, pg. 88'
+      source: 'HB:HS'
       value: REPTILE
+      page: 88
     desc: |-
       Hesperus II is a haggard and craggy looking planet. All four major continents are covered in high mountain peaks and rugged canyons. The planet has very little arable land and is hotter than many settled worlds. All considered it has little to suggest itself as a liveable planet. The exception is the massive amounts of raw materials in the mountain ranges and most importantly, the massive ‘Mech factories which have made Hesperus II the premier planet for ‘Mech production in the Inner Sphere. Almost the entire population of Hesperus II works at or is involved in work at the Defiance ‘Mech Factories.
 
@@ -88,24 +97,30 @@ planet:
       Doering Electronics
     landmass:
       - name:
-          source: 'Handbook: House Steiner, pg. 88'
+          source: 'HB:HS'
           value: East Barrens
+          page: 88
       - name:
-          source: 'Handbook: House Steiner, pg. 88'
+          source: 'HB:HS'
           value: North Whitman
+          page: 88
       - name:
-          source: 'Handbook: House Steiner, pg. 88'
+          source: 'HB:HS'
           value: South Whitman
+          page: 88
         capital:
-          source: 'Handbook: House Steiner, pg. 88'
+          source: 'HB:HS'
           value: Maria's Elegy
+          page: 88
       - name:
-          source: 'Handbook: House Steiner, pg. 88'
+          source: 'HB:HS'
           value: West Barrens
+          page: 88
     satellite:
       - name:
-          source: 'Handbook: House Steiner, pg. 88'
+          source: 'HB:HS'
           value: Hesperus II-Alpha
+          page: 88
         size: medium
         icon: rock16
     event:
@@ -156,13 +171,31 @@ planet:
         population: 87571.0
       - date: '2310-01-01'
         population: 90556.0
+      - date: '2317-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '2320-01-01'
         population: 93015.0
       - date: '2330-01-01'
         population: 95772.0
       - date: '2340-01-01'
         population: 98569.0
+      - date: '2341-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FoS
       - date: '2341-05-13'
+        # administration: LA | Federation of Skye
+        # administration: LA | Federation of Skye
+        # administration: LA | Federation of Skye
+        # administration: LA | Federation of Skye
+        # administration: LA | Federation of Skye
+        # administration: LA | Federation of Skye
         faction:
           source: canon
           value:
@@ -295,6 +328,12 @@ planet:
             - LA
             - DC
       - date: '2853-11-18'
+        # administration: LA | Federation of Skye | Rahneshire
+        # administration: LA | Federation of Skye | Rahneshire
+        # administration: LA | Federation of Skye | Rahneshire
+        # administration: LA | Federation of Skye | Rahneshire
+        # administration: LA | Federation of Skye | Rahneshire
+        # administration: LA | Federation of Skye | Rahneshire
         faction:
           source: canon
           value:
@@ -340,6 +379,12 @@ planet:
             - LA
             - FWL
       - date: '3019-06-28'
+        # administration: LA | Federation of Skye | Rahneshire
+        # administration: LA | Federation of Skye | Rahneshire
+        # administration: LA | Federation of Skye | Rahneshire
+        # administration: LA | Federation of Skye | Rahneshire
+        # administration: LA | Federation of Skye | Rahneshire
+        # administration: LA | Federation of Skye | Rahneshire
         faction:
           source: canon
           value:
@@ -349,8 +394,25 @@ planet:
       - date: '3030-01-01'
         population: 53257.0
       - date: '3040-01-01'
+        # administration: FC | Tamarind March | Soilihull Operational Area
+        # administration: FC | Tamarind March | Soilihull Operational Area
+        # administration: FC | Tamarind March | Soilihull Operational Area
+        # administration: FC | Tamarind March | Soilihull Operational Area
+        # administration: FC | Tamarind March | Soilihull Operational Area
+        # administration: FC | Tamarind March | Soilihull Operational Area
         population: 53728.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
+        # administration: FC | Tamarind March | Soilihull Operational Area
+        # administration: FC | Tamarind March | Soilihull Operational Area
+        # administration: FC | Tamarind March | Soilihull Operational Area
+        # administration: FC | Tamarind March | Soilihull Operational Area
+        # administration: FC | Tamarind March | Soilihull Operational Area
+        # administration: FC | Tamarind March | Soilihull Operational Area
         faction:
           source: canon
           value:
@@ -365,7 +427,25 @@ planet:
           value: A-A-A-A-B
       - date: '3050-01-01'
         population: 54062.0
+      - date: '3057-01-01'
+        # administration: LA | Tamarind March | Soilihull Operational Area
+        # administration: LA | Tamarind March | Soilihull Operational Area
+        # administration: LA | Tamarind March | Soilihull Operational Area
+        # administration: LA | Tamarind March | Soilihull Operational Area
+        # administration: LA | Tamarind March | Soilihull Operational Area
+        # administration: LA | Tamarind March | Soilihull Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '3057-09-18'
+        # administration: LA | Skye Province
+        # administration: LA | Skye Province
+        # administration: LA | Skye Province
+        # administration: LA | Skye Province
+        # administration: LA | Skye Province
+        # administration: LA | Skye Province
         faction:
           source: canon
           value:
@@ -392,6 +472,12 @@ planet:
             - LA
             - CWIE
       - date: '3074-12-21'
+        # administration: LA | Skye Province
+        # administration: LA | Skye Province
+        # administration: LA | Skye Province
+        # administration: LA | Skye Province
+        # administration: LA | Skye Province
+        # administration: LA | Skye Province
         faction:
           source: canon
           value:

@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: Suk II
-sucsId: 2430
+sucsId: 2431
 xcood: -29.214
 ycood: 256.116
 spectralType:
-  source: House Steiner
+  source: HSSB
   value: G5V
 primarySlot:
-  source: House Steiner
+  source: HSSB
   value: 2
 event:
   - date: '2350-05-21'
@@ -53,7 +53,7 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.63
     sysPos:
-      source: House Steiner
+      source: HSSB
       value: 2
     icon: dry20
     pressure: STANDARD
@@ -69,7 +69,7 @@ planet:
     temperature: 35
     water: 15
     lifeForm:
-      source: House Steiner
+      source: HSSB
       value: REPTILE
     desc: |-
       Suk II would be an extremely pleasant an hospitable world if not for one problem, more than half of the planet’s water is contaminated by a native algae and requires an expensive purification system before it can be used by humans.
@@ -131,6 +131,12 @@ planet:
       - date: '2340-01-01'
         population: 85587287.0
       - date: '2341-07-10'
+        # administration: LA | Tamar Pact
+        # administration: LA | Tamar Pact
+        # administration: LA | Tamar Pact
+        # administration: LA | Tamar Pact
+        # administration: LA | Tamar Pact
+        # administration: LA | Tamar Pact
         faction:
           source: canon
           value:
@@ -289,8 +295,25 @@ planet:
       - date: '3030-01-01'
         population: 317096249.0
       - date: '3040-01-01'
+        # administration: FC | Tamar March | Benfled Operational Area
+        # administration: FC | Tamar March | Benfled Operational Area
+        # administration: FC | Tamar March | Benfled Operational Area
+        # administration: FC | Tamar March | Benfled Operational Area
+        # administration: FC | Tamar March | Benfled Operational Area
+        # administration: FC | Tamar March | Benfled Operational Area
         population: 321438216.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
+        # administration: FC | Tamar March | Benfled Operational Area
+        # administration: FC | Tamar March | Benfled Operational Area
+        # administration: FC | Tamar March | Benfled Operational Area
+        # administration: FC | Tamar March | Benfled Operational Area
+        # administration: FC | Tamar March | Benfled Operational Area
+        # administration: FC | Tamar March | Benfled Operational Area
         faction:
           source: canon
           value:
@@ -299,6 +322,12 @@ planet:
         socioIndustrial: B-C-A-C-A
       - date: '3050-01-01'
         population: 324831099.0
+      - date: '3052-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CW
       - date: '3052-01-03'
         faction:
           source: canon
@@ -334,12 +363,24 @@ planet:
           value: X
       - date: '3140-01-01'
         population: 361841168.0
+      - date: '3145-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CJF
       - date: '3145-02-14'
         faction:
           source: canon
           value:
             - CJF
         population: 365331570.0
+      - date: '3151-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CHH
       - date: '3151-11-15'
         faction:
           source: canon

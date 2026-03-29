@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: Kuzuu
-sucsId: 1428
+sucsId: 1429
 xcood: 23.011
 ycood: 66.624
 spectralType:
-  source: MWDA world profiles
+  source: DA:RW
   value: K6V
 primarySlot:
-  source: MWDA world profiles
+  source: DA:RW
   value: 1
 event:
   - date: '2374-08-03'
@@ -37,69 +37,59 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.24
     sysPos:
-      source: MWDA world profiles
+      source: DA:RW
       value: 1
     icon: green11
     pressure:
-      source: MWDA world profiles
+      source: DA:RW
       value: STANDARD
     atmosphere:
-      source: MWDA world profiles
+      source: DA:RW
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: MWDA world profiles
+      source: DA:RW
       value: 1.19
     diameter: 12118
     density: 6.901071175196
     dayLength: 21
     yearLength: 0.8
     temperature:
-      source: MWDA world profiles
+      source: DA:RW
       value: 39
     water:
-      source: MWDA world profiles
+      source: DA:RW
       value: 63
     lifeForm:
-      source: MWDA world profiles
+      source: DA:RW
       value: MAMMAL
-    desc: Kuzuu is a quiet, mostly agricultural world known for long, reasonably mild
-      seasons, particularly in its middle-latitude continents of Oahana and Entiko.
-      A large world, with modest deposits of industrial metals and other valuable
-      resources, Kuzuu developed heavy industry very slowly compared to most of its
-      neighbors, as a majority of the original settlers preferred the quieter farming
-      and ranching life to the hustle of heavy industry and commerce. Because of this,
-      the planet was largely overlooked by raiders throughout the Age of War and the
-      first three Succession Wars, a factor that helped protect its natural beauty
-      and even drew those seeking a return to the simpler life. In the Fourth Succession
-      War, Kuzuu went from being an interior world of the Draconis Combine to being
-      the front line against future FedCom aggression, perched just beyond the tip
-      of the united Commonwealth‘s new ―Lyons Thumb. The increased military presence
-      this new position warranted led to a boom in local industry and the economy
-      to support the planet‘s defense, and so, by the close of the thirty-first century,
-      Kuzuu boasted a population of more than two billion, almost equally divided
-      among urban and rural population centers. The capital city of Arbeesi is located
-      on the industrialized northern continent of Shanaro.
+    desc: Kuzuu is a quiet, mostly agricultural world known for long, reasonably mild seasons, particularly in its middle-latitude continents of Oahana and Entiko. A large world, with modest deposits of industrial metals and other valuable resources, Kuzuu developed heavy industry very slowly compared to most of its neighbors, as a majority of the original settlers preferred the quieter farming and ranching life to the hustle of heavy industry and commerce. Because of this, the planet was largely overlooked by raiders throughout the Age of War and the first three Succession Wars, a factor that helped protect its natural beauty and even drew those seeking a return to the simpler life. In the Fourth Succession War, Kuzuu went from being an interior world of the Draconis Combine to being the front line against future FedCom aggression, perched just beyond the tip of the united Commonwealth‘s new ―Lyons Thumb. The increased military presence this new position warranted led to a boom in local industry and the economy to support the planet‘s defense, and so, by the close of the thirty-first century, Kuzuu boasted a population of more than two billion, almost equally divided among urban and rural population centers. The capital city of Arbeesi is located on the industrialized northern continent of Shanaro.
     landmass:
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Entiko
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Oahana
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Shanaro
         capital:
-          source: MWDA world profiles
+          source: DA:RW
           value: Arbeesi
     satellite:
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Yokohama
         size: medium
         icon: rock13
     event:
+      - date: '2271-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '2278-10-11'
         faction:
           source: canon
@@ -128,6 +118,12 @@ planet:
         population: 13734159.0
       - date: '2340-01-01'
         population: 27040072.0
+      - date: '2341-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '2350-01-01'
         population: 48329743.0
       - date: '2360-01-01'
@@ -176,6 +172,18 @@ planet:
         population: 1465583660.0
       - date: '2570-01-01'
         population: 1494192886.0
+      - date: '2571-01-01'
+        # administration: DC | Benjamin Military District | Kuzuu Prefecture
+        # administration: DC | Benjamin Military District | Kuzuu Prefecture
+        # administration: DC | Benjamin Military District | Kuzuu Prefecture
+        # administration: DC | Benjamin Military District | Kuzuu Prefecture
+        # administration: DC | Benjamin Military District | Kuzuu Prefecture
+        # administration: DC | Benjamin Military District | Kuzuu Prefecture
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - DC
       - date: '2580-01-01'
         population: 1510126350.0
       - date: '2590-01-01'
@@ -287,7 +295,25 @@ planet:
         population: 767227898.0
       - date: '3080-01-01'
         population: 769379146.0
+      - date: '3081-01-01'
+        # administration: ROS | Prefecture I
+        # administration: ROS | Prefecture I
+        # administration: ROS | Prefecture I
+        # administration: ROS | Prefecture I
+        # administration: ROS | Prefecture I
+        # administration: ROS | Prefecture I
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ROS
       - date: '3081-09-10'
+        # administration: ROS | Prefecture I
+        # administration: ROS | Prefecture I
+        # administration: ROS | Prefecture I
+        # administration: ROS | Prefecture I
+        # administration: ROS | Prefecture I
+        # administration: ROS | Prefecture I
         faction:
           source: canon
           value:
@@ -306,6 +332,12 @@ planet:
         population: 791542747.0
       - date: '3132-08-07'
         hpg: X
+      - date: '3135-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3135-10-01'
         faction:
           source: canon
@@ -313,7 +345,25 @@ planet:
             - IND
       - date: '3140-01-01'
         population: 792334686.0
+      - date: '3145-01-01'
+        # administration: DC | Dieron Military District | Dieron Prefecture
+        # administration: DC | Dieron Military District | Dieron Prefecture
+        # administration: DC | Dieron Military District | Dieron Prefecture
+        # administration: DC | Dieron Military District | Dieron Prefecture
+        # administration: DC | Dieron Military District | Dieron Prefecture
+        # administration: DC | Dieron Military District | Dieron Prefecture
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - DC
       - date: '3145-03-19'
+        # administration: DC | Dieron Military District | Dieron Prefecture
+        # administration: DC | Dieron Military District | Dieron Prefecture
+        # administration: DC | Dieron Military District | Dieron Prefecture
+        # administration: DC | Dieron Military District | Dieron Prefecture
+        # administration: DC | Dieron Military District | Dieron Prefecture
+        # administration: DC | Dieron Military District | Dieron Prefecture
         faction:
           source: canon
           value:

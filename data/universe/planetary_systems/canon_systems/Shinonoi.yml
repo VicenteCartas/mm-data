@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: Shinonoi
-sucsId: 2313
+sucsId: 2314
 xcood: 79.871
 ycood: 53.979
 spectralType:
-  source: MWDA world profiles
+  source: DA:RW
   value: G3V
 primarySlot:
-  source: MWDA world profiles
+  source: DA:RW
   value: 1
 event:
   - date: '2378-03-26'
@@ -41,77 +41,43 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 1.0
     sysPos:
-      source: MWDA world profiles
+      source: DA:RW
       value: 1
     icon: wet13
     pressure:
-      source: MWDA world profiles
+      source: DA:RW
       value: STANDARD
     atmosphere:
-      source: MWDA world profiles
+      source: DA:RW
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: MWDA world profiles
+      source: DA:RW
       value: 1.0
     diameter: 11954
     density: 5.878765906091
     dayLength: 25
     yearLength: 1.4
     temperature:
-      source: MWDA world profiles
+      source: DA:RW
       value: 29
     water:
-      source: MWDA world profiles
+      source: DA:RW
       value: 88
     lifeForm:
-      source: MWDA world profiles
+      source: DA:RW
       value: MAMMAL
-    desc: 3135 - Shinonoi is a world of fertile lands; a long, mild growing season;
-      and abundant native livestock. Two of the planet‘s four major landmasses, Matsuda
-      and Kokuya, were devoted almost exclusively to farming and ranching communities
-      when the planet was first settled. Jukemwa, almost covered in snow and ice,
-      lay completely within Shinonoi‘s north polar zone, and early surveys deemed
-      it virtually uninhabitable. Nonetheless, a few hardy souls established towns
-      on islands off Jukemwa, which today are among the planet‘s most successful fishing
-      communities. Narosi, the smaller, equatorial continent where geologists discovered
-      an abundance of mineral deposits and metal ores, became the heart of Shinonoi‘s
-      mining and manufacturing industries and home to several sprawling metroplexes
-      and factories, including the capital city of Marimasu. Shinonoi‘s agriculture
-      and industry helped the planet prosper throughout the Succession Wars despite
-      numerous House Davion raids, but these raids were nothing compared with the
-      disaster that befell Shinonoi in 3075, when a rogue eight-kilometer-wide asteroid,
-      designated simply as SH01378-A, struck the continent of Narosi. The strike instantly
-      annihilated three of Shinonoi‘s largest industrial cities and set the entire
-      continent of Narosi ablaze. The impact and the resulting fires sent enough particulate
-      matter into Shinonoi‘s atmosphere to drop planetwide temperatures by more than
-      five degrees, wiping out crops and crippling the agricultural industries on
-      Matsuda and Kokuya for almost a decade. The impact also set off a series of
-      dormant fault lines around the world, extending the damage to communities on
-      Matsuda and Kokuya. Despite the demands of the ongoing efforts to counter the
-      Blakist Jihad, relief organizations from the Combine and its allies poured badly
-      needed money, medical aid and equipment into Shinonoi‘s recovery. Devlin Stone
-      himself sponsored a program to assist the ravaged planet and restore order after
-      the capital city was destroyed, and when his newborn Republic of the Sphere
-      expanded to include Shinonoi, many were relocated to this world to reclaim what
-      had been lost in the disaster. The difficult relief and restoration efforts
-      have borne fruit. Today, Shinonoi is once again a viable agro-world, and the
-      fishing communities of Jukemwa have begun to record their first profits since
-      the Narosi Strike. The continent of Narosi itself, however, is still a blasted
-      wasteland, dotted with the scorched remains of cities, though a few new towns
-      have been established there. The new capital of the planet, Rising Sun, is located
-      on Matsuda and hosts the planet‘s largest spaceport. The nearby city of Kaffeli
-      houses the bulk of the planetary defense force.
+    desc: 3135 - Shinonoi is a world of fertile lands; a long, mild growing season; and abundant native livestock. Two of the planet‘s four major landmasses, Matsuda and Kokuya, were devoted almost exclusively to farming and ranching communities when the planet was first settled. Jukemwa, almost covered in snow and ice, lay completely within Shinonoi‘s north polar zone, and early surveys deemed it virtually uninhabitable. Nonetheless, a few hardy souls established towns on islands off Jukemwa, which today are among the planet‘s most successful fishing communities. Narosi, the smaller, equatorial continent where geologists discovered an abundance of mineral deposits and metal ores, became the heart of Shinonoi‘s mining and manufacturing industries and home to several sprawling metroplexes and factories, including the capital city of Marimasu. Shinonoi‘s agriculture and industry helped the planet prosper throughout the Succession Wars despite numerous House Davion raids, but these raids were nothing compared with the disaster that befell Shinonoi in 3075, when a rogue eight-kilometer-wide asteroid, designated simply as SH01378-A, struck the continent of Narosi. The strike instantly annihilated three of Shinonoi‘s largest industrial cities and set the entire continent of Narosi ablaze. The impact and the resulting fires sent enough particulate matter into Shinonoi‘s atmosphere to drop planetwide temperatures by more than five degrees, wiping out crops and crippling the agricultural industries on Matsuda and Kokuya for almost a decade. The impact also set off a series of dormant fault lines around the world, extending the damage to communities on Matsuda and Kokuya. Despite the demands of the ongoing efforts to counter the Blakist Jihad, relief organizations from the Combine and its allies poured badly needed money, medical aid and equipment into Shinonoi‘s recovery. Devlin Stone himself sponsored a program to assist the ravaged planet and restore order after the capital city was destroyed, and when his newborn Republic of the Sphere expanded to include Shinonoi, many were relocated to this world to reclaim what had been lost in the disaster. The difficult relief and restoration efforts have borne fruit. Today, Shinonoi is once again a viable agro-world, and the fishing communities of Jukemwa have begun to record their first profits since the Narosi Strike. The continent of Narosi itself, however, is still a blasted wasteland, dotted with the scorched remains of cities, though a few new towns have been established there. The new capital of the planet, Rising Sun, is located on Matsuda and hosts the planet‘s largest spaceport. The nearby city of Kaffeli houses the bulk of the planetary defense force.
     landmass:
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Narosi
         capital:
-          source: MWDA world profiles
+          source: DA:RW
           value: Rising Sun
     satellite:
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Janjiro
         size: medium
         icon: rock9
@@ -136,6 +102,12 @@ planet:
             - DC
       - date: '2340-01-01'
         population: 3478151.0
+      - date: '2341-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '2350-01-01'
         population: 9291737.0
       - date: '2360-01-01'
@@ -187,6 +159,18 @@ planet:
         population: 1994747127.0
       - date: '2570-01-01'
         population: 2062947782.0
+      - date: '2571-01-01'
+        # administration: DC | Benjamin Military District | Ashio Prefecture
+        # administration: DC | Benjamin Military District | Ashio Prefecture
+        # administration: DC | Benjamin Military District | Ashio Prefecture
+        # administration: DC | Benjamin Military District | Ashio Prefecture
+        # administration: DC | Benjamin Military District | Ashio Prefecture
+        # administration: DC | Benjamin Military District | Ashio Prefecture
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - DC
       - date: '2580-01-01'
         population: 2114719686.0
       - date: '2590-01-01'
@@ -302,7 +286,25 @@ planet:
         population: 1973877637.0
       - date: '3080-01-01'
         population: 1986948315.0
+      - date: '3081-01-01'
+        # administration: ROS | Prefecture II
+        # administration: ROS | Prefecture II
+        # administration: ROS | Prefecture II
+        # administration: ROS | Prefecture II
+        # administration: ROS | Prefecture II
+        # administration: ROS | Prefecture II
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ROS
       - date: '3081-09-18'
+        # administration: ROS | Prefecture II
+        # administration: ROS | Prefecture II
+        # administration: ROS | Prefecture II
+        # administration: ROS | Prefecture II
+        # administration: ROS | Prefecture II
+        # administration: ROS | Prefecture II
         faction:
           source: canon
           value:
@@ -321,7 +323,25 @@ planet:
         population: 2004911563.0
       - date: '3132-08-07'
         hpg: X
+      - date: '3135-01-01'
+        # administration: DC | Benjamin Military District | Algedi Prefecture
+        # administration: DC | Benjamin Military District | Algedi Prefecture
+        # administration: DC | Benjamin Military District | Algedi Prefecture
+        # administration: DC | Benjamin Military District | Algedi Prefecture
+        # administration: DC | Benjamin Military District | Algedi Prefecture
+        # administration: DC | Benjamin Military District | Algedi Prefecture
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - DC
       - date: '3135-01-04'
+        # administration: DC | Dieron Military District | Ashio Prefecture
+        # administration: DC | Dieron Military District | Ashio Prefecture
+        # administration: DC | Dieron Military District | Ashio Prefecture
+        # administration: DC | Dieron Military District | Ashio Prefecture
+        # administration: DC | Dieron Military District | Ashio Prefecture
+        # administration: DC | Dieron Military District | Ashio Prefecture
         faction:
           source: canon
           value:

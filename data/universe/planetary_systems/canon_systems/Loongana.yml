@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Loongana
-sucsId: 1514
+sucsId: 1515
 xcood: -294.677
 ycood: -109.37
 spectralType:
@@ -38,8 +38,7 @@ planet:
     icon: barren1
     pressure: STANDARD
     atmosphere: TOXIC_POISON
-    composition: Carbon Dioxide and Ammonia, plus trace amounts of Carbon Dioxide
-      and Argon
+    composition: Carbon Dioxide and Ammonia, plus trace amounts of Carbon Dioxide and Argon
     gravity: 0.77
     diameter: 8500
     density: 6.3337
@@ -128,16 +127,7 @@ planet:
     lifeForm:
       source: canon
       value: REPTILE
-    desc: Loongana is a water-rich world with only one continent and abundant natural
-      resources. The planet would be comfortable if not for the thin, though breathable,
-      atmosphere and lower gravity. For most of its history Loongana was essentially
-      a backwater, with nothing to call attention to the small planet and the largest
-      industries involved mining for the planet’s abundant mineral resources. However,
-      during the Word of Blake Jihad, Venkateswara began construction of a new military
-      production facility outside of Zathus, the planetary capital. While the facility
-      was not completed before the war ended, it became a vital to the Tamarind District
-      as their only other facilities capable of military manufacturing were located
-      on Tamarind.
+    desc: Loongana is a water-rich world with only one continent and abundant natural resources. The planet would be comfortable if not for the thin, though breathable, atmosphere and lower gravity. For most of its history Loongana was essentially a backwater, with nothing to call attention to the small planet and the largest industries involved mining for the planet’s abundant mineral resources. However, during the Word of Blake Jihad, Venkateswara began construction of a new military production facility outside of Zathus, the planetary capital. While the facility was not completed before the war ended, it became a vital to the Tamarind District as their only other facilities capable of military manufacturing were located on Tamarind.
     smallMoons: 2
     landmass:
       - name:
@@ -181,6 +171,12 @@ planet:
             - FWL
       - date: '2360-01-01'
         population: 31292786.0
+      - date: '2366-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '2370-01-01'
         population: 43361847.0
       - date: '2380-01-01'
@@ -227,6 +223,12 @@ planet:
         population: 318990249.0
       - date: '2570-01-01'
         population: 327155299.0
+      - date: '2571-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FWL
       - date: '2580-01-01'
         population: 335267461.0
       - date: '2590-01-01'
@@ -348,6 +350,12 @@ planet:
         population: 273520637.0
       - date: '3070-01-01'
         population: 275441998.0
+      - date: '3079-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - DTA
       - date: '3079-05-20'
         faction:
           source: canon
@@ -374,8 +382,25 @@ planet:
       - date: '3140-01-01'
         population: 279492952.0
       - date: '3145-01-01'
+        # administration: FWL | Duchy of Tammarind-Abbey
+        # administration: FWL | Duchy of Tammarind-Abbey
+        # administration: FWL | Duchy of Tammarind-Abbey
+        # administration: FWL | Duchy of Tammarind-Abbey
+        # administration: FWL | Duchy of Tammarind-Abbey
+        # administration: FWL | Duchy of Tammarind-Abbey
         population: 279772584.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FWL
       - date: '3151-01-01'
+        # administration: FWL | Duchy of Tammarind-Abbey
+        # administration: FWL | Duchy of Tammarind-Abbey
+        # administration: FWL | Duchy of Tammarind-Abbey
+        # administration: FWL | Duchy of Tammarind-Abbey
+        # administration: FWL | Duchy of Tammarind-Abbey
+        # administration: FWL | Duchy of Tammarind-Abbey
         faction:
           source: sucs
           value:

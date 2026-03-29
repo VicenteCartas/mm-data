@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Mangzhangdian
-sucsId: 1588
+sucsId: 1589
 xcood: 111.94
 ycood: -433.681
 spectralType: G0V
@@ -99,6 +99,12 @@ planet:
       - name: Shuang Archipelago
     event:
       - date: '2734-01-09'
+        # administration: CC | Sian Commonality | Region 14
+        # administration: CC | Sian Commonality | Region 14
+        # administration: CC | Sian Commonality | Region 14
+        # administration: CC | Sian Commonality | Region 14
+        # administration: CC | Sian Commonality | Region 14
+        # administration: CC | Sian Commonality | Region 14
         faction:
           source: canon
           value:
@@ -127,6 +133,24 @@ planet:
           value:
             - IND
         hpg: X
+      - date: '2822-01-01'
+        # administration: CC | Sian Commonality | Region 15
+        # administration: CC | Sian Commonality | Region 15
+        # administration: CC | Sian Commonality | Region 15
+        # administration: CC | Sian Commonality | Region 15
+        # administration: CC | Sian Commonality | Region 15
+        # administration: CC | Sian Commonality | Region 15
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CC
+      - date: '2864-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '2945-01-01'
         faction:
           source: canon
@@ -137,6 +161,12 @@ planet:
           source: This is the earliest the directorate could have taken over
           value:
             - ARD
+      - date: '3025-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ARC
       - date: '3025-05-15'
         faction:
           source: assumption
@@ -153,11 +183,18 @@ planet:
           source: canon
           value:
             - ARC
+      - date: '3030-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ABN
       - date: '3151-01-01'
         faction:
           source: sucs
           value:
             - ABN
+    desc: A world with a long year and high annual climate variation producing very hot summers and very cold winters. These extremes caused the original Capellan colonial structures to collapse into ruin, leaving a marginal pastoral world.
   - name: Belinos Belt
     type: ASTEROID_BELT
     orbitalDist: 3.08

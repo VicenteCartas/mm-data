@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: Sheratan
-sucsId: 2303
+sucsId: 2304
 xcood: 40.84
 ycood: -21.506
 spectralType:
-  source: MWDA world profiles
+  source: DA:RW
   value: K5V
 primarySlot:
-  source: MWDA world profiles
+  source: DA:RW
   value: 5
 event:
   - date: '2374-06-17'
@@ -106,31 +106,31 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.28
     sysPos:
-      source: MWDA world profiles
+      source: DA:RW
       value: 5
     icon: green35
     pressure:
-      source: MWDA world profiles
+      source: DA:RW
       value: STANDARD
     atmosphere:
-      source: MWDA world profiles
+      source: DA:RW
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: MWDA world profiles
+      source: DA:RW
       value: 0.9
     diameter: 12431
     density: 5.087922852464
     dayLength: 27
     yearLength: 0.8
     temperature:
-      source: MWDA world profiles
+      source: DA:RW
       value: 31
     water:
-      source: MWDA world profiles
+      source: DA:RW
       value: 40
     lifeForm:
-      source: MWDA world profiles
+      source: DA:RW
       value: MAMMAL
     desc: |-
       Once the emerald jewel in the crown of the Terran Hegemony, Sheratan‘s surface was a single landmass blanketed by thick forests, lush jungles, and verdant farmland; dotted by a few, large, landlocked seas. Sheratan‘s ruling family, the Grensons, were staunch supporters of Terra‘s Cameron family when they assumed leadership of the Terran Hegemony and, later, founded the First Star League. In fact, First Lord Jonathan Cameron married Lady Ludmella Grenson, a connection to the First Star League that Sheratan‘s population remains proud of to this day. During the fall of the First Star League, on the order of the Usurper Stefan Amaris, the Grenson family was nearly wiped out for its association with the Camerons. With no hereditary rulers, the Capellan Confederation easily claimed Sheratan after the fall of the First Star League.
@@ -140,7 +140,7 @@ planet:
       By the time of the founding of The Republic of the Sphere, Sheratan‘s population had fallen to levels the planet‘s now-meager agricultural output could support and the economy stabilized. When a portion of the Wolf Clan joined The Republic, interest in Sheratan‘s ties to the First Star League led some to settle near Sheratan‘s capital of Gellen‘s Heights, further boosting the planet‘s economy.
     landmass:
       - capital:
-          source: MWDA world profiles
+          source: DA:RW
           value: Gellen's Heights
     event:
       - date: '2240-10-31'
@@ -164,7 +164,19 @@ planet:
         population: 49428429.0
       - date: '2310-01-01'
         population: 97561525.0
+      - date: '2317-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - TH
       - date: '2319-05-16'
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
         faction:
           source: canon
           value:
@@ -269,6 +281,18 @@ planet:
         population: 7903406965.0
       - date: '2760-01-01'
         population: 7915202979.0
+      - date: '2767-01-01'
+        # administration: AE | Lockdale Province
+        # administration: AE | Lockdale Province
+        # administration: AE | Lockdale Province
+        # administration: AE | Lockdale Province
+        # administration: AE | Lockdale Province
+        # administration: AE | Lockdale Province
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - AE
       - date: '2767-11-17'
         faction:
           source: canon
@@ -277,6 +301,12 @@ planet:
       - date: '2770-01-01'
         population: 7909804084.0
       - date: '2779-02-01'
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
         faction:
           source: canon
           value:
@@ -284,6 +314,12 @@ planet:
       - date: '2780-01-01'
         population: 7874157531.0
       - date: '2790-03-18'
+        # administration: CC | Tikonov Commonality | Region 3
+        # administration: CC | Tikonov Commonality | Region 3
+        # administration: CC | Tikonov Commonality | Region 3
+        # administration: CC | Tikonov Commonality | Region 3
+        # administration: CC | Tikonov Commonality | Region 3
+        # administration: CC | Tikonov Commonality | Region 3
         faction:
           source: canon
           value:
@@ -348,6 +384,12 @@ planet:
       - date: '3030-01-01'
         population: 6882271585.0
       - date: '3032-09-25'
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
         faction:
           source: canon
           value:
@@ -358,13 +400,31 @@ planet:
         socioIndustrial: A-A-C-A-D
       - date: '3050-01-01'
         population: 7029030375.0
+      - date: '3057-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3057-11-01'
         faction:
           source: canon
           value:
             - CM
+      - date: '3058-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3060-01-01'
         population: 7079114078.0
+      - date: '3068-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - WOB
       - date: '3068-02-01'
         faction:
           source: canon
@@ -385,7 +445,25 @@ planet:
             - Stone
       - date: '3080-01-01'
         population: 7219233397.0
+      - date: '3081-01-01'
+        # administration: ROS | Prefecture IV
+        # administration: ROS | Prefecture IV
+        # administration: ROS | Prefecture IV
+        # administration: ROS | Prefecture IV
+        # administration: ROS | Prefecture IV
+        # administration: ROS | Prefecture IV
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ROS
       - date: '3081-03-09'
+        # administration: ROS | Prefecture IV
+        # administration: ROS | Prefecture IV
+        # administration: ROS | Prefecture IV
+        # administration: ROS | Prefecture IV
+        # administration: ROS | Prefecture IV
+        # administration: ROS | Prefecture IV
         faction:
           source: canon
           value:
@@ -404,6 +482,12 @@ planet:
         population: 7872288198.0
       - date: '3132-08-07'
         hpg: X
+      - date: '3135-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3135-10-01'
         faction:
           source: canon
@@ -411,7 +495,25 @@ planet:
             - IND
       - date: '3140-01-01'
         population: 7949815888.0
+      - date: '3145-01-01'
+        # administration: CC | Tikonov Commonality | Region 1
+        # administration: CC | Tikonov Commonality | Region 1
+        # administration: CC | Tikonov Commonality | Region 1
+        # administration: CC | Tikonov Commonality | Region 1
+        # administration: CC | Tikonov Commonality | Region 1
+        # administration: CC | Tikonov Commonality | Region 1
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CC
       - date: '3145-01-12'
+        # administration: CC | Tikonov Commonality | Region 5
+        # administration: CC | Tikonov Commonality | Region 5
+        # administration: CC | Tikonov Commonality | Region 5
+        # administration: CC | Tikonov Commonality | Region 5
+        # administration: CC | Tikonov Commonality | Region 5
+        # administration: CC | Tikonov Commonality | Region 5
         faction:
           source: canon
           value:

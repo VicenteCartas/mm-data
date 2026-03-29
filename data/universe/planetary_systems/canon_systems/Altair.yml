@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -20,10 +20,10 @@ sucsId: 97
 xcood: 8.836
 ycood: 13.754
 spectralType:
-  source: House Kurita
+  source: HB:HK
   value: F7III
 primarySlot:
-  source: House Kurita
+  source: HB:HK
   value: 5
 event:
   - date: '2372-02-21'
@@ -98,63 +98,40 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 3.64
     sysPos:
-      source: House Kurita
+      source: HB:HK
       value: 5
     icon: green1
     pressure:
-      source: MWDA world profiles
+      source: DA:RW
       value: STANDARD
     atmosphere:
-      source: MWDA world profiles
+      source: DA:RW
       value: TAINTED_POISON
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: MWDA world profiles
+      source: DA:RW
       value: 1.0
     diameter: 11530
     density: 6.095146760384
     dayLength: 23
     yearLength: 7.0
     temperature:
-      source: MWDA world profiles
+      source: DA:RW
       value: 57
     water:
-      source: MWDA world profiles
+      source: DA:RW
       value: 6
     lifeForm:
-      source: House Kurita
+      source: HB:HK
       value: REPTILE
-    desc: 3135 - Large, dry, and devastated, Altair is only now beginning to recover
-      from the horrors of one of the worst atrocities committed during the Blakist
-      Jihad. Already plagued by frequent communications blackouts, caused by the planet‘s
-      inexplicably unstable sun, and with few free water sources to speak of, the
-      planet became a living hell when Blakist forces targeted it as part of their
-      effort to establish a buffer zone around Terra. Using nuclear and biochemical
-      weapons, directed at the defending Combine forces and civilian populace respectively,
-      the assault claimed the lives of nearly a billion inhabitants and poisoned the
-      air and water table. Once a fairly prosperous, if desolate, mining world, and
-      home to the famous Long Life medical company, Altair was brought perilously
-      close to becoming an uninhabitable rock. Today, saved only by the grace of Devlin
-      Stone‘s ambitious resettlement programs, Altair maintains a subsistence-level
-      economy, and its inhabitants cluster around the planet‘s two largest surviving
-      settlements, Hehiro City and Bonanza, both of which lie along the veins of Altair‘s
-      two remaining unspoiled underground rivers. Bonanza, the home of the Long Life
-      Company, is located along the northern Sargasso River Vein, while Hehiro City,
-      the planetary capital since the deadly biochemical attacks on Smart Alice Springs
-      and Basin Flat, is situated on the southern Jumanni Delta Vein. Travel between
-      these cities is treacherous, as the few usable routes pass close to radioactive
-      “hot zones.” The New South Trading Company, Altair‘s single most successful
-      mining, refining, and distribution company, is also based in Hehiro City, in
-      the converted facilities of the Kurita Combine Munitions Corporation, a military
-      aerospace firm that vacated Altair during the transition from Combine ownership
-      to Stone‘s new Republic.
+    desc: 3135 - Large, dry, and devastated, Altair is only now beginning to recover from the horrors of one of the worst atrocities committed during the Blakist Jihad. Already plagued by frequent communications blackouts, caused by the planet‘s inexplicably unstable sun, and with few free water sources to speak of, the planet became a living hell when Blakist forces targeted it as part of their effort to establish a buffer zone around Terra. Using nuclear and biochemical weapons, directed at the defending Combine forces and civilian populace respectively, the assault claimed the lives of nearly a billion inhabitants and poisoned the air and water table. Once a fairly prosperous, if desolate, mining world, and home to the famous Long Life medical company, Altair was brought perilously close to becoming an uninhabitable rock. Today, saved only by the grace of Devlin Stone‘s ambitious resettlement programs, Altair maintains a subsistence-level economy, and its inhabitants cluster around the planet‘s two largest surviving settlements, Hehiro City and Bonanza, both of which lie along the veins of Altair‘s two remaining unspoiled underground rivers. Bonanza, the home of the Long Life Company, is located along the northern Sargasso River Vein, while Hehiro City, the planetary capital since the deadly biochemical attacks on Smart Alice Springs and Basin Flat, is situated on the southern Jumanni Delta Vein. Travel between these cities is treacherous, as the few usable routes pass close to radioactive “hot zones.” The New South Trading Company, Altair‘s single most successful mining, refining, and distribution company, is also based in Hehiro City, in the converted facilities of the Kurita Combine Munitions Corporation, a military aerospace firm that vacated Altair during the transition from Combine ownership to Stone‘s new Republic.
     landmass:
       - capital:
-          source: MWDA world profiles
+          source: DA:RW
           value: Hehiro City
     satellite:
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Olgar
         size: medium
         icon: oddmoon1
@@ -185,6 +162,18 @@ planet:
             - AG
       - date: '2310-01-01'
         population: 63327623.0
+      - date: '2317-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
+      - date: '2319-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - AG
       - date: '2319-06-22'
         faction:
           source: canon
@@ -193,6 +182,12 @@ planet:
       - date: '2320-01-01'
         population: 111207039.0
       - date: '2321-05-03'
+        # administration: TH | Lone Star Province
+        # administration: TH | Lone Star Province
+        # administration: TH | Lone Star Province
+        # administration: TH | Lone Star Province
+        # administration: TH | Lone Star Province
+        # administration: TH | Lone Star Province
         faction:
           source: canon
           value:
@@ -294,6 +289,18 @@ planet:
         population: 4207425124.0
       - date: '2760-01-01'
         population: 4262854953.0
+      - date: '2767-01-01'
+        # administration: AE | Lone Star Province
+        # administration: AE | Lone Star Province
+        # administration: AE | Lone Star Province
+        # administration: AE | Lone Star Province
+        # administration: AE | Lone Star Province
+        # administration: AE | Lone Star Province
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - AE
       - date: '2767-06-12'
         faction:
           source: canon
@@ -302,6 +309,12 @@ planet:
       - date: '2770-01-01'
         population: 4290084188.0
       - date: '2779-08-29'
+        # administration: TH | Lone Star Province
+        # administration: TH | Lone Star Province
+        # administration: TH | Lone Star Province
+        # administration: TH | Lone Star Province
+        # administration: TH | Lone Star Province
+        # administration: TH | Lone Star Province
         faction:
           source: canon
           value:
@@ -309,6 +322,12 @@ planet:
       - date: '2780-01-01'
         population: 4262155738.0
       - date: '2790-08-23'
+        # administration: DC | Dieron Military District | Lone Star Prefecture
+        # administration: DC | Dieron Military District | Lone Star Prefecture
+        # administration: DC | Dieron Military District | Lone Star Prefecture
+        # administration: DC | Dieron Military District | Lone Star Prefecture
+        # administration: DC | Dieron Military District | Lone Star Prefecture
+        # administration: DC | Dieron Military District | Lone Star Prefecture
         faction:
           source: canon
           value:
@@ -321,6 +340,12 @@ planet:
       - date: '2820-01-01'
         population: 4277828612.0
       - date: '2821-11-15'
+        # administration: DC | Dieron Military District | Lone Star Prefecture
+        # administration: DC | Dieron Military District | Lone Star Prefecture
+        # administration: DC | Dieron Military District | Lone Star Prefecture
+        # administration: DC | Dieron Military District | Lone Star Prefecture
+        # administration: DC | Dieron Military District | Lone Star Prefecture
+        # administration: DC | Dieron Military District | Lone Star Prefecture
         faction:
           source: canon
           value:
@@ -384,6 +409,12 @@ planet:
         population: 3296688845.0
       - date: '3060-01-01'
         population: 3178793605.0
+      - date: '3068-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - WOB
       - date: '3068-06-21'
         faction:
           source: canon
@@ -391,6 +422,12 @@ planet:
             - WOB
       - date: '3070-01-01'
         population: 3103701486.0
+      - date: '3079-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - Stone
       - date: '3079-06-10'
         faction:
           source: canon
@@ -404,7 +441,25 @@ planet:
             - Stone
       - date: '3080-01-01'
         population: 3155021867.0
+      - date: '3081-01-01'
+        # administration: ROS | Prefecture X
+        # administration: ROS | Prefecture X
+        # administration: ROS | Prefecture X
+        # administration: ROS | Prefecture X
+        # administration: ROS | Prefecture X
+        # administration: ROS | Prefecture X
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ROS
       - date: '3081-06-21'
+        # administration: ROS | Prefecture X
+        # administration: ROS | Prefecture X
+        # administration: ROS | Prefecture X
+        # administration: ROS | Prefecture X
+        # administration: ROS | Prefecture X
+        # administration: ROS | Prefecture X
         faction:
           source: canon
           value:
@@ -431,9 +486,16 @@ planet:
         population: 3512736723.0
       - date: '3151-01-01'
         faction:
-          source: sucs
+          source: SUCS
+          version: 2026.03.02
           value:
-            - DC
+            - CC
+      - date: '3152-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - 3SL
   - name: Cummings
     type: GIANT_TERRESTRIAL
     orbitalDist: 6.76

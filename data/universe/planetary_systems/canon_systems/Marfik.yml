@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: Marfik
-sucsId: 1606
+sucsId: 1607
 xcood: -40.604
 ycood: 97.664
 spectralType:
-  source: MWDA world profiles
+  source: DA:RW
   value: A1V
 primarySlot:
-  source: MWDA world profiles
+  source: DA:RW
   value: 5
 planet:
   - name: Bonner
@@ -109,31 +109,31 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 7.56
     sysPos:
-      source: MWDA world profiles
+      source: DA:RW
       value: 5
     icon: green44
     pressure:
-      source: MWDA world profiles
+      source: DA:RW
       value: THIN
     atmosphere:
-      source: MWDA world profiles
+      source: DA:RW
       value: TAINTED_POISON
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: MWDA world profiles
+      source: DA:RW
       value: 0.81
     diameter: 10689
     density: 5.325246445966
     dayLength: 25
     yearLength: 20.9
     temperature:
-      source: MWDA world profiles
+      source: DA:RW
       value: 42
     water:
-      source: MWDA world profiles
+      source: DA:RW
       value: 53
     lifeForm:
-      source: MWDA world profiles
+      source: DA:RW
       value: PLANT
     desc: |-
       3135 - Though it orbits far from its white-hot parent star, summers on Marfik are hot indeed. Part of this oppressive climate is due, of course, to the thin atmosphere, and nearly nonexistent ozone layer, which fails to protect this planet adequately against harmful solar radiation and cosmic rays. For this reason, early settlers quickly established most of their colonies below ground, or under protective domes. Though native flora already existed, imported plants were also introduced in an effort to thicken and purify the air, supplemented by atmospheric processors built later on. Unfortunately, the constant fighting for this border world, which boasts veins of valuable metals, including germanium and titanium, set back such efforts again and again through the centuries. Nevertheless, in the Star League era, terraforming efforts had begun to bear fruit, allowing the people of this world to step outside without the aid of filter masks or thick sunscreens.
@@ -141,40 +141,46 @@ planet:
       Unfortunately, the loss of the Star League–era atmospheric purifiers during the early years of the Succession Wars initiated a gradual downward spiral as the planet reverts to its native atmosphere. Even under the rule of The Republic of the Sphere, in the wake of the Jihad, the quality of life on Marfik has steadily continued to decline, leading many among the native government and populace to wonder if they will someday have to abandon their world. Today, as in the beginning, the majority of the planet‘s cities lie underground or beneath reflective domes, and travel on the surface without the aid of a filter mask and special reflective environment suits—dubbed “mirrorware” by the locals—is not recommended.The planetary capital city and largest spaceport, Turkestgard, is located on the northern continent of Yantiban. Secondary spaceports may also be found in Kirikut and Halifax, the largest cities on the continents North Galfree and South Galfree, respectively.
     landmass:
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: North Galfree
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: South Galfree
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Yantiban
         capital:
-          source: MWDA world profiles
+          source: DA:RW
           value: Turkestgard
     satellite:
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Amir
         size: medium
         icon: oddmoon1
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Degan
         size: medium
         icon: oddmoon2
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Rault
         size: medium
         icon: rock8
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Sonnet
         size: medium
         icon: oddmoon3
     event:
       - date: '2743-08-02'
+        # administration: LA | Federation of Skye | Virginia Shire
+        # administration: LA | Federation of Skye | Virginia Shire
+        # administration: LA | Federation of Skye | Virginia Shire
+        # administration: LA | Federation of Skye | Virginia Shire
+        # administration: LA | Federation of Skye | Virginia Shire
+        # administration: LA | Federation of Skye | Virginia Shire
         faction:
           source: canon
           value:
@@ -245,12 +251,30 @@ planet:
         population: 3103092687.0
       - date: '3020-01-01'
         population: 3132286927.0
+      - date: '3025-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - DC/LC
       - date: '3025-12-23'
         faction:
           source: canon
           value:
             - LA
             - DC
+      - date: '3030-01-01'
+        # administration: LA | Federation of Skye | Virginia Shire
+        # administration: LA | Federation of Skye | Virginia Shire
+        # administration: LA | Federation of Skye | Virginia Shire
+        # administration: LA | Federation of Skye | Virginia Shire
+        # administration: LA | Federation of Skye | Virginia Shire
+        # administration: LA | Federation of Skye | Virginia Shire
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '3030-02-06'
         faction:
           source: canon
@@ -258,8 +282,25 @@ planet:
             - LA
         population: 3139452950.0
       - date: '3040-01-01'
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
         population: 3133781181.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
         faction:
           source: canon
           value:
@@ -268,7 +309,25 @@ planet:
         socioIndustrial: A-C-C-A-B
       - date: '3050-01-01'
         population: 3144594720.0
+      - date: '3057-01-01'
+        # administration: LA | Skye March | Ryde Operational Area
+        # administration: LA | Skye March | Ryde Operational Area
+        # administration: LA | Skye March | Ryde Operational Area
+        # administration: LA | Skye March | Ryde Operational Area
+        # administration: LA | Skye March | Ryde Operational Area
+        # administration: LA | Skye March | Ryde Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '3057-09-18'
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
         faction:
           source: canon
           value:
@@ -279,7 +338,25 @@ planet:
         population: 3215619756.0
       - date: '3080-01-01'
         population: 3241447889.0
+      - date: '3081-01-01'
+        # administration: ROS | Prefecture IX
+        # administration: ROS | Prefecture IX
+        # administration: ROS | Prefecture IX
+        # administration: ROS | Prefecture IX
+        # administration: ROS | Prefecture IX
+        # administration: ROS | Prefecture IX
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ROS
       - date: '3081-06-29'
+        # administration: ROS | Prefecture IX
+        # administration: ROS | Prefecture IX
+        # administration: ROS | Prefecture IX
+        # administration: ROS | Prefecture IX
+        # administration: ROS | Prefecture IX
+        # administration: ROS | Prefecture IX
         faction:
           source: canon
           value:
@@ -296,6 +373,12 @@ planet:
         population: 3304945918.0
       - date: '3132-08-07'
         hpg: X
+      - date: '3135-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3135-10-01'
         faction:
           source: canon
@@ -304,12 +387,24 @@ planet:
       - date: '3140-01-25'
         population: 3314875643.0
         socioIndustrial: A-B-C-A-B
+      - date: '3145-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CJF
       - date: '3145-07-01'
         faction:
           source: canon
           value:
             - CJF
         population: 3316865165.0
+      - date: '3152-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3152-06-01'
         faction:
           source: sucs

@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Grankum
-sucsId: 994
+sucsId: 995
 xcood: 579.334
 ycood: 274.3
 spectralType: K4V
@@ -49,6 +49,12 @@ planet:
         capital: New Everard City
     event:
       - date: '2638-04-05'
+        # administration: OA | Traders Domain
+        # administration: OA | Traders Domain
+        # administration: OA | Traders Domain
+        # administration: OA | Traders Domain
+        # administration: OA | Traders Domain
+        # administration: OA | Traders Domain
         faction:
           source: canon
           value:
@@ -106,6 +112,12 @@ planet:
         socioIndustrial: F-F-C-F-D
       - date: '2860-01-01'
         population: 20662.0
+      - date: '2864-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '2864-06-06'
         faction:
           source: canon

@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Hsien
-sucsId: 1145
+sucsId: 1146
 xcood: 5.683
 ycood: -54.334
 spectralType:
@@ -39,27 +39,27 @@ planet:
     sysPos: 1
     icon: green14
     pressure:
-      source: 'Objective Raids: Capellan Confederation'
+      source: 'OR'
       value: STANDARD
     atmosphere:
-      source: 'Objective Raids: Capellan Confederation'
+      source: 'OR'
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'Objective Raids: Capellan Confederation'
+      source: 'OR'
       value: 1.0
     diameter: 12638
     density: 5.560484892693
     dayLength: 24
     yearLength: 1.6
     temperature:
-      source: 'Objective Raids: Capellan Confederation'
+      source: 'OR'
       value: 38
     water:
-      source: 'Objective Raids: Capellan Confederation'
+      source: 'OR'
       value: 67
     lifeForm:
-      source: 'Objective Raids: Capellan Confederation'
+      source: 'OR'
       value: PLANT
     desc: |-
       3135 - Hsien is a world of both tropical expanses and arid deserts. The massive southern continent of Chengu and two chains of semi-volcanic mini-continents, Montong and Dendeez, are home to a flourishing ecosystem similar to that of a post-Jurassic Terra. The vast tropical forests of the Chengu coasts and the Dendeez chains are home to several species of large reptilian creatures that vaguely resemble Terra‘s extinct dinosaurs. Most are relatively harmless herbivores that were easily contained by the early colonists, who were mostly from Asia and the Indian subcontinent on Terra. The widespread installation of water purification plants was required due to the high concentrations of heavy metals and toxic microbes found in the planetary water supply. Hsien's early industrial development resulted from the modest mineral wealth in the Chengu inlands, particularly around the large, landlocked Zhoulin Sea and in the mountains of Montong Prime. The Montong family, as stewards and settlers of the Montong Chain and founders of the Zhoulin-based Montong Mining Consortium, became one of the planet's first noble houses.
@@ -67,20 +67,20 @@ planet:
       During the Star League-era, Hsien prospered as part of the Terran Hegemony, before being annexed by the Capellan Confederation after the League fell. This led to the expulsion or exile of several of the planet's noble families, including the Twohy family of the then-heavily industrialized Dendeez Chain, who had held the dukedom of Hsien. Hsien fell into the cycle of warfare, and was eventually absorbed into the Federated Commonwealth as part of the Tikonov Free Republic. To encourage acceptance of their dominion, the Federated Commonwealth heavily invested in Hsien's only remaining nobility, the house of Montong, rankling the planet's largely underclass populace. When the Federated Commonwealth broke up in 3057, Hsien's people opted to join the Capellan Confederation after Capellan forces shattered the AFFC garrison. Baron Luis Montong V, however, soon turned on the Capellan-backed government, initiating a civil war soon after the departure of the invasion troops, with Montong's forces on one side, the pro-Capellan citizens of Chengu on another, and the Dendeez Chain forming a third. This situation enabled the Word of Blake to easily assume control over the planet prior to the Jihad. Firstly, they won the local HPG contract, and then they brought in Colonel Brenn Twohy, leader of the Hsien Hotheads mercenary command. When the Jihad erupted, the Word of Blake allowed Colonel Twohy to assume full control over his family's birthright, ensuring their control over the planet until allied forces finally shattered the Hotheads near the end of the Jihad. Though the fierce fighting heavily damaged the industriplexes of Dendeez and Chengu, Hsien recovered well under the Republic of the Sphere. This was largely due the efforts of the reconstituted Montong Consortium, whose corporate headquarters are located in the planetary capital and principal spaceport of Zhi-Chiang, on the northern Zhoulin Sea coast.
     landmass:
       - name:
-          source: 'Objective Raids: Capellan Confederation'
+          source: 'OR'
           value: Chengu
         capital:
-          source: 'Objective Raids: Capellan Confederation'
+          source: 'OR'
           value: Zhi-Chiang
       - name:
-          source: 'Objective Raids: Capellan Confederation'
+          source: 'OR'
           value: Montong
       - name:
-          source: 'Objective Raids: Capellan Confederation'
+          source: 'OR'
           value: Dendeez
     satellite:
       - name:
-          source: 'Objective Raids: Capellan Confederation'
+          source: 'OR'
           value: Stewart
         size: medium
         icon: rock1
@@ -117,10 +117,28 @@ planet:
         population: 129251573.0
       - date: '2340-01-01'
         population: 207703532.0
+      - date: '2341-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '2350-01-01'
         population: 314263682.0
       - date: '2360-01-01'
         population: 447609565.0
+      - date: '2366-01-01'
+        # administration: TH | Terra Firma Province
+        # administration: TH | Terra Firma Province
+        # administration: TH | Terra Firma Province
+        # administration: TH | Terra Firma Province
+        # administration: TH | Terra Firma Province
+        # administration: TH | Terra Firma Province
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - TH
       - date: '2370-01-01'
         population: 601443204.0
       - date: '2380-01-01'
@@ -207,6 +225,18 @@ planet:
         population: 4214157306.0
       - date: '2760-01-01'
         population: 4219649225.0
+      - date: '2767-01-01'
+        # administration: AE | Terra Firma Province
+        # administration: AE | Terra Firma Province
+        # administration: AE | Terra Firma Province
+        # administration: AE | Terra Firma Province
+        # administration: AE | Terra Firma Province
+        # administration: AE | Terra Firma Province
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - AE
       - date: '2767-12-01'
         faction:
           source: canon
@@ -215,6 +245,12 @@ planet:
       - date: '2770-01-01'
         population: 4206755440.0
       - date: '2779-11-12'
+        # administration: TH | Terra Firma Province
+        # administration: TH | Terra Firma Province
+        # administration: TH | Terra Firma Province
+        # administration: TH | Terra Firma Province
+        # administration: TH | Terra Firma Province
+        # administration: TH | Terra Firma Province
         faction:
           source: canon
           value:
@@ -222,6 +258,12 @@ planet:
       - date: '2780-01-01'
         population: 4160227138.0
       - date: '2790-12-26'
+        # administration: CC | Tikonov Commonality | Region 2
+        # administration: CC | Tikonov Commonality | Region 2
+        # administration: CC | Tikonov Commonality | Region 2
+        # administration: CC | Tikonov Commonality | Region 2
+        # administration: CC | Tikonov Commonality | Region 2
+        # administration: CC | Tikonov Commonality | Region 2
         faction:
           source: canon
           value:
@@ -234,6 +276,12 @@ planet:
       - date: '2820-01-01'
         population: 3998215959.0
       - date: '2821-01-12'
+        # administration: CC | Tikonov Commonality | Region 2
+        # administration: CC | Tikonov Commonality | Region 2
+        # administration: CC | Tikonov Commonality | Region 2
+        # administration: CC | Tikonov Commonality | Region 2
+        # administration: CC | Tikonov Commonality | Region 2
+        # administration: CC | Tikonov Commonality | Region 2
         faction:
           source: canon
           value:
@@ -308,8 +356,25 @@ planet:
           value:
             - FS
       - date: '3040-01-01'
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
         population: 3422470985.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
         faction:
           source: canon
           value:
@@ -320,13 +385,31 @@ planet:
           value: B-B-C-B-C
       - date: '3050-01-01'
         population: 3454448430.0
+      - date: '3057-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3057-11-01'
         faction:
           source: canon
           value:
             - CM
+      - date: '3058-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3060-01-01'
         population: 3492307877.0
+      - date: '3068-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - WOB
       - date: '3068-02-01'
         faction:
           source: canon
@@ -343,9 +426,32 @@ planet:
         population:
           source: canon
           value: 3580000000.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - Stone
       - date: '3080-01-01'
         population: 3584298579.0
+      - date: '3081-01-01'
+        # administration: ROS | Prefecture VI
+        # administration: ROS | Prefecture VI
+        # administration: ROS | Prefecture VI
+        # administration: ROS | Prefecture VI
+        # administration: ROS | Prefecture VI
+        # administration: ROS | Prefecture VI
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ROS
       - date: '3085-05-05'
+        # administration: ROS | Prefecture VI
+        # administration: ROS | Prefecture VI
+        # administration: ROS | Prefecture VI
+        # administration: ROS | Prefecture VI
+        # administration: ROS | Prefecture VI
+        # administration: ROS | Prefecture VI
         faction:
           source: canon
           value:
@@ -366,6 +472,12 @@ planet:
         hpg:
           source: canon
           value: X
+      - date: '3135-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3135-10-01'
         faction:
           source: canon
@@ -378,7 +490,25 @@ planet:
             - TTU
       - date: '3140-01-01'
         population: 3724612429.0
+      - date: '3145-01-01'
+        # administration: CC | Tikonov Commonality | Region 3
+        # administration: CC | Tikonov Commonality | Region 3
+        # administration: CC | Tikonov Commonality | Region 3
+        # administration: CC | Tikonov Commonality | Region 3
+        # administration: CC | Tikonov Commonality | Region 3
+        # administration: CC | Tikonov Commonality | Region 3
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CC
       - date: '3145-02-27'
+        # administration: CC | Tikonov Commonality | Region 2
+        # administration: CC | Tikonov Commonality | Region 2
+        # administration: CC | Tikonov Commonality | Region 2
+        # administration: CC | Tikonov Commonality | Region 2
+        # administration: CC | Tikonov Commonality | Region 2
+        # administration: CC | Tikonov Commonality | Region 2
         faction:
           source: canon
           value:

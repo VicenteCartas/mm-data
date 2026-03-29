@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -20,11 +20,13 @@ sucsId: 497
 xcood: -307.125
 ycood: -52.558
 spectralType:
-  source: 'Handbook: House Steiner, pg. 77'
+  source: 'HB:HS'
   value: M9II
+  page: 77
 primarySlot:
-  source: 'Handbook: House Steiner, pg. 77'
+  source: 'HB:HS'
   value: 4
+  page: 77
 event:
   - date: '2390-01-27'
     zenithCharge: yes
@@ -90,74 +92,91 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.04
     sysPos:
-      source: 'Handbook: House Steiner, pg. 77'
+      source: 'HB:HS'
       value: 4
+      page: 77
     icon: wet9
     pressure:
-      source: 'Handbook: House Steiner, pg. 77'
+      source: 'HB:HS'
       value: STANDARD
+      page: 77
     atmosphere:
-      source: 'Handbook: House Steiner, pg. 77'
+      source: 'HB:HS'
       value: BREATHABLE
+      page: 77
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'Handbook: House Steiner, pg. 77'
+      source: 'HB:HS'
       value: 0.99
+      page: 77
     diameter: 11592
     density: 6.001731039085
     dayLength: 20
     yearLength: 0.3
     temperature:
-      source: 'Handbook: House Steiner, pg. 77'
+      source: 'HB:HS'
       value: 40
+      page: 77
     water:
-      source: 'Handbook: House Steiner, pg. 77'
+      source: 'HB:HS'
       value: 80
+      page: 77
     lifeForm:
-      source: 'Handbook: House Steiner, pg. 77'
+      source: 'HB:HS'
       value: AMPHIBIAN
+      page: 77
     desc: |-
       Cavanaugh II has a warm climate with fertile soil and as a result the planet is known for its agriculture. The planet has a strong industrial base which makes it mostly self-sufficient and even creates enough to send to neighboring systems, however the planet's industry has focused on consumer goods.
 
       Cavanaugh II was settled by a mixture of English, Welsh and Scottish colonists.
     landmass:
       - name:
-          source: 'Handbook: House Steiner, pg. 77'
+          source: 'HB:HS'
           value: Bedivere
+          page: 77
       - name:
-          source: 'Handbook: House Steiner, pg. 77'
+          source: 'HB:HS'
           value: Gareth
+          page: 77
       - name:
-          source: 'Handbook: House Steiner, pg. 77'
+          source: 'HB:HS'
           value: Gawain
+          page: 77
         capital:
-          source: 'Handbook: House Steiner, pg. 77'
+          source: 'HB:HS'
           value: Caerleon
+          page: 77
       - name:
-          source: 'Handbook: House Steiner, pg. 77'
+          source: 'HB:HS'
           value: Mordred
+          page: 77
       - name:
-          source: 'Handbook: House Steiner, pg. 77'
+          source: 'HB:HS'
           value: Tristram
+          page: 77
     satellite:
       - name:
-          source: 'Handbook: House Steiner, pg. 77'
+          source: 'HB:HS'
           value: Cambriae
+          page: 77
         size: giant
         icon: rock9
       - name:
-          source: 'Handbook: House Steiner, pg. 77'
+          source: 'HB:HS'
           value: Gododin
+          page: 77
         size: large
         icon: rock15
       - name:
-          source: 'Handbook: House Steiner, pg. 77'
+          source: 'HB:HS'
           value: Nennius
+          page: 77
         size: medium
         icon: oddmoon1
       - name:
-          source: 'Handbook: House Steiner, pg. 77'
+          source: 'HB:HS'
           value: Tennyson
+          page: 77
         size: medium
         icon: rock1
     event:
@@ -183,6 +202,12 @@ planet:
       - date: '2362-01-01'
         socioIndustrial: C-C-C-C-D
       - date: '2365-05-11'
+        # administration: LA | Protectorate of Donegal | Alarion Province
+        # administration: LA | Protectorate of Donegal | Alarion Province
+        # administration: LA | Protectorate of Donegal | Alarion Province
+        # administration: LA | Protectorate of Donegal | Alarion Province
+        # administration: LA | Protectorate of Donegal | Alarion Province
+        # administration: LA | Protectorate of Donegal | Alarion Province
         faction:
           source: canon
           value:
@@ -292,6 +317,12 @@ planet:
         population: 319194403.0
       - date: '2820-01-01'
         population: 314832204.0
+      - date: '2821-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FWL
       - date: '2821-04-27'
         faction:
           source: canon
@@ -320,6 +351,12 @@ planet:
       - date: '2910-01-01'
         population: 266910550.0
       - date: '2920-05-28'
+        # administration: LA | Protectorate of Donegal | Alarion Province
+        # administration: LA | Protectorate of Donegal | Alarion Province
+        # administration: LA | Protectorate of Donegal | Alarion Province
+        # administration: LA | Protectorate of Donegal | Alarion Province
+        # administration: LA | Protectorate of Donegal | Alarion Province
+        # administration: LA | Protectorate of Donegal | Alarion Province
         faction:
           source: canon
           value:
@@ -350,8 +387,25 @@ planet:
       - date: '3034-01-01'
         socioIndustrial: C-C-D-C-D
       - date: '3040-01-01'
+        # administration: FC | Tamarind March | Bolan Operational Area
+        # administration: FC | Tamarind March | Bolan Operational Area
+        # administration: FC | Tamarind March | Bolan Operational Area
+        # administration: FC | Tamarind March | Bolan Operational Area
+        # administration: FC | Tamarind March | Bolan Operational Area
+        # administration: FC | Tamarind March | Bolan Operational Area
         population: 273955882.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
+        # administration: FC | Tamarind March | Bolan Operational Area
+        # administration: FC | Tamarind March | Bolan Operational Area
+        # administration: FC | Tamarind March | Bolan Operational Area
+        # administration: FC | Tamarind March | Bolan Operational Area
+        # administration: FC | Tamarind March | Bolan Operational Area
+        # administration: FC | Tamarind March | Bolan Operational Area
         faction:
           source: canon
           value:
@@ -362,13 +416,37 @@ planet:
           value: B-B-C-B-C
       - date: '3050-01-01'
         population: 276570864.0
+      - date: '3057-01-01'
+        # administration: LA | Tamarind March | Bolan Operational Area
+        # administration: LA | Tamarind March | Bolan Operational Area
+        # administration: LA | Tamarind March | Bolan Operational Area
+        # administration: LA | Tamarind March | Bolan Operational Area
+        # administration: LA | Tamarind March | Bolan Operational Area
+        # administration: LA | Tamarind March | Bolan Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '3057-09-18'
+        # administration: LA | Bolan Province | Cavanaugh Theater
+        # administration: LA | Bolan Province | Cavanaugh Theater
+        # administration: LA | Bolan Province | Cavanaugh Theater
+        # administration: LA | Bolan Province | Cavanaugh Theater
+        # administration: LA | Bolan Province | Cavanaugh Theater
+        # administration: LA | Bolan Province | Cavanaugh Theater
         faction:
           source: canon
           value:
             - LA
       - date: '3060-01-01'
         population: 278652944.0
+      - date: '3068-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FWL
       - date: '3068-09-28'
         faction:
           source: canon
@@ -376,7 +454,25 @@ planet:
             - FWL
       - date: '3070-01-01'
         population: 280582298.0
+      - date: '3079-01-01'
+        # administration: LA | Bolan Province | Dixie Theater
+        # administration: LA | Bolan Province | Dixie Theater
+        # administration: LA | Bolan Province | Dixie Theater
+        # administration: LA | Bolan Province | Dixie Theater
+        # administration: LA | Bolan Province | Dixie Theater
+        # administration: LA | Bolan Province | Dixie Theater
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '3079-10-01'
+        # administration: LA | Bolan Province | Dixie Theater
+        # administration: LA | Bolan Province | Dixie Theater
+        # administration: LA | Bolan Province | Dixie Theater
+        # administration: LA | Bolan Province | Dixie Theater
+        # administration: LA | Bolan Province | Dixie Theater
+        # administration: LA | Bolan Province | Dixie Theater
         faction:
           source: canon
           value:
@@ -397,6 +493,18 @@ planet:
         population: 297218357.0
       - date: '3140-01-01'
         population: 302374731.0
+      - date: '3145-01-01'
+        # administration: FWL | Duchy of Tammarind-Abbey
+        # administration: FWL | Duchy of Tammarind-Abbey
+        # administration: FWL | Duchy of Tammarind-Abbey
+        # administration: FWL | Duchy of Tammarind-Abbey
+        # administration: FWL | Duchy of Tammarind-Abbey
+        # administration: FWL | Duchy of Tammarind-Abbey
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FWL
       - date: '3145-06-17'
         faction:
           source: canon
@@ -404,6 +512,12 @@ planet:
             - DTA
         population: 304986367.0
       - date: '3151-01-01'
+        # administration: FWL | Duchy of Tammarind-Abbey
+        # administration: FWL | Duchy of Tammarind-Abbey
+        # administration: FWL | Duchy of Tammarind-Abbey
+        # administration: FWL | Duchy of Tammarind-Abbey
+        # administration: FWL | Duchy of Tammarind-Abbey
+        # administration: FWL | Duchy of Tammarind-Abbey
         faction:
           source: sucs
           value:

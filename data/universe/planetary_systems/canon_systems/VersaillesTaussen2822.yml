@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Versailles (Taussen 2822+)
-sucsId: 2678
+sucsId: 2679
 xcood: 206.934
 ycood: -81.726
 spectralType: G5V
@@ -88,6 +88,12 @@ planet:
       - name: Fischer's Roost
     event:
       - date: '2643-08-11'
+        # administration: FS | Crucis March | Markesan Operational Area
+        # administration: FS | Crucis March | Markesan Operational Area
+        # administration: FS | Crucis March | Markesan Operational Area
+        # administration: FS | Crucis March | Markesan Operational Area
+        # administration: FS | Crucis March | Markesan Operational Area
+        # administration: FS | Crucis March | Markesan Operational Area
         faction:
           source: canon
           value:
@@ -147,6 +153,11 @@ planet:
         hpg: B
       - date: '2830-01-01'
         population: 477858.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ABN
       - date: '2840-01-01'
         population: 3051946.0
       - date: '2850-01-01'
@@ -198,6 +209,12 @@ planet:
           source: canon
           value:
             - WOB
+      - date: '3058-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ABN
       - date: '3060-01-01'
         population: 529585656.0
       - date: '3070-01-01'
@@ -232,6 +249,11 @@ planet:
       - date: '2822-01-01'
         name: Taussen
         message: Versailles renamed to Taussen
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ABN
   - name: Attilloncourt
     type: DWARF_TERRESTRIAL
     orbitalDist: 1.44

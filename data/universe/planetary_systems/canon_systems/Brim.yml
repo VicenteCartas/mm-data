@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,15 +16,17 @@
 # affiliated with Microsoft.
 
 id: Brim
-sucsId: 2938
+sucsId: 2939
 xcood: -24.525
 ycood: 1768.565
 spectralType:
-  source: Warriors of Kerensky, pg. 112
+  source: WoK
   value: F9II
+  page: 112
 primarySlot:
-  source: Warriors of Kerensky, pg. 112
+  source: WoK
   value: 4
+  page: 112
 event:
   - date: '2820-04-23'
     zenithCharge: yes
@@ -96,32 +98,39 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 3.08
     sysPos:
-      source: Warriors of Kerensky, pg. 112
+      source: WoK
       value: 4
+      page: 112
     icon: green16
     pressure:
-      source: Warriors of Kerensky, pg. 112
+      source: WoK
       value: STANDARD
+      page: 112
     atmosphere:
-      source: Warriors of Kerensky, pg. 112
+      source: WoK
       value: TAINTED_POISON
+      page: 112
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: Warriors of Kerensky, pg. 112
+      source: WoK
       value: 2.0
+      page: 112
     diameter: 19749
     density: 7.116894351777
     dayLength: 22
     yearLength: 5.5
     temperature:
-      source: Warriors of Kerensky, pg. 112
+      source: WoK
       value: 25
+      page: 112
     water:
-      source: Warriors of Kerensky, pg. 112
+      source: WoK
       value: 20
+      page: 112
     lifeForm:
-      source: Warriors of Kerensky, pg. 112
+      source: WoK
       value: FISH
+      page: 112
     desc: No description available.
     smallMoons: 1
     landmass:
@@ -145,6 +154,12 @@ planet:
         population: 43597.0
       - date: '2820-01-01'
         population: 161816.0
+      - date: '2821-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CLAN
       - date: '2821-08-14'
         faction:
           source: canon
@@ -165,6 +180,12 @@ planet:
         population: 1666948.0
       - date: '2860-01-01'
         population: 2579234.0
+      - date: '2864-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CLAN
       - date: '2870-01-01'
         population: 3580899.0
       - date: '2880-01-01'
@@ -213,6 +234,12 @@ planet:
             - CSA
             - CSR
         population: 9585863.0
+      - date: '3063-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CLAN
       - date: '3070-01-01'
         population: 9632696.0
       - date: '3070-06-01'
@@ -230,6 +257,12 @@ planet:
             - CCC
             - CSV
             - SOC
+      - date: '3075-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CCC
       - date: '3075-04-17'
         faction:
           source: canon

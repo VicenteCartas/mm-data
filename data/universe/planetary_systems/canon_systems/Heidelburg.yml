@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Heidelburg
-sucsId: 1079
+sucsId: 1080
 xcood: -301.157
 ycood: 508.422
 spectralType: M0V
@@ -52,6 +52,12 @@ planet:
       - name: Izanami 4
     event:
       - date: '2600-05-15'
+        # administration: RWR | Apollo Province
+        # administration: RWR | Apollo Province
+        # administration: RWR | Apollo Province
+        # administration: RWR | Apollo Province
+        # administration: RWR | Apollo Province
+        # administration: RWR | Apollo Province
         faction:
           source: canon
           value:
@@ -125,6 +131,12 @@ planet:
         population: 93829.0
       - date: '2862-01-01'
         socioIndustrial: F-F-C-D-F
+      - date: '2864-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ABN
       - date: '2870-01-01'
         population: 33142.0
       - date: '2878-07-28'

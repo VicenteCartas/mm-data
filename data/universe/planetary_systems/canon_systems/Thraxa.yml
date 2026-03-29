@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,15 +16,16 @@
 # affiliated with Microsoft.
 
 id: Thraxa
-sucsId: 2536
+sucsId: 2537
 xcood: -322.077
 ycood: -378.003
 spectralType:
   source: canon
   value: M1V
 primarySlot:
-  source: 'Handbook: Major Periphery States, pg. 98'
+  source: 'HB:MPS'
   value: 2
+  page: 98
 event:
   - date: '2704-04-27'
     nadirCharge: yes
@@ -49,49 +50,59 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.2
     sysPos:
-      source: 'Handbook: Major Periphery States, pg. 98'
+      source: 'HB:MPS'
       value: 2
+      page: 98
     icon: wet3
     pressure:
-      source: 'Handbook: Major Periphery States, pg. 98'
+      source: 'HB:MPS'
       value: STANDARD
+      page: 98
     atmosphere:
-      source: 'Handbook: Major Periphery States, pg. 98'
+      source: 'HB:MPS'
       value: BREATHABLE
+      page: 98
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'Handbook: Major Periphery States, pg. 98'
+      source: 'HB:MPS'
       value: 1.03
+      page: 98
     diameter: 11552
     density: 6.265681463209
     dayLength: 22
     yearLength: 0.7
     temperature:
-      source: 'Handbook: Major Periphery States, pg. 98'
+      source: 'HB:MPS'
       value: 22
+      page: 98
     water:
-      source: 'Handbook: Major Periphery States, pg. 98'
+      source: 'HB:MPS'
       value: 80
+      page: 98
     lifeForm:
-      source: 'Handbook: Major Periphery States, pg. 98'
+      source: 'HB:MPS'
       value: MAMMAL
-    desc: Thraxa is a self sufficient world with successful fur, coal mining, textiles,
-      and lumber industries which keep the planet well supplied and provide ample
-      trade opportunities. The northern hemisphere is home to an impressive mountain
-      range which is a popular destination for climbers looking for a challenge. Much
-      of the northern hemisphere is tundra and covered in snow and ice year round.
+      page: 98
+    desc: Thraxa is a self sufficient world with successful fur, coal mining, textiles, and lumber industries which keep the planet well supplied and provide ample trade opportunities. The northern hemisphere is home to an impressive mountain range which is a popular destination for climbers looking for a challenge. Much of the northern hemisphere is tundra and covered in snow and ice year round.
     landmass:
       - name:
           source: canon
           value: Durango
     satellite:
       - name:
-          source: 'Handbook: Major Periphery States, pg. 98'
+          source: 'HB:MPS'
           value: Niobe
+          page: 98
         size: medium
         icon: rock12
     event:
       - date: '2682-06-06'
+        # administration: MOC | Ballad Province
+        # administration: MOC | Ballad Province
+        # administration: MOC | Ballad Province
+        # administration: MOC | Ballad Province
+        # administration: MOC | Ballad Province
+        # administration: MOC | Ballad Province
         faction:
           source: canon
           value:
@@ -216,6 +227,12 @@ planet:
         socioIndustrial: C-C-B-B-C
       - date: '3120-01-01'
         population: 20595824.0
+      - date: '3130-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3130-03-27'
         faction:
           source: canon
@@ -231,6 +248,12 @@ planet:
           source: canon
           value:
             - MH
+      - date: '3151-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
   - name: Serrano's Belt
     type: ASTEROID_BELT
     orbitalDist: 0.5

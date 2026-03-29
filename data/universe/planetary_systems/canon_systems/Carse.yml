@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -23,7 +23,7 @@ spectralType:
   source: canon
   value: G1V
 primarySlot:
-  source: House Steiner
+  source: HSSB
   value: 4
 event:
   - date: '2359-07-24'
@@ -93,7 +93,7 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 1.6
     sysPos:
-      source: House Steiner
+      source: HSSB
       value: 4
     icon: wet3
     pressure: THIN
@@ -107,7 +107,7 @@ planet:
     temperature: 19
     water: 84
     lifeForm:
-      source: House Steiner
+      source: HSSB
       value: INSECT
     desc: |-
       The Carse system has two stars - a G1V and an M1V. Due to the unique orbit around these two stars the inhabited planet (Carse IV) has an extremely varied climate depending on which of the four seasonal cycles it is currently in. As of 3025 the planet was in a cold cycle and as a result was blanketed in snow and its smallest ocean, Minor Mare, was completely frozen over.
@@ -168,6 +168,12 @@ planet:
       - date: '2340-01-01'
         population: 253011067.0
       - date: '2341-12-01'
+        # administration: LA | Tamar Pact
+        # administration: LA | Tamar Pact
+        # administration: LA | Tamar Pact
+        # administration: LA | Tamar Pact
+        # administration: LA | Tamar Pact
+        # administration: LA | Tamar Pact
         faction:
           source: canon
           value:
@@ -330,11 +336,28 @@ planet:
           value:
             - FRR
       - date: '3040-01-01'
+        # administration: FR | Skandia Province
+        # administration: FR | Skandia Province
+        # administration: FR | Skandia Province
+        # administration: FR | Skandia Province
+        # administration: FR | Skandia Province
+        # administration: FR | Skandia Province
         population: 628503286.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FR
       - date: '3046-01-01'
         socioIndustrial: C-C-A-C-B
       - date: '3050-01-01'
         population: 635391444.0
+      - date: '3052-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CW
       - date: '3052-02-12'
         faction:
           source: canon
@@ -369,6 +392,12 @@ planet:
           source: canon
           value: X
       - date: '3140-12-10'
+        # administration: RD | Region 3
+        # administration: RD | Region 3
+        # administration: RD | Region 3
+        # administration: RD | Region 3
+        # administration: RD | Region 3
+        # administration: RD | Region 3
         faction:
           source: canon
           value:

@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Vangburg
-sucsId: 2657
+sucsId: 2658
 xcood: 613.999
 ycood: 267.841
 spectralType: M1V
@@ -52,6 +52,12 @@ planet:
       - name: Skien
     event:
       - date: '2731-11-26'
+        # administration: OA | Traders Domain
+        # administration: OA | Traders Domain
+        # administration: OA | Traders Domain
+        # administration: OA | Traders Domain
+        # administration: OA | Traders Domain
+        # administration: OA | Traders Domain
         faction:
           source: canon
           value:
@@ -86,6 +92,12 @@ planet:
         population: 214109.0
       - date: '2860-01-01'
         population: 65166.0
+      - date: '2864-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '2864-10-28'
         faction:
           source: canon

@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Fadiffolu
-sucsId: 838
+sucsId: 839
 xcood: -243.532
 ycood: -242.779
 spectralType: K2V
@@ -59,6 +59,12 @@ planet:
         capital: Saint-Lin-Laurentides
     event:
       - date: '2479-09-29'
+        # administration: FWL | Principality of Regulus
+        # administration: FWL | Principality of Regulus
+        # administration: FWL | Principality of Regulus
+        # administration: FWL | Principality of Regulus
+        # administration: FWL | Principality of Regulus
+        # administration: FWL | Principality of Regulus
         faction:
           source: canon
           value:
@@ -213,6 +219,12 @@ planet:
         population: 285064356.0
       - date: '3080-01-01'
         population: 287009399.0
+      - date: '3081-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3081-07-14'
         faction:
           source: canon
@@ -236,6 +248,12 @@ planet:
         population: 295868460.0
       - date: '3145-01-01'
         population: 296698053.0
+      - date: '3152-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FWL
       - date: '3152-06-01'
         faction:
           source: canon

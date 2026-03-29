@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Portland
-sucsId: 2055
+sucsId: 2056
 xcood: 91.271
 ycood: -508.604
 spectralType: G3V
@@ -68,6 +68,12 @@ planet:
       - name: New Seaview Gardens
     event:
       - date: '2650-07-26'
+        # administration: TC | Brinton Union
+        # administration: TC | Brinton Union
+        # administration: TC | Brinton Union
+        # administration: TC | Brinton Union
+        # administration: TC | Brinton Union
+        # administration: TC | Brinton Union
         faction:
           source: canon
           value:
@@ -99,6 +105,12 @@ planet:
       - date: '2740-01-01'
         population: 74527479.0
       - date: '2750-02-06'
+        # administration: TC | Brinton Union
+        # administration: TC | Brinton Union
+        # administration: TC | Brinton Union
+        # administration: TC | Brinton Union
+        # administration: TC | Brinton Union
+        # administration: TC | Brinton Union
         faction:
           source: canon
           value:
@@ -130,6 +142,12 @@ planet:
         socioIndustrial: D-F-B-F-D
       - date: '2860-01-01'
         population: 1603025.0
+      - date: '2864-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ABN
       - date: '2870-01-01'
         population: 1019364.0
       - date: '2880-01-01'
@@ -167,6 +185,18 @@ planet:
       - date: '3057-12-09'
         faction:
           source: canon
+          value:
+            - NCR
+      - date: '3058-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
+      - date: '3059-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
           value:
             - NCR
       - date: '3060-01-01'

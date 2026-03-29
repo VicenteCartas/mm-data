@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Schuyler
-sucsId: 2264
+sucsId: 2265
 xcood: 122.264
 ycood: 367.016
 spectralType:
@@ -124,10 +124,7 @@ planet:
     lifeForm:
       source: canon
       value: BIRD
-    desc: Schuyler is an agricultural world that gained some significant manufacturing
-      capacity prior to the Rasalhague secession, when it was further away from hostile
-      borders. Schuyler is home to several factories, including one of the Inner Sphere’s
-      few remaining JumpShip manufacturers.
+    desc: Schuyler is an agricultural world that gained some significant manufacturing capacity prior to the Rasalhague secession, when it was further away from hostile borders. Schuyler is home to several factories, including one of the Inner Sphere’s few remaining JumpShip manufacturers.
     landmass:
       - name:
           source: canon
@@ -147,6 +144,12 @@ planet:
         icon: rock2
     event:
       - date: '2322-08-17'
+        # administration: DC | Pesht Military District | Coudoux Prefecture
+        # administration: DC | Pesht Military District | Coudoux Prefecture
+        # administration: DC | Pesht Military District | Coudoux Prefecture
+        # administration: DC | Pesht Military District | Coudoux Prefecture
+        # administration: DC | Pesht Military District | Coudoux Prefecture
+        # administration: DC | Pesht Military District | Coudoux Prefecture
         faction:
           source: canon
           value:
@@ -319,7 +322,17 @@ planet:
           source: canon
           value: B-B-A-A-A
       - date: '3050-01-01'
+        # administration: DC | Pesht Military District | Albiero Prefecture
+        # administration: DC | Pesht Military District | Albiero Prefecture
+        # administration: DC | Pesht Military District | Albiero Prefecture
+        # administration: DC | Pesht Military District | Albiero Prefecture
+        # administration: DC | Pesht Military District | Albiero Prefecture
         population: 211058480.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CSJ
       - date: '3050-06-01'
         faction:
           source: canon
@@ -331,6 +344,18 @@ planet:
           source: canon
           value:
             - CSJ
+      - date: '3059-01-01'
+        # administration: DC | Pesht Military District | Lonaconing Prefecture
+        # administration: DC | Pesht Military District | Lonaconing Prefecture
+        # administration: DC | Pesht Military District | Lonaconing Prefecture
+        # administration: DC | Pesht Military District | Lonaconing Prefecture
+        # administration: DC | Pesht Military District | Lonaconing Prefecture
+        # administration: DC | Pesht Military District | Lonaconing Prefecture
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - DC
       - date: '3059-08-01'
         faction:
           source: canon
@@ -338,6 +363,12 @@ planet:
             - DC
             - CSJ
       - date: '3059-08-13'
+        # administration: DC | Pesht Military District | Albiero Prefecture
+        # administration: DC | Pesht Military District | Albiero Prefecture
+        # administration: DC | Pesht Military District | Albiero Prefecture
+        # administration: DC | Pesht Military District | Albiero Prefecture
+        # administration: DC | Pesht Military District | Albiero Prefecture
+        # administration: DC | Pesht Military District | Albiero Prefecture
         faction:
           source: canon
           value:

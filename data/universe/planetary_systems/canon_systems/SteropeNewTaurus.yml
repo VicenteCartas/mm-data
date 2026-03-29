@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,15 +16,16 @@
 # affiliated with Microsoft.
 
 id: Sterope (New Taurus)
-sucsId: 2411
+sucsId: 2412
 xcood: 266.755
 ycood: -404.334
 spectralType:
   source: canon
   value: K2V
 primarySlot:
-  source: Periphery (1ed), pg. 86
+  source: Per1e
   value: 5
+  page: 86
 event:
   - date: '2536-04-13'
     zenithCharge: yes
@@ -96,8 +97,9 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.49
     sysPos:
-      source: Periphery (1ed), pg. 86
+      source: Per1e
       value: 5
+      page: 86
     icon: green23
     pressure:
       source: canon
@@ -118,20 +120,10 @@ planet:
       source: canon
       value: 50
     lifeForm:
-      source: Periphery (1ed), pg. 86
+      source: Per1e
       value: MAMMAL
-    desc: Sterope was not colonized until the 26th century during a concerted effort
-      by the Taurian Concordat to settle more worlds. Sterope is a comfortable planet
-      with abundant natural resources, sufficient arable land to feed its population
-      and well established industry. Sterope is home to several military manufacturers,
-      including Sterope Defense Industries in the planetary capital of Tegea on the
-      Siren continent, which produces many of the BattleMech scale weapons for the
-      Concordat, and a satellite factory for Taurus Territorial Industries which is
-      located in Taurus City and also on the continent of Siren. The TTI plant produces
-      aerospace fighters, combat vehicles, battle armor, dropships and defensive equipment
-      including static gun emplacements and mines. Sterope is also home to the Sterope
-      Taurian Academy, which trains armored and unarmored infantry in the mountain
-      town of Heracles on the Siren continent.
+      page: 86
+    desc: Sterope was not colonized until the 26th century during a concerted effort by the Taurian Concordat to settle more worlds. Sterope is a comfortable planet with abundant natural resources, sufficient arable land to feed its population and well established industry. Sterope is home to several military manufacturers, including Sterope Defense Industries in the planetary capital of Tegea on the Siren continent, which produces many of the BattleMech scale weapons for the Concordat, and a satellite factory for Taurus Territorial Industries which is located in Taurus City and also on the continent of Siren. The TTI plant produces aerospace fighters, combat vehicles, battle armor, dropships and defensive equipment including static gun emplacements and mines. Sterope is also home to the Sterope Taurian Academy, which trains armored and unarmored infantry in the mountain town of Heracles on the Siren continent.
     landmass:
       - name:
           source: canon
@@ -181,6 +173,12 @@ planet:
           value:
             - SL
       - date: '2597-03-21'
+        # administration: TC | Perdition Union
+        # administration: TC | Perdition Union
+        # administration: TC | Perdition Union
+        # administration: TC | Perdition Union
+        # administration: TC | Perdition Union
+        # administration: TC | Perdition Union
         faction:
           source: canon
           value:

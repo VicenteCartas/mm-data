@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,15 +16,17 @@
 # affiliated with Microsoft.
 
 id: Texlos
-sucsId: 2521
+sucsId: 2522
 xcood: 110.627
 ycood: -272.516
 spectralType:
-  source: 'Handbook: House Liao, pg. 83'
+  source: 'HB:HL'
   value: K8V
+  page: 83
 primarySlot:
-  source: 'Handbook: House Liao, pg. 83'
+  source: 'HB:HL'
   value: 6
+  page: 83
 event:
   - date: '2380-02-11'
     nadirCharge: yes
@@ -123,32 +125,39 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.24
     sysPos:
-      source: 'Handbook: House Liao, pg. 83'
+      source: 'HB:HL'
       value: 6
+      page: 83
     icon: green36
     pressure:
-      source: 'Handbook: House Liao, pg. 83'
+      source: 'HB:HL'
       value: STANDARD
+      page: 83
     atmosphere:
-      source: 'Handbook: House Liao, pg. 83'
+      source: 'HB:HL'
       value: BREATHABLE
+      page: 83
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'Handbook: House Liao, pg. 83'
+      source: 'HB:HL'
       value: 0.99
+      page: 83
     diameter: 11929
     density: 5.832045893312
     dayLength: 24
     yearLength: 0.8
     temperature:
-      source: 'Handbook: House Liao, pg. 83'
+      source: 'HB:HL'
       value: 30
+      page: 83
     water:
-      source: 'Handbook: House Liao, pg. 83'
+      source: 'HB:HL'
       value: 45
+      page: 83
     lifeForm:
-      source: 'Handbook: House Liao, pg. 83'
+      source: 'HB:HL'
       value: AMPHIBIAN
+      page: 83
     desc: |-
       Texlos is a cool, temperate planet with a moderate climate and pleasant garden atmosphere. During the Succession Wars, Texlos' location on the Capellan border with the Federated Suns discouraged immigration, however the planet maintained one of the highest population growth rates in the region. The planet historically provided a large pool of manpower for the St. Ives Armor Cavalry and St. Ives reserve units. Rebuilt after the Second Succession War, Texlos's small industrial base supports several Aerospace industry firms.
 
@@ -158,28 +167,31 @@ planet:
       Kajuka (Aerospace division)
     landmass:
       - name:
-          source: 'Objective Raids: Capellan Confederation'
+          source: 'OR'
           value: Livius
         capital:
-          source: 'Objective Raids: Capellan Confederation'
+          source: 'OR'
           value: Valencia
       - name:
-          source: 'Objective Raids: Capellan Confederation'
+          source: 'OR'
           value: Titus
     satellite:
       - name:
-          source: 'Handbook: House Liao, pg. 83'
+          source: 'HB:HL'
           value: Alicia
+          page: 83
         size: medium
         icon: oddmoon2
       - name:
-          source: 'Handbook: House Liao, pg. 83'
+          source: 'HB:HL'
           value: Maxia
+          page: 83
         size: large
         icon: rock8
       - name:
-          source: 'Handbook: House Liao, pg. 83'
+          source: 'HB:HL'
           value: Rose
+          page: 83
         size: medium
         icon: rock4
     event:
@@ -233,7 +245,19 @@ planet:
         population: 694279544.0
       - date: '2360-01-01'
         population: 849112324.0
+      - date: '2366-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - SIML
       - date: '2367-07-01'
+        # administration: CC | St. Ives Commonality | Region 5
+        # administration: CC | St. Ives Commonality | Region 5
+        # administration: CC | St. Ives Commonality | Region 5
+        # administration: CC | St. Ives Commonality | Region 5
+        # administration: CC | St. Ives Commonality | Region 5
+        # administration: CC | St. Ives Commonality | Region 5
         faction:
           source: canon
           value:
@@ -388,7 +412,25 @@ planet:
           value: 4273000000.0
       - date: '3027-01-01'
         socioIndustrial: B-C-C-C-C
+      - date: '3030-01-01'
+        # administration: SIC | Region 4
+        # administration: SIC | Region 4
+        # administration: SIC | Region 4
+        # administration: SIC | Region 4
+        # administration: SIC | Region 4
+        # administration: SIC | Region 4
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - SIC
       - date: '3030-12-07'
+        # administration: SIC | Region 4
+        # administration: SIC | Region 4
+        # administration: SIC | Region 4
+        # administration: SIC | Region 4
+        # administration: SIC | Region 4
+        # administration: SIC | Region 4
         faction:
           source: canon
           value:
@@ -405,6 +447,12 @@ planet:
       - date: '3060-01-01'
         population: 5219797562.0
       - date: '3062-06-03'
+        # administration: CC | St. Ives Commonality | Region 3
+        # administration: CC | St. Ives Commonality | Region 3
+        # administration: CC | St. Ives Commonality | Region 3
+        # administration: CC | St. Ives Commonality | Region 3
+        # administration: CC | St. Ives Commonality | Region 3
+        # administration: CC | St. Ives Commonality | Region 3
         faction:
           source: canon
           value:

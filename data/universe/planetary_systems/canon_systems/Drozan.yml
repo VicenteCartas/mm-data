@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -20,11 +20,13 @@ sucsId: 744
 xcood: 31.267
 ycood: -369.942
 spectralType:
-  source: 'Handbook: House Liao, pg. 86'
+  source: 'HB:HL'
   value: F2V
+  page: 86
 primarySlot:
-  source: 'Handbook: House Liao, pg. 86'
+  source: 'HB:HL'
   value: 5
+  page: 86
 event:
   - date: '2735-10-11'
     nadirCharge: yes
@@ -113,55 +115,58 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 2.4
     sysPos:
-      source: 'Handbook: House Liao, pg. 86'
+      source: 'HB:HL'
       value: 5
+      page: 86
     icon: green47
     pressure:
-      source: 'Handbook: House Liao, pg. 86'
+      source: 'HB:HL'
       value: STANDARD
+      page: 86
     atmosphere:
-      source: 'Handbook: House Liao, pg. 86'
+      source: 'HB:HL'
       value: BREATHABLE
+      page: 86
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'Handbook: House Liao, pg. 86'
+      source: 'HB:HL'
       value: 0.96
+      page: 86
     diameter: 11285
     density: 5.978485391606
     dayLength: 26
     yearLength: 3.9
     temperature:
-      source: 'Handbook: House Liao, pg. 86'
+      source: 'HB:HL'
       value: 29
+      page: 86
     water:
-      source: 'Handbook: House Liao, pg. 86'
+      source: 'HB:HL'
       value: 71
+      page: 86
     lifeForm:
-      source: 'Handbook: House Liao, pg. 86'
+      source: 'HB:HL'
       value: MAMMAL
-    desc: Drozan is a warm, temperate planet well suited to a nearly infinite variety
-      of agricultural production. Drozan provides five percent of the Confederation's
-      annual food requirements through large, continuously operating, automated cultivation
-      and processing plants. A well-developed aquafarming industry complements the
-      terrestrial technology. A growing food synthesis industry is supported by research
-      facilities in Drozan's northern hemisphere. At least one Warrior House battalion
-      is stationed on the planet at all times and rotated on a monthly basis to give
-      the impression of larger troop strength. A variety of motorised and jump-trained
-      militia are also based on Drozan, with mechanized equipment reserves in place
-      at all times. Drozan is home to a Duchy RTC which focuses on training vehicle
-      crews and unarmored infantry.
+      page: 86
+    desc: Drozan is a warm, temperate planet well suited to a nearly infinite variety of agricultural production. Drozan provides five percent of the Confederation's annual food requirements through large, continuously operating, automated cultivation and processing plants. A well-developed aquafarming industry complements the terrestrial technology. A growing food synthesis industry is supported by research facilities in Drozan's northern hemisphere. At least one Warrior House battalion is stationed on the planet at all times and rotated on a monthly basis to give the impression of larger troop strength. A variety of motorised and jump-trained militia are also based on Drozan, with mechanized equipment reserves in place at all times. Drozan is home to a Duchy RTC which focuses on training vehicle crews and unarmored infantry.
     landmass:
       - name:
-          source: 'Objective Raids: Capellan Confederation'
+          source: 'OR'
           value: Broad
       - name:
-          source: 'Objective Raids: Capellan Confederation'
+          source: 'OR'
           value: Walton
         capital:
-          source: 'Objective Raids: Capellan Confederation'
+          source: 'OR'
           value: Rid
     event:
       - date: '2731-09-01'
+        # administration: CC | Sian Commonality | Region 9
+        # administration: CC | Sian Commonality | Region 9
+        # administration: CC | Sian Commonality | Region 9
+        # administration: CC | Sian Commonality | Region 9
+        # administration: CC | Sian Commonality | Region 9
+        # administration: CC | Sian Commonality | Region 9
         faction:
           source: canon
           value:
@@ -236,6 +241,11 @@ planet:
           value: 4772000000.0
       - date: '3030-01-01'
         population: 6102595719.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - MOC
       - date: '3030-10-13'
         faction:
           source: canon
@@ -254,6 +264,12 @@ planet:
             - CC
             - MOC
       - date: '3032-04-01'
+        # administration: CC | Sian Commonality | Region 13
+        # administration: CC | Sian Commonality | Region 13
+        # administration: CC | Sian Commonality | Region 13
+        # administration: CC | Sian Commonality | Region 13
+        # administration: CC | Sian Commonality | Region 13
+        # administration: CC | Sian Commonality | Region 13
         faction:
           source: canon
           value:

@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Mechdur
-sucsId: 1650
+sucsId: 1651
 xcood: 112.42
 ycood: -423.345
 spectralType:
@@ -112,6 +112,12 @@ planet:
         icon: rock7
     event:
       - date: '2605-12-24'
+        # administration: CC | Sian Commonality | Region 14
+        # administration: CC | Sian Commonality | Region 14
+        # administration: CC | Sian Commonality | Region 14
+        # administration: CC | Sian Commonality | Region 14
+        # administration: CC | Sian Commonality | Region 14
+        # administration: CC | Sian Commonality | Region 14
         faction:
           source: canon
           value:
@@ -171,6 +177,18 @@ planet:
           source: canon
           value:
             - IND
+      - date: '2822-01-01'
+        # administration: CC | Sian Commonality | Region 15
+        # administration: CC | Sian Commonality | Region 15
+        # administration: CC | Sian Commonality | Region 15
+        # administration: CC | Sian Commonality | Region 15
+        # administration: CC | Sian Commonality | Region 15
+        # administration: CC | Sian Commonality | Region 15
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CC
       - date: '2930-01-01'
         faction:
           source: canon
@@ -181,6 +199,12 @@ planet:
           source: This is the earliest the directorate could have taken over
           value:
             - ARD
+      - date: '3025-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ARC
       - date: '3025-01-25'
         faction:
           source: assumption
@@ -203,11 +227,24 @@ planet:
         socioIndustrial:
           source: canon
           value: C-C-A-B-B
+      - date: '3030-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ABN
       - date: '3151-01-01'
         faction:
           source: sucs
           value:
             - ABN
+      - date: '3152-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
+    desc: Mechdur was a failed Capellan industrial development project that suffered from rampant bureaucracy. After the Confederation abandoned the world, Mechdur found its footing under its hereditary oligarchs. Located within one jump of nearly every Coalition system, it has grown into the commerce and industry hub of the Aurigan Reach. The planet features three major spaceports across its continents and a recharging station at the nadir jump point. Over half of the world's 1.4 billion people live in the three provinces containing the spaceport cities. Mechdur is home to most of the region's manufacturing, from consumer goods to BattleMech weaponry.
   - name: Viracocha
     type: TERRESTRIAL
     orbitalDist: 0.9

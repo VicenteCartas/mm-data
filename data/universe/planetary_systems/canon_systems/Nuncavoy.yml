@@ -1,0 +1,278 @@
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
+#
+# NOTICE: The MegaMek organization is a non-profit group of volunteers
+# creating free software for the BattleTech community.
+#
+# MechWarrior, BattleMech, `Mech and AeroTech are registered trademarks
+# of The Topps Company, Inc. All Rights Reserved.
+#
+# Catalyst Game Labs and the Catalyst Game Labs logo are trademarks of
+# InMediaRes Productions, LLC.
+#
+# MechWarrior Copyright Microsoft Corporation. MegaMek Data was created under
+# Microsoft's "Game Content Usage Rules"
+# <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
+# affiliated with Microsoft.
+
+id: Nuncavoy
+sucsId: 3119
+xcood: 45.168
+ycood: -445.933
+spectralType: G3V
+primarySlot: 2
+planet:
+  - type: TERRESTRIAL
+    orbitalDist: 0.4
+    sysPos: 1
+    icon: barren4
+    pressure: Low
+    atmosphere: TOXIC_POISON
+    composition: Nitrogen, plus trace amounts of Water Vapor
+    gravity: 0.46
+    diameter: 5500
+    density: 5.8437
+    dayLength: 23
+    yearLength: 1
+    temperature: 192
+    water: 0
+    ring: true
+    smallMoons: 3
+    name: Nuncavoy I
+  - type: TERRESTRIAL
+    orbitalDist: 0.7
+    sysPos: 2
+    icon: frozen7
+    pressure: STANDARD
+    atmosphere: BREATHABLE
+    composition: Nitrogen and Oxygen, plus trace gases
+    gravity: 1.14
+    diameter: 13800
+    density: 5.8284
+    dayLength: 25
+    yearLength: 1.2
+    temperature: 42
+    water: 26
+    lifeForm: BIRD
+    name: Nuncavoy
+    event:
+      - date: '2750-01-01'
+        population: 52026.0
+        socioIndustrial: C-D-A-D-C
+      - date: '2760-01-01'
+        population: 214386.0
+      - date: '2770-01-01'
+        population: 658290.0
+      - date: '2780-01-01'
+        population: 1614987.0
+      - date: '2790-01-01'
+        population: 3282057.0
+      - date: '2800-01-01'
+        population: 5762069.0
+      - date: '2810-01-01'
+        population: 8961779.0
+      - date: '2820-01-01'
+        population: 12712515.0
+      - date: '2822-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
+      - date: '2830-01-01'
+        population: 16773900.0
+      - date: '2840-01-01'
+        population: 21041758.0
+      - date: '2850-01-01'
+        population: 25284936.0
+      - date: '2860-01-01'
+        population: 29266789.0
+      - date: '2870-01-01'
+        population: 32892061.0
+      - date: '2880-01-01'
+        population: 36074472.0
+      - date: '2890-01-01'
+        population: 24190832.0
+      - date: '2900-01-01'
+        population: 13752521.0
+      - date: '2910-01-01'
+        population: 7771495.0
+      - date: '2920-01-01'
+        population: 3779165.0
+      - date: '2930-01-01'
+        population: 1730592.0
+      - date: '2940-01-01'
+        population: 802070.0
+      - date: '2950-01-01'
+        population: 445150.0
+      - date: '2960-01-01'
+        population: 265529.0
+      - date: '2970-01-01'
+        population: 165189.0
+      - date: '2980-01-01'
+        population: 93348.0
+      - date: '2990-01-01'
+        population: 46778.0
+      - date: '3000-01-01'
+        population: 26276.0
+      - date: '3010-01-01'
+        population: 17255.0
+      - date: '3020-01-01'
+        population: 11960.0
+      - date: '3030-01-01'
+        population: 0.0
+        socioIndustrial: X-X-X-X-X
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ABN
+  - type: DWARF_TERRESTRIAL
+    orbitalDist: 1
+    sysPos: 3
+    icon: barren10
+    pressure: Vacuum
+    atmosphere: NONE
+    gravity: 0.11
+    diameter: 1500
+    density: 5
+    dayLength: 25
+    yearLength: 1.4
+    temperature: 14
+    water: 0
+    smallMoons: 3
+    name: Nuncavoy III
+  - type: GAS_GIANT
+    orbitalDist: 1.6
+    sysPos: 4
+    icon: gasg29
+    pressure: VERY_HIGH
+    atmosphere: TOXIC_POISON
+    composition: Hydrogen and Helium, plus trace gases
+    gravity: 1.85
+    diameter: 130000
+    density: 1
+    dayLength: 16
+    yearLength: 2.3
+    smallMoons: 16
+    satellite:
+      - name: 4-M1
+        size: medium
+        icon: rock1
+      - name: 4-M2
+        size: medium
+        icon: rock2
+      - name: 4-M3
+        size: medium
+        icon: rock3
+      - name: 4-M4
+        size: medium
+        icon: rock4
+    name: Nuncavoy IV
+  - type: GAS_GIANT
+    orbitalDist: 2.8
+    sysPos: 5
+    icon: gasg1
+    pressure: VERY_HIGH
+    atmosphere: TOXIC_POISON
+    composition: Hydrogen and Helium, plus trace gases
+    gravity: 2.39
+    diameter: 140000
+    density: 1.2
+    dayLength: 14
+    yearLength: 4.8
+    smallMoons: 11
+    satellite:
+      - name: 5-M1
+        size: medium
+        icon: rock1
+      - name: 5-M2
+        size: medium
+        icon: rock2
+    name: Nuncavoy V
+  - type: GIANT_TERRESTRIAL
+    orbitalDist: 5.2
+    sysPos: 6
+    icon: gasg19
+    pressure: VERY_HIGH
+    atmosphere: TOXIC_POISON
+    composition: Hydrogen and Helium, plus trace gases
+    gravity: 1.99
+    diameter: 17500
+    density: 8
+    dayLength: 15
+    yearLength: 11.9
+    smallMoons: 2
+    name: Nuncavoy VI
+  - type: ASTEROID_BELT
+    orbitalDist: 10
+    sysPos: 7
+    icon: asteroid2
+    yearLength: 31.6
+    temperature: -182
+    name: Nuncavoy VII
+  - type: GAS_GIANT
+    orbitalDist: 19.6
+    sysPos: 8
+    icon: gasg22
+    pressure: VERY_HIGH
+    atmosphere: TOXIC_POISON
+    composition: Hydrogen and Helium, plus trace gases
+    gravity: 2.4
+    diameter: 130000
+    density: 1.3
+    dayLength: 16
+    yearLength: 86.8
+    smallMoons: 17
+    satellite:
+      - name: 8-M1
+        size: medium
+        icon: rock1
+      - name: 8-M2
+        size: medium
+        icon: rock2
+    name: Nuncavoy VIII
+  - type: GAS_GIANT
+    orbitalDist: 77.2
+    sysPos: 9
+    icon: gasg29
+    pressure: VERY_HIGH
+    atmosphere: TOXIC_POISON
+    composition: Hydrogen and Helium, plus trace gases
+    gravity: 1.85
+    diameter: 130000
+    density: 1
+    dayLength: 10
+    yearLength: 678.3
+    ring: true
+    smallMoons: 20
+    name: Nuncavoy IX
+  - type: GAS_GIANT
+    orbitalDist: 154
+    sysPos: 10
+    icon: gasg1
+    pressure: VERY_HIGH
+    atmosphere: TOXIC_POISON
+    composition: Hydrogen and Helium, plus trace gases
+    gravity: 3.42
+    diameter: 160000
+    density: 1.5
+    dayLength: 9
+    yearLength: 1911.1
+    ring: true
+    smallMoons: 14
+    satellite:
+      - name: 10-L1
+        size: large
+        icon: rock1
+      - name: 10-M1
+        size: medium
+        icon: rock1
+      - name: 10-M2
+        size: medium
+        icon: rock2
+      - name: 10-M3
+        size: medium
+        icon: rock3
+    name: Nuncavoy X
+event: [ ]

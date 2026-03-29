@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Tukayyid
-sucsId: 2600
+sucsId: 2601
 xcood: -4.431
 ycood: 210.42
 spectralType: G7V
@@ -70,28 +70,34 @@ planet:
     sysPos: 3
     icon: green21
     pressure:
-      source: 25 Years of Art and Fiction, pg. 227
+      source: 25YAF
       value: STANDARD
+      page: 227
     atmosphere:
-      source: 25 Years of Art and Fiction, pg. 227
+      source: 25YAF
       value: BREATHABLE
+      page: 227
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 25 Years of Art and Fiction, pg. 227
+      source: 25YAF
       value: 1.03
+      page: 227
     diameter: 11274
     density: 6.42035902813
     dayLength: 19
     yearLength: 1.3
     temperature:
-      source: 25 Years of Art and Fiction, pg. 227
+      source: 25YAF
       value: 40
+      page: 227
     water:
-      source: 25 Years of Art and Fiction, pg. 227
+      source: 25YAF
       value: 60
+      page: 227
     lifeForm:
-      source: 25 Years of Art and Fiction, pg. 227
+      source: 25YAF
       value: MAMMAL
+      page: 227
     landmass:
       - name: Seyid Sadiq
         capital: Dohuk
@@ -99,13 +105,15 @@ planet:
       - name: Přibyslav
     satellite:
       - name:
-          source: 25 Years of Art and Fiction, pg. 227
+          source: 25YAF
           value: Ayyub
+          page: 227
         size: medium
         icon: oddmoon3
       - name:
-          source: 25 Years of Art and Fiction, pg. 227
+          source: 25YAF
           value: Seyyeb
+          page: 227
         size: medium
         icon: oddmoon3
     event:
@@ -152,6 +160,12 @@ planet:
       - date: '2540-01-01'
         population: 286255362.0
       - date: '2543-07-01'
+        # administration: LA | Tamar Pact | Camlann Shire
+        # administration: LA | Tamar Pact | Camlann Shire
+        # administration: LA | Tamar Pact | Camlann Shire
+        # administration: LA | Tamar Pact | Camlann Shire
+        # administration: LA | Tamar Pact | Camlann Shire
+        # administration: LA | Tamar Pact | Camlann Shire
         faction:
           source: canon
           value:
@@ -226,7 +240,25 @@ planet:
         population: 538530982.0
       - date: '2860-01-01'
         population: 528424797.0
+      - date: '2864-01-01'
+        # administration: DC | Benjamin Military District | Dehgolan Prefecture
+        # administration: DC | Benjamin Military District | Dehgolan Prefecture
+        # administration: DC | Benjamin Military District | Dehgolan Prefecture
+        # administration: DC | Benjamin Military District | Dehgolan Prefecture
+        # administration: DC | Benjamin Military District | Dehgolan Prefecture
+        # administration: DC | Benjamin Military District | Dehgolan Prefecture
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - DC
       - date: '2864-08-15'
+        # administration: DC | Rasalhague Military District | Rubigen Prefecture
+        # administration: DC | Rasalhague Military District | Rubigen Prefecture
+        # administration: DC | Rasalhague Military District | Rubigen Prefecture
+        # administration: DC | Rasalhague Military District | Rubigen Prefecture
+        # administration: DC | Rasalhague Military District | Rubigen Prefecture
+        # administration: DC | Rasalhague Military District | Rubigen Prefecture
         faction:
           source: canon
           value:
@@ -273,7 +305,18 @@ planet:
           value:
             - FRR
       - date: '3040-01-01'
+        # administration: FR | Skandia Province
+        # administration: FR | Skandia Province
+        # administration: FR | Skandia Province
+        # administration: FR | Skandia Province
+        # administration: FR | Skandia Province
+        # administration: FR | Skandia Province
         population: 433110229.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FR
       - date: '3044-01-01'
         socioIndustrial: A-C-B-B-B
       - date: '3050-01-01'
@@ -294,8 +337,20 @@ planet:
           value:
             - FRR
             - CS
+      - date: '3057-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FR
       - date: '3060-01-01'
         population: 442478673.0
+      - date: '3068-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - WOB
       - date: '3070-01-01'
         population: 446925657.0
       - date: '3072-05-15'
@@ -318,12 +373,24 @@ planet:
             - CW
             - CHH
             - CDS
+      - date: '3079-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CGB
       - date: '3080-01-01'
         population: 452140181.0
       - date: '3081-01-01'
         socioIndustrial: A-C-B-B-A
       - date: '3090-01-01'
         population: 458239634.0
+      - date: '3095-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CDS
       - date: '3100-01-01'
         population: 464328496.0
       - date: '3103-03-13'
@@ -339,12 +406,28 @@ planet:
         population: 476559349.0
       - date: '3130-01-01'
         population: 481830439.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CS
       - date: '3132-08-07'
         hpg: X
       - date: '3140-01-01'
         population: 486186486.0
       - date: '3145-01-01'
+        # administration: RD | Region 3
+        # administration: RD | Region 3
+        # administration: RD | Region 3
+        # administration: RD | Region 3
+        # administration: RD | Region 3
+        # administration: RD | Region 3
         population: 488525791.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - RD
   - name: Bin Muntasir
     type: DWARF_TERRESTRIAL
     orbitalDist: 1.44

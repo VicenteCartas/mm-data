@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,15 +16,17 @@
 # affiliated with Microsoft.
 
 id: Fort Loudon
-sucsId: 895
+sucsId: 896
 xcood: -32.326
 ycood: 209.081
 spectralType:
-  source: FedCom Civil War, pg. 197
+  source: FCCW
   value: G6III
+  page: 197
 primarySlot:
-  source: FedCom Civil War, pg. 197
+  source: FCCW
   value: 3
+  page: 197
 event:
   - date: '2462-05-10'
     nadirCharge: yes
@@ -69,62 +71,72 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 1.44
     sysPos:
-      source: FedCom Civil War, pg. 197
+      source: FCCW
       value: 3
+      page: 197
     icon: wet18
     pressure:
-      source: FedCom Civil War, pg. 197
+      source: FCCW
       value: STANDARD
+      page: 197
     atmosphere:
-      source: FedCom Civil War, pg. 197
+      source: FCCW
       value: BREATHABLE
+      page: 197
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: FedCom Civil War, pg. 197
+      source: FCCW
       value: 1.0
+      page: 197
     diameter: 13964
     density: 5.032485372961
     dayLength: 26
     yearLength: 2.0
     temperature:
-      source: FedCom Civil War, pg. 197
+      source: FCCW
       value: 45
+      page: 197
     water:
-      source: FedCom Civil War, pg. 197
+      source: FCCW
       value: 80
+      page: 197
     lifeForm:
-      source: FedCom Civil War, pg. 197
+      source: FCCW
       value: MAMMAL
-    desc: Fort Loudon was not colonized until 2460 by the Lyran Commonwealth and was
-      briefly known as simply LC/T-2395, until 2465 after the heroic actions of Captain
-      Calvin Loudon on Nox that year. The jungle covered mountains of the Brunei continent
-      are full of massive deposits of rare metals and the Tunisonda continent has
-      exceptionally arable land which supports more than sufficient agriculture to
-      feed the planet’s population, the final continent is Anderssen, which is home
-      to the planetary capital of Palos. Anderssen’s Dover Mountains are home to gold
-      and platinum mining. The planet is home to a Castle Brian named Fortress Loudon
-      that survived the Succession Wars.
+      page: 197
+    desc: Fort Loudon was not colonized until 2460 by the Lyran Commonwealth and was briefly known as simply LC/T-2395, until 2465 after the heroic actions of Captain Calvin Loudon on Nox that year. The jungle covered mountains of the Brunei continent are full of massive deposits of rare metals and the Tunisonda continent has exceptionally arable land which supports more than sufficient agriculture to feed the planet’s population, the final continent is Anderssen, which is home to the planetary capital of Palos. Anderssen’s Dover Mountains are home to gold and platinum mining. The planet is home to a Castle Brian named Fortress Loudon that survived the Succession Wars.
     landmass:
       - name:
-          source: FedCom Civil War, pg. 197
+          source: FCCW
           value: Anderssen
+          page: 197
         capital:
-          source: FedCom Civil War, pg. 197
+          source: FCCW
           value: Palos
+          page: 197
       - name:
-          source: FedCom Civil War, pg. 197
+          source: FCCW
           value: Brunei
+          page: 197
       - name:
-          source: FedCom Civil War, pg. 197
+          source: FCCW
           value: Tunisonda
+          page: 197
     satellite:
       - name:
-          source: FedCom Civil War, pg. 197
+          source: FCCW
           value: Précis
+          page: 197
         size: medium
         icon: rock11
     event:
       - date: '2460-03-28'
+        # administration: LA | Tamar Pact | Camlann Shire
+        # administration: LA | Tamar Pact | Camlann Shire
+        # administration: LA | Tamar Pact | Camlann Shire
+        # administration: LA | Tamar Pact | Camlann Shire
+        # administration: LA | Tamar Pact | Camlann Shire
+        # administration: LA | Tamar Pact | Camlann Shire
         faction:
           source: canon
           value:
@@ -199,6 +211,12 @@ planet:
       - date: '2740-01-01'
         population: 526650098.0
       - date: '2750-12-23'
+        # administration: LA | Tamar Pact | Camlann Shire
+        # administration: LA | Tamar Pact | Camlann Shire
+        # administration: LA | Tamar Pact | Camlann Shire
+        # administration: LA | Tamar Pact | Camlann Shire
+        # administration: LA | Tamar Pact | Camlann Shire
+        # administration: LA | Tamar Pact | Camlann Shire
         faction:
           source: canon
           value:
@@ -266,8 +284,25 @@ planet:
       - date: '3037-01-01'
         socioIndustrial: C-C-B-B-C
       - date: '3040-01-01'
+        # administration: FC | Tamar March | Benfled Operational Area
+        # administration: FC | Tamar March | Benfled Operational Area
+        # administration: FC | Tamar March | Benfled Operational Area
+        # administration: FC | Tamar March | Benfled Operational Area
+        # administration: FC | Tamar March | Benfled Operational Area
+        # administration: FC | Tamar March | Benfled Operational Area
         population: 446557741.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
+        # administration: FC | Tamar March | Benfled Operational Area
+        # administration: FC | Tamar March | Benfled Operational Area
+        # administration: FC | Tamar March | Benfled Operational Area
+        # administration: FC | Tamar March | Benfled Operational Area
+        # administration: FC | Tamar March | Benfled Operational Area
+        # administration: FC | Tamar March | Benfled Operational Area
         faction:
           source: canon
           value:
@@ -278,7 +313,25 @@ planet:
           value: B-B-A-B-B
       - date: '3050-01-01'
         population: 448571779.0
+      - date: '3057-01-01'
+        # administration: LA | Tamar March | Pandora Operational Area
+        # administration: LA | Tamar March | Pandora Operational Area
+        # administration: LA | Tamar March | Pandora Operational Area
+        # administration: LA | Tamar March | Pandora Operational Area
+        # administration: LA | Tamar March | Pandora Operational Area
+        # administration: LA | Tamar March | Pandora Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '3057-09-18'
+        # administration: LA | Donegal Province | Pandora Theater
+        # administration: LA | Donegal Province | Pandora Theater
+        # administration: LA | Donegal Province | Pandora Theater
+        # administration: LA | Donegal Province | Pandora Theater
+        # administration: LA | Donegal Province | Pandora Theater
+        # administration: LA | Donegal Province | Pandora Theater
         faction:
           source: canon
           value:
@@ -291,7 +344,25 @@ planet:
           value:
             - LA
             - FC
+      - date: '3063-01-01'
+        # administration: LA | Donegal Province | Pandora Theater
+        # administration: LA | Donegal Province | Pandora Theater
+        # administration: LA | Donegal Province | Pandora Theater
+        # administration: LA | Donegal Province | Pandora Theater
+        # administration: LA | Donegal Province | Pandora Theater
+        # administration: LA | Donegal Province | Pandora Theater
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '3063-02-03'
+        # administration: LA | Arc-Royal Theater
+        # administration: LA | Arc-Royal Theater
+        # administration: LA | Arc-Royal Theater
+        # administration: LA | Arc-Royal Theater
+        # administration: LA | Arc-Royal Theater
+        # administration: LA | Arc-Royal Theater
         faction:
           source: canon
           value:
@@ -322,6 +393,12 @@ planet:
           source: canon
           value: X
       - date: '3140-04-17'
+        # administration: RD | Region 3
+        # administration: RD | Region 3
+        # administration: RD | Region 3
+        # administration: RD | Region 3
+        # administration: RD | Region 3
+        # administration: RD | Region 3
         faction:
           source: canon
           value:

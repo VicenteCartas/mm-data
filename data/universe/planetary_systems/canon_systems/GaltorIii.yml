@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: Galtor III
-sucsId: 926
+sucsId: 927
 xcood: 194.121
 ycood: 73.107
 spectralType:
-  source: 'Historical Turning Point: Galtor'
+  source: 'HTP:Galtor'
   value: F8V
 primarySlot:
-  source: 'Historical Turning Point: Galtor'
+  source: 'HTP:Galtor'
   value: 3
 event:
   - date: '2353-02-21'
@@ -79,64 +79,54 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 1.2
     sysPos:
-      source: 'Historical Turning Point: Galtor'
+      source: 'HTP:Galtor'
       value: 3
     icon: green37
     pressure:
-      source: 'Historical Turning Point: Galtor'
+      source: 'HTP:Galtor'
       value: STANDARD
     atmosphere:
-      source: 'Historical Turning Point: Galtor'
+      source: 'HTP:Galtor'
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'Historical Turning Point: Galtor'
+      source: 'HTP:Galtor'
       value: 1.0
     diameter: 12951
     density: 5.426502307261
     dayLength: 24
     yearLength: 1.7
     temperature:
-      source: 'Historical Turning Point: Galtor'
+      source: 'HTP:Galtor'
       value: 45
     water:
-      source: 'Historical Turning Point: Galtor'
+      source: 'HTP:Galtor'
       value: 70
     lifeForm:
-      source: 'Historical Turning Point: Galtor'
+      source: 'HTP:Galtor'
       value: MAMMAL
-    desc: Galtor III is an agriculture world that is moderately advanced with basic
-      heavy industry. The planet has three continents. The first continent, Eire,
-      has a spine of vast mountains and an extensive agricultural plain. The other
-      two continents are mostly desert and mountain with sections of coastal flood
-      plains and jungles. New Derry and New Wuhan City are the largest on the planet.
-      Originally founded by members of the Pan-Oriental Co-prosperity and the Free
-      Irish National Federation the colonists differences soon led to a civil war.
-      Only the breakout of a plague ultimately united the world. During the Age of
-      War Galtor III became the breadbasket feeding the surrounding systems. During
-      the Star League the SLDF built a massive logistical base on the planet and soon
-      the world supplied food to SLDF troops around the Inner Sphere.
+    desc: Galtor III is an agriculture world that is moderately advanced with basic heavy industry. The planet has three continents. The first continent, Eire, has a spine of vast mountains and an extensive agricultural plain. The other two continents are mostly desert and mountain with sections of coastal flood plains and jungles. New Derry and New Wuhan City are the largest on the planet. Originally founded by members of the Pan-Oriental Co-prosperity and the Free Irish National Federation the colonists differences soon led to a civil war. Only the breakout of a plague ultimately united the world. During the Age of War Galtor III became the breadbasket feeding the surrounding systems. During the Star League the SLDF built a massive logistical base on the planet and soon the world supplied food to SLDF troops around the Inner Sphere.
     landmass:
       - name:
-          source: 'Historical Turning Point: Galtor'
+          source: 'HTP:Galtor'
           value: Eire
         capital:
-          source: 'Historical Turning Point: Galtor'
+          source: 'HTP:Galtor'
           value: New Derry
       - name:
-          source: 'Historical Turning Point: Galtor'
+          source: 'HTP:Galtor'
           value: Ilnacullin
       - name:
-          source: 'Historical Turning Point: Galtor'
+          source: 'HTP:Galtor'
           value: Samphire
     satellite:
       - name:
-          source: 'Historical Turning Point: Galtor'
+          source: 'HTP:Galtor'
           value: Froma
         size: medium
         icon: rock16
       - name:
-          source: 'Historical Turning Point: Galtor'
+          source: 'HTP:Galtor'
           value: Temos
         size: medium
         icon: rock16
@@ -196,6 +186,12 @@ planet:
       - date: '2360-01-01'
         population: 16345696.0
       - date: '2370-06-16'
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
         faction:
           source: canon
           value:
@@ -308,7 +304,25 @@ planet:
         population: 35550380.0
       - date: '2820-01-01'
         population: 35398062.0
+      - date: '2821-01-01'
+        # administration: DC | Benjamin Military District | Irurzun Prefecture
+        # administration: DC | Benjamin Military District | Irurzun Prefecture
+        # administration: DC | Benjamin Military District | Irurzun Prefecture
+        # administration: DC | Benjamin Military District | Irurzun Prefecture
+        # administration: DC | Benjamin Military District | Irurzun Prefecture
+        # administration: DC | Benjamin Military District | Irurzun Prefecture
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - DC
       - date: '2821-12-11'
+        # administration: DC | Benjamin Military District | Irurzun Prefecture
+        # administration: DC | Benjamin Military District | Irurzun Prefecture
+        # administration: DC | Benjamin Military District | Irurzun Prefecture
+        # administration: DC | Benjamin Military District | Irurzun Prefecture
+        # administration: DC | Benjamin Military District | Irurzun Prefecture
+        # administration: DC | Benjamin Military District | Irurzun Prefecture
         faction:
           source: canon
           value:
@@ -358,6 +372,12 @@ planet:
       - date: '3020-01-01'
         population: 33441914.0
       - date: '3022-06-01'
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
         faction:
           source: canon
           value:
@@ -367,8 +387,25 @@ planet:
           source: canon
           value: 33000000.0
       - date: '3030-01-01'
+        # administration: DC | Benjamin Military District | Irurzun Prefecture
+        # administration: DC | Benjamin Military District | Irurzun Prefecture
+        # administration: DC | Benjamin Military District | Irurzun Prefecture
+        # administration: DC | Benjamin Military District | Irurzun Prefecture
+        # administration: DC | Benjamin Military District | Irurzun Prefecture
+        # administration: DC | Benjamin Military District | Irurzun Prefecture
         population: 65865471.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - DC
       - date: '3030-12-31'
+        # administration: DC | Benjamin Military District | Irurzun Prefecture
+        # administration: DC | Benjamin Military District | Irurzun Prefecture
+        # administration: DC | Benjamin Military District | Irurzun Prefecture
+        # administration: DC | Benjamin Military District | Irurzun Prefecture
+        # administration: DC | Benjamin Military District | Irurzun Prefecture
+        # administration: DC | Benjamin Military District | Irurzun Prefecture
         faction:
           source: canon
           value:
@@ -396,6 +433,12 @@ planet:
       - date: '3090-01-01'
         population: 4218585099.0
       - date: '3096-11-06'
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
         faction:
           source: canon
           value:
@@ -416,7 +459,25 @@ planet:
           value: X
       - date: '3140-01-01'
         population: 4404821724.0
+      - date: '3145-01-01'
+        # administration: DC | Benjamin Military District | Irurzun Prefecture
+        # administration: DC | Benjamin Military District | Irurzun Prefecture
+        # administration: DC | Benjamin Military District | Irurzun Prefecture
+        # administration: DC | Benjamin Military District | Irurzun Prefecture
+        # administration: DC | Benjamin Military District | Irurzun Prefecture
+        # administration: DC | Benjamin Military District | Irurzun Prefecture
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - DC
       - date: '3145-01-28'
+        # administration: DC | Benjamin Military District | Irurzun Prefecture
+        # administration: DC | Benjamin Military District | Irurzun Prefecture
+        # administration: DC | Benjamin Military District | Irurzun Prefecture
+        # administration: DC | Benjamin Military District | Irurzun Prefecture
+        # administration: DC | Benjamin Military District | Irurzun Prefecture
+        # administration: DC | Benjamin Military District | Irurzun Prefecture
         faction:
           source: canon
           value:

@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Koury
-sucsId: 1408
+sucsId: 1409
 xcood: 595.138
 ycood: 250.793
 spectralType: F5V
@@ -95,6 +95,12 @@ planet:
         icon: rock1
     event:
       - date: '2620-03-20'
+        # administration: OA | Traders Domain
+        # administration: OA | Traders Domain
+        # administration: OA | Traders Domain
+        # administration: OA | Traders Domain
+        # administration: OA | Traders Domain
+        # administration: OA | Traders Domain
         faction:
           source: canon
           value:
@@ -156,6 +162,12 @@ planet:
         population: 240794.0
       - date: '2860-01-01'
         population: 135473.0
+      - date: '2864-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '2864-11-26'
         faction:
           source: canon

@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Zangul
-sucsId: 2816
+sucsId: 2817
 xcood: 119.804
 ycood: -402.483
 spectralType: K6V
@@ -55,6 +55,12 @@ planet:
       - name: New Miyashiro Machi
     event:
       - date: '2708-02-16'
+        # administration: CC | Sian Commonality | Region 12
+        # administration: CC | Sian Commonality | Region 12
+        # administration: CC | Sian Commonality | Region 12
+        # administration: CC | Sian Commonality | Region 12
+        # administration: CC | Sian Commonality | Region 12
+        # administration: CC | Sian Commonality | Region 12
         faction:
           source: canon
           value:
@@ -92,6 +98,12 @@ planet:
           source: canon
           value:
             - IND
+      - date: '2822-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ABN
       - date: '3003-01-01'
         faction:
           source: canon
@@ -102,6 +114,12 @@ planet:
           source: This is the earliest the directorate could have taken over
           value:
             - ARD
+      - date: '3025-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ARC
       - date: '3025-03-15'
         faction:
           source: assumption
@@ -114,11 +132,18 @@ planet:
           value:
             - ARC
         population: 4456717.0
+      - date: '3030-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ABN
       - date: '3151-01-01'
         faction:
           source: sucs
           value:
             - ABN
+    desc: A cold water-world with chains of rocky islands and sprawling archipelagos. Most of the population lives on a single larger island entirely covered with the slowly decaying hulk of the original Capellan spaceport.
   - name: Fugen
     type: TERRESTRIAL
     orbitalDist: 0.42

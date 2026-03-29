@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Spitz
-sucsId: 2924
+sucsId: 2925
 xcood: 221.008
 ycood: -429.166
 spectralType: F5V
@@ -80,7 +80,31 @@ planet:
         capital: Eberstein
       - name: Kaiserswahl
     event:
+      - date: '3030-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
+      - date: '3040-01-01'
+        # administration: TC | Hyades Union
+        # administration: TC | Hyades Union
+        # administration: TC | Hyades Union
+        # administration: TC | Hyades Union
+        # administration: TC | Hyades Union
+        # administration: TC | Hyades Union
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - TC
       - date: '3040-09-08'
+        # administration: TC | Hyades Union
+        # administration: TC | Hyades Union
+        # administration: TC | Hyades Union
+        # administration: TC | Hyades Union
+        # administration: TC | Hyades Union
+        # administration: TC | Hyades Union
         faction:
           source: canon
           value:

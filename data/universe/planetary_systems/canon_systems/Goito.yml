@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Goito
-sucsId: 975
+sucsId: 976
 xcood: 44.706
 ycood: 332.893
 spectralType:
@@ -104,15 +104,7 @@ planet:
     lifeForm:
       source: canon
       value: MAMMAL
-    desc: Goito is a cold planet that barely qualifies as temperate, though the equatorial
-      region is warm enough to support significant arable land and the planet has
-      bountiful agricultural concerns. Aside from the arable land, Goito has had little
-      else to attract significant military attention and did not suffer significant
-      damage during the Succession Wars. Goito was part of the Draconis Combine for
-      most of its history before becoming part of the Free Rasalhague Republic, until
-      the planet was conquered by Clan Ghost Bear during Operation Revival. Years
-      after being captured, the Bears decided to locate one of their mobile factories
-      on Goito to avoid concentrating all of their industry on Alshain.
+    desc: Goito is a cold planet that barely qualifies as temperate, though the equatorial region is warm enough to support significant arable land and the planet has bountiful agricultural concerns. Aside from the arable land, Goito has had little else to attract significant military attention and did not suffer significant damage during the Succession Wars. Goito was part of the Draconis Combine for most of its history before becoming part of the Free Rasalhague Republic, until the planet was conquered by Clan Ghost Bear during Operation Revival. Years after being captured, the Bears decided to locate one of their mobile factories on Goito to avoid concentrating all of their industry on Alshain.
     landmass:
       - name:
           source: canon
@@ -135,6 +127,12 @@ planet:
         icon: rock13
     event:
       - date: '2661-12-02'
+        # administration: DC | Rasalhague Military District | Radstadt Prefecture
+        # administration: DC | Rasalhague Military District | Radstadt Prefecture
+        # administration: DC | Rasalhague Military District | Radstadt Prefecture
+        # administration: DC | Rasalhague Military District | Radstadt Prefecture
+        # administration: DC | Rasalhague Military District | Radstadt Prefecture
+        # administration: DC | Rasalhague Military District | Radstadt Prefecture
         faction:
           source: canon
           value:
@@ -233,7 +231,18 @@ planet:
           value:
             - FRR
       - date: '3040-01-01'
+        # administration: FR | Radstadt Province
+        # administration: FR | Radstadt Province
+        # administration: FR | Radstadt Province
+        # administration: FR | Radstadt Province
+        # administration: FR | Radstadt Province
+        # administration: FR | Radstadt Province
         population: 130335881.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FR
       - date: '3044-01-01'
         socioIndustrial:
           source: canon
@@ -256,6 +265,12 @@ planet:
       - date: '3100-01-01'
         population: 135275687.0
       - date: '3103-03-13'
+        # administration: RD | Region 2
+        # administration: RD | Region 2
+        # administration: RD | Region 2
+        # administration: RD | Region 2
+        # administration: RD | Region 2
+        # administration: RD | Region 2
         faction:
           source: canon
           value:

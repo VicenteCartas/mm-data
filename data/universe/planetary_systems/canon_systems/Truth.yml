@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,15 +16,17 @@
 # affiliated with Microsoft.
 
 id: Truth
-sucsId: 2590
+sucsId: 2591
 xcood: 78.315
 ycood: -159.326
 spectralType:
-  source: House Liao, pg. 148
+  source: HLSB
   value: G1IV
+  page: 148
 primarySlot:
-  source: House Liao, pg. 148
+  source: HLSB
   value: 6
+  page: 148
 event:
   - date: '2407-05-14'
     nadirCharge: yes
@@ -136,8 +138,9 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 1.6
     sysPos:
-      source: House Liao, pg. 148
+      source: HLSB
       value: 6
+      page: 148
     icon: dry4
     pressure: THIN
     atmosphere: BREATHABLE
@@ -152,12 +155,7 @@ planet:
     lifeForm:
       source: canon
       value: MAMMAL
-    desc: On 25 March 3013, a horrible massacre of religious dissidents occurred on
-      Truth. Unknown raiders attacked without provocation and killed over 50,000 men,
-      women and children. Investigations were unable to determine the identity of
-      the attackers. The few remaining inhabitants of Truth who escaped the carnage
-      have since tried unsuccessfully to restore their agricultural colony to its
-      former glory.
+    desc: On 25 March 3013, a horrible massacre of religious dissidents occurred on Truth. Unknown raiders attacked without provocation and killed over 50,000 men, women and children. Investigations were unable to determine the identity of the attackers. The few remaining inhabitants of Truth who escaped the carnage have since tried unsuccessfully to restore their agricultural colony to its former glory.
     landmass:
       - name: Greater Simpson
         capital: New Mauricie
@@ -212,6 +210,12 @@ planet:
       - date: '2360-01-01'
         population: 4268.0
       - date: '2367-07-01'
+        # administration: CC | Sarna Commonality | Region 6
+        # administration: CC | Sarna Commonality | Region 6
+        # administration: CC | Sarna Commonality | Region 6
+        # administration: CC | Sarna Commonality | Region 6
+        # administration: CC | Sarna Commonality | Region 6
+        # administration: CC | Sarna Commonality | Region 6
         faction:
           source: canon
           value:
@@ -364,6 +368,18 @@ planet:
         population:
           source: canon
           value: 3000.0
+      - date: '3030-01-01'
+        # administration: LA | Sarna March | Palos Operational Area
+        # administration: LA | Sarna March | Palos Operational Area
+        # administration: LA | Sarna March | Palos Operational Area
+        # administration: LA | Sarna March | Palos Operational Area
+        # administration: LA | Sarna March | Palos Operational Area
+        # administration: LA | Sarna March | Palos Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '3030-03-15'
         faction:
           source: canon
@@ -373,8 +389,25 @@ planet:
       - date: '3034-01-01'
         socioIndustrial: B-D-D-B-B
       - date: '3040-01-01'
+        # administration: FC | Sarna March | Palos Operational Area
+        # administration: FC | Sarna March | Palos Operational Area
+        # administration: FC | Sarna March | Palos Operational Area
+        # administration: FC | Sarna March | Palos Operational Area
+        # administration: FC | Sarna March | Palos Operational Area
+        # administration: FC | Sarna March | Palos Operational Area
         population: 547976.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
+        # administration: FC | Sarna March | Palos Operational Area
+        # administration: FC | Sarna March | Palos Operational Area
+        # administration: FC | Sarna March | Palos Operational Area
+        # administration: FC | Sarna March | Palos Operational Area
+        # administration: FC | Sarna March | Palos Operational Area
+        # administration: FC | Sarna March | Palos Operational Area
         faction:
           source: canon
           value:
@@ -383,7 +416,25 @@ planet:
         socioIndustrial: A-C-C-A-B
       - date: '3050-01-01'
         population: 16464110.0
+      - date: '3057-01-01'
+        # administration: CC | Capella Commonality | Region 10
+        # administration: CC | Capella Commonality | Region 10
+        # administration: CC | Capella Commonality | Region 10
+        # administration: CC | Capella Commonality | Region 10
+        # administration: CC | Capella Commonality | Region 10
+        # administration: CC | Capella Commonality | Region 10
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CC
       - date: '3057-10-01'
+        # administration: CC | Capella Commonality | Region 10
+        # administration: CC | Capella Commonality | Region 10
+        # administration: CC | Capella Commonality | Region 10
+        # administration: CC | Capella Commonality | Region 10
+        # administration: CC | Capella Commonality | Region 10
+        # administration: CC | Capella Commonality | Region 10
         faction:
           source: canon
           value:

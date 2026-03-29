@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Star Cluster P12
-sucsId: 3032
+sucsId: 2994
 xcood: 115.721
 ycood: 1304.581
 spectralType: G4V
@@ -78,6 +78,12 @@ planet:
       - name: Richard
         capital: White's Meridian City
     event:
+      - date: '3095-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3095-12-30'
         faction:
           source: canon
@@ -214,8 +220,7 @@ planet:
     icon: frozen24
     pressure: STANDARD
     atmosphere: TOXIC_CAUSTIC
-    composition: Methane and Ammonia, plus trace amounts of Argon and Hydrochloric
-      Acid
+    composition: Methane and Ammonia, plus trace amounts of Argon and Hydrochloric Acid
     gravity: 1.03
     diameter: 14500
     density: 5.0

@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,15 +16,17 @@
 # affiliated with Microsoft.
 
 id: Trondheim (JF)
-sucsId: 3139
+sucsId: 3102
 xcood: 576.252
 ycood: 526.423
 spectralType:
-  source: Interstellar Players, pg. 111
+  source: ISP
   value: G2V
+  page: 111
 primarySlot:
-  source: Interstellar Players, pg. 111
+  source: ISP
   value: 1
+  page: 111
 planet:
   - name:
       source: canon
@@ -32,53 +34,55 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.7
     sysPos:
-      source: Interstellar Players, pg. 111
+      source: ISP
       value: 1
+      page: 111
     icon: green28
     pressure:
-      source: Interstellar Players, pg. 111
+      source: ISP
       value: STANDARD
+      page: 111
     atmosphere:
-      source: Interstellar Players, pg. 111
+      source: ISP
       value: BREATHABLE
+      page: 111
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: Interstellar Players, pg. 111
+      source: ISP
       value: 1.06
+      page: 111
     diameter: 12450
     density: 5.983333141019
     dayLength: 22
     yearLength: 1.2
     temperature:
-      source: Interstellar Players, pg. 111
+      source: ISP
       value: 28
+      page: 111
     water:
-      source: Interstellar Players, pg. 111
+      source: ISP
       value: 72
+      page: 111
     lifeForm:
-      source: Interstellar Players, pg. 111
+      source: ISP
       value: PLANT
-    desc: Trondheim is the second most populated world in the small JarnFolk nation
-      and the most industrialized. The planet is the main venue for both dropship
-      and jumpship maintenance of the small JarnFolk fleet. All of the major families
-      have a presence on the planet and as a result Trondheim is the planetary capital
-      of the JarnFolk. The industries on planet are capable of producing replacement
-      parts for their dropships and jumpships and there are dry docks located in orbit.
-      The docks are likely automated designs from the founding of the colonies in
-      the early 26th Century.
+      page: 111
+    desc: Trondheim is the second most populated world in the small JarnFolk nation and the most industrialized. The planet is the main venue for both dropship and jumpship maintenance of the small JarnFolk fleet. All of the major families have a presence on the planet and as a result Trondheim is the planetary capital of the JarnFolk. The industries on planet are capable of producing replacement parts for their dropships and jumpships and there are dry docks located in orbit. The docks are likely automated designs from the founding of the colonies in the early 26th Century.
     landmass:
       - name:
           source: canon
           value: Narvik
     satellite:
       - name:
-          source: Interstellar Players, pg. 111
+          source: ISP
           value: Glittertindane
+          page: 111
         size: large
         icon: rock9
       - name:
-          source: Interstellar Players, pg. 111
+          source: ISP
           value: Trollvegn
+          page: 111
         size: medium
         icon: rock8
     event:

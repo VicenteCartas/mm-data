@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Tanis (Radulov 2600-)
-sucsId: 2934
+sucsId: 2935
 xcood: -57.373
 ycood: 1603.16
 spectralType:
@@ -96,6 +96,12 @@ planet:
         size: large
         icon: rock13
     event:
+      - date: '2571-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '2749-09-04'
         faction:
           source: canon
@@ -161,6 +167,12 @@ planet:
         population: 42657.0
       - date: '3020-01-01'
         population: 33469.0
+      - date: '3025-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CCC
       - date: '3025-09-25'
         faction:
           source: canon
@@ -181,12 +193,24 @@ planet:
             - CCC
       - date: '3060-01-01'
         population: 15206.0
+      - date: '3063-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CLAN
       - date: '3067-12-20'
         faction:
           source: canon
           value:
             - CSA
             - CCC
+      - date: '3068-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CLAN
       - date: '3070-01-01'
         population: 12436.0
       - date: '3072-12-31'
@@ -221,6 +245,12 @@ planet:
             - SOC
             - CCC
             - CSA
+      - date: '3075-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ABN
       - date: '3075-04-25'
         faction:
           source: canon

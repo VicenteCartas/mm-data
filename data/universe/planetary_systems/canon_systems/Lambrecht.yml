@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: Lambrecht
-sucsId: 1446
+sucsId: 1447
 xcood: 13.435
 ycood: 57.597
 spectralType:
-  source: MWDA world profiles
+  source: DA:RW
   value: G6IV
 primarySlot:
-  source: MWDA world profiles
+  source: DA:RW
   value: 1
 event:
   - date: '2355-04-07'
@@ -35,31 +35,31 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 1.44
     sysPos:
-      source: MWDA world profiles
+      source: DA:RW
       value: 1
     icon: wet6
     pressure:
-      source: MWDA world profiles
+      source: DA:RW
       value: STANDARD
     atmosphere:
-      source: MWDA world profiles
+      source: DA:RW
       value: TAINTED_POISON
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: MWDA world profiles
+      source: DA:RW
       value: 1.03
     diameter: 15973
     density: 4.531571303718
     dayLength: 25
     yearLength: 2.0
     temperature:
-      source: MWDA world profiles
+      source: DA:RW
       value: 33
     water:
-      source: MWDA world profiles
+      source: DA:RW
       value: 82
     lifeForm:
-      source: MWDA world profiles
+      source: DA:RW
       value: REPTILE
     desc: |-
       In many respects Lambrecht was considered an ideal candidate for colonization. Abundant mineral and metal deposits, ripe for mining and refining on the surface and in the orbiting debris field from a failed moon, promised a booming industrial economy, while fertile soil, terrestrial seasons, and a biosphere suitable for human life all described a virtual paradise. The only drawback, settlers quickly learned, was that the planet was entering a stage of geological settling, stirred constantly by gravitational tides caused by its large G6-class sun. The resulting earthquakes, common all over the world, have generally been mild, but prevented the colonists from establishing large structures or concentrated cities, a trend that continues despite advances in building materials and planetwide expertise in earthquake damage-control procedures. As a result, Lambrecht‘s five island continents are dotted with small to medium-sized towns, the largest of which, the planetary capital of Middle Park, boasts a population of just 967,000.
@@ -70,26 +70,26 @@ planet:
 
       Aside from the large island continent of Galapagos in the northern hemisphere of this world, where Middle Park stands, Lambrecht‘s four other continents are Brattanios, and Falkos, in the northern hemisphere, east of Galapagos, and Phillipharos, and Shasia in the south. Shasia, dominated by tundra, is by far the least populous of these landmasses, but recent discovery of an untapped boron vein has awakened some interest in mining the metal for the possible rebirth of the high-boron industry.
     ring:
-      source: MWDA world profiles
+      source: DA:RW
       value: yes
     landmass:
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Brattanios
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Falkos
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Galapagos
         capital:
-          source: MWDA world profiles
+          source: DA:RW
           value: Middle Park
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Phillipharos
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Shasia
     satellite:
       - name: None (asteroid ring)
@@ -158,6 +158,12 @@ planet:
       - date: '2330-01-01'
         population: 747803339.0
       - date: '2340-10-24'
+        # administration: TH | Lone Star Province
+        # administration: TH | Lone Star Province
+        # administration: TH | Lone Star Province
+        # administration: TH | Lone Star Province
+        # administration: TH | Lone Star Province
+        # administration: TH | Lone Star Province
         faction:
           source: canon
           value:
@@ -253,6 +259,18 @@ planet:
         population: 2113572196.0
       - date: '2760-01-01'
         population: 2110385340.0
+      - date: '2767-01-01'
+        # administration: AE | Lone Star Province
+        # administration: AE | Lone Star Province
+        # administration: AE | Lone Star Province
+        # administration: AE | Lone Star Province
+        # administration: AE | Lone Star Province
+        # administration: AE | Lone Star Province
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - AE
       - date: '2767-10-04'
         faction:
           source: canon
@@ -263,6 +281,12 @@ planet:
       - date: '2776-06-29'
         hpg: X
       - date: '2779-12-31'
+        # administration: TH | Lone Star Province
+        # administration: TH | Lone Star Province
+        # administration: TH | Lone Star Province
+        # administration: TH | Lone Star Province
+        # administration: TH | Lone Star Province
+        # administration: TH | Lone Star Province
         faction:
           source: canon
           value:
@@ -270,12 +294,30 @@ planet:
       - date: '2780-03-05'
         hpg: B
         population: 2086598081.0
+      - date: '2786-01-01'
+        # administration: DC | Benjamin Military District | Kuzuu Prefecture
+        # administration: DC | Benjamin Military District | Kuzuu Prefecture
+        # administration: DC | Benjamin Military District | Kuzuu Prefecture
+        # administration: DC | Benjamin Military District | Kuzuu Prefecture
+        # administration: DC | Benjamin Military District | Kuzuu Prefecture
+        # administration: DC | Benjamin Military District | Kuzuu Prefecture
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - DC
       - date: '2786-03-08'
         faction:
           source: canon
           value:
             - DC
       - date: '2790-12-17'
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
         faction:
           source: canon
           value:
@@ -290,6 +332,12 @@ planet:
       - date: '2830-01-01'
         population: 1947397436.0
       - date: '2840-11-26'
+        # administration: DC | Dieron Military District | Chaville Prefecture
+        # administration: DC | Dieron Military District | Chaville Prefecture
+        # administration: DC | Dieron Military District | Chaville Prefecture
+        # administration: DC | Dieron Military District | Chaville Prefecture
+        # administration: DC | Dieron Military District | Chaville Prefecture
+        # administration: DC | Dieron Military District | Chaville Prefecture
         faction:
           source: canon
           value:
@@ -337,6 +385,18 @@ planet:
         population: 1491227497.0
       - date: '3025-01-01'
         socioIndustrial: B-C-D-B-C
+      - date: '3030-01-01'
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '3030-06-02'
         faction:
           source: canon
@@ -344,8 +404,25 @@ planet:
             - LA
         population: 1495794964.0
       - date: '3040-01-01'
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
         population: 1505248219.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
         faction:
           source: canon
           value:
@@ -354,6 +431,18 @@ planet:
         socioIndustrial: A-B-C-A-C
       - date: '3050-01-01'
         population: 1513852633.0
+      - date: '3057-01-01'
+        # administration: LA | Skye March | Ryde Operational Area
+        # administration: LA | Skye March | Ryde Operational Area
+        # administration: LA | Skye March | Ryde Operational Area
+        # administration: LA | Skye March | Ryde Operational Area
+        # administration: LA | Skye March | Ryde Operational Area
+        # administration: LA | Skye March | Ryde Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '3057-09-18'
         faction:
           source: canon
@@ -365,9 +454,27 @@ planet:
           value:
             - DC
             - LA
+      - date: '3058-01-01'
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '3060-01-01'
         population: 1522049549.0
       - date: '3062-03-15'
+        # administration: DC | Dieron Military District | Kessel Prefecture
+        # administration: DC | Dieron Military District | Kessel Prefecture
+        # administration: DC | Dieron Military District | Kessel Prefecture
+        # administration: DC | Dieron Military District | Kessel Prefecture
+        # administration: DC | Dieron Military District | Kessel Prefecture
+        # administration: DC | Dieron Military District | Kessel Prefecture
         faction:
           source: canon
           value:
@@ -394,7 +501,25 @@ planet:
             - Stone
       - date: '3080-01-01'
         population: 1542736541.0
+      - date: '3081-01-01'
+        # administration: ROS | Prefecture I
+        # administration: ROS | Prefecture I
+        # administration: ROS | Prefecture I
+        # administration: ROS | Prefecture I
+        # administration: ROS | Prefecture I
+        # administration: ROS | Prefecture I
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ROS
       - date: '3081-10-28'
+        # administration: ROS | Prefecture I
+        # administration: ROS | Prefecture I
+        # administration: ROS | Prefecture I
+        # administration: ROS | Prefecture I
+        # administration: ROS | Prefecture I
+        # administration: ROS | Prefecture I
         faction:
           source: canon
           value:
@@ -413,6 +538,12 @@ planet:
         population: 1556683839.0
       - date: '3132-08-07'
         hpg: X
+      - date: '3135-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3135-10-01'
         faction:
           source: canon
@@ -420,6 +551,18 @@ planet:
             - IND
       - date: '3140-01-01'
         population: 1572014337.0
+      - date: '3145-01-01'
+        # administration: DC | Dieron Military District | Dieron Prefecture
+        # administration: DC | Dieron Military District | Dieron Prefecture
+        # administration: DC | Dieron Military District | Dieron Prefecture
+        # administration: DC | Dieron Military District | Dieron Prefecture
+        # administration: DC | Dieron Military District | Dieron Prefecture
+        # administration: DC | Dieron Military District | Dieron Prefecture
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - DC
       - date: '3145-12-06'
         faction:
           source: canon
@@ -432,6 +575,12 @@ planet:
           value:
             - RD
       - date: '3151-01-01'
+        # administration: RD | Region 3
+        # administration: RD | Region 3
+        # administration: RD | Region 3
+        # administration: RD | Region 3
+        # administration: RD | Region 3
+        # administration: RD | Region 3
         faction:
           source: sucs
           value:

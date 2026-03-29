@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: Zolfo
-sucsId: 2844
+sucsId: 2845
 xcood: 527.319
 ycood: -71.907
 spectralType:
-  source: House Davion
+  source: HB:HD
   value: F5V
 primarySlot:
-  source: House Davion
+  source: HB:HD
   value: 4
 event:
   - date: '2477-09-21'
@@ -104,7 +104,7 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 2.24
     sysPos:
-      source: House Davion
+      source: HB:HD
       value: 4
     icon: green44
     pressure: THIN
@@ -118,12 +118,9 @@ planet:
     temperature: 23
     water: 49
     lifeForm:
-      source: House Davion
+      source: HB:HD
       value: MAMMAL
-    desc: For most of its history Zolof has been a typical Federated Suns Outback
-      planet. Poor education and a slow economy, the primary industry on Zolof was
-      traditionally agriculture, however the planet was still barely able to feed
-      its population.
+    desc: For most of its history Zolof has been a typical Federated Suns Outback planet. Poor education and a slow economy, the primary industry on Zolof was traditionally agriculture, however the planet was still barely able to feed its population.
     smallMoons: 6
     landmass:
       - name: Giorlandino A
@@ -131,6 +128,12 @@ planet:
       - name: Giorlandino B
     event:
       - date: '2355-01-13'
+        # administration: FS | Crucis March | Minette Operational Area
+        # administration: FS | Crucis March | Minette Operational Area
+        # administration: FS | Crucis March | Minette Operational Area
+        # administration: FS | Crucis March | Minette Operational Area
+        # administration: FS | Crucis March | Minette Operational Area
+        # administration: FS | Crucis March | Minette Operational Area
         faction:
           source: canon
           value:
@@ -289,8 +292,25 @@ planet:
       - date: '3030-01-01'
         population: 108713573.0
       - date: '3040-01-01'
+        # administration: FC | Crucis March | Minette Operational Area
+        # administration: FC | Crucis March | Minette Operational Area
+        # administration: FC | Crucis March | Minette Operational Area
+        # administration: FC | Crucis March | Minette Operational Area
+        # administration: FC | Crucis March | Minette Operational Area
+        # administration: FC | Crucis March | Minette Operational Area
         population: 109850094.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
+        # administration: FC | Crucis March | Minette Operational Area
+        # administration: FC | Crucis March | Minette Operational Area
+        # administration: FC | Crucis March | Minette Operational Area
+        # administration: FC | Crucis March | Minette Operational Area
+        # administration: FC | Crucis March | Minette Operational Area
+        # administration: FC | Crucis March | Minette Operational Area
         faction:
           source: canon
           value:
@@ -301,7 +321,25 @@ planet:
         population: 111142888.0
       - date: '3060-01-01'
         population: 112450897.0
+      - date: '3067-01-01'
+        # administration: FS | Crucis March | Minette Operational Area
+        # administration: FS | Crucis March | Minette Operational Area
+        # administration: FS | Crucis March | Minette Operational Area
+        # administration: FS | Crucis March | Minette Operational Area
+        # administration: FS | Crucis March | Minette Operational Area
+        # administration: FS | Crucis March | Minette Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FS
       - date: '3067-04-20'
+        # administration: FS | Crucis March | Minette Operational Area
+        # administration: FS | Crucis March | Minette Operational Area
+        # administration: FS | Crucis March | Minette Operational Area
+        # administration: FS | Crucis March | Minette Operational Area
+        # administration: FS | Crucis March | Minette Operational Area
+        # administration: FS | Crucis March | Minette Operational Area
         faction:
           source: canon
           value:

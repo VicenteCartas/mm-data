@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -20,11 +20,13 @@ sucsId: 134
 xcood: -98.231
 ycood: -84.059
 spectralType:
-  source: House Marik, pg. 154
+  source: HMSB
   value: G5V
+  page: 154
 primarySlot:
-  source: House Marik, pg. 154
+  source: HMSB
   value: 2
+  page: 154
 event:
   - date: '2368-10-11'
     zenithCharge: yes
@@ -64,8 +66,9 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.63
     sysPos:
-      source: House Marik, pg. 154
+      source: HMSB
       value: 2
+      page: 154
     icon: green50
     pressure:
       source: canon
@@ -86,17 +89,10 @@ planet:
       source: canon
       value: 55
     lifeForm:
-      source: House Marik, pg. 154
+      source: HMSB
       value: MAMMAL
-    desc: Due to contaminants in most of the water on Angell II the planet has always
-      been reliant on Ice Ships and water purification to sustain its population.
-      However, due to the vast mineral deposits found on Angell II, it has been one
-      of the Free Worlds League’s most prosperous worlds since its founding. The world
-      is stratified into the rich and the poor, the rich have access to purified water
-      while the poor are forced to live off the water rationed to them by the rich
-      or support themselves with unreliable ‘home purification’ systems. Tensions
-      run high due to the disparity that has only widened as the Succession Wars took
-      their toll on the purification systems on planet.
+      page: 154
+    desc: Due to contaminants in most of the water on Angell II the planet has always been reliant on Ice Ships and water purification to sustain its population. However, due to the vast mineral deposits found on Angell II, it has been one of the Free Worlds League’s most prosperous worlds since its founding. The world is stratified into the rich and the poor, the rich have access to purified water while the poor are forced to live off the water rationed to them by the rich or support themselves with unreliable ‘home purification’ systems. Tensions run high due to the disparity that has only widened as the Succession Wars took their toll on the purification systems on planet.
     smallMoons: 1
     landmass:
       - name:
@@ -126,6 +122,12 @@ planet:
       - date: '2270-01-01'
         population: 1762983.0
       - date: '2271-06-01'
+        # administration: FWL | Marik Commonwealth
+        # administration: FWL | Marik Commonwealth
+        # administration: FWL | Marik Commonwealth
+        # administration: FWL | Marik Commonwealth
+        # administration: FWL | Marik Commonwealth
+        # administration: FWL | Marik Commonwealth
         faction:
           source: canon
           value:
@@ -314,6 +316,12 @@ planet:
         population: 622990783.0
       - date: '3070-01-01'
         population: 541815258.0
+      - date: '3079-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - MCM
       - date: '3079-06-07'
         faction:
           source: canon
@@ -321,6 +329,18 @@ planet:
             - MSC
       - date: '3080-01-01'
         population: 549454018.0
+      - date: '3081-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - MCM
+      - date: '3085-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - MSC
       - date: '3090-01-01'
         population: 558986370.0
       - date: '3100-01-01'
@@ -350,8 +370,25 @@ planet:
       - date: '3140-01-01'
         population: 593552157.0
       - date: '3145-01-01'
+        # administration: FWL | Clan Protectorate
+        # administration: FWL | Clan Protectorate
+        # administration: FWL | Clan Protectorate
+        # administration: FWL | Clan Protectorate
+        # administration: FWL | Clan Protectorate
+        # administration: FWL | Clan Protectorate
         population: 598439295.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FWL
       - date: '3151-01-01'
+        # administration: FWL | Clan Protectorate
+        # administration: FWL | Clan Protectorate
+        # administration: FWL | Clan Protectorate
+        # administration: FWL | Clan Protectorate
+        # administration: FWL | Clan Protectorate
+        # administration: FWL | Clan Protectorate
         faction:
           source: sucs
           value:

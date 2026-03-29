@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,15 +16,17 @@
 # affiliated with Microsoft.
 
 id: Hofn
-sucsId: 3136
+sucsId: 3099
 xcood: 600.099
 ycood: 545.503
 spectralType:
-  source: Interstellar Players, pg. 111
+  source: ISP
   value: G8III
+  page: 111
 primarySlot:
-  source: Interstellar Players, pg. 111
+  source: ISP
   value: 4
+  page: 111
 event:
   - date: '2566-09-06'
     nadirCharge: yes
@@ -94,57 +96,61 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 1.28
     sysPos:
-      source: Interstellar Players, pg. 111
+      source: ISP
       value: 4
+      page: 111
     icon: wet13
     pressure:
-      source: Interstellar Players, pg. 111
+      source: ISP
       value: STANDARD
+      page: 111
     atmosphere:
-      source: Interstellar Players, pg. 111
+      source: ISP
       value: BREATHABLE
+      page: 111
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: Interstellar Players, pg. 111
+      source: ISP
       value: 1.02
+      page: 111
     diameter: 11841
     density: 6.053904333129
     dayLength: 27
     yearLength: 1.7
     temperature:
-      source: Interstellar Players, pg. 111
+      source: ISP
       value: 34
+      page: 111
     water:
-      source: Interstellar Players, pg. 111
+      source: ISP
       value: 95
+      page: 111
     lifeForm:
-      source: Interstellar Players, pg. 111
+      source: ISP
       value: BIRD
-    desc: Hofn is the warmest JarnFolk world, however it also has the harshest weather.
-      Storms are a regular occurrence and winds can often reach over 300 kph. The
-      JarnFolk dwellings are built to withstand these harsh conditions, often with
-      the stout buildings that extend underground. Subterranean building also allows
-      the JarnFolk to make the most of the limited ground space as Hofn is almost
-      entirely covered in water. The major industries on planet are power from wind
-      turbines and fishing.
+      page: 111
+    desc: Hofn is the warmest JarnFolk world, however it also has the harshest weather. Storms are a regular occurrence and winds can often reach over 300 kph. The JarnFolk dwellings are built to withstand these harsh conditions, often with the stout buildings that extend underground. Subterranean building also allows the JarnFolk to make the most of the limited ground space as Hofn is almost entirely covered in water. The major industries on planet are power from wind turbines and fishing.
     landmass:
       - name: Prock's Patch
         capital: Ba Xian
       - name: Helleland's Felt
     satellite:
       - name:
-          source: Interstellar Players, pg. 111
+          source: ISP
           value: Geyser
+          page: 111
         size: medium
         icon: oddmoon2
       - name:
-          source: Interstellar Players, pg. 111
+          source: ISP
           value: Jockulsarlon
+          page: 111
         size: medium
         icon: rock1
       - name:
-          source: Interstellar Players, pg. 111
+          source: ISP
           value: Myvatn
+          page: 111
         size: medium
         icon: oddmoon3
     event:

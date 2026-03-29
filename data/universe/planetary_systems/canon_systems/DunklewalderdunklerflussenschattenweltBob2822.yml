@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -56,15 +56,7 @@ planet:
     lifeForm:
       source: canon
       value: BIRD
-    desc: Dunklewälderdunklerflüssenschattenwelt (later known as “Bob”) was never
-      a wealthy or vibrant planet, however, it did manage to support a population
-      of almost 350 million at its peak. However, the planet was almost completely
-      destroyed during the First Succession War. Despite being written off by ComStar
-      and the universe at large, small pockets of survivors lived on and despite a
-      tainted atmosphere clung to life. Basic settlements were constructed and remain
-      as of 3130, although technology barely exists and the world has barely clung
-      to the basic engineering and manufacturing for artificial lighting and indoor
-      plumbing, their technology is more on par with the 19th century than the 32nd.
+    desc: Dunklewälderdunklerflüssenschattenwelt (later known as “Bob”) was never a wealthy or vibrant planet, however, it did manage to support a population of almost 350 million at its peak. However, the planet was almost completely destroyed during the First Succession War. Despite being written off by ComStar and the universe at large, small pockets of survivors lived on and despite a tainted atmosphere clung to life. Basic settlements were constructed and remain as of 3130, although technology barely exists and the world has barely clung to the basic engineering and manufacturing for artificial lighting and indoor plumbing, their technology is more on par with the 19th century than the 32nd.
     landmass:
       - name:
           source: canon
@@ -89,7 +81,25 @@ planet:
         size: medium
         icon: oddmoon1
     event:
+      - date: '2596-01-01'
+        # administration: DC | Galedon Military District | New Samarkand Prefecture
+        # administration: DC | Galedon Military District | New Samarkand Prefecture
+        # administration: DC | Galedon Military District | New Samarkand Prefecture
+        # administration: DC | Galedon Military District | New Samarkand Prefecture
+        # administration: DC | Galedon Military District | New Samarkand Prefecture
+        # administration: DC | Galedon Military District | New Samarkand Prefecture
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - DC
       - date: '2616-08-07'
+        # administration: DC | Galedon Military District | New Samarkand Prefecture
+        # administration: DC | Galedon Military District | New Samarkand Prefecture
+        # administration: DC | Galedon Military District | New Samarkand Prefecture
+        # administration: DC | Galedon Military District | New Samarkand Prefecture
+        # administration: DC | Galedon Military District | New Samarkand Prefecture
+        # administration: DC | Galedon Military District | New Samarkand Prefecture
         faction:
           source: canon
           value:
@@ -153,9 +163,27 @@ planet:
         socioIndustrial: X-X-X-X-X
       - date: '2108-12-05'
         name: Dunklewälderdunklerflüssenschattenwelt
+      - date: '2821-01-01'
+        # administration: DC | Galedon Military District | New Samarkand Prefecture
+        # administration: DC | Galedon Military District | New Samarkand Prefecture
+        # administration: DC | Galedon Military District | New Samarkand Prefecture
+        # administration: DC | Galedon Military District | New Samarkand Prefecture
+        # administration: DC | Galedon Military District | New Samarkand Prefecture
+        # administration: DC | Galedon Military District | New Samarkand Prefecture
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - DC
       - date: '2822-01-01'
         name: Bob
         message: Dunklewälderdunklerflüssenschattenwelt renamed to Bob
+      - date: '2830-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ABN
   - name: Garner's Garden
     type: GAS_GIANT
     orbitalDist: 0.4

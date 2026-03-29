@@ -1,0 +1,75 @@
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
+#
+# NOTICE: The MegaMek organization is a non-profit group of volunteers
+# creating free software for the BattleTech community.
+#
+# MechWarrior, BattleMech, `Mech and AeroTech are registered trademarks
+# of The Topps Company, Inc. All Rights Reserved.
+#
+# Catalyst Game Labs and the Catalyst Game Labs logo are trademarks of
+# InMediaRes Productions, LLC.
+#
+# MechWarrior Copyright Microsoft Corporation. MegaMek Data was created under
+# Microsoft's "Game Content Usage Rules"
+# <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
+# affiliated with Microsoft.
+
+id: Pivot
+xcood: -125.0
+ycood: 1500.0
+spectralType: K5V
+primarySlot: 2
+planet:
+  - name: Pivot I
+    type: DWARF_TERRESTRIAL
+    orbitalDist: 0.3
+    sysPos: 1
+    icon: rock5
+    pressure: VACUUM
+    atmosphere: NONE
+    gravity: 0.15
+    diameter: 2200
+    density: 4.5
+    dayLength: 30
+    yearLength: 0.5
+    temperature: 180
+    water: 0
+  - name: Pivot Prime
+    type: TERRESTRIAL
+    orbitalDist: 0.7
+    sysPos: 2
+    icon: barren8
+    pressure: THIN
+    atmosphere: TAINTED_POISON
+    composition: Nitrogen and Carbon Dioxide, plus trace amounts of Water Vapor
+    gravity: 0.85
+    diameter: 10500
+    density: 5.7
+    dayLength: 22
+    yearLength: 1.2
+    temperature: 15
+    water: 5
+    lifeForm: MICROBE
+    desc: An important waypoint on the Exodus Road at the edge of the Caliban Nebula, Pivot is the first point from which the Pentagon Worlds can be seen. The system hosted an HPG relay station garrisoned by Clan Smoke Jaguar. In January 3056, ComStar's Explorer Corps unit Meredith's Marauders briefly captured the station before Clan forces retook it in a minor naval engagement. Clan naval personnel observed a celebratory tradition when crossing the system, involving alcohol and tattooing a Cameron Star symbol.
+    event:
+      - date: '3052-01-01'
+        faction:
+          source: canon
+          value:
+            - CSJ
+        hpg: B
+  - name: Pivot III
+    type: GAS_GIANT
+    orbitalDist: 3.5
+    sysPos: 3
+    icon: gasg15
+    pressure: VERY_HIGH
+    atmosphere: TOXIC_POISON
+    composition: Hydrogen and Helium, plus trace gases
+    gravity: 1.8
+    diameter: 90000
+    density: 1.4
+    dayLength: 14
+    yearLength: 12.5
+    smallMoons: 8

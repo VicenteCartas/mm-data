@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: St. John
-sucsId: 2392
+sucsId: 2393
 xcood: -13.447
 ycood: 400.874
 spectralType: K1V
@@ -94,6 +94,12 @@ planet:
       - date: '2410-01-01'
         population: 28619925.0
       - date: '2414-02-07'
+        # administration: DC | Rasalhague Military District | Radstadt Prefecture
+        # administration: DC | Rasalhague Military District | Radstadt Prefecture
+        # administration: DC | Rasalhague Military District | Radstadt Prefecture
+        # administration: DC | Rasalhague Military District | Radstadt Prefecture
+        # administration: DC | Rasalhague Military District | Radstadt Prefecture
+        # administration: DC | Rasalhague Military District | Radstadt Prefecture
         faction:
           source: canon
           value:
@@ -239,11 +245,27 @@ planet:
       - date: '3036-01-01'
         socioIndustrial: B-B-C-C-B
       - date: '3040-01-01'
+        # administration: FR | Rasalhague Province
+        # administration: FR | Rasalhague Province
+        # administration: FR | Rasalhague Province
+        # administration: FR | Rasalhague Province
+        # administration: FR | Rasalhague Province
+        # administration: FR | Rasalhague Province
         population: 1616912789.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FR
       - date: '3045-01-01'
         socioIndustrial: A-A-B-B-A
       - date: '3050-01-01'
         population: 1639053016.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CW
       - date: '3050-04-01'
         faction:
           source: canon
@@ -276,7 +298,25 @@ planet:
         socioIndustrial: A-A-B-B-A
       - date: '3120-01-01'
         population: 1762298011.0
+      - date: '3130-01-01'
+        # administration: RD | Region 1
+        # administration: RD | Region 1
+        # administration: RD | Region 1
+        # administration: RD | Region 1
+        # administration: RD | Region 1
+        # administration: RD | Region 1
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - RD
       - date: '3130-02-13'
+        # administration: RD | Region 1
+        # administration: RD | Region 1
+        # administration: RD | Region 1
+        # administration: RD | Region 1
+        # administration: RD | Region 1
+        # administration: RD | Region 1
         faction:
           source: canon
           value:

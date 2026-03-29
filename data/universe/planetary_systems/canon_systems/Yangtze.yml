@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: Yangtze
-sucsId: 2793
+sucsId: 2794
 xcood: 75.47
 ycood: -43.928
 spectralType:
-  source: MWDA world profiles
+  source: DA:RW
   value: G6V
 primarySlot:
-  source: MWDA world profiles
+  source: DA:RW
   value: 5
 planet:
   - name: Chang Fei
@@ -88,31 +88,31 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.9
     sysPos:
-      source: MWDA world profiles
+      source: DA:RW
       value: 5
     icon: wet6
     pressure:
-      source: MWDA world profiles
+      source: DA:RW
       value: STANDARD
     atmosphere:
-      source: MWDA world profiles
+      source: DA:RW
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: MWDA world profiles
+      source: DA:RW
       value: 1.1
     diameter: 12357
     density: 6.255660417277
     dayLength: 24
     yearLength: 1.3
     temperature:
-      source: MWDA world profiles
+      source: DA:RW
       value: 27
     water:
-      source: MWDA world profiles
+      source: DA:RW
       value: 80
     lifeForm:
-      source: MWDA world profiles
+      source: DA:RW
       value: FISH
     desc: |-
       Settlers from the ancient Terran state of China named the planet Yangtze after the Yangtze River of their homeland. Like the Yangtze floodplain on Terra, Yangtze‘s landmasses are flat and covered in a thick layer of fertile soil fed by seasonal flooding from the planet‘s many slow-moving rivers. Fearful of the destruction wrought by these inland floods, Yangtze‘s initial settlers huddled in small fishing villages and towns on the rocky coasts of the planet‘s two small continents, Han and Sung.
@@ -122,10 +122,10 @@ planet:
       Under The Republic of the Sphere, Yangtze has rebuilt the least-damaged dams and dikes on Han and Sung, and regained approximately one-fourth of its peak agricultural output under the First Star League.
     landmass:
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Han
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Sung
     event:
       - date: '2174-05-22'
@@ -228,6 +228,12 @@ planet:
       - date: '2560-01-01'
         population: 1370856919.0
       - date: '2570-11-28'
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
         faction:
           source: canon
           value:
@@ -275,6 +281,18 @@ planet:
         population: 1667134535.0
       - date: '2760-01-01'
         population: 1683821294.0
+      - date: '2767-01-01'
+        # administration: AE | Lockdale Province
+        # administration: AE | Lockdale Province
+        # administration: AE | Lockdale Province
+        # administration: AE | Lockdale Province
+        # administration: AE | Lockdale Province
+        # administration: AE | Lockdale Province
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - AE
       - date: '2767-01-13'
         faction:
           source: canon
@@ -293,6 +311,30 @@ planet:
           value:
             - CC
         population: 1674354076.0
+      - date: '2783-01-01'
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
+        # administration: TH | Lockdale Province
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - TH
+      - date: '2786-01-01'
+        # administration: CC | Tikonov Commonality | Region 2
+        # administration: CC | Tikonov Commonality | Region 2
+        # administration: CC | Tikonov Commonality | Region 2
+        # administration: CC | Tikonov Commonality | Region 2
+        # administration: CC | Tikonov Commonality | Region 2
+        # administration: CC | Tikonov Commonality | Region 2
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CC
       - date: '2790-01-01'
         population: 1686335422.0
       - date: '2800-01-01'
@@ -345,16 +387,46 @@ planet:
         population: 1319932150.0
       - date: '3020-01-01'
         population: 1325321144.0
+      - date: '3030-01-01'
+        # administration: LA | Sarna March | Tikonov Operational Area
+        # administration: LA | Sarna March | Tikonov Operational Area
+        # administration: LA | Sarna March | Tikonov Operational Area
+        # administration: LA | Sarna March | Tikonov Operational Area
+        # administration: LA | Sarna March | Tikonov Operational Area
+        # administration: LA | Sarna March | Tikonov Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '3030-04-23'
         faction:
           source: canon
           value:
             - FS
         population: 1329858070.0
+      - date: '3040-01-01'
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-08-01'
         population: 1343492038.0
         socioIndustrial: C-B-C-B-C
       - date: '3040-01-19'
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
         faction:
           source: canon
           value:
@@ -365,7 +437,25 @@ planet:
         population: 1356722985.0
       - date: '3060-01-01'
         population: 1368304282.0
+      - date: '3067-01-01'
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FS
       - date: '3067-04-20'
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
         faction:
           source: canon
           value:
@@ -383,6 +473,12 @@ planet:
           value:
             - WOB
             - FS
+      - date: '3075-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - WOB
       - date: '3077-05-21'
         faction:
           source: canon
@@ -396,7 +492,25 @@ planet:
             - Stone
       - date: '3080-01-01'
         population: 1391903483.0
+      - date: '3081-01-01'
+        # administration: ROS | Prefecture IV
+        # administration: ROS | Prefecture IV
+        # administration: ROS | Prefecture IV
+        # administration: ROS | Prefecture IV
+        # administration: ROS | Prefecture IV
+        # administration: ROS | Prefecture IV
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ROS
       - date: '3081-08-24'
+        # administration: ROS | Prefecture IV
+        # administration: ROS | Prefecture IV
+        # administration: ROS | Prefecture IV
+        # administration: ROS | Prefecture IV
+        # administration: ROS | Prefecture IV
+        # administration: ROS | Prefecture IV
         faction:
           source: canon
           value:
@@ -415,6 +529,18 @@ planet:
         population: 1407017509.0
       - date: '3132-08-07'
         hpg: X
+      - date: '3135-01-01'
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FS
       - date: '3135-09-29'
         faction:
           source: canon
@@ -422,7 +548,25 @@ planet:
             - FS
       - date: '3140-01-01'
         population: 1411809511.0
+      - date: '3145-01-01'
+        # administration: CC | Tikonov Commonality | Region 2
+        # administration: CC | Tikonov Commonality | Region 2
+        # administration: CC | Tikonov Commonality | Region 2
+        # administration: CC | Tikonov Commonality | Region 2
+        # administration: CC | Tikonov Commonality | Region 2
+        # administration: CC | Tikonov Commonality | Region 2
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CC
       - date: '3145-09-23'
+        # administration: CC | Tikonov Commonality | Region 8
+        # administration: CC | Tikonov Commonality | Region 8
+        # administration: CC | Tikonov Commonality | Region 8
+        # administration: CC | Tikonov Commonality | Region 8
+        # administration: CC | Tikonov Commonality | Region 8
+        # administration: CC | Tikonov Commonality | Region 8
         faction:
           source: canon
           value:

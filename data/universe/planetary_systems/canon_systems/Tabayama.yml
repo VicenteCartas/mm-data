@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: Tabayama
-sucsId: 2462
+sucsId: 2463
 xcood: 407.56
 ycood: 233.095
 spectralType:
-  source: House Kurita
+  source: HB:HK
   value: F0IV
 primarySlot:
-  source: House Kurita
+  source: HB:HK
   value: 3
 event:
   - date: '2435-08-07'
@@ -72,7 +72,7 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 4.48
     sysPos:
-      source: House Kurita
+      source: HB:HK
       value: 3
     icon: green1
     pressure:
@@ -94,23 +94,9 @@ planet:
       source: canon
       value: 45
     lifeForm:
-      source: House Kurita
+      source: HB:HK
       value: FISH
-    desc: Originally an Outworlds Alliance colony populated largely by pacifistic
-      farmers and miners, Tabayama was an early target during the invasion of the
-      Alliance by Star League forces during the Reunification War. On the 25th of
-      July 2585 the Treaty of Cerberus was signed, declaring peace between those involved
-      in the conquest of the Outworlds Alliance. When the treaty took effect on the
-      1st of August, Tabayama and 13 other planets were formally annexed to the Draconis
-      Combine as a part of the treaty terms. In the 31st century Tabayama was the
-      capital world of the Galedon Military District's Periphery prefecture. Most
-      of the citizens are employed in running the prefecture's government. Interestingly,
-      the importation of white-tailed deer from Terra has led to an ecological crisis.
-      Lacking natural predators, these deer reproduce so quickly that the human population
-      is in constant danger of losing their croplands. In 3025 more than two million
-      citizens of Tabayama were employed as hunters, and they were barely able to
-      keep the deer population under control. Tabayama has taken advantage of their
-      deer problem by exporting venison to several nearby worlds.
+    desc: Originally an Outworlds Alliance colony populated largely by pacifistic farmers and miners, Tabayama was an early target during the invasion of the Alliance by Star League forces during the Reunification War. On the 25th of July 2585 the Treaty of Cerberus was signed, declaring peace between those involved in the conquest of the Outworlds Alliance. When the treaty took effect on the 1st of August, Tabayama and 13 other planets were formally annexed to the Draconis Combine as a part of the treaty terms. In the 31st century Tabayama was the capital world of the Galedon Military District's Periphery prefecture. Most of the citizens are employed in running the prefecture's government. Interestingly, the importation of white-tailed deer from Terra has led to an ecological crisis. Lacking natural predators, these deer reproduce so quickly that the human population is in constant danger of losing their croplands. In 3025 more than two million citizens of Tabayama were employed as hunters, and they were barely able to keep the deer population under control. Tabayama has taken advantage of their deer problem by exporting venison to several nearby worlds.
     landmass:
       - name:
           source: canon
@@ -233,6 +219,12 @@ planet:
             - OA
             - DC
       - date: '2585-07-25'
+        # administration: DC | Galedon Military District | New Samarkand Prefecture
+        # administration: DC | Galedon Military District | New Samarkand Prefecture
+        # administration: DC | Galedon Military District | New Samarkand Prefecture
+        # administration: DC | Galedon Military District | New Samarkand Prefecture
+        # administration: DC | Galedon Military District | New Samarkand Prefecture
+        # administration: DC | Galedon Military District | New Samarkand Prefecture
         faction:
           source: canon
           value:

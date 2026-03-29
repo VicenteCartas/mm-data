@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: Rukbat
-sucsId: 2189
+sucsId: 2190
 xcood: 42.128
 ycood: 108.781
 spectralType:
-  source: MWDA world profiles
+  source: DA:RW
   value: K9IV
 primarySlot:
-  source: MWDA world profiles
+  source: DA:RW
   value: 2
 event:
   - date: '2353-09-13'
@@ -52,85 +52,49 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.35
     sysPos:
-      source: MWDA world profiles
+      source: DA:RW
       value: 2
     icon: wet9
     pressure:
-      source: MWDA world profiles
+      source: DA:RW
       value: STANDARD
     atmosphere:
-      source: MWDA world profiles
+      source: DA:RW
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: MWDA world profiles
+      source: DA:RW
       value: 1.12
     diameter: 11083
     density: 7.102012343844
     dayLength: 26
     yearLength: 0.7
     temperature:
-      source: MWDA world profiles
+      source: DA:RW
       value: 38
     water:
-      source: MWDA world profiles
+      source: DA:RW
       value: 89
     lifeForm:
-      source: MWDA world profiles
+      source: DA:RW
       value: MAMMAL
-    desc: 3135 - Seen from orbit, Rukbat is a wonderful expanse of endless oceans,
-      tropical islands and small continents, with woodlands and green valleys aplenty.
-      The majestic mountains, capped with only the slightest dusting of snow and ice,
-      are treasure troves of minerals, and the seas are full of life. It therefore
-      came as a surprise when the first colonists to set foot on Rukbat discovered
-      their newfound paradise was thoroughly poisonous. The air, containing only slightly
-      more nitrogen than Terran standard, was not a problem, but everything else,
-      from the waters and soils to the native flora and fauna, was. Scientists quickly
-      realized that the alien biochemistry of Rukbat‘s diverse ecosystem was completely
-      incompatible with humans, creating a serious problem for the settlers. Moreover,
-      this incompatibility extended to the water and soil. Though purifiers could
-      help negate the more nauseating effects of Rukbat‘s freshwater table, the soil,
-      saturated with the byproducts of the native life forms, could not sustain the
-      colonists‘ crops. To support the mining communities that sprang up around the
-      extensive mountain chains, the inhabitants of Rukbat had to import all of their
-      foodstuffs and obtain a healthy number of water purifiers. Under the Terran
-      Hegemony, during the height of the Star League, efforts were made to introduce
-      genetically altered crops and livestock to Rukbat, but they met with only limited
-      success. The altered crops, a bit more sustainable than the expensive, high-maintenance
-      altered cattle, helped lessen Rukbat‘s nutritional woes, but the planet remained
-      dependent on offworld meats and produce. Meanwhile, the mineral mining industry
-      continued to grow, the basis for the large cities of New Glasgow and Korbensberg
-      on the primary island continent of Schender Prime. During the Amaris crisis,
-      the Usurper‘s troops resorted to scorched-earth tactics, destroying Rukbat‘s
-      few viable farms as they retreated from the liberating SLDF troops. The fall
-      of the Star League and the onset of the Succession Wars worsened the situation,
-      throwing the planet‘s precarious agricultural system into ruin once again. Never
-      able to recover, Rukbat remained dependent on its neighbor worlds for the basics
-      of life until the rise of the Republic. Now, thanks to the relocation of several
-      members of Clans Wolf and Nova Cat—and with them, their valuable scientists,
-      whose experience in genetics far exceeds even that of the Star League in its
-      glory days—Rukbat‘s agricultural worries may soon be over. The capital city
-      of Oskart is located on Schender Minor, Rukbat‘s second largest island continent,
-      located just south of Schender Prime. The planet‘s other major island continent,
-      Melrin, lies mostly south of the equator and is home to the Kolivar Enclave,
-      an experimental agricultural commune managed by Clan scientists in an effort
-      to restore Rukbat‘s food economy.
+    desc: 3135 - Seen from orbit, Rukbat is a wonderful expanse of endless oceans, tropical islands and small continents, with woodlands and green valleys aplenty. The majestic mountains, capped with only the slightest dusting of snow and ice, are treasure troves of minerals, and the seas are full of life. It therefore came as a surprise when the first colonists to set foot on Rukbat discovered their newfound paradise was thoroughly poisonous. The air, containing only slightly more nitrogen than Terran standard, was not a problem, but everything else, from the waters and soils to the native flora and fauna, was. Scientists quickly realized that the alien biochemistry of Rukbat‘s diverse ecosystem was completely incompatible with humans, creating a serious problem for the settlers. Moreover, this incompatibility extended to the water and soil. Though purifiers could help negate the more nauseating effects of Rukbat‘s freshwater table, the soil, saturated with the byproducts of the native life forms, could not sustain the colonists‘ crops. To support the mining communities that sprang up around the extensive mountain chains, the inhabitants of Rukbat had to import all of their foodstuffs and obtain a healthy number of water purifiers. Under the Terran Hegemony, during the height of the Star League, efforts were made to introduce genetically altered crops and livestock to Rukbat, but they met with only limited success. The altered crops, a bit more sustainable than the expensive, high-maintenance altered cattle, helped lessen Rukbat‘s nutritional woes, but the planet remained dependent on offworld meats and produce. Meanwhile, the mineral mining industry continued to grow, the basis for the large cities of New Glasgow and Korbensberg on the primary island continent of Schender Prime. During the Amaris crisis, the Usurper‘s troops resorted to scorched-earth tactics, destroying Rukbat‘s few viable farms as they retreated from the liberating SLDF troops. The fall of the Star League and the onset of the Succession Wars worsened the situation, throwing the planet‘s precarious agricultural system into ruin once again. Never able to recover, Rukbat remained dependent on its neighbor worlds for the basics of life until the rise of the Republic. Now, thanks to the relocation of several members of Clans Wolf and Nova Cat—and with them, their valuable scientists, whose experience in genetics far exceeds even that of the Star League in its glory days—Rukbat‘s agricultural worries may soon be over. The capital city of Oskart is located on Schender Minor, Rukbat‘s second largest island continent, located just south of Schender Prime. The planet‘s other major island continent, Melrin, lies mostly south of the equator and is home to the Kolivar Enclave, an experimental agricultural commune managed by Clan scientists in an effort to restore Rukbat‘s food economy.
     landmass:
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Melrin
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Schender Minor
         capital:
-          source: MWDA world profiles
+          source: DA:RW
           value: Oskart
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Schender Prime
     satellite:
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Aladanna
         size: large
         icon: rock9
@@ -163,6 +127,12 @@ planet:
         population: 18712909.0
       - date: '2340-01-01'
         population: 34235381.0
+      - date: '2341-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '2350-01-01'
         population: 57292484.0
       - date: '2360-01-01'
@@ -209,6 +179,18 @@ planet:
         population: 1122983089.0
       - date: '2570-01-01'
         population: 1147006352.0
+      - date: '2571-01-01'
+        # administration: DC | Benjamin Military District | Kuzuu Prefecture
+        # administration: DC | Benjamin Military District | Kuzuu Prefecture
+        # administration: DC | Benjamin Military District | Kuzuu Prefecture
+        # administration: DC | Benjamin Military District | Kuzuu Prefecture
+        # administration: DC | Benjamin Military District | Kuzuu Prefecture
+        # administration: DC | Benjamin Military District | Kuzuu Prefecture
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - DC
       - date: '2580-01-01'
         population: 1164618378.0
       - date: '2590-01-01'
@@ -320,9 +302,33 @@ planet:
         population: 808509848.0
       - date: '3070-01-01'
         population: 815982460.0
+      - date: '3075-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - AB
       - date: '3080-01-01'
         population: 825998419.0
+      - date: '3081-01-01'
+        # administration: ROS | Prefecture II
+        # administration: ROS | Prefecture II
+        # administration: ROS | Prefecture II
+        # administration: ROS | Prefecture II
+        # administration: ROS | Prefecture II
+        # administration: ROS | Prefecture II
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ROS
       - date: '3081-05-29'
+        # administration: ROS | Prefecture II
+        # administration: ROS | Prefecture II
+        # administration: ROS | Prefecture II
+        # administration: ROS | Prefecture II
+        # administration: ROS | Prefecture II
+        # administration: ROS | Prefecture II
         faction:
           source: canon
           value:
@@ -339,6 +345,12 @@ planet:
         population: 847756001.0
       - date: '3132-08-07'
         hpg: X
+      - date: '3135-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3135-10-01'
         faction:
           source: canon
@@ -346,7 +358,25 @@ planet:
             - IND
       - date: '3140-01-01'
         population: 851494346.0
+      - date: '3145-01-01'
+        # administration: DC | Dieron Military District | Algedi Prefecture
+        # administration: DC | Dieron Military District | Algedi Prefecture
+        # administration: DC | Dieron Military District | Algedi Prefecture
+        # administration: DC | Dieron Military District | Algedi Prefecture
+        # administration: DC | Dieron Military District | Algedi Prefecture
+        # administration: DC | Dieron Military District | Algedi Prefecture
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - DC
       - date: '3145-02-15'
+        # administration: DC | Dieron Military District | Algedi Prefecture
+        # administration: DC | Dieron Military District | Algedi Prefecture
+        # administration: DC | Dieron Military District | Algedi Prefecture
+        # administration: DC | Dieron Military District | Algedi Prefecture
+        # administration: DC | Dieron Military District | Algedi Prefecture
+        # administration: DC | Dieron Military District | Algedi Prefecture
         faction:
           source: canon
           value:

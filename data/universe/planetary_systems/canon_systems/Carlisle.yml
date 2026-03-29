@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -20,11 +20,13 @@ sucsId: 476
 xcood: -304.983
 ycood: 88.88
 spectralType:
-  source: 'Handbook: House Steiner, pg. 74'
+  source: 'HB:HS'
   value: K1V
+  page: 74
 primarySlot:
-  source: 'Handbook: House Steiner, pg. 74'
+  source: 'HB:HS'
   value: 3
+  page: 74
 event:
   - date: '2528-02-08'
     nadirCharge: yes
@@ -80,57 +82,75 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.56
     sysPos:
-      source: 'Handbook: House Steiner, pg. 74'
+      source: 'HB:HS'
       value: 3
+      page: 74
     icon: green31
     pressure:
-      source: 'Handbook: House Steiner, pg. 74'
+      source: 'HB:HS'
       value: STANDARD
+      page: 74
     atmosphere:
-      source: 'Handbook: House Steiner, pg. 74'
+      source: 'HB:HS'
       value: BREATHABLE
+      page: 74
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'Handbook: House Steiner, pg. 74'
+      source: 'HB:HS'
       value: 1.03
+      page: 74
     diameter: 11847
     density: 6.110114376679
     dayLength: 26
     yearLength: 1.0
     temperature:
-      source: 'Handbook: House Steiner, pg. 74'
+      source: 'HB:HS'
       value: 47
+      page: 74
     water:
-      source: 'Handbook: House Steiner, pg. 74'
+      source: 'HB:HS'
       value: 73
+      page: 74
     lifeForm:
-      source: 'Handbook: House Steiner, pg. 74'
+      source: 'HB:HS'
       value: MAMMAL
+      page: 74
     desc: |-
       Carlisle is a highly industrialized terrestrial planet inside the Alarion province of the Lyran Commonwealth. The system is located far enough from the border that it has avoided much of the warfare that has plagued the Inner Sphere for centuries.
 
       The majority of the population is located on the continent of Worrsetgard, which also contains the capital city of New Prague. Carlisle was originally settled by German and Slovak colonists.
     landmass:
       - name:
-          source: 'Handbook: House Steiner, pg. 74'
+          source: 'HB:HS'
           value: Hollens
+          page: 74
       - name:
-          source: 'Handbook: House Steiner, pg. 74'
+          source: 'HB:HS'
           value: Hozernems
+          page: 74
       - name:
-          source: 'Handbook: House Steiner, pg. 74'
+          source: 'HB:HS'
           value: Worrsetgard
+          page: 74
         capital:
-          source: 'Handbook: House Steiner, pg. 74'
+          source: 'HB:HS'
           value: New Prague
+          page: 74
     satellite:
       - name:
-          source: 'Handbook: House Steiner, pg. 74'
+          source: 'HB:HS'
           value: Dyson
+          page: 74
         size: giant
         icon: rock16
     event:
       - date: '2487-05-15'
+        # administration: LA | Protectorate of Donegal | Alarion Province
+        # administration: LA | Protectorate of Donegal | Alarion Province
+        # administration: LA | Protectorate of Donegal | Alarion Province
+        # administration: LA | Protectorate of Donegal | Alarion Province
+        # administration: LA | Protectorate of Donegal | Alarion Province
+        # administration: LA | Protectorate of Donegal | Alarion Province
         faction:
           source: canon
           value:
@@ -264,8 +284,25 @@ planet:
       - date: '3036-01-01'
         socioIndustrial: C-B-D-C-C
       - date: '3040-01-01'
+        # administration: FC | Donegal March | Alarion Operational Area
+        # administration: FC | Donegal March | Alarion Operational Area
+        # administration: FC | Donegal March | Alarion Operational Area
+        # administration: FC | Donegal March | Alarion Operational Area
+        # administration: FC | Donegal March | Alarion Operational Area
+        # administration: FC | Donegal March | Alarion Operational Area
         population: 323935407.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
+        # administration: FC | Donegal March | Alarion Operational Area
+        # administration: FC | Donegal March | Alarion Operational Area
+        # administration: FC | Donegal March | Alarion Operational Area
+        # administration: FC | Donegal March | Alarion Operational Area
+        # administration: FC | Donegal March | Alarion Operational Area
+        # administration: FC | Donegal March | Alarion Operational Area
         faction:
           source: canon
           value:
@@ -276,7 +313,25 @@ planet:
           value: B-A-C-B-B
       - date: '3050-01-01'
         population: 328305354.0
+      - date: '3057-01-01'
+        # administration: LA | Donegal March | Alarion Operational Area
+        # administration: LA | Donegal March | Alarion Operational Area
+        # administration: LA | Donegal March | Alarion Operational Area
+        # administration: LA | Donegal March | Alarion Operational Area
+        # administration: LA | Donegal March | Alarion Operational Area
+        # administration: LA | Donegal March | Alarion Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '3057-09-18'
+        # administration: LA | Alarion Province
+        # administration: LA | Alarion Province
+        # administration: LA | Alarion Province
+        # administration: LA | Alarion Province
+        # administration: LA | Alarion Province
+        # administration: LA | Alarion Province
         faction:
           source: canon
           value:

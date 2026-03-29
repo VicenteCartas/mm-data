@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -23,7 +23,7 @@ spectralType:
   source: canon
   value: F0V
 primarySlot:
-  source: MWDA world profiles
+  source: DA:RW
   value: 7
 event:
   - date: '2400-08-31'
@@ -132,31 +132,31 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 2.56
     sysPos:
-      source: MWDA world profiles
+      source: DA:RW
       value: 7
     icon: wet16
     pressure:
-      source: MWDA world profiles
+      source: DA:RW
       value: STANDARD
     atmosphere:
-      source: MWDA world profiles
+      source: DA:RW
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: MWDA world profiles
+      source: DA:RW
       value: 1.05
     diameter: 11095
     density: 6.650978303774
     dayLength: 25
     yearLength: 4.3
     temperature:
-      source: MWDA world profiles
+      source: DA:RW
       value: 22
     water:
-      source: MWDA world profiles
+      source: DA:RW
       value: 88
     lifeForm:
-      source: MWDA world profiles
+      source: DA:RW
       value: AMPHIBIAN
     desc: |-
       3135 - Dubhe, once known as Alpha Ursae Majoris, is a binary system blessed by an inhabitable world. Dubhe revolves around the outer star, a pale yellow sun that orbits a cooler orange giant once every forty-four Terran years. The orbit of Dubhe is elongated as it passes between the binary suns, these periods produces warmer-than-average summers for a world that is overall quite cool with harsh winters. As a result, every two decades Dubhe's polar caps begin a period of rapid melting that causes ocean levels worldwide rise by as much as one or two meters and wide-scale flooding. The intensity of the "super-summer" seasons and the melting of the polar caps has increased over the centuries. This has been attributed to the effects of centuries of mining and industrialization rather than to the planet's subtly growing distance from its primary sun in favor of the secondary.
@@ -169,7 +169,7 @@ planet:
           source: canon
           value: Holidius
         capital:
-          source: MWDA world profiles
+          source: DA:RW
           value: Greenwich
     event:
       - date: '2255-01-17'
@@ -295,8 +295,25 @@ planet:
         population: 7635765312.0
       - date: '2750-01-01'
         population: 7691507920.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FWL
       - date: '2760-01-01'
         population: 7777534579.0
+      - date: '2767-01-01'
+        # administration: AE | Tyrfing Province
+        # administration: AE | Tyrfing Province
+        # administration: AE | Tyrfing Province
+        # administration: AE | Tyrfing Province
+        # administration: AE | Tyrfing Province
+        # administration: AE | Tyrfing Province
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - AE
       - date: '2767-01-15'
         faction:
           source: canon
@@ -404,7 +421,25 @@ planet:
             - Stone
       - date: '3080-01-01'
         population: 6540868276.0
+      - date: '3081-01-01'
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ROS
       - date: '3081-11-20'
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
         faction:
           source: canon
           value:
@@ -423,6 +458,12 @@ planet:
         population: 6912075265.0
       - date: '3132-08-07'
         hpg: X
+      - date: '3135-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - RR
       - date: '3135-10-01'
         faction:
           source: canon
@@ -444,10 +485,17 @@ planet:
             - CWE
       - date: '3151-01-01'
         faction:
-          source: sucs
+          source: SUCS
+          version: 2026.03.02
           value:
             - CWE
       - date: '3151-10-20'
+        # administration: FWL | Covenant Worlds
+        # administration: FWL | Covenant Worlds
+        # administration: FWL | Covenant Worlds
+        # administration: FWL | Covenant Worlds
+        # administration: FWL | Covenant Worlds
+        # administration: FWL | Covenant Worlds
         faction:
           source: canon
           value:

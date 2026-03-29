@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,15 +16,17 @@
 # affiliated with Microsoft.
 
 id: Gibson
-sucsId: 952
+sucsId: 953
 xcood: -245.811
 ycood: -215.127
 spectralType:
-  source: 25 Years of Art and Fiction, pg. 215
+  source: 25YAF
   value: G2V
+  page: 215
 primarySlot:
-  source: 25 Years of Art and Fiction, pg. 215
+  source: 25YAF
   value: 3
+  page: 215
 event:
   - date: '2352-02-20'
     nadirCharge: yes
@@ -74,32 +76,39 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 1.0
     sysPos:
-      source: 25 Years of Art and Fiction, pg. 215
+      source: 25YAF
       value: 3
+      page: 215
     icon: green46
     pressure:
-      source: 25 Years of Art and Fiction, pg. 215
+      source: 25YAF
       value: STANDARD
+      page: 215
     atmosphere:
-      source: 25 Years of Art and Fiction, pg. 215
+      source: 25YAF
       value: BREATHABLE
+      page: 215
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 25 Years of Art and Fiction, pg. 215
+      source: 25YAF
       value: 1.0
+      page: 215
     diameter: 13774
     density: 5.101958552032
     dayLength: 27
     yearLength: 1.4
     temperature:
-      source: 25 Years of Art and Fiction, pg. 215
+      source: 25YAF
       value: 38
+      page: 215
     water:
-      source: 25 Years of Art and Fiction, pg. 215
+      source: 25YAF
       value: 59
+      page: 215
     lifeForm:
-      source: 25 Years of Art and Fiction, pg. 215
+      source: 25YAF
       value: MAMMAL
+      page: 215
     desc: |-
       After heavy terraforming during early colonization Gibson became one of the most hospitable planets in the entire Free Worlds League. Semi-arid, but extremely comfortable for human life, Gibson manages to be completely self-sufficient. Due to the planet’s fertile farming land and comfortable atmosphere, Gibson was colonized by a wide diversity of peoples and religions.
 
@@ -110,20 +119,24 @@ planet:
       Brigadier Corporation
     landmass:
       - name:
-          source: 'Handbook: House Marik, pg. 73'
+          source: 'HB:HM'
           value: Matrah
+          page: 73
         capital:
-          source: 'Handbook: House Marik, pg. 73'
+          source: 'HB:HM'
           value: Portent
+          page: 73
     satellite:
       - name:
-          source: 25 Years of Art and Fiction, pg. 215
+          source: 25YAF
           value: Understanding
+          page: 215
         size: medium
         icon: oddmoon2
       - name:
-          source: 25 Years of Art and Fiction, pg. 215
+          source: 25YAF
           value: Unity
+          page: 215
         size: medium
         icon: oddmoon3
     event:
@@ -162,6 +175,12 @@ planet:
         population: 479603941.0
       - date: '2360-01-01'
         population: 662935478.0
+      - date: '2366-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '2370-01-01'
         population: 883816432.0
       - date: '2378-01-01'
@@ -207,6 +226,18 @@ planet:
         population: 4479022117.0
       - date: '2570-01-01'
         population: 4516436926.0
+      - date: '2571-01-01'
+        # administration: FWL | Principality of Regulus
+        # administration: FWL | Principality of Regulus
+        # administration: FWL | Principality of Regulus
+        # administration: FWL | Principality of Regulus
+        # administration: FWL | Principality of Regulus
+        # administration: FWL | Principality of Regulus
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FWL
       - date: '2580-01-01'
         population: 4567119251.0
       - date: '2590-01-01'
@@ -341,6 +372,12 @@ planet:
           source: canon
           value:
             - WOB
+      - date: '3079-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ABN
       - date: '3079-10-18'
         faction:
           source: canon

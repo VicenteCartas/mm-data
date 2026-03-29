@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -20,10 +20,10 @@ sucsId: 187
 xcood: 20.928
 ycood: 74.397
 spectralType:
-  source: MWDA world profiles
+  source: DA:RW
   value: A4VI
 primarySlot:
-  source: MWDA world profiles
+  source: DA:RW
   value: 2
 planet:
   - name: Moirae
@@ -48,31 +48,31 @@ planet:
     type: GIANT_TERRESTRIAL
     orbitalDist: 10.92
     sysPos:
-      source: MWDA world profiles
+      source: DA:RW
       value: 2
     icon: green51
     pressure:
-      source: MWDA world profiles
+      source: DA:RW
       value: STANDARD
     atmosphere:
-      source: MWDA world profiles
+      source: DA:RW
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: MWDA world profiles
+      source: DA:RW
       value: 1.21
     diameter: 12835
     density: 6.62507445057
     dayLength: 17
     yearLength: 36.1
     temperature:
-      source: MWDA world profiles
+      source: DA:RW
       value: 52
     water:
-      source: MWDA world profiles
+      source: DA:RW
       value: 61
     lifeForm:
-      source: MWDA world profiles
+      source: DA:RW
       value: PLANT
     desc: |-
       A rare habitable planet found orbiting a white subdwarf star that older star charts still refer to as Zeta Sagittarius, Ascella is a very young, hot, and geologically unstable world. The presence of abundant raw materials close to the surface and scattered across the floors of its shallow oceans drew settlers here in the early colonial era, despite the presence of an atmosphere still laced with ammonia and carbon dioxide. Particularly dense metals, including some highly radioactive ores, were among Ascella‘s most common natural treasures, and also help to explain the above-average gravitational field of this medium-sized world.
@@ -83,25 +83,25 @@ planet:
     smallMoons: 5
     landmass:
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Askahr
         capital:
-          source: MWDA world profiles
+          source: DA:RW
           value: Tarawa
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Aytagrad
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Niejawa
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Ogleca
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Quarenir
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Saufell
     event:
       - date: '2254-12-02'
@@ -134,6 +134,12 @@ planet:
         population: 9949360.0
       - date: '2340-01-01'
         population: 14249211.0
+      - date: '2341-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '2350-01-01'
         population: 19442319.0
       - date: '2360-01-01'
@@ -182,6 +188,18 @@ planet:
         population: 143121914.0
       - date: '2570-01-01'
         population: 146076709.0
+      - date: '2571-01-01'
+        # administration: DC | Benjamin Military District | Kuzuu Prefecture
+        # administration: DC | Benjamin Military District | Kuzuu Prefecture
+        # administration: DC | Benjamin Military District | Kuzuu Prefecture
+        # administration: DC | Benjamin Military District | Kuzuu Prefecture
+        # administration: DC | Benjamin Military District | Kuzuu Prefecture
+        # administration: DC | Benjamin Military District | Kuzuu Prefecture
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - DC
       - date: '2580-01-01'
         population: 148955249.0
       - date: '2590-01-01'
@@ -302,6 +320,12 @@ planet:
           source: canon
           value:
             - WOB
+      - date: '3075-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - Stone
       - date: '3075-12-09'
         faction:
           source: canon
@@ -317,7 +341,25 @@ planet:
             - Stone
       - date: '3080-01-01'
         population: 74086253.0
+      - date: '3081-01-01'
+        # administration: ROS | Prefecture I
+        # administration: ROS | Prefecture I
+        # administration: ROS | Prefecture I
+        # administration: ROS | Prefecture I
+        # administration: ROS | Prefecture I
+        # administration: ROS | Prefecture I
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ROS
       - date: '3081-10-27'
+        # administration: ROS | Prefecture I
+        # administration: ROS | Prefecture I
+        # administration: ROS | Prefecture I
+        # administration: ROS | Prefecture I
+        # administration: ROS | Prefecture I
+        # administration: ROS | Prefecture I
         faction:
           source: canon
           value:
@@ -336,6 +378,12 @@ planet:
         population: 78494613.0
       - date: '3132-08-07'
         hpg: X
+      - date: '3135-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3135-10-01'
         faction:
           source: canon
@@ -343,7 +391,25 @@ planet:
             - IND
       - date: '3140-01-01'
         population: 79984270.0
+      - date: '3145-01-01'
+        # administration: DC | Dieron Military District | Dieron Prefecture
+        # administration: DC | Dieron Military District | Dieron Prefecture
+        # administration: DC | Dieron Military District | Dieron Prefecture
+        # administration: DC | Dieron Military District | Dieron Prefecture
+        # administration: DC | Dieron Military District | Dieron Prefecture
+        # administration: DC | Dieron Military District | Dieron Prefecture
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - DC
       - date: '3145-10-18'
+        # administration: DC | Dieron Military District | Dieron Prefecture
+        # administration: DC | Dieron Military District | Dieron Prefecture
+        # administration: DC | Dieron Military District | Dieron Prefecture
+        # administration: DC | Dieron Military District | Dieron Prefecture
+        # administration: DC | Dieron Military District | Dieron Prefecture
+        # administration: DC | Dieron Military District | Dieron Prefecture
         faction:
           source: canon
           value:

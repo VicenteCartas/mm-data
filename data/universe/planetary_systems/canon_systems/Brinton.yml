@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -23,8 +23,9 @@ spectralType:
   source: canon
   value: G6V
 primarySlot:
-  source: Periphery (1ed), pg. 85
+  source: Per1e
   value: 5
+  page: 85
 event:
   - date: '2753-01-29'
     zenithCharge: yes
@@ -120,8 +121,9 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.9
     sysPos:
-      source: Periphery (1ed), pg. 85
+      source: Per1e
       value: 5
+      page: 85
     icon: green48
     pressure:
       source: canon
@@ -142,8 +144,9 @@ planet:
       source: canon
       value: 57
     lifeForm:
-      source: Periphery (1ed), pg. 85
+      source: Per1e
       value: BIRD
+      page: 85
     desc: |-
       Near the end of the Third Succession War, Capellan raiders set off an ancient bio-weapon that resulted in the entire planet being contaminated and saw the removal of the planet from star charts for several decades. However, despite the deadly contamination that was still killing off any unprotected visitors decades later, the importance of the O-P Computer Electronics plant on planet kept Brinton from being completely abandoned. Without the contamination from the bioweapon, Brinton was a comfortable planet with abundant resources and arable land and well developed technologically and industrially for a Periphery planet. The O-P Computer Electronics plant is located in the city of Fago on the Charlton continent.
 
@@ -174,6 +177,12 @@ planet:
         icon: rock14
     event:
       - date: '2739-03-23'
+        # administration: TC | Brinton Union
+        # administration: TC | Brinton Union
+        # administration: TC | Brinton Union
+        # administration: TC | Brinton Union
+        # administration: TC | Brinton Union
+        # administration: TC | Brinton Union
         faction:
           source: canon
           value:
@@ -189,6 +198,12 @@ planet:
       - date: '2750-01-01'
         population: 283842.0
       - date: '2751-05-14'
+        # administration: TC | Brinton Union
+        # administration: TC | Brinton Union
+        # administration: TC | Brinton Union
+        # administration: TC | Brinton Union
+        # administration: TC | Brinton Union
+        # administration: TC | Brinton Union
         faction:
           source: canon
           value:
@@ -219,6 +234,12 @@ planet:
         population: 52802198.0
       - date: '2860-01-01'
         population: 60401271.0
+      - date: '2864-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ABN
       - date: '2870-01-01'
         population: 67227235.0
       - date: '2880-01-01'
@@ -259,6 +280,11 @@ planet:
         population:
           source: canon
           value: 55000.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - TC
       - date: '3030-01-01'
         population: 96118935.0
       - date: '3040-01-01'

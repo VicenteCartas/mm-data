@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Jardine (Herakleion 2822+)
-sucsId: 1236
+sucsId: 1237
 xcood: -200.944
 ycood: -91.199
 spectralType: F4V
@@ -147,6 +147,12 @@ planet:
         population: 14897796.0
       - date: '2310-01-01'
         population: 21513117.0
+      - date: '2317-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '2320-01-01'
         population: 29430978.0
       - date: '2330-01-01'
@@ -205,6 +211,12 @@ planet:
         population: 243025906.0
       - date: '2570-01-01'
         population: 247313406.0
+      - date: '2571-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FWL
       - date: '2580-01-01'
         population: 251158236.0
       - date: '2590-01-01'
@@ -266,6 +278,11 @@ planet:
             - CS
       - date: '2830-01-01'
         population: 327803636.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CS(H)
       - date: '2840-01-12'
         population: 336774901.0
         socioIndustrial: C-B-C-C-C
@@ -317,11 +334,23 @@ planet:
         socioIndustrial: B-B-A-C-B
       - date: '3050-01-01'
         population: 308066220.0
+      - date: '3057-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - WB(H)
       - date: '3057-09-01'
         faction:
           source: canon
           value:
             - WOB
+      - date: '3058-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - WB(H)
       - date: '3060-01-01'
         population: 310913506.0
       - date: '3068-02-24'
@@ -337,6 +366,17 @@ planet:
       - date: '2822-01-01'
         name: Herakleion
         message: Jardine renamed to Herakleion
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FWL
+      - date: '3075-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ABN
   - name: Chernobog
     type: GIANT_TERRESTRIAL
     orbitalDist: 3.92

@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Lindassa
-sucsId: 2867
+sucsId: 2868
 xcood: -475.101
 ycood: -216.009
 spectralType: G6V
@@ -77,6 +77,12 @@ planet:
       - name: New Khoroshiv Raion
       - name: New Anacortes
     event:
+      - date: '2786-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LL
       - date: '2822-06-04'
         faction:
           source: canon
@@ -136,6 +142,12 @@ planet:
       - date: '3050-01-01'
         population: 82232761.0
       - date: '3055-11-09'
+        # administration: MH | Lothian District
+        # administration: MH | Lothian District
+        # administration: MH | Lothian District
+        # administration: MH | Lothian District
+        # administration: MH | Lothian District
+        # administration: MH | Lothian District
         faction:
           source: canon
           value:
@@ -148,6 +160,12 @@ planet:
         population: 82296289.0
       - date: '3090-01-01'
         population: 83023692.0
+      - date: '3095-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LL
       - date: '3100-01-01'
         population: 83673809.0
       - date: '3102-01-01'

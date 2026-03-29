@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Tatsuno
-sucsId: 2497
+sucsId: 2498
 xcood: 204.459
 ycood: 155.048
 spectralType: G7V
@@ -88,6 +88,12 @@ planet:
         population: 2582186.0
       - date: '2340-01-01'
         population: 5799555.0
+      - date: '2341-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '2350-01-01'
         population: 11592481.0
       - date: '2360-01-01'
@@ -137,6 +143,18 @@ planet:
       - date: '2570-07-17'
         population: 560159319.0
         socioIndustrial: C-D-B-C-B
+      - date: '2571-01-01'
+        # administration: DC | Benjamin Military District | Kajikazawa Prefecture
+        # administration: DC | Benjamin Military District | Kajikazawa Prefecture
+        # administration: DC | Benjamin Military District | Kajikazawa Prefecture
+        # administration: DC | Benjamin Military District | Kajikazawa Prefecture
+        # administration: DC | Benjamin Military District | Kajikazawa Prefecture
+        # administration: DC | Benjamin Military District | Kajikazawa Prefecture
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - DC
       - date: '2580-01-01'
         population: 565243562.0
       - date: '2590-01-01'

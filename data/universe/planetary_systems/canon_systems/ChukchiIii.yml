@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -20,10 +20,10 @@ sucsId: 555
 xcood: -180.694
 ycood: 90.425
 spectralType:
-  source: House Steiner
+  source: HSSB
   value: G5V
 primarySlot:
-  source: House Steiner
+  source: HSSB
   value: 3
 event:
   - date: '2651-03-23'
@@ -69,7 +69,7 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.9
     sysPos:
-      source: House Steiner
+      source: HSSB
       value: 3
     icon: green46
     pressure:
@@ -91,7 +91,7 @@ planet:
       source: canon
       value: 72
     lifeForm:
-      source: House Steiner
+      source: HSSB
       value: REPTILE
     desc: |-
       Chukchi III remained a relatively backwater planet for most of its history, full of picturesque green valleys and snow capped mountains. This changed in the early 31st Century with the discovery of massive deposits of Titanium in the planet. As a result there was a period of rapid industrialization of the planet in order to fully exploit the titanium. This unfortunately resulted in the destruction of much of the planet’s picturesque wilderness and the rapid growth also introduced organized crime to Chukchi III.
@@ -123,7 +123,25 @@ planet:
         size: medium
         icon: oddmoon3
     event:
+      - date: '2596-01-01'
+        # administration: LA | Protectorate of Donegal | Furillo Province
+        # administration: LA | Protectorate of Donegal | Furillo Province
+        # administration: LA | Protectorate of Donegal | Furillo Province
+        # administration: LA | Protectorate of Donegal | Furillo Province
+        # administration: LA | Protectorate of Donegal | Furillo Province
+        # administration: LA | Protectorate of Donegal | Furillo Province
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '2596-08-04'
+        # administration: LA | Protectorate of Donegal | Furillo Province
+        # administration: LA | Protectorate of Donegal | Furillo Province
+        # administration: LA | Protectorate of Donegal | Furillo Province
+        # administration: LA | Protectorate of Donegal | Furillo Province
+        # administration: LA | Protectorate of Donegal | Furillo Province
+        # administration: LA | Protectorate of Donegal | Furillo Province
         faction:
           source: canon
           value:
@@ -234,19 +252,55 @@ planet:
         socioIndustrial: B-C-C-C-C
       - date: '3030-01-01'
         population: 840204639.0
+      - date: '3040-01-01'
+        # administration: FC | Tamarind March | Soilihull Operational Area
+        # administration: FC | Tamarind March | Soilihull Operational Area
+        # administration: FC | Tamarind March | Soilihull Operational Area
+        # administration: FC | Tamarind March | Soilihull Operational Area
+        # administration: FC | Tamarind March | Soilihull Operational Area
+        # administration: FC | Tamarind March | Soilihull Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-03-25'
         population: 845514637.0
         socioIndustrial:
           source: canon
           value: B-B-B-B-C
       - date: '3040-01-19'
+        # administration: FC | Tamarind March | Soilihull Operational Area
+        # administration: FC | Tamarind March | Soilihull Operational Area
+        # administration: FC | Tamarind March | Soilihull Operational Area
+        # administration: FC | Tamarind March | Soilihull Operational Area
+        # administration: FC | Tamarind March | Soilihull Operational Area
+        # administration: FC | Tamarind March | Soilihull Operational Area
         faction:
           source: canon
           value:
             - FC
       - date: '3050-01-01'
         population: 851879836.0
+      - date: '3057-01-01'
+        # administration: LA | Tamarind March | Soilihull Operational Area
+        # administration: LA | Tamarind March | Soilihull Operational Area
+        # administration: LA | Tamarind March | Soilihull Operational Area
+        # administration: LA | Tamarind March | Soilihull Operational Area
+        # administration: LA | Tamarind March | Soilihull Operational Area
+        # administration: LA | Tamarind March | Soilihull Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '3057-09-18'
+        # administration: LA | Bolan Province
+        # administration: LA | Bolan Province
+        # administration: LA | Bolan Province
+        # administration: LA | Bolan Province
+        # administration: LA | Bolan Province
+        # administration: LA | Bolan Province
         faction:
           source: canon
           value:
@@ -275,6 +329,12 @@ planet:
           value: X
       - date: '3140-01-01'
         population: 916301519.0
+      - date: '3145-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CWE
       - date: '3145-10-11'
         faction:
           source: canon

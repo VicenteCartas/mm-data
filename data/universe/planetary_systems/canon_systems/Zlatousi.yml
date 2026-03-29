@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Zlatousi
-sucsId: 2842
+sucsId: 2843
 xcood: 427.28
 ycood: 219.671
 spectralType: K7V
@@ -172,6 +172,12 @@ planet:
             - DC
             - OA
       - date: '2585-08-01'
+        # administration: DC | Galedon Military District | New Samarkand Prefecture
+        # administration: DC | Galedon Military District | New Samarkand Prefecture
+        # administration: DC | Galedon Military District | New Samarkand Prefecture
+        # administration: DC | Galedon Military District | New Samarkand Prefecture
+        # administration: DC | Galedon Military District | New Samarkand Prefecture
+        # administration: DC | Galedon Military District | New Samarkand Prefecture
         faction:
           source: canon
           value:
@@ -294,6 +300,18 @@ planet:
             - RA
       - date: '3090-01-01'
         population: 121331540.0
+      - date: '3095-01-01'
+        # administration: DC | New Samarkand Military District | Tabayama Prefecture
+        # administration: DC | New Samarkand Military District | Tabayama Prefecture
+        # administration: DC | New Samarkand Military District | Tabayama Prefecture
+        # administration: DC | New Samarkand Military District | Tabayama Prefecture
+        # administration: DC | New Samarkand Military District | Tabayama Prefecture
+        # administration: DC | New Samarkand Military District | Tabayama Prefecture
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - DC
       - date: '3100-01-01'
         population: 122306085.0
       - date: '3110-01-01'
@@ -302,6 +320,11 @@ planet:
         population: 125854540.0
       - date: '3130-01-01'
         population: 127246582.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - RA
       - date: '3132-01-01'
         socioIndustrial: B-C-B-C-A
       - date: '3132-08-07'

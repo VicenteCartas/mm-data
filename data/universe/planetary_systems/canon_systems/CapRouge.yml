@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -135,14 +135,7 @@ planet:
     lifeForm:
       source: canon
       value: REPTILE
-    desc: It is hard to imagine why the planet of Cap Rouge was originally settled,
-      the planet has a harsh arid climate, that makes agriculture difficult and the
-      planet does not have large enough deposits of natural resources to normally
-      attract settlers. The planet supports modest industry, though the most notable
-      feature on planet is the Hero Training Institute, a for-profit BattleMech and
-      Aerospace training institute located outside the planetary capital of Saint
-      Roch on the Sillery continent. The Hero Institute makes use of the vast stretches
-      of empty badlands outside of Saint Roch to conduct training exercises.
+    desc: It is hard to imagine why the planet of Cap Rouge was originally settled, the planet has a harsh arid climate, that makes agriculture difficult and the planet does not have large enough deposits of natural resources to normally attract settlers. The planet supports modest industry, though the most notable feature on planet is the Hero Training Institute, a for-profit BattleMech and Aerospace training institute located outside the planetary capital of Saint Roch on the Sillery continent. The Hero Institute makes use of the vast stretches of empty badlands outside of Saint Roch to conduct training exercises.
     landmass:
       - name:
           source: canon
@@ -162,6 +155,12 @@ planet:
         icon: rock11
     event:
       - date: '2710-09-16'
+        # administration: FWL | Duchy of Andurien
+        # administration: FWL | Duchy of Andurien
+        # administration: FWL | Duchy of Andurien
+        # administration: FWL | Duchy of Andurien
+        # administration: FWL | Duchy of Andurien
+        # administration: FWL | Duchy of Andurien
         faction:
           source: canon
           value:
@@ -260,6 +259,12 @@ planet:
         population: 216695158.0
       - date: '3080-01-01'
         population: 219530586.0
+      - date: '3081-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3081-08-29'
         faction:
           source: canon

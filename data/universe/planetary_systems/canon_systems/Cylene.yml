@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -20,10 +20,10 @@ sucsId: 640
 xcood: 105.978
 ycood: 25.03
 spectralType:
-  source: MWDA world profiles
+  source: DA:RW
   value: F9V
 primarySlot:
-  source: MWDA world profiles
+  source: DA:RW
   value: 2
 event:
   - date: '2385-09-01'
@@ -57,74 +57,59 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 1.1
     sysPos:
-      source: MWDA world profiles
+      source: DA:RW
       value: 2
     icon: green14
     pressure:
-      source: MWDA world profiles
+      source: DA:RW
       value: STANDARD
     atmosphere:
-      source: MWDA world profiles
+      source: DA:RW
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: MWDA world profiles
+      source: DA:RW
       value: 1.26
     diameter: 12469
     density: 7.101387521565
     dayLength: 20
     yearLength: 1.6
     temperature:
-      source: MWDA world profiles
+      source: DA:RW
       value: 29
     water:
-      source: MWDA world profiles
+      source: DA:RW
       value: 43
     lifeForm:
-      source: MWDA world profiles
+      source: DA:RW
       value: REPTILE
-    desc: Cylene‘s eccentric orbit is largely attributed to the imbalance caused by
-      the shattering of its large moon into three smaller satellites roughly eighty
-      thousand years ago, likely by a large rogue asteroid or comet. As a result,
-      the planet is currently entering into what many believe to be the beginnings
-      of an ice age, with temperatures near freezing even at the equator during the
-      winter months. This, as much as the damage done during the first two Succession
-      Wars (particularly between the Draconis Combine and the Federated Suns), has
-      resulted in the gradual, but steady emigration of the population to other, more
-      hospitable and safe worlds nearby. Ruins of cities destroyed or abandoned in
-      the early wars still dot the landscape of the northern continent. Only the large
-      deposits of industrial-grade metal ore, discovered close to the planet surface
-      and churned up by the planet‘s occasionally overactive geology, has kept people
-      around and employed. The planet‘s main continents are the largely unpopulated
-      Graus, in the north, Clytemnestra in the south, and Absalom, a large landmass
-      that practically rings the entire equatorial region and is home to the planetary
-      capital of Halcyon.
+    desc: Cylene‘s eccentric orbit is largely attributed to the imbalance caused by the shattering of its large moon into three smaller satellites roughly eighty thousand years ago, likely by a large rogue asteroid or comet. As a result, the planet is currently entering into what many believe to be the beginnings of an ice age, with temperatures near freezing even at the equator during the winter months. This, as much as the damage done during the first two Succession Wars (particularly between the Draconis Combine and the Federated Suns), has resulted in the gradual, but steady emigration of the population to other, more hospitable and safe worlds nearby. Ruins of cities destroyed or abandoned in the early wars still dot the landscape of the northern continent. Only the large deposits of industrial-grade metal ore, discovered close to the planet surface and churned up by the planet‘s occasionally overactive geology, has kept people around and employed. The planet‘s main continents are the largely unpopulated Graus, in the north, Clytemnestra in the south, and Absalom, a large landmass that practically rings the entire equatorial region and is home to the planetary capital of Halcyon.
     landmass:
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Absalom
         capital:
-          source: MWDA world profiles
+          source: DA:RW
           value: Halcyon
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Clytemnestra
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Graus
     satellite:
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Allestra
         size: large
         icon: rock2
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Hermione
         size: medium
         icon: oddmoon2
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Joseppe
         size: medium
         icon: rock17
@@ -187,6 +172,12 @@ planet:
           value:
             - DC
         population: 528689463.0
+      - date: '2341-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '2350-01-01'
         population: 586940267.0
       - date: '2360-01-01'
@@ -235,6 +226,18 @@ planet:
       - date: '2570-06-27'
         population: 1419945904.0
         socioIndustrial: B-B-A-D-D
+      - date: '2571-01-01'
+        # administration: DC | Benjamin Military District | Ashio Prefecture
+        # administration: DC | Benjamin Military District | Ashio Prefecture
+        # administration: DC | Benjamin Military District | Ashio Prefecture
+        # administration: DC | Benjamin Military District | Ashio Prefecture
+        # administration: DC | Benjamin Military District | Ashio Prefecture
+        # administration: DC | Benjamin Military District | Ashio Prefecture
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - DC
       - date: '2580-01-01'
         population: 1421181931.0
       - date: '2590-01-01'
@@ -337,6 +340,12 @@ planet:
       - date: '3010-01-01'
         population: 1044825919.0
       - date: '3020-08-01'
+        # administration: DC | Dieron Military District | Ashio Prefecture
+        # administration: DC | Dieron Military District | Ashio Prefecture
+        # administration: DC | Dieron Military District | Ashio Prefecture
+        # administration: DC | Dieron Military District | Ashio Prefecture
+        # administration: DC | Dieron Military District | Ashio Prefecture
+        # administration: DC | Dieron Military District | Ashio Prefecture
         faction:
           source: canon
           value:
@@ -347,8 +356,25 @@ planet:
       - date: '3036-01-01'
         socioIndustrial: B-B-B-C-F
       - date: '3040-01-01'
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
         population: 1007113985.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
         faction:
           source: canon
           value:
@@ -359,7 +385,25 @@ planet:
         population: 1014087101.0
       - date: '3060-01-01'
         population: 1020393972.0
+      - date: '3067-01-01'
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FS
       - date: '3067-04-20'
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
         faction:
           source: canon
           value:
@@ -368,7 +412,25 @@ planet:
         population: 1028075698.0
       - date: '3080-01-01'
         population: 1037577636.0
+      - date: '3081-01-01'
+        # administration: ROS | Prefecture III
+        # administration: ROS | Prefecture III
+        # administration: ROS | Prefecture III
+        # administration: ROS | Prefecture III
+        # administration: ROS | Prefecture III
+        # administration: ROS | Prefecture III
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ROS
       - date: '3081-02-16'
+        # administration: ROS | Prefecture III
+        # administration: ROS | Prefecture III
+        # administration: ROS | Prefecture III
+        # administration: ROS | Prefecture III
+        # administration: ROS | Prefecture III
+        # administration: ROS | Prefecture III
         faction:
           source: canon
           value:
@@ -387,6 +449,12 @@ planet:
         population: 1126019447.0
       - date: '3132-08-07'
         hpg: X
+      - date: '3135-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3135-10-01'
         faction:
           source: canon
@@ -394,7 +462,25 @@ planet:
             - IND
       - date: '3140-01-01'
         population: 1139613079.0
+      - date: '3145-01-01'
+        # administration: DC | Dieron Military District | Ashio Prefecture
+        # administration: DC | Dieron Military District | Ashio Prefecture
+        # administration: DC | Dieron Military District | Ashio Prefecture
+        # administration: DC | Dieron Military District | Ashio Prefecture
+        # administration: DC | Dieron Military District | Ashio Prefecture
+        # administration: DC | Dieron Military District | Ashio Prefecture
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - DC
       - date: '3145-03-01'
+        # administration: DC | Dieron Military District | Ashio Prefecture
+        # administration: DC | Dieron Military District | Ashio Prefecture
+        # administration: DC | Dieron Military District | Ashio Prefecture
+        # administration: DC | Dieron Military District | Ashio Prefecture
+        # administration: DC | Dieron Military District | Ashio Prefecture
+        # administration: DC | Dieron Military District | Ashio Prefecture
         faction:
           source: canon
           value:

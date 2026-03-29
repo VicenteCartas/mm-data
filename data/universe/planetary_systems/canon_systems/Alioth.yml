@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -20,10 +20,10 @@ sucsId: 73
 xcood: -58.94
 ycood: 13.908
 spectralType:
-  source: MWDA world profiles
+  source: DA:RW
   value: A0V
 primarySlot:
-  source: MWDA world profiles
+  source: DA:RW
   value: 2
 event:
   - date: '2355-06-27'
@@ -62,31 +62,31 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 8.12
     sysPos:
-      source: MWDA world profiles
+      source: DA:RW
       value: 2
     icon: green18
     pressure:
-      source: MWDA world profiles
+      source: DA:RW
       value: HIGH
     atmosphere:
-      source: MWDA world profiles
+      source: DA:RW
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: MWDA world profiles
+      source: DA:RW
       value: 0.9
     diameter: 12891
     density: 4.906583056016
     dayLength: 27
     yearLength: 23.2
     temperature:
-      source: MWDA world profiles
+      source: DA:RW
       value: 44
     water:
-      source: MWDA world profiles
+      source: DA:RW
       value: 63
     lifeForm:
-      source: MWDA world profiles
+      source: DA:RW
       value: PLANT
     desc: |-
       3135 - Alioth’s thick, hyper-oxygenated atmosphere and unusual warmth for a planet that orbits so far out from its star impressed the first colonists. The abundance of native flora for such a geologically young world is the result of bursts of solar radiation that pulse from the sun every few hundred years or so. The colonists have learnt to shield their structures against the harmful bursts of solar radiation created by this unusually active sun, which have been known to completely disrupt communications and produce worldwide outbreaks of cancer cases every few generations. Local astronomers have also learnt to read the telltale signs of new bursts of activity, in response to which the planet itself goes into a kind of global shutdown. Inspite of this, Aloith's fertile soils and mild weather cycles have made it possible for a variety of Terran and Terran-hybrid food crops to flourish and support a booming agricultural industry. In addition, the island chains off the coasts of Uvania, the planet‘s large northern continent, with their semi-tropical landscapes of wildly varied native flora, and striking mountain landscapes, were perfect for establishing a robust tourist trade. Warrinzer, the capital of Alioth, is located on the northeastern coast of Uvania, fifty kilometers north of the primary port city of Staniskil.
@@ -94,20 +94,20 @@ planet:
       During the Terran Hegemony era, Alioth became a breadbasket and holiday retreat for citizens across the Hegemony, and business truly boomed in the Star League era, when the world opened up to foreign travelers as well. After the fall of the Star League, Alioth was claimed by the Lyran Commonwealth and became another Free Worlds/Lyran border planet. It was a strategic point during raids and campaigns waged through the Succession Wars and the Jihad, Alioth‘s farmlands became scarred battlegrounds and its resorts declined as garrison troops and invading soldiers alike consumed the local resources. Under Republican rule, however, Alioth has begun to bounce back, thanks in part to a variety of local efforts funded by the 'Peace Dividends' that followed Stone's Military Material Redemption Program. Today, the resorts off Uvania are open once again, and even the southern continents of Lilandro and Stravio have reported their first profitable crop years in over a century.
     landmass:
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Lilandro
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Stravio
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Uvania
         capital:
-          source: MWDA world profiles
+          source: DA:RW
           value: Warrinzer
     satellite:
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Galayna
         size: large
         icon: rock4
@@ -134,6 +134,12 @@ planet:
       - date: '2310-01-01'
         population: 35653420.0
       - date: '2320-11-12'
+        # administration: TH | Tyrfing Province
+        # administration: TH | Tyrfing Province
+        # administration: TH | Tyrfing Province
+        # administration: TH | Tyrfing Province
+        # administration: TH | Tyrfing Province
+        # administration: TH | Tyrfing Province
         faction:
           source: canon
           value:
@@ -233,6 +239,18 @@ planet:
         population: 1298020493.0
       - date: '2760-01-01'
         population: 1312736244.0
+      - date: '2767-01-01'
+        # administration: AE | Tyrfing Province
+        # administration: AE | Tyrfing Province
+        # administration: AE | Tyrfing Province
+        # administration: AE | Tyrfing Province
+        # administration: AE | Tyrfing Province
+        # administration: AE | Tyrfing Province
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - AE
       - date: '2767-03-11'
         faction:
           source: canon
@@ -241,6 +259,12 @@ planet:
       - date: '2770-01-01'
         population: 1320632379.0
       - date: '2779-07-21'
+        # administration: TH | Tyrfing Province
+        # administration: TH | Tyrfing Province
+        # administration: TH | Tyrfing Province
+        # administration: TH | Tyrfing Province
+        # administration: TH | Tyrfing Province
+        # administration: TH | Tyrfing Province
         faction:
           source: canon
           value:
@@ -248,6 +272,12 @@ planet:
       - date: '2780-01-01'
         population: 1315082147.0
       - date: '2790-03-18'
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
         faction:
           source: canon
           value:
@@ -321,8 +351,25 @@ planet:
           value:
             - LA
       - date: '3040-01-01'
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
         population: 1131588141.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
+        # administration: FC | Skye March | Alcor Operational Area
         faction:
           source: canon
           value:
@@ -331,7 +378,25 @@ planet:
         socioIndustrial: A-A-C-A-D
       - date: '3050-01-01'
         population: 1144790991.0
+      - date: '3057-01-01'
+        # administration: LA | Skye March | Alcor Operational Area
+        # administration: LA | Skye March | Alcor Operational Area
+        # administration: LA | Skye March | Alcor Operational Area
+        # administration: LA | Skye March | Alcor Operational Area
+        # administration: LA | Skye March | Alcor Operational Area
+        # administration: LA | Skye March | Alcor Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '3057-09-18'
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
         faction:
           source: canon
           value:
@@ -342,7 +407,25 @@ planet:
         population: 1168501408.0
       - date: '3080-01-01'
         population: 1186398301.0
+      - date: '3081-01-01'
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ROS
       - date: '3081-06-10'
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
         faction:
           source: canon
           value:
@@ -361,6 +444,12 @@ planet:
         population: 1297088426.0
       - date: '3132-08-07'
         hpg: X
+      - date: '3135-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3135-10-01'
         faction:
           source: canon

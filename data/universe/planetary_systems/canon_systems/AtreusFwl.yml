@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -20,11 +20,13 @@ sucsId: 202
 xcood: -191.068
 ycood: -163.776
 spectralType:
-  source: 'Jihad Turning Points: Atreus, pg. 3'
+  source: 'JTP:Atreus'
   value: F4V
+  page: 3
 primarySlot:
-  source: 'Jihad Turning Points: Atreus, pg. 3'
+  source: 'JTP:Atreus'
   value: 3
+  page: 3
 event:
   - date: '2463-05-15'
     nadirCharge: yes
@@ -65,32 +67,39 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 2.24
     sysPos:
-      source: 'Jihad Turning Points: Atreus, pg. 3'
+      source: 'JTP:Atreus'
       value: 3
+      page: 3
     icon: green21
     pressure:
-      source: 'Jihad Turning Points: Atreus, pg. 3'
+      source: 'JTP:Atreus'
       value: STANDARD
+      page: 3
     atmosphere:
-      source: 'Jihad Turning Points: Atreus, pg. 3'
+      source: 'JTP:Atreus'
       value: BREATHABLE
+      page: 3
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'Jihad Turning Points: Atreus, pg. 3'
+      source: 'JTP:Atreus'
       value: 1.0
+      page: 3
     diameter: 15571
     density: 4.513327024339
     dayLength: 20
     yearLength: 3.6
     temperature:
-      source: 'Jihad Turning Points: Atreus, pg. 3'
+      source: 'JTP:Atreus'
       value: 45
+      page: 3
     water:
-      source: 'Jihad Turning Points: Atreus, pg. 3'
+      source: 'JTP:Atreus'
       value: 70
+      page: 3
     lifeForm:
-      source: 'Jihad Turning Points: Atreus, pg. 3'
+      source: 'JTP:Atreus'
       value: MAMMAL
+      page: 3
     desc: |-
       First colonized in 2160, Atreus was the furthest colony from Earth when it was originally settled. It became the capital of the Free Worlds League in 2271.
 
@@ -105,24 +114,30 @@ planet:
       Imperator Automatic Weaponry
     landmass:
       - name:
-          source: 'Jihad Turning Points: Atreus, pg. 3'
+          source: 'JTP:Atreus'
           value: Corin
+          page: 3
       - name:
-          source: 'Jihad Turning Points: Atreus, pg. 3'
+          source: 'JTP:Atreus'
           value: Ionia
+          page: 3
         capital:
-          source: 'Jihad Turning Points: Atreus, pg. 3'
+          source: 'JTP:Atreus'
           value: Atreus City
+          page: 3
       - name:
-          source: 'Jihad Turning Points: Atreus, pg. 3'
+          source: 'JTP:Atreus'
           value: Lanan
+          page: 3
       - name:
-          source: 'Jihad Turning Points: Atreus, pg. 3'
+          source: 'JTP:Atreus'
           value: Paltos
+          page: 3
     satellite:
       - name:
-          source: 'Jihad Turning Points: Atreus, pg. 3'
+          source: 'JTP:Atreus'
           value: Wendigo
+          page: 3
         size: large
         icon: rock3
     event:
@@ -150,6 +165,12 @@ planet:
       - date: '2240-01-01'
         population: 14811867.0
       - date: '2241-10-04'
+        # administration: MCM | National Capital
+        # administration: MCM | National Capital
+        # administration: MCM | National Capital
+        # administration: MCM | National Capital
+        # administration: MCM | National Capital
+        # administration: MCM | National Capital
         faction:
           source: canon
           value:
@@ -161,6 +182,12 @@ planet:
       - date: '2270-01-01'
         population: 40794069.0
       - date: '2271-06-01'
+        # administration: FWL | Marik Commonwealth | National Capital
+        # administration: FWL | Marik Commonwealth | National Capital
+        # administration: FWL | Marik Commonwealth | National Capital
+        # administration: FWL | Marik Commonwealth | National Capital
+        # administration: FWL | Marik Commonwealth | National Capital
+        # administration: FWL | Marik Commonwealth | National Capital
         faction:
           source: canon
           value:
@@ -347,6 +374,18 @@ planet:
         population: 374224377.0
       - date: '3070-01-01'
         population: 377418842.0
+      - date: '3079-01-01'
+        # administration: MCM | National Capital
+        # administration: MCM | National Capital
+        # administration: MCM | National Capital
+        # administration: MCM | National Capital
+        # administration: MCM | National Capital
+        # administration: MCM | National Capital
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - MCM
       - date: '3079-09-17'
         faction:
           source: canon
@@ -354,6 +393,24 @@ planet:
             - MSC
       - date: '3080-01-01'
         population: 381593367.0
+      - date: '3081-01-01'
+        # administration: MCM | National Capital
+        # administration: MCM | National Capital
+        # administration: MCM | National Capital
+        # administration: MCM | National Capital
+        # administration: MCM | National Capital
+        # administration: MCM | National Capital
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - MCM
+      - date: '3085-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - MSC
       - date: '3090-01-01'
         population: 385582646.0
       - date: '3093-01-01'
@@ -372,7 +429,25 @@ planet:
           value: X
       - date: '3140-01-01'
         population: 391175206.0
+      - date: '3145-01-01'
+        # administration: FWL | National Capital
+        # administration: FWL | National Capital
+        # administration: FWL | National Capital
+        # administration: FWL | National Capital
+        # administration: FWL | National Capital
+        # administration: FWL | National Capital
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FWL
       - date: '3145-10-20'
+        # administration: FWL | National Capital
+        # administration: FWL | National Capital
+        # administration: FWL | National Capital
+        # administration: FWL | National Capital
+        # administration: FWL | National Capital
+        # administration: FWL | National Capital
         faction:
           source: canon
           value:

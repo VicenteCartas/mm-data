@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -20,11 +20,13 @@ sucsId: 145
 xcood: 463.228
 ycood: 281.417
 spectralType:
-  source: Mercenaries Supplemental II, pg. 12
+  source: MSII
   value: K4IV
+  page: 12
 primarySlot:
-  source: Mercenaries Supplemental II, pg. 12
+  source: MSII
   value: 3
+  page: 12
 planet:
   - name: Riverhead
     type: GIANT_TERRESTRIAL
@@ -60,63 +62,62 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.7
     sysPos:
-      source: Mercenaries Supplemental II, pg. 12
+      source: MSII
       value: 3
+      page: 12
     icon: dry11
     pressure:
-      source: Mercenaries Supplemental II, pg. 12
+      source: MSII
       value: STANDARD
+      page: 12
     atmosphere:
-      source: Mercenaries Supplemental II, pg. 12
+      source: MSII
       value: TAINTED_POISON
+      page: 12
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: Mercenaries Supplemental II, pg. 12
+      source: MSII
       value: 0.92
+      page: 12
     diameter: 11047
     density: 5.852606962101
     dayLength: 27
     yearLength: 1.0
     temperature:
-      source: Mercenaries Supplemental II, pg. 12
+      source: MSII
       value: 49
+      page: 12
     water:
-      source: Mercenaries Supplemental II, pg. 12
+      source: MSII
       value: 11
+      page: 12
     lifeForm:
-      source: Mercenaries Supplemental II, pg. 12
+      source: MSII
       value: BIRD
-    desc: Antallos was first settled in 2674 by a multinational trading conglomerate
-      and managed by the Terran Hegemony with the Star League's blessing. Antallos
-      was planned to be a neutral trading hub bringing together the powers of the
-      Inner Sphere and the people of the Periphery. While the Star League existed
-      the plan was a success and Antallos was vastly wealthy. Unfortunately, the collapse
-      of the League saw the planet left to its own and over the centuries raiders,
-      pirates and the Great Houses hit the independent planet reducing it from a jewel
-      in the Periphery to a no man's land, eventually becoming a pirate haven with
-      the dregs of humanity calling the planet home. Antallos is lawless and slavery
-      and other illegal trades are the background of the planets economy. Antallos
-      supports a small "mercenary" hiring hall, primarily serviced by pirates and
-      those looking for less than legal jobs.
+      page: 12
+    desc: Antallos was first settled in 2674 by a multinational trading conglomerate and managed by the Terran Hegemony with the Star League's blessing. Antallos was planned to be a neutral trading hub bringing together the powers of the Inner Sphere and the people of the Periphery. While the Star League existed the plan was a success and Antallos was vastly wealthy. Unfortunately, the collapse of the League saw the planet left to its own and over the centuries raiders, pirates and the Great Houses hit the independent planet reducing it from a jewel in the Periphery to a no man's land, eventually becoming a pirate haven with the dregs of humanity calling the planet home. Antallos is lawless and slavery and other illegal trades are the background of the planets economy. Antallos supports a small "mercenary" hiring hall, primarily serviced by pirates and those looking for less than legal jobs.
     landmass:
       - name:
           source: canon
           value: Sea of Despair
         capital:
-          source: Mercenaries Supplemental II, pg. 12
+          source: MSII
           value: Port Krin
+          page: 12
       - name:
           source: canon
           value: Shattered Wastes
     satellite:
       - name:
-          source: Mercenaries Supplemental II, pg. 12
+          source: MSII
           value: Quincy
+          page: 12
         size: large
         icon: rock14
       - name:
-          source: Mercenaries Supplemental II, pg. 12
+          source: MSII
           value: Zeke
+          page: 12
         size: large
         icon: rock1
     event:
@@ -137,7 +138,7 @@ planet:
         population: 527861.0
       - date: '2694-01-01'
         hiringHall:
-          source: Merc Supplemental 2
+          source: MSII
           value: QUESTIONABLE
       - date: '2700-01-01'
         population: 950115.0
@@ -153,8 +154,19 @@ planet:
         population: 1650241.0
       - date: '2750-01-01'
         population: 1695668.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - SL
       - date: '2760-01-01'
         population: 1728930.0
+      - date: '2767-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - TH
       - date: '2770-01-01'
         population: 1748225.0
       - date: '2779-09-12'
@@ -232,6 +244,18 @@ planet:
         population: 14565206.0
       - date: '3060-01-01'
         population: 34285795.0
+      - date: '3067-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CSR
+      - date: '3068-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3070-01-01'
         population: 57288266.0
       - date: '3080-01-01'

@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -23,8 +23,9 @@ spectralType:
   source: canon
   value: G2V
 primarySlot:
-  source: Periphery (1ed), pg. 85
+  source: Per1e
   value: 3
+  page: 85
 event:
   - date: '2812-05-11'
     nadirCharge: yes
@@ -63,8 +64,9 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 1.0
     sysPos:
-      source: Periphery (1ed), pg. 85
+      source: Per1e
       value: 3
+      page: 85
     icon: green29
     pressure: HIGH
     atmosphere: TAINTED_POISON
@@ -77,16 +79,10 @@ planet:
     temperature: 32
     water: 37
     lifeForm:
-      source: Periphery (1ed), pg. 85
+      source: Per1e
       value: MAMMAL
-    desc: Brisbane is a water-rich world located along the fuzzy border between the
-      Magistracy of Canopus and the Taurian Concordat. As a result the planet has
-      seen more than its share of fighting between the two Periphery realms as they
-      battled for Brisbane's water supply. The planet has remained a gem in the Periphery
-      after the fall of the Star League thanks to its clean water, abundant ocean-life
-      and function water purification plants that dot the planet's southern hemisphere.
-      The planet's limited landmasses are primarily comprised of small island chains
-      many of the battles for the planet have been forced into the oceans.
+      page: 85
+    desc: Brisbane is a water-rich world located along the fuzzy border between the Magistracy of Canopus and the Taurian Concordat. As a result the planet has seen more than its share of fighting between the two Periphery realms as they battled for Brisbane's water supply. The planet has remained a gem in the Periphery after the fall of the Star League thanks to its clean water, abundant ocean-life and function water purification plants that dot the planet's southern hemisphere. The planet's limited landmasses are primarily comprised of small island chains many of the battles for the planet have been forced into the oceans.
     landmass:
       - name: Martínez
         capital: Cuchulainn
@@ -100,6 +96,12 @@ planet:
         icon: rock14
     event:
       - date: '2737-08-13'
+        # administration: TC | Hyades Union
+        # administration: TC | Hyades Union
+        # administration: TC | Hyades Union
+        # administration: TC | Hyades Union
+        # administration: TC | Hyades Union
+        # administration: TC | Hyades Union
         faction:
           source: canon
           value:
@@ -197,6 +199,12 @@ planet:
       - date: '3110-01-01'
         population: 59753732.0
       - date: '3120-07-29'
+        # administration: CC | Victoria Commonality | Region 8
+        # administration: CC | Victoria Commonality | Region 8
+        # administration: CC | Victoria Commonality | Region 8
+        # administration: CC | Victoria Commonality | Region 8
+        # administration: CC | Victoria Commonality | Region 8
+        # administration: CC | Victoria Commonality | Region 8
         faction:
           source: canon
           value:

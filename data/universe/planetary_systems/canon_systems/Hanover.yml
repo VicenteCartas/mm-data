@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Hanover
-sucsId: 1050
+sucsId: 1051
 xcood: 167.233
 ycood: 364.203
 spectralType:
@@ -101,10 +101,7 @@ planet:
     lifeForm:
       source: canon
       value: FISH
-    desc: Hanover is a quiet world with a boreal climate. The planet is moderately
-      advanced and industrialized world. The planet is mostly self-sufficient and
-      supports modest agriculture. Home to People’s Protection, a company that produces
-      security systems and small arms. Also home to Saxe-Heidelberg Heavy Industries.
+    desc: Hanover is a quiet world with a boreal climate. The planet is moderately advanced and industrialized world. The planet is mostly self-sufficient and supports modest agriculture. Home to People’s Protection, a company that produces security systems and small arms. Also home to Saxe-Heidelberg Heavy Industries.
     landmass:
       - name:
           source: canon
@@ -117,6 +114,12 @@ planet:
           value: Sylvania
     event:
       - date: '2743-10-07'
+        # administration: DC | Pesht Military District | Coudoux Prefecture
+        # administration: DC | Pesht Military District | Coudoux Prefecture
+        # administration: DC | Pesht Military District | Coudoux Prefecture
+        # administration: DC | Pesht Military District | Coudoux Prefecture
+        # administration: DC | Pesht Military District | Coudoux Prefecture
+        # administration: DC | Pesht Military District | Coudoux Prefecture
         faction:
           source: canon
           value:
@@ -203,7 +206,17 @@ planet:
           source: canon
           value: C-B-B-B-C
       - date: '3050-01-01'
+        # administration: DC | Pesht Military District | Albiero Prefecture
+        # administration: DC | Pesht Military District | Albiero Prefecture
+        # administration: DC | Pesht Military District | Albiero Prefecture
+        # administration: DC | Pesht Military District | Albiero Prefecture
+        # administration: DC | Pesht Military District | Albiero Prefecture
         population: 143626863.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CSJ
       - date: '3050-07-01'
         faction:
           source: canon
@@ -215,7 +228,25 @@ planet:
           source: canon
           value:
             - CSJ
+      - date: '3059-01-01'
+        # administration: DC | Pesht Military District | Lonaconing Prefecture
+        # administration: DC | Pesht Military District | Lonaconing Prefecture
+        # administration: DC | Pesht Military District | Lonaconing Prefecture
+        # administration: DC | Pesht Military District | Lonaconing Prefecture
+        # administration: DC | Pesht Military District | Lonaconing Prefecture
+        # administration: DC | Pesht Military District | Lonaconing Prefecture
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - DC
       - date: '3059-06-29'
+        # administration: DC | Pesht Military District | Albiero Prefecture
+        # administration: DC | Pesht Military District | Albiero Prefecture
+        # administration: DC | Pesht Military District | Albiero Prefecture
+        # administration: DC | Pesht Military District | Albiero Prefecture
+        # administration: DC | Pesht Military District | Albiero Prefecture
+        # administration: DC | Pesht Military District | Albiero Prefecture
         faction:
           source: canon
           value:

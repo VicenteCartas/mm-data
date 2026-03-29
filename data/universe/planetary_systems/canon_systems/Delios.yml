@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,15 +16,17 @@
 # affiliated with Microsoft.
 
 id: Delios
-sucsId: 2940
+sucsId: 2941
 xcood: -16.762
 ycood: 1804.928
 spectralType:
-  source: Warriors of Kerensky, pg. 112
+  source: WoK
   value: G6III
+  page: 112
 primarySlot:
-  source: Warriors of Kerensky, pg. 112
+  source: WoK
   value: 2
+  page: 112
 event:
   - date: '2808-06-24'
     nadirCharge: yes
@@ -62,32 +64,39 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 1.44
     sysPos:
-      source: Warriors of Kerensky, pg. 112
+      source: WoK
       value: 2
+      page: 112
     icon: wet9
     pressure:
-      source: Warriors of Kerensky, pg. 112
+      source: WoK
       value: HIGH
+      page: 112
     atmosphere:
-      source: Warriors of Kerensky, pg. 112
+      source: WoK
       value: BREATHABLE
+      page: 112
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: Warriors of Kerensky, pg. 112
+      source: WoK
       value: 0.9
+      page: 112
     diameter: 12575
     density: 5.029761015219
     dayLength: 25
     yearLength: 2.0
     temperature:
-      source: Warriors of Kerensky, pg. 112
+      source: WoK
       value: 30
+      page: 112
     water:
-      source: Warriors of Kerensky, pg. 112
+      source: WoK
       value: 80
+      page: 112
     lifeForm:
-      source: Warriors of Kerensky, pg. 112
+      source: WoK
       value: REPTILE
+      page: 112
     desc: No description available.
     landmass:
       - name: Penfield
@@ -116,6 +125,12 @@ planet:
         socioIndustrial: B-C-D-B-D
       - date: '2820-01-01'
         population: 111147.0
+      - date: '2821-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CLAN
       - date: '2821-11-27'
         faction:
           source: canon
@@ -135,6 +150,12 @@ planet:
         population: 1069165.0
       - date: '2860-01-01'
         population: 1649993.0
+      - date: '2864-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CLAN
       - date: '2870-01-01'
         population: 2301199.0
       - date: '2880-01-01'
@@ -182,12 +203,24 @@ planet:
             - CDS
             - CCO
         population: 52338.0
+      - date: '3063-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CLAN
       - date: '3067-12-02'
         faction:
           source: canon
           value:
             - CCO
             - CCC
+      - date: '3068-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CLAN
       - date: '3070-01-01'
         population: 36254.0
       - date: '3071-07-15'
@@ -203,6 +236,12 @@ planet:
             - CGS
             - CCC
             - CCO
+      - date: '3075-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CCC
       - date: '3075-06-01'
         faction:
           source: canon
@@ -210,6 +249,12 @@ planet:
             - CCC
       - date: '3080-01-01'
         population: 23491.0
+      - date: '3085-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ABN
       - date: '3085-10-12'
         faction:
           source: canon

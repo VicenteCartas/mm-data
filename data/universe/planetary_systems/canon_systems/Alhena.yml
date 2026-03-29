@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -23,7 +23,7 @@ spectralType:
   source: canon
   value: A5VI
 primarySlot:
-  source: MWDA world profiles
+  source: DA:RW
   value: 2
 event:
   - date: '2357-07-13'
@@ -55,31 +55,31 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 9.88
     sysPos:
-      source: MWDA world profiles
+      source: DA:RW
       value: 2
     icon: dry7
     pressure:
-      source: MWDA world profiles
+      source: DA:RW
       value: THIN
     atmosphere:
-      source: MWDA world profiles
+      source: DA:RW
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: MWDA world profiles
+      source: DA:RW
       value: 0.91
     diameter: 10464
     density: 6.111751411384
     dayLength: 24
     yearLength: 31.1
     temperature:
-      source: MWDA world profiles
+      source: DA:RW
       value: 40
     water:
-      source: MWDA world profiles
+      source: DA:RW
       value: 16
     lifeForm:
-      source: MWDA world profiles
+      source: DA:RW
       value: PLANT
     desc: |-
       3135 - Alhena was initially settled as a scientific outpost exploring the potential for life under even the harshest environments. Orbiting the outer sun of a binary star system, the planet has developed a peculiar orbit as a result of the interacting pull of both suns, creating a pattern where long, harsh winters follow short, but pleasant, summers. Despite the inhospitable environment, small settlements eventually rose all over the northern hemisphere, particularly along the shores of the polar Alhennian Ocean. Lacking major resources, Alhena relies heavily on off-world trade to sustain its population.
@@ -87,7 +87,7 @@ planet:
       Alhena was largely overlooked throughout the Age of War and the Star League era. Through the Succession Wars, its position near the Free Worlds League border led to several Lyran raids. During the Jihad, off-world trade was so disrupted that almost ten percent of the population died of starvation during one of the planet‘s long winters. Since its admittance into The Republic of the Sphere, Alhena has recovered somewhat, but remains reliant on off-world trade for its very survival. Focci's Point, located near the eastern shores of the Alhennian Ocean, is the capital city and primary spaceport.
     landmass:
       - capital:
-          source: MWDA world profiles
+          source: DA:RW
           value: Focci's Point
     event:
       - date: '2238-08-11'
@@ -120,6 +120,12 @@ planet:
       - date: '2340-01-01'
         population: 134312074.0
       - date: '2350-10-01'
+        # administration: LA | Federation of Skye
+        # administration: LA | Federation of Skye
+        # administration: LA | Federation of Skye
+        # administration: LA | Federation of Skye
+        # administration: LA | Federation of Skye
+        # administration: LA | Federation of Skye
         faction:
           source: canon
           value:
@@ -226,6 +232,12 @@ planet:
         population: 1667756137.0
       - date: '2820-01-01'
         population: 1630161504.0
+      - date: '2821-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FWL
       - date: '2821-10-25'
         faction:
           source: canon
@@ -291,12 +303,24 @@ planet:
         population: 1888870615.0
       - date: '3080-01-01'
         population: 1913203557.0
+      - date: '3081-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3081-01-16'
         faction:
           source: canon
           value:
             - IND
       - date: '3082-06-03'
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
+        # administration: ROS | Prefecture VIII
         faction:
           source: canon
           value:
@@ -315,6 +339,12 @@ planet:
         population: 2048646010.0
       - date: '3132-08-07'
         hpg: X
+      - date: '3135-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3135-10-01'
         faction:
           source: canon
@@ -339,6 +369,12 @@ planet:
           value:
             - CWE
       - date: '3151-12-01'
+        # administration: FWL | Covenant Worlds
+        # administration: FWL | Covenant Worlds
+        # administration: FWL | Covenant Worlds
+        # administration: FWL | Covenant Worlds
+        # administration: FWL | Covenant Worlds
+        # administration: FWL | Covenant Worlds
         faction:
           source: canon
           value:
@@ -387,8 +423,7 @@ planet:
     icon: barren9
     pressure: STANDARD
     atmosphere: TOXIC_POISON
-    composition: Ammonia and Carbon Dioxide, plus trace amounts of Water Vapor and
-      Argon
+    composition: Ammonia and Carbon Dioxide, plus trace amounts of Water Vapor and Argon
     gravity: 1.12
     diameter: 13500
     density: 5.8437

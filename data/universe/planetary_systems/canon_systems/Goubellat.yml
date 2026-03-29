@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Goubellat
-sucsId: 986
+sucsId: 987
 xcood: 351.289
 ycood: 165.129
 spectralType: F9V
@@ -107,6 +107,12 @@ planet:
         size: medium
         icon: rock6
     event:
+      - date: '2319-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '2319-10-07'
         faction:
           source: canon
@@ -124,6 +130,12 @@ planet:
         population: 322736.0
       - date: '2340-01-01'
         population: 1287157.0
+      - date: '2341-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '2350-01-01'
         population: 4161861.0
       - date: '2360-01-01'
@@ -172,6 +184,18 @@ planet:
         population: 2221369585.0
       - date: '2570-01-01'
         population: 2288864093.0
+      - date: '2571-01-01'
+        # administration: DC | Galedon Military District | New Samarkand Prefecture
+        # administration: DC | Galedon Military District | New Samarkand Prefecture
+        # administration: DC | Galedon Military District | New Samarkand Prefecture
+        # administration: DC | Galedon Military District | New Samarkand Prefecture
+        # administration: DC | Galedon Military District | New Samarkand Prefecture
+        # administration: DC | Galedon Military District | New Samarkand Prefecture
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - DC
       - date: '2580-01-01'
         population: 2340183423.0
       - date: '2590-04-21'
@@ -289,7 +313,25 @@ planet:
             - CSR
       - date: '3070-01-01'
         population: 2918787439.0
+      - date: '3075-01-01'
+        # administration: OA | Ramora Province
+        # administration: OA | Ramora Province
+        # administration: OA | Ramora Province
+        # administration: OA | Ramora Province
+        # administration: OA | Ramora Province
+        # administration: OA | Ramora Province
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - OA
       - date: '3075-01-03'
+        # administration: OA | Ramora Province
+        # administration: OA | Ramora Province
+        # administration: OA | Ramora Province
+        # administration: OA | Ramora Province
+        # administration: OA | Ramora Province
+        # administration: OA | Ramora Province
         faction:
           source: canon
           value:
@@ -308,6 +350,12 @@ planet:
           source: canon
           value:
             - DC
+      - date: '3095-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - RA
       - date: '3100-01-01'
         population: 3056187638.0
       - date: '3110-01-01'
@@ -317,7 +365,18 @@ planet:
       - date: '3124-01-01'
         socioIndustrial: B-A-C-B-C
       - date: '3130-01-01'
+        # administration: DC | New Samarkand Military District | New Samarkand Prefecture
+        # administration: DC | New Samarkand Military District | New Samarkand Prefecture
+        # administration: DC | New Samarkand Military District | New Samarkand Prefecture
+        # administration: DC | New Samarkand Military District | New Samarkand Prefecture
+        # administration: DC | New Samarkand Military District | New Samarkand Prefecture
+        # administration: DC | New Samarkand Military District | New Samarkand Prefecture
         population: 3203898243.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - DC
       - date: '3132-08-07'
         hpg: X
       - date: '3140-01-01'

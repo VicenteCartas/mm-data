@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -111,6 +111,12 @@ planet:
         icon: oddmoon3
     event:
       - date: '2333-04-06'
+        # administration: TH | Terra Firma Province
+        # administration: TH | Terra Firma Province
+        # administration: TH | Terra Firma Province
+        # administration: TH | Terra Firma Province
+        # administration: TH | Terra Firma Province
+        # administration: TH | Terra Firma Province
         faction:
           source: canon
           value:
@@ -212,6 +218,18 @@ planet:
         population: 5490390582.0
       - date: '2760-01-01'
         population: 5542922200.0
+      - date: '2767-01-01'
+        # administration: AE | Terra Firma Province
+        # administration: AE | Terra Firma Province
+        # administration: AE | Terra Firma Province
+        # administration: AE | Terra Firma Province
+        # administration: AE | Terra Firma Province
+        # administration: AE | Terra Firma Province
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - AE
       - date: '2767-07-18'
         faction:
           source: canon
@@ -230,6 +248,18 @@ planet:
           value:
             - CC
         population: 5374762841.0
+      - date: '2783-01-01'
+        # administration: TH | Terra Firma Province
+        # administration: TH | Terra Firma Province
+        # administration: TH | Terra Firma Province
+        # administration: TH | Terra Firma Province
+        # administration: TH | Terra Firma Province
+        # administration: TH | Terra Firma Province
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - TH
       - date: '2790-01-01'
         population: 5255810290.0
       - date: '2800-01-01'
@@ -238,6 +268,18 @@ planet:
         population: 5064090234.0
       - date: '2820-01-01'
         population: 4958290613.0
+      - date: '2821-01-01'
+        # administration: CC | Tikonov Commonality | Region 2
+        # administration: CC | Tikonov Commonality | Region 2
+        # administration: CC | Tikonov Commonality | Region 2
+        # administration: CC | Tikonov Commonality | Region 2
+        # administration: CC | Tikonov Commonality | Region 2
+        # administration: CC | Tikonov Commonality | Region 2
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CC
       - date: '2830-01-01'
         population: 4851627360.0
       - date: '2840-01-01'
@@ -258,6 +300,24 @@ planet:
           value: X
         population: 0.0
         socioIndustrial: X-X-X-X-X
+      - date: '2864-01-01'
+        # administration: CC | Tikonov Commonality | Region 2
+        # administration: CC | Tikonov Commonality | Region 2
+        # administration: CC | Tikonov Commonality | Region 2
+        # administration: CC | Tikonov Commonality | Region 2
+        # administration: CC | Tikonov Commonality | Region 2
+        # administration: CC | Tikonov Commonality | Region 2
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CC
+      - date: '3025-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ABN
   - name: Kadmos
     type: DWARF_TERRESTRIAL
     orbitalDist: 1.12
@@ -329,8 +389,7 @@ planet:
     icon: frozen56
     pressure: STANDARD
     atmosphere: TOXIC_CAUSTIC
-    composition: Methane and Carbon Dioxide, plus trace amounts of Methane and Sulfur
-      Dioxide
+    composition: Methane and Carbon Dioxide, plus trace amounts of Methane and Sulfur Dioxide
     gravity: 0.68
     diameter: 11500
     density: 4.1818

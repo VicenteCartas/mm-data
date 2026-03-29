@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -20,10 +20,10 @@ sucsId: 412
 xcood: 70.048
 ycood: -68.804
 spectralType:
-  source: MWDA world profiles
+  source: DA:RW
   value: F5II
 primarySlot:
-  source: MWDA world profiles
+  source: DA:RW
   value: 3
 event:
   - date: '2372-10-14'
@@ -72,31 +72,31 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 3.92
     sysPos:
-      source: MWDA world profiles
+      source: DA:RW
       value: 3
     icon: green4
     pressure:
-      source: MWDA world profiles
+      source: DA:RW
       value: HIGH
     atmosphere:
-      source: MWDA world profiles
+      source: DA:RW
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: MWDA world profiles
+      source: DA:RW
       value: 1.2
     diameter: 13340
     density: 6.321494215777
     dayLength: 22
     yearLength: 7.9
     temperature:
-      source: MWDA world profiles
+      source: DA:RW
       value: 30
     water:
-      source: MWDA world profiles
+      source: DA:RW
       value: 68
     lifeForm:
-      source: MWDA world profiles
+      source: DA:RW
       value: FISH
     desc: |-
       3135 - Buchlau was originally a member of the Tikonov Grand Union. Buchlau's only continent, Vienna, is covered with dense jungle, with a large mountain mesa, nearly a thousand kilometers across, rising up out of the jungle in the centre of the continent. Belgrade, the capital, is located on the mesa along with a large drop-port. Vienna, is surrounded by a vast, turbulent ocean.
@@ -108,24 +108,24 @@ planet:
       During the Jihad, the planetary governor contacted the World of Blake forces and offered to surrender the world so that it would not suffer the same fate as had Algol and Algot. The offer was accepted. Following the Jihad, untouched Buchlau has become one of the primary food-producing worlds in Prefecture V of the Republic of the Sphere.
     landmass:
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Vienna
         capital:
-          source: MWDA world profiles
+          source: DA:RW
           value: Belgrade
     satellite:
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Berchtold
         size: medium
         icon: rock4
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Graf
         size: medium
         icon: oddmoon3
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Leopold
         size: medium
         icon: rock14
@@ -183,6 +183,12 @@ planet:
       - date: '2360-01-01'
         population: 1846122317.0
       - date: '2367-07-01'
+        # administration: CC | Tikonov Commonality | Region 4
+        # administration: CC | Tikonov Commonality | Region 4
+        # administration: CC | Tikonov Commonality | Region 4
+        # administration: CC | Tikonov Commonality | Region 4
+        # administration: CC | Tikonov Commonality | Region 4
+        # administration: CC | Tikonov Commonality | Region 4
         faction:
           source: canon
           value:
@@ -328,16 +334,46 @@ planet:
         population: 5468240068.0
       - date: '3020-01-01'
         population: 5323254588.0
+      - date: '3030-01-01'
+        # administration: LA | Sarna March | Tikonov Operational Area
+        # administration: LA | Sarna March | Tikonov Operational Area
+        # administration: LA | Sarna March | Tikonov Operational Area
+        # administration: LA | Sarna March | Tikonov Operational Area
+        # administration: LA | Sarna March | Tikonov Operational Area
+        # administration: LA | Sarna March | Tikonov Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '3030-01-15'
         faction:
           source: canon
           value:
             - FS
         population: 5276348789.0
+      - date: '3040-01-01'
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-08-07'
         population: 5336843329.0
         socioIndustrial: B-B-D-C-F
       - date: '3040-01-19'
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
+        # administration: FC | Sarna March | Terra Firma Operational Area
         faction:
           source: canon
           value:
@@ -348,7 +384,25 @@ planet:
         population: 5413167121.0
       - date: '3060-01-01'
         population: 5487289081.0
+      - date: '3067-01-01'
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FS
       - date: '3067-04-20'
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
         faction:
           source: canon
           value:
@@ -367,7 +421,25 @@ planet:
             - Stone
       - date: '3080-01-01'
         population: 5616082413.0
+      - date: '3081-01-01'
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ROS
       - date: '3081-01-31'
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
+        # administration: ROS | Prefecture V
         faction:
           source: canon
           value:
@@ -384,7 +456,25 @@ planet:
         population: 5643104410.0
       - date: '3132-08-07'
         hpg: X
+      - date: '3135-01-01'
+        # administration: CC | Liao Commonality | Region 2
+        # administration: CC | Liao Commonality | Region 2
+        # administration: CC | Liao Commonality | Region 2
+        # administration: CC | Liao Commonality | Region 2
+        # administration: CC | Liao Commonality | Region 2
+        # administration: CC | Liao Commonality | Region 2
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CC
       - date: '3135-12-17'
+        # administration: CC | Tikonov Commonality | Region 7
+        # administration: CC | Tikonov Commonality | Region 7
+        # administration: CC | Tikonov Commonality | Region 7
+        # administration: CC | Tikonov Commonality | Region 7
+        # administration: CC | Tikonov Commonality | Region 7
+        # administration: CC | Tikonov Commonality | Region 7
         faction:
           source: canon
           value:

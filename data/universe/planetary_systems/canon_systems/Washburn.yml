@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Washburn
-sucsId: 2725
+sucsId: 2726
 xcood: -155.32
 ycood: -103.721
 spectralType:
@@ -86,13 +86,7 @@ planet:
     lifeForm:
       source: canon
       value: PLANT
-    desc: Washburn is a hot, arid planet with little to redeem itself, other than
-      an abundance of natural resources. The planet is primarily covered in scorching
-      deserts and badlands. Due to the lack of water and arable land, agriculture
-      suffers on Washburn and the population is forced to rely on imported food. The
-      planet is home to the Washburn Irian Technologies Refit Center, which is capable
-      of conducting maintenance, repairs and upgrades to ‘Mechs and combat vehicles
-      alike.
+    desc: Washburn is a hot, arid planet with little to redeem itself, other than an abundance of natural resources. The planet is primarily covered in scorching deserts and badlands. Due to the lack of water and arable land, agriculture suffers on Washburn and the population is forced to rely on imported food. The planet is home to the Washburn Irian Technologies Refit Center, which is capable of conducting maintenance, repairs and upgrades to ‘Mechs and combat vehicles alike.
     landmass:
       - name:
           source: canon
@@ -131,6 +125,12 @@ planet:
       - date: '2270-01-01'
         population: 1689225.0
       - date: '2271-06-01'
+        # administration: FWL | Marik Commonwealth
+        # administration: FWL | Marik Commonwealth
+        # administration: FWL | Marik Commonwealth
+        # administration: FWL | Marik Commonwealth
+        # administration: FWL | Marik Commonwealth
+        # administration: FWL | Marik Commonwealth
         faction:
           source: canon
           value:
@@ -316,6 +316,12 @@ planet:
         population: 1220555574.0
       - date: '3070-01-01'
         population: 1235290473.0
+      - date: '3079-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - MCM
       - date: '3079-09-15'
         faction:
           source: canon
@@ -323,6 +329,18 @@ planet:
             - MSC
       - date: '3080-01-01'
         population: 1242227505.0
+      - date: '3081-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - MCM
+      - date: '3085-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - MSC
       - date: '3090-01-01'
         population: 1242227505.0
       - date: '3100-01-01'
@@ -341,6 +359,12 @@ planet:
           value: X
       - date: '3140-01-01'
         population: 1271129841.0
+      - date: '3145-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CWE
       - date: '3145-10-12'
         faction:
           source: canon

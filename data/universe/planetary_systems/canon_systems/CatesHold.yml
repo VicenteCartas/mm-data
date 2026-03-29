@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -23,8 +23,9 @@ spectralType:
   source: canon
   value: M2V
 primarySlot:
-  source: Periphery (1ed), pg. 104
+  source: Per1e
   value: 1
+  page: 104
 event:
   - date: '2566-07-09'
     nadirCharge: yes
@@ -35,8 +36,9 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.16
     sysPos:
-      source: Periphery (1ed), pg. 104
+      source: Per1e
       value: 1
+      page: 104
     icon: green17
     pressure: STANDARD
     atmosphere: BREATHABLE
@@ -49,16 +51,10 @@ planet:
     temperature: 35
     water: 52
     lifeForm:
-      source: Periphery (1ed), pg. 104
+      source: Per1e
       value: MAMMAL
-    desc: 3025 - Cate's Hold is a border world between the Magistracy and Concordat
-      and was settled as a pleasure world similar to Hardcore and Canopus. Cate's
-      Hold found itself thrust into the role of a major supply and repair center during
-      the Reunification War before returning to a resort world during the early Succession
-      Wars. The discovery of rare radioactive materials in the southern hemisphere
-      and several Star League caches, have made the planet strategically important
-      to the Magistracy and have resulted in several clashes between Taurian and Canopian
-      forces on Cate's Hold.
+      page: 104
+    desc: 3025 - Cate's Hold is a border world between the Magistracy and Concordat and was settled as a pleasure world similar to Hardcore and Canopus. Cate's Hold found itself thrust into the role of a major supply and repair center during the Reunification War before returning to a resort world during the early Succession Wars. The discovery of rare radioactive materials in the southern hemisphere and several Star League caches, have made the planet strategically important to the Magistracy and have resulted in several clashes between Taurian and Canopian forces on Cate's Hold.
     landmass:
       - name: Poe
         capital: New Schnurre Town
@@ -98,7 +94,19 @@ planet:
             - SL
       - date: '2590-01-01'
         population: 18985.0
+      - date: '2596-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - MOC
       - date: '2597-03-21'
+        # administration: MOC | Canopus District
+        # administration: MOC | Canopus District
+        # administration: MOC | Canopus District
+        # administration: MOC | Canopus District
+        # administration: MOC | Canopus District
+        # administration: MOC | Canopus District
         faction:
           source: canon
           value:

@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: Oshika
-sucsId: 1952
+sucsId: 1953
 xcood: 239.151
 ycood: 176.676
 spectralType:
-  source: House Kurita
+  source: HB:HK
   value: G5V
 primarySlot:
-  source: House Kurita
+  source: HB:HK
   value: 3
 event:
   - date: '2355-05-11'
@@ -65,7 +65,7 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.9
     sysPos:
-      source: House Kurita
+      source: HB:HK
       value: 3
     icon: green26
     pressure:
@@ -87,26 +87,15 @@ planet:
       source: canon
       value: 65
     lifeForm:
-      source: House Kurita
+      source: HB:HK
       value: MAMMAL
-    desc: For most of its history, Oshika has been a prefecture capital world. As
-      a result, its cities and industry (what little there is of it) are all geared
-      towards the efficient running of the government. The capital city, Takadanobaba,
-      is located in Oshika's only mountain range the Trilby Mountains. The DCMS headquarters
-      is also located there, which means political power actually flows from the garrisoning
-      military unit. The world has little to recommend it for colonization, as it
-      is poor in both natural resources and nutrient weak soil, barely capable of
-      food production on its own. As a result Oshika requires the import of chemical
-      fertilizers. In 3025 several entrepreneurs tried to raise the Oshika Ox (a cross
-      between an elephant and a cow) for commercial export. The Oshika Ox was already
-      a popular foodstuff on Oshika and exporting the animal seemed a logical next
-      step. However, as of 3079 this venture seems to have failed.
+    desc: For most of its history, Oshika has been a prefecture capital world. As a result, its cities and industry (what little there is of it) are all geared towards the efficient running of the government. The capital city, Takadanobaba, is located in Oshika's only mountain range the Trilby Mountains. The DCMS headquarters is also located there, which means political power actually flows from the garrisoning military unit. The world has little to recommend it for colonization, as it is poor in both natural resources and nutrient weak soil, barely capable of food production on its own. As a result Oshika requires the import of chemical fertilizers. In 3025 several entrepreneurs tried to raise the Oshika Ox (a cross between an elephant and a cow) for commercial export. The Oshika Ox was already a popular foodstuff on Oshika and exporting the animal seemed a logical next step. However, as of 3079 this venture seems to have failed.
     landmass:
       - name:
           source: canon
           value: Shinjuku
         capital:
-          source: House Kurita
+          source: HB:HK
           value: Takadanobaba
       - name:
           source: canon
@@ -141,6 +130,12 @@ planet:
         population: 9690985.0
       - date: '2340-01-01'
         population: 25420050.0
+      - date: '2341-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '2350-01-01'
         population: 57646294.0
       - date: '2360-01-01'
@@ -193,6 +188,18 @@ planet:
         population: 5356995505.0
       - date: '2570-01-01'
         population: 5469684201.0
+      - date: '2571-01-01'
+        # administration: DC | Galedon Military District | Oshika Prefecture
+        # administration: DC | Galedon Military District | Oshika Prefecture
+        # administration: DC | Galedon Military District | Oshika Prefecture
+        # administration: DC | Galedon Military District | Oshika Prefecture
+        # administration: DC | Galedon Military District | Oshika Prefecture
+        # administration: DC | Galedon Military District | Oshika Prefecture
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - DC
       - date: '2580-01-01'
         population: 5578210363.0
       - date: '2590-01-01'

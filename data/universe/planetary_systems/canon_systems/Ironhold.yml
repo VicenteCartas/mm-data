@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,15 +16,17 @@
 # affiliated with Microsoft.
 
 id: Ironhold
-sucsId: 2949
+sucsId: 2950
 xcood: 46.182
 ycood: 1745.002
 spectralType:
-  source: Warriors of Kerensky, pg. 112
+  source: WoK
   value: K4V
+  page: 112
 primarySlot:
-  source: Warriors of Kerensky, pg. 112
+  source: WoK
   value: 2
+  page: 112
 event:
   - date: '2810-07-10'
     nadirCharge: yes
@@ -56,32 +58,39 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.28
     sysPos:
-      source: Warriors of Kerensky, pg. 112
+      source: WoK
       value: 2
+      page: 112
     icon: green42
     pressure:
-      source: Warriors of Kerensky, pg. 112
+      source: WoK
       value: STANDARD
+      page: 112
     atmosphere:
-      source: Warriors of Kerensky, pg. 112
+      source: WoK
       value: BREATHABLE
+      page: 112
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: Warriors of Kerensky, pg. 112
+      source: WoK
       value: 1.1
+      page: 112
     diameter: 12296
     density: 6.286696220205
     dayLength: 24
     yearLength: 0.8
     temperature:
-      source: Warriors of Kerensky, pg. 112
+      source: WoK
       value: 20
+      page: 112
     water:
-      source: Warriors of Kerensky, pg. 112
+      source: WoK
       value: 70
+      page: 112
     lifeForm:
-      source: Warriors of Kerensky, pg. 112
+      source: WoK
       value: BIRD
+      page: 112
     desc: No description available.
     landmass:
       - name: Padang Hang
@@ -89,6 +98,12 @@ planet:
       - name: Osmanabad
     event:
       - date: '2802-11-18'
+        # administration: CJF | National Capital
+        # administration: CJF | National Capital
+        # administration: CJF | National Capital
+        # administration: CJF | National Capital
+        # administration: CJF | National Capital
+        # administration: CJF | National Capital
         faction:
           source: canon
           value:
@@ -104,6 +119,12 @@ planet:
       - date: '2820-01-01'
         population: 117285.0
       - date: '2821-09-11'
+        # administration: CJF | National Capital
+        # administration: CJF | National Capital
+        # administration: CJF | National Capital
+        # administration: CJF | National Capital
+        # administration: CJF | National Capital
+        # administration: CJF | National Capital
         faction:
           source: canon
           value:
@@ -182,6 +203,12 @@ planet:
           source: canon
           value:
             - SOC
+      - date: '3075-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ABN
       - date: '3075-03-05'
         faction:
           source: canon

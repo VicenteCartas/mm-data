@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Vendrell
-sucsId: 2670
+sucsId: 2671
 xcood: -315.896
 ycood: 125.842
 spectralType:
@@ -59,18 +59,7 @@ planet:
     lifeForm:
       source: canon
       value: MAMMAL
-    desc: Vendrell is a relatively comfortable planet with a temperate climate, nearly
-      standard gravity and enough arable land to feed its population. Unfortunately,
-      the planet is resources poor and the high-pressure atmosphere can be slightly
-      irritating to off-worlders, but the air is breathable. Vendrell is home to a
-      small Mountain Wolf BattleMechs factory, which was originally established during
-      the Star League. Damage during the Succession Wars put an end to the plant in
-      2945 after a raid by forces from the Free Worlds League. However, 110 years
-      later the plant reopened in 3055 and the plant managed to survive the Word of
-      Blake Jihad, though supply disruptions resulted in a reduction in factory output.
-      The factory is located in the small mountain town of Monte Lupus, located on
-      the Kaspur continent. Rosewood, the planetary capital is located on the Zanzibar
-      continent, which is primarily covered in wetlands and swamps.
+    desc: Vendrell is a relatively comfortable planet with a temperate climate, nearly standard gravity and enough arable land to feed its population. Unfortunately, the planet is resources poor and the high-pressure atmosphere can be slightly irritating to off-worlders, but the air is breathable. Vendrell is home to a small Mountain Wolf BattleMechs factory, which was originally established during the Star League. Damage during the Succession Wars put an end to the plant in 2945 after a raid by forces from the Free Worlds League. However, 110 years later the plant reopened in 3055 and the plant managed to survive the Word of Blake Jihad, though supply disruptions resulted in a reduction in factory output. The factory is located in the small mountain town of Monte Lupus, located on the Kaspur continent. Rosewood, the planetary capital is located on the Zanzibar continent, which is primarily covered in wetlands and swamps.
     landmass:
       - name:
           source: canon
@@ -102,6 +91,12 @@ planet:
         icon: rock11
     event:
       - date: '2655-07-25'
+        # administration: LA | Protectorate of Donegal | Alarion Province
+        # administration: LA | Protectorate of Donegal | Alarion Province
+        # administration: LA | Protectorate of Donegal | Alarion Province
+        # administration: LA | Protectorate of Donegal | Alarion Province
+        # administration: LA | Protectorate of Donegal | Alarion Province
+        # administration: LA | Protectorate of Donegal | Alarion Province
         faction:
           source: canon
           value:
@@ -201,8 +196,25 @@ planet:
       - date: '3037-01-01'
         socioIndustrial: C-C-D-D-D
       - date: '3040-01-01'
+        # administration: FC | Donegal March | Alarion Operational Area
+        # administration: FC | Donegal March | Alarion Operational Area
+        # administration: FC | Donegal March | Alarion Operational Area
+        # administration: FC | Donegal March | Alarion Operational Area
+        # administration: FC | Donegal March | Alarion Operational Area
+        # administration: FC | Donegal March | Alarion Operational Area
         population: 1414559572.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
+        # administration: FC | Donegal March | Alarion Operational Area
+        # administration: FC | Donegal March | Alarion Operational Area
+        # administration: FC | Donegal March | Alarion Operational Area
+        # administration: FC | Donegal March | Alarion Operational Area
+        # administration: FC | Donegal March | Alarion Operational Area
+        # administration: FC | Donegal March | Alarion Operational Area
         faction:
           source: canon
           value:
@@ -213,7 +225,25 @@ planet:
           value: B-B-D-C-C
       - date: '3050-01-01'
         population: 1428633261.0
+      - date: '3057-01-01'
+        # administration: LA | Donegal March | Alarion Operational Area
+        # administration: LA | Donegal March | Alarion Operational Area
+        # administration: LA | Donegal March | Alarion Operational Area
+        # administration: LA | Donegal March | Alarion Operational Area
+        # administration: LA | Donegal March | Alarion Operational Area
+        # administration: LA | Donegal March | Alarion Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '3057-09-18'
+        # administration: LA | Alarion Province
+        # administration: LA | Alarion Province
+        # administration: LA | Alarion Province
+        # administration: LA | Alarion Province
+        # administration: LA | Alarion Province
+        # administration: LA | Alarion Province
         faction:
           source: canon
           value:

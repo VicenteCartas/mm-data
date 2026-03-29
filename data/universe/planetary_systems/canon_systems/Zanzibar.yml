@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: Zanzibar
-sucsId: 2818
+sucsId: 2819
 xcood: 119.667
 ycood: -364.786
 spectralType:
-  source: 'Objective Raids: Capellan Confederation'
+  source: 'OR'
   value: G2V
 primarySlot:
-  source: 'Objective Raids: Capellan Confederation'
+  source: 'OR'
   value: 3
 event:
   - date: '2370-04-12'
@@ -65,52 +65,46 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 1.0
     sysPos:
-      source: 'Objective Raids: Capellan Confederation'
+      source: 'OR'
       value: 3
     icon: green32
     pressure:
-      source: 'Objective Raids: Capellan Confederation'
+      source: 'OR'
       value: STANDARD
     atmosphere:
-      source: 'Objective Raids: Capellan Confederation'
+      source: 'OR'
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'Objective Raids: Capellan Confederation'
+      source: 'OR'
       value: 1.0
     diameter: 15054
     density: 4.668129986921
     dayLength: 23
     yearLength: 1.4
     temperature:
-      source: 'Objective Raids: Capellan Confederation'
+      source: 'OR'
       value: 38
     water:
-      source: 'Objective Raids: Capellan Confederation'
+      source: 'OR'
       value: 44
     lifeForm:
-      source: 'Objective Raids: Capellan Confederation'
+      source: 'OR'
       value: MAMMAL
-    desc: Zanzibar is a relatively comfortable planet with more than half of its surface
-      area dominated by two massive continents. Due to the limited water, large streches
-      of both Khani and Stone are barren deserts and harsh badlands. However, contrasting
-      the arid climate that dominates much of the terrain, the areas near the coasts
-      and around the major rivers are lush and tropical. Zanzibar is home to a Duchy
-      RTC located on the coast of the Khani continent. The RTC specializes on training
-      vehicle crews and unarmored infantry.
+    desc: Zanzibar is a relatively comfortable planet with more than half of its surface area dominated by two massive continents. Due to the limited water, large streches of both Khani and Stone are barren deserts and harsh badlands. However, contrasting the arid climate that dominates much of the terrain, the areas near the coasts and around the major rivers are lush and tropical. Zanzibar is home to a Duchy RTC located on the coast of the Khani continent. The RTC specializes on training vehicle crews and unarmored infantry.
     landmass:
       - name:
-          source: 'Objective Raids: Capellan Confederation'
+          source: 'OR'
           value: Khani
       - name:
-          source: 'Objective Raids: Capellan Confederation'
+          source: 'OR'
           value: Stone
         capital:
-          source: 'Objective Raids: Capellan Confederation'
+          source: 'OR'
           value: Wete
     satellite:
       - name:
-          source: 'Objective Raids: Capellan Confederation'
+          source: 'OR'
           value: Pemba
         size: medium
         icon: rock5
@@ -174,7 +168,25 @@ planet:
         population: 2646546388.0
       - date: '2570-01-01'
         population: 2744259110.0
+      - date: '2571-01-01'
+        # administration: CC | Sian Commonality | Region 12
+        # administration: CC | Sian Commonality | Region 12
+        # administration: CC | Sian Commonality | Region 12
+        # administration: CC | Sian Commonality | Region 12
+        # administration: CC | Sian Commonality | Region 12
+        # administration: CC | Sian Commonality | Region 12
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CC
       - date: '2571-03-10'
+        # administration: CC | Sian Commonality | Region 12
+        # administration: CC | Sian Commonality | Region 12
+        # administration: CC | Sian Commonality | Region 12
+        # administration: CC | Sian Commonality | Region 12
+        # administration: CC | Sian Commonality | Region 12
+        # administration: CC | Sian Commonality | Region 12
         faction:
           source: canon
           value:

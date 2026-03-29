@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Tok Do
-sucsId: 2561
+sucsId: 2562
 xcood: 94.821
 ycood: 178.989
 spectralType:
@@ -98,12 +98,7 @@ planet:
     lifeForm:
       source: canon
       value: BIRD
-    desc: Tok Do is covered by jungles and populated by many bird species. The local
-      birds vary in size from the two meter tall Saurus to the tiny Speck, whose wingspan
-      barely reaches one centimeter. Despite the presence of the Alshain Weapons factory
-      and the Combine's traditional lack of environmental concern, the humidity of
-      Tok Do's atmosphere apparently blocks most of the airborne pollutants that would
-      otherwise have long since polluted most planets.
+    desc: Tok Do is covered by jungles and populated by many bird species. The local birds vary in size from the two meter tall Saurus to the tiny Speck, whose wingspan barely reaches one centimeter. Despite the presence of the Alshain Weapons factory and the Combine's traditional lack of environmental concern, the humidity of Tok Do's atmosphere apparently blocks most of the airborne pollutants that would otherwise have long since polluted most planets.
     landmass:
       - name:
           source: canon
@@ -157,6 +152,12 @@ planet:
         population: 11264429.0
       - date: '2340-01-01'
         population: 19908754.0
+      - date: '2341-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '2350-01-01'
         population: 32538589.0
       - date: '2360-01-01'
@@ -207,6 +208,18 @@ planet:
         population: 666582506.0
       - date: '2570-01-01'
         population: 678745643.0
+      - date: '2571-01-01'
+        # administration: DC | Benjamin Military District | Kajikazawa Prefecture
+        # administration: DC | Benjamin Military District | Kajikazawa Prefecture
+        # administration: DC | Benjamin Military District | Kajikazawa Prefecture
+        # administration: DC | Benjamin Military District | Kajikazawa Prefecture
+        # administration: DC | Benjamin Military District | Kajikazawa Prefecture
+        # administration: DC | Benjamin Military District | Kajikazawa Prefecture
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - DC
       - date: '2580-01-01'
         population: 689326367.0
       - date: '2590-01-01'

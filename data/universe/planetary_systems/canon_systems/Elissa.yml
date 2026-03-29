@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -20,11 +20,13 @@ sucsId: 790
 xcood: -39.048
 ycood: 483.083
 spectralType:
-  source: 'Operational Turning Points: Red Corsair, pg. 6'
+  source: 'OTP:RC'
   value: F1V
+  page: 6
 primarySlot:
-  source: 'Operational Turning Points: Red Corsair, pg. 6'
+  source: 'OTP:RC'
   value: 9
+  page: 6
 planet:
   - name: Berrien
     type: DWARF_TERRESTRIAL
@@ -176,32 +178,39 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 2.56
     sysPos:
-      source: 'Operational Turning Points: Red Corsair, pg. 6'
+      source: 'OTP:RC'
       value: 9
+      page: 6
     icon: green12
     pressure:
-      source: 'Operational Turning Points: Red Corsair, pg. 6'
+      source: 'OTP:RC'
       value: STANDARD
+      page: 6
     atmosphere:
-      source: 'Operational Turning Points: Red Corsair, pg. 6'
+      source: 'OTP:RC'
       value: BREATHABLE
+      page: 6
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'Operational Turning Points: Red Corsair, pg. 6'
+      source: 'OTP:RC'
       value: 0.99
+      page: 6
     diameter: 12835
     density: 5.420729601375
     dayLength: 27
     yearLength: 4.3
     temperature:
-      source: 'Operational Turning Points: Red Corsair, pg. 6'
+      source: 'OTP:RC'
       value: 19
+      page: 6
     water:
-      source: 'Operational Turning Points: Red Corsair, pg. 6'
+      source: 'OTP:RC'
       value: 49
+      page: 6
     lifeForm:
-      source: 'Operational Turning Points: Red Corsair, pg. 6'
+      source: 'OTP:RC'
       value: PLANT
+      page: 6
     desc: |-
       3055: Elissa was a primary holding of the Elysian Fields, a fief of the Oberon Confederation controlled by the Inheritors. Publicly the planet was reported as a backwater world that was being left largely undeveloped as a ‘nature preserve’ and the Elysian Fields agreed to provide the bandit Kingdom water in exchange for protection. However, the reality was that Elissa and the Elyssian Fields suffered under the regime. Elissa was heavily mined by the Confederation and the planet’s inhabitants were forced into poverty on the whims of the various pirates serving under Hendrik Grimm. The planet’s capture by the Clans in 3049, was actually a relief for much of the population.
 
@@ -214,12 +223,19 @@ planet:
       - name: Ortíz
     satellite:
       - name:
-          source: 'Operational Turning Points: Red Corsair, pg. 6'
+          source: 'OTP:RC'
           value: Miranda
+          page: 6
         size: medium
         icon: rock5
     event:
       - date: '2622-01-11'
+        # administration: RWR | Apollo Province
+        # administration: RWR | Apollo Province
+        # administration: RWR | Apollo Province
+        # administration: RWR | Apollo Province
+        # administration: RWR | Apollo Province
+        # administration: RWR | Apollo Province
         faction:
           source: canon
           value:
@@ -326,6 +342,12 @@ planet:
         population: 3341414.0
       - date: '3020-01-01'
         population: 3387247.0
+      - date: '3025-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - EF
       - date: '3025-12-08'
         faction:
           source: canon
@@ -339,6 +361,12 @@ planet:
         socioIndustrial:
           source: canon
           value: D-D-C-D-B
+      - date: '3049-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CGB
       - date: '3049-09-03'
         faction:
           source: canon
@@ -346,6 +374,17 @@ planet:
             - CW
       - date: '3050-01-01'
         population: 3499517.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CGB
+      - date: '3057-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CW
       - date: '3060-01-01'
         population: 3539286.0
       - date: '3067-01-01'
@@ -363,6 +402,12 @@ planet:
         population: 3629609.0
       - date: '3090-01-01'
         population: 3672692.0
+      - date: '3095-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FCo
       - date: '3100-01-01'
         population: 3686675.0
       - date: '3100-02-07'
@@ -378,6 +423,11 @@ planet:
         socioIndustrial: D-F-D-D-B
       - date: '3130-01-01'
         population: 3736409.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FCo
       - date: '3140-01-01'
         population: 3740895.0
       - date: '3145-01-01'

@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: Hyalite
-sucsId: 1161
+sucsId: 1162
 xcood: 268.824
 ycood: -354.187
 spectralType:
-  source: House Davion
+  source: HB:HD
   value: A4IV
 primarySlot:
-  source: House Davion
+  source: HB:HD
   value: 5
 event:
   - date: '2386-06-25'
@@ -102,7 +102,7 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 10.92
     sysPos:
-      source: House Davion
+      source: HB:HD
       value: 5
     icon: green43
     pressure: HIGH
@@ -116,13 +116,9 @@ planet:
     temperature: 24
     water: 49
     lifeForm:
-      source: House Davion
+      source: HB:HD
       value: REPTILE
-    desc: 'Hyalite is a nearly backwater world near the Federated Suns’ Periphery
-      border. Hyalite was originally settled for its rich gemstone and chemical deposits.
-      While the gemstones have all been mined away over the centuries, the chemical
-      plants are still as busy as ever and the chemical industry is the backbone of
-      the planet’s economy and exports. '
+    desc: 'Hyalite is a nearly backwater world near the Federated Suns’ Periphery border. Hyalite was originally settled for its rich gemstone and chemical deposits. While the gemstones have all been mined away over the centuries, the chemical plants are still as busy as ever and the chemical industry is the backbone of the planet’s economy and exports. '
     landmass:
       - name: Lake Hamilton
         capital: Ananda Devi City
@@ -205,7 +201,25 @@ planet:
             - SL
       - date: '2590-01-01'
         population: 136097091.0
+      - date: '2596-01-01'
+        # administration: FS | Capellan March | Taygeta Operational Area
+        # administration: FS | Capellan March | Taygeta Operational Area
+        # administration: FS | Capellan March | Taygeta Operational Area
+        # administration: FS | Capellan March | Taygeta Operational Area
+        # administration: FS | Capellan March | Taygeta Operational Area
+        # administration: FS | Capellan March | Taygeta Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FS
       - date: '2596-02-05'
+        # administration: FS | Capellan March | Taygeta Operational Area
+        # administration: FS | Capellan March | Taygeta Operational Area
+        # administration: FS | Capellan March | Taygeta Operational Area
+        # administration: FS | Capellan March | Taygeta Operational Area
+        # administration: FS | Capellan March | Taygeta Operational Area
+        # administration: FS | Capellan March | Taygeta Operational Area
         faction:
           source: canon
           value:
@@ -247,6 +261,12 @@ planet:
       - date: '2740-01-01'
         population: 155594772.0
       - date: '2750-08-28'
+        # administration: FS | Capellan March | Taygeta Operational Area
+        # administration: FS | Capellan March | Taygeta Operational Area
+        # administration: FS | Capellan March | Taygeta Operational Area
+        # administration: FS | Capellan March | Taygeta Operational Area
+        # administration: FS | Capellan March | Taygeta Operational Area
+        # administration: FS | Capellan March | Taygeta Operational Area
         faction:
           source: canon
           value:
@@ -314,8 +334,25 @@ planet:
       - date: '3030-01-01'
         population: 133269540.0
       - date: '3040-01-01'
+        # administration: FC | Capellan March | Taygeta Operational Area
+        # administration: FC | Capellan March | Taygeta Operational Area
+        # administration: FC | Capellan March | Taygeta Operational Area
+        # administration: FC | Capellan March | Taygeta Operational Area
+        # administration: FC | Capellan March | Taygeta Operational Area
+        # administration: FC | Capellan March | Taygeta Operational Area
         population: 134353407.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
+        # administration: FC | Capellan March | Taygeta Operational Area
+        # administration: FC | Capellan March | Taygeta Operational Area
+        # administration: FC | Capellan March | Taygeta Operational Area
+        # administration: FC | Capellan March | Taygeta Operational Area
+        # administration: FC | Capellan March | Taygeta Operational Area
+        # administration: FC | Capellan March | Taygeta Operational Area
         faction:
           source: canon
           value:
@@ -326,7 +363,25 @@ planet:
         population: 135216026.0
       - date: '3060-01-01'
         population: 135948168.0
+      - date: '3067-01-01'
+        # administration: FS | Capellan March | Taygeta Operational Area
+        # administration: FS | Capellan March | Taygeta Operational Area
+        # administration: FS | Capellan March | Taygeta Operational Area
+        # administration: FS | Capellan March | Taygeta Operational Area
+        # administration: FS | Capellan March | Taygeta Operational Area
+        # administration: FS | Capellan March | Taygeta Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FS
       - date: '3067-04-20'
+        # administration: FS | Capellan March | Taygeta Operational Area
+        # administration: FS | Capellan March | Taygeta Operational Area
+        # administration: FS | Capellan March | Taygeta Operational Area
+        # administration: FS | Capellan March | Taygeta Operational Area
+        # administration: FS | Capellan March | Taygeta Operational Area
+        # administration: FS | Capellan March | Taygeta Operational Area
         faction:
           source: canon
           value:
@@ -338,6 +393,18 @@ planet:
           source: canon
           value:
             - TC
+      - date: '3075-01-01'
+        # administration: FS | Capellan March | Taygeta Operational Area
+        # administration: FS | Capellan March | Taygeta Operational Area
+        # administration: FS | Capellan March | Taygeta Operational Area
+        # administration: FS | Capellan March | Taygeta Operational Area
+        # administration: FS | Capellan March | Taygeta Operational Area
+        # administration: FS | Capellan March | Taygeta Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FS
       - date: '3075-02-01'
         faction:
           source: canon
@@ -351,6 +418,12 @@ planet:
       - date: '3080-01-01'
         population: 137369406.0
       - date: '3080-06-01'
+        # administration: FS | Periphery March | June Operational Area
+        # administration: FS | Periphery March | June Operational Area
+        # administration: FS | Periphery March | June Operational Area
+        # administration: FS | Periphery March | June Operational Area
+        # administration: FS | Periphery March | June Operational Area
+        # administration: FS | Periphery March | June Operational Area
         faction:
           source: canon
           value:

@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: Imbros III
-sucsId: 1188
+sucsId: 1189
 xcood: -2.077
 ycood: 34.077
 spectralType:
-  source: MWDA world profiles
+  source: DA:RW
   value: M5V
 primarySlot:
-  source: MWDA world profiles
+  source: DA:RW
   value: 3
 event:
   - date: '2367-04-07'
@@ -83,31 +83,31 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.08
     sysPos:
-      source: MWDA world profiles
+      source: DA:RW
       value: 3
     icon: green57
     pressure:
-      source: MWDA world profiles
+      source: DA:RW
       value: STANDARD
     atmosphere:
-      source: MWDA world profiles
+      source: DA:RW
       value: TAINTED_POISON
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: MWDA world profiles
+      source: DA:RW
       value: 0.88
     diameter: 12746
     density: 4.851762572284
     dayLength: 24
     yearLength: 0.4
     temperature:
-      source: MWDA world profiles
+      source: DA:RW
       value: 25
     water:
-      source: MWDA world profiles
+      source: DA:RW
       value: 44
     lifeForm:
-      source: MWDA world profiles
+      source: DA:RW
       value: PLANT
     desc: |-
       Imbros III was a part of the Terran Hegemony when Stefan Amaris usurped the Star League throne and sounded the death knell of humanity‘s Golden Age. An unremarkable, water-poor world of rocky mountains and bone-dry canyons, with little mineral wealth save a few veins of precious metals and an abundance of bauxite, Imbros sparked little to no interest for the Usurper. Instead, he forced House Kurita, using hostages of the Draconis Combine‘s ruling line as leverage, to garrison this planet in advance of Kerensky‘s return. These same Combine forces gave way easily to the liberating SLDF, only to return in force after the League‘s collapse just a few years later. Though never a valuable military or industrial prize, Imbros III did provide strategic value to the Combine as a border world to the Lyran Commonwealth, so the centuries of warfare that followed the fall of the League saw many raids and campaigns either launched against this planet or staged from it.
@@ -115,33 +115,33 @@ planet:
       Trunner, the largest city and planetary capital, is home to Imbross AeroTech Industries Company‘s offworld sales division, and sits on the banks of the Youli River on the southern continent of Opilacca. Southeast of Opilacca lie the large twin continents of Barnar and Martego. On Martego, between the Maulan and Wanalahi Rivers, lies the major spaceport city of Larabel, where IATIC also maintains its corporate headquarters. Small towns—most interconnected by a series of winding monorailways that cross expanses of alternating woods and deserts—dot the continents of Opilacca, Barnar, and Martego. Imbros III‘s fourth continent, the glacial south polar continent of Fryggia, is totally uninhabited.
     landmass:
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Barnar
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Fryggia
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Martego
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Opilacca
         capital:
-          source: MWDA world profiles
+          source: DA:RW
           value: Trunner
     satellite:
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Aberne
         size: medium
         icon: oddmoon3
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Behr
         size: medium
         icon: rock17
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Otabwe
         size: large
         icon: rock15
@@ -171,6 +171,12 @@ planet:
           value:
             - TH
       - date: '2319-02-13'
+        # administration: TH | Lone Star Province
+        # administration: TH | Lone Star Province
+        # administration: TH | Lone Star Province
+        # administration: TH | Lone Star Province
+        # administration: TH | Lone Star Province
+        # administration: TH | Lone Star Province
         faction:
           source: canon
           value:
@@ -270,6 +276,18 @@ planet:
         population: 3614346025.0
       - date: '2760-01-01'
         population: 3578173070.0
+      - date: '2767-01-01'
+        # administration: AE | Lone Star Province
+        # administration: AE | Lone Star Province
+        # administration: AE | Lone Star Province
+        # administration: AE | Lone Star Province
+        # administration: AE | Lone Star Province
+        # administration: AE | Lone Star Province
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - AE
       - date: '2767-06-07'
         faction:
           source: canon
@@ -278,6 +296,12 @@ planet:
       - date: '2770-01-01'
         population: 3558131270.0
       - date: '2779-12-08'
+        # administration: TH | Lone Star Province
+        # administration: TH | Lone Star Province
+        # administration: TH | Lone Star Province
+        # administration: TH | Lone Star Province
+        # administration: TH | Lone Star Province
+        # administration: TH | Lone Star Province
         faction:
           source: canon
           value:
@@ -289,6 +313,18 @@ planet:
           source: canon
           value:
             - DC
+      - date: '2786-01-01'
+        # administration: TH | Lone Star Province
+        # administration: TH | Lone Star Province
+        # administration: TH | Lone Star Province
+        # administration: TH | Lone Star Province
+        # administration: TH | Lone Star Province
+        # administration: TH | Lone Star Province
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - TH
       - date: '2790-01-01'
         population: 3539317338.0
       - date: '2800-01-01'
@@ -297,7 +333,25 @@ planet:
         population: 3487269558.0
       - date: '2820-01-01'
         population: 3485024056.0
+      - date: '2821-01-01'
+        # administration: DC | Dieron Military District | Lone Star Prefecture
+        # administration: DC | Dieron Military District | Lone Star Prefecture
+        # administration: DC | Dieron Military District | Lone Star Prefecture
+        # administration: DC | Dieron Military District | Lone Star Prefecture
+        # administration: DC | Dieron Military District | Lone Star Prefecture
+        # administration: DC | Dieron Military District | Lone Star Prefecture
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - DC
       - date: '2821-08-12'
+        # administration: DC | Dieron Military District | Lone Star Prefecture
+        # administration: DC | Dieron Military District | Lone Star Prefecture
+        # administration: DC | Dieron Military District | Lone Star Prefecture
+        # administration: DC | Dieron Military District | Lone Star Prefecture
+        # administration: DC | Dieron Military District | Lone Star Prefecture
+        # administration: DC | Dieron Military District | Lone Star Prefecture
         faction:
           source: canon
           value:
@@ -346,6 +400,18 @@ planet:
         population: 3052116966.0
       - date: '3020-01-01'
         population: 3017681999.0
+      - date: '3030-01-01'
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        # administration: LA | Federation of Skye | Isle of Skye
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '3030-08-31'
         faction:
           source: canon
@@ -354,8 +420,25 @@ planet:
         population: 3011550327.0
         socioIndustrial: B-D-D-C-C
       - date: '3040-01-01'
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
         population: 3035435798.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
         faction:
           source: canon
           value:
@@ -364,6 +447,18 @@ planet:
         socioIndustrial: A-C-D-B-B
       - date: '3050-01-01'
         population: 3063184328.0
+      - date: '3057-01-01'
+        # administration: LA | Skye March | Ryde Operational Area
+        # administration: LA | Skye March | Ryde Operational Area
+        # administration: LA | Skye March | Ryde Operational Area
+        # administration: LA | Skye March | Ryde Operational Area
+        # administration: LA | Skye March | Ryde Operational Area
+        # administration: LA | Skye March | Ryde Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '3057-09-18'
         faction:
           source: canon
@@ -375,9 +470,27 @@ planet:
           value:
             - DC
             - LA
+      - date: '3058-01-01'
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '3060-01-01'
         population: 3087788087.0
       - date: '3062-07-02'
+        # administration: DC | Dieron Military District | Kessel Prefecture
+        # administration: DC | Dieron Military District | Kessel Prefecture
+        # administration: DC | Dieron Military District | Kessel Prefecture
+        # administration: DC | Dieron Military District | Kessel Prefecture
+        # administration: DC | Dieron Military District | Kessel Prefecture
+        # administration: DC | Dieron Military District | Kessel Prefecture
         faction:
           source: canon
           value:
@@ -402,7 +515,25 @@ planet:
             - Stone
       - date: '3080-01-01'
         population: 3151741020.0
+      - date: '3081-01-01'
+        # administration: ROS | Prefecture I
+        # administration: ROS | Prefecture I
+        # administration: ROS | Prefecture I
+        # administration: ROS | Prefecture I
+        # administration: ROS | Prefecture I
+        # administration: ROS | Prefecture I
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ROS
       - date: '3081-11-06'
+        # administration: ROS | Prefecture I
+        # administration: ROS | Prefecture I
+        # administration: ROS | Prefecture I
+        # administration: ROS | Prefecture I
+        # administration: ROS | Prefecture I
+        # administration: ROS | Prefecture I
         faction:
           source: canon
           value:
@@ -425,6 +556,18 @@ planet:
         population: 3465146823.0
       - date: '3145-01-01'
         population: 3498572419.0
+      - date: '3151-01-01'
+        # administration: RD | Region 4
+        # administration: RD | Region 4
+        # administration: RD | Region 4
+        # administration: RD | Region 4
+        # administration: RD | Region 4
+        # administration: RD | Region 4
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - RD
       - date: '3152-06-01'
         faction:
           source: canon

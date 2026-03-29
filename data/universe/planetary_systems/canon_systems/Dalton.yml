@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -20,11 +20,13 @@ sucsId: 653
 xcood: -115.774
 ycood: -229.895
 spectralType:
-  source: House Marik, pg. 162
+  source: HMSB
   value: K1V
+  page: 162
 primarySlot:
-  source: House Marik, pg. 162
+  source: HMSB
   value: 5
+  page: 162
 event:
   - date: '2354-07-16'
     nadirCharge: yes
@@ -105,8 +107,9 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.56
     sysPos:
-      source: House Marik, pg. 162
+      source: HMSB
       value: 5
+      page: 162
     icon: green2
     pressure:
       source: canon
@@ -127,15 +130,10 @@ planet:
       source: canon
       value: 56
     lifeForm:
-      source: House Marik, pg. 162
+      source: HMSB
       value: MAMMAL
-    desc: Early scans of Dalton in 2310 revealed the planet was extremely habitable,
-      with a comfortable climate, breathable air, edible lifeforms, and plentiful
-      arable land, it unfortunately was also very seismically active and as a result
-      the planet was passed up for colonization for more than 200 years. Oddly the
-      seismic activity was no longer present and there had not been a single recorded
-      earthquake as of the 31st Century. Dalton is home to Garret Satcomm., which
-      creates targeting and communication systems for military units.
+      page: 162
+    desc: Early scans of Dalton in 2310 revealed the planet was extremely habitable, with a comfortable climate, breathable air, edible lifeforms, and plentiful arable land, it unfortunately was also very seismically active and as a result the planet was passed up for colonization for more than 200 years. Oddly the seismic activity was no longer present and there had not been a single recorded earthquake as of the 31st Century. Dalton is home to Garret Satcomm., which creates targeting and communication systems for military units.
     landmass:
       - name:
           source: canon
@@ -161,6 +159,12 @@ planet:
         icon: rock16
     event:
       - date: '2302-09-02'
+        # administration: FWL | Federation of Oriente
+        # administration: FWL | Federation of Oriente
+        # administration: FWL | Federation of Oriente
+        # administration: FWL | Federation of Oriente
+        # administration: FWL | Federation of Oriente
+        # administration: FWL | Federation of Oriente
         faction:
           source: canon
           value:
@@ -352,6 +356,12 @@ planet:
             - DO
       - date: '3080-01-01'
         population: 4269992496.0
+      - date: '3081-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3081-03-01'
         faction:
           source: canon
@@ -367,6 +377,12 @@ planet:
         population: 4468318082.0
       - date: '3120-01-01'
         population: 4500606070.0
+      - date: '3130-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - OP
       - date: '3130-01-22'
         faction:
           source: canon
@@ -380,8 +396,25 @@ planet:
       - date: '3140-01-01'
         population: 4646025254.0
       - date: '3145-01-01'
+        # administration: FWL | Oriente Protectorate
+        # administration: FWL | Oriente Protectorate
+        # administration: FWL | Oriente Protectorate
+        # administration: FWL | Oriente Protectorate
+        # administration: FWL | Oriente Protectorate
+        # administration: FWL | Oriente Protectorate
         population: 4684279288.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FWL
       - date: '3151-01-01'
+        # administration: FWL | Oriente Protectorate
+        # administration: FWL | Oriente Protectorate
+        # administration: FWL | Oriente Protectorate
+        # administration: FWL | Oriente Protectorate
+        # administration: FWL | Oriente Protectorate
+        # administration: FWL | Oriente Protectorate
         faction:
           source: sucs
           value:

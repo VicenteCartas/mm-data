@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,15 +16,17 @@
 # affiliated with Microsoft.
 
 id: Wernke (Talon)
-sucsId: 2746
+sucsId: 2747
 xcood: 248.407
 ycood: -230.887
 spectralType:
-  source: 'Handbook: House Davion, pg. 91'
+  source: 'HB:HD'
   value: G0V
+  page: 91
 primarySlot:
-  source: 'Handbook: House Davion, pg. 91'
+  source: 'HB:HD'
   value: 3
+  page: 91
 event:
   - date: '2434-09-10'
     zenithCharge: yes
@@ -68,58 +70,66 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 1.1
     sysPos:
-      source: 'Handbook: House Davion, pg. 91'
+      source: 'HB:HD'
       value: 3
+      page: 91
     icon: green14
     pressure:
-      source: 'Handbook: House Davion, pg. 91'
+      source: 'HB:HD'
       value: STANDARD
+      page: 91
     atmosphere:
-      source: 'Handbook: House Davion, pg. 91'
+      source: 'HB:HD'
       value: BREATHABLE
+      page: 91
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'Handbook: House Davion, pg. 91'
+      source: 'HB:HD'
       value: 1.0
+      page: 91
     diameter: 10827
     density: 6.49053159648
     dayLength: 23
     yearLength: 1.6
     temperature:
-      source: 'Handbook: House Davion, pg. 91'
+      source: 'HB:HD'
       value: 40
+      page: 91
     water:
-      source: 'Handbook: House Davion, pg. 91'
+      source: 'HB:HD'
       value: 60
+      page: 91
     lifeForm:
-      source: 'Handbook: House Davion, pg. 91'
+      source: 'HB:HD'
       value: MAMMAL
-    desc: While Wernke is the settled planet in the system, its moon Talon is arguably
-      more important. Talon is home to Kallon Weapon Industries, a major producer
-      of ‘Mechs for the Federated Suns. Aside from the industrial plants, Talon is
-      an almost entirely barren moon and is only inhabited by the employees of Kallon
-      Industries and miners of the raw materials and gems found on Talon. All food
-      is imported from Wernke which is an arable and comfortable planet.
+      page: 91
+    desc: While Wernke is the settled planet in the system, its moon Talon is arguably more important. Talon is home to Kallon Weapon Industries, a major producer of ‘Mechs for the Federated Suns. Aside from the industrial plants, Talon is an almost entirely barren moon and is only inhabited by the employees of Kallon Industries and miners of the raw materials and gems found on Talon. All food is imported from Wernke which is an arable and comfortable planet.
     landmass:
       - name:
-          source: 'Handbook: House Davion, pg. 91'
+          source: 'HB:HD'
           value: Crimeia
+          page: 91
         capital:
-          source: 'Handbook: House Davion, pg. 91'
+          source: 'HB:HD'
           value: Hamish
+          page: 91
       - name:
-          source: 'Handbook: House Davion, pg. 91'
+          source: 'HB:HD'
           value: Jal
+          page: 91
       - name:
-          source: 'Handbook: House Davion, pg. 91'
+          source: 'HB:HD'
           value: Tonkya
+          page: 91
       - name:
-          source: 'Handbook: House Davion, pg. 91'
+          source: 'HB:HD'
           value: Vesper
+          page: 91
     satellite:
       - name:
-          source: 'Handbook: House Davion, pg. 91'
+          source: 'HB:HD'
           value: Talon
+          page: 91
         size: medium
         icon: rock8
     event:
@@ -138,6 +148,12 @@ planet:
         population: 977333.0
       - date: '2310-01-01'
         population: 2274199.0
+      - date: '2317-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CCom
       - date: '2320-01-01'
         population: 4757762.0
       - date: '2330-01-01'
@@ -155,6 +171,12 @@ planet:
         socioIndustrial: D-C-B-D-F
       - date: '2360-01-01'
         population: 37665500.0
+      - date: '2366-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CCom
       - date: '2370-01-01'
         population: 53188339.0
       - date: '2380-01-01'
@@ -201,11 +223,29 @@ planet:
         population: 382572211.0
       - date: '2570-01-01'
         population: 386520586.0
+      - date: '2571-01-01'
+        # administration: FS | Capellan March | Taygeta Operational Area
+        # administration: FS | Capellan March | Taygeta Operational Area
+        # administration: FS | Capellan March | Taygeta Operational Area
+        # administration: FS | Capellan March | Taygeta Operational Area
+        # administration: FS | Capellan March | Taygeta Operational Area
+        # administration: FS | Capellan March | Taygeta Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FS
       - date: '2580-01-01'
         population: 389828840.0
       - date: '2590-01-01'
         population: 392851757.0
       - date: '2596-01-27'
+        # administration: FS | Capellan March | Taygeta Operational Area
+        # administration: FS | Capellan March | Taygeta Operational Area
+        # administration: FS | Capellan March | Taygeta Operational Area
+        # administration: FS | Capellan March | Taygeta Operational Area
+        # administration: FS | Capellan March | Taygeta Operational Area
+        # administration: FS | Capellan March | Taygeta Operational Area
         faction:
           source: canon
           value:
@@ -311,8 +351,25 @@ planet:
       - date: '3035-01-01'
         socioIndustrial: B-B-C-B-F
       - date: '3040-01-01'
+        # administration: FC | Capellan March | Taygeta Operational Area
+        # administration: FC | Capellan March | Taygeta Operational Area
+        # administration: FC | Capellan March | Taygeta Operational Area
+        # administration: FC | Capellan March | Taygeta Operational Area
+        # administration: FC | Capellan March | Taygeta Operational Area
+        # administration: FC | Capellan March | Taygeta Operational Area
         population: 291363701.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
+        # administration: FC | Capellan March | Taygeta Operational Area
+        # administration: FC | Capellan March | Taygeta Operational Area
+        # administration: FC | Capellan March | Taygeta Operational Area
+        # administration: FC | Capellan March | Taygeta Operational Area
+        # administration: FC | Capellan March | Taygeta Operational Area
+        # administration: FC | Capellan March | Taygeta Operational Area
         faction:
           source: canon
           value:
@@ -332,10 +389,27 @@ planet:
             - FC
             - LA
       - date: '3067-01-01'
+        # administration: FS | Capellan March | Taygeta Operational Area
+        # administration: FS | Capellan March | Taygeta Operational Area
+        # administration: FS | Capellan March | Taygeta Operational Area
+        # administration: FS | Capellan March | Taygeta Operational Area
+        # administration: FS | Capellan March | Taygeta Operational Area
+        # administration: FS | Capellan March | Taygeta Operational Area
         population:
           source: canon
           value: 298650000.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FS
       - date: '3067-04-20'
+        # administration: FS | Capellan March | Taygeta Operational Area
+        # administration: FS | Capellan March | Taygeta Operational Area
+        # administration: FS | Capellan March | Taygeta Operational Area
+        # administration: FS | Capellan March | Taygeta Operational Area
+        # administration: FS | Capellan March | Taygeta Operational Area
+        # administration: FS | Capellan March | Taygeta Operational Area
         faction:
           source: canon
           value:

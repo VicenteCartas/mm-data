@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Gannett
-sucsId: 935
+sucsId: 936
 xcood: -165.429
 ycood: -60.539
 spectralType: G0V
@@ -258,10 +258,34 @@ planet:
         population: 816823329.0
       - date: '3060-01-01'
         population: 827014996.0
+      - date: '3068-01-01'
+        # administration: LA | Bolan Province | Cavanaugh Theater
+        # administration: LA | Bolan Province | Cavanaugh Theater
+        # administration: LA | Bolan Province | Cavanaugh Theater
+        # administration: LA | Bolan Province | Cavanaugh Theater
+        # administration: LA | Bolan Province | Cavanaugh Theater
+        # administration: LA | Bolan Province | Cavanaugh Theater
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '3070-01-01'
         population: 836078768.0
+      - date: '3075-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FWL
       - date: '3080-01-01'
         population: 844481499.0
+      - date: '3081-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3081-09-05'
         faction:
           source: canon
@@ -277,6 +301,12 @@ planet:
         population: 877189308.0
       - date: '3120-01-01'
         population: 891872182.0
+      - date: '3130-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - MSC
       - date: '3130-06-08'
         faction:
           source: canon
@@ -287,6 +317,12 @@ planet:
         hpg: X
       - date: '3140-01-01'
         population: 920505364.0
+      - date: '3145-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CWE
       - date: '3145-11-05'
         faction:
           source: canon

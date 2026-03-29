@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -76,12 +76,7 @@ planet:
     lifeForm:
       source: canon
       value: MAMMAL
-    desc: Carbonis is a hut, tropical planet with modest natural resources and sufficient
-      arable land to keep its population fed. The planet supports human life easily,
-      though the thin, though breathable, atmosphere and the extreme heat and humidity
-      can make it very uncomfortable at times. The planet has ample industry in its
-      cities, especially the capital Budabest, including IMB Systems Inc. a producer
-      of miltiary targeting and tracking systems.
+    desc: Carbonis is a hut, tropical planet with modest natural resources and sufficient arable land to keep its population fed. The planet supports human life easily, though the thin, though breathable, atmosphere and the extreme heat and humidity can make it very uncomfortable at times. The planet has ample industry in its cities, especially the capital Budabest, including IMB Systems Inc. a producer of miltiary targeting and tracking systems.
     landmass:
       - name:
           source: canon
@@ -94,6 +89,12 @@ planet:
           value: Budapest
     event:
       - date: '2603-12-09'
+        # administration: CC | Capella Commonality | Region 6
+        # administration: CC | Capella Commonality | Region 6
+        # administration: CC | Capella Commonality | Region 6
+        # administration: CC | Capella Commonality | Region 6
+        # administration: CC | Capella Commonality | Region 6
+        # administration: CC | Capella Commonality | Region 6
         faction:
           source: canon
           value:
@@ -147,6 +148,12 @@ planet:
       - date: '2780-01-01'
         population: 728814889.0
       - date: '2790-12-12'
+        # administration: FWL | Duchy of Orloff
+        # administration: FWL | Duchy of Orloff
+        # administration: FWL | Duchy of Orloff
+        # administration: FWL | Duchy of Orloff
+        # administration: FWL | Duchy of Orloff
+        # administration: FWL | Duchy of Orloff
         faction:
           source: canon
           value:
@@ -159,6 +166,12 @@ planet:
       - date: '2820-01-01'
         population: 702509043.0
       - date: '2821-07-05'
+        # administration: FWL | Duchy of Orloff
+        # administration: FWL | Duchy of Orloff
+        # administration: FWL | Duchy of Orloff
+        # administration: FWL | Duchy of Orloff
+        # administration: FWL | Duchy of Orloff
+        # administration: FWL | Duchy of Orloff
         faction:
           source: canon
           value:
@@ -228,10 +241,22 @@ planet:
             - DoO
       - date: '3080-01-01'
         population: 654367964.0
+      - date: '3085-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - DO
       - date: '3090-01-01'
         population: 666253234.0
       - date: '3093-01-01'
         socioIndustrial: B-B-B-B-C
+      - date: '3095-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - OP
       - date: '3100-01-01'
         population: 679033069.0
       - date: '3110-01-01'
@@ -247,8 +272,25 @@ planet:
       - date: '3140-01-01'
         population: 716565621.0
       - date: '3145-01-01'
+        # administration: FWL | Oriente Protectorate
+        # administration: FWL | Oriente Protectorate
+        # administration: FWL | Oriente Protectorate
+        # administration: FWL | Oriente Protectorate
+        # administration: FWL | Oriente Protectorate
+        # administration: FWL | Oriente Protectorate
         population: 720877939.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FWL
       - date: '3151-01-01'
+        # administration: FWL | Oriente Protectorate
+        # administration: FWL | Oriente Protectorate
+        # administration: FWL | Oriente Protectorate
+        # administration: FWL | Oriente Protectorate
+        # administration: FWL | Oriente Protectorate
+        # administration: FWL | Oriente Protectorate
         faction:
           source: sucs
           value:

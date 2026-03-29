@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Trinidad
-sucsId: 2585
+sucsId: 2586
 xcood: -226.98
 ycood: -172.21
 spectralType:
@@ -99,19 +99,7 @@ planet:
     lifeForm:
       source: canon
       value: AMPHIBIAN
-    desc: Trinidad is a hot planet with an abundance of natural resources and water
-      and sufficient arable land to supports its population. The abundance of natural
-      resources have also attracted a sizable, though non-military related industrial
-      base. Trinidad is home to a branch of the Hero Training Institute. However,
-      this branch of the for-profit Hero Training Institute is unique. It was formed
-      by a group of ex-SAFE operatives that wanted to create the first for-profit
-      Special Operations training group, however the program is not formally listed
-      anywhere, called only “logistics studies”, the program only accepts students
-      with permission from the Dean and often requires referrals to get into the program.
-      It is also the most expensive course offered at the Hero Training Institute
-      but uses the best and newest equipment of any of their academies. The HTI branch
-      still offers the traditional courses for any aspiring MechWarriors, Aerospace
-      Pilots and armored infantry that can afford them.
+    desc: Trinidad is a hot planet with an abundance of natural resources and water and sufficient arable land to supports its population. The abundance of natural resources have also attracted a sizable, though non-military related industrial base. Trinidad is home to a branch of the Hero Training Institute. However, this branch of the for-profit Hero Training Institute is unique. It was formed by a group of ex-SAFE operatives that wanted to create the first for-profit Special Operations training group, however the program is not formally listed anywhere, called only “logistics studies”, the program only accepts students with permission from the Dean and often requires referrals to get into the program. It is also the most expensive course offered at the Hero Training Institute but uses the best and newest equipment of any of their academies. The HTI branch still offers the traditional courses for any aspiring MechWarriors, Aerospace Pilots and armored infantry that can afford them.
     landmass:
       - name:
           source: canon
@@ -156,6 +144,12 @@ planet:
         population: 2479430.0
       - date: '2310-01-01'
         population: 5169512.0
+      - date: '2317-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '2320-01-01'
         population: 9749941.0
       - date: '2330-01-01'
@@ -209,6 +203,18 @@ planet:
         population: 518692264.0
       - date: '2570-01-01'
         population: 529733758.0
+      - date: '2571-01-01'
+        # administration: FWL | Marik Commonwealth
+        # administration: FWL | Marik Commonwealth
+        # administration: FWL | Marik Commonwealth
+        # administration: FWL | Marik Commonwealth
+        # administration: FWL | Marik Commonwealth
+        # administration: FWL | Marik Commonwealth
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FWL
       - date: '2580-01-01'
         population: 536943088.0
       - date: '2590-01-01'
@@ -325,6 +331,12 @@ planet:
         population: 555484749.0
       - date: '3080-01-01'
         population: 564669810.0
+      - date: '3081-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3081-12-02'
         faction:
           source: canon
@@ -340,6 +352,12 @@ planet:
         population: 586422872.0
       - date: '3120-01-01'
         population: 596119502.0
+      - date: '3130-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - RF
       - date: '3130-08-19'
         faction:
           source: canon

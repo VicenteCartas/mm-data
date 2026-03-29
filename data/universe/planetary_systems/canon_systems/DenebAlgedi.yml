@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -20,10 +20,10 @@ sucsId: 688
 xcood: 41.097
 ycood: 26.058
 spectralType:
-  source: MWDA world profiles
+  source: DA:RW
   value: F6VI
 primarySlot:
-  source: MWDA world profiles
+  source: DA:RW
   value: 2
 planet:
   - name: Chai
@@ -45,72 +45,42 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 3.64
     sysPos:
-      source: MWDA world profiles
+      source: DA:RW
       value: 2
     icon: green47
     pressure:
-      source: MWDA world profiles
+      source: DA:RW
       value: STANDARD
     atmosphere:
-      source: MWDA world profiles
+      source: DA:RW
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: MWDA world profiles
+      source: DA:RW
       value: 0.74
     diameter: 9674
     density: 5.37546703668
     dayLength: 19
     yearLength: 7.0
     temperature:
-      source: MWDA world profiles
+      source: DA:RW
       value: 33
     water:
-      source: MWDA world profiles
+      source: DA:RW
       value: 42
     lifeForm:
-      source: MWDA world profiles
+      source: DA:RW
       value: BIRD
-    desc: 'A fairly dry world, with deserts covering more than two-thirds of its surface
-      land, Deneb Algedi wasn‘t exactly seen as a paradise when it was discovered
-      in the first century of mankind‘s ascent to the stars. However, colonists from
-      Terra‘s African and South American continents, desperate to escape the oppression
-      of the Terran government, eagerly made for the water-poor planet, determined
-      to build a life of their own. Unfortunately, the first surveys of Deneb Algedi,
-      which were conducted by remote drones, did not take into account the planet‘s
-      dominant life form: the aggressive nayaraptor. This territorial airborne predator,
-      with a wingspan of almost two meters and the strength to snatch up prey weighing
-      as much as 90 kilograms, was dubbed ―sky shark by the locals. The nayaraptor,
-      which hunts singly, pounced upon many of the first settlers, who soon learned
-      their only defense lay in large numbers, preferably armed. As the colonists
-      built the first towns and cities on Deneb Algedi, organized hunts for the nayaraptor
-      gradually changed from a necessity to a sport. Though still a dangerous beast,
-      the nayaraptor is now the focus of a thriving game industry. Travelers looking
-      for a safari still visit this world to hunt the deadly nayaraptor on its home
-      soil, particularly on the island continent of Ombanwe, where the local government
-      has apportioned out several giant hunting ranges. Located in Deneb Algedi‘s
-      equatorial region, Ombanwe also boasts the largest tracts of open deserts and
-      dried -out river basins, the favored terrain of the nayaraptor, and Hunter‘s
-      Den, a resort city on the southeastern coast, the continent‘s only major human
-      settlement. The large, mountainous supercontinent of Librios, located east of
-      Ombanwe and stretching almost from pole to pole, is home to most of Deneb Algedi‘s
-      main cities and the bulk of the planetary population. The capital city, Nueva
-      Santiago, sits in a lush river valley on the northwestern edge of this landmass,
-      just a few dozen kilometers from San Luerdes, a sprawling commercial city that
-      also boasts the planet‘s largest DropPort. The remainder of Deneb Algedi‘s landmass
-      is claimed by the Batambu Chain, a series of six large islands that trace a
-      rough line from Librios‘ southeast peninsula to Ombanwe‘s western shores. Few
-      live on the mostly dry and rocky Batambu Chain, but the planetary defense forces
-      maintain several installations, barracks and weapons test ranges there.'
+    desc: 'A fairly dry world, with deserts covering more than two-thirds of its surface land, Deneb Algedi wasn‘t exactly seen as a paradise when it was discovered in the first century of mankind‘s ascent to the stars. However, colonists from Terra‘s African and South American continents, desperate to escape the oppression of the Terran government, eagerly made for the water-poor planet, determined to build a life of their own. Unfortunately, the first surveys of Deneb Algedi, which were conducted by remote drones, did not take into account the planet‘s dominant life form: the aggressive nayaraptor. This territorial airborne predator, with a wingspan of almost two meters and the strength to snatch up prey weighing as much as 90 kilograms, was dubbed ―sky shark by the locals. The nayaraptor, which hunts singly, pounced upon many of the first settlers, who soon learned their only defense lay in large numbers, preferably armed. As the colonists built the first towns and cities on Deneb Algedi, organized hunts for the nayaraptor gradually changed from a necessity to a sport. Though still a dangerous beast, the nayaraptor is now the focus of a thriving game industry. Travelers looking for a safari still visit this world to hunt the deadly nayaraptor on its home soil, particularly on the island continent of Ombanwe, where the local government has apportioned out several giant hunting ranges. Located in Deneb Algedi‘s equatorial region, Ombanwe also boasts the largest tracts of open deserts and dried -out river basins, the favored terrain of the nayaraptor, and Hunter‘s Den, a resort city on the southeastern coast, the continent‘s only major human settlement. The large, mountainous supercontinent of Librios, located east of Ombanwe and stretching almost from pole to pole, is home to most of Deneb Algedi‘s main cities and the bulk of the planetary population. The capital city, Nueva Santiago, sits in a lush river valley on the northwestern edge of this landmass, just a few dozen kilometers from San Luerdes, a sprawling commercial city that also boasts the planet‘s largest DropPort. The remainder of Deneb Algedi‘s landmass is claimed by the Batambu Chain, a series of six large islands that trace a rough line from Librios‘ southeast peninsula to Ombanwe‘s western shores. Few live on the mostly dry and rocky Batambu Chain, but the planetary defense forces maintain several installations, barracks and weapons test ranges there.'
     landmass:
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Librios
         capital:
-          source: MWDA world profiles
+          source: DA:RW
           value: Nueva Santiago
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Ombanwe
     event:
       - date: '2227-03-04'
@@ -143,6 +113,18 @@ planet:
             - AG
       - date: '2310-01-01'
         population: 104886371.0
+      - date: '2317-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
+      - date: '2319-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - AG
       - date: '2319-01-13'
         faction:
           source: canon
@@ -154,6 +136,12 @@ planet:
         population: 240268818.0
       - date: '2340-01-01'
         population: 336034223.0
+      - date: '2341-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ABN
       - date: '2350-01-01'
         population: 450476960.0
       - date: '2360-01-01'
@@ -202,7 +190,25 @@ planet:
         population: 2840033659.0
       - date: '2570-01-01'
         population: 2846142183.0
+      - date: '2571-01-01'
+        # administration: TH | Lone Star Province
+        # administration: TH | Lone Star Province
+        # administration: TH | Lone Star Province
+        # administration: TH | Lone Star Province
+        # administration: TH | Lone Star Province
+        # administration: TH | Lone Star Province
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - TH
       - date: '2571-11-17'
+        # administration: TH | Lone Star Province
+        # administration: TH | Lone Star Province
+        # administration: TH | Lone Star Province
+        # administration: TH | Lone Star Province
+        # administration: TH | Lone Star Province
+        # administration: TH | Lone Star Province
         faction:
           source: canon
           value:
@@ -251,6 +257,18 @@ planet:
         population: 2908728586.0
       - date: '2760-01-01'
         population: 2899013246.0
+      - date: '2767-01-01'
+        # administration: AE | Lone Star Province
+        # administration: AE | Lone Star Province
+        # administration: AE | Lone Star Province
+        # administration: AE | Lone Star Province
+        # administration: AE | Lone Star Province
+        # administration: AE | Lone Star Province
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - AE
       - date: '2767-09-27'
         faction:
           source: canon
@@ -259,6 +277,12 @@ planet:
       - date: '2770-01-01'
         population: 2874820125.0
       - date: '2779-12-13'
+        # administration: TH | Lone Star Province
+        # administration: TH | Lone Star Province
+        # administration: TH | Lone Star Province
+        # administration: TH | Lone Star Province
+        # administration: TH | Lone Star Province
+        # administration: TH | Lone Star Province
         faction:
           source: canon
           value:
@@ -266,6 +290,12 @@ planet:
       - date: '2780-01-01'
         population: 2813091316.0
       - date: '2790-01-26'
+        # administration: DC | Dieron Military District | Lone Star Prefecture
+        # administration: DC | Dieron Military District | Lone Star Prefecture
+        # administration: DC | Dieron Military District | Lone Star Prefecture
+        # administration: DC | Dieron Military District | Lone Star Prefecture
+        # administration: DC | Dieron Military District | Lone Star Prefecture
+        # administration: DC | Dieron Military District | Lone Star Prefecture
         faction:
           source: canon
           value:
@@ -278,6 +308,12 @@ planet:
       - date: '2820-01-01'
         population: 2785980076.0
       - date: '2821-08-16'
+        # administration: DC | Dieron Military District | Lone Star Prefecture
+        # administration: DC | Dieron Military District | Lone Star Prefecture
+        # administration: DC | Dieron Military District | Lone Star Prefecture
+        # administration: DC | Dieron Military District | Lone Star Prefecture
+        # administration: DC | Dieron Military District | Lone Star Prefecture
+        # administration: DC | Dieron Military District | Lone Star Prefecture
         faction:
           source: canon
           value:
@@ -361,7 +397,25 @@ planet:
             - Stone
       - date: '3080-01-01'
         population: 2240229593.0
+      - date: '3081-01-01'
+        # administration: ROS | Prefecture II
+        # administration: ROS | Prefecture II
+        # administration: ROS | Prefecture II
+        # administration: ROS | Prefecture II
+        # administration: ROS | Prefecture II
+        # administration: ROS | Prefecture II
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ROS
       - date: '3081-03-04'
+        # administration: ROS | Prefecture II
+        # administration: ROS | Prefecture II
+        # administration: ROS | Prefecture II
+        # administration: ROS | Prefecture II
+        # administration: ROS | Prefecture II
+        # administration: ROS | Prefecture II
         faction:
           source: canon
           value:
@@ -380,7 +434,25 @@ planet:
         population: 2414707973.0
       - date: '3132-08-07'
         hpg: X
+      - date: '3135-01-01'
+        # administration: DC | Benjamin Military District | Algedi Prefecture
+        # administration: DC | Benjamin Military District | Algedi Prefecture
+        # administration: DC | Benjamin Military District | Algedi Prefecture
+        # administration: DC | Benjamin Military District | Algedi Prefecture
+        # administration: DC | Benjamin Military District | Algedi Prefecture
+        # administration: DC | Benjamin Military District | Algedi Prefecture
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - DC
       - date: '3135-02-24'
+        # administration: DC | Dieron Military District | Al Na'ir Prefecture
+        # administration: DC | Dieron Military District | Al Na'ir Prefecture
+        # administration: DC | Dieron Military District | Al Na'ir Prefecture
+        # administration: DC | Dieron Military District | Al Na'ir Prefecture
+        # administration: DC | Dieron Military District | Al Na'ir Prefecture
+        # administration: DC | Dieron Military District | Al Na'ir Prefecture
         faction:
           source: canon
           value:

@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,15 +16,17 @@
 # affiliated with Microsoft.
 
 id: Gatekeeper
-sucsId: 2942
+sucsId: 2943
 xcood: -22.586
 ycood: 1779.374
 spectralType:
-  source: Warriors of Kerensky, pg. 112
+  source: WoK
   value: B0III
+  page: 112
 primarySlot:
-  source: Warriors of Kerensky, pg. 112
+  source: WoK
   value: 2
+  page: 112
 event:
   - date: '2809-06-15'
     nadirCharge: yes
@@ -51,32 +53,39 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 343.0
     sysPos:
-      source: Warriors of Kerensky, pg. 112
+      source: WoK
       value: 2
+      page: 112
     icon: dry23
     pressure:
-      source: Warriors of Kerensky, pg. 112
+      source: WoK
       value: STANDARD
+      page: 112
     atmosphere:
-      source: Warriors of Kerensky, pg. 112
+      source: WoK
       value: TAINTED_POISON
+      page: 112
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: Warriors of Kerensky, pg. 112
+      source: WoK
       value: 0.8
+      page: 112
     diameter: 10421
     density: 5.395107422819
     dayLength: 22
     yearLength: 6352.5
     temperature:
-      source: Warriors of Kerensky, pg. 112
+      source: WoK
       value: 20
+      page: 112
     water:
-      source: Warriors of Kerensky, pg. 112
+      source: WoK
       value: 10
+      page: 112
     lifeForm:
-      source: Warriors of Kerensky, pg. 112
+      source: WoK
       value: PLANT
+      page: 112
     desc: No description available.
     landmass:
       - name: Kryzwonos
@@ -102,6 +111,12 @@ planet:
         population: 38078.0
       - date: '2820-01-01'
         population: 130537.0
+      - date: '2821-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CLAN
       - date: '2821-04-19'
         faction:
           source: canon
@@ -167,6 +182,12 @@ planet:
           value:
             - CSV
         population: 6419229.0
+      - date: '3075-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CSA
       - date: '3075-10-26'
         faction:
           source: canon

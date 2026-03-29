@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -20,11 +20,13 @@ sucsId: 346
 xcood: -186.646
 ycood: 348.664
 spectralType:
-  source: 'Handbook: House Steiner, pg. 81'
+  source: 'HB:HS'
   value: K7V
+  page: 81
 primarySlot:
-  source: 'Handbook: House Steiner, pg. 81'
+  source: 'HB:HS'
   value: 4
+  page: 81
 event:
   - date: '2727-01-23'
     nadirCharge: yes
@@ -88,32 +90,39 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.24
     sysPos:
-      source: 'Handbook: House Steiner, pg. 81'
+      source: 'HB:HS'
       value: 4
+      page: 81
     icon: green10
     pressure:
-      source: 'Handbook: House Steiner, pg. 81'
+      source: 'HB:HS'
       value: STANDARD
+      page: 81
     atmosphere:
-      source: 'Handbook: House Steiner, pg. 81'
+      source: 'HB:HS'
       value: BREATHABLE
+      page: 81
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'Handbook: House Steiner, pg. 81'
+      source: 'HB:HS'
       value: 0.81
+      page: 81
     diameter: 11793
     density: 4.826702537617
     dayLength: 21
     yearLength: 0.8
     temperature:
-      source: 'Handbook: House Steiner, pg. 81'
+      source: 'HB:HS'
       value: 41
+      page: 81
     water:
-      source: 'Handbook: House Steiner, pg. 81'
+      source: 'HB:HS'
       value: 67
+      page: 81
     lifeForm:
-      source: 'Handbook: House Steiner, pg. 81'
+      source: 'HB:HS'
       value: BIRD
+      page: 81
     desc: |-
       Blue Hole is covered in unique lakes and rivers that dot the land and are visible from space. From the ground, these lakes and rivers are even more unique for their massive depths and the fact that many of them are connected by large underground rivers. Often these underground channels are large enough for submersibles and even ‘Mechs to pass through.
 
@@ -121,10 +130,17 @@ planet:
     smallMoons: 4
     landmass:
       - capital:
-          source: 'Handbook: House Steiner, pg. 81'
+          source: 'HB:HS'
           value: Lapiz
+          page: 81
     event:
       - date: '2715-04-26'
+        # administration: LA | Protectorate of Donegal | Coventry Province
+        # administration: LA | Protectorate of Donegal | Coventry Province
+        # administration: LA | Protectorate of Donegal | Coventry Province
+        # administration: LA | Protectorate of Donegal | Coventry Province
+        # administration: LA | Protectorate of Donegal | Coventry Province
+        # administration: LA | Protectorate of Donegal | Coventry Province
         faction:
           source: canon
           value:
@@ -202,8 +218,25 @@ planet:
       - date: '3030-01-01'
         population: 943583385.0
       - date: '3040-01-01'
+        # administration: FC | Tamar March | Blackjack Operational Area
+        # administration: FC | Tamar March | Blackjack Operational Area
+        # administration: FC | Tamar March | Blackjack Operational Area
+        # administration: FC | Tamar March | Blackjack Operational Area
+        # administration: FC | Tamar March | Blackjack Operational Area
+        # administration: FC | Tamar March | Blackjack Operational Area
         population: 944511490.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
+        # administration: FC | Tamar March | Blackjack Operational Area
+        # administration: FC | Tamar March | Blackjack Operational Area
+        # administration: FC | Tamar March | Blackjack Operational Area
+        # administration: FC | Tamar March | Blackjack Operational Area
+        # administration: FC | Tamar March | Blackjack Operational Area
+        # administration: FC | Tamar March | Blackjack Operational Area
         faction:
           source: canon
           value:
@@ -214,7 +247,25 @@ planet:
           value: C-C-C-C-B
       - date: '3050-01-01'
         population: 942776017.0
+      - date: '3057-01-01'
+        # administration: LA | Tamar March | Pasig Operational Area
+        # administration: LA | Tamar March | Pasig Operational Area
+        # administration: LA | Tamar March | Pasig Operational Area
+        # administration: LA | Tamar March | Pasig Operational Area
+        # administration: LA | Tamar March | Pasig Operational Area
+        # administration: LA | Tamar March | Pasig Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '3057-09-18'
+        # administration: LA | Coventry Province | Melissia Theater
+        # administration: LA | Coventry Province | Melissia Theater
+        # administration: LA | Coventry Province | Melissia Theater
+        # administration: LA | Coventry Province | Melissia Theater
+        # administration: LA | Coventry Province | Melissia Theater
+        # administration: LA | Coventry Province | Melissia Theater
         faction:
           source: canon
           value:
@@ -227,6 +278,12 @@ planet:
           value: 934000000.0
       - date: '3070-01-01'
         population: 936993587.0
+      - date: '3075-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CJF
       - date: '3075-06-12'
         faction:
           source: canon
@@ -254,6 +311,12 @@ planet:
         population: 1044899971.0
       - date: '3145-01-01'
         population: 1052029504.0
+      - date: '3152-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3152-06-01'
         faction:
           source: canon

@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,15 +16,17 @@
 # affiliated with Microsoft.
 
 id: Kooken's Pleasure Pit
-sucsId: 1396
+sucsId: 1397
 xcood: -165.238
 ycood: 345.818
 spectralType:
-  source: 'Operational Turning Points: Red Corsair, pg. 4'
+  source: 'OTP:RC'
   value: G5V
+  page: 4
 primarySlot:
-  source: 'Operational Turning Points: Red Corsair, pg. 4'
+  source: 'OTP:RC'
   value: 4
+  page: 4
 event:
   - date: '2729-10-29'
     zenithCharge: yes
@@ -86,32 +88,39 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.9
     sysPos:
-      source: 'Operational Turning Points: Red Corsair, pg. 4'
+      source: 'OTP:RC'
       value: 4
+      page: 4
     icon: green17
     pressure:
-      source: 'Operational Turning Points: Red Corsair, pg. 4'
+      source: 'OTP:RC'
       value: STANDARD
+      page: 4
     atmosphere:
-      source: 'Operational Turning Points: Red Corsair, pg. 4'
+      source: 'OTP:RC'
       value: BREATHABLE
+      page: 4
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'Operational Turning Points: Red Corsair, pg. 4'
+      source: 'OTP:RC'
       value: 1.0
+      page: 4
     diameter: 11651
     density: 6.031831957979
     dayLength: 24
     yearLength: 1.3
     temperature:
-      source: 'Operational Turning Points: Red Corsair, pg. 4'
+      source: 'OTP:RC'
       value: 30
+      page: 4
     water:
-      source: 'Operational Turning Points: Red Corsair, pg. 4'
+      source: 'OTP:RC'
       value: 43
+      page: 4
     lifeForm:
-      source: 'Operational Turning Points: Red Corsair, pg. 4'
+      source: 'OTP:RC'
       value: MAMMAL
+      page: 4
     desc: |-
       Renamed Kooken’s Pleasure Pit in 3005, in reference to an infamous book which detailed the hedonistic life of the author, Michael Kooken, the planet was an attempt to battle organized crime in the region by providing many of the same services legally. Tourism is the planet’s only major industry and the entire economy is geared around visitors having a good time.
 
@@ -124,12 +133,19 @@ planet:
       - name: West Pennsboro
     satellite:
       - name:
-          source: 'Operational Turning Points: Red Corsair, pg. 4'
+          source: 'OTP:RC'
           value: Joy
+          page: 4
         size: large
         icon: rock9
     event:
       - date: '2727-11-16'
+        # administration: LA | Protectorate of Donegal | Coventry Province
+        # administration: LA | Protectorate of Donegal | Coventry Province
+        # administration: LA | Protectorate of Donegal | Coventry Province
+        # administration: LA | Protectorate of Donegal | Coventry Province
+        # administration: LA | Protectorate of Donegal | Coventry Province
+        # administration: LA | Protectorate of Donegal | Coventry Province
         faction:
           source: canon
           value:
@@ -202,8 +218,25 @@ planet:
       - date: '3030-01-01'
         population: 185261706.0
       - date: '3040-01-01'
+        # administration: FC | Tamar March | Blackjack Operational Area
+        # administration: FC | Tamar March | Blackjack Operational Area
+        # administration: FC | Tamar March | Blackjack Operational Area
+        # administration: FC | Tamar March | Blackjack Operational Area
+        # administration: FC | Tamar March | Blackjack Operational Area
+        # administration: FC | Tamar March | Blackjack Operational Area
         population: 186754539.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
+        # administration: FC | Tamar March | Blackjack Operational Area
+        # administration: FC | Tamar March | Blackjack Operational Area
+        # administration: FC | Tamar March | Blackjack Operational Area
+        # administration: FC | Tamar March | Blackjack Operational Area
+        # administration: FC | Tamar March | Blackjack Operational Area
+        # administration: FC | Tamar March | Blackjack Operational Area
         faction:
           source: canon
           value:
@@ -214,13 +247,43 @@ planet:
           value: C-C-D-C-B
       - date: '3050-01-01'
         population: 188592005.0
+      - date: '3057-01-01'
+        # administration: LA | Tamar March | Pasig Operational Area
+        # administration: LA | Tamar March | Pasig Operational Area
+        # administration: LA | Tamar March | Pasig Operational Area
+        # administration: LA | Tamar March | Pasig Operational Area
+        # administration: LA | Tamar March | Pasig Operational Area
+        # administration: LA | Tamar March | Pasig Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '3057-12-01'
         faction:
           source: canon
           value:
             - ARDC
+      - date: '3058-01-01'
+        # administration: LA | Coventry Province | Melissia Theater
+        # administration: LA | Coventry Province | Melissia Theater
+        # administration: LA | Coventry Province | Melissia Theater
+        # administration: LA | Coventry Province | Melissia Theater
+        # administration: LA | Coventry Province | Melissia Theater
+        # administration: LA | Coventry Province | Melissia Theater
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '3060-01-01'
         population: 190914743.0
+      - date: '3067-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CJF
       - date: '3067-08-18'
         faction:
           source: canon
@@ -249,6 +312,12 @@ planet:
         population: 203744068.0
       - date: '3145-01-01'
         population: 203988708.0
+      - date: '3151-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - AML
       - date: '3151-12-31'
         faction:
           source: canon

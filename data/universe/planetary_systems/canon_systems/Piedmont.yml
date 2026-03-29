@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: Piedmont
-sucsId: 2024
+sucsId: 2025
 xcood: 79.399
 ycood: 77.759
 spectralType:
-  source: MWDA world profiles
+  source: DA:RW
   value: G6IV
 primarySlot:
-  source: MWDA world profiles
+  source: DA:RW
   value: 2
 planet:
   - name: Fear
@@ -47,108 +47,68 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 1.44
     sysPos:
-      source: MWDA world profiles
+      source: DA:RW
       value: 2
     icon: green12
     pressure:
-      source: MWDA world profiles
+      source: DA:RW
       value: STANDARD
     atmosphere:
-      source: MWDA world profiles
+      source: DA:RW
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: MWDA world profiles
+      source: DA:RW
       value: 1.03
     diameter: 13784
     density: 5.251236808621
     dayLength: 20
     yearLength: 2.0
     temperature:
-      source: MWDA world profiles
+      source: DA:RW
       value: 31
     water:
-      source: MWDA world profiles
+      source: DA:RW
       value: 64
     lifeForm:
-      source: MWDA world profiles
+      source: DA:RW
       value: MAMMAL
-    desc: '3135 - By all accounts a lovely and bountiful world, with lush forests
-      and jungles covering the better part of its six main continents, Piedmont nonetheless
-      hid a secret that nearly wiped out the first colonists to make planetfall. Rich
-      mineral deposits in the mountains, particularly on the equatorial continents
-      of Victoria and Anistasi, drew the first settlers, who established several mining
-      and refining outposts in the intervening valleys. Three other continents, Austin
-      and Calcutta in the north and Mollasia in the south, boasted fertile lands,
-      well-irrigated by a series of rivers and inland lakes, as well as a diverse
-      ecology of mostly harmless wild beasts. The planet‘s perfect native splendor
-      took a turn for the worse as the population began to expand across Calcutta:
-      an epidemic suddenly broke out in the community of Chun-Gai. The neurological
-      virus, which had evolved from native bacteria in the thick tropical jungles
-      of Calcutta‘s lower latitudes and which spread through a host of vectors, including
-      human contact and airborne infection, came to be known as chungalomeningitis,
-      after the first township in which it was diagnosed. Hundreds of farmers and
-      townsfolk across Calcutta died from the disease, whose initial symptoms included
-      fever and palsy, before doctors could isolate the cause. By that point, the
-      plague had spread to the other major settlements and even offworld. A treatment
-      was eventually found, but only after more than a thousand colonists had perished
-      and another thousand had been crippled by severe brain damage. In the days of
-      the Star League, the Draconis Combine founded a medical research facility on
-      the remote island continent of Cobayne, in the city of Saint Greame. The Piedmont
-      Institute for Disease Control''s primary mandate was to study the dormant but
-      still dangerous chungalomeningitis virus and to discover a more permanent cure
-      for the disease, which continued to claim dozens of lives every year. Unfortunately,
-      the Amaris coup intervened. In an effort to harness chungalomeningitis as a
-      biological weapon, Amaris‘ troops stormed the PIDC and seized several containers
-      of stored virus cultures, which the tattered DCMS troops onplanet attempted
-      to recapture. In the battle that followed, the Usurper‘s desperate forces released
-      a mutated strain of the virus. Unfortunately for both sides, the altered strain
-      was even more virulent than the original, with a cycle that ran three times
-      as fast. Out of control within days of its release, the plague affected nearly
-      every inhabitant on Cobayne and forced the DCMS troops there to call in a nuclear
-      strike on themselves. The entire continent is still a quarantine zone, forbidden
-      even for inbound vessels to fly over. The blackened husk of Saint Greame and
-      the PIDC are still visible, however, on orbital scans of the surface. Centuries
-      later, a cure for the disease continues to elude the grasp of the PIDC‘s successors,
-      including the recently established Piedmont Medical Institute, founded by the
-      Republic of the Sphere in the planetary capital of Curtiss Valley on Victoria.
-      However, preventative treatments have kept new cases of chungalomeningitis galaxywide
-      to a mere handful each year.'
+    desc: '3135 - By all accounts a lovely and bountiful world, with lush forests and jungles covering the better part of its six main continents, Piedmont nonetheless hid a secret that nearly wiped out the first colonists to make planetfall. Rich mineral deposits in the mountains, particularly on the equatorial continents of Victoria and Anistasi, drew the first settlers, who established several mining and refining outposts in the intervening valleys. Three other continents, Austin and Calcutta in the north and Mollasia in the south, boasted fertile lands, well-irrigated by a series of rivers and inland lakes, as well as a diverse ecology of mostly harmless wild beasts. The planet‘s perfect native splendor took a turn for the worse as the population began to expand across Calcutta: an epidemic suddenly broke out in the community of Chun-Gai. The neurological virus, which had evolved from native bacteria in the thick tropical jungles of Calcutta‘s lower latitudes and which spread through a host of vectors, including human contact and airborne infection, came to be known as chungalomeningitis, after the first township in which it was diagnosed. Hundreds of farmers and townsfolk across Calcutta died from the disease, whose initial symptoms included fever and palsy, before doctors could isolate the cause. By that point, the plague had spread to the other major settlements and even offworld. A treatment was eventually found, but only after more than a thousand colonists had perished and another thousand had been crippled by severe brain damage. In the days of the Star League, the Draconis Combine founded a medical research facility on the remote island continent of Cobayne, in the city of Saint Greame. The Piedmont Institute for Disease Control''s primary mandate was to study the dormant but still dangerous chungalomeningitis virus and to discover a more permanent cure for the disease, which continued to claim dozens of lives every year. Unfortunately, the Amaris coup intervened. In an effort to harness chungalomeningitis as a biological weapon, Amaris‘ troops stormed the PIDC and seized several containers of stored virus cultures, which the tattered DCMS troops onplanet attempted to recapture. In the battle that followed, the Usurper‘s desperate forces released a mutated strain of the virus. Unfortunately for both sides, the altered strain was even more virulent than the original, with a cycle that ran three times as fast. Out of control within days of its release, the plague affected nearly every inhabitant on Cobayne and forced the DCMS troops there to call in a nuclear strike on themselves. The entire continent is still a quarantine zone, forbidden even for inbound vessels to fly over. The blackened husk of Saint Greame and the PIDC are still visible, however, on orbital scans of the surface. Centuries later, a cure for the disease continues to elude the grasp of the PIDC‘s successors, including the recently established Piedmont Medical Institute, founded by the Republic of the Sphere in the planetary capital of Curtiss Valley on Victoria. However, preventative treatments have kept new cases of chungalomeningitis galaxywide to a mere handful each year.'
     landmass:
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Anistasi
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Austin
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Calcutta
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Cobayne
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Mollasia
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Victoria
         capital:
-          source: MWDA world profiles
+          source: DA:RW
           value: Curtiss Valley
     satellite:
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Blanche
         size: medium
         icon: oddmoon2
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Calliope
         size: medium
         icon: oddmoon1
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Lassen
         size: medium
         icon: oddmoon3
@@ -165,6 +125,12 @@ planet:
       - date: '2317-01-01'
         socioIndustrial: D-D-D-D-F
       - date: '2319-03-25'
+        # administration: DC | Benjamin Military District | Ashio Prefecture
+        # administration: DC | Benjamin Military District | Ashio Prefecture
+        # administration: DC | Benjamin Military District | Ashio Prefecture
+        # administration: DC | Benjamin Military District | Ashio Prefecture
+        # administration: DC | Benjamin Military District | Ashio Prefecture
+        # administration: DC | Benjamin Military District | Ashio Prefecture
         faction:
           source: canon
           value:
@@ -338,7 +304,25 @@ planet:
         population: 4759219392.0
       - date: '3080-01-01'
         population: 4770655236.0
+      - date: '3081-01-01'
+        # administration: ROS | Prefecture II
+        # administration: ROS | Prefecture II
+        # administration: ROS | Prefecture II
+        # administration: ROS | Prefecture II
+        # administration: ROS | Prefecture II
+        # administration: ROS | Prefecture II
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ROS
       - date: '3081-11-27'
+        # administration: ROS | Prefecture II
+        # administration: ROS | Prefecture II
+        # administration: ROS | Prefecture II
+        # administration: ROS | Prefecture II
+        # administration: ROS | Prefecture II
+        # administration: ROS | Prefecture II
         faction:
           source: canon
           value:
@@ -357,7 +341,25 @@ planet:
         population: 4817637494.0
       - date: '3132-08-07'
         hpg: X
+      - date: '3135-01-01'
+        # administration: DC | Benjamin Military District | Algedi Prefecture
+        # administration: DC | Benjamin Military District | Algedi Prefecture
+        # administration: DC | Benjamin Military District | Algedi Prefecture
+        # administration: DC | Benjamin Military District | Algedi Prefecture
+        # administration: DC | Benjamin Military District | Algedi Prefecture
+        # administration: DC | Benjamin Military District | Algedi Prefecture
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - DC
       - date: '3135-03-18'
+        # administration: DC | Dieron Military District | Ashio Prefecture
+        # administration: DC | Dieron Military District | Ashio Prefecture
+        # administration: DC | Dieron Military District | Ashio Prefecture
+        # administration: DC | Dieron Military District | Ashio Prefecture
+        # administration: DC | Dieron Military District | Ashio Prefecture
+        # administration: DC | Dieron Military District | Ashio Prefecture
         faction:
           source: canon
           value:

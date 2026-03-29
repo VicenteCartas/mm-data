@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,15 +16,17 @@
 # affiliated with Microsoft.
 
 id: Tellman's Mistake
-sucsId: 2510
+sucsId: 2511
 xcood: -243.532
 ycood: -310.772
 spectralType:
-  source: House Marik, pg. 164
+  source: HMSB
   value: F6VI
+  page: 164
 primarySlot:
-  source: House Marik, pg. 164
+  source: HMSB
   value: 2
+  page: 164
 event:
   - date: '2560-08-29'
     zenithCharge: yes
@@ -52,8 +54,9 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 1.44
     sysPos:
-      source: House Marik, pg. 164
+      source: HMSB
       value: 2
+      page: 164
     icon: green50
     pressure: THIN
     atmosphere: BREATHABLE
@@ -66,20 +69,10 @@ planet:
     temperature: 33
     water: 43
     lifeForm:
-      source: House Marik, pg. 164
+      source: HMSB
       value: MAMMAL
-    desc: Tellman’s Mistake is a backwater planet located near the Free Worlds League
-      Periphery with an economy based on agriculture. The planet was settled entirely
-      based on a comfortable climate and fertile soil. Initial settlers encountered
-      a problem with a native bat-like species that was prone to attacking humans.
-      While the bite was only momentarily painful the bites often resulted in fevers
-      and illness in those bit. After several people died the colonists began to question
-      settling on the planet, fortunately most people survived and it was soon discovered
-      that for most people the bat’s saliva actually worked to strengthen their immune
-      system after the initial fever, unfortunately in rare cases, those with a rare
-      blood type had an adverse reaction. The planet has almost no industry of its
-      own and the planet has a very low tech infrastructure. Almost everything must
-      be imported, including meat as none of the native species are edible by humans.
+      page: 164
+    desc: Tellman’s Mistake is a backwater planet located near the Free Worlds League Periphery with an economy based on agriculture. The planet was settled entirely based on a comfortable climate and fertile soil. Initial settlers encountered a problem with a native bat-like species that was prone to attacking humans. While the bite was only momentarily painful the bites often resulted in fevers and illness in those bit. After several people died the colonists began to question settling on the planet, fortunately most people survived and it was soon discovered that for most people the bat’s saliva actually worked to strengthen their immune system after the initial fever, unfortunately in rare cases, those with a rare blood type had an adverse reaction. The planet has almost no industry of its own and the planet has a very low tech infrastructure. Almost everything must be imported, including meat as none of the native species are edible by humans.
     smallMoons: 4
     landmass:
       - name: Lacroix-Saint-Ouen
@@ -89,6 +82,12 @@ planet:
       - name: New Euless
     event:
       - date: '2545-12-09'
+        # administration: FWL | Principality of Regulus
+        # administration: FWL | Principality of Regulus
+        # administration: FWL | Principality of Regulus
+        # administration: FWL | Principality of Regulus
+        # administration: FWL | Principality of Regulus
+        # administration: FWL | Principality of Regulus
         faction:
           source: canon
           value:
@@ -224,6 +223,12 @@ planet:
         population: 266406034.0
       - date: '3080-01-01'
         population: 267580803.0
+      - date: '3081-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3081-09-17'
         faction:
           source: canon
@@ -239,6 +244,12 @@ planet:
         population: 270432245.0
       - date: '3120-01-01'
         population: 270107921.0
+      - date: '3130-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - RCM
       - date: '3130-10-31'
         faction:
           source: canon
@@ -252,12 +263,35 @@ planet:
       - date: '3140-01-01'
         population: 270107921.0
       - date: '3145-01-01'
+        # administration: FWL | Rim Commonality
+        # administration: FWL | Rim Commonality
+        # administration: FWL | Rim Commonality
+        # administration: FWL | Rim Commonality
+        # administration: FWL | Rim Commonality
+        # administration: FWL | Rim Commonality
         population: 269945905.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FWL
       - date: '3151-01-01'
         faction:
           source: sucs
           value:
             - MOC
+      - date: '3152-01-01'
+        # administration: FWL | Rim Commonality
+        # administration: FWL | Rim Commonality
+        # administration: FWL | Rim Commonality
+        # administration: FWL | Rim Commonality
+        # administration: FWL | Rim Commonality
+        # administration: FWL | Rim Commonality
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FWL
       - date: '3152-06-01'
         faction:
           source: canon

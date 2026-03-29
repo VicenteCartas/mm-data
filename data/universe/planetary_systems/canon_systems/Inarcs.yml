@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,15 +16,17 @@
 # affiliated with Microsoft.
 
 id: Inarcs
-sucsId: 1191
+sucsId: 1192
 xcood: -295.18
 ycood: 337.543
 spectralType:
-  source: 'Handbook: House Steiner, pg. 81'
+  source: 'HB:HS'
   value: K9III
+  page: 81
 primarySlot:
-  source: 'Handbook: House Steiner, pg. 81'
+  source: 'HB:HS'
   value: 5
+  page: 81
 event:
   - date: '2673-01-13'
     nadirCharge: yes
@@ -106,59 +108,64 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.5
     sysPos:
-      source: 'Handbook: House Steiner, pg. 81'
+      source: 'HB:HS'
       value: 5
+      page: 81
     icon: green2
     pressure:
-      source: 'Handbook: House Steiner, pg. 81'
+      source: 'HB:HS'
       value: STANDARD
+      page: 81
     atmosphere:
-      source: 'Handbook: House Steiner, pg. 81'
+      source: 'HB:HS'
       value: BREATHABLE
+      page: 81
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'Handbook: House Steiner, pg. 81'
+      source: 'HB:HS'
       value: 0.92
+      page: 81
     diameter: 10787
     density: 5.993619874525
     dayLength: 26
     yearLength: 0.8
     temperature:
-      source: 'Handbook: House Steiner, pg. 81'
+      source: 'HB:HS'
       value: 45
+      page: 81
     water:
-      source: 'Handbook: House Steiner, pg. 81'
+      source: 'HB:HS'
       value: 60
+      page: 81
     lifeForm:
-      source: 'Handbook: House Steiner, pg. 81'
+      source: 'HB:HS'
       value: AMPHIBIAN
-    desc: Insel Desteufels (“Devil’s Island”) is the only continent set in a vast
-      ocean peppered with island chains. Inarcs planetary capital is Utopia. The major
-      industry on Inarcs is the extraction of mineral resources from the many islands
-      dotting the oceans. Inarcs started out as a Star League penal colony due to
-      a clerical error that listed the planet as uninhabitable. Close to 100,000 criminals
-      and agitators were exported to the world, who in turn built a thriving colony.
-      With this accomplishment the league pardoned the colonists, opening the world
-      to off-world commerce. Blackstone Industries is located in the snowy mountain
-      city of Erewhon on the Insel Desteufels continent. Inarcs is also home to the
-      conventional fighter manufacturer Scoltek Associates. Their plant is also located
-      on Insel Desteufels, but at the small town of Hellmouth in the flatlands of
-      the continent.
+      page: 81
+    desc: Insel Desteufels (“Devil’s Island”) is the only continent set in a vast ocean peppered with island chains. Inarcs planetary capital is Utopia. The major industry on Inarcs is the extraction of mineral resources from the many islands dotting the oceans. Inarcs started out as a Star League penal colony due to a clerical error that listed the planet as uninhabitable. Close to 100,000 criminals and agitators were exported to the world, who in turn built a thriving colony. With this accomplishment the league pardoned the colonists, opening the world to off-world commerce. Blackstone Industries is located in the snowy mountain city of Erewhon on the Insel Desteufels continent. Inarcs is also home to the conventional fighter manufacturer Scoltek Associates. Their plant is also located on Insel Desteufels, but at the small town of Hellmouth in the flatlands of the continent.
     landmass:
       - name:
-          source: 'Handbook: House Steiner, pg. 81'
+          source: 'HB:HS'
           value: Insel Desteufels
+          page: 81
         capital:
-          source: 'Handbook: House Steiner, pg. 81'
+          source: 'HB:HS'
           value: Utopia
+          page: 81
     satellite:
       - name:
-          source: 'Handbook: House Steiner, pg. 81'
+          source: 'HB:HS'
           value: Agiruur
+          page: 81
         size: medium
         icon: rock12
     event:
       - date: '2614-02-07'
+        # administration: RWR | Apollo Province
+        # administration: RWR | Apollo Province
+        # administration: RWR | Apollo Province
+        # administration: RWR | Apollo Province
+        # administration: RWR | Apollo Province
+        # administration: RWR | Apollo Province
         faction:
           source: canon
           value:
@@ -206,6 +213,12 @@ planet:
       - date: '2770-01-01'
         population: 786409331.0
       - date: '2779-10-14'
+        # administration: LA | Protectorate of Donegal | Coventry Province
+        # administration: LA | Protectorate of Donegal | Coventry Province
+        # administration: LA | Protectorate of Donegal | Coventry Province
+        # administration: LA | Protectorate of Donegal | Coventry Province
+        # administration: LA | Protectorate of Donegal | Coventry Province
+        # administration: LA | Protectorate of Donegal | Coventry Province
         faction:
           source: canon
           value:
@@ -268,8 +281,25 @@ planet:
       - date: '3036-01-01'
         socioIndustrial: B-B-C-B-C
       - date: '3040-01-01'
+        # administration: FC | Periphery March | Tsarahavana Operational Area
+        # administration: FC | Periphery March | Tsarahavana Operational Area
+        # administration: FC | Periphery March | Tsarahavana Operational Area
+        # administration: FC | Periphery March | Tsarahavana Operational Area
+        # administration: FC | Periphery March | Tsarahavana Operational Area
+        # administration: FC | Periphery March | Tsarahavana Operational Area
         population: 640079986.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
+        # administration: FC | Periphery March | Tsarahavana Operational Area
+        # administration: FC | Periphery March | Tsarahavana Operational Area
+        # administration: FC | Periphery March | Tsarahavana Operational Area
+        # administration: FC | Periphery March | Tsarahavana Operational Area
+        # administration: FC | Periphery March | Tsarahavana Operational Area
+        # administration: FC | Periphery March | Tsarahavana Operational Area
         faction:
           source: canon
           value:
@@ -280,7 +310,25 @@ planet:
           value: A-A-B-A-B
       - date: '3050-01-01'
         population: 645156644.0
+      - date: '3057-01-01'
+        # administration: LA | Periphery March | Tsarahavana Operational Area
+        # administration: LA | Periphery March | Tsarahavana Operational Area
+        # administration: LA | Periphery March | Tsarahavana Operational Area
+        # administration: LA | Periphery March | Tsarahavana Operational Area
+        # administration: LA | Periphery March | Tsarahavana Operational Area
+        # administration: LA | Periphery March | Tsarahavana Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '3057-09-18'
+        # administration: LA | Coventry Province | Melissia Theater
+        # administration: LA | Coventry Province | Melissia Theater
+        # administration: LA | Coventry Province | Melissia Theater
+        # administration: LA | Coventry Province | Melissia Theater
+        # administration: LA | Coventry Province | Melissia Theater
+        # administration: LA | Coventry Province | Melissia Theater
         faction:
           source: canon
           value:
@@ -299,10 +347,27 @@ planet:
           value:
             - FC
       - date: '3067-01-01'
+        # administration: LA | Coventry Province | Melissia Theater
+        # administration: LA | Coventry Province | Melissia Theater
+        # administration: LA | Coventry Province | Melissia Theater
+        # administration: LA | Coventry Province | Melissia Theater
+        # administration: LA | Coventry Province | Melissia Theater
+        # administration: LA | Coventry Province | Melissia Theater
         population:
           source: canon
           value: 655300000.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '3067-04-20'
+        # administration: LA | Coventry Province | Melissia Theater
+        # administration: LA | Coventry Province | Melissia Theater
+        # administration: LA | Coventry Province | Melissia Theater
+        # administration: LA | Coventry Province | Melissia Theater
+        # administration: LA | Coventry Province | Melissia Theater
+        # administration: LA | Coventry Province | Melissia Theater
         faction:
           source: canon
           value:

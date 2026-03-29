@@ -1,0 +1,371 @@
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
+#
+# NOTICE: The MegaMek organization is a non-profit group of volunteers
+# creating free software for the BattleTech community.
+#
+# MechWarrior, BattleMech, `Mech and AeroTech are registered trademarks
+# of The Topps Company, Inc. All Rights Reserved.
+#
+# Catalyst Game Labs and the Catalyst Game Labs logo are trademarks of
+# InMediaRes Productions, LLC.
+#
+# MechWarrior Copyright Microsoft Corporation. MegaMek Data was created under
+# Microsoft's "Game Content Usage Rules"
+# <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
+# affiliated with Microsoft.
+
+id: Sanurcha
+sucsId: 2232
+xcood: 217.524
+ycood: -302.842
+spectralType: G7V
+primarySlot: 2
+planet:
+  - type: ICE_GIANT
+    orbitalDist: 0.36
+    sysPos: 1
+    icon: iceg6
+    pressure: VERY_HIGH
+    atmosphere: TOXIC_POISON
+    composition: Hydrogen and Helium, plus trace gases
+    gravity: 0.8
+    diameter: 35000
+    density: 1.6
+    dayLength: 11
+    yearLength: 1
+    smallMoons: 7
+    name: Sanurcha I
+  - type: TERRESTRIAL
+    orbitalDist: 0.63
+    sysPos: 2
+    icon: green15
+    pressure: STANDARD
+    atmosphere: BREATHABLE
+    composition: Nitrogen and Oxygen, plus trace gases
+    gravity: 1.25
+    diameter: 12900
+    density: 6.8337
+    dayLength: 24
+    yearLength: 1.1
+    temperature: 33
+    water: 36
+    lifeForm: AMPHIBIAN
+    name: Sanurcha
+    event:
+      - date: '2317-01-01'
+        population: 44040.0
+        socioIndustrial: D-D-A-D-F
+      - date: '2320-01-01'
+        population: 65322.0
+      - date: '2330-01-01'
+        population: 213714.0
+      - date: '2340-01-01'
+        population: 584592.0
+      - date: '2350-01-01'
+        population: 1376704.0
+      - date: '2360-01-01'
+        population: 2846362.0
+      - date: '2366-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
+      - date: '2370-01-01'
+        population: 5309888.0
+      - date: '2380-01-01'
+        population: 8993674.0
+      - date: '2390-01-01'
+        population: 14140071.0
+      - date: '2400-01-01'
+        population: 20746554.0
+      - date: '2410-01-01'
+        population: 28848794.0
+      - date: '2420-01-01'
+        population: 38094775.0
+      - date: '2430-01-01'
+        population: 48142988.0
+      - date: '2440-01-01'
+        population: 58714130.0
+      - date: '2450-01-01'
+        population: 69938195.0
+      - date: '2460-01-01'
+        population: 81469156.0
+      - date: '2470-01-01'
+        population: 92454750.0
+      - date: '2480-01-01'
+        population: 103083585.0
+      - date: '2490-01-01'
+        population: 112826922.0
+      - date: '2500-01-01'
+        population: 122073809.0
+      - date: '2510-01-01'
+        population: 131429217.0
+      - date: '2520-01-01'
+        population: 140485286.0
+      - date: '2530-01-01'
+        population: 149246096.0
+      - date: '2540-01-01'
+        population: 156961803.0
+      - date: '2550-01-01'
+        population: 163888980.0
+      - date: '2560-01-01'
+        population: 170625136.0
+      - date: '2570-01-01'
+        population: 177154095.0
+      - date: '2571-01-01'
+        # administration: FS | Capellan March | Taygeta Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FS
+      - date: '2580-01-01'
+        population: 183003701.0
+      - date: '2590-01-01'
+        population: 187972374.0
+      - date: '2600-01-01'
+        population: 192494867.0
+      - date: '2610-01-01'
+        population: 195672538.0
+      - date: '2620-01-01'
+        population: 198773571.0
+      - date: '2625-01-01'
+        socioIndustrial: C-D-A-C-D
+      - date: '2630-01-01'
+        population: 201570951.0
+      - date: '2640-01-01'
+        population: 204838994.0
+      - date: '2650-01-01'
+        population: 208436349.0
+      - date: '2660-01-01'
+        population: 210767685.0
+      - date: '2670-01-01'
+        population: 213353843.0
+      - date: '2680-01-01'
+        population: 215757748.0
+      - date: '2690-01-01'
+        population: 217431796.0
+      - date: '2700-01-01'
+        population: 219782405.0
+      - date: '2710-01-01'
+        population: 222404778.0
+      - date: '2720-01-01'
+        population: 224649298.0
+      - date: '2730-01-01'
+        population: 226291484.0
+      - date: '2740-01-01'
+        population: 227284328.0
+      - date: '2750-01-01'
+        population: 229182563.0
+      - date: '2760-01-01'
+        population: 232064078.0
+      - date: '2770-01-01'
+        population: 234749337.0
+      - date: '2780-01-01'
+        population: 237427196.0
+      - date: '2790-01-01'
+        population: 195458117.0
+      - date: '2800-01-01'
+        population: 63850828.0
+      - date: '2810-01-01'
+        population: 18230263.0
+      - date: '2820-01-01'
+        population: 9394200.0
+      - date: '2830-01-01'
+        population: 4409974.0
+      - date: '2840-01-01'
+        population: 1885913.0
+      - date: '2843-01-01'
+        socioIndustrial: D-D-B-C-F
+      - date: '2850-01-01'
+        population: 876191.0
+      - date: '2860-01-01'
+        population: 424299.0
+      - date: '2870-01-01'
+        population: 175898.0
+      - date: '2880-01-01'
+        population: 87868.0
+      - date: '2890-01-01'
+        population: 0.0
+        socioIndustrial: X-X-X-X-X
+      - date: '3025-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ABN
+  - type: ICE_GIANT
+    orbitalDist: 0.9
+    sysPos: 3
+    icon: iceg16
+    pressure: VERY_HIGH
+    atmosphere: TOXIC_POISON
+    composition: Hydrogen and Helium, plus trace gases
+    gravity: 0.92
+    diameter: 50000
+    density: 1.3
+    dayLength: 11
+    yearLength: 1.3
+    ring: true
+    smallMoons: 11
+    satellite:
+      - name: 3-M1
+        size: medium
+        icon: rock1
+      - name: 3-M2
+        size: medium
+        icon: rock2
+      - name: 3-M3
+        size: medium
+        icon: rock3
+    name: Sanurcha III
+  - type: GAS_GIANT
+    orbitalDist: 1.44
+    sysPos: 4
+    icon: gasg29
+    pressure: VERY_HIGH
+    atmosphere: TOXIC_POISON
+    composition: Hydrogen and Helium, plus trace gases
+    gravity: 1.59
+    diameter: 80000
+    density: 1.4
+    dayLength: 13
+    yearLength: 2
+    ring: true
+    smallMoons: 20
+    satellite:
+      - name: 4-M1
+        size: medium
+        icon: rock1
+      - name: 4-M2
+        size: medium
+        icon: rock2
+    name: Sanurcha IV
+  - type: ICE_GIANT
+    orbitalDist: 2.52
+    sysPos: 5
+    icon: iceg8
+    pressure: VERY_HIGH
+    atmosphere: TOXIC_POISON
+    composition: Hydrogen and Helium, plus trace gases
+    gravity: 1.21
+    diameter: 50000
+    density: 1.7
+    dayLength: 17
+    yearLength: 4.1
+    smallMoons: 8
+    satellite:
+      - name: 5-L1
+        size: large
+        icon: rock1
+      - name: 5-L2
+        size: large
+        icon: rock2
+    name: Sanurcha V
+  - type: GAS_GIANT
+    orbitalDist: 4.68
+    sysPos: 6
+    icon: gasg8
+    pressure: VERY_HIGH
+    atmosphere: TOXIC_POISON
+    composition: Hydrogen and Helium, plus trace gases
+    gravity: 1.99
+    diameter: 140000
+    density: 1
+    dayLength: 19
+    yearLength: 10.2
+    smallMoons: 17
+    satellite:
+      - name: 6-L1
+        size: large
+        icon: rock1
+      - name: 6-L2
+        size: large
+        icon: rock2
+      - name: 6-M1
+        size: medium
+        icon: rock1
+      - name: 6-M2
+        size: medium
+        icon: rock2
+    name: Sanurcha VI
+  - type: ICE_GIANT
+    orbitalDist: 9
+    sysPos: 7
+    icon: iceg18
+    pressure: VERY_HIGH
+    atmosphere: TOXIC_POISON
+    composition: Hydrogen and Helium, plus trace gases
+    gravity: 0.8
+    diameter: 35000
+    density: 1.6
+    dayLength: 14
+    yearLength: 27
+    smallMoons: 7
+    satellite:
+      - name: 7-G1
+        size: giant
+        icon: oddmoon1
+    name: Sanurcha VII
+  - type: ICE_GIANT
+    orbitalDist: 17.64
+    sysPos: 8
+    icon: iceg5
+    pressure: VERY_HIGH
+    atmosphere: TOXIC_POISON
+    composition: Hydrogen and Helium, plus trace gases
+    gravity: 1.25
+    diameter: 55000
+    density: 1.6
+    dayLength: 11
+    yearLength: 74.1
+    ring: true
+    smallMoons: 7
+    satellite:
+      - name: 8-L1
+        size: large
+        icon: rock1
+      - name: 8-L2
+        size: large
+        icon: rock2
+      - name: 8-M1
+        size: medium
+        icon: rock1
+      - name: 8-M2
+        size: medium
+        icon: rock2
+    name: Sanurcha VIII
+  - type: GAS_GIANT
+    orbitalDist: 34.92
+    sysPos: 9
+    icon: gasg29
+    pressure: VERY_HIGH
+    atmosphere: TOXIC_POISON
+    composition: Hydrogen and Helium, plus trace gases
+    gravity: 1.88
+    diameter: 110000
+    density: 1.2
+    dayLength: 11
+    yearLength: 206.4
+    ring: true
+    smallMoons: 21
+    satellite:
+      - name: 9-L1
+        size: large
+        icon: rock1
+      - name: 9-L2
+        size: large
+        icon: rock2
+      - name: 9-M1
+        size: medium
+        icon: rock1
+      - name: 9-M2
+        size: medium
+        icon: rock2
+      - name: 9-M3
+        size: medium
+        icon: rock3
+    name: Sanurcha IX
+event: [ ]

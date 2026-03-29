@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Wheel
-sucsId: 2753
+sucsId: 2754
 xcood: -30.512
 ycood: 264.911
 spectralType: F3V
@@ -109,6 +109,12 @@ planet:
         capital: Guyra
     event:
       - date: '2637-01-23'
+        # administration: LA | Tamar Pact | Tamar Domains
+        # administration: LA | Tamar Pact | Tamar Domains
+        # administration: LA | Tamar Pact | Tamar Domains
+        # administration: LA | Tamar Pact | Tamar Domains
+        # administration: LA | Tamar Pact | Tamar Domains
+        # administration: LA | Tamar Pact | Tamar Domains
         faction:
           source: canon
           value:
@@ -175,6 +181,12 @@ planet:
       - date: '2890-01-01'
         population: 3604331967.0
       - date: '2900-01-28'
+        # administration: DC | Rasalhague Military District | Rubigen Prefecture
+        # administration: DC | Rasalhague Military District | Rubigen Prefecture
+        # administration: DC | Rasalhague Military District | Rubigen Prefecture
+        # administration: DC | Rasalhague Military District | Rubigen Prefecture
+        # administration: DC | Rasalhague Military District | Rubigen Prefecture
+        # administration: DC | Rasalhague Military District | Rubigen Prefecture
         faction:
           source: canon
           value:
@@ -213,6 +225,18 @@ planet:
             - DC
       - date: '3028-01-01'
         socioIndustrial: C-B-D-C-C
+      - date: '3030-01-01'
+        # administration: LA | Tamar Pact | Tamar Domains
+        # administration: LA | Tamar Pact | Tamar Domains
+        # administration: LA | Tamar Pact | Tamar Domains
+        # administration: LA | Tamar Pact | Tamar Domains
+        # administration: LA | Tamar Pact | Tamar Domains
+        # administration: LA | Tamar Pact | Tamar Domains
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '3030-06-17'
         faction:
           source: canon
@@ -225,7 +249,18 @@ planet:
           value:
             - FRR
       - date: '3040-01-01'
+        # administration: FR | Skandia Province
+        # administration: FR | Skandia Province
+        # administration: FR | Skandia Province
+        # administration: FR | Skandia Province
+        # administration: FR | Skandia Province
+        # administration: FR | Skandia Province
         population: 3484735861.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FR
       - date: '3047-01-01'
         socioIndustrial: B-A-D-B-B
       - date: '3050-01-01'
@@ -257,12 +292,24 @@ planet:
         hpg: X
       - date: '3140-01-01'
         population: 3597690991.0
+      - date: '3145-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CJF
       - date: '3145-10-17'
         faction:
           source: canon
           value:
             - CJF
         population: 3599850253.0
+      - date: '3151-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CHH
       - date: '3151-02-15'
         faction:
           source: canon

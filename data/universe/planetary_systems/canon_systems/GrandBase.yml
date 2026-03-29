@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,15 +16,17 @@
 # affiliated with Microsoft.
 
 id: Grand Base
-sucsId: 992
+sucsId: 993
 xcood: 46.002
 ycood: -298.878
 spectralType:
-  source: 'Handbook: House Liao, pg. 78'
+  source: 'HB:HL'
   value: G5IV
+  page: 78
 primarySlot:
-  source: 'Handbook: House Liao, pg. 78'
+  source: 'HB:HL'
   value: 4
+  page: 78
 event:
   - date: '2360-03-27'
     zenithCharge: yes
@@ -103,32 +105,39 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 1.44
     sysPos:
-      source: 'Handbook: House Liao, pg. 78'
+      source: 'HB:HL'
       value: 4
+      page: 78
     icon: green27
     pressure:
-      source: 'Handbook: House Liao, pg. 78'
+      source: 'HB:HL'
       value: STANDARD
+      page: 78
     atmosphere:
-      source: 'Handbook: House Liao, pg. 78'
+      source: 'HB:HL'
       value: BREATHABLE
+      page: 78
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'Handbook: House Liao, pg. 78'
+      source: 'HB:HL'
       value: 1.1
+      page: 78
     diameter: 15417
     density: 5.01405795542
     dayLength: 22
     yearLength: 2.0
     temperature:
-      source: 'Handbook: House Liao, pg. 78'
+      source: 'HB:HL'
       value: 36
+      page: 78
     water:
-      source: 'Handbook: House Liao, pg. 78'
+      source: 'HB:HL'
       value: 34
+      page: 78
     lifeForm:
-      source: 'Handbook: House Liao, pg. 78'
+      source: 'HB:HL'
       value: REPTILE
+      page: 78
     desc: |-
       Grand Base is the personal holding of the Duke of Thomas in perpetuity. It is a major military staging, training and repair facility for the Confederation. Grand Base has traditionally been one of the Confederation's largest ‘Mech production facilities, right behind Tikonov. At all times it is garrisoned by two Sian Commonality reserve units, one Warrior House regiment, and supported by local militia, aerospace fighter and naval support units. Additionally, it is home-base of the elite Death Commandos.
 
@@ -138,20 +147,22 @@ planet:
       Earthwerks Limited
     landmass:
       - name:
-          source: 'Objective Raids: Capellan Confederation'
+          source: 'OR'
           value: Behemoth
         capital:
-          source: 'Objective Raids: Capellan Confederation'
+          source: 'OR'
           value: Hudson
     satellite:
       - name:
-          source: 'Handbook: House Liao, pg. 78'
+          source: 'HB:HL'
           value: Capetown
+          page: 78
         size: medium
         icon: rock6
       - name:
-          source: 'Handbook: House Liao, pg. 78'
+          source: 'HB:HL'
           value: Hightower
+          page: 78
         size: medium
         icon: rock3
     event:
@@ -182,6 +193,12 @@ planet:
         population: 25122089.0
       - date: '2270-01-01'
         population: 46985417.0
+      - date: '2271-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '2280-01-01'
         population: 81028638.0
       - date: '2290-01-01'
@@ -200,7 +217,19 @@ planet:
         population: 832182627.0
       - date: '2360-01-01'
         population: 1008469561.0
+      - date: '2366-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - SiS
       - date: '2367-07-01'
+        # administration: CC | Sian Commonality | Region 8
+        # administration: CC | Sian Commonality | Region 8
+        # administration: CC | Sian Commonality | Region 8
+        # administration: CC | Sian Commonality | Region 8
+        # administration: CC | Sian Commonality | Region 8
+        # administration: CC | Sian Commonality | Region 8
         faction:
           source: canon
           value:
@@ -362,6 +391,12 @@ planet:
             - DA
             - CC
       - date: '3031-04-17'
+        # administration: CC | Sian Commonality | Region 8
+        # administration: CC | Sian Commonality | Region 8
+        # administration: CC | Sian Commonality | Region 8
+        # administration: CC | Sian Commonality | Region 8
+        # administration: CC | Sian Commonality | Region 8
+        # administration: CC | Sian Commonality | Region 8
         faction:
           source: canon
           value:

@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Hammer
-sucsId: 1048
+sucsId: 1049
 xcood: -369.912
 ycood: -142.769
 spectralType: K7V
@@ -53,6 +53,12 @@ planet:
         capital: Vega
     event:
       - date: '2607-08-10'
+        # administration: FWL | Abbey District
+        # administration: FWL | Abbey District
+        # administration: FWL | Abbey District
+        # administration: FWL | Abbey District
+        # administration: FWL | Abbey District
+        # administration: FWL | Abbey District
         faction:
           source: canon
           value:
@@ -172,6 +178,12 @@ planet:
         population: 1010355856.0
       - date: '3070-01-01'
         population: 1023064569.0
+      - date: '3079-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - DTA
       - date: '3079-05-23'
         faction:
           source: canon
@@ -193,8 +205,25 @@ planet:
       - date: '3140-01-01'
         population: 1101422583.0
       - date: '3145-01-01'
+        # administration: FWL | Duchy of Tammarind-Abbey
+        # administration: FWL | Duchy of Tammarind-Abbey
+        # administration: FWL | Duchy of Tammarind-Abbey
+        # administration: FWL | Duchy of Tammarind-Abbey
+        # administration: FWL | Duchy of Tammarind-Abbey
+        # administration: FWL | Duchy of Tammarind-Abbey
         population: 1105173794.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FWL
       - date: '3151-01-01'
+        # administration: FWL | Duchy of Tammarind-Abbey
+        # administration: FWL | Duchy of Tammarind-Abbey
+        # administration: FWL | Duchy of Tammarind-Abbey
+        # administration: FWL | Duchy of Tammarind-Abbey
+        # administration: FWL | Duchy of Tammarind-Abbey
+        # administration: FWL | Duchy of Tammarind-Abbey
         faction:
           source: sucs
           value:

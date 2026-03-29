@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: Cogdell
-sucsId: 2891
+sucsId: 2892
 xcood: 521.902
 ycood: -141.512
 spectralType:
-  source: House Davion
+  source: HB:HD
   value: G5V
 primarySlot:
-  source: House Davion
+  source: HB:HD
   value: 4
 planet:
   - name: Clayton
@@ -82,7 +82,7 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.63
     sysPos:
-      source: House Davion
+      source: HB:HD
       value: 4
     icon: green10
     pressure: STANDARD
@@ -96,25 +96,24 @@ planet:
     temperature: 41
     water: 26
     lifeForm:
-      source: House Davion
+      source: HB:HD
       value: REPTILE
-    desc: Cogdell was originally ‘settled’ when a group of convicts from the Periphery
-      were dumped on the planet without supplies. The prisoners managed to scrape
-      together a semi-anarchic society with no real structure. When the planet was
-      absorbed by the Federated Suns prior to the 3rd Succession War the Davion government
-      appointed the governor from the people on the planet, selecting a member of
-      the well-known Sims family. However, as the years passed the Simms family became
-      more pro-Suns and and pro-Nobility, this has unfortunately caused major problems
-      on the planet as the citizens want to maintain the status quo of semi-anarchy.
+    desc: Cogdell was originally ‘settled’ when a group of convicts from the Periphery were dumped on the planet without supplies. The prisoners managed to scrape together a semi-anarchic society with no real structure. When the planet was absorbed by the Federated Suns prior to the 3rd Succession War the Davion government appointed the governor from the people on the planet, selecting a member of the well-known Sims family. However, as the years passed the Simms family became more pro-Suns and and pro-Nobility, this has unfortunately caused major problems on the planet as the citizens want to maintain the status quo of semi-anarchy.
     smallMoons: 5
     landmass:
       - name: North Reading I
         capital:
-          source: House Davion
+          source: HB:HD
           value: Hangman's Death
       - name: North Reading II
     event:
       - date: '2865-05-01'
+        # administration: FS | Crucis March | Minette Operational Area
+        # administration: FS | Crucis March | Minette Operational Area
+        # administration: FS | Crucis March | Minette Operational Area
+        # administration: FS | Crucis March | Minette Operational Area
+        # administration: FS | Crucis March | Minette Operational Area
+        # administration: FS | Crucis March | Minette Operational Area
         faction:
           source: canon
           value:
@@ -160,6 +159,12 @@ planet:
       - date: '3020-01-01'
         population: 7826450.0
       - date: '3025-08-29'
+        # administration: FS | Crucis March | Minette Operational Area
+        # administration: FS | Crucis March | Minette Operational Area
+        # administration: FS | Crucis March | Minette Operational Area
+        # administration: FS | Crucis March | Minette Operational Area
+        # administration: FS | Crucis March | Minette Operational Area
+        # administration: FS | Crucis March | Minette Operational Area
         faction:
           source: canon
           value:
@@ -167,8 +172,25 @@ planet:
       - date: '3030-01-01'
         population: 7905257.0
       - date: '3040-01-01'
+        # administration: FC | Crucis March | Minette Operational Area
+        # administration: FC | Crucis March | Minette Operational Area
+        # administration: FC | Crucis March | Minette Operational Area
+        # administration: FC | Crucis March | Minette Operational Area
+        # administration: FC | Crucis March | Minette Operational Area
+        # administration: FC | Crucis March | Minette Operational Area
         population: 7955011.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
+        # administration: FC | Crucis March | Minette Operational Area
+        # administration: FC | Crucis March | Minette Operational Area
+        # administration: FC | Crucis March | Minette Operational Area
+        # administration: FC | Crucis March | Minette Operational Area
+        # administration: FC | Crucis March | Minette Operational Area
+        # administration: FC | Crucis March | Minette Operational Area
         faction:
           source: canon
           value:
@@ -179,7 +201,25 @@ planet:
         population: 7976910.0
       - date: '3060-01-01'
         population: 8030256.0
+      - date: '3067-01-01'
+        # administration: FS | Crucis March | Minette Operational Area
+        # administration: FS | Crucis March | Minette Operational Area
+        # administration: FS | Crucis March | Minette Operational Area
+        # administration: FS | Crucis March | Minette Operational Area
+        # administration: FS | Crucis March | Minette Operational Area
+        # administration: FS | Crucis March | Minette Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FS
       - date: '3067-04-20'
+        # administration: FS | Crucis March | Minette Operational Area
+        # administration: FS | Crucis March | Minette Operational Area
+        # administration: FS | Crucis March | Minette Operational Area
+        # administration: FS | Crucis March | Minette Operational Area
+        # administration: FS | Crucis March | Minette Operational Area
+        # administration: FS | Crucis March | Minette Operational Area
         faction:
           source: canon
           value:
@@ -193,9 +233,27 @@ planet:
             - FVC
       - date: '3080-01-01'
         population: 8128764.0
+      - date: '3085-01-01'
+        # administration: FS | Periphery March | Anjin Muerto Operational Area
+        # administration: FS | Periphery March | Anjin Muerto Operational Area
+        # administration: FS | Periphery March | Anjin Muerto Operational Area
+        # administration: FS | Periphery March | Anjin Muerto Operational Area
+        # administration: FS | Periphery March | Anjin Muerto Operational Area
+        # administration: FS | Periphery March | Anjin Muerto Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FS
       - date: '3090-01-01'
         population: 8187502.0
       - date: '3100-06-06'
+        # administration: FS | Periphery March | Anjin Muerto Operational Area
+        # administration: FS | Periphery March | Anjin Muerto Operational Area
+        # administration: FS | Periphery March | Anjin Muerto Operational Area
+        # administration: FS | Periphery March | Anjin Muerto Operational Area
+        # administration: FS | Periphery March | Anjin Muerto Operational Area
+        # administration: FS | Periphery March | Anjin Muerto Operational Area
         faction:
           source: canon
           value:

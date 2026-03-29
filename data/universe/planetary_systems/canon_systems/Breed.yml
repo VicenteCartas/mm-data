@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -20,11 +20,13 @@ sucsId: 386
 xcood: 195.41
 ycood: 39.755
 spectralType:
-  source: FedCom Civil War, pg. 189
+  source: FCCW
   value: K7VII
+  page: 189
 primarySlot:
-  source: FedCom Civil War, pg. 189
+  source: FCCW
   value: 5
+  page: 189
 event:
   - date: '2568-08-01'
     zenithCharge: yes
@@ -99,65 +101,74 @@ planet:
     type: GIANT_TERRESTRIAL
     orbitalDist: 0.6
     sysPos:
-      source: FedCom Civil War, pg. 189
+      source: FCCW
       value: 5
+      page: 189
     icon: green4
     pressure:
-      source: FedCom Civil War, pg. 189
+      source: FCCW
       value: STANDARD
+      page: 189
     atmosphere:
-      source: FedCom Civil War, pg. 189
+      source: FCCW
       value: BREATHABLE
+      page: 189
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: FedCom Civil War, pg. 189
+      source: FCCW
       value: 1.3
+      page: 189
     diameter: 14337
     density: 6.37221921037
     dayLength: 18
     yearLength: 0.9
     temperature:
-      source: FedCom Civil War, pg. 189
+      source: FCCW
       value: 40
+      page: 189
     water:
-      source: FedCom Civil War, pg. 189
+      source: FCCW
       value: 70
+      page: 189
     lifeForm:
-      source: FedCom Civil War, pg. 189
+      source: FCCW
       value: REPTILE
-    desc: Breed is a resource rich world originally settled by the Federated Suns.
-      The planet has been a constant source of contention between the Federated Suns
-      and the Draconis Combine throughout its history, with both Great Houses wanting
-      the planet for its mineral wealth, it has changed hands at least a half dozen
-      times. The planet itself is hot and dry, with 30% higher gravity than Terra,
-      though it does manage to produce enough agriculture to feed the population.
+      page: 189
+    desc: Breed is a resource rich world originally settled by the Federated Suns. The planet has been a constant source of contention between the Federated Suns and the Draconis Combine throughout its history, with both Great Houses wanting the planet for its mineral wealth, it has changed hands at least a half dozen times. The planet itself is hot and dry, with 30% higher gravity than Terra, though it does manage to produce enough agriculture to feed the population.
     landmass:
       - name:
-          source: FedCom Civil War, pg. 189
+          source: FCCW
           value: Hindi
+          page: 189
       - name:
-          source: FedCom Civil War, pg. 189
+          source: FCCW
           value: Talicar
+          page: 189
         capital:
-          source: FedCom Civil War, pg. 189
+          source: FCCW
           value: Tonston
+          page: 189
       - name:
-          source: FedCom Civil War, pg. 189
+          source: FCCW
           value: Trice
+          page: 189
     satellite:
       - name:
-          source: FedCom Civil War, pg. 189
+          source: FCCW
           value: Despot
+          page: 189
         size: medium
         icon: rock5
       - name:
-          source: FedCom Civil War, pg. 189
+          source: FCCW
           value: Stoneface
+          page: 189
         size: medium
         icon: oddmoon1
       - name:
-          source: FedCom Civil War, pg. 189
+          source: FCCW
           value: Zampage
+          page: 189
         size: medium
         icon: oddmoon2
     event:
@@ -185,6 +196,12 @@ planet:
             - FS
       - date: '2360-01-01'
         population: 18251986.0
+      - date: '2366-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '2370-01-01'
         population: 31929245.0
       - date: '2380-01-01'
@@ -231,6 +248,18 @@ planet:
         population: 799638622.0
       - date: '2570-01-01'
         population: 818952987.0
+      - date: '2571-01-01'
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FS
       - date: '2580-01-01'
         population: 838898596.0
       - date: '2590-01-01'
@@ -288,6 +317,12 @@ planet:
       - date: '2820-01-01'
         population: 984489035.0
       - date: '2830-09-05'
+        # administration: DC | Benjamin Military District | Irurzun Prefecture
+        # administration: DC | Benjamin Military District | Irurzun Prefecture
+        # administration: DC | Benjamin Military District | Irurzun Prefecture
+        # administration: DC | Benjamin Military District | Irurzun Prefecture
+        # administration: DC | Benjamin Military District | Irurzun Prefecture
+        # administration: DC | Benjamin Military District | Irurzun Prefecture
         faction:
           source: canon
           value:
@@ -351,6 +386,12 @@ planet:
       - date: '2990-01-01'
         population: 928311095.0
       - date: '2992-05-21'
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
         faction:
           source: canon
           value:
@@ -362,6 +403,12 @@ planet:
       - date: '3020-01-01'
         population: 922656226.0
       - date: '3025-11-11'
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
         faction:
           source: canon
           value:
@@ -369,8 +416,25 @@ planet:
       - date: '3030-01-01'
         population: 926465694.0
       - date: '3040-01-01'
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
         population: 934841520.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
         faction:
           source: canon
           value:
@@ -383,6 +447,18 @@ planet:
         population: 942727263.0
       - date: '3060-01-01'
         population: 950394364.0
+      - date: '3067-01-01'
+        # administration: DC | Benjamin Military District | Irurzun Prefecture
+        # administration: DC | Benjamin Military District | Irurzun Prefecture
+        # administration: DC | Benjamin Military District | Irurzun Prefecture
+        # administration: DC | Benjamin Military District | Irurzun Prefecture
+        # administration: DC | Benjamin Military District | Irurzun Prefecture
+        # administration: DC | Benjamin Military District | Irurzun Prefecture
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - DC
       - date: '3067-04-20'
         faction:
           source: canon
@@ -395,6 +471,12 @@ planet:
             - FS
             - DC
       - date: '3067-08-01'
+        # administration: DC | Benjamin Military District | Irurzun Prefecture
+        # administration: DC | Benjamin Military District | Irurzun Prefecture
+        # administration: DC | Benjamin Military District | Irurzun Prefecture
+        # administration: DC | Benjamin Military District | Irurzun Prefecture
+        # administration: DC | Benjamin Military District | Irurzun Prefecture
+        # administration: DC | Benjamin Military District | Irurzun Prefecture
         faction:
           source: canon
           value:

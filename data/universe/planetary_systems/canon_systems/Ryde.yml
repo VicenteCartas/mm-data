@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: Ryde
-sucsId: 2193
+sucsId: 2194
 xcood: -45.356
 ycood: 91.722
 spectralType:
-  source: House Steiner
+  source: HSSB
   value: F5V
 primarySlot:
-  source: House Steiner
+  source: HSSB
   value: 3
 event:
   - date: '2355-06-07'
@@ -73,31 +73,31 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 1.4
     sysPos:
-      source: House Steiner
+      source: HSSB
       value: 3
     icon: green20
     pressure:
-      source: MWDA world profiles
+      source: DA:RW
       value: STANDARD
     atmosphere:
-      source: MWDA world profiles
+      source: DA:RW
       value: TAINTED_POISON
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: MWDA world profiles
+      source: DA:RW
       value: 1.04
     diameter: 12727
     density: 5.742851951775
     dayLength: 23
     yearLength: 2.0
     temperature:
-      source: MWDA world profiles
+      source: DA:RW
       value: 20
     water:
-      source: MWDA world profiles
+      source: DA:RW
       value: 23
     lifeForm:
-      source: House Steiner
+      source: HSSB
       value: NONE
     desc: |-
       3135 - Its orbit slightly elongated by the powerful gravitational pull of three large gas giants, Ryde is a world of long, harsh winters, still tortured by the tectonic stresses of its own formation. Of its seven major landmasses—Breight, Larnea, and Lesser Dasentica in the northern hemisphere; Creos, Greater Dasentica, Kale, and Roschi in the south—only the Dasenticas and Kale are calm and warm enough to support cities. The others, too far north and south of the equator, are covered almost year-round by snow and ice, which only melt to any great extent when the local volcanoes and geysers erupt, spewing molten rock and hot gases into the sky. Though these same eruptions and the occasional earthquake also shake up the populated continents, their lessened presence and correspondingly lessened pressures gave Ryde‘s settlers relatively safe access to an abundance of geothermal energy, as well as a source for easily accessible minerals that in turn fueled a very profitable chemical industry.
@@ -108,28 +108,28 @@ planet:
     smallMoons: 1
     landmass:
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Breight
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Creos
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Greater Dasentica
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Kale
         capital:
-          source: MWDA world profiles
+          source: DA:RW
           value: Heaven's Gate
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Larnea
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Lesser Dasentica
       - name:
-          source: MWDA world profiles
+          source: DA:RW
           value: Roschi
     event:
       - date: '2165-09-13'
@@ -191,6 +191,18 @@ planet:
         population: 185162012.0
       - date: '2310-01-01'
         population: 233396332.0
+      - date: '2317-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
+      - date: '2319-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FoS
       - date: '2320-01-01'
         population: 287262631.0
       - date: '2330-01-01'
@@ -198,6 +210,12 @@ planet:
       - date: '2340-01-01'
         population: 399640245.0
       - date: '2341-12-08'
+        # administration: LA | Federation of Skye
+        # administration: LA | Federation of Skye
+        # administration: LA | Federation of Skye
+        # administration: LA | Federation of Skye
+        # administration: LA | Federation of Skye
+        # administration: LA | Federation of Skye
         faction:
           source: canon
           value:
@@ -351,17 +369,53 @@ planet:
         population: 885850814.0
       - date: '3039-01-01'
         socioIndustrial: C-C-B-D-B
+      - date: '3040-01-01'
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-23'
         population: 896186514.0
         socioIndustrial: B-C-A-C-A
       - date: '3040-01-19'
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
         faction:
           source: canon
           value:
             - FC
       - date: '3050-01-01'
         population: 908003792.0
+      - date: '3057-01-01'
+        # administration: LA | Skye March | Ryde Operational Area
+        # administration: LA | Skye March | Ryde Operational Area
+        # administration: LA | Skye March | Ryde Operational Area
+        # administration: LA | Skye March | Ryde Operational Area
+        # administration: LA | Skye March | Ryde Operational Area
+        # administration: LA | Skye March | Ryde Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '3057-09-18'
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
         faction:
           source: canon
           value:
@@ -372,7 +426,25 @@ planet:
         population: 929873499.0
       - date: '3080-01-01'
         population: 943360552.0
+      - date: '3081-01-01'
+        # administration: ROS | Prefecture IX
+        # administration: ROS | Prefecture IX
+        # administration: ROS | Prefecture IX
+        # administration: ROS | Prefecture IX
+        # administration: ROS | Prefecture IX
+        # administration: ROS | Prefecture IX
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ROS
       - date: '3081-01-19'
+        # administration: ROS | Prefecture IX
+        # administration: ROS | Prefecture IX
+        # administration: ROS | Prefecture IX
+        # administration: ROS | Prefecture IX
+        # administration: ROS | Prefecture IX
+        # administration: ROS | Prefecture IX
         faction:
           source: canon
           value:
@@ -402,6 +474,12 @@ planet:
         population: 999893282.0
       - date: '3145-01-01'
         population: 1003900864.0
+      - date: '3152-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3152-06-01'
         faction:
           source: sucs

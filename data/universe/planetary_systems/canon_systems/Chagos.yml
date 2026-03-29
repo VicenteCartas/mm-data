@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -139,6 +139,12 @@ planet:
             - FWL
       - date: '2360-01-01'
         population: 30761845.0
+      - date: '2366-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '2370-01-01'
         population: 40783559.0
       - date: '2380-01-01'
@@ -183,6 +189,18 @@ planet:
         population: 241306543.0
       - date: '2570-01-01'
         population: 247626768.0
+      - date: '2571-01-01'
+        # administration: FWL | Principality of Regulus
+        # administration: FWL | Principality of Regulus
+        # administration: FWL | Principality of Regulus
+        # administration: FWL | Principality of Regulus
+        # administration: FWL | Principality of Regulus
+        # administration: FWL | Principality of Regulus
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FWL
       - date: '2580-01-01'
         population: 252411463.0
       - date: '2590-01-01'
@@ -296,6 +314,12 @@ planet:
         population: 232515187.0
       - date: '3080-01-01'
         population: 234101678.0
+      - date: '3081-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3081-10-01'
         faction:
           source: canon
@@ -319,6 +343,12 @@ planet:
         population: 242440312.0
       - date: '3145-01-01'
         population: 243606823.0
+      - date: '3152-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FWL
       - date: '3152-06-01'
         faction:
           source: canon
@@ -331,8 +361,7 @@ planet:
     icon: barren7
     pressure: HIGH
     atmosphere: TOXIC_POISON
-    composition: Nitrogen and Carbon Dioxide, plus trace amounts of Water Vapor and
-      Argon
+    composition: Nitrogen and Carbon Dioxide, plus trace amounts of Water Vapor and Argon
     gravity: 0.42
     diameter: 8500
     density: 3.5

@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Sartu (Bastille 3130+)
-sucsId: 2245
+sucsId: 2246
 xcood: 297.215
 ycood: -342.833
 spectralType: F4V
@@ -150,6 +150,12 @@ planet:
         population: 76116731.0
       - date: '2570-01-01'
         population: 78725152.0
+      - date: '2571-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - TC
       - date: '2571-09-30'
         faction:
           source: canon
@@ -170,7 +176,19 @@ planet:
             - SL
       - date: '2590-01-01'
         population: 83406439.0
+      - date: '2596-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - TC
       - date: '2597-03-21'
+        # administration: TC | Perdition Union
+        # administration: TC | Perdition Union
+        # administration: TC | Perdition Union
+        # administration: TC | Perdition Union
+        # administration: TC | Perdition Union
+        # administration: TC | Perdition Union
         faction:
           source: canon
           value:
@@ -257,6 +275,18 @@ planet:
         hpg: X
         population: 0.0
         socioIndustrial: X-X-X-X-X
+      - date: '3135-01-01'
+        # administration: FS | Periphery March | June Operational Area
+        # administration: FS | Periphery March | June Operational Area
+        # administration: FS | Periphery March | June Operational Area
+        # administration: FS | Periphery March | June Operational Area
+        # administration: FS | Periphery March | June Operational Area
+        # administration: FS | Periphery March | June Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FS
       - date: '3151-01-01'
         faction:
           source: sucs
@@ -265,8 +295,19 @@ planet:
       - date: '2108-12-05'
         name: Sartu
       - date: '3130-01-01'
+        # administration: FS | Periphery March | June Operational Area
+        # administration: FS | Periphery March | June Operational Area
+        # administration: FS | Periphery March | June Operational Area
+        # administration: FS | Periphery March | June Operational Area
+        # administration: FS | Periphery March | June Operational Area
+        # administration: FS | Periphery March | June Operational Area
         name: Bastille
         message: Sartu renamed to Bastille
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FS
   - name: Durante's Planet
     type: TERRESTRIAL
     orbitalDist: 3.92

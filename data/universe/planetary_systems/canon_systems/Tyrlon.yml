@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Tyrlon
-sucsId: 2611
+sucsId: 2612
 xcood: 115.752
 ycood: -446.465
 spectralType:
@@ -178,6 +178,12 @@ planet:
       - name: Sellek
     event:
       - date: '2715-07-28'
+        # administration: CC | Sian Commonality | Region 14
+        # administration: CC | Sian Commonality | Region 14
+        # administration: CC | Sian Commonality | Region 14
+        # administration: CC | Sian Commonality | Region 14
+        # administration: CC | Sian Commonality | Region 14
+        # administration: CC | Sian Commonality | Region 14
         faction:
           source: canon
           value:
@@ -228,6 +234,7 @@ planet:
           source: sucs
           value:
             - ABN
+    desc: Tyrlon V is the smaller of the system's two habitable worlds, with a thin atmosphere and arid climate. Agriculture is restricted to river valleys and coastal regions in the southern hemisphere. Around a hundred million people live in three large southern cities.
   - name:
       source: canon
       value: Tyrlon
@@ -272,6 +279,12 @@ planet:
         capital: Langi
     event:
       - date: '2715-07-28'
+        # administration: CC | Sian Commonality | Region 14
+        # administration: CC | Sian Commonality | Region 14
+        # administration: CC | Sian Commonality | Region 14
+        # administration: CC | Sian Commonality | Region 14
+        # administration: CC | Sian Commonality | Region 14
+        # administration: CC | Sian Commonality | Region 14
         faction:
           source: canon
           value:
@@ -310,6 +323,24 @@ planet:
           value:
             - IND
         hpg: X
+      - date: '2822-01-01'
+        # administration: CC | Sian Commonality | Region 15
+        # administration: CC | Sian Commonality | Region 15
+        # administration: CC | Sian Commonality | Region 15
+        # administration: CC | Sian Commonality | Region 15
+        # administration: CC | Sian Commonality | Region 15
+        # administration: CC | Sian Commonality | Region 15
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CC
+      - date: '2864-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '2910-01-01'
         faction:
           source: canon
@@ -320,6 +351,12 @@ planet:
           source: This is the earliest the directorate could have taken over
           value:
             - ARD
+      - date: '3025-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ARC
       - date: '3026-01-01'
         faction:
           source: canon
@@ -331,11 +368,24 @@ planet:
         socioIndustrial:
           source: canon
           value: C-C-B-C-A
+      - date: '3030-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ABN
       - date: '3151-01-01'
         faction:
           source: sucs
           value:
             - ABN
+      - date: '3152-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
+    desc: Tyrlon VI is the ancestral home of House Parata. A large world with higher gravity and such dense atmospheric pressure that oxygen concentration is toxic at sea level. The planet is mostly covered in water and constantly shrouded in clouds. The single large landmass is a broad plateau high above sea level and the toxic oxygen layer, giving the city of Langi the appearance of floating on the clouds. Nearly a quarter of a billion people live mostly on the central plateau, supported by biomass harvested from the oceans by sealed pressurized ships.
   - name: Far Tyrlon Belt
     type: ASTEROID_BELT
     orbitalDist: 25.48

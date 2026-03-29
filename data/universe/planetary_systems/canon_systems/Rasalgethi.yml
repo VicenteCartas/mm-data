@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,15 +16,16 @@
 # affiliated with Microsoft.
 
 id: Rasalgethi
-sucsId: 2122
+sucsId: 2123
 xcood: -41.881
 ycood: 212.179
 spectralType:
   source: canon
   value: M9Ia
 primarySlot:
-  source: FedCom Civil War, pg. 201
+  source: FCCW
   value: 6
+  page: 201
 event:
   - date: '2366-07-29'
     nadirCharge: yes
@@ -36,8 +37,7 @@ planet:
     icon: barren13
     pressure: THIN
     atmosphere: TOXIC_CAUSTIC
-    composition: Carbon Dioxide and Nitrogen, plus trace amounts of Methane and Sulfur
-      Dioxide
+    composition: Carbon Dioxide and Nitrogen, plus trace amounts of Methane and Sulfur Dioxide
     gravity: 0.39
     diameter: 6500
     density: 4.1818
@@ -125,53 +125,54 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.07
     sysPos:
-      source: FedCom Civil War, pg. 201
+      source: FCCW
       value: 6
+      page: 201
     icon: wet1
     pressure:
-      source: FedCom Civil War, pg. 201
+      source: FCCW
       value: STANDARD
+      page: 201
     atmosphere:
-      source: FedCom Civil War, pg. 201
+      source: FCCW
       value: BREATHABLE
+      page: 201
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: FedCom Civil War, pg. 201
+      source: FCCW
       value: 1.0
+      page: 201
     diameter: 12758
     density: 5.508283500317
     dayLength: 19
     yearLength: 0.3
     temperature:
-      source: FedCom Civil War, pg. 201
+      source: FCCW
       value: 45
+      page: 201
     water:
-      source: FedCom Civil War, pg. 201
+      source: FCCW
       value: 80
+      page: 201
     lifeForm:
-      source: FedCom Civil War, pg. 201
+      source: FCCW
       value: MAMMAL
-    desc: Rasalgethi is a planet covered in water, with only 20% of the planet devoted
-      to the two continents, Rasal and Karlstad. The western continent of Rasal is
-      more fertile and home to Rønne, the planetary capital. The land on Rasal that
-      is not devoted to agriculture or settled, is dominated by massive hardwood forests,
-      often dwarfing BattleMechs and capable of growing 10 centimeters in a single
-      year and topping out at nearly 100 meters tall. The eastern continent of Karlstad
-      is covered in mountains and glaciers, due to being further north than Rasal.
-      The mountains of Karlstad are full of rich deposits of rare metals and precious
-      stones, these rare minerals are the key export from Rasalgethi along with timber
-      and minerals mined from the southern islands.
+      page: 201
+    desc: Rasalgethi is a planet covered in water, with only 20% of the planet devoted to the two continents, Rasal and Karlstad. The western continent of Rasal is more fertile and home to Rønne, the planetary capital. The land on Rasal that is not devoted to agriculture or settled, is dominated by massive hardwood forests, often dwarfing BattleMechs and capable of growing 10 centimeters in a single year and topping out at nearly 100 meters tall. The eastern continent of Karlstad is covered in mountains and glaciers, due to being further north than Rasal. The mountains of Karlstad are full of rich deposits of rare metals and precious stones, these rare minerals are the key export from Rasalgethi along with timber and minerals mined from the southern islands.
     smallMoons: 3
     landmass:
       - name:
-          source: FedCom Civil War, pg. 201
+          source: FCCW
           value: Karlstad
+          page: 201
       - name:
-          source: FedCom Civil War, pg. 201
+          source: FCCW
           value: Rasal
+          page: 201
         capital:
-          source: FedCom Civil War, pg. 201
+          source: FCCW
           value: Rønne
+          page: 201
     event:
       - date: '2171-10-19'
         faction:
@@ -222,6 +223,12 @@ planet:
       - date: '2340-01-01'
         population: 221788761.0
       - date: '2341-03-25'
+        # administration: LA | Tamar Pact
+        # administration: LA | Tamar Pact
+        # administration: LA | Tamar Pact
+        # administration: LA | Tamar Pact
+        # administration: LA | Tamar Pact
+        # administration: LA | Tamar Pact
         faction:
           source: canon
           value:
@@ -377,8 +384,25 @@ planet:
       - date: '3030-01-01'
         population: 522762248.0
       - date: '3040-01-01'
+        # administration: FC | Tamar March | Benfled Operational Area
+        # administration: FC | Tamar March | Benfled Operational Area
+        # administration: FC | Tamar March | Benfled Operational Area
+        # administration: FC | Tamar March | Benfled Operational Area
+        # administration: FC | Tamar March | Benfled Operational Area
+        # administration: FC | Tamar March | Benfled Operational Area
         population: 526381780.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
+        # administration: FC | Tamar March | Benfled Operational Area
+        # administration: FC | Tamar March | Benfled Operational Area
+        # administration: FC | Tamar March | Benfled Operational Area
+        # administration: FC | Tamar March | Benfled Operational Area
+        # administration: FC | Tamar March | Benfled Operational Area
+        # administration: FC | Tamar March | Benfled Operational Area
         faction:
           source: canon
           value:
@@ -393,7 +417,25 @@ planet:
           value: A-A-A-A-B
       - date: '3050-01-01'
         population: 529549565.0
+      - date: '3057-01-01'
+        # administration: LA | Tamar March | Pandora Operational Area
+        # administration: LA | Tamar March | Pandora Operational Area
+        # administration: LA | Tamar March | Pandora Operational Area
+        # administration: LA | Tamar March | Pandora Operational Area
+        # administration: LA | Tamar March | Pandora Operational Area
+        # administration: LA | Tamar March | Pandora Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '3057-09-18'
+        # administration: LA | Donegal Province | Pandora Theater
+        # administration: LA | Donegal Province | Pandora Theater
+        # administration: LA | Donegal Province | Pandora Theater
+        # administration: LA | Donegal Province | Pandora Theater
+        # administration: LA | Donegal Province | Pandora Theater
+        # administration: LA | Donegal Province | Pandora Theater
         faction:
           source: canon
           value:
@@ -406,11 +448,29 @@ planet:
           value:
             - LA
             - FC
+      - date: '3063-01-01'
+        # administration: LA | Donegal Province | Pandora Theater
+        # administration: LA | Donegal Province | Pandora Theater
+        # administration: LA | Donegal Province | Pandora Theater
+        # administration: LA | Donegal Province | Pandora Theater
+        # administration: LA | Donegal Province | Pandora Theater
+        # administration: LA | Donegal Province | Pandora Theater
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '3063-01-24'
         faction:
           source: canon
           value:
             - FC
+      - date: '3067-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CJF
       - date: '3067-04-20'
         faction:
           source: canon
@@ -447,6 +507,12 @@ planet:
           source: canon
           value: X
       - date: '3140-05-15'
+        # administration: RD | Region 3
+        # administration: RD | Region 3
+        # administration: RD | Region 3
+        # administration: RD | Region 3
+        # administration: RD | Region 3
+        # administration: RD | Region 3
         faction:
           source: canon
           value:

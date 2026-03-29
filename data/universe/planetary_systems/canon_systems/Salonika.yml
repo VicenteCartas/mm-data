@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,12 +16,13 @@
 # affiliated with Microsoft.
 
 id: Salonika
-sucsId: 3028
+sucsId: 2990
 xcood: 436.242
 ycood: 973.818
 spectralType:
-  source: Explorer Corps, pg. 54
+  source: EC
   value: A4V
+  page: 54
 primarySlot: 5
 event:
   - date: '3049-05-08'
@@ -110,6 +111,12 @@ planet:
     yearLength: 36.1
     temperature: -89
     event:
+      - date: '3049-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CNC
       - date: '3049-09-13'
         faction:
           source: canon
@@ -134,6 +141,12 @@ planet:
         hpg: X
         population: 0.0
         socioIndustrial: X-X-X-X-X
+      - date: '3063-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CDS
       - date: '3063-02-16'
         faction:
           source: canon
@@ -142,6 +155,12 @@ planet:
         hpg: A
         population: 1166.0
         socioIndustrial: A-X-X-X-X
+      - date: '3075-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ABN
       - date: '3151-01-01'
         faction:
           source: sucs

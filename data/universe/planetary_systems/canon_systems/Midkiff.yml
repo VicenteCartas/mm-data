@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Midkiff
-sucsId: 1699
+sucsId: 1700
 xcood: -198.534
 ycood: -111.95
 spectralType: K7V
@@ -67,6 +67,12 @@ planet:
       - date: '2270-01-01'
         population: 1402042.0
       - date: '2271-06-01'
+        # administration: FWL | Marik Commonwealth
+        # administration: FWL | Marik Commonwealth
+        # administration: FWL | Marik Commonwealth
+        # administration: FWL | Marik Commonwealth
+        # administration: FWL | Marik Commonwealth
+        # administration: FWL | Marik Commonwealth
         faction:
           source: canon
           value:
@@ -246,6 +252,12 @@ planet:
         population: 544344208.0
       - date: '3070-01-01'
         population: 549924932.0
+      - date: '3079-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - MCM
       - date: '3079-09-26'
         faction:
           source: canon
@@ -253,6 +265,18 @@ planet:
             - MSC
       - date: '3080-01-01'
         population: 559353572.0
+      - date: '3081-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - MCM
+      - date: '3085-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - MSC
       - date: '3090-01-01'
         population: 569854908.0
       - date: '3092-01-01'
@@ -273,6 +297,12 @@ planet:
         hpg: X
       - date: '3140-01-01'
         population: 585216451.0
+      - date: '3145-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CWE
       - date: '3145-12-28'
         faction:
           source: canon

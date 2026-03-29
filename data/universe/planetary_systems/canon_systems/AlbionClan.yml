@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,15 +16,17 @@
 # affiliated with Microsoft.
 
 id: Albion (Clan)
-sucsId: 2929
+sucsId: 2930
 xcood: -50.167
 ycood: 1792.145
 spectralType:
-  source: Warriors of Kerensky, pg. 112
+  source: WoK
   value: K1V
+  page: 112
 primarySlot:
-  source: Warriors of Kerensky, pg. 112
+  source: WoK
   value: 2
+  page: 112
 event:
   - date: '2793-12-17'
     zenithCharge: yes
@@ -48,32 +50,39 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.56
     sysPos:
-      source: Warriors of Kerensky, pg. 112
+      source: WoK
       value: 2
+      page: 112
     icon: green25
     pressure:
-      source: Warriors of Kerensky, pg. 112
+      source: WoK
       value: STANDARD
+      page: 112
     atmosphere:
-      source: Warriors of Kerensky, pg. 112
+      source: WoK
       value: BREATHABLE
+      page: 112
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: Warriors of Kerensky, pg. 112
+      source: WoK
       value: 0.8
+      page: 112
     diameter: 11856
     density: 4.742142366615
     dayLength: 24
     yearLength: 1.0
     temperature:
-      source: Warriors of Kerensky, pg. 112
+      source: WoK
       value: 25
+      page: 112
     water:
-      source: Warriors of Kerensky, pg. 112
+      source: WoK
       value: 60
+      page: 112
     lifeForm:
-      source: Warriors of Kerensky, pg. 112
+      source: WoK
       value: REPTILE
+      page: 112
     desc: No description available.
     landmass:
       - name: New Rock Hill
@@ -104,7 +113,25 @@ planet:
         population: 571173.0
       - date: '2820-01-01'
         population: 411704.0
+      - date: '2821-01-01'
+        # administration: CB | National Capital
+        # administration: CB | National Capital
+        # administration: CB | National Capital
+        # administration: CB | National Capital
+        # administration: CB | National Capital
+        # administration: CB | National Capital
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CB
       - date: '2824-01-01'
+        # administration: CB | National Capital
+        # administration: CB | National Capital
+        # administration: CB | National Capital
+        # administration: CB | National Capital
+        # administration: CB | National Capital
+        # administration: CB | National Capital
         faction:
           source: canon
           value:
@@ -157,6 +184,12 @@ planet:
         socioIndustrial: C-B-F-B-D
       - date: '3050-01-01'
         population: 229519.0
+      - date: '3059-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CSA
       - date: '3059-02-27'
         faction:
           source: canon
@@ -209,6 +242,12 @@ planet:
           value:
             - CCC
             - CBS
+      - date: '3075-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CLAN
       - date: '3075-12-17'
         faction:
           source: canon
@@ -217,6 +256,12 @@ planet:
             - CCC
             - CCO
             - CSA
+      - date: '3079-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CLAN
       - date: '3079-02-05'
         faction:
           source: canon
@@ -229,6 +274,12 @@ planet:
           value: 7300000.0
       - date: '3080-01-01'
         population: 15632.0
+      - date: '3085-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ABN
       - date: '3085-07-10'
         faction:
           source: canon

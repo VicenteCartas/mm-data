@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Modesto
-sucsId: 1734
+sucsId: 1735
 xcood: -142.027
 ycood: -536.497
 spectralType: M1V
@@ -61,6 +61,12 @@ planet:
         icon: rock10
     event:
       - date: '2679-07-08'
+        # administration: MOC | Luxen Province
+        # administration: MOC | Luxen Province
+        # administration: MOC | Luxen Province
+        # administration: MOC | Luxen Province
+        # administration: MOC | Luxen Province
+        # administration: MOC | Luxen Province
         faction:
           source: canon
           value:
@@ -113,6 +119,12 @@ planet:
         population: 69618040.0
       - date: '2860-01-01'
         population: 30950794.0
+      - date: '2864-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ABN
       - date: '2864-01-18'
         faction:
           source: canon

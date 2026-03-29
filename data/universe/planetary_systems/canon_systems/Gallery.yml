@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,15 +16,17 @@
 # affiliated with Microsoft.
 
 id: Gallery
-sucsId: 923
+sucsId: 924
 xcood: -198.236
 ycood: 108.266
 spectralType:
-  source: 'Handbook: House Steiner, pg. 78'
+  source: 'HB:HS'
   value: M5V
+  page: 78
 primarySlot:
-  source: 'Handbook: House Steiner, pg. 78'
+  source: 'HB:HS'
   value: 1
+  page: 78
 event:
   - date: '2364-03-28'
     zenithCharge: yes
@@ -37,56 +39,69 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.08
     sysPos:
-      source: 'Handbook: House Steiner, pg. 78'
+      source: 'HB:HS'
       value: 1
+      page: 78
     icon: wet4
     pressure:
-      source: 'Handbook: House Steiner, pg. 78'
+      source: 'HB:HS'
       value: STANDARD
+      page: 78
     atmosphere:
-      source: 'Handbook: House Steiner, pg. 78'
+      source: 'HB:HS'
       value: BREATHABLE
+      page: 78
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'Handbook: House Steiner, pg. 78'
+      source: 'HB:HS'
       value: 1.03
+      page: 78
     diameter: 15455
     density: 4.68359018552
     dayLength: 25
     yearLength: 0.4
     temperature:
-      source: 'Handbook: House Steiner, pg. 78'
+      source: 'HB:HS'
       value: 27
+      page: 78
     water:
-      source: 'Handbook: House Steiner, pg. 78'
+      source: 'HB:HS'
       value: 88
+      page: 78
     lifeForm:
-      source: 'Handbook: House Steiner, pg. 78'
+      source: 'HB:HS'
       value: NONE
+      page: 78
     desc: |-
       Due to a large moon and three large oceans, Gallery is covered in a nearly constant blanket of thick dark clouds and is often subject to vast storms. These conditions result in the surface of the planet being in a near perpetual twilight, with sunlight almost never breaking through the thick cloud-layer.
 
       When Gallery was originally settled there were no native lifeforms so the original colonists had to import plants and animals that could adapt and survive in the nearly constant darkness. What Gallery lacks in comforts, it more than makes up for in natural resources. The stormy dark climate has resulted in the populace living underground and the primary industry on the planet is mining. Due to their comfort and familiarity with underground spaces, many natives of Gallery are easily able to find jobs on other planets as miners.
     landmass:
       - name:
-          source: 'Handbook: House Steiner, pg. 78'
+          source: 'HB:HS'
           value: Axillon
+          page: 78
       - name:
-          source: 'Handbook: House Steiner, pg. 78'
+          source: 'HB:HS'
           value: Ludella
+          page: 78
       - name:
-          source: 'Handbook: House Steiner, pg. 78'
+          source: 'HB:HS'
           value: Penrodia
+          page: 78
       - name:
-          source: 'Handbook: House Steiner, pg. 78'
+          source: 'HB:HS'
           value: Tyrillia
+          page: 78
         capital:
-          source: 'Handbook: House Steiner, pg. 78'
+          source: 'HB:HS'
           value: New Stockholm
+          page: 78
     satellite:
       - name:
-          source: 'Handbook: House Steiner, pg. 78'
+          source: 'HB:HS'
           value: Romaine
+          page: 78
         size: medium
         icon: oddmoon1
     event:
@@ -104,6 +119,12 @@ planet:
       - date: '2340-01-01'
         population: 1554998.0
       - date: '2341-04-15'
+        # administration: LA | Protectorate of Donegal
+        # administration: LA | Protectorate of Donegal
+        # administration: LA | Protectorate of Donegal
+        # administration: LA | Protectorate of Donegal
+        # administration: LA | Protectorate of Donegal
+        # administration: LA | Protectorate of Donegal
         faction:
           source: canon
           value:
@@ -263,8 +284,25 @@ planet:
       - date: '3030-01-01'
         population: 426607674.0
       - date: '3040-01-01'
+        # administration: FC | Tamarind March | Soilihull Operational Area
+        # administration: FC | Tamarind March | Soilihull Operational Area
+        # administration: FC | Tamarind March | Soilihull Operational Area
+        # administration: FC | Tamarind March | Soilihull Operational Area
+        # administration: FC | Tamarind March | Soilihull Operational Area
+        # administration: FC | Tamarind March | Soilihull Operational Area
         population: 431541980.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
+        # administration: FC | Tamarind March | Soilihull Operational Area
+        # administration: FC | Tamarind March | Soilihull Operational Area
+        # administration: FC | Tamarind March | Soilihull Operational Area
+        # administration: FC | Tamarind March | Soilihull Operational Area
+        # administration: FC | Tamarind March | Soilihull Operational Area
+        # administration: FC | Tamarind March | Soilihull Operational Area
         faction:
           source: canon
           value:
@@ -275,7 +313,25 @@ planet:
           value: B-C-A-B-D
       - date: '3050-01-01'
         population: 436751680.0
+      - date: '3057-01-01'
+        # administration: LA | Tamarind March | Soilihull Operational Area
+        # administration: LA | Tamarind March | Soilihull Operational Area
+        # administration: LA | Tamarind March | Soilihull Operational Area
+        # administration: LA | Tamarind March | Soilihull Operational Area
+        # administration: LA | Tamarind March | Soilihull Operational Area
+        # administration: LA | Tamarind March | Soilihull Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '3057-09-18'
+        # administration: LA | Bolan Province
+        # administration: LA | Bolan Province
+        # administration: LA | Bolan Province
+        # administration: LA | Bolan Province
+        # administration: LA | Bolan Province
+        # administration: LA | Bolan Province
         faction:
           source: canon
           value:
@@ -289,6 +345,12 @@ planet:
             - FC
             - LA
       - date: '3064-07-30'
+        # administration: LA | Bolan Province
+        # administration: LA | Bolan Province
+        # administration: LA | Bolan Province
+        # administration: LA | Bolan Province
+        # administration: LA | Bolan Province
+        # administration: LA | Bolan Province
         faction:
           source: canon
           value:
@@ -314,6 +376,12 @@ planet:
           value: X
       - date: '3140-01-01'
         population: 496192916.0
+      - date: '3145-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CWE
       - date: '3145-01-05'
         faction:
           source: canon

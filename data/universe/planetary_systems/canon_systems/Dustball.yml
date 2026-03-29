@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -20,11 +20,13 @@ sucsId: 757
 xcood: -104.483
 ycood: 266.199
 spectralType:
-  source: 'Handbook: House Steiner, pg. 85'
+  source: 'HB:HS'
   value: A9V
+  page: 85
 primarySlot:
-  source: 'Handbook: House Steiner, pg. 85'
+  source: 'HB:HS'
   value: 6
+  page: 85
 event:
   - date: '2693-11-15'
     zenithCharge: yes
@@ -128,48 +130,63 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 2.72
     sysPos:
-      source: 'Handbook: House Steiner, pg. 85'
+      source: 'HB:HS'
       value: 6
+      page: 85
     icon: green23
     pressure:
-      source: 'Handbook: House Steiner, pg. 85'
+      source: 'HB:HS'
       value: STANDARD
+      page: 85
     atmosphere:
-      source: 'Handbook: House Steiner, pg. 85'
+      source: 'HB:HS'
       value: BREATHABLE
+      page: 85
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'Handbook: House Steiner, pg. 85'
+      source: 'HB:HS'
       value: 0.96
+      page: 85
     diameter: 10608
     density: 6.359611530837
     dayLength: 21
     yearLength: 4.7
     temperature:
-      source: 'Handbook: House Steiner, pg. 85'
+      source: 'HB:HS'
       value: 71
+      page: 85
     water:
-      source: 'Handbook: House Steiner, pg. 85'
+      source: 'HB:HS'
       value: 20
+      page: 85
     lifeForm:
-      source: 'Handbook: House Steiner, pg. 85'
+      source: 'HB:HS'
       value: NONE
+      page: 85
     desc: |-
       Dustball is a small, dry, and hot planet barely suitable for human life. Despite this, the planet was settled due to reports suggesting arge tracts of mineral wealth just below the surface. Unfortunately after mining began, it was soon discovered that the reports had been incorrect. Soon after most of the miners left and the planet would have likely been abandoned entirely if not for the Malthus crime family.
 
       The Malthus crime family had each of the 5 domed cities set up to cater to a different vice from gambling to prostitution. There were attempts by the Lyran government to stamp out the illegal activities on Dustball, unfortunately enough high officials could be blackmailed, usually due to having enjoyed a visit to Dustball, so no measures ever held up. The establishment of Kooken’s Pleasure Pit as a legal alternative was an attempt in the early 3000s to stamp out the Malthus crime family. However, their business did not come to an end until the Clan invasion.
     landmass:
       - capital:
-          source: 'Handbook: House Steiner, pg. 85'
+          source: 'HB:HS'
           value: New Monaco
+          page: 85
     satellite:
       - name:
-          source: 'Handbook: House Steiner, pg. 85'
+          source: 'HB:HS'
           value: Mirage
+          page: 85
         size: giant
         icon: rock4
     event:
       - date: '2665-04-10'
+        # administration: LA | Tamar Pact | Tamar Domains
+        # administration: LA | Tamar Pact | Tamar Domains
+        # administration: LA | Tamar Pact | Tamar Domains
+        # administration: LA | Tamar Pact | Tamar Domains
+        # administration: LA | Tamar Pact | Tamar Domains
+        # administration: LA | Tamar Pact | Tamar Domains
         faction:
           source: canon
           value:
@@ -265,8 +282,25 @@ planet:
       - date: '3030-01-01'
         population: 808947194.0
       - date: '3040-01-01'
+        # administration: FC | Tamar March | Benfled Operational Area
+        # administration: FC | Tamar March | Benfled Operational Area
+        # administration: FC | Tamar March | Benfled Operational Area
+        # administration: FC | Tamar March | Benfled Operational Area
+        # administration: FC | Tamar March | Benfled Operational Area
+        # administration: FC | Tamar March | Benfled Operational Area
         population: 817649403.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
+        # administration: FC | Tamar March | Benfled Operational Area
+        # administration: FC | Tamar March | Benfled Operational Area
+        # administration: FC | Tamar March | Benfled Operational Area
+        # administration: FC | Tamar March | Benfled Operational Area
+        # administration: FC | Tamar March | Benfled Operational Area
+        # administration: FC | Tamar March | Benfled Operational Area
         faction:
           source: canon
           value:
@@ -277,11 +311,35 @@ planet:
           value: D-D-C-C-F
       - date: '3050-01-01'
         population: 824216833.0
+      - date: '3057-01-01'
+        # administration: LA | Tamar March | Pandora Operational Area
+        # administration: LA | Tamar March | Pandora Operational Area
+        # administration: LA | Tamar March | Pandora Operational Area
+        # administration: LA | Tamar March | Pandora Operational Area
+        # administration: LA | Tamar March | Pandora Operational Area
+        # administration: LA | Tamar March | Pandora Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '3057-12-01'
         faction:
           source: canon
           value:
             - ARDC
+      - date: '3058-01-01'
+        # administration: LA | Donegal Province | Pandora Theater
+        # administration: LA | Donegal Province | Pandora Theater
+        # administration: LA | Donegal Province | Pandora Theater
+        # administration: LA | Donegal Province | Pandora Theater
+        # administration: LA | Donegal Province | Pandora Theater
+        # administration: LA | Donegal Province | Pandora Theater
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '3060-01-01'
         population: 829259921.0
       - date: '3067-01-01'
@@ -289,6 +347,12 @@ planet:
           source: canon
           value: 833000000.0
       - date: '3067-04-24'
+        # administration: LA | Arc-Royal Theater
+        # administration: LA | Arc-Royal Theater
+        # administration: LA | Arc-Royal Theater
+        # administration: LA | Arc-Royal Theater
+        # administration: LA | Arc-Royal Theater
+        # administration: LA | Arc-Royal Theater
         faction:
           source: canon
           value:
@@ -307,6 +371,12 @@ planet:
         population: 845589183.0
       - date: '3120-01-01'
         population: 849317973.0
+      - date: '3130-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CJF/LC
       - date: '3130-05-29'
         faction:
           source: canon
@@ -318,6 +388,12 @@ planet:
         hpg:
           source: canon
           value: X
+      - date: '3135-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CJF/LC
       - date: '3135-03-24'
         faction:
           source: canon

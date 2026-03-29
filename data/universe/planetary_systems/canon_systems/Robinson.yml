@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,15 +16,17 @@
 # affiliated with Microsoft.
 
 id: Robinson
-sucsId: 2160
+sucsId: 2161
 xcood: 232.72
 ycood: -6.482
 spectralType:
-  source: 'Handbook: House Davion, pg. 102'
+  source: 'HB:HD'
   value: G5IV
+  page: 102
 primarySlot:
-  source: 'Handbook: House Davion, pg. 102'
+  source: 'HB:HD'
   value: 3
+  page: 102
 event:
   - date: '2389-06-14'
     zenithCharge: yes
@@ -65,32 +67,39 @@ planet:
     type: GIANT_TERRESTRIAL
     orbitalDist: 1.44
     sysPos:
-      source: 'Handbook: House Davion, pg. 102'
+      source: 'HB:HD'
       value: 3
+      page: 102
     icon: green52
     pressure:
-      source: 'Handbook: House Davion, pg. 102'
+      source: 'HB:HD'
       value: STANDARD
+      page: 102
     atmosphere:
-      source: 'Handbook: House Davion, pg. 102'
+      source: 'HB:HD'
       value: BREATHABLE
+      page: 102
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'Handbook: House Davion, pg. 102'
+      source: 'HB:HD'
       value: 1.0
+      page: 102
     diameter: 12039
     density: 5.837433464064
     dayLength: 21
     yearLength: 2.0
     temperature:
-      source: 'Handbook: House Davion, pg. 102'
+      source: 'HB:HD'
       value: 35
+      page: 102
     water:
-      source: 'Handbook: House Davion, pg. 102'
+      source: 'HB:HD'
       value: 70
+      page: 102
     lifeForm:
-      source: 'Handbook: House Davion, pg. 102'
+      source: 'HB:HD'
       value: MAMMAL
+      page: 102
     desc: |-
       Robinson is a rich and comfortable planet with large tracts of arable land, vast deposits of ores and minerals and a strong industrial base. Unfortunately the planet was occupied by the Draconis Combine during the early Succession Wars and the people’s unwillingness to give in to Combine occupation resulted in the loss of much of the planet’s heavy industry. Recovery has been slow, however Robinson remains the capital of the Draconis March and is still a politically important world.
 
@@ -99,21 +108,26 @@ planet:
       Valiant Systems
     landmass:
       - name:
-          source: 'Handbook: House Davion, pg. 102'
+          source: 'HB:HD'
           value: Canaan
+          page: 102
         capital:
-          source: FedCom Civil War, pg. 192
+          source: FCCW
           value: Beuller
+          page: 192
       - name:
-          source: 'Handbook: House Davion, pg. 102'
+          source: 'HB:HD'
           value: Megiddo
+          page: 102
       - name:
-          source: 'Handbook: House Davion, pg. 102'
+          source: 'HB:HD'
           value: Solomon
+          page: 102
     satellite:
       - name:
-          source: 'Handbook: House Davion, pg. 102'
+          source: 'HB:HD'
           value: Bethel
+          page: 102
         size: medium
         icon: rock8
     event:
@@ -173,6 +187,12 @@ planet:
         population: 1611499777.0
       - date: '2360-01-01'
         population: 1864424089.0
+      - date: '2366-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '2370-01-01'
         population: 2117432626.0
       - date: '2380-01-01'
@@ -217,6 +237,18 @@ planet:
         population: 5372694782.0
       - date: '2570-01-01'
         population: 5480277092.0
+      - date: '2571-01-01'
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FS
       - date: '2580-01-01'
         population: 5566518686.0
       - date: '2590-01-01'
@@ -289,6 +321,12 @@ planet:
       - date: '2850-01-01'
         population: 5682709112.0
       - date: '2858-08-01'
+        # administration: DC | Benjamin Military District | Irurzun Prefecture
+        # administration: DC | Benjamin Military District | Irurzun Prefecture
+        # administration: DC | Benjamin Military District | Irurzun Prefecture
+        # administration: DC | Benjamin Military District | Irurzun Prefecture
+        # administration: DC | Benjamin Military District | Irurzun Prefecture
+        # administration: DC | Benjamin Military District | Irurzun Prefecture
         faction:
           source: canon
           value:
@@ -307,6 +345,12 @@ planet:
       - date: '2890-01-01'
         population: 5667133480.0
       - date: '2891-08-01'
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
         faction:
           source: canon
           value:
@@ -344,8 +388,25 @@ planet:
       - date: '3030-01-01'
         population: 5519196210.0
       - date: '3040-01-01'
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
         population: 5564083246.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
         faction:
           source: canon
           value:
@@ -359,10 +420,27 @@ planet:
       - date: '3060-01-01'
         population: 5656652213.0
       - date: '3067-01-01'
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
         population:
           source: canon
           value: 5675350000.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FS
       - date: '3067-04-20'
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
         faction:
           source: canon
           value:
@@ -375,7 +453,25 @@ planet:
           value:
             - FS
             - WOB
+      - date: '3075-01-01'
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FS
       - date: '3075-05-21'
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
         faction:
           source: canon
           value:
@@ -401,7 +497,18 @@ planet:
       - date: '3140-01-01'
         population: 5872804191.0
       - date: '3145-01-01'
+        # administration: DC | New Samarkand Military District | Barlow's End Prefecture
+        # administration: DC | New Samarkand Military District | Barlow's End Prefecture
+        # administration: DC | New Samarkand Military District | Barlow's End Prefecture
+        # administration: DC | New Samarkand Military District | Barlow's End Prefecture
+        # administration: DC | New Samarkand Military District | Barlow's End Prefecture
+        # administration: DC | New Samarkand Military District | Barlow's End Prefecture
         population: 5889271086.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - DC
       - date: '3145-08-01'
         faction:
           source: canon
@@ -413,6 +520,12 @@ planet:
           value:
             - FS
       - date: '3151-01-01'
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
         faction:
           source: sucs
           value:

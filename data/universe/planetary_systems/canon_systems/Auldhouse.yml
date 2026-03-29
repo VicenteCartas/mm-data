@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -38,8 +38,7 @@ planet:
     icon: barren24
     pressure: STANDARD
     atmosphere: TOXIC_CAUSTIC
-    composition: Carbon Dioxide and Nitrogen, plus trace amounts of Nitrous Oxide
-      and Hydrogen Peroxide
+    composition: Carbon Dioxide and Nitrogen, plus trace amounts of Nitrous Oxide and Hydrogen Peroxide
     gravity: 0.27
     diameter: 5500
     density: 3.5
@@ -89,6 +88,12 @@ planet:
       - date: '2340-01-01'
         population: 5328209.0
       - date: '2341-07-20'
+        # administration: LA | Federation of Skye | Kannon Shire
+        # administration: LA | Federation of Skye | Kannon Shire
+        # administration: LA | Federation of Skye | Kannon Shire
+        # administration: LA | Federation of Skye | Kannon Shire
+        # administration: LA | Federation of Skye | Kannon Shire
+        # administration: LA | Federation of Skye | Kannon Shire
         faction:
           source: canon
           value:
@@ -247,8 +252,25 @@ planet:
       - date: '3030-01-01'
         population: 967937457.0
       - date: '3040-01-01'
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
         population: 976492895.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
+        # administration: FC | Skye March | Ryde Operational Area
         faction:
           source: canon
           value:
@@ -257,7 +279,25 @@ planet:
         socioIndustrial: A-D-B-C-C
       - date: '3050-01-01'
         population: 984434608.0
+      - date: '3057-01-01'
+        # administration: LA | Skye March | Ryde Operational Area
+        # administration: LA | Skye March | Ryde Operational Area
+        # administration: LA | Skye March | Ryde Operational Area
+        # administration: LA | Skye March | Ryde Operational Area
+        # administration: LA | Skye March | Ryde Operational Area
+        # administration: LA | Skye March | Ryde Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '3057-09-18'
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
+        # administration: LA | Skye Province | Freedom Theater
         faction:
           source: canon
           value:
@@ -289,6 +329,12 @@ planet:
         population: 1122111520.0
       - date: '3145-01-01'
         population: 1132935663.0
+      - date: '3152-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3152-06-01'
         faction:
           source: canon

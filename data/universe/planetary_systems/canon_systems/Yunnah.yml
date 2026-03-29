@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: Yunnah
-sucsId: 2807
+sucsId: 2808
 xcood: 27.148
 ycood: -127.003
 spectralType:
-  source: 'Objective Raids: Capellan Confederation'
+  source: 'OR'
   value: K3III
 primarySlot:
-  source: 'Objective Raids: Capellan Confederation'
+  source: 'OR'
   value: 6
 planet:
   - name: Shankpana
@@ -108,31 +108,31 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.7
     sysPos:
-      source: 'Objective Raids: Capellan Confederation'
+      source: 'OR'
       value: 6
     icon: wet19
     pressure:
-      source: 'Objective Raids: Capellan Confederation'
+      source: 'OR'
       value: STANDARD
     atmosphere:
-      source: 'Objective Raids: Capellan Confederation'
+      source: 'OR'
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'Objective Raids: Capellan Confederation'
+      source: 'OR'
       value: 1.0
     diameter: 11518
     density: 6.101527243017
     dayLength: 17
     yearLength: 1.0
     temperature:
-      source: 'Objective Raids: Capellan Confederation'
+      source: 'OR'
       value: 43
     water:
-      source: 'Objective Raids: Capellan Confederation'
+      source: 'OR'
       value: 76
     lifeForm:
-      source: 'Objective Raids: Capellan Confederation'
+      source: 'OR'
       value: MAMMAL
     desc: |-
       3025: Yunnah contains vast deposits of natural resources in the large mountain ranges that cover most of the planet’s land mass, however there have been few attempts to mine them and Yunnah was barely populated for most of its history. This changed in the early 31st Century when the Capellan Confederation established a large medical facility to heal injured soldiers and a massive repair and recovery facility to repair damaged war-materials. Yunnah possesses just enough agriculture to feeds its population. Some seafaring activity exists as part of a quasi-religious movement based on spiritual harmony with the elements.
@@ -141,13 +141,19 @@ planet:
     smallMoons: 1
     landmass:
       - name:
-          source: 'Objective Raids: Capellan Confederation'
+          source: 'OR'
           value: Burma
         capital:
-          source: 'Objective Raids: Capellan Confederation'
+          source: 'OR'
           value: Yunnah Prime
     event:
       - date: '2733-12-24'
+        # administration: CC | Sarna Commonality | Region 1
+        # administration: CC | Sarna Commonality | Region 1
+        # administration: CC | Sarna Commonality | Region 1
+        # administration: CC | Sarna Commonality | Region 1
+        # administration: CC | Sarna Commonality | Region 1
+        # administration: CC | Sarna Commonality | Region 1
         faction:
           source: canon
           value:
@@ -222,6 +228,18 @@ planet:
         population:
           source: canon
           value: 843000.0
+      - date: '3030-01-01'
+        # administration: LA | Sarna March | Palos Operational Area
+        # administration: LA | Sarna March | Palos Operational Area
+        # administration: LA | Sarna March | Palos Operational Area
+        # administration: LA | Sarna March | Palos Operational Area
+        # administration: LA | Sarna March | Palos Operational Area
+        # administration: LA | Sarna March | Palos Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - LA
       - date: '3030-01-19'
         faction:
           source: canon
@@ -229,8 +247,25 @@ planet:
             - FS
         population: 1100819.0
       - date: '3040-01-01'
+        # administration: FC | Sarna March | Palos Operational Area
+        # administration: FC | Sarna March | Palos Operational Area
+        # administration: FC | Sarna March | Palos Operational Area
+        # administration: FC | Sarna March | Palos Operational Area
+        # administration: FC | Sarna March | Palos Operational Area
+        # administration: FC | Sarna March | Palos Operational Area
         population: 1103470.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
+        # administration: FC | Sarna March | Palos Operational Area
+        # administration: FC | Sarna March | Palos Operational Area
+        # administration: FC | Sarna March | Palos Operational Area
+        # administration: FC | Sarna March | Palos Operational Area
+        # administration: FC | Sarna March | Palos Operational Area
+        # administration: FC | Sarna March | Palos Operational Area
         faction:
           source: canon
           value:
@@ -241,7 +276,25 @@ planet:
           value: C-D-C-C-C
       - date: '3050-01-01'
         population: 1096309.0
+      - date: '3057-01-01'
+        # administration: CC | Capella Commonality | Region 9
+        # administration: CC | Capella Commonality | Region 9
+        # administration: CC | Capella Commonality | Region 9
+        # administration: CC | Capella Commonality | Region 9
+        # administration: CC | Capella Commonality | Region 9
+        # administration: CC | Capella Commonality | Region 9
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CC
       - date: '3057-10-01'
+        # administration: CC | Capella Commonality | Region 9
+        # administration: CC | Capella Commonality | Region 9
+        # administration: CC | Capella Commonality | Region 9
+        # administration: CC | Capella Commonality | Region 9
+        # administration: CC | Capella Commonality | Region 9
+        # administration: CC | Capella Commonality | Region 9
         faction:
           source: canon
           value:
@@ -256,7 +309,25 @@ planet:
           value: 1100000.0
       - date: '3080-01-01'
         population: 1100880.0
+      - date: '3085-01-01'
+        # administration: ROS | Prefecture VI
+        # administration: ROS | Prefecture VI
+        # administration: ROS | Prefecture VI
+        # administration: ROS | Prefecture VI
+        # administration: ROS | Prefecture VI
+        # administration: ROS | Prefecture VI
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ROS
       - date: '3085-10-01'
+        # administration: ROS | Prefecture VI
+        # administration: ROS | Prefecture VI
+        # administration: ROS | Prefecture VI
+        # administration: ROS | Prefecture VI
+        # administration: ROS | Prefecture VI
+        # administration: ROS | Prefecture VI
         faction:
           source: canon
           value:
@@ -273,7 +344,25 @@ planet:
         population: 1147184.0
       - date: '3134-01-01'
         socioIndustrial: C-D-B-C-C
+      - date: '3135-01-01'
+        # administration: CC | Liao Commonality | Region 3
+        # administration: CC | Liao Commonality | Region 3
+        # administration: CC | Liao Commonality | Region 3
+        # administration: CC | Liao Commonality | Region 3
+        # administration: CC | Liao Commonality | Region 3
+        # administration: CC | Liao Commonality | Region 3
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CC
       - date: '3135-11-19'
+        # administration: CC | Sarna Commonality | Region 3
+        # administration: CC | Sarna Commonality | Region 3
+        # administration: CC | Sarna Commonality | Region 3
+        # administration: CC | Sarna Commonality | Region 3
+        # administration: CC | Sarna Commonality | Region 3
+        # administration: CC | Sarna Commonality | Region 3
         faction:
           source: canon
           value:

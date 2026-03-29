@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Riga
-sucsId: 3003
+sucsId: 3167
 xcood: -863.429
 ycood: 860.108
 spectralType: F0V
@@ -116,7 +116,25 @@ planet:
       - name: New Solbiate Arno E
       - name: New Solbiate Arno F
     event:
+      - date: '3025-01-01'
+        # administration: HL | Region 2
+        # administration: HL | Region 2
+        # administration: HL | Region 2
+        # administration: HL | Region 2
+        # administration: HL | Region 2
+        # administration: HL | Region 2
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - HL
       - date: '3025-05-29'
+        # administration: HL | Region 2
+        # administration: HL | Region 2
+        # administration: HL | Region 2
+        # administration: HL | Region 2
+        # administration: HL | Region 2
+        # administration: HL | Region 2
         faction:
           source: canon
           value:
@@ -163,6 +181,11 @@ planet:
             - CEI
       - date: '3145-01-01'
         population: 103830.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - SE
   - name: Ishigenov
     type: ICE_GIANT
     orbitalDist: 4.48

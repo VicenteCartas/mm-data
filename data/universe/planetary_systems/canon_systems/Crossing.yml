@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -20,11 +20,13 @@ sucsId: 627
 xcood: 253.313
 ycood: 47.262
 spectralType:
-  source: 'Operational Turning Points: Death to Mercenaries, pg. 4'
+  source: 'OTP:DTM'
   value: G4V
+  page: 4
 primarySlot:
-  source: 'Operational Turning Points: Death to Mercenaries, pg. 4'
+  source: 'OTP:DTM'
   value: 4
+  page: 4
 event:
   - date: '2377-07-14'
     zenithCharge: yes
@@ -81,32 +83,39 @@ planet:
     type: GIANT_TERRESTRIAL
     orbitalDist: 0.63
     sysPos:
-      source: 'Operational Turning Points: Death to Mercenaries, pg. 4'
+      source: 'OTP:DTM'
       value: 4
+      page: 4
     icon: wet4
     pressure:
-      source: 'Operational Turning Points: Death to Mercenaries, pg. 4'
+      source: 'OTP:DTM'
       value: STANDARD
+      page: 4
     atmosphere:
-      source: 'Operational Turning Points: Death to Mercenaries, pg. 4'
+      source: 'OTP:DTM'
       value: BREATHABLE
+      page: 4
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'Operational Turning Points: Death to Mercenaries, pg. 4'
+      source: 'OTP:DTM'
       value: 0.99
+      page: 4
     diameter: 16044
     density: 4.336371442947
     dayLength: 11
     yearLength: 1.1
     temperature:
-      source: 'Operational Turning Points: Death to Mercenaries, pg. 4'
+      source: 'OTP:DTM'
       value: 37
+      page: 4
     water:
-      source: 'Operational Turning Points: Death to Mercenaries, pg. 4'
+      source: 'OTP:DTM'
       value: 78
+      page: 4
     lifeForm:
-      source: 'Operational Turning Points: Death to Mercenaries, pg. 4'
+      source: 'OTP:DTM'
       value: INSECT
+      page: 4
     desc: |-
       3028 - Crossing is a vital defensive planet along the Federated Suns and Draconis Combine border and the planet’s name has proven to be exceptionally fitting since it has been used for centuries as a waystation for troops and supplies moving through the Draconis March. The planet saw so much use as a logistical lynchpin that almost the entire southern continent of Charon was reserved as a military reservation for supplies and rest and recreation facilities for the AFFS.
 
@@ -117,33 +126,40 @@ planet:
       A large portion of the population on Crossing is made up of retired AFFS veterans and their families, with the cities of Crassus and New Rhodes made up almost entirely of retired personnel.
     landmass:
       - name:
-          source: 'Operational Turning Points: Death to Mercenaries, pg. 4'
+          source: 'OTP:DTM'
           value: Charon
+          page: 4
       - name:
-          source: 'Operational Turning Points: Death to Mercenaries, pg. 4'
+          source: 'OTP:DTM'
           value: Ganse
+          page: 4
         capital:
-          source: 'Operational Turning Points: Death to Mercenaries, pg. 4'
+          source: 'OTP:DTM'
           value: Averrant City
+          page: 4
     satellite:
       - name:
-          source: 'Operational Turning Points: Death to Mercenaries, pg. 4'
+          source: 'OTP:DTM'
           value: Journeyman
+          page: 4
         size: medium
         icon: rock17
       - name:
-          source: 'Operational Turning Points: Death to Mercenaries, pg. 4'
+          source: 'OTP:DTM'
           value: Scope
+          page: 4
         size: medium
         icon: rock10
       - name:
-          source: 'Operational Turning Points: Death to Mercenaries, pg. 4'
+          source: 'OTP:DTM'
           value: Trinket
+          page: 4
         size: medium
         icon: rock15
       - name:
-          source: 'Operational Turning Points: Death to Mercenaries, pg. 4'
+          source: 'OTP:DTM'
           value: Wayfarer
+          page: 4
         size: medium
         icon: rock1
     event:
@@ -200,6 +216,12 @@ planet:
       - date: '2360-01-01'
         population: 155199372.0
       - date: '2367-01-26'
+        # administration: FS | Draconis March | Fairfax Operational Area
+        # administration: FS | Draconis March | Fairfax Operational Area
+        # administration: FS | Draconis March | Fairfax Operational Area
+        # administration: FS | Draconis March | Fairfax Operational Area
+        # administration: FS | Draconis March | Fairfax Operational Area
+        # administration: FS | Draconis March | Fairfax Operational Area
         faction:
           source: canon
           value:
@@ -247,6 +269,12 @@ planet:
       - date: '2570-01-01'
         population: 339195503.0
       - date: '2571-09-05'
+        # administration: FS | Draconis March | Fairfax Operational Area
+        # administration: FS | Draconis March | Fairfax Operational Area
+        # administration: FS | Draconis March | Fairfax Operational Area
+        # administration: FS | Draconis March | Fairfax Operational Area
+        # administration: FS | Draconis March | Fairfax Operational Area
+        # administration: FS | Draconis March | Fairfax Operational Area
         faction:
           source: canon
           value:
@@ -358,8 +386,25 @@ planet:
       - date: '3030-01-01'
         population: 365989799.0
       - date: '3040-01-01'
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
         population: 749634868.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
+        # administration: FC | Draconis March | Robinson Operational Area
         faction:
           source: canon
           value:
@@ -372,7 +417,25 @@ planet:
         population: 1400792588.0
       - date: '3060-01-01'
         population: 2429485370.0
+      - date: '3067-01-01'
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FS
       - date: '3067-04-20'
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
+        # administration: FS | Draconis March | Robinson Operational Area
         faction:
           source: canon
           value:
@@ -399,7 +462,25 @@ planet:
           value: X
       - date: '3140-01-01'
         population: 3275244541.0
+      - date: '3145-01-01'
+        # administration: DC | New Samarkand Military District | Barlow's End Prefecture
+        # administration: DC | New Samarkand Military District | Barlow's End Prefecture
+        # administration: DC | New Samarkand Military District | Barlow's End Prefecture
+        # administration: DC | New Samarkand Military District | Barlow's End Prefecture
+        # administration: DC | New Samarkand Military District | Barlow's End Prefecture
+        # administration: DC | New Samarkand Military District | Barlow's End Prefecture
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - DC
       - date: '3145-11-05'
+        # administration: DC | New Samarkand Military District | Barlow's End Prefecture
+        # administration: DC | New Samarkand Military District | Barlow's End Prefecture
+        # administration: DC | New Samarkand Military District | Barlow's End Prefecture
+        # administration: DC | New Samarkand Military District | Barlow's End Prefecture
+        # administration: DC | New Samarkand Military District | Barlow's End Prefecture
+        # administration: DC | New Samarkand Military District | Barlow's End Prefecture
         faction:
           source: canon
           value:

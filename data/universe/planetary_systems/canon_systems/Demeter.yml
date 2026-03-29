@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -20,11 +20,13 @@ sucsId: 686
 xcood: 91.497
 ycood: -69.589
 spectralType:
-  source: FedCom Civil War, pg. 190
+  source: FCCW
   value: M2V
+  page: 190
 primarySlot:
-  source: FedCom Civil War, pg. 190
+  source: FCCW
   value: 3
+  page: 190
 event:
   - date: '2364-07-09'
     nadirCharge: yes
@@ -78,58 +80,71 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.16
     sysPos:
-      source: FedCom Civil War, pg. 190
+      source: FCCW
       value: 3
+      page: 190
     icon: green50
     pressure:
-      source: FedCom Civil War, pg. 190
+      source: FCCW
       value: STANDARD
+      page: 190
     atmosphere:
-      source: FedCom Civil War, pg. 190
+      source: FCCW
       value: BREATHABLE
+      page: 190
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: FedCom Civil War, pg. 190
+      source: FCCW
       value: 1.0
+      page: 190
     diameter: 13103
     density: 5.363162060717
     dayLength: 27
     yearLength: 0.6
     temperature:
-      source: FedCom Civil War, pg. 190
+      source: FCCW
       value: 35
+      page: 190
     water:
-      source: FedCom Civil War, pg. 190
+      source: FCCW
       value: 50
+      page: 190
     lifeForm:
-      source: FedCom Civil War, pg. 190
+      source: FCCW
       value: PLANT
+      page: 190
     desc: |-
       For its early history Demeter was known for being a planetary wilderness preserve in pristine conditions. Adding to the planet's natural beauty were many naturally occurring crystalline formations, many over a mile in diameter. The flora and fauna were imported from all over the Capellan Confederation.
 
       Unfortunately, after being occupied by the Federated Suns in the late 26th century, Demeter became a major staging area. Large portions of the planet were covered in concrete and heavy industry.
     landmass:
       - name:
-          source: FedCom Civil War, pg. 190
+          source: FCCW
           value: Bolan
+          page: 190
         capital:
-          source: FedCom Civil War, pg. 190
+          source: FCCW
           value: New Demeter City
+          page: 190
       - name:
-          source: FedCom Civil War, pg. 190
+          source: FCCW
           value: Shallahandra
+          page: 190
       - name:
-          source: FedCom Civil War, pg. 190
+          source: FCCW
           value: Ulreich
+          page: 190
     satellite:
       - name:
-          source: FedCom Civil War, pg. 190
+          source: FCCW
           value: Desamone
+          page: 190
         size: medium
         icon: rock3
       - name:
-          source: FedCom Civil War, pg. 190
+          source: FCCW
           value: Penndel
+          page: 190
         size: large
         icon: rock2
     event:
@@ -174,6 +189,12 @@ planet:
         population: 364187539.0
       - date: '2310-01-01'
         population: 522054105.0
+      - date: '2317-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - TGU
       - date: '2317-07-05'
         faction:
           source: canon
@@ -194,6 +215,12 @@ planet:
             - FS
       - date: '2360-01-01'
         population: 1819803062.0
+      - date: '2366-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - TGU
       - date: '2370-01-01'
         population: 2143023807.0
       - date: '2380-01-01'
@@ -237,6 +264,18 @@ planet:
         socioIndustrial: C-D-B-C-C
       - date: '2570-01-01'
         population: 5208241794.0
+      - date: '2571-01-01'
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FS
       - date: '2580-01-01'
         population: 5217110747.0
       - date: '2590-01-01'
@@ -346,8 +385,25 @@ planet:
       - date: '3030-01-01'
         population: 4299518285.0
       - date: '3040-01-01'
+        # administration: FC | Capellan March | Kathil Operational Area
+        # administration: FC | Capellan March | Kathil Operational Area
+        # administration: FC | Capellan March | Kathil Operational Area
+        # administration: FC | Capellan March | Kathil Operational Area
+        # administration: FC | Capellan March | Kathil Operational Area
+        # administration: FC | Capellan March | Kathil Operational Area
         population: 4507505674.0
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FC
       - date: '3040-01-19'
+        # administration: FC | Capellan March | Kathil Operational Area
+        # administration: FC | Capellan March | Kathil Operational Area
+        # administration: FC | Capellan March | Kathil Operational Area
+        # administration: FC | Capellan March | Kathil Operational Area
+        # administration: FC | Capellan March | Kathil Operational Area
+        # administration: FC | Capellan March | Kathil Operational Area
         faction:
           source: canon
           value:
@@ -371,11 +427,29 @@ planet:
           source: canon
           value:
             - LA
+      - date: '3067-01-01'
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FS
       - date: '3067-04-20'
         faction:
           source: canon
           value:
             - FS
+      - date: '3068-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - WOB
       - date: '3068-04-25'
         faction:
           source: canon
@@ -394,18 +468,42 @@ planet:
           source: canon
           value:
             - FS
+      - date: '3079-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - Stone
       - date: '3080-09-28'
         faction:
           source: canon
           value:
             - Stone
         population: 5207637871.0
+      - date: '3081-01-01'
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FS
       - date: '3081-09-26'
         faction:
           source: canon
           value:
             - ROS
       - date: '3085-01-01'
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
         faction:
           source: sucs
           value:
@@ -421,6 +519,12 @@ planet:
       - date: '3120-01-01'
         population: 5398528245.0
       - date: '3130-07-19'
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
+        # administration: FS | Capellan March | Kathil Operational Area
         faction:
           source: canon
           value:
@@ -432,7 +536,25 @@ planet:
           value: X
       - date: '3140-01-01'
         population: 5514198820.0
+      - date: '3145-01-01'
+        # administration: CC | Chesterton Commonality
+        # administration: CC | Chesterton Commonality
+        # administration: CC | Chesterton Commonality
+        # administration: CC | Chesterton Commonality
+        # administration: CC | Chesterton Commonality
+        # administration: CC | Chesterton Commonality
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - CC
       - date: '3145-09-05'
+        # administration: CC | Chesterton Commonality
+        # administration: CC | Chesterton Commonality
+        # administration: CC | Chesterton Commonality
+        # administration: CC | Chesterton Commonality
+        # administration: CC | Chesterton Commonality
+        # administration: CC | Chesterton Commonality
         faction:
           source: canon
           value:

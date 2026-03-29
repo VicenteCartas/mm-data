@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Wilkes
-sucsId: 2756
+sucsId: 2757
 xcood: -212.21
 ycood: -273.508
 spectralType: M4V
@@ -65,6 +65,12 @@ planet:
         population: 1081050.0
       - date: '2310-01-01'
         population: 2250308.0
+      - date: '2317-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '2320-01-01'
         population: 4240821.0
       - date: '2330-01-01'
@@ -117,6 +123,18 @@ planet:
         population: 197960016.0
       - date: '2570-01-01'
         population: 199296626.0
+      - date: '2571-01-01'
+        # administration: FWL | Principality of Regulus
+        # administration: FWL | Principality of Regulus
+        # administration: FWL | Principality of Regulus
+        # administration: FWL | Principality of Regulus
+        # administration: FWL | Principality of Regulus
+        # administration: FWL | Principality of Regulus
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FWL
       - date: '2580-01-01'
         population: 200216523.0
       - date: '2590-01-01'
@@ -239,6 +257,12 @@ planet:
         population: 224798170.0
       - date: '3080-01-01'
         population: 227739624.0
+      - date: '3081-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
       - date: '3081-07-30'
         faction:
           source: canon
@@ -262,6 +286,12 @@ planet:
         socioIndustrial: D-B-B-D-B
       - date: '3145-01-01'
         population: 249236682.0
+      - date: '3152-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - FWL
       - date: '3152-06-01'
         faction:
           source: canon

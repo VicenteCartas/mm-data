@@ -1,0 +1,187 @@
+# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
+#
+# NOTICE: The MegaMek organization is a non-profit group of volunteers
+# creating free software for the BattleTech community.
+#
+# MechWarrior, BattleMech, `Mech and AeroTech are registered trademarks
+# of The Topps Company, Inc. All Rights Reserved.
+#
+# Catalyst Game Labs and the Catalyst Game Labs logo are trademarks of
+# InMediaRes Productions, LLC.
+#
+# MechWarrior Copyright Microsoft Corporation. MegaMek Data was created under
+# Microsoft's "Game Content Usage Rules"
+# <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
+# affiliated with Microsoft.
+
+id: Fairuza
+sucsId: 3122
+xcood: 145.345
+ycood: -485.8
+spectralType: M4V
+primarySlot: 1
+planet:
+  - type: TERRESTRIAL
+    orbitalDist: 0.12
+    sysPos: 1
+    icon: green8
+    pressure: STANDARD
+    atmosphere: BREATHABLE
+    composition: Nitrogen and Oxygen, plus trace gases
+    gravity: 0.6
+    diameter: 10500
+    density: 4
+    dayLength: 23
+    yearLength: 0.5
+    temperature: 36
+    water: 47
+    lifeForm: FISH
+    satellite:
+      - name: 1-M1
+        size: medium
+        icon: rock1
+      - name: 1-M2
+        size: medium
+        icon: rock2
+      - name: 1-M3
+        size: medium
+        icon: rock3
+    name: Fairuza
+    event:
+      - date: '2900-01-01'
+        population: 54545.0
+        socioIndustrial: C-D-C-D-F
+      - date: '2910-01-01'
+        population: 285539.0
+      - date: '2920-01-01'
+        population: 853251.0
+      - date: '2930-01-01'
+        population: 1746854.0
+      - date: '2940-01-01'
+        population: 2801371.0
+      - date: '2950-01-01'
+        population: 3828937.0
+      - date: '2960-01-01'
+        population: 4718333.0
+      - date: '2962-01-01'
+        socioIndustrial: D-D-C-D-F
+      - date: '2970-01-01'
+        population: 5223821.0
+      - date: '2980-01-01'
+        population: 2496317.0
+      - date: '2990-01-01'
+        population: 1496546.0
+      - date: '3000-01-01'
+        population: 950893.0
+      - date: '3008-01-01'
+        socioIndustrial: D-D-C-D-D
+      - date: '3010-01-01'
+        population: 478817.0
+      - date: '3020-01-01'
+        population: 186682.0
+      - date: '3025-01-01'
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - IND
+      - date: '3030-01-01'
+        population: 0.0
+        socioIndustrial: X-X-X-X-X
+        faction:
+          source: SUCS
+          version: 2026.03.02
+          value:
+            - ABN
+  - type: ASTEROID_BELT
+    orbitalDist: 0.21
+    sysPos: 2
+    icon: asteroid3
+    yearLength: 0.6
+    temperature: -79
+    name: Fairuza II
+  - type: GAS_GIANT
+    orbitalDist: 0.3
+    sysPos: 3
+    icon: gasg22
+    pressure: VERY_HIGH
+    atmosphere: TOXIC_POISON
+    composition: Hydrogen and Helium, plus trace gases
+    gravity: 1.88
+    diameter: 120000
+    density: 1.1
+    dayLength: 13
+    yearLength: 0.6
+    smallMoons: 21
+    name: Fairuza III
+  - type: GIANT_TERRESTRIAL
+    orbitalDist: 0.48
+    sysPos: 4
+    icon: gasg13
+    pressure: VERY_HIGH
+    atmosphere: TOXIC_POISON
+    composition: Hydrogen and Helium, plus trace gases
+    gravity: 1.17
+    diameter: 16500
+    density: 5
+    dayLength: 10
+    yearLength: 0.6
+    satellite:
+      - name: 4-M1
+        size: medium
+        icon: rock1
+      - name: 4-M2
+        size: medium
+        icon: rock2
+      - name: 4-M3
+        size: medium
+        icon: rock3
+    name: Fairuza IV
+  - type: GIANT_TERRESTRIAL
+    orbitalDist: 0.84
+    sysPos: 5
+    icon: gasg16
+    pressure: VERY_HIGH
+    atmosphere: TOXIC_POISON
+    composition: Hydrogen and Helium, plus trace gases
+    gravity: 0.75
+    diameter: 17500
+    density: 3
+    dayLength: 9
+    yearLength: 0.9
+    satellite:
+      - name: 5-G1
+        size: giant
+        icon: oddmoon1
+    name: Fairuza V
+  - type: GAS_GIANT
+    orbitalDist: 1.56
+    sysPos: 6
+    icon: gasg8
+    pressure: VERY_HIGH
+    atmosphere: TOXIC_POISON
+    composition: Hydrogen and Helium, plus trace gases
+    gravity: 1.54
+    diameter: 120000
+    density: 0.9
+    dayLength: 10
+    yearLength: 2
+    ring: true
+    smallMoons: 21
+    name: Fairuza VI
+  - type: ICE_GIANT
+    orbitalDist: 3
+    sysPos: 7
+    icon: iceg18
+    pressure: VERY_HIGH
+    atmosphere: TOXIC_POISON
+    composition: Hydrogen and Helium, plus trace gases
+    gravity: 0.8
+    diameter: 35000
+    density: 1.6
+    dayLength: 11
+    yearLength: 5.2
+    smallMoons: 7
+    name: Fairuza VII
+event: [ ]
