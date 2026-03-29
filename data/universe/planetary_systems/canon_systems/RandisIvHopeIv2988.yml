@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Randis IV (Hope IV 2988-)
-sucsId: 2906
+sucsId: 2907
 xcood: 621.542
 ycood: -342.98
 spectralType:
@@ -39,7 +39,6 @@ planet:
     temperature: -119
     water: 0
     event:
-      - date: '2108-12-05'
       - date: '2988-01-01'
   - name: Hope II
     type: DWARF_TERRESTRIAL
@@ -56,7 +55,6 @@ planet:
     temperature: -40
     water: 0
     event:
-      - date: '2108-12-05'
       - date: '2988-01-01'
   - name: Hope III
     type: TERRESTRIAL
@@ -85,7 +83,6 @@ planet:
         size: medium
         icon: oddmoon3
     event:
-      - date: '2108-12-05'
       - date: '2988-01-01'
   - name:
       source: canon
@@ -281,8 +278,9 @@ planet:
         population: 18569766.0
       - date: '3145-01-01'
         population: 18644193.0
-      - date: '2108-12-05'
       - date: '2988-01-01'
+        name: Randis IV
+        message: Hope IV renamed to Randis IV
   - name: Hope V
     type: TERRESTRIAL
     orbitalDist: 1.4
@@ -303,7 +301,6 @@ planet:
       - name: Hauraki
       - name: Wairoa
     event:
-      - date: '2108-12-05'
       - date: '2988-01-01'
   - name: Hope VI
     type: GAS_GIANT
@@ -328,7 +325,6 @@ planet:
         size: large
         icon: rock1
     event:
-      - date: '2108-12-05'
       - date: '2988-01-01'
   - name: Hope VII
     type: GAS_GIANT
@@ -349,7 +345,6 @@ planet:
         size: large
         icon: rock13
     event:
-      - date: '2108-12-05'
       - date: '2988-01-01'
   - name: Hope VIII
     type: GAS_GIANT
@@ -370,7 +365,6 @@ planet:
         size: large
         icon: rock4
     event:
-      - date: '2108-12-05'
       - date: '2988-01-01'
   - name: Hope IX
     type: GAS_GIANT
@@ -407,7 +401,6 @@ planet:
         size: medium
         icon: rock5
     event:
-      - date: '2108-12-05'
       - date: '2988-01-01'
   - name: Hope X
     type: ICE_GIANT
@@ -432,5 +425,4 @@ planet:
         size: medium
         icon: oddmoon1
     event:
-      - date: '2108-12-05'
       - date: '2988-01-01'
