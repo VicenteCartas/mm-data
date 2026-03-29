@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: Skondia
-sucsId: 2355
+sucsId: 2354
 xcood: -31.803
 ycood: 55.527
 spectralType:
-  source: DA:RW
+  source: MWDA world profiles
   value: F6V
 primarySlot:
-  source: DA:RW
+  source: MWDA world profiles
   value: 2
 event:
   - date: '2363-08-20'
@@ -50,31 +50,31 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 2.08
     sysPos:
-      source: DA:RW
+      source: MWDA world profiles
       value: 2
     icon: wet15
     pressure:
-      source: DA:RW
+      source: MWDA world profiles
       value: STANDARD
     atmosphere:
-      source: DA:RW
+      source: MWDA world profiles
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: DA:RW
+      source: MWDA world profiles
       value: 1.08
     diameter: 11679
     density: 6.49893145718
     dayLength: 30
     yearLength: 3.2
     temperature:
-      source: DA:RW
+      source: MWDA world profiles
       value: 50
     water:
-      source: DA:RW
+      source: MWDA world profiles
       value: 77
     lifeForm:
-      source: DA:RW
+      source: MWDA world profiles
       value: BIRD
     desc: |-
       3135 - An abundance of rare mineral deposits and industrial-grade metals made Skondia a prize to the European and African colonists who first settled this world during humanity‘s exodus into space. Within a decade of the first settlers‘ arrival, in fact, the planet‘s first cities had already become industrial centers with dozens of businesses involved in the mining and refining of steel, titanium, and nickel-alloy materials used in everything from kitchen utensils to spacecraft and fusion engine manufacturing. Not surprisingly, this wealth soon drew the interest of the Federation of Skye.
@@ -86,27 +86,27 @@ planet:
       The capital of Skondia, Platinum City, is located on the southeastern continent of Steen. While this city boasts an impressive spaceport less than five kilometers to its north, most shipping traffic is routed through Passageway, a sprawling megalopolis on the northern continent of Edel.
     landmass:
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Edel
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Steen
         capital:
-          source: DA:RW
+          source: MWDA world profiles
           value: Platinum City
     satellite:
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Tadzio
         size: medium
         icon: rock13
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Urian
         size: medium
         icon: oddmoon1
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Wilmot
         size: medium
         icon: rock2
@@ -162,18 +162,6 @@ planet:
         population: 548928270.0
       - date: '2310-01-01'
         population: 669056771.0
-      - date: '2317-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
-      - date: '2319-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FoS
       - date: '2320-01-01'
         population: 801699813.0
       - date: '2330-01-01'
@@ -181,12 +169,6 @@ planet:
       - date: '2340-01-01'
         population: 1065461067.0
       - date: '2341-10-21'
-        # administration: LA | Federation of Skye
-        # administration: LA | Federation of Skye
-        # administration: LA | Federation of Skye
-        # administration: LA | Federation of Skye
-        # administration: LA | Federation of Skye
-        # administration: LA | Federation of Skye
         faction:
           source: canon
           value:
@@ -250,12 +232,6 @@ planet:
       - date: '2540-01-01'
         population: 2685871767.0
       - date: '2550-01-15'
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
         faction:
           source: canon
           value:
@@ -345,12 +321,6 @@ planet:
       - date: '2910-01-01'
         population: 2737103551.0
       - date: '2913-02-15'
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
         faction:
           source: canon
           value:
@@ -377,25 +347,7 @@ planet:
         population: 2380588675.0
       - date: '3020-01-01'
         population: 2341481173.0
-      - date: '3030-01-01'
-        # administration: DC | Dieron Military District | Kessel Prefecture
-        # administration: DC | Dieron Military District | Kessel Prefecture
-        # administration: DC | Dieron Military District | Kessel Prefecture
-        # administration: DC | Dieron Military District | Kessel Prefecture
-        # administration: DC | Dieron Military District | Kessel Prefecture
-        # administration: DC | Dieron Military District | Kessel Prefecture
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - DC
       - date: '3030-02-04'
-        # administration: DC | Dieron Military District | Kessel Prefecture
-        # administration: DC | Dieron Military District | Kessel Prefecture
-        # administration: DC | Dieron Military District | Kessel Prefecture
-        # administration: DC | Dieron Military District | Kessel Prefecture
-        # administration: DC | Dieron Military District | Kessel Prefecture
-        # administration: DC | Dieron Military District | Kessel Prefecture
         faction:
           source: canon
           value:
@@ -432,25 +384,7 @@ planet:
             - Stone
       - date: '3080-01-01'
         population: 2456914940.0
-      - date: '3081-01-01'
-        # administration: ROS | Prefecture IX
-        # administration: ROS | Prefecture IX
-        # administration: ROS | Prefecture IX
-        # administration: ROS | Prefecture IX
-        # administration: ROS | Prefecture IX
-        # administration: ROS | Prefecture IX
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - ROS
       - date: '3081-03-04'
-        # administration: ROS | Prefecture IX
-        # administration: ROS | Prefecture IX
-        # administration: ROS | Prefecture IX
-        # administration: ROS | Prefecture IX
-        # administration: ROS | Prefecture IX
-        # administration: ROS | Prefecture IX
         faction:
           source: canon
           value:
@@ -469,12 +403,6 @@ planet:
         population: 2493547694.0
       - date: '3132-08-07'
         hpg: X
-      - date: '3135-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '3135-10-01'
         faction:
           source: canon
@@ -488,12 +416,6 @@ planet:
         population: 2505044436.0
       - date: '3145-01-01'
         population: 2507550733.0
-      - date: '3152-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '3152-06-01'
         faction:
           source: sucs

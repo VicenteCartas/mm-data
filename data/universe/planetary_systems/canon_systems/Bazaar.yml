@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,13 +16,12 @@
 # affiliated with Microsoft.
 
 id: Bazaar
-sucsId: 2981
+sucsId: 3018
 xcood: 23.578
 ycood: 754.886
 spectralType:
-  source: EC
+  source: Explorer Corps, pg. 55
   value: G2VI
-  page: 55
 primarySlot: 3
 event:
   - date: '3052-12-02'
@@ -84,12 +83,6 @@ planet:
     landmass:
       - name: A1
     event:
-      - date: '3049-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CDS
       - date: '3052-10-26'
         faction:
           source: canon
@@ -98,12 +91,6 @@ planet:
         hpg: A
         population: 1250.0
         socioIndustrial: A-X-X-X-X
-      - date: '3095-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '3110-11-26'
         faction:
           source: canon

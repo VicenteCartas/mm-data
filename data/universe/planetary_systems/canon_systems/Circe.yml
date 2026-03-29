@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,17 +16,15 @@
 # affiliated with Microsoft.
 
 id: Circe
-sucsId: 2932
+sucsId: 2931
 xcood: -122.574
 ycood: 1614.831
 spectralType:
-  source: 'His:OK'
+  source: 'Historical: Operation Klondike, pg. 136'
   value: G2Ia
-  page: 136
 primarySlot:
-  source: 'His:OK'
+  source: 'Historical: Operation Klondike, pg. 136'
   value: 1
-  page: 136
 event:
   - date: '2788-08-31'
     nadirCharge: yes
@@ -37,69 +35,57 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 1.6
     sysPos:
-      source: 'His:OK'
+      source: 'Historical: Operation Klondike, pg. 136'
       value: 1
-      page: 136
     icon: green17
     pressure:
-      source: 'His:OK'
+      source: 'Historical: Operation Klondike, pg. 136'
       value: STANDARD
-      page: 136
     atmosphere:
-      source: 'His:OK'
+      source: 'Historical: Operation Klondike, pg. 136'
       value: BREATHABLE
-      page: 136
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'His:OK'
+      source: 'Historical: Operation Klondike, pg. 136'
       value: 0.8
-      page: 136
     diameter: 11444
     density: 4.912556120742
     dayLength: 18
     yearLength: 2.3
     temperature:
-      source: 'His:OK'
+      source: 'Historical: Operation Klondike, pg. 136'
       value: 40
-      page: 136
     water:
-      source: 'His:OK'
+      source: 'Historical: Operation Klondike, pg. 136'
       value: 50
-      page: 136
     lifeForm:
-      source: 'His:OK'
+      source: 'Historical: Operation Klondike, pg. 136'
       value: PLANT
-      page: 136
-    desc: Circe’s orbit follows a 700 year cycle that takes it from one extreme in the system’s life zone (the zone in which liquid water can exist) to the other. In the 29th century the planet was a desert wasteland, whereas by the 32nd century it is expected to be covered by glaciers and sheet ice. Early settlers found that while the air was free of serious contaminants, the soil contained a variety of toxins.
+    desc: Circe’s orbit follows a 700 year cycle that takes it from one extreme in
+      the system’s life zone (the zone in which liquid water can exist) to the other.
+      In the 29th century the planet was a desert wasteland, whereas by the 32nd century
+      it is expected to be covered by glaciers and sheet ice. Early settlers found
+      that while the air was free of serious contaminants, the soil contained a variety
+      of toxins.
     landmass:
       - name:
-          source: 'His:OK'
+          source: 'Historical: Operation Klondike, pg. 136'
           value: Northern Habitable Zone
-          page: 136
       - name:
-          source: 'His:OK'
+          source: 'Historical: Operation Klondike, pg. 136'
           value: Southern Habitable Zone
-          page: 136
     satellite:
       - name:
-          source: 'His:OK'
+          source: 'Historical: Operation Klondike, pg. 136'
           value: Aega
-          page: 136
         size: giant
         icon: rock6
       - name:
-          source: 'His:OK'
+          source: 'Historical: Operation Klondike, pg. 136'
           value: Telegonus
-          page: 136
         size: medium
         icon: rock11
     event:
-      - date: '2786-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - SLIE
       - date: '2786-10-27'
         faction:
           source: canon
@@ -124,12 +110,6 @@ planet:
         population: 760425.0
       - date: '2820-01-01'
         population: 541591.0
-      - date: '2821-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CLAN
       - date: '2822-10-09'
         faction:
           source: canon
@@ -143,11 +123,6 @@ planet:
             - CW
       - date: '2830-01-01'
         population: 865264.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CLAN
       - date: '2840-01-01'
         population: 1479313.0
       - date: '2850-01-01'
@@ -225,12 +200,6 @@ planet:
           value:
             - CCO
             - CSV
-      - date: '3075-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - ABN
       - date: '3075-01-30'
         faction:
           source: canon

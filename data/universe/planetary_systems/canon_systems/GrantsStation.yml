@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,17 +16,15 @@
 # affiliated with Microsoft.
 
 id: Grant's Station
-sucsId: 2945
+sucsId: 2944
 xcood: -66.81
 ycood: 1835.346
 spectralType:
-  source: WoK
+  source: Warriors of Kerensky, pg. 112
   value: G6III
-  page: 112
 primarySlot:
-  source: WoK
+  source: Warriors of Kerensky, pg. 112
   value: 3
-  page: 112
 event:
   - date: '2803-06-21'
     zenithCharge: yes
@@ -77,39 +75,32 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 1.44
     sysPos:
-      source: WoK
+      source: Warriors of Kerensky, pg. 112
       value: 3
-      page: 112
     icon: green45
     pressure:
-      source: WoK
+      source: Warriors of Kerensky, pg. 112
       value: STANDARD
-      page: 112
     atmosphere:
-      source: WoK
+      source: Warriors of Kerensky, pg. 112
       value: BREATHABLE
-      page: 112
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: WoK
+      source: Warriors of Kerensky, pg. 112
       value: 1.5
-      page: 112
     diameter: 14978
     density: 7.03812184824
     dayLength: 17
     yearLength: 2.0
     temperature:
-      source: WoK
+      source: Warriors of Kerensky, pg. 112
       value: 35
-      page: 112
     water:
-      source: WoK
+      source: Warriors of Kerensky, pg. 112
       value: 70
-      page: 112
     lifeForm:
-      source: WoK
+      source: Warriors of Kerensky, pg. 112
       value: BIRD
-      page: 112
     desc: No description available.
     smallMoons: 2
     landmass:
@@ -139,12 +130,6 @@ planet:
         population: 1185226.0
       - date: '2860-01-01'
         population: 1794528.0
-      - date: '2864-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CLAN
       - date: '2864-08-08'
         faction:
           source: canon
@@ -208,12 +193,6 @@ planet:
           source: canon
           value:
             - CSV
-      - date: '3075-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CSA
       - date: '3075-03-06'
         faction:
           source: canon

@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Skvorec
-sucsId: 2356
+sucsId: 2355
 xcood: -158.204
 ycood: -307.697
 spectralType: G7V
@@ -198,12 +198,6 @@ planet:
         population: 229192846.0
       - date: '3080-01-01'
         population: 233355670.0
-      - date: '3081-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '3081-05-10'
         faction:
           source: canon
@@ -366,7 +360,8 @@ planet:
     icon: frozen34
     pressure: STANDARD
     atmosphere: TOXIC_CAUSTIC
-    composition: Ammonia and Methane, plus trace amounts of Water Vapor and Hydrogen Peroxide
+    composition: Ammonia and Methane, plus trace amounts of Water Vapor and Hydrogen
+      Peroxide
     gravity: 1.99
     diameter: 17500
     density: 8.0

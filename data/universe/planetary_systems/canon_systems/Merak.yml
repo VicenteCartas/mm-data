@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Merak
-sucsId: 1681
+sucsId: 1680
 xcood: -119.439
 ycood: -62.342
 spectralType: G0V
@@ -114,23 +114,11 @@ planet:
         population: 65056.0
       - date: '2270-01-01'
         population: 256065.0
-      - date: '2271-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - SC
       - date: '2280-01-01'
         population: 833876.0
       - date: '2290-01-01'
         population: 2323593.0
       - date: '2293-07-05'
-        # administration: FWL | Stewart Confederation
-        # administration: FWL | Stewart Confederation
-        # administration: FWL | Stewart Confederation
-        # administration: FWL | Stewart Confederation
-        # administration: FWL | Stewart Confederation
-        # administration: FWL | Stewart Confederation
         faction:
           source: canon
           value:
@@ -337,12 +325,6 @@ planet:
         hpg: X
       - date: '3140-01-01'
         population: 1740638540.0
-      - date: '3145-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CWE
       - date: '3145-11-16'
         faction:
           source: canon
@@ -354,18 +336,6 @@ planet:
           source: canon
           value:
             - CP
-      - date: '3152-01-01'
-        # administration: FWL | Clan Protectorate
-        # administration: FWL | Clan Protectorate
-        # administration: FWL | Clan Protectorate
-        # administration: FWL | Clan Protectorate
-        # administration: FWL | Clan Protectorate
-        # administration: FWL | Clan Protectorate
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FWL
   - name: Krios
     type: ICE_GIANT
     orbitalDist: 3.08

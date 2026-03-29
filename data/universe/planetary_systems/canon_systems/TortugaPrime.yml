@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,16 +16,15 @@
 # affiliated with Microsoft.
 
 id: Tortuga Prime
-sucsId: 2570
+sucsId: 2569
 xcood: 664.715
 ycood: -233.487
 spectralType:
   source: canon
   value: G2IV
 primarySlot:
-  source: M&M
+  source: Masters and Minions, pg. 239
   value: 3
-  page: 239
 planet:
   - name: Morrighan
     type: GIANT_TERRESTRIAL
@@ -69,36 +68,30 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 1.6
     sysPos:
-      source: M&M
+      source: Masters and Minions, pg. 239
       value: 3
-      page: 239
     icon: green25
     pressure:
-      source: M&M
+      source: Masters and Minions, pg. 239
       value: STANDARD
-      page: 239
     atmosphere: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: M&M
+      source: Masters and Minions, pg. 239
       value: 0.85
-      page: 239
     diameter: 10084
     density: 5.923683569015
     dayLength: 19
     yearLength: 2.3
     temperature:
-      source: M&M
+      source: Masters and Minions, pg. 239
       value: 30
-      page: 239
     water:
-      source: M&M
+      source: Masters and Minions, pg. 239
       value: 40
-      page: 239
     lifeForm:
-      source: M&M
+      source: Masters and Minions, pg. 239
       value: PLANT
-      page: 239
     desc: |-
       Tortuga is a planet of vast grassy plains and abundant natural resources. Unfortunately by the 31st Century most of the once abundant raw materials had been extracted and used. Tortuga is the infamous center of the Tortuga Dominions pirate realm.
 
@@ -111,47 +104,35 @@ planet:
           source: canon
           value: Torment
         capital:
-          source: M&M
+          source: Masters and Minions, pg. 239
           value: Raider's Roost
-          page: 239
     satellite:
       - name:
-          source: M&M
+          source: Masters and Minions, pg. 239
           value: Barbarossa
-          page: 239
         size: large
         icon: rock13
       - name:
-          source: M&M
+          source: Masters and Minions, pg. 239
           value: Kidd
-          page: 239
         size: medium
         icon: oddmoon2
       - name:
-          source: M&M
+          source: Masters and Minions, pg. 239
           value: Lafleur
-          page: 239
         size: large
         icon: rock7
       - name:
-          source: M&M
+          source: Masters and Minions, pg. 239
           value: Pandora
-          page: 239
         size: large
         icon: rock16
       - name:
-          source: M&M
+          source: Masters and Minions, pg. 239
           value: Wendigo
-          page: 239
         size: large
         icon: rock6
     event:
-      - date: '2596-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '2596-04-14'
         faction:
           source: canon
@@ -160,12 +141,6 @@ planet:
         population: 46293.0
         socioIndustrial: C-D-C-D-D
       - date: '2600-09-13'
-        # administration: TD | National Capital
-        # administration: TD | National Capital
-        # administration: TD | National Capital
-        # administration: TD | National Capital
-        # administration: TD | National Capital
-        # administration: TD | National Capital
         faction:
           source: canon
           value:

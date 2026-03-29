@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: Vindemiatrix
-sucsId: 2691
+sucsId: 2690
 xcood: -100.411
 ycood: 26.388
 spectralType:
-  source: DA:RW
+  source: MWDA world profiles
   value: G8III
 primarySlot:
-  source: DA:RW
+  source: MWDA world profiles
   value: 3
 planet:
   - name: Juturna
@@ -62,55 +62,72 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 1.28
     sysPos:
-      source: DA:RW
+      source: MWDA world profiles
       value: 3
     icon: green41
     pressure:
-      source: DA:RW
+      source: MWDA world profiles
       value: STANDARD
     atmosphere:
-      source: DA:RW
+      source: MWDA world profiles
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: DA:RW
+      source: MWDA world profiles
       value: 1.03
     diameter: 13790
     density: 5.24905193149
     dayLength: 19
     yearLength: 1.7
     temperature:
-      source: DA:RW
+      source: MWDA world profiles
       value: 49
     water:
-      source: DA:RW
+      source: MWDA world profiles
       value: 48
     lifeForm:
-      source: DA:RW
+      source: MWDA world profiles
       value: MAMMAL
-    desc: Orbiting a yellow giant that is prone to all manner of solar activity, from massive sunspots to occasional gravitational shifts intense enough to set off earthquakes and volcanoes, Vindemiatrix is a world facing its own eventual extinction. Scientists believe the final collapse of the parent star is still several thousand years away, but already the effects of its death throes have been felt on this world. In the centuries since the first settlers came here, over fifteen percent of the various species in the local flora and fauna have become extinct, with another thirty percent formally listed as endangered due to gradual changes in climate and the added stress of human occupation. Though numerous initiatives to slow the decline of the ecosystem have been attempted through the centuries, none have been entirely successful. Despite this gloomy forecast, Vindemiatrix remains a pleasant enough world to visit and live on. Several veins of common metals, suitable to support a modest industrial base, are backed up by enough arable land to support the planet‘s population. The planet is also home to the Vindemiatrix Observatory, a university focused almost exclusively on the study of planetology and stellar phenomena. Understandably, the largest focus of study at the Observatory campus is that of stellar life cycles, with the planet‘s own star serving as a point of reference. Vindemiatrix Observatory is located on the outskirts of Havannask, a mining town on the northern continent of Treshiria. The planetary capital, Brattleston Depot, and its attendant spaceport, are located on the southeastern continent of Scandavara. Vindemiatrix‘s third large landmass, the southwestern continent of Kressia, is home to most of the planet‘s ranching and farming communities, thanks to its abundance of arable land, and also boasts the largest natural wildlife preserves for the planet‘s endangered species.
+    desc: Orbiting a yellow giant that is prone to all manner of solar activity, from
+      massive sunspots to occasional gravitational shifts intense enough to set off
+      earthquakes and volcanoes, Vindemiatrix is a world facing its own eventual extinction.
+      Scientists believe the final collapse of the parent star is still several thousand
+      years away, but already the effects of its death throes have been felt on this
+      world. In the centuries since the first settlers came here, over fifteen percent
+      of the various species in the local flora and fauna have become extinct, with
+      another thirty percent formally listed as endangered due to gradual changes
+      in climate and the added stress of human occupation. Though numerous initiatives
+      to slow the decline of the ecosystem have been attempted through the centuries,
+      none have been entirely successful. Despite this gloomy forecast, Vindemiatrix
+      remains a pleasant enough world to visit and live on. Several veins of common
+      metals, suitable to support a modest industrial base, are backed up by enough
+      arable land to support the planet‘s population. The planet is also home to the
+      Vindemiatrix Observatory, a university focused almost exclusively on the study
+      of planetology and stellar phenomena. Understandably, the largest focus of study
+      at the Observatory campus is that of stellar life cycles, with the planet‘s
+      own star serving as a point of reference. Vindemiatrix Observatory is located
+      on the outskirts of Havannask, a mining town on the northern continent of Treshiria.
+      The planetary capital, Brattleston Depot, and its attendant spaceport, are located
+      on the southeastern continent of Scandavara. Vindemiatrix‘s third large landmass,
+      the southwestern continent of Kressia, is home to most of the planet‘s ranching
+      and farming communities, thanks to its abundance of arable land, and also boasts
+      the largest natural wildlife preserves for the planet‘s endangered species.
     smallMoons: 4
     landmass:
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Kressia
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Scandavara
         capital:
-          source: DA:RW
+          source: MWDA world profiles
           value: Brattleston Depot
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Treshiria
     event:
       - date: '2600-02-16'
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
         faction:
           source: canon
           value:
@@ -218,25 +235,8 @@ planet:
       - date: '3032-01-01'
         socioIndustrial: C-B-D-C-D
       - date: '3040-01-01'
-        # administration: FC | Skye March | Alcor Operational Area
-        # administration: FC | Skye March | Alcor Operational Area
-        # administration: FC | Skye March | Alcor Operational Area
-        # administration: FC | Skye March | Alcor Operational Area
-        # administration: FC | Skye March | Alcor Operational Area
-        # administration: FC | Skye March | Alcor Operational Area
         population: 1145353796.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FC
       - date: '3040-01-19'
-        # administration: FC | Skye March | Alcor Operational Area
-        # administration: FC | Skye March | Alcor Operational Area
-        # administration: FC | Skye March | Alcor Operational Area
-        # administration: FC | Skye March | Alcor Operational Area
-        # administration: FC | Skye March | Alcor Operational Area
-        # administration: FC | Skye March | Alcor Operational Area
         faction:
           source: canon
           value:
@@ -245,25 +245,7 @@ planet:
         socioIndustrial: B-A-C-B-C
       - date: '3050-01-01'
         population: 1152361807.0
-      - date: '3057-01-01'
-        # administration: LA | Skye March | Alcor Operational Area
-        # administration: LA | Skye March | Alcor Operational Area
-        # administration: LA | Skye March | Alcor Operational Area
-        # administration: LA | Skye March | Alcor Operational Area
-        # administration: LA | Skye March | Alcor Operational Area
-        # administration: LA | Skye March | Alcor Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LA
       - date: '3057-09-18'
-        # administration: LA | Skye Province | Freedom Theater
-        # administration: LA | Skye Province | Freedom Theater
-        # administration: LA | Skye Province | Freedom Theater
-        # administration: LA | Skye Province | Freedom Theater
-        # administration: LA | Skye Province | Freedom Theater
-        # administration: LA | Skye Province | Freedom Theater
         faction:
           source: canon
           value:
@@ -274,25 +256,7 @@ planet:
         population: 1165807035.0
       - date: '3080-01-01'
         population: 1175876211.0
-      - date: '3081-01-01'
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - ROS
       - date: '3081-01-22'
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
         faction:
           source: canon
           value:
@@ -311,12 +275,6 @@ planet:
         population: 1236164674.0
       - date: '3132-08-07'
         hpg: X
-      - date: '3135-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '3135-10-01'
         faction:
           source: canon
@@ -324,25 +282,7 @@ planet:
             - IND
       - date: '3140-01-01'
         population: 1252840761.0
-      - date: '3145-01-01'
-        # administration: LA | Donegal Province
-        # administration: LA | Donegal Province
-        # administration: LA | Donegal Province
-        # administration: LA | Donegal Province
-        # administration: LA | Donegal Province
-        # administration: LA | Donegal Province
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LA
       - date: '3145-03-17'
-        # administration: LA | Donegal Province
-        # administration: LA | Donegal Province
-        # administration: LA | Donegal Province
-        # administration: LA | Donegal Province
-        # administration: LA | Donegal Province
-        # administration: LA | Donegal Province
         faction:
           source: canon
           value:

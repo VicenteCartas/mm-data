@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,17 +16,15 @@
 # affiliated with Microsoft.
 
 id: Tall Trees
-sucsId: 2471
+sucsId: 2470
 xcood: 0.767
 ycood: -66.743
 spectralType:
-  source: HLSB
+  source: House Liao, pg. 142
   value: M2IV
-  page: 142
 primarySlot:
-  source: HLSB
+  source: House Liao, pg. 142
   value: 8
-  page: 142
 event:
   - date: '2364-06-15'
     zenithCharge: yes
@@ -173,9 +171,8 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.28
     sysPos:
-      source: HLSB
+      source: House Liao, pg. 142
       value: 8
-      page: 142
     icon: green24
     pressure: STANDARD
     atmosphere: BREATHABLE
@@ -188,10 +185,16 @@ planet:
     temperature: 32
     water: 37
     lifeForm:
-      source: HLSB
+      source: House Liao, pg. 142
       value: MAMMAL
-      page: 142
-    desc: As of 3025 Tall Trees was home to a secret Confederation genetic research installation. While the research station is believed to be the source of the miraculous food development projects that prevented the famines in the Confederation during the late 30th century the secret genetic research installation is also believed to be responsible for the sudden plague outbreak that wiped out the entire population of the island of New Tierra del Fuego II in 2966. Confederation troops guarding the facility receive triple pay for hazardous duty/combat even decades after the incident.
+    desc: As of 3025 Tall Trees was home to a secret Confederation genetic research
+      installation. While the research station is believed to be the source of the
+      miraculous food development projects that prevented the famines in the Confederation
+      during the late 30th century the secret genetic research installation is also
+      believed to be responsible for the sudden plague outbreak that wiped out the
+      entire population of the island of New Tierra del Fuego II in 2966. Confederation
+      troops guarding the facility receive triple pay for hazardous duty/combat even
+      decades after the incident.
     landmass:
       - name: Miles's Patch
         capital: New Rockaway
@@ -223,12 +226,6 @@ planet:
           source: canon
           value:
             - DoL
-      - date: '2317-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '2320-01-01'
         population: 41272664.0
       - date: '2330-01-01'
@@ -239,12 +236,6 @@ planet:
         population: 129345574.0
       - date: '2360-01-01'
         population: 171139083.0
-      - date: '2366-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CCom
       - date: '2367-07-01'
         faction:
           source: canon
@@ -294,25 +285,7 @@ planet:
         population: 1017463479.0
       - date: '2570-01-01'
         population: 1040378852.0
-      - date: '2571-01-01'
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - TH
       - date: '2571-10-12'
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
         faction:
           source: canon
           value:
@@ -363,18 +336,6 @@ planet:
         population: 1265821206.0
       - date: '2760-01-01'
         population: 1264137262.0
-      - date: '2767-01-01'
-        # administration: AE | Terra Firma Province
-        # administration: AE | Terra Firma Province
-        # administration: AE | Terra Firma Province
-        # administration: AE | Terra Firma Province
-        # administration: AE | Terra Firma Province
-        # administration: AE | Terra Firma Province
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - AE
       - date: '2767-04-09'
         faction:
           source: canon
@@ -383,12 +344,6 @@ planet:
       - date: '2770-01-01'
         population: 1264097628.0
       - date: '2779-09-28'
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
         faction:
           source: canon
           value:
@@ -396,12 +351,6 @@ planet:
       - date: '2780-01-01'
         population: 1244034074.0
       - date: '2790-11-13'
-        # administration: CC | Tikonov Commonality | Region 5
-        # administration: CC | Tikonov Commonality | Region 5
-        # administration: CC | Tikonov Commonality | Region 5
-        # administration: CC | Tikonov Commonality | Region 5
-        # administration: CC | Tikonov Commonality | Region 5
-        # administration: CC | Tikonov Commonality | Region 5
         faction:
           source: canon
           value:
@@ -461,18 +410,6 @@ planet:
         population:
           source: canon
           value: 964000000.0
-      - date: '3030-01-01'
-        # administration: LA | Sarna March | Tikonov Operational Area
-        # administration: LA | Sarna March | Tikonov Operational Area
-        # administration: LA | Sarna March | Tikonov Operational Area
-        # administration: LA | Sarna March | Tikonov Operational Area
-        # administration: LA | Sarna March | Tikonov Operational Area
-        # administration: LA | Sarna March | Tikonov Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LA
       - date: '3030-03-28'
         faction:
           source: canon
@@ -480,25 +417,8 @@ planet:
             - FS
         population: 965318707.0
       - date: '3040-01-01'
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
         population: 979120065.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FC
       - date: '3040-01-19'
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
         faction:
           source: canon
           value:
@@ -507,12 +427,6 @@ planet:
         socioIndustrial: A-C-C-A-C
       - date: '3050-01-01'
         population: 990615544.0
-      - date: '3057-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - ST
       - date: '3057-11-01'
         faction:
           source: canon
@@ -541,25 +455,7 @@ planet:
             - Stone
       - date: '3080-01-01'
         population: 1024189155.0
-      - date: '3081-01-01'
-        # administration: ROS | Prefecture VI
-        # administration: ROS | Prefecture VI
-        # administration: ROS | Prefecture VI
-        # administration: ROS | Prefecture VI
-        # administration: ROS | Prefecture VI
-        # administration: ROS | Prefecture VI
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - ROS
       - date: '3081-05-01'
-        # administration: ROS | Prefecture VI
-        # administration: ROS | Prefecture VI
-        # administration: ROS | Prefecture VI
-        # administration: ROS | Prefecture VI
-        # administration: ROS | Prefecture VI
-        # administration: ROS | Prefecture VI
         faction:
           source: canon
           value:
@@ -580,12 +476,6 @@ planet:
         hpg:
           source: canon
           value: X
-      - date: '3135-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '3135-10-01'
         faction:
           source: canon
@@ -598,25 +488,7 @@ planet:
             - TTU
       - date: '3140-01-01'
         population: 1120417329.0
-      - date: '3145-01-01'
-        # administration: CC | Tikonov Commonality | Region 3
-        # administration: CC | Tikonov Commonality | Region 3
-        # administration: CC | Tikonov Commonality | Region 3
-        # administration: CC | Tikonov Commonality | Region 3
-        # administration: CC | Tikonov Commonality | Region 3
-        # administration: CC | Tikonov Commonality | Region 3
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CC
       - date: '3145-05-05'
-        # administration: CC | Tikonov Commonality | Region 3
-        # administration: CC | Tikonov Commonality | Region 3
-        # administration: CC | Tikonov Commonality | Region 3
-        # administration: CC | Tikonov Commonality | Region 3
-        # administration: CC | Tikonov Commonality | Region 3
-        # administration: CC | Tikonov Commonality | Region 3
         faction:
           source: canon
           value:

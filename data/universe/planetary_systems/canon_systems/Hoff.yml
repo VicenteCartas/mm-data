@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,17 +16,15 @@
 # affiliated with Microsoft.
 
 id: Hoff
-sucsId: 1123
+sucsId: 1122
 xcood: 264.176
 ycood: 36.654
 spectralType:
-  source: 25YAF
+  source: 25 Years of Art and Fiction, pg. 87
   value: G4III
-  page: 87
 primarySlot:
-  source: 25YAF
+  source: 25 Years of Art and Fiction, pg. 87
   value: 4
-  page: 87
 event:
   - date: '2374-11-10'
     zenithCharge: yes
@@ -105,49 +103,47 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 1.44
     sysPos:
-      source: 25YAF
+      source: 25 Years of Art and Fiction, pg. 87
       value: 4
-      page: 87
     icon: green41
     pressure:
-      source: 25YAF
+      source: 25 Years of Art and Fiction, pg. 87
       value: STANDARD
-      page: 87
     atmosphere:
-      source: 25YAF
+      source: 25 Years of Art and Fiction, pg. 87
       value: BREATHABLE
-      page: 87
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 25YAF
+      source: 25 Years of Art and Fiction, pg. 87
       value: 0.95
-      page: 87
     diameter: 14673
     density: 4.549885479782
     dayLength: 23
     yearLength: 2.0
     temperature:
-      source: 25YAF
+      source: 25 Years of Art and Fiction, pg. 87
       value: 25
-      page: 87
     water:
-      source: 25YAF
+      source: 25 Years of Art and Fiction, pg. 87
       value: 73
-      page: 87
     lifeForm:
-      source: 25YAF
+      source: 25 Years of Art and Fiction, pg. 87
       value: MAMMAL
-      page: 87
-    desc: Hoff is covered in wide open plains crossed by rivers, which made it an ideal agriculture world. Early settlers planted crops in the fertile soil and used the wide open grassy plains for livestock. However, modest deposits of coal and other raw materials saw the birth of advanced industry on the planet prior to the Succession Wars. While the Succession Wars saw much of the heavy industry destroyed or damaged beyond use, the Friden Aerospace park was reopened in 3022 and the Federated Suns used the site as a weapons research center.
+    desc: Hoff is covered in wide open plains crossed by rivers, which made it an
+      ideal agriculture world. Early settlers planted crops in the fertile soil and
+      used the wide open grassy plains for livestock. However, modest deposits of
+      coal and other raw materials saw the birth of advanced industry on the planet
+      prior to the Succession Wars. While the Succession Wars saw much of the heavy
+      industry destroyed or damaged beyond use, the Friden Aerospace park was reopened
+      in 3022 and the Federated Suns used the site as a weapons research center.
     landmass:
       - name: Ghielenskluft
         capital: Seggebruch
       - name: Krehbiel
     satellite:
       - name:
-          source: 25YAF
+          source: 25 Years of Art and Fiction, pg. 87
           value: Spad
-          page: 87
         size: medium
         icon: oddmoon3
     event:
@@ -174,12 +170,6 @@ planet:
           value:
             - FS
         population: 11530527.0
-      - date: '2366-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '2370-01-01'
         population: 19681926.0
       - date: '2380-01-01'
@@ -226,18 +216,6 @@ planet:
         population: 384121716.0
       - date: '2570-01-01'
         population: 392994650.0
-      - date: '2571-01-01'
-        # administration: FS | Draconis March | Fairfax Operational Area
-        # administration: FS | Draconis March | Fairfax Operational Area
-        # administration: FS | Draconis March | Fairfax Operational Area
-        # administration: FS | Draconis March | Fairfax Operational Area
-        # administration: FS | Draconis March | Fairfax Operational Area
-        # administration: FS | Draconis March | Fairfax Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FS
       - date: '2580-01-01'
         population: 404887179.0
       - date: '2590-01-01'
@@ -341,25 +319,8 @@ planet:
       - date: '3030-01-01'
         population: 363834583.0
       - date: '3040-01-01'
-        # administration: FC | Draconis March | Robinson Operational Area
-        # administration: FC | Draconis March | Robinson Operational Area
-        # administration: FC | Draconis March | Robinson Operational Area
-        # administration: FC | Draconis March | Robinson Operational Area
-        # administration: FC | Draconis March | Robinson Operational Area
-        # administration: FC | Draconis March | Robinson Operational Area
         population: 366756934.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FC
       - date: '3040-01-19'
-        # administration: FC | Draconis March | Robinson Operational Area
-        # administration: FC | Draconis March | Robinson Operational Area
-        # administration: FC | Draconis March | Robinson Operational Area
-        # administration: FC | Draconis March | Robinson Operational Area
-        # administration: FC | Draconis March | Robinson Operational Area
-        # administration: FC | Draconis March | Robinson Operational Area
         faction:
           source: canon
           value:
@@ -370,25 +331,7 @@ planet:
         population: 369333239.0
       - date: '3060-01-01'
         population: 371147413.0
-      - date: '3067-01-01'
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FS
       - date: '3067-04-20'
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
         faction:
           source: canon
           value:
@@ -411,25 +354,7 @@ planet:
         population: 389903520.0
       - date: '3140-01-01'
         population: 389903520.0
-      - date: '3145-01-01'
-        # administration: DC | New Samarkand Military District | Barlow's End Prefecture
-        # administration: DC | New Samarkand Military District | Barlow's End Prefecture
-        # administration: DC | New Samarkand Military District | Barlow's End Prefecture
-        # administration: DC | New Samarkand Military District | Barlow's End Prefecture
-        # administration: DC | New Samarkand Military District | Barlow's End Prefecture
-        # administration: DC | New Samarkand Military District | Barlow's End Prefecture
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - DC
       - date: '3145-04-28'
-        # administration: DC | New Samarkand Military District | Barlow's End Prefecture
-        # administration: DC | New Samarkand Military District | Barlow's End Prefecture
-        # administration: DC | New Samarkand Military District | Barlow's End Prefecture
-        # administration: DC | New Samarkand Military District | Barlow's End Prefecture
-        # administration: DC | New Samarkand Military District | Barlow's End Prefecture
-        # administration: DC | New Samarkand Military District | Barlow's End Prefecture
         faction:
           source: canon
           value:

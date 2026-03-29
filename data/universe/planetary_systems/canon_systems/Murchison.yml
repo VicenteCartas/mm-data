@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,16 +16,15 @@
 # affiliated with Microsoft.
 
 id: Murchison
-sucsId: 1774
+sucsId: 1773
 xcood: 74.697
 ycood: 19.855
 spectralType:
   source: canon
   value: G8IV
 primarySlot:
-  source: SLSB
+  source: Star League, pg. 174
   value: 3
-  page: 174
 event:
   - date: '2436-07-18'
     nadirCharge: yes
@@ -58,7 +57,8 @@ planet:
     icon: rock6
     pressure: TRACE
     atmosphere: TOXIC_POISON
-    composition: Nitrogen and Carbon Dioxide, plus trace amounts of Water Vapor and Methane
+    composition: Nitrogen and Carbon Dioxide, plus trace amounts of Water Vapor and
+      Methane
     gravity: 1.1
     diameter: 14500
     density: 5.3284
@@ -76,34 +76,32 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 1.28
     sysPos:
-      source: SLSB
+      source: Star League, pg. 174
       value: 3
-      page: 174
     icon: green50
     pressure:
-      source: DA:RW
+      source: MWDA world profiles
       value: HIGH
     atmosphere:
-      source: DA:RW
+      source: MWDA world profiles
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: DA:RW
+      source: MWDA world profiles
       value: 1.18
     diameter: 14235
     density: 5.825677127895
     dayLength: 22
     yearLength: 1.7
     temperature:
-      source: DA:RW
+      source: MWDA world profiles
       value: 47
     water:
-      source: DA:RW
+      source: MWDA world profiles
       value: 54
     lifeForm:
-      source: SLSB
+      source: Star League, pg. 174
       value: MAMMAL
-      page: 174
     desc: |-
       A large, populous world blessed with a habitable satellite (Oasis), Murchison was a colonists‘ dream when it was discovered in the early days of spaceflight. Though gravity was slightly greater and the atmosphere somewhat heavier than Terran-normal,
       Murchison‘s ample water supply, fertile soil, and mineral wealth invited millions of eager colonists to the planet. An assortment of civilian industries grew on Murchison and its satellite, particularly electronics, pharmaceuticals, automotive, and aerospace industries. Cattle farming, which proved more suited to the planet, and agriculture on the primary moon, provided an interesting
@@ -112,35 +110,35 @@ planet:
       spaceport of Laubenstein.
     landmass:
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Abla
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Felkra
         capital:
-          source: DA:RW
+          source: MWDA world profiles
           value: Murchison City
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Haschweld
     satellite:
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Oasis
         size: medium
         icon: oddmoon3
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Shard
         size: medium
         icon: rock7
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Teller
         size: large
         icon: rock12
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Tinker
         size: large
         icon: rock13
@@ -178,11 +176,6 @@ planet:
         population: 855310.0
       - date: '2341-01-01'
         socioIndustrial: D-D-A-D-D
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '2350-01-01'
         population: 992381.0
       - date: '2360-01-01'
@@ -234,18 +227,6 @@ planet:
         population: 2825502.0
       - date: '2570-01-01'
         population: 2854140.0
-      - date: '2571-01-01'
-        # administration: TH | Lockdale Province
-        # administration: TH | Lockdale Province
-        # administration: TH | Lockdale Province
-        # administration: TH | Lockdale Province
-        # administration: TH | Lockdale Province
-        # administration: TH | Lockdale Province
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - TH
       - date: '2580-01-01'
         population: 2875535.0
       - date: '2590-01-01'
@@ -287,18 +268,6 @@ planet:
         population: 2975021.0
       - date: '2760-01-01'
         population: 2969527.0
-      - date: '2767-01-01'
-        # administration: AE | Lockdale Province
-        # administration: AE | Lockdale Province
-        # administration: AE | Lockdale Province
-        # administration: AE | Lockdale Province
-        # administration: AE | Lockdale Province
-        # administration: AE | Lockdale Province
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - AE
       - date: '2767-03-02'
         faction:
           source: canon
@@ -308,37 +277,13 @@ planet:
       - date: '2770-01-01'
         population: 2986117.0
       - date: '2779-10-12'
-        # administration: TH | Lockdale Province
-        # administration: TH | Lockdale Province
-        # administration: TH | Lockdale Province
-        # administration: TH | Lockdale Province
-        # administration: TH | Lockdale Province
-        # administration: TH | Lockdale Province
         faction:
           source: canon
           value:
             - TH
       - date: '2780-01-01'
         population: 3048079.0
-      - date: '2786-01-01'
-        # administration: DC | Benjamin Military District | Ashio Prefecture
-        # administration: DC | Benjamin Military District | Ashio Prefecture
-        # administration: DC | Benjamin Military District | Ashio Prefecture
-        # administration: DC | Benjamin Military District | Ashio Prefecture
-        # administration: DC | Benjamin Military District | Ashio Prefecture
-        # administration: DC | Benjamin Military District | Ashio Prefecture
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - DC
       - date: '2786-11-08'
-        # administration: DC | Dieron Military District | Addicks Prefecture
-        # administration: DC | Dieron Military District | Addicks Prefecture
-        # administration: DC | Dieron Military District | Addicks Prefecture
-        # administration: DC | Dieron Military District | Addicks Prefecture
-        # administration: DC | Dieron Military District | Addicks Prefecture
-        # administration: DC | Dieron Military District | Addicks Prefecture
         faction:
           source: canon
           value:
@@ -406,25 +351,8 @@ planet:
       - date: '3034-01-01'
         socioIndustrial: D-D-C-C-C
       - date: '3040-01-01'
-        # administration: FC | Draconis March | Robinson Operational Area
-        # administration: FC | Draconis March | Robinson Operational Area
-        # administration: FC | Draconis March | Robinson Operational Area
-        # administration: FC | Draconis March | Robinson Operational Area
-        # administration: FC | Draconis March | Robinson Operational Area
-        # administration: FC | Draconis March | Robinson Operational Area
         population: 26760977.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FC
       - date: '3040-01-19'
-        # administration: FC | Draconis March | Robinson Operational Area
-        # administration: FC | Draconis March | Robinson Operational Area
-        # administration: FC | Draconis March | Robinson Operational Area
-        # administration: FC | Draconis March | Robinson Operational Area
-        # administration: FC | Draconis March | Robinson Operational Area
-        # administration: FC | Draconis March | Robinson Operational Area
         faction:
           source: canon
           value:
@@ -435,25 +363,7 @@ planet:
         population: 73539689.0
       - date: '3060-01-01'
         population: 266532037.0
-      - date: '3067-01-01'
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FS
       - date: '3067-04-20'
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
         faction:
           source: canon
           value:
@@ -462,25 +372,7 @@ planet:
         population: 734488951.0
       - date: '3080-01-01'
         population: 738761365.0
-      - date: '3081-01-01'
-        # administration: ROS | Prefecture III
-        # administration: ROS | Prefecture III
-        # administration: ROS | Prefecture III
-        # administration: ROS | Prefecture III
-        # administration: ROS | Prefecture III
-        # administration: ROS | Prefecture III
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - ROS
       - date: '3081-12-15'
-        # administration: ROS | Prefecture III
-        # administration: ROS | Prefecture III
-        # administration: ROS | Prefecture III
-        # administration: ROS | Prefecture III
-        # administration: ROS | Prefecture III
-        # administration: ROS | Prefecture III
         faction:
           source: canon
           value:
@@ -499,12 +391,6 @@ planet:
         population: 779595311.0
       - date: '3132-08-07'
         hpg: X
-      - date: '3135-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '3135-10-01'
         faction:
           source: canon
@@ -512,25 +398,7 @@ planet:
             - IND
       - date: '3140-01-01'
         population: 789480356.0
-      - date: '3145-01-01'
-        # administration: DC | Dieron Military District | Ashio Prefecture
-        # administration: DC | Dieron Military District | Ashio Prefecture
-        # administration: DC | Dieron Military District | Ashio Prefecture
-        # administration: DC | Dieron Military District | Ashio Prefecture
-        # administration: DC | Dieron Military District | Ashio Prefecture
-        # administration: DC | Dieron Military District | Ashio Prefecture
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - DC
       - date: '3145-01-09'
-        # administration: DC | Dieron Military District | Ashio Prefecture
-        # administration: DC | Dieron Military District | Ashio Prefecture
-        # administration: DC | Dieron Military District | Ashio Prefecture
-        # administration: DC | Dieron Military District | Ashio Prefecture
-        # administration: DC | Dieron Military District | Ashio Prefecture
-        # administration: DC | Dieron Military District | Ashio Prefecture
         faction:
           source: canon
           value:

@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: Harloc
-sucsId: 1057
+sucsId: 1056
 xcood: 41.87
 ycood: -224.443
 spectralType:
-  source: 'OR'
+  source: 'Objective Raids: Capellan Confederation'
   value: F0V
 primarySlot:
-  source: 'OR'
+  source: 'Objective Raids: Capellan Confederation'
   value: 5
 planet:
   - name: Summanus
@@ -96,40 +96,46 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 2.56
     sysPos:
-      source: 'OR'
+      source: 'Objective Raids: Capellan Confederation'
       value: 5
     icon: green50
     pressure:
-      source: 'OR'
+      source: 'Objective Raids: Capellan Confederation'
       value: THIN
     atmosphere:
-      source: 'OR'
+      source: 'Objective Raids: Capellan Confederation'
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'OR'
+      source: 'Objective Raids: Capellan Confederation'
       value: 0.96
     diameter: 11544
     density: 5.844039727135
     dayLength: 19
     yearLength: 4.3
     temperature:
-      source: 'OR'
+      source: 'Objective Raids: Capellan Confederation'
       value: 30
     water:
-      source: 'OR'
+      source: 'Objective Raids: Capellan Confederation'
       value: 65
     lifeForm:
-      source: 'OR'
+      source: 'Objective Raids: Capellan Confederation'
       value: MAMMAL
-    desc: Harloc is not the most comfortable planet to live on, it has a thin atmosphere and despite centuries of being settled, the large array of deadly predators remain a threat. As a result, the inhabitants developed a very martial society. This made the planet a natural location for one of the Confederation’s many Duchy RTCs and recruits can train as MechWarriors, vehicle crews or infantry. The facility is located on the remote badlands of the planet’s soul continent Dupree. The RTC is credited with training the Harloc Raiders regiment.
+    desc: Harloc is not the most comfortable planet to live on, it has a thin atmosphere
+      and despite centuries of being settled, the large array of deadly predators
+      remain a threat. As a result, the inhabitants developed a very martial society.
+      This made the planet a natural location for one of the Confederation’s many
+      Duchy RTCs and recruits can train as MechWarriors, vehicle crews or infantry.
+      The facility is located on the remote badlands of the planet’s soul continent
+      Dupree. The RTC is credited with training the Harloc Raiders regiment.
     smallMoons: 2
     landmass:
       - name:
-          source: 'OR'
+          source: 'Objective Raids: Capellan Confederation'
           value: Dupree
         capital:
-          source: 'OR'
+          source: 'Objective Raids: Capellan Confederation'
           value: Harloc Prime
     event:
       - date: '2173-07-16'
@@ -163,12 +169,6 @@ planet:
         population: 41410989.0
       - date: '2270-01-01'
         population: 62105959.0
-      - date: '2271-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '2280-01-01'
         population: 88690635.0
       - date: '2290-01-01'
@@ -187,19 +187,7 @@ planet:
         population: 415994638.0
       - date: '2360-01-01'
         population: 469841774.0
-      - date: '2366-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - SiS
       - date: '2367-07-01'
-        # administration: CC | Sian Commonality | Region 5
-        # administration: CC | Sian Commonality | Region 5
-        # administration: CC | Sian Commonality | Region 5
-        # administration: CC | Sian Commonality | Region 5
-        # administration: CC | Sian Commonality | Region 5
-        # administration: CC | Sian Commonality | Region 5
         faction:
           source: canon
           value:
@@ -358,32 +346,8 @@ planet:
         population: 707959593.0
       - date: '3060-01-01'
         population: 716434639.0
-      - date: '3068-01-01'
-        # administration: FS | Capellan March | Taygeta Operational Area
-        # administration: FS | Capellan March | Taygeta Operational Area
-        # administration: FS | Capellan March | Taygeta Operational Area
-        # administration: FS | Capellan March | Taygeta Operational Area
-        # administration: FS | Capellan March | Taygeta Operational Area
-        # administration: FS | Capellan March | Taygeta Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FS
       - date: '3070-01-01'
         population: 725083645.0
-      - date: '3075-01-01'
-        # administration: CC | Sian Commonality | Region 4
-        # administration: CC | Sian Commonality | Region 4
-        # administration: CC | Sian Commonality | Region 4
-        # administration: CC | Sian Commonality | Region 4
-        # administration: CC | Sian Commonality | Region 4
-        # administration: CC | Sian Commonality | Region 4
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CC
       - date: '3079-01-01'
         population:
           source: canon

@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,17 +16,15 @@
 # affiliated with Microsoft.
 
 id: Mesartim (Conway)
-sucsId: 1692
+sucsId: 1691
 xcood: 102.876
 ycood: -54.593
 spectralType:
-  source: HLSB
+  source: House Liao, pg. 155
   value: G6V
-  page: 155
 primarySlot:
-  source: HLSB
+  source: House Liao, pg. 155
   value: 3
-  page: 155
 planet:
   - name: Wuchang
     type: TERRESTRIAL
@@ -65,9 +63,8 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.9
     sysPos:
-      source: HLSB
+      source: House Liao, pg. 155
       value: 3
-      page: 155
     icon: green34
     pressure: STANDARD
     atmosphere: BREATHABLE
@@ -80,10 +77,14 @@ planet:
     temperature: 21
     water: 63
     lifeForm:
-      source: HLSB
+      source: House Liao, pg. 155
       value: REPTILE
-      page: 155
-    desc: Mesartim is an agricultural world specialising in the production of rare wines. Unfortunately the Succession Wars have destroyed much of the productive land, however a fair amount of wine is still produced to be exported to other planets in the Federated Suns, to the annoyance of the Capellan people. The loss of Mesartim and specifically its wine industry was a point of contention between the Confederation and the Suns for decades.
+    desc: Mesartim is an agricultural world specialising in the production of rare
+      wines. Unfortunately the Succession Wars have destroyed much of the productive
+      land, however a fair amount of wine is still produced to be exported to other
+      planets in the Federated Suns, to the annoyance of the Capellan people. The
+      loss of Mesartim and specifically its wine industry was a point of contention
+      between the Confederation and the Suns for decades.
     landmass:
       - name: Cömert
         capital: Brandon City
@@ -211,25 +212,7 @@ planet:
         population: 1730759234.0
       - date: '2570-01-01'
         population: 1743719577.0
-      - date: '2571-01-01'
-        # administration: CC | Chesterton Commonality
-        # administration: CC | Chesterton Commonality
-        # administration: CC | Chesterton Commonality
-        # administration: CC | Chesterton Commonality
-        # administration: CC | Chesterton Commonality
-        # administration: CC | Chesterton Commonality
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CC
       - date: '2571-09-13'
-        # administration: CC | Chesterton Commonality
-        # administration: CC | Chesterton Commonality
-        # administration: CC | Chesterton Commonality
-        # administration: CC | Chesterton Commonality
-        # administration: CC | Chesterton Commonality
-        # administration: CC | Chesterton Commonality
         faction:
           source: canon
           value:
@@ -293,18 +276,7 @@ planet:
       - date: '2820-01-01'
         population: 1972299013.0
       - date: '2830-01-01'
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
         population: 1958710109.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FS
       - date: '2840-01-01'
         population: 1943390991.0
       - date: '2846-01-01'
@@ -354,12 +326,6 @@ planet:
       - date: '3000-01-01'
         population: 1871172488.0
       - date: '3010-09-10'
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
         faction:
           source: canon
           value:
@@ -372,25 +338,8 @@ planet:
       - date: '3030-01-01'
         population: 1889760867.0
       - date: '3040-01-01'
-        # administration: FC | Capellan March | Kathil Operational Area
-        # administration: FC | Capellan March | Kathil Operational Area
-        # administration: FC | Capellan March | Kathil Operational Area
-        # administration: FC | Capellan March | Kathil Operational Area
-        # administration: FC | Capellan March | Kathil Operational Area
-        # administration: FC | Capellan March | Kathil Operational Area
         population: 1903225913.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FC
       - date: '3040-01-19'
-        # administration: FC | Capellan March | Kathil Operational Area
-        # administration: FC | Capellan March | Kathil Operational Area
-        # administration: FC | Capellan March | Kathil Operational Area
-        # administration: FC | Capellan March | Kathil Operational Area
-        # administration: FC | Capellan March | Kathil Operational Area
-        # administration: FC | Capellan March | Kathil Operational Area
         faction:
           source: canon
           value:
@@ -401,25 +350,7 @@ planet:
         population: 1914105278.0
       - date: '3060-01-01'
         population: 1925624432.0
-      - date: '3067-01-01'
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FS
       - date: '3067-04-20'
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
         faction:
           source: canon
           value:
@@ -448,25 +379,7 @@ planet:
         socioIndustrial: A-A-A-B-C
       - date: '3140-01-01'
         population: 2157716088.0
-      - date: '3145-01-01'
-        # administration: CC | Chesterton Commonality
-        # administration: CC | Chesterton Commonality
-        # administration: CC | Chesterton Commonality
-        # administration: CC | Chesterton Commonality
-        # administration: CC | Chesterton Commonality
-        # administration: CC | Chesterton Commonality
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CC
       - date: '3145-04-06'
-        # administration: CC | Chesterton Commonality
-        # administration: CC | Chesterton Commonality
-        # administration: CC | Chesterton Commonality
-        # administration: CC | Chesterton Commonality
-        # administration: CC | Chesterton Commonality
-        # administration: CC | Chesterton Commonality
         faction:
           source: canon
           value:

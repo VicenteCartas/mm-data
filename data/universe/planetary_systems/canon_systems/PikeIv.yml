@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: Pike IV
-sucsId: 2028
+sucsId: 2027
 xcood: 20.153
 ycood: 39.24
 spectralType:
-  source: DA:RW
+  source: MWDA world profiles
   value: K9IV
 primarySlot:
-  source: DA:RW
+  source: MWDA world profiles
   value: 4
 event:
   - date: '2419-12-08'
@@ -85,45 +85,83 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.35
     sysPos:
-      source: DA:RW
+      source: MWDA world profiles
       value: 4
     icon: green46
     pressure:
-      source: DA:RW
+      source: MWDA world profiles
       value: HIGH
     atmosphere:
-      source: DA:RW
+      source: MWDA world profiles
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: DA:RW
+      source: MWDA world profiles
       value: 0.97
     diameter: 10803
     density: 6.31005209605
     dayLength: 19
     yearLength: 0.7
     temperature:
-      source: DA:RW
+      source: MWDA world profiles
       value: 38
     water:
-      source: DA:RW
+      source: MWDA world profiles
       value: 37
     lifeForm:
-      source: DA:RW
+      source: MWDA world profiles
       value: MAMMAL
-    desc: High atmospheric pressure and scarce surface water made colonizing Pike IV a difficult prospect, but not one the early settlers were unwilling to tackle. The majority of this mineral-rich world‘s first cities were founded in the highlands of Erubis and Blight, Pike IV‘s two northern continents, where the air pressure was more manageable. Unfortunately, the colonists soon learned that Pike‘s frequent windstorms could do heavy damage at the higher altitudes unless they took precautions against the unpredictable weather. Paramus, a trading post and home to Pike‘s largest spaceport, became the first of the planet‘s major cities to be surrounded by a large, heavy wall to counteract the high winds. Meanwhile, the supercontinent of Karasia, just south of Blight and stretching all the way to the planet‘s southern pole, boasted fewer high-altitude regions and claimed the majority of the planet‘s landmass, as well as its wealth of metal ores and gemstones. Smaller, sparser settlements grew on Karasia as the result of stubborn efforts to access the bulk of Pike IV‘s wealth. Many of these were made up of low-slung buildings, sealed against the weather and attached to air-thinning units to make life in the oppressive environment bearable. However, no walls were required around the cities because the windstorms across Karasia were milder. An odd dual society arose from the division between the highlanders of Eribus and Blight and the lowlanders of Karasia. Symbiotic but fraught with political conflict, the populations of the highlands and lowlands often argued over the needs of their respective cities and towns. Matters came to a head during the rule of the Star League and the Terran Hegemony, when SLDF mediators were called in to settle a small brushfire war between highlanders and lowlanders. After the Star League‘s collapse and the ascendance of the Draconis Combine, raiders enjoyed mixed success trying to use the sociopolitical situation on Pike IV to their advantage. Depending on the political climate at any given time, resistance to invaders ranged from determined and coordinated to bickering and ineffective. During one invasion in 3012, attacking ‘Mech forces struck Paramus, meeting resistance from both highlander and lowlander militias. Unfortunately for the defenders, recent political infighting between the two factions tainted their command structure, leading to poor coordination that allowed the attackers to overwhelm the city briefly, at a cost of millions of C-bills in damage. The resettlement directives put in place by Devlin Stone during the creation of the Republic have muted the chronic infighting, but experts believe that as the conflicting needs of the highlanders and lowlanders become clear to Pike‘s new inhabitants, the old rivalries may return. Unsurprisingly, Pike IV has two capital cities that govern the planet. The lowlander capital, Rolfshire, is located on the west coast of Karasia, while the highlander capital of Stratopolis is located on Erubis, on a plateau three hundred kilometers northwest of Paramus.
+    desc: High atmospheric pressure and scarce surface water made colonizing Pike
+      IV a difficult prospect, but not one the early settlers were unwilling to tackle.
+      The majority of this mineral-rich world‘s first cities were founded in the highlands
+      of Erubis and Blight, Pike IV‘s two northern continents, where the air pressure
+      was more manageable. Unfortunately, the colonists soon learned that Pike‘s frequent
+      windstorms could do heavy damage at the higher altitudes unless they took precautions
+      against the unpredictable weather. Paramus, a trading post and home to Pike‘s
+      largest spaceport, became the first of the planet‘s major cities to be surrounded
+      by a large, heavy wall to counteract the high winds. Meanwhile, the supercontinent
+      of Karasia, just south of Blight and stretching all the way to the planet‘s
+      southern pole, boasted fewer high-altitude regions and claimed the majority
+      of the planet‘s landmass, as well as its wealth of metal ores and gemstones.
+      Smaller, sparser settlements grew on Karasia as the result of stubborn efforts
+      to access the bulk of Pike IV‘s wealth. Many of these were made up of low-slung
+      buildings, sealed against the weather and attached to air-thinning units to
+      make life in the oppressive environment bearable. However, no walls were required
+      around the cities because the windstorms across Karasia were milder. An odd
+      dual society arose from the division between the highlanders of Eribus and Blight
+      and the lowlanders of Karasia. Symbiotic but fraught with political conflict,
+      the populations of the highlands and lowlands often argued over the needs of
+      their respective cities and towns. Matters came to a head during the rule of
+      the Star League and the Terran Hegemony, when SLDF mediators were called in
+      to settle a small brushfire war between highlanders and lowlanders. After the
+      Star League‘s collapse and the ascendance of the Draconis Combine, raiders enjoyed
+      mixed success trying to use the sociopolitical situation on Pike IV to their
+      advantage. Depending on the political climate at any given time, resistance
+      to invaders ranged from determined and coordinated to bickering and ineffective.
+      During one invasion in 3012, attacking ‘Mech forces struck Paramus, meeting
+      resistance from both highlander and lowlander militias. Unfortunately for the
+      defenders, recent political infighting between the two factions tainted their
+      command structure, leading to poor coordination that allowed the attackers to
+      overwhelm the city briefly, at a cost of millions of C-bills in damage. The
+      resettlement directives put in place by Devlin Stone during the creation of
+      the Republic have muted the chronic infighting, but experts believe that as
+      the conflicting needs of the highlanders and lowlanders become clear to Pike‘s
+      new inhabitants, the old rivalries may return. Unsurprisingly, Pike IV has two
+      capital cities that govern the planet. The lowlander capital, Rolfshire, is
+      located on the west coast of Karasia, while the highlander capital of Stratopolis
+      is located on Erubis, on a plateau three hundred kilometers northwest of Paramus.
     landmass:
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Blight
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Erubis
         capital:
-          source: DA:RW
+          source: MWDA world profiles
           value: Rolfshire;Stratopolis
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Karasia
         capital:
           source: canon
@@ -151,12 +189,6 @@ planet:
       - date: '2310-01-01'
         population: 97950248.0
       - date: '2320-04-06'
-        # administration: TH | Lone Star Province
-        # administration: TH | Lone Star Province
-        # administration: TH | Lone Star Province
-        # administration: TH | Lone Star Province
-        # administration: TH | Lone Star Province
-        # administration: TH | Lone Star Province
         faction:
           source: canon
           value:
@@ -257,18 +289,6 @@ planet:
         population: 8170454503.0
       - date: '2760-01-01'
         population: 8194149373.0
-      - date: '2767-01-01'
-        # administration: AE | Lone Star Province
-        # administration: AE | Lone Star Province
-        # administration: AE | Lone Star Province
-        # administration: AE | Lone Star Province
-        # administration: AE | Lone Star Province
-        # administration: AE | Lone Star Province
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - AE
       - date: '2767-10-04'
         faction:
           source: canon
@@ -277,12 +297,6 @@ planet:
       - date: '2770-01-01'
         population: 8200900634.0
       - date: '2779-07-14'
-        # administration: TH | Lone Star Province
-        # administration: TH | Lone Star Province
-        # administration: TH | Lone Star Province
-        # administration: TH | Lone Star Province
-        # administration: TH | Lone Star Province
-        # administration: TH | Lone Star Province
         faction:
           source: canon
           value:
@@ -290,12 +304,6 @@ planet:
       - date: '2780-01-01'
         population: 8145953134.0
       - date: '2790-05-07'
-        # administration: DC | Dieron Military District | Lone Star Prefecture
-        # administration: DC | Dieron Military District | Lone Star Prefecture
-        # administration: DC | Dieron Military District | Lone Star Prefecture
-        # administration: DC | Dieron Military District | Lone Star Prefecture
-        # administration: DC | Dieron Military District | Lone Star Prefecture
-        # administration: DC | Dieron Military District | Lone Star Prefecture
         faction:
           source: canon
           value:
@@ -308,12 +316,6 @@ planet:
       - date: '2820-01-01'
         population: 7808378417.0
       - date: '2821-03-03'
-        # administration: DC | Dieron Military District | Lone Star Prefecture
-        # administration: DC | Dieron Military District | Lone Star Prefecture
-        # administration: DC | Dieron Military District | Lone Star Prefecture
-        # administration: DC | Dieron Military District | Lone Star Prefecture
-        # administration: DC | Dieron Military District | Lone Star Prefecture
-        # administration: DC | Dieron Military District | Lone Star Prefecture
         faction:
           source: canon
           value:
@@ -394,25 +396,7 @@ planet:
             - Stone
       - date: '3080-01-01'
         population: 7612685427.0
-      - date: '3081-01-01'
-        # administration: ROS | Prefecture II
-        # administration: ROS | Prefecture II
-        # administration: ROS | Prefecture II
-        # administration: ROS | Prefecture II
-        # administration: ROS | Prefecture II
-        # administration: ROS | Prefecture II
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - ROS
       - date: '3081-09-09'
-        # administration: ROS | Prefecture II
-        # administration: ROS | Prefecture II
-        # administration: ROS | Prefecture II
-        # administration: ROS | Prefecture II
-        # administration: ROS | Prefecture II
-        # administration: ROS | Prefecture II
         faction:
           source: canon
           value:
@@ -431,12 +415,6 @@ planet:
         population: 8222020575.0
       - date: '3132-08-07'
         hpg: X
-      - date: '3135-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '3135-10-01'
         faction:
           source: canon
@@ -444,25 +422,7 @@ planet:
             - IND
       - date: '3140-01-01'
         population: 8346280503.0
-      - date: '3145-01-01'
-        # administration: DC | Dieron Military District | Dieron Prefecture
-        # administration: DC | Dieron Military District | Dieron Prefecture
-        # administration: DC | Dieron Military District | Dieron Prefecture
-        # administration: DC | Dieron Military District | Dieron Prefecture
-        # administration: DC | Dieron Military District | Dieron Prefecture
-        # administration: DC | Dieron Military District | Dieron Prefecture
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - DC
       - date: '3145-10-07'
-        # administration: DC | Dieron Military District | Dieron Prefecture
-        # administration: DC | Dieron Military District | Dieron Prefecture
-        # administration: DC | Dieron Military District | Dieron Prefecture
-        # administration: DC | Dieron Military District | Dieron Prefecture
-        # administration: DC | Dieron Military District | Dieron Prefecture
-        # administration: DC | Dieron Military District | Dieron Prefecture
         faction:
           source: canon
           value:

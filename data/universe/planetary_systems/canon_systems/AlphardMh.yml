@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,17 +16,15 @@
 # affiliated with Microsoft.
 
 id: Alphard (MH)
-sucsId: 2859
+sucsId: 2858
 xcood: -406.23
 ycood: -298.444
 spectralType:
-  source: 'HB:MPS'
+  source: 'Handbook: Major Periphery States, pg. 166'
   value: G3IV
-  page: 166
 primarySlot:
-  source: 'HB:MPS'
+  source: 'Handbook: Major Periphery States, pg. 166'
   value: 4
-  page: 166
 planet:
   - name: Viljevo
     type: ICE_GIANT
@@ -104,39 +102,32 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 1.6
     sysPos:
-      source: 'HB:MPS'
+      source: 'Handbook: Major Periphery States, pg. 166'
       value: 4
-      page: 166
     icon: green33
     pressure:
-      source: 'HB:MPS'
+      source: 'Handbook: Major Periphery States, pg. 166'
       value: STANDARD
-      page: 166
     atmosphere:
-      source: 'HB:MPS'
+      source: 'Handbook: Major Periphery States, pg. 166'
       value: BREATHABLE
-      page: 166
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'HB:MPS'
+      source: 'Handbook: Major Periphery States, pg. 166'
       value: 1.0
-      page: 166
     diameter: 14152
     density: 4.965873816545
     dayLength: 25
     yearLength: 2.3
     temperature:
-      source: 'HB:MPS'
+      source: 'Handbook: Major Periphery States, pg. 166'
       value: 33
-      page: 166
     water:
-      source: 'HB:MPS'
+      source: 'Handbook: Major Periphery States, pg. 166'
       value: 55
-      page: 166
     lifeForm:
-      source: 'HB:MPS'
+      source: 'Handbook: Major Periphery States, pg. 166'
       value: MAMMAL
-      page: 166
     desc: |-
       Alphard is the capital of the Marian Hegemony and the nation's seat of power. Alphard is an arid planet full of canyons and arroyos. There is just barely enough arable land on the northern continents for the planet to be self sufficient. Just below the surface Alphard contains vast deposits of metals and gemstones. After the formation of the Hegemony in the late 30th Century, Alphard has seen the introduction of industry picked up in the later part of the 31st Century. The planetary capital is Nova Roma, which was built in the style of ancient Rome out of the local golden sandstone, and is a matter of pride for the young Periphery nation.
 
@@ -147,32 +138,22 @@ planet:
       Marian Arms, Incorporated
     landmass:
       - name:
-          source: M&M
+          source: Masters and Minions, pg. 200
           value: Alba
-          page: 200
         capital:
-          source: 'HB:MPS'
+          source: 'Handbook: Major Periphery States, pg. 166'
           value: Nova Roma
-          page: 166
       - name:
-          source: M&M
+          source: Masters and Minions, pg. 200
           value: Gaul
-          page: 200
     satellite:
       - name:
-          source: 'HB:MPS'
+          source: 'Handbook: Major Periphery States, pg. 166'
           value: Romulus
-          page: 166
         size: medium
         icon: rock10
     event:
       - date: '2920-09-11'
-        # administration: MH | National Capital
-        # administration: MH | National Capital
-        # administration: MH | National Capital
-        # administration: MH | National Capital
-        # administration: MH | National Capital
-        # administration: MH | National Capital
         faction:
           source: canon
           value:
@@ -208,12 +189,6 @@ planet:
       - date: '3020-01-01'
         population: 2860780090.0
       - date: '3025-05-13'
-        # administration: MH | National Capital
-        # administration: MH | National Capital
-        # administration: MH | National Capital
-        # administration: MH | National Capital
-        # administration: MH | National Capital
-        # administration: MH | National Capital
         faction:
           source: canon
           value:

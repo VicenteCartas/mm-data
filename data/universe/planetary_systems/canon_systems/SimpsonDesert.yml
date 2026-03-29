@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,17 +16,15 @@
 # affiliated with Microsoft.
 
 id: Simpson Desert
-sucsId: 2343
+sucsId: 2342
 xcood: -271.591
 ycood: -99.305
 spectralType:
-  source: HMSB
+  source: House Marik, pg. 161
   value: G9V
-  page: 161
 primarySlot:
-  source: HMSB
+  source: House Marik, pg. 161
   value: 4
-  page: 161
 planet:
   - name: Boothroyd
     type: GIANT_TERRESTRIAL
@@ -286,20 +284,8 @@ planet:
       - date: '3140-01-01'
         population: 255843042.0
       - date: '3145-01-01'
-        # administration: FWL | Duchy of Tammarind-Abbey
-        # administration: FWL | Duchy of Tammarind-Abbey
-        # administration: FWL | Duchy of Tammarind-Abbey
-        # administration: FWL | Duchy of Tammarind-Abbey
-        # administration: FWL | Duchy of Tammarind-Abbey
-        # administration: FWL | Duchy of Tammarind-Abbey
         population: 256560407.0
       - date: '3151-01-01'
-        # administration: FWL | Duchy of Tammarind-Abbey
-        # administration: FWL | Duchy of Tammarind-Abbey
-        # administration: FWL | Duchy of Tammarind-Abbey
-        # administration: FWL | Duchy of Tammarind-Abbey
-        # administration: FWL | Duchy of Tammarind-Abbey
-        # administration: FWL | Duchy of Tammarind-Abbey
         faction:
           source: sucs
           value:
@@ -347,9 +333,8 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.8
     sysPos:
-      source: HMSB
+      source: House Marik, pg. 161
       value: 4
-      page: 161
     icon: green16
     pressure: HIGH
     atmosphere: BREATHABLE
@@ -362,10 +347,20 @@ planet:
     temperature: 37
     water: 45
     lifeForm:
-      source: HMSB
+      source: House Marik, pg. 161
       value: MAMMAL
-      page: 161
-    desc: Contrary to the name Simpson Desert is actually a comfortable temperate planet. The two (incorrect) explanations for the name are first explanation being that the original explorer Dr. Waldo Wadenius Simpson landed in a desert region and incorrectly assumed it was a desert-planet, while the second common explanation is that Dr. Simpson landed on the fertile planet and went with the common Iceland/Greenland switch to ‘ward off raiders’ with a false name. The true explanation is far less interesting, the planet’s mis-naming was the result of a typo. Based on the popular Simpson Spice discovered by Dr. Simpson on the planet the world was originally going to be named Simpson Dessert for the dish that made the spice famous throughout the Inner Sphere. Unfortunately during the registration process with the Terran Hegemony the planet was added to star charts as Simpson Desert and the name stuck.
+    desc: Contrary to the name Simpson Desert is actually a comfortable temperate
+      planet. The two (incorrect) explanations for the name are first explanation
+      being that the original explorer Dr. Waldo Wadenius Simpson landed in a desert
+      region and incorrectly assumed it was a desert-planet, while the second common
+      explanation is that Dr. Simpson landed on the fertile planet and went with the
+      common Iceland/Greenland switch to ‘ward off raiders’ with a false name. The
+      true explanation is far less interesting, the planet’s mis-naming was the result
+      of a typo. Based on the popular Simpson Spice discovered by Dr. Simpson on the
+      planet the world was originally going to be named Simpson Dessert for the dish
+      that made the spice famous throughout the Inner Sphere. Unfortunately during
+      the registration process with the Terran Hegemony the planet was added to star
+      charts as Simpson Desert and the name stuck.
     smallMoons: 4
     landmass:
       - name: Fellick
@@ -412,12 +407,6 @@ planet:
             - FWL
       - date: '2360-01-01'
         population: 409054.0
-      - date: '2366-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '2370-01-01'
         population: 443799.0
       - date: '2380-01-01'
@@ -462,12 +451,6 @@ planet:
         population: 788365.0
       - date: '2570-01-01'
         population: 801604.0
-      - date: '2571-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FWL
       - date: '2580-01-01'
         population: 806320.0
       - date: '2590-01-01'
@@ -593,12 +576,6 @@ planet:
         population: 245739840.0
       - date: '3070-01-01'
         population: 708152810.0
-      - date: '3079-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - DTA
       - date: '3079-02-14'
         faction:
           source: canon
@@ -625,35 +602,12 @@ planet:
       - date: '3140-01-01'
         population: 754654405.0
       - date: '3145-01-01'
-        # administration: FWL | Duchy of Tammarind-Abbey
-        # administration: FWL | Duchy of Tammarind-Abbey
-        # administration: FWL | Duchy of Tammarind-Abbey
-        # administration: FWL | Duchy of Tammarind-Abbey
-        # administration: FWL | Duchy of Tammarind-Abbey
-        # administration: FWL | Duchy of Tammarind-Abbey
         population: 760563726.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FWL
       - date: '3151-01-01'
-        # administration: FWL | Duchy of Tammarind-Abbey
-        # administration: FWL | Duchy of Tammarind-Abbey
-        # administration: FWL | Duchy of Tammarind-Abbey
-        # administration: FWL | Duchy of Tammarind-Abbey
-        # administration: FWL | Duchy of Tammarind-Abbey
-        # administration: FWL | Duchy of Tammarind-Abbey
         faction:
           source: sucs
           value:
             - FWL
-      - date: '3152-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CWE
   - name: Bythsea's Meridian
     type: GIANT_TERRESTRIAL
     orbitalDist: 2.24

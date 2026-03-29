@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: Terra Firma
-sucsId: 2518
+sucsId: 2517
 xcood: 22.495
 ycood: -33.623
 spectralType:
-  source: DA:RW
+  source: MWDA world profiles
   value: G8V
 primarySlot:
-  source: DA:RW
+  source: MWDA world profiles
   value: 2
 planet:
   - name: Asphodel-Norwood
@@ -48,46 +48,81 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.56
     sysPos:
-      source: DA:RW
+      source: MWDA world profiles
       value: 2
     icon: wet15
     pressure:
-      source: DA:RW
+      source: MWDA world profiles
       value: STANDARD
     atmosphere:
-      source: DA:RW
+      source: MWDA world profiles
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: DA:RW
+      source: MWDA world profiles
       value: 1.2
     diameter: 14355
     density: 5.874854088803
     dayLength: 19
     yearLength: 1.0
     temperature:
-      source: DA:RW
+      source: MWDA world profiles
       value: 32
     water:
-      source: DA:RW
+      source: MWDA world profiles
       value: 79
     lifeForm:
-      source: DA:RW
+      source: MWDA world profiles
       value: MAMMAL
-    desc: Blessed with huge tracts of untamed forests, extensive mineral resources, and mountainous reaches, Terra Firma, in many ways, was considered a twin to the nearby Capolla. Colonized jointly with Capolla by a collection of small corporations and independent homesteaders, trade between both worlds led to a prosperous and semisymbiotic relationship even before the formation of the Terran Hegemony and the Star League. This relationship worked so well that both worlds supported a strong and diverse economic and social base without the need for major military industries. In a deal brokered at the twin system‘s entry into the Hegemony, Terra agreed to a limited autonomy for both worlds—a policy that every successive power after the Hegemony assumed as well. In the chaos that erupted following the collapse of the Federated Commonwealth, much of Terra Firma‘s landscape and many cities were damaged by heavy fighting. The formation of the Terracap Confederation with Capolla helped Terra Firma to recover, but aid from the Word of Blake, in exchange for the right to place military bases and "defensive forces" on the planet before the Jihad, truly brought the planet‘s ravaged infrastructure back from the brink. Pledging a continued hands-off policy in the tiny alliance‘s political and business affairs, and their troops to the defense of both worlds, the Blakists earned the support—and, in some cases, fear—of the Terra Firma population. Taking a more active role in the rebuilding of Terra Firma, the Blakists managed to insinuate their agents into the planetary government, undercutting the local authority and instilling in the people an attitude of xenophobia and paranoia. When the Jihad was launched, many of Terra Firma‘s citizens joined with the Word of Blake to defend their world, until they realized the true horrors of the Blakist terror war swirling around them. Aided by Devlin Stone‘s forces during the liberation, the Terra Firmans helped drive off the Jihad fanatics, but at terrible cost to the planet‘s remaining cities and industry. Today, only the Okeenog Woodlands on the primary continent of Rusalaia are free from the scars of war. The capital city, Freinze, home also to the planet‘s single spaceport, is located on Rusalaia‘s northern coast, a scant few kilometers from the ruins of Aserlitz, the planet‘s previous capital, reduced to rubble by the Jihad and now a city-scale memorial to the victims of war. On Reniki, the smaller, equatorial continent east of Rusalia, Ballard-Dukempic Foods of Keid maintains a branch office in the city of Nystoll. A recovering industry with a history dating back to the glory days of the Star League, the foodstuffs supercorporation now oversees most of the farming and ranching industries that are once more on the rise in Reniki‘s open plains.
+    desc: Blessed with huge tracts of untamed forests, extensive mineral resources,
+      and mountainous reaches, Terra Firma, in many ways, was considered a twin to
+      the nearby Capolla. Colonized jointly with Capolla by a collection of small
+      corporations and independent homesteaders, trade between both worlds led to
+      a prosperous and semisymbiotic relationship even before the formation of the
+      Terran Hegemony and the Star League. This relationship worked so well that both
+      worlds supported a strong and diverse economic and social base without the need
+      for major military industries. In a deal brokered at the twin system‘s entry
+      into the Hegemony, Terra agreed to a limited autonomy for both worlds—a policy
+      that every successive power after the Hegemony assumed as well. In the chaos
+      that erupted following the collapse of the Federated Commonwealth, much of Terra
+      Firma‘s landscape and many cities were damaged by heavy fighting. The formation
+      of the Terracap Confederation with Capolla helped Terra Firma to recover, but
+      aid from the Word of Blake, in exchange for the right to place military bases
+      and "defensive forces" on the planet before the Jihad, truly brought the planet‘s
+      ravaged infrastructure back from the brink. Pledging a continued hands-off policy
+      in the tiny alliance‘s political and business affairs, and their troops to the
+      defense of both worlds, the Blakists earned the support—and, in some cases,
+      fear—of the Terra Firma population. Taking a more active role in the rebuilding
+      of Terra Firma, the Blakists managed to insinuate their agents into the planetary
+      government, undercutting the local authority and instilling in the people an
+      attitude of xenophobia and paranoia. When the Jihad was launched, many of Terra
+      Firma‘s citizens joined with the Word of Blake to defend their world, until
+      they realized the true horrors of the Blakist terror war swirling around them.
+      Aided by Devlin Stone‘s forces during the liberation, the Terra Firmans helped
+      drive off the Jihad fanatics, but at terrible cost to the planet‘s remaining
+      cities and industry. Today, only the Okeenog Woodlands on the primary continent
+      of Rusalaia are free from the scars of war. The capital city, Freinze, home
+      also to the planet‘s single spaceport, is located on Rusalaia‘s northern coast,
+      a scant few kilometers from the ruins of Aserlitz, the planet‘s previous capital,
+      reduced to rubble by the Jihad and now a city-scale memorial to the victims
+      of war. On Reniki, the smaller, equatorial continent east of Rusalia, Ballard-Dukempic
+      Foods of Keid maintains a branch office in the city of Nystoll. A recovering
+      industry with a history dating back to the glory days of the Star League, the
+      foodstuffs supercorporation now oversees most of the farming and ranching industries
+      that are once more on the rise in Reniki‘s open plains.
     landmass:
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Reniki
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Rusalaia
         capital:
-          source: DA:RW
+          source: MWDA world profiles
           value: Freinze
     satellite:
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Tybalt
         size: medium
         icon: rock5
@@ -116,12 +151,6 @@ planet:
       - date: '2310-01-01'
         population: 66582755.0
       - date: '2320-03-06'
-        # administration: TH | Terra Firma Province | Region Capital
-        # administration: TH | Terra Firma Province | Region Capital
-        # administration: TH | Terra Firma Province | Region Capital
-        # administration: TH | Terra Firma Province | Region Capital
-        # administration: TH | Terra Firma Province | Region Capital
-        # administration: TH | Terra Firma Province | Region Capital
         faction:
           source: canon
           value:
@@ -221,18 +250,6 @@ planet:
         population: 2692740656.0
       - date: '2760-01-01'
         population: 2667222925.0
-      - date: '2767-01-01'
-        # administration: AE | Terra Firma Province | Region Capital
-        # administration: AE | Terra Firma Province | Region Capital
-        # administration: AE | Terra Firma Province | Region Capital
-        # administration: AE | Terra Firma Province | Region Capital
-        # administration: AE | Terra Firma Province | Region Capital
-        # administration: AE | Terra Firma Province | Region Capital
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - AE
       - date: '2767-09-03'
         faction:
           source: canon
@@ -241,42 +258,18 @@ planet:
       - date: '2770-01-01'
         population: 2633913655.0
       - date: '2779-01-01'
-        # administration: TH | Terra Firma Province | Region Capital
-        # administration: TH | Terra Firma Province | Region Capital
-        # administration: TH | Terra Firma Province | Region Capital
-        # administration: TH | Terra Firma Province | Region Capital
-        # administration: TH | Terra Firma Province | Region Capital
-        # administration: TH | Terra Firma Province | Region Capital
         faction:
           source: canon
           value:
             - TH
       - date: '2780-01-01'
         population: 2591598120.0
-      - date: '2786-01-01'
-        # administration: CC | Tikonov Commonality | Region 1
-        # administration: CC | Tikonov Commonality | Region 1
-        # administration: CC | Tikonov Commonality | Region 1
-        # administration: CC | Tikonov Commonality | Region 1
-        # administration: CC | Tikonov Commonality | Region 1
-        # administration: CC | Tikonov Commonality | Region 1
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CC
       - date: '2786-04-09'
         faction:
           source: canon
           value:
             - CC
       - date: '2790-07-25'
-        # administration: CC | Tikonov Commonality | Region 2
-        # administration: CC | Tikonov Commonality | Region 2
-        # administration: CC | Tikonov Commonality | Region 2
-        # administration: CC | Tikonov Commonality | Region 2
-        # administration: CC | Tikonov Commonality | Region 2
-        # administration: CC | Tikonov Commonality | Region 2
         faction:
           source: canon
           value:
@@ -341,12 +334,6 @@ planet:
         population: 1663837882.0
         socioIndustrial: C-C-D-C-D
       - date: '3032-05-01'
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
         faction:
           source: canon
           value:
@@ -359,12 +346,6 @@ planet:
         socioIndustrial: B-A-C-A-D
       - date: '3050-01-01'
         population: 1693042000.0
-      - date: '3057-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - TCC
       - date: '3057-11-01'
         faction:
           source: canon
@@ -372,12 +353,6 @@ planet:
             - TCC
       - date: '3060-01-01'
         population: 1709544415.0
-      - date: '3068-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - WOB
       - date: '3068-08-01'
         faction:
           source: canon
@@ -398,25 +373,7 @@ planet:
             - Stone
       - date: '3080-01-01'
         population: 1732433229.0
-      - date: '3081-01-01'
-        # administration: ROS | Prefecture X
-        # administration: ROS | Prefecture X
-        # administration: ROS | Prefecture X
-        # administration: ROS | Prefecture X
-        # administration: ROS | Prefecture X
-        # administration: ROS | Prefecture X
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - ROS
       - date: '3081-07-11'
-        # administration: ROS | Prefecture X
-        # administration: ROS | Prefecture X
-        # administration: ROS | Prefecture X
-        # administration: ROS | Prefecture X
-        # administration: ROS | Prefecture X
-        # administration: ROS | Prefecture X
         faction:
           source: canon
           value:
@@ -445,12 +402,6 @@ planet:
           value:
             - CC
       - date: '3151-01-01'
-        # administration: CC | Tikonov Commonality | Region 6
-        # administration: CC | Tikonov Commonality | Region 6
-        # administration: CC | Tikonov Commonality | Region 6
-        # administration: CC | Tikonov Commonality | Region 6
-        # administration: CC | Tikonov Commonality | Region 6
-        # administration: CC | Tikonov Commonality | Region 6
         faction:
           source: sucs
           value:

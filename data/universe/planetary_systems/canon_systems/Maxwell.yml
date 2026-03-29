@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,17 +16,15 @@
 # affiliated with Microsoft.
 
 id: Maxwell
-sucsId: 1635
+sucsId: 1634
 xcood: -376.942
 ycood: -114.526
 spectralType:
-  source: HMSB
+  source: House Marik, pg. 155
   value: F9III
-  page: 155
 primarySlot:
-  source: HMSB
+  source: House Marik, pg. 155
   value: 5
-  page: 155
 event:
   - date: '2520-01-13'
     nadirCharge: yes
@@ -102,9 +100,8 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.35
     sysPos:
-      source: HMSB
+      source: House Marik, pg. 155
       value: 5
-      page: 155
     icon: green16
     pressure:
       source: canon
@@ -125,9 +122,8 @@ planet:
       source: canon
       value: 63
     lifeForm:
-      source: HMSB
+      source: House Marik, pg. 155
       value: AMPHIBIAN
-      page: 155
     desc: |-
       Maxwell is a world of technological gaps. On one hand the mountainous but fertile terrain has resulted in the planet being primarily rural and requires most farming to be done by hand and with farm animals. However, the planet is dotted with spaceports and warehouses for shipping agriculture off world and most of the homes are equipped with high tech communications and luxuries and most residents own hovercraft of some sort, even though standard cars and trucks are nearly useless due to the terrain.
 
@@ -153,12 +149,6 @@ planet:
         icon: rock2
     event:
       - date: '2497-06-15'
-        # administration: FWL | Abbey District
-        # administration: FWL | Abbey District
-        # administration: FWL | Abbey District
-        # administration: FWL | Abbey District
-        # administration: FWL | Abbey District
-        # administration: FWL | Abbey District
         faction:
           source: canon
           value:
@@ -301,12 +291,6 @@ planet:
         population: 2595154527.0
       - date: '3070-01-01'
         population: 2382291506.0
-      - date: '3079-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - DTA
       - date: '3079-12-09'
         faction:
           source: canon
@@ -333,25 +317,8 @@ planet:
       - date: '3140-01-01'
         population: 2520513983.0
       - date: '3145-01-01'
-        # administration: FWL | Duchy of Tammarind-Abbey
-        # administration: FWL | Duchy of Tammarind-Abbey
-        # administration: FWL | Duchy of Tammarind-Abbey
-        # administration: FWL | Duchy of Tammarind-Abbey
-        # administration: FWL | Duchy of Tammarind-Abbey
-        # administration: FWL | Duchy of Tammarind-Abbey
         population: 2525054994.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FWL
       - date: '3151-01-01'
-        # administration: FWL | Duchy of Tammarind-Abbey
-        # administration: FWL | Duchy of Tammarind-Abbey
-        # administration: FWL | Duchy of Tammarind-Abbey
-        # administration: FWL | Duchy of Tammarind-Abbey
-        # administration: FWL | Duchy of Tammarind-Abbey
-        # administration: FWL | Duchy of Tammarind-Abbey
         faction:
           source: sucs
           value:

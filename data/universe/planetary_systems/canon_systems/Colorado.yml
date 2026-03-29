@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -75,7 +75,13 @@ planet:
     lifeForm:
       source: canon
       value: MAMMAL
-    desc: Colorado is a cold, unforgiving arctic planet and most of its continents are covered in ice year round. However, there is enough arable land at the equator to feed the planet without relying on imported food. Colorado was settled to take advantage of the abundant sources of germanium and the planet has proven to be the largest source of the material in the Federated Suns. Unfortunately, the mining has caused serious damage to the world's ecology but the production of JumpShips is too important to stop the process.
+    desc: Colorado is a cold, unforgiving arctic planet and most of its continents
+      are covered in ice year round. However, there is enough arable land at the equator
+      to feed the planet without relying on imported food. Colorado was settled to
+      take advantage of the abundant sources of germanium and the planet has proven
+      to be the largest source of the material in the Federated Suns. Unfortunately,
+      the mining has caused serious damage to the world's ecology but the production
+      of JumpShips is too important to stop the process.
     landmass:
       - name:
           source: canon
@@ -127,12 +133,6 @@ planet:
           value:
             - FS
         population: 6088581.0
-      - date: '2341-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '2350-01-01'
         population: 9440476.0
       - date: '2360-01-01'
@@ -181,18 +181,6 @@ planet:
         population: 157079365.0
       - date: '2570-01-01'
         population: 161981823.0
-      - date: '2571-01-01'
-        # administration: FS | Crucis March | Chirikof Operational Area
-        # administration: FS | Crucis March | Chirikof Operational Area
-        # administration: FS | Crucis March | Chirikof Operational Area
-        # administration: FS | Crucis March | Chirikof Operational Area
-        # administration: FS | Crucis March | Chirikof Operational Area
-        # administration: FS | Crucis March | Chirikof Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FS
       - date: '2580-01-01'
         population: 166571829.0
       - date: '2590-01-01'
@@ -305,25 +293,8 @@ planet:
       - date: '3035-01-01'
         socioIndustrial: D-C-B-C-D
       - date: '3040-01-01'
-        # administration: FC | Crucis March | Chirikof Operational Area
-        # administration: FC | Crucis March | Chirikof Operational Area
-        # administration: FC | Crucis March | Chirikof Operational Area
-        # administration: FC | Crucis March | Chirikof Operational Area
-        # administration: FC | Crucis March | Chirikof Operational Area
-        # administration: FC | Crucis March | Chirikof Operational Area
         population: 151270230.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FC
       - date: '3040-01-19'
-        # administration: FC | Crucis March | Chirikof Operational Area
-        # administration: FC | Crucis March | Chirikof Operational Area
-        # administration: FC | Crucis March | Chirikof Operational Area
-        # administration: FC | Crucis March | Chirikof Operational Area
-        # administration: FC | Crucis March | Chirikof Operational Area
-        # administration: FC | Crucis March | Chirikof Operational Area
         faction:
           source: canon
           value:
@@ -338,25 +309,7 @@ planet:
         population: 153571743.0
       - date: '3063-01-01'
         socioIndustrial: C-B-A-B-D
-      - date: '3067-01-01'
-        # administration: FS | Crucis March | Chirikof Operational Area
-        # administration: FS | Crucis March | Chirikof Operational Area
-        # administration: FS | Crucis March | Chirikof Operational Area
-        # administration: FS | Crucis March | Chirikof Operational Area
-        # administration: FS | Crucis March | Chirikof Operational Area
-        # administration: FS | Crucis March | Chirikof Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FS
       - date: '3067-04-20'
-        # administration: FS | Crucis March | Chirikof Operational Area
-        # administration: FS | Crucis March | Chirikof Operational Area
-        # administration: FS | Crucis March | Chirikof Operational Area
-        # administration: FS | Crucis March | Chirikof Operational Area
-        # administration: FS | Crucis March | Chirikof Operational Area
-        # administration: FS | Crucis March | Chirikof Operational Area
         faction:
           source: canon
           value:

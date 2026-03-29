@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Summit
-sucsId: 2436
+sucsId: 2435
 xcood: -116.865
 ycood: 209.591
 spectralType: M5V
@@ -89,12 +89,6 @@ planet:
         socioIndustrial: C-C-D-C-D
       - date: '2360-01-01'
         population: 64592103.0
-      - date: '2366-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '2370-01-01'
         population: 88059794.0
       - date: '2380-01-01'
@@ -137,18 +131,6 @@ planet:
         population: 560840400.0
       - date: '2570-01-01'
         population: 571410905.0
-      - date: '2571-01-01'
-        # administration: LA | Protectorate of Donegal | District of Donegal
-        # administration: LA | Protectorate of Donegal | District of Donegal
-        # administration: LA | Protectorate of Donegal | District of Donegal
-        # administration: LA | Protectorate of Donegal | District of Donegal
-        # administration: LA | Protectorate of Donegal | District of Donegal
-        # administration: LA | Protectorate of Donegal | District of Donegal
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LA
       - date: '2580-01-01'
         population: 583824442.0
       - date: '2590-01-01'
@@ -253,25 +235,8 @@ planet:
       - date: '3034-01-01'
         socioIndustrial: B-B-F-C-C
       - date: '3040-01-01'
-        # administration: FC | Donegal March | Pherkad Operational Area
-        # administration: FC | Donegal March | Pherkad Operational Area
-        # administration: FC | Donegal March | Pherkad Operational Area
-        # administration: FC | Donegal March | Pherkad Operational Area
-        # administration: FC | Donegal March | Pherkad Operational Area
-        # administration: FC | Donegal March | Pherkad Operational Area
         population: 433693789.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FC
       - date: '3040-01-19'
-        # administration: FC | Donegal March | Pherkad Operational Area
-        # administration: FC | Donegal March | Pherkad Operational Area
-        # administration: FC | Donegal March | Pherkad Operational Area
-        # administration: FC | Donegal March | Pherkad Operational Area
-        # administration: FC | Donegal March | Pherkad Operational Area
-        # administration: FC | Donegal March | Pherkad Operational Area
         faction:
           source: canon
           value:
@@ -280,25 +245,7 @@ planet:
         socioIndustrial: A-B-D-B-B
       - date: '3050-01-01'
         population: 437877298.0
-      - date: '3057-01-01'
-        # administration: LA | Donegal March | Pherkad Operational Area
-        # administration: LA | Donegal March | Pherkad Operational Area
-        # administration: LA | Donegal March | Pherkad Operational Area
-        # administration: LA | Donegal March | Pherkad Operational Area
-        # administration: LA | Donegal March | Pherkad Operational Area
-        # administration: LA | Donegal March | Pherkad Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LA
       - date: '3057-09-18'
-        # administration: LA | Donegal Province
-        # administration: LA | Donegal Province
-        # administration: LA | Donegal Province
-        # administration: LA | Donegal Province
-        # administration: LA | Donegal Province
-        # administration: LA | Donegal Province
         faction:
           source: canon
           value:
@@ -434,7 +381,8 @@ planet:
     icon: rock14
     pressure: TRACE
     atmosphere: TOXIC_CAUSTIC
-    composition: Methane and Ammonia, plus trace amounts of Sulfur Dioxide and Hydrogen Peroxide
+    composition: Methane and Ammonia, plus trace amounts of Sulfur Dioxide and Hydrogen
+      Peroxide
     gravity: 0.94
     diameter: 16500
     density: 4.0

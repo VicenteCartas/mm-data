@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -23,7 +23,7 @@ spectralType:
   source: canon
   value: A0VI
 primarySlot:
-  source: DA:RW
+  source: MWDA world profiles
   value: 2
 event:
   - date: '2486-08-11'
@@ -50,31 +50,31 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 15.08
     sysPos:
-      source: DA:RW
+      source: MWDA world profiles
       value: 2
     icon: green5
     pressure:
-      source: DA:RW
+      source: MWDA world profiles
       value: STANDARD
     atmosphere:
-      source: DA:RW
+      source: MWDA world profiles
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: DA:RW
+      source: MWDA world profiles
       value: 1.11
     diameter: 14140
     density: 5.516728742137
     dayLength: 18
     yearLength: 58.6
     temperature:
-      source: DA:RW
+      source: MWDA world profiles
       value: 50
     water:
-      source: DA:RW
+      source: MWDA world profiles
       value: 71
     lifeForm:
-      source: DA:RW
+      source: MWDA world profiles
       value: REPTILE
     desc: |-
       3135 - The primary star in the Cor Caroli system is a white-hot A-class subdwarf. All the planets in the Cor Caroli system orbit the cooler, more stable F0-class secondary star. The effects of the unstable subdwarf can still be felt on the planets, with bursts of electromagnetic radiation frequently disrupting local communications and spaceborne navigational systems. With a breathable atmosphere, a biosphere suitable to human habitation, as well as a planetary surface and expansive asteroid ring that were both rich in minerals, Cor Caroli quickly attracted entrepreneurial colonists. Several early settlements on the northeastern Carboniri continent were lost in an a failed effort to transport some of the smaller iron- and nickel-rich asteroids to the surface, using specially modified mass drivers. This disaster resulted in several decades of a "mild nuclear winter". Despite this, Cor Caroli continued to expand and further industrialize, attracting the attention of the growing Federation of Skye and the Terran Hegemony.
@@ -85,23 +85,23 @@ planet:
 
       Corriolas, Cor Caroli's capital and largest city, is located on the northwestern continent of Ferrini. Caroli Mining Consortium, the largest of the planet's industrial mining corporations, is based in Maureen, the largest city on the southern continent of Nikallini. Cor Caroli‘s fourth landmass, the southern polar continent of Pluribi, is virtually uninhabited.
     ring:
-      source: DA:RW
+      source: MWDA world profiles
       value: yes
     landmass:
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Carboniri
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Ferrini
         capital:
-          source: DA:RW
+          source: MWDA world profiles
           value: Corriolas
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Nikallini
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Pluribi
     satellite:
       - name: 6D1
@@ -133,18 +133,6 @@ planet:
         population: 3352071.0
       - date: '2310-01-01'
         population: 8627685.0
-      - date: '2317-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
-      - date: '2319-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FoS
       - date: '2320-01-01'
         population: 19368749.0
       - date: '2330-01-01'
@@ -154,12 +142,6 @@ planet:
       - date: '2340-01-01'
         population: 69958057.0
       - date: '2341-07-18'
-        # administration: LA | Federation of Skye
-        # administration: LA | Federation of Skye
-        # administration: LA | Federation of Skye
-        # administration: LA | Federation of Skye
-        # administration: LA | Federation of Skye
-        # administration: LA | Federation of Skye
         faction:
           source: canon
           value:
@@ -218,18 +200,6 @@ planet:
         population: 2102141355.0
       - date: '2570-01-01'
         population: 2125552833.0
-      - date: '2571-01-01'
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LA
       - date: '2580-01-01'
         population: 2135742836.0
       - date: '2590-01-01'
@@ -271,18 +241,6 @@ planet:
         population: 2431443288.0
       - date: '2760-01-01'
         population: 2431293902.0
-      - date: '2767-01-01'
-        # administration: AE | Tyrfing Province
-        # administration: AE | Tyrfing Province
-        # administration: AE | Tyrfing Province
-        # administration: AE | Tyrfing Province
-        # administration: AE | Tyrfing Province
-        # administration: AE | Tyrfing Province
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - AE
       - date: '2767-12-25'
         faction:
           source: canon
@@ -301,30 +259,6 @@ planet:
           value:
             - LA
         population: 2422294177.0
-      - date: '2783-01-01'
-        # administration: TH | Tyrfing Province
-        # administration: TH | Tyrfing Province
-        # administration: TH | Tyrfing Province
-        # administration: TH | Tyrfing Province
-        # administration: TH | Tyrfing Province
-        # administration: TH | Tyrfing Province
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - TH
-      - date: '2786-01-01'
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LA
       - date: '2790-01-01'
         population: 2425777241.0
       - date: '2800-01-01'
@@ -393,25 +327,8 @@ planet:
           value:
             - LA
       - date: '3040-01-01'
-        # administration: FC | Skye March | Alcor Operational Area
-        # administration: FC | Skye March | Alcor Operational Area
-        # administration: FC | Skye March | Alcor Operational Area
-        # administration: FC | Skye March | Alcor Operational Area
-        # administration: FC | Skye March | Alcor Operational Area
-        # administration: FC | Skye March | Alcor Operational Area
         population: 2080589816.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FC
       - date: '3040-01-19'
-        # administration: FC | Skye March | Alcor Operational Area
-        # administration: FC | Skye March | Alcor Operational Area
-        # administration: FC | Skye March | Alcor Operational Area
-        # administration: FC | Skye March | Alcor Operational Area
-        # administration: FC | Skye March | Alcor Operational Area
-        # administration: FC | Skye March | Alcor Operational Area
         faction:
           source: canon
           value:
@@ -420,37 +337,13 @@ planet:
         socioIndustrial: A-B-C-A-B
       - date: '3050-01-01'
         population: 2097301292.0
-      - date: '3057-01-01'
-        # administration: LA | Skye March | Alcor Operational Area
-        # administration: LA | Skye March | Alcor Operational Area
-        # administration: LA | Skye March | Alcor Operational Area
-        # administration: LA | Skye March | Alcor Operational Area
-        # administration: LA | Skye March | Alcor Operational Area
-        # administration: LA | Skye March | Alcor Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LA
       - date: '3057-09-18'
-        # administration: LA | Skye Province | Freedom Theater
-        # administration: LA | Skye Province | Freedom Theater
-        # administration: LA | Skye Province | Freedom Theater
-        # administration: LA | Skye Province | Freedom Theater
-        # administration: LA | Skye Province | Freedom Theater
-        # administration: LA | Skye Province | Freedom Theater
         faction:
           source: canon
           value:
             - LA
       - date: '3060-01-01'
         population: 2119015129.0
-      - date: '3068-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - WOB
       - date: '3068-08-01'
         faction:
           source: canon
@@ -471,25 +364,7 @@ planet:
             - Stone
       - date: '3080-01-01'
         population: 2165500298.0
-      - date: '3081-01-01'
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - ROS
       - date: '3081-07-13'
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
         faction:
           source: canon
           value:
@@ -508,12 +383,6 @@ planet:
         population: 2331825458.0
       - date: '3132-08-07'
         hpg: X
-      - date: '3135-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '3135-10-01'
         faction:
           source: canon
@@ -521,12 +390,6 @@ planet:
             - IND
       - date: '3140-01-01'
         population: 2368013502.0
-      - date: '3145-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CWE
       - date: '3145-06-21'
         faction:
           source: canon
@@ -556,7 +419,8 @@ planet:
     icon: greenhouse38
     pressure: HIGH
     atmosphere: TOXIC_CAUSTIC
-    composition: Carbon Dioxide and Nitrogen, plus trace amounts of Sulfur Dioxide and Argon
+    composition: Carbon Dioxide and Nitrogen, plus trace amounts of Sulfur Dioxide
+      and Argon
     gravity: 0.79
     diameter: 9500
     density: 5.8437

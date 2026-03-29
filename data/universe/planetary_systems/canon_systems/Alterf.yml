@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -96,12 +96,6 @@ planet:
       - date: '2270-01-01'
         population: 1060054.0
       - date: '2271-06-01'
-        # administration: FWL | Marik Commonwealth
-        # administration: FWL | Marik Commonwealth
-        # administration: FWL | Marik Commonwealth
-        # administration: FWL | Marik Commonwealth
-        # administration: FWL | Marik Commonwealth
-        # administration: FWL | Marik Commonwealth
         faction:
           source: canon
           value:
@@ -359,12 +353,6 @@ planet:
       - date: '2270-01-01'
         population: 2432630.0
       - date: '2271-06-01'
-        # administration: FWL | Marik Commonwealth
-        # administration: FWL | Marik Commonwealth
-        # administration: FWL | Marik Commonwealth
-        # administration: FWL | Marik Commonwealth
-        # administration: FWL | Marik Commonwealth
-        # administration: FWL | Marik Commonwealth
         faction:
           source: canon
           value:
@@ -541,12 +529,6 @@ planet:
         population: 3506593787.0
       - date: '3070-01-01'
         population: 3553543005.0
-      - date: '3079-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - MCM
       - date: '3079-07-26'
         faction:
           source: canon
@@ -554,18 +536,6 @@ planet:
             - MSC
       - date: '3080-01-01'
         population: 3599320707.0
-      - date: '3081-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - MCM
-      - date: '3085-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - MSC
       - date: '3090-01-01'
         population: 3639131795.0
       - date: '3100-01-01'
@@ -582,12 +552,6 @@ planet:
         hpg: X
       - date: '3140-01-01'
         population: 3800547500.0
-      - date: '3145-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FWL
       - date: '3145-06-21'
         faction:
           source: canon
@@ -637,7 +601,8 @@ planet:
     icon: rock5
     pressure: TRACE
     atmosphere: TOXIC_POISON
-    composition: Methane and Carbon Dioxide, plus trace amounts of Methane and Nitrous Oxide
+    composition: Methane and Carbon Dioxide, plus trace amounts of Methane and Nitrous
+      Oxide
     gravity: 0.85
     diameter: 12500
     density: 4.7795

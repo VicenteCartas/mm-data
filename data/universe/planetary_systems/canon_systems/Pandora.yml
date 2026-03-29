@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,17 +16,15 @@
 # affiliated with Microsoft.
 
 id: Pandora
-sucsId: 1977
+sucsId: 1976
 xcood: -84.553
 ycood: 234.789
 spectralType:
-  source: M&M
+  source: Masters and Minions, pg. 135
   value: B7V
-  page: 135
 primarySlot:
-  source: M&M
+  source: Masters and Minions, pg. 135
   value: 7
-  page: 135
 event:
   - date: '2405-01-08'
     zenithCharge: yes
@@ -135,39 +133,32 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 23.4
     sysPos:
-      source: M&M
+      source: Masters and Minions, pg. 135
       value: 7
-      page: 135
     icon: green24
     pressure:
-      source: M&M
+      source: Masters and Minions, pg. 135
       value: STANDARD
-      page: 135
     atmosphere:
-      source: M&M
+      source: Masters and Minions, pg. 135
       value: BREATHABLE
-      page: 135
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: M&M
+      source: Masters and Minions, pg. 135
       value: 1.02
-      page: 135
     diameter: 11767
     density: 6.091875553206
     dayLength: 29
     yearLength: 113.2
     temperature:
-      source: M&M
+      source: Masters and Minions, pg. 135
       value: 40
-      page: 135
     water:
-      source: M&M
+      source: Masters and Minions, pg. 135
       value: 69
-      page: 135
     lifeForm:
-      source: M&M
+      source: Masters and Minions, pg. 135
       value: MAMMAL
-      page: 135
     desc: |-
       Pandora is a vibrant world with a rich native ecosystem and stunning natural beauty. The planet was originally colonized by people eager to reconnect with nature. Unfortunately the comfortable planet attracted more settlers that had other ideas and the planet quickly became more developed. The industrial development attracted unwanted outside attention and the planet saw quite a bit of warfare in its early history until some peace was restored when the planet was annexed by the Lyran Commonwealth.
 
@@ -182,30 +173,24 @@ planet:
       Quickscell Company
     landmass:
       - name:
-          source: M&M
+          source: Masters and Minions, pg. 135
           value: Echo
-          page: 135
       - name:
-          source: M&M
+          source: Masters and Minions, pg. 135
           value: Kaos
-          page: 135
         capital:
-          source: M&M
+          source: Masters and Minions, pg. 135
           value: Deliverance
-          page: 135
       - name:
-          source: M&M
+          source: Masters and Minions, pg. 135
           value: Limbo
-          page: 135
       - name:
-          source: M&M
+          source: Masters and Minions, pg. 135
           value: Nirvana
-          page: 135
     satellite:
       - name:
-          source: M&M
+          source: Masters and Minions, pg. 135
           value: Hope
-          page: 135
         size: large
         icon: rock6
     event:
@@ -266,12 +251,6 @@ planet:
         population: 1848262298.0
       - date: '2360-01-01'
         population: 2102178083.0
-      - date: '2366-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '2370-01-01'
         population: 2339014888.0
       - date: '2380-01-01'
@@ -318,18 +297,6 @@ planet:
         population: 4875765921.0
       - date: '2570-01-01'
         population: 4902516761.0
-      - date: '2571-01-01'
-        # administration: LA | Tamar Pact | Tamar Domains
-        # administration: LA | Tamar Pact | Tamar Domains
-        # administration: LA | Tamar Pact | Tamar Domains
-        # administration: LA | Tamar Pact | Tamar Domains
-        # administration: LA | Tamar Pact | Tamar Domains
-        # administration: LA | Tamar Pact | Tamar Domains
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LA
       - date: '2580-01-01'
         population: 4909096167.0
       - date: '2590-01-01'
@@ -433,25 +400,8 @@ planet:
       - date: '3030-01-01'
         population: 3891263251.0
       - date: '3040-01-01'
-        # administration: FC | Tamar March | Benfled Operational Area
-        # administration: FC | Tamar March | Benfled Operational Area
-        # administration: FC | Tamar March | Benfled Operational Area
-        # administration: FC | Tamar March | Benfled Operational Area
-        # administration: FC | Tamar March | Benfled Operational Area
-        # administration: FC | Tamar March | Benfled Operational Area
         population: 3930371097.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FC
       - date: '3040-01-19'
-        # administration: FC | Tamar March | Benfled Operational Area
-        # administration: FC | Tamar March | Benfled Operational Area
-        # administration: FC | Tamar March | Benfled Operational Area
-        # administration: FC | Tamar March | Benfled Operational Area
-        # administration: FC | Tamar March | Benfled Operational Area
-        # administration: FC | Tamar March | Benfled Operational Area
         faction:
           source: canon
           value:
@@ -466,37 +416,13 @@ planet:
           value: B-A-B-B-B
       - date: '3050-01-01'
         population: 3971857415.0
-      - date: '3057-01-01'
-        # administration: LA | Tamar March | Pandora Operational Area
-        # administration: LA | Tamar March | Pandora Operational Area
-        # administration: LA | Tamar March | Pandora Operational Area
-        # administration: LA | Tamar March | Pandora Operational Area
-        # administration: LA | Tamar March | Pandora Operational Area
-        # administration: LA | Tamar March | Pandora Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LA
       - date: '3057-09-18'
-        # administration: LA | Donegal Province | Pandora Theater
-        # administration: LA | Donegal Province | Pandora Theater
-        # administration: LA | Donegal Province | Pandora Theater
-        # administration: LA | Donegal Province | Pandora Theater
-        # administration: LA | Donegal Province | Pandora Theater
-        # administration: LA | Donegal Province | Pandora Theater
         faction:
           source: canon
           value:
             - LA
       - date: '3060-01-01'
         population: 4013380277.0
-      - date: '3067-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CJF
       - date: '3067-06-20'
         faction:
           source: canon
@@ -520,25 +446,7 @@ planet:
         socioIndustrial: B-A-B-B-B
       - date: '3120-01-01'
         population: 4173829034.0
-      - date: '3130-01-01'
-        # administration: LA | Arc-Royal Theater
-        # administration: LA | Arc-Royal Theater
-        # administration: LA | Arc-Royal Theater
-        # administration: LA | Arc-Royal Theater
-        # administration: LA | Arc-Royal Theater
-        # administration: LA | Arc-Royal Theater
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LA
       - date: '3130-05-28'
-        # administration: LA | Arc-Royal Theater
-        # administration: LA | Arc-Royal Theater
-        # administration: LA | Arc-Royal Theater
-        # administration: LA | Arc-Royal Theater
-        # administration: LA | Arc-Royal Theater
-        # administration: LA | Arc-Royal Theater
         faction:
           source: canon
           value:
@@ -556,12 +464,6 @@ planet:
         population: 4213248006.0
       - date: '3145-01-01'
         population: 4230134749.0
-      - date: '3151-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - TamP
       - date: '3151-12-30'
         faction:
           source: canon

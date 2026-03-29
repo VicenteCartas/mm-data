@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,17 +16,15 @@
 # affiliated with Microsoft.
 
 id: Arcadia (Clan)
-sucsId: 2929
+sucsId: 2928
 xcood: -115.655
 ycood: 1608.8
 spectralType:
-  source: 'His:OK'
+  source: 'Historical: Operation Klondike, pg. 134'
   value: G7V
-  page: 134
 primarySlot:
-  source: 'His:OK'
+  source: 'Historical: Operation Klondike, pg. 134'
   value: 1
-  page: 134
 event:
   - date: '2792-01-23'
     zenithCharge: yes
@@ -37,67 +35,56 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.63
     sysPos:
-      source: 'His:OK'
+      source: 'Historical: Operation Klondike, pg. 134'
       value: 1
-      page: 134
     icon: green27
     pressure:
-      source: 'His:OK'
+      source: 'Historical: Operation Klondike, pg. 134'
       value: HIGH
-      page: 134
     atmosphere:
-      source: 'His:OK'
+      source: 'Historical: Operation Klondike, pg. 134'
       value: BREATHABLE
-      page: 134
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'His:OK'
+      source: 'Historical: Operation Klondike, pg. 134'
       value: 1.5
-      page: 134
     diameter: 15284
     density: 6.896947728679
     dayLength: 24
     yearLength: 1.1
     temperature:
-      source: 'His:OK'
+      source: 'Historical: Operation Klondike, pg. 134'
       value: 30
-      page: 134
     water:
-      source: 'His:OK'
+      source: 'Historical: Operation Klondike, pg. 134'
       value: 50
-      page: 134
     lifeForm:
-      source: 'His:OK'
+      source: 'Historical: Operation Klondike, pg. 134'
       value: MAMMAL
-      page: 134
-    desc: Arcadia was the first world scouted and colonized by members of the first SLDF exodus. In the time between the second exodus and the Clan’s return, the population was almost entirely eradicated by war. Environmentally, the planet sports dense vegetation and a well-developed eco-system, high volcanism and tectonic activity, and a virally-tainted atmosphere. Officially Arcadia’s moon is called Aeaea, but is known locally as ‘Liny,’ after the visible lines caused by the clouds in its thin atmosphere.
+    desc: Arcadia was the first world scouted and colonized by members of the first
+      SLDF exodus. In the time between the second exodus and the Clan’s return, the
+      population was almost entirely eradicated by war. Environmentally, the planet
+      sports dense vegetation and a well-developed eco-system, high volcanism and
+      tectonic activity, and a virally-tainted atmosphere. Officially Arcadia’s moon
+      is called Aeaea, but is known locally as ‘Liny,’ after the visible lines caused
+      by the clouds in its thin atmosphere.
     landmass:
       - name:
-          source: 'His:OK'
+          source: 'Historical: Operation Klondike, pg. 134'
           value: East Arcadia
-          page: 134
       - name:
-          source: 'His:OK'
+          source: 'Historical: Operation Klondike, pg. 134'
           value: Rechlan
-          page: 134
       - name:
-          source: 'His:OK'
+          source: 'Historical: Operation Klondike, pg. 134'
           value: West Arcadia
-          page: 134
     satellite:
       - name:
-          source: 'His:OK'
+          source: 'Historical: Operation Klondike, pg. 134'
           value: Aeaea
-          page: 134
         size: medium
         icon: oddmoon3
     event:
-      - date: '2786-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - SLIE
       - date: '2786-02-15'
         faction:
           source: canon
@@ -120,18 +107,6 @@ planet:
         population: 599554.0
       - date: '2820-01-01'
         population: 425314.0
-      - date: '2821-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - C/I
-      - date: '2822-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CLAN
       - date: '2822-11-13'
         faction:
           source: canon
@@ -142,11 +117,6 @@ planet:
             - CBS
       - date: '2830-01-01'
         population: 1049010.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CLAN
       - date: '2840-01-01'
         population: 2698675.0
       - date: '2841-01-01'
@@ -204,12 +174,6 @@ planet:
             - CSV
       - date: '3060-01-01'
         population: 53020324.0
-      - date: '3063-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CLAN
       - date: '3067-09-13'
         faction:
           source: canon
@@ -219,12 +183,6 @@ planet:
             - CGB
             - CBS
             - CCC
-      - date: '3068-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CLAN
       - date: '3070-01-01'
         population: 53313205.0
       - date: '3071-04-25'
@@ -244,12 +202,6 @@ planet:
             - CBS
             - CCC
             - SOC
-      - date: '3075-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CLAN
       - date: '3075-03-30'
         faction:
           source: canon
@@ -268,12 +220,6 @@ planet:
           value: 54000000.0
       - date: '3080-01-01'
         population: 54054027.0
-      - date: '3085-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CSA
       - date: '3085-09-16'
         faction:
           source: canon

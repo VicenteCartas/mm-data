@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: Small World
-sucsId: 2361
+sucsId: 2360
 xcood: 51.693
 ycood: -7.025
 spectralType:
-  source: DA:RW
+  source: MWDA world profiles
   value: M5V
 primarySlot:
-  source: DA:RW
+  source: MWDA world profiles
   value: 5
 event:
   - date: '2387-02-14'
@@ -113,55 +113,74 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.08
     sysPos:
-      source: DA:RW
+      source: MWDA world profiles
       value: 5
     icon: green18
     pressure:
-      source: DA:RW
+      source: MWDA world profiles
       value: THIN
     atmosphere:
-      source: DA:RW
+      source: MWDA world profiles
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: DA:RW
+      source: MWDA world profiles
       value: 1.04
     diameter: 11469
     density: 6.372476974252
     dayLength: 18
     yearLength: 0.4
     temperature:
-      source: DA:RW
+      source: MWDA world profiles
       value: 24
     water:
-      source: DA:RW
+      source: MWDA world profiles
       value: 67
     lifeForm:
-      source: DA:RW
+      source: MWDA world profiles
       value: BIRD
-    desc: Having only entered its current ice age about a thousand years ago, Small World is a cold world, where icebergs float endlessly across over two-thirds of the planet‘s surface, and where three of its five continents lie under expanding polar glaciers. The earliest expeditions to this world aimed at establishing settlements on the few habitable regions of the planet‘s two small equatorial continents of Gladstone and Motherland, when geologists discovered that a wealth of raw radioactive elements lay just below the surface. The Small family, after which the world was named, quickly capitalized on this discovery and established Small World as a port of call for industries in need of radioactive raw materials. Most of Small World‘s business, even today, comes from the mining, refining, and sale of radioactives and other minerals mined below its frozen lands, though only five major cities exist on the equatorial continents. In 3058, the Small family‘s dream to forge an empire was briefly realized after the breakup of the Federated Commonwealth, when the Duke of Small tried to seize several nearby worlds in a political and military campaign. These efforts broke down again just a few, short years later, and led to the collapse of the Small family and its fall from power. Aside from the cities on Gladstone and Motherland—including the planetary capital and port city of New Mariotta—small mining settlements exist on the northern continent of Everfrost, and the southern continents of Killingly and Hollonna.
+    desc: Having only entered its current ice age about a thousand years ago, Small
+      World is a cold world, where icebergs float endlessly across over two-thirds
+      of the planet‘s surface, and where three of its five continents lie under expanding
+      polar glaciers. The earliest expeditions to this world aimed at establishing
+      settlements on the few habitable regions of the planet‘s two small equatorial
+      continents of Gladstone and Motherland, when geologists discovered that a wealth
+      of raw radioactive elements lay just below the surface. The Small family, after
+      which the world was named, quickly capitalized on this discovery and established
+      Small World as a port of call for industries in need of radioactive raw materials.
+      Most of Small World‘s business, even today, comes from the mining, refining,
+      and sale of radioactives and other minerals mined below its frozen lands, though
+      only five major cities exist on the equatorial continents. In 3058, the Small
+      family‘s dream to forge an empire was briefly realized after the breakup of
+      the Federated Commonwealth, when the Duke of Small tried to seize several nearby
+      worlds in a political and military campaign. These efforts broke down again
+      just a few, short years later, and led to the collapse of the Small family and
+      its fall from power. Aside from the cities on Gladstone and Motherland—including
+      the planetary capital and port city of New Mariotta—small mining settlements
+      exist on the northern continent of Everfrost, and the southern continents of
+      Killingly and Hollonna.
     landmass:
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Everfrost
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Gladstone
         capital:
-          source: DA:RW
+          source: MWDA world profiles
           value: New Mariotta
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Hollonna
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Killingly
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Motherland
     satellite:
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Alfonso
         size: medium
         icon: rock16
@@ -173,12 +192,6 @@ planet:
             - TH
         population: 51816.0
         socioIndustrial: F-D-B-D-F
-      - date: '2317-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '2319-02-26'
         faction:
           source: canon
@@ -196,28 +209,10 @@ planet:
         population: 533307.0
       - date: '2340-01-01'
         population: 1881493.0
-      - date: '2341-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '2350-01-01'
         population: 5453289.0
       - date: '2360-01-01'
         population: 13463837.0
-      - date: '2366-01-01'
-        # administration: TH | Lockdale Province
-        # administration: TH | Lockdale Province
-        # administration: TH | Lockdale Province
-        # administration: TH | Lockdale Province
-        # administration: TH | Lockdale Province
-        # administration: TH | Lockdale Province
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - TH
       - date: '2370-01-01'
         population: 28966722.0
       - date: '2380-01-01'
@@ -305,18 +300,6 @@ planet:
         population: 1650860624.0
       - date: '2760-01-01'
         population: 1638769676.0
-      - date: '2767-01-01'
-        # administration: AE | Lockdale Province
-        # administration: AE | Lockdale Province
-        # administration: AE | Lockdale Province
-        # administration: AE | Lockdale Province
-        # administration: AE | Lockdale Province
-        # administration: AE | Lockdale Province
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - AE
       - date: '2767-08-17'
         faction:
           source: canon
@@ -327,12 +310,6 @@ planet:
       - date: '2770-01-01'
         population: 1627338760.0
       - date: '2779-11-21'
-        # administration: TH | Lockdale Province
-        # administration: TH | Lockdale Province
-        # administration: TH | Lockdale Province
-        # administration: TH | Lockdale Province
-        # administration: TH | Lockdale Province
-        # administration: TH | Lockdale Province
         faction:
           source: canon
           value:
@@ -341,12 +318,6 @@ planet:
         hpg: B
         population: 1600725210.0
       - date: '2790-06-12'
-        # administration: CC | Tikonov Commonality | Region 3
-        # administration: CC | Tikonov Commonality | Region 3
-        # administration: CC | Tikonov Commonality | Region 3
-        # administration: CC | Tikonov Commonality | Region 3
-        # administration: CC | Tikonov Commonality | Region 3
-        # administration: CC | Tikonov Commonality | Region 3
         faction:
           source: canon
           value:
@@ -359,12 +330,6 @@ planet:
       - date: '2820-01-01'
         population: 1514127559.0
       - date: '2821-01-08'
-        # administration: CC | Tikonov Commonality | Region 3
-        # administration: CC | Tikonov Commonality | Region 3
-        # administration: CC | Tikonov Commonality | Region 3
-        # administration: CC | Tikonov Commonality | Region 3
-        # administration: CC | Tikonov Commonality | Region 3
-        # administration: CC | Tikonov Commonality | Region 3
         faction:
           source: canon
           value:
@@ -421,12 +386,6 @@ planet:
       - date: '3030-01-01'
         population: 1305522095.0
       - date: '3032-08-28'
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
         faction:
           source: canon
           value:
@@ -437,25 +396,7 @@ planet:
         socioIndustrial: B-C-B-B-D
       - date: '3050-01-01'
         population: 1326976484.0
-      - date: '3057-01-01'
-        # administration: DS | National Capital
-        # administration: DS | National Capital
-        # administration: DS | National Capital
-        # administration: DS | National Capital
-        # administration: DS | National Capital
-        # administration: DS | National Capital
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - DS
       - date: '3057-11-01'
-        # administration: DS | National Capital
-        # administration: DS | National Capital
-        # administration: DS | National Capital
-        # administration: DS | National Capital
-        # administration: DS | National Capital
-        # administration: DS | National Capital
         faction:
           source: canon
           value:
@@ -463,12 +404,6 @@ planet:
       - date: '3060-01-01'
         population: 1341653802.0
       - date: '3065-04-21'
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
         faction:
           source: canon
           value:
@@ -495,25 +430,7 @@ planet:
             - Stone
       - date: '3080-01-01'
         population: 1364247554.0
-      - date: '3081-01-01'
-        # administration: ROS | Prefecture III
-        # administration: ROS | Prefecture III
-        # administration: ROS | Prefecture III
-        # administration: ROS | Prefecture III
-        # administration: ROS | Prefecture III
-        # administration: ROS | Prefecture III
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - ROS
       - date: '3081-03-06'
-        # administration: ROS | Prefecture III
-        # administration: ROS | Prefecture III
-        # administration: ROS | Prefecture III
-        # administration: ROS | Prefecture III
-        # administration: ROS | Prefecture III
-        # administration: ROS | Prefecture III
         faction:
           source: canon
           value:
@@ -532,12 +449,6 @@ planet:
         population: 1372183180.0
       - date: '3132-08-07'
         hpg: X
-      - date: '3135-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '3135-10-01'
         faction:
           source: canon
@@ -545,25 +456,7 @@ planet:
             - IND
       - date: '3140-01-01'
         population: 1372183180.0
-      - date: '3145-01-01'
-        # administration: DC | Dieron Military District | Al Na'ir Prefecture
-        # administration: DC | Dieron Military District | Al Na'ir Prefecture
-        # administration: DC | Dieron Military District | Al Na'ir Prefecture
-        # administration: DC | Dieron Military District | Al Na'ir Prefecture
-        # administration: DC | Dieron Military District | Al Na'ir Prefecture
-        # administration: DC | Dieron Military District | Al Na'ir Prefecture
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - DC
       - date: '3145-05-03'
-        # administration: DC | Dieron Military District | Al Na'ir Prefecture
-        # administration: DC | Dieron Military District | Al Na'ir Prefecture
-        # administration: DC | Dieron Military District | Al Na'ir Prefecture
-        # administration: DC | Dieron Military District | Al Na'ir Prefecture
-        # administration: DC | Dieron Military District | Al Na'ir Prefecture
-        # administration: DC | Dieron Military District | Al Na'ir Prefecture
         faction:
           source: canon
           value:

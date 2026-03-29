@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Sorunda
-sucsId: 2380
+sucsId: 2379
 xcood: -65.144
 ycood: -122.852
 spectralType:
@@ -162,7 +162,18 @@ planet:
     lifeForm:
       source: canon
       value: MAMMAL
-    desc: Sorunda is a relatively comfortable planet for human habitation, considering the higher than average gravity and atmospheric pressure. Otherwise, the air is breathable and the climate is warm and temperate. The primarily Buddhist population of Sorunda are able to produce enough food to not require food imports from other planets and the planet has a strong industrial base, though no military industry. Sorunda is the location for a branch of the Hero Training Institute, a for-profit military academy headquartered on Maxwell. The Sorunda branch will train aspiring MechWarriors and Aerospace Pilots that can afford the courses. While the population of Sorunda accepted the Hero Training Institute on their planet in order to bolster defenses, they required the Institute to set up its facilities away from most population centers and they settled on the Modesty Grasslands on the Serenity continent.
+    desc: Sorunda is a relatively comfortable planet for human habitation, considering
+      the higher than average gravity and atmospheric pressure. Otherwise, the air
+      is breathable and the climate is warm and temperate. The primarily Buddhist
+      population of Sorunda are able to produce enough food to not require food imports
+      from other planets and the planet has a strong industrial base, though no military
+      industry. Sorunda is the location for a branch of the Hero Training Institute,
+      a for-profit military academy headquartered on Maxwell. The Sorunda branch will
+      train aspiring MechWarriors and Aerospace Pilots that can afford the courses.
+      While the population of Sorunda accepted the Hero Training Institute on their
+      planet in order to bolster defenses, they required the Institute to set up its
+      facilities away from most population centers and they settled on the Modesty
+      Grasslands on the Serenity continent.
     landmass:
       - name:
           source: canon
@@ -214,12 +225,6 @@ planet:
         population: 80706798.0
       - date: '2310-01-01'
         population: 114968958.0
-      - date: '2317-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '2320-01-01'
         population: 157011687.0
       - date: '2330-01-01'
@@ -231,18 +236,6 @@ planet:
         population: 328113581.0
       - date: '2360-01-01'
         population: 395351547.0
-      - date: '2366-01-01'
-        # administration: FWL | Federation of Oriente
-        # administration: FWL | Federation of Oriente
-        # administration: FWL | Federation of Oriente
-        # administration: FWL | Federation of Oriente
-        # administration: FWL | Federation of Oriente
-        # administration: FWL | Federation of Oriente
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FWL
       - date: '2370-01-01'
         population: 462441454.0
       - date: '2380-01-01'
@@ -406,12 +399,6 @@ planet:
         population: 960752754.0
       - date: '3080-01-01'
         population: 974492767.0
-      - date: '3081-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '3081-07-28'
         faction:
           source: canon
@@ -435,18 +422,6 @@ planet:
           value: X
       - date: '3140-01-01'
         population: 1075474347.0
-      - date: '3145-01-01'
-        # administration: FWL | Oriente Protectorate
-        # administration: FWL | Oriente Protectorate
-        # administration: FWL | Oriente Protectorate
-        # administration: FWL | Oriente Protectorate
-        # administration: FWL | Oriente Protectorate
-        # administration: FWL | Oriente Protectorate
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FWL
       - date: '3145-07-08'
         faction:
           source: canon
@@ -454,12 +429,6 @@ planet:
             - OP
         population: 1085631469.0
       - date: '3151-01-01'
-        # administration: FWL | Oriente Protectorate
-        # administration: FWL | Oriente Protectorate
-        # administration: FWL | Oriente Protectorate
-        # administration: FWL | Oriente Protectorate
-        # administration: FWL | Oriente Protectorate
-        # administration: FWL | Oriente Protectorate
         faction:
           source: sucs
           value:

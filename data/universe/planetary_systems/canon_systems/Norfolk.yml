@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Norfolk
-sucsId: 1891
+sucsId: 1890
 xcood: -221.827
 ycood: -179.941
 spectralType:
@@ -114,7 +114,14 @@ planet:
     lifeForm:
       source: canon
       value: REPTILE
-    desc: Norfolk is a hot, tropical planet with abundant natural resources and rich soil, capable of supporting extensive agriculture. The planet has a strong industrial base, though for most of its history the planet did not have any major military manufacturers. This changed in the mid 31st century with the opening of the Thyne Weapons Plant, which became the largest PPC manufacturer in the Free Worlds League and focused extensively on producing all types of PPC weaponry, from man-packs to ‘Mech scale and all of the varieties. The Thyne Weapons Plant single-handedly ended the PPC shortage the Free Worlds League had suffered for at least a century.
+    desc: Norfolk is a hot, tropical planet with abundant natural resources and rich
+      soil, capable of supporting extensive agriculture. The planet has a strong industrial
+      base, though for most of its history the planet did not have any major military
+      manufacturers. This changed in the mid 31st century with the opening of the
+      Thyne Weapons Plant, which became the largest PPC manufacturer in the Free Worlds
+      League and focused extensively on producing all types of PPC weaponry, from
+      man-packs to ‘Mech scale and all of the varieties. The Thyne Weapons Plant single-handedly
+      ended the PPC shortage the Free Worlds League had suffered for at least a century.
     smallMoons: 5
     landmass:
       - name:
@@ -151,12 +158,6 @@ planet:
       - date: '2310-03-26'
         population: 6031365.0
         socioIndustrial: C-C-B-C-C
-      - date: '2317-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '2320-01-01'
         population: 11187734.0
       - date: '2330-01-01'
@@ -211,18 +212,6 @@ planet:
         population: 466550479.0
       - date: '2570-01-01'
         population: 470414270.0
-      - date: '2571-01-01'
-        # administration: FWL | Marik Commonwealth
-        # administration: FWL | Marik Commonwealth
-        # administration: FWL | Marik Commonwealth
-        # administration: FWL | Marik Commonwealth
-        # administration: FWL | Marik Commonwealth
-        # administration: FWL | Marik Commonwealth
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FWL
       - date: '2580-01-01'
         population: 476650359.0
       - date: '2590-01-01'
@@ -344,12 +333,6 @@ planet:
             - PR
       - date: '3080-01-01'
         population: 500635324.0
-      - date: '3081-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '3081-04-15'
         faction:
           source: canon
@@ -362,24 +345,12 @@ planet:
             - RF
       - date: '3090-01-01'
         population: 504757411.0
-      - date: '3095-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '3100-01-01'
         population: 511259833.0
       - date: '3110-01-01'
         population: 521379373.0
       - date: '3120-01-01'
         population: 530743015.0
-      - date: '3130-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - RF
       - date: '3130-09-21'
         faction:
           source: canon

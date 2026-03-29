@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -58,12 +58,6 @@ planet:
       - name: Simpen
     event:
       - date: '2699-05-06'
-        # administration: RWR | Timbuktu Province
-        # administration: RWR | Timbuktu Province
-        # administration: RWR | Timbuktu Province
-        # administration: RWR | Timbuktu Province
-        # administration: RWR | Timbuktu Province
-        # administration: RWR | Timbuktu Province
         faction:
           source: canon
           value:
@@ -117,12 +111,6 @@ planet:
         population: 481049.0
       - date: '2860-01-01'
         population: 268931.0
-      - date: '2864-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - ABN
       - date: '2870-01-01'
         population: 174596.0
       - date: '2876-05-05'
@@ -203,7 +191,8 @@ planet:
     icon: frozen41
     pressure: VERY_HIGH
     atmosphere: TOXIC_POISON
-    composition: Methane and Carbon Dioxide, plus trace amounts of Carbon Dioxide and Methane
+    composition: Methane and Carbon Dioxide, plus trace amounts of Carbon Dioxide
+      and Methane
     gravity: 0.77
     diameter: 8500
     density: 6.3337

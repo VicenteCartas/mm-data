@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,17 +16,15 @@
 # affiliated with Microsoft.
 
 id: Sadurni
-sucsId: 2205
+sucsId: 2204
 xcood: -15.002
 ycood: -344.373
 spectralType:
-  source: 'HB:HM'
+  source: 'Handbook: House Marik, pg. 67'
   value: G9VI
-  page: 67
 primarySlot:
-  source: 'HB:HM'
+  source: 'Handbook: House Marik, pg. 67'
   value: 4
-  page: 67
 event:
   - date: '2393-09-26'
     zenithCharge: yes
@@ -85,58 +83,50 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 1.28
     sysPos:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 67'
       value: 4
-      page: 67
     icon: green36
     pressure:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 67'
       value: STANDARD
-      page: 67
     atmosphere:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 67'
       value: BREATHABLE
-      page: 67
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 67'
       value: 1.1
-      page: 67
     diameter: 14930
     density: 5.177869083448
     dayLength: 19
     yearLength: 1.7
     temperature:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 67'
       value: 35
-      page: 67
     water:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 67'
       value: 65
-      page: 67
     lifeForm:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 67'
       value: MAMMAL
-      page: 67
-    desc: Sadurni is a comfortable planet for human habitation and the planet’s economy is primarily based on agriculture. The planet is also renowned for its skilled artisans and stonemasons. Other than food exports, Sadurni is of very limited military importance.
+    desc: Sadurni is a comfortable planet for human habitation and the planet’s economy
+      is primarily based on agriculture. The planet is also renowned for its skilled
+      artisans and stonemasons. Other than food exports, Sadurni is of very limited
+      military importance.
     landmass:
       - name:
-          source: 'HB:HM'
+          source: 'Handbook: House Marik, pg. 67'
           value: Katerini
-          page: 67
       - name:
-          source: 'HB:HM'
+          source: 'Handbook: House Marik, pg. 67'
           value: Patra
-          page: 67
       - name:
-          source: 'HB:HM'
+          source: 'Handbook: House Marik, pg. 67'
           value: Xanthi
-          page: 67
     satellite:
       - name:
-          source: 'HB:HM'
+          source: 'Handbook: House Marik, pg. 67'
           value: Radlan
-          page: 67
         size: large
         icon: rock7
     event:
@@ -166,12 +156,6 @@ planet:
       - date: '2360-01-01'
         population: 5012932.0
       - date: '2367-07-01'
-        # administration: CC | Andurien Commonality | Region 3
-        # administration: CC | Andurien Commonality | Region 3
-        # administration: CC | Andurien Commonality | Region 3
-        # administration: CC | Andurien Commonality | Region 3
-        # administration: CC | Andurien Commonality | Region 3
-        # administration: CC | Andurien Commonality | Region 3
         faction:
           source: canon
           value:
@@ -291,12 +275,6 @@ planet:
       - date: '2890-01-01'
         population: 73911520.0
       - date: '2900-11-04'
-        # administration: FWL | Duchy of Andurien
-        # administration: FWL | Duchy of Andurien
-        # administration: FWL | Duchy of Andurien
-        # administration: FWL | Duchy of Andurien
-        # administration: FWL | Duchy of Andurien
-        # administration: FWL | Duchy of Andurien
         faction:
           source: canon
           value:
@@ -334,11 +312,6 @@ planet:
             - FWL
       - date: '3030-01-01'
         population: 73437350.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - DA
       - date: '3030-09-11'
         faction:
           source: canon
@@ -351,12 +324,6 @@ planet:
             - FWL
             - DA
       - date: '3038-02-23'
-        # administration: FWL | Duchy of Andurien
-        # administration: FWL | Duchy of Andurien
-        # administration: FWL | Duchy of Andurien
-        # administration: FWL | Duchy of Andurien
-        # administration: FWL | Duchy of Andurien
-        # administration: FWL | Duchy of Andurien
         faction:
           source: canon
           value:
@@ -379,12 +346,6 @@ planet:
           value: 75500000.0
       - date: '3070-01-01'
         population: 75772290.0
-      - date: '3075-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - DA
       - date: '3079-04-22'
         faction:
           source: canon
@@ -397,12 +358,6 @@ planet:
       - date: '3100-01-01'
         population: 78439894.0
       - date: '3105-03-16'
-        # administration: CC | Sian Commonality | Region 9
-        # administration: CC | Sian Commonality | Region 9
-        # administration: CC | Sian Commonality | Region 9
-        # administration: CC | Sian Commonality | Region 9
-        # administration: CC | Sian Commonality | Region 9
-        # administration: CC | Sian Commonality | Region 9
         faction:
           source: canon
           value:

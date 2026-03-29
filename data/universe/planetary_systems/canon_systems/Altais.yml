@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -20,10 +20,10 @@ sucsId: 98
 xcood: 37.222
 ycood: 109.811
 spectralType:
-  source: DA:RW
+  source: MWDA world profiles
   value: F2IV
 primarySlot:
-  source: DA:RW
+  source: MWDA world profiles
   value: 1
 event:
   - date: '2362-02-15'
@@ -35,31 +35,31 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 4.2
     sysPos:
-      source: DA:RW
+      source: MWDA world profiles
       value: 1
     icon: wet20
     pressure:
-      source: DA:RW
+      source: MWDA world profiles
       value: HIGH
     atmosphere:
-      source: DA:RW
+      source: MWDA world profiles
       value: TAINTED_POISON
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: DA:RW
+      source: MWDA world profiles
       value: 0.98
     diameter: 11534
     density: 5.971141975805
     dayLength: 17
     yearLength: 8.7
     temperature:
-      source: DA:RW
+      source: MWDA world profiles
       value: 53
     water:
-      source: DA:RW
+      source: MWDA world profiles
       value: 81
     lifeForm:
-      source: DA:RW
+      source: MWDA world profiles
       value: AMPHIBIAN
     desc: |-
       Young, hot, and in every way cursed with an oppressive atmosphere, many feel that Altais was colonized solely out of human stubbornness and some early settler‘s thirst for a challenge. More practical critics have suggested that the plentiful metal ores constantly churned up by the planet‘s many volcanoes drew those seeking fortune through mining and manufacturing industries. In fact, the first settlers to come to Altais came during a geologically brief dormant period in its development, when the planet‘s atmosphere was much more terrestrial and its surface far less unstable. Within less than a century of the first colonies‘ establishment on Altais, however, a massive shift in the planet‘s three large tectonic plates began when a stray meteor—the remnant of a failed second planet in the Altais system—slammed into the shallow waters close to a major fault line. The shifting plates created a series of earthquakes and volcanic eruptions across the planet, destroying several cities over the next few decades.
@@ -70,19 +70,19 @@ planet:
     smallMoons: 1
     landmass:
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Greater Elauria
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Lesser Elauria
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Tanzaria
         capital:
-          source: DA:RW
+          source: MWDA world profiles
           value: Gaines
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Welasia
     event:
       - date: '2273-07-18'
@@ -117,12 +117,6 @@ planet:
           source: canon
           value:
             - LA
-      - date: '2366-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '2370-01-01'
         population: 364435636.0
       - date: '2380-01-01'
@@ -169,25 +163,7 @@ planet:
         population: 5306239175.0
       - date: '2570-01-01'
         population: 5421403114.0
-      - date: '2571-01-01'
-        # administration: DC | Benjamin Military District | Kuzuu Prefecture
-        # administration: DC | Benjamin Military District | Kuzuu Prefecture
-        # administration: DC | Benjamin Military District | Kuzuu Prefecture
-        # administration: DC | Benjamin Military District | Kuzuu Prefecture
-        # administration: DC | Benjamin Military District | Kuzuu Prefecture
-        # administration: DC | Benjamin Military District | Kuzuu Prefecture
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - DC
       - date: '2571-01-25'
-        # administration: DC | Benjamin Military District | Kuzuu Prefecture
-        # administration: DC | Benjamin Military District | Kuzuu Prefecture
-        # administration: DC | Benjamin Military District | Kuzuu Prefecture
-        # administration: DC | Benjamin Military District | Kuzuu Prefecture
-        # administration: DC | Benjamin Military District | Kuzuu Prefecture
-        # administration: DC | Benjamin Military District | Kuzuu Prefecture
         faction:
           source: canon
           value:
@@ -305,25 +281,7 @@ planet:
         population: 4766840238.0
       - date: '3080-01-01'
         population: 4846630211.0
-      - date: '3081-01-01'
-        # administration: ROS | Prefecture I
-        # administration: ROS | Prefecture I
-        # administration: ROS | Prefecture I
-        # administration: ROS | Prefecture I
-        # administration: ROS | Prefecture I
-        # administration: ROS | Prefecture I
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - ROS
       - date: '3081-11-07'
-        # administration: ROS | Prefecture I
-        # administration: ROS | Prefecture I
-        # administration: ROS | Prefecture I
-        # administration: ROS | Prefecture I
-        # administration: ROS | Prefecture I
-        # administration: ROS | Prefecture I
         faction:
           source: canon
           value:
@@ -342,12 +300,6 @@ planet:
         population: 5139129266.0
       - date: '3132-08-07'
         hpg: X
-      - date: '3135-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '3135-10-01'
         faction:
           source: canon
@@ -355,25 +307,7 @@ planet:
             - IND
       - date: '3140-01-01'
         population: 5230378579.0
-      - date: '3145-01-01'
-        # administration: DC | Dieron Military District | Algedi Prefecture
-        # administration: DC | Dieron Military District | Algedi Prefecture
-        # administration: DC | Dieron Military District | Algedi Prefecture
-        # administration: DC | Dieron Military District | Algedi Prefecture
-        # administration: DC | Dieron Military District | Algedi Prefecture
-        # administration: DC | Dieron Military District | Algedi Prefecture
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - DC
       - date: '3145-12-08'
-        # administration: DC | Dieron Military District | Algedi Prefecture
-        # administration: DC | Dieron Military District | Algedi Prefecture
-        # administration: DC | Dieron Military District | Algedi Prefecture
-        # administration: DC | Dieron Military District | Algedi Prefecture
-        # administration: DC | Dieron Military District | Algedi Prefecture
-        # administration: DC | Dieron Military District | Algedi Prefecture
         faction:
           source: canon
           value:

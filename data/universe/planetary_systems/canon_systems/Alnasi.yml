@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -20,10 +20,10 @@ sucsId: 85
 xcood: 2.838
 ycood: 116.017
 spectralType:
-  source: DA:RW
+  source: MWDA world profiles
   value: K0III
 primarySlot:
-  source: DA:RW
+  source: MWDA world profiles
   value: 2
 event:
   - date: '2448-01-26'
@@ -55,31 +55,31 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 1.28
     sysPos:
-      source: DA:RW
+      source: MWDA world profiles
       value: 2
     icon: green25
     pressure:
-      source: DA:RW
+      source: MWDA world profiles
       value: STANDARD
     atmosphere:
-      source: DA:RW
+      source: MWDA world profiles
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: DA:RW
+      source: MWDA world profiles
       value: 0.82
     diameter: 13148
     density: 4.382866620815
     dayLength: 21
     yearLength: 1.7
     temperature:
-      source: DA:RW
+      source: MWDA world profiles
       value: 47
     water:
-      source: DA:RW
+      source: MWDA world profiles
       value: 36
     lifeForm:
-      source: DA:RW
+      source: MWDA world profiles
       value: PLANT
     desc: |-
       While Alnasi orbits a relatively cool K0 star, the planet follows an irregular orbit that results in periods of extreme hot and cold cycles of more than a thousand years. When the planet was first colonized the planet was slightly cooler than Terra and seemed to be in a receding ice-age with large glaciers at both poles and large tracts of temperate forests. As of the 32nd century the planet has heated up significantly and much of the temperate forests have been replaced by deserts.
@@ -87,43 +87,37 @@ planet:
       Despite being aware of the impending, though slow coming, temperature change that will eventually make the planet unlivable for humans Alnasi has thrived. All four continents are populated and the primary industry on planet is mining of the massive deposits of iron and other common minerals.
     landmass:
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Hecateas
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Insarroples
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Lantilles
         capital:
-          source: DA:RW
+          source: MWDA world profiles
           value: Gantarius
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Rowenopia
     satellite:
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Bherin
         size: large
         icon: rock10
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Kalil
         size: large
         icon: rock9
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Parada
         size: large
         icon: rock17
     event:
-      - date: '2319-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '2319-02-07'
         faction:
           source: canon
@@ -146,12 +140,6 @@ planet:
           source: canon
           value:
             - LA
-      - date: '2366-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '2370-01-01'
         population: 16792124.0
       - date: '2380-01-01'
@@ -195,18 +183,6 @@ planet:
         population: 1120954446.0
       - date: '2570-01-01'
         population: 1154167191.0
-      - date: '2571-01-01'
-        # administration: LA | Federation of Skye | Kannon Shire
-        # administration: LA | Federation of Skye | Kannon Shire
-        # administration: LA | Federation of Skye | Kannon Shire
-        # administration: LA | Federation of Skye | Kannon Shire
-        # administration: LA | Federation of Skye | Kannon Shire
-        # administration: LA | Federation of Skye | Kannon Shire
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LA
       - date: '2577-01-01'
         socioIndustrial: B-B-C-B-B
       - date: '2580-01-01'
@@ -263,36 +239,12 @@ planet:
         population: 1295952940.0
       - date: '2820-01-01'
         population: 1302806074.0
-      - date: '2821-01-01'
-        # administration: DC | Dieron Military District | Kuzuu Prefecture
-        # administration: DC | Dieron Military District | Kuzuu Prefecture
-        # administration: DC | Dieron Military District | Kuzuu Prefecture
-        # administration: DC | Dieron Military District | Kuzuu Prefecture
-        # administration: DC | Dieron Military District | Kuzuu Prefecture
-        # administration: DC | Dieron Military District | Kuzuu Prefecture
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - DC
       - date: '2821-02-08'
-        # administration: DC | Dieron Military District | Kuzuu Prefecture
-        # administration: DC | Dieron Military District | Kuzuu Prefecture
-        # administration: DC | Dieron Military District | Kuzuu Prefecture
-        # administration: DC | Dieron Military District | Kuzuu Prefecture
-        # administration: DC | Dieron Military District | Kuzuu Prefecture
-        # administration: DC | Dieron Military District | Kuzuu Prefecture
         faction:
           source: canon
           value:
             - DC
       - date: '2822-07-03'
-        # administration: DC | Dieron Military District | Kuzuu Prefecture
-        # administration: DC | Dieron Military District | Kuzuu Prefecture
-        # administration: DC | Dieron Military District | Kuzuu Prefecture
-        # administration: DC | Dieron Military District | Kuzuu Prefecture
-        # administration: DC | Dieron Military District | Kuzuu Prefecture
-        # administration: DC | Dieron Military District | Kuzuu Prefecture
         faction:
           source: canon
           value:
@@ -352,12 +304,6 @@ planet:
             - DC
             - LA
       - date: '3039-05-12'
-        # administration: DC | Dieron Military District | Vega Prefecture
-        # administration: DC | Dieron Military District | Vega Prefecture
-        # administration: DC | Dieron Military District | Vega Prefecture
-        # administration: DC | Dieron Military District | Vega Prefecture
-        # administration: DC | Dieron Military District | Vega Prefecture
-        # administration: DC | Dieron Military District | Vega Prefecture
         faction:
           source: canon
           value:
@@ -374,25 +320,7 @@ planet:
         population: 916698941.0
       - date: '3080-01-01'
         population: 928136775.0
-      - date: '3081-01-01'
-        # administration: ROS | Prefecture I
-        # administration: ROS | Prefecture I
-        # administration: ROS | Prefecture I
-        # administration: ROS | Prefecture I
-        # administration: ROS | Prefecture I
-        # administration: ROS | Prefecture I
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - ROS
       - date: '3081-03-20'
-        # administration: ROS | Prefecture I
-        # administration: ROS | Prefecture I
-        # administration: ROS | Prefecture I
-        # administration: ROS | Prefecture I
-        # administration: ROS | Prefecture I
-        # administration: ROS | Prefecture I
         faction:
           source: canon
           value:
@@ -409,12 +337,6 @@ planet:
         population: 974553200.0
       - date: '3130-01-01'
         population: 985135415.0
-      - date: '3135-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '3135-10-01'
         faction:
           source: canon
@@ -422,25 +344,7 @@ planet:
             - IND
       - date: '3140-01-01'
         population: 995633392.0
-      - date: '3145-01-01'
-        # administration: RD | Region 3 | Vega Protectorate
-        # administration: RD | Region 3 | Vega Protectorate
-        # administration: RD | Region 3 | Vega Protectorate
-        # administration: RD | Region 3 | Vega Protectorate
-        # administration: RD | Region 3 | Vega Protectorate
-        # administration: RD | Region 3 | Vega Protectorate
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - RD
       - date: '3145-12-05'
-        # administration: RD | Region 3 | Vega Protectorate
-        # administration: RD | Region 3 | Vega Protectorate
-        # administration: RD | Region 3 | Vega Protectorate
-        # administration: RD | Region 3 | Vega Protectorate
-        # administration: RD | Region 3 | Vega Protectorate
-        # administration: RD | Region 3 | Vega Protectorate
         faction:
           source: canon
           value:

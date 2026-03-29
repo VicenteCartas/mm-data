@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: Styk
-sucsId: 2426
+sucsId: 2425
 xcood: 42.128
 ycood: -97.499
 spectralType:
-  source: 'OR'
+  source: 'Objective Raids: Capellan Confederation'
   value: K2IV
 primarySlot:
-  source: 'OR'
+  source: 'Objective Raids: Capellan Confederation'
   value: 2
 event:
   - date: '2362-12-06'
@@ -52,31 +52,31 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 1.12
     sysPos:
-      source: 'OR'
+      source: 'Objective Raids: Capellan Confederation'
       value: 2
     icon: wet21
     pressure:
-      source: 'OR'
+      source: 'Objective Raids: Capellan Confederation'
       value: STANDARD
     atmosphere:
-      source: 'OR'
+      source: 'Objective Raids: Capellan Confederation'
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'OR'
+      source: 'Objective Raids: Capellan Confederation'
       value: 1.0
     diameter: 13081
     density: 5.372451454872
     dayLength: 24
     yearLength: 1.5
     temperature:
-      source: 'OR'
+      source: 'Objective Raids: Capellan Confederation'
       value: 39
     water:
-      source: 'OR'
+      source: 'Objective Raids: Capellan Confederation'
       value: 78
     lifeForm:
-      source: 'OR'
+      source: 'Objective Raids: Capellan Confederation'
       value: REPTILE
     desc: |-
       Styk is a wealthy planet with extensive heavy and light industry and the planet is a major trade hub and center of finance. As of 3025 Styk was the personal holding of Duke Pavel Ridzik, commander of the Capellan Armed Forces and in 3025 Styk accounted for 20 percent of all industrial output and 25 percent of annual interstellar trade in the Confederation, which made it the second largest industrial center and the largest interstellar trading planet in the Confederation. Styk was also home to the Confederation's third largest BattleMech production facility.
@@ -85,34 +85,34 @@ planet:
       Tao ‘Mechworks
     landmass:
       - name:
-          source: 'OR'
+          source: 'Objective Raids: Capellan Confederation'
           value: Burtnik
         capital:
-          source: 'OR'
+          source: 'Objective Raids: Capellan Confederation'
           value: Lorelei
       - name:
-          source: 'OR'
+          source: 'Objective Raids: Capellan Confederation'
           value: Curulewski
       - name:
-          source: 'OR'
+          source: 'Objective Raids: Capellan Confederation'
           value: Detoung
       - name:
-          source: 'OR'
+          source: 'Objective Raids: Capellan Confederation'
           value: Gowan
       - name:
-          source: 'OR'
+          source: 'Objective Raids: Capellan Confederation'
           value: Panozzo North
       - name:
-          source: 'OR'
+          source: 'Objective Raids: Capellan Confederation'
           value: Panozzo South
       - name:
-          source: 'OR'
+          source: 'Objective Raids: Capellan Confederation'
           value: Shaw
       - name:
-          source: 'OR'
+          source: 'Objective Raids: Capellan Confederation'
           value: Sucherman
       - name:
-          source: 'OR'
+          source: 'Objective Raids: Capellan Confederation'
           value: Young
     event:
       - date: '2176-04-06'
@@ -142,12 +142,6 @@ planet:
         population: 129373792.0
       - date: '2270-01-01'
         population: 212066120.0
-      - date: '2271-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '2280-01-01'
         population: 326866389.0
       - date: '2290-01-01'
@@ -168,19 +162,7 @@ planet:
         socioIndustrial: C-D-B-D-D
       - date: '2360-01-01'
         population: 2629216862.0
-      - date: '2366-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - SSUP
       - date: '2367-07-01'
-        # administration: CC | Sarna Commonality | Region 1
-        # administration: CC | Sarna Commonality | Region 1
-        # administration: CC | Sarna Commonality | Region 1
-        # administration: CC | Sarna Commonality | Region 1
-        # administration: CC | Sarna Commonality | Region 1
-        # administration: CC | Sarna Commonality | Region 1
         faction:
           source: canon
           value:
@@ -346,43 +328,15 @@ planet:
           value:
             - FS
       - date: '3030-01-01'
-        # administration: LA | Sarna March | Palos Operational Area
-        # administration: LA | Sarna March | Palos Operational Area
-        # administration: LA | Sarna March | Palos Operational Area
-        # administration: LA | Sarna March | Palos Operational Area
-        # administration: LA | Sarna March | Palos Operational Area
-        # administration: LA | Sarna March | Palos Operational Area
         population: 3813639962.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LA
       - date: '3030-02-28'
         faction:
           source: canon
           value:
             - LA
       - date: '3040-01-01'
-        # administration: FC | Sarna March | Palos Operational Area
-        # administration: FC | Sarna March | Palos Operational Area
-        # administration: FC | Sarna March | Palos Operational Area
-        # administration: FC | Sarna March | Palos Operational Area
-        # administration: FC | Sarna March | Palos Operational Area
-        # administration: FC | Sarna March | Palos Operational Area
         population: 2543124812.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FC
       - date: '3040-01-19'
-        # administration: FC | Sarna March | Palos Operational Area
-        # administration: FC | Sarna March | Palos Operational Area
-        # administration: FC | Sarna March | Palos Operational Area
-        # administration: FC | Sarna March | Palos Operational Area
-        # administration: FC | Sarna March | Palos Operational Area
-        # administration: FC | Sarna March | Palos Operational Area
         faction:
           source: canon
           value:
@@ -393,50 +347,14 @@ planet:
           value: B-B-B-B-C
       - date: '3050-01-01'
         population: 1756402344.0
-      - date: '3057-01-01'
-        # administration: SKC | National Capital
-        # administration: SKC | National Capital
-        # administration: SKC | National Capital
-        # administration: SKC | National Capital
-        # administration: SKC | National Capital
-        # administration: SKC | National Capital
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - SKC
       - date: '3057-11-01'
-        # administration: SKC | National Capital
-        # administration: SKC | National Capital
-        # administration: SKC | National Capital
-        # administration: SKC | National Capital
-        # administration: SKC | National Capital
-        # administration: SKC | National Capital
         faction:
           source: canon
           value:
             - SKC
       - date: '3060-01-01'
         population: 1213054577.0
-      - date: '3063-01-01'
-        # administration: CC | Styk Protectorate
-        # administration: CC | Styk Protectorate
-        # administration: CC | Styk Protectorate
-        # administration: CC | Styk Protectorate
-        # administration: CC | Styk Protectorate
-        # administration: CC | Styk Protectorate
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CC
       - date: '3063-01-08'
-        # administration: CC | Liao Commonality | Region 3
-        # administration: CC | Liao Commonality | Region 3
-        # administration: CC | Liao Commonality | Region 3
-        # administration: CC | Liao Commonality | Region 3
-        # administration: CC | Liao Commonality | Region 3
-        # administration: CC | Liao Commonality | Region 3
         faction:
           source: canon
           value:
@@ -449,25 +367,7 @@ planet:
           value: 934000000.0
       - date: '3080-01-01'
         population: 934934467.0
-      - date: '3085-01-01'
-        # administration: ROS | Prefecture V
-        # administration: ROS | Prefecture V
-        # administration: ROS | Prefecture V
-        # administration: ROS | Prefecture V
-        # administration: ROS | Prefecture V
-        # administration: ROS | Prefecture V
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - ROS
       - date: '3085-08-27'
-        # administration: ROS | Prefecture V
-        # administration: ROS | Prefecture V
-        # administration: ROS | Prefecture V
-        # administration: ROS | Prefecture V
-        # administration: ROS | Prefecture V
-        # administration: ROS | Prefecture V
         faction:
           source: canon
           value:
@@ -493,25 +393,7 @@ planet:
           source: canon
           value:
             - IND
-      - date: '3135-01-01'
-        # administration: CC | Liao Commonality | Region 1
-        # administration: CC | Liao Commonality | Region 1
-        # administration: CC | Liao Commonality | Region 1
-        # administration: CC | Liao Commonality | Region 1
-        # administration: CC | Liao Commonality | Region 1
-        # administration: CC | Liao Commonality | Region 1
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CC
       - date: '3135-06-08'
-        # administration: CC | Sarna Commonality | Region 1
-        # administration: CC | Sarna Commonality | Region 1
-        # administration: CC | Sarna Commonality | Region 1
-        # administration: CC | Sarna Commonality | Region 1
-        # administration: CC | Sarna Commonality | Region 1
-        # administration: CC | Sarna Commonality | Region 1
         faction:
           source: canon
           value:

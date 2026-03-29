@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -20,10 +20,10 @@ sucsId: 126
 xcood: 75.47
 ycood: 36.138
 spectralType:
-  source: DA:RW
+  source: MWDA world profiles
   value: G3VI
 primarySlot:
-  source: DA:RW
+  source: MWDA world profiles
   value: 1
 event:
   - date: '2352-10-02'
@@ -41,46 +41,59 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 1.6
     sysPos:
-      source: DA:RW
+      source: MWDA world profiles
       value: 1
     icon: green47
     pressure:
-      source: DA:RW
+      source: MWDA world profiles
       value: STANDARD
     atmosphere:
-      source: DA:RW
+      source: MWDA world profiles
       value: TAINTED_POISON
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: DA:RW
+      source: MWDA world profiles
       value: 1.08
     diameter: 13458
     density: 5.639414427274
     dayLength: 24
     yearLength: 2.3
     temperature:
-      source: DA:RW
+      source: MWDA world profiles
       value: 32
     water:
-      source: DA:RW
+      source: MWDA world profiles
       value: 44
     lifeForm:
-      source: DA:RW
+      source: MWDA world profiles
       value: BIRD
-    desc: The first colonies established on Ancha failed when an undetected viral taint decimated their numbers and left the survivors frail and sterile. With their transports dismantled for use as colony shelters and equipment, their fate went undiscovered until a second wave of colonists found their empty settlements nearly two decades later. Thanks to the records left by the first colonists, the second wave of settlers managed to find a counteragent to the virus in time to spare themselves the same fate. Today, the lost colonies of the first settlers remain on the large, southern continent of Gastiogne—a reminder of those who came before, cared for by the descendants of the second wave as historical sites. Visitors to Ancha must receive regular inoculations against the viral taint before and during their stay. Ancha is home to numerous small industries, primarily focused on the automotive and civilian aircraft industries. Its other continent, Normandy, is home to the planetary capital of New Summit, as well as the spaceport city of Armitage.
+    desc: The first colonies established on Ancha failed when an undetected viral
+      taint decimated their numbers and left the survivors frail and sterile. With
+      their transports dismantled for use as colony shelters and equipment, their
+      fate went undiscovered until a second wave of colonists found their empty settlements
+      nearly two decades later. Thanks to the records left by the first colonists,
+      the second wave of settlers managed to find a counteragent to the virus in time
+      to spare themselves the same fate. Today, the lost colonies of the first settlers
+      remain on the large, southern continent of Gastiogne—a reminder of those who
+      came before, cared for by the descendants of the second wave as historical sites.
+      Visitors to Ancha must receive regular inoculations against the viral taint
+      before and during their stay. Ancha is home to numerous small industries, primarily
+      focused on the automotive and civilian aircraft industries. Its other continent,
+      Normandy, is home to the planetary capital of New Summit, as well as the spaceport
+      city of Armitage.
     landmass:
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Gastiogne
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Normandy
         capital:
-          source: DA:RW
+          source: MWDA world profiles
           value: New Summit
     satellite:
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Bromi
         size: large
         icon: rock6
@@ -107,12 +120,6 @@ planet:
             - DC
       - date: '2340-01-01'
         population: 9276911.0
-      - date: '2341-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '2350-01-01'
         population: 20007855.0
       - date: '2356-01-01'
@@ -163,18 +170,6 @@ planet:
         population: 1678463510.0
       - date: '2570-01-01'
         population: 1735506128.0
-      - date: '2571-01-01'
-        # administration: DC | Benjamin Military District | Ashio Prefecture
-        # administration: DC | Benjamin Military District | Ashio Prefecture
-        # administration: DC | Benjamin Military District | Ashio Prefecture
-        # administration: DC | Benjamin Military District | Ashio Prefecture
-        # administration: DC | Benjamin Military District | Ashio Prefecture
-        # administration: DC | Benjamin Military District | Ashio Prefecture
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - DC
       - date: '2580-01-01'
         population: 1780971203.0
       - date: '2590-01-01'
@@ -290,25 +285,7 @@ planet:
         population: 1385177758.0
       - date: '3080-01-01'
         population: 1408645319.0
-      - date: '3081-01-01'
-        # administration: ROS | Prefecture III
-        # administration: ROS | Prefecture III
-        # administration: ROS | Prefecture III
-        # administration: ROS | Prefecture III
-        # administration: ROS | Prefecture III
-        # administration: ROS | Prefecture III
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - ROS
       - date: '3081-09-03'
-        # administration: ROS | Prefecture III
-        # administration: ROS | Prefecture III
-        # administration: ROS | Prefecture III
-        # administration: ROS | Prefecture III
-        # administration: ROS | Prefecture III
-        # administration: ROS | Prefecture III
         faction:
           source: canon
           value:
@@ -327,25 +304,7 @@ planet:
         population: 1509273601.0
       - date: '3132-08-07'
         hpg: X
-      - date: '3135-01-01'
-        # administration: DC | Benjamin Military District | Algedi Prefecture
-        # administration: DC | Benjamin Military District | Algedi Prefecture
-        # administration: DC | Benjamin Military District | Algedi Prefecture
-        # administration: DC | Benjamin Military District | Algedi Prefecture
-        # administration: DC | Benjamin Military District | Algedi Prefecture
-        # administration: DC | Benjamin Military District | Algedi Prefecture
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - DC
       - date: '3135-03-23'
-        # administration: DC | Dieron Military District | Al Na'ir Prefecture
-        # administration: DC | Dieron Military District | Al Na'ir Prefecture
-        # administration: DC | Dieron Military District | Al Na'ir Prefecture
-        # administration: DC | Dieron Military District | Al Na'ir Prefecture
-        # administration: DC | Dieron Military District | Al Na'ir Prefecture
-        # administration: DC | Dieron Military District | Al Na'ir Prefecture
         faction:
           source: canon
           value:

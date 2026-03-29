@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -20,10 +20,10 @@ sucsId: 204
 xcood: -16.034
 ycood: 51.65
 spectralType:
-  source: DA:RW
+  source: MWDA world profiles
   value: K5IV
 primarySlot:
-  source: DA:RW
+  source: MWDA world profiles
   value: 5
 event:
   - date: '2413-01-17'
@@ -115,31 +115,31 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.7
     sysPos:
-      source: DA:RW
+      source: MWDA world profiles
       value: 5
     icon: wet13
     pressure:
-      source: DA:RW
+      source: MWDA world profiles
       value: HIGH
     atmosphere:
-      source: DA:RW
+      source: MWDA world profiles
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: DA:RW
+      source: MWDA world profiles
       value: 0.83
     diameter: 10493
     density: 5.558919350236
     dayLength: 23
     yearLength: 1.0
     temperature:
-      source: DA:RW
+      source: MWDA world profiles
       value: 57
     water:
-      source: DA:RW
+      source: MWDA world profiles
       value: 96
     lifeForm:
-      source: DA:RW
+      source: MWDA world profiles
       value: BIRD
     desc: |-
       Covered almost entirely in water, and wrapped in a thick atmosphere that traps heat and renders the few habitable island chains, near the north and south poles, only moderately so, it‘s almost impossible to believe that when scientists first came to this world, they had described it as a paradise. Though they did notice that the above-average atmospheric pressure and the comparative lack of protective ozone likely contributed to the planet‘s then-luxuriant warmth, what few colonists realized at the time was that Atria was only then coming out of the final stages of its own ice age. Before they noticed the steady planetwide rise in temperature and humidity, however, the colonists quickly discovered that the entire ecosphere was biologically incompatible with human physiology. Though blessed with an abundance of flora and fauna that included massive marine life and atranas, flightless avians nearly double the size of Terran pheasants, the human colonists could not use any of them as a food source, and thus the planet grew dependent on its neighbors for agricultural needs.
@@ -152,31 +152,31 @@ planet:
           source: canon
           value: Aitrakops
         capital:
-          source: DA:RW
+          source: MWDA world profiles
           value: Atria Prime
     satellite:
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Astoria
         size: large
         icon: rock4
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Delacruz
         size: medium
         icon: oddmoon3
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Istanbul
         size: medium
         icon: oddmoon2
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Viennes
         size: medium
         icon: rock9
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Zarpedos
         size: medium
         icon: rock14
@@ -205,12 +205,6 @@ planet:
       - date: '2310-01-01'
         population: 36918616.0
       - date: '2320-03-30'
-        # administration: TH | Lone Star Province
-        # administration: TH | Lone Star Province
-        # administration: TH | Lone Star Province
-        # administration: TH | Lone Star Province
-        # administration: TH | Lone Star Province
-        # administration: TH | Lone Star Province
         faction:
           source: canon
           value:
@@ -310,18 +304,6 @@ planet:
         population: 2386678543.0
       - date: '2760-01-01'
         population: 2397876990.0
-      - date: '2767-01-01'
-        # administration: AE | Lone Star Province
-        # administration: AE | Lone Star Province
-        # administration: AE | Lone Star Province
-        # administration: AE | Lone Star Province
-        # administration: AE | Lone Star Province
-        # administration: AE | Lone Star Province
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - AE
       - date: '2767-08-24'
         faction:
           source: canon
@@ -330,12 +312,6 @@ planet:
       - date: '2770-01-01'
         population: 2398276379.0
       - date: '2779-11-06'
-        # administration: TH | Lone Star Province
-        # administration: TH | Lone Star Province
-        # administration: TH | Lone Star Province
-        # administration: TH | Lone Star Province
-        # administration: TH | Lone Star Province
-        # administration: TH | Lone Star Province
         faction:
           source: canon
           value:
@@ -343,12 +319,6 @@ planet:
       - date: '2780-01-01'
         population: 2365019791.0
       - date: '2790-10-18'
-        # administration: DC | Dieron Military District | Lone Star Prefecture
-        # administration: DC | Dieron Military District | Lone Star Prefecture
-        # administration: DC | Dieron Military District | Lone Star Prefecture
-        # administration: DC | Dieron Military District | Lone Star Prefecture
-        # administration: DC | Dieron Military District | Lone Star Prefecture
-        # administration: DC | Dieron Military District | Lone Star Prefecture
         faction:
           source: canon
           value:
@@ -370,12 +340,6 @@ planet:
       - date: '2841-01-01'
         socioIndustrial: B-C-C-B-C
       - date: '2850-04-02'
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
         faction:
           source: canon
           value:
@@ -390,12 +354,6 @@ planet:
       - date: '2890-01-01'
         population: 1961422446.0
       - date: '2900-08-15'
-        # administration: DC | Dieron Military District | Kessel Prefecture
-        # administration: DC | Dieron Military District | Kessel Prefecture
-        # administration: DC | Dieron Military District | Kessel Prefecture
-        # administration: DC | Dieron Military District | Kessel Prefecture
-        # administration: DC | Dieron Military District | Kessel Prefecture
-        # administration: DC | Dieron Military District | Kessel Prefecture
         faction:
           source: canon
           value:
@@ -427,18 +385,6 @@ planet:
         population: 1768181780.0
       - date: '3020-01-01'
         population: 1768522375.0
-      - date: '3030-01-01'
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LA
       - date: '3030-10-27'
         faction:
           source: canon
@@ -448,25 +394,8 @@ planet:
       - date: '3033-01-01'
         socioIndustrial: B-C-C-C-C
       - date: '3040-01-01'
-        # administration: FC | Skye March | Ryde Operational Area
-        # administration: FC | Skye March | Ryde Operational Area
-        # administration: FC | Skye March | Ryde Operational Area
-        # administration: FC | Skye March | Ryde Operational Area
-        # administration: FC | Skye March | Ryde Operational Area
-        # administration: FC | Skye March | Ryde Operational Area
         population: 1790323163.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FC
       - date: '3040-01-19'
-        # administration: FC | Skye March | Ryde Operational Area
-        # administration: FC | Skye March | Ryde Operational Area
-        # administration: FC | Skye March | Ryde Operational Area
-        # administration: FC | Skye March | Ryde Operational Area
-        # administration: FC | Skye March | Ryde Operational Area
-        # administration: FC | Skye March | Ryde Operational Area
         faction:
           source: canon
           value:
@@ -475,18 +404,6 @@ planet:
         socioIndustrial: A-B-B-B-C
       - date: '3050-01-01'
         population: 1800917292.0
-      - date: '3057-01-01'
-        # administration: LA | Skye March | Ryde Operational Area
-        # administration: LA | Skye March | Ryde Operational Area
-        # administration: LA | Skye March | Ryde Operational Area
-        # administration: LA | Skye March | Ryde Operational Area
-        # administration: LA | Skye March | Ryde Operational Area
-        # administration: LA | Skye March | Ryde Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LA
       - date: '3057-09-18'
         faction:
           source: canon
@@ -498,27 +415,9 @@ planet:
           value:
             - DC
             - LA
-      - date: '3058-01-01'
-        # administration: LA | Skye Province | Freedom Theater
-        # administration: LA | Skye Province | Freedom Theater
-        # administration: LA | Skye Province | Freedom Theater
-        # administration: LA | Skye Province | Freedom Theater
-        # administration: LA | Skye Province | Freedom Theater
-        # administration: LA | Skye Province | Freedom Theater
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LA
       - date: '3060-01-01'
         population: 1811574110.0
       - date: '3062-08-07'
-        # administration: DC | Dieron Military District | Kessel Prefecture
-        # administration: DC | Dieron Military District | Kessel Prefecture
-        # administration: DC | Dieron Military District | Kessel Prefecture
-        # administration: DC | Dieron Military District | Kessel Prefecture
-        # administration: DC | Dieron Military District | Kessel Prefecture
-        # administration: DC | Dieron Military District | Kessel Prefecture
         faction:
           source: canon
           value:
@@ -527,25 +426,7 @@ planet:
         population: 1828134671.0
       - date: '3080-01-01'
         population: 1851314897.0
-      - date: '3081-01-01'
-        # administration: ROS | Prefecture IX
-        # administration: ROS | Prefecture IX
-        # administration: ROS | Prefecture IX
-        # administration: ROS | Prefecture IX
-        # administration: ROS | Prefecture IX
-        # administration: ROS | Prefecture IX
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - ROS
       - date: '3081-07-18'
-        # administration: ROS | Prefecture IX
-        # administration: ROS | Prefecture IX
-        # administration: ROS | Prefecture IX
-        # administration: ROS | Prefecture IX
-        # administration: ROS | Prefecture IX
-        # administration: ROS | Prefecture IX
         faction:
           source: canon
           value:
@@ -564,12 +445,6 @@ planet:
         population: 1870669039.0
       - date: '3132-08-07'
         hpg: X
-      - date: '3135-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '3135-10-01'
         faction:
           source: canon
@@ -577,18 +452,6 @@ planet:
             - IND
       - date: '3140-01-01'
         population: 1869546974.0
-      - date: '3145-01-01'
-        # administration: RD | Region 3 | Vega Protectorate
-        # administration: RD | Region 3 | Vega Protectorate
-        # administration: RD | Region 3 | Vega Protectorate
-        # administration: RD | Region 3 | Vega Protectorate
-        # administration: RD | Region 3 | Vega Protectorate
-        # administration: RD | Region 3 | Vega Protectorate
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - RD
       - date: '3145-09-17'
         faction:
           source: canon
@@ -600,25 +463,7 @@ planet:
           source: canon
           value:
             - ROS
-      - date: '3151-01-01'
-        # administration: RD | Region 3 | Vega Protectorate
-        # administration: RD | Region 3 | Vega Protectorate
-        # administration: RD | Region 3 | Vega Protectorate
-        # administration: RD | Region 3 | Vega Protectorate
-        # administration: RD | Region 3 | Vega Protectorate
-        # administration: RD | Region 3 | Vega Protectorate
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - RD
       - date: '3151-04-14'
-        # administration: RD | Region 4
-        # administration: RD | Region 4
-        # administration: RD | Region 4
-        # administration: RD | Region 4
-        # administration: RD | Region 4
-        # administration: RD | Region 4
         faction:
           source: canon
           value:

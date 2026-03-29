@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,17 +16,15 @@
 # affiliated with Microsoft.
 
 id: Paxon
-sucsId: 2957
+sucsId: 2956
 xcood: -70.799
 ycood: 1879.644
 spectralType:
-  source: WoK
+  source: Warriors of Kerensky, pg. 112
   value: K9III
-  page: 112
 primarySlot:
-  source: WoK
+  source: Warriors of Kerensky, pg. 112
   value: 4
-  page: 112
 event:
   - date: '2803-08-09'
     zenithCharge: yes
@@ -86,39 +84,32 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.5
     sysPos:
-      source: WoK
+      source: Warriors of Kerensky, pg. 112
       value: 4
-      page: 112
     icon: green22
     pressure:
-      source: WoK
+      source: Warriors of Kerensky, pg. 112
       value: STANDARD
-      page: 112
     atmosphere:
-      source: WoK
+      source: Warriors of Kerensky, pg. 112
       value: BREATHABLE
-      page: 112
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: WoK
+      source: Warriors of Kerensky, pg. 112
       value: 1.3
-      page: 112
     diameter: 13671
     density: 6.682842628049
     dayLength: 27
     yearLength: 0.8
     temperature:
-      source: WoK
+      source: Warriors of Kerensky, pg. 112
       value: 35
-      page: 112
     water:
-      source: WoK
+      source: Warriors of Kerensky, pg. 112
       value: 60
-      page: 112
     lifeForm:
-      source: WoK
+      source: Warriors of Kerensky, pg. 112
       value: REPTILE
-      page: 112
     desc: No description available.
     landmass:
       - name: New Ramsey
@@ -192,12 +183,6 @@ planet:
         population: 116356.0
       - date: '3020-01-01'
         population: 89732.0
-      - date: '3025-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CLAN
       - date: '3025-02-04'
         faction:
           source: canon
@@ -236,12 +221,6 @@ planet:
           value:
             - CSA
             - CCO
-      - date: '3075-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - ABN
       - date: '3075-07-07'
         faction:
           source: canon

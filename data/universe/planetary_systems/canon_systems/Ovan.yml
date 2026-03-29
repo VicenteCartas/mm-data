@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,17 +16,15 @@
 # affiliated with Microsoft.
 
 id: Ovan
-sucsId: 1965
+sucsId: 1964
 xcood: 30.493
 ycood: -205.809
 spectralType:
-  source: AToW
+  source: A Time of War, pg. 378
   value: M6V
-  page: 378
 primarySlot:
-  source: AToW
+  source: A Time of War, pg. 378
   value: 2
-  page: 378
 event:
   - date: '2411-01-05'
     zenithCharge: yes
@@ -66,39 +64,32 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.08
     sysPos:
-      source: AToW
+      source: A Time of War, pg. 378
       value: 2
-      page: 378
     icon: green36
     pressure:
-      source: AToW
+      source: A Time of War, pg. 378
       value: HIGH
-      page: 378
     atmosphere:
-      source: AToW
+      source: A Time of War, pg. 378
       value: BREATHABLE
-      page: 378
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: AToW
+      source: A Time of War, pg. 378
       value: 0.91
-      page: 378
     diameter: 11184
     density: 5.718135886317
     dayLength: 22
     yearLength: 0.4
     temperature:
-      source: AToW
+      source: A Time of War, pg. 378
       value: 33
-      page: 378
     water:
-      source: AToW
+      source: A Time of War, pg. 378
       value: 24
-      page: 378
     lifeForm:
-      source: AToW
+      source: A Time of War, pg. 378
       value: REPTILE
-      page: 378
     desc: |-
       Ovan is a Capellan "core" world, relatively close to Sian and rarely raided,mostly for lack of anything to raid. Settled in 2393 by Chinese at the behest of the Capellan government. Socially and technologically Ovan is a typical human-inhabited world. However, Environmentally speaking, Ovan is definitely abnormal.
 
@@ -118,12 +109,6 @@ planet:
             - CH
         population: 55907.0
         socioIndustrial: C-D-C-D-D
-      - date: '2271-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '2280-01-01'
         population: 277118.0
       - date: '2290-01-01'
@@ -136,12 +121,6 @@ planet:
           value:
             - CCom
         population: 9845225.0
-      - date: '2317-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '2320-01-01'
         population: 23427801.0
       - date: '2330-01-01'
@@ -152,19 +131,7 @@ planet:
         population: 161699156.0
       - date: '2360-01-01'
         population: 259560479.0
-      - date: '2366-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CCom
       - date: '2367-07-01'
-        # administration: CC | Capella Commonality | Region 8
-        # administration: CC | Capella Commonality | Region 8
-        # administration: CC | Capella Commonality | Region 8
-        # administration: CC | Capella Commonality | Region 8
-        # administration: CC | Capella Commonality | Region 8
-        # administration: CC | Capella Commonality | Region 8
         faction:
           source: canon
           value:

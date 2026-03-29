@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: Ingress
-sucsId: 1200
+sucsId: 1199
 xcood: 49.622
 ycood: -18.661
 spectralType:
-  source: DA:RW
+  source: MWDA world profiles
   value: G6V
 primarySlot:
-  source: DA:RW
+  source: MWDA world profiles
   value: 4
 event:
   - date: '2352-08-17'
@@ -80,31 +80,31 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.63
     sysPos:
-      source: DA:RW
+      source: MWDA world profiles
       value: 4
     icon: green29
     pressure:
-      source: DA:RW
+      source: MWDA world profiles
       value: STANDARD
     atmosphere:
-      source: DA:RW
+      source: MWDA world profiles
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: DA:RW
+      source: MWDA world profiles
       value: 1.0
     diameter: 13588
     density: 5.171999638193
     dayLength: 22
     yearLength: 1.1
     temperature:
-      source: DA:RW
+      source: MWDA world profiles
       value: 29
     water:
-      source: DA:RW
+      source: MWDA world profiles
       value: 50
     lifeForm:
-      source: DA:RW
+      source: MWDA world profiles
       value: MAMMAL
     desc: |-
       Cloaked in extensive natural resources, Ingress was one of the first worlds colonized during the initial interstellar exodus from Terra. Clustered in towns around the planet‘s single, large ocean, settlers established some light industry near their capital of Askar, but agricultural products quickly became the world‘s dominant export. Self-sufficient from the beginning, Ingress was also one of the first worlds to seek independence from the Terran Alliance, and its well-equipped infantry fought many years before succumbing to the Terran Hegemony.
@@ -116,11 +116,11 @@ planet:
       Ingress‘s temporary military weakness made it an easy target during the Blakist Holy War. The Blakists established enormous reeducation camps on the planet, disrupting agriculture and starving over a billion people to death. Ingress‘s economy fully recovered during the Golden Age of Peace, but its population still stands at less than half of its former levels.
     landmass:
       - capital:
-          source: DA:RW
+          source: MWDA world profiles
           value: Askar
     satellite:
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Edanu
         size: giant
         icon: rock5
@@ -149,12 +149,6 @@ planet:
       - date: '2310-01-01'
         population: 127648969.0
       - date: '2315-07-01'
-        # administration: TH | Lockdale Province
-        # administration: TH | Lockdale Province
-        # administration: TH | Lockdale Province
-        # administration: TH | Lockdale Province
-        # administration: TH | Lockdale Province
-        # administration: TH | Lockdale Province
         faction:
           source: canon
           value:
@@ -254,18 +248,6 @@ planet:
         population: 9767348771.0
       - date: '2760-01-01'
         population: 9756549943.0
-      - date: '2767-01-01'
-        # administration: AE | Lockdale Province
-        # administration: AE | Lockdale Province
-        # administration: AE | Lockdale Province
-        # administration: AE | Lockdale Province
-        # administration: AE | Lockdale Province
-        # administration: AE | Lockdale Province
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - AE
       - date: '2767-02-15'
         faction:
           source: canon
@@ -274,12 +256,6 @@ planet:
       - date: '2770-01-01'
         population: 9743535032.0
       - date: '2779-05-01'
-        # administration: TH | Lockdale Province
-        # administration: TH | Lockdale Province
-        # administration: TH | Lockdale Province
-        # administration: TH | Lockdale Province
-        # administration: TH | Lockdale Province
-        # administration: TH | Lockdale Province
         faction:
           source: canon
           value:
@@ -287,12 +263,6 @@ planet:
       - date: '2780-01-01'
         population: 9610617604.0
       - date: '2790-06-09'
-        # administration: CC | Tikonov Commonality | Region 3
-        # administration: CC | Tikonov Commonality | Region 3
-        # administration: CC | Tikonov Commonality | Region 3
-        # administration: CC | Tikonov Commonality | Region 3
-        # administration: CC | Tikonov Commonality | Region 3
-        # administration: CC | Tikonov Commonality | Region 3
         faction:
           source: canon
           value:
@@ -358,12 +328,6 @@ planet:
       - date: '3030-01-01'
         population: 7279891738.0
       - date: '3032-08-22'
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
         faction:
           source: canon
           value:
@@ -376,12 +340,6 @@ planet:
         socioIndustrial: C-B-D-A-F
       - date: '3050-01-01'
         population: 7403967394.0
-      - date: '3057-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - DS
       - date: '3057-11-01'
         faction:
           source: canon
@@ -399,20 +357,8 @@ planet:
           source: canon
           value:
             - WOB
-      - date: '3067-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '3070-01-01'
         population: 7541461461.0
-      - date: '3075-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - WOB
       - date: '3077-12-24'
         faction:
           source: canon
@@ -427,25 +373,7 @@ planet:
             - Stone
       - date: '3080-01-01'
         population: 7612685427.0
-      - date: '3081-01-01'
-        # administration: ROS | Prefecture IV
-        # administration: ROS | Prefecture IV
-        # administration: ROS | Prefecture IV
-        # administration: ROS | Prefecture IV
-        # administration: ROS | Prefecture IV
-        # administration: ROS | Prefecture IV
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - ROS
       - date: '3081-10-23'
-        # administration: ROS | Prefecture IV
-        # administration: ROS | Prefecture IV
-        # administration: ROS | Prefecture IV
-        # administration: ROS | Prefecture IV
-        # administration: ROS | Prefecture IV
-        # administration: ROS | Prefecture IV
         faction:
           source: canon
           value:
@@ -464,12 +392,6 @@ planet:
         population: 8258277172.0
       - date: '3132-08-07'
         hpg: X
-      - date: '3135-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '3135-10-01'
         faction:
           source: canon
@@ -477,18 +399,6 @@ planet:
             - IND
       - date: '3140-01-01'
         population: 8391472326.0
-      - date: '3145-01-01'
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FS
       - date: '3145-09-19'
         faction:
           source: canon
@@ -501,12 +411,6 @@ planet:
           value:
             - DC
       - date: '3151-01-01'
-        # administration: DC | Dieron Military District | Al Na'ir Prefecture
-        # administration: DC | Dieron Military District | Al Na'ir Prefecture
-        # administration: DC | Dieron Military District | Al Na'ir Prefecture
-        # administration: DC | Dieron Military District | Al Na'ir Prefecture
-        # administration: DC | Dieron Military District | Al Na'ir Prefecture
-        # administration: DC | Dieron Military District | Al Na'ir Prefecture
         faction:
           source: sucs
           value:

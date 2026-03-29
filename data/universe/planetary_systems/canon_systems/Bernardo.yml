@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -84,7 +84,8 @@ planet:
     icon: frozen18
     pressure: THIN
     atmosphere: TOXIC_CAUSTIC
-    composition: Methane and Carbon Dioxide, plus trace amounts of Carbon Dioxide and Hydrofluoric Acid
+    composition: Methane and Carbon Dioxide, plus trace amounts of Carbon Dioxide
+      and Hydrofluoric Acid
     gravity: 0.65
     diameter: 9500
     density: 4.7795
@@ -141,7 +142,12 @@ planet:
     lifeForm:
       source: canon
       value: PLANT
-    desc: Bernardo is a comfortable planet for human habitation and has a cool-temperate climate that allows it to support sufficient agriculture to feed its population. The planet has abundant natural resources that have supported a strong industrial base on planet. The continent Caico is home to Sao Fernando, the planetary capital and the location of most of the planet’s heavy industry, including ‘Mech factories run by Earthwerks Inc. and Kallon Industries.
+    desc: Bernardo is a comfortable planet for human habitation and has a cool-temperate
+      climate that allows it to support sufficient agriculture to feed its population.
+      The planet has abundant natural resources that have supported a strong industrial
+      base on planet. The continent Caico is home to Sao Fernando, the planetary capital
+      and the location of most of the planet’s heavy industry, including ‘Mech factories
+      run by Earthwerks Inc. and Kallon Industries.
     smallMoons: 2
     landmass:
       - name:
@@ -179,12 +185,6 @@ planet:
           source: canon
           value:
             - DoL
-      - date: '2317-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '2320-01-01'
         population: 15424554.0
       - date: '2330-01-01'
@@ -195,19 +195,7 @@ planet:
         population: 74566812.0
       - date: '2360-01-01'
         population: 110251628.0
-      - date: '2366-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CCom
       - date: '2367-07-01'
-        # administration: CC | Tikonov Commonality | Region 1
-        # administration: CC | Tikonov Commonality | Region 1
-        # administration: CC | Tikonov Commonality | Region 1
-        # administration: CC | Tikonov Commonality | Region 1
-        # administration: CC | Tikonov Commonality | Region 1
-        # administration: CC | Tikonov Commonality | Region 1
         faction:
           source: canon
           value:
@@ -313,12 +301,6 @@ planet:
         population: 1581921923.0
       - date: '2820-01-01'
         population: 1580266141.0
-      - date: '2821-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FWL
       - date: '2821-04-24'
         faction:
           source: canon
@@ -400,24 +382,12 @@ planet:
         population: 1502996706.0
       - date: '3080-01-01'
         population: 1517191486.0
-      - date: '3081-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '3081-02-11'
         faction:
           source: canon
           value:
             - IND
       - date: '3082-08-01'
-        # administration: ROS | Prefecture VI
-        # administration: ROS | Prefecture VI
-        # administration: ROS | Prefecture VI
-        # administration: ROS | Prefecture VI
-        # administration: ROS | Prefecture VI
-        # administration: ROS | Prefecture VI
         faction:
           source: canon
           value:
@@ -438,12 +408,6 @@ planet:
         hpg:
           source: canon
           value: X
-      - date: '3135-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - SA
       - date: '3135-05-01'
         faction:
           source: canon
@@ -462,25 +426,8 @@ planet:
       - date: '3140-01-01'
         population: 1630131879.0
       - date: '3145-01-01'
-        # administration: FWL | Augustine Alliance
-        # administration: FWL | Augustine Alliance
-        # administration: FWL | Augustine Alliance
-        # administration: FWL | Augustine Alliance
-        # administration: FWL | Augustine Alliance
-        # administration: FWL | Augustine Alliance
         population: 1640270093.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FWL
       - date: '3151-01-01'
-        # administration: FWL | Augustine Alliance
-        # administration: FWL | Augustine Alliance
-        # administration: FWL | Augustine Alliance
-        # administration: FWL | Augustine Alliance
-        # administration: FWL | Augustine Alliance
-        # administration: FWL | Augustine Alliance
         faction:
           source: sucs
           value:

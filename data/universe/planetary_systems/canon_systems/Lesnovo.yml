@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,17 +16,15 @@
 # affiliated with Microsoft.
 
 id: Lesnovo
-sucsId: 1484
+sucsId: 1483
 xcood: -315.4
 ycood: -266.86
 spectralType:
-  source: HMSB
+  source: House Marik, pg. 159
   value: G4III
-  page: 159
 primarySlot:
-  source: HMSB
+  source: House Marik, pg. 159
   value: 3
-  page: 159
 event:
   - date: '2658-08-03'
     zenithCharge: yes
@@ -71,9 +69,8 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 1.44
     sysPos:
-      source: HMSB
+      source: House Marik, pg. 159
       value: 3
-      page: 159
     icon: green27
     pressure:
       source: canon
@@ -94,10 +91,15 @@ planet:
       source: canon
       value: 68
     lifeForm:
-      source: HMSB
+      source: House Marik, pg. 159
       value: PLANT
-      page: 159
-    desc: Lesnovo is a poor world on the Free Worlds League Periphery border. The primary industry is agriculture, unfortunately the planet barely produces enough to support its own population. Due to its proximity to the Marian Hegemony the planet has been raided many times, despite of the relative lack of goods available on planet. These raids have been a point of contention between the planet and the League government as they feel they are not being properly defended against bandits and Periphery raiders.
+    desc: Lesnovo is a poor world on the Free Worlds League Periphery border. The
+      primary industry is agriculture, unfortunately the planet barely produces enough
+      to support its own population. Due to its proximity to the Marian Hegemony the
+      planet has been raided many times, despite of the relative lack of goods available
+      on planet. These raids have been a point of contention between the planet and
+      the League government as they feel they are not being properly defended against
+      bandits and Periphery raiders.
     landmass:
       - name:
           source: canon
@@ -113,12 +115,6 @@ planet:
           value: Zletovo
     event:
       - date: '2644-12-12'
-        # administration: FWL | Rim Commonality
-        # administration: FWL | Rim Commonality
-        # administration: FWL | Rim Commonality
-        # administration: FWL | Rim Commonality
-        # administration: FWL | Rim Commonality
-        # administration: FWL | Rim Commonality
         faction:
           source: canon
           value:
@@ -231,25 +227,7 @@ planet:
         population: 221865451.0
       - date: '3070-01-01'
         population: 127778340.0
-      - date: '3075-01-01'
-        # administration: RCM | National Capital
-        # administration: RCM | National Capital
-        # administration: RCM | National Capital
-        # administration: RCM | National Capital
-        # administration: RCM | National Capital
-        # administration: RCM | National Capital
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - RCM
       - date: '3075-04-13'
-        # administration: RCM | National Capital
-        # administration: RCM | National Capital
-        # administration: RCM | National Capital
-        # administration: RCM | National Capital
-        # administration: RCM | National Capital
-        # administration: RCM | National Capital
         faction:
           source: canon
           value:
@@ -275,25 +253,8 @@ planet:
       - date: '3140-01-01'
         population: 136441650.0
       - date: '3145-01-01'
-        # administration: FWL | Rim Commonality | District Capital
-        # administration: FWL | Rim Commonality | District Capital
-        # administration: FWL | Rim Commonality | District Capital
-        # administration: FWL | Rim Commonality | District Capital
-        # administration: FWL | Rim Commonality | District Capital
-        # administration: FWL | Rim Commonality | District Capital
         population: 136769503.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FWL
       - date: '3151-01-01'
-        # administration: FWL | Rim Commonality | District Capital
-        # administration: FWL | Rim Commonality | District Capital
-        # administration: FWL | Rim Commonality | District Capital
-        # administration: FWL | Rim Commonality | District Capital
-        # administration: FWL | Rim Commonality | District Capital
-        # administration: FWL | Rim Commonality | District Capital
         faction:
           source: sucs
           value:

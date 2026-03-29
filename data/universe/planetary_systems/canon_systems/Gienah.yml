@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,17 +16,15 @@
 # affiliated with Microsoft.
 
 id: Gienah
-sucsId: 954
+sucsId: 953
 xcood: -183.072
 ycood: -12.971
 spectralType:
-  source: 'HB:HS'
+  source: 'Handbook: House Steiner, pg. 78'
   value: K0IV
-  page: 78
 primarySlot:
-  source: 'HB:HS'
+  source: 'Handbook: House Steiner, pg. 78'
   value: 2
-  page: 78
 event:
   - date: '2366-03-03'
     zenithCharge: yes
@@ -52,88 +50,77 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 1.28
     sysPos:
-      source: 'HB:HS'
+      source: 'Handbook: House Steiner, pg. 78'
       value: 2
-      page: 78
     icon: wet7
     pressure:
-      source: 'HB:HS'
+      source: 'Handbook: House Steiner, pg. 78'
       value: STANDARD
-      page: 78
     atmosphere:
-      source: 'HB:HS'
+      source: 'Handbook: House Steiner, pg. 78'
       value: BREATHABLE
-      page: 78
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'HB:HS'
+      source: 'Handbook: House Steiner, pg. 78'
       value: 1.08
-      page: 78
     diameter: 12961
     density: 5.855950767063
     dayLength: 24
     yearLength: 1.7
     temperature:
-      source: 'HB:HS'
+      source: 'Handbook: House Steiner, pg. 78'
       value: 41
-      page: 78
     water:
-      source: 'HB:HS'
+      source: 'Handbook: House Steiner, pg. 78'
       value: 77
-      page: 78
     lifeForm:
-      source: 'HB:HS'
+      source: 'Handbook: House Steiner, pg. 78'
       value: BIRD
-      page: 78
-    desc: There are three continents that help make up the surface of Gienah. The Continent of Carrabesto lies in the north, with the larger landmass of Alliago Major along the equator and Alliago Minor covering the southern pole. Alliago Major contains the capital city and planetary spaceport. Alliago Minor is used as a training ground for cold-weather operations by the local defense forces. Gienah is a major commercial world and a trade partner with many of the technology deprived border planets of the Free Worlds League. A manufacturer of civilian and military vehicles, Gienah Automotive, calls Gienah home. Gienah Automotive headquarters and factories are found in the massive city of Molfetta, located on the continent of Carrabesto.
+    desc: There are three continents that help make up the surface of Gienah. The
+      Continent of Carrabesto lies in the north, with the larger landmass of Alliago
+      Major along the equator and Alliago Minor covering the southern pole. Alliago
+      Major contains the capital city and planetary spaceport. Alliago Minor is used
+      as a training ground for cold-weather operations by the local defense forces.
+      Gienah is a major commercial world and a trade partner with many of the technology
+      deprived border planets of the Free Worlds League. A manufacturer of civilian
+      and military vehicles, Gienah Automotive, calls Gienah home. Gienah Automotive
+      headquarters and factories are found in the massive city of Molfetta, located
+      on the continent of Carrabesto.
     landmass:
       - name:
-          source: 'HB:HS'
+          source: 'Handbook: House Steiner, pg. 78'
           value: Alliago Major
-          page: 78
         capital:
           source: canon
           value: Ooessay
       - name:
-          source: 'HB:HS'
+          source: 'Handbook: House Steiner, pg. 78'
           value: Alliago Minor
-          page: 78
       - name:
-          source: 'HB:HS'
+          source: 'Handbook: House Steiner, pg. 78'
           value: Carrabesto
-          page: 78
     satellite:
       - name:
-          source: 'HB:HS'
+          source: 'Handbook: House Steiner, pg. 78'
           value: Corvis
-          page: 78
         size: medium
         icon: oddmoon2
       - name:
-          source: 'HB:HS'
+          source: 'Handbook: House Steiner, pg. 78'
           value: Dobry
-          page: 78
         size: large
         icon: rock1
       - name:
-          source: 'HB:HS'
+          source: 'Handbook: House Steiner, pg. 78'
           value: Mazel
-          page: 78
         size: large
         icon: rock10
       - name:
-          source: 'HB:HS'
+          source: 'Handbook: House Steiner, pg. 78'
           value: Nando
-          page: 78
         size: medium
         icon: rock6
     event:
-      - date: '2271-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '2271-11-25'
         faction:
           source: canon
@@ -156,31 +143,13 @@ planet:
         socioIndustrial: C-D-C-D-C
       - date: '2310-01-01'
         population: 3249063.0
-      - date: '2317-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '2320-01-01'
         population: 6824330.0
       - date: '2330-01-01'
         population: 12972841.0
       - date: '2340-01-01'
         population: 22585227.0
-      - date: '2341-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FoS
       - date: '2341-02-18'
-        # administration: LA | Federation of Skye
-        # administration: LA | Federation of Skye
-        # administration: LA | Federation of Skye
-        # administration: LA | Federation of Skye
-        # administration: LA | Federation of Skye
-        # administration: LA | Federation of Skye
         faction:
           source: canon
           value:
@@ -340,25 +309,8 @@ planet:
       - date: '3030-01-01'
         population: 460931422.0
       - date: '3040-01-01'
-        # administration: FC | Tamarind March | Soilihull Operational Area
-        # administration: FC | Tamarind March | Soilihull Operational Area
-        # administration: FC | Tamarind March | Soilihull Operational Area
-        # administration: FC | Tamarind March | Soilihull Operational Area
-        # administration: FC | Tamarind March | Soilihull Operational Area
-        # administration: FC | Tamarind March | Soilihull Operational Area
         population: 463983630.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FC
       - date: '3040-01-19'
-        # administration: FC | Tamarind March | Soilihull Operational Area
-        # administration: FC | Tamarind March | Soilihull Operational Area
-        # administration: FC | Tamarind March | Soilihull Operational Area
-        # administration: FC | Tamarind March | Soilihull Operational Area
-        # administration: FC | Tamarind March | Soilihull Operational Area
-        # administration: FC | Tamarind March | Soilihull Operational Area
         faction:
           source: canon
           value:
@@ -369,25 +321,7 @@ planet:
           value: C-C-B-B-B
       - date: '3050-01-01'
         population: 467429845.0
-      - date: '3057-01-01'
-        # administration: LA | Tamarind March | Soilihull Operational Area
-        # administration: LA | Tamarind March | Soilihull Operational Area
-        # administration: LA | Tamarind March | Soilihull Operational Area
-        # administration: LA | Tamarind March | Soilihull Operational Area
-        # administration: LA | Tamarind March | Soilihull Operational Area
-        # administration: LA | Tamarind March | Soilihull Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LA
       - date: '3057-09-18'
-        # administration: LA | Bolan Province | Cavanaugh Theater
-        # administration: LA | Bolan Province | Cavanaugh Theater
-        # administration: LA | Bolan Province | Cavanaugh Theater
-        # administration: LA | Bolan Province | Cavanaugh Theater
-        # administration: LA | Bolan Province | Cavanaugh Theater
-        # administration: LA | Bolan Province | Cavanaugh Theater
         faction:
           source: canon
           value:
@@ -416,25 +350,7 @@ planet:
           value: X
       - date: '3140-01-01'
         population: 511245176.0
-      - date: '3145-01-01'
-        # administration: CWE | National Capital
-        # administration: CWE | National Capital
-        # administration: CWE | National Capital
-        # administration: CWE | National Capital
-        # administration: CWE | National Capital
-        # administration: CWE | National Capital
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CWE
       - date: '3145-05-26'
-        # administration: CWE | National Capital
-        # administration: CWE | National Capital
-        # administration: CWE | National Capital
-        # administration: CWE | National Capital
-        # administration: CWE | National Capital
-        # administration: CWE | National Capital
         faction:
           source: canon
           value:

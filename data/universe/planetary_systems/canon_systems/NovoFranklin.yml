@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,17 +16,15 @@
 # affiliated with Microsoft.
 
 id: Novo Franklin
-sucsId: 1903
+sucsId: 1902
 xcood: 667.892
 ycood: 61.542
 spectralType:
-  source: Per1e
+  source: Periphery (1ed), pg. 129
   value: F6V
-  page: 129
 primarySlot:
-  source: Per1e
+  source: Periphery (1ed), pg. 129
   value: 8
-  page: 129
 planet:
   - name: Kronos
     type: GIANT_TERRESTRIAL
@@ -138,9 +136,8 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 2.08
     sysPos:
-      source: Per1e
+      source: Periphery (1ed), pg. 129
       value: 8
-      page: 129
     icon: green37
     pressure: THIN
     atmosphere: BREATHABLE
@@ -153,10 +150,14 @@ planet:
     temperature: 26
     water: 47
     lifeForm:
-      source: Per1e
+      source: Periphery (1ed), pg. 129
       value: REPTILE
-      page: 129
-    desc: Novo Franklin is a hot garden planet originally settled in 2598 by refugees from the Outworlds Alliance fleeing from the ravages of the Reunification War. Since then, the planet has failed to form a central government and Novo Franklin by the 31st century was covered by at least 55 different feudal kingdoms. Novo Franklin is a technological blackhole and home to constant, low-level warfare as the various feudal lords battle each other for small land gains.
+    desc: Novo Franklin is a hot garden planet originally settled in 2598 by refugees
+      from the Outworlds Alliance fleeing from the ravages of the Reunification War.
+      Since then, the planet has failed to form a central government and Novo Franklin
+      by the 31st century was covered by at least 55 different feudal kingdoms. Novo
+      Franklin is a technological blackhole and home to constant, low-level warfare
+      as the various feudal lords battle each other for small land gains.
     landmass:
       - name: Leverett
         capital: Nova Atebubu-Amantin

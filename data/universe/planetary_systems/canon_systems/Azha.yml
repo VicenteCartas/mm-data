@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -20,10 +20,10 @@ sucsId: 229
 xcood: 53.764
 ycood: -51.489
 spectralType:
-  source: DA:RW
+  source: MWDA world profiles
   value: K8IV
 primarySlot:
-  source: DA:RW
+  source: MWDA world profiles
   value: 4
 event:
   - date: '2362-07-12'
@@ -84,45 +84,62 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.6
     sysPos:
-      source: DA:RW
+      source: MWDA world profiles
       value: 4
     icon: green6
     pressure:
-      source: DA:RW
+      source: MWDA world profiles
       value: STANDARD
     atmosphere:
-      source: DA:RW
+      source: MWDA world profiles
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: DA:RW
+      source: MWDA world profiles
       value: 1.1
     diameter: 12683
     density: 6.095151998722
     dayLength: 25
     yearLength: 0.9
     temperature:
-      source: DA:RW
+      source: MWDA world profiles
       value: 53
     water:
-      source: DA:RW
+      source: MWDA world profiles
       value: 43
     lifeForm:
-      source: DA:RW
+      source: MWDA world profiles
       value: MAMMAL
-    desc: "3135 - Azha is a small but strategically important world due to its location. The Bureaucratic and Logistical Offices of the Capellan military were located on Azha in support of the Tikonov and Sarna Commonalities.\n\nAzha‘s dry atmosphere borders on being a desert world. However, it has enough arable landmass to support its population. Azha produces raw materials for microchips.\n\nAzha has three continents, Castellan is the largest of the three and distinctively lacks mountains. The capital, Casella, is located on the southwestern coast. The flatlands and rolling hills surrounding Casella had some of the largest supply depots in the Confederation. The continent of Brasilia is located in the southern hemisphere, and its climate is cool and moist enough to support food production. Ortega is the smallest of the three continents and the most underdeveloped. During the 2351–2352 Tikonov-Sarna War, Ortega was the site of such savagery that no one ever ventured back to the continent and giving rise to rumours of ghosts and hauntings.\n\nDuring the Jihad, the World of Blake forces arrived via a pirate point that allowed them to slip into orbit and land on Ortega. After ensuring that the depots at Casella were protected, the local Capellan militia deployed to Ortega to engage the invaders, where they mysteriously disappeared and were never heard from again. The planet surrendered shortly thereafter. "
+    desc: "3135 - Azha is a small but strategically important world due to its location.
+      The Bureaucratic and Logistical Offices of the Capellan military were located
+      on Azha in support of the Tikonov and Sarna Commonalities.\n\nAzha‘s dry atmosphere
+      borders on being a desert world. However, it has enough arable landmass to support
+      its population. Azha produces raw materials for microchips.\n\nAzha has three
+      continents, Castellan is the largest of the three and distinctively lacks mountains.
+      The capital, Casella, is located on the southwestern coast. The flatlands and
+      rolling hills surrounding Casella had some of the largest supply depots in the
+      Confederation. The continent of Brasilia is located in the southern hemisphere,
+      and its climate is cool and moist enough to support food production. Ortega
+      is the smallest of the three continents and the most underdeveloped. During
+      the 2351–2352 Tikonov-Sarna War, Ortega was the site of such savagery that no
+      one ever ventured back to the continent and giving rise to rumours of ghosts
+      and hauntings.\n\nDuring the Jihad, the World of Blake forces arrived via a
+      pirate point that allowed them to slip into orbit and land on Ortega. After
+      ensuring that the depots at Casella were protected, the local Capellan militia
+      deployed to Ortega to engage the invaders, where they mysteriously disappeared
+      and were never heard from again. The planet surrendered shortly thereafter. "
     landmass:
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Brasilia
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Castellan
         capital:
-          source: DA:RW
+          source: MWDA world profiles
           value: Casella
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Ortega
     event:
       - date: '2243-01-11'
@@ -209,25 +226,7 @@ planet:
         population: 1852092775.0
       - date: '2570-01-01'
         population: 1864116234.0
-      - date: '2571-01-01'
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - TH
       - date: '2571-11-17'
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
         faction:
           source: canon
           value:
@@ -274,18 +273,6 @@ planet:
         population: 1943509271.0
       - date: '2760-01-01'
         population: 1936680657.0
-      - date: '2767-01-01'
-        # administration: AE | Terra Firma Province
-        # administration: AE | Terra Firma Province
-        # administration: AE | Terra Firma Province
-        # administration: AE | Terra Firma Province
-        # administration: AE | Terra Firma Province
-        # administration: AE | Terra Firma Province
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - AE
       - date: '2767-08-17'
         faction:
           source: canon
@@ -294,37 +281,13 @@ planet:
       - date: '2770-01-01'
         population: 1926514679.0
       - date: '2779-03-18'
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
         faction:
           source: canon
           value:
             - TH
       - date: '2780-01-01'
         population: 1932107984.0
-      - date: '2786-01-01'
-        # administration: CC | Tikonov Commonality | Region 2
-        # administration: CC | Tikonov Commonality | Region 2
-        # administration: CC | Tikonov Commonality | Region 2
-        # administration: CC | Tikonov Commonality | Region 2
-        # administration: CC | Tikonov Commonality | Region 2
-        # administration: CC | Tikonov Commonality | Region 2
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CC
       - date: '2786-10-06'
-        # administration: CC | Tikonov Commonality | Region 6
-        # administration: CC | Tikonov Commonality | Region 6
-        # administration: CC | Tikonov Commonality | Region 6
-        # administration: CC | Tikonov Commonality | Region 6
-        # administration: CC | Tikonov Commonality | Region 6
-        # administration: CC | Tikonov Commonality | Region 6
         faction:
           source: canon
           value:
@@ -383,18 +346,6 @@ planet:
         population: 1570740928.0
       - date: '3028-01-01'
         socioIndustrial: C-C-D-B-C
-      - date: '3030-01-01'
-        # administration: LA | Sarna March | Tikonov Operational Area
-        # administration: LA | Sarna March | Tikonov Operational Area
-        # administration: LA | Sarna March | Tikonov Operational Area
-        # administration: LA | Sarna March | Tikonov Operational Area
-        # administration: LA | Sarna March | Tikonov Operational Area
-        # administration: LA | Sarna March | Tikonov Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LA
       - date: '3030-08-25'
         faction:
           source: canon
@@ -404,25 +355,8 @@ planet:
       - date: '3039-01-01'
         socioIndustrial: C-C-C-B-C
       - date: '3040-01-01'
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
         population: 1567391691.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FC
       - date: '3040-01-19'
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
         faction:
           source: canon
           value:
@@ -433,25 +367,7 @@ planet:
         population: 1576351334.0
       - date: '3060-01-01'
         population: 1587742021.0
-      - date: '3067-01-01'
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FS
       - date: '3067-04-20'
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
         faction:
           source: canon
           value:
@@ -476,25 +392,7 @@ planet:
             - Stone
       - date: '3080-01-01'
         population: 1628750073.0
-      - date: '3081-01-01'
-        # administration: ROS | Prefecture V
-        # administration: ROS | Prefecture V
-        # administration: ROS | Prefecture V
-        # administration: ROS | Prefecture V
-        # administration: ROS | Prefecture V
-        # administration: ROS | Prefecture V
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - ROS
       - date: '3081-04-13'
-        # administration: ROS | Prefecture V
-        # administration: ROS | Prefecture V
-        # administration: ROS | Prefecture V
-        # administration: ROS | Prefecture V
-        # administration: ROS | Prefecture V
-        # administration: ROS | Prefecture V
         faction:
           source: canon
           value:
@@ -513,12 +411,6 @@ planet:
         population: 1779643199.0
       - date: '3132-08-07'
         hpg: X
-      - date: '3135-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '3135-10-01'
         faction:
           source: canon
@@ -526,25 +418,7 @@ planet:
             - IND
       - date: '3140-01-01'
         population: 1801848161.0
-      - date: '3145-01-01'
-        # administration: CC | Tikonov Commonality | Region 4
-        # administration: CC | Tikonov Commonality | Region 4
-        # administration: CC | Tikonov Commonality | Region 4
-        # administration: CC | Tikonov Commonality | Region 4
-        # administration: CC | Tikonov Commonality | Region 4
-        # administration: CC | Tikonov Commonality | Region 4
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CC
       - date: '3145-07-21'
-        # administration: CC | Tikonov Commonality | Region 7
-        # administration: CC | Tikonov Commonality | Region 7
-        # administration: CC | Tikonov Commonality | Region 7
-        # administration: CC | Tikonov Commonality | Region 7
-        # administration: CC | Tikonov Commonality | Region 7
-        # administration: CC | Tikonov Commonality | Region 7
         faction:
           source: canon
           value:

@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Galicia
-sucsId: 3134
+sucsId: 2976
 xcood: -664.451
 ycood: 1143.65
 spectralType: G6V
@@ -44,7 +44,8 @@ planet:
     icon: barren9
     pressure: STANDARD
     atmosphere: TOXIC_CAUSTIC
-    composition: Nitrogen and Carbon Dioxide, plus trace amounts of Argon and Hydrogen Peroxide
+    composition: Nitrogen and Carbon Dioxide, plus trace amounts of Argon and Hydrogen
+      Peroxide
     gravity: 0.8
     diameter: 10500
     density: 5.3284
@@ -192,12 +193,6 @@ planet:
         socioIndustrial: D-D-D-D-C
       - date: '2860-01-01'
         population: 360986.0
-      - date: '2864-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - NC/UC
       - date: '2870-01-01'
         population: 363506.0
       - date: '2880-01-01'
@@ -242,12 +237,6 @@ planet:
         socioIndustrial: D-F-C-D-C
       - date: '3050-01-01'
         population: 419589.0
-      - date: '3059-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - NC
       - date: '3060-01-01'
         population: 425590.0
       - date: '3070-01-01'
@@ -274,11 +263,6 @@ planet:
         population: 444245.0
       - date: '3145-01-01'
         population: 447365.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - SE
   - name: Castillo de Guzmán
     type: ICE_GIANT
     orbitalDist: 1.44

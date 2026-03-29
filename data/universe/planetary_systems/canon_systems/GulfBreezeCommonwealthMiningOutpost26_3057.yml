@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -23,9 +23,8 @@ spectralType:
   source: canon
   value: G9V
 primarySlot:
-  source: 'HB:HS'
+  source: 'Handbook: House Steiner, pg. 81'
   value: 5
-  page: 81
 event:
   - date: '2501-08-03'
     nadirCharge: yes
@@ -128,50 +127,54 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.56
     sysPos:
-      source: 'HB:HS'
+      source: 'Handbook: House Steiner, pg. 81'
       value: 5
-      page: 81
     icon: dry13
     pressure:
-      source: 'HB:HS'
+      source: 'Handbook: House Steiner, pg. 81'
       value: THIN
-      page: 81
     atmosphere:
-      source: 'HB:HS'
+      source: 'Handbook: House Steiner, pg. 81'
       value: TOXIC_POISON
-      page: 81
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'HB:HS'
+      source: 'Handbook: House Steiner, pg. 81'
       value: 1.89
-      page: 81
     diameter: 20936
     density: 6.344259428518
     dayLength: 22
     yearLength: 1.0
     temperature:
-      source: 'HB:HS'
+      source: 'Handbook: House Steiner, pg. 81'
       value: 193
-      page: 81
     water:
-      source: 'HB:HS'
+      source: 'Handbook: House Steiner, pg. 81'
       value: 19
-      page: 81
     lifeForm:
-      source: 'HB:HS'
+      source: 'Handbook: House Steiner, pg. 81'
       value: NONE
-      page: 81
-    desc: Gulf Breeze is originally known as Commonwealth Mining Outpost 26 (C.M.O.26). The focus of this mining operation was a large, lifeless, tide-locked planet. The planet is abundant with elements such as titanium, platinum and many more with a wide range of uses in the industrial world. The world’s chief mining operation is a mining colony located on the night side of the planet, housed in domed settlements. Space borne habitats exist throughout the system, aiding in the extraction of valuable materials on outer planets, moons and asteroid fields. Gulf Breeze Station is a major waypoint for all in system travel and serves as the system capital. A space station massing 930,000 tons and of Star League-era design, Gulf Breeze Station is capable of sustaining a population of 50,000. The Gulf Breeze system was originally founded by the Commonwealth Mining Corporation.  With the fall of CMC the colonists decided to stay and make a living trading mined resources to keep the colony thriving, naming the system for their station.
+    desc: Gulf Breeze is originally known as Commonwealth Mining Outpost 26 (C.M.O.26).
+      The focus of this mining operation was a large, lifeless, tide-locked planet.
+      The planet is abundant with elements such as titanium, platinum and many more
+      with a wide range of uses in the industrial world. The world’s chief mining
+      operation is a mining colony located on the night side of the planet, housed
+      in domed settlements. Space borne habitats exist throughout the system, aiding
+      in the extraction of valuable materials on outer planets, moons and asteroid
+      fields. Gulf Breeze Station is a major waypoint for all in system travel and
+      serves as the system capital. A space station massing 930,000 tons and of Star
+      League-era design, Gulf Breeze Station is capable of sustaining a population
+      of 50,000. The Gulf Breeze system was originally founded by the Commonwealth
+      Mining Corporation.  With the fall of CMC the colonists decided to stay and
+      make a living trading mined resources to keep the colony thriving, naming the
+      system for their station.
     ring:
-      source: 'HB:HS'
+      source: 'Handbook: House Steiner, pg. 81'
       value: yes
-      page: 81
     landmass:
       - name: Greater New Mower
         capital:
-          source: 'HB:HS'
+          source: 'Handbook: House Steiner, pg. 81'
           value: Gulf Breeze Station
-          page: 81
       - name: Old Binga
       - name: Saulė
       - name: New Green River
@@ -182,12 +185,6 @@ planet:
         icon: oddmoon2
     event:
       - date: '2494-08-08'
-        # administration: LA | Protectorate of Donegal | Coventry Province
-        # administration: LA | Protectorate of Donegal | Coventry Province
-        # administration: LA | Protectorate of Donegal | Coventry Province
-        # administration: LA | Protectorate of Donegal | Coventry Province
-        # administration: LA | Protectorate of Donegal | Coventry Province
-        # administration: LA | Protectorate of Donegal | Coventry Province
         faction:
           source: canon
           value:
@@ -318,25 +315,8 @@ planet:
       - date: '3039-01-01'
         socioIndustrial: C-B-B-B-F
       - date: '3040-01-01'
-        # administration: FC | Donegal March | Alarion Operational Area
-        # administration: FC | Donegal March | Alarion Operational Area
-        # administration: FC | Donegal March | Alarion Operational Area
-        # administration: FC | Donegal March | Alarion Operational Area
-        # administration: FC | Donegal March | Alarion Operational Area
-        # administration: FC | Donegal March | Alarion Operational Area
         population: 1600960245.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FC
       - date: '3040-01-19'
-        # administration: FC | Donegal March | Alarion Operational Area
-        # administration: FC | Donegal March | Alarion Operational Area
-        # administration: FC | Donegal March | Alarion Operational Area
-        # administration: FC | Donegal March | Alarion Operational Area
-        # administration: FC | Donegal March | Alarion Operational Area
-        # administration: FC | Donegal March | Alarion Operational Area
         faction:
           source: canon
           value:
@@ -348,12 +328,6 @@ planet:
       - date: '3050-01-01'
         population: 1616403472.0
       - date: '3057-09-18'
-        # administration: LA | Coventry Province
-        # administration: LA | Coventry Province
-        # administration: LA | Coventry Province
-        # administration: LA | Coventry Province
-        # administration: LA | Coventry Province
-        # administration: LA | Coventry Province
         faction:
           source: canon
           value:
@@ -386,17 +360,6 @@ planet:
         population: 1810682058.0
       - date: '2108-12-05'
       - date: '3057-01-01'
-        # administration: LA | Donegal March | Alarion Operational Area
-        # administration: LA | Donegal March | Alarion Operational Area
-        # administration: LA | Donegal March | Alarion Operational Area
-        # administration: LA | Donegal March | Alarion Operational Area
-        # administration: LA | Donegal March | Alarion Operational Area
-        # administration: LA | Donegal March | Alarion Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LA
   - name: Nova Sdiret Nord
     type: TERRESTRIAL
     orbitalDist: 4.16

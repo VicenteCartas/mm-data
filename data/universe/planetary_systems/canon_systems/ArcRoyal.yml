@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -20,13 +20,11 @@ sucsId: 166
 xcood: -170.389
 ycood: 226.576
 spectralType:
-  source: 'OTP:RC'
+  source: 'Operational Turning Points: Red Corsair, pg. 5'
   value: G3V
-  page: 5
 primarySlot:
-  source: 'OTP:RC'
+  source: 'Operational Turning Points: Red Corsair, pg. 5'
   value: 4
-  page: 5
 event:
   - date: '2351-10-24'
     nadirCharge: yes
@@ -98,39 +96,32 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 1.0
     sysPos:
-      source: 'OTP:RC'
+      source: 'Operational Turning Points: Red Corsair, pg. 5'
       value: 4
-      page: 5
     icon: green39
     pressure:
-      source: 'OTP:RC'
+      source: 'Operational Turning Points: Red Corsair, pg. 5'
       value: STANDARD
-      page: 5
     atmosphere:
-      source: 'OTP:RC'
+      source: 'Operational Turning Points: Red Corsair, pg. 5'
       value: BREATHABLE
-      page: 5
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'OTP:RC'
+      source: 'Operational Turning Points: Red Corsair, pg. 5'
       value: 1.01
-      page: 5
     diameter: 13984
     density: 5.07560906494
     dayLength: 26
     yearLength: 1.4
     temperature:
-      source: 'OTP:RC'
+      source: 'Operational Turning Points: Red Corsair, pg. 5'
       value: 32
-      page: 5
     water:
-      source: 'OTP:RC'
+      source: 'Operational Turning Points: Red Corsair, pg. 5'
       value: 74
-      page: 5
     lifeForm:
-      source: 'OTP:RC'
+      source: 'Operational Turning Points: Red Corsair, pg. 5'
       value: MAMMAL
-      page: 5
     desc: |-
       Arc-Royal is a pleasant world with a mild climate and mild weather. While the planet is highly developed and industrialized, these efforts were confined to certain areas and as a result Arc-Royal’s wilderness is largely untouched. The Arc-Royal MechWorks BattleMech facility is located in the city of New Hannover in the rolling hills of the Gutheim continent. ComTech manufacturing was built in the 3070s as a joint venture between ComStar, the Lyran Alliance and the Kell family. While most of the plant's output goes to ComStar, most of the profits go to the Alliance and the Kells. The plant is located around the volcanic Mount Zugspitze on the Gerechtland continent. Finally there are the Kell Refit Facilities, also located in New Hannover, which began as simple refit facilities but expanded to manufacturing with support from the Wolf's Dragoons.
 
@@ -146,32 +137,26 @@ planet:
       Wolf Clan Sites 1-4
     landmass:
       - name:
-          source: 'HB:HS'
+          source: 'Handbook: House Steiner, pg. 84'
           value: Gerechtland
-          page: 84
       - name:
-          source: 'HB:HS'
+          source: 'Handbook: House Steiner, pg. 84'
           value: Grunwald
-          page: 84
       - name:
-          source: 'HB:HS'
+          source: 'Handbook: House Steiner, pg. 84'
           value: Gutheim
-          page: 84
         capital:
-          source: 'HB:HS'
+          source: 'Handbook: House Steiner, pg. 84'
           value: Old Connaught
-          page: 84
     satellite:
       - name:
-          source: 'OTP:RC'
+          source: 'Operational Turning Points: Red Corsair, pg. 5'
           value: Deven
-          page: 5
         size: large
         icon: rock5
       - name:
-          source: 'OTP:RC'
+          source: 'Operational Turning Points: Red Corsair, pg. 5'
           value: Thorwald
-          page: 5
         size: large
         icon: rock2
     event:
@@ -205,12 +190,6 @@ planet:
             - LA
       - date: '2360-01-01'
         population: 73877550.0
-      - date: '2366-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '2370-01-01'
         population: 119380499.0
       - date: '2380-01-01'
@@ -253,18 +232,6 @@ planet:
         population: 2055460428.0
       - date: '2570-01-01'
         population: 2107408054.0
-      - date: '2571-01-01'
-        # administration: LA | Protectorate of Donegal | District of Donegal
-        # administration: LA | Protectorate of Donegal | District of Donegal
-        # administration: LA | Protectorate of Donegal | District of Donegal
-        # administration: LA | Protectorate of Donegal | District of Donegal
-        # administration: LA | Protectorate of Donegal | District of Donegal
-        # administration: LA | Protectorate of Donegal | District of Donegal
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LA
       - date: '2580-01-01'
         population: 2143947500.0
       - date: '2590-01-01'
@@ -371,25 +338,8 @@ planet:
       - date: '3034-01-01'
         socioIndustrial: B-B-B-B-B
       - date: '3040-01-01'
-        # administration: FC | Donegal March | Pherkad Operational Area
-        # administration: FC | Donegal March | Pherkad Operational Area
-        # administration: FC | Donegal March | Pherkad Operational Area
-        # administration: FC | Donegal March | Pherkad Operational Area
-        # administration: FC | Donegal March | Pherkad Operational Area
-        # administration: FC | Donegal March | Pherkad Operational Area
         population: 2025435036.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FC
       - date: '3040-01-19'
-        # administration: FC | Donegal March | Pherkad Operational Area
-        # administration: FC | Donegal March | Pherkad Operational Area
-        # administration: FC | Donegal March | Pherkad Operational Area
-        # administration: FC | Donegal March | Pherkad Operational Area
-        # administration: FC | Donegal March | Pherkad Operational Area
-        # administration: FC | Donegal March | Pherkad Operational Area
         faction:
           source: canon
           value:
@@ -401,20 +351,9 @@ planet:
       - date: '3050-01-01'
         population: 2049886673.0
       - date: '3057-01-01'
-        # administration: LA | Donegal March | Pherkad Operational Area
-        # administration: LA | Donegal March | Pherkad Operational Area
-        # administration: LA | Donegal March | Pherkad Operational Area
-        # administration: LA | Donegal March | Pherkad Operational Area
-        # administration: LA | Donegal March | Pherkad Operational Area
-        # administration: LA | Donegal March | Pherkad Operational Area
         hiringHall:
-          source: FM:MR
+          source: Mercenary FM revised
           value: STANDARD
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LA
       - date: '3057-11-20'
         faction:
           source: canon
@@ -427,18 +366,6 @@ planet:
           value:
             - ARDC
             - CWIE
-      - date: '3058-01-01'
-        # administration: LA | Arc-Royal Defense Cordon | Region Capital
-        # administration: LA | Arc-Royal Defense Cordon | Region Capital
-        # administration: LA | Arc-Royal Defense Cordon | Region Capital
-        # administration: LA | Arc-Royal Defense Cordon | Region Capital
-        # administration: LA | Arc-Royal Defense Cordon | Region Capital
-        # administration: LA | Arc-Royal Defense Cordon | Region Capital
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LA
       - date: '3060-01-01'
         population: 2077124551.0
       - date: '3067-01-01'
@@ -451,18 +378,6 @@ planet:
           value:
             - LA
             - CWIE
-      - date: '3068-01-01'
-        # administration: LA | Arc-Royal Theater | Region Capital
-        # administration: LA | Arc-Royal Theater | Region Capital
-        # administration: LA | Arc-Royal Theater | Region Capital
-        # administration: LA | Arc-Royal Theater | Region Capital
-        # administration: LA | Arc-Royal Theater | Region Capital
-        # administration: LA | Arc-Royal Theater | Region Capital
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LA
       - date: '3070-01-01'
         population: 2103882632.0
       - date: '3080-01-01'
@@ -496,37 +411,18 @@ planet:
           source: canon
           value: NONE
       - date: '3151-01-01'
-        # administration: ARDC | National Capital
-        # administration: ARDC | National Capital
-        # administration: ARDC | National Capital
-        # administration: ARDC | National Capital
-        # administration: ARDC | National Capital
-        # administration: ARDC | National Capital
         faction:
-          source: SUCS
-          version: 2026.03.02
+          source: sucs
           value:
-            - ARDC
+            - CJF
       - date: '3151-10-02'
         faction:
           source: canon
           value:
             - ARL
         hiringHall:
-          source: HS:H
+          source: Hotspots Hinterlands
           value: MINOR
-      - date: '3152-01-01'
-        # administration: ARDC | National Capital
-        # administration: ARDC | National Capital
-        # administration: ARDC | National Capital
-        # administration: ARDC | National Capital
-        # administration: ARDC | National Capital
-        # administration: ARDC | National Capital
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - ARDC
   - name: Harris
     type: ICE_GIANT
     orbitalDist: 2.8

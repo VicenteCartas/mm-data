@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Katinka
-sucsId: 1304
+sucsId: 1303
 xcood: 151.694
 ycood: -451.193
 spectralType: K3V
@@ -72,12 +72,6 @@ planet:
       - name: Brabec
     event:
       - date: '2708-01-25'
-        # administration: TC | Brinton Union
-        # administration: TC | Brinton Union
-        # administration: TC | Brinton Union
-        # administration: TC | Brinton Union
-        # administration: TC | Brinton Union
-        # administration: TC | Brinton Union
         faction:
           source: canon
           value:
@@ -114,18 +108,6 @@ planet:
             - IND
       - date: '2820-01-01'
         population: 3582007.0
-      - date: '2821-01-01'
-        # administration: TC | Brinton Union
-        # administration: TC | Brinton Union
-        # administration: TC | Brinton Union
-        # administration: TC | Brinton Union
-        # administration: TC | Brinton Union
-        # administration: TC | Brinton Union
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - TC
       - date: '2830-01-01'
         population: 1856371.0
       - date: '2840-01-01'
@@ -148,29 +130,16 @@ planet:
           source: This is the earliest the directorate could have taken over
           value:
             - ARD
-      - date: '3025-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - ARC
       - date: '3026-01-01'
         faction:
           source: canon
           value:
             - ARC
-      - date: '3030-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - ABN
       - date: '3151-01-01'
         faction:
           source: sucs
           value:
             - ABN
-    desc: The SLDF facility on Katinka made it a prime target during the Periphery Uprising, and an orbital mass-driver strike left an enormous crater and a badly disrupted ecosystem. The potential for scavenging LosTech continues to draw prospectors and colonists to the system.
   - name: 3IJ1 Belt
     type: ASTEROID_BELT
     orbitalDist: 0.7

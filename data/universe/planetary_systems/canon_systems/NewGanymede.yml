@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,16 +16,15 @@
 # affiliated with Microsoft.
 
 id: New Ganymede
-sucsId: 1831
+sucsId: 1830
 xcood: 197.42
 ycood: -377.374
 spectralType:
   source: canon
   value: G2V
 primarySlot:
-  source: Per1e
+  source: Periphery (1ed), pg. 86
   value: 3
-  page: 86
 event:
   - date: '2402-08-12'
     zenithCharge: yes
@@ -73,9 +72,8 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 1.0
     sysPos:
-      source: Per1e
+      source: Periphery (1ed), pg. 86
       value: 3
-      page: 86
     icon: dry18
     pressure:
       source: canon
@@ -94,10 +92,15 @@ planet:
       source: canon
       value: 15
     lifeForm:
-      source: Per1e
+      source: Periphery (1ed), pg. 86
       value: MAMMAL
-      page: 86
-    desc: New Ganymede is a barren desert world deep inside the Tuarian Concordat. The barren terrain is almost constantly swept by high winds which bring massive sand storms that ravage settlements and make this desolate world even less appealing for settlement. However, the planet's abundance of rare radioactive ores convinced the Concordat to set up a massive mining operation on planet. The rare-ores make New Ganymede a very important planet to the Concordat's military industry and as a result it is usually well garrisoned.
+    desc: New Ganymede is a barren desert world deep inside the Tuarian Concordat.
+      The barren terrain is almost constantly swept by high winds which bring massive
+      sand storms that ravage settlements and make this desolate world even less appealing
+      for settlement. However, the planet's abundance of rare radioactive ores convinced
+      the Concordat to set up a massive mining operation on planet. The rare-ores
+      make New Ganymede a very important planet to the Concordat's military industry
+      and as a result it is usually well garrisoned.
     smallMoons: 2
     landmass:
       - name: Medford Lakes
@@ -189,19 +192,7 @@ planet:
             - SL
       - date: '2590-01-01'
         population: 137204.0
-      - date: '2596-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - TC
       - date: '2597-03-21'
-        # administration: TC | Hyades Union
-        # administration: TC | Hyades Union
-        # administration: TC | Hyades Union
-        # administration: TC | Hyades Union
-        # administration: TC | Hyades Union
-        # administration: TC | Hyades Union
         faction:
           source: canon
           value:

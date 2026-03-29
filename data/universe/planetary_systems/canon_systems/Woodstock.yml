@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: Woodstock
-sucsId: 2774
+sucsId: 2773
 xcood: 44.199
 ycood: -36.749
 spectralType:
-  source: DA:RW
+  source: MWDA world profiles
   value: G5V
 primarySlot:
-  source: DA:RW
+  source: MWDA world profiles
   value: 4
 event:
   - date: '2358-09-04'
@@ -97,31 +97,31 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.63
     sysPos:
-      source: DA:RW
+      source: MWDA world profiles
       value: 4
     icon: green22
     pressure:
-      source: DA:RW
+      source: MWDA world profiles
       value: STANDARD
     atmosphere:
-      source: DA:RW
+      source: MWDA world profiles
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: DA:RW
+      source: MWDA world profiles
       value: 1.0
     diameter: 13103
     density: 5.363162060717
     dayLength: 22
     yearLength: 1.1
     temperature:
-      source: DA:RW
+      source: MWDA world profiles
       value: 45
     water:
-      source: DA:RW
+      source: MWDA world profiles
       value: 73
     lifeForm:
-      source: DA:RW
+      source: MWDA world profiles
       value: MAMMAL
     desc: |-
       3135 - Woodstock was colonised during the latter half of the 22nd century by refugees from the Terran North American continent. Woodstock is a temperate world devoted to raising agricultural products and a variety of livestock. The three oceans are as rich and vibrant with life, while the land is fertile.
@@ -131,20 +131,20 @@ planet:
       Woodstock‘s third continent, Essex, is the only blemish on this otherwise beautiful world. During Amaris' occupation of the Hegemony, Woodstock was attacked by elements of the 141st Amaris Dragoons, using chemical and nuclear weapons to target the military base located on Essex, obliterating the SLDF garrison. The weapons poisoned Essex, rendering the continent all but uninhabitable. The continent is now used in studying radiation‘s effect on the environment.
     landmass:
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Essex
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Sjardijin
         capital:
-          source: DA:RW
+          source: MWDA world profiles
           value: Recital City
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: York
     satellite:
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Lionel
         size: medium
         icon: rock9
@@ -173,30 +173,12 @@ planet:
           source: canon
           value:
             - TH
-      - date: '2317-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '2320-01-01'
         population: 16150695.0
       - date: '2330-01-01'
         population: 30505554.0
       - date: '2340-01-01'
         population: 52647877.0
-      - date: '2341-01-01'
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - TH
       - date: '2350-08-05'
         population: 84301439.0
         socioIndustrial: C-C-C-C-D
@@ -288,18 +270,6 @@ planet:
         population: 1911864888.0
       - date: '2760-01-01'
         population: 1922460059.0
-      - date: '2767-01-01'
-        # administration: AE | Terra Firma Province
-        # administration: AE | Terra Firma Province
-        # administration: AE | Terra Firma Province
-        # administration: AE | Terra Firma Province
-        # administration: AE | Terra Firma Province
-        # administration: AE | Terra Firma Province
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - AE
       - date: '2767-02-05'
         faction:
           source: canon
@@ -308,12 +278,6 @@ planet:
       - date: '2770-01-01'
         population: 1927965456.0
       - date: '2779-03-25'
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
         faction:
           source: canon
           value:
@@ -321,12 +285,6 @@ planet:
       - date: '2780-01-01'
         population: 1915974266.0
       - date: '2790-05-04'
-        # administration: CC | Tikonov Commonality | Region 3
-        # administration: CC | Tikonov Commonality | Region 3
-        # administration: CC | Tikonov Commonality | Region 3
-        # administration: CC | Tikonov Commonality | Region 3
-        # administration: CC | Tikonov Commonality | Region 3
-        # administration: CC | Tikonov Commonality | Region 3
         faction:
           source: canon
           value:
@@ -382,18 +340,6 @@ planet:
         population: 1379150220.0
       - date: '3020-01-01'
         population: 1358065066.0
-      - date: '3030-01-01'
-        # administration: LA | Sarna March | Tikonov Operational Area
-        # administration: LA | Sarna March | Tikonov Operational Area
-        # administration: LA | Sarna March | Tikonov Operational Area
-        # administration: LA | Sarna March | Tikonov Operational Area
-        # administration: LA | Sarna March | Tikonov Operational Area
-        # administration: LA | Sarna March | Tikonov Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LA
       - date: '3030-05-09'
         faction:
           source: canon
@@ -403,25 +349,8 @@ planet:
       - date: '3033-01-01'
         socioIndustrial: B-C-D-B-D
       - date: '3040-01-01'
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
         population: 1380669399.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FC
       - date: '3040-01-19'
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
         faction:
           source: canon
           value:
@@ -432,25 +361,7 @@ planet:
         population: 1399154958.0
       - date: '3060-01-01'
         population: 1416329199.0
-      - date: '3067-01-01'
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FS
       - date: '3067-04-20'
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
         faction:
           source: canon
           value:
@@ -475,25 +386,7 @@ planet:
             - Stone
       - date: '3080-01-01'
         population: 1438165658.0
-      - date: '3081-01-01'
-        # administration: ROS | Prefecture V | Region Capital
-        # administration: ROS | Prefecture V | Region Capital
-        # administration: ROS | Prefecture V | Region Capital
-        # administration: ROS | Prefecture V | Region Capital
-        # administration: ROS | Prefecture V | Region Capital
-        # administration: ROS | Prefecture V | Region Capital
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - ROS
       - date: '3081-07-28'
-        # administration: ROS | Prefecture V
-        # administration: ROS | Prefecture V
-        # administration: ROS | Prefecture V
-        # administration: ROS | Prefecture V
-        # administration: ROS | Prefecture V
-        # administration: ROS | Prefecture V
         faction:
           source: canon
           value:
@@ -512,12 +405,6 @@ planet:
         population: 1443352385.0
       - date: '3132-08-07'
         hpg: X
-      - date: '3135-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '3135-10-01'
         faction:
           source: canon
@@ -525,25 +412,7 @@ planet:
             - IND
       - date: '3140-01-01'
         population: 1449137357.0
-      - date: '3145-01-01'
-        # administration: CC | Tikonov Commonality | Region 1
-        # administration: CC | Tikonov Commonality | Region 1
-        # administration: CC | Tikonov Commonality | Region 1
-        # administration: CC | Tikonov Commonality | Region 1
-        # administration: CC | Tikonov Commonality | Region 1
-        # administration: CC | Tikonov Commonality | Region 1
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CC
       - date: '3145-03-24'
-        # administration: CC | Tikonov Commonality | Region 6
-        # administration: CC | Tikonov Commonality | Region 6
-        # administration: CC | Tikonov Commonality | Region 6
-        # administration: CC | Tikonov Commonality | Region 6
-        # administration: CC | Tikonov Commonality | Region 6
-        # administration: CC | Tikonov Commonality | Region 6
         faction:
           source: canon
           value:

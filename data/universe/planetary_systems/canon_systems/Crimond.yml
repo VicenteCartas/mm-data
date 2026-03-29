@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -20,13 +20,11 @@ sucsId: 624
 xcood: -68.521
 ycood: 230.614
 spectralType:
-  source: FCCW
+  source: FedCom Civil War, pg. 196
   value: F8II
-  page: 196
 primarySlot:
-  source: FCCW
+  source: FedCom Civil War, pg. 196
   value: 4
-  page: 196
 event:
   - date: '2381-06-18'
     zenithCharge: yes
@@ -82,65 +80,53 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 3.36
     sysPos:
-      source: FCCW
+      source: FedCom Civil War, pg. 196
       value: 4
-      page: 196
     icon: green5
     pressure:
-      source: FCCW
+      source: FedCom Civil War, pg. 196
       value: STANDARD
-      page: 196
     atmosphere:
-      source: FCCW
+      source: FedCom Civil War, pg. 196
       value: BREATHABLE
-      page: 196
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: FCCW
+      source: FedCom Civil War, pg. 196
       value: 1.0
-      page: 196
     diameter: 11247
     density: 6.248678137061
     dayLength: 21
     yearLength: 6.3
     temperature:
-      source: FCCW
+      source: FedCom Civil War, pg. 196
       value: 45
-      page: 196
     water:
-      source: FCCW
+      source: FedCom Civil War, pg. 196
       value: 50
-      page: 196
     lifeForm:
-      source: FCCW
+      source: FedCom Civil War, pg. 196
       value: MAMMAL
-      page: 196
     desc: |-
       Crimond is a comfortable planet with abundant natural resources and extensive industry, very little of it is military industry. Despite a comfortable and warm, climate, the planet does not have extensive arable land and in fact the soil is nitrogen poor and filled with minerals that are toxic to most plants, as a result Crimond struggles to feed its population and often requires imported food from nearby systems.
 
       The continents of Chromatisch and Metallerz have been extensively surveyed and mined for natural minerals throughout the planet’s history. However, the smaller island continent of Condor has been more or less forgotten for most of the planet’s settled history. The Star League established Fort Beauord on Condor as a perfect location for the 54th Mechanized Infantry Division to undergo harsh environment training, taking advantage of the hot dry deserts and cold, wintry mountains that dominate Condor.
     landmass:
       - name:
-          source: FCCW
+          source: FedCom Civil War, pg. 196
           value: Chromatisch
-          page: 196
         capital:
-          source: FCCW
+          source: FedCom Civil War, pg. 196
           value: Sol City
-          page: 196
       - name:
-          source: FCCW
+          source: FedCom Civil War, pg. 196
           value: Condor
-          page: 196
       - name:
-          source: FCCW
+          source: FedCom Civil War, pg. 196
           value: Metallerz
-          page: 196
     satellite:
       - name:
-          source: FCCW
+          source: FedCom Civil War, pg. 196
           value: Osseous
-          page: 196
         size: medium
         icon: rock16
     event:
@@ -193,12 +179,6 @@ planet:
       - date: '2340-01-01'
         population: 274726643.0
       - date: '2341-12-15'
-        # administration: LA | Tamar Pact
-        # administration: LA | Tamar Pact
-        # administration: LA | Tamar Pact
-        # administration: LA | Tamar Pact
-        # administration: LA | Tamar Pact
-        # administration: LA | Tamar Pact
         faction:
           source: canon
           value:
@@ -357,25 +337,8 @@ planet:
       - date: '3032-01-01'
         socioIndustrial: B-B-B-B-D
       - date: '3040-01-01'
-        # administration: FC | Tamar March | Benfled Operational Area
-        # administration: FC | Tamar March | Benfled Operational Area
-        # administration: FC | Tamar March | Benfled Operational Area
-        # administration: FC | Tamar March | Benfled Operational Area
-        # administration: FC | Tamar March | Benfled Operational Area
-        # administration: FC | Tamar March | Benfled Operational Area
         population: 841359335.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FC
       - date: '3040-01-19'
-        # administration: FC | Tamar March | Benfled Operational Area
-        # administration: FC | Tamar March | Benfled Operational Area
-        # administration: FC | Tamar March | Benfled Operational Area
-        # administration: FC | Tamar March | Benfled Operational Area
-        # administration: FC | Tamar March | Benfled Operational Area
-        # administration: FC | Tamar March | Benfled Operational Area
         faction:
           source: canon
           value:
@@ -386,25 +349,7 @@ planet:
           value: A-B-A-A-D
       - date: '3050-01-01'
         population: 851686788.0
-      - date: '3057-01-01'
-        # administration: LA | Tamar March | Pandora Operational Area
-        # administration: LA | Tamar March | Pandora Operational Area
-        # administration: LA | Tamar March | Pandora Operational Area
-        # administration: LA | Tamar March | Pandora Operational Area
-        # administration: LA | Tamar March | Pandora Operational Area
-        # administration: LA | Tamar March | Pandora Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LA
       - date: '3057-09-18'
-        # administration: LA | Donegal Province | Pandora Theater
-        # administration: LA | Donegal Province | Pandora Theater
-        # administration: LA | Donegal Province | Pandora Theater
-        # administration: LA | Donegal Province | Pandora Theater
-        # administration: LA | Donegal Province | Pandora Theater
-        # administration: LA | Donegal Province | Pandora Theater
         faction:
           source: canon
           value:
@@ -418,12 +363,6 @@ planet:
             - FC
             - LA
       - date: '3063-05-25'
-        # administration: LA | Arc-Royal Theater
-        # administration: LA | Arc-Royal Theater
-        # administration: LA | Arc-Royal Theater
-        # administration: LA | Arc-Royal Theater
-        # administration: LA | Arc-Royal Theater
-        # administration: LA | Arc-Royal Theater
         faction:
           source: canon
           value:
@@ -442,12 +381,6 @@ planet:
         socioIndustrial: A-B-A-A-D
       - date: '3120-01-01'
         population: 933759434.0
-      - date: '3130-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CW
       - date: '3130-11-05'
         faction:
           source: canon
@@ -466,12 +399,6 @@ planet:
         population: 963351971.0
       - date: '3145-01-01'
         population: 972450174.0
-      - date: '3152-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - TamP
       - date: '3152-01-16'
         faction:
           source: canon

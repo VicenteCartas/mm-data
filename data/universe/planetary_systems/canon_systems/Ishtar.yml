@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,16 +16,15 @@
 # affiliated with Microsoft.
 
 id: Ishtar
-sucsId: 1216
+sucsId: 1215
 xcood: 187.985
 ycood: -388.078
 spectralType:
   source: canon
   value: G5V
 primarySlot:
-  source: Per1e
+  source: Periphery (1ed), pg. 86
   value: 4
-  page: 86
 event:
   - date: '2378-12-18'
     zenithCharge: yes
@@ -90,9 +89,8 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.9
     sysPos:
-      source: Per1e
+      source: Periphery (1ed), pg. 86
       value: 4
-      page: 86
     icon: green36
     pressure:
       source: canon
@@ -111,10 +109,15 @@ planet:
       source: canon
       value: 35
     lifeForm:
-      source: Per1e
+      source: Periphery (1ed), pg. 86
       value: MAMMAL
-      page: 86
-    desc: Ishtar is a major exporter of agriculture for the Taurian Concordat and foodstuffs prepared and packaged on Ishtar can be found on most planets in the Concordat. Despite the planet's importance as a breadbasket world, the Concordat usually leaves the planet largely demilitarized in hopes that the planet will be left alone, in order to protect the natural beauty of the planet. The planet is further isolated by a lack of ComStar presence, all messages require a relay by JumpShip to send or receive.
+    desc: Ishtar is a major exporter of agriculture for the Taurian Concordat and
+      foodstuffs prepared and packaged on Ishtar can be found on most planets in the
+      Concordat. Despite the planet's importance as a breadbasket world, the Concordat
+      usually leaves the planet largely demilitarized in hopes that the planet will
+      be left alone, in order to protect the natural beauty of the planet. The planet
+      is further isolated by a lack of ComStar presence, all messages require a relay
+      by JumpShip to send or receive.
     landmass:
       - name: Vázquez
         capital: Cylon
@@ -195,12 +198,6 @@ planet:
           value:
             - SL
       - date: '2597-03-21'
-        # administration: TC | Hyades Union
-        # administration: TC | Hyades Union
-        # administration: TC | Hyades Union
-        # administration: TC | Hyades Union
-        # administration: TC | Hyades Union
-        # administration: TC | Hyades Union
         faction:
           source: canon
           value:

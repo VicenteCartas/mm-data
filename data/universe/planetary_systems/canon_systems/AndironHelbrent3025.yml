@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Andiron (Helbrent 3025-)
-sucsId: 1082
+sucsId: 1081
 xcood: -424.484
 ycood: -47.393
 spectralType: K4V
@@ -53,12 +53,6 @@ planet:
       - name: Stoneview D
     event:
       - date: '2397-01-25'
-        # administration: RWR | Timbuktu Province
-        # administration: RWR | Timbuktu Province
-        # administration: RWR | Timbuktu Province
-        # administration: RWR | Timbuktu Province
-        # administration: RWR | Timbuktu Province
-        # administration: RWR | Timbuktu Province
         faction:
           source: canon
           value:
@@ -148,12 +142,6 @@ planet:
       - date: '2770-01-01'
         population: 123414369.0
       - date: '2779-03-04'
-        # administration: LA | Protectorate of Donegal | Alarion Province
-        # administration: LA | Protectorate of Donegal | Alarion Province
-        # administration: LA | Protectorate of Donegal | Alarion Province
-        # administration: LA | Protectorate of Donegal | Alarion Province
-        # administration: LA | Protectorate of Donegal | Alarion Province
-        # administration: LA | Protectorate of Donegal | Alarion Province
         faction:
           source: canon
           value:
@@ -180,18 +168,6 @@ planet:
         hpg: X
         population: 0.0
         socioIndustrial: F-D-D-F-D
-      - date: '3030-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CIR
-      - date: '3081-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '3081-08-12'
         faction:
           source: canon
@@ -215,27 +191,11 @@ planet:
         population: 280346.0
       - date: '3145-01-01'
         population: 307669.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '2108-12-05'
         name: Helbrent
       - date: '3025-01-01'
         name: Andiron
         message: Helbrent renamed to Andiron
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CIR
-      - date: '3151-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
   - name: Cenci
     type: ICE_GIANT
     orbitalDist: 0.49

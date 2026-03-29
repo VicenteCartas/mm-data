@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Baltazar III (Himmels 3025-)
-sucsId: 1113
+sucsId: 1112
 xcood: -440.091
 ycood: -59.547
 spectralType: F5V
@@ -87,12 +87,6 @@ planet:
       - name: Oudin's Gulf
     event:
       - date: '2712-09-02'
-        # administration: RWR | Erdvynn Province
-        # administration: RWR | Erdvynn Province
-        # administration: RWR | Erdvynn Province
-        # administration: RWR | Erdvynn Province
-        # administration: RWR | Erdvynn Province
-        # administration: RWR | Erdvynn Province
         faction:
           source: canon
           value:
@@ -125,12 +119,6 @@ planet:
           source: canon
           value:
             - CIR
-      - date: '2786-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '2790-01-01'
         population: 10129750.0
       - date: '2800-01-01'
@@ -181,11 +169,6 @@ planet:
         population: 36859265.0
       - date: '3030-01-01'
         population: 36955301.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CIR
       - date: '3040-01-01'
         population: 36710842.0
       - date: '3046-01-01'
@@ -198,12 +181,6 @@ planet:
         population: 36174692.0
       - date: '3080-01-01'
         population: 36509034.0
-      - date: '3081-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '3081-05-01'
         faction:
           source: canon
@@ -225,27 +202,11 @@ planet:
         socioIndustrial: B-D-A-C-F
       - date: '3145-01-01'
         population: 38867551.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '2108-12-05'
         name: Helbrent
       - date: '3025-01-01'
         name: Baltazar III
         message: Himmels renamed to Baltazar III
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CIR
-      - date: '3151-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
   - name: Chitembo
     type: ICE_GIANT
     orbitalDist: 3.92

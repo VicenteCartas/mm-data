@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,17 +16,15 @@
 # affiliated with Microsoft.
 
 id: Tigress
-sucsId: 2545
+sucsId: 2544
 xcood: 74.697
 ycood: -29.514
 spectralType:
-  source: HLSB
+  source: House Liao, pg. 142
   value: G7V
-  page: 142
 primarySlot:
-  source: HLSB
+  source: House Liao, pg. 142
   value: 4
-  page: 142
 event:
   - date: '2423-08-24'
     zenithCharge: yes
@@ -86,60 +84,56 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.63
     sysPos:
-      source: HLSB
+      source: House Liao, pg. 142
       value: 4
-      page: 142
     icon: green38
     pressure:
-      source: DA:RW
+      source: MWDA world profiles
       value: STANDARD
     atmosphere:
-      source: DA:RW
+      source: MWDA world profiles
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: DA:RW
+      source: MWDA world profiles
       value: 0.8
     diameter: 10538
     density: 5.334888480479
     dayLength: 23
     yearLength: 1.1
     temperature:
-      source: DA:RW
+      source: MWDA world profiles
       value: 32
     water:
-      source: DA:RW
+      source: MWDA world profiles
       value: 70
     lifeForm:
-      source: HLSB
+      source: House Liao, pg. 142
       value: AMPHIBIAN
-      page: 142
-    desc: Chancellor Tormax Liao granted Tigress to the family of Erika Laurel as a private fiefdom during the 3rd Succession War. Erika Laurel was one of the Confederation’s best military leaders during the Third Succession War. Tigress is highly industrialized, the planet's population enjoy the highest per capital income and standard of living in the Confederation.
+    desc: Chancellor Tormax Liao granted Tigress to the family of Erika Laurel as
+      a private fiefdom during the 3rd Succession War. Erika Laurel was one of the
+      Confederation’s best military leaders during the Third Succession War. Tigress
+      is highly industrialized, the planet's population enjoy the highest per capital
+      income and standard of living in the Confederation.
     landmass:
       - name: Morrigna
         capital:
-          source: DA:RW
+          source: MWDA world profiles
           value: Four Cities
       - name: Anociticus
       - name: Fand Prime
     satellite:
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Jarvic
         size: medium
         icon: oddmoon1
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Totalia
         size: giant
         icon: rock8
     event:
-      - date: '2317-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '2319-08-27'
         faction:
           source: canon
@@ -157,19 +151,7 @@ planet:
         population: 4659580.0
       - date: '2360-01-01'
         population: 12824365.0
-      - date: '2366-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - TH
       - date: '2367-03-04'
-        # administration: TH | Lockdale Province
-        # administration: TH | Lockdale Province
-        # administration: TH | Lockdale Province
-        # administration: TH | Lockdale Province
-        # administration: TH | Lockdale Province
-        # administration: TH | Lockdale Province
         faction:
           source: canon
           value:
@@ -264,18 +246,6 @@ planet:
         population: 2752787990.0
       - date: '2760-01-01'
         population: 2728311084.0
-      - date: '2767-01-01'
-        # administration: AE | Lockdale Province
-        # administration: AE | Lockdale Province
-        # administration: AE | Lockdale Province
-        # administration: AE | Lockdale Province
-        # administration: AE | Lockdale Province
-        # administration: AE | Lockdale Province
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - AE
       - date: '2767-08-31'
         faction:
           source: canon
@@ -288,12 +258,6 @@ planet:
           source: canon
           value: X
       - date: '2779-12-23'
-        # administration: TH | Lockdale Province
-        # administration: TH | Lockdale Province
-        # administration: TH | Lockdale Province
-        # administration: TH | Lockdale Province
-        # administration: TH | Lockdale Province
-        # administration: TH | Lockdale Province
         faction:
           source: canon
           value:
@@ -304,12 +268,6 @@ planet:
           value: B
         population: 2683292938.0
       - date: '2790-10-13'
-        # administration: CC | Tikonov Commonality | Region 4
-        # administration: CC | Tikonov Commonality | Region 4
-        # administration: CC | Tikonov Commonality | Region 4
-        # administration: CC | Tikonov Commonality | Region 4
-        # administration: CC | Tikonov Commonality | Region 4
-        # administration: CC | Tikonov Commonality | Region 4
         faction:
           source: canon
           value:
@@ -365,18 +323,6 @@ planet:
         population: 1936958713.0
       - date: '3020-01-01'
         population: 1896317531.0
-      - date: '3030-01-01'
-        # administration: LA | Sarna March | Tikonov Operational Area
-        # administration: LA | Sarna March | Tikonov Operational Area
-        # administration: LA | Sarna March | Tikonov Operational Area
-        # administration: LA | Sarna March | Tikonov Operational Area
-        # administration: LA | Sarna March | Tikonov Operational Area
-        # administration: LA | Sarna March | Tikonov Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LA
       - date: '3030-10-29'
         faction:
           source: canon
@@ -384,25 +330,8 @@ planet:
             - FS
         population: 1881668692.0
       - date: '3040-01-01'
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
         population: 1898490288.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FC
       - date: '3040-01-19'
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
         faction:
           source: canon
           value:
@@ -413,25 +342,7 @@ planet:
         population: 1920833075.0
       - date: '3060-01-01'
         population: 1938974035.0
-      - date: '3067-01-01'
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FS
       - date: '3067-04-20'
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
         faction:
           source: canon
           value:
@@ -456,25 +367,7 @@ planet:
             - Stone
       - date: '3080-01-01'
         population: 1968277874.0
-      - date: '3081-01-01'
-        # administration: ROS | Prefecture IV
-        # administration: ROS | Prefecture IV
-        # administration: ROS | Prefecture IV
-        # administration: ROS | Prefecture IV
-        # administration: ROS | Prefecture IV
-        # administration: ROS | Prefecture IV
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - ROS
       - date: '3081-11-12'
-        # administration: ROS | Prefecture IV
-        # administration: ROS | Prefecture IV
-        # administration: ROS | Prefecture IV
-        # administration: ROS | Prefecture IV
-        # administration: ROS | Prefecture IV
-        # administration: ROS | Prefecture IV
         faction:
           source: canon
           value:
@@ -495,18 +388,6 @@ planet:
         hpg:
           source: canon
           value: X
-      - date: '3135-01-01'
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FS
       - date: '3135-07-10'
         faction:
           source: canon
@@ -514,25 +395,7 @@ planet:
             - FS
       - date: '3140-01-01'
         population: 2107619233.0
-      - date: '3145-01-01'
-        # administration: CC | Tikonov Commonality | Region 2
-        # administration: CC | Tikonov Commonality | Region 2
-        # administration: CC | Tikonov Commonality | Region 2
-        # administration: CC | Tikonov Commonality | Region 2
-        # administration: CC | Tikonov Commonality | Region 2
-        # administration: CC | Tikonov Commonality | Region 2
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CC
       - date: '3145-10-05'
-        # administration: CC | Tikonov Commonality | Region 8
-        # administration: CC | Tikonov Commonality | Region 8
-        # administration: CC | Tikonov Commonality | Region 8
-        # administration: CC | Tikonov Commonality | Region 8
-        # administration: CC | Tikonov Commonality | Region 8
-        # administration: CC | Tikonov Commonality | Region 8
         faction:
           source: canon
           value:

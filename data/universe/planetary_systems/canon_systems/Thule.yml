@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,17 +16,15 @@
 # affiliated with Microsoft.
 
 id: Thule
-sucsId: 2539
+sucsId: 2538
 xcood: 93.055
 ycood: 455.16
 spectralType:
-  source: 25YAF
+  source: 25 Years of Art and Fiction, pg. 75
   value: A8V
-  page: 75
 primarySlot:
-  source: 25YAF
+  source: 25 Years of Art and Fiction, pg. 75
   value: 2
-  page: 75
 event:
   - date: '2381-02-27'
     zenithCharge: yes
@@ -57,62 +55,59 @@ planet:
     type: GIANT_TERRESTRIAL
     orbitalDist: 2.88
     sysPos:
-      source: 25YAF
+      source: 25 Years of Art and Fiction, pg. 75
       value: 2
-      page: 75
     icon: green4
     pressure:
-      source: 25YAF
+      source: 25 Years of Art and Fiction, pg. 75
       value: STANDARD
-      page: 75
     atmosphere:
-      source: 25YAF
+      source: 25 Years of Art and Fiction, pg. 75
       value: BREATHABLE
-      page: 75
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 25YAF
+      source: 25 Years of Art and Fiction, pg. 75
       value: 0.97
-      page: 75
     diameter: 14998
     density: 4.545088818081
     dayLength: 13
     yearLength: 5.1
     temperature:
-      source: 25YAF
+      source: 25 Years of Art and Fiction, pg. 75
       value: 24
-      page: 75
     water:
-      source: 25YAF
+      source: 25 Years of Art and Fiction, pg. 75
       value: 25
-      page: 75
     lifeForm:
-      source: 25YAF
+      source: 25 Years of Art and Fiction, pg. 75
       value: MAMMAL
-      page: 75
-    desc: Thule is a well-established planet with abundant natural resources and arable land, as well as the basic infrastructure necessary to support heavy industry, though little industry exists on the Thule. The planet has a comfortable atmosphere and temperate climate. The planet was originally a holding of the Draconis Combine until the formation of the Free Rasalhague Republic. Unfortunately, like most FRR planets, Thule was conquered by Clan Ghost Bear during Operation Revival. The Bears hoped to further develop industry on Thule, unfortunately their efforts spoiled when Dominion Factory-5 and a nacent DropShip yard were destroyed in a three-way fight between Clan Ghost Bear, disguised Clan Burrock warriors and Clan Hells Horses in 3074.
+    desc: Thule is a well-established planet with abundant natural resources and arable
+      land, as well as the basic infrastructure necessary to support heavy industry,
+      though little industry exists on the Thule. The planet has a comfortable atmosphere
+      and temperate climate. The planet was originally a holding of the Draconis Combine
+      until the formation of the Free Rasalhague Republic. Unfortunately, like most
+      FRR planets, Thule was conquered by Clan Ghost Bear during Operation Revival.
+      The Bears hoped to further develop industry on Thule, unfortunately their efforts
+      spoiled when Dominion Factory-5 and a nacent DropShip yard were destroyed in
+      a three-way fight between Clan Ghost Bear, disguised Clan Burrock warriors and
+      Clan Hells Horses in 3074.
     landmass:
       - name:
-          source: 25YAF
+          source: 25 Years of Art and Fiction, pg. 75
           value: Akranes
-          page: 75
       - name:
-          source: 25YAF
+          source: 25 Years of Art and Fiction, pg. 75
           value: Husavik
-          page: 75
       - name:
-          source: 25YAF
+          source: 25 Years of Art and Fiction, pg. 75
           value: Vik
-          page: 75
         capital:
-          source: 25YAF
+          source: 25 Years of Art and Fiction, pg. 75
           value: Thule City
-          page: 75
     satellite:
       - name:
-          source: 25YAF
+          source: 25 Years of Art and Fiction, pg. 75
           value: Ultima
-          page: 75
         size: large
         icon: rock16
     event:
@@ -153,18 +148,6 @@ planet:
             - PoR
       - date: '2340-01-01'
         population: 9800825.0
-      - date: '2341-01-01'
-        # administration: DC | Principality of Rasalhague
-        # administration: DC | Principality of Rasalhague
-        # administration: DC | Principality of Rasalhague
-        # administration: DC | Principality of Rasalhague
-        # administration: DC | Principality of Rasalhague
-        # administration: DC | Principality of Rasalhague
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - DC
       - date: '2350-01-01'
         population: 13121285.0
       - date: '2354-01-31'
@@ -175,18 +158,6 @@ planet:
             - DC
       - date: '2360-01-01'
         population: 16898323.0
-      - date: '2366-01-01'
-        # administration: DC | Principality of Rasalhague
-        # administration: DC | Principality of Rasalhague
-        # administration: DC | Principality of Rasalhague
-        # administration: DC | Principality of Rasalhague
-        # administration: DC | Principality of Rasalhague
-        # administration: DC | Principality of Rasalhague
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - DC
       - date: '2367-10-31'
         faction:
           source: canon
@@ -221,12 +192,6 @@ planet:
       - date: '2500-01-01'
         population: 79557925.0
       - date: '2510-09-28'
-        # administration: DC | Rasalhague Military District | Trondheim Prefecture
-        # administration: DC | Rasalhague Military District | Trondheim Prefecture
-        # administration: DC | Rasalhague Military District | Trondheim Prefecture
-        # administration: DC | Rasalhague Military District | Trondheim Prefecture
-        # administration: DC | Rasalhague Military District | Trondheim Prefecture
-        # administration: DC | Rasalhague Military District | Trondheim Prefecture
         faction:
           source: canon
           value:
@@ -352,18 +317,7 @@ planet:
           value:
             - FRR
       - date: '3040-01-01'
-        # administration: FR | Rasalhague Province
-        # administration: FR | Rasalhague Province
-        # administration: FR | Rasalhague Province
-        # administration: FR | Rasalhague Province
-        # administration: FR | Rasalhague Province
-        # administration: FR | Rasalhague Province
         population: 94748160.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FR
       - date: '3042-01-01'
         socioIndustrial:
           source: canon
@@ -374,11 +328,6 @@ planet:
           value: C-B-B-C-B
       - date: '3050-01-01'
         population: 96064749.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CGB
       - date: '3050-03-01'
         faction:
           source: canon
@@ -437,12 +386,6 @@ planet:
       - date: '3102-01-01'
         socioIndustrial: C-B-B-B-B
       - date: '3103-03-13'
-        # administration: RD | Region 1
-        # administration: RD | Region 1
-        # administration: RD | Region 1
-        # administration: RD | Region 1
-        # administration: RD | Region 1
-        # administration: RD | Region 1
         faction:
           source: canon
           value:

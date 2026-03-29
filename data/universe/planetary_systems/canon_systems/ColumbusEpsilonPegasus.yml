@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,17 +16,15 @@
 # affiliated with Microsoft.
 
 id: Columbus (Epsilon Pegasus)
-sucsId: 3040
-xcood: 414.707
-ycood: 609.035
+sucsId: 3021
+xcood: 405.006
+ycood: 601.855
 spectralType:
-  source: EC
+  source: Explorer Corps, pg. 20
   value: G2V
-  page: 20
 primarySlot:
-  source: EC
+  source: Explorer Corps, pg. 20
   value: 4
-  page: 20
 event:
   - date: '2549-09-20'
     nadirCharge: yes
@@ -95,45 +93,45 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.7
     sysPos:
-      source: EC
+      source: Explorer Corps, pg. 20
       value: 4
-      page: 20
     icon: green51
     pressure:
-      source: EC
+      source: Explorer Corps, pg. 20
       value: THIN
-      page: 20
     atmosphere:
-      source: EC
+      source: Explorer Corps, pg. 20
       value: BREATHABLE
-      page: 20
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: EC
+      source: Explorer Corps, pg. 20
       value: 0.9
-      page: 20
     diameter: 13068
     density: 4.840040284046
     dayLength: 24
     yearLength: 1.2
     temperature:
-      source: EC
+      source: Explorer Corps, pg. 20
       value: 13
-      page: 20
     water: 20
     lifeForm:
-      source: EC
+      source: Explorer Corps, pg. 20
       value: MAMMAL
-      page: 20
-    desc: Columbus was settled in 2549 by deep exploration crews for the Terran Hegemony. The station continued as a send off point for explorers throughout the Star League and the facilities were eventually upgraded to include a dropship repair facility on Amor, the planets moon. The planet was abandoned in 2780, just prior to Kerensky's Exodus and remained abandoned until Comstar rediscovered the facility in 3023 and began using it as a staging base for their Explorer Corps. The facility was very small until the early 3050s when the need to find the Clan Homeworlds reignited the need for the Explorer Corps.
+    desc: Columbus was settled in 2549 by deep exploration crews for the Terran Hegemony.
+      The station continued as a send off point for explorers throughout the Star
+      League and the facilities were eventually upgraded to include a dropship repair
+      facility on Amor, the planets moon. The planet was abandoned in 2780, just prior
+      to Kerensky's Exodus and remained abandoned until Comstar rediscovered the facility
+      in 3023 and began using it as a staging base for their Explorer Corps. The facility
+      was very small until the early 3050s when the need to find the Clan Homeworlds
+      reignited the need for the Explorer Corps.
     landmass:
       - name: 1ZT1
       - name: 1ZT0
     satellite:
       - name:
-          source: EC
+          source: Explorer Corps, pg. 20
           value: Amor
-          page: 20
         size: large
         icon: rock12
     event:
@@ -144,12 +142,6 @@ planet:
             - TH
         population: 1742.0
         socioIndustrial: B-X-X-X-X
-      - date: '2750-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - SL
       - date: '2765-03-09'
         faction:
           source: canon
@@ -158,18 +150,6 @@ planet:
         hpg: X
         population: 0.0
         socioIndustrial: X-X-X-X-X
-      - date: '2767-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - SL
-      - date: '2783-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - ABN
       - date: '3023-09-29'
         faction:
           source: canon
@@ -178,12 +158,6 @@ planet:
         hpg: A
         population: 1346.0
         socioIndustrial: B-X-X-X-X
-      - date: '3075-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - ABN
       - date: '3151-01-01'
         faction:
           source: sucs

@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -20,10 +20,10 @@ sucsId: 813
 xcood: 18.35
 ycood: -21.248
 spectralType:
-  source: DA:RW
+  source: MWDA world profiles
   value: K2IV
 primarySlot:
-  source: DA:RW
+  source: MWDA world profiles
   value: 4
 event:
   - date: '2351-10-29'
@@ -49,7 +49,8 @@ planet:
     icon: barren12
     pressure: THIN
     atmosphere: TOXIC_POISON
-    composition: Carbon Dioxide and Nitrogen, plus trace amounts of Nitrous Oxide and Argon
+    composition: Carbon Dioxide and Nitrogen, plus trace amounts of Nitrous Oxide
+      and Argon
     gravity: 0.59
     diameter: 6500
     density: 6.3337
@@ -80,47 +81,64 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 1.12
     sysPos:
-      source: DA:RW
+      source: MWDA world profiles
       value: 4
     icon: wet1
     pressure:
-      source: DA:RW
+      source: MWDA world profiles
       value: STANDARD
     atmosphere:
-      source: DA:RW
+      source: MWDA world profiles
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: DA:RW
+      source: MWDA world profiles
       value: 1.06
     diameter: 15318
     density: 4.863000386681
     dayLength: 23
     yearLength: 1.5
     temperature:
-      source: DA:RW
+      source: MWDA world profiles
       value: 34
     water:
-      source: DA:RW
+      source: MWDA world profiles
       value: 83
     lifeForm:
-      source: DA:RW
+      source: MWDA world profiles
       value: MAMMAL
-    desc: 3135 - Epsilon Eridani is a pleasant world, if a bit damp. Frequent, but usually mild, rainstorms and fertile soils have transformed the southern continent of Gousha into a mix of swamplands and rainforest, yet much of the planet‘s industry, including Kressly Technologies (formerly Kressly Warworks), is based there. The northern continent of Parassus, by contrast, is drier and rockier, though hardly spared the effects of the planet‘s chronic showers. The major trading and port city of Dori sits by the large Lake Arous on Parassus, and is the center of the planet‘s commercial industry. Just 370 kilometers northwest of Dori is the planetary capital, Madison, rebuilt after the Amaris occupation, when the city—including a Star League mint that printed Capellan currencies—was virtually leveled by an orbital bombardment. Today, the largest of Epsilon Eridani‘s corporations is Kressly Technologies, whose facilities on the planet include an IndustrialMech manufacturing facility and an aerospace plant in the Goushan Highlands. The Kressly aerospace plant is actually a recent addition, built from the remains of a forgotten surface testing facility that once belonged to the long-destroyed Harvard Company. Harvard, which produced aerospace fighters in the days of the Star League, survived the League‘s destruction only to fall in the crossfire between Houses Liao and Davion during the First Succession War.
+    desc: 3135 - Epsilon Eridani is a pleasant world, if a bit damp. Frequent, but
+      usually mild, rainstorms and fertile soils have transformed the southern continent
+      of Gousha into a mix of swamplands and rainforest, yet much of the planet‘s
+      industry, including Kressly Technologies (formerly Kressly Warworks), is based
+      there. The northern continent of Parassus, by contrast, is drier and rockier,
+      though hardly spared the effects of the planet‘s chronic showers. The major
+      trading and port city of Dori sits by the large Lake Arous on Parassus, and
+      is the center of the planet‘s commercial industry. Just 370 kilometers northwest
+      of Dori is the planetary capital, Madison, rebuilt after the Amaris occupation,
+      when the city—including a Star League mint that printed Capellan currencies—was
+      virtually leveled by an orbital bombardment. Today, the largest of Epsilon Eridani‘s
+      corporations is Kressly Technologies, whose facilities on the planet include
+      an IndustrialMech manufacturing facility and an aerospace plant in the Goushan
+      Highlands. The Kressly aerospace plant is actually a recent addition, built
+      from the remains of a forgotten surface testing facility that once belonged
+      to the long-destroyed Harvard Company. Harvard, which produced aerospace fighters
+      in the days of the Star League, survived the League‘s destruction only to fall
+      in the crossfire between Houses Liao and Davion during the First Succession
+      War.
     landmass:
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Gousha
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Parassus
         capital:
-          source: ChM
+          source: Chaos March, pg. 33
           value: Madison
-          page: 33
     satellite:
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Minori
         size: medium
         icon: oddmoon3
@@ -150,12 +168,6 @@ planet:
           value:
             - TH
       - date: '2317-08-30'
-        # administration: TH | Alliance Core
-        # administration: TH | Alliance Core
-        # administration: TH | Alliance Core
-        # administration: TH | Alliance Core
-        # administration: TH | Alliance Core
-        # administration: TH | Alliance Core
         faction:
           source: canon
           value:
@@ -255,12 +267,6 @@ planet:
       - date: '2760-01-01'
         population: 2739674467.0
       - date: '2767-01-01'
-        # administration: AE | Alliance Core
-        # administration: AE | Alliance Core
-        # administration: AE | Alliance Core
-        # administration: AE | Alliance Core
-        # administration: AE | Alliance Core
-        # administration: AE | Alliance Core
         faction:
           source: canon
           value:
@@ -268,12 +274,6 @@ planet:
       - date: '2770-01-01'
         population: 2715165676.0
       - date: '2779-03-31'
-        # administration: TH | Alliance Core
-        # administration: TH | Alliance Core
-        # administration: TH | Alliance Core
-        # administration: TH | Alliance Core
-        # administration: TH | Alliance Core
-        # administration: TH | Alliance Core
         faction:
           source: canon
           value:
@@ -281,12 +281,6 @@ planet:
       - date: '2780-01-01'
         population: 2680571280.0
       - date: '2790-04-01'
-        # administration: CC | Tikonov Commonality | Region 3
-        # administration: CC | Tikonov Commonality | Region 3
-        # administration: CC | Tikonov Commonality | Region 3
-        # administration: CC | Tikonov Commonality | Region 3
-        # administration: CC | Tikonov Commonality | Region 3
-        # administration: CC | Tikonov Commonality | Region 3
         faction:
           source: canon
           value:
@@ -299,12 +293,6 @@ planet:
       - date: '2820-01-01'
         population: 2443893726.0
       - date: '2821-12-02'
-        # administration: CC | Tikonov Commonality | Region 3
-        # administration: CC | Tikonov Commonality | Region 3
-        # administration: CC | Tikonov Commonality | Region 3
-        # administration: CC | Tikonov Commonality | Region 3
-        # administration: CC | Tikonov Commonality | Region 3
-        # administration: CC | Tikonov Commonality | Region 3
         faction:
           source: canon
           value:
@@ -363,12 +351,6 @@ planet:
       - date: '3030-01-01'
         population: 2189803394.0
       - date: '3032-01-15'
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
         faction:
           source: canon
           value:
@@ -379,23 +361,11 @@ planet:
         socioIndustrial: B-B-D-B-B
       - date: '3050-01-01'
         population: 2241649021.0
-      - date: '3057-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '3057-11-01'
         faction:
           source: canon
           value:
             - CM
-      - date: '3058-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '3060-01-01'
         population: 2273252818.0
       - date: '3066-02-01'
@@ -403,12 +373,6 @@ planet:
           source: canon
           value:
             - CM
-            - WOB
-      - date: '3067-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
             - WOB
       - date: '3068-08-01'
         faction:
@@ -430,25 +394,7 @@ planet:
             - Stone
       - date: '3080-01-01'
         population: 2344592857.0
-      - date: '3081-01-01'
-        # administration: ROS | Prefecture X
-        # administration: ROS | Prefecture X
-        # administration: ROS | Prefecture X
-        # administration: ROS | Prefecture X
-        # administration: ROS | Prefecture X
-        # administration: ROS | Prefecture X
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - ROS
       - date: '3081-01-24'
-        # administration: ROS | Prefecture X
-        # administration: ROS | Prefecture X
-        # administration: ROS | Prefecture X
-        # administration: ROS | Prefecture X
-        # administration: ROS | Prefecture X
-        # administration: ROS | Prefecture X
         faction:
           source: canon
           value:
@@ -476,22 +422,10 @@ planet:
           value:
             - CC
       - date: '3151-01-01'
-        # administration: CC | Tikonov Commonality | Region 4
-        # administration: CC | Tikonov Commonality | Region 4
-        # administration: CC | Tikonov Commonality | Region 4
-        # administration: CC | Tikonov Commonality | Region 4
-        # administration: CC | Tikonov Commonality | Region 4
-        # administration: CC | Tikonov Commonality | Region 4
         faction:
           source: sucs
           value:
             - CC
-      - date: '3152-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - 3SL
   - name: Corticeiro de Cima
     type: DWARF_TERRESTRIAL
     orbitalDist: 1.96
@@ -541,7 +475,8 @@ planet:
     icon: barren21
     pressure: HIGH
     atmosphere: TOXIC_CAUSTIC
-    composition: Nitrogen and Ammonia, plus trace amounts of Carbon Dioxide and Hydrochloric Acid
+    composition: Nitrogen and Ammonia, plus trace amounts of Carbon Dioxide and Hydrochloric
+      Acid
     gravity: 0.22
     diameter: 4500
     density: 3.5

@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Valencia
-sucsId: 3143
+sucsId: 2980
 xcood: -708.323
 ycood: 1123.766
 spectralType: G1V
@@ -29,7 +29,8 @@ planet:
     icon: barren11
     pressure: STANDARD
     atmosphere: TOXIC_POISON
-    composition: Carbon Dioxide and Ammonia, plus trace amounts of Methane and Water Vapor
+    composition: Carbon Dioxide and Ammonia, plus trace amounts of Methane and Water
+      Vapor
     gravity: 0.62
     diameter: 12500
     density: 3.5
@@ -175,12 +176,6 @@ planet:
         population: 978078.0
       - date: '2860-01-01'
         population: 992305.0
-      - date: '2864-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - NC/UC
       - date: '2870-01-01'
         population: 980057.0
       - date: '2880-01-01'
@@ -223,12 +218,6 @@ planet:
         socioIndustrial: F-F-C-C-F
       - date: '3050-01-01'
         population: 508018.0
-      - date: '3059-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - NC
       - date: '3060-01-01'
         population: 513535.0
       - date: '3070-01-01'
@@ -236,12 +225,6 @@ planet:
       - date: '3080-01-01'
         population: 527800.0
       - date: '3080-01-23'
-        # administration: CEI | National Capital
-        # administration: CEI | National Capital
-        # administration: CEI | National Capital
-        # administration: CEI | National Capital
-        # administration: CEI | National Capital
-        # administration: CEI | National Capital
         faction:
           source: canon
           value:
@@ -261,18 +244,7 @@ planet:
       - date: '3140-01-01'
         population: 578199.0
       - date: '3145-01-01'
-        # administration: SE | National Capital
-        # administration: SE | National Capital
-        # administration: SE | National Capital
-        # administration: SE | National Capital
-        # administration: SE | National Capital
-        # administration: SE | National Capital
         population: 583426.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - SE
   - name: IHH1 Belt
     type: ASTEROID_BELT
     orbitalDist: 1.6

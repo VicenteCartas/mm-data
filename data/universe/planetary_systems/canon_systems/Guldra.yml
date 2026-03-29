@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Guldra
-sucsId: 1018
+sucsId: 1017
 xcood: 114.417
 ycood: -461.156
 spectralType:
@@ -128,12 +128,6 @@ planet:
       - name: Tompkins
     event:
       - date: '2628-01-06'
-        # administration: TC | Brinton Union
-        # administration: TC | Brinton Union
-        # administration: TC | Brinton Union
-        # administration: TC | Brinton Union
-        # administration: TC | Brinton Union
-        # administration: TC | Brinton Union
         faction:
           source: canon
           value:
@@ -188,18 +182,6 @@ planet:
           source: canon
           value:
             - IND
-      - date: '2821-01-01'
-        # administration: TC | Brinton Union
-        # administration: TC | Brinton Union
-        # administration: TC | Brinton Union
-        # administration: TC | Brinton Union
-        # administration: TC | Brinton Union
-        # administration: TC | Brinton Union
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - TC
       - date: '2910-01-01'
         faction:
           source: canon
@@ -210,12 +192,6 @@ planet:
           source: This is the earliest the directorate could have taken over
           value:
             - ARD
-      - date: '3025-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - ARC
       - date: '3025-07-01'
         faction:
           source: assumption
@@ -233,24 +209,11 @@ planet:
         socioIndustrial:
           source: canon
           value: C-C-A-B-A
-      - date: '3030-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - ABN
       - date: '3151-01-01'
         faction:
           source: sucs
           value:
             - ABN
-      - date: '3152-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
-    desc: The ancestral home of House Madeira, Guldra is the most Earth-like planet in the Aurigan region. Rich fields and a successful agricultural industry made it a major agritech center, exporting everything from genemod seeds to tractor designs. The Inner Sphere and ComStar believed it a dead world for centuries after the destruction of its HPG, even as it grew to become one of the most populous planets in the region. In the untouched southern hemisphere, tree-dwelling mammalian species exhibit pre-sapient behaviors including complex learned tool usage.
   - name: Morán
     type: GAS_GIANT
     orbitalDist: 7.28

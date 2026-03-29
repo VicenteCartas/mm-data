@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,17 +16,15 @@
 # affiliated with Microsoft.
 
 id: New Syrtis
-sucsId: 1855
+sucsId: 1854
 xcood: 231.063
 ycood: -296.899
 spectralType:
-  source: M&M
+  source: Masters and Minions, pg. 43
   value: K5IV
-  page: 43
 primarySlot:
-  source: M&M
+  source: Masters and Minions, pg. 43
   value: 4
-  page: 43
 event:
   - date: '2382-01-14'
     zenithCharge: yes
@@ -92,39 +90,32 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.49
     sysPos:
-      source: M&M
+      source: Masters and Minions, pg. 43
       value: 4
-      page: 43
     icon: green38
     pressure:
-      source: M&M
+      source: Masters and Minions, pg. 43
       value: STANDARD
-      page: 43
     atmosphere:
-      source: M&M
+      source: Masters and Minions, pg. 43
       value: BREATHABLE
-      page: 43
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: M&M
+      source: Masters and Minions, pg. 43
       value: 1.0
-      page: 43
     diameter: 11247
     density: 6.248630032039
     dayLength: 18
     yearLength: 0.9
     temperature:
-      source: M&M
+      source: Masters and Minions, pg. 43
       value: 35
-      page: 43
     water:
-      source: M&M
+      source: Masters and Minions, pg. 43
       value: 50
-      page: 43
     lifeForm:
-      source: M&M
+      source: Masters and Minions, pg. 43
       value: PLANT
-      page: 43
     desc: |-
       New Syrtis is an icy world trapped in an ice age with only a thin equatorial band capable of comfortably supporting human life. The planet was originally settled in order to mine the many deposits of natural metals and minerals. The planet’s mining efforts were tightly regulated and heavy industry grew on planet to make use of the mined materials and New Syrtis became an important source of military manufacturing in the region.
 
@@ -133,18 +124,15 @@ planet:
       New Syrtis Shipyards
     landmass:
       - name:
-          source: 'HB:HD'
+          source: 'Handbook: House Davion, pg. 89'
           value: Mawreddog
-          page: 89
         capital:
-          source: M&M
+          source: Masters and Minions, pg. 43
           value: Saso
-          page: 43
     satellite:
       - name:
-          source: M&M
+          source: Masters and Minions, pg. 43
           value: Varnay's Star
-          page: 43
         size: large
         icon: rock1
     event:
@@ -181,12 +169,6 @@ planet:
         population: 23147382.0
       - date: '2360-01-01'
         population: 33049481.0
-      - date: '2366-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '2370-01-01'
         population: 45046631.0
       - date: '2380-01-01'
@@ -231,18 +213,6 @@ planet:
         population: 272380791.0
       - date: '2570-01-01'
         population: 276827363.0
-      - date: '2571-01-01'
-        # administration: FS | Capellan March | Taygeta Operational Area
-        # administration: FS | Capellan March | Taygeta Operational Area
-        # administration: FS | Capellan March | Taygeta Operational Area
-        # administration: FS | Capellan March | Taygeta Operational Area
-        # administration: FS | Capellan March | Taygeta Operational Area
-        # administration: FS | Capellan March | Taygeta Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FS
       - date: '2580-01-01'
         population: 279252943.0
       - date: '2590-01-01'
@@ -343,30 +313,12 @@ planet:
         population: 249572687.0
       - date: '3030-01-01'
         population: 250458005.0
-      - date: '3040-01-01'
-        # administration: FC | Capellan March | Taygeta Operational Area
-        # administration: FC | Capellan March | Taygeta Operational Area
-        # administration: FC | Capellan March | Taygeta Operational Area
-        # administration: FC | Capellan March | Taygeta Operational Area
-        # administration: FC | Capellan March | Taygeta Operational Area
-        # administration: FC | Capellan March | Taygeta Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FC
       - date: '3040-03-17'
         population: 252722301.0
         socioIndustrial:
           source: canon
           value: B-B-C-B-D
       - date: '3040-01-19'
-        # administration: FC | Capellan March | Taygeta Operational Area
-        # administration: FC | Capellan March | Taygeta Operational Area
-        # administration: FC | Capellan March | Taygeta Operational Area
-        # administration: FC | Capellan March | Taygeta Operational Area
-        # administration: FC | Capellan March | Taygeta Operational Area
-        # administration: FC | Capellan March | Taygeta Operational Area
         faction:
           source: canon
           value:
@@ -380,27 +332,10 @@ planet:
       - date: '3060-01-01'
         population: 257029602.0
       - date: '3067-01-01'
-        # administration: FS | Capellan March | Taygeta Operational Area
-        # administration: FS | Capellan March | Taygeta Operational Area
-        # administration: FS | Capellan March | Taygeta Operational Area
-        # administration: FS | Capellan March | Taygeta Operational Area
-        # administration: FS | Capellan March | Taygeta Operational Area
-        # administration: FS | Capellan March | Taygeta Operational Area
         population:
           source: canon
           value: 258654000.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FS
       - date: '3067-04-20'
-        # administration: FS | Capellan March | Taygeta Operational Area
-        # administration: FS | Capellan March | Taygeta Operational Area
-        # administration: FS | Capellan March | Taygeta Operational Area
-        # administration: FS | Capellan March | Taygeta Operational Area
-        # administration: FS | Capellan March | Taygeta Operational Area
-        # administration: FS | Capellan March | Taygeta Operational Area
         faction:
           source: canon
           value:
@@ -430,18 +365,6 @@ planet:
           value: X
       - date: '3140-01-01'
         population: 261726093.0
-      - date: '3145-01-01'
-        # administration: CC | Sian Commonality | Region 13
-        # administration: CC | Sian Commonality | Region 13
-        # administration: CC | Sian Commonality | Region 13
-        # administration: CC | Sian Commonality | Region 13
-        # administration: CC | Sian Commonality | Region 13
-        # administration: CC | Sian Commonality | Region 13
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CC
       - date: '3145-09-25'
         faction:
           source: canon
@@ -454,12 +377,6 @@ planet:
           value:
             - FS
       - date: '3151-01-01'
-        # administration: FS | Capellan March | Sirdar Operational Area
-        # administration: FS | Capellan March | Sirdar Operational Area
-        # administration: FS | Capellan March | Sirdar Operational Area
-        # administration: FS | Capellan March | Sirdar Operational Area
-        # administration: FS | Capellan March | Sirdar Operational Area
-        # administration: FS | Capellan March | Sirdar Operational Area
         faction:
           source: sucs
           value:

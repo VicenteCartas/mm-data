@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -20,13 +20,11 @@ sucsId: 508
 xcood: -369.902
 ycood: -81.213
 spectralType:
-  source: 'HB:HM'
+  source: 'Handbook: House Marik, pg. 75'
   value: G0III
-  page: 75
 primarySlot:
-  source: 'HB:HM'
+  source: 'Handbook: House Marik, pg. 75'
   value: 3
-  page: 75
 planet:
   - name: El Loa
     type: TERRESTRIAL
@@ -63,73 +61,59 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 1.76
     sysPos:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 75'
       value: 3
-      page: 75
     icon: green30
     pressure:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 75'
       value: STANDARD
-      page: 75
     atmosphere:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 75'
       value: BREATHABLE
-      page: 75
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 75'
       value: 1.05
-      page: 75
     diameter: 11208
     density: 6.583667122895
     dayLength: 17
     yearLength: 2.6
     temperature:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 75'
       value: 47
-      page: 75
     water:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 75'
       value: 35
-      page: 75
     lifeForm:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 75'
       value: MAMMAL
-      page: 75
     desc: |-
       Cerillos is a dry and dusty world on the edge of the Free Worlds League. The planet is part of the unofficial 'Trinity' province along with Galisteo and Sierra. Most of the inhabitants of the three worlds descend from hispanic and indian populations of southwestern North America.
 
       Like the other Trinity worlds, Cerillos' primary industry is farming. Both agriculture and ranching are common on Cerillos, however the lack of wealth on the Trinity worlds makes military service both a likely and respected choice for the natives of the Trinity worlds.
     landmass:
       - name:
-          source: 'HB:HM'
+          source: 'Handbook: House Marik, pg. 75'
           value: Alamogrodo
-          page: 75
       - name:
-          source: 'HB:HM'
+          source: 'Handbook: House Marik, pg. 75'
           value: Las Cruces
-          page: 75
         capital:
-          source: 'HB:HM'
+          source: 'Handbook: House Marik, pg. 75'
           value: Puerto Cortés
-          page: 75
       - name:
-          source: 'HB:HM'
+          source: 'Handbook: House Marik, pg. 75'
           value: Mazatlán
-          page: 75
       - name:
-          source: 'HB:HM'
+          source: 'Handbook: House Marik, pg. 75'
           value: San Clemente
-          page: 75
       - name:
-          source: 'HB:HM'
+          source: 'Handbook: House Marik, pg. 75'
           value: Santa Rosa
-          page: 75
     satellite:
       - name:
-          source: 'HB:HM'
+          source: 'Handbook: House Marik, pg. 75'
           value: Blanca
-          page: 75
         size: large
         icon: rock2
     event:
@@ -300,12 +284,6 @@ planet:
           value: 550250000.0
       - date: '3070-01-01'
         population: 551682511.0
-      - date: '3079-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - DTA
       - date: '3079-02-06'
         faction:
           source: canon
@@ -322,12 +300,6 @@ planet:
       - date: '3110-01-01'
         population: 584509317.0
       - date: '3120-10-26'
-        # administration: LA | Bolan Province | Cavanaugh Theater
-        # administration: LA | Bolan Province | Cavanaugh Theater
-        # administration: LA | Bolan Province | Cavanaugh Theater
-        # administration: LA | Bolan Province | Cavanaugh Theater
-        # administration: LA | Bolan Province | Cavanaugh Theater
-        # administration: LA | Bolan Province | Cavanaugh Theater
         faction:
           source: canon
           value:
@@ -341,18 +313,6 @@ planet:
           value: X
       - date: '3140-01-01'
         population: 614232008.0
-      - date: '3145-01-01'
-        # administration: FWL | Duchy of Tammarind-Abbey
-        # administration: FWL | Duchy of Tammarind-Abbey
-        # administration: FWL | Duchy of Tammarind-Abbey
-        # administration: FWL | Duchy of Tammarind-Abbey
-        # administration: FWL | Duchy of Tammarind-Abbey
-        # administration: FWL | Duchy of Tammarind-Abbey
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FWL
       - date: '3145-10-29'
         faction:
           source: canon
@@ -360,12 +320,6 @@ planet:
             - DTA
         population: 619165572.0
       - date: '3151-01-01'
-        # administration: FWL | Duchy of Tammarind-Abbey
-        # administration: FWL | Duchy of Tammarind-Abbey
-        # administration: FWL | Duchy of Tammarind-Abbey
-        # administration: FWL | Duchy of Tammarind-Abbey
-        # administration: FWL | Duchy of Tammarind-Abbey
-        # administration: FWL | Duchy of Tammarind-Abbey
         faction:
           source: sucs
           value:

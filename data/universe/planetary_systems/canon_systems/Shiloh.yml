@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,17 +16,15 @@
 # affiliated with Microsoft.
 
 id: Shiloh
-sucsId: 2309
+sucsId: 2308
 xcood: -88.149
 ycood: -4.964
 spectralType:
-  source: 'HB:HM'
+  source: 'Handbook: House Marik, pg. 72'
   value: A8V
-  page: 72
 primarySlot:
-  source: 'HB:HM'
+  source: 'Handbook: House Marik, pg. 72'
   value: 4
-  page: 72
 event:
   - date: '2389-02-14'
     zenithCharge: yes
@@ -87,39 +85,32 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 2.88
     sysPos:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 72'
       value: 4
-      page: 72
     icon: dry24
     pressure:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 72'
       value: STANDARD
-      page: 72
     atmosphere:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 72'
       value: BREATHABLE
-      page: 72
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 72'
       value: 1.11
-      page: 72
     diameter: 12447
     density: 6.266899690524
     dayLength: 24
     yearLength: 5.1
     temperature:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 72'
       value: 55
-      page: 72
     water:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 72'
       value: 15
-      page: 72
     lifeForm:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 72'
       value: PLANT
-      page: 72
     desc: |-
       Shiloh is a harsh and desolate planet and is home to the Exituri, an anti-technology cult. The planet was first colonized in 2138 and has changed little since the earliest days. The land is tiled by oxen and plows and the planet actively shuns modern conveniences and technologies. Aside from a tightly controlled Spaceport, the population of Shiloh has limited connection to the rest of the Inner Sphere. The planet has the highest birthrate in the Free Worlds League, however this is offset by the high rate of childhood mortality due to the lack of modern medicine. The planet’s primary exports are wood and bone carvings, textiles and metal works.
 
@@ -127,9 +118,8 @@ planet:
     smallMoons: 2
     landmass:
       - capital:
-          source: 'HB:HM'
+          source: 'Handbook: House Marik, pg. 72'
           value: Vedic
-          page: 72
     event:
       - date: '2215-05-30'
         faction:
@@ -165,12 +155,6 @@ planet:
       - date: '2340-01-01'
         population: 544273.0
       - date: '2341-11-16'
-        # administration: LA | Federation of Skye
-        # administration: LA | Federation of Skye
-        # administration: LA | Federation of Skye
-        # administration: LA | Federation of Skye
-        # administration: LA | Federation of Skye
-        # administration: LA | Federation of Skye
         faction:
           source: canon
           value:
@@ -277,12 +261,6 @@ planet:
         population: 1401453.0
       - date: '2820-01-01'
         population: 1356978.0
-      - date: '2821-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FWL
       - date: '2821-07-24'
         faction:
           source: canon
@@ -296,18 +274,6 @@ planet:
         population: 1286285.0
       - date: '2860-01-01'
         population: 1254382.0
-      - date: '2864-01-01'
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LA
       - date: '2864-10-14'
         faction:
           source: canon
@@ -328,12 +294,6 @@ planet:
       - date: '2910-01-01'
         population: 1047777.0
       - date: '2917-05-16'
-        # administration: FWL | Silver Hawks Coalition
-        # administration: FWL | Silver Hawks Coalition
-        # administration: FWL | Silver Hawks Coalition
-        # administration: FWL | Silver Hawks Coalition
-        # administration: FWL | Silver Hawks Coalition
-        # administration: FWL | Silver Hawks Coalition
         faction:
           source: canon
           value:
@@ -380,12 +340,6 @@ planet:
         population:
           source: canon
           value: 1000000.0
-      - date: '3068-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - WOB
       - date: '3068-07-25'
         faction:
           source: canon
@@ -408,25 +362,7 @@ planet:
             - Stone
       - date: '3080-01-01'
         population: 1008234.0
-      - date: '3081-01-01'
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - ROS
       - date: '3081-10-24'
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
         faction:
           source: canon
           value:
@@ -447,12 +383,6 @@ planet:
         hpg:
           source: canon
           value: X
-      - date: '3135-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '3135-09-01'
         faction:
           source: canon
@@ -465,12 +395,6 @@ planet:
             - IND
       - date: '3140-01-01'
         population: 1098999.0
-      - date: '3145-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CWE
       - date: '3145-09-23'
         faction:
           source: canon

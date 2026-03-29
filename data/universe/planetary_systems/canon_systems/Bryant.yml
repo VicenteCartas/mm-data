@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -20,13 +20,11 @@ sucsId: 410
 xcood: 13.177
 ycood: -13.229
 spectralType:
-  source: SLSB
+  source: Star League, pg. 170
   value: F5IV
-  page: 170
 primarySlot:
-  source: SLSB
+  source: Star League, pg. 170
   value: 4
-  page: 170
 event:
   - date: '2399-08-15'
     nadirCharge: yes
@@ -86,58 +84,77 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 3.92
     sysPos:
-      source: SLSB
+      source: Star League, pg. 170
       value: 4
-      page: 170
     icon: green24
     pressure:
-      source: DA:RW
+      source: MWDA world profiles
       value: STANDARD
     atmosphere:
-      source: DA:RW
+      source: MWDA world profiles
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: DA:RW
+      source: MWDA world profiles
       value: 0.98
     diameter: 10858
     density: 6.342636889664
     dayLength: 26
     yearLength: 7.9
     temperature:
-      source: DA:RW
+      source: MWDA world profiles
       value: 37
     water:
-      source: DA:RW
+      source: MWDA world profiles
       value: 64
     lifeForm:
-      source: SLSB
+      source: Star League, pg. 170
       value: MAMMAL
-      page: 170
-    desc: A world of violent storms, first colonized in the twenty-second century by the Terran Hegemony to exploit its chemical and mechanical resources, fertile soils, and deep seas, Bryant‘s early colonists kept close to the polar regions, where the weather was calmer. In the days of the Star League, a series of storm inhibitors were used to negate much of the fury of severe weather systems by focusing solar radiation on the storms as they gathered over the planet‘s oceans. This innovation made possible the colonization of Bryant‘s lower latitudes, but during the Amaris crisis and the Succession Wars most of these storm inhibitors were destroyed. The populace was driven back to the calmer Polar Regions once more, leaving behind entire Star League-era cities, rumored to still contain the treasures of mankind‘s Golden Age, even today. The Capellan Confederation, which inherited Bryant after the League‘s fall, used it as a prison planet for a few decades before the Federated Suns took the world in the Fourth Succession War. During the Jihad, the Word of Blake used Bryant as a staging ground for strikes against nearby worlds, using some of the more marginal settlements on the edges of the stormy zones for their on-planet outposts. Today, Bryant‘s population remains confined to the polar continents of Altario in the north and Zephyrim in the south, which is also home to the planetary capital of Brein. The larger landmasses of Voltanasia and Tomainisia, which both cross the equatorial region of Bryant, are home now only to empty Star League-era cities, former Capellan maximum-security prisons, and the planet‘s hardier native flora and fauna.
+    desc: A world of violent storms, first colonized in the twenty-second century
+      by the Terran Hegemony to exploit its chemical and mechanical resources, fertile
+      soils, and deep seas, Bryant‘s early colonists kept close to the polar regions,
+      where the weather was calmer. In the days of the Star League, a series of storm
+      inhibitors were used to negate much of the fury of severe weather systems by
+      focusing solar radiation on the storms as they gathered over the planet‘s oceans.
+      This innovation made possible the colonization of Bryant‘s lower latitudes,
+      but during the Amaris crisis and the Succession Wars most of these storm inhibitors
+      were destroyed. The populace was driven back to the calmer Polar Regions once
+      more, leaving behind entire Star League-era cities, rumored to still contain
+      the treasures of mankind‘s Golden Age, even today. The Capellan Confederation,
+      which inherited Bryant after the League‘s fall, used it as a prison planet for
+      a few decades before the Federated Suns took the world in the Fourth Succession
+      War. During the Jihad, the Word of Blake used Bryant as a staging ground for
+      strikes against nearby worlds, using some of the more marginal settlements on
+      the edges of the stormy zones for their on-planet outposts. Today, Bryant‘s
+      population remains confined to the polar continents of Altario in the north
+      and Zephyrim in the south, which is also home to the planetary capital of Brein.
+      The larger landmasses of Voltanasia and Tomainisia, which both cross the equatorial
+      region of Bryant, are home now only to empty Star League-era cities, former
+      Capellan maximum-security prisons, and the planet‘s hardier native flora and
+      fauna.
     landmass:
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Altario
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Zephyrim
         capital:
-          source: DA:RW
+          source: MWDA world profiles
           value: Brein
     satellite:
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Jarra
         size: large
         icon: rock14
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Sennu
         size: large
         icon: rock12
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Summersdale
         size: medium
         icon: oddmoon2
@@ -157,24 +174,12 @@ planet:
         population: 396588.0
       - date: '2310-01-01'
         population: 669452.0
-      - date: '2317-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - TH
       - date: '2317-05-09'
         faction:
           source: canon
           value:
             - TH
       - date: '2320-08-08'
-        # administration: TH | Alliance Core
-        # administration: TH | Alliance Core
-        # administration: TH | Alliance Core
-        # administration: TH | Alliance Core
-        # administration: TH | Alliance Core
-        # administration: TH | Alliance Core
         faction:
           source: canon
           value:
@@ -279,18 +284,6 @@ planet:
         population: 22683712.0
       - date: '2760-01-01'
         population: 22903881.0
-      - date: '2767-01-01'
-        # administration: AE | Alliance Core
-        # administration: AE | Alliance Core
-        # administration: AE | Alliance Core
-        # administration: AE | Alliance Core
-        # administration: AE | Alliance Core
-        # administration: AE | Alliance Core
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - AE
       - date: '2767-05-16'
         faction:
           source: canon
@@ -300,12 +293,6 @@ planet:
       - date: '2770-01-01'
         population: 21785808.0
       - date: '2779-08-20'
-        # administration: TH | Alliance Core
-        # administration: TH | Alliance Core
-        # administration: TH | Alliance Core
-        # administration: TH | Alliance Core
-        # administration: TH | Alliance Core
-        # administration: TH | Alliance Core
         faction:
           source: canon
           value:
@@ -313,12 +300,6 @@ planet:
       - date: '2780-01-01'
         population: 18939533.0
       - date: '2790-04-06'
-        # administration: CC | Tikonov Commonality | Region 1
-        # administration: CC | Tikonov Commonality | Region 1
-        # administration: CC | Tikonov Commonality | Region 1
-        # administration: CC | Tikonov Commonality | Region 1
-        # administration: CC | Tikonov Commonality | Region 1
-        # administration: CC | Tikonov Commonality | Region 1
         faction:
           source: canon
           value:
@@ -331,12 +312,6 @@ planet:
       - date: '2820-01-01'
         population: 7091558.0
       - date: '2821-12-09'
-        # administration: CC | Tikonov Commonality | Region 1
-        # administration: CC | Tikonov Commonality | Region 1
-        # administration: CC | Tikonov Commonality | Region 1
-        # administration: CC | Tikonov Commonality | Region 1
-        # administration: CC | Tikonov Commonality | Region 1
-        # administration: CC | Tikonov Commonality | Region 1
         faction:
           source: canon
           value:
@@ -399,12 +374,6 @@ planet:
       - date: '3030-01-01'
         population: 254211.0
       - date: '3032-03-11'
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
         faction:
           source: canon
           value:
@@ -415,23 +384,11 @@ planet:
         socioIndustrial: A-B-C-B-D
       - date: '3050-01-01'
         population: 19946281.0
-      - date: '3057-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '3057-11-01'
         faction:
           source: canon
           value:
             - CM
-      - date: '3058-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '3060-01-01'
         population: 258481059.0
       - date: '3066-02-01'
@@ -454,25 +411,7 @@ planet:
             - Stone
       - date: '3080-01-01'
         population: 2682017836.0
-      - date: '3081-01-01'
-        # administration: ROS | Prefecture X
-        # administration: ROS | Prefecture X
-        # administration: ROS | Prefecture X
-        # administration: ROS | Prefecture X
-        # administration: ROS | Prefecture X
-        # administration: ROS | Prefecture X
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - ROS
       - date: '3081-08-24'
-        # administration: ROS | Prefecture X
-        # administration: ROS | Prefecture X
-        # administration: ROS | Prefecture X
-        # administration: ROS | Prefecture X
-        # administration: ROS | Prefecture X
-        # administration: ROS | Prefecture X
         faction:
           source: canon
           value:
@@ -503,22 +442,10 @@ planet:
           value:
             - CC
       - date: '3151-01-01'
-        # administration: CC | Tikonov Commonality | Region 1
-        # administration: CC | Tikonov Commonality | Region 1
-        # administration: CC | Tikonov Commonality | Region 1
-        # administration: CC | Tikonov Commonality | Region 1
-        # administration: CC | Tikonov Commonality | Region 1
-        # administration: CC | Tikonov Commonality | Region 1
         faction:
           source: sucs
           value:
             - CC
-      - date: '3152-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - 3SL
   - name: Benzai
     type: DWARF_TERRESTRIAL
     orbitalDist: 2.24

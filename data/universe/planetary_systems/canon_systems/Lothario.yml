@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,17 +16,15 @@
 # affiliated with Microsoft.
 
 id: Lothario
-sucsId: 1523
+sucsId: 1522
 xcood: -474.391
 ycood: -185.731
 spectralType:
-  source: 'HB:MPS'
+  source: 'Handbook: Major Periphery States, pg. 166'
   value: M3III
-  page: 166
 primarySlot:
-  source: 'HB:MPS'
+  source: 'Handbook: Major Periphery States, pg. 166'
   value: 2
-  page: 166
 planet:
   - name: Hickton's End
     type: GIANT_TERRESTRIAL
@@ -55,39 +53,32 @@ planet:
     type: GIANT_TERRESTRIAL
     orbitalDist: 0.21
     sysPos:
-      source: 'HB:MPS'
+      source: 'Handbook: Major Periphery States, pg. 166'
       value: 2
-      page: 166
     icon: green9
     pressure:
-      source: 'HB:MPS'
+      source: 'Handbook: Major Periphery States, pg. 166'
       value: STANDARD
-      page: 166
     atmosphere:
-      source: 'HB:MPS'
+      source: 'Handbook: Major Periphery States, pg. 166'
       value: BREATHABLE
-      page: 166
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'HB:MPS'
+      source: 'Handbook: Major Periphery States, pg. 166'
       value: 1.1
-      page: 166
     diameter: 12210
     density: 6.331253777429
     dayLength: 10
     yearLength: 0.6
     temperature:
-      source: 'HB:MPS'
+      source: 'Handbook: Major Periphery States, pg. 166'
       value: 20
-      page: 166
     water:
-      source: 'HB:MPS'
+      source: 'Handbook: Major Periphery States, pg. 166'
       value: 70
-      page: 166
     lifeForm:
-      source: 'HB:MPS'
+      source: 'Handbook: Major Periphery States, pg. 166'
       value: MAMMAL
-      page: 166
     desc: |-
       Lothario is an ice covered planet with a thin atmosphere and beautiful auroras. The population centers on planet are all located within the marginally habitable regions along the equator and still most of the population subsides in subterranean dwellings. The primary industries and trade on Lothario are involved with mining iron and copper, and the fur trade.
 
@@ -112,9 +103,8 @@ planet:
           value: Siegfried
     satellite:
       - name:
-          source: 'HB:MPS'
+          source: 'Handbook: Major Periphery States, pg. 166'
           value: Logan
-          page: 166
         size: medium
         icon: oddmoon2
     event:
@@ -157,18 +147,6 @@ planet:
         population: 2681519.0
       - date: '2780-01-01'
         population: 2713538.0
-      - date: '2786-01-01'
-        # administration: LL | National Capital
-        # administration: LL | National Capital
-        # administration: LL | National Capital
-        # administration: LL | National Capital
-        # administration: LL | National Capital
-        # administration: LL | National Capital
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LL
       - date: '2790-01-01'
         population: 2700102.0
       - date: '2800-01-01'
@@ -178,12 +156,6 @@ planet:
       - date: '2820-01-01'
         population: 2538672.0
       - date: '2821-12-27'
-        # administration: LL | National Capital
-        # administration: LL | National Capital
-        # administration: LL | National Capital
-        # administration: LL | National Capital
-        # administration: LL | National Capital
-        # administration: LL | National Capital
         faction:
           source: canon
           value:
@@ -247,12 +219,6 @@ planet:
       - date: '3050-01-01'
         population: 2357822.0
       - date: '3055-07-19'
-        # administration: MH | Lothian District | District Capital
-        # administration: MH | Lothian District | District Capital
-        # administration: MH | Lothian District | District Capital
-        # administration: MH | Lothian District | District Capital
-        # administration: MH | Lothian District | District Capital
-        # administration: MH | Lothian District | District Capital
         faction:
           source: canon
           value:
@@ -273,25 +239,7 @@ planet:
         population: 2582447.0
       - date: '3090-01-01'
         population: 2601108.0
-      - date: '3095-01-01'
-        # administration: LL | National Capital
-        # administration: LL | National Capital
-        # administration: LL | National Capital
-        # administration: LL | National Capital
-        # administration: LL | National Capital
-        # administration: LL | National Capital
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LL
       - date: '3100-01-19'
-        # administration: LL | National Capital
-        # administration: LL | National Capital
-        # administration: LL | National Capital
-        # administration: LL | National Capital
-        # administration: LL | National Capital
-        # administration: LL | National Capital
         faction:
           source: canon
           value:

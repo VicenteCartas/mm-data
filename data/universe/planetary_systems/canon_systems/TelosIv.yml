@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: Telos IV
-sucsId: 2512
+sucsId: 2511
 xcood: 43.942
 ycood: 40.273
 spectralType:
-  source: DA:RW
+  source: MWDA world profiles
   value: K7IV
 primarySlot:
-  source: DA:RW
+  source: MWDA world profiles
   value: 4
 event:
   - date: '2353-11-19'
@@ -95,52 +95,85 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.6
     sysPos:
-      source: DA:RW
+      source: MWDA world profiles
       value: 4
     icon: wet20
     pressure:
-      source: DA:RW
+      source: MWDA world profiles
       value: STANDARD
     atmosphere:
-      source: DA:RW
+      source: MWDA world profiles
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: DA:RW
+      source: MWDA world profiles
       value: 0.73
     diameter: 10277
     density: 4.991900171684
     dayLength: 26
     yearLength: 0.9
     temperature:
-      source: DA:RW
+      source: MWDA world profiles
       value: 44
     water:
-      source: DA:RW
+      source: MWDA world profiles
       value: 82
     lifeForm:
-      source: DA:RW
+      source: MWDA world profiles
       value: BIRD
-    desc: Cursed with a weak ozone layer that lets in more than the average amount of solar radiation, Telos IV is a warm, dreary world of continual rainstorms and freak tornadoes that ravage all four of its island continents in the middle latitudes. Surviving despite these hazards, the people of this world have developed a reputation for being stubborn and fiercely independent, a reputation that has caused them no small share of problems over the centuries when dealing with the greater realms. Shiro Kurita, founder of the Draconis Combine, manipulated the people of Telos IV into joining his growing state through guile and political trickery. When the deceit was discovered, the Telosians revolted, which prompted the first Coordinator to invade the planet as a demonstration of the Combine‘s superiority. In the years that followed, the population remained stubborn. Though suppressed for a time, the Kuritas found the Telosians difficult to deal with, as they resorted to passive resistance instead of outright rebellion. Since Telos IV lacked significant mineral or agricultural wealth, the Combine willingly ceded the world to the rising Terran Hegemony, hoping its dissident population would give the Camerons as much trouble as it had the Kuritas. At first, the Telosians did just that, but Hegemony efforts to improve relations with the planet, which included placing several storm inhibitors (similar to those employed on Bryant) in Telos IV‘s orbit, helped win over the locals. This amicable relationship helped during the Amaris Crisis, when the Usurper, finding little of value on Telos IV, abandoned the world after demolishing the storm inhibitors and planetary defense network. Kerensky‘s forces found support on Telos IV when they arrived and easily advanced on their campaign of liberation. Returned to Kurita rule after the fall of the League, the Telosians resumed their attitude of passive resistance, which prevented the Dragon from exploiting the planet‘s modest resources to the fullest, even centuries later. However, this attitude underwent marked improvement after the reforms enacted by Coordinator Theodore Kurita. When Telos IV was ceded to the Republic, its inhabitants had mixed feelings about the transfer and initially balked at the resettlement directives. Today, however, the warm and stormy world of Telos IV is tranquil once again, secure in the freedoms of the Terran Hegemony‘s closest successor. The capital of Telos IV, Triumph, is located on the large northern continent of Dulles. Telos IV's other three continents—Rustov on the equator and Fellin and Haranshire in the southern hemisphere—are home to a scattering of large cities and mining towns.
+    desc: Cursed with a weak ozone layer that lets in more than the average amount
+      of solar radiation, Telos IV is a warm, dreary world of continual rainstorms
+      and freak tornadoes that ravage all four of its island continents in the middle
+      latitudes. Surviving despite these hazards, the people of this world have developed
+      a reputation for being stubborn and fiercely independent, a reputation that
+      has caused them no small share of problems over the centuries when dealing with
+      the greater realms. Shiro Kurita, founder of the Draconis Combine, manipulated
+      the people of Telos IV into joining his growing state through guile and political
+      trickery. When the deceit was discovered, the Telosians revolted, which prompted
+      the first Coordinator to invade the planet as a demonstration of the Combine‘s
+      superiority. In the years that followed, the population remained stubborn. Though
+      suppressed for a time, the Kuritas found the Telosians difficult to deal with,
+      as they resorted to passive resistance instead of outright rebellion. Since
+      Telos IV lacked significant mineral or agricultural wealth, the Combine willingly
+      ceded the world to the rising Terran Hegemony, hoping its dissident population
+      would give the Camerons as much trouble as it had the Kuritas. At first, the
+      Telosians did just that, but Hegemony efforts to improve relations with the
+      planet, which included placing several storm inhibitors (similar to those employed
+      on Bryant) in Telos IV‘s orbit, helped win over the locals. This amicable relationship
+      helped during the Amaris Crisis, when the Usurper, finding little of value on
+      Telos IV, abandoned the world after demolishing the storm inhibitors and planetary
+      defense network. Kerensky‘s forces found support on Telos IV when they arrived
+      and easily advanced on their campaign of liberation. Returned to Kurita rule
+      after the fall of the League, the Telosians resumed their attitude of passive
+      resistance, which prevented the Dragon from exploiting the planet‘s modest resources
+      to the fullest, even centuries later. However, this attitude underwent marked
+      improvement after the reforms enacted by Coordinator Theodore Kurita. When Telos
+      IV was ceded to the Republic, its inhabitants had mixed feelings about the transfer
+      and initially balked at the resettlement directives. Today, however, the warm
+      and stormy world of Telos IV is tranquil once again, secure in the freedoms
+      of the Terran Hegemony‘s closest successor. The capital of Telos IV, Triumph,
+      is located on the large northern continent of Dulles. Telos IV's other three
+      continents—Rustov on the equator and Fellin and Haranshire in the southern hemisphere—are
+      home to a scattering of large cities and mining towns.
     landmass:
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Dulles
         capital:
-          source: DA:RW
+          source: MWDA world profiles
           value: Triumph
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Fellin
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Haranshire
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Rustov
     satellite:
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Sadib
         size: large
         icon: rock7
@@ -219,19 +252,7 @@ planet:
         population: 615620514.0
       - date: '2340-01-01'
         population: 717739196.0
-      - date: '2341-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - TH
       - date: '2341-06-23'
-        # administration: TH | Lone Star Province
-        # administration: TH | Lone Star Province
-        # administration: TH | Lone Star Province
-        # administration: TH | Lone Star Province
-        # administration: TH | Lone Star Province
-        # administration: TH | Lone Star Province
         faction:
           source: canon
           value:
@@ -328,18 +349,6 @@ planet:
         population: 2943103590.0
       - date: '2760-01-01'
         population: 2940604898.0
-      - date: '2767-01-01'
-        # administration: AE | Lone Star Province
-        # administration: AE | Lone Star Province
-        # administration: AE | Lone Star Province
-        # administration: AE | Lone Star Province
-        # administration: AE | Lone Star Province
-        # administration: AE | Lone Star Province
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - AE
       - date: '2767-09-24'
         faction:
           source: canon
@@ -348,12 +357,6 @@ planet:
       - date: '2770-01-01'
         population: 2931786532.0
       - date: '2779-03-09'
-        # administration: DC | Benjamin Military District | Ashio Prefecture
-        # administration: DC | Benjamin Military District | Ashio Prefecture
-        # administration: DC | Benjamin Military District | Ashio Prefecture
-        # administration: DC | Benjamin Military District | Ashio Prefecture
-        # administration: DC | Benjamin Military District | Ashio Prefecture
-        # administration: DC | Benjamin Military District | Ashio Prefecture
         faction:
           source: canon
           value:
@@ -361,12 +364,6 @@ planet:
       - date: '2780-01-01'
         population: 2922569812.0
       - date: '2790-03-25'
-        # administration: DC | Dieron Military District | Ashio Prefecture
-        # administration: DC | Dieron Military District | Ashio Prefecture
-        # administration: DC | Dieron Military District | Ashio Prefecture
-        # administration: DC | Dieron Military District | Ashio Prefecture
-        # administration: DC | Dieron Military District | Ashio Prefecture
-        # administration: DC | Dieron Military District | Ashio Prefecture
         faction:
           source: canon
           value:
@@ -454,25 +451,7 @@ planet:
             - Stone
       - date: '3080-01-01'
         population: 2811809395.0
-      - date: '3081-01-01'
-        # administration: ROS | Prefecture II
-        # administration: ROS | Prefecture II
-        # administration: ROS | Prefecture II
-        # administration: ROS | Prefecture II
-        # administration: ROS | Prefecture II
-        # administration: ROS | Prefecture II
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - ROS
       - date: '3081-05-26'
-        # administration: ROS | Prefecture II
-        # administration: ROS | Prefecture II
-        # administration: ROS | Prefecture II
-        # administration: ROS | Prefecture II
-        # administration: ROS | Prefecture II
-        # administration: ROS | Prefecture II
         faction:
           source: canon
           value:
@@ -491,25 +470,7 @@ planet:
         population: 2953019449.0
       - date: '3132-08-07'
         hpg: X
-      - date: '3135-01-01'
-        # administration: DC | Benjamin Military District | Algedi Prefecture
-        # administration: DC | Benjamin Military District | Algedi Prefecture
-        # administration: DC | Benjamin Military District | Algedi Prefecture
-        # administration: DC | Benjamin Military District | Algedi Prefecture
-        # administration: DC | Benjamin Military District | Algedi Prefecture
-        # administration: DC | Benjamin Military District | Algedi Prefecture
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - DC
       - date: '3135-09-26'
-        # administration: DC | Dieron Military District | Al Na'ir Prefecture
-        # administration: DC | Dieron Military District | Al Na'ir Prefecture
-        # administration: DC | Dieron Military District | Al Na'ir Prefecture
-        # administration: DC | Dieron Military District | Al Na'ir Prefecture
-        # administration: DC | Dieron Military District | Al Na'ir Prefecture
-        # administration: DC | Dieron Military District | Al Na'ir Prefecture
         faction:
           source: canon
           value:

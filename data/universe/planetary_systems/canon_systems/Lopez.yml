@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,16 +16,15 @@
 # affiliated with Microsoft.
 
 id: Lopez
-sucsId: 1517
+sucsId: 1516
 xcood: -37.757
 ycood: -330.395
 spectralType:
   source: canon
   value: M0V
 primarySlot:
-  source: 'HB:HM'
+  source: 'Handbook: House Marik, pg. 67'
   value: 1
-  page: 67
 event:
   - date: '2748-02-16'
     nadirCharge: yes
@@ -38,39 +37,32 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.2
     sysPos:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 67'
       value: 1
-      page: 67
     icon: green53
     pressure:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 67'
       value: STANDARD
-      page: 67
     atmosphere:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 67'
       value: TAINTED_POISON
-      page: 67
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 67'
       value: 0.85
-      page: 67
     diameter: 9982
     density: 5.98423062949
     dayLength: 22
     yearLength: 0.7
     temperature:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 67'
       value: 50
-      page: 67
     water:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 67'
       value: 25
-      page: 67
     lifeForm:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 67'
       value: REPTILE
-      page: 67
     desc: |-
       Lopez is a unique planet existing in a binary system. The fact that the planet supports life continues to baffle scientists. Due to a high amount of CO2 in the atmosphere, humans require rebreathing apparatus to walk around outside. However the unique atmosphere makes the planet’s vegetation thrive and the planet is also home to many strange native species including the dragon-like branth, which inhabit the Miyama Jungles.
 
@@ -86,17 +78,10 @@ planet:
           source: canon
           value: Puebla
         capital:
-          source: 'HB:HM'
+          source: 'Handbook: House Marik, pg. 67'
           value: Orton
-          page: 67
     event:
       - date: '2746-08-25'
-        # administration: CC | Andurien Commonality | Region 2
-        # administration: CC | Andurien Commonality | Region 2
-        # administration: CC | Andurien Commonality | Region 2
-        # administration: CC | Andurien Commonality | Region 2
-        # administration: CC | Andurien Commonality | Region 2
-        # administration: CC | Andurien Commonality | Region 2
         faction:
           source: canon
           value:
@@ -123,25 +108,7 @@ planet:
         population: 246235365.0
       - date: '2820-01-01'
         population: 409030228.0
-      - date: '2821-01-01'
-        # administration: FWL | Duchy of Andurien
-        # administration: FWL | Duchy of Andurien
-        # administration: FWL | Duchy of Andurien
-        # administration: FWL | Duchy of Andurien
-        # administration: FWL | Duchy of Andurien
-        # administration: FWL | Duchy of Andurien
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FWL
       - date: '2821-06-15'
-        # administration: FWL | Duchy of Andurien
-        # administration: FWL | Duchy of Andurien
-        # administration: FWL | Duchy of Andurien
-        # administration: FWL | Duchy of Andurien
-        # administration: FWL | Duchy of Andurien
-        # administration: FWL | Duchy of Andurien
         faction:
           source: canon
           value:
@@ -161,12 +128,6 @@ planet:
       - date: '2890-01-01'
         population: 1853227730.0
       - date: '2900-10-22'
-        # administration: FWL | Duchy of Andurien
-        # administration: FWL | Duchy of Andurien
-        # administration: FWL | Duchy of Andurien
-        # administration: FWL | Duchy of Andurien
-        # administration: FWL | Duchy of Andurien
-        # administration: FWL | Duchy of Andurien
         faction:
           source: canon
           value:
@@ -202,11 +163,6 @@ planet:
           value: 2600000000.0
       - date: '3030-01-01'
         population: 2512949763.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - DA
       - date: '3030-09-11'
         faction:
           source: canon
@@ -219,12 +175,6 @@ planet:
             - FWL
             - DA
       - date: '3038-10-21'
-        # administration: FWL | Duchy of Andurien
-        # administration: FWL | Duchy of Andurien
-        # administration: FWL | Duchy of Andurien
-        # administration: FWL | Duchy of Andurien
-        # administration: FWL | Duchy of Andurien
-        # administration: FWL | Duchy of Andurien
         faction:
           source: canon
           value:
@@ -245,12 +195,6 @@ planet:
           value: 2600500000.0
       - date: '3070-01-01'
         population: 2608313214.0
-      - date: '3075-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - DA
       - date: '3079-03-05'
         faction:
           source: canon
@@ -258,12 +202,6 @@ planet:
             - DA
       - date: '3080-01-01'
         population: 2615103652.0
-      - date: '3081-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - ABN
       - date: '3090-01-01'
         population: 2616149903.0
       - date: '3098-01-01'

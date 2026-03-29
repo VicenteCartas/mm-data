@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: Moore
-sucsId: 1754
+sucsId: 1753
 xcood: 5.683
 ycood: 64.061
 spectralType:
-  source: DA:RW
+  source: MWDA world profiles
   value: K5V
 primarySlot:
-  source: DA:RW
+  source: MWDA world profiles
   value: 3
 event:
   - date: '2360-11-10'
@@ -68,31 +68,31 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.28
     sysPos:
-      source: DA:RW
+      source: MWDA world profiles
       value: 3
     icon: wet3
     pressure:
-      source: DA:RW
+      source: MWDA world profiles
       value: STANDARD
     atmosphere:
-      source: DA:RW
+      source: MWDA world profiles
       value: TAINTED_POISON
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: DA:RW
+      source: MWDA world profiles
       value: 0.87
     diameter: 12201
     density: 5.010941455381
     dayLength: 22
     yearLength: 0.8
     temperature:
-      source: DA:RW
+      source: MWDA world profiles
       value: 35
     water:
-      source: DA:RW
+      source: MWDA world profiles
       value: 86
     lifeForm:
-      source: DA:RW
+      source: MWDA world profiles
       value: FISH
     desc: |-
       Moore is a wet world, its total landmass locked up in almost a thousand small islands and the long, thin, mountainous chain known as Serpentasia. This half-wooded, half-swampy land runs in an irregular northwest-to-southeast path across Moore‘s surface, and is home to the vast majority of the planetary population, including the capital city of Shizuoka.
@@ -103,11 +103,11 @@ planet:
       Duncan Enterprises
     landmass:
       - capital:
-          source: DA:RW
+          source: MWDA world profiles
           value: Shizuoka
     satellite:
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Zed
         size: giant
         icon: rock8
@@ -177,12 +177,6 @@ planet:
         population: 664789218.0
       - date: '2340-01-01'
         population: 754054125.0
-      - date: '2341-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '2350-01-01'
         population: 841279446.0
       - date: '2360-01-01'
@@ -245,25 +239,7 @@ planet:
             - DC
             - TH
         population: 1875945955.0
-      - date: '2571-01-01'
-        # administration: DC | Benjamin Military District | Kuzuu Prefecture
-        # administration: DC | Benjamin Military District | Kuzuu Prefecture
-        # administration: DC | Benjamin Military District | Kuzuu Prefecture
-        # administration: DC | Benjamin Military District | Kuzuu Prefecture
-        # administration: DC | Benjamin Military District | Kuzuu Prefecture
-        # administration: DC | Benjamin Military District | Kuzuu Prefecture
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - DC
       - date: '2571-09-16'
-        # administration: DC | Benjamin Military District | Kuzuu Prefecture
-        # administration: DC | Benjamin Military District | Kuzuu Prefecture
-        # administration: DC | Benjamin Military District | Kuzuu Prefecture
-        # administration: DC | Benjamin Military District | Kuzuu Prefecture
-        # administration: DC | Benjamin Military District | Kuzuu Prefecture
-        # administration: DC | Benjamin Military District | Kuzuu Prefecture
         faction:
           source: canon
           value:
@@ -310,18 +286,6 @@ planet:
         population: 1754433750.0
       - date: '2760-01-01'
         population: 1749949203.0
-      - date: '2767-01-01'
-        # administration: AE | Lone Star Province
-        # administration: AE | Lone Star Province
-        # administration: AE | Lone Star Province
-        # administration: AE | Lone Star Province
-        # administration: AE | Lone Star Province
-        # administration: AE | Lone Star Province
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - AE
       - date: '2767-08-20'
         faction:
           source: canon
@@ -330,12 +294,6 @@ planet:
       - date: '2770-01-01'
         population: 1755115100.0
       - date: '2775-01-05'
-        # administration: DC | Benjamin Military District | Kuzuu Prefecture
-        # administration: DC | Benjamin Military District | Kuzuu Prefecture
-        # administration: DC | Benjamin Military District | Kuzuu Prefecture
-        # administration: DC | Benjamin Military District | Kuzuu Prefecture
-        # administration: DC | Benjamin Military District | Kuzuu Prefecture
-        # administration: DC | Benjamin Military District | Kuzuu Prefecture
         faction:
           source: canon
           value:
@@ -350,12 +308,6 @@ planet:
       - date: '2800-01-01'
         population: 1743938872.0
       - date: '2802-11-04'
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
         faction:
           source: canon
           value:
@@ -377,12 +329,6 @@ planet:
       - date: '2870-01-01'
         population: 1704499415.0
       - date: '2880-09-05'
-        # administration: DC | Dieron Military District | Al Na'ir Prefecture
-        # administration: DC | Dieron Military District | Al Na'ir Prefecture
-        # administration: DC | Dieron Military District | Al Na'ir Prefecture
-        # administration: DC | Dieron Military District | Al Na'ir Prefecture
-        # administration: DC | Dieron Military District | Al Na'ir Prefecture
-        # administration: DC | Dieron Military District | Al Na'ir Prefecture
         faction:
           source: canon
           value:
@@ -423,25 +369,8 @@ planet:
       - date: '3031-01-01'
         socioIndustrial: B-C-D-B-C
       - date: '3040-01-01'
-        # administration: FC | Skye March | Ryde Operational Area
-        # administration: FC | Skye March | Ryde Operational Area
-        # administration: FC | Skye March | Ryde Operational Area
-        # administration: FC | Skye March | Ryde Operational Area
-        # administration: FC | Skye March | Ryde Operational Area
-        # administration: FC | Skye March | Ryde Operational Area
         population: 1429786883.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FC
       - date: '3040-01-19'
-        # administration: FC | Skye March | Ryde Operational Area
-        # administration: FC | Skye March | Ryde Operational Area
-        # administration: FC | Skye March | Ryde Operational Area
-        # administration: FC | Skye March | Ryde Operational Area
-        # administration: FC | Skye March | Ryde Operational Area
-        # administration: FC | Skye March | Ryde Operational Area
         faction:
           source: canon
           value:
@@ -450,18 +379,6 @@ planet:
         socioIndustrial: A-B-C-A-B
       - date: '3050-01-01'
         population: 1439110768.0
-      - date: '3057-01-01'
-        # administration: LA | Skye March | Ryde Operational Area
-        # administration: LA | Skye March | Ryde Operational Area
-        # administration: LA | Skye March | Ryde Operational Area
-        # administration: LA | Skye March | Ryde Operational Area
-        # administration: LA | Skye March | Ryde Operational Area
-        # administration: LA | Skye March | Ryde Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LA
       - date: '3057-09-18'
         faction:
           source: canon
@@ -473,27 +390,9 @@ planet:
           value:
             - DC
             - LA
-      - date: '3058-01-01'
-        # administration: LA | Skye Province | Freedom Theater
-        # administration: LA | Skye Province | Freedom Theater
-        # administration: LA | Skye Province | Freedom Theater
-        # administration: LA | Skye Province | Freedom Theater
-        # administration: LA | Skye Province | Freedom Theater
-        # administration: LA | Skye Province | Freedom Theater
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LA
       - date: '3060-01-01'
         population: 1447337122.0
       - date: '3062-10-15'
-        # administration: DC | Dieron Military District | Al Na'ir Prefecture
-        # administration: DC | Dieron Military District | Al Na'ir Prefecture
-        # administration: DC | Dieron Military District | Al Na'ir Prefecture
-        # administration: DC | Dieron Military District | Al Na'ir Prefecture
-        # administration: DC | Dieron Military District | Al Na'ir Prefecture
-        # administration: DC | Dieron Military District | Al Na'ir Prefecture
         faction:
           source: canon
           value:
@@ -522,25 +421,7 @@ planet:
             - Stone
       - date: '3080-01-01'
         population: 1481900522.0
-      - date: '3081-01-01'
-        # administration: ROS | Prefecture I
-        # administration: ROS | Prefecture I
-        # administration: ROS | Prefecture I
-        # administration: ROS | Prefecture I
-        # administration: ROS | Prefecture I
-        # administration: ROS | Prefecture I
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - ROS
       - date: '3081-11-05'
-        # administration: ROS | Prefecture I
-        # administration: ROS | Prefecture I
-        # administration: ROS | Prefecture I
-        # administration: ROS | Prefecture I
-        # administration: ROS | Prefecture I
-        # administration: ROS | Prefecture I
         faction:
           source: canon
           value:
@@ -559,12 +440,6 @@ planet:
         population: 1553523226.0
       - date: '3132-08-07'
         hpg: X
-      - date: '3135-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '3135-10-01'
         faction:
           source: canon
@@ -572,25 +447,7 @@ planet:
             - IND
       - date: '3140-01-01'
         population: 1572277807.0
-      - date: '3145-01-01'
-        # administration: RD | Region 3 | Vega Protectorate
-        # administration: RD | Region 3 | Vega Protectorate
-        # administration: RD | Region 3 | Vega Protectorate
-        # administration: RD | Region 3 | Vega Protectorate
-        # administration: RD | Region 3 | Vega Protectorate
-        # administration: RD | Region 3 | Vega Protectorate
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - RD
       - date: '3145-07-04'
-        # administration: RD | Region 3 | Vega Protectorate
-        # administration: RD | Region 3 | Vega Protectorate
-        # administration: RD | Region 3 | Vega Protectorate
-        # administration: RD | Region 3 | Vega Protectorate
-        # administration: RD | Region 3 | Vega Protectorate
-        # administration: RD | Region 3 | Vega Protectorate
         faction:
           source: canon
           value:

@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -20,13 +20,11 @@ sucsId: 698
 xcood: 19.15
 ycood: -452.551
 spectralType:
-  source: 'HB:MPS'
+  source: 'Handbook: Major Periphery States, pg. 101'
   value: G1V
-  page: 101
 primarySlot:
-  source: 'HB:MPS'
+  source: 'Handbook: Major Periphery States, pg. 101'
   value: 3
-  page: 101
 event:
   - date: '2803-05-08'
     zenithCharge: yes
@@ -68,39 +66,32 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 1.0
     sysPos:
-      source: 'HB:MPS'
+      source: 'Handbook: Major Periphery States, pg. 101'
       value: 3
-      page: 101
     icon: wet20
     pressure:
-      source: 'HB:MPS'
+      source: 'Handbook: Major Periphery States, pg. 101'
       value: STANDARD
-      page: 101
     atmosphere:
-      source: 'HB:MPS'
+      source: 'Handbook: Major Periphery States, pg. 101'
       value: BREATHABLE
-      page: 101
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'HB:MPS'
+      source: 'Handbook: Major Periphery States, pg. 101'
       value: 1.03
-      page: 101
     diameter: 12665
     density: 5.715334168954
     dayLength: 22
     yearLength: 1.4
     temperature:
-      source: 'HB:MPS'
+      source: 'Handbook: Major Periphery States, pg. 101'
       value: 33
-      page: 101
     water:
-      source: 'HB:MPS'
+      source: 'Handbook: Major Periphery States, pg. 101'
       value: 78
-      page: 101
     lifeForm:
-      source: 'HB:MPS'
+      source: 'Handbook: Major Periphery States, pg. 101'
       value: AMPHIBIAN
-      page: 101
     desc: |-
       Detroit is the site of ‘Mech and Aerospace factories as well as multiple other local industries. Aside from the heavy industry, Detriot is also home to abundant agriculture and fishing concerns which more than feed the population. The planet is also home to many beautiful natural areas which are popular tourist attractions.
 
@@ -113,28 +104,23 @@ planet:
       Novis AT-H Incorporated
     landmass:
       - name:
-          source: M&M
+          source: Masters and Minions, pg. 178
           value: North
-          page: 178
       - name:
-          source: M&M
+          source: Masters and Minions, pg. 178
           value: South
-          page: 178
         capital:
-          source: M&M
+          source: Masters and Minions, pg. 178
           value: Ann Arbor
-          page: 178
     satellite:
       - name:
-          source: 'HB:MPS'
+          source: 'Handbook: Major Periphery States, pg. 101'
           value: Livonia
-          page: 101
         size: large
         icon: rock6
       - name:
-          source: 'HB:MPS'
+          source: 'Handbook: Major Periphery States, pg. 101'
           value: Tecumseh
-          page: 101
         size: giant
         icon: rock15
     event:
@@ -274,11 +260,6 @@ planet:
         population:
           source: canon
           value: 2110000000.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - MOC
       - date: '3070-01-01'
         population: 2108598471.0
       - date: '3071-03-24'
@@ -301,12 +282,6 @@ planet:
       - date: '3110-01-01'
         population: 2207342962.0
       - date: '3120-04-14'
-        # administration: CC | Victoria Commonality | Region 7
-        # administration: CC | Victoria Commonality | Region 7
-        # administration: CC | Victoria Commonality | Region 7
-        # administration: CC | Victoria Commonality | Region 7
-        # administration: CC | Victoria Commonality | Region 7
-        # administration: CC | Victoria Commonality | Region 7
         faction:
           source: canon
           value:

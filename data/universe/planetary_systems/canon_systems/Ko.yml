@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: Ko
-sucsId: 1382
+sucsId: 1381
 xcood: -18.105
 ycood: 43.9
 spectralType:
-  source: DA:RW
+  source: MWDA world profiles
   value: G6IV
 primarySlot:
-  source: DA:RW
+  source: MWDA world profiles
   value: 2
 event:
   - date: '2352-03-20'
@@ -56,31 +56,31 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 1.44
     sysPos:
-      source: DA:RW
+      source: MWDA world profiles
       value: 2
     icon: wet19
     pressure:
-      source: DA:RW
+      source: MWDA world profiles
       value: STANDARD
     atmosphere:
-      source: DA:RW
+      source: MWDA world profiles
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: DA:RW
+      source: MWDA world profiles
       value: 1.03
     diameter: 12665
     density: 5.715334168954
     dayLength: 28
     yearLength: 2.0
     temperature:
-      source: DA:RW
+      source: MWDA world profiles
       value: 36
     water:
-      source: DA:RW
+      source: MWDA world profiles
       value: 82
     lifeForm:
-      source: DA:RW
+      source: MWDA world profiles
       value: MAMMAL
     desc: |-
       3135 - Once a hardy agricultural world in the Terran Hegemony, Ko continued to be a breadbasket for the people of the Draconis Combine‘s Dieron Military District after the fall of the Star League. Though some desert regions—such as the region surrounding the former capital city of Jarlton, on the equatorial continent of Hyadei—are plagued by the occasional sandstorm, much of the rest of the planet‘s main landmasses boasts fertile soil, coupled with excellent growing cycles and the ability to support both domestic and imported flora and fauna. As a result, numerous farming, fishing, and ranching industries came to call Ko their home, and before long several shipping lines and food-processing megacorporations were doing the same. By 3025, by far the largest of these was Surinami Processing, a producer of all manner of processed foods from freeze-dried survival rations to its Home Helper line of canned and boxed foods, with a special Happy Life Meals division that also provided foods for every institution from corporate cafeterias to volunteer soup kitchens. Interestingly enough, however, Surinami‘s most controversial product, the Stomach‘s Joy line of nutritional supplements, never saw widespread use in the Combine, and was ultimately the cause for the company‘s shutdown soon after Ko was captured by the Lyran Commonwealth in the Fourth Succession War.
@@ -90,30 +90,30 @@ planet:
       Ko, a part of the so-called Lyons Thumb, was returned to Draconis Combine rule during the FedCom Civil War, after Lyran forces attacked the Combine “peacekeeping garrison” at what was then the planetary capital city of Jarlton in 3062. The battle damaged much of the city, forcing the Combine to relocate the administrative centers back to the pre-Fourth War capital of Hagitasu, on the southern continent of Kyushu, where it has remained ever since. During the Jihad, Word of Blake mercenaries raided this world several times in an effort to disrupt allied logistics in the region. In one of the more notorious of these attacks, Blakist troops unleashed a virulent blight on agricultural centers across the northern Jingatu continent, sterilizing the soil and wiping out over forty percent of the local crops. Though the rest of the planetary agricultural yield made up for the loss, it would be several years before the local industries and people recovered from the disaster.
     landmass:
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Hyadei
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Jingatu
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Kyushu
         capital:
-          source: DA:RW
+          source: MWDA world profiles
           value: Hagitasu
     satellite:
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Fionna
         size: medium
         icon: rock5
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Palas
         size: large
         icon: rock12
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Valencia
         size: medium
         icon: oddmoon2
@@ -173,12 +173,6 @@ planet:
       - date: '2310-01-01'
         population: 678933995.0
       - date: '2315-07-30'
-        # administration: TH | Lone Star Province
-        # administration: TH | Lone Star Province
-        # administration: TH | Lone Star Province
-        # administration: TH | Lone Star Province
-        # administration: TH | Lone Star Province
-        # administration: TH | Lone Star Province
         faction:
           source: canon
           value:
@@ -279,18 +273,6 @@ planet:
         population: 1863768790.0
       - date: '2760-01-01'
         population: 1856483998.0
-      - date: '2767-01-01'
-        # administration: AE | Lone Star Province
-        # administration: AE | Lone Star Province
-        # administration: AE | Lone Star Province
-        # administration: AE | Lone Star Province
-        # administration: AE | Lone Star Province
-        # administration: AE | Lone Star Province
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - AE
       - date: '2767-05-16'
         faction:
           source: canon
@@ -309,18 +291,6 @@ planet:
           value:
             - LA
         population: 1840699672.0
-      - date: '2783-01-01'
-        # administration: TH | Lone Star Province
-        # administration: TH | Lone Star Province
-        # administration: TH | Lone Star Province
-        # administration: TH | Lone Star Province
-        # administration: TH | Lone Star Province
-        # administration: TH | Lone Star Province
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - TH
       - date: '2790-01-01'
         population: 1838337734.0
       - date: '2800-01-01'
@@ -329,25 +299,7 @@ planet:
         population: 1823243650.0
       - date: '2820-01-01'
         population: 1812433111.0
-      - date: '2821-01-01'
-        # administration: DC | Dieron Military District | Lone Star Prefecture
-        # administration: DC | Dieron Military District | Lone Star Prefecture
-        # administration: DC | Dieron Military District | Lone Star Prefecture
-        # administration: DC | Dieron Military District | Lone Star Prefecture
-        # administration: DC | Dieron Military District | Lone Star Prefecture
-        # administration: DC | Dieron Military District | Lone Star Prefecture
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - DC
       - date: '2821-04-18'
-        # administration: DC | Dieron Military District | Lone Star Prefecture
-        # administration: DC | Dieron Military District | Lone Star Prefecture
-        # administration: DC | Dieron Military District | Lone Star Prefecture
-        # administration: DC | Dieron Military District | Lone Star Prefecture
-        # administration: DC | Dieron Military District | Lone Star Prefecture
-        # administration: DC | Dieron Military District | Lone Star Prefecture
         faction:
           source: canon
           value:
@@ -362,30 +314,12 @@ planet:
         population: 1810229774.0
       - date: '2860-01-01'
         population: 1806075219.0
-      - date: '2864-01-01'
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LA
       - date: '2864-02-16'
         faction:
           source: canon
           value:
             - LA
       - date: '2866-12-01'
-        # administration: DC | Dieron Military District | Kessel Prefecture
-        # administration: DC | Dieron Military District | Kessel Prefecture
-        # administration: DC | Dieron Military District | Kessel Prefecture
-        # administration: DC | Dieron Military District | Kessel Prefecture
-        # administration: DC | Dieron Military District | Kessel Prefecture
-        # administration: DC | Dieron Military District | Kessel Prefecture
         faction:
           source: canon
           value:
@@ -426,18 +360,6 @@ planet:
         population: 1700420861.0
       - date: '3029-01-01'
         socioIndustrial: B-C-B-B-C
-      - date: '3030-01-01'
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LA
       - date: '3030-01-06'
         faction:
           source: canon
@@ -447,25 +369,8 @@ planet:
       - date: '3037-01-01'
         socioIndustrial: B-C-B-B-D
       - date: '3040-01-01'
-        # administration: FC | Skye March | Ryde Operational Area
-        # administration: FC | Skye March | Ryde Operational Area
-        # administration: FC | Skye March | Ryde Operational Area
-        # administration: FC | Skye March | Ryde Operational Area
-        # administration: FC | Skye March | Ryde Operational Area
-        # administration: FC | Skye March | Ryde Operational Area
         population: 1722652504.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FC
       - date: '3040-01-19'
-        # administration: FC | Skye March | Ryde Operational Area
-        # administration: FC | Skye March | Ryde Operational Area
-        # administration: FC | Skye March | Ryde Operational Area
-        # administration: FC | Skye March | Ryde Operational Area
-        # administration: FC | Skye March | Ryde Operational Area
-        # administration: FC | Skye March | Ryde Operational Area
         faction:
           source: canon
           value:
@@ -474,18 +379,6 @@ planet:
         socioIndustrial: A-B-A-A-D
       - date: '3050-01-01'
         population: 1737531202.0
-      - date: '3057-01-01'
-        # administration: LA | Skye March | Ryde Operational Area
-        # administration: LA | Skye March | Ryde Operational Area
-        # administration: LA | Skye March | Ryde Operational Area
-        # administration: LA | Skye March | Ryde Operational Area
-        # administration: LA | Skye March | Ryde Operational Area
-        # administration: LA | Skye March | Ryde Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LA
       - date: '3057-09-18'
         faction:
           source: canon
@@ -497,27 +390,9 @@ planet:
           value:
             - DC
             - LA
-      - date: '3058-01-01'
-        # administration: LA | Skye Province | Freedom Theater
-        # administration: LA | Skye Province | Freedom Theater
-        # administration: LA | Skye Province | Freedom Theater
-        # administration: LA | Skye Province | Freedom Theater
-        # administration: LA | Skye Province | Freedom Theater
-        # administration: LA | Skye Province | Freedom Theater
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LA
       - date: '3060-01-01'
         population: 1756749552.0
       - date: '3062-08-19'
-        # administration: DC | Dieron Military District | Kessel Prefecture
-        # administration: DC | Dieron Military District | Kessel Prefecture
-        # administration: DC | Dieron Military District | Kessel Prefecture
-        # administration: DC | Dieron Military District | Kessel Prefecture
-        # administration: DC | Dieron Military District | Kessel Prefecture
-        # administration: DC | Dieron Military District | Kessel Prefecture
         faction:
           source: canon
           value:
@@ -529,12 +404,6 @@ planet:
           source: canon
           value:
             - WOB
-      - date: '3075-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - Stone
       - date: '3076-07-21'
         faction:
           source: canon
@@ -549,25 +418,7 @@ planet:
             - Stone
       - date: '3080-01-01'
         population: 1812242912.0
-      - date: '3081-01-01'
-        # administration: ROS | Prefecture IX
-        # administration: ROS | Prefecture IX
-        # administration: ROS | Prefecture IX
-        # administration: ROS | Prefecture IX
-        # administration: ROS | Prefecture IX
-        # administration: ROS | Prefecture IX
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - ROS
       - date: '3081-04-27'
-        # administration: ROS | Prefecture IX
-        # administration: ROS | Prefecture IX
-        # administration: ROS | Prefecture IX
-        # administration: ROS | Prefecture IX
-        # administration: ROS | Prefecture IX
-        # administration: ROS | Prefecture IX
         faction:
           source: canon
           value:
@@ -586,24 +437,12 @@ planet:
         population: 1881304193.0
       - date: '3132-08-07'
         hpg: X
-      - date: '3135-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '3135-10-01'
         faction:
           source: canon
           value:
             - IND
       - date: '3137-12-10'
-        # administration: RD | Region 3 | Vega Protectorate
-        # administration: RD | Region 3 | Vega Protectorate
-        # administration: RD | Region 3 | Vega Protectorate
-        # administration: RD | Region 3 | Vega Protectorate
-        # administration: RD | Region 3 | Vega Protectorate
-        # administration: RD | Region 3 | Vega Protectorate
         faction:
           source: canon
           value:
@@ -617,25 +456,7 @@ planet:
           source: canon
           value:
             - ROS
-      - date: '3151-01-01'
-        # administration: RD | Region 3 | Vega Protectorate
-        # administration: RD | Region 3 | Vega Protectorate
-        # administration: RD | Region 3 | Vega Protectorate
-        # administration: RD | Region 3 | Vega Protectorate
-        # administration: RD | Region 3 | Vega Protectorate
-        # administration: RD | Region 3 | Vega Protectorate
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - RD
       - date: '3151-04-14'
-        # administration: RD | Region 4
-        # administration: RD | Region 4
-        # administration: RD | Region 4
-        # administration: RD | Region 4
-        # administration: RD | Region 4
-        # administration: RD | Region 4
         faction:
           source: canon
           value:

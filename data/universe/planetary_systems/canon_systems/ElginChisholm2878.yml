@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -23,9 +23,8 @@ spectralType:
   source: canon
   value: G1V
 primarySlot:
-  source: HLSB
+  source: House Liao, pg. 139
   value: 2
-  page: 139
 event:
   - date: '2364-11-01'
     nadirCharge: yes
@@ -55,9 +54,8 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 1.6
     sysPos:
-      source: HLSB
+      source: House Liao, pg. 139
       value: 2
-      page: 139
     icon: green26
     pressure: STANDARD
     atmosphere: BREATHABLE
@@ -70,9 +68,8 @@ planet:
     temperature: 15
     water: 49
     lifeForm:
-      source: HLSB
+      source: House Liao, pg. 139
       value: PLANT
-      page: 139
     desc: |-
       Originally called Chisholm, Elgin was a commercial trading centre for Terra and the various independent worlds of the Capellan Zone. The planet was absorbed into the Tikonov Grand Union and then the Capellan Confederation. The planet was renamed after Captain Edward T. Elgin, for his heroic actions in defending the planet against a Free World League attack in 2878.
 
@@ -112,12 +109,6 @@ planet:
       - date: '2310-01-01'
         population: 74138069.0
       - date: '2320-02-15'
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
         faction:
           source: canon
           value:
@@ -219,18 +210,6 @@ planet:
         population: 2677040916.0
       - date: '2760-01-01'
         population: 2656934159.0
-      - date: '2767-01-01'
-        # administration: AE | Terra Firma Province
-        # administration: AE | Terra Firma Province
-        # administration: AE | Terra Firma Province
-        # administration: AE | Terra Firma Province
-        # administration: AE | Terra Firma Province
-        # administration: AE | Terra Firma Province
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - AE
       - date: '2767-10-14'
         faction:
           source: canon
@@ -239,12 +218,6 @@ planet:
       - date: '2770-01-01'
         population: 2635630468.0
       - date: '2779-10-22'
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
         faction:
           source: canon
           value:
@@ -252,12 +225,6 @@ planet:
       - date: '2780-01-01'
         population: 2583466383.0
       - date: '2790-08-19'
-        # administration: CC | Tikonov Commonality | Region 2
-        # administration: CC | Tikonov Commonality | Region 2
-        # administration: CC | Tikonov Commonality | Region 2
-        # administration: CC | Tikonov Commonality | Region 2
-        # administration: CC | Tikonov Commonality | Region 2
-        # administration: CC | Tikonov Commonality | Region 2
         faction:
           source: canon
           value:
@@ -270,12 +237,6 @@ planet:
       - date: '2820-01-01'
         population: 2405977282.0
       - date: '2821-11-10'
-        # administration: CC | Tikonov Commonality | Region 2
-        # administration: CC | Tikonov Commonality | Region 2
-        # administration: CC | Tikonov Commonality | Region 2
-        # administration: CC | Tikonov Commonality | Region 2
-        # administration: CC | Tikonov Commonality | Region 2
-        # administration: CC | Tikonov Commonality | Region 2
         faction:
           source: canon
           value:
@@ -325,12 +286,6 @@ planet:
       - date: '3020-01-01'
         population: 1812402384.0
       - date: '3029-11-15'
-        # administration: TFR | National Capital
-        # administration: TFR | National Capital
-        # administration: TFR | National Capital
-        # administration: TFR | National Capital
-        # administration: TFR | National Capital
-        # administration: TFR | National Capital
         faction:
           source: canon
           value:
@@ -338,12 +293,6 @@ planet:
       - date: '3030-01-01'
         population: 1781510657.0
       - date: '3032-07-17'
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
         faction:
           source: canon
           value:
@@ -354,31 +303,13 @@ planet:
         socioIndustrial: C-C-B-A-D
       - date: '3050-01-01'
         population: 1819681868.0
-      - date: '3057-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '3057-11-01'
         faction:
           source: canon
           value:
             - CM
-      - date: '3058-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '3060-01-01'
         population: 1841465437.0
-      - date: '3068-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - WOB
       - date: '3068-02-01'
         faction:
           source: canon
@@ -393,25 +324,7 @@ planet:
             - Stone
       - date: '3080-01-01'
         population: 1890916605.0
-      - date: '3081-01-01'
-        # administration: ROS | Prefecture VI
-        # administration: ROS | Prefecture VI
-        # administration: ROS | Prefecture VI
-        # administration: ROS | Prefecture VI
-        # administration: ROS | Prefecture VI
-        # administration: ROS | Prefecture VI
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - ROS
       - date: '3081-03-11'
-        # administration: ROS | Prefecture VI
-        # administration: ROS | Prefecture VI
-        # administration: ROS | Prefecture VI
-        # administration: ROS | Prefecture VI
-        # administration: ROS | Prefecture VI
-        # administration: ROS | Prefecture VI
         faction:
           source: canon
           value:
@@ -442,12 +355,6 @@ planet:
           value:
             - CC
       - date: '3151-01-01'
-        # administration: CC | Tikonov Commonality | Region 2
-        # administration: CC | Tikonov Commonality | Region 2
-        # administration: CC | Tikonov Commonality | Region 2
-        # administration: CC | Tikonov Commonality | Region 2
-        # administration: CC | Tikonov Commonality | Region 2
-        # administration: CC | Tikonov Commonality | Region 2
         faction:
           source: sucs
           value:

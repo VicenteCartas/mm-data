@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: Foochow
-sucsId: 892
+sucsId: 891
 xcood: 88.919
 ycood: -97.499
 spectralType:
-  source: DA:RW
+  source: MWDA world profiles
   value: F4V
 primarySlot:
-  source: DA:RW
+  source: MWDA world profiles
   value: 4
 event:
   - date: '2394-12-19'
@@ -89,31 +89,31 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 2.24
     sysPos:
-      source: DA:RW
+      source: MWDA world profiles
       value: 4
     icon: wet18
     pressure:
-      source: DA:RW
+      source: MWDA world profiles
       value: THIN
     atmosphere:
-      source: DA:RW
+      source: MWDA world profiles
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: DA:RW
+      source: MWDA world profiles
       value: 0.7
     diameter: 9177
     density: 5.360327691857
     dayLength: 16
     yearLength: 3.6
     temperature:
-      source: DA:RW
+      source: MWDA world profiles
       value: 45
     water:
-      source: DA:RW
+      source: MWDA world profiles
       value: 80
     lifeForm:
-      source: DA:RW
+      source: MWDA world profiles
       value: MAMMAL
     desc: |-
       3135 - Foochow is named after the capital of the Fujian province in southeast China. It was discovered almost by accident and colonized in the late 22nd century by a sizeable population escaping from China on Terra. Min-how, the only continent, is located along the equator and was mostly jungle when the colonists first landed. They spent the first 50 years fighting disease-carrying insects and large six-limbed carnivores the size of black bears called Dobars. The settlers overcame the land and were able to make it productive, even taming some of the Dobars.
@@ -123,24 +123,24 @@ planet:
       Foochow was not involved in the Jihad until one of the Warrior Houses jumped into the system. Soon after, Word of Blake employed a small mercenary force that entered the system and began a high-speed burn toward the planet. Hidden among the planet‘s moons, the Warrior House launched an aerospace assault that completely destroyed the attacking mercenaries.
     landmass:
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Min-how
         capital:
-          source: DA:RW
+          source: MWDA world profiles
           value: Vashura
     satellite:
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Li-Lung
         size: large
         icon: rock11
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Lung-Wang
         size: medium
         icon: rock7
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Pan-Lung
         size: medium
         icon: oddmoon1
@@ -194,12 +194,6 @@ planet:
       - date: '2360-01-01'
         population: 3016289131.0
       - date: '2367-07-01'
-        # administration: CC | Sarna Commonality | Region 2
-        # administration: CC | Sarna Commonality | Region 2
-        # administration: CC | Sarna Commonality | Region 2
-        # administration: CC | Sarna Commonality | Region 2
-        # administration: CC | Sarna Commonality | Region 2
-        # administration: CC | Sarna Commonality | Region 2
         faction:
           source: canon
           value:
@@ -345,18 +339,6 @@ planet:
         population: 6481280740.0
       - date: '3026-01-01'
         socioIndustrial: D-C-C-B-D
-      - date: '3030-01-01'
-        # administration: LA | Sarna March | Palos Operational Area
-        # administration: LA | Sarna March | Palos Operational Area
-        # administration: LA | Sarna March | Palos Operational Area
-        # administration: LA | Sarna March | Palos Operational Area
-        # administration: LA | Sarna March | Palos Operational Area
-        # administration: LA | Sarna March | Palos Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LA
       - date: '3030-02-05'
         faction:
           source: canon
@@ -365,25 +347,8 @@ planet:
         population: 6405073148.0
         socioIndustrial: D-C-C-B-F
       - date: '3040-01-01'
-        # administration: FC | Sarna March | Palos Operational Area
-        # administration: FC | Sarna March | Palos Operational Area
-        # administration: FC | Sarna March | Palos Operational Area
-        # administration: FC | Sarna March | Palos Operational Area
-        # administration: FC | Sarna March | Palos Operational Area
-        # administration: FC | Sarna March | Palos Operational Area
         population: 6487585034.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FC
       - date: '3040-01-19'
-        # administration: FC | Sarna March | Palos Operational Area
-        # administration: FC | Sarna March | Palos Operational Area
-        # administration: FC | Sarna March | Palos Operational Area
-        # administration: FC | Sarna March | Palos Operational Area
-        # administration: FC | Sarna March | Palos Operational Area
-        # administration: FC | Sarna March | Palos Operational Area
         faction:
           source: canon
           value:
@@ -392,32 +357,14 @@ planet:
         socioIndustrial: C-B-B-A-F
       - date: '3050-01-01'
         population: 6569845760.0
-      - date: '3057-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '3057-11-01'
         faction:
           source: canon
           value:
             - CM
-      - date: '3058-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '3060-01-01'
         population: 6655145772.0
       - date: '3062-03-24'
-        # administration: CC | Liao Commonality | Region 4
-        # administration: CC | Liao Commonality | Region 4
-        # administration: CC | Liao Commonality | Region 4
-        # administration: CC | Liao Commonality | Region 4
-        # administration: CC | Liao Commonality | Region 4
-        # administration: CC | Liao Commonality | Region 4
         faction:
           source: canon
           value:
@@ -426,25 +373,7 @@ planet:
         population: 6740879161.0
       - date: '3080-01-01'
         population: 6754374410.0
-      - date: '3085-01-01'
-        # administration: ROS | Prefecture V
-        # administration: ROS | Prefecture V
-        # administration: ROS | Prefecture V
-        # administration: ROS | Prefecture V
-        # administration: ROS | Prefecture V
-        # administration: ROS | Prefecture V
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - ROS
       - date: '3085-05-04'
-        # administration: ROS | Prefecture V
-        # administration: ROS | Prefecture V
-        # administration: ROS | Prefecture V
-        # administration: ROS | Prefecture V
-        # administration: ROS | Prefecture V
-        # administration: ROS | Prefecture V
         faction:
           source: canon
           value:
@@ -463,25 +392,7 @@ planet:
         population: 7052557774.0
       - date: '3132-08-07'
         hpg: X
-      - date: '3135-01-01'
-        # administration: CC | Liao Commonality | Region 2
-        # administration: CC | Liao Commonality | Region 2
-        # administration: CC | Liao Commonality | Region 2
-        # administration: CC | Liao Commonality | Region 2
-        # administration: CC | Liao Commonality | Region 2
-        # administration: CC | Liao Commonality | Region 2
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CC
       - date: '3135-12-08'
-        # administration: CC | Sarna Commonality | Region 2
-        # administration: CC | Sarna Commonality | Region 2
-        # administration: CC | Sarna Commonality | Region 2
-        # administration: CC | Sarna Commonality | Region 2
-        # administration: CC | Sarna Commonality | Region 2
-        # administration: CC | Sarna Commonality | Region 2
         faction:
           source: canon
           value:

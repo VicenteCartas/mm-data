@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -20,10 +20,10 @@ sucsId: 53
 xcood: 71.079
 ycood: 78.532
 spectralType:
-  source: DA:RW
+  source: MWDA world profiles
   value: F0IV
 primarySlot:
-  source: DA:RW
+  source: MWDA world profiles
   value: 2
 event:
   - date: '2564-01-09'
@@ -60,55 +60,72 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 4.48
     sysPos:
-      source: DA:RW
+      source: MWDA world profiles
       value: 2
     icon: green40
     pressure:
-      source: DA:RW
+      source: MWDA world profiles
       value: STANDARD
     atmosphere:
-      source: DA:RW
+      source: MWDA world profiles
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: DA:RW
+      source: MWDA world profiles
       value: 0.81
     diameter: 10689
     density: 5.325246445966
     dayLength: 26
     yearLength: 9.6
     temperature:
-      source: DA:RW
+      source: MWDA world profiles
       value: 43
     water:
-      source: DA:RW
+      source: MWDA world profiles
       value: 52
     lifeForm:
-      source: DA:RW
+      source: MWDA world profiles
       value: REPTILE
-    desc: The sleepy agro-world of Albalii was settled initially by Arabic colonists shortly after the first galactic wave of human expansion. Almost half of the planet‘s surface is taken up by three major landmasses—Omar in the southern hemisphere and Sadig and Euphrates in the north—but these continents have been carved into giant plateaus by the unusually strong currents of the surrounding oceans. With more than 70 percent of the coastline consisting of steep, rocky cliffs, and few inland lakes and rivers, Albalii‘s relatively flat inland regions proved a poor candidate for agricultural industry. Cities sprang up along the few each front areas and readily accessible rivers, while many of the desert plains were exploited for their modest mineral wealth. In the days of the Star League, the planetary government, hoping to expand the arable frontiers on Albalii, embarked on an ambitious plan to transfer large quantities of ocean water to prepared lake areas inland. Through advanced water purification technologies, these lakes would be used for drinking water and crop irrigation. Though local ecologists were outraged, the Albalii government considered the alternative—hiring ice ships to bring in offworld ice—far too risky and expensive. DropShips spent ten years moving trillions of gallons of ocean water inland, creating massive, man-made lakes and seas like the Great Omar Reservoir and the Tigris Sea on Euphrates. The result expanded Albalii‘s arable lands a thousandfold. Today, these new inland seas are the sites of many of this world‘s cities, including the large spaceport of Giza, along the northern coast of the Galilee Basin on Sadig, and the resort city of Saladan on the Great Omar Reservoir. Albalii‘s capital and first colonial settlement, Borqa, is on the eastern coast of Sadig, at the mouth of the Naball River.
+    desc: The sleepy agro-world of Albalii was settled initially by Arabic colonists
+      shortly after the first galactic wave of human expansion. Almost half of the
+      planet‘s surface is taken up by three major landmasses—Omar in the southern
+      hemisphere and Sadig and Euphrates in the north—but these continents have been
+      carved into giant plateaus by the unusually strong currents of the surrounding
+      oceans. With more than 70 percent of the coastline consisting of steep, rocky
+      cliffs, and few inland lakes and rivers, Albalii‘s relatively flat inland regions
+      proved a poor candidate for agricultural industry. Cities sprang up along the
+      few each front areas and readily accessible rivers, while many of the desert
+      plains were exploited for their modest mineral wealth. In the days of the Star
+      League, the planetary government, hoping to expand the arable frontiers on Albalii,
+      embarked on an ambitious plan to transfer large quantities of ocean water to
+      prepared lake areas inland. Through advanced water purification technologies,
+      these lakes would be used for drinking water and crop irrigation. Though local
+      ecologists were outraged, the Albalii government considered the alternative—hiring
+      ice ships to bring in offworld ice—far too risky and expensive. DropShips spent
+      ten years moving trillions of gallons of ocean water inland, creating massive,
+      man-made lakes and seas like the Great Omar Reservoir and the Tigris Sea on
+      Euphrates. The result expanded Albalii‘s arable lands a thousandfold. Today,
+      these new inland seas are the sites of many of this world‘s cities, including
+      the large spaceport of Giza, along the northern coast of the Galilee Basin on
+      Sadig, and the resort city of Saladan on the Great Omar Reservoir. Albalii‘s
+      capital and first colonial settlement, Borqa, is on the eastern coast of Sadig,
+      at the mouth of the Naball River.
     smallMoons: 4
     landmass:
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Euphrates
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Omar
         capital:
-          source: DA:RW
+          source: MWDA world profiles
           value: Borqa
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Sadig
     event:
       - date: '2561-11-12'
-        # administration: DC | Benjamin Military District | Ashio Prefecture
-        # administration: DC | Benjamin Military District | Ashio Prefecture
-        # administration: DC | Benjamin Military District | Ashio Prefecture
-        # administration: DC | Benjamin Military District | Ashio Prefecture
-        # administration: DC | Benjamin Military District | Ashio Prefecture
-        # administration: DC | Benjamin Military District | Ashio Prefecture
         faction:
           source: canon
           value:
@@ -229,12 +246,6 @@ planet:
         population: 1377306973.0
       - date: '3070-01-01'
         population: 1392401736.0
-      - date: '3075-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - AB
       - date: '3075-08-13'
         faction:
           source: canon
@@ -242,25 +253,7 @@ planet:
             - AB
       - date: '3080-01-01'
         population: 1418542766.0
-      - date: '3081-01-01'
-        # administration: ROS | Prefecture II
-        # administration: ROS | Prefecture II
-        # administration: ROS | Prefecture II
-        # administration: ROS | Prefecture II
-        # administration: ROS | Prefecture II
-        # administration: ROS | Prefecture II
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - ROS
       - date: '3081-12-07'
-        # administration: ROS | Prefecture II
-        # administration: ROS | Prefecture II
-        # administration: ROS | Prefecture II
-        # administration: ROS | Prefecture II
-        # administration: ROS | Prefecture II
-        # administration: ROS | Prefecture II
         faction:
           source: canon
           value:
@@ -279,25 +272,7 @@ planet:
         population: 1537303832.0
       - date: '3132-08-07'
         hpg: X
-      - date: '3135-01-01'
-        # administration: DC | Benjamin Military District | Algedi Prefecture
-        # administration: DC | Benjamin Military District | Algedi Prefecture
-        # administration: DC | Benjamin Military District | Algedi Prefecture
-        # administration: DC | Benjamin Military District | Algedi Prefecture
-        # administration: DC | Benjamin Military District | Algedi Prefecture
-        # administration: DC | Benjamin Military District | Algedi Prefecture
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - DC
       - date: '3135-01-08'
-        # administration: DC | Dieron Military District | Ashio Prefecture
-        # administration: DC | Dieron Military District | Ashio Prefecture
-        # administration: DC | Dieron Military District | Ashio Prefecture
-        # administration: DC | Dieron Military District | Ashio Prefecture
-        # administration: DC | Dieron Military District | Ashio Prefecture
-        # administration: DC | Dieron Military District | Ashio Prefecture
         faction:
           source: canon
           value:

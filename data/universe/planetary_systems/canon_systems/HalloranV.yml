@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,17 +16,15 @@
 # affiliated with Microsoft.
 
 id: Halloran V
-sucsId: 1043
+sucsId: 1042
 xcood: 72.894
 ycood: -77.022
 spectralType:
-  source: HLSB
+  source: House Liao, pg. 154
   value: F8IV
-  page: 154
 primarySlot:
-  source: HLSB
+  source: House Liao, pg. 154
   value: 4
-  page: 154
 planet:
   - name: Halloran I
     type: TERRESTRIAL
@@ -84,34 +82,32 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 3.36
     sysPos:
-      source: HLSB
+      source: House Liao, pg. 154
       value: 4
-      page: 154
     icon: green43
     pressure:
-      source: DA:RW
+      source: MWDA world profiles
       value: STANDARD
     atmosphere:
-      source: DA:RW
+      source: MWDA world profiles
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: DA:RW
+      source: MWDA world profiles
       value: 1.1
     diameter: 11786
     density: 6.558715890459
     dayLength: 17
     yearLength: 6.3
     temperature:
-      source: DA:RW
+      source: MWDA world profiles
       value: 24
     water:
-      source: DA:RW
+      source: MWDA world profiles
       value: 74
     lifeForm:
-      source: HLSB
+      source: House Liao, pg. 154
       value: PLANT
-      page: 154
     desc: |-
       Halloran V is a bleak and forbidding arctic planet that is still geologically active. The planet's major export is copper as the planet is composed of almost 20 percent solid copper. Its only other major export is water. However, Halloran will run out of water a century or more sooner than copper due to the rate at which they are selling icebergs to water-poor worlds. In the late 31st century planetary officials finally listened to concerns and reduced exports of the planet’s icebergs.
 
@@ -119,26 +115,26 @@ planet:
       Corvatti Corporation
     landmass:
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Chimera
         capital:
-          source: DA:RW
+          source: MWDA world profiles
           value: Gethin
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Newfoundland
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Sunderland
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Tonka Li (archipelago)
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Tonka Lu (archipelago)
     satellite:
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Meridian
         size: large
         icon: rock8
@@ -181,12 +177,6 @@ planet:
       - date: '2360-01-01'
         population: 150537534.0
       - date: '2367-02-24'
-        # administration: CC | Chesterton Commonality
-        # administration: CC | Chesterton Commonality
-        # administration: CC | Chesterton Commonality
-        # administration: CC | Chesterton Commonality
-        # administration: CC | Chesterton Commonality
-        # administration: CC | Chesterton Commonality
         faction:
           source: canon
           value:
@@ -314,12 +304,6 @@ planet:
       - date: '2920-01-01'
         population: 1449596316.0
       - date: '2930-08-11'
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
         faction:
           source: canon
           value:
@@ -354,25 +338,8 @@ planet:
       - date: '3035-01-01'
         socioIndustrial: D-D-C-D-C
       - date: '3040-01-01'
-        # administration: FC | Capellan March | Kathil Operational Area
-        # administration: FC | Capellan March | Kathil Operational Area
-        # administration: FC | Capellan March | Kathil Operational Area
-        # administration: FC | Capellan March | Kathil Operational Area
-        # administration: FC | Capellan March | Kathil Operational Area
-        # administration: FC | Capellan March | Kathil Operational Area
         population: 1028238978.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FC
       - date: '3040-01-19'
-        # administration: FC | Capellan March | Kathil Operational Area
-        # administration: FC | Capellan March | Kathil Operational Area
-        # administration: FC | Capellan March | Kathil Operational Area
-        # administration: FC | Capellan March | Kathil Operational Area
-        # administration: FC | Capellan March | Kathil Operational Area
-        # administration: FC | Capellan March | Kathil Operational Area
         faction:
           source: canon
           value:
@@ -383,25 +350,7 @@ planet:
         population: 921362227.0
       - date: '3060-01-01'
         population: 833259984.0
-      - date: '3067-01-01'
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FS
       - date: '3067-04-20'
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
         faction:
           source: canon
           value:
@@ -430,50 +379,14 @@ planet:
           value:
             - CC
             - WOB
-      - date: '3079-01-01'
-        # administration: CC | Liao Commonality | Region 2
-        # administration: CC | Liao Commonality | Region 2
-        # administration: CC | Liao Commonality | Region 2
-        # administration: CC | Liao Commonality | Region 2
-        # administration: CC | Liao Commonality | Region 2
-        # administration: CC | Liao Commonality | Region 2
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CC
       - date: '3079-10-31'
-        # administration: CC | Liao Commonality | Region 2
-        # administration: CC | Liao Commonality | Region 2
-        # administration: CC | Liao Commonality | Region 2
-        # administration: CC | Liao Commonality | Region 2
-        # administration: CC | Liao Commonality | Region 2
-        # administration: CC | Liao Commonality | Region 2
         faction:
           source: canon
           value:
             - CC
       - date: '3080-01-01'
         population: 772039315.0
-      - date: '3085-01-01'
-        # administration: ROS | Prefecture V
-        # administration: ROS | Prefecture V
-        # administration: ROS | Prefecture V
-        # administration: ROS | Prefecture V
-        # administration: ROS | Prefecture V
-        # administration: ROS | Prefecture V
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - ROS
       - date: '3085-10-04'
-        # administration: ROS | Prefecture V
-        # administration: ROS | Prefecture V
-        # administration: ROS | Prefecture V
-        # administration: ROS | Prefecture V
-        # administration: ROS | Prefecture V
-        # administration: ROS | Prefecture V
         faction:
           source: canon
           value:
@@ -490,12 +403,6 @@ planet:
           value:
             - CC
       - date: '3113-05-01'
-        # administration: ROS | Prefecture V
-        # administration: ROS | Prefecture V
-        # administration: ROS | Prefecture V
-        # administration: ROS | Prefecture V
-        # administration: ROS | Prefecture V
-        # administration: ROS | Prefecture V
         faction:
           source: canon
           value:
@@ -510,12 +417,6 @@ planet:
         hpg:
           source: canon
           value: X
-      - date: '3135-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '3135-10-01'
         faction:
           source: canon
@@ -523,25 +424,7 @@ planet:
             - IND
       - date: '3140-01-01'
         population: 829842128.0
-      - date: '3145-01-01'
-        # administration: CC | Chesterton Commonality
-        # administration: CC | Chesterton Commonality
-        # administration: CC | Chesterton Commonality
-        # administration: CC | Chesterton Commonality
-        # administration: CC | Chesterton Commonality
-        # administration: CC | Chesterton Commonality
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CC
       - date: '3145-11-14'
-        # administration: CC | Chesterton Commonality
-        # administration: CC | Chesterton Commonality
-        # administration: CC | Chesterton Commonality
-        # administration: CC | Chesterton Commonality
-        # administration: CC | Chesterton Commonality
-        # administration: CC | Chesterton Commonality
         faction:
           source: canon
           value:

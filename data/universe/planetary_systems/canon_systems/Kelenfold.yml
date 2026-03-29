@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,17 +16,15 @@
 # affiliated with Microsoft.
 
 id: Kelenfold
-sucsId: 1324
+sucsId: 1323
 xcood: -57.392
 ycood: 198.214
 spectralType:
-  source: M&M
+  source: Masters and Minions, pg. 121
   value: F2V
-  page: 121
 primarySlot:
-  source: M&M
+  source: Masters and Minions, pg. 121
   value: 4
-  page: 121
 event:
   - date: '2368-04-29'
     zenithCharge: yes
@@ -95,40 +93,41 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 2.4
     sysPos:
-      source: M&M
+      source: Masters and Minions, pg. 121
       value: 4
-      page: 121
     icon: green29
     pressure:
-      source: M&M
+      source: Masters and Minions, pg. 121
       value: THIN
-      page: 121
     atmosphere:
-      source: M&M
+      source: Masters and Minions, pg. 121
       value: BREATHABLE
-      page: 121
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: M&M
+      source: Masters and Minions, pg. 121
       value: 0.9
-      page: 121
     diameter: 14610
     density: 4.329029221917
     dayLength: 22
     yearLength: 3.9
     temperature:
-      source: M&M
+      source: Masters and Minions, pg. 121
       value: 31
-      page: 121
     water:
-      source: M&M
+      source: Masters and Minions, pg. 121
       value: 68
-      page: 121
     lifeForm:
-      source: M&M
+      source: Masters and Minions, pg. 121
       value: REPTILE
-      page: 121
-    desc: Kelenfold is an unremarkable planet with a thin atmosphere, a bright star and lower than standard-gravity due to its smaller size and lower density than Earth. The planet also has a pronounced axial tilt which results in more extreme seasons and more cosmic radiation which results in higher than average cancer rates. Despite these unpleasant conditions, the planet is still habitable by a large margin and has ample natural resources, large tracts of arable land and a strong industrial base. The planet ended up right on the edge of the Clan Invasion Corridor after the invasion but was eventually invaded and captured by Clan Wolf in 3070.
+    desc: Kelenfold is an unremarkable planet with a thin atmosphere, a bright star
+      and lower than standard-gravity due to its smaller size and lower density than
+      Earth. The planet also has a pronounced axial tilt which results in more extreme
+      seasons and more cosmic radiation which results in higher than average cancer
+      rates. Despite these unpleasant conditions, the planet is still habitable by
+      a large margin and has ample natural resources, large tracts of arable land
+      and a strong industrial base. The planet ended up right on the edge of the Clan
+      Invasion Corridor after the invasion but was eventually invaded and captured
+      by Clan Wolf in 3070.
     landmass:
       - name: Harila
         capital: Uusi Kisvárda
@@ -186,12 +185,6 @@ planet:
       - date: '2340-01-01'
         population: 757763929.0
       - date: '2341-01-07'
-        # administration: LA | Tamar Pact
-        # administration: LA | Tamar Pact
-        # administration: LA | Tamar Pact
-        # administration: LA | Tamar Pact
-        # administration: LA | Tamar Pact
-        # administration: LA | Tamar Pact
         faction:
           source: canon
           value:
@@ -347,25 +340,8 @@ planet:
       - date: '3030-01-01'
         population: 1452522702.0
       - date: '3040-01-01'
-        # administration: FC | Tamar March | Benfled Operational Area
-        # administration: FC | Tamar March | Benfled Operational Area
-        # administration: FC | Tamar March | Benfled Operational Area
-        # administration: FC | Tamar March | Benfled Operational Area
-        # administration: FC | Tamar March | Benfled Operational Area
-        # administration: FC | Tamar March | Benfled Operational Area
         population: 1467707764.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FC
       - date: '3040-01-19'
-        # administration: FC | Tamar March | Benfled Operational Area
-        # administration: FC | Tamar March | Benfled Operational Area
-        # administration: FC | Tamar March | Benfled Operational Area
-        # administration: FC | Tamar March | Benfled Operational Area
-        # administration: FC | Tamar March | Benfled Operational Area
-        # administration: FC | Tamar March | Benfled Operational Area
         faction:
           source: canon
           value:
@@ -376,25 +352,7 @@ planet:
           value: B-B-B-B-B
       - date: '3050-01-01'
         population: 1486169255.0
-      - date: '3057-01-01'
-        # administration: LA | Tamar March | Pandora Operational Area
-        # administration: LA | Tamar March | Pandora Operational Area
-        # administration: LA | Tamar March | Pandora Operational Area
-        # administration: LA | Tamar March | Pandora Operational Area
-        # administration: LA | Tamar March | Pandora Operational Area
-        # administration: LA | Tamar March | Pandora Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LA
       - date: '3057-09-18'
-        # administration: LA | Donegal Province | Pandora Theater
-        # administration: LA | Donegal Province | Pandora Theater
-        # administration: LA | Donegal Province | Pandora Theater
-        # administration: LA | Donegal Province | Pandora Theater
-        # administration: LA | Donegal Province | Pandora Theater
-        # administration: LA | Donegal Province | Pandora Theater
         faction:
           source: canon
           value:
@@ -433,12 +391,6 @@ planet:
         population: 1635096525.0
       - date: '3145-01-01'
         population: 1648559439.0
-      - date: '3151-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - TamP
       - date: '3151-08-13'
         faction:
           source: canon

@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,17 +16,15 @@
 # affiliated with Microsoft.
 
 id: Mosiro
-sucsId: 1766
+sucsId: 1765
 xcood: -65.144
 ycood: -280.742
 spectralType:
-  source: HMSB
+  source: House Marik, pg. 157
   value: K0V
-  page: 157
 primarySlot:
-  source: HMSB
+  source: House Marik, pg. 157
   value: 3
-  page: 157
 event:
   - date: '2363-06-25'
     nadirCharge: yes
@@ -66,9 +64,8 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.8
     sysPos:
-      source: HMSB
+      source: House Marik, pg. 157
       value: 3
-      page: 157
     icon: green49
     pressure: STANDARD
     atmosphere: BREATHABLE
@@ -81,9 +78,8 @@ planet:
     temperature: 27
     water: 30
     lifeForm:
-      source: HMSB
+      source: House Marik, pg. 157
       value: PLANT
-      page: 157
     desc: |-
       Mosiro has a climate similar to that of Terra and is overall comfortable for human habitation. The population is primarily muslim and much of the architecture is styled after Northern African and Spanish construction.
 
@@ -94,9 +90,8 @@ planet:
     smallMoons: 6
     landmass:
       - capital:
-          source: HMSB
+          source: House Marik, pg. 157
           value: al-Ibn
-          page: 157
     event:
       - date: '2325-10-06'
         faction:
@@ -155,25 +150,7 @@ planet:
         population: 5204879282.0
       - date: '2570-01-01'
         population: 5348835613.0
-      - date: '2571-01-01'
-        # administration: CC | Andurien Commonality | Region 1
-        # administration: CC | Andurien Commonality | Region 1
-        # administration: CC | Andurien Commonality | Region 1
-        # administration: CC | Andurien Commonality | Region 1
-        # administration: CC | Andurien Commonality | Region 1
-        # administration: CC | Andurien Commonality | Region 1
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CC
       - date: '2571-04-01'
-        # administration: CC | Andurien Commonality | Region 1
-        # administration: CC | Andurien Commonality | Region 1
-        # administration: CC | Andurien Commonality | Region 1
-        # administration: CC | Andurien Commonality | Region 1
-        # administration: CC | Andurien Commonality | Region 1
-        # administration: CC | Andurien Commonality | Region 1
         faction:
           source: canon
           value:
@@ -236,12 +213,6 @@ planet:
           value: B
         population: 5984370979.0
       - date: '2790-07-22'
-        # administration: FWL | Duchy of Andurien
-        # administration: FWL | Duchy of Andurien
-        # administration: FWL | Duchy of Andurien
-        # administration: FWL | Duchy of Andurien
-        # administration: FWL | Duchy of Andurien
-        # administration: FWL | Duchy of Andurien
         faction:
           source: canon
           value:
@@ -319,12 +290,6 @@ planet:
             - DA
       - date: '3080-01-01'
         population: 219003603.0
-      - date: '3081-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - MA
       - date: '3090-01-01'
         population: 220145388.0
       - date: '3095-01-01'
@@ -337,29 +302,12 @@ planet:
         population: 224054243.0
       - date: '3130-01-01'
         population: 226170283.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - DA
       - date: '3132-08-07'
         hpg:
           source: canon
           value: X
       - date: '3140-01-01'
         population: 229680263.0
-      - date: '3145-01-01'
-        # administration: FWL | Oriente Protectorate
-        # administration: FWL | Oriente Protectorate
-        # administration: FWL | Oriente Protectorate
-        # administration: FWL | Oriente Protectorate
-        # administration: FWL | Oriente Protectorate
-        # administration: FWL | Oriente Protectorate
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FWL
       - date: '3145-12-08'
         faction:
           source: canon

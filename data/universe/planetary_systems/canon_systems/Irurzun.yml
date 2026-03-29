@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: Irurzun
-sucsId: 1212
+sucsId: 1211
 xcood: 187.05
 ycood: 97.538
 spectralType:
-  source: HB:HK
+  source: House Kurita
   value: G4V
 primarySlot:
-  source: HB:HK
+  source: House Kurita
   value: 5
 event:
   - date: '2353-07-09'
@@ -40,7 +40,8 @@ planet:
     icon: greenhouse10
     pressure: HIGH
     atmosphere: TOXIC_POISON
-    composition: Ammonia and Carbon Dioxide, plus trace amounts of Carbon Dioxide and Hydrogen Sulfide
+    composition: Ammonia and Carbon Dioxide, plus trace amounts of Carbon Dioxide
+      and Hydrogen Sulfide
     gravity: 1.04
     diameter: 12500
     density: 5.8437
@@ -104,7 +105,7 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.63
     sysPos:
-      source: HB:HK
+      source: House Kurita
       value: 5
     icon: wet1
     pressure:
@@ -126,15 +127,21 @@ planet:
       source: canon
       value: 81
     lifeForm:
-      source: HB:HK
+      source: House Kurita
       value: MAMMAL
-    desc: Irurzun is an important command and logistical world for the Draconis Combine. In spite of its hot and humid atmosphere it’s a fully self-sufficient moderately industrialized high‐tech world with large deposits of valuable minerals. Most of the mining takes place on the continent of South Umbrain. On the other continents and away from the populated areas Irurzun shows a more agricultural side; many small farms raising crops. With the discovery of so many natural resources it is unlikely these agricultural areas will remain intact much longer.
+    desc: Irurzun is an important command and logistical world for the Draconis Combine.
+      In spite of its hot and humid atmosphere it’s a fully self-sufficient moderately
+      industrialized high‐tech world with large deposits of valuable minerals. Most
+      of the mining takes place on the continent of South Umbrain. On the other continents
+      and away from the populated areas Irurzun shows a more agricultural side; many
+      small farms raising crops. With the discovery of so many natural resources it
+      is unlikely these agricultural areas will remain intact much longer.
     landmass:
       - name:
           source: canon
           value: South Umbrian
         capital:
-          source: HB:HK
+          source: House Kurita
           value: New Gotham City
       - name:
           source: canon
@@ -200,12 +207,6 @@ planet:
         population: 1788565894.0
       - date: '2340-01-01'
         population: 2123681781.0
-      - date: '2341-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '2350-01-01'
         population: 2477754445.0
       - date: '2360-01-01'
@@ -257,18 +258,6 @@ planet:
         population: 6861286985.0
       - date: '2570-01-01'
         population: 6851885727.0
-      - date: '2571-01-01'
-        # administration: DC | Benjamin Military District | Irurzun Prefecture
-        # administration: DC | Benjamin Military District | Irurzun Prefecture
-        # administration: DC | Benjamin Military District | Irurzun Prefecture
-        # administration: DC | Benjamin Military District | Irurzun Prefecture
-        # administration: DC | Benjamin Military District | Irurzun Prefecture
-        # administration: DC | Benjamin Military District | Irurzun Prefecture
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - DC
       - date: '2580-01-01'
         population: 6845754331.0
       - date: '2590-01-01'

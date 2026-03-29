@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: Rochelle
-sucsId: 2163
+sucsId: 2162
 xcood: -113.791
 ycood: -15.815
 spectralType:
-  source: DA:RW
+  source: MWDA world profiles
   value: K7V
 primarySlot:
-  source: DA:RW
+  source: MWDA world profiles
   value: 2
 event:
   - date: '2398-04-02'
@@ -55,59 +55,95 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.24
     sysPos:
-      source: DA:RW
+      source: MWDA world profiles
       value: 2
     icon: wet21
     pressure:
-      source: DA:RW
+      source: MWDA world profiles
       value: STANDARD
     atmosphere:
-      source: DA:RW
+      source: MWDA world profiles
       value: TAINTED_POISON
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: DA:RW
+      source: MWDA world profiles
       value: 0.74
     diameter: 9918
     density: 5.243271207215
     dayLength: 22
     yearLength: 0.8
     temperature:
-      source: DA:RW
+      source: MWDA world profiles
       value: 40
     water:
-      source: DA:RW
+      source: MWDA world profiles
       value: 86
     lifeForm:
-      source: DA:RW
+      source: MWDA world profiles
       value: REPTILE
-    desc: With vast mineral resources capable of sustaining a broad industrial base, and further blessed by an abundant water supply and soil rich enough for planting, Rochelle was an easy colony world to establish and settle in the early days of mankind‘s race to the stars. After the fall of the Terran Alliance, this world became a part of the Federation of Skye, thanks to a trading alliance with the McQuiston family on Skye, which further boosted its economic and industrial growth, until its subsequent conquest by the nearby Free Worlds League. In the wars that followed the collapse of the original Star League, Rochelle and its material wealth were hotly contested, and it was particularly ravaged during the savagery of the First and Second Succession Wars. In fact, as the Second War finally ground to a halt, House Marik‘s economic experts concluded that the mining, refining, and manufacturing centers on Rochelle had become hopelessly damaged by the widespread use of weapons of mass destruction. Indeed, so much nuclear and chemical waste had been released in the past eight decades of warfare that the League officially classified Rochelle as “unsalvageable” reconstruction efforts were soon abandoned, and the planet virtually evacuated. Despite this, the proud people who remained on Rochelle suffered through two centuries of war and death, but continued to mine valuable ore for export to industries deeper within the League. For a time, the world even became the headquarters of MediQuick, an interstellar mobile medical services corporation that offered its services to close to two dozen worlds on the Steiner-Marik border, until questionable business practices led to that company‘s demise. Despite the best efforts of the locals, the economy and infrastructure of this tortured and poisoned world continued to erode, leaving it a mere border post for League military forces to guard against their Lyran counterparts. During the Jihad, Lyran strike teams assaulted Rochelle in retaliation for renegade Free Worlds attacks, laying waste to the crumbling capital city of Arzenburg, on the northern continent of Caredon. Not until the world was ceded to Devlin Stone‘s nascent Republic would Rochelle‘s fortunes finally begin to turn for the better. Buoyed by an influx of new residents and the funds from the “peace dividend” made possible by dismantling armies, this world has finally begun to show signs of recovery from centuries of relentless warfare. The capital city, New Arzenburg, has just completed an expansion to its spaceport, opening up the planet to ore traffic as the mines on Caredon, now under the control of Rochelle Interstellar Incorporated, have begun to produce again. Rochelle‘s other continent, the southern landmass of Martinasia, however, remains largely abandoned, thanks to the high radiation and acid rains, lasting effects of the first two Succession Wars.
+    desc: With vast mineral resources capable of sustaining a broad industrial base,
+      and further blessed by an abundant water supply and soil rich enough for planting,
+      Rochelle was an easy colony world to establish and settle in the early days
+      of mankind‘s race to the stars. After the fall of the Terran Alliance, this
+      world became a part of the Federation of Skye, thanks to a trading alliance
+      with the McQuiston family on Skye, which further boosted its economic and industrial
+      growth, until its subsequent conquest by the nearby Free Worlds League. In the
+      wars that followed the collapse of the original Star League, Rochelle and its
+      material wealth were hotly contested, and it was particularly ravaged during
+      the savagery of the First and Second Succession Wars. In fact, as the Second
+      War finally ground to a halt, House Marik‘s economic experts concluded that
+      the mining, refining, and manufacturing centers on Rochelle had become hopelessly
+      damaged by the widespread use of weapons of mass destruction. Indeed, so much
+      nuclear and chemical waste had been released in the past eight decades of warfare
+      that the League officially classified Rochelle as “unsalvageable” reconstruction
+      efforts were soon abandoned, and the planet virtually evacuated. Despite this,
+      the proud people who remained on Rochelle suffered through two centuries of
+      war and death, but continued to mine valuable ore for export to industries deeper
+      within the League. For a time, the world even became the headquarters of MediQuick,
+      an interstellar mobile medical services corporation that offered its services
+      to close to two dozen worlds on the Steiner-Marik border, until questionable
+      business practices led to that company‘s demise. Despite the best efforts of
+      the locals, the economy and infrastructure of this tortured and poisoned world
+      continued to erode, leaving it a mere border post for League military forces
+      to guard against their Lyran counterparts. During the Jihad, Lyran strike teams
+      assaulted Rochelle in retaliation for renegade Free Worlds attacks, laying waste
+      to the crumbling capital city of Arzenburg, on the northern continent of Caredon.
+      Not until the world was ceded to Devlin Stone‘s nascent Republic would Rochelle‘s
+      fortunes finally begin to turn for the better. Buoyed by an influx of new residents
+      and the funds from the “peace dividend” made possible by dismantling armies,
+      this world has finally begun to show signs of recovery from centuries of relentless
+      warfare. The capital city, New Arzenburg, has just completed an expansion to
+      its spaceport, opening up the planet to ore traffic as the mines on Caredon,
+      now under the control of Rochelle Interstellar Incorporated, have begun to produce
+      again. Rochelle‘s other continent, the southern landmass of Martinasia, however,
+      remains largely abandoned, thanks to the high radiation and acid rains, lasting
+      effects of the first two Succession Wars.
     ring:
-      source: DA:RW
+      source: MWDA world profiles
       value: yes
     landmass:
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Caredon
         capital:
-          source: DA:RW
+          source: MWDA world profiles
           value: New Arzenburg
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Martinasia
     satellite:
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Derika
         size: medium
         icon: rock10
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Nohea
         size: medium
         icon: oddmoon3
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Ululani
         size: medium
         icon: rock15
@@ -144,12 +180,6 @@ planet:
       - date: '2350-01-01'
         population: 178660819.0
       - date: '2355-06-11'
-        # administration: LA | Federation of Skye
-        # administration: LA | Federation of Skye
-        # administration: LA | Federation of Skye
-        # administration: LA | Federation of Skye
-        # administration: LA | Federation of Skye
-        # administration: LA | Federation of Skye
         faction:
           source: canon
           value:
@@ -259,25 +289,7 @@ planet:
         population: 1639909829.0
       - date: '2820-01-01'
         population: 1635112719.0
-      - date: '2821-01-01'
-        # administration: LA | Federation of Skye | Rahneshire
-        # administration: LA | Federation of Skye | Rahneshire
-        # administration: LA | Federation of Skye | Rahneshire
-        # administration: LA | Federation of Skye | Rahneshire
-        # administration: LA | Federation of Skye | Rahneshire
-        # administration: LA | Federation of Skye | Rahneshire
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LA
       - date: '2821-07-30'
-        # administration: LA | Federation of Skye | Rahneshire
-        # administration: LA | Federation of Skye | Rahneshire
-        # administration: LA | Federation of Skye | Rahneshire
-        # administration: LA | Federation of Skye | Rahneshire
-        # administration: LA | Federation of Skye | Rahneshire
-        # administration: LA | Federation of Skye | Rahneshire
         faction:
           source: canon
           value:
@@ -359,12 +371,6 @@ planet:
           source: canon
           value:
             - WOB
-      - date: '3079-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - Stone
       - date: '3079-09-01'
         faction:
           source: canon
@@ -378,25 +384,7 @@ planet:
             - Stone
       - date: '3080-01-01'
         population: 1677527128.0
-      - date: '3081-01-01'
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - ROS
       - date: '3081-11-26'
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
         faction:
           source: canon
           value:
@@ -415,12 +403,6 @@ planet:
         population: 1785539770.0
       - date: '3132-08-07'
         hpg: X
-      - date: '3135-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '3135-10-01'
         faction:
           source: canon
@@ -433,12 +415,6 @@ planet:
             - PC
       - date: '3140-01-01'
         population: 1785182697.0
-      - date: '3145-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CWE
       - date: '3145-09-17'
         faction:
           source: canon
@@ -446,12 +422,6 @@ planet:
             - CWE
         population: 1784825697.0
       - date: '3151-11-15'
-        # administration: FWL | Covenant Worlds
-        # administration: FWL | Covenant Worlds
-        # administration: FWL | Covenant Worlds
-        # administration: FWL | Covenant Worlds
-        # administration: FWL | Covenant Worlds
-        # administration: FWL | Covenant Worlds
         faction:
           source: canon
           value:

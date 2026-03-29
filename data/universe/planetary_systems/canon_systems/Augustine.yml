@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -20,13 +20,11 @@ sucsId: 211
 xcood: -43.697
 ycood: -76.821
 spectralType:
-  source: 'HB:HM'
+  source: 'Handbook: House Marik, pg. 61'
   value: G4II
-  page: 61
 primarySlot:
-  source: 'HB:HM'
+  source: 'Handbook: House Marik, pg. 61'
   value: 6
-  page: 61
 event:
   - date: '2388-10-11'
     zenithCharge: yes
@@ -131,39 +129,32 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 1.44
     sysPos:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 61'
       value: 6
-      page: 61
     icon: green26
     pressure:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 61'
       value: HIGH
-      page: 61
     atmosphere:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 61'
       value: BREATHABLE
-      page: 61
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 61'
       value: 1.0
-      page: 61
     diameter: 11090
     density: 6.337045972535
     dayLength: 19
     yearLength: 2.0
     temperature:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 61'
       value: 55
-      page: 61
     water:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 61'
       value: 67
-      page: 61
     lifeForm:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 61'
       value: MAMMAL
-      page: 61
     desc: |-
       Augustine was originally settled as a religious colony by Jesuits. However, since its founding the planet has attracted a broad range of peoples and religions and grew to be an important part of the Marik Commonwealth. Unfortunately brutal fighting during the early Succession Wars saw the population drop by more than half. Additionally the famous Seminary and much of the planet’s infrastructure was destroyed.
 
@@ -172,40 +163,33 @@ planet:
       The primary industries on Augustine involve extracting raw minerals from the planet and processing petrochemicals on the northern continent of Kabuko and agriculture on other two continents, Roma and Grecian.
     landmass:
       - name:
-          source: 'HB:HM'
+          source: 'Handbook: House Marik, pg. 61'
           value: Grecian
-          page: 61
       - name:
-          source: 'HB:HM'
+          source: 'Handbook: House Marik, pg. 61'
           value: Kabuko
-          page: 61
       - name:
-          source: 'HB:HM'
+          source: 'Handbook: House Marik, pg. 61'
           value: Roma
-          page: 61
     satellite:
       - name:
-          source: 'HB:HM'
+          source: 'Handbook: House Marik, pg. 61'
           value: Bona
-          page: 61
         size: medium
         icon: rock6
       - name:
-          source: 'HB:HM'
+          source: 'Handbook: House Marik, pg. 61'
           value: Numidia
-          page: 61
         size: large
         icon: rock13
       - name:
-          source: 'HB:HM'
+          source: 'Handbook: House Marik, pg. 61'
           value: Suk Arras
-          page: 61
         size: large
         icon: rock4
       - name:
-          source: 'HB:HM'
+          source: 'Handbook: House Marik, pg. 61'
           value: Tagaste
-          page: 61
         size: medium
         icon: oddmoon1
     event:
@@ -223,12 +207,6 @@ planet:
       - date: '2270-01-01'
         population: 1798182.0
       - date: '2271-06-01'
-        # administration: FWL | Marik Commonwealth
-        # administration: FWL | Marik Commonwealth
-        # administration: FWL | Marik Commonwealth
-        # administration: FWL | Marik Commonwealth
-        # administration: FWL | Marik Commonwealth
-        # administration: FWL | Marik Commonwealth
         faction:
           source: canon
           value:
@@ -417,12 +395,6 @@ planet:
           value: 1975500000.0
       - date: '3070-01-01'
         population: 1981435399.0
-      - date: '3079-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - MCM
       - date: '3079-02-23'
         faction:
           source: canon
@@ -430,31 +402,7 @@ planet:
             - MSC
       - date: '3080-01-01'
         population: 2013796066.0
-      - date: '3081-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - MCM
-      - date: '3085-01-01'
-        # administration: ROS | Prefecture VII
-        # administration: ROS | Prefecture VII
-        # administration: ROS | Prefecture VII
-        # administration: ROS | Prefecture VII
-        # administration: ROS | Prefecture VII
-        # administration: ROS | Prefecture VII
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - ROS
       - date: '3085-03-03'
-        # administration: ROS | Prefecture VII
-        # administration: ROS | Prefecture VII
-        # administration: ROS | Prefecture VII
-        # administration: ROS | Prefecture VII
-        # administration: ROS | Prefecture VII
-        # administration: ROS | Prefecture VII
         faction:
           source: canon
           value:
@@ -474,18 +422,6 @@ planet:
         hpg:
           source: canon
           value: X
-      - date: '3135-01-01'
-        # administration: SA | National Capital
-        # administration: SA | National Capital
-        # administration: SA | National Capital
-        # administration: SA | National Capital
-        # administration: SA | National Capital
-        # administration: SA | National Capital
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - SA
       - date: '3135-05-01'
         faction:
           source: canon
@@ -504,25 +440,8 @@ planet:
       - date: '3140-01-01'
         population: 2226924601.0
       - date: '3145-01-01'
-        # administration: FWL | Augustine Alliance
-        # administration: FWL | Augustine Alliance
-        # administration: FWL | Augustine Alliance
-        # administration: FWL | Augustine Alliance
-        # administration: FWL | Augustine Alliance
-        # administration: FWL | Augustine Alliance
         population: 2241670912.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FWL
       - date: '3151-01-01'
-        # administration: FWL | Augustine Alliance
-        # administration: FWL | Augustine Alliance
-        # administration: FWL | Augustine Alliance
-        # administration: FWL | Augustine Alliance
-        # administration: FWL | Augustine Alliance
-        # administration: FWL | Augustine Alliance
         faction:
           source: sucs
           value:

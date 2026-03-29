@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -20,13 +20,11 @@ sucsId: 391
 xcood: 79.087
 ycood: -200.359
 spectralType:
-  source: 'HB:HL'
+  source: 'Handbook: House Liao, pg. 82'
   value: F9III
-  page: 82
 primarySlot:
-  source: 'HB:HL'
+  source: 'Handbook: House Liao, pg. 82'
   value: 4
-  page: 82
 event:
   - date: '2383-02-22'
     zenithCharge: yes
@@ -82,39 +80,32 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 3.08
     sysPos:
-      source: 'HB:HL'
+      source: 'Handbook: House Liao, pg. 82'
       value: 4
-      page: 82
     icon: green41
     pressure:
-      source: 'HB:HL'
+      source: 'Handbook: House Liao, pg. 82'
       value: THIN
-      page: 82
     atmosphere:
-      source: 'HB:HL'
+      source: 'Handbook: House Liao, pg. 82'
       value: BREATHABLE
-      page: 82
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'HB:HL'
+      source: 'Handbook: House Liao, pg. 82'
       value: 1.01
-      page: 82
     diameter: 13015
     density: 5.453666860484
     dayLength: 23
     yearLength: 5.5
     temperature:
-      source: 'HB:HL'
+      source: 'Handbook: House Liao, pg. 82'
       value: 28
-      page: 82
     water:
-      source: 'HB:HL'
+      source: 'Handbook: House Liao, pg. 82'
       value: 23
-      page: 82
     lifeForm:
-      source: 'HB:HL'
+      source: 'Handbook: House Liao, pg. 82'
       value: MAMMAL
-      page: 82
     desc: |-
       Brighton was originally settled to take advantage of the vast deposits of copper and silver ore that the planet’s initial surveying detected. The planet was independent for its early history before joining the St. Ives Mercantile Association and later the Capellan Confederation.
 
@@ -126,9 +117,8 @@ planet:
         capital: Sétanta
     satellite:
       - name:
-          source: 'HB:HL'
+          source: 'Handbook: House Liao, pg. 82'
           value: Brazen Heart
-          page: 82
         size: medium
         icon: rock17
     event:
@@ -163,19 +153,7 @@ planet:
         population: 363255148.0
       - date: '2360-01-01'
         population: 510001129.0
-      - date: '2366-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - SIML
       - date: '2367-07-01'
-        # administration: CC | St. Ives Commonality | Region 2
-        # administration: CC | St. Ives Commonality | Region 2
-        # administration: CC | St. Ives Commonality | Region 2
-        # administration: CC | St. Ives Commonality | Region 2
-        # administration: CC | St. Ives Commonality | Region 2
-        # administration: CC | St. Ives Commonality | Region 2
         faction:
           source: canon
           value:
@@ -330,25 +308,7 @@ planet:
           value: 3998000000.0
       - date: '3026-01-01'
         socioIndustrial: D-F-F-D-C
-      - date: '3030-01-01'
-        # administration: SIC | Region 2
-        # administration: SIC | Region 2
-        # administration: SIC | Region 2
-        # administration: SIC | Region 2
-        # administration: SIC | Region 2
-        # administration: SIC | Region 2
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - SIC
       - date: '3030-01-16'
-        # administration: SIC | Region 2
-        # administration: SIC | Region 2
-        # administration: SIC | Region 2
-        # administration: SIC | Region 2
-        # administration: SIC | Region 2
-        # administration: SIC | Region 2
         faction:
           source: canon
           value:
@@ -365,12 +325,6 @@ planet:
       - date: '3060-01-01'
         population: 4438327848.0
       - date: '3062-05-18'
-        # administration: CC | St. Ives Commonality | Region 1
-        # administration: CC | St. Ives Commonality | Region 1
-        # administration: CC | St. Ives Commonality | Region 1
-        # administration: CC | St. Ives Commonality | Region 1
-        # administration: CC | St. Ives Commonality | Region 1
-        # administration: CC | St. Ives Commonality | Region 1
         faction:
           source: canon
           value:

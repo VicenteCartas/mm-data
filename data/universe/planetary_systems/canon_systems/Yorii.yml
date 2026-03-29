@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: Yorii
-sucsId: 2803
+sucsId: 2802
 xcood: -8.015
 ycood: 21.153
 spectralType:
-  source: DA:RW
+  source: MWDA world profiles
   value: F6V
 primarySlot:
-  source: DA:RW
+  source: MWDA world profiles
   value: 1
 event:
   - date: '2375-06-09'
@@ -41,48 +41,81 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 1.3
     sysPos:
-      source: DA:RW
+      source: MWDA world profiles
       value: 1
     icon: wet6
     pressure:
-      source: DA:RW
+      source: MWDA world profiles
       value: STANDARD
     atmosphere:
-      source: DA:RW
+      source: MWDA world profiles
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: DA:RW
+      source: MWDA world profiles
       value: 1.12
     diameter: 14578
     density: 5.399243314313
     dayLength: 26
     yearLength: 1.9
     temperature:
-      source: DA:RW
+      source: MWDA world profiles
       value: 40
     water:
-      source: DA:RW
+      source: MWDA world profiles
       value: 81
     lifeForm:
-      source: DA:RW
+      source: MWDA world profiles
       value: REPTILE
-    desc: 3135 - A large world of large oceans, diverse wildlife, and a few veins of mineral resources, the biggest obstacles to the colonization of Yorii were the planet‘s stronger-than-average gravity, its native, territorial wildlife, and the fact that its soils did not support the majority of Terran food crops. None of these factors proved insurmountable to the early colonists, however, who simply learned to adapt and established thriving industrial and mining communities on three of Yorii‘s four island-continents. Heavy-metal deposits, some very deep below the planetary surface, and most accessible to off-shore drilling platforms, provided the basis of the planetary economy, while the few hybrid food crops that could be grown became the staples of the planet‘s mostly Asian population. On the continent of Yokohama, where the dominant native life-form, the Yoriian tiger-raptor, was most populous, the colonists built high walls around their settlements and farmlands, and began a hunting initiative that brought the bold reptilian predators under control within a decade. In the days of the Star League, Yorii‘s capital city, Neo-Tokyo, set on the shore of the planet‘s largest continent, Shokaku, was a haven for commercial trade between the Draconis Combine and the Terran Hegemony, and a healthy portion of the city's population claimed dual citizenship in both realms. During the Amaris crisis, the Usurper‘s troops used many of Yorii‘s larger cities and industrial complexes as battlefields when the SLDF came to liberate the planet, which ravaged the planet‘s economy and infrastructure, rendering millions homeless and millions more dead. Neo-Tokyo was left totally uninhabitable when the last of Amaris‘ holdouts deliberately sabotaged the fusion reactor that powered the city in an effort to distract the League troops while they made an escape attempt. The Draconis Combine easily assimilated Yorii after the fall of the League, establishing the planet as a forward base for raids against the Lyran Commonwealth, Capellan Confederation, and Federated Suns. Despite numerous punitive raids and the ravages of the Succession Wars, Yorii gradually managed to reclaim some of its former prosperity, only to lose it again when Word of Blake forces struck during the Jihad. Today, Yorii is a recovering world, its mining and manufacturing settlements only now reaching their pre-Jihad capacity, while farmlands poisoned by the Blakist troops still lie fallow. Each of the four populated continents—Shokaku in the south, Yokohama to its northeast, Khesan and Xu-Lai in the north—now support a handful of major cities, with the new capital city of Shenobi on Yokohama.
+    desc: 3135 - A large world of large oceans, diverse wildlife, and a few veins
+      of mineral resources, the biggest obstacles to the colonization of Yorii were
+      the planet‘s stronger-than-average gravity, its native, territorial wildlife,
+      and the fact that its soils did not support the majority of Terran food crops.
+      None of these factors proved insurmountable to the early colonists, however,
+      who simply learned to adapt and established thriving industrial and mining communities
+      on three of Yorii‘s four island-continents. Heavy-metal deposits, some very
+      deep below the planetary surface, and most accessible to off-shore drilling
+      platforms, provided the basis of the planetary economy, while the few hybrid
+      food crops that could be grown became the staples of the planet‘s mostly Asian
+      population. On the continent of Yokohama, where the dominant native life-form,
+      the Yoriian tiger-raptor, was most populous, the colonists built high walls
+      around their settlements and farmlands, and began a hunting initiative that
+      brought the bold reptilian predators under control within a decade. In the days
+      of the Star League, Yorii‘s capital city, Neo-Tokyo, set on the shore of the
+      planet‘s largest continent, Shokaku, was a haven for commercial trade between
+      the Draconis Combine and the Terran Hegemony, and a healthy portion of the city's
+      population claimed dual citizenship in both realms. During the Amaris crisis,
+      the Usurper‘s troops used many of Yorii‘s larger cities and industrial complexes
+      as battlefields when the SLDF came to liberate the planet, which ravaged the
+      planet‘s economy and infrastructure, rendering millions homeless and millions
+      more dead. Neo-Tokyo was left totally uninhabitable when the last of Amaris‘
+      holdouts deliberately sabotaged the fusion reactor that powered the city in
+      an effort to distract the League troops while they made an escape attempt. The
+      Draconis Combine easily assimilated Yorii after the fall of the League, establishing
+      the planet as a forward base for raids against the Lyran Commonwealth, Capellan
+      Confederation, and Federated Suns. Despite numerous punitive raids and the ravages
+      of the Succession Wars, Yorii gradually managed to reclaim some of its former
+      prosperity, only to lose it again when Word of Blake forces struck during the
+      Jihad. Today, Yorii is a recovering world, its mining and manufacturing settlements
+      only now reaching their pre-Jihad capacity, while farmlands poisoned by the
+      Blakist troops still lie fallow. Each of the four populated continents—Shokaku
+      in the south, Yokohama to its northeast, Khesan and Xu-Lai in the north—now
+      support a handful of major cities, with the new capital city of Shenobi on Yokohama.
     landmass:
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Khesan
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Shokaku
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Xu-Lai
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Yokohama
         capital:
-          source: DA:RW
+          source: MWDA world profiles
           value: Shenobi
     event:
       - date: '2269-06-05'
@@ -108,12 +141,6 @@ planet:
           value:
             - TH
       - date: '2317-01-23'
-        # administration: TH | Alliance Core
-        # administration: TH | Alliance Core
-        # administration: TH | Alliance Core
-        # administration: TH | Alliance Core
-        # administration: TH | Alliance Core
-        # administration: TH | Alliance Core
         faction:
           source: canon
           value:
@@ -216,18 +243,6 @@ planet:
         population: 1545096784.0
       - date: '2760-01-01'
         population: 1538516566.0
-      - date: '2767-01-01'
-        # administration: AE | Alliance Core
-        # administration: AE | Alliance Core
-        # administration: AE | Alliance Core
-        # administration: AE | Alliance Core
-        # administration: AE | Alliance Core
-        # administration: AE | Alliance Core
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - AE
       - date: '2767-04-19'
         faction:
           source: canon
@@ -236,12 +251,6 @@ planet:
       - date: '2770-01-01'
         population: 1522895280.0
       - date: '2779-10-15'
-        # administration: TH | Alliance Core
-        # administration: TH | Alliance Core
-        # administration: TH | Alliance Core
-        # administration: TH | Alliance Core
-        # administration: TH | Alliance Core
-        # administration: TH | Alliance Core
         faction:
           source: canon
           value:
@@ -249,12 +258,6 @@ planet:
       - date: '2780-01-01'
         population: 1505687456.0
       - date: '2790-12-18'
-        # administration: DC | Dieron Military District | Lone Star Prefecture
-        # administration: DC | Dieron Military District | Lone Star Prefecture
-        # administration: DC | Dieron Military District | Lone Star Prefecture
-        # administration: DC | Dieron Military District | Lone Star Prefecture
-        # administration: DC | Dieron Military District | Lone Star Prefecture
-        # administration: DC | Dieron Military District | Lone Star Prefecture
         faction:
           source: canon
           value:
@@ -267,12 +270,6 @@ planet:
       - date: '2820-01-01'
         population: 1412011909.0
       - date: '2821-06-20'
-        # administration: DC | Dieron Military District | Lone Star Prefecture
-        # administration: DC | Dieron Military District | Lone Star Prefecture
-        # administration: DC | Dieron Military District | Lone Star Prefecture
-        # administration: DC | Dieron Military District | Lone Star Prefecture
-        # administration: DC | Dieron Military District | Lone Star Prefecture
-        # administration: DC | Dieron Military District | Lone Star Prefecture
         faction:
           source: canon
           value:
@@ -321,18 +318,6 @@ planet:
         population: 1180332248.0
       - date: '3020-01-01'
         population: 1157592930.0
-      - date: '3030-01-01'
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LA
       - date: '3030-01-27'
         faction:
           source: canon
@@ -342,25 +327,8 @@ planet:
       - date: '3032-01-01'
         socioIndustrial: B-D-C-B-D
       - date: '3040-01-01'
-        # administration: FC | Skye March | Ryde Operational Area
-        # administration: FC | Skye March | Ryde Operational Area
-        # administration: FC | Skye March | Ryde Operational Area
-        # administration: FC | Skye March | Ryde Operational Area
-        # administration: FC | Skye March | Ryde Operational Area
-        # administration: FC | Skye March | Ryde Operational Area
         population: 1162886305.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FC
       - date: '3040-01-19'
-        # administration: FC | Skye March | Ryde Operational Area
-        # administration: FC | Skye March | Ryde Operational Area
-        # administration: FC | Skye March | Ryde Operational Area
-        # administration: FC | Skye March | Ryde Operational Area
-        # administration: FC | Skye March | Ryde Operational Area
-        # administration: FC | Skye March | Ryde Operational Area
         faction:
           source: canon
           value:
@@ -369,18 +337,6 @@ planet:
         socioIndustrial: A-C-B-B-C
       - date: '3050-01-01'
         population: 1173282186.0
-      - date: '3057-01-01'
-        # administration: LA | Skye March | Ryde Operational Area
-        # administration: LA | Skye March | Ryde Operational Area
-        # administration: LA | Skye March | Ryde Operational Area
-        # administration: LA | Skye March | Ryde Operational Area
-        # administration: LA | Skye March | Ryde Operational Area
-        # administration: LA | Skye March | Ryde Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LA
       - date: '3057-09-18'
         faction:
           source: canon
@@ -392,37 +348,13 @@ planet:
           value:
             - DC
             - LA
-      - date: '3058-01-01'
-        # administration: LA | Skye Province | Freedom Theater
-        # administration: LA | Skye Province | Freedom Theater
-        # administration: LA | Skye Province | Freedom Theater
-        # administration: LA | Skye Province | Freedom Theater
-        # administration: LA | Skye Province | Freedom Theater
-        # administration: LA | Skye Province | Freedom Theater
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LA
       - date: '3060-01-01'
         population: 1180579133.0
       - date: '3062-09-17'
-        # administration: DC | Dieron Military District | Kessel Prefecture
-        # administration: DC | Dieron Military District | Kessel Prefecture
-        # administration: DC | Dieron Military District | Kessel Prefecture
-        # administration: DC | Dieron Military District | Kessel Prefecture
-        # administration: DC | Dieron Military District | Kessel Prefecture
-        # administration: DC | Dieron Military District | Kessel Prefecture
         faction:
           source: canon
           value:
             - DC
-      - date: '3068-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - WOB
       - date: '3068-06-19'
         faction:
           source: canon
@@ -443,25 +375,7 @@ planet:
             - Stone
       - date: '3080-01-01'
         population: 1195428991.0
-      - date: '3081-01-01'
-        # administration: ROS | Prefecture X
-        # administration: ROS | Prefecture X
-        # administration: ROS | Prefecture X
-        # administration: ROS | Prefecture X
-        # administration: ROS | Prefecture X
-        # administration: ROS | Prefecture X
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - ROS
       - date: '3081-06-15'
-        # administration: ROS | Prefecture X
-        # administration: ROS | Prefecture X
-        # administration: ROS | Prefecture X
-        # administration: ROS | Prefecture X
-        # administration: ROS | Prefecture X
-        # administration: ROS | Prefecture X
         faction:
           source: canon
           value:
@@ -484,18 +398,6 @@ planet:
         population: 1218115642.0
       - date: '3145-01-01'
         population: 1217384992.0
-      - date: '3151-01-01'
-        # administration: RD | Region 4
-        # administration: RD | Region 4
-        # administration: RD | Region 4
-        # administration: RD | Region 4
-        # administration: RD | Region 4
-        # administration: RD | Region 4
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - RD
       - date: '3152-06-01'
         faction:
           source: canon

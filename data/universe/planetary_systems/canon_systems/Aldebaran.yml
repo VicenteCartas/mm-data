@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -20,13 +20,11 @@ sucsId: 59
 xcood: 24.813
 ycood: -64.414
 spectralType:
-  source: HLSB
+  source: House Liao, pg. 139
   value: K5III
-  page: 139
 primarySlot:
-  source: HLSB
+  source: House Liao, pg. 139
   value: 5
-  page: 139
 event:
   - date: '2359-07-17'
     zenithCharge: yes
@@ -106,9 +104,8 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.7
     sysPos:
-      source: HLSB
+      source: House Liao, pg. 139
       value: 5
-      page: 139
     icon: green33
     pressure: STANDARD
     atmosphere: BREATHABLE
@@ -121,10 +118,17 @@ planet:
     temperature: 27
     water: 39
     lifeForm:
-      source: HLSB
+      source: House Liao, pg. 139
       value: MAMMAL
-      page: 139
-    desc: As of 3025 - Aldebaran is one of the oldest settled planets in the Confederation. It is a modest world with a moderate climate. Aldebaran has seen substantial fighting during the Succession Wars and remains a tempting target for both the Free World League and the Federated Suns due to it location in a natural invasion route to the interior of the Tikonov Commonality. Aldebaran has a permanent military base, home for the Ijori Warrior House regiment and several squadrons of aerospace fighters. Historically, Aldebaran has been a major commercial and industrial hub, and though much reduced in capacity due to the Succession War fighting, the planet still has a moderate and slowly growing industrial capacity.
+    desc: As of 3025 - Aldebaran is one of the oldest settled planets in the Confederation.
+      It is a modest world with a moderate climate. Aldebaran has seen substantial
+      fighting during the Succession Wars and remains a tempting target for both the
+      Free World League and the Federated Suns due to it location in a natural invasion
+      route to the interior of the Tikonov Commonality. Aldebaran has a permanent
+      military base, home for the Ijori Warrior House regiment and several squadrons
+      of aerospace fighters. Historically, Aldebaran has been a major commercial and
+      industrial hub, and though much reduced in capacity due to the Succession War
+      fighting, the planet still has a moderate and slowly growing industrial capacity.
     smallMoons: 1
     landmass:
       - name: MacKinney 1
@@ -231,25 +235,7 @@ planet:
         population: 4544781751.0
       - date: '2570-01-01'
         population: 4677083418.0
-      - date: '2571-01-01'
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - TH
       - date: '2571-10-08'
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
         faction:
           source: canon
           value:
@@ -298,18 +284,6 @@ planet:
         population: 5535463654.0
       - date: '2760-01-01'
         population: 5575156497.0
-      - date: '2767-01-01'
-        # administration: AE | Terra Firma Province
-        # administration: AE | Terra Firma Province
-        # administration: AE | Terra Firma Province
-        # administration: AE | Terra Firma Province
-        # administration: AE | Terra Firma Province
-        # administration: AE | Terra Firma Province
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - AE
       - date: '2767-07-20'
         faction:
           source: canon
@@ -318,37 +292,13 @@ planet:
       - date: '2770-01-01'
         population: 5621310674.0
       - date: '2779-05-12'
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
         faction:
           source: canon
           value:
             - TH
       - date: '2780-01-01'
         population: 5578688734.0
-      - date: '2786-01-01'
-        # administration: CC | Tikonov Commonality | Region 2
-        # administration: CC | Tikonov Commonality | Region 2
-        # administration: CC | Tikonov Commonality | Region 2
-        # administration: CC | Tikonov Commonality | Region 2
-        # administration: CC | Tikonov Commonality | Region 2
-        # administration: CC | Tikonov Commonality | Region 2
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CC
       - date: '2786-03-20'
-        # administration: CC | Tikonov Commonality | Region 6
-        # administration: CC | Tikonov Commonality | Region 6
-        # administration: CC | Tikonov Commonality | Region 6
-        # administration: CC | Tikonov Commonality | Region 6
-        # administration: CC | Tikonov Commonality | Region 6
-        # administration: CC | Tikonov Commonality | Region 6
         faction:
           source: canon
           value:
@@ -421,18 +371,7 @@ planet:
           value:
             - FS
       - date: '3030-01-01'
-        # administration: LA | Sarna March | Tikonov Operational Area
-        # administration: LA | Sarna March | Tikonov Operational Area
-        # administration: LA | Sarna March | Tikonov Operational Area
-        # administration: LA | Sarna March | Tikonov Operational Area
-        # administration: LA | Sarna March | Tikonov Operational Area
-        # administration: LA | Sarna March | Tikonov Operational Area
         population: 3651268184.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LA
       - date: '3030-02-28'
         faction:
           source: canon
@@ -441,25 +380,8 @@ planet:
       - date: '3032-01-01'
         socioIndustrial: B-C-C-B-C
       - date: '3040-01-01'
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
         population: 2663873752.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FC
       - date: '3040-01-19'
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
         faction:
           source: canon
           value:
@@ -468,32 +390,14 @@ planet:
         socioIndustrial: A-B-B-A-B
       - date: '3050-01-01'
         population: 2007039884.0
-      - date: '3057-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '3057-11-01'
         faction:
           source: canon
           value:
             - CM
-      - date: '3058-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '3060-01-01'
         population: 1422494827.0
       - date: '3062-01-14'
-        # administration: CC | Liao Commonality | Region 1
-        # administration: CC | Liao Commonality | Region 1
-        # administration: CC | Liao Commonality | Region 1
-        # administration: CC | Liao Commonality | Region 1
-        # administration: CC | Liao Commonality | Region 1
-        # administration: CC | Liao Commonality | Region 1
         faction:
           source: canon
           value:
@@ -502,25 +406,7 @@ planet:
         population: 1106771622.0
       - date: '3080-01-01'
         population: 1118565800.0
-      - date: '3085-01-01'
-        # administration: ROS | Prefecture VI
-        # administration: ROS | Prefecture VI
-        # administration: ROS | Prefecture VI
-        # administration: ROS | Prefecture VI
-        # administration: ROS | Prefecture VI
-        # administration: ROS | Prefecture VI
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - ROS
       - date: '3085-05-17'
-        # administration: ROS | Prefecture VI
-        # administration: ROS | Prefecture VI
-        # administration: ROS | Prefecture VI
-        # administration: ROS | Prefecture VI
-        # administration: ROS | Prefecture VI
-        # administration: ROS | Prefecture VI
         faction:
           source: canon
           value:
@@ -541,12 +427,6 @@ planet:
         hpg:
           source: canon
           value: X
-      - date: '3135-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '3135-10-01'
         faction:
           source: canon
@@ -554,25 +434,7 @@ planet:
             - IND
       - date: '3140-01-01'
         population: 1229057148.0
-      - date: '3145-01-01'
-        # administration: CC | Tikonov Commonality | Region 4
-        # administration: CC | Tikonov Commonality | Region 4
-        # administration: CC | Tikonov Commonality | Region 4
-        # administration: CC | Tikonov Commonality | Region 4
-        # administration: CC | Tikonov Commonality | Region 4
-        # administration: CC | Tikonov Commonality | Region 4
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CC
       - date: '3145-02-15'
-        # administration: CC | Tikonov Commonality | Region 7
-        # administration: CC | Tikonov Commonality | Region 7
-        # administration: CC | Tikonov Commonality | Region 7
-        # administration: CC | Tikonov Commonality | Region 7
-        # administration: CC | Tikonov Commonality | Region 7
-        # administration: CC | Tikonov Commonality | Region 7
         faction:
           source: canon
           value:

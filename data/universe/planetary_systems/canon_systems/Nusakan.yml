@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,17 +16,15 @@
 # affiliated with Microsoft.
 
 id: Nusakan
-sucsId: 1914
+sucsId: 1913
 xcood: -34.772
 ycood: 43.29
 spectralType:
-  source: SLSB
+  source: Star League, pg. 175
   value: K0V
-  page: 175
 primarySlot:
-  source: SLSB
+  source: Star League, pg. 175
   value: 3
-  page: 175
 event:
   - date: '2353-10-17'
     zenithCharge: yes
@@ -81,34 +79,32 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.8
     sysPos:
-      source: SLSB
+      source: Star League, pg. 175
       value: 3
-      page: 175
     icon: green22
     pressure:
-      source: DA:RW
+      source: MWDA world profiles
       value: STANDARD
     atmosphere:
-      source: DA:RW
+      source: MWDA world profiles
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: DA:RW
+      source: MWDA world profiles
       value: 1.08
     diameter: 15090
     density: 5.029849361948
     dayLength: 27
     yearLength: 1.1
     temperature:
-      source: DA:RW
+      source: MWDA world profiles
       value: 27
     water:
-      source: DA:RW
+      source: MWDA world profiles
       value: 42
     lifeForm:
-      source: SLSB
+      source: Star League, pg. 175
       value: AMPHIBIAN
-      page: 175
     desc: |-
       3135 - High-grade silicon and other minerals valuable to the electronics industry made the dim, cool world of Nusakan a natural center for the computer and electronics trades, despite its low water supply and the inhospitality of its northern and southern tundra. By the time of the Star League, this planet—jointly administered by the Lyran Commonwealth and the Terran Hegemony—was a heavily industrialized world, with such major corporations as Interstellar Business Computers and Pottor Light Computers claiming headquarters in the heart of its sprawling cities. Three Castles Brian were erected on the surface, along with twice as many military bases and spaceports, to secure these important assets against any aggressor.
 
@@ -119,25 +115,24 @@ planet:
       Today, Nusakan is home to a thriving population and reborn computer and electronics industries. Lenzo Computing Industries, one of the biggest computer manufacturers to develop in the post-Jihad era, has headquarters in Dularam City. Though widely known as a major producer of personal computers, LCI is currently in the middle of a massive diversification that could transform it into one of the biggest manufacturing corporations in the Inner Sphere, and it has already added military-grade electronics, including BattleMech and DropShip sensor gear, to its impressive list of quality products.
     landmass:
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Katamoros
         capital:
-          source: SLSB
+          source: Star League, pg. 175
           value: Jobs City
-          page: 175
     satellite:
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Harsholdt
         size: medium
         icon: rock13
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Niki
         size: large
         icon: rock9
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Xanthe
         size: large
         icon: rock6
@@ -176,18 +171,6 @@ planet:
         population: 840698.0
       - date: '2310-01-01'
         population: 1002963.0
-      - date: '2317-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
-      - date: '2319-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FoS
       - date: '2320-01-01'
         population: 1169028.0
       - date: '2330-01-01'
@@ -195,12 +178,6 @@ planet:
       - date: '2340-01-01'
         population: 1508810.0
       - date: '2341-10-20'
-        # administration: LA | Federation of Skye
-        # administration: LA | Federation of Skye
-        # administration: LA | Federation of Skye
-        # administration: LA | Federation of Skye
-        # administration: LA | Federation of Skye
-        # administration: LA | Federation of Skye
         faction:
           source: canon
           value:
@@ -293,18 +270,6 @@ planet:
         population: 3940897.0
       - date: '2760-01-01'
         population: 3950613.0
-      - date: '2767-01-01'
-        # administration: AE | Lone Star Province
-        # administration: AE | Lone Star Province
-        # administration: AE | Lone Star Province
-        # administration: AE | Lone Star Province
-        # administration: AE | Lone Star Province
-        # administration: AE | Lone Star Province
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - AE
       - date: '2767-03-01'
         faction:
           source: canon
@@ -323,39 +288,9 @@ planet:
           value:
             - LA
         population: 3926370.0
-      - date: '2783-01-01'
-        # administration: TH | Lone Star Province
-        # administration: TH | Lone Star Province
-        # administration: TH | Lone Star Province
-        # administration: TH | Lone Star Province
-        # administration: TH | Lone Star Province
-        # administration: TH | Lone Star Province
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - TH
       - date: '2785-01-01'
         population: 4000000.0
-      - date: '2786-01-01'
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LA
       - date: '2786-07-05'
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
         faction:
           source: canon
           value:
@@ -421,25 +356,8 @@ planet:
       - date: '3037-01-01'
         socioIndustrial: D-D-B-D-D
       - date: '3040-01-01'
-        # administration: FC | Skye March | Ryde Operational Area
-        # administration: FC | Skye March | Ryde Operational Area
-        # administration: FC | Skye March | Ryde Operational Area
-        # administration: FC | Skye March | Ryde Operational Area
-        # administration: FC | Skye March | Ryde Operational Area
-        # administration: FC | Skye March | Ryde Operational Area
         population: 947907.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FC
       - date: '3040-01-19'
-        # administration: FC | Skye March | Ryde Operational Area
-        # administration: FC | Skye March | Ryde Operational Area
-        # administration: FC | Skye March | Ryde Operational Area
-        # administration: FC | Skye March | Ryde Operational Area
-        # administration: FC | Skye March | Ryde Operational Area
-        # administration: FC | Skye March | Ryde Operational Area
         faction:
           source: canon
           value:
@@ -448,25 +366,7 @@ planet:
         socioIndustrial: C-C-A-C-C
       - date: '3050-01-01'
         population: 29434669.0
-      - date: '3057-01-01'
-        # administration: LA | Skye March | Ryde Operational Area
-        # administration: LA | Skye March | Ryde Operational Area
-        # administration: LA | Skye March | Ryde Operational Area
-        # administration: LA | Skye March | Ryde Operational Area
-        # administration: LA | Skye March | Ryde Operational Area
-        # administration: LA | Skye March | Ryde Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LA
       - date: '3057-09-18'
-        # administration: LA | Skye Province | Freedom Theater
-        # administration: LA | Skye Province | Freedom Theater
-        # administration: LA | Skye Province | Freedom Theater
-        # administration: LA | Skye Province | Freedom Theater
-        # administration: LA | Skye Province | Freedom Theater
-        # administration: LA | Skye Province | Freedom Theater
         faction:
           source: canon
           value:
@@ -477,25 +377,7 @@ planet:
         population: 1328546519.0
       - date: '3080-01-01'
         population: 1339217518.0
-      - date: '3081-01-01'
-        # administration: ROS | Prefecture IX
-        # administration: ROS | Prefecture IX
-        # administration: ROS | Prefecture IX
-        # administration: ROS | Prefecture IX
-        # administration: ROS | Prefecture IX
-        # administration: ROS | Prefecture IX
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - ROS
       - date: '3081-09-15'
-        # administration: ROS | Prefecture IX
-        # administration: ROS | Prefecture IX
-        # administration: ROS | Prefecture IX
-        # administration: ROS | Prefecture IX
-        # administration: ROS | Prefecture IX
-        # administration: ROS | Prefecture IX
         faction:
           source: canon
           value:
@@ -514,12 +396,6 @@ planet:
         population: 1374493778.0
       - date: '3132-08-07'
         hpg: X
-      - date: '3135-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '3135-10-01'
         faction:
           source: canon
@@ -527,24 +403,12 @@ planet:
             - IND
       - date: '3140-01-01'
         population: 1375593813.0
-      - date: '3145-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CJF
       - date: '3145-01-09'
         faction:
           source: canon
           value:
             - CJF
         population: 1378072112.0
-      - date: '3152-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '3152-06-01'
         faction:
           source: sucs

@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,16 +16,15 @@
 # affiliated with Microsoft.
 
 id: Hector
-sucsId: 2946
+sucsId: 2945
 xcood: 151.375
 ycood: 1769.752
 spectralType:
   source: canon
   value: F4V
 primarySlot:
-  source: WoK
+  source: Warriors of Kerensky, pg. 112
   value: 2
-  page: 112
 event:
   - date: '2804-03-07'
     zenithCharge: yes
@@ -51,39 +50,32 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 2.24
     sysPos:
-      source: WoK
+      source: Warriors of Kerensky, pg. 112
       value: 2
-      page: 112
     icon: green50
     pressure:
-      source: WoK
+      source: Warriors of Kerensky, pg. 112
       value: THIN
-      page: 112
     atmosphere:
-      source: WoK
+      source: Warriors of Kerensky, pg. 112
       value: BREATHABLE
-      page: 112
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: WoK
+      source: Warriors of Kerensky, pg. 112
       value: 1.0
-      page: 112
     diameter: 11954
     density: 5.878765906091
     dayLength: 23
     yearLength: 3.6
     temperature:
-      source: WoK
+      source: Warriors of Kerensky, pg. 112
       value: 15
-      page: 112
     water:
-      source: WoK
+      source: Warriors of Kerensky, pg. 112
       value: 25
-      page: 112
     lifeForm:
-      source: WoK
+      source: Warriors of Kerensky, pg. 112
       value: MAMMAL
-      page: 112
     desc: No description available.
     landmass:
       - name: Polk's Redoubt
@@ -101,12 +93,6 @@ planet:
         icon: oddmoon3
     event:
       - date: '2802-09-20'
-        # administration: CIH | National Capital
-        # administration: CIH | National Capital
-        # administration: CIH | National Capital
-        # administration: CIH | National Capital
-        # administration: CIH | National Capital
-        # administration: CIH | National Capital
         faction:
           source: canon
           value:
@@ -122,12 +108,6 @@ planet:
       - date: '2820-01-01'
         population: 160488.0
       - date: '2821-05-28'
-        # administration: CIH | National Capital
-        # administration: CIH | National Capital
-        # administration: CIH | National Capital
-        # administration: CIH | National Capital
-        # administration: CIH | National Capital
-        # administration: CIH | National Capital
         faction:
           source: canon
           value:
@@ -208,12 +188,6 @@ planet:
             - CSA
       - date: '3080-01-01'
         population: 11217727.0
-      - date: '3085-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CCC
       - date: '3085-10-10'
         faction:
           source: canon
@@ -256,7 +230,8 @@ planet:
     icon: barren14
     pressure: THIN
     atmosphere: TOXIC_CAUSTIC
-    composition: Nitrogen and Carbon Dioxide, plus trace amounts of Methane and Hydrochloric Acid
+    composition: Nitrogen and Carbon Dioxide, plus trace amounts of Methane and Hydrochloric
+      Acid
     gravity: 0.85
     diameter: 12500
     density: 4.7795

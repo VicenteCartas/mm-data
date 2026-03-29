@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -144,25 +144,7 @@ planet:
         population: 71327332.0
       - date: '2590-01-01'
         population: 75487281.0
-      - date: '2596-01-01'
-        # administration: DC | Galedon Military District | New Samarkand Prefecture
-        # administration: DC | Galedon Military District | New Samarkand Prefecture
-        # administration: DC | Galedon Military District | New Samarkand Prefecture
-        # administration: DC | Galedon Military District | New Samarkand Prefecture
-        # administration: DC | Galedon Military District | New Samarkand Prefecture
-        # administration: DC | Galedon Military District | New Samarkand Prefecture
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - DC
       - date: '2596-09-22'
-        # administration: DC | Galedon Military District | New Samarkand Prefecture
-        # administration: DC | Galedon Military District | New Samarkand Prefecture
-        # administration: DC | Galedon Military District | New Samarkand Prefecture
-        # administration: DC | Galedon Military District | New Samarkand Prefecture
-        # administration: DC | Galedon Military District | New Samarkand Prefecture
-        # administration: DC | Galedon Military District | New Samarkand Prefecture
         faction:
           source: canon
           value:
@@ -292,12 +274,6 @@ planet:
         hpg: X
       - date: '3140-01-01'
         population: 126634952.0
-      - date: '3145-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - RA
       - date: '3145-11-19'
         faction:
           source: canon
@@ -325,7 +301,8 @@ planet:
     icon: frozen43
     pressure: THIN
     atmosphere: TOXIC_POISON
-    composition: Methane and Carbon Dioxide, plus trace amounts of Carbon Dioxide and Simple Hydrocarbons
+    composition: Methane and Carbon Dioxide, plus trace amounts of Carbon Dioxide
+      and Simple Hydrocarbons
     gravity: 1.12
     diameter: 13500
     density: 5.8437

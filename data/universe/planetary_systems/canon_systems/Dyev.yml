@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -20,10 +20,10 @@ sucsId: 760
 xcood: 5.683
 ycood: 40.797
 spectralType:
-  source: DA:RW
+  source: MWDA world profiles
   value: K8III
 primarySlot:
-  source: DA:RW
+  source: MWDA world profiles
   value: 1
 event:
   - date: '2354-04-24'
@@ -35,31 +35,31 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.42
     sysPos:
-      source: DA:RW
+      source: MWDA world profiles
       value: 1
     icon: green8
     pressure:
-      source: DA:RW
+      source: MWDA world profiles
       value: STANDARD
     atmosphere:
-      source: DA:RW
+      source: MWDA world profiles
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: DA:RW
+      source: MWDA world profiles
       value: 1.04
     diameter: 11186
     density: 6.533657295009
     dayLength: 25
     yearLength: 0.8
     temperature:
-      source: DA:RW
+      source: MWDA world profiles
       value: 50
     water:
-      source: DA:RW
+      source: MWDA world profiles
       value: 27
     lifeForm:
-      source: DA:RW
+      source: MWDA world profiles
       value: MAMMAL
     desc: |-
       A warm, dry world chronically plagued by violent, long-lasting dust storms, Dyev was settled initially by Russian and Slavic entrepreneurs hoping to take advantage of the abundant raw metals found throughout the rugged mountains and dried-out canyons crisscrossing its surface. With the planet‘s water tied up mostly in two small oceans and a handful of meager lakes and rivers, the early colonists had to rely on ice ships for their freshwater needs. In the latter half of the twenty-fifth century, however, miners digging deep into the Tupik Chasm for a new vanadium vein instead stumbled upon a remarkable find in the form of a vast underground reservoir of fresh water. Other such subterranean lakes and seas were discovered deep below Dyev‘s surface over the following decades, mostly near the northern hemispheric canyons, and elaborate irrigation systems were devised to bring this water to the people for farming and general use. During the Amaris Crisis, the Usurper‘s troops attempted to poison these reserves to bring the people of Dyev to heel, and succeeded in irrevocably tainting a third of the underground seas before Kerensky‘s forces rolled over them during the liberation.
@@ -69,11 +69,11 @@ planet:
       The capital city of Dyev, Novaya Mensk, is located in the northern hemisphere, on the eastern shore of the Morye Syevir ocean, and serves as the commercial and administrative heart of the planet. Meanwhile, Trogport, a sprawling spaceport city just south of the larger Aleutican Ocean in the southern hemisphere, is the planet‘s primary connection to interstellar commerce. Trogport also serves as the home for a majority of the local aerospace defense forces, and as home to the headquarters offices of several local mining concerns.
     landmass:
       - capital:
-          source: DA:RW
+          source: MWDA world profiles
           value: Novaya Mensk
     satellite:
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Uter
         size: large
         icon: rock17
@@ -108,12 +108,6 @@ planet:
       - date: '2310-01-01'
         population: 232434724.0
       - date: '2315-04-17'
-        # administration: TH | Lone Star Province
-        # administration: TH | Lone Star Province
-        # administration: TH | Lone Star Province
-        # administration: TH | Lone Star Province
-        # administration: TH | Lone Star Province
-        # administration: TH | Lone Star Province
         faction:
           source: canon
           value:
@@ -214,18 +208,6 @@ planet:
         population: 3755757434.0
       - date: '2760-01-01'
         population: 3719999128.0
-      - date: '2767-01-01'
-        # administration: AE | Lone Star Province
-        # administration: AE | Lone Star Province
-        # administration: AE | Lone Star Province
-        # administration: AE | Lone Star Province
-        # administration: AE | Lone Star Province
-        # administration: AE | Lone Star Province
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - AE
       - date: '2767-10-18'
         faction:
           source: canon
@@ -234,12 +216,6 @@ planet:
       - date: '2770-01-01'
         population: 3677644273.0
       - date: '2779-01-25'
-        # administration: TH | Lone Star Province
-        # administration: TH | Lone Star Province
-        # administration: TH | Lone Star Province
-        # administration: TH | Lone Star Province
-        # administration: TH | Lone Star Province
-        # administration: TH | Lone Star Province
         faction:
           source: canon
           value:
@@ -247,12 +223,6 @@ planet:
       - date: '2780-01-01'
         population: 3618438219.0
       - date: '2790-02-01'
-        # administration: DC | Dieron Military District | Lone Star Prefecture
-        # administration: DC | Dieron Military District | Lone Star Prefecture
-        # administration: DC | Dieron Military District | Lone Star Prefecture
-        # administration: DC | Dieron Military District | Lone Star Prefecture
-        # administration: DC | Dieron Military District | Lone Star Prefecture
-        # administration: DC | Dieron Military District | Lone Star Prefecture
         faction:
           source: canon
           value:
@@ -308,18 +278,6 @@ planet:
         population: 2848371965.0
       - date: '3028-01-01'
         socioIndustrial: C-B-B-B-D
-      - date: '3030-01-01'
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LA
       - date: '3030-04-06'
         faction:
           source: canon
@@ -327,25 +285,8 @@ planet:
             - LA
         population: 2860140430.0
       - date: '3040-01-01'
-        # administration: FC | Skye March | Ryde Operational Area
-        # administration: FC | Skye March | Ryde Operational Area
-        # administration: FC | Skye March | Ryde Operational Area
-        # administration: FC | Skye March | Ryde Operational Area
-        # administration: FC | Skye March | Ryde Operational Area
-        # administration: FC | Skye March | Ryde Operational Area
         population: 2891775650.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FC
       - date: '3040-01-19'
-        # administration: FC | Skye March | Ryde Operational Area
-        # administration: FC | Skye March | Ryde Operational Area
-        # administration: FC | Skye March | Ryde Operational Area
-        # administration: FC | Skye March | Ryde Operational Area
-        # administration: FC | Skye March | Ryde Operational Area
-        # administration: FC | Skye March | Ryde Operational Area
         faction:
           source: canon
           value:
@@ -354,18 +295,6 @@ planet:
         socioIndustrial: B-A-A-A-D
       - date: '3050-01-01'
         population: 2916752165.0
-      - date: '3057-01-01'
-        # administration: LA | Skye March | Ryde Operational Area
-        # administration: LA | Skye March | Ryde Operational Area
-        # administration: LA | Skye March | Ryde Operational Area
-        # administration: LA | Skye March | Ryde Operational Area
-        # administration: LA | Skye March | Ryde Operational Area
-        # administration: LA | Skye March | Ryde Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LA
       - date: '3057-09-18'
         faction:
           source: canon
@@ -377,27 +306,9 @@ planet:
           value:
             - DC
             - LA
-      - date: '3058-01-01'
-        # administration: LA | Skye Province | Freedom Theater
-        # administration: LA | Skye Province | Freedom Theater
-        # administration: LA | Skye Province | Freedom Theater
-        # administration: LA | Skye Province | Freedom Theater
-        # administration: LA | Skye Province | Freedom Theater
-        # administration: LA | Skye Province | Freedom Theater
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LA
       - date: '3060-01-01'
         population: 2943415745.0
       - date: '3062-02-16'
-        # administration: DC | Dieron Military District | Kessel Prefecture
-        # administration: DC | Dieron Military District | Kessel Prefecture
-        # administration: DC | Dieron Military District | Kessel Prefecture
-        # administration: DC | Dieron Military District | Kessel Prefecture
-        # administration: DC | Dieron Military District | Kessel Prefecture
-        # administration: DC | Dieron Military District | Kessel Prefecture
         faction:
           source: canon
           value:
@@ -409,12 +320,6 @@ planet:
           source: canon
           value:
             - WOB
-      - date: '3075-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - Stone
       - date: '3075-07-28'
         faction:
           source: canon
@@ -428,33 +333,9 @@ planet:
             - CSR
             - Stone
             - WOB
-      - date: '3079-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - Stone
       - date: '3080-01-01'
         population: 2997476371.0
-      - date: '3081-01-01'
-        # administration: ROS | Prefecture I
-        # administration: ROS | Prefecture I
-        # administration: ROS | Prefecture I
-        # administration: ROS | Prefecture I
-        # administration: ROS | Prefecture I
-        # administration: ROS | Prefecture I
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - ROS
       - date: '3081-01-25'
-        # administration: ROS | Prefecture I
-        # administration: ROS | Prefecture I
-        # administration: ROS | Prefecture I
-        # administration: ROS | Prefecture I
-        # administration: ROS | Prefecture I
-        # administration: ROS | Prefecture I
         faction:
           source: canon
           value:
@@ -473,12 +354,6 @@ planet:
         population: 3135443794.0
       - date: '3132-08-07'
         hpg: X
-      - date: '3135-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '3135-10-01'
         faction:
           source: canon
@@ -486,18 +361,6 @@ planet:
             - IND
       - date: '3140-01-01'
         population: 3167588982.0
-      - date: '3145-01-01'
-        # administration: DC | Dieron Military District | Dieron Prefecture
-        # administration: DC | Dieron Military District | Dieron Prefecture
-        # administration: DC | Dieron Military District | Dieron Prefecture
-        # administration: DC | Dieron Military District | Dieron Prefecture
-        # administration: DC | Dieron Military District | Dieron Prefecture
-        # administration: DC | Dieron Military District | Dieron Prefecture
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - DC
       - date: '3145-01-09'
         faction:
           source: canon
@@ -510,12 +373,6 @@ planet:
           value:
             - RD
       - date: '3151-01-01'
-        # administration: RD | Region 3
-        # administration: RD | Region 3
-        # administration: RD | Region 3
-        # administration: RD | Region 3
-        # administration: RD | Region 3
-        # administration: RD | Region 3
         faction:
           source: sucs
           value:

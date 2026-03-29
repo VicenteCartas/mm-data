@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -86,7 +86,13 @@ planet:
     lifeForm:
       source: canon
       value: MAMMAL
-    desc: Bainsville an unremarkable planet with a comfortable atmosphere and a hot-temperate climate with abundant arable land and long growing seasons. While the planet is primarily an agricultural world, the planet does have enough light manufacturing spread across its relatively small cities to be self sufficient. The city Villafranca is located in the woodlands of the Glenroy continent and is home to an Austen-Armstrong Industries factory which produces personal arms. The planetary capital McGillis is located in the mountains of the Tyotown continent.
+    desc: Bainsville an unremarkable planet with a comfortable atmosphere and a hot-temperate
+      climate with abundant arable land and long growing seasons. While the planet
+      is primarily an agricultural world, the planet does have enough light manufacturing
+      spread across its relatively small cities to be self sufficient. The city Villafranca
+      is located in the woodlands of the Glenroy continent and is home to an Austen-Armstrong
+      Industries factory which produces personal arms. The planetary capital McGillis
+      is located in the mountains of the Tyotown continent.
     landmass:
       - name:
           source: canon
@@ -130,12 +136,6 @@ planet:
         population: 11054970.0
       - date: '2310-01-01'
         population: 19376540.0
-      - date: '2317-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '2320-01-01'
         population: 31619421.0
       - date: '2330-01-01'
@@ -146,18 +146,6 @@ planet:
         population: 98928832.0
       - date: '2360-01-01'
         population: 131902995.0
-      - date: '2366-01-01'
-        # administration: FWL | Stewart Confederation
-        # administration: FWL | Stewart Confederation
-        # administration: FWL | Stewart Confederation
-        # administration: FWL | Stewart Confederation
-        # administration: FWL | Stewart Confederation
-        # administration: FWL | Stewart Confederation
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FWL
       - date: '2370-01-01'
         population: 169622742.0
       - date: '2380-01-01'
@@ -318,12 +306,6 @@ planet:
         population: 841459284.0
       - date: '3080-01-01'
         population: 845169862.0
-      - date: '3081-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '3081-08-18'
         faction:
           source: canon
@@ -339,12 +321,6 @@ planet:
         population: 854688972.0
       - date: '3120-01-01'
         population: 861726235.0
-      - date: '3130-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - MSC
       - date: '3130-04-18'
         faction:
           source: canon
@@ -357,12 +333,6 @@ planet:
           value: X
       - date: '3140-01-01'
         population: 887792130.0
-      - date: '3145-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CWE
       - date: '3145-02-24'
         faction:
           source: canon

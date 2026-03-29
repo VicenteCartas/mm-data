@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: Kajikazawa
-sucsId: 1281
+sucsId: 1280
 xcood: 88.409
 ycood: 142.617
 spectralType:
-  source: HB:HK
+  source: House Kurita
   value: G5IV
 primarySlot:
-  source: HB:HK
+  source: House Kurita
   value: 4
 event:
   - date: '2390-05-30'
@@ -89,7 +89,7 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 1.44
     sysPos:
-      source: HB:HK
+      source: House Kurita
       value: 4
     icon: green38
     pressure:
@@ -111,9 +111,20 @@ planet:
       source: canon
       value: 71
     lifeForm:
-      source: HB:HK
+      source: House Kurita
       value: REPTILE
-    desc: Kajikazawa is a high-tech world with abundant natural resources and is a prefecture capital in the Benjamin Military District. The planet's close location to Benjamin results in a lot of the administrative work that normally appears on a prefecture capital getting re-routed from Benjamin. The Kai Koshu continent enjoys a mild climate and pleasant landscapes which the government capitalizes on, creating a major tourist industry and by renting out vacation mansions to the harried politicians of nearby Benjamin. After the Clan invasion the world experienced a large building boom. The Draconis Combine relocated the Cosby BattleMech and Myomer Research Firm plant to the continent of Kai Koshu near the city of Hokusai. In addition, a recharge station was constructed at the zenith jump point. As a result, Comstar is considering plans to upgrade the local HPG station to a Class A facility.
+    desc: Kajikazawa is a high-tech world with abundant natural resources and is a
+      prefecture capital in the Benjamin Military District. The planet's close location
+      to Benjamin results in a lot of the administrative work that normally appears
+      on a prefecture capital getting re-routed from Benjamin. The Kai Koshu continent
+      enjoys a mild climate and pleasant landscapes which the government capitalizes
+      on, creating a major tourist industry and by renting out vacation mansions to
+      the harried politicians of nearby Benjamin. After the Clan invasion the world
+      experienced a large building boom. The Draconis Combine relocated the Cosby
+      BattleMech and Myomer Research Firm plant to the continent of Kai Koshu near
+      the city of Hokusai. In addition, a recharge station was constructed at the
+      zenith jump point. As a result, Comstar is considering plans to upgrade the
+      local HPG station to a Class A facility.
     landmass:
       - name:
           source: canon
@@ -180,12 +191,6 @@ planet:
         population: 224325737.0
       - date: '2340-01-01'
         population: 261325450.0
-      - date: '2341-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '2350-01-01'
         population: 300726009.0
       - date: '2360-01-01'
@@ -235,18 +240,6 @@ planet:
         population: 965363328.0
       - date: '2570-01-01'
         population: 981969373.0
-      - date: '2571-01-01'
-        # administration: DC | Benjamin Military District | Kajikazawa Prefecture
-        # administration: DC | Benjamin Military District | Kajikazawa Prefecture
-        # administration: DC | Benjamin Military District | Kajikazawa Prefecture
-        # administration: DC | Benjamin Military District | Kajikazawa Prefecture
-        # administration: DC | Benjamin Military District | Kajikazawa Prefecture
-        # administration: DC | Benjamin Military District | Kajikazawa Prefecture
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - DC
       - date: '2580-01-01'
         population: 997564531.0
       - date: '2590-01-01'

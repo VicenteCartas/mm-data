@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: Parma
-sucsId: 1990
+sucsId: 1989
 xcood: 359.813
 ycood: -52.26
 spectralType:
-  source: HB:HD
+  source: House Davion
   value: F2II
 primarySlot:
-  source: HB:HD
+  source: House Davion
   value: 5
 planet:
   - name: Aquilo
@@ -117,7 +117,7 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 4.2
     sysPos:
-      source: HB:HD
+      source: House Davion
       value: 5
     icon: green46
     pressure:
@@ -133,9 +133,15 @@ planet:
     temperature: 35
     water: 27
     lifeForm:
-      source: HB:HD
+      source: House Davion
       value: REPTILE
-    desc: 'Parma is a large planet with heavier gravity and a thicker atmosphere than Terra as well as constant high humidity. These factors combine to make for very uncomfortable habitat for humans. While visitors often complain about the this and find it hard to simply walk around, the inhabitants of Parma manage to find the energy to wage nearly constant war on their neighbors. The planet is divided into numerous autonomous city-states and the nobility of the city-states have been at war with each other for most of the planet’s history. '
+    desc: 'Parma is a large planet with heavier gravity and a thicker atmosphere than
+      Terra as well as constant high humidity. These factors combine to make for very
+      uncomfortable habitat for humans. While visitors often complain about the this
+      and find it hard to simply walk around, the inhabitants of Parma manage to find
+      the energy to wage nearly constant war on their neighbors. The planet is divided
+      into numerous autonomous city-states and the nobility of the city-states have
+      been at war with each other for most of the planet’s history. '
     smallMoons: 3
     landmass:
       - capital:
@@ -143,12 +149,6 @@ planet:
           value: New Brescia
     event:
       - date: '2340-03-19'
-        # administration: FS | Crucis March | Markesan Operational Area
-        # administration: FS | Crucis March | Markesan Operational Area
-        # administration: FS | Crucis March | Markesan Operational Area
-        # administration: FS | Crucis March | Markesan Operational Area
-        # administration: FS | Crucis March | Markesan Operational Area
-        # administration: FS | Crucis March | Markesan Operational Area
         faction:
           source: canon
           value:
@@ -304,25 +304,8 @@ planet:
       - date: '3030-01-01'
         population: 243198218.0
       - date: '3040-01-01'
-        # administration: FC | Crucis March | Markesan Operational Area
-        # administration: FC | Crucis March | Markesan Operational Area
-        # administration: FC | Crucis March | Markesan Operational Area
-        # administration: FC | Crucis March | Markesan Operational Area
-        # administration: FC | Crucis March | Markesan Operational Area
-        # administration: FC | Crucis March | Markesan Operational Area
         population: 245666967.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FC
       - date: '3040-01-19'
-        # administration: FC | Crucis March | Markesan Operational Area
-        # administration: FC | Crucis March | Markesan Operational Area
-        # administration: FC | Crucis March | Markesan Operational Area
-        # administration: FC | Crucis March | Markesan Operational Area
-        # administration: FC | Crucis March | Markesan Operational Area
-        # administration: FC | Crucis March | Markesan Operational Area
         faction:
           source: canon
           value:
@@ -333,25 +316,7 @@ planet:
         population: 247813594.0
       - date: '3060-01-01'
         population: 249579331.0
-      - date: '3067-01-01'
-        # administration: FS | Crucis March | Markesan Operational Area
-        # administration: FS | Crucis March | Markesan Operational Area
-        # administration: FS | Crucis March | Markesan Operational Area
-        # administration: FS | Crucis March | Markesan Operational Area
-        # administration: FS | Crucis March | Markesan Operational Area
-        # administration: FS | Crucis March | Markesan Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FS
       - date: '3067-04-20'
-        # administration: FS | Crucis March | Markesan Operational Area
-        # administration: FS | Crucis March | Markesan Operational Area
-        # administration: FS | Crucis March | Markesan Operational Area
-        # administration: FS | Crucis March | Markesan Operational Area
-        # administration: FS | Crucis March | Markesan Operational Area
-        # administration: FS | Crucis March | Markesan Operational Area
         faction:
           source: canon
           value:

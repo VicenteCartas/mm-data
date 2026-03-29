@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Umka
-sucsId: 2628
+sucsId: 2627
 xcood: -129.747
 ycood: -361.421
 spectralType:
@@ -107,7 +107,13 @@ planet:
     lifeForm:
       source: canon
       value: BIRD
-    desc: Umka is a very hot planet with abundant water and massive deposits of rare natural resources. The planet has sufficient arable land to feed its population. Kerr-McGinnis is one of the major manufacturers on Umka and creates ‘Mech and combat vehicle armor in their factory located in Shenville, the planetary capital. Shenville is located on the Barajevo continent, in the foothills leading to a large mountain chain on the continent. Due to the cities location, rain is extremely common.
+    desc: Umka is a very hot planet with abundant water and massive deposits of rare
+      natural resources. The planet has sufficient arable land to feed its population.
+      Kerr-McGinnis is one of the major manufacturers on Umka and creates ‘Mech and
+      combat vehicle armor in their factory located in Shenville, the planetary capital.
+      Shenville is located on the Barajevo continent, in the foothills leading to
+      a large mountain chain on the continent. Due to the cities location, rain is
+      extremely common.
     smallMoons: 4
     landmass:
       - name:
@@ -197,18 +203,6 @@ planet:
         population: 1218636089.0
       - date: '2590-01-01'
         population: 1281849141.0
-      - date: '2596-01-01'
-        # administration: FWL | Duchy of Andurien
-        # administration: FWL | Duchy of Andurien
-        # administration: FWL | Duchy of Andurien
-        # administration: FWL | Duchy of Andurien
-        # administration: FWL | Duchy of Andurien
-        # administration: FWL | Duchy of Andurien
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FWL
       - date: '2597-03-21'
         faction:
           source: canon
@@ -334,12 +328,6 @@ planet:
         population: 1596298586.0
       - date: '3080-01-01'
         population: 1616215921.0
-      - date: '3081-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '3081-03-28'
         faction:
           source: canon
@@ -356,12 +344,6 @@ planet:
         socioIndustrial: C-B-B-C-C
       - date: '3120-01-01'
         population: 1721313333.0
-      - date: '3130-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - DA
       - date: '3130-05-13'
         faction:
           source: canon

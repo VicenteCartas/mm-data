@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: Zollikofen
-sucsId: 2846
+sucsId: 2845
 xcood: -28.959
 ycood: 19.339
 spectralType:
-  source: DA:RW
+  source: MWDA world profiles
   value: G3V
 primarySlot:
-  source: DA:RW
+  source: MWDA world profiles
   value: 1
 event:
   - date: '2359-07-15'
@@ -41,40 +41,76 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.7
     sysPos:
-      source: DA:RW
+      source: MWDA world profiles
       value: 1
     icon: wet11
     pressure:
-      source: DA:RW
+      source: MWDA world profiles
       value: STANDARD
     atmosphere:
-      source: DA:RW
+      source: MWDA world profiles
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: DA:RW
+      source: MWDA world profiles
       value: 0.8
     diameter: 12732
     density: 4.415741484518
     dayLength: 27
     yearLength: 1.2
     temperature:
-      source: DA:RW
+      source: MWDA world profiles
       value: 44
     water:
-      source: DA:RW
+      source: MWDA world profiles
       value: 80
     lifeForm:
-      source: DA:RW
+      source: MWDA world profiles
       value: MAMMAL
-    desc: 3135 - Zollikofen, sometimes nicknamed “treasure planet” is perhaps one of the great oddities of the Inner Sphere. Like many of the better colonies discovered early on in mankind‘s exodus into space, Zollikofen was blessed with an abundant water supply, fertile soil, and a thriving ecosystem that could easily support a fledgling colony. In addition, the world also boasted as many rich veins of precious metals such as gold, platinum, and silver, as it did common ores like iron and copper. Indeed, such valuable minerals proved so common to Zollikofen miners that the planet‘s economy was soon based on uranium and germanium deposits, as they were the rarer native metals, and a thriving export industry quickly rose based on handcrafted items of pure gold and silver. The Terran Hegemony managed to stake a claim in Zollikofen before the Lyrans could, keeping this remarkable find in the hands of the House of Cameron for many years under the Star League. This factor also contributed to the establishment of a Star League mint, which produced Lyran currency in Trader‘s City, one of the larger metropolii on the planet‘s single supercontinent of Besitzland, as well as the SLDF‘s Lyran Command headquarters. Miraculously enough, during the Amaris Crisis, the Usurper‘s troops did not harm the mint in Trader‘s City, though they did loot many of the press works and spaceport warehouses nearby. Indeed, the mercenaries hired by Amaris to secure this world focused almost exclusively on eliminating the Lyran Command forces instead, and securing several of the larger mines in a much more professional—if still undeniably greedy—strategy. After the fall of the League, Zollikofen came into Lyran hands, but the Star League mint was destroyed soon after, during the outbreak of the First Succession War, when House Kurita troops sacked the planet and resorted to nuclear and orbital bombardment to shatter Lyran resistance. For this reason, more than the gradual depletion of the gold and silver mines over the centuries, much of Zollikofen‘s wealth and prestige has tarnished since those glory days. Today, in fact, much of the planet‘s wealth now lies more in industrial metals such as titanium, vanadium, and bauxite, than in precious metals drawn from contaminated or dried-up mines elsewhere. Despite this, the world of Zollikofen still occasionally experiences the odd “gold rush” when new veins are uncovered, but after nearly a millennium of mining and radiation poisoning, most of the really good veins have long since been tapped out or rendered useless. The capital of Zollikofen today is the city of Fulbright, located on the banks of the Platin River. This megalopolis of over two million residents is also home to the planet‘s primary spaceport and the corporate headquarters of three major local mining concerns—Gershwin Mining Collective, Dahler Valley Resources, and Rosamund Minerals, Unlimited.
+    desc: 3135 - Zollikofen, sometimes nicknamed “treasure planet” is perhaps one
+      of the great oddities of the Inner Sphere. Like many of the better colonies
+      discovered early on in mankind‘s exodus into space, Zollikofen was blessed with
+      an abundant water supply, fertile soil, and a thriving ecosystem that could
+      easily support a fledgling colony. In addition, the world also boasted as many
+      rich veins of precious metals such as gold, platinum, and silver, as it did
+      common ores like iron and copper. Indeed, such valuable minerals proved so common
+      to Zollikofen miners that the planet‘s economy was soon based on uranium and
+      germanium deposits, as they were the rarer native metals, and a thriving export
+      industry quickly rose based on handcrafted items of pure gold and silver. The
+      Terran Hegemony managed to stake a claim in Zollikofen before the Lyrans could,
+      keeping this remarkable find in the hands of the House of Cameron for many years
+      under the Star League. This factor also contributed to the establishment of
+      a Star League mint, which produced Lyran currency in Trader‘s City, one of the
+      larger metropolii on the planet‘s single supercontinent of Besitzland, as well
+      as the SLDF‘s Lyran Command headquarters. Miraculously enough, during the Amaris
+      Crisis, the Usurper‘s troops did not harm the mint in Trader‘s City, though
+      they did loot many of the press works and spaceport warehouses nearby. Indeed,
+      the mercenaries hired by Amaris to secure this world focused almost exclusively
+      on eliminating the Lyran Command forces instead, and securing several of the
+      larger mines in a much more professional—if still undeniably greedy—strategy.
+      After the fall of the League, Zollikofen came into Lyran hands, but the Star
+      League mint was destroyed soon after, during the outbreak of the First Succession
+      War, when House Kurita troops sacked the planet and resorted to nuclear and
+      orbital bombardment to shatter Lyran resistance. For this reason, more than
+      the gradual depletion of the gold and silver mines over the centuries, much
+      of Zollikofen‘s wealth and prestige has tarnished since those glory days. Today,
+      in fact, much of the planet‘s wealth now lies more in industrial metals such
+      as titanium, vanadium, and bauxite, than in precious metals drawn from contaminated
+      or dried-up mines elsewhere. Despite this, the world of Zollikofen still occasionally
+      experiences the odd “gold rush” when new veins are uncovered, but after nearly
+      a millennium of mining and radiation poisoning, most of the really good veins
+      have long since been tapped out or rendered useless. The capital of Zollikofen
+      today is the city of Fulbright, located on the banks of the Platin River. This
+      megalopolis of over two million residents is also home to the planet‘s primary
+      spaceport and the corporate headquarters of three major local mining concerns—Gershwin
+      Mining Collective, Dahler Valley Resources, and Rosamund Minerals, Unlimited.
     smallMoons: 1
     landmass:
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Besitzland
         capital:
-          source: DA:RW
+          source: MWDA world profiles
           value: Fulbright
     event:
       - date: '2270-09-01'
@@ -98,12 +134,6 @@ planet:
           value:
             - TH
       - date: '2317-09-04'
-        # administration: TH | Alliance Core
-        # administration: TH | Alliance Core
-        # administration: TH | Alliance Core
-        # administration: TH | Alliance Core
-        # administration: TH | Alliance Core
-        # administration: TH | Alliance Core
         faction:
           source: canon
           value:
@@ -208,18 +238,6 @@ planet:
         population: 2292059332.0
       - date: '2760-01-01'
         population: 2270478304.0
-      - date: '2767-01-01'
-        # administration: AE | Alliance Core
-        # administration: AE | Alliance Core
-        # administration: AE | Alliance Core
-        # administration: AE | Alliance Core
-        # administration: AE | Alliance Core
-        # administration: AE | Alliance Core
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - AE
       - date: '2767-09-01'
         faction:
           source: canon
@@ -228,12 +246,6 @@ planet:
       - date: '2770-01-01'
         population: 2250909848.0
       - date: '2779-12-23'
-        # administration: TH | Alliance Core
-        # administration: TH | Alliance Core
-        # administration: TH | Alliance Core
-        # administration: TH | Alliance Core
-        # administration: TH | Alliance Core
-        # administration: TH | Alliance Core
         faction:
           source: canon
           value:
@@ -241,12 +253,6 @@ planet:
       - date: '2780-01-01'
         population: 2239832882.0
       - date: '2790-04-16'
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
         faction:
           source: canon
           value:
@@ -259,12 +265,6 @@ planet:
       - date: '2820-01-01'
         population: 2244681812.0
       - date: '2821-04-06'
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
         faction:
           source: canon
           value:
@@ -320,25 +320,8 @@ planet:
       - date: '3035-01-01'
         socioIndustrial: C-C-D-C-C
       - date: '3040-01-01'
-        # administration: FC | Skye March | Ryde Operational Area
-        # administration: FC | Skye March | Ryde Operational Area
-        # administration: FC | Skye March | Ryde Operational Area
-        # administration: FC | Skye March | Ryde Operational Area
-        # administration: FC | Skye March | Ryde Operational Area
-        # administration: FC | Skye March | Ryde Operational Area
         population: 2131348431.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FC
       - date: '3040-01-19'
-        # administration: FC | Skye March | Ryde Operational Area
-        # administration: FC | Skye March | Ryde Operational Area
-        # administration: FC | Skye March | Ryde Operational Area
-        # administration: FC | Skye March | Ryde Operational Area
-        # administration: FC | Skye March | Ryde Operational Area
-        # administration: FC | Skye March | Ryde Operational Area
         faction:
           source: canon
           value:
@@ -347,25 +330,7 @@ planet:
         socioIndustrial: B-C-C-B-C
       - date: '3050-01-01'
         population: 2157510144.0
-      - date: '3057-01-01'
-        # administration: LA | Skye March | Ryde Operational Area
-        # administration: LA | Skye March | Ryde Operational Area
-        # administration: LA | Skye March | Ryde Operational Area
-        # administration: LA | Skye March | Ryde Operational Area
-        # administration: LA | Skye March | Ryde Operational Area
-        # administration: LA | Skye March | Ryde Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LA
       - date: '3057-09-18'
-        # administration: LA | Skye Province | Freedom Theater
-        # administration: LA | Skye Province | Freedom Theater
-        # administration: LA | Skye Province | Freedom Theater
-        # administration: LA | Skye Province | Freedom Theater
-        # administration: LA | Skye Province | Freedom Theater
-        # administration: LA | Skye Province | Freedom Theater
         faction:
           source: canon
           value:
@@ -374,12 +339,6 @@ planet:
         population: 2180719451.0
       - date: '3070-01-01'
         population: 2206163084.0
-      - date: '3075-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - WOB
       - date: '3075-05-17'
         faction:
           source: canon
@@ -390,33 +349,9 @@ planet:
           source: canon
           value:
             - LA
-      - date: '3079-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - Stone
       - date: '3080-01-01'
         population: 2238609347.0
-      - date: '3081-01-01'
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - ROS
       - date: '3081-08-24'
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
         faction:
           source: canon
           value:
@@ -446,10 +381,9 @@ planet:
             - CJF
       - date: '3151-01-01'
         faction:
-          source: SUCS
-          version: 2026.03.02
+          source: sucs
           value:
-            - IND
+            - CJF
       - date: '3152-06-01'
         faction:
           source: sucs

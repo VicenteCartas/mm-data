@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -20,10 +20,10 @@ sucsId: 57
 xcood: -74.708
 ycood: 28.904
 spectralType:
-  source: DA:RW
+  source: MWDA world profiles
   value: A5V
 primarySlot:
-  source: DA:RW
+  source: MWDA world profiles
   value: 3
 event:
   - date: '2388-06-09'
@@ -86,31 +86,31 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 3.04
     sysPos:
-      source: DA:RW
+      source: MWDA world profiles
       value: 3
     icon: wet4
     pressure:
-      source: DA:RW
+      source: MWDA world profiles
       value: STANDARD
     atmosphere:
-      source: DA:RW
+      source: MWDA world profiles
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: DA:RW
+      source: MWDA world profiles
       value: 1.01
     diameter: 14592
     density: 4.864229746215
     dayLength: 27
     yearLength: 5.5
     temperature:
-      source: DA:RW
+      source: MWDA world profiles
       value: 46
     water:
-      source: DA:RW
+      source: MWDA world profiles
       value: 88
     lifeForm:
-      source: DA:RW
+      source: MWDA world profiles
       value: FISH
     desc: |-
       3135 - Alcor is one of the few worlds that orbits a slightly variable star and has an atmosphere and environment capable of supporting life. The planet's remote orbit mitigate the gravitational stresses caused during the infrequent shifts of its star's outer surface. The tectonic stresses created by the star have still contributed to a number of volcanoes that line the mountain chains on the main continents of Galvinia and Fuchisa. Much of the planet's mining industry has been focused in these volcanic regions. The arable land on Alchiba is exceedingly poor in nutrients, forcing the planet to rely on trade with their neighboring systems for vital agricultural products. Ursamajorisaeti, the capital of Alcor and home of the planet's largest spaceport, is located on Galvina. Alcor has been the hub of local trade routes throughout its history. During the Succession Wars, it has been a poor staging world for raids and invasions, though it has still been the target of many.
@@ -118,17 +118,17 @@ planet:
       Alcor was overlooked during the Jihad, the only known fighting that took place in system occurred when Blakist aerospace fighters, DropShips, and JumpShips, who were intercepted here during their flight from Terra.
     landmass:
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Fuchisa
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Galvinia
         capital:
-          source: DA:RW
+          source: MWDA world profiles
           value: Ursamajorisaeti
     satellite:
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Yahto
         size: medium
         icon: rock7
@@ -157,31 +157,13 @@ planet:
         population: 6395457.0
       - date: '2310-01-01'
         population: 13249760.0
-      - date: '2317-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '2320-01-01'
         population: 24870646.0
       - date: '2330-01-01'
         population: 42999351.0
       - date: '2340-01-01'
         population: 69363415.0
-      - date: '2341-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FoS
       - date: '2341-03-25'
-        # administration: LA | Federation of Skye
-        # administration: LA | Federation of Skye
-        # administration: LA | Federation of Skye
-        # administration: LA | Federation of Skye
-        # administration: LA | Federation of Skye
-        # administration: LA | Federation of Skye
         faction:
           source: canon
           value:
@@ -337,25 +319,8 @@ planet:
       - date: '3030-01-01'
         population: 1409177369.0
       - date: '3040-01-01'
-        # administration: FC | Skye March | Alcor Operational Area
-        # administration: FC | Skye March | Alcor Operational Area
-        # administration: FC | Skye March | Alcor Operational Area
-        # administration: FC | Skye March | Alcor Operational Area
-        # administration: FC | Skye March | Alcor Operational Area
-        # administration: FC | Skye March | Alcor Operational Area
         population: 1426474631.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FC
       - date: '3040-01-19'
-        # administration: FC | Skye March | Alcor Operational Area
-        # administration: FC | Skye March | Alcor Operational Area
-        # administration: FC | Skye March | Alcor Operational Area
-        # administration: FC | Skye March | Alcor Operational Area
-        # administration: FC | Skye March | Alcor Operational Area
-        # administration: FC | Skye March | Alcor Operational Area
         faction:
           source: canon
           value:
@@ -364,49 +329,19 @@ planet:
         socioIndustrial: A-B-C-B-C
       - date: '3050-01-01'
         population: 1447453937.0
-      - date: '3057-01-01'
-        # administration: LA | Skye March | Alcor Operational Area
-        # administration: LA | Skye March | Alcor Operational Area
-        # administration: LA | Skye March | Alcor Operational Area
-        # administration: LA | Skye March | Alcor Operational Area
-        # administration: LA | Skye March | Alcor Operational Area
-        # administration: LA | Skye March | Alcor Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LA
       - date: '3057-09-18'
-        # administration: LA | Skye Province | Freedom Theater
-        # administration: LA | Skye Province | Freedom Theater
-        # administration: LA | Skye Province | Freedom Theater
-        # administration: LA | Skye Province | Freedom Theater
-        # administration: LA | Skye Province | Freedom Theater
-        # administration: LA | Skye Province | Freedom Theater
         faction:
           source: canon
           value:
             - LA
       - date: '3060-01-01'
         population: 1466833664.0
-      - date: '3068-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FWL
       - date: '3068-09-20'
         faction:
           source: canon
           value:
             - FWL
       - date: '3069-01-07'
-        # administration: LA | Skye Province | Freedom Theater
-        # administration: LA | Skye Province | Freedom Theater
-        # administration: LA | Skye Province | Freedom Theater
-        # administration: LA | Skye Province | Freedom Theater
-        # administration: LA | Skye Province | Freedom Theater
-        # administration: LA | Skye Province | Freedom Theater
         faction:
           source: canon
           value:
@@ -415,25 +350,7 @@ planet:
         population: 1484541704.0
       - date: '3080-01-01'
         population: 1505170390.0
-      - date: '3081-01-01'
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - ROS
       - date: '3081-11-14'
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
         faction:
           source: canon
           value:
@@ -452,12 +369,6 @@ planet:
         population: 1617862943.0
       - date: '3132-08-07'
         hpg: X
-      - date: '3135-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '3135-10-01'
         faction:
           source: canon
@@ -472,12 +383,6 @@ planet:
             - GL
       - date: '3145-01-01'
         population: 1663803269.0
-      - date: '3152-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IoS
   - name: Mejía
     type: TERRESTRIAL
     orbitalDist: 1.9

@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: Redfield
-sucsId: 2127
+sucsId: 2126
 xcood: 140.093
 ycood: -212.747
 spectralType:
-  source: HB:HD
+  source: House Davion
   value: K5IV
 primarySlot:
-  source: HB:HD
+  source: House Davion
   value: 3
 planet:
   - name: Volcanus
@@ -70,7 +70,7 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.7
     sysPos:
-      source: HB:HD
+      source: House Davion
       value: 3
     icon: green23
     pressure: THIN
@@ -84,7 +84,7 @@ planet:
     temperature: 20
     water: 43
     lifeForm:
-      source: HB:HD
+      source: House Davion
       value: MAMMAL
     desc: |-
       Due to Redfield’s small sun making attacks easier than most, the planet has been the site of numerous battles between the Federated Suns and the Capellan Confederation. The planet is always well garrisoned and the defenders are required to be on a high level of alert due to the possibility of attack with less than a day’s notice.
@@ -122,12 +122,6 @@ planet:
         socioIndustrial: C-C-A-C-F
       - date: '2310-01-01'
         population: 13841296.0
-      - date: '2317-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CCom
       - date: '2317-03-22'
         faction:
           source: canon
@@ -150,22 +144,10 @@ planet:
         population: 35264796.0
       - date: '2340-01-01'
         population: 51239249.0
-      - date: '2341-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CCom
       - date: '2350-01-01'
         population: 70893349.0
       - date: '2360-01-01'
         population: 94302101.0
-      - date: '2366-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FS
       - date: '2366-09-21'
         faction:
           source: canon
@@ -220,25 +202,7 @@ planet:
         population: 636121960.0
       - date: '2570-01-01'
         population: 650948162.0
-      - date: '2571-01-01'
-        # administration: CC | St. Ives Commonality | Region 3
-        # administration: CC | St. Ives Commonality | Region 3
-        # administration: CC | St. Ives Commonality | Region 3
-        # administration: CC | St. Ives Commonality | Region 3
-        # administration: CC | St. Ives Commonality | Region 3
-        # administration: CC | St. Ives Commonality | Region 3
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CC
       - date: '2571-11-18'
-        # administration: CC | St. Ives Commonality | Region 3
-        # administration: CC | St. Ives Commonality | Region 3
-        # administration: CC | St. Ives Commonality | Region 3
-        # administration: CC | St. Ives Commonality | Region 3
-        # administration: CC | St. Ives Commonality | Region 3
-        # administration: CC | St. Ives Commonality | Region 3
         faction:
           source: canon
           value:
@@ -248,12 +212,6 @@ planet:
       - date: '2590-01-01'
         population: 678659884.0
       - date: '2596-09-22'
-        # administration: CC | St. Ives Commonality | Region 3
-        # administration: CC | St. Ives Commonality | Region 3
-        # administration: CC | St. Ives Commonality | Region 3
-        # administration: CC | St. Ives Commonality | Region 3
-        # administration: CC | St. Ives Commonality | Region 3
-        # administration: CC | St. Ives Commonality | Region 3
         faction:
           source: canon
           value:
@@ -327,25 +285,7 @@ planet:
         population: 749760237.0
       - date: '2860-01-01'
         population: 743879850.0
-      - date: '2864-01-01'
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FS
       - date: '2864-09-23'
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
         faction:
           source: canon
           value:
@@ -385,12 +325,6 @@ planet:
       - date: '3020-01-01'
         population: 519596594.0
       - date: '3025-04-01'
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
         faction:
           source: canon
           value:
@@ -398,25 +332,8 @@ planet:
       - date: '3030-01-01'
         population: 520733750.0
       - date: '3040-01-01'
-        # administration: FC | Capellan March | Kathil Operational Area
-        # administration: FC | Capellan March | Kathil Operational Area
-        # administration: FC | Capellan March | Kathil Operational Area
-        # administration: FC | Capellan March | Kathil Operational Area
-        # administration: FC | Capellan March | Kathil Operational Area
-        # administration: FC | Capellan March | Kathil Operational Area
         population: 527389242.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FC
       - date: '3040-01-19'
-        # administration: FC | Capellan March | Kathil Operational Area
-        # administration: FC | Capellan March | Kathil Operational Area
-        # administration: FC | Capellan March | Kathil Operational Area
-        # administration: FC | Capellan March | Kathil Operational Area
-        # administration: FC | Capellan March | Kathil Operational Area
-        # administration: FC | Capellan March | Kathil Operational Area
         faction:
           source: canon
           value:
@@ -427,25 +344,7 @@ planet:
         population: 533595934.0
       - date: '3060-01-01'
         population: 540523911.0
-      - date: '3067-01-01'
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FS
       - date: '3067-04-20'
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
         faction:
           source: canon
           value:

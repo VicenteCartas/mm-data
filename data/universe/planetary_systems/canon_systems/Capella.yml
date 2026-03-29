@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -23,9 +23,8 @@ spectralType:
   source: canon
   value: F6III
 primarySlot:
-  source: 'HB:HL'
+  source: 'Handbook: House Liao, pg. 71'
   value: 7
-  page: 71
 event:
   - date: '2388-05-11'
     zenithCharge: yes
@@ -137,39 +136,32 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 3.64
     sysPos:
-      source: 'HB:HL'
+      source: 'Handbook: House Liao, pg. 71'
       value: 7
-      page: 71
     icon: green43
     pressure:
-      source: 'HB:HL'
+      source: 'Handbook: House Liao, pg. 71'
       value: STANDARD
-      page: 71
     atmosphere:
-      source: 'HB:HL'
+      source: 'Handbook: House Liao, pg. 71'
       value: BREATHABLE
-      page: 71
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'HB:HL'
+      source: 'Handbook: House Liao, pg. 71'
       value: 1.02
-      page: 71
     diameter: 14480
     density: 4.950412147822
     dayLength: 24
     yearLength: 7.0
     temperature:
-      source: 'HB:HL'
+      source: 'Handbook: House Liao, pg. 71'
       value: 38
-      page: 71
     water:
-      source: 'HB:HL'
+      source: 'Handbook: House Liao, pg. 71'
       value: 60
-      page: 71
     lifeForm:
-      source: 'HB:HL'
+      source: 'Handbook: House Liao, pg. 71'
       value: PLANT
-      page: 71
     desc: |-
       Capella has always been a politically important world in the region and has always held a special importance to the Capellan Confederation. Capella was the birthplace of both the original Capellan Hegemony and of the Capellan Confederation after the Aris crisis. Capella is also home of the corporate headquarters of Ceres Metals and the Capellan Commonality Bank.
 
@@ -183,19 +175,18 @@ planet:
       Rashpur-Owens Incorporated
     landmass:
       - name:
-          source: 'OR'
+          source: 'Objective Raids: Capellan Confederation'
           value: Llagarres
         capital:
-          source: 'OR'
+          source: 'Objective Raids: Capellan Confederation'
           value: Memorial City
       - name:
-          source: 'OR'
+          source: 'Objective Raids: Capellan Confederation'
           value: Pociello
     satellite:
       - name:
-          source: 'HB:HL'
+          source: 'Handbook: House Liao, pg. 71'
           value: Nikos
-          page: 71
         size: medium
         icon: oddmoon3
     event:
@@ -221,12 +212,6 @@ planet:
       - date: '2260-01-01'
         population: 42662646.0
       - date: '2270-09-06'
-        # administration: CH | National Capital
-        # administration: CH | National Capital
-        # administration: CH | National Capital
-        # administration: CH | National Capital
-        # administration: CH | National Capital
-        # administration: CH | National Capital
         faction:
           source: canon
           value:
@@ -239,12 +224,6 @@ planet:
       - date: '2300-01-01'
         population: 304049557.0
       - date: '2310-11-22'
-        # administration: CCom | National Capital
-        # administration: CCom | National Capital
-        # administration: CCom | National Capital
-        # administration: CCom | National Capital
-        # administration: CCom | National Capital
-        # administration: CCom | National Capital
         faction:
           source: canon
           value:
@@ -261,12 +240,6 @@ planet:
       - date: '2360-01-01'
         population: 1428453286.0
       - date: '2367-07-01'
-        # administration: CC | Capella Commonality | Region 2
-        # administration: CC | Capella Commonality | Region 2
-        # administration: CC | Capella Commonality | Region 2
-        # administration: CC | Capella Commonality | Region 2
-        # administration: CC | Capella Commonality | Region 2
-        # administration: CC | Capella Commonality | Region 2
         faction:
           source: canon
           value:
@@ -315,12 +288,6 @@ planet:
       - date: '2570-01-01'
         population: 5118339925.0
       - date: '2571-09-14'
-        # administration: CC | Capella Commonality | Region 2
-        # administration: CC | Capella Commonality | Region 2
-        # administration: CC | Capella Commonality | Region 2
-        # administration: CC | Capella Commonality | Region 2
-        # administration: CC | Capella Commonality | Region 2
-        # administration: CC | Capella Commonality | Region 2
         faction:
           source: canon
           value:
@@ -442,12 +409,6 @@ planet:
             - FWL
             - CC
       - date: '3039-08-15'
-        # administration: CC | Capella Commonality | Region 2
-        # administration: CC | Capella Commonality | Region 2
-        # administration: CC | Capella Commonality | Region 2
-        # administration: CC | Capella Commonality | Region 2
-        # administration: CC | Capella Commonality | Region 2
-        # administration: CC | Capella Commonality | Region 2
         faction:
           source: canon
           value:

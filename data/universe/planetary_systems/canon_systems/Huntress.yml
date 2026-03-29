@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,17 +16,15 @@
 # affiliated with Microsoft.
 
 id: Huntress
-sucsId: 2949
+sucsId: 2948
 xcood: 49.223
 ycood: 1757.87
 spectralType:
-  source: WoK
+  source: Warriors of Kerensky, pg. 112
   value: G7V
-  page: 112
 primarySlot:
-  source: WoK
+  source: Warriors of Kerensky, pg. 112
   value: 2
-  page: 112
 event:
   - date: '2804-12-06'
     nadirCharge: yes
@@ -56,39 +54,32 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.63
     sysPos:
-      source: WoK
+      source: Warriors of Kerensky, pg. 112
       value: 2
-      page: 112
     icon: green2
     pressure:
-      source: WoK
+      source: Warriors of Kerensky, pg. 112
       value: STANDARD
-      page: 112
     atmosphere:
-      source: WoK
+      source: Warriors of Kerensky, pg. 112
       value: BREATHABLE
-      page: 112
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: WoK
+      source: Warriors of Kerensky, pg. 112
       value: 1.1
-      page: 112
     diameter: 14059
     density: 5.498437168537
     dayLength: 21
     yearLength: 1.1
     temperature:
-      source: WoK
+      source: Warriors of Kerensky, pg. 112
       value: 25
-      page: 112
     water:
-      source: WoK
+      source: Warriors of Kerensky, pg. 112
       value: 60
-      page: 112
     lifeForm:
-      source: WoK
+      source: Warriors of Kerensky, pg. 112
       value: BIRD
-      page: 112
     desc: |-
       3065: Huntress is a planet of varied climates and two continents. Abysmal is the smaller of the two continents and is dominated by deserts and badlands. Jaguar Prime is larger and is home to most of the planet's population centers, including Lootera, the planetary capital. Jaguar Prime is home to many different climates, from desert to rain forest, plains and mountains. The continent is crossed with several mountain ranges, including the northern Jaguar's Fangs, the Fangs includes Mount Szabo which overlooks the capital city. To the eastern edge of the continent is the unimaginatively named Eastern Mountains. The continent is also home to several large bodies of water, from the Black Shikari River, to Liberation Sea and the expansive Dhuan Swamp to the south. Jaguar Prime is home to almost constant grey cloud-cover and occasional fierce storms. Jaguar Prime is home to several other cities, though they are smaller than Lootera, such as Bagera, Myer, Pahn City and New Andery.
 
@@ -167,12 +158,6 @@ planet:
         population: 7518655.0
       - date: '3020-01-01'
         population: 7640587.0
-      - date: '3025-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CLAN
       - date: '3025-12-04'
         faction:
           source: canon
@@ -190,12 +175,6 @@ planet:
           value:
             - CSJ
             - CJF
-      - date: '3049-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CLAN
       - date: '3050-01-01'
         population: 7909358.0
       - date: '3060-01-01'
@@ -216,12 +195,6 @@ planet:
             - CIH
             - CJF
             - CSA
-      - date: '3063-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CLAN
       - date: '3067-07-12'
         faction:
           source: canon
@@ -231,12 +204,6 @@ planet:
             - CGS
             - CFM
             - CIH
-      - date: '3068-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CLAN
       - date: '3069-11-07'
         faction:
           source: canon
@@ -296,24 +263,12 @@ planet:
             - CCC
             - CGS
             - SOC
-      - date: '3075-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CLAN
       - date: '3075-12-07'
         faction:
           source: canon
           value:
             - CCC
             - CGS
-      - date: '3079-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CCC
       - date: '3079-10-22'
         faction:
           source: canon
@@ -324,12 +279,6 @@ planet:
             - CSL
       - date: '3080-01-01'
         population: 8103058.0
-      - date: '3085-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CLAN
       - date: '3090-01-01'
         population: 8218942.0
       - date: '3100-01-01'

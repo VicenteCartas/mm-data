@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -20,13 +20,11 @@ sucsId: 401
 xcood: 218.167
 ycood: -355.971
 spectralType:
-  source: 'HB:HD'
+  source: 'Handbook: House Davion, pg. 87'
   value: K7IV
-  page: 87
 primarySlot:
-  source: 'HB:HD'
+  source: 'Handbook: House Davion, pg. 87'
   value: 4
-  page: 87
 event:
   - date: '2353-06-21'
     nadirCharge: yes
@@ -84,64 +82,53 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.42
     sysPos:
-      source: 'HB:HD'
+      source: 'Handbook: House Davion, pg. 87'
       value: 4
-      page: 87
     icon: green33
     pressure:
-      source: 'HB:HD'
+      source: 'Handbook: House Davion, pg. 87'
       value: STANDARD
-      page: 87
     atmosphere:
-      source: 'HB:HD'
+      source: 'Handbook: House Davion, pg. 87'
       value: BREATHABLE
-      page: 87
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'HB:HD'
+      source: 'Handbook: House Davion, pg. 87'
       value: 1.16
-      page: 87
     diameter: 12548
     density: 6.496415548134
     dayLength: 27
     yearLength: 0.8
     temperature:
-      source: 'HB:HD'
+      source: 'Handbook: House Davion, pg. 87'
       value: 48
-      page: 87
     water:
-      source: 'HB:HD'
+      source: 'Handbook: House Davion, pg. 87'
       value: 56
-      page: 87
     lifeForm:
-      source: 'HB:HD'
+      source: 'Handbook: House Davion, pg. 87'
       value: MAMMAL
-      page: 87
-    desc: Brockway is a harsh planet that was settled due to the abundance of natural resources. However, as settlement began it was discovered that the plants and animals of Brockway were capable of sustaining human life and as such an abundance of food from the planet allowed the settlement of other nearby worlds that could not have sustained themselves otherwise.
+    desc: Brockway is a harsh planet that was settled due to the abundance of natural
+      resources. However, as settlement began it was discovered that the plants and
+      animals of Brockway were capable of sustaining human life and as such an abundance
+      of food from the planet allowed the settlement of other nearby worlds that could
+      not have sustained themselves otherwise.
     landmass:
       - name: Faunus I
         capital: New Stephentown
       - name: Faunus II
     satellite:
       - name:
-          source: 'HB:HD'
+          source: 'Handbook: House Davion, pg. 87'
           value: Colbert
-          page: 87
         size: medium
         icon: oddmoon1
       - name:
-          source: 'HB:HD'
+          source: 'Handbook: House Davion, pg. 87'
           value: Jurissa
-          page: 87
         size: medium
         icon: oddmoon3
     event:
-      - date: '2341-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - TC
       - date: '2341-03-20'
         faction:
           source: canon
@@ -212,25 +199,7 @@ planet:
           source: canon
           value:
             - SL
-      - date: '2596-01-01'
-        # administration: FS | Capellan March | Taygeta Operational Area
-        # administration: FS | Capellan March | Taygeta Operational Area
-        # administration: FS | Capellan March | Taygeta Operational Area
-        # administration: FS | Capellan March | Taygeta Operational Area
-        # administration: FS | Capellan March | Taygeta Operational Area
-        # administration: FS | Capellan March | Taygeta Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FS
       - date: '2596-09-22'
-        # administration: FS | Capellan March | Taygeta Operational Area
-        # administration: FS | Capellan March | Taygeta Operational Area
-        # administration: FS | Capellan March | Taygeta Operational Area
-        # administration: FS | Capellan March | Taygeta Operational Area
-        # administration: FS | Capellan March | Taygeta Operational Area
-        # administration: FS | Capellan March | Taygeta Operational Area
         faction:
           source: canon
           value:
@@ -272,12 +241,6 @@ planet:
       - date: '2740-01-01'
         population: 1117377807.0
       - date: '2750-11-02'
-        # administration: FS | Capellan March | Taygeta Operational Area
-        # administration: FS | Capellan March | Taygeta Operational Area
-        # administration: FS | Capellan March | Taygeta Operational Area
-        # administration: FS | Capellan March | Taygeta Operational Area
-        # administration: FS | Capellan March | Taygeta Operational Area
-        # administration: FS | Capellan March | Taygeta Operational Area
         faction:
           source: canon
           value:
@@ -350,30 +313,12 @@ planet:
         population: 727559823.0
       - date: '3030-01-01'
         population: 723815950.0
-      - date: '3040-01-01'
-        # administration: FC | Capellan March | Taygeta Operational Area
-        # administration: FC | Capellan March | Taygeta Operational Area
-        # administration: FC | Capellan March | Taygeta Operational Area
-        # administration: FC | Capellan March | Taygeta Operational Area
-        # administration: FC | Capellan March | Taygeta Operational Area
-        # administration: FC | Capellan March | Taygeta Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FC
       - date: '3040-11-18'
         population: 729848623.0
         socioIndustrial:
           source: canon
           value: F-D-C-C-B
       - date: '3040-01-19'
-        # administration: FC | Capellan March | Taygeta Operational Area
-        # administration: FC | Capellan March | Taygeta Operational Area
-        # administration: FC | Capellan March | Taygeta Operational Area
-        # administration: FC | Capellan March | Taygeta Operational Area
-        # administration: FC | Capellan March | Taygeta Operational Area
-        # administration: FC | Capellan March | Taygeta Operational Area
         faction:
           source: canon
           value:
@@ -392,45 +337,16 @@ planet:
           value:
             - FC
             - LA
-      - date: '3063-01-01'
-        # administration: FC | Capellan March | Taygeta Operational Area
-        # administration: FC | Capellan March | Taygeta Operational Area
-        # administration: FC | Capellan March | Taygeta Operational Area
-        # administration: FC | Capellan March | Taygeta Operational Area
-        # administration: FC | Capellan March | Taygeta Operational Area
-        # administration: FC | Capellan March | Taygeta Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FC
       - date: '3063-04-30'
         faction:
           source: canon
           value:
             - LA
       - date: '3067-01-01'
-        # administration: FS | Capellan March | Taygeta Operational Area
-        # administration: FS | Capellan March | Taygeta Operational Area
-        # administration: FS | Capellan March | Taygeta Operational Area
-        # administration: FS | Capellan March | Taygeta Operational Area
-        # administration: FS | Capellan March | Taygeta Operational Area
-        # administration: FS | Capellan March | Taygeta Operational Area
         population:
           source: canon
           value: 748250000.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FS
       - date: '3067-04-20'
-        # administration: FS | Capellan March | Taygeta Operational Area
-        # administration: FS | Capellan March | Taygeta Operational Area
-        # administration: FS | Capellan March | Taygeta Operational Area
-        # administration: FS | Capellan March | Taygeta Operational Area
-        # administration: FS | Capellan March | Taygeta Operational Area
-        # administration: FS | Capellan March | Taygeta Operational Area
         faction:
           source: canon
           value:

@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -20,13 +20,11 @@ sucsId: 445
 xcood: -58.168
 ycood: -199.567
 spectralType:
-  source: HMSB
+  source: House Marik, pg. 157
   value: F5V
-  page: 157
 primarySlot:
-  source: HMSB
+  source: House Marik, pg. 157
   value: 6
-  page: 157
 event:
   - date: '2351-08-04'
     zenithCharge: yes
@@ -129,9 +127,8 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 2.24
     sysPos:
-      source: HMSB
+      source: House Marik, pg. 157
       value: 6
-      page: 157
     icon: green39
     pressure:
       source: canon
@@ -152,9 +149,8 @@ planet:
       source: canon
       value: 63
     lifeForm:
-      source: HMSB
+      source: House Marik, pg. 157
       value: INSECT
-      page: 157
     desc: |-
       Calloway VI is one of the most prosperous planets in the entire Inner Sphere thanks to a strong industrial base and shrewd traders. While the planet is short on raw materials and almost everything must be imported, it has not stopped the planet from being successful. In the pursuit of profit, several native species on Calloway, including the Calloway Wildebeests have been hunted to extinction.
 
@@ -187,12 +183,6 @@ planet:
         icon: rock11
     event:
       - date: '2342-08-23'
-        # administration: FWL | Federation of Oriente
-        # administration: FWL | Federation of Oriente
-        # administration: FWL | Federation of Oriente
-        # administration: FWL | Federation of Oriente
-        # administration: FWL | Federation of Oriente
-        # administration: FWL | Federation of Oriente
         faction:
           source: canon
           value:
@@ -360,12 +350,6 @@ planet:
             - FWL
             - FWLR
       - date: '3015-01-22'
-        # administration: FWL | Duchy of Oriente
-        # administration: FWL | Duchy of Oriente
-        # administration: FWL | Duchy of Oriente
-        # administration: FWL | Duchy of Oriente
-        # administration: FWL | Duchy of Oriente
-        # administration: FWL | Duchy of Oriente
         faction:
           source: canon
           value:
@@ -425,25 +409,8 @@ planet:
       - date: '3140-01-01'
         population: 710022307.0
       - date: '3145-01-01'
-        # administration: FWL | Oriente Protectorate
-        # administration: FWL | Oriente Protectorate
-        # administration: FWL | Oriente Protectorate
-        # administration: FWL | Oriente Protectorate
-        # administration: FWL | Oriente Protectorate
-        # administration: FWL | Oriente Protectorate
         population: 714581022.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FWL
       - date: '3151-01-01'
-        # administration: FWL | Oriente Protectorate
-        # administration: FWL | Oriente Protectorate
-        # administration: FWL | Oriente Protectorate
-        # administration: FWL | Oriente Protectorate
-        # administration: FWL | Oriente Protectorate
-        # administration: FWL | Oriente Protectorate
         faction:
           source: sucs
           value:

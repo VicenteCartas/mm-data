@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,17 +16,15 @@
 # affiliated with Microsoft.
 
 id: Twycross
-sucsId: 2609
+sucsId: 2608
 xcood: -108.349
 ycood: 365.246
 spectralType:
-  source: M&M
+  source: Masters and Minions, pg. 153
   value: F0IV
-  page: 153
 primarySlot:
-  source: M&M
+  source: Masters and Minions, pg. 153
   value: 3
-  page: 153
 event:
   - date: '2609-12-07'
     zenithCharge: yes
@@ -40,7 +38,8 @@ planet:
     icon: barren18
     pressure: STANDARD
     atmosphere: TOXIC_POISON
-    composition: Carbon Dioxide and Nitrogen, plus trace amounts of Argon and Water Vapor
+    composition: Carbon Dioxide and Nitrogen, plus trace amounts of Argon and Water
+      Vapor
     gravity: 0.85
     diameter: 12500
     density: 4.7795
@@ -80,39 +79,32 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 4.48
     sysPos:
-      source: M&M
+      source: Masters and Minions, pg. 153
       value: 3
-      page: 153
     icon: green34
     pressure:
-      source: M&M
+      source: Masters and Minions, pg. 153
       value: STANDARD
-      page: 153
     atmosphere:
-      source: M&M
+      source: Masters and Minions, pg. 153
       value: BREATHABLE
-      page: 153
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: M&M
+      source: Masters and Minions, pg. 153
       value: 1.0
-      page: 153
     diameter: 10938
     density: 6.425063693804
     dayLength: 20
     yearLength: 9.6
     temperature:
-      source: M&M
+      source: Masters and Minions, pg. 153
       value: 65
-      page: 153
     water:
-      source: M&M
+      source: Masters and Minions, pg. 153
       value: 40
-      page: 153
     lifeForm:
-      source: M&M
+      source: Masters and Minions, pg. 153
       value: MAMMAL
-      page: 153
     desc: |-
       For most of its history Twycross was the capital of the Trellshire Province in the Lyran Commonwealth’s Tamar Pact. The planet itself has an unusually high occurance of typhoons, tornadoes and other extreme weather which require most of the population to live underground. The majority of above-ground buildings are never tall and must be built extremely well to survive the harsh climate. Twycross is home to Trellshire Industries’ BattleMech plant.
 
@@ -127,27 +119,19 @@ planet:
           source: canon
           value: Twycross North
         capital:
-          source: M&M
+          source: Masters and Minions, pg. 153
           value: Camora
-          page: 153
       - name:
           source: canon
           value: Twycross South
     satellite:
       - name:
-          source: M&M
+          source: Masters and Minions, pg. 153
           value: Twycross III
-          page: 153
         size: medium
         icon: oddmoon2
     event:
       - date: '2607-12-25'
-        # administration: LA | Tamar Pact | Trellshire
-        # administration: LA | Tamar Pact | Trellshire
-        # administration: LA | Tamar Pact | Trellshire
-        # administration: LA | Tamar Pact | Trellshire
-        # administration: LA | Tamar Pact | Trellshire
-        # administration: LA | Tamar Pact | Trellshire
         faction:
           source: canon
           value:
@@ -255,46 +239,18 @@ planet:
       - date: '3030-08-25'
         population: 1074885827.0
         socioIndustrial: C-C-C-C-D
-      - date: '3040-01-01'
-        # administration: FC | Tamar March | Blackjack Operational Area
-        # administration: FC | Tamar March | Blackjack Operational Area
-        # administration: FC | Tamar March | Blackjack Operational Area
-        # administration: FC | Tamar March | Blackjack Operational Area
-        # administration: FC | Tamar March | Blackjack Operational Area
-        # administration: FC | Tamar March | Blackjack Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FC
       - date: '3040-09-20'
         population: 1088188566.0
         socioIndustrial:
           source: canon
           value: B-B-C-C-D
       - date: '3040-01-19'
-        # administration: FC | Tamar March | Blackjack Operational Area
-        # administration: FC | Tamar March | Blackjack Operational Area
-        # administration: FC | Tamar March | Blackjack Operational Area
-        # administration: FC | Tamar March | Blackjack Operational Area
-        # administration: FC | Tamar March | Blackjack Operational Area
-        # administration: FC | Tamar March | Blackjack Operational Area
         faction:
           source: canon
           value:
             - FC
       - date: '3050-01-01'
-        # administration: FC | Tamar March | Blackjack Operational Area
-        # administration: FC | Tamar March | Blackjack Operational Area
-        # administration: FC | Tamar March | Blackjack Operational Area
-        # administration: FC | Tamar March | Blackjack Operational Area
-        # administration: FC | Tamar March | Blackjack Operational Area
         population: 1098575618.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CJF
       - date: '3050-06-04'
         faction:
           source: canon
@@ -322,18 +278,6 @@ planet:
           source: canon
           value:
             - CJF
-      - date: '3051-01-01'
-        # administration: FC | Tamar March | Blackjack Operational Area
-        # administration: FC | Tamar March | Blackjack Operational Area
-        # administration: FC | Tamar March | Blackjack Operational Area
-        # administration: FC | Tamar March | Blackjack Operational Area
-        # administration: FC | Tamar March | Blackjack Operational Area
-        # administration: FC | Tamar March | Blackjack Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FC
       - date: '3051-11-01'
         faction:
           source: canon
@@ -356,12 +300,6 @@ planet:
           source: canon
           value:
             - CJF
-            - CDS
-      - date: '3068-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
             - CDS
       - date: '3070-01-01'
         population: 1123124404.0
@@ -397,17 +335,6 @@ planet:
         population: 1165225287.0
       - date: '3145-01-01'
         population: 1166391096.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CJF
-      - date: '3151-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - AML
       - date: '3151-07-20'
         faction:
           source: canon

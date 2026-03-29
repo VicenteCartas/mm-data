@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,17 +16,15 @@
 # affiliated with Microsoft.
 
 id: Solaris
-sucsId: 2372
+sucsId: 2371
 xcood: -122.316
 ycood: -7.025
 spectralType:
-  source: 25YAF
+  source: 25 Years of Art and Fiction, pg. 191
   value: K1V
-  page: 191
 primarySlot:
-  source: 25YAF
+  source: 25 Years of Art and Fiction, pg. 191
   value: 7
-  page: 191
 event:
   - date: '2356-09-08'
     nadirCharge: yes
@@ -141,39 +139,32 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.56
     sysPos:
-      source: 25YAF
+      source: 25 Years of Art and Fiction, pg. 191
       value: 7
-      page: 191
     icon: wet5
     pressure:
-      source: 25YAF
+      source: 25 Years of Art and Fiction, pg. 191
       value: STANDARD
-      page: 191
     atmosphere:
-      source: 25YAF
+      source: 25 Years of Art and Fiction, pg. 191
       value: BREATHABLE
-      page: 191
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 25YAF
+      source: 25 Years of Art and Fiction, pg. 191
       value: 1.1
-      page: 191
     diameter: 12399
     density: 6.2345032488
     dayLength: 29
     yearLength: 1.0
     temperature:
-      source: 25YAF
+      source: 25 Years of Art and Fiction, pg. 191
       value: 25
-      page: 191
     water:
-      source: 25YAF
+      source: 25 Years of Art and Fiction, pg. 191
       value: 80
-      page: 191
     lifeForm:
-      source: 25YAF
+      source: 25 Years of Art and Fiction, pg. 191
       value: FISH
-      page: 191
     desc: |-
       Solaris VII is best known as the Game World. Since the time of the Star League the planet has been host to 'Mech duels. The planet is part of the Lyran Commonwealth but it is home to an enclave from each of the major Inner Sphere powers and the best selling games are usually between Stables that support rivaling Great Houses.
 
@@ -190,22 +181,18 @@ planet:
       Vining Engineering and Salvage Team
     landmass:
       - name:
-          source: AToW
+          source: A Time of War, pg. 383
           value: Equatus
-          page: 383
       - name:
-          source: AToW
+          source: A Time of War, pg. 383
           value: Grayland
-          page: 383
         capital:
-          source: 25YAF
+          source: 25 Years of Art and Fiction, pg. 191
           value: Solaris City
-          page: 191
     satellite:
       - name:
-          source: 25YAF
+          source: 25 Years of Art and Fiction, pg. 191
           value: Solaris 7 Able
-          page: 191
         size: medium
         icon: rock3
     event:
@@ -243,12 +230,6 @@ planet:
       - date: '2350-01-01'
         population: 192201779.0
       - date: '2355-12-24'
-        # administration: LA | Federation of Skye
-        # administration: LA | Federation of Skye
-        # administration: LA | Federation of Skye
-        # administration: LA | Federation of Skye
-        # administration: LA | Federation of Skye
-        # administration: LA | Federation of Skye
         faction:
           source: canon
           value:
@@ -337,7 +318,7 @@ planet:
       - date: '2700-01-01'
         population: 1302174644.0
         hiringHall:
-          source: FM:MR
+          source: Merc FM Revised
           value: MINOR
       - date: '2710-01-01'
         population: 1291169418.0
@@ -365,25 +346,7 @@ planet:
         population: 1210328727.0
       - date: '2820-01-01'
         population: 1210891519.0
-      - date: '2821-01-01'
-        # administration: LA | Federation of Skye | Rahneshire
-        # administration: LA | Federation of Skye | Rahneshire
-        # administration: LA | Federation of Skye | Rahneshire
-        # administration: LA | Federation of Skye | Rahneshire
-        # administration: LA | Federation of Skye | Rahneshire
-        # administration: LA | Federation of Skye | Rahneshire
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LA
       - date: '2821-09-03'
-        # administration: LA | Federation of Skye | Rahneshire
-        # administration: LA | Federation of Skye | Rahneshire
-        # administration: LA | Federation of Skye | Rahneshire
-        # administration: LA | Federation of Skye | Rahneshire
-        # administration: LA | Federation of Skye | Rahneshire
-        # administration: LA | Federation of Skye | Rahneshire
         faction:
           source: canon
           value:
@@ -439,25 +402,8 @@ planet:
       - date: '3035-01-01'
         socioIndustrial: B-B-B-B-C
       - date: '3040-01-01'
-        # administration: FC | Skye March | Alcor Operational Area
-        # administration: FC | Skye March | Alcor Operational Area
-        # administration: FC | Skye March | Alcor Operational Area
-        # administration: FC | Skye March | Alcor Operational Area
-        # administration: FC | Skye March | Alcor Operational Area
-        # administration: FC | Skye March | Alcor Operational Area
         population: 1034215708.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FC
       - date: '3040-01-19'
-        # administration: FC | Skye March | Alcor Operational Area
-        # administration: FC | Skye March | Alcor Operational Area
-        # administration: FC | Skye March | Alcor Operational Area
-        # administration: FC | Skye March | Alcor Operational Area
-        # administration: FC | Skye March | Alcor Operational Area
-        # administration: FC | Skye March | Alcor Operational Area
         faction:
           source: canon
           value:
@@ -468,25 +414,7 @@ planet:
           value: A-A-A-A-B
       - date: '3050-01-01'
         population: 1045341232.0
-      - date: '3057-01-01'
-        # administration: LA | Skye March | Alcor Operational Area
-        # administration: LA | Skye March | Alcor Operational Area
-        # administration: LA | Skye March | Alcor Operational Area
-        # administration: LA | Skye March | Alcor Operational Area
-        # administration: LA | Skye March | Alcor Operational Area
-        # administration: LA | Skye March | Alcor Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LA
       - date: '3057-09-18'
-        # administration: LA | Skye Province | Freedom Theater
-        # administration: LA | Skye Province | Freedom Theater
-        # administration: LA | Skye Province | Freedom Theater
-        # administration: LA | Skye Province | Freedom Theater
-        # administration: LA | Skye Province | Freedom Theater
-        # administration: LA | Skye Province | Freedom Theater
         faction:
           source: canon
           value:
@@ -515,12 +443,6 @@ planet:
           value: X
       - date: '3140-01-01'
         population: 1173444417.0
-      - date: '3145-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CWE
       - date: '3145-09-17'
         faction:
           source: canon

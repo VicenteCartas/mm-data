@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Sterling
-sucsId: 2409
+sucsId: 2408
 xcood: -191.544
 ycood: -70.907
 spectralType:
@@ -108,7 +108,15 @@ planet:
     lifeForm:
       source: canon
       value: MAMMAL
-    desc: Sterling is a relatively comfortable planet, despite its thin atmosphere, with abundant natural resources and a strong industrial base. The only thing keeping Sterling from being self-sufficient is a lack of arable land that forces the population to rely on imported food. Sterling is home to a branch of the Hero Training Institute, a for-profit training academy with numerous locations in the Inner Sphere. The Hero Institute on Sterling will train any aspiring MechWarrior or Aerospace Pilot that can afford their program. The Institute on Sterling is located in the city of Starlight on the Graham continent. The Institute uses the badlands surrounding the city for training maneuvers.
+    desc: Sterling is a relatively comfortable planet, despite its thin atmosphere,
+      with abundant natural resources and a strong industrial base. The only thing
+      keeping Sterling from being self-sufficient is a lack of arable land that forces
+      the population to rely on imported food. Sterling is home to a branch of the
+      Hero Training Institute, a for-profit training academy with numerous locations
+      in the Inner Sphere. The Hero Institute on Sterling will train any aspiring
+      MechWarrior or Aerospace Pilot that can afford their program. The Institute
+      on Sterling is located in the city of Starlight on the Graham continent. The
+      Institute uses the badlands surrounding the city for training maneuvers.
     landmass:
       - name:
           source: canon
@@ -146,12 +154,6 @@ planet:
           value:
             - FWL
         population: 19826452.0
-      - date: '2317-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '2320-01-01'
         population: 34468916.0
       - date: '2330-01-01'
@@ -208,12 +210,6 @@ planet:
         population: 1052736027.0
       - date: '2570-01-01'
         population: 1061605894.0
-      - date: '2571-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FWL
       - date: '2580-01-01'
         population: 1070008650.0
       - date: '2590-01-01'
@@ -330,12 +326,6 @@ planet:
         population: 1047100305.0
       - date: '3080-01-01'
         population: 1061225879.0
-      - date: '3081-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '3081-06-01'
         faction:
           source: canon
@@ -359,12 +349,6 @@ planet:
           value: X
       - date: '3140-01-01'
         population: 1148922711.0
-      - date: '3145-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CWE
       - date: '3145-01-20'
         faction:
           source: canon
@@ -376,12 +360,6 @@ planet:
           source: canon
           value:
             - IND
-      - date: '3152-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CWE
   - name: Clinch
     type: GIANT_TERRESTRIAL
     orbitalDist: 0.84

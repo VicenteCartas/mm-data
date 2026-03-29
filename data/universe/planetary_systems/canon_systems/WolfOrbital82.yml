@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,13 +16,12 @@
 # affiliated with Microsoft.
 
 id: Wolf Orbital 82
-sucsId: 3006
+sucsId: 3044
 xcood: -103.853
 ycood: 683.813
 spectralType:
-  source: EC
+  source: Explorer Corps, pg. 53
   value: G6IV
-  page: 53
 primarySlot: 1
 event:
   - date: '3049-11-14'
@@ -73,12 +72,6 @@ planet:
         size: medium
         icon: rock3
     event:
-      - date: '3049-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CW
       - date: '3049-10-27'
         faction:
           source: canon
@@ -95,12 +88,6 @@ planet:
         hpg: A
         population: 1730.0
         socioIndustrial: A-X-X-X-X
-      - date: '3075-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - ABN
       - date: '3110-09-22'
         faction:
           source: canon

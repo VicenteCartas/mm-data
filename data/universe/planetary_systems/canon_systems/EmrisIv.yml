@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -107,7 +107,14 @@ planet:
     lifeForm:
       source: canon
       value: BIRD
-    desc: Despite the high-pressure atmosphere and slightly higher than standard gravity on Emris IV, the planet is relatively comfortable for human habitation, though agriculture suffers and the population must import food to sustain itself. Emris contains abundant natural resources and is home to a sizable Starcorps Industries ‘Mech production facility, which is located in the city Ivanograd on the Snowden continent, which contrary to its name has a very mild climate. Starcorps also has another facility on planet, the site of their famous Holly missile launchers is located in the city of Urseinova, also on the Snowden continent.
+    desc: Despite the high-pressure atmosphere and slightly higher than standard gravity
+      on Emris IV, the planet is relatively comfortable for human habitation, though
+      agriculture suffers and the population must import food to sustain itself. Emris
+      contains abundant natural resources and is home to a sizable Starcorps Industries
+      ‘Mech production facility, which is located in the city Ivanograd on the Snowden
+      continent, which contrary to its name has a very mild climate. Starcorps also
+      has another facility on planet, the site of their famous Holly missile launchers
+      is located in the city of Urseinova, also on the Snowden continent.
     landmass:
       - name:
           source: canon
@@ -147,12 +154,6 @@ planet:
         population: 2841810.0
       - date: '2310-01-01'
         population: 6331646.0
-      - date: '2317-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '2320-01-01'
         population: 12613435.0
       - date: '2330-01-01'
@@ -165,18 +166,6 @@ planet:
         population: 58937461.0
       - date: '2360-01-01'
         population: 86085333.0
-      - date: '2366-01-01'
-        # administration: FWL | Federation of Oriente
-        # administration: FWL | Federation of Oriente
-        # administration: FWL | Federation of Oriente
-        # administration: FWL | Federation of Oriente
-        # administration: FWL | Federation of Oriente
-        # administration: FWL | Federation of Oriente
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FWL
       - date: '2370-01-01'
         population: 119555983.0
       - date: '2380-01-01'
@@ -341,12 +330,6 @@ planet:
           value:
             - FWLR
       - date: '3015-03-15'
-        # administration: FWL | The Protectorate
-        # administration: FWL | The Protectorate
-        # administration: FWL | The Protectorate
-        # administration: FWL | The Protectorate
-        # administration: FWL | The Protectorate
-        # administration: FWL | The Protectorate
         faction:
           source: canon
           value:
@@ -388,12 +371,6 @@ planet:
         population: 1036543957.0
       - date: '3126-01-01'
         socioIndustrial: A-B-A-D-D
-      - date: '3130-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - OP
       - date: '3130-07-13'
         faction:
           source: canon
@@ -407,25 +384,8 @@ planet:
       - date: '3140-01-01'
         population: 1036543957.0
       - date: '3145-01-01'
-        # administration: FWL | Oriente Protectorate
-        # administration: FWL | Oriente Protectorate
-        # administration: FWL | Oriente Protectorate
-        # administration: FWL | Oriente Protectorate
-        # administration: FWL | Oriente Protectorate
-        # administration: FWL | Oriente Protectorate
         population: 1038203755.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FWL
       - date: '3151-01-01'
-        # administration: FWL | Oriente Protectorate
-        # administration: FWL | Oriente Protectorate
-        # administration: FWL | Oriente Protectorate
-        # administration: FWL | Oriente Protectorate
-        # administration: FWL | Oriente Protectorate
-        # administration: FWL | Oriente Protectorate
         faction:
           source: sucs
           value:

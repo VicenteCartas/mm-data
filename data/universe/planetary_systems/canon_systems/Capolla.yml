@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -20,10 +20,10 @@ sucsId: 467
 xcood: 8.003
 ycood: -41.409
 spectralType:
-  source: DA:RW
+  source: MWDA world profiles
   value: F6VI
 primarySlot:
-  source: DA:RW
+  source: MWDA world profiles
   value: 6
 event:
   - date: '2352-05-28'
@@ -116,49 +116,79 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 3.64
     sysPos:
-      source: DA:RW
+      source: MWDA world profiles
       value: 6
     icon: wet17
     pressure:
-      source: DA:RW
+      source: MWDA world profiles
       value: STANDARD
     atmosphere:
-      source: DA:RW
+      source: MWDA world profiles
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: DA:RW
+      source: MWDA world profiles
       value: 0.83
     diameter: 10246
     density: 5.692827099086
     dayLength: 22
     yearLength: 7.0
     temperature:
-      source: DA:RW
+      source: MWDA world profiles
       value: 33
     water:
-      source: DA:RW
+      source: MWDA world profiles
       value: 77
     lifeForm:
-      source: DA:RW
+      source: MWDA world profiles
       value: BIRD
-    desc: 3135 - A small world, with jungles covering much of its four main landmasses, Capolla‘s rich metal ore deposits and other raw materials drew many settlers when the planet was discovered in the twenty-second century. Even before the days of the Star League, this world had developed such a strong and diverse economic and social base—devoid of any major military industries—that the government of the Terran Hegemony allowed the planet a limited autonomy, along with its neighboring system, Terra Firma. The Capellan Confederation, which seized the world after the fall of the League, and even the Federated Commonwealth after that, continued this policy of laissez-faire, which contributed to the formation of the short-lived Terracap Confederation by the two worlds after the collapse of the Commonwealth. Even the Word of Blake, in exchange for the right to place military bases and “re-education facilities” on-planet before the Jihad, continued the hands-off policy toward the tiny alliance‘s political and business affairs, and pledged their troops to the defense of these two worlds. In this latter case, however, the citizens of Capolla and its neighboring Terra Firma became unwitting accomplices in the Jihad, turning a blind eye to the Blakists‘ atrocities in exchange for their own worlds‘ relative safety. When allied forces came to drive off the Blakist defenders, the native militias were split along pro-Blakist and anti-Blakist lines, and Capolla‘s cities suffered grievous damage in the fighting. The majority of Capolla‘s population today lives in large cities, including the planetary capital of Stockdale, nestled in the planet‘s many mountain valleys on the equatorial continents of Konowalchuk and Dominus. Most of the on-world mining operations, today run by seven planet-wide conglomerates, are based in the mountains of these continents as well. The southern polar continent of Matlabor, by contrast, hosts several oil and natural gas processing stations, only recently restored to their peak performance of almost a century ago. The city of Parisia, on the northern island continent of New Australia, is home to the main offices of Thaddeus Enterprises, an interplanetary shipping corporation that aided the planetary government in the redevelopment of its spaceport network, which had been largely destroyed in the fighting following the Federated Commonwealth break-up.
+    desc: 3135 - A small world, with jungles covering much of its four main landmasses,
+      Capolla‘s rich metal ore deposits and other raw materials drew many settlers
+      when the planet was discovered in the twenty-second century. Even before the
+      days of the Star League, this world had developed such a strong and diverse
+      economic and social base—devoid of any major military industries—that the government
+      of the Terran Hegemony allowed the planet a limited autonomy, along with its
+      neighboring system, Terra Firma. The Capellan Confederation, which seized the
+      world after the fall of the League, and even the Federated Commonwealth after
+      that, continued this policy of laissez-faire, which contributed to the formation
+      of the short-lived Terracap Confederation by the two worlds after the collapse
+      of the Commonwealth. Even the Word of Blake, in exchange for the right to place
+      military bases and “re-education facilities” on-planet before the Jihad, continued
+      the hands-off policy toward the tiny alliance‘s political and business affairs,
+      and pledged their troops to the defense of these two worlds. In this latter
+      case, however, the citizens of Capolla and its neighboring Terra Firma became
+      unwitting accomplices in the Jihad, turning a blind eye to the Blakists‘ atrocities
+      in exchange for their own worlds‘ relative safety. When allied forces came to
+      drive off the Blakist defenders, the native militias were split along pro-Blakist
+      and anti-Blakist lines, and Capolla‘s cities suffered grievous damage in the
+      fighting. The majority of Capolla‘s population today lives in large cities,
+      including the planetary capital of Stockdale, nestled in the planet‘s many mountain
+      valleys on the equatorial continents of Konowalchuk and Dominus. Most of the
+      on-world mining operations, today run by seven planet-wide conglomerates, are
+      based in the mountains of these continents as well. The southern polar continent
+      of Matlabor, by contrast, hosts several oil and natural gas processing stations,
+      only recently restored to their peak performance of almost a century ago. The
+      city of Parisia, on the northern island continent of New Australia, is home
+      to the main offices of Thaddeus Enterprises, an interplanetary shipping corporation
+      that aided the planetary government in the redevelopment of its spaceport network,
+      which had been largely destroyed in the fighting following the Federated Commonwealth
+      break-up.
     landmass:
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Dominus
         capital:
-          source: DA:RW
+          source: MWDA world profiles
           value: Stockdale
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Konowalchuk
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Matlabor
     satellite:
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Nobel
         size: medium
         icon: rock11
@@ -205,12 +235,6 @@ planet:
           source: canon
           value:
             - TH
-      - date: '2317-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '2320-01-01'
         population: 723207556.0
       - date: '2321-01-01'
@@ -219,18 +243,6 @@ planet:
         population: 893624809.0
       - date: '2340-01-01'
         population: 1078062187.0
-      - date: '2341-01-01'
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - TH
       - date: '2350-01-01'
         population: 1268781922.0
       - date: '2360-01-01'
@@ -320,18 +332,6 @@ planet:
         population: 3818627934.0
       - date: '2760-01-01'
         population: 3842249402.0
-      - date: '2767-01-01'
-        # administration: AE | Terra Firma Province
-        # administration: AE | Terra Firma Province
-        # administration: AE | Terra Firma Province
-        # administration: AE | Terra Firma Province
-        # administration: AE | Terra Firma Province
-        # administration: AE | Terra Firma Province
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - AE
       - date: '2767-07-06'
         faction:
           source: canon
@@ -340,42 +340,18 @@ planet:
       - date: '2770-01-01'
         population: 3857129298.0
       - date: '2779-06-12'
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
         faction:
           source: canon
           value:
             - TH
       - date: '2780-01-01'
         population: 3824043143.0
-      - date: '2786-01-01'
-        # administration: CC | Tikonov Commonality | Region 1
-        # administration: CC | Tikonov Commonality | Region 1
-        # administration: CC | Tikonov Commonality | Region 1
-        # administration: CC | Tikonov Commonality | Region 1
-        # administration: CC | Tikonov Commonality | Region 1
-        # administration: CC | Tikonov Commonality | Region 1
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CC
       - date: '2786-09-22'
         faction:
           source: canon
           value:
             - CC
       - date: '2790-03-22'
-        # administration: CC | Tikonov Commonality | Region 2
-        # administration: CC | Tikonov Commonality | Region 2
-        # administration: CC | Tikonov Commonality | Region 2
-        # administration: CC | Tikonov Commonality | Region 2
-        # administration: CC | Tikonov Commonality | Region 2
-        # administration: CC | Tikonov Commonality | Region 2
         faction:
           source: canon
           value:
@@ -439,12 +415,6 @@ planet:
       - date: '3030-01-01'
         population: 2970201313.0
       - date: '3032-05-18'
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
         faction:
           source: canon
           value:
@@ -459,37 +429,13 @@ planet:
         socioIndustrial: A-A-D-A-B
       - date: '3050-01-01'
         population: 3036877146.0
-      - date: '3057-01-01'
-        # administration: TCC | National Capital
-        # administration: TCC | National Capital
-        # administration: TCC | National Capital
-        # administration: TCC | National Capital
-        # administration: TCC | National Capital
-        # administration: TCC | National Capital
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - TCC
       - date: '3057-11-01'
-        # administration: TCC | National Capital
-        # administration: TCC | National Capital
-        # administration: TCC | National Capital
-        # administration: TCC | National Capital
-        # administration: TCC | National Capital
-        # administration: TCC | National Capital
         faction:
           source: canon
           value:
             - TCC
       - date: '3060-01-01'
         population: 3080924557.0
-      - date: '3068-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - WOB
       - date: '3068-08-01'
         faction:
           source: canon
@@ -510,25 +456,7 @@ planet:
             - Stone
       - date: '3080-01-01'
         population: 3127174036.0
-      - date: '3081-01-01'
-        # administration: ROS | Prefecture X
-        # administration: ROS | Prefecture X
-        # administration: ROS | Prefecture X
-        # administration: ROS | Prefecture X
-        # administration: ROS | Prefecture X
-        # administration: ROS | Prefecture X
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - ROS
       - date: '3081-03-01'
-        # administration: ROS | Prefecture X
-        # administration: ROS | Prefecture X
-        # administration: ROS | Prefecture X
-        # administration: ROS | Prefecture X
-        # administration: ROS | Prefecture X
-        # administration: ROS | Prefecture X
         faction:
           source: canon
           value:
@@ -557,12 +485,6 @@ planet:
           value:
             - CC
       - date: '3151-01-01'
-        # administration: CC | Tikonov Commonality | Region 2
-        # administration: CC | Tikonov Commonality | Region 2
-        # administration: CC | Tikonov Commonality | Region 2
-        # administration: CC | Tikonov Commonality | Region 2
-        # administration: CC | Tikonov Commonality | Region 2
-        # administration: CC | Tikonov Commonality | Region 2
         faction:
           source: sucs
           value:

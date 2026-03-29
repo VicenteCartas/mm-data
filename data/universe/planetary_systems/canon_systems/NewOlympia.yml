@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,17 +16,15 @@
 # affiliated with Microsoft.
 
 id: New Olympia
-sucsId: 1842
+sucsId: 1841
 xcood: -150.168
 ycood: -130.286
 spectralType:
-  source: 'HB:HM'
+  source: 'Handbook: House Marik, pg. 60'
   value: G1V
-  page: 60
 primarySlot:
-  source: 'HB:HM'
+  source: 'Handbook: House Marik, pg. 60'
   value: 3
-  page: 60
 event:
   - date: '2368-05-02'
     zenithCharge: yes
@@ -78,61 +76,50 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 1.0
     sysPos:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 60'
       value: 3
-      page: 60
     icon: wet14
     pressure:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 60'
       value: STANDARD
-      page: 60
     atmosphere:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 60'
       value: BREATHABLE
-      page: 60
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 60'
       value: 0.95
-      page: 60
     diameter: 14028
     density: 4.759212311467
     dayLength: 17
     yearLength: 1.4
     temperature:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 60'
       value: 35
-      page: 60
     water:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 60'
       value: 82
-      page: 60
     lifeForm:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 60'
       value: PLANT
-      page: 60
     desc: |-
       An uneasy peace has covered New Olympia for centuries between the Olympica Province and the rest of the planet which is part of the Free Worlds League. Technically the island province is an independent realm in the middle of the Free Worlds League. This unique status as an independent region has drawn the wealthy of the Free Worlds League that are eager to live under the comforts provided at the heart of the League while avoiding the taxes imposed on most planets.
 
       Most industry on the planet is centered around catering to the rich individuals seeking to take advantage of the Olympica Provinces’ tax free status.
     landmass:
       - name:
-          source: 'HB:HM'
+          source: 'Handbook: House Marik, pg. 60'
           value: New Greenland
-          page: 60
         capital:
-          source: 'HB:HM'
+          source: 'Handbook: House Marik, pg. 60'
           value: Darienbad
-          page: 60
       - name:
-          source: 'HB:HM'
+          source: 'Handbook: House Marik, pg. 60'
           value: Olympica Province
-          page: 60
     satellite:
       - name:
-          source: 'HB:HM'
+          source: 'Handbook: House Marik, pg. 60'
           value: Delphi
-          page: 60
         size: medium
         icon: oddmoon2
     event:
@@ -152,12 +139,6 @@ planet:
       - date: '2270-01-01'
         population: 2451903.0
       - date: '2271-06-01'
-        # administration: FWL | Marik Commonwealth
-        # administration: FWL | Marik Commonwealth
-        # administration: FWL | Marik Commonwealth
-        # administration: FWL | Marik Commonwealth
-        # administration: FWL | Marik Commonwealth
-        # administration: FWL | Marik Commonwealth
         faction:
           source: canon
           value:
@@ -334,12 +315,6 @@ planet:
             - FWL
             - FWLR
       - date: '3014-11-14'
-        # administration: FWL | Marik Commonwealth
-        # administration: FWL | Marik Commonwealth
-        # administration: FWL | Marik Commonwealth
-        # administration: FWL | Marik Commonwealth
-        # administration: FWL | Marik Commonwealth
-        # administration: FWL | Marik Commonwealth
         faction:
           source: canon
           value:
@@ -372,12 +347,6 @@ planet:
           value: 2535000000.0
       - date: '3070-01-01'
         population: 2544651326.0
-      - date: '3079-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - MCM
       - date: '3079-09-25'
         faction:
           source: canon
@@ -385,18 +354,6 @@ planet:
             - MSC
       - date: '3080-01-01'
         population: 2586727691.0
-      - date: '3081-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - MCM
-      - date: '3085-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - MSC
       - date: '3090-01-01'
         population: 2628973950.0
       - date: '3100-01-01'
@@ -415,12 +372,6 @@ planet:
           value: X
       - date: '3140-01-01'
         population: 2819032207.0
-      - date: '3145-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CWE
       - date: '3145-11-06'
         faction:
           source: canon

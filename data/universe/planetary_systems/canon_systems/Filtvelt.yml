@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,17 +16,15 @@
 # affiliated with Microsoft.
 
 id: Filtvelt
-sucsId: 870
+sucsId: 869
 xcood: 506.643
 ycood: -181.529
 spectralType:
-  source: M&M
+  source: Masters and Minions, pg. 44
   value: G5III
-  page: 44
 primarySlot:
-  source: M&M
+  source: Masters and Minions, pg. 44
   value: 3
-  page: 44
 event:
   - date: '2375-04-30'
     nadirCharge: yes
@@ -73,39 +71,32 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 1.44
     sysPos:
-      source: M&M
+      source: Masters and Minions, pg. 44
       value: 3
-      page: 44
     icon: green17
     pressure:
-      source: M&M
+      source: Masters and Minions, pg. 44
       value: STANDARD
-      page: 44
     atmosphere:
-      source: M&M
+      source: Masters and Minions, pg. 44
       value: BREATHABLE
-      page: 44
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: M&M
+      source: Masters and Minions, pg. 44
       value: 0.78
-      page: 44
     diameter: 11244
     density: 4.874886083698
     dayLength: 27
     yearLength: 2.0
     temperature:
-      source: M&M
+      source: Masters and Minions, pg. 44
       value: 31
-      page: 44
     water:
-      source: M&M
+      source: Masters and Minions, pg. 44
       value: 55
-      page: 44
     lifeForm:
-      source: M&M
+      source: Masters and Minions, pg. 44
       value: MAMMAL
-      page: 44
     desc: |-
       Filtvelt is a relatively unremarkable planet located in the Outback of the Federated Suns. At least until February 20, 3072 when the Filtvelt Coalition declared its independence from the Suns due to negligence during the Word of Blake Jihad. Other than lower than standard gravity, Filtvelt is a comfortable temperate planet with fertile soil and long growing seasons which makes it an ideal breadbasket planet that supplies food to neighboring systems. Filtvelt has modest natural resources and industry, including a Cal-Boeing of Dorwinion plant that produces conventional aircraft and the Coalition Armory, a small facility that originally did just repair and refit work, it was retooled by the Filtvelt Coalition to create primitive BattleMechs.
 
@@ -121,30 +112,21 @@ planet:
           source: canon
           value: Hurum
         capital:
-          source: M&M
+          source: Masters and Minions, pg. 44
           value: Undredal
-          page: 44
     satellite:
       - name:
-          source: M&M
+          source: Masters and Minions, pg. 44
           value: Færder
-          page: 44
         size: medium
         icon: rock12
       - name:
-          source: M&M
+          source: Masters and Minions, pg. 44
           value: Torbjørnskjær
-          page: 44
         size: giant
         icon: rock13
     event:
       - date: '2360-10-31'
-        # administration: FS | Crucis March | Minette Operational Area
-        # administration: FS | Crucis March | Minette Operational Area
-        # administration: FS | Crucis March | Minette Operational Area
-        # administration: FS | Crucis March | Minette Operational Area
-        # administration: FS | Crucis March | Minette Operational Area
-        # administration: FS | Crucis March | Minette Operational Area
         faction:
           source: canon
           value:
@@ -299,25 +281,8 @@ planet:
       - date: '3030-01-01'
         population: 2652279.0
       - date: '3040-01-01'
-        # administration: FC | Crucis March | Minette Operational Area
-        # administration: FC | Crucis March | Minette Operational Area
-        # administration: FC | Crucis March | Minette Operational Area
-        # administration: FC | Crucis March | Minette Operational Area
-        # administration: FC | Crucis March | Minette Operational Area
-        # administration: FC | Crucis March | Minette Operational Area
         population: 2681347.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FC
       - date: '3040-01-19'
-        # administration: FC | Crucis March | Minette Operational Area
-        # administration: FC | Crucis March | Minette Operational Area
-        # administration: FC | Crucis March | Minette Operational Area
-        # administration: FC | Crucis March | Minette Operational Area
-        # administration: FC | Crucis March | Minette Operational Area
-        # administration: FC | Crucis March | Minette Operational Area
         faction:
           source: canon
           value:
@@ -334,25 +299,7 @@ planet:
         population: 2712361.0
       - date: '3060-01-01'
         population: 2741265.0
-      - date: '3067-01-01'
-        # administration: FS | Crucis March | Minette Operational Area
-        # administration: FS | Crucis March | Minette Operational Area
-        # administration: FS | Crucis March | Minette Operational Area
-        # administration: FS | Crucis March | Minette Operational Area
-        # administration: FS | Crucis March | Minette Operational Area
-        # administration: FS | Crucis March | Minette Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FS
       - date: '3067-04-20'
-        # administration: FS | Crucis March | Minette Operational Area
-        # administration: FS | Crucis March | Minette Operational Area
-        # administration: FS | Crucis March | Minette Operational Area
-        # administration: FS | Crucis March | Minette Operational Area
-        # administration: FS | Crucis March | Minette Operational Area
-        # administration: FS | Crucis March | Minette Operational Area
         faction:
           source: canon
           value:
@@ -360,12 +307,6 @@ planet:
       - date: '3070-01-01'
         population: 2771585.0
       - date: '3072-02-20'
-        # administration: FVC | National Capital
-        # administration: FVC | National Capital
-        # administration: FVC | National Capital
-        # administration: FVC | National Capital
-        # administration: FVC | National Capital
-        # administration: FVC | National Capital
         faction:
           source: canon
           value:

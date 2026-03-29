@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,17 +16,15 @@
 # affiliated with Microsoft.
 
 id: Victoria (CC)
-sucsId: 2685
+sucsId: 2684
 xcood: 92.884
 ycood: -347.978
 spectralType:
-  source: 'HB:HL'
+  source: 'Handbook: House Liao, pg. 85'
   value: K7IV
-  page: 85
 primarySlot:
-  source: 'HB:HL'
+  source: 'Handbook: House Liao, pg. 85'
   value: 2
-  page: 85
 event:
   - date: '2762-08-31'
     zenithCharge: yes
@@ -65,39 +63,32 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.42
     sysPos:
-      source: 'HB:HL'
+      source: 'Handbook: House Liao, pg. 85'
       value: 2
-      page: 85
     icon: wet10
     pressure:
-      source: 'HB:HL'
+      source: 'Handbook: House Liao, pg. 85'
       value: THIN
-      page: 85
     atmosphere:
-      source: 'HB:HL'
+      source: 'Handbook: House Liao, pg. 85'
       value: BREATHABLE
-      page: 85
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'HB:HL'
+      source: 'Handbook: House Liao, pg. 85'
       value: 1.0
-      page: 85
     diameter: 12758
     density: 5.508283500317
     dayLength: 24
     yearLength: 0.8
     temperature:
-      source: 'HB:HL'
+      source: 'Handbook: House Liao, pg. 85'
       value: 2
-      page: 85
     water:
-      source: 'HB:HL'
+      source: 'Handbook: House Liao, pg. 85'
       value: 9
-      page: 85
     lifeForm:
-      source: 'HB:HL'
+      source: 'Handbook: House Liao, pg. 85'
       value: PLANT
-      page: 85
     desc: |-
       Victoria's severe weather conditions, including almost-daily hailstorms, have resulted in underground dwellings with strict building codes. Victoria has developed a beautiful array of domed parks to satisfy the population's desire for sunlight. These domed parks have become a tourist attraction, bringing visitors from across the Confederation.
 
@@ -113,44 +104,34 @@ planet:
       Tellis Electronics
     landmass:
       - name:
-          source: 'OR'
+          source: 'Objective Raids: Capellan Confederation'
           value: Victoria
         capital:
-          source: 'OR'
+          source: 'Objective Raids: Capellan Confederation'
           value: Barns
     satellite:
       - name:
-          source: 'HB:HL'
+          source: 'Handbook: House Liao, pg. 85'
           value: Astrid
-          page: 85
         size: medium
         icon: oddmoon1
       - name:
-          source: 'HB:HL'
+          source: 'Handbook: House Liao, pg. 85'
           value: Jennifer
-          page: 85
         size: medium
         icon: oddmoon3
       - name:
-          source: 'HB:HL'
+          source: 'Handbook: House Liao, pg. 85'
           value: Jocelyn
-          page: 85
         size: medium
         icon: oddmoon2
       - name:
-          source: 'HB:HL'
+          source: 'Handbook: House Liao, pg. 85'
           value: Lissete
-          page: 85
         size: medium
         icon: oddmoon2
     event:
       - date: '2650-02-03'
-        # administration: CC | Sian Commonality | Region 11
-        # administration: CC | Sian Commonality | Region 11
-        # administration: CC | Sian Commonality | Region 11
-        # administration: CC | Sian Commonality | Region 11
-        # administration: CC | Sian Commonality | Region 11
-        # administration: CC | Sian Commonality | Region 11
         faction:
           source: canon
           value:
@@ -275,12 +256,6 @@ planet:
       - date: '3100-01-01'
         population: 2161138932.0
       - date: '3105-11-16'
-        # administration: FS | Capellan March | Taygeta Operational Area
-        # administration: FS | Capellan March | Taygeta Operational Area
-        # administration: FS | Capellan March | Taygeta Operational Area
-        # administration: FS | Capellan March | Taygeta Operational Area
-        # administration: FS | Capellan March | Taygeta Operational Area
-        # administration: FS | Capellan March | Taygeta Operational Area
         faction:
           source: canon
           value:
@@ -299,25 +274,7 @@ planet:
           value: X
       - date: '3140-01-01'
         population: 2270580137.0
-      - date: '3145-01-01'
-        # administration: CC | Victoria Commonality | Region 4
-        # administration: CC | Victoria Commonality | Region 4
-        # administration: CC | Victoria Commonality | Region 4
-        # administration: CC | Victoria Commonality | Region 4
-        # administration: CC | Victoria Commonality | Region 4
-        # administration: CC | Victoria Commonality | Region 4
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CC
       - date: '3145-10-14'
-        # administration: CC | Victoria Commonality | Region 4
-        # administration: CC | Victoria Commonality | Region 4
-        # administration: CC | Victoria Commonality | Region 4
-        # administration: CC | Victoria Commonality | Region 4
-        # administration: CC | Victoria Commonality | Region 4
-        # administration: CC | Victoria Commonality | Region 4
         faction:
           source: canon
           value:

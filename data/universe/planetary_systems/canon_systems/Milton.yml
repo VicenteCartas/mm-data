@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,17 +16,15 @@
 # affiliated with Microsoft.
 
 id: Milton
-sucsId: 1710
+sucsId: 1709
 xcood: -64.371
 ycood: 2.798
 spectralType:
-  source: 25YAF
+  source: 25 Years of Art and Fiction, pg. 109
   value: G3V
-  page: 109
 primarySlot:
-  source: 25YAF
+  source: 25 Years of Art and Fiction, pg. 109
   value: 2
-  page: 109
 event:
   - date: '2406-12-27'
     zenithCharge: yes
@@ -57,69 +55,88 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.7
     sysPos:
-      source: 25YAF
+      source: 25 Years of Art and Fiction, pg. 109
       value: 2
-      page: 109
     icon: green4
     pressure:
-      source: 25YAF
+      source: 25 Years of Art and Fiction, pg. 109
       value: STANDARD
-      page: 109
     atmosphere:
-      source: 25YAF
+      source: 25 Years of Art and Fiction, pg. 109
       value: BREATHABLE
-      page: 109
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 25YAF
+      source: 25 Years of Art and Fiction, pg. 109
       value: 1.04
-      page: 109
     diameter: 15530
     density: 4.70625691222
     dayLength: 24
     yearLength: 1.2
     temperature:
-      source: 25YAF
+      source: 25 Years of Art and Fiction, pg. 109
       value: 41
-      page: 109
     water:
-      source: 25YAF
+      source: 25 Years of Art and Fiction, pg. 109
       value: 66
-      page: 109
     lifeForm:
-      source: 25YAF
+      source: 25 Years of Art and Fiction, pg. 109
       value: BIRD
-      page: 109
-    desc: 3135 - After the Outer Reaches Rebellion and the collapse of Terran authority among the far-flung colony worlds, dozens of planets suddenly found themselves forced to eke out a living on their own, bereft of support for their fledgling industries and booming populations. Milton, by all accounts a paradise at the time, was one such world. Its resources, barely tapped despite a growing number of settlers and a scattering of cities on all four of its interior landmasses—Etienne, Olquia, and Phronx in the north, and Selajia in the south—supported few major industries and only a limited trade other than with Terra itself. As a result, the Milton economy was a shambles when the ascendant Terran Hegemony appeared on the scene several years later, and the planet‘s meager defense force easily broke before the might of Admiral McKenna‘s forces. Under the Hegemony banner, Milton once more became a prosperous world, exporting industrial metals and radioactive ores along with a host of military and commercial components for use in spacecraft construction and fusion plant design. Most of these industries, though minor, were savaged by the troops of Amaris the Usurper, and the few that survived when Milton later became a Lyran holding were eventually lost in the Succession Wars that followed. Even today, large swaths of the interior reaches of Phronx and Selajia are plague zones, a result of the excessive chemical and biological warfare dealt out by both Marik and Steiner troops in the early Succession Wars. Ironically, the lingering effects of this damage and the constant threat of attack from hostile neighbors spared Milton the horrors of the FedCom Civil War and the Word of Blake Jihad. Largely overlooked in both conflicts—save for an incidental orbital bombardment by departing Blakist troops in the waning days of the war—Milton‘s economic and industrial recovery was nearly complete before its admittance into The Republic. Thanks to Devlin Stone‘s relocation directives and material redemption programs, Milton has experienced a complete revitalization, and is today a major exporter of industrial alloys, radioactive ores, and spacecraft components used across The Republic. The capital city, Paradise Foundation, is located on the Etienne continent, along with the planet‘s primary spaceport and the headquarters of Milton StarWorks, Limited, Milton‘s largest spacecraft component manufacturer.
+    desc: 3135 - After the Outer Reaches Rebellion and the collapse of Terran authority
+      among the far-flung colony worlds, dozens of planets suddenly found themselves
+      forced to eke out a living on their own, bereft of support for their fledgling
+      industries and booming populations. Milton, by all accounts a paradise at the
+      time, was one such world. Its resources, barely tapped despite a growing number
+      of settlers and a scattering of cities on all four of its interior landmasses—Etienne,
+      Olquia, and Phronx in the north, and Selajia in the south—supported few major
+      industries and only a limited trade other than with Terra itself. As a result,
+      the Milton economy was a shambles when the ascendant Terran Hegemony appeared
+      on the scene several years later, and the planet‘s meager defense force easily
+      broke before the might of Admiral McKenna‘s forces. Under the Hegemony banner,
+      Milton once more became a prosperous world, exporting industrial metals and
+      radioactive ores along with a host of military and commercial components for
+      use in spacecraft construction and fusion plant design. Most of these industries,
+      though minor, were savaged by the troops of Amaris the Usurper, and the few
+      that survived when Milton later became a Lyran holding were eventually lost
+      in the Succession Wars that followed. Even today, large swaths of the interior
+      reaches of Phronx and Selajia are plague zones, a result of the excessive chemical
+      and biological warfare dealt out by both Marik and Steiner troops in the early
+      Succession Wars. Ironically, the lingering effects of this damage and the constant
+      threat of attack from hostile neighbors spared Milton the horrors of the FedCom
+      Civil War and the Word of Blake Jihad. Largely overlooked in both conflicts—save
+      for an incidental orbital bombardment by departing Blakist troops in the waning
+      days of the war—Milton‘s economic and industrial recovery was nearly complete
+      before its admittance into The Republic. Thanks to Devlin Stone‘s relocation
+      directives and material redemption programs, Milton has experienced a complete
+      revitalization, and is today a major exporter of industrial alloys, radioactive
+      ores, and spacecraft components used across The Republic. The capital city,
+      Paradise Foundation, is located on the Etienne continent, along with the planet‘s
+      primary spaceport and the headquarters of Milton StarWorks, Limited, Milton‘s
+      largest spacecraft component manufacturer.
     landmass:
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Etienne
         capital:
-          source: DA:RW
+          source: MWDA world profiles
           value: Paradise Foundation
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Olquia
       - name:
-          source: 25YAF
+          source: 25 Years of Art and Fiction, pg. 109
           value: Phronx
-          page: 109
       - name:
-          source: 25YAF
+          source: 25 Years of Art and Fiction, pg. 109
           value: Selajia
-          page: 109
     satellite:
       - name:
-          source: 25YAF
+          source: 25 Years of Art and Fiction, pg. 109
           value: Faxon
-          page: 109
         size: large
         icon: rock14
       - name:
-          source: 25YAF
+          source: 25 Years of Art and Fiction, pg. 109
           value: Paramesh
-          page: 109
         size: medium
         icon: rock13
     event:
@@ -145,12 +162,6 @@ planet:
       - date: '2310-01-01'
         population: 28141719.0
       - date: '2320-01-23'
-        # administration: TH | Tyrfing Province
-        # administration: TH | Tyrfing Province
-        # administration: TH | Tyrfing Province
-        # administration: TH | Tyrfing Province
-        # administration: TH | Tyrfing Province
-        # administration: TH | Tyrfing Province
         faction:
           source: canon
           value:
@@ -253,18 +264,6 @@ planet:
         population: 1921967960.0
       - date: '2760-01-01'
         population: 1939495798.0
-      - date: '2767-01-01'
-        # administration: AE | Tyrfing Province
-        # administration: AE | Tyrfing Province
-        # administration: AE | Tyrfing Province
-        # administration: AE | Tyrfing Province
-        # administration: AE | Tyrfing Province
-        # administration: AE | Tyrfing Province
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - AE
       - date: '2767-02-02'
         faction:
           source: canon
@@ -273,37 +272,13 @@ planet:
       - date: '2770-01-01'
         population: 1941710522.0
       - date: '2779-08-27'
-        # administration: TH | Tyrfing Province
-        # administration: TH | Tyrfing Province
-        # administration: TH | Tyrfing Province
-        # administration: TH | Tyrfing Province
-        # administration: TH | Tyrfing Province
-        # administration: TH | Tyrfing Province
         faction:
           source: canon
           value:
             - TH
       - date: '2780-01-01'
         population: 1897473153.0
-      - date: '2786-01-01'
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LA
       - date: '2786-12-14'
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
         faction:
           source: canon
           value:
@@ -375,25 +350,8 @@ planet:
           value:
             - LA
       - date: '3040-01-01'
-        # administration: FC | Skye March | Alcor Operational Area
-        # administration: FC | Skye March | Alcor Operational Area
-        # administration: FC | Skye March | Alcor Operational Area
-        # administration: FC | Skye March | Alcor Operational Area
-        # administration: FC | Skye March | Alcor Operational Area
-        # administration: FC | Skye March | Alcor Operational Area
         population: 1314324691.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FC
       - date: '3040-01-19'
-        # administration: FC | Skye March | Alcor Operational Area
-        # administration: FC | Skye March | Alcor Operational Area
-        # administration: FC | Skye March | Alcor Operational Area
-        # administration: FC | Skye March | Alcor Operational Area
-        # administration: FC | Skye March | Alcor Operational Area
-        # administration: FC | Skye March | Alcor Operational Area
         faction:
           source: canon
           value:
@@ -402,37 +360,13 @@ planet:
         socioIndustrial: B-B-C-A-C
       - date: '3050-01-01'
         population: 1330989953.0
-      - date: '3057-01-01'
-        # administration: LA | Skye March | Alcor Operational Area
-        # administration: LA | Skye March | Alcor Operational Area
-        # administration: LA | Skye March | Alcor Operational Area
-        # administration: LA | Skye March | Alcor Operational Area
-        # administration: LA | Skye March | Alcor Operational Area
-        # administration: LA | Skye March | Alcor Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LA
       - date: '3057-09-18'
-        # administration: LA | Skye Province | Freedom Theater
-        # administration: LA | Skye Province | Freedom Theater
-        # administration: LA | Skye Province | Freedom Theater
-        # administration: LA | Skye Province | Freedom Theater
-        # administration: LA | Skye Province | Freedom Theater
-        # administration: LA | Skye Province | Freedom Theater
         faction:
           source: canon
           value:
             - LA
       - date: '3060-01-01'
         population: 1350024838.0
-      - date: '3068-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FWL
       - date: '3068-09-01'
         faction:
           source: canon
@@ -452,25 +386,7 @@ planet:
             - Stone
       - date: '3080-01-01'
         population: 1380468578.0
-      - date: '3081-01-01'
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - ROS
       - date: '3081-04-05'
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
         faction:
           source: canon
           value:
@@ -491,12 +407,6 @@ planet:
         hpg:
           source: canon
           value: X
-      - date: '3135-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '3135-10-01'
         faction:
           source: canon
@@ -509,12 +419,6 @@ planet:
             - MiC
       - date: '3140-01-01'
         population: 1508661737.0
-      - date: '3145-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CWE
       - date: '3145-12-06'
         faction:
           source: canon

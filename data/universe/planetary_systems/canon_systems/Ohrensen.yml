@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,17 +16,15 @@
 # affiliated with Microsoft.
 
 id: Ohrensen
-sucsId: 1928
+sucsId: 1927
 xcood: -16.29
 ycood: -121.76
 spectralType:
-  source: 'HB:HM'
+  source: 'Handbook: House Marik, pg. 77'
   value: F7II
-  page: 77
 primarySlot:
-  source: 'HB:HM'
+  source: 'Handbook: House Marik, pg. 77'
   value: 2
-  page: 77
 event:
   - date: '2356-01-14'
     zenithCharge: yes
@@ -56,61 +54,50 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 3.64
     sysPos:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 77'
       value: 2
-      page: 77
     icon: green52
     pressure:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 77'
       value: STANDARD
-      page: 77
     atmosphere:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 77'
       value: BREATHABLE
-      page: 77
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 77'
       value: 0.95
-      page: 77
     diameter: 13426
     density: 4.972754250888
     dayLength: 20
     yearLength: 7.0
     temperature:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 77'
       value: 35
-      page: 77
     water:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 77'
       value: 61
-      page: 77
     lifeForm:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 77'
       value: BIRD
-      page: 77
     desc: |-
       The planet Ohrensen was part of the Capellan Confederation for much of its history before being captured by the Free Worlds League. Unfortunately for Ohrensen, the Confederation used scorched earth tactics which did significant damage to the planet before being forced off. League rebuilding was rife with corruption, which resulted in the planet's industry and economy recovering but the average citizen was left well below the standard of living in the rest of the Free Worlds League.
 
       The corruption on planet has resulted in the more inhabited continent of Rossonia to be run primarily by gangs operating under the facade of legitimate businesses. While the more rural continents of Salva and Ulm are nearly lawless, with the farmers and ranchers preferring to be armed at all times.
     landmass:
       - name:
-          source: 'HB:HM'
+          source: 'Handbook: House Marik, pg. 77'
           value: Rossonia
-          page: 77
       - name:
-          source: 'HB:HM'
+          source: 'Handbook: House Marik, pg. 77'
           value: Salva
-          page: 77
       - name:
-          source: 'HB:HM'
+          source: 'Handbook: House Marik, pg. 77'
           value: Ulm
-          page: 77
     satellite:
       - name:
-          source: 'HB:HM'
+          source: 'Handbook: House Marik, pg. 77'
           value: Box
-          page: 77
         size: medium
         icon: rock15
     event:
@@ -138,12 +125,6 @@ planet:
           source: canon
           value:
             - DoL
-      - date: '2317-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '2320-01-01'
         population: 12110959.0
       - date: '2330-01-01'
@@ -154,19 +135,7 @@ planet:
         population: 65443186.0
       - date: '2360-01-01'
         population: 98679246.0
-      - date: '2366-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CCom
       - date: '2367-07-01'
-        # administration: CC | Tikonov Commonality | Region 1
-        # administration: CC | Tikonov Commonality | Region 1
-        # administration: CC | Tikonov Commonality | Region 1
-        # administration: CC | Tikonov Commonality | Region 1
-        # administration: CC | Tikonov Commonality | Region 1
-        # administration: CC | Tikonov Commonality | Region 1
         faction:
           source: canon
           value:
@@ -280,12 +249,6 @@ planet:
         socioIndustrial: B-B-C-C-B
       - date: '2860-01-01'
         population: 1295789828.0
-      - date: '2864-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FWL
       - date: '2864-10-07'
         faction:
           source: canon
@@ -333,12 +296,6 @@ planet:
           value:
             - FWLR
       - date: '3015-03-15'
-        # administration: FWL | Ohren Province
-        # administration: FWL | Ohren Province
-        # administration: FWL | Ohren Province
-        # administration: FWL | Ohren Province
-        # administration: FWL | Ohren Province
-        # administration: FWL | Ohren Province
         faction:
           source: canon
           value:
@@ -375,12 +332,6 @@ planet:
       - date: '3080-01-01'
         population: 1322014294.0
       - date: '3082-12-12'
-        # administration: ROS | Prefecture VI
-        # administration: ROS | Prefecture VI
-        # administration: ROS | Prefecture VI
-        # administration: ROS | Prefecture VI
-        # administration: ROS | Prefecture VI
-        # administration: ROS | Prefecture VI
         faction:
           source: canon
           value:
@@ -401,12 +352,6 @@ planet:
         hpg:
           source: canon
           value: X
-      - date: '3135-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - OP
       - date: '3135-11-06'
         faction:
           source: canon
@@ -415,25 +360,8 @@ planet:
       - date: '3140-01-01'
         population: 1391464172.0
       - date: '3145-01-01'
-        # administration: FWL | Oriente Protectorate
-        # administration: FWL | Oriente Protectorate
-        # administration: FWL | Oriente Protectorate
-        # administration: FWL | Oriente Protectorate
-        # administration: FWL | Oriente Protectorate
-        # administration: FWL | Oriente Protectorate
         population: 1394249885.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FWL
       - date: '3151-01-01'
-        # administration: FWL | Oriente Protectorate
-        # administration: FWL | Oriente Protectorate
-        # administration: FWL | Oriente Protectorate
-        # administration: FWL | Oriente Protectorate
-        # administration: FWL | Oriente Protectorate
-        # administration: FWL | Oriente Protectorate
         faction:
           source: sucs
           value:

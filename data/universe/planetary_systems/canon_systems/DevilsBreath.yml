@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -33,7 +33,8 @@ planet:
     icon: barren21
     pressure: STANDARD
     atmosphere: TOXIC_POISON
-    composition: Nitrogen and Carbon Dioxide, plus trace amounts of Water Vapor and Phosphine
+    composition: Nitrogen and Carbon Dioxide, plus trace amounts of Water Vapor and
+      Phosphine
     gravity: 0.5
     diameter: 5500
     density: 6.3337
@@ -96,12 +97,6 @@ planet:
         icon: rock11
     event:
       - date: '2742-10-21'
-        # administration: OA | Cerberus Province
-        # administration: OA | Cerberus Province
-        # administration: OA | Cerberus Province
-        # administration: OA | Cerberus Province
-        # administration: OA | Cerberus Province
-        # administration: OA | Cerberus Province
         faction:
           source: canon
           value:
@@ -136,12 +131,6 @@ planet:
         population: 7419044.0
       - date: '2860-01-01'
         population: 4865176.0
-      - date: '2864-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - ABN
       - date: '2864-01-15'
         faction:
           source: canon

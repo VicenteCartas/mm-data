@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,17 +16,15 @@
 # affiliated with Microsoft.
 
 id: Tathis
-sucsId: 2965
+sucsId: 2964
 xcood: 85.61
 ycood: 1811.916
 spectralType:
-  source: WoK
+  source: Warriors of Kerensky, pg. 112
   value: B4V
-  page: 112
 primarySlot:
-  source: WoK
+  source: Warriors of Kerensky, pg. 112
   value: 1
-  page: 112
 event:
   - date: '2806-06-28'
     nadirCharge: yes
@@ -37,39 +35,32 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 34.84
     sysPos:
-      source: WoK
+      source: Warriors of Kerensky, pg. 112
       value: 1
-      page: 112
     icon: green55
     pressure:
-      source: WoK
+      source: Warriors of Kerensky, pg. 112
       value: STANDARD
-      page: 112
     atmosphere:
-      source: WoK
+      source: Warriors of Kerensky, pg. 112
       value: BREATHABLE
-      page: 112
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: WoK
+      source: Warriors of Kerensky, pg. 112
       value: 0.7
-      page: 112
     diameter: 9748
     density: 5.046673476753
     dayLength: 24
     yearLength: 205.7
     temperature:
-      source: WoK
+      source: Warriors of Kerensky, pg. 112
       value: 25
-      page: 112
     water:
-      source: WoK
+      source: Warriors of Kerensky, pg. 112
       value: 30
-      page: 112
     lifeForm:
-      source: WoK
+      source: Warriors of Kerensky, pg. 112
       value: PLANT
-      page: 112
     desc: No description available.
     smallMoons: 1
     landmass:
@@ -104,12 +95,6 @@ planet:
         population: 60589.0
       - date: '2820-01-01'
         population: 315193.0
-      - date: '2821-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CLAN
       - date: '2821-04-01'
         faction:
           source: canon
@@ -183,12 +168,6 @@ planet:
             - CCC
             - CSA
             - CCO
-      - date: '3075-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CLAN
       - date: '3075-06-01'
         faction:
           source: canon
@@ -197,12 +176,6 @@ planet:
             - CSA
       - date: '3080-01-01'
         population: 48269554.0
-      - date: '3085-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CSA
       - date: '3085-04-29'
         faction:
           source: canon
@@ -293,7 +266,8 @@ planet:
     icon: greenhouse30
     pressure: HIGH
     atmosphere: TOXIC_CAUSTIC
-    composition: Ammonia and Nitrogen, plus trace amounts of Argon and Hydrochloric Acid
+    composition: Ammonia and Nitrogen, plus trace amounts of Argon and Hydrochloric
+      Acid
     gravity: 0.95
     diameter: 10500
     density: 6.3337
@@ -309,7 +283,8 @@ planet:
     icon: barren6
     pressure: THIN
     atmosphere: TOXIC_CAUSTIC
-    composition: Nitrogen and Carbon Dioxide, plus trace amounts of Chlorine and Hydrochloric Acid
+    composition: Nitrogen and Carbon Dioxide, plus trace amounts of Chlorine and Hydrochloric
+      Acid
     gravity: 0.5
     diameter: 5500
     density: 6.3337

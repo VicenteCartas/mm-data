@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: Fellanin II
-sucsId: 859
+sucsId: 858
 xcood: 132.086
 ycood: 32.779
 spectralType:
-  source: DA:RW
+  source: MWDA world profiles
   value: F3V
 primarySlot:
-  source: DA:RW
+  source: MWDA world profiles
   value: 2
 event:
   - date: '2401-03-17'
@@ -58,50 +58,64 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 1.5
     sysPos:
-      source: DA:RW
+      source: MWDA world profiles
       value: 2
     icon: dry3
     pressure:
-      source: DA:RW
+      source: MWDA world profiles
       value: THIN
     atmosphere:
-      source: DA:RW
+      source: MWDA world profiles
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: DA:RW
+      source: MWDA world profiles
       value: 0.96
     diameter: 11713
     density: 5.759994508991
     dayLength: 29
     yearLength: 2.2
     temperature:
-      source: DA:RW
+      source: MWDA world profiles
       value: 34
     water:
-      source: DA:RW
+      source: MWDA world profiles
       value: 13
     lifeForm:
-      source: DA:RW
+      source: MWDA world profiles
       value: PLANT
-    desc: 'On the surface, it defies explanation why anyone would wish to live on a world as inhospitable as Fallanin II. Sandstorms, blamed largely on the planet‘s three moons, are a common sight for this desert world, the blasted remains of what once may have been a paradise, but for the strike of a city-sized asteroid nearly two thousand years ago. Despite the hostile weather, however, a colony was set up on Fellanin II to exploit the planet‘s vast underground mineral and petroleum wealth. A few settlements sprang up in this manner, most of them underground colonies, which survive by tapping into the planet‘s few underground seas and establishing protected farms for their communities. These subsurface communities are connected to the domed planetary capital and spaceport city of Firstpoint by long, subterranean rail lines. Fallanin II features no continents as such, but rather five large seas, separated by rocky, sandy, vegetation-poor land. Firstpoint borders the largest of these, the North Sea. The planet‘s remaining settlements lie underground near the other four major bodies of water: the South Sea, the Dry Sea, Larson‘s Sea, and the Great Expanse.'
+    desc: 'On the surface, it defies explanation why anyone would wish to live on
+      a world as inhospitable as Fallanin II. Sandstorms, blamed largely on the planet‘s
+      three moons, are a common sight for this desert world, the blasted remains of
+      what once may have been a paradise, but for the strike of a city-sized asteroid
+      nearly two thousand years ago. Despite the hostile weather, however, a colony
+      was set up on Fellanin II to exploit the planet‘s vast underground mineral and
+      petroleum wealth. A few settlements sprang up in this manner, most of them underground
+      colonies, which survive by tapping into the planet‘s few underground seas and
+      establishing protected farms for their communities. These subsurface communities
+      are connected to the domed planetary capital and spaceport city of Firstpoint
+      by long, subterranean rail lines. Fallanin II features no continents as such,
+      but rather five large seas, separated by rocky, sandy, vegetation-poor land.
+      Firstpoint borders the largest of these, the North Sea. The planet‘s remaining
+      settlements lie underground near the other four major bodies of water: the South
+      Sea, the Dry Sea, Larson‘s Sea, and the Great Expanse.'
     landmass:
       - capital:
-          source: DA:RW
+          source: MWDA world profiles
           value: Firstpoint
     satellite:
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Davius
         size: medium
         icon: rock6
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Elric
         size: medium
         icon: rock11
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Goliath
         size: medium
         icon: oddmoon1
@@ -125,12 +139,6 @@ planet:
           value:
             - DC
         population: 3388343.0
-      - date: '2341-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '2350-01-01'
         population: 6780470.0
       - date: '2360-01-01'
@@ -179,18 +187,6 @@ planet:
         population: 357618375.0
       - date: '2570-01-01'
         population: 362610814.0
-      - date: '2571-01-01'
-        # administration: DC | Benjamin Military District | Proserpina Prefecture
-        # administration: DC | Benjamin Military District | Proserpina Prefecture
-        # administration: DC | Benjamin Military District | Proserpina Prefecture
-        # administration: DC | Benjamin Military District | Proserpina Prefecture
-        # administration: DC | Benjamin Military District | Proserpina Prefecture
-        # administration: DC | Benjamin Military District | Proserpina Prefecture
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - DC
       - date: '2580-01-01'
         population: 366879845.0
       - date: '2590-01-01'
@@ -304,25 +300,7 @@ planet:
         population: 403590346.0
       - date: '3080-01-01'
         population: 408462605.0
-      - date: '3081-01-01'
-        # administration: ROS | Prefecture III
-        # administration: ROS | Prefecture III
-        # administration: ROS | Prefecture III
-        # administration: ROS | Prefecture III
-        # administration: ROS | Prefecture III
-        # administration: ROS | Prefecture III
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - ROS
       - date: '3081-07-30'
-        # administration: ROS | Prefecture III
-        # administration: ROS | Prefecture III
-        # administration: ROS | Prefecture III
-        # administration: ROS | Prefecture III
-        # administration: ROS | Prefecture III
-        # administration: ROS | Prefecture III
         faction:
           source: canon
           value:
@@ -341,12 +319,6 @@ planet:
         population: 445234170.0
       - date: '3132-08-07'
         hpg: X
-      - date: '3135-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '3135-10-01'
         faction:
           source: canon
@@ -354,25 +326,7 @@ planet:
             - IND
       - date: '3140-01-01'
         population: 451782274.0
-      - date: '3145-01-01'
-        # administration: DC | Benjamin Military District | Proserpina Prefecture
-        # administration: DC | Benjamin Military District | Proserpina Prefecture
-        # administration: DC | Benjamin Military District | Proserpina Prefecture
-        # administration: DC | Benjamin Military District | Proserpina Prefecture
-        # administration: DC | Benjamin Military District | Proserpina Prefecture
-        # administration: DC | Benjamin Military District | Proserpina Prefecture
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - DC
       - date: '3145-01-16'
-        # administration: DC | Benjamin Military District | Proserpina Prefecture
-        # administration: DC | Benjamin Military District | Proserpina Prefecture
-        # administration: DC | Benjamin Military District | Proserpina Prefecture
-        # administration: DC | Benjamin Military District | Proserpina Prefecture
-        # administration: DC | Benjamin Military District | Proserpina Prefecture
-        # administration: DC | Benjamin Military District | Proserpina Prefecture
         faction:
           source: canon
           value:

@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Goshen
-sucsId: 984
+sucsId: 983
 xcood: 134.673
 ycood: -94.653
 spectralType:
@@ -133,7 +133,8 @@ planet:
     icon: frozen60
     pressure: HIGH
     atmosphere: TOXIC_CAUSTIC
-    composition: Nitrogen and Ammonia, plus trace amounts of Methane and Hydrogen Peroxide
+    composition: Nitrogen and Ammonia, plus trace amounts of Methane and Hydrogen
+      Peroxide
     gravity: 1.12
     diameter: 13500
     density: 5.8437
@@ -218,7 +219,9 @@ planet:
     lifeForm:
       source: canon
       value: INSECT
-    desc: Goshen is an arid planet with only 85% of the gravity found on Terra. Despite the lack of water the planet has enough arable land to remain self-sufficient and Goshen boasts several high-tech industries and abundant natural resources.
+    desc: Goshen is an arid planet with only 85% of the gravity found on Terra. Despite
+      the lack of water the planet has enough arable land to remain self-sufficient
+      and Goshen boasts several high-tech industries and abundant natural resources.
     landmass:
       - name:
           source: canon
@@ -275,12 +278,6 @@ planet:
         population: 40479600.0
       - date: '2310-01-01'
         population: 50774581.0
-      - date: '2317-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '2320-01-01'
         population: 61936595.0
       - date: '2330-01-01'
@@ -291,12 +288,6 @@ planet:
         population: 99377357.0
       - date: '2360-01-01'
         population: 111778061.0
-      - date: '2366-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - SSUP
       - date: '2367-07-01'
         faction:
           source: canon
@@ -333,12 +324,6 @@ planet:
       - date: '2490-01-01'
         population: 248060149.0
       - date: '2500-11-02'
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
         faction:
           source: canon
           value:
@@ -414,42 +399,13 @@ planet:
         population: 333856772.0
       - date: '2820-01-01'
         population: 327112945.0
-      - date: '2821-01-01'
-        # administration: CC | Sarna Commonality | Region 2
-        # administration: CC | Sarna Commonality | Region 2
-        # administration: CC | Sarna Commonality | Region 2
-        # administration: CC | Sarna Commonality | Region 2
-        # administration: CC | Sarna Commonality | Region 2
-        # administration: CC | Sarna Commonality | Region 2
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CC
       - date: '2821-09-30'
-        # administration: CC | Sarna Commonality | Region 2
-        # administration: CC | Sarna Commonality | Region 2
-        # administration: CC | Sarna Commonality | Region 2
-        # administration: CC | Sarna Commonality | Region 2
-        # administration: CC | Sarna Commonality | Region 2
-        # administration: CC | Sarna Commonality | Region 2
         faction:
           source: canon
           value:
             - CC
       - date: '2830-01-01'
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
         population: 314999992.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FS
       - date: '2840-01-01'
         population: 300198499.0
       - date: '2849-01-01'
@@ -459,12 +415,6 @@ planet:
       - date: '2860-01-01'
         population: 279182544.0
       - date: '2864-10-23'
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
         faction:
           source: canon
           value:
@@ -506,25 +456,8 @@ planet:
       - date: '3030-01-01'
         population: 228145258.0
       - date: '3040-01-01'
-        # administration: FC | Capellan March | Kathil Operational Area
-        # administration: FC | Capellan March | Kathil Operational Area
-        # administration: FC | Capellan March | Kathil Operational Area
-        # administration: FC | Capellan March | Kathil Operational Area
-        # administration: FC | Capellan March | Kathil Operational Area
-        # administration: FC | Capellan March | Kathil Operational Area
         population: 230138781.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FC
       - date: '3040-01-19'
-        # administration: FC | Capellan March | Kathil Operational Area
-        # administration: FC | Capellan March | Kathil Operational Area
-        # administration: FC | Capellan March | Kathil Operational Area
-        # administration: FC | Capellan March | Kathil Operational Area
-        # administration: FC | Capellan March | Kathil Operational Area
-        # administration: FC | Capellan March | Kathil Operational Area
         faction:
           source: canon
           value:
@@ -537,25 +470,7 @@ planet:
         population: 233360046.0
       - date: '3060-01-01'
         population: 236744742.0
-      - date: '3067-01-01'
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FS
       - date: '3067-04-20'
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
         faction:
           source: canon
           value:

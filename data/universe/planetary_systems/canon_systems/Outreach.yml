@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,17 +16,15 @@
 # affiliated with Microsoft.
 
 id: Outreach
-sucsId: 1964
+sucsId: 1963
 xcood: -3.109
 ycood: -34.688
 spectralType:
-  source: 'FM:MR'
+  source: 'Field Manual: Mercenaries, Revised, pg. 12'
   value: K9V
-  page: 12
 primarySlot:
-  source: 'FM:MR'
+  source: 'Field Manual: Mercenaries, Revised, pg. 12'
   value: 2
-  page: 12
 event:
   - date: '2360-01-30'
     zenithCharge: yes
@@ -54,39 +52,32 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.2
     sysPos:
-      source: 'FM:MR'
+      source: 'Field Manual: Mercenaries, Revised, pg. 12'
       value: 2
-      page: 12
     icon: wet20
     pressure:
-      source: 'FM:MR'
+      source: 'Field Manual: Mercenaries, Revised, pg. 12'
       value: STANDARD
-      page: 12
     atmosphere:
-      source: 'FM:MR'
+      source: 'Field Manual: Mercenaries, Revised, pg. 12'
       value: BREATHABLE
-      page: 12
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'FM:MR'
+      source: 'Field Manual: Mercenaries, Revised, pg. 12'
       value: 1.1
-      page: 12
     diameter: 15417
     density: 5.01405795542
     dayLength: 22
     yearLength: 0.7
     temperature:
-      source: 'FM:MR'
+      source: 'Field Manual: Mercenaries, Revised, pg. 12'
       value: 35
-      page: 12
     water:
-      source: 'FM:MR'
+      source: 'Field Manual: Mercenaries, Revised, pg. 12'
       value: 75
-      page: 12
     lifeForm:
-      source: 'FM:MR'
+      source: 'Field Manual: Mercenaries, Revised, pg. 12'
       value: FISH
-      page: 12
     desc: |-
       Outreach consists of oceans and two continents; Romulus and Remus. Romulus is the population center and home to the planet's capital city Harlech, as well as all of its major cities and commercial enterprises. Romulus is split by a mountain range known as the Ridge. The majority of the continent's countryside is filled out with small farms, forests and rolling hills. The other continent Remus is less hospitable and arid, it does not contain any major cities.
 
@@ -99,22 +90,18 @@ planet:
       3135 - Outreach was known as the center for the mercenary trade in the mid-thirty-first century, a site of the last of the Star League‘s Martial Olympiads that later became home of the famous Clansmen-turned-mercenary Wolf‘s Dragoons and the giant ‘Mech manufacturer GM-Blackwell. Today, however, this world is less than a shadow of its former self, reduced to a devastated, radioactive cinder that only a handful of stubborn souls still call home. Most historians claim the Word of Blake Jihad began with the assault on Outreach, in late 3067, when a surprise blitzkrieg by renegade mercenaries sacked the planetary capital of Harlech in an operation coordinated with and supported by the Blakists. A follow-up ambush from a pirate jump point by Word of Blake WarShips obliterated the planet‘s spaceborne defenses, including the Wolf‘s Dragoons fleet and both orbital battle stations. Even as the surviving elements of the most feared mercenaries in the galaxy tried desperately to regroup or withdraw, the Blakist fleet proceeded to bombard the planet with naval weapons and nuclear warheads. The continent of Remus, heart of the Dragoons‘ military industries and research, along with the Tetsuhara Proving Grounds and the main GM-Blackwell Industries factory, was completely sterilized by nuclear fire, while every major city on the opposite continent of Romulus was pummeled by the guns of both WarShips and BattleMechs. The surviving forces of the Dragoons and their allies withdrew from the holocaust, abandoning the world that had been their only real home since leaving their Clan brethren in the early 3000s. What remains of the planet now is a marginally habitable rock whose single large ocean, the Argosyan Sea, is saturated by fallout from Remus‘ devastation. Little vegetation grows on Romulus, and what farming and business still goes on to sustain the planet‘s decimated population now happens in domed or subterranean cities, where air and water purifiers imported from off-world struggle to remove the worst of the poisoned planet‘s harmful effects. The effective capital and primary spaceport on Outreach is New Kearny, a mostly subterranean city built from the ruins of Harlech, on the edge of what once was Lake Kearny, Outreach‘s largest freshwater body. Now overlooking a basin of baked-hard clay, New Kearny is home to nearly half the planetary population. The Jaime Wolf Memorial Interplanetary Spaceport, located on the city‘s outskirts, is dedicated to the founder and leader of the Wolf‘s Dragoons, who ushered in a new era for Outreach after the Fourth Succession War, and died in his fateful defense of the planet during the Jihad.
     landmass:
       - name:
-          source: 'FM:MR'
+          source: 'Field Manual: Mercenaries, Revised, pg. 12'
           value: Remus
-          page: 12
       - name:
-          source: 'FM:MR'
+          source: 'Field Manual: Mercenaries, Revised, pg. 12'
           value: Romulus
-          page: 12
         capital:
-          source: 'FM:MR'
+          source: 'Field Manual: Mercenaries, Revised, pg. 12'
           value: Harlech
-          page: 12
     satellite:
       - name:
-          source: 'FM:MR'
+          source: 'Field Manual: Mercenaries, Revised, pg. 12'
           value: Cerberus
-          page: 12
         size: large
         icon: rock8
     event:
@@ -148,12 +135,6 @@ planet:
       - date: '2340-01-01'
         population: 72593525.0
       - date: '2341-06-28'
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
         faction:
           source: canon
           value:
@@ -250,18 +231,6 @@ planet:
         population: 2040370419.0
       - date: '2760-01-01'
         population: 2022741954.0
-      - date: '2767-01-01'
-        # administration: AE | Terra Firma Province
-        # administration: AE | Terra Firma Province
-        # administration: AE | Terra Firma Province
-        # administration: AE | Terra Firma Province
-        # administration: AE | Terra Firma Province
-        # administration: AE | Terra Firma Province
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - AE
       - date: '2767-02-08'
         faction:
           source: canon
@@ -270,37 +239,13 @@ planet:
       - date: '2770-01-01'
         population: 2002487403.0
       - date: '2779-10-21'
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
         faction:
           source: canon
           value:
             - TH
       - date: '2780-01-01'
         population: 1986525394.0
-      - date: '2786-01-01'
-        # administration: CC | Tikonov Commonality | Region 1
-        # administration: CC | Tikonov Commonality | Region 1
-        # administration: CC | Tikonov Commonality | Region 1
-        # administration: CC | Tikonov Commonality | Region 1
-        # administration: CC | Tikonov Commonality | Region 1
-        # administration: CC | Tikonov Commonality | Region 1
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CC
       - date: '2786-09-16'
-        # administration: CC | Tikonov Commonality | Region 2
-        # administration: CC | Tikonov Commonality | Region 2
-        # administration: CC | Tikonov Commonality | Region 2
-        # administration: CC | Tikonov Commonality | Region 2
-        # administration: CC | Tikonov Commonality | Region 2
-        # administration: CC | Tikonov Commonality | Region 2
         faction:
           source: canon
           value:
@@ -314,12 +259,6 @@ planet:
       - date: '2820-01-01'
         population: 1987531866.0
       - date: '2821-04-22'
-        # administration: CC | Tikonov Commonality | Region 2
-        # administration: CC | Tikonov Commonality | Region 2
-        # administration: CC | Tikonov Commonality | Region 2
-        # administration: CC | Tikonov Commonality | Region 2
-        # administration: CC | Tikonov Commonality | Region 2
-        # administration: CC | Tikonov Commonality | Region 2
         faction:
           source: canon
           value:
@@ -368,12 +307,6 @@ planet:
         population: 1691160112.0
       - date: '3020-01-01'
         population: 1688934397.0
-      - date: '3030-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - TFR
       - date: '3030-12-05'
         faction:
           source: canon
@@ -382,33 +315,16 @@ planet:
         population: 1696188118.0
         socioIndustrial: B-B-C-B-B
         hiringHall:
-          source: FM:MR
+          source: Merc FM Revised
           value: GREAT
       - date: '3040-01-01'
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
         population: 1712378689.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FC
       - date: '3045-01-01'
         socioIndustrial:
           source: canon
           value: A-A-B-A-B
       - date: '3050-01-01'
         population: 1728896684.0
-      - date: '3057-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '3060-01-01'
         population: 1747320462.0
       - date: '3067-10-15'
@@ -427,25 +343,7 @@ planet:
             - Stone
       - date: '3080-01-01'
         population: 1784402187.0
-      - date: '3081-01-01'
-        # administration: ROS | Prefecture X
-        # administration: ROS | Prefecture X
-        # administration: ROS | Prefecture X
-        # administration: ROS | Prefecture X
-        # administration: ROS | Prefecture X
-        # administration: ROS | Prefecture X
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - ROS
       - date: '3081-03-26'
-        # administration: ROS | Prefecture X
-        # administration: ROS | Prefecture X
-        # administration: ROS | Prefecture X
-        # administration: ROS | Prefecture X
-        # administration: ROS | Prefecture X
-        # administration: ROS | Prefecture X
         faction:
           source: canon
           value:
@@ -476,22 +374,10 @@ planet:
           value:
             - CC
       - date: '3151-01-01'
-        # administration: CC | Tikonov Commonality | Region 2
-        # administration: CC | Tikonov Commonality | Region 2
-        # administration: CC | Tikonov Commonality | Region 2
-        # administration: CC | Tikonov Commonality | Region 2
-        # administration: CC | Tikonov Commonality | Region 2
-        # administration: CC | Tikonov Commonality | Region 2
         faction:
           source: sucs
           value:
             - CC
-      - date: '3152-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - 3SL
   - name: Gaddi
     type: TERRESTRIAL
     orbitalDist: 0.5

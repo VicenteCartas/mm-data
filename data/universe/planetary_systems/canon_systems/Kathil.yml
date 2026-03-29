@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,17 +16,15 @@
 # affiliated with Microsoft.
 
 id: Kathil
-sucsId: 1303
+sucsId: 1302
 xcood: 171.357
 ycood: -148.58
 spectralType:
-  source: 'HB:HD'
+  source: 'Handbook: House Davion, pg. 87'
   value: F4V
-  page: 87
 primarySlot:
-  source: 'HB:HD'
+  source: 'Handbook: House Davion, pg. 87'
   value: 3
-  page: 87
 event:
   - date: '2387-02-10'
     zenithCharge: yes
@@ -74,39 +72,32 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 2.24
     sysPos:
-      source: 'HB:HD'
+      source: 'Handbook: House Davion, pg. 87'
       value: 3
-      page: 87
     icon: green9
     pressure:
-      source: 'HB:HD'
+      source: 'Handbook: House Davion, pg. 87'
       value: STANDARD
-      page: 87
     atmosphere:
-      source: 'HB:HD'
+      source: 'Handbook: House Davion, pg. 87'
       value: BREATHABLE
-      page: 87
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'HB:HD'
+      source: 'Handbook: House Davion, pg. 87'
       value: 1.0
-      page: 87
     diameter: 13964
     density: 5.032485372961
     dayLength: 24
     yearLength: 3.6
     temperature:
-      source: 'HB:HD'
+      source: 'Handbook: House Davion, pg. 87'
       value: 30
-      page: 87
     water:
-      source: 'HB:HD'
+      source: 'Handbook: House Davion, pg. 87'
       value: 30
-      page: 87
     lifeForm:
-      source: 'HB:HD'
+      source: 'Handbook: House Davion, pg. 87'
       value: INSECT
-      page: 87
     desc: |-
       Kathil was originally a poor agriculture world, however it has grown into one of the Star League’s key manufacturing planets and after the fall of the League it became one of the most important planets in the Federated Suns. The rise in importance of Kathil during the Star League was due to heavy industrial build up, including the McKenna Shipyards which were built in 2602 and soon after General Motors established its largest manufacturing facility on the planet.
 
@@ -121,26 +112,21 @@ planet:
       General Motors
     landmass:
       - name:
-          source: 'HB:HD'
+          source: 'Handbook: House Davion, pg. 87'
           value: Hurste
-          page: 87
       - name:
-          source: 'HB:HD'
+          source: 'Handbook: House Davion, pg. 87'
           value: Muran
-          page: 87
         capital:
-          source: 'HB:HD'
+          source: 'Handbook: House Davion, pg. 87'
           value: District City
-          page: 87
       - name:
-          source: 'HB:HD'
+          source: 'Handbook: House Davion, pg. 87'
           value: Thespia
-          page: 87
     satellite:
       - name:
-          source: 'HB:HD'
+          source: 'Handbook: House Davion, pg. 87'
           value: Loren's Folly
-          page: 87
         size: large
         icon: rock14
     event:
@@ -183,12 +169,6 @@ planet:
         socioIndustrial: C-C-B-D-D
       - date: '2310-01-01'
         population: 341181871.0
-      - date: '2317-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '2319-02-21'
         faction:
           source: canon
@@ -200,28 +180,10 @@ planet:
         population: 499075298.0
       - date: '2340-01-01'
         population: 585165795.0
-      - date: '2341-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '2350-01-01'
         population: 674536688.0
       - date: '2360-01-01'
         population: 765597451.0
-      - date: '2366-01-01'
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FS
       - date: '2370-01-01'
         population: 856324771.0
       - date: '2380-01-01'
@@ -370,25 +332,8 @@ planet:
         population: 2085655150.0
         socioIndustrial: B-B-C-C-D
       - date: '3040-01-01'
-        # administration: FC | Capellan March | Kathil Operational Area
-        # administration: FC | Capellan March | Kathil Operational Area
-        # administration: FC | Capellan March | Kathil Operational Area
-        # administration: FC | Capellan March | Kathil Operational Area
-        # administration: FC | Capellan March | Kathil Operational Area
-        # administration: FC | Capellan March | Kathil Operational Area
         population: 2110200626.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FC
       - date: '3040-01-19'
-        # administration: FC | Capellan March | Kathil Operational Area
-        # administration: FC | Capellan March | Kathil Operational Area
-        # administration: FC | Capellan March | Kathil Operational Area
-        # administration: FC | Capellan March | Kathil Operational Area
-        # administration: FC | Capellan March | Kathil Operational Area
-        # administration: FC | Capellan March | Kathil Operational Area
         faction:
           source: canon
           value:
@@ -407,40 +352,11 @@ planet:
           value:
             - FC
             - LA
-      - date: '3063-01-01'
-        # administration: FC | Capellan March | Kathil Operational Area
-        # administration: FC | Capellan March | Kathil Operational Area
-        # administration: FC | Capellan March | Kathil Operational Area
-        # administration: FC | Capellan March | Kathil Operational Area
-        # administration: FC | Capellan March | Kathil Operational Area
-        # administration: FC | Capellan March | Kathil Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FC
       - date: '3067-01-01'
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
         population:
           source: canon
           value: 2158650000.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FS
       - date: '3067-04-20'
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
         faction:
           source: canon
           value:

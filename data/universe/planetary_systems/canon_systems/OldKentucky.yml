@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: Old Kentucky
-sucsId: 1935
+sucsId: 1934
 xcood: 2.063
 ycood: -141.685
 spectralType:
-  source: 'OR'
+  source: 'Objective Raids: Capellan Confederation'
   value: G3V
 primarySlot:
-  source: 'OR'
+  source: 'Objective Raids: Capellan Confederation'
   value: 4
 event:
   - date: '2360-06-17'
@@ -96,31 +96,31 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 1.0
     sysPos:
-      source: 'OR'
+      source: 'Objective Raids: Capellan Confederation'
       value: 4
     icon: green18
     pressure:
-      source: 'OR'
+      source: 'Objective Raids: Capellan Confederation'
       value: HIGH
     atmosphere:
-      source: 'OR'
+      source: 'Objective Raids: Capellan Confederation'
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'OR'
+      source: 'Objective Raids: Capellan Confederation'
       value: 1.1
     diameter: 13354
     density: 5.788910331148
     dayLength: 20
     yearLength: 1.4
     temperature:
-      source: 'OR'
+      source: 'Objective Raids: Capellan Confederation'
       value: 45
     water:
-      source: 'OR'
+      source: 'Objective Raids: Capellan Confederation'
       value: 56
     lifeForm:
-      source: 'OR'
+      source: 'Objective Raids: Capellan Confederation'
       value: MAMMAL
     desc: |-
       For most of its history Old Kentucky has been a wilderness resort for Confederation nobility. Its southern continental rainforests have been rumored to house a secret Maskirovka guerrilla warfare training centre. The terrain in this area is ideal for training operatives in jungle warfare - with plenty of treacherous terrain, landslides, venomous and carnivorous indigenous plant life, and a large, gorilla-like indigenous species that is intelligent enough to lay primitive mantraps, only the best can survive the grueling training.
@@ -128,22 +128,22 @@ planet:
       Old Kentucky is home to one of many Duchy RTC training facilities in the Confederation and trains vehicle crews and infantry. It is one of the premier jungle warfare training centers in the Confederation.
     landmass:
       - name:
-          source: 'OR'
+          source: 'Objective Raids: Capellan Confederation'
           value: Anderia
       - name:
-          source: 'OR'
+          source: 'Objective Raids: Capellan Confederation'
           value: Dargo
         capital:
-          source: 'OR'
+          source: 'Objective Raids: Capellan Confederation'
           value: Federal Hill
     satellite:
       - name:
-          source: 'OR'
+          source: 'Objective Raids: Capellan Confederation'
           value: Foster
         size: medium
         icon: rock15
       - name:
-          source: 'OR'
+          source: 'Objective Raids: Capellan Confederation'
           value: Rowan
         size: large
         icon: rock9
@@ -188,12 +188,6 @@ planet:
       - date: '2360-01-01'
         population: 272226352.0
       - date: '2367-07-01'
-        # administration: CC | Sarna Commonality | Region 3
-        # administration: CC | Sarna Commonality | Region 3
-        # administration: CC | Sarna Commonality | Region 3
-        # administration: CC | Sarna Commonality | Region 3
-        # administration: CC | Sarna Commonality | Region 3
-        # administration: CC | Sarna Commonality | Region 3
         faction:
           source: canon
           value:
@@ -295,12 +289,6 @@ planet:
         population: 1074132220.0
       - date: '2820-01-01'
         population: 1059722162.0
-      - date: '2821-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FWL
       - date: '2821-02-09'
         faction:
           source: canon
@@ -343,12 +331,6 @@ planet:
       - date: '2980-01-01'
         population: 879679982.0
       - date: '2990-09-05'
-        # administration: CC | Sarna Commonality | Region 6
-        # administration: CC | Sarna Commonality | Region 6
-        # administration: CC | Sarna Commonality | Region 6
-        # administration: CC | Sarna Commonality | Region 6
-        # administration: CC | Sarna Commonality | Region 6
-        # administration: CC | Sarna Commonality | Region 6
         faction:
           source: canon
           value:
@@ -364,18 +346,6 @@ planet:
         population:
           source: canon
           value: 845000000.0
-      - date: '3030-01-01'
-        # administration: LA | Sarna March | Palos Operational Area
-        # administration: LA | Sarna March | Palos Operational Area
-        # administration: LA | Sarna March | Palos Operational Area
-        # administration: LA | Sarna March | Palos Operational Area
-        # administration: LA | Sarna March | Palos Operational Area
-        # administration: LA | Sarna March | Palos Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LA
       - date: '3030-09-24'
         faction:
           source: canon
@@ -396,25 +366,8 @@ planet:
           value:
             - FS
       - date: '3040-01-01'
-        # administration: FC | Sarna March | Palos Operational Area
-        # administration: FC | Sarna March | Palos Operational Area
-        # administration: FC | Sarna March | Palos Operational Area
-        # administration: FC | Sarna March | Palos Operational Area
-        # administration: FC | Sarna March | Palos Operational Area
-        # administration: FC | Sarna March | Palos Operational Area
         population: 862462893.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FC
       - date: '3040-01-19'
-        # administration: FC | Sarna March | Palos Operational Area
-        # administration: FC | Sarna March | Palos Operational Area
-        # administration: FC | Sarna March | Palos Operational Area
-        # administration: FC | Sarna March | Palos Operational Area
-        # administration: FC | Sarna March | Palos Operational Area
-        # administration: FC | Sarna March | Palos Operational Area
         faction:
           source: canon
           value:
@@ -425,25 +378,7 @@ planet:
           value: B-C-C-B-C
       - date: '3050-01-01'
         population: 884673028.0
-      - date: '3057-01-01'
-        # administration: CC | Capella Commonality | Region 7
-        # administration: CC | Capella Commonality | Region 7
-        # administration: CC | Capella Commonality | Region 7
-        # administration: CC | Capella Commonality | Region 7
-        # administration: CC | Capella Commonality | Region 7
-        # administration: CC | Capella Commonality | Region 7
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CC
       - date: '3058-03-21'
-        # administration: CC | Capella Commonality | Region 7
-        # administration: CC | Capella Commonality | Region 7
-        # administration: CC | Capella Commonality | Region 7
-        # administration: CC | Capella Commonality | Region 7
-        # administration: CC | Capella Commonality | Region 7
-        # administration: CC | Capella Commonality | Region 7
         faction:
           source: canon
           value:

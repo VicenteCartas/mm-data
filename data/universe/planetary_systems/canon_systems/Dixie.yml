@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -52,7 +52,13 @@ planet:
     lifeForm:
       source: canon
       value: REPTILE
-    desc: Dixie is a mostly typical border world between the Lyran Commonwealth and the Free Worlds League. However, the discovery of a Star League Castle Brian during the 3rd Succession War made Dixie a prime target for invasion. The few relics that had survived to that point were stripped from the ancient fortress and it returned to neglect until the late 3070s when the Lyran Alliance began restoring the Castle Brian. Dixie has abundant resources and arable land. The planet has a comfortable atmosphere and climate but lower than standard gravity.
+    desc: Dixie is a mostly typical border world between the Lyran Commonwealth and
+      the Free Worlds League. However, the discovery of a Star League Castle Brian
+      during the 3rd Succession War made Dixie a prime target for invasion. The few
+      relics that had survived to that point were stripped from the ancient fortress
+      and it returned to neglect until the late 3070s when the Lyran Alliance began
+      restoring the Castle Brian. Dixie has abundant resources and arable land. The
+      planet has a comfortable atmosphere and climate but lower than standard gravity.
     landmass:
       - name:
           source: canon
@@ -98,12 +104,6 @@ planet:
           source: canon
           value:
             - LA
-      - date: '2366-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '2370-01-01'
         population: 133207274.0
       - date: '2377-01-01'
@@ -148,18 +148,6 @@ planet:
         population: 809365997.0
       - date: '2570-01-01'
         population: 825452681.0
-      - date: '2571-01-01'
-        # administration: LA | Protectorate of Donegal | Furillo Province
-        # administration: LA | Protectorate of Donegal | Furillo Province
-        # administration: LA | Protectorate of Donegal | Furillo Province
-        # administration: LA | Protectorate of Donegal | Furillo Province
-        # administration: LA | Protectorate of Donegal | Furillo Province
-        # administration: LA | Protectorate of Donegal | Furillo Province
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LA
       - date: '2580-01-01'
         population: 840021067.0
       - date: '2590-01-01'
@@ -216,12 +204,6 @@ planet:
         population: 844380470.0
       - date: '2820-01-01'
         population: 823437233.0
-      - date: '2821-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FWL
       - date: '2821-11-04'
         faction:
           source: canon
@@ -237,25 +219,7 @@ planet:
         population: 745174443.0
       - date: '2860-01-01'
         population: 722492120.0
-      - date: '2864-01-01'
-        # administration: LA | Protectorate of Donegal | Furillo Province
-        # administration: LA | Protectorate of Donegal | Furillo Province
-        # administration: LA | Protectorate of Donegal | Furillo Province
-        # administration: LA | Protectorate of Donegal | Furillo Province
-        # administration: LA | Protectorate of Donegal | Furillo Province
-        # administration: LA | Protectorate of Donegal | Furillo Province
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LA
       - date: '2864-07-19'
-        # administration: LA | Protectorate of Donegal | Bolan Province
-        # administration: LA | Protectorate of Donegal | Bolan Province
-        # administration: LA | Protectorate of Donegal | Bolan Province
-        # administration: LA | Protectorate of Donegal | Bolan Province
-        # administration: LA | Protectorate of Donegal | Bolan Province
-        # administration: LA | Protectorate of Donegal | Bolan Province
         faction:
           source: canon
           value:
@@ -297,25 +261,8 @@ planet:
       - date: '3030-01-01'
         population: 612009854.0
       - date: '3040-01-01'
-        # administration: FC | Tamarind March | Bolan Operational Area
-        # administration: FC | Tamarind March | Bolan Operational Area
-        # administration: FC | Tamarind March | Bolan Operational Area
-        # administration: FC | Tamarind March | Bolan Operational Area
-        # administration: FC | Tamarind March | Bolan Operational Area
-        # administration: FC | Tamarind March | Bolan Operational Area
         population: 617357569.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FC
       - date: '3040-01-19'
-        # administration: FC | Tamarind March | Bolan Operational Area
-        # administration: FC | Tamarind March | Bolan Operational Area
-        # administration: FC | Tamarind March | Bolan Operational Area
-        # administration: FC | Tamarind March | Bolan Operational Area
-        # administration: FC | Tamarind March | Bolan Operational Area
-        # administration: FC | Tamarind March | Bolan Operational Area
         faction:
           source: canon
           value:
@@ -326,37 +273,13 @@ planet:
           value: B-B-B-C-C
       - date: '3050-01-01'
         population: 621756405.0
-      - date: '3057-01-01'
-        # administration: LA | Tamarind March | Bolan Operational Area
-        # administration: LA | Tamarind March | Bolan Operational Area
-        # administration: LA | Tamarind March | Bolan Operational Area
-        # administration: LA | Tamarind March | Bolan Operational Area
-        # administration: LA | Tamarind March | Bolan Operational Area
-        # administration: LA | Tamarind March | Bolan Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LA
       - date: '3057-09-18'
-        # administration: LA | Bolan Province | Cavanaugh Theater
-        # administration: LA | Bolan Province | Cavanaugh Theater
-        # administration: LA | Bolan Province | Cavanaugh Theater
-        # administration: LA | Bolan Province | Cavanaugh Theater
-        # administration: LA | Bolan Province | Cavanaugh Theater
-        # administration: LA | Bolan Province | Cavanaugh Theater
         faction:
           source: canon
           value:
             - LA
       - date: '3060-01-01'
         population: 626186584.0
-      - date: '3068-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FWL
       - date: '3068-09-10'
         faction:
           source: canon
@@ -364,25 +287,7 @@ planet:
             - FWL
       - date: '3070-01-01'
         population: 631026832.0
-      - date: '3075-01-01'
-        # administration: LA | Bolan Province | Dixie Theater
-        # administration: LA | Bolan Province | Dixie Theater
-        # administration: LA | Bolan Province | Dixie Theater
-        # administration: LA | Bolan Province | Dixie Theater
-        # administration: LA | Bolan Province | Dixie Theater
-        # administration: LA | Bolan Province | Dixie Theater
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LA
       - date: '3075-12-06'
-        # administration: LA | Bolan Province | Dixie Theater
-        # administration: LA | Bolan Province | Dixie Theater
-        # administration: LA | Bolan Province | Dixie Theater
-        # administration: LA | Bolan Province | Dixie Theater
-        # administration: LA | Bolan Province | Dixie Theater
-        # administration: LA | Bolan Province | Dixie Theater
         faction:
           source: canon
           value:
@@ -406,30 +311,12 @@ planet:
           value: X
       - date: '3140-01-01'
         population: 640435481.0
-      - date: '3145-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CWE
       - date: '3145-02-10'
         faction:
           source: canon
           value:
             - CWE
         population: 641589303.0
-      - date: '3152-01-01'
-        # administration: LA | Bolan Province
-        # administration: LA | Bolan Province
-        # administration: LA | Bolan Province
-        # administration: LA | Bolan Province
-        # administration: LA | Bolan Province
-        # administration: LA | Bolan Province
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LA
       - date: '3152-06-01'
         faction:
           source: canon

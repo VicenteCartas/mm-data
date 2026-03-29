@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,11 +16,11 @@
 # affiliated with Microsoft.
 
 id: Shensi
-sucsId: 2302
+sucsId: 2301
 xcood: 53.764
 ycood: -92.524
 spectralType:
-  source: DA:RW
+  source: MWDA world profiles
   value: F6V
 primarySlot: 3
 event:
@@ -75,45 +75,63 @@ planet:
     sysPos: 3
     icon: green53
     pressure:
-      source: DA:RW
+      source: MWDA world profiles
       value: STANDARD
     atmosphere:
-      source: DA:RW
+      source: MWDA world profiles
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: DA:RW
+      source: MWDA world profiles
       value: 1.0
     diameter: 15196
     density: 4.624770789786
     dayLength: 22
     yearLength: 1.9
     temperature:
-      source: DA:RW
+      source: MWDA world profiles
       value: 30
     water:
-      source: DA:RW
+      source: MWDA world profiles
       value: 59
     lifeForm:
-      source: DA:RW
+      source: MWDA world profiles
       value: AMPHIBIAN
-    desc: "3135 - Shensi is covered with tens of thousands of kilometers of forest that lured people from northwest North America, northern China, and Siberia. Shensi quickly became a leader in the export of timber and iron ore. Klondike is the largest of the three continent, its climate is the most temperate and it's located on the equator and extends north. The capital city, Whitehorse, is located in the center of the continent. The continent of Mogot, produces the most iron, titanium, and radioactive ores. Its climate is colder and it has fewer mountains. The northern expanses of the continent range far above the artic circle, where they exist as frozen tundra. Here petroleum wells have been drilled and oil stored for the world. The third continent of Kungara, contains open plains for various agricultural products that provide much of the foodstuffs to feed the population. When Shensi became a member of the Capellan Confederation, its natural resources supported the fledgling realm. The CCAF recognized the value of the world and secretly built a number of hidden supply caches for strategic purposes.\n\nDuring the Fourth Succession War, Shensi was captured by the Federated Suns but the locals never gave up the secret caches. When Shensi returned to the Confederation, their supplies was still there, save one cache that had been raided by pirates.\n\nThe Word of Blake Jihad bypassed Shensi, so it was undamaged when it was folded into The Republic of the Sphere. "
+    desc: "3135 - Shensi is covered with tens of thousands of kilometers of forest
+      that lured people from northwest North America, northern China, and Siberia.
+      Shensi quickly became a leader in the export of timber and iron ore. Klondike
+      is the largest of the three continent, its climate is the most temperate and
+      it's located on the equator and extends north. The capital city, Whitehorse,
+      is located in the center of the continent. The continent of Mogot, produces
+      the most iron, titanium, and radioactive ores. Its climate is colder and it
+      has fewer mountains. The northern expanses of the continent range far above
+      the artic circle, where they exist as frozen tundra. Here petroleum wells have
+      been drilled and oil stored for the world. The third continent of Kungara, contains
+      open plains for various agricultural products that provide much of the foodstuffs
+      to feed the population. When Shensi became a member of the Capellan Confederation,
+      its natural resources supported the fledgling realm. The CCAF recognized the
+      value of the world and secretly built a number of hidden supply caches for strategic
+      purposes.\n\nDuring the Fourth Succession War, Shensi was captured by the Federated
+      Suns but the locals never gave up the secret caches. When Shensi returned to
+      the Confederation, their supplies was still there, save one cache that had been
+      raided by pirates.\n\nThe Word of Blake Jihad bypassed Shensi, so it was undamaged
+      when it was folded into The Republic of the Sphere. "
     landmass:
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Klondike
         capital:
-          source: DA:RW
+          source: MWDA world profiles
           value: Whitehorse
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Kungara
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Mogot
     satellite:
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Kung Pow
         size: medium
         icon: rock16
@@ -166,12 +184,6 @@ planet:
       - date: '2360-01-01'
         population: 1590410138.0
       - date: '2367-07-01'
-        # administration: CC | Sarna Commonality | Region 1
-        # administration: CC | Sarna Commonality | Region 1
-        # administration: CC | Sarna Commonality | Region 1
-        # administration: CC | Sarna Commonality | Region 1
-        # administration: CC | Sarna Commonality | Region 1
-        # administration: CC | Sarna Commonality | Region 1
         faction:
           source: canon
           value:
@@ -336,18 +348,7 @@ planet:
           value:
             - FS
       - date: '3030-01-01'
-        # administration: LA | Sarna March | Palos Operational Area
-        # administration: LA | Sarna March | Palos Operational Area
-        # administration: LA | Sarna March | Palos Operational Area
-        # administration: LA | Sarna March | Palos Operational Area
-        # administration: LA | Sarna March | Palos Operational Area
-        # administration: LA | Sarna March | Palos Operational Area
         population: 3669076921.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LA
       - date: '3030-02-28'
         faction:
           source: canon
@@ -356,25 +357,8 @@ planet:
       - date: '3033-01-01'
         socioIndustrial: B-B-F-B-D
       - date: '3040-01-01'
-        # administration: FC | Sarna March | Palos Operational Area
-        # administration: FC | Sarna March | Palos Operational Area
-        # administration: FC | Sarna March | Palos Operational Area
-        # administration: FC | Sarna March | Palos Operational Area
-        # administration: FC | Sarna March | Palos Operational Area
-        # administration: FC | Sarna March | Palos Operational Area
         population: 3691157558.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FC
       - date: '3040-01-19'
-        # administration: FC | Sarna March | Palos Operational Area
-        # administration: FC | Sarna March | Palos Operational Area
-        # administration: FC | Sarna March | Palos Operational Area
-        # administration: FC | Sarna March | Palos Operational Area
-        # administration: FC | Sarna March | Palos Operational Area
-        # administration: FC | Sarna March | Palos Operational Area
         faction:
           source: canon
           value:
@@ -383,32 +367,14 @@ planet:
         socioIndustrial: A-A-F-A-C
       - date: '3050-01-01'
         population: 3721921660.0
-      - date: '3057-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '3057-11-01'
         faction:
           source: canon
           value:
             - CM
-      - date: '3058-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '3060-01-01'
         population: 3764594339.0
       - date: '3062-12-13'
-        # administration: CC | Liao Commonality | Region 3
-        # administration: CC | Liao Commonality | Region 3
-        # administration: CC | Liao Commonality | Region 3
-        # administration: CC | Liao Commonality | Region 3
-        # administration: CC | Liao Commonality | Region 3
-        # administration: CC | Liao Commonality | Region 3
         faction:
           source: canon
           value:
@@ -417,25 +383,7 @@ planet:
         population: 3810422633.0
       - date: '3080-01-01'
         population: 3861053641.0
-      - date: '3085-01-01'
-        # administration: ROS | Prefecture V
-        # administration: ROS | Prefecture V
-        # administration: ROS | Prefecture V
-        # administration: ROS | Prefecture V
-        # administration: ROS | Prefecture V
-        # administration: ROS | Prefecture V
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - ROS
       - date: '3085-07-22'
-        # administration: ROS | Prefecture V
-        # administration: ROS | Prefecture V
-        # administration: ROS | Prefecture V
-        # administration: ROS | Prefecture V
-        # administration: ROS | Prefecture V
-        # administration: ROS | Prefecture V
         faction:
           source: canon
           value:
@@ -454,12 +402,6 @@ planet:
         population: 4082624781.0
       - date: '3132-08-07'
         hpg: X
-      - date: '3135-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '3135-10-01'
         faction:
           source: canon
@@ -467,25 +409,7 @@ planet:
             - IND
       - date: '3140-01-01'
         population: 4085075091.0
-      - date: '3145-01-01'
-        # administration: CC | Sarna Commonality | Region 1
-        # administration: CC | Sarna Commonality | Region 1
-        # administration: CC | Sarna Commonality | Region 1
-        # administration: CC | Sarna Commonality | Region 1
-        # administration: CC | Sarna Commonality | Region 1
-        # administration: CC | Sarna Commonality | Region 1
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CC
       - date: '3145-01-08'
-        # administration: CC | Sarna Commonality | Region 1
-        # administration: CC | Sarna Commonality | Region 1
-        # administration: CC | Sarna Commonality | Region 1
-        # administration: CC | Sarna Commonality | Region 1
-        # administration: CC | Sarna Commonality | Region 1
-        # administration: CC | Sarna Commonality | Region 1
         faction:
           source: canon
           value:
@@ -563,12 +487,6 @@ planet:
       - date: '2360-01-01'
         population: 813524322.0
       - date: '2367-07-01'
-        # administration: CC | Sarna Commonality | Region 1
-        # administration: CC | Sarna Commonality | Region 1
-        # administration: CC | Sarna Commonality | Region 1
-        # administration: CC | Sarna Commonality | Region 1
-        # administration: CC | Sarna Commonality | Region 1
-        # administration: CC | Sarna Commonality | Region 1
         faction:
           source: canon
           value:
@@ -733,20 +651,8 @@ planet:
           value:
             - LA
       - date: '3040-01-01'
-        # administration: FC | Sarna March | Palos Operational Area
-        # administration: FC | Sarna March | Palos Operational Area
-        # administration: FC | Sarna March | Palos Operational Area
-        # administration: FC | Sarna March | Palos Operational Area
-        # administration: FC | Sarna March | Palos Operational Area
-        # administration: FC | Sarna March | Palos Operational Area
         population: 1541415196.0
       - date: '3040-01-19'
-        # administration: FC | Sarna March | Palos Operational Area
-        # administration: FC | Sarna March | Palos Operational Area
-        # administration: FC | Sarna March | Palos Operational Area
-        # administration: FC | Sarna March | Palos Operational Area
-        # administration: FC | Sarna March | Palos Operational Area
-        # administration: FC | Sarna March | Palos Operational Area
         faction:
           source: canon
           value:

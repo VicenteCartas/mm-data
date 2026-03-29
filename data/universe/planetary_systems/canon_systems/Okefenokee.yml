@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,17 +16,15 @@
 # affiliated with Microsoft.
 
 id: Okefenokee
-sucsId: 1931
+sucsId: 1930
 xcood: 606.925
 ycood: -67.511
 spectralType:
-  source: 'HB:HD'
+  source: 'Handbook: House Davion, pg. 96'
   value: G5V
-  page: 96
 primarySlot:
-  source: 'HB:HD'
+  source: 'Handbook: House Davion, pg. 96'
   value: 4
-  page: 96
 event:
   - date: '2694-07-14'
     nadirCharge: yes
@@ -81,39 +79,32 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.9
     sysPos:
-      source: 'HB:HD'
+      source: 'Handbook: House Davion, pg. 96'
       value: 4
-      page: 96
     icon: green23
     pressure:
-      source: 'HB:HD'
+      source: 'Handbook: House Davion, pg. 96'
       value: HIGH
-      page: 96
     atmosphere:
-      source: 'HB:HD'
+      source: 'Handbook: House Davion, pg. 96'
       value: BREATHABLE
-      page: 96
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'HB:HD'
+      source: 'Handbook: House Davion, pg. 96'
       value: 1.1
-      page: 96
     diameter: 12615
     density: 6.127678191687
     dayLength: 24
     yearLength: 1.3
     temperature:
-      source: 'HB:HD'
+      source: 'Handbook: House Davion, pg. 96'
       value: 38
-      page: 96
     water:
-      source: 'HB:HD'
+      source: 'Handbook: House Davion, pg. 96'
       value: 74
-      page: 96
     lifeForm:
-      source: 'HB:HD'
+      source: 'Handbook: House Davion, pg. 96'
       value: MAMMAL
-      page: 96
     desc: |-
       Okefenokee is the typical Federated Suns backwater. Okefenokee is covered in jungles and was settled in the 26th century by a religious sect looking for seclusion in deep space. For centuries the planet was mostly independent and left alone, until during the late 3rd Succession War the planet’s large deposits of oil were discovered.
 
@@ -122,36 +113,26 @@ planet:
       Okefenokee is covered in jungles and swamps that are teeming with life. Unfortunately for anyone unlucky enough to wander into the swamps and jungles, much of these creatures are aggressive. The planet has only three real cities and most of the small population is thinly spread across the planet with usually no more than a few thousand in any community.
     landmass:
       - capital:
-          source: 'HB:HD'
+          source: 'Handbook: House Davion, pg. 96'
           value: Okesten
-          page: 96
     satellite:
       - name:
-          source: 'HB:HD'
+          source: 'Handbook: House Davion, pg. 96'
           value: al-Zun
-          page: 96
         size: large
         icon: rock14
       - name:
-          source: 'HB:HD'
+          source: 'Handbook: House Davion, pg. 96'
           value: Fraun
-          page: 96
         size: medium
         icon: oddmoon3
       - name:
-          source: 'HB:HD'
+          source: 'Handbook: House Davion, pg. 96'
           value: Haifa
-          page: 96
         size: medium
         icon: oddmoon1
     event:
       - date: '2680-08-30'
-        # administration: FS | Crucis March | Minette Operational Area
-        # administration: FS | Crucis March | Minette Operational Area
-        # administration: FS | Crucis March | Minette Operational Area
-        # administration: FS | Crucis March | Minette Operational Area
-        # administration: FS | Crucis March | Minette Operational Area
-        # administration: FS | Crucis March | Minette Operational Area
         faction:
           source: canon
           value:
@@ -243,25 +224,8 @@ planet:
       - date: '3030-01-01'
         population: 270349980.0
       - date: '3040-01-01'
-        # administration: FC | Crucis March | Minette Operational Area
-        # administration: FC | Crucis March | Minette Operational Area
-        # administration: FC | Crucis March | Minette Operational Area
-        # administration: FC | Crucis March | Minette Operational Area
-        # administration: FC | Crucis March | Minette Operational Area
-        # administration: FC | Crucis March | Minette Operational Area
         population: 273914864.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FC
       - date: '3040-01-19'
-        # administration: FC | Crucis March | Minette Operational Area
-        # administration: FC | Crucis March | Minette Operational Area
-        # administration: FC | Crucis March | Minette Operational Area
-        # administration: FC | Crucis March | Minette Operational Area
-        # administration: FC | Crucis March | Minette Operational Area
-        # administration: FC | Crucis March | Minette Operational Area
         faction:
           source: canon
           value:
@@ -275,27 +239,10 @@ planet:
       - date: '3060-01-01'
         population: 281242516.0
       - date: '3067-01-01'
-        # administration: FS | Crucis March | Minette Operational Area
-        # administration: FS | Crucis March | Minette Operational Area
-        # administration: FS | Crucis March | Minette Operational Area
-        # administration: FS | Crucis March | Minette Operational Area
-        # administration: FS | Crucis March | Minette Operational Area
-        # administration: FS | Crucis March | Minette Operational Area
         population:
           source: canon
           value: 283700000.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FS
       - date: '3067-04-20'
-        # administration: FS | Crucis March | Minette Operational Area
-        # administration: FS | Crucis March | Minette Operational Area
-        # administration: FS | Crucis March | Minette Operational Area
-        # administration: FS | Crucis March | Minette Operational Area
-        # administration: FS | Crucis March | Minette Operational Area
-        # administration: FS | Crucis March | Minette Operational Area
         faction:
           source: canon
           value:

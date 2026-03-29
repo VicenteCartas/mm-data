@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,13 +16,12 @@
 # affiliated with Microsoft.
 
 id: Ghent
-sucsId: 2984
+sucsId: 3022
 xcood: 211.24
 ycood: 1164.481
 spectralType:
-  source: EC
+  source: Explorer Corps, pg. 55
   value: G2III
-  page: 55
 primarySlot: 4
 event:
   - date: '3052-01-01'
@@ -124,12 +123,6 @@ planet:
         size: medium
         icon: oddmoon1
     event:
-      - date: '3049-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CSJ
       - date: '3052-06-23'
         faction:
           source: canon
@@ -154,12 +147,6 @@ planet:
         hpg: A
         population: 6402.0
         socioIndustrial: A-X-X-X-X
-      - date: '3075-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - ABN
       - date: '3075-02-03'
         faction:
           source: canon
@@ -168,12 +155,6 @@ planet:
         hpg: A
         population: 829.0
         socioIndustrial: A-X-X-X-X
-      - date: '3079-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CSA
       - date: '3080-11-12'
         faction:
           source: canon
@@ -181,12 +162,6 @@ planet:
             - OA
         population: 1301.0
         socioIndustrial: B-X-X-X-X
-      - date: '3081-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CSA
       - date: '3083-05-08'
         faction:
           source: canon
@@ -194,18 +169,6 @@ planet:
             - RA
         population: 896.0
         socioIndustrial: B-X-X-X-X
-      - date: '3085-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CSA
-      - date: '3095-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - ABN
       - date: '3151-01-01'
         faction:
           source: sucs

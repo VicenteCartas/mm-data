@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -231,7 +231,12 @@ planet:
     lifeForm:
       source: canon
       value: AMPHIBIAN
-    desc: Bell is an arid planet with 20% higher gravity than Terra. Overall Bell is an average planet with modest resources, industry and technology, unfortunately the arid conditions mean that there is very little arable land and the planet is unable to grow enough food to feed its entire population, as a result Bell relies on food imported from other worlds to meet the demands above what can be produced on planet.
+    desc: Bell is an arid planet with 20% higher gravity than Terra. Overall Bell
+      is an average planet with modest resources, industry and technology, unfortunately
+      the arid conditions mean that there is very little arable land and the planet
+      is unable to grow enough food to feed its entire population, as a result Bell
+      relies on food imported from other worlds to meet the demands above what can
+      be produced on planet.
     landmass:
       - name:
           source: canon
@@ -279,12 +284,6 @@ planet:
         population: 23671138.0
       - date: '2270-01-01'
         population: 39746833.0
-      - date: '2271-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '2280-01-01'
         population: 62505999.0
       - date: '2290-01-01'
@@ -293,18 +292,6 @@ planet:
         population: 131707465.0
       - date: '2310-01-01'
         population: 179845301.0
-      - date: '2317-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CCom
-      - date: '2319-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - TGU
       - date: '2320-01-01'
         population: 237443960.0
       - date: '2330-01-01'
@@ -335,12 +322,6 @@ planet:
           value:
             - SSUP
       - date: '2367-07-01'
-        # administration: CC | Sarna Commonality | Region 2
-        # administration: CC | Sarna Commonality | Region 2
-        # administration: CC | Sarna Commonality | Region 2
-        # administration: CC | Sarna Commonality | Region 2
-        # administration: CC | Sarna Commonality | Region 2
-        # administration: CC | Sarna Commonality | Region 2
         faction:
           source: canon
           value:
@@ -392,12 +373,6 @@ planet:
       - date: '2570-01-01'
         population: 1597308481.0
       - date: '2571-10-01'
-        # administration: CC | Sarna Commonality | Region 2
-        # administration: CC | Sarna Commonality | Region 2
-        # administration: CC | Sarna Commonality | Region 2
-        # administration: CC | Sarna Commonality | Region 2
-        # administration: CC | Sarna Commonality | Region 2
-        # administration: CC | Sarna Commonality | Region 2
         faction:
           source: canon
           value:
@@ -475,12 +450,6 @@ planet:
       - date: '2890-01-01'
         population: 1521343869.0
       - date: '2900-06-02'
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
         faction:
           source: canon
           value:
@@ -513,12 +482,6 @@ planet:
       - date: '3020-01-01'
         population: 1118020905.0
       - date: '3025-10-13'
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
         faction:
           source: canon
           value:
@@ -526,25 +489,8 @@ planet:
       - date: '3030-01-01'
         population: 1101644053.0
       - date: '3040-01-01'
-        # administration: FC | Capellan March | Kathil Operational Area
-        # administration: FC | Capellan March | Kathil Operational Area
-        # administration: FC | Capellan March | Kathil Operational Area
-        # administration: FC | Capellan March | Kathil Operational Area
-        # administration: FC | Capellan March | Kathil Operational Area
-        # administration: FC | Capellan March | Kathil Operational Area
         population: 1113383590.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FC
       - date: '3040-01-19'
-        # administration: FC | Capellan March | Kathil Operational Area
-        # administration: FC | Capellan March | Kathil Operational Area
-        # administration: FC | Capellan March | Kathil Operational Area
-        # administration: FC | Capellan March | Kathil Operational Area
-        # administration: FC | Capellan March | Kathil Operational Area
-        # administration: FC | Capellan March | Kathil Operational Area
         faction:
           source: canon
           value:
@@ -557,25 +503,7 @@ planet:
         population: 1124123541.0
       - date: '3060-01-01'
         population: 1131906815.0
-      - date: '3067-01-01'
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FS
       - date: '3067-04-20'
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
         faction:
           source: canon
           value:

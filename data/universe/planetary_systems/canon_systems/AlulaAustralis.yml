@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,17 +16,15 @@
 # affiliated with Microsoft.
 
 id: Alula Australis
-sucsId: 2788
+sucsId: 2787
 xcood: -24.309
 ycood: -4.696
 spectralType:
-  source: 'HB:HM'
+  source: 'Handbook: House Marik, pg. 69'
   value: A7II
-  page: 69
 primarySlot:
-  source: 'HB:HM'
+  source: 'Handbook: House Marik, pg. 69'
   value: 8
-  page: 69
 event:
   - date: '2375-06-28'
     zenithCharge: yes
@@ -170,65 +168,53 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 5.04
     sysPos:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 69'
       value: 8
-      page: 69
     icon: wet14
     pressure:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 69'
       value: STANDARD
-      page: 69
     atmosphere:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 69'
       value: BREATHABLE
-      page: 69
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 69'
       value: 1.09
-      page: 69
     diameter: 13359
     density: 5.734094321759
     dayLength: 19
     yearLength: 11.4
     temperature:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 69'
       value: 26
-      page: 69
     water:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 69'
       value: 87
-      page: 69
     lifeForm:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 69'
       value: AMPHIBIAN
-      page: 69
     desc: |-
       3135 - A warm and pleasant world colonized early in the first Terran exodus and claimed even before the Star League by House Marik‘s Free Worlds League, Alula Australis was a highly developed world even before it fell under the sway of the Terran Hegemony. Under the joint Free Worlds/Hegemony banner, Alula Australis benefited from the glories of the Star League era, and became a major industrial world that included among its exports industrial metals, power generation systems, electronics, and even BattleMechs. Assaulted during the Amaris Coup, this world fared better than most, and reverted to Marik control for much of the Succession Wars, though heavy raiding crippled its BattleMech-dominated industrial base by the close of the thirtieth century, sending the planet into a severe depression. The planet experienced a revival, however, when veins of rare earths and gemstones were discovered in the mountain ranges outside the planetary capital of New Horizon City in the late 2990s, and today these valuable exports form the basis for a mining and refining industry. Still in Marik hands at the time of the Blakist Jihad, Alula Australis was spared the worst of the fighting, and all three of its major landmasses—Auroria in the northern hemisphere, Hume and Locke in the southern—boast major industrial centers. New Horizon City is located on the southern peninsula of Auroria, while Sturgeon, home to the planet‘s largest chemical corporation, AA PolyChem Unlimited, dominates the central Hubbes River Valley on Hume.
 
       Alula Australis has the distinction of being the first planet that House Marik deployed BattleMechs on.
     landmass:
       - name:
-          source: 'HB:HM'
+          source: 'Handbook: House Marik, pg. 69'
           value: Auroria
-          page: 69
         capital:
-          source: 'HB:HM'
+          source: 'Handbook: House Marik, pg. 69'
           value: New Horizon City
-          page: 69
       - name:
-          source: 'HB:HM'
+          source: 'Handbook: House Marik, pg. 69'
           value: Hume
-          page: 69
       - name:
-          source: 'HB:HM'
+          source: 'Handbook: House Marik, pg. 69'
           value: Locke
-          page: 69
     satellite:
       - name:
-          source: 'HB:HM'
+          source: 'Handbook: House Marik, pg. 69'
           value: Caprice
-          page: 69
         size: large
         icon: rock7
     event:
@@ -247,12 +233,6 @@ planet:
         population: 635457.0
       - date: '2270-01-01'
         population: 2060040.0
-      - date: '2271-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - TA
       - date: '2271-03-23'
         faction:
           source: canon
@@ -272,19 +252,7 @@ planet:
           value:
             - TH
             - FWL
-      - date: '2317-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - TH
       - date: '2317-07-22'
-        # administration: TH | Alliance Core
-        # administration: TH | Alliance Core
-        # administration: TH | Alliance Core
-        # administration: TH | Alliance Core
-        # administration: TH | Alliance Core
-        # administration: TH | Alliance Core
         faction:
           source: canon
           value:
@@ -384,18 +352,6 @@ planet:
         population: 3783222204.0
       - date: '2760-01-01'
         population: 3742158459.0
-      - date: '2767-01-01'
-        # administration: AE | Alliance Core
-        # administration: AE | Alliance Core
-        # administration: AE | Alliance Core
-        # administration: AE | Alliance Core
-        # administration: AE | Alliance Core
-        # administration: AE | Alliance Core
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - AE
       - date: '2767-05-17'
         faction:
           source: canon
@@ -408,12 +364,6 @@ planet:
       - date: '2770-01-01'
         population: 3708008454.0
       - date: '2779-07-15'
-        # administration: TH | Alliance Core
-        # administration: TH | Alliance Core
-        # administration: TH | Alliance Core
-        # administration: TH | Alliance Core
-        # administration: TH | Alliance Core
-        # administration: TH | Alliance Core
         faction:
           source: canon
           value:
@@ -436,12 +386,6 @@ planet:
       - date: '2820-01-01'
         population: 3714677164.0
       - date: '2821-09-25'
-        # administration: FWL | Border Protectorate
-        # administration: FWL | Border Protectorate
-        # administration: FWL | Border Protectorate
-        # administration: FWL | Border Protectorate
-        # administration: FWL | Border Protectorate
-        # administration: FWL | Border Protectorate
         faction:
           source: canon
           value:
@@ -494,18 +438,6 @@ planet:
         population:
           source: canon
           value: 3119000000.0
-      - date: '3030-01-01'
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LA
       - date: '3030-10-14'
         faction:
           source: canon
@@ -513,25 +445,8 @@ planet:
             - LA
         population: 3106379356.0
       - date: '3040-01-01'
-        # administration: FC | Skye March | Alcor Operational Area
-        # administration: FC | Skye March | Alcor Operational Area
-        # administration: FC | Skye March | Alcor Operational Area
-        # administration: FC | Skye March | Alcor Operational Area
-        # administration: FC | Skye March | Alcor Operational Area
-        # administration: FC | Skye March | Alcor Operational Area
         population: 3139358973.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FC
       - date: '3040-01-19'
-        # administration: FC | Skye March | Alcor Operational Area
-        # administration: FC | Skye March | Alcor Operational Area
-        # administration: FC | Skye March | Alcor Operational Area
-        # administration: FC | Skye March | Alcor Operational Area
-        # administration: FC | Skye March | Alcor Operational Area
-        # administration: FC | Skye March | Alcor Operational Area
         faction:
           source: canon
           value:
@@ -542,25 +457,7 @@ planet:
           value: C-C-B-C-C
       - date: '3050-01-01'
         population: 3181676269.0
-      - date: '3057-01-01'
-        # administration: FWL | Border Protectorate
-        # administration: FWL | Border Protectorate
-        # administration: FWL | Border Protectorate
-        # administration: FWL | Border Protectorate
-        # administration: FWL | Border Protectorate
-        # administration: FWL | Border Protectorate
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FWL
       - date: '3057-10-01'
-        # administration: FWL | Border Protectorate
-        # administration: FWL | Border Protectorate
-        # administration: FWL | Border Protectorate
-        # administration: FWL | Border Protectorate
-        # administration: FWL | Border Protectorate
-        # administration: FWL | Border Protectorate
         faction:
           source: canon
           value:
@@ -592,25 +489,7 @@ planet:
             - Stone
       - date: '3080-01-01'
         population: 3280892044.0
-      - date: '3081-01-01'
-        # administration: ROS | Prefecture X
-        # administration: ROS | Prefecture X
-        # administration: ROS | Prefecture X
-        # administration: ROS | Prefecture X
-        # administration: ROS | Prefecture X
-        # administration: ROS | Prefecture X
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - ROS
       - date: '3081-03-06'
-        # administration: ROS | Prefecture X
-        # administration: ROS | Prefecture X
-        # administration: ROS | Prefecture X
-        # administration: ROS | Prefecture X
-        # administration: ROS | Prefecture X
-        # administration: ROS | Prefecture X
         faction:
           source: canon
           value:
@@ -642,10 +521,9 @@ planet:
             - CWE
       - date: '3151-01-01'
         faction:
-          source: SUCS
-          version: 2026.03.02
+          source: sucs
           value:
-            - 3SL
+            - CWE
   - name: Osiris
     type: DWARF_TERRESTRIAL
     orbitalDist: 69.84

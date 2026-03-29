@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: New Valencia
-sucsId: 1857
+sucsId: 1856
 xcood: 219.972
 ycood: -50.015
 spectralType:
@@ -107,7 +107,10 @@ planet:
     lifeForm:
       source: canon
       value: MAMMAL
-    desc: New Valencia is a temperate planet with calm weather and long growing seasons, making it an ideal breadbasket world. Despite a focus on agriculture, the planet also has a strong industrial and technology base, despite lacking significant sources of natural resources.
+    desc: New Valencia is a temperate planet with calm weather and long growing seasons,
+      making it an ideal breadbasket world. Despite a focus on agriculture, the planet
+      also has a strong industrial and technology base, despite lacking significant
+      sources of natural resources.
     landmass:
       - name:
           source: canon
@@ -156,12 +159,6 @@ planet:
           value:
             - FS
         population: 4238713.0
-      - date: '2341-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '2350-01-01'
         population: 8537741.0
       - date: '2360-01-01'
@@ -214,18 +211,6 @@ planet:
         population: 492594821.0
       - date: '2570-01-01'
         population: 507852193.0
-      - date: '2571-01-01'
-        # administration: FS | Crucis March | Markesan Operational Area
-        # administration: FS | Crucis March | Markesan Operational Area
-        # administration: FS | Crucis March | Markesan Operational Area
-        # administration: FS | Crucis March | Markesan Operational Area
-        # administration: FS | Crucis March | Markesan Operational Area
-        # administration: FS | Crucis March | Markesan Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FS
       - date: '2580-01-01'
         population: 523617901.0
       - date: '2590-01-01'
@@ -339,25 +324,8 @@ planet:
       - date: '3033-01-01'
         socioIndustrial: C-C-D-B-B
       - date: '3040-01-01'
-        # administration: FC | Crucis March | Markesan Operational Area
-        # administration: FC | Crucis March | Markesan Operational Area
-        # administration: FC | Crucis March | Markesan Operational Area
-        # administration: FC | Crucis March | Markesan Operational Area
-        # administration: FC | Crucis March | Markesan Operational Area
-        # administration: FC | Crucis March | Markesan Operational Area
         population: 494744516.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FC
       - date: '3040-01-19'
-        # administration: FC | Crucis March | Markesan Operational Area
-        # administration: FC | Crucis March | Markesan Operational Area
-        # administration: FC | Crucis March | Markesan Operational Area
-        # administration: FC | Crucis March | Markesan Operational Area
-        # administration: FC | Crucis March | Markesan Operational Area
-        # administration: FC | Crucis March | Markesan Operational Area
         faction:
           source: canon
           value:
@@ -372,25 +340,7 @@ planet:
         socioIndustrial: B-B-D-B-A
       - date: '3060-01-01'
         population: 502724094.0
-      - date: '3067-01-01'
-        # administration: FS | Crucis March | Markesan Operational Area
-        # administration: FS | Crucis March | Markesan Operational Area
-        # administration: FS | Crucis March | Markesan Operational Area
-        # administration: FS | Crucis March | Markesan Operational Area
-        # administration: FS | Crucis March | Markesan Operational Area
-        # administration: FS | Crucis March | Markesan Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FS
       - date: '3067-04-20'
-        # administration: FS | Crucis March | Markesan Operational Area
-        # administration: FS | Crucis March | Markesan Operational Area
-        # administration: FS | Crucis March | Markesan Operational Area
-        # administration: FS | Crucis March | Markesan Operational Area
-        # administration: FS | Crucis March | Markesan Operational Area
-        # administration: FS | Crucis March | Markesan Operational Area
         faction:
           source: canon
           value:

@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: Errai
-sucsId: 820
+sucsId: 819
 xcood: 52.512
 ycood: 3.478
 spectralType:
-  source: DA:RW
+  source: MWDA world profiles
   value: M6IV
 primarySlot:
-  source: DA:RW
+  source: MWDA world profiles
   value: 2
 event:
   - date: '2390-12-13'
@@ -54,42 +54,57 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.14
     sysPos:
-      source: DA:RW
+      source: MWDA world profiles
       value: 2
     icon: green57
     pressure:
-      source: DA:RW
+      source: MWDA world profiles
       value: STANDARD
     atmosphere:
-      source: DA:RW
+      source: MWDA world profiles
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: DA:RW
+      source: MWDA world profiles
       value: 1.02
     diameter: 13554
     density: 5.288515845832
     dayLength: 22
     yearLength: 0.5
     temperature:
-      source: DA:RW
+      source: MWDA world profiles
       value: 35
     water:
-      source: DA:RW
+      source: MWDA world profiles
       value: 54
     lifeForm:
-      source: DA:RW
+      source: MWDA world profiles
       value: AMPHIBIAN
-    desc: Established early on as a major industrial planet, Errai‘s population swelled in the days of the Star League, with electronics, fusion reactors, and heavy industrial equipment—including a wide range of industrial ‘Mechs— all being manufactured by local companies. In the wake of the Star League‘s fall, the Federated Suns occupied Errai, and for a while, under Davion rule, the planet experienced a surge in commercialism, including the establishment of a number of casinos and nightclubs that quickly fell under the sway of the local mobs. For a time, widespread crime and corruption—attributed to the mobs—characterized Errai‘s business and politics. In the 3060s, aid from ComStar allowed Maltex Corporation to rebuild its factories on planet and began construction of both Thug and Wyvern ‘Mechs as well as industrial ‘Mechs. Errai also supports the planetside headquarters of Null-Gee Metals, a relatively small corporation that operates numerous mining colonies in the Errai system asteroid belt. Both Null-Gee Metals and Maltex Corporation are located on Errai‘s primary continent of Carrigan. The planetary capital of Errai Prime is located on the secondary continent of Hallens, which also features two of Errai‘s main spaceports.
+    desc: Established early on as a major industrial planet, Errai‘s population swelled
+      in the days of the Star League, with electronics, fusion reactors, and heavy
+      industrial equipment—including a wide range of industrial ‘Mechs— all being
+      manufactured by local companies. In the wake of the Star League‘s fall, the
+      Federated Suns occupied Errai, and for a while, under Davion rule, the planet
+      experienced a surge in commercialism, including the establishment of a number
+      of casinos and nightclubs that quickly fell under the sway of the local mobs.
+      For a time, widespread crime and corruption—attributed to the mobs—characterized
+      Errai‘s business and politics. In the 3060s, aid from ComStar allowed Maltex
+      Corporation to rebuild its factories on planet and began construction of both
+      Thug and Wyvern ‘Mechs as well as industrial ‘Mechs. Errai also supports the
+      planetside headquarters of Null-Gee Metals, a relatively small corporation that
+      operates numerous mining colonies in the Errai system asteroid belt. Both Null-Gee
+      Metals and Maltex Corporation are located on Errai‘s primary continent of Carrigan.
+      The planetary capital of Errai Prime is located on the secondary continent of
+      Hallens, which also features two of Errai‘s main spaceports.
     landmass:
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Carrigan
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Hallens
         capital:
-          source: DA:RW
+          source: MWDA world profiles
           value: Errai Prime
     event:
       - date: '2242-04-06'
@@ -116,12 +131,6 @@ planet:
       - date: '2310-01-01'
         population: 29116749.0
       - date: '2316-03-15'
-        # administration: TH | Lockdale Province
-        # administration: TH | Lockdale Province
-        # administration: TH | Lockdale Province
-        # administration: TH | Lockdale Province
-        # administration: TH | Lockdale Province
-        # administration: TH | Lockdale Province
         faction:
           source: canon
           value:
@@ -224,18 +233,6 @@ planet:
         population: 1494958449.0
       - date: '2760-01-01'
         population: 1499262627.0
-      - date: '2767-01-01'
-        # administration: AE | Lockdale Province
-        # administration: AE | Lockdale Province
-        # administration: AE | Lockdale Province
-        # administration: AE | Lockdale Province
-        # administration: AE | Lockdale Province
-        # administration: AE | Lockdale Province
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - AE
       - date: '2767-01-07'
         faction:
           source: canon
@@ -244,12 +241,6 @@ planet:
       - date: '2770-01-01'
         population: 1500987371.0
       - date: '2779-09-29'
-        # administration: TH | Lockdale Province
-        # administration: TH | Lockdale Province
-        # administration: TH | Lockdale Province
-        # administration: TH | Lockdale Province
-        # administration: TH | Lockdale Province
-        # administration: TH | Lockdale Province
         faction:
           source: canon
           value:
@@ -268,25 +259,7 @@ planet:
         population: 1488583684.0
       - date: '2820-01-01'
         population: 1484163425.0
-      - date: '2821-01-01'
-        # administration: DC | Dieron Military District | Addicks Prefecture
-        # administration: DC | Dieron Military District | Addicks Prefecture
-        # administration: DC | Dieron Military District | Addicks Prefecture
-        # administration: DC | Dieron Military District | Addicks Prefecture
-        # administration: DC | Dieron Military District | Addicks Prefecture
-        # administration: DC | Dieron Military District | Addicks Prefecture
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - DC
       - date: '2821-03-08'
-        # administration: DC | Dieron Military District | Addicks Prefecture
-        # administration: DC | Dieron Military District | Addicks Prefecture
-        # administration: DC | Dieron Military District | Addicks Prefecture
-        # administration: DC | Dieron Military District | Addicks Prefecture
-        # administration: DC | Dieron Military District | Addicks Prefecture
-        # administration: DC | Dieron Military District | Addicks Prefecture
         faction:
           source: canon
           value:
@@ -301,25 +274,7 @@ planet:
         socioIndustrial: C-B-B-B-C
       - date: '2860-01-01'
         population: 1485837299.0
-      - date: '2864-01-01'
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FS
       - date: '2864-03-09'
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
         faction:
           source: canon
           value:
@@ -365,25 +320,8 @@ planet:
       - date: '3034-01-01'
         socioIndustrial: C-C-C-B-B
       - date: '3040-01-01'
-        # administration: FC | Draconis March | Robinson Operational Area
-        # administration: FC | Draconis March | Robinson Operational Area
-        # administration: FC | Draconis March | Robinson Operational Area
-        # administration: FC | Draconis March | Robinson Operational Area
-        # administration: FC | Draconis March | Robinson Operational Area
-        # administration: FC | Draconis March | Robinson Operational Area
         population: 1502898522.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FC
       - date: '3040-01-19'
-        # administration: FC | Draconis March | Robinson Operational Area
-        # administration: FC | Draconis March | Robinson Operational Area
-        # administration: FC | Draconis March | Robinson Operational Area
-        # administration: FC | Draconis March | Robinson Operational Area
-        # administration: FC | Draconis March | Robinson Operational Area
-        # administration: FC | Draconis March | Robinson Operational Area
         faction:
           source: canon
           value:
@@ -396,25 +334,7 @@ planet:
         socioIndustrial: A-A-C-A-A
       - date: '3060-01-01'
         population: 1522868293.0
-      - date: '3067-01-01'
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FS
       - date: '3067-04-20'
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
         faction:
           source: canon
           value:
@@ -445,25 +365,7 @@ planet:
             - Stone
       - date: '3080-01-01'
         population: 1557521213.0
-      - date: '3081-01-01'
-        # administration: ROS | Prefecture III
-        # administration: ROS | Prefecture III
-        # administration: ROS | Prefecture III
-        # administration: ROS | Prefecture III
-        # administration: ROS | Prefecture III
-        # administration: ROS | Prefecture III
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - ROS
       - date: '3081-10-30'
-        # administration: ROS | Prefecture III
-        # administration: ROS | Prefecture III
-        # administration: ROS | Prefecture III
-        # administration: ROS | Prefecture III
-        # administration: ROS | Prefecture III
-        # administration: ROS | Prefecture III
         faction:
           source: canon
           value:
@@ -480,12 +382,6 @@ planet:
         population: 1637049591.0
       - date: '3132-08-07'
         hpg: X
-      - date: '3135-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '3135-10-01'
         faction:
           source: canon
@@ -493,25 +389,7 @@ planet:
             - IND
       - date: '3140-01-01'
         population: 1650198513.0
-      - date: '3145-01-01'
-        # administration: DC | Dieron Military District | Al Na'ir Prefecture
-        # administration: DC | Dieron Military District | Al Na'ir Prefecture
-        # administration: DC | Dieron Military District | Al Na'ir Prefecture
-        # administration: DC | Dieron Military District | Al Na'ir Prefecture
-        # administration: DC | Dieron Military District | Al Na'ir Prefecture
-        # administration: DC | Dieron Military District | Al Na'ir Prefecture
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - DC
       - date: '3145-06-03'
-        # administration: DC | Dieron Military District | Al Na'ir Prefecture
-        # administration: DC | Dieron Military District | Al Na'ir Prefecture
-        # administration: DC | Dieron Military District | Al Na'ir Prefecture
-        # administration: DC | Dieron Military District | Al Na'ir Prefecture
-        # administration: DC | Dieron Military District | Al Na'ir Prefecture
-        # administration: DC | Dieron Military District | Al Na'ir Prefecture
         faction:
           source: canon
           value:

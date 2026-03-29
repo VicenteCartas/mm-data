@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: Kashilla
-sucsId: 1302
+sucsId: 1301
 xcood: -1.551
 ycood: -201.153
 spectralType:
-  source: 'OR'
+  source: 'Objective Raids: Capellan Confederation'
   value: M1V
 primarySlot:
-  source: 'OR'
+  source: 'Objective Raids: Capellan Confederation'
   value: 4
 event:
   - date: '2351-02-19'
@@ -88,43 +88,48 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.2
     sysPos:
-      source: 'OR'
+      source: 'Objective Raids: Capellan Confederation'
       value: 4
     icon: green2
     pressure:
-      source: 'OR'
+      source: 'Objective Raids: Capellan Confederation'
       value: STANDARD
     atmosphere:
-      source: 'OR'
+      source: 'Objective Raids: Capellan Confederation'
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'OR'
+      source: 'Objective Raids: Capellan Confederation'
       value: 1.0
     diameter: 11518
     density: 6.101527243017
     dayLength: 18
     yearLength: 0.7
     temperature:
-      source: 'OR'
+      source: 'Objective Raids: Capellan Confederation'
       value: 36
     water:
-      source: 'OR'
+      source: 'Objective Raids: Capellan Confederation'
       value: 20
     lifeForm:
-      source: 'OR'
+      source: 'Objective Raids: Capellan Confederation'
       value: REPTILE
-    desc: Kashilla is an unremarkable planet, with only modest natural resources, sufficient agriculture to feed its population and limited industry. Overall the planet is comfortable for human habitation, with a tropical climate and native reptile-like lifeforms. Kashilla is home to one of the many Duchy RTC training facilities throughout the Capellan Confederation that trains vehicle crews and unarmored infantry.
+    desc: Kashilla is an unremarkable planet, with only modest natural resources,
+      sufficient agriculture to feed its population and limited industry. Overall
+      the planet is comfortable for human habitation, with a tropical climate and
+      native reptile-like lifeforms. Kashilla is home to one of the many Duchy RTC
+      training facilities throughout the Capellan Confederation that trains vehicle
+      crews and unarmored infantry.
     landmass:
       - name:
-          source: 'OR'
+          source: 'Objective Raids: Capellan Confederation'
           value: Kashilla
         capital:
-          source: 'OR'
+          source: 'Objective Raids: Capellan Confederation'
           value: Leah
     satellite:
       - name:
-          source: 'OR'
+          source: 'Objective Raids: Capellan Confederation'
           value: Libby
         size: medium
         icon: rock5
@@ -136,12 +141,6 @@ planet:
             - CH
         population: 42457.0
         socioIndustrial: D-D-D-D-D
-      - date: '2271-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '2280-01-01'
         population: 185752.0
       - date: '2290-01-01'
@@ -154,12 +153,6 @@ planet:
           value:
             - CCom
         population: 5118592.0
-      - date: '2317-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '2320-01-01'
         population: 11547753.0
       - date: '2330-01-01'
@@ -170,19 +163,7 @@ planet:
         population: 72106566.0
       - date: '2360-01-01'
         population: 112814076.0
-      - date: '2366-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CCom
       - date: '2367-07-01'
-        # administration: CC | Capella Commonality | Region 7
-        # administration: CC | Capella Commonality | Region 7
-        # administration: CC | Capella Commonality | Region 7
-        # administration: CC | Capella Commonality | Region 7
-        # administration: CC | Capella Commonality | Region 7
-        # administration: CC | Capella Commonality | Region 7
         faction:
           source: canon
           value:

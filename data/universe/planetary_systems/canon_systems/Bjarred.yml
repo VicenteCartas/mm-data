@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -20,10 +20,10 @@ sucsId: 335
 xcood: 243.394
 ycood: 408.678
 spectralType:
-  source: HB:HK
+  source: House Kurita
   value: F4V
 primarySlot:
-  source: HB:HK
+  source: House Kurita
   value: 5
 event:
   - date: '2375-11-06'
@@ -105,7 +105,7 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 2.24
     sysPos:
-      source: HB:HK
+      source: House Kurita
       value: 5
     icon: green9
     pressure:
@@ -127,15 +127,27 @@ planet:
       source: canon
       value: 39
     lifeForm:
-      source: HB:HK
+      source: House Kurita
       value: AMPHIBIAN
-    desc: Bjarred is a small world first settled in the 23rd Century by explorers from the Ozawa Merchant organization. The planet is a technologically advanced world with Basic Heavy Industry but Limited Industrial Output. The planet has little open water on its surface. What water the world possesses is underground running through vast catacombs. The surface vegetation and agriculture criss‐cross the world following the paths of these underground water ways but it leaves the planets with a very poor agricultural base requiring they import food. The world's many mountain ranges are also barren in regards to life, but are rich is valuable minerals and metal A prefecture capital before the Clan Invasion, Bjarred resumed that status after the world was reclaimed from Clan Nova Cat in a famous coin toss. The continent of Icefall was so named for a disastrous ice asteroid crash that occurred when attempting to provide comet water to early colonists.
+    desc: Bjarred is a small world first settled in the 23rd Century by explorers
+      from the Ozawa Merchant organization. The planet is a technologically advanced
+      world with Basic Heavy Industry but Limited Industrial Output. The planet has
+      little open water on its surface. What water the world possesses is underground
+      running through vast catacombs. The surface vegetation and agriculture criss‐cross
+      the world following the paths of these underground water ways but it leaves
+      the planets with a very poor agricultural base requiring they import food. The
+      world's many mountain ranges are also barren in regards to life, but are rich
+      is valuable minerals and metal A prefecture capital before the Clan Invasion,
+      Bjarred resumed that status after the world was reclaimed from Clan Nova Cat
+      in a famous coin toss. The continent of Icefall was so named for a disastrous
+      ice asteroid crash that occurred when attempting to provide comet water to early
+      colonists.
     landmass:
       - name:
           source: canon
           value: Lomma
         capital:
-          source: HB:HK
+          source: House Kurita
           value: Oasis V
       - name:
           source: canon
@@ -149,12 +161,6 @@ planet:
         icon: rock10
     event:
       - date: '2350-06-05'
-        # administration: DC | Pesht Military District | Bjarred Prefecture
-        # administration: DC | Pesht Military District | Bjarred Prefecture
-        # administration: DC | Pesht Military District | Bjarred Prefecture
-        # administration: DC | Pesht Military District | Bjarred Prefecture
-        # administration: DC | Pesht Military District | Bjarred Prefecture
-        # administration: DC | Pesht Military District | Bjarred Prefecture
         faction:
           source: canon
           value:
@@ -328,11 +334,6 @@ planet:
           value: B-C-A-C-D
       - date: '3050-01-01'
         population: 290713751.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CSJ
       - date: '3050-03-01'
         faction:
           source: canon
@@ -343,25 +344,7 @@ planet:
           source: canon
           value:
             - CNC
-      - date: '3059-01-01'
-        # administration: DC | Pesht Military District | Lonaconing Prefecture
-        # administration: DC | Pesht Military District | Lonaconing Prefecture
-        # administration: DC | Pesht Military District | Lonaconing Prefecture
-        # administration: DC | Pesht Military District | Lonaconing Prefecture
-        # administration: DC | Pesht Military District | Lonaconing Prefecture
-        # administration: DC | Pesht Military District | Lonaconing Prefecture
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - DC
       - date: '3059-06-26'
-        # administration: DC | Pesht Military District | Bjarred Prefecture
-        # administration: DC | Pesht Military District | Bjarred Prefecture
-        # administration: DC | Pesht Military District | Bjarred Prefecture
-        # administration: DC | Pesht Military District | Bjarred Prefecture
-        # administration: DC | Pesht Military District | Bjarred Prefecture
-        # administration: DC | Pesht Military District | Bjarred Prefecture
         faction:
           source: canon
           value:

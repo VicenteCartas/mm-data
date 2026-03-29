@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: Mara
-sucsId: 1600
+sucsId: 1599
 xcood: 121.748
 ycood: 8.743
 spectralType:
-  source: DA:RW
+  source: MWDA world profiles
   value: F4V
 primarySlot:
-  source: DA:RW
+  source: MWDA world profiles
   value: 1
 event:
   - date: '2416-08-21'
@@ -35,51 +35,71 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 2.24
     sysPos:
-      source: DA:RW
+      source: MWDA world profiles
       value: 1
     icon: wet20
     pressure:
-      source: DA:RW
+      source: MWDA world profiles
       value: STANDARD
     atmosphere:
-      source: DA:RW
+      source: MWDA world profiles
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: DA:RW
+      source: MWDA world profiles
       value: 0.93
     diameter: 14176
     density: 4.610296936674
     dayLength: 21
     yearLength: 3.6
     temperature:
-      source: DA:RW
+      source: MWDA world profiles
       value: 34
     water:
-      source: DA:RW
+      source: MWDA world profiles
       value: 81
     lifeForm:
-      source: DA:RW
+      source: MWDA world profiles
       value: AMPHIBIAN
-    desc: The terrestrial planet of Mara was settled in the early age of colonial expansion, after it was recognized for the pleasant agricultural world it could be. Though industrial metals may be found in small veins—particularly among the remote Northern Isles and on the small south-polar continent of Naramo—the fertile, wooded lands and freshwater lakes on Appilagio, the planet‘s large main continent, are the source of almost all the planet‘s industry. Much of the logging industry, for one of Mara‘s chief exports, is focused around the Great Rim—site of a long-ago asteroid impact on Appilagio. The majority of Mara‘s settlements are concentrated inland of the Great Rim area, near these logging operations, in a temperate region of plains and large lakes that in many ways resembles the climate of Terra‘s European-Mediterranean region. The planetary capital city of Terrace is located on the northern Broomstick Plains, roughly forty kilometers inland of the Great Rim, near the smaller coastal city of Mountlake, which is itself home to Hara-Maku Enterprises, owners of Mara‘s largest commercial fishing fleet. Hara-Maku‘s operations, which focus mainly on harvesting the delicate freshwater Mara Trout, found in many of Appilagio‘s inland seas, lakes, and rivers, accounts for most of the planet‘s secondary food-export industry. The spaceport city of Lockholme, located in the southern peninsula of Appilagio, is also home to Mara Development Corporation, a construction equipment company that specializes in the manufacture of both Forestry and Construction ‘Mech designs.
+    desc: The terrestrial planet of Mara was settled in the early age of colonial
+      expansion, after it was recognized for the pleasant agricultural world it could
+      be. Though industrial metals may be found in small veins—particularly among
+      the remote Northern Isles and on the small south-polar continent of Naramo—the
+      fertile, wooded lands and freshwater lakes on Appilagio, the planet‘s large
+      main continent, are the source of almost all the planet‘s industry. Much of
+      the logging industry, for one of Mara‘s chief exports, is focused around the
+      Great Rim—site of a long-ago asteroid impact on Appilagio. The majority of Mara‘s
+      settlements are concentrated inland of the Great Rim area, near these logging
+      operations, in a temperate region of plains and large lakes that in many ways
+      resembles the climate of Terra‘s European-Mediterranean region. The planetary
+      capital city of Terrace is located on the northern Broomstick Plains, roughly
+      forty kilometers inland of the Great Rim, near the smaller coastal city of Mountlake,
+      which is itself home to Hara-Maku Enterprises, owners of Mara‘s largest commercial
+      fishing fleet. Hara-Maku‘s operations, which focus mainly on harvesting the
+      delicate freshwater Mara Trout, found in many of Appilagio‘s inland seas, lakes,
+      and rivers, accounts for most of the planet‘s secondary food-export industry.
+      The spaceport city of Lockholme, located in the southern peninsula of Appilagio,
+      is also home to Mara Development Corporation, a construction equipment company
+      that specializes in the manufacture of both Forestry and Construction ‘Mech
+      designs.
     landmass:
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Appilagio
         capital:
-          source: DA:RW
+          source: MWDA world profiles
           value: Terrace
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Naramo
     satellite:
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Montoya
         size: large
         icon: rock6
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Vasquez
         size: large
         icon: rock8
@@ -141,12 +161,6 @@ planet:
         population: 2482271223.0
       - date: '2360-01-01'
         population: 2908480532.0
-      - date: '2366-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '2370-01-01'
         population: 3340975766.0
       - date: '2380-01-01'
@@ -191,18 +205,6 @@ planet:
         population: 8104991264.0
       - date: '2570-01-01'
         population: 8106900517.0
-      - date: '2571-01-01'
-        # administration: DC | Benjamin Military District | Proserpina Prefecture
-        # administration: DC | Benjamin Military District | Proserpina Prefecture
-        # administration: DC | Benjamin Military District | Proserpina Prefecture
-        # administration: DC | Benjamin Military District | Proserpina Prefecture
-        # administration: DC | Benjamin Military District | Proserpina Prefecture
-        # administration: DC | Benjamin Military District | Proserpina Prefecture
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - DC
       - date: '2580-01-01'
         population: 8098737932.0
       - date: '2590-01-01'
@@ -245,18 +247,6 @@ planet:
         population: 8054442811.0
       - date: '2760-01-01'
         population: 8131631533.0
-      - date: '2767-01-01'
-        # administration: AE | Lockdale Province
-        # administration: AE | Lockdale Province
-        # administration: AE | Lockdale Province
-        # administration: AE | Lockdale Province
-        # administration: AE | Lockdale Province
-        # administration: AE | Lockdale Province
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - AE
       - date: '2767-10-04'
         faction:
           source: canon
@@ -271,18 +261,6 @@ planet:
             - TH
       - date: '2780-01-01'
         population: 8190011529.0
-      - date: '2783-01-01'
-        # administration: DC | Benjamin Military District | Proserpina Prefecture
-        # administration: DC | Benjamin Military District | Proserpina Prefecture
-        # administration: DC | Benjamin Military District | Proserpina Prefecture
-        # administration: DC | Benjamin Military District | Proserpina Prefecture
-        # administration: DC | Benjamin Military District | Proserpina Prefecture
-        # administration: DC | Benjamin Military District | Proserpina Prefecture
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - DC
       - date: '2786-07-19'
         faction:
           source: canon
@@ -299,12 +277,6 @@ planet:
       - date: '2810-01-01'
         population: 7944332903.0
       - date: '2820-08-02'
-        # administration: DC | Benjamin Military District | Proserpina Prefecture
-        # administration: DC | Benjamin Military District | Proserpina Prefecture
-        # administration: DC | Benjamin Military District | Proserpina Prefecture
-        # administration: DC | Benjamin Military District | Proserpina Prefecture
-        # administration: DC | Benjamin Military District | Proserpina Prefecture
-        # administration: DC | Benjamin Military District | Proserpina Prefecture
         faction:
           source: canon
           value:
@@ -320,18 +292,6 @@ planet:
         population: 7558671668.0
       - date: '2860-01-01'
         population: 7510503534.0
-      - date: '2864-01-01'
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FS
       - date: '2864-12-13'
         faction:
           source: canon
@@ -382,12 +342,6 @@ planet:
       - date: '3020-01-01'
         population: 6923611995.0
       - date: '3022-03-14'
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
         faction:
           source: canon
           value:
@@ -396,28 +350,10 @@ planet:
         population: 6938244368.0
       - date: '3037-01-01'
         socioIndustrial: C-C-F-C-D
-      - date: '3040-01-01'
-        # administration: FC | Draconis March | Robinson Operational Area
-        # administration: FC | Draconis March | Robinson Operational Area
-        # administration: FC | Draconis March | Robinson Operational Area
-        # administration: FC | Draconis March | Robinson Operational Area
-        # administration: FC | Draconis March | Robinson Operational Area
-        # administration: FC | Draconis March | Robinson Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FC
       - date: '3040-06-15'
         population: 7001670543.0
         socioIndustrial: B-B-F-B-D
       - date: '3040-01-19'
-        # administration: FC | Draconis March | Robinson Operational Area
-        # administration: FC | Draconis March | Robinson Operational Area
-        # administration: FC | Draconis March | Robinson Operational Area
-        # administration: FC | Draconis March | Robinson Operational Area
-        # administration: FC | Draconis March | Robinson Operational Area
-        # administration: FC | Draconis March | Robinson Operational Area
         faction:
           source: canon
           value:
@@ -428,25 +364,7 @@ planet:
         population: 7057202804.0
       - date: '3060-01-01'
         population: 7094705273.0
-      - date: '3067-01-01'
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FS
       - date: '3067-04-20'
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
         faction:
           source: canon
           value:
@@ -455,25 +373,7 @@ planet:
         population: 7145971488.0
       - date: '3080-01-01'
         population: 7201928012.0
-      - date: '3081-01-01'
-        # administration: ROS | Prefecture III
-        # administration: ROS | Prefecture III
-        # administration: ROS | Prefecture III
-        # administration: ROS | Prefecture III
-        # administration: ROS | Prefecture III
-        # administration: ROS | Prefecture III
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - ROS
       - date: '3081-03-18'
-        # administration: ROS | Prefecture III
-        # administration: ROS | Prefecture III
-        # administration: ROS | Prefecture III
-        # administration: ROS | Prefecture III
-        # administration: ROS | Prefecture III
-        # administration: ROS | Prefecture III
         faction:
           source: canon
           value:
@@ -492,24 +392,12 @@ planet:
         population: 7400508911.0
       - date: '3132-08-07'
         hpg: X
-      - date: '3135-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '3135-10-01'
         faction:
           source: canon
           value:
             - IND
       - date: '3140-05-27'
-        # administration: DC | Benjamin Military District | Proserpina Prefecture
-        # administration: DC | Benjamin Military District | Proserpina Prefecture
-        # administration: DC | Benjamin Military District | Proserpina Prefecture
-        # administration: DC | Benjamin Military District | Proserpina Prefecture
-        # administration: DC | Benjamin Military District | Proserpina Prefecture
-        # administration: DC | Benjamin Military District | Proserpina Prefecture
         faction:
           source: canon
           value:
@@ -518,22 +406,10 @@ planet:
       - date: '3145-01-01'
         population: 7471895906.0
       - date: '3151-01-01'
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
         faction:
           source: sucs
           value:
             - FS
-      - date: '3152-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - DC/FS
   - name: Eyre
     type: TERRESTRIAL
     orbitalDist: 0.98
@@ -541,7 +417,8 @@ planet:
     icon: barren18
     pressure: THIN
     atmosphere: TOXIC_POISON
-    composition: Carbon Dioxide and Nitrogen, plus trace amounts of Carbon Dioxide and Argon
+    composition: Carbon Dioxide and Nitrogen, plus trace amounts of Carbon Dioxide
+      and Argon
     gravity: 0.86
     diameter: 9500
     density: 6.3337

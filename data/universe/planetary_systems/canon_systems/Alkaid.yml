@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -20,10 +20,10 @@ sucsId: 74
 xcood: -94.096
 ycood: 47.002
 spectralType:
-  source: DA:RW
+  source: MWDA world profiles
   value: B1V
 primarySlot:
-  source: DA:RW
+  source: MWDA world profiles
   value: 2
 planet:
   - name: Messer's Den
@@ -56,31 +56,31 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 142.0
     sysPos:
-      source: DA:RW
+      source: MWDA world profiles
       value: 2
     icon: green39
     pressure:
-      source: DA:RW
+      source: MWDA world profiles
       value: STANDARD
     atmosphere:
-      source: DA:RW
+      source: MWDA world profiles
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: DA:RW
+      source: MWDA world profiles
       value: 1.17
     diameter: 16093
     density: 5.109205222591
     dayLength: 23
     yearLength: 1692.1
     temperature:
-      source: DA:RW
+      source: MWDA world profiles
       value: 43
     water:
-      source: DA:RW
+      source: MWDA world profiles
       value: 37
     lifeForm:
-      source: DA:RW
+      source: MWDA world profiles
       value: PLANT
     desc: |-
       3135 - Alkaid is a dry world, dominated by sun-cracked desert wastes between low plateaus and hills of eternally shifting sands. Only near the shorelines of Khalek, the large polar continent, and the nearby Hekker island chain, just south of Khalek, could life be considered comfortable. The twenty-fourth-century discovery of a host of commercially valuable chemicals and ores, just below its rocky, sandy surface led to the development of a chemical industry and a series of in-system buoys to guide traffic to and from the planet that helped bring about the first permanent settlements by the Federation of Skye.
@@ -90,17 +90,17 @@ planet:
       During the Jihad, Word of Blake forces entered the system via pirate points and seized control of the primary spaceports on Khalek. The Lyran defenders went to ground on Inahalia instead, waging a guerilla war until reinforcements arrived to relieve them.
     landmass:
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Inahalia
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Khalek
         capital:
-          source: DA:RW
+          source: MWDA world profiles
           value: Verstigrad
     satellite:
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Vishnu
         size: large
         icon: rock16
@@ -127,31 +127,13 @@ planet:
         population: 3369001.0
       - date: '2310-01-01'
         population: 8165223.0
-      - date: '2317-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '2320-01-01'
         population: 17431545.0
       - date: '2330-01-01'
         population: 33538470.0
       - date: '2340-01-01'
         population: 59235174.0
-      - date: '2341-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FoS
       - date: '2341-05-18'
-        # administration: LA | Federation of Skye
-        # administration: LA | Federation of Skye
-        # administration: LA | Federation of Skye
-        # administration: LA | Federation of Skye
-        # administration: LA | Federation of Skye
-        # administration: LA | Federation of Skye
         faction:
           source: canon
           value:
@@ -310,25 +292,8 @@ planet:
         population: 1420604023.0
         socioIndustrial: B-B-C-B-C
       - date: '3040-01-01'
-        # administration: FC | Skye March | Alcor Operational Area
-        # administration: FC | Skye March | Alcor Operational Area
-        # administration: FC | Skye March | Alcor Operational Area
-        # administration: FC | Skye March | Alcor Operational Area
-        # administration: FC | Skye March | Alcor Operational Area
-        # administration: FC | Skye March | Alcor Operational Area
         population: 1435598951.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FC
       - date: '3040-01-19'
-        # administration: FC | Skye March | Alcor Operational Area
-        # administration: FC | Skye March | Alcor Operational Area
-        # administration: FC | Skye March | Alcor Operational Area
-        # administration: FC | Skye March | Alcor Operational Area
-        # administration: FC | Skye March | Alcor Operational Area
-        # administration: FC | Skye March | Alcor Operational Area
         faction:
           source: canon
           value:
@@ -339,25 +304,7 @@ planet:
         socioIndustrial: A-B-C-A-C
       - date: '3050-01-01'
         population: 1452494103.0
-      - date: '3057-01-01'
-        # administration: LA | Skye March | Alcor Operational Area
-        # administration: LA | Skye March | Alcor Operational Area
-        # administration: LA | Skye March | Alcor Operational Area
-        # administration: LA | Skye March | Alcor Operational Area
-        # administration: LA | Skye March | Alcor Operational Area
-        # administration: LA | Skye March | Alcor Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LA
       - date: '3057-09-18'
-        # administration: LA | Skye Province
-        # administration: LA | Skye Province
-        # administration: LA | Skye Province
-        # administration: LA | Skye Province
-        # administration: LA | Skye Province
-        # administration: LA | Skye Province
         faction:
           source: canon
           value:
@@ -373,37 +320,13 @@ planet:
             - WOB
             - LA
       - date: '3070-12-01'
-        # administration: LA | Skye Province
-        # administration: LA | Skye Province
-        # administration: LA | Skye Province
-        # administration: LA | Skye Province
-        # administration: LA | Skye Province
-        # administration: LA | Skye Province
         faction:
           source: canon
           value:
             - LA
       - date: '3080-01-01'
         population: 1507092276.0
-      - date: '3081-01-01'
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - ROS
       - date: '3081-10-01'
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
         faction:
           source: canon
           value:
@@ -420,12 +343,6 @@ planet:
         population: 1613461949.0
       - date: '3130-01-01'
         population: 1642110245.0
-      - date: '3135-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CJF
       - date: '3135-06-21'
         faction:
           source: canon
@@ -435,12 +352,6 @@ planet:
         population: 1661934274.0
       - date: '3145-01-01'
         population: 1672604763.0
-      - date: '3152-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '3152-06-01'
         faction:
           source: sucs

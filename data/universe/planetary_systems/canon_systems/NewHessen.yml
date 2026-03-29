@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,16 +16,15 @@
 # affiliated with Microsoft.
 
 id: New Hessen
-sucsId: 1834
+sucsId: 1833
 xcood: 84.005
 ycood: -57.121
 spectralType:
   source: canon
   value: A9V
 primarySlot:
-  source: HLSB
+  source: House Liao, pg. 141
   value: 7
-  page: 141
 event:
   - date: '2381-10-13'
     nadirCharge: yes
@@ -138,9 +137,8 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 2.72
     sysPos:
-      source: HLSB
+      source: House Liao, pg. 141
       value: 7
-      page: 141
     icon: green26
     pressure:
       source: canon
@@ -161,9 +159,8 @@ planet:
       source: canon
       value: 60
     lifeForm:
-      source: HLSB
+      source: House Liao, pg. 141
       value: REPTILE
-      page: 141
     desc: |-
       New Hessen was founded as a private commercial holding of Albrecht von Hesse, a successful arms and munitions merchant. The von Hesse family converted it into a planet-wide "battlezone-for-rent-or-lease" providing neighbouring governments an arena for their military contests without the risking damage to their own land. The von Hesse family was able to establish the largest military-industrial complex in the Tikonov Union, second only to Tikonov itself, from the enormous profits of this venture.
 
@@ -242,12 +239,6 @@ planet:
       - date: '2360-01-01'
         population: 773212836.0
       - date: '2367-07-01'
-        # administration: CC | Tikonov Commonality | Region 4
-        # administration: CC | Tikonov Commonality | Region 4
-        # administration: CC | Tikonov Commonality | Region 4
-        # administration: CC | Tikonov Commonality | Region 4
-        # administration: CC | Tikonov Commonality | Region 4
-        # administration: CC | Tikonov Commonality | Region 4
         faction:
           source: canon
           value:
@@ -410,43 +401,15 @@ planet:
           value:
             - FS
       - date: '3030-01-01'
-        # administration: LA | Sarna March | Tikonov Operational Area
-        # administration: LA | Sarna March | Tikonov Operational Area
-        # administration: LA | Sarna March | Tikonov Operational Area
-        # administration: LA | Sarna March | Tikonov Operational Area
-        # administration: LA | Sarna March | Tikonov Operational Area
-        # administration: LA | Sarna March | Tikonov Operational Area
         population: 1968209358.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LA
       - date: '3030-02-28'
         faction:
           source: canon
           value:
             - LA
       - date: '3040-01-01'
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
         population: 1566555652.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FC
       - date: '3040-01-19'
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
         faction:
           source: canon
           value:
@@ -459,25 +422,7 @@ planet:
         population: 1214680997.0
       - date: '3060-01-01'
         population: 941843287.0
-      - date: '3067-01-01'
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FS
       - date: '3067-04-20'
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
         faction:
           source: canon
           value:
@@ -504,25 +449,7 @@ planet:
           value: X
       - date: '3140-01-01'
         population: 827262979.0
-      - date: '3145-01-01'
-        # administration: CC | Tikonov Commonality | Region 7
-        # administration: CC | Tikonov Commonality | Region 7
-        # administration: CC | Tikonov Commonality | Region 7
-        # administration: CC | Tikonov Commonality | Region 7
-        # administration: CC | Tikonov Commonality | Region 7
-        # administration: CC | Tikonov Commonality | Region 7
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CC
       - date: '3145-08-22'
-        # administration: CC | Tikonov Commonality | Region 11
-        # administration: CC | Tikonov Commonality | Region 11
-        # administration: CC | Tikonov Commonality | Region 11
-        # administration: CC | Tikonov Commonality | Region 11
-        # administration: CC | Tikonov Commonality | Region 11
-        # administration: CC | Tikonov Commonality | Region 11
         faction:
           source: canon
           value:

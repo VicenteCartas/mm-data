@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -20,13 +20,11 @@ sucsId: 715
 xcood: -75.224
 ycood: -25.895
 spectralType:
-  source: 'HB:HM'
+  source: 'Handbook: House Marik, pg. 75'
   value: F3V
-  page: 75
 primarySlot:
-  source: 'HB:HM'
+  source: 'Handbook: House Marik, pg. 75'
   value: 2
-  page: 75
 event:
   - date: '2404-03-17'
     zenithCharge: yes
@@ -60,85 +58,70 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 2.4
     sysPos:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 75'
       value: 2
-      page: 75
     icon: green2
     pressure:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 75'
       value: STANDARD
-      page: 75
     atmosphere:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 75'
       value: BREATHABLE
-      page: 75
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 75'
       value: 1.0
-      page: 75
     diameter: 12951
     density: 5.426502307261
     dayLength: 23
     yearLength: 3.9
     temperature:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 75'
       value: 40
-      page: 75
     water:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 75'
       value: 67
-      page: 75
     lifeForm:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 75'
       value: MAMMAL
-      page: 75
     desc: |-
       Dieudonne is a very hospitable world with a wide variety of unique flora and fauna with a myrid of medical applications as well as being edible. The planet also contains a wealth of mineral deposits which resulted in a large number of refineries and manufacturing centers. Unfortunately battles over the centuries between first the Hegemony, Commonwealth and League and later just the League and Commonwealth took its toll and much of the heavy industry on planet was destroyed after the fall of the Star League.
 
       The Free Worlds League finally established full control of the planet in the mid-29th Century and continued to use the planet as linchpin for their military activities in the region of space near Terra.
     landmass:
       - name:
-          source: 'HB:HM'
+          source: 'Handbook: House Marik, pg. 75'
           value: Normandy
-          page: 75
         capital:
-          source: 'HB:HM'
+          source: 'Handbook: House Marik, pg. 75'
           value: New Bastogne
-          page: 75
       - name:
-          source: 'HB:HM'
+          source: 'Handbook: House Marik, pg. 75'
           value: Vinci
-          page: 75
     satellite:
       - name:
-          source: 'HB:HM'
+          source: 'Handbook: House Marik, pg. 75'
           value: École
-          page: 75
         size: medium
         icon: rock14
       - name:
-          source: 'HB:HM'
+          source: 'Handbook: House Marik, pg. 75'
           value: Marie Theresa
-          page: 75
         size: medium
         icon: oddmoon3
       - name:
-          source: 'HB:HM'
+          source: 'Handbook: House Marik, pg. 75'
           value: Mary
-          page: 75
         size: medium
         icon: rock12
       - name:
-          source: 'HB:HM'
+          source: 'Handbook: House Marik, pg. 75'
           value: Runes
-          page: 75
         size: medium
         icon: oddmoon1
       - name:
-          source: 'HB:HM'
+          source: 'Handbook: House Marik, pg. 75'
           value: San Palo
-          page: 75
         size: large
         icon: rock15
     event:
@@ -175,12 +158,6 @@ planet:
           value:
             - FWL
         population: 88619830.0
-      - date: '2317-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '2320-01-01'
         population: 134623579.0
       - date: '2330-01-01'
@@ -191,12 +168,6 @@ planet:
         population: 352151178.0
       - date: '2360-01-01'
         population: 449197132.0
-      - date: '2366-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FWL
       - date: '2370-01-01'
         population: 558219276.0
       - date: '2380-01-01'
@@ -283,18 +254,6 @@ planet:
         population: 2656403126.0
       - date: '2760-01-01'
         population: 2685337682.0
-      - date: '2767-01-01'
-        # administration: AE | Tyrfing Province
-        # administration: AE | Tyrfing Province
-        # administration: AE | Tyrfing Province
-        # administration: AE | Tyrfing Province
-        # administration: AE | Tyrfing Province
-        # administration: AE | Tyrfing Province
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - AE
       - date: '2767-03-13'
         faction:
           source: canon
@@ -327,18 +286,6 @@ planet:
         population: 2632532102.0
       - date: '2860-01-01'
         population: 2653081700.0
-      - date: '2864-01-01'
-        # administration: LA | Federation of Skye | Rahneshire
-        # administration: LA | Federation of Skye | Rahneshire
-        # administration: LA | Federation of Skye | Rahneshire
-        # administration: LA | Federation of Skye | Rahneshire
-        # administration: LA | Federation of Skye | Rahneshire
-        # administration: LA | Federation of Skye | Rahneshire
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LA
       - date: '2864-06-08'
         faction:
           source: canon
@@ -402,24 +349,12 @@ planet:
         population: 2196681706.0
       - date: '3080-01-01'
         population: 2212997445.0
-      - date: '3081-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '3081-09-24'
         faction:
           source: canon
           value:
             - IND
       - date: '3082-06-25'
-        # administration: ROS | Prefecture VII
-        # administration: ROS | Prefecture VII
-        # administration: ROS | Prefecture VII
-        # administration: ROS | Prefecture VII
-        # administration: ROS | Prefecture VII
-        # administration: ROS | Prefecture VII
         faction:
           source: canon
           value:
@@ -440,12 +375,6 @@ planet:
         hpg:
           source: canon
           value: X
-      - date: '3135-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '3135-10-01'
         faction:
           source: canon
@@ -453,18 +382,6 @@ planet:
             - IND
       - date: '3140-01-01'
         population: 2296871332.0
-      - date: '3145-01-01'
-        # administration: FWL | Covenant Worlds
-        # administration: FWL | Covenant Worlds
-        # administration: FWL | Covenant Worlds
-        # administration: FWL | Covenant Worlds
-        # administration: FWL | Covenant Worlds
-        # administration: FWL | Covenant Worlds
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FWL
       - date: '3145-04-23'
         faction:
           source: canon
@@ -472,12 +389,6 @@ planet:
             - CvW
         population: 2311618449.0
       - date: '3151-01-01'
-        # administration: FWL | Covenant Worlds
-        # administration: FWL | Covenant Worlds
-        # administration: FWL | Covenant Worlds
-        # administration: FWL | Covenant Worlds
-        # administration: FWL | Covenant Worlds
-        # administration: FWL | Covenant Worlds
         faction:
           source: sucs
           value:

@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,17 +16,15 @@
 # affiliated with Microsoft.
 
 id: Hoard
-sucsId: 2948
+sucsId: 2947
 xcood: 39.368
 ycood: 1879.723
 spectralType:
-  source: WoK
+  source: Warriors of Kerensky, pg. 112
   value: A2V
-  page: 112
 primarySlot:
-  source: WoK
+  source: Warriors of Kerensky, pg. 112
   value: 2
-  page: 112
 event:
   - date: '2814-05-09'
     zenithCharge: yes
@@ -52,39 +50,32 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 7.0
     sysPos:
-      source: WoK
+      source: Warriors of Kerensky, pg. 112
       value: 2
-      page: 112
     icon: green29
     pressure:
-      source: WoK
+      source: Warriors of Kerensky, pg. 112
       value: STANDARD
-      page: 112
     atmosphere:
-      source: WoK
+      source: Warriors of Kerensky, pg. 112
       value: BREATHABLE
-      page: 112
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: WoK
+      source: Warriors of Kerensky, pg. 112
       value: 0.8
-      page: 112
     diameter: 11583
     density: 4.853665850582
     dayLength: 21
     yearLength: 18.6
     temperature:
-      source: WoK
+      source: Warriors of Kerensky, pg. 112
       value: 15
-      page: 112
     water:
-      source: WoK
+      source: Warriors of Kerensky, pg. 112
       value: 50
-      page: 112
     lifeForm:
-      source: WoK
+      source: Warriors of Kerensky, pg. 112
       value: PLANT
-      page: 112
     desc: No description available.
     smallMoons: 3
     landmass:
@@ -153,12 +144,6 @@ planet:
         population: 45932880.0
       - date: '3020-01-01'
         population: 45701256.0
-      - date: '3025-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CLAN
       - date: '3025-02-27'
         faction:
           source: canon
@@ -181,12 +166,6 @@ planet:
             - CHH
             - CW
         population: 45121315.0
-      - date: '3063-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CLAN
       - date: '3070-01-01'
         population: 45117152.0
       - date: '3072-04-01'
@@ -219,12 +198,6 @@ planet:
           value:
             - CSA
             - CHH
-      - date: '3075-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CLAN
       - date: '3075-06-01'
         faction:
           source: canon
@@ -232,25 +205,7 @@ planet:
             - CSA
             - CSL
             - CCC
-      - date: '3079-01-01'
-        # administration: CSA | National Capital
-        # administration: CSA | National Capital
-        # administration: CSA | National Capital
-        # administration: CSA | National Capital
-        # administration: CSA | National Capital
-        # administration: CSA | National Capital
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CSA
       - date: '3079-09-03'
-        # administration: CSA | National Capital
-        # administration: CSA | National Capital
-        # administration: CSA | National Capital
-        # administration: CSA | National Capital
-        # administration: CSA | National Capital
-        # administration: CSA | National Capital
         faction:
           source: canon
           value:

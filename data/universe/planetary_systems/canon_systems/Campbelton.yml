@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -90,7 +90,11 @@ planet:
     lifeForm:
       source: canon
       value: BIRD
-    desc: Campbelton is a very hot planet with limited natural resources and limited arable land. The population of Campbelton requires imported food to fully sustain itself. There is moderate industry on planet, including one military manufacturer, Fusigon Heavy Weaponry. Their plant on Campbelton creates lasers and PPCs for BattleMechs and combat vehicles.
+    desc: Campbelton is a very hot planet with limited natural resources and limited
+      arable land. The population of Campbelton requires imported food to fully sustain
+      itself. There is moderate industry on planet, including one military manufacturer,
+      Fusigon Heavy Weaponry. Their plant on Campbelton creates lasers and PPCs for
+      BattleMechs and combat vehicles.
     landmass:
       - name:
           source: canon
@@ -103,19 +107,7 @@ planet:
         size: medium
         icon: oddmoon2
     event:
-      - date: '2341-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '2341-07-22'
-        # administration: FWL | Marik Commonwealth
-        # administration: FWL | Marik Commonwealth
-        # administration: FWL | Marik Commonwealth
-        # administration: FWL | Marik Commonwealth
-        # administration: FWL | Marik Commonwealth
-        # administration: FWL | Marik Commonwealth
         faction:
           source: canon
           value:
@@ -285,12 +277,6 @@ planet:
         population: 1026698823.0
       - date: '3070-01-01'
         population: 1037328469.0
-      - date: '3079-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - MCM
       - date: '3079-09-12'
         faction:
           source: canon
@@ -298,18 +284,6 @@ planet:
             - MSC
       - date: '3080-01-01'
         population: 1054691839.0
-      - date: '3081-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - MCM
-      - date: '3085-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - MSC
       - date: '3090-01-01'
         population: 1074277807.0
       - date: '3091-01-01'
@@ -328,12 +302,6 @@ planet:
           value: X
       - date: '3140-01-01'
         population: 1176387884.0
-      - date: '3145-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CWE
       - date: '3145-07-13'
         faction:
           source: canon

@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,17 +16,15 @@
 # affiliated with Microsoft.
 
 id: Westerhand
-sucsId: 2748
+sucsId: 2747
 xcood: -5.436
 ycood: -276.084
 spectralType:
-  source: 'HB:HL'
+  source: 'Handbook: House Liao, pg. 80'
   value: G3V
-  page: 80
 primarySlot:
-  source: 'HB:HL'
+  source: 'Handbook: House Liao, pg. 80'
   value: 2
-  page: 80
 event:
   - date: '2367-04-02'
     zenithCharge: yes
@@ -61,39 +59,32 @@ planet:
     type: GIANT_TERRESTRIAL
     orbitalDist: 0.7
     sysPos:
-      source: 'HB:HL'
+      source: 'Handbook: House Liao, pg. 80'
       value: 2
-      page: 80
     icon: green1
     pressure:
-      source: 'HB:HL'
+      source: 'Handbook: House Liao, pg. 80'
       value: STANDARD
-      page: 80
     atmosphere:
-      source: 'HB:HL'
+      source: 'Handbook: House Liao, pg. 80'
       value: BREATHABLE
-      page: 80
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'HB:HL'
+      source: 'Handbook: House Liao, pg. 80'
       value: 0.93
-      page: 80
     diameter: 16419
     density: 3.980577570661
     dayLength: 17
     yearLength: 1.2
     temperature:
-      source: 'HB:HL'
+      source: 'Handbook: House Liao, pg. 80'
       value: 49
-      page: 80
     water:
-      source: 'HB:HL'
+      source: 'Handbook: House Liao, pg. 80'
       value: 66
-      page: 80
     lifeForm:
-      source: 'HB:HL'
+      source: 'Handbook: House Liao, pg. 80'
       value: MAMMAL
-      page: 80
     desc: |-
       Hotter and drier than the Game World itself, with nowhere near the universal renown, Westerhand has nonetheless remained a haven for various mercenary commands despite an increasingly competitive hiring market. Located in the Sian Commonality of the Capellan Confederation, just one jump shy of the Free Worlds League's Duchy of Andurien, this world first came into use as a mercenary recruitment center during the reign of Chancellor Maximilian Liao, though the original intent was not aimed at the mercenary profession at all, but rather at stimulating an entertainment industry similar to the Solaris Games.
 
@@ -104,34 +95,28 @@ planet:
       Presently, aside from the Games and the Hiring Hall, Westerhand does not feature training facilities, but a number of local and offworld agencies have expressed an interest in establishing either specialized, bare-bones martial colleges or even a full-scale military university catering to the mercenary profession. Furthermore, rumors have begun to circulate that the Westerhand Hiring Hall may seek MRBC sanction in order to improve its standing as a place for professional soldiers to do business.
     landmass:
       - name:
-          source: MS
+          source: Mercenaries Supplemental, pg. 14
           value: Garringer
-          page: 14
       - name:
-          source: MS
+          source: Mercenaries Supplemental, pg. 14
           value: Keystone
-          page: 14
         capital:
-          source: 'HB:HL'
+          source: 'Handbook: House Liao, pg. 80'
           value: Victory City
-          page: 80
     satellite:
       - name:
-          source: 'HB:HL'
+          source: 'Handbook: House Liao, pg. 80'
           value: Delsia
-          page: 80
         size: large
         icon: rock16
       - name:
-          source: 'HB:HL'
+          source: 'Handbook: House Liao, pg. 80'
           value: Ralston
-          page: 80
         size: medium
         icon: rock13
       - name:
-          source: 'HB:HL'
+          source: 'Handbook: House Liao, pg. 80'
           value: Vannora
-          page: 80
         size: large
         icon: rock9
     event:
@@ -168,12 +153,6 @@ planet:
         population: 35010406.0
       - date: '2270-01-01'
         population: 54614022.0
-      - date: '2271-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '2280-01-01'
         population: 80869384.0
       - date: '2290-01-01'
@@ -192,19 +171,7 @@ planet:
         population: 442826870.0
       - date: '2360-01-01'
         population: 504219996.0
-      - date: '2366-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - SiS
       - date: '2367-07-01'
-        # administration: CC | Sian Commonality | Region 3
-        # administration: CC | Sian Commonality | Region 3
-        # administration: CC | Sian Commonality | Region 3
-        # administration: CC | Sian Commonality | Region 3
-        # administration: CC | Sian Commonality | Region 3
-        # administration: CC | Sian Commonality | Region 3
         faction:
           source: canon
           value:
@@ -347,7 +314,7 @@ planet:
       - date: '3000-01-01'
         population: 987050454.0
         hiringHall:
-          source: MS
+          source: Merc Supplemental 1
           value: STANDARD
       - date: '3010-01-01'
         population: 982693551.0
@@ -372,12 +339,12 @@ planet:
       - date: '3070-01-01'
         population: 1033477372.0
         hiringHall:
-          source: MSU
+          source: Merc Supplemental Update (Date Approximate)
           value: NONE
       - date: '3080-01-01'
         population: 1045117381.0
         hiringHall:
-          source: FM:3085
+          source: FM 3085 (Date Approximate)
           value: STANDARD
       - date: '3090-11-07'
         population: 1062823669.0
@@ -398,12 +365,6 @@ planet:
         population: 1139659126.0
       - date: '3145-01-01'
         population: 1144684674.0
-      - date: '3152-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - DA
       - date: '3152-06-01'
         faction:
           source: canon

@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -20,10 +20,10 @@ sucsId: 92
 xcood: 84.52
 ycood: -49.416
 spectralType:
-  source: DA:RW
+  source: MWDA world profiles
   value: A3V
 primarySlot:
-  source: DA:RW
+  source: MWDA world profiles
   value: 3
 event:
   - date: '2370-11-11'
@@ -73,31 +73,31 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 6.72
     sysPos:
-      source: DA:RW
+      source: MWDA world profiles
       value: 3
     icon: green9
     pressure:
-      source: DA:RW
+      source: MWDA world profiles
       value: STANDARD
     atmosphere:
-      source: DA:RW
+      source: MWDA world profiles
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: DA:RW
+      source: MWDA world profiles
       value: 0.8
     diameter: 11853
     density: 4.743105548197
     dayLength: 22
     yearLength: 17.5
     temperature:
-      source: DA:RW
+      source: MWDA world profiles
       value: 30
     water:
-      source: DA:RW
+      source: MWDA world profiles
       value: 50
     lifeForm:
-      source: DA:RW
+      source: MWDA world profiles
       value: AMPHIBIAN
     desc: |-
       3135 - Colonists settled Alrescha in the early days of the Tikonov Union, when Tikonov‘s growing population forced the Union to establish a secondary source of food and textiles. Despite trace atmospheric chemicals in Alrescha‘s young atmosphere that require filtering masks, the planet‘s warm, wet climate, fertile soil, and proximity to Tikonov met the Union‘s needs.
@@ -111,20 +111,20 @@ planet:
       The continents of Alrescha are Kaltain, Okda, and Risku; the capital of Cord is located on Riksu.
     landmass:
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Kaltain
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Okda
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Risku
         capital:
-          source: DA:RW
+          source: MWDA world profiles
           value: Cord
     satellite:
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Piscium
         size: medium
         icon: rock5
@@ -161,12 +161,6 @@ planet:
       - date: '2360-01-01'
         population: 165692585.0
       - date: '2367-07-01'
-        # administration: CC | Tikonov Commonality | Region 4
-        # administration: CC | Tikonov Commonality | Region 4
-        # administration: CC | Tikonov Commonality | Region 4
-        # administration: CC | Tikonov Commonality | Region 4
-        # administration: CC | Tikonov Commonality | Region 4
-        # administration: CC | Tikonov Commonality | Region 4
         faction:
           source: canon
           value:
@@ -316,18 +310,6 @@ planet:
         population: 1157345888.0
       - date: '3029-01-01'
         socioIndustrial: C-C-C-B-C
-      - date: '3030-01-01'
-        # administration: LA | Sarna March | Tikonov Operational Area
-        # administration: LA | Sarna March | Tikonov Operational Area
-        # administration: LA | Sarna March | Tikonov Operational Area
-        # administration: LA | Sarna March | Tikonov Operational Area
-        # administration: LA | Sarna March | Tikonov Operational Area
-        # administration: LA | Sarna March | Tikonov Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LA
       - date: '3030-09-20'
         faction:
           source: canon
@@ -335,25 +317,8 @@ planet:
             - FS
         population: 1161423730.0
       - date: '3040-01-01'
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
         population: 1171103663.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FC
       - date: '3040-01-19'
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
         faction:
           source: canon
           value:
@@ -364,25 +329,7 @@ planet:
         population: 1177444728.0
       - date: '3060-01-01'
         population: 1185952923.0
-      - date: '3067-01-01'
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FS
       - date: '3067-04-20'
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
         faction:
           source: canon
           value:
@@ -391,25 +338,7 @@ planet:
         population: 1196196101.0
       - date: '3080-01-01'
         population: 1215003073.0
-      - date: '3081-01-01'
-        # administration: ROS | Prefecture IV
-        # administration: ROS | Prefecture IV
-        # administration: ROS | Prefecture IV
-        # administration: ROS | Prefecture IV
-        # administration: ROS | Prefecture IV
-        # administration: ROS | Prefecture IV
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - ROS
       - date: '3081-12-30'
-        # administration: ROS | Prefecture IV
-        # administration: ROS | Prefecture IV
-        # administration: ROS | Prefecture IV
-        # administration: ROS | Prefecture IV
-        # administration: ROS | Prefecture IV
-        # administration: ROS | Prefecture IV
         faction:
           source: canon
           value:
@@ -426,18 +355,6 @@ planet:
         population: 1269149011.0
       - date: '3130-01-01'
         population: 1283443379.0
-      - date: '3135-01-01'
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FS
       - date: '3135-07-02'
         faction:
           source: canon
@@ -445,25 +362,7 @@ planet:
             - FS
       - date: '3140-01-01'
         population: 1298158350.0
-      - date: '3145-01-01'
-        # administration: CC | Tikonov Commonality | Region 7
-        # administration: CC | Tikonov Commonality | Region 7
-        # administration: CC | Tikonov Commonality | Region 7
-        # administration: CC | Tikonov Commonality | Region 7
-        # administration: CC | Tikonov Commonality | Region 7
-        # administration: CC | Tikonov Commonality | Region 7
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CC
       - date: '3145-02-14'
-        # administration: CC | Tikonov Commonality | Region 11
-        # administration: CC | Tikonov Commonality | Region 11
-        # administration: CC | Tikonov Commonality | Region 11
-        # administration: CC | Tikonov Commonality | Region 11
-        # administration: CC | Tikonov Commonality | Region 11
-        # administration: CC | Tikonov Commonality | Region 11
         faction:
           source: canon
           value:

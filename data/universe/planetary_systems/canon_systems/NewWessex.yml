@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: New Wessex
-sucsId: 1860
+sucsId: 1859
 xcood: -12.415
 ycood: 113.43
 spectralType:
-  source: DA:RW
+  source: MWDA world profiles
   value: K2IV
 primarySlot:
-  source: DA:RW
+  source: MWDA world profiles
   value: 3
 event:
   - date: '2401-06-14'
@@ -78,31 +78,31 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.7
     sysPos:
-      source: DA:RW
+      source: MWDA world profiles
       value: 3
     icon: green49
     pressure:
-      source: DA:RW
+      source: MWDA world profiles
       value: STANDARD
     atmosphere:
-      source: DA:RW
+      source: MWDA world profiles
       value: TAINTED_POISON
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: DA:RW
+      source: MWDA world profiles
       value: 1.15
     diameter: 13035
     density: 6.200103193248
     dayLength: 20
     yearLength: 1.0
     temperature:
-      source: DA:RW
+      source: MWDA world profiles
       value: 23
     water:
-      source: DA:RW
+      source: MWDA world profiles
       value: 54
     lifeForm:
-      source: DA:RW
+      source: MWDA world profiles
       value: BIRD
     desc: |-
       Lacking major resources, save a few common industrial metals and modest agricultural produce, New Wessex would likely have been spared the worst of the Age of War and the Succession Wars if it were not for its location on the border near the Lyran Commonwealth. In the First War, Lyran troops attempting to seize the planet launched a blitzkrieg spearheaded by a small fleet of light WarShips. Intending to launch a barrage at the major cities, in hopes of eliminating all opposition outright, the Lyran fleet was instead surprised by the arrival of a Combine naval force to intercept them. In the orbital battle that followed, one Lyran battleship, crippled by a devastating broadside attack, spun into the planet‘s atmosphere, where its fusion reactors lost containment and exploded before the safeguards could engage, spilling toxic levels of radiation into the sky and raining flaming debris across the western coastline of Jarichosia, New Wessex‘s northernmost continent. Though no Lyran forces landed on New Wessex that day, the aftermath of the assault was profound, and even today incidence of lung and skin cancer on this planet remain higher than the local average.
@@ -112,33 +112,27 @@ planet:
       New Wessex is sparsely inhabited, with most of the population living in towns and cities scattered on the coastlines of the Lancombe, Jarichosia, and Toridine continents, while the south polar continent of Thelios, covered completely by a glacial ice shelf that touches the southern reaches of Lancombe, has yet to be fully explored.
     landmass:
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Jarichosia
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Lancombe
         capital:
-          source: DA:RW
+          source: MWDA world profiles
           value: Hallanan
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Thelios
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Toridine
     satellite:
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Juniper
         size: medium
         icon: oddmoon3
     event:
-      - date: '2319-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '2319-06-19'
         faction:
           source: canon
@@ -160,12 +154,6 @@ planet:
         population: 2388628.0
       - date: '2360-01-01'
         population: 5943266.0
-      - date: '2366-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '2370-01-01'
         population: 12939266.0
       - date: '2375-01-01'
@@ -210,18 +198,6 @@ planet:
         population: 782061793.0
       - date: '2570-01-01'
         population: 808833133.0
-      - date: '2571-01-01'
-        # administration: LA | Federation of Skye | Kannon Shire
-        # administration: LA | Federation of Skye | Kannon Shire
-        # administration: LA | Federation of Skye | Kannon Shire
-        # administration: LA | Federation of Skye | Kannon Shire
-        # administration: LA | Federation of Skye | Kannon Shire
-        # administration: LA | Federation of Skye | Kannon Shire
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LA
       - date: '2580-01-01'
         population: 837144273.0
       - date: '2590-01-01'
@@ -276,12 +252,6 @@ planet:
       - date: '2810-01-01'
         population: 1056319731.0
       - date: '2820-12-11'
-        # administration: DC | Dieron Military District | Kuzuu Prefecture
-        # administration: DC | Dieron Military District | Kuzuu Prefecture
-        # administration: DC | Dieron Military District | Kuzuu Prefecture
-        # administration: DC | Dieron Military District | Kuzuu Prefecture
-        # administration: DC | Dieron Military District | Kuzuu Prefecture
-        # administration: DC | Dieron Military District | Kuzuu Prefecture
         faction:
           source: canon
           value:
@@ -297,18 +267,6 @@ planet:
         population: 1048661281.0
       - date: '2860-01-01'
         population: 1052483540.0
-      - date: '2864-01-01'
-        # administration: LA | Federation of Skye | Kannon Shire
-        # administration: LA | Federation of Skye | Kannon Shire
-        # administration: LA | Federation of Skye | Kannon Shire
-        # administration: LA | Federation of Skye | Kannon Shire
-        # administration: LA | Federation of Skye | Kannon Shire
-        # administration: LA | Federation of Skye | Kannon Shire
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LA
       - date: '2864-06-21'
         faction:
           source: canon
@@ -329,12 +287,6 @@ planet:
       - date: '2920-01-01'
         population: 1063242561.0
       - date: '2930-05-05'
-        # administration: DC | Dieron Military District | Vega Prefecture
-        # administration: DC | Dieron Military District | Vega Prefecture
-        # administration: DC | Dieron Military District | Vega Prefecture
-        # administration: DC | Dieron Military District | Vega Prefecture
-        # administration: DC | Dieron Military District | Vega Prefecture
-        # administration: DC | Dieron Military District | Vega Prefecture
         faction:
           source: canon
           value:
@@ -373,25 +325,7 @@ planet:
         population: 993696783.0
       - date: '3080-01-01'
         population: 995287970.0
-      - date: '3081-01-01'
-        # administration: ROS | Prefecture I
-        # administration: ROS | Prefecture I
-        # administration: ROS | Prefecture I
-        # administration: ROS | Prefecture I
-        # administration: ROS | Prefecture I
-        # administration: ROS | Prefecture I
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - ROS
       - date: '3081-12-18'
-        # administration: ROS | Prefecture I
-        # administration: ROS | Prefecture I
-        # administration: ROS | Prefecture I
-        # administration: ROS | Prefecture I
-        # administration: ROS | Prefecture I
-        # administration: ROS | Prefecture I
         faction:
           source: canon
           value:
@@ -409,12 +343,6 @@ planet:
         population: 1013568056.0
       - date: '3132-08-07'
         hpg: X
-      - date: '3135-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '3135-10-01'
         faction:
           source: canon
@@ -422,25 +350,7 @@ planet:
             - IND
       - date: '3140-01-01'
         population: 1019871699.0
-      - date: '3145-01-01'
-        # administration: RD | Region 3 | Vega Protectorate
-        # administration: RD | Region 3 | Vega Protectorate
-        # administration: RD | Region 3 | Vega Protectorate
-        # administration: RD | Region 3 | Vega Protectorate
-        # administration: RD | Region 3 | Vega Protectorate
-        # administration: RD | Region 3 | Vega Protectorate
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - RD
       - date: '3145-03-02'
-        # administration: RD | Region 3 | Vega Protectorate
-        # administration: RD | Region 3 | Vega Protectorate
-        # administration: RD | Region 3 | Vega Protectorate
-        # administration: RD | Region 3 | Vega Protectorate
-        # administration: RD | Region 3 | Vega Protectorate
-        # administration: RD | Region 3 | Vega Protectorate
         faction:
           source: canon
           value:

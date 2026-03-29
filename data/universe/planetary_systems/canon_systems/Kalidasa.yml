@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,17 +16,15 @@
 # affiliated with Microsoft.
 
 id: Kalidasa
-sucsId: 1284
+sucsId: 1283
 xcood: -105.763
 ycood: -23.051
 spectralType:
-  source: 'HB:HM'
+  source: 'Handbook: House Marik, pg. 72'
   value: G1Ia
-  page: 72
 primarySlot:
-  source: 'HB:HM'
+  source: 'Handbook: House Marik, pg. 72'
   value: 4
-  page: 72
 event:
   - date: '2356-01-30'
     nadirCharge: yes
@@ -83,39 +81,32 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 1.6
     sysPos:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 72'
       value: 4
-      page: 72
     icon: green11
     pressure:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 72'
       value: THIN
-      page: 72
     atmosphere:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 72'
       value: BREATHABLE
-      page: 72
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 72'
       value: 1.1
-      page: 72
     diameter: 14251
     density: 5.424433383045
     dayLength: 21
     yearLength: 2.3
     temperature:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 72'
       value: 56
-      page: 72
     water:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 72'
       value: 67
-      page: 72
     lifeForm:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 72'
       value: PLANT
-      page: 72
     desc: |-
       Located on the border of the Free Worlds League and Lyran Commonwealth and the site of vital manufacturing centers and a large military base, Kalidasa has been a site of countless battles between the Commonwealth and League over its history. During the 31st Century the planet was established as a trade center between the Free Worlds League and Lyran Commonwealth which resulted in a reduction of military action on Kalidasa and allowed the planet to flourish.
 
@@ -128,32 +119,26 @@ planet:
       Quikscell Company
     landmass:
       - name:
-          source: 'HB:HM'
+          source: 'Handbook: House Marik, pg. 72'
           value: Kaleen
-          page: 72
       - name:
-          source: 'HB:HM'
+          source: 'Handbook: House Marik, pg. 72'
           value: Kalmia
-          page: 72
         capital:
-          source: 'HB:HM'
+          source: 'Handbook: House Marik, pg. 72'
           value: Sakuntalem
-          page: 72
       - name:
-          source: 'HB:HM'
+          source: 'Handbook: House Marik, pg. 72'
           value: Kumar
-          page: 72
     satellite:
       - name:
-          source: 'HB:HM'
+          source: 'Handbook: House Marik, pg. 72'
           value: Carbons
-          page: 72
         size: giant
         icon: rock6
       - name:
-          source: 'HB:HM'
+          source: 'Handbook: House Marik, pg. 72'
           value: Deons
-          page: 72
         size: medium
         icon: rock11
     event:
@@ -185,12 +170,6 @@ planet:
       - date: '2350-01-01'
         population: 148511594.0
       - date: '2355-11-03'
-        # administration: LA | Federation of Skye
-        # administration: LA | Federation of Skye
-        # administration: LA | Federation of Skye
-        # administration: LA | Federation of Skye
-        # administration: LA | Federation of Skye
-        # administration: LA | Federation of Skye
         faction:
           source: canon
           value:
@@ -311,25 +290,7 @@ planet:
         population: 2568730248.0
       - date: '2820-01-01'
         population: 2558976714.0
-      - date: '2821-01-01'
-        # administration: LA | Federation of Skye | Rahneshire
-        # administration: LA | Federation of Skye | Rahneshire
-        # administration: LA | Federation of Skye | Rahneshire
-        # administration: LA | Federation of Skye | Rahneshire
-        # administration: LA | Federation of Skye | Rahneshire
-        # administration: LA | Federation of Skye | Rahneshire
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LA
       - date: '2821-07-12'
-        # administration: LA | Federation of Skye | Rahneshire
-        # administration: LA | Federation of Skye | Rahneshire
-        # administration: LA | Federation of Skye | Rahneshire
-        # administration: LA | Federation of Skye | Rahneshire
-        # administration: LA | Federation of Skye | Rahneshire
-        # administration: LA | Federation of Skye | Rahneshire
         faction:
           source: canon
           value:
@@ -372,12 +333,6 @@ planet:
       - date: '2990-01-01'
         population: 2437322742.0
       - date: '2997-04-07'
-        # administration: FWL | Silver Hawks Coalition
-        # administration: FWL | Silver Hawks Coalition
-        # administration: FWL | Silver Hawks Coalition
-        # administration: FWL | Silver Hawks Coalition
-        # administration: FWL | Silver Hawks Coalition
-        # administration: FWL | Silver Hawks Coalition
         faction:
           source: canon
           value:
@@ -429,25 +384,7 @@ planet:
             - MCM
       - date: '3080-01-01'
         population: 2561156467.0
-      - date: '3081-01-01'
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - ROS
       - date: '3081-03-25'
-        # administration: ROS | Prefecture VII
-        # administration: ROS | Prefecture VII
-        # administration: ROS | Prefecture VII
-        # administration: ROS | Prefecture VII
-        # administration: ROS | Prefecture VII
-        # administration: ROS | Prefecture VII
         faction:
           source: canon
           value:
@@ -464,12 +401,6 @@ planet:
         population: 2670481789.0
       - date: '3130-01-01'
         population: 2686015588.0
-      - date: '3135-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '3135-10-01'
         faction:
           source: canon
@@ -482,12 +413,6 @@ planet:
             - PC
       - date: '3140-01-01'
         population: 2708673148.0
-      - date: '3145-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CWE
       - date: '3145-09-05'
         faction:
           source: canon
@@ -495,12 +420,6 @@ planet:
             - CWE
         population: 2732068191.0
       - date: '3152-01-01'
-        # administration: FWL | Covenant Worlds
-        # administration: FWL | Covenant Worlds
-        # administration: FWL | Covenant Worlds
-        # administration: FWL | Covenant Worlds
-        # administration: FWL | Covenant Worlds
-        # administration: FWL | Covenant Worlds
         faction:
           source: sucs
           value:

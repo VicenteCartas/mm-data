@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -20,13 +20,11 @@ sucsId: 338
 xcood: -156.905
 ycood: 364.43
 spectralType:
-  source: M&M
+  source: Masters and Minions, pg. 134
   value: G3V
-  page: 134
 primarySlot:
-  source: M&M
+  source: Masters and Minions, pg. 134
   value: 3
-  page: 134
 event:
   - date: '2723-02-14'
     zenithCharge: yes
@@ -68,78 +66,67 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 1.0
     sysPos:
-      source: M&M
+      source: Masters and Minions, pg. 134
       value: 3
-      page: 134
     icon: green40
     pressure:
-      source: M&M
+      source: Masters and Minions, pg. 134
       value: STANDARD
-      page: 134
     atmosphere:
-      source: M&M
+      source: Masters and Minions, pg. 134
       value: BREATHABLE
-      page: 134
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: M&M
+      source: Masters and Minions, pg. 134
       value: 0.97
-      page: 134
     diameter: 11847
     density: 5.754198682627
     dayLength: 20
     yearLength: 1.4
     temperature:
-      source: M&M
+      source: Masters and Minions, pg. 134
       value: 49
-      page: 134
     water:
-      source: M&M
+      source: Masters and Minions, pg. 134
       value: 31
-      page: 134
     lifeForm:
-      source: M&M
+      source: Masters and Minions, pg. 134
       value: REPTILE
-      page: 134
-    desc: Blackjack is mostly an arid/desert world. A tropical zone exists in the northern hemisphere that is almost entirely encircled by the Blackjack Ocean. Valuable mineral deposits and other resources are limited but easily accessible. Many of the planet’s heavy industries have been targets of raids by the Draconis Combine and Periphery bandits. Lott’s Revenge, the capital city, is located along the coast of the northern region. Blackjack’s population is largely made up of settlers of English and French descent. Blackjack is home to the Blackjack School of Conflict, a privately run MechWarrior Academy (later destroyed by the Clans).
+    desc: Blackjack is mostly an arid/desert world. A tropical zone exists in the
+      northern hemisphere that is almost entirely encircled by the Blackjack Ocean.
+      Valuable mineral deposits and other resources are limited but easily accessible.
+      Many of the planet’s heavy industries have been targets of raids by the Draconis
+      Combine and Periphery bandits. Lott’s Revenge, the capital city, is located
+      along the coast of the northern region. Blackjack’s population is largely made
+      up of settlers of English and French descent. Blackjack is home to the Blackjack
+      School of Conflict, a privately run MechWarrior Academy (later destroyed by
+      the Clans).
     landmass:
       - name:
-          source: M&M
+          source: Masters and Minions, pg. 134
           value: Diamond
-          page: 134
         capital:
-          source: M&M
+          source: Masters and Minions, pg. 134
           value: Lott's Revenge
-          page: 134
       - name:
-          source: M&M
+          source: Masters and Minions, pg. 134
           value: Orbule
-          page: 134
       - name:
-          source: M&M
+          source: Masters and Minions, pg. 134
           value: Vada
-          page: 134
     satellite:
       - name:
-          source: M&M
+          source: Masters and Minions, pg. 134
           value: Club
-          page: 134
         size: medium
         icon: oddmoon1
       - name:
-          source: M&M
+          source: Masters and Minions, pg. 134
           value: Spade
-          page: 134
         size: medium
         icon: rock12
     event:
       - date: '2534-10-28'
-        # administration: LA | Protectorate of Donegal | Coventry Province
-        # administration: LA | Protectorate of Donegal | Coventry Province
-        # administration: LA | Protectorate of Donegal | Coventry Province
-        # administration: LA | Protectorate of Donegal | Coventry Province
-        # administration: LA | Protectorate of Donegal | Coventry Province
-        # administration: LA | Protectorate of Donegal | Coventry Province
         faction:
           source: canon
           value:
@@ -259,25 +246,8 @@ planet:
       - date: '3030-01-01'
         population: 1060293053.0
       - date: '3040-01-01'
-        # administration: FC | Tamar March | Blackjack Operational Area
-        # administration: FC | Tamar March | Blackjack Operational Area
-        # administration: FC | Tamar March | Blackjack Operational Area
-        # administration: FC | Tamar March | Blackjack Operational Area
-        # administration: FC | Tamar March | Blackjack Operational Area
-        # administration: FC | Tamar March | Blackjack Operational Area
         population: 1068595677.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FC
       - date: '3040-01-19'
-        # administration: FC | Tamar March | Blackjack Operational Area
-        # administration: FC | Tamar March | Blackjack Operational Area
-        # administration: FC | Tamar March | Blackjack Operational Area
-        # administration: FC | Tamar March | Blackjack Operational Area
-        # administration: FC | Tamar March | Blackjack Operational Area
-        # administration: FC | Tamar March | Blackjack Operational Area
         faction:
           source: canon
           value:
@@ -310,25 +280,7 @@ planet:
           source: canon
           value:
             - CJF
-      - date: '3067-01-01'
-        # administration: LA | Coventry Province | Melissia Theater
-        # administration: LA | Coventry Province | Melissia Theater
-        # administration: LA | Coventry Province | Melissia Theater
-        # administration: LA | Coventry Province | Melissia Theater
-        # administration: LA | Coventry Province | Melissia Theater
-        # administration: LA | Coventry Province | Melissia Theater
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LA
       - date: '3067-09-09'
-        # administration: LA | Coventry Province | Melissia Theater
-        # administration: LA | Coventry Province | Melissia Theater
-        # administration: LA | Coventry Province | Melissia Theater
-        # administration: LA | Coventry Province | Melissia Theater
-        # administration: LA | Coventry Province | Melissia Theater
-        # administration: LA | Coventry Province | Melissia Theater
         faction:
           source: canon
           value:
@@ -365,12 +317,6 @@ planet:
         population: 1168879193.0
       - date: '3145-01-01'
         population: 1170048657.0
-      - date: '3151-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - AML
       - date: '3151-12-31'
         faction:
           source: canon

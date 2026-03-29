@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,17 +16,15 @@
 # affiliated with Microsoft.
 
 id: Regulus
-sucsId: 2130
+sucsId: 2129
 xcood: -152.066
 ycood: -180.024
 spectralType:
-  source: M&M
+  source: Masters and Minions, pg. 78
   value: K6III
-  page: 78
 primarySlot:
-  source: M&M
+  source: Masters and Minions, pg. 78
   value: 4
-  page: 78
 event:
   - date: '2362-04-29'
     nadirCharge: yes
@@ -40,7 +38,8 @@ planet:
     icon: rock1
     pressure: TRACE
     atmosphere: TOXIC_POISON
-    composition: Nitrogen and Carbon Dioxide, plus trace amounts of Water Vapor and Phosphine
+    composition: Nitrogen and Carbon Dioxide, plus trace amounts of Water Vapor and
+      Phosphine
     gravity: 0.79
     diameter: 9500
     density: 5.8437
@@ -101,39 +100,32 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.6
     sysPos:
-      source: M&M
+      source: Masters and Minions, pg. 78
       value: 4
-      page: 78
     icon: green39
     pressure:
-      source: M&M
+      source: Masters and Minions, pg. 78
       value: STANDARD
-      page: 78
     atmosphere:
-      source: M&M
+      source: Masters and Minions, pg. 78
       value: BREATHABLE
-      page: 78
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: M&M
+      source: Masters and Minions, pg. 78
       value: 0.95
-      page: 78
     diameter: 11576
     density: 5.767147289372
     dayLength: 19
     yearLength: 0.9
     temperature:
-      source: M&M
+      source: Masters and Minions, pg. 78
       value: 45
-      page: 78
     water:
-      source: M&M
+      source: Masters and Minions, pg. 78
       value: 53
-      page: 78
     lifeForm:
-      source: M&M
+      source: Masters and Minions, pg. 78
       value: REPTILE
-      page: 78
     desc: |-
       Regulus originally belonged to the Selaj family, until their attempts to kill off the entire Marik line resulted in the Selaj family’s fall from power and expulsion from the Free Worlds League. While the Selaj are gone, their influence remains in the Indian styled architecture that dominates most of the cities on Regulus. Even with the seditious Selaj family removed, Regulus, as the capital of the Principality of Regulus has long been a thorn in the side of the Free Worlds League and the leading Mariks. Regulus is content to enjoy the benefits of being part of the League but is often unwilling or slow to respond to calls for support from the rest of the League.
 
@@ -143,32 +135,22 @@ planet:
       Magna Metals Incorporated
     landmass:
       - name:
-          source: M&M
+          source: Masters and Minions, pg. 78
           value: Tabar
-          page: 78
       - name:
-          source: M&M
+          source: Masters and Minions, pg. 78
           value: Tinnin
-          page: 78
         capital:
-          source: 'HB:HM'
+          source: 'Handbook: House Marik, pg. 62'
           value: Regulus City
-          page: 62
     satellite:
       - name:
-          source: M&M
+          source: Masters and Minions, pg. 78
           value: Zamzama
-          page: 78
         size: medium
         icon: oddmoon3
     event:
       - date: '2247-06-25'
-        # administration: PR | National Capital
-        # administration: PR | National Capital
-        # administration: PR | National Capital
-        # administration: PR | National Capital
-        # administration: PR | National Capital
-        # administration: PR | National Capital
         faction:
           source: canon
           value:
@@ -182,12 +164,6 @@ planet:
       - date: '2270-01-01'
         population: 1229467.0
       - date: '2271-06-01'
-        # administration: FWL | Principality of Regulus | District Capital
-        # administration: FWL | Principality of Regulus | District Capital
-        # administration: FWL | Principality of Regulus | District Capital
-        # administration: FWL | Principality of Regulus | District Capital
-        # administration: FWL | Principality of Regulus | District Capital
-        # administration: FWL | Principality of Regulus | District Capital
         faction:
           source: canon
           value:
@@ -381,12 +357,6 @@ planet:
       - date: '3070-01-01'
         population: 3192390549.0
       - date: '3078-05-01'
-        # administration: PR | National Capital
-        # administration: PR | National Capital
-        # administration: PR | National Capital
-        # administration: PR | National Capital
-        # administration: PR | National Capital
-        # administration: PR | National Capital
         faction:
           source: canon
           value:
@@ -398,12 +368,6 @@ planet:
       - date: '3080-01-01'
         population: 3104357547.0
       - date: '3086-02-01'
-        # administration: RF | National Capital
-        # administration: RF | National Capital
-        # administration: RF | National Capital
-        # administration: RF | National Capital
-        # administration: RF | National Capital
-        # administration: RF | National Capital
         faction:
           source: canon
           value:
@@ -434,12 +398,6 @@ planet:
           value:
             - FWL
       - date: '3151-01-01'
-        # administration: FWL | Regulan Fiefs | District Capital
-        # administration: FWL | Regulan Fiefs | District Capital
-        # administration: FWL | Regulan Fiefs | District Capital
-        # administration: FWL | Regulan Fiefs | District Capital
-        # administration: FWL | Regulan Fiefs | District Capital
-        # administration: FWL | Regulan Fiefs | District Capital
         faction:
           source: sucs
           value:

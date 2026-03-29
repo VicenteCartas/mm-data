@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Gitarama
-sucsId: 960
+sucsId: 959
 xcood: 676.503
 ycood: 263.403
 spectralType: F0V
@@ -88,12 +88,6 @@ planet:
         icon: rock3
     event:
       - date: '2622-02-14'
-        # administration: OA | Traders Domain
-        # administration: OA | Traders Domain
-        # administration: OA | Traders Domain
-        # administration: OA | Traders Domain
-        # administration: OA | Traders Domain
-        # administration: OA | Traders Domain
         faction:
           source: canon
           value:
@@ -156,12 +150,6 @@ planet:
         socioIndustrial: F-F-B-D-F
       - date: '2860-01-01'
         population: 31067.0
-      - date: '2864-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - ABN
       - date: '2864-11-12'
         faction:
           source: canon
@@ -231,7 +219,8 @@ planet:
     icon: frozen42
     pressure: VERY_HIGH
     atmosphere: TOXIC_POISON
-    composition: Nitrogen and Carbon Dioxide, plus trace amounts of Carbon Dioxide and Argon
+    composition: Nitrogen and Carbon Dioxide, plus trace amounts of Carbon Dioxide
+      and Argon
     gravity: 0.86
     diameter: 9500
     density: 6.3337

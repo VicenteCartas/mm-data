@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,13 +16,12 @@
 # affiliated with Microsoft.
 
 id: Erod's Escape
-sucsId: 2900
+sucsId: 2899
 xcood: 483.634
 ycood: -501.888
 spectralType:
-  source: 'HB:MPS'
+  source: 'Handbook: Major Periphery States, pg. 130'
   value: G0V
-  page: 130
 primarySlot: 5
 planet:
   - name: 8OI-1
@@ -126,61 +125,54 @@ planet:
     sysPos: 5
     icon: green17
     pressure:
-      source: 'HB:MPS'
+      source: 'Handbook: Major Periphery States, pg. 130'
       value: STANDARD
-      page: 130
     atmosphere:
-      source: 'HB:MPS'
+      source: 'Handbook: Major Periphery States, pg. 130'
       value: BREATHABLE
-      page: 130
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'HB:MPS'
+      source: 'Handbook: Major Periphery States, pg. 130'
       value: 1.1
-      page: 130
     diameter: 13743
     density: 5.624778163398
     dayLength: 24
     yearLength: 1.6
     temperature:
-      source: 'HB:MPS'
+      source: 'Handbook: Major Periphery States, pg. 130'
       value: 43
-      page: 130
     water:
-      source: 'HB:MPS'
+      source: 'Handbook: Major Periphery States, pg. 130'
       value: 68
-      page: 130
     lifeForm:
-      source: 'HB:MPS'
+      source: 'Handbook: Major Periphery States, pg. 130'
       value: BIRD
-      page: 130
-    desc: For most of its history Erod’s Escape has been a quiet backwater covered in jungles and arable lands. With the formation of the Calderon Protectorate in the mid 3060s, Erod’s Escape was thrust into the limelight as the de facto capital. This resulted in the expansion of the planetary capital Shangri-La expanding rapidly.
+    desc: For most of its history Erod’s Escape has been a quiet backwater covered
+      in jungles and arable lands. With the formation of the Calderon Protectorate
+      in the mid 3060s, Erod’s Escape was thrust into the limelight as the de facto
+      capital. This resulted in the expansion of the planetary capital Shangri-La
+      expanding rapidly.
     landmass:
       - name:
-          source: M&M
+          source: Masters and Minions, pg. 191
           value: Elysium
-          page: 191
         capital:
-          source: 'HB:MPS'
+          source: 'Handbook: Major Periphery States, pg. 130'
           value: Shangri-La
-          page: 130
     satellite:
       - name:
-          source: 'HB:MPS'
+          source: 'Handbook: Major Periphery States, pg. 130'
           value: Kauai
-          page: 130
         size: large
         icon: rock7
       - name:
-          source: 'HB:MPS'
+          source: 'Handbook: Major Periphery States, pg. 130'
           value: Maui
-          page: 130
         size: giant
         icon: rock12
       - name:
-          source: 'HB:MPS'
+          source: 'Handbook: Major Periphery States, pg. 130'
           value: Molokai
-          page: 130
         size: medium
         icon: oddmoon3
     event:
@@ -211,12 +203,6 @@ planet:
       - date: '3060-01-01'
         population: 17058782.0
       - date: '3066-08-01'
-        # administration: CDP | National Capital
-        # administration: CDP | National Capital
-        # administration: CDP | National Capital
-        # administration: CDP | National Capital
-        # administration: CDP | National Capital
-        # administration: CDP | National Capital
         faction:
           source: canon
           value:

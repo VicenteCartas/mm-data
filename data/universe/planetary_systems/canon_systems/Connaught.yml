@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -94,7 +94,13 @@ planet:
     lifeForm:
       source: canon
       value: MAMMAL
-    desc: Connaught is a typical garden world, with ample arable land, a comfortable climate and atmosphere and standard gravity. It also has the added benefit of abundant natural resources and a strong industrial base. Connaught is home to the Kong Interstellar Corp. ‘Mech factories, which produces the Black Knight and Ostsol for the Free Worlds League. Kong Interstellar Corp. also has a sizable ‘Mech repair and refit facility as part of their factories. The Kong facility is located in the major city Skellig on the rainy Leitrim continent.
+    desc: Connaught is a typical garden world, with ample arable land, a comfortable
+      climate and atmosphere and standard gravity. It also has the added benefit of
+      abundant natural resources and a strong industrial base. Connaught is home to
+      the Kong Interstellar Corp. ‘Mech factories, which produces the Black Knight
+      and Ostsol for the Free Worlds League. Kong Interstellar Corp. also has a sizable
+      ‘Mech repair and refit facility as part of their factories. The Kong facility
+      is located in the major city Skellig on the rainy Leitrim continent.
     landmass:
       - name:
           source: canon
@@ -156,12 +162,6 @@ planet:
         population: 780897141.0
       - date: '2360-01-01'
         population: 1088124646.0
-      - date: '2366-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FWL
       - date: '2367-01-29'
         faction:
           source: canon
@@ -196,12 +196,6 @@ planet:
       - date: '2490-01-01'
         population: 6223777250.0
       - date: '2500-03-29'
-        # administration: TH | Tyrfing Province
-        # administration: TH | Tyrfing Province
-        # administration: TH | Tyrfing Province
-        # administration: TH | Tyrfing Province
-        # administration: TH | Tyrfing Province
-        # administration: TH | Tyrfing Province
         faction:
           source: canon
           value:
@@ -267,18 +261,6 @@ planet:
         population: 8779036168.0
       - date: '2760-01-01'
         population: 8785153645.0
-      - date: '2767-01-01'
-        # administration: AE | Tyrfing Province
-        # administration: AE | Tyrfing Province
-        # administration: AE | Tyrfing Province
-        # administration: AE | Tyrfing Province
-        # administration: AE | Tyrfing Province
-        # administration: AE | Tyrfing Province
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - AE
       - date: '2767-09-30'
         faction:
           source: canon
@@ -287,42 +269,18 @@ planet:
       - date: '2770-01-01'
         population: 8741312990.0
       - date: '2779-08-16'
-        # administration: TH | Tyrfing Province
-        # administration: TH | Tyrfing Province
-        # administration: TH | Tyrfing Province
-        # administration: TH | Tyrfing Province
-        # administration: TH | Tyrfing Province
-        # administration: TH | Tyrfing Province
         faction:
           source: canon
           value:
             - TH
       - date: '2780-01-01'
         population: 8701209180.0
-      - date: '2786-01-01'
-        # administration: FWL | Marik Commonwealth
-        # administration: FWL | Marik Commonwealth
-        # administration: FWL | Marik Commonwealth
-        # administration: FWL | Marik Commonwealth
-        # administration: FWL | Marik Commonwealth
-        # administration: FWL | Marik Commonwealth
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FWL
       - date: '2786-06-18'
         faction:
           source: canon
           value:
             - FWL
       - date: '2790-01-02'
-        # administration: FWL | Marik Commonwealth
-        # administration: FWL | Marik Commonwealth
-        # administration: FWL | Marik Commonwealth
-        # administration: FWL | Marik Commonwealth
-        # administration: FWL | Marik Commonwealth
-        # administration: FWL | Marik Commonwealth
         faction:
           source: canon
           value:
@@ -393,24 +351,12 @@ planet:
         population: 7431819870.0
       - date: '3080-01-01'
         population: 7434793193.0
-      - date: '3081-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '3081-07-30'
         faction:
           source: canon
           value:
             - IND
       - date: '3082-07-28'
-        # administration: ROS | Prefecture VII
-        # administration: ROS | Prefecture VII
-        # administration: ROS | Prefecture VII
-        # administration: ROS | Prefecture VII
-        # administration: ROS | Prefecture VII
-        # administration: ROS | Prefecture VII
         faction:
           source: canon
           value:
@@ -431,12 +377,6 @@ planet:
         hpg:
           source: canon
           value: X
-      - date: '3135-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '3135-10-01'
         faction:
           source: canon
@@ -450,25 +390,8 @@ planet:
       - date: '3140-01-01'
         population: 7521538946.0
       - date: '3145-01-01'
-        # administration: FWL | Covenant Worlds
-        # administration: FWL | Covenant Worlds
-        # administration: FWL | Covenant Worlds
-        # administration: FWL | Covenant Worlds
-        # administration: FWL | Covenant Worlds
-        # administration: FWL | Covenant Worlds
         population: 7556217726.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FWL
       - date: '3151-01-01'
-        # administration: FWL | Covenant Worlds
-        # administration: FWL | Covenant Worlds
-        # administration: FWL | Covenant Worlds
-        # administration: FWL | Covenant Worlds
-        # administration: FWL | Covenant Worlds
-        # administration: FWL | Covenant Worlds
         faction:
           source: sucs
           value:

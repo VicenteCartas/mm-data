@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: Kaus Australis
-sucsId: 1309
+sucsId: 1308
 xcood: 5.683
 ycood: 83.447
 spectralType:
-  source: DA:RW
+  source: MWDA world profiles
   value: B9IV
 primarySlot:
-  source: DA:RW
+  source: MWDA world profiles
   value: 3
 event:
   - date: '2365-04-30'
@@ -80,31 +80,31 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 17.68
     sysPos:
-      source: DA:RW
+      source: MWDA world profiles
       value: 3
     icon: wet2
     pressure:
-      source: DA:RW
+      source: MWDA world profiles
       value: THIN
     atmosphere:
-      source: DA:RW
+      source: MWDA world profiles
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: DA:RW
+      source: MWDA world profiles
       value: 0.61
     diameter: 11340
     density: 3.780234961245
     dayLength: 22
     yearLength: 74.4
     temperature:
-      source: DA:RW
+      source: MWDA world profiles
       value: 40
     water:
-      source: DA:RW
+      source: MWDA world profiles
       value: 9
     lifeForm:
-      source: DA:RW
+      source: MWDA world profiles
       value: PLANT
     desc: |-
       Located far from its jump point, with hardly any water to speak of, an atmosphere too thin for unassisted breathing, and blasted by all manner of solar radiation from the blue-white subgiant around which it orbits, Kaus Australis would have been completely overlooked as a potential colony site if not for trace amounts of germanium and other valuable metal deposits just beneath its rocky surface.
@@ -114,21 +114,15 @@ planet:
       Even today, Kaus Australis maintains Kaus Media as its primary customer and source of goods, their symbiosis undeterred by centuries of war or the changing of allegiances. The capital of Kaus Australis, Kaverni Bay, an underground community, is located fifty kilometers inland from the Sea of Epsilon Sagittarius. While home to a third of the planetary population—the remainder scattered in small domes and subsurface mining homesteads—visitors seeking to conduct business with the Kaus Australians are best advised to seek a Kaus Median facilitator first.
     landmass:
       - capital:
-          source: DA:RW
+          source: MWDA world profiles
           value: Kaverni Bay
     satellite:
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Epstarius
         size: medium
         icon: oddmoon3
     event:
-      - date: '2271-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '2271-04-17'
         faction:
           source: canon
@@ -159,11 +153,6 @@ planet:
         population: 44935118.0
       - date: '2341-01-01'
         socioIndustrial: C-C-C-D-D
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '2350-01-01'
         population: 76617727.0
       - date: '2360-01-01'
@@ -212,18 +201,6 @@ planet:
         population: 2076092817.0
       - date: '2570-01-01'
         population: 2135875073.0
-      - date: '2571-01-01'
-        # administration: DC | Benjamin Military District | Kuzuu Prefecture
-        # administration: DC | Benjamin Military District | Kuzuu Prefecture
-        # administration: DC | Benjamin Military District | Kuzuu Prefecture
-        # administration: DC | Benjamin Military District | Kuzuu Prefecture
-        # administration: DC | Benjamin Military District | Kuzuu Prefecture
-        # administration: DC | Benjamin Military District | Kuzuu Prefecture
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - DC
       - date: '2580-01-01'
         population: 2188169863.0
       - date: '2590-01-01'
@@ -341,12 +318,6 @@ planet:
           source: canon
           value:
             - WOB
-      - date: '3075-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - Stone
       - date: '3075-10-06'
         faction:
           source: canon
@@ -360,25 +331,7 @@ planet:
             - Stone
       - date: '3080-01-01'
         population: 1725353488.0
-      - date: '3081-01-01'
-        # administration: ROS | Prefecture I
-        # administration: ROS | Prefecture I
-        # administration: ROS | Prefecture I
-        # administration: ROS | Prefecture I
-        # administration: ROS | Prefecture I
-        # administration: ROS | Prefecture I
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - ROS
       - date: '3081-04-25'
-        # administration: ROS | Prefecture I
-        # administration: ROS | Prefecture I
-        # administration: ROS | Prefecture I
-        # administration: ROS | Prefecture I
-        # administration: ROS | Prefecture I
-        # administration: ROS | Prefecture I
         faction:
           source: canon
           value:
@@ -397,12 +350,6 @@ planet:
         population: 1903762041.0
       - date: '3132-08-07'
         hpg: X
-      - date: '3135-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '3135-10-01'
         faction:
           source: canon
@@ -410,25 +357,7 @@ planet:
             - IND
       - date: '3140-01-01'
         population: 1929058288.0
-      - date: '3145-01-01'
-        # administration: RD | Region 3 | Vega Protectorate
-        # administration: RD | Region 3 | Vega Protectorate
-        # administration: RD | Region 3 | Vega Protectorate
-        # administration: RD | Region 3 | Vega Protectorate
-        # administration: RD | Region 3 | Vega Protectorate
-        # administration: RD | Region 3 | Vega Protectorate
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - RD
       - date: '3145-12-08'
-        # administration: RD | Region 3 | Vega Protectorate
-        # administration: RD | Region 3 | Vega Protectorate
-        # administration: RD | Region 3 | Vega Protectorate
-        # administration: RD | Region 3 | Vega Protectorate
-        # administration: RD | Region 3 | Vega Protectorate
-        # administration: RD | Region 3 | Vega Protectorate
         faction:
           source: canon
           value:
@@ -474,7 +403,8 @@ planet:
     icon: barren1
     pressure: THIN
     atmosphere: TOXIC_CAUSTIC
-    composition: Carbon Dioxide and Ammonia, plus trace amounts of Sulfur Dioxide and Helium
+    composition: Carbon Dioxide and Ammonia, plus trace amounts of Sulfur Dioxide
+      and Helium
     gravity: 0.34
     diameter: 4500
     density: 5.3284

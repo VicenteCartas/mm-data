@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: Yed Posterior
-sucsId: 2797
+sucsId: 2796
 xcood: -44.212
 ycood: 119.119
 spectralType:
-  source: DA:RW
+  source: MWDA world profiles
   value: G8IV
 primarySlot:
-  source: DA:RW
+  source: MWDA world profiles
   value: 3
 event:
   - date: '2359-10-08'
@@ -40,7 +40,8 @@ planet:
     icon: rock10
     pressure: TRACE
     atmosphere: TOXIC_POISON
-    composition: Nitrogen and Carbon Dioxide, plus trace amounts of Water Vapor and Argon
+    composition: Nitrogen and Carbon Dioxide, plus trace amounts of Water Vapor and
+      Argon
     gravity: 0.47
     diameter: 9500
     density: 3.5
@@ -72,45 +73,45 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 1.28
     sysPos:
-      source: DA:RW
+      source: MWDA world profiles
       value: 3
     icon: wet2
     pressure:
-      source: DA:RW
+      source: MWDA world profiles
       value: STANDARD
     atmosphere:
-      source: DA:RW
+      source: MWDA world profiles
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: DA:RW
+      source: MWDA world profiles
       value: 1.04
     diameter: 12570
     density: 5.814460740252
     dayLength: 29
     yearLength: 1.7
     temperature:
-      source: DA:RW
+      source: MWDA world profiles
       value: 40
     water:
-      source: DA:RW
+      source: MWDA world profiles
       value: 92
     lifeForm:
-      source: DA:RW
+      source: MWDA world profiles
       value: MAMMAL
     desc: |-
       A warm world covered almost entirely in shallow, blue-green oceans, Yed Posterior would be a strikingly beautiful planet were it not for the chronic storms that ravage the northern Yeddi Island Chain, a series of twelve small landmasses that collectively account for all of the planet‘s inhabitable surface area. Because of these storms, the early colonists established several submerged outposts offshore, taking advantage of the shallow depth of the oceans in an effort to escape the worst of the driving winds and pounding rains that routinely lashed their surface settlements. However, several of these underwater habitats eventually succumbed to the same natural forces that also plagued the offshore mining rigs set up to exploit the planet‘s mineral wealth before refined construction methods developed during the Star League era led to sturdier habitat and rig designs.
 
       As a border world, Yed Posterior saw its fair share of raids and invasions during the Succession Wars as Houses Steiner and Kurita clashed over control of the Skye and Tamar regions. These raids inevitably decimated the mining interests on-planet, despite the efforts of the local marine militia and their fleet of submarines and hydrofoils. The worst battle to take place on this world, however, erupted in 3063, during the FedCom Civil War, when a Lyran intelligence failure led to a massive firefight between the Fifth Lyran Regulars and the combined might of the Fourth Davion Guards and the Seventh FedCom RCT. This action actually pushed the Davion units—previously neutral—into Victor Steiner-Davion‘s camp. The damage caused by this battle ravaged most of the cities on the largest of the Yeddi Islands, including the planetary capital of Epoch. Fortunately, however, the relatively low military value of this world spared it from further damage during the Word of Blake Jihad.
     ring:
-      source: DA:RW
+      source: MWDA world profiles
       value: yes
     landmass:
       - name:
           source: canon
           value: Yeddi Island Chain
         capital:
-          source: DA:RW
+          source: MWDA world profiles
           value: Epoch
     satellite:
       - name: None (dust ring)
@@ -179,12 +180,6 @@ planet:
       - date: '2340-01-01'
         population: 2384036154.0
       - date: '2341-12-02'
-        # administration: LA | Federation of Skye
-        # administration: LA | Federation of Skye
-        # administration: LA | Federation of Skye
-        # administration: LA | Federation of Skye
-        # administration: LA | Federation of Skye
-        # administration: LA | Federation of Skye
         faction:
           source: canon
           value:
@@ -340,25 +335,8 @@ planet:
       - date: '3033-01-01'
         socioIndustrial: B-B-C-B-D
       - date: '3040-01-01'
-        # administration: FC | Skye March | Ryde Operational Area
-        # administration: FC | Skye March | Ryde Operational Area
-        # administration: FC | Skye March | Ryde Operational Area
-        # administration: FC | Skye March | Ryde Operational Area
-        # administration: FC | Skye March | Ryde Operational Area
-        # administration: FC | Skye March | Ryde Operational Area
         population: 5028020507.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FC
       - date: '3040-01-19'
-        # administration: FC | Skye March | Ryde Operational Area
-        # administration: FC | Skye March | Ryde Operational Area
-        # administration: FC | Skye March | Ryde Operational Area
-        # administration: FC | Skye March | Ryde Operational Area
-        # administration: FC | Skye March | Ryde Operational Area
-        # administration: FC | Skye March | Ryde Operational Area
         faction:
           source: canon
           value:
@@ -369,25 +347,7 @@ planet:
         socioIndustrial: A-A-C-A-F
       - date: '3050-01-01'
         population: 5086685142.0
-      - date: '3057-01-01'
-        # administration: LA | Skye March | Ryde Operational Area
-        # administration: LA | Skye March | Ryde Operational Area
-        # administration: LA | Skye March | Ryde Operational Area
-        # administration: LA | Skye March | Ryde Operational Area
-        # administration: LA | Skye March | Ryde Operational Area
-        # administration: LA | Skye March | Ryde Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LA
       - date: '3057-09-18'
-        # administration: LA | Skye Province | Freedom Theater
-        # administration: LA | Skye Province | Freedom Theater
-        # administration: LA | Skye Province | Freedom Theater
-        # administration: LA | Skye Province | Freedom Theater
-        # administration: LA | Skye Province | Freedom Theater
-        # administration: LA | Skye Province | Freedom Theater
         faction:
           source: canon
           value:
@@ -406,37 +366,13 @@ planet:
           value:
             - FC
       - date: '3063-01-01'
-        # administration: LA | Skye Province | Freedom Theater
-        # administration: LA | Skye Province | Freedom Theater
-        # administration: LA | Skye Province | Freedom Theater
-        # administration: LA | Skye Province | Freedom Theater
-        # administration: LA | Skye Province | Freedom Theater
-        # administration: LA | Skye Province | Freedom Theater
         faction:
           - LA
       - date: '3070-01-01'
         population: 5162011707.0
       - date: '3080-01-01'
         population: 5214933670.0
-      - date: '3081-01-01'
-        # administration: ROS | Prefecture IX
-        # administration: ROS | Prefecture IX
-        # administration: ROS | Prefecture IX
-        # administration: ROS | Prefecture IX
-        # administration: ROS | Prefecture IX
-        # administration: ROS | Prefecture IX
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - ROS
       - date: '3081-04-26'
-        # administration: ROS | Prefecture IX
-        # administration: ROS | Prefecture IX
-        # administration: ROS | Prefecture IX
-        # administration: ROS | Prefecture IX
-        # administration: ROS | Prefecture IX
-        # administration: ROS | Prefecture IX
         faction:
           source: canon
           value:
@@ -455,12 +391,6 @@ planet:
         population: 5595296696.0
       - date: '3132-08-07'
         hpg: X
-      - date: '3135-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '3135-10-01'
         faction:
           source: canon
@@ -474,12 +404,6 @@ planet:
         population: 5694645624.0
       - date: '3145-01-01'
         population: 5741533697.0
-      - date: '3152-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '3152-06-01'
         faction:
           source: canon

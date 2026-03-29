@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Great X
-sucsId: 1001
+sucsId: 1000
 xcood: -184.36
 ycood: 287.911
 spectralType:
@@ -102,7 +102,21 @@ planet:
     lifeForm:
       source: canon
       value: MAMMAL
-    desc: Great X has two continents, Eades and Bastion, with the majority of the population on the Eades. Eades is also home to the capital city of Spot which sits across the estuary of the Galahad River. The Shipping Port of Treasure Bay is the largest shipping port on Great X. The port, sitting on the estuary of the Galahad River and the Ocean of Storms, provides a fair percentage of Spot’s internal income. Twenty-five kilometers east of the capital, Spots starport, as well as its garrison and bivouac facilities, are connected by several heavy rail lines and an interstate highway. These facilities and Spot are very defensible from the western approaches of the Wicker Mountains. Great X spent most of its existence as a stopover for Lyran troops on their way to the Draconis Combine front. Following the Clan Invasion the Exes (as the inhabitants call themselves) were surprised to find themselves near a front line. This proximity to the Clan Front as turned Great X into a fortified depot system. Bastion continent has received most of this effort, with several new shipping hubs being built to support troops heading to the front.
+    desc: Great X has two continents, Eades and Bastion, with the majority of the
+      population on the Eades. Eades is also home to the capital city of Spot which
+      sits across the estuary of the Galahad River. The Shipping Port of Treasure
+      Bay is the largest shipping port on Great X. The port, sitting on the estuary
+      of the Galahad River and the Ocean of Storms, provides a fair percentage of
+      Spot’s internal income. Twenty-five kilometers east of the capital, Spots starport,
+      as well as its garrison and bivouac facilities, are connected by several heavy
+      rail lines and an interstate highway. These facilities and Spot are very defensible
+      from the western approaches of the Wicker Mountains. Great X spent most of its
+      existence as a stopover for Lyran troops on their way to the Draconis Combine
+      front. Following the Clan Invasion the Exes (as the inhabitants call themselves)
+      were surprised to find themselves near a front line. This proximity to the Clan
+      Front as turned Great X into a fortified depot system. Bastion continent has
+      received most of this effort, with several new shipping hubs being built to
+      support troops heading to the front.
     landmass:
       - name:
           source: canon
@@ -122,12 +136,6 @@ planet:
         icon: rock9
     event:
       - date: '2502-07-11'
-        # administration: LA | Protectorate of Donegal | Coventry Province
-        # administration: LA | Protectorate of Donegal | Coventry Province
-        # administration: LA | Protectorate of Donegal | Coventry Province
-        # administration: LA | Protectorate of Donegal | Coventry Province
-        # administration: LA | Protectorate of Donegal | Coventry Province
-        # administration: LA | Protectorate of Donegal | Coventry Province
         faction:
           source: canon
           value:
@@ -253,25 +261,8 @@ planet:
       - date: '3030-01-01'
         population: 164034974.0
       - date: '3040-01-01'
-        # administration: FC | Donegal March | Coventry Operational Area
-        # administration: FC | Donegal March | Coventry Operational Area
-        # administration: FC | Donegal March | Coventry Operational Area
-        # administration: FC | Donegal March | Coventry Operational Area
-        # administration: FC | Donegal March | Coventry Operational Area
-        # administration: FC | Donegal March | Coventry Operational Area
         population: 165965455.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FC
       - date: '3040-01-19'
-        # administration: FC | Donegal March | Coventry Operational Area
-        # administration: FC | Donegal March | Coventry Operational Area
-        # administration: FC | Donegal March | Coventry Operational Area
-        # administration: FC | Donegal March | Coventry Operational Area
-        # administration: FC | Donegal March | Coventry Operational Area
-        # administration: FC | Donegal March | Coventry Operational Area
         faction:
           source: canon
           value:
@@ -282,44 +273,14 @@ planet:
           value: C-C-C-D-C
       - date: '3050-01-01'
         population: 168221180.0
-      - date: '3057-01-01'
-        # administration: LA | Donegal March | Coventry Operational Area
-        # administration: LA | Donegal March | Coventry Operational Area
-        # administration: LA | Donegal March | Coventry Operational Area
-        # administration: LA | Donegal March | Coventry Operational Area
-        # administration: LA | Donegal March | Coventry Operational Area
-        # administration: LA | Donegal March | Coventry Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LA
       - date: '3057-12-01'
         faction:
           source: canon
           value:
             - ARDC
-      - date: '3058-01-01'
-        # administration: LA | Coventry Province | Melissia Theater
-        # administration: LA | Coventry Province | Melissia Theater
-        # administration: LA | Coventry Province | Melissia Theater
-        # administration: LA | Coventry Province | Melissia Theater
-        # administration: LA | Coventry Province | Melissia Theater
-        # administration: LA | Coventry Province | Melissia Theater
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LA
       - date: '3060-01-01'
         population: 170507564.0
       - date: '3067-04-24'
-        # administration: LA | Arc-Royal Theater
-        # administration: LA | Arc-Royal Theater
-        # administration: LA | Arc-Royal Theater
-        # administration: LA | Arc-Royal Theater
-        # administration: LA | Arc-Royal Theater
-        # administration: LA | Arc-Royal Theater
         faction:
           source: canon
           value:
@@ -337,18 +298,6 @@ planet:
           source: canon
           value:
             - LA
-      - date: '3075-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CJF/LA
-      - date: '3079-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CJF
       - date: '3079-08-20'
         faction:
           source: canon
@@ -365,12 +314,6 @@ planet:
         population: 175296646.0
       - date: '3120-01-01'
         population: 175296646.0
-      - date: '3130-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CJF/LC
       - date: '3130-04-03'
         faction:
           source: canon
@@ -378,32 +321,14 @@ planet:
             - CJF
             - LA
         population: 176739989.0
-      - date: '3135-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CJF/LC
       - date: '3140-01-01'
         population: 178088330.0
-      - date: '3145-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CJF
       - date: '3145-05-01'
         faction:
           source: canon
           value:
             - CJF
         population: 178195215.0
-      - date: '3152-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - ARDC
       - date: '3152-02-15'
         faction:
           source: canon

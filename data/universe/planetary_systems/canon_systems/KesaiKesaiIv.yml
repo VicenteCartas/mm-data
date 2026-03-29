@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,17 +16,15 @@
 # affiliated with Microsoft.
 
 id: Kesai (Kesai IV)
-sucsId: 1335
+sucsId: 1334
 xcood: 370.161
 ycood: 105.677
 spectralType:
-  source: FCCW
+  source: FedCom Civil War, pg. 191
   value: A5II
-  page: 191
 primarySlot:
-  source: FCCW
+  source: FedCom Civil War, pg. 191
   value: 4
-  page: 191
 event:
   - date: '2360-01-15'
     zenithCharge: yes
@@ -83,40 +81,44 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 9.88
     sysPos:
-      source: FCCW
+      source: FedCom Civil War, pg. 191
       value: 4
-      page: 191
     icon: green43
     pressure:
-      source: FCCW
+      source: FedCom Civil War, pg. 191
       value: STANDARD
-      page: 191
     atmosphere:
-      source: FCCW
+      source: FedCom Civil War, pg. 191
       value: BREATHABLE
-      page: 191
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: FCCW
+      source: FedCom Civil War, pg. 191
       value: 1.0
-      page: 191
     diameter: 11109
     density: 6.326168845684
     dayLength: 23
     yearLength: 31.1
     temperature:
-      source: FCCW
+      source: FedCom Civil War, pg. 191
       value: 50
-      page: 191
     water:
-      source: FCCW
+      source: FedCom Civil War, pg. 191
       value: 30
-      page: 191
     lifeForm:
-      source: FCCW
+      source: FedCom Civil War, pg. 191
       value: NONE
-      page: 191
-    desc: Kesai IV is a desert planet with almost no water and no native life. The planet also has few natural resources and almost nothing to lend itself to human habitation. Originally settled to mine radioactive elements, many of the settlers left when it was discovered the deposits were smaller than expected. The planet also found use as a prison planet for convicts by first the Draconis Combine and then later the Federated Suns. However, during the Star League, the rights to the planet were purchased by the League and an army depot was established on planet. When Davion forces reclaimed the planet after Kerensky’s Exodus, it was discovered that not all of the Star League Defense Force supplies had been stripped from the warehouses. Over the following centuries, the Federated Suns heavily garrisoned the planet as it was a nearly regular occurrence to discover new lost caches of Star League materials.
+    desc: Kesai IV is a desert planet with almost no water and no native life. The
+      planet also has few natural resources and almost nothing to lend itself to human
+      habitation. Originally settled to mine radioactive elements, many of the settlers
+      left when it was discovered the deposits were smaller than expected. The planet
+      also found use as a prison planet for convicts by first the Draconis Combine
+      and then later the Federated Suns. However, during the Star League, the rights
+      to the planet were purchased by the League and an army depot was established
+      on planet. When Davion forces reclaimed the planet after Kerensky’s Exodus,
+      it was discovered that not all of the Star League Defense Force supplies had
+      been stripped from the warehouses. Over the following centuries, the Federated
+      Suns heavily garrisoned the planet as it was a nearly regular occurrence to
+      discover new lost caches of Star League materials.
     smallMoons: 7
     landmass:
       - name:
@@ -124,12 +126,6 @@ planet:
           value: Unnamed
     event:
       - date: '2343-05-29'
-        # administration: DC | Galedon Military District | Kaznejoy Prefecture
-        # administration: DC | Galedon Military District | Kaznejoy Prefecture
-        # administration: DC | Galedon Military District | Kaznejoy Prefecture
-        # administration: DC | Galedon Military District | Kaznejoy Prefecture
-        # administration: DC | Galedon Military District | Kaznejoy Prefecture
-        # administration: DC | Galedon Military District | Kaznejoy Prefecture
         faction:
           source: canon
           value:
@@ -257,12 +253,6 @@ planet:
       - date: '2890-01-01'
         population: 188646554.0
       - date: '2900-08-30'
-        # administration: FS | Draconis March | Woodbine Operational Area
-        # administration: FS | Draconis March | Woodbine Operational Area
-        # administration: FS | Draconis March | Woodbine Operational Area
-        # administration: FS | Draconis March | Woodbine Operational Area
-        # administration: FS | Draconis March | Woodbine Operational Area
-        # administration: FS | Draconis March | Woodbine Operational Area
         faction:
           source: canon
           value:
@@ -297,25 +287,8 @@ planet:
       - date: '3030-01-01'
         population: 169887225.0
       - date: '3040-01-01'
-        # administration: FC | Draconis March | Woodbine Operational Area
-        # administration: FC | Draconis March | Woodbine Operational Area
-        # administration: FC | Draconis March | Woodbine Operational Area
-        # administration: FC | Draconis March | Woodbine Operational Area
-        # administration: FC | Draconis March | Woodbine Operational Area
-        # administration: FC | Draconis March | Woodbine Operational Area
         population: 171303157.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FC
       - date: '3040-01-19'
-        # administration: FC | Draconis March | Woodbine Operational Area
-        # administration: FC | Draconis March | Woodbine Operational Area
-        # administration: FC | Draconis March | Woodbine Operational Area
-        # administration: FC | Draconis March | Woodbine Operational Area
-        # administration: FC | Draconis March | Woodbine Operational Area
-        # administration: FC | Draconis March | Woodbine Operational Area
         faction:
           source: canon
           value:
@@ -333,12 +306,6 @@ planet:
       - date: '3060-01-01'
         population: 173822530.0
       - date: '3065-06-01'
-        # administration: DC | Galedon Military District | Kaznejoy Prefecture
-        # administration: DC | Galedon Military District | Kaznejoy Prefecture
-        # administration: DC | Galedon Military District | Kaznejoy Prefecture
-        # administration: DC | Galedon Military District | Kaznejoy Prefecture
-        # administration: DC | Galedon Military District | Kaznejoy Prefecture
-        # administration: DC | Galedon Military District | Kaznejoy Prefecture
         faction:
           source: canon
           value:

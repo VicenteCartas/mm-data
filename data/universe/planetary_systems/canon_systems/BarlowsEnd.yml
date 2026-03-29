@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -81,12 +81,6 @@ planet:
           source: canon
           value:
             - FS
-      - date: '2366-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '2370-01-01'
         population: 35326709.0
       - date: '2380-01-01'
@@ -131,18 +125,6 @@ planet:
         socioIndustrial: C-C-C-B-C
       - date: '2570-01-01'
         population: 304916063.0
-      - date: '2571-01-01'
-        # administration: FS | Draconis March | Fairfax Operational Area
-        # administration: FS | Draconis March | Fairfax Operational Area
-        # administration: FS | Draconis March | Fairfax Operational Area
-        # administration: FS | Draconis March | Fairfax Operational Area
-        # administration: FS | Draconis March | Fairfax Operational Area
-        # administration: FS | Draconis March | Fairfax Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FS
       - date: '2580-01-01'
         population: 311668258.0
       - date: '2590-01-01'
@@ -243,25 +225,8 @@ planet:
       - date: '3030-01-01'
         population: 341655863.0
       - date: '3040-01-01'
-        # administration: FC | Draconis March | Robinson Operational Area
-        # administration: FC | Draconis March | Robinson Operational Area
-        # administration: FC | Draconis March | Robinson Operational Area
-        # administration: FC | Draconis March | Robinson Operational Area
-        # administration: FC | Draconis March | Robinson Operational Area
-        # administration: FC | Draconis March | Robinson Operational Area
         population: 345158586.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FC
       - date: '3040-01-19'
-        # administration: FC | Draconis March | Robinson Operational Area
-        # administration: FC | Draconis March | Robinson Operational Area
-        # administration: FC | Draconis March | Robinson Operational Area
-        # administration: FC | Draconis March | Robinson Operational Area
-        # administration: FC | Draconis March | Robinson Operational Area
-        # administration: FC | Draconis March | Robinson Operational Area
         faction:
           source: canon
           value:
@@ -272,25 +237,7 @@ planet:
         population: 347131608.0
       - date: '3060-01-01'
         population: 349430253.0
-      - date: '3067-01-01'
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FS
       - date: '3067-04-20'
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
         faction:
           source: canon
           value:
@@ -315,25 +262,7 @@ planet:
         hpg: X
       - date: '3140-01-01'
         population: 383179666.0
-      - date: '3145-01-01'
-        # administration: DC | New Samarkand Military District | Barlow's End Prefecture
-        # administration: DC | New Samarkand Military District | Barlow's End Prefecture
-        # administration: DC | New Samarkand Military District | Barlow's End Prefecture
-        # administration: DC | New Samarkand Military District | Barlow's End Prefecture
-        # administration: DC | New Samarkand Military District | Barlow's End Prefecture
-        # administration: DC | New Samarkand Military District | Barlow's End Prefecture
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - DC
       - date: '3145-04-03'
-        # administration: DC | New Samarkand Military District | Barlow's End Prefecture
-        # administration: DC | New Samarkand Military District | Barlow's End Prefecture
-        # administration: DC | New Samarkand Military District | Barlow's End Prefecture
-        # administration: DC | New Samarkand Military District | Barlow's End Prefecture
-        # administration: DC | New Samarkand Military District | Barlow's End Prefecture
-        # administration: DC | New Samarkand Military District | Barlow's End Prefecture
         faction:
           source: canon
           value:
@@ -346,7 +275,8 @@ planet:
     icon: badwater36
     pressure: THIN
     atmosphere: TOXIC_CAUSTIC
-    composition: Nitrogen and Carbon Dioxide, plus trace amounts of Sulfur Dioxide and Methane
+    composition: Nitrogen and Carbon Dioxide, plus trace amounts of Sulfur Dioxide
+      and Methane
     gravity: 0.62
     diameter: 7500
     density: 5.8437

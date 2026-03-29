@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -20,13 +20,11 @@ sucsId: 167
 xcood: -78.068
 ycood: 174.436
 spectralType:
-  source: AToW
+  source: A Time of War, pg. 376
   value: K2III
-  page: 376
 primarySlot:
-  source: AToW
+  source: A Time of War, pg. 376
   value: 5
-  page: 376
 event:
   - date: '2378-07-11'
     nadirCharge: yes
@@ -107,39 +105,32 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 1.12
     sysPos:
-      source: AToW
+      source: A Time of War, pg. 376
       value: 5
-      page: 376
     icon: green35
     pressure:
-      source: AToW
+      source: A Time of War, pg. 376
       value: STANDARD
-      page: 376
     atmosphere:
-      source: AToW
+      source: A Time of War, pg. 376
       value: BREATHABLE
-      page: 376
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: AToW
+      source: A Time of War, pg. 376
       value: 1.02
-      page: 376
     diameter: 14664
     density: 4.88828698984
     dayLength: 23
     yearLength: 1.5
     temperature:
-      source: AToW
+      source: A Time of War, pg. 376
       value: 33
-      page: 376
     water:
-      source: AToW
+      source: A Time of War, pg. 376
       value: 43
-      page: 376
     lifeForm:
-      source: AToW
+      source: A Time of War, pg. 376
       value: MAMMAL
-      page: 376
     desc: |-
       The original capital of the Lyran Commonwealth, Arcturus was a thriving world with bustling and ornate cities. However, when the capital was relocated to Tharkad, taking the government of the Commonwealth along with it, the remaining population of Arcturus moved out of the cities and into the countryside. The only remaining industrial city is Malcheema.
 
@@ -151,46 +142,37 @@ planet:
       Arcturan Arms Refit Facility
     landmass:
       - name:
-          source: AToW
+          source: A Time of War, pg. 376
           value: Attenia
-          page: 376
         capital:
-          source: AToW
+          source: A Time of War, pg. 376
           value: Malcheema
-          page: 376
       - name:
-          source: AToW
+          source: A Time of War, pg. 376
           value: Borreus
-          page: 376
       - name:
-          source: AToW
+          source: A Time of War, pg. 376
           value: Chadrik
-          page: 376
       - name:
-          source: AToW
+          source: A Time of War, pg. 376
           value: Dustina
-          page: 376
       - name:
-          source: AToW
+          source: A Time of War, pg. 376
           value: Penrod
-          page: 376
     satellite:
       - name:
-          source: AToW
+          source: A Time of War, pg. 376
           value: Donegal
-          page: 376
         size: medium
         icon: rock1
       - name:
-          source: AToW
+          source: A Time of War, pg. 376
           value: Skye
-          page: 376
         size: medium
         icon: oddmoon1
       - name:
-          source: AToW
+          source: A Time of War, pg. 376
           value: Tamar
-          page: 376
         size: large
         icon: rock16
     event:
@@ -243,12 +225,6 @@ planet:
       - date: '2340-01-01'
         population: 299863010.0
       - date: '2341-09-17'
-        # administration: LA | Tamar Pact | National Capital
-        # administration: LA | Tamar Pact | National Capital
-        # administration: LA | Tamar Pact | National Capital
-        # administration: LA | Tamar Pact | National Capital
-        # administration: LA | Tamar Pact | National Capital
-        # administration: LA | Tamar Pact | National Capital
         faction:
           source: canon
           value:
@@ -406,25 +382,8 @@ planet:
       - date: '3030-01-01'
         population: 984044879.0
       - date: '3040-01-01'
-        # administration: FC | Donegal March | Pherkad Operational Area
-        # administration: FC | Donegal March | Pherkad Operational Area
-        # administration: FC | Donegal March | Pherkad Operational Area
-        # administration: FC | Donegal March | Pherkad Operational Area
-        # administration: FC | Donegal March | Pherkad Operational Area
-        # administration: FC | Donegal March | Pherkad Operational Area
         population: 992444910.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FC
       - date: '3040-01-19'
-        # administration: FC | Donegal March | Pherkad Operational Area
-        # administration: FC | Donegal March | Pherkad Operational Area
-        # administration: FC | Donegal March | Pherkad Operational Area
-        # administration: FC | Donegal March | Pherkad Operational Area
-        # administration: FC | Donegal March | Pherkad Operational Area
-        # administration: FC | Donegal March | Pherkad Operational Area
         faction:
           source: canon
           value:
@@ -435,25 +394,7 @@ planet:
           value: B-C-D-C-D
       - date: '3050-01-01'
         population: 999716266.0
-      - date: '3057-01-01'
-        # administration: LA | Donegal March | Pherkad Operational Area
-        # administration: LA | Donegal March | Pherkad Operational Area
-        # administration: LA | Donegal March | Pherkad Operational Area
-        # administration: LA | Donegal March | Pherkad Operational Area
-        # administration: LA | Donegal March | Pherkad Operational Area
-        # administration: LA | Donegal March | Pherkad Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LA
       - date: '3057-09-18'
-        # administration: LA | Donegal Province | Pandora Theater
-        # administration: LA | Donegal Province | Pandora Theater
-        # administration: LA | Donegal Province | Pandora Theater
-        # administration: LA | Donegal Province | Pandora Theater
-        # administration: LA | Donegal Province | Pandora Theater
-        # administration: LA | Donegal Province | Pandora Theater
         faction:
           source: canon
           value:
@@ -478,12 +419,6 @@ planet:
         population: 1091678287.0
       - date: '3122-01-01'
         socioIndustrial: A-C-D-C-C
-      - date: '3130-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CW
       - date: '3130-01-28'
         faction:
           source: canon
@@ -498,30 +433,12 @@ planet:
         population: 1129659461.0
       - date: '3145-01-01'
         population: 1136912466.0
-      - date: '3151-01-01'
-        # administration: TamP | National Capital
-        # administration: TamP | National Capital
-        # administration: TamP | National Capital
-        # administration: TamP | National Capital
-        # administration: TamP | National Capital
-        # administration: TamP | National Capital
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - TamP
       - date: '3151-06-01'
         faction:
           source: canon
           value:
             - IND
       - date: '3151-08-13'
-        # administration: TamP | National Capital
-        # administration: TamP | National Capital
-        # administration: TamP | National Capital
-        # administration: TamP | National Capital
-        # administration: TamP | National Capital
-        # administration: TamP | National Capital
         faction:
           source: canon
           value:

@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,16 +16,15 @@
 # affiliated with Microsoft.
 
 id: Gan Singh
-sucsId: 933
+sucsId: 932
 xcood: 41.613
 ycood: -79.668
 spectralType:
   source: canon
   value: F5VII
 primarySlot:
-  source: 'HB:HL'
+  source: 'Handbook: House Liao, pg. 75'
   value: 4
-  page: 75
 planet:
   - name: Susan's Stand
     type: GIANT_TERRESTRIAL
@@ -89,85 +88,77 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 3.92
     sysPos:
-      source: 'HB:HL'
+      source: 'Handbook: House Liao, pg. 75'
       value: 4
-      page: 75
     icon: green3
     pressure:
-      source: 'HB:HL'
+      source: 'Handbook: House Liao, pg. 75'
       value: STANDARD
-      page: 75
     atmosphere:
-      source: 'HB:HL'
+      source: 'Handbook: House Liao, pg. 75'
       value: BREATHABLE
-      page: 75
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'HB:HL'
+      source: 'Handbook: House Liao, pg. 75'
       value: 1.0
-      page: 75
     diameter: 14235
     density: 4.936813509733
     dayLength: 25
     yearLength: 7.9
     temperature:
-      source: 'HB:HL'
+      source: 'Handbook: House Liao, pg. 75'
       value: 30
-      page: 75
     water:
-      source: 'HB:HL'
+      source: 'Handbook: House Liao, pg. 75'
       value: 72
-      page: 75
     lifeForm:
-      source: 'HB:HL'
+      source: 'Handbook: House Liao, pg. 75'
       value: PLANT
-      page: 75
-    desc: A largely agricultural world with impressive forests and jungles. Large rain forests blanket the northern hemisphere, where the majority of the planet’s inhabitants work and live. The planet’s equator is ringed with a number of moderately-sized cities.
+    desc: A largely agricultural world with impressive forests and jungles. Large
+      rain forests blanket the northern hemisphere, where the majority of the planet’s
+      inhabitants work and live. The planet’s equator is ringed with a number of moderately-sized
+      cities.
     landmass:
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Calcutta
         capital:
-          source: DA:RW
+          source: MWDA world profiles
           value: Mughal
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Jaipur
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Jhansi
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Nagpur
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Sambalpur
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Satara
     satellite:
       - name:
-          source: 'HB:HL'
+          source: 'Handbook: House Liao, pg. 75'
           value: Hari
-          page: 75
         size: medium
         icon: oddmoon3
       - name:
-          source: 'HB:HL'
+          source: 'Handbook: House Liao, pg. 75'
           value: Kishen
-          page: 75
         size: medium
         icon: rock3
       - name:
-          source: 'HB:HL'
+          source: 'Handbook: House Liao, pg. 75'
           value: Nain
-          page: 75
         size: medium
         icon: oddmoon1
       - name:
-          source: 'HB:HL'
+          source: 'Handbook: House Liao, pg. 75'
           value: Ranjit
-          page: 75
         size: large
         icon: rock4
     event:
@@ -184,12 +175,6 @@ planet:
         population: 447572.0
       - date: '2270-01-01'
         population: 1308207.0
-      - date: '2271-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '2276-01-01'
         socioIndustrial: C-D-D-D-B
       - date: '2280-01-01'
@@ -200,12 +185,6 @@ planet:
         population: 15007812.0
       - date: '2310-01-01'
         population: 27485580.0
-      - date: '2317-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - DoL
       - date: '2320-01-01'
         population: 46552916.0
       - date: '2330-01-01'
@@ -221,12 +200,6 @@ planet:
             - DoL
         population: 204583008.0
       - date: '2367-07-01'
-        # administration: CC | Tikonov Commonality | Region 2
-        # administration: CC | Tikonov Commonality | Region 2
-        # administration: CC | Tikonov Commonality | Region 2
-        # administration: CC | Tikonov Commonality | Region 2
-        # administration: CC | Tikonov Commonality | Region 2
-        # administration: CC | Tikonov Commonality | Region 2
         faction:
           source: canon
           value:
@@ -274,12 +247,6 @@ planet:
       - date: '2570-01-01'
         population: 1235761559.0
       - date: '2571-09-25'
-        # administration: CC | Tikonov Commonality | Region 2
-        # administration: CC | Tikonov Commonality | Region 2
-        # administration: CC | Tikonov Commonality | Region 2
-        # administration: CC | Tikonov Commonality | Region 2
-        # administration: CC | Tikonov Commonality | Region 2
-        # administration: CC | Tikonov Commonality | Region 2
         faction:
           source: canon
           value:
@@ -389,18 +356,6 @@ planet:
         population: 1084787889.0
       - date: '3020-01-01'
         population: 1093922572.0
-      - date: '3030-01-01'
-        # administration: LA | Sarna March | Tikonov Operational Area
-        # administration: LA | Sarna March | Tikonov Operational Area
-        # administration: LA | Sarna March | Tikonov Operational Area
-        # administration: LA | Sarna March | Tikonov Operational Area
-        # administration: LA | Sarna March | Tikonov Operational Area
-        # administration: LA | Sarna March | Tikonov Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LA
       - date: '3030-09-17'
         faction:
           source: canon
@@ -410,25 +365,8 @@ planet:
       - date: '3034-01-01'
         socioIndustrial: D-D-D-D-C
       - date: '3040-01-01'
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
         population: 1118250902.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FC
       - date: '3040-01-19'
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
         faction:
           source: canon
           value:
@@ -439,12 +377,6 @@ planet:
           value: C-D-C-D-B
       - date: '3050-01-01'
         population: 1131524423.0
-      - date: '3057-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - SKC
       - date: '3057-11-01'
         faction:
           source: canon
@@ -452,25 +384,7 @@ planet:
             - SKC
       - date: '3060-01-01'
         population: 1145757248.0
-      - date: '3063-01-01'
-        # administration: CC | Styk Protectorate
-        # administration: CC | Styk Protectorate
-        # administration: CC | Styk Protectorate
-        # administration: CC | Styk Protectorate
-        # administration: CC | Styk Protectorate
-        # administration: CC | Styk Protectorate
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CC
       - date: '3067-01-10'
-        # administration: CC | Liao Commonality | Region 1
-        # administration: CC | Liao Commonality | Region 1
-        # administration: CC | Liao Commonality | Region 1
-        # administration: CC | Liao Commonality | Region 1
-        # administration: CC | Liao Commonality | Region 1
-        # administration: CC | Liao Commonality | Region 1
         faction:
           source: canon
           value:
@@ -482,25 +396,7 @@ planet:
         population: 1160169100.0
       - date: '3080-01-01'
         population: 1170891905.0
-      - date: '3085-01-01'
-        # administration: ROS | Prefecture V
-        # administration: ROS | Prefecture V
-        # administration: ROS | Prefecture V
-        # administration: ROS | Prefecture V
-        # administration: ROS | Prefecture V
-        # administration: ROS | Prefecture V
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - ROS
       - date: '3085-12-05'
-        # administration: ROS | Prefecture V
-        # administration: ROS | Prefecture V
-        # administration: ROS | Prefecture V
-        # administration: ROS | Prefecture V
-        # administration: ROS | Prefecture V
-        # administration: ROS | Prefecture V
         faction:
           source: canon
           value:
@@ -521,25 +417,7 @@ planet:
         hpg:
           source: canon
           value: X
-      - date: '3135-01-01'
-        # administration: CC | Liao Commonality | Region 1
-        # administration: CC | Liao Commonality | Region 1
-        # administration: CC | Liao Commonality | Region 1
-        # administration: CC | Liao Commonality | Region 1
-        # administration: CC | Liao Commonality | Region 1
-        # administration: CC | Liao Commonality | Region 1
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CC
       - date: '3135-12-03'
-        # administration: CC | Tikonov Commonality | Region 5
-        # administration: CC | Tikonov Commonality | Region 5
-        # administration: CC | Tikonov Commonality | Region 5
-        # administration: CC | Tikonov Commonality | Region 5
-        # administration: CC | Tikonov Commonality | Region 5
-        # administration: CC | Tikonov Commonality | Region 5
         faction:
           source: canon
           value:

@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Klathandu IV
-sucsId: 1375
+sucsId: 1374
 xcood: 175.25
 ycood: 31.491
 spectralType: F7V
@@ -29,7 +29,8 @@ planet:
     icon: barren11
     pressure: THIN
     atmosphere: TOXIC_POISON
-    composition: Carbon Dioxide and Nitrogen, plus trace amounts of Carbon Dioxide and Nitrous Oxide
+    composition: Carbon Dioxide and Nitrogen, plus trace amounts of Carbon Dioxide
+      and Nitrous Oxide
     gravity: 0.71
     diameter: 10500
     density: 4.7795
@@ -116,12 +117,6 @@ planet:
             - FS
       - date: '2360-01-01'
         population: 14310387.0
-      - date: '2366-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '2370-01-01'
         population: 24916445.0
       - date: '2380-01-01'
@@ -166,18 +161,6 @@ planet:
         population: 542423898.0
       - date: '2570-01-01'
         population: 551296498.0
-      - date: '2571-01-01'
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FS
       - date: '2580-01-01'
         population: 559012197.0
       - date: '2590-01-01'
@@ -242,18 +225,6 @@ planet:
         population: 489477986.0
       - date: '2860-01-01'
         population: 468638250.0
-      - date: '2864-01-01'
-        # administration: DC | Benjamin Military District | Proserpina Prefecture
-        # administration: DC | Benjamin Military District | Proserpina Prefecture
-        # administration: DC | Benjamin Military District | Proserpina Prefecture
-        # administration: DC | Benjamin Military District | Proserpina Prefecture
-        # administration: DC | Benjamin Military District | Proserpina Prefecture
-        # administration: DC | Benjamin Military District | Proserpina Prefecture
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - DC
       - date: '2864-04-24'
         faction:
           source: canon
@@ -278,12 +249,6 @@ planet:
       - date: '2940-01-01'
         population: 388960131.0
       - date: '2950-04-01'
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
         faction:
           source: canon
           value:
@@ -303,25 +268,7 @@ planet:
         population: 413197831.0
       - date: '3020-01-01'
         population: 414791831.0
-      - date: '3030-01-01'
-        # administration: DC | Benjamin Military District | Proserpina Prefecture
-        # administration: DC | Benjamin Military District | Proserpina Prefecture
-        # administration: DC | Benjamin Military District | Proserpina Prefecture
-        # administration: DC | Benjamin Military District | Proserpina Prefecture
-        # administration: DC | Benjamin Military District | Proserpina Prefecture
-        # administration: DC | Benjamin Military District | Proserpina Prefecture
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - DC
       - date: '3030-03-16'
-        # administration: DC | Benjamin Military District | Proserpina Prefecture
-        # administration: DC | Benjamin Military District | Proserpina Prefecture
-        # administration: DC | Benjamin Military District | Proserpina Prefecture
-        # administration: DC | Benjamin Military District | Proserpina Prefecture
-        # administration: DC | Benjamin Military District | Proserpina Prefecture
-        # administration: DC | Benjamin Military District | Proserpina Prefecture
         faction:
           source: canon
           value:

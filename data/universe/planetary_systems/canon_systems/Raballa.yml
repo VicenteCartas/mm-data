@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,17 +16,15 @@
 # affiliated with Microsoft.
 
 id: Raballa
-sucsId: 2104
+sucsId: 2103
 xcood: 21.709
 ycood: -157.74
 spectralType:
-  source: HLSB
+  source: House Liao, pg. 147
   value: F5V
-  page: 147
 primarySlot:
-  source: HLSB
+  source: House Liao, pg. 147
   value: 7
-  page: 147
 event:
   - date: '2360-06-24'
     nadirCharge: yes
@@ -157,9 +155,8 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 1.4
     sysPos:
-      source: HLSB
+      source: House Liao, pg. 147
       value: 7
-      page: 147
     icon: green25
     pressure: THIN
     atmosphere: BREATHABLE
@@ -172,10 +169,15 @@ planet:
     temperature: 36
     water: 20
     lifeForm:
-      source: HLSB
+      source: House Liao, pg. 147
       value: PLANT
-      page: 147
-    desc: In the 31st Century, changing weather conditions on Raballa resulted in a drastic decline in farm production. This ruined Raballa's balance of trade as the planet went from being a major food-exporter to requiring imported food to survive. Raballa houses a major subterranean Aerospace support facility which was able to provide a boost the badly faltering planetary economy and kept it from collapse in the early 31st Century. This facility was established on Raballa due to the local populations fiercely loyal to the Confederation government.
+    desc: In the 31st Century, changing weather conditions on Raballa resulted in
+      a drastic decline in farm production. This ruined Raballa's balance of trade
+      as the planet went from being a major food-exporter to requiring imported food
+      to survive. Raballa houses a major subterranean Aerospace support facility which
+      was able to provide a boost the badly faltering planetary economy and kept it
+      from collapse in the early 31st Century. This facility was established on Raballa
+      due to the local populations fiercely loyal to the Confederation government.
     landmass:
       - name: Robres del Castillo
         capital: New Almaraz de Duero
@@ -201,12 +203,6 @@ planet:
         population: 11473584.0
       - date: '2270-01-01'
         population: 25507101.0
-      - date: '2271-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '2280-01-01'
         population: 51024406.0
       - date: '2290-01-01'
@@ -227,19 +223,7 @@ planet:
         population: 977592304.0
       - date: '2360-01-01'
         population: 1239724425.0
-      - date: '2366-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - SSUP
       - date: '2367-07-01'
-        # administration: CC | Sarna Commonality | Region 3
-        # administration: CC | Sarna Commonality | Region 3
-        # administration: CC | Sarna Commonality | Region 3
-        # administration: CC | Sarna Commonality | Region 3
-        # administration: CC | Sarna Commonality | Region 3
-        # administration: CC | Sarna Commonality | Region 3
         faction:
           source: canon
           value:
@@ -388,18 +372,6 @@ planet:
         population:
           source: canon
           value: 3871000000.0
-      - date: '3030-01-01'
-        # administration: LA | Sarna March | Palos Operational Area
-        # administration: LA | Sarna March | Palos Operational Area
-        # administration: LA | Sarna March | Palos Operational Area
-        # administration: LA | Sarna March | Palos Operational Area
-        # administration: LA | Sarna March | Palos Operational Area
-        # administration: LA | Sarna March | Palos Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LA
       - date: '3030-10-06'
         faction:
           source: canon
@@ -418,53 +390,17 @@ planet:
           source: canon
           value:
             - FS
-      - date: '3040-01-01'
-        # administration: FC | Sarna March | Palos Operational Area
-        # administration: FC | Sarna March | Palos Operational Area
-        # administration: FC | Sarna March | Palos Operational Area
-        # administration: FC | Sarna March | Palos Operational Area
-        # administration: FC | Sarna March | Palos Operational Area
-        # administration: FC | Sarna March | Palos Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FC
       - date: '3040-12-06'
         population: 2155239129.0
         socioIndustrial: C-C-A-C-C
       - date: '3040-01-19'
-        # administration: FC | Sarna March | Palos Operational Area
-        # administration: FC | Sarna March | Palos Operational Area
-        # administration: FC | Sarna March | Palos Operational Area
-        # administration: FC | Sarna March | Palos Operational Area
-        # administration: FC | Sarna March | Palos Operational Area
-        # administration: FC | Sarna March | Palos Operational Area
         faction:
           source: canon
           value:
             - FC
       - date: '3050-01-01'
         population: 1559526444.0
-      - date: '3057-01-01'
-        # administration: CC | Capella Commonality | Region 7
-        # administration: CC | Capella Commonality | Region 7
-        # administration: CC | Capella Commonality | Region 7
-        # administration: CC | Capella Commonality | Region 7
-        # administration: CC | Capella Commonality | Region 7
-        # administration: CC | Capella Commonality | Region 7
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CC
       - date: '3058-12-14'
-        # administration: CC | Capella Commonality | Region 7
-        # administration: CC | Capella Commonality | Region 7
-        # administration: CC | Capella Commonality | Region 7
-        # administration: CC | Capella Commonality | Region 7
-        # administration: CC | Capella Commonality | Region 7
-        # administration: CC | Capella Commonality | Region 7
         faction:
           source: canon
           value:

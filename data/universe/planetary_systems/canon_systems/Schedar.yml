@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: Schedar
-sucsId: 2258
+sucsId: 2257
 xcood: 117.863
 ycood: -21.246
 spectralType:
-  source: DA:RW
+  source: MWDA world profiles
   value: G2III
 primarySlot:
-  source: DA:RW
+  source: MWDA world profiles
   value: 2
 event:
   - date: '2376-12-20'
@@ -55,31 +55,31 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 1.6
     sysPos:
-      source: DA:RW
+      source: MWDA world profiles
       value: 2
     icon: green36
     pressure:
-      source: DA:RW
+      source: MWDA world profiles
       value: STANDARD
     atmosphere:
-      source: DA:RW
+      source: MWDA world profiles
       value: TAINTED_POISON
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: DA:RW
+      source: MWDA world profiles
       value: 1.1
     diameter: 14843
     density: 5.208095814877
     dayLength: 23
     yearLength: 2.3
     temperature:
-      source: DA:RW
+      source: MWDA world profiles
       value: 27
     water:
-      source: DA:RW
+      source: MWDA world profiles
       value: 20
     lifeForm:
-      source: DA:RW
+      source: MWDA world profiles
       value: REPTILE
     desc: |-
       Schedar is a cool, desert world. Although the chemical constituents of its atmosphere are suitable to humans, a fine mineral dust that scars human lungs permeates the lower atmosphere and forces Schedar‘s population to use filtering masks and equipment. Many small, salty lakes pockmark the surface, and Schedar‘s native reptilian life-forms migrate between these lakes as the seasons change.
@@ -89,11 +89,11 @@ planet:
       Although the fall of the First Star League brought an end to terraforming on Schedar, Rander Communication Equipment went on to faithfully serve the Federated Suns for the duration of the Succession Wars by producing various military electronics, including communications, tracking and targeting, and countermeasure systems. Although Rander had a subsidiary on the surface of Schedar that produced civilian electronics, its military electronics were produced in an underground factory. Much of Schedar‘s population retreated into these underground complexes during the Blakist Holy War, reemerging years later when The Republic of the Sphere was founded. Rander adapted to the pacifistic Republic by mothballing its underground military factory and investing heavily in the civilian factory.
     landmass:
       - capital:
-          source: DA:RW
+          source: MWDA world profiles
           value: Jacksonville
     satellite:
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Mali
         size: medium
         icon: rock9
@@ -105,12 +105,6 @@ planet:
             - TH
         population: 45563.0
         socioIndustrial: D-D-C-C-D
-      - date: '2319-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '2319-09-28'
         faction:
           source: canon
@@ -125,12 +119,6 @@ planet:
       - date: '2350-01-01'
         population: 3552242.0
       - date: '2355-07-11'
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
         faction:
           source: canon
           value:
@@ -225,18 +213,6 @@ planet:
         population: 1160491178.0
       - date: '2760-01-01'
         population: 1165528862.0
-      - date: '2767-01-01'
-        # administration: AE | Lockdale Province
-        # administration: AE | Lockdale Province
-        # administration: AE | Lockdale Province
-        # administration: AE | Lockdale Province
-        # administration: AE | Lockdale Province
-        # administration: AE | Lockdale Province
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - AE
       - date: '2767-10-13'
         faction:
           source: canon
@@ -245,12 +221,6 @@ planet:
       - date: '2770-01-01'
         population: 1173168068.0
       - date: '2779-02-26'
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
         faction:
           source: canon
           value:
@@ -269,25 +239,7 @@ planet:
         population: 1175582578.0
       - date: '2820-01-01'
         population: 1172033245.0
-      - date: '2821-01-01'
-        # administration: CC | Tikonov Commonality | Region 7
-        # administration: CC | Tikonov Commonality | Region 7
-        # administration: CC | Tikonov Commonality | Region 7
-        # administration: CC | Tikonov Commonality | Region 7
-        # administration: CC | Tikonov Commonality | Region 7
-        # administration: CC | Tikonov Commonality | Region 7
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CC
       - date: '2821-04-12'
-        # administration: CC | Tikonov Commonality | Region 7
-        # administration: CC | Tikonov Commonality | Region 7
-        # administration: CC | Tikonov Commonality | Region 7
-        # administration: CC | Tikonov Commonality | Region 7
-        # administration: CC | Tikonov Commonality | Region 7
-        # administration: CC | Tikonov Commonality | Region 7
         faction:
           source: canon
           value:
@@ -298,18 +250,7 @@ planet:
           value:
             - CC
       - date: '2830-01-01'
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
         population: 1173380728.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FS
       - date: '2840-01-01'
         population: 1172600418.0
       - date: '2850-01-01'
@@ -319,23 +260,11 @@ planet:
       - date: '2860-01-01'
         population: 1175191626.0
       - date: '2862-09-01'
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
         faction:
           source: canon
           value:
             - FS
       - date: '2864-03-19'
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
         faction:
           source: canon
           value:
@@ -379,25 +308,8 @@ planet:
       - date: '3030-01-01'
         population: 1091504506.0
       - date: '3040-01-01'
-        # administration: FC | Draconis March | Robinson Operational Area
-        # administration: FC | Draconis March | Robinson Operational Area
-        # administration: FC | Draconis March | Robinson Operational Area
-        # administration: FC | Draconis March | Robinson Operational Area
-        # administration: FC | Draconis March | Robinson Operational Area
-        # administration: FC | Draconis March | Robinson Operational Area
         population: 1105565562.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FC
       - date: '3040-01-19'
-        # administration: FC | Draconis March | Robinson Operational Area
-        # administration: FC | Draconis March | Robinson Operational Area
-        # administration: FC | Draconis March | Robinson Operational Area
-        # administration: FC | Draconis March | Robinson Operational Area
-        # administration: FC | Draconis March | Robinson Operational Area
-        # administration: FC | Draconis March | Robinson Operational Area
         faction:
           source: canon
           value:
@@ -408,25 +320,7 @@ planet:
         population: 1120143750.0
       - date: '3060-01-01'
         population: 1136504160.0
-      - date: '3067-01-01'
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FS
       - date: '3067-04-20'
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
         faction:
           source: canon
           value:
@@ -449,37 +343,13 @@ planet:
           source: canon
           value:
             - FS
-      - date: '3079-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - Stone
       - date: '3080-11-23'
         faction:
           source: canon
           value:
             - Stone
         population: 1163877409.0
-      - date: '3081-01-01'
-        # administration: ROS | Prefecture IV
-        # administration: ROS | Prefecture IV
-        # administration: ROS | Prefecture IV
-        # administration: ROS | Prefecture IV
-        # administration: ROS | Prefecture IV
-        # administration: ROS | Prefecture IV
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - ROS
       - date: '3081-03-19'
-        # administration: ROS | Prefecture IV
-        # administration: ROS | Prefecture IV
-        # administration: ROS | Prefecture IV
-        # administration: ROS | Prefecture IV
-        # administration: ROS | Prefecture IV
-        # administration: ROS | Prefecture IV
         faction:
           source: canon
           value:
@@ -498,25 +368,7 @@ planet:
         population: 1241793897.0
       - date: '3132-08-07'
         hpg: X
-      - date: '3135-01-01'
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FS
       - date: '3135-08-06'
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
         faction:
           source: canon
           value:

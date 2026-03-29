@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: Overton
-sucsId: 1966
+sucsId: 1965
 xcood: 46.252
 ycood: -207.89
 spectralType:
-  source: 'OR'
+  source: 'Objective Raids: Capellan Confederation'
   value: G4V
 primarySlot:
-  source: 'OR'
+  source: 'Objective Raids: Capellan Confederation'
   value: 3
 event:
   - date: '2689-11-15'
@@ -63,54 +63,52 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.9
     sysPos:
-      source: 'OR'
+      source: 'Objective Raids: Capellan Confederation'
       value: 3
     icon: wet10
     pressure:
-      source: 'OR'
+      source: 'Objective Raids: Capellan Confederation'
       value: STANDARD
     atmosphere:
-      source: 'OR'
+      source: 'Objective Raids: Capellan Confederation'
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'OR'
+      source: 'Objective Raids: Capellan Confederation'
       value: 1.0
     diameter: 12951
     density: 5.426502307261
     dayLength: 23
     yearLength: 1.3
     temperature:
-      source: 'OR'
+      source: 'Objective Raids: Capellan Confederation'
       value: 30
     water:
-      source: 'OR'
+      source: 'Objective Raids: Capellan Confederation'
       value: 78
     lifeForm:
-      source: 'OR'
+      source: 'Objective Raids: Capellan Confederation'
       value: AMPHIBIAN
-    desc: Overton is an unremarkable planet, with limited natural resources, agriculture and industry. The planet is mostly self-sufficient but is of limited strategic or military importance. Overton is home to one of many Duchy RTC training facilities throughout the Capellan Confederation that trains infantry and conventional armor crews.
+    desc: Overton is an unremarkable planet, with limited natural resources, agriculture
+      and industry. The planet is mostly self-sufficient but is of limited strategic
+      or military importance. Overton is home to one of many Duchy RTC training facilities
+      throughout the Capellan Confederation that trains infantry and conventional
+      armor crews.
     landmass:
       - name:
-          source: 'OR'
+          source: 'Objective Raids: Capellan Confederation'
           value: Yarmouth
         capital:
-          source: 'OR'
+          source: 'Objective Raids: Capellan Confederation'
           value: Glasson
     satellite:
       - name:
-          source: 'OR'
+          source: 'Objective Raids: Capellan Confederation'
           value: Heysham
         size: medium
         icon: oddmoon2
     event:
       - date: '2683-12-22'
-        # administration: CC | Capella Commonality | Region 8
-        # administration: CC | Capella Commonality | Region 8
-        # administration: CC | Capella Commonality | Region 8
-        # administration: CC | Capella Commonality | Region 8
-        # administration: CC | Capella Commonality | Region 8
-        # administration: CC | Capella Commonality | Region 8
         faction:
           source: canon
           value:
@@ -209,32 +207,8 @@ planet:
         population: 1267988437.0
       - date: '3060-01-01'
         population: 1283809380.0
-      - date: '3068-01-01'
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FS
       - date: '3070-01-01'
         population: 1300087717.0
-      - date: '3075-01-01'
-        # administration: CC | Capella Commonality | Region 7
-        # administration: CC | Capella Commonality | Region 7
-        # administration: CC | Capella Commonality | Region 7
-        # administration: CC | Capella Commonality | Region 7
-        # administration: CC | Capella Commonality | Region 7
-        # administration: CC | Capella Commonality | Region 7
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CC
       - date: '3079-01-01'
         population:
           source: canon

@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: Halstead Station
-sucsId: 1045
+sucsId: 1044
 xcood: 78.057
 ycood: 43.443
 spectralType:
-  source: DA:RW
+  source: MWDA world profiles
   value: M4II
 primarySlot:
-  source: DA:RW
+  source: MWDA world profiles
   value: 3
 planet:
   - name: Dook
@@ -82,36 +82,65 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.12
     sysPos:
-      source: DA:RW
+      source: MWDA world profiles
       value: 3
     icon: green43
     pressure:
-      source: DA:RW
+      source: MWDA world profiles
       value: STANDARD
     atmosphere:
-      source: DA:RW
+      source: MWDA world profiles
       value: TOXIC_POISON
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: DA:RW
+      source: MWDA world profiles
       value: 0.62
     diameter: 9589
     density: 4.543966388395
     dayLength: 23
     yearLength: 0.5
     temperature:
-      source: DA:RW
+      source: MWDA world profiles
       value: 17
     water:
-      source: DA:RW
+      source: MWDA world profiles
       value: 40
     lifeForm:
-      source: DA:RW
+      source: MWDA world profiles
       value: PLANT
-    desc: '3130 - The founding of Halstead Station traces back to the early days of human expansion, when the growing Ozawa Mercantile Association sought to ensure its dominion of the ―northwest region of the galaxy, through a chain of stations under its complete control. Unfortunately, the system chosen for one of the way stations lacked one small requirement: a habitable world. Because it was rich in minerals, particularly in the asteroid belt and on the third planet, a poisonous rock encased in a deadly argon-cyanide atmosphere, the system could not be ignored as a candidate. Engineers under the command of Geoffrey Halstead, one of the Association‘s more visionary directors, established Halstead Station in 2207 and renamed the world after their new colony. Halstead Station, more than merely a domed settlement on a poisonous wasteland, was actually a labyrinth of underground tunnels; huge surface and subsurface storehouses; and massive, environmentally sealed habitats that when completed, covered nearly three percent of the tiny planet‘s surface. When the growing Draconis Combine finally crushed the Ozawas, Halstead Station, as one of the Association‘s few surviving facilities, fell into the hands of House Kurita, which quickly assigned a significant portion of the ever-expanding facilities to military use. Over the centuries, Halstead Station has seen use as a military supply base, a maximum-security prison, and a place where dishonored soldiers were sent to reflect upon their mistakes. Though Halstead Station continued to expand as extensive mining drilled out more underground tunnels, the quality of life for its inhabitants gradually began to decline. The worst came in 3089, when a massive earthquake shook the entire city, rupturing its southeastern quadrant and killing thousands of residents. Geologists, appalled by the devastation, attributed the quake to a subterranean explosion that was never satisfactorily explained. When the world fell under the sway of Devlin Stone‘s Republic of the Sphere, the time-worn colony was renovated by the settlers who were relocated there. Today, Halstead Station remains the largest population center on the planet, though a secondary city, known as Stone‘s Dream, was recently founded on the far side of the Scalding Sea, the single large ocean that dominates much of the planet‘s southern hemisphere.'
+    desc: '3130 - The founding of Halstead Station traces back to the early days of
+      human expansion, when the growing Ozawa Mercantile Association sought to ensure
+      its dominion of the ―northwest region of the galaxy, through a chain of stations
+      under its complete control. Unfortunately, the system chosen for one of the
+      way stations lacked one small requirement: a habitable world. Because it was
+      rich in minerals, particularly in the asteroid belt and on the third planet,
+      a poisonous rock encased in a deadly argon-cyanide atmosphere, the system could
+      not be ignored as a candidate. Engineers under the command of Geoffrey Halstead,
+      one of the Association‘s more visionary directors, established Halstead Station
+      in 2207 and renamed the world after their new colony. Halstead Station, more
+      than merely a domed settlement on a poisonous wasteland, was actually a labyrinth
+      of underground tunnels; huge surface and subsurface storehouses; and massive,
+      environmentally sealed habitats that when completed, covered nearly three percent
+      of the tiny planet‘s surface. When the growing Draconis Combine finally crushed
+      the Ozawas, Halstead Station, as one of the Association‘s few surviving facilities,
+      fell into the hands of House Kurita, which quickly assigned a significant portion
+      of the ever-expanding facilities to military use. Over the centuries, Halstead
+      Station has seen use as a military supply base, a maximum-security prison, and
+      a place where dishonored soldiers were sent to reflect upon their mistakes.
+      Though Halstead Station continued to expand as extensive mining drilled out
+      more underground tunnels, the quality of life for its inhabitants gradually
+      began to decline. The worst came in 3089, when a massive earthquake shook the
+      entire city, rupturing its southeastern quadrant and killing thousands of residents.
+      Geologists, appalled by the devastation, attributed the quake to a subterranean
+      explosion that was never satisfactorily explained. When the world fell under
+      the sway of Devlin Stone‘s Republic of the Sphere, the time-worn colony was
+      renovated by the settlers who were relocated there. Today, Halstead Station
+      remains the largest population center on the planet, though a secondary city,
+      known as Stone‘s Dream, was recently founded on the far side of the Scalding
+      Sea, the single large ocean that dominates much of the planet‘s southern hemisphere.'
     landmass:
       - capital:
-          source: DA:RW
+          source: MWDA world profiles
           value: Halstead Station
     event:
       - date: '2250-04-03'
@@ -133,12 +162,6 @@ planet:
         population: 9298193.0
       - date: '2310-01-01'
         population: 18071289.0
-      - date: '2317-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '2317-03-27'
         faction:
           source: canon
@@ -155,12 +178,6 @@ planet:
         population: 52522727.0
       - date: '2340-01-01'
         population: 81177191.0
-      - date: '2341-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '2350-01-01'
         population: 119065628.0
       - date: '2360-01-01'
@@ -209,18 +226,6 @@ planet:
         population: 1244907377.0
       - date: '2570-01-01'
         population: 1258149735.0
-      - date: '2571-01-01'
-        # administration: DC | Benjamin Military District | Ashio Prefecture
-        # administration: DC | Benjamin Military District | Ashio Prefecture
-        # administration: DC | Benjamin Military District | Ashio Prefecture
-        # administration: DC | Benjamin Military District | Ashio Prefecture
-        # administration: DC | Benjamin Military District | Ashio Prefecture
-        # administration: DC | Benjamin Military District | Ashio Prefecture
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - DC
       - date: '2580-01-01'
         population: 1267509196.0
       - date: '2590-01-01'
@@ -334,25 +339,7 @@ planet:
         population: 931934252.0
       - date: '3080-01-01'
         population: 938480678.0
-      - date: '3081-01-01'
-        # administration: ROS | Prefecture II
-        # administration: ROS | Prefecture II
-        # administration: ROS | Prefecture II
-        # administration: ROS | Prefecture II
-        # administration: ROS | Prefecture II
-        # administration: ROS | Prefecture II
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - ROS
       - date: '3081-05-09'
-        # administration: ROS | Prefecture II
-        # administration: ROS | Prefecture II
-        # administration: ROS | Prefecture II
-        # administration: ROS | Prefecture II
-        # administration: ROS | Prefecture II
-        # administration: ROS | Prefecture II
         faction:
           source: canon
           value:
@@ -370,12 +357,6 @@ planet:
       - date: '3130-01-01'
         population: 973076077.0
       - date: '3132-07-01'
-        # administration: DC | Benjamin Military District | Algedi Prefecture
-        # administration: DC | Benjamin Military District | Algedi Prefecture
-        # administration: DC | Benjamin Military District | Algedi Prefecture
-        # administration: DC | Benjamin Military District | Algedi Prefecture
-        # administration: DC | Benjamin Military District | Algedi Prefecture
-        # administration: DC | Benjamin Military District | Algedi Prefecture
         faction:
           source: canon
           value:

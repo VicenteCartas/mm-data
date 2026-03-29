@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Kaguyak
-sucsId: 1277
+sucsId: 1276
 xcood: 297.251
 ycood: -236.036
 spectralType: F2V
@@ -52,7 +52,8 @@ planet:
     icon: barren15
     pressure: STANDARD
     atmosphere: TOXIC_POISON
-    composition: Carbon Dioxide and Nitrogen, plus trace amounts of Carbon Dioxide and Water Vapor
+    composition: Carbon Dioxide and Nitrogen, plus trace amounts of Carbon Dioxide
+      and Water Vapor
     gravity: 0.45
     diameter: 7500
     density: 4.1818
@@ -111,12 +112,6 @@ planet:
       - name: Donovan's Retreat
     event:
       - date: '2646-09-28'
-        # administration: FS | Crucis March | Chirikof Operational Area
-        # administration: FS | Crucis March | Chirikof Operational Area
-        # administration: FS | Crucis March | Chirikof Operational Area
-        # administration: FS | Crucis March | Chirikof Operational Area
-        # administration: FS | Crucis March | Chirikof Operational Area
-        # administration: FS | Crucis March | Chirikof Operational Area
         faction:
           source: canon
           value:
@@ -212,25 +207,8 @@ planet:
       - date: '3030-01-01'
         population: 236362547.0
       - date: '3040-01-01'
-        # administration: FC | Crucis March | Chirikof Operational Area
-        # administration: FC | Crucis March | Chirikof Operational Area
-        # administration: FC | Crucis March | Chirikof Operational Area
-        # administration: FC | Crucis March | Chirikof Operational Area
-        # administration: FC | Crucis March | Chirikof Operational Area
-        # administration: FC | Crucis March | Chirikof Operational Area
         population: 239168146.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FC
       - date: '3040-01-19'
-        # administration: FC | Crucis March | Chirikof Operational Area
-        # administration: FC | Crucis March | Chirikof Operational Area
-        # administration: FC | Crucis March | Chirikof Operational Area
-        # administration: FC | Crucis March | Chirikof Operational Area
-        # administration: FC | Crucis March | Chirikof Operational Area
-        # administration: FC | Crucis March | Chirikof Operational Area
         faction:
           source: canon
           value:
@@ -243,25 +221,7 @@ planet:
         population: 241716812.0
       - date: '3060-01-01'
         population: 244097282.0
-      - date: '3067-01-01'
-        # administration: FS | Crucis March | Chirikof Operational Area
-        # administration: FS | Crucis March | Chirikof Operational Area
-        # administration: FS | Crucis March | Chirikof Operational Area
-        # administration: FS | Crucis March | Chirikof Operational Area
-        # administration: FS | Crucis March | Chirikof Operational Area
-        # administration: FS | Crucis March | Chirikof Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FS
       - date: '3067-04-20'
-        # administration: FS | Crucis March | Chirikof Operational Area
-        # administration: FS | Crucis March | Chirikof Operational Area
-        # administration: FS | Crucis March | Chirikof Operational Area
-        # administration: FS | Crucis March | Chirikof Operational Area
-        # administration: FS | Crucis March | Chirikof Operational Area
-        # administration: FS | Crucis March | Chirikof Operational Area
         faction:
           source: canon
           value:

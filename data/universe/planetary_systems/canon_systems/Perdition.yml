@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Perdition
-sucsId: 2012
+sucsId: 2011
 xcood: 306.955
 ycood: -356.676
 spectralType:
@@ -134,12 +134,6 @@ planet:
           value: Purgatory
     event:
       - date: '2603-12-18'
-        # administration: TC | Perdition Union
-        # administration: TC | Perdition Union
-        # administration: TC | Perdition Union
-        # administration: TC | Perdition Union
-        # administration: TC | Perdition Union
-        # administration: TC | Perdition Union
         faction:
           source: canon
           value:
@@ -262,25 +256,7 @@ planet:
         population: 156210024.0
       - date: '3080-01-01'
         population: 157496212.0
-      - date: '3081-01-01'
-        # administration: FS | Periphery March | June Operational Area
-        # administration: FS | Periphery March | June Operational Area
-        # administration: FS | Periphery March | June Operational Area
-        # administration: FS | Periphery March | June Operational Area
-        # administration: FS | Periphery March | June Operational Area
-        # administration: FS | Periphery March | June Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FS
       - date: '3081-01-10'
-        # administration: FS | Periphery March | June Operational Area
-        # administration: FS | Periphery March | June Operational Area
-        # administration: FS | Periphery March | June Operational Area
-        # administration: FS | Periphery March | June Operational Area
-        # administration: FS | Periphery March | June Operational Area
-        # administration: FS | Periphery March | June Operational Area
         faction:
           source: canon
           value:
@@ -312,7 +288,8 @@ planet:
     icon: barren17
     pressure: THIN
     atmosphere: TOXIC_POISON
-    composition: Nitrogen and Ammonia, plus trace amounts of Water Vapor and Nitrous Oxide
+    composition: Nitrogen and Ammonia, plus trace amounts of Water Vapor and Nitrous
+      Oxide
     gravity: 0.44
     diameter: 6500
     density: 4.7795

@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,17 +16,15 @@
 # affiliated with Microsoft.
 
 id: Lackland
-sucsId: 1443
+sucsId: 1442
 xcood: 546.474
 ycood: -173.797
 spectralType:
-  source: 'HB:HD'
+  source: 'Handbook: House Davion, pg. 95'
   value: G9V
-  page: 95
 primarySlot:
-  source: 'HB:HD'
+  source: 'Handbook: House Davion, pg. 95'
   value: 4
-  page: 95
 planet:
   - name: Urth
     type: GIANT_TERRESTRIAL
@@ -88,39 +86,32 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.8
     sysPos:
-      source: 'HB:HD'
+      source: 'Handbook: House Davion, pg. 95'
       value: 4
-      page: 95
     icon: wet1
     pressure:
-      source: 'HB:HD'
+      source: 'Handbook: House Davion, pg. 95'
       value: STANDARD
-      page: 95
     atmosphere:
-      source: 'HB:HD'
+      source: 'Handbook: House Davion, pg. 95'
       value: BREATHABLE
-      page: 95
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'HB:HD'
+      source: 'Handbook: House Davion, pg. 95'
       value: 1.05
-      page: 95
     diameter: 13111
     density: 5.627909467163
     dayLength: 19
     yearLength: 1.1
     temperature:
-      source: 'HB:HD'
+      source: 'Handbook: House Davion, pg. 95'
       value: 43
-      page: 95
     water:
-      source: 'HB:HD'
+      source: 'Handbook: House Davion, pg. 95'
       value: 91
-      page: 95
     lifeForm:
-      source: 'HB:HD'
+      source: 'Handbook: House Davion, pg. 95'
       value: REPTILE
-      page: 95
     desc: |-
       Lackland’s name is appropriate - the planet is almost entirely covered with water and has no major continents, it is instead dotted with islands and archipelagos. While surveys indicate the planet has large deposits of ores and other natural resources, residents have made no significant effort to mine them. This was primarily due to the high cost due to the need for underwater dwellings to best access and mine the deposits, initial attempts quickly found that the costs far outweighed the potential profits.
 
@@ -137,12 +128,6 @@ planet:
       - name: Daly
     event:
       - date: '2360-11-26'
-        # administration: FS | Crucis March | Minette Operational Area
-        # administration: FS | Crucis March | Minette Operational Area
-        # administration: FS | Crucis March | Minette Operational Area
-        # administration: FS | Crucis March | Minette Operational Area
-        # administration: FS | Crucis March | Minette Operational Area
-        # administration: FS | Crucis March | Minette Operational Area
         faction:
           source: canon
           value:
@@ -299,25 +284,8 @@ planet:
       - date: '3033-01-01'
         socioIndustrial: F-F-D-F-C
       - date: '3040-01-01'
-        # administration: FC | Crucis March | Minette Operational Area
-        # administration: FC | Crucis March | Minette Operational Area
-        # administration: FC | Crucis March | Minette Operational Area
-        # administration: FC | Crucis March | Minette Operational Area
-        # administration: FC | Crucis March | Minette Operational Area
-        # administration: FC | Crucis March | Minette Operational Area
         population: 67199402.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FC
       - date: '3040-01-19'
-        # administration: FC | Crucis March | Minette Operational Area
-        # administration: FC | Crucis March | Minette Operational Area
-        # administration: FC | Crucis March | Minette Operational Area
-        # administration: FC | Crucis March | Minette Operational Area
-        # administration: FC | Crucis March | Minette Operational Area
-        # administration: FC | Crucis March | Minette Operational Area
         faction:
           source: canon
           value:
@@ -331,27 +299,10 @@ planet:
       - date: '3060-01-01'
         population: 68385742.0
       - date: '3067-01-01'
-        # administration: FS | Crucis March | Minette Operational Area
-        # administration: FS | Crucis March | Minette Operational Area
-        # administration: FS | Crucis March | Minette Operational Area
-        # administration: FS | Crucis March | Minette Operational Area
-        # administration: FS | Crucis March | Minette Operational Area
-        # administration: FS | Crucis March | Minette Operational Area
         population:
           source: canon
           value: 68735400.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FS
       - date: '3067-04-20'
-        # administration: FS | Crucis March | Minette Operational Area
-        # administration: FS | Crucis March | Minette Operational Area
-        # administration: FS | Crucis March | Minette Operational Area
-        # administration: FS | Crucis March | Minette Operational Area
-        # administration: FS | Crucis March | Minette Operational Area
-        # administration: FS | Crucis March | Minette Operational Area
         faction:
           source: canon
           value:

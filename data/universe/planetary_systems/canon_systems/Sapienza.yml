@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Sapienza
-sucsId: 2235
+sucsId: 2234
 xcood: -418.479
 ycood: 145.228
 spectralType: M0V
@@ -58,12 +58,6 @@ planet:
       - name: Véroia
     event:
       - date: '2638-08-27'
-        # administration: RWR | Timbuktu Province
-        # administration: RWR | Timbuktu Province
-        # administration: RWR | Timbuktu Province
-        # administration: RWR | Timbuktu Province
-        # administration: RWR | Timbuktu Province
-        # administration: RWR | Timbuktu Province
         faction:
           source: canon
           value:
@@ -105,12 +99,6 @@ planet:
       - date: '2770-01-01'
         population: 189483921.0
       - date: '2779-09-09'
-        # administration: LA | Protectorate of Donegal | Alarion Province
-        # administration: LA | Protectorate of Donegal | Alarion Province
-        # administration: LA | Protectorate of Donegal | Alarion Province
-        # administration: LA | Protectorate of Donegal | Alarion Province
-        # administration: LA | Protectorate of Donegal | Alarion Province
-        # administration: LA | Protectorate of Donegal | Alarion Province
         faction:
           source: canon
           value:
@@ -172,25 +160,8 @@ planet:
       - date: '3031-01-01'
         socioIndustrial: B-D-C-D-C
       - date: '3040-01-01'
-        # administration: FC | Periphery March | Venaria Operational Area
-        # administration: FC | Periphery March | Venaria Operational Area
-        # administration: FC | Periphery March | Venaria Operational Area
-        # administration: FC | Periphery March | Venaria Operational Area
-        # administration: FC | Periphery March | Venaria Operational Area
-        # administration: FC | Periphery March | Venaria Operational Area
         population: 170372974.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FC
       - date: '3040-01-19'
-        # administration: FC | Periphery March | Venaria Operational Area
-        # administration: FC | Periphery March | Venaria Operational Area
-        # administration: FC | Periphery March | Venaria Operational Area
-        # administration: FC | Periphery March | Venaria Operational Area
-        # administration: FC | Periphery March | Venaria Operational Area
-        # administration: FC | Periphery March | Venaria Operational Area
         faction:
           source: canon
           value:
@@ -199,25 +170,7 @@ planet:
         socioIndustrial: A-C-B-C-B
       - date: '3050-01-01'
         population: 172447009.0
-      - date: '3057-01-01'
-        # administration: LA | Periphery March | Venaria Operational Area
-        # administration: LA | Periphery March | Venaria Operational Area
-        # administration: LA | Periphery March | Venaria Operational Area
-        # administration: LA | Periphery March | Venaria Operational Area
-        # administration: LA | Periphery March | Venaria Operational Area
-        # administration: LA | Periphery March | Venaria Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LA
       - date: '3057-09-18'
-        # administration: LA | Alarion Province | Timbuktu Theater
-        # administration: LA | Alarion Province | Timbuktu Theater
-        # administration: LA | Alarion Province | Timbuktu Theater
-        # administration: LA | Alarion Province | Timbuktu Theater
-        # administration: LA | Alarion Province | Timbuktu Theater
-        # administration: LA | Alarion Province | Timbuktu Theater
         faction:
           source: canon
           value:
@@ -253,7 +206,8 @@ planet:
     icon: badwater2
     pressure: THIN
     atmosphere: TOXIC_POISON
-    composition: Ammonia and Carbon Dioxide, plus trace amounts of Argon and Water Vapor
+    composition: Ammonia and Carbon Dioxide, plus trace amounts of Argon and Water
+      Vapor
     gravity: 0.85
     diameter: 12500
     density: 4.7795

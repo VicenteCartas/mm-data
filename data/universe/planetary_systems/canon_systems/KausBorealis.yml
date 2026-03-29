@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: Kaus Borealis
-sucsId: 1310
+sucsId: 1309
 xcood: 11.373
 ycood: 96.371
 spectralType:
-  source: DA:RW
+  source: MWDA world profiles
   value: K1IV
 primarySlot:
-  source: DA:RW
+  source: MWDA world profiles
   value: 4
 event:
   - date: '2488-08-09'
@@ -55,7 +55,8 @@ planet:
     icon: barren8
     pressure: THIN
     atmosphere: TOXIC_POISON
-    composition: Nitrogen and Carbon Dioxide, plus trace amounts of Argon and Nitrous Oxide
+    composition: Nitrogen and Carbon Dioxide, plus trace amounts of Argon and Nitrous
+      Oxide
     gravity: 0.77
     diameter: 8500
     density: 6.3337
@@ -88,31 +89,31 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 1.28
     sysPos:
-      source: DA:RW
+      source: MWDA world profiles
       value: 4
     icon: green21
     pressure:
-      source: DA:RW
+      source: MWDA world profiles
       value: STANDARD
     atmosphere:
-      source: DA:RW
+      source: MWDA world profiles
       value: TAINTED_POISON
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: DA:RW
+      source: MWDA world profiles
       value: 0.87
     diameter: 9829
     density: 6.220090177735
     dayLength: 20
     yearLength: 1.7
     temperature:
-      source: DA:RW
+      source: MWDA world profiles
       value: 55
     water:
-      source: DA:RW
+      source: MWDA world profiles
       value: 71
     lifeForm:
-      source: DA:RW
+      source: MWDA world profiles
       value: MAMMAL
     desc: |-
       A hellish world of continuous volcanic activity that geologists are attributing to a severe tectonic shift of unparalleled magnitude, Kaus Borealis is a world that many feel is on death‘s door. Over 300 active volcanoes have formed in the last three centuries alone, erupting with increasing intensity that now has lava flowing freely and regularly over almost ten percent of the planet‘s surface at any given time. When first discovered, Kaus Borealis was a serene world of deep green oceans, fertile soil, hardy woodlands, abundant wildlife, and blue skies. The early colonists quickly made their paradise a home and established it as an agricultural world. Although, like most terrestrial planets, Kaus Borealis had its share of seismic disturbances, scientists thought little of them until three new volcanoes explosively emerged on the west coast of the northern continent of Lucynda in 2803, each within three months of the other. As more eruptions followed, and entire towns or farming regions were swallowed up by the earth or incinerated by tons of molten rock, a gradual exodus began, which stalled in the thirty-first century when the planet grew inexplicably silent. However, by that stage so much sulfur, methane, and ash had been thrown into the atmosphere that the ozone layer was compromised, breathing was impossible without respirators, and acid rain regularly fell from dark, yellow skies. Gone were the serene oceans, fertile soil, and hardy woodlands, and most of the native wildlife had perished. Turbulent, superheated seas and barren wastes of broken rock and charcoal now dominated the landscape, but began to give way to the first signs of rejuvenation by the time Kaus Borealis became a part of by the last 31st century.
@@ -122,23 +123,23 @@ planet:
       The capital of Kaus Borealis, Iamda, is located on the northern continent of Allysi, which lies east of Lucynda. Grand Cauldron, a newer city on the southern continent of Bellaria, is home to the largest of the planet‘s geological research facilities, the Gordon Weiss Institute of Tectonics, as well as the southern hub of the Kaus Borealis Planetary Evacuation Command. Rashatta, Kaus Borealis‘ fourth and smallest continent, located in the equatorial zones between Allysi and Rashatta, is completely lifeless, a result of the planet‘s brutal heat and the presence of no fewer than ten of its twenty largest active volcanoes.
     landmass:
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Allysi
         capital:
-          source: DA:RW
+          source: MWDA world profiles
           value: Iamda
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Bellaria
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Lucynda
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Rashatta
     satellite:
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Blufisch
         size: large
         icon: rock6
@@ -171,12 +172,6 @@ planet:
         population: 155709334.0
       - date: '2360-01-01'
         population: 280261313.0
-      - date: '2366-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '2370-01-01'
         population: 464018342.0
       - date: '2380-01-01'
@@ -206,12 +201,6 @@ planet:
       - date: '2490-01-01'
         population: 5691508639.0
       - date: '2500-12-11'
-        # administration: DC | Benjamin Military District | Kuzuu Prefecture
-        # administration: DC | Benjamin Military District | Kuzuu Prefecture
-        # administration: DC | Benjamin Military District | Kuzuu Prefecture
-        # administration: DC | Benjamin Military District | Kuzuu Prefecture
-        # administration: DC | Benjamin Military District | Kuzuu Prefecture
-        # administration: DC | Benjamin Military District | Kuzuu Prefecture
         faction:
           source: canon
           value:
@@ -353,12 +342,6 @@ planet:
           source: canon
           value:
             - WOB
-      - date: '3075-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - Stone
       - date: '3075-08-28'
         faction:
           source: canon
@@ -372,25 +355,7 @@ planet:
             - Stone
       - date: '3080-01-01'
         population: 7946322836.0
-      - date: '3081-01-01'
-        # administration: ROS | Prefecture I
-        # administration: ROS | Prefecture I
-        # administration: ROS | Prefecture I
-        # administration: ROS | Prefecture I
-        # administration: ROS | Prefecture I
-        # administration: ROS | Prefecture I
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - ROS
       - date: '3081-09-10'
-        # administration: ROS | Prefecture I
-        # administration: ROS | Prefecture I
-        # administration: ROS | Prefecture I
-        # administration: ROS | Prefecture I
-        # administration: ROS | Prefecture I
-        # administration: ROS | Prefecture I
         faction:
           source: canon
           value:
@@ -411,12 +376,6 @@ planet:
         hpg:
           source: canon
           value: X
-      - date: '3135-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '3135-10-01'
         faction:
           source: canon
@@ -424,25 +383,7 @@ planet:
             - IND
       - date: '3140-01-01'
         population: 8040644851.0
-      - date: '3145-01-01'
-        # administration: RD | Region 3 | Vega Protectorate
-        # administration: RD | Region 3 | Vega Protectorate
-        # administration: RD | Region 3 | Vega Protectorate
-        # administration: RD | Region 3 | Vega Protectorate
-        # administration: RD | Region 3 | Vega Protectorate
-        # administration: RD | Region 3 | Vega Protectorate
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - RD
       - date: '3145-06-13'
-        # administration: RD | Region 3 | Vega Protectorate
-        # administration: RD | Region 3 | Vega Protectorate
-        # administration: RD | Region 3 | Vega Protectorate
-        # administration: RD | Region 3 | Vega Protectorate
-        # administration: RD | Region 3 | Vega Protectorate
-        # administration: RD | Region 3 | Vega Protectorate
         faction:
           source: canon
           value:

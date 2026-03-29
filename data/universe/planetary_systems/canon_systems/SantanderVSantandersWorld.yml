@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,16 +16,15 @@
 # affiliated with Microsoft.
 
 id: Santander V (Santander's World)
-sucsId: 2922
+sucsId: 2921
 xcood: 77.8
 ycood: 481.099
 spectralType:
   source: canon
   value: K4V
 primarySlot:
-  source: Per1e
+  source: Periphery (1ed), pg. 153
   value: 5
-  page: 153
 planet:
   - name: Montlhéry
     type: TERRESTRIAL
@@ -96,9 +95,8 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.28
     sysPos:
-      source: Per1e
+      source: Periphery (1ed), pg. 153
       value: 5
-      page: 153
     icon: green40
     pressure: THIN
     atmosphere: BREATHABLE
@@ -111,9 +109,8 @@ planet:
     temperature: 31
     water: 42
     lifeForm:
-      source: Per1e
+      source: Periphery (1ed), pg. 153
       value: PLANT
-      page: 153
     desc: No description available.
     landmass:
       - name: Reed 1
@@ -124,12 +121,6 @@ planet:
       - name: Reed 5
       - name: Reed 6
     event:
-      - date: '2822-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '2822-12-26'
         faction:
           source: canon
@@ -192,11 +183,6 @@ planet:
         population: 37360804.0
       - date: '3049-01-01'
         socioIndustrial: F-F-A-D-F
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CSJ
       - date: '3049-08-01'
         faction:
           source: canon
@@ -223,12 +209,6 @@ planet:
         population: 38946909.0
       - date: '3090-01-01'
         population: 39259734.0
-      - date: '3095-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - THa
       - date: '3100-01-01'
         population: 39733689.0
       - date: '3100-02-07'
@@ -244,11 +224,6 @@ planet:
         population: 40755851.0
       - date: '3130-01-01'
         population: 41140762.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - THa
       - date: '3140-01-01'
         population: 41579174.0
       - date: '3145-01-01'

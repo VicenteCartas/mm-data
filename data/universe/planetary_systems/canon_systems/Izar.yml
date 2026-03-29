@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: Izar
-sucsId: 1224
+sucsId: 1223
 xcood: -59.981
 ycood: 97.402
 spectralType:
   source: canon
   value: B5VI
 primarySlot:
-  source: DA:RW
+  source: MWDA world profiles
   value: 1
 event:
   - date: '2359-08-08'
@@ -41,31 +41,31 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 59.0
     sysPos:
-      source: DA:RW
+      source: MWDA world profiles
       value: 1
     icon: green37
     pressure:
-      source: DA:RW
+      source: MWDA world profiles
       value: STANDARD
     atmosphere:
-      source: DA:RW
+      source: MWDA world profiles
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: DA:RW
+      source: MWDA world profiles
       value: 0.84
     diameter: 10679
     density: 5.527777928321
     dayLength: 24
     yearLength: 453.2
     temperature:
-      source: DA:RW
+      source: MWDA world profiles
       value: 29
     water:
-      source: DA:RW
+      source: MWDA world profiles
       value: 51
     lifeForm:
-      source: DA:RW
+      source: MWDA world profiles
       value: FISH
     desc: |-
       Izar‘s parent star is actually part of a binary system that consists of a cool, orange K0 sun orbiting a blue-white B5 subgiant. Because of the substantial distance between the two stars, planets were miraculously able to form close to both stars, but only the closest world of the smaller star had developed a breathable atmosphere and enough surface water to support life when it was discovered early in man‘s journey into space. However, Izar‘s orbit, roughly half again as far from its parent star as Terra is from Sol, rendered it a cool world. In fact, with clouds and storms common—even over the interior of the larger landmasses of Celta, Eddin, Morope and Trantara—nights on Izar were particularly cold. Though this did not faze the native evergreen woods that covered most of the hilly mainlands, colonists quickly learned that the only way to make use of the world‘s fertile soil for their own crops was to encapsulate their farms beneath environmentally sealed domes.
@@ -75,28 +75,28 @@ planet:
       Apart from the planetary capital of Promise Point, Izar boasts a second major spaceport in the city of Rhyss on the southern Trantara continent.
     landmass:
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Celta
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Eddin
         capital:
-          source: DA:RW
+          source: MWDA world profiles
           value: Promise Point
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Morope
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Trantara
     satellite:
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Banta
         size: medium
         icon: oddmoon1
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Nunascus
         size: large
         icon: rock7
@@ -152,18 +152,6 @@ planet:
         socioIndustrial: C-C-C-C-D
       - date: '2310-01-01'
         population: 817299881.0
-      - date: '2317-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
-      - date: '2319-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FoS
       - date: '2320-01-01'
         population: 999351501.0
       - date: '2330-01-01'
@@ -171,12 +159,6 @@ planet:
       - date: '2340-01-01'
         population: 1386558135.0
       - date: '2341-02-26'
-        # administration: LA | Federation of Skye
-        # administration: LA | Federation of Skye
-        # administration: LA | Federation of Skye
-        # administration: LA | Federation of Skye
-        # administration: LA | Federation of Skye
-        # administration: LA | Federation of Skye
         faction:
           source: canon
           value:
@@ -332,25 +314,8 @@ planet:
       - date: '3030-01-01'
         population: 4230297343.0
       - date: '3040-01-01'
-        # administration: FC | Skye March | Ryde Operational Area
-        # administration: FC | Skye March | Ryde Operational Area
-        # administration: FC | Skye March | Ryde Operational Area
-        # administration: FC | Skye March | Ryde Operational Area
-        # administration: FC | Skye March | Ryde Operational Area
-        # administration: FC | Skye March | Ryde Operational Area
         population: 4267261491.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FC
       - date: '3040-01-19'
-        # administration: FC | Skye March | Ryde Operational Area
-        # administration: FC | Skye March | Ryde Operational Area
-        # administration: FC | Skye March | Ryde Operational Area
-        # administration: FC | Skye March | Ryde Operational Area
-        # administration: FC | Skye March | Ryde Operational Area
-        # administration: FC | Skye March | Ryde Operational Area
         faction:
           source: canon
           value:
@@ -359,25 +324,7 @@ planet:
         socioIndustrial: A-A-D-A-C
       - date: '3050-01-01'
         population: 4293371340.0
-      - date: '3057-01-01'
-        # administration: LA | Skye March | Ryde Operational Area
-        # administration: LA | Skye March | Ryde Operational Area
-        # administration: LA | Skye March | Ryde Operational Area
-        # administration: LA | Skye March | Ryde Operational Area
-        # administration: LA | Skye March | Ryde Operational Area
-        # administration: LA | Skye March | Ryde Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LA
       - date: '3057-09-18'
-        # administration: LA | Skye Province | Freedom Theater
-        # administration: LA | Skye Province | Freedom Theater
-        # administration: LA | Skye Province | Freedom Theater
-        # administration: LA | Skye Province | Freedom Theater
-        # administration: LA | Skye Province | Freedom Theater
-        # administration: LA | Skye Province | Freedom Theater
         faction:
           source: canon
           value:
@@ -388,25 +335,7 @@ planet:
         population: 4366109267.0
       - date: '3080-01-01'
         population: 4420586080.0
-      - date: '3081-01-01'
-        # administration: ROS | Prefecture IX
-        # administration: ROS | Prefecture IX
-        # administration: ROS | Prefecture IX
-        # administration: ROS | Prefecture IX
-        # administration: ROS | Prefecture IX
-        # administration: ROS | Prefecture IX
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - ROS
       - date: '3081-09-29'
-        # administration: ROS | Prefecture IX
-        # administration: ROS | Prefecture IX
-        # administration: ROS | Prefecture IX
-        # administration: ROS | Prefecture IX
-        # administration: ROS | Prefecture IX
-        # administration: ROS | Prefecture IX
         faction:
           source: canon
           value:
@@ -434,12 +363,6 @@ planet:
         population: 4883549366.0
       - date: '3145-01-01'
         population: 4928685327.0
-      - date: '3152-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '3152-06-01'
         faction:
           source: sucs

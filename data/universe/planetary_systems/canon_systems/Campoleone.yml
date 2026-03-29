@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -23,9 +23,8 @@ spectralType:
   source: canon
   value: G2V
 primarySlot:
-  source: 'HB:HM'
+  source: 'Handbook: House Marik, pg. 74'
   value: 2
-  page: 74
 event:
   - date: '2503-04-28'
     nadirCharge: yes
@@ -52,64 +51,55 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.7
     sysPos:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 74'
       value: 2
-      page: 74
     icon: green29
     pressure:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 74'
       value: STANDARD
-      page: 74
     atmosphere:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 74'
       value: BREATHABLE
-      page: 74
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 74'
       value: 0.85
-      page: 74
     diameter: 14355
     density: 4.161120392651
     dayLength: 25
     yearLength: 1.2
     temperature:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 74'
       value: 32
-      page: 74
     water:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 74'
       value: 39
-      page: 74
     lifeForm:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 74'
       value: PLANT
-      page: 74
-    desc: Campoleone is a cold world on the edge of the Periphery border. The planet is lightly populated and acts primarily as a trade center supported by subsistence-level agriculture. The planet is dotted with villas of wealthy merchants and more than a few spacers choose to retire to Campoleone for its natural beauty. The planet has earned a reputation as the place to go for information on the deep Periphery as it is the primary trade hub for deep Periphery traders and the Free Worlds League. There is little industry on the planet and almost all goods come in from the tradeport.
+    desc: Campoleone is a cold world on the edge of the Periphery border. The planet
+      is lightly populated and acts primarily as a trade center supported by subsistence-level
+      agriculture. The planet is dotted with villas of wealthy merchants and more
+      than a few spacers choose to retire to Campoleone for its natural beauty. The
+      planet has earned a reputation as the place to go for information on the deep
+      Periphery as it is the primary trade hub for deep Periphery traders and the
+      Free Worlds League. There is little industry on the planet and almost all goods
+      come in from the tradeport.
     landmass:
       - name:
-          source: 'HB:HM'
+          source: 'Handbook: House Marik, pg. 74'
           value: Cosenza
-          page: 74
         capital:
-          source: 'HB:HM'
+          source: 'Handbook: House Marik, pg. 74'
           value: Ausapolis
-          page: 74
     satellite:
       - name:
-          source: 'HB:HM'
+          source: 'Handbook: House Marik, pg. 74'
           value: Lonely
-          page: 74
         size: medium
         icon: rock1
     event:
       - date: '2474-07-31'
-        # administration: FWL | Principality of Regulus
-        # administration: FWL | Principality of Regulus
-        # administration: FWL | Principality of Regulus
-        # administration: FWL | Principality of Regulus
-        # administration: FWL | Principality of Regulus
-        # administration: FWL | Principality of Regulus
         faction:
           source: canon
           value:
@@ -258,12 +248,6 @@ planet:
           value: 1250000.0
       - date: '3070-01-01'
         population: 1255261.0
-      - date: '3075-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - RCM
       - date: '3075-04-13'
         faction:
           source: canon
@@ -290,25 +274,8 @@ planet:
       - date: '3140-01-01'
         population: 1319620.0
       - date: '3145-01-01'
-        # administration: FWL | Rim Commonality
-        # administration: FWL | Rim Commonality
-        # administration: FWL | Rim Commonality
-        # administration: FWL | Rim Commonality
-        # administration: FWL | Rim Commonality
-        # administration: FWL | Rim Commonality
         population: 1323584.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FWL
       - date: '3151-01-01'
-        # administration: FWL | Rim Commonality
-        # administration: FWL | Rim Commonality
-        # administration: FWL | Rim Commonality
-        # administration: FWL | Rim Commonality
-        # administration: FWL | Rim Commonality
-        # administration: FWL | Rim Commonality
         faction:
           source: sucs
           value:
@@ -495,20 +462,8 @@ planet:
       - date: '3140-01-01'
         population: 118076711.0
       - date: '3145-01-01'
-        # administration: FWL | Rim Commonality
-        # administration: FWL | Rim Commonality
-        # administration: FWL | Rim Commonality
-        # administration: FWL | Rim Commonality
-        # administration: FWL | Rim Commonality
-        # administration: FWL | Rim Commonality
         population: 118218489.0
       - date: '3151-01-01'
-        # administration: FWL | Rim Commonality
-        # administration: FWL | Rim Commonality
-        # administration: FWL | Rim Commonality
-        # administration: FWL | Rim Commonality
-        # administration: FWL | Rim Commonality
-        # administration: FWL | Rim Commonality
         faction:
           source: sucs
           value:

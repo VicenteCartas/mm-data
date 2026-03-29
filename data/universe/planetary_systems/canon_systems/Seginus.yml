@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: Seginus
-sucsId: 2273
+sucsId: 2272
 xcood: -82.36
 ycood: 62.765
 spectralType:
-  source: DA:RW
+  source: MWDA world profiles
   value: A7V
 primarySlot:
-  source: DA:RW
+  source: MWDA world profiles
   value: 3
 event:
   - date: '2397-03-07'
@@ -75,31 +75,31 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 2.88
     sysPos:
-      source: DA:RW
+      source: MWDA world profiles
       value: 3
     icon: green23
     pressure:
-      source: DA:RW
+      source: MWDA world profiles
       value: STANDARD
     atmosphere:
-      source: DA:RW
+      source: MWDA world profiles
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: DA:RW
+      source: MWDA world profiles
       value: 1.02
     diameter: 10892
     density: 6.58111421493
     dayLength: 25
     yearLength: 5.1
     temperature:
-      source: DA:RW
+      source: MWDA world profiles
       value: 52
     water:
-      source: DA:RW
+      source: MWDA world profiles
       value: 72
     lifeForm:
-      source: DA:RW
+      source: MWDA world profiles
       value: FISH
     desc: |-
       Seginus is a hot and steamy world with a single gigantic supercontinent, Teremun, that seems almost completely covered in rocky mountains, thick jungles, and swirling storms. Thunderstorms, hurricanes, and tornadoes constantly churn the water and pound the land on this world, varying in intensity between seasons, but seemingly never coming to an end. Settled in spite of its harsh climate and lack of mineral or metallurgical wealth, Seginus eventually came under the sway of the Federation of Skye, and later the Lyran Commonwealth, its people benefiting from the mercantile alliances that became the foundations of House Steiner.
@@ -109,19 +109,19 @@ planet:
       The capital city, Gambootas, is home not only to the planet‘s sole interstellar spaceport, but also to the corporate headquarters of Segine AquaCulture, the planet‘s largest marine ranching and food processing industry.
     landmass:
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Teremun
         capital:
-          source: DA:RW
+          source: MWDA world profiles
           value: Gambootas
     satellite:
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Minisc
         size: medium
         icon: rock4
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Ophra
         size: giant
         icon: rock7
@@ -153,31 +153,13 @@ planet:
         population: 11605375.0
       - date: '2310-01-01'
         population: 21974184.0
-      - date: '2317-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '2320-01-01'
         population: 38430543.0
       - date: '2330-01-01'
         population: 62312519.0
       - date: '2340-01-01'
         population: 95475406.0
-      - date: '2341-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FoS
       - date: '2341-03-16'
-        # administration: LA | Federation of Skye
-        # administration: LA | Federation of Skye
-        # administration: LA | Federation of Skye
-        # administration: LA | Federation of Skye
-        # administration: LA | Federation of Skye
-        # administration: LA | Federation of Skye
         faction:
           source: canon
           value:
@@ -332,25 +314,8 @@ planet:
       - date: '3036-01-01'
         socioIndustrial: C-D-C-C-C
       - date: '3040-01-01'
-        # administration: FC | Skye March | Alcor Operational Area
-        # administration: FC | Skye March | Alcor Operational Area
-        # administration: FC | Skye March | Alcor Operational Area
-        # administration: FC | Skye March | Alcor Operational Area
-        # administration: FC | Skye March | Alcor Operational Area
-        # administration: FC | Skye March | Alcor Operational Area
         population: 1074607523.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FC
       - date: '3040-01-19'
-        # administration: FC | Skye March | Alcor Operational Area
-        # administration: FC | Skye March | Alcor Operational Area
-        # administration: FC | Skye March | Alcor Operational Area
-        # administration: FC | Skye March | Alcor Operational Area
-        # administration: FC | Skye March | Alcor Operational Area
-        # administration: FC | Skye March | Alcor Operational Area
         faction:
           source: canon
           value:
@@ -359,25 +324,7 @@ planet:
         socioIndustrial: A-B-B-A-B
       - date: '3050-01-01'
         population: 1088559758.0
-      - date: '3057-01-01'
-        # administration: LA | Skye March | Alcor Operational Area
-        # administration: LA | Skye March | Alcor Operational Area
-        # administration: LA | Skye March | Alcor Operational Area
-        # administration: LA | Skye March | Alcor Operational Area
-        # administration: LA | Skye March | Alcor Operational Area
-        # administration: LA | Skye March | Alcor Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LA
       - date: '3057-09-18'
-        # administration: LA | Skye Province
-        # administration: LA | Skye Province
-        # administration: LA | Skye Province
-        # administration: LA | Skye Province
-        # administration: LA | Skye Province
-        # administration: LA | Skye Province
         faction:
           source: canon
           value:
@@ -388,25 +335,7 @@ planet:
         population: 1109107347.0
       - date: '3080-01-01'
         population: 1120926415.0
-      - date: '3081-01-01'
-        # administration: ROS | Prefecture IX
-        # administration: ROS | Prefecture IX
-        # administration: ROS | Prefecture IX
-        # administration: ROS | Prefecture IX
-        # administration: ROS | Prefecture IX
-        # administration: ROS | Prefecture IX
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - ROS
       - date: '3081-02-05'
-        # administration: ROS | Prefecture IX
-        # administration: ROS | Prefecture IX
-        # administration: ROS | Prefecture IX
-        # administration: ROS | Prefecture IX
-        # administration: ROS | Prefecture IX
-        # administration: ROS | Prefecture IX
         faction:
           source: canon
           value:
@@ -427,12 +356,6 @@ planet:
         population: 1209679562.0
       - date: '3132-08-07'
         hpg: X
-      - date: '3135-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '3135-10-01'
         faction:
           source: canon
@@ -440,30 +363,12 @@ planet:
             - IND
       - date: '3140-01-01'
         population: 1225017953.0
-      - date: '3145-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CJF
       - date: '3145-07-25'
         faction:
           source: canon
           value:
             - CJF
         population: 1231158381.0
-      - date: '3152-01-01'
-        # administration: LA | Donegal Province
-        # administration: LA | Donegal Province
-        # administration: LA | Donegal Province
-        # administration: LA | Donegal Province
-        # administration: LA | Donegal Province
-        # administration: LA | Donegal Province
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LA
       - date: '3152-06-01'
         faction:
           source: sucs

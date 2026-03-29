@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -20,13 +20,11 @@ sucsId: 535
 xcood: 115.619
 ycood: -71.037
 spectralType:
-  source: 'HB:HD'
+  source: 'Handbook: House Davion, pg. 87'
   value: G9V
-  page: 87
 primarySlot:
-  source: 'HB:HD'
+  source: 'Handbook: House Davion, pg. 87'
   value: 5
-  page: 87
 event:
   - date: '2387-04-21'
     nadirCharge: yes
@@ -40,7 +38,8 @@ planet:
     icon: barren6
     pressure: THIN
     atmosphere: TOXIC_POISON
-    composition: Nitrogen and Carbon Dioxide, plus trace amounts of Methane and Nitric Acid
+    composition: Nitrogen and Carbon Dioxide, plus trace amounts of Methane and Nitric
+      Acid
     gravity: 0.77
     diameter: 8500
     density: 6.3337
@@ -116,76 +115,69 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.56
     sysPos:
-      source: 'HB:HD'
+      source: 'Handbook: House Davion, pg. 87'
       value: 5
-      page: 87
     icon: wet16
     pressure:
-      source: 'HB:HD'
+      source: 'Handbook: House Davion, pg. 87'
       value: STANDARD
-      page: 87
     atmosphere:
-      source: 'HB:HD'
+      source: 'Handbook: House Davion, pg. 87'
       value: BREATHABLE
-      page: 87
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'HB:HD'
+      source: 'Handbook: House Davion, pg. 87'
       value: 1.13
-      page: 87
     diameter: 12385
     density: 6.411974728084
     dayLength: 22
     yearLength: 1.0
     temperature:
-      source: 'HB:HD'
+      source: 'Handbook: House Davion, pg. 87'
       value: 31
-      page: 87
     water:
-      source: 'HB:HD'
+      source: 'Handbook: House Davion, pg. 87'
       value: 75
-      page: 87
     lifeForm:
-      source: 'HB:HD'
+      source: 'Handbook: House Davion, pg. 87'
       value: MAMMAL
-      page: 87
-    desc: Chesterton is a cool-temperate planet with above average resources and a wide industrial base. Unfortunately this has caused problems for the planet due to the location on the Federated Suns’ border with the Capellan Confederation. Regular raids and invasions did significant damage to Chesterton’s population, infrastructure, and manufacturing during the Succession Wars. However, the planet was able to begin recovery after the 4th Succession War and by the late 3060s the planet was nearly restored to its former glory.
+    desc: Chesterton is a cool-temperate planet with above average resources and a
+      wide industrial base. Unfortunately this has caused problems for the planet
+      due to the location on the Federated Suns’ border with the Capellan Confederation.
+      Regular raids and invasions did significant damage to Chesterton’s population,
+      infrastructure, and manufacturing during the Succession Wars. However, the planet
+      was able to begin recovery after the 4th Succession War and by the late 3060s
+      the planet was nearly restored to its former glory.
     landmass:
       - name: Smith
         capital:
-          source: 'HB:HD'
+          source: 'Handbook: House Davion, pg. 87'
           value: Chesterton
-          page: 87
       - name: Sawyer
     satellite:
       - name:
-          source: 'HB:HD'
+          source: 'Handbook: House Davion, pg. 87'
           value: Angela
-          page: 87
         size: medium
         icon: oddmoon2
       - name:
-          source: 'HB:HD'
+          source: 'Handbook: House Davion, pg. 87'
           value: Iannius
-          page: 87
         size: giant
         icon: rock12
       - name:
-          source: 'HB:HD'
+          source: 'Handbook: House Davion, pg. 87'
           value: Moira
-          page: 87
         size: medium
         icon: rock9
       - name:
-          source: 'HB:HD'
+          source: 'Handbook: House Davion, pg. 87'
           value: Nochus
-          page: 87
         size: medium
         icon: rock2
       - name:
-          source: 'HB:HD'
+          source: 'Handbook: House Davion, pg. 87'
           value: Willus
-          page: 87
         size: medium
         icon: oddmoon3
     event:
@@ -207,12 +199,6 @@ planet:
       - date: '2240-01-01'
         population: 7959705.0
       - date: '2243-03-26'
-        # administration: TGU | District Capital
-        # administration: TGU | District Capital
-        # administration: TGU | District Capital
-        # administration: TGU | District Capital
-        # administration: TGU | District Capital
-        # administration: TGU | District Capital
         faction:
           source: canon
           value:
@@ -236,18 +222,6 @@ planet:
         population: 193810628.0
       - date: '2310-01-01'
         population: 271240804.0
-      - date: '2317-01-01'
-        # administration: TGU | District Capital
-        # administration: TGU | District Capital
-        # administration: TGU | District Capital
-        # administration: TGU | District Capital
-        # administration: TGU | District Capital
-        # administration: TGU | District Capital
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - TGU
       - date: '2320-01-01'
         population: 364344364.0
       - date: '2330-01-01'
@@ -262,12 +236,6 @@ planet:
           value:
             - SSUP
       - date: '2357-08-01'
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
         faction:
           source: canon
           value:
@@ -428,25 +396,8 @@ planet:
       - date: '3030-01-01'
         population: 1772148314.0
       - date: '3040-01-01'
-        # administration: FC | Capellan March | Kathil Operational Area
-        # administration: FC | Capellan March | Kathil Operational Area
-        # administration: FC | Capellan March | Kathil Operational Area
-        # administration: FC | Capellan March | Kathil Operational Area
-        # administration: FC | Capellan March | Kathil Operational Area
-        # administration: FC | Capellan March | Kathil Operational Area
         population: 2012189651.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FC
       - date: '3040-01-19'
-        # administration: FC | Capellan March | Kathil Operational Area
-        # administration: FC | Capellan March | Kathil Operational Area
-        # administration: FC | Capellan March | Kathil Operational Area
-        # administration: FC | Capellan March | Kathil Operational Area
-        # administration: FC | Capellan March | Kathil Operational Area
-        # administration: FC | Capellan March | Kathil Operational Area
         faction:
           source: canon
           value:
@@ -460,27 +411,10 @@ planet:
       - date: '3060-01-01'
         population: 2432035864.0
       - date: '3067-01-01'
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
         population:
           source: canon
           value: 2607760000.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FS
       - date: '3067-04-20'
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
         faction:
           source: canon
           value:
@@ -506,25 +440,7 @@ planet:
           value: X
       - date: '3140-01-01'
         population: 2722339485.0
-      - date: '3145-01-01'
-        # administration: CC | Chesterton Commonality | District Capital
-        # administration: CC | Chesterton Commonality | District Capital
-        # administration: CC | Chesterton Commonality | District Capital
-        # administration: CC | Chesterton Commonality | District Capital
-        # administration: CC | Chesterton Commonality | District Capital
-        # administration: CC | Chesterton Commonality | District Capital
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CC
       - date: '3145-12-05'
-        # administration: CC | Chesterton Commonality | District Capital
-        # administration: CC | Chesterton Commonality | District Capital
-        # administration: CC | Chesterton Commonality | District Capital
-        # administration: CC | Chesterton Commonality | District Capital
-        # administration: CC | Chesterton Commonality | District Capital
-        # administration: CC | Chesterton Commonality | District Capital
         faction:
           source: canon
           value:

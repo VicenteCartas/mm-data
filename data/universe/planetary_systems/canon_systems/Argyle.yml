@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -20,13 +20,11 @@ sucsId: 171
 xcood: 255.384
 ycood: -109.174
 spectralType:
-  source: 'HB:HD'
+  source: 'Handbook: House Davion, pg. 93'
   value: K3IV
-  page: 93
 primarySlot:
-  source: 'HB:HD'
+  source: 'Handbook: House Davion, pg. 93'
   value: 3
-  page: 93
 event:
   - date: '2351-09-22'
     nadirCharge: yes
@@ -69,78 +67,66 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.7
     sysPos:
-      source: 'HB:HD'
+      source: 'Handbook: House Davion, pg. 93'
       value: 3
-      page: 93
     icon: green29
     pressure:
-      source: 'HB:HD'
+      source: 'Handbook: House Davion, pg. 93'
       value: STANDARD
-      page: 93
     atmosphere:
-      source: 'HB:HD'
+      source: 'Handbook: House Davion, pg. 93'
       value: BREATHABLE
-      page: 93
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'HB:HD'
+      source: 'Handbook: House Davion, pg. 93'
       value: 1.0
-      page: 93
     diameter: 12229
     density: 5.746634708038
     dayLength: 21
     yearLength: 1.0
     temperature:
-      source: 'HB:HD'
+      source: 'Handbook: House Davion, pg. 93'
       value: 33
-      page: 93
     water:
-      source: 'HB:HD'
+      source: 'Handbook: House Davion, pg. 93'
       value: 74
-      page: 93
     lifeForm:
-      source: 'HB:HD'
+      source: 'Handbook: House Davion, pg. 93'
       value: MAMMAL
-      page: 93
-    desc: Argyle is a comfortable temperate world with large tracts of arable land. Despite being a breadbasket planet, Argyle also possesses an enviable amount of industry and technology, thanks largely to its location near New Avalon and the ‘Golden Five’ planets in the Federated Suns. The planet is a massive exporter of food, electronics, and goods used in manufacturing on nearby planets. The wide open terrain of Argyle has made it a popular tourist location for people from New Avalon and other nearby worlds, including the Davion family.
+    desc: Argyle is a comfortable temperate world with large tracts of arable land.
+      Despite being a breadbasket planet, Argyle also possesses an enviable amount
+      of industry and technology, thanks largely to its location near New Avalon and
+      the ‘Golden Five’ planets in the Federated Suns. The planet is a massive exporter
+      of food, electronics, and goods used in manufacturing on nearby planets. The
+      wide open terrain of Argyle has made it a popular tourist location for people
+      from New Avalon and other nearby worlds, including the Davion family.
     landmass:
       - capital:
-          source: 'HB:HD'
+          source: 'Handbook: House Davion, pg. 93'
           value: Stirling
-          page: 93
     satellite:
       - name:
-          source: 'HB:HD'
+          source: 'Handbook: House Davion, pg. 93'
           value: Aisillik
-          page: 93
         size: large
         icon: rock17
       - name:
-          source: 'HB:HD'
+          source: 'Handbook: House Davion, pg. 93'
           value: Corey
-          page: 93
         size: large
         icon: rock8
       - name:
-          source: 'HB:HD'
+          source: 'Handbook: House Davion, pg. 93'
           value: Jamis
-          page: 93
         size: large
         icon: rock7
       - name:
-          source: 'HB:HD'
+          source: 'Handbook: House Davion, pg. 93'
           value: Stiggin's Moon
-          page: 93
         size: medium
         icon: oddmoon1
     event:
       - date: '2309-11-19'
-        # administration: FS | Crucis March | Markesan Operational Area
-        # administration: FS | Crucis March | Markesan Operational Area
-        # administration: FS | Crucis March | Markesan Operational Area
-        # administration: FS | Crucis March | Markesan Operational Area
-        # administration: FS | Crucis March | Markesan Operational Area
-        # administration: FS | Crucis March | Markesan Operational Area
         faction:
           source: canon
           value:
@@ -308,25 +294,8 @@ planet:
         population: 4291241578.0
         socioIndustrial: B-B-B-C-B
       - date: '3040-01-01'
-        # administration: FC | Crucis March | Markesan Operational Area
-        # administration: FC | Crucis March | Markesan Operational Area
-        # administration: FC | Crucis March | Markesan Operational Area
-        # administration: FC | Crucis March | Markesan Operational Area
-        # administration: FC | Crucis March | Markesan Operational Area
-        # administration: FC | Crucis March | Markesan Operational Area
         population: 4324411679.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FC
       - date: '3040-01-19'
-        # administration: FC | Crucis March | Markesan Operational Area
-        # administration: FC | Crucis March | Markesan Operational Area
-        # administration: FC | Crucis March | Markesan Operational Area
-        # administration: FC | Crucis March | Markesan Operational Area
-        # administration: FC | Crucis March | Markesan Operational Area
-        # administration: FC | Crucis March | Markesan Operational Area
         faction:
           source: canon
           value:
@@ -340,27 +309,10 @@ planet:
       - date: '3060-01-01'
         population: 4378368223.0
       - date: '3067-01-01'
-        # administration: FS | Crucis March | Markesan Operational Area
-        # administration: FS | Crucis March | Markesan Operational Area
-        # administration: FS | Crucis March | Markesan Operational Area
-        # administration: FS | Crucis March | Markesan Operational Area
-        # administration: FS | Crucis March | Markesan Operational Area
-        # administration: FS | Crucis March | Markesan Operational Area
         population:
           source: canon
           value: 4395477200.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FS
       - date: '3067-04-20'
-        # administration: FS | Crucis March | Markesan Operational Area
-        # administration: FS | Crucis March | Markesan Operational Area
-        # administration: FS | Crucis March | Markesan Operational Area
-        # administration: FS | Crucis March | Markesan Operational Area
-        # administration: FS | Crucis March | Markesan Operational Area
-        # administration: FS | Crucis March | Markesan Operational Area
         faction:
           source: canon
           value:

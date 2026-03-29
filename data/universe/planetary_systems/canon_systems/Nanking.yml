@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: Nanking
-sucsId: 1797
+sucsId: 1796
 xcood: 22.742
 ycood: -51.745
 spectralType:
-  source: 'OR'
+  source: 'Objective Raids: Capellan Confederation'
   value: G1V
 primarySlot:
-  source: 'OR'
+  source: 'Objective Raids: Capellan Confederation'
   value: 4
 event:
   - date: '2355-05-31'
@@ -51,7 +51,8 @@ planet:
     icon: rock2
     pressure: TRACE
     atmosphere: TOXIC_POISON
-    composition: Nitrogen and Carbon Dioxide, plus trace amounts of Argon and Carbonyl Sulfide
+    composition: Nitrogen and Carbon Dioxide, plus trace amounts of Argon and Carbonyl
+      Sulfide
     gravity: 0.64
     diameter: 8500
     density: 5.3284
@@ -80,31 +81,31 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 1.6
     sysPos:
-      source: 'OR'
+      source: 'Objective Raids: Capellan Confederation'
       value: 4
     icon: green21
     pressure:
-      source: 'OR'
+      source: 'Objective Raids: Capellan Confederation'
       value: STANDARD
     atmosphere:
-      source: 'OR'
+      source: 'Objective Raids: Capellan Confederation'
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'OR'
+      source: 'Objective Raids: Capellan Confederation'
       value: 1.06
     diameter: 12683
     density: 5.873626421834
     dayLength: 23
     yearLength: 2.3
     temperature:
-      source: 'OR'
+      source: 'Objective Raids: Capellan Confederation'
       value: 36
     water:
-      source: 'OR'
+      source: 'Objective Raids: Capellan Confederation'
       value: 70
     lifeForm:
-      source: 'OR'
+      source: 'Objective Raids: Capellan Confederation'
       value: PLANT
     desc: |-
       Nanking was one of the first trade centres developed during the original Exodus from Terra and found itself incorporated into the Tikonov Union during the late 23rd century. In later history it was an important commercial center, rivaling Styk, with 17 percent of all Confederation commerce flowing through Nanking. Nanking's primary industries centered around mining deposits of platinum and copper, which attracted substantial interstellar trade and exchange to the system.
@@ -122,26 +123,26 @@ planet:
           source: canon
           value: Yangtze
         capital:
-          source: 'OR'
+          source: 'Objective Raids: Capellan Confederation'
           value: Yang-Ku
     satellite:
       - name:
-          source: 'OR'
+          source: 'Objective Raids: Capellan Confederation'
           value: Chang-o
         size: large
         icon: rock10
       - name:
-          source: 'OR'
+          source: 'Objective Raids: Capellan Confederation'
           value: How-Chu
         size: large
         icon: rock4
       - name:
-          source: 'OR'
+          source: 'Objective Raids: Capellan Confederation'
           value: Kun-Lun
         size: medium
         icon: oddmoon3
       - name:
-          source: 'OR'
+          source: 'Objective Raids: Capellan Confederation'
           value: Yi
         size: medium
         icon: rock7
@@ -172,34 +173,16 @@ planet:
           source: canon
           value:
             - DoL
-      - date: '2317-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '2320-01-01'
         population: 117559890.0
       - date: '2330-01-01'
         population: 214201943.0
       - date: '2340-01-01'
         population: 361566859.0
-      - date: '2341-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - TH
       - date: '2350-01-01'
         population: 567297086.0
       - date: '2360-01-01'
         population: 836230169.0
-      - date: '2366-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CCom
       - date: '2367-07-01'
         faction:
           source: canon
@@ -251,25 +234,7 @@ planet:
         population: 8224029709.0
       - date: '2570-01-01'
         population: 8383390093.0
-      - date: '2571-01-01'
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - TH
       - date: '2571-09-29'
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
         faction:
           source: canon
           value:
@@ -318,18 +283,6 @@ planet:
         population: 9188922589.0
       - date: '2760-01-01'
         population: 9118602107.0
-      - date: '2767-01-01'
-        # administration: AE | Terra Firma Province
-        # administration: AE | Terra Firma Province
-        # administration: AE | Terra Firma Province
-        # administration: AE | Terra Firma Province
-        # administration: AE | Terra Firma Province
-        # administration: AE | Terra Firma Province
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - AE
       - date: '2767-01-12'
         faction:
           source: canon
@@ -341,12 +294,6 @@ planet:
       - date: '2770-01-01'
         population: 9026486238.0
       - date: '2779-03-22'
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
         faction:
           source: canon
           value:
@@ -356,30 +303,12 @@ planet:
           source: canon
           value: A
         population: 8828282295.0
-      - date: '2786-01-01'
-        # administration: CC | Tikonov Commonality | Region 2
-        # administration: CC | Tikonov Commonality | Region 2
-        # administration: CC | Tikonov Commonality | Region 2
-        # administration: CC | Tikonov Commonality | Region 2
-        # administration: CC | Tikonov Commonality | Region 2
-        # administration: CC | Tikonov Commonality | Region 2
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CC
       - date: '2786-02-17'
         faction:
           source: canon
           value:
             - CC
       - date: '2790-12-28'
-        # administration: CC | Tikonov Commonality | Region 6
-        # administration: CC | Tikonov Commonality | Region 6
-        # administration: CC | Tikonov Commonality | Region 6
-        # administration: CC | Tikonov Commonality | Region 6
-        # administration: CC | Tikonov Commonality | Region 6
-        # administration: CC | Tikonov Commonality | Region 6
         faction:
           source: canon
           value:
@@ -453,25 +382,8 @@ planet:
           value:
             - FS
       - date: '3040-01-01'
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
         population: 5933493008.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FC
       - date: '3040-01-19'
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
         faction:
           source: canon
           value:
@@ -490,45 +402,16 @@ planet:
           value:
             - FC
             - LA
-      - date: '3063-01-01'
-        # administration: FC | Capellan March | Kathil Operational Area
-        # administration: FC | Capellan March | Kathil Operational Area
-        # administration: FC | Capellan March | Kathil Operational Area
-        # administration: FC | Capellan March | Kathil Operational Area
-        # administration: FC | Capellan March | Kathil Operational Area
-        # administration: FC | Capellan March | Kathil Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FC
       - date: '3063-03-28'
         faction:
           source: canon
           value:
             - FC
       - date: '3067-01-01'
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
         population:
           source: canon
           value: 5975280350.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FS
       - date: '3067-04-20'
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
         faction:
           source: canon
           value:
@@ -548,12 +431,6 @@ planet:
             - CC
             - WOB
       - date: '3077-11-12'
-        # administration: CC | Liao Commonality | Region 1
-        # administration: CC | Liao Commonality | Region 1
-        # administration: CC | Liao Commonality | Region 1
-        # administration: CC | Liao Commonality | Region 1
-        # administration: CC | Liao Commonality | Region 1
-        # administration: CC | Liao Commonality | Region 1
         faction:
           source: canon
           value:
@@ -564,25 +441,7 @@ planet:
           value: 5972080000.0
       - date: '3080-01-01'
         population: 5975899037.0
-      - date: '3085-01-01'
-        # administration: ROS | Prefecture VI
-        # administration: ROS | Prefecture VI
-        # administration: ROS | Prefecture VI
-        # administration: ROS | Prefecture VI
-        # administration: ROS | Prefecture VI
-        # administration: ROS | Prefecture VI
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - ROS
       - date: '3085-03-30'
-        # administration: ROS | Prefecture VI
-        # administration: ROS | Prefecture VI
-        # administration: ROS | Prefecture VI
-        # administration: ROS | Prefecture VI
-        # administration: ROS | Prefecture VI
-        # administration: ROS | Prefecture VI
         faction:
           source: canon
           value:
@@ -603,12 +462,6 @@ planet:
         hpg:
           source: canon
           value: X
-      - date: '3135-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '3135-10-01'
         faction:
           source: canon
@@ -616,25 +469,7 @@ planet:
             - IND
       - date: '3140-01-01'
         population: 6008256177.0
-      - date: '3145-01-01'
-        # administration: CC | Tikonov Commonality | Region 4
-        # administration: CC | Tikonov Commonality | Region 4
-        # administration: CC | Tikonov Commonality | Region 4
-        # administration: CC | Tikonov Commonality | Region 4
-        # administration: CC | Tikonov Commonality | Region 4
-        # administration: CC | Tikonov Commonality | Region 4
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CC
       - date: '3145-02-06'
-        # administration: CC | Tikonov Commonality | Region 7
-        # administration: CC | Tikonov Commonality | Region 7
-        # administration: CC | Tikonov Commonality | Region 7
-        # administration: CC | Tikonov Commonality | Region 7
-        # administration: CC | Tikonov Commonality | Region 7
-        # administration: CC | Tikonov Commonality | Region 7
         faction:
           source: canon
           value:

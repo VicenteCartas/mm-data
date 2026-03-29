@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: Towne
-sucsId: 2575
+sucsId: 2574
 xcood: 69.265
 ycood: 7.961
 spectralType:
-  source: DA:RW
+  source: MWDA world profiles
   value: F8IV
 primarySlot:
-  source: DA:RW
+  source: MWDA world profiles
   value: 3
 event:
   - date: '2358-04-15'
@@ -83,55 +83,74 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 3.36
     sysPos:
-      source: DA:RW
+      source: MWDA world profiles
       value: 3
     icon: green55
     pressure:
-      source: DA:RW
+      source: MWDA world profiles
       value: STANDARD
     atmosphere:
-      source: DA:RW
+      source: MWDA world profiles
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: DA:RW
+      source: MWDA world profiles
       value: 0.97
     diameter: 11076
     density: 6.154269659581
     dayLength: 22
     yearLength: 6.3
     temperature:
-      source: DA:RW
+      source: MWDA world profiles
       value: 40
     water:
-      source: DA:RW
+      source: MWDA world profiles
       value: 72
     lifeForm:
-      source: DA:RW
+      source: MWDA world profiles
       value: MAMMAL
-    desc: Towne is a geologically young planet with large mountains and deep oceans, but also features a diverse ecosphere, the epitome of which is the giant, shaggy, six-legged Eiglotherium. Warmer than Terra, the first colonial settlements were established on the northern Hyborian Continent. Abundant metallic ore deposits, with copper the largest by far, are found mostly in the planet‘s oceans. These deposits have formed the basis of Towne‘s industry, as well as a host of offshore mining platforms and underwater communities seeking to access these valuable resources. Hardwoods and cattle ranching are Towne‘s next most major industries, and for that reason much of the planet‘s imports have been in the form of industrial ‘Mechs , particularly mining, construction, and forestry ‘Mech designs. As a Combine-Suns border world, Towne has suffered its share of invasions during the Succession Wars, but despite it all, the planet retains much of its natural beauty. Aside from the Hyborian continent, Towne has four other landmasses, with Krom at the south pole, Fetryl and Gherst in the southern temperate lattitudes, and the island-continent of Howell in the north, several hundred kilometers east of Hyboria. Of these landmasses, all but Krom are sparsely populated. Gherst, in fact, features the planet‘s second-largest city, a water-port town called Kale Bay, second only to the capital city of Port Howard. Located on the Hyborian continent, Port Howard is also home to the Price John Spaceport, Towne‘s major link to the galaxy at large.
+    desc: Towne is a geologically young planet with large mountains and deep oceans,
+      but also features a diverse ecosphere, the epitome of which is the giant, shaggy,
+      six-legged Eiglotherium. Warmer than Terra, the first colonial settlements were
+      established on the northern Hyborian Continent. Abundant metallic ore deposits,
+      with copper the largest by far, are found mostly in the planet‘s oceans. These
+      deposits have formed the basis of Towne‘s industry, as well as a host of offshore
+      mining platforms and underwater communities seeking to access these valuable
+      resources. Hardwoods and cattle ranching are Towne‘s next most major industries,
+      and for that reason much of the planet‘s imports have been in the form of industrial
+      ‘Mechs , particularly mining, construction, and forestry ‘Mech designs. As a
+      Combine-Suns border world, Towne has suffered its share of invasions during
+      the Succession Wars, but despite it all, the planet retains much of its natural
+      beauty. Aside from the Hyborian continent, Towne has four other landmasses,
+      with Krom at the south pole, Fetryl and Gherst in the southern temperate lattitudes,
+      and the island-continent of Howell in the north, several hundred kilometers
+      east of Hyboria. Of these landmasses, all but Krom are sparsely populated. Gherst,
+      in fact, features the planet‘s second-largest city, a water-port town called
+      Kale Bay, second only to the capital city of Port Howard. Located on the Hyborian
+      continent, Port Howard is also home to the Price John Spaceport, Towne‘s major
+      link to the galaxy at large.
     landmass:
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Fetryl
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Gherst
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Howell
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Hyboria
         capital:
-          source: DA:RW
+          source: MWDA world profiles
           value: Port Howard
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Krom
     satellite:
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Conan
         size: medium
         icon: oddmoon3
@@ -178,24 +197,12 @@ planet:
         population: 309315359.0
       - date: '2310-01-01'
         population: 393534301.0
-      - date: '2317-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - TH
       - date: '2317-11-15'
         faction:
           source: canon
           value:
             - TH
       - date: '2319-11-08'
-        # administration: TH | Lockdale Province
-        # administration: TH | Lockdale Province
-        # administration: TH | Lockdale Province
-        # administration: TH | Lockdale Province
-        # administration: TH | Lockdale Province
-        # administration: TH | Lockdale Province
         faction:
           source: canon
           value:
@@ -298,18 +305,6 @@ planet:
         population: 2576899003.0
       - date: '2760-01-01'
         population: 2590202700.0
-      - date: '2767-01-01'
-        # administration: AE | Lockdale Province
-        # administration: AE | Lockdale Province
-        # administration: AE | Lockdale Province
-        # administration: AE | Lockdale Province
-        # administration: AE | Lockdale Province
-        # administration: AE | Lockdale Province
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - AE
       - date: '2767-09-06'
         faction:
           source: canon
@@ -318,12 +313,6 @@ planet:
       - date: '2770-01-01'
         population: 2593752182.0
       - date: '2779-12-25'
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
         faction:
           source: canon
           value:
@@ -335,18 +324,6 @@ planet:
           source: canon
           value:
             - DC
-      - date: '2786-01-01'
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FS
       - date: '2786-07-07'
         faction:
           source: canon
@@ -360,25 +337,7 @@ planet:
         population: 2436754637.0
       - date: '2820-01-01'
         population: 2393350214.0
-      - date: '2821-01-01'
-        # administration: DC | Dieron Military District | Addicks Prefecture
-        # administration: DC | Dieron Military District | Addicks Prefecture
-        # administration: DC | Dieron Military District | Addicks Prefecture
-        # administration: DC | Dieron Military District | Addicks Prefecture
-        # administration: DC | Dieron Military District | Addicks Prefecture
-        # administration: DC | Dieron Military District | Addicks Prefecture
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - DC
       - date: '2821-08-20'
-        # administration: DC | Dieron Military District | Addicks Prefecture
-        # administration: DC | Dieron Military District | Addicks Prefecture
-        # administration: DC | Dieron Military District | Addicks Prefecture
-        # administration: DC | Dieron Military District | Addicks Prefecture
-        # administration: DC | Dieron Military District | Addicks Prefecture
-        # administration: DC | Dieron Military District | Addicks Prefecture
         faction:
           source: canon
           value:
@@ -396,12 +355,6 @@ planet:
       - date: '2870-01-01'
         population: 2199172784.0
       - date: '2876-07-26'
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
         faction:
           source: canon
           value:
@@ -439,12 +392,6 @@ planet:
       - date: '3020-01-01'
         population: 2016979507.0
       - date: '3025-09-16'
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
         faction:
           source: canon
           value:
@@ -454,25 +401,8 @@ planet:
       - date: '3032-01-01'
         socioIndustrial: B-C-D-C-C
       - date: '3040-01-01'
-        # administration: FC | Draconis March | Robinson Operational Area
-        # administration: FC | Draconis March | Robinson Operational Area
-        # administration: FC | Draconis March | Robinson Operational Area
-        # administration: FC | Draconis March | Robinson Operational Area
-        # administration: FC | Draconis March | Robinson Operational Area
-        # administration: FC | Draconis March | Robinson Operational Area
         population: 2020841765.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FC
       - date: '3040-01-19'
-        # administration: FC | Draconis March | Robinson Operational Area
-        # administration: FC | Draconis March | Robinson Operational Area
-        # administration: FC | Draconis March | Robinson Operational Area
-        # administration: FC | Draconis March | Robinson Operational Area
-        # administration: FC | Draconis March | Robinson Operational Area
-        # administration: FC | Draconis March | Robinson Operational Area
         faction:
           source: canon
           value:
@@ -488,37 +418,13 @@ planet:
             - FC
             - DC
       - date: '3058-03-02'
-        # administration: FC | Draconis March | Robinson Operational Area
-        # administration: FC | Draconis March | Robinson Operational Area
-        # administration: FC | Draconis March | Robinson Operational Area
-        # administration: FC | Draconis March | Robinson Operational Area
-        # administration: FC | Draconis March | Robinson Operational Area
-        # administration: FC | Draconis March | Robinson Operational Area
         faction:
           source: canon
           value:
             - FC
       - date: '3060-01-01'
         population: 2047079493.0
-      - date: '3067-01-01'
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FS
       - date: '3067-04-20'
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
         faction:
           source: canon
           value:
@@ -543,25 +449,7 @@ planet:
             - Stone
       - date: '3080-01-01'
         population: 2096384386.0
-      - date: '3081-01-01'
-        # administration: ROS | Prefecture III
-        # administration: ROS | Prefecture III
-        # administration: ROS | Prefecture III
-        # administration: ROS | Prefecture III
-        # administration: ROS | Prefecture III
-        # administration: ROS | Prefecture III
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - ROS
       - date: '3081-11-19'
-        # administration: ROS | Prefecture III
-        # administration: ROS | Prefecture III
-        # administration: ROS | Prefecture III
-        # administration: ROS | Prefecture III
-        # administration: ROS | Prefecture III
-        # administration: ROS | Prefecture III
         faction:
           source: canon
           value:
@@ -580,12 +468,6 @@ planet:
         population: 2241206059.0
       - date: '3132-08-07'
         hpg: X
-      - date: '3135-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '3135-10-01'
         faction:
           source: canon
@@ -593,25 +475,7 @@ planet:
             - IND
       - date: '3140-01-01'
         population: 2243448386.0
-      - date: '3145-01-01'
-        # administration: DC | Dieron Military District | Ashio Prefecture
-        # administration: DC | Dieron Military District | Ashio Prefecture
-        # administration: DC | Dieron Military District | Ashio Prefecture
-        # administration: DC | Dieron Military District | Ashio Prefecture
-        # administration: DC | Dieron Military District | Ashio Prefecture
-        # administration: DC | Dieron Military District | Ashio Prefecture
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - DC
       - date: '3145-05-25'
-        # administration: DC | Dieron Military District | Ashio Prefecture
-        # administration: DC | Dieron Military District | Ashio Prefecture
-        # administration: DC | Dieron Military District | Ashio Prefecture
-        # administration: DC | Dieron Military District | Ashio Prefecture
-        # administration: DC | Dieron Military District | Ashio Prefecture
-        # administration: DC | Dieron Military District | Ashio Prefecture
         faction:
           source: canon
           value:

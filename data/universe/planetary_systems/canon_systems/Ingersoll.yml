@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,17 +16,15 @@
 # affiliated with Microsoft.
 
 id: Ingersoll
-sucsId: 1198
+sucsId: 1197
 xcood: -5.179
 ycood: -172.21
 spectralType:
-  source: 'HB:HL'
+  source: 'Handbook: House Liao, pg. 73'
   value: G2V
-  page: 73
 primarySlot:
-  source: 'HB:HL'
+  source: 'Handbook: House Liao, pg. 73'
   value: 5
-  page: 73
 event:
   - date: '2350-05-08'
     nadirCharge: yes
@@ -107,76 +105,67 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 1.0
     sysPos:
-      source: 'HB:HL'
+      source: 'Handbook: House Liao, pg. 73'
       value: 5
-      page: 73
     icon: green2
     pressure:
-      source: 'HB:HL'
+      source: 'Handbook: House Liao, pg. 73'
       value: STANDARD
-      page: 73
     atmosphere:
-      source: 'HB:HL'
+      source: 'Handbook: House Liao, pg. 73'
       value: BREATHABLE
-      page: 73
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'HB:HL'
+      source: 'Handbook: House Liao, pg. 73'
       value: 1.01
-      page: 73
     diameter: 12239
     density: 5.799573615053
     dayLength: 18
     yearLength: 1.4
     temperature:
-      source: 'HB:HL'
+      source: 'Handbook: House Liao, pg. 73'
       value: 35
-      page: 73
     water:
-      source: 'HB:HL'
+      source: 'Handbook: House Liao, pg. 73'
       value: 52
-      page: 73
     lifeForm:
-      source: 'HB:HL'
+      source: 'Handbook: House Liao, pg. 73'
       value: AMPHIBIAN
-      page: 73
     desc: |-
       Ingersoll is widely known as the most beautiful planet within the Confederation. It is a paradise planet with hundreds of coves and sandy beaches, and thousands of island chains. Many Confederation nobles reside on Ingersoll, leaving the administration of their holdings to stewards when they are not vacationing. Ingersol is also known for its concentration of artistic talent, fine arts schools and museums. Ingersoll also has silver and gold deposits of exceptional size, giving it the largest economic base in the Capellan Commonality.
 
       Ingersoll is one of many planets home to a Duchy RTC training facility for infantry and conventional armor crews. The Duchy RTC on Ingersoll also has facilities for aerospace pilot training.
     landmass:
       - name:
-          source: 'OR'
+          source: 'Objective Raids: Capellan Confederation'
           value: Aleshia
       - name:
-          source: 'OR'
+          source: 'Objective Raids: Capellan Confederation'
           value: Danika
       - name:
-          source: 'OR'
+          source: 'Objective Raids: Capellan Confederation'
           value: Hurtong
         capital:
-          source: 'OR'
+          source: 'Objective Raids: Capellan Confederation'
           value: Komodo
       - name:
-          source: 'OR'
+          source: 'Objective Raids: Capellan Confederation'
           value: Suíhe
       - name:
-          source: 'OR'
+          source: 'Objective Raids: Capellan Confederation'
           value: Tang
       - name:
-          source: 'OR'
+          source: 'Objective Raids: Capellan Confederation'
           value: Zhen
     satellite:
       - name:
-          source: 'HB:HL'
+          source: 'Handbook: House Liao, pg. 73'
           value: Rand
-          page: 73
         size: medium
         icon: oddmoon3
       - name:
-          source: 'HB:HL'
+          source: 'Handbook: House Liao, pg. 73'
           value: Talley
-          page: 73
         size: medium
         icon: rock9
     event:
@@ -207,18 +196,6 @@ planet:
         population: 80428935.0
       - date: '2270-01-01'
         population: 129515306.0
-      - date: '2271-01-01'
-        # administration: IC | National Capital
-        # administration: IC | National Capital
-        # administration: IC | National Capital
-        # administration: IC | National Capital
-        # administration: IC | National Capital
-        # administration: IC | National Capital
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IC
       - date: '2272-03-21'
         faction:
           source: canon
@@ -248,12 +225,6 @@ planet:
       - date: '2360-01-01'
         population: 1496375194.0
       - date: '2367-07-01'
-        # administration: CC | Capella Commonality | Region 1
-        # administration: CC | Capella Commonality | Region 1
-        # administration: CC | Capella Commonality | Region 1
-        # administration: CC | Capella Commonality | Region 1
-        # administration: CC | Capella Commonality | Region 1
-        # administration: CC | Capella Commonality | Region 1
         faction:
           source: canon
           value:
@@ -415,12 +386,6 @@ planet:
             - DA
             - CC
       - date: '3031-03-23'
-        # administration: CC | Capella Commonality | Region 1
-        # administration: CC | Capella Commonality | Region 1
-        # administration: CC | Capella Commonality | Region 1
-        # administration: CC | Capella Commonality | Region 1
-        # administration: CC | Capella Commonality | Region 1
-        # administration: CC | Capella Commonality | Region 1
         faction:
           source: canon
           value:

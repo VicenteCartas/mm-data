@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,17 +16,15 @@
 # affiliated with Microsoft.
 
 id: Tancredi IV
-sucsId: 2478
+sucsId: 2477
 xcood: 429.611
 ycood: 93.527
 spectralType:
-  source: 'HB:HD'
+  source: 'Handbook: House Davion, pg. 103'
   value: G5V
-  page: 103
 primarySlot:
-  source: 'HB:HD'
+  source: 'Handbook: House Davion, pg. 103'
   value: 4
-  page: 103
 event:
   - date: '2407-05-20'
     nadirCharge: yes
@@ -96,39 +94,32 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.9
     sysPos:
-      source: 'HB:HD'
+      source: 'Handbook: House Davion, pg. 103'
       value: 4
-      page: 103
     icon: green35
     pressure:
-      source: 'HB:HD'
+      source: 'Handbook: House Davion, pg. 103'
       value: STANDARD
-      page: 103
     atmosphere:
-      source: 'HB:HD'
+      source: 'Handbook: House Davion, pg. 103'
       value: BREATHABLE
-      page: 103
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'HB:HD'
+      source: 'Handbook: House Davion, pg. 103'
       value: 1.0
-      page: 103
     diameter: 12155
     density: 5.781486003036
     dayLength: 24
     yearLength: 1.3
     temperature:
-      source: 'HB:HD'
+      source: 'Handbook: House Davion, pg. 103'
       value: 0
-      page: 103
     water:
-      source: 'HB:HD'
+      source: 'Handbook: House Davion, pg. 103'
       value: 35
-      page: 103
     lifeForm:
-      source: 'HB:HD'
+      source: 'Handbook: House Davion, pg. 103'
       value: REPTILE
-      page: 103
     desc: |-
       Tancredi IV was originally surveyed in 2334 but the information was overlooked for more than 30 years. Early colonists were pleasantly surprised to discover that the survey report had been quite conservative and the planet was even more hospitable than reported. With large tracts of arable land the population of Tancredi IV has never had a problem feeding itself and large deposits of minerals and ores resulted in a strong economy based on mining and the industry that sprang up around it.
 
@@ -140,18 +131,15 @@ planet:
       Precision Weaponry [Precision Laser Systems prior to the 2nd Succession War]
     landmass:
       - name:
-          source: FCCW
+          source: FedCom Civil War, pg. 193
           value: Jaipur
-          page: 193
         capital:
-          source: FCCW
+          source: FedCom Civil War, pg. 193
           value: Dolsonville
-          page: 193
     satellite:
       - name:
-          source: 'HB:HD'
+          source: 'Handbook: House Davion, pg. 103'
           value: Pietra di Fortuna
-          page: 103
         size: large
         icon: rock2
     event:
@@ -181,12 +169,6 @@ planet:
       - date: '2360-01-01'
         population: 80012751.0
       - date: '2365-12-14'
-        # administration: FS | Draconis March | Woodbine Operational Area
-        # administration: FS | Draconis March | Woodbine Operational Area
-        # administration: FS | Draconis March | Woodbine Operational Area
-        # administration: FS | Draconis March | Woodbine Operational Area
-        # administration: FS | Draconis March | Woodbine Operational Area
-        # administration: FS | Draconis March | Woodbine Operational Area
         faction:
           source: canon
           value:
@@ -250,12 +232,6 @@ planet:
             - OA
             - SL
       - date: '2585-08-01'
-        # administration: FS | Draconis March | Woodbine Operational Area
-        # administration: FS | Draconis March | Woodbine Operational Area
-        # administration: FS | Draconis March | Woodbine Operational Area
-        # administration: FS | Draconis March | Woodbine Operational Area
-        # administration: FS | Draconis March | Woodbine Operational Area
-        # administration: FS | Draconis March | Woodbine Operational Area
         faction:
           source: canon
           value:
@@ -363,12 +339,6 @@ planet:
       - date: '3020-01-01'
         population: 668575949.0
       - date: '3023-04-23'
-        # administration: FS | Draconis March | Woodbine Operational Area
-        # administration: FS | Draconis March | Woodbine Operational Area
-        # administration: FS | Draconis March | Woodbine Operational Area
-        # administration: FS | Draconis March | Woodbine Operational Area
-        # administration: FS | Draconis March | Woodbine Operational Area
-        # administration: FS | Draconis March | Woodbine Operational Area
         faction:
           source: canon
           value:
@@ -376,25 +346,8 @@ planet:
       - date: '3030-01-01'
         population: 667734340.0
       - date: '3040-01-01'
-        # administration: FC | Draconis March | Woodbine Operational Area
-        # administration: FC | Draconis March | Woodbine Operational Area
-        # administration: FC | Draconis March | Woodbine Operational Area
-        # administration: FC | Draconis March | Woodbine Operational Area
-        # administration: FC | Draconis March | Woodbine Operational Area
-        # administration: FC | Draconis March | Woodbine Operational Area
         population: 675457609.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FC
       - date: '3040-01-19'
-        # administration: FC | Draconis March | Woodbine Operational Area
-        # administration: FC | Draconis March | Woodbine Operational Area
-        # administration: FC | Draconis March | Woodbine Operational Area
-        # administration: FC | Draconis March | Woodbine Operational Area
-        # administration: FC | Draconis March | Woodbine Operational Area
-        # administration: FC | Draconis March | Woodbine Operational Area
         faction:
           source: canon
           value:
@@ -423,27 +376,10 @@ planet:
           value:
             - FC
       - date: '3067-01-01'
-        # administration: FS | Draconis March | Woodbine Operational Area
-        # administration: FS | Draconis March | Woodbine Operational Area
-        # administration: FS | Draconis March | Woodbine Operational Area
-        # administration: FS | Draconis March | Woodbine Operational Area
-        # administration: FS | Draconis March | Woodbine Operational Area
-        # administration: FS | Draconis March | Woodbine Operational Area
         population:
           source: canon
           value: 695750000.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FS
       - date: '3067-04-20'
-        # administration: FS | Draconis March | Woodbine Operational Area
-        # administration: FS | Draconis March | Woodbine Operational Area
-        # administration: FS | Draconis March | Woodbine Operational Area
-        # administration: FS | Draconis March | Woodbine Operational Area
-        # administration: FS | Draconis March | Woodbine Operational Area
-        # administration: FS | Draconis March | Woodbine Operational Area
         faction:
           source: canon
           value:
@@ -459,12 +395,6 @@ planet:
       - date: '3100-01-01'
         population: 704431011.0
       - date: '3104-01-05'
-        # administration: DC | New Samarkand Military District | Kaznejoy Prefecture
-        # administration: DC | New Samarkand Military District | Kaznejoy Prefecture
-        # administration: DC | New Samarkand Military District | Kaznejoy Prefecture
-        # administration: DC | New Samarkand Military District | Kaznejoy Prefecture
-        # administration: DC | New Samarkand Military District | Kaznejoy Prefecture
-        # administration: DC | New Samarkand Military District | Kaznejoy Prefecture
         faction:
           source: canon
           value:

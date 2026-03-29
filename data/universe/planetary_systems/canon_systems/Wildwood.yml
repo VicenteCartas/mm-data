@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,16 +16,15 @@
 # affiliated with Microsoft.
 
 id: Wildwood
-sucsId: 2756
+sucsId: 2755
 xcood: -217.633
 ycood: -440.009
 spectralType:
   source: canon
   value: G4V
 primarySlot:
-  source: Per1e
+  source: Periphery (1ed), pg. 104
   value: 2
-  page: 104
 event:
   - date: '2718-02-23'
     zenithCharge: yes
@@ -59,9 +58,8 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.63
     sysPos:
-      source: Per1e
+      source: Periphery (1ed), pg. 104
       value: 2
-      page: 104
     icon: green30
     pressure: HIGH
     atmosphere: BREATHABLE
@@ -74,10 +72,15 @@ planet:
     temperature: 42
     water: 34
     lifeForm:
-      source: Per1e
+      source: Periphery (1ed), pg. 104
       value: BIRD
-      page: 104
-    desc: 3025 - Wildwood is a major agricultural world best known throughout the Magistracy of Canopus and into the Free Worlds League for its vineyards and fine wines. Much of the planet has been left undeveloped and the majority of the terrain remains virgin wilderness. The planet is sparsely populated beyond the handful of farms and vineyards and a small tourist trade that offers tours through the wilderness. Wildwood is popular among bird watchers for its unique avian population.
+    desc: 3025 - Wildwood is a major agricultural world best known throughout the
+      Magistracy of Canopus and into the Free Worlds League for its vineyards and
+      fine wines. Much of the planet has been left undeveloped and the majority of
+      the terrain remains virgin wilderness. The planet is sparsely populated beyond
+      the handful of farms and vineyards and a small tourist trade that offers tours
+      through the wilderness. Wildwood is popular among bird watchers for its unique
+      avian population.
     smallMoons: 3
     landmass:
       - name: Wilna
@@ -115,19 +118,7 @@ planet:
             - SL
       - date: '2590-01-01'
         population: 4696.0
-      - date: '2596-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - MOC
       - date: '2597-03-21'
-        # administration: MOC | Canopus District
-        # administration: MOC | Canopus District
-        # administration: MOC | Canopus District
-        # administration: MOC | Canopus District
-        # administration: MOC | Canopus District
-        # administration: MOC | Canopus District
         faction:
           source: canon
           value:
@@ -236,20 +227,10 @@ planet:
         population:
           source: canon
           value: 5000.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - ABN
       - date: '3030-01-01'
         population: 17970.0
       - date: '3040-01-01'
         population: 243165.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - MOC
       - date: '3045-01-01'
         socioIndustrial: D-D-C-C-D
       - date: '3050-01-01'

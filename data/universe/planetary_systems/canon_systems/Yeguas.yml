@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,17 +16,15 @@
 # affiliated with Microsoft.
 
 id: Yeguas
-sucsId: 2799
+sucsId: 2798
 xcood: -160.66
 ycood: 281.747
 spectralType:
-  source: 'OTP:RC'
+  source: 'Operational Turning Points: Red Corsair, pg. 5'
   value: G5IV
-  page: 5
 primarySlot:
-  source: 'OTP:RC'
+  source: 'Operational Turning Points: Red Corsair, pg. 5'
   value: 3
-  page: 5
 event:
   - date: '2670-04-11'
     zenithCharge: yes
@@ -75,73 +73,56 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 1.44
     sysPos:
-      source: 'OTP:RC'
+      source: 'Operational Turning Points: Red Corsair, pg. 5'
       value: 3
-      page: 5
     icon: green57
     pressure:
-      source: 'OTP:RC'
+      source: 'Operational Turning Points: Red Corsair, pg. 5'
       value: STANDARD
-      page: 5
     atmosphere:
-      source: 'OTP:RC'
+      source: 'Operational Turning Points: Red Corsair, pg. 5'
       value: BREATHABLE
-      page: 5
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'OTP:RC'
+      source: 'Operational Turning Points: Red Corsair, pg. 5'
       value: 0.98
-      page: 5
     diameter: 12908
     density: 5.33566997526
     dayLength: 24
     yearLength: 2.0
     temperature:
-      source: 'OTP:RC'
+      source: 'Operational Turning Points: Red Corsair, pg. 5'
       value: 24
-      page: 5
     water:
-      source: 'OTP:RC'
+      source: 'Operational Turning Points: Red Corsair, pg. 5'
       value: 69
-      page: 5
     lifeForm:
-      source: 'OTP:RC'
+      source: 'Operational Turning Points: Red Corsair, pg. 5'
       value: PLANT
-      page: 5
     desc: |-
       Yegaus is a comfortable planet with abundant agriculture and natural resources and even modest industry. However, despite this it has never been a prominent planet in the Lyran Commonwealth, though its location in the nation’s interior spared Yegaus the worst of the Succession Wars. The planet is best known for its ample grasslands and highly regarded breeds of Terran horses. The planet became more prominent after the Clan Invasion put the planet on the Commonwealth’s new border with the Jade Falcons.
 
       Laumer City is located on the continent of Saddleback and is home to Yegaus’ wealthiest merchant families. Saddleback is primarily covered in massive farmsteads that produce ‘luxury crops’ to ship off-world and is one of three continents.
     landmass:
       - name:
-          source: 'OTP:RC'
+          source: 'Operational Turning Points: Red Corsair, pg. 5'
           value: Saddleback
-          page: 5
         capital:
-          source: 'OTP:RC'
+          source: 'Operational Turning Points: Red Corsair, pg. 5'
           value: Laumer City
-          page: 5
     satellite:
       - name:
-          source: 'OTP:RC'
+          source: 'Operational Turning Points: Red Corsair, pg. 5'
           value: Cue Ball
-          page: 5
         size: medium
         icon: rock4
       - name:
-          source: 'OTP:RC'
+          source: 'Operational Turning Points: Red Corsair, pg. 5'
           value: Eight Ball
-          page: 5
         size: medium
         icon: oddmoon3
     event:
       - date: '2621-01-23'
-        # administration: LA | Protectorate of Donegal | Coventry Province
-        # administration: LA | Protectorate of Donegal | Coventry Province
-        # administration: LA | Protectorate of Donegal | Coventry Province
-        # administration: LA | Protectorate of Donegal | Coventry Province
-        # administration: LA | Protectorate of Donegal | Coventry Province
-        # administration: LA | Protectorate of Donegal | Coventry Province
         faction:
           source: canon
           value:
@@ -244,25 +225,8 @@ planet:
       - date: '3033-01-01'
         socioIndustrial: C-D-C-C-C
       - date: '3040-01-01'
-        # administration: FC | Donegal March | Coventry Operational Area
-        # administration: FC | Donegal March | Coventry Operational Area
-        # administration: FC | Donegal March | Coventry Operational Area
-        # administration: FC | Donegal March | Coventry Operational Area
-        # administration: FC | Donegal March | Coventry Operational Area
-        # administration: FC | Donegal March | Coventry Operational Area
         population: 1267241155.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FC
       - date: '3040-01-19'
-        # administration: FC | Donegal March | Coventry Operational Area
-        # administration: FC | Donegal March | Coventry Operational Area
-        # administration: FC | Donegal March | Coventry Operational Area
-        # administration: FC | Donegal March | Coventry Operational Area
-        # administration: FC | Donegal March | Coventry Operational Area
-        # administration: FC | Donegal March | Coventry Operational Area
         faction:
           source: canon
           value:
@@ -273,35 +237,11 @@ planet:
           value: B-C-B-C-B
       - date: '3050-01-01'
         population: 1276398217.0
-      - date: '3057-01-01'
-        # administration: LA | Donegal March | Coventry Operational Area
-        # administration: LA | Donegal March | Coventry Operational Area
-        # administration: LA | Donegal March | Coventry Operational Area
-        # administration: LA | Donegal March | Coventry Operational Area
-        # administration: LA | Donegal March | Coventry Operational Area
-        # administration: LA | Donegal March | Coventry Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LA
       - date: '3057-12-01'
         faction:
           source: canon
           value:
             - ARDC
-      - date: '3058-01-01'
-        # administration: LA | Coventry Province | Melissia Theater
-        # administration: LA | Coventry Province | Melissia Theater
-        # administration: LA | Coventry Province | Melissia Theater
-        # administration: LA | Coventry Province | Melissia Theater
-        # administration: LA | Coventry Province | Melissia Theater
-        # administration: LA | Coventry Province | Melissia Theater
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LA
       - date: '3060-01-01'
         population: 1284593362.0
       - date: '3067-01-01'
@@ -309,12 +249,6 @@ planet:
           source: canon
           value: 1290000000.0
       - date: '3067-04-24'
-        # administration: LA | Arc-Royal Theater
-        # administration: LA | Arc-Royal Theater
-        # administration: LA | Arc-Royal Theater
-        # administration: LA | Arc-Royal Theater
-        # administration: LA | Arc-Royal Theater
-        # administration: LA | Arc-Royal Theater
         faction:
           source: canon
           value:
@@ -333,12 +267,6 @@ planet:
         population: 1305573253.0
       - date: '3120-01-01'
         population: 1313167580.0
-      - date: '3130-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CJF/LC
       - date: '3130-06-08'
         faction:
           source: canon
@@ -350,12 +278,6 @@ planet:
         hpg:
           source: canon
           value: X
-      - date: '3135-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CJF/LC
       - date: '3135-11-23'
         faction:
           source: canon
@@ -365,12 +287,6 @@ planet:
         population: 1340767510.0
       - date: '3145-01-01'
         population: 1344795852.0
-      - date: '3152-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '3152-06-01'
         faction:
           source: canon

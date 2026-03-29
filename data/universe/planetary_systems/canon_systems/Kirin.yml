@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,17 +16,15 @@
 # affiliated with Microsoft.
 
 id: Kirin
-sucsId: 2951
+sucsId: 2950
 xcood: -23.601
 ycood: 1837.315
 spectralType:
-  source: WoK
+  source: Warriors of Kerensky, pg. 112
   value: M9IV
-  page: 112
 primarySlot:
-  source: WoK
+  source: Warriors of Kerensky, pg. 112
   value: 1
-  page: 112
 event:
   - date: '2807-10-25'
     zenithCharge: yes
@@ -37,39 +35,32 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.04
     sysPos:
-      source: WoK
+      source: Warriors of Kerensky, pg. 112
       value: 1
-      page: 112
     icon: green31
     pressure:
-      source: WoK
+      source: Warriors of Kerensky, pg. 112
       value: THIN
-      page: 112
     atmosphere:
-      source: WoK
+      source: Warriors of Kerensky, pg. 112
       value: TAINTED_POISON
-      page: 112
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: WoK
+      source: Warriors of Kerensky, pg. 112
       value: 0.9
-      page: 112
     diameter: 11839
     density: 5.342344638942
     dayLength: 29
     yearLength: 0.3
     temperature:
-      source: WoK
+      source: Warriors of Kerensky, pg. 112
       value: 20
-      page: 112
     water:
-      source: WoK
+      source: Warriors of Kerensky, pg. 112
       value: 30
-      page: 112
     lifeForm:
-      source: WoK
+      source: Warriors of Kerensky, pg. 112
       value: AMPHIBIAN
-      page: 112
     desc: No description available.
     landmass:
       - name: Kon's Rift
@@ -101,12 +92,6 @@ planet:
         population: 36994.0
       - date: '2820-01-01'
         population: 130226.0
-      - date: '2821-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CLAN
       - date: '2821-10-11'
         faction:
           source: canon
@@ -161,12 +146,6 @@ planet:
         socioIndustrial: B-C-D-B-D
       - date: '3020-01-01'
         population: 6991995.0
-      - date: '3025-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CLAN
       - date: '3030-01-01'
         population: 7082901.0
       - date: '3040-01-01'
@@ -181,33 +160,15 @@ planet:
           value:
             - CHH
         population: 7226931.0
-      - date: '3068-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CLAN
       - date: '3070-01-01'
         population: 7224522.0
       - date: '3070-11-01'
-        # administration: CCO | National Capital
-        # administration: CCO | National Capital
-        # administration: CCO | National Capital
-        # administration: CCO | National Capital
-        # administration: CCO | National Capital
-        # administration: CCO | National Capital
         faction:
           source: canon
           value:
             - CCO
       - date: '3080-01-01'
         population: 7343981.0
-      - date: '3085-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CLAN
       - date: '3085-06-27'
         faction:
           source: canon

@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: Styx
-sucsId: 2428
+sucsId: 2427
 xcood: 25.844
 ycood: 25.543
 spectralType:
-  source: DA:RW
+  source: MWDA world profiles
   value: F8IV
 primarySlot:
-  source: DA:RW
+  source: MWDA world profiles
   value: 1
 event:
   - date: '2352-01-19'
@@ -35,59 +35,94 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 3.36
     sysPos:
-      source: DA:RW
+      source: MWDA world profiles
       value: 1
     icon: wet6
     pressure:
-      source: DA:RW
+      source: MWDA world profiles
       value: STANDARD
     atmosphere:
-      source: DA:RW
+      source: MWDA world profiles
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: DA:RW
+      source: MWDA world profiles
       value: 0.83
     diameter: 13062
     density: 4.465646993399
     dayLength: 25
     yearLength: 6.3
     temperature:
-      source: DA:RW
+      source: MWDA world profiles
       value: 29
     water:
-      source: DA:RW
+      source: MWDA world profiles
       value: 79
     lifeForm:
-      source: DA:RW
+      source: MWDA world profiles
       value: MAMMAL
-    desc: 'Styx was aptly named by the first settlers to set up colonies on its storm-ravaged surface. Large oceans and the gravitational effects of its three moons are blamed for the violent storms that rage across the Stygian surface, often causing damage from flash floods and mudslides during the planet‘s rainy seasons. The first colonists, as a result, settled in the open plains of the interior regions of Epimethius, the primary continent, where the storms were least volatile. A few short years after the first towns were established, geologists discovered high quantities of metal and radioactive minerals in the mountain ranges of Epimethius and the smaller, neighboring continent of Perdition. These deposits lured in mining firms, the largest of which was the Styx Mining Company, an interstellar corporation that specialized in mining difficult veins of valuable metals and quality refining processes. Styx came under the sway of the Terran Hegemony more than a century before the birth of the Star League, and its mineral wealth helped bolster the Hegemony‘s economy and military. Perhaps for this reason, the Draconis Combine came to covet Styx, culminating in the first true battle to use the BattleMech. In 2443, a Combine armored company raided Styx, intending to seize and plunder several metal refineries on Perdition while testing the resolve of the Hegemony. The rain-slicked plains slowed the Kuritan tanks, which gave the Hegemony troops plenty of time to ready their new war machines. On the muddy plains outside the city of Barbados, the two forces clashed: a lance of Hegemony ‘Mechs against a full company of Combine tanks and infantry support. The results were so lopsided that few could argue the Hegemony‘s new BattleMech would not be the future king of the battlefield. Styx‘s mineral wealth attracted many raiders over the centuries, including a major engagement between Kurita and Davion forces over the Styx Mining Company‘s Beta facility near the city of Lake Wio. Despite these clashes, the Draconis Combine managed to maintain control over this vital if stormy world until the rise of the Republic in 3081. Styx remains a major exporter of metals and radioactive minerals to the Republic and the Combine today, with the historically pro-Combine Styx Mining Corporation receiving a huge subsidy from the Republic to maintain its operations under the new banner. The Styx Mining Corporation‘s headquarters are in Memphis, on Epimethius. The planetary capital, Sunder Falls, is located 120 kilometers northwest of Memphis. Aside from Epimethius and Perdition, Styx‘s third large landmass is the island continent of Gehenna. Far less populous than the other two regions, Gehenna is home to a large spaceport city, Lindon‘s Folly, which is also home to one of the Styx Mining Company‘s large refineries.'
+    desc: 'Styx was aptly named by the first settlers to set up colonies on its storm-ravaged
+      surface. Large oceans and the gravitational effects of its three moons are blamed
+      for the violent storms that rage across the Stygian surface, often causing damage
+      from flash floods and mudslides during the planet‘s rainy seasons. The first
+      colonists, as a result, settled in the open plains of the interior regions of
+      Epimethius, the primary continent, where the storms were least volatile. A few
+      short years after the first towns were established, geologists discovered high
+      quantities of metal and radioactive minerals in the mountain ranges of Epimethius
+      and the smaller, neighboring continent of Perdition. These deposits lured in
+      mining firms, the largest of which was the Styx Mining Company, an interstellar
+      corporation that specialized in mining difficult veins of valuable metals and
+      quality refining processes. Styx came under the sway of the Terran Hegemony
+      more than a century before the birth of the Star League, and its mineral wealth
+      helped bolster the Hegemony‘s economy and military. Perhaps for this reason,
+      the Draconis Combine came to covet Styx, culminating in the first true battle
+      to use the BattleMech. In 2443, a Combine armored company raided Styx, intending
+      to seize and plunder several metal refineries on Perdition while testing the
+      resolve of the Hegemony. The rain-slicked plains slowed the Kuritan tanks, which
+      gave the Hegemony troops plenty of time to ready their new war machines. On
+      the muddy plains outside the city of Barbados, the two forces clashed: a lance
+      of Hegemony ‘Mechs against a full company of Combine tanks and infantry support.
+      The results were so lopsided that few could argue the Hegemony‘s new BattleMech
+      would not be the future king of the battlefield. Styx‘s mineral wealth attracted
+      many raiders over the centuries, including a major engagement between Kurita
+      and Davion forces over the Styx Mining Company‘s Beta facility near the city
+      of Lake Wio. Despite these clashes, the Draconis Combine managed to maintain
+      control over this vital if stormy world until the rise of the Republic in 3081.
+      Styx remains a major exporter of metals and radioactive minerals to the Republic
+      and the Combine today, with the historically pro-Combine Styx Mining Corporation
+      receiving a huge subsidy from the Republic to maintain its operations under
+      the new banner. The Styx Mining Corporation‘s headquarters are in Memphis, on
+      Epimethius. The planetary capital, Sunder Falls, is located 120 kilometers northwest
+      of Memphis. Aside from Epimethius and Perdition, Styx‘s third large landmass
+      is the island continent of Gehenna. Far less populous than the other two regions,
+      Gehenna is home to a large spaceport city, Lindon‘s Folly, which is also home
+      to one of the Styx Mining Company‘s large refineries.'
     landmass:
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Epimethius
         capital:
-          source: DA:RW
+          source: MWDA world profiles
           value: Sunder Falls
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Gehenna
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Perdition
     satellite:
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Kronus
         size: medium
         icon: rock9
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Nirvana
         size: large
         icon: rock11
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Void
         size: medium
         icon: oddmoon3
@@ -137,12 +172,6 @@ planet:
       - date: '2310-01-01'
         population: 1141530684.0
       - date: '2320-10-07'
-        # administration: TH | Lone Star Province
-        # administration: TH | Lone Star Province
-        # administration: TH | Lone Star Province
-        # administration: TH | Lone Star Province
-        # administration: TH | Lone Star Province
-        # administration: TH | Lone Star Province
         faction:
           source: canon
           value:
@@ -244,18 +273,6 @@ planet:
         population: 5491316711.0
       - date: '2760-01-01'
         population: 5510789523.0
-      - date: '2767-01-01'
-        # administration: AE | Lone Star Province
-        # administration: AE | Lone Star Province
-        # administration: AE | Lone Star Province
-        # administration: AE | Lone Star Province
-        # administration: AE | Lone Star Province
-        # administration: AE | Lone Star Province
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - AE
       - date: '2767-07-29'
         faction:
           source: canon
@@ -264,12 +281,6 @@ planet:
       - date: '2770-01-01'
         population: 5502508084.0
       - date: '2779-01-14'
-        # administration: TH | Lone Star Province
-        # administration: TH | Lone Star Province
-        # administration: TH | Lone Star Province
-        # administration: TH | Lone Star Province
-        # administration: TH | Lone Star Province
-        # administration: TH | Lone Star Province
         faction:
           source: canon
           value:
@@ -277,12 +288,6 @@ planet:
       - date: '2780-01-01'
         population: 5454049292.0
       - date: '2790-07-18'
-        # administration: DC | Dieron Military District | Lone Star Prefecture
-        # administration: DC | Dieron Military District | Lone Star Prefecture
-        # administration: DC | Dieron Military District | Lone Star Prefecture
-        # administration: DC | Dieron Military District | Lone Star Prefecture
-        # administration: DC | Dieron Military District | Lone Star Prefecture
-        # administration: DC | Dieron Military District | Lone Star Prefecture
         faction:
           source: canon
           value:
@@ -295,12 +300,6 @@ planet:
       - date: '2820-01-01'
         population: 5389824376.0
       - date: '2821-08-24'
-        # administration: DC | Dieron Military District | Lone Star Prefecture
-        # administration: DC | Dieron Military District | Lone Star Prefecture
-        # administration: DC | Dieron Military District | Lone Star Prefecture
-        # administration: DC | Dieron Military District | Lone Star Prefecture
-        # administration: DC | Dieron Military District | Lone Star Prefecture
-        # administration: DC | Dieron Military District | Lone Star Prefecture
         faction:
           source: canon
           value:
@@ -383,25 +382,7 @@ planet:
             - Stone
       - date: '3080-01-01'
         population: 4796486456.0
-      - date: '3081-01-01'
-        # administration: ROS | Prefecture II
-        # administration: ROS | Prefecture II
-        # administration: ROS | Prefecture II
-        # administration: ROS | Prefecture II
-        # administration: ROS | Prefecture II
-        # administration: ROS | Prefecture II
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - ROS
       - date: '3081-12-05'
-        # administration: ROS | Prefecture II
-        # administration: ROS | Prefecture II
-        # administration: ROS | Prefecture II
-        # administration: ROS | Prefecture II
-        # administration: ROS | Prefecture II
-        # administration: ROS | Prefecture II
         faction:
           source: canon
           value:
@@ -420,12 +401,6 @@ planet:
         population: 5230378579.0
       - date: '3132-08-07'
         hpg: X
-      - date: '3135-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '3135-10-01'
         faction:
           source: canon
@@ -433,25 +408,7 @@ planet:
             - IND
       - date: '3140-01-01'
         population: 5288230345.0
-      - date: '3145-01-01'
-        # administration: DC | Dieron Military District | Dieron Prefecture
-        # administration: DC | Dieron Military District | Dieron Prefecture
-        # administration: DC | Dieron Military District | Dieron Prefecture
-        # administration: DC | Dieron Military District | Dieron Prefecture
-        # administration: DC | Dieron Military District | Dieron Prefecture
-        # administration: DC | Dieron Military District | Dieron Prefecture
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - DC
       - date: '3145-01-05'
-        # administration: DC | Dieron Military District | Dieron Prefecture
-        # administration: DC | Dieron Military District | Dieron Prefecture
-        # administration: DC | Dieron Military District | Dieron Prefecture
-        # administration: DC | Dieron Military District | Dieron Prefecture
-        # administration: DC | Dieron Military District | Dieron Prefecture
-        # administration: DC | Dieron Military District | Dieron Prefecture
         faction:
           source: canon
           value:

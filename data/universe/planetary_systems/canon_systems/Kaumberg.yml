@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,17 +16,15 @@
 # affiliated with Microsoft.
 
 id: Kaumberg
-sucsId: 1308
+sucsId: 1307
 xcood: -387.844
 ycood: 144.452
 spectralType:
-  source: 'HB:HS'
+  source: 'Handbook: House Steiner, pg. 74'
   value: G5V
-  page: 74
 primarySlot:
-  source: 'HB:HS'
+  source: 'Handbook: House Steiner, pg. 74'
   value: 4
-  page: 74
 event:
   - date: '2515-11-07'
     nadirCharge: yes
@@ -112,75 +110,57 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.63
     sysPos:
-      source: 'HB:HS'
+      source: 'Handbook: House Steiner, pg. 74'
       value: 4
-      page: 74
     icon: wet5
     pressure:
-      source: 'HB:HS'
+      source: 'Handbook: House Steiner, pg. 74'
       value: STANDARD
-      page: 74
     atmosphere:
-      source: 'HB:HS'
+      source: 'Handbook: House Steiner, pg. 74'
       value: BREATHABLE
-      page: 74
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'HB:HS'
+      source: 'Handbook: House Steiner, pg. 74'
       value: 1.01
-      page: 74
     diameter: 12239
     density: 5.799573615053
     dayLength: 27
     yearLength: 1.1
     temperature:
-      source: 'HB:HS'
+      source: 'Handbook: House Steiner, pg. 74'
       value: 36
-      page: 74
     water:
-      source: 'HB:HS'
+      source: 'Handbook: House Steiner, pg. 74'
       value: 81
-      page: 74
     lifeForm:
-      source: 'HB:HS'
+      source: 'Handbook: House Steiner, pg. 74'
       value: MAMMAL
-      page: 74
     desc: |-
       Kaumberg is a temperate planet covered in thick forests and as such, timber makes up the primary industry and export. The planet is a garden-world with an abundance of arable land and enough excess agriculture that it exports food to surrounding worlds.
 
       Kaumberg was primarily settled by colonists hailing from Germany and Austria.
     landmass:
       - name:
-          source: 'HB:HS'
+          source: 'Handbook: House Steiner, pg. 74'
           value: Eingeschneit
-          page: 74
       - name:
-          source: 'HB:HS'
+          source: 'Handbook: House Steiner, pg. 74'
           value: Kuhlschrank
-          page: 74
       - name:
-          source: 'HB:HS'
+          source: 'Handbook: House Steiner, pg. 74'
           value: Regenwald
-          page: 74
         capital:
-          source: 'HB:HS'
+          source: 'Handbook: House Steiner, pg. 74'
           value: Stuttgart
-          page: 74
     satellite:
       - name:
-          source: 'HB:HS'
+          source: 'Handbook: House Steiner, pg. 74'
           value: Grobrot
-          page: 74
         size: medium
         icon: oddmoon1
     event:
       - date: '2479-05-09'
-        # administration: LA | Protectorate of Donegal | Alarion Province
-        # administration: LA | Protectorate of Donegal | Alarion Province
-        # administration: LA | Protectorate of Donegal | Alarion Province
-        # administration: LA | Protectorate of Donegal | Alarion Province
-        # administration: LA | Protectorate of Donegal | Alarion Province
-        # administration: LA | Protectorate of Donegal | Alarion Province
         faction:
           source: canon
           value:
@@ -315,25 +295,8 @@ planet:
       - date: '3035-01-01'
         socioIndustrial: C-D-D-B-B
       - date: '3040-01-01'
-        # administration: FC | Periphery March | Venaria Operational Area
-        # administration: FC | Periphery March | Venaria Operational Area
-        # administration: FC | Periphery March | Venaria Operational Area
-        # administration: FC | Periphery March | Venaria Operational Area
-        # administration: FC | Periphery March | Venaria Operational Area
-        # administration: FC | Periphery March | Venaria Operational Area
         population: 204811117.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FC
       - date: '3040-01-19'
-        # administration: FC | Periphery March | Venaria Operational Area
-        # administration: FC | Periphery March | Venaria Operational Area
-        # administration: FC | Periphery March | Venaria Operational Area
-        # administration: FC | Periphery March | Venaria Operational Area
-        # administration: FC | Periphery March | Venaria Operational Area
-        # administration: FC | Periphery March | Venaria Operational Area
         faction:
           source: canon
           value:
@@ -344,25 +307,7 @@ planet:
           value: C-D-C-B-A
       - date: '3050-01-01'
         population: 207823295.0
-      - date: '3057-01-01'
-        # administration: LA | Periphery March | Venaria Operational Area
-        # administration: LA | Periphery March | Venaria Operational Area
-        # administration: LA | Periphery March | Venaria Operational Area
-        # administration: LA | Periphery March | Venaria Operational Area
-        # administration: LA | Periphery March | Venaria Operational Area
-        # administration: LA | Periphery March | Venaria Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LA
       - date: '3057-09-18'
-        # administration: LA | Alarion Province
-        # administration: LA | Alarion Province
-        # administration: LA | Alarion Province
-        # administration: LA | Alarion Province
-        # administration: LA | Alarion Province
-        # administration: LA | Alarion Province
         faction:
           source: canon
           value:

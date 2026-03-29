@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -20,13 +20,11 @@ sucsId: 94
 xcood: 58.344
 ycood: 278.846
 spectralType:
-  source: M&M
+  source: Masters and Minions, pg. 110
   value: F8IV
-  page: 110
 primarySlot:
-  source: M&M
+  source: Masters and Minions, pg. 110
   value: 5
-  page: 110
 event:
   - date: '2704-01-01'
     nadirCharge: yes
@@ -102,79 +100,60 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 3.36
     sysPos:
-      source: M&M
+      source: Masters and Minions, pg. 110
       value: 5
-      page: 110
     icon: wet7
     pressure:
-      source: M&M
+      source: Masters and Minions, pg. 110
       value: STANDARD
-      page: 110
     atmosphere:
-      source: M&M
+      source: Masters and Minions, pg. 110
       value: BREATHABLE
-      page: 110
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: M&M
+      source: Masters and Minions, pg. 110
       value: 1.02
-      page: 110
     diameter: 14846
     density: 4.82824868448
     dayLength: 20
     yearLength: 6.3
     temperature:
-      source: M&M
+      source: Masters and Minions, pg. 110
       value: 32
-      page: 110
     water:
-      source: M&M
+      source: Masters and Minions, pg. 110
       value: 85
-      page: 110
     lifeForm:
-      source: M&M
+      source: Masters and Minions, pg. 110
       value: REPTILE
-      page: 110
     desc: |-
       Alshain is a comfortable temperate planet with large oceans and four continents covered in massive pine forests. Alshain has abundant natural resources which led to the establishment of a BattleMech factory and enough other low and high tech industry to make the planet almost entirely self sufficient. With the pleasant climate Alshain has little trouble supporting enough agriculture to feed the planet’s population.
 
       The planetary capital is Silverdale and site of the planet’s primary spaceport, the capital is located on the continent of Aquilae. After the Draconis Combine gave the Rasalhague District its freedom, Alshain became the capital of the replacement military district and many of the Rasalhague Regulars became the Ashlain Regulars. Alshain and much of the Alshain Military District were captured by Clan Ghost Bear, with the Ghost Bears making Alshain their new capital when they moved to the Inner Sphere.
     landmass:
       - name:
-          source: 'Obj:C'
+          source: 'Objectives: The Clans, pg. 22'
           value: Aquilae
-          page: 22
         capital:
-          source: 'Obj:C'
+          source: 'Objectives: The Clans, pg. 22'
           value: Silverdale
-          page: 22
       - name:
-          source: 'Obj:C'
+          source: 'Objectives: The Clans, pg. 22'
           value: Bunjil
-          page: 22
       - name:
-          source: 'Obj:C'
+          source: 'Objectives: The Clans, pg. 22'
           value: Swan
-          page: 22
       - name:
-          source: 'Obj:C'
+          source: 'Objectives: The Clans, pg. 22'
           value: Corvi
-          page: 22
     satellite:
       - name:
-          source: M&M
+          source: Masters and Minions, pg. 110
           value: Lemeshko
-          page: 110
         size: medium
         icon: oddmoon2
     event:
       - date: '2690-10-17'
-        # administration: DC | Rasalhague Military District | Tinaca Prefecture
-        # administration: DC | Rasalhague Military District | Tinaca Prefecture
-        # administration: DC | Rasalhague Military District | Tinaca Prefecture
-        # administration: DC | Rasalhague Military District | Tinaca Prefecture
-        # administration: DC | Rasalhague Military District | Tinaca Prefecture
-        # administration: DC | Rasalhague Military District | Tinaca Prefecture
         faction:
           source: canon
           value:
@@ -279,12 +258,6 @@ planet:
       - date: '3050-01-01'
         population: 2810166066.0
       - date: '3051-12-05'
-        # administration: CGB | National Capital
-        # administration: CGB | National Capital
-        # administration: CGB | National Capital
-        # administration: CGB | National Capital
-        # administration: CGB | National Capital
-        # administration: CGB | National Capital
         faction:
           source: canon
           value:
@@ -304,12 +277,6 @@ planet:
       - date: '3100-01-01'
         population: 2924264545.0
       - date: '3103-03-13'
-        # administration: RD | Region 2 | District Capital
-        # administration: RD | Region 2 | District Capital
-        # administration: RD | Region 2 | District Capital
-        # administration: RD | Region 2 | District Capital
-        # administration: RD | Region 2 | District Capital
-        # administration: RD | Region 2 | District Capital
         faction:
           source: canon
           value:

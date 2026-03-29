@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Tinaca
-sucsId: 2551
+sucsId: 2550
 xcood: 70.577
 ycood: 273.723
 spectralType:
@@ -104,7 +104,13 @@ planet:
     lifeForm:
       source: canon
       value: FISH
-    desc: Tinaca is a tropical planet covered almost entirely in water, with only one continent, named The Island, along with a scattering of smaller island chains across the planet. Overall the planet is abundantly average compared to other planets in the Inner Sphere, between technology, industry and agriculture, Tinaca does not stand out. The primary manufacturer on planet is part of Odin Manufacturing, but unlike other Odin facilities, only creates prefab buildings that are used by both the military and civilians.
+    desc: Tinaca is a tropical planet covered almost entirely in water, with only
+      one continent, named The Island, along with a scattering of smaller island chains
+      across the planet. Overall the planet is abundantly average compared to other
+      planets in the Inner Sphere, between technology, industry and agriculture, Tinaca
+      does not stand out. The primary manufacturer on planet is part of Odin Manufacturing,
+      but unlike other Odin facilities, only creates prefab buildings that are used
+      by both the military and civilians.
     landmass:
       - name:
           source: canon
@@ -138,12 +144,6 @@ planet:
         population: 1412095.0
       - date: '2340-01-01'
         population: 5079686.0
-      - date: '2341-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '2350-01-01'
         population: 15060985.0
       - date: '2360-01-01'
@@ -191,18 +191,6 @@ planet:
         population: 4948788250.0
       - date: '2570-01-01'
         population: 5059062256.0
-      - date: '2571-01-01'
-        # administration: DC | Rasalhague Military District | Tinaca Prefecture
-        # administration: DC | Rasalhague Military District | Tinaca Prefecture
-        # administration: DC | Rasalhague Military District | Tinaca Prefecture
-        # administration: DC | Rasalhague Military District | Tinaca Prefecture
-        # administration: DC | Rasalhague Military District | Tinaca Prefecture
-        # administration: DC | Rasalhague Military District | Tinaca Prefecture
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - DC
       - date: '2580-01-01'
         population: 5145363179.0
       - date: '2590-01-01'
@@ -312,12 +300,6 @@ planet:
           value: C-C-C-C-C
       - date: '3050-01-01'
         population: 4747667821.0
-      - date: '3052-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CGB
       - date: '3052-12-19'
         faction:
           source: canon
@@ -336,12 +318,6 @@ planet:
       - date: '3100-01-01'
         population: 5076659733.0
       - date: '3103-03-13'
-        # administration: RD | Region 2
-        # administration: RD | Region 2
-        # administration: RD | Region 2
-        # administration: RD | Region 2
-        # administration: RD | Region 2
-        # administration: RD | Region 2
         faction:
           source: canon
           value:

@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: Neerabup
-sucsId: 1806
+sucsId: 1805
 xcood: -339.188
 ycood: 333.668
 spectralType:
-  source: 'OTP:FI'
+  source: 'Operational Turning Points: Falcon Incursion'
   value: G8V
 primarySlot:
-  source: 'OTP:FI'
+  source: 'Operational Turning Points: Falcon Incursion'
   value: 5
 event:
   - date: '2701-07-15'
@@ -98,31 +98,31 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.56
     sysPos:
-      source: 'OTP:FI'
+      source: 'Operational Turning Points: Falcon Incursion'
       value: 5
     icon: wet15
     pressure:
-      source: 'OTP:FI'
+      source: 'Operational Turning Points: Falcon Incursion'
       value: HIGH
     atmosphere:
-      source: 'OTP:FI'
+      source: 'Operational Turning Points: Falcon Incursion'
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'OTP:FI'
+      source: 'Operational Turning Points: Falcon Incursion'
       value: 1.04
     diameter: 11308
     density: 6.463171252299
     dayLength: 24
     yearLength: 1.0
     temperature:
-      source: 'OTP:FI'
+      source: 'Operational Turning Points: Falcon Incursion'
       value: 41
     water:
-      source: 'OTP:FI'
+      source: 'Operational Turning Points: Falcon Incursion'
       value: 85
     lifeForm:
-      source: 'OTP:FI'
+      source: 'Operational Turning Points: Falcon Incursion'
       value: REPTILE
     desc: |-
       The original colonists of Neerabup were originally part of the settlers that founded the planet Australia, however the Neerabup colonists wanted to settle further from Terra, and after several near-fights broke out between the opposing groups, the soon-to-be Neerabup colonists managed to take control of two JumpShips and continue beyond Australia. Several weeks later they arrived at Neerabup with dwindling food supplies.
@@ -139,23 +139,17 @@ planet:
       - name: Nonoichi
     satellite:
       - name:
-          source: 'OTP:FI'
+          source: 'Operational Turning Points: Falcon Incursion'
           value: Dongara
         size: medium
         icon: rock7
       - name:
-          source: 'OTP:FI'
+          source: 'Operational Turning Points: Falcon Incursion'
           value: Freemantle
         size: medium
         icon: rock15
     event:
       - date: '2653-03-26'
-        # administration: RWR | Finmark Province
-        # administration: RWR | Finmark Province
-        # administration: RWR | Finmark Province
-        # administration: RWR | Finmark Province
-        # administration: RWR | Finmark Province
-        # administration: RWR | Finmark Province
         faction:
           source: canon
           value:
@@ -195,12 +189,6 @@ planet:
       - date: '2770-01-01'
         population: 132028936.0
       - date: '2779-02-13'
-        # administration: LA | Protectorate of Donegal | Coventry Province
-        # administration: LA | Protectorate of Donegal | Coventry Province
-        # administration: LA | Protectorate of Donegal | Coventry Province
-        # administration: LA | Protectorate of Donegal | Coventry Province
-        # administration: LA | Protectorate of Donegal | Coventry Province
-        # administration: LA | Protectorate of Donegal | Coventry Province
         faction:
           source: canon
           value:
@@ -262,25 +250,8 @@ planet:
       - date: '3030-01-01'
         population: 63718878.0
       - date: '3040-01-01'
-        # administration: FC | Periphery March | Tsarahavana Operational Area
-        # administration: FC | Periphery March | Tsarahavana Operational Area
-        # administration: FC | Periphery March | Tsarahavana Operational Area
-        # administration: FC | Periphery March | Tsarahavana Operational Area
-        # administration: FC | Periphery March | Tsarahavana Operational Area
-        # administration: FC | Periphery March | Tsarahavana Operational Area
         population: 64198566.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FC
       - date: '3040-01-19'
-        # administration: FC | Periphery March | Tsarahavana Operational Area
-        # administration: FC | Periphery March | Tsarahavana Operational Area
-        # administration: FC | Periphery March | Tsarahavana Operational Area
-        # administration: FC | Periphery March | Tsarahavana Operational Area
-        # administration: FC | Periphery March | Tsarahavana Operational Area
-        # administration: FC | Periphery March | Tsarahavana Operational Area
         faction:
           source: canon
           value:
@@ -291,39 +262,9 @@ planet:
           value: C-D-D-D-C
       - date: '3050-01-01'
         population: 64578457.0
-      - date: '3057-01-01'
-        # administration: LA | Periphery March | Tsarahavana Operational Area
-        # administration: LA | Periphery March | Tsarahavana Operational Area
-        # administration: LA | Periphery March | Tsarahavana Operational Area
-        # administration: LA | Periphery March | Tsarahavana Operational Area
-        # administration: LA | Periphery March | Tsarahavana Operational Area
-        # administration: LA | Periphery March | Tsarahavana Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LA
       - date: '3057-09-18'
         faction:
           source: canon
-          value:
-            - LA
-      - date: '3058-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CJF
-      - date: '3059-01-01'
-        # administration: LA | Coventry Province | Melissia Theater
-        # administration: LA | Coventry Province | Melissia Theater
-        # administration: LA | Coventry Province | Melissia Theater
-        # administration: LA | Coventry Province | Melissia Theater
-        # administration: LA | Coventry Province | Melissia Theater
-        # administration: LA | Coventry Province | Melissia Theater
-        faction:
-          source: SUCS
-          version: 2026.03.02
           value:
             - LA
       - date: '3060-01-01'

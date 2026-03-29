@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Qualip (Kerensky's Vision 3130+)
-sucsId: 2088
+sucsId: 2087
 xcood: -72.643
 ycood: 189.27
 spectralType: F7V
@@ -105,12 +105,6 @@ planet:
         icon: rock4
     event:
       - date: '2597-06-05'
-        # administration: LA | Tamar Pact | Camlann Shire
-        # administration: LA | Tamar Pact | Camlann Shire
-        # administration: LA | Tamar Pact | Camlann Shire
-        # administration: LA | Tamar Pact | Camlann Shire
-        # administration: LA | Tamar Pact | Camlann Shire
-        # administration: LA | Tamar Pact | Camlann Shire
         faction:
           source: canon
           value:
@@ -177,12 +171,6 @@ planet:
         population: 2659293.0
       - date: '2860-01-01'
         population: 1703067.0
-      - date: '2864-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - ABN
       - date: '2870-01-01'
         population: 1053926.0
       - date: '2880-01-01'
@@ -204,18 +192,6 @@ planet:
         hpg: X
         population: 0.0
         socioIndustrial: X-X-X-X-X
-      - date: '3135-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CW
-      - date: '3145-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CJF
       - date: '3145-12-12'
         faction:
           source: canon
@@ -224,12 +200,6 @@ planet:
         hpg: A
         population: 48487.0
         socioIndustrial: B-C-A-D-A
-      - date: '3151-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - TamP
       - date: '3151-10-12'
         faction:
           source: canon
@@ -240,17 +210,6 @@ planet:
       - date: '3130-01-01'
         name: Kerensky's Vision
         message: Qualip renamed to Kerensky's Vision
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CW
-      - date: '3152-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - TamP
   - name: Bin Mukhtar
     type: TERRESTRIAL
     orbitalDist: 3.64

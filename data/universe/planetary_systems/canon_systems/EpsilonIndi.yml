@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -20,10 +20,10 @@ sucsId: 814
 xcood: 29.203
 ycood: -15.558
 spectralType:
-  source: DA:RW
+  source: MWDA world profiles
   value: F9V
 primarySlot:
-  source: DA:RW
+  source: MWDA world profiles
   value: 1
 event:
   - date: '2367-01-04'
@@ -39,49 +39,73 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 1.1
     sysPos:
-      source: DA:RW
+      source: MWDA world profiles
       value: 1
     icon: green34
     pressure:
-      source: DA:RW
+      source: MWDA world profiles
       value: STANDARD
     atmosphere:
-      source: DA:RW
+      source: MWDA world profiles
       value: TAINTED_POISON
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: DA:RW
+      source: MWDA world profiles
       value: 0.74
     diameter: 10975
     density: 4.738431862003
     dayLength: 27
     yearLength: 1.6
     temperature:
-      source: DA:RW
+      source: MWDA world profiles
       value: 44
     water:
-      source: DA:RW
+      source: MWDA world profiles
       value: 31
     lifeForm:
-      source: DA:RW
+      source: MWDA world profiles
       value: REPTILE
-    desc: 3135 - Like most worlds close to Terra in the dark days leading to the Star League‘s fall, the once-thriving planet of Epsilon Indi suffered badly at the hands of Amaris forces during the crisis. Captured early in the coup through a liberal use of neutron weapons and lightning strikes against orbital defense sites, the population was decimated and the world became a gauntlet for SLDF forces to pass through. An entire SLDF fleet and its attached ground forces were obliterated while attempting to liberate the planet early in Kerensky‘s campaign, demonstrating the horrific costs of any frontal assault. The eventual assault that broke the hold of Amaris‘ troops, however, led the Usurper‘s men to resort to scorched-earth tactics, razing cities and factories with what remained in their nuclear arsenal. Today, even centuries later, Epsilon Indi is a wasteland of deserts, empty seabeds, and bombed-out cities, whose population now inhabits only the polar regions, which were spared most of the fallout. The rich mineral deposits across the planet‘s four main landmasses are now accessible to mining operations based in the polar continents of Boreria in the north, and Kantiles in the south. Kirst, Epsilon Indi‘s largest mining settlement, is located on the northern shore of Kantiles, a scant 400 kilometers from the southern edge of the uninhabitable wastes of the Surterra continent. The north-equatorial landmass of Ithicasia, just east of Surterra, suffered just as badly from the damage of the Amaris occupation and liberation, but is nonetheless home to the domed mining colony of Vogelton. During the Jihad, Word of Blake forces staged many of their operations from Boreria, particularly from the capital city of New Rhodes, but were driven off by a combination of local resistance and elements of the famous Northwind Highlanders mercenary unit. Today, Epsilon Indi is a world continuing to struggle for its recovery from the scars of war.
+    desc: 3135 - Like most worlds close to Terra in the dark days leading to the Star
+      League‘s fall, the once-thriving planet of Epsilon Indi suffered badly at the
+      hands of Amaris forces during the crisis. Captured early in the coup through
+      a liberal use of neutron weapons and lightning strikes against orbital defense
+      sites, the population was decimated and the world became a gauntlet for SLDF
+      forces to pass through. An entire SLDF fleet and its attached ground forces
+      were obliterated while attempting to liberate the planet early in Kerensky‘s
+      campaign, demonstrating the horrific costs of any frontal assault. The eventual
+      assault that broke the hold of Amaris‘ troops, however, led the Usurper‘s men
+      to resort to scorched-earth tactics, razing cities and factories with what remained
+      in their nuclear arsenal. Today, even centuries later, Epsilon Indi is a wasteland
+      of deserts, empty seabeds, and bombed-out cities, whose population now inhabits
+      only the polar regions, which were spared most of the fallout. The rich mineral
+      deposits across the planet‘s four main landmasses are now accessible to mining
+      operations based in the polar continents of Boreria in the north, and Kantiles
+      in the south. Kirst, Epsilon Indi‘s largest mining settlement, is located on
+      the northern shore of Kantiles, a scant 400 kilometers from the southern edge
+      of the uninhabitable wastes of the Surterra continent. The north-equatorial
+      landmass of Ithicasia, just east of Surterra, suffered just as badly from the
+      damage of the Amaris occupation and liberation, but is nonetheless home to the
+      domed mining colony of Vogelton. During the Jihad, Word of Blake forces staged
+      many of their operations from Boreria, particularly from the capital city of
+      New Rhodes, but were driven off by a combination of local resistance and elements
+      of the famous Northwind Highlanders mercenary unit. Today, Epsilon Indi is a
+      world continuing to struggle for its recovery from the scars of war.
     smallMoons: 1
     landmass:
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Boreria
         capital:
-          source: DA:RW
+          source: MWDA world profiles
           value: New Rhodes
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Ithicasia
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Kantiles
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Surterra
     event:
       - date: '2258-10-05'
@@ -106,12 +130,6 @@ planet:
       - date: '2310-01-01'
         population: 11936189.0
       - date: '2316-12-26'
-        # administration: TH | Lockdale Province
-        # administration: TH | Lockdale Province
-        # administration: TH | Lockdale Province
-        # administration: TH | Lockdale Province
-        # administration: TH | Lockdale Province
-        # administration: TH | Lockdale Province
         faction:
           source: canon
           value:
@@ -212,18 +230,6 @@ planet:
         population: 1653105070.0
       - date: '2760-01-01'
         population: 1657921348.0
-      - date: '2767-01-01'
-        # administration: AE | Lockdale Province
-        # administration: AE | Lockdale Province
-        # administration: AE | Lockdale Province
-        # administration: AE | Lockdale Province
-        # administration: AE | Lockdale Province
-        # administration: AE | Lockdale Province
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - AE
       - date: '2767-06-01'
         faction:
           source: canon
@@ -232,12 +238,6 @@ planet:
       - date: '2770-01-01'
         population: 1658481330.0
       - date: '2779-07-08'
-        # administration: TH | Lockdale Province
-        # administration: TH | Lockdale Province
-        # administration: TH | Lockdale Province
-        # administration: TH | Lockdale Province
-        # administration: TH | Lockdale Province
-        # administration: TH | Lockdale Province
         faction:
           source: canon
           value:
@@ -245,12 +245,6 @@ planet:
       - date: '2780-01-01'
         population: 1649720147.0
       - date: '2790-03-07'
-        # administration: CC | Tikonov Commonality | Region 3
-        # administration: CC | Tikonov Commonality | Region 3
-        # administration: CC | Tikonov Commonality | Region 3
-        # administration: CC | Tikonov Commonality | Region 3
-        # administration: CC | Tikonov Commonality | Region 3
-        # administration: CC | Tikonov Commonality | Region 3
         faction:
           source: canon
           value:
@@ -263,12 +257,6 @@ planet:
       - date: '2820-01-01'
         population: 1574135411.0
       - date: '2821-05-16'
-        # administration: CC | Tikonov Commonality | Region 3
-        # administration: CC | Tikonov Commonality | Region 3
-        # administration: CC | Tikonov Commonality | Region 3
-        # administration: CC | Tikonov Commonality | Region 3
-        # administration: CC | Tikonov Commonality | Region 3
-        # administration: CC | Tikonov Commonality | Region 3
         faction:
           source: canon
           value:
@@ -325,12 +313,6 @@ planet:
       - date: '3030-01-01'
         population: 1303093613.0
       - date: '3032-12-16'
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
         faction:
           source: canon
           value:
@@ -341,23 +323,11 @@ planet:
         socioIndustrial: B-C-B-C-C
       - date: '3050-01-01'
         population: 1319484513.0
-      - date: '3057-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '3057-11-01'
         faction:
           source: canon
           value:
             - CM
-      - date: '3058-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '3060-01-01'
         population: 1327557968.0
       - date: '3067-12-30'
@@ -381,25 +351,7 @@ planet:
             - Stone
       - date: '3080-01-01'
         population: 1362799636.0
-      - date: '3081-01-01'
-        # administration: ROS | Prefecture X
-        # administration: ROS | Prefecture X
-        # administration: ROS | Prefecture X
-        # administration: ROS | Prefecture X
-        # administration: ROS | Prefecture X
-        # administration: ROS | Prefecture X
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - ROS
       - date: '3081-09-20'
-        # administration: ROS | Prefecture X
-        # administration: ROS | Prefecture X
-        # administration: ROS | Prefecture X
-        # administration: ROS | Prefecture X
-        # administration: ROS | Prefecture X
-        # administration: ROS | Prefecture X
         faction:
           source: canon
           value:
@@ -428,12 +380,6 @@ planet:
           value:
             - CC
       - date: '3151-01-01'
-        # administration: CC | Tikonov Commonality | Region 4
-        # administration: CC | Tikonov Commonality | Region 4
-        # administration: CC | Tikonov Commonality | Region 4
-        # administration: CC | Tikonov Commonality | Region 4
-        # administration: CC | Tikonov Commonality | Region 4
-        # administration: CC | Tikonov Commonality | Region 4
         faction:
           source: sucs
           value:

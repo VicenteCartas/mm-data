@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -20,10 +20,10 @@ sucsId: 613
 xcood: -257.862
 ycood: 221.263
 spectralType:
-  source: 'OTP:FI'
+  source: 'Operational Turning Points: Falcon Incursion'
   value: F4V
 primarySlot:
-  source: 'OTP:FI'
+  source: 'Operational Turning Points: Falcon Incursion'
   value: 3
 event:
   - date: '2421-06-20'
@@ -65,31 +65,31 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 2.24
     sysPos:
-      source: 'OTP:FI'
+      source: 'Operational Turning Points: Falcon Incursion'
       value: 3
     icon: wet6
     pressure:
-      source: 'OTP:FI'
+      source: 'Operational Turning Points: Falcon Incursion'
       value: STANDARD
     atmosphere:
-      source: 'OTP:FI'
+      source: 'Operational Turning Points: Falcon Incursion'
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'OTP:FI'
+      source: 'Operational Turning Points: Falcon Incursion'
       value: 1.01
     diameter: 11440
     density: 6.204689845157
     dayLength: 22
     yearLength: 3.6
     temperature:
-      source: 'OTP:FI'
+      source: 'Operational Turning Points: Falcon Incursion'
       value: 35
     water:
-      source: 'OTP:FI'
+      source: 'Operational Turning Points: Falcon Incursion'
       value: 80
     lifeForm:
-      source: 'OTP:FI'
+      source: 'Operational Turning Points: Falcon Incursion'
       value: MAMMAL
     desc: |-
       The planet Coventry lies on the anti-spinward side of the core of Lyran space. The planet itself enjoys mild seasons and large seas, teeming with life, and fertile soil, making it well suited for large-scale agriculture.
@@ -103,51 +103,28 @@ planet:
       Coventry Metal Works, Refit Facility
     landmass:
       - name:
-          source: 'HB:HS'
+          source: 'Handbook: House Steiner, pg. 80'
           value: Auckland
-          page: 80
       - name:
-          source: 'HB:HS'
+          source: 'Handbook: House Steiner, pg. 80'
           value: Dunnigan
-          page: 80
       - name:
-          source: 'HB:HS'
+          source: 'Handbook: House Steiner, pg. 80'
           value: Sydnallia
-          page: 80
       - name:
-          source: 'HB:HS'
+          source: 'Handbook: House Steiner, pg. 80'
           value: Veracruz
-          page: 80
         capital:
-          source: 'HB:HS'
+          source: 'Handbook: House Steiner, pg. 80'
           value: Port St. Williams
-          page: 80
     satellite:
       - name:
-          source: 'OTP:FI'
+          source: 'Operational Turning Points: Falcon Incursion'
           value: Wellston
         size: medium
         icon: oddmoon3
     event:
-      - date: '2366-01-01'
-        # administration: LA | Protectorate of Donegal
-        # administration: LA | Protectorate of Donegal
-        # administration: LA | Protectorate of Donegal
-        # administration: LA | Protectorate of Donegal
-        # administration: LA | Protectorate of Donegal
-        # administration: LA | Protectorate of Donegal
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LA
       - date: '2405-03-05'
-        # administration: LA | Protectorate of Donegal | Coventry Province
-        # administration: LA | Protectorate of Donegal | Coventry Province
-        # administration: LA | Protectorate of Donegal | Coventry Province
-        # administration: LA | Protectorate of Donegal | Coventry Province
-        # administration: LA | Protectorate of Donegal | Coventry Province
-        # administration: LA | Protectorate of Donegal | Coventry Province
         faction:
           source: canon
           value:
@@ -295,25 +272,8 @@ planet:
       - date: '3030-01-01'
         population: 3667513008.0
       - date: '3040-01-01'
-        # administration: FC | Donegal March | Coventry Operational Area
-        # administration: FC | Donegal March | Coventry Operational Area
-        # administration: FC | Donegal March | Coventry Operational Area
-        # administration: FC | Donegal March | Coventry Operational Area
-        # administration: FC | Donegal March | Coventry Operational Area
-        # administration: FC | Donegal March | Coventry Operational Area
         population: 3712530716.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FC
       - date: '3040-01-19'
-        # administration: FC | Donegal March | Coventry Operational Area
-        # administration: FC | Donegal March | Coventry Operational Area
-        # administration: FC | Donegal March | Coventry Operational Area
-        # administration: FC | Donegal March | Coventry Operational Area
-        # administration: FC | Donegal March | Coventry Operational Area
-        # administration: FC | Donegal March | Coventry Operational Area
         faction:
           source: canon
           value:
@@ -328,29 +288,11 @@ planet:
           value: A-A-A-A-A
       - date: '3050-01-01'
         population: 3744221723.0
-      - date: '3057-01-01'
-        # administration: LA | Donegal March | Coventry Operational Area
-        # administration: LA | Donegal March | Coventry Operational Area
-        # administration: LA | Donegal March | Coventry Operational Area
-        # administration: LA | Donegal March | Coventry Operational Area
-        # administration: LA | Donegal March | Coventry Operational Area
-        # administration: LA | Donegal March | Coventry Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LA
       - date: '3057-09-18'
         faction:
           source: canon
           value:
             - LA
-      - date: '3058-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CJF
       - date: '3058-03-15'
         faction:
           source: canon
@@ -358,12 +300,6 @@ planet:
             - LA
             - CJF
       - date: '3058-06-09'
-        # administration: LA | Coventry Province | District Capital
-        # administration: LA | Coventry Province | District Capital
-        # administration: LA | Coventry Province | District Capital
-        # administration: LA | Coventry Province | District Capital
-        # administration: LA | Coventry Province | District Capital
-        # administration: LA | Coventry Province | District Capital
         faction:
           source: canon
           value:
@@ -376,18 +312,6 @@ planet:
           value:
             - LA
             - FC
-      - date: '3063-01-01'
-        # administration: LA | Coventry Province | District Capital
-        # administration: LA | Coventry Province | District Capital
-        # administration: LA | Coventry Province | District Capital
-        # administration: LA | Coventry Province | District Capital
-        # administration: LA | Coventry Province | District Capital
-        # administration: LA | Coventry Province | District Capital
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LA
       - date: '3063-01-17'
         faction:
           source: canon
@@ -405,27 +329,10 @@ planet:
           value:
             - FC
       - date: '3067-01-01'
-        # administration: LA | Coventry Province | District Capital
-        # administration: LA | Coventry Province | District Capital
-        # administration: LA | Coventry Province | District Capital
-        # administration: LA | Coventry Province | District Capital
-        # administration: LA | Coventry Province | District Capital
-        # administration: LA | Coventry Province | District Capital
         population:
           source: canon
           value: 3784500000.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LA
       - date: '3067-04-20'
-        # administration: LA | Coventry Province | District Capital
-        # administration: LA | Coventry Province | District Capital
-        # administration: LA | Coventry Province | District Capital
-        # administration: LA | Coventry Province | District Capital
-        # administration: LA | Coventry Province | District Capital
-        # administration: LA | Coventry Province | District Capital
         faction:
           source: canon
           value:

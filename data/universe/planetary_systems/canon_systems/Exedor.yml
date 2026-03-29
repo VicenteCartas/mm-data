@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: Exedor
-sucsId: 837
+sucsId: 836
 xcood: -13.198
 ycood: -207.89
 spectralType:
-  source: 'OR'
+  source: 'Objective Raids: Capellan Confederation'
   value: F2V
 primarySlot:
-  source: 'OR'
+  source: 'Objective Raids: Capellan Confederation'
   value: 4
 planet:
   - name: Sementron
@@ -33,7 +33,8 @@ planet:
     icon: rock5
     pressure: TRACE
     atmosphere: TOXIC_POISON
-    composition: Nitrogen and Carbon Dioxide, plus trace amounts of Methane and Carbon Dioxide
+    composition: Nitrogen and Carbon Dioxide, plus trace amounts of Methane and Carbon
+      Dioxide
     gravity: 0.68
     diameter: 7500
     density: 6.3337
@@ -85,31 +86,31 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 2.4
     sysPos:
-      source: 'OR'
+      source: 'Objective Raids: Capellan Confederation'
       value: 4
     icon: green47
     pressure:
-      source: 'OR'
+      source: 'Objective Raids: Capellan Confederation'
       value: HIGH
     atmosphere:
-      source: 'OR'
+      source: 'Objective Raids: Capellan Confederation'
       value: TAINTED_CAUSTIC
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'OR'
+      source: 'Objective Raids: Capellan Confederation'
       value: 1.15
     diameter: 14392
     density: 5.615333583503
     dayLength: 24
     yearLength: 3.9
     temperature:
-      source: 'OR'
+      source: 'Objective Raids: Capellan Confederation'
       value: 30
     water:
-      source: 'OR'
+      source: 'Objective Raids: Capellan Confederation'
       value: 53
     lifeForm:
-      source: 'OR'
+      source: 'Objective Raids: Capellan Confederation'
       value: MAMMAL
     desc: |-
       Exedor was settled in the mid-29th century and was used to house secret personal treasures of House Liao in underground facilities, with veteran defenders.
@@ -121,19 +122,13 @@ planet:
       Exedor is home to one of the many Duchy RTC training facilities throughout the Capellan Confederation that train infantry and conventional armor crews.
     landmass:
       - name:
-          source: 'OR'
+          source: 'Objective Raids: Capellan Confederation'
           value: Tardess
         capital:
-          source: 'OR'
+          source: 'Objective Raids: Capellan Confederation'
           value: Sanctuary
     event:
       - date: '2692-06-20'
-        # administration: CC | Capella Commonality | Region 6
-        # administration: CC | Capella Commonality | Region 6
-        # administration: CC | Capella Commonality | Region 6
-        # administration: CC | Capella Commonality | Region 6
-        # administration: CC | Capella Commonality | Region 6
-        # administration: CC | Capella Commonality | Region 6
         faction:
           source: canon
           value:
@@ -188,12 +183,6 @@ planet:
       - date: '2843-01-01'
         socioIndustrial: C-B-C-C-C
       - date: '2850-04-15'
-        # administration: CC | Capella Commonality | Region 5
-        # administration: CC | Capella Commonality | Region 5
-        # administration: CC | Capella Commonality | Region 5
-        # administration: CC | Capella Commonality | Region 5
-        # administration: CC | Capella Commonality | Region 5
-        # administration: CC | Capella Commonality | Region 5
         faction:
           source: canon
           value:

@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -20,13 +20,11 @@ sucsId: 491
 xcood: 317.678
 ycood: 79.828
 spectralType:
-  source: 'HB:HD'
+  source: 'Handbook: House Davion, pg. 99'
   value: M5Ia
-  page: 99
 primarySlot:
-  source: 'HB:HD'
+  source: 'Handbook: House Davion, pg. 99'
   value: 1
-  page: 99
 event:
   - date: '2353-09-17'
     nadirCharge: yes
@@ -37,93 +35,72 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.14
     sysPos:
-      source: 'HB:HD'
+      source: 'Handbook: House Davion, pg. 99'
       value: 1
-      page: 99
     icon: green10
     pressure:
-      source: 'HB:HD'
+      source: 'Handbook: House Davion, pg. 99'
       value: STANDARD
-      page: 99
     atmosphere:
-      source: 'HB:HD'
+      source: 'Handbook: House Davion, pg. 99'
       value: TAINTED_POISON
-      page: 99
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'HB:HD'
+      source: 'Handbook: House Davion, pg. 99'
       value: 1.1
-      page: 99
     diameter: 12092
     density: 6.392801099159
     dayLength: 21
     yearLength: 0.5
     temperature:
-      source: 'HB:HD'
+      source: 'Handbook: House Davion, pg. 99'
       value: 45
-      page: 99
     water:
-      source: 'HB:HD'
+      source: 'Handbook: House Davion, pg. 99'
       value: 30
-      page: 99
     lifeForm:
-      source: 'HB:HD'
+      source: 'Handbook: House Davion, pg. 99'
       value: AMPHIBIAN
-      page: 99
     desc: |-
       Cassias is a tropical world with a moderate population. The planet sits on the border of the Federated Suns and the Draconis Combine, however the planet is also on the unofficial border of the Federated Suns’ “civilized space” and outback. Due to a high concentration of nitrogen in the atmosphere early settlers were forced to live in domed cities, however atmosphere processors on Cassias have since made the air breathable by humans and removed the need for the domes. The three continents of Cassias are all mountainous and covered by thick jungles.
 
       Agriculture is an important industry on Cassias, though it rarely produces foodstuffs, the primary exports are rubber, textiles and timber. The planet also has a thriving metal and natural gas industry. However, the primary importance of Cassias to the Federated Suns has always been the planet’s location on the border with the Combine, as a result the AFFS have always maintained a presence on Cassias.
     landmass:
       - name:
-          source: 'HB:HD'
+          source: 'Handbook: House Davion, pg. 99'
           value: Borneo
-          page: 99
       - name:
-          source: 'HB:HD'
+          source: 'Handbook: House Davion, pg. 99'
           value: Java
-          page: 99
         capital:
-          source: FCCW
+          source: FedCom Civil War, pg. 190
           value: New Jakarta City
-          page: 190
       - name:
-          source: 'HB:HD'
+          source: 'Handbook: House Davion, pg. 99'
           value: Kalimantan
-          page: 99
     satellite:
       - name:
-          source: 'HB:HD'
+          source: 'Handbook: House Davion, pg. 99'
           value: Bambang
-          page: 99
         size: medium
         icon: oddmoon2
       - name:
-          source: 'HB:HD'
+          source: 'Handbook: House Davion, pg. 99'
           value: Budiono
-          page: 99
         size: large
         icon: rock8
       - name:
-          source: 'HB:HD'
+          source: 'Handbook: House Davion, pg. 99'
           value: Kinjuri
-          page: 99
         size: medium
         icon: rock5
       - name:
-          source: 'HB:HD'
+          source: 'Handbook: House Davion, pg. 99'
           value: Ramah
-          page: 99
         size: medium
         icon: oddmoon1
     event:
       - date: '2340-05-01'
-        # administration: DC | Galedon Military District | Kaznejoy Prefecture
-        # administration: DC | Galedon Military District | Kaznejoy Prefecture
-        # administration: DC | Galedon Military District | Kaznejoy Prefecture
-        # administration: DC | Galedon Military District | Kaznejoy Prefecture
-        # administration: DC | Galedon Military District | Kaznejoy Prefecture
-        # administration: DC | Galedon Military District | Kaznejoy Prefecture
         faction:
           source: canon
           value:
@@ -230,18 +207,6 @@ planet:
           value:
             - FS
         population: 633302627.0
-      - date: '2783-01-01'
-        # administration: DC | Galedon Military District | Kaznejoy Prefecture
-        # administration: DC | Galedon Military District | Kaznejoy Prefecture
-        # administration: DC | Galedon Military District | Kaznejoy Prefecture
-        # administration: DC | Galedon Military District | Kaznejoy Prefecture
-        # administration: DC | Galedon Military District | Kaznejoy Prefecture
-        # administration: DC | Galedon Military District | Kaznejoy Prefecture
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - DC
       - date: '2790-01-01'
         population: 627631120.0
       - date: '2796-04-02'
@@ -260,25 +225,7 @@ planet:
         population: 614436078.0
       - date: '2820-01-01'
         population: 610671317.0
-      - date: '2821-01-01'
-        # administration: DC | Galedon Military District | Kaznejoy Prefecture
-        # administration: DC | Galedon Military District | Kaznejoy Prefecture
-        # administration: DC | Galedon Military District | Kaznejoy Prefecture
-        # administration: DC | Galedon Military District | Kaznejoy Prefecture
-        # administration: DC | Galedon Military District | Kaznejoy Prefecture
-        # administration: DC | Galedon Military District | Kaznejoy Prefecture
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - DC
       - date: '2822-12-10'
-        # administration: DC | Galedon Military District | Kaznejoy Prefecture
-        # administration: DC | Galedon Military District | Kaznejoy Prefecture
-        # administration: DC | Galedon Military District | Kaznejoy Prefecture
-        # administration: DC | Galedon Military District | Kaznejoy Prefecture
-        # administration: DC | Galedon Military District | Kaznejoy Prefecture
-        # administration: DC | Galedon Military District | Kaznejoy Prefecture
         faction:
           source: canon
           value:
@@ -293,25 +240,7 @@ planet:
         population: 578368035.0
       - date: '2863-01-01'
         socioIndustrial: D-B-B-B-B
-      - date: '2864-01-01'
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FS
       - date: '2864-12-07'
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
         faction:
           source: canon
           value:
@@ -351,12 +280,6 @@ planet:
       - date: '3020-01-01'
         population: 560618844.0
       - date: '3025-09-19'
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
         faction:
           source: canon
           value:
@@ -365,30 +288,12 @@ planet:
         socioIndustrial: D-C-C-C-B
       - date: '3030-01-01'
         population: 564738655.0
-      - date: '3040-01-01'
-        # administration: FC | Draconis March | Robinson Operational Area
-        # administration: FC | Draconis March | Robinson Operational Area
-        # administration: FC | Draconis March | Robinson Operational Area
-        # administration: FC | Draconis March | Robinson Operational Area
-        # administration: FC | Draconis March | Robinson Operational Area
-        # administration: FC | Draconis March | Robinson Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FC
       - date: '3040-01-09'
         population: 568648826.0
         socioIndustrial:
           source: canon
           value: C-C-B-B-B
       - date: '3040-01-19'
-        # administration: FC | Draconis March | Robinson Operational Area
-        # administration: FC | Draconis March | Robinson Operational Area
-        # administration: FC | Draconis March | Robinson Operational Area
-        # administration: FC | Draconis March | Robinson Operational Area
-        # administration: FC | Draconis March | Robinson Operational Area
-        # administration: FC | Draconis March | Robinson Operational Area
         faction:
           source: canon
           value:
@@ -398,27 +303,10 @@ planet:
       - date: '3060-01-01'
         population: 575859131.0
       - date: '3067-01-01'
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
         population:
           source: canon
           value: 578225000.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FS
       - date: '3067-04-20'
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
         faction:
           source: canon
           value:
@@ -437,12 +325,6 @@ planet:
         population: 588491843.0
       - date: '3120-01-01'
         population: 588138854.0
-      - date: '3130-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - DC/FS
       - date: '3130-12-05'
         faction:
           source: canon
@@ -454,33 +336,9 @@ planet:
         hpg:
           source: canon
           value: X
-      - date: '3135-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - DC/FS
       - date: '3140-01-01'
         population: 587551009.0
-      - date: '3145-01-01'
-        # administration: DC | New Samarkand Military District | Barlow's End Prefecture
-        # administration: DC | New Samarkand Military District | Barlow's End Prefecture
-        # administration: DC | New Samarkand Military District | Barlow's End Prefecture
-        # administration: DC | New Samarkand Military District | Barlow's End Prefecture
-        # administration: DC | New Samarkand Military District | Barlow's End Prefecture
-        # administration: DC | New Samarkand Military District | Barlow's End Prefecture
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - DC
       - date: '3145-06-17'
-        # administration: DC | New Samarkand Military District | Barlow's End Prefecture
-        # administration: DC | New Samarkand Military District | Barlow's End Prefecture
-        # administration: DC | New Samarkand Military District | Barlow's End Prefecture
-        # administration: DC | New Samarkand Military District | Barlow's End Prefecture
-        # administration: DC | New Samarkand Military District | Barlow's End Prefecture
-        # administration: DC | New Samarkand Military District | Barlow's End Prefecture
         faction:
           source: canon
           value:

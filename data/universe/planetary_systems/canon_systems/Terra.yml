@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,17 +16,15 @@
 # affiliated with Microsoft.
 
 id: Terra
-sucsId: 2371
+sucsId: 2370
 xcood: 0.0
 ycood: 0.0
 spectralType:
-  source: M&M
+  source: Masters and Minions, pg. 220
   value: G2V
-  page: 220
 primarySlot:
-  source: M&M
+  source: Masters and Minions, pg. 220
   value: 3
-  page: 220
 event:
   - date: '2367-11-21'
     zenithCharge: yes
@@ -233,12 +231,6 @@ planet:
       - date: '2780-01-01'
         population: 113713557.0
       - date: '2788-06-25'
-        # administration: CS | National Capital
-        # administration: CS | National Capital
-        # administration: CS | National Capital
-        # administration: CS | National Capital
-        # administration: CS | National Capital
-        # administration: CS | National Capital
         faction:
           source: canon
           value:
@@ -305,12 +297,6 @@ planet:
           - ABN
         population: 0.0
       - date: '3151-01-01'
-        # administration: 3SL | National Capital
-        # administration: 3SL | National Capital
-        # administration: 3SL | National Capital
-        # administration: 3SL | National Capital
-        # administration: 3SL | National Capital
-        # administration: 3SL | National Capital
         faction:
           source: sucs
           value:
@@ -323,25 +309,21 @@ planet:
       value: TERRESTRIAL
     orbitalDist: 1.0
     sysPos:
-      source: M&M
+      source: Masters and Minions, pg. 220
       value: 3
-      page: 220
     icon: earth
     pressure:
-      source: M&M
+      source: Masters and Minions, pg. 220
       value: STANDARD
-      page: 220
     atmosphere:
-      source: M&M
+      source: Masters and Minions, pg. 220
       value: BREATHABLE
-      page: 220
     composition:
       source: canon
       value: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: M&M
+      source: Masters and Minions, pg. 220
       value: 1.0
-      page: 220
     diameter:
       source: canon
       value: 12744
@@ -361,9 +343,8 @@ planet:
       source: Technology of Destruction, pg. po
       value: 75
     lifeForm:
-      source: M&M
+      source: Masters and Minions, pg. 220
       value: MAMMAL
-      page: 220
     desc: |-
       The birthplace of humanity, Terra (or Earth), remains a leader in industry and technology over the rest of the Inner Sphere. Terra was the seat of power for the Terran Alliance and then later the Terran Hegemony and by extension the Star League.
 
@@ -378,44 +359,37 @@ planet:
       In addition to Terra herself, colonies exist on the Terran lunar surface, and the fourth planet in the system, Mars. At the peak of the Star League, settlements also existed on Venus, the second world, and a major shipyard was placed orbiting Titan, a moon of the gas giant Saturn, but both of these worlds are once more void of human habitation. Venus gradually reverted to its hellish environment after the fall of the League, becoming totally uninhabitable once again by the close of the thirty-first century, and the Titan shipyards were destroyed during the Jihad. The capital cities of Luna and Mars are Luna City and Koryo, respectively, though Koryo was heavily damaged in the final days of the Word of Blake‘s reign.
     landmass:
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Africa
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Antarctica
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Asia
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Australia
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Europe
         capital:
-          source: DA:RW
+          source: MWDA world profiles
           value: Geneva
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: North America
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: South America
     satellite:
       - name:
-          source: M&M
+          source: Masters and Minions, pg. 220
           value: Luna
-          page: 220
         size: medium
         icon: rock6
     event:
       - date: '2086-10-31'
-        # administration: TA | National Capital
-        # administration: TA | National Capital
-        # administration: TA | National Capital
-        # administration: TA | National Capital
-        # administration: TA | National Capital
-        # administration: TA | National Capital
         faction:
           source: canon
           value:
@@ -471,12 +445,6 @@ planet:
       - date: '2310-01-01'
         population: 11032488944.0
       - date: '2316-10-21'
-        # administration: TH | National Capital
-        # administration: TH | National Capital
-        # administration: TH | National Capital
-        # administration: TH | National Capital
-        # administration: TH | National Capital
-        # administration: TH | National Capital
         faction:
           source: canon
           value:
@@ -578,18 +546,6 @@ planet:
         population: 11607123411.0
       - date: '2760-01-01'
         population: 11598493372.0
-      - date: '2767-01-01'
-        # administration: AE | Alliance Core | National Capital
-        # administration: AE | Alliance Core | National Capital
-        # administration: AE | Alliance Core | National Capital
-        # administration: AE | Alliance Core | National Capital
-        # administration: AE | Alliance Core | National Capital
-        # administration: AE | Alliance Core | National Capital
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - AE
       - date: '2767-06-11'
         faction:
           source: canon
@@ -599,12 +555,6 @@ planet:
       - date: '2770-01-01'
         population: 11529401369.0
       - date: '2779-02-05'
-        # administration: TH | Alliance Core | National Capital
-        # administration: TH | Alliance Core | National Capital
-        # administration: TH | Alliance Core | National Capital
-        # administration: TH | Alliance Core | National Capital
-        # administration: TH | Alliance Core | National Capital
-        # administration: TH | Alliance Core | National Capital
         faction:
           source: canon
           value:
@@ -612,12 +562,6 @@ planet:
       - date: '2780-01-01'
         population: 11373148719.0
       - date: '2788-06-25'
-        # administration: CS | National Capital
-        # administration: CS | National Capital
-        # administration: CS | National Capital
-        # administration: CS | National Capital
-        # administration: CS | National Capital
-        # administration: CS | National Capital
         faction:
           source: canon
           value:
@@ -690,12 +634,6 @@ planet:
       - date: '3050-01-01'
         population: 6154278514.0
       - date: '3057-02-28'
-        # administration: WOB | National Capital
-        # administration: WOB | National Capital
-        # administration: WOB | National Capital
-        # administration: WOB | National Capital
-        # administration: WOB | National Capital
-        # administration: WOB | National Capital
         faction:
           source: canon
           value:
@@ -705,20 +643,9 @@ planet:
       - date: '3070-01-01'
         population: 6267253079.0
       - date: '3079-01-01'
-        # administration: Stone | National Capital
-        # administration: Stone | National Capital
-        # administration: Stone | National Capital
-        # administration: Stone | National Capital
-        # administration: Stone | National Capital
-        # administration: Stone | National Capital
         population:
           source: canon
           value: 6350000000.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - Stone
       - date: '3079-01-12'
         faction:
           source: canon
@@ -733,25 +660,7 @@ planet:
             - Stone
       - date: '3080-01-01'
         population: 6350820116.0
-      - date: '3081-01-01'
-        # administration: ROS | Prefecture X | National Capital
-        # administration: ROS | Prefecture X | National Capital
-        # administration: ROS | Prefecture X | National Capital
-        # administration: ROS | Prefecture X | National Capital
-        # administration: ROS | Prefecture X | National Capital
-        # administration: ROS | Prefecture X | National Capital
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - ROS
       - date: '3081-01-24'
-        # administration: ROS | Prefecture X | National Capital
-        # administration: ROS | Prefecture X | National Capital
-        # administration: ROS | Prefecture X | National Capital
-        # administration: ROS | Prefecture X | National Capital
-        # administration: ROS | Prefecture X | National Capital
-        # administration: ROS | Prefecture X | National Capital
         faction:
           source: canon
           value:
@@ -776,18 +685,6 @@ planet:
         population: 6517938233.0
       - date: '3145-01-01'
         population: 6555834723.0
-      - date: '3151-01-01'
-        # administration: 3SL | National Capital
-        # administration: 3SL | National Capital
-        # administration: 3SL | National Capital
-        # administration: 3SL | National Capital
-        # administration: 3SL | National Capital
-        # administration: 3SL | National Capital
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - 3SL
   - name:
       source: canon
       value: Mars
@@ -964,12 +861,6 @@ planet:
       - date: '2780-01-01'
         population: 66145803.0
       - date: '2788-06-25'
-        # administration: CS | National Capital
-        # administration: CS | National Capital
-        # administration: CS | National Capital
-        # administration: CS | National Capital
-        # administration: CS | National Capital
-        # administration: CS | National Capital
         faction:
           source: canon
           value:
@@ -1029,12 +920,6 @@ planet:
       - date: '3050-01-01'
         population: 5324766.0
       - date: '3057-02-28'
-        # administration: WOB | National Capital
-        # administration: WOB | National Capital
-        # administration: WOB | National Capital
-        # administration: WOB | National Capital
-        # administration: WOB | National Capital
-        # administration: WOB | National Capital
         faction:
           source: canon
           value:

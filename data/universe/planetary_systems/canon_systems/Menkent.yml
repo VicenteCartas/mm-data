@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: Menkent
-sucsId: 1678
+sucsId: 1677
 xcood: -38.289
 ycood: 22.951
 spectralType:
-  source: DA:RW
+  source: MWDA world profiles
   value: K0IV
 primarySlot:
-  source: DA:RW
+  source: MWDA world profiles
   value: 2
 planet:
   - name: Mutta
@@ -52,45 +52,71 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 1.28
     sysPos:
-      source: DA:RW
+      source: MWDA world profiles
       value: 2
     icon: green55
     pressure:
-      source: DA:RW
+      source: MWDA world profiles
       value: STANDARD
     atmosphere:
-      source: DA:RW
+      source: MWDA world profiles
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: DA:RW
+      source: MWDA world profiles
       value: 0.83
     diameter: 10493
     density: 5.558919350236
     dayLength: 20
     yearLength: 1.7
     temperature:
-      source: DA:RW
+      source: MWDA world profiles
       value: 63
     water:
-      source: DA:RW
+      source: MWDA world profiles
       value: 47
     lifeForm:
-      source: DA:RW
+      source: MWDA world profiles
       value: REPTILE
-    desc: 3135 - Many of the locals on Menkent refer to their world as the burial site of the Marsden dynasty, thanks to the heroic death of the Lyran Commonwealth‘s second Archon, Alistair Marsden, on the Plain of Dust just outside the capital city of Blackstone in 2408. Marsden, who died leading a tank regiment during the Age of War, left behind his widow, Katherine Marsden-Steiner, the woman who would rule the Commonwealth and establish the Great House of Steiner. This simple historical event at once turned the sandy, sun-blasted world of Menkent into a tourist attraction for those willing to brave its closeness to the Draconis Combine border. Lit by a large, orange subgiant, which it orbits just a little too closely, Menkent itself is a warm planet, less than half of which is covered by water, and that is so salty that it requires purifiers to drink. Even inland seas and rivers require treatment before they can be used for drinking and irrigation, making life here difficult, but not impossible. At the time of Marsden‘s death, House Kurita had managed to overtake this world, and it would trade hands between Steiner and Kurita many times before and after the days of the original Star League. Effectively little more than a barren wasteland—its principal exports being limited to common metals and small machines—Menkent‘s local infrastructure was ravaged by the centuries of continuous warfare. During the Jihad, insult was added to centuries of injury when Blakist WarShips made an incidental bombardment pass over Blackstone after a strike on nearby Skye. The capital city and its surrounding towns, however, were already partially rebuilt by the time the war ended and Menkent was turned over to Devlin Stone‘s nascent Republic of the Sphere. Blackstone stands at the junction of three rivers on Terrasota, the largest and most populous of the planet‘s three continents. The other two continents, Areseppi and Aphirojia, are both equatorial continents, where the arid climate and local dust storms have made habitation more difficult than normal, and thus both are far less densely populated.
+    desc: 3135 - Many of the locals on Menkent refer to their world as the burial
+      site of the Marsden dynasty, thanks to the heroic death of the Lyran Commonwealth‘s
+      second Archon, Alistair Marsden, on the Plain of Dust just outside the capital
+      city of Blackstone in 2408. Marsden, who died leading a tank regiment during
+      the Age of War, left behind his widow, Katherine Marsden-Steiner, the woman
+      who would rule the Commonwealth and establish the Great House of Steiner. This
+      simple historical event at once turned the sandy, sun-blasted world of Menkent
+      into a tourist attraction for those willing to brave its closeness to the Draconis
+      Combine border. Lit by a large, orange subgiant, which it orbits just a little
+      too closely, Menkent itself is a warm planet, less than half of which is covered
+      by water, and that is so salty that it requires purifiers to drink. Even inland
+      seas and rivers require treatment before they can be used for drinking and irrigation,
+      making life here difficult, but not impossible. At the time of Marsden‘s death,
+      House Kurita had managed to overtake this world, and it would trade hands between
+      Steiner and Kurita many times before and after the days of the original Star
+      League. Effectively little more than a barren wasteland—its principal exports
+      being limited to common metals and small machines—Menkent‘s local infrastructure
+      was ravaged by the centuries of continuous warfare. During the Jihad, insult
+      was added to centuries of injury when Blakist WarShips made an incidental bombardment
+      pass over Blackstone after a strike on nearby Skye. The capital city and its
+      surrounding towns, however, were already partially rebuilt by the time the war
+      ended and Menkent was turned over to Devlin Stone‘s nascent Republic of the
+      Sphere. Blackstone stands at the junction of three rivers on Terrasota, the
+      largest and most populous of the planet‘s three continents. The other two continents,
+      Areseppi and Aphirojia, are both equatorial continents, where the arid climate
+      and local dust storms have made habitation more difficult than normal, and thus
+      both are far less densely populated.
     landmass:
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Aphirojia
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Areseppi
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Terrasota
         capital:
-          source: DA:RW
+          source: MWDA world profiles
           value: Blackstone
     event:
       - date: '2169-10-07'
@@ -140,18 +166,6 @@ planet:
         population: 146176720.0
       - date: '2310-01-01'
         population: 183901346.0
-      - date: '2317-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
-      - date: '2319-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FoS
       - date: '2320-01-01'
         population: 225161608.0
       - date: '2330-01-01'
@@ -159,12 +173,6 @@ planet:
       - date: '2340-01-01'
         population: 315361206.0
       - date: '2341-07-25'
-        # administration: LA | Federation of Skye
-        # administration: LA | Federation of Skye
-        # administration: LA | Federation of Skye
-        # administration: LA | Federation of Skye
-        # administration: LA | Federation of Skye
-        # administration: LA | Federation of Skye
         faction:
           source: canon
           value:
@@ -260,18 +268,6 @@ planet:
         population: 1338585063.0
       - date: '2760-01-01'
         population: 1347320566.0
-      - date: '2767-01-01'
-        # administration: AE | Tyrfing Province
-        # administration: AE | Tyrfing Province
-        # administration: AE | Tyrfing Province
-        # administration: AE | Tyrfing Province
-        # administration: AE | Tyrfing Province
-        # administration: AE | Tyrfing Province
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - AE
       - date: '2767-03-10'
         faction:
           source: canon
@@ -280,37 +276,13 @@ planet:
       - date: '2770-01-01'
         population: 1352179044.0
       - date: '2779-03-09'
-        # administration: TH | Tyrfing Province
-        # administration: TH | Tyrfing Province
-        # administration: TH | Tyrfing Province
-        # administration: TH | Tyrfing Province
-        # administration: TH | Tyrfing Province
-        # administration: TH | Tyrfing Province
         faction:
           source: canon
           value:
             - TH
       - date: '2780-01-01'
         population: 1360733634.0
-      - date: '2786-01-01'
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LA
       - date: '2786-06-19'
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
         faction:
           source: canon
           value:
@@ -372,25 +344,8 @@ planet:
       - date: '3035-01-01'
         socioIndustrial: B-C-C-B-D
       - date: '3040-01-01'
-        # administration: FC | Skye March | Alcor Operational Area
-        # administration: FC | Skye March | Alcor Operational Area
-        # administration: FC | Skye March | Alcor Operational Area
-        # administration: FC | Skye March | Alcor Operational Area
-        # administration: FC | Skye March | Alcor Operational Area
-        # administration: FC | Skye March | Alcor Operational Area
         population: 1197588929.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FC
       - date: '3040-01-19'
-        # administration: FC | Skye March | Alcor Operational Area
-        # administration: FC | Skye March | Alcor Operational Area
-        # administration: FC | Skye March | Alcor Operational Area
-        # administration: FC | Skye March | Alcor Operational Area
-        # administration: FC | Skye March | Alcor Operational Area
-        # administration: FC | Skye March | Alcor Operational Area
         faction:
           source: canon
           value:
@@ -399,25 +354,7 @@ planet:
         socioIndustrial: A-B-C-A-C
       - date: '3050-01-01'
         population: 1210108844.0
-      - date: '3057-01-01'
-        # administration: LA | Skye March | Alcor Operational Area
-        # administration: LA | Skye March | Alcor Operational Area
-        # administration: LA | Skye March | Alcor Operational Area
-        # administration: LA | Skye March | Alcor Operational Area
-        # administration: LA | Skye March | Alcor Operational Area
-        # administration: LA | Skye March | Alcor Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LA
       - date: '3057-09-18'
-        # administration: LA | Skye Province | Freedom Theater
-        # administration: LA | Skye Province | Freedom Theater
-        # administration: LA | Skye Province | Freedom Theater
-        # administration: LA | Skye Province | Freedom Theater
-        # administration: LA | Skye Province | Freedom Theater
-        # administration: LA | Skye Province | Freedom Theater
         faction:
           source: canon
           value:
@@ -428,25 +365,7 @@ planet:
         population: 1240991069.0
       - date: '3080-01-01'
         population: 1250958815.0
-      - date: '3081-01-01'
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - ROS
       - date: '3081-09-28'
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
         faction:
           source: canon
           value:
@@ -488,12 +407,6 @@ planet:
           source: canon
           value:
             - CJF
-      - date: '3151-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '3152-06-01'
         faction:
           source: sucs

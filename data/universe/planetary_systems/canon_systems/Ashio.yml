@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -20,13 +20,11 @@ sucsId: 192
 xcood: 73.565
 ycood: 66.743
 spectralType:
-  source: FCCW
+  source: FedCom Civil War, pg. 203
   value: G6IV
-  page: 203
 primarySlot:
-  source: FCCW
+  source: FedCom Civil War, pg. 203
   value: 3
-  page: 203
 event:
   - date: '2350-11-26'
     nadirCharge: yes
@@ -72,74 +70,66 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 1.44
     sysPos:
-      source: FCCW
+      source: FedCom Civil War, pg. 203
       value: 3
-      page: 203
     icon: wet14
     pressure:
-      source: FCCW
+      source: FedCom Civil War, pg. 203
       value: STANDARD
-      page: 203
     atmosphere:
-      source: FCCW
+      source: FedCom Civil War, pg. 203
       value: BREATHABLE
-      page: 203
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: FCCW
+      source: FedCom Civil War, pg. 203
       value: 1.0
-      page: 203
     diameter: 10827
     density: 6.490631456057
     dayLength: 19
     yearLength: 2.0
     temperature:
-      source: FCCW
+      source: FedCom Civil War, pg. 203
       value: 35
-      page: 203
     water:
-      source: FCCW
+      source: FedCom Civil War, pg. 203
       value: 80
-      page: 203
     lifeForm:
-      source: FCCW
+      source: FedCom Civil War, pg. 203
       value: MAMMAL
-      page: 203
-    desc: Ashio is an unremarkable planet, aside from being the capital of the Ashio Prefecture. As the capital it has significant logistical and command infrastructure. The planet has modest agricultural, manufacturing and mining industries. The planet is also home to the largest volcano in the Inner Sphere, Mount Vesuvius Major. The volcano is over ten kilometers tall. Though long dormant, scientists estimate that if where to erupt, it could block all sunlight from the planet, sending it into an ice age.
+    desc: Ashio is an unremarkable planet, aside from being the capital of the Ashio
+      Prefecture. As the capital it has significant logistical and command infrastructure.
+      The planet has modest agricultural, manufacturing and mining industries. The
+      planet is also home to the largest volcano in the Inner Sphere, Mount Vesuvius
+      Major. The volcano is over ten kilometers tall. Though long dormant, scientists
+      estimate that if where to erupt, it could block all sunlight from the planet,
+      sending it into an ice age.
     landmass:
       - name:
-          source: FCCW
+          source: FedCom Civil War, pg. 203
           value: Rhodesia
-          page: 203
         capital:
-          source: FCCW
+          source: FedCom Civil War, pg. 203
           value: Iscariot
-          page: 203
       - name:
-          source: FCCW
+          source: FedCom Civil War, pg. 203
           value: Vesuvius Prime
-          page: 203
       - name:
-          source: FCCW
+          source: FedCom Civil War, pg. 203
           value: Zaire
-          page: 203
     satellite:
       - name:
-          source: FCCW
+          source: FedCom Civil War, pg. 203
           value: Hyde
-          page: 203
         size: large
         icon: rock8
       - name:
-          source: FCCW
+          source: FedCom Civil War, pg. 203
           value: Kauner
-          page: 203
         size: large
         icon: rock13
       - name:
-          source: FCCW
+          source: FedCom Civil War, pg. 203
           value: Rossi
-          page: 203
         size: medium
         icon: oddmoon3
     event:
@@ -201,12 +191,6 @@ planet:
       - date: '2310-01-01'
         population: 631150310.0
       - date: '2319-12-22'
-        # administration: DC | Benjamin Military District | Ashio Prefecture
-        # administration: DC | Benjamin Military District | Ashio Prefecture
-        # administration: DC | Benjamin Military District | Ashio Prefecture
-        # administration: DC | Benjamin Military District | Ashio Prefecture
-        # administration: DC | Benjamin Military District | Ashio Prefecture
-        # administration: DC | Benjamin Military District | Ashio Prefecture
         faction:
           source: canon
           value:
@@ -387,25 +371,7 @@ planet:
         population: 1021411261.0
       - date: '3080-01-01'
         population: 1036640566.0
-      - date: '3081-01-01'
-        # administration: ROS | Prefecture II
-        # administration: ROS | Prefecture II
-        # administration: ROS | Prefecture II
-        # administration: ROS | Prefecture II
-        # administration: ROS | Prefecture II
-        # administration: ROS | Prefecture II
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - ROS
       - date: '3081-04-11'
-        # administration: ROS | Prefecture II
-        # administration: ROS | Prefecture II
-        # administration: ROS | Prefecture II
-        # administration: ROS | Prefecture II
-        # administration: ROS | Prefecture II
-        # administration: ROS | Prefecture II
         faction:
           source: canon
           value:
@@ -427,12 +393,6 @@ planet:
           source: canon
           value: X
       - date: '3133-10-07'
-        # administration: DC | Benjamin Military District | Algedi Prefecture
-        # administration: DC | Benjamin Military District | Algedi Prefecture
-        # administration: DC | Benjamin Military District | Algedi Prefecture
-        # administration: DC | Benjamin Military District | Algedi Prefecture
-        # administration: DC | Benjamin Military District | Algedi Prefecture
-        # administration: DC | Benjamin Military District | Algedi Prefecture
         faction:
           source: canon
           value:

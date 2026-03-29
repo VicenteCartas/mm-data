@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,16 +16,15 @@
 # affiliated with Microsoft.
 
 id: Quantraine
-sucsId: 2089
+sucsId: 2088
 xcood: 455.618
 ycood: 205.207
 spectralType:
   source: canon
   value: G4V
 primarySlot:
-  source: Per1e
+  source: Periphery (1ed), pg. 121
   value: 4
-  page: 121
 event:
   - date: '2555-12-19'
     zenithCharge: yes
@@ -102,9 +101,8 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.63
     sysPos:
-      source: Per1e
+      source: Periphery (1ed), pg. 121
       value: 4
-      page: 121
     icon: green49
     pressure: HIGH
     atmosphere: BREATHABLE
@@ -117,9 +115,8 @@ planet:
     temperature: 47
     water: 32
     lifeForm:
-      source: Per1e
+      source: Periphery (1ed), pg. 121
       value: AMPHIBIAN
-      page: 121
     desc: No description available.
     landmass:
       - name: New Saint-Luc-de-Bellechasse
@@ -140,12 +137,6 @@ planet:
         icon: rock9
     event:
       - date: '2544-12-25'
-        # administration: OA | Cerberus Province
-        # administration: OA | Cerberus Province
-        # administration: OA | Cerberus Province
-        # administration: OA | Cerberus Province
-        # administration: OA | Cerberus Province
-        # administration: OA | Cerberus Province
         faction:
           source: canon
           value:

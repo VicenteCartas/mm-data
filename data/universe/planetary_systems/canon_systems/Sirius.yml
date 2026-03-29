@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,17 +16,15 @@
 # affiliated with Microsoft.
 
 id: Sirius
-sucsId: 2347
+sucsId: 2346
 xcood: -2.562
 ycood: -7.86
 spectralType:
-  source: 'HB:HM'
+  source: 'Handbook: House Marik, pg. 71'
   value: A1V
-  page: 71
 primarySlot:
-  source: 'HB:HM'
+  source: 'Handbook: House Marik, pg. 71'
   value: 6
-  page: 71
 event:
   - date: '2380-07-03'
     zenithCharge: yes
@@ -114,39 +112,32 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 7.56
     sysPos:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 71'
       value: 6
-      page: 71
     icon: dry19
     pressure:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 71'
       value: THIN
-      page: 71
     atmosphere:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 71'
       value: TAINTED_POISON
-      page: 71
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 71'
       value: 1.1
-      page: 71
     diameter: 13583
     density: 5.69135355563
     dayLength: 22
     yearLength: 20.9
     temperature:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 71'
       value: 65
-      page: 71
     water:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 71'
       value: 16
-      page: 71
     lifeForm:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 71'
       value: PLANT
-      page: 71
     desc: |-
       The Sirius system contains three inhabited planets, Sirius V, VI and VI-a (the 6th Planet’s moon). The oldest colonies are on Sirius VI-a, which is also the most comfortable for human life. All three planets have a thin atmosphere but only VI-a is breathable by humans. Sirius V and VI were colonized only when it became readily apparent that both contained a vast wealth of raw minerals and ores. Terraforming efforts greatly improved the livability of Sirius VI. The three planets form a symbiotic relationship where Sirius VI-a provides food for the two planets while the mineral wealth of Sirius V and VI bring trade to the system. Sirius was one of the major bases for industry during the time of the Star League. Unfortunately the Amaris Coup and the subsequent Succession Wars destroyed much of the manufacturing in the system and resulted in the loss of many of the domed and pressurized cities on Sirius V and VI respectively. Unfortunately the planet’s fortunes continued to fall during the 31st Century and by the 3060s most of the population live in scattered agrarian societies and Sirian V is nearly uninhabited.
 
@@ -164,16 +155,15 @@ planet:
           source: canon
           value: Sirius VI-a - Bounty
         capital:
-          source: DA:RW
+          source: MWDA world profiles
           value: Lost Hope
       - name:
           source: canon
           value: Hinterlands
     satellite:
       - name:
-          source: 'HB:HM'
+          source: 'Handbook: House Marik, pg. 71'
           value: Sirius VI-a
-          page: 71
         size: giant
         icon: rock8
     event:
@@ -208,12 +198,6 @@ planet:
           value:
             - TH
       - date: '2317-01-29'
-        # administration: TH | Alliance Core
-        # administration: TH | Alliance Core
-        # administration: TH | Alliance Core
-        # administration: TH | Alliance Core
-        # administration: TH | Alliance Core
-        # administration: TH | Alliance Core
         faction:
           source: canon
           value:
@@ -316,18 +300,6 @@ planet:
         population: 19652.0
       - date: '2760-01-01'
         population: 19669.0
-      - date: '2767-01-01'
-        # administration: AE | Alliance Core
-        # administration: AE | Alliance Core
-        # administration: AE | Alliance Core
-        # administration: AE | Alliance Core
-        # administration: AE | Alliance Core
-        # administration: AE | Alliance Core
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - AE
       - date: '2767-02-23'
         faction:
           source: canon
@@ -337,12 +309,6 @@ planet:
       - date: '2770-01-01'
         population: 20416.0
       - date: '2779-11-07'
-        # administration: TH | Alliance Core
-        # administration: TH | Alliance Core
-        # administration: TH | Alliance Core
-        # administration: TH | Alliance Core
-        # administration: TH | Alliance Core
-        # administration: TH | Alliance Core
         faction:
           source: canon
           value:
@@ -361,12 +327,6 @@ planet:
         population: 31501.0
       - date: '2820-01-01'
         population: 36284.0
-      - date: '2821-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FWL
       - date: '2821-08-07'
         faction:
           source: canon
@@ -382,25 +342,7 @@ planet:
         socioIndustrial: C-C-B-D-C
       - date: '2860-01-01'
         population: 53727.0
-      - date: '2864-01-01'
-        # administration: CC | Tikonov Commonality | Region 1
-        # administration: CC | Tikonov Commonality | Region 1
-        # administration: CC | Tikonov Commonality | Region 1
-        # administration: CC | Tikonov Commonality | Region 1
-        # administration: CC | Tikonov Commonality | Region 1
-        # administration: CC | Tikonov Commonality | Region 1
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CC
       - date: '2864-10-12'
-        # administration: CC | Tikonov Commonality | Region 1
-        # administration: CC | Tikonov Commonality | Region 1
-        # administration: CC | Tikonov Commonality | Region 1
-        # administration: CC | Tikonov Commonality | Region 1
-        # administration: CC | Tikonov Commonality | Region 1
-        # administration: CC | Tikonov Commonality | Region 1
         faction:
           source: canon
           value:
@@ -451,12 +393,6 @@ planet:
       - date: '3030-01-01'
         population: 919403.0
       - date: '3032-12-08'
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
         faction:
           source: canon
           value:
@@ -468,36 +404,12 @@ planet:
           value: C-C-B-D-C
       - date: '3050-01-01'
         population: 4002066.0
-      - date: '3057-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '3057-11-01'
         faction:
           source: canon
           value:
             - CM
-      - date: '3058-01-01'
-        # administration: SH | National Capital
-        # administration: SH | National Capital
-        # administration: SH | National Capital
-        # administration: SH | National Capital
-        # administration: SH | National Capital
-        # administration: SH | National Capital
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - SH
       - date: '3058-09-18'
-        # administration: FWL | Sirian Concordat
-        # administration: FWL | Sirian Concordat
-        # administration: FWL | Sirian Concordat
-        # administration: FWL | Sirian Concordat
-        # administration: FWL | Sirian Concordat
-        # administration: FWL | Sirian Concordat
         faction:
           source: canon
           value:
@@ -528,25 +440,7 @@ planet:
             - Stone
       - date: '3080-01-01'
         population: 14430686.0
-      - date: '3081-01-01'
-        # administration: ROS | Prefecture X
-        # administration: ROS | Prefecture X
-        # administration: ROS | Prefecture X
-        # administration: ROS | Prefecture X
-        # administration: ROS | Prefecture X
-        # administration: ROS | Prefecture X
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - ROS
       - date: '3081-09-01'
-        # administration: ROS | Prefecture X
-        # administration: ROS | Prefecture X
-        # administration: ROS | Prefecture X
-        # administration: ROS | Prefecture X
-        # administration: ROS | Prefecture X
-        # administration: ROS | Prefecture X
         faction:
           source: canon
           value:
@@ -570,18 +464,6 @@ planet:
         population: 14790083.0
       - date: '3145-01-01'
         population: 14876115.0
-      - date: '3151-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CC
-      - date: '3152-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - 3SL
   - name: Krejcova
     type: ICE_GIANT
     orbitalDist: 27.0

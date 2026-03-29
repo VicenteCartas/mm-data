@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -20,10 +20,10 @@ sucsId: 538
 xcood: 90.467
 ycood: 74.914
 spectralType:
-  source: DA:RW
+  source: MWDA world profiles
   value: K6V
 primarySlot:
-  source: DA:RW
+  source: MWDA world profiles
   value: 1
 event:
   - date: '2357-08-02'
@@ -40,65 +40,93 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.24
     sysPos:
-      source: DA:RW
+      source: MWDA world profiles
       value: 1
     icon: wet13
     pressure:
-      source: DA:RW
+      source: MWDA world profiles
       value: STANDARD
     atmosphere:
-      source: DA:RW
+      source: MWDA world profiles
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: DA:RW
+      source: MWDA world profiles
       value: 0.99
     diameter: 13895
     density: 5.0072425073
     dayLength: 19
     yearLength: 0.8
     temperature:
-      source: DA:RW
+      source: MWDA world profiles
       value: 27
     water:
-      source: DA:RW
+      source: MWDA world profiles
       value: 86
     lifeForm:
-      source: DA:RW
+      source: MWDA world profiles
       value: MAMMAL
-    desc: The first colonists to settle Chichibu perished in less than a generation, thanks to an undetected alien strain of smallpox that decimated the population. In those early days of colonization, before the advent of HPGs, word of the epidemic traveled slowly, and by the time investigators arrived, all that remained of Chichibu‘s first settlers were empty buildings and overgrown streets. Warned by the previous colonists‘ desperate last messages, those who followed took adequate precautions against the disease and reoccupied the ―ghost towns left by their predecessors. Dubbing the largest of these townships Remembrance and establishing it as their capital city, the second wave of Chichibu colonists quickly spread out over the primary continent of Jaweena. They found a world similar in many ways to Terra, with fertile lands, diverse climates and ample waters. The planet‘s mineral wealth, while lacking in heavy metals or precious gems, is nonetheless sufficient to sustain a steady mining and refining industry, combined with a prosperous aqua-ranching trade centered on the Chichiban whale. The dominant life form in the planet‘s vast oceans, this large aquatic mammal, almost twice the size of the Terran killer whale, is prized for its tender, protein-rich meat and the valuable oils found in its thick layers of blubber. Ecologists initially argued against the formation of a whaling industry, fearing the widespread hunting that decimated similar species on Terra before the end of the 21st century. To allay these fears, the planetary government strictly enforces designated no-fishing areas between the northern and southern semi-arctic zones and maintains a whale-breeding program to sustain the population. This has transformed whaling on Chichibu from a hunting sport to more of a ranching industry. Besides the large continent of Jaweena, Chichibu has four smaller island continents. Thracen, in the north polar area, is virtually uninhabited due to its extreme cold, while the equatorial continents of Quillani and Vyrusia boast the majority of the planet‘s cities, towns and seaports. Uranday, the fourth island continent, is located in the southern hemisphere and is home to the spaceport city of Sharpendale, a major hub for planetary commerce.
+    desc: The first colonists to settle Chichibu perished in less than a generation,
+      thanks to an undetected alien strain of smallpox that decimated the population.
+      In those early days of colonization, before the advent of HPGs, word of the
+      epidemic traveled slowly, and by the time investigators arrived, all that remained
+      of Chichibu‘s first settlers were empty buildings and overgrown streets. Warned
+      by the previous colonists‘ desperate last messages, those who followed took
+      adequate precautions against the disease and reoccupied the ―ghost towns left
+      by their predecessors. Dubbing the largest of these townships Remembrance and
+      establishing it as their capital city, the second wave of Chichibu colonists
+      quickly spread out over the primary continent of Jaweena. They found a world
+      similar in many ways to Terra, with fertile lands, diverse climates and ample
+      waters. The planet‘s mineral wealth, while lacking in heavy metals or precious
+      gems, is nonetheless sufficient to sustain a steady mining and refining industry,
+      combined with a prosperous aqua-ranching trade centered on the Chichiban whale.
+      The dominant life form in the planet‘s vast oceans, this large aquatic mammal,
+      almost twice the size of the Terran killer whale, is prized for its tender,
+      protein-rich meat and the valuable oils found in its thick layers of blubber.
+      Ecologists initially argued against the formation of a whaling industry, fearing
+      the widespread hunting that decimated similar species on Terra before the end
+      of the 21st century. To allay these fears, the planetary government strictly
+      enforces designated no-fishing areas between the northern and southern semi-arctic
+      zones and maintains a whale-breeding program to sustain the population. This
+      has transformed whaling on Chichibu from a hunting sport to more of a ranching
+      industry. Besides the large continent of Jaweena, Chichibu has four smaller
+      island continents. Thracen, in the north polar area, is virtually uninhabited
+      due to its extreme cold, while the equatorial continents of Quillani and Vyrusia
+      boast the majority of the planet‘s cities, towns and seaports. Uranday, the
+      fourth island continent, is located in the southern hemisphere and is home to
+      the spaceport city of Sharpendale, a major hub for planetary commerce.
     landmass:
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Jaweena
         capital:
-          source: DA:RW
+          source: MWDA world profiles
           value: Remembrance
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Quillani
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Thracen
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Uranday
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Vyrusia
     satellite:
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Janus
         size: medium
         icon: rock9
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Kara
         size: large
         icon: rock2
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Tobyn
         size: medium
         icon: rock6
@@ -113,12 +141,6 @@ planet:
       - date: '2310-01-01'
         population: 106713.0
       - date: '2319-01-16'
-        # administration: DC | Benjamin Military District | Ashio Prefecture
-        # administration: DC | Benjamin Military District | Ashio Prefecture
-        # administration: DC | Benjamin Military District | Ashio Prefecture
-        # administration: DC | Benjamin Military District | Ashio Prefecture
-        # administration: DC | Benjamin Military District | Ashio Prefecture
-        # administration: DC | Benjamin Military District | Ashio Prefecture
         faction:
           source: canon
           value:
@@ -293,25 +315,7 @@ planet:
         population: 571612415.0
       - date: '3080-01-01'
         population: 581645506.0
-      - date: '3081-01-01'
-        # administration: ROS | Prefecture II
-        # administration: ROS | Prefecture II
-        # administration: ROS | Prefecture II
-        # administration: ROS | Prefecture II
-        # administration: ROS | Prefecture II
-        # administration: ROS | Prefecture II
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - ROS
       - date: '3081-11-14'
-        # administration: ROS | Prefecture II
-        # administration: ROS | Prefecture II
-        # administration: ROS | Prefecture II
-        # administration: ROS | Prefecture II
-        # administration: ROS | Prefecture II
-        # administration: ROS | Prefecture II
         faction:
           source: canon
           value:
@@ -330,25 +334,7 @@ planet:
         population: 631603085.0
       - date: '3132-08-07'
         hpg: X
-      - date: '3135-01-01'
-        # administration: DC | Benjamin Military District | Algedi Prefecture
-        # administration: DC | Benjamin Military District | Algedi Prefecture
-        # administration: DC | Benjamin Military District | Algedi Prefecture
-        # administration: DC | Benjamin Military District | Algedi Prefecture
-        # administration: DC | Benjamin Military District | Algedi Prefecture
-        # administration: DC | Benjamin Military District | Algedi Prefecture
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - DC
       - date: '3135-04-16'
-        # administration: DC | Dieron Military District | Ashio Prefecture
-        # administration: DC | Dieron Military District | Ashio Prefecture
-        # administration: DC | Dieron Military District | Ashio Prefecture
-        # administration: DC | Dieron Military District | Ashio Prefecture
-        # administration: DC | Dieron Military District | Ashio Prefecture
-        # administration: DC | Dieron Military District | Ashio Prefecture
         faction:
           source: canon
           value:

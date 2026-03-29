@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,17 +16,15 @@
 # affiliated with Microsoft.
 
 id: Illyria
-sucsId: 1183
+sucsId: 1182
 xcood: -439.228
 ycood: -178.11
 spectralType:
-  source: Per1e
+  source: Periphery (1ed), pg. 134
   value: G4V
-  page: 134
 primarySlot:
-  source: Per1e
+  source: Periphery (1ed), pg. 134
   value: 3
-  page: 134
 event:
   - date: '2453-04-01'
     zenithCharge: yes
@@ -68,9 +66,8 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.9
     sysPos:
-      source: Per1e
+      source: Periphery (1ed), pg. 134
       value: 3
-      page: 134
     icon: green29
     pressure:
       source: canon
@@ -91,10 +88,16 @@ planet:
       source: canon
       value: 61
     lifeForm:
-      source: Per1e
+      source: Periphery (1ed), pg. 134
       value: MAMMAL
-      page: 134
-    desc: Illyria is a quiet planet in the Periphery and for centuries it was the capital of the small Illyrian Palatinate. The inhabitants of Illyria spent decades searching for rumored Star League caches, while small caches were discovered, they never found anything of significance. The economy of the Illyriate was primarily devoted to shipbuilding. In the early 3060s, Illyria was invaded and absorbed by the Marian Hegemony. The citizens of Illyria took their absorption into the Marian Hegemony relatively well and the planet remained the capital of the new Illyrian Province.
+    desc: Illyria is a quiet planet in the Periphery and for centuries it was the
+      capital of the small Illyrian Palatinate. The inhabitants of Illyria spent decades
+      searching for rumored Star League caches, while small caches were discovered,
+      they never found anything of significance. The economy of the Illyriate was
+      primarily devoted to shipbuilding. In the early 3060s, Illyria was invaded and
+      absorbed by the Marian Hegemony. The citizens of Illyria took their absorption
+      into the Marian Hegemony relatively well and the planet remained the capital
+      of the new Illyrian Province.
     landmass:
       - name:
           source: canon
@@ -117,12 +120,6 @@ planet:
         icon: rock10
     event:
       - date: '2444-02-22'
-        # administration: IP | National Capital
-        # administration: IP | National Capital
-        # administration: IP | National Capital
-        # administration: IP | National Capital
-        # administration: IP | National Capital
-        # administration: IP | National Capital
         faction:
           source: canon
           value:
@@ -274,19 +271,7 @@ planet:
         population: 9435956.0
       - date: '3060-01-01'
         population: 39409209.0
-      - date: '3063-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - MH
       - date: '3063-04-10'
-        # administration: MH | Illyrian District | District Capital
-        # administration: MH | Illyrian District | District Capital
-        # administration: MH | Illyrian District | District Capital
-        # administration: MH | Illyrian District | District Capital
-        # administration: MH | Illyrian District | District Capital
-        # administration: MH | Illyrian District | District Capital
         faction:
           source: canon
           value:
@@ -317,22 +302,10 @@ planet:
           value:
             - FWL
       - date: '3151-01-01'
-        # administration: FWL | Duchy of Tammarind-Abbey
-        # administration: FWL | Duchy of Tammarind-Abbey
-        # administration: FWL | Duchy of Tammarind-Abbey
-        # administration: FWL | Duchy of Tammarind-Abbey
-        # administration: FWL | Duchy of Tammarind-Abbey
-        # administration: FWL | Duchy of Tammarind-Abbey
         faction:
           source: sucs
           value:
             - FWL
-      - date: '3152-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - MH
   - name: Horton
     type: DWARF_TERRESTRIAL
     orbitalDist: 1.44

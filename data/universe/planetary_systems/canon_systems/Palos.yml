@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: Palos
-sucsId: 1976
+sucsId: 1975
 xcood: 50.695
 ycood: -124.723
 spectralType:
-  source: DA:RW
+  source: MWDA world profiles
   value: K7VI
 primarySlot:
-  source: DA:RW
+  source: MWDA world profiles
   value: 3
 planet:
   - name: Chac
@@ -62,31 +62,31 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.6
     sysPos:
-      source: DA:RW
+      source: MWDA world profiles
       value: 3
     icon: green25
     pressure:
-      source: DA:RW
+      source: MWDA world profiles
       value: STANDARD
     atmosphere:
-      source: DA:RW
+      source: MWDA world profiles
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: DA:RW
+      source: MWDA world profiles
       value: 1.0
     diameter: 14878
     density: 4.723366429001
     dayLength: 26
     yearLength: 0.9
     temperature:
-      source: DA:RW
+      source: MWDA world profiles
       value: 55
     water:
-      source: DA:RW
+      source: MWDA world profiles
       value: 59
     lifeForm:
-      source: DA:RW
+      source: MWDA world profiles
       value: MAMMAL
     desc: |-
       3135 - Palos is a large world, measuring nearly 15,000 kilometers at the equator. Palos was colonized in the early 23rd century and quickly became a major source of important ores and minerals. Its three continents, Cartagena, Murcia, and Valencia, cover just over 40 percent of the planet's surface. Valencia, is the largest of the three, is covered with vast woodlands and mountains. Xer, the capital city, is located on the northeastern coast, on the Iberian Peninsula. Two hundred kilometers south of Xer is the barren Docarshon Valley. Early colonists discovered rich gold deposits in Docarson Valley that played out after three centuries of mining and it is now just an ugly scar of uncontrolled exploitation. Murcia is mostly mountains and valleys covered in sparse vegetation and timber. It is the home of the planet's massive mining operations. Careful land management has allowed Murcia to continue to produce a steady supply of ore and minerals. Cartagena is the smallest of the three continents and it supplies most of the planet's food, including domesticated indigenous mammals as an alternative to beef.
@@ -96,40 +96,40 @@ planet:
       During the Fourth Succession War, Federated Suns forces landed and were immediately met by the planet's inhabitants, who showed no fear in protesting their presence. After the planet fell, the people quietly chafed under Federated Commonwealth rule until the war of 3057 that shattered the Sarna March. Palos happily returned to the Capellan Confederation. Palos nearly revolted when Devlin Stone demanded the planet be included in The Republic of the Sphere.
     landmass:
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Cartagena
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Murcia
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Valencia
         capital:
-          source: DA:RW
+          source: MWDA world profiles
           value: Xer
     satellite:
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Isla Palana
         size: giant
         icon: rock2
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Menor
         size: large
         icon: rock7
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Pinatar
         size: medium
         icon: rock12
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Reona
         size: large
         icon: rock6
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Ribera
         size: medium
         icon: oddmoon3
@@ -153,12 +153,6 @@ planet:
         population: 8814113.0
       - date: '2270-01-01'
         population: 19543190.0
-      - date: '2271-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '2280-01-01'
         population: 39159242.0
       - date: '2290-01-01'
@@ -190,12 +184,6 @@ planet:
       - date: '2365-01-01'
         socioIndustrial: D-C-D-C-F
       - date: '2367-07-01'
-        # administration: CC | Sarna Commonality | Region 4
-        # administration: CC | Sarna Commonality | Region 4
-        # administration: CC | Sarna Commonality | Region 4
-        # administration: CC | Sarna Commonality | Region 4
-        # administration: CC | Sarna Commonality | Region 4
-        # administration: CC | Sarna Commonality | Region 4
         faction:
           source: canon
           value:
@@ -243,12 +231,6 @@ planet:
       - date: '2570-01-01'
         population: 4749410579.0
       - date: '2571-04-29'
-        # administration: CC | Sarna Commonality | Region 4
-        # administration: CC | Sarna Commonality | Region 4
-        # administration: CC | Sarna Commonality | Region 4
-        # administration: CC | Sarna Commonality | Region 4
-        # administration: CC | Sarna Commonality | Region 4
-        # administration: CC | Sarna Commonality | Region 4
         faction:
           source: canon
           value:
@@ -355,18 +337,6 @@ planet:
         population: 4967784829.0
       - date: '3028-01-01'
         socioIndustrial: C-C-D-C-D
-      - date: '3030-01-01'
-        # administration: LA | Sarna March | Palos Operational Area
-        # administration: LA | Sarna March | Palos Operational Area
-        # administration: LA | Sarna March | Palos Operational Area
-        # administration: LA | Sarna March | Palos Operational Area
-        # administration: LA | Sarna March | Palos Operational Area
-        # administration: LA | Sarna March | Palos Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LA
       - date: '3030-04-25'
         faction:
           source: canon
@@ -374,60 +344,24 @@ planet:
             - FS
         population: 4957622887.0
         socioIndustrial: C-B-D-C-D
-      - date: '3040-01-01'
-        # administration: FC | Sarna March | Palos Operational Area
-        # administration: FC | Sarna March | Palos Operational Area
-        # administration: FC | Sarna March | Palos Operational Area
-        # administration: FC | Sarna March | Palos Operational Area
-        # administration: FC | Sarna March | Palos Operational Area
-        # administration: FC | Sarna March | Palos Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FC
       - date: '3040-04-28'
         population: 4997442938.0
         socioIndustrial: C-A-D-B-D
       - date: '3040-01-19'
-        # administration: FC | Sarna March | Palos Operational Area
-        # administration: FC | Sarna March | Palos Operational Area
-        # administration: FC | Sarna March | Palos Operational Area
-        # administration: FC | Sarna March | Palos Operational Area
-        # administration: FC | Sarna March | Palos Operational Area
-        # administration: FC | Sarna March | Palos Operational Area
         faction:
           source: canon
           value:
             - FC
       - date: '3050-01-01'
         population: 5034057753.0
-      - date: '3057-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '3057-11-01'
         faction:
           source: canon
           value:
             - CM
-      - date: '3058-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '3060-01-01'
         population: 5091774371.0
       - date: '3062-12-29'
-        # administration: CC | Liao Commonality | Region 6
-        # administration: CC | Liao Commonality | Region 6
-        # administration: CC | Liao Commonality | Region 6
-        # administration: CC | Liao Commonality | Region 6
-        # administration: CC | Liao Commonality | Region 6
-        # administration: CC | Liao Commonality | Region 6
         faction:
           source: canon
           value:
@@ -436,25 +370,7 @@ planet:
         population: 5157883749.0
       - date: '3080-01-01'
         population: 5209721342.0
-      - date: '3085-01-01'
-        # administration: ROS | Prefecture V
-        # administration: ROS | Prefecture V
-        # administration: ROS | Prefecture V
-        # administration: ROS | Prefecture V
-        # administration: ROS | Prefecture V
-        # administration: ROS | Prefecture V
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - ROS
       - date: '3085-08-03'
-        # administration: ROS | Prefecture V
-        # administration: ROS | Prefecture V
-        # administration: ROS | Prefecture V
-        # administration: ROS | Prefecture V
-        # administration: ROS | Prefecture V
-        # administration: ROS | Prefecture V
         faction:
           source: canon
           value:
@@ -473,25 +389,7 @@ planet:
         population: 5499880525.0
       - date: '3132-08-07'
         hpg: X
-      - date: '3135-01-01'
-        # administration: CC | Liao Commonality | Region 5
-        # administration: CC | Liao Commonality | Region 5
-        # administration: CC | Liao Commonality | Region 5
-        # administration: CC | Liao Commonality | Region 5
-        # administration: CC | Liao Commonality | Region 5
-        # administration: CC | Liao Commonality | Region 5
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CC
       - date: '3135-01-13'
-        # administration: CC | Sarna Commonality | Region 5
-        # administration: CC | Sarna Commonality | Region 5
-        # administration: CC | Sarna Commonality | Region 5
-        # administration: CC | Sarna Commonality | Region 5
-        # administration: CC | Sarna Commonality | Region 5
-        # administration: CC | Sarna Commonality | Region 5
         faction:
           source: canon
           value:

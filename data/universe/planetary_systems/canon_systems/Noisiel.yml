@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,17 +16,15 @@
 # affiliated with Microsoft.
 
 id: Noisiel
-sucsId: 1888
+sucsId: 1887
 xcood: -308.362
 ycood: 148.073
 spectralType:
-  source: MSII
+  source: Mercenaries Supplemental II, pg. 17
   value: K0V
-  page: 17
 primarySlot:
-  source: MSII
+  source: Mercenaries Supplemental II, pg. 17
   value: 3
-  page: 17
 event:
   - date: '2740-08-20'
     zenithCharge: yes
@@ -80,76 +78,58 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.8
     sysPos:
-      source: MSII
+      source: Mercenaries Supplemental II, pg. 17
       value: 3
-      page: 17
     icon: green48
     pressure:
-      source: MSII
+      source: Mercenaries Supplemental II, pg. 17
       value: STANDARD
-      page: 17
     atmosphere:
-      source: MSII
+      source: Mercenaries Supplemental II, pg. 17
       value: BREATHABLE
-      page: 17
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: MSII
+      source: Mercenaries Supplemental II, pg. 17
       value: 0.74
-      page: 17
     diameter: 10347
     density: 5.025970183422
     dayLength: 16
     yearLength: 1.1
     temperature:
-      source: MSII
+      source: Mercenaries Supplemental II, pg. 17
       value: 33
-      page: 17
     water:
-      source: MSII
+      source: Mercenaries Supplemental II, pg. 17
       value: 63
-      page: 17
     lifeForm:
-      source: MSII
+      source: Mercenaries Supplemental II, pg. 17
       value: BIRD
-      page: 17
     desc: |-
       Noisiel is a planet with a mix of industry and agriculture located deep in the Lyran Commonwealth. The planet also boasts large tracts of uninhabited, unspoiled wilderness, which supports a sizable tourist trade. The tourists come attracted by a unique martial tradition established in 3047 by the wealthy Alextep family, hereditary landholders of Noisiel. The Noisiel Summer Games began as a challenge between father and son, Duke Michael, CEO of Alextep Engineering services and his son and primary rival, Heinrich, CEO of Heinrich SuppoTech Interstellar. The unique duel was planned to take place in the rolling hills of Duke Michael’s estate on the continent of Teppokhan Prime. All citizens of the planet were invited to watch, for a small ticket price (which was intended to pay for any repairs necessary to the two family-owned Atlases. The duel itself ended up being a ‘Mech-sized game of rugby, using a half-ton ballistic-polymer ‘ball’ and the game covered a full square kilometer of the estate.
 
       The event was advertised all over planet and on several surrounding and attracted a large crowd. And thus, after the Clan Invasion, which saw Heinrich serve a tour of duty with the AFFC, the tradition of the Noisiel Summer Games began. Now the Games are a 12 day event and mercenaries and solaris jocks alike are invited to join in to show off their ‘Mechs and piloting skills. The MechWarriors take part in a variety of sports on ‘Mech scale, including baseball, football, hocket, and chess, as well as unique ‘Mech-based “talent shows”, parades and pageants.
     ring:
-      source: MSII
+      source: Mercenaries Supplemental II, pg. 17
       value: yes
-      page: 17
     landmass:
       - name:
-          source: MSII
+          source: Mercenaries Supplemental II, pg. 17
           value: Mahoken
-          page: 17
       - name:
-          source: MSII
+          source: Mercenaries Supplemental II, pg. 17
           value: Romaha
-          page: 17
       - name:
-          source: MSII
+          source: Mercenaries Supplemental II, pg. 17
           value: Teppokhan
-          page: 17
         capital:
-          source: MSII
+          source: Mercenaries Supplemental II, pg. 17
           value: Teppokhan Prime
-          page: 17
     satellite:
       - name: None (dust ring)
         size: medium
         icon: oddmoon3
     event:
       - date: '2740-10-10'
-        # administration: LA | Protectorate of Donegal | Alarion Province
-        # administration: LA | Protectorate of Donegal | Alarion Province
-        # administration: LA | Protectorate of Donegal | Alarion Province
-        # administration: LA | Protectorate of Donegal | Alarion Province
-        # administration: LA | Protectorate of Donegal | Alarion Province
-        # administration: LA | Protectorate of Donegal | Alarion Province
         faction:
           source: canon
           value:
@@ -221,25 +201,8 @@ planet:
       - date: '3030-01-01'
         population: 164799013.0
       - date: '3040-01-01'
-        # administration: FC | Donegal March | Alarion Operational Area
-        # administration: FC | Donegal March | Alarion Operational Area
-        # administration: FC | Donegal March | Alarion Operational Area
-        # administration: FC | Donegal March | Alarion Operational Area
-        # administration: FC | Donegal March | Alarion Operational Area
-        # administration: FC | Donegal March | Alarion Operational Area
         population: 166350856.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FC
       - date: '3040-01-19'
-        # administration: FC | Donegal March | Alarion Operational Area
-        # administration: FC | Donegal March | Alarion Operational Area
-        # administration: FC | Donegal March | Alarion Operational Area
-        # administration: FC | Donegal March | Alarion Operational Area
-        # administration: FC | Donegal March | Alarion Operational Area
-        # administration: FC | Donegal March | Alarion Operational Area
         faction:
           source: canon
           value:
@@ -252,27 +215,9 @@ planet:
         population: 167836896.0
       - date: '3052-01-01'
         hiringHall:
-          source: MSII
+          source: Merc Supplemental 2
           value: MINOR
-      - date: '3057-01-01'
-        # administration: LA | Donegal March | Alarion Operational Area
-        # administration: LA | Donegal March | Alarion Operational Area
-        # administration: LA | Donegal March | Alarion Operational Area
-        # administration: LA | Donegal March | Alarion Operational Area
-        # administration: LA | Donegal March | Alarion Operational Area
-        # administration: LA | Donegal March | Alarion Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LA
       - date: '3057-09-18'
-        # administration: LA | Alarion Province
-        # administration: LA | Alarion Province
-        # administration: LA | Alarion Province
-        # administration: LA | Alarion Province
-        # administration: LA | Alarion Province
-        # administration: LA | Alarion Province
         faction:
           source: canon
           value:

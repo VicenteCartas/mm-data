@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Euclid
-sucsId: 829
+sucsId: 828
 xcood: 349.466
 ycood: -70.614
 spectralType:
@@ -80,7 +80,25 @@ planet:
     lifeForm:
       source: canon
       value: FISH
-    desc: 'Although discovered in the 22nd century, Euclid was not settled until 2632 because the native ecology produces toxic by-products which taint the air and water against terrestrial life. Technologies more readily available under the Star League made settlement viable, and biochemical industry boomed, taking advantage of the local ecosystem. Although fighting did not reach the planet during the first succession war, it caused a decline in availability of the technologies that allowed Euclid to be settled. As the infrastructure broke down over time, the portion of population which could not afford to emigrate was exposed to biochemical agents resulting in asthma-like symptoms, unusual diseases, birth defects, and sometimes fatal allergic reactions. Through inoculations, sealed living environments, and shear effort, a fraction of the population managed to survive until the third succession wars, when the ruling nobility (Count Fesser) controlled, and occasionally denied production and distribution of the inoculations required to keep the peasant population in relative health. Quality (and quantity) of life on Euclid greatly improved when Prince Hanse Davion ''bought out'' Fesser, and installed John Zibler in his place. With the introduction of affordable eduction programs, and later new filtration and biotechnological breakthroughs from Helm Memory Core, the population of Euclid is once again beginning to grow. '
+    desc: 'Although discovered in the 22nd century, Euclid was not settled until 2632
+      because the native ecology produces toxic by-products which taint the air and
+      water against terrestrial life. Technologies more readily available under the
+      Star League made settlement viable, and biochemical industry boomed, taking
+      advantage of the local ecosystem. Although fighting did not reach the planet
+      during the first succession war, it caused a decline in availability of the
+      technologies that allowed Euclid to be settled. As the infrastructure broke
+      down over time, the portion of population which could not afford to emigrate
+      was exposed to biochemical agents resulting in asthma-like symptoms, unusual
+      diseases, birth defects, and sometimes fatal allergic reactions. Through inoculations,
+      sealed living environments, and shear effort, a fraction of the population managed
+      to survive until the third succession wars, when the ruling nobility (Count
+      Fesser) controlled, and occasionally denied production and distribution of the
+      inoculations required to keep the peasant population in relative health. Quality
+      (and quantity) of life on Euclid greatly improved when Prince Hanse Davion ''bought
+      out'' Fesser, and installed John Zibler in his place. With the introduction
+      of affordable eduction programs, and later new filtration and biotechnological
+      breakthroughs from Helm Memory Core, the population of Euclid is once again
+      beginning to grow. '
     landmass:
       - name:
           source: canon
@@ -97,12 +115,6 @@ planet:
         icon: oddmoon3
     event:
       - date: '2667-10-26'
-        # administration: FS | Crucis March | Markesan Operational Area
-        # administration: FS | Crucis March | Markesan Operational Area
-        # administration: FS | Crucis March | Markesan Operational Area
-        # administration: FS | Crucis March | Markesan Operational Area
-        # administration: FS | Crucis March | Markesan Operational Area
-        # administration: FS | Crucis March | Markesan Operational Area
         faction:
           source: canon
           value:
@@ -198,25 +210,8 @@ planet:
       - date: '3036-01-01'
         socioIndustrial: D-C-B-D-D
       - date: '3040-01-01'
-        # administration: FC | Crucis March | Markesan Operational Area
-        # administration: FC | Crucis March | Markesan Operational Area
-        # administration: FC | Crucis March | Markesan Operational Area
-        # administration: FC | Crucis March | Markesan Operational Area
-        # administration: FC | Crucis March | Markesan Operational Area
-        # administration: FC | Crucis March | Markesan Operational Area
         population: 1644073991.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FC
       - date: '3040-01-19'
-        # administration: FC | Crucis March | Markesan Operational Area
-        # administration: FC | Crucis March | Markesan Operational Area
-        # administration: FC | Crucis March | Markesan Operational Area
-        # administration: FC | Crucis March | Markesan Operational Area
-        # administration: FC | Crucis March | Markesan Operational Area
-        # administration: FC | Crucis March | Markesan Operational Area
         faction:
           source: canon
           value:
@@ -229,25 +224,7 @@ planet:
         population: 1666752799.0
       - date: '3060-01-01'
         population: 1691096782.0
-      - date: '3067-01-01'
-        # administration: FS | Crucis March | Markesan Operational Area
-        # administration: FS | Crucis March | Markesan Operational Area
-        # administration: FS | Crucis March | Markesan Operational Area
-        # administration: FS | Crucis March | Markesan Operational Area
-        # administration: FS | Crucis March | Markesan Operational Area
-        # administration: FS | Crucis March | Markesan Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FS
       - date: '3067-04-20'
-        # administration: FS | Crucis March | Markesan Operational Area
-        # administration: FS | Crucis March | Markesan Operational Area
-        # administration: FS | Crucis March | Markesan Operational Area
-        # administration: FS | Crucis March | Markesan Operational Area
-        # administration: FS | Crucis March | Markesan Operational Area
-        # administration: FS | Crucis March | Markesan Operational Area
         faction:
           source: canon
           value:
@@ -277,28 +254,10 @@ planet:
       - date: '3145-01-01'
         population: 1870259707.0
       - date: '3151-01-01'
-        # administration: DC | New Samarkand Military District | New Avalon Prefecture
-        # administration: DC | New Samarkand Military District | New Avalon Prefecture
-        # administration: DC | New Samarkand Military District | New Avalon Prefecture
-        # administration: DC | New Samarkand Military District | New Avalon Prefecture
-        # administration: DC | New Samarkand Military District | New Avalon Prefecture
-        # administration: DC | New Samarkand Military District | New Avalon Prefecture
         faction:
           source: sucs
           value:
             - DC
-      - date: '3152-01-01'
-        # administration: FS | Crucis March | Markesan Operational Area
-        # administration: FS | Crucis March | Markesan Operational Area
-        # administration: FS | Crucis March | Markesan Operational Area
-        # administration: FS | Crucis March | Markesan Operational Area
-        # administration: FS | Crucis March | Markesan Operational Area
-        # administration: FS | Crucis March | Markesan Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FS
       - date: '3152-06-01'
         faction:
           source: sucs

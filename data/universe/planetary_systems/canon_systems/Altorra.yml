@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -20,10 +20,10 @@ sucsId: 108
 xcood: -2.852
 ycood: -263.495
 spectralType:
-  source: 'OR'
+  source: 'Objective Raids: Capellan Confederation'
   value: G3V
 primarySlot:
-  source: 'OR'
+  source: 'Objective Raids: Capellan Confederation'
   value: 4
 planet:
   - name: Akuma
@@ -86,43 +86,46 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 1.0
     sysPos:
-      source: 'OR'
+      source: 'Objective Raids: Capellan Confederation'
       value: 4
     icon: wet17
     pressure:
-      source: 'OR'
+      source: 'Objective Raids: Capellan Confederation'
       value: THIN
     atmosphere:
-      source: 'OR'
+      source: 'Objective Raids: Capellan Confederation'
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'OR'
+      source: 'Objective Raids: Capellan Confederation'
       value: 0.83
     diameter: 11938
     density: 4.886059835337
     dayLength: 24
     yearLength: 1.4
     temperature:
-      source: 'OR'
+      source: 'Objective Raids: Capellan Confederation'
       value: 39
     water:
-      source: 'OR'
+      source: 'Objective Raids: Capellan Confederation'
       value: 76
     lifeForm:
-      source: 'OR'
+      source: 'Objective Raids: Capellan Confederation'
       value: MAMMAL
-    desc: Altorra is an unremarkable planet with a thin atmosphere and relatively low gravity. Despite this, the planet’s small population is mostly self sufficient and the planet is home to a Duchy RTC training facility for infantry, vehicle crews and aerospace pilots.
+    desc: Altorra is an unremarkable planet with a thin atmosphere and relatively
+      low gravity. Despite this, the planet’s small population is mostly self sufficient
+      and the planet is home to a Duchy RTC training facility for infantry, vehicle
+      crews and aerospace pilots.
     landmass:
       - name:
-          source: 'OR'
+          source: 'Objective Raids: Capellan Confederation'
           value: Costello
         capital:
-          source: 'OR'
+          source: 'Objective Raids: Capellan Confederation'
           value: Tara
     satellite:
       - name:
-          source: 'OR'
+          source: 'Objective Raids: Capellan Confederation'
           value: Delilah
         size: large
         icon: rock11
@@ -154,12 +157,6 @@ planet:
         population: 10897341.0
       - date: '2270-01-01'
         population: 18263670.0
-      - date: '2271-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '2280-01-01'
         population: 28708256.0
       - date: '2290-01-01'
@@ -178,19 +175,7 @@ planet:
         population: 207922006.0
       - date: '2360-01-01'
         population: 245781495.0
-      - date: '2366-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - SiS
       - date: '2367-07-01'
-        # administration: CC | Sian Commonality | Region 3
-        # administration: CC | Sian Commonality | Region 3
-        # administration: CC | Sian Commonality | Region 3
-        # administration: CC | Sian Commonality | Region 3
-        # administration: CC | Sian Commonality | Region 3
-        # administration: CC | Sian Commonality | Region 3
         faction:
           source: canon
           value:
@@ -342,11 +327,6 @@ planet:
         population: 963639365.0
       - date: '3030-01-01'
         population: 967383708.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - DA
       - date: '3030-11-01'
         faction:
           source: canon
@@ -354,12 +334,6 @@ planet:
             - DA
             - CC
       - date: '3030-11-15'
-        # administration: CC | Sian Commonality | Region 2
-        # administration: CC | Sian Commonality | Region 2
-        # administration: CC | Sian Commonality | Region 2
-        # administration: CC | Sian Commonality | Region 2
-        # administration: CC | Sian Commonality | Region 2
-        # administration: CC | Sian Commonality | Region 2
         faction:
           source: canon
           value:

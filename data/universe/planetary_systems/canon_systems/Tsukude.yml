@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: Tsukude
-sucsId: 2598
+sucsId: 2597
 xcood: 20.153
 ycood: 119.374
 spectralType:
-  source: DA:RW
+  source: MWDA world profiles
   value: F1IV
 primarySlot:
-  source: DA:RW
+  source: MWDA world profiles
   value: 2
 event:
   - date: '2482-09-29'
@@ -53,31 +53,31 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 4.48
     sysPos:
-      source: DA:RW
+      source: MWDA world profiles
       value: 2
     icon: green37
     pressure:
-      source: DA:RW
+      source: MWDA world profiles
       value: STANDARD
     atmosphere:
-      source: DA:RW
+      source: MWDA world profiles
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: DA:RW
+      source: MWDA world profiles
       value: 1.01
     diameter: 11936
     density: 5.946485371872
     dayLength: 20
     yearLength: 9.6
     temperature:
-      source: DA:RW
+      source: MWDA world profiles
       value: 41
     water:
-      source: DA:RW
+      source: MWDA world profiles
       value: 56
     lifeForm:
-      source: DA:RW
+      source: MWDA world profiles
       value: FISH
     desc: |-
       A world of mild seasons, with lush, tropical forests easily covering half of its thirteen major island-continent landmasses, Tsukude looks like a virtual paradise to the casual observer. However, the first colonists quickly realized that the planet‘s native splendor was more illusion than substance. The biochemistry of the local flora and fauna, which seems to draw energy more from the nitrogen-rich atmosphere than from a carbon dioxide–oxygen cycle, was found to be incompatible with human metabolism because of its dangerously high acidity. This forced the settlers to import a good deal of their basic foodstuffs and take drastic steps to develop even subsistence-level agricultural production.
@@ -91,51 +91,45 @@ planet:
       Tsukude‘s capital, Ogawa City, is located on Ikadae, the largest of this world‘s northern island continents. Tomashita, a seaport city located on the western peninsula of the Soto island continent just southeast of Ikadae, boasts the largest of Tsukude‘s recreational fishing fleets, Green Sea Hunters. The other nine island landmasses of Tsukede, which together account for over forty percent of the planet‘s remaining surface, are Nakaru, Liam, and Domashimi in the northern hemisphere, and Opana, Yoshetsu, Weng-Li, Taris, Kyuna, and Shobenwa in the south. Small towns and seaports may be found on all of these continents, but by far the most populous are those on Ikadeae and Soto.
     landmass:
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Domashimi
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Ikadae
         capital:
-          source: DA:RW
+          source: MWDA world profiles
           value: Ogawa City
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Kyuna
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Liam
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Nakaru
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Opana
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Shobenwa
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Soto
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Taris
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Taris
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Weng-Li
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Yoshetsu
     event:
-      - date: '2319-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '2319-04-07'
         faction:
           source: canon
@@ -158,12 +152,6 @@ planet:
           source: canon
           value:
             - LA
-      - date: '2366-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '2370-01-01'
         population: 54458833.0
       - date: '2380-01-01'
@@ -208,18 +196,6 @@ planet:
         population: 7472403103.0
       - date: '2570-01-01'
         population: 7732828723.0
-      - date: '2571-01-01'
-        # administration: LA | Federation of Skye | Kannon Shire
-        # administration: LA | Federation of Skye | Kannon Shire
-        # administration: LA | Federation of Skye | Kannon Shire
-        # administration: LA | Federation of Skye | Kannon Shire
-        # administration: LA | Federation of Skye | Kannon Shire
-        # administration: LA | Federation of Skye | Kannon Shire
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LA
       - date: '2580-08-23'
         population: 7969212650.0
         socioIndustrial: B-B-C-B-F
@@ -275,25 +251,7 @@ planet:
         population: 9387121120.0
       - date: '2820-01-01'
         population: 9231326628.0
-      - date: '2821-01-01'
-        # administration: DC | Dieron Military District | Kuzuu Prefecture
-        # administration: DC | Dieron Military District | Kuzuu Prefecture
-        # administration: DC | Dieron Military District | Kuzuu Prefecture
-        # administration: DC | Dieron Military District | Kuzuu Prefecture
-        # administration: DC | Dieron Military District | Kuzuu Prefecture
-        # administration: DC | Dieron Military District | Kuzuu Prefecture
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - DC
       - date: '2821-08-25'
-        # administration: DC | Dieron Military District | Kuzuu Prefecture
-        # administration: DC | Dieron Military District | Kuzuu Prefecture
-        # administration: DC | Dieron Military District | Kuzuu Prefecture
-        # administration: DC | Dieron Military District | Kuzuu Prefecture
-        # administration: DC | Dieron Military District | Kuzuu Prefecture
-        # administration: DC | Dieron Military District | Kuzuu Prefecture
         faction:
           source: canon
           value:
@@ -357,25 +315,7 @@ planet:
         population: 7943144942.0
       - date: '3080-01-01'
         population: 8056742232.0
-      - date: '3081-01-01'
-        # administration: ROS | Prefecture I
-        # administration: ROS | Prefecture I
-        # administration: ROS | Prefecture I
-        # administration: ROS | Prefecture I
-        # administration: ROS | Prefecture I
-        # administration: ROS | Prefecture I
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - ROS
       - date: '3081-12-18'
-        # administration: ROS | Prefecture I
-        # administration: ROS | Prefecture I
-        # administration: ROS | Prefecture I
-        # administration: ROS | Prefecture I
-        # administration: ROS | Prefecture I
-        # administration: ROS | Prefecture I
         faction:
           source: canon
           value:
@@ -393,12 +333,6 @@ planet:
         population: 8330381765.0
       - date: '3132-08-07'
         hpg: X
-      - date: '3135-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '3135-10-01'
         faction:
           source: canon
@@ -406,25 +340,7 @@ planet:
             - IND
       - date: '3140-01-01'
         population: 8320391303.0
-      - date: '3145-01-01'
-        # administration: DC | Dieron Military District | Algedi Prefecture
-        # administration: DC | Dieron Military District | Algedi Prefecture
-        # administration: DC | Dieron Military District | Algedi Prefecture
-        # administration: DC | Dieron Military District | Algedi Prefecture
-        # administration: DC | Dieron Military District | Algedi Prefecture
-        # administration: DC | Dieron Military District | Algedi Prefecture
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - DC
       - date: '3145-01-16'
-        # administration: DC | Dieron Military District | Algedi Prefecture
-        # administration: DC | Dieron Military District | Algedi Prefecture
-        # administration: DC | Dieron Military District | Algedi Prefecture
-        # administration: DC | Dieron Military District | Algedi Prefecture
-        # administration: DC | Dieron Military District | Algedi Prefecture
-        # administration: DC | Dieron Military District | Algedi Prefecture
         faction:
           source: canon
           value:

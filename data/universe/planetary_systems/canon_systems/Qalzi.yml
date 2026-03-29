@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Qalzi
-sucsId: 2084
+sucsId: 2083
 xcood: 161.826
 ycood: -436.823
 spectralType: F3V
@@ -84,12 +84,6 @@ planet:
         icon: oddmoon2
     event:
       - date: '2621-06-02'
-        # administration: TC | Brinton Union
-        # administration: TC | Brinton Union
-        # administration: TC | Brinton Union
-        # administration: TC | Brinton Union
-        # administration: TC | Brinton Union
-        # administration: TC | Brinton Union
         faction:
           source: canon
           value:
@@ -173,29 +167,16 @@ planet:
           source: This is the earliest the directorate could have taken over
           value:
             - ARD
-      - date: '3025-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - ARC
       - date: '3026-01-01'
         faction:
           source: canon
           value:
             - ARC
-      - date: '3030-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - ABN
       - date: '3151-01-01'
         faction:
           source: sucs
           value:
             - ABN
-    desc: A relatively recent addition to Aurigan holdings. The cold and rocky world is technically in legal limbo, since the Taurian Concordat's original colony, though abandoned, may give them a prior claim on the system.
   - name: Cantón Guayaquil
     type: GIANT_TERRESTRIAL
     orbitalDist: 2.4

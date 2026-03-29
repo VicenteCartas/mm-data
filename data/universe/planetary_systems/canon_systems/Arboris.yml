@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -20,10 +20,10 @@ sucsId: 163
 xcood: 43.158
 ycood: -51.489
 spectralType:
-  source: DA:RW
+  source: MWDA world profiles
   value: K1IV
 primarySlot:
-  source: DA:RW
+  source: MWDA world profiles
   value: 5
 planet:
   - name: Jahweh
@@ -93,60 +93,80 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 1.28
     sysPos:
-      source: DA:RW
+      source: MWDA world profiles
       value: 5
     icon: green27
     pressure:
-      source: DA:RW
+      source: MWDA world profiles
       value: STANDARD
     atmosphere:
-      source: DA:RW
+      source: MWDA world profiles
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: DA:RW
+      source: MWDA world profiles
       value: 0.98
     diameter: 13451
     density: 5.120110566631
     dayLength: 22
     yearLength: 1.7
     temperature:
-      source: DA:RW
+      source: MWDA world profiles
       value: 35
     water:
-      source: DA:RW
+      source: MWDA world profiles
       value: 67
     lifeForm:
-      source: DA:RW
+      source: MWDA world profiles
       value: PLANT
-    desc: "3135 - Arboris was originally colonised for its fertile soil by settlers from the Capellan Hegemony. Arboris has three continents - Jeruc, Silverado and Bandar. Jeruc is the largest, covering over 38 percent of the planet, and is located in the northern hemisphere. The remaining two continents are island continents about the same size as Australia on Terra. Jeruc produces the majority of the planet‘s agro-products from its vast flat plains and valleys. The main industries on Silverado and Bandar are timber and mineral mining. The majority of the population is located on Jeruc, where many are farmers or work to support the planet‘s major industry. The capital, Kansas Plain, which located on Kansas Plateau, the largest plain, in the southwest of Jeruc. Kansas Plateau wheat grows taller than BattleMechs.\n\nArboris has a history of fierce independence. In 2308, Arboris seceded from the Capellan Hegemony in protest over the taxes and draft imposed to support an unjustifiable war. After the end of the Capellan-Supremacy War, Arboris again returned to Capellan rule. However, neither the Capellan Confederation nor later, the Federated Commonwealth, succeeded in fully assimilating the planet. During the Chaos March conflict, the population refused to submit to the invading Capellan forces. The Farmers Freedom Army rose up against the invaders and through sheer willpower forced the Capellans and militia forces off the continent of Jeruc. When the Jihad came to Arboris, the population chose to side with the Word of Blake forces rather than deal with either of the previous conquerors. The population aided the Blakists in hunting down the remaining militia and Capellan forces. "
+    desc: "3135 - Arboris was originally colonised for its fertile soil by settlers
+      from the Capellan Hegemony. Arboris has three continents - Jeruc, Silverado
+      and Bandar. Jeruc is the largest, covering over 38 percent of the planet, and
+      is located in the northern hemisphere. The remaining two continents are island
+      continents about the same size as Australia on Terra. Jeruc produces the majority
+      of the planet‘s agro-products from its vast flat plains and valleys. The main
+      industries on Silverado and Bandar are timber and mineral mining. The majority
+      of the population is located on Jeruc, where many are farmers or work to support
+      the planet‘s major industry. The capital, Kansas Plain, which located on Kansas
+      Plateau, the largest plain, in the southwest of Jeruc. Kansas Plateau wheat
+      grows taller than BattleMechs.\n\nArboris has a history of fierce independence.
+      In 2308, Arboris seceded from the Capellan Hegemony in protest over the taxes
+      and draft imposed to support an unjustifiable war. After the end of the Capellan-Supremacy
+      War, Arboris again returned to Capellan rule. However, neither the Capellan
+      Confederation nor later, the Federated Commonwealth, succeeded in fully assimilating
+      the planet. During the Chaos March conflict, the population refused to submit
+      to the invading Capellan forces. The Farmers Freedom Army rose up against the
+      invaders and through sheer willpower forced the Capellans and militia forces
+      off the continent of Jeruc. When the Jihad came to Arboris, the population chose
+      to side with the Word of Blake forces rather than deal with either of the previous
+      conquerors. The population aided the Blakists in hunting down the remaining
+      militia and Capellan forces. "
     landmass:
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Bandar
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Jeruc
         capital:
-          source: ChM
+          source: Chaos March, pg. 27
           value: Kansas Plain
-          page: 27
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Silverado
     satellite:
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Arbalest
         size: giant
         icon: rock1
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Carabonis
         size: medium
         icon: rock12
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Delenious
         size: medium
         icon: rock2
@@ -168,12 +188,6 @@ planet:
         population: 3709821.0
       - date: '2270-01-01'
         population: 8184833.0
-      - date: '2271-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CH
       - date: '2275-10-26'
         faction:
           source: canon
@@ -200,22 +214,10 @@ planet:
         population: 158382657.0
       - date: '2340-01-01'
         population: 213029407.0
-      - date: '2341-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - TH
       - date: '2350-01-01'
         population: 274053605.0
       - date: '2360-01-01'
         population: 340000227.0
-      - date: '2366-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - DoL
       - date: '2367-07-01'
         faction:
           source: canon
@@ -265,25 +267,7 @@ planet:
         population: 1292611008.0
       - date: '2570-01-01'
         population: 1303927152.0
-      - date: '2571-01-01'
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - TH
       - date: '2571-04-24'
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
         faction:
           source: canon
           value:
@@ -330,18 +314,6 @@ planet:
         population: 1269458955.0
       - date: '2760-01-01'
         population: 1274593918.0
-      - date: '2767-01-01'
-        # administration: AE | Terra Firma Province
-        # administration: AE | Terra Firma Province
-        # administration: AE | Terra Firma Province
-        # administration: AE | Terra Firma Province
-        # administration: AE | Terra Firma Province
-        # administration: AE | Terra Firma Province
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - AE
       - date: '2767-11-08'
         faction:
           source: canon
@@ -350,42 +322,18 @@ planet:
       - date: '2770-01-01'
         population: 1274297029.0
       - date: '2779-09-23'
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
-        # administration: TH | Terra Firma Province
         faction:
           source: canon
           value:
             - TH
       - date: '2780-01-01'
         population: 1267672452.0
-      - date: '2786-01-01'
-        # administration: CC | Tikonov Commonality | Region 2
-        # administration: CC | Tikonov Commonality | Region 2
-        # administration: CC | Tikonov Commonality | Region 2
-        # administration: CC | Tikonov Commonality | Region 2
-        # administration: CC | Tikonov Commonality | Region 2
-        # administration: CC | Tikonov Commonality | Region 2
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CC
       - date: '2786-10-24'
         faction:
           source: canon
           value:
             - CC
       - date: '2790-08-20'
-        # administration: CC | Tikonov Commonality | Region 6
-        # administration: CC | Tikonov Commonality | Region 6
-        # administration: CC | Tikonov Commonality | Region 6
-        # administration: CC | Tikonov Commonality | Region 6
-        # administration: CC | Tikonov Commonality | Region 6
-        # administration: CC | Tikonov Commonality | Region 6
         faction:
           source: canon
           value:
@@ -440,18 +388,6 @@ planet:
         population: 970321816.0
       - date: '3020-01-01'
         population: 943051027.0
-      - date: '3030-01-01'
-        # administration: LA | Sarna March | Tikonov Operational Area
-        # administration: LA | Sarna March | Tikonov Operational Area
-        # administration: LA | Sarna March | Tikonov Operational Area
-        # administration: LA | Sarna March | Tikonov Operational Area
-        # administration: LA | Sarna March | Tikonov Operational Area
-        # administration: LA | Sarna March | Tikonov Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LA
       - date: '3030-10-05'
         faction:
           source: canon
@@ -459,25 +395,8 @@ planet:
             - FS
         population: 934756258.0
       - date: '3040-01-01'
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
         population: 945946306.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FC
       - date: '3040-01-19'
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
         faction:
           source: canon
           value:
@@ -486,42 +405,18 @@ planet:
         socioIndustrial: B-B-C-B-B
       - date: '3050-01-01'
         population: 959282691.0
-      - date: '3057-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '3057-11-01'
         faction:
           source: canon
           value:
             - CM
-      - date: '3058-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '3060-01-01'
         population: 969990045.0
       - date: '3065-03-26'
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
-        # administration: FS | Capellan March | Kathil Operational Area
         faction:
           source: canon
           value:
             - FS
-      - date: '3068-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - WOB
       - date: '3068-08-01'
         faction:
           source: canon
@@ -536,37 +431,13 @@ planet:
             - CC
             - WOB
       - date: '3077-01-12'
-        # administration: CC | Liao Commonality | Region 1
-        # administration: CC | Liao Commonality | Region 1
-        # administration: CC | Liao Commonality | Region 1
-        # administration: CC | Liao Commonality | Region 1
-        # administration: CC | Liao Commonality | Region 1
-        # administration: CC | Liao Commonality | Region 1
         faction:
           source: canon
           value:
             - CC
       - date: '3080-01-01'
         population: 992756888.0
-      - date: '3085-01-01'
-        # administration: ROS | Prefecture V
-        # administration: ROS | Prefecture V
-        # administration: ROS | Prefecture V
-        # administration: ROS | Prefecture V
-        # administration: ROS | Prefecture V
-        # administration: ROS | Prefecture V
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - ROS
       - date: '3085-01-28'
-        # administration: ROS | Prefecture V
-        # administration: ROS | Prefecture V
-        # administration: ROS | Prefecture V
-        # administration: ROS | Prefecture V
-        # administration: ROS | Prefecture V
-        # administration: ROS | Prefecture V
         faction:
           source: canon
           value:
@@ -585,25 +456,7 @@ planet:
         population: 1075655808.0
       - date: '3132-08-07'
         hpg: X
-      - date: '3135-01-01'
-        # administration: CC | Liao Commonality | Region 1
-        # administration: CC | Liao Commonality | Region 1
-        # administration: CC | Liao Commonality | Region 1
-        # administration: CC | Liao Commonality | Region 1
-        # administration: CC | Liao Commonality | Region 1
-        # administration: CC | Liao Commonality | Region 1
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CC
       - date: '3135-10-01'
-        # administration: CC | Tikonov Commonality | Region 4
-        # administration: CC | Tikonov Commonality | Region 4
-        # administration: CC | Tikonov Commonality | Region 4
-        # administration: CC | Tikonov Commonality | Region 4
-        # administration: CC | Tikonov Commonality | Region 4
-        # administration: CC | Tikonov Commonality | Region 4
         faction:
           source: canon
           value:

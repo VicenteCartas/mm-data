@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,17 +16,15 @@
 # affiliated with Microsoft.
 
 id: Fletcher (FWL)
-sucsId: 883
+sucsId: 882
 xcood: -67.732
 ycood: -209.973
 spectralType:
-  source: 'HB:HM'
+  source: 'Handbook: House Marik, pg. 65'
   value: G2IV
-  page: 65
 primarySlot:
-  source: 'HB:HM'
+  source: 'Handbook: House Marik, pg. 65'
   value: 2
-  page: 65
 event:
   - date: '2396-12-24'
     nadirCharge: yes
@@ -67,39 +65,32 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 1.6
     sysPos:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 65'
       value: 2
-      page: 65
     icon: green3
     pressure:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 65'
       value: STANDARD
-      page: 65
     atmosphere:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 65'
       value: BREATHABLE
-      page: 65
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 65'
       value: 0.95
-      page: 65
     diameter: 11847
     density: 5.635158545473
     dayLength: 24
     yearLength: 2.3
     temperature:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 65'
       value: 35
-      page: 65
     water:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 65'
       value: 55
-      page: 65
     lifeForm:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 65'
       value: BIRD
-      page: 65
     desc: |-
       All four continents on Fletcher are dominated by mountain ranges and the planet was colonized in order to mine these raw materials and a large industrial base was established to make use of them. Additionally during the peace of the Star League, Fletcher became widely known as a tourist attraction for its ‘winter-sports’ venues. Unfortunately the mountainous terrain also leaves Fletcher with very little arable land requiring the planet to rely heavily on imported foodstuffs.
 
@@ -110,29 +101,24 @@ planet:
       Fuisgon-Flame Tech
     landmass:
       - name:
-          source: 'HB:HM'
+          source: 'Handbook: House Marik, pg. 65'
           value: Bairiki
-          page: 65
       - name:
-          source: 'HB:HM'
+          source: 'Handbook: House Marik, pg. 65'
           value: Koro
-          page: 65
         capital:
           source: canon
           value: Toorance
       - name:
-          source: 'HB:HM'
+          source: 'Handbook: House Marik, pg. 65'
           value: Lautoka
-          page: 65
       - name:
-          source: 'HB:HM'
+          source: 'Handbook: House Marik, pg. 65'
           value: Norsup
-          page: 65
     satellite:
       - name:
-          source: 'HB:HM'
+          source: 'Handbook: House Marik, pg. 65'
           value: Quarrel
-          page: 65
         size: large
         icon: rock6
     event:
@@ -151,19 +137,7 @@ planet:
         population: 693083.0
       - date: '2270-01-01'
         population: 2124899.0
-      - date: '2271-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FoO
       - date: '2271-06-01'
-        # administration: FWL | Federation of Oriente
-        # administration: FWL | Federation of Oriente
-        # administration: FWL | Federation of Oriente
-        # administration: FWL | Federation of Oriente
-        # administration: FWL | Federation of Oriente
-        # administration: FWL | Federation of Oriente
         faction:
           source: canon
           value:
@@ -370,12 +344,6 @@ planet:
             - OP
       - date: '3090-01-01'
         population: 557419600.0
-      - date: '3095-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - DO
       - date: '3100-01-01'
         population: 565165313.0
       - date: '3110-01-01'
@@ -386,11 +354,6 @@ planet:
         population: 579472541.0
       - date: '3130-01-01'
         population: 584243751.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - ABN
       - date: '3132-08-07'
         hpg:
           source: canon

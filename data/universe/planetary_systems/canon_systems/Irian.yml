@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,17 +16,15 @@
 # affiliated with Microsoft.
 
 id: Irian
-sucsId: 1210
+sucsId: 1209
 xcood: -46.531
 ycood: -56.396
 spectralType:
-  source: 'HB:HM'
+  source: 'Handbook: House Marik, pg. 70'
   value: G5III
-  page: 70
 primarySlot:
-  source: 'HB:HM'
+  source: 'Handbook: House Marik, pg. 70'
   value: 3
-  page: 70
 event:
   - date: '2372-09-24'
     nadirCharge: yes
@@ -73,71 +71,59 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 1.44
     sysPos:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 70'
       value: 3
-      page: 70
     icon: green30
     pressure:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 70'
       value: STANDARD
-      page: 70
     atmosphere:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 70'
       value: BREATHABLE
-      page: 70
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 70'
       value: 0.95
-      page: 70
     diameter: 11238
     density: 5.940978744771
     dayLength: 29
     yearLength: 2.0
     temperature:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 70'
       value: 43
-      page: 70
     water:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 70'
       value: 71
-      page: 70
     lifeForm:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 70'
       value: PLANT
-      page: 70
     desc: |-
       The planet Irian is unique in its ownership and governance. Officially the planet is a Corporate Fief of Irian Technologies and the government is a unique conglomerate of government and business. The planet itself is prosperous and is comparable to many provincial capitals in the Free Worlds League in terms of wealth and prosperity and the planet is diversely industrialized with factories servicing the various branches of the IrTech Conglomerate. While the military factories suffered during the Succession Wars, the rest of IrTech remained prosperous and the corporation refused to relocate their military factories, instead deciding to repair and rebuild when they had the chance.
 
       Irian’s terrain is best described as bland. The planet’s terrain is dominated by low rolling hills with sparse vegetation and the climate is adequate for human habitation.
     landmass:
       - name:
-          source: 'HB:HM'
+          source: 'Handbook: House Marik, pg. 70'
           value: Bruin
-          page: 70
       - name:
-          source: 'HB:HM'
+          source: 'Handbook: House Marik, pg. 70'
           value: Hathor
-          page: 70
         capital:
-          source: DA:RW
+          source: MWDA world profiles
           value: Kentwood (since 3075)
       - name:
-          source: 'HB:HM'
+          source: 'Handbook: House Marik, pg. 70'
           value: Indran
-          page: 70
         capital:
-          source: DA:RW
+          source: MWDA world profiles
           value: Kirin River (destroyed in 3075)
       - name:
-          source: 'HB:HM'
+          source: 'Handbook: House Marik, pg. 70'
           value: Kriess
-          page: 70
     satellite:
       - name:
-          source: 'HB:HM'
+          source: 'Handbook: House Marik, pg. 70'
           value: Prospero
-          page: 70
         size: large
         icon: rock10
     event:
@@ -176,12 +162,6 @@ planet:
         population: 122064255.0
       - date: '2310-01-01'
         population: 177348048.0
-      - date: '2317-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '2320-01-01'
         population: 246547815.0
       - date: '2330-01-01'
@@ -192,18 +172,6 @@ planet:
         population: 527884367.0
       - date: '2360-01-01'
         population: 640917096.0
-      - date: '2366-01-01'
-        # administration: FWL | Marik Commonwealth
-        # administration: FWL | Marik Commonwealth
-        # administration: FWL | Marik Commonwealth
-        # administration: FWL | Marik Commonwealth
-        # administration: FWL | Marik Commonwealth
-        # administration: FWL | Marik Commonwealth
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FWL
       - date: '2370-01-01'
         population: 762903102.0
       - date: '2380-01-01'
@@ -393,33 +361,9 @@ planet:
           source: canon
           value:
             - FWL
-      - date: '3079-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - Stone
       - date: '3080-01-01'
         population: 1962246349.0
-      - date: '3081-01-01'
-        # administration: ROS | Prefecture VII | Region Capital
-        # administration: ROS | Prefecture VII | Region Capital
-        # administration: ROS | Prefecture VII | Region Capital
-        # administration: ROS | Prefecture VII | Region Capital
-        # administration: ROS | Prefecture VII | Region Capital
-        # administration: ROS | Prefecture VII | Region Capital
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - ROS
       - date: '3081-04-27'
-        # administration: ROS | Prefecture VII | Region Capital
-        # administration: ROS | Prefecture VII | Region Capital
-        # administration: ROS | Prefecture VII | Region Capital
-        # administration: ROS | Prefecture VII | Region Capital
-        # administration: ROS | Prefecture VII | Region Capital
-        # administration: ROS | Prefecture VII | Region Capital
         faction:
           source: canon
           value:
@@ -440,12 +384,6 @@ planet:
         hpg:
           source: canon
           value: X
-      - date: '3135-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '3135-10-01'
         faction:
           source: canon
@@ -453,12 +391,6 @@ planet:
             - IND
       - date: '3140-01-01'
         population: 1509076333.0
-      - date: '3145-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FWL
       - date: '3145-05-31'
         faction:
           source: canon

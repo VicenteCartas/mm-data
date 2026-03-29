@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,13 +16,12 @@
 # affiliated with Microsoft.
 
 id: Trinity
-sucsId: 3003
+sucsId: 3041
 xcood: -248.762
 ycood: 761.402
 spectralType:
-  source: EC
+  source: Explorer Corps, pg. 52
   value: G4V
-  page: 52
 primarySlot: 3
 event:
   - date: '3052-09-03'
@@ -94,12 +93,6 @@ planet:
       - name: F-1
       - name: F-2
     event:
-      - date: '3049-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CJF
       - date: '3052-07-29'
         faction:
           source: canon
@@ -108,18 +101,6 @@ planet:
         hpg: A
         population: 538.0
         socioIndustrial: A-X-X-X-X
-      - date: '3079-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CLAN
-      - date: '3095-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '3110-09-04'
         faction:
           source: canon

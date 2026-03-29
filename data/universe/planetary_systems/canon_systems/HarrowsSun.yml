@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,17 +16,15 @@
 # affiliated with Microsoft.
 
 id: Harrow's Sun
-sucsId: 1061
+sucsId: 1060
 xcood: 261.847
 ycood: 71.038
 spectralType:
-  source: 'OTP:DTM'
+  source: 'Operational Turning Points: Death to Mercenaries, pg. 5'
   value: G1V
-  page: 5
 primarySlot:
-  source: 'OTP:DTM'
+  source: 'Operational Turning Points: Death to Mercenaries, pg. 5'
   value: 2
-  page: 5
 event:
   - date: '2376-03-01'
     nadirCharge: yes
@@ -54,39 +52,32 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 1.0
     sysPos:
-      source: 'OTP:DTM'
+      source: 'Operational Turning Points: Death to Mercenaries, pg. 5'
       value: 2
-      page: 5
     icon: green35
     pressure:
-      source: 'OTP:DTM'
+      source: 'Operational Turning Points: Death to Mercenaries, pg. 5'
       value: STANDARD
-      page: 5
     atmosphere:
-      source: 'OTP:DTM'
+      source: 'Operational Turning Points: Death to Mercenaries, pg. 5'
       value: BREATHABLE
-      page: 5
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'OTP:DTM'
+      source: 'Operational Turning Points: Death to Mercenaries, pg. 5'
       value: 0.96
-      page: 5
     diameter: 14403
     density: 4.68404139754
     dayLength: 16
     yearLength: 1.4
     temperature:
-      source: 'OTP:DTM'
+      source: 'Operational Turning Points: Death to Mercenaries, pg. 5'
       value: 32
-      page: 5
     water:
-      source: 'OTP:DTM'
+      source: 'Operational Turning Points: Death to Mercenaries, pg. 5'
       value: 46
-      page: 5
     lifeForm:
-      source: 'OTP:DTM'
+      source: 'Operational Turning Points: Death to Mercenaries, pg. 5'
       value: MAMMAL
-      page: 5
     desc: |-
       3028 - Harrow's Sun is a vital part of the Federated Suns’ Draconis March border defense and as a result it has been the site of heavy fighting throughout the centuries. The planet’s southern continent of Briseis is primarily dominated by military bases. These bases have enough housing for up to a full six regimental combat teams. However, most of the time the bases are mostly empty and are managed by two brigades of light combat engineers and an armored regiment. The bases of Harrow’s Sun saw extensive use during the Operation Galahad exercises held in 3026 and 3027.
 
@@ -99,28 +90,23 @@ planet:
       The planet is defended by an AFFS security force located on the moon Bane and is home to a division of marines with intrasystem boarding shuttles and converted passenger DropShips and usually supported by two wings of aerospace fighters.
     landmass:
       - name:
-          source: 'OTP:DTM'
+          source: 'Operational Turning Points: Death to Mercenaries, pg. 5'
           value: Briseis
-          page: 5
       - name:
-          source: 'OTP:DTM'
+          source: 'Operational Turning Points: Death to Mercenaries, pg. 5'
           value: Paris
-          page: 5
       - name:
-          source: 'OTP:DTM'
+          source: 'Operational Turning Points: Death to Mercenaries, pg. 5'
           value: Priam
-          page: 5
     satellite:
       - name:
-          source: 'OTP:DTM'
+          source: 'Operational Turning Points: Death to Mercenaries, pg. 5'
           value: Bane
-          page: 5
         size: medium
         icon: rock1
       - name:
-          source: 'OTP:DTM'
+          source: 'Operational Turning Points: Death to Mercenaries, pg. 5'
           value: Boon
-          page: 5
         size: large
         icon: rock3
     event:
@@ -181,12 +167,6 @@ planet:
           source: canon
           value:
             - FS
-      - date: '2366-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '2370-01-01'
         population: 790535052.0
       - date: '2380-01-01'
@@ -231,18 +211,6 @@ planet:
         population: 1548530825.0
       - date: '2570-01-01'
         population: 1561205449.0
-      - date: '2571-01-01'
-        # administration: FS | Draconis March | Fairfax Operational Area
-        # administration: FS | Draconis March | Fairfax Operational Area
-        # administration: FS | Draconis March | Fairfax Operational Area
-        # administration: FS | Draconis March | Fairfax Operational Area
-        # administration: FS | Draconis March | Fairfax Operational Area
-        # administration: FS | Draconis March | Fairfax Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FS
       - date: '2580-01-01'
         population: 1569091859.0
       - date: '2590-01-01'
@@ -307,18 +275,6 @@ planet:
         population: 1631428376.0
       - date: '2860-01-01'
         population: 1628496398.0
-      - date: '2864-01-01'
-        # administration: DC | Galedon Military District | Matsuida Prefecture
-        # administration: DC | Galedon Military District | Matsuida Prefecture
-        # administration: DC | Galedon Military District | Matsuida Prefecture
-        # administration: DC | Galedon Military District | Matsuida Prefecture
-        # administration: DC | Galedon Military District | Matsuida Prefecture
-        # administration: DC | Galedon Military District | Matsuida Prefecture
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - DC
       - date: '2864-11-15'
         faction:
           source: canon
@@ -333,12 +289,6 @@ planet:
       - date: '2890-01-01'
         population: 1624532444.0
       - date: '2900-09-09'
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
         faction:
           source: canon
           value:
@@ -374,25 +324,7 @@ planet:
         population:
           source: canon
           value: 1458330000.0
-      - date: '3030-01-01'
-        # administration: DC | Galedon Military District | Matsuida Prefecture
-        # administration: DC | Galedon Military District | Matsuida Prefecture
-        # administration: DC | Galedon Military District | Matsuida Prefecture
-        # administration: DC | Galedon Military District | Matsuida Prefecture
-        # administration: DC | Galedon Military District | Matsuida Prefecture
-        # administration: DC | Galedon Military District | Matsuida Prefecture
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - DC
       - date: '3030-05-02'
-        # administration: DC | Galedon Military District | Matsuida Prefecture
-        # administration: DC | Galedon Military District | Matsuida Prefecture
-        # administration: DC | Galedon Military District | Matsuida Prefecture
-        # administration: DC | Galedon Military District | Matsuida Prefecture
-        # administration: DC | Galedon Military District | Matsuida Prefecture
-        # administration: DC | Galedon Military District | Matsuida Prefecture
         faction:
           source: canon
           value:
@@ -428,11 +360,6 @@ planet:
         population: 365180940.0
       - date: '3130-01-01'
         population: 371590691.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - DC/FS
       - date: '3132-08-07'
         hpg:
           source: canon
@@ -441,25 +368,7 @@ planet:
         population: 376302355.0
       - date: '3142-01-01'
         socioIndustrial: C-C-D-B-A
-      - date: '3145-01-01'
-        # administration: DC | New Samarkand Military District | Matsuida Prefecture
-        # administration: DC | New Samarkand Military District | Matsuida Prefecture
-        # administration: DC | New Samarkand Military District | Matsuida Prefecture
-        # administration: DC | New Samarkand Military District | Matsuida Prefecture
-        # administration: DC | New Samarkand Military District | Matsuida Prefecture
-        # administration: DC | New Samarkand Military District | Matsuida Prefecture
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - DC
       - date: '3145-08-14'
-        # administration: DC | New Samarkand Military District | Matsuida Prefecture
-        # administration: DC | New Samarkand Military District | Matsuida Prefecture
-        # administration: DC | New Samarkand Military District | Matsuida Prefecture
-        # administration: DC | New Samarkand Military District | Matsuida Prefecture
-        # administration: DC | New Samarkand Military District | Matsuida Prefecture
-        # administration: DC | New Samarkand Military District | Matsuida Prefecture
         faction:
           source: canon
           value:

@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,13 +16,12 @@
 # affiliated with Microsoft.
 
 id: Vestallas
-sucsId: 2680
+sucsId: 2679
 xcood: 66.689
 ycood: -214.831
 spectralType:
-  source: HLSB
+  source: House Liao, pg. 151
   value: G6V
-  page: 151
 primarySlot: 7
 event:
   - date: '2358-02-06'
@@ -148,9 +147,8 @@ planet:
     temperature: 24
     water: 48
     lifeForm:
-      source: HLSB
+      source: House Liao, pg. 151
       value: MAMMAL
-      page: 151
     desc: |-
       Since the beginning of the 31st century, underground vaults on Vestallas' have stored the Confederation's treasury of hard currency, precious metals, rare paintings, etc. Vestallas is also noted for its unique architectural style, featuring gracefully curved walls as well as gently curved and sloping floors. The style is aesthetically pleasing and keeps the population in a constant state of disequilibrium which has been described as a "natural high" by the locals.
 
@@ -199,19 +197,7 @@ planet:
         population: 574298326.0
       - date: '2360-01-01'
         population: 802121006.0
-      - date: '2366-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - SIML
       - date: '2367-07-01'
-        # administration: CC | St. Ives Commonality | Region 1
-        # administration: CC | St. Ives Commonality | Region 1
-        # administration: CC | St. Ives Commonality | Region 1
-        # administration: CC | St. Ives Commonality | Region 1
-        # administration: CC | St. Ives Commonality | Region 1
-        # administration: CC | St. Ives Commonality | Region 1
         faction:
           source: canon
           value:
@@ -369,25 +355,7 @@ planet:
         population:
           source: canon
           value: 3617000000.0
-      - date: '3030-01-01'
-        # administration: SIC | Region 1
-        # administration: SIC | Region 1
-        # administration: SIC | Region 1
-        # administration: SIC | Region 1
-        # administration: SIC | Region 1
-        # administration: SIC | Region 1
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - SIC
       - date: '3030-02-01'
-        # administration: SIC | Region 1
-        # administration: SIC | Region 1
-        # administration: SIC | Region 1
-        # administration: SIC | Region 1
-        # administration: SIC | Region 1
-        # administration: SIC | Region 1
         faction:
           source: canon
           value:
@@ -402,12 +370,6 @@ planet:
       - date: '3060-01-01'
         population: 1087392335.0
       - date: '3062-07-06'
-        # administration: CC | St. Ives Commonality | Region 1
-        # administration: CC | St. Ives Commonality | Region 1
-        # administration: CC | St. Ives Commonality | Region 1
-        # administration: CC | St. Ives Commonality | Region 1
-        # administration: CC | St. Ives Commonality | Region 1
-        # administration: CC | St. Ives Commonality | Region 1
         faction:
           source: canon
           value:

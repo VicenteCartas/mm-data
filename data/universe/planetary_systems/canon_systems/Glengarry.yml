@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,17 +16,15 @@
 # affiliated with Microsoft.
 
 id: Glengarry
-sucsId: 966
+sucsId: 965
 xcood: -76.782
 ycood: 76.984
 spectralType:
-  source: 'HTP:Glengarry'
+  source: 'Historical Turning Point: Glengarry, pg. 3'
   value: K1IV
-  page: 3
 primarySlot:
-  source: 'HTP:Glengarry'
+  source: 'Historical Turning Point: Glengarry, pg. 3'
   value: 3
-  page: 3
 planet:
   - name: Y1R-1
     type: DWARF_TERRESTRIAL
@@ -65,39 +63,32 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.8
     sysPos:
-      source: 'HTP:Glengarry'
+      source: 'Historical Turning Point: Glengarry, pg. 3'
       value: 3
-      page: 3
     icon: green37
     pressure:
-      source: 'HTP:Glengarry'
+      source: 'Historical Turning Point: Glengarry, pg. 3'
       value: STANDARD
-      page: 3
     atmosphere:
-      source: 'HTP:Glengarry'
+      source: 'Historical Turning Point: Glengarry, pg. 3'
       value: BREATHABLE
-      page: 3
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'HTP:Glengarry'
+      source: 'Historical Turning Point: Glengarry, pg. 3'
       value: 0.97
-      page: 3
     diameter: 11733
     density: 5.810070234633
     dayLength: 18
     yearLength: 1.1
     temperature:
-      source: 'HTP:Glengarry'
+      source: 'Historical Turning Point: Glengarry, pg. 3'
       value: 29
-      page: 3
     water:
-      source: 'HTP:Glengarry'
+      source: 'Historical Turning Point: Glengarry, pg. 3'
       value: 65
-      page: 3
     lifeForm:
-      source: 'HTP:Glengarry'
+      source: 'Historical Turning Point: Glengarry, pg. 3'
       value: REPTILE
-      page: 3
     desc: |-
       A small world of terrestrial features, blessed with abundant resources, it is rather surprising in hindsight to know that this world was completely overlooked in the early years of colonization. With three large landmasses claiming most of the northern hemisphere, and deep, island-speckled oceans in the south, this cool world was a paradise just waiting to be discovered. In truth, infighting among the various private interests who were to mount the first expedition to Glengarry, complicated by the increasing friction between the Terran Alliance and its far-flung colonies, disrupted any efforts to settle the planet during the early days of humanity‘s expansion among the stars. To make matters worse, later surveys revealed dangerously high levels of arsenic and cyanide gases in the atmosphere, which first had to be cleansed in order to make the planet suitable for colonization. These factors kept settlers away until the early days of the Star League, when terraforming efforts by the nearby Federation of Skye finally cleansed the atmosphere of its toxic chemicals. Glengarry‘s first settlers hailed from a mix of Scottish, Norwegian, and Canadian origins, both native to Terra and from among the Skye Federation‘s populace. Drawn originally to the continent of Scotia, the smallest of the three northern hemispheric land masses, by its abundant ore resources in the mountain ranges, and the fertile soils of the valleys and lowlands, these colonists quickly established strict development guidelines to preserve the planet‘s native splendor. Similar to the “zoning laws” used in other Federation worlds, such as Skye itself, thecolonists created a self-perpetuating standard that has left the larger two continents, Dalraida and Pictland, virtually uninhabited even today, while Scotia eventually became a well-balanced center for light industrial, commercial, and agricultural development.
 
@@ -106,26 +97,21 @@ planet:
       The capital city, Dunkeld, a sprawling metropolis as big as any capital on a major planet, lies under the shadow of Castle Hill, site of fortifications that were built during the peak of the Star League era. The ruins of these fortifications, which still bear the black scorching and weatherworn pockmarks of the fanatics‘ last stand against allied forces during the Jihad, now stand as silent tribute to one of humanity‘s darkest hours.
     landmass:
       - name:
-          source: 'HTP:Glengarry'
+          source: 'Historical Turning Point: Glengarry, pg. 3'
           value: Dalriada
-          page: 3
       - name:
-          source: 'HTP:Glengarry'
+          source: 'Historical Turning Point: Glengarry, pg. 3'
           value: Pictland
-          page: 3
       - name:
-          source: 'HTP:Glengarry'
+          source: 'Historical Turning Point: Glengarry, pg. 3'
           value: Scotia
-          page: 3
         capital:
-          source: 'HTP:Glengarry'
+          source: 'Historical Turning Point: Glengarry, pg. 3'
           value: Dunkeld
-          page: 3
     satellite:
       - name:
-          source: 'HTP:Glengarry'
+          source: 'Historical Turning Point: Glengarry, pg. 3'
           value: Celine
-          page: 3
         size: medium
         icon: oddmoon1
     event:
@@ -157,31 +143,13 @@ planet:
         population: 12868674.0
       - date: '2310-01-01'
         population: 22116598.0
-      - date: '2317-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '2320-01-01'
         population: 35573390.0
       - date: '2330-01-01'
         population: 53617078.0
       - date: '2340-01-01'
         population: 76268249.0
-      - date: '2341-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FoS
       - date: '2341-07-03'
-        # administration: LA | Federation of Skye
-        # administration: LA | Federation of Skye
-        # administration: LA | Federation of Skye
-        # administration: LA | Federation of Skye
-        # administration: LA | Federation of Skye
-        # administration: LA | Federation of Skye
         faction:
           source: canon
           value:
@@ -337,25 +305,8 @@ planet:
       - date: '3030-01-01'
         population: 813444341.0
       - date: '3040-01-01'
-        # administration: FC | Skye March | Alcor Operational Area
-        # administration: FC | Skye March | Alcor Operational Area
-        # administration: FC | Skye March | Alcor Operational Area
-        # administration: FC | Skye March | Alcor Operational Area
-        # administration: FC | Skye March | Alcor Operational Area
-        # administration: FC | Skye March | Alcor Operational Area
         population: 823264477.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FC
       - date: '3040-01-19'
-        # administration: FC | Skye March | Alcor Operational Area
-        # administration: FC | Skye March | Alcor Operational Area
-        # administration: FC | Skye March | Alcor Operational Area
-        # administration: FC | Skye March | Alcor Operational Area
-        # administration: FC | Skye March | Alcor Operational Area
-        # administration: FC | Skye March | Alcor Operational Area
         faction:
           source: canon
           value:
@@ -366,25 +317,7 @@ planet:
           value: C-C-B-C-B
       - date: '3050-01-01'
         population: 835038228.0
-      - date: '3057-01-01'
-        # administration: LA | Skye March | Alcor Operational Area
-        # administration: LA | Skye March | Alcor Operational Area
-        # administration: LA | Skye March | Alcor Operational Area
-        # administration: LA | Skye March | Alcor Operational Area
-        # administration: LA | Skye March | Alcor Operational Area
-        # administration: LA | Skye March | Alcor Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LA
       - date: '3057-09-18'
-        # administration: LA | Skye Province
-        # administration: LA | Skye Province
-        # administration: LA | Skye Province
-        # administration: LA | Skye Province
-        # administration: LA | Skye Province
-        # administration: LA | Skye Province
         faction:
           source: canon
           value:
@@ -398,56 +331,14 @@ planet:
             - WOB
       - date: '3070-01-01'
         population: 857805605.0
-      - date: '3075-01-01'
-        # administration: LA | Skye Province
-        # administration: LA | Skye Province
-        # administration: LA | Skye Province
-        # administration: LA | Skye Province
-        # administration: LA | Skye Province
-        # administration: LA | Skye Province
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LA
       - date: '3077-09-12'
         faction:
           source: canon
           value:
             - Stone
-      - date: '3079-01-01'
-        # administration: LA | Skye Province
-        # administration: LA | Skye Province
-        # administration: LA | Skye Province
-        # administration: LA | Skye Province
-        # administration: LA | Skye Province
-        # administration: LA | Skye Province
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LA
       - date: '3080-01-01'
         population: 868334931.0
-      - date: '3081-01-01'
-        # administration: ROS | Prefecture IX
-        # administration: ROS | Prefecture IX
-        # administration: ROS | Prefecture IX
-        # administration: ROS | Prefecture IX
-        # administration: ROS | Prefecture IX
-        # administration: ROS | Prefecture IX
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - ROS
       - date: '3081-12-22'
-        # administration: ROS | Prefecture IX
-        # administration: ROS | Prefecture IX
-        # administration: ROS | Prefecture IX
-        # administration: ROS | Prefecture IX
-        # administration: ROS | Prefecture IX
-        # administration: ROS | Prefecture IX
         faction:
           source: canon
           value:
@@ -477,12 +368,6 @@ planet:
         population: 964661735.0
       - date: '3145-01-01'
         population: 972604481.0
-      - date: '3152-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '3152-06-01'
         faction:
           source: sucs

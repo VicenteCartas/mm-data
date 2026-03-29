@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,17 +16,15 @@
 # affiliated with Microsoft.
 
 id: Melissia
-sucsId: 1668
+sucsId: 1667
 xcood: -222.792
 ycood: 346.996
 spectralType:
-  source: 'HB:HS'
+  source: 'Handbook: House Steiner, pg. 82'
   value: G9V
-  page: 82
 primarySlot:
-  source: 'HB:HS'
+  source: 'Handbook: House Steiner, pg. 82'
   value: 5
-  page: 82
 event:
   - date: '2622-08-05'
     zenithCharge: yes
@@ -116,39 +114,32 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.56
     sysPos:
-      source: 'HB:HS'
+      source: 'Handbook: House Steiner, pg. 82'
       value: 5
-      page: 82
     icon: green53
     pressure:
-      source: 'HB:HS'
+      source: 'Handbook: House Steiner, pg. 82'
       value: STANDARD
-      page: 82
     atmosphere:
-      source: 'HB:HS'
+      source: 'Handbook: House Steiner, pg. 82'
       value: BREATHABLE
-      page: 82
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'HB:HS'
+      source: 'Handbook: House Steiner, pg. 82'
       value: 1.02
-      page: 82
     diameter: 12441
     density: 5.761716982726
     dayLength: 22
     yearLength: 1.0
     temperature:
-      source: 'HB:HS'
+      source: 'Handbook: House Steiner, pg. 82'
       value: 35
-      page: 82
     water:
-      source: 'HB:HS'
+      source: 'Handbook: House Steiner, pg. 82'
       value: 60
-      page: 82
     lifeForm:
-      source: 'HB:HS'
+      source: 'Handbook: House Steiner, pg. 82'
       value: REPTILE
-      page: 82
     desc: |-
       Melissia is covered by a massive single continent that covers an entire hemisphere and runs from pole to pole. The Continent earned the nickname Jahreszeitwunder (“Seasons of Wonder”) due to the extreme seasons experienced on the planet. The northern and southernmost latitudes in the span of a day can potentially experience the extremes of all seasons. Broad Run, a massive river, almost divides the continent in half. The Broad Run runs from the Valiant Mountains, located along the western edge of the continent and empties into a sea at the Broad Run Delta in the east. North of the Delta lies the loveless Valley, home to a vast percentage of local farmlands. The planetary capital and principal spaceport of Europa also call the Valley home. Rich deposits of titanium are located beneath the northern ice shelf. Melissia was originally discovered and settled by colonists from nearby Coventry. Melissia is a self-sufficient, modestly industrial world.
 
@@ -158,28 +149,19 @@ planet:
       Grumman-Cri (Built late 3070s)
     landmass:
       - name:
-          source: 'HB:HS'
+          source: 'Handbook: House Steiner, pg. 82'
           value: Jahreszeitwunder
-          page: 82
         capital:
-          source: 'HB:HS'
+          source: 'Handbook: House Steiner, pg. 82'
           value: Europa
-          page: 82
     satellite:
       - name:
-          source: 'HB:HS'
+          source: 'Handbook: House Steiner, pg. 82'
           value: Saratoga
-          page: 82
         size: medium
         icon: rock5
     event:
       - date: '2606-06-17'
-        # administration: RWR | Apollo Province
-        # administration: RWR | Apollo Province
-        # administration: RWR | Apollo Province
-        # administration: RWR | Apollo Province
-        # administration: RWR | Apollo Province
-        # administration: RWR | Apollo Province
         faction:
           source: canon
           value:
@@ -229,12 +211,6 @@ planet:
       - date: '2770-01-01'
         population: 1174884402.0
       - date: '2779-10-25'
-        # administration: LA | Protectorate of Donegal | Coventry Province
-        # administration: LA | Protectorate of Donegal | Coventry Province
-        # administration: LA | Protectorate of Donegal | Coventry Province
-        # administration: LA | Protectorate of Donegal | Coventry Province
-        # administration: LA | Protectorate of Donegal | Coventry Province
-        # administration: LA | Protectorate of Donegal | Coventry Province
         faction:
           source: canon
           value:
@@ -299,25 +275,8 @@ planet:
       - date: '3032-01-01'
         socioIndustrial: B-B-C-C-C
       - date: '3040-01-01'
-        # administration: FC | Periphery March | Tsarahavana Operational Area
-        # administration: FC | Periphery March | Tsarahavana Operational Area
-        # administration: FC | Periphery March | Tsarahavana Operational Area
-        # administration: FC | Periphery March | Tsarahavana Operational Area
-        # administration: FC | Periphery March | Tsarahavana Operational Area
-        # administration: FC | Periphery March | Tsarahavana Operational Area
         population: 1087284209.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FC
       - date: '3040-01-19'
-        # administration: FC | Periphery March | Tsarahavana Operational Area
-        # administration: FC | Periphery March | Tsarahavana Operational Area
-        # administration: FC | Periphery March | Tsarahavana Operational Area
-        # administration: FC | Periphery March | Tsarahavana Operational Area
-        # administration: FC | Periphery March | Tsarahavana Operational Area
-        # administration: FC | Periphery March | Tsarahavana Operational Area
         faction:
           source: canon
           value:
@@ -328,25 +287,7 @@ planet:
           value: A-A-B-B-C
       - date: '3050-01-01'
         population: 1101731503.0
-      - date: '3057-01-01'
-        # administration: LA | Periphery March | Tsarahavana Operational Area
-        # administration: LA | Periphery March | Tsarahavana Operational Area
-        # administration: LA | Periphery March | Tsarahavana Operational Area
-        # administration: LA | Periphery March | Tsarahavana Operational Area
-        # administration: LA | Periphery March | Tsarahavana Operational Area
-        # administration: LA | Periphery March | Tsarahavana Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LA
       - date: '3057-09-18'
-        # administration: LA | Coventry Province | Melissia Theater
-        # administration: LA | Coventry Province | Melissia Theater
-        # administration: LA | Coventry Province | Melissia Theater
-        # administration: LA | Coventry Province | Melissia Theater
-        # administration: LA | Coventry Province | Melissia Theater
-        # administration: LA | Coventry Province | Melissia Theater
         faction:
           source: canon
           value:
@@ -379,37 +320,13 @@ planet:
           value: X
       - date: '3140-01-01'
         population: 1257572198.0
-      - date: '3145-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CJF
       - date: '3145-02-14'
         faction:
           source: canon
           value:
             - CJF
         population: 1261855221.0
-      - date: '3151-01-01'
-        # administration: VSM | National Capital
-        # administration: VSM | National Capital
-        # administration: VSM | National Capital
-        # administration: VSM | National Capital
-        # administration: VSM | National Capital
-        # administration: VSM | National Capital
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - VSM
       - date: '3151-03-13'
-        # administration: VSM | National Capital
-        # administration: VSM | National Capital
-        # administration: VSM | National Capital
-        # administration: VSM | National Capital
-        # administration: VSM | National Capital
-        # administration: VSM | National Capital
         faction:
           source: canon
           value:

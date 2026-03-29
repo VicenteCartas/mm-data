@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -20,13 +20,11 @@ sucsId: 377
 xcood: -137.281
 ycood: 261.032
 spectralType:
-  source: 'HB:HS'
+  source: 'Handbook: House Steiner, pg. 85'
   value: F2IV
-  page: 85
 primarySlot:
-  source: 'HB:HS'
+  source: 'Handbook: House Steiner, pg. 85'
   value: 4
-  page: 85
 event:
   - date: '2352-05-04'
     nadirCharge: yes
@@ -81,70 +79,62 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 4.2
     sysPos:
-      source: 'HB:HS'
+      source: 'Handbook: House Steiner, pg. 85'
       value: 4
-      page: 85
     icon: wet1
     pressure:
-      source: 'HB:HS'
+      source: 'Handbook: House Steiner, pg. 85'
       value: STANDARD
-      page: 85
     atmosphere:
-      source: 'HB:HS'
+      source: 'Handbook: House Steiner, pg. 85'
       value: BREATHABLE
-      page: 85
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'HB:HS'
+      source: 'Handbook: House Steiner, pg. 85'
       value: 1.05
-      page: 85
     diameter: 12788
     density: 5.770396384639
     dayLength: 25
     yearLength: 8.7
     temperature:
-      source: 'HB:HS'
+      source: 'Handbook: House Steiner, pg. 85'
       value: 30
-      page: 85
     water:
-      source: 'HB:HS'
+      source: 'Handbook: House Steiner, pg. 85'
       value: 77
-      page: 85
     lifeForm:
-      source: 'HB:HS'
+      source: 'Handbook: House Steiner, pg. 85'
       value: MAMMAL
-      page: 85
-    desc: Bountiful Harvest is one of the most productive agricultural worlds in the entire Inner Sphere. The planet is slightly larger than Terra and possesses large tracts of fertile land perfect for growing produce and raising livestock as well as large oceans teeming with a large variety of plants and animals. With ample water, fertile land and a comfortable temperate climate it is little surprise that Bountiful Harvest lives up to its name. Bountiful Harvest is a major exporter of all types of food to surrounding systems.
+    desc: Bountiful Harvest is one of the most productive agricultural worlds in the
+      entire Inner Sphere. The planet is slightly larger than Terra and possesses
+      large tracts of fertile land perfect for growing produce and raising livestock
+      as well as large oceans teeming with a large variety of plants and animals.
+      With ample water, fertile land and a comfortable temperate climate it is little
+      surprise that Bountiful Harvest lives up to its name. Bountiful Harvest is a
+      major exporter of all types of food to surrounding systems.
     landmass:
       - name:
-          source: 'HB:HS'
+          source: 'Handbook: House Steiner, pg. 85'
           value: Abundance
-          page: 85
       - name:
-          source: 'HB:HS'
+          source: 'Handbook: House Steiner, pg. 85'
           value: Amber
-          page: 85
       - name:
-          source: 'HB:HS'
+          source: 'Handbook: House Steiner, pg. 85'
           value: Grandeur
-          page: 85
         capital:
-          source: 'HB:HS'
+          source: 'Handbook: House Steiner, pg. 85'
           value: KevGlen City
-          page: 85
       - name:
-          source: 'HB:HS'
+          source: 'Handbook: House Steiner, pg. 85'
           value: Lush
-          page: 85
       - name:
-          source: 'HB:HS'
+          source: 'Handbook: House Steiner, pg. 85'
           value: Vibrant
-          page: 85
     satellite:
       - name:
-          source: 'HB:HS'
+          source: 'Handbook: House Steiner, pg. 85'
           value: Scarecrow
-          page: 85
         size: medium
         icon: rock7
     event:
@@ -175,12 +165,6 @@ planet:
           value:
             - LA
         population: 118262833.0
-      - date: '2366-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '2370-01-01'
         population: 207942305.0
       - date: '2380-01-01'
@@ -225,18 +209,6 @@ planet:
         population: 4936969103.0
       - date: '2570-01-01'
         population: 5103767360.0
-      - date: '2571-01-01'
-        # administration: LA | Protectorate of Donegal | District of Donegal
-        # administration: LA | Protectorate of Donegal | District of Donegal
-        # administration: LA | Protectorate of Donegal | District of Donegal
-        # administration: LA | Protectorate of Donegal | District of Donegal
-        # administration: LA | Protectorate of Donegal | District of Donegal
-        # administration: LA | Protectorate of Donegal | District of Donegal
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LA
       - date: '2580-01-01'
         population: 5237501399.0
       - date: '2590-01-01'
@@ -348,65 +320,23 @@ planet:
         socioIndustrial: C-D-D-B-B
       - date: '3030-01-01'
         population: 3358417406.0
-      - date: '3040-01-01'
-        # administration: FC | Donegal March | Pherkad Operational Area
-        # administration: FC | Donegal March | Pherkad Operational Area
-        # administration: FC | Donegal March | Pherkad Operational Area
-        # administration: FC | Donegal March | Pherkad Operational Area
-        # administration: FC | Donegal March | Pherkad Operational Area
-        # administration: FC | Donegal March | Pherkad Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FC
       - date: '3040-05-30'
         population: 3392509296.0
         socioIndustrial:
           source: canon
           value: B-C-C-B-A
       - date: '3040-01-19'
-        # administration: FC | Donegal March | Pherkad Operational Area
-        # administration: FC | Donegal March | Pherkad Operational Area
-        # administration: FC | Donegal March | Pherkad Operational Area
-        # administration: FC | Donegal March | Pherkad Operational Area
-        # administration: FC | Donegal March | Pherkad Operational Area
-        # administration: FC | Donegal March | Pherkad Operational Area
         faction:
           source: canon
           value:
             - FC
       - date: '3050-01-01'
         population: 3426604582.0
-      - date: '3057-01-01'
-        # administration: LA | Donegal March | Pherkad Operational Area
-        # administration: LA | Donegal March | Pherkad Operational Area
-        # administration: LA | Donegal March | Pherkad Operational Area
-        # administration: LA | Donegal March | Pherkad Operational Area
-        # administration: LA | Donegal March | Pherkad Operational Area
-        # administration: LA | Donegal March | Pherkad Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LA
       - date: '3057-12-01'
         faction:
           source: canon
           value:
             - ARDC
-      - date: '3058-01-01'
-        # administration: LA | Donegal Province | Pandora Theater
-        # administration: LA | Donegal Province | Pandora Theater
-        # administration: LA | Donegal Province | Pandora Theater
-        # administration: LA | Donegal Province | Pandora Theater
-        # administration: LA | Donegal Province | Pandora Theater
-        # administration: LA | Donegal Province | Pandora Theater
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LA
       - date: '3060-01-01'
         population: 3458966528.0
       - date: '3067-01-01'
@@ -414,12 +344,6 @@ planet:
           source: canon
           value: 3477000000.0
       - date: '3067-04-24'
-        # administration: LA | Arc-Royal Theater
-        # administration: LA | Arc-Royal Theater
-        # administration: LA | Arc-Royal Theater
-        # administration: LA | Arc-Royal Theater
-        # administration: LA | Arc-Royal Theater
-        # administration: LA | Arc-Royal Theater
         faction:
           source: canon
           value:
@@ -445,24 +369,12 @@ planet:
           value: X
       - date: '3140-01-01'
         population: 3527431032.0
-      - date: '3145-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CJF
       - date: '3145-05-10'
         faction:
           source: canon
           value:
             - CJF
         population: 3521087367.0
-      - date: '3152-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '3152-06-01'
         faction:
           source: canon

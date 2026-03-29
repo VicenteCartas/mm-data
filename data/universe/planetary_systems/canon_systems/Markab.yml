@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: Markab
-sucsId: 1614
+sucsId: 1613
 xcood: 97.702
 ycood: 22.756
 spectralType:
-  source: DA:RW
+  source: MWDA world profiles
   value: M2IV
 primarySlot:
-  source: DA:RW
+  source: MWDA world profiles
   value: 4
 event:
   - date: '2397-02-16'
@@ -105,48 +105,66 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.28
     sysPos:
-      source: DA:RW
+      source: MWDA world profiles
       value: 4
     icon: green38
     pressure:
-      source: DA:RW
+      source: MWDA world profiles
       value: STANDARD
     atmosphere:
-      source: DA:RW
+      source: MWDA world profiles
       value: TAINTED_POISON
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: DA:RW
+      source: MWDA world profiles
       value: 0.75
     diameter: 9377
     density: 5.621170167003
     dayLength: 24
     yearLength: 0.6
     temperature:
-      source: DA:RW
+      source: MWDA world profiles
       value: 47
     water:
-      source: DA:RW
+      source: MWDA world profiles
       value: 63
     lifeForm:
-      source: DA:RW
+      source: MWDA world profiles
       value: MAMMAL
-    desc: 3135 - One of the first worlds settled by the Azami, a fanatical Muslim culture originating in the northern region of Terra‘s Africa continent, known for its fierce and dedicated warriors. Much of Markab strongly resembles the native lands of these proud people. The surface land of Markab is concentrated mostly in a single, giant supercontinent known as Al-Qoradana, which has few inland rivers or bodies of water of any sort. A few islands of various sizes pepper the oceans surrounding this great landmass, but it is on Al-Qoradana that the settlers established the majority of their cities. These early colonists, drawn by the hidden wealth of precious metals and hydrocarbons beneath the windswept surface of sand, rocks, and precious few oases, carved their niche into the world despite a harmful bacteriological taint in the atmosphere. Resourceful, the Azami learned to overcome the ravages of the world‘s environment, and the planet flourished despite a campaign by the forces of the Draconis Combine to undercut their culture and independence. As a result of the Combine attacks, however, most of the Azami‘s water-purification plants were destroyed, and those that survived malfunctioned over time. Only in the last century or so, with the rediscovery of lost technologies, have the inhabitants of Markab been able to restore the lost ability to drink their own world‘s abundant seawater and use it for irrigation.
+    desc: 3135 - One of the first worlds settled by the Azami, a fanatical Muslim
+      culture originating in the northern region of Terra‘s Africa continent, known
+      for its fierce and dedicated warriors. Much of Markab strongly resembles the
+      native lands of these proud people. The surface land of Markab is concentrated
+      mostly in a single, giant supercontinent known as Al-Qoradana, which has few
+      inland rivers or bodies of water of any sort. A few islands of various sizes
+      pepper the oceans surrounding this great landmass, but it is on Al-Qoradana
+      that the settlers established the majority of their cities. These early colonists,
+      drawn by the hidden wealth of precious metals and hydrocarbons beneath the windswept
+      surface of sand, rocks, and precious few oases, carved their niche into the
+      world despite a harmful bacteriological taint in the atmosphere. Resourceful,
+      the Azami learned to overcome the ravages of the world‘s environment, and the
+      planet flourished despite a campaign by the forces of the Draconis Combine to
+      undercut their culture and independence. As a result of the Combine attacks,
+      however, most of the Azami‘s water-purification plants were destroyed, and those
+      that survived malfunctioned over time. Only in the last century or so, with
+      the rediscovery of lost technologies, have the inhabitants of Markab been able
+      to restore the lost ability to drink their own world‘s abundant seawater and
+      use it for irrigation.
     landmass:
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Al-Qoradana
         capital:
           source: noncanon
           value: Al-Pagasi
     satellite:
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Medecca
         size: medium
         icon: oddmoon3
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Ramallah
         size: medium
         icon: oddmoon2
@@ -176,12 +194,6 @@ planet:
           value:
             - DC
         population: 35412599.0
-      - date: '2341-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '2350-01-01'
         population: 61836282.0
       - date: '2360-01-01'
@@ -232,18 +244,6 @@ planet:
         population: 1466298292.0
       - date: '2570-01-01'
         population: 1506710875.0
-      - date: '2571-01-01'
-        # administration: DC | Benjamin Military District | Ashio Prefecture
-        # administration: DC | Benjamin Military District | Ashio Prefecture
-        # administration: DC | Benjamin Military District | Ashio Prefecture
-        # administration: DC | Benjamin Military District | Ashio Prefecture
-        # administration: DC | Benjamin Military District | Ashio Prefecture
-        # administration: DC | Benjamin Military District | Ashio Prefecture
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - DC
       - date: '2580-01-01'
         population: 1546019782.0
       - date: '2590-01-01'
@@ -350,25 +350,8 @@ planet:
       - date: '3030-01-01'
         population: 1517169294.0
       - date: '3040-01-01'
-        # administration: FC | Draconis March | Robinson Operational Area
-        # administration: FC | Draconis March | Robinson Operational Area
-        # administration: FC | Draconis March | Robinson Operational Area
-        # administration: FC | Draconis March | Robinson Operational Area
-        # administration: FC | Draconis March | Robinson Operational Area
-        # administration: FC | Draconis March | Robinson Operational Area
         population: 1533950282.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FC
       - date: '3040-01-19'
-        # administration: FC | Draconis March | Robinson Operational Area
-        # administration: FC | Draconis March | Robinson Operational Area
-        # administration: FC | Draconis March | Robinson Operational Area
-        # administration: FC | Draconis March | Robinson Operational Area
-        # administration: FC | Draconis March | Robinson Operational Area
-        # administration: FC | Draconis March | Robinson Operational Area
         faction:
           source: canon
           value:
@@ -379,25 +362,7 @@ planet:
         population: 1554643551.0
       - date: '3060-01-01'
         population: 1569012267.0
-      - date: '3067-01-01'
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FS
       - date: '3067-04-20'
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
         faction:
           source: canon
           value:
@@ -406,25 +371,7 @@ planet:
         population: 1584622632.0
       - date: '3080-01-01'
         population: 1601508971.0
-      - date: '3081-01-01'
-        # administration: ROS | Prefecture III
-        # administration: ROS | Prefecture III
-        # administration: ROS | Prefecture III
-        # administration: ROS | Prefecture III
-        # administration: ROS | Prefecture III
-        # administration: ROS | Prefecture III
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - ROS
       - date: '3081-10-01'
-        # administration: ROS | Prefecture III
-        # administration: ROS | Prefecture III
-        # administration: ROS | Prefecture III
-        # administration: ROS | Prefecture III
-        # administration: ROS | Prefecture III
-        # administration: ROS | Prefecture III
         faction:
           source: canon
           value:
@@ -440,12 +387,6 @@ planet:
         socioIndustrial: A-B-A-A-A
       - date: '3130-01-01'
         population: 1742892853.0
-      - date: '3135-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '3135-05-01'
         faction:
           source: canon
@@ -457,12 +398,6 @@ planet:
           value:
             - IND
       - date: '3140-11-04'
-        # administration: DC | Dieron Military District | Ashio Prefecture
-        # administration: DC | Dieron Military District | Ashio Prefecture
-        # administration: DC | Dieron Military District | Ashio Prefecture
-        # administration: DC | Dieron Military District | Ashio Prefecture
-        # administration: DC | Dieron Military District | Ashio Prefecture
-        # administration: DC | Dieron Military District | Ashio Prefecture
         faction:
           source: canon
           value:

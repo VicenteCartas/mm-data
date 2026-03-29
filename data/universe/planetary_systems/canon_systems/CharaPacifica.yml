@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -20,10 +20,10 @@ sucsId: 522
 xcood: -29.214
 ycood: 6.414
 spectralType:
-  source: DA:RW
+  source: MWDA world profiles
   value: G2V
 primarySlot:
-  source: DA:RW
+  source: MWDA world profiles
   value: 3
 event:
   - date: '2353-06-16'
@@ -84,31 +84,31 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 1.0
     sysPos:
-      source: DA:RW
+      source: MWDA world profiles
       value: 3
     icon: wet13
     pressure:
-      source: DA:RW
+      source: MWDA world profiles
       value: STANDARD
     atmosphere:
-      source: DA:RW
+      source: MWDA world profiles
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: DA:RW
+      source: MWDA world profiles
       value: 1.0
     diameter: 15054
     density: 4.668129986921
     dayLength: 24
     yearLength: 1.4
     temperature:
-      source: DA:RW
+      source: MWDA world profiles
       value: 37
     water:
-      source: DA:RW
+      source: MWDA world profiles
       value: 80
     lifeForm:
-      source: DA:RW
+      source: MWDA world profiles
       value: MAMMAL
     desc: |-
       3135 - Chara, also known as Pacifica, has a weather system that is in constant turmoil due to planet's fast rotation, a fourteen standard hour day, and its lack of a moon to slow the rotation down. Clear skies will suddenly change to rain or thunderstorms that rage across the temperate coastal regions, while fierce blizzards and punishing downpours of freezing rain frequent the northern and southern latitudes. Following settlement, the planet soon became an agricultural paradise. Starpad, is the largest agriplex on the planet, situated just 150 kilometers south of Farhaven, the planetary capital, on the northern Azula continent. In addition to Azula and the nearby continent of Verdez, a third continent, Rojia is mostly unpopulated, and straddles the planetary equator. Rojia's location and mountainous coastlines minimize the effects of the worst weather systems, however its interior reaches are almost all desert and badlands.
@@ -116,16 +116,16 @@ planet:
       During the Succession Wars, the exports from Starpad to agriculturally poorer neighbours prompted a permanent garrison of a full battalion of troops. Despite the garrison, many Draconis Combine raids were launched against Chara. The worst of the fighting occurred on the eve of the Fourth Succession War, when the planet was briefly invaded by Combine forces and the defended by the Kell Hounds mercenary regiment. During the Jihad, Word of Blake agents attempted to poison the Starpad agriplex over the course of several raids, but they were thwarted by local defenders and a few alert civilians. The attack did destroy several crops on Verdez, though these were restored shortly after Chara became a holding of The Republic of the Sphere.
     landmass:
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Azula
         capital:
-          source: DA:RW
+          source: MWDA world profiles
           value: Farhaven
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Rojia
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Verdez
     event:
       - date: '2270-04-14'
@@ -149,12 +149,6 @@ planet:
           value:
             - TH
       - date: '2317-10-05'
-        # administration: TH | Alliance Core
-        # administration: TH | Alliance Core
-        # administration: TH | Alliance Core
-        # administration: TH | Alliance Core
-        # administration: TH | Alliance Core
-        # administration: TH | Alliance Core
         faction:
           source: canon
           value:
@@ -254,18 +248,6 @@ planet:
         population: 2311963948.0
       - date: '2760-01-01'
         population: 2323413884.0
-      - date: '2767-01-01'
-        # administration: AE | Alliance Core
-        # administration: AE | Alliance Core
-        # administration: AE | Alliance Core
-        # administration: AE | Alliance Core
-        # administration: AE | Alliance Core
-        # administration: AE | Alliance Core
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - AE
       - date: '2767-05-21'
         faction:
           source: canon
@@ -275,12 +257,6 @@ planet:
         hpg: X
         population: 2324135213.0
       - date: '2779-10-19'
-        # administration: TH | Alliance Core
-        # administration: TH | Alliance Core
-        # administration: TH | Alliance Core
-        # administration: TH | Alliance Core
-        # administration: TH | Alliance Core
-        # administration: TH | Alliance Core
         faction:
           source: canon
           value:
@@ -289,12 +265,6 @@ planet:
         hpg: B
         population: 2332542925.0
       - date: '2790-03-29'
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
         faction:
           source: canon
           value:
@@ -307,12 +277,6 @@ planet:
       - date: '2820-01-01'
         population: 2297267733.0
       - date: '2821-08-05'
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
-        # administration: LA | Federation of Skye | Isle of Skye
         faction:
           source: canon
           value:
@@ -363,25 +327,8 @@ planet:
       - date: '3030-01-01'
         population: 2059782812.0
       - date: '3040-01-01'
-        # administration: FC | Skye March | Alcor Operational Area
-        # administration: FC | Skye March | Alcor Operational Area
-        # administration: FC | Skye March | Alcor Operational Area
-        # administration: FC | Skye March | Alcor Operational Area
-        # administration: FC | Skye March | Alcor Operational Area
-        # administration: FC | Skye March | Alcor Operational Area
         population: 2075496799.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FC
       - date: '3040-01-19'
-        # administration: FC | Skye March | Alcor Operational Area
-        # administration: FC | Skye March | Alcor Operational Area
-        # administration: FC | Skye March | Alcor Operational Area
-        # administration: FC | Skye March | Alcor Operational Area
-        # administration: FC | Skye March | Alcor Operational Area
-        # administration: FC | Skye March | Alcor Operational Area
         faction:
           source: canon
           value:
@@ -390,25 +337,7 @@ planet:
         socioIndustrial: B-C-B-C-C
       - date: '3050-01-01'
         population: 2096565535.0
-      - date: '3057-01-01'
-        # administration: LA | Skye March | Alcor Operational Area
-        # administration: LA | Skye March | Alcor Operational Area
-        # administration: LA | Skye March | Alcor Operational Area
-        # administration: LA | Skye March | Alcor Operational Area
-        # administration: LA | Skye March | Alcor Operational Area
-        # administration: LA | Skye March | Alcor Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LA
       - date: '3057-09-18'
-        # administration: LA | Skye Province | Freedom Theater
-        # administration: LA | Skye Province | Freedom Theater
-        # administration: LA | Skye Province | Freedom Theater
-        # administration: LA | Skye Province | Freedom Theater
-        # administration: LA | Skye Province | Freedom Theater
-        # administration: LA | Skye Province | Freedom Theater
         faction:
           source: canon
           value:
@@ -436,25 +365,7 @@ planet:
             - Stone
       - date: '3080-01-01'
         population: 2148136123.0
-      - date: '3081-01-01'
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - ROS
       - date: '3081-01-04'
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
         faction:
           source: canon
           value:
@@ -484,10 +395,9 @@ planet:
             - CWE
       - date: '3151-01-01'
         faction:
-          source: SUCS
-          version: 2026.03.02
+          source: sucs
           value:
-            - 3SL
+            - CWE
   - name: Divja Davokje
     type: DWARF_TERRESTRIAL
     orbitalDist: 1.6

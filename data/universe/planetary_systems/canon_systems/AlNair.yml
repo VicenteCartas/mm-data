@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -20,13 +20,11 @@ sucsId: 51
 xcood: 60.097
 ycood: 31.239
 spectralType:
-  source: FCCW
+  source: FedCom Civil War, pg. 202
   value: A9III
-  page: 202
 primarySlot:
-  source: FCCW
+  source: FedCom Civil War, pg. 202
   value: 5
-  page: 202
 event:
   - date: '2352-09-27'
     zenithCharge: yes
@@ -108,58 +106,87 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 4.76
     sysPos:
-      source: FCCW
+      source: FedCom Civil War, pg. 202
       value: 5
-      page: 202
     icon: green21
     pressure:
-      source: FCCW
+      source: FedCom Civil War, pg. 202
       value: THIN
-      page: 202
     atmosphere:
-      source: FCCW
+      source: FedCom Civil War, pg. 202
       value: TAINTED_POISON
-      page: 202
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: FCCW
+      source: FedCom Civil War, pg. 202
       value: 0.6
-      page: 202
     diameter: 9042
     density: 4.663383337053
     dayLength: 26
     yearLength: 10.5
     temperature:
-      source: FCCW
+      source: FedCom Civil War, pg. 202
       value: 35
-      page: 202
     water:
-      source: FCCW
+      source: FedCom Civil War, pg. 202
       value: 30
-      page: 202
     lifeForm:
-      source: FCCW
+      source: FedCom Civil War, pg. 202
       value: NONE
-      page: 202
-    desc: Al Na‘ir is the fifth planet from its parent star and is the only rock in the system that is even remotely capable of supporting life, with a sulfur-tainted atmosphere too thin for unassisted breathing and a surface water supply limited almost exclusively to the polar icecaps. Despite these drawbacks, Al Na‘ir was one of the Draconis Combine‘s more heavily industrialized border worlds in its heyday, home at one time to the Yori MechWorks, manufacturer of the galaxy-renowned Atlas, and Scarborough Manufacturers, makers of the Pegasus, Scimitar and other conventional combat vehicles. The Azami, a Muslim sect, initially settled Al Na‘ir as a base of operations for a mining industry, focused on the plentiful mineral-rich asteroids in the system. When the Combine took over, two of its largest military corporations—Luthien Armor Works and Alshain Weapons—exploited these valuable resources by subsidizing military industries on the planet. Yori MechWorks was established on Yori, the largest of the asteroids that orbit between Al Na‘ir and the fourth planet in the system, Al Abila. Scarborough Manufacturers was founded on the smaller southern continent of Scarborough, from which it took its name. Perhaps in part because of the initial Azami presence, coupled with the Combine‘s xenophobic attitude toward non-Japanese cultures, the Kuritan leadership eventually established the Combine‘s School for Cultural Investigation on Al Na‘ir‘s barren surface. Despite the extremely inhospitable locale, many Combine citizens flocked to Al Na‘ir to study the benefits and drawbacks of the non-Japanese cultures that thrived in realms beyond the reach of House Kurita. By the time of the Clan Invasion, Al Na‘ir had become an important part of the Combine‘s strategic infrastructure and economy, with a population nearing one billion, including those who lived in the mining and refining stations in the asteroid belt. The planet remained under heavy defensive guard by the Combine, though raids and assaults were infrequent, even by the Dragon‘s closest enemies. When the Blakist Jihad hit, however, Al Na‘ir‘s luck changed for the worse. Employing a battle fleet of fighter-carrying DropShips, backed up by mercenary ‘Mech forces, the Word of Blake systematically ravaged Yori MechWorks‘ asteroid mining and manufacturing centers, simultaneously striking the planet‘s surface defensive units. The assault crippled the central planetary industry, destroyed Yori‘s surface assembly plant, and left millions dead as domed cities were breached in the heavy fighting , including the former capital of Homai-Zaki. As of the 32nd century, only Scarborough Manufacturers—which now produces more heavy construction vehicles than fighting craft—and a handful of underground settlements linked to decimated mining operations remain. Devlin Stone‘s relocation plan and efforts to restore the less devastated settlements helped lure people back to Al Na‘ir, many of whom took up residence in the new prefecture capital city of Phoenix, located on the northern plains of Cedar Rock, Al Na‘ir‘s larger continent. The planetary capital of Homai-Zaki, repaired and repressurized after the Jihad, is on Cedar Rock as well.
+    desc: Al Na‘ir is the fifth planet from its parent star and is the only rock in
+      the system that is even remotely capable of supporting life, with a sulfur-tainted
+      atmosphere too thin for unassisted breathing and a surface water supply limited
+      almost exclusively to the polar icecaps. Despite these drawbacks, Al Na‘ir was
+      one of the Draconis Combine‘s more heavily industrialized border worlds in its
+      heyday, home at one time to the Yori MechWorks, manufacturer of the galaxy-renowned
+      Atlas, and Scarborough Manufacturers, makers of the Pegasus, Scimitar and other
+      conventional combat vehicles. The Azami, a Muslim sect, initially settled Al
+      Na‘ir as a base of operations for a mining industry, focused on the plentiful
+      mineral-rich asteroids in the system. When the Combine took over, two of its
+      largest military corporations—Luthien Armor Works and Alshain Weapons—exploited
+      these valuable resources by subsidizing military industries on the planet. Yori
+      MechWorks was established on Yori, the largest of the asteroids that orbit between
+      Al Na‘ir and the fourth planet in the system, Al Abila. Scarborough Manufacturers
+      was founded on the smaller southern continent of Scarborough, from which it
+      took its name. Perhaps in part because of the initial Azami presence, coupled
+      with the Combine‘s xenophobic attitude toward non-Japanese cultures, the Kuritan
+      leadership eventually established the Combine‘s School for Cultural Investigation
+      on Al Na‘ir‘s barren surface. Despite the extremely inhospitable locale, many
+      Combine citizens flocked to Al Na‘ir to study the benefits and drawbacks of
+      the non-Japanese cultures that thrived in realms beyond the reach of House Kurita.
+      By the time of the Clan Invasion, Al Na‘ir had become an important part of the
+      Combine‘s strategic infrastructure and economy, with a population nearing one
+      billion, including those who lived in the mining and refining stations in the
+      asteroid belt. The planet remained under heavy defensive guard by the Combine,
+      though raids and assaults were infrequent, even by the Dragon‘s closest enemies.
+      When the Blakist Jihad hit, however, Al Na‘ir‘s luck changed for the worse.
+      Employing a battle fleet of fighter-carrying DropShips, backed up by mercenary
+      ‘Mech forces, the Word of Blake systematically ravaged Yori MechWorks‘ asteroid
+      mining and manufacturing centers, simultaneously striking the planet‘s surface
+      defensive units. The assault crippled the central planetary industry, destroyed
+      Yori‘s surface assembly plant, and left millions dead as domed cities were breached
+      in the heavy fighting , including the former capital of Homai-Zaki. As of the
+      32nd century, only Scarborough Manufacturers—which now produces more heavy construction
+      vehicles than fighting craft—and a handful of underground settlements linked
+      to decimated mining operations remain. Devlin Stone‘s relocation plan and efforts
+      to restore the less devastated settlements helped lure people back to Al Na‘ir,
+      many of whom took up residence in the new prefecture capital city of Phoenix,
+      located on the northern plains of Cedar Rock, Al Na‘ir‘s larger continent. The
+      planetary capital of Homai-Zaki, repaired and repressurized after the Jihad,
+      is on Cedar Rock as well.
     landmass:
       - name:
-          source: FCCW
+          source: FedCom Civil War, pg. 202
           value: Cedar Rock
-          page: 202
         capital:
-          source: FCCW
+          source: FedCom Civil War, pg. 202
           value: Homai-Zaki
-          page: 202
       - name:
-          source: FCCW
+          source: FedCom Civil War, pg. 202
           value: Scarborough
-          page: 202
     satellite:
       - name:
-          source: FCCW
+          source: FedCom Civil War, pg. 202
           value: Taliswan
-          page: 202
         size: large
         icon: rock6
     event:
@@ -192,12 +219,6 @@ planet:
         socioIndustrial: D-D-A-F-F
       - date: '2340-01-01'
         population: 34704219.0
-      - date: '2341-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '2350-01-01'
         population: 54794873.0
       - date: '2360-01-01'
@@ -246,18 +267,6 @@ planet:
         population: 909021488.0
       - date: '2570-01-01'
         population: 925389046.0
-      - date: '2571-01-01'
-        # administration: TH | Lockdale Province
-        # administration: TH | Lockdale Province
-        # administration: TH | Lockdale Province
-        # administration: TH | Lockdale Province
-        # administration: TH | Lockdale Province
-        # administration: TH | Lockdale Province
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - TH
       - date: '2580-01-01'
         population: 935592723.0
       - date: '2588-01-01'
@@ -304,18 +313,6 @@ planet:
         population: 943314741.0
       - date: '2760-01-01'
         population: 951955896.0
-      - date: '2767-01-01'
-        # administration: AE | Lockdale Province
-        # administration: AE | Lockdale Province
-        # administration: AE | Lockdale Province
-        # administration: AE | Lockdale Province
-        # administration: AE | Lockdale Province
-        # administration: AE | Lockdale Province
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - AE
       - date: '2767-10-05'
         faction:
           source: canon
@@ -324,12 +321,6 @@ planet:
       - date: '2770-01-01'
         population: 953827653.0
       - date: '2779-01-11'
-        # administration: TH | Lockdale Province
-        # administration: TH | Lockdale Province
-        # administration: TH | Lockdale Province
-        # administration: TH | Lockdale Province
-        # administration: TH | Lockdale Province
-        # administration: TH | Lockdale Province
         faction:
           source: canon
           value:
@@ -337,12 +328,6 @@ planet:
       - date: '2780-01-01'
         population: 941441084.0
       - date: '2785-12-06'
-        # administration: DC | Benjamin Military District | Ashio Prefecture
-        # administration: DC | Benjamin Military District | Ashio Prefecture
-        # administration: DC | Benjamin Military District | Ashio Prefecture
-        # administration: DC | Benjamin Military District | Ashio Prefecture
-        # administration: DC | Benjamin Military District | Ashio Prefecture
-        # administration: DC | Benjamin Military District | Ashio Prefecture
         faction:
           source: canon
           value:
@@ -430,12 +415,6 @@ planet:
             - WOB
       - date: '3070-01-01'
         population: 1561784249.0
-      - date: '3079-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - Stone
       - date: '3079-07-22'
         faction:
           source: canon
@@ -451,25 +430,7 @@ planet:
             - Stone
       - date: '3080-01-01'
         population: 1573384319.0
-      - date: '3081-01-01'
-        # administration: ROS | Prefecture II | Region Capital
-        # administration: ROS | Prefecture II | Region Capital
-        # administration: ROS | Prefecture II | Region Capital
-        # administration: ROS | Prefecture II | Region Capital
-        # administration: ROS | Prefecture II | Region Capital
-        # administration: ROS | Prefecture II | Region Capital
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - ROS
       - date: '3081-11-27'
-        # administration: ROS | Prefecture II | Region Capital
-        # administration: ROS | Prefecture II | Region Capital
-        # administration: ROS | Prefecture II | Region Capital
-        # administration: ROS | Prefecture II | Region Capital
-        # administration: ROS | Prefecture II | Region Capital
-        # administration: ROS | Prefecture II | Region Capital
         faction:
           source: canon
           value:
@@ -487,12 +448,6 @@ planet:
       - date: '3130-01-01'
         population: 1651409089.0
       - date: '3132-07-01'
-        # administration: DC | Benjamin Military District | Algedi Prefecture
-        # administration: DC | Benjamin Military District | Algedi Prefecture
-        # administration: DC | Benjamin Military District | Algedi Prefecture
-        # administration: DC | Benjamin Military District | Algedi Prefecture
-        # administration: DC | Benjamin Military District | Algedi Prefecture
-        # administration: DC | Benjamin Military District | Algedi Prefecture
         faction:
           source: canon
           value:

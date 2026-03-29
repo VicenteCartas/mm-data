@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -20,13 +20,11 @@ sucsId: 90
 xcood: 502.785
 ycood: 152.898
 spectralType:
-  source: 'HB:MPS'
+  source: 'Handbook: Major Periphery States, pg. 150'
   value: K5V
-  page: 150
 primarySlot:
-  source: 'HB:MPS'
+  source: 'Handbook: Major Periphery States, pg. 150'
   value: 4
-  page: 150
 event:
   - date: '2500-04-05'
     nadirCharge: yes
@@ -111,72 +109,57 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.28
     sysPos:
-      source: 'HB:MPS'
+      source: 'Handbook: Major Periphery States, pg. 150'
       value: 4
-      page: 150
     icon: green57
     pressure:
-      source: 'HB:MPS'
+      source: 'Handbook: Major Periphery States, pg. 150'
       value: STANDARD
-      page: 150
     atmosphere:
-      source: 'HB:MPS'
+      source: 'Handbook: Major Periphery States, pg. 150'
       value: BREATHABLE
-      page: 150
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'HB:MPS'
+      source: 'Handbook: Major Periphery States, pg. 150'
       value: 1.0
-      page: 150
     diameter: 15054
     density: 4.668129986921
     dayLength: 19
     yearLength: 0.8
     temperature:
-      source: 'HB:MPS'
+      source: 'Handbook: Major Periphery States, pg. 150'
       value: 30
-      page: 150
     water:
-      source: 'HB:MPS'
+      source: 'Handbook: Major Periphery States, pg. 150'
       value: 70
-      page: 150
     lifeForm:
-      source: 'HB:MPS'
+      source: 'Handbook: Major Periphery States, pg. 150'
       value: MAMMAL
-      page: 150
-    desc: Alpheratz is the planetary capital of the Outworlds Alliance. Unlike most Alliance worlds Alpheratz is heavily populated and contains the majority of the Alliance’s noteworthy cities as well as the basis for the Alliance’s heavy industry.
+    desc: Alpheratz is the planetary capital of the Outworlds Alliance. Unlike most
+      Alliance worlds Alpheratz is heavily populated and contains the majority of
+      the Alliance’s noteworthy cities as well as the basis for the Alliance’s heavy
+      industry.
     landmass:
       - name:
-          source: M&M
+          source: Masters and Minions, pg. 165
           value: North Continent
-          page: 165
         capital:
-          source: 'HB:MPS'
+          source: 'Handbook: Major Periphery States, pg. 150'
           value: Famindas (destroyed in 3071)
-          page: 150
       - name:
-          source: M&M
+          source: Masters and Minions, pg. 165
           value: South Continent
-          page: 165
         capital:
-          source: M&M
+          source: Masters and Minions, pg. 165
           value: Carolinas (since 3071)
-          page: 165
     satellite:
       - name:
-          source: 'HB:MPS'
+          source: 'Handbook: Major Periphery States, pg. 150'
           value: Aisha
-          page: 150
         size: large
         icon: rock12
     event:
       - date: '2413-02-28'
-        # administration: OA | National Capital
-        # administration: OA | National Capital
-        # administration: OA | National Capital
-        # administration: OA | National Capital
-        # administration: OA | National Capital
-        # administration: OA | National Capital
         faction:
           source: canon
           value:
@@ -351,12 +334,6 @@ planet:
       - date: '3080-01-01'
         population: 3107700.0
       - date: '3083-08-17'
-        # administration: RA | National Capital
-        # administration: RA | National Capital
-        # administration: RA | National Capital
-        # administration: RA | National Capital
-        # administration: RA | National Capital
-        # administration: RA | National Capital
         faction:
           source: canon
           value:

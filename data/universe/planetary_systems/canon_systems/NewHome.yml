@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: New Home
-sucsId: 1835
+sucsId: 1834
 xcood: 7.229
 ycood: -12.715
 spectralType:
-  source: DA:RW
+  source: MWDA world profiles
   value: G4IV
 primarySlot:
-  source: DA:RW
+  source: MWDA world profiles
   value: 1
 event:
   - date: '2371-08-24'
@@ -41,49 +41,80 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 1.44
     sysPos:
-      source: DA:RW
+      source: MWDA world profiles
       value: 1
     icon: green23
     pressure:
-      source: DA:RW
+      source: MWDA world profiles
       value: STANDARD
     atmosphere:
-      source: DA:RW
+      source: MWDA world profiles
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: DA:RW
+      source: MWDA world profiles
       value: 0.99
     diameter: 11894
     density: 5.849289518297
     dayLength: 25
     yearLength: 2.0
     temperature:
-      source: DA:RW
+      source: MWDA world profiles
       value: 34
     water:
-      source: DA:RW
+      source: MWDA world profiles
       value: 66
     lifeForm:
-      source: DA:RW
+      source: MWDA world profiles
       value: BIRD
-    desc: 3135 - Another early Terran colony world, established during humanity‘s first tentative steps to the stars, the features that drew many to New Home were the planet‘s pleasant and temperate climate, mountainous, resource-rich highlands, and many freshwater lakes and rivers. Industries looking to exploit the planet‘s mineral, chemical, and metal wealth flocked to New Home and set up shop with scores of hopeful young settlers looking to eke out a living on a brave new world. The large, pole-to-pole supercontinent of Spina Planetia, dominated by a central mountain chain called the Great Spine Mountains, drew the majority of the new colonists, who established cities and mining operations along the coastal regions and mountain bases. Many more, however, found the two secondary continents of Goldwynn and Arbergeiht, both located in the southern hemisphere, equally suitable for habitation, and there they set up smaller towns and agricultural communities. Findler, the capital city, was built on the northeastern plains of Spina Planetia, facing the eastern Tomagasso Ocean. Mann, site of the planet‘s largest spaceport, was established 700 kilometers to the south. When the Terran Hegemony placed New Home under its aegis, the world‘s strategic location, so close to Terra, necessitated the placement of an elaborate space defense network on the planet and in orbit around it. Much to the SLDF‘s dismay, this network fell under the control of the Usurper‘s troops when the Amaris crisis began, and the entire marvel of Star League military engineering had to be destroyed in the campaign to liberate Terra. Ruled by the Capellans after the fall of the League, New Home was frequently raided by the Free Worlds League and the Federated Suns, and ultimately became part of the Federated Commonwealth after the Fourth Succession War. When the Commonwealth fractured in 3057, New Home was left without any direction, and fell into anarchy that only ended when the Word of Blake managed to seize control during their effort to establish a buffer zone around Terra. Unlike other worlds, New Home hardly resisted the change in leadership, preferring the rule of the fanatics to total chaos. This allowed the Blakists to stage several major operations from the planet in relative security. The fighting to liberate New Home and break the Jihad caused widespread damage, which The Republic of the Sphere has invested a great deal of time and resources to undo.
+    desc: 3135 - Another early Terran colony world, established during humanity‘s
+      first tentative steps to the stars, the features that drew many to New Home
+      were the planet‘s pleasant and temperate climate, mountainous, resource-rich
+      highlands, and many freshwater lakes and rivers. Industries looking to exploit
+      the planet‘s mineral, chemical, and metal wealth flocked to New Home and set
+      up shop with scores of hopeful young settlers looking to eke out a living on
+      a brave new world. The large, pole-to-pole supercontinent of Spina Planetia,
+      dominated by a central mountain chain called the Great Spine Mountains, drew
+      the majority of the new colonists, who established cities and mining operations
+      along the coastal regions and mountain bases. Many more, however, found the
+      two secondary continents of Goldwynn and Arbergeiht, both located in the southern
+      hemisphere, equally suitable for habitation, and there they set up smaller towns
+      and agricultural communities. Findler, the capital city, was built on the northeastern
+      plains of Spina Planetia, facing the eastern Tomagasso Ocean. Mann, site of
+      the planet‘s largest spaceport, was established 700 kilometers to the south.
+      When the Terran Hegemony placed New Home under its aegis, the world‘s strategic
+      location, so close to Terra, necessitated the placement of an elaborate space
+      defense network on the planet and in orbit around it. Much to the SLDF‘s dismay,
+      this network fell under the control of the Usurper‘s troops when the Amaris
+      crisis began, and the entire marvel of Star League military engineering had
+      to be destroyed in the campaign to liberate Terra. Ruled by the Capellans after
+      the fall of the League, New Home was frequently raided by the Free Worlds League
+      and the Federated Suns, and ultimately became part of the Federated Commonwealth
+      after the Fourth Succession War. When the Commonwealth fractured in 3057, New
+      Home was left without any direction, and fell into anarchy that only ended when
+      the Word of Blake managed to seize control during their effort to establish
+      a buffer zone around Terra. Unlike other worlds, New Home hardly resisted the
+      change in leadership, preferring the rule of the fanatics to total chaos. This
+      allowed the Blakists to stage several major operations from the planet in relative
+      security. The fighting to liberate New Home and break the Jihad caused widespread
+      damage, which The Republic of the Sphere has invested a great deal of time and
+      resources to undo.
     landmass:
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Arbergeiht
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Goldwynn
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Spina Planetia
         capital:
-          source: DA:RW
+          source: MWDA world profiles
           value: Findler
     satellite:
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Neville
         size: medium
         icon: oddmoon2
@@ -109,12 +140,6 @@ planet:
           value:
             - TH
       - date: '2317-11-06'
-        # administration: TH | Alliance Core
-        # administration: TH | Alliance Core
-        # administration: TH | Alliance Core
-        # administration: TH | Alliance Core
-        # administration: TH | Alliance Core
-        # administration: TH | Alliance Core
         faction:
           source: canon
           value:
@@ -215,18 +240,6 @@ planet:
         population: 2316090903.0
       - date: '2760-01-01'
         population: 2332687830.0
-      - date: '2767-01-01'
-        # administration: AE | Alliance Core
-        # administration: AE | Alliance Core
-        # administration: AE | Alliance Core
-        # administration: AE | Alliance Core
-        # administration: AE | Alliance Core
-        # administration: AE | Alliance Core
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - AE
       - date: '2767-03-15'
         faction:
           source: canon
@@ -235,12 +248,6 @@ planet:
       - date: '2770-01-01'
         population: 2341444868.0
       - date: '2779-07-12'
-        # administration: TH | Alliance Core
-        # administration: TH | Alliance Core
-        # administration: TH | Alliance Core
-        # administration: TH | Alliance Core
-        # administration: TH | Alliance Core
-        # administration: TH | Alliance Core
         faction:
           source: canon
           value:
@@ -248,12 +255,6 @@ planet:
       - date: '2780-01-01'
         population: 2321906066.0
       - date: '2790-09-15'
-        # administration: CC | Tikonov Commonality | Region 1
-        # administration: CC | Tikonov Commonality | Region 1
-        # administration: CC | Tikonov Commonality | Region 1
-        # administration: CC | Tikonov Commonality | Region 1
-        # administration: CC | Tikonov Commonality | Region 1
-        # administration: CC | Tikonov Commonality | Region 1
         faction:
           source: canon
           value:
@@ -266,12 +267,6 @@ planet:
       - date: '2820-01-01'
         population: 2316107585.0
       - date: '2821-07-30'
-        # administration: CC | Tikonov Commonality | Region 1
-        # administration: CC | Tikonov Commonality | Region 1
-        # administration: CC | Tikonov Commonality | Region 1
-        # administration: CC | Tikonov Commonality | Region 1
-        # administration: CC | Tikonov Commonality | Region 1
-        # administration: CC | Tikonov Commonality | Region 1
         faction:
           source: canon
           value:
@@ -330,12 +325,6 @@ planet:
       - date: '3030-01-01'
         population: 1937781774.0
       - date: '3032-08-23'
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
-        # administration: FC | Sarna March | Terra Firma Operational Area
         faction:
           source: canon
           value:
@@ -346,23 +335,11 @@ planet:
         socioIndustrial: C-C-A-C-C
       - date: '3050-01-01'
         population: 1984255743.0
-      - date: '3057-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '3057-11-01'
         faction:
           source: canon
           value:
             - CM
-      - date: '3058-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '3060-01-01'
         population: 2012230691.0
       - date: '3066-02-01'
@@ -370,18 +347,6 @@ planet:
           source: canon
           value:
             - CM
-            - WOB
-      - date: '3067-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
-      - date: '3068-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
             - WOB
       - date: '3068-08-01'
         faction:
@@ -403,25 +368,7 @@ planet:
             - Stone
       - date: '3080-01-01'
         population: 2046321730.0
-      - date: '3081-01-01'
-        # administration: ROS | Prefecture X
-        # administration: ROS | Prefecture X
-        # administration: ROS | Prefecture X
-        # administration: ROS | Prefecture X
-        # administration: ROS | Prefecture X
-        # administration: ROS | Prefecture X
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - ROS
       - date: '3081-06-09'
-        # administration: ROS | Prefecture X
-        # administration: ROS | Prefecture X
-        # administration: ROS | Prefecture X
-        # administration: ROS | Prefecture X
-        # administration: ROS | Prefecture X
-        # administration: ROS | Prefecture X
         faction:
           source: canon
           value:
@@ -450,22 +397,10 @@ planet:
           value:
             - CC
       - date: '3151-01-01'
-        # administration: CC | Tikonov Commonality | Region 1
-        # administration: CC | Tikonov Commonality | Region 1
-        # administration: CC | Tikonov Commonality | Region 1
-        # administration: CC | Tikonov Commonality | Region 1
-        # administration: CC | Tikonov Commonality | Region 1
-        # administration: CC | Tikonov Commonality | Region 1
         faction:
           source: sucs
           value:
             - CC
-      - date: '3152-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - 3SL
   - name: New Bryant
     type: TERRESTRIAL
     orbitalDist: 0.63

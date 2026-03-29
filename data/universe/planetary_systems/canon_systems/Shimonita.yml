@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: Shimonita
-sucsId: 2311
+sucsId: 2310
 xcood: 93.826
 ycood: 82.416
 spectralType:
   source: canon
   value: F4V
 primarySlot:
-  source: DA:RW
+  source: MWDA world profiles
   value: 2
 planet:
   - name: Knight's Dawn
@@ -47,43 +47,58 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 2.24
     sysPos:
-      source: DA:RW
+      source: MWDA world profiles
       value: 2
     icon: wet1
     pressure:
-      source: DA:RW
+      source: MWDA world profiles
       value: STANDARD
     atmosphere:
-      source: DA:RW
+      source: MWDA world profiles
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: DA:RW
+      source: MWDA world profiles
       value: 1.06
     diameter: 11870
     density: 6.275433774567
     dayLength: 27
     yearLength: 3.6
     temperature:
-      source: DA:RW
+      source: MWDA world profiles
       value: 31
     water:
-      source: DA:RW
+      source: MWDA world profiles
       value: 82
     lifeForm:
-      source: DA:RW
+      source: MWDA world profiles
       value: BIRD
-    desc: Shimonita possesses a single large continent surrounded by islands. The surrounding ocean is constantly whipped into a frenzy by massive storm activity that perpetually forms in Shimonita's atmosphere. These storms occasionally flood the coastal areas of Shanghai (the continent), so colonists built their cities well inland, away from the coastlines. Shimonita's ecology provides enough fresh water and arable land to support the local population, but not enough to generate any exports. The same is true of the mineral resources on the world. Geologists from the Ozawa Mercantile Association found large deposits of metal ores off the coast of Shanghai and the Ozawa Mercantile Association quickly negotiated rights to establish offshore and underwater mining operations on Shimonita. When House Kurita established control over the Draconis Combine, the Ozawa Mercantile Association's facilities became property of the Dragon. Within a century, poor maintenance routines and violent weather rendered the offshore and underwater plants useless. Occasionally investors would buy the plants and get them running but these operations never lasted for more than a few decades.
+    desc: Shimonita possesses a single large continent surrounded by islands. The
+      surrounding ocean is constantly whipped into a frenzy by massive storm activity
+      that perpetually forms in Shimonita's atmosphere. These storms occasionally
+      flood the coastal areas of Shanghai (the continent), so colonists built their
+      cities well inland, away from the coastlines. Shimonita's ecology provides enough
+      fresh water and arable land to support the local population, but not enough
+      to generate any exports. The same is true of the mineral resources on the world.
+      Geologists from the Ozawa Mercantile Association found large deposits of metal
+      ores off the coast of Shanghai and the Ozawa Mercantile Association quickly
+      negotiated rights to establish offshore and underwater mining operations on
+      Shimonita. When House Kurita established control over the Draconis Combine,
+      the Ozawa Mercantile Association's facilities became property of the Dragon.
+      Within a century, poor maintenance routines and violent weather rendered the
+      offshore and underwater plants useless. Occasionally investors would buy the
+      plants and get them running but these operations never lasted for more than
+      a few decades.
     landmass:
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Shangai
         capital:
-          source: DA:RW
+          source: MWDA world profiles
           value: Irezumi City
     satellite:
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Nagasaki
         size: large
         icon: rock10
@@ -115,12 +130,6 @@ planet:
       - date: '2310-01-01'
         population: 13538221.0
       - date: '2319-10-24'
-        # administration: DC | Benjamin Military District | Ashio Prefecture
-        # administration: DC | Benjamin Military District | Ashio Prefecture
-        # administration: DC | Benjamin Military District | Ashio Prefecture
-        # administration: DC | Benjamin Military District | Ashio Prefecture
-        # administration: DC | Benjamin Military District | Ashio Prefecture
-        # administration: DC | Benjamin Military District | Ashio Prefecture
         faction:
           source: canon
           value:
@@ -297,25 +306,7 @@ planet:
         population: 695962517.0
       - date: '3080-01-01'
         population: 704082688.0
-      - date: '3081-01-01'
-        # administration: ROS | Prefecture II
-        # administration: ROS | Prefecture II
-        # administration: ROS | Prefecture II
-        # administration: ROS | Prefecture II
-        # administration: ROS | Prefecture II
-        # administration: ROS | Prefecture II
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - ROS
       - date: '3081-01-22'
-        # administration: ROS | Prefecture II
-        # administration: ROS | Prefecture II
-        # administration: ROS | Prefecture II
-        # administration: ROS | Prefecture II
-        # administration: ROS | Prefecture II
-        # administration: ROS | Prefecture II
         faction:
           source: canon
           value:
@@ -332,25 +323,7 @@ planet:
         population: 744040749.0
       - date: '3130-01-01'
         population: 759375058.0
-      - date: '3135-01-01'
-        # administration: DC | Benjamin Military District | Algedi Prefecture
-        # administration: DC | Benjamin Military District | Algedi Prefecture
-        # administration: DC | Benjamin Military District | Algedi Prefecture
-        # administration: DC | Benjamin Military District | Algedi Prefecture
-        # administration: DC | Benjamin Military District | Algedi Prefecture
-        # administration: DC | Benjamin Military District | Algedi Prefecture
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - DC
       - date: '3135-04-25'
-        # administration: DC | Dieron Military District | Ashio Prefecture
-        # administration: DC | Dieron Military District | Ashio Prefecture
-        # administration: DC | Dieron Military District | Ashio Prefecture
-        # administration: DC | Dieron Military District | Ashio Prefecture
-        # administration: DC | Dieron Military District | Ashio Prefecture
-        # administration: DC | Dieron Military District | Ashio Prefecture
         faction:
           source: canon
           value:

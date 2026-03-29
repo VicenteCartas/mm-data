@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -20,13 +20,11 @@ sucsId: 169
 xcood: 95.382
 ycood: -173.994
 spectralType:
-  source: 'HB:HL'
+  source: 'Handbook: House Liao, pg. 72'
   value: M1IV
-  page: 72
 primarySlot:
-  source: 'HB:HL'
+  source: 'Handbook: House Liao, pg. 72'
   value: 8
-  page: 72
 event:
   - date: '2384-09-13'
     zenithCharge: yes
@@ -181,39 +179,32 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.35
     sysPos:
-      source: 'HB:HL'
+      source: 'Handbook: House Liao, pg. 72'
       value: 8
-      page: 72
     icon: green47
     pressure:
-      source: 'HB:HL'
+      source: 'Handbook: House Liao, pg. 72'
       value: STANDARD
-      page: 72
     atmosphere:
-      source: 'HB:HL'
+      source: 'Handbook: House Liao, pg. 72'
       value: BREATHABLE
-      page: 72
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'HB:HL'
+      source: 'Handbook: House Liao, pg. 72'
       value: 0.98
-      page: 72
     diameter: 11971
     density: 5.753277883268
     dayLength: 21
     yearLength: 0.7
     temperature:
-      source: 'HB:HL'
+      source: 'Handbook: House Liao, pg. 72'
       value: 42
-      page: 72
     water:
-      source: 'HB:HL'
+      source: 'Handbook: House Liao, pg. 72'
       value: 36
-      page: 72
     lifeForm:
-      source: 'HB:HL'
+      source: 'Handbook: House Liao, pg. 72'
       value: REPTILE
-      page: 72
     desc: |-
       Ares is best known as the site of the peace conventions organised by Aleisha Liao which resulted in the Ares Conventions of Warfare. Ares was originally an independent colony before being absorbed by the Capella Commonality and later the Capellan Confederation. Ares is a prosperous small world thanks to its status as a freeport supported by on planet heavy industry that benefits greatly from local exemptions for standard import and export duties.
 
@@ -226,19 +217,18 @@ planet:
       Salvatore Incorporated
     landmass:
       - name:
-          source: 'OR'
+          source: 'Objective Raids: Capellan Confederation'
           value: Anteros
       - name:
-          source: 'OR'
+          source: 'Objective Raids: Capellan Confederation'
           value: Harmonia
         capital:
-          source: 'OR'
+          source: 'Objective Raids: Capellan Confederation'
           value: New Olympia
     satellite:
       - name:
-          source: 'HB:HL'
+          source: 'Handbook: House Liao, pg. 72'
           value: Aphrodite
-          page: 72
         size: large
         icon: rock2
     event:
@@ -274,12 +264,6 @@ planet:
       - date: '2360-01-01'
         population: 205810137.0
       - date: '2367-07-01'
-        # administration: CC | Capella Commonality | Region 4
-        # administration: CC | Capella Commonality | Region 4
-        # administration: CC | Capella Commonality | Region 4
-        # administration: CC | Capella Commonality | Region 4
-        # administration: CC | Capella Commonality | Region 4
-        # administration: CC | Capella Commonality | Region 4
         faction:
           source: canon
           value:

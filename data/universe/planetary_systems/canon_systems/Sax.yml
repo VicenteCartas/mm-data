@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: Sax
-sucsId: 2255
+sucsId: 2254
 xcood: -1.561
 ycood: -374.6
 spectralType:
   source: canon
   value: F2V
 primarySlot:
-  source: 'OR'
+  source: 'Objective Raids: Capellan Confederation'
   value: 2
 event:
   - date: '2654-05-30'
@@ -53,49 +53,48 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 2.4
     sysPos:
-      source: 'OR'
+      source: 'Objective Raids: Capellan Confederation'
       value: 2
     icon: wet18
     pressure:
-      source: 'OR'
+      source: 'Objective Raids: Capellan Confederation'
       value: THIN
     atmosphere:
-      source: 'OR'
+      source: 'Objective Raids: Capellan Confederation'
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'OR'
+      source: 'Objective Raids: Capellan Confederation'
       value: 0.9
     diameter: 14282
     density: 4.428611029953
     dayLength: 26
     yearLength: 3.9
     temperature:
-      source: 'OR'
+      source: 'Objective Raids: Capellan Confederation'
       value: 32
     water:
-      source: 'OR'
+      source: 'Objective Raids: Capellan Confederation'
       value: 85
     lifeForm:
-      source: 'OR'
+      source: 'Objective Raids: Capellan Confederation'
       value: MICROBE
-    desc: Sax has a relatively comfortable temperate-tropical climate and abundant water, though a thinner than standard atmosphere. Unfortunately much of the water is ocean and the single large continent does not support much agriculture and as a result the planet's population relies on food imported from neighboring planets. Sax is home to a Duchy RTC that focuses on training vehicle crews and unarmored infantry in the badlands of the planet's lone continent.
+    desc: Sax has a relatively comfortable temperate-tropical climate and abundant
+      water, though a thinner than standard atmosphere. Unfortunately much of the
+      water is ocean and the single large continent does not support much agriculture
+      and as a result the planet's population relies on food imported from neighboring
+      planets. Sax is home to a Duchy RTC that focuses on training vehicle crews and
+      unarmored infantry in the badlands of the planet's lone continent.
     smallMoons: 2
     landmass:
       - name:
-          source: 'OR'
+          source: 'Objective Raids: Capellan Confederation'
           value: Sax
         capital:
-          source: 'OR'
+          source: 'Objective Raids: Capellan Confederation'
           value: Alicante
     event:
       - date: '2597-07-15'
-        # administration: CC | Andurien Commonality | Region 3
-        # administration: CC | Andurien Commonality | Region 3
-        # administration: CC | Andurien Commonality | Region 3
-        # administration: CC | Andurien Commonality | Region 3
-        # administration: CC | Andurien Commonality | Region 3
-        # administration: CC | Andurien Commonality | Region 3
         faction:
           source: canon
           value:
@@ -199,11 +198,6 @@ planet:
         population: 1616856765.0
       - date: '3030-01-01'
         population: 1622451596.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - MOC
       - date: '3030-12-08'
         faction:
           source: canon
@@ -211,12 +205,6 @@ planet:
             - MOC
             - CC
       - date: '3030-12-20'
-        # administration: CC | Sian Commonality | Region 7
-        # administration: CC | Sian Commonality | Region 7
-        # administration: CC | Sian Commonality | Region 7
-        # administration: CC | Sian Commonality | Region 7
-        # administration: CC | Sian Commonality | Region 7
-        # administration: CC | Sian Commonality | Region 7
         faction:
           source: canon
           value:

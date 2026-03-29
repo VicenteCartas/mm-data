@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -20,13 +20,11 @@ sucsId: 663
 xcood: -194.866
 ycood: 13.391
 spectralType:
-  source: 'HB:HS'
+  source: 'Handbook: House Steiner, pg. 77'
   value: F1VI
-  page: 77
 primarySlot:
-  source: 'HB:HS'
+  source: 'Handbook: House Steiner, pg. 77'
   value: 1
-  page: 77
 event:
   - date: '2489-12-09'
     nadirCharge: yes
@@ -41,70 +39,55 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 4.48
     sysPos:
-      source: 'HB:HS'
+      source: 'Handbook: House Steiner, pg. 77'
       value: 1
-      page: 77
     icon: green5
     pressure:
-      source: 'HB:HS'
+      source: 'Handbook: House Steiner, pg. 77'
       value: STANDARD
-      page: 77
     atmosphere:
-      source: 'HB:HS'
+      source: 'Handbook: House Steiner, pg. 77'
       value: BREATHABLE
-      page: 77
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'HB:HS'
+      source: 'Handbook: House Steiner, pg. 77'
       value: 0.74
-      page: 77
     diameter: 9436
     density: 5.511441277676
     dayLength: 25
     yearLength: 9.6
     temperature:
-      source: 'HB:HS'
+      source: 'Handbook: House Steiner, pg. 77'
       value: 59
-      page: 77
     water:
-      source: 'HB:HS'
+      source: 'Handbook: House Steiner, pg. 77'
       value: 36
-      page: 77
     lifeForm:
-      source: 'HB:HS'
+      source: 'Handbook: House Steiner, pg. 77'
       value: AMPHIBIAN
-      page: 77
-    desc: Dar-es-Salaam (“Heaven of Peace”) is a planet almost entirely covered in desert. The planet was passed over for colonization until the 25th Century when it attracted settlers from the Middle East and Northern Africa.
+    desc: Dar-es-Salaam (“Heaven of Peace”) is a planet almost entirely covered in
+      desert. The planet was passed over for colonization until the 25th Century when
+      it attracted settlers from the Middle East and Northern Africa.
     landmass:
       - name:
-          source: 'HB:HS'
+          source: 'Handbook: House Steiner, pg. 77'
           value: Mellesse
-          page: 77
         capital:
-          source: 'HB:HS'
+          source: 'Handbook: House Steiner, pg. 77'
           value: Khadijah
-          page: 77
     satellite:
       - name:
-          source: 'HB:HS'
+          source: 'Handbook: House Steiner, pg. 77'
           value: Jibril
-          page: 77
         size: large
         icon: rock12
       - name:
-          source: 'HB:HS'
+          source: 'Handbook: House Steiner, pg. 77'
           value: Luqman
-          page: 77
         size: medium
         icon: oddmoon1
     event:
       - date: '2465-04-03'
-        # administration: LA | Protectorate of Donegal | Furillo Province
-        # administration: LA | Protectorate of Donegal | Furillo Province
-        # administration: LA | Protectorate of Donegal | Furillo Province
-        # administration: LA | Protectorate of Donegal | Furillo Province
-        # administration: LA | Protectorate of Donegal | Furillo Province
-        # administration: LA | Protectorate of Donegal | Furillo Province
         faction:
           source: canon
           value:
@@ -238,25 +221,8 @@ planet:
       - date: '3030-01-01'
         population: 560733332.0
       - date: '3040-01-01'
-        # administration: FC | Tamarind March | Soilihull Operational Area
-        # administration: FC | Tamarind March | Soilihull Operational Area
-        # administration: FC | Tamarind March | Soilihull Operational Area
-        # administration: FC | Tamarind March | Soilihull Operational Area
-        # administration: FC | Tamarind March | Soilihull Operational Area
-        # administration: FC | Tamarind March | Soilihull Operational Area
         population: 567332442.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FC
       - date: '3040-01-19'
-        # administration: FC | Tamarind March | Soilihull Operational Area
-        # administration: FC | Tamarind March | Soilihull Operational Area
-        # administration: FC | Tamarind March | Soilihull Operational Area
-        # administration: FC | Tamarind March | Soilihull Operational Area
-        # administration: FC | Tamarind March | Soilihull Operational Area
-        # administration: FC | Tamarind March | Soilihull Operational Area
         faction:
           source: canon
           value:
@@ -267,25 +233,7 @@ planet:
           value: C-D-C-C-D
       - date: '3050-01-01'
         population: 575043361.0
-      - date: '3057-01-01'
-        # administration: LA | Tamarind March | Soilihull Operational Area
-        # administration: LA | Tamarind March | Soilihull Operational Area
-        # administration: LA | Tamarind March | Soilihull Operational Area
-        # administration: LA | Tamarind March | Soilihull Operational Area
-        # administration: LA | Tamarind March | Soilihull Operational Area
-        # administration: LA | Tamarind March | Soilihull Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LA
       - date: '3057-09-18'
-        # administration: LA | Bolan Province | Cavanaugh Theater
-        # administration: LA | Bolan Province | Cavanaugh Theater
-        # administration: LA | Bolan Province | Cavanaugh Theater
-        # administration: LA | Bolan Province | Cavanaugh Theater
-        # administration: LA | Bolan Province | Cavanaugh Theater
-        # administration: LA | Bolan Province | Cavanaugh Theater
         faction:
           source: canon
           value:
@@ -299,12 +247,6 @@ planet:
             - FC
             - LA
       - date: '3064-07-26'
-        # administration: LA | Bolan Province | Cavanaugh Theater
-        # administration: LA | Bolan Province | Cavanaugh Theater
-        # administration: LA | Bolan Province | Cavanaugh Theater
-        # administration: LA | Bolan Province | Cavanaugh Theater
-        # administration: LA | Bolan Province | Cavanaugh Theater
-        # administration: LA | Bolan Province | Cavanaugh Theater
         faction:
           source: canon
           value:
@@ -331,12 +273,6 @@ planet:
         population: 611151846.0
       - date: '3142-01-01'
         socioIndustrial: C-D-B-B-D
-      - date: '3145-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CWE
       - date: '3145-12-22'
         faction:
           source: canon

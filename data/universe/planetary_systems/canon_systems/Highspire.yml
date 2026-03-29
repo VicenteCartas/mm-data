@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,17 +16,15 @@
 # affiliated with Microsoft.
 
 id: Highspire
-sucsId: 1110
+sucsId: 1109
 xcood: 100.289
 ycood: -119.184
 spectralType:
-  source: 'HB:HL'
+  source: 'Handbook: House Liao, pg. 75'
   value: F9V
-  page: 75
 primarySlot:
-  source: 'HB:HL'
+  source: 'Handbook: House Liao, pg. 75'
   value: 2
-  page: 75
 planet:
   - name: Saint Tanner
     type: TERRESTRIAL
@@ -49,55 +47,47 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 1.1
     sysPos:
-      source: 'HB:HL'
+      source: 'Handbook: House Liao, pg. 75'
       value: 2
-      page: 75
     icon: wet6
     pressure:
-      source: 'HB:HL'
+      source: 'Handbook: House Liao, pg. 75'
       value: STANDARD
-      page: 75
     atmosphere:
-      source: 'HB:HL'
+      source: 'Handbook: House Liao, pg. 75'
       value: BREATHABLE
-      page: 75
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'HB:HL'
+      source: 'Handbook: House Liao, pg. 75'
       value: 0.99
-      page: 75
     diameter: 13186
     density: 5.276407931863
     dayLength: 18
     yearLength: 1.6
     temperature:
-      source: 'HB:HL'
+      source: 'Handbook: House Liao, pg. 75'
       value: 38
-      page: 75
     water:
-      source: 'HB:HL'
+      source: 'Handbook: House Liao, pg. 75'
       value: 78
-      page: 75
     lifeForm:
-      source: 'HB:HL'
+      source: 'Handbook: House Liao, pg. 75'
       value: PLANT
-      page: 75
     desc: |-
       Highspire is a relatively comfortable temperate planet and its primary exports are timber and wood crafts. The planet has always been known for its stark contrasts between the ruling Liaos and attending nobles and the poor of the planet. Highspire was the personal holding of Romano Liao before she became Chancellor and became the personal holding of her daughter Kali Liao after the Chancellor’s death. Being a border planet between the Capellan Confederation and Federated Suns the planet has seen many raids and several invasions throughout its history.
 
       Highspire is home to one of the many Duchy RTC facilities throughout the Capellan Confederation and train conventional armor crews and infantry.
     landmass:
       - name:
-          source: 'OR'
+          source: 'Objective Raids: Capellan Confederation'
           value: Chu-Li
         capital:
-          source: 'OR'
+          source: 'Objective Raids: Capellan Confederation'
           value: Crescent
     satellite:
       - name:
-          source: 'HB:HL'
+          source: 'Handbook: House Liao, pg. 75'
           value: Peak
-          page: 75
         size: medium
         icon: rock3
     event:
@@ -118,23 +108,11 @@ planet:
         population: 3657131.0
       - date: '2310-01-01'
         population: 8421296.0
-      - date: '2317-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CCom
       - date: '2317-04-07'
         faction:
           source: canon
           value:
             - CTL
-      - date: '2319-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CCom
       - date: '2320-01-01'
         population: 17365680.0
       - date: '2330-01-01'
@@ -152,12 +130,6 @@ planet:
       - date: '2360-01-01'
         population: 132634242.0
       - date: '2367-07-01'
-        # administration: CC | Sarna Commonality | Region 7
-        # administration: CC | Sarna Commonality | Region 7
-        # administration: CC | Sarna Commonality | Region 7
-        # administration: CC | Sarna Commonality | Region 7
-        # administration: CC | Sarna Commonality | Region 7
-        # administration: CC | Sarna Commonality | Region 7
         faction:
           source: canon
           value:
@@ -306,18 +278,6 @@ planet:
         population: 1187743324.0
       - date: '3020-01-01'
         population: 1178744196.0
-      - date: '3030-01-01'
-        # administration: LA | Sarna March | Palos Operational Area
-        # administration: LA | Sarna March | Palos Operational Area
-        # administration: LA | Sarna March | Palos Operational Area
-        # administration: LA | Sarna March | Palos Operational Area
-        # administration: LA | Sarna March | Palos Operational Area
-        # administration: LA | Sarna March | Palos Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LA
       - date: '3030-12-05'
         faction:
           source: canon
@@ -325,25 +285,8 @@ planet:
             - FS
         population: 1186207123.0
       - date: '3040-01-01'
-        # administration: FC | Sarna March | Palos Operational Area
-        # administration: FC | Sarna March | Palos Operational Area
-        # administration: FC | Sarna March | Palos Operational Area
-        # administration: FC | Sarna March | Palos Operational Area
-        # administration: FC | Sarna March | Palos Operational Area
-        # administration: FC | Sarna March | Palos Operational Area
         population: 1199207504.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FC
       - date: '3040-01-19'
-        # administration: FC | Sarna March | Palos Operational Area
-        # administration: FC | Sarna March | Palos Operational Area
-        # administration: FC | Sarna March | Palos Operational Area
-        # administration: FC | Sarna March | Palos Operational Area
-        # administration: FC | Sarna March | Palos Operational Area
-        # administration: FC | Sarna March | Palos Operational Area
         faction:
           source: canon
           value:
@@ -354,32 +297,14 @@ planet:
           value: B-C-C-D-C
       - date: '3050-01-01'
         population: 1210654262.0
-      - date: '3057-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '3057-11-01'
         faction:
           source: canon
           value:
             - CM
-      - date: '3058-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '3060-01-01'
         population: 1223922574.0
       - date: '3062-03-21'
-        # administration: CC | Liao Commonality | Region 4
-        # administration: CC | Liao Commonality | Region 4
-        # administration: CC | Liao Commonality | Region 4
-        # administration: CC | Liao Commonality | Region 4
-        # administration: CC | Liao Commonality | Region 4
-        # administration: CC | Liao Commonality | Region 4
         faction:
           source: canon
           value:

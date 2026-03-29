@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: Trondheim (DC)
-sucsId: 2589
+sucsId: 2588
 xcood: 72.64
 ycood: 405.242
 spectralType:
   source: canon
   value: G5V
 primarySlot:
-  source: HB:HK
+  source: House Kurita
   value: 3
 event:
   - date: '2358-06-11'
@@ -64,7 +64,7 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.9
     sysPos:
-      source: HB:HK
+      source: House Kurita
       value: 3
     icon: green46
     pressure:
@@ -86,7 +86,7 @@ planet:
       source: canon
       value: 37
     lifeForm:
-      source: HB:HK
+      source: House Kurita
       value: MAMMAL
     desc: |-
       Trondheim is a volatile young planet with regular seismic activity, which usually means there are at least a handful of volcanoes erupting at any one time. These regular eruptions result in long, excessively hot, summers and short, extremely cold, winters, due to the excessive volcanic ash in the atmosphere. The extreme temperatures can make life unpleasant on Trondheim but the extremes are not to the point where the planet is uninhabitable. The benefit of the seismic activity and volcanoes is that rare metals and minerals are made easily accessible after eruptions and the planet’s mining industry has supported a number of major mining corporations for centuries. During its time in the Combine, there were a number of protests, rebellions and attempted revolutions, which often resulted in a crackdown by the DCMS and ISF. The planetary capital of Trondheim is Misby Flats.
@@ -102,7 +102,7 @@ planet:
           source: canon
           value: Fosen
         capital:
-          source: HB:HK
+          source: House Kurita
           value: Misby Flats
       - name:
           source: canon
@@ -155,18 +155,6 @@ planet:
             - DC
       - date: '2340-01-01'
         population: 24543995.0
-      - date: '2341-01-01'
-        # administration: DC | Principality of Rasalhague
-        # administration: DC | Principality of Rasalhague
-        # administration: DC | Principality of Rasalhague
-        # administration: DC | Principality of Rasalhague
-        # administration: DC | Principality of Rasalhague
-        # administration: DC | Principality of Rasalhague
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - DC
       - date: '2350-01-01'
         population: 33601407.0
       - date: '2360-01-01'
@@ -209,12 +197,6 @@ planet:
       - date: '2500-01-01'
         population: 221044263.0
       - date: '2510-10-07'
-        # administration: DC | Rasalhague Military District | Trondheim Prefecture
-        # administration: DC | Rasalhague Military District | Trondheim Prefecture
-        # administration: DC | Rasalhague Military District | Trondheim Prefecture
-        # administration: DC | Rasalhague Military District | Trondheim Prefecture
-        # administration: DC | Rasalhague Military District | Trondheim Prefecture
-        # administration: DC | Rasalhague Military District | Trondheim Prefecture
         faction:
           source: canon
           value:
@@ -343,34 +325,13 @@ planet:
           value:
             - FRR
       - date: '3040-01-01'
-        # administration: FR | Rasalhague Province
-        # administration: FR | Rasalhague Province
-        # administration: FR | Rasalhague Province
-        # administration: FR | Rasalhague Province
-        # administration: FR | Rasalhague Province
-        # administration: FR | Rasalhague Province
         population: 191883048.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FR
       - date: '3041-01-01'
         socioIndustrial:
           source: canon
           value: A-C-B-B-C
       - date: '3050-01-01'
-        # administration: FR | Rasalhague Province
-        # administration: FR | Rasalhague Province
-        # administration: FR | Rasalhague Province
-        # administration: FR | Rasalhague Province
-        # administration: FR | Rasalhague Province
         population: 193018504.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CGB
       - date: '3050-05-01'
         faction:
           source: canon
@@ -384,12 +345,6 @@ planet:
             - CGB
       - date: '3060-01-01'
         population: 194744036.0
-      - date: '3067-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CDS
       - date: '3067-04-01'
         faction:
           source: canon
@@ -430,12 +385,6 @@ planet:
       - date: '3130-01-01'
         population: 206146290.0
       - date: '3132-07-01'
-        # administration: RD | Region 1
-        # administration: RD | Region 1
-        # administration: RD | Region 1
-        # administration: RD | Region 1
-        # administration: RD | Region 1
-        # administration: RD | Region 1
         faction:
           source: canon
           value:

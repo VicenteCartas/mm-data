@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -20,10 +20,10 @@ sucsId: 534
 xcood: -74.708
 ycood: -15.558
 spectralType:
-  source: DA:RW
+  source: MWDA world profiles
   value: A3V
 primarySlot:
-  source: DA:RW
+  source: MWDA world profiles
   value: 1
 event:
   - date: '2361-08-04'
@@ -39,31 +39,31 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 3.84
     sysPos:
-      source: DA:RW
+      source: MWDA world profiles
       value: 1
     icon: dry26
     pressure:
-      source: DA:RW
+      source: MWDA world profiles
       value: THIN
     atmosphere:
-      source: DA:RW
+      source: MWDA world profiles
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: DA:RW
+      source: MWDA world profiles
       value: 0.67
     diameter: 10473
     density: 4.495696677415
     dayLength: 20
     yearLength: 7.7
     temperature:
-      source: DA:RW
+      source: MWDA world profiles
       value: 39
     water:
-      source: DA:RW
+      source: MWDA world profiles
       value: 16
     lifeForm:
-      source: DA:RW
+      source: MWDA world profiles
       value: PLANT
     desc: |-
       3135 - Chertan is a water-poor world, blasted by a hot, white star. However, abundant mineral and metallurgical resources supported the founding of several settlements based around mining, refining, and manufacturing operations, despite the lack of arable land. The growth of nearby agricultural worlds and trade saw Chertan prosper from its export of raw materials and heavy machinery, and continued to do so until after the fall of the Star League. Theleopolis, the planetary capital and primary spaceport of Chertan, is located in the southern hemisphere just south of the Huron Sea. New Pittsburgh is located near the Eerie Sea, the northernmost of Chertan‘s three large bodies of water. Altonia, the third largest city after Theleopolis and New Pittsburgh, is located near the eastern edge of the Ontario Sea. Altonia is home to Artista Chemicals, Chertan‘s largest mineral mining and refining operation.
@@ -73,16 +73,16 @@ planet:
       During the Jihad, mercenaries employed by the Word of Blake savaged several mining towns and obliterated the spaceport at New Pittsburgh. Despite the damage, the planetary infrastructure and economy recovered following the influx of new residents relocated to Chertan under Devlin Stone‘s Relocation Act.
     landmass:
       - capital:
-          source: DA:RW
+          source: MWDA world profiles
           value: Theleopolis
     satellite:
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Osei
         size: large
         icon: rock4
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Pelipa
         size: medium
         icon: rock7
@@ -124,12 +124,6 @@ planet:
         population: 244756854.0
       - date: '2360-01-01'
         population: 331346382.0
-      - date: '2366-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FWL
       - date: '2370-01-01'
         population: 432724391.0
       - date: '2380-01-01'
@@ -172,18 +166,6 @@ planet:
         population: 2001576670.0
       - date: '2570-01-01'
         population: 2049561025.0
-      - date: '2571-01-01'
-        # administration: TH | Tyrfing Province
-        # administration: TH | Tyrfing Province
-        # administration: TH | Tyrfing Province
-        # administration: TH | Tyrfing Province
-        # administration: TH | Tyrfing Province
-        # administration: TH | Tyrfing Province
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - TH
       - date: '2580-01-01'
         population: 2083750337.0
       - date: '2590-01-01'
@@ -227,18 +209,6 @@ planet:
         population: 2262215253.0
       - date: '2760-01-01'
         population: 2276476609.0
-      - date: '2767-01-01'
-        # administration: AE | Tyrfing Province
-        # administration: AE | Tyrfing Province
-        # administration: AE | Tyrfing Province
-        # administration: AE | Tyrfing Province
-        # administration: AE | Tyrfing Province
-        # administration: AE | Tyrfing Province
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - AE
       - date: '2767-10-28'
         faction:
           source: canon
@@ -341,25 +311,7 @@ planet:
             - Stone
       - date: '3080-01-01'
         population: 1913169850.0
-      - date: '3081-01-01'
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - ROS
       - date: '3081-01-16'
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
         faction:
           source: canon
           value:
@@ -378,12 +330,6 @@ planet:
         population: 1933944063.0
       - date: '3132-08-07'
         hpg: X
-      - date: '3135-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - RR
       - date: '3135-10-01'
         faction:
           source: canon
@@ -409,12 +355,6 @@ planet:
           value:
             - CWE
       - date: '3151-11-07'
-        # administration: FWL | Covenant Worlds
-        # administration: FWL | Covenant Worlds
-        # administration: FWL | Covenant Worlds
-        # administration: FWL | Covenant Worlds
-        # administration: FWL | Covenant Worlds
-        # administration: FWL | Covenant Worlds
         faction:
           source: canon
           value:

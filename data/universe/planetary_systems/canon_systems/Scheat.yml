@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: Scheat
-sucsId: 2257
+sucsId: 2256
 xcood: 168.531
 ycood: 41.83
 spectralType:
-  source: DA:RW
+  source: MWDA world profiles
   value: G0IV
 primarySlot:
-  source: DA:RW
+  source: MWDA world profiles
   value: 1
 planet:
   - name:
@@ -32,54 +32,74 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 1.76
     sysPos:
-      source: DA:RW
+      source: MWDA world profiles
       value: 1
     icon: green44
     pressure:
-      source: DA:RW
+      source: MWDA world profiles
       value: HIGH
     atmosphere:
-      source: DA:RW
+      source: MWDA world profiles
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: DA:RW
+      source: MWDA world profiles
       value: 0.93
     diameter: 12637
     density: 5.17190070156
     dayLength: 21
     yearLength: 2.6
     temperature:
-      source: DA:RW
+      source: MWDA world profiles
       value: 38
     water:
-      source: DA:RW
+      source: MWDA world profiles
       value: 73
     lifeForm:
-      source: DA:RW
+      source: MWDA world profiles
       value: REPTILE
-    desc: 3135 - A world of heavy rainfall, rich soil, and basic metals, Scheat became an industrialized world soon after the first colonists made planetfall. Lumber and common raw metals such as aluminum and iron made up the bulk of the planetary economy, with textiles forming a supplemental export. Only moderately successful in comparison to neighboring systems, very little made this world stand out in the early years of human expansion into the galaxy. Many cities arose on the primary temperate continents of Kohl and Warschen, centered on the local timber industries and mining establishments, while agricultural settlements developed along the winding rivers that connected many of these cities. In the days of the Terran Hegemony, Scheat was a Hegemony border world to the Draconis Combine, and so military outposts and a small ‘Mech repair and refit complex were placed on the world for the benefit of defending troops. When the Star League fell, these assets became natural targets for the feuding Great Houses, and were largely destroyed in the fighting. Only in the past decade have efforts to reclaim the devastated facilities borne fruit with the opening of Landhome Industrial ‘Mech Enterprises, producer of construction, mining, and forestry ‘Mech designs. The LIME plant is located on Waschen, while the planetary capital and primary spaceport lie in the foothills of Kohl. The large, lake-riddled equatorial continent of Rhodes is Scheat‘s only other major landmass, and it is home to the industrial city of Valorie, where Valorie Metals, Unlimited, Scheat‘s largest mining concern, is headquartered.
+    desc: 3135 - A world of heavy rainfall, rich soil, and basic metals, Scheat became
+      an industrialized world soon after the first colonists made planetfall. Lumber
+      and common raw metals such as aluminum and iron made up the bulk of the planetary
+      economy, with textiles forming a supplemental export. Only moderately successful
+      in comparison to neighboring systems, very little made this world stand out
+      in the early years of human expansion into the galaxy. Many cities arose on
+      the primary temperate continents of Kohl and Warschen, centered on the local
+      timber industries and mining establishments, while agricultural settlements
+      developed along the winding rivers that connected many of these cities. In the
+      days of the Terran Hegemony, Scheat was a Hegemony border world to the Draconis
+      Combine, and so military outposts and a small ‘Mech repair and refit complex
+      were placed on the world for the benefit of defending troops. When the Star
+      League fell, these assets became natural targets for the feuding Great Houses,
+      and were largely destroyed in the fighting. Only in the past decade have efforts
+      to reclaim the devastated facilities borne fruit with the opening of Landhome
+      Industrial ‘Mech Enterprises, producer of construction, mining, and forestry
+      ‘Mech designs. The LIME plant is located on Waschen, while the planetary capital
+      and primary spaceport lie in the foothills of Kohl. The large, lake-riddled
+      equatorial continent of Rhodes is Scheat‘s only other major landmass, and it
+      is home to the industrial city of Valorie, where Valorie Metals, Unlimited,
+      Scheat‘s largest mining concern, is headquartered.
     landmass:
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Kohl
         capital:
           source: noncanon
           value: Tikohl
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Rhodes
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Warschen
     satellite:
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Traveler
         size: giant
         icon: rock15
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Wanderer
         size: large
         icon: rock13
@@ -107,12 +127,6 @@ planet:
           value:
             - FS
         population: 15212613.0
-      - date: '2366-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '2370-01-01'
         population: 26666016.0
       - date: '2380-01-01'
@@ -155,18 +169,6 @@ planet:
         population: 621769533.0
       - date: '2570-01-01'
         population: 638556487.0
-      - date: '2571-01-01'
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FS
       - date: '2580-01-01'
         population: 653986485.0
       - date: '2590-01-01'
@@ -221,25 +223,7 @@ planet:
         population: 811207751.0
       - date: '2820-01-01'
         population: 794807763.0
-      - date: '2821-01-01'
-        # administration: DC | Benjamin Military District | Proserpina Prefecture
-        # administration: DC | Benjamin Military District | Proserpina Prefecture
-        # administration: DC | Benjamin Military District | Proserpina Prefecture
-        # administration: DC | Benjamin Military District | Proserpina Prefecture
-        # administration: DC | Benjamin Military District | Proserpina Prefecture
-        # administration: DC | Benjamin Military District | Proserpina Prefecture
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - DC
       - date: '2821-06-04'
-        # administration: DC | Benjamin Military District | Proserpina Prefecture
-        # administration: DC | Benjamin Military District | Proserpina Prefecture
-        # administration: DC | Benjamin Military District | Proserpina Prefecture
-        # administration: DC | Benjamin Military District | Proserpina Prefecture
-        # administration: DC | Benjamin Military District | Proserpina Prefecture
-        # administration: DC | Benjamin Military District | Proserpina Prefecture
         faction:
           source: canon
           value:
@@ -261,12 +245,6 @@ planet:
       - date: '2890-01-01'
         population: 778932531.0
       - date: '2900-11-14'
-        # administration: DC | Benjamin Military District | Proserpina Prefecture
-        # administration: DC | Benjamin Military District | Proserpina Prefecture
-        # administration: DC | Benjamin Military District | Proserpina Prefecture
-        # administration: DC | Benjamin Military District | Proserpina Prefecture
-        # administration: DC | Benjamin Military District | Proserpina Prefecture
-        # administration: DC | Benjamin Military District | Proserpina Prefecture
         faction:
           source: canon
           value:
@@ -314,25 +292,7 @@ planet:
         population: 735632471.0
       - date: '3080-01-01'
         population: 743025700.0
-      - date: '3081-01-01'
-        # administration: ROS | Prefecture III
-        # administration: ROS | Prefecture III
-        # administration: ROS | Prefecture III
-        # administration: ROS | Prefecture III
-        # administration: ROS | Prefecture III
-        # administration: ROS | Prefecture III
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - ROS
       - date: '3081-04-04'
-        # administration: ROS | Prefecture III
-        # administration: ROS | Prefecture III
-        # administration: ROS | Prefecture III
-        # administration: ROS | Prefecture III
-        # administration: ROS | Prefecture III
-        # administration: ROS | Prefecture III
         faction:
           source: canon
           value:
@@ -351,18 +311,6 @@ planet:
         population: 752597558.0
       - date: '3132-08-07'
         hpg: X
-      - date: '3135-01-01'
-        # administration: DC | Benjamin Military District | Proserpina Prefecture
-        # administration: DC | Benjamin Military District | Proserpina Prefecture
-        # administration: DC | Benjamin Military District | Proserpina Prefecture
-        # administration: DC | Benjamin Military District | Proserpina Prefecture
-        # administration: DC | Benjamin Military District | Proserpina Prefecture
-        # administration: DC | Benjamin Military District | Proserpina Prefecture
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - DC
       - date: '3135-10-01'
         faction:
           source: canon
@@ -370,25 +318,7 @@ planet:
             - IND
       - date: '3140-01-01'
         population: 756975307.0
-      - date: '3145-01-01'
-        # administration: DC | Benjamin Military District | Proserpina Prefecture
-        # administration: DC | Benjamin Military District | Proserpina Prefecture
-        # administration: DC | Benjamin Military District | Proserpina Prefecture
-        # administration: DC | Benjamin Military District | Proserpina Prefecture
-        # administration: DC | Benjamin Military District | Proserpina Prefecture
-        # administration: DC | Benjamin Military District | Proserpina Prefecture
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - DC
       - date: '3145-02-11'
-        # administration: DC | Benjamin Military District | Proserpina Prefecture
-        # administration: DC | Benjamin Military District | Proserpina Prefecture
-        # administration: DC | Benjamin Military District | Proserpina Prefecture
-        # administration: DC | Benjamin Military District | Proserpina Prefecture
-        # administration: DC | Benjamin Military District | Proserpina Prefecture
-        # administration: DC | Benjamin Military District | Proserpina Prefecture
         faction:
           source: canon
           value:

@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,17 +16,15 @@
 # affiliated with Microsoft.
 
 id: Stewart
-sucsId: 2414
+sucsId: 2413
 xcood: -119.184
 ycood: -51.936
 spectralType:
-  source: 'HB:HM'
+  source: 'Handbook: House Marik, pg. 68'
   value: G8V
-  page: 68
 primarySlot:
-  source: 'HB:HM'
+  source: 'Handbook: House Marik, pg. 68'
   value: 4
-  page: 68
 event:
   - date: '2483-07-27'
     zenithCharge: yes
@@ -99,39 +97,32 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.56
     sysPos:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 68'
       value: 4
-      page: 68
     icon: wet2
     pressure:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 68'
       value: STANDARD
-      page: 68
     atmosphere:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 68'
       value: BREATHABLE
-      page: 68
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 68'
       value: 1.0
-      page: 68
     diameter: 11877
     density: 5.916912823181
     dayLength: 20
     yearLength: 1.0
     temperature:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 68'
       value: 45
-      page: 68
     water:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 68'
       value: 81
-      page: 68
     lifeForm:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 68'
       value: MAMMAL
-      page: 68
     desc: |-
       The native vegetation of Stewart initially gave early settlers a difficult time as they were incompatible with human biology and the native species made it difficult for terran vegetation to live on the planet, forcing settlers to rely on expensive food imports. After some work hybrid of terran and native vegetation made farming possible on Stewart and removed the planet’s reliance on outside food sources. Efforts to alter the ecosystem of Stewart also revealed large deposits of minerals and ores which have made the planet wealthy.
 
@@ -142,43 +133,36 @@ planet:
       Magna Metals (Fusion engines)
     landmass:
       - name:
-          source: 'HB:HM'
+          source: 'Handbook: House Marik, pg. 68'
           value: Aberdeenshire
-          page: 68
       - name:
-          source: 'HB:HM'
+          source: 'Handbook: House Marik, pg. 68'
           value: Angus
-          page: 68
       - name:
-          source: 'HB:HM'
+          source: 'Handbook: House Marik, pg. 68'
           value: Lanarkshire
-          page: 68
         capital:
           source: canon
           value: New Endinburgh
     satellite:
       - name:
-          source: 'HB:HM'
+          source: 'Handbook: House Marik, pg. 68'
           value: Argyle
-          page: 68
         size: medium
         icon: oddmoon2
       - name:
-          source: 'HB:HM'
+          source: 'Handbook: House Marik, pg. 68'
           value: Carthage
-          page: 68
         size: large
         icon: rock12
       - name:
-          source: 'HB:HM'
+          source: 'Handbook: House Marik, pg. 68'
           value: Clyde
-          page: 68
         size: large
         icon: rock3
       - name:
-          source: 'HB:HM'
+          source: 'Handbook: House Marik, pg. 68'
           value: Leon
-          page: 68
         size: giant
         icon: rock1
     event:
@@ -193,29 +177,11 @@ planet:
         population: 53280.0
       - date: '2270-01-01'
         population: 236393.0
-      - date: '2271-01-01'
-        # administration: SC | National Capital
-        # administration: SC | National Capital
-        # administration: SC | National Capital
-        # administration: SC | National Capital
-        # administration: SC | National Capital
-        # administration: SC | National Capital
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - SC
       - date: '2280-01-01'
         population: 861401.0
       - date: '2290-01-01'
         population: 2633977.0
       - date: '2293-08-05'
-        # administration: FWL | Stewart Confederation | District Capital
-        # administration: FWL | Stewart Confederation | District Capital
-        # administration: FWL | Stewart Confederation | District Capital
-        # administration: FWL | Stewart Confederation | District Capital
-        # administration: FWL | Stewart Confederation | District Capital
-        # administration: FWL | Stewart Confederation | District Capital
         faction:
           source: canon
           value:
@@ -421,25 +387,7 @@ planet:
             - MSC
       - date: '3080-01-01'
         population: 3031812905.0
-      - date: '3081-01-01'
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
-        # administration: ROS | Prefecture VIII
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - ROS
       - date: '3081-02-22'
-        # administration: ROS | Prefecture VII
-        # administration: ROS | Prefecture VII
-        # administration: ROS | Prefecture VII
-        # administration: ROS | Prefecture VII
-        # administration: ROS | Prefecture VII
-        # administration: ROS | Prefecture VII
         faction:
           source: canon
           value:
@@ -468,12 +416,6 @@ planet:
           source: canon
           value:
             - MSC
-      - date: '3135-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '3138-06-05'
         faction:
           source: canon
@@ -481,12 +423,6 @@ planet:
             - LA
       - date: '3140-01-01'
         population: 3183434862.0
-      - date: '3145-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CWE
       - date: '3145-03-28'
         faction:
           source: canon
@@ -494,12 +430,6 @@ planet:
             - CWE
         population: 3182798239.0
       - date: '3151-04-16'
-        # administration: FWL | District Capital
-        # administration: FWL | District Capital
-        # administration: FWL | District Capital
-        # administration: FWL | District Capital
-        # administration: FWL | District Capital
-        # administration: FWL | District Capital
         faction:
           source: canon
           value:

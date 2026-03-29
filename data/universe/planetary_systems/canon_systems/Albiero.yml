@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: Albiero
-sucsId: 2883
+sucsId: 2882
 xcood: 150.446
 ycood: 356.782
 spectralType:
-  source: HB:HK
+  source: House Kurita
   value: M2IV
 primarySlot:
-  source: HB:HK
+  source: House Kurita
   value: 3
 event:
   - date: '2693-06-01'
@@ -93,7 +93,7 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.28
     sysPos:
-      source: HB:HK
+      source: House Kurita
       value: 3
     icon: dry14
     pressure:
@@ -115,9 +115,18 @@ planet:
       source: canon
       value: 12
     lifeForm:
-      source: HB:HK
+      source: House Kurita
       value: REPTILE
-    desc: Albiero is a nearly dead world whose natural resources are almost completely exhausted. Only the fact that the other worlds in the Albiero Prefecture are in even worse shape keeps this prefecture capital alive. Before it reached its current state, Albiero held vast deposits of copper and iron ore. These minerals led several mining concerns to arrive and exploit the resources. Unfortunately after the fall of the Star League the advanced mining machines weren't serviceable, and eventually broke down completely. The resulting loss of income depressed the local economy. The only group who really benefited from Albiero's state was the DCMS. The extensive mining operations left a labyrinth of tunnels under the world's surface which proved to be an excellent training facility.
+    desc: Albiero is a nearly dead world whose natural resources are almost completely
+      exhausted. Only the fact that the other worlds in the Albiero Prefecture are
+      in even worse shape keeps this prefecture capital alive. Before it reached its
+      current state, Albiero held vast deposits of copper and iron ore. These minerals
+      led several mining concerns to arrive and exploit the resources. Unfortunately
+      after the fall of the Star League the advanced mining machines weren't serviceable,
+      and eventually broke down completely. The resulting loss of income depressed
+      the local economy. The only group who really benefited from Albiero's state
+      was the DCMS. The extensive mining operations left a labyrinth of tunnels under
+      the world's surface which proved to be an excellent training facility.
     landmass:
       - name:
           source: canon
@@ -127,12 +136,6 @@ planet:
           value: Corant City
     event:
       - date: '2650-02-26'
-        # administration: DC | Pesht Military District | Coudoux Prefecture
-        # administration: DC | Pesht Military District | Coudoux Prefecture
-        # administration: DC | Pesht Military District | Coudoux Prefecture
-        # administration: DC | Pesht Military District | Coudoux Prefecture
-        # administration: DC | Pesht Military District | Coudoux Prefecture
-        # administration: DC | Pesht Military District | Coudoux Prefecture
         faction:
           source: canon
           value:
@@ -168,12 +171,6 @@ planet:
       - date: '2740-01-01'
         population: 1300300216.0
       - date: '2750-12-23'
-        # administration: DC | Pesht Military District | Coudoux Prefecture
-        # administration: DC | Pesht Military District | Coudoux Prefecture
-        # administration: DC | Pesht Military District | Coudoux Prefecture
-        # administration: DC | Pesht Military District | Coudoux Prefecture
-        # administration: DC | Pesht Military District | Coudoux Prefecture
-        # administration: DC | Pesht Military District | Coudoux Prefecture
         faction:
           source: canon
           value:
@@ -252,34 +249,12 @@ planet:
           source: canon
           value: B-B-C-D-D
       - date: '3050-01-01'
-        # administration: DC | Pesht Military District | Albiero Prefecture
-        # administration: DC | Pesht Military District | Albiero Prefecture
-        # administration: DC | Pesht Military District | Albiero Prefecture
-        # administration: DC | Pesht Military District | Albiero Prefecture
-        # administration: DC | Pesht Military District | Albiero Prefecture
         population: 283861944.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CSJ
       - date: '3050-07-01'
         faction:
           source: canon
           value:
             - CSJ
-      - date: '3059-01-01'
-        # administration: DC | Pesht Military District | Lonaconing Prefecture
-        # administration: DC | Pesht Military District | Lonaconing Prefecture
-        # administration: DC | Pesht Military District | Lonaconing Prefecture
-        # administration: DC | Pesht Military District | Lonaconing Prefecture
-        # administration: DC | Pesht Military District | Lonaconing Prefecture
-        # administration: DC | Pesht Military District | Lonaconing Prefecture
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - DC
       - date: '3059-09-15'
         faction:
           source: canon
@@ -287,12 +262,6 @@ planet:
             - DC
             - CSJ
       - date: '3059-09-18'
-        # administration: DC | Pesht Military District | Albiero Prefecture
-        # administration: DC | Pesht Military District | Albiero Prefecture
-        # administration: DC | Pesht Military District | Albiero Prefecture
-        # administration: DC | Pesht Military District | Albiero Prefecture
-        # administration: DC | Pesht Military District | Albiero Prefecture
-        # administration: DC | Pesht Military District | Albiero Prefecture
         faction:
           source: canon
           value:

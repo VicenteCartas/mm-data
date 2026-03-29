@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,17 +16,15 @@
 # affiliated with Microsoft.
 
 id: Rollis
-sucsId: 2171
+sucsId: 2170
 xcood: 150.442
 ycood: -383.425
 spectralType:
-  source: 'HB:HL'
+  source: 'Handbook: House Liao, pg. 86'
   value: F3V
-  page: 86
 primarySlot:
-  source: 'HB:HL'
+  source: 'Handbook: House Liao, pg. 86'
   value: 2
-  page: 86
 planet:
   - name: Logan
     type: TERRESTRIAL
@@ -49,58 +47,63 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 2.4
     sysPos:
-      source: 'HB:HL'
+      source: 'Handbook: House Liao, pg. 86'
       value: 2
-      page: 86
     icon: green21
     pressure:
-      source: 'HB:HL'
+      source: 'Handbook: House Liao, pg. 86'
       value: THIN
-      page: 86
     atmosphere:
-      source: 'HB:HL'
+      source: 'Handbook: House Liao, pg. 86'
       value: BREATHABLE
-      page: 86
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'HB:HL'
+      source: 'Handbook: House Liao, pg. 86'
       value: 1.02
-      page: 86
     diameter: 13912
     density: 5.152649084665
     dayLength: 18
     yearLength: 3.9
     temperature:
-      source: 'HB:HL'
+      source: 'Handbook: House Liao, pg. 86'
       value: 32
-      page: 86
     water:
-      source: 'HB:HL'
+      source: 'Handbook: House Liao, pg. 86'
       value: 56
-      page: 86
     lifeForm:
-      source: 'HB:HL'
+      source: 'Handbook: House Liao, pg. 86'
       value: PLANT
-      page: 86
-    desc: Rollis is best known as a stopping off point from the Capallen Confederation into the Periphery, though it was originally settled by the Taurians and taken by the Federated Suns for two centuries before Rollis was conquered by the Capellans in the 1st Succession War. The planet is temperate and would be quite comfortable if not for the low pressure atmosphere. Rollis is able to support enough agriculture to support its people, though there are few other natural resources and little industry. The system does not support a recharge station at either jump point, however it does have a small orbital station that allows for dropship and small craft refit and repair. The primary export form Rollis is timber, specifically wood harvested from the equatorial island of Iskandia, which is fragrant like cedar and nearly fire-resistant. Rollis is home to a Duchy RTC that trains vehicle crews and unarmored infantry. Due to the planet's low population, the RTC is able to use vast swaths of undeveloped land for training and large scale combat exercises.
+    desc: Rollis is best known as a stopping off point from the Capallen Confederation
+      into the Periphery, though it was originally settled by the Taurians and taken
+      by the Federated Suns for two centuries before Rollis was conquered by the Capellans
+      in the 1st Succession War. The planet is temperate and would be quite comfortable
+      if not for the low pressure atmosphere. Rollis is able to support enough agriculture
+      to support its people, though there are few other natural resources and little
+      industry. The system does not support a recharge station at either jump point,
+      however it does have a small orbital station that allows for dropship and small
+      craft refit and repair. The primary export form Rollis is timber, specifically
+      wood harvested from the equatorial island of Iskandia, which is fragrant like
+      cedar and nearly fire-resistant. Rollis is home to a Duchy RTC that trains vehicle
+      crews and unarmored infantry. Due to the planet's low population, the RTC is
+      able to use vast swaths of undeveloped land for training and large scale combat
+      exercises.
     landmass:
       - name:
-          source: 'OR'
+          source: 'Objective Raids: Capellan Confederation'
           value: Como
         capital:
-          source: 'OR'
+          source: 'Objective Raids: Capellan Confederation'
           value: Gastov
       - name:
-          source: 'OR'
+          source: 'Objective Raids: Capellan Confederation'
           value: Spruce
       - name:
-          source: 'OR'
+          source: 'Objective Raids: Capellan Confederation'
           value: Wright
     satellite:
       - name:
-          source: 'HB:HL'
+          source: 'Handbook: House Liao, pg. 86'
           value: Rory
-          page: 86
         size: large
         icon: rock7
     event:
@@ -170,25 +173,7 @@ planet:
             - SL
       - date: '2590-01-01'
         population: 197952007.0
-      - date: '2596-01-01'
-        # administration: FS | Capellan March | Taygeta Operational Area
-        # administration: FS | Capellan March | Taygeta Operational Area
-        # administration: FS | Capellan March | Taygeta Operational Area
-        # administration: FS | Capellan March | Taygeta Operational Area
-        # administration: FS | Capellan March | Taygeta Operational Area
-        # administration: FS | Capellan March | Taygeta Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FS
       - date: '2596-04-30'
-        # administration: FS | Capellan March | Taygeta Operational Area
-        # administration: FS | Capellan March | Taygeta Operational Area
-        # administration: FS | Capellan March | Taygeta Operational Area
-        # administration: FS | Capellan March | Taygeta Operational Area
-        # administration: FS | Capellan March | Taygeta Operational Area
-        # administration: FS | Capellan March | Taygeta Operational Area
         faction:
           source: canon
           value:
@@ -230,12 +215,6 @@ planet:
       - date: '2740-01-01'
         population: 231045414.0
       - date: '2750-05-03'
-        # administration: FS | Capellan March | Taygeta Operational Area
-        # administration: FS | Capellan March | Taygeta Operational Area
-        # administration: FS | Capellan March | Taygeta Operational Area
-        # administration: FS | Capellan March | Taygeta Operational Area
-        # administration: FS | Capellan March | Taygeta Operational Area
-        # administration: FS | Capellan March | Taygeta Operational Area
         faction:
           source: canon
           value:
@@ -254,12 +233,6 @@ planet:
       - date: '2810-01-01'
         population: 229865173.0
       - date: '2815-03-05'
-        # administration: CC | Sian Commonality | Region 12
-        # administration: CC | Sian Commonality | Region 12
-        # administration: CC | Sian Commonality | Region 12
-        # administration: CC | Sian Commonality | Region 12
-        # administration: CC | Sian Commonality | Region 12
-        # administration: CC | Sian Commonality | Region 12
         faction:
           source: canon
           value:

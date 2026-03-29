@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,17 +16,15 @@
 # affiliated with Microsoft.
 
 id: Roadside
-sucsId: 2160
+sucsId: 2159
 xcood: -185.056
 ycood: 368.82
 spectralType:
-  source: FCCW
+  source: FedCom Civil War, pg. 204
   value: M1VII
-  page: 204
 primarySlot:
-  source: FCCW
+  source: FedCom Civil War, pg. 204
   value: 3
-  page: 204
 event:
   - date: '2453-05-15'
     nadirCharge: yes
@@ -90,64 +88,55 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.35
     sysPos:
-      source: FCCW
+      source: FedCom Civil War, pg. 204
       value: 3
-      page: 204
     icon: green20
     pressure:
-      source: FCCW
+      source: FedCom Civil War, pg. 204
       value: STANDARD
-      page: 204
     atmosphere:
-      source: FCCW
+      source: FedCom Civil War, pg. 204
       value: BREATHABLE
-      page: 204
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: FCCW
+      source: FedCom Civil War, pg. 204
       value: 1.0
-      page: 204
     diameter: 14700
     density: 4.780633137201
     dayLength: 24
     yearLength: 0.7
     temperature:
-      source: FCCW
+      source: FedCom Civil War, pg. 204
       value: 40
-      page: 204
     water:
-      source: FCCW
+      source: FedCom Civil War, pg. 204
       value: 40
-      page: 204
     lifeForm:
-      source: FCCW
+      source: FedCom Civil War, pg. 204
       value: MAMMAL
-      page: 204
-    desc: Roadside is a garden world, settled in 24th century by the Lyran Commonwealth to keep up with the produce and livestock required to feed its growing population. Original colonists had to overcome a microbe infestation in the water-supply, which caused short-term intestinal problems and was dubbed “Roadkill”. The sickness was a onetime discomfort and after the first time, settlers were never sick with it again. After study, it was discovered that the microbes actually assisted settlers in becoming accustomed to the planet’s indigenous plants and animals and had other positive effects against stomach and digestive cancers.
+    desc: Roadside is a garden world, settled in 24th century by the Lyran Commonwealth
+      to keep up with the produce and livestock required to feed its growing population.
+      Original colonists had to overcome a microbe infestation in the water-supply,
+      which caused short-term intestinal problems and was dubbed “Roadkill”. The sickness
+      was a onetime discomfort and after the first time, settlers were never sick
+      with it again. After study, it was discovered that the microbes actually assisted
+      settlers in becoming accustomed to the planet’s indigenous plants and animals
+      and had other positive effects against stomach and digestive cancers.
     landmass:
       - name:
-          source: FCCW
+          source: FedCom Civil War, pg. 204
           value: Columbine
-          page: 204
         capital:
-          source: FCCW
+          source: FedCom Civil War, pg. 204
           value: Claremont
-          page: 204
     satellite:
       - name:
-          source: FCCW
+          source: FedCom Civil War, pg. 204
           value: Truk
-          page: 204
         size: large
         icon: rock11
     event:
       - date: '2442-06-14'
-        # administration: LA | Protectorate of Donegal | Coventry Province
-        # administration: LA | Protectorate of Donegal | Coventry Province
-        # administration: LA | Protectorate of Donegal | Coventry Province
-        # administration: LA | Protectorate of Donegal | Coventry Province
-        # administration: LA | Protectorate of Donegal | Coventry Province
-        # administration: LA | Protectorate of Donegal | Coventry Province
         faction:
           source: canon
           value:
@@ -288,25 +277,8 @@ planet:
       - date: '3030-01-01'
         population: 93719299.0
       - date: '3040-01-01'
-        # administration: FC | Tamar March | Blackjack Operational Area
-        # administration: FC | Tamar March | Blackjack Operational Area
-        # administration: FC | Tamar March | Blackjack Operational Area
-        # administration: FC | Tamar March | Blackjack Operational Area
-        # administration: FC | Tamar March | Blackjack Operational Area
-        # administration: FC | Tamar March | Blackjack Operational Area
         population: 94283305.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FC
       - date: '3040-01-19'
-        # administration: FC | Tamar March | Blackjack Operational Area
-        # administration: FC | Tamar March | Blackjack Operational Area
-        # administration: FC | Tamar March | Blackjack Operational Area
-        # administration: FC | Tamar March | Blackjack Operational Area
-        # administration: FC | Tamar March | Blackjack Operational Area
-        # administration: FC | Tamar March | Blackjack Operational Area
         faction:
           source: canon
           value:
@@ -316,17 +288,7 @@ planet:
           source: canon
           value: B-B-C-C-A
       - date: '3050-01-01'
-        # administration: FC | Tamar March | Blackjack Operational Area
-        # administration: FC | Tamar March | Blackjack Operational Area
-        # administration: FC | Tamar March | Blackjack Operational Area
-        # administration: FC | Tamar March | Blackjack Operational Area
-        # administration: FC | Tamar March | Blackjack Operational Area
         population: 95373821.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CJF
       - date: '3050-06-23'
         faction:
           source: canon
@@ -340,25 +302,7 @@ planet:
             - CJF
       - date: '3060-01-01'
         population: 96650766.0
-      - date: '3067-01-01'
-        # administration: LA | Coventry Province | Melissia Theater
-        # administration: LA | Coventry Province | Melissia Theater
-        # administration: LA | Coventry Province | Melissia Theater
-        # administration: LA | Coventry Province | Melissia Theater
-        # administration: LA | Coventry Province | Melissia Theater
-        # administration: LA | Coventry Province | Melissia Theater
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LA
       - date: '3067-09-06'
-        # administration: LA | Coventry Province | Melissia Theater
-        # administration: LA | Coventry Province | Melissia Theater
-        # administration: LA | Coventry Province | Melissia Theater
-        # administration: LA | Coventry Province | Melissia Theater
-        # administration: LA | Coventry Province | Melissia Theater
-        # administration: LA | Coventry Province | Melissia Theater
         faction:
           source: canon
           value:
@@ -388,12 +332,6 @@ planet:
         population: 104731940.0
       - date: '3145-01-01'
         population: 105467635.0
-      - date: '3152-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '3152-06-01'
         faction:
           source: canon

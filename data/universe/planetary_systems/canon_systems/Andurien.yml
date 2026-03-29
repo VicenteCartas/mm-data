@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -20,13 +20,11 @@ sucsId: 131
 xcood: -41.335
 ycood: -315.245
 spectralType:
-  source: 'HB:HM'
+  source: 'Handbook: House Marik, pg. 66'
   value: G0V
-  page: 66
 primarySlot:
-  source: 'HB:HM'
+  source: 'Handbook: House Marik, pg. 66'
   value: 5
-  page: 66
 event:
   - date: '2355-10-22'
     zenithCharge: yes
@@ -119,39 +117,32 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 1.76
     sysPos:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 66'
       value: 5
-      page: 66
     icon: green33
     pressure:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 66'
       value: STANDARD
-      page: 66
     atmosphere:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 66'
       value: BREATHABLE
-      page: 66
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 66'
       value: 1.2
-      page: 66
     diameter: 16682
     density: 5.055309703647
     dayLength: 20
     yearLength: 2.6
     temperature:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 66'
       value: 45
-      page: 66
     water:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 66'
       value: 65
-      page: 66
     lifeForm:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 66'
       value: AMPHIBIAN
-      page: 66
     desc: |-
       Andurien is the Capital of the Duchy of Andurien and as such suffered greatly for the Andurien Succession of the 3030s. While the planet and its infrastructure returned to previous levels, the planet was slow to recover the financial prestige it once possessed. The planet has significant industrial facilities producing a wealth of civilian and military goods. However, after the Andurien Succession, all military manufacturing was turned over to the Free Worlds League instead of being controlled by the Duchy of Andurien.
 
@@ -160,28 +151,23 @@ planet:
       Andurien Aerotech
     landmass:
       - name:
-          source: 'HB:HM'
+          source: 'Handbook: House Marik, pg. 66'
           value: Altay
-          page: 66
         capital:
-          source: 'HB:HM'
+          source: 'Handbook: House Marik, pg. 66'
           value: Jojoken
-          page: 66
       - name:
-          source: 'HB:HM'
+          source: 'Handbook: House Marik, pg. 66'
           value: Zahle
-          page: 66
     satellite:
       - name:
-          source: 'HB:HM'
+          source: 'Handbook: House Marik, pg. 66'
           value: Betic
-          page: 66
         size: medium
         icon: oddmoon1
       - name:
-          source: 'HB:HM'
+          source: 'Handbook: House Marik, pg. 66'
           value: Mulhacen
-          page: 66
         size: medium
         icon: rock6
     event:
@@ -232,12 +218,6 @@ planet:
         population: 1431532249.0
       - date: '2360-01-01'
         population: 1709081302.0
-      - date: '2366-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - SiS
       - date: '2367-07-01'
         faction:
           source: canon
@@ -291,12 +271,6 @@ planet:
       - date: '2570-01-01'
         population: 5467590918.0
       - date: '2570-07-09'
-        # administration: CC | Andurien Commonality | Region 2
-        # administration: CC | Andurien Commonality | Region 2
-        # administration: CC | Andurien Commonality | Region 2
-        # administration: CC | Andurien Commonality | Region 2
-        # administration: CC | Andurien Commonality | Region 2
-        # administration: CC | Andurien Commonality | Region 2
         faction:
           source: canon
           value:
@@ -352,12 +326,6 @@ planet:
       - date: '2780-01-01'
         population: 4889722958.0
       - date: '2789-05-26'
-        # administration: FWL | Duchy of Andurien | District Capital
-        # administration: FWL | Duchy of Andurien | District Capital
-        # administration: FWL | Duchy of Andurien | District Capital
-        # administration: FWL | Duchy of Andurien | District Capital
-        # administration: FWL | Duchy of Andurien | District Capital
-        # administration: FWL | Duchy of Andurien | District Capital
         faction:
           source: canon
           value:
@@ -420,18 +388,7 @@ planet:
           value: 4950000000.0
         socioIndustrial: B-B-C-B-D
       - date: '3030-01-01'
-        # administration: DA | National Capital
-        # administration: DA | National Capital
-        # administration: DA | National Capital
-        # administration: DA | National Capital
-        # administration: DA | National Capital
-        # administration: DA | National Capital
         population: 4833475334.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - DA
       - date: '3030-09-11'
         faction:
           source: canon
@@ -445,25 +402,7 @@ planet:
           value:
             - FWL
             - DA
-      - date: '3040-01-01'
-        # administration: FWL | Duchy of Andurien | District Capital
-        # administration: FWL | Duchy of Andurien | District Capital
-        # administration: FWL | Duchy of Andurien | District Capital
-        # administration: FWL | Duchy of Andurien | District Capital
-        # administration: FWL | Duchy of Andurien | District Capital
-        # administration: FWL | Duchy of Andurien | District Capital
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FWL
       - date: '3040-12-18'
-        # administration: FWL | Duchy of Andurien | District Capital
-        # administration: FWL | Duchy of Andurien | District Capital
-        # administration: FWL | Duchy of Andurien | District Capital
-        # administration: FWL | Duchy of Andurien | District Capital
-        # administration: FWL | Duchy of Andurien | District Capital
-        # administration: FWL | Duchy of Andurien | District Capital
         faction:
           source: canon
           value:
@@ -482,25 +421,7 @@ planet:
           value: 4575000000.0
       - date: '3070-01-01'
         population: 4586910477.0
-      - date: '3075-01-01'
-        # administration: DA | National Capital
-        # administration: DA | National Capital
-        # administration: DA | National Capital
-        # administration: DA | National Capital
-        # administration: DA | National Capital
-        # administration: DA | National Capital
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - DA
       - date: '3079-08-13'
-        # administration: DA | National Capital
-        # administration: DA | National Capital
-        # administration: DA | National Capital
-        # administration: DA | National Capital
-        # administration: DA | National Capital
-        # administration: DA | National Capital
         faction:
           source: canon
           value:

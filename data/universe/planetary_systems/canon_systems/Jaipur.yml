@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: Jaipur
-sucsId: 1231
+sucsId: 1230
 xcood: 175.508
 ycood: -280.246
 spectralType:
-  source: HB:HD
+  source: House Davion
   value: F1V
 primarySlot:
-  source: HB:HD
+  source: House Davion
   value: 4
 event:
   - date: '2559-10-20'
@@ -86,7 +86,7 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 2.56
     sysPos:
-      source: HB:HD
+      source: House Davion
       value: 4
     icon: green22
     pressure: STANDARD
@@ -100,13 +100,18 @@ planet:
     temperature: 32
     water: 44
     lifeForm:
-      source: HB:HD
+      source: House Davion
       value: MAMMAL
-    desc: Jaipur is a reasonably comfortable planet with enough resources to be successful. The planet is on the dry side but is not quite arid and contains sufficient arable land, with agriculture being the primary industry on Jaipur. In the early 31st century efforts were made to switch the planet’s economy from agriculture to heavy industry, unfortunately it was unlikely that the planet’s meager deposits of ores and other natural resources could sustain the factories that were built.
+    desc: Jaipur is a reasonably comfortable planet with enough resources to be successful.
+      The planet is on the dry side but is not quite arid and contains sufficient
+      arable land, with agriculture being the primary industry on Jaipur. In the early
+      31st century efforts were made to switch the planet’s economy from agriculture
+      to heavy industry, unfortunately it was unlikely that the planet’s meager deposits
+      of ores and other natural resources could sustain the factories that were built.
     landmass:
       - name: New Jalore A
         capital:
-          source: HB:HD
+          source: House Davion
           value: New Amritsar
       - name: New Jalore B
       - name: New Jalore C
@@ -133,12 +138,6 @@ planet:
       - date: '2340-01-01'
         population: 13720664.0
       - date: '2350-01-24'
-        # administration: FS | Capellan March | Taygeta Operational Area
-        # administration: FS | Capellan March | Taygeta Operational Area
-        # administration: FS | Capellan March | Taygeta Operational Area
-        # administration: FS | Capellan March | Taygeta Operational Area
-        # administration: FS | Capellan March | Taygeta Operational Area
-        # administration: FS | Capellan March | Taygeta Operational Area
         faction:
           source: canon
           value:
@@ -238,12 +237,6 @@ planet:
       - date: '2780-01-01'
         population: 551352639.0
       - date: '2790-12-05'
-        # administration: FS | Capellan March | Taygeta Operational Area
-        # administration: FS | Capellan March | Taygeta Operational Area
-        # administration: FS | Capellan March | Taygeta Operational Area
-        # administration: FS | Capellan March | Taygeta Operational Area
-        # administration: FS | Capellan March | Taygeta Operational Area
-        # administration: FS | Capellan March | Taygeta Operational Area
         faction:
           source: canon
           value:
@@ -302,25 +295,8 @@ planet:
       - date: '3030-01-01'
         population: 423120939.0
       - date: '3040-01-01'
-        # administration: FC | Capellan March | Taygeta Operational Area
-        # administration: FC | Capellan March | Taygeta Operational Area
-        # administration: FC | Capellan March | Taygeta Operational Area
-        # administration: FC | Capellan March | Taygeta Operational Area
-        # administration: FC | Capellan March | Taygeta Operational Area
-        # administration: FC | Capellan March | Taygeta Operational Area
         population: 426818151.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FC
       - date: '3040-01-19'
-        # administration: FC | Capellan March | Taygeta Operational Area
-        # administration: FC | Capellan March | Taygeta Operational Area
-        # administration: FC | Capellan March | Taygeta Operational Area
-        # administration: FC | Capellan March | Taygeta Operational Area
-        # administration: FC | Capellan March | Taygeta Operational Area
-        # administration: FC | Capellan March | Taygeta Operational Area
         faction:
           source: canon
           value:
@@ -331,25 +307,7 @@ planet:
         population: 430633787.0
       - date: '3060-01-01'
         population: 434744302.0
-      - date: '3067-01-01'
-        # administration: FS | Capellan March | Taygeta Operational Area
-        # administration: FS | Capellan March | Taygeta Operational Area
-        # administration: FS | Capellan March | Taygeta Operational Area
-        # administration: FS | Capellan March | Taygeta Operational Area
-        # administration: FS | Capellan March | Taygeta Operational Area
-        # administration: FS | Capellan March | Taygeta Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FS
       - date: '3067-04-20'
-        # administration: FS | Capellan March | Taygeta Operational Area
-        # administration: FS | Capellan March | Taygeta Operational Area
-        # administration: FS | Capellan March | Taygeta Operational Area
-        # administration: FS | Capellan March | Taygeta Operational Area
-        # administration: FS | Capellan March | Taygeta Operational Area
-        # administration: FS | Capellan March | Taygeta Operational Area
         faction:
           source: canon
           value:
@@ -376,18 +334,6 @@ planet:
           value: X
       - date: '3140-01-01'
         population: 472793182.0
-      - date: '3145-01-01'
-        # administration: CC | Sian Commonality | Region 13
-        # administration: CC | Sian Commonality | Region 13
-        # administration: CC | Sian Commonality | Region 13
-        # administration: CC | Sian Commonality | Region 13
-        # administration: CC | Sian Commonality | Region 13
-        # administration: CC | Sian Commonality | Region 13
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CC
       - date: '3145-09-03'
         faction:
           source: canon
@@ -395,12 +341,6 @@ planet:
             - CC
         population: 473644976.0
       - date: '3151-01-01'
-        # administration: FS | Capellan March | Sirdar Operational Area
-        # administration: FS | Capellan March | Sirdar Operational Area
-        # administration: FS | Capellan March | Sirdar Operational Area
-        # administration: FS | Capellan March | Sirdar Operational Area
-        # administration: FS | Capellan March | Sirdar Operational Area
-        # administration: FS | Capellan March | Sirdar Operational Area
         faction:
           source: sucs
           value:

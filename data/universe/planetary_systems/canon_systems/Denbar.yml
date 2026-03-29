@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -20,13 +20,11 @@ sucsId: 687
 xcood: 69.007
 ycood: -235.248
 spectralType:
-  source: 'HB:HL'
+  source: 'Handbook: House Liao, pg. 82'
   value: M2IV
-  page: 82
 primarySlot:
-  source: 'HB:HL'
+  source: 'Handbook: House Liao, pg. 82'
   value: 8
-  page: 82
 event:
   - date: '2350-08-29'
     zenithCharge: yes
@@ -167,58 +165,50 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.28
     sysPos:
-      source: 'HB:HL'
+      source: 'Handbook: House Liao, pg. 82'
       value: 8
-      page: 82
     icon: green33
     pressure:
-      source: 'HB:HL'
+      source: 'Handbook: House Liao, pg. 82'
       value: STANDARD
-      page: 82
     atmosphere:
-      source: 'HB:HL'
+      source: 'Handbook: House Liao, pg. 82'
       value: BREATHABLE
-      page: 82
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'HB:HL'
+      source: 'Handbook: House Liao, pg. 82'
       value: 0.98
-      page: 82
     diameter: 12056
     density: 5.712759478461
     dayLength: 20
     yearLength: 0.6
     temperature:
-      source: 'HB:HL'
+      source: 'Handbook: House Liao, pg. 82'
       value: 32
-      page: 82
     water:
-      source: 'HB:HL'
+      source: 'Handbook: House Liao, pg. 82'
       value: 67
-      page: 82
     lifeForm:
-      source: 'HB:HL'
+      source: 'Handbook: House Liao, pg. 82'
       value: PLANT
-      page: 82
     desc: |-
       Denbar has been part of the Capellan Confederation for most of its history, however it was not actually settled until the early 31st Century. Comstar exploration prior to the settlement discovered the site of a lost Star League expedition from the mid-27th century. Further investigation determined that the expedition had been investigating a mysterious signal originating from the planet. Official records indicate that Denbar has never had a permanent settlement and no trace of transmission equipment was ever found. Comstar uncovered the salvageable wreckage of two large Dropships and assorted heavy machinery near the north pole, but the remains of the expedition crew were never recovered.
 
       The Confederation’s eventual settlement was originally little more than a permanent base for military garrison due to the planet's strategic location but population soon expanded with refugees from the 4th Succession War.
     landmass:
       - name:
-          source: 'OR'
+          source: 'Objective Raids: Capellan Confederation'
           value: Bellhaven
       - name:
-          source: 'OR'
+          source: 'Objective Raids: Capellan Confederation'
           value: Lothian
         capital:
-          source: 'OR'
+          source: 'Objective Raids: Capellan Confederation'
           value: Barns
     satellite:
       - name:
-          source: 'HB:HL'
+          source: 'Handbook: House Liao, pg. 82'
           value: Kenilworth
-          page: 82
         size: large
         icon: rock10
     event:
@@ -253,19 +243,7 @@ planet:
         population: 154998494.0
       - date: '2360-01-01'
         population: 209016049.0
-      - date: '2366-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - SIML
       - date: '2367-07-01'
-        # administration: CC | St. Ives Commonality | Region 1
-        # administration: CC | St. Ives Commonality | Region 1
-        # administration: CC | St. Ives Commonality | Region 1
-        # administration: CC | St. Ives Commonality | Region 1
-        # administration: CC | St. Ives Commonality | Region 1
-        # administration: CC | St. Ives Commonality | Region 1
         faction:
           source: canon
           value:
@@ -413,25 +391,7 @@ planet:
         population: 1392905609.0
       - date: '3029-01-01'
         socioIndustrial: D-D-D-F-D
-      - date: '3030-01-01'
-        # administration: SIC | Region 1
-        # administration: SIC | Region 1
-        # administration: SIC | Region 1
-        # administration: SIC | Region 1
-        # administration: SIC | Region 1
-        # administration: SIC | Region 1
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - SIC
       - date: '3030-02-25'
-        # administration: SIC | Region 1
-        # administration: SIC | Region 1
-        # administration: SIC | Region 1
-        # administration: SIC | Region 1
-        # administration: SIC | Region 1
-        # administration: SIC | Region 1
         faction:
           source: canon
           value:
@@ -448,12 +408,6 @@ planet:
       - date: '3060-01-01'
         population: 1425998213.0
       - date: '3062-10-09'
-        # administration: CC | St. Ives Commonality | Region 1
-        # administration: CC | St. Ives Commonality | Region 1
-        # administration: CC | St. Ives Commonality | Region 1
-        # administration: CC | St. Ives Commonality | Region 1
-        # administration: CC | St. Ives Commonality | Region 1
-        # administration: CC | St. Ives Commonality | Region 1
         faction:
           source: canon
           value:
@@ -474,25 +428,7 @@ planet:
           source: canon
           value:
             - KP
-      - date: '3079-01-01'
-        # administration: CC | St. Ives Commonality | Region 1
-        # administration: CC | St. Ives Commonality | Region 1
-        # administration: CC | St. Ives Commonality | Region 1
-        # administration: CC | St. Ives Commonality | Region 1
-        # administration: CC | St. Ives Commonality | Region 1
-        # administration: CC | St. Ives Commonality | Region 1
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CC
       - date: '3079-07-01'
-        # administration: CC | St. Ives Commonality | Region 1
-        # administration: CC | St. Ives Commonality | Region 1
-        # administration: CC | St. Ives Commonality | Region 1
-        # administration: CC | St. Ives Commonality | Region 1
-        # administration: CC | St. Ives Commonality | Region 1
-        # administration: CC | St. Ives Commonality | Region 1
         faction:
           source: canon
           value:

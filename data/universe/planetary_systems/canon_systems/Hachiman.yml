@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: Hachiman
-sucsId: 1028
+sucsId: 1027
 xcood: 252.799
 ycood: 152.204
 spectralType:
-  source: HB:HK
+  source: House Kurita
   value: G8IV
 primarySlot:
-  source: HB:HK
+  source: House Kurita
   value: 4
 event:
   - date: '2358-02-17'
@@ -88,7 +88,7 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 1.28
     sysPos:
-      source: HB:HK
+      source: House Kurita
       value: 4
     icon: green6
     pressure:
@@ -110,7 +110,7 @@ planet:
       source: canon
       value: 70
     lifeForm:
-      source: HB:HK
+      source: House Kurita
       value: MAMMAL
     desc: |-
       Hachiman is a rare planet in that it has comfortable living conditions and is blessed with an abundance of natural resources, two attributes that have made the planet attractive to both settlers and corporations. As of the 31st century Hachiman was the center of the Draconis Combine’s computer and advanced electronics industry as the headquarters of Hachiman Taro Electronics and Tanadi Computers, which makes its home in the planetary capital of Masamori.
@@ -171,12 +171,6 @@ planet:
         population: 34847022.0
       - date: '2340-01-01'
         population: 72010677.0
-      - date: '2341-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '2350-01-01'
         population: 134370089.0
       - date: '2360-01-01'
@@ -224,18 +218,6 @@ planet:
         population: 5564207517.0
       - date: '2570-01-01'
         population: 5630137615.0
-      - date: '2571-01-01'
-        # administration: DC | Galedon Military District | Oshika Prefecture
-        # administration: DC | Galedon Military District | Oshika Prefecture
-        # administration: DC | Galedon Military District | Oshika Prefecture
-        # administration: DC | Galedon Military District | Oshika Prefecture
-        # administration: DC | Galedon Military District | Oshika Prefecture
-        # administration: DC | Galedon Military District | Oshika Prefecture
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - DC
       - date: '2580-01-01'
         population: 5688482644.0
       - date: '2590-01-01'

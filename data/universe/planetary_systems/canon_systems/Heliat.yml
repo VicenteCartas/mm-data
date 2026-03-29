@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Heliat
-sucsId: 1085
+sucsId: 1084
 xcood: 124.233
 ycood: -485.739
 spectralType:
@@ -90,12 +90,6 @@ planet:
       - name: North Morgan
     event:
       - date: '2621-12-18'
-        # administration: TC | Brinton Union
-        # administration: TC | Brinton Union
-        # administration: TC | Brinton Union
-        # administration: TC | Brinton Union
-        # administration: TC | Brinton Union
-        # administration: TC | Brinton Union
         faction:
           source: canon
           value:
@@ -146,18 +140,6 @@ planet:
           source: canon
           value:
             - IND
-      - date: '2821-01-01'
-        # administration: TC | Brinton Union
-        # administration: TC | Brinton Union
-        # administration: TC | Brinton Union
-        # administration: TC | Brinton Union
-        # administration: TC | Brinton Union
-        # administration: TC | Brinton Union
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - TC
       - date: '2959-01-01'
         faction:
           source: canon
@@ -168,12 +150,6 @@ planet:
           source: This is the earliest the directorate could have taken over
           value:
             - ARD
-      - date: '3025-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - ARC
       - date: '3026-01-01'
         faction:
           source: canon
@@ -185,18 +161,11 @@ planet:
         socioIndustrial:
           source: canon
           value: D-D-A-C-A
-      - date: '3030-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - ABN
       - date: '3151-01-01'
         faction:
           source: sucs
           value:
             - ABN
-    desc: Heliat is a pleasant agricultural world but a backwater due to its position away from all major trade routes. High atmospheric moisture makes it viable for farming, and most of its fifteen million inhabitants are engaged in agriculture or support services. The sole city, Nuevo Vaticano, is a coastal equatorial settlement surrounding the single spaceport. The isolated residents have developed idiosyncratic speech patterns mixing Urdu, Spanish, and English, along with an offshoot branch of the Catholic Church with their own pontiff and distinct Bible translation.
   - name: C4C-1 Belt
     type: ASTEROID_BELT
     orbitalDist: 0.3

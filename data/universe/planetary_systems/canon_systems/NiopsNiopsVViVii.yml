@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,17 +16,15 @@
 # affiliated with Microsoft.
 
 id: Niops (Niops V, VI, VII)
-sucsId: 1876
+sucsId: 1875
 xcood: -374.013
 ycood: -263.173
 spectralType:
-  source: Per1e
+  source: Periphery (1ed), pg. 139
   value: M5V
-  page: 139
 primarySlot:
-  source: Per1e
+  source: Periphery (1ed), pg. 139
   value: 7
-  page: 139
 planet:
   - name: Niops I
     type: GIANT_TERRESTRIAL
@@ -143,9 +141,8 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.08
     sysPos:
-      source: Per1e
+      source: Periphery (1ed), pg. 139
       value: 7
-      page: 139
     icon: green57
     pressure:
       source: canon
@@ -162,10 +159,30 @@ planet:
       value: 20
     water: 46
     lifeForm:
-      source: Per1e
+      source: Periphery (1ed), pg. 139
       value: FISH
-      page: 139
-    desc: "The Niops Association was originally a self sufficient research facility designed by the Star League to maintain a multi-century study of the system's dying star. As part of the self suficiency Niops required facilities for entire families, as well as an ability to produce their own goods and food. They were so self sufficient that during the Amaris Coup, Niops was forgotten by the Star League, even as the continued to send reports.\n\nIn the 2800s Capellan refugees fleeing the early Succession Wars landed on Niops and filled the scientists in on what was going on in the Inner Sphere. Niops decided the safest course was to cut off any remaining contact with the rest of the Inner Sphere and continued with their research. The refugees became a source of unskilled labor to take over menial jobs. Eventually the Association was formed from the bond between the ruling scientists and the unskilled laborers. The original scientific outpost was located on Niops VII but Niops V and VI were colonized when additional farmland was needed to feed the expanded population.\n\nNiops VII is a cold planet with access to sufficient resources to keep the Association's original settlement supplied. However, the addition of refugees from the Inner Sphere resulted in the settlement of other planets in the system.\n\nNiops V and VI were settled primarily to expand the available resources to the Niops Association when it became difficult for Niops VII to supply all the inhabitants. Niops V and VI are primarily sites for agriculture and mineral extraction. Niops VI is slightly warmer than Niops VII (25C equatorial temperature) and Niops V is warmer still (30C equatorial temperature).\n\t\t"
+    desc: "The Niops Association was originally a self sufficient research facility
+      designed by the Star League to maintain a multi-century study of the system's
+      dying star. As part of the self suficiency Niops required facilities for entire
+      families, as well as an ability to produce their own goods and food. They were
+      so self sufficient that during the Amaris Coup, Niops was forgotten by the Star
+      League, even as the continued to send reports.\n\nIn the 2800s Capellan refugees
+      fleeing the early Succession Wars landed on Niops and filled the scientists
+      in on what was going on in the Inner Sphere. Niops decided the safest course
+      was to cut off any remaining contact with the rest of the Inner Sphere and continued
+      with their research. The refugees became a source of unskilled labor to take
+      over menial jobs. Eventually the Association was formed from the bond between
+      the ruling scientists and the unskilled laborers. The original scientific outpost
+      was located on Niops VII but Niops V and VI were colonized when additional farmland
+      was needed to feed the expanded population.\n\nNiops VII is a cold planet with
+      access to sufficient resources to keep the Association's original settlement
+      supplied. However, the addition of refugees from the Inner Sphere resulted in
+      the settlement of other planets in the system.\n\nNiops V and VI were settled
+      primarily to expand the available resources to the Niops Association when it
+      became difficult for Niops VII to supply all the inhabitants. Niops V and VI
+      are primarily sites for agriculture and mineral extraction. Niops VI is slightly
+      warmer than Niops VII (25C equatorial temperature) and Niops V is warmer still
+      (30C equatorial temperature).\n\t\t"
     landmass:
       - name: Collegeville
         capital: Old Seiberling City
@@ -207,11 +224,6 @@ planet:
         population: 176108182.0
       - date: '2750-01-01'
         population: 179163027.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '2760-01-01'
         population: 180292473.0
       - date: '2770-01-01'

@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,17 +16,15 @@
 # affiliated with Microsoft.
 
 id: Hamar
-sucsId: 3098
+sucsId: 3135
 xcood: 591.896
 ycood: 495.13
 spectralType:
-  source: ISP
+  source: Interstellar Players, pg. 110
   value: K6V
-  page: 110
 primarySlot:
-  source: ISP
+  source: Interstellar Players, pg. 110
   value: 7
-  page: 110
 event:
   - date: '2511-07-30'
     zenithCharge: yes
@@ -142,37 +140,40 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.24
     sysPos:
-      source: ISP
+      source: Interstellar Players, pg. 110
       value: 7
-      page: 110
     icon: wet8
     pressure:
-      source: ISP
+      source: Interstellar Players, pg. 110
       value: STANDARD
-      page: 110
     atmosphere: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: ISP
+      source: Interstellar Players, pg. 110
       value: 0.88
-      page: 110
     diameter: 13276
     density: 4.658324889603
     dayLength: 19
     yearLength: 0.8
     temperature:
-      source: ISP
+      source: Interstellar Players, pg. 110
       value: 25
-      page: 110
     water:
-      source: ISP
+      source: Interstellar Players, pg. 110
       value: 81
-      page: 110
     lifeForm:
-      source: ISP
+      source: Interstellar Players, pg. 110
       value: MAMMAL
-      page: 110
-    desc: Hamar is a planet split. The planet itself is icy and mostly desolate, it is made liveable by a series of volcanoes that feed the dual communities present on planet. In the ‘uplands’ on the volcanoes the communities secure a living by mining the vast minerals and gems deposits. Unfortunately the area is inhospitable and requires artificial aid, such as re-breathers to live there. The other communities on Hamar are represented in the ‘lowlands’ at the bases of the volcanoes. These communities are more comfortable to live in and manage to farm the fertile volcanic fields so that Hamar is self sufficient. While the communities in the lowlands and uplands are always trading, the various families in the communities maintain several long standing fueds.
+    desc: Hamar is a planet split. The planet itself is icy and mostly desolate, it
+      is made liveable by a series of volcanoes that feed the dual communities present
+      on planet. In the ‘uplands’ on the volcanoes the communities secure a living
+      by mining the vast minerals and gems deposits. Unfortunately the area is inhospitable
+      and requires artificial aid, such as re-breathers to live there. The other communities
+      on Hamar are represented in the ‘lowlands’ at the bases of the volcanoes. These
+      communities are more comfortable to live in and manage to farm the fertile volcanic
+      fields so that Hamar is self sufficient. While the communities in the lowlands
+      and uplands are always trading, the various families in the communities maintain
+      several long standing fueds.
     landmass:
       - name: Gjelstad
         capital: Heiberg's Planet City
@@ -180,9 +181,8 @@ planet:
       - name: Tayyib
     satellite:
       - name:
-          source: ISP
+          source: Interstellar Players, pg. 110
           value: Jotunheim
-          page: 110
         size: medium
         icon: rock10
     event:

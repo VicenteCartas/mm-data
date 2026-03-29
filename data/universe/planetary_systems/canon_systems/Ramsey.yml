@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,13 +16,12 @@
 # affiliated with Microsoft.
 
 id: Ramsey
-sucsId: 2989
+sucsId: 3027
 xcood: -402.692
 ycood: 1025.944
 spectralType:
-  source: EC
+  source: Explorer Corps, pg. 53
   value: G8V
-  page: 53
 primarySlot: 3
 event:
   - date: '3049-08-15'
@@ -104,12 +103,6 @@ planet:
       - name: G41
       - name: G42
     event:
-      - date: '3049-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CSV
       - date: '3049-03-21'
         faction:
           source: canon
@@ -134,18 +127,6 @@ planet:
         hpg: X
         population: 0.0
         socioIndustrial: X-X-X-X-X
-      - date: '3067-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CSV
-      - date: '3075-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - ABN
   - name: AU-4
     type: DWARF_TERRESTRIAL
     orbitalDist: 1.28

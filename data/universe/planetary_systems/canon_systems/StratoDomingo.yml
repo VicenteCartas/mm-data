@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,16 +16,15 @@
 # affiliated with Microsoft.
 
 id: Strato Domingo
-sucsId: 2963
+sucsId: 2962
 xcood: 10.796
 ycood: 1880.658
 spectralType:
   source: canon
   value: K6II
 primarySlot:
-  source: WoK
+  source: Warriors of Kerensky, pg. 112
   value: 2
-  page: 112
 event:
   - date: '2810-10-10'
     nadirCharge: yes
@@ -55,39 +54,32 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.42
     sysPos:
-      source: WoK
+      source: Warriors of Kerensky, pg. 112
       value: 2
-      page: 112
     icon: green3
     pressure:
-      source: WoK
+      source: Warriors of Kerensky, pg. 112
       value: HIGH
-      page: 112
     atmosphere:
-      source: WoK
+      source: Warriors of Kerensky, pg. 112
       value: TAINTED_POISON
-      page: 112
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: WoK
+      source: Warriors of Kerensky, pg. 112
       value: 1.2
-      page: 112
     diameter: 14702
     density: 5.736191814268
     dayLength: 20
     yearLength: 0.8
     temperature:
-      source: WoK
+      source: Warriors of Kerensky, pg. 112
       value: 35
-      page: 112
     water:
-      source: WoK
+      source: Warriors of Kerensky, pg. 112
       value: 70
-      page: 112
     lifeForm:
-      source: WoK
+      source: Warriors of Kerensky, pg. 112
       value: BIRD
-      page: 112
     desc: No description available.
     smallMoons: 2
     landmass:
@@ -120,12 +112,6 @@ planet:
         population: 4940008.0
       - date: '2860-01-01'
         population: 8278778.0
-      - date: '2864-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CLAN
       - date: '2864-11-03'
         faction:
           source: canon
@@ -181,24 +167,12 @@ planet:
           value:
             - CSA
             - CHH
-      - date: '3075-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CLAN
       - date: '3075-06-01'
         faction:
           source: canon
           value:
             - CSA
             - CSL
-      - date: '3079-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CLAN
       - date: '3080-01-01'
         population: 36252884.0
       - date: '3085-03-27'

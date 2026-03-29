@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Waldorff
-sucsId: 2715
+sucsId: 2714
 xcood: -131.829
 ycood: 358.739
 spectralType:
@@ -123,7 +123,15 @@ planet:
     lifeForm:
       source: canon
       value: REPTILE
-    desc: For most of its history, Waldorff was a fairly unimportant planet in the Lyran Commonwealth, with a relatively comfortable atmosphere and climate and moderate resources and industry, including a sizeable munitions factory, though the only abundant resource on planet was agriculture. During Operation Revival, Waldorff was captured by Clan Jade Falcon, who were required to share the planet with the Steel Vipers by the IlKhan. The Steel Vipers made the planet their Inner Sphere capital and began upgrading the infrastructure and manufacturing on the world but eventually lost Waldorff and the rest of their Inner Sphere holdings to the Falcons.
+    desc: For most of its history, Waldorff was a fairly unimportant planet in the
+      Lyran Commonwealth, with a relatively comfortable atmosphere and climate and
+      moderate resources and industry, including a sizeable munitions factory, though
+      the only abundant resource on planet was agriculture. During Operation Revival,
+      Waldorff was captured by Clan Jade Falcon, who were required to share the planet
+      with the Steel Vipers by the IlKhan. The Steel Vipers made the planet their
+      Inner Sphere capital and began upgrading the infrastructure and manufacturing
+      on the world but eventually lost Waldorff and the rest of their Inner Sphere
+      holdings to the Falcons.
     landmass:
       - name:
           source: canon
@@ -146,12 +154,6 @@ planet:
         icon: oddmoon2
     event:
       - date: '2430-02-18'
-        # administration: LA | Tamar Pact | Trellshire
-        # administration: LA | Tamar Pact | Trellshire
-        # administration: LA | Tamar Pact | Trellshire
-        # administration: LA | Tamar Pact | Trellshire
-        # administration: LA | Tamar Pact | Trellshire
-        # administration: LA | Tamar Pact | Trellshire
         faction:
           source: canon
           value:
@@ -291,25 +293,8 @@ planet:
       - date: '3030-01-01'
         population: 99464230.0
       - date: '3040-01-01'
-        # administration: FC | Tamar March | Blackjack Operational Area
-        # administration: FC | Tamar March | Blackjack Operational Area
-        # administration: FC | Tamar March | Blackjack Operational Area
-        # administration: FC | Tamar March | Blackjack Operational Area
-        # administration: FC | Tamar March | Blackjack Operational Area
-        # administration: FC | Tamar March | Blackjack Operational Area
         population: 100604610.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FC
       - date: '3040-01-19'
-        # administration: FC | Tamar March | Blackjack Operational Area
-        # administration: FC | Tamar March | Blackjack Operational Area
-        # administration: FC | Tamar March | Blackjack Operational Area
-        # administration: FC | Tamar March | Blackjack Operational Area
-        # administration: FC | Tamar March | Blackjack Operational Area
-        # administration: FC | Tamar March | Blackjack Operational Area
         faction:
           source: canon
           value:
@@ -319,17 +304,7 @@ planet:
           source: canon
           value: B-B-C-C-B
       - date: '3050-01-01'
-        # administration: FC | Tamar March | Blackjack Operational Area
-        # administration: FC | Tamar March | Blackjack Operational Area
-        # administration: FC | Tamar March | Blackjack Operational Area
-        # administration: FC | Tamar March | Blackjack Operational Area
-        # administration: FC | Tamar March | Blackjack Operational Area
         population: 101992378.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CJF
       - date: '3050-06-28'
         faction:
           source: canon
@@ -387,12 +362,6 @@ planet:
         population: 111686751.0
       - date: '3145-01-01'
         population: 111932732.0
-      - date: '3151-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - AML
       - date: '3151-07-20'
         faction:
           source: canon

@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Malador Cluster
-sucsId: 3019
+sucsId: 3057
 xcood: -1045.933
 ycood: -381.236
 spectralType: K2V
@@ -49,12 +49,6 @@ planet:
         size: large
         icon: rock14
     event:
-      - date: '3095-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '3095-10-09'
         faction:
           source: canon
@@ -82,7 +76,8 @@ planet:
     icon: badwater33
     pressure: STANDARD
     atmosphere: TOXIC_POISON
-    composition: Methane and Carbon Dioxide, plus trace amounts of Carbon Dioxide and Hydrogen Sulfide
+    composition: Methane and Carbon Dioxide, plus trace amounts of Carbon Dioxide
+      and Hydrogen Sulfide
     gravity: 0.59
     diameter: 6500
     density: 6.3337

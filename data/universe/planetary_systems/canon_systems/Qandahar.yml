@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: Qandahar
-sucsId: 2086
+sucsId: 2085
 xcood: 317.971
 ycood: 358.116
 spectralType:
-  source: HB:HK
+  source: House Kurita
   value: G0IV
 primarySlot:
-  source: HB:HK
+  source: House Kurita
   value: 3
 event:
   - date: '2700-12-21'
@@ -69,7 +69,7 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 3.08
     sysPos:
-      source: HB:HK
+      source: House Kurita
       value: 3
     icon: green52
     pressure:
@@ -91,16 +91,29 @@ planet:
       source: canon
       value: 71
     lifeForm:
-      source: HB:HK
+      source: House Kurita
       value: MAMMAL
-    desc: Qandahar was settled for its vast natural resources. Unfortunately, the early settlers did not restrain the output of their factories and as a result the ecosystem of Qandahar eventually collapsed. The largely Arab population has frequently clashed with the Combine administrators, trying in a vain plea to clean up the world's pollution. The toxic pollution was so bad that by 3025 50% of the native lifeforms were extinct. The only organisms that could successfully live outside the domed cities were the Toxic Life Forms. Developed on Terra in the mid 22nd century, these organisms consumed and digested toxic waste. In the early 31st century a small underground movement named the "Holy Struggle" attempted to shut down the Dow Nexus Fusion Products factories because of unsafe working conditions for their employees. The struggle became bloody. Though the ISF had several informers and agents in place to destroy the Holy Struggle they never stepped in because of orders from the Coordinator himself, to allow the movement to chastise Dow Nexus.
+    desc: Qandahar was settled for its vast natural resources. Unfortunately, the
+      early settlers did not restrain the output of their factories and as a result
+      the ecosystem of Qandahar eventually collapsed. The largely Arab population
+      has frequently clashed with the Combine administrators, trying in a vain plea
+      to clean up the world's pollution. The toxic pollution was so bad that by 3025
+      50% of the native lifeforms were extinct. The only organisms that could successfully
+      live outside the domed cities were the Toxic Life Forms. Developed on Terra
+      in the mid 22nd century, these organisms consumed and digested toxic waste.
+      In the early 31st century a small underground movement named the "Holy Struggle"
+      attempted to shut down the Dow Nexus Fusion Products factories because of unsafe
+      working conditions for their employees. The struggle became bloody. Though the
+      ISF had several informers and agents in place to destroy the Holy Struggle they
+      never stepped in because of orders from the Coordinator himself, to allow the
+      movement to chastise Dow Nexus.
     smallMoons: 3
     landmass:
       - name:
           source: canon
           value: Cordell
         capital:
-          source: HB:HK
+          source: House Kurita
           value: Fair Weather
       - name:
           source: canon
@@ -110,12 +123,6 @@ planet:
           value: Bandeau
     event:
       - date: '2673-01-13'
-        # administration: DC | Pesht Military District | Pusht-i-rud Prefecture
-        # administration: DC | Pesht Military District | Pusht-i-rud Prefecture
-        # administration: DC | Pesht Military District | Pusht-i-rud Prefecture
-        # administration: DC | Pesht Military District | Pusht-i-rud Prefecture
-        # administration: DC | Pesht Military District | Pusht-i-rud Prefecture
-        # administration: DC | Pesht Military District | Pusht-i-rud Prefecture
         faction:
           source: canon
           value:
@@ -147,12 +154,6 @@ planet:
       - date: '2740-01-01'
         population: 7289289407.0
       - date: '2750-01-04'
-        # administration: DC | Pesht Military District | Pusht-i-rud Prefecture
-        # administration: DC | Pesht Military District | Pusht-i-rud Prefecture
-        # administration: DC | Pesht Military District | Pusht-i-rud Prefecture
-        # administration: DC | Pesht Military District | Pusht-i-rud Prefecture
-        # administration: DC | Pesht Military District | Pusht-i-rud Prefecture
-        # administration: DC | Pesht Military District | Pusht-i-rud Prefecture
         faction:
           source: canon
           value:
@@ -249,12 +250,6 @@ planet:
           value:
             - IND
       - date: '3078-04-15'
-        # administration: DC | Pesht Military District | Qandahar Prefecture
-        # administration: DC | Pesht Military District | Qandahar Prefecture
-        # administration: DC | Pesht Military District | Qandahar Prefecture
-        # administration: DC | Pesht Military District | Qandahar Prefecture
-        # administration: DC | Pesht Military District | Qandahar Prefecture
-        # administration: DC | Pesht Military District | Qandahar Prefecture
         faction:
           source: canon
           value:

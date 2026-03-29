@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,13 +16,12 @@
 # affiliated with Microsoft.
 
 id: Trelleborg
-sucsId: 3002
+sucsId: 3040
 xcood: 109.262
 ycood: 920.57
 spectralType:
-  source: EC
+  source: Explorer Corps, pg. 54
   value: A9II
-  page: 54
 primarySlot: 2
 event:
   - date: '3049-03-12'
@@ -73,12 +72,6 @@ planet:
         size: medium
         icon: oddmoon3
     event:
-      - date: '3049-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CGB
       - date: '3049-08-17'
         faction:
           source: canon
@@ -87,12 +80,6 @@ planet:
         hpg: A
         population: 853.0
         socioIndustrial: A-X-X-X-X
-      - date: '3075-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - ABN
       - date: '3103-03-13'
         faction:
           source: canon

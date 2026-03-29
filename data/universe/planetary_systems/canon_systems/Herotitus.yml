@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,17 +16,15 @@
 # affiliated with Microsoft.
 
 id: Herotitus
-sucsId: 1101
+sucsId: 1100
 xcood: 58.729
 ycood: -430.11
 spectralType:
-  source: MSII
+  source: Mercenaries Supplemental II, pg. 16
   value: G3IV
-  page: 16
 primarySlot:
-  source: MSII
+  source: Mercenaries Supplemental II, pg. 16
   value: 2
-  page: 16
 event:
   - date: '2718-01-19'
     nadirCharge: yes
@@ -55,58 +53,60 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 1.6
     sysPos:
-      source: MSII
+      source: Mercenaries Supplemental II, pg. 16
       value: 2
-      page: 16
     icon: green4
     pressure:
-      source: MSII
+      source: Mercenaries Supplemental II, pg. 16
       value: STANDARD
-      page: 16
     atmosphere:
-      source: MSII
+      source: Mercenaries Supplemental II, pg. 16
       value: BREATHABLE
-      page: 16
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: MSII
+      source: Mercenaries Supplemental II, pg. 16
       value: 0.98
-      page: 16
     diameter: 12240
     density: 5.626637159068
     dayLength: 20
     yearLength: 2.3
     temperature:
-      source: MSII
+      source: Mercenaries Supplemental II, pg. 16
       value: 36
-      page: 16
     water:
-      source: MSII
+      source: Mercenaries Supplemental II, pg. 16
       value: 72
-      page: 16
     lifeForm:
-      source: MSII
+      source: Mercenaries Supplemental II, pg. 16
       value: REPTILE
-      page: 16
-    desc: Herotitus is a pleasant agricultural world with long, mild growing seasons and large portions of the planet’s northern continents , Baccali and Pomona,are almost entirely devoted to ranching and farming. The southern continent of Marpessa on the other hand is more developed and known for its large mountains and deep canyons, it is also the site of most of the planet’s major cities. Herotitus is fortunate, as an independent Periphery planet, its location between the Taurian Concordat, Magistracy of Canopus and Capellan Confederation has spared it from most pirate activities and its lack of military worth has spared it from the constant raiding of the three powers. Herotitus attracted hedonists in the 30th century and they turned the cities of the planet into tourist attractions where people could seek out any and all types of pleasure, with resorts, casinos and brothels. In the mid-31st century Herotitus became the unofficial site of a mercenary hiring hall due to the planet’s natural attraction to mercenaries looking for a break and seeking the recreation offered on the planet.
+    desc: Herotitus is a pleasant agricultural world with long, mild growing seasons
+      and large portions of the planet’s northern continents , Baccali and Pomona,are
+      almost entirely devoted to ranching and farming. The southern continent of Marpessa
+      on the other hand is more developed and known for its large mountains and deep
+      canyons, it is also the site of most of the planet’s major cities. Herotitus
+      is fortunate, as an independent Periphery planet, its location between the Taurian
+      Concordat, Magistracy of Canopus and Capellan Confederation has spared it from
+      most pirate activities and its lack of military worth has spared it from the
+      constant raiding of the three powers. Herotitus attracted hedonists in the 30th
+      century and they turned the cities of the planet into tourist attractions where
+      people could seek out any and all types of pleasure, with resorts, casinos and
+      brothels. In the mid-31st century Herotitus became the unofficial site of a
+      mercenary hiring hall due to the planet’s natural attraction to mercenaries
+      looking for a break and seeking the recreation offered on the planet.
     smallMoons: 1
     landmass:
       - name:
-          source: MSII
+          source: Mercenaries Supplemental II, pg. 16
           value: Baccali
-          page: 16
       - name:
-          source: MSII
+          source: Mercenaries Supplemental II, pg. 16
           value: Marpessa
-          page: 16
         capital:
-          source: MSII
+          source: Mercenaries Supplemental II, pg. 16
           value: New Hedon
-          page: 16
       - name:
-          source: MSII
+          source: Mercenaries Supplemental II, pg. 16
           value: Pomona
-          page: 16
     event:
       - date: '2500-10-10'
         faction:
@@ -169,12 +169,6 @@ planet:
         population: 487063.0
       - date: '2740-01-01'
         population: 483943.0
-      - date: '2750-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '2750-01-09'
         faction:
           source: canon
@@ -201,12 +195,6 @@ planet:
         population: 471370.0
       - date: '2820-01-01'
         population: 476159.0
-      - date: '2821-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '2821-04-13'
         faction:
           source: canon
@@ -257,7 +245,7 @@ planet:
       - date: '3020-01-01'
         population: 252601.0
         hiringHall:
-          source: MSII
+          source: Merc Supplemental 2
           value: MINOR
       - date: '3025-01-01'
         population:
@@ -288,12 +276,6 @@ planet:
         population: 93859402.0
       - date: '3120-01-01'
         population: 94329874.0
-      - date: '3130-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FR
       - date: '3130-05-02'
         faction:
           source: canon

@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,13 +16,12 @@
 # affiliated with Microsoft.
 
 id: Harris
-sucsId: 2986
+sucsId: 3024
 xcood: -141.321
 ycood: 802.486
 spectralType:
-  source: EC
+  source: Explorer Corps, pg. 53
   value: G5IV
-  page: 53
 primarySlot: 3
 event:
   - date: '3049-01-02'
@@ -86,12 +85,6 @@ planet:
       - name: FOG-5
       - name: FOG-6
     event:
-      - date: '3049-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CW
       - date: '3049-09-29'
         faction:
           source: canon
@@ -108,24 +101,6 @@ planet:
         hpg: A
         population: 1685.0
         socioIndustrial: A-X-X-X-X
-      - date: '3075-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CW
-      - date: '3079-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CLAN
-      - date: '3095-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '3110-08-29'
         faction:
           source: canon

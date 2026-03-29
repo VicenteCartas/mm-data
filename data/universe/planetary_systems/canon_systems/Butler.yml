@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -88,7 +88,15 @@ planet:
     lifeForm:
       source: canon
       value: BIRD
-    desc: Butler is a comfortable, warm-temperate planet that for most of its history was part of the Lyran Commonwealth. Butler avoided the worst of the Succession Wars primarily due to its lack of importance. Butler contains modest raw materials and agricultural concerns that are enough to make the planet self sufficient and these raw materials feed the on planet industry, which is well established despite remaining fairly basic with limited output. After the planet was captured by Clan Jade Falcon during Operation Revival, the Falcons spent resources upgrading the factories on planet to support the Butler Shipyards, which they built in 3060.
+    desc: Butler is a comfortable, warm-temperate planet that for most of its history
+      was part of the Lyran Commonwealth. Butler avoided the worst of the Succession
+      Wars primarily due to its lack of importance. Butler contains modest raw materials
+      and agricultural concerns that are enough to make the planet self sufficient
+      and these raw materials feed the on planet industry, which is well established
+      despite remaining fairly basic with limited output. After the planet was captured
+      by Clan Jade Falcon during Operation Revival, the Falcons spent resources upgrading
+      the factories on planet to support the Butler Shipyards, which they built in
+      3060.
     landmass:
       - name:
           source: canon
@@ -108,12 +116,6 @@ planet:
         icon: rock13
     event:
       - date: '2548-05-20'
-        # administration: LA | Tamar Pact | Trellshire
-        # administration: LA | Tamar Pact | Trellshire
-        # administration: LA | Tamar Pact | Trellshire
-        # administration: LA | Tamar Pact | Trellshire
-        # administration: LA | Tamar Pact | Trellshire
-        # administration: LA | Tamar Pact | Trellshire
         faction:
           source: canon
           value:
@@ -232,30 +234,12 @@ planet:
         population: 179855521.0
       - date: '3030-01-01'
         population: 180318054.0
-      - date: '3040-01-01'
-        # administration: FC | Tamar March | Blackjack Operational Area
-        # administration: FC | Tamar March | Blackjack Operational Area
-        # administration: FC | Tamar March | Blackjack Operational Area
-        # administration: FC | Tamar March | Blackjack Operational Area
-        # administration: FC | Tamar March | Blackjack Operational Area
-        # administration: FC | Tamar March | Blackjack Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FC
       - date: '3040-04-30'
         population: 181711863.0
         socioIndustrial:
           source: canon
           value: C-D-C-D-C
       - date: '3040-01-19'
-        # administration: FC | Tamar March | Blackjack Operational Area
-        # administration: FC | Tamar March | Blackjack Operational Area
-        # administration: FC | Tamar March | Blackjack Operational Area
-        # administration: FC | Tamar March | Blackjack Operational Area
-        # administration: FC | Tamar March | Blackjack Operational Area
-        # administration: FC | Tamar March | Blackjack Operational Area
         faction:
           source: canon
           value:
@@ -265,17 +249,7 @@ planet:
           source: canon
           value: B-C-B-C-B
       - date: '3050-01-01'
-        # administration: FC | Tamar March | Blackjack Operational Area
-        # administration: FC | Tamar March | Blackjack Operational Area
-        # administration: FC | Tamar March | Blackjack Operational Area
-        # administration: FC | Tamar March | Blackjack Operational Area
-        # administration: FC | Tamar March | Blackjack Operational Area
         population: 183134757.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CJF
       - date: '3050-05-12'
         faction:
           source: canon
@@ -307,12 +281,6 @@ planet:
         population: 199701202.0
       - date: '3145-01-01'
         population: 200020980.0
-      - date: '3151-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - AML
       - date: '3151-12-01'
         faction:
           source: canon

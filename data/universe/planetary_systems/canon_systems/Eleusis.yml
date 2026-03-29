@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -20,13 +20,11 @@ sucsId: 788
 xcood: -166.519
 ycood: -341.994
 spectralType:
-  source: HMSB
+  source: House Marik, pg. 163
   value: K4II
-  page: 163
 primarySlot:
-  source: HMSB
+  source: House Marik, pg. 163
   value: 6
-  page: 163
 event:
   - date: '2379-08-19'
     zenithCharge: yes
@@ -119,9 +117,8 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.7
     sysPos:
-      source: HMSB
+      source: House Marik, pg. 163
       value: 6
-      page: 163
     icon: green44
     pressure: HIGH
     atmosphere: BREATHABLE
@@ -134,9 +131,8 @@ planet:
     temperature: 31
     water: 67
     lifeForm:
-      source: HMSB
+      source: House Marik, pg. 163
       value: PLANT
-      page: 163
     desc: |-
       Eleusis is located on the Free Worlds League Periphery border and the planet is known for its abundance of lakes. The lakes are a combination of naturally occurring and man-made. The Sultan of Eleusis in 2366 dictated the creation of many man-made lakes that expanded the natural lakes to cover large distances of the planet in patterns visible from orbit.
 
@@ -230,12 +226,6 @@ planet:
         population: 2663700540.0
       - date: '2590-01-01'
         population: 2731064823.0
-      - date: '2596-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FWL
       - date: '2597-03-04'
         faction:
           source: canon
@@ -355,12 +345,6 @@ planet:
         population: 225646954.0
       - date: '3080-01-01'
         population: 227277475.0
-      - date: '3081-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '3081-09-30'
         faction:
           source: canon

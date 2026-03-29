@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: Yed Prior
-sucsId: 2798
+sucsId: 2797
 xcood: -62.042
 ycood: 124.024
 spectralType:
-  source: HSSB
+  source: House Steiner
   value: F0III
 primarySlot:
-  source: HSSB
+  source: House Steiner
   value: 5
 event:
   - date: '2475-12-04'
@@ -104,7 +104,7 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 4.48
     sysPos:
-      source: HSSB
+      source: House Steiner
       value: 5
     icon: green28
     pressure: STANDARD
@@ -118,9 +118,10 @@ planet:
     temperature: 33
     water: 37
     lifeForm:
-      source: HSSB
+      source: House Steiner
       value: MAMMAL
-    desc: Yed Prior is a temperate planet with a wide range of climates and cultures. The planet is home to the well-known Mitchellson University of Arts and Crafts.
+    desc: Yed Prior is a temperate planet with a wide range of climates and cultures.
+      The planet is home to the well-known Mitchellson University of Arts and Crafts.
     landmass:
       - name: Dewberry
         capital: New Scott City
@@ -187,12 +188,6 @@ planet:
       - date: '2340-01-01'
         population: 655655951.0
       - date: '2341-01-02'
-        # administration: LA | Federation of Skye
-        # administration: LA | Federation of Skye
-        # administration: LA | Federation of Skye
-        # administration: LA | Federation of Skye
-        # administration: LA | Federation of Skye
-        # administration: LA | Federation of Skye
         faction:
           source: canon
           value:
@@ -347,25 +342,8 @@ planet:
       - date: '3030-01-01'
         population: 1152498991.0
       - date: '3040-01-01'
-        # administration: FC | Skye March | Ryde Operational Area
-        # administration: FC | Skye March | Ryde Operational Area
-        # administration: FC | Skye March | Ryde Operational Area
-        # administration: FC | Skye March | Ryde Operational Area
-        # administration: FC | Skye March | Ryde Operational Area
-        # administration: FC | Skye March | Ryde Operational Area
         population: 1162453225.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FC
       - date: '3040-01-19'
-        # administration: FC | Skye March | Ryde Operational Area
-        # administration: FC | Skye March | Ryde Operational Area
-        # administration: FC | Skye March | Ryde Operational Area
-        # administration: FC | Skye March | Ryde Operational Area
-        # administration: FC | Skye March | Ryde Operational Area
-        # administration: FC | Skye March | Ryde Operational Area
         faction:
           source: canon
           value:
@@ -374,25 +352,7 @@ planet:
         socioIndustrial: C-C-B-B-D
       - date: '3050-01-01'
         population: 1174018666.0
-      - date: '3057-01-01'
-        # administration: LA | Skye March | Ryde Operational Area
-        # administration: LA | Skye March | Ryde Operational Area
-        # administration: LA | Skye March | Ryde Operational Area
-        # administration: LA | Skye March | Ryde Operational Area
-        # administration: LA | Skye March | Ryde Operational Area
-        # administration: LA | Skye March | Ryde Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LA
       - date: '3057-09-18'
-        # administration: LA | Skye Province
-        # administration: LA | Skye Province
-        # administration: LA | Skye Province
-        # administration: LA | Skye Province
-        # administration: LA | Skye Province
-        # administration: LA | Skye Province
         faction:
           source: canon
           value:
@@ -427,12 +387,6 @@ planet:
         population: 1308828707.0
       - date: '3145-01-01'
         population: 1315126187.0
-      - date: '3152-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '3152-06-01'
         faction:
           source: canon

@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,17 +16,15 @@
 # affiliated with Microsoft.
 
 id: Eden
-sucsId: 2934
+sucsId: 2933
 xcood: -133.451
 ycood: 1613.747
 spectralType:
-  source: 'His:OK'
+  source: 'Historical: Operation Klondike, pg. 138'
   value: F4Ib
-  page: 138
 primarySlot:
-  source: 'His:OK'
+  source: 'Historical: Operation Klondike, pg. 138'
   value: 1
-  page: 138
 event:
   - date: '2789-04-01'
     nadirCharge: yes
@@ -39,86 +37,68 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 3.92
     sysPos:
-      source: 'His:OK'
+      source: 'Historical: Operation Klondike, pg. 138'
       value: 1
-      page: 138
     icon: green18
     pressure:
-      source: 'His:OK'
+      source: 'Historical: Operation Klondike, pg. 138'
       value: STANDARD
-      page: 138
     atmosphere:
-      source: 'His:OK'
+      source: 'Historical: Operation Klondike, pg. 138'
       value: TAINTED_POISON
-      page: 138
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'His:OK'
+      source: 'Historical: Operation Klondike, pg. 138'
       value: 1.1
-      page: 138
     diameter: 11053
     density: 6.99388978774
     dayLength: 19
     yearLength: 7.9
     temperature:
-      source: 'His:OK'
+      source: 'Historical: Operation Klondike, pg. 138'
       value: 30
-      page: 138
     water:
-      source: 'His:OK'
+      source: 'Historical: Operation Klondike, pg. 138'
       value: 40
-      page: 138
     lifeForm:
-      source: 'His:OK'
+      source: 'Historical: Operation Klondike, pg. 138'
       value: MAMMAL
-      page: 138
-    desc: Eden is home to Novy Moscva, which was the capital city of the Star League in Exile. Most of the settlements on Eden are contained within 20’ of the equator, known as the ‘life band,’ where most of the world’s precipitation falls. The life band is rich with native flora and fauna, but many terrestrial species also thrive here – some more so than on Terra. Unfortunately the same cannot be said for humans, as the atmosphere contains a viral taint, which cause the ‘brain fever’ that killed many of the early SLDF setters – including General Aleksandr Kerensky’s wife.
+    desc: Eden is home to Novy Moscva, which was the capital city of the Star League
+      in Exile. Most of the settlements on Eden are contained within 20’ of the equator,
+      known as the ‘life band,’ where most of the world’s precipitation falls. The
+      life band is rich with native flora and fauna, but many terrestrial species
+      also thrive here – some more so than on Terra. Unfortunately the same cannot
+      be said for humans, as the atmosphere contains a viral taint, which cause the
+      ‘brain fever’ that killed many of the early SLDF setters – including General
+      Aleksandr Kerensky’s wife.
     landmass:
       - name:
-          source: 'His:OK'
+          source: 'Historical: Operation Klondike, pg. 138'
           value: Amur
-          page: 138
       - name:
-          source: 'His:OK'
+          source: 'Historical: Operation Klondike, pg. 138'
           value: Irkutsk
-          page: 138
       - name:
-          source: 'His:OK'
+          source: 'Historical: Operation Klondike, pg. 138'
           value: Noruff
-          page: 138
         capital:
           source: canon
           value: Novy Moscva
       - name:
-          source: 'His:OK'
+          source: 'Historical: Operation Klondike, pg. 138'
           value: Yakut
-          page: 138
     satellite:
       - name:
-          source: 'His:OK'
+          source: 'Historical: Operation Klondike, pg. 138'
           value: Adam
-          page: 138
         size: medium
         icon: oddmoon1
       - name:
-          source: 'His:OK'
+          source: 'Historical: Operation Klondike, pg. 138'
           value: Eve
-          page: 138
         size: large
         icon: rock1
     event:
-      - date: '2786-01-01'
-        # administration: SLIE | National Capital
-        # administration: SLIE | National Capital
-        # administration: SLIE | National Capital
-        # administration: SLIE | National Capital
-        # administration: SLIE | National Capital
-        # administration: SLIE | National Capital
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - SLIE
       - date: '2786-12-23'
         faction:
           source: canon
@@ -143,12 +123,6 @@ planet:
         population: 688808.0
       - date: '2820-01-01'
         population: 449331.0
-      - date: '2821-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CLAN
       - date: '2822-12-20'
         faction:
           source: canon
@@ -158,11 +132,6 @@ planet:
             - CHH
       - date: '2830-01-01'
         population: 773262.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CLAN
       - date: '2840-01-01'
         population: 1420419.0
       - date: '2850-01-01'
@@ -238,32 +207,14 @@ planet:
             - CBS
             - CSV
             - CCO
-      - date: '3075-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CLAN
       - date: '3075-12-23'
         faction:
           source: canon
           value:
             - CCC
             - CBS
-      - date: '3079-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CCC
       - date: '3080-01-01'
         population: 25957.0
-      - date: '3085-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - ABN
       - date: '3085-06-08'
         faction:
           source: canon

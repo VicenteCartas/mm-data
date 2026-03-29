@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,17 +16,15 @@
 # affiliated with Microsoft.
 
 id: Panpour
-sucsId: 1980
+sucsId: 1979
 xcood: 342.497
 ycood: -292.438
 spectralType:
-  source: 'HB:HD'
+  source: 'Handbook: House Davion, pg. 97'
   value: M0III
-  page: 97
 primarySlot:
-  source: 'HB:HD'
+  source: 'Handbook: House Davion, pg. 97'
   value: 3
-  page: 97
 event:
   - date: '2363-03-23'
     zenithCharge: yes
@@ -69,39 +67,32 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.5
     sysPos:
-      source: 'HB:HD'
+      source: 'Handbook: House Davion, pg. 97'
       value: 3
-      page: 97
     icon: wet4
     pressure:
-      source: 'HB:HD'
+      source: 'Handbook: House Davion, pg. 97'
       value: HIGH
-      page: 97
     atmosphere:
-      source: 'HB:HD'
+      source: 'Handbook: House Davion, pg. 97'
       value: BREATHABLE
-      page: 97
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'HB:HD'
+      source: 'Handbook: House Davion, pg. 97'
       value: 1.0
-      page: 97
     diameter: 13081
     density: 5.3724074818
     dayLength: 19
     yearLength: 0.8
     temperature:
-      source: 'HB:HD'
+      source: 'Handbook: House Davion, pg. 97'
       value: 49
-      page: 97
     water:
-      source: 'HB:HD'
+      source: 'Handbook: House Davion, pg. 97'
       value: 88
-      page: 97
     lifeForm:
-      source: 'HB:HD'
+      source: 'Handbook: House Davion, pg. 97'
       value: FISH
-      page: 97
     desc: |-
       Panpour was originally surveyed in the mid 23rd century but was not settled until the early 2300s by the United Hindu Collective and was the capital of the small realm. The planet was liveable but not the most comfortable planet for human life, however abundant ores attracted colonists. Early terraforming operations were able to make the land more arable and allowed the planet to eventually have enough agriculture to be self-sufficient. The planet remained a backwater until the Reunification War when the planet gained the interest of the Federated Suns and the Star League as a forward logistics center. Almost immediately Panpour was transformed into an industrial giant, fully able to support the war efforts in the Periphery.
 
@@ -111,46 +102,38 @@ planet:
       Challenge Systems
     landmass:
       - name:
-          source: 'HB:HD'
+          source: 'Handbook: House Davion, pg. 97'
           value: Mestin
-          page: 97
       - name:
-          source: 'HB:HD'
+          source: 'Handbook: House Davion, pg. 97'
           value: Remig
-          page: 97
         capital:
-          source: 'HB:HD'
+          source: 'Handbook: House Davion, pg. 97'
           value: Matam
-          page: 97
     satellite:
       - name:
-          source: 'HB:HD'
+          source: 'Handbook: House Davion, pg. 97'
           value: Brach
-          page: 97
         size: large
         icon: rock12
       - name:
-          source: 'HB:HD'
+          source: 'Handbook: House Davion, pg. 97'
           value: Faub
-          page: 97
         size: large
         icon: rock9
       - name:
-          source: 'HB:HD'
+          source: 'Handbook: House Davion, pg. 97'
           value: Kraygor
-          page: 97
         size: medium
         icon: rock17
       - name:
-          source: 'HB:HD'
+          source: 'Handbook: House Davion, pg. 97'
           value: Moch
-          page: 97
         size: large
         icon: rock6
       - name:
-          source: 'HB:HD'
+          source: 'Handbook: House Davion, pg. 97'
           value: Zeik
-          page: 97
         size: giant
         icon: rock8
     event:
@@ -224,12 +207,6 @@ planet:
       - date: '2540-01-01'
         population: 329614944.0
       - date: '2540-09-01'
-        # administration: FS | Crucis March | Chirikof Operational Area
-        # administration: FS | Crucis March | Chirikof Operational Area
-        # administration: FS | Crucis March | Chirikof Operational Area
-        # administration: FS | Crucis March | Chirikof Operational Area
-        # administration: FS | Crucis March | Chirikof Operational Area
-        # administration: FS | Crucis March | Chirikof Operational Area
         faction:
           source: canon
           value:
@@ -349,25 +326,8 @@ planet:
       - date: '3031-01-01'
         socioIndustrial: C-C-C-D-D
       - date: '3040-01-01'
-        # administration: FC | Crucis March | Chirikof Operational Area
-        # administration: FC | Crucis March | Chirikof Operational Area
-        # administration: FC | Crucis March | Chirikof Operational Area
-        # administration: FC | Crucis March | Chirikof Operational Area
-        # administration: FC | Crucis March | Chirikof Operational Area
-        # administration: FC | Crucis March | Chirikof Operational Area
         population: 278865002.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FC
       - date: '3040-01-19'
-        # administration: FC | Crucis March | Chirikof Operational Area
-        # administration: FC | Crucis March | Chirikof Operational Area
-        # administration: FC | Crucis March | Chirikof Operational Area
-        # administration: FC | Crucis March | Chirikof Operational Area
-        # administration: FC | Crucis March | Chirikof Operational Area
-        # administration: FC | Crucis March | Chirikof Operational Area
         faction:
           source: canon
           value:
@@ -391,27 +351,10 @@ planet:
             - FC
             - LA
       - date: '3067-01-01'
-        # administration: FS | Crucis March | Chirikof Operational Area
-        # administration: FS | Crucis March | Chirikof Operational Area
-        # administration: FS | Crucis March | Chirikof Operational Area
-        # administration: FS | Crucis March | Chirikof Operational Area
-        # administration: FS | Crucis March | Chirikof Operational Area
-        # administration: FS | Crucis March | Chirikof Operational Area
         population:
           source: canon
           value: 284470000.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FS
       - date: '3067-04-20'
-        # administration: FS | Crucis March | Chirikof Operational Area
-        # administration: FS | Crucis March | Chirikof Operational Area
-        # administration: FS | Crucis March | Chirikof Operational Area
-        # administration: FS | Crucis March | Chirikof Operational Area
-        # administration: FS | Crucis March | Chirikof Operational Area
-        # administration: FS | Crucis March | Chirikof Operational Area
         faction:
           source: canon
           value:

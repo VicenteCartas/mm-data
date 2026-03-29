@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,17 +16,15 @@
 # affiliated with Microsoft.
 
 id: Bearclaw
-sucsId: 2938
+sucsId: 2937
 xcood: 149.39
 ycood: 1723.536
 spectralType:
-  source: WoK
+  source: Warriors of Kerensky, pg. 112
   value: A6V
-  page: 112
 primarySlot:
-  source: WoK
+  source: Warriors of Kerensky, pg. 112
   value: 2
-  page: 112
 event:
   - date: '2802-02-06'
     nadirCharge: yes
@@ -54,39 +52,32 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 5.04
     sysPos:
-      source: WoK
+      source: Warriors of Kerensky, pg. 112
       value: 2
-      page: 112
     icon: green1
     pressure:
-      source: WoK
+      source: Warriors of Kerensky, pg. 112
       value: STANDARD
-      page: 112
     atmosphere:
-      source: WoK
+      source: Warriors of Kerensky, pg. 112
       value: TAINTED_POISON
-      page: 112
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: WoK
+      source: Warriors of Kerensky, pg. 112
       value: 1.1
-      page: 112
     diameter: 11938
     density: 6.475190322099
     dayLength: 25
     yearLength: 11.4
     temperature:
-      source: WoK
+      source: Warriors of Kerensky, pg. 112
       value: 20
-      page: 112
     water:
-      source: WoK
+      source: Warriors of Kerensky, pg. 112
       value: 50
-      page: 112
     lifeForm:
-      source: WoK
+      source: Warriors of Kerensky, pg. 112
       value: FISH
-      page: 112
     desc: No description available.
     landmass:
       - name: Mantorville
@@ -111,12 +102,6 @@ planet:
         population: 36927.0
       - date: '2820-01-01'
         population: 123597.0
-      - date: '2821-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CLAN
       - date: '2821-04-19'
         faction:
           source: canon
@@ -167,12 +152,6 @@ planet:
         population: 5771869.0
       - date: '3020-01-01'
         population: 5762540.0
-      - date: '3025-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CLAN
       - date: '3030-01-11'
         population: 5735331.0
         socioIndustrial: A-B-C-B-B
@@ -189,12 +168,6 @@ planet:
             - CSR
             - CHH
         population: 5608630.0
-      - date: '3063-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CLAN
       - date: '3070-01-01'
         population: 5614579.0
       - date: '3070-06-01'
@@ -203,24 +176,12 @@ planet:
           value:
             - CSV
             - CHH
-      - date: '3075-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CLAN
       - date: '3075-06-01'
         faction:
           source: canon
           value:
             - CCC
             - CSL
-      - date: '3079-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CLAN
       - date: '3080-01-01'
         population: 5684633.0
       - date: '3085-09-19'

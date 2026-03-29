@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,17 +16,15 @@
 # affiliated with Microsoft.
 
 id: Poulsbo
-sucsId: 2058
+sucsId: 2057
 xcood: -375.354
 ycood: -63.641
 spectralType:
-  source: 'HB:HS'
+  source: 'Handbook: House Steiner, pg. 75'
   value: F4V
-  page: 75
 primarySlot:
-  source: 'HB:HS'
+  source: 'Handbook: House Steiner, pg. 75'
   value: 4
-  page: 75
 event:
   - date: '2358-12-25'
     zenithCharge: yes
@@ -84,39 +82,32 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 2.24
     sysPos:
-      source: 'HB:HS'
+      source: 'Handbook: House Steiner, pg. 75'
       value: 4
-      page: 75
     icon: wet12
     pressure:
-      source: 'HB:HS'
+      source: 'Handbook: House Steiner, pg. 75'
       value: STANDARD
-      page: 75
     atmosphere:
-      source: 'HB:HS'
+      source: 'Handbook: House Steiner, pg. 75'
       value: BREATHABLE
-      page: 75
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'HB:HS'
+      source: 'Handbook: House Steiner, pg. 75'
       value: 0.92
-      page: 75
     diameter: 11059
     density: 5.84638959969
     dayLength: 23
     yearLength: 3.6
     temperature:
-      source: 'HB:HS'
+      source: 'Handbook: House Steiner, pg. 75'
       value: 54
-      page: 75
     water:
-      source: 'HB:HS'
+      source: 'Handbook: House Steiner, pg. 75'
       value: 80
-      page: 75
     lifeForm:
-      source: 'HB:HS'
+      source: 'Handbook: House Steiner, pg. 75'
       value: REPTILE
-      page: 75
     desc: |-
       Poulsbo lies on the anti-spinward edge of Lyran space, along the border shared with the Free Worlds League. Poulsbo is a tropical planet, mostly covered in vast oceans and seas. Due to a single large moon in orbit of the planet, Poulsbo’s waterways are rough and treacherous.
 
@@ -127,34 +118,27 @@ planet:
       Poulsbo remains a lightly settled Military Outpost, whose civilian population is mostly upset by constant Lyran politics and war.
     landmass:
       - name:
-          source: 'HB:HS'
+          source: 'Handbook: House Steiner, pg. 75'
           value: Bergenswald
-          page: 75
       - name:
-          source: 'HB:HS'
+          source: 'Handbook: House Steiner, pg. 75'
           value: Brusselsia
-          page: 75
       - name:
-          source: 'HB:HS'
+          source: 'Handbook: House Steiner, pg. 75'
           value: Goteborg
-          page: 75
       - name:
-          source: 'HB:HS'
+          source: 'Handbook: House Steiner, pg. 75'
           value: Mermannisk
-          page: 75
       - name:
-          source: 'HB:HS'
+          source: 'Handbook: House Steiner, pg. 75'
           value: Tammerfors
-          page: 75
         capital:
-          source: 'HB:HS'
+          source: 'Handbook: House Steiner, pg. 75'
           value: Bangor Heights
-          page: 75
     satellite:
       - name:
-          source: 'HB:HS'
+          source: 'Handbook: House Steiner, pg. 75'
           value: Sjure
-          page: 75
         size: large
         icon: rock13
     event:
@@ -219,25 +203,7 @@ planet:
         population: 137569726.0
       - date: '2570-01-01'
         population: 140982356.0
-      - date: '2571-01-01'
-        # administration: LA | Protectorate of Donegal | Alarion Province
-        # administration: LA | Protectorate of Donegal | Alarion Province
-        # administration: LA | Protectorate of Donegal | Alarion Province
-        # administration: LA | Protectorate of Donegal | Alarion Province
-        # administration: LA | Protectorate of Donegal | Alarion Province
-        # administration: LA | Protectorate of Donegal | Alarion Province
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LA
       - date: '2571-06-29'
-        # administration: LA | Protectorate of Donegal | Alarion Province
-        # administration: LA | Protectorate of Donegal | Alarion Province
-        # administration: LA | Protectorate of Donegal | Alarion Province
-        # administration: LA | Protectorate of Donegal | Alarion Province
-        # administration: LA | Protectorate of Donegal | Alarion Province
-        # administration: LA | Protectorate of Donegal | Alarion Province
         faction:
           source: canon
           value:
@@ -349,25 +315,8 @@ planet:
       - date: '3038-01-01'
         socioIndustrial: D-C-D-D-D
       - date: '3040-01-01'
-        # administration: FC | Tamarind March | Bolan Operational Area
-        # administration: FC | Tamarind March | Bolan Operational Area
-        # administration: FC | Tamarind March | Bolan Operational Area
-        # administration: FC | Tamarind March | Bolan Operational Area
-        # administration: FC | Tamarind March | Bolan Operational Area
-        # administration: FC | Tamarind March | Bolan Operational Area
         population: 160612086.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FC
       - date: '3040-01-19'
-        # administration: FC | Tamarind March | Bolan Operational Area
-        # administration: FC | Tamarind March | Bolan Operational Area
-        # administration: FC | Tamarind March | Bolan Operational Area
-        # administration: FC | Tamarind March | Bolan Operational Area
-        # administration: FC | Tamarind March | Bolan Operational Area
-        # administration: FC | Tamarind March | Bolan Operational Area
         faction:
           source: canon
           value:
@@ -378,37 +327,13 @@ planet:
           value: D-C-D-C-C
       - date: '3050-01-01'
         population: 162047913.0
-      - date: '3057-01-01'
-        # administration: LA | Tamarind March | Bolan Operational Area
-        # administration: LA | Tamarind March | Bolan Operational Area
-        # administration: LA | Tamarind March | Bolan Operational Area
-        # administration: LA | Tamarind March | Bolan Operational Area
-        # administration: LA | Tamarind March | Bolan Operational Area
-        # administration: LA | Tamarind March | Bolan Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LA
       - date: '3057-09-18'
-        # administration: LA | Alarion Province | Timbuktu Theater
-        # administration: LA | Alarion Province | Timbuktu Theater
-        # administration: LA | Alarion Province | Timbuktu Theater
-        # administration: LA | Alarion Province | Timbuktu Theater
-        # administration: LA | Alarion Province | Timbuktu Theater
-        # administration: LA | Alarion Province | Timbuktu Theater
         faction:
           source: canon
           value:
             - LA
       - date: '3060-01-01'
         population: 163480228.0
-      - date: '3068-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FWL
       - date: '3068-09-03'
         faction:
           source: canon
@@ -433,12 +358,6 @@ planet:
           source: canon
           value:
             - FWL
-      - date: '3079-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - DTA
       - date: '3079-03-23'
         faction:
           source: canon
@@ -456,12 +375,6 @@ planet:
           value:
             - LA
             - PR
-      - date: '3081-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - ABN
       - date: '3081-07-26'
         faction:
           source: canon

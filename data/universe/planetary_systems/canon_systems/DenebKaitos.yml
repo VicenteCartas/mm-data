@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -20,10 +20,10 @@ sucsId: 689
 xcood: 64.617
 ycood: -12.971
 spectralType:
-  source: DA:RW
+  source: MWDA world profiles
   value: K2III
 primarySlot:
-  source: DA:RW
+  source: MWDA world profiles
   value: 3
 event:
   - date: '2712-11-24'
@@ -72,31 +72,31 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.7
     sysPos:
-      source: DA:RW
+      source: MWDA world profiles
       value: 3
     icon: wet11
     pressure:
-      source: DA:RW
+      source: MWDA world profiles
       value: STANDARD
     atmosphere:
-      source: DA:RW
+      source: MWDA world profiles
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: DA:RW
+      source: MWDA world profiles
       value: 0.9
     diameter: 10799
     density: 5.856900416287
     dayLength: 23
     yearLength: 1.0
     temperature:
-      source: DA:RW
+      source: MWDA world profiles
       value: 20
     water:
-      source: DA:RW
+      source: MWDA world profiles
       value: 80
     lifeForm:
-      source: DA:RW
+      source: MWDA world profiles
       value: MAMMAL
     desc: |-
       An unremarkable, small world blanketed by grasslands and tundra, Deneb Kaitos is famous as the home of the Deneb Light Cavalry, elite Federated Suns BattleMech regiments descended from the special forces of the First Star League. Originally settled by the Terran Hegemony, Deneb‘s population began to starve when food shipments were cut off after the fall of the First Star League. In response, the Fourth Deneb Light Cavalry, one of the Star League‘s Rapid Deployment Mixed Armed Forces (or RDMAF) regiments, did not join Kerensky‘s Exodus, and signed on with the Federated Suns military instead in exchange for food shipments to Deneb Kaitos.
@@ -106,36 +106,30 @@ planet:
       The continent of Baten is home to the capital of Cetus and is located in the northern hemisphere; the continents of Menkar and Mira straddle the equator.
     landmass:
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Baten
         capital:
-          source: DA:RW
+          source: MWDA world profiles
           value: Cetus
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Menkar
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Mira
     satellite:
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Diphda
         size: medium
         icon: oddmoon2
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Shemali
         size: giant
         icon: rock7
     event:
       - date: '2315-06-04'
-        # administration: TH | Lockdale Province
-        # administration: TH | Lockdale Province
-        # administration: TH | Lockdale Province
-        # administration: TH | Lockdale Province
-        # administration: TH | Lockdale Province
-        # administration: TH | Lockdale Province
         faction:
           source: canon
           value:
@@ -240,18 +234,6 @@ planet:
         population: 1258618563.0
       - date: '2760-01-01'
         population: 1272851713.0
-      - date: '2767-01-01'
-        # administration: AE | Lockdale Province
-        # administration: AE | Lockdale Province
-        # administration: AE | Lockdale Province
-        # administration: AE | Lockdale Province
-        # administration: AE | Lockdale Province
-        # administration: AE | Lockdale Province
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - AE
       - date: '2767-09-12'
         faction:
           source: canon
@@ -260,12 +242,6 @@ planet:
       - date: '2770-01-01'
         population: 1277558092.0
       - date: '2779-09-12'
-        # administration: TH | Lockdale Province
-        # administration: TH | Lockdale Province
-        # administration: TH | Lockdale Province
-        # administration: TH | Lockdale Province
-        # administration: TH | Lockdale Province
-        # administration: TH | Lockdale Province
         faction:
           source: canon
           value:
@@ -284,25 +260,7 @@ planet:
         population: 1229810567.0
       - date: '2820-01-01'
         population: 1220749412.0
-      - date: '2821-01-01'
-        # administration: DC | Dieron Military District | Addicks Prefecture
-        # administration: DC | Dieron Military District | Addicks Prefecture
-        # administration: DC | Dieron Military District | Addicks Prefecture
-        # administration: DC | Dieron Military District | Addicks Prefecture
-        # administration: DC | Dieron Military District | Addicks Prefecture
-        # administration: DC | Dieron Military District | Addicks Prefecture
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - DC
       - date: '2821-02-20'
-        # administration: DC | Dieron Military District | Addicks Prefecture
-        # administration: DC | Dieron Military District | Addicks Prefecture
-        # administration: DC | Dieron Military District | Addicks Prefecture
-        # administration: DC | Dieron Military District | Addicks Prefecture
-        # administration: DC | Dieron Military District | Addicks Prefecture
-        # administration: DC | Dieron Military District | Addicks Prefecture
         faction:
           source: canon
           value:
@@ -317,25 +275,7 @@ planet:
         population: 1227445730.0
       - date: '2860-01-01'
         population: 1236306077.0
-      - date: '2864-01-01'
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FS
       - date: '2864-11-16'
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
         faction:
           source: canon
           value:
@@ -380,25 +320,8 @@ planet:
         population: 1024220441.0
         socioIndustrial: B-B-C-B-C
       - date: '3040-01-01'
-        # administration: FC | Draconis March | Robinson Operational Area
-        # administration: FC | Draconis March | Robinson Operational Area
-        # administration: FC | Draconis March | Robinson Operational Area
-        # administration: FC | Draconis March | Robinson Operational Area
-        # administration: FC | Draconis March | Robinson Operational Area
-        # administration: FC | Draconis March | Robinson Operational Area
         population: 1038764242.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FC
       - date: '3040-01-19'
-        # administration: FC | Draconis March | Robinson Operational Area
-        # administration: FC | Draconis March | Robinson Operational Area
-        # administration: FC | Draconis March | Robinson Operational Area
-        # administration: FC | Draconis March | Robinson Operational Area
-        # administration: FC | Draconis March | Robinson Operational Area
-        # administration: FC | Draconis March | Robinson Operational Area
         faction:
           source: canon
           value:
@@ -409,25 +332,7 @@ planet:
         population: 1053725288.0
       - date: '3060-01-01'
         population: 1069757276.0
-      - date: '3067-01-01'
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FS
       - date: '3067-04-20'
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
         faction:
           source: canon
           value:
@@ -453,25 +358,7 @@ planet:
             - Stone
       - date: '3080-01-01'
         population: 1099913762.0
-      - date: '3081-01-01'
-        # administration: ROS | Prefecture IV
-        # administration: ROS | Prefecture IV
-        # administration: ROS | Prefecture IV
-        # administration: ROS | Prefecture IV
-        # administration: ROS | Prefecture IV
-        # administration: ROS | Prefecture IV
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - ROS
       - date: '3081-01-07'
-        # administration: ROS | Prefecture IV
-        # administration: ROS | Prefecture IV
-        # administration: ROS | Prefecture IV
-        # administration: ROS | Prefecture IV
-        # administration: ROS | Prefecture IV
-        # administration: ROS | Prefecture IV
         faction:
           source: canon
           value:
@@ -490,12 +377,6 @@ planet:
         population: 1182737632.0
       - date: '3132-08-07'
         hpg: X
-      - date: '3135-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '3135-10-01'
         faction:
           source: canon
@@ -503,18 +384,6 @@ planet:
             - IND
       - date: '3140-01-01'
         population: 1197973978.0
-      - date: '3145-01-01'
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        # administration: FS | Draconis March | Robinson Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FS
       - date: '3145-03-16'
         faction:
           source: canon
@@ -527,12 +396,6 @@ planet:
           value:
             - DC
       - date: '3151-01-01'
-        # administration: DC | Dieron Military District | Ashio Prefecture
-        # administration: DC | Dieron Military District | Ashio Prefecture
-        # administration: DC | Dieron Military District | Ashio Prefecture
-        # administration: DC | Dieron Military District | Ashio Prefecture
-        # administration: DC | Dieron Military District | Ashio Prefecture
-        # administration: DC | Dieron Military District | Ashio Prefecture
         faction:
           source: sucs
           value:

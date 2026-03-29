@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -20,13 +20,11 @@ sucsId: 453
 xcood: -153.871
 ycood: -233.875
 spectralType:
-  source: 'HB:HM'
+  source: 'Handbook: House Marik, pg. 77'
   value: M0III
-  page: 77
 primarySlot:
-  source: 'HB:HM'
+  source: 'Handbook: House Marik, pg. 77'
   value: 1
-  page: 77
 event:
   - date: '2743-03-20'
     zenithCharge: yes
@@ -41,39 +39,32 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.35
     sysPos:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 77'
       value: 1
-      page: 77
     icon: green54
     pressure:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 77'
       value: HIGH
-      page: 77
     atmosphere:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 77'
       value: BREATHABLE
-      page: 77
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 77'
       value: 0.81
-      page: 77
     diameter: 13230
     density: 4.302553564022
     dayLength: 22
     yearLength: 0.7
     temperature:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 77'
       value: 38
-      page: 77
     water:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 77'
       value: 60
-      page: 77
     lifeForm:
-      source: 'HB:HM'
+      source: 'Handbook: House Marik, pg. 77'
       value: REPTILE
-      page: 77
     desc: |-
       Camlann is important to the Free Worlds League after the ruling in Federal League courts that allowed the planet to become independent from the Regulus Province. Since then hundreds of planets in the League have declared themselves independent and have greatly affected political importance of some regions.
 
@@ -81,25 +72,20 @@ planet:
     smallMoons: 5
     landmass:
       - name:
-          source: 'HB:HM'
+          source: 'Handbook: House Marik, pg. 77'
           value: Badon
-          page: 77
       - name:
-          source: 'HB:HM'
+          source: 'Handbook: House Marik, pg. 77'
           value: Cameliard
-          page: 77
       - name:
-          source: 'HB:HM'
+          source: 'Handbook: House Marik, pg. 77'
           value: Dolorous Garde
-          page: 77
       - name:
-          source: 'HB:HM'
+          source: 'Handbook: House Marik, pg. 77'
           value: Joyous Garde
-          page: 77
       - name:
-          source: 'HB:HM'
+          source: 'Handbook: House Marik, pg. 77'
           value: Sauvage
-          page: 77
     event:
       - date: '2718-12-26'
         faction:
@@ -200,12 +186,6 @@ planet:
         population: 3438987170.0
       - date: '3080-01-01'
         population: 3464530067.0
-      - date: '3081-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '3081-08-05'
         faction:
           source: canon
@@ -221,12 +201,6 @@ planet:
         population: 3492357469.0
       - date: '3120-01-01'
         population: 3523930552.0
-      - date: '3130-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - RF
       - date: '3130-01-22'
         faction:
           source: canon
@@ -247,12 +221,6 @@ planet:
           value:
             - FWL
       - date: '3151-01-01'
-        # administration: FWL | Regulan Fiefs
-        # administration: FWL | Regulan Fiefs
-        # administration: FWL | Regulan Fiefs
-        # administration: FWL | Regulan Fiefs
-        # administration: FWL | Regulan Fiefs
-        # administration: FWL | Regulan Fiefs
         faction:
           source: sucs
           value:

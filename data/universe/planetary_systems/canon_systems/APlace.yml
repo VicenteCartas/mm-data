@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -66,7 +66,13 @@ planet:
     temperature: 31
     water: 32
     lifeForm: BIRD
-    desc: Despite A Place's poor soil making agriculture nearly impossible the planet was settled to take advantage of its abundance of natural resources. For most of its history A Place has relied on its neighbor, Bountiful Harvest for food. Unfortunately, when there are disruptions in shipping, such as during the 1st Succession War, food shortages begin almost immediately. During the 1st Succession War the lack of food resulted in nearly 90% of the planet's million inhabitants starving.
+    desc: Despite A Place's poor soil making agriculture nearly impossible the planet
+      was settled to take advantage of its abundance of natural resources. For most
+      of its history A Place has relied on its neighbor, Bountiful Harvest for food.
+      Unfortunately, when there are disruptions in shipping, such as during the 1st
+      Succession War, food shortages begin almost immediately. During the 1st Succession
+      War the lack of food resulted in nearly 90% of the planet's million inhabitants
+      starving.
     landmass:
       - name: Campbell
         capital: New Keene
@@ -114,12 +120,6 @@ planet:
       - date: '2360-01-01'
         population: 111039134.0
       - date: '2362-05-07'
-        # administration: LA | Tamar Pact | Tamar Domains
-        # administration: LA | Tamar Pact | Tamar Domains
-        # administration: LA | Tamar Pact | Tamar Domains
-        # administration: LA | Tamar Pact | Tamar Domains
-        # administration: LA | Tamar Pact | Tamar Domains
-        # administration: LA | Tamar Pact | Tamar Domains
         faction:
           source: canon
           value:
@@ -270,25 +270,8 @@ planet:
       - date: '3036-01-01'
         socioIndustrial: B-D-B-C-C
       - date: '3040-01-01'
-        # administration: FC | Tamar March | Benfled Operational Area
-        # administration: FC | Tamar March | Benfled Operational Area
-        # administration: FC | Tamar March | Benfled Operational Area
-        # administration: FC | Tamar March | Benfled Operational Area
-        # administration: FC | Tamar March | Benfled Operational Area
-        # administration: FC | Tamar March | Benfled Operational Area
         population: 463165662.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FC
       - date: '3040-01-19'
-        # administration: FC | Tamar March | Benfled Operational Area
-        # administration: FC | Tamar March | Benfled Operational Area
-        # administration: FC | Tamar March | Benfled Operational Area
-        # administration: FC | Tamar March | Benfled Operational Area
-        # administration: FC | Tamar March | Benfled Operational Area
-        # administration: FC | Tamar March | Benfled Operational Area
         faction:
           source: canon
           value:
@@ -297,44 +280,14 @@ planet:
         socioIndustrial: A-C-A-C-B
       - date: '3050-01-01'
         population: 469695584.0
-      - date: '3057-01-01'
-        # administration: LA | Tamar March | Pandora Operational Area
-        # administration: LA | Tamar March | Pandora Operational Area
-        # administration: LA | Tamar March | Pandora Operational Area
-        # administration: LA | Tamar March | Pandora Operational Area
-        # administration: LA | Tamar March | Pandora Operational Area
-        # administration: LA | Tamar March | Pandora Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LA
       - date: '3057-12-01'
         faction:
           source: canon
           value:
             - ARDC
-      - date: '3058-01-01'
-        # administration: LA | Donegal Province | Pandora Theater
-        # administration: LA | Donegal Province | Pandora Theater
-        # administration: LA | Donegal Province | Pandora Theater
-        # administration: LA | Donegal Province | Pandora Theater
-        # administration: LA | Donegal Province | Pandora Theater
-        # administration: LA | Donegal Province | Pandora Theater
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LA
       - date: '3060-01-01'
         population: 476031863.0
       - date: '3067-04-24'
-        # administration: LA | Arc-Royal Theater
-        # administration: LA | Arc-Royal Theater
-        # administration: LA | Arc-Royal Theater
-        # administration: LA | Arc-Royal Theater
-        # administration: LA | Arc-Royal Theater
-        # administration: LA | Arc-Royal Theater
         faction:
           source: canon
           value:
@@ -353,12 +306,6 @@ planet:
         socioIndustrial: A-C-A-C-B
       - date: '3120-01-01'
         population: 494864897.0
-      - date: '3130-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CJF/LC
       - date: '3130-08-04'
         faction:
           source: canon
@@ -368,12 +315,6 @@ planet:
         population: 496053999.0
       - date: '3132-08-07'
         hpg: X
-      - date: '3135-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CJF/LC
       - date: '3135-01-15'
         faction:
           source: canon
@@ -383,12 +324,6 @@ planet:
         population: 497942591.0
       - date: '3145-01-01'
         population: 498341104.0
-      - date: '3152-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '3152-06-01'
         faction:
           source: canon

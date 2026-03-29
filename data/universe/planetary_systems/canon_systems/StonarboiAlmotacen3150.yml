@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Stonarboi (Almotacen 3150+)
-sucsId: 2417
+sucsId: 2416
 xcood: -99.116
 ycood: 309.722
 spectralType: G1V
@@ -186,12 +186,6 @@ planet:
         capital: Vorfolomeev
     event:
       - date: '2621-06-15'
-        # administration: LA | Tamar Pact | Tamar Domains
-        # administration: LA | Tamar Pact | Tamar Domains
-        # administration: LA | Tamar Pact | Tamar Domains
-        # administration: LA | Tamar Pact | Tamar Domains
-        # administration: LA | Tamar Pact | Tamar Domains
-        # administration: LA | Tamar Pact | Tamar Domains
         faction:
           source: canon
           value:
@@ -272,19 +266,13 @@ planet:
         hpg: X
         population: 0.0
         socioIndustrial: X-X-X-X-X
-      - date: '3152-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '3152-06-01'
         faction:
           source: canon
           value:
             - IND
         hiringHall:
-          source: HS:H
+          source: Hotspots Hinterlands
           value: MINOR
       - date: '2108-12-05'
         name: Stonarboi
@@ -354,7 +342,7 @@ planet:
     ring: yes
     smallMoons: 18
     satellite:
-      - name: 0E0
+      - name: 0E1
         size: large
         icon: rock9
   - name: Green's Rest

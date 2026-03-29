@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,17 +16,15 @@
 # affiliated with Microsoft.
 
 id: Ziliang
-sucsId: 2839
+sucsId: 2838
 xcood: 68.494
 ycood: -264.187
 spectralType:
-  source: 'HB:HD'
+  source: 'Handbook: House Davion, pg. 92'
   value: M6Ib
-  page: 92
 primarySlot:
-  source: 'HB:HD'
+  source: 'Handbook: House Davion, pg. 92'
   value: 5
-  page: 92
 event:
   - date: '2352-03-26'
     nadirCharge: yes
@@ -123,40 +121,40 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.08
     sysPos:
-      source: 'HB:HD'
+      source: 'Handbook: House Davion, pg. 92'
       value: 5
-      page: 92
     icon: green21
     pressure:
-      source: 'HB:HD'
+      source: 'Handbook: House Davion, pg. 92'
       value: STANDARD
-      page: 92
     atmosphere:
-      source: 'HB:HD'
+      source: 'Handbook: House Davion, pg. 92'
       value: TAINTED_POISON
-      page: 92
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'HB:HD'
+      source: 'Handbook: House Davion, pg. 92'
       value: 1.2
-      page: 92
     diameter: 14017
     density: 6.016542020294
     dayLength: 26
     yearLength: 0.4
     temperature:
-      source: 'HB:HD'
+      source: 'Handbook: House Davion, pg. 92'
       value: 47
-      page: 92
     water:
-      source: 'HB:HD'
+      source: 'Handbook: House Davion, pg. 92'
       value: 27
-      page: 92
     lifeForm:
-      source: 'HB:HD'
+      source: 'Handbook: House Davion, pg. 92'
       value: INSECT
-      page: 92
-    desc: Ziliang was primarily an unimportant backwater planet with a harsh climate supported primarily by mining. Located in the interior of the Capellan Confederation for most of its history the planet was relatively quiet and almost never saw military action during its history. However, the planet became an important military world after being captured by the Federated Suns near the end of the 3rd Succession War. While conditions have not improved significantly on planet there have been some areas of improvement; the mines have become safer and medicine and education on planet have marginally increased.
+    desc: Ziliang was primarily an unimportant backwater planet with a harsh climate
+      supported primarily by mining. Located in the interior of the Capellan Confederation
+      for most of its history the planet was relatively quiet and almost never saw
+      military action during its history. However, the planet became an important
+      military world after being captured by the Federated Suns near the end of the
+      3rd Succession War. While conditions have not improved significantly on planet
+      there have been some areas of improvement; the mines have become safer and medicine
+      and education on planet have marginally increased.
     smallMoons: 2
     landmass:
       - name: Moore's Field Alpha
@@ -193,12 +191,6 @@ planet:
       - date: '2360-01-01'
         population: 12088715.0
       - date: '2367-07-01'
-        # administration: CC | Sian Commonality | Region 5
-        # administration: CC | Sian Commonality | Region 5
-        # administration: CC | Sian Commonality | Region 5
-        # administration: CC | Sian Commonality | Region 5
-        # administration: CC | Sian Commonality | Region 5
-        # administration: CC | Sian Commonality | Region 5
         faction:
           source: canon
           value:
@@ -328,12 +320,6 @@ planet:
       - date: '2893-01-01'
         socioIndustrial: D-C-D-D-D
       - date: '2900-03-08'
-        # administration: FS | Capellan March | Taygeta Operational Area
-        # administration: FS | Capellan March | Taygeta Operational Area
-        # administration: FS | Capellan March | Taygeta Operational Area
-        # administration: FS | Capellan March | Taygeta Operational Area
-        # administration: FS | Capellan March | Taygeta Operational Area
-        # administration: FS | Capellan March | Taygeta Operational Area
         faction:
           source: canon
           value:
@@ -364,12 +350,6 @@ planet:
       - date: '3020-01-01'
         population: 108528493.0
       - date: '3025-07-27'
-        # administration: FS | Capellan March | Taygeta Operational Area
-        # administration: FS | Capellan March | Taygeta Operational Area
-        # administration: FS | Capellan March | Taygeta Operational Area
-        # administration: FS | Capellan March | Taygeta Operational Area
-        # administration: FS | Capellan March | Taygeta Operational Area
-        # administration: FS | Capellan March | Taygeta Operational Area
         faction:
           source: canon
           value:
@@ -382,25 +362,8 @@ planet:
       - date: '3030-01-01'
         population: 108743688.0
       - date: '3040-01-01'
-        # administration: FC | Capellan March | Taygeta Operational Area
-        # administration: FC | Capellan March | Taygeta Operational Area
-        # administration: FC | Capellan March | Taygeta Operational Area
-        # administration: FC | Capellan March | Taygeta Operational Area
-        # administration: FC | Capellan March | Taygeta Operational Area
-        # administration: FC | Capellan March | Taygeta Operational Area
         population: 109792655.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FC
       - date: '3040-01-19'
-        # administration: FC | Capellan March | Taygeta Operational Area
-        # administration: FC | Capellan March | Taygeta Operational Area
-        # administration: FC | Capellan March | Taygeta Operational Area
-        # administration: FC | Capellan March | Taygeta Operational Area
-        # administration: FC | Capellan March | Taygeta Operational Area
-        # administration: FC | Capellan March | Taygeta Operational Area
         faction:
           source: canon
           value:
@@ -414,27 +377,10 @@ planet:
       - date: '3060-01-01'
         population: 112077840.0
       - date: '3067-01-01'
-        # administration: FS | Capellan March | Taygeta Operational Area
-        # administration: FS | Capellan March | Taygeta Operational Area
-        # administration: FS | Capellan March | Taygeta Operational Area
-        # administration: FS | Capellan March | Taygeta Operational Area
-        # administration: FS | Capellan March | Taygeta Operational Area
-        # administration: FS | Capellan March | Taygeta Operational Area
         population:
           source: canon
           value: 112820000.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FS
       - date: '3067-04-20'
-        # administration: FS | Capellan March | Taygeta Operational Area
-        # administration: FS | Capellan March | Taygeta Operational Area
-        # administration: FS | Capellan March | Taygeta Operational Area
-        # administration: FS | Capellan March | Taygeta Operational Area
-        # administration: FS | Capellan March | Taygeta Operational Area
-        # administration: FS | Capellan March | Taygeta Operational Area
         faction:
           source: canon
           value:
@@ -449,12 +395,6 @@ planet:
       - date: '3100-01-01'
         population: 114022253.0
       - date: '3105-07-08'
-        # administration: CC | Sian Commonality | Region 7
-        # administration: CC | Sian Commonality | Region 7
-        # administration: CC | Sian Commonality | Region 7
-        # administration: CC | Sian Commonality | Region 7
-        # administration: CC | Sian Commonality | Region 7
-        # administration: CC | Sian Commonality | Region 7
         faction:
           source: canon
           value:

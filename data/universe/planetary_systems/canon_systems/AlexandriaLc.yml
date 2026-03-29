@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -20,13 +20,11 @@ sucsId: 65
 xcood: -57.639
 ycood: 115.993
 spectralType:
-  source: 'HB:HS'
+  source: 'Handbook: House Steiner, pg. 88'
   value: M4V
-  page: 88
 primarySlot:
-  source: 'HB:HS'
+  source: 'Handbook: House Steiner, pg. 88'
   value: 3
-  page: 88
 event:
   - date: '2389-10-31'
     zenithCharge: yes
@@ -70,58 +68,54 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.12
     sysPos:
-      source: 'HB:HS'
+      source: 'Handbook: House Steiner, pg. 88'
       value: 3
-      page: 88
     icon: wet17
     pressure:
-      source: 'HB:HS'
+      source: 'Handbook: House Steiner, pg. 88'
       value: STANDARD
-      page: 88
     atmosphere:
-      source: 'HB:HS'
+      source: 'Handbook: House Steiner, pg. 88'
       value: BREATHABLE
-      page: 88
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'HB:HS'
+      source: 'Handbook: House Steiner, pg. 88'
       value: 1.07
-      page: 88
     diameter: 15206
     density: 4.945098158016
     dayLength: 22
     yearLength: 0.5
     temperature:
-      source: 'HB:HS'
+      source: 'Handbook: House Steiner, pg. 88'
       value: 33
-      page: 88
     water:
-      source: 'HB:HS'
+      source: 'Handbook: House Steiner, pg. 88'
       value: 82
-      page: 88
     lifeForm:
-      source: 'HB:HS'
+      source: 'Handbook: House Steiner, pg. 88'
       value: REPTILE
-      page: 88
-    desc: Alexandria was once a wealthy planet covered in modern cities and was a cultural center with some of the most famous art collections in the entire Inner Sphere. The planet also boasted a strong industrial base and vast natural resources. Unfortunately, the Succession Wars took their toll and near constant raids and invasions of this planet have reduced the cities to shambles, the beautiful countryside to barren war-torn fields. The only traces of the planet’s former glory can be found in the remote cities of Lam Pole and Cherbourg, which have survived due to possessing no military value.
+    desc: Alexandria was once a wealthy planet covered in modern cities and was a
+      cultural center with some of the most famous art collections in the entire Inner
+      Sphere. The planet also boasted a strong industrial base and vast natural resources.
+      Unfortunately, the Succession Wars took their toll and near constant raids and
+      invasions of this planet have reduced the cities to shambles, the beautiful
+      countryside to barren war-torn fields. The only traces of the planet’s former
+      glory can be found in the remote cities of Lam Pole and Cherbourg, which have
+      survived due to possessing no military value.
     landmass:
       - name:
-          source: 'HB:HS'
+          source: 'Handbook: House Steiner, pg. 88'
           value: Cairusia
-          page: 88
       - name:
-          source: 'HB:HS'
+          source: 'Handbook: House Steiner, pg. 88'
           value: Jeddasia
-          page: 88
         capital:
-          source: 'HB:HS'
+          source: 'Handbook: House Steiner, pg. 88'
           value: Alexandretta
-          page: 88
     satellite:
       - name:
-          source: 'HB:HS'
+          source: 'Handbook: House Steiner, pg. 88'
           value: Sinai
-          page: 88
         size: medium
         icon: rock7
     event:
@@ -174,18 +168,6 @@ planet:
         socioIndustrial: D-D-C-D-B
       - date: '2310-01-01'
         population: 422233570.0
-      - date: '2317-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
-      - date: '2319-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FoS
       - date: '2320-01-01'
         population: 519991038.0
       - date: '2330-01-01'
@@ -193,12 +175,6 @@ planet:
       - date: '2340-01-01'
         population: 734219257.0
       - date: '2341-02-17'
-        # administration: LA | Federation of Skye
-        # administration: LA | Federation of Skye
-        # administration: LA | Federation of Skye
-        # administration: LA | Federation of Skye
-        # administration: LA | Federation of Skye
-        # administration: LA | Federation of Skye
         faction:
           source: canon
           value:
@@ -352,25 +328,8 @@ planet:
       - date: '3030-01-01'
         population: 1929859217.0
       - date: '3040-01-01'
-        # administration: FC | Skye March | Ryde Operational Area
-        # administration: FC | Skye March | Ryde Operational Area
-        # administration: FC | Skye March | Ryde Operational Area
-        # administration: FC | Skye March | Ryde Operational Area
-        # administration: FC | Skye March | Ryde Operational Area
-        # administration: FC | Skye March | Ryde Operational Area
         population: 1950034482.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FC
       - date: '3040-01-19'
-        # administration: FC | Skye March | Ryde Operational Area
-        # administration: FC | Skye March | Ryde Operational Area
-        # administration: FC | Skye March | Ryde Operational Area
-        # administration: FC | Skye March | Ryde Operational Area
-        # administration: FC | Skye March | Ryde Operational Area
-        # administration: FC | Skye March | Ryde Operational Area
         faction:
           source: canon
           value:
@@ -381,25 +340,7 @@ planet:
           value: D-D-C-D-B
       - date: '3050-01-01'
         population: 1967073796.0
-      - date: '3057-01-01'
-        # administration: LA | Skye March | Ryde Operational Area
-        # administration: LA | Skye March | Ryde Operational Area
-        # administration: LA | Skye March | Ryde Operational Area
-        # administration: LA | Skye March | Ryde Operational Area
-        # administration: LA | Skye March | Ryde Operational Area
-        # administration: LA | Skye March | Ryde Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LA
       - date: '3057-09-18'
-        # administration: LA | Skye Province | Freedom Theater
-        # administration: LA | Skye Province | Freedom Theater
-        # administration: LA | Skye Province | Freedom Theater
-        # administration: LA | Skye Province | Freedom Theater
-        # administration: LA | Skye Province | Freedom Theater
-        # administration: LA | Skye Province | Freedom Theater
         faction:
           source: canon
           value:
@@ -438,12 +379,6 @@ planet:
         population: 2071446293.0
       - date: '3145-01-01'
         population: 2073518775.0
-      - date: '3152-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '3152-06-01'
         faction:
           source: canon

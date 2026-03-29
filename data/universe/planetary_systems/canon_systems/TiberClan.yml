@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,17 +16,15 @@
 # affiliated with Microsoft.
 
 id: Tiber (Clan)
-sucsId: 2966
+sucsId: 2965
 xcood: 89.514
 ycood: 1876.731
 spectralType:
-  source: WoK
+  source: Warriors of Kerensky, pg. 112
   value: G8VI
-  page: 112
 primarySlot:
-  source: WoK
+  source: Warriors of Kerensky, pg. 112
   value: 3
-  page: 112
 event:
   - date: '2802-11-01'
     zenithCharge: yes
@@ -71,39 +69,32 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 1.28
     sysPos:
-      source: WoK
+      source: Warriors of Kerensky, pg. 112
       value: 3
-      page: 112
     icon: green51
     pressure:
-      source: WoK
+      source: Warriors of Kerensky, pg. 112
       value: STANDARD
-      page: 112
     atmosphere:
-      source: WoK
+      source: Warriors of Kerensky, pg. 112
       value: BREATHABLE
-      page: 112
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: WoK
+      source: Warriors of Kerensky, pg. 112
       value: 1.0
-      page: 112
     diameter: 11814
     density: 5.948500088969
     dayLength: 19
     yearLength: 1.7
     temperature:
-      source: WoK
+      source: Warriors of Kerensky, pg. 112
       value: 25
-      page: 112
     water:
-      source: WoK
+      source: Warriors of Kerensky, pg. 112
       value: 40
-      page: 112
     lifeForm:
-      source: WoK
+      source: Warriors of Kerensky, pg. 112
       value: REPTILE
-      page: 112
     desc: No description available.
     landmass:
       - name: Puerto de Delgado
@@ -134,12 +125,6 @@ planet:
         population: 1003241.0
       - date: '2860-01-01'
         population: 1490865.0
-      - date: '2864-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CLAN
       - date: '2864-10-16'
         faction:
           source: canon
@@ -203,12 +188,6 @@ planet:
           value:
             - CCO
             - CHH
-      - date: '3075-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CLAN
       - date: '3075-06-01'
         faction:
           source: canon
@@ -219,11 +198,6 @@ planet:
         population:
           source: canon
           value: 5300000.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CLAN
       - date: '3080-01-01'
         population: 5306364.0
       - date: '3085-08-15'

@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 id: Son Hoa
-sucsId: 2375
+sucsId: 2374
 xcood: -421.047
 ycood: -36.494
 spectralType:
@@ -68,7 +68,15 @@ planet:
     lifeForm:
       source: canon
       value: AMPHIBIAN
-    desc: Son Hoa is home to the Vanishing Sea, so named due to the unique climate of Son Hoa that results in the Sea completely evaporating during the scorching hot summer months only to return again in the rainy season when the temperatures drop. Son Hoa is home to a StarCorps Industries BattleMech factory, located on the coast of the Vanishing Sea. in the city of Quasong on the Sheng Chen continent. The factories have suffered damage of the centuries but continue to churn out ‘Mechs. Son Hoa is a temperate planet with abundant natural resources and a significant industrial base, with just enough arable land set aside to feed the population.
+    desc: Son Hoa is home to the Vanishing Sea, so named due to the unique climate
+      of Son Hoa that results in the Sea completely evaporating during the scorching
+      hot summer months only to return again in the rainy season when the temperatures
+      drop. Son Hoa is home to a StarCorps Industries BattleMech factory, located
+      on the coast of the Vanishing Sea. in the city of Quasong on the Sheng Chen
+      continent. The factories have suffered damage of the centuries but continue
+      to churn out ‘Mechs. Son Hoa is a temperate planet with abundant natural resources
+      and a significant industrial base, with just enough arable land set aside to
+      feed the population.
     smallMoons: 8
     landmass:
       - name:
@@ -85,12 +93,6 @@ planet:
           value: Xiang
     event:
       - date: '2432-01-15'
-        # administration: LA | Protectorate of Donegal | Alarion Province
-        # administration: LA | Protectorate of Donegal | Alarion Province
-        # administration: LA | Protectorate of Donegal | Alarion Province
-        # administration: LA | Protectorate of Donegal | Alarion Province
-        # administration: LA | Protectorate of Donegal | Alarion Province
-        # administration: LA | Protectorate of Donegal | Alarion Province
         faction:
           source: canon
           value:
@@ -234,25 +236,8 @@ planet:
       - date: '3038-01-01'
         socioIndustrial: B-B-C-B-C
       - date: '3040-01-01'
-        # administration: FC | Periphery March | Venaria Operational Area
-        # administration: FC | Periphery March | Venaria Operational Area
-        # administration: FC | Periphery March | Venaria Operational Area
-        # administration: FC | Periphery March | Venaria Operational Area
-        # administration: FC | Periphery March | Venaria Operational Area
-        # administration: FC | Periphery March | Venaria Operational Area
         population: 133138941.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FC
       - date: '3040-01-19'
-        # administration: FC | Periphery March | Venaria Operational Area
-        # administration: FC | Periphery March | Venaria Operational Area
-        # administration: FC | Periphery March | Venaria Operational Area
-        # administration: FC | Periphery March | Venaria Operational Area
-        # administration: FC | Periphery March | Venaria Operational Area
-        # administration: FC | Periphery March | Venaria Operational Area
         faction:
           source: canon
           value:
@@ -263,25 +248,7 @@ planet:
           value: A-A-B-A-C
       - date: '3050-01-01'
         population: 134477010.0
-      - date: '3057-01-01'
-        # administration: LA | Periphery March | Venaria Operational Area
-        # administration: LA | Periphery March | Venaria Operational Area
-        # administration: LA | Periphery March | Venaria Operational Area
-        # administration: LA | Periphery March | Venaria Operational Area
-        # administration: LA | Periphery March | Venaria Operational Area
-        # administration: LA | Periphery March | Venaria Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LA
       - date: '3057-09-18'
-        # administration: LA | Alarion Province | Timbuktu Theater
-        # administration: LA | Alarion Province | Timbuktu Theater
-        # administration: LA | Alarion Province | Timbuktu Theater
-        # administration: LA | Alarion Province | Timbuktu Theater
-        # administration: LA | Alarion Province | Timbuktu Theater
-        # administration: LA | Alarion Province | Timbuktu Theater
         faction:
           source: canon
           value:
@@ -302,12 +269,6 @@ planet:
         socioIndustrial: A-A-B-A-C
       - date: '3120-01-01'
         population: 140399686.0
-      - date: '3130-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '3130-08-16'
         faction:
           source: canon

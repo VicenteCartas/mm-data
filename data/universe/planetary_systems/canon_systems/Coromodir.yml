@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -163,12 +163,6 @@ planet:
         icon: rock13
     event:
       - date: '2735-11-16'
-        # administration: TC | Brinton Union
-        # administration: TC | Brinton Union
-        # administration: TC | Brinton Union
-        # administration: TC | Brinton Union
-        # administration: TC | Brinton Union
-        # administration: TC | Brinton Union
         faction:
           source: canon
           value:
@@ -210,7 +204,6 @@ planet:
           source: sucs
           value:
             - ABN
-    desc: Coromodir V is a hot world where agriculture and mining form the bulk of its industry. Native flora competes with imported Earth species, and a particularly aggressive thorned vine has resisted all eradication campaigns. Most residents live on the temperate southern landmasses along the shorelines of the planet's single large equatorial ocean. The northern hemisphere is arid and hot, transitioning to savannah and forest near the arctic circle where agriculture thrives using water from the northern ice cap.
   - name:
       source: canon
       value: Coromodir
@@ -245,17 +238,14 @@ planet:
     lifeForm:
       source: canon
       value: REPTILE
+    smallMoons:
+      source: canon
+      value: 7
     landmass:
       - name: Dison
         capital: Cordia City
     event:
       - date: '2735-11-16'
-        # administration: TC | Brinton Union
-        # administration: TC | Brinton Union
-        # administration: TC | Brinton Union
-        # administration: TC | Brinton Union
-        # administration: TC | Brinton Union
-        # administration: TC | Brinton Union
         faction:
           source: canon
           value:
@@ -287,18 +277,6 @@ planet:
           source: canon
           value:
             - IND
-      - date: '2821-01-01'
-        # administration: TC | Brinton Union
-        # administration: TC | Brinton Union
-        # administration: TC | Brinton Union
-        # administration: TC | Brinton Union
-        # administration: TC | Brinton Union
-        # administration: TC | Brinton Union
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - TC
       - date: '2910-01-01'
         faction:
           source: canon
@@ -309,18 +287,6 @@ planet:
           source: This is the earliest the directorate could have taken over
           value:
             - ARD
-      - date: '3025-01-01'
-        # administration: ARC | National Capital
-        # administration: ARC | National Capital
-        # administration: ARC | National Capital
-        # administration: ARC | National Capital
-        # administration: ARC | National Capital
-        # administration: ARC | National Capital
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - ARC
       - date: '3026-01-01'
         faction:
           source: canon
@@ -332,60 +298,11 @@ planet:
         socioIndustrial:
           source: canon
           value: C-C-A-C-A
-      - date: '3030-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - ABN
       - date: '3151-01-01'
         faction:
           source: sucs
           value:
             - ABN
-      - date: '3152-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
-    desc: Coromodir VI is the capital of the Aurigan Coalition. A cool, temperate world with seven moons, the planet's industry and commerce center on the massive capital of Cordia City and the starport dominating the coast and major river of the single large continent. Nearly two billion people call Coromodir VI home, spread between agrarian countryside towns, large coastal cities, and the capital. At the center of Cordia City stands a centuries-old Taurian fortress of concentric defensive rings surrounding a titanium and concrete castle built to resemble a crystal formation. The former Taurian orbital industrial platform over Coromodir VI has become a second capital, with officials shuttling between the station and Cordia City.
-    satellite:
-      - name:
-          source: Arano
-          value: Nadi
-          page: 33
-        size: medium
-      - name:
-          source: Arano
-          value: Lyris
-          page: 33
-        size: medium
-      - name:
-          source: Arano
-          value: Ba
-          page: 33
-        size: medium
-      - name:
-          source: Arano
-          value: Tavau
-          page: 33
-        size: medium
-      - name:
-          source: Arano
-          value: Rakiraki
-          page: 33
-        size: medium
-      - name:
-          source: Arano
-          value: Volivoli
-          page: 33
-        size: medium
-      - name:
-          source: Arano
-          value: Barotu
-          page: 33
-        size: medium
   - name: Jackson's Planet
     type: GAS_GIANT
     orbitalDist: 10.0

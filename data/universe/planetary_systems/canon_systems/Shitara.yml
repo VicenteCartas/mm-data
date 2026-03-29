@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: Shitara
-sucsId: 2322
+sucsId: 2321
 xcood: 41.613
 ycood: 87.121
 spectralType:
-  source: DA:RW
+  source: MWDA world profiles
   value: K6VI
 primarySlot:
-  source: DA:RW
+  source: MWDA world profiles
   value: 2
 event:
   - date: '2350-09-06'
@@ -62,60 +62,88 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.42
     sysPos:
-      source: DA:RW
+      source: MWDA world profiles
       value: 2
     icon: green54
     pressure:
-      source: DA:RW
+      source: MWDA world profiles
       value: STANDARD
     atmosphere:
-      source: DA:RW
+      source: MWDA world profiles
       value: BREATHABLE
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: DA:RW
+      source: MWDA world profiles
       value: 1.19
     diameter: 14460
     density: 5.78344903977
     dayLength: 24
     yearLength: 0.8
     temperature:
-      source: DA:RW
+      source: MWDA world profiles
       value: 36
     water:
-      source: DA:RW
+      source: MWDA world profiles
       value: 63
     lifeForm:
-      source: DA:RW
+      source: MWDA world profiles
       value: REPTILE
-    desc: "3135 - Founded by a group of corporations in the early days of deep-space colonization, Shitara, a world of large landmasses covered with arid mountains, expansive deserts and winding grasslands, was not settled for its appearance but for its potential as a regional commercial hub. Shitara‘s five main continents—Agito, Hokaido, Niijo, Okasaki and Zumi—all fall within the world‘s temperate, tropical and equatorial zones but lack many inland freshwater bodies. The rugged terrain and relative lack of suitable irrigation made colonies difficult to establish, but the corporate engineers who laid out the design for Shitara‘s settlement were less concerned with comfort than with setting up business operations. Several of the planet‘s first colonies, as a result, were large warehouses, spaceports and mining/refining stations. In the decades that followed, as Shitara became a jumping-off point for further colonial expansion and a center for trade, more settlers came to call this world home. Large commercial cities arose, particularly along the river valleys of Okasaki and Zumi, including the present-day capital of Hirotomi. Even a few agricultural communities began to appear to support the local population. Located well within the Draconis Combine‘s borders after that nation expanded to include it and its neighbors, Shitara was spared much of the fighting during the Amaris crisis and the Succession Wars. Raids by the Dragon‘s enemies were rare, and Shitara prospered, its nearly thirty major spaceport cities making it an ideal hub for commercial and military transport. During the Jihad, in fact, Shitara was used as a staging ground for strikes against the Blakists, serving as a logistical linchpin for several major campaigns. Today, Shitara continues to be a transportation and commercial hub, with major cities and spaceports on all five continents. Recently, the planet‘s robust economy and healthy metal resources have attracted the attention of Klein Manufacturing, a small but growing producer of industrial vehicles, including ConstructionMechs and MiningMechs. Klein Manufacturing is currently negotiating with the Shitara government to establish a major factory complex in the foothills of Agito, just outside the commercial city of Galveston.\n "
+    desc: "3135 - Founded by a group of corporations in the early days of deep-space
+      colonization, Shitara, a world of large landmasses covered with arid mountains,
+      expansive deserts and winding grasslands, was not settled for its appearance
+      but for its potential as a regional commercial hub. Shitara‘s five main continents—Agito,
+      Hokaido, Niijo, Okasaki and Zumi—all fall within the world‘s temperate, tropical
+      and equatorial zones but lack many inland freshwater bodies. The rugged terrain
+      and relative lack of suitable irrigation made colonies difficult to establish,
+      but the corporate engineers who laid out the design for Shitara‘s settlement
+      were less concerned with comfort than with setting up business operations. Several
+      of the planet‘s first colonies, as a result, were large warehouses, spaceports
+      and mining/refining stations. In the decades that followed, as Shitara became
+      a jumping-off point for further colonial expansion and a center for trade, more
+      settlers came to call this world home. Large commercial cities arose, particularly
+      along the river valleys of Okasaki and Zumi, including the present-day capital
+      of Hirotomi. Even a few agricultural communities began to appear to support
+      the local population. Located well within the Draconis Combine‘s borders after
+      that nation expanded to include it and its neighbors, Shitara was spared much
+      of the fighting during the Amaris crisis and the Succession Wars. Raids by the
+      Dragon‘s enemies were rare, and Shitara prospered, its nearly thirty major spaceport
+      cities making it an ideal hub for commercial and military transport. During
+      the Jihad, in fact, Shitara was used as a staging ground for strikes against
+      the Blakists, serving as a logistical linchpin for several major campaigns.
+      Today, Shitara continues to be a transportation and commercial hub, with major
+      cities and spaceports on all five continents. Recently, the planet‘s robust
+      economy and healthy metal resources have attracted the attention of Klein Manufacturing,
+      a small but growing producer of industrial vehicles, including ConstructionMechs
+      and MiningMechs. Klein Manufacturing is currently negotiating with the Shitara
+      government to establish a major factory complex in the foothills of Agito, just
+      outside the commercial city of Galveston.\n "
     landmass:
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Agito
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Hokaido
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Niijo
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Okasaki
         capital:
-          source: DA:RW
+          source: MWDA world profiles
           value: Hirotomi
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Zumi
     satellite:
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Naramu
         size: medium
         icon: oddmoon2
       - name:
-          source: DA:RW
+          source: MWDA world profiles
           value: Tenga
         size: medium
         icon: oddmoon3
@@ -148,12 +176,6 @@ planet:
         population: 16512493.0
       - date: '2340-01-01'
         population: 28754786.0
-      - date: '2341-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '2350-01-01'
         population: 45958495.0
       - date: '2360-01-01'
@@ -202,18 +224,6 @@ planet:
         population: 838337127.0
       - date: '2570-01-01'
         population: 847291984.0
-      - date: '2571-01-01'
-        # administration: DC | Benjamin Military District | Kuzuu Prefecture
-        # administration: DC | Benjamin Military District | Kuzuu Prefecture
-        # administration: DC | Benjamin Military District | Kuzuu Prefecture
-        # administration: DC | Benjamin Military District | Kuzuu Prefecture
-        # administration: DC | Benjamin Military District | Kuzuu Prefecture
-        # administration: DC | Benjamin Military District | Kuzuu Prefecture
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - DC
       - date: '2580-01-01'
         population: 855511192.0
       - date: '2588-01-01'
@@ -327,12 +337,6 @@ planet:
         population: 641275101.0
       - date: '3070-01-01'
         population: 649731071.0
-      - date: '3075-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - AB
       - date: '3075-10-31'
         faction:
           source: canon
@@ -340,25 +344,7 @@ planet:
             - AB
       - date: '3080-01-01'
         population: 657706340.0
-      - date: '3081-01-01'
-        # administration: ROS | Prefecture II
-        # administration: ROS | Prefecture II
-        # administration: ROS | Prefecture II
-        # administration: ROS | Prefecture II
-        # administration: ROS | Prefecture II
-        # administration: ROS | Prefecture II
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - ROS
       - date: '3081-07-28'
-        # administration: ROS | Prefecture II
-        # administration: ROS | Prefecture II
-        # administration: ROS | Prefecture II
-        # administration: ROS | Prefecture II
-        # administration: ROS | Prefecture II
-        # administration: ROS | Prefecture II
         faction:
           source: canon
           value:
@@ -377,12 +363,6 @@ planet:
         population: 690874744.0
       - date: '3132-08-07'
         hpg: X
-      - date: '3135-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '3135-10-01'
         faction:
           source: canon
@@ -390,25 +370,7 @@ planet:
             - IND
       - date: '3140-01-01'
         population: 696563208.0
-      - date: '3145-01-01'
-        # administration: DC | Dieron Military District | Algedi Prefecture
-        # administration: DC | Dieron Military District | Algedi Prefecture
-        # administration: DC | Dieron Military District | Algedi Prefecture
-        # administration: DC | Dieron Military District | Algedi Prefecture
-        # administration: DC | Dieron Military District | Algedi Prefecture
-        # administration: DC | Dieron Military District | Algedi Prefecture
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - DC
       - date: '3145-10-22'
-        # administration: DC | Dieron Military District | Algedi Prefecture
-        # administration: DC | Dieron Military District | Algedi Prefecture
-        # administration: DC | Dieron Military District | Algedi Prefecture
-        # administration: DC | Dieron Military District | Algedi Prefecture
-        # administration: DC | Dieron Military District | Algedi Prefecture
-        # administration: DC | Dieron Military District | Algedi Prefecture
         faction:
           source: canon
           value:

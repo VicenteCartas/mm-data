@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,14 +16,14 @@
 # affiliated with Microsoft.
 
 id: Thessalonika
-sucsId: 2531
+sucsId: 2530
 xcood: 74.182
 ycood: 304.712
 spectralType:
-  source: HB:HK
+  source: House Kurita
   value: G0V
 primarySlot:
-  source: HB:HK
+  source: House Kurita
   value: 3
 event:
   - date: '2350-08-08'
@@ -67,7 +67,7 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 1.1
     sysPos:
-      source: HB:HK
+      source: House Kurita
       value: 3
     icon: green21
     pressure: STANDARD
@@ -81,13 +81,18 @@ planet:
     temperature: 34
     water: 29
     lifeForm:
-      source: HB:HK
+      source: House Kurita
       value: MAMMAL
-    desc: Thessalonika is a relatively comfortable temperate planet with large grassy plains and an abundance of life, despite possessing only one relatively small sea. The planet’s only industries outside of agriculture involve petroleum and veins of natural gemstones. Militarily the only famous feature on Thessalonika is the Tyrsis McNeil Museum which dedicates itself to the preservation of military technology. The museum is located in Tyrsis, the planetary capital.
+    desc: Thessalonika is a relatively comfortable temperate planet with large grassy
+      plains and an abundance of life, despite possessing only one relatively small
+      sea. The planet’s only industries outside of agriculture involve petroleum and
+      veins of natural gemstones. Militarily the only famous feature on Thessalonika
+      is the Tyrsis McNeil Museum which dedicates itself to the preservation of military
+      technology. The museum is located in Tyrsis, the planetary capital.
     smallMoons: 3
     landmass:
       - capital:
-          source: HB:HK
+          source: House Kurita
           value: Tyrsis
     satellite:
       - name: Titans
@@ -98,12 +103,6 @@ planet:
         icon: oddmoon2
     event:
       - date: '2322-11-30'
-        # administration: DC | Rasalhague Military District | Tinaca Prefecture
-        # administration: DC | Rasalhague Military District | Tinaca Prefecture
-        # administration: DC | Rasalhague Military District | Tinaca Prefecture
-        # administration: DC | Rasalhague Military District | Tinaca Prefecture
-        # administration: DC | Rasalhague Military District | Tinaca Prefecture
-        # administration: DC | Rasalhague Military District | Tinaca Prefecture
         faction:
           source: canon
           value:
@@ -299,12 +298,6 @@ planet:
       - date: '3100-01-01'
         population: 306202464.0
       - date: '3103-03-13'
-        # administration: RD | Region 2
-        # administration: RD | Region 2
-        # administration: RD | Region 2
-        # administration: RD | Region 2
-        # administration: RD | Region 2
-        # administration: RD | Region 2
         faction:
           source: canon
           value:
@@ -355,10 +348,10 @@ planet:
     ring: yes
     smallMoons: 21
     satellite:
-      - name: 0E00
+      - name: 0E21
         size: medium
         icon: oddmoon3
-      - name: 0E00
+      - name: 0E22
         size: medium
         icon: rock11
   - name: Kolettis's Sacrifice

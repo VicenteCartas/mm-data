@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -23,9 +23,8 @@ spectralType:
   source: canon
   value: M2V
 primarySlot:
-  source: Per1e
+  source: Periphery (1ed), pg. 127
   value: 4
-  page: 127
 planet:
   - name: Ch'ang Mu
     type: TERRESTRIAL
@@ -90,9 +89,8 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.16
     sysPos:
-      source: Per1e
+      source: Periphery (1ed), pg. 127
       value: 4
-      page: 127
     icon: green7
     pressure: HIGH
     atmosphere: BREATHABLE
@@ -105,9 +103,8 @@ planet:
     temperature: 24
     water: 60
     lifeForm:
-      source: Per1e
+      source: Periphery (1ed), pg. 127
       value: MAMMAL
-      page: 127
     desc: No description available.
     smallMoons: 3
     landmass:
@@ -116,12 +113,6 @@ planet:
       - name: Barrett
     event:
       - date: '2637-01-22'
-        # administration: RWR | Apollo Province
-        # administration: RWR | Apollo Province
-        # administration: RWR | Apollo Province
-        # administration: RWR | Apollo Province
-        # administration: RWR | Apollo Province
-        # administration: RWR | Apollo Province
         faction:
           source: canon
           value:
@@ -231,12 +222,6 @@ planet:
         population: 82358849.0
       - date: '3042-01-01'
         socioIndustrial: B-D-A-C-A
-      - date: '3049-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - CJF
       - date: '3049-08-17'
         faction:
           source: canon
@@ -260,12 +245,6 @@ planet:
             - CHH
       - date: '3080-01-01'
         population: 85677128.0
-      - date: '3085-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '3090-01-01'
         population: 86330755.0
       - date: '3092-01-01'
@@ -283,11 +262,6 @@ planet:
         population: 86624779.0
       - date: '3130-01-01'
         population: 86815564.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '3140-01-01'
         population: 86832928.0
       - date: '3145-01-01'

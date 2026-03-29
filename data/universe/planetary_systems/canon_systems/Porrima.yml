@@ -1,4 +1,4 @@
-# MegaMek Data (C) 2025-2026 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
+# MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # NOTICE: The MegaMek organization is a non-profit group of volunteers
@@ -16,17 +16,15 @@
 # affiliated with Microsoft.
 
 id: Porrima
-sucsId: 2052
+sucsId: 2051
 xcood: -113.987
 ycood: 139.279
 spectralType:
-  source: 'HB:HS'
+  source: 'Handbook: House Steiner, pg. 86'
   value: K3V
-  page: 86
 primarySlot:
-  source: 'HB:HS'
+  source: 'Handbook: House Steiner, pg. 86'
   value: 2
-  page: 86
 event:
   - date: '2355-08-24'
     nadirCharge: yes
@@ -66,53 +64,58 @@ planet:
     type: TERRESTRIAL
     orbitalDist: 0.49
     sysPos:
-      source: 'HB:HS'
+      source: 'Handbook: House Steiner, pg. 86'
       value: 2
-      page: 86
     icon: green17
     pressure:
-      source: 'HB:HS'
+      source: 'Handbook: House Steiner, pg. 86'
       value: STANDARD
-      page: 86
     atmosphere:
-      source: 'HB:HS'
+      source: 'Handbook: House Steiner, pg. 86'
       value: BREATHABLE
-      page: 86
     composition: Nitrogen and Oxygen, plus trace gases
     gravity:
-      source: 'HB:HS'
+      source: 'Handbook: House Steiner, pg. 86'
       value: 0.74
-      page: 86
     diameter: 10636
     density: 4.88956323155
     dayLength: 21
     yearLength: 0.9
     temperature:
-      source: 'HB:HS'
+      source: 'Handbook: House Steiner, pg. 86'
       value: 50
-      page: 86
     water:
-      source: 'HB:HS'
+      source: 'Handbook: House Steiner, pg. 86'
       value: 71
-      page: 86
     lifeForm:
-      source: 'HB:HS'
+      source: 'Handbook: House Steiner, pg. 86'
       value: BIRD
-      page: 86
-    desc: Porrima is a world rich in resources, including ample quantities of industrial metals, and precious gems. Fertile soil, an abundant water supply and a warm climate make Porriman a thriving agriculture world. Every sixty-two years the planet goes through a harsh weather cycle known as “wet seasons”. The “wet seasons” consist of weeks of heavy rainfall, deadly lightning, and hurricane-force winds.  These powerful “wet seasons” are brought on by the gravitational pull from Porrima’s inward neighbor, Chira. This results in a planetary “wobble”, throwing the weather into a furor. Unprepared, Porriman’s first settlers were washed away. Colonists have since taken precautions to prevent disasters during the “wet seasons”. Colonies have moved to higher elevations, and cities are built with safeguards to circumvent the effects of the destructive “wet seasons”. On the southern temperate continent of Marsdentica lies Allison City, the planetary Capital.  Allison City is built with high walls and a series of channels that prevents the overflow of the Equanica and Giovanni rivers. The north polar supercontinent of Steinerheim is the main source of the planet’s mining and agriculture. Settlements on this continent are far enough inland that the storms have less effect on the population.
+    desc: Porrima is a world rich in resources, including ample quantities of industrial
+      metals, and precious gems. Fertile soil, an abundant water supply and a warm
+      climate make Porriman a thriving agriculture world. Every sixty-two years the
+      planet goes through a harsh weather cycle known as “wet seasons”. The “wet seasons”
+      consist of weeks of heavy rainfall, deadly lightning, and hurricane-force winds.  These
+      powerful “wet seasons” are brought on by the gravitational pull from Porrima’s
+      inward neighbor, Chira. This results in a planetary “wobble”, throwing the weather
+      into a furor. Unprepared, Porriman’s first settlers were washed away. Colonists
+      have since taken precautions to prevent disasters during the “wet seasons”.
+      Colonies have moved to higher elevations, and cities are built with safeguards
+      to circumvent the effects of the destructive “wet seasons”. On the southern
+      temperate continent of Marsdentica lies Allison City, the planetary Capital.  Allison
+      City is built with high walls and a series of channels that prevents the overflow
+      of the Equanica and Giovanni rivers. The north polar supercontinent of Steinerheim
+      is the main source of the planet’s mining and agriculture. Settlements on this
+      continent are far enough inland that the storms have less effect on the population.
     landmass:
       - name:
-          source: 'HB:HS'
+          source: 'Handbook: House Steiner, pg. 86'
           value: Marsdentica
-          page: 86
         capital:
-          source: 'HB:HS'
+          source: 'Handbook: House Steiner, pg. 86'
           value: Allison City
-          page: 86
       - name:
-          source: 'HB:HS'
+          source: 'Handbook: House Steiner, pg. 86'
           value: Steinerheim
-          page: 86
     event:
       - date: '2268-07-14'
         faction:
@@ -146,12 +149,6 @@ planet:
         population: 108372906.0
       - date: '2360-01-01'
         population: 170495066.0
-      - date: '2366-01-01'
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - IND
       - date: '2370-01-01'
         population: 252760198.0
       - date: '2380-01-01'
@@ -196,18 +193,6 @@ planet:
         population: 2388943072.0
       - date: '2570-01-01'
         population: 2459576316.0
-      - date: '2571-01-01'
-        # administration: LA | Protectorate of Donegal | District of Donegal
-        # administration: LA | Protectorate of Donegal | District of Donegal
-        # administration: LA | Protectorate of Donegal | District of Donegal
-        # administration: LA | Protectorate of Donegal | District of Donegal
-        # administration: LA | Protectorate of Donegal | District of Donegal
-        # administration: LA | Protectorate of Donegal | District of Donegal
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LA
       - date: '2580-01-01'
         population: 2527430856.0
       - date: '2590-01-01'
@@ -315,25 +300,8 @@ planet:
       - date: '3036-01-01'
         socioIndustrial: C-C-D-C-C
       - date: '3040-01-01'
-        # administration: FC | Donegal March | Pherkad Operational Area
-        # administration: FC | Donegal March | Pherkad Operational Area
-        # administration: FC | Donegal March | Pherkad Operational Area
-        # administration: FC | Donegal March | Pherkad Operational Area
-        # administration: FC | Donegal March | Pherkad Operational Area
-        # administration: FC | Donegal March | Pherkad Operational Area
         population: 2094822426.0
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - FC
       - date: '3040-01-19'
-        # administration: FC | Donegal March | Pherkad Operational Area
-        # administration: FC | Donegal March | Pherkad Operational Area
-        # administration: FC | Donegal March | Pherkad Operational Area
-        # administration: FC | Donegal March | Pherkad Operational Area
-        # administration: FC | Donegal March | Pherkad Operational Area
-        # administration: FC | Donegal March | Pherkad Operational Area
         faction:
           source: canon
           value:
@@ -344,25 +312,7 @@ planet:
           value: B-B-C-B-B
       - date: '3050-01-01'
         population: 2121808495.0
-      - date: '3057-01-01'
-        # administration: LA | Donegal March | Pherkad Operational Area
-        # administration: LA | Donegal March | Pherkad Operational Area
-        # administration: LA | Donegal March | Pherkad Operational Area
-        # administration: LA | Donegal March | Pherkad Operational Area
-        # administration: LA | Donegal March | Pherkad Operational Area
-        # administration: LA | Donegal March | Pherkad Operational Area
-        faction:
-          source: SUCS
-          version: 2026.03.02
-          value:
-            - LA
       - date: '3057-09-18'
-        # administration: LA | Donegal Province
-        # administration: LA | Donegal Province
-        # administration: LA | Donegal Province
-        # administration: LA | Donegal Province
-        # administration: LA | Donegal Province
-        # administration: LA | Donegal Province
         faction:
           source: canon
           value:
