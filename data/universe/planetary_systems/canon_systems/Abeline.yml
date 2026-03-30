@@ -26,6 +26,17 @@ planet:
       value: Abeline
     type: TERRESTRIAL
     sysPos: 1
+    pressure: STANDARD
+    atmosphere: BREATHABLE
+    composition: Nitrogen and Oxygen, plus trace gases
+    gravity: 0.95
+    diameter: 11200
+    density: 5.97
+    dayLength: 22
+    yearLength: 1.3
+    temperature: 28
+    water: 55
+    lifeForm: PLANT
     event:
       - date: '2750-01-01'
         population: 48402.0
@@ -61,17 +72,6 @@ planet:
         message: Abeline renamed to Taygete
         population: 0.0
         socioIndustrial: X-X-X-X-X
-    orbitalDist: 1.92
-    atmosphere: BREATHABLE
-    composition: Nitrogen and Oxygen, plus trace gases
-    gravity: 0.86
-    diameter: 12900
-    density: 4.6818
-    dayLength: 23
-    yearLength: 2.9
-    temperature: 27
-    water: 49
-    lifeForm: FISH
     icon: green8
   - name: Abeline II
     type: TERRESTRIAL
@@ -189,4 +189,4 @@ planet:
     yearLength: 891.7
     ring: true
     smallMoons: 15
-primarySlot: 3
+primarySlot: 1
