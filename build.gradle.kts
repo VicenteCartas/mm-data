@@ -35,12 +35,12 @@ tasks.withType(Checkstyle::class.java).configureEach {
 var stagingFolder = File(project.layout.buildDirectory.get().toString(), "staging")
 
 dependencies {
-    implementation("com.puppycrawl.tools:checkstyle:12.3.1")
+    implementation("com.puppycrawl.tools:checkstyle:13.4.0")
 }
 
 java {
     toolchain {
-        languageVersion = JavaLanguageVersion.of(17)
+        languageVersion = JavaLanguageVersion.of(21)
     }
 }
 
