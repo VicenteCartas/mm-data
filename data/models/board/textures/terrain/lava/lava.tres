@@ -1,31 +1,25 @@
-[gd_resource type="StandardMaterial3D" load_steps=5 format=2]
-[ext_resource path="lava_albedo.png" type="Texture" id=1]
-[ext_resource path="lava_orm.png" type="Texture" id=2]
-[ext_resource path="lava_normal.png" type="Texture" id=3]
-[ext_resource path="lava_heightmap.png" type="Texture" id=4]
-[ext_resource path="lava_emission.png" type="Texture" id=5]
-[resource]
-albedo_color = Color(1.0, 1.0, 1.0, 1.0)
-albedo_texture = ExtResource( 1 )
-metallic = 0.0
-roughness = 1.0
-roughness_texture = ExtResource( 2 )
-roughness_texture_channel = 1
-normal_enabled = true
-normal_scale = 1.0
-normal_texture = ExtResource( 3 )
-emission_enabled = true
-emission = Color( 0, 0, 0, 1 )
-emission_energy = 5.0
-emission_operator = 0
-emission_texture = ExtResource( 5 )
-ao_enabled = true
-ao_texture = ExtResource( 2 )
-ao_texture_channel = 0
-heightmap_enabled = true
-heightmap_scale = 0.5098039215686274
-heightmap_deep_parallax = true
-heightmap_min_layers = 8
-heightmap_max_layers = 32
-heightmap_texture = ExtResource( 4 )
+[gd_resource type="ShaderMaterial" load_steps=8 format=3]
 
+[ext_resource type="Shader" path="lava.gdshader" id="1_shader"]
+[ext_resource type="Texture2D" path="lava_albedo.png" id="2_albedo"]
+[ext_resource type="Texture2D" path="lava_orm.png" id="3_orm"]
+[ext_resource type="Texture2D" path="lava_normal.png" id="4_normal"]
+[ext_resource type="Texture2D" path="lava_heightmap.png" id="5_heightmap"]
+[ext_resource type="Texture2D" path="lava_emission.png" id="6_emission"]
+[ext_resource type="Texture2D" path="lava_coverage.png" id="7_coverage"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_shader")
+shader_parameter/albedo = Color(1, 1, 1, 1)
+shader_parameter/texture_albedo = ExtResource("2_albedo")
+shader_parameter/texture_orm = ExtResource("3_orm")
+shader_parameter/roughness = 1.0
+shader_parameter/metallic = 0.0
+shader_parameter/texture_normal = ExtResource("4_normal")
+shader_parameter/normal_scale = 1.0
+shader_parameter/texture_heightmap = ExtResource("5_heightmap")
+shader_parameter/heightmap_scale = 0.5098039215686274
+shader_parameter/texture_emission = ExtResource("6_emission")
+shader_parameter/emission_energy = 5.0
+shader_parameter/texture_coverage = ExtResource("7_coverage")
