@@ -65,7 +65,8 @@ The game keeps a loose material's texel density. Export grass, catalogued at 512
 4 m, at 1024 pixels and it covers 8 m before repeating. The pattern then also needs
 to be twice as large in the project, for example by doubling its feature counts and
 *Repeat (metres)*. Its maps must stay square. To change a density instead, change `metres`
-in the catalogue. Catalogue every new material too: a loose one needs its entry to load,
+in the catalogue; *Reload assets* in the game's Tuning panel re-reads it and shows the new
+density at once. Catalogue every new material too: a loose one needs its entry to load,
 and megamek's `GpuBoardMaterialsTest` requires every material to be listed.
 
 ## Exporting
