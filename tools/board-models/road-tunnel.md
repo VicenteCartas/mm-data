@@ -9,10 +9,10 @@ Both use one LOD0. The bridge portal has no `tunnel-wings` part; the arch, deep
 shell and lining are identical.
 
 The portal and lining use the dedicated repeating
-`data/models/board/textures/scenery/tunnel-concrete.png` albedo, exported by the
+`data/models/board/textures/scenery/tunnel-concrete_albedo.png` albedo, exported by the
 Material Maker project `tools/materials/scenery/tunnel-concrete/`; the floor uses
 the shared asphalt texture. At runtime the floor receives its approach's
-road material (asphalt, gravel or dirt), including the existing normal/surface
+road material (asphalt, gravel or dirt), including its normal and surface
 maps and world-space texture alignment. Concrete repeats every six model units with fine aggregate
 and pores, rather than the terrain material's large blotches.
 The outer side walls and roof extend the full 18-unit tunnel depth, allowing

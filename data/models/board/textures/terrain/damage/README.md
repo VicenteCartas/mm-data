@@ -1,16 +1,17 @@
 # Ground scar artwork
 
-These PNGs are the editable source artwork for the 3D board's combat scars.
+These materials are the editable source artwork for the 3D board's combat scars: Godot 4
+Standard materials whose `NAME_albedo.png` holds the artwork (alpha is coverage).
 The game loads them from `data/models/board/textures/terrain/damage/` when preparing a board.
 
-| Image | Used for |
+| Material | Used for |
 | --- | --- |
-| `laser-gouge.png`, `laser-blast.png` | Smooth laser grooves and round fused impacts |
-| `ppc-gouge.png`, `ppc-blast.png` | Fractured fused grooves and round impacts, selected by `F_PPC` |
-| `ballistic-gouge.png`, `ballistic-blast.png` | Autocannon and other ballistic furrows and round impacts |
-| `blast.png` | Missiles and artillery; damage controls size |
-| `burn.png` | Flamer scorch patches, without excavated relief |
-| `plasma-splash.png` | Melted splashes, selected by `F_PLASMA` or `F_PLASMA_MFUK` |
+| `laser-gouge`, `laser-blast` | Smooth laser grooves and round fused impacts |
+| `ppc-gouge`, `ppc-blast` | Fractured fused grooves and round impacts, selected by `F_PPC` |
+| `ballistic-gouge`, `ballistic-blast` | Autocannon and other ballistic furrows and round impacts |
+| `blast` | Missiles and artillery; damage controls size |
+| `burn` | Flamer scorch patches, without excavated relief |
+| `plasma-splash` | Melted splashes, selected by `F_PLASMA` or `F_PLASMA_MFUK` |
 
 ## Editing
 
