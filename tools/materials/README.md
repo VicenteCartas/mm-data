@@ -64,12 +64,14 @@ node applies on export: the normal's conversion, and the heightmap's 1 − depth
 
 ### Sculpted terrain roughness
 
-Sculpted terrain (`terrain/surfaces`) normally takes the game's contextual roughness, from
-its role, hardness and distance. Most of its projects keep the Roughness input white
-through a `RoughnessOverride` switch. Set **Override contextual roughness** to 1 to export
-the authored roughness instead. A roughness map that varies replaces the context. A
-Material Roughness factor below 1 over a white map is a scalar, like `tree-pit-mulch`'s
-0.92. Mud and scorch always export their roughness.
+The game renders every material with the roughness it exports, as Godot would: the ORM
+map's G channel times the Material node's Roughness factor. Roughness 1 is fully rough;
+the game estimates none of its own.
+
+Most sculpted terrain projects (`terrain/surfaces`) make their roughness in the
+`SurfaceResponse` group: *Base roughness* plus up to ±*Roughness variation*/2 from the
+grain, smoother on raised grain. `tree-pit-mulch` uses a uniform 0.92 factor; mud and
+scorch build their own roughness.
 
 ## Loose and constrained materials
 

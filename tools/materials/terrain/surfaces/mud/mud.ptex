@@ -1681,7 +1681,7 @@
     "b": 0.08,
     "a": 1
    },
-   "text": "Edit AuthorControls. The same height creates clods, smooth puddles, normals, AO and roughness. Color has no baked highlights or shadows. Export Maps, then Reload Assets. Maps: RGB albedo / A height; normal file RG normal XY / B roughness / A AO. 512 pixels, 64 m repeat."
+   "text": "Edit AuthorControls. The same height creates clods, smooth puddles, normals, AO and roughness. Color has no baked highlights or shadows. Export with File > Export material > Godot > Godot 4 Standard, or tools/materials/export.py, into data/models/board/textures, then use Reload assets. Maps: albedo, heightmap, normal, and ORM (R AO, G roughness). 512 pixels, 64 m repeat."
   },
   {
    "name": "Material",

@@ -1702,7 +1702,7 @@
             "y": -350
           },
           "title": "Physical response and packed height are separate",
-          "text": "Original defaults: central differences of physical height produce the normal; two registered neighbourhood differences produce AO through exponential absorption. Relief scales those physical responses. Packed height is separately normalized to the original minimum/range for material blending, not the unnormalized physical height. NormalStrength retains the original recipe response explicitly. Roughness controls describe an optional absolute authored material. They affect the Material Maker preview; the game uses them only when Override contextual roughness is enabled in the top controls. Off preserves the existing role, hardness and distance response without a new roughness map. A single authored map intentionally replaces that context-dependent baseline; it cannot reproduce all of those responses. Wetness and other existing scene conditions still apply afterward.",
+          "text": "Original defaults: central differences of physical height produce the normal; two registered neighbourhood differences produce AO through exponential absorption. Relief scales those physical responses. Packed height is separately normalized to the original minimum/range for material blending, not the unnormalized physical height. NormalStrength retains the original recipe response explicitly. Roughness controls make the material's roughness map: Base roughness, smoother on raised grain by up to half the Roughness variation. The game renders this map as the preview shows it; wetness and other scene conditions still apply afterward.",
           "size": {
             "x": 950,
             "y": 160
@@ -2980,7 +2980,7 @@
         "y": -420
       },
       "title": "Original appearance, editable material response",
-      "text": "Retained pigment and registered pre-response structure preserve the original feature placement. Use the top Scale and relief control: Repeat (metres) must match this material's metres in data/models/board/textures/materials.json (export.py keeps them in step). Edit Hue/Saturation/Value, normal strength, cavity and roughness in the groups. Override contextual roughness defaults to 0: the ORM map's roughness stays white and the game keeps its role, hardness and distance response. Set 1 to export the authored roughness, which then replaces it. Export with File > Export material > Godot > Godot 4 Standard, or tools/materials/export.py, into data/models/board/textures, then use Reload assets. The PNG8 encoders keep exact byte codes; the nodes after them only undo what the Material node applies on export (normal convention, heightmap = 1 - depth).",
+      "text": "Retained pigment and registered pre-response structure preserve the original feature placement. Use the top Scale and relief control: Repeat (metres) must match this material's metres in data/models/board/textures/materials.json (export.py keeps them in step). Edit Hue/Saturation/Value, normal strength, cavity and roughness in the groups. Export with File > Export material > Godot > Godot 4 Standard, or tools/materials/export.py, into data/models/board/textures, then use Reload assets. The PNG8 encoders keep exact byte codes; the nodes after them only undo what the Material node applies on export (normal convention, heightmap = 1 - depth).",
       "size": {
         "x": 950,
         "y": 160
@@ -3003,8 +3003,7 @@
       },
       "parameters": {
         "RepeatMetres": 10,
-        "ReliefMetres": 0.12,
-        "OverrideRoughness": 0
+        "ReliefMetres": 0.12
       },
       "widgets": [
         {
@@ -3028,18 +3027,6 @@
               "widget": "ReliefMetres"
             }
           ]
-        },
-        {
-          "name": "OverrideRoughness",
-          "label": "Override contextual roughness (0 off, 1 on)",
-          "type": "linked_control",
-          "linked_widgets": [
-            {
-              "node": "RoughnessOverride",
-              "widget": "source"
-            }
-          ],
-          "longdesc": "Off preserves the game's existing role, hardness and distance response. On exports and applies the authored roughness map as an absolute replacement."
         }
       ]
     },
@@ -3164,38 +3151,12 @@
       "seed_int": 0
     },
     {
-      "name": "ContextualRoughness",
-      "type": "uniform_greyscale",
-      "parameters": {
-        "color": 1
-      },
-      "node_position": {
-        "x": 2650,
-        "y": 650
-      },
-      "seed_int": 0
-    },
-    {
       "name": "RoughnessCodes",
       "type": "decompose",
       "parameters": {},
       "node_position": {
         "x": 2650,
         "y": 750
-      },
-      "seed_int": 0
-    },
-    {
-      "name": "RoughnessOverride",
-      "type": "switch",
-      "parameters": {
-        "choices": 2,
-        "outputs": 1,
-        "source": 0
-      },
-      "node_position": {
-        "x": 2950,
-        "y": 700
       },
       "seed_int": 0
     }
@@ -3382,19 +3343,7 @@
       "to_port": 0
     },
     {
-      "from": "ContextualRoughness",
-      "from_port": 0,
-      "to": "RoughnessOverride",
-      "to_port": 0
-    },
-    {
       "from": "RoughnessCodes",
-      "from_port": 0,
-      "to": "RoughnessOverride",
-      "to_port": 1
-    },
-    {
-      "from": "RoughnessOverride",
       "from_port": 0,
       "to": "Material",
       "to_port": 2
