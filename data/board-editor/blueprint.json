@@ -845,6 +845,10 @@
             {
               "value": 4,
               "label": "Hardened"
+            },
+            {
+              "value": 5,
+              "label": "Wall"
             }
           ],
           "brush": true
@@ -963,6 +967,12 @@
           "settings": [
             "bldg_class"
           ]
+        },
+        {
+          "id": "wall",
+          "label": "Wall",
+          "terrain": "building:5;bldg_cf:120;bldg_elev:2;bldg_basement_type:1",
+          "section": "buildings/gameplay"
         },
         {
           "id": "dropship",
@@ -1585,7 +1595,15 @@
           "optional": true
         }
       ],
-      "palette": false
+      "palette": true,
+      "presets": [
+        {
+          "id": "empty",
+          "label": "Space",
+          "terrain": "space:1",
+          "section": "ground-water/basic"
+        }
+      ]
     },
     {
       "id": "legacyAppearance",

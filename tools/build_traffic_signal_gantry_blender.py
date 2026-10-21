@@ -18,11 +18,11 @@ import build_road_controls_blender as kit
 importlib.reload(kit)
 
 NAME = 'traffic-signal-gantry'
-REACH = 3.2
+REACH = 4.0
 BEAM_HEIGHT = 6.25
 CURVE_RADIUS = .80
 BASE_WIDTH = .42
-HEAD_X = (1.20, 2.40)
+HEAD_X = (2.00, 3.20)
 HEAD_Z = 5.63
 REPEATER_Z = 2.70
 
