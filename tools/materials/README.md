@@ -24,11 +24,31 @@ only what the material has; the export writes a map for each connected input:
 | Ambient occlusion, Roughness, Metallic | `<name>_orm.png` | R occlusion, G roughness, B metallic. |
 | Normal | `<name>_normal.png` | Tangent normal, OpenGL convention (+Y up). |
 | Depth | `<name>_heightmap.png` | Height, white highest (the node writes 1 − depth). |
-| Emission | `<name>_emission.png` | Lava heat. |
-| SSS | `<name>_sss.png` | Ice cloudiness, foliage transmission. |
+| Emission | `<name>_emission.png` | sRGB glow colour. |
+| SSS | `<name>_sss.png` | Subsurface scattering strength. |
 
 The Material node's parameters become the resource's factors (roughness, metallic,
-normal strength, emission energy, depth scale). A Godot-literate artist can open the
+normal strength, emission energy, depth scale, SSS strength).
+
+**Every input works on every material**, with Godot's meaning, wherever the game draws it:
+terrain, grass, roads, buildings, props, trees, shrubs and fungus alike. Connect Emission to
+make grass glow, raise Metallic to make sand metallic, connect SSS to make a rock or a shrub
+let light through: export, then Reload assets. Nothing in the game decides a material's
+finish for it:
+
+- **Roughness** and **Metallic** are the ORM map's G and B channels times their factors.
+- **Emission** glows at (map + Godot's emission colour) times its energy, in linear light, and
+  is not lit by the sun. The game keeps it at every distance.
+- **SSS** is how much light a material lets through: thick bodies (ground, rock, shrubs) soften
+  their shading past the terminator by that share, leaves pass it through to their far side.
+- **Depth** is height, for the terrain's height blending and, on materials a surface draws
+  through its own UVs (buildings, props, roads), Godot's parallax: Depth scale is its depth in
+  UV times 100, with Godot's deep parallax settings.
+- Ground damage, scorch and mud bury a material: they show none of its metal, glow or
+  scattering.
+
+The exceptions: lava, crust and ice draw with their own shaders ([below](#shadermaterials));
+GLB materials without a board texture are their GLB's own glTF material. A Godot-literate artist can open the
 `.tres` and its maps in Godot directly: open `data/models/board/textures` as the Godot
 project, so its `res://` paths match the game's. Godot's own files there (`project.godot`,
 `.godot/`, `.import`) are git-ignored.

@@ -20,6 +20,21 @@
       "seed_locked": true
     },
     {
+      "name": "GlowSource",
+      "type": "image",
+      "node_position": {
+        "x": 0,
+        "y": 300
+      },
+      "parameters": {
+        "image": "%PROJECT_PATH%/sources/fungus-organic-atlas_emission.png",
+        "fix_ar": false,
+        "clamp": false
+      },
+      "seed": 0,
+      "seed_locked": true
+    },
+    {
       "name": "Pigment",
       "type": "graph",
       "node_position": {
@@ -740,7 +755,7 @@
         "b": 0.18,
         "a": 1
       },
-      "text": "Source artwork and native exports use a 1024-square canvas. Edit the Pigment or Artwork controls, export, and use Reload Assets to preview. Normalized atlas coordinates and physical mesh dimensions remain independent of raster resolution."
+      "text": "Source artwork and native exports use a 1024-square canvas. Edit the Pigment or Artwork controls, export, and use Reload Assets to preview. Normalized atlas coordinates and physical mesh dimensions remain independent of raster resolution. GlowSource is the tissue's emission (lips, gills and spores, in linear light under Godot's add operator at energy 1); the game lets it breathe slowly across a colony."
     },
     {
       "name": "Material",
@@ -759,7 +774,7 @@
         "flags_transparent": false,
         "metallic": 0,
         "normal": 1,
-        "roughness": 1.0,
+        "roughness": 0.9,
         "size": 10,
         "sss": 0.0
       },
@@ -818,6 +833,12 @@
       "from_port": 0,
       "to": "Material",
       "to_port": 0
+    },
+    {
+      "from": "GlowSource",
+      "from_port": 0,
+      "to": "Material",
+      "to_port": 3
     }
   ]
 }
