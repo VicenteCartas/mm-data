@@ -111,6 +111,10 @@ leaves the right edge comes back on the left, and the bottom meets the top. A ro
 6 m (one hex width ÷ 5). The road projects build their maps from images in `sources/` (pigment,
 and the two byte planes of their 16-bit height fields); those images tile seamlessly, and an
 edit to them must keep them so, or every road shows its tile grid.
+`tools/materials/roads/road_maps.py` writes the road maps from their sources as the export does,
+without Material Maker, and reports how much each map changes across its tile edge;
+`--make-seamless` first makes sources that show their grid tile (`tools/materials/seamless.py`,
+which needs numpy and scipy).
 
 The game keeps a loose material's texel density. Export grass, catalogued at 512 pixels and
 4 m, at 1024 pixels and it covers 8 m before repeating. The pattern then also needs
