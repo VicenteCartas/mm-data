@@ -41,9 +41,11 @@ finish for it:
   is not lit by the sun. The game keeps it at every distance.
 - **SSS** is how much light a material lets through: thick bodies (ground, rock, shrubs) soften
   their shading past the terminator by that share, leaves pass it through to their far side.
-- **Depth** is height, for the terrain's height blending and, on materials a surface draws
-  through its own UVs (buildings, props, roads), Godot's parallax: Depth scale is its depth in
-  UV times 100, with Godot's deep parallax settings.
+- **Depth** is height, for the terrain's height blending and for Godot's parallax: Depth scale
+  is its depth in UV times 100 (on a terrain surface, 100 × relief metres ÷ repeat metres; 0
+  for none). Buildings, props and roads take Godot's deep parallax settings; the sculpted terrain,
+  which blends several materials in a pixel, takes one step. The GPU tuning panel's Normal maps
+  switch turns parallax off with the normal maps.
 - Ground damage, scorch and mud bury a material: they show none of its metal, glow or
   scattering.
 
