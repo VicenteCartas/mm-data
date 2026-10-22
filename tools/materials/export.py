@@ -2,10 +2,12 @@
 
 A project at tools/materials/<folder>/<name>/<name>.ptex exports with Material Maker's stock Godot/Godot 4 Standard
 target into data/models/board/textures/<folder>: <name>.tres and its <name>_albedo/_orm/_normal/_heightmap/_emission/
-_sss.png maps, exactly what File > Export material > Godot > Godot 4 Standard writes, plus each Export node's own map.
+_sss.png maps, the files File > Export material > Godot > Godot 4 Standard writes, plus each Export node's own map.
 
 Material Maker's command line renders every map at 2048 pixels whatever the nodes' Size, so each map is resampled to its
-node's Size here, the size the editor's own export writes. Export larger sizes from the editor.
+node's Size here, the size the editor's own export writes. The resampled pixels are close to the editor's, not
+identical (a normal map's resampled texels are slightly shorter than unit length). Export larger sizes, or exact
+pixels, from the editor.
 
 A material with a map StandardMaterial3D has no slot for keeps a <name>.gdshader beside it: its <name>.tres is then a
 ShaderMaterial of that shader, which this script writes from Material Maker's StandardMaterial3D. Standard maps and

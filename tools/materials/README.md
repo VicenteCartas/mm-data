@@ -135,7 +135,8 @@ python tools/materials/export.py --wrap
 
 The script exports every project, or the one given. Material Maker's command line renders
 every map at 2048 pixels whatever the Size, so the script resamples each map to its
-node's Size, as the editor writes it. Sizes above 2048 need the editor's export. The script
+node's Size, the size the editor writes; the pixels are close to the editor's, not identical.
+Sizes above 2048, or exact pixels, need the editor's export. The script
 then removes maps the material no longer has, and writes the `ShaderMaterial` of a material
 with a shader beside it. For a loose material it prints the ground one repeat covers, and
 warns when the project's *Repeat (metres)* disagrees with it. `--wrap` only restores
