@@ -106,6 +106,12 @@ scorch build their own roughness.
 - **Constrained** materials fit a footprint: facades, classic tiles, scars, scenery and
   plant cutouts.
 
+A loose material repeats edge to edge, so every one of its maps must tile without a seam: what
+leaves the right edge comes back on the left, and the bottom meets the top. A road repeats every
+6 m (one hex width ÷ 5). The road projects build their maps from images in `sources/` (pigment,
+and the two byte planes of their 16-bit height fields); those images tile seamlessly, and an
+edit to them must keep them so, or every road shows its tile grid.
+
 The game keeps a loose material's texel density. Export grass, catalogued at 512 pixels and
 4 m, at 1024 pixels and it covers 8 m before repeating. The pattern then also needs
 to be twice as large in the project, for example by doubling its feature counts and
