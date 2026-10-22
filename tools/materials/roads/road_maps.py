@@ -9,8 +9,9 @@ h, 0)). It wrote the shipped maps' bytes from the same sources (normals within o
 writes them into data/models/board/textures/roads, as the editor's export does. --make-seamless first makes the sources
 tile (seamless.py); run it only on sources that show their tile grid. --lengthen N first quilts the sources (quilt.py)
 into a tile covering N times their ground at the same size, from pieces of themselves (the neighbour field, a blur of
-the height, is rebuilt from the quilted height); then multiply the project's RepeatMetres and the catalogue's metres by
-N, and divide its Material node's depth_scale by N (tools/materials/README.md). Needs numpy, scipy and Pillow.
+the height, is rebuilt from the quilted height). The maps it then writes take the project's values, so set them first
+(RepeatMetres times N, depth_scale from the new relief code), and the catalogue's metres times N
+(tools/materials/README.md). Needs numpy, scipy and Pillow.
 """
 import argparse
 import json

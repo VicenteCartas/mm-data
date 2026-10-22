@@ -127,8 +127,10 @@ To edit them safely:
 - **Bigger or smaller features:** change `metres`, and keep the project in step with it. A
   project's *RepeatMetres* is the ground its exported tile covers, `metres` × (its width ÷
   `pixels`), and must match it, or its normals come out too steep or too flat; *ReliefMetres* is
-  the height range of its heightmap in metres. A road project's Material node takes
-  *depth_scale* = 4 × *ReliefMetres* ÷ *RepeatMetres*, so the parallax depth is that relief too.
+  the height range of its heightmap in metres. A road project's normals use that relief rounded to
+  a whole code (its `ReliefCodes` node: *ReliefMetres* ÷ (*RepeatMetres* × 0.1) × 255, rounded),
+  and its Material node takes *depth_scale* = 0.4 × that code ÷ 255, so the parallax depth is the
+  relief the normals have (asphalt: code 4, 1.88 cm; dirt 11, 5.18 cm; gravel 18, 8.47 cm).
 - Maps stay square, and must tile (below).
 
 *Reload assets* in the game's Tuning panel re-reads the catalogue with the maps and shows a
@@ -140,17 +142,18 @@ A loose material repeats edge to edge, so every one of its maps must tile withou
 leaves the right edge comes back on the left, and the bottom meets the top. The road projects
 build their maps from images in `sources/` (pigment, and the two byte planes of their 16-bit
 height fields); those images tile seamlessly, and an edit to them must keep them so, or every
-road shows its tile grid. A road's 12 m also keeps its pattern of stones and patches from lining
-up into a lattice along the road, as it did at 6 m.
+road shows its tile grid. A road's 12 m repeat also keeps its stones and patches from lining up
+into a lattice along the road, which they did at 6 m.
 `tools/materials/roads/road_maps.py` writes the road maps from their sources as the export does,
 without Material Maker, and reports how much each map changes across its tile edge;
 `--make-seamless` first makes sources that show their grid tile (`tools/materials/seamless.py`),
 and `--lengthen N` quilts the sources into a tile covering N times their ground at the same size,
 from pieces of themselves (`tools/materials/quilt.py`; the material must have no direction of its
 own, such as baked light, as pieces are turned and mirrored). The road sources' 12 m came from
-6 m ones with `--lengthen 2`. After it, multiply the project's *RepeatMetres* and the catalogue's
-`metres` by N and divide its *depth_scale* by N (its *ReliefMetres* stays). Both scripts need
-numpy and scipy.
+6 m ones with `--lengthen 2`. Set the project first, as `road_maps.py` writes the maps from it in
+the same run: *RepeatMetres* times N, *ReliefMetres* as it is, *depth_scale* from the new relief
+code; then multiply the catalogue's `metres` by N. Running it again lengthens again; to rewrite
+only the maps, run it without `--lengthen`. Both scripts need numpy and scipy.
 
 ## Exporting
 

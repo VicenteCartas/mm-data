@@ -1,15 +1,17 @@
-"""A larger tile from a seamless one, by image quilting on a torus (needs numpy and scipy).
+"""A larger tile from a seamless one, by quilting on a torus (needs numpy and scipy).
 
 quilt(stack, weights, size): stack is H x W x C floats, a square texture that already tiles (every map or source field
 of one material, aligned); the result is size x size and tiles too. It is a grid of overlapping blocks, each a window
 of the texture (any offset, wrapping, in any of its eight rotations and mirror images, so the material must have no
-direction of its own, such as baked light), chosen among those that best match what is already placed where they
-overlap, preferring parts of the texture used least so far; a block replaces what lies beyond a minimum-error cut
-through each overlap, so grains stay whole. The last blocks overlap the first, so the result wraps. weights gives
-each channel's say in the matching and the cuts; every channel moves together.
+direction of its own, such as baked light), taken from the part of the texture used least so far, among a random few;
+a block replaces what lies beyond a minimum-error cut through each overlap, so grains stay whole. The last blocks
+overlap the first, so the result wraps. weights gives each channel's say in the cuts; every channel moves together.
+
+The windows are not chosen to match their neighbours, as Efros and Freeman's quilting does: on a material without
+large structure (asphalt, gravel, packed dirt) the few best-matching windows win again and again and repeat at the
+block spacing, the lattice a longer tile is meant to remove, while the cuts alone already join any two windows.
 """
 import numpy as np
-from scipy import fft
 from scipy.ndimage import gaussian_filter
 
 
@@ -51,18 +53,13 @@ def _cut(cost):
     return path
 
 
-def quilt(stack, weights, size, block=176, overlap=48, tolerance=.08, reuse=.6, seed=1, progress=None):
+def quilt(stack, weights, size, block=176, overlap=48, choices=400, reuse=.6, seed=1, progress=None):
     side = stack.shape[0]
     step = block - overlap
     if stack.shape[1] != side or size % step:
         raise ValueError(f'a square texture, and a size that is a multiple of {step}')
     weights = np.asarray(weights, float)
-    matched = [c for c in range(stack.shape[2]) if weights[c] > 0]
     variants = [np.ascontiguousarray(_dihedral(stack, v)) for v in range(8)]
-    # A window's mismatch at every offset at once, as correlations over the torus:
-    # sum over the overlap M of (S - T)^2 = corr(S^2, M) - 2 corr(S, M T) + const.
-    spectra = [{c: fft.rfft2(v[..., c], workers=-1) for c in matched} for v in variants]
-    squares = [fft.rfft2(sum(weights[c] * v[..., c] ** 2 for c in matched), workers=-1) for v in variants]
     rng = np.random.default_rng(seed)
     out = np.zeros((size, size, stack.shape[2]))
     filled = np.zeros((size, size), bool)
@@ -74,30 +71,16 @@ def quilt(stack, weights, size, block=176, overlap=48, tolerance=.08, reuse=.6, 
             cols = (np.arange(block) + j * step) % size
             target = out[np.ix_(rows, cols)]
             known = filled[np.ix_(rows, cols)]
+            # A random few windows (variant, row, column); the one from the part of the texture used least so far.
             if known.any():
-                kernel = np.zeros((side, side))
-                kernel[:block, :block] = known
-                k_known = np.conj(fft.rfft2(kernel, workers=-1))
-                k_target = {}
-                for c in matched:
-                    kernel[:block, :block] = known * target[..., c]
-                    k_target[c] = np.conj(fft.rfft2(kernel, workers=-1))
-                costs = np.maximum(np.stack([fft.irfft2(squares[v] * k_known - 2 * sum(
-                      weights[c] * spectra[v][c] * k_target[c] for c in matched), s=(side, side), workers=-1)
-                      for v in range(8)]), 0)
-                best = costs.min()
-                candidates = np.argwhere(costs <= best * (1 + tolerance) + 1e-9)
+                candidates = np.stack(np.unravel_index(rng.choice(8 * side * side, choices, replace=False),
+                                                       (8, side, side)), 1)
             else:
-                costs, best = None, 0.0
-                candidates = np.stack([rng.integers(0, 8, 400), rng.integers(0, side, 400),
-                                       rng.integers(0, side, 400)], 1)
-            if len(candidates) > 400:
-                candidates = candidates[rng.choice(len(candidates), 400, replace=False)]
+                candidates = np.stack([rng.integers(0, 8, choices), rng.integers(0, side, choices),
+                                       rng.integers(0, side, choices)], 1)
             centres = np.array([_source(v, (y + block // 2) % side, (x + block // 2) % side, side)
                                 for v, y, x in candidates])
             score = reuse * _crowding(centres, places, side, block / 2) + rng.random(len(candidates)) * .02
-            if costs is not None:
-                score += costs[tuple(candidates.T)] / (best + 1e-9)
             v, y, x = candidates[int(np.argmin(score))]
             window = np.take(np.take(variants[v], (np.arange(block) + y) % side, 0), (np.arange(block) + x) % side, 1)
             # The block replaces what is there beyond a cut through each side whose strip is already placed.
