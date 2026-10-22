@@ -116,3 +116,12 @@ commercial or otherwise.
 
 This isn't legal advice, please consider consulting a lawyer and see the full
 license for all details.
+
+MegaMek note
+------------
+
+Roboto-Medium.ttf is a static instance (wght 500, wdth 100) generated from
+Roboto-VariableFont_wdth,wght.ttf, because Java2D (Swing) can only draw the
+variable font's default instance. It is regenerated with
+docs/design-system/make_static_roboto.py in the megamek repository. Same OFL license.
+
