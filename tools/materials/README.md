@@ -44,8 +44,9 @@ finish for it:
 - **Depth** is height, for the terrain's height blending and for Godot's parallax: Depth scale
   is its depth in UV times 100 (on a terrain surface, 100 × relief metres ÷ repeat metres; 0
   for none). Buildings, props and roads take Godot's deep parallax settings; the sculpted terrain,
-  which blends several materials in a pixel, takes one step. The GPU tuning panel's Normal maps
-  switch turns parallax off with the normal maps.
+  which blends several materials in a pixel, takes one step. In the GPU tuning panel, Normal maps
+  turns buildings', props' and roads' parallax off with the normal maps, and Terrain Parallax
+  turns the terrain's off on its own.
 - Ground damage, scorch and mud bury a material: they show none of its metal, glow or
   scattering.
 
