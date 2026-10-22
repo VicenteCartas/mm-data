@@ -992,8 +992,8 @@
       "label": "SurfaceResponse",
       "type": "graph",
       "parameters": {
-        "RepeatMetres": 1.0,
-        "ReliefMetres": 0.014,
+        "RepeatMetres": 12.0,
+        "ReliefMetres": 0.084,
         "BaseRoughness": 0.88,
         "HeightRoughness": 0.12,
         "CavityStrength": 1.7
@@ -1065,8 +1065,8 @@
           "name": "gen_parameters",
           "type": "remote",
           "parameters": {
-            "RepeatMetres": 1.0,
-            "ReliefMetres": 0.014,
+            "RepeatMetres": 12.0,
+            "ReliefMetres": 0.084,
             "BaseRoughness": 0.88,
             "HeightRoughness": 0.12,
             "CavityStrength": 1.7
@@ -1082,9 +1082,9 @@
               "label": "RepeatMetres",
               "type": "named_parameter",
               "min": 1.0,
-              "max": 1.0,
+              "max": 48.0,
               "step": 1,
-              "default": 1.0
+              "default": 12.0
             },
             {
               "name": "ReliefMetres",
@@ -1093,7 +1093,7 @@
               "min": 0,
               "max": 0.1,
               "step": 0.0001,
-              "default": 0.014
+              "default": 0.084
             },
             {
               "name": "BaseRoughness",
@@ -2681,7 +2681,7 @@
           "a": 1
         },
         "ao": 1,
-        "depth_scale": 0.05647058823529412,
+        "depth_scale": 0.028,
         "emission_energy": 1.0,
         "flags_transparent": false,
         "metallic": 0,

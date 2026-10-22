@@ -101,28 +101,56 @@ scorch build their own roughness.
 `data/models/board/textures/materials.json` sorts every material:
 
 - **Loose** materials repeat across the board: terrain surfaces, roads, lava, ice and
-  industrial plating. Each entry gives the width it was catalogued at (`pixels`). Terrain
-  surfaces also give the metres one repeat spans at that width (`metres`).
+  industrial plating.
 - **Constrained** materials fit a footprint: facades, classic tiles, scars, scenery and
-  plant cutouts.
+  plant cutouts. Their texture size never changes what they cover.
+
+A loose entry has up to two values:
+
+| Value | What it is | What changing it does |
+| --- | --- | --- |
+| `pixels` | The texture width the entry describes: with `metres`, the texel density (`metres` ÷ `pixels` per texel). | Changes no pattern size by itself. A texture exported wider than `pixels` covers proportionally more ground before it repeats, at the same density (2048 pixels catalogued at 1024 cover twice `metres`); narrower, less. |
+| `metres` | The ground one repeat covers at `pixels` wide. Terrain surfaces and roads; lava, ice and industrial plating repeat as the game sets, and give `pixels` alone. | Stretches or shrinks the material on the ground: its stones, cracks and grain grow or shrink with its repeat. |
+
+A texture so covers `metres` × (its width ÷ `pixels`) before it repeats. Roads are 1024 pixels
+over 12 m (11.7 mm a texel), grass 512 pixels over 4 m (7.8 mm).
+
+To edit them safely:
+
+- **Sharper or softer, same pattern:** export the same project at another size and set `pixels`
+  to the new width; `metres` stays.
+- **Longer before it repeats, features the same size:** the texture needs more content. Export
+  wider from a project whose pattern is enlarged to match (more features, *RepeatMetres* times
+  the same factor) and leave the catalogue as it is: the wider texture covers more ground. For a
+  road, `road_maps.py --lengthen N` (below) makes that content at the same width; then multiply
+  `metres` by N.
+- **Bigger or smaller features:** change `metres`, and keep the project in step with it. A
+  project's *RepeatMetres* is the ground its exported tile covers, `metres` × (its width ÷
+  `pixels`), and must match it, or its normals come out too steep or too flat; *ReliefMetres* is
+  the height range of its heightmap in metres. A road project's Material node takes
+  *depth_scale* = 4 × *ReliefMetres* ÷ *RepeatMetres*, so the parallax depth is that relief too.
+- Maps stay square, and must tile (below).
+
+*Reload assets* in the game's Tuning panel re-reads the catalogue with the maps and shows a
+change at once. Catalogue every new material: a loose one needs its entry to load, and megamek's
+`GpuBoardMaterialsTest` requires every material to be listed, and `metres` for every terrain
+surface and road.
 
 A loose material repeats edge to edge, so every one of its maps must tile without a seam: what
-leaves the right edge comes back on the left, and the bottom meets the top. A road repeats every
-6 m (one hex width ÷ 5). The road projects build their maps from images in `sources/` (pigment,
-and the two byte planes of their 16-bit height fields); those images tile seamlessly, and an
-edit to them must keep them so, or every road shows its tile grid.
+leaves the right edge comes back on the left, and the bottom meets the top. The road projects
+build their maps from images in `sources/` (pigment, and the two byte planes of their 16-bit
+height fields); those images tile seamlessly, and an edit to them must keep them so, or every
+road shows its tile grid. A road's 12 m also keeps its pattern of stones and patches from lining
+up into a lattice along the road, as it did at 6 m.
 `tools/materials/roads/road_maps.py` writes the road maps from their sources as the export does,
 without Material Maker, and reports how much each map changes across its tile edge;
-`--make-seamless` first makes sources that show their grid tile (`tools/materials/seamless.py`,
-which needs numpy and scipy).
-
-The game keeps a loose material's texel density. Export grass, catalogued at 512 pixels and
-4 m, at 1024 pixels and it covers 8 m before repeating. The pattern then also needs
-to be twice as large in the project, for example by doubling its feature counts and
-*Repeat (metres)*. Its maps must stay square. To change a density instead, change `metres`
-in the catalogue; *Reload assets* in the game's Tuning panel re-reads it and shows the new
-density at once. Catalogue every new material too: a loose one needs its entry to load,
-and megamek's `GpuBoardMaterialsTest` requires every material to be listed.
+`--make-seamless` first makes sources that show their grid tile (`tools/materials/seamless.py`),
+and `--lengthen N` quilts the sources into a tile covering N times their ground at the same size,
+from pieces of themselves (`tools/materials/quilt.py`; the material must have no direction of its
+own, such as baked light, as pieces are turned and mirrored). The road sources' 12 m came from
+6 m ones with `--lengthen 2`. After it, multiply the project's *RepeatMetres* and the catalogue's
+`metres` by N and divide its *depth_scale* by N (its *ReliefMetres* stays). Both scripts need
+numpy and scipy.
 
 ## Exporting
 

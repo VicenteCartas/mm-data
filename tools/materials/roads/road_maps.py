@@ -1,4 +1,5 @@
-"""The road projects' maps without Material Maker: python tools/materials/roads/road_maps.py [--make-seamless] [name...]
+"""The road projects' maps without Material Maker: python tools/materials/roads/road_maps.py [--make-seamless]
+[--lengthen N] [name...]
 
 Each road project (asphalt, dirt, gravel) builds its maps from sources/: pigment.png, and structure-high.png /
 structure-low.png, the high and low bytes of four 16-bit fields (R height, G neighbour height, B and A unused). This is
@@ -6,7 +7,10 @@ its graph in numpy: the height quantized to 8 bits; normals from wrapped central
 roughness clamp(BaseRoughness + HeightRoughness * (.5 - h), .4, .98); occlusion exp(-CavityStrength * max(neighbour -
 h, 0)). It wrote the shipped maps' bytes from the same sources (normals within one code on a few hundred texels), and
 writes them into data/models/board/textures/roads, as the editor's export does. --make-seamless first makes the sources
-tile (seamless.py); run it only on sources that show their tile grid. Needs numpy, scipy and Pillow.
+tile (seamless.py); run it only on sources that show their tile grid. --lengthen N first quilts the sources (quilt.py)
+into a tile covering N times their ground at the same size, from pieces of themselves (the neighbour field, a blur of
+the height, is rebuilt from the quilted height); then multiply the project's RepeatMetres and the catalogue's metres by
+N, and divide its Material node's depth_scale by N (tools/materials/README.md). Needs numpy, scipy and Pillow.
 """
 import argparse
 import json
@@ -15,8 +19,10 @@ from pathlib import Path
 
 import numpy as np
 from PIL import Image, PngImagePlugin
+from scipy.ndimage import gaussian_filter
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+import quilt  # noqa: E402
 import seamless  # noqa: E402
 
 HERE = Path(__file__).resolve().parent
@@ -59,27 +65,71 @@ def maps(project):
     }
 
 
+def save_sources(sources, pigment, structure):
+    """pigment: sRGB, 0..1; structure: the four fields, 0..1."""
+    Image.fromarray(np.round(np.clip(pigment, 0, 1) * 255).astype(np.uint8), 'RGB').save(sources / 'pigment.png')
+    codes = np.round(np.clip(structure, 0, 1) * 65535).astype(np.int64)
+    Image.fromarray((codes // 256).astype(np.uint8), 'RGBA').save(sources / 'structure-high.png')
+    Image.fromarray((codes % 256).astype(np.uint8), 'RGBA').save(sources / 'structure-low.png')
+
+
 def make_seamless(sources):
     pigment = np.asarray(Image.open(sources / 'pigment.png').convert('RGB')) / 255.0
     stack = np.concatenate([pigment, fields(sources)], -1)
     spread = stack.reshape(-1, stack.shape[-1]).var(0) + 1e-9
     # Where the cut runs follows what shows: pigment, height (twice: normals, roughness, occlusion) and neighbour.
-    out = np.clip(seamless.seamless(stack, np.array([1, 1, 1, 2, 1, 0, 0]) / spread), 0, 1)
-    Image.fromarray(np.round(out[..., :3] * 255).astype(np.uint8), 'RGB').save(sources / 'pigment.png')
-    codes = np.round(out[..., 3:] * 65535).astype(np.int64)
-    Image.fromarray((codes // 256).astype(np.uint8), 'RGBA').save(sources / 'structure-high.png')
-    Image.fromarray((codes % 256).astype(np.uint8), 'RGBA').save(sources / 'structure-low.png')
+    out = seamless.seamless(stack, np.array([1, 1, 1, 2, 1, 0, 0]) / spread)
+    save_sources(sources, out[..., :3], out[..., 3:])
+
+
+def linear(c):
+    return np.where(c <= .04045, c / 12.92, ((c + .055) / 1.055) ** 2.4)
+
+
+def srgb(c):
+    c = np.clip(c, 0, None)
+    return np.where(c <= .0031308, c * 12.92, 1.055 * c ** (1 / 2.4) - .055)
+
+
+def lengthen(sources, factor):
+    pigment = np.asarray(Image.open(sources / 'pigment.png').convert('RGB')) / 255.0
+    structure = fields(sources)
+    height, side = structure[..., 0], structure.shape[0]
+    # The neighbour field is the height blurred: its blur and scale, to rebuild it from the quilted height.
+    fits = []
+    for sigma in np.arange(2, 8.01, .25):
+        blurred = gaussian_filter(height, sigma, mode='wrap').ravel()
+        coef, residual = np.linalg.lstsq(np.stack([blurred, np.ones_like(blurred)], 1), structure[..., 1].ravel(),
+                                         rcond=None)[:2]
+        fits.append((residual[0], sigma, coef))
+    _, sigma, (scale, offset) = min(fits, key=lambda fit: fit[0])
+    stack = np.concatenate([linear(pigment), height[..., None]], -1)
+    # Matched on what shows: the pigment, and the height twice (normals, roughness, occlusion).
+    weights = np.array([1, 1, 1, 2]) / (stack.reshape(-1, 4).var(0) + 1e-9)
+    out = quilt.quilt(stack, weights, side * factor,
+                      progress=lambda done, total: print(f'  {sources.parent.name}: {done}/{total}', flush=True))
+    neighbour = scale * gaussian_filter(out[..., 3], sigma, mode='wrap') + offset
+
+    def shrink(a):  # back to the sources' size, averaging each factor x factor square
+        return a.reshape(side, factor, side, factor, *a.shape[2:]).mean((1, 3))
+
+    structure[..., 0], structure[..., 1] = shrink(out[..., 3]), shrink(neighbour)
+    # The colour averages in linear light; the unused fields keep their values.
+    save_sources(sources, srgb(shrink(out[..., :3])), structure)
 
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     parser.add_argument('--make-seamless', action='store_true')
+    parser.add_argument('--lengthen', type=int, default=1, metavar='N')
     parser.add_argument('names', nargs='*', default=['asphalt', 'dirt', 'gravel'])
     args = parser.parse_args()
     for name in args.names:
         project = HERE / name / f'{name}.ptex'
         if args.make_seamless:
             make_seamless(project.parent / 'sources')
+        if args.lengthen > 1:
+            lengthen(project.parent / 'sources', args.lengthen)
         written = maps(project)
         srgb = PngImagePlugin.PngInfo()
         srgb.add(b'sRGB', b'\x00')  # as the export writes its albedo
