@@ -132,7 +132,8 @@ def build(output, catalog):
         assets[far_key] = export_asset(far, output, far_key, 'troop', 'battle-armor', 'trooper-v1', joints)
         write_json(output / ('battle-armor/'+name+'.json'), {'schema': 2, 'kind': 'formation', 'family': 'battle-armor',
                                                              'trooper': 'units/modular/'+key+'.json',
-                                                             'trooperLod1': 'units/modular/'+far_key+'.json'})
+                                                             'trooperLod1': 'units/modular/'+far_key+'.json',
+                                                             'meeple': 'units/modular/meeples/battle-armor.json'})
     for kind in ('motorized', 'tracked', 'wheeled', 'hover'):
         key = 'transports/'+kind
         transport = infantry_vehicle(kind, modular=True)
@@ -167,6 +168,8 @@ def build(output, catalog):
             descriptor['vehicles'] = {mode: 'units/modular/transports/'+kind+'.json' for mode, kind in
                                       (('INF_MOTORIZED', 'motorized'), ('TRACKED', 'tracked'),
                                        ('WHEELED', 'wheeled'), ('HOVER', 'hover'))}
+        # The All Meeples display's formation; meeples/ holds hand-made GLBs this build does not write.
+        descriptor['meeple'] = 'units/modular/meeples/'+family+'.json'
         write_json(output / (family+'.json'), descriptor)
     archive_superseded_modules(output, assets)
     print(f'Exported {len(assets)} independent assets; maximum {max(a["triangles"] for a in assets.values())} triangles')
