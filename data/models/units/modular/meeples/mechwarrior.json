@@ -1,0 +1,42 @@
+{
+  "schema": 2,
+  "kind": "troop",
+  "family": "infantry",
+  "mesh": "mechwarrior.glb",
+  "bounds": {
+    "min": [
+      -2.063999891281128,
+      -1.2311999797821045,
+      0.0
+    ],
+    "max": [
+      2.063999891281128,
+      1.2311999797821045,
+      6.480000019073486
+    ]
+  },
+  "rig": "meeple-v1",
+  "joints": {
+    "root": "root"
+  },
+  "locations": {},
+  "hardpoints": [],
+  "emitters": [
+    {
+      "id": "emitter-0",
+      "node": "root",
+      "position": [
+        0,
+        1.2311999797821045,
+        3.888000011444092
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "role": "muzzle",
+      "effect": "bullet"
+    }
+  ]
+}

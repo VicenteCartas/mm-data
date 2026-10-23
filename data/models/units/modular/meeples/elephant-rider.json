@@ -1,0 +1,42 @@
+{
+  "schema": 2,
+  "kind": "troop",
+  "family": "infantry",
+  "mesh": "elephant-rider.glb",
+  "bounds": {
+    "min": [
+      -9.368939399719238,
+      -1.2311999797821045,
+      0.0
+    ],
+    "max": [
+      9.368939399719238,
+      1.2311999797821045,
+      14.177576065063477
+    ]
+  },
+  "rig": "meeple-v1",
+  "joints": {
+    "root": "root"
+  },
+  "locations": {},
+  "hardpoints": [],
+  "emitters": [
+    {
+      "id": "emitter-0",
+      "node": "root",
+      "position": [
+        0,
+        1.2311999797821045,
+        8.506545639038086
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "role": "muzzle",
+      "effect": "bullet"
+    }
+  ]
+}

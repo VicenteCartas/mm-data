@@ -1,0 +1,42 @@
+{
+  "schema": 2,
+  "kind": "troop",
+  "family": "infantry",
+  "mesh": "motorcycle-rider.glb",
+  "bounds": {
+    "min": [
+      -6.9915385246276855,
+      -1.2311999797821045,
+      0.0
+    ],
+    "max": [
+      6.9915385246276855,
+      1.2311999797821045,
+      9.36025619506836
+    ]
+  },
+  "rig": "meeple-v1",
+  "joints": {
+    "root": "root"
+  },
+  "locations": {},
+  "hardpoints": [],
+  "emitters": [
+    {
+      "id": "emitter-0",
+      "node": "root",
+      "position": [
+        -6.9915385246276855,
+        1.2311999797821045,
+        5.896961402893067
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "role": "muzzle",
+      "effect": "bullet"
+    }
+  ]
+}
