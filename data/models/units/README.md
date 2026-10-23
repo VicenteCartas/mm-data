@@ -48,6 +48,10 @@ The contents of `modular/`:
 - `infantry.json`, `battle-armor.json` and `battle-armor/`: formation recipes. The game draws one figure per
   surviving battle armour trooper, and up to six figures for a conventional platoon, some replaced by transports
   when the platoon is motorized or mechanized.
+- `meeples/`: the formations of the All Meeples display, named by the `meeple` field of each formation recipe.
+  `infantry.json` and `battle-armor.json` assemble rigid silhouette figures (`infantry-trooper`,
+  `battle-armor-trooper`) and the `apc` and `buggy` transports, extruded from `images/units/Infantry/mechanized_apc.png`
+  and `motorized_buggy.png`, with the same counts and layout as the 3D formations.
 - `manifest.json`: the inventory the build writes. For each part it records triangles, vertices, size, a checksum,
   and a `lods` list with each level's group name and triangle count. It also records the budgets below.
 

@@ -13,9 +13,10 @@ For N levels, the runtime chooses one base, N-1 independently chosen floors (inc
 Choices are stable for each placement; changing height preserves the base, roof, and existing lower floors.
 
 Base and floor meshes are exactly 18 units high in authoring Z-up space. Enterable buildings have hollow walls.
-Display the modules as an assembled example or as a spaced library rack;
-the loader derives module bases and centers from geometry and discards these display offsets when assembling
-one base, N-1 floors and a roof. All variants preserve the same horizontal normalization center. For enterable buildings,
+Author all modules and LODs relative to the same XY origin, with LODs superimposed rather than offset sideways.
+The loader preserves authored XY coordinates and derives only each module's vertical base from geometry when
+assembling one base, N-1 floors and a roof. Modules may be stacked vertically for display; their saved Z placement
+is discarded. Asymmetric details do not change a module's horizontal placement. For enterable buildings,
 the full roof projection intersected with the selected modules' closed mid-storey wall sections defines generated
 interior floors and struts. Keep notches and courtyards in those surfaces.
 

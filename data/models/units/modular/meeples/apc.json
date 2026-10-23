@@ -1,0 +1,29 @@
+{
+  "schema": 2,
+  "kind": "body",
+  "family": "infantry-transport",
+  "mesh": "apc.glb",
+  "bounds": {
+    "min": [
+      -2.31,
+      -4.4,
+      0
+    ],
+    "max": [
+      2.31,
+      4.4,
+      2.8
+    ]
+  },
+  "rig": "transport-v1",
+  "joints": {
+    "root": "root",
+    "hull": "vehicle",
+    "boarding": "boarding",
+    "exit": "boarding",
+    "cabin": "cabin"
+  },
+  "locations": {},
+  "hardpoints": [],
+  "emitters": []
+}

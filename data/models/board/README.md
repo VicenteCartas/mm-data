@@ -210,9 +210,12 @@ beam. The pieces that never bend are GLBs under `scenery/rail/`, at real scale (
   two of the seaport's containers at real scale), `heavy-hopper` (42), `insulated-tanker` (42) and
   `equipment-carrier` (48, with an excavator chained down).
 
-The track's rail top lies 1.4 px above its carrier plane (ballast top 0.6, sleepers 0.3, rails 0.5; gauge 4.2).
-Every rail piece has its origin on the track centre line at rail-top height, the track along Y: a piece placed
-1.4 px above the carrier plane rides the rails. Locomotive and power car noses and the buffer stop's buffers face
+The client enlarges conventional track, rolling stock and buffer stops by 1.3 at runtime; the authored GLBs and
+lengths above remain unchanged. The track's rail top lies 1.82 px above its carrier plane (ballast top 0.78,
+sleepers 0.39, rails 0.65; gauge 5.46), with a ballast footprint 14.56 px wide. Every rail piece has its origin on
+the track centre line at rail-top height, the track along Y: its runtime placement follows the rail top,
+including the recessed rails through a road crossing. Maglev keeps its existing dimensions.
+Locomotive and power car noses and the buffer stop's buffers face
 +Y; the signal faces +Y from its footing's base. Vehicles are measured over their coupler faces (a power car over
 its nose tip) and carry their own couplers, so coupled vehicles stand half their lengths apart and need no coupler
 piece. Each vehicle has two colour slots, Body and Trim, in the parked car's convention (`mmColourSlots`), with the
@@ -226,10 +229,14 @@ and `scenery/rail/colony-train` (colony locomotive, heavy hopper, insulated tank
 The 64 legacy rail keys `scenery/hq_fluff/rail00`-`rail63` (FLUFF 10:0-63) decode to one route marker row,
 `scenery/rail/route`, whose `connections` is the token value: the sprite's side mask. The client builds the track
 from those sides. `rail00` has no sides; the conversion takes them from its neighbours, and an isolated one places
-nothing. The six level crossings `rail_road01`-`06` (FLUFF 10:64-69) add three things: the marker on the rail's
-axis, the `decal/rail/level-crossing` panel turned to the two axes, and four crossing signals. Each signal stands
-beside the road, 10 px from its centre line and 8.5 px from the track's, and faces the road traffic that comes
-towards it.
+nothing. The six level crossings `rail_road01`-`06` (FLUFF 10:64-69) add the marker on the rail's axis and four
+crossing signals. The native road stays continuous through the track, whose exposed rails and flange grooves
+replace the old concrete decal. Each signal stands beside the widened road, 17 px from its centre line and
+9.5 px from the track's, and faces the road traffic that comes towards it.
+Native independent paved-road/rail crossings also derive a signal on each incoming road's right verge, from the
+same track-clearance stop position as the road paint. These use the existing signal GLB, clear both travel
+envelopes, and leave nearby saved crossing poles in place. Parallel corridors, maglev and different ground/deck
+layers do not generate level-crossing signals.
 
 How the client uses them (MegaMek `docs/3d-board-editor.md`, rails): a hex lays only gentle pieces, straights
 between opposite sides and 60-degree arcs between sides two apart. A side without a gentle partner (two adjacent
@@ -287,14 +294,14 @@ mipmaps do not darken edges. The groups:
 | Folder | Decals | Source |
 |---|---|---|
 | `emblems/` | `red-cross`, `capellan-confederation`, `draconis-combine`, `federated-suns`, `free-worlds-league`, `lyran-commonwealth`, `terran-hegemony`, `magistracy-of-canopus`, `outworlds-alliance`, `rim-worlds-republic`, `taurian-concordat`, `star-league`, `comstar` | the seven pieces of the Saxarba 7-hex set stitched at their hex offsets: 144 x 144 px, 1 image px per model px, identical to the unused `-Medium` images |
-| `car-park/` | `straight-4`, `-8`, `-12`; `parallel-3`, `-6`; `diagonal-3`, `-6`, `-9` | painted: 8 image px per model px |
+| `car-park/` | `straight-4`, `-8`, `-12`; `parallel-3`, `-6`; `diagonal-3`, `-6`, `-9` | painted: 6.4 image px per model px; full-size car bays |
 | `damage/` | `rubble-light-path`, `cleared-rubble-gravel` | copies of `images/hexes/saxarba/rubble_light_path.png` and `cleared_rubble_gravel.png` (84 x 72) |
 | `runway/` | `centreline` (6 x 64), `threshold` (64 x 28), `number-36`, `-06`, `-12`, `-18`, `-24`, `-30`, each also with `l`, `c`, `r` (56 x 72) | redrawn from the legacy runway geometry at 8 image px per model px; designations in Noto Sans Regular (`data/fonts`, OFL); white paint at 95 % |
 | `landing-pads/` | `vtol-`, `medic-`, `aero-`, `aero-lit-` each `concrete` and `asphalt` (72 x 72); `dropship-`, `dropship-ring-` each `concrete` and `asphalt` (144 x 144); `heli-pad` (60 x 60) | one-hex pads cut 1:1 from the -01 sprites; DropShip pads stitched from their 7 pieces as the emblems; the heli pad redrawn flat |
 | `lettering/` | `letter-a` ... `letter-z`, `digit-0` ... `digit-9` (40 x 40) | the upright black sprite's shape, 4x bicubic, blurred and re-sharpened, white: the object's paint colour (`size` entry `"colour": "#ffffff"`) multiplies it |
 | `sport/` | `tennis-court-green`, `-blue` (33 x 63); `basketball-court-green`, `-blue` (39 x 71) | redrawn at 8 image px per model px, 0.75 px lines |
 | `elevator/` | `level-minus-10` ... `level-minus-1`, `level-0` ... `level-10` (84 x 72) | copies of `images/hexes/saxarba/misc/elevator_<n>.png`; rows of the elevator's rule terrain, not palette decals |
-| `rail/` | `level-crossing` (16 x 27) | redrawn: two 15 px strips (road and rail) at 60 degrees, concrete, yellow dashed edges; placed by the level-crossing rows |
+| `rail/` | `level-crossing` (16 x 27) | retained for standalone authored artwork; native crossings use the continuous road and embedded rails |
 
 The 2D tileset's ground-symbol pieces and their copies under `tileset/` stay for
 the 2D board, which draws a converted board's kept tokens, and for the conversion,
@@ -307,8 +314,8 @@ which matches the `tileset/` copy; the palette uses the decals here.
   "format": "megamek-board-decals", "version": 1,
   "decals": {
     "decal/emblems/red-cross": {"size": [144, 144]},
-    "decal/car-park/straight-4": {"size": [22.5, 9.25],
-      "slots": [{"position": [-8.25, -0.075], "heading": 0}, ...]}
+    "decal/car-park/straight-4": {"size": [28.125, 11.5625],
+      "slots": [{"position": [-10.3125, -0.09375], "heading": 0}, ...]}
   },
   "legacy": {
     "decal/saxarba/SMV_GroundSymbols/FluffSystem-05-Symbol-01-RedCross-1-04":
@@ -327,8 +334,9 @@ which matches the `tileset/` copy; the palette uses the decals here.
 - `slots` (car parks only): parking places in the decal's frame, model px from its
   centre, +y toward the back of the bays (the bay centres); `heading` is the car's rotation in
   degrees (CCW, 0 = the car's front to +y, as object rotations). The slots fit
-  the car mesh at its car-park scale 0.8 (3.84 x 7.36 px) with at least 0.33 px to
-  every bay line.
+  the car mesh at scale 1 (4.8 x 9.2 px). All authored car placements use this
+  native scale, including the suburb and maglev compositions; suburb2's closely
+  parked trio is spaced farther apart to clear the larger bodies.
 - `legacy`: old decal ids, which are also the legacy tileset images
   (`decal/` + the tileset image path without extension; `.board2` files saved
   before this change use them). `scale` (default 1) and `rotation` (default 0,
@@ -347,8 +355,8 @@ which matches the `tileset/` copy; the palette uses the decals here.
   -01/-04 are upright, -02/-05 turned -30 deg and -03/-06 +30 deg; their scales
   were fitted to the legacy tiles (small 0.204-0.326, large 0.346-0.503 per emblem).
 
-Car parks: each standard decal is only its row of bays (straight: 5.5 x 9 px
-bays; parallel: 9.8 x 5 px; diagonal: 60 deg to the row, 5.5 px wide and 10.8 px
+Car parks: each standard decal is only its row of bays (straight: 6.875 x 11.25 px
+bays; parallel: 12.25 x 6.25 px; diagonal: 60 deg to the row, 6.875 px wide and 13.5 px
 long along the car), open on its bottom (road) edge: the dividers reach that edge,
 and the back line and the two end dividers lie on the other three edges, so no
 asphalt shows beyond them and two rows laid back to back touch line to line.
@@ -356,20 +364,33 @@ Unmarked asphalt with white bay lines, no aisle, no road markings, fully opaque.
 Two sides are the same decal twice, the second turned 180 deg, one on each side
 of the road. In `scenery/layouts.json` each legacy key `fluff/cars_*` (1-8, 2b,
 3b) has one decal row per side of its lane that has cars, beside the lane's road:
-its road-side edge 7.3 px from the lane's centre line (`ROAD_EDGE`: the road's
-7.5 px half width less half its 0.45 px asphalt fade, so the decal hides the
+its road-side edge 14.8 px from the lane's centre line (the road's
+15 px half width less about half its 0.45 px asphalt fade, so the decal hides the
 road's gray verge and leaves its carriageway clear), the smallest standard of the
 cars' layout (across the lane: straight; along it: parallel) with room for that
-side's cars. No legacy car park is diagonal. Where no road is drawn (no lane, as
+side's cars. Parking paint can span hex boundaries, so conversion leaves it unclipped
+along with the full-size cars. No legacy car park is diagonal. Where no road is drawn (no lane, as
 2b/3b; a roof, deck, industrial top, fuel tank, ice or liquid; a road level the
 renderer does not draw), the conversion folds the same rows back to back on
 the line through the hex centre, turned and mirrored, their closed sides touching.
 Each car row carries `"seat": [n, slot]`: the conversion places that car on
 `slots[slot]` of the key's n-th decal row (the decal row's transform, mirror
 included, applied to the slot; the car keeps its asset, colour and scale). Cars
-keep the order they had along the lane; beside the road they move up to 22.0 px
-(mean 3.7-12.5 px per key) from their legacy spots, back to back up to 23.0 px
-(mean 8.7-13.4 px). Seats and decal rows exist only for the conversion.
+keep the order they had along the lane. The physical decal footprints and slots were
+enlarged together by 1.25 for native-size cars; the existing paint images are reused.
+The cars_7/2b shelter moves outward to keep its walkway behind the enlarged bays.
+Seats and decal rows exist only for the conversion.
+
+The 64 `saxarba/roads/road_trees00`-`63` layouts keep their 336 scale-0.4
+trees. Their anchors are fitted against the actual plain `BoardRoad.clearance`
+shape with 1.5 px between pavement and each row's rotated GLB bounds. The broad-tree
+bounds at this scale are 6.76 x 7.77 px; alternate park species can overhang the verge.
+The straight-road trunks stand 18.57–23.01 px from the axis, with their original along-road spacing.
+Conversion and stamps use the union of road and ground-rail exits; only hexes with
+conventional ground rail receive extra displacement, measured against the existing `RailRoute`
+courses and the centered/beside corridor union, including the track's 1.3 runtime scale.
+Maglev receives no conventional-ballast displacement.
+Crowns can extend into neighboring hexes. Tree scales and each layout's count stay unchanged.
 
 ## Editor palette, import and stamps
 
