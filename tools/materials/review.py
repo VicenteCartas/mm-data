@@ -1,6 +1,6 @@
 """Review a material in the game: export it, then render the material fixture with MegaMek's offline board renderer.
 
-python review.py terrain/surfaces/dirt/dirt.ptex [--view VIEW ...] [--hour 13] [--label after] [--no-export]
+python review.py terrain/surfaces/dirt-ground/dirt-ground.ptex [--view VIEW ...] [--hour 13] [--label after] [--no-export]
 
 The export is export.py's: the maps go to data/models/board/textures, and the MegaMek build stages them like any other
 data before rendering. Each view renders twice, from straight above and obliquely:
