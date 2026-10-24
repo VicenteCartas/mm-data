@@ -6,14 +6,16 @@ File > Export material writes them. The target is Material Maker's stock Godot/G
 Godot/Godot 4 ShaderMaterial when its Material node carries one (lava, crust and ice: their .tres is a ShaderMaterial
 of the <name>.gdshader beside it).
 
-Material Maker's command line renders every map at 2048 pixels whatever the nodes' Size, so each map is resampled to its
-node's Size here, the size the editor's own export writes. The resampled pixels are close to the editor's, not
-identical (a normal map's resampled texels are slightly shorter than unit length). Export larger sizes, or exact
-pixels, from the editor.
+Material Maker's command line (1.8-mm.2 and later) writes each map at its node's Size, the pixels the editor's own
+export writes. Every exported map (albedo, orm, emission, normal, heightmap, sss and each Export node's) is compared with
+the file it replaces in every channel, and written when any pixel differs, in the PNG mode of that file (L, RGB or RGBA,
+whichever holds it exactly; a new map takes the smallest), and the .tres only when a value changes, in its file's own
+line endings, so an export of an unchanged project changes no file.
 """
 from pathlib import Path
 import argparse
 import json
+import re
 import shutil
 import subprocess
 import tempfile
@@ -64,17 +66,52 @@ def sizes(project):
     return result
 
 
-def resample(file, size):
-    from PIL import Image
-    with Image.open(file) as image:
-        if image.size == (size, size):
-            return
-        if size > image.width:
-            raise SystemExit(f'{file.name}: Size {size} is above the {image.width} pixels Material Maker\'s command '
-                             'line renders; export this material from the editor instead')
-        # An exact box filter; Pillow averages RGBA premultiplied, so transparent texels do not bleed into colour.
-        resized = image.resize((size, size), Image.Resampling.BOX)
-    resized.save(file)
+def write_map(exported, target):
+    """Copy an exported map over target unless its pixels are the same; returns 'same', 'changed' or 'new'."""
+    from PIL import Image, ImageChops
+    with Image.open(exported) as image:
+        new = image.convert('RGBA')
+    red, green, blue, alpha = new.split()
+    opaque = alpha.getextrema() == (255, 255)
+    grey = opaque and ImageChops.difference(red, green).getbbox() is None \
+        and ImageChops.difference(green, blue).getbbox() is None
+    mode, state = ('L' if grey else 'RGB' if opaque else 'RGBA'), 'new'
+    if target.exists():
+        with Image.open(target) as image:
+            # Every channel of every pixel (getbbox would look at alpha alone).
+            if image.size == new.size and max(high for _, high in
+                                              ImageChops.difference(image.convert('RGBA'), new).getextrema()) == 0:
+                return 'same'
+            mode = {'L': 'L' if grey else 'RGB' if opaque else 'RGBA', 'RGB': 'RGB' if opaque else 'RGBA'}.get(image.mode,
+                                                                                                         'RGBA')
+        state = 'changed'
+    new.convert(mode).save(target)
+    return state
+
+
+NUMBER = re.compile(r'-?\d+\.\d+(?:e-?\d+)?')
+
+
+def write_tres(exported, target):
+    """Copy an exported .tres over target unless every line and value is the same (floats to 1e-9 relative)."""
+    lines = [line.rstrip() for line in exported.read_text(encoding='utf-8').splitlines()]
+    while lines and not lines[-1]:
+        lines.pop()
+    if target.exists():
+        old = target.read_bytes().decode('utf-8')
+        kept = [line.strip() for line in old.splitlines() if line.strip()]
+        if len(kept) == len([line for line in lines if line.strip()]) and all(
+                NUMBER.sub('#', a) == NUMBER.sub('#', b.strip()) and all(
+                    abs(float(x) - float(y)) <= 1e-9 * max(1, abs(float(x)))
+                    for x, y in zip(NUMBER.findall(a), NUMBER.findall(b)))
+                for a, b in zip(kept, [line for line in lines if line.strip()])):
+            return 'same'
+        newline, state = '\r\n' if '\r\n' in old else '\n', 'changed'
+        tail = newline * (2 if old.endswith(newline * 2) else 1)
+    else:
+        newline, tail, state = '\n', '\n', 'new'
+    target.write_bytes((newline.join(lines) + tail).encode('utf-8'))
+    return state
 
 
 def check_catalog(project, name, width):
@@ -111,17 +148,32 @@ def export(project):
         written = sorted(output.iterdir())
         if not (output / f'{project.stem}.tres').is_file() or not (output / f'{project.stem}_albedo.png').is_file():
             raise SystemExit(f'{project.relative_to(ROOT)}: the export wrote no {project.stem}.tres with an albedo map')
+        from PIL import Image
         for file in written:
             if file.suffix == '.png':
                 if file.name not in expected:
                     raise SystemExit(f'{project.relative_to(ROOT)}: unexpected exported file {file.name}')
-                resample(file, expected[file.name])
+                with Image.open(file) as image:
+                    if image.size != (expected[file.name],) * 2:
+                        raise SystemExit(f'{file.name}: Material Maker wrote {image.width} pixels for a Size of '
+                                         f'{expected[file.name]}; export with Material Maker 1.8-mm.2 or later')
         destination.mkdir(parents=True, exist_ok=True)
+        states = []
         for map_name in MAPS:
             if not (output / f'{project.stem}_{map_name}.png').exists():
-                (destination / f'{project.stem}_{map_name}.png').unlink(missing_ok=True)
+                stale = destination / f'{project.stem}_{map_name}.png'
+                if stale.exists():
+                    stale.unlink()
+                    states.append(f'{map_name}:removed')
         for file in written:
-            shutil.copyfile(file, destination / file.name)
+            if file.suffix == '.png':
+                states.append(f'{file.stem.replace(project.stem + "_", "")}:{write_map(file, destination / file.name)}')
+            elif file.suffix == '.tres':
+                states.append(f'tres:{write_tres(file, destination / file.name)}')
+            else:
+                shutil.copyfile(file, destination / file.name)
+                states.append(f'{file.name}:copied')
+        print('  ' + ' '.join(states))
     check_catalog(project, name, expected[f'{project.stem}_albedo.png'])
 
 

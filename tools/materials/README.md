@@ -9,9 +9,16 @@ are Godot `ShaderMaterial`s instead, made from that same export ([below](#shader
 | --- | --- |
 | `<folder>/<name>/<name>.ptex` | `data/models/board/textures/<folder>/<name>.tres` and its maps |
 
-For example, `terrain/surfaces/grass/grass.ptex` exports
-`data/models/board/textures/terrain/surfaces/grass.tres`. A project's own images are in
+For example, `terrain/surfaces/grassland-ground/grassland-ground.ptex` exports
+`data/models/board/textures/terrain/surfaces/grassland-ground.tres`. A project's own images are in
 its `sources/` folder.
+
+Terrain surfaces are named `<surface>-<role>`: the ground type, then what the material does there:
+`ground` (the hex surface), `debris` (loose stones at cliff feet, rims and slopes), `cliff` (walls and
+bedrock), `bank` (soil on banks) or `cap` (mesa cap plates). `temperate-*` is shared by grassland,
+dirt, rock, concrete, snow and tropical ground, `arid-*` by sand and desert; `biome-*` serve fields,
+marsh and mud, and a few name their one use (`sand-verge`, `concrete-mulch`, `ground-scorch`,
+`scatter-stone`).
 
 ## The material
 
@@ -95,7 +102,7 @@ the game estimates none of its own.
 
 Most sculpted terrain projects (`terrain/surfaces`) make their roughness in the
 `SurfaceResponse` group: *Base roughness* plus up to ±*Roughness variation*/2 from the
-grain, smoother on raised grain. `tree-pit-mulch` uses a uniform 0.92 factor; mud and
+grain, smoother on raised grain. `concrete-mulch` uses a uniform 0.92 factor; mud and
 scorch build their own roughness.
 
 ## Loose and constrained materials
@@ -115,7 +122,7 @@ A loose entry has up to two values:
 | `metres` | The ground one repeat covers at `pixels` wide. Terrain surfaces and roads; lava, ice and industrial plating repeat as the game sets, and give `pixels` alone. | Stretches or shrinks the material on the ground: its stones, cracks and grain grow or shrink with its repeat. |
 
 A texture so covers `metres` × (its width ÷ `pixels`) before it repeats. Roads are 1024 pixels
-over 12 m (11.7 mm a texel), grass 512 pixels over 4 m (7.8 mm).
+over 12 m (11.7 mm a texel), grass 512 pixels over 12 m (23.4 mm).
 
 To edit them safely:
 
@@ -126,14 +133,14 @@ To edit them safely:
   the wider texture covers more ground. A terrain surface's project measures per repeat, so divide
   its *Relief* by N and multiply its two cavity strengths by N. For a road, `road_maps.py
   --lengthen N` (below) makes that content at the same width; then multiply `metres` by N.
-- **Bigger or smaller features:** change `metres`. A terrain surface's project knows no metres:
-  its *Relief* is the heightmap's height range as a percentage of the repeat (Godot's
+- **Bigger or smaller features:** change `metres`. A sculpted terrain surface's project knows no
+  metres: its *Relief* is the heightmap's height range as a percentage of the repeat (Godot's
   `heightmap_scale`; the Material node's Depth scale is *Relief* ÷ 25), and its crack shading
-  strengths are per repeat, so its maps fit any size. A road project still gives *RepeatMetres*,
-  the ground its exported tile covers, `metres` × (its width ÷ `pixels`), which must match, or
-  its normals come out too steep or too flat, and *ReliefMetres*, the height range of its
-  heightmap in metres. Its normals use that relief rounded to
-  a whole code (its `ReliefCodes` node: *ReliefMetres* ÷ (*RepeatMetres* × 0.1) × 255, rounded),
+  strengths are per repeat, so its maps fit any size. A road project, and `biome-mud`,
+  `ground-scorch` and `concrete-mulch`, still give *RepeatMetres*, the ground the exported tile
+  covers, `metres` × (its width ÷ `pixels`), which must match, or the normals come out too steep
+  or too flat, and *ReliefMetres*, the height range of the heightmap in metres. A road's normals
+  use that relief rounded to a whole code (its `ReliefCodes` node: *ReliefMetres* ÷ (*RepeatMetres* × 0.1) × 255, rounded),
   and its Material node takes *depth_scale* = 0.4 × that code ÷ 255, so the parallax depth is the
   relief the normals have (asphalt: code 4, 1.88 cm; dirt 11, 5.18 cm; gravel 18, 8.47 cm).
 - Maps stay square, and must tile (below).
@@ -166,18 +173,19 @@ From the editor: *File > Export material > Godot > Godot 4 Standard* into the fo
 the table above; for lava, crust and ice, *Godot > Godot 4 ShaderMaterial* (below). In the game,
 *Reload assets* in the Tuning panel picks up the new export.
 
-From the command line, run from the mm-data root (requires Material Maker and Pillow):
+From the command line, run from the mm-data root (requires Material Maker 1.8-mm.2 or later, and
+Pillow):
 
 ```text
 python tools/materials/export.py
-python tools/materials/export.py terrain/surfaces/grass/grass.ptex
+python tools/materials/export.py terrain/surfaces/grassland-ground/grassland-ground.ptex
 ```
 
-The script exports every project, or the one given. Material Maker's command line renders
-every map at 2048 pixels whatever the Size, so the script resamples each map to its
-node's Size, the size the editor writes; the pixels are close to the editor's, not identical.
-Sizes above 2048, or exact pixels, need the editor's export: the committed maps are editor
-exports. The script then removes maps the material no longer has. For a loose material it prints
-the ground one repeat covers, and warns when a road project's *Repeat (metres)* disagrees with it.
+The script exports every project, or the one given. Material Maker's command line writes each map
+at its node's Size, the same pixels as the editor. The script writes a map only when its pixels
+change, in the PNG mode of the file it replaces, and the `.tres` only when a value changes, so
+exporting an unchanged project changes no file; it prints which files changed. It removes Material
+node maps the material no longer has. For a loose material it prints the ground one repeat covers,
+and warns when a project's *Repeat (metres)* disagrees with it.
 
 megamek's `docs/gpu-board-materials.md` describes how the game reads these files.

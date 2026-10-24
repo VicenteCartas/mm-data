@@ -1,0 +1,3282 @@
+{
+  "name": "pavement",
+  "label": "pavement",
+  "type": "graph",
+  "parameters": {},
+  "node_position": {
+    "x": 0,
+    "y": 0
+  },
+  "seed_int": 0,
+  "nodes": [
+    {
+      "name": "About",
+      "type": "comment",
+      "parameters": {},
+      "node_position": {
+        "x": 0,
+        "y": -420
+      },
+      "size": {
+        "x": 900,
+        "y": 238
+      },
+      "title": "About this material",
+      "text": "Sculpted terrain material, built from sources/pigment.png, structure-high.png, structure-low.png (pigment and the 16-bit height fields). Size: materials.json sets the ground one repeat covers; nothing here depends on it. Relief is the heightmap's height range as a percentage of that repeat (the game's parallax depth). After changing Relief, set the Material node's Depth scale to Relief / 25. Pigment changes the colour; SurfaceResponse the normal strength, cavity and roughness. The ...PNG8 groups and the nodes after them only store exact file values; leave them. Export: File > Export material > Godot > Godot 4 Standard into data/models/board/textures/terrain/surfaces, then Reload assets in the game's Tuning panel.",
+      "color": {
+        "type": "Color",
+        "r": 0.18,
+        "g": 0.23,
+        "b": 0.28,
+        "a": 1
+      }
+    },
+    {
+      "name": "PigmentSource",
+      "type": "image",
+      "parameters": {
+        "image": "%PROJECT_PATH%/sources/pigment.png",
+        "fix_ar": false,
+        "clamp": false
+      },
+      "seed_int": 0,
+      "node_position": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "name": "HighSource",
+      "type": "image",
+      "parameters": {
+        "image": "%PROJECT_PATH%/sources/structure-high.png",
+        "fix_ar": false,
+        "clamp": false
+      },
+      "seed_int": 0,
+      "node_position": {
+        "x": 0,
+        "y": 240
+      }
+    },
+    {
+      "name": "LowSource",
+      "type": "image",
+      "parameters": {
+        "image": "%PROJECT_PATH%/sources/structure-low.png",
+        "fix_ar": false,
+        "clamp": false
+      },
+      "seed_int": 0,
+      "node_position": {
+        "x": 0,
+        "y": 480
+      }
+    },
+    {
+      "name": "Pigment",
+      "label": "Retained pigment",
+      "type": "graph",
+      "node_position": {
+        "x": 400,
+        "y": 0
+      },
+      "parameters": {
+        "Hue": 0.0086,
+        "Saturation": 1,
+        "Value": 1
+      },
+      "seed_int": 0,
+      "nodes": [
+        {
+          "name": "gen_inputs",
+          "type": "ios",
+          "node_position": {
+            "x": 225,
+            "y": 0
+          },
+          "parameters": {},
+          "ports": [
+            {
+              "name": "sRGB pigment",
+              "type": "rgba",
+              "group_size": 0
+            }
+          ],
+          "seed": 0,
+          "seed_locked": true
+        },
+        {
+          "name": "gen_outputs",
+          "type": "ios",
+          "node_position": {
+            "x": 1025,
+            "y": 0
+          },
+          "parameters": {},
+          "ports": [
+            {
+              "name": "sRGB pigment",
+              "type": "rgba",
+              "group_size": 0
+            }
+          ],
+          "seed": 0
+        },
+        {
+          "name": "gen_parameters",
+          "type": "remote",
+          "node_position": {
+            "x": 225,
+            "y": 200
+          },
+          "parameters": {
+            "Hue": 0,
+            "Saturation": 1,
+            "Value": 1
+          },
+          "seed": 0,
+          "widgets": [
+            {
+              "name": "Hue",
+              "shortdesc": "Hue",
+              "label": "Hue",
+              "type": "linked_control",
+              "linked_widgets": [
+                {
+                  "node": "PigmentControls",
+                  "widget": "hue"
+                }
+              ]
+            },
+            {
+              "name": "Saturation",
+              "shortdesc": "Saturation",
+              "label": "Saturation",
+              "type": "linked_control",
+              "linked_widgets": [
+                {
+                  "node": "PigmentControls",
+                  "widget": "saturation"
+                }
+              ]
+            },
+            {
+              "name": "Value",
+              "shortdesc": "Value",
+              "label": "Value",
+              "type": "linked_control",
+              "linked_widgets": [
+                {
+                  "node": "PigmentControls",
+                  "widget": "value"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "DecodePigment",
+          "type": "color_conversion",
+          "node_position": {
+            "x": 250,
+            "y": 0
+          },
+          "parameters": {
+            "mode": 1
+          },
+          "seed": 0,
+          "seed_locked": true
+        },
+        {
+          "name": "LinearPigmentGrid",
+          "type": "buffer",
+          "node_position": {
+            "x": 500,
+            "y": 0
+          },
+          "parameters": {
+            "size": 9
+          },
+          "seed": 0,
+          "seed_locked": true,
+          "version": 1
+        },
+        {
+          "name": "PigmentControls",
+          "type": "adjust_hsv",
+          "node_position": {
+            "x": 750,
+            "y": 0
+          },
+          "parameters": {
+            "hue": 0,
+            "saturation": 1,
+            "value": 1
+          },
+          "seed": 0,
+          "seed_locked": true
+        },
+        {
+          "name": "EncodePigment",
+          "type": "color_conversion",
+          "node_position": {
+            "x": 1000,
+            "y": 0
+          },
+          "parameters": {
+            "mode": 0
+          },
+          "seed": 0,
+          "seed_locked": true
+        },
+        {
+          "name": "SourceCodes",
+          "type": "math_v3",
+          "parameters": {
+            "op": 2,
+            "d_in2_x": 255,
+            "d_in2_y": 255,
+            "d_in2_z": 255,
+            "clamp": false
+          },
+          "node_position": {
+            "x": -250,
+            "y": 0
+          }
+        },
+        {
+          "name": "SourceRound",
+          "type": "math_v3",
+          "parameters": {
+            "op": 8,
+            "clamp": false
+          },
+          "node_position": {
+            "x": -100,
+            "y": 0
+          }
+        },
+        {
+          "name": "SourceValue",
+          "type": "math_v3",
+          "parameters": {
+            "op": 3,
+            "d_in2_x": 255,
+            "d_in2_y": 255,
+            "d_in2_z": 255,
+            "clamp": false
+          },
+          "node_position": {
+            "x": 50,
+            "y": 0
+          }
+        }
+      ],
+      "connections": [
+        {
+          "from": "DecodePigment",
+          "from_port": 0,
+          "to": "LinearPigmentGrid",
+          "to_port": 0
+        },
+        {
+          "from": "LinearPigmentGrid",
+          "from_port": 0,
+          "to": "PigmentControls",
+          "to_port": 0
+        },
+        {
+          "from": "PigmentControls",
+          "from_port": 0,
+          "to": "EncodePigment",
+          "to_port": 0
+        },
+        {
+          "from": "SourceValue",
+          "from_port": 0,
+          "to": "DecodePigment",
+          "to_port": 0
+        },
+        {
+          "from": "EncodePigment",
+          "from_port": 0,
+          "to": "gen_outputs",
+          "to_port": 0
+        },
+        {
+          "from": "gen_inputs",
+          "to": "SourceCodes",
+          "from_port": 0,
+          "to_port": 0
+        },
+        {
+          "from": "SourceCodes",
+          "to": "SourceRound",
+          "from_port": 0,
+          "to_port": 0
+        },
+        {
+          "from": "SourceRound",
+          "to": "SourceValue",
+          "from_port": 0,
+          "to_port": 0
+        }
+      ]
+    },
+    {
+      "name": "RegisteredStructure",
+      "label": "RegisteredStructure",
+      "type": "graph",
+      "parameters": {},
+      "node_position": {
+        "x": 400,
+        "y": 500
+      },
+      "seed_int": 0,
+      "nodes": [
+        {
+          "name": "gen_inputs",
+          "type": "ios",
+          "parameters": {},
+          "node_position": {
+            "x": -250,
+            "y": 0
+          },
+          "ports": [
+            {
+              "name": "High bytes",
+              "type": "rgba",
+              "group_size": 0
+            },
+            {
+              "name": "Low bytes",
+              "type": "rgba",
+              "group_size": 0
+            }
+          ]
+        },
+        {
+          "name": "gen_outputs",
+          "type": "ios",
+          "parameters": {},
+          "node_position": {
+            "x": 2200,
+            "y": 0
+          },
+          "ports": [
+            {
+              "name": "Height and two source neighbourhoods",
+              "type": "rgba",
+              "group_size": 0
+            }
+          ]
+        },
+        {
+          "name": "High",
+          "type": "decompose",
+          "parameters": {},
+          "seed_int": 0,
+          "node_position": {
+            "x": 540,
+            "y": 0
+          }
+        },
+        {
+          "name": "Low",
+          "type": "decompose",
+          "parameters": {},
+          "seed_int": 0,
+          "node_position": {
+            "x": 810,
+            "y": 0
+          }
+        },
+        {
+          "name": "HeightHighCodes",
+          "type": "math",
+          "parameters": {
+            "op": 2,
+            "default_in1": 0,
+            "default_in2": 255,
+            "clamp": false
+          },
+          "seed_int": 0,
+          "node_position": {
+            "x": 1080,
+            "y": 0
+          }
+        },
+        {
+          "name": "HeightHigh",
+          "type": "math",
+          "parameters": {
+            "op": 8,
+            "default_in1": 0,
+            "default_in2": 0,
+            "clamp": false
+          },
+          "seed_int": 0,
+          "node_position": {
+            "x": 1350,
+            "y": 0
+          }
+        },
+        {
+          "name": "HeightLowCodes",
+          "type": "math",
+          "parameters": {
+            "op": 2,
+            "default_in1": 0,
+            "default_in2": 255,
+            "clamp": false
+          },
+          "seed_int": 0,
+          "node_position": {
+            "x": 1620,
+            "y": 0
+          }
+        },
+        {
+          "name": "HeightLow",
+          "type": "math",
+          "parameters": {
+            "op": 8,
+            "default_in1": 0,
+            "default_in2": 0,
+            "clamp": false
+          },
+          "seed_int": 0,
+          "node_position": {
+            "x": 0,
+            "y": 180
+          }
+        },
+        {
+          "name": "HeightHighBits",
+          "type": "math",
+          "parameters": {
+            "op": 2,
+            "default_in1": 0,
+            "default_in2": 256,
+            "clamp": false
+          },
+          "seed_int": 0,
+          "node_position": {
+            "x": 270,
+            "y": 180
+          }
+        },
+        {
+          "name": "HeightCode",
+          "type": "math",
+          "parameters": {
+            "op": 0,
+            "default_in1": 0,
+            "default_in2": 0,
+            "clamp": false
+          },
+          "seed_int": 0,
+          "node_position": {
+            "x": 540,
+            "y": 180
+          }
+        },
+        {
+          "name": "Height",
+          "type": "math",
+          "parameters": {
+            "op": 3,
+            "default_in1": 0,
+            "default_in2": 65535,
+            "clamp": false
+          },
+          "seed_int": 0,
+          "node_position": {
+            "x": 810,
+            "y": 180
+          }
+        },
+        {
+          "name": "NearNeighbourHighCodes",
+          "type": "math",
+          "parameters": {
+            "op": 2,
+            "default_in1": 0,
+            "default_in2": 255,
+            "clamp": false
+          },
+          "seed_int": 0,
+          "node_position": {
+            "x": 1080,
+            "y": 180
+          }
+        },
+        {
+          "name": "NearNeighbourHigh",
+          "type": "math",
+          "parameters": {
+            "op": 8,
+            "default_in1": 0,
+            "default_in2": 0,
+            "clamp": false
+          },
+          "seed_int": 0,
+          "node_position": {
+            "x": 1350,
+            "y": 180
+          }
+        },
+        {
+          "name": "NearNeighbourLowCodes",
+          "type": "math",
+          "parameters": {
+            "op": 2,
+            "default_in1": 0,
+            "default_in2": 255,
+            "clamp": false
+          },
+          "seed_int": 0,
+          "node_position": {
+            "x": 1620,
+            "y": 180
+          }
+        },
+        {
+          "name": "NearNeighbourLow",
+          "type": "math",
+          "parameters": {
+            "op": 8,
+            "default_in1": 0,
+            "default_in2": 0,
+            "clamp": false
+          },
+          "seed_int": 0,
+          "node_position": {
+            "x": 0,
+            "y": 360
+          }
+        },
+        {
+          "name": "NearNeighbourHighBits",
+          "type": "math",
+          "parameters": {
+            "op": 2,
+            "default_in1": 0,
+            "default_in2": 256,
+            "clamp": false
+          },
+          "seed_int": 0,
+          "node_position": {
+            "x": 270,
+            "y": 360
+          }
+        },
+        {
+          "name": "NearNeighbourCode",
+          "type": "math",
+          "parameters": {
+            "op": 0,
+            "default_in1": 0,
+            "default_in2": 0,
+            "clamp": false
+          },
+          "seed_int": 0,
+          "node_position": {
+            "x": 540,
+            "y": 360
+          }
+        },
+        {
+          "name": "NearNeighbour",
+          "type": "math",
+          "parameters": {
+            "op": 3,
+            "default_in1": 0,
+            "default_in2": 65535,
+            "clamp": false
+          },
+          "seed_int": 0,
+          "node_position": {
+            "x": 810,
+            "y": 360
+          }
+        },
+        {
+          "name": "WideNeighbourHighCodes",
+          "type": "math",
+          "parameters": {
+            "op": 2,
+            "default_in1": 0,
+            "default_in2": 255,
+            "clamp": false
+          },
+          "seed_int": 0,
+          "node_position": {
+            "x": 1080,
+            "y": 360
+          }
+        },
+        {
+          "name": "WideNeighbourHigh",
+          "type": "math",
+          "parameters": {
+            "op": 8,
+            "default_in1": 0,
+            "default_in2": 0,
+            "clamp": false
+          },
+          "seed_int": 0,
+          "node_position": {
+            "x": 1350,
+            "y": 360
+          }
+        },
+        {
+          "name": "WideNeighbourLowCodes",
+          "type": "math",
+          "parameters": {
+            "op": 2,
+            "default_in1": 0,
+            "default_in2": 255,
+            "clamp": false
+          },
+          "seed_int": 0,
+          "node_position": {
+            "x": 1620,
+            "y": 360
+          }
+        },
+        {
+          "name": "WideNeighbourLow",
+          "type": "math",
+          "parameters": {
+            "op": 8,
+            "default_in1": 0,
+            "default_in2": 0,
+            "clamp": false
+          },
+          "seed_int": 0,
+          "node_position": {
+            "x": 0,
+            "y": 540
+          }
+        },
+        {
+          "name": "WideNeighbourHighBits",
+          "type": "math",
+          "parameters": {
+            "op": 2,
+            "default_in1": 0,
+            "default_in2": 256,
+            "clamp": false
+          },
+          "seed_int": 0,
+          "node_position": {
+            "x": 270,
+            "y": 540
+          }
+        },
+        {
+          "name": "WideNeighbourCode",
+          "type": "math",
+          "parameters": {
+            "op": 0,
+            "default_in1": 0,
+            "default_in2": 0,
+            "clamp": false
+          },
+          "seed_int": 0,
+          "node_position": {
+            "x": 540,
+            "y": 540
+          }
+        },
+        {
+          "name": "WideNeighbour",
+          "type": "math",
+          "parameters": {
+            "op": 3,
+            "default_in1": 0,
+            "default_in2": 65535,
+            "clamp": false
+          },
+          "seed_int": 0,
+          "node_position": {
+            "x": 810,
+            "y": 540
+          }
+        },
+        {
+          "name": "Fields",
+          "type": "combine",
+          "parameters": {},
+          "seed_int": 0,
+          "node_position": {
+            "x": 1080,
+            "y": 540
+          }
+        },
+        {
+          "name": "Fields_Value3",
+          "type": "math",
+          "parameters": {
+            "op": 0,
+            "default_in1": 1,
+            "default_in2": 0,
+            "clamp": false
+          },
+          "seed_int": 0,
+          "node_position": {
+            "x": 1350,
+            "y": 540
+          }
+        }
+      ],
+      "connections": [
+        {
+          "from": "gen_inputs",
+          "from_port": 0,
+          "to": "High",
+          "to_port": 0
+        },
+        {
+          "from": "gen_inputs",
+          "from_port": 1,
+          "to": "Low",
+          "to_port": 0
+        },
+        {
+          "from": "High",
+          "from_port": 0,
+          "to": "HeightHighCodes",
+          "to_port": 0
+        },
+        {
+          "from": "HeightHighCodes",
+          "from_port": 0,
+          "to": "HeightHigh",
+          "to_port": 0
+        },
+        {
+          "from": "Low",
+          "from_port": 0,
+          "to": "HeightLowCodes",
+          "to_port": 0
+        },
+        {
+          "from": "HeightLowCodes",
+          "from_port": 0,
+          "to": "HeightLow",
+          "to_port": 0
+        },
+        {
+          "from": "HeightHigh",
+          "from_port": 0,
+          "to": "HeightHighBits",
+          "to_port": 0
+        },
+        {
+          "from": "HeightHighBits",
+          "from_port": 0,
+          "to": "HeightCode",
+          "to_port": 0
+        },
+        {
+          "from": "HeightLow",
+          "from_port": 0,
+          "to": "HeightCode",
+          "to_port": 1
+        },
+        {
+          "from": "HeightCode",
+          "from_port": 0,
+          "to": "Height",
+          "to_port": 0
+        },
+        {
+          "from": "High",
+          "from_port": 1,
+          "to": "NearNeighbourHighCodes",
+          "to_port": 0
+        },
+        {
+          "from": "NearNeighbourHighCodes",
+          "from_port": 0,
+          "to": "NearNeighbourHigh",
+          "to_port": 0
+        },
+        {
+          "from": "Low",
+          "from_port": 1,
+          "to": "NearNeighbourLowCodes",
+          "to_port": 0
+        },
+        {
+          "from": "NearNeighbourLowCodes",
+          "from_port": 0,
+          "to": "NearNeighbourLow",
+          "to_port": 0
+        },
+        {
+          "from": "NearNeighbourHigh",
+          "from_port": 0,
+          "to": "NearNeighbourHighBits",
+          "to_port": 0
+        },
+        {
+          "from": "NearNeighbourHighBits",
+          "from_port": 0,
+          "to": "NearNeighbourCode",
+          "to_port": 0
+        },
+        {
+          "from": "NearNeighbourLow",
+          "from_port": 0,
+          "to": "NearNeighbourCode",
+          "to_port": 1
+        },
+        {
+          "from": "NearNeighbourCode",
+          "from_port": 0,
+          "to": "NearNeighbour",
+          "to_port": 0
+        },
+        {
+          "from": "High",
+          "from_port": 2,
+          "to": "WideNeighbourHighCodes",
+          "to_port": 0
+        },
+        {
+          "from": "WideNeighbourHighCodes",
+          "from_port": 0,
+          "to": "WideNeighbourHigh",
+          "to_port": 0
+        },
+        {
+          "from": "Low",
+          "from_port": 2,
+          "to": "WideNeighbourLowCodes",
+          "to_port": 0
+        },
+        {
+          "from": "WideNeighbourLowCodes",
+          "from_port": 0,
+          "to": "WideNeighbourLow",
+          "to_port": 0
+        },
+        {
+          "from": "WideNeighbourHigh",
+          "from_port": 0,
+          "to": "WideNeighbourHighBits",
+          "to_port": 0
+        },
+        {
+          "from": "WideNeighbourHighBits",
+          "from_port": 0,
+          "to": "WideNeighbourCode",
+          "to_port": 0
+        },
+        {
+          "from": "WideNeighbourLow",
+          "from_port": 0,
+          "to": "WideNeighbourCode",
+          "to_port": 1
+        },
+        {
+          "from": "WideNeighbourCode",
+          "from_port": 0,
+          "to": "WideNeighbour",
+          "to_port": 0
+        },
+        {
+          "from": "Height",
+          "from_port": 0,
+          "to": "Fields",
+          "to_port": 0
+        },
+        {
+          "from": "NearNeighbour",
+          "from_port": 0,
+          "to": "Fields",
+          "to_port": 1
+        },
+        {
+          "from": "WideNeighbour",
+          "from_port": 0,
+          "to": "Fields",
+          "to_port": 2
+        },
+        {
+          "from": "Fields_Value3",
+          "from_port": 0,
+          "to": "Fields",
+          "to_port": 3
+        },
+        {
+          "from": "Fields",
+          "from_port": 0,
+          "to": "gen_outputs",
+          "to_port": 0
+        }
+      ]
+    },
+    {
+      "name": "SurfaceResponse",
+      "label": "SurfaceResponse",
+      "type": "graph",
+      "parameters": {
+        "ReliefPercent": 1.25,
+        "NormalStrength": 1.4,
+        "NearCavityStrength": 480,
+        "WideCavityStrength": 96,
+        "BaseRoughness": 0.9,
+        "RoughnessVariation": 0.08
+      },
+      "node_position": {
+        "x": 800,
+        "y": 500
+      },
+      "seed_int": 0,
+      "nodes": [
+        {
+          "name": "gen_inputs",
+          "type": "ios",
+          "parameters": {},
+          "node_position": {
+            "x": -250,
+            "y": 0
+          },
+          "ports": [
+            {
+              "name": "Registered fields",
+              "type": "rgba",
+              "group_size": 0
+            }
+          ]
+        },
+        {
+          "name": "gen_outputs",
+          "type": "ios",
+          "parameters": {},
+          "node_position": {
+            "x": 2200,
+            "y": 0
+          },
+          "ports": [
+            {
+              "name": "Normal AO",
+              "type": "rgba",
+              "group_size": 0
+            },
+            {
+              "name": "Normalized height",
+              "type": "f",
+              "group_size": 0
+            },
+            {
+              "name": "Roughness",
+              "type": "f",
+              "group_size": 0
+            },
+            {
+              "name": "Preview normal",
+              "type": "rgb",
+              "group_size": 0
+            },
+            {
+              "name": "AO",
+              "type": "f",
+              "group_size": 0
+            }
+          ]
+        },
+        {
+          "name": "gen_parameters",
+          "type": "remote",
+          "parameters": {
+            "ReliefPercent": 1.25,
+            "NormalStrength": 1.4,
+            "NearCavityStrength": 480,
+            "WideCavityStrength": 96,
+            "BaseRoughness": 0.9,
+            "RoughnessVariation": 0.08
+          },
+          "seed_int": 0,
+          "node_position": {
+            "x": -250,
+            "y": 300
+          },
+          "widgets": [
+            {
+              "name": "ReliefPercent",
+              "label": "ReliefPercent",
+              "type": "named_parameter",
+              "min": 0,
+              "max": 20,
+              "step": 0.01,
+              "default": 1.25
+            },
+            {
+              "name": "NormalStrength",
+              "label": "NormalStrength",
+              "type": "named_parameter",
+              "min": 0,
+              "max": 4,
+              "step": 0.01,
+              "default": 1.4
+            },
+            {
+              "name": "NearCavityStrength",
+              "label": "NearCavityStrength",
+              "type": "named_parameter",
+              "min": 0,
+              "max": 1440,
+              "step": 1,
+              "default": 480
+            },
+            {
+              "name": "WideCavityStrength",
+              "label": "WideCavityStrength",
+              "type": "named_parameter",
+              "min": 0,
+              "max": 300,
+              "step": 1,
+              "default": 96
+            },
+            {
+              "name": "BaseRoughness",
+              "label": "BaseRoughness",
+              "type": "named_parameter",
+              "min": 0,
+              "max": 1,
+              "step": 0.01,
+              "default": 0.9
+            },
+            {
+              "name": "RoughnessVariation",
+              "label": "RoughnessVariation",
+              "type": "named_parameter",
+              "min": 0,
+              "max": 0.3,
+              "step": 0.001,
+              "default": 0.08
+            }
+          ]
+        },
+        {
+          "name": "Fields",
+          "type": "decompose",
+          "parameters": {},
+          "seed_int": 0,
+          "node_position": {
+            "x": 810,
+            "y": 0
+          }
+        },
+        {
+          "name": "PhysicalRange",
+          "type": "math",
+          "parameters": {
+            "op": 2,
+            "default_in1": "$ReliefPercent*0.01",
+            "default_in2": 1,
+            "clamp": false
+          },
+          "seed_int": 0,
+          "node_position": {
+            "x": 1080,
+            "y": 0
+          }
+        },
+        {
+          "name": "PhysicalHeight",
+          "type": "math",
+          "parameters": {
+            "op": 2,
+            "default_in1": 0,
+            "default_in2": 0,
+            "clamp": false
+          },
+          "seed_int": 0,
+          "node_position": {
+            "x": 1350,
+            "y": 0
+          }
+        },
+        {
+          "name": "RegisteredHeightRange",
+          "type": "math",
+          "parameters": {
+            "op": 2,
+            "default_in1": 0,
+            "default_in2": 0.029814243945467857,
+            "clamp": false
+          },
+          "seed_int": 0,
+          "node_position": {
+            "x": 1620,
+            "y": 0
+          }
+        },
+        {
+          "name": "HeightAboveMinimum",
+          "type": "math",
+          "parameters": {
+            "op": 0,
+            "default_in1": 0,
+            "default_in2": 0,
+            "clamp": false
+          },
+          "seed_int": 0,
+          "node_position": {
+            "x": 0,
+            "y": 180
+          }
+        },
+        {
+          "name": "NormalizedHeight",
+          "type": "math",
+          "parameters": {
+            "op": 3,
+            "default_in1": 0,
+            "default_in2": 0.029814244945467857,
+            "clamp": true
+          },
+          "seed_int": 0,
+          "node_position": {
+            "x": 270,
+            "y": 180
+          }
+        },
+        {
+          "name": "SlopeScale",
+          "type": "math",
+          "parameters": {
+            "op": 3,
+            "default_in1": "$NormalStrength",
+            "default_in2": 1,
+            "clamp": false
+          },
+          "seed_int": 0,
+          "node_position": {
+            "x": 540,
+            "y": 180
+          }
+        },
+        {
+          "name": "HeightUMinus",
+          "type": "transform",
+          "parameters": {
+            "repeat": true,
+            "rotate": 0,
+            "scale_x": 1,
+            "scale_y": 1,
+            "translate_x": 0.001953125,
+            "translate_y": 0
+          },
+          "seed_int": 0,
+          "node_position": {
+            "x": 810,
+            "y": 180
+          }
+        },
+        {
+          "name": "HeightUPlus",
+          "type": "transform",
+          "parameters": {
+            "repeat": true,
+            "rotate": 0,
+            "scale_x": 1,
+            "scale_y": 1,
+            "translate_x": -0.001953125,
+            "translate_y": 0
+          },
+          "seed_int": 0,
+          "node_position": {
+            "x": 1080,
+            "y": 180
+          }
+        },
+        {
+          "name": "HeightUDifference",
+          "type": "math",
+          "parameters": {
+            "op": 1,
+            "default_in1": 0,
+            "default_in2": 0,
+            "clamp": false
+          },
+          "seed_int": 0,
+          "node_position": {
+            "x": 1350,
+            "y": 180
+          }
+        },
+        {
+          "name": "HeightU",
+          "type": "math",
+          "parameters": {
+            "op": 2,
+            "default_in1": 0,
+            "default_in2": 256,
+            "clamp": false
+          },
+          "seed_int": 0,
+          "node_position": {
+            "x": 1620,
+            "y": 180
+          }
+        },
+        {
+          "name": "NegativeSlope",
+          "type": "math",
+          "parameters": {
+            "op": 2,
+            "default_in1": 0,
+            "default_in2": -1,
+            "clamp": false
+          },
+          "seed_int": 0,
+          "node_position": {
+            "x": 0,
+            "y": 360
+          }
+        },
+        {
+          "name": "NormalX",
+          "type": "math",
+          "parameters": {
+            "op": 2,
+            "default_in1": 0,
+            "default_in2": 0,
+            "clamp": false
+          },
+          "seed_int": 0,
+          "node_position": {
+            "x": 270,
+            "y": 360
+          }
+        },
+        {
+          "name": "HeightVMinus",
+          "type": "transform",
+          "parameters": {
+            "repeat": true,
+            "rotate": 0,
+            "scale_x": 1,
+            "scale_y": 1,
+            "translate_x": 0,
+            "translate_y": 0.001953125
+          },
+          "seed_int": 0,
+          "node_position": {
+            "x": 540,
+            "y": 360
+          }
+        },
+        {
+          "name": "HeightVPlus",
+          "type": "transform",
+          "parameters": {
+            "repeat": true,
+            "rotate": 0,
+            "scale_x": 1,
+            "scale_y": 1,
+            "translate_x": 0,
+            "translate_y": -0.001953125
+          },
+          "seed_int": 0,
+          "node_position": {
+            "x": 810,
+            "y": 360
+          }
+        },
+        {
+          "name": "HeightVDifference",
+          "type": "math",
+          "parameters": {
+            "op": 1,
+            "default_in1": 0,
+            "default_in2": 0,
+            "clamp": false
+          },
+          "seed_int": 0,
+          "node_position": {
+            "x": 1080,
+            "y": 360
+          }
+        },
+        {
+          "name": "HeightV",
+          "type": "math",
+          "parameters": {
+            "op": 2,
+            "default_in1": 0,
+            "default_in2": 256,
+            "clamp": false
+          },
+          "seed_int": 0,
+          "node_position": {
+            "x": 1350,
+            "y": 360
+          }
+        },
+        {
+          "name": "NormalY",
+          "type": "math",
+          "parameters": {
+            "op": 2,
+            "default_in1": 0,
+            "default_in2": 0,
+            "clamp": false
+          },
+          "seed_int": 0,
+          "node_position": {
+            "x": 1620,
+            "y": 360
+          }
+        },
+        {
+          "name": "NormalVector",
+          "type": "combine",
+          "parameters": {},
+          "seed_int": 0,
+          "node_position": {
+            "x": 0,
+            "y": 540
+          }
+        },
+        {
+          "name": "NormalVector_Value2",
+          "type": "math",
+          "parameters": {
+            "op": 0,
+            "default_in1": 1,
+            "default_in2": 0,
+            "clamp": false
+          },
+          "seed_int": 0,
+          "node_position": {
+            "x": 270,
+            "y": 540
+          }
+        },
+        {
+          "name": "UnitNormal",
+          "type": "math_v3",
+          "parameters": {
+            "op": 24,
+            "clamp": false
+          },
+          "seed_int": 0,
+          "node_position": {
+            "x": 540,
+            "y": 540
+          }
+        },
+        {
+          "name": "NormalScale",
+          "type": "math_v3",
+          "parameters": {
+            "op": 2,
+            "d_in2_x": 0.5,
+            "d_in2_y": 0.5,
+            "d_in2_z": 0.5,
+            "clamp": false
+          },
+          "seed_int": 0,
+          "node_position": {
+            "x": 810,
+            "y": 540
+          }
+        },
+        {
+          "name": "EngineNormal",
+          "type": "math_v3",
+          "parameters": {
+            "op": 0,
+            "d_in2_x": 0.5,
+            "d_in2_y": 0.5,
+            "d_in2_z": 0.5,
+            "clamp": false
+          },
+          "seed_int": 0,
+          "node_position": {
+            "x": 1080,
+            "y": 540
+          }
+        },
+        {
+          "name": "NormalChannels",
+          "type": "decompose",
+          "parameters": {},
+          "seed_int": 0,
+          "node_position": {
+            "x": 1350,
+            "y": 540
+          }
+        },
+        {
+          "name": "NearDepth",
+          "type": "math",
+          "parameters": {
+            "op": 1,
+            "default_in1": 0,
+            "default_in2": 0,
+            "clamp": false
+          },
+          "seed_int": 0,
+          "node_position": {
+            "x": 1620,
+            "y": 540
+          }
+        },
+        {
+          "name": "NearCavity",
+          "type": "math",
+          "parameters": {
+            "op": 14,
+            "default_in1": 0,
+            "default_in2": 0,
+            "clamp": false
+          },
+          "seed_int": 0,
+          "node_position": {
+            "x": 0,
+            "y": 720
+          }
+        },
+        {
+          "name": "NearMetres",
+          "type": "math",
+          "parameters": {
+            "op": 2,
+            "default_in1": 0,
+            "default_in2": 0,
+            "clamp": false
+          },
+          "seed_int": 0,
+          "node_position": {
+            "x": 270,
+            "y": 720
+          }
+        },
+        {
+          "name": "NearAbsorption",
+          "type": "math",
+          "parameters": {
+            "op": 2,
+            "default_in1": 0,
+            "default_in2": "$NearCavityStrength",
+            "clamp": false
+          },
+          "seed_int": 0,
+          "node_position": {
+            "x": 540,
+            "y": 720
+          }
+        },
+        {
+          "name": "WideDepth",
+          "type": "math",
+          "parameters": {
+            "op": 1,
+            "default_in1": 0,
+            "default_in2": 0,
+            "clamp": false
+          },
+          "seed_int": 0,
+          "node_position": {
+            "x": 810,
+            "y": 720
+          }
+        },
+        {
+          "name": "WideCavity",
+          "type": "math",
+          "parameters": {
+            "op": 14,
+            "default_in1": 0,
+            "default_in2": 0,
+            "clamp": false
+          },
+          "seed_int": 0,
+          "node_position": {
+            "x": 1080,
+            "y": 720
+          }
+        },
+        {
+          "name": "WideMetres",
+          "type": "math",
+          "parameters": {
+            "op": 2,
+            "default_in1": 0,
+            "default_in2": 0,
+            "clamp": false
+          },
+          "seed_int": 0,
+          "node_position": {
+            "x": 1350,
+            "y": 720
+          }
+        },
+        {
+          "name": "WideAbsorption",
+          "type": "math",
+          "parameters": {
+            "op": 2,
+            "default_in1": 0,
+            "default_in2": "$WideCavityStrength",
+            "clamp": false
+          },
+          "seed_int": 0,
+          "node_position": {
+            "x": 1620,
+            "y": 720
+          }
+        },
+        {
+          "name": "CombinedAbsorption",
+          "type": "math",
+          "parameters": {
+            "op": 0,
+            "default_in1": 0,
+            "default_in2": 0,
+            "clamp": false
+          },
+          "seed_int": 0,
+          "node_position": {
+            "x": 0,
+            "y": 900
+          }
+        },
+        {
+          "name": "NegativeAbsorption",
+          "type": "math",
+          "parameters": {
+            "op": 2,
+            "default_in1": 0,
+            "default_in2": -1,
+            "clamp": false
+          },
+          "seed_int": 0,
+          "node_position": {
+            "x": 270,
+            "y": 900
+          }
+        },
+        {
+          "name": "AO",
+          "type": "math",
+          "parameters": {
+            "op": 31,
+            "default_in1": 0,
+            "default_in2": 0,
+            "clamp": false
+          },
+          "seed_int": 0,
+          "node_position": {
+            "x": 540,
+            "y": 900
+          }
+        },
+        {
+          "name": "NormalAO",
+          "type": "combine",
+          "parameters": {},
+          "seed_int": 0,
+          "node_position": {
+            "x": 810,
+            "y": 900
+          }
+        },
+        {
+          "name": "HighGrain",
+          "type": "math",
+          "parameters": {
+            "op": 1,
+            "default_in1": 0.5,
+            "default_in2": 0,
+            "clamp": false
+          },
+          "seed_int": 0,
+          "node_position": {
+            "x": 1080,
+            "y": 900
+          }
+        },
+        {
+          "name": "GrainRoughness",
+          "type": "math",
+          "parameters": {
+            "op": 2,
+            "default_in1": 0,
+            "default_in2": "$RoughnessVariation",
+            "clamp": false
+          },
+          "seed_int": 0,
+          "node_position": {
+            "x": 1350,
+            "y": 900
+          }
+        },
+        {
+          "name": "HeightRoughness",
+          "type": "math",
+          "parameters": {
+            "op": 0,
+            "default_in1": "$BaseRoughness",
+            "default_in2": 0,
+            "clamp": false
+          },
+          "seed_int": 0,
+          "node_position": {
+            "x": 1620,
+            "y": 900
+          }
+        },
+        {
+          "name": "Roughness_Floor",
+          "type": "math",
+          "parameters": {
+            "op": 14,
+            "default_in1": 0,
+            "default_in2": 0,
+            "clamp": false
+          },
+          "seed_int": 0,
+          "node_position": {
+            "x": 0,
+            "y": 1080
+          }
+        },
+        {
+          "name": "Roughness",
+          "type": "math",
+          "parameters": {
+            "op": 13,
+            "default_in1": 0,
+            "default_in2": 1,
+            "clamp": false
+          },
+          "seed_int": 0,
+          "node_position": {
+            "x": 270,
+            "y": 1080
+          }
+        },
+        {
+          "name": "PreviewNormal",
+          "type": "normal_map_convert",
+          "parameters": {
+            "op": 1
+          },
+          "seed_int": 0,
+          "node_position": {
+            "x": 540,
+            "y": 1080
+          }
+        }
+      ],
+      "connections": [
+        {
+          "from": "gen_inputs",
+          "from_port": 0,
+          "to": "Fields",
+          "to_port": 0
+        },
+        {
+          "from": "Fields",
+          "from_port": 0,
+          "to": "PhysicalHeight",
+          "to_port": 0
+        },
+        {
+          "from": "PhysicalRange",
+          "from_port": 0,
+          "to": "PhysicalHeight",
+          "to_port": 1
+        },
+        {
+          "from": "Fields",
+          "from_port": 0,
+          "to": "RegisteredHeightRange",
+          "to_port": 0
+        },
+        {
+          "from": "RegisteredHeightRange",
+          "from_port": 0,
+          "to": "HeightAboveMinimum",
+          "to_port": 0
+        },
+        {
+          "from": "HeightAboveMinimum",
+          "from_port": 0,
+          "to": "NormalizedHeight",
+          "to_port": 0
+        },
+        {
+          "from": "PhysicalHeight",
+          "from_port": 0,
+          "to": "HeightUMinus",
+          "to_port": 0
+        },
+        {
+          "from": "PhysicalHeight",
+          "from_port": 0,
+          "to": "HeightUPlus",
+          "to_port": 0
+        },
+        {
+          "from": "HeightUPlus",
+          "from_port": 0,
+          "to": "HeightUDifference",
+          "to_port": 0
+        },
+        {
+          "from": "HeightUMinus",
+          "from_port": 0,
+          "to": "HeightUDifference",
+          "to_port": 1
+        },
+        {
+          "from": "HeightUDifference",
+          "from_port": 0,
+          "to": "HeightU",
+          "to_port": 0
+        },
+        {
+          "from": "SlopeScale",
+          "from_port": 0,
+          "to": "NegativeSlope",
+          "to_port": 0
+        },
+        {
+          "from": "HeightU",
+          "from_port": 0,
+          "to": "NormalX",
+          "to_port": 0
+        },
+        {
+          "from": "NegativeSlope",
+          "from_port": 0,
+          "to": "NormalX",
+          "to_port": 1
+        },
+        {
+          "from": "PhysicalHeight",
+          "from_port": 0,
+          "to": "HeightVMinus",
+          "to_port": 0
+        },
+        {
+          "from": "PhysicalHeight",
+          "from_port": 0,
+          "to": "HeightVPlus",
+          "to_port": 0
+        },
+        {
+          "from": "HeightVPlus",
+          "from_port": 0,
+          "to": "HeightVDifference",
+          "to_port": 0
+        },
+        {
+          "from": "HeightVMinus",
+          "from_port": 0,
+          "to": "HeightVDifference",
+          "to_port": 1
+        },
+        {
+          "from": "HeightVDifference",
+          "from_port": 0,
+          "to": "HeightV",
+          "to_port": 0
+        },
+        {
+          "from": "HeightV",
+          "from_port": 0,
+          "to": "NormalY",
+          "to_port": 0
+        },
+        {
+          "from": "NegativeSlope",
+          "from_port": 0,
+          "to": "NormalY",
+          "to_port": 1
+        },
+        {
+          "from": "NormalX",
+          "from_port": 0,
+          "to": "NormalVector",
+          "to_port": 0
+        },
+        {
+          "from": "NormalY",
+          "from_port": 0,
+          "to": "NormalVector",
+          "to_port": 1
+        },
+        {
+          "from": "NormalVector_Value2",
+          "from_port": 0,
+          "to": "NormalVector",
+          "to_port": 2
+        },
+        {
+          "from": "NormalVector",
+          "from_port": 0,
+          "to": "UnitNormal",
+          "to_port": 0
+        },
+        {
+          "from": "UnitNormal",
+          "from_port": 0,
+          "to": "NormalScale",
+          "to_port": 0
+        },
+        {
+          "from": "NormalScale",
+          "from_port": 0,
+          "to": "EngineNormal",
+          "to_port": 0
+        },
+        {
+          "from": "EngineNormal",
+          "from_port": 0,
+          "to": "NormalChannels",
+          "to_port": 0
+        },
+        {
+          "from": "Fields",
+          "from_port": 1,
+          "to": "NearDepth",
+          "to_port": 0
+        },
+        {
+          "from": "Fields",
+          "from_port": 0,
+          "to": "NearDepth",
+          "to_port": 1
+        },
+        {
+          "from": "NearDepth",
+          "from_port": 0,
+          "to": "NearCavity",
+          "to_port": 0
+        },
+        {
+          "from": "NearCavity",
+          "from_port": 0,
+          "to": "NearMetres",
+          "to_port": 0
+        },
+        {
+          "from": "PhysicalRange",
+          "from_port": 0,
+          "to": "NearMetres",
+          "to_port": 1
+        },
+        {
+          "from": "NearMetres",
+          "from_port": 0,
+          "to": "NearAbsorption",
+          "to_port": 0
+        },
+        {
+          "from": "Fields",
+          "from_port": 2,
+          "to": "WideDepth",
+          "to_port": 0
+        },
+        {
+          "from": "Fields",
+          "from_port": 0,
+          "to": "WideDepth",
+          "to_port": 1
+        },
+        {
+          "from": "WideDepth",
+          "from_port": 0,
+          "to": "WideCavity",
+          "to_port": 0
+        },
+        {
+          "from": "WideCavity",
+          "from_port": 0,
+          "to": "WideMetres",
+          "to_port": 0
+        },
+        {
+          "from": "PhysicalRange",
+          "from_port": 0,
+          "to": "WideMetres",
+          "to_port": 1
+        },
+        {
+          "from": "WideMetres",
+          "from_port": 0,
+          "to": "WideAbsorption",
+          "to_port": 0
+        },
+        {
+          "from": "NearAbsorption",
+          "from_port": 0,
+          "to": "CombinedAbsorption",
+          "to_port": 0
+        },
+        {
+          "from": "WideAbsorption",
+          "from_port": 0,
+          "to": "CombinedAbsorption",
+          "to_port": 1
+        },
+        {
+          "from": "CombinedAbsorption",
+          "from_port": 0,
+          "to": "NegativeAbsorption",
+          "to_port": 0
+        },
+        {
+          "from": "NegativeAbsorption",
+          "from_port": 0,
+          "to": "AO",
+          "to_port": 0
+        },
+        {
+          "from": "NormalChannels",
+          "from_port": 0,
+          "to": "NormalAO",
+          "to_port": 0
+        },
+        {
+          "from": "NormalChannels",
+          "from_port": 1,
+          "to": "NormalAO",
+          "to_port": 1
+        },
+        {
+          "from": "NormalChannels",
+          "from_port": 2,
+          "to": "NormalAO",
+          "to_port": 2
+        },
+        {
+          "from": "AO",
+          "from_port": 0,
+          "to": "NormalAO",
+          "to_port": 3
+        },
+        {
+          "from": "NormalizedHeight",
+          "from_port": 0,
+          "to": "HighGrain",
+          "to_port": 1
+        },
+        {
+          "from": "HighGrain",
+          "from_port": 0,
+          "to": "GrainRoughness",
+          "to_port": 0
+        },
+        {
+          "from": "GrainRoughness",
+          "from_port": 0,
+          "to": "HeightRoughness",
+          "to_port": 1
+        },
+        {
+          "from": "HeightRoughness",
+          "from_port": 0,
+          "to": "Roughness_Floor",
+          "to_port": 0
+        },
+        {
+          "from": "Roughness_Floor",
+          "from_port": 0,
+          "to": "Roughness",
+          "to_port": 0
+        },
+        {
+          "from": "EngineNormal",
+          "from_port": 0,
+          "to": "PreviewNormal",
+          "to_port": 0
+        },
+        {
+          "from": "NormalAO",
+          "from_port": 0,
+          "to": "gen_outputs",
+          "to_port": 0
+        },
+        {
+          "from": "NormalizedHeight",
+          "from_port": 0,
+          "to": "gen_outputs",
+          "to_port": 1
+        },
+        {
+          "from": "Roughness",
+          "from_port": 0,
+          "to": "gen_outputs",
+          "to_port": 2
+        },
+        {
+          "from": "PreviewNormal",
+          "from_port": 0,
+          "to": "gen_outputs",
+          "to_port": 3
+        },
+        {
+          "from": "AO",
+          "from_port": 0,
+          "to": "gen_outputs",
+          "to_port": 4
+        }
+      ]
+    },
+    {
+      "name": "PigmentChannels",
+      "type": "decompose",
+      "parameters": {},
+      "seed_int": 0,
+      "node_position": {
+        "x": 1620,
+        "y": 0
+      }
+    },
+    {
+      "name": "PigmentHeight",
+      "type": "combine",
+      "parameters": {},
+      "seed_int": 0,
+      "node_position": {
+        "x": 0,
+        "y": 180
+      }
+    },
+    {
+      "name": "ColorPNG8",
+      "type": "graph",
+      "node_position": {
+        "x": 1200,
+        "y": 0
+      },
+      "parameters": {},
+      "seed": 0,
+      "seed_locked": true,
+      "label": "PNG8 numeric encoding (nearest code)",
+      "nodes": [
+        {
+          "name": "gen_inputs",
+          "type": "ios",
+          "node_position": {
+            "x": 0,
+            "y": 0
+          },
+          "parameters": {},
+          "seed": 0,
+          "seed_locked": true,
+          "ports": [
+            {
+              "name": "Unencoded numeric value",
+              "type": "rgba",
+              "group_size": 0
+            }
+          ]
+        },
+        {
+          "name": "gen_outputs",
+          "type": "ios",
+          "node_position": {
+            "x": 1800,
+            "y": 0
+          },
+          "parameters": {},
+          "seed": 0,
+          "seed_locked": true,
+          "ports": [
+            {
+              "name": "PNG bin center",
+              "type": "rgba",
+              "group_size": 0
+            }
+          ]
+        },
+        {
+          "name": "RGBValidRange",
+          "type": "math_v3",
+          "node_position": {
+            "x": 250,
+            "y": 0
+          },
+          "parameters": {
+            "op": 0,
+            "clamp": true,
+            "d_in2_x": 0,
+            "d_in2_y": 0,
+            "d_in2_z": 0
+          },
+          "seed": 0,
+          "seed_locked": true
+        },
+        {
+          "name": "RGBCodes",
+          "type": "math_v3",
+          "node_position": {
+            "x": 500,
+            "y": 0
+          },
+          "parameters": {
+            "op": 2,
+            "clamp": false,
+            "d_in2_x": 255,
+            "d_in2_y": 255,
+            "d_in2_z": 255
+          },
+          "seed": 0,
+          "seed_locked": true
+        },
+        {
+          "name": "RGBNearestCode",
+          "type": "math_v3",
+          "node_position": {
+            "x": 750,
+            "y": 0
+          },
+          "parameters": {
+            "op": 8,
+            "clamp": false,
+            "d_in2_x": 0,
+            "d_in2_y": 0,
+            "d_in2_z": 0
+          },
+          "seed": 0,
+          "seed_locked": true
+        },
+        {
+          "name": "RGBBinCenter",
+          "type": "math_v3",
+          "node_position": {
+            "x": 1000,
+            "y": 0
+          },
+          "parameters": {
+            "op": 0,
+            "clamp": false,
+            "d_in2_x": 0.5,
+            "d_in2_y": 0.5,
+            "d_in2_z": 0.5
+          },
+          "seed": 0,
+          "seed_locked": true
+        },
+        {
+          "name": "RGBPNGValue",
+          "type": "math_v3",
+          "node_position": {
+            "x": 1250,
+            "y": 0
+          },
+          "parameters": {
+            "op": 3,
+            "clamp": true,
+            "d_in2_x": 255,
+            "d_in2_y": 255,
+            "d_in2_z": 255
+          },
+          "seed": 0,
+          "seed_locked": true
+        },
+        {
+          "name": "InputChannels",
+          "type": "decompose",
+          "node_position": {
+            "x": 250,
+            "y": 400
+          },
+          "parameters": {},
+          "seed": 0,
+          "seed_locked": true
+        },
+        {
+          "name": "AlphaValidRange",
+          "type": "math",
+          "node_position": {
+            "x": 250,
+            "y": 600
+          },
+          "parameters": {
+            "op": 0,
+            "clamp": true,
+            "default_in1": 0,
+            "default_in2": 0
+          },
+          "seed": 0,
+          "seed_locked": true
+        },
+        {
+          "name": "AlphaCodes",
+          "type": "math",
+          "node_position": {
+            "x": 500,
+            "y": 600
+          },
+          "parameters": {
+            "op": 2,
+            "clamp": false,
+            "default_in1": 0,
+            "default_in2": 255
+          },
+          "seed": 0,
+          "seed_locked": true
+        },
+        {
+          "name": "AlphaNearestCode",
+          "type": "math",
+          "node_position": {
+            "x": 750,
+            "y": 600
+          },
+          "parameters": {
+            "op": 8,
+            "clamp": false,
+            "default_in1": 0,
+            "default_in2": 0
+          },
+          "seed": 0,
+          "seed_locked": true
+        },
+        {
+          "name": "AlphaBinCenter",
+          "type": "math",
+          "node_position": {
+            "x": 1000,
+            "y": 600
+          },
+          "parameters": {
+            "op": 0,
+            "clamp": false,
+            "default_in1": 0,
+            "default_in2": 0.5
+          },
+          "seed": 0,
+          "seed_locked": true
+        },
+        {
+          "name": "AlphaPNGValue",
+          "type": "math",
+          "node_position": {
+            "x": 1250,
+            "y": 600
+          },
+          "parameters": {
+            "op": 3,
+            "clamp": true,
+            "default_in1": 0,
+            "default_in2": 255
+          },
+          "seed": 0,
+          "seed_locked": true
+        },
+        {
+          "name": "RGBChannels",
+          "type": "decompose",
+          "node_position": {
+            "x": 1500,
+            "y": 0
+          },
+          "parameters": {},
+          "seed": 0,
+          "seed_locked": true
+        },
+        {
+          "name": "Packed",
+          "type": "combine",
+          "node_position": {
+            "x": 1750,
+            "y": 0
+          },
+          "parameters": {},
+          "seed": 0,
+          "seed_locked": true
+        }
+      ],
+      "connections": [
+        {
+          "from": "gen_inputs",
+          "to": "RGBValidRange",
+          "from_port": 0,
+          "to_port": 0
+        },
+        {
+          "from": "RGBValidRange",
+          "to": "RGBCodes",
+          "from_port": 0,
+          "to_port": 0
+        },
+        {
+          "from": "RGBCodes",
+          "to": "RGBNearestCode",
+          "from_port": 0,
+          "to_port": 0
+        },
+        {
+          "from": "RGBNearestCode",
+          "to": "RGBBinCenter",
+          "from_port": 0,
+          "to_port": 0
+        },
+        {
+          "from": "RGBBinCenter",
+          "to": "RGBPNGValue",
+          "from_port": 0,
+          "to_port": 0
+        },
+        {
+          "from": "gen_inputs",
+          "to": "InputChannels",
+          "from_port": 0,
+          "to_port": 0
+        },
+        {
+          "from": "InputChannels",
+          "to": "AlphaValidRange",
+          "from_port": 3,
+          "to_port": 0
+        },
+        {
+          "from": "AlphaValidRange",
+          "to": "AlphaCodes",
+          "from_port": 0,
+          "to_port": 0
+        },
+        {
+          "from": "AlphaCodes",
+          "to": "AlphaNearestCode",
+          "from_port": 0,
+          "to_port": 0
+        },
+        {
+          "from": "AlphaNearestCode",
+          "to": "AlphaBinCenter",
+          "from_port": 0,
+          "to_port": 0
+        },
+        {
+          "from": "AlphaBinCenter",
+          "to": "AlphaPNGValue",
+          "from_port": 0,
+          "to_port": 0
+        },
+        {
+          "from": "RGBPNGValue",
+          "to": "RGBChannels",
+          "from_port": 0,
+          "to_port": 0
+        },
+        {
+          "from": "RGBChannels",
+          "to": "Packed",
+          "from_port": 0,
+          "to_port": 0
+        },
+        {
+          "from": "RGBChannels",
+          "to": "Packed",
+          "from_port": 1,
+          "to_port": 1
+        },
+        {
+          "from": "RGBChannels",
+          "to": "Packed",
+          "from_port": 2,
+          "to_port": 2
+        },
+        {
+          "from": "AlphaPNGValue",
+          "to": "Packed",
+          "from_port": 0,
+          "to_port": 3
+        },
+        {
+          "from": "Packed",
+          "to": "gen_outputs",
+          "from_port": 0,
+          "to_port": 0
+        }
+      ]
+    },
+    {
+      "name": "NormalPNG8",
+      "type": "graph",
+      "node_position": {
+        "x": 1200,
+        "y": 350
+      },
+      "parameters": {},
+      "seed": 0,
+      "seed_locked": true,
+      "label": "PNG8 numeric encoding (nearest code)",
+      "nodes": [
+        {
+          "name": "gen_inputs",
+          "type": "ios",
+          "node_position": {
+            "x": 0,
+            "y": 0
+          },
+          "parameters": {},
+          "seed": 0,
+          "seed_locked": true,
+          "ports": [
+            {
+              "name": "Unencoded numeric value",
+              "type": "rgba",
+              "group_size": 0
+            }
+          ]
+        },
+        {
+          "name": "gen_outputs",
+          "type": "ios",
+          "node_position": {
+            "x": 1800,
+            "y": 0
+          },
+          "parameters": {},
+          "seed": 0,
+          "seed_locked": true,
+          "ports": [
+            {
+              "name": "PNG bin center",
+              "type": "rgba",
+              "group_size": 0
+            }
+          ]
+        },
+        {
+          "name": "RGBValidRange",
+          "type": "math_v3",
+          "node_position": {
+            "x": 250,
+            "y": 0
+          },
+          "parameters": {
+            "op": 0,
+            "clamp": true,
+            "d_in2_x": 0,
+            "d_in2_y": 0,
+            "d_in2_z": 0
+          },
+          "seed": 0,
+          "seed_locked": true
+        },
+        {
+          "name": "RGBCodes",
+          "type": "math_v3",
+          "node_position": {
+            "x": 500,
+            "y": 0
+          },
+          "parameters": {
+            "op": 2,
+            "clamp": false,
+            "d_in2_x": 255,
+            "d_in2_y": 255,
+            "d_in2_z": 255
+          },
+          "seed": 0,
+          "seed_locked": true
+        },
+        {
+          "name": "RGBNearestCode",
+          "type": "math_v3",
+          "node_position": {
+            "x": 750,
+            "y": 0
+          },
+          "parameters": {
+            "op": 8,
+            "clamp": false,
+            "d_in2_x": 0,
+            "d_in2_y": 0,
+            "d_in2_z": 0
+          },
+          "seed": 0,
+          "seed_locked": true
+        },
+        {
+          "name": "RGBBinCenter",
+          "type": "math_v3",
+          "node_position": {
+            "x": 1000,
+            "y": 0
+          },
+          "parameters": {
+            "op": 0,
+            "clamp": false,
+            "d_in2_x": 0.5,
+            "d_in2_y": 0.5,
+            "d_in2_z": 0.5
+          },
+          "seed": 0,
+          "seed_locked": true
+        },
+        {
+          "name": "RGBPNGValue",
+          "type": "math_v3",
+          "node_position": {
+            "x": 1250,
+            "y": 0
+          },
+          "parameters": {
+            "op": 3,
+            "clamp": true,
+            "d_in2_x": 255,
+            "d_in2_y": 255,
+            "d_in2_z": 255
+          },
+          "seed": 0,
+          "seed_locked": true
+        },
+        {
+          "name": "InputChannels",
+          "type": "decompose",
+          "node_position": {
+            "x": 250,
+            "y": 400
+          },
+          "parameters": {},
+          "seed": 0,
+          "seed_locked": true
+        },
+        {
+          "name": "AlphaValidRange",
+          "type": "math",
+          "node_position": {
+            "x": 250,
+            "y": 600
+          },
+          "parameters": {
+            "op": 0,
+            "clamp": true,
+            "default_in1": 0,
+            "default_in2": 0
+          },
+          "seed": 0,
+          "seed_locked": true
+        },
+        {
+          "name": "AlphaCodes",
+          "type": "math",
+          "node_position": {
+            "x": 500,
+            "y": 600
+          },
+          "parameters": {
+            "op": 2,
+            "clamp": false,
+            "default_in1": 0,
+            "default_in2": 255
+          },
+          "seed": 0,
+          "seed_locked": true
+        },
+        {
+          "name": "AlphaNearestCode",
+          "type": "math",
+          "node_position": {
+            "x": 750,
+            "y": 600
+          },
+          "parameters": {
+            "op": 8,
+            "clamp": false,
+            "default_in1": 0,
+            "default_in2": 0
+          },
+          "seed": 0,
+          "seed_locked": true
+        },
+        {
+          "name": "AlphaBinCenter",
+          "type": "math",
+          "node_position": {
+            "x": 1000,
+            "y": 600
+          },
+          "parameters": {
+            "op": 0,
+            "clamp": false,
+            "default_in1": 0,
+            "default_in2": 0.5
+          },
+          "seed": 0,
+          "seed_locked": true
+        },
+        {
+          "name": "AlphaPNGValue",
+          "type": "math",
+          "node_position": {
+            "x": 1250,
+            "y": 600
+          },
+          "parameters": {
+            "op": 3,
+            "clamp": true,
+            "default_in1": 0,
+            "default_in2": 255
+          },
+          "seed": 0,
+          "seed_locked": true
+        },
+        {
+          "name": "RGBChannels",
+          "type": "decompose",
+          "node_position": {
+            "x": 1500,
+            "y": 0
+          },
+          "parameters": {},
+          "seed": 0,
+          "seed_locked": true
+        },
+        {
+          "name": "Packed",
+          "type": "combine",
+          "node_position": {
+            "x": 1750,
+            "y": 0
+          },
+          "parameters": {},
+          "seed": 0,
+          "seed_locked": true
+        }
+      ],
+      "connections": [
+        {
+          "from": "gen_inputs",
+          "to": "RGBValidRange",
+          "from_port": 0,
+          "to_port": 0
+        },
+        {
+          "from": "RGBValidRange",
+          "to": "RGBCodes",
+          "from_port": 0,
+          "to_port": 0
+        },
+        {
+          "from": "RGBCodes",
+          "to": "RGBNearestCode",
+          "from_port": 0,
+          "to_port": 0
+        },
+        {
+          "from": "RGBNearestCode",
+          "to": "RGBBinCenter",
+          "from_port": 0,
+          "to_port": 0
+        },
+        {
+          "from": "RGBBinCenter",
+          "to": "RGBPNGValue",
+          "from_port": 0,
+          "to_port": 0
+        },
+        {
+          "from": "gen_inputs",
+          "to": "InputChannels",
+          "from_port": 0,
+          "to_port": 0
+        },
+        {
+          "from": "InputChannels",
+          "to": "AlphaValidRange",
+          "from_port": 3,
+          "to_port": 0
+        },
+        {
+          "from": "AlphaValidRange",
+          "to": "AlphaCodes",
+          "from_port": 0,
+          "to_port": 0
+        },
+        {
+          "from": "AlphaCodes",
+          "to": "AlphaNearestCode",
+          "from_port": 0,
+          "to_port": 0
+        },
+        {
+          "from": "AlphaNearestCode",
+          "to": "AlphaBinCenter",
+          "from_port": 0,
+          "to_port": 0
+        },
+        {
+          "from": "AlphaBinCenter",
+          "to": "AlphaPNGValue",
+          "from_port": 0,
+          "to_port": 0
+        },
+        {
+          "from": "RGBPNGValue",
+          "to": "RGBChannels",
+          "from_port": 0,
+          "to_port": 0
+        },
+        {
+          "from": "RGBChannels",
+          "to": "Packed",
+          "from_port": 0,
+          "to_port": 0
+        },
+        {
+          "from": "RGBChannels",
+          "to": "Packed",
+          "from_port": 1,
+          "to_port": 1
+        },
+        {
+          "from": "RGBChannels",
+          "to": "Packed",
+          "from_port": 2,
+          "to_port": 2
+        },
+        {
+          "from": "AlphaPNGValue",
+          "to": "Packed",
+          "from_port": 0,
+          "to_port": 3
+        },
+        {
+          "from": "Packed",
+          "to": "gen_outputs",
+          "from_port": 0,
+          "to_port": 0
+        }
+      ]
+    },
+    {
+      "name": "RoughnessPNG8",
+      "type": "graph",
+      "node_position": {
+        "x": 1200,
+        "y": 700
+      },
+      "parameters": {},
+      "seed": 0,
+      "seed_locked": true,
+      "label": "PNG8 numeric encoding (nearest code)",
+      "nodes": [
+        {
+          "name": "gen_inputs",
+          "type": "ios",
+          "node_position": {
+            "x": 0,
+            "y": 0
+          },
+          "parameters": {},
+          "seed": 0,
+          "seed_locked": true,
+          "ports": [
+            {
+              "name": "Unencoded numeric value",
+              "type": "rgb",
+              "group_size": 0
+            }
+          ]
+        },
+        {
+          "name": "gen_outputs",
+          "type": "ios",
+          "node_position": {
+            "x": 1800,
+            "y": 0
+          },
+          "parameters": {},
+          "seed": 0,
+          "seed_locked": true,
+          "ports": [
+            {
+              "name": "PNG bin center",
+              "type": "rgb",
+              "group_size": 0
+            }
+          ]
+        },
+        {
+          "name": "RGBValidRange",
+          "type": "math_v3",
+          "node_position": {
+            "x": 250,
+            "y": 0
+          },
+          "parameters": {
+            "op": 0,
+            "clamp": true,
+            "d_in2_x": 0,
+            "d_in2_y": 0,
+            "d_in2_z": 0
+          },
+          "seed": 0,
+          "seed_locked": true
+        },
+        {
+          "name": "RGBCodes",
+          "type": "math_v3",
+          "node_position": {
+            "x": 500,
+            "y": 0
+          },
+          "parameters": {
+            "op": 2,
+            "clamp": false,
+            "d_in2_x": 255,
+            "d_in2_y": 255,
+            "d_in2_z": 255
+          },
+          "seed": 0,
+          "seed_locked": true
+        },
+        {
+          "name": "RGBNearestCode",
+          "type": "math_v3",
+          "node_position": {
+            "x": 750,
+            "y": 0
+          },
+          "parameters": {
+            "op": 8,
+            "clamp": false,
+            "d_in2_x": 0,
+            "d_in2_y": 0,
+            "d_in2_z": 0
+          },
+          "seed": 0,
+          "seed_locked": true
+        },
+        {
+          "name": "RGBBinCenter",
+          "type": "math_v3",
+          "node_position": {
+            "x": 1000,
+            "y": 0
+          },
+          "parameters": {
+            "op": 0,
+            "clamp": false,
+            "d_in2_x": 0.5,
+            "d_in2_y": 0.5,
+            "d_in2_z": 0.5
+          },
+          "seed": 0,
+          "seed_locked": true
+        },
+        {
+          "name": "RGBPNGValue",
+          "type": "math_v3",
+          "node_position": {
+            "x": 1250,
+            "y": 0
+          },
+          "parameters": {
+            "op": 3,
+            "clamp": true,
+            "d_in2_x": 255,
+            "d_in2_y": 255,
+            "d_in2_z": 255
+          },
+          "seed": 0,
+          "seed_locked": true
+        }
+      ],
+      "connections": [
+        {
+          "from": "gen_inputs",
+          "to": "RGBValidRange",
+          "from_port": 0,
+          "to_port": 0
+        },
+        {
+          "from": "RGBValidRange",
+          "to": "RGBCodes",
+          "from_port": 0,
+          "to_port": 0
+        },
+        {
+          "from": "RGBCodes",
+          "to": "RGBNearestCode",
+          "from_port": 0,
+          "to_port": 0
+        },
+        {
+          "from": "RGBNearestCode",
+          "to": "RGBBinCenter",
+          "from_port": 0,
+          "to_port": 0
+        },
+        {
+          "from": "RGBBinCenter",
+          "to": "RGBPNGValue",
+          "from_port": 0,
+          "to_port": 0
+        },
+        {
+          "from": "RGBPNGValue",
+          "to": "gen_outputs",
+          "from_port": 0,
+          "to_port": 0
+        }
+      ]
+    },
+    {
+      "name": "MaterialControls",
+      "type": "remote",
+      "label": "Material controls \u2014 edit here",
+      "node_position": {
+        "x": 0,
+        "y": -650
+      },
+      "parameters": {
+        "ReliefPercent": 1.25
+      },
+      "widgets": [
+        {
+          "name": "ReliefPercent",
+          "label": "Relief (% of the repeat)",
+          "type": "linked_control",
+          "linked_widgets": [
+            {
+              "node": "SurfaceResponse",
+              "widget": "ReliefPercent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Material",
+      "type": "material",
+      "parameters": {
+        "albedo_color": {
+          "type": "Color",
+          "r": 1,
+          "g": 1,
+          "b": 1,
+          "a": 1
+        },
+        "ao": 1,
+        "depth_scale": 0.05,
+        "emission_energy": 1.0,
+        "flags_transparent": false,
+        "metallic": 0,
+        "normal": 1,
+        "roughness": 1.0,
+        "size": 9,
+        "sss": 0.0
+      },
+      "node_position": {
+        "x": 3550,
+        "y": 300
+      },
+      "seed_int": 0,
+      "export_paths": {}
+    },
+    {
+      "name": "EngineChannels",
+      "type": "decompose",
+      "parameters": {},
+      "node_position": {
+        "x": 1750,
+        "y": 900
+      },
+      "seed_int": 0
+    },
+    {
+      "name": "GodotGreen",
+      "type": "math",
+      "parameters": {
+        "op": 1,
+        "default_in1": 1,
+        "default_in2": 0,
+        "clamp": false
+      },
+      "node_position": {
+        "x": 1950,
+        "y": 900
+      },
+      "seed_int": 0
+    },
+    {
+      "name": "GodotNormal",
+      "type": "combine",
+      "parameters": {},
+      "node_position": {
+        "x": 2150,
+        "y": 900
+      },
+      "seed_int": 0
+    },
+    {
+      "name": "NormalCodes",
+      "type": "decompose",
+      "parameters": {},
+      "node_position": {
+        "x": 2650,
+        "y": 350
+      },
+      "seed_int": 0
+    },
+    {
+      "name": "NormalRGB",
+      "type": "combine",
+      "parameters": {},
+      "node_position": {
+        "x": 2850,
+        "y": 350
+      },
+      "seed_int": 0
+    },
+    {
+      "name": "NormalForMaterial",
+      "type": "normal_map_convert",
+      "parameters": {
+        "op": 0
+      },
+      "node_position": {
+        "x": 3050,
+        "y": 350
+      },
+      "seed_int": 0
+    },
+    {
+      "name": "ColorCodes",
+      "type": "decompose",
+      "parameters": {},
+      "node_position": {
+        "x": 2650,
+        "y": 0
+      },
+      "seed_int": 0
+    },
+    {
+      "name": "DepthForMaterial",
+      "type": "math",
+      "parameters": {
+        "op": 1,
+        "default_in1": 1,
+        "default_in2": 0,
+        "clamp": false
+      },
+      "node_position": {
+        "x": 2850,
+        "y": 0
+      },
+      "seed_int": 0
+    },
+    {
+      "name": "RoughnessCodes",
+      "type": "decompose",
+      "parameters": {},
+      "node_position": {
+        "x": 2650,
+        "y": 750
+      },
+      "seed_int": 0
+    }
+  ],
+  "connections": [
+    {
+      "from": "PigmentSource",
+      "from_port": 0,
+      "to": "Pigment",
+      "to_port": 0
+    },
+    {
+      "from": "HighSource",
+      "from_port": 0,
+      "to": "RegisteredStructure",
+      "to_port": 0
+    },
+    {
+      "from": "LowSource",
+      "from_port": 0,
+      "to": "RegisteredStructure",
+      "to_port": 1
+    },
+    {
+      "from": "RegisteredStructure",
+      "from_port": 0,
+      "to": "SurfaceResponse",
+      "to_port": 0
+    },
+    {
+      "from": "Pigment",
+      "from_port": 0,
+      "to": "PigmentChannels",
+      "to_port": 0
+    },
+    {
+      "from": "PigmentChannels",
+      "from_port": 0,
+      "to": "PigmentHeight",
+      "to_port": 0
+    },
+    {
+      "from": "PigmentChannels",
+      "from_port": 1,
+      "to": "PigmentHeight",
+      "to_port": 1
+    },
+    {
+      "from": "PigmentChannels",
+      "from_port": 2,
+      "to": "PigmentHeight",
+      "to_port": 2
+    },
+    {
+      "from": "SurfaceResponse",
+      "from_port": 1,
+      "to": "PigmentHeight",
+      "to_port": 3
+    },
+    {
+      "from": "PigmentHeight",
+      "from_port": 0,
+      "to": "ColorPNG8",
+      "to_port": 0
+    },
+    {
+      "from": "SurfaceResponse",
+      "from_port": 2,
+      "to": "RoughnessPNG8",
+      "to_port": 0
+    },
+    {
+      "from": "SurfaceResponse",
+      "from_port": 0,
+      "to": "EngineChannels",
+      "to_port": 0
+    },
+    {
+      "from": "EngineChannels",
+      "from_port": 1,
+      "to": "GodotGreen",
+      "to_port": 1
+    },
+    {
+      "from": "EngineChannels",
+      "from_port": 0,
+      "to": "GodotNormal",
+      "to_port": 0
+    },
+    {
+      "from": "GodotGreen",
+      "from_port": 0,
+      "to": "GodotNormal",
+      "to_port": 1
+    },
+    {
+      "from": "EngineChannels",
+      "from_port": 2,
+      "to": "GodotNormal",
+      "to_port": 2
+    },
+    {
+      "from": "EngineChannels",
+      "from_port": 3,
+      "to": "GodotNormal",
+      "to_port": 3
+    },
+    {
+      "from": "GodotNormal",
+      "from_port": 0,
+      "to": "NormalPNG8",
+      "to_port": 0
+    },
+    {
+      "from": "NormalPNG8",
+      "from_port": 0,
+      "to": "NormalCodes",
+      "to_port": 0
+    },
+    {
+      "from": "NormalCodes",
+      "from_port": 0,
+      "to": "NormalRGB",
+      "to_port": 0
+    },
+    {
+      "from": "NormalCodes",
+      "from_port": 1,
+      "to": "NormalRGB",
+      "to_port": 1
+    },
+    {
+      "from": "NormalCodes",
+      "from_port": 2,
+      "to": "NormalRGB",
+      "to_port": 2
+    },
+    {
+      "from": "NormalRGB",
+      "from_port": 0,
+      "to": "NormalForMaterial",
+      "to_port": 0
+    },
+    {
+      "from": "NormalForMaterial",
+      "from_port": 0,
+      "to": "Material",
+      "to_port": 4
+    },
+    {
+      "from": "NormalCodes",
+      "from_port": 3,
+      "to": "Material",
+      "to_port": 5
+    },
+    {
+      "from": "ColorPNG8",
+      "from_port": 0,
+      "to": "Material",
+      "to_port": 0
+    },
+    {
+      "from": "ColorPNG8",
+      "from_port": 0,
+      "to": "ColorCodes",
+      "to_port": 0
+    },
+    {
+      "from": "ColorCodes",
+      "from_port": 3,
+      "to": "DepthForMaterial",
+      "to_port": 1
+    },
+    {
+      "from": "DepthForMaterial",
+      "from_port": 0,
+      "to": "Material",
+      "to_port": 6
+    },
+    {
+      "from": "RoughnessPNG8",
+      "from_port": 0,
+      "to": "RoughnessCodes",
+      "to_port": 0
+    },
+    {
+      "from": "RoughnessCodes",
+      "from_port": 0,
+      "to": "Material",
+      "to_port": 2
+    }
+  ]
+}
