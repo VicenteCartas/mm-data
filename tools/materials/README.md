@@ -42,8 +42,8 @@ finish for it:
 - **SSS** is how much light a material lets through: thick bodies (ground, rock, shrubs) soften
   their shading past the terminator by that share, leaves pass it through to their far side.
 - **Depth** is height, for the terrain's height blending and for Godot's parallax: Depth scale
-  is its depth in UV times 100 (on a terrain surface, 100 × relief metres ÷ repeat metres; 0
-  for none). Buildings, props and roads take Godot's deep parallax settings; the sculpted terrain,
+  is its depth in UV times 100 (on a terrain surface, its project's *Relief*, a percentage of the
+  repeat; 0 for none). Buildings, props and roads take Godot's deep parallax settings; the sculpted terrain,
   which blends several materials in a pixel, takes one step. In the GPU tuning panel, Normal maps
   turns buildings', props' and roads' parallax off with the normal maps, and Terrain Parallax
   turns the terrain's off on its own.
@@ -122,14 +122,17 @@ To edit them safely:
 - **Sharper or softer, same pattern:** export the same project at another size and set `pixels`
   to the new width; `metres` stays.
 - **Longer before it repeats, features the same size:** the texture needs more content. Export
-  wider from a project whose pattern is enlarged to match (more features, *RepeatMetres* times
-  the same factor) and leave the catalogue as it is: the wider texture covers more ground. For a
-  road, `road_maps.py --lengthen N` (below) makes that content at the same width; then multiply
-  `metres` by N.
-- **Bigger or smaller features:** change `metres`, and keep the project in step with it. A
-  project's *RepeatMetres* is the ground its exported tile covers, `metres` × (its width ÷
-  `pixels`), and must match it, or its normals come out too steep or too flat; *ReliefMetres* is
-  the height range of its heightmap in metres. A road project's normals use that relief rounded to
+  wider from a project whose pattern holds N times the features and leave the catalogue as it is:
+  the wider texture covers more ground. A terrain surface's project measures per repeat, so divide
+  its *Relief* by N and multiply its two cavity strengths by N. For a road, `road_maps.py
+  --lengthen N` (below) makes that content at the same width; then multiply `metres` by N.
+- **Bigger or smaller features:** change `metres`. A terrain surface's project knows no metres:
+  its *Relief* is the heightmap's height range as a percentage of the repeat (Godot's
+  `heightmap_scale`; the Material node's Depth scale is *Relief* ÷ 25), and its crack shading
+  strengths are per repeat, so its maps fit any size. A road project still gives *RepeatMetres*,
+  the ground its exported tile covers, `metres` × (its width ÷ `pixels`), which must match, or
+  its normals come out too steep or too flat, and *ReliefMetres*, the height range of its
+  heightmap in metres. Its normals use that relief rounded to
   a whole code (its `ReliefCodes` node: *ReliefMetres* ÷ (*RepeatMetres* × 0.1) × 255, rounded),
   and its Material node takes *depth_scale* = 0.4 × that code ÷ 255, so the parallax depth is the
   relief the normals have (asphalt: code 4, 1.88 cm; dirt 11, 5.18 cm; gravel 18, 8.47 cm).
@@ -175,6 +178,6 @@ every map at 2048 pixels whatever the Size, so the script resamples each map to 
 node's Size, the size the editor writes; the pixels are close to the editor's, not identical.
 Sizes above 2048, or exact pixels, need the editor's export: the committed maps are editor
 exports. The script then removes maps the material no longer has. For a loose material it prints
-the ground one repeat covers, and warns when the project's *Repeat (metres)* disagrees with it.
+the ground one repeat covers, and warns when a road project's *Repeat (metres)* disagrees with it.
 
 megamek's `docs/gpu-board-materials.md` describes how the game reads these files.

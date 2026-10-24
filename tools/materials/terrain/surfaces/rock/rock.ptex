@@ -22,7 +22,7 @@
         "y": 238
       },
       "title": "About this material",
-      "text": "Sculpted terrain material, built from sources/pigment.png, structure-high.png, structure-low.png (pigment and the 16-bit height fields). Scale and relief: Repeat must equal its metres in materials.json (12 m); Relief is its height range in metres. After changing Relief, set the Material node's Depth scale to 4 x relief / repeat. Pigment changes the colour; SurfaceResponse the normal strength, cavity and roughness. The ...PNG8 groups and the nodes after them only store exact file values; leave them. Export: File > Export material > Godot > Godot 4 Standard into data/models/board/textures/terrain/surfaces, then Reload assets in the game's Tuning panel.",
+      "text": "Sculpted terrain material, built from sources/pigment.png, structure-high.png, structure-low.png (pigment and the 16-bit height fields). Size: materials.json sets the ground one repeat covers; nothing here depends on it. Relief is the heightmap's height range as a percentage of that repeat (the game's parallax depth). After changing Relief, set the Material node's Depth scale to Relief / 25. Pigment changes the colour; SurfaceResponse the normal strength, cavity and roughness. The ...PNG8 groups and the nodes after them only store exact file values; leave them. Export: File > Export material > Godot > Godot 4 Standard into data/models/board/textures/terrain/surfaces, then Reload assets in the game's Tuning panel.",
       "color": {
         "type": "Color",
         "r": 0.18,
@@ -927,11 +927,10 @@
       "label": "SurfaceResponse",
       "type": "graph",
       "parameters": {
-        "RepeatMetres": 12,
-        "ReliefMetres": 0.6288618423171203,
+        "ReliefPercent": 5.2405153526,
         "NormalStrength": 1.2,
-        "NearCavityStrength": 60,
-        "WideCavityStrength": 12,
+        "NearCavityStrength": 720,
+        "WideCavityStrength": 144,
         "BaseRoughness": 0.8,
         "RoughnessVariation": 0.08
       },
@@ -997,11 +996,10 @@
           "name": "gen_parameters",
           "type": "remote",
           "parameters": {
-            "RepeatMetres": 12,
-            "ReliefMetres": 0.6288618423171203,
+            "ReliefPercent": 5.2405153526,
             "NormalStrength": 1.2,
-            "NearCavityStrength": 60,
-            "WideCavityStrength": 12,
+            "NearCavityStrength": 720,
+            "WideCavityStrength": 144,
             "BaseRoughness": 0.8,
             "RoughnessVariation": 0.08
           },
@@ -1012,22 +1010,13 @@
           },
           "widgets": [
             {
-              "name": "RepeatMetres",
-              "label": "RepeatMetres",
-              "type": "named_parameter",
-              "min": 0.001,
-              "max": 64,
-              "step": 0.1,
-              "default": 8
-            },
-            {
-              "name": "ReliefMetres",
-              "label": "ReliefMetres",
+              "name": "ReliefPercent",
+              "label": "ReliefPercent",
               "type": "named_parameter",
               "min": 0,
-              "max": 1.676964912845654,
-              "step": 0.001,
-              "default": 0.4192412282114135
+              "max": 20,
+              "step": 0.01,
+              "default": 5.2405153526
             },
             {
               "name": "NormalStrength",
@@ -1043,18 +1032,18 @@
               "label": "NearCavityStrength",
               "type": "named_parameter",
               "min": 0,
-              "max": 180,
-              "step": 0.1,
-              "default": 60
+              "max": 2160,
+              "step": 1,
+              "default": 720
             },
             {
               "name": "WideCavityStrength",
               "label": "WideCavityStrength",
               "type": "named_parameter",
               "min": 0,
-              "max": 100,
-              "step": 0.1,
-              "default": 12
+              "max": 1200,
+              "step": 1,
+              "default": 144
             },
             {
               "name": "BaseRoughness",
@@ -1091,7 +1080,7 @@
           "type": "math",
           "parameters": {
             "op": 2,
-            "default_in1": "$ReliefMetres",
+            "default_in1": "$ReliefPercent*0.01",
             "default_in2": 1,
             "clamp": false
           },
@@ -1167,7 +1156,7 @@
           "parameters": {
             "op": 3,
             "default_in1": "$NormalStrength",
-            "default_in2": "max($RepeatMetres,0.001)",
+            "default_in2": 1,
             "clamp": false
           },
           "seed_int": 0,
@@ -2947,7 +2936,7 @@
       ]
     },
     {
-      "name": "ScaleAndRelief",
+      "name": "MaterialControls",
       "type": "remote",
       "label": "Material controls \u2014 edit here",
       "node_position": {
@@ -2955,29 +2944,17 @@
         "y": -650
       },
       "parameters": {
-        "RepeatMetres": 12,
-        "ReliefMetres": 0.6288618423171203
+        "ReliefPercent": 5.2405153526
       },
       "widgets": [
         {
-          "name": "RepeatMetres",
-          "label": "Repeat (metres)",
+          "name": "ReliefPercent",
+          "label": "Relief (% of the repeat)",
           "type": "linked_control",
           "linked_widgets": [
             {
               "node": "SurfaceResponse",
-              "widget": "RepeatMetres"
-            }
-          ]
-        },
-        {
-          "name": "ReliefMetres",
-          "label": "Relief (metres)",
-          "type": "linked_control",
-          "linked_widgets": [
-            {
-              "node": "SurfaceResponse",
-              "widget": "ReliefMetres"
+              "widget": "ReliefPercent"
             }
           ]
         }
