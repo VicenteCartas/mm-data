@@ -69,13 +69,15 @@ adds maps to a material with a shader, so each of these is a `ShaderMaterial` of
 | `terrain/lava/crust` | `ExportMask` | `crust_glow.png`: crack glow | `texture_glow` |
 | `terrain/ice/sheet` | `ExportCracks` | `sheet_cracks.png`: cracks and bubbles | `texture_cracks` |
 
-A stock **Export** node writes the extra map beside the others. Material Maker cannot write a
-`ShaderMaterial`, so `export.py` makes it from Material Maker's `StandardMaterial3D`: the
-standard maps and factors take the parameter names of Godot's own converted shaders
-(`texture_albedo`, `texture_orm`, `roughness`, `emission_energy`, ...), and every other
-`uniform sampler2D texture_<map>` the shader declares is the Export node's `<name>_<map>.png`.
-A `<name>.gdshader` beside a material is what makes it a `ShaderMaterial`; adding a map to
-another material means a shader for it, and code in the game that reads the map.
+A stock **Export** node writes the extra map beside the others. Each of these projects'
+Material node carries its own export target, *Godot > Godot 4 ShaderMaterial*: the stock
+Godot 4 Standard maps, and a `<name>.tres` written as the `ShaderMaterial` of `<name>.gdshader`,
+with the parameter names of Godot's own converted shaders (`texture_albedo`, `texture_orm`,
+`roughness`, `emission_energy`, ...) and `texture_<map>` for the Export node's `<name>_<map>.png`.
+`export.py` uses that target. Exporting these with *Godot 4 Standard* instead leaves a
+`StandardMaterial3D` the game refuses. A `<name>.gdshader` beside a material is what makes it a
+`ShaderMaterial`; adding a map to another material means a shader for it, its own target in the
+project, and code in the game that reads the map.
 
 The shaders are previews for Godot only: the game reads their parameters, and renders these
 materials with its own shaders. Their declared defaults count, as in Godot: a parameter a
@@ -158,29 +160,21 @@ only the maps, run it without `--lengthen`. Both scripts need numpy and scipy.
 ## Exporting
 
 From the editor: *File > Export material > Godot > Godot 4 Standard* into the folder in
-the table above. In the game, *Reload assets* in the Tuning panel picks up the new export.
-
-For lava, crust and ice, Material Maker asks whether to overwrite `<name>.tres`, the
-`ShaderMaterial`. Choose **Keep existing file(s)** when only the maps changed. When the
-Material node's factors changed, overwrite it, then run `python tools/materials/export.py
---wrap`, which turns Material Maker's `StandardMaterial3D` back into the `ShaderMaterial` with
-the new factors, without Material Maker. Until then the game refuses the material and says so.
+the table above; for lava, crust and ice, *Godot > Godot 4 ShaderMaterial* (below). In the game,
+*Reload assets* in the Tuning panel picks up the new export.
 
 From the command line, run from the mm-data root (requires Material Maker and Pillow):
 
 ```text
 python tools/materials/export.py
 python tools/materials/export.py terrain/surfaces/grass/grass.ptex
-python tools/materials/export.py --wrap
 ```
 
 The script exports every project, or the one given. Material Maker's command line renders
 every map at 2048 pixels whatever the Size, so the script resamples each map to its
 node's Size, the size the editor writes; the pixels are close to the editor's, not identical.
-Sizes above 2048, or exact pixels, need the editor's export. The script
-then removes maps the material no longer has, and writes the `ShaderMaterial` of a material
-with a shader beside it. For a loose material it prints the ground one repeat covers, and
-warns when the project's *Repeat (metres)* disagrees with it. `--wrap` only restores
-`ShaderMaterial`s an editor export replaced, and needs neither Material Maker nor Pillow.
+Sizes above 2048, or exact pixels, need the editor's export: the committed maps are editor
+exports. The script then removes maps the material no longer has. For a loose material it prints
+the ground one repeat covers, and warns when the project's *Repeat (metres)* disagrees with it.
 
 megamek's `docs/gpu-board-materials.md` describes how the game reads these files.

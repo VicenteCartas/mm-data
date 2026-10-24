@@ -5,6 +5,28 @@
   "parameters": {},
   "nodes": [
     {
+      "name": "About",
+      "type": "comment",
+      "parameters": {},
+      "node_position": {
+        "x": 0,
+        "y": -400
+      },
+      "size": {
+        "x": 900,
+        "y": 190
+      },
+      "title": "About this material",
+      "text": "Plant texture from sources/cinder-cutout.png with its height fields (structure-high/low), 512 px. Pigment edits the colour and cutout; SurfaceResponse the normals, AO, roughness and light transmission. Keep the layout: the models point at its parts. The ...PNG8 groups and the nodes after them only store exact file values; leave them. Export: File > Export material > Godot > Godot 4 Standard into data/models/board/textures/vegetation/volcano, then Reload assets in the game's Tuning panel.",
+      "color": {
+        "type": "Color",
+        "r": 0.18,
+        "g": 0.26,
+        "b": 0.18,
+        "a": 1
+      }
+    },
+    {
       "name": "Source",
       "type": "image",
       "node_position": {
@@ -1234,29 +1256,6 @@
             "x": 270,
             "y": 720
           }
-        },
-        {
-          "name": "ResponseNotes",
-          "type": "comment",
-          "parameters": {},
-          "seed_int": 0,
-          "node_position": {
-            "x": 0,
-            "y": -350
-          },
-          "title": "Editable response, unchanged registered geometry",
-          "text": "Normals use central differences at the actual 512px source grid, not a resized power-of-two grid. ReliefUV controls normal strength. AO derives from the original neighbourhood minus source light; roughness/transmission derive from the original tissue and luminance fields. Pigment/coverage controls remain independent. Final PNG8 packing does not feed any physical calculation. No32F buffer.",
-          "size": {
-            "x": 950,
-            "y": 160
-          },
-          "color": {
-            "type": "Color",
-            "r": 0.18,
-            "g": 0.23,
-            "b": 0.28,
-            "a": 1
-          }
         }
       ],
       "connections": [
@@ -1828,30 +1827,6 @@
       "parameters": {},
       "seed": 0,
       "seed_locked": true
-    },
-    {
-      "name": "AuthoringNotes",
-      "type": "comment",
-      "node_position": {
-        "x": 0,
-        "y": -400
-      },
-      "parameters": {},
-      "seed": 0,
-      "seed_locked": true,
-      "title": "Edit pigment and tissue response; preserve atlas registration",
-      "size": {
-        "x": 1400,
-        "y": 300
-      },
-      "color": {
-        "type": "Color",
-        "r": 0.18,
-        "g": 0.26,
-        "b": 0.18,
-        "a": 1
-      },
-      "text": "Current pigment, alpha, atlas dimensions and crop metadata are retained unchanged. Original response recipes were replayed and matched against installed numeric maps before staging. Necessary registered pre-response fields preserve original structure and tissue classification; native stock nodes derive normals, AO, roughness and transmission with visible response controls. No finished numeric response maps are imported. Native default/control and actual model validation remain required; CPU16-bit source quantization is not native execution proof."
     },
     {
       "name": "StructureHigh",
@@ -2498,29 +2473,6 @@
             "x": 1350,
             "y": 900
           }
-        },
-        {
-          "name": "SourceNotes",
-          "type": "comment",
-          "parameters": {},
-          "seed_int": 0,
-          "node_position": {
-            "x": 0,
-            "y": -300
-          },
-          "title": "Registered original inputs, before response",
-          "text": "R original estimated height; G its source-light neighbourhood; B original encoded source luminance; A leaf-tissue selection. These preserve the original resize, alpha registration and FFT neighbourhood where inferring structure from corrected pigment changed the material. Two PNG8 byte planes retain 16-bit source precision. No finished normal, AO, roughness or transmission image is imported. Keep the decoded fields in shader arithmetic; an intermediate half buffer would lose precision.",
-          "size": {
-            "x": 950,
-            "y": 160
-          },
-          "color": {
-            "type": "Color",
-            "r": 0.18,
-            "g": 0.23,
-            "b": 0.28,
-            "a": 1
-          }
         }
       ],
       "connections": [
@@ -2922,29 +2874,6 @@
         "y": 700
       },
       "seed_int": 0
-    },
-    {
-      "name": "GodotExport",
-      "type": "comment",
-      "parameters": {},
-      "node_position": {
-        "x": 0,
-        "y": -660
-      },
-      "seed_int": 0,
-      "title": "Godot 4 Standard export",
-      "text": "Export with File > Export material > Godot > Godot 4 Standard, or tools/materials/export.py, into data/models/board/textures, then use Reload assets. The PNG8 encoders keep exact byte codes; the nodes after them only undo what the Material node applies on export (normal convention, heightmap = 1 - depth).",
-      "size": {
-        "x": 760,
-        "y": 150
-      },
-      "color": {
-        "type": "Color",
-        "r": 0.18,
-        "g": 0.23,
-        "b": 0.28,
-        "a": 1
-      }
     }
   ],
   "connections": [

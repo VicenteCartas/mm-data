@@ -5,6 +5,28 @@
   "parameters": {},
   "nodes": [
     {
+      "name": "About",
+      "type": "comment",
+      "parameters": {},
+      "node_position": {
+        "x": 0,
+        "y": -250
+      },
+      "size": {
+        "x": 900,
+        "y": 166
+      },
+      "title": "About this material",
+      "text": "Classic mode texture from sources/pigment.png, 128 px. Pigment adjusts hue, saturation and value; the defaults keep the artwork as it is. Classic and Enhanced textures stay separate. Export: File > Export material > Godot > Godot 4 Standard into data/models/board/textures/terrain/classic, then Reload assets in the game's Tuning panel.",
+      "color": {
+        "type": "Color",
+        "r": 0.18,
+        "g": 0.23,
+        "b": 0.28,
+        "a": 1
+      }
+    },
+    {
       "name": "PigmentSource",
       "type": "image",
       "node_position": {
@@ -233,20 +255,6 @@
       ]
     },
     {
-      "name": "AuthorNotes",
-      "type": "comment",
-      "node_position": {
-        "x": 0,
-        "y": -250
-      },
-      "title": "Editable source artwork",
-      "size": {
-        "x": 820,
-        "y": 300
-      },
-      "text": "Generated terrain/fungus pigment for the Classic column walls; it replaces the Enhanced terrain/surfaces/fungus-cliff map that the Classic walls borrowed. sources/pigment.png is a 512 px tileable source: Codex image generation from a Classic-style brief (references: the Classic rock, sand and dirt walls and the Classic fungus theme (saxarba) hexes), then, in linear light, an area resample to 512 px, periodic-plus-smooth seam correction, low-frequency lighting flattened and the mean albedo kept within the range of the Classic fungus theme (saxarba) hexes. Hue, saturation and value are explicit author controls. Linear filtering occurs after one sRGB decode: LinearReduce averages each 4x4 block of source texels onto the 128 px grid, then one encode for the exported game PNG. This existing consumer uses RGB only; it has no height/normal/AO/roughness image input. The project therefore exports only the channel the game consumes. Save, export (target MegaMek/Maps), store the PNG as 8-bit RGB, then use the existing Reload Assets button."
-    },
-    {
       "name": "Material",
       "type": "material",
       "parameters": {
@@ -273,29 +281,6 @@
       },
       "seed_int": 0,
       "export_paths": {}
-    },
-    {
-      "name": "GodotExport",
-      "type": "comment",
-      "parameters": {},
-      "node_position": {
-        "x": 0,
-        "y": -510
-      },
-      "seed_int": 0,
-      "title": "Godot 4 Standard export",
-      "text": "Export with File > Export material > Godot > Godot 4 Standard, or tools/materials/export.py, into data/models/board/textures, then use Reload assets. The PNG8 encoders keep exact byte codes; the nodes after them only undo what the Material node applies on export (normal convention, heightmap = 1 - depth).",
-      "size": {
-        "x": 760,
-        "y": 150
-      },
-      "color": {
-        "type": "Color",
-        "r": 0.18,
-        "g": 0.23,
-        "b": 0.28,
-        "a": 1
-      }
     }
   ],
   "connections": [

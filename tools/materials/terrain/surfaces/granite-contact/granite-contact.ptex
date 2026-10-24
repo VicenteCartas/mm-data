@@ -10,6 +10,28 @@
   "seed_int": 0,
   "nodes": [
     {
+      "name": "About",
+      "type": "comment",
+      "parameters": {},
+      "node_position": {
+        "x": 0,
+        "y": -420
+      },
+      "size": {
+        "x": 900,
+        "y": 238
+      },
+      "title": "About this material",
+      "text": "Sculpted terrain material, built from sources/pigment.png, structure-high.png, structure-low.png (pigment and the 16-bit height fields). Scale and relief: Repeat must equal its metres in materials.json (12 m); Relief is its height range in metres. After changing Relief, set the Material node's Depth scale to 4 x relief / repeat. Pigment changes the colour; SurfaceResponse the normal strength, cavity and roughness. The ...PNG8 groups and the nodes after them only store exact file values; leave them. Export: File > Export material > Godot > Godot 4 Standard into data/models/board/textures/terrain/surfaces, then Reload assets in the game's Tuning panel.",
+      "color": {
+        "type": "Color",
+        "r": 0.18,
+        "g": 0.23,
+        "b": 0.28,
+        "a": 1
+      }
+    },
+    {
       "name": "PigmentSource",
       "type": "image",
       "parameters": {
@@ -709,29 +731,6 @@
             "x": 1350,
             "y": 540
           }
-        },
-        {
-          "name": "Notes",
-          "type": "comment",
-          "parameters": {},
-          "seed_int": 0,
-          "node_position": {
-            "x": 0,
-            "y": -300
-          },
-          "title": "Registered source fields before material response",
-          "text": "Original periodic noise/structure and exact two neighbourhood scales are retained in 16-bit byte planes. The native graph restores bytes before decoding; there is no finished normal, AO or roughness input. These fields preserve original feature placement where different native noise/filter kernels changed it. Do not insert a half buffer between decoding and differentiation: it would discard source precision.",
-          "size": {
-            "x": 950,
-            "y": 160
-          },
-          "color": {
-            "type": "Color",
-            "r": 0.18,
-            "g": 0.23,
-            "b": 0.28,
-            "a": 1
-          }
         }
       ],
       "connections": [
@@ -928,8 +927,8 @@
       "label": "SurfaceResponse",
       "type": "graph",
       "parameters": {
-        "RepeatMetres": 8,
-        "ReliefMetres": 0.08,
+        "RepeatMetres": 12,
+        "ReliefMetres": 0.24,
         "NormalStrength": 1,
         "NearCavityStrength": 40,
         "WideCavityStrength": 18,
@@ -998,8 +997,8 @@
           "name": "gen_parameters",
           "type": "remote",
           "parameters": {
-            "RepeatMetres": 8,
-            "ReliefMetres": 0.08,
+            "RepeatMetres": 12,
+            "ReliefMetres": 0.24,
             "NormalStrength": 1,
             "NearCavityStrength": 40,
             "WideCavityStrength": 18,
@@ -1123,7 +1122,7 @@
           "parameters": {
             "op": 2,
             "default_in1": 0,
-            "default_in2": 0.08000000674373409,
+            "default_in2": 0.24,
             "clamp": false
           },
           "seed_int": 0,
@@ -1153,7 +1152,7 @@
           "parameters": {
             "op": 3,
             "default_in1": 0,
-            "default_in2": 0.080000001,
+            "default_in2": 0.24,
             "clamp": true
           },
           "seed_int": 0,
@@ -1690,29 +1689,6 @@
           "node_position": {
             "x": 540,
             "y": 1080
-          }
-        },
-        {
-          "name": "Notes",
-          "type": "comment",
-          "parameters": {},
-          "seed_int": 0,
-          "node_position": {
-            "x": 0,
-            "y": -350
-          },
-          "title": "Physical response and packed height are separate",
-          "text": "Original defaults: central differences of physical height produce the normal; two registered neighbourhood differences produce AO through exponential absorption. Relief scales those physical responses. Packed height is separately normalized to the original minimum/range for material blending, not the unnormalized physical height. NormalStrength retains the original recipe response explicitly. Roughness controls make the material's roughness map: Base roughness, smoother on raised grain by up to half the Roughness variation. The game renders this map as the preview shows it; wetness and other scene conditions still apply afterward.",
-          "size": {
-            "x": 950,
-            "y": 160
-          },
-          "color": {
-            "type": "Color",
-            "r": 0.18,
-            "g": 0.23,
-            "b": 0.28,
-            "a": 1
           }
         }
       ],
@@ -2971,29 +2947,6 @@
       ]
     },
     {
-      "name": "Workflow",
-      "type": "comment",
-      "parameters": {},
-      "seed_int": 0,
-      "node_position": {
-        "x": 0,
-        "y": -420
-      },
-      "title": "Original appearance, editable material response",
-      "text": "Retained pigment and registered pre-response structure preserve the original feature placement. Use the top Scale and relief control: Repeat (metres) must match this material's metres in data/models/board/textures/materials.json (export.py keeps them in step). Edit Hue/Saturation/Value, normal strength, cavity and roughness in the groups. Export with File > Export material > Godot > Godot 4 Standard, or tools/materials/export.py, into data/models/board/textures, then use Reload assets. The PNG8 encoders keep exact byte codes; the nodes after them only undo what the Material node applies on export (normal convention, heightmap = 1 - depth).",
-      "size": {
-        "x": 950,
-        "y": 160
-      },
-      "color": {
-        "type": "Color",
-        "r": 0.18,
-        "g": 0.23,
-        "b": 0.28,
-        "a": 1
-      }
-    },
-    {
       "name": "ScaleAndRelief",
       "type": "remote",
       "label": "Material controls \u2014 edit here",
@@ -3002,8 +2955,8 @@
         "y": -650
       },
       "parameters": {
-        "RepeatMetres": 8,
-        "ReliefMetres": 0.08
+        "RepeatMetres": 12,
+        "ReliefMetres": 0.24
       },
       "widgets": [
         {
@@ -3042,7 +2995,7 @@
           "a": 1
         },
         "ao": 1,
-        "depth_scale": 0.04,
+        "depth_scale": 0.08,
         "emission_energy": 1.0,
         "flags_transparent": false,
         "metallic": 0,

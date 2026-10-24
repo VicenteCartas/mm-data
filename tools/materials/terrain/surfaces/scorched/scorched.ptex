@@ -1,2494 +1,2470 @@
 {
- "name": "scorched",
- "label": "Scorched ground \u2014 cinders, ash and fused mineral",
- "type": "graph",
- "parameters": {},
- "seed_int": 73,
- "nodes": [
-  {
-   "name": "Normals",
-   "label": "Physical normal",
-   "type": "graph",
-   "parameters": {
-    "RepeatMetres": 64,
-    "ReliefMetres": 0.04,
-    "NormalStrength": 1
-   },
-   "node_position": {
-    "x": 350,
-    "y": 400
-   },
-   "seed_int": 27,
-   "nodes": [
+  "name": "scorched",
+  "label": "Scorched ground \u2014 cinders, ash and fused mineral",
+  "type": "graph",
+  "parameters": {},
+  "seed_int": 73,
+  "nodes": [
     {
-     "name": "gen_inputs",
-     "type": "ios",
-     "parameters": {},
-     "node_position": {
-      "x": -500,
-      "y": 0
-     },
-     "ports": [
-      {
-       "name": "Height",
-       "type": "f",
-       "group_size": 0
-      }
-     ]
-    },
-    {
-     "name": "gen_outputs",
-     "type": "ios",
-     "parameters": {},
-     "node_position": {
-      "x": 800,
-      "y": 0
-     },
-     "ports": [
-      {
-       "name": "Game normal",
-       "type": "rgb",
-       "group_size": 0
+      "name": "About",
+      "type": "comment",
+      "parameters": {},
+      "node_position": {
+        "x": -1400,
+        "y": -800
       },
-      {
-       "name": "Preview normal",
-       "type": "rgb",
-       "group_size": 0
-      }
-     ]
-    },
-    {
-     "name": "gen_parameters",
-     "type": "remote",
-     "parameters": {
-      "RepeatMetres": 64,
-      "ReliefMetres": 0.04,
-      "NormalStrength": 1
-     },
-     "seed_int": 0,
-     "node_position": {
-      "x": -250,
-      "y": 300
-     },
-     "widgets": [
-      {
-       "name": "RepeatMetres",
-       "label": "Repeat (metres)",
-       "type": "named_parameter",
-       "min": 1,
-       "max": 32,
-       "step": 0.1,
-       "default": 4
+      "size": {
+        "x": 900,
+        "y": 166
       },
-      {
-       "name": "ReliefMetres",
-       "label": "Relief (metres)",
-       "type": "named_parameter",
-       "min": 0,
-       "max": 0.25,
-       "step": 0.001,
-       "default": 0.025
-      },
-      {
-       "name": "NormalStrength",
-       "label": "Normal strength",
-       "type": "named_parameter",
-       "min": 0,
-       "max": 4,
-       "step": 0.01,
-       "default": 1
+      "title": "About this material",
+      "text": "Procedural terrain material: edit AuthorControls (it also sets the linked values in Normals). Repeat: 64 m, as in materials.json. The ...PNG8 groups and the nodes after them only store exact file values; leave them. Export: File > Export material > Godot > Godot 4 Standard into data/models/board/textures/terrain/surfaces, then Reload assets in the game's Tuning panel.",
+      "color": {
+        "type": "Color",
+        "r": 0.18,
+        "g": 0.23,
+        "b": 0.28,
+        "a": 1
       }
-     ]
     },
     {
-     "name": "MetricHeight",
-     "type": "math",
-     "node_position": {
-      "x": -100,
-      "y": 0
-     },
-     "parameters": {
-      "op": 2,
-      "default_in1": 0,
-      "default_in2": "16*$ReliefMetres*$NormalStrength/max($RepeatMetres,0.001)",
-      "clamp": false
-     },
-     "seed": 27,
-     "seed_locked": true
-    },
-    {
-     "name": "Normal",
-     "node_position": {
-      "x": 250,
-      "y": 0
-     },
-     "parameters": {
-      "algo": 2,
-      "amount": 1,
-      "size": 9
-     },
-     "seed": -11547,
-     "shader_model": {
-      "code": "",
-      "global": "",
-      "inputs": [
-       {
-        "default": "0.0",
-        "function": true,
-        "label": "",
-        "name": "in",
-        "type": "f"
-       }
+      "name": "Normals",
+      "label": "Physical normal",
+      "type": "graph",
+      "parameters": {
+        "RepeatMetres": 64,
+        "ReliefMetres": 0.04,
+        "NormalStrength": 1
+      },
+      "node_position": {
+        "x": 350,
+        "y": 400
+      },
+      "seed_int": 27,
+      "nodes": [
+        {
+          "name": "gen_inputs",
+          "type": "ios",
+          "parameters": {},
+          "node_position": {
+            "x": -500,
+            "y": 0
+          },
+          "ports": [
+            {
+              "name": "Height",
+              "type": "f",
+              "group_size": 0
+            }
+          ]
+        },
+        {
+          "name": "gen_outputs",
+          "type": "ios",
+          "parameters": {},
+          "node_position": {
+            "x": 800,
+            "y": 0
+          },
+          "ports": [
+            {
+              "name": "Game normal",
+              "type": "rgb",
+              "group_size": 0
+            },
+            {
+              "name": "Preview normal",
+              "type": "rgb",
+              "group_size": 0
+            }
+          ]
+        },
+        {
+          "name": "gen_parameters",
+          "type": "remote",
+          "parameters": {
+            "RepeatMetres": 64,
+            "ReliefMetres": 0.04,
+            "NormalStrength": 1
+          },
+          "seed_int": 0,
+          "node_position": {
+            "x": -250,
+            "y": 300
+          },
+          "widgets": [
+            {
+              "name": "RepeatMetres",
+              "label": "Repeat (metres)",
+              "type": "named_parameter",
+              "min": 1,
+              "max": 32,
+              "step": 0.1,
+              "default": 4
+            },
+            {
+              "name": "ReliefMetres",
+              "label": "Relief (metres)",
+              "type": "named_parameter",
+              "min": 0,
+              "max": 0.25,
+              "step": 0.001,
+              "default": 0.025
+            },
+            {
+              "name": "NormalStrength",
+              "label": "Normal strength",
+              "type": "named_parameter",
+              "min": 0,
+              "max": 4,
+              "step": 0.01,
+              "default": 1
+            }
+          ]
+        },
+        {
+          "name": "MetricHeight",
+          "type": "math",
+          "node_position": {
+            "x": -100,
+            "y": 0
+          },
+          "parameters": {
+            "op": 2,
+            "default_in1": 0,
+            "default_in2": "16*$ReliefMetres*$NormalStrength/max($RepeatMetres,0.001)",
+            "clamp": false
+          },
+          "seed": 27,
+          "seed_locked": true
+        },
+        {
+          "name": "Normal",
+          "node_position": {
+            "x": 250,
+            "y": 0
+          },
+          "parameters": {
+            "algo": 2,
+            "amount": 1,
+            "size": 9
+          },
+          "seed": -11547,
+          "shader_model": {
+            "code": "",
+            "global": "",
+            "inputs": [
+              {
+                "default": "0.0",
+                "function": true,
+                "label": "",
+                "name": "in",
+                "type": "f"
+              }
+            ],
+            "instance": [
+              "vec3 nm_$name(vec2 uv, float amount, float size) {",
+              "\tvec3 e = vec3(1.0/size, -1.0/size, 0);",
+              "\tvec2 rv;",
+              "\tif ($algo == 0) {",
+              "\t\trv = vec2(1.0, -1.0)*$in(uv+e.xy);",
+              "\t\trv += vec2(-1.0, 1.0)*$in(uv-e.xy);",
+              "\t\trv += vec2(1.0, 1.0)*$in(uv+e.xx);",
+              "\t\trv += vec2(-1.0, -1.0)*$in(uv-e.xx);",
+              "\t\trv += vec2(2.0, 0.0)*$in(uv+e.xz);",
+              "\t\trv += vec2(-2.0, 0.0)*$in(uv-e.xz);",
+              "\t\trv += vec2(0.0, 2.0)*$in(uv+e.zx);",
+              "\t\trv += vec2(0.0, -2.0)*$in(uv-e.zx);",
+              "\t\trv *= size*amount/128.0;",
+              "\t} else if ($algo == 1) {",
+              "\t\trv = vec2(3.0, -3.0)*$in(uv+e.xy);",
+              "\t\trv += vec2(-3.0, 3.0)*$in(uv-e.xy);",
+              "\t\trv += vec2(3.0, 3.0)*$in(uv+e.xx);",
+              "\t\trv += vec2(-3.0, -3.0)*$in(uv-e.xx);",
+              "\t\trv += vec2(10.0, 0.0)*$in(uv+e.xz);",
+              "\t\trv += vec2(-10.0, 0.0)*$in(uv-e.xz);",
+              "\t\trv += vec2(0.0, 10.0)*$in(uv+e.zx);",
+              "\t\trv += vec2(0.0, -10.0)*$in(uv-e.zx);",
+              "\t\trv *= size*amount/512.0;",
+              "\t} else if ($algo == 2) {",
+              "\t\trv = vec2(2.0, 0.0)*$in(uv+e.xz);",
+              "\t\trv += vec2(-2.0, 0.0)*$in(uv-e.xz);",
+              "\t\trv += vec2(0.0, 2.0)*$in(uv+e.zx);",
+              "\t\trv += vec2(0.0, -2.0)*$in(uv-e.zx);",
+              "\t\trv *= size*amount/64.0;",
+              "\t} else {",
+              "\t\trv = vec2(1.0, 0.0)*$in(uv+e.xz);",
+              "\t\trv += vec2(0.0, 1.0)*$in(uv+e.zx);",
+              "\t\trv += vec2(-1.0, -1.0)*$in(uv);",
+              "\t\trv *= size*amount/20.0;",
+              "\t}",
+              "\treturn vec3(0.5)+0.5*normalize(vec3(rv, -1.0));",
+              "}",
+              ""
+            ],
+            "name": "Normal map",
+            "outputs": [
+              {
+                "rgb": "nm_$name($uv, $amount, $size)",
+                "type": "rgb"
+              }
+            ],
+            "parameters": [
+              {
+                "default": 3,
+                "label": "",
+                "name": "algo",
+                "type": "enum",
+                "values": [
+                  {
+                    "name": "Sobel",
+                    "value": "0"
+                  },
+                  {
+                    "name": "Scharr",
+                    "value": "1"
+                  },
+                  {
+                    "name": "Simple",
+                    "value": "2"
+                  },
+                  {
+                    "name": "Cheap",
+                    "value": "3"
+                  }
+                ]
+              },
+              {
+                "default": 9,
+                "first": 4,
+                "label": "",
+                "last": 12,
+                "name": "size",
+                "type": "size"
+              },
+              {
+                "control": "None",
+                "default": 0.5,
+                "label": "",
+                "max": 2,
+                "min": 0,
+                "name": "amount",
+                "step": 0.01,
+                "type": "float"
+              }
+            ]
+          },
+          "type": "shader"
+        },
+        {
+          "name": "GameNormal",
+          "type": "normal_map_convert",
+          "node_position": {
+            "x": 550,
+            "y": 0
+          },
+          "parameters": {
+            "op": 1
+          },
+          "seed": 27,
+          "seed_locked": true
+        }
       ],
-      "instance": [
-       "vec3 nm_$name(vec2 uv, float amount, float size) {",
-       "\tvec3 e = vec3(1.0/size, -1.0/size, 0);",
-       "\tvec2 rv;",
-       "\tif ($algo == 0) {",
-       "\t\trv = vec2(1.0, -1.0)*$in(uv+e.xy);",
-       "\t\trv += vec2(-1.0, 1.0)*$in(uv-e.xy);",
-       "\t\trv += vec2(1.0, 1.0)*$in(uv+e.xx);",
-       "\t\trv += vec2(-1.0, -1.0)*$in(uv-e.xx);",
-       "\t\trv += vec2(2.0, 0.0)*$in(uv+e.xz);",
-       "\t\trv += vec2(-2.0, 0.0)*$in(uv-e.xz);",
-       "\t\trv += vec2(0.0, 2.0)*$in(uv+e.zx);",
-       "\t\trv += vec2(0.0, -2.0)*$in(uv-e.zx);",
-       "\t\trv *= size*amount/128.0;",
-       "\t} else if ($algo == 1) {",
-       "\t\trv = vec2(3.0, -3.0)*$in(uv+e.xy);",
-       "\t\trv += vec2(-3.0, 3.0)*$in(uv-e.xy);",
-       "\t\trv += vec2(3.0, 3.0)*$in(uv+e.xx);",
-       "\t\trv += vec2(-3.0, -3.0)*$in(uv-e.xx);",
-       "\t\trv += vec2(10.0, 0.0)*$in(uv+e.xz);",
-       "\t\trv += vec2(-10.0, 0.0)*$in(uv-e.xz);",
-       "\t\trv += vec2(0.0, 10.0)*$in(uv+e.zx);",
-       "\t\trv += vec2(0.0, -10.0)*$in(uv-e.zx);",
-       "\t\trv *= size*amount/512.0;",
-       "\t} else if ($algo == 2) {",
-       "\t\trv = vec2(2.0, 0.0)*$in(uv+e.xz);",
-       "\t\trv += vec2(-2.0, 0.0)*$in(uv-e.xz);",
-       "\t\trv += vec2(0.0, 2.0)*$in(uv+e.zx);",
-       "\t\trv += vec2(0.0, -2.0)*$in(uv-e.zx);",
-       "\t\trv *= size*amount/64.0;",
-       "\t} else {",
-       "\t\trv = vec2(1.0, 0.0)*$in(uv+e.xz);",
-       "\t\trv += vec2(0.0, 1.0)*$in(uv+e.zx);",
-       "\t\trv += vec2(-1.0, -1.0)*$in(uv);",
-       "\t\trv *= size*amount/20.0;",
-       "\t}",
-       "\treturn vec3(0.5)+0.5*normalize(vec3(rv, -1.0));",
-       "}",
-       ""
-      ],
-      "name": "Normal map",
-      "outputs": [
-       {
-        "rgb": "nm_$name($uv, $amount, $size)",
-        "type": "rgb"
-       }
-      ],
-      "parameters": [
-       {
-        "default": 3,
-        "label": "",
-        "name": "algo",
-        "type": "enum",
-        "values": [
-         {
-          "name": "Sobel",
-          "value": "0"
-         },
-         {
-          "name": "Scharr",
-          "value": "1"
-         },
-         {
-          "name": "Simple",
-          "value": "2"
-         },
-         {
-          "name": "Cheap",
-          "value": "3"
-         }
-        ]
-       },
-       {
-        "default": 9,
-        "first": 4,
-        "label": "",
-        "last": 12,
-        "name": "size",
-        "type": "size"
-       },
-       {
-        "control": "None",
-        "default": 0.5,
-        "label": "",
-        "max": 2,
-        "min": 0,
-        "name": "amount",
-        "step": 0.01,
-        "type": "float"
-       }
+      "connections": [
+        {
+          "from": "gen_inputs",
+          "to": "MetricHeight",
+          "from_port": 0,
+          "to_port": 0
+        },
+        {
+          "from": "MetricHeight",
+          "to": "Normal",
+          "from_port": 0,
+          "to_port": 0
+        },
+        {
+          "from": "Normal",
+          "to": "GameNormal",
+          "from_port": 0,
+          "to_port": 0
+        },
+        {
+          "from": "GameNormal",
+          "to": "gen_outputs",
+          "from_port": 0,
+          "to_port": 0
+        },
+        {
+          "from": "Normal",
+          "to": "gen_outputs",
+          "from_port": 0,
+          "to_port": 1
+        }
       ]
-     },
-     "type": "shader"
     },
     {
-     "name": "GameNormal",
-     "type": "normal_map_convert",
-     "node_position": {
-      "x": 550,
-      "y": 0
-     },
-     "parameters": {
-      "op": 1
-     },
-     "seed": 27,
-     "seed_locked": true
+      "name": "PigmentChannels",
+      "type": "decompose",
+      "node_position": {
+        "x": 350,
+        "y": 0
+      },
+      "parameters": {},
+      "seed": 27,
+      "seed_locked": true
+    },
+    {
+      "name": "ColorHeight",
+      "type": "combine",
+      "node_position": {
+        "x": 700,
+        "y": 0
+      },
+      "parameters": {},
+      "seed": 27,
+      "seed_locked": true
+    },
+    {
+      "name": "NormalChannels",
+      "type": "decompose",
+      "node_position": {
+        "x": 700,
+        "y": 400
+      },
+      "parameters": {},
+      "seed": 27,
+      "seed_locked": true
+    },
+    {
+      "name": "NormalAO",
+      "type": "combine",
+      "node_position": {
+        "x": 1050,
+        "y": 400
+      },
+      "parameters": {},
+      "seed": 27,
+      "seed_locked": true
+    },
+    {
+      "name": "ColorPNG8",
+      "type": "graph",
+      "node_position": {
+        "x": 1400,
+        "y": 0
+      },
+      "parameters": {},
+      "seed": 0,
+      "seed_locked": true,
+      "label": "PNG8 numeric encoding (nearest code)",
+      "nodes": [
+        {
+          "name": "gen_inputs",
+          "type": "ios",
+          "node_position": {
+            "x": 0,
+            "y": 0
+          },
+          "parameters": {},
+          "seed": 0,
+          "seed_locked": true,
+          "ports": [
+            {
+              "name": "Unencoded numeric value",
+              "type": "rgba",
+              "group_size": 0
+            }
+          ]
+        },
+        {
+          "name": "gen_outputs",
+          "type": "ios",
+          "node_position": {
+            "x": 1800,
+            "y": 0
+          },
+          "parameters": {},
+          "seed": 0,
+          "seed_locked": true,
+          "ports": [
+            {
+              "name": "PNG bin center",
+              "type": "rgba",
+              "group_size": 0
+            }
+          ]
+        },
+        {
+          "name": "RGBValidRange",
+          "type": "math_v3",
+          "node_position": {
+            "x": 250,
+            "y": 0
+          },
+          "parameters": {
+            "op": 0,
+            "clamp": true,
+            "d_in2_x": 0,
+            "d_in2_y": 0,
+            "d_in2_z": 0
+          },
+          "seed": 0,
+          "seed_locked": true
+        },
+        {
+          "name": "RGBCodes",
+          "type": "math_v3",
+          "node_position": {
+            "x": 500,
+            "y": 0
+          },
+          "parameters": {
+            "op": 2,
+            "clamp": false,
+            "d_in2_x": 255,
+            "d_in2_y": 255,
+            "d_in2_z": 255
+          },
+          "seed": 0,
+          "seed_locked": true
+        },
+        {
+          "name": "RGBNearestCode",
+          "type": "math_v3",
+          "node_position": {
+            "x": 750,
+            "y": 0
+          },
+          "parameters": {
+            "op": 8,
+            "clamp": false,
+            "d_in2_x": 0,
+            "d_in2_y": 0,
+            "d_in2_z": 0
+          },
+          "seed": 0,
+          "seed_locked": true
+        },
+        {
+          "name": "RGBBinCenter",
+          "type": "math_v3",
+          "node_position": {
+            "x": 1000,
+            "y": 0
+          },
+          "parameters": {
+            "op": 0,
+            "clamp": false,
+            "d_in2_x": 0.5,
+            "d_in2_y": 0.5,
+            "d_in2_z": 0.5
+          },
+          "seed": 0,
+          "seed_locked": true
+        },
+        {
+          "name": "RGBPNGValue",
+          "type": "math_v3",
+          "node_position": {
+            "x": 1250,
+            "y": 0
+          },
+          "parameters": {
+            "op": 3,
+            "clamp": true,
+            "d_in2_x": 255,
+            "d_in2_y": 255,
+            "d_in2_z": 255
+          },
+          "seed": 0,
+          "seed_locked": true
+        },
+        {
+          "name": "InputChannels",
+          "type": "decompose",
+          "node_position": {
+            "x": 250,
+            "y": 400
+          },
+          "parameters": {},
+          "seed": 0,
+          "seed_locked": true
+        },
+        {
+          "name": "AlphaValidRange",
+          "type": "math",
+          "node_position": {
+            "x": 250,
+            "y": 600
+          },
+          "parameters": {
+            "op": 0,
+            "clamp": true,
+            "default_in1": 0,
+            "default_in2": 0
+          },
+          "seed": 0,
+          "seed_locked": true
+        },
+        {
+          "name": "AlphaCodes",
+          "type": "math",
+          "node_position": {
+            "x": 500,
+            "y": 600
+          },
+          "parameters": {
+            "op": 2,
+            "clamp": false,
+            "default_in1": 0,
+            "default_in2": 255
+          },
+          "seed": 0,
+          "seed_locked": true
+        },
+        {
+          "name": "AlphaNearestCode",
+          "type": "math",
+          "node_position": {
+            "x": 750,
+            "y": 600
+          },
+          "parameters": {
+            "op": 8,
+            "clamp": false,
+            "default_in1": 0,
+            "default_in2": 0
+          },
+          "seed": 0,
+          "seed_locked": true
+        },
+        {
+          "name": "AlphaBinCenter",
+          "type": "math",
+          "node_position": {
+            "x": 1000,
+            "y": 600
+          },
+          "parameters": {
+            "op": 0,
+            "clamp": false,
+            "default_in1": 0,
+            "default_in2": 0.5
+          },
+          "seed": 0,
+          "seed_locked": true
+        },
+        {
+          "name": "AlphaPNGValue",
+          "type": "math",
+          "node_position": {
+            "x": 1250,
+            "y": 600
+          },
+          "parameters": {
+            "op": 3,
+            "clamp": true,
+            "default_in1": 0,
+            "default_in2": 255
+          },
+          "seed": 0,
+          "seed_locked": true
+        },
+        {
+          "name": "RGBChannels",
+          "type": "decompose",
+          "node_position": {
+            "x": 1500,
+            "y": 0
+          },
+          "parameters": {},
+          "seed": 0,
+          "seed_locked": true
+        },
+        {
+          "name": "Packed",
+          "type": "combine",
+          "node_position": {
+            "x": 1750,
+            "y": 0
+          },
+          "parameters": {},
+          "seed": 0,
+          "seed_locked": true
+        }
+      ],
+      "connections": [
+        {
+          "from": "gen_inputs",
+          "to": "RGBValidRange",
+          "from_port": 0,
+          "to_port": 0
+        },
+        {
+          "from": "RGBValidRange",
+          "to": "RGBCodes",
+          "from_port": 0,
+          "to_port": 0
+        },
+        {
+          "from": "RGBCodes",
+          "to": "RGBNearestCode",
+          "from_port": 0,
+          "to_port": 0
+        },
+        {
+          "from": "RGBNearestCode",
+          "to": "RGBBinCenter",
+          "from_port": 0,
+          "to_port": 0
+        },
+        {
+          "from": "RGBBinCenter",
+          "to": "RGBPNGValue",
+          "from_port": 0,
+          "to_port": 0
+        },
+        {
+          "from": "gen_inputs",
+          "to": "InputChannels",
+          "from_port": 0,
+          "to_port": 0
+        },
+        {
+          "from": "InputChannels",
+          "to": "AlphaValidRange",
+          "from_port": 3,
+          "to_port": 0
+        },
+        {
+          "from": "AlphaValidRange",
+          "to": "AlphaCodes",
+          "from_port": 0,
+          "to_port": 0
+        },
+        {
+          "from": "AlphaCodes",
+          "to": "AlphaNearestCode",
+          "from_port": 0,
+          "to_port": 0
+        },
+        {
+          "from": "AlphaNearestCode",
+          "to": "AlphaBinCenter",
+          "from_port": 0,
+          "to_port": 0
+        },
+        {
+          "from": "AlphaBinCenter",
+          "to": "AlphaPNGValue",
+          "from_port": 0,
+          "to_port": 0
+        },
+        {
+          "from": "RGBPNGValue",
+          "to": "RGBChannels",
+          "from_port": 0,
+          "to_port": 0
+        },
+        {
+          "from": "RGBChannels",
+          "to": "Packed",
+          "from_port": 0,
+          "to_port": 0
+        },
+        {
+          "from": "RGBChannels",
+          "to": "Packed",
+          "from_port": 1,
+          "to_port": 1
+        },
+        {
+          "from": "RGBChannels",
+          "to": "Packed",
+          "from_port": 2,
+          "to_port": 2
+        },
+        {
+          "from": "AlphaPNGValue",
+          "to": "Packed",
+          "from_port": 0,
+          "to_port": 3
+        },
+        {
+          "from": "Packed",
+          "to": "gen_outputs",
+          "from_port": 0,
+          "to_port": 0
+        }
+      ]
+    },
+    {
+      "name": "NormalPNG8",
+      "type": "graph",
+      "node_position": {
+        "x": 1400,
+        "y": 450
+      },
+      "parameters": {},
+      "seed": 0,
+      "seed_locked": true,
+      "label": "PNG8 numeric encoding (nearest code)",
+      "nodes": [
+        {
+          "name": "gen_inputs",
+          "type": "ios",
+          "node_position": {
+            "x": 0,
+            "y": 0
+          },
+          "parameters": {},
+          "seed": 0,
+          "seed_locked": true,
+          "ports": [
+            {
+              "name": "Unencoded numeric value",
+              "type": "rgba",
+              "group_size": 0
+            }
+          ]
+        },
+        {
+          "name": "gen_outputs",
+          "type": "ios",
+          "node_position": {
+            "x": 1800,
+            "y": 0
+          },
+          "parameters": {},
+          "seed": 0,
+          "seed_locked": true,
+          "ports": [
+            {
+              "name": "PNG bin center",
+              "type": "rgba",
+              "group_size": 0
+            }
+          ]
+        },
+        {
+          "name": "RGBValidRange",
+          "type": "math_v3",
+          "node_position": {
+            "x": 250,
+            "y": 0
+          },
+          "parameters": {
+            "op": 0,
+            "clamp": true,
+            "d_in2_x": 0,
+            "d_in2_y": 0,
+            "d_in2_z": 0
+          },
+          "seed": 0,
+          "seed_locked": true
+        },
+        {
+          "name": "RGBCodes",
+          "type": "math_v3",
+          "node_position": {
+            "x": 500,
+            "y": 0
+          },
+          "parameters": {
+            "op": 2,
+            "clamp": false,
+            "d_in2_x": 255,
+            "d_in2_y": 255,
+            "d_in2_z": 255
+          },
+          "seed": 0,
+          "seed_locked": true
+        },
+        {
+          "name": "RGBNearestCode",
+          "type": "math_v3",
+          "node_position": {
+            "x": 750,
+            "y": 0
+          },
+          "parameters": {
+            "op": 8,
+            "clamp": false,
+            "d_in2_x": 0,
+            "d_in2_y": 0,
+            "d_in2_z": 0
+          },
+          "seed": 0,
+          "seed_locked": true
+        },
+        {
+          "name": "RGBBinCenter",
+          "type": "math_v3",
+          "node_position": {
+            "x": 1000,
+            "y": 0
+          },
+          "parameters": {
+            "op": 0,
+            "clamp": false,
+            "d_in2_x": 0.5,
+            "d_in2_y": 0.5,
+            "d_in2_z": 0.5
+          },
+          "seed": 0,
+          "seed_locked": true
+        },
+        {
+          "name": "RGBPNGValue",
+          "type": "math_v3",
+          "node_position": {
+            "x": 1250,
+            "y": 0
+          },
+          "parameters": {
+            "op": 3,
+            "clamp": true,
+            "d_in2_x": 255,
+            "d_in2_y": 255,
+            "d_in2_z": 255
+          },
+          "seed": 0,
+          "seed_locked": true
+        },
+        {
+          "name": "InputChannels",
+          "type": "decompose",
+          "node_position": {
+            "x": 250,
+            "y": 400
+          },
+          "parameters": {},
+          "seed": 0,
+          "seed_locked": true
+        },
+        {
+          "name": "AlphaValidRange",
+          "type": "math",
+          "node_position": {
+            "x": 250,
+            "y": 600
+          },
+          "parameters": {
+            "op": 0,
+            "clamp": true,
+            "default_in1": 0,
+            "default_in2": 0
+          },
+          "seed": 0,
+          "seed_locked": true
+        },
+        {
+          "name": "AlphaCodes",
+          "type": "math",
+          "node_position": {
+            "x": 500,
+            "y": 600
+          },
+          "parameters": {
+            "op": 2,
+            "clamp": false,
+            "default_in1": 0,
+            "default_in2": 255
+          },
+          "seed": 0,
+          "seed_locked": true
+        },
+        {
+          "name": "AlphaNearestCode",
+          "type": "math",
+          "node_position": {
+            "x": 750,
+            "y": 600
+          },
+          "parameters": {
+            "op": 8,
+            "clamp": false,
+            "default_in1": 0,
+            "default_in2": 0
+          },
+          "seed": 0,
+          "seed_locked": true
+        },
+        {
+          "name": "AlphaBinCenter",
+          "type": "math",
+          "node_position": {
+            "x": 1000,
+            "y": 600
+          },
+          "parameters": {
+            "op": 0,
+            "clamp": false,
+            "default_in1": 0,
+            "default_in2": 0.5
+          },
+          "seed": 0,
+          "seed_locked": true
+        },
+        {
+          "name": "AlphaPNGValue",
+          "type": "math",
+          "node_position": {
+            "x": 1250,
+            "y": 600
+          },
+          "parameters": {
+            "op": 3,
+            "clamp": true,
+            "default_in1": 0,
+            "default_in2": 255
+          },
+          "seed": 0,
+          "seed_locked": true
+        },
+        {
+          "name": "RGBChannels",
+          "type": "decompose",
+          "node_position": {
+            "x": 1500,
+            "y": 0
+          },
+          "parameters": {},
+          "seed": 0,
+          "seed_locked": true
+        },
+        {
+          "name": "Packed",
+          "type": "combine",
+          "node_position": {
+            "x": 1750,
+            "y": 0
+          },
+          "parameters": {},
+          "seed": 0,
+          "seed_locked": true
+        }
+      ],
+      "connections": [
+        {
+          "from": "gen_inputs",
+          "to": "RGBValidRange",
+          "from_port": 0,
+          "to_port": 0
+        },
+        {
+          "from": "RGBValidRange",
+          "to": "RGBCodes",
+          "from_port": 0,
+          "to_port": 0
+        },
+        {
+          "from": "RGBCodes",
+          "to": "RGBNearestCode",
+          "from_port": 0,
+          "to_port": 0
+        },
+        {
+          "from": "RGBNearestCode",
+          "to": "RGBBinCenter",
+          "from_port": 0,
+          "to_port": 0
+        },
+        {
+          "from": "RGBBinCenter",
+          "to": "RGBPNGValue",
+          "from_port": 0,
+          "to_port": 0
+        },
+        {
+          "from": "gen_inputs",
+          "to": "InputChannels",
+          "from_port": 0,
+          "to_port": 0
+        },
+        {
+          "from": "InputChannels",
+          "to": "AlphaValidRange",
+          "from_port": 3,
+          "to_port": 0
+        },
+        {
+          "from": "AlphaValidRange",
+          "to": "AlphaCodes",
+          "from_port": 0,
+          "to_port": 0
+        },
+        {
+          "from": "AlphaCodes",
+          "to": "AlphaNearestCode",
+          "from_port": 0,
+          "to_port": 0
+        },
+        {
+          "from": "AlphaNearestCode",
+          "to": "AlphaBinCenter",
+          "from_port": 0,
+          "to_port": 0
+        },
+        {
+          "from": "AlphaBinCenter",
+          "to": "AlphaPNGValue",
+          "from_port": 0,
+          "to_port": 0
+        },
+        {
+          "from": "RGBPNGValue",
+          "to": "RGBChannels",
+          "from_port": 0,
+          "to_port": 0
+        },
+        {
+          "from": "RGBChannels",
+          "to": "Packed",
+          "from_port": 0,
+          "to_port": 0
+        },
+        {
+          "from": "RGBChannels",
+          "to": "Packed",
+          "from_port": 1,
+          "to_port": 1
+        },
+        {
+          "from": "RGBChannels",
+          "to": "Packed",
+          "from_port": 2,
+          "to_port": 2
+        },
+        {
+          "from": "AlphaPNGValue",
+          "to": "Packed",
+          "from_port": 0,
+          "to_port": 3
+        },
+        {
+          "from": "Packed",
+          "to": "gen_outputs",
+          "from_port": 0,
+          "to_port": 0
+        }
+      ]
+    },
+    {
+      "name": "Deposits",
+      "type": "fbm",
+      "parameters": {
+        "noise": 1,
+        "scale_x": 8,
+        "scale_y": 8,
+        "iterations": 4,
+        "folds": 0,
+        "persistence": 0.55
+      },
+      "node_position": {
+        "x": -1400,
+        "y": -400
+      },
+      "seed": 73,
+      "seed_locked": true
+    },
+    {
+      "name": "Grain",
+      "type": "fbm",
+      "parameters": {
+        "noise": 0,
+        "scale_x": 96,
+        "scale_y": 96,
+        "iterations": 2,
+        "folds": 0,
+        "persistence": 0.62
+      },
+      "node_position": {
+        "x": -1400,
+        "y": 250
+      },
+      "seed": 73,
+      "seed_locked": true
+    },
+    {
+      "name": "Fragments",
+      "type": "voronoi",
+      "parameters": {
+        "scale_x": 32,
+        "scale_y": 32,
+        "stretch_x": 0.8,
+        "stretch_y": 1,
+        "intensity": 0.75,
+        "randomness": 1
+      },
+      "node_position": {
+        "x": -1400,
+        "y": 700
+      },
+      "seed": 73,
+      "seed_locked": true
+    },
+    {
+      "name": "GlassDistribution",
+      "type": "fbm",
+      "parameters": {
+        "noise": 1,
+        "scale_x": 6,
+        "scale_y": 6,
+        "iterations": 3,
+        "folds": 0,
+        "persistence": 0.55
+      },
+      "node_position": {
+        "x": -1400,
+        "y": 1100
+      },
+      "seed": 195,
+      "seed_locked": true,
+      "seed_int": 195
+    },
+    {
+      "name": "Pigment",
+      "type": "colorize",
+      "parameters": {
+        "gradient": {
+          "type": "Gradient",
+          "interpolation": 1,
+          "points": [
+            {
+              "pos": 0,
+              "r": 0.1428256813030392,
+              "g": 0.16007763053951615,
+              "b": 0.15170371931624205,
+              "a": 1
+            },
+            {
+              "pos": 0.25,
+              "r": 0.21508198999620604,
+              "g": 0.2237698062683856,
+              "b": 0.21508198999620604,
+              "a": 1
+            },
+            {
+              "pos": 0.5,
+              "r": 0.32272611513876776,
+              "g": 0.3113788661917849,
+              "b": 0.28707155411844854,
+              "a": 1
+            },
+            {
+              "pos": 0.73,
+              "r": 0.44920387244804644,
+              "g": 0.4391783507878986,
+              "b": 0.4209136643681212,
+              "a": 1
+            },
+            {
+              "pos": 0.9,
+              "r": 0.5370987304831942,
+              "g": 0.5271127928256164,
+              "b": 0.5063864292846207,
+              "a": 1
+            },
+            {
+              "pos": 1,
+              "r": 0.5657284334090101,
+              "g": 0.5563933274981757,
+              "b": 0.5370987304831942,
+              "a": 1
+            }
+          ]
+        }
+      },
+      "node_position": {
+        "x": -1050,
+        "y": -400
+      },
+      "seed": 73,
+      "seed_locked": true
+    },
+    {
+      "name": "GrainColor",
+      "type": "colorize",
+      "parameters": {
+        "gradient": {
+          "type": "Gradient",
+          "interpolation": 1,
+          "points": [
+            {
+              "pos": 0,
+              "r": 0.65,
+              "g": 0.65,
+              "b": 0.65,
+              "a": 1
+            },
+            {
+              "pos": 1,
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 1
+            }
+          ]
+        }
+      },
+      "node_position": {
+        "x": -1050,
+        "y": -100
+      },
+      "seed": 73,
+      "seed_locked": true
+    },
+    {
+      "name": "ReferenceColor",
+      "type": "blend",
+      "parameters": {
+        "blend_type": 2,
+        "amount": 0.6
+      },
+      "node_position": {
+        "x": -700,
+        "y": -400
+      },
+      "seed": 73,
+      "seed_locked": true
+    },
+    {
+      "name": "GlassSites",
+      "type": "colorize",
+      "parameters": {
+        "gradient": {
+          "type": "Gradient",
+          "interpolation": 1,
+          "points": [
+            {
+              "pos": 0,
+              "r": 0,
+              "g": 0,
+              "b": 0,
+              "a": 1
+            },
+            {
+              "pos": 0.15,
+              "r": 0,
+              "g": 0,
+              "b": 0,
+              "a": 1
+            },
+            {
+              "pos": 0.85,
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 1
+            },
+            {
+              "pos": 1,
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 1
+            }
+          ]
+        }
+      },
+      "node_position": {
+        "x": -1050,
+        "y": 1100
+      },
+      "seed": 73,
+      "seed_locked": true
+    },
+    {
+      "name": "Roughness",
+      "type": "colorize",
+      "parameters": {
+        "gradient": {
+          "type": "Gradient",
+          "interpolation": 1,
+          "points": [
+            {
+              "pos": 0,
+              "r": 0.94,
+              "g": 0.94,
+              "b": 0.94,
+              "a": 1
+            },
+            {
+              "pos": 1,
+              "r": 0.24,
+              "g": 0.24,
+              "b": 0.24,
+              "a": 1
+            }
+          ]
+        }
+      },
+      "node_position": {
+        "x": -700,
+        "y": 1100
+      },
+      "seed": 73,
+      "seed_locked": true
+    },
+    {
+      "name": "Fissures",
+      "type": "warp",
+      "parameters": {
+        "mode": 0,
+        "amount": 0.0015,
+        "eps": 0.005
+      },
+      "node_position": {
+        "x": -1050,
+        "y": 700
+      },
+      "seed": 73,
+      "seed_locked": true
+    },
+    {
+      "name": "CrackMask",
+      "type": "colorize",
+      "parameters": {
+        "gradient": {
+          "type": "Gradient",
+          "interpolation": 1,
+          "points": [
+            {
+              "pos": 0,
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 1
+            },
+            {
+              "pos": 0.035,
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 1
+            },
+            {
+              "pos": 0.1,
+              "r": 0,
+              "g": 0,
+              "b": 0,
+              "a": 1
+            },
+            {
+              "pos": 1,
+              "r": 0,
+              "g": 0,
+              "b": 0,
+              "a": 1
+            }
+          ]
+        }
+      },
+      "node_position": {
+        "x": -700,
+        "y": 700
+      },
+      "seed": 73,
+      "seed_locked": true
+    },
+    {
+      "name": "HotCracks",
+      "type": "blend",
+      "parameters": {
+        "blend_type": 2,
+        "amount": 1
+      },
+      "node_position": {
+        "x": -400,
+        "y": 700
+      },
+      "seed": 73,
+      "seed_locked": true
+    },
+    {
+      "name": "ReliefGrain",
+      "type": "blend",
+      "parameters": {
+        "blend_type": 0,
+        "amount": 0.2
+      },
+      "node_position": {
+        "x": -1050,
+        "y": 300
+      },
+      "seed": 73,
+      "seed_locked": true
+    },
+    {
+      "name": "ReliefRange",
+      "type": "colorize",
+      "parameters": {
+        "gradient": {
+          "type": "Gradient",
+          "interpolation": 1,
+          "points": [
+            {
+              "pos": 0,
+              "r": 0.25,
+              "g": 0.25,
+              "b": 0.25,
+              "a": 1
+            },
+            {
+              "pos": 1,
+              "r": 0.8,
+              "g": 0.8,
+              "b": 0.8,
+              "a": 1
+            }
+          ]
+        }
+      },
+      "node_position": {
+        "x": -700,
+        "y": 300
+      },
+      "seed": 73,
+      "seed_locked": true
+    },
+    {
+      "name": "CrackFloor",
+      "type": "uniform_greyscale",
+      "parameters": {
+        "color": 0.02
+      },
+      "node_position": {
+        "x": -400,
+        "y": 900
+      },
+      "seed": 73,
+      "seed_locked": true
+    },
+    {
+      "name": "Height",
+      "type": "blend",
+      "parameters": {
+        "blend_type": 0,
+        "amount": 1
+      },
+      "node_position": {
+        "x": -50,
+        "y": 300
+      },
+      "seed": 73,
+      "seed_locked": true
+    },
+    {
+      "name": "Occlusion",
+      "type": "colorize",
+      "parameters": {
+        "gradient": {
+          "type": "Gradient",
+          "interpolation": 1,
+          "points": [
+            {
+              "pos": 0,
+              "r": 0.62,
+              "g": 0.62,
+              "b": 0.62,
+              "a": 1
+            },
+            {
+              "pos": 0.2,
+              "r": 0.88,
+              "g": 0.88,
+              "b": 0.88,
+              "a": 1
+            },
+            {
+              "pos": 0.5,
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 1
+            },
+            {
+              "pos": 1,
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 1
+            }
+          ]
+        }
+      },
+      "node_position": {
+        "x": -50,
+        "y": 700
+      },
+      "seed": 73,
+      "seed_locked": true
+    },
+    {
+      "name": "AuthorControls",
+      "type": "remote",
+      "label": "Scorch material controls",
+      "node_position": {
+        "x": -1900,
+        "y": -400
+      },
+      "parameters": {
+        "DepositScale": 8,
+        "GrainScale": 96,
+        "GlassScale": 6,
+        "RepeatMetres": 64,
+        "ReliefMetres": 0.04
+      },
+      "widgets": [
+        {
+          "name": "DepositScale",
+          "label": "Deposit islands",
+          "type": "linked_control",
+          "linked_widgets": [
+            {
+              "node": "Deposits",
+              "widget": "scale_x"
+            },
+            {
+              "node": "Deposits",
+              "widget": "scale_y"
+            }
+          ]
+        },
+        {
+          "name": "GrainScale",
+          "label": "Fine mineral grain",
+          "type": "linked_control",
+          "linked_widgets": [
+            {
+              "node": "Grain",
+              "widget": "scale_x"
+            },
+            {
+              "node": "Grain",
+              "widget": "scale_y"
+            }
+          ]
+        },
+        {
+          "name": "GlassScale",
+          "label": "Fused island scale",
+          "type": "linked_control",
+          "linked_widgets": [
+            {
+              "node": "GlassDistribution",
+              "widget": "scale_x"
+            },
+            {
+              "node": "GlassDistribution",
+              "widget": "scale_y"
+            }
+          ]
+        },
+        {
+          "name": "RepeatMetres",
+          "label": "Repeat (metres)",
+          "type": "linked_control",
+          "linked_widgets": [
+            {
+              "node": "Normals",
+              "widget": "RepeatMetres"
+            }
+          ]
+        },
+        {
+          "name": "ReliefMetres",
+          "label": "Relief (metres)",
+          "type": "linked_control",
+          "linked_widgets": [
+            {
+              "node": "Normals",
+              "widget": "ReliefMetres"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "preview_s",
+      "label": "Severity preview (does not change game export)",
+      "type": "shader",
+      "node_position": {
+        "x": 500,
+        "y": -450
+      },
+      "parameters": {
+        "severity": 1
+      },
+      "shader_model": {
+        "name": "SCORCHED severity preview",
+        "code": "",
+        "global": "",
+        "inputs": [
+          {
+            "name": "reference",
+            "type": "rgb",
+            "default": "vec3(.3)",
+            "function": true
+          },
+          {
+            "name": "roughness",
+            "type": "f",
+            "default": ".9",
+            "function": true
+          },
+          {
+            "name": "height",
+            "type": "f",
+            "default": ".5",
+            "function": true
+          }
+        ],
+        "parameters": [
+          {
+            "name": "severity",
+            "type": "float",
+            "label": "Scorch severity",
+            "default": 1,
+            "min": 0,
+            "max": 1,
+            "step": 0.01
+          }
+        ],
+        "instance": [
+          "vec4 scorch_preview_$name(vec2 uv) {\nvec3 encoded=$reference(uv);\nvec3 ref=mix(pow((encoded+.055)/1.055,vec3(2.4)),encoded/12.92,lessThanEqual(encoded,vec3(.04045)));\nfloat r=$roughness(uv), h=$height(uv), s=$severity;\nfloat y=dot(ref,vec3(.2126,.7152,.0722));\nfloat c=smoothstep(.12,.45,s)*(1.0-smoothstep(.03,.10,y));\nfloat G=smoothstep(.78,.97,s);\nfloat a=smoothstep(.35,.68,s)*smoothstep(.10,.26,y)*(1.0-.65*G);\nfloat g=G*(1.0-smoothstep(.35,.65,r));\nvec4 w=vec4((1.0-g)*(1.0-a)*(1.0-c),(1.0-g)*(1.0-a)*c,(1.0-g)*a,g);\nvec3 color=mix(.8,1.2,h)*(w.x*vec3(.060,.043,.026)+w.y*vec3(.016,.018,.017)+w.z*vec3(.230,.220,.200)+w.w*vec3(.028,.037,.030));\nfloat coverage=smoothstep(0.0,.55,s);\ncolor=mix(ref,color,coverage);\nfloat rs=dot(w,vec4(.90,.86,.97,clamp(r,.18,.38)));\nfloat rough=sqrt(mix(r*r,rs*rs,coverage));\nreturn vec4(mix(1.055*pow(color,vec3(1.0/2.4))-.055,12.92*color,lessThanEqual(color,vec3(.0031308))),rough);\n}"
+        ],
+        "outputs": [
+          {
+            "type": "rgb",
+            "rgb": "scorch_preview_$name($uv).rgb"
+          },
+          {
+            "type": "f",
+            "f": "scorch_preview_$name($uv).a"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GranularDeposits",
+      "type": "blend",
+      "node_position": {
+        "x": -1200,
+        "y": -500
+      },
+      "parameters": {
+        "blend_type": 0,
+        "amount": 0.6
+      },
+      "seed": 93,
+      "seed_locked": true
+    },
+    {
+      "name": "Material",
+      "type": "material",
+      "parameters": {
+        "albedo_color": {
+          "type": "Color",
+          "r": 1,
+          "g": 1,
+          "b": 1,
+          "a": 1
+        },
+        "ao": 1,
+        "depth_scale": 0.0025,
+        "emission_energy": 1.0,
+        "flags_transparent": false,
+        "metallic": 0,
+        "normal": 1,
+        "roughness": 1,
+        "size": 9,
+        "sss": 0.0
+      },
+      "node_position": {
+        "x": 3550,
+        "y": 300
+      },
+      "seed_int": 0,
+      "export_paths": {}
+    },
+    {
+      "name": "ColorCodes",
+      "type": "decompose",
+      "parameters": {},
+      "node_position": {
+        "x": 2650,
+        "y": 0
+      },
+      "seed_int": 0
+    },
+    {
+      "name": "DepthForMaterial",
+      "type": "math",
+      "parameters": {
+        "op": 1,
+        "default_in1": 1,
+        "default_in2": 0,
+        "clamp": false
+      },
+      "node_position": {
+        "x": 2850,
+        "y": 0
+      },
+      "seed_int": 0
+    },
+    {
+      "name": "GodotNormalPNG8",
+      "type": "graph",
+      "node_position": {
+        "x": 2350,
+        "y": 600
+      },
+      "parameters": {},
+      "seed": 0,
+      "seed_locked": true,
+      "label": "PNG8 numeric encoding (nearest code)",
+      "nodes": [
+        {
+          "name": "gen_inputs",
+          "type": "ios",
+          "node_position": {
+            "x": 0,
+            "y": 0
+          },
+          "parameters": {},
+          "seed": 0,
+          "seed_locked": true,
+          "ports": [
+            {
+              "name": "Unencoded numeric value",
+              "type": "rgba",
+              "group_size": 0
+            }
+          ]
+        },
+        {
+          "name": "gen_outputs",
+          "type": "ios",
+          "node_position": {
+            "x": 1800,
+            "y": 0
+          },
+          "parameters": {},
+          "seed": 0,
+          "seed_locked": true,
+          "ports": [
+            {
+              "name": "PNG bin center",
+              "type": "rgba",
+              "group_size": 0
+            }
+          ]
+        },
+        {
+          "name": "RGBValidRange",
+          "type": "math_v3",
+          "node_position": {
+            "x": 250,
+            "y": 0
+          },
+          "parameters": {
+            "op": 0,
+            "clamp": true,
+            "d_in2_x": 0,
+            "d_in2_y": 0,
+            "d_in2_z": 0
+          },
+          "seed": 0,
+          "seed_locked": true
+        },
+        {
+          "name": "RGBCodes",
+          "type": "math_v3",
+          "node_position": {
+            "x": 500,
+            "y": 0
+          },
+          "parameters": {
+            "op": 2,
+            "clamp": false,
+            "d_in2_x": 255,
+            "d_in2_y": 255,
+            "d_in2_z": 255
+          },
+          "seed": 0,
+          "seed_locked": true
+        },
+        {
+          "name": "RGBNearestCode",
+          "type": "math_v3",
+          "node_position": {
+            "x": 750,
+            "y": 0
+          },
+          "parameters": {
+            "op": 8,
+            "clamp": false,
+            "d_in2_x": 0,
+            "d_in2_y": 0,
+            "d_in2_z": 0
+          },
+          "seed": 0,
+          "seed_locked": true
+        },
+        {
+          "name": "RGBBinCenter",
+          "type": "math_v3",
+          "node_position": {
+            "x": 1000,
+            "y": 0
+          },
+          "parameters": {
+            "op": 0,
+            "clamp": false,
+            "d_in2_x": 0.5,
+            "d_in2_y": 0.5,
+            "d_in2_z": 0.5
+          },
+          "seed": 0,
+          "seed_locked": true
+        },
+        {
+          "name": "RGBPNGValue",
+          "type": "math_v3",
+          "node_position": {
+            "x": 1250,
+            "y": 0
+          },
+          "parameters": {
+            "op": 3,
+            "clamp": true,
+            "d_in2_x": 255,
+            "d_in2_y": 255,
+            "d_in2_z": 255
+          },
+          "seed": 0,
+          "seed_locked": true
+        },
+        {
+          "name": "InputChannels",
+          "type": "decompose",
+          "node_position": {
+            "x": 250,
+            "y": 400
+          },
+          "parameters": {},
+          "seed": 0,
+          "seed_locked": true
+        },
+        {
+          "name": "AlphaValidRange",
+          "type": "math",
+          "node_position": {
+            "x": 250,
+            "y": 600
+          },
+          "parameters": {
+            "op": 0,
+            "clamp": true,
+            "default_in1": 0,
+            "default_in2": 0
+          },
+          "seed": 0,
+          "seed_locked": true
+        },
+        {
+          "name": "AlphaCodes",
+          "type": "math",
+          "node_position": {
+            "x": 500,
+            "y": 600
+          },
+          "parameters": {
+            "op": 2,
+            "clamp": false,
+            "default_in1": 0,
+            "default_in2": 255
+          },
+          "seed": 0,
+          "seed_locked": true
+        },
+        {
+          "name": "AlphaNearestCode",
+          "type": "math",
+          "node_position": {
+            "x": 750,
+            "y": 600
+          },
+          "parameters": {
+            "op": 8,
+            "clamp": false,
+            "default_in1": 0,
+            "default_in2": 0
+          },
+          "seed": 0,
+          "seed_locked": true
+        },
+        {
+          "name": "AlphaBinCenter",
+          "type": "math",
+          "node_position": {
+            "x": 1000,
+            "y": 600
+          },
+          "parameters": {
+            "op": 0,
+            "clamp": false,
+            "default_in1": 0,
+            "default_in2": 0.5
+          },
+          "seed": 0,
+          "seed_locked": true
+        },
+        {
+          "name": "AlphaPNGValue",
+          "type": "math",
+          "node_position": {
+            "x": 1250,
+            "y": 600
+          },
+          "parameters": {
+            "op": 3,
+            "clamp": true,
+            "default_in1": 0,
+            "default_in2": 255
+          },
+          "seed": 0,
+          "seed_locked": true
+        },
+        {
+          "name": "RGBChannels",
+          "type": "decompose",
+          "node_position": {
+            "x": 1500,
+            "y": 0
+          },
+          "parameters": {},
+          "seed": 0,
+          "seed_locked": true
+        },
+        {
+          "name": "Packed",
+          "type": "combine",
+          "node_position": {
+            "x": 1750,
+            "y": 0
+          },
+          "parameters": {},
+          "seed": 0,
+          "seed_locked": true
+        }
+      ],
+      "connections": [
+        {
+          "from": "gen_inputs",
+          "to": "RGBValidRange",
+          "from_port": 0,
+          "to_port": 0
+        },
+        {
+          "from": "RGBValidRange",
+          "to": "RGBCodes",
+          "from_port": 0,
+          "to_port": 0
+        },
+        {
+          "from": "RGBCodes",
+          "to": "RGBNearestCode",
+          "from_port": 0,
+          "to_port": 0
+        },
+        {
+          "from": "RGBNearestCode",
+          "to": "RGBBinCenter",
+          "from_port": 0,
+          "to_port": 0
+        },
+        {
+          "from": "RGBBinCenter",
+          "to": "RGBPNGValue",
+          "from_port": 0,
+          "to_port": 0
+        },
+        {
+          "from": "gen_inputs",
+          "to": "InputChannels",
+          "from_port": 0,
+          "to_port": 0
+        },
+        {
+          "from": "InputChannels",
+          "to": "AlphaValidRange",
+          "from_port": 3,
+          "to_port": 0
+        },
+        {
+          "from": "AlphaValidRange",
+          "to": "AlphaCodes",
+          "from_port": 0,
+          "to_port": 0
+        },
+        {
+          "from": "AlphaCodes",
+          "to": "AlphaNearestCode",
+          "from_port": 0,
+          "to_port": 0
+        },
+        {
+          "from": "AlphaNearestCode",
+          "to": "AlphaBinCenter",
+          "from_port": 0,
+          "to_port": 0
+        },
+        {
+          "from": "AlphaBinCenter",
+          "to": "AlphaPNGValue",
+          "from_port": 0,
+          "to_port": 0
+        },
+        {
+          "from": "RGBPNGValue",
+          "to": "RGBChannels",
+          "from_port": 0,
+          "to_port": 0
+        },
+        {
+          "from": "RGBChannels",
+          "to": "Packed",
+          "from_port": 0,
+          "to_port": 0
+        },
+        {
+          "from": "RGBChannels",
+          "to": "Packed",
+          "from_port": 1,
+          "to_port": 1
+        },
+        {
+          "from": "RGBChannels",
+          "to": "Packed",
+          "from_port": 2,
+          "to_port": 2
+        },
+        {
+          "from": "AlphaPNGValue",
+          "to": "Packed",
+          "from_port": 0,
+          "to_port": 3
+        },
+        {
+          "from": "Packed",
+          "to": "gen_outputs",
+          "from_port": 0,
+          "to_port": 0
+        }
+      ]
+    },
+    {
+      "name": "GodotGreen",
+      "type": "math",
+      "parameters": {
+        "op": 1,
+        "default_in1": 1,
+        "default_in2": 0,
+        "clamp": false
+      },
+      "node_position": {
+        "x": 1950,
+        "y": 600
+      },
+      "seed_int": 0
+    },
+    {
+      "name": "GodotNormal",
+      "type": "combine",
+      "parameters": {},
+      "node_position": {
+        "x": 2150,
+        "y": 600
+      },
+      "seed_int": 0
+    },
+    {
+      "name": "NormalCodes",
+      "type": "decompose",
+      "parameters": {},
+      "node_position": {
+        "x": 2650,
+        "y": 600
+      },
+      "seed_int": 0
+    },
+    {
+      "name": "NormalRGB",
+      "type": "combine",
+      "parameters": {},
+      "node_position": {
+        "x": 2850,
+        "y": 600
+      },
+      "seed_int": 0
+    },
+    {
+      "name": "NormalForMaterial",
+      "type": "normal_map_convert",
+      "parameters": {
+        "op": 0
+      },
+      "node_position": {
+        "x": 3050,
+        "y": 600
+      },
+      "seed_int": 0
+    },
+    {
+      "name": "RoughnessCodes",
+      "type": "decompose",
+      "parameters": {},
+      "node_position": {
+        "x": 2650,
+        "y": 900
+      },
+      "seed_int": 0
     }
-   ],
-   "connections": [
+  ],
+  "connections": [
     {
-     "from": "gen_inputs",
-     "to": "MetricHeight",
-     "from_port": 0,
-     "to_port": 0
+      "from": "Normals",
+      "to": "NormalChannels",
+      "from_port": 0,
+      "to_port": 0
     },
     {
-     "from": "MetricHeight",
-     "to": "Normal",
-     "from_port": 0,
-     "to_port": 0
+      "from": "PigmentChannels",
+      "to": "ColorHeight",
+      "from_port": 0,
+      "to_port": 0
     },
     {
-     "from": "Normal",
-     "to": "GameNormal",
-     "from_port": 0,
-     "to_port": 0
+      "from": "NormalChannels",
+      "to": "NormalAO",
+      "from_port": 0,
+      "to_port": 0
     },
     {
-     "from": "GameNormal",
-     "to": "gen_outputs",
-     "from_port": 0,
-     "to_port": 0
+      "from": "PigmentChannels",
+      "to": "ColorHeight",
+      "from_port": 1,
+      "to_port": 1
     },
     {
-     "from": "Normal",
-     "to": "gen_outputs",
-     "from_port": 0,
-     "to_port": 1
+      "from": "NormalChannels",
+      "to": "NormalAO",
+      "from_port": 1,
+      "to_port": 1
+    },
+    {
+      "from": "PigmentChannels",
+      "to": "ColorHeight",
+      "from_port": 2,
+      "to_port": 2
+    },
+    {
+      "from": "ColorHeight",
+      "to": "ColorPNG8",
+      "from_port": 0,
+      "to_port": 0
+    },
+    {
+      "from": "NormalAO",
+      "to": "NormalPNG8",
+      "from_port": 0,
+      "to_port": 0
+    },
+    {
+      "from": "Grain",
+      "from_port": 0,
+      "to": "GrainColor",
+      "to_port": 0
+    },
+    {
+      "from": "GrainColor",
+      "from_port": 0,
+      "to": "ReferenceColor",
+      "to_port": 0
+    },
+    {
+      "from": "Pigment",
+      "from_port": 0,
+      "to": "ReferenceColor",
+      "to_port": 1
+    },
+    {
+      "from": "GlassDistribution",
+      "from_port": 0,
+      "to": "GlassSites",
+      "to_port": 0
+    },
+    {
+      "from": "GlassSites",
+      "from_port": 0,
+      "to": "Roughness",
+      "to_port": 0
+    },
+    {
+      "from": "Fragments",
+      "from_port": 1,
+      "to": "Fissures",
+      "to_port": 0
+    },
+    {
+      "from": "Deposits",
+      "from_port": 0,
+      "to": "Fissures",
+      "to_port": 1
+    },
+    {
+      "from": "Fissures",
+      "from_port": 0,
+      "to": "CrackMask",
+      "to_port": 0
+    },
+    {
+      "from": "CrackMask",
+      "from_port": 0,
+      "to": "HotCracks",
+      "to_port": 0
+    },
+    {
+      "from": "GlassSites",
+      "from_port": 0,
+      "to": "HotCracks",
+      "to_port": 1
+    },
+    {
+      "from": "Grain",
+      "from_port": 0,
+      "to": "ReliefGrain",
+      "to_port": 0
+    },
+    {
+      "from": "Fragments",
+      "from_port": 0,
+      "to": "ReliefGrain",
+      "to_port": 1
+    },
+    {
+      "from": "ReliefGrain",
+      "from_port": 0,
+      "to": "ReliefRange",
+      "to_port": 0
+    },
+    {
+      "from": "CrackFloor",
+      "from_port": 0,
+      "to": "Height",
+      "to_port": 0
+    },
+    {
+      "from": "ReliefRange",
+      "from_port": 0,
+      "to": "Height",
+      "to_port": 1
+    },
+    {
+      "from": "HotCracks",
+      "from_port": 0,
+      "to": "Height",
+      "to_port": 2
+    },
+    {
+      "from": "Height",
+      "from_port": 0,
+      "to": "Occlusion",
+      "to_port": 0
+    },
+    {
+      "from": "ReferenceColor",
+      "from_port": 0,
+      "to": "PigmentChannels",
+      "to_port": 0
+    },
+    {
+      "from": "Height",
+      "from_port": 0,
+      "to": "ColorHeight",
+      "to_port": 3
+    },
+    {
+      "from": "Height",
+      "from_port": 0,
+      "to": "Normals",
+      "to_port": 0
+    },
+    {
+      "from": "Roughness",
+      "from_port": 0,
+      "to": "NormalAO",
+      "to_port": 2
+    },
+    {
+      "from": "Occlusion",
+      "from_port": 0,
+      "to": "NormalAO",
+      "to_port": 3
+    },
+    {
+      "from": "ReferenceColor",
+      "from_port": 0,
+      "to": "preview_s",
+      "to_port": 0
+    },
+    {
+      "from": "Roughness",
+      "from_port": 0,
+      "to": "preview_s",
+      "to_port": 1
+    },
+    {
+      "from": "Height",
+      "from_port": 0,
+      "to": "preview_s",
+      "to_port": 2
+    },
+    {
+      "from": "Grain",
+      "from_port": 0,
+      "to": "GranularDeposits",
+      "to_port": 0
+    },
+    {
+      "from": "Deposits",
+      "from_port": 0,
+      "to": "GranularDeposits",
+      "to_port": 1
+    },
+    {
+      "from": "GranularDeposits",
+      "from_port": 0,
+      "to": "Pigment",
+      "to_port": 0
+    },
+    {
+      "from": "ColorPNG8",
+      "from_port": 0,
+      "to": "Material",
+      "to_port": 0
+    },
+    {
+      "from": "ColorPNG8",
+      "from_port": 0,
+      "to": "ColorCodes",
+      "to_port": 0
+    },
+    {
+      "from": "ColorCodes",
+      "from_port": 3,
+      "to": "DepthForMaterial",
+      "to_port": 1
+    },
+    {
+      "from": "DepthForMaterial",
+      "from_port": 0,
+      "to": "Material",
+      "to_port": 6
+    },
+    {
+      "from": "NormalChannels",
+      "from_port": 1,
+      "to": "GodotGreen",
+      "to_port": 1
+    },
+    {
+      "from": "NormalChannels",
+      "from_port": 0,
+      "to": "GodotNormal",
+      "to_port": 0
+    },
+    {
+      "from": "GodotGreen",
+      "from_port": 0,
+      "to": "GodotNormal",
+      "to_port": 1
+    },
+    {
+      "from": "NormalChannels",
+      "from_port": 2,
+      "to": "GodotNormal",
+      "to_port": 2
+    },
+    {
+      "from": "Occlusion",
+      "from_port": 0,
+      "to": "GodotNormal",
+      "to_port": 3
+    },
+    {
+      "from": "GodotNormal",
+      "from_port": 0,
+      "to": "GodotNormalPNG8",
+      "to_port": 0
+    },
+    {
+      "from": "GodotNormalPNG8",
+      "from_port": 0,
+      "to": "NormalCodes",
+      "to_port": 0
+    },
+    {
+      "from": "NormalCodes",
+      "from_port": 0,
+      "to": "NormalRGB",
+      "to_port": 0
+    },
+    {
+      "from": "NormalCodes",
+      "from_port": 1,
+      "to": "NormalRGB",
+      "to_port": 1
+    },
+    {
+      "from": "NormalCodes",
+      "from_port": 2,
+      "to": "NormalRGB",
+      "to_port": 2
+    },
+    {
+      "from": "NormalRGB",
+      "from_port": 0,
+      "to": "NormalForMaterial",
+      "to_port": 0
+    },
+    {
+      "from": "NormalForMaterial",
+      "from_port": 0,
+      "to": "Material",
+      "to_port": 4
+    },
+    {
+      "from": "NormalCodes",
+      "from_port": 3,
+      "to": "Material",
+      "to_port": 5
+    },
+    {
+      "from": "NormalPNG8",
+      "from_port": 0,
+      "to": "RoughnessCodes",
+      "to_port": 0
+    },
+    {
+      "from": "RoughnessCodes",
+      "from_port": 2,
+      "to": "Material",
+      "to_port": 2
     }
-   ]
-  },
-  {
-   "name": "PigmentChannels",
-   "type": "decompose",
-   "node_position": {
-    "x": 350,
-    "y": 0
-   },
-   "parameters": {},
-   "seed": 27,
-   "seed_locked": true
-  },
-  {
-   "name": "ColorHeight",
-   "type": "combine",
-   "node_position": {
-    "x": 700,
-    "y": 0
-   },
-   "parameters": {},
-   "seed": 27,
-   "seed_locked": true
-  },
-  {
-   "name": "NormalChannels",
-   "type": "decompose",
-   "node_position": {
-    "x": 700,
-    "y": 400
-   },
-   "parameters": {},
-   "seed": 27,
-   "seed_locked": true
-  },
-  {
-   "name": "NormalAO",
-   "type": "combine",
-   "node_position": {
-    "x": 1050,
-    "y": 400
-   },
-   "parameters": {},
-   "seed": 27,
-   "seed_locked": true
-  },
-  {
-   "name": "ColorPNG8",
-   "type": "graph",
-   "node_position": {
-    "x": 1400,
-    "y": 0
-   },
-   "parameters": {},
-   "seed": 0,
-   "seed_locked": true,
-   "label": "PNG8 numeric encoding (nearest code)",
-   "nodes": [
-    {
-     "name": "gen_inputs",
-     "type": "ios",
-     "node_position": {
-      "x": 0,
-      "y": 0
-     },
-     "parameters": {},
-     "seed": 0,
-     "seed_locked": true,
-     "ports": [
-      {
-       "name": "Unencoded numeric value",
-       "type": "rgba",
-       "group_size": 0
-      }
-     ]
-    },
-    {
-     "name": "gen_outputs",
-     "type": "ios",
-     "node_position": {
-      "x": 1800,
-      "y": 0
-     },
-     "parameters": {},
-     "seed": 0,
-     "seed_locked": true,
-     "ports": [
-      {
-       "name": "PNG bin center",
-       "type": "rgba",
-       "group_size": 0
-      }
-     ]
-    },
-    {
-     "name": "RGBValidRange",
-     "type": "math_v3",
-     "node_position": {
-      "x": 250,
-      "y": 0
-     },
-     "parameters": {
-      "op": 0,
-      "clamp": true,
-      "d_in2_x": 0,
-      "d_in2_y": 0,
-      "d_in2_z": 0
-     },
-     "seed": 0,
-     "seed_locked": true
-    },
-    {
-     "name": "RGBCodes",
-     "type": "math_v3",
-     "node_position": {
-      "x": 500,
-      "y": 0
-     },
-     "parameters": {
-      "op": 2,
-      "clamp": false,
-      "d_in2_x": 255,
-      "d_in2_y": 255,
-      "d_in2_z": 255
-     },
-     "seed": 0,
-     "seed_locked": true
-    },
-    {
-     "name": "RGBNearestCode",
-     "type": "math_v3",
-     "node_position": {
-      "x": 750,
-      "y": 0
-     },
-     "parameters": {
-      "op": 8,
-      "clamp": false,
-      "d_in2_x": 0,
-      "d_in2_y": 0,
-      "d_in2_z": 0
-     },
-     "seed": 0,
-     "seed_locked": true
-    },
-    {
-     "name": "RGBBinCenter",
-     "type": "math_v3",
-     "node_position": {
-      "x": 1000,
-      "y": 0
-     },
-     "parameters": {
-      "op": 0,
-      "clamp": false,
-      "d_in2_x": 0.5,
-      "d_in2_y": 0.5,
-      "d_in2_z": 0.5
-     },
-     "seed": 0,
-     "seed_locked": true
-    },
-    {
-     "name": "RGBPNGValue",
-     "type": "math_v3",
-     "node_position": {
-      "x": 1250,
-      "y": 0
-     },
-     "parameters": {
-      "op": 3,
-      "clamp": true,
-      "d_in2_x": 255,
-      "d_in2_y": 255,
-      "d_in2_z": 255
-     },
-     "seed": 0,
-     "seed_locked": true
-    },
-    {
-     "name": "InputChannels",
-     "type": "decompose",
-     "node_position": {
-      "x": 250,
-      "y": 400
-     },
-     "parameters": {},
-     "seed": 0,
-     "seed_locked": true
-    },
-    {
-     "name": "AlphaValidRange",
-     "type": "math",
-     "node_position": {
-      "x": 250,
-      "y": 600
-     },
-     "parameters": {
-      "op": 0,
-      "clamp": true,
-      "default_in1": 0,
-      "default_in2": 0
-     },
-     "seed": 0,
-     "seed_locked": true
-    },
-    {
-     "name": "AlphaCodes",
-     "type": "math",
-     "node_position": {
-      "x": 500,
-      "y": 600
-     },
-     "parameters": {
-      "op": 2,
-      "clamp": false,
-      "default_in1": 0,
-      "default_in2": 255
-     },
-     "seed": 0,
-     "seed_locked": true
-    },
-    {
-     "name": "AlphaNearestCode",
-     "type": "math",
-     "node_position": {
-      "x": 750,
-      "y": 600
-     },
-     "parameters": {
-      "op": 8,
-      "clamp": false,
-      "default_in1": 0,
-      "default_in2": 0
-     },
-     "seed": 0,
-     "seed_locked": true
-    },
-    {
-     "name": "AlphaBinCenter",
-     "type": "math",
-     "node_position": {
-      "x": 1000,
-      "y": 600
-     },
-     "parameters": {
-      "op": 0,
-      "clamp": false,
-      "default_in1": 0,
-      "default_in2": 0.5
-     },
-     "seed": 0,
-     "seed_locked": true
-    },
-    {
-     "name": "AlphaPNGValue",
-     "type": "math",
-     "node_position": {
-      "x": 1250,
-      "y": 600
-     },
-     "parameters": {
-      "op": 3,
-      "clamp": true,
-      "default_in1": 0,
-      "default_in2": 255
-     },
-     "seed": 0,
-     "seed_locked": true
-    },
-    {
-     "name": "RGBChannels",
-     "type": "decompose",
-     "node_position": {
-      "x": 1500,
-      "y": 0
-     },
-     "parameters": {},
-     "seed": 0,
-     "seed_locked": true
-    },
-    {
-     "name": "Packed",
-     "type": "combine",
-     "node_position": {
-      "x": 1750,
-      "y": 0
-     },
-     "parameters": {},
-     "seed": 0,
-     "seed_locked": true
-    }
-   ],
-   "connections": [
-    {
-     "from": "gen_inputs",
-     "to": "RGBValidRange",
-     "from_port": 0,
-     "to_port": 0
-    },
-    {
-     "from": "RGBValidRange",
-     "to": "RGBCodes",
-     "from_port": 0,
-     "to_port": 0
-    },
-    {
-     "from": "RGBCodes",
-     "to": "RGBNearestCode",
-     "from_port": 0,
-     "to_port": 0
-    },
-    {
-     "from": "RGBNearestCode",
-     "to": "RGBBinCenter",
-     "from_port": 0,
-     "to_port": 0
-    },
-    {
-     "from": "RGBBinCenter",
-     "to": "RGBPNGValue",
-     "from_port": 0,
-     "to_port": 0
-    },
-    {
-     "from": "gen_inputs",
-     "to": "InputChannels",
-     "from_port": 0,
-     "to_port": 0
-    },
-    {
-     "from": "InputChannels",
-     "to": "AlphaValidRange",
-     "from_port": 3,
-     "to_port": 0
-    },
-    {
-     "from": "AlphaValidRange",
-     "to": "AlphaCodes",
-     "from_port": 0,
-     "to_port": 0
-    },
-    {
-     "from": "AlphaCodes",
-     "to": "AlphaNearestCode",
-     "from_port": 0,
-     "to_port": 0
-    },
-    {
-     "from": "AlphaNearestCode",
-     "to": "AlphaBinCenter",
-     "from_port": 0,
-     "to_port": 0
-    },
-    {
-     "from": "AlphaBinCenter",
-     "to": "AlphaPNGValue",
-     "from_port": 0,
-     "to_port": 0
-    },
-    {
-     "from": "RGBPNGValue",
-     "to": "RGBChannels",
-     "from_port": 0,
-     "to_port": 0
-    },
-    {
-     "from": "RGBChannels",
-     "to": "Packed",
-     "from_port": 0,
-     "to_port": 0
-    },
-    {
-     "from": "RGBChannels",
-     "to": "Packed",
-     "from_port": 1,
-     "to_port": 1
-    },
-    {
-     "from": "RGBChannels",
-     "to": "Packed",
-     "from_port": 2,
-     "to_port": 2
-    },
-    {
-     "from": "AlphaPNGValue",
-     "to": "Packed",
-     "from_port": 0,
-     "to_port": 3
-    },
-    {
-     "from": "Packed",
-     "to": "gen_outputs",
-     "from_port": 0,
-     "to_port": 0
-    }
-   ]
-  },
-  {
-   "name": "NormalPNG8",
-   "type": "graph",
-   "node_position": {
-    "x": 1400,
-    "y": 450
-   },
-   "parameters": {},
-   "seed": 0,
-   "seed_locked": true,
-   "label": "PNG8 numeric encoding (nearest code)",
-   "nodes": [
-    {
-     "name": "gen_inputs",
-     "type": "ios",
-     "node_position": {
-      "x": 0,
-      "y": 0
-     },
-     "parameters": {},
-     "seed": 0,
-     "seed_locked": true,
-     "ports": [
-      {
-       "name": "Unencoded numeric value",
-       "type": "rgba",
-       "group_size": 0
-      }
-     ]
-    },
-    {
-     "name": "gen_outputs",
-     "type": "ios",
-     "node_position": {
-      "x": 1800,
-      "y": 0
-     },
-     "parameters": {},
-     "seed": 0,
-     "seed_locked": true,
-     "ports": [
-      {
-       "name": "PNG bin center",
-       "type": "rgba",
-       "group_size": 0
-      }
-     ]
-    },
-    {
-     "name": "RGBValidRange",
-     "type": "math_v3",
-     "node_position": {
-      "x": 250,
-      "y": 0
-     },
-     "parameters": {
-      "op": 0,
-      "clamp": true,
-      "d_in2_x": 0,
-      "d_in2_y": 0,
-      "d_in2_z": 0
-     },
-     "seed": 0,
-     "seed_locked": true
-    },
-    {
-     "name": "RGBCodes",
-     "type": "math_v3",
-     "node_position": {
-      "x": 500,
-      "y": 0
-     },
-     "parameters": {
-      "op": 2,
-      "clamp": false,
-      "d_in2_x": 255,
-      "d_in2_y": 255,
-      "d_in2_z": 255
-     },
-     "seed": 0,
-     "seed_locked": true
-    },
-    {
-     "name": "RGBNearestCode",
-     "type": "math_v3",
-     "node_position": {
-      "x": 750,
-      "y": 0
-     },
-     "parameters": {
-      "op": 8,
-      "clamp": false,
-      "d_in2_x": 0,
-      "d_in2_y": 0,
-      "d_in2_z": 0
-     },
-     "seed": 0,
-     "seed_locked": true
-    },
-    {
-     "name": "RGBBinCenter",
-     "type": "math_v3",
-     "node_position": {
-      "x": 1000,
-      "y": 0
-     },
-     "parameters": {
-      "op": 0,
-      "clamp": false,
-      "d_in2_x": 0.5,
-      "d_in2_y": 0.5,
-      "d_in2_z": 0.5
-     },
-     "seed": 0,
-     "seed_locked": true
-    },
-    {
-     "name": "RGBPNGValue",
-     "type": "math_v3",
-     "node_position": {
-      "x": 1250,
-      "y": 0
-     },
-     "parameters": {
-      "op": 3,
-      "clamp": true,
-      "d_in2_x": 255,
-      "d_in2_y": 255,
-      "d_in2_z": 255
-     },
-     "seed": 0,
-     "seed_locked": true
-    },
-    {
-     "name": "InputChannels",
-     "type": "decompose",
-     "node_position": {
-      "x": 250,
-      "y": 400
-     },
-     "parameters": {},
-     "seed": 0,
-     "seed_locked": true
-    },
-    {
-     "name": "AlphaValidRange",
-     "type": "math",
-     "node_position": {
-      "x": 250,
-      "y": 600
-     },
-     "parameters": {
-      "op": 0,
-      "clamp": true,
-      "default_in1": 0,
-      "default_in2": 0
-     },
-     "seed": 0,
-     "seed_locked": true
-    },
-    {
-     "name": "AlphaCodes",
-     "type": "math",
-     "node_position": {
-      "x": 500,
-      "y": 600
-     },
-     "parameters": {
-      "op": 2,
-      "clamp": false,
-      "default_in1": 0,
-      "default_in2": 255
-     },
-     "seed": 0,
-     "seed_locked": true
-    },
-    {
-     "name": "AlphaNearestCode",
-     "type": "math",
-     "node_position": {
-      "x": 750,
-      "y": 600
-     },
-     "parameters": {
-      "op": 8,
-      "clamp": false,
-      "default_in1": 0,
-      "default_in2": 0
-     },
-     "seed": 0,
-     "seed_locked": true
-    },
-    {
-     "name": "AlphaBinCenter",
-     "type": "math",
-     "node_position": {
-      "x": 1000,
-      "y": 600
-     },
-     "parameters": {
-      "op": 0,
-      "clamp": false,
-      "default_in1": 0,
-      "default_in2": 0.5
-     },
-     "seed": 0,
-     "seed_locked": true
-    },
-    {
-     "name": "AlphaPNGValue",
-     "type": "math",
-     "node_position": {
-      "x": 1250,
-      "y": 600
-     },
-     "parameters": {
-      "op": 3,
-      "clamp": true,
-      "default_in1": 0,
-      "default_in2": 255
-     },
-     "seed": 0,
-     "seed_locked": true
-    },
-    {
-     "name": "RGBChannels",
-     "type": "decompose",
-     "node_position": {
-      "x": 1500,
-      "y": 0
-     },
-     "parameters": {},
-     "seed": 0,
-     "seed_locked": true
-    },
-    {
-     "name": "Packed",
-     "type": "combine",
-     "node_position": {
-      "x": 1750,
-      "y": 0
-     },
-     "parameters": {},
-     "seed": 0,
-     "seed_locked": true
-    }
-   ],
-   "connections": [
-    {
-     "from": "gen_inputs",
-     "to": "RGBValidRange",
-     "from_port": 0,
-     "to_port": 0
-    },
-    {
-     "from": "RGBValidRange",
-     "to": "RGBCodes",
-     "from_port": 0,
-     "to_port": 0
-    },
-    {
-     "from": "RGBCodes",
-     "to": "RGBNearestCode",
-     "from_port": 0,
-     "to_port": 0
-    },
-    {
-     "from": "RGBNearestCode",
-     "to": "RGBBinCenter",
-     "from_port": 0,
-     "to_port": 0
-    },
-    {
-     "from": "RGBBinCenter",
-     "to": "RGBPNGValue",
-     "from_port": 0,
-     "to_port": 0
-    },
-    {
-     "from": "gen_inputs",
-     "to": "InputChannels",
-     "from_port": 0,
-     "to_port": 0
-    },
-    {
-     "from": "InputChannels",
-     "to": "AlphaValidRange",
-     "from_port": 3,
-     "to_port": 0
-    },
-    {
-     "from": "AlphaValidRange",
-     "to": "AlphaCodes",
-     "from_port": 0,
-     "to_port": 0
-    },
-    {
-     "from": "AlphaCodes",
-     "to": "AlphaNearestCode",
-     "from_port": 0,
-     "to_port": 0
-    },
-    {
-     "from": "AlphaNearestCode",
-     "to": "AlphaBinCenter",
-     "from_port": 0,
-     "to_port": 0
-    },
-    {
-     "from": "AlphaBinCenter",
-     "to": "AlphaPNGValue",
-     "from_port": 0,
-     "to_port": 0
-    },
-    {
-     "from": "RGBPNGValue",
-     "to": "RGBChannels",
-     "from_port": 0,
-     "to_port": 0
-    },
-    {
-     "from": "RGBChannels",
-     "to": "Packed",
-     "from_port": 0,
-     "to_port": 0
-    },
-    {
-     "from": "RGBChannels",
-     "to": "Packed",
-     "from_port": 1,
-     "to_port": 1
-    },
-    {
-     "from": "RGBChannels",
-     "to": "Packed",
-     "from_port": 2,
-     "to_port": 2
-    },
-    {
-     "from": "AlphaPNGValue",
-     "to": "Packed",
-     "from_port": 0,
-     "to_port": 3
-    },
-    {
-     "from": "Packed",
-     "to": "gen_outputs",
-     "from_port": 0,
-     "to_port": 0
-    }
-   ]
-  },
-  {
-   "name": "StartHere",
-   "type": "comment",
-   "parameters": {},
-   "seed_int": 0,
-   "node_position": {
-    "x": -1400,
-    "y": -800
-   },
-   "title": "SCORCHED \u2014 authored fixed basis",
-   "size": {
-    "x": 1550,
-    "y": 200
-   },
-   "color": {
-    "type": "Color",
-    "r": 0.18,
-    "g": 0.23,
-    "b": 0.28,
-    "a": 1
-   },
-   "text": "64 metres per repeat (wider than a game hex), 4 cm relief. Deposits controls ash/cinder balance; GlassDistribution controls fused islands; Grain stays sub-metre; Fragments supplies sparse two-metre fractures. The 64-metre authored field carries irregular deposit and fused-island clusters across hex boundaries. Game exports fixed reference color+height and normal XY+ROUGHNESS B+AO. Normal Z is reconstructed by the scorch shader. No baked lighting or emission; nuclear-only fissure glow uses the reserved height band below 0.12. Severity is game data, not baked into these exports. Export with the stock CLI and RELOAD ASSETS. Select preview_s to change the material preview severity; Material exports the unchanged fixed basis."
-  },
-  {
-   "name": "Deposits",
-   "type": "fbm",
-   "parameters": {
-    "noise": 1,
-    "scale_x": 8,
-    "scale_y": 8,
-    "iterations": 4,
-    "folds": 0,
-    "persistence": 0.55
-   },
-   "node_position": {
-    "x": -1400,
-    "y": -400
-   },
-   "seed": 73,
-   "seed_locked": true
-  },
-  {
-   "name": "Grain",
-   "type": "fbm",
-   "parameters": {
-    "noise": 0,
-    "scale_x": 96,
-    "scale_y": 96,
-    "iterations": 2,
-    "folds": 0,
-    "persistence": 0.62
-   },
-   "node_position": {
-    "x": -1400,
-    "y": 250
-   },
-   "seed": 73,
-   "seed_locked": true
-  },
-  {
-   "name": "Fragments",
-   "type": "voronoi",
-   "parameters": {
-    "scale_x": 32,
-    "scale_y": 32,
-    "stretch_x": 0.8,
-    "stretch_y": 1,
-    "intensity": 0.75,
-    "randomness": 1
-   },
-   "node_position": {
-    "x": -1400,
-    "y": 700
-   },
-   "seed": 73,
-   "seed_locked": true
-  },
-  {
-   "name": "GlassDistribution",
-   "type": "fbm",
-   "parameters": {
-    "noise": 1,
-    "scale_x": 6,
-    "scale_y": 6,
-    "iterations": 3,
-    "folds": 0,
-    "persistence": 0.55
-   },
-   "node_position": {
-    "x": -1400,
-    "y": 1100
-   },
-   "seed": 195,
-   "seed_locked": true,
-   "seed_int": 195
-  },
-  {
-   "name": "Pigment",
-   "type": "colorize",
-   "parameters": {
-    "gradient": {
-     "type": "Gradient",
-     "interpolation": 1,
-     "points": [
-      {
-       "pos": 0,
-       "r": 0.1428256813030392,
-       "g": 0.16007763053951615,
-       "b": 0.15170371931624205,
-       "a": 1
-      },
-      {
-       "pos": 0.25,
-       "r": 0.21508198999620604,
-       "g": 0.2237698062683856,
-       "b": 0.21508198999620604,
-       "a": 1
-      },
-      {
-       "pos": 0.5,
-       "r": 0.32272611513876776,
-       "g": 0.3113788661917849,
-       "b": 0.28707155411844854,
-       "a": 1
-      },
-      {
-       "pos": 0.73,
-       "r": 0.44920387244804644,
-       "g": 0.4391783507878986,
-       "b": 0.4209136643681212,
-       "a": 1
-      },
-      {
-       "pos": 0.9,
-       "r": 0.5370987304831942,
-       "g": 0.5271127928256164,
-       "b": 0.5063864292846207,
-       "a": 1
-      },
-      {
-       "pos": 1,
-       "r": 0.5657284334090101,
-       "g": 0.5563933274981757,
-       "b": 0.5370987304831942,
-       "a": 1
-      }
-     ]
-    }
-   },
-   "node_position": {
-    "x": -1050,
-    "y": -400
-   },
-   "seed": 73,
-   "seed_locked": true
-  },
-  {
-   "name": "GrainColor",
-   "type": "colorize",
-   "parameters": {
-    "gradient": {
-     "type": "Gradient",
-     "interpolation": 1,
-     "points": [
-      {
-       "pos": 0,
-       "r": 0.65,
-       "g": 0.65,
-       "b": 0.65,
-       "a": 1
-      },
-      {
-       "pos": 1,
-       "r": 1,
-       "g": 1,
-       "b": 1,
-       "a": 1
-      }
-     ]
-    }
-   },
-   "node_position": {
-    "x": -1050,
-    "y": -100
-   },
-   "seed": 73,
-   "seed_locked": true
-  },
-  {
-   "name": "ReferenceColor",
-   "type": "blend",
-   "parameters": {
-    "blend_type": 2,
-    "amount": 0.6
-   },
-   "node_position": {
-    "x": -700,
-    "y": -400
-   },
-   "seed": 73,
-   "seed_locked": true
-  },
-  {
-   "name": "GlassSites",
-   "type": "colorize",
-   "parameters": {
-    "gradient": {
-     "type": "Gradient",
-     "interpolation": 1,
-     "points": [
-      {
-       "pos": 0,
-       "r": 0,
-       "g": 0,
-       "b": 0,
-       "a": 1
-      },
-      {
-       "pos": 0.15,
-       "r": 0,
-       "g": 0,
-       "b": 0,
-       "a": 1
-      },
-      {
-       "pos": 0.85,
-       "r": 1,
-       "g": 1,
-       "b": 1,
-       "a": 1
-      },
-      {
-       "pos": 1,
-       "r": 1,
-       "g": 1,
-       "b": 1,
-       "a": 1
-      }
-     ]
-    }
-   },
-   "node_position": {
-    "x": -1050,
-    "y": 1100
-   },
-   "seed": 73,
-   "seed_locked": true
-  },
-  {
-   "name": "Roughness",
-   "type": "colorize",
-   "parameters": {
-    "gradient": {
-     "type": "Gradient",
-     "interpolation": 1,
-     "points": [
-      {
-       "pos": 0,
-       "r": 0.94,
-       "g": 0.94,
-       "b": 0.94,
-       "a": 1
-      },
-      {
-       "pos": 1,
-       "r": 0.24,
-       "g": 0.24,
-       "b": 0.24,
-       "a": 1
-      }
-     ]
-    }
-   },
-   "node_position": {
-    "x": -700,
-    "y": 1100
-   },
-   "seed": 73,
-   "seed_locked": true
-  },
-  {
-   "name": "Fissures",
-   "type": "warp",
-   "parameters": {
-    "mode": 0,
-    "amount": 0.0015,
-    "eps": 0.005
-   },
-   "node_position": {
-    "x": -1050,
-    "y": 700
-   },
-   "seed": 73,
-   "seed_locked": true
-  },
-  {
-   "name": "CrackMask",
-   "type": "colorize",
-   "parameters": {
-    "gradient": {
-     "type": "Gradient",
-     "interpolation": 1,
-     "points": [
-      {
-       "pos": 0,
-       "r": 1,
-       "g": 1,
-       "b": 1,
-       "a": 1
-      },
-      {
-       "pos": 0.035,
-       "r": 1,
-       "g": 1,
-       "b": 1,
-       "a": 1
-      },
-      {
-       "pos": 0.1,
-       "r": 0,
-       "g": 0,
-       "b": 0,
-       "a": 1
-      },
-      {
-       "pos": 1,
-       "r": 0,
-       "g": 0,
-       "b": 0,
-       "a": 1
-      }
-     ]
-    }
-   },
-   "node_position": {
-    "x": -700,
-    "y": 700
-   },
-   "seed": 73,
-   "seed_locked": true
-  },
-  {
-   "name": "HotCracks",
-   "type": "blend",
-   "parameters": {
-    "blend_type": 2,
-    "amount": 1
-   },
-   "node_position": {
-    "x": -400,
-    "y": 700
-   },
-   "seed": 73,
-   "seed_locked": true
-  },
-  {
-   "name": "ReliefGrain",
-   "type": "blend",
-   "parameters": {
-    "blend_type": 0,
-    "amount": 0.2
-   },
-   "node_position": {
-    "x": -1050,
-    "y": 300
-   },
-   "seed": 73,
-   "seed_locked": true
-  },
-  {
-   "name": "ReliefRange",
-   "type": "colorize",
-   "parameters": {
-    "gradient": {
-     "type": "Gradient",
-     "interpolation": 1,
-     "points": [
-      {
-       "pos": 0,
-       "r": 0.25,
-       "g": 0.25,
-       "b": 0.25,
-       "a": 1
-      },
-      {
-       "pos": 1,
-       "r": 0.8,
-       "g": 0.8,
-       "b": 0.8,
-       "a": 1
-      }
-     ]
-    }
-   },
-   "node_position": {
-    "x": -700,
-    "y": 300
-   },
-   "seed": 73,
-   "seed_locked": true
-  },
-  {
-   "name": "CrackFloor",
-   "type": "uniform_greyscale",
-   "parameters": {
-    "color": 0.02
-   },
-   "node_position": {
-    "x": -400,
-    "y": 900
-   },
-   "seed": 73,
-   "seed_locked": true
-  },
-  {
-   "name": "Height",
-   "type": "blend",
-   "parameters": {
-    "blend_type": 0,
-    "amount": 1
-   },
-   "node_position": {
-    "x": -50,
-    "y": 300
-   },
-   "seed": 73,
-   "seed_locked": true
-  },
-  {
-   "name": "Occlusion",
-   "type": "colorize",
-   "parameters": {
-    "gradient": {
-     "type": "Gradient",
-     "interpolation": 1,
-     "points": [
-      {
-       "pos": 0,
-       "r": 0.62,
-       "g": 0.62,
-       "b": 0.62,
-       "a": 1
-      },
-      {
-       "pos": 0.2,
-       "r": 0.88,
-       "g": 0.88,
-       "b": 0.88,
-       "a": 1
-      },
-      {
-       "pos": 0.5,
-       "r": 1,
-       "g": 1,
-       "b": 1,
-       "a": 1
-      },
-      {
-       "pos": 1,
-       "r": 1,
-       "g": 1,
-       "b": 1,
-       "a": 1
-      }
-     ]
-    }
-   },
-   "node_position": {
-    "x": -50,
-    "y": 700
-   },
-   "seed": 73,
-   "seed_locked": true
-  },
-  {
-   "name": "AuthorControls",
-   "type": "remote",
-   "label": "Scorch material controls",
-   "node_position": {
-    "x": -1900,
-    "y": -400
-   },
-   "parameters": {
-    "DepositScale": 8,
-    "GrainScale": 96,
-    "GlassScale": 6,
-    "RepeatMetres": 64,
-    "ReliefMetres": 0.04
-   },
-   "widgets": [
-    {
-     "name": "DepositScale",
-     "label": "Deposit islands",
-     "type": "linked_control",
-     "linked_widgets": [
-      {
-       "node": "Deposits",
-       "widget": "scale_x"
-      },
-      {
-       "node": "Deposits",
-       "widget": "scale_y"
-      }
-     ]
-    },
-    {
-     "name": "GrainScale",
-     "label": "Fine mineral grain",
-     "type": "linked_control",
-     "linked_widgets": [
-      {
-       "node": "Grain",
-       "widget": "scale_x"
-      },
-      {
-       "node": "Grain",
-       "widget": "scale_y"
-      }
-     ]
-    },
-    {
-     "name": "GlassScale",
-     "label": "Fused island scale",
-     "type": "linked_control",
-     "linked_widgets": [
-      {
-       "node": "GlassDistribution",
-       "widget": "scale_x"
-      },
-      {
-       "node": "GlassDistribution",
-       "widget": "scale_y"
-      }
-     ]
-    },
-    {
-     "name": "RepeatMetres",
-     "label": "Repeat (metres)",
-     "type": "linked_control",
-     "linked_widgets": [
-      {
-       "node": "Normals",
-       "widget": "RepeatMetres"
-      }
-     ]
-    },
-    {
-     "name": "ReliefMetres",
-     "label": "Relief (metres)",
-     "type": "linked_control",
-     "linked_widgets": [
-      {
-       "node": "Normals",
-       "widget": "ReliefMetres"
-      }
-     ]
-    }
-   ]
-  },
-  {
-   "name": "preview_s",
-   "label": "Severity preview (does not change game export)",
-   "type": "shader",
-   "node_position": {
-    "x": 500,
-    "y": -450
-   },
-   "parameters": {
-    "severity": 1
-   },
-   "shader_model": {
-    "name": "SCORCHED severity preview",
-    "code": "",
-    "global": "",
-    "inputs": [
-     {
-      "name": "reference",
-      "type": "rgb",
-      "default": "vec3(.3)",
-      "function": true
-     },
-     {
-      "name": "roughness",
-      "type": "f",
-      "default": ".9",
-      "function": true
-     },
-     {
-      "name": "height",
-      "type": "f",
-      "default": ".5",
-      "function": true
-     }
-    ],
-    "parameters": [
-     {
-      "name": "severity",
-      "type": "float",
-      "label": "Scorch severity",
-      "default": 1,
-      "min": 0,
-      "max": 1,
-      "step": 0.01
-     }
-    ],
-    "instance": [
-     "vec4 scorch_preview_$name(vec2 uv) {\nvec3 encoded=$reference(uv);\nvec3 ref=mix(pow((encoded+.055)/1.055,vec3(2.4)),encoded/12.92,lessThanEqual(encoded,vec3(.04045)));\nfloat r=$roughness(uv), h=$height(uv), s=$severity;\nfloat y=dot(ref,vec3(.2126,.7152,.0722));\nfloat c=smoothstep(.12,.45,s)*(1.0-smoothstep(.03,.10,y));\nfloat G=smoothstep(.78,.97,s);\nfloat a=smoothstep(.35,.68,s)*smoothstep(.10,.26,y)*(1.0-.65*G);\nfloat g=G*(1.0-smoothstep(.35,.65,r));\nvec4 w=vec4((1.0-g)*(1.0-a)*(1.0-c),(1.0-g)*(1.0-a)*c,(1.0-g)*a,g);\nvec3 color=mix(.8,1.2,h)*(w.x*vec3(.060,.043,.026)+w.y*vec3(.016,.018,.017)+w.z*vec3(.230,.220,.200)+w.w*vec3(.028,.037,.030));\nfloat coverage=smoothstep(0.0,.55,s);\ncolor=mix(ref,color,coverage);\nfloat rs=dot(w,vec4(.90,.86,.97,clamp(r,.18,.38)));\nfloat rough=sqrt(mix(r*r,rs*rs,coverage));\nreturn vec4(mix(1.055*pow(color,vec3(1.0/2.4))-.055,12.92*color,lessThanEqual(color,vec3(.0031308))),rough);\n}"
-    ],
-    "outputs": [
-     {
-      "type": "rgb",
-      "rgb": "scorch_preview_$name($uv).rgb"
-     },
-     {
-      "type": "f",
-      "f": "scorch_preview_$name($uv).a"
-     }
-    ]
-   }
-  },
-  {
-   "name": "GranularDeposits",
-   "type": "blend",
-   "node_position": {
-    "x": -1200,
-    "y": -500
-   },
-   "parameters": {
-    "blend_type": 0,
-    "amount": 0.6
-   },
-   "seed": 93,
-   "seed_locked": true
-  },
-  {
-   "name": "Material",
-   "type": "material",
-   "parameters": {
-    "albedo_color": {
-     "type": "Color",
-     "r": 1,
-     "g": 1,
-     "b": 1,
-     "a": 1
-    },
-    "ao": 1,
-    "depth_scale": 0.0025,
-    "emission_energy": 1.0,
-    "flags_transparent": false,
-    "metallic": 0,
-    "normal": 1,
-    "roughness": 1,
-    "size": 9,
-    "sss": 0.0
-   },
-   "node_position": {
-    "x": 3550,
-    "y": 300
-   },
-   "seed_int": 0,
-   "export_paths": {}
-  },
-  {
-   "name": "ColorCodes",
-   "type": "decompose",
-   "parameters": {},
-   "node_position": {
-    "x": 2650,
-    "y": 0
-   },
-   "seed_int": 0
-  },
-  {
-   "name": "DepthForMaterial",
-   "type": "math",
-   "parameters": {
-    "op": 1,
-    "default_in1": 1,
-    "default_in2": 0,
-    "clamp": false
-   },
-   "node_position": {
-    "x": 2850,
-    "y": 0
-   },
-   "seed_int": 0
-  },
-  {
-   "name": "GodotNormalPNG8",
-   "type": "graph",
-   "node_position": {
-    "x": 2350,
-    "y": 600
-   },
-   "parameters": {},
-   "seed": 0,
-   "seed_locked": true,
-   "label": "PNG8 numeric encoding (nearest code)",
-   "nodes": [
-    {
-     "name": "gen_inputs",
-     "type": "ios",
-     "node_position": {
-      "x": 0,
-      "y": 0
-     },
-     "parameters": {},
-     "seed": 0,
-     "seed_locked": true,
-     "ports": [
-      {
-       "name": "Unencoded numeric value",
-       "type": "rgba",
-       "group_size": 0
-      }
-     ]
-    },
-    {
-     "name": "gen_outputs",
-     "type": "ios",
-     "node_position": {
-      "x": 1800,
-      "y": 0
-     },
-     "parameters": {},
-     "seed": 0,
-     "seed_locked": true,
-     "ports": [
-      {
-       "name": "PNG bin center",
-       "type": "rgba",
-       "group_size": 0
-      }
-     ]
-    },
-    {
-     "name": "RGBValidRange",
-     "type": "math_v3",
-     "node_position": {
-      "x": 250,
-      "y": 0
-     },
-     "parameters": {
-      "op": 0,
-      "clamp": true,
-      "d_in2_x": 0,
-      "d_in2_y": 0,
-      "d_in2_z": 0
-     },
-     "seed": 0,
-     "seed_locked": true
-    },
-    {
-     "name": "RGBCodes",
-     "type": "math_v3",
-     "node_position": {
-      "x": 500,
-      "y": 0
-     },
-     "parameters": {
-      "op": 2,
-      "clamp": false,
-      "d_in2_x": 255,
-      "d_in2_y": 255,
-      "d_in2_z": 255
-     },
-     "seed": 0,
-     "seed_locked": true
-    },
-    {
-     "name": "RGBNearestCode",
-     "type": "math_v3",
-     "node_position": {
-      "x": 750,
-      "y": 0
-     },
-     "parameters": {
-      "op": 8,
-      "clamp": false,
-      "d_in2_x": 0,
-      "d_in2_y": 0,
-      "d_in2_z": 0
-     },
-     "seed": 0,
-     "seed_locked": true
-    },
-    {
-     "name": "RGBBinCenter",
-     "type": "math_v3",
-     "node_position": {
-      "x": 1000,
-      "y": 0
-     },
-     "parameters": {
-      "op": 0,
-      "clamp": false,
-      "d_in2_x": 0.5,
-      "d_in2_y": 0.5,
-      "d_in2_z": 0.5
-     },
-     "seed": 0,
-     "seed_locked": true
-    },
-    {
-     "name": "RGBPNGValue",
-     "type": "math_v3",
-     "node_position": {
-      "x": 1250,
-      "y": 0
-     },
-     "parameters": {
-      "op": 3,
-      "clamp": true,
-      "d_in2_x": 255,
-      "d_in2_y": 255,
-      "d_in2_z": 255
-     },
-     "seed": 0,
-     "seed_locked": true
-    },
-    {
-     "name": "InputChannels",
-     "type": "decompose",
-     "node_position": {
-      "x": 250,
-      "y": 400
-     },
-     "parameters": {},
-     "seed": 0,
-     "seed_locked": true
-    },
-    {
-     "name": "AlphaValidRange",
-     "type": "math",
-     "node_position": {
-      "x": 250,
-      "y": 600
-     },
-     "parameters": {
-      "op": 0,
-      "clamp": true,
-      "default_in1": 0,
-      "default_in2": 0
-     },
-     "seed": 0,
-     "seed_locked": true
-    },
-    {
-     "name": "AlphaCodes",
-     "type": "math",
-     "node_position": {
-      "x": 500,
-      "y": 600
-     },
-     "parameters": {
-      "op": 2,
-      "clamp": false,
-      "default_in1": 0,
-      "default_in2": 255
-     },
-     "seed": 0,
-     "seed_locked": true
-    },
-    {
-     "name": "AlphaNearestCode",
-     "type": "math",
-     "node_position": {
-      "x": 750,
-      "y": 600
-     },
-     "parameters": {
-      "op": 8,
-      "clamp": false,
-      "default_in1": 0,
-      "default_in2": 0
-     },
-     "seed": 0,
-     "seed_locked": true
-    },
-    {
-     "name": "AlphaBinCenter",
-     "type": "math",
-     "node_position": {
-      "x": 1000,
-      "y": 600
-     },
-     "parameters": {
-      "op": 0,
-      "clamp": false,
-      "default_in1": 0,
-      "default_in2": 0.5
-     },
-     "seed": 0,
-     "seed_locked": true
-    },
-    {
-     "name": "AlphaPNGValue",
-     "type": "math",
-     "node_position": {
-      "x": 1250,
-      "y": 600
-     },
-     "parameters": {
-      "op": 3,
-      "clamp": true,
-      "default_in1": 0,
-      "default_in2": 255
-     },
-     "seed": 0,
-     "seed_locked": true
-    },
-    {
-     "name": "RGBChannels",
-     "type": "decompose",
-     "node_position": {
-      "x": 1500,
-      "y": 0
-     },
-     "parameters": {},
-     "seed": 0,
-     "seed_locked": true
-    },
-    {
-     "name": "Packed",
-     "type": "combine",
-     "node_position": {
-      "x": 1750,
-      "y": 0
-     },
-     "parameters": {},
-     "seed": 0,
-     "seed_locked": true
-    }
-   ],
-   "connections": [
-    {
-     "from": "gen_inputs",
-     "to": "RGBValidRange",
-     "from_port": 0,
-     "to_port": 0
-    },
-    {
-     "from": "RGBValidRange",
-     "to": "RGBCodes",
-     "from_port": 0,
-     "to_port": 0
-    },
-    {
-     "from": "RGBCodes",
-     "to": "RGBNearestCode",
-     "from_port": 0,
-     "to_port": 0
-    },
-    {
-     "from": "RGBNearestCode",
-     "to": "RGBBinCenter",
-     "from_port": 0,
-     "to_port": 0
-    },
-    {
-     "from": "RGBBinCenter",
-     "to": "RGBPNGValue",
-     "from_port": 0,
-     "to_port": 0
-    },
-    {
-     "from": "gen_inputs",
-     "to": "InputChannels",
-     "from_port": 0,
-     "to_port": 0
-    },
-    {
-     "from": "InputChannels",
-     "to": "AlphaValidRange",
-     "from_port": 3,
-     "to_port": 0
-    },
-    {
-     "from": "AlphaValidRange",
-     "to": "AlphaCodes",
-     "from_port": 0,
-     "to_port": 0
-    },
-    {
-     "from": "AlphaCodes",
-     "to": "AlphaNearestCode",
-     "from_port": 0,
-     "to_port": 0
-    },
-    {
-     "from": "AlphaNearestCode",
-     "to": "AlphaBinCenter",
-     "from_port": 0,
-     "to_port": 0
-    },
-    {
-     "from": "AlphaBinCenter",
-     "to": "AlphaPNGValue",
-     "from_port": 0,
-     "to_port": 0
-    },
-    {
-     "from": "RGBPNGValue",
-     "to": "RGBChannels",
-     "from_port": 0,
-     "to_port": 0
-    },
-    {
-     "from": "RGBChannels",
-     "to": "Packed",
-     "from_port": 0,
-     "to_port": 0
-    },
-    {
-     "from": "RGBChannels",
-     "to": "Packed",
-     "from_port": 1,
-     "to_port": 1
-    },
-    {
-     "from": "RGBChannels",
-     "to": "Packed",
-     "from_port": 2,
-     "to_port": 2
-    },
-    {
-     "from": "AlphaPNGValue",
-     "to": "Packed",
-     "from_port": 0,
-     "to_port": 3
-    },
-    {
-     "from": "Packed",
-     "to": "gen_outputs",
-     "from_port": 0,
-     "to_port": 0
-    }
-   ]
-  },
-  {
-   "name": "GodotGreen",
-   "type": "math",
-   "parameters": {
-    "op": 1,
-    "default_in1": 1,
-    "default_in2": 0,
-    "clamp": false
-   },
-   "node_position": {
-    "x": 1950,
-    "y": 600
-   },
-   "seed_int": 0
-  },
-  {
-   "name": "GodotNormal",
-   "type": "combine",
-   "parameters": {},
-   "node_position": {
-    "x": 2150,
-    "y": 600
-   },
-   "seed_int": 0
-  },
-  {
-   "name": "NormalCodes",
-   "type": "decompose",
-   "parameters": {},
-   "node_position": {
-    "x": 2650,
-    "y": 600
-   },
-   "seed_int": 0
-  },
-  {
-   "name": "NormalRGB",
-   "type": "combine",
-   "parameters": {},
-   "node_position": {
-    "x": 2850,
-    "y": 600
-   },
-   "seed_int": 0
-  },
-  {
-   "name": "NormalForMaterial",
-   "type": "normal_map_convert",
-   "parameters": {
-    "op": 0
-   },
-   "node_position": {
-    "x": 3050,
-    "y": 600
-   },
-   "seed_int": 0
-  },
-  {
-   "name": "RoughnessCodes",
-   "type": "decompose",
-   "parameters": {},
-   "node_position": {
-    "x": 2650,
-    "y": 900
-   },
-   "seed_int": 0
-  },
-  {
-   "name": "GodotExport",
-   "type": "comment",
-   "parameters": {},
-   "node_position": {
-    "x": -1900,
-    "y": -1060
-   },
-   "seed_int": 0,
-   "title": "Godot 4 Standard export",
-   "text": "Export with File > Export material > Godot > Godot 4 Standard, or tools/materials/export.py, into data/models/board/textures, then use Reload assets. The PNG8 encoders keep exact byte codes; the nodes after them only undo what the Material node applies on export (normal convention, heightmap = 1 - depth).",
-   "size": {
-    "x": 760,
-    "y": 150
-   },
-   "color": {
-    "type": "Color",
-    "r": 0.18,
-    "g": 0.23,
-    "b": 0.28,
-    "a": 1
-   }
-  }
- ],
- "connections": [
-  {
-   "from": "Normals",
-   "to": "NormalChannels",
-   "from_port": 0,
-   "to_port": 0
-  },
-  {
-   "from": "PigmentChannels",
-   "to": "ColorHeight",
-   "from_port": 0,
-   "to_port": 0
-  },
-  {
-   "from": "NormalChannels",
-   "to": "NormalAO",
-   "from_port": 0,
-   "to_port": 0
-  },
-  {
-   "from": "PigmentChannels",
-   "to": "ColorHeight",
-   "from_port": 1,
-   "to_port": 1
-  },
-  {
-   "from": "NormalChannels",
-   "to": "NormalAO",
-   "from_port": 1,
-   "to_port": 1
-  },
-  {
-   "from": "PigmentChannels",
-   "to": "ColorHeight",
-   "from_port": 2,
-   "to_port": 2
-  },
-  {
-   "from": "ColorHeight",
-   "to": "ColorPNG8",
-   "from_port": 0,
-   "to_port": 0
-  },
-  {
-   "from": "NormalAO",
-   "to": "NormalPNG8",
-   "from_port": 0,
-   "to_port": 0
-  },
-  {
-   "from": "Grain",
-   "from_port": 0,
-   "to": "GrainColor",
-   "to_port": 0
-  },
-  {
-   "from": "GrainColor",
-   "from_port": 0,
-   "to": "ReferenceColor",
-   "to_port": 0
-  },
-  {
-   "from": "Pigment",
-   "from_port": 0,
-   "to": "ReferenceColor",
-   "to_port": 1
-  },
-  {
-   "from": "GlassDistribution",
-   "from_port": 0,
-   "to": "GlassSites",
-   "to_port": 0
-  },
-  {
-   "from": "GlassSites",
-   "from_port": 0,
-   "to": "Roughness",
-   "to_port": 0
-  },
-  {
-   "from": "Fragments",
-   "from_port": 1,
-   "to": "Fissures",
-   "to_port": 0
-  },
-  {
-   "from": "Deposits",
-   "from_port": 0,
-   "to": "Fissures",
-   "to_port": 1
-  },
-  {
-   "from": "Fissures",
-   "from_port": 0,
-   "to": "CrackMask",
-   "to_port": 0
-  },
-  {
-   "from": "CrackMask",
-   "from_port": 0,
-   "to": "HotCracks",
-   "to_port": 0
-  },
-  {
-   "from": "GlassSites",
-   "from_port": 0,
-   "to": "HotCracks",
-   "to_port": 1
-  },
-  {
-   "from": "Grain",
-   "from_port": 0,
-   "to": "ReliefGrain",
-   "to_port": 0
-  },
-  {
-   "from": "Fragments",
-   "from_port": 0,
-   "to": "ReliefGrain",
-   "to_port": 1
-  },
-  {
-   "from": "ReliefGrain",
-   "from_port": 0,
-   "to": "ReliefRange",
-   "to_port": 0
-  },
-  {
-   "from": "CrackFloor",
-   "from_port": 0,
-   "to": "Height",
-   "to_port": 0
-  },
-  {
-   "from": "ReliefRange",
-   "from_port": 0,
-   "to": "Height",
-   "to_port": 1
-  },
-  {
-   "from": "HotCracks",
-   "from_port": 0,
-   "to": "Height",
-   "to_port": 2
-  },
-  {
-   "from": "Height",
-   "from_port": 0,
-   "to": "Occlusion",
-   "to_port": 0
-  },
-  {
-   "from": "ReferenceColor",
-   "from_port": 0,
-   "to": "PigmentChannels",
-   "to_port": 0
-  },
-  {
-   "from": "Height",
-   "from_port": 0,
-   "to": "ColorHeight",
-   "to_port": 3
-  },
-  {
-   "from": "Height",
-   "from_port": 0,
-   "to": "Normals",
-   "to_port": 0
-  },
-  {
-   "from": "Roughness",
-   "from_port": 0,
-   "to": "NormalAO",
-   "to_port": 2
-  },
-  {
-   "from": "Occlusion",
-   "from_port": 0,
-   "to": "NormalAO",
-   "to_port": 3
-  },
-  {
-   "from": "ReferenceColor",
-   "from_port": 0,
-   "to": "preview_s",
-   "to_port": 0
-  },
-  {
-   "from": "Roughness",
-   "from_port": 0,
-   "to": "preview_s",
-   "to_port": 1
-  },
-  {
-   "from": "Height",
-   "from_port": 0,
-   "to": "preview_s",
-   "to_port": 2
-  },
-  {
-   "from": "Grain",
-   "from_port": 0,
-   "to": "GranularDeposits",
-   "to_port": 0
-  },
-  {
-   "from": "Deposits",
-   "from_port": 0,
-   "to": "GranularDeposits",
-   "to_port": 1
-  },
-  {
-   "from": "GranularDeposits",
-   "from_port": 0,
-   "to": "Pigment",
-   "to_port": 0
-  },
-  {
-   "from": "ColorPNG8",
-   "from_port": 0,
-   "to": "Material",
-   "to_port": 0
-  },
-  {
-   "from": "ColorPNG8",
-   "from_port": 0,
-   "to": "ColorCodes",
-   "to_port": 0
-  },
-  {
-   "from": "ColorCodes",
-   "from_port": 3,
-   "to": "DepthForMaterial",
-   "to_port": 1
-  },
-  {
-   "from": "DepthForMaterial",
-   "from_port": 0,
-   "to": "Material",
-   "to_port": 6
-  },
-  {
-   "from": "NormalChannels",
-   "from_port": 1,
-   "to": "GodotGreen",
-   "to_port": 1
-  },
-  {
-   "from": "NormalChannels",
-   "from_port": 0,
-   "to": "GodotNormal",
-   "to_port": 0
-  },
-  {
-   "from": "GodotGreen",
-   "from_port": 0,
-   "to": "GodotNormal",
-   "to_port": 1
-  },
-  {
-   "from": "NormalChannels",
-   "from_port": 2,
-   "to": "GodotNormal",
-   "to_port": 2
-  },
-  {
-   "from": "Occlusion",
-   "from_port": 0,
-   "to": "GodotNormal",
-   "to_port": 3
-  },
-  {
-   "from": "GodotNormal",
-   "from_port": 0,
-   "to": "GodotNormalPNG8",
-   "to_port": 0
-  },
-  {
-   "from": "GodotNormalPNG8",
-   "from_port": 0,
-   "to": "NormalCodes",
-   "to_port": 0
-  },
-  {
-   "from": "NormalCodes",
-   "from_port": 0,
-   "to": "NormalRGB",
-   "to_port": 0
-  },
-  {
-   "from": "NormalCodes",
-   "from_port": 1,
-   "to": "NormalRGB",
-   "to_port": 1
-  },
-  {
-   "from": "NormalCodes",
-   "from_port": 2,
-   "to": "NormalRGB",
-   "to_port": 2
-  },
-  {
-   "from": "NormalRGB",
-   "from_port": 0,
-   "to": "NormalForMaterial",
-   "to_port": 0
-  },
-  {
-   "from": "NormalForMaterial",
-   "from_port": 0,
-   "to": "Material",
-   "to_port": 4
-  },
-  {
-   "from": "NormalCodes",
-   "from_port": 3,
-   "to": "Material",
-   "to_port": 5
-  },
-  {
-   "from": "NormalPNG8",
-   "from_port": 0,
-   "to": "RoughnessCodes",
-   "to_port": 0
-  },
-  {
-   "from": "RoughnessCodes",
-   "from_port": 2,
-   "to": "Material",
-   "to_port": 2
-  }
- ]
+  ]
 }

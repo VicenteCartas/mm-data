@@ -5,6 +5,28 @@
   "parameters": {},
   "nodes": [
     {
+      "name": "About",
+      "type": "comment",
+      "parameters": {},
+      "node_position": {
+        "x": 0,
+        "y": -250
+      },
+      "size": {
+        "x": 900,
+        "y": 190
+      },
+      "title": "About this material",
+      "text": "Classic mode texture from sources/pigment.png, 128 px. Pigment adjusts hue, saturation and value; the defaults keep the artwork as it is. Classic and Enhanced textures stay separate. The ...PNG8 groups and the nodes after them only store exact file values; leave them. Export: File > Export material > Godot > Godot 4 Standard into data/models/board/textures/terrain/classic, then Reload assets in the game's Tuning panel.",
+      "color": {
+        "type": "Color",
+        "r": 0.18,
+        "g": 0.23,
+        "b": 0.28,
+        "a": 1
+      }
+    },
+    {
       "name": "PigmentSource",
       "type": "image",
       "node_position": {
@@ -212,20 +234,6 @@
       ]
     },
     {
-      "name": "AuthorNotes",
-      "type": "comment",
-      "node_position": {
-        "x": 0,
-        "y": -250
-      },
-      "title": "Editable source artwork",
-      "size": {
-        "x": 820,
-        "y": 210
-      },
-      "text": "Retained terrain/dirt pigment preserves the existing registered artwork. Hue, saturation and value are explicit author controls. Linear filtering occurs after one sRGB decode, then one encode for the exported game PNG. This existing consumer uses RGB only; it has no height/normal/AO/roughness image input. The project therefore exports only the channel the game consumes. The original facade/geological artwork is retained rather than replaced by unrelated procedural shapes. Save, batch export with export.py, then use the existing Reload Assets button. Native/game validation pending."
-    },
-    {
       "name": "PigmentPNG8",
       "type": "graph",
       "node_position": {
@@ -425,29 +433,6 @@
       },
       "seed_int": 0,
       "export_paths": {}
-    },
-    {
-      "name": "GodotExport",
-      "type": "comment",
-      "parameters": {},
-      "node_position": {
-        "x": 0,
-        "y": -510
-      },
-      "seed_int": 0,
-      "title": "Godot 4 Standard export",
-      "text": "Export with File > Export material > Godot > Godot 4 Standard, or tools/materials/export.py, into data/models/board/textures, then use Reload assets. The PNG8 encoders keep exact byte codes; the nodes after them only undo what the Material node applies on export (normal convention, heightmap = 1 - depth).",
-      "size": {
-        "x": 760,
-        "y": 150
-      },
-      "color": {
-        "type": "Color",
-        "r": 0.18,
-        "g": 0.23,
-        "b": 0.28,
-        "a": 1
-      }
     }
   ],
   "connections": [

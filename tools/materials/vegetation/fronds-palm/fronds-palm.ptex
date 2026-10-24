@@ -5,6 +5,28 @@
   "parameters": {},
   "nodes": [
     {
+      "name": "About",
+      "type": "comment",
+      "parameters": {},
+      "node_position": {
+        "x": 0,
+        "y": -400
+      },
+      "size": {
+        "x": 900,
+        "y": 166
+      },
+      "title": "About this material",
+      "text": "Colour artwork from sources/fronds-palm.png, 64 px. Pigment adjusts hue, saturation and value; the defaults keep the artwork as it is. Keep the layout: the models point at its parts. The ...PNG8 groups and the nodes after them only store exact file values; leave them. Export: File > Export material > Godot > Godot 4 Standard into data/models/board/textures/vegetation, then Reload assets in the game's Tuning panel.",
+      "color": {
+        "type": "Color",
+        "r": 0.18,
+        "g": 0.26,
+        "b": 0.18,
+        "a": 1
+      }
+    },
+    {
       "name": "Source",
       "type": "image",
       "node_position": {
@@ -719,30 +741,6 @@
       "seed_locked": true
     },
     {
-      "name": "AuthoringNotes",
-      "type": "comment",
-      "node_position": {
-        "x": 0,
-        "y": -400
-      },
-      "parameters": {},
-      "seed": 0,
-      "seed_locked": true,
-      "title": "Edit pigment and tissue response; preserve atlas registration",
-      "size": {
-        "x": 1400,
-        "y": 300
-      },
-      "color": {
-        "type": "Color",
-        "r": 0.18,
-        "g": 0.26,
-        "b": 0.18,
-        "a": 1
-      },
-      "text": "The retained pigment/cutout is the authored image dependency. Pigment tint/value and cutout bias are editable; defaults preserve its appearance/coverage subject to native storage quantization. Do not move atlas parts or resize crop atlases without updating their model/row coordinates. Where the runtime consumes normal/surface maps, SurfaceResponse rebuilds them from editable stock Gaussian, Math and normal primitives. Relief is an artistic estimate from encoded source detail/alpha, not measured shape recovered from color. It intentionally stays independent of pigment tint edits. Native spatial blur/half intermediates differ from the historical FFT recipe; earlier cutout numeric maps also used a legacy color resize, so no byte/appearance parity is claimed before native/game comparison. The output dimensions equal the source; internal Gaussian grids are power-of-two half-float, with radii expressed in source pixels. Final numeric encoding is only a PNG8 storage boundary; RGB pigment is not shifted. MegaMek/Maps exports existing runtime filenames only. Model impostors remain regenerated from actual model/material inputs by the existing tree baker; this graph is not a replacement for those view bakes."
-    },
-    {
       "name": "Material",
       "type": "material",
       "parameters": {
@@ -769,29 +767,6 @@
       },
       "seed_int": 0,
       "export_paths": {}
-    },
-    {
-      "name": "GodotExport",
-      "type": "comment",
-      "parameters": {},
-      "node_position": {
-        "x": 0,
-        "y": -660
-      },
-      "seed_int": 0,
-      "title": "Godot 4 Standard export",
-      "text": "Export with File > Export material > Godot > Godot 4 Standard, or tools/materials/export.py, into data/models/board/textures, then use Reload assets. The PNG8 encoders keep exact byte codes; the nodes after them only undo what the Material node applies on export (normal convention, heightmap = 1 - depth).",
-      "size": {
-        "x": 760,
-        "y": 150
-      },
-      "color": {
-        "type": "Color",
-        "r": 0.18,
-        "g": 0.23,
-        "b": 0.28,
-        "a": 1
-      }
     }
   ],
   "connections": [

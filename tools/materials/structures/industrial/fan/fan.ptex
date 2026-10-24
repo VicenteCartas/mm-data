@@ -5,6 +5,28 @@
   "parameters": {},
   "nodes": [
     {
+      "name": "About",
+      "type": "comment",
+      "parameters": {},
+      "node_position": {
+        "x": 0,
+        "y": -300
+      },
+      "size": {
+        "x": 900,
+        "y": 166
+      },
+      "title": "About this material",
+      "text": "Colour artwork from sources/artwork.png, 128 px. Pigment adjusts hue, saturation and value; the defaults keep the artwork as it is. The ...PNG8 groups and the nodes after them only store exact file values; leave them. Export: File > Export material > Godot > Godot 4 Standard into data/models/board/textures/structures/industrial, then Reload assets in the game's Tuning panel.",
+      "color": {
+        "type": "Color",
+        "r": 0.2,
+        "g": 0.25,
+        "b": 0.3,
+        "a": 1
+      }
+    },
+    {
       "name": "PigmentSource",
       "type": "image",
       "node_position": {
@@ -189,28 +211,6 @@
           "to_port": 0
         }
       ]
-    },
-    {
-      "name": "ArtworkNotes",
-      "type": "comment",
-      "parameters": {},
-      "node_position": {
-        "x": 0,
-        "y": -300
-      },
-      "size": {
-        "x": 1100,
-        "y": 240
-      },
-      "color": {
-        "type": "Color",
-        "r": 0.2,
-        "g": 0.25,
-        "b": 0.3,
-        "a": 1
-      },
-      "title": "Existing artwork \u2014 RGB only",
-      "text": "The original 128 \u00d7 128 image remains the source of the authored layout and colors. This graph exports 128 \u00d7 128 RGB artwork through native Material Maker. The visible color controls default to identity; no new height, normal, roughness, AO or emission maps are invented. Material preview lighting is not baked into the output. Native image sampling interpolates the encoded source before downstream color controls; the source and PNG half/byte boundary can also cause small differences. This is not a byte-identical copy claim. Inspect the exported material in game before accepting any lost detail or appearance change."
     },
     {
       "name": "PigmentPNG8",
@@ -412,29 +412,6 @@
       },
       "seed_int": 0,
       "export_paths": {}
-    },
-    {
-      "name": "GodotExport",
-      "type": "comment",
-      "parameters": {},
-      "node_position": {
-        "x": 0,
-        "y": -560
-      },
-      "seed_int": 0,
-      "title": "Godot 4 Standard export",
-      "text": "Export with File > Export material > Godot > Godot 4 Standard, or tools/materials/export.py, into data/models/board/textures, then use Reload assets. The PNG8 encoders keep exact byte codes; the nodes after them only undo what the Material node applies on export (normal convention, heightmap = 1 - depth).",
-      "size": {
-        "x": 760,
-        "y": 150
-      },
-      "color": {
-        "type": "Color",
-        "r": 0.18,
-        "g": 0.23,
-        "b": 0.28,
-        "a": 1
-      }
     }
   ],
   "connections": [

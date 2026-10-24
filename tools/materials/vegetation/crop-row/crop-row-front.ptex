@@ -1,9 +1,31 @@
 {
   "name": "crop-row",
-  "label": "crop-row — editable vegetation material",
+  "label": "crop-row \u2014 editable vegetation material",
   "type": "graph",
   "parameters": {},
   "nodes": [
+    {
+      "name": "About",
+      "type": "comment",
+      "parameters": {},
+      "node_position": {
+        "x": 0,
+        "y": -400
+      },
+      "size": {
+        "x": 900,
+        "y": 190
+      },
+      "title": "About this material",
+      "text": "The crop row's front view: seven plants on a 1024 px canvas. Their stem and crown anchors are in data/models/board/textures/vegetation/crop-row.json; keep the plants where those expect them. The ...PNG8 groups and the nodes after them only store exact file values; leave them. Export: File > Export material > Godot > Godot 4 Standard into data/models/board/textures/vegetation, then Reload assets in the game's Tuning panel.",
+      "color": {
+        "type": "Color",
+        "r": 0.18,
+        "g": 0.26,
+        "b": 0.18,
+        "a": 1
+      }
+    },
     {
       "name": "SourceFront",
       "type": "image",
@@ -706,30 +728,6 @@
           "to_port": 0
         }
       ]
-    },
-    {
-      "name": "AuthoringNotes",
-      "type": "comment",
-      "node_position": {
-        "x": 0,
-        "y": -400
-      },
-      "parameters": {},
-      "seed": 0,
-      "seed_locked": true,
-      "title": "Edit pigment and tissue response; preserve atlas registration",
-      "size": {
-        "x": 1400,
-        "y": 300
-      },
-      "color": {
-        "type": "Color",
-        "r": 0.18,
-        "g": 0.26,
-        "b": 0.18,
-        "a": 1
-      },
-      "text": "The crop row's front view on a 1024-square canvas with seven plants. Their stem and crown anchors are layout data in data/models/board/textures/vegetation/crop-row.json, which the game reads with the three views; keep the plants where those anchors expect them. Export with File > Export material > Godot > Godot 4 Standard, or tools/materials/export.py, into data/models/board/textures, then use Reload assets. The PNG8 encoders keep exact byte codes; the nodes after them only undo what the Material node applies on export (normal convention, heightmap = 1 - depth)."
     },
     {
       "name": "Material",

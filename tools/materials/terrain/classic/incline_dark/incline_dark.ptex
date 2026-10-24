@@ -5,6 +5,28 @@
   "parameters": {},
   "nodes": [
     {
+      "name": "About",
+      "type": "comment",
+      "parameters": {},
+      "node_position": {
+        "x": 0,
+        "y": -450
+      },
+      "size": {
+        "x": 900,
+        "y": 190
+      },
+      "title": "About this material",
+      "text": "Numeric artwork, not colour (128 px): the game reads the RGB as detail values and the alpha as coverage, so they are exported without colour conversion. ArtworkControls: the detail contrast and bias edit the detail, Coverage opacity the alpha. The ...PNG8 groups and the nodes after them only store exact file values; leave them. Export: File > Export material > Godot > Godot 4 Standard into data/models/board/textures/terrain/classic, then Reload assets in the game's Tuning panel.",
+      "color": {
+        "type": "Color",
+        "r": 0.22,
+        "g": 0.25,
+        "b": 0.3,
+        "a": 1
+      }
+    },
+    {
       "name": "Source",
       "type": "image",
       "node_position": {
@@ -649,30 +671,6 @@
       "seed_locked": true
     },
     {
-      "name": "Contract",
-      "type": "comment",
-      "node_position": {
-        "x": 0,
-        "y": -450
-      },
-      "parameters": {},
-      "seed": 0,
-      "seed_locked": true,
-      "title": "Numeric artwork, not albedo",
-      "size": {
-        "x": 1550,
-        "y": 320
-      },
-      "color": {
-        "type": "Color",
-        "r": 0.22,
-        "g": 0.25,
-        "b": 0.3,
-        "a": 1
-      },
-      "text": "Numeric rim detail and coverage on a 128-square canvas. The game maps the full image through normalized hex coordinates. Contrast/bias edit raw detail and Coverage edits alpha. Export uses the saved native Buffer without sRGB conversion."
-    },
-    {
       "name": "Material",
       "type": "material",
       "parameters": {
@@ -709,29 +707,6 @@
         "y": 250
       },
       "seed_int": 0
-    },
-    {
-      "name": "GodotExport",
-      "type": "comment",
-      "parameters": {},
-      "node_position": {
-        "x": 0,
-        "y": -710
-      },
-      "seed_int": 0,
-      "title": "Godot 4 Standard export",
-      "text": "Export with File > Export material > Godot > Godot 4 Standard, or tools/materials/export.py, into data/models/board/textures, then use Reload assets. The PNG8 encoders keep exact byte codes; the nodes after them only undo what the Material node applies on export (normal convention, heightmap = 1 - depth).",
-      "size": {
-        "x": 760,
-        "y": 150
-      },
-      "color": {
-        "type": "Color",
-        "r": 0.18,
-        "g": 0.23,
-        "b": 0.28,
-        "a": 1
-      }
     }
   ],
   "connections": [

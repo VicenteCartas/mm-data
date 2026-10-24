@@ -5,6 +5,28 @@
   "parameters": {},
   "nodes": [
     {
+      "name": "About",
+      "type": "comment",
+      "parameters": {},
+      "node_position": {
+        "x": 0,
+        "y": -350
+      },
+      "size": {
+        "x": 900,
+        "y": 214
+      },
+      "title": "About this material",
+      "text": "Road material, built from sources/ (pigment and the 16-bit height fields). They tile seamlessly: keep them so, or every road shows its tile grid. Repeat (12 m) must equal its metres in materials.json. The Material node's Depth scale is 0.4 x the relief code / 255 (tools/materials/README.md). roads/road_maps.py writes the same maps without Material Maker. The ...PNG8 groups and the nodes after them only store exact file values; leave them. Export: File > Export material > Godot > Godot 4 Standard into data/models/board/textures/roads, then Reload assets in the game's Tuning panel.",
+      "color": {
+        "type": "Color",
+        "r": 0.14,
+        "g": 0.24,
+        "b": 0.3,
+        "a": 1
+      }
+    },
+    {
       "name": "PigmentSource",
       "type": "image",
       "node_position": {
@@ -200,72 +222,6 @@
           "to_port": 0
         }
       ]
-    },
-    {
-      "name": "SourceNotes",
-      "type": "comment",
-      "parameters": {},
-      "node_position": {
-        "x": 0,
-        "y": -350
-      },
-      "size": {
-        "x": 1100,
-        "y": 200
-      },
-      "title": "Editable source art, no finished data maps",
-      "text": "Exact current pigment and registered pre-response fields preserve original appearance. Two PNG8 byte planes retain16-bit fields through the native half image loader. Native nodes recompute normals and optical/material response; no finished normal/AO/roughness image inputs. Original filtering and source registration are fixed in necessary fields, not approximated by different native filters. Final PNG8 boundary never feeds response calculations.",
-      "color": {
-        "type": "Color",
-        "r": 0.14,
-        "g": 0.24,
-        "b": 0.3,
-        "a": 1
-      }
-    },
-    {
-      "name": "RecipeNotes",
-      "type": "comment",
-      "parameters": {},
-      "node_position": {
-        "x": 0,
-        "y": 1100
-      },
-      "size": {
-        "x": 1100,
-        "y": 200
-      },
-      "title": "Native grain / material response",
-      "text": "Exact current pigment and registered pre-response fields preserve original appearance. Two PNG8 byte planes retain16-bit fields through the native half image loader. Native nodes recompute normals and optical/material response; no finished normal/AO/roughness image inputs. Original filtering and source registration are fixed in necessary fields, not approximated by different native filters. Final PNG8 boundary never feeds response calculations.",
-      "color": {
-        "type": "Color",
-        "r": 0.14,
-        "g": 0.24,
-        "b": 0.3,
-        "a": 1
-      }
-    },
-    {
-      "name": "OutputNotes",
-      "type": "comment",
-      "parameters": {},
-      "node_position": {
-        "x": 1250,
-        "y": 1100
-      },
-      "size": {
-        "x": 1100,
-        "y": 200
-      },
-      "title": "Existing game channels and units",
-      "text": "Exports: RGB color; RGB normal (127*n+128)/255; surface RGBA = height, roughness, cavity AO, relief UV / .1. Relief is quantized once and the identical value drives central-difference normals. Repeat stays at the current runtime 1m; relief is editable. Native preview uses Material Maker normal convention. No shader or road/rail/bridge shape changes.",
-      "color": {
-        "type": "Color",
-        "r": 0.14,
-        "g": 0.24,
-        "b": 0.3,
-        "a": 1
-      }
     },
     {
       "name": "NormalPNG8",
@@ -791,28 +747,6 @@
           "to_port": 0
         }
       ]
-    },
-    {
-      "name": "PNGEncodingNotes",
-      "type": "comment",
-      "parameters": {},
-      "node_position": {
-        "x": 1250,
-        "y": 1450
-      },
-      "size": {
-        "x": 1100,
-        "y": 200
-      },
-      "title": "Numeric storage boundary, not a material gain",
-      "text": "Only finished normal RGB and surface RGBA use clamp((round(clamp(v,0,1)*255)+.5)/255,0,1). This puts each nearest PNG8 code inside its native conversion bin. The physical relief, height, normal calculation and pigment branch are unchanged. In particular surface A stores the same relief code used by the normal calculation; the half-code offset never feeds the material.",
-      "color": {
-        "type": "Color",
-        "r": 0.14,
-        "g": 0.24,
-        "b": 0.3,
-        "a": 1
-      }
     },
     {
       "name": "PigmentPNG8",
@@ -1612,29 +1546,6 @@
           "node_position": {
             "x": 0,
             "y": 900
-          }
-        },
-        {
-          "name": "RegisteredNotes",
-          "type": "comment",
-          "parameters": {},
-          "seed_int": 0,
-          "node_position": {
-            "x": 0,
-            "y": -300
-          },
-          "title": "Original grain; editable native response",
-          "text": "R is the original quantized grain height BEFORE normals, AO and roughness. G is its original 4px FFT neighbourhood. Native nodes differentiate height and recompute cavity/roughness. Registered source fields preserve Poisson seams, percentile range and original FFT scales. No finished normal/AO/roughness is imported. No half buffer after field decoding.",
-          "size": {
-            "x": 950,
-            "y": 160
-          },
-          "color": {
-            "type": "Color",
-            "r": 0.18,
-            "g": 0.23,
-            "b": 0.28,
-            "a": 1
           }
         }
       ],
@@ -2788,29 +2699,6 @@
         "y": 700
       },
       "seed_int": 0
-    },
-    {
-      "name": "GodotExport",
-      "type": "comment",
-      "parameters": {},
-      "node_position": {
-        "x": 0,
-        "y": -610
-      },
-      "seed_int": 0,
-      "title": "Godot 4 Standard export",
-      "text": "Export with File > Export material > Godot > Godot 4 Standard, or tools/materials/export.py, into data/models/board/textures, then use Reload assets. The PNG8 encoders keep exact byte codes; the nodes after them only undo what the Material node applies on export (normal convention, heightmap = 1 - depth).",
-      "size": {
-        "x": 760,
-        "y": 150
-      },
-      "color": {
-        "type": "Color",
-        "r": 0.18,
-        "g": 0.23,
-        "b": 0.28,
-        "a": 1
-      }
     }
   ],
   "connections": [

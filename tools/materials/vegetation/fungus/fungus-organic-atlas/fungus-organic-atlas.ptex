@@ -5,6 +5,28 @@
   "parameters": {},
   "nodes": [
     {
+      "name": "About",
+      "type": "comment",
+      "parameters": {},
+      "node_position": {
+        "x": 0,
+        "y": -400
+      },
+      "size": {
+        "x": 900,
+        "y": 190
+      },
+      "title": "About this material",
+      "text": "Fungus atlas: sources/fungus-organic-atlas.png is the colour, GlowSource (fungus-organic-atlas_emission.png) the glow, in linear light, added at energy 1; the game makes it pulse slowly across a colony. Keep the atlas layout: the models point at its parts. The ...PNG8 groups and the nodes after them only store exact file values; leave them. Export: File > Export material > Godot > Godot 4 Standard into data/models/board/textures/vegetation/fungus, then Reload assets in the game's Tuning panel.",
+      "color": {
+        "type": "Color",
+        "r": 0.18,
+        "g": 0.26,
+        "b": 0.18,
+        "a": 1
+      }
+    },
+    {
       "name": "Source",
       "type": "image",
       "node_position": {
@@ -1086,30 +1108,6 @@
       "seed_locked": true
     },
     {
-      "name": "AuthoringNotes",
-      "type": "comment",
-      "node_position": {
-        "x": 0,
-        "y": -400
-      },
-      "parameters": {},
-      "seed": 0,
-      "seed_locked": true,
-      "title": "Edit pigment and tissue response; preserve atlas registration",
-      "size": {
-        "x": 1400,
-        "y": 300
-      },
-      "color": {
-        "type": "Color",
-        "r": 0.18,
-        "g": 0.26,
-        "b": 0.18,
-        "a": 1
-      },
-      "text": "Source artwork and native exports use a 1024-square canvas. Edit the Pigment or Artwork controls, export, and use Reload Assets to preview. Normalized atlas coordinates and physical mesh dimensions remain independent of raster resolution. GlowSource is the tissue's emission (lips, gills and spores, in linear light under Godot's add operator at energy 1); the game lets it breathe slowly across a colony."
-    },
-    {
       "name": "Material",
       "type": "material",
       "parameters": {
@@ -1136,29 +1134,6 @@
       },
       "seed_int": 0,
       "export_paths": {}
-    },
-    {
-      "name": "GodotExport",
-      "type": "comment",
-      "parameters": {},
-      "node_position": {
-        "x": 0,
-        "y": -660
-      },
-      "seed_int": 0,
-      "title": "Godot 4 Standard export",
-      "text": "Export with File > Export material > Godot > Godot 4 Standard, or tools/materials/export.py, into data/models/board/textures, then use Reload assets. The PNG8 encoders keep exact byte codes; the nodes after them only undo what the Material node applies on export (normal convention, heightmap = 1 - depth).",
-      "size": {
-        "x": 760,
-        "y": 150
-      },
-      "color": {
-        "type": "Color",
-        "r": 0.18,
-        "g": 0.23,
-        "b": 0.28,
-        "a": 1
-      }
     }
   ],
   "connections": [
