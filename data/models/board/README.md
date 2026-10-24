@@ -538,13 +538,13 @@ no rock or scatter geometry is generated in-game.
   clears roads for it; a leaning crown (bent palm, willow) overhangs to one side.
   The maintained GLBs keep that origin and their bark projection. Cactus skin
   wraps around each stem, following bent arms.
-- `textures/vegetation/*-cutout.png`: eight shared 512 by 512 RGBA textures
+- `textures/vegetation/*-cutout`: eight shared 512 by 512 cutout materials
   for broadleaf/conifer and their snow variants, palm fronds, cactus flowers, ferns and shrubs. Near, medium and far crowns
   share these clamped images; impostors are baked from the same alpha-tested
   geometry. The Material Maker projects under `tools/materials/vegetation/` generate them.
   Bark textures are shared.
-- `textures/vegetation/cactus-skin.png` and `cactus-skin-normal.png`: 512-square
-  albedo and estimated shallow normal relief, shared by both cactus variants
+- `textures/vegetation/cactus-skin`: 512-square albedo and estimated shallow normal
+  relief, shared by both cactus variants
   at all three mesh levels. Standard glTF `normalTexture` supplies the normal
   detail; the instanced foliage shader uses the existing dielectric light model
   for waxy skin. The normal-map tuning switch applies to these maps too.
@@ -557,7 +557,7 @@ no rock or scatter geometry is generated in-game.
   cards. Their authored branch and apple counts stay intact at
   each level; leaf cards use the remaining budget (480/240/84/12 triangles per
   tree). Bark and fruit retain their orchard atlases.
-- `textures/vegetation/marsh-sedge.png`: the editable 1254 by 1254 RGBA sedge/cattail
+- `textures/vegetation/marsh-sedge_albedo.png`: the editable 1254 by 1254 RGBA sedge/cattail
   cutout for marsh vegetation. The renderer filters it to one shared 512 by 512
   texture with mipmaps; all three plant LODs use this same image. Ground peat,
   moss and pools are shaded separately using the existing sculpt earth maps.
@@ -578,10 +578,11 @@ no rock or scatter geometry is generated in-game.
   `tools/materials/structures/facades/` and `tools/materials/terrain/classic/`
   generate both folders.
 - `textures/terrain/surfaces/`: the sculpted terrain's 512 by 512 materials (ground,
-  debris, wall and mantle maps for every surface family): `NAME.png` is sRGB albedo
-  with normalized height in alpha, `NAME-normal.png` a tangent normal (U right, V
-  down) with ambient occlusion in alpha, and `NAME.json` the metres each repeat
-  spans (`tile`) and the family role. The Material Maker projects under
+  debris, wall and mantle maps for every surface family): `NAME_albedo.png` is sRGB
+  albedo, `NAME_heightmap.png` normalized height, `NAME_normal.png` a tangent normal
+  (OpenGL convention) and `NAME_orm.png` ambient occlusion and optional authored
+  roughness. `textures/materials.json` gives the metres each repeat spans at the
+  catalogued width. The Material Maker projects under
   `tools/materials/terrain/surfaces/` generate them; their relief is an artistic
   estimate, not a measured scan. See `tools/terrain-realism/README.md` for the
   stone sources and visual references.
@@ -684,6 +685,16 @@ It starts enabled, and Defaults re-enables it; switching needs no atlas,
 geometry or shadow rebuild.
 Animated water keeps its separate rendering. These maps affect ground lighting
 and bank slopes, not silhouettes, picking, movement or cast-shadow geometry.
+
+## Materials
+
+Every material under `textures/` is a Godot 4 `StandardMaterial3D`, as Material Maker's Godot 4 Standard export
+writes it: `NAME.tres` with its `NAME_albedo.png` and, as it needs them, `NAME_orm.png` (occlusion, roughness,
+metallic), `NAME_normal.png` (OpenGL convention), `NAME_heightmap.png`, `NAME_emission.png` and `NAME_sss.png`.
+Models name these maps directly. `textures/materials.json` sorts the materials: loose ones repeat across the board
+at a fixed texel density, so a wider export covers more ground before repeating; constrained ones fit their
+footprint. `tools/materials/README.md` describes the export, and megamek's `docs/gpu-board-materials.md` how the
+game reads the files.
 
 ## Editing and checks
 

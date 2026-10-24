@@ -1,0 +1,24 @@
+[gd_resource type="ShaderMaterial" load_steps=8 format=3]
+[ext_resource type="Shader" path="sheet.gdshader" id="1_shader"]
+[ext_resource type="Texture2D" path="sheet_albedo.png" id="2_albedo"]
+[ext_resource type="Texture2D" path="sheet_orm.png" id="3_orm"]
+[ext_resource type="Texture2D" path="sheet_normal.png" id="4_normal"]
+[ext_resource type="Texture2D" path="sheet_heightmap.png" id="5_heightmap"]
+[ext_resource type="Texture2D" path="sheet_sss.png" id="6_subsurface_scattering"]
+[ext_resource type="Texture2D" path="sheet_cracks.png" id="7_cracks"]
+[resource]
+render_priority = 0
+shader = ExtResource("1_shader")
+shader_parameter/albedo = Color(1.0, 1.0, 1.0, 1.0)
+shader_parameter/texture_albedo = ExtResource("2_albedo")
+shader_parameter/texture_orm = ExtResource("3_orm")
+shader_parameter/roughness = 1.0
+shader_parameter/metallic = 0.0
+shader_parameter/texture_normal = ExtResource("4_normal")
+shader_parameter/normal_scale = 1.0
+shader_parameter/texture_heightmap = ExtResource("5_heightmap")
+shader_parameter/heightmap_scale = 12.5
+shader_parameter/texture_subsurface_scattering = ExtResource("6_subsurface_scattering")
+shader_parameter/subsurface_scattering_strength = 1.0
+shader_parameter/texture_cracks = ExtResource("7_cracks")
+

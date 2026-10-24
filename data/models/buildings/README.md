@@ -25,6 +25,7 @@ different equipment families with independently chosen heights, distinct domed/c
 connected to actual neighboring industrial hexes. Industrial height is cover: there are no generated interior
 floors, building cutaways, or elevated pointer selections. Ordinary buildings still use the modular contract above.
 
-The active industrial materials live in `models/board/textures/industrial/paint.png` and `steel.png`.
-The shared `fan.png` is an opaque 128x128 texture on a static quad, with mipmaps and no animation.
+The active industrial materials are `models/board/textures/structures/industrial/paint.tres` and `steel.tres`
+(Godot 4 Standard materials; a wider export widens their repeat). The shared `fan` material is an opaque 128x128
+texture on a static quad, with mipmaps and no animation.
 `tools/buildings/heavy-industrial/` preserves the first prototypes but are superseded by the runtime generator.

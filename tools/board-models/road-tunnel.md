@@ -11,9 +11,10 @@ shell and lining are identical.
 The portal, wing walls and lining carry embedded cast-concrete albedo and normal
 maps, with continuous fine aggregate and pores, without panels or tie-hole patterns. The floor's
 asphalt image is embedded too: neither GLB needs external image files.
-The plain albedo is embedded from the existing shared
-`data/models/board/textures/scenery/tunnel-concrete.png`; that loose image also
-serves retaining walls. No duplicate gallery PNGs are kept in the authoring tree.
+The plain albedo is embedded from the shared `scenery/tunnel-concrete` material's
+`data/models/board/textures/scenery/tunnel-concrete_albedo.png` (Material Maker project
+`tools/materials/scenery/tunnel-concrete/`); that material also serves retaining walls.
+No duplicate gallery PNGs are kept in the authoring tree.
 `tools/materials/scenery/gallery-concrete/bake_normal.py` accepts an albedo and a
 scratch output path for the normal bake. `tools/texture_tunnel_portals.py` accepts
 explicit albedo and normal paths and embeds them in both models while preserving

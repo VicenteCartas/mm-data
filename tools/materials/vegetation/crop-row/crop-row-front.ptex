@@ -1,0 +1,803 @@
+{
+  "name": "crop-row",
+  "label": "crop-row \u2014 editable vegetation material",
+  "type": "graph",
+  "parameters": {},
+  "nodes": [
+    {
+      "name": "About",
+      "type": "comment",
+      "parameters": {},
+      "node_position": {
+        "x": 0,
+        "y": -400
+      },
+      "size": {
+        "x": 900,
+        "y": 190
+      },
+      "title": "About this material",
+      "text": "The crop row's front view: seven plants on a 1024 px canvas. Their stem and crown anchors are in data/models/board/textures/vegetation/crop-row.json; keep the plants where those expect them. The ...PNG8 groups and the nodes after them only store exact file values; leave them. Export: File > Export material > Godot > Godot 4 Standard into data/models/board/textures/vegetation, then Reload assets in the game's Tuning panel.",
+      "color": {
+        "type": "Color",
+        "r": 0.18,
+        "g": 0.26,
+        "b": 0.18,
+        "a": 1
+      }
+    },
+    {
+      "name": "SourceFront",
+      "type": "image",
+      "node_position": {
+        "x": 0,
+        "y": 0
+      },
+      "parameters": {
+        "image": "%PROJECT_PATH%/sources/crop-row-front.png",
+        "fix_ar": false,
+        "clamp": false
+      },
+      "seed": 0,
+      "seed_locked": true
+    },
+    {
+      "name": "PigmentFront",
+      "type": "graph",
+      "node_position": {
+        "x": 450,
+        "y": 0
+      },
+      "parameters": {
+        "Tint": {
+          "type": "Color",
+          "r": 1,
+          "g": 1,
+          "b": 1,
+          "a": 1
+        },
+        "Value": 1,
+        "Coverage": 0
+      },
+      "seed": 0,
+      "seed_locked": true,
+      "label": "1. Retained pigment and coverage",
+      "nodes": [
+        {
+          "name": "gen_inputs",
+          "type": "ios",
+          "node_position": {
+            "x": 0,
+            "y": 0
+          },
+          "parameters": {},
+          "seed": 0,
+          "seed_locked": true,
+          "ports": [
+            {
+              "name": "Source RGBA",
+              "type": "rgba",
+              "group_size": 0
+            }
+          ]
+        },
+        {
+          "name": "gen_outputs",
+          "type": "ios",
+          "node_position": {
+            "x": 2000,
+            "y": 0
+          },
+          "parameters": {},
+          "seed": 0,
+          "seed_locked": true,
+          "ports": [
+            {
+              "name": "Pigment and alpha",
+              "type": "rgba",
+              "group_size": 0
+            }
+          ]
+        },
+        {
+          "name": "gen_parameters",
+          "type": "remote",
+          "node_position": {
+            "x": 0,
+            "y": 600
+          },
+          "parameters": {
+            "Tint": {
+              "type": "Color",
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 1
+            },
+            "Value": 1,
+            "Coverage": 0
+          },
+          "seed": 0,
+          "seed_locked": true,
+          "widgets": [
+            {
+              "name": "Tint",
+              "label": "Pigment tint (sRGB)",
+              "type": "linked_control",
+              "linked_widgets": [
+                {
+                  "node": "Tint",
+                  "widget": "color"
+                }
+              ]
+            },
+            {
+              "name": "Value",
+              "label": "Linear pigment value",
+              "type": "named_parameter",
+              "default": 1,
+              "min": 0,
+              "max": 2,
+              "step": 0.01
+            },
+            {
+              "name": "Coverage",
+              "label": "Cutout alpha bias",
+              "type": "named_parameter",
+              "default": 0,
+              "min": -0.5,
+              "max": 0.5,
+              "step": 0.01
+            }
+          ]
+        },
+        {
+          "name": "DecodeSource",
+          "type": "color_conversion",
+          "node_position": {
+            "x": 200,
+            "y": 0
+          },
+          "parameters": {
+            "mode": 1
+          },
+          "seed": 0,
+          "seed_locked": true
+        },
+        {
+          "name": "Tint",
+          "type": "uniform",
+          "node_position": {
+            "x": 200,
+            "y": 300
+          },
+          "parameters": {
+            "color": {
+              "type": "Color",
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 1
+            }
+          },
+          "seed": 0,
+          "seed_locked": true
+        },
+        {
+          "name": "DecodeTint",
+          "type": "color_conversion",
+          "node_position": {
+            "x": 450,
+            "y": 300
+          },
+          "parameters": {
+            "mode": 1
+          },
+          "seed": 0,
+          "seed_locked": true
+        },
+        {
+          "name": "LinearTint",
+          "type": "math_v3",
+          "node_position": {
+            "x": 700,
+            "y": 0
+          },
+          "parameters": {
+            "op": 2,
+            "clamp": false
+          },
+          "seed": 0,
+          "seed_locked": true
+        },
+        {
+          "name": "Value",
+          "type": "math_v3",
+          "node_position": {
+            "x": 950,
+            "y": 0
+          },
+          "parameters": {
+            "op": 2,
+            "clamp": true,
+            "d_in2_x": "$Value",
+            "d_in2_y": "$Value",
+            "d_in2_z": "$Value"
+          },
+          "seed": 0,
+          "seed_locked": true
+        },
+        {
+          "name": "EncodePigment",
+          "type": "color_conversion",
+          "node_position": {
+            "x": 1200,
+            "y": 0
+          },
+          "parameters": {
+            "mode": 0
+          },
+          "seed": 0,
+          "seed_locked": true
+        },
+        {
+          "name": "SourceChannels",
+          "type": "decompose",
+          "node_position": {
+            "x": 200,
+            "y": 700
+          },
+          "parameters": {},
+          "seed": 0,
+          "seed_locked": true
+        },
+        {
+          "name": "PigmentChannels",
+          "type": "decompose",
+          "node_position": {
+            "x": 1450,
+            "y": 0
+          },
+          "parameters": {},
+          "seed": 0,
+          "seed_locked": true
+        },
+        {
+          "name": "Packed",
+          "type": "combine",
+          "node_position": {
+            "x": 1700,
+            "y": 200
+          },
+          "parameters": {},
+          "seed": 0,
+          "seed_locked": true
+        },
+        {
+          "name": "CoverageBias",
+          "type": "math",
+          "node_position": {
+            "x": 700,
+            "y": 700
+          },
+          "parameters": {
+            "op": 0,
+            "default_in1": 0,
+            "default_in2": "$Coverage",
+            "clamp": true
+          },
+          "seed": 0,
+          "seed_locked": true
+        }
+      ],
+      "connections": [
+        {
+          "from": "gen_inputs",
+          "from_port": 0,
+          "to": "DecodeSource",
+          "to_port": 0
+        },
+        {
+          "from": "Tint",
+          "from_port": 0,
+          "to": "DecodeTint",
+          "to_port": 0
+        },
+        {
+          "from": "DecodeSource",
+          "from_port": 0,
+          "to": "LinearTint",
+          "to_port": 0
+        },
+        {
+          "from": "DecodeTint",
+          "from_port": 0,
+          "to": "LinearTint",
+          "to_port": 1
+        },
+        {
+          "from": "LinearTint",
+          "from_port": 0,
+          "to": "Value",
+          "to_port": 0
+        },
+        {
+          "from": "Value",
+          "from_port": 0,
+          "to": "EncodePigment",
+          "to_port": 0
+        },
+        {
+          "from": "EncodePigment",
+          "from_port": 0,
+          "to": "PigmentChannels",
+          "to_port": 0
+        },
+        {
+          "from": "gen_inputs",
+          "from_port": 0,
+          "to": "SourceChannels",
+          "to_port": 0
+        },
+        {
+          "from": "SourceChannels",
+          "from_port": 3,
+          "to": "CoverageBias",
+          "to_port": 0
+        },
+        {
+          "from": "PigmentChannels",
+          "from_port": 0,
+          "to": "Packed",
+          "to_port": 0
+        },
+        {
+          "from": "PigmentChannels",
+          "from_port": 1,
+          "to": "Packed",
+          "to_port": 1
+        },
+        {
+          "from": "PigmentChannels",
+          "from_port": 2,
+          "to": "Packed",
+          "to_port": 2
+        },
+        {
+          "from": "CoverageBias",
+          "from_port": 0,
+          "to": "Packed",
+          "to_port": 3
+        },
+        {
+          "from": "Packed",
+          "from_port": 0,
+          "to": "gen_outputs",
+          "to_port": 0
+        }
+      ]
+    },
+    {
+      "name": "AlphaPNG8Front",
+      "type": "graph",
+      "node_position": {
+        "x": 1000,
+        "y": 0
+      },
+      "parameters": {},
+      "seed": 0,
+      "seed_locked": true,
+      "label": "Final PNG8 storage: nearest RGB and alpha codes",
+      "nodes": [
+        {
+          "name": "gen_inputs",
+          "type": "ios",
+          "node_position": {
+            "x": 0,
+            "y": 0
+          },
+          "parameters": {},
+          "seed": 0,
+          "seed_locked": true,
+          "ports": [
+            {
+              "name": "Unencoded numeric value",
+              "type": "rgba",
+              "group_size": 0
+            }
+          ]
+        },
+        {
+          "name": "gen_outputs",
+          "type": "ios",
+          "node_position": {
+            "x": 1800,
+            "y": 0
+          },
+          "parameters": {},
+          "seed": 0,
+          "seed_locked": true,
+          "ports": [
+            {
+              "name": "PNG bin center",
+              "type": "rgba",
+              "group_size": 0
+            }
+          ]
+        },
+        {
+          "name": "InputChannels",
+          "type": "decompose",
+          "node_position": {
+            "x": 250,
+            "y": 400
+          },
+          "parameters": {},
+          "seed": 0,
+          "seed_locked": true
+        },
+        {
+          "name": "AlphaValidRange",
+          "type": "math",
+          "node_position": {
+            "x": 250,
+            "y": 600
+          },
+          "parameters": {
+            "op": 0,
+            "clamp": true,
+            "default_in1": 0,
+            "default_in2": 0
+          },
+          "seed": 0,
+          "seed_locked": true
+        },
+        {
+          "name": "AlphaCodes",
+          "type": "math",
+          "node_position": {
+            "x": 500,
+            "y": 600
+          },
+          "parameters": {
+            "op": 2,
+            "clamp": false,
+            "default_in1": 0,
+            "default_in2": 255
+          },
+          "seed": 0,
+          "seed_locked": true
+        },
+        {
+          "name": "AlphaNearestCode",
+          "type": "math",
+          "node_position": {
+            "x": 750,
+            "y": 600
+          },
+          "parameters": {
+            "op": 8,
+            "clamp": false,
+            "default_in1": 0,
+            "default_in2": 0
+          },
+          "seed": 0,
+          "seed_locked": true
+        },
+        {
+          "name": "AlphaBinCenter",
+          "type": "math",
+          "node_position": {
+            "x": 1000,
+            "y": 600
+          },
+          "parameters": {
+            "op": 0,
+            "clamp": false,
+            "default_in1": 0,
+            "default_in2": 0.5
+          },
+          "seed": 0,
+          "seed_locked": true
+        },
+        {
+          "name": "AlphaPNGValue",
+          "type": "math",
+          "node_position": {
+            "x": 1250,
+            "y": 600
+          },
+          "parameters": {
+            "op": 3,
+            "clamp": true,
+            "default_in1": 0,
+            "default_in2": 255
+          },
+          "seed": 0,
+          "seed_locked": true
+        },
+        {
+          "name": "RGBChannels",
+          "type": "decompose",
+          "node_position": {
+            "x": 1500,
+            "y": 0
+          },
+          "parameters": {},
+          "seed": 0,
+          "seed_locked": true
+        },
+        {
+          "name": "Packed",
+          "type": "combine",
+          "node_position": {
+            "x": 1750,
+            "y": 0
+          },
+          "parameters": {},
+          "seed": 0,
+          "seed_locked": true
+        },
+        {
+          "name": "RGBValidRange",
+          "type": "math_v3",
+          "node_position": {
+            "x": 250,
+            "y": 0
+          },
+          "parameters": {
+            "op": 0,
+            "clamp": true,
+            "d_in2_x": 0,
+            "d_in2_y": 0,
+            "d_in2_z": 0
+          },
+          "seed": 0,
+          "seed_locked": true
+        },
+        {
+          "name": "RGBCodes",
+          "type": "math_v3",
+          "node_position": {
+            "x": 500,
+            "y": 0
+          },
+          "parameters": {
+            "op": 2,
+            "clamp": false,
+            "d_in2_x": 255,
+            "d_in2_y": 255,
+            "d_in2_z": 255
+          },
+          "seed": 0,
+          "seed_locked": true
+        },
+        {
+          "name": "RGBNearestCode",
+          "type": "math_v3",
+          "node_position": {
+            "x": 750,
+            "y": 0
+          },
+          "parameters": {
+            "op": 8,
+            "clamp": false,
+            "d_in2_x": 0,
+            "d_in2_y": 0,
+            "d_in2_z": 0
+          },
+          "seed": 0,
+          "seed_locked": true
+        },
+        {
+          "name": "RGBBinCenter",
+          "type": "math_v3",
+          "node_position": {
+            "x": 1000,
+            "y": 0
+          },
+          "parameters": {
+            "op": 0,
+            "clamp": false,
+            "d_in2_x": 0.5,
+            "d_in2_y": 0.5,
+            "d_in2_z": 0.5
+          },
+          "seed": 0,
+          "seed_locked": true
+        },
+        {
+          "name": "RGBPNGValue",
+          "type": "math_v3",
+          "node_position": {
+            "x": 1250,
+            "y": 0
+          },
+          "parameters": {
+            "op": 3,
+            "clamp": true,
+            "d_in2_x": 255,
+            "d_in2_y": 255,
+            "d_in2_z": 255
+          },
+          "seed": 0,
+          "seed_locked": true
+        }
+      ],
+      "connections": [
+        {
+          "from": "gen_inputs",
+          "to": "InputChannels",
+          "from_port": 0,
+          "to_port": 0
+        },
+        {
+          "from": "InputChannels",
+          "to": "AlphaValidRange",
+          "from_port": 3,
+          "to_port": 0
+        },
+        {
+          "from": "AlphaValidRange",
+          "to": "AlphaCodes",
+          "from_port": 0,
+          "to_port": 0
+        },
+        {
+          "from": "AlphaCodes",
+          "to": "AlphaNearestCode",
+          "from_port": 0,
+          "to_port": 0
+        },
+        {
+          "from": "AlphaNearestCode",
+          "to": "AlphaBinCenter",
+          "from_port": 0,
+          "to_port": 0
+        },
+        {
+          "from": "AlphaBinCenter",
+          "to": "AlphaPNGValue",
+          "from_port": 0,
+          "to_port": 0
+        },
+        {
+          "from": "AlphaPNGValue",
+          "to": "Packed",
+          "from_port": 0,
+          "to_port": 3
+        },
+        {
+          "from": "Packed",
+          "to": "gen_outputs",
+          "from_port": 0,
+          "to_port": 0
+        },
+        {
+          "from": "RGBPNGValue",
+          "from_port": 0,
+          "to": "RGBChannels",
+          "to_port": 0
+        },
+        {
+          "from": "RGBChannels",
+          "from_port": 0,
+          "to": "Packed",
+          "to_port": 0
+        },
+        {
+          "from": "RGBChannels",
+          "from_port": 1,
+          "to": "Packed",
+          "to_port": 1
+        },
+        {
+          "from": "RGBChannels",
+          "from_port": 2,
+          "to": "Packed",
+          "to_port": 2
+        },
+        {
+          "from": "gen_inputs",
+          "to": "RGBValidRange",
+          "from_port": 0,
+          "to_port": 0
+        },
+        {
+          "from": "RGBValidRange",
+          "to": "RGBCodes",
+          "from_port": 0,
+          "to_port": 0
+        },
+        {
+          "from": "RGBCodes",
+          "to": "RGBNearestCode",
+          "from_port": 0,
+          "to_port": 0
+        },
+        {
+          "from": "RGBNearestCode",
+          "to": "RGBBinCenter",
+          "from_port": 0,
+          "to_port": 0
+        },
+        {
+          "from": "RGBBinCenter",
+          "to": "RGBPNGValue",
+          "from_port": 0,
+          "to_port": 0
+        }
+      ]
+    },
+    {
+      "name": "Material",
+      "type": "material",
+      "parameters": {
+        "albedo_color": {
+          "type": "Color",
+          "r": 1,
+          "g": 1,
+          "b": 1,
+          "a": 1
+        },
+        "ao": 1,
+        "depth_scale": 0.5,
+        "emission_energy": 1.0,
+        "flags_transparent": true,
+        "metallic": 0,
+        "normal": 1,
+        "roughness": 0.86,
+        "size": 10,
+        "sss": 0.0
+      },
+      "node_position": {
+        "x": 2950,
+        "y": 0
+      },
+      "seed_int": 0,
+      "export_paths": {}
+    },
+    {
+      "name": "AlphaCodes",
+      "type": "decompose",
+      "parameters": {},
+      "node_position": {
+        "x": 2650,
+        "y": 250
+      },
+      "seed_int": 0
+    }
+  ],
+  "connections": [
+    {
+      "from": "SourceFront",
+      "from_port": 0,
+      "to": "PigmentFront",
+      "to_port": 0
+    },
+    {
+      "from": "PigmentFront",
+      "from_port": 0,
+      "to": "AlphaPNG8Front",
+      "to_port": 0
+    },
+    {
+      "from": "AlphaPNG8Front",
+      "from_port": 0,
+      "to": "Material",
+      "to_port": 0
+    },
+    {
+      "from": "AlphaPNG8Front",
+      "from_port": 0,
+      "to": "AlphaCodes",
+      "to_port": 0
+    },
+    {
+      "from": "AlphaCodes",
+      "from_port": 3,
+      "to": "Material",
+      "to_port": 7
+    }
+  ]
+}

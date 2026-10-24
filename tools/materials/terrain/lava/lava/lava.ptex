@@ -10,6 +10,28 @@
   "seed_int": 0,
   "nodes": [
     {
+      "name": "About",
+      "type": "comment",
+      "parameters": {},
+      "node_position": {
+        "x": 0,
+        "y": -350
+      },
+      "size": {
+        "x": 900,
+        "y": 190
+      },
+      "title": "About this material",
+      "text": "lava.tres is a ShaderMaterial of lava.gdshader: export it with this project's own target, File > Export material > Godot > Godot 4 ShaderMaterial (Godot 4 Standard would write a StandardMaterial3D the game refuses). The Export node writes lava_coverage.png, the map the shader adds. Edit SurfaceResponse, HeatResponse. The ...PNG8 groups and the nodes after them only store exact file values; leave them. Export into data/models/board/textures/terrain/lava, then Reload assets in the game's Tuning panel.",
+      "color": {
+        "type": "Color",
+        "r": 0.18,
+        "g": 0.23,
+        "b": 0.28,
+        "a": 1
+      }
+    },
+    {
       "name": "Pigment",
       "type": "image",
       "parameters": {
@@ -561,29 +583,6 @@
           "node_position": {
             "x": 1080,
             "y": 720
-          }
-        },
-        {
-          "name": "Source_notes",
-          "type": "comment",
-          "parameters": {},
-          "seed_int": 0,
-          "node_position": {
-            "x": 0,
-            "y": -260
-          },
-          "title": "Registered original fields, two byte planes",
-          "text": "The original Poisson/de-lighting/percentile recipe supplies height, its 7px neighbourhood, plate coverage and grain+0.5. Two standard PNG byte planes preserve 16-bit masks through the native half image loader. Round restores exact source bytes; (256*high+low)/65535 restores the registered values. These are source fields before normal/AO/roughness, not finished response maps.",
-          "size": {
-            "x": 950,
-            "y": 160
-          },
-          "color": {
-            "type": "Color",
-            "r": 0.18,
-            "g": 0.23,
-            "b": 0.28,
-            "a": 1
           }
         }
       ],
@@ -1500,29 +1499,6 @@
           "node_position": {
             "x": 810,
             "y": 900
-          }
-        },
-        {
-          "name": "Response_notes",
-          "type": "comment",
-          "parameters": {},
-          "seed_int": 0,
-          "node_position": {
-            "x": 0,
-            "y": -260
-          },
-          "title": "Actual editable response, original defaults",
-          "text": "Normals differentiate the original registered height; relief is quantized once and shared with surface A. AO = exp(-max(neighbour height - height,0)*Cavity strength). Roughness = clamp(Crack roughness + Plate roughness*plate - Grain roughness*grain,.24,.98). No final normal, AO or roughness source image. The fixed 12m reference is the existing runtime contract; no new repeat control is implied.",
-          "size": {
-            "x": 950,
-            "y": 160
-          },
-          "color": {
-            "type": "Color",
-            "r": 0.18,
-            "g": 0.23,
-            "b": 0.28,
-            "a": 1
           }
         }
       ],
@@ -3786,43 +3762,228 @@
       ]
     },
     {
-      "export": {},
       "name": "Material",
-      "node_position": {
-        "x": 1450,
-        "y": 1300
-      },
+      "type": "material_export",
       "parameters": {
         "albedo_color": {
-          "a": 1,
-          "b": 1,
-          "g": 1,
+          "type": "Color",
           "r": 1,
-          "type": "Color"
+          "g": 1,
+          "b": 1,
+          "a": 1
         },
         "ao": 1,
-        "depth_scale": 0.5,
-        "emission_energy": 5,
+        "depth_scale": 0.020392156862745096,
+        "emission_energy": 5.0,
         "flags_transparent": false,
         "metallic": 0,
         "normal": 1,
-        "roughness": 1,
+        "roughness": 1.0,
         "size": 10,
-        "sss": 1
+        "sss": 0.0
+      },
+      "node_position": {
+        "x": 3550,
+        "y": 300
       },
       "seed_int": 0,
+      "export_paths": {},
       "shader_model": {
         "shortdesc": "Static PBR Material",
         "longdesc": "PBR material with maps generated as static images",
         "code": "",
         "exports": {
-          "MegaMek/Maps": {
-            "export_extension": ".json",
+          "Godot/Godot 4 Standard": {
+            "export_extension": "tres",
             "files": [
               {
-                "type": "template",
-                "file_name": "$(path_prefix).json",
-                "template": "{\n  \"emissionScale\": $(param:emission_energy)\n}\n"
+                "conditions": "$(connected:albedo_tex)",
+                "file_name": "$(path_prefix)_albedo.png",
+                "output": 0,
+                "prompt_overwrite": false,
+                "type": "texture"
+              },
+              {
+                "conditions": "$(connected:ao_tex) or $(connected:roughness_tex) or $(connected:metallic_tex)",
+                "file_name": "$(path_prefix)_orm.png",
+                "output": 1,
+                "type": "texture"
+              },
+              {
+                "conditions": "$(connected:emission_tex)",
+                "file_name": "$(path_prefix)_emission.png",
+                "output": 2,
+                "type": "texture"
+              },
+              {
+                "conditions": "$(connected:normal_tex)",
+                "file_name": "$(path_prefix)_normal.png",
+                "output": 3,
+                "type": "texture"
+              },
+              {
+                "conditions": "$(connected:depth_tex)",
+                "file_name": "$(path_prefix)_heightmap.png",
+                "output": 8,
+                "prompt_overwrite": false,
+                "type": "texture"
+              },
+              {
+                "conditions": "$(connected:sss_tex)",
+                "file_name": "$(path_prefix)_sss.png",
+                "output": 5,
+                "type": "texture"
+              },
+              {
+                "file_name": "$(path_prefix).tres",
+                "prompt_overwrite": true,
+                "template": [
+                  "[gd_resource type=\"StandardMaterial3D\" load_steps=5 format=2]",
+                  "$if $(connected:albedo_tex)",
+                  "[ext_resource path=\"$(file_prefix)_albedo.png\" type=\"Texture\" id=1]",
+                  "$fi",
+                  "$if $(connected:ao_tex) or $(connected:roughness_tex) or $(connected:metallic_tex)",
+                  "[ext_resource path=\"$(file_prefix)_orm.png\" type=\"Texture\" id=2]",
+                  "$fi",
+                  "$if $(connected:normal_tex)",
+                  "[ext_resource path=\"$(file_prefix)_normal.png\" type=\"Texture\" id=3]",
+                  "$fi",
+                  "$if $(connected:depth_tex)",
+                  "[ext_resource path=\"$(file_prefix)_heightmap.png\" type=\"Texture\" id=4]",
+                  "$fi",
+                  "$if $(connected:emission_tex)",
+                  "[ext_resource path=\"$(file_prefix)_emission.png\" type=\"Texture\" id=5]",
+                  "$fi",
+                  "$if $(connected:sss_tex)",
+                  "[ext_resource path=\"$(file_prefix)_sss.png\" type=\"Texture\" id=6]",
+                  "$fi",
+                  "[resource]",
+                  "albedo_color = Color($(param:albedo_color.r), $(param:albedo_color.g), $(param:albedo_color.b), $(param:albedo_color.a))",
+                  "$if $(connected:albedo_tex)",
+                  "albedo_texture = ExtResource( 1 )",
+                  "$fi",
+                  "metallic = $(param:metallic)",
+                  "$if $(connected:metallic_tex)",
+                  "metallic_texture = ExtResource( 2 )",
+                  "metallic_texture_channel = 2",
+                  "$fi",
+                  "roughness = $(param:roughness)",
+                  "$if $(connected:ao_tex) or $(connected:roughness_tex) or $(connected:metallic_tex)",
+                  "roughness_texture = ExtResource( 2 )",
+                  "roughness_texture_channel = 1",
+                  "$fi",
+                  "$if $(connected:normal_tex)",
+                  "normal_enabled = true",
+                  "normal_scale = $(param:normal)",
+                  "normal_texture = ExtResource( 3 )",
+                  "$fi",
+                  "$if $(connected:emission_tex)",
+                  "emission_enabled = true",
+                  "emission = Color( 0, 0, 0, 1 )",
+                  "emission_energy = $(param:emission_energy)",
+                  "emission_operator = 0",
+                  "emission_texture = ExtResource( 5 )",
+                  "$fi",
+                  "$if $(connected:ao_tex)",
+                  "ao_enabled = true",
+                  "ao_texture = ExtResource( 2 )",
+                  "ao_texture_channel = 0",
+                  "$fi",
+                  "$if $(connected:depth_tex)",
+                  "heightmap_enabled = true",
+                  "heightmap_scale = $(expr:25.0*$(param:depth_scale))",
+                  "heightmap_deep_parallax = true",
+                  "heightmap_min_layers = 8",
+                  "heightmap_max_layers = 32",
+                  "heightmap_texture = ExtResource( 4 )",
+                  "$fi",
+                  "$if $(connected:sss_tex)",
+                  "subsurf_scatter_enabled = true",
+                  "subsurf_scatter_strength = $(param:sss)",
+                  "subsurf_scatter_texture = ExtResource( 6 )",
+                  "$fi",
+                  "$if $(connected:opacity_tex) and $(param:flags_transparent)",
+                  "transparency = 1",
+                  "$fi",
+                  ""
+                ],
+                "type": "template"
+              }
+            ]
+          },
+          "Godot/Godot 4 ShaderMaterial": {
+            "export_extension": "tres",
+            "files": [
+              {
+                "conditions": "$(connected:albedo_tex)",
+                "file_name": "$(path_prefix)_albedo.png",
+                "output": 0,
+                "prompt_overwrite": false,
+                "type": "texture"
+              },
+              {
+                "conditions": "$(connected:ao_tex) or $(connected:roughness_tex) or $(connected:metallic_tex)",
+                "file_name": "$(path_prefix)_orm.png",
+                "output": 1,
+                "type": "texture"
+              },
+              {
+                "conditions": "$(connected:emission_tex)",
+                "file_name": "$(path_prefix)_emission.png",
+                "output": 2,
+                "type": "texture"
+              },
+              {
+                "conditions": "$(connected:normal_tex)",
+                "file_name": "$(path_prefix)_normal.png",
+                "output": 3,
+                "type": "texture"
+              },
+              {
+                "conditions": "$(connected:depth_tex)",
+                "file_name": "$(path_prefix)_heightmap.png",
+                "output": 8,
+                "prompt_overwrite": false,
+                "type": "texture"
+              },
+              {
+                "conditions": "$(connected:sss_tex)",
+                "file_name": "$(path_prefix)_sss.png",
+                "output": 5,
+                "type": "texture"
+              },
+              {
+                "file_name": "$(path_prefix).tres",
+                "prompt_overwrite": false,
+                "template": [
+                  "[gd_resource type=\"ShaderMaterial\" load_steps=8 format=3]",
+                  "",
+                  "[ext_resource type=\"Shader\" path=\"$(file_prefix).gdshader\" id=\"1_shader\"]",
+                  "[ext_resource type=\"Texture2D\" path=\"$(file_prefix)_albedo.png\" id=\"2_albedo\"]",
+                  "[ext_resource type=\"Texture2D\" path=\"$(file_prefix)_orm.png\" id=\"3_orm\"]",
+                  "[ext_resource type=\"Texture2D\" path=\"$(file_prefix)_normal.png\" id=\"4_normal\"]",
+                  "[ext_resource type=\"Texture2D\" path=\"$(file_prefix)_heightmap.png\" id=\"5_heightmap\"]",
+                  "[ext_resource type=\"Texture2D\" path=\"$(file_prefix)_emission.png\" id=\"6_emission\"]",
+                  "[ext_resource type=\"Texture2D\" path=\"$(file_prefix)_coverage.png\" id=\"7_coverage\"]",
+                  "",
+                  "[resource]",
+                  "render_priority = 0",
+                  "shader = ExtResource(\"1_shader\")",
+                  "shader_parameter/albedo = Color($(param:albedo_color.r), $(param:albedo_color.g), $(param:albedo_color.b), $(param:albedo_color.a))",
+                  "shader_parameter/texture_albedo = ExtResource(\"2_albedo\")",
+                  "shader_parameter/texture_orm = ExtResource(\"3_orm\")",
+                  "shader_parameter/roughness = $(param:roughness)",
+                  "shader_parameter/metallic = $(param:metallic)",
+                  "shader_parameter/texture_normal = ExtResource(\"4_normal\")",
+                  "shader_parameter/normal_scale = $(param:normal)",
+                  "shader_parameter/texture_heightmap = ExtResource(\"5_heightmap\")",
+                  "shader_parameter/heightmap_scale = $(expr:25.0*$(param:depth_scale))",
+                  "shader_parameter/texture_emission = ExtResource(\"6_emission\")",
+                  "shader_parameter/emission_energy = $(param:emission_energy)",
+                  "shader_parameter/texture_coverage = ExtResource(\"7_coverage\")",
+                  ""
+                ],
+                "type": "template"
               }
             ]
           }
@@ -3979,12 +4140,12 @@
           },
           {
             "control": "None",
-            "default": 5,
-            "label": "Emission scale (linear radiance)",
-            "max": 32,
+            "default": 1,
+            "label": "Emission",
+            "max": 1,
             "min": 0,
             "name": "emission_energy",
-            "step": 0.1,
+            "step": 0.01,
             "type": "float"
           },
           {
@@ -4127,314 +4288,133 @@
           ""
         ]
       },
-      "type": "material_export"
+      "export_last_target": "Godot/Godot 4 ShaderMaterial"
     },
     {
-      "name": "Notes",
-      "type": "comment",
+      "name": "EngineChannels",
+      "type": "decompose",
       "parameters": {},
-      "seed_int": 0,
       "node_position": {
-        "x": 0,
-        "y": -350
+        "x": 1750,
+        "y": 900
       },
-      "title": "Original HEAD lava \u2014 pigment and source registration protected",
-      "text": "Pigment, normal and surface exports remain unchanged. Edit the four colors inside Emission, HeatResponse heat/crack strengths, and Material emission scale. Emission uses linear RGB: the same graph drives Material preview and lava-heat.png RGB; its alpha retains heat coverage. The exported lava.json supplies the same emission scale. Exposed coverage is already baked into RGB. Runtime only advects/blends this source and applies the shared shore/bank response and camera exposure. No shader heat-to-color ramp or separate preview color remains. Default scale 5 is a calibration candidate, not final visual acceptance. Cold-start official CLI behavior still needs a native export gate.",
-      "size": {
-        "x": 950,
-        "y": 160
-      },
-      "color": {
-        "type": "Color",
-        "r": 0.18,
-        "g": 0.23,
-        "b": 0.28,
-        "a": 1
-      }
+      "seed_int": 0
     },
     {
-      "name": "ExportPigmentPixels",
-      "type": "buffer",
-      "version": 1,
-      "node_position": {
-        "x": 2350,
-        "y": 0
-      },
+      "name": "GodotGreen",
+      "type": "math",
       "parameters": {
-        "size": 10,
-        "f32": false
+        "op": 1,
+        "default_in1": 1,
+        "default_in2": 0,
+        "clamp": false
       },
-      "seed": 0,
-      "seed_locked": true
+      "node_position": {
+        "x": 1950,
+        "y": 900
+      },
+      "seed_int": 0
     },
     {
-      "name": "ExportPigment",
-      "type": "material_export",
-      "label": "Material.png",
-      "node_position": {
-        "x": 2650,
-        "y": 0
-      },
+      "name": "GodotNormal",
+      "type": "combine",
       "parameters": {},
-      "export": {},
-      "seed_int": 0,
-      "shader_model": {
-        "shortdesc": "PNG buffer export",
-        "longdesc": "Exports the connected finished map at its saved Buffer dimensions.",
-        "code": "",
-        "global": "",
-        "inputs": [
-          {
-            "name": "albedo_tex",
-            "type": "rgb",
-            "default": "vec3(0.0)",
-            "label": "Finished map"
-          }
-        ],
-        "outputs": [
-          {
-            "type": "rgb",
-            "rgb": "$albedo_tex($uv)"
-          }
-        ],
-        "parameters": [],
-        "preview_shader": [
-          "shader_type spatial;",
-          "render_mode unshaded;",
-          "$definitions",
-          "void fragment() {",
-          "  float _seed_variation_ = 0.0;",
-          "  vec4 _controlled_variation_ = vec4(0.0);",
-          "$begin_generate",
-          "  ALBEDO = $albedo_tex(UV);",
-          "$end_generate",
-          "}"
-        ],
-        "exports": {
-          "MegaMek/Maps": {
-            "export_extension": "",
-            "files": [
-              {
-                "type": "buffers",
-                "file_name": "$(path_prefix).png"
-              }
-            ]
-          }
-        }
-      }
-    },
-    {
-      "name": "ExportNormalPixels",
-      "type": "buffer",
-      "version": 1,
       "node_position": {
-        "x": 2350,
-        "y": 350
+        "x": 2150,
+        "y": 900
       },
-      "parameters": {
-        "size": 10,
-        "f32": false
-      },
-      "seed": 0,
-      "seed_locked": true
+      "seed_int": 0
     },
     {
-      "name": "ExportNormal",
-      "type": "material_export",
-      "label": "Material-normal.png",
+      "name": "NormalCodes",
+      "type": "decompose",
+      "parameters": {},
       "node_position": {
         "x": 2650,
         "y": 350
       },
+      "seed_int": 0
+    },
+    {
+      "name": "NormalRGB",
+      "type": "combine",
       "parameters": {},
-      "export": {},
-      "seed_int": 0,
-      "shader_model": {
-        "shortdesc": "PNG buffer export",
-        "longdesc": "Exports the connected finished map at its saved Buffer dimensions.",
-        "code": "",
-        "global": "",
-        "inputs": [
-          {
-            "name": "albedo_tex",
-            "type": "rgb",
-            "default": "vec3(0.0)",
-            "label": "Finished map"
-          }
-        ],
-        "outputs": [
-          {
-            "type": "rgb",
-            "rgb": "$albedo_tex($uv)"
-          }
-        ],
-        "parameters": [],
-        "preview_shader": [
-          "shader_type spatial;",
-          "render_mode unshaded;",
-          "$definitions",
-          "void fragment() {",
-          "  float _seed_variation_ = 0.0;",
-          "  vec4 _controlled_variation_ = vec4(0.0);",
-          "$begin_generate",
-          "  ALBEDO = $albedo_tex(UV);",
-          "$end_generate",
-          "}"
-        ],
-        "exports": {
-          "MegaMek/Maps": {
-            "export_extension": "",
-            "files": [
-              {
-                "type": "buffers",
-                "file_name": "$(path_prefix)-normal.png"
-              }
-            ]
-          }
-        }
-      }
-    },
-    {
-      "name": "ExportSurfacePixels",
-      "type": "buffer",
-      "version": 1,
       "node_position": {
-        "x": 2350,
-        "y": 700
+        "x": 2850,
+        "y": 350
       },
-      "parameters": {
-        "size": 10,
-        "f32": false
-      },
-      "seed": 0,
-      "seed_locked": true
+      "seed_int": 0
     },
     {
-      "name": "ExportSurface",
-      "type": "material_export",
-      "label": "Material-surface.png",
+      "name": "NormalForMaterial",
+      "type": "normal_map_convert",
+      "parameters": {
+        "op": 0
+      },
+      "node_position": {
+        "x": 3050,
+        "y": 350
+      },
+      "seed_int": 0
+    },
+    {
+      "name": "SurfaceCodes",
+      "type": "decompose",
+      "parameters": {},
       "node_position": {
         "x": 2650,
         "y": 700
       },
-      "parameters": {},
-      "export": {},
-      "seed_int": 0,
-      "shader_model": {
-        "shortdesc": "PNG buffer export",
-        "longdesc": "Exports the connected finished map at its saved Buffer dimensions.",
-        "code": "",
-        "global": "",
-        "inputs": [
-          {
-            "name": "albedo_tex",
-            "type": "rgb",
-            "default": "vec3(0.0)",
-            "label": "Finished map"
-          }
-        ],
-        "outputs": [
-          {
-            "type": "rgb",
-            "rgb": "$albedo_tex($uv)"
-          }
-        ],
-        "parameters": [],
-        "preview_shader": [
-          "shader_type spatial;",
-          "render_mode unshaded;",
-          "$definitions",
-          "void fragment() {",
-          "  float _seed_variation_ = 0.0;",
-          "  vec4 _controlled_variation_ = vec4(0.0);",
-          "$begin_generate",
-          "  ALBEDO = $albedo_tex(UV);",
-          "$end_generate",
-          "}"
-        ],
-        "exports": {
-          "MegaMek/Maps": {
-            "export_extension": "",
-            "files": [
-              {
-                "type": "buffers",
-                "file_name": "$(path_prefix)-surface.png"
-              }
-            ]
-          }
-        }
-      }
+      "seed_int": 0
     },
     {
-      "name": "ExportHeatPixels",
-      "type": "buffer",
-      "version": 1,
-      "node_position": {
-        "x": 2350,
-        "y": 1050
-      },
+      "name": "DepthForMaterial",
+      "type": "math",
       "parameters": {
-        "size": 10,
-        "f32": false
+        "op": 1,
+        "default_in1": 1,
+        "default_in2": 0,
+        "clamp": false
       },
-      "seed": 0,
-      "seed_locked": true
+      "node_position": {
+        "x": 2850,
+        "y": 700
+      },
+      "seed_int": 0
     },
     {
-      "name": "ExportHeat",
-      "type": "material_export",
-      "label": "Material-heat.png",
+      "name": "HeatCodes",
+      "type": "decompose",
+      "parameters": {},
       "node_position": {
         "x": 2650,
         "y": 1050
       },
+      "seed_int": 0
+    },
+    {
+      "name": "EmissionRGB",
+      "type": "combine",
       "parameters": {},
-      "export": {},
-      "seed_int": 0,
-      "shader_model": {
-        "shortdesc": "PNG buffer export",
-        "longdesc": "Exports the connected finished map at its saved Buffer dimensions.",
-        "code": "",
-        "global": "",
-        "inputs": [
-          {
-            "name": "albedo_tex",
-            "type": "rgb",
-            "default": "vec3(0.0)",
-            "label": "Finished map"
-          }
-        ],
-        "outputs": [
-          {
-            "type": "rgb",
-            "rgb": "$albedo_tex($uv)"
-          }
-        ],
-        "parameters": [],
-        "preview_shader": [
-          "shader_type spatial;",
-          "render_mode unshaded;",
-          "$definitions",
-          "void fragment() {",
-          "  float _seed_variation_ = 0.0;",
-          "  vec4 _controlled_variation_ = vec4(0.0);",
-          "$begin_generate",
-          "  ALBEDO = $albedo_tex(UV);",
-          "$end_generate",
-          "}"
-        ],
-        "exports": {
-          "MegaMek/Maps": {
-            "export_extension": "",
-            "files": [
-              {
-                "type": "buffers",
-                "file_name": "$(path_prefix)-heat.png"
-              }
-            ]
-          }
-        }
-      }
+      "node_position": {
+        "x": 2850,
+        "y": 1050
+      },
+      "seed_int": 0
+    },
+    {
+      "name": "ExportMask",
+      "type": "export",
+      "parameters": {
+        "size": 10,
+        "format": 0,
+        "suffix": "lava_coverage"
+      },
+      "node_position": {
+        "x": 3550,
+        "y": 1100
+      },
+      "seed_int": 0
     }
   ],
   "connections": [
@@ -4470,92 +4450,8 @@
     },
     {
       "from": "SurfaceResponse",
-      "from_port": 0,
-      "to": "NormalPNG8",
-      "to_port": 0
-    },
-    {
-      "from": "SurfaceResponse",
       "from_port": 1,
       "to": "SurfacePNG8",
-      "to_port": 0
-    },
-    {
-      "from": "Pigment",
-      "from_port": 0,
-      "to": "Material",
-      "to_port": 0
-    },
-    {
-      "from": "SurfaceResponse",
-      "from_port": 4,
-      "to": "Material",
-      "to_port": 2
-    },
-    {
-      "from": "SurfaceResponse",
-      "from_port": 2,
-      "to": "Material",
-      "to_port": 4
-    },
-    {
-      "from": "SurfaceResponse",
-      "from_port": 5,
-      "to": "Material",
-      "to_port": 5
-    },
-    {
-      "from": "SurfaceResponse",
-      "from_port": 3,
-      "to": "Material",
-      "to_port": 6
-    },
-    {
-      "from": "PigmentPNG8",
-      "from_port": 0,
-      "to": "ExportPigmentPixels",
-      "to_port": 0
-    },
-    {
-      "from": "ExportPigmentPixels",
-      "from_port": 0,
-      "to": "ExportPigment",
-      "to_port": 0
-    },
-    {
-      "from": "NormalPNG8",
-      "from_port": 0,
-      "to": "ExportNormalPixels",
-      "to_port": 0
-    },
-    {
-      "from": "ExportNormalPixels",
-      "from_port": 0,
-      "to": "ExportNormal",
-      "to_port": 0
-    },
-    {
-      "from": "SurfacePNG8",
-      "from_port": 0,
-      "to": "ExportSurfacePixels",
-      "to_port": 0
-    },
-    {
-      "from": "ExportSurfacePixels",
-      "from_port": 0,
-      "to": "ExportSurface",
-      "to_port": 0
-    },
-    {
-      "from": "HeatPNG8",
-      "from_port": 0,
-      "to": "ExportHeatPixels",
-      "to_port": 0
-    },
-    {
-      "from": "ExportHeatPixels",
-      "from_port": 0,
-      "to": "ExportHeat",
       "to_port": 0
     },
     {
@@ -4577,10 +4473,154 @@
       "to": "HeatPNG8"
     },
     {
+      "from": "PigmentPNG8",
+      "from_port": 0,
+      "to": "Material",
+      "to_port": 0
+    },
+    {
+      "from": "SurfaceResponse",
+      "from_port": 0,
+      "to": "EngineChannels",
+      "to_port": 0
+    },
+    {
+      "from": "EngineChannels",
       "from_port": 1,
-      "to_port": 3,
-      "from": "Emission",
-      "to": "Material"
+      "to": "GodotGreen",
+      "to_port": 1
+    },
+    {
+      "from": "EngineChannels",
+      "from_port": 0,
+      "to": "GodotNormal",
+      "to_port": 0
+    },
+    {
+      "from": "GodotGreen",
+      "from_port": 0,
+      "to": "GodotNormal",
+      "to_port": 1
+    },
+    {
+      "from": "EngineChannels",
+      "from_port": 2,
+      "to": "GodotNormal",
+      "to_port": 2
+    },
+    {
+      "from": "EngineChannels",
+      "from_port": 3,
+      "to": "GodotNormal",
+      "to_port": 3
+    },
+    {
+      "from": "GodotNormal",
+      "from_port": 0,
+      "to": "NormalPNG8",
+      "to_port": 0
+    },
+    {
+      "from": "NormalPNG8",
+      "from_port": 0,
+      "to": "NormalCodes",
+      "to_port": 0
+    },
+    {
+      "from": "NormalCodes",
+      "from_port": 0,
+      "to": "NormalRGB",
+      "to_port": 0
+    },
+    {
+      "from": "NormalCodes",
+      "from_port": 1,
+      "to": "NormalRGB",
+      "to_port": 1
+    },
+    {
+      "from": "NormalCodes",
+      "from_port": 2,
+      "to": "NormalRGB",
+      "to_port": 2
+    },
+    {
+      "from": "NormalRGB",
+      "from_port": 0,
+      "to": "NormalForMaterial",
+      "to_port": 0
+    },
+    {
+      "from": "NormalForMaterial",
+      "from_port": 0,
+      "to": "Material",
+      "to_port": 4
+    },
+    {
+      "from": "SurfacePNG8",
+      "from_port": 0,
+      "to": "SurfaceCodes",
+      "to_port": 0
+    },
+    {
+      "from": "SurfaceCodes",
+      "from_port": 0,
+      "to": "DepthForMaterial",
+      "to_port": 1
+    },
+    {
+      "from": "DepthForMaterial",
+      "from_port": 0,
+      "to": "Material",
+      "to_port": 6
+    },
+    {
+      "from": "SurfaceCodes",
+      "from_port": 1,
+      "to": "Material",
+      "to_port": 2
+    },
+    {
+      "from": "SurfaceCodes",
+      "from_port": 2,
+      "to": "Material",
+      "to_port": 5
+    },
+    {
+      "from": "HeatPNG8",
+      "from_port": 0,
+      "to": "HeatCodes",
+      "to_port": 0
+    },
+    {
+      "from": "HeatCodes",
+      "from_port": 0,
+      "to": "EmissionRGB",
+      "to_port": 0
+    },
+    {
+      "from": "HeatCodes",
+      "from_port": 1,
+      "to": "EmissionRGB",
+      "to_port": 1
+    },
+    {
+      "from": "HeatCodes",
+      "from_port": 2,
+      "to": "EmissionRGB",
+      "to_port": 2
+    },
+    {
+      "from": "EmissionRGB",
+      "from_port": 0,
+      "to": "Material",
+      "to_port": 3
+    },
+    {
+      "from": "HeatCodes",
+      "from_port": 3,
+      "to": "ExportMask",
+      "to_port": 0
     }
   ]
 }
