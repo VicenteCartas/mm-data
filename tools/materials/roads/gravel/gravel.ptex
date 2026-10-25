@@ -17,7 +17,7 @@
         "y": 214
       },
       "title": "About this material",
-      "text": "Road material, built from sources/ (pigment and the 16-bit height fields). They tile seamlessly: keep them so, or every road shows its tile grid. Repeat (12 m) must equal its metres in materials.json. The Material node's Depth scale is 0.4 x the relief code / 255 (tools/materials/README.md). roads/road_maps.py writes the same maps without Material Maker. The ...PNG8 groups and the nodes after them only store exact file values; leave them. Export: File > Export material > Godot > Godot 4 Standard into data/models/board/textures/roads, then Reload assets in the game's Tuning panel.",
+      "text": "Road material, built from sources/ (pigment and the 16-bit height fields). They tile seamlessly: keep them so, or every road shows its tile grid. Size: materials.json sets the ground one repeat covers; nothing here depends on it. Relief is the heightmap's height range as a percentage of that repeat; the normals round it to a whole code of the heightmap (Relief x 25.5), so keep it a multiple of 10 / 255 (0.0392), and set the Material node's Depth scale to Relief / 25 (tools/materials/README.md). roads/road_maps.py writes the same maps without Material Maker. The ...PNG8 groups and the nodes after them only store exact file values; leave them. Export: File > Export material > Godot > Godot 4 Standard into data/models/board/textures/roads, then Reload assets in the game's Tuning panel.",
       "color": {
         "type": "Color",
         "r": 0.14,
@@ -926,8 +926,7 @@
       "label": "SurfaceResponse",
       "type": "graph",
       "parameters": {
-        "RepeatMetres": 12.0,
-        "ReliefMetres": 0.084,
+        "ReliefPercent": 0.7058823529411765,
         "BaseRoughness": 0.88,
         "HeightRoughness": 0.12,
         "CavityStrength": 1.7
@@ -999,8 +998,7 @@
           "name": "gen_parameters",
           "type": "remote",
           "parameters": {
-            "RepeatMetres": 12.0,
-            "ReliefMetres": 0.084,
+            "ReliefPercent": 0.7058823529411765,
             "BaseRoughness": 0.88,
             "HeightRoughness": 0.12,
             "CavityStrength": 1.7
@@ -1012,22 +1010,13 @@
           },
           "widgets": [
             {
-              "name": "RepeatMetres",
-              "label": "RepeatMetres",
-              "type": "named_parameter",
-              "min": 1.0,
-              "max": 48.0,
-              "step": 1,
-              "default": 12.0
-            },
-            {
-              "name": "ReliefMetres",
-              "label": "ReliefMetres",
+              "name": "ReliefPercent",
+              "label": "Relief (% of the repeat)",
               "type": "named_parameter",
               "min": 0,
-              "max": 0.1,
+              "max": 2.0,
               "step": 0.0001,
-              "default": 0.084
+              "default": 0.7058823529411765
             },
             {
               "name": "BaseRoughness",
@@ -1118,7 +1107,7 @@
           "type": "math",
           "parameters": {
             "op": 2,
-            "default_in1": "$ReliefMetres/($RepeatMetres*.1)",
+            "default_in1": "$ReliefPercent*.1",
             "default_in2": 255,
             "clamp": false
           },

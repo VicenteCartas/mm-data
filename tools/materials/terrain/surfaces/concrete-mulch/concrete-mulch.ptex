@@ -18,7 +18,7 @@
         "y": 190
       },
       "title": "About this material",
-      "text": "Bark-chip mulch for concrete tree pits, over dark soil (sources/soil.png). AuthorControls sets the chips, colours, repeat, relief and roughness (it also sets the linked values in Normals). Repeat: 1 m, as in materials.json. The ...PNG8 groups and the nodes after them only store exact file values; leave them. Export: File > Export material > Godot > Godot 4 Standard into data/models/board/textures/terrain/surfaces, then Reload assets in the game's Tuning panel.",
+      "text": "Bark-chip mulch for concrete tree pits, over dark soil (sources/soil.png). AuthorControls sets the chips, colours, relief and roughness (it also sets the linked values in Normals). Size: materials.json sets the ground one repeat covers; nothing here depends on it. Relief is the heightmap's height range as a percentage of that repeat (the game's parallax depth). After changing Relief, set the Material node's Depth scale to Relief / 25. The ...PNG8 groups and the nodes after them only store exact file values; leave them. Export: File > Export material > Godot > Godot 4 Standard into data/models/board/textures/terrain/surfaces, then Reload assets in the game's Tuning panel.",
       "color": {
         "type": "Color",
         "r": 0.18,
@@ -80,10 +80,8 @@
         "ChipCount": 28,
         "ChipLength": 0.04,
         "ChipWidth": 0.025,
-        "RepeatMetres": 1,
-        "ReliefMetres": 0.015,
+        "ReliefPercent": 1.5,
         "NormalStrength": 1,
-        "Roughness": 0.92,
         "SoilValue": 1.0,
         "Fracture": 0.24
       },
@@ -137,24 +135,13 @@
           ]
         },
         {
-          "name": "RepeatMetres",
-          "label": "Repeat (metres)",
+          "name": "ReliefPercent",
+          "label": "Relief (% of the repeat)",
           "type": "linked_control",
           "linked_widgets": [
             {
               "node": "Normals",
-              "widget": "RepeatMetres"
-            }
-          ]
-        },
-        {
-          "name": "ReliefMetres",
-          "label": "Relief (metres)",
-          "type": "linked_control",
-          "linked_widgets": [
-            {
-              "node": "Normals",
-              "widget": "ReliefMetres"
+              "widget": "ReliefPercent"
             }
           ]
         },
@@ -168,12 +155,6 @@
               "widget": "NormalStrength"
             }
           ]
-        },
-        {
-          "name": "Roughness",
-          "label": "Dry roughness",
-          "type": "linked_control",
-          "linked_widgets": []
         },
         {
           "name": "SoilValue",
@@ -258,8 +239,7 @@
       "label": "Physical normal",
       "type": "graph",
       "parameters": {
-        "RepeatMetres": 1,
-        "ReliefMetres": 0.015,
+        "ReliefPercent": 1.5,
         "NormalStrength": 1
       },
       "node_position": {
@@ -309,8 +289,7 @@
           "name": "gen_parameters",
           "type": "remote",
           "parameters": {
-            "RepeatMetres": 1,
-            "ReliefMetres": 0.015,
+            "ReliefPercent": 1.5,
             "NormalStrength": 1
           },
           "seed_int": 0,
@@ -320,22 +299,13 @@
           },
           "widgets": [
             {
-              "name": "RepeatMetres",
-              "label": "Repeat (metres)",
-              "type": "named_parameter",
-              "min": 1,
-              "max": 32,
-              "step": 0.1,
-              "default": 1
-            },
-            {
-              "name": "ReliefMetres",
-              "label": "Relief (metres)",
+              "name": "ReliefPercent",
+              "label": "Relief (% of the repeat)",
               "type": "named_parameter",
               "min": 0,
-              "max": 0.25,
-              "step": 0.001,
-              "default": 0.015
+              "max": 5.0,
+              "step": 0.0001,
+              "default": 1.5
             },
             {
               "name": "NormalStrength",
@@ -358,7 +328,7 @@
           "parameters": {
             "op": 2,
             "default_in1": 0,
-            "default_in2": "16*$ReliefMetres*$NormalStrength/max($RepeatMetres,0.001)",
+            "default_in2": "16*$ReliefPercent*$NormalStrength/100",
             "clamp": false
           },
           "seed": 27,

@@ -114,7 +114,7 @@ def write_tres(exported, target):
     return state
 
 
-def check_catalog(project, name, width):
+def check_catalog(name, width):
     """The game repeats a loose material at its catalogued density, so a wider export covers more ground."""
     catalog = json.loads((BAKED / 'materials.json').read_text(encoding='utf-8'))
     loose = catalog['loose'].get(name)
@@ -126,14 +126,7 @@ def check_catalog(project, name, width):
     if 'metres' not in loose:
         print(f'  Loose: covers {coverage:g} times its catalogued ground')
         return
-    repeat = loose['metres'] * coverage
-    print(f'  Loose: one repeat spans {repeat:g} m')
-    graph = json.loads(project.read_text(encoding='utf-8'))
-    authored = {node['parameters']['RepeatMetres'] for node in nodes(graph)
-                if node['type'] == 'remote' and 'RepeatMetres' in node['parameters']}
-    for value in sorted(value for value in authored if abs(value - repeat) > 1e-6):
-        print(f'  Repeat (metres) is {value:g}, but the game repeats this texture every {repeat:g} m: set '
-              f'Repeat (metres) to {repeat:g}, or change its metres in materials.json to change its density')
+    print(f'  Loose: one repeat spans {loose["metres"] * coverage:g} m')
 
 
 def export(project):
@@ -174,7 +167,7 @@ def export(project):
                 shutil.copyfile(file, destination / file.name)
                 states.append(f'{file.name}:copied')
         print('  ' + ' '.join(states))
-    check_catalog(project, name, expected[f'{project.stem}_albedo.png'])
+    check_catalog(name, expected[f'{project.stem}_albedo.png'])
 
 
 def main():

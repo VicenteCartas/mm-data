@@ -1449,7 +1449,7 @@
           }
         },
         {
-          "name": "NearMetres",
+          "name": "NearCavityRange",
           "type": "math",
           "parameters": {
             "op": 2,
@@ -1509,7 +1509,7 @@
           }
         },
         {
-          "name": "WideMetres",
+          "name": "WideCavityRange",
           "type": "math",
           "parameters": {
             "op": 2,
@@ -1871,17 +1871,17 @@
         {
           "from": "NearCavity",
           "from_port": 0,
-          "to": "NearMetres",
+          "to": "NearCavityRange",
           "to_port": 0
         },
         {
           "from": "PhysicalRange",
           "from_port": 0,
-          "to": "NearMetres",
+          "to": "NearCavityRange",
           "to_port": 1
         },
         {
-          "from": "NearMetres",
+          "from": "NearCavityRange",
           "from_port": 0,
           "to": "NearAbsorption",
           "to_port": 0
@@ -1907,17 +1907,17 @@
         {
           "from": "WideCavity",
           "from_port": 0,
-          "to": "WideMetres",
+          "to": "WideCavityRange",
           "to_port": 0
         },
         {
           "from": "PhysicalRange",
           "from_port": 0,
-          "to": "WideMetres",
+          "to": "WideCavityRange",
           "to_port": 1
         },
         {
-          "from": "WideMetres",
+          "from": "WideCavityRange",
           "from_port": 0,
           "to": "WideAbsorption",
           "to_port": 0

@@ -133,16 +133,14 @@ To edit them safely:
   the wider texture covers more ground. A terrain surface's project measures per repeat, so divide
   its *Relief* by N and multiply its two cavity strengths by N. For a road, `road_maps.py
   --lengthen N` (below) makes that content at the same width; then multiply `metres` by N.
-- **Bigger or smaller features:** change `metres`. A sculpted terrain surface's project knows no
-  metres: its *Relief* is the heightmap's height range as a percentage of the repeat (Godot's
-  `heightmap_scale`; the Material node's Depth scale is *Relief* ÷ 25), and its crack shading
-  strengths are per repeat, so its maps fit any size. A road project, and `biome-mud`,
-  `ground-scorch` and `concrete-mulch`, still give *RepeatMetres*, the ground the exported tile
-  covers, `metres` × (its width ÷ `pixels`), which must match, or the normals come out too steep
-  or too flat, and *ReliefMetres*, the height range of the heightmap in metres. A road's normals
-  use that relief rounded to a whole code (its `ReliefCodes` node: *ReliefMetres* ÷ (*RepeatMetres* × 0.1) × 255, rounded),
-  and its Material node takes *depth_scale* = 0.4 × that code ÷ 255, so the parallax depth is the
-  relief the normals have (asphalt: code 4, 1.88 cm; dirt 11, 5.18 cm; gravel 18, 8.47 cm).
+- **Bigger or smaller features:** change `metres`. No project knows metres: its *Relief* is the
+  heightmap's height range as a percentage of the repeat (Godot's `heightmap_scale`; the Material
+  node's Depth scale is *Relief* ÷ 25), and its crack shading strengths are per repeat, so its
+  maps fit any size. Road, lava and crust normals round their *Relief* to a whole code of the 8-bit
+  heightmap (*Relief* × 25.5, rounded, in their `ReliefCodes` or `Relief_code` node), so their
+  *Relief* stays a multiple of 10 ÷ 255 and the parallax depth is the relief the normals have
+  (asphalt: code 4, 0.157 %, 1.88 cm at 12 m; dirt 11, 0.431 %, 5.18 cm; gravel 18, 0.706 %,
+  8.47 cm; lava 13, 0.510 %; crust 202, 7.92 %).
 - Maps stay square, and must tile (below).
 
 *Reload assets* in the game's Tuning panel re-reads the catalogue with the maps and shows a
@@ -163,8 +161,8 @@ and `--lengthen N` quilts the sources into a tile covering N times their ground 
 from pieces of themselves (`tools/materials/quilt.py`; the material must have no direction of its
 own, such as baked light, as pieces are turned and mirrored). The road sources' 12 m came from
 6 m ones with `--lengthen 2`. Set the project first, as `road_maps.py` writes the maps from it in
-the same run: *RepeatMetres* times N, *ReliefMetres* as it is, *depth_scale* from the new relief
-code; then multiply the catalogue's `metres` by N. Running it again lengthens again; to rewrite
+the same run: *Relief* divided by N, as a whole code, and *depth_scale* = *Relief* ÷ 25; then
+multiply the catalogue's `metres` by N. Running it again lengthens again; to rewrite
 only the maps, run it without `--lengthen`. Both scripts need numpy and scipy.
 
 ## Exporting
@@ -185,7 +183,6 @@ The script exports every project, or the one given. Material Maker's command lin
 at its node's Size, the same pixels as the editor. The script writes a map only when its pixels
 change, in the PNG mode of the file it replaces, and the `.tres` only when a value changes, so
 exporting an unchanged project changes no file; it prints which files changed. It removes Material
-node maps the material no longer has. For a loose material it prints the ground one repeat covers,
-and warns when a project's *Repeat (metres)* disagrees with it.
+node maps the material no longer has. For a loose material it prints the ground one repeat covers.
 
 megamek's `docs/gpu-board-materials.md` describes how the game reads these files.

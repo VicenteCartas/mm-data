@@ -22,7 +22,7 @@
         "y": 190
       },
       "title": "About this material",
-      "text": "crust.tres is a ShaderMaterial of crust.gdshader: export it with this project's own target, File > Export material > Godot > Godot 4 ShaderMaterial (Godot 4 Standard would write a StandardMaterial3D the game refuses). The Export node writes crust_glow.png, the map the shader adds. Edit SurfaceResponse, HeatResponse. The ...PNG8 groups and the nodes after them only store exact file values; leave them. Export into data/models/board/textures/terrain/lava, then Reload assets in the game's Tuning panel.",
+      "text": "crust.tres is a ShaderMaterial of crust.gdshader: export it with this project's own target, File > Export material > Godot > Godot 4 ShaderMaterial (Godot 4 Standard would write a StandardMaterial3D the game refuses). The Export node writes crust_glow.png, the map the shader adds. Edit SurfaceResponse, HeatResponse. SurfaceResponse's Relief is the heightmap's height range as a percentage of the repeat, rounded to a whole code of the heightmap (Relief x 25.5): keep it a multiple of 10 / 255 (0.0392) and set the Material node's Depth scale to Relief / 25. The ...PNG8 groups and the nodes after them only store exact file values; leave them. Export into data/models/board/textures/terrain/lava, then Reload assets in the game's Tuning panel.",
       "color": {
         "type": "Color",
         "r": 0.18,
@@ -828,8 +828,7 @@
       "label": "SurfaceResponse",
       "type": "graph",
       "parameters": {
-        "RepeatMetres": 12,
-        "ReliefMetres": 0.95,
+        "ReliefPercent": 7.921568627450981,
         "Cavity_strength": 4.2,
         "Crack_roughness": 0.43,
         "Plate_roughness": 0.46,
@@ -902,8 +901,7 @@
           "name": "gen_parameters",
           "type": "remote",
           "parameters": {
-            "RepeatMetres": 12,
-            "ReliefMetres": 0.95,
+            "ReliefPercent": 7.921568627450981,
             "Cavity_strength": 4.2,
             "Crack_roughness": 0.43,
             "Plate_roughness": 0.46,
@@ -916,22 +914,13 @@
           },
           "widgets": [
             {
-              "name": "RepeatMetres",
-              "label": "RepeatMetres",
-              "type": "named_parameter",
-              "min": 12,
-              "max": 12,
-              "step": 1,
-              "default": 12
-            },
-            {
-              "name": "ReliefMetres",
-              "label": "ReliefMetres",
+              "name": "ReliefPercent",
+              "label": "Relief (% of the repeat)",
               "type": "named_parameter",
               "min": 0,
-              "max": 1.2,
-              "step": 0.001,
-              "default": 0.95
+              "max": 10.0,
+              "step": 0.0001,
+              "default": 7.921568627450981
             },
             {
               "name": "Cavity_strength",
@@ -1031,7 +1020,7 @@
           "type": "math",
           "parameters": {
             "op": 2,
-            "default_in1": "$ReliefMetres/($RepeatMetres*.1)",
+            "default_in1": "$ReliefPercent*.1",
             "default_in2": 255,
             "clamp": false
           },

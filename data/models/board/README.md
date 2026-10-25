@@ -329,7 +329,7 @@ which matches the `tileset/` copy; the palette uses the decals here.
 }
 ```
 
-- `size`: the decal's footprint at scale 1, model px (a hex is 84 x 72), centred on
+- `size`: the decal's footprint at scale 1, model px (the board's hex is 83.125 x 72), centred on
   the object's position. Image px differ per group; only `size` sets the footprint.
 - `slots` (car parks only): parking places in the decal's frame, model px from its
   centre, +y toward the back of the bays (the bay centres); `heading` is the car's rotation in
@@ -622,7 +622,8 @@ original tile artwork, including transparency and shadows, for inspection beside
 
 Models are indexed GLB with positions, flat normals, vertex colors and UVs.
 The importer converts glTF Y-up and linear colors back to the board convention.
-In the runtime representation Z is up; X/Y use the 84 by 72 pixel hex dimensions.
+In the runtime representation Z is up; X/Y use the 2D art's 84 by 72 pixel hex. The 3D board's hex is regular,
+83.125 by 72, and placement narrows these hex-filling models along X to fit it.
 Plants preserve their original proportions at local height 30. Buildings,
 including tanks and industrial structures, stand at Z=0 with their roof at
 Z=18: one default board level, visible at useful proportions in ordinary GLB

@@ -10,7 +10,7 @@ writes them into data/models/board/textures/roads, as the editor's export does. 
 tile (seamless.py); run it only on sources that show their tile grid. --lengthen N first quilts the sources (quilt.py)
 into a tile covering N times their ground at the same size, from pieces of themselves (the neighbour field, a blur of
 the height, is rebuilt from the quilted height). The maps it then writes take the project's values, so set them first
-(RepeatMetres times N, depth_scale from the new relief code), and the catalogue's metres times N
+(Relief divided by N, as a whole relief code, and depth_scale = Relief / 25), and the catalogue's metres times N
 (tools/materials/README.md). Needs numpy, scipy and Pillow.
 """
 import argparse
@@ -47,7 +47,7 @@ def maps(project):
     sources = project.parent / 'sources'
     f = fields(sources)
     height = np.round(f[..., 0] * 255) / 255
-    relief = np.round(p['ReliefMetres'] / (p['RepeatMetres'] * .1) * 255) / 255
+    relief = np.round(p['ReliefPercent'] * .1 * 255) / 255
     size = height.shape[1]
     du = (np.roll(height, -1, axis=1) - np.roll(height, 1, axis=1)) * (size / 2)
     dv = (np.roll(height, -1, axis=0) - np.roll(height, 1, axis=0)) * (size / 2)
