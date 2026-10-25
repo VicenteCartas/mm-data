@@ -120,8 +120,16 @@ license for all details.
 MegaMek note
 ------------
 
-Roboto-Medium.ttf is a static instance (wght 500, wdth 100) generated from
-Roboto-VariableFont_wdth,wght.ttf, because Java2D (Swing) can only draw the
-variable font's default instance. It is regenerated with
-docs/design-system/make_static_roboto.py in the megamek repository. Same OFL license.
+Roboto-Medium.ttf (family "Roboto Medium", wght 500, wdth 100) and
+Roboto-CondensedMedium.ttf (family "Roboto Condensed Medium", wght 500,
+wdth 75) are static instances generated from Roboto-VariableFont_wdth,wght.ttf,
+because Java2D (Swing) can only draw the variable font's default instance.
+Swing uses the condensed face for game-mode framing labels and unit names.
+They are regenerated with docs/design-system/make_static_roboto.py in the
+megamek repository:
+
+  python make_static_roboto.py Roboto-VariableFont_wdth,wght.ttf Roboto-Medium.ttf
+  python make_static_roboto.py Roboto-VariableFont_wdth,wght.ttf Roboto-CondensedMedium.ttf --width 75 --family "Roboto Condensed Medium"
+
+Same OFL license.
 
