@@ -575,17 +575,22 @@ no rock or scatter geometry is generated in-game.
   names are in `tools/board-models/manifest.json`. Bridge spans are generated at runtime;
   reusable terminal and pier kits remain GLBs.
 - Each tree GLB contains `-lod0`, `-lod1`, and `-lod2` groups, with budgets
-  of 1000, 300 and 96 triangles including explicit back faces. The sixteen
-  conifers and broadleaf trees, and the winter files `pine-tall-snow`,
-  `tree-forked-snow` and `willow-snow`, are grown from each species' botany by
-  `tools/board-models/foliage/build_trees.py`: conifers as whorls of bent spray
-  cards folded along their stems on a straight trunk; broadleaf trees as forked
-  limbs and twigs ending in clumps of crossed leaf cards, each clump shaded as a
-  dome. Change a species there and rebuild it rather than editing its GLB.
+  of 1000, 300 and 96 triangles including explicit back faces. The conifers,
+  broadleaf trees, palms, saguaros, the dead tree and the desert and barren
+  shrubs (`foliage-desert`, `foliage-barren`), and the winter files
+  `pine-tall-snow`, `tree-forked-snow`, `willow-snow` and `tree-dead-snow`, are
+  grown from each species' botany by `tools/board-models/foliage/build_trees.py`:
+  conifers as whorls of bent spray cards folded along their stems on a straight
+  trunk; broadleaf trees as forked limbs and twigs ending in clumps of crossed
+  leaf cards, each clump shaded as a dome (willows as a dome over curtains of
+  strands); palms as a curved trunk under a spiral of folded fronds with dead
+  fronds hanging beneath (`palm` a date palm, `palm-bent` a coconut palm);
+  saguaros as ribbed columns with elbowed arms and domed tips, `cactus-flowers`
+  with white blossoms on them; the dead tree as a bleached oak snag whose limbs
+  end in fans of bare twigs; the shrubs as stems carrying creosote and sagebrush
+  sprays. Change a species there and rebuild it rather than editing its GLB.
   Standard glTF `MASK` materials use a 0.5 alpha threshold in color, depth and
-  shadow passes. Palms use curved, folded cutout fronds; cacti retain their stem
-  silhouettes with smooth normals, mapped ribs and cutout flowers. Dead trees
-  keep their existing near meshes and decimated or component-hull distant meshes.
+  shadow passes.
   A `-lod3` group holds the plant's impostor: two crossed vertical cards and a
   horizontal cap through the crown, 12 triangles with their backs, textured by
   `textures/vegetation/impostors/<name>.png` (three 128 by 128 unlit renders of
@@ -770,12 +775,9 @@ Roof/terrain/water art comes from the existing MegaMek data tileset; its license
 headers and original paths are retained. The repository license remains at
 `../../../LICENSE`.
 
-The dead tree, palms and cacti are simplified derivatives of Quaternius's
-**Ultimate Nature Pack (June 2019)**: `CommonTree_Dead_2` and its snow model,
-`PalmTree_1/2`, `Cactus_2` and `CactusFlowers_2`. The supplied CC0 notice is
-preserved in `QUATERNIUS-LICENSE.txt`.
-
-The crop model, the grown trees and the bridge terminal and pier kits are original work.
+The crop model, the grown plants and the bridge terminal and pier kits are original work. The plant cutouts and
+the dead tree's wood are photographic studies made with the built-in image_gen tool and keyed into their Material
+Maker projects by `../../../tools/materials/plant_sources.py`.
 Dirt, sandstone, rock, concrete and windowed facade albedos were generated with
 the built-in image_gen tool; exact prompts are in
 `../../../tools/board-texture-prompts.json`. The seven contextual facade albedos

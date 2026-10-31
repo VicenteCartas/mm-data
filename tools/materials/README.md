@@ -135,6 +135,11 @@ their maps from `sources/`. The cargo crate's maps are baked from steel, iron an
 finish, the three wall steels, the grille, the worn plate, the weathered paint and the vent slots are near white or
 flat: each model tints them with its vertex colours or colour slots.
 
+The plant cutouts made from photographic studies (`creosote-cutout`, `sagebrush-cutout`, `twig-cutout`,
+`date-palm-frond-cutout`, `willow-cutout`, `cactus-flower-cutout`) and the dead tree's `dead-wood` read their
+`sources/` from `plant_sources.py` (its header gives the recipe): `cutout` keys a study shot on magenta, `bark`
+tiles one that fills the frame.
+
 Keep corrugated weathering broad and its finish variation small: fine, high-contrast metallic and roughness streaks
 turn into bright trails under grazing light. Its graph limits weathering's metallic blend to 0.10 and roughness blend
 to 0.15, with three noise octaves across 12 by 2 features per repeat; the ten straight ribs remain in normal and height.

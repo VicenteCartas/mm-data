@@ -51,12 +51,12 @@
       "parameters": {
         "Tint": {
           "type": "Color",
-          "r": 1,
-          "g": 1,
-          "b": 1,
-          "a": 1
+          "r": 0.86,
+          "g": 0.95,
+          "b": 1.0,
+          "a": 1.0
         },
-        "Value": 1,
+        "Value": 1.75,
         "Coverage": 0
       },
       "seed": 0,
@@ -109,12 +109,12 @@
           "parameters": {
             "Tint": {
               "type": "Color",
-              "r": 1,
-              "g": 1,
-              "b": 1,
-              "a": 1
+              "r": 0.86,
+              "g": 0.95,
+              "b": 1.0,
+              "a": 1.0
             },
-            "Value": 1,
+            "Value": 1.75,
             "Coverage": 0
           },
           "seed": 0,
@@ -745,7 +745,7 @@
       "label": "SurfaceResponse",
       "type": "graph",
       "parameters": {
-        "ReliefUV": 0.035
+        "ReliefUV": 0.06
       },
       "node_position": {
         "x": 450,
@@ -799,7 +799,7 @@
           "name": "gen_parameters",
           "type": "remote",
           "parameters": {
-            "ReliefUV": 0.035
+            "ReliefUV": 0.06
           },
           "seed_int": 0,
           "node_position": {
