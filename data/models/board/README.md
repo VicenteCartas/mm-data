@@ -576,10 +576,11 @@ no rock or scatter geometry is generated in-game.
   reusable terminal and pier kits remain GLBs.
 - Each tree GLB contains `-lod0`, `-lod1`, and `-lod2` groups, with budgets
   of 1000, 300 and 96 triangles including explicit back faces. The conifers,
-  broadleaf trees, palms, saguaros, the dead tree and the desert and barren
-  shrubs (`foliage-desert`, `foliage-barren`), and the winter files
-  `pine-tall-snow`, `tree-forked-snow`, `willow-snow` and `tree-dead-snow`, are
-  grown from each species' botany by `tools/board-models/foliage/build_trees.py`:
+  broadleaf trees, the volcano's cinder trees, the orchard trees, palms, saguaros,
+  the dead tree and every family's level-one shrub (`foliage-<family>`, with
+  `-2` and `-3` variants), and the winter files `pine-tall-snow`,
+  `tree-forked-snow`, `willow-snow` and `tree-dead-snow`, are grown from each
+  species' botany by `tools/board-models/foliage/build_trees.py`:
   conifers as whorls of bent spray cards folded along their stems on a straight
   trunk; broadleaf trees as forked limbs and twigs ending in clumps of crossed
   leaf cards, each clump shaded as a dome (willows as a dome over curtains of
@@ -587,8 +588,13 @@ no rock or scatter geometry is generated in-game.
   fronds hanging beneath (`palm` a date palm, `palm-bent` a coconut palm);
   saguaros as ribbed columns with elbowed arms and domed tips, `cactus-flowers`
   with white blossoms on them; the dead tree as a bleached oak snag whose limbs
-  end in fans of bare twigs; the shrubs as stems carrying creosote and sagebrush
-  sprays. Change a species there and rebuild it rather than editing its GLB.
+  end in fans of bare twigs; the cinder trees like ohia lehua on lava, gnarled
+  and buttressed under rust and copper crowns; the orchard trees as pruned,
+  low-forked fruit trees whose sprays carry the fruit; the shrubs as stems
+  carrying sprays of their family's cutout (hazel, mountain pine, juniper, shrub
+  willow, snowed juniper, cinder shrub, creosote, sagebrush; ferns grow as
+  trunkless palms). Fungal and Mars plants keep their own alien art. Change a
+  species there and rebuild it rather than editing its GLB.
   Standard glTF `MASK` materials use a 0.5 alpha threshold in color, depth and
   shadow passes.
   A `-lod3` group holds the plant's impostor: two crossed vertical cards and a
@@ -785,7 +791,7 @@ also used built-in image_gen. Only the 128 by 128 runtime maps are shipped.
 
 ## Plant GLB packaging
 
-Each of the 22 plant variants has one GLB, for example `vegetation/pine.glb`, containing
+Each plant has one GLB, for example `vegetation/pine.glb`, containing
 identity groups `pine-lod0`, `pine-lod1`, `pine-lod2` and the impostor `pine-lod3`. Their authored geometry,
 UVs and material roles are preserved. The runtime chooses one level and resolves
 missing optional levels toward LOD0 once while loading. Foliage PNGs are

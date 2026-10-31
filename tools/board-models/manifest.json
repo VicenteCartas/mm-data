@@ -661,136 +661,135 @@
   },
   "vegetation/foliage-temperate": {
     "mesh": "vegetation/foliage-temperate.glb",
-    "triangles": 416,
-    "vertices": 508,
-    "texture": "textures/vegetation/shrubs/shrub-temperate_albedo.png",
+    "triangles": 480,
+    "vertices": 731,
     "lods": [
       {
         "node": "foliage-temperate-lod0",
-        "triangles": 416,
-        "vertices": 508
+        "triangles": 480,
+        "vertices": 731
       },
       {
         "node": "foliage-temperate-lod1",
-        "triangles": 232,
-        "vertices": 324
+        "triangles": 236,
+        "vertices": 402
       },
       {
         "node": "foliage-temperate-lod2",
-        "triangles": 96,
-        "vertices": 142
+        "triangles": 74,
+        "vertices": 130
       },
       {
         "node": "foliage-temperate-lod3",
         "triangles": 12,
         "vertices": 24
       }
-    ]
+    ],
+    "source": "tools/board-models/foliage/build_trees.py"
   },
   "vegetation/foliage-highland": {
     "mesh": "vegetation/foliage-highland.glb",
-    "triangles": 416,
-    "vertices": 508,
-    "texture": "textures/vegetation/shrubs/shrub-highland_albedo.png",
+    "triangles": 468,
+    "vertices": 707,
     "lods": [
       {
         "node": "foliage-highland-lod0",
-        "triangles": 416,
-        "vertices": 508
+        "triangles": 468,
+        "vertices": 707
       },
       {
         "node": "foliage-highland-lod1",
-        "triangles": 232,
-        "vertices": 324
+        "triangles": 240,
+        "vertices": 410
       },
       {
         "node": "foliage-highland-lod2",
-        "triangles": 96,
-        "vertices": 142
+        "triangles": 78,
+        "vertices": 138
       },
       {
         "node": "foliage-highland-lod3",
         "triangles": 12,
         "vertices": 24
       }
-    ]
+    ],
+    "source": "tools/board-models/foliage/build_trees.py"
   },
   "vegetation/foliage-rocky": {
     "mesh": "vegetation/foliage-rocky.glb",
-    "triangles": 416,
-    "vertices": 508,
-    "texture": "textures/vegetation/shrubs/shrub-rocky_albedo.png",
+    "triangles": 472,
+    "vertices": 715,
     "lods": [
       {
         "node": "foliage-rocky-lod0",
-        "triangles": 416,
-        "vertices": 508
+        "triangles": 472,
+        "vertices": 715
       },
       {
         "node": "foliage-rocky-lod1",
-        "triangles": 232,
-        "vertices": 324
+        "triangles": 240,
+        "vertices": 410
       },
       {
         "node": "foliage-rocky-lod2",
-        "triangles": 96,
-        "vertices": 142
+        "triangles": 82,
+        "vertices": 146
       },
       {
         "node": "foliage-rocky-lod3",
         "triangles": 12,
         "vertices": 24
       }
-    ]
+    ],
+    "source": "tools/board-models/foliage/build_trees.py"
   },
   "vegetation/foliage-wetland": {
     "mesh": "vegetation/foliage-wetland.glb",
-    "triangles": 416,
-    "vertices": 514,
-    "texture": "textures/vegetation/shrubs/shrub-wetland_albedo.png",
+    "triangles": 472,
+    "vertices": 687,
     "lods": [
       {
         "node": "foliage-wetland-lod0",
-        "triangles": 416,
-        "vertices": 514
+        "triangles": 472,
+        "vertices": 687
       },
       {
         "node": "foliage-wetland-lod1",
-        "triangles": 232,
-        "vertices": 330
+        "triangles": 240,
+        "vertices": 410
       },
       {
         "node": "foliage-wetland-lod2",
-        "triangles": 96,
-        "vertices": 142
+        "triangles": 82,
+        "vertices": 146
       },
       {
         "node": "foliage-wetland-lod3",
         "triangles": 12,
         "vertices": 24
       }
-    ]
+    ],
+    "source": "tools/board-models/foliage/build_trees.py"
   },
   "vegetation/foliage-desert": {
     "mesh": "vegetation/foliage-desert.glb",
-    "triangles": 476,
-    "vertices": 667,
-    "texture": "textures/vegetation/shrubs/shrub-desert_albedo.png",
+    "triangles": 472,
+    "vertices": 659,
     "lods": [
       {
         "node": "foliage-desert-lod0",
-        "triangles": 476,
-        "vertices": 667
+        "triangles": 472,
+        "vertices": 659
       },
       {
         "node": "foliage-desert-lod1",
-        "triangles": 200,
-        "vertices": 330
+        "triangles": 236,
+        "vertices": 402
       },
       {
         "node": "foliage-desert-lod2",
-        "triangles": 62,
-        "vertices": 106
+        "triangles": 82,
+        "vertices": 146
       },
       {
         "node": "foliage-desert-lod3",
@@ -802,36 +801,36 @@
   },
   "vegetation/foliage-jungle": {
     "mesh": "vegetation/foliage-jungle.glb",
-    "triangles": 448,
-    "vertices": 280,
+    "triangles": 464,
+    "vertices": 411,
     "lods": [
       {
         "node": "foliage-jungle-lod0",
-        "triangles": 448,
-        "vertices": 280
+        "triangles": 464,
+        "vertices": 411
       },
       {
         "node": "foliage-jungle-lod1",
-        "triangles": 216,
-        "vertices": 144
+        "triangles": 148,
+        "vertices": 187
       },
       {
         "node": "foliage-jungle-lod2",
-        "triangles": 96,
-        "vertices": 72
+        "triangles": 60,
+        "vertices": 103
       },
       {
         "node": "foliage-jungle-lod3",
         "triangles": 12,
         "vertices": 24
       }
-    ]
+    ],
+    "source": "tools/board-models/foliage/build_trees.py"
   },
   "vegetation/foliage-barren": {
     "mesh": "vegetation/foliage-barren.glb",
     "triangles": 480,
     "vertices": 731,
-    "texture": "textures/vegetation/shrubs/shrub-barren_albedo.png",
     "lods": [
       {
         "node": "foliage-barren-lod0",
@@ -858,31 +857,31 @@
   },
   "vegetation/foliage-snow": {
     "mesh": "vegetation/foliage-snow.glb",
-    "triangles": 416,
-    "vertices": 508,
-    "texture": "textures/vegetation/shrubs/shrub-snow_albedo.png",
+    "triangles": 472,
+    "vertices": 715,
     "lods": [
       {
         "node": "foliage-snow-lod0",
-        "triangles": 416,
-        "vertices": 508
+        "triangles": 472,
+        "vertices": 715
       },
       {
         "node": "foliage-snow-lod1",
-        "triangles": 232,
-        "vertices": 324
+        "triangles": 240,
+        "vertices": 410
       },
       {
         "node": "foliage-snow-lod2",
-        "triangles": 96,
-        "vertices": 142
+        "triangles": 82,
+        "vertices": 146
       },
       {
         "node": "foliage-snow-lod3",
         "triangles": 12,
         "vertices": 24
       }
-    ]
+    ],
+    "source": "tools/board-models/foliage/build_trees.py"
   },
   "rough/sawn-stump": {
     "triangles": 383,
@@ -898,52 +897,51 @@
   },
   "vegetation/orchard-round": {
     "mesh": "vegetation/orchard-round.glb",
-    "triangles": 480,
-    "vertices": 788,
-    "texture": "textures/vegetation/orchard/orchard-round_albedo.png",
+    "triangles": 472,
+    "vertices": 683,
     "lods": [
       {
         "node": "orchard-round-lod0",
-        "triangles": 480,
-        "vertices": 788
+        "triangles": 472,
+        "vertices": 683
       },
       {
         "node": "orchard-round-lod1",
-        "triangles": 240,
-        "vertices": 420
+        "triangles": 236,
+        "vertices": 402
       },
       {
         "node": "orchard-round-lod2",
-        "triangles": 84,
-        "vertices": 132
+        "triangles": 86,
+        "vertices": 154
       },
       {
         "node": "orchard-round-lod3",
         "triangles": 12,
         "vertices": 24
       }
-    ]
+    ],
+    "source": "tools/board-models/foliage/build_trees.py"
   },
   "vegetation/orchard-round-snow": {
     "mesh": "vegetation/orchard-round.glb",
-    "triangles": 480,
-    "vertices": 788,
-    "texture": "textures/vegetation/orchard/orchard-round_albedo.png",
+    "triangles": 472,
+    "vertices": 683,
     "lods": [
       {
         "node": "orchard-round-snow-lod0",
-        "triangles": 480,
-        "vertices": 788
+        "triangles": 472,
+        "vertices": 683
       },
       {
         "node": "orchard-round-snow-lod1",
-        "triangles": 240,
-        "vertices": 420
+        "triangles": 236,
+        "vertices": 402
       },
       {
         "node": "orchard-round-snow-lod2",
-        "triangles": 84,
-        "vertices": 132
+        "triangles": 86,
+        "vertices": 154
       },
       {
         "node": "orchard-round-snow-lod3",
@@ -951,56 +949,56 @@
         "vertices": 24
       }
     ],
-    "variant": "snow"
+    "variant": "snow",
+    "source": "tools/board-models/foliage/build_trees.py"
   },
   "vegetation/orchard-spreading": {
     "mesh": "vegetation/orchard-spreading.glb",
-    "triangles": 480,
-    "vertices": 788,
-    "texture": "textures/vegetation/orchard/orchard-spreading_albedo.png",
+    "triangles": 476,
+    "vertices": 651,
     "lods": [
       {
         "node": "orchard-spreading-lod0",
-        "triangles": 480,
-        "vertices": 788
+        "triangles": 476,
+        "vertices": 651
       },
       {
         "node": "orchard-spreading-lod1",
-        "triangles": 240,
-        "vertices": 420
+        "triangles": 236,
+        "vertices": 402
       },
       {
         "node": "orchard-spreading-lod2",
-        "triangles": 84,
-        "vertices": 132
+        "triangles": 86,
+        "vertices": 154
       },
       {
         "node": "orchard-spreading-lod3",
         "triangles": 12,
         "vertices": 24
       }
-    ]
+    ],
+    "source": "tools/board-models/foliage/build_trees.py"
   },
   "vegetation/orchard-spreading-snow": {
     "mesh": "vegetation/orchard-spreading.glb",
-    "triangles": 480,
-    "vertices": 788,
-    "texture": "textures/vegetation/orchard/orchard-spreading_albedo.png",
+    "triangles": 476,
+    "vertices": 651,
     "lods": [
       {
         "node": "orchard-spreading-snow-lod0",
-        "triangles": 480,
-        "vertices": 788
+        "triangles": 476,
+        "vertices": 651
       },
       {
         "node": "orchard-spreading-snow-lod1",
-        "triangles": 240,
-        "vertices": 420
+        "triangles": 236,
+        "vertices": 402
       },
       {
         "node": "orchard-spreading-snow-lod2",
-        "triangles": 84,
-        "vertices": 132
+        "triangles": 86,
+        "vertices": 154
       },
       {
         "node": "orchard-spreading-snow-lod3",
@@ -1008,56 +1006,56 @@
         "vertices": 24
       }
     ],
-    "variant": "snow"
+    "variant": "snow",
+    "source": "tools/board-models/foliage/build_trees.py"
   },
   "vegetation/orchard-upright": {
     "mesh": "vegetation/orchard-upright.glb",
-    "triangles": 480,
-    "vertices": 784,
-    "texture": "textures/vegetation/orchard/orchard-upright_albedo.png",
+    "triangles": 472,
+    "vertices": 655,
     "lods": [
       {
         "node": "orchard-upright-lod0",
-        "triangles": 480,
-        "vertices": 784
+        "triangles": 472,
+        "vertices": 655
       },
       {
         "node": "orchard-upright-lod1",
-        "triangles": 240,
-        "vertices": 416
+        "triangles": 238,
+        "vertices": 386
       },
       {
         "node": "orchard-upright-lod2",
-        "triangles": 84,
-        "vertices": 132
+        "triangles": 96,
+        "vertices": 154
       },
       {
         "node": "orchard-upright-lod3",
         "triangles": 12,
         "vertices": 24
       }
-    ]
+    ],
+    "source": "tools/board-models/foliage/build_trees.py"
   },
   "vegetation/orchard-upright-snow": {
     "mesh": "vegetation/orchard-upright.glb",
-    "triangles": 480,
-    "vertices": 784,
-    "texture": "textures/vegetation/orchard/orchard-upright_albedo.png",
+    "triangles": 472,
+    "vertices": 655,
     "lods": [
       {
         "node": "orchard-upright-snow-lod0",
-        "triangles": 480,
-        "vertices": 784
+        "triangles": 472,
+        "vertices": 655
       },
       {
         "node": "orchard-upright-snow-lod1",
-        "triangles": 240,
-        "vertices": 416
+        "triangles": 238,
+        "vertices": 386
       },
       {
         "node": "orchard-upright-snow-lod2",
-        "triangles": 84,
-        "vertices": 132
+        "triangles": 96,
+        "vertices": 154
       },
       {
         "node": "orchard-upright-snow-lod3",
@@ -1065,56 +1063,56 @@
         "vertices": 24
       }
     ],
-    "variant": "snow"
+    "variant": "snow",
+    "source": "tools/board-models/foliage/build_trees.py"
   },
   "vegetation/orchard-vase": {
     "mesh": "vegetation/orchard-vase.glb",
-    "triangles": 480,
-    "vertices": 794,
-    "texture": "textures/vegetation/orchard/orchard-vase_albedo.png",
+    "triangles": 476,
+    "vertices": 731,
     "lods": [
       {
         "node": "orchard-vase-lod0",
-        "triangles": 480,
-        "vertices": 794
+        "triangles": 476,
+        "vertices": 731
       },
       {
         "node": "orchard-vase-lod1",
-        "triangles": 240,
-        "vertices": 426
+        "triangles": 236,
+        "vertices": 402
       },
       {
         "node": "orchard-vase-lod2",
-        "triangles": 84,
-        "vertices": 132
+        "triangles": 86,
+        "vertices": 154
       },
       {
         "node": "orchard-vase-lod3",
         "triangles": 12,
         "vertices": 24
       }
-    ]
+    ],
+    "source": "tools/board-models/foliage/build_trees.py"
   },
   "vegetation/orchard-vase-snow": {
     "mesh": "vegetation/orchard-vase.glb",
-    "triangles": 480,
-    "vertices": 794,
-    "texture": "textures/vegetation/orchard/orchard-vase_albedo.png",
+    "triangles": 476,
+    "vertices": 731,
     "lods": [
       {
         "node": "orchard-vase-snow-lod0",
-        "triangles": 480,
-        "vertices": 794
+        "triangles": 476,
+        "vertices": 731
       },
       {
         "node": "orchard-vase-snow-lod1",
-        "triangles": 240,
-        "vertices": 426
+        "triangles": 236,
+        "vertices": 402
       },
       {
         "node": "orchard-vase-snow-lod2",
-        "triangles": 84,
-        "vertices": 132
+        "triangles": 86,
+        "vertices": 154
       },
       {
         "node": "orchard-vase-snow-lod3",
@@ -1122,56 +1120,56 @@
         "vertices": 24
       }
     ],
-    "variant": "snow"
+    "variant": "snow",
+    "source": "tools/board-models/foliage/build_trees.py"
   },
   "vegetation/orchard-leaning": {
     "mesh": "vegetation/orchard-leaning.glb",
-    "triangles": 480,
-    "vertices": 784,
-    "texture": "textures/vegetation/orchard/orchard-leaning_albedo.png",
+    "triangles": 472,
+    "vertices": 683,
     "lods": [
       {
         "node": "orchard-leaning-lod0",
-        "triangles": 480,
-        "vertices": 784
+        "triangles": 472,
+        "vertices": 683
       },
       {
         "node": "orchard-leaning-lod1",
-        "triangles": 240,
-        "vertices": 416
+        "triangles": 236,
+        "vertices": 402
       },
       {
         "node": "orchard-leaning-lod2",
-        "triangles": 84,
-        "vertices": 132
+        "triangles": 86,
+        "vertices": 154
       },
       {
         "node": "orchard-leaning-lod3",
         "triangles": 12,
         "vertices": 24
       }
-    ]
+    ],
+    "source": "tools/board-models/foliage/build_trees.py"
   },
   "vegetation/orchard-leaning-snow": {
     "mesh": "vegetation/orchard-leaning.glb",
-    "triangles": 480,
-    "vertices": 784,
-    "texture": "textures/vegetation/orchard/orchard-leaning_albedo.png",
+    "triangles": 472,
+    "vertices": 683,
     "lods": [
       {
         "node": "orchard-leaning-snow-lod0",
-        "triangles": 480,
-        "vertices": 784
+        "triangles": 472,
+        "vertices": 683
       },
       {
         "node": "orchard-leaning-snow-lod1",
-        "triangles": 240,
-        "vertices": 416
+        "triangles": 236,
+        "vertices": 402
       },
       {
         "node": "orchard-leaning-snow-lod2",
-        "triangles": 84,
-        "vertices": 132
+        "triangles": 86,
+        "vertices": 154
       },
       {
         "node": "orchard-leaning-snow-lod3",
@@ -1179,56 +1177,56 @@
         "vertices": 24
       }
     ],
-    "variant": "snow"
+    "variant": "snow",
+    "source": "tools/board-models/foliage/build_trees.py"
   },
   "vegetation/orchard-young": {
     "mesh": "vegetation/orchard-young.glb",
     "triangles": 480,
-    "vertices": 784,
-    "texture": "textures/vegetation/orchard/orchard-young_albedo.png",
+    "vertices": 739,
     "lods": [
       {
         "node": "orchard-young-lod0",
         "triangles": 480,
-        "vertices": 784
+        "vertices": 739
       },
       {
         "node": "orchard-young-lod1",
-        "triangles": 240,
-        "vertices": 416
+        "triangles": 236,
+        "vertices": 402
       },
       {
         "node": "orchard-young-lod2",
-        "triangles": 84,
-        "vertices": 132
+        "triangles": 74,
+        "vertices": 130
       },
       {
         "node": "orchard-young-lod3",
         "triangles": 12,
         "vertices": 24
       }
-    ]
+    ],
+    "source": "tools/board-models/foliage/build_trees.py"
   },
   "vegetation/orchard-young-snow": {
     "mesh": "vegetation/orchard-young.glb",
     "triangles": 480,
-    "vertices": 784,
-    "texture": "textures/vegetation/orchard/orchard-young_albedo.png",
+    "vertices": 739,
     "lods": [
       {
         "node": "orchard-young-snow-lod0",
         "triangles": 480,
-        "vertices": 784
+        "vertices": 739
       },
       {
         "node": "orchard-young-snow-lod1",
-        "triangles": 240,
-        "vertices": 416
+        "triangles": 236,
+        "vertices": 402
       },
       {
         "node": "orchard-young-snow-lod2",
-        "triangles": 84,
-        "vertices": 132
+        "triangles": 74,
+        "vertices": 130
       },
       {
         "node": "orchard-young-snow-lod3",
@@ -1236,7 +1234,8 @@
         "vertices": 24
       }
     ],
-    "variant": "snow"
+    "variant": "snow",
+    "source": "tools/board-models/foliage/build_trees.py"
   },
   "vegetation/tree-forked": {
     "triangles": 1000,
@@ -1695,111 +1694,115 @@
   },
   "vegetation/tree-volcano-crown": {
     "mesh": "vegetation/tree-volcano-crown.glb",
-    "triangles": 480,
-    "vertices": 736,
+    "triangles": 1000,
+    "vertices": 1619,
     "lods": [
       {
         "node": "tree-volcano-crown-lod0",
-        "triangles": 480,
-        "vertices": 736
+        "triangles": 1000,
+        "vertices": 1619
       },
       {
         "node": "tree-volcano-crown-lod1",
-        "triangles": 240,
-        "vertices": 384
+        "triangles": 296,
+        "vertices": 522
       },
       {
         "node": "tree-volcano-crown-lod2",
-        "triangles": 96,
-        "vertices": 168
+        "triangles": 94,
+        "vertices": 170
       },
       {
         "node": "tree-volcano-crown-lod3",
         "triangles": 12,
         "vertices": 24
       }
-    ]
+    ],
+    "source": "tools/board-models/foliage/build_trees.py"
   },
   "vegetation/tree-volcano-forked": {
     "mesh": "vegetation/tree-volcano-forked.glb",
-    "triangles": 480,
-    "vertices": 736,
+    "triangles": 984,
+    "vertices": 1643,
     "lods": [
       {
         "node": "tree-volcano-forked-lod0",
-        "triangles": 480,
-        "vertices": 736
+        "triangles": 984,
+        "vertices": 1643
       },
       {
         "node": "tree-volcano-forked-lod1",
-        "triangles": 240,
-        "vertices": 384
+        "triangles": 296,
+        "vertices": 534
       },
       {
         "node": "tree-volcano-forked-lod2",
-        "triangles": 96,
-        "vertices": 168
+        "triangles": 94,
+        "vertices": 170
       },
       {
         "node": "tree-volcano-forked-lod3",
         "triangles": 12,
         "vertices": 24
       }
-    ]
+    ],
+    "source": "tools/board-models/foliage/build_trees.py"
   },
   "vegetation/tree-volcano-spire": {
     "mesh": "vegetation/tree-volcano-spire.glb",
-    "triangles": 480,
-    "vertices": 736,
+    "triangles": 980,
+    "vertices": 1551,
     "lods": [
       {
         "node": "tree-volcano-spire-lod0",
-        "triangles": 480,
-        "vertices": 736
+        "triangles": 980,
+        "vertices": 1551
       },
       {
         "node": "tree-volcano-spire-lod1",
-        "triangles": 240,
-        "vertices": 384
+        "triangles": 290,
+        "vertices": 490
       },
       {
         "node": "tree-volcano-spire-lod2",
         "triangles": 96,
-        "vertices": 168
+        "vertices": 154
       },
       {
         "node": "tree-volcano-spire-lod3",
         "triangles": 12,
         "vertices": 24
       }
-    ]
+    ],
+    "source": "tools/board-models/foliage/build_trees.py"
   },
   "vegetation/foliage-volcano": {
     "mesh": "vegetation/foliage-volcano.glb",
-    "triangles": 480,
-    "vertices": 736,
+    "triangles": 472,
+    "vertices": 743,
     "lods": [
       {
         "node": "foliage-volcano-lod0",
-        "triangles": 480,
-        "vertices": 736
+        "triangles": 472,
+        "vertices": 743
       },
       {
         "node": "foliage-volcano-lod1",
-        "triangles": 240,
-        "vertices": 384
+        "triangles": 236,
+        "vertices": 402
       },
       {
         "node": "foliage-volcano-lod2",
-        "triangles": 96,
-        "vertices": 168
+        "triangles": 74,
+        "vertices": 130
       },
       {
         "node": "foliage-volcano-lod3",
         "triangles": 12,
         "vertices": 24
       }
-    ]
+    ],
+    "source": "tools/board-models/foliage/build_trees.py"
   },
   "vegetation/foliage-tussock": {
     "mesh": "vegetation/foliage-tussock.glb",
@@ -1828,5 +1831,509 @@
         "vertices": 24
       }
     ]
+  },
+  "vegetation/foliage-desert-2": {
+    "mesh": "vegetation/foliage-desert-2.glb",
+    "lods": [
+      {
+        "node": "foliage-desert-2-lod0",
+        "triangles": 472,
+        "vertices": 659
+      },
+      {
+        "node": "foliage-desert-2-lod1",
+        "triangles": 236,
+        "vertices": 402
+      },
+      {
+        "node": "foliage-desert-2-lod2",
+        "triangles": 82,
+        "vertices": 146
+      },
+      {
+        "node": "foliage-desert-2-lod3",
+        "triangles": 12,
+        "vertices": 24
+      }
+    ],
+    "source": "tools/board-models/foliage/build_trees.py",
+    "triangles": 472,
+    "vertices": 659
+  },
+  "vegetation/foliage-desert-3": {
+    "mesh": "vegetation/foliage-desert-3.glb",
+    "lods": [
+      {
+        "node": "foliage-desert-3-lod0",
+        "triangles": 472,
+        "vertices": 659
+      },
+      {
+        "node": "foliage-desert-3-lod1",
+        "triangles": 236,
+        "vertices": 402
+      },
+      {
+        "node": "foliage-desert-3-lod2",
+        "triangles": 82,
+        "vertices": 146
+      },
+      {
+        "node": "foliage-desert-3-lod3",
+        "triangles": 12,
+        "vertices": 24
+      }
+    ],
+    "source": "tools/board-models/foliage/build_trees.py",
+    "triangles": 472,
+    "vertices": 659
+  },
+  "vegetation/foliage-barren-2": {
+    "mesh": "vegetation/foliage-barren-2.glb",
+    "lods": [
+      {
+        "node": "foliage-barren-2-lod0",
+        "triangles": 480,
+        "vertices": 731
+      },
+      {
+        "node": "foliage-barren-2-lod1",
+        "triangles": 236,
+        "vertices": 402
+      },
+      {
+        "node": "foliage-barren-2-lod2",
+        "triangles": 90,
+        "vertices": 162
+      },
+      {
+        "node": "foliage-barren-2-lod3",
+        "triangles": 12,
+        "vertices": 24
+      }
+    ],
+    "source": "tools/board-models/foliage/build_trees.py",
+    "triangles": 480,
+    "vertices": 731
+  },
+  "vegetation/foliage-barren-3": {
+    "mesh": "vegetation/foliage-barren-3.glb",
+    "lods": [
+      {
+        "node": "foliage-barren-3-lod0",
+        "triangles": 480,
+        "vertices": 731
+      },
+      {
+        "node": "foliage-barren-3-lod1",
+        "triangles": 236,
+        "vertices": 402
+      },
+      {
+        "node": "foliage-barren-3-lod2",
+        "triangles": 90,
+        "vertices": 162
+      },
+      {
+        "node": "foliage-barren-3-lod3",
+        "triangles": 12,
+        "vertices": 24
+      }
+    ],
+    "source": "tools/board-models/foliage/build_trees.py",
+    "triangles": 480,
+    "vertices": 731
+  },
+  "vegetation/foliage-temperate-2": {
+    "mesh": "vegetation/foliage-temperate-2.glb",
+    "lods": [
+      {
+        "node": "foliage-temperate-2-lod0",
+        "triangles": 480,
+        "vertices": 731
+      },
+      {
+        "node": "foliage-temperate-2-lod1",
+        "triangles": 236,
+        "vertices": 402
+      },
+      {
+        "node": "foliage-temperate-2-lod2",
+        "triangles": 74,
+        "vertices": 130
+      },
+      {
+        "node": "foliage-temperate-2-lod3",
+        "triangles": 12,
+        "vertices": 24
+      }
+    ],
+    "source": "tools/board-models/foliage/build_trees.py",
+    "triangles": 480,
+    "vertices": 731
+  },
+  "vegetation/foliage-temperate-3": {
+    "mesh": "vegetation/foliage-temperate-3.glb",
+    "lods": [
+      {
+        "node": "foliage-temperate-3-lod0",
+        "triangles": 480,
+        "vertices": 731
+      },
+      {
+        "node": "foliage-temperate-3-lod1",
+        "triangles": 236,
+        "vertices": 402
+      },
+      {
+        "node": "foliage-temperate-3-lod2",
+        "triangles": 74,
+        "vertices": 130
+      },
+      {
+        "node": "foliage-temperate-3-lod3",
+        "triangles": 12,
+        "vertices": 24
+      }
+    ],
+    "source": "tools/board-models/foliage/build_trees.py",
+    "triangles": 480,
+    "vertices": 731
+  },
+  "vegetation/foliage-highland-2": {
+    "mesh": "vegetation/foliage-highland-2.glb",
+    "lods": [
+      {
+        "node": "foliage-highland-2-lod0",
+        "triangles": 468,
+        "vertices": 707
+      },
+      {
+        "node": "foliage-highland-2-lod1",
+        "triangles": 240,
+        "vertices": 410
+      },
+      {
+        "node": "foliage-highland-2-lod2",
+        "triangles": 78,
+        "vertices": 138
+      },
+      {
+        "node": "foliage-highland-2-lod3",
+        "triangles": 12,
+        "vertices": 24
+      }
+    ],
+    "source": "tools/board-models/foliage/build_trees.py",
+    "triangles": 468,
+    "vertices": 707
+  },
+  "vegetation/foliage-highland-3": {
+    "mesh": "vegetation/foliage-highland-3.glb",
+    "lods": [
+      {
+        "node": "foliage-highland-3-lod0",
+        "triangles": 468,
+        "vertices": 707
+      },
+      {
+        "node": "foliage-highland-3-lod1",
+        "triangles": 240,
+        "vertices": 410
+      },
+      {
+        "node": "foliage-highland-3-lod2",
+        "triangles": 78,
+        "vertices": 138
+      },
+      {
+        "node": "foliage-highland-3-lod3",
+        "triangles": 12,
+        "vertices": 24
+      }
+    ],
+    "source": "tools/board-models/foliage/build_trees.py",
+    "triangles": 468,
+    "vertices": 707
+  },
+  "vegetation/foliage-rocky-2": {
+    "mesh": "vegetation/foliage-rocky-2.glb",
+    "lods": [
+      {
+        "node": "foliage-rocky-2-lod0",
+        "triangles": 472,
+        "vertices": 715
+      },
+      {
+        "node": "foliage-rocky-2-lod1",
+        "triangles": 240,
+        "vertices": 410
+      },
+      {
+        "node": "foliage-rocky-2-lod2",
+        "triangles": 82,
+        "vertices": 146
+      },
+      {
+        "node": "foliage-rocky-2-lod3",
+        "triangles": 12,
+        "vertices": 24
+      }
+    ],
+    "source": "tools/board-models/foliage/build_trees.py",
+    "triangles": 472,
+    "vertices": 715
+  },
+  "vegetation/foliage-rocky-3": {
+    "mesh": "vegetation/foliage-rocky-3.glb",
+    "lods": [
+      {
+        "node": "foliage-rocky-3-lod0",
+        "triangles": 472,
+        "vertices": 715
+      },
+      {
+        "node": "foliage-rocky-3-lod1",
+        "triangles": 240,
+        "vertices": 410
+      },
+      {
+        "node": "foliage-rocky-3-lod2",
+        "triangles": 82,
+        "vertices": 146
+      },
+      {
+        "node": "foliage-rocky-3-lod3",
+        "triangles": 12,
+        "vertices": 24
+      }
+    ],
+    "source": "tools/board-models/foliage/build_trees.py",
+    "triangles": 472,
+    "vertices": 715
+  },
+  "vegetation/foliage-wetland-2": {
+    "mesh": "vegetation/foliage-wetland-2.glb",
+    "lods": [
+      {
+        "node": "foliage-wetland-2-lod0",
+        "triangles": 472,
+        "vertices": 687
+      },
+      {
+        "node": "foliage-wetland-2-lod1",
+        "triangles": 240,
+        "vertices": 410
+      },
+      {
+        "node": "foliage-wetland-2-lod2",
+        "triangles": 82,
+        "vertices": 146
+      },
+      {
+        "node": "foliage-wetland-2-lod3",
+        "triangles": 12,
+        "vertices": 24
+      }
+    ],
+    "source": "tools/board-models/foliage/build_trees.py",
+    "triangles": 472,
+    "vertices": 687
+  },
+  "vegetation/foliage-wetland-3": {
+    "mesh": "vegetation/foliage-wetland-3.glb",
+    "lods": [
+      {
+        "node": "foliage-wetland-3-lod0",
+        "triangles": 472,
+        "vertices": 687
+      },
+      {
+        "node": "foliage-wetland-3-lod1",
+        "triangles": 240,
+        "vertices": 410
+      },
+      {
+        "node": "foliage-wetland-3-lod2",
+        "triangles": 82,
+        "vertices": 146
+      },
+      {
+        "node": "foliage-wetland-3-lod3",
+        "triangles": 12,
+        "vertices": 24
+      }
+    ],
+    "source": "tools/board-models/foliage/build_trees.py",
+    "triangles": 472,
+    "vertices": 687
+  },
+  "vegetation/foliage-snow-2": {
+    "mesh": "vegetation/foliage-snow-2.glb",
+    "lods": [
+      {
+        "node": "foliage-snow-2-lod0",
+        "triangles": 472,
+        "vertices": 715
+      },
+      {
+        "node": "foliage-snow-2-lod1",
+        "triangles": 240,
+        "vertices": 410
+      },
+      {
+        "node": "foliage-snow-2-lod2",
+        "triangles": 82,
+        "vertices": 146
+      },
+      {
+        "node": "foliage-snow-2-lod3",
+        "triangles": 12,
+        "vertices": 24
+      }
+    ],
+    "source": "tools/board-models/foliage/build_trees.py",
+    "triangles": 472,
+    "vertices": 715
+  },
+  "vegetation/foliage-snow-3": {
+    "mesh": "vegetation/foliage-snow-3.glb",
+    "lods": [
+      {
+        "node": "foliage-snow-3-lod0",
+        "triangles": 472,
+        "vertices": 715
+      },
+      {
+        "node": "foliage-snow-3-lod1",
+        "triangles": 240,
+        "vertices": 410
+      },
+      {
+        "node": "foliage-snow-3-lod2",
+        "triangles": 82,
+        "vertices": 146
+      },
+      {
+        "node": "foliage-snow-3-lod3",
+        "triangles": 12,
+        "vertices": 24
+      }
+    ],
+    "source": "tools/board-models/foliage/build_trees.py",
+    "triangles": 472,
+    "vertices": 715
+  },
+  "vegetation/foliage-volcano-2": {
+    "mesh": "vegetation/foliage-volcano-2.glb",
+    "lods": [
+      {
+        "node": "foliage-volcano-2-lod0",
+        "triangles": 472,
+        "vertices": 743
+      },
+      {
+        "node": "foliage-volcano-2-lod1",
+        "triangles": 236,
+        "vertices": 402
+      },
+      {
+        "node": "foliage-volcano-2-lod2",
+        "triangles": 74,
+        "vertices": 130
+      },
+      {
+        "node": "foliage-volcano-2-lod3",
+        "triangles": 12,
+        "vertices": 24
+      }
+    ],
+    "source": "tools/board-models/foliage/build_trees.py",
+    "triangles": 472,
+    "vertices": 743
+  },
+  "vegetation/foliage-volcano-3": {
+    "mesh": "vegetation/foliage-volcano-3.glb",
+    "lods": [
+      {
+        "node": "foliage-volcano-3-lod0",
+        "triangles": 472,
+        "vertices": 743
+      },
+      {
+        "node": "foliage-volcano-3-lod1",
+        "triangles": 236,
+        "vertices": 402
+      },
+      {
+        "node": "foliage-volcano-3-lod2",
+        "triangles": 74,
+        "vertices": 130
+      },
+      {
+        "node": "foliage-volcano-3-lod3",
+        "triangles": 12,
+        "vertices": 24
+      }
+    ],
+    "source": "tools/board-models/foliage/build_trees.py",
+    "triangles": 472,
+    "vertices": 743
+  },
+  "vegetation/foliage-jungle-2": {
+    "mesh": "vegetation/foliage-jungle-2.glb",
+    "lods": [
+      {
+        "node": "foliage-jungle-2-lod0",
+        "triangles": 464,
+        "vertices": 411
+      },
+      {
+        "node": "foliage-jungle-2-lod1",
+        "triangles": 132,
+        "vertices": 163
+      },
+      {
+        "node": "foliage-jungle-2-lod2",
+        "triangles": 56,
+        "vertices": 95
+      },
+      {
+        "node": "foliage-jungle-2-lod3",
+        "triangles": 12,
+        "vertices": 24
+      }
+    ],
+    "source": "tools/board-models/foliage/build_trees.py",
+    "triangles": 464,
+    "vertices": 411
+  },
+  "vegetation/foliage-jungle-3": {
+    "mesh": "vegetation/foliage-jungle-3.glb",
+    "lods": [
+      {
+        "node": "foliage-jungle-3-lod0",
+        "triangles": 464,
+        "vertices": 411
+      },
+      {
+        "node": "foliage-jungle-3-lod1",
+        "triangles": 164,
+        "vertices": 211
+      },
+      {
+        "node": "foliage-jungle-3-lod2",
+        "triangles": 64,
+        "vertices": 111
+      },
+      {
+        "node": "foliage-jungle-3-lod3",
+        "triangles": 12,
+        "vertices": 24
+      }
+    ],
+    "source": "tools/board-models/foliage/build_trees.py",
+    "triangles": 464,
+    "vertices": 411
   }
 }
