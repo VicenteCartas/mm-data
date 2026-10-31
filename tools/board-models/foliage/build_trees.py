@@ -132,6 +132,10 @@ BROADLEAF = {
                          bark_role='bark', bark=(.44, .41, .37), leaves=(.84, .98, .72), cutout='willow',
                          snow_cutout='broadleaf'),
 }
+# Broadleaf crowns other than the willows' curtains break into sub-crowns about their limbs.
+for spec in BROADLEAF.values():
+    if not spec['curtain']:
+        spec['lumps'] = .3
 # How each level thins a broadleaf tree: clumps (share), crossed cards per clump, card size, twigs (share), forks per
 # twig, limbs kept, limb and twig sides, limb segments, trunk sides and rings; with few clumps they spread evenly over
 # the crown. A far level thinned to fit its budget widens its cards to keep the near level's cover. `reach`: how far
@@ -189,7 +193,7 @@ DRY = {
 # Cinder trees of the volcano biome, grown like ohia lehua on lava: a gnarled, buttressed trunk whose unequal forks
 # divide at staggered heights, under a crown of rust and copper flush (bronze-olive inside). tree-volcano-crown is a
 # mature open-grown ohia, tree-volcano-forked a many-trunked spreading one (after pohutukawa), tree-volcano-spire a
-# young upright one. Optional keys used here: `gnarl`, `buttress`, `collar` (the root collar's reach), `stagger` and
+# young upright one. Optional keys used here: `gnarl`, `buttress`, `collar` (the root collar's reach), `stagger`,
 # `palette` (inner and outer leaf tints).
 CINDER_BASE = dict(curtain=False, hang=0, bark_role='bark-volcano', bark_texture='volcano/cinder-bark',
                    bark_maps=('albedo', 'normal', 'orm'), bark=(1, .96, .9), cutout='volcano/cinder', winter=False,
@@ -255,12 +259,20 @@ PALM_LEVELS = (dict(fronds=1, segments=3, fold=True, dead=1, sides=8, rings=10, 
                dict(fronds=.45, segments=1, fold=False, dead=.3, sides=4, rings=2, width=1.2))
 # Saguaros: column radius at the foot, arms, their radius (share of the column's) and heights (shares of the height),
 # the skin's ribs repeats around and whether they bloom (white flowers on the crown and arm tips). Every level keeps
-# every arm, so the outline holds at a distance.
+# every arm, so the outline holds at a distance. cactus-young is a tall spear not yet branching,
+# cactus-old a many-armed veteran (`scatter`: its arms' uneven turn about the column); cactus-organ an organ pipe
+# cactus, whose `stems` rise together from one foot instead of a column.
 CACTI = {
     'cactus': dict(seed=41, trunk=1.6, arms=3, arm=.7, heights=(.3, .58), around=3, flowers=False,
                    bark=(.95, .98, .94)),
     'cactus-flowers': dict(seed=42, trunk=1.5, arms=2, arm=.72, heights=(.36, .6), around=3, flowers=True,
                            bark=(.96, .98, .95)),
+    'cactus-young': dict(seed=43, trunk=1.25, arms=0, arm=.7, heights=(.3, .6), around=3, flowers=False,
+                         bark=(.93, .99, .92)),
+    'cactus-old': dict(seed=44, trunk=1.85, arms=4, arm=.66, heights=(.26, .72), scatter=.35, around=3, flowers=False,
+                       bark=(.97, .97, .93)),
+    'cactus-organ': dict(seed=45, trunk=1.05, arms=0, arm=.7, heights=(.3, .6), around=2, flowers=False,
+                         bark=(.92, .98, .9), stems=6),
 }
 for spec in CACTI.values():
     spec.update(bark_role='cactus', bark_texture='cactus-skin', bark_maps=('albedo', 'normal'),
@@ -828,11 +840,16 @@ class Tree:
                               (tip[2] - self.centre[2]) / rz]), weight, rng.uniform(*spec.get('lobes', (1, 1.15))))
                  for tip, weight in tips]
         lobes.append(([0, 0, 1], 3, 1.0))
+        # A crown of `lumps` gathers most clumps that tightly about its limbs' ends, uneven sub-crowns with narrow gaps
+        # between; the rest keep the even lobes and fill its middle.
+        lumps = spec.get('lumps') if not level['even'] else None
+        limb_lobes = [lobe for lobe in lobes if lobe[1] == 1.0]
         weights = [w for _, w, _ in lobes]
         # A crown grown with twigs leaves no clump floating at the near levels (see below).
         grown = spec['twigs'] and not level['even'] and not spec['curtain']
-        wood = [along_line(points, k / 6) for points, _, _ in branches for k in range(1, 7)] if grown else []
-        leaves = []
+        # Sprays grow from the twigs and the limbs' outer parts, never from low on the limbs by the trunk.
+        wood = [along_line(points, k / 6) for points, _, role in branches
+                for k in range(1 if role == 'twig' else 2, 7)] if grown else []
         phase = rng.uniform(0, math.tau)
         for k in range(count):
             # A willow's top is a dome of larger drooping clumps over its arched limbs, spread evenly so the top view
@@ -852,10 +869,12 @@ class Tree:
                 ring = math.sqrt(1 - z * z)
                 direction = [ring * math.cos(phase + k * 2.39996), ring * math.sin(phase + k * 2.39996), z]
             else:
-                lobe, _, extent = rng.choices(lobes, weights)[0]
-                direction = normalized(add(lobe, [rng.gauss(0, .45) for _ in range(3)]))
-            # Open-grown crowns are flatter beneath; excurrent crowns reach down their leader.
-            direction[2] = max(direction[2], -.95 if spec['leader'] else -.7)
+                lumped = lumps and rng.random() < .65
+                lobe, _, extent = rng.choice(limb_lobes) if lumped else rng.choices(lobes, weights)[0]
+                direction = normalized(add(lobe, [rng.gauss(0, lumps if lumped else .45) for _ in range(3)]))
+            # Open-grown crowns are flatter beneath, a twigged crown's sprays never hanging far below its limbs;
+            # excurrent crowns reach down their leader.
+            direction[2] = max(direction[2], -.95 if spec['leader'] else -.5 if grown else -.7)
             # Some clumps sit deeper, more of them under the top, so the top view finds no hollow rings; a dense
             # shrub fills its mound with them.
             outer = 1 - spec.get('deep', .25 if direction[2] > .3 else .15)
@@ -863,20 +882,28 @@ class Tree:
             centre = add(self.centre, [direction[0] * rx, direction[1] * rx, direction[2] * rz], depth * extent)
             if curtain:
                 centre[2] = max(centre[2], self.centre[2] - rz * .2)
+            if wood:
+                # A spray far out from all wood comes in to a twig's length of it.
+                near = min(wood, key=lambda p: length(sub(p, centre)))
+                gap = length(sub(centre, near))
+                if gap > size * 1.4:
+                    centre = add(near, sub(centre, near), size * 1.4 / gap)
             # Far curtains are fewer, so wider (their length is bounded by the ground).
             scale = (1.35 if dome else 1.3 if curtain and level.get('cover') else 1) * rng.uniform(.85, 1.15)
             # The dome's strands fall every way over it, a little darker than the curtains catching the light.
             base = self.clump(centre, size * scale, level['cards'], .5 if dome else spec['hang'], curtain,
                               .9 if dome else 1)
             if wood:
-                leaves.append(base)
-        # The wood grows out to every spray it does not reach yet, so no leaves float in the air: a thin twig from the
-        # nearest wood to the spray's base, which also carries the sprays beside it.
-        for base in leaves:
-            near = min(wood, key=lambda p: length(sub(p, base)))
-            if length(sub(base, near)) > size * level['reach']:
-                self.tube([near, base], [.06, .03], level['twig_sides'], .72)
-                wood += [along_line([near, base], k / 3) for k in range(1, 4)]
+                # The wood grows out to a spray it does not reach yet, so no leaves float in the air: a twig arching
+                # from the nearest wood to the spray's base, which also carries the sprays beside it.
+                near = min(wood, key=lambda p: length(sub(p, base)))
+                reach = length(sub(base, near))
+                if reach > size * level['reach']:
+                    bow = add(bezier(near, near, base, .5), [0, 0, reach * .12])
+                    # A longer one is a side branch, thicker at its foot.
+                    foot = .04 + reach * .012
+                    self.tube([near, bow, base], [foot, foot * .6, .03], level['twig_sides'], .72)
+                    wood += [along_line([near, bow, base], k / 3) for k in range(1, 4)]
 
     def apples(self, count, sides, rings):
         """Apples on the outside of the crown's top and sides, where the iso and top views find them: small solid balls
@@ -1016,13 +1043,29 @@ class Tree:
     def cactus(self, level, thinning):
         spec, rng = self.spec, self.rng
         radius = spec['trunk']
+        if spec.get('stems'):
+            # An organ pipe: columns leave one foot, lean out a little and turn up, to unequal heights.
+            rings = max(2, round(level['arm_rings'] * thinning))
+            phase = rng.uniform(0, math.tau)
+            for k in range(spec['stems']):
+                azimuth = phase + math.tau * (k + rng.uniform(-.25, .25)) / spec['stems']
+                out = [math.cos(azimuth), math.sin(azimuth), 0]
+                stem = radius * rng.uniform(.8, 1.05)
+                top = HEIGHT * (1 if k == 0 else rng.uniform(.55, .92))
+                foot = add(self.axis(0), out, radius * .7)
+                bend = add(self.axis(top * .22), out, radius * rng.uniform(1.8, 2.8))
+                end = add(self.axis(top), out, radius * rng.uniform(2.2, 3.6))
+                self.column([bezier(foot, bend, end, j / rings) for j in range(rings + 1)], stem, level['arm_sides'],
+                            level['arm_cap'])
+            return
         rings = level['rings']
         self.column([self.axis(HEIGHT * k / rings) for k in range(rings + 1)], radius, level['sides'], level['cap'])
         tips = [self.axis(HEIGHT)]
         phase = rng.uniform(0, math.tau)
         for k in range(spec['arms']):
             # An arm leaves the column level, turns up at its elbow and rises beside it.
-            direction = phase + math.tau * (k + rng.uniform(-.15, .15)) / spec['arms']
+            scatter = spec.get('scatter', .15)
+            direction = phase + math.tau * (k + rng.uniform(-scatter, scatter)) / spec['arms']
             out = [math.cos(direction), math.sin(direction), 0]
             arm = radius * spec['arm'] * rng.uniform(.92, 1.05)
             low = HEIGHT * rng.uniform(*spec['heights'])
@@ -1031,7 +1074,8 @@ class Tree:
             origin = self.axis(low)
             corner = add(self.axis(low + arm * .3), out, reach)
             end = add(self.axis(high), out, reach * rng.uniform(.95, 1.08))
-            count = level['arm_rings']
+            # A many-armed saguaro over its budget bends its arms in fewer rings.
+            count = max(2, round(level['arm_rings'] * thinning))
             self.column([bezier(origin, corner, end, j / count) for j in range(count + 1)], arm, level['arm_sides'],
                         level['arm_cap'])
             tips.append(end)
