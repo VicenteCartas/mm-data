@@ -575,7 +575,9 @@ no rock or scatter geometry is generated in-game.
   names are in `tools/board-models/manifest.json`. Bridge spans are generated at runtime;
   reusable terminal and pier kits remain GLBs.
 - Each tree GLB contains `-lod0`, `-lod1`, and `-lod2` groups, with budgets
-  of 1000, 300 and 96 triangles including explicit back faces. The conifers,
+  of 1000, 300 and 96 triangles including explicit back faces (broadleaf trees
+  1600 and 410 on the two near levels, conifers 1200 on the near level; shrubs
+  480, 240 and 96; orchard trees 800, 300 and 110). The conifers,
   broadleaf trees, the volcano's cinder trees, the orchard trees, palms, saguaros,
   the dead tree and every family's level-one shrub (`foliage-<family>`, with
   `-2` and `-3` variants), and the winter files `pine-tall-snow`,
@@ -590,7 +592,7 @@ no rock or scatter geometry is generated in-game.
   with white blossoms on them; the dead tree as a bleached oak snag whose limbs
   end in fans of bare twigs; the cinder trees like ohia lehua on lava, gnarled
   and buttressed under rust and copper crowns; the orchard trees as pruned,
-  low-forked fruit trees whose sprays carry the fruit; the shrubs as stems
+  low-forked apple trees with red apples standing out on their crowns; the shrubs as stems
   carrying sprays of their family's cutout (hazel, mountain pine, juniper, shrub
   willow, snowed juniper, cinder shrub, creosote, sagebrush; ferns grow as
   trunkless palms). Fungal and Mars plants keep their own alien art. Change a
@@ -630,10 +632,9 @@ no rock or scatter geometry is generated in-game.
   from green foliage and preserve the birch's pale trunk and dark scars. Existing
   vertex colors tint the pale maps; dominant-axis UVs follow the tree's original
   proportions. Snow variants use their own authored geometry.
-- `orchard-*.glb`: six fruit-tree forms and their snow variants, with cutout leaf
-  cards. Their authored branch and apple counts stay intact at
-  each level; leaf cards use the remaining budget (480/240/84/12 triangles per
-  tree). Bark and fruit retain their orchard atlases.
+- `orchard-*.glb`: six apple tree forms (their winter files are the snow
+  variant): bark, leaf cards of the orchard cutout and solid apples whose texels
+  are an apple of that cutout, fewer and larger on the far levels.
 - `textures/vegetation/marsh-sedge_albedo.png`: the editable 1254 by 1254 RGBA sedge/cattail
   cutout for marsh vegetation. The renderer filters it to one shared 512 by 512
   texture with mipmaps; all three plant LODs use this same image. Ground peat,
@@ -768,7 +769,7 @@ the three mesh levels, owns a temporary Blender scene and preserves the active s
 `mmVariants.snow` on the impostor material) from LOD0 in that variant.
 
 `validate_board_assets.py` checks each manifest entry against its GLB: the plant levels `-lod0` to `-lod3` and
-their triangle budgets (1000, 300, 96 and 12), the triangle counts (at most 500 per other model), one-level building
+their triangle budgets (at most 1600, 410, 110 and 12), the triangle counts (at most 500 per other model), one-level building
 heights, roof winding and facade assignments, understory and orchard grounding, LOD0 height and every coarser
 level's height from 10% below to 1% above it,
 embedded images and that every external texture exists inside this directory. It refuses G3DJ meshes.

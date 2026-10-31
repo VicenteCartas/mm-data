@@ -39,7 +39,10 @@ from glb_geometry import display, linear, read_glb, write_glb  # noqa: E402
 BOARD = MM / 'data/models/board'
 MANIFEST = MM / 'tools/board-models/manifest.json'
 HEIGHT = 30.0
-BUDGETS = (1000, 300, 96)
+# Each family's triangle ceilings per level, about what its full design needs (a plant fills them only so far):
+# broadleaf crowns carry twigs and side shoots on the two near levels. Shrubs and orchards set their own.
+BUDGETS = {'broadleaf': (1600, 410, 96), 'conifer': (1200, 300, 96), 'palm': (1000, 300, 96),
+           'cactus': (1000, 300, 96)}
 # Each cutout's stem: U at its base on the bottom edge; V from the base to the tip (V runs down the image).
 STEMS = {'conifer': .55, 'broadleaf': .42}
 BASE_V, TIP_V = .985, .02
@@ -77,7 +80,7 @@ CONIFER_LEVELS = (
     dict(whorls=.85, per_whorl=1, between=0, width=1.25, segments=1, fold=False, sides=5, rings=3, core=2, leader=1,
          stubs=False, core_width=1.3),
     dict(whorls=.3, per_whorl=0, between=0, width=2.1, segments=1, fold=False, sides=4, rings=2, core=3, leader=1,
-         stubs=False, core_width=1.5))
+         stubs=False, core_width=1.75))
 # Conifer branches reaching further than this share of the crown's widest radius bend twice.
 LONG = .55
 
@@ -129,14 +132,15 @@ BROADLEAF = {
                          bark_role='bark', bark=(.44, .41, .37), leaves=(.84, .98, .72), cutout='willow',
                          snow_cutout='broadleaf'),
 }
-# How each level thins a broadleaf tree: clumps (share), crossed cards per clump, card size, twigs (share), limbs kept,
-# limb and twig sides, limb segments, trunk sides and rings; with few clumps they spread evenly over the crown. A far
-# level thinned to fit its budget widens its cards to keep the near level's cover.
+# How each level thins a broadleaf tree: clumps (share), crossed cards per clump, card size, twigs (share), forks per
+# twig, limbs kept, limb and twig sides, limb segments, trunk sides and rings; with few clumps they spread evenly over
+# the crown. A far level thinned to fit its budget widens its cards to keep the near level's cover. `reach`: how far
+# (in card sizes) a spray's base may lie from the wood before a twig grows out to it.
 BROADLEAF_LEVELS = (
-    dict(clumps=2, cards=1, size=1, twigs=1, limbs=99, limb_sides=4, twig_sides=3, segments=3, sides=6, rings=4,
-         even=False),
-    dict(clumps=.6, cards=1, size=1.8, twigs=0, limbs=4, limb_sides=3, twig_sides=3, segments=2, sides=5, rings=2,
-         even=False, cover=True),
+    dict(clumps=2, cards=1, size=1, twigs=2, forks=1, limbs=99, limb_sides=4, twig_sides=3, segments=3, sides=6,
+         rings=4, even=False, reach=.6),
+    dict(clumps=.6, cards=1, size=1.8, twigs=.5, limbs=4, limb_sides=3, twig_sides=3, segments=2, sides=5, rings=2,
+         even=False, cover=True, reach=1),
     dict(clumps=.17, cards=1, size=2.9, twigs=0, limbs=3, limb_sides=3, twig_sides=3, segments=1, sides=4, rings=1,
          even=True, cover=True))
 # Dry plants grow like broadleaf trees, with no winter variant and their own cutouts and bark: tree-dead an old oak
@@ -149,7 +153,7 @@ DRY = {
     'tree-dead': dict(seed=51, fork=.3, crown=(.58, .36, .33), trunk=.85, limbs=5, spread=(22, 62), rise=(.2, 1.0),
                       shell=(.55, .85), leader=False, twigs=3, clumps=36, leaf=.6, hang=0, flat=0, curtain=False,
                       bark_role='bark', bark_texture='dead-wood', bark_maps=('albedo', 'normal', 'orm'),
-                      bark=(.8, .78, .74), leaves=(.84, .8, .76), cutout='twig', far=.87, winter=False),
+                      bark=(.8, .78, .74), leaves=(.84, .8, .76), cutout='twig', far=.95, winter=False),
     'foliage-desert': dict(SHRUB, seed=61, crown=(.62, .48, .3), trunk=.38, limbs=8, spread=(20, 50), rise=(.5, 1.0),
                            lobes=(1, 1.35), deep=.3, clumps=85, leaf=.44, hang=0, bark=(.42, .37, .33),
                            leaves=(.7, .76, .54), cutout='creosote'),
@@ -201,24 +205,29 @@ CINDER = {
                                rise=(.2, .7), leader=True, twigs=1, clumps=100, leaf=.5, flat=0,
                                leaves=(.94, .86, .8), palette=((.62, .6, .5), (.94, .86, .8))),
 }
-# Orchard trees: pruned fruit trees standing in rows, low-forked, their crowns of fruiting apple sprays (the cutout
-# carries the fruit), the broadleaf snow in winter. `tilt` leans an old tree.
-ORCHARD_BASE = dict(budgets=(480, 240, 96), curtain=False, hang=.15, flat=0, twigs=1, bark_role='bark',
-                    bark_maps=('albedo', 'normal', 'orm'), bark=(.5, .44, .38), leaves=(.7, .97, .64),
-                    cutout='orchard', snow_cutout='broadleaf', lobes=(1, 1.05))
+# Orchard trees: pruned apple trees standing in rows, low-forked under broad rounded crowns of leafy apple canopy, red
+# apples standing out on the crown (exaggerated, so an orchard reads as one), the broadleaf snow in winter. `near`
+# overrides the near level: a lighter trunk and limbs whose only twigs grow out to the leaves, and cards widened as the
+# crown thins, so the tight budget keeps the crown closed around its fruit; `tilt` leans an old tree.
+ORCHARD_BASE = dict(budgets=(800, 300, 110), curtain=False, hang=.1, flat=.15, twigs=1, bark_role='bark',
+                    bark_maps=('albedo', 'normal', 'orm'), bark=(.5, .44, .38), leaves=(.82, .95, .76),
+                    cutout='orchard', snow_cutout='broadleaf', lobes=(1, 1.05), shell=(.6, .85), deep=.15,
+                    scatter=.2, floor=.68, leader=False, limbs=4, clumps=100, leaf=.42, apples=(10, 6, 4),
+                    apple=(.312, .7, .03, 1.3),
+                    near=dict(sides=5, rings=2, limb_sides=3, segments=2, twigs=0, cover=True))
 ORCHARD = {
-    'orchard-round': dict(ORCHARD_BASE, seed=81, fork=.22, crown=(.58, .31, .32), trunk=.55, limbs=5,
-                          spread=(35, 65), rise=(.3, .9), leader=False, clumps=90, leaf=.42),
-    'orchard-spreading': dict(ORCHARD_BASE, seed=82, fork=.18, crown=(.5, .41, .26), trunk=.6, limbs=6,
-                              spread=(55, 80), rise=(.1, .6), leader=False, clumps=90, leaf=.42),
-    'orchard-upright': dict(ORCHARD_BASE, seed=83, fork=.18, crown=(.6, .29, .38), trunk=.45, limbs=5,
-                            spread=(15, 35), rise=(.2, .7), leader=True, clumps=90, leaf=.45),
-    'orchard-vase': dict(ORCHARD_BASE, seed=84, fork=.2, crown=(.62, .36, .3), trunk=.55, limbs=4, spread=(30, 50),
-                         rise=(.8, 1.2), leader=False, clumps=90, leaf=.42, deep=.05),
-    'orchard-leaning': dict(ORCHARD_BASE, seed=85, fork=.25, crown=(.58, .33, .3), trunk=.6, limbs=5, spread=(30, 65),
-                            rise=(.3, 1.0), leader=False, clumps=90, leaf=.42, tilt=12, gnarl=.5),
-    'orchard-young': dict(ORCHARD_BASE, seed=86, fork=.3, crown=(.62, .29, .3), trunk=.35, limbs=4, spread=(25, 50),
-                          rise=(.4, 1.0), leader=False, clumps=70, leaf=.45),
+    'orchard-round': dict(ORCHARD_BASE, seed=81, fork=.17, crown=(.55, .36, .3), trunk=.55, spread=(40, 65),
+                          rise=(.1, .6)),
+    'orchard-spreading': dict(ORCHARD_BASE, seed=82, fork=.15, crown=(.5, .4, .26), trunk=.6, spread=(55, 80),
+                              rise=(.05, .5)),
+    'orchard-upright': dict(ORCHARD_BASE, seed=83, fork=.17, crown=(.58, .32, .3), trunk=.45, spread=(20, 40),
+                            rise=(.2, .7)),
+    'orchard-vase': dict(ORCHARD_BASE, seed=84, fork=.17, crown=(.56, .36, .3), trunk=.55, spread=(35, 55),
+                         rise=(.6, 1.0), deep=.1),
+    'orchard-leaning': dict(ORCHARD_BASE, seed=85, fork=.2, crown=(.55, .34, .3), trunk=.6, spread=(30, 65),
+                            rise=(.1, .7), tilt=12, gnarl=.5),
+    'orchard-young': dict(ORCHARD_BASE, seed=86, fork=.2, crown=(.6, .28, .28), trunk=.35, limbs=3, spread=(25, 50),
+                          rise=(.2, .8), clumps=85),
 }
 # Palms: crown height, the trunk's bend (its bezier control and top offsets, shares of the height), foot and crown
 # radii, fronds and their reach (share of the height), their elevations from the youngest to the oldest (degrees), sag
@@ -326,7 +335,14 @@ def materials(kind, spec, snow):
             'textures': [{'id': role, 'type': MAPS[suffix],
                           'filename': f'../textures/vegetation/{texture}_{suffix}.png'}
                          for suffix in spec.get('bark_maps', ('albedo',))]}
-    return [bark, canopy]
+    if 'apple' not in spec:
+        return [bark, canopy]
+    # Apples are solid balls sampling an apple of the canopy's own (summer) cutout.
+    fruit = {'id': 'fruit', 'diffuse': [1, 1, 1], 'roughness': 1, 'metallic': 0,
+             'textures': [{'id': 'fruit', 'type': role,
+                           'filename': f'../textures/vegetation/{spec["cutout"]}-cutout_{suffix}.png'}
+                          for suffix, role in MAPS.items()]}
+    return [bark, canopy, fruit]
 
 
 def add(a, b, s=1.0):
@@ -354,12 +370,22 @@ def bezier(a, b, c, t):
     return [(1 - t) ** 2 * a[i] + 2 * (1 - t) * t * b[i] + t * t * c[i] for i in range(3)]
 
 
+def along_line(points, share):
+    """The point a share of the way along a polyline."""
+    rest = share * sum(length(sub(b, a)) for a, b in zip(points, points[1:]))
+    for a, b in zip(points, points[1:]):
+        step = length(sub(b, a))
+        if rest <= step or b is points[-1]:
+            return add(a, sub(b, a), min(1.0, rest / step) if step else 0.0)
+        rest -= step
+
+
 class Tree:
-    """One level's geometry: interleaved vertices and the bark and canopy index lists."""
+    """One level's geometry: interleaved vertices and the bark, canopy and fruit index lists."""
 
     def __init__(self, kind, spec, rng):
         self.kind, self.spec, self.rng = kind, spec, rng
-        self.vertices, self.parts = [], {'bark': [], 'canopy': []}
+        self.vertices, self.parts = [], {'bark': [], 'canopy': [], 'fruit': []}
         # A slight lean, or a strong one (`tilt`, an old orchard tree).
         self.lean = [rng.uniform(-.25, .25) * spec.get('tilt', 1) for _ in range(2)]
         self.stem = STEMS.get(spec.get('cutout', kind), .5)
@@ -646,8 +672,9 @@ class Tree:
         r = rx * math.sqrt(h) * share
         return [self.centre[0] + math.cos(azimuth) * r, self.centre[1] + math.sin(azimuth) * r, z]
 
-    def skeleton(self, level):
-        """Limbs from the fork (or along a leader) and their twigs: lists of points with radii and ends for clumps."""
+    def skeleton(self, level, thinning=1.0):
+        """Limbs from the fork (or along a leader) and their twigs, fewer as the level thins: lists of points with radii
+        and ends for clumps."""
         spec, rng = self.spec, self.rng
         rx, rz = self.radii
         top = self.centre[2] + rz * .92
@@ -691,7 +718,7 @@ class Tree:
             radii = [max(.06, radius * (1 - .8 * k / segments)) for k in range(segments + 1)]
             branches.append((points, radii, 'limb'))
             tips.append((end, 1.0))
-            twigs = round(spec['twigs'] * level['twigs'])
+            twigs = round(spec['twigs'] * level['twigs'] * thinning)
             for _ in range(twigs):
                 s = rng.uniform(.35, .85)
                 base = bezier(origin, control, end, s)
@@ -703,12 +730,23 @@ class Tree:
                 twig = max(.04, radius * (1 - .8 * s) * .5)
                 branches.append(([base, middle, tip], [twig, twig * .6, .03], 'twig'))
                 tips.append((tip, .8))
+                for _ in range(level.get('forks', 0)):
+                    # A side shoot leaves the twig's outer half for its own part of the shell, so the gaps between
+                    # the leaf clumps show wood branching all the way out.
+                    shoot = bezier(base, middle, tip, rng.uniform(.4, .7))
+                    turn = azimuth + rng.choice((-1, 1)) * rng.uniform(.35, .8)
+                    z = shoot[2] + rz * rng.uniform(-.15, .35)
+                    z = max(self.centre[2] - rz * .7, min(z, self.centre[2] + rz * .85))
+                    end = self.inside(self.shell(turn, z, rng.uniform(.8, .97)), .95)
+                    bend = add(bezier(shoot, shoot, end, .5), [0, 0, length(sub(end, shoot)) * .1])
+                    branches.append(([shoot, bend, end], [twig * .6, twig * .4, .03], 'twig'))
+                    tips.append((end, .6))
         return branches, tips
 
     def clump(self, centre, size, cards, hang, curtain, value=1.0):
         """A clump of leaf cards around centre, facing out of the crown so the iso and top views see their faces, the
         twig in each running up (or, as clumps hang, down) the crown's surface; shaded as a dome, times value. A
-        curtain hangs straight down from centre instead."""
+        curtain hangs straight down from centre instead. Returns where its sprays start."""
         spec, rng = self.spec, self.rng
         out = self.ellipsoid_normal(centre)
         if spec['flat']:
@@ -716,6 +754,9 @@ class Tree:
             out = normalized(add(out, [0, 0, 1], spec['flat'] * 2))
         # Cards tip up a little so the rim's clumps still show their faces from above.
         facing = normalized(add(add(out, [0, 0, .35]), [rng.gauss(0, spec.get('scatter', .3)) for _ in range(3)]))
+        if spec['twigs'] and out[2] > .6:
+            # A tree's top clumps lie open to the sky, none standing proud of the crown.
+            facing = normalized(add(facing, [0, 0, 1], 3 * (out[2] - .6)))
         if curtain:
             facing = normalized([out[0], out[1], 0]) if math.hypot(out[0], out[1]) > .1 else [1, 0, 0]
         # The twig runs along the card: up the surface, or down it as the clumps hang.
@@ -765,10 +806,11 @@ class Tree:
                 colors.append([[tint[0] * lit, tint[1] * lit, tint[2] * lit]] * 2)
                 uvs.append([[1, v], [0, v]] if mirror else [[0, v], [1, v]])
             self.surface(rows, normals, colors, uvs)
+        return base
 
     def broadleaf(self, level, thinning):
         spec, rng = self.spec, self.rng
-        branches, tips = self.skeleton(level)
+        branches, tips = self.skeleton(level, thinning)
         trunk_top = self.fork + (1.5 if not spec['leader'] else 0)
         self.trunk(level['sides'], level['rings'], trunk_top, self.fork)
         for points, radii, role in branches:
@@ -787,6 +829,10 @@ class Tree:
                  for tip, weight in tips]
         lobes.append(([0, 0, 1], 3, 1.0))
         weights = [w for _, w, _ in lobes]
+        # A crown grown with twigs leaves no clump floating at the near levels (see below).
+        grown = spec['twigs'] and not level['even'] and not spec['curtain']
+        wood = [along_line(points, k / 6) for points, _, _ in branches for k in range(1, 7)] if grown else []
+        leaves = []
         phase = rng.uniform(0, math.tau)
         for k in range(count):
             # A willow's top is a dome of larger drooping clumps over its arched limbs, spread evenly so the top view
@@ -820,8 +866,55 @@ class Tree:
             # Far curtains are fewer, so wider (their length is bounded by the ground).
             scale = (1.35 if dome else 1.3 if curtain and level.get('cover') else 1) * rng.uniform(.85, 1.15)
             # The dome's strands fall every way over it, a little darker than the curtains catching the light.
-            self.clump(centre, size * scale, level['cards'], .5 if dome else spec['hang'], curtain,
-                       .9 if dome else 1)
+            base = self.clump(centre, size * scale, level['cards'], .5 if dome else spec['hang'], curtain,
+                              .9 if dome else 1)
+            if wood:
+                leaves.append(base)
+        # The wood grows out to every spray it does not reach yet, so no leaves float in the air: a thin twig from the
+        # nearest wood to the spray's base, which also carries the sprays beside it.
+        for base in leaves:
+            near = min(wood, key=lambda p: length(sub(p, base)))
+            if length(sub(base, near)) > size * level['reach']:
+                self.tube([near, base], [.06, .03], level['twig_sides'], .72)
+                wood += [along_line([near, base], k / 3) for k in range(1, 4)]
+
+    def apples(self, count, sides, rings):
+        """Apples on the outside of the crown's top and sides, where the iso and top views find them: small solid balls
+        (`apple`: an apple's UV centre and radius in the cutout, and the ball's diameter) whose texels are that apple,
+        `sides` round and `rings` of latitude between their poles. A far level's fewer apples are larger, keeping the
+        crown's share of fruit."""
+        if not count:
+            return
+        u, v, reach, diameter = self.spec['apple']
+        rng = self.rng
+        rx, rz = self.radii
+        phase = rng.uniform(0, math.tau)
+        for k in range(count):
+            # A Fibonacci spiral over the crown, never its underside.
+            z = .9 - 1.25 * (k + .5) / count
+            ring = math.sqrt(1 - z * z)
+            angle = phase + k * 2.39996 + rng.uniform(-.3, .3)
+            share = rng.uniform(.86, .96)
+            centre = add(self.centre, [ring * math.cos(angle) * rx, ring * math.sin(angle) * rx, z * rz], share)
+            r = diameter * .5 * math.sqrt(self.spec['apples'][0] / count) * rng.uniform(.85, 1.15)
+            spin = rng.uniform(0, math.tau)
+            # A little flattened: poles on the apple's centre texel, the widest ring on the apple's edge.
+            points = [([0, 0, r * .9], (u, v)), ([0, 0, -r * .9], (u, v))]
+            for k in range(rings):
+                latitude = math.pi / 2 - math.pi * (k + 1) / (rings + 1)
+                across, up = math.cos(latitude), math.sin(latitude)
+                for j in range(sides):
+                    turn = j * math.tau / sides
+                    point = [r * across * math.cos(spin + turn), r * across * math.sin(spin + turn), r * .9 * up]
+                    points.append((point, (u + reach * across * math.cos(turn), v + reach * across * math.sin(turn))))
+            ids = [self.vertex(add(centre, p), normalized(p), [1, 1, 1], uv) for p, uv in points]
+            ring = lambda k, j: ids[2 + k * sides + j % sides]
+            for j in range(sides):
+                self.parts['fruit'].extend((ids[0], ring(0, j), ring(0, j + 1),
+                                            ids[1], ring(rings - 1, j + 1), ring(rings - 1, j)))
+                for k in range(rings - 1):
+                    a, b, c, d = ring(k, j), ring(k, j + 1), ring(k + 1, j + 1), ring(k + 1, j)
+                    self.parts['fruit'].extend((a, d, c, a, c, b))
 
     # Palms
 
@@ -970,7 +1063,10 @@ def grow(kind, spec, index, thinning):
     elif kind == 'cactus':
         tree.cactus(CACTUS_LEVELS[index], thinning)
     else:
-        tree.broadleaf(BROADLEAF_LEVELS[index], thinning)
+        level = BROADLEAF_LEVELS[index]
+        tree.broadleaf({**level, **spec['near']} if index == 0 and 'near' in spec else level, thinning)
+        # The far level's apples are three-sided.
+        tree.apples(spec.get('apples', (0, 0, 0))[index], *((6, 1), (6, 1), (3, 1))[index])
     tree.fit()
     return tree
 
@@ -981,7 +1077,7 @@ def model(name, index):
     # A crown over its level's budget loses branches or clumps until it fits.
     thinning = 1.0
     tree = grow(kind, spec, index, thinning)
-    budget = spec.get('budgets', BUDGETS)[index]
+    budget = spec.get('budgets', BUDGETS[kind])[index]
     while sum(map(len, tree.parts.values())) // 3 > budget:
         thinning *= .95
         if thinning < .1:
@@ -1008,7 +1104,7 @@ def model(name, index):
             for c in range(3):
                 vertices[i * 12 + 6 + c] += (.98 - vertices[i * 12 + 6 + c]) * cover
     asset = f'{name}-lod{index}'
-    roles = [(role, material) for role, material in zip(('bark', 'canopy'), materials(kind, spec, snow))
+    roles = [(role, material) for role, material in zip(('bark', 'canopy', 'fruit'), materials(kind, spec, snow))
              if tree.parts[role]]
     parts = [{'id': f'{asset}-{role}', 'type': 'TRIANGLES', 'indices': tree.parts[role]} for role, _ in roles]
     return {'id': asset, 'meshes': [{'attributes': ['POSITION', 'NORMAL', 'COLOR', 'TEXCOORD0'],
