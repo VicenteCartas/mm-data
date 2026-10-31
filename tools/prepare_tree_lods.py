@@ -8,6 +8,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from glb_geometry import read_glb, write_glb
 
+import copy
 import json
 import math
 
@@ -368,6 +369,36 @@ def impostor(scene, model, name, images):
                  'wrapS': 33071, 'wrapT': 33071}]}]}
 
 
+def winter(model):
+    """LOD0 in its snow variant (mmVariants.snow on a canopy material): the variant's maps under its name, the
+    canopy's vertex colours times its linear colour scale, as the game builds the winter form (RigidGlb.source)."""
+    variants = {material['id']: material['extras']['mmVariants']['snow'] for material in model['materials']
+                if material['id'] != 'impostor' and 'snow' in material.get('extras', {}).get('mmVariants', {})}
+    if not variants:
+        return None
+    result = copy.deepcopy(model)
+    mesh = result['meshes'][0]
+    roles = material_roles(model)
+    for part in mesh['parts']:
+        scale = variants.get(roles[part['id']], {}).get('colourScale')
+        for index in set(part['indices']) if scale else ():
+            for channel in range(3):
+                mesh['vertices'][index * 12 + 6 + channel] *= scale[channel]
+    def rename(node):
+        for part in node.get('parts', []):
+            part['materialid'] = variants.get(part['materialid'], {}).get('name', part['materialid'])
+        for child in node.get('children', []):
+            rename(child)
+    for node in result['nodes']:
+        rename(node)
+    for material in result['materials']:
+        if material['id'] in variants:
+            variant = variants[material['id']]
+            material['id'] = variant['name']
+            material['textures'][0]['filename'] = variant['textures']['baseColor']
+    return result
+
+
 def impostors(only=None):
     """Add or refresh LOD3 of every plant with detail levels, keeping its other levels as they are."""
     manifest = json.loads(MANIFEST.read_text())
@@ -419,6 +450,13 @@ def impostors(only=None):
             for model in levels.values():
                 model['materials'] = [material for material in model['materials'] if material['id'] != 'impostor']
             levels[3] = impostor(scene, levels[0], name, images)
+            # A winter form kept as a material variant gets its own impostor render and card colours.
+            cold = winter(levels[0])
+            if cold:
+                frozen = impostor(scene, cold, name + '-snow', images)['meshes'][0]['vertices']
+                extras = {'mmVariants': {'snow': {
+                    'textures': {'baseColor': f'../{IMPOSTORS}/{name}-snow.png'},
+                    'colours': [frozen[i + 6:i + 10] for i in range(0, len(frozen), 12)]}}}
             if extras:
                 levels[3]['materials'][0]['extras'] = extras
             entry['lods'] = entry['lods'][:3] + [{'node': f'{name}-lod3', **counts(levels[3])}]

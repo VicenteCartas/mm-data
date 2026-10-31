@@ -21,7 +21,7 @@ for asset, entry in features.items():
         name = asset.rsplit('/', 1)[-1]
         assert [lod['node'] for lod in entry['lods']] == [f'{name}-lod{level}' for level in range(4)], asset
         for level, lod in enumerate(entry['lods']):
-            assert 0 < lod['triangles'] <= (480, 240, 96, 12)[level], lod
+            assert 0 < lod['triangles'] <= (1000, 300, 96, 12)[level], lod
             catalog[lod['node']] = lod
             lods[lod['node']] = (BOARD / entry['mesh'], level)
 maximum = 0
@@ -65,7 +65,8 @@ for asset in catalog:
                     a, b, c = [vertices[index * 12:index * 12 + 3] for index in indices[offset:offset + 3]]
                     normal_z = (b[0]-a[0])*(c[1]-a[1])-(b[1]-a[1])*(c[0]-a[0])
                     assert normal_z > 0, f'Roof winding: {path}'
-    assert 0 < triangles <= 500, (path, triangles)
+    # Plant levels keep their own budgets (above); every other model stays within 500 triangles.
+    assert 0 < triangles <= (1000 if asset in lods else 500), (path, triangles)
     assert triangles == catalog[asset]['triangles'], (asset, path)
     maximum = max(maximum, triangles)
     for material in model['materials']:

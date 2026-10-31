@@ -575,15 +575,17 @@ no rock or scatter geometry is generated in-game.
   names are in `tools/board-models/manifest.json`. Bridge spans are generated at runtime;
   reusable terminal and pier kits remain GLBs.
 - Each tree GLB contains `-lod0`, `-lod1`, and `-lod2` groups, with budgets
-  of 480, 240 and 96 triangles including explicit back faces. Sixteen leafy
-  variants retain their authored trunks and crown envelopes but replace closed
-  leaf shells with cutout branch clusters. Standard glTF `MASK` materials use
-  a 0.5 alpha threshold in color, depth and shadow passes. Pine branch roots
-  follow the authored curved trunk. Palms use curved, folded cutout fronds;
-  cacti retain their stem silhouettes with smooth normals, mapped ribs and
-  cutout flowers. Dead trees keep their existing near meshes and decimated or
-  component-hull distant meshes. These runtime GLBs are the maintained tree
-  meshes.
+  of 1000, 300 and 96 triangles including explicit back faces. The sixteen
+  conifers and broadleaf trees, and the winter files `pine-tall-snow`,
+  `tree-forked-snow` and `willow-snow`, are grown from each species' botany by
+  `tools/board-models/foliage/build_trees.py`: conifers as whorls of bent spray
+  cards folded along their stems on a straight trunk; broadleaf trees as forked
+  limbs and twigs ending in clumps of crossed leaf cards, each clump shaded as a
+  dome. Change a species there and rebuild it rather than editing its GLB.
+  Standard glTF `MASK` materials use a 0.5 alpha threshold in color, depth and
+  shadow passes. Palms use curved, folded cutout fronds; cacti retain their stem
+  silhouettes with smooth normals, mapped ribs and cutout flowers. Dead trees
+  keep their existing near meshes and decimated or component-hull distant meshes.
   A `-lod3` group holds the plant's impostor: two crossed vertical cards and a
   horizontal cap through the crown, 12 triangles with their backs, textured by
   `textures/vegetation/impostors/<name>.png` (three 128 by 128 unlit renders of
@@ -743,18 +745,19 @@ The GLB, PNG and JSON files here are the source: edit them directly. Run the too
 
 ```text
 python tools/materials/export.py
+python tools/board-models/foliage/build_trees.py [names...]
 blender --background --factory-startup --python tools/prepare_tree_lods.py -- impostors [names...]
 python tools/validate_board_assets.py
 ```
 
 `export.py` exports every Material Maker project under `tools/materials/` into `textures/`. After editing a
 plant GLB, `prepare_tree_lods.py` re-bakes its LOD3 impostor (every plant's without names); the bake preserves
-the three mesh levels, owns a temporary Blender scene and preserves the active scene. The 19 species whose
-`-snow` form is a material variant keep their winter impostor (`mmVariants.snow` on the impostor material) as
-it is: the bake does not re-render it.
+the three mesh levels, owns a temporary Blender scene and preserves the active scene. For the 19 species whose
+`-snow` form is a material variant it also renders the winter impostor (`<name>-snow.png` and its card colours,
+`mmVariants.snow` on the impostor material) from LOD0 in that variant.
 
 `validate_board_assets.py` checks each manifest entry against its GLB: the plant levels `-lod0` to `-lod3` and
-their triangle budgets (480, 240, 96 and 12), the triangle counts (at most 500 per model), one-level building
+their triangle budgets (1000, 300, 96 and 12), the triangle counts (at most 500 per other model), one-level building
 heights, roof winding and facade assignments, understory and orchard grounding, LOD0 height and every coarser
 level's height from 10% below to 1% above it,
 embedded images and that every external texture exists inside this directory. It refuses G3DJ meshes.
@@ -767,13 +770,12 @@ Roof/terrain/water art comes from the existing MegaMek data tileset; its license
 headers and original paths are retained. The repository license remains at
 `../../../LICENSE`.
 
-Trees are simplified derivatives of Quaternius's **Ultimate Nature
-Pack (June 2019)**: `CommonTree_1/2/4`, `CommonTree_Dead_2`, `PineTree_1/2/3`,
-`BirchTree_2`, `Willow_2`, their corresponding snow models, `PalmTree_1/2`,
-`Cactus_2` and `CactusFlowers_2`. The supplied CC0 notice is preserved
-in `QUATERNIUS-LICENSE.txt`.
+The dead tree, palms and cacti are simplified derivatives of Quaternius's
+**Ultimate Nature Pack (June 2019)**: `CommonTree_Dead_2` and its snow model,
+`PalmTree_1/2`, `Cactus_2` and `CactusFlowers_2`. The supplied CC0 notice is
+preserved in `QUATERNIUS-LICENSE.txt`.
 
-The crop model and the bridge terminal and pier kits are original work.
+The crop model, the grown trees and the bridge terminal and pier kits are original work.
 Dirt, sandstone, rock, concrete and windowed facade albedos were generated with
 the built-in image_gen tool; exact prompts are in
 `../../../tools/board-texture-prompts.json`. The seven contextual facade albedos
