@@ -595,7 +595,11 @@ no rock or scatter geometry is generated in-game.
   low-forked apple trees with red apples standing out on their crowns; the shrubs as stems
   carrying sprays of their family's cutout (hazel, mountain pine, juniper, shrub
   willow, snowed juniper, cinder shrub, creosote, sagebrush; ferns grow as
-  trunkless palms). Fungal and Mars plants keep their own alien art. Change a
+  trunkless palms). The fungus theme's woods (`fungus/cup-*`, `fungus/spore-*`)
+  grow as orange-red cup fungi on fleshy stalks and red puffballs in glowing
+  mycelium, the Mars corals (`mars/*`) as tubes, branching fingers, sea fans,
+  shelves and brain-coral heaps on a mineral root crust, dusted red. The fungal
+  cliff and scatter colonies keep the fungus atlas. Change a
   species there and rebuild it rather than editing its GLB.
   Standard glTF `MASK` materials use a 0.5 alpha threshold in color, depth and
   shadow passes.

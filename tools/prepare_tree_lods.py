@@ -55,7 +55,7 @@ def counts(model):
 
 def solid(role):
     """Roles the game lights as solid rather than as a canopy (GpuTerrain.foliage)."""
-    return role.startswith('bark') or role in ('cactus', 'fruit')
+    return role.startswith('bark') or role in ('cactus', 'fruit', 'coral', 'mycelium')
 
 
 def material_roles(model):
@@ -71,32 +71,36 @@ def material_roles(model):
     return roles
 
 
-def unlit_material(role, filename, images):
-    """Unlit pigment; the impostor bake filters sRGB textures in linear light."""
+def unlit_material(role, filename, images, cutout=False):
+    """Unlit pigment; the impostor bake filters sRGB textures in linear light. An untextured material (the glowing
+    mycelium) is its vertex colour alone; a cutout (`-cutout` or alpha-tested) keeps only its texture's opaque
+    texels."""
     material = bpy.data.materials.new(role)
     material.use_nodes = True
     material.use_backface_culling = True
     nodes, links = material.node_tree.nodes, material.node_tree.links
     nodes.clear()
-    if filename not in images:
-        # The bake owns its image copies; never change an open scene's existing image color space.
-        images[filename] = bpy.data.images.load(str(PLANTS / filename), check_existing=False)
-        images[filename].colorspace_settings.name = 'sRGB'
-    texture = nodes.new('ShaderNodeTexImage')
-    texture.image = images[filename]
-    texture.interpolation = 'Linear'
     color = nodes.new('ShaderNodeVertexColor')
     color.layer_name = 'Color'
-    product = nodes.new('ShaderNodeVectorMath')
-    product.operation = 'MULTIPLY'
-    links.new(texture.outputs['Color'], product.inputs[0])
-    links.new(color.outputs['Color'], product.inputs[1])
-    albedo = product.outputs[0]
+    albedo = color.outputs['Color']
+    if filename is not None:
+        if filename not in images:
+            # The bake owns its image copies; never change an open scene's existing image color space.
+            images[filename] = bpy.data.images.load(str(PLANTS / filename), check_existing=False)
+            images[filename].colorspace_settings.name = 'sRGB'
+        texture = nodes.new('ShaderNodeTexImage')
+        texture.image = images[filename]
+        texture.interpolation = 'Linear'
+        product = nodes.new('ShaderNodeVectorMath')
+        product.operation = 'MULTIPLY'
+        links.new(texture.outputs['Color'], product.inputs[0])
+        links.new(color.outputs['Color'], product.inputs[1])
+        albedo = product.outputs[0]
     # Snow uses its authored texture and vertex pigment, just like the runtime foliage shader.
     emission = nodes.new('ShaderNodeEmission')
     links.new(albedo, emission.inputs['Color'])
     output = nodes.new('ShaderNodeOutputMaterial')
-    if role.endswith('-cutout'):
+    if filename is not None and (cutout or role.endswith('-cutout')):
         threshold = nodes.new('ShaderNodeMath')
         threshold.operation = 'GREATER_THAN'
         threshold.inputs[1].default_value = .5
@@ -120,7 +124,9 @@ def unlit_mesh(model, name, images):
     """LOD0 with one vertex per corner, so every authored colour and texture coordinate survives."""
     mesh = model['meshes'][0]
     source = mesh['vertices']
-    textures = {material['id']: material['textures'][0]['filename'] for material in model['materials']}
+    textures = {material['id']: material['textures'][0]['filename'] if material.get('textures') else None
+                for material in model['materials']}
+    cutouts = {material['id'] for material in model['materials'] if 'alphaTest' in material}
     bound_roles = material_roles(model)
     vertices, faces, colors, uvs, roles = [], [], [], [], []
     for part in mesh['parts']:
@@ -145,7 +151,7 @@ def unlit_mesh(model, name, images):
     for polygon, role in zip(data.polygons, roles):
         if role not in materials:
             materials[role] = len(data.materials)
-            data.materials.append(unlit_material(role, textures[role], images))
+            data.materials.append(unlit_material(role, textures[role], images, role in cutouts))
         polygon.material_index = materials[role]
     data.update()
     return data
