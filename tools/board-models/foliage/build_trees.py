@@ -42,7 +42,7 @@ HEIGHT = 30.0
 # Each family's triangle ceilings per level, about what its full design needs (a plant fills them only so far):
 # broadleaf crowns carry twigs and side shoots on the two near levels. Shrubs and orchards set their own.
 BUDGETS = {'broadleaf': (1600, 410, 96), 'conifer': (1200, 300, 96), 'palm': (1000, 300, 96),
-           'cactus': (1000, 300, 96), 'fungus': (1600, 410, 96), 'coral': (1600, 410, 96)}
+           'cactus': (1000, 300, 96), 'fungus': (1600, 410, 96)}
 # Each cutout's stem: U at its base on the bottom edge; V from the base to the tip (V runs down the image).
 STEMS = {'conifer': .55, 'broadleaf': .42}
 BASE_V, TIP_V = .985, .02
@@ -302,41 +302,6 @@ FUNGI = {
 FUNGUS_LEVELS = (dict(sides=18, rings=6, stalk=6, threads=1, ball=(14, 9)),
                  dict(sides=10, rings=3, stalk=4, threads=0, ball=(8, 5)),
                  dict(sides=6, rings=2, stalk=3, threads=0, ball=(5, 3)))
-# Mars corals: mineral colonies on the regolith, in four growth forms. `tubes` (count, height and radius ranges as
-# shares of the height, spread, arrangement: a grove, a crown ring or tight organ pipes), `branches` (stems, forks,
-# their spread in degrees, whether they fork in one plane like an antler, thickness), `fans` (count and fold: sea-fan
-# lattices on a short stem) and `plates` (count and whether they wind up a spiral) or `lobes` (brain-coral domes).
-# `skin` is the coral texture and `tint` its colour; red dust settles on everything facing the sky.
-CORAL_BASE = dict(folder='mars', winter=False, trunk=1.2, skin='mars/coral-skin', bark=(.94, 1, .86),
-                  tint=(.94, 1, .86))
-# Colours are near white over the neutral textures, as the game multiplies them in linear light; a colony is fitted
-# to its woods' height and keeps its proportions, so each grows wider than it is tall.
-CORALS = {
-    'tube-grove': dict(CORAL_BASE, seed=101, tubes=(7, (.45, .85), (.11, .16), .44, 'grove')),
-    'tube-crown': dict(CORAL_BASE, seed=102, tubes=(7, (.55, .9), (.1, .14), .36, 'ring'), tint=(.96, .98, .84),
-                       bark=(.96, .98, .84)),
-    'organ-pipes': dict(CORAL_BASE, seed=103, tubes=(10, (.55, .95), (.06, .09), .26, 'pipes'),
-                        tint=(.92, .9, .82), bark=(.92, .9, .82)),
-    'finger-spires': dict(CORAL_BASE, seed=104, branches=(7, 2, 26, False, .11), tint=(.97, .9, .76),
-                          bark=(.97, .9, .76)),
-    'finger-crown': dict(CORAL_BASE, seed=105, branches=(9, 2, 44, False, .09), tint=(.96, .88, .74),
-                         bark=(.96, .88, .74)),
-    'antler-crown': dict(CORAL_BASE, seed=106, branches=(4, 3, 40, True, .1), tint=(.98, .92, .8),
-                         bark=(.98, .92, .8)),
-    'lattice-spires': dict(CORAL_BASE, seed=107, branches=(7, 3, 30, False, .06), tint=(.96, .8, .76),
-                           bark=(.96, .8, .76)),
-    'fan-scalloped': dict(CORAL_BASE, seed=108, fans=(4, 0), tint=(1, .9, .86), bark=(1, .9, .86)),
-    'fan-folded': dict(CORAL_BASE, seed=109, fans=(5, .1), tint=(.98, .86, .82), bark=(.98, .86, .82)),
-    'plate-terraces': dict(CORAL_BASE, seed=110, plates=(5, False), tint=(.92, .9, .8), bark=(.92, .9, .8)),
-    'spiral-whorls': dict(CORAL_BASE, seed=111, plates=(6, True), tint=(.88, .92, .8), bark=(.88, .92, .8)),
-    'brain-lobes': dict(CORAL_BASE, seed=112, lobes=6, skin='mars/brain-coral', tint=(.98, .93, .84),
-                        bark=(.98, .93, .84)),
-}
-CORAL_LEVELS = (dict(sides=10, rings=5, branch_sides=6, segments=4, fan=(8, 6), lobe=(12, 8), plate=18),
-                dict(sides=6, rings=3, branch_sides=4, segments=2, fan=(4, 3), lobe=(7, 5), plate=10),
-                dict(sides=4, rings=1, branch_sides=3, segments=1, fan=(2, 2), lobe=(5, 3), plate=6))
-# Settled regolith dust on a coral's sky-facing surfaces.
-DUST = (.78, .52, .4)
 CACTUS_LEVELS = (dict(sides=12, rings=10, cap=4, arm_sides=8, arm_rings=8, arm_cap=4, blossoms=4),
                  dict(sides=7, rings=4, cap=2, arm_sides=6, arm_rings=4, arm_cap=2, blossoms=2),
                  dict(sides=5, rings=2, cap=1, arm_sides=4, arm_rings=2, arm_cap=0, blossoms=2))
@@ -359,7 +324,7 @@ def variants(plants):
 
 
 DRY, PALMS = variants(DRY), variants(PALMS)
-SPECIES = {**CONIFERS, **BROADLEAF, **DRY, **CINDER, **ORCHARD, **PALMS, **CACTI, **FUNGI, **CORALS}
+SPECIES = {**CONIFERS, **BROADLEAF, **DRY, **CINDER, **ORCHARD, **PALMS, **CACTI, **FUNGI}
 
 
 def species(name):
@@ -370,7 +335,7 @@ def species(name):
 def family(name):
     name = species(name)
     return ('conifer' if name in CONIFERS else 'palm' if name in PALMS else 'cactus' if name in CACTI
-            else 'fungus' if name in FUNGI else 'coral' if name in CORALS else 'broadleaf')
+            else 'fungus' if name in FUNGI else 'broadleaf')
 
 
 def snow_scale(spec):
@@ -393,15 +358,10 @@ def materials(kind, spec, snow):
     """(part, material) pairs: the bark (or cactus skin) and the canopy's cutout. A tree with a winter variant carries
     it on the canopy (its winter file is that variant); a plant without one keeps its own cutout in winter, its snowy
     cards still taking the snow's response. A fungal colony's skin is solid, its cups the fungal tissue and its
-    threads the untextured glowing mycelium; a coral is solid, its sea fans a cutout."""
+    threads the untextured glowing mycelium."""
     if kind == 'fungus':
         return [('bark', tissue('bark-fungus', spec['skin'])), ('canopy', tissue('fungus', 'fungus/cup-inside')),
                 ('glow', {'id': 'mycelium', 'diffuse': [1, 1, 1], 'roughness': 1, 'metallic': 0, 'textures': []})]
-    if kind == 'coral':
-        fan = tissue('bark-fan', 'mars/sea-fan-cutout', alphaTest=.5)
-        for texture in fan['textures']:
-            texture.update(wrapS=33071, wrapT=33071)
-        return [('bark', tissue('coral', spec['skin'])), ('canopy', fan)]
     winter = spec.get('winter', True)
     cutout = spec.get('cutout', kind)
     if snow and winter:
@@ -1280,197 +1240,6 @@ class Tree:
                      wobble=lambda a, t: (1 + .06 * math.sin(3 * a + phase[0]) * math.sin(math.pi * t)
                                           + .03 * math.sin(7 * a + phase[1]), 0))
 
-    # Mars corals
-
-    def coral(self, level, thinning):
-        spec, rng = self.spec, self.rng
-        sides = max(3, round(level['sides'] * math.sqrt(thinning)))
-        self.crust(spec.get('crust', .45) * HEIGHT, max(4, sides), level)
-        if 'tubes' in spec:
-            count, heights, radii, spread, kind = spec['tubes']
-            for k in range(max(2, round(count * min(1, thinning * 1.4)))):
-                if kind == 'ring':
-                    angle, reach = math.tau * k / count + rng.uniform(-.2, .2), spread * HEIGHT
-                else:
-                    angle, reach = rng.uniform(0, math.tau), spread * HEIGHT * math.sqrt(rng.random())
-                foot = [math.cos(angle) * reach, math.sin(angle) * reach]
-                tall = HEIGHT * (1 if k == 0 else rng.uniform(*heights))
-                # Outer tubes lean out from the colony.
-                lean = (math.cos(angle) * rng.uniform(.05, .2), math.sin(angle) * rng.uniform(.05, .2))
-                self.coral_tube(foot, tall, HEIGHT * rng.uniform(*radii), sides, level, lean)
-        if 'branches' in spec:
-            stems, forks, spread, flat, thick = spec['branches']
-            # A colony over its budget forks less, then grows fewer stems.
-            forks -= (thinning < .6) + (thinning < .3)
-            plane = rng.uniform(0, math.tau)
-            for k in range(max(2, round(stems * min(1, thinning * 1.5)))):
-                angle = plane + (rng.choice((0, math.pi)) if flat else math.tau * k / stems) + rng.uniform(-.3, .3)
-                tilt = math.radians(rng.uniform(4, spread * .6) if k else 2)
-                direction = [math.sin(tilt) * math.cos(angle), math.sin(tilt) * math.sin(angle), math.cos(tilt)]
-                self.coral_branch([0, 0, 0], direction, HEIGHT * rng.uniform(.4, .55) * (1 if k == 0 else .85),
-                                  thick * HEIGHT, forks, spread, plane if flat else None, level, thinning)
-        if 'fans' in spec:
-            for k in range(max(1, round(spec['fans'][0] * min(1, thinning * 1.6)))):
-                self.fan(k, spec['fans'][1], level)
-        if 'plates' in spec:
-            count, spiral = spec['plates']
-            count = max(2, round(count * min(1, thinning * 1.6)))
-            column = [[0, 0, 0], [0, 0, HEIGHT * .5], [0, 0, HEIGHT * .86], [0, 0, HEIGHT * .92]]
-            self.tube(column, [HEIGHT * .06, HEIGHT * .045, HEIGHT * .03, HEIGHT * .02], max(4, sides), .85, cap=1)
-            for k in range(count):
-                share = (k + 1) / (count + 1)
-                angle = k * 2.39996 if spiral else rng.uniform(0, math.tau)
-                off = HEIGHT * (.1 if spiral else .03)
-                centre = [math.cos(angle) * off, math.sin(angle) * off, HEIGHT * (.12 + .82 * share)]
-                self.plate(centre, HEIGHT * (.48 - .26 * share) * rng.uniform(.85, 1.1),
-                           max(5, round(level['plate'] * math.sqrt(thinning))), level)
-        lobes = max(2, round(spec.get('lobes', 0) * min(1, thinning * 1.6))) if 'lobes' in spec else 0
-        for k in range(lobes):
-            # A heap: a ring of lobes on the ground, the later ones riding on them toward the top.
-            share = k / max(1, lobes - 1)
-            angle, reach = k * 2.39996, HEIGHT * .32 * (1 - share)
-            size = HEIGHT * rng.uniform(.2, .28)
-            self.lobe([math.cos(angle) * reach, math.sin(angle) * reach, HEIGHT * .55 * share], size, level, thinning)
-
-    def crust(self, radius, sides, level):
-        """The colony's mineral root layer: a flat base on the regolith under a low, uneven mound."""
-        rng = self.rng
-        phase = [rng.uniform(0, math.tau) for _ in range(2)]
-
-        def wobble(a, t):
-            return 1 + .2 * math.sin(3 * a + phase[0]) * t + .1 * math.sin(5 * a + phase[1]) * t, 0
-
-        tint = [c * .7 for c in self.spec['tint']]
-        rings = max(1, level['rings'] - 3)
-        base = [(radius * k / rings, 0) for k in range(rings + 1)]
-        self.revolve([0, 0, 0], base, sides, 'bark', [tint] * (rings + 1), (1,), wobble=wobble)
-        self.revolve([0, 0, 0], [(0, HEIGHT * .035), (radius * .55, HEIGHT * .028), (radius, 0)], sides, 'bark',
-                     [tint] * 3, (-1,), wobble=wobble)
-
-    def coral_tube(self, foot, tall, radius, sides, level, lean=(0, 0)):
-        """A hollow vase sponge narrowing above its foot and flaring to an uneven open mouth, its throat dark."""
-        rng = self.rng
-        rings = level['rings']
-        base = [foot[0], foot[1], 0]
-        flare = rng.uniform(.5, 1.0)
-        phase = [rng.uniform(0, math.tau) for _ in range(3)]
-
-        def wobble(a, t):
-            lumps = .08 * math.sin(3 * a + phase[0]) + .05 * math.sin(5 * a + phase[1]) * math.sin(math.pi * t * 2)
-            return 1 + lumps + .1 * math.sin(4 * a + phase[2]) * t ** 3, 0
-
-        outer = [(radius * (1.2 - .35 * math.sin(math.pi * t * .8) + flare * t ** 2.5), tall * t)
-                 for t in (k / rings for k in range(rings + 1))]
-        # Each tube its own shade: sage, grey or ochre about the colony's tint.
-        tint = [c * rng.uniform(.88, 1.05) for c in self.spec['tint']]
-        tint[0] *= rng.uniform(.95, 1.08)
-        self.revolve(base, outer, sides, 'bark', [tint] * (rings + 1), (1,), around=2,
-                     wobble=wobble if rings > 2 else None, lean=lean)
-        mouth = outer[-1][0]
-        # Mouths of uneven thickness.
-        lip = rng.uniform(.68, .86)
-        inner = [(mouth * (lip - .1), tall * .7), (mouth * lip, tall * .98)]
-        dark = [[c * .45 for c in tint], [c * .8 for c in tint]]
-        self.revolve(base, inner, sides, 'bark', dark, (-1,), around=2, lean=lean)
-        self.revolve(base, [(mouth * lip, tall * .98), (mouth, tall)], sides, 'bark', [tint, tint], (1, -1), around=2,
-                     lean=lean)
-
-    def coral_branch(self, start, direction, reach, radius, forks, spread, plane, level, thinning):
-        """A tapering coral branch that forks `forks` times, its tips rounded, the forks in one plane for an antler."""
-        rng = self.rng
-        segments = max(1, round(level['segments'] * math.sqrt(thinning)))
-        end = add(start, direction, reach)
-        bend = add(bezier(start, start, end, .5), [rng.uniform(-.1, .1) * reach, rng.uniform(-.1, .1) * reach, 0])
-        points = [bezier(start, bend, end, k / segments) for k in range(segments + 1)]
-        tip = radius * .62
-        last = forks <= 0
-        self.tube(points, [radius + (tip - radius) * k / segments for k in range(segments + 1)],
-                  level['branch_sides'], .9, cap=1 if last and segments > 1 else 0)
-        if last:
-            return
-        for side in (-1, 1):
-            if plane is not None:
-                out = [math.cos(plane), math.sin(plane), 0]
-            else:
-                heading = rng.uniform(0, math.tau)
-                out = [math.cos(heading), math.sin(heading), 0]
-            turn = math.radians(rng.uniform(.5, 1) * spread) * side
-            child = normalized(add([c * math.cos(turn) for c in direction], out, math.sin(turn)))
-            child[2] = max(child[2], .35)
-            self.coral_branch(end, normalized(child), reach * rng.uniform(.6, .78), tip, forks - 1, spread, plane,
-                              level, thinning)
-
-    def fan(self, index, fold, level):
-        """A sea fan: a broad lattice (the cutout) bowed about its stem, pleated by `fold`, on a short stem, leaning
-        back away from the colony so its face catches the sky."""
-        rng = self.rng
-        columns, rows = level['fan']
-        heading = index * 2.39996 + rng.uniform(-.4, .4)
-        reach = HEIGHT * (.04 if index == 0 else rng.uniform(.12, .26))
-        foot = [math.cos(heading) * reach, math.sin(heading) * reach, 0]
-        wide, tall = HEIGHT * rng.uniform(.55, .75), HEIGHT * rng.uniform(.55, .8) * (1 if index == 0 else .8)
-        across = [-math.sin(heading), math.cos(heading), 0]
-        out = [math.cos(heading), math.sin(heading), 0]
-        bow = rng.uniform(.08, .16) * wide
-        grid, normals, colours, uvs = [], [], [], []
-        tint = self.spec['tint']
-        for i in range(rows + 1):
-            v = i / rows
-            row, normal_row = [], []
-            for j in range(columns + 1):
-                u = j / columns - .5
-                pleat = fold * wide * (1 if j % 2 else -1) * v if fold else 0
-                depth = bow * (1 - (2 * u) ** 2) + pleat
-                point = add(add(add(foot, across, u * wide * (.25 + .75 * v ** .6)), out, depth + tall * .45 * v),
-                            [0, 0, tall * v])
-                row.append(point)
-                normal_row.append(out)
-            grid.append(row)
-            normals.append(normal_row)
-            colours.append([[c * (.8 + .2 * v) for c in tint]] * (columns + 1))
-            uvs.append([[j / columns, BASE_V + (TIP_V - BASE_V) * v] for j in range(columns + 1)])
-        # A solid lattice: each face lit mostly from the sky, as the board sees it from above, a little from its side.
-        sky = lambda sign: [[normalized(add([c * sign * .5 for c in n], [0, 0, 1])) for n in row] for row in normals]
-        self.surface(grid, sky(1), colours, uvs, faces=(1,))
-        self.surface(grid, sky(-1), colours, uvs, faces=(-1,))
-        self.tube([foot, add(foot, [0, 0, tall * .12])], [HEIGHT * .035, HEIGHT * .025], 4, .8)
-
-    def plate(self, centre, radius, sides, level):
-        """A coral shelf: a solid, cupped plate whose underside grows out of the column and turns over a thick rounded
-        edge onto its dished top; its edge ruffles and rises and falls unevenly."""
-        rng = self.rng
-        phase = [rng.uniform(0, math.tau) for _ in range(3)]
-        # Underside from the column out, the rounded edge, then the dished top back in (a closed section).
-        section = [(.1, -.06), (.45, -.02), (.82, .06), (.98, .13), (1.0, .19), (.9, .22), (.55, .17), (.1, .14)]
-        if level['rings'] < 5:
-            keep = (0, 2, 4, 5, 7) if level['rings'] > 1 else (0, 4, 7)
-            section = [section[k] for k in keep]
-        profile = [(radius * u, radius * v) for u, v in section]
-        reach = [u for u, _ in section]
-        tint = self.spec['tint']
-        colours = [[c * (.82 + .18 * u) for c in tint] for u in reach]
-
-        def wobble(a, t):
-            # Only the plate's outer part ruffles; it stays joined to the column.
-            weight = reach[round(t * (len(reach) - 1))] ** 2
-            ruffle = .16 * math.sin(3 * a + phase[0]) + .07 * math.sin(7 * a + phase[1])
-            return 1 + ruffle * weight, radius * .12 * math.sin(2 * a + phase[2]) * weight
-
-        self.revolve(centre, profile, sides, 'bark', colours, (1,), around=2, wobble=wobble)
-
-    def lobe(self, foot, size, level, thinning):
-        """A brain-coral dome: a squat, lumpy hemisphere sunk a little in the regolith or the lobes beneath it."""
-        rng = self.rng
-        around, rows = level['lobe']
-        around = max(4, round(around * math.sqrt(thinning)))
-        phase = [rng.uniform(0, math.tau) for _ in range(2)]
-        profile = [(max(.02, size * math.cos(math.pi / 2 * i / rows)), size * .8 * math.sin(math.pi / 2 * i / rows))
-                   for i in range(rows + 1)]
-        tint = [self.spec['tint']] * (rows + 1)
-        self.revolve([foot[0], foot[1], foot[2] - size * .12], profile, around, 'bark', tint, (1,),
-                     around=2, wobble=lambda a, t: (1 + .08 * math.sin(3 * a + phase[0])
-                                                    + .04 * math.sin(6 * a + phase[1]), 0))
-
     # Levels
 
     def fit(self):
@@ -1496,8 +1265,6 @@ def grow(kind, spec, index, thinning):
         tree.cactus(CACTUS_LEVELS[index], thinning)
     elif kind == 'fungus':
         tree.fungus(FUNGUS_LEVELS[index], thinning)
-    elif kind == 'coral':
-        tree.coral(CORAL_LEVELS[index], thinning)
     else:
         level = BROADLEAF_LEVELS[index]
         tree.broadleaf({**level, **spec['near']} if index == 0 and 'near' in spec else level, thinning)
@@ -1540,12 +1307,6 @@ def model(name, index):
             for c in range(3):
                 vertices[i * 12 + 6 + c] += (.98 - vertices[i * 12 + 6 + c]) * cover
     asset = f'{name}-lod{index}'
-    if kind == 'coral':
-        # Red regolith dust settles on everything facing the sky.
-        for i in range(0, len(vertices), 12):
-            cover = .5 * max(0.0, vertices[i + 5]) ** 1.5
-            for c in range(3):
-                vertices[i + 6 + c] += (DUST[c] - vertices[i + 6 + c]) * cover
     roles = [(role, material) for role, material in materials(kind, spec, snow) if tree.parts[role]]
     parts = [{'id': f'{asset}-{role}', 'type': 'TRIANGLES', 'indices': tree.parts[role]} for role, _ in roles]
     return {'id': asset, 'meshes': [{'attributes': ['POSITION', 'NORMAL', 'COLOR', 'TEXCOORD0'],
@@ -1557,7 +1318,7 @@ def model(name, index):
 
 def build(name, board):
     levels = {index: model(name, index) for index in range(3)}
-    # Plants live in vegetation/ unless their species names a folder (fungus/, mars/).
+    # Plants live in vegetation/ unless their species names a folder (fungus/).
     path = f"{SPECIES[species(name)].get('folder', 'vegetation')}/{name}"
     # The impostor (LOD3) stays until the impostor bake refreshes it; a level 3 of other material is dropped.
     shipped = BOARD / f'{path}.glb'

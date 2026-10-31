@@ -597,9 +597,8 @@ no rock or scatter geometry is generated in-game.
   willow, snowed juniper, cinder shrub, creosote, sagebrush; ferns grow as
   trunkless palms). The fungus theme's woods (`fungus/cup-*`, `fungus/spore-*`)
   grow as orange-red cup fungi on fleshy stalks and red puffballs in glowing
-  mycelium, the Mars corals (`mars/*`) as tubes, branching fingers, sea fans,
-  shelves and brain-coral heaps on a mineral root crust, dusted red. The fungal
-  cliff and scatter colonies keep the fungus atlas. Change a
+  mycelium; their cliff and scatter colonies keep the fungus atlas. The Mars
+  corals (`mars/*`) are modelled in Blender. Change a
   species there and rebuild it rather than editing its GLB.
   Standard glTF `MASK` materials use a 0.5 alpha threshold in color, depth and
   shadow passes.
