@@ -598,7 +598,8 @@ no rock or scatter geometry is generated in-game.
   trunkless palms). The fungus theme's woods (`fungus/cup-*`, `fungus/spore-*`)
   grow as orange-red cup fungi on fleshy stalks and red puffballs in glowing
   mycelium; their cliff and scatter colonies keep the fungus atlas. The Mars
-  corals (`mars/*`) are modelled in Blender. Change a
+  corals (`mars/*`) are sculpted in Blender; `tools/board-models/mars_lods.py`
+  decimates each sculpt into its mesh levels. Change a
   species there and rebuild it rather than editing its GLB.
   Standard glTF `MASK` materials use a 0.5 alpha threshold in color, depth and
   shadow passes.

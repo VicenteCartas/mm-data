@@ -20,8 +20,10 @@ for asset, entry in features.items():
         # Entries are keyed by the model's path; its level groups by its own name.
         name = asset.rsplit('/', 1)[-1]
         assert [lod['node'] for lod in entry['lods']] == [f'{name}-lod{level}' for level in range(4)], asset
+        # The alien plants (Mars corals, fungal colonies) may use twice the near budgets.
+        budgets = (3200, 820, 110, 12) if asset.startswith(('mars/', 'fungus/')) else (1600, 410, 110, 12)
         for level, lod in enumerate(entry['lods']):
-            assert 0 < lod['triangles'] <= (1600, 410, 110, 12)[level], lod
+            assert 0 < lod['triangles'] <= budgets[level], lod
             catalog[lod['node']] = lod
             lods[lod['node']] = (BOARD / entry['mesh'], level)
 maximum = 0
@@ -66,7 +68,7 @@ for asset in catalog:
                     normal_z = (b[0]-a[0])*(c[1]-a[1])-(b[1]-a[1])*(c[0]-a[0])
                     assert normal_z > 0, f'Roof winding: {path}'
     # Plant levels keep their own budgets (above); every other model stays within 500 triangles.
-    assert 0 < triangles <= (1600 if asset in lods else 500), (path, triangles)
+    assert 0 < triangles <= (3200 if asset in lods else 500), (path, triangles)
     assert triangles == catalog[asset]['triangles'], (asset, path)
     maximum = max(maximum, triangles)
     for material in model['materials']:
