@@ -331,12 +331,30 @@ def light_mast(lod):
     return Vector((3, 3))
 
 
+def vehicle_gate(lod):
+    # A vehicle gate against a facade, one vehicle wide: its back on y = 0, a pale blast door of three leaves facing +Y
+    # in a dark frame under a striped lintel between striped posts. The board stretches its depth to the road's end.
+    box('paint', (0, 5.0, 7.0), (24.0, 10.0, 14.0), bevel=.8 if lod == 0 else 0)
+    box('paint', (0, 4.6, 14.25), (20.0, 7.0, .5), bevel=.1 if lod == 0 else 0)
+    box('dark', (0, 10.05, 6.1), (18.0, .3, 12.2))
+    box('paint', (0, 10.25, 5.5), (16.0, .3, 11.0), bevel=.08 if lod == 0 else 0)
+    for z in (3.7, 7.3):
+        box('dark', (0, 10.45, z), (15.6, .15, .3))
+    box('hazard', (0, 10.3, 12.9), (18.0, .6, 1.2))
+    for x in (-9.6, 9.6):
+        box('hazard', (x, 10.3, 5.5), (1.0, .6, 11.0))
+    if lod == 0:
+        for x in (-6.0, 6.0):
+            box('glass', (x, 10.55, 13.0), (1.6, .1, .5))
+    return Vector((24, 10))
+
+
 # Roof props: board objects of their own (models/board/scenery/roofs/<name>.glb).
 ROOF_PROPS = {'radar-dish': radar_dish, 'capsule-tanks': capsule_tanks}
 # Colony detail props (models/board/scenery/colony/<name>.glb): building details the board places with precision
 # placement to break a block's outline; wall-mounted ones stand with their back on y = 0, against a facade.
 COLONY_PROPS = {'pipe-run': pipe_run, 'vent-unit': vent_unit, 'wall-tanks': wall_tanks, 'ladder-cage': ladder_cage,
-                'light-mast': light_mast, 'airlock': airlock, 'radiator': radiator}
+                'light-mast': light_mast, 'airlock': airlock, 'radiator': radiator, 'vehicle-gate': vehicle_gate}
 
 
 def smoothstep(a, b, x):
