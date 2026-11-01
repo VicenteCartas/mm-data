@@ -1,0 +1,45 @@
+[
+  {
+    "name": "default",
+    "style": "bays",
+    "pieces": "building_light-pieces.glb",
+    "lone": [[-20.78125, -34.25], [20.78125, -34.25], [20.78125, 34.25], [-20.78125, 34.25]],
+    "bandEnd": 1.75,
+    "roof": { "material": "structures/buildings/light-roof", "repeat": 12.0, "inset": 0.0, "heights": [1.0, 0.0] },
+    "floors": { "material": "structures/buildings/light-sidewalk", "repeat": 12.0, "inset": 2.0, "heights": [0.05] },
+    "sidewalk": { "material": "structures/buildings/light-sidewalk", "repeat": 12.0, "width": 4.0, "kerb": 0.3 },
+    "modules": {
+      "base0": [
+        {
+          "bays": ["base0-bay0", "base0-bay1", "base0-bay2", "base0-bay3", "base0-bay4", "base0-bay5"],
+          "bay": 24.0
+        }
+      ],
+      "base1": [
+        {
+          "bays": ["base1-bay0", "base1-bay1", "base1-bay2", "base1-bay3", "base1-bay4", "base1-bay5"],
+          "bay": 24.0
+        }
+      ],
+      "floor0": [
+        {
+          "bays": ["floor0-bay0", "floor0-bay1", "floor0-bay2", "floor0-bay3", "floor0-bay4", "floor0-bay5"],
+          "bay": 24.0
+        }
+      ],
+      "floor1": [
+        {
+          "bays": ["floor1-bay0", "floor1-bay1", "floor1-bay2", "floor1-bay3", "floor1-bay4", "floor1-bay5"],
+          "bay": 24.0
+        }
+      ],
+      "roof0": [
+        {
+          "bays": ["roof0-bay0", "roof0-bay1", "roof0-bay2", "roof0-bay3", "roof0-bay4", "roof0-bay5"],
+          "bay": 24.0
+        },
+        { "bays": [] }
+      ]
+    }
+  }
+]

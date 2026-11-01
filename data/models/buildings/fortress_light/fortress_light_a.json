@@ -1,0 +1,97 @@
+[
+  {
+    "name": "default",
+    "style": "bays",
+    "pieces": "fortress_light_a-pieces.glb",
+    "lone": [[-19.91850000000002, -34.49985401056068], [19.918500000000005, -34.49985401056068], [39.837, 0.0], [19.918500000000005, 34.49985401056068], [-19.918499999999995, 34.49985401056069], [-39.837, 4.878625453763312e-15]],
+    "bandEnd": 2.25,
+    "roof": { "material": "structures/buildings/fortress-roof", "repeat": 24.0, "inset": 0.0, "heights": [0.65] },
+    "floors": { "material": "structures/buildings/fortress-roof", "repeat": 24.0, "inset": 3.0, "heights": [0.05] },
+    "modules": {
+      "base0": [
+        {
+          "bays": ["ground-window"],
+          "bay": 9.67,
+          "margin": 2.3,
+          "ends": { "piece": "ground-plain", "length": 4.6 },
+          "planar": {
+            "structures/buildings/fortress-wall": 12.0,
+            "structures/buildings/fortress-steel": 12.0,
+            "structures/buildings/fortress-dark": 12.0,
+            "structures/buildings/fortress-glass": 12.0
+          },
+          "door": "ground-door"
+        },
+        {
+          "bays": ["far-window"],
+          "bay": 9.67,
+          "margin": 2.3,
+          "under": { "piece": "ground-face", "length": 4.6 },
+          "planar": {
+            "structures/buildings/fortress-wall": 12.0,
+            "structures/buildings/fortress-steel": 12.0,
+            "structures/buildings/fortress-dark": 12.0,
+            "structures/buildings/fortress-glass": 12.0
+          },
+          "door": "far-door"
+        }
+      ],
+      "floor0": [
+        {
+          "bays": ["window"],
+          "bay": 9.67,
+          "margin": 2.3,
+          "ends": { "piece": "plain", "length": 4.6 },
+          "planar": {
+            "structures/buildings/fortress-wall": 12.0,
+            "structures/buildings/fortress-steel": 12.0,
+            "structures/buildings/fortress-dark": 12.0,
+            "structures/buildings/fortress-glass": 12.0
+          }
+        },
+        {
+          "bays": ["far-window"],
+          "bay": 9.67,
+          "margin": 2.3,
+          "under": { "piece": "face", "length": 4.6 },
+          "planar": {
+            "structures/buildings/fortress-wall": 12.0,
+            "structures/buildings/fortress-steel": 12.0,
+            "structures/buildings/fortress-dark": 12.0,
+            "structures/buildings/fortress-glass": 12.0
+          }
+        }
+      ],
+      "floor1": [
+        {
+          "bays": ["window"],
+          "bay": 9.67,
+          "margin": 2.3,
+          "ends": { "piece": "plain", "length": 4.6 },
+          "planar": {
+            "structures/buildings/fortress-wall": 12.0,
+            "structures/buildings/fortress-steel": 12.0,
+            "structures/buildings/fortress-dark": 12.0,
+            "structures/buildings/fortress-glass": 12.0
+          }
+        },
+        {
+          "bays": ["far-window"],
+          "bay": 9.67,
+          "margin": 2.3,
+          "under": { "piece": "face", "length": 4.6 },
+          "planar": {
+            "structures/buildings/fortress-wall": 12.0,
+            "structures/buildings/fortress-steel": 12.0,
+            "structures/buildings/fortress-dark": 12.0,
+            "structures/buildings/fortress-glass": 12.0
+          }
+        }
+      ],
+      "roof0": [
+        { "bays": ["merlon"], "bay": 13.54 },
+        { "bays": [], "under": { "piece": "far-parapet", "length": 4.0 } }
+      ]
+    }
+  }
+]
