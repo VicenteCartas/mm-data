@@ -1,18 +1,16 @@
-"""Lunar base support pieces for the multi-hex buildings (BoardMultiHexBuilding): roof gear and airlocks, modelled in Blender.
+"""Lunar base support pieces for the multi-hex buildings (BoardMultiHexBuilding) and lunar props, modelled in Blender.
 
     blender -b --factory-startup --python tools/buildings/lunar_equipment.py
 
 Writes data/models/buildings/multihex/lunar-equipment.glb: one node per piece and level of detail (`<piece>-lod0`,
 `<piece>-lod1`), each standing on its origin with its front towards +Y (north), in board units. Pieces: `tanks`
-(three pressure tanks on saddles with their manifold), `radiator` (a thermal radiator on its frame), `plant` (a life
-support unit with two fans), `antenna` (a dish on a tripod mast), `solar` (two tilted solar panels on posts),
-`skylight` (three sawtooth roof lights glazed in lit `skylight-glass`), `airlock` (a pressure door module that stands
-against a facade, its back on y = 0) and `pylon` (a dome podium's corner block). Painted parts take the domes'
-white `dome-frame`, metal `steel`, fan guards `grille`, door frames `hazard-stripes`, cells `solar-cells`; vertex
-colours carry contact shading and settled regolith dust.
+(three pressure tanks on saddles with their manifold), `plant` (a life support unit with two fans), `airlock` (a
+pressure door module that stands against a facade, its back on y = 0) and `pylon` (a dome podium's corner block).
+Painted parts take the domes' white `dome-frame`, metal `steel`, fan guards `grille`, door frames `hazard-stripes`;
+vertex colours carry contact shading and settled regolith dust.
 
-Also writes the lunar roof props as board objects, data/models/board/scenery/roofs/<name>.glb: `radar-dish` (a
-tracking dish on its drum) and `capsule-tanks` (three horizontal capsule tanks banded in lit cyan glass on a frame).
+Also writes the lunar props as board objects: roof props (ROOF_PROPS) in data/models/board/scenery/roofs/<name>.glb
+and colony detail props (COLONY_PROPS) in data/models/board/scenery/colony/<name>.glb.
 """
 import math
 import os
@@ -151,20 +149,6 @@ def plant(lod):
     return Vector((14, 12))
 
 
-def antenna(lod):
-    for angle in (90.0, 210.0, 330.0):
-        a = math.radians(angle)
-        cylinder('steel', (2.4 * math.cos(a), 2.4 * math.sin(a), 0), (0, 0, 13.0), .32, 8 if lod == 0 else 5)
-    cylinder('steel', (0, 0, 9.0), (0, 0, 15.0), .55, 10 if lod == 0 else 6)
-    box('steel', (0, 0, 15.0), (1.6, 1.6, 1.2))
-    tilt = (math.radians(-55), 0, 0)
-    cap('paint', (0, .6, 15.6), 5.5, 1.4, 32 if lod == 0 else 14, 24 if lod == 0 else 10, rotation=tilt)
-    if lod == 0:
-        cylinder('steel', (0, .6, 15.6), (0, 3.6, 18.0), .16, 6)
-        cylinder('steel', (0, 3.6, 18.0), (0, 3.6, 18.6), .4, 8)
-    return Vector((8, 8))
-
-
 def solar(lod):
     for x in (-7.2, 7.2):
         tilt = math.radians(28)
@@ -175,22 +159,6 @@ def solar(lod):
             for py, top in ((-2.6, 2.65), (2.6, 5.1)):
                 cylinder('steel', (px, py, 0), (px, py, top), .25, 8 if lod == 0 else 4)
     return Vector((28, 8))
-
-
-def skylight(lod):
-    # Three sawtooth roof lights in a row on a steel curb: each glazed slope rises towards +Y to a short painted upstand.
-    box('steel', (0, 0, .4), (22.0, 16.4, .8), bevel=.15 if lod == 0 else 0)
-    rise, run = 3.6, 4.6
-    slope = math.atan2(rise, run)
-    for y in (-5.2, 0.0, 5.2):
-        box('glass', (0, y, .8 + rise / 2), (20.0, math.hypot(rise, run), .3), rotation=(slope, 0, 0))
-        box('paint', (0, y + run / 2 + .15, .8 + rise / 2), (20.4, .3, rise), bevel=.06 if lod == 0 else 0)
-        if lod == 0:
-            for x in (-10.1, 10.1):
-                box('paint', (x, y + .4, .8 + rise * .35), (.3, run * .8, rise * .7))
-    if lod == 0:
-        cylinder('steel', (-11.4, -7.6, 1.3), (-11.4, 7.6, 1.3), .45, 8)
-    return Vector((22, 16))
 
 
 def radar_dish(lod):
@@ -264,8 +232,7 @@ def pylon(lod):
     return Vector((15, 18))
 
 
-PIECES = {'tanks': tanks, 'radiator': radiator, 'plant': plant, 'antenna': antenna, 'solar': solar,
-          'skylight': skylight, 'airlock': airlock, 'pylon': pylon}
+PIECES = {'tanks': tanks, 'plant': plant, 'airlock': airlock, 'pylon': pylon}
 def pipe_run(lod):
     # Three pipes in a bundle along a facade (its back on y = 0), on brackets every six units, 24 long.
     sides = 12 if lod == 0 else 6
@@ -415,10 +382,41 @@ def light_strip(lod):
     return Vector((34, 7))
 
 
+def dish_antenna(lod):
+    # A small tilted dish with its feed arm on a mast braced by three legs.
+    for angle in (90.0, 210.0, 330.0):
+        a = math.radians(angle)
+        cylinder('steel', (2.4 * math.cos(a), 2.4 * math.sin(a), 0), (0, 0, 13.0), .32, 8 if lod == 0 else 5)
+    cylinder('steel', (0, 0, 9.0), (0, 0, 15.0), .55, 10 if lod == 0 else 6)
+    box('steel', (0, 0, 15.0), (1.6, 1.6, 1.2))
+    tilt = (math.radians(-55), 0, 0)
+    cap('paint', (0, .6, 15.6), 5.5, 1.4, 32 if lod == 0 else 14, 24 if lod == 0 else 10, rotation=tilt)
+    if lod == 0:
+        cylinder('steel', (0, .6, 15.6), (0, 3.6, 18.0), .16, 6)
+        cylinder('steel', (0, 3.6, 18.0), (0, 3.6, 18.6), .4, 8)
+    return Vector((8, 8))
+
+
+def sawtooth_skylight(lod):
+    # Three sawtooth roof lights in a row on a steel curb: each glazed slope rises towards +Y to a short painted upstand.
+    box('steel', (0, 0, .4), (22.0, 16.4, .8), bevel=.15 if lod == 0 else 0)
+    rise, run = 3.6, 4.6
+    slope = math.atan2(rise, run)
+    for y in (-5.2, 0.0, 5.2):
+        box('glass', (0, y, .8 + rise / 2), (20.0, math.hypot(rise, run), .3), rotation=(slope, 0, 0))
+        box('paint', (0, y + run / 2 + .15, .8 + rise / 2), (20.4, .3, rise), bevel=.06 if lod == 0 else 0)
+        if lod == 0:
+            for x in (-10.1, 10.1):
+                box('paint', (x, y + .4, .8 + rise * .35), (.3, run * .8, rise * .7))
+    if lod == 0:
+        cylinder('steel', (-11.4, -7.6, 1.3), (-11.4, 7.6, 1.3), .45, 8)
+    return Vector((22, 16))
+
+
 # Roof props: board objects of their own (models/board/scenery/roofs/<name>.glb).
 ROOF_PROPS = {'radar-dish': radar_dish, 'capsule-tanks': capsule_tanks, 'generator-ring': generator_ring,
               'radar-station': radar_station, 'light-well': light_well, 'light-strip': light_strip,
-              'solar-array': solar}
+              'solar-array': solar, 'dish-antenna': dish_antenna, 'sawtooth-skylight': sawtooth_skylight}
 # Colony detail props (models/board/scenery/colony/<name>.glb): building details the board places with precision
 # placement to break a block's outline; wall-mounted ones stand with their back on y = 0, against a facade.
 COLONY_PROPS = {'pipe-run': pipe_run, 'vent-unit': vent_unit, 'wall-tanks': wall_tanks, 'ladder-cage': ladder_cage,
