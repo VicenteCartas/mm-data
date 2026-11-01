@@ -41,7 +41,7 @@ Scenery meshes live in topic folders under `scenery/`, with kebab-case names:
 | `maglev/` | route marker (the only rail mesh), station platform, city and colony vehicles, the city gangway coupler; `train.png` and `colony-train.png` are the stamps' thumbnails |
 | `military/` | orbital gun, fortification (dug, and sandbags where paved), the trench of a dug-in platoon, an olive container of cargo set down on the ground |
 | `rubble/` | a collapsed building by structure type, and (`-path`) its hex cleared: the debris collected into heaps, the salvage stacked |
-| `geysers/` | dormant and erupting water geysers and the magma geyser, two looks each (`<state>` and `<state>-b`, one or the other per hex): one top-down photographic study (`textures/scenery/geyser-sinter`, `geyser-spatter` and their `-b`) mapped straight down over a heightfield of the feature, its water or lava just under the rim, where `GpuGeysers.vent` starts the steam and the eruption |
+| `geysers/` | dormant and erupting water geysers and the magma geyser, two looks each (`<state>` and `<state>-b`, one or the other per hex): one top-down photographic study (`textures/scenery/geyser-sinter`, `geyser-spatter` and their `-b`) mapped straight down over a heightfield of the feature's relief, cut along a smooth outline and easing down to the ground at it, its water or lava just under the rim, where `GpuGeysers.vent` starts the steam and the eruption; the study's flat apron around it is the look's `decal/geysers/` decal |
 
 No mesh sits at a legacy key. A legacy key is `scenery/<2D tileset image path
 without extension>`, which the Classic tileset names for the token it stands for
@@ -348,6 +348,7 @@ mipmaps do not darken edges. The groups:
 | `lettering/` | `letter-a` ... `letter-z`, `digit-0` ... `digit-9` (40 x 40) | the upright black sprite's shape, 4x bicubic, blurred and re-sharpened, white: the object's paint colour (`size` entry `"colour": "#ffffff"`) multiplies it |
 | `sport/` | `tennis-court-green`, `-blue` (33 x 63); `basketball-court-green`, `-blue` (39 x 71) | redrawn at 8 image px per model px, 0.75 px lines |
 | `elevator/` | `level-minus-10` ... `level-minus-1`, `level-0` ... `level-10` (665 x 576) | an up-and-down arrow and the level, painted by `tools/decals/elevator_levels.py` at 8 image px per model px in Exo 2 Bold (`data/fonts`, OFL), worn white paint at 95 %, over the elevator platform's diamond plate; rows of the elevator's rule terrain, not palette decals |
+| `geysers/` | `magma`, `magma-b`, `water`, `water-b` (512 x 512) | each geyser look's photographic study at 8 image px per model px, centred on the model's origin: opaque under the model, fading out 3-9 px beyond it; rows of the geyser's rule terrain (the hex's look), not palette decals |
 | `rail/` | `level-crossing` (16 x 27) | retained for standalone authored artwork; native crossings use the continuous road and embedded rails |
 
 The 2D tileset's ground-symbol pieces stay for the 2D board, which draws a
