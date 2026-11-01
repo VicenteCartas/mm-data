@@ -595,12 +595,13 @@ no rock or scatter geometry is generated in-game.
   low-forked apple trees with red apples standing out on their crowns; the shrubs as stems
   carrying sprays of their family's cutout (hazel, mountain pine, juniper, shrub
   willow, snowed juniper, cinder shrub, creosote, sagebrush; ferns grow as
-  trunkless palms). The fungus theme's woods (`fungus/cup-*`, `fungus/spore-*`)
-  grow as orange-red cup fungi on fleshy stalks and red puffballs in glowing
-  mycelium; their cliff and scatter colonies keep the fungus atlas. The Mars
-  corals (`mars/*`) are sculpted in Blender; `tools/board-models/mars_lods.py`
-  decimates each sculpt into its mesh levels. Change a
-  species there and rebuild it rather than editing its GLB.
+  trunkless palms). Change a species there and rebuild it rather than editing
+  its GLB. The fungus theme's woods (`fungus/cup-*`, `fungus/spore-*`, fluted
+  cup fungi and pitted spore pods on the fungus atlas) and the Mars corals
+  (`mars/*`) are modelled in Blender; `tools/board-models/alien_lods.py` builds
+  their mesh levels from the original meshes (in git history), weathering their
+  corner colours; it gives the cliffs' hanging mycelium the
+  `textures/vegetation/fungus/mycelium` material, whose emission makes it glow.
   Standard glTF `MASK` materials use a 0.5 alpha threshold in color, depth and
   shadow passes.
   A `-lod3` group holds the plant's impostor: two crossed vertical cards and a

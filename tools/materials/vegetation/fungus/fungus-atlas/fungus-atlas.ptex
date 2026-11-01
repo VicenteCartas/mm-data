@@ -17,7 +17,7 @@
         "y": 190
       },
       "title": "About this material",
-      "text": "Fungus atlas: sources/fungus-atlas.png is the colour, GlowSource (fungus-atlas_emission.png) the glow, in linear light, added at energy 1; the game makes it pulse slowly across a colony. Keep the atlas layout: the models point at its parts. The ...PNG8 groups and the nodes after them only store exact file values; leave them. Export: File > Export material > Godot > Godot 4 Standard into data/models/board/textures/vegetation/fungus, then Reload assets in the game's Tuning panel. Its surface (sources/structure-high.png and structure-low.png) is derived from the colour artwork quadrant by quadrant: grooves are its dark narrow lines. Relief is the heightmap's height range as a percentage of the repeat (0.3922: 10 codes); the normals round it to a whole code of the heightmap (Relief x 25.5), so keep it a multiple of 10 / 255 (0.0392), and set the Material node's Depth scale to Relief / 25 (tools/materials/README.md).",
+      "text": "Fungus atlas: sources/fungus-atlas.png is the colour (WallBlend lifts its top-left skin quadrant, WallMask, to the concept art's burnt orange: WallLift; BowlBlend lifts the bottom-left cup flesh, BowlMask, to a terracotta lighter than the skin: BowlLift), GlowSource (fungus-atlas_emission.png) the glow, in linear light, added at energy 1 after GlowDimmed scales it by GlowLevel's mottled 0.28-0.6 (GlowBreakup), so lips and gills glow softly and unevenly instead of outlining the cups; the game makes it pulse slowly across a colony. Keep the atlas layout: the models point at its parts. The ...PNG8 groups and the nodes after them only store exact file values; leave them. Export: File > Export material > Godot > Godot 4 Standard into data/models/board/textures/vegetation/fungus, then Reload assets in the game's Tuning panel. Its surface (sources/structure-high.png and structure-low.png) is derived from the colour artwork quadrant by quadrant: grooves are its dark narrow lines. Relief is the heightmap's height range as a percentage of the repeat (0.3922: 10 codes); the normals round it to a whole code of the heightmap (Relief x 25.5), so keep it a multiple of 10 / 255 (0.0392), and set the Material node's Depth scale to Relief / 25 (tools/materials/README.md).",
       "color": {
         "type": "Color",
         "r": 0.18,
@@ -3410,15 +3410,263 @@
         "y": 1600
       },
       "seed_int": 0
+    },
+    {
+      "type": "fbm4",
+      "name": "GlowBreakup",
+      "node_position": {
+        "x": 300,
+        "y": 520
+      },
+      "parameters": {
+        "folds": 0.0,
+        "iterations": 4.0,
+        "lacunarity": 2.0,
+        "noise": 1.0,
+        "offset": 0.0,
+        "persistence": 0.55,
+        "scale_x": 6.0,
+        "scale_y": 6.0
+      }
+    },
+    {
+      "type": "colorize",
+      "name": "GlowLevel",
+      "node_position": {
+        "x": 550,
+        "y": 520
+      },
+      "parameters": {
+        "gradient": {
+          "interpolation": 1.0,
+          "points": [
+            {
+              "a": 1.0,
+              "b": 0.280000001192093,
+              "g": 0.280000001192093,
+              "pos": 0.0,
+              "r": 0.280000001192093
+            },
+            {
+              "a": 1.0,
+              "b": 0.600000023841858,
+              "g": 0.600000023841858,
+              "pos": 1.0,
+              "r": 0.600000023841858
+            }
+          ],
+          "type": "Gradient"
+        }
+      }
+    },
+    {
+      "type": "blend2",
+      "name": "GlowDimmed",
+      "node_position": {
+        "x": 750,
+        "y": 300
+      },
+      "parameters": {
+        "amount1": 1.0,
+        "blend_type1": 2.0
+      }
+    },
+    {
+      "type": "gradient",
+      "name": "WallMaskU",
+      "node_position": {
+        "x": -300,
+        "y": -250
+      },
+      "parameters": {
+        "gradient": {
+          "interpolation": 0.0,
+          "points": [
+            {
+              "a": 1.0,
+              "b": 1.0,
+              "g": 1.0,
+              "pos": 0.0,
+              "r": 1.0
+            },
+            {
+              "a": 1.0,
+              "b": 1.0,
+              "g": 1.0,
+              "pos": 0.49949,
+              "r": 1.0
+            },
+            {
+              "a": 1.0,
+              "b": 0.0,
+              "g": 0.0,
+              "pos": 0.49951,
+              "r": 0.0
+            }
+          ],
+          "type": "Gradient"
+        },
+        "mirror": false,
+        "repeat": 1.0,
+        "rotate": 0.0
+      }
+    },
+    {
+      "type": "gradient",
+      "name": "WallMaskV",
+      "node_position": {
+        "x": -300,
+        "y": -150
+      },
+      "parameters": {
+        "gradient": {
+          "interpolation": 0.0,
+          "points": [
+            {
+              "a": 1.0,
+              "b": 1.0,
+              "g": 1.0,
+              "pos": 0.0,
+              "r": 1.0
+            },
+            {
+              "a": 1.0,
+              "b": 1.0,
+              "g": 1.0,
+              "pos": 0.49949,
+              "r": 1.0
+            },
+            {
+              "a": 1.0,
+              "b": 0.0,
+              "g": 0.0,
+              "pos": 0.49951,
+              "r": 0.0
+            }
+          ],
+          "type": "Gradient"
+        },
+        "mirror": false,
+        "repeat": 1.0,
+        "rotate": 90.0
+      }
+    },
+    {
+      "type": "blend2",
+      "name": "WallMask",
+      "node_position": {
+        "x": -100,
+        "y": -200
+      },
+      "parameters": {
+        "amount1": 1.0,
+        "blend_type1": 2.0
+      }
+    },
+    {
+      "type": "adjust_hsv",
+      "name": "WallLift",
+      "node_position": {
+        "x": -100,
+        "y": 100
+      },
+      "parameters": {
+        "hue": 0.012,
+        "saturation": 1.08,
+        "value": 1.35
+      }
+    },
+    {
+      "type": "blend2",
+      "name": "WallBlend",
+      "node_position": {
+        "x": 100,
+        "y": 0
+      },
+      "parameters": {
+        "amount1": 1.0,
+        "blend_type1": 0.0
+      }
+    },
+    {
+      "type": "gradient",
+      "name": "BowlMaskV",
+      "node_position": {
+        "x": -300,
+        "y": -50
+      },
+      "parameters": {
+        "gradient": {
+          "interpolation": 0.0,
+          "points": [
+            {
+              "a": 1.0,
+              "b": 0.0,
+              "g": 0.0,
+              "pos": 0.0,
+              "r": 0.0
+            },
+            {
+              "a": 1.0,
+              "b": 0.0,
+              "g": 0.0,
+              "pos": 0.49949,
+              "r": 0.0
+            },
+            {
+              "a": 1.0,
+              "b": 1.0,
+              "g": 1.0,
+              "pos": 0.49951,
+              "r": 1.0
+            }
+          ],
+          "type": "Gradient"
+        },
+        "mirror": false,
+        "repeat": 1.0,
+        "rotate": 90.0
+      }
+    },
+    {
+      "type": "blend2",
+      "name": "BowlMask",
+      "node_position": {
+        "x": -100,
+        "y": -50
+      },
+      "parameters": {
+        "amount1": 1.0,
+        "blend_type1": 2.0
+      }
+    },
+    {
+      "type": "adjust_hsv",
+      "name": "BowlLift",
+      "node_position": {
+        "x": -100,
+        "y": 250
+      },
+      "parameters": {
+        "hue": 0.015,
+        "saturation": 1.05,
+        "value": 1.55
+      }
+    },
+    {
+      "type": "blend2",
+      "name": "BowlBlend",
+      "node_position": {
+        "x": 300,
+        "y": 0
+      },
+      "parameters": {
+        "amount1": 1.0,
+        "blend_type1": 0.0
+      }
     }
   ],
   "connections": [
-    {
-      "from": "Source",
-      "from_port": 0,
-      "to": "Pigment",
-      "to_port": 0
-    },
     {
       "from": "Pigment",
       "from_port": 0,
@@ -3435,12 +3683,6 @@
       "from": "AlphaPNG8",
       "from_port": 0,
       "to": "Material",
-      "to_port": 0
-    },
-    {
-      "from": "GlowSource",
-      "from_port": 0,
-      "to": "EmissionPNG8",
       "to_port": 0
     },
     {
@@ -3604,6 +3846,108 @@
       "from_port": 2,
       "to": "Material",
       "to_port": 5
+    },
+    {
+      "from": "GlowBreakup",
+      "from_port": 0,
+      "to": "GlowLevel",
+      "to_port": 0
+    },
+    {
+      "from": "GlowSource",
+      "from_port": 0,
+      "to": "GlowDimmed",
+      "to_port": 0
+    },
+    {
+      "from": "GlowLevel",
+      "from_port": 0,
+      "to": "GlowDimmed",
+      "to_port": 1
+    },
+    {
+      "from": "GlowDimmed",
+      "from_port": 0,
+      "to": "EmissionPNG8",
+      "to_port": 0
+    },
+    {
+      "from": "WallMaskU",
+      "from_port": 0,
+      "to": "WallMask",
+      "to_port": 0
+    },
+    {
+      "from": "WallMaskV",
+      "from_port": 0,
+      "to": "WallMask",
+      "to_port": 1
+    },
+    {
+      "from": "Source",
+      "from_port": 0,
+      "to": "WallLift",
+      "to_port": 0
+    },
+    {
+      "from": "Source",
+      "from_port": 0,
+      "to": "WallBlend",
+      "to_port": 0
+    },
+    {
+      "from": "WallLift",
+      "from_port": 0,
+      "to": "WallBlend",
+      "to_port": 1
+    },
+    {
+      "from": "WallMask",
+      "from_port": 0,
+      "to": "WallBlend",
+      "to_port": 2
+    },
+    {
+      "from": "WallMaskU",
+      "from_port": 0,
+      "to": "BowlMask",
+      "to_port": 0
+    },
+    {
+      "from": "BowlMaskV",
+      "from_port": 0,
+      "to": "BowlMask",
+      "to_port": 1
+    },
+    {
+      "from": "Source",
+      "from_port": 0,
+      "to": "BowlLift",
+      "to_port": 0
+    },
+    {
+      "from": "WallBlend",
+      "from_port": 0,
+      "to": "BowlBlend",
+      "to_port": 0
+    },
+    {
+      "from": "BowlLift",
+      "from_port": 0,
+      "to": "BowlBlend",
+      "to_port": 1
+    },
+    {
+      "from": "BowlMask",
+      "from_port": 0,
+      "to": "BowlBlend",
+      "to_port": 2
+    },
+    {
+      "from": "BowlBlend",
+      "from_port": 0,
+      "to": "Pigment",
+      "to_port": 0
     }
   ]
 }

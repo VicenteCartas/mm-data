@@ -42,7 +42,7 @@ HEIGHT = 30.0
 # Each family's triangle ceilings per level, about what its full design needs (a plant fills them only so far):
 # broadleaf crowns carry twigs and side shoots on the two near levels. Shrubs and orchards set their own.
 BUDGETS = {'broadleaf': (1600, 410, 96), 'conifer': (1200, 300, 96), 'palm': (1000, 300, 96),
-           'cactus': (1000, 300, 96), 'fungus': (1600, 410, 96)}
+           'cactus': (1000, 300, 96)}
 # Each cutout's stem: U at its base on the bottom edge; V from the base to the tip (V runs down the image).
 STEMS = {'conifer': .55, 'broadleaf': .42}
 BASE_V, TIP_V = .985, .02
@@ -277,31 +277,6 @@ CACTI = {
 for spec in CACTI.values():
     spec.update(bark_role='cactus', bark_texture='cactus-skin', bark_maps=('albedo', 'normal'),
                 canopy_role='flower-cutout', cutout='cactus-flower', leaves=(1, 1, 1), winter=False)
-# Fungal colonies (the fungus theme's woods, alien life in Fungal Crevasse's palette): orange-red cup fungi on fleshy
-# stalks with a bulbous foot, and red pitted puffballs, all rooted in glowing cyan mycelium threads. A cup is `cups`
-# (x, y, stalk top, rim radius and depth, shares of the height) with its bowl's `shape`: how soon its radius (first)
-# and height (second) grow from the stalk to the rim (goblet, funnel, shallow frill); `waves` ruffle its rim. A
-# puffball colony is `balls` (x, y, radius, squash, pear). `skin` is the outer tissue's texture, `inside` and `rim`
-# the cup's tints from its bottom to its lip, `tint` the skin's.
-FUNGI_BASE = dict(folder='fungus', winter=False, trunk=1.0, threads=3, inside=(.62, .2, .14), rim=(.98, .62, .38),
-                  tint=(.66, .38, .34), bark=(.66, .38, .34), skin='fungus/stalk-skin', stalk=.05)
-FUNGI = {
-    'cup-chalice': dict(FUNGI_BASE, seed=91, cups=((0, 0, .5, .3, .42),), shape=(.45, 1.5), waves=.3),
-    'cup-trumpet': dict(FUNGI_BASE, seed=92, cups=((0, 0, .32, .26, .64),), shape=(1.9, .85), waves=.26),
-    'cup-frilled': dict(FUNGI_BASE, seed=93, cups=((0, 0, .62, .36, .26),), shape=(.7, .75), waves=.45),
-    'cup-forked': dict(FUNGI_BASE, seed=94, stalk=.04, shape=(.5, 1.3), waves=.32,
-                       cups=((-.12, .04, .58, .2, .32), (.13, .06, .44, .16, .28), (.02, -.14, .7, .17, .26))),
-    'spore-round': dict(FUNGI_BASE, seed=95, balls=((0, 0, .5, .85, 0),), skin='fungus/puffball-skin',
-                        tint=(.78, .3, .22), bark=(.78, .3, .22)),
-    'spore-pear': dict(FUNGI_BASE, seed=96, balls=((0, 0, .42, 1.25, .55),), skin='fungus/puffball-skin',
-                       tint=(.74, .34, .24), bark=(.74, .34, .24)),
-    'spore-cluster': dict(FUNGI_BASE, seed=97, skin='fungus/puffball-skin', tint=(.8, .32, .22), bark=(.8, .32, .22),
-                          balls=((0, 0, .36, .9, .1), (.42, .12, .26, .85, .2), (-.3, .34, .22, .9, 0),
-                                 (-.2, -.38, .17, .8, .3), (.24, -.36, .14, .85, 0))),
-}
-FUNGUS_LEVELS = (dict(sides=18, rings=6, stalk=6, threads=1, ball=(14, 9)),
-                 dict(sides=10, rings=3, stalk=4, threads=0, ball=(8, 5)),
-                 dict(sides=6, rings=2, stalk=3, threads=0, ball=(5, 3)))
 CACTUS_LEVELS = (dict(sides=12, rings=10, cap=4, arm_sides=8, arm_rings=8, arm_cap=4, blossoms=4),
                  dict(sides=7, rings=4, cap=2, arm_sides=6, arm_rings=4, arm_cap=2, blossoms=2),
                  dict(sides=5, rings=2, cap=1, arm_sides=4, arm_rings=2, arm_cap=0, blossoms=2))
@@ -324,7 +299,7 @@ def variants(plants):
 
 
 DRY, PALMS = variants(DRY), variants(PALMS)
-SPECIES = {**CONIFERS, **BROADLEAF, **DRY, **CINDER, **ORCHARD, **PALMS, **CACTI, **FUNGI}
+SPECIES = {**CONIFERS, **BROADLEAF, **DRY, **CINDER, **ORCHARD, **PALMS, **CACTI}
 
 
 def species(name):
@@ -334,8 +309,7 @@ def species(name):
 
 def family(name):
     name = species(name)
-    return ('conifer' if name in CONIFERS else 'palm' if name in PALMS else 'cactus' if name in CACTI
-            else 'fungus' if name in FUNGI else 'broadleaf')
+    return 'conifer' if name in CONIFERS else 'palm' if name in PALMS else 'cactus' if name in CACTI else 'broadleaf'
 
 
 def snow_scale(spec):
@@ -347,21 +321,10 @@ def snow_scale(spec):
 MAPS = {'albedo': 'DIFFUSE', 'normal': 'NORMAL', 'orm': 'AMBIENT'}
 
 
-def tissue(id, texture, **extra):
-    """A solid plant material whose albedo, normal and ORM maps come from one texture project."""
-    return {'id': id, 'diffuse': [1, 1, 1], 'roughness': 1, 'metallic': 0, **extra,
-            'textures': [{'id': id, 'type': role, 'filename': f'../textures/vegetation/{texture}_{suffix}.png'}
-                         for suffix, role in MAPS.items()]}
-
-
 def materials(kind, spec, snow):
-    """(part, material) pairs: the bark (or cactus skin) and the canopy's cutout. A tree with a winter variant carries
-    it on the canopy (its winter file is that variant); a plant without one keeps its own cutout in winter, its snowy
-    cards still taking the snow's response. A fungal colony's skin is solid, its cups the fungal tissue and its
-    threads the untextured glowing mycelium."""
-    if kind == 'fungus':
-        return [('bark', tissue('bark-fungus', spec['skin'])), ('canopy', tissue('fungus', 'fungus/cup-inside')),
-                ('glow', {'id': 'mycelium', 'diffuse': [1, 1, 1], 'roughness': 1, 'metallic': 0, 'textures': []})]
+    """The bark (or cactus skin) and the canopy's cutout. A tree with a winter variant carries it on the canopy (its
+    winter file is that variant); a plant without one keeps its own cutout in winter, its snowy cards still taking the
+    snow's response."""
     winter = spec.get('winter', True)
     cutout = spec.get('cutout', kind)
     if snow and winter:
@@ -385,13 +348,13 @@ def materials(kind, spec, snow):
                           'filename': f'../textures/vegetation/{texture}_{suffix}.png'}
                          for suffix in spec.get('bark_maps', ('albedo',))]}
     if 'apple' not in spec:
-        return list(zip(('bark', 'canopy'), (bark, canopy)))
+        return [bark, canopy]
     # Apples are solid balls sampling an apple of the canopy's own (summer) cutout.
     fruit = {'id': 'fruit', 'diffuse': [1, 1, 1], 'roughness': 1, 'metallic': 0,
              'textures': [{'id': 'fruit', 'type': role,
                            'filename': f'../textures/vegetation/{spec["cutout"]}-cutout_{suffix}.png'}
                           for suffix, role in MAPS.items()]}
-    return list(zip(('bark', 'canopy', 'fruit'), (bark, canopy, fruit)))
+    return [bark, canopy, fruit]
 
 
 def add(a, b, s=1.0):
@@ -434,7 +397,7 @@ class Tree:
 
     def __init__(self, kind, spec, rng):
         self.kind, self.spec, self.rng = kind, spec, rng
-        self.vertices, self.parts = [], {'bark': [], 'canopy': [], 'fruit': [], 'glow': []}
+        self.vertices, self.parts = [], {'bark': [], 'canopy': [], 'fruit': []}
         # A slight lean, or a strong one (`tilt`, an old orchard tree).
         self.lean = [rng.uniform(-.25, .25) * spec.get('tilt', 1) for _ in range(2)]
         self.stem = STEMS.get(spec.get('cutout', kind), .5)
@@ -469,18 +432,15 @@ class Tree:
             return foot * max(0.0, 1 - z / (HEIGHT * .97)) ** 1.25 * (1 + .55 * math.exp(-z / .7)) + .03
         return foot * (1 - .4 * min(1, z / max(self.fork, 1))) * (1 + .55 * math.exp(-z / .7))
 
-    def surface(self, grid, normals, colors, uvs, part='canopy', faces=(1, -1), flip=False):
-        """The faces of a grid of rows of points (both, a canopy's, by default), each cell two triangles a face. Both
-        faces share the normals (a leaf card's crown dome) unless `flip` turns the back face's around (a solid
-        sheet)."""
-        for face in faces:
-            sign = -1 if flip and face == -1 else 1
-            ids = [[self.vertex(p, [c * sign for c in normals[i][j]], colors[i][j], uvs[i][j])
-                    for j, p in enumerate(row)] for i, row in enumerate(grid)]
+    def surface(self, grid, normals, colors, uvs):
+        """Both faces of a canopy grid of rows of points, each cell two triangles a face."""
+        for face in (1, -1):
+            ids = [[self.vertex(p, normals[i][j], colors[i][j], uvs[i][j]) for j, p in enumerate(row)]
+                   for i, row in enumerate(grid)]
             for i in range(len(grid) - 1):
                 for j in range(len(grid[0]) - 1):
                     a, b, c, d = ids[i][j], ids[i][j + 1], ids[i + 1][j + 1], ids[i + 1][j]
-                    self.parts[part].extend((a, b, c, a, c, d) if face == 1 else (a, c, b, a, d, c))
+                    self.parts['canopy'].extend((a, b, c, a, c, d) if face == 1 else (a, c, b, a, d, c))
 
     def trunk(self, sides, rings, top, shade_from):
         """The trunk up to `top`, rings crowding at the flare; above `shade_from` it stands in the crown's shade."""
@@ -513,11 +473,9 @@ class Tree:
                 a, b, c, d = ids[i][j], ids[i][j + 1], ids[i + 1][j + 1], ids[i + 1][j]
                 self.parts['bark'].extend((a, b, c, a, c, d))
 
-    def tube(self, points, radii, sides, shade, around=1, cap=0, part='bark', color=None):
+    def tube(self, points, radii, sides, shade, around=1, cap=0):
         """A bark tube along points, its rings turned by a parallel frame so it never twists, its texture repeating
-        `around` times about it. Its last `cap` rings close it as a dome, their normals turning up the tube's end.
-        `part` and `color` (the bark tint by default) are for tissue other than bark."""
-        color = color or self.spec['bark']
+        `around` times about it. Its last `cap` rings close it as a dome, their normals turning up the tube's end."""
         circumference = math.tau * self.spec['trunk']
         tangent = normalized(sub(points[1], points[0]))
         side = normalized(cross(tangent, [0, 0, 1] if abs(tangent[2]) < .9 else [1, 0, 0]))
@@ -534,41 +492,14 @@ class Tree:
                 angle = math.tau * k / sides
                 direction = add([c * math.cos(angle) for c in side], other, math.sin(angle))
                 normal = normalized(add([c * math.cos(tilt) for c in direction], tangent, math.sin(tilt)))
-                row.append(self.vertex(add(point, direction, radius), normal, [c * shade for c in color],
+                row.append(self.vertex(add(point, direction, radius), normal,
+                                       [c * shade for c in self.spec['bark']],
                                        [k / sides * around, -travelled * around / (circumference * 1.6)]))
             ids.append(row)
         for i in range(len(points) - 1):
             for j in range(sides):
                 a, b, c, d = ids[i][j], ids[i][j + 1], ids[i + 1][j + 1], ids[i + 1][j]
-                self.parts[part].extend((a, b, c, a, c, d))
-
-    def revolve(self, base, profile, sides, part, colors, faces, around=1, wobble=None, lean=(0, 0)):
-        """A surface of revolution about the upright through base: `profile` (radius, height) from its first ring to its
-        last, coloured per ring; face 1 looks away from the axis (out and down a flat disc), -1 toward it. `wobble`
-        (angle, share along the profile) gives a ring point's radius factor and height offset. Its texture repeats
-        `around` times about it and runs up the profile. `lean` (per unit of height) shears it toward a side, as a
-        tilted bowl or a leaning tube."""
-        grid, normals, colours, uvs, travelled = [], [], [], [], 0.0
-        circumference = math.tau * max(r for r, _ in profile) / around
-        for i, (r, z) in enumerate(profile):
-            if i:
-                travelled += math.hypot(r - profile[i - 1][0], z - profile[i - 1][1])
-            dr, dz = (profile[min(i + 1, len(profile) - 1)][0] - profile[max(i - 1, 0)][0],
-                      profile[min(i + 1, len(profile) - 1)][1] - profile[max(i - 1, 0)][1])
-            row, normal_row = [], []
-            for k in range(sides + 1):
-                angle = math.tau * k / sides
-                scale, lift = wobble(angle, i / max(1, len(profile) - 1)) if wobble else (1, 0)
-                out = [math.cos(angle), math.sin(angle), 0]
-                height = z + lift
-                row.append(add(base, [out[0] * r * scale + lean[0] * height, out[1] * r * scale + lean[1] * height,
-                                      height]))
-                normal_row.append(normalized([out[0] * dz, out[1] * dz, -dr]))
-            grid.append(row)
-            normals.append(normal_row)
-            colours.append([colors[i]] * (sides + 1))
-            uvs.append([[k / sides * around, travelled / circumference] for k in range(sides + 1)])
-        self.surface(grid, normals, colours, uvs, part, faces, flip=True)
+                self.parts['bark'].extend((a, b, c, a, c, d))
 
     def stubs(self, count):
         """Dead branch stubs on the trunk below the crown: thin three-sided spikes angled down."""
@@ -1152,94 +1083,6 @@ class Tree:
             for tip in tips:
                 self.flower(tip, radius, level['blossoms'])
 
-    # Fungal colonies
-
-    def fungus(self, level, thinning):
-        spec, rng = self.spec, self.rng
-        sides = max(5, round(level['sides'] * math.sqrt(thinning)))
-        rings = max(2, round(level['rings'] * math.sqrt(thinning)))
-        # A far level over its budget keeps a colony's first (largest) cups and puffballs.
-        keep = lambda parts: parts[:max(1, round(len(parts) * min(1, thinning * 1.6)))]
-        for x, y, top, rim, depth in keep(spec.get('cups', ())):
-            self.cup([x * HEIGHT, y * HEIGHT], top * HEIGHT, rim * HEIGHT, depth * HEIGHT, sides, rings, level)
-        for x, y, radius, squash, pear in keep(spec.get('balls', ())):
-            self.puffball([x * HEIGHT, y * HEIGHT], radius * HEIGHT, squash, pear, level, thinning)
-        bulb = spec['stalk'] * HEIGHT * 1.9
-        for _ in range(round(spec['threads'] * level['threads'])):
-            # Mycelium roots run out over the ground from the colony's bulbous foot, glowing a dim cyan.
-            angle, reach = rng.uniform(0, math.tau), HEIGHT * rng.uniform(.16, .3)
-            bend = rng.uniform(-.6, .6)
-            points = [[math.cos(angle + bend * t * t) * (bulb + reach * t), math.sin(angle + bend * t * t)
-                       * (bulb + reach * t), .2 + .3 * t * (1 - t)] for t in (0, .35, .7, 1)]
-            self.tube(points, [.5, .34, .2, .1], 3, 1.0, part='glow', color=(.18, .38, .42))
-
-    def cup(self, foot, top, rim, depth, sides, rings, level):
-        """A cup fungus: a fleshy stalk swelling into a bulb at its foot, leaning a little, under a bowl whose radius
-        and height grow from the stalk to the rim as `shape` gives; the rim ruffles in waves and droops where they
-        swell. Its inside is fungal tissue from deep red to a paler lip; the outside and the lip's edge are skin."""
-        spec, rng = self.spec, self.rng
-        stalk = spec['stalk'] * HEIGHT * rng.uniform(.85, 1.2)
-        lean = [rng.uniform(-.08, .08) * HEIGHT, rng.uniform(-.08, .08) * HEIGHT]
-        head = [foot[0] + lean[0], foot[1] + lean[1], top]
-        # The stalk curves its own way before reaching the bowl.
-        bow = [foot[0] + rng.uniform(-.06, .06) * HEIGHT, foot[1] + rng.uniform(-.06, .06) * HEIGHT, top * .5]
-        count = level['stalk']
-        points = [bezier([*foot, 0], bow, head, k / count) for k in range(count + 1)]
-        swell = [1.9, 1.35, 1.05, .95, .95, 1.05, 1.15]
-        radii = [stalk * swell[round(k / count * (len(swell) - 1))] for k in range(count + 1)]
-        # The bulb: its widest ring stands clear of the ground over a narrower foot, so it reads above the mycelium.
-        points.insert(1, [foot[0], foot[1], HEIGHT * .03])
-        radii[0:1] = [stalk * 1.5, stalk * 2.1]
-        self.tube(points, radii, max(4, sides // 2), .9, around=2)
-        grow, rise = spec['shape']
-        phase = [rng.uniform(0, math.tau) for _ in range(4)]
-        waves = spec['waves'] * rng.uniform(.8, 1.2)
-        # The bowl tilts 5-15 degrees its own way; one side of the rim slumps lower than the rest.
-        tilt, heading = math.tan(math.radians(rng.uniform(5, 15))), rng.uniform(0, math.tau)
-        lean = (math.cos(heading) * tilt, math.sin(heading) * tilt)
-
-        def wobble(angle, t):
-            swell = (math.sin(2 * angle + phase[0]) * .35 + math.sin(3 * angle + phase[1]) * .35
-                     + math.sin(5 * angle + phase[2]) * .2 + math.sin(9 * angle + phase[3]) * .1)
-            slump = max(0.0, math.cos(angle - phase[0]))
-            return 1 + waves * swell * t * t, -(waves * max(0, swell) + .25 * slump) * rim * .6 * t ** 3
-
-        # The bowl closes over the stalk's head.
-        profile = [(stalk * .1 + (rim - stalk * .1) * (i / rings) ** grow, depth * (i / rings) ** rise)
-                   for i in range(rings + 1)]
-        tint = [rng.uniform(.9, 1.1) for _ in range(3)]
-        inside = [[min(1, (a + (b - a) * (i / rings) ** 1.5) * t) for a, b, t in zip(spec['inside'], spec['rim'], tint)]
-                  for i in range(rings + 1)]
-        # The ridges run their own number of times about each cup, so cups side by side differ.
-        around = rng.choice((2, 3, 4))
-        self.revolve(head, profile, sides, 'canopy', inside, (-1,), around=around, wobble=wobble, lean=lean)
-        thick = HEIGHT * .024
-        outer = [(r + thick, z - thick) for r, z in profile]
-        self.revolve(head, outer, sides, 'bark', [spec['tint']] * (rings + 1), (1,), around=around, wobble=wobble,
-                     lean=lean)
-        # A fleshy rounded lip over from the inside to the outside.
-        lip = [profile[-1], (profile[-1][0] + thick * .7, profile[-1][1] + thick * .45), (outer[-1][0], outer[-1][1])]
-        self.revolve(head, lip, sides, 'bark', [spec['rim']] * 3, (1,), around=around,
-                     wobble=lambda angle, t: wobble(angle, 1), lean=lean)
-
-    def puffball(self, foot, radius, squash, pear, level, thinning):
-        """A puffball: a pitted, slightly lopsided sphere squashed or drawn up (`squash`), narrowing to a stalk-like
-        foot as a pear (`pear`), sitting in the mycelium."""
-        rng = self.rng
-        around, rows = level['ball']
-        around = max(4, round(around * math.sqrt(thinning)))
-        phase = [rng.uniform(0, math.tau) for _ in range(2)]
-        profile = []
-        for i in range(rows + 1):
-            phi = -math.pi / 2 + math.pi * i / rows
-            narrow = 1 - pear * (1 - (math.sin(phi) + 1) / 2) ** 2
-            profile.append((max(.02, radius * math.cos(phi) * narrow), radius * squash * (1 + math.sin(phi))))
-        shade = [self.spec['tint']] * len(profile)
-        # The crust's pits repeat once about a ball, large enough to read from above.
-        self.revolve([*foot, -radius * .08], profile, around, 'bark', shade, (1,), around=1,
-                     wobble=lambda a, t: (1 + .06 * math.sin(3 * a + phase[0]) * math.sin(math.pi * t)
-                                          + .03 * math.sin(7 * a + phase[1]), 0))
-
     # Levels
 
     def fit(self):
@@ -1263,8 +1106,6 @@ def grow(kind, spec, index, thinning):
         tree.palm(PALM_LEVELS[index], thinning)
     elif kind == 'cactus':
         tree.cactus(CACTUS_LEVELS[index], thinning)
-    elif kind == 'fungus':
-        tree.fungus(FUNGUS_LEVELS[index], thinning)
     else:
         level = BROADLEAF_LEVELS[index]
         tree.broadleaf({**level, **spec['near']} if index == 0 and 'near' in spec else level, thinning)
@@ -1287,8 +1128,8 @@ def model(name, index):
             raise ValueError(f'{name}-lod{index} cannot fit {budget} triangles')
         tree = grow(kind, spec, index, thinning)
     vertices = list(tree.vertices)
+    tint = spec['leaves']
     if spec.get('winter', True):
-        tint = spec['leaves']
         # Canopy shades scale the species' tint in linear light, so its winter colour scale greys every card exactly.
         for i in set(tree.parts['canopy']):
             value = min(linear(vertices[i * 12 + 7] / tint[1]), 1 / linear(max(tint)))
@@ -1307,7 +1148,8 @@ def model(name, index):
             for c in range(3):
                 vertices[i * 12 + 6 + c] += (.98 - vertices[i * 12 + 6 + c]) * cover
     asset = f'{name}-lod{index}'
-    roles = [(role, material) for role, material in materials(kind, spec, snow) if tree.parts[role]]
+    roles = [(role, material) for role, material in zip(('bark', 'canopy', 'fruit'), materials(kind, spec, snow))
+             if tree.parts[role]]
     parts = [{'id': f'{asset}-{role}', 'type': 'TRIANGLES', 'indices': tree.parts[role]} for role, _ in roles]
     return {'id': asset, 'meshes': [{'attributes': ['POSITION', 'NORMAL', 'COLOR', 'TEXCOORD0'],
                                      'vertices': vertices, 'parts': parts}],
@@ -1318,27 +1160,24 @@ def model(name, index):
 
 def build(name, board):
     levels = {index: model(name, index) for index in range(3)}
-    # Plants live in vegetation/ unless their species names a folder (fungus/).
-    path = f"{SPECIES[species(name)].get('folder', 'vegetation')}/{name}"
-    # The impostor (LOD3) stays until the impostor bake refreshes it; a level 3 of other material is dropped.
-    shipped = BOARD / f'{path}.glb'
-    if shipped.exists() and f'{name}-lod3'.encode() in shipped.read_bytes():
+    # The impostor (LOD3) stays until the impostor bake refreshes it.
+    shipped = BOARD / f'vegetation/{name}.glb'
+    if shipped.exists():
         old = read_glb(shipped, 3)
         old['materials'] = [material for material in old['materials'] if material['id'] == 'impostor']
-        if old['materials']:
-            levels[3] = old
-    write_glb(Path(board) / f'{path}.glb', levels=levels)
+        levels[3] = old
+    write_glb(Path(board) / f'vegetation/{name}.glb', levels=levels)
     counts = [{'node': f'{name}-lod{index}',
                'triangles': sum(len(p['indices']) // 3 for p in levels[index]['meshes'][0]['parts']),
                'vertices': len(levels[index]['meshes'][0]['vertices']) // 12} for index in range(3)]
     if Path(board).resolve() == BOARD.resolve():
         manifest = json.loads(MANIFEST.read_text())
         # A new plant (a shrub's variant) gets its entry; the impostor bake adds its fourth level.
-        manifest.setdefault(path, {'mesh': f'{path}.glb', 'lods': []})
+        manifest.setdefault(f'vegetation/{name}', {'mesh': f'vegetation/{name}.glb', 'lods': []})
         # The bare file's entry and its winter variant's (which reads the same file) share its levels.
-        for key in (path, f'{path}-snow'):
+        for key in (f'vegetation/{name}', f'vegetation/{name}-snow'):
             entry = manifest.get(key)
-            if entry and entry['mesh'] == f'{path}.glb':
+            if entry and entry['mesh'] == f'vegetation/{name}.glb':
                 stem = key.rsplit('/', 1)[-1]
                 entry['lods'][:3] = [{**lod, 'node': f'{stem}-lod{index}'} for index, lod in enumerate(counts)]
                 entry.update(source='tools/board-models/foliage/build_trees.py', triangles=counts[0]['triangles'],

@@ -17,7 +17,7 @@
         "y": 190
       },
       "title": "About this material",
-      "text": "Colour artwork from sources/mars-coral-atlas.png, 1024 px. Pigment adjusts hue, saturation and value; the defaults keep the artwork as it is. Keep the layout: the models point at its parts. The ...PNG8 groups and the nodes after them only store exact file values; leave them. Export: File > Export material > Godot > Godot 4 Standard into data/models/board/textures/vegetation/mars, then Reload assets in the game's Tuning panel. Its surface (sources/structure-high.png and structure-low.png) is derived from the colour artwork quadrant by quadrant: pores are its dark narrow hollows. Relief is the heightmap's height range as a percentage of the repeat (0.3922: 10 codes); the normals round it to a whole code of the heightmap (Relief x 25.5), so keep it a multiple of 10 / 255 (0.0392), and set the Material node's Depth scale to Relief / 25 (tools/materials/README.md).",
+      "text": "Colour artwork from sources/mars-coral-atlas.png, 1024 px. Pigment adjusts hue, saturation and value; the defaults keep the artwork as it is. FanBlend first lifts the sea-fan quadrant (top right, FanMask) to a dustier, lighter mauve (FanLift), so the fans and the lattice read at the board's iso and top views. Keep the layout: the models point at its parts. The ...PNG8 groups and the nodes after them only store exact file values; leave them. Export: File > Export material > Godot > Godot 4 Standard into data/models/board/textures/vegetation/mars, then Reload assets in the game's Tuning panel. Its surface (sources/structure-high.png and structure-low.png) is derived from the colour artwork quadrant by quadrant: pores are its dark narrow hollows. Relief is the heightmap's height range as a percentage of the repeat (0.3922: 10 codes); the normals round it to a whole code of the heightmap (Relief x 25.5), so keep it a multiple of 10 / 255 (0.0392), and set the Material node's Depth scale to Relief / 25 (tools/materials/README.md).",
       "color": {
         "type": "Color",
         "r": 0.18,
@@ -3043,15 +3043,126 @@
         "y": 1300
       },
       "seed_int": 0
+    },
+    {
+      "type": "gradient",
+      "name": "FanMaskU",
+      "node_position": {
+        "x": -300,
+        "y": -250
+      },
+      "parameters": {
+        "gradient": {
+          "interpolation": 0.0,
+          "points": [
+            {
+              "a": 1.0,
+              "b": 0.0,
+              "g": 0.0,
+              "pos": 0.0,
+              "r": 0.0
+            },
+            {
+              "a": 1.0,
+              "b": 0.0,
+              "g": 0.0,
+              "pos": 0.49949,
+              "r": 0.0
+            },
+            {
+              "a": 1.0,
+              "b": 1.0,
+              "g": 1.0,
+              "pos": 0.49951,
+              "r": 1.0
+            }
+          ],
+          "type": "Gradient"
+        },
+        "mirror": false,
+        "repeat": 1.0,
+        "rotate": 0.0
+      }
+    },
+    {
+      "type": "gradient",
+      "name": "FanMaskV",
+      "node_position": {
+        "x": -300,
+        "y": -150
+      },
+      "parameters": {
+        "gradient": {
+          "interpolation": 0.0,
+          "points": [
+            {
+              "a": 1.0,
+              "b": 1.0,
+              "g": 1.0,
+              "pos": 0.0,
+              "r": 1.0
+            },
+            {
+              "a": 1.0,
+              "b": 1.0,
+              "g": 1.0,
+              "pos": 0.49949,
+              "r": 1.0
+            },
+            {
+              "a": 1.0,
+              "b": 0.0,
+              "g": 0.0,
+              "pos": 0.49951,
+              "r": 0.0
+            }
+          ],
+          "type": "Gradient"
+        },
+        "mirror": false,
+        "repeat": 1.0,
+        "rotate": 90.0
+      }
+    },
+    {
+      "type": "blend2",
+      "name": "FanMask",
+      "node_position": {
+        "x": -100,
+        "y": -200
+      },
+      "parameters": {
+        "amount1": 1.0,
+        "blend_type1": 2.0
+      }
+    },
+    {
+      "type": "adjust_hsv",
+      "name": "FanLift",
+      "node_position": {
+        "x": -100,
+        "y": 100
+      },
+      "parameters": {
+        "hue": -0.015,
+        "saturation": 0.9,
+        "value": 1.15
+      }
+    },
+    {
+      "type": "blend2",
+      "name": "FanBlend",
+      "node_position": {
+        "x": 100,
+        "y": 0
+      },
+      "parameters": {
+        "amount1": 1.0,
+        "blend_type1": 0.0
+      }
     }
   ],
   "connections": [
-    {
-      "from": "Source",
-      "from_port": 0,
-      "to": "Pigment",
-      "to_port": 0
-    },
     {
       "from": "Pigment",
       "from_port": 0,
@@ -3225,6 +3336,48 @@
       "from_port": 2,
       "to": "Material",
       "to_port": 5
+    },
+    {
+      "from": "FanMaskU",
+      "from_port": 0,
+      "to": "FanMask",
+      "to_port": 0
+    },
+    {
+      "from": "FanMaskV",
+      "from_port": 0,
+      "to": "FanMask",
+      "to_port": 1
+    },
+    {
+      "from": "Source",
+      "from_port": 0,
+      "to": "FanLift",
+      "to_port": 0
+    },
+    {
+      "from": "Source",
+      "from_port": 0,
+      "to": "FanBlend",
+      "to_port": 0
+    },
+    {
+      "from": "FanLift",
+      "from_port": 0,
+      "to": "FanBlend",
+      "to_port": 1
+    },
+    {
+      "from": "FanMask",
+      "from_port": 0,
+      "to": "FanBlend",
+      "to_port": 2
+    },
+    {
+      "from": "FanBlend",
+      "from_port": 0,
+      "to": "Pigment",
+      "to_port": 0
     }
   ]
 }
