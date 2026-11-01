@@ -349,8 +349,76 @@ def vehicle_gate(lod):
     return Vector((24, 10))
 
 
+def generator_ring(lod):
+    # The printed lunar map's generator: an upright half ring on a base plate, lit cyan panels round its rim (from
+    # above, an oval banded in cyan), a disc and hub inside it, radiator boxes with grille tops at both ends, a ribbed
+    # feed pipe and canisters. Low enough (6 high) for the board to stretch it and keep it under half a level.
+    arc = 9 if lod == 0 else 5
+    outer, inner, depth = 6.0, 4.2, 5.4
+    for k in range(arc):
+        a0, a1 = math.pi * k / arc, math.pi * (k + 1) / arc
+        middle = (a0 + a1) / 2
+        span = 2 * outer * math.sin((a1 - a0) / 2) + .15
+        r = (outer + inner) / 2
+        centre = (r * math.cos(middle), 0, r * math.sin(middle))
+        box('paint', centre, (span, depth, outer - inner), rotation=(0, -middle + math.pi / 2, 0))
+        if 0 < k < arc - 1:
+            out = outer + .05
+            box('glass', (out * math.cos(middle), 0, out * math.sin(middle)), (span * .7, depth * .8, .12),
+                rotation=(0, -middle + math.pi / 2, 0))
+    cylinder('dark', (0, -1.8, 0), (0, 1.8, 0), inner, 24 if lod == 0 else 10)
+    cylinder('steel', (0, -2.2, 0), (0, 2.2, 0), 1.2, 12 if lod == 0 else 6)
+    for x in (-8.3, 8.3):
+        box('paint', (x, 0, 1.6), (3.6, 4.8, 3.2), bevel=.12 if lod == 0 else 0)
+        box('grille', (x, 0, 3.22), (3.0, 4.0, .04))
+    box('dark', (0, 0, .2), (21.0, 7.0, .4))
+    if lod == 0:
+        for k in range(4):
+            cylinder('steel', (2.6, -3.1 + k * .05, .4 + k * .7), (2.6, -3.1 + k * .05, .9 + k * .7), .75, 10)
+        for x in (-10.0, -9.0):
+            cylinder('steel', (x, 3.0, .4), (x, 3.0, 1.4), .45, 8)
+    return Vector((21, 7))
+
+
+def radar_station(lod):
+    # The printed lunar map's radar: the roof dish, a third larger, on a turntable inside a raised ring.
+    sides = 48 if lod == 0 else 20
+    cylinder('dark', (0, 0, 0), (0, 0, 1.6), 25.0, sides)
+    cylinder('paint', (0, 0, 1.6), (0, 0, 2.4), 25.0, sides)
+    cylinder('steel', (0, 0, 1.6), (0, 0, 3.4), 18.0, sides)
+    before = set(bpy.context.scene.objects)
+    radar_dish(lod)
+    for obj in set(bpy.context.scene.objects) - before:
+        obj.location = obj.location * 1.3 + Vector((0, 0, 3.4))
+        obj.scale = obj.scale * 1.3
+    return Vector((50, 50))
+
+
+def light_well(lod):
+    # A square well of lit cyan glass in a steel curb, set in a roof.
+    box('steel', (0, 0, .5), (14.0, 14.0, 1.0), bevel=.15 if lod == 0 else 0)
+    box('glass', (0, 0, 1.02), (11.0, 11.0, .1))
+    if lod == 0:
+        for k in (-1.8, 1.8):
+            box('steel', (k, 0, 1.1), (.4, 11.0, .2))
+            box('steel', (0, k, 1.1), (11.0, .4, .2))
+    return Vector((14, 14))
+
+
+def light_strip(lod):
+    # A long strip of lit cyan glass in a steel curb along a roof, glazing bars across it.
+    box('steel', (0, 0, .5), (34.0, 7.0, 1.0), bevel=.15 if lod == 0 else 0)
+    box('glass', (0, 0, 1.02), (31.0, 4.6, .1))
+    if lod == 0:
+        for x in range(-12, 13, 4):
+            box('steel', (x, 0, 1.1), (.4, 4.6, .2))
+    return Vector((34, 7))
+
+
 # Roof props: board objects of their own (models/board/scenery/roofs/<name>.glb).
-ROOF_PROPS = {'radar-dish': radar_dish, 'capsule-tanks': capsule_tanks}
+ROOF_PROPS = {'radar-dish': radar_dish, 'capsule-tanks': capsule_tanks, 'generator-ring': generator_ring,
+              'radar-station': radar_station, 'light-well': light_well, 'light-strip': light_strip,
+              'solar-array': solar}
 # Colony detail props (models/board/scenery/colony/<name>.glb): building details the board places with precision
 # placement to break a block's outline; wall-mounted ones stand with their back on y = 0, against a facade.
 COLONY_PROPS = {'pipe-run': pipe_run, 'vent-unit': vent_unit, 'wall-tanks': wall_tanks, 'ladder-cage': ladder_cage,
