@@ -248,14 +248,14 @@ def airlock(lod):
 
 
 def pylon(lod):
-    # A podium's corner block: stands on the dome's foot, half inside the ring building, its front (+Y) outward.
+    # A podium's corner block, a buttress without a door (only airlocks are gates): stands on the dome's foot, half
+    # inside the ring building, its front (+Y) outward.
     box('paint', (0, 0, 8.5), (15.0, 18.0, 17.0), bevel=1.0 if lod == 0 else 0)
     box('paint', (0, 0, 17.3), (11.0, 13.0, .6), bevel=.15 if lod == 0 else 0)
     box('grille', (0, 9.02, 12.5), (11.0, .1, 2.4))
     for x in (-7.52, 7.52):
         box('grille', (x, 2.0, 12.5), (.1, 9.0, 2.4))
-    box('hazard', (0, 9.03, 3.8), (5.6, .1, 7.6))
-    box('steel', (0, 9.12, 3.6), (4.4, .2, 6.8), bevel=.1 if lod == 0 else 0)
+    box('steel', (0, 9.1, 1.2), (13.0, .3, 2.4), bevel=.1 if lod == 0 else 0)
     if lod == 0:
         box('paint', (3.5, -2.0, 18.4), (3.0, 3.0, 1.6), bevel=.2)
         cylinder('steel', (-4.0, 3.0, 17.6), (-4.0, 3.0, 23.0), .3, 8)
