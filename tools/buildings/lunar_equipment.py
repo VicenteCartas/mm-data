@@ -348,15 +348,16 @@ def generator_ring(lod):
 
 
 def radar_station(lod):
-    # The printed lunar map's radar: the roof dish, a third larger, on a turntable inside a raised ring.
+    # The printed lunar map's radar: the roof dish, a third larger, on a turntable inside a raised ring. Its base drum
+    # stands taller than a habitat roof's vents (at the Lunar Base's .65 too), so the fittings it covers stay under it.
     sides = 48 if lod == 0 else 20
-    cylinder('dark', (0, 0, 0), (0, 0, 1.6), 25.0, sides)
-    cylinder('paint', (0, 0, 1.6), (0, 0, 2.4), 25.0, sides)
-    cylinder('steel', (0, 0, 1.6), (0, 0, 3.4), 18.0, sides)
+    cylinder('dark', (0, 0, 0), (0, 0, 3.0), 25.0, sides)
+    cylinder('paint', (0, 0, 3.0), (0, 0, 3.8), 25.0, sides)
+    cylinder('steel', (0, 0, 3.0), (0, 0, 4.8), 18.0, sides)
     before = set(bpy.context.scene.objects)
     radar_dish(lod)
     for obj in set(bpy.context.scene.objects) - before:
-        obj.location = obj.location * 1.3 + Vector((0, 0, 3.4))
+        obj.location = obj.location * 1.3 + Vector((0, 0, 4.8))
         obj.scale = obj.scale * 1.3
     return Vector((50, 50))
 
