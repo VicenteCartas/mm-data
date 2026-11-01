@@ -217,6 +217,7 @@
         "gameplay",
         "looks",
         "rooftop",
+        "colony",
         "blueprints"
       ]
     },
@@ -12037,7 +12038,7 @@
     },
     {
       "id": "buildings/saxarba/building_light/building_light_00",
-      "label": "Building Light 00",
+      "label": "Building Light",
       "owner": "building",
       "asset": "buildings/saxarba/building_light/building_light_00",
       "thumbnail": "images/hexes/saxarba/building_light/building_light_00.png"
@@ -17024,7 +17025,7 @@
     },
     {
       "id": "buildings/saxarba/fortress_light/fortress_light_a_52",
-      "label": "Fortress Light A 52",
+      "label": "Fortress Light A",
       "owner": "building",
       "asset": "buildings/saxarba/fortress_light/fortress_light_a_52",
       "thumbnail": "images/hexes/saxarba/fortress_light/fortress_light_a_52.png"
@@ -26583,6 +26584,27 @@
       "section": "buildings/looks"
     },
     {
+      "id": "building/lunar-habitat",
+      "label": "Lunar habitat",
+      "owner": "building",
+      "asset": "buildings/lunar_habitat/lunar_habitat",
+      "section": "buildings/looks"
+    },
+    {
+      "id": "building/glass-dome",
+      "label": "Glass dome",
+      "owner": "building",
+      "asset": "buildings/multihex/dome",
+      "section": "buildings/looks"
+    },
+    {
+      "id": "building/biodome",
+      "label": "Biodome",
+      "owner": "building",
+      "asset": "buildings/multihex/biodome",
+      "section": "buildings/looks"
+    },
+    {
       "id": "building/tank-farm",
       "label": "Tank farm",
       "owner": "fuelTank",
@@ -27381,6 +27403,60 @@
       "label": "Chimney stack",
       "kind": "prop",
       "section": "buildings/rooftop"
+    },
+    {
+      "id": "scenery/roofs/radar-dish",
+      "label": "Radar dish",
+      "kind": "prop",
+      "section": "buildings/rooftop"
+    },
+    {
+      "id": "scenery/roofs/capsule-tanks",
+      "label": "Capsule tanks",
+      "kind": "prop",
+      "section": "buildings/rooftop"
+    },
+    {
+      "id": "scenery/colony/pipe-run",
+      "label": "Pipe run",
+      "kind": "prop",
+      "section": "buildings/colony"
+    },
+    {
+      "id": "scenery/colony/vent-unit",
+      "label": "Vent unit",
+      "kind": "prop",
+      "section": "buildings/colony"
+    },
+    {
+      "id": "scenery/colony/wall-tanks",
+      "label": "Wall tanks",
+      "kind": "prop",
+      "section": "buildings/colony"
+    },
+    {
+      "id": "scenery/colony/ladder-cage",
+      "label": "Caged ladder",
+      "kind": "prop",
+      "section": "buildings/colony"
+    },
+    {
+      "id": "scenery/colony/light-mast",
+      "label": "Light mast",
+      "kind": "prop",
+      "section": "buildings/colony"
+    },
+    {
+      "id": "scenery/colony/airlock",
+      "label": "Airlock",
+      "kind": "prop",
+      "section": "buildings/colony"
+    },
+    {
+      "id": "scenery/colony/radiator",
+      "label": "Radiator",
+      "kind": "prop",
+      "section": "buildings/colony"
     },
     {
       "id": "scenery/roofs/glass-roof-wide",

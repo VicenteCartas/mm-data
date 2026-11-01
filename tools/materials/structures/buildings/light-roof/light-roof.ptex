@@ -1,0 +1,441 @@
+{
+	"connections": [
+		{
+			"from": "Laps",
+			"from_port": 0,
+			"to": "LapLine",
+			"to_port": 0
+		},
+		{
+			"from": "LapLine",
+			"from_port": 0,
+			"to": "LapShade",
+			"to_port": 0
+		},
+		{
+			"from": "Grit",
+			"from_port": 0,
+			"to": "Toned",
+			"to_port": 0
+		},
+		{
+			"from": "Drift",
+			"from_port": 0,
+			"to": "Toned",
+			"to_port": 1
+		},
+		{
+			"from": "Toned",
+			"from_port": 0,
+			"to": "Bitumen",
+			"to_port": 0
+		},
+		{
+			"from": "Puddles",
+			"from_port": 0,
+			"to": "PuddleMask",
+			"to_port": 0
+		},
+		{
+			"from": "Bitumen",
+			"from_port": 0,
+			"to": "Stained",
+			"to_port": 0
+		},
+		{
+			"from": "Dried",
+			"from_port": 0,
+			"to": "Stained",
+			"to_port": 1
+		},
+		{
+			"from": "PuddleMask",
+			"from_port": 0,
+			"to": "Stained",
+			"to_port": 2
+		},
+		{
+			"from": "Stained",
+			"from_port": 0,
+			"to": "Lapped",
+			"to_port": 0
+		},
+		{
+			"from": "LapShade",
+			"from_port": 0,
+			"to": "Lapped",
+			"to_port": 1
+		},
+		{
+			"from": "Lapped",
+			"from_port": 0,
+			"to": "Material",
+			"to_port": 0
+		},
+		{
+			"from": "Roughness",
+			"from_port": 0,
+			"to": "Material",
+			"to_port": 2
+		},
+		{
+			"from": "Laps",
+			"from_port": 0,
+			"to": "Relief",
+			"to_port": 0
+		},
+		{
+			"from": "Grit",
+			"from_port": 0,
+			"to": "Relief",
+			"to_port": 1
+		},
+		{
+			"from": "Relief",
+			"from_port": 0,
+			"to": "Normal",
+			"to_port": 0
+		},
+		{
+			"from": "Normal",
+			"from_port": 0,
+			"to": "Material",
+			"to_port": 4
+		}
+	],
+	"label": "Graph",
+	"longdesc": "",
+	"name": "light-roof",
+	"node_position": {
+		"x": 0.0,
+		"y": 0.0
+	},
+	"nodes": [
+		{
+			"export_paths": {},
+			"name": "Material",
+			"node_position": {
+				"x": 0.0,
+				"y": 0.0
+			},
+			"parameters": {
+				"albedo_color": {
+					"a": 1.0,
+					"b": 1.0,
+					"g": 1.0,
+					"r": 1.0,
+					"type": "Color"
+				},
+				"ao": 1.0,
+				"depth_scale": 0.5,
+				"emission_energy": 1.0,
+				"flags_transparent": false,
+				"metallic": 0.0,
+				"normal": 1.0,
+				"roughness": 1.0,
+				"size": 9.0,
+				"sss": 0.0
+			},
+			"seed_int": 0,
+			"type": "material"
+		},
+		{
+			"name": "Laps",
+			"node_position": {
+				"x": -900.0,
+				"y": 300.0
+			},
+			"parameters": {
+				"mix": 0.0,
+				"x_scale": 4.0,
+				"x_wave": 3.0,
+				"y_scale": 1.0,
+				"y_wave": 4.0
+			},
+			"seed_int": 0,
+			"type": "pattern"
+		},
+		{
+			"name": "LapLine",
+			"node_position": {
+				"x": -650.0,
+				"y": 300.0
+			},
+			"parameters": {
+				"contrast": 0.5,
+				"invert": true,
+				"value": 0.02,
+				"width": 0.03
+			},
+			"seed_int": 0,
+			"type": "tones_range"
+		},
+		{
+			"name": "LapShade",
+			"node_position": {
+				"x": -450.0,
+				"y": 300.0
+			},
+			"parameters": {
+				"gradient": {
+					"interpolation": 1,
+					"points": [
+						{
+							"a": 1.0,
+							"b": 0.620000004768372,
+							"g": 0.620000004768372,
+							"pos": 0.0,
+							"r": 0.620000004768372
+						},
+						{
+							"a": 1.0,
+							"b": 1.0,
+							"g": 1.0,
+							"pos": 1.0,
+							"r": 1.0
+						}
+					],
+					"type": "Gradient"
+				}
+			},
+			"seed_int": 0,
+			"type": "colorize"
+		},
+		{
+			"name": "Grit",
+			"node_position": {
+				"x": -900.0,
+				"y": -200.0
+			},
+			"parameters": {
+				"folds": 0.0,
+				"iterations": 3.0,
+				"noise": 0.0,
+				"offset": 0.0,
+				"persistence": 0.6,
+				"scale_x": 32.0,
+				"scale_y": 32.0
+			},
+			"seed_int": 0,
+			"type": "fbm2"
+		},
+		{
+			"name": "Drift",
+			"node_position": {
+				"x": -900.0,
+				"y": -60.0
+			},
+			"parameters": {
+				"folds": 0.0,
+				"iterations": 3.0,
+				"noise": 1.0,
+				"offset": 0.0,
+				"persistence": 0.5,
+				"scale_x": 4.0,
+				"scale_y": 4.0
+			},
+			"seed_int": 0,
+			"type": "fbm2"
+		},
+		{
+			"generic_size": 1,
+			"name": "Toned",
+			"node_position": {
+				"x": -650.0,
+				"y": -140.0
+			},
+			"parameters": {
+				"amount1": 0.6,
+				"blend_type1": 4.0
+			},
+			"seed_int": 0,
+			"type": "blend2"
+		},
+		{
+			"name": "Bitumen",
+			"node_position": {
+				"x": -450.0,
+				"y": -140.0
+			},
+			"parameters": {
+				"gradient": {
+					"interpolation": 1,
+					"points": [
+						{
+							"a": 1.0,
+							"b": 0.0930000022053719,
+							"g": 0.0970000028610229,
+							"pos": 0.0,
+							"r": 0.100000001490116
+						},
+						{
+							"a": 1.0,
+							"b": 0.151999995112419,
+							"g": 0.159999996423721,
+							"pos": 0.5,
+							"r": 0.165000006556511
+						},
+						{
+							"a": 1.0,
+							"b": 0.209999993443489,
+							"g": 0.222000002861023,
+							"pos": 1.0,
+							"r": 0.230000004172325
+						}
+					],
+					"type": "Gradient"
+				}
+			},
+			"seed_int": 0,
+			"type": "colorize"
+		},
+		{
+			"name": "Puddles",
+			"node_position": {
+				"x": -900.0,
+				"y": 100.0
+			},
+			"parameters": {
+				"folds": 0.0,
+				"iterations": 5.0,
+				"noise": 1.0,
+				"offset": 0.0,
+				"persistence": 0.55,
+				"scale_x": 2.0,
+				"scale_y": 2.0
+			},
+			"seed_int": 0,
+			"type": "fbm2"
+		},
+		{
+			"name": "PuddleMask",
+			"node_position": {
+				"x": -650.0,
+				"y": 100.0
+			},
+			"parameters": {
+				"contrast": 0.25,
+				"invert": false,
+				"value": 0.75,
+				"width": 0.2
+			},
+			"seed_int": 0,
+			"type": "tones_range"
+		},
+		{
+			"name": "Dried",
+			"node_position": {
+				"x": -450.0,
+				"y": 160.0
+			},
+			"parameters": {
+				"color": {
+					"a": 1.0,
+					"b": 0.259999990463257,
+					"g": 0.280000001192093,
+					"r": 0.28999999165535,
+					"type": "Color"
+				}
+			},
+			"seed_int": 0,
+			"type": "uniform"
+		},
+		{
+			"generic_size": 1,
+			"name": "Stained",
+			"node_position": {
+				"x": -250.0,
+				"y": -60.0
+			},
+			"parameters": {
+				"amount1": 0.35,
+				"blend_type1": 0.0
+			},
+			"seed_int": 0,
+			"type": "blend2"
+		},
+		{
+			"generic_size": 1,
+			"name": "Lapped",
+			"node_position": {
+				"x": -50.0,
+				"y": 0.0
+			},
+			"parameters": {
+				"amount1": 1.0,
+				"blend_type1": 2.0
+			},
+			"seed_int": 0,
+			"type": "blend2"
+		},
+		{
+			"name": "Roughness",
+			"node_position": {
+				"x": -50.0,
+				"y": 160.0
+			},
+			"parameters": {
+				"color": 0.88
+			},
+			"seed_int": 0,
+			"type": "uniform_greyscale"
+		},
+		{
+			"generic_size": 1,
+			"name": "Relief",
+			"node_position": {
+				"x": -450.0,
+				"y": 440.0
+			},
+			"parameters": {
+				"amount1": 0.15,
+				"blend_type1": 12.0
+			},
+			"seed_int": 0,
+			"type": "blend2"
+		},
+		{
+			"name": "Normal",
+			"node_position": {
+				"x": -50.0,
+				"y": 300.0
+			},
+			"parameters": {
+				"param0": 9.0,
+				"param1": 0.35,
+				"param2": 0.0,
+				"param4": 1
+			},
+			"seed_int": 0,
+			"type": "normal_map"
+		},
+		{
+			"color": {
+				"a": 1.0,
+				"b": 0.0,
+				"g": 0.0,
+				"r": 0.0,
+				"type": "Color"
+			},
+			"name": "About",
+			"node_position": {
+				"x": -900.0,
+				"y": -480.0
+			},
+			"parameters": {},
+			"seed_int": 0,
+			"size": {
+				"x": 300.0,
+				"y": 200.0
+			},
+			"text": "A flat roof's bitumen membrane for the connected light buildings (structures/buildings, tools/buildings), drawn on the board's axes (mmBoardUV, 12 units a repeat): sheets a quarter repeat wide, each lapped over the next, mineral grit, a broad tone drift and pale stains where puddles dried. 512 px. Export: File > Export material > Godot > Godot 4 Standard into data/models/board/textures/structures/buildings (or tools/materials/export.py), then Reload assets in the game's Tuning panel.",
+			"title": "Flat roof membrane",
+			"type": "comment"
+		}
+	],
+	"parameters": {},
+	"project_thumbnail": "UklGRkYEAABXRUJQVlA4WAoAAAAQAAAALwAALwAAQUxQSJQCAAANoCNteyJJevXrV9HAMpNX7Q9UrMd4gGEea5ksZmYGi3n3AG12ZIzVFT0X4BmrrOXdqqiUUlooyNIJImICmFOsBzh//bn89tcvAK6K1C9SVmbLdb1uM1Y0ZXysX6yVaIx1aRmvObyDqe3OZd3edRt/+PQkGmqR5K945gZIFWIwJFLELu3cv/LMWWPifFry8D0QxFomGoxAjK2Dj374ZtIwjxtd9BN4dcwrksL6lzZvGzg/mxtu+gavDeo0msLNn+xZdX4WN7z2PXyHuo36S5fvP+L8NB1teo/QZoEuNIv7VzVMkvKibwgtFqqhubxnIHFC4id8mwWrv/STbYn/q38Y32Hhzt+8+U0NIOUV96BkqLz04VmJSHwa38jB+PWPPCtRymtuQMlSObhyUmx1GN/Iw/jOvk+tNzuwZGrZ+UPJFlI2kpY2rnEdVTZU9rqCHln3+nSRfITusfObmHwMl43XR7LuyLkVJh9Du0n2vzXbyWSTzGj8l3TIeRh/GV+WTDbJDOBYN0o2UY5Bv0fOfSius/lYCljbuBQlk2iP/YErf9hZ2Uwq+z2u4tN9nWSySA3/FVXUkysHg2YR9HO0JPLsI+uTySA1xq8QIerZD18KmkHQx9ASCObNzTd7tzDfKY4az/9N2vbJpUEXFNo/34lJE6IO9iw3gy4ktKo70JLJwa3eXzS9W4BvV9fhRkz37sj9y5d6NTWl0Pn5DtyQWb1b3fPJzXg1NaTQ0OJO3JDZvQ62bX5pPUFkjhidjh87io6YN0h688NHD7ZIFWIwJFLEWgmfv4wxJfNH9OwzK/t3LlkmGozAse+/BPWJWoPIyU9/2Hhdr3tZp81oODjWL/4AjSV1xyi2XCv6x8bSZBz5v6tKZgdWUDggjAEAADAMAJ0BKjAAMAA+kTybSKWjIqEuOAmYsBIJaQDTaHevSWvgOGrQg+uHV3D48cnbPNB55mo4U3iUTjnjoGBUQEQM0MaQy08QSPrBAH6FJk6GFdXSdBXjwd+jiaupyHriWrZ2TcvcYP5ecAAA/vozJ5qICa85TIOS0X1+eydrBvEsmzS4fhpUZVioAUyjvEZyvYvnSt1jDVJn51VJWSLlPgXBxafJ1p1zlqtER8FDM3AlAeka1xtBJz3A5x63qstt8ITY93ROAJ5ueAQptPjD3jx5woLTfFzS+S1DLBrtYIPhARrKxFyqtDgcrnwgISJSWTuMxwl4VfQZx9hmvf8y8PcFRL4lv0y1yrrbUI4BlfLM5Tn78eysNrVevNxnxj3P9vbtHJ3ll4R4vTdDDirgF9tEjrD7qtk6Aq1DZUfK4cCayE7pAkWL3ixy9iVkWQHwhtudSwDcilnhrkeA0/JkuMdLI5ojYzj9owdL+vcOKajO6FbjTAMinj4JOqC0HSoMgvP+X46sMd2mRCAAAA==",
+	"seed_int": 0,
+	"shortdesc": "",
+	"type": "graph"
+}

@@ -297,8 +297,10 @@ def read_glb(path, level=0, *, linear_colors=False):
         return result
 
     def material(source):
-        pbr = source['pbrMetallicRoughness']
-        result = {'id': source['name'], 'diffuse': [v if linear_colors else display(v) for v in pbr['baseColorFactor'][:3]]}
+        # glTF's defaults: a material may leave out its factors (white, fully metallic and rough).
+        pbr = source.get('pbrMetallicRoughness', {})
+        factor = pbr.get('baseColorFactor', [1, 1, 1, 1])
+        result = {'id': source['name'], 'diffuse': [v if linear_colors else display(v) for v in factor[:3]]}
         result.update(roughness=pbr.get('roughnessFactor', 1), metallic=pbr.get('metallicFactor', 1))
         if source.get('alphaMode') == 'MASK':
             result['alphaTest'] = source.get('alphaCutoff', .5)

@@ -1,0 +1,148 @@
+{
+	"connections": [
+		{
+			"from": "Mottle",
+			"from_port": 0,
+			"to": "Colour",
+			"to_port": 0
+		},
+		{
+			"from": "Colour",
+			"from_port": 0,
+			"to": "Material",
+			"to_port": 0
+		},
+		{
+			"from": "Roughness",
+			"from_port": 0,
+			"to": "Material",
+			"to_port": 2
+		}
+	],
+	"label": "Graph",
+	"longdesc": "",
+	"name": "fortress-steel",
+	"node_position": {
+		"x": 0.0,
+		"y": 0.0
+	},
+	"nodes": [
+		{
+			"export_paths": {},
+			"name": "Material",
+			"node_position": {
+				"x": 0.0,
+				"y": 0.0
+			},
+			"parameters": {
+				"albedo_color": {
+					"a": 1.0,
+					"b": 1.0,
+					"g": 1.0,
+					"r": 1.0,
+					"type": "Color"
+				},
+				"ao": 1.0,
+				"depth_scale": 0.5,
+				"emission_energy": 1.0,
+				"flags_transparent": false,
+				"metallic": 0.0,
+				"normal": 1.0,
+				"roughness": 1.0,
+				"size": 9.0,
+				"sss": 0.0
+			},
+			"seed_int": 0,
+			"type": "material"
+		},
+		{
+			"name": "Mottle",
+			"node_position": {
+				"x": -650.0,
+				"y": -100.0
+			},
+			"parameters": {
+				"folds": 0.0,
+				"iterations": 5.0,
+				"noise": 1.0,
+				"offset": 0.0,
+				"persistence": 0.5,
+				"scale_x": 6.0,
+				"scale_y": 6.0
+			},
+			"seed_int": 0,
+			"type": "fbm2"
+		},
+		{
+			"name": "Colour",
+			"node_position": {
+				"x": -400.0,
+				"y": -100.0
+			},
+			"parameters": {
+				"gradient": {
+					"interpolation": 1,
+					"points": [
+						{
+							"a": 1.0,
+							"b": 0.137600004673004,
+							"g": 0.146200001239777,
+							"pos": 0.0,
+							"r": 0.128999993205071
+						},
+						{
+							"a": 1.0,
+							"b": 0.1824000030756,
+							"g": 0.193800002336502,
+							"pos": 1.0,
+							"r": 0.171000003814697
+						}
+					],
+					"type": "Gradient"
+				}
+			},
+			"seed_int": 0,
+			"type": "colorize"
+		},
+		{
+			"name": "Roughness",
+			"node_position": {
+				"x": -400.0,
+				"y": 60.0
+			},
+			"parameters": {
+				"color": 0.52
+			},
+			"seed_int": 0,
+			"type": "uniform_greyscale"
+		},
+		{
+			"color": {
+				"a": 1.0,
+				"b": 0.0,
+				"g": 0.0,
+				"r": 0.0,
+				"type": "Color"
+			},
+			"name": "About",
+			"node_position": {
+				"x": -650.0,
+				"y": -360.0
+			},
+			"parameters": {},
+			"seed_int": 0,
+			"size": {
+				"x": 300.0,
+				"y": 200.0
+			},
+			"text": "The light fortress's steel (connected kits fortress_light_a, tools/buildings): dark grey-green painted steel of its window frames, bars and door leaves, as the art coloured it, lightly mottled. 512 px. Export: File > Export material > Godot > Godot 4 Standard into data/models/board/textures/structures/buildings (or tools/materials/export.py), then Reload assets in the game's Tuning panel.",
+			"title": "Fortress steel",
+			"type": "comment"
+		}
+	],
+	"parameters": {},
+	"project_thumbnail": "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",
+	"seed_int": 0,
+	"shortdesc": "",
+	"type": "graph"
+}

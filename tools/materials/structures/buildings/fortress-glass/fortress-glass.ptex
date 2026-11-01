@@ -1,0 +1,148 @@
+{
+	"connections": [
+		{
+			"from": "Mottle",
+			"from_port": 0,
+			"to": "Colour",
+			"to_port": 0
+		},
+		{
+			"from": "Colour",
+			"from_port": 0,
+			"to": "Material",
+			"to_port": 0
+		},
+		{
+			"from": "Roughness",
+			"from_port": 0,
+			"to": "Material",
+			"to_port": 2
+		}
+	],
+	"label": "Graph",
+	"longdesc": "",
+	"name": "fortress-glass",
+	"node_position": {
+		"x": 0.0,
+		"y": 0.0
+	},
+	"nodes": [
+		{
+			"export_paths": {},
+			"name": "Material",
+			"node_position": {
+				"x": 0.0,
+				"y": 0.0
+			},
+			"parameters": {
+				"albedo_color": {
+					"a": 1.0,
+					"b": 1.0,
+					"g": 1.0,
+					"r": 1.0,
+					"type": "Color"
+				},
+				"ao": 1.0,
+				"depth_scale": 0.5,
+				"emission_energy": 1.0,
+				"flags_transparent": false,
+				"metallic": 0.0,
+				"normal": 1.0,
+				"roughness": 1.0,
+				"size": 9.0,
+				"sss": 0.0
+			},
+			"seed_int": 0,
+			"type": "material"
+		},
+		{
+			"name": "Mottle",
+			"node_position": {
+				"x": -650.0,
+				"y": -100.0
+			},
+			"parameters": {
+				"folds": 0.0,
+				"iterations": 5.0,
+				"noise": 1.0,
+				"offset": 0.0,
+				"persistence": 0.5,
+				"scale_x": 6.0,
+				"scale_y": 6.0
+			},
+			"seed_int": 0,
+			"type": "fbm2"
+		},
+		{
+			"name": "Colour",
+			"node_position": {
+				"x": -400.0,
+				"y": -100.0
+			},
+			"parameters": {
+				"gradient": {
+					"interpolation": 1,
+					"points": [
+						{
+							"a": 1.0,
+							"b": 0.0644000023603439,
+							"g": 0.059799998998642,
+							"pos": 0.0,
+							"r": 0.0414000004529953
+						},
+						{
+							"a": 1.0,
+							"b": 0.0755999982357025,
+							"g": 0.070200003683567,
+							"pos": 1.0,
+							"r": 0.0485999993979931
+						}
+					],
+					"type": "Gradient"
+				}
+			},
+			"seed_int": 0,
+			"type": "colorize"
+		},
+		{
+			"name": "Roughness",
+			"node_position": {
+				"x": -400.0,
+				"y": 60.0
+			},
+			"parameters": {
+				"color": 0.08
+			},
+			"seed_int": 0,
+			"type": "uniform_greyscale"
+		},
+		{
+			"color": {
+				"a": 1.0,
+				"b": 0.0,
+				"g": 0.0,
+				"r": 0.0,
+				"type": "Color"
+			},
+			"name": "About",
+			"node_position": {
+				"x": -650.0,
+				"y": -360.0
+			},
+			"parameters": {},
+			"seed_int": 0,
+			"size": {
+				"x": 300.0,
+				"y": 200.0
+			},
+			"text": "The light fortress's armoured glazing (connected kits fortress_light_a, tools/buildings): deep teal and glossy, as the art coloured it. 512 px. Export: File > Export material > Godot > Godot 4 Standard into data/models/board/textures/structures/buildings (or tools/materials/export.py), then Reload assets in the game's Tuning panel.",
+			"title": "Fortress glass",
+			"type": "comment"
+		}
+	],
+	"parameters": {},
+	"project_thumbnail": "UklGRs4DAABXRUJQVlA4WAoAAAAQAAAALwAALwAAQUxQSJQCAAANoCNteyJJevXrV9HAMpNX7Q9UrMd4gGEea5ksZmYGi3n3AG12ZIzVFT0X4BmrrOXdqqiUUlooyNIJImICmFOsBzh//bn89tcvAK6K1C9SVmbLdb1uM1Y0ZXysX6yVaIx1aRmvObyDqe3OZd3edRt/+PQkGmqR5K945gZIFWIwJFLELu3cv/LMWWPifFry8D0QxFomGoxAjK2Dj374ZtIwjxtd9BN4dcwrksL6lzZvGzg/mxtu+gavDeo0msLNn+xZdX4WN7z2PXyHuo36S5fvP+L8NB1teo/QZoEuNIv7VzVMkvKibwgtFqqhubxnIHFC4id8mwWrv/STbYn/q38Y32Hhzt+8+U0NIOUV96BkqLz04VmJSHwa38jB+PWPPCtRymtuQMlSObhyUmx1GN/Iw/jOvk+tNzuwZGrZ+UPJFlI2kpY2rnEdVTZU9rqCHln3+nSRfITusfObmHwMl43XR7LuyLkVJh9Du0n2vzXbyWSTzGj8l3TIeRh/GV+WTDbJDOBYN0o2UY5Bv0fOfSius/lYCljbuBQlk2iP/YErf9hZ2Uwq+z2u4tN9nWSySA3/FVXUkysHg2YR9HO0JPLsI+uTySA1xq8QIerZD18KmkHQx9ASCObNzTd7tzDfKY4az/9N2vbJpUEXFNo/34lJE6IO9iw3gy4ktKo70JLJwa3eXzS9W4BvV9fhRkz37sj9y5d6NTWl0Pn5DtyQWb1b3fPJzXg1NaTQ0OJO3JDZvQ62bX5pPUFkjhidjh87io6YN0h688NHD7ZIFWIwJFLEWgmfv4wxJfNH9OwzK/t3LlkmGozAse+/BPWJWoPIyU9/2Hhdr3tZp81oODjWL/4AjSV1xyi2XCv6x8bSZBz5v6tKZgdWUDggFAEAAPAJAJ0BKjAAMAA+kTaaSCWioqEuO/mYsBIJaQDNEAgR4HuNMn8o4LfP7jKFJ92i2cKNoulmQJuRXxEQiEuB4yUusr7kkhWt9c2oEqm96LoxF5Wiq2gnCgAA/vvdKu04vbJVVpNmGMGhfAzyWir0pc+/qEvgPYEHdsvDi+99iKwPnEHp7x3NjFDMax05jdJgUfHMf5CMRgwCSOGFtwflPgzAsAmNWLlpoQHhi8xfIlrBO9CeUbSuFGa75yp/Uz8zF59EgQButjxtjH7atjcfdBqMj5GfS3joeaqKlj1B/gycrqaD+m2f6RNvYDomIp90pYLynAtvbnY3Rjo+Dh5+8wxlMMIyv/tQ5+mOQyagoNIhgAAAAA==",
+	"seed_int": 0,
+	"shortdesc": "",
+	"type": "graph"
+}
