@@ -6,13 +6,14 @@ Writes data/models/buildings/lunar_habitat/lunar_habitat.glb (Angled) and lunar_
 rectangular blocks the printed lunar maps draw), from kit_geometry.footprint's walls and floors: a facade along every
 wall, with dark steel piers at its corners and joints; on the ground a concrete base course and footings, on top a
 parapet over light roof plating. Both kits are asymmetric (all six corners authored, never turned) so Square facades
-and plating keep the board's texture axes; an Angled piece lays its plating along its building (a bend's or junction's
-hub changes direction on the corner pieces' cut lines).
+and plating keep the board's texture axes; an Angled piece lays its plating along its building, mitred where arms
+meet (behind a 60-degree bend through a `-bend` roof piece the runtime picks, ConnectedKit).
 Modules: base0 (the ground storey, its windows lit), three storeys above it the runtime picks from per hex and level
-(floor0 lit, floor1 dimmed, floor2 lit a window along, so the photographic windows do not stack in columns), and three
-roofs with low fittings only (vents and hatches; round on an Angled roof, which cannot know which way its building
-runs): as on the printed lunar map, a roof's equipment stands on it as board props (scenery/roofs/*). Piers stand
-whole in the piece their foot is in; everything else is cut along the corner pieces' boundaries.
+(floor0 lit, floor1 dimmed, floor2 lit a window along, so the photographic windows do not stack in columns), and six
+roofs with low fittings only (layouts of vents and hatches, most off the hex's centre; round on an Angled roof, which
+cannot know which way its building runs): as on the printed lunar map, a roof's equipment stands on it as board props
+(scenery/roofs/*). Piers stand whole in the piece their foot is in; everything else is cut along the corner pieces'
+boundaries.
 """
 import math
 import os
@@ -25,7 +26,7 @@ from glb_geometry import write_glb  # noqa: E402
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from kit_geometry import (A, DIRECTIONS, EXTEND, LEVEL, MIDPOINTS, NOSE, H, ROOF_INSET, Geometry, clipped,  # noqa: E402
-                          footprint, node, normal, rounded, sector, vertex)
+                          footprint, hex_corner, node, normal, rounded, sector, vertex)
 
 MODELS = TOOLS.parent / 'data/models'
 NAME = 'lunar_habitat'
@@ -84,14 +85,40 @@ def flat(geometry, material, points, z, shade=1.0, axis=0):
     geometry.polygon(material, [deck(x, y, z, shade, axis) for x, y in ordered])
 
 
-def plating_axis(tags, direction):
-    """The hex direction (0 n, 1 ne, 2 se) an Angled piece's plating runs along: its first link's; a corner piece
-    without one is a hub's side, along the run that passes it (parallel to the chord between its two hexsides)."""
+def plating(tags, direction, bend=False):
+    """How an Angled piece lays its plating: (the hex direction, 0 n, 1 ne or 2 se, its half towards `direction` runs
+    along, its half towards the next direction's, `direction`), the halves split on the diagonal to their corner. A half
+    runs along its own hexside's link, else the piece's other link. A piece without links is a hub's side, along the run
+    that passes it (parallel to the chord between its two hexsides); with `bend` it stands behind a 60-degree bend (the
+    hex links just the two hexsides opposite it), each half along the arm beside it. The lone hex runs north, a band
+    along its link."""
     states = tags[1:].split('-')
     links = [DIRECTIONS.index(states[i + 1]) for i in range(0, len(states), 2) if states[i] == 'link']
-    if links:
-        return links[0] % 3
-    return 0 if direction is None else (direction - 1) % 3
+    if direction is None:
+        axis = links[0] % 3 if links else 0
+        return axis, axis, None
+    following = (direction + 1) % 6
+    if bend:
+        return (direction + 4) % 3, (direction + 3) % 3, direction
+    if not links:
+        return (direction - 1) % 3, (direction - 1) % 3, direction
+    return ((direction if direction in links else following) % 3,
+            (following if following in links else direction) % 3, direction)
+
+
+def plate(geometry, material, points, z, layout, shade=1.0):
+    """flat() laid out as `layout` (plating): a corner piece's two halves each along its own direction."""
+    first, second, direction = layout
+    if first == second:
+        flat(geometry, material, points, z, shade, first)
+        return
+    cx, cy = hex_corner(direction)
+    mx, my = MIDPOINTS[direction]
+    side = 1 if cx * my - cy * mx > 0 else -1
+    for axis, sign in ((first, side), (second, -side)):
+        half = Geometry()
+        flat(half, material, points, z, shade, axis)
+        geometry.add(clipped(half, [lambda x, y, sign=sign: sign * (cx * y - cy * x)]))
 
 
 def prism(geometry, material, outline, z0, z1, faces=None, top=True):
@@ -169,13 +196,14 @@ def pier_at(wall, walls):
     return wall.p[0], wall.p[1], n, PIER_HALF
 
 
-def storey(polygons, walls, z0, ground, lod, square, axis, v0=LIT, shift=0.0):
-    """A piece's storey from z0, one level high: an interior floor, facades from v0 in the wall texture (LIT or DIM),
-    shifted `shift` repeats along, base course and footings on the ground. Returns the geometry to cut and its piers."""
+def storey(polygons, walls, z0, ground, lod, square, layout, v0=LIT, shift=0.0):
+    """A piece's storey from z0, one level high: an interior floor laid out as `layout` (plating), facades from v0 in
+    the wall texture (LIT or DIM), shifted `shift` repeats along, base course and footings on the ground. Returns the
+    geometry to cut and its piers."""
     geometry, piers = Geometry(), []
     z1 = z0 + LEVEL
     for polygon in polygons:
-        flat(geometry, 'concrete', polygon, z0 + .05, .8, axis)
+        plate(geometry, 'concrete', polygon, z0 + .05, layout, .8)
     for wall in walls:
         p, q, n = wall.p, wall.q, normal(wall.p, wall.q)
         u0, u1 = wall_u(wall, square)
@@ -221,12 +249,12 @@ def skirt(geometry, wall, walls, z0):
                               vertex(*q, z0 + SKIRT, facing, 1.0, along, .25), vertex(*p, z0 + SKIRT, facing, 1.0, 0, .25)])
 
 
-def roof(polygons, walls, z0, lod, variant, square, axis):
-    """A piece's roof at z0: plating and parapet caps along hex direction `axis`, a parapet along every wall, the
+def roof(polygons, walls, z0, lod, variant, square, layout):
+    """A piece's roof at z0: plating and parapet caps laid out as `layout` (plating), a parapet along every wall, the
     piers' tops, and the variant's fittings in the hex's middle."""
     geometry, piers = Geometry(), []
     for polygon in polygons:
-        flat(geometry, 'roof', polygon, z0, axis=axis)
+        plate(geometry, 'roof', polygon, z0, layout)
     for wall in walls:
         n = normal(wall.p, wall.q)
         # Its outer face a hair inside the wall line (a storey going on above stands in front of it).
@@ -237,7 +265,7 @@ def roof(polygons, walls, z0, lod, variant, square, axis):
         u0, u1 = wall_u(wall, square)
         face(geometry, 'wall', p, q, n, z0, z0 + PARAPET, u0, u1)
         face(geometry, 'wall', c, d, (-n[0], -n[1]), z0, z0 + PARAPET, u0, u1)
-        flat(geometry, 'roof', [p, q, d, c], z0 + PARAPET, axis=axis)
+        plate(geometry, 'roof', [p, q, d, c], z0 + PARAPET, layout)
         if wall.start == 'corner' or wall.start != 'round' and lod == 0:
             piers.append(pier_at(wall, walls))
     geometry.add(fittings(variant, z0, square))
@@ -263,31 +291,28 @@ def hatch(geometry, z0, x, y, round_=False):
     prism(geometry, 'steel', outline(x, y, 3.2, 3.2, round_), z0 + .8, z0 + 1.0)
 
 
+# Roof variants' fittings (the runtime picks one per hex): hatches and vents at (x, y), none in a bare roof's. A
+# Square roof spreads them over its core on the board's axes; an Angled hex's pieces cannot know which way its
+# building runs, so its fittings are round, set without a main axis, within the hub every Angled hex has. Most stand
+# off the hex's centre, so neighbouring roofs do not line up.
+SQUARE_FITTINGS = [([(0.0, 0.0)], [(-9.0, 18.0), (9.0, -16.0)]), ([(6.0, -10.0)], [(-10.0, 14.0)]),
+                   ([], [(0.0, -14.0), (0.0, 0.0), (0.0, 14.0)]), ([], []), ([], [(12.0, 8.0)]),
+                   ([(-10.0, -6.0)], [(8.0, 16.0)])]
+ANGLED_FITTINGS = [([(0.0, 0.0)], [(10 * math.cos(math.radians(90 + 120 * k)),
+                                     10 * math.sin(math.radians(90 + 120 * k))) for k in range(3)]),
+                   ([], [(3 + 5.5 * math.cos(math.radians(30 + 120 * k)),
+                          -4 + 5.5 * math.sin(math.radians(30 + 120 * k))) for k in range(3)]),
+                   ([(-4.0, 3.0)], []), ([], []), ([], [(5.0, 5.0)]), ([(-3.0, -5.0)], [(6.0, 4.0)])]
+
+
 def fittings(variant, z0, square):
-    """A roof variant's low fittings in the hex's middle, none higher than a vent. A Square roof spreads them over its
-    core on the board's axes: 0 two vents and a hatch, 1 a hatch and a vent, 2 a row of three vents. An Angled hex's
-    pieces cannot know which way its building runs, so its fittings are round and set without a main axis, within the
-    hub every Angled hex has: 0 a hatch ringed by three vents, 1 three vents close together, 2 a hatch."""
+    """A roof variant's low fittings, none higher than a vent (SQUARE_FITTINGS, ANGLED_FITTINGS)."""
     geometry = Geometry()
-    if square:
-        if variant == 0:
-            for x, y in ((-9.0, 18.0), (9.0, -16.0)):
-                vent(geometry, z0, x, y)
-            hatch(geometry, z0, 0.0, 0.0)
-        elif variant == 1:
-            hatch(geometry, z0, 6.0, -10.0)
-            vent(geometry, z0, -10.0, 14.0)
-        else:
-            for y in (-14.0, 0.0, 14.0):
-                vent(geometry, z0, 0.0, y)
-        return geometry
-    if variant != 1:
-        hatch(geometry, z0, 0.0, 0.0, True)
-    if variant != 2:
-        radius, start = (10.0, 90.0) if variant == 0 else (5.5, 30.0)
-        for k in range(3):
-            angle = math.radians(start + 120 * k)
-            vent(geometry, z0, radius * math.cos(angle), radius * math.sin(angle), True)
+    hatches, vents = (SQUARE_FITTINGS if square else ANGLED_FITTINGS)[variant]
+    for x, y in hatches:
+        hatch(geometry, z0, x, y, not square)
+    for x, y in vents:
+        vent(geometry, z0, x, y, not square)
     return geometry
 
 
@@ -297,30 +322,37 @@ def main():
         levels = {}
         for lod in (0, 1):
             meshes, nodes, used, total = [], [], set(), 0
-            modules = [('base0', 0, lambda polygons, walls, axis: storey(polygons, walls, 0, True, lod, square, axis))]
-            modules += [(f'floor{k}', LEVEL, lambda polygons, walls, axis, v0=v0, shift=shift: storey(
-                polygons, walls, LEVEL, False, lod, square, axis, v0, shift))
+            modules = [('base0', 0, lambda polygons, walls, layout: storey(
+                polygons, walls, 0, True, lod, square, layout))]
+            modules += [(f'floor{k}', LEVEL, lambda polygons, walls, layout, v0=v0, shift=shift: storey(
+                polygons, walls, LEVEL, False, lod, square, layout, v0, shift))
                 for k, (v0, shift) in enumerate(((LIT, 0.0), (DIM, 0.0), (LIT, 1 / 3)))]
-            modules += [(f'roof{variant}', 2 * LEVEL, lambda polygons, walls, axis, variant=variant: roof(
-                polygons, walls, 2 * LEVEL, lod, variant, square, axis)) for variant in range(3)]
+            modules += [(f'roof{variant}', 2 * LEVEL, lambda polygons, walls, layout, variant=variant: roof(
+                polygons, walls, 2 * LEVEL, lod, variant, square, layout)) for variant in range(len(SQUARE_FITTINGS))]
             for role, z0, build in modules:
                 for tags, direction, polygons, walls in footprint(mode, LONE, END, turned=False):
                     polygons, walls = rounded(polygons, walls, ROUND)
-                    geometry, piers = build(polygons, walls, 0 if square else plating_axis(tags, direction))
-                    piece = clipped(geometry, sector(direction)) if direction is not None else geometry
-                    for x, y, n, half in piers:
-                        if role.startswith('roof'):
-                            pier(piece, x, y, n, half, z0, z0 + PARAPET + .6, False, lod, True)
-                        else:
-                            pier(piece, x, y, n, half, z0, z0 + LEVEL, role == 'base0', lod, False)
-                    count = sum(len(triangles) for triangles in piece.parts.values())
-                    if not count:
-                        raise ValueError(f'Empty piece {NAME}-lod{lod}-{role}{tags}')
-                    mesh, reference = node(f'{NAME}{suffix}-lod{lod}-{role}{tags}', piece, None)
-                    meshes.append(mesh)
-                    nodes.append(reference)
-                    used |= set(piece.parts)
-                    total += count
+                    # A linkless Angled corner's roof also as it stands behind a 60-degree bend (ConnectedKit, -bend).
+                    bends = (False, True) if (role.startswith('roof') and not square and direction is not None
+                                              and 'link' not in tags) else (False,)
+                    for bend in bends:
+                        layout = (0, 0, None) if square else plating(tags, direction, bend)
+                        geometry, piers = build(polygons, walls, layout)
+                        piece = clipped(geometry, sector(direction)) if direction is not None else geometry
+                        for x, y, n, half in piers:
+                            if role.startswith('roof'):
+                                pier(piece, x, y, n, half, z0, z0 + PARAPET + .6, False, lod, True)
+                            else:
+                                pier(piece, x, y, n, half, z0, z0 + LEVEL, role == 'base0', lod, False)
+                        count = sum(len(triangles) for triangles in piece.parts.values())
+                        name = f'{NAME}{suffix}-lod{lod}-{role}{tags}' + ('-bend' if bend else '')
+                        if not count:
+                            raise ValueError(f'Empty piece {name}')
+                        mesh, reference = node(name, piece, None)
+                        meshes.append(mesh)
+                        nodes.append(reference)
+                        used |= set(piece.parts)
+                        total += count
             materials = []
             for kind in sorted(used):
                 materials.append({'id': kind, 'diffuse': [1, 1, 1], 'roughness': 1, 'metallic': 0,
