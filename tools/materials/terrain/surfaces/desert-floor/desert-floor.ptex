@@ -82,9 +82,9 @@
         "y": 0
       },
       "parameters": {
-        "Hue": -0.01,
-        "Saturation": 2.6,
-        "Value": 0.92
+        "Hue": 0.0,
+        "Saturation": 1.0,
+        "Value": 1.75
       },
       "seed_int": 0,
       "nodes": [
@@ -131,9 +131,9 @@
             "y": 200
           },
           "parameters": {
-            "Hue": -0.01,
-            "Saturation": 2.6,
-            "Value": 0.92
+            "Hue": 0.0,
+            "Saturation": 1.0,
+            "Value": 1.75
           },
           "seed": 0,
           "widgets": [
@@ -927,11 +927,11 @@
       "label": "SurfaceResponse",
       "type": "graph",
       "parameters": {
-        "ReliefPercent": 0.4166666667,
+        "ReliefPercent": 0.9,
         "NormalStrength": 1,
-        "NearCavityStrength": 480,
-        "WideCavityStrength": 108,
-        "BaseRoughness": 0.9,
+        "NearCavityStrength": 320,
+        "WideCavityStrength": 144,
+        "BaseRoughness": 0.88,
         "RoughnessVariation": 0.08
       },
       "node_position": {
@@ -996,11 +996,11 @@
           "name": "gen_parameters",
           "type": "remote",
           "parameters": {
-            "ReliefPercent": 0.4166666667,
+            "ReliefPercent": 0.9,
             "NormalStrength": 1,
-            "NearCavityStrength": 480,
-            "WideCavityStrength": 108,
-            "BaseRoughness": 0.9,
+            "NearCavityStrength": 320,
+            "WideCavityStrength": 144,
+            "BaseRoughness": 0.88,
             "RoughnessVariation": 0.08
           },
           "seed_int": 0,
@@ -2881,7 +2881,7 @@
         "y": -650
       },
       "parameters": {
-        "ReliefPercent": 0.4166666667
+        "ReliefPercent": 0.9
       },
       "widgets": [
         {
@@ -2909,7 +2909,7 @@
           "a": 1
         },
         "ao": 1,
-        "depth_scale": 0.016666666666666666,
+        "depth_scale": 0.036,
         "emission_energy": 1.0,
         "flags_transparent": false,
         "metallic": 0,

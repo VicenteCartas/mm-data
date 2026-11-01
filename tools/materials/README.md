@@ -16,7 +16,7 @@ its `sources/` folder.
 Terrain surfaces are named `<surface>-<role>`: the ground type, then what the material does there:
 `ground` (the hex surface), `debris` (loose stones at cliff feet, rims and slopes), `cliff` (walls and
 bedrock), `bank` (soil on banks), `cap` (mesa cap plates) or `floor` (what gathers in sunken ground,
-in place of the ground from level -1 down: grassland, snow, fungus, desert, Mars and volcano have one).
+in place of the ground from level -1 down: every natural family has one; concrete keeps its ground).
 `temperate-*` is shared by grassland, dirt, rock, concrete, snow and tropical ground, `arid-*` by sand
 and desert; `biome-*` serve fields, marsh and mud, and a few name their one use (`sand-verge`,
 `concrete-mulch`, `ground-scorch`, `scatter-stone`). A surface made from a photographic study reads
