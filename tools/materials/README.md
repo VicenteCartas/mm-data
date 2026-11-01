@@ -16,12 +16,11 @@ its `sources/` folder.
 Terrain surfaces are named `<surface>-<role>`: the ground type, then what the material does there:
 `ground` (the hex surface), `debris` (loose stones at cliff feet, rims and slopes), `cliff` (walls and
 bedrock), `bank` (soil on banks), `cap` (mesa cap plates) or `floor` (what gathers in sunken ground,
-in place of the ground from level -1 down: every natural family but sand has one; sand and concrete keep their ground).
+in place of the ground from level -1 down: every natural family but sand and snow has one; sand, snow and concrete keep their ground).
 `temperate-*` is shared by grassland, dirt, rock, concrete, snow and tropical ground, `arid-*` by sand
 and desert; `biome-*` serve fields, marsh and mud, and a few name their one use (`sand-verge`,
 `concrete-mulch`, `ground-scorch`, `scatter-stone`). A surface made from a photographic study reads
-its `sources/` from `terrain_sources.py` (its header gives the recipe) and clones a sibling project;
-`snow-floor` reads a smoothed copy of `snow-ground`'s sources.
+its `sources/` from `terrain_sources.py` (its header gives the recipe) and clones a sibling project.
 
 ## The material
 
