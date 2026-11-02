@@ -572,39 +572,71 @@ no rock or scatter geometry is generated in-game.
   outline, vertex and triangle counts. The largest has 499 triangles. Fuel tanks
   and industrial structures use their selected Saxarba artwork too; there are no
   generic cylinder/factory substitutes.
-- `field.glb` and foliage GLB files. Counts and the imported Blender source
+- Foliage GLB files. Counts and the imported Blender source
   names are in `tools/board-models/manifest.json`. Bridge spans are generated at runtime;
   reusable terminal and pier kits remain GLBs.
 - Each tree GLB contains `-lod0`, `-lod1`, and `-lod2` groups, with budgets
-  of 1000, 300 and 96 triangles including explicit back faces (broadleaf trees
-  1600 and 410 on the two near levels, conifers 1200 on the near level; shrubs
-  480, 240 and 96; orchard trees 800, 300 and 110). The conifers,
-  broadleaf trees, the volcano's cinder trees, the orchard trees, palms, saguaros,
-  the dead tree and every family's level-one shrub (`foliage-<family>`, with
-  `-2` and `-3` variants), and the winter files `pine-tall-snow`,
-  `tree-forked-snow`, `willow-snow` and `tree-dead-snow`, are grown from each
+  of 1000, 300 and 96 triangles including explicit back faces (authored broadleaf,
+  volcanic, willow and birch trees 32000, 10000 and 2600; conifers 1200 on the near level; authored shrubs
+  24000, 8000 and 2200; desert shrubs 20000, 7000 and 2000; ferns 480, 240 and 96;
+  cacti 3600, 950 and 420; apple trees 34000, 10000 and 3200;
+  bare trees 12000, 1800 and 180).
+  The authored trees spend more geometry on curved, tapered branches and small
+  foliage sprays at close range. These are asset ceilings, not measured frame-time guarantees. The conifers,
+  palms, saguaros,
+  the dead tree and ferns (`foliage-jungle`, with
+  `-2` and `-3` variants), and the winter files `pine-tall-snow`
+  and `tree-dead-snow`, are grown from each
   species' botany by `tools/board-models/foliage/build_trees.py`:
   conifers as whorls of bent spray cards folded along their stems on a straight
-  trunk; broadleaf trees as forked limbs and twigs ending in clumps of crossed
-  leaf cards, each clump shaded as a dome (willows as a dome over curtains of
-  strands); palms as a curved trunk under a spiral of folded fronds with dead
-  fronds hanging beneath (`palm` a date palm, `palm-bent` a coconut palm);
-  saguaros as ribbed columns with elbowed arms and domed tips, `cactus-flowers`
+  trunk; palms as a curved trunk under a spiral of folded fronds with dead
+  fronds hanging beneath (`palm` a date palm, `palm-bent` a coconut palm). Their
+  fronds arch, sweep and twist individually, with the same crown sampled at each
+  mesh level. Saguaros have tapered, ribbed columns, uneven elbowed arms and small
+  growing tips, with corking concentrated at their feet; `cactus-flowers`
   with white blossoms on them; the dead tree as a bleached oak snag whose limbs
-  end in fans of bare twigs; the cinder trees like ohia lehua on lava, gnarled
-  and buttressed under rust and copper crowns; the orchard trees as pruned,
-  low-forked apple trees with red apples standing out on their crowns; the shrubs as stems
-  carrying sprays of their family's cutout (hazel, mountain pine, juniper, shrub
-  willow, snowed juniper, cinder shrub, creosote, sagebrush; ferns grow as
-  trunkless palms). Change a species there and rebuild it rather than editing
-  its GLB. The fungus theme's woods (`fungus/cup-*`, `fungus/spore-*`, fluted
+  have connected bare branches instead of a shell of twig cards; ferns grow as
+  trunkless palms. The bare trees read the Blender-authored branch paths,
+  radii, parent links and spray corners in `tools/board-models/foliage/sources/`.
+  The generator rounds those paths and retains their hierarchy at each mesh level;
+  pruning a branch removes its children. Change a species or its source there and rebuild it rather than editing
+  its GLB. The fourteen broadleaf, volcanic, willow and birch forms use editable branch curves and
+  attached foliage in `sources/forest.blend`, exported by `build_forest.py`. Their near sprays fold about
+  the midrib. Coarser levels simplify the same branch paths and use nested spatial crown samples with
+  fixed twig anchors, normals, pigmentation and crown bounds. Major limbs remain at the far mesh level.
+  Crown limits reduce a whole spray uniformly; individual corners are never clipped into flat canopy plates.
+  The cinder forms leave a clear lower trunk and gaps between the main limbs, with smaller sprays of the new
+  photographic leaves and a restrained red/rust tint in their Material Maker graph.
+  Level-one barren, highland, rocky, snow, temperate, volcanic and wetland cover uses 21 shrub forms
+  in `sources/shrubs.blend`, exported by `build_shrubs.py` through the shared forest exporter.
+  Three desert forms use `sources/desert-shrubs.blend` and the same exporter, with smaller narrow-leaf
+  sprays instead of whole-bush cards. Their isolated `desert-shrub-cutout` Material Maker graph adapts
+  the existing photographed twig source to muted foliage and a rougher surface.
+  Their basal forks, tapered branches and attached foliage retain the same source at every mesh level;
+  stems grow above the ground rather than flattening below-ground branches into the root plane.
+  They reuse the verified Material Maker bark and photographic leaf materials, including the new cinder leaves.
+  These are live level-one woods assets, separate from taller forest trees. Planted fields use `BoardFields`
+  and the instanced wheat/maize in `GpuGroundCover`; the obsolete field prop and its fallback have been removed.
+  The summer and winter forms share this geometry; each distant impostor is baked from its near model.
+  Their isolated `forest-*` Material Maker projects supply bark relief, roughness and leaf transmission.
+  The six apple orchard trees use editable Blender curves and photographic
+  fruiting sprays in `tools/board-models/foliage/sources/orchards.blend`.
+  `build_orchards.py` exports their rounded crowns and tapered branches, preserving
+  dense foliage at all three mesh levels. Rounded apples hang by short stems from
+  retained outer twigs, up to 144 per mature tree (72 on the young tree), with 96/48
+  fruit retained at coarser levels (48/24 on the young tree). The distant meshes retain 900 and 360
+  distributed sprays respectively, with the same crown bounds as the close tree.
+  The fungus theme's woods (`fungus/cup-*`, `fungus/spore-*`, fluted
   cup fungi and pitted spore pods on the fungus atlas) and the Mars corals
   (`mars/*`) are modelled in Blender; `tools/board-models/alien_lods.py` builds
   their mesh levels from the original meshes (in git history), weathering their
   corner colours; it gives the cliffs' hanging mycelium the
   `textures/vegetation/fungus/mycelium` material, whose emission makes it glow.
-  Standard glTF `MASK` materials use a 0.5 alpha threshold in color, depth and
-  shadow passes.
+  Standard glTF `MASK` materials use a 0.5 alpha threshold. The authored forest and orchard sprays use
+  0.3 to retain their sparse photographed leaves under mip filtering at distance.
+  Each material's threshold is identical in color, depth and shadow passes. The forest impostors retain
+  their authored 0.2 threshold (0.35 for the open cinder crowns); the bake preserves an existing impostor's cutoff and uses each source
+  material's own cutoff when rendering its leaves and computing its lighting.
   A `-lod3` group holds the plant's impostor: two crossed vertical cards and a
   horizontal cap through the crown, 12 triangles with their backs, textured by
   `textures/vegetation/impostors/<name>.png` (three 128 by 128 unlit renders of
@@ -623,24 +655,53 @@ no rock or scatter geometry is generated in-game.
   clears roads for it; a leaning crown (bent palm, willow) overhangs to one side.
   The maintained GLBs keep that origin and their bark projection. Cactus skin
   wraps around each stem, following bent arms.
+  The compact `cactus-young` form has four unequal arms; the veteran has six main arms and two secondary forks,
+  and the organ cactus has nine unequal stems. Geometry levels preserve these branches.
+  Ordinary woods and jungle aim for 30%, 60% and 90% crown coverage inside each hex. Coverage uses the union of
+  LOD0 top-projection silhouettes with only small gaps closed; cacti use rotated model XY boxes. Counts are capped
+  at 8/20/36 canopy plants and 6/12/20 cacti, including mixed stands. Ordinary plants retain their natural size;
+  a common placement sequence keeps existing plants stable when density rises. Orchards use 4/6/9 trees in
+  rows, and yard/container skins are excluded. Rigid fungal and Martian tiers use 30%/60%/90% of a common
+  collision-safe packing, bounded by the search and count limits, rather than literal ground coverage. Their
+  solid bodies remain inside the hex and do not intersect. Connected cross-sections derived from all three mesh LODs
+  test collision at matching heights, keeping separate cups and branches separate. Each component has a conservative
+  twelve-plane enclosure; concavities inside one connected component remain filled. There is no extra trunk-spacing rule.
+  Compact members and limited width fitting help fill gaps. Searches reuse prepared orientations locally; no placement
+  cache outlives a capture. Ultra reaches at least 90% of that packing's coverage. Whole-body increments make the
+  percentage targets approximate. Existing terrain support settles roots onto the actual cliff top; crowns may overhang
+  that top. Rigid colonies recheck intersections after settling. All natural plant anchors use canonical full-detail
+  terrain geometry, so camera movement and LOD changes cannot move them. Terrain edits refresh that geometry.
+  The leading colony member reaches the rules' cover height. Level-three forest crowns are 20% wider than
+  level-two crowns; tropical understory remains a separate low layer.
 - `textures/vegetation/*-cutout`: eight shared 512 by 512 cutout materials
   for broadleaf/conifer and their snow variants, palm fronds, cactus flowers, ferns and shrubs. Near, medium and far crowns
   share these clamped images; impostors are baked from the same alpha-tested
   geometry. The Material Maker projects under `tools/materials/vegetation/` generate them.
   Bark textures are shared.
-- `textures/vegetation/cactus-skin`: 512-square albedo and estimated shallow normal
-  relief, shared by both cactus variants
-  at all three mesh levels. Standard glTF `normalTexture` supplies the normal
-  detail; the instanced foliage shader uses the existing dielectric light model
-  for waxy skin. The normal-map tuning switch applies to these maps too.
+- `textures/vegetation/cactus-skin`: 512-square photographic albedo, shallow normal
+  relief and packed roughness, shared by all five cactus variants at all three mesh
+  levels. Its Material Maker graph combines the photographic epidermis and areoles
+  with restrained procedural weathering: the same field varies pigmentation and
+  roughness (0.74–0.94). Near meshes carry the major ribs in their silhouettes;
+  coarser meshes retain the normal detail. Basal corking is vertex color, so it
+  never repeats up the arms. The normal-map tuning switch applies to these maps too.
 - `textures/vegetation/`: five shared 64 by 64 detail albedos for palm fronds,
   ordinary bark, birch bark, ringed palm bark and snow. Source material boundaries keep snow caps separate
   from green foliage and preserve the birch's pale trunk and dark scars. Existing
   vertex colors tint the pale maps; dominant-axis UVs follow the tree's original
   proportions. Snow variants use their own authored geometry.
-- `orchard-*.glb`: six apple tree forms (their winter files are the snow
-  variant): bark, leaf cards of the orchard cutout and solid apples whose texels
-  are an apple of that cutout, fewer and larger on the far levels.
+- `orchard-*.glb`: six pruned apple tree forms (their winter files are the snow
+  variant). Near foliage sprays meet real twigs at the photographed stem's
+  U=0.5, V=0.978 endpoint. Rounded fruit and its stems share source twig anchors
+  across detail levels. Overlapping sprays and normals following the whole
+  crown avoid separately lit, detached-looking caps. Coarser levels retain
+  the same scaffold and a wider subset of its sprays. The Material Maker
+  `orchard-cutout` graph supplies leaf roughness, relief and transmission;
+  `apple-skin` supplies the fruit's red blush, lenticels and waxy surface.
+- `tree-dead.glb` and `tree-dead-snow.glb`: opaque, tapered branch geometry, with
+  weathered ends and bark grain following each limb. The snow form keeps the same
+  branching and adds snow to upward-facing surfaces. Their Material Maker
+  `dead-wood` graph supplies the shared wood surface; they no longer use twig cards.
 - `textures/vegetation/marsh-sedge_albedo.png`: the editable 1254 by 1254 RGBA sedge/cattail
   cutout for marsh vegetation. The renderer filters it to one shared 512 by 512
   texture with mipmaps; all three plant LODs use this same image. Ground peat,
@@ -764,6 +825,8 @@ The GLB, PNG and JSON files here are the source: edit them directly. Run the too
 ```text
 python tools/materials/export.py
 python tools/board-models/foliage/build_trees.py [names...]
+blender --background --factory-startup --python tools/board-models/foliage/build_forest.py -- [forest-names...]
+blender --background --factory-startup --python tools/board-models/foliage/build_orchards.py -- [orchard-names...]
 blender --background --factory-startup --python tools/prepare_tree_lods.py -- impostors [names...]
 python tools/validate_board_assets.py
 ```
@@ -775,7 +838,7 @@ the three mesh levels, owns a temporary Blender scene and preserves the active s
 `mmVariants.snow` on the impostor material) from LOD0 in that variant.
 
 `validate_board_assets.py` checks each manifest entry against its GLB: the plant levels `-lod0` to `-lod3` and
-their triangle budgets (at most 1600, 410, 110 and 12), the triangle counts (at most 500 per other model), one-level building
+their family-specific triangle budgets, the triangle counts (at most 500 per other model), one-level building
 heights, roof winding and facade assignments, understory and orchard grounding, LOD0 height and every coarser
 level's height from 10% below to 1% above it,
 embedded images and that every external texture exists inside this directory. It refuses G3DJ meshes.
@@ -829,8 +892,7 @@ inspection and is not a runtime texture dependency. The processed roof PNG
 stays embedded, with no loose `*-roof.png` under deployed buildings. There is no measured
 runtime performance gain claimed from embedding.
 
-`field.glb` also contains a single LOD0 group. Deployed `data/` and
-authoring/reference `tools/` meshes are GLB; there are no G3DJ files.
+Deployed `data/` and authoring/reference `tools/` meshes are GLB; there are no G3DJ files.
 
 See the glTF image specification:
 https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#images

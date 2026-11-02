@@ -71,7 +71,7 @@ def material_roles(model):
     return roles
 
 
-def unlit_material(role, filename, images, cutout=False):
+def unlit_material(role, filename, images, cutout=False, alpha_test=.5):
     """Unlit pigment; the impostor bake filters sRGB textures in linear light. A cutout (`-cutout` or alpha-tested)
     keeps only its texture's opaque texels."""
     material = bpy.data.materials.new(role)
@@ -100,7 +100,7 @@ def unlit_material(role, filename, images, cutout=False):
     if cutout or role.endswith('-cutout'):
         threshold = nodes.new('ShaderNodeMath')
         threshold.operation = 'GREATER_THAN'
-        threshold.inputs[1].default_value = .5
+        threshold.inputs[1].default_value = alpha_test
         links.new(texture.outputs['Alpha'], threshold.inputs[0])
         transparent = nodes.new('ShaderNodeBsdfTransparent')
         mix = nodes.new('ShaderNodeMixShader')
@@ -122,7 +122,7 @@ def unlit_mesh(model, name, images):
     mesh = model['meshes'][0]
     source = mesh['vertices']
     textures = {material['id']: material['textures'][0]['filename'] for material in model['materials']}
-    cutouts = {material['id'] for material in model['materials'] if 'alphaTest' in material}
+    cutouts = {material['id']: material['alphaTest'] for material in model['materials'] if 'alphaTest' in material}
     bound_roles = material_roles(model)
     vertices, faces, colors, uvs, roles = [], [], [], [], []
     for part in mesh['parts']:
@@ -147,7 +147,7 @@ def unlit_mesh(model, name, images):
     for polygon, role in zip(data.polygons, roles):
         if role not in materials:
             materials[role] = len(data.materials)
-            data.materials.append(unlit_material(role, textures[role], images, role in cutouts))
+            data.materials.append(unlit_material(role, textures[role], images, role in cutouts, cutouts.get(role, .5)))
         polygon.material_index = materials[role]
     data.update()
     return data
@@ -266,6 +266,7 @@ def lighting(model, toward):
     corners = [(bound_roles[part], attributes) for part, attributes in corners]
     tree = BVHTree.FromPolygons(vertices, faces, all_triangles=True)
     cutouts = {}
+    thresholds = {}
     for material in model['materials']:
         if not material['id'].endswith('-cutout'):
             continue
@@ -273,6 +274,7 @@ def lighting(model, toward):
         pixels = numpy.empty(len(image.pixels), dtype=numpy.float32)
         image.pixels.foreach_get(pixels)
         cutouts[material['id']] = pixels.reshape(image.size[1], image.size[0], 4)[:, :, 3]
+        thresholds[material['id']] = material.get('alphaTest', .5)
 
     def covered(index, point):
         role, attributes = corners[index]
@@ -289,7 +291,7 @@ def lighting(model, toward):
         alpha = cutouts[role]
         x = max(0, min(alpha.shape[1] - 1, int(uv[0] * alpha.shape[1])))
         y = max(0, min(alpha.shape[0] - 1, int((1 - uv[1]) * alpha.shape[0])))
-        return alpha[y, x] > .5
+        return alpha[y, x] > thresholds[role]
 
     def blocked(point, direction):
         # Offline alpha-aware rays prevent transparent card rectangles from darkening the distant impostor.
@@ -449,9 +451,12 @@ def impostors(only=None):
             # The impostor material's extras hold the winter impostor of a material variant (mmVariants.snow).
             extras = next((material.get('extras') for material in levels[0]['materials']
                            if material['id'] == 'impostor'), None)
+            alpha_test = next((material.get('alphaTest', .5) for material in levels[0]['materials']
+                               if material['id'] == 'impostor'), .5)
             for model in levels.values():
                 model['materials'] = [material for material in model['materials'] if material['id'] != 'impostor']
             levels[3] = impostor(scene, levels[0], name, images)
+            levels[3]['materials'][0]['alphaTest'] = alpha_test
             # A winter form kept as a material variant gets its own impostor render and card colours.
             cold = winter(levels[0])
             if cold:

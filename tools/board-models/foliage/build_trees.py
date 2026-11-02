@@ -1,7 +1,8 @@
-"""python tools/board-models/foliage/build_trees.py [--out BOARD] [names]: the conifers' and broadleaf trees' LOD0-2
+"""python tools/board-models/foliage/build_trees.py [--out BOARD] [names]: the conifers', palms', cacti', shrubs' and bare trees' LOD0-2
 and their manifest counts.
 
-Each species is grown from its botany instead of modelled by hand. Every card face has its back; every card carries
+Most species here are grown from their parameters; bare trees use Blender-authored branch paths in sources/.
+Every card face has its back; every card carries
 its crown's envelope normal (the game lights cards as proxies of the leaves around them, terrain-foliage.frag), and
 vertex colours shade the crown dark inside and bright at its surface. Coarser levels keep the silhouette with fewer,
 wider cards. Each level is scaled to the plants' common height of 30 units, standing at the origin.
@@ -13,15 +14,13 @@ like the curtains of a spruce, which is what the board's iso and top views see. 
 forest-grown spruce with a bare lower trunk, pine-broad a silver fir, pine-slender a subalpine fir (kept full enough
 to read as cover) and pine-layered a fir with open tiers.
 
-Broadleaf trees: a trunk forking into curved limbs (or, in excurrent species, a leader with limbs along it) and twigs,
-all bark tubes, ending in clumps of crossed broadleaf-cutout cards inside the crown's ellipsoid. Each clump has its
-own dome normal and shade, so the crown reads as clumps lit on top and dark beneath, with branches in the gaps.
-tree is a linden, tree-broad an oak, tree-slender a Lombardy poplar, tree-layered a beech, tree-forked a twin-stemmed
-maple, the birches silver birches with drooping clumps and the willows weeping willows: a dome of drooping clumps over
-arched limbs, so the top view sees a closed crown, with curtains hanging below it.
+Broadleaf and volcanic trees, birches and willows are exported from sources/forest.blend by build_forest.py.
+Apple trees are exported from sources/orchards.blend by build_orchards.py. This generator retains only the
+parameter-grown conifers, palms, cacti and ferns, and the authored bare tree.
+Woody shrubs use sources/shrubs.blend, sources/desert-shrubs.blend and build_shrubs.py.
 
 The canopy's winter form is a material variant (mmVariants.snow): the snow cutout, with a colour scale that turns the
-species' leaf tint grey. pine-tall-snow, tree-forked-snow and willow-snow are their species' geometry with that variant
+species' leaf tint grey. pine-tall-snow is its species' geometry with that variant
 applied, as files of their own. Afterwards refresh the impostors with Blender: tools/prepare_tree_lods.py -- impostors
 <names>. --out writes the GLBs into another board folder (its textures must resolve as ../textures from its
 vegetation folder) and leaves the manifest alone.
@@ -30,6 +29,7 @@ import json
 import math
 import random
 import sys
+from functools import lru_cache
 from pathlib import Path
 
 MM = Path(__file__).resolve().parents[3]
@@ -46,7 +46,7 @@ BUDGETS = {'broadleaf': (1600, 410, 96), 'conifer': (1200, 300, 96), 'palm': (10
 # Each cutout's stem: U at its base on the bottom edge; V from the base to the tip (V runs down the image).
 STEMS = {'conifer': .55, 'broadleaf': .42}
 BASE_V, TIP_V = .985, .02
-WINTER = ('pine-tall-snow', 'tree-forked-snow', 'willow-snow', 'tree-dead-snow')
+WINTER = ('pine-tall-snow', 'tree-dead-snow')
 
 # Conifers: crown base and widest radius as shares of the height, the envelope's exponent (1 a cone, less is fuller),
 # whorls, branches per whorl and between whorls, branch angles at the top and the bottom of the crown (degrees), sag
@@ -96,46 +96,6 @@ LONG = .55
 # level's card size (1; overlapping fine twig fans need less).
 # A willow's dome of clumps reaches down to this height on its crown's unit ellipsoid.
 WILLOW_DOME = .4
-BROADLEAF = {
-    'tree': dict(seed=11, fork=.3, crown=(.6, .32, .32), trunk=.72, limbs=4, spread=(30, 65), rise=(.4, 1.1),
-                 leader=False, twigs=3, clumps=100, leaf=.42, hang=0, flat=0, curtain=False, bark_role='bark',
-                 bark=(.46, .42, .38), leaves=(.82, .95, .76)),
-    'tree-broad': dict(seed=12, fork=.24, crown=(.58, .44, .3), trunk=.95, limbs=5, spread=(45, 78), rise=(.1, .8),
-                       leader=False, twigs=3, clumps=92, leaf=.4, hang=0, flat=0, curtain=False, bark_role='bark',
-                       bark=(.44, .41, .38), leaves=(.76, .9, .7)),
-    'tree-slender': dict(seed=13, fork=.08, crown=(.55, .2, .45), trunk=.6, limbs=9, spread=(8, 22), rise=(.2, .6),
-                         leader=True, twigs=1, clumps=110, leaf=.85, hang=0, flat=0, curtain=False, bark_role='bark',
-                         bark=(.5, .47, .43), leaves=(.8, .94, .74)),
-    'tree-layered': dict(seed=14, fork=.2, crown=(.55, .38, .38), trunk=.78, limbs=6, spread=(50, 82),
-                         rise=(-.1, .7), leader=False, twigs=3, clumps=100, leaf=.4, hang=0, flat=.35,
-                         curtain=False, bark_role='bark', bark=(.55, .53, .5), leaves=(.82, .96, .72)),
-    'tree-forked': dict(seed=15, fork=.14, crown=(.6, .36, .34), trunk=.82, limbs=2, spread=(16, 26), rise=(1.1, 1.4),
-                        leader=False, twigs=6, clumps=100, leaf=.4, hang=0, flat=0, curtain=False, bark_role='bark',
-                        bark=(.47, .43, .39), leaves=(.8, .94, .74)),
-    'birch': dict(seed=16, fork=.3, crown=(.6, .26, .38), trunk=.42, limbs=8, spread=(30, 55), rise=(.2, .7),
-                  leader=True, twigs=1, clumps=100, leaf=.56, hang=.4, flat=0, curtain=False, bark_role='bark-birch',
-                  bark=(.92, .92, .9), leaves=(.9, 1.0, .7), floor=.8),
-    'birch-tall': dict(seed=17, fork=.4, crown=(.66, .24, .33), trunk=.44, limbs=8, spread=(28, 50), rise=(.2, .6),
-                       leader=True, twigs=1, clumps=100, leaf=.58, hang=.35, flat=0, curtain=False,
-                       bark_role='bark-birch', bark=(.9, .9, .88), leaves=(.88, .98, .7), floor=.8),
-    'birch-young': dict(seed=18, fork=.22, crown=(.58, .21, .4), trunk=.3, limbs=7, spread=(25, 45), rise=(.2, .7),
-                        leader=True, twigs=1, clumps=90, leaf=.6, hang=.3, flat=0, curtain=False,
-                        bark_role='bark-birch', bark=(.9, .88, .84), leaves=(.9, 1.0, .68), floor=.8),
-    'birch-spreading': dict(seed=19, fork=.3, crown=(.6, .33, .36), trunk=.46, limbs=9, spread=(40, 65),
-                            rise=(.1, .6), leader=True, twigs=1, clumps=100, leaf=.52, hang=.45, flat=0, curtain=False,
-                            bark_role='bark-birch', bark=(.92, .91, .88), leaves=(.88, 1.0, .72), floor=.8),
-    'willow': dict(seed=20, fork=.26, crown=(.6, .38, .3), trunk=.95, limbs=6, spread=(30, 55), rise=(.7, 1.1),
-                   leader=False, twigs=2, clumps=96, leaf=.3, hang=1, flat=0, curtain=True, bark_role='bark',
-                   bark=(.44, .41, .37), leaves=(.86, 1.0, .72), cutout='willow', snow_cutout='broadleaf'),
-    'willow-broad': dict(seed=21, fork=.24, crown=(.58, .47, .28), trunk=1.05, limbs=7, spread=(40, 65),
-                         rise=(.6, 1.0), leader=False, twigs=2, clumps=96, leaf=.28, hang=1, flat=0, curtain=True,
-                         bark_role='bark', bark=(.44, .41, .37), leaves=(.84, .98, .72), cutout='willow',
-                         snow_cutout='broadleaf'),
-}
-# Broadleaf crowns other than the willows' curtains break into sub-crowns about their limbs.
-for spec in BROADLEAF.values():
-    if not spec['curtain']:
-        spec['lumps'] = .3
 # How each level thins a broadleaf tree: clumps (share), crossed cards per clump, card size, twigs (share), forks per
 # twig, limbs kept, limb and twig sides, limb segments, trunk sides and rings; with few clumps they spread evenly over
 # the crown. A far level thinned to fit its budget widens its cards to keep the near level's cover. `reach`: how far
@@ -147,106 +107,32 @@ BROADLEAF_LEVELS = (
          even=False, cover=True, reach=1),
     dict(clumps=.17, cards=1, size=2.9, twigs=0, limbs=3, limb_sides=3, twig_sides=3, segments=1, sides=4, rings=1,
          even=True, cover=True))
-# Dry plants grow like broadleaf trees, with no winter variant and their own cutouts and bark: tree-dead an old oak
-# snag, bleached, its broken limbs ending in fans of bare twigs; foliage-desert a creosote bush, an open vase of thin
-# stems under a wide, uneven crown of olive sprays; foliage-barren a big sagebrush, an uneven silvery mound on twisted
-# stems. Shrubs stand `height` tall, within their own `budgets`.
-SHRUB = dict(height=18, budgets=(480, 240, 96), fork=.03, leader=False, twigs=0, flat=0, curtain=False,
-             bark_role='bark', bark_maps=('albedo', 'normal', 'orm'), floor=.85, winter=False)
+# The bare tree uses authored branch geometry and bleached wood, with snow added to upward-facing surfaces.
+# Woody shrub families use the editable Blender sources and shared forest exporter (build_shrubs.py).
 DRY = {
-    'tree-dead': dict(seed=51, fork=.3, crown=(.58, .36, .33), trunk=.85, limbs=5, spread=(22, 62), rise=(.2, 1.0),
-                      shell=(.55, .85), leader=False, twigs=3, clumps=36, leaf=.6, hang=0, flat=0, curtain=False,
+    'tree-dead': dict(source='tree-dead', budgets=(12000, 1800, 180), seed=51,
                       bark_role='bark', bark_texture='dead-wood', bark_maps=('albedo', 'normal', 'orm'),
                       bark=(.8, .78, .74), leaves=(.84, .8, .76), cutout='twig', far=.95, winter=False),
-    'foliage-desert': dict(SHRUB, seed=61, crown=(.62, .48, .3), trunk=.38, limbs=8, spread=(20, 50), rise=(.5, 1.0),
-                           lobes=(1, 1.35), deep=.3, clumps=85, leaf=.44, hang=0, bark=(.42, .37, .33),
-                           leaves=(.7, .76, .54), cutout='creosote'),
-    'foliage-barren': dict(SHRUB, seed=62, crown=(.45, .52, .36), trunk=.45, limbs=6, spread=(30, 72), rise=(.1, .7),
-                           lobes=(1, 1.3), deep=.4, clumps=95, leaf=.34, hang=.2, scatter=.65, bark=(.5, .46, .42),
-                           leaves=(.9, .96, .86), cutout='sagebrush'),
-    # Level-one cover of the other families: a hazel, a mountain pine, a spreading juniper, a shrub willow, a snowed
-    # juniper and a cinder shrub.
-    'foliage-temperate': dict(SHRUB, seed=63, xy=1.15, crown=(.42, .64, .32), trunk=.35, limbs=6, spread=(30, 60),
-                              rise=(.6, 1.0), lobes=(1, 1.25), deep=.25, clumps=70, leaf=.48, hang=.2, floor=.75,
-                              bark=(.48, .42, .36), leaves=(.84, .96, .7), cutout='broadleaf'),
-    'foliage-highland': dict(SHRUB, seed=64, xy=1.2,
-                             crown=(.38, .62, .3), trunk=.4, limbs=6, spread=(20, 55), rise=(.4, .9),
-                             lobes=(1, 1.25), deep=.25, clumps=75, leaf=.45, hang=.1, floor=.72, bark=(.42, .36, .32),
-                             leaves=(.74, .88, .66), cutout='conifer'),
-    'foliage-rocky': dict(SHRUB, seed=65, crown=(.38, .62, .3), trunk=.4, limbs=6, spread=(50, 80), rise=(.1, .5),
-                          lobes=(1, 1.3), deep=.2, clumps=80, leaf=.42, hang=0, flat=.4, floor=.72,
-                          bark=(.46, .4, .36), leaves=(.72, .86, .78), cutout='conifer'),
-    'foliage-wetland': dict(SHRUB, seed=66, xy=1.25,
-                            crown=(.45, .62, .33), trunk=.35, limbs=7, spread=(25, 55), rise=(.7, 1.1),
-                            lobes=(1, 1.2), deep=.2, clumps=80, leaf=.44, hang=.3, bark=(.5, .44, .38),
-                            leaves=(.76, .9, .68), cutout='willow'),
-    'foliage-snow': dict(SHRUB, seed=67, xy=1.3,
-                         crown=(.42, .58, .34), trunk=.4, limbs=6, spread=(45, 78), rise=(.1, .6),
-                         lobes=(1, 1.3), deep=.2, clumps=80, leaf=.42, hang=0, flat=.3, bark=(.46, .4, .36),
-                         leaves=(.96, .97, 1.0), cutout='conifer-snow', canopy_role='canopy-snow-cutout'),
-    'foliage-volcano': dict(SHRUB, seed=68, xy=1.25,
-                            crown=(.45, .66, .32), trunk=.4, limbs=5, spread=(20, 55), rise=(.4, .9),
-                            lobes=(1, 1.3), deep=.25, clumps=70, leaf=.5, hang=.1, floor=.72, bark_role='bark-volcano',
-                            bark_texture='volcano/cinder-bark', bark=(.6, .55, .52), leaves=(.95, .9, .88),
-                            cutout='volcano/cinder'),
 }
 # Cinder trees of the volcano biome, grown like ohia lehua on lava: a gnarled, buttressed trunk whose unequal forks
 # divide at staggered heights, under a crown of rust and copper flush (bronze-olive inside). tree-volcano-crown is a
 # mature open-grown ohia, tree-volcano-forked a many-trunked spreading one (after pohutukawa), tree-volcano-spire a
 # young upright one. Optional keys used here: `gnarl`, `buttress`, `collar` (the root collar's reach), `stagger`,
 # `palette` (inner and outer leaf tints).
-CINDER_BASE = dict(curtain=False, hang=0, bark_role='bark-volcano', bark_texture='volcano/cinder-bark',
-                   bark_maps=('albedo', 'normal', 'orm'), bark=(1, .96, .9), cutout='volcano/cinder', winter=False,
-                   gnarl=.6, buttress=.32, collar=1.1, stagger=.35)
-CINDER = {
-    'tree-volcano-crown': dict(CINDER_BASE, seed=71, fork=.3, crown=(.6, .4, .3), trunk=.95, limbs=5, spread=(30, 70),
-                               rise=(.3, 1.0), leader=False, twigs=3, clumps=100, leaf=.4, flat=.15,
-                               leaves=(.95, .78, .66), palette=((.6, .6, .46), (.95, .78, .66))),
-    'tree-volcano-forked': dict(CINDER_BASE, seed=72, fork=.1, crown=(.62, .44, .3), trunk=1.0, limbs=3,
-                                spread=(25, 48), rise=(.9, 1.3), leader=False, twigs=5, clumps=100, leaf=.4, flat=.1,
-                                leaves=(.9, .76, .74), palette=((.56, .52, .42), (.9, .76, .74))),
-    'tree-volcano-spire': dict(CINDER_BASE, seed=73, fork=.25, crown=(.6, .2, .4), trunk=.7, limbs=8, spread=(20, 45),
-                               rise=(.2, .7), leader=True, twigs=1, clumps=100, leaf=.5, flat=0,
-                               leaves=(.94, .86, .8), palette=((.62, .6, .5), (.94, .86, .8))),
-}
-# Orchard trees: pruned apple trees standing in rows, low-forked under broad rounded crowns of leafy apple canopy, red
-# apples standing out on the crown (exaggerated, so an orchard reads as one), the broadleaf snow in winter. `near`
-# overrides the near level: a lighter trunk and limbs whose only twigs grow out to the leaves, and cards widened as the
-# crown thins, so the tight budget keeps the crown closed around its fruit; `tilt` leans an old tree.
-ORCHARD_BASE = dict(budgets=(800, 300, 110), curtain=False, hang=.1, flat=.15, twigs=1, bark_role='bark',
-                    bark_maps=('albedo', 'normal', 'orm'), bark=(.5, .44, .38), leaves=(.82, .95, .76),
-                    cutout='orchard', snow_cutout='broadleaf', lobes=(1, 1.05), shell=(.6, .85), deep=.15,
-                    scatter=.2, floor=.68, leader=False, limbs=4, clumps=100, leaf=.42, apples=(10, 6, 4),
-                    apple=(.312, .7, .03, 1.3),
-                    near=dict(sides=5, rings=2, limb_sides=3, segments=2, twigs=0, cover=True))
-ORCHARD = {
-    'orchard-round': dict(ORCHARD_BASE, seed=81, fork=.17, crown=(.55, .36, .3), trunk=.55, spread=(40, 65),
-                          rise=(.1, .6)),
-    'orchard-spreading': dict(ORCHARD_BASE, seed=82, fork=.15, crown=(.5, .4, .26), trunk=.6, spread=(55, 80),
-                              rise=(.05, .5)),
-    'orchard-upright': dict(ORCHARD_BASE, seed=83, fork=.17, crown=(.58, .32, .3), trunk=.45, spread=(20, 40),
-                            rise=(.2, .7)),
-    'orchard-vase': dict(ORCHARD_BASE, seed=84, fork=.17, crown=(.56, .36, .3), trunk=.55, spread=(35, 55),
-                         rise=(.6, 1.0), deep=.1),
-    'orchard-leaning': dict(ORCHARD_BASE, seed=85, fork=.2, crown=(.55, .34, .3), trunk=.6, spread=(30, 65),
-                            rise=(.1, .7), tilt=12, gnarl=.5),
-    'orchard-young': dict(ORCHARD_BASE, seed=86, fork=.2, crown=(.6, .28, .28), trunk=.35, limbs=3, spread=(25, 50),
-                          rise=(.2, .8), clumps=85),
-}
 # Palms: crown height, the trunk's bend (its bezier control and top offsets, shares of the height), foot and crown
 # radii, fronds and their reach (share of the height), their elevations from the youngest to the oldest (degrees), sag
 # (shares of the reach), the leaflets' fold (degrees: up in a V, or hanging below 0) and the card's width over its
 # reach, dead fronds hanging under the crown and their tint. palm is a date palm, palm-bent a coconut palm. The far
 # levels' fewer fronds are wider, to keep the crown's cover.
 PALMS = {
-    'palm': dict(seed=31, crown=.84, curve=(.02, .03), trunk=1.15, top=.85, fronds=34, reach=.36, elevations=(78, -6),
-                 sag=(.05, .5), fold=24, width=.5, dead=10, dry=(.98, .8, .52), cutout='date-palm-frond',
+    'palm': dict(seed=31, crown=.78, curve=(.035, .055), trunk=.92, top=.62, fronds=29, reach=.47, elevations=(83, 6),
+                 sag=(.08, .82), fold=18, width=.32, dead=7, dry=(1.16, .88, .57), cutout='date-palm-frond', natural=True,
                  bark_role='bark-palm', bark_texture='palm-bark', bark_maps=('albedo', 'normal', 'orm'),
-                 bark=(.86, .76, .64), leaves=(.86, .92, .82), winter=False),
-    'palm-bent': dict(seed=32, crown=.86, curve=(.2, .24), trunk=.78, top=.5, fronds=24, reach=.4,
-                      elevations=(70, -18), sag=(.1, .8), fold=-28, width=.55, dead=4, dry=(.98, .82, .55),
+                 bark=(.98, .94, .87), leaves=(.94, .98, .90), winter=False),
+    'palm-bent': dict(seed=32, crown=.8, curve=(.19, .27), trunk=.63, top=.40, fronds=23, reach=.52,
+                      elevations=(76, 3), sag=(.13, 1.02), fold=-18, width=.34, dead=4, dry=(1.16, .9, .6), natural=True,
                       cutout='palm-frond', bark_role='bark-palm', bark_texture='palm-bark',
-                      bark_maps=('albedo', 'normal', 'orm'), bark=(.84, .76, .66), leaves=(.84, .95, .74),
+                      bark_maps=('albedo', 'normal', 'orm'), bark=(.98, .95, .9), leaves=(.93, .98, .86),
                       winter=False),
     # The jungle's understory: a fern clump, fronds arching from a stub of rhizome.
     'foliage-jungle': dict(seed=69, height=18, budgets=(480, 240, 96), crown=.03, curve=(0, 0), trunk=.35, top=.3,
@@ -259,27 +145,29 @@ PALM_LEVELS = (dict(fronds=1, segments=3, fold=True, dead=1, sides=8, rings=10, 
                dict(fronds=.45, segments=1, fold=False, dead=.3, sides=4, rings=2, width=1.2))
 # Saguaros: column radius at the foot, arms, their radius (share of the column's) and heights (shares of the height),
 # the skin's ribs repeats around and whether they bloom (white flowers on the crown and arm tips). Every level keeps
-# every arm, so the outline holds at a distance. cactus-young is a tall spear not yet branching,
+# every arm, so the outline holds at a distance. cactus-young is a compact, asymmetrically branched form,
 # cactus-old a many-armed veteran (`scatter`: its arms' uneven turn about the column); cactus-organ an organ pipe
 # cactus, whose `stems` rise together from one foot instead of a column.
 CACTI = {
-    'cactus': dict(seed=41, trunk=1.6, arms=3, arm=.7, heights=(.3, .58), around=3, flowers=False,
-                   bark=(.95, .98, .94)),
-    'cactus-flowers': dict(seed=42, trunk=1.5, arms=2, arm=.72, heights=(.36, .6), around=3, flowers=True,
-                           bark=(.96, .98, .95)),
-    'cactus-young': dict(seed=43, trunk=1.25, arms=0, arm=.7, heights=(.3, .6), around=3, flowers=False,
-                         bark=(.93, .99, .92)),
-    'cactus-old': dict(seed=44, trunk=1.85, arms=4, arm=.66, heights=(.26, .72), scatter=.35, around=3, flowers=False,
-                       bark=(.97, .97, .93)),
-    'cactus-organ': dict(seed=45, trunk=1.05, arms=0, arm=.7, heights=(.3, .6), around=2, flowers=False,
-                         bark=(.92, .98, .9), stems=6),
+    'cactus': dict(seed=41, trunk=1.02, arms=5, arm=.67, heights=(.23, .61), reach=(5.5, 8.5), around=3, flowers=False,
+                   bark=(.94, .98, .93), weather=.65, tilt=2.2),
+    'cactus-flowers': dict(seed=42, trunk=.96, arms=4, arm=.72, heights=(.26, .60), reach=(5.3, 8.1), around=3, flowers=True,
+                           bark=(.96, .98, .94), weather=.45, tilt=1.5),
+    'cactus-young': dict(seed=43, trunk=.98, arms=4, arm=.66, heights=(.25, .53), reach=(4.3, 6.8), around=3, flowers=False,
+                         bark=(.91, .98, .94), weather=.2, tilt=1.7),
+    'cactus-old': dict(seed=44, trunk=1.22, arms=6, arm=.63, heights=(.18, .65), reach=(6.5, 9.2), forks=2,
+                       scatter=.24, around=3, flowers=False,
+                       bark=(.98, .96, .89), weather=1, tilt=3.0),
+    'cactus-organ': dict(seed=45, trunk=.86, arms=0, arm=.7, heights=(.3, .6), around=2, flowers=False,
+                         bark=(.91, .97, .93), weather=.5, tilt=2, stems=9),
 }
 for spec in CACTI.values():
-    spec.update(bark_role='cactus', bark_texture='cactus-skin', bark_maps=('albedo', 'normal'),
-                canopy_role='flower-cutout', cutout='cactus-flower', leaves=(1, 1, 1), winter=False)
-CACTUS_LEVELS = (dict(sides=12, rings=10, cap=4, arm_sides=8, arm_rings=8, arm_cap=4, blossoms=4),
-                 dict(sides=7, rings=4, cap=2, arm_sides=6, arm_rings=4, arm_cap=2, blossoms=2),
-                 dict(sides=5, rings=2, cap=1, arm_sides=4, arm_rings=2, arm_cap=0, blossoms=2))
+    spec.update(bark_role='cactus', bark_texture='cactus-skin', bark_maps=('albedo', 'normal', 'orm'),
+                canopy_role='flower-cutout', cutout='cactus-flower', leaves=(1, 1, 1), winter=False,
+                budgets=(3600, 950, 420))
+CACTUS_LEVELS = (dict(sides=24, rings=9, cap=3, arm_sides=16, arm_rings=9, arm_cap=3, blossoms=3),
+                 dict(sides=10, rings=5, cap=2, arm_sides=8, arm_rings=5, arm_cap=2, blossoms=2),
+                 dict(sides=6, rings=3, cap=1, arm_sides=5, arm_rings=3, arm_cap=1, blossoms=2))
 
 
 def variants(plants):
@@ -299,7 +187,7 @@ def variants(plants):
 
 
 DRY, PALMS = variants(DRY), variants(PALMS)
-SPECIES = {**CONIFERS, **BROADLEAF, **DRY, **CINDER, **ORCHARD, **PALMS, **CACTI}
+SPECIES = {**CONIFERS, **DRY, **PALMS, **CACTI}
 
 
 def species(name):
@@ -341,20 +229,13 @@ def materials(kind, spec, snow):
             'textures': {role: f'../textures/vegetation/{snowy}-snow-cutout_{suffix}.png'
                          for role, suffix in (('baseColor', 'albedo'), ('normal', 'normal'), ('occlusion', 'orm'))},
             'colourScale': snow_scale(spec)}}}
-    role = spec.get('bark_role', 'bark')
+    role = 'snow' if snow and spec.get('source') == 'tree-dead' else spec.get('bark_role', 'bark')
     texture = spec.get('bark_texture', 'birch-bark' if role == 'bark-birch' else 'bark')
     bark = {'id': role, 'diffuse': [1, 1, 1], 'roughness': 1, 'metallic': 0,
             'textures': [{'id': role, 'type': MAPS[suffix],
                           'filename': f'../textures/vegetation/{texture}_{suffix}.png'}
                          for suffix in spec.get('bark_maps', ('albedo',))]}
-    if 'apple' not in spec:
-        return [bark, canopy]
-    # Apples are solid balls sampling an apple of the canopy's own (summer) cutout.
-    fruit = {'id': 'fruit', 'diffuse': [1, 1, 1], 'roughness': 1, 'metallic': 0,
-             'textures': [{'id': 'fruit', 'type': role,
-                           'filename': f'../textures/vegetation/{spec["cutout"]}-cutout_{suffix}.png'}
-                          for suffix, role in MAPS.items()]}
-    return [bark, canopy, fruit]
+    return [bark, canopy]
 
 
 def add(a, b, s=1.0):
@@ -372,6 +253,10 @@ def length(v):
 def normalized(v):
     size = length(v) or 1
     return [v[0] / size, v[1] / size, v[2] / size]
+
+
+def dot(a, b):
+    return sum(x*y for x,y in zip(a,b))
 
 
 def cross(a, b):
@@ -392,12 +277,17 @@ def along_line(points, share):
         rest -= step
 
 
+@lru_cache(maxsize=None)
+def source(name):
+    return json.loads((Path(__file__).parent / 'sources' / (name+'.json')).read_text())
+
+
 class Tree:
-    """One level's geometry: interleaved vertices and the bark, canopy and fruit index lists."""
+    """One level's geometry: interleaved vertices and the bark and canopy index lists."""
 
     def __init__(self, kind, spec, rng):
         self.kind, self.spec, self.rng = kind, spec, rng
-        self.vertices, self.parts = [], {'bark': [], 'canopy': [], 'fruit': []}
+        self.vertices, self.parts = [], {'bark': [], 'canopy': []}
         # A slight lean, or a strong one (`tilt`, an old orchard tree).
         self.lean = [rng.uniform(-.25, .25) * spec.get('tilt', 1) for _ in range(2)]
         self.stem = STEMS.get(spec.get('cutout', kind), .5)
@@ -405,7 +295,7 @@ class Tree:
         self.gnarl = [rng.uniform(0, math.tau) for _ in range(2)] if spec.get('gnarl') else None
         if kind == 'conifer':
             self.crown_base = spec['base'] * HEIGHT
-        elif kind == 'broadleaf':
+        elif kind == 'broadleaf' and not spec.get('source'):
             centre, rx, rz = spec['crown']
             self.centre = [0, 0, centre * HEIGHT]
             self.radii = (rx * HEIGHT, rz * HEIGHT)
@@ -473,7 +363,7 @@ class Tree:
                 a, b, c, d = ids[i][j], ids[i][j + 1], ids[i + 1][j + 1], ids[i + 1][j]
                 self.parts['bark'].extend((a, b, c, a, c, d))
 
-    def tube(self, points, radii, sides, shade, around=1, cap=0):
+    def tube(self, points, radii, sides, shade, around=1, cap=0, cactus_skin=False, aspect=1.6):
         """A bark tube along points, its rings turned by a parallel frame so it never twists, its texture repeating
         `around` times about it. Its last `cap` rings close it as a dome, their normals turning up the tube's end."""
         circumference = math.tau * self.spec['trunk']
@@ -492,9 +382,24 @@ class Tree:
                 angle = math.tau * k / sides
                 direction = add([c * math.cos(angle) for c in side], other, math.sin(angle))
                 normal = normalized(add([c * math.cos(tilt) for c in direction], tangent, math.sin(tilt)))
-                row.append(self.vertex(add(point, direction, radius), normal,
-                                       [c * shade for c in self.spec['bark']],
-                                       [k / sides * around, -travelled * around / (circumference * 1.6)]))
+                color = [c * shade for c in self.spec['bark']]
+                u = k / sides * around
+                r = radius
+                if cactus_skin:
+                    # Four photographed rib crests per repeat. Near meshes carry their valleys in the silhouette;
+                    # coarse meshes leave those sub-pixel folds to the same normal map, without aliasing the radius.
+                    if sides >= around * 8:
+                        r *= .91 + .09 * math.cos(k / sides * around * 4 * math.tau)
+                    u += .125
+                    # Corking belongs to the old foot, not to a repeating patch up every arm. The irregular boundary
+                    # and slow pigmentation changes keep the stem from reading as a manufactured green extrusion.
+                    age = self.spec['weather'] * math.exp(-max(0, point[2]) / 4.2)
+                    age *= .8 + .2 * math.sin(3 * angle + self.spec['seed'])
+                    pigment = .96 + .04 * math.sin(point[2] * .57 + 2 * angle)
+                    color = [min(1, pigment * (c * (1 - age) + old * age))
+                             for c, old in zip(color, (1, .73, .46))]
+                row.append(self.vertex(add(point, direction, r), normal, color,
+                                       [u, -travelled * around / (circumference * aspect)]))
             ids.append(row)
         for i in range(len(points) - 1):
             for j in range(sides):
@@ -905,47 +810,101 @@ class Tree:
                     self.tube([near, bow, base], [foot, foot * .6, .03], level['twig_sides'], .72)
                     wood += [along_line([near, bow, base], k / 3) for k in range(1, 4)]
 
-    def apples(self, count, sides, rings):
-        """Apples on the outside of the crown's top and sides, where the iso and top views find them: small solid balls
-        (`apple`: an apple's UV centre and radius in the cutout, and the ball's diameter) whose texels are that apple,
-        `sides` round and `rings` of latitude between their poles. A far level's fewer apples are larger, keeping the
-        crown's share of fruit."""
-        if not count:
-            return
-        u, v, reach, diameter = self.spec['apple']
-        rng = self.rng
-        rx, rz = self.radii
-        phase = rng.uniform(0, math.tau)
-        for k in range(count):
-            # A Fibonacci spiral over the crown, never its underside.
-            z = .9 - 1.25 * (k + .5) / count
-            ring = math.sqrt(1 - z * z)
-            angle = phase + k * 2.39996 + rng.uniform(-.3, .3)
-            share = rng.uniform(.86, .96)
-            centre = add(self.centre, [ring * math.cos(angle) * rx, ring * math.sin(angle) * rx, z * rz], share)
-            r = diameter * .5 * math.sqrt(self.spec['apples'][0] / count) * rng.uniform(.85, 1.15)
-            spin = rng.uniform(0, math.tau)
-            # A little flattened: poles on the apple's centre texel, the widest ring on the apple's edge.
-            points = [([0, 0, r * .9], (u, v)), ([0, 0, -r * .9], (u, v))]
-            for k in range(rings):
-                latitude = math.pi / 2 - math.pi * (k + 1) / (rings + 1)
-                across, up = math.cos(latitude), math.sin(latitude)
-                for j in range(sides):
-                    turn = j * math.tau / sides
-                    point = [r * across * math.cos(spin + turn), r * across * math.sin(spin + turn), r * .9 * up]
-                    points.append((point, (u + reach * across * math.cos(turn), v + reach * across * math.sin(turn))))
-            ids = [self.vertex(add(centre, p), normalized(p), [1, 1, 1], uv) for p, uv in points]
-            ring = lambda k, j: ids[2 + k * sides + j % sides]
-            for j in range(sides):
-                self.parts['fruit'].extend((ids[0], ring(0, j), ring(0, j + 1),
-                                            ids[1], ring(rings - 1, j + 1), ring(rings - 1, j)))
-                for k in range(rings - 1):
-                    a, b, c, d = ring(k, j), ring(k, j + 1), ring(k + 1, j + 1), ring(k + 1, j)
-                    self.parts['fruit'].extend((a, d, c, a, c, b))
+    def authored_tube(self, points, sides, tint, broken=False):
+        """Parallel-transport rings keep branch grain and normals continuous around bends."""
+        rings=[]
+        distance=0
+        axis=normalized(sub(points[1], points[0]))
+        across=normalized(cross(axis, [0, 0, 1] if abs(axis[2]) < .95 else [0, 1, 0]))
+        for j, point in enumerate(points):
+            tangent=normalized(sub(points[min(j+1, len(points)-1)], points[max(0, j-1)]))
+            across=normalized(add(across, tangent, -dot(across, tangent)))
+            other=cross(tangent, across)
+            if j:
+                delta=sub(point, points[j-1])
+                distance+=math.sqrt(dot(delta, delta))
+            span=math.sqrt(dot(sub(points[min(j+1,len(points)-1)], points[max(0,j-1)]),
+                               sub(points[min(j+1,len(points)-1)], points[max(0,j-1)]))) or 1
+            slope=(points[min(j+1,len(points)-1)][3]-points[max(0,j-1)][3])/span
+            ring=[]
+            shade=.83+.17*min(1, max(0, point[2])/2)
+            for k in range(sides+1):
+                angle=math.tau*k/sides
+                radial=add([x*math.cos(angle) for x in across], other, math.sin(angle))
+                normal=normalized(add(radial, tangent, -slope))
+                p=add(point, radial, max(.003, point[3]))
+                if broken and j == len(points)-1:
+                    p=add(p, tangent, point[3]*(.12+.3*math.sin(k*5.7)))
+                ring.append(self.vertex(p, normal, [c*shade for c in tint],
+                                        (k/sides*max(.15, math.tau*points[0][3]/3.5), -distance/4.5)))
+            rings.append(ring)
+        for a,b in zip(rings, rings[1:]):
+            for k in range(sides):
+                self.parts['bark'].extend((a[k],a[k+1],b[k+1],a[k],b[k+1],b[k]))
+        # Weathered end grain closes a broken limb, with an irregular rim.
+        if broken:
+            p=points[-1]
+            centre=self.vertex(p[:3], tangent, [c*.8 for c in tint], (.5,.5))
+            for k in range(sides):
+                self.parts['bark'].extend((centre,rings[-1][k],rings[-1][k+1]))
 
-    # Palms
 
-    def frond(self, base, azimuth, elevation, reach, sag, fold, segments, folded, color, centre, wide=1.0):
+    def authored(self, index, thinning):
+        data=source(self.spec['source'])
+        dry=self.spec['source']=='tree-dead'
+        branches=data['branches']
+        # Near: rounded stems and fine branchlets. Far: retain the same dominant scaffold.
+        cutoff=((.018,.12,.07) if dry else (.075,.24,.5))[index]
+        chosen=[i for i,p in enumerate(branches) if max(q[3] for q in p)>=cutoff/thinning]
+        if index==2:
+            chosen=sorted(chosen, key=lambda i:max(q[3] for q in branches[i]), reverse=True)[:12 if dry else 5]
+        retained=set(chosen)
+        for i in chosen:
+            parent=data['parents'][i]
+            while parent>=0:
+                retained.add(parent)
+                parent=data['parents'][parent]
+        chosen=sorted(retained)
+        rng=random.Random(data['seed'])
+        simplified={}
+        for branch_id in chosen:
+            points=[list(p) for p in branches[branch_id]]
+            radius=max(p[3] for p in points)
+            sides=(10 if radius>.7 else 7 if radius>.25 else 5) if index==0 else 4 if index==1 else 3
+            if index:
+                count=4 if index==1 else 3 if dry else 2
+                keep=sorted({round(j*(len(points)-1)/(count-1)) for j in range(count)})
+                points=[points[j] for j in keep]
+                parent=data['parents'][branch_id]
+                if dry and parent>=0:
+                    # A child's root follows the simplified parent, not the omitted curve points.
+                    candidates=[]
+                    for a,b in zip(simplified[parent], simplified[parent][1:]):
+                        edge=sub(b,a)
+                        t=max(0,min(1,dot(sub(points[0],a),edge)/(dot(edge,edge) or 1)))
+                        candidates.append(add(a,edge,t))
+                    points[0][:3]=min(candidates,key=lambda p:length(sub(p,points[0])))
+            simplified[branch_id]=points
+            # A broken end keeps its centreline: shortening it could detach a child.
+            broken=dry and radius < .12 and rng.random()<.3
+            if broken:
+                points=[list(p) for p in points]
+                points[-1][3]=max(points[-1][3], points[-2][3]*.35)
+            if index==0:
+                curved=[]
+                for j in range(len(points)-1):
+                    a,b,c,d=points[max(0,j-1)],points[j],points[j+1],points[min(len(points)-1,j+2)]
+                    curved.append(b)
+                    # Interpolating the authored centres rounds bends without moving their forks.
+                    curved.append([.5*((2*b[k])+(-a[k]+c[k])*.5+
+                                       (2*a[k]-5*b[k]+4*c[k]-d[k])*.25+
+                                       (-a[k]+3*b[k]-3*c[k]+d[k])*.125) for k in range(4)])
+                points=curved+[points[-1]]
+            tint=(.86,.83,.77) if dry else (.92,.88,.8)
+            self.authored_tube(points, sides, tint, broken)
+
+    def frond(self, base, azimuth, elevation, reach, sag, fold, segments, folded, color, centre, wide=1.0,
+              sweep=0, twist=0, mirror=None):
         """One frond card from base: it leaves at `elevation` degrees and arches down by sag (a share of its reach);
         folded, its leaflets rise from the rachis in a V (fold > 0) or hang from it (fold < 0) by fold degrees."""
         heading = [math.cos(azimuth), math.sin(azimuth), 0]
@@ -953,17 +912,20 @@ class Tree:
         rise, run = math.sin(math.radians(elevation)), math.cos(math.radians(elevation))
         half = reach * self.spec['width'] * wide * .5
         fold = math.radians(fold if folded else 0)
-        mirror = self.rng.random() < .5
+        mirror = self.rng.random() < .5 if mirror is None else mirror
         stem = 1 - self.stem if mirror else self.stem
         edges = (1.0, 0.0) if mirror else (0.0, 1.0)
         rows, normals, colors, uvs = [], [], [], []
         for i in range(segments + 1):
             s = i / segments
-            point = add(add(base, heading, reach * run * s), [0, 0, reach * (rise * s - sag * s * s)])
-            tangent = normalized(add([c * run for c in heading], [0, 0, rise - 2 * sag * s]))
+            point = add(add(add(base, heading, reach * run * s), side, reach * sweep * s * s),
+                        [0, 0, reach * (rise * s - sag * s * s)])
+            tangent = normalized(add(add([c * run for c in heading], side, 2 * sweep * s),
+                                     [0, 0, rise - 2 * sag * s]))
             up = normalized(cross(tangent, side))
-            left = add(add(point, side, half * math.cos(fold)), up, half * math.sin(fold))
-            right = add(add(point, side, -half * math.cos(fold)), up, half * math.sin(fold))
+            roll = twist * s
+            left = add(add(point, side, half * math.cos(fold + roll)), up, half * math.sin(fold + roll))
+            right = add(add(point, side, -half * math.cos(fold - roll)), up, half * math.sin(fold - roll))
             row = [[p[0], p[1], max(p[2], .05)] for p in ([left, point, right] if folded else [left, right])]
             rows.append(row)
             # The crown shades as a dome: lit on top, dark beneath and toward the trunk.
@@ -975,6 +937,7 @@ class Tree:
 
     def palm(self, level, thinning):
         spec, rng = self.spec, self.rng
+        natural = spec.get('natural', False)
         top = spec['crown'] * HEIGHT
         azimuth = rng.uniform(0, math.tau)
         heading = [math.cos(azimuth), math.sin(azimuth), 0]
@@ -986,23 +949,36 @@ class Tree:
         foot, crown = spec['trunk'], spec['top']
         radii = [crown + (foot - crown) * (1 - k / rings) ** 2 + .35 * foot * math.exp(-points[k][2] / 1.2)
                  for k in range(rings + 1)]
-        self.tube(points, radii, level['sides'], .9)
+        self.tube(points, radii, level['sides'], .96 if natural else .9, aspect=.85 if natural else 1.6)
         reach = spec['reach'] * HEIGHT
         centre = add(end, [0, 0, -reach * .35])
         tint = spec['leaves']
         count = max(5, round(spec['fronds'] * level['fronds'] * thinning))
+        available = spec['fronds'] if natural else count
+        selected = {round(k * (available - 1) / (count - 1)) for k in range(count)}
         phase = rng.uniform(0, math.tau)
-        for k in range(count):
+        for k in range(available):
             # A spiral from the youngest frond, nearly upright in the crown's centre, to the oldest, drooping outside.
-            age = (k + .5) / count
+            age = (k + .5) / available
             elevation = spec['elevations'][0] + (spec['elevations'][1] - spec['elevations'][0]) * age ** .8
             sag = spec['sag'][0] + (spec['sag'][1] - spec['sag'][0]) * age
-            length = reach * (.7 + .3 * min(1, age * 3)) * rng.uniform(.9, 1.08)
-            direction = phase + k * 2.39996
+            length = reach * (.52 + .48 * min(1, age * 3) if natural else .7 + .3 * min(1, age * 3))
+            length *= rng.uniform(.8, 1.15) if natural else rng.uniform(.9, 1.08)
+            direction = phase + k * 2.39996 + (rng.uniform(-.24, .24) if natural else 0)
             base = add(end, [math.cos(direction), math.sin(direction), 0], crown * .6)
+            if natural:
+                base[2] += crown * (1 - 2 * age)
             shade = (1.05 - .15 * age) * rng.uniform(.94, 1.04)
-            self.frond(base, direction, elevation + rng.uniform(-6, 6), length, sag, spec['fold'],
-                       level['segments'], level['fold'], [c * shade for c in tint], centre, level['width'])
+            sweep = rng.uniform(-.16, .16) if natural else 0
+            twist = rng.uniform(-.45, .45) if natural else 0
+            segments = level['segments'] + (1 if natural and level['fold'] and age > .35 else 0)
+            elevation += rng.uniform(-6, 6)
+            mirror = rng.random() < .5
+            # Generate the same botanical crown at every level, then retain a spread of its fronds. Changing detail
+            # must not reroll the trunk's bend, crown outline or the ages and directions of the retained fronds.
+            if k in selected:
+                self.frond(base, direction, elevation, length, sag, spec['fold'], segments, level['fold'],
+                           [c * shade for c in tint], centre, level['width'], sweep, twist, mirror)
         # Dead fronds hang down the trunk under the crown, dry and tan.
         for k in range(round(spec['dead'] * level['dead'])):
             direction = phase + rng.uniform(0, math.tau)
@@ -1017,23 +993,31 @@ class Tree:
         """A ribbed cactus stem along points, closed by a dome of `cap` rings around its end (open without one)."""
         tip, axis = points[-1], normalized(sub(points[-1], points[-2]))
         path = points[:-1] + [add(tip, axis, -radius)] if cap else list(points)
-        radii = [radius] * len(path)
+        # A mature column swells above the narrower, corked foot, then tapers into a small growing tip. A broad,
+        # hemispherical cap on a constant radius cylinder is the characteristic toy-cactus failure.
+        radii = [radius * (.79 + .24 * math.sin(math.pi * i / max(1, len(path) - 1))
+                           - .12 * i / max(1, len(path) - 1)) for i in range(len(path))]
+        cap_radius = radii[-1]
         for k in range(1, cap + 1):
             angle = math.pi / 2 * k / cap
             path.append(add(path[len(points) - 1], axis, radius * math.sin(angle)))
-            radii.append(max(radius * math.cos(angle), .02))
-        self.tube(path, radii, sides, 1.0, self.spec['around'], cap)
+            radii.append(max(cap_radius * math.cos(angle), .012))
+        if not cap:
+            radii[-1] *= .12
+        around = self.spec['around'] if radius >= self.spec['trunk'] * .85 else 2
+        # Keep areoles legible at the board's viewing distance instead of filtering them into smooth green stripes.
+        self.tube(path, radii, sides, 1.0, around, cap, cactus_skin=True, aspect=2.1)
 
     def flower(self, tip, radius, count):
         """White blossoms in a ring around a stem's crown: small cards leaning out from its dome, so the iso view sees
         them as flowers on the stem rather than a disc on its top."""
         phase = self.rng.uniform(0, math.tau)
-        size = radius * .9
+        size = radius * .50
         for k in range(count):
             azimuth = phase + k * math.tau / count
             out, across = [math.cos(azimuth), math.sin(azimuth), 0], [-math.sin(azimuth), math.cos(azimuth), 0]
             up = normalized(add([0, 0, 1], out, .7))
-            base = add(add(tip, out, radius * .8), [0, 0, -radius * .45])
+            base = add(add(tip, out, radius * .42), [0, 0, -radius * .42])
             rows = [[add(add(base, up, size * s), across, -size / 2), add(add(base, up, size * s), across, size / 2)]
                     for s in (0, 1)]
             normal = normalized(add([0, 0, 1], out))
@@ -1051,10 +1035,11 @@ class Tree:
                 azimuth = phase + math.tau * (k + rng.uniform(-.25, .25)) / spec['stems']
                 out = [math.cos(azimuth), math.sin(azimuth), 0]
                 stem = radius * rng.uniform(.8, 1.05)
-                top = HEIGHT * (1 if k == 0 else rng.uniform(.55, .92))
-                foot = add(self.axis(0), out, radius * .7)
-                bend = add(self.axis(top * .22), out, radius * rng.uniform(1.8, 2.8))
-                end = add(self.axis(top), out, radius * rng.uniform(2.2, 3.6))
+                top = HEIGHT * (1 if k == 0 else rng.uniform(.40, .91))
+                reach = radius * (.35 if k == 0 else rng.uniform(5.3, 7.6))
+                foot = add(self.axis(0), out, radius * (0 if k == 0 else 1.1))
+                bend = add(self.axis(top * .22), out, reach * .9)
+                end = add(self.axis(top), out, reach)
                 self.column([bezier(foot, bend, end, j / rings) for j in range(rings + 1)], stem, level['arm_sides'],
                             level['arm_cap'])
             return
@@ -1070,15 +1055,27 @@ class Tree:
             arm = radius * spec['arm'] * rng.uniform(.92, 1.05)
             low = HEIGHT * rng.uniform(*spec['heights'])
             high = min(HEIGHT * .9, low + HEIGHT * rng.uniform(.24, .4))
-            reach = radius + arm * rng.uniform(2.2, 3.0)
+            reach = rng.uniform(*spec['reach'])
             origin = self.axis(low)
-            corner = add(self.axis(low + arm * .3), out, reach)
+            corner = add(self.axis(low + arm * rng.uniform(-.4, .5)), out, reach)
             end = add(self.axis(high), out, reach * rng.uniform(.95, 1.08))
             # A many-armed saguaro over its budget bends its arms in fewer rings.
             count = max(2, round(level['arm_rings'] * thinning))
-            self.column([bezier(origin, corner, end, j / count) for j in range(count + 1)], arm, level['arm_sides'],
+            # Spend the arm's rings at its curved shoulder; the upper column is almost straight.
+            self.column([bezier(origin, corner, end, (j / count) ** 1.4) for j in range(count + 1)], arm, level['arm_sides'],
                         level['arm_cap'])
             tips.append(end)
+            if k < spec.get('forks', 0):
+                # A veteran's secondary arm grows from the parent, not from a detached cluster. Keep it shorter
+                # and slimmer, with a different bearing and the same connection at every LOD.
+                start = bezier(origin, corner, end, .57)
+                bearing = direction + (1 if k % 2 == 0 else -1) * rng.uniform(.65, 1.0)
+                outward = [math.cos(bearing), math.sin(bearing), 0]
+                elbow = add(start, outward, rng.uniform(2.6, 3.5))
+                tip = add(elbow, [0, 0, 1], rng.uniform(4.5, 7.5))
+                self.column([bezier(start, elbow, tip, j / count) for j in range(count + 1)], arm * .57,
+                            level['arm_sides'], level['arm_cap'])
+                tips.append(tip)
         if spec['flowers']:
             for tip in tips:
                 self.flower(tip, radius, level['blossoms'])
@@ -1098,19 +1095,23 @@ class Tree:
 
 
 def grow(kind, spec, index, thinning):
-    # A saguaro's levels share one seed: the same arms at every distance.
-    tree = Tree(kind, spec, random.Random(spec['seed'] * 101 + (0 if kind == 'cactus' else index)))
-    if kind == 'conifer':
+    # Saguaros and mature palms share one seed: the same arms and fronds at every distance.
+    tree = Tree(kind, spec, random.Random(spec['seed'] * 101
+                                        + (0 if kind == 'cactus' or spec.get('natural') else index)))
+    if spec.get('source'):
+        tree.authored(index, thinning)
+    elif kind == 'conifer':
         tree.conifer(CONIFER_LEVELS[index], thinning)
     elif kind == 'palm':
-        tree.palm(PALM_LEVELS[index], thinning)
+        level = PALM_LEVELS[index]
+        if spec.get('natural') and index:
+            level = dict(level, fronds=.8 if index == 1 else .6, width=1.15 if index == 1 else 1.35)
+        tree.palm(level, thinning)
     elif kind == 'cactus':
         tree.cactus(CACTUS_LEVELS[index], thinning)
     else:
         level = BROADLEAF_LEVELS[index]
         tree.broadleaf({**level, **spec['near']} if index == 0 and 'near' in spec else level, thinning)
-        # The far level's apples are three-sided.
-        tree.apples(spec.get('apples', (0, 0, 0))[index], *((6, 1), (6, 1), (3, 1))[index])
     tree.fit()
     return tree
 
@@ -1148,7 +1149,7 @@ def model(name, index):
             for c in range(3):
                 vertices[i * 12 + 6 + c] += (.98 - vertices[i * 12 + 6 + c]) * cover
     asset = f'{name}-lod{index}'
-    roles = [(role, material) for role, material in zip(('bark', 'canopy', 'fruit'), materials(kind, spec, snow))
+    roles = [(role, material) for role, material in zip(('bark', 'canopy'), materials(kind, spec, snow))
              if tree.parts[role]]
     parts = [{'id': f'{asset}-{role}', 'type': 'TRIANGLES', 'indices': tree.parts[role]} for role, _ in roles]
     return {'id': asset, 'meshes': [{'attributes': ['POSITION', 'NORMAL', 'COLOR', 'TEXCOORD0'],
