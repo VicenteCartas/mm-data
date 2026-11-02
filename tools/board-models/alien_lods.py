@@ -216,7 +216,7 @@ def retextured(family_name, name):
                     mesh['vertices'][i * 12 + 10:i * 12 + 12] = [(x + y) / MYCELIUM_REPEAT, -z / MYCELIUM_REPEAT]
         level['materials'] = [MYCELIUM if material['id'] == 'mycelium' else material for material in level['materials']]
         levels[index] = level
-    write_glb(BOARD / f'{family_name}/{name}.glb', levels=levels, linear_colors=True)
+    write_glb(BOARD / f'{family_name}/{name}.glb', levels=levels, linear_colors=True, preserve_groups=('spores',))
     return [sum(len(part['indices']) for part in levels[index]['meshes'][0]['parts']) // 3 for index in range(3)]
 
 
@@ -245,7 +245,7 @@ def build(family_name, name):
                          'nodes': [{'id': node, 'parts': [{'meshpartid': part, 'materialid': material['id']}]}],
                          'materials': [material]}
     bpy.data.meshes.remove(data)
-    write_glb(BOARD / f'{family_name}/{name}.glb', levels=levels, linear_colors=True)
+    write_glb(BOARD / f'{family_name}/{name}.glb', levels=levels, linear_colors=True, preserve_groups=('spores',))
     counts = [{'node': f'{name}-lod{index}', 'triangles': len(levels[index]['meshes'][0]['parts'][0]['indices']) // 3,
                'vertices': len(levels[index]['meshes'][0]['vertices']) // 12} for index in range(3)]
     manifest = json.loads(MANIFEST.read_text())

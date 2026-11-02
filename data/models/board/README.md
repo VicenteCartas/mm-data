@@ -662,7 +662,9 @@ no rock or scatter geometry is generated in-game.
   at 8/20/36 canopy plants and 6/12/20 cacti, including mixed stands. Ordinary plants retain their natural size;
   a common placement sequence keeps existing plants stable when density rises. Orchards use 4/6/9 trees in
   rows, and yard/container skins are excluded. Rigid fungal and Martian tiers use 30%/60%/90% of a common
-  collision-safe packing, bounded by the search and count limits, rather than literal ground coverage. Their
+  collision-safe packing, bounded by the search and count limits, rather than literal ground coverage.
+  Fungal spore bodies use a dedicated species pool, with at most one/two/three bodies in light/heavy/ultra cover.
+  They supplement a required cup at the hex's cover height and share its collision checks and stable packing. All
   solid bodies remain inside the hex and do not intersect. Connected cross-sections derived from all three mesh LODs
   test collision at matching heights, keeping separate cups and branches separate. Each component has a conservative
   twelve-plane enclosure; concavities inside one connected component remain filled. There is no extra trunk-spacing rule.
@@ -671,6 +673,12 @@ no rock or scatter geometry is generated in-game.
   percentage targets approximate. Existing terrain support settles roots onto the actual cliff top; crowns may overhang
   that top. Rigid colonies recheck intersections after settling. All natural plant anchors use canonical full-detail
   terrain geometry, so camera movement and LOD changes cannot move them. Terrain edits refresh that geometry.
+  Each fungal cup GLB also has a data-only `spores` root containing named Empty nodes, one inside each bowl, below its rim.
+  X/Y scale gives the radius of the upward wisp. These nodes render no geometry and are independent of the four LOD
+  groups. Import a GLB in Blender to move or resize them. Both the alien mesh rebuild and impostor exporter preserve
+  the nodes. The renderer applies each installed plant's full transform to them; plume width follows horizontal
+  scale and its rise follows vertical scale. Porous round, pear and clustered spore forms emit no individual mist;
+  the shared fungal-hex cloud remains independent of the cups' wisps.
   The leading colony member reaches the rules' cover height. Level-three forest crowns are 20% wider than
   level-two crowns; tropical understory remains a separate low layer.
 - `textures/vegetation/*-cutout`: eight shared 512 by 512 cutout materials

@@ -467,7 +467,7 @@ def impostors(only=None):
             if extras:
                 levels[3]['materials'][0]['extras'] = extras
             entry['lods'] = entry['lods'][:3] + [{'node': f'{name}-lod3', **counts(levels[3])}]
-            write_glb(path, levels=levels, linear_colors=True, extras=levels[0].get('extras'))
+            write_glb(path, levels=levels, linear_colors=True, extras=levels[0].get('extras'), preserve_groups=('spores',))
             print(name, [lod['triangles'] for lod in entry['lods']], flush=True)
         MANIFEST.write_text(json.dumps(manifest, indent=2) + '\n')
     finally:

@@ -31,7 +31,7 @@ def z_up(value):
     return [value[0], -value[2], value[1]]
 
 
-def write_glb(path, model=None, *, levels=None, groups=None, extras=None, linear_colors=False):
+def write_glb(path, model=None, *, levels=None, groups=None, extras=None, linear_colors=False, preserve_groups=()):
     """Export existing rigid authoring arrays, preserving node/part/material IDs.
 
     With `linear_colors=True`, pigment factors and vertex RGB are already linear; alpha is unchanged.
@@ -40,7 +40,25 @@ def write_glb(path, model=None, *, levels=None, groups=None, extras=None, linear
     `_COLOUR_SLOT` attribute; `extras` become the file's extras (for example its `mmColourSlots` definitions).
     `groups` adds root groups beside the levels by name, which the game reads as data (a `cut` and its `stands`):
     their parts may leave out `materialid`, and nodes without parts are empties.
+    `preserve_groups` retains named, static empty-node groups from the existing file when rebuilding its meshes.
     """
+    retained = []
+    if preserve_groups and Path(path).is_file():
+        previous = Path(path).read_bytes()
+        length = struct.unpack_from('<I', previous, 12)[0]
+        old = json.loads(previous[20:20 + length])
+
+        def retain(index):
+            node = dict(old['nodes'][index])
+            if any(key in node for key in ('mesh', 'camera', 'skin')):
+                raise ValueError('Only empty anchor groups can be preserved: ' + node.get('name', ''))
+            node['children'] = [retain(child) for child in node.get('children', [])]
+            return node
+
+        for index in old['scenes'][old.get('scene', 0)]['nodes']:
+            name = old['nodes'][index].get('name')
+            if name in preserve_groups and name not in (groups or {}):
+                retained.append(retain(index))
     document = {'asset': {'version': '2.0', 'generator': 'MegaMek rigid mesh exporter'},
                 'scene': 0, 'scenes': [{'nodes': []}], 'nodes': [], 'meshes': [],
                 'materials': [], 'accessors': [], 'bufferViews': [], 'buffers': []}
@@ -193,6 +211,17 @@ def write_glb(path, model=None, *, levels=None, groups=None, extras=None, linear
         children = emit(geometry)
         document['scenes'][0]['nodes'].append(len(document['nodes']))
         document['nodes'].append({'name': name, 'children': children})
+    def restore(node):
+        children = [restore(child) for child in node['children']]
+        item = {key: value for key, value in node.items() if key != 'children'}
+        if children:
+            item['children'] = children
+        index = len(document['nodes'])
+        document['nodes'].append(item)
+        return index
+
+    for node in retained:
+        document['scenes'][0]['nodes'].append(restore(node))
     if binary:
         document['buffers'] = [{'byteLength': len(binary)}]
     if extras:
