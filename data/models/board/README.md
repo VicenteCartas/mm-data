@@ -658,14 +658,19 @@ no rock or scatter geometry is generated in-game.
   The compact `cactus-young` form has four unequal arms; the veteran has six main arms and two secondary forks,
   and the organ cactus has nine unequal stems. Geometry levels preserve these branches.
   Ordinary woods and jungle aim for 30%, 60% and 90% crown coverage inside each hex. Coverage uses the union of
-  LOD0 top-projection silhouettes with only small gaps closed; cacti use rotated model XY boxes. Counts are capped
-  at 8/20/36 canopy plants and 6/12/20 cacti, including mixed stands. Ordinary plants retain their natural size;
+  LOD0 top-projection silhouettes with only small gaps closed; cacti use rotated model XY boxes at 85% width and depth
+  (about 72% of their full box area), without resizing the model. Bare `tree-dead`
+  contributes 15% visual cover at normal width, scaled by horizontal area, rather than filling gaps between twig pixels.
+  Ordinary canopy plants are capped at 3/6/9, including palms and height-one cover shrubs. Bare trees are spread
+  apart and capped at 2/4/6; cacti have their own 4/8/12 caps. Each cap also applies in mixed stands and takes
+  priority over the coverage target. Ordinary plants retain their natural size;
   a common placement sequence keeps existing plants stable when density rises. Orchards use 4/6/9 trees in
   rows, and yard/container skins are excluded. Rigid fungal and Martian tiers use 30%/60%/90% of a common
-  collision-safe packing, bounded by the search and count limits, rather than literal ground coverage.
+  collision-safe packing, bounded by their separate 8/20/36 safety limits, rather than literal ground coverage.
   Fungal spore bodies use a dedicated species pool, with at most one/two/three bodies in light/heavy/ultra cover.
   They supplement a required cup at the hex's cover height and share its collision checks and stable packing. All
-  solid bodies remain inside the hex and do not intersect. Connected cross-sections derived from all three mesh LODs
+  solid bodies remain inside the hex and do not intersect. Cacti share these geometry-based checks, including after
+  terrain support moves their roots; empty space between arms is available for packing. Connected cross-sections derived from all three mesh LODs
   test collision at matching heights, keeping separate cups and branches separate. Each component has a conservative
   twelve-plane enclosure; concavities inside one connected component remain filled. There is no extra trunk-spacing rule.
   Compact members and limited width fitting help fill gaps. Searches reuse prepared orientations locally; no placement
