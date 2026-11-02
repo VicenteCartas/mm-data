@@ -926,10 +926,10 @@
       "label": "SurfaceResponse",
       "type": "graph",
       "parameters": {
-        "ReliefPercent": 1.5686274509803921,
-        "BaseRoughness": 0.92,
+        "ReliefPercent": 1.1764705882352942,
+        "BaseRoughness": 0.84,
         "HeightRoughness": 0.12,
-        "CavityStrength": 1.7
+        "CavityStrength": 1.25
       },
       "node_position": {
         "x": 900,
@@ -998,10 +998,10 @@
           "name": "gen_parameters",
           "type": "remote",
           "parameters": {
-            "ReliefPercent": 0.7058823529411765,
-            "BaseRoughness": 0.88,
+            "ReliefPercent": 1.1764705882352942,
+            "BaseRoughness": 0.84,
             "HeightRoughness": 0.12,
-            "CavityStrength": 1.7
+            "CavityStrength": 1.25
           },
           "seed_int": 0,
           "node_position": {
@@ -2581,7 +2581,7 @@
           "a": 1
         },
         "ao": 1,
-        "depth_scale": 0.06274509803921569,
+        "depth_scale": 0.04705882352941176,
         "emission_energy": 1.0,
         "flags_transparent": false,
         "metallic": 0,

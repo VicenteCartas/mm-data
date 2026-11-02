@@ -51,12 +51,12 @@
       "parameters": {
         "Tint": {
           "type": "Color",
-          "r": 1,
-          "g": 1,
-          "b": 1,
-          "a": 1
+          "r": 1.0,
+          "g": 0.98,
+          "b": 0.93,
+          "a": 1.0
         },
-        "Value": 1,
+        "Value": 1.04,
         "Coverage": 0
       },
       "seed": 0,
@@ -109,12 +109,12 @@
           "parameters": {
             "Tint": {
               "type": "Color",
-              "r": 1,
-              "g": 1,
-              "b": 1,
-              "a": 1
+              "r": 1.0,
+              "g": 0.98,
+              "b": 0.93,
+              "a": 1.0
             },
-            "Value": 1,
+            "Value": 1.04,
             "Coverage": 0
           },
           "seed": 0,
@@ -745,11 +745,11 @@
       "label": "SurfaceResponse",
       "type": "graph",
       "parameters": {
-        "ReliefUV": 0.018,
+        "ReliefUV": 0.012,
         "CavityStrength": 1.8,
         "CavityFloor": 0.65,
-        "BaseRoughness": 0.62,
-        "Transmission": 0.65,
+        "BaseRoughness": 0.76,
+        "Transmission": 0.38,
         "GreenRoughness": 0.15,
         "DarkRoughness": 0.1
       },
@@ -805,11 +805,11 @@
           "name": "gen_parameters",
           "type": "remote",
           "parameters": {
-            "ReliefUV": 0.018,
+            "ReliefUV": 0.012,
             "CavityStrength": 1.8,
             "CavityFloor": 0.65,
-            "BaseRoughness": 0.62,
-            "Transmission": 0.65,
+            "BaseRoughness": 0.76,
+            "Transmission": 0.38,
             "GreenRoughness": 0.15,
             "DarkRoughness": 0.1
           },

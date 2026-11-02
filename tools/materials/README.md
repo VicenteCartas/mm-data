@@ -137,10 +137,35 @@ their maps from `sources/`. The cargo crate's maps are baked from steel, iron an
 finish, the three wall steels, the grille, the worn plate, the weathered paint and the vent slots are near white or
 flat: each model tints them with its vertex colours or colour slots.
 
+`structures/lunar/` holds the lunar base's multi-hex buildings (models/buildings/README.md). From photographic studies,
+image projects (sources/ albedo, orm, normal, and emission where they glow): `habitat-wall` (two storeys of dark ribbed
+cladding, a bolted band at each storey's top and a window strip below it, lit; three window bays across a repeat),
+`habitat-pier` (ribbed steel of the piers and skirt), `habitat-roof` (pale riveted deck plating, hatches and a
+hazard-striped edge, along the board's axes: a hexside's width by half a hex per repeat), `regolith-concrete` (plinths,
+pads and footings: two by two cast bays), `dome-frame` (off-white enamelled steel plates and rivets), `solar-cells`
+(two by two modules of four cells), `skylight-glass` (smoked panes in bolted mullions, lit) and `biodome-garden`
+(hydroponic crop rows between grating walkways under grow lights), and `colony-panel` (the domed buildings' pale
+cladding: square panels a storey high, a bolted steel band at each floor line, two storeys to a repeat). Grid studies are cut to whole periods so the
+seamless cut lands grid on grid. `dome-glass` is library nodes (a dust fBm remapped to sparse drifts that tint, dull and
+cloud the glass); its Material node's Opacity is connected and carries the stock Godot 4 Standard target plus Godot's
+`blend_mode = 4`, premultiplied alpha.
+
+`structures/buildings/` holds the connected building kits' materials (models/buildings/README.md): the hand-made art's
+atlases and textures as image projects (`light-cornices`, `light-walls`, `light-frames`, `light-far`,
+`fortress-concrete`, `fortress-roof` with the art's tint baked in, `fortress-far`), `fortress-wall` (the concrete in
+the far facade's tone, the storeys' walls), the fortress's flat colours
+(`fortress-steel`, `fortress-dark`, `fortress-glass`), and the light building's `light-roof` (a bitumen membrane) and
+`light-sidewalk` (concrete paving), tileable on the board's axes (`mmBoardUV`).
+
 The plant cutouts made from photographic studies (`creosote-cutout`, `sagebrush-cutout`, `twig-cutout`,
 `date-palm-frond-cutout`, `willow-cutout`, `cactus-flower-cutout`, `orchard-cutout`, `volcano/cinder-cutout`) and the
 dead tree's `dead-wood` read their `sources/` from `plant_sources.py` (its header gives the recipe): `cutout` keys a
 study shot on magenta, `bark` tiles one that fills the frame.
+
+`vegetation/apple-skin` is procedural: its spherical field blends red blush and yellow-green
+ground colour, fine longitudinal striation and pale lenticels without a UV seam. It supplies
+the orchard fruit's shallow pore normal and waxy roughness. The model fixes the physical
+apple size; one texture repeat wraps one fruit.
 
 Keep corrugated weathering broad and its finish variation small: fine, high-contrast metallic and roughness streaks
 turn into bright trails under grazing light. Its graph limits weathering's metallic blend to 0.10 and roughness blend
@@ -198,6 +223,13 @@ own, such as baked light, as pieces are turned and mirrored). The road sources' 
 the same run: *Relief* divided by N, as a whole code, and *depth_scale* = *Relief* ÷ 25; then
 multiply the catalogue's `metres` by N. Running it again lengthens again; to rewrite
 only the maps, run it without `--lengthen`. Both scripts need numpy and scipy.
+
+`roads/colony-slabs` is the roadway of a moon or Mars colony (precast slabs between expansion joints, every other one
+X-braced, gravel gutters, steel-capped kerbs with lamps in `sources/emission.png`), the paved road's default on lunar
+and Martian ground. Unlike the other road materials its maps follow the road's course (terrain-road.frag, slab reads):
+U runs across the whole road, kerb to kerb, V along one period, a plain slab's middle at 0 and the X-braced plate's at
+.5, and both are mirror symmetric, as a course may run either way through a hex. Its sources are the asphalt project's
+(pigment and the 16-bit structure fields) plus the emission, cut from a photographic study.
 
 ## Exporting
 

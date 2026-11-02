@@ -17,7 +17,7 @@
         "y": 190
       },
       "title": "About this material",
-      "text": "Plant texture from sources/orchard-cutout.png, a fruiting apple spray (Malus domestica): serrated leaves with small ripe apples among them, from a photographic study keyed by tools/materials/plant_sources.py cutout, with its height fields (structure-high/low), 512 px. Pigment edits the colour and cutout; SurfaceResponse the normals, AO, roughness and light transmission. Keep the layout: the part's base is on the bottom edge's centre, where the models attach it. The ...PNG8 groups and the nodes after them only store exact file values; leave them. Export: File > Export material > Godot > Godot 4 Standard into data/models/board/textures/vegetation, then Reload assets in the game's Tuning panel.",
+      "text": "Apple-bearing photographic sprays, attached by their stem at U=.5/V=.978. Small sprays follow fruiting wood; apples stay within the photographed spray. SurfaceResponse controls the waxy leaf response and thin-leaf light transmission. Export Godot 4 Standard into data/models/board/textures/vegetation.",
       "color": {
         "type": "Color",
         "r": 0.18,
@@ -745,11 +745,11 @@
       "label": "SurfaceResponse",
       "type": "graph",
       "parameters": {
-        "ReliefUV": 0.018,
+        "ReliefUV": 0.008,
         "CavityStrength": 1.8,
         "CavityFloor": 0.65,
-        "BaseRoughness": 0.62,
-        "Transmission": 0.65,
+        "BaseRoughness": 0.64,
+        "Transmission": 0.56,
         "GreenRoughness": 0.15,
         "DarkRoughness": 0.1
       },
@@ -805,11 +805,11 @@
           "name": "gen_parameters",
           "type": "remote",
           "parameters": {
-            "ReliefUV": 0.018,
+            "ReliefUV": 0.008,
             "CavityStrength": 1.8,
             "CavityFloor": 0.65,
-            "BaseRoughness": 0.62,
-            "Transmission": 0.65,
+            "BaseRoughness": 0.64,
+            "Transmission": 0.56,
             "GreenRoughness": 0.15,
             "DarkRoughness": 0.1
           },
