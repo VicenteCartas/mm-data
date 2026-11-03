@@ -20,9 +20,9 @@ of the ground it digs out of its hex (in Enhanced the hex's top gives way over t
 and `stands`, empties where troops resting in its hex stand (`stand-N`, N the formation slot), facing their +Y, where a
 platoon's transports park (`vehicle-N`) and where a tank waits to go hull down (`hide-N`). A model whose pieces show
 one by one names them `part-N`, both its level nodes and the `cut` children: the game shows the parts a hex needs.
-The model draws its own floor and walls and stands on its hex's ground as it was before the cut. The manifests,
-`tools/board-models/manifest.json` and `tools/board-models/building-manifest.json` (the Saxarba buildings), are tool
-data: budgets, levels and sources keyed by these paths. They are not shipped and the game does not read them.
+The model draws its own floor and walls and stands on its hex's ground as it was before the cut. The manifest
+`tools/board-models/manifest.json` is tool data: budgets, levels and sources keyed by these paths. It is not
+shipped and the game does not read it.
 
 ## Scenery folders
 
@@ -316,10 +316,9 @@ The conversion takes every legacy art token (FLUFF and GROUND_FLUFF below the se
 ROAD_FLUFF, WATER_FLUFF, BLDG_FLUFF), so a `.board2` holds none. A token becomes objects (these rows, or a legacy
 decal id of `decals/decals.json`: runway, landing pads, letters, courts, rails), a hex design that draws exactly
 its art (the blueprint variant whose `selectors` equal the token: `ground/blend/*` transitions at strength
-exits/6, `road/rounded`, `road/horizontal`, `woods/orchard`, `rough/obstacles`, `rough/felled-trees`, the 55
-`building/legacy-art-N` building art designs, or the asset variant of the building model chosen beside the art),
-or nothing (the transparent wildcard `classic/tileset/blank.png`, `bldg_fluff:0`, quay art the fitted quay wall
-replaces). Elevator plates and the cleared-rubble gravel stay rows of their rule terrain (below).
+exits/6, `road/rounded`, `road/horizontal`, `woods/orchard`, `rough/obstacles`, `rough/felled-trees`),
+or nothing (the transparent wildcard `classic/tileset/blank.png`, old building artwork, quay art the fitted quay
+wall replaces). Buildings select current modular kits from their gameplay class and weight. Elevator plates and the cleared-rubble gravel stay rows of their rule terrain (below).
 
 `scenery/layouts.json` and the meshes and decals it names are edited directly. The heli pads
 (`fluff/heli1`-`3`) decode to their landing lights (`roofs/landing-light`, rows only) and the pad decal.
@@ -485,10 +484,8 @@ Palette rules, checked by `BoardSceneryDecodeDataTest`:
   emblem pieces and one-hex variants have no entry; they only decode
   (`decals/decals.json` `legacy`). The elevator plates and the cleared-rubble
   gravel have none either: they belong to their rule terrain.
-- Designs: `rough/felled-trees` ("Felled trees", Designs) and the 55
-  `building/legacy-art-N` variants ("Legacy building art N", 100: "Legacy roof
-  outline"; group "Legacy building art"), each with the `selectors` of the
-  legacy token it stands for.
+- Designs include `rough/felled-trees` ("Felled trees", Designs), with the selectors of its legacy token.
+  Old building art choices are discarded on import; their gameplay buildings use current kits.
 
 Industry > Seaport holds the container
 yard looks and the ten `seaport/yard/` props; import gives a hex with container yard
@@ -565,13 +562,11 @@ no rock or scatter geometry is generated in-game.
   frame under Enhanced's ice), `space` for transparent space and `magma` for molten
   magma, whose animated surface covers its column); roads, rails, bridges and drops
   have no art here, since the 3D board draws its own in both graphics.
-- `buildings/`: 3,295 structure models with roofs derived from the exact selected
-  tile image. Simplified outlines retain diagonal walls, curves, disconnected
-  parts and courtyards; no runtime pixel extrusion or generic substitutions.
-- `tools/board-models/building-manifest.json`: each structure's source, facade family, wall tint,
-  outline, vertex and triangle counts. The largest has 499 triangles. Fuel tanks
-  and industrial structures use their selected Saxarba artwork too; there are no
-  generic cylinder/factory substitutes.
+- Buildings use the current kits in `data/models/buildings`, selected by class and weight. The old Saxarba
+  per-tile GLBs and their inspection PNGs have been removed. `.board` import keeps building gameplay data
+  while dropping the old artwork selection. Selectors `building:4:69` through `building:4:75` are omitted,
+  including their building state; the underlying terrain remains. Fuel tanks use connected kits and heavy
+  industrial terrain uses generated structures; their retained tileset keys do not refer to old GLBs.
 - Foliage GLB files. Counts and the imported Blender source
   names are in `tools/board-models/manifest.json`. Bridge spans are generated at runtime;
   reusable terminal and pier kits remain GLBs.
@@ -590,7 +585,10 @@ no rock or scatter geometry is generated in-game.
   species' botany by `tools/board-models/foliage/build_trees.py`:
   conifers as whorls of bent spray cards folded along their stems on a straight
   trunk; palms as a curved trunk under a spiral of folded fronds with dead
-  fronds hanging beneath (`palm` a date palm, `palm-bent` a coconut palm). Their
+  fronds hanging beneath (`palm` a date palm, `palm-bent` a coconut palm). The additional
+  `palm-compact` has an upright, compact date-palm crown; `palm-arching` has a medium crown of arching fronds
+  on a gently curved trunk. Their independent parameters live in `build_trees.py`, with editable meshes in
+  `sources/palm-density.blend`. Their
   fronds arch, sweep and twist individually, with the same crown sampled at each
   mesh level. Saguaros have tapered, ribbed columns, uneven elbowed arms and small
   growing tips, with corking concentrated at their feet; `cactus-flowers`
@@ -600,8 +598,12 @@ no rock or scatter geometry is generated in-game.
   radii, parent links and spray corners in `tools/board-models/foliage/sources/`.
   The generator rounds those paths and retains their hierarchy at each mesh level;
   pruning a branch removes its children. Change a species or its source there and rebuild it rather than editing
-  its GLB. The fourteen broadleaf, volcanic, willow and birch forms use editable branch curves and
-  attached foliage in `sources/forest.blend`, exported by `build_forest.py`. Their near sprays fold about
+  its GLB. The nineteen broadleaf, volcanic, willow and birch forms use editable branch curves and
+  attached foliage in `sources/forest.blend` and `sources/forest-density.blend`, exported by `build_forest.py`.
+  The latter adds mature and forked birches, an arching willow, and upright and spreading cinder crowns;
+  birches and willow also carry snow material variants. Rebuild that source with
+  `build_forest.py --source tools/board-models/foliage/sources/forest-density.blend`, then bake its impostors.
+  Their near sprays fold about
   the midrib. Coarser levels simplify the same branch paths and use nested spatial crown samples with
   fixed twig anchors, normals, pigmentation and crown bounds. Major limbs remain at the far mesh level.
   Crown limits reduce a whole spray uniformly; individual corners are never clipped into flat canopy plates.
@@ -657,15 +659,22 @@ no rock or scatter geometry is generated in-game.
   wraps around each stem, following bent arms.
   The compact `cactus-young` form has four unequal arms; the veteran has six main arms and two secondary forks,
   and the organ cactus has nine unequal stems. Geometry levels preserve these branches.
-  Ordinary woods and jungle aim for 30%, 60% and 90% crown coverage inside each hex. Coverage uses the union of
+  Ordinary woods and jungle aim for 30%, 75% and 100% crown coverage inside each hex. Coverage uses the union of
   LOD0 top-projection silhouettes with only small gaps closed; cacti use rotated model XY boxes at 85% width and depth
   (about 72% of their full box area), without resizing the model. Bare `tree-dead`
   contributes 15% visual cover at normal width, scaled by horizontal area, rather than filling gaps between twig pixels.
   Ordinary canopy plants are capped at 3/6/9, including palms and height-one cover shrubs. Bare trees are spread
-  apart and capped at 2/4/6; cacti have their own 4/8/12 caps. Each cap also applies in mixed stands and takes
-  priority over the coverage target. Ordinary plants retain their natural size;
-  a common placement sequence keeps existing plants stable when density rises. Orchards use 4/6/9 trees in
-  rows, and yard/container skins are excluded. Rigid fungal and Martian tiers use 30%/60%/90% of a common
+  apart and capped at 2/4/6; cacti have their own 3/8/12 caps. Each cap also applies in mixed stands and takes
+  priority over the coverage target. Ordinary plants retain their natural size. For level-two/three trees, the regional
+  family is selected before its crown form. Light favours medium crowns, reserves its widest forms for heavy/ultra,
+  and permits sparse accents only after two canopy plants. Heavy/ultra favour fuller forms within that same family.
+  Size classes use the existing LOD0 crown mask at the normal level-two scale; families with no medium form use their
+  fuller available forms. Terrain density edits may change these variants and their placement; camera and LOD never do.
+  The added forms broaden the variant choices after the regional family draw, preserving biome family frequencies.
+  Palms choose among four crowns after the unchanged regional family draw; light excludes the largest form
+  (crowns above 85% of that family's widest measured area), while heavy/ultra favour fuller forms.
+  Low shrubs, cacti, bare trees and rigid colonies retain their existing selection rules. Orchards use 4/6/9 trees in
+  rows, and yard/container skins are excluded. Rigid fungal and Martian tiers use 30%/75%/100% of a common
   collision-safe packing, bounded by their separate 8/20/36 safety limits, rather than literal ground coverage.
   Fungal spore bodies use a dedicated species pool, with at most one/two/three bodies in light/heavy/ultra cover.
   They supplement a required cup at the hex's cover height and share its collision checks and stable packing. All
@@ -674,7 +683,7 @@ no rock or scatter geometry is generated in-game.
   test collision at matching heights, keeping separate cups and branches separate. Each component has a conservative
   twelve-plane enclosure; concavities inside one connected component remain filled. There is no extra trunk-spacing rule.
   Compact members and limited width fitting help fill gaps. Searches reuse prepared orientations locally; no placement
-  cache outlives a capture. Ultra reaches at least 90% of that packing's coverage. Whole-body increments make the
+  cache outlives a capture. Ultra targets all of that packing's coverage. Whole-body increments make the
   percentage targets approximate. Existing terrain support settles roots onto the actual cliff top; crowns may overhang
   that top. Rigid colonies recheck intersections after settling. All natural plant anchors use canonical full-detail
   terrain geometry, so camera movement and LOD changes cannot move them. Terrain edits refresh that geometry.
@@ -719,16 +728,8 @@ no rock or scatter geometry is generated in-game.
   cutout for marsh vegetation. The renderer filters it to one shared 512 by 512
   texture with mipmaps; all three plant LODs use this same image. Ground peat,
   moss and pools are shaded separately using the existing sculpt earth maps.
-- `textures/structures/facades/`: 128 by 128 runtime facade maps. Light buildings retain
-  windows; medium uses concrete, hard reinforced concrete, and heavy armored
-  panels. Fortresses/gun emplacements use massive sci-fi walls, hangars use
-  large shutter bays, fuel tanks use metal courses, and industry uses service
-  panels/vents. Sealed structures and dropships use closed armored panels.
-  Source names select the family; opaque roof colors tint each model's walls.
-  Ordinary facade courses repeat once per four stories. Hangar doors and
-  fortress buttresses span the full height instead of stacking per story.
-  Eight light-building windows span 128 world units; other families have fewer,
-  larger structural bays at that width.
+- `textures/structures/facades/`: shared 128 by 128 facade maps retained as material resources. Current
+  modular buildings use the authored panels and materials documented in `../buildings/README.md`.
 - `textures/terrain/classic/`: Classic mode's 128 by 128 column wall maps (concrete, dirt, rock,
   sand, snow, lunar, fungus, mars and volcano; each repeats once per 96 world units), the
   `water-bed` map for liquid banks and beds, and the two 84 by 72 incline rim masks
@@ -851,8 +852,8 @@ the three mesh levels, owns a temporary Blender scene and preserves the active s
 `mmVariants.snow` on the impostor material) from LOD0 in that variant.
 
 `validate_board_assets.py` checks each manifest entry against its GLB: the plant levels `-lod0` to `-lod3` and
-their family-specific triangle budgets, the triangle counts (at most 500 per other model), one-level building
-heights, roof winding and facade assignments, understory and orchard grounding, LOD0 height and every coarser
+their family-specific triangle budgets, the triangle counts (at most 500 per other model),
+understory and orchard grounding, LOD0 height and every coarser
 level's height from 10% below to 1% above it,
 embedded images and that every external texture exists inside this directory. It refuses G3DJ meshes.
 Native Java integration tests additionally check transparency, lighting,
@@ -885,25 +886,16 @@ LOD coverage checks compare the shipped near mesh with its coarser levels.
 
 ## Building GLBs and textures
 
-All 3,295 Saxarba buildings use one GLB each, with an identity
-`<building>-lod0` group. Each embeds its dedicated roof PNG without changing
-the image bytes, and uses a relative URI for one of eight shared facade PNGs.
-Roof and wall are separate material groups, not two layers over the same mesh.
-Runtime wall materials still scale vertical UVs with building height; `shell`
-materials retain full-height UVs. Roof samplers clamp; facade samplers repeat.
+Current modular and authored building assets live in `data/models/buildings`; see
+`../buildings/README.md` for their assembly, footprint and interior contracts. The retired per-tile Saxarba
+GLBs and their dedicated roof images are no longer used.
 
 `RigidGlb` supports embedded PNG/JPEG diffuse images and local image references.
 `ModelTextures` caches images with their sampler state, releases native pixels
 after upload, retains encoded bytes for context restoration and gives texture
 disposal to the owning asset library. Unit and plant models use the same path.
-Only the roof belongs inside each building package; the facade stays shared. Every model follows the same rule: a
-texture only that model uses is embedded in its GLB (the cargo crate's maps, the `rough/` timber's albedo and normal
-maps), and a texture several models or the board materials share stays external, under `textures/`.
-Each building keeps `<building>.png` beside `<building>.glb`: a byte-for-byte
-copy of its original tileset image, retaining alpha and shadows. This is for
-inspection and is not a runtime texture dependency. The processed roof PNG
-stays embedded, with no loose `*-roof.png` under deployed buildings. There is no measured
-runtime performance gain claimed from embedding.
+A texture used only by one model may be embedded in its GLB; textures shared by several models or board
+materials stay external under `textures/`. There is no measured runtime performance gain claimed from embedding.
 
 Deployed `data/` and authoring/reference `tools/` meshes are GLB; there are no G3DJ files.
 

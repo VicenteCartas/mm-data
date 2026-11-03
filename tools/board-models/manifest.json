@@ -2947,5 +2947,288 @@
     "source": "tools/board-models/alien_lods.py",
     "triangles": 3200,
     "vertices": 9600
+  },
+  "vegetation/willow-arching": {
+    "mesh": "vegetation/willow-arching.glb",
+    "source": "tools/board-models/foliage/build_forest.py",
+    "triangles": 32000,
+    "vertices": 24552,
+    "lods": [
+      {
+        "node": "willow-arching-lod0",
+        "triangles": 32000,
+        "vertices": 24552
+      },
+      {
+        "node": "willow-arching-lod1",
+        "triangles": 7788,
+        "vertices": 7226
+      },
+      {
+        "node": "willow-arching-lod2",
+        "triangles": 1680,
+        "vertices": 1660
+      },
+      {
+        "node": "willow-arching-lod3",
+        "triangles": 12,
+        "vertices": 24
+      }
+    ]
+  },
+  "vegetation/willow-arching-snow": {
+    "mesh": "vegetation/willow-arching.glb",
+    "source": "tools/board-models/foliage/build_forest.py",
+    "triangles": 32000,
+    "vertices": 24552,
+    "lods": [
+      {
+        "node": "willow-arching-snow-lod0",
+        "triangles": 32000,
+        "vertices": 24552
+      },
+      {
+        "node": "willow-arching-snow-lod1",
+        "triangles": 7788,
+        "vertices": 7226
+      },
+      {
+        "node": "willow-arching-snow-lod2",
+        "triangles": 1680,
+        "vertices": 1660
+      },
+      {
+        "node": "willow-arching-snow-lod3",
+        "triangles": 12,
+        "vertices": 24
+      }
+    ],
+    "variant": "snow"
+  },
+  "vegetation/tree-volcano-upright": {
+    "mesh": "vegetation/tree-volcano-upright.glb",
+    "source": "tools/board-models/foliage/build_forest.py",
+    "triangles": 26616,
+    "vertices": 20343,
+    "lods": [
+      {
+        "node": "tree-volcano-upright-lod0",
+        "triangles": 26616,
+        "vertices": 20343
+      },
+      {
+        "node": "tree-volcano-upright-lod1",
+        "triangles": 5452,
+        "vertices": 5306
+      },
+      {
+        "node": "tree-volcano-upright-lod2",
+        "triangles": 1672,
+        "vertices": 1655
+      },
+      {
+        "node": "tree-volcano-upright-lod3",
+        "triangles": 12,
+        "vertices": 24
+      }
+    ]
+  },
+  "vegetation/tree-volcano-spreading": {
+    "mesh": "vegetation/tree-volcano-spreading.glb",
+    "source": "tools/board-models/foliage/build_forest.py",
+    "triangles": 27168,
+    "vertices": 20701,
+    "lods": [
+      {
+        "node": "tree-volcano-spreading-lod0",
+        "triangles": 27168,
+        "vertices": 20701
+      },
+      {
+        "node": "tree-volcano-spreading-lod1",
+        "triangles": 5604,
+        "vertices": 5421
+      },
+      {
+        "node": "tree-volcano-spreading-lod2",
+        "triangles": 1680,
+        "vertices": 1660
+      },
+      {
+        "node": "tree-volcano-spreading-lod3",
+        "triangles": 12,
+        "vertices": 24
+      }
+    ]
+  },
+  "vegetation/birch-mature": {
+    "mesh": "vegetation/birch-mature.glb",
+    "source": "tools/board-models/foliage/build_forest.py",
+    "triangles": 31716,
+    "vertices": 24562,
+    "lods": [
+      {
+        "node": "birch-mature-lod0",
+        "triangles": 31716,
+        "vertices": 24562
+      },
+      {
+        "node": "birch-mature-lod1",
+        "triangles": 6332,
+        "vertices": 6016
+      },
+      {
+        "node": "birch-mature-lod2",
+        "triangles": 1680,
+        "vertices": 1660
+      },
+      {
+        "node": "birch-mature-lod3",
+        "triangles": 12,
+        "vertices": 24
+      }
+    ]
+  },
+  "vegetation/birch-mature-snow": {
+    "mesh": "vegetation/birch-mature.glb",
+    "source": "tools/board-models/foliage/build_forest.py",
+    "triangles": 31716,
+    "vertices": 24562,
+    "lods": [
+      {
+        "node": "birch-mature-snow-lod0",
+        "triangles": 31716,
+        "vertices": 24562
+      },
+      {
+        "node": "birch-mature-snow-lod1",
+        "triangles": 6332,
+        "vertices": 6016
+      },
+      {
+        "node": "birch-mature-snow-lod2",
+        "triangles": 1680,
+        "vertices": 1660
+      },
+      {
+        "node": "birch-mature-snow-lod3",
+        "triangles": 12,
+        "vertices": 24
+      }
+    ],
+    "variant": "snow"
+  },
+  "vegetation/birch-forked": {
+    "mesh": "vegetation/birch-forked.glb",
+    "source": "tools/board-models/foliage/build_forest.py",
+    "triangles": 28756,
+    "vertices": 22045,
+    "lods": [
+      {
+        "node": "birch-forked-lod0",
+        "triangles": 28756,
+        "vertices": 22045
+      },
+      {
+        "node": "birch-forked-lod1",
+        "triangles": 5664,
+        "vertices": 5458
+      },
+      {
+        "node": "birch-forked-lod2",
+        "triangles": 1688,
+        "vertices": 1665
+      },
+      {
+        "node": "birch-forked-lod3",
+        "triangles": 12,
+        "vertices": 24
+      }
+    ]
+  },
+  "vegetation/birch-forked-snow": {
+    "mesh": "vegetation/birch-forked.glb",
+    "source": "tools/board-models/foliage/build_forest.py",
+    "triangles": 28756,
+    "vertices": 22045,
+    "lods": [
+      {
+        "node": "birch-forked-snow-lod0",
+        "triangles": 28756,
+        "vertices": 22045
+      },
+      {
+        "node": "birch-forked-snow-lod1",
+        "triangles": 5664,
+        "vertices": 5458
+      },
+      {
+        "node": "birch-forked-snow-lod2",
+        "triangles": 1688,
+        "vertices": 1665
+      },
+      {
+        "node": "birch-forked-snow-lod3",
+        "triangles": 12,
+        "vertices": 24
+      }
+    ],
+    "variant": "snow"
+  },
+  "vegetation/palm-compact": {
+    "mesh": "vegetation/palm-compact.glb",
+    "lods": [
+      {
+        "node": "palm-compact-lod0",
+        "triangles": 928,
+        "vertices": 855
+      },
+      {
+        "node": "palm-compact-lod1",
+        "triangles": 216,
+        "vertices": 291
+      },
+      {
+        "node": "palm-compact-lod2",
+        "triangles": 84,
+        "vertices": 151
+      },
+      {
+        "node": "palm-compact-lod3",
+        "triangles": 12,
+        "vertices": 24
+      }
+    ],
+    "source": "tools/board-models/foliage/build_trees.py",
+    "triangles": 928,
+    "vertices": 855
+  },
+  "vegetation/palm-arching": {
+    "mesh": "vegetation/palm-arching.glb",
+    "lods": [
+      {
+        "node": "palm-arching-lod0",
+        "triangles": 984,
+        "vertices": 903
+      },
+      {
+        "node": "palm-arching-lod1",
+        "triangles": 232,
+        "vertices": 315
+      },
+      {
+        "node": "palm-arching-lod2",
+        "triangles": 84,
+        "vertices": 151
+      },
+      {
+        "node": "palm-arching-lod3",
+        "triangles": 12,
+        "vertices": 24
+      }
+    ],
+    "source": "tools/board-models/foliage/build_trees.py",
+    "triangles": 984,
+    "vertices": 903
   }
 }

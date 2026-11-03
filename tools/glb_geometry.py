@@ -304,7 +304,8 @@ def read_glb(path, level=0, *, linear_colors=False):
                 colors = values(attrs['COLOR_0']) if 'COLOR_0' in attrs else [[1, 1, 1, 1]] * len(position)
                 uvs = values(attrs['TEXCOORD_0']) if 'TEXCOORD_0' in attrs else [[0, 0]] * len(position)
                 for p, n, c, uv in zip(position, normals, colors, uvs):
-                    vertices.extend([*z_up(p), *z_up(n), *(v if linear_colors or data_colors else display(v) for v in c[:3]), c[3], *uv])
+                    vertices.extend([*z_up(p), *z_up(n), *(v if linear_colors or data_colors else display(v) for v in c[:3]),
+                                     c[3] if len(c) == 4 else 1.0, *uv])
                 slot_values = values(attrs['_COLOUR_SLOT']) if '_COLOUR_SLOT' in attrs else [[0]] * len(position)
                 slots.extend(round(v[0]) for v in slot_values)
             part_id = primitive.get('extras', {}).get('mmPart', f'{mesh_index}-{part_index}')

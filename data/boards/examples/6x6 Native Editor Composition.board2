@@ -1,39 +1,920 @@
-{"format":"megamek-board","version":2,"size":{"width":6,"height":6},"name":"Native editor composition examples","description":"A grouped picnic (15 tables, 2 trees) under a level-4 bridge with deck paint; three independently transformed cars and a small tree; level-2 industry below a level-4 maglev train and level-5 beacon; a building design and directional cliff edges.","sourceHeader":"# Synthetic editor example. SPDX-License-Identifier: GPL-3.0-or-later\n","tags":["editor example"],"notes":[{"at":[2,2],"text":["The ground picnic group remains below the bridge. Click selects the group, a second click one table. Paint targets only the deck."]},{"at":[4,2],"text":["Select each car and tree independently. Position, rotate, mirror, or scale it."]},{"at":[2,4],"text":["The maglev train rides a level-4 implicit bridge above the industrial support. The beacon has its own absolute level."]}],
-"hexes":[
-{"at":[1,1],"elevation":0},
-{"at":[2,1],"elevation":0},
-{"at":[3,1],"elevation":0},
-{"at":[4,1],"elevation":0},
-{"at":[5,1],"elevation":0},
-{"at":[6,1],"elevation":0},
-{"at":[1,2],"elevation":0},
-{"at":[2,2],"elevation":0,"terrain":"bridge:1:9;bridge_cf:40;bridge_elev:4","decorations":[{"id":"picnic-1","kind":"prop","asset":"scenery/parks/picnic-table","uid":"8kggqvj4","position":[-0.2738,0.2517],"rotation":0,"scale":0.65,"placement":{"mode":"surface","receiver":{"terrain":"ground","surface":"top"},"offset":0},"group":"picnic-under-bridge"},{"id":"picnic-2","kind":"prop","asset":"scenery/parks/picnic-table","uid":"8kggqvj4","position":[-0.2079,0.2639],"rotation":0,"scale":0.65,"placement":{"mode":"surface","receiver":{"terrain":"ground","surface":"top"},"offset":0},"group":"picnic-under-bridge"},{"id":"picnic-3","kind":"prop","asset":"scenery/parks/picnic-table","uid":"8kggqvj4","position":[-0.2143,0.3211],"rotation":0,"scale":0.65,"placement":{"mode":"surface","receiver":{"terrain":"ground","surface":"top"},"offset":0},"group":"picnic-under-bridge"},{"id":"picnic-4","kind":"prop","asset":"scenery/parks/picnic-table","uid":"8kggqvj4","position":[-0.2143,0.1822],"rotation":0,"scale":0.65,"placement":{"mode":"surface","receiver":{"terrain":"ground","surface":"top"},"offset":0},"group":"picnic-under-bridge"},{"id":"picnic-5","kind":"prop","asset":"scenery/parks/picnic-table","uid":"8kggqvj4","position":[-0.1548,0.2517],"rotation":0,"scale":0.65,"placement":{"mode":"surface","receiver":{"terrain":"ground","surface":"top"},"offset":0},"group":"picnic-under-bridge"},{"id":"picnic-6","kind":"prop","asset":"scenery/parks/picnic-table","uid":"8kggqvj4","position":[0.0833,-0.3317],"rotation":0,"scale":0.65,"placement":{"mode":"surface","receiver":{"terrain":"ground","surface":"top"},"offset":0},"group":"picnic-under-bridge"},{"id":"picnic-7","kind":"prop","asset":"scenery/parks/picnic-table","uid":"8kggqvj4","position":[0.1493,-0.3194],"rotation":0,"scale":0.65,"placement":{"mode":"surface","receiver":{"terrain":"ground","surface":"top"},"offset":0},"group":"picnic-under-bridge"},{"id":"picnic-8","kind":"prop","asset":"scenery/parks/picnic-table","uid":"8kggqvj4","position":[0.1429,-0.2622],"rotation":0,"scale":0.65,"placement":{"mode":"surface","receiver":{"terrain":"ground","surface":"top"},"offset":0},"group":"picnic-under-bridge"},{"id":"picnic-9","kind":"prop","asset":"scenery/parks/picnic-table","uid":"8kggqvj4","position":[0.1429,-0.4011],"rotation":0,"scale":0.65,"placement":{"mode":"surface","receiver":{"terrain":"ground","surface":"top"},"offset":0},"group":"picnic-under-bridge"},{"id":"picnic-10","kind":"prop","asset":"scenery/parks/picnic-table","uid":"8kggqvj4","position":[0.2024,-0.3317],"rotation":0,"scale":0.65,"placement":{"mode":"surface","receiver":{"terrain":"ground","surface":"top"},"offset":0},"group":"picnic-under-bridge"},{"id":"picnic-11","kind":"prop","asset":"scenery/parks/picnic-table","uid":"8kggqvj4","position":[0.2143,-0.1233],"rotation":0,"scale":0.65,"placement":{"mode":"surface","receiver":{"terrain":"ground","surface":"top"},"offset":0},"group":"picnic-under-bridge"},{"id":"picnic-12","kind":"prop","asset":"scenery/parks/picnic-table","uid":"8kggqvj4","position":[0.2802,-0.1111],"rotation":0,"scale":0.65,"placement":{"mode":"surface","receiver":{"terrain":"ground","surface":"top"},"offset":0},"group":"picnic-under-bridge"},{"id":"picnic-13","kind":"prop","asset":"scenery/parks/picnic-table","uid":"8kggqvj4","position":[0.2738,-0.0539],"rotation":0,"scale":0.65,"placement":{"mode":"surface","receiver":{"terrain":"ground","surface":"top"},"offset":0},"group":"picnic-under-bridge"},{"id":"picnic-14","kind":"prop","asset":"scenery/parks/picnic-table","uid":"8kggqvj4","position":[0.2738,-0.1928],"rotation":0,"scale":0.65,"placement":{"mode":"surface","receiver":{"terrain":"ground","surface":"top"},"offset":0},"group":"picnic-under-bridge"},{"id":"picnic-15","kind":"prop","asset":"scenery/parks/picnic-table","uid":"8kggqvj4","position":[0.3333,-0.1233],"rotation":0,"scale":0.65,"placement":{"mode":"surface","receiver":{"terrain":"ground","surface":"top"},"offset":0},"group":"picnic-under-bridge"},{"id":"picnic-16","kind":"prop","asset":"vegetation/tree-broad","uid":"itf5fe2m","position":[-0.1988,-0.0862],"rotation":0,"scale":0.333333,"placement":{"mode":"surface","receiver":{"terrain":"ground","surface":"top"},"offset":0},"group":"picnic-under-bridge"},{"id":"picnic-17","kind":"prop","asset":"vegetation/birch","uid":"qw67crlm","position":[0.0245,0.3346],"rotation":98,"scale":0.333333,"placement":{"mode":"surface","receiver":{"terrain":"ground","surface":"top"},"offset":0},"group":"picnic-under-bridge"},{"id":"bridge-marking","kind":"decal","asset":"decal/emblems/red-cross","scale":0.263,"placement":{"mode":"surface","receiver":{"terrain":"bridge","surface":"deck"},"offset":0}}]},
-{"at":[3,2],"elevation":0},
-{"at":[4,2],"elevation":0,"terrain":"pavement:1","decorations":[{"id":"red-car","kind":"prop","asset":"scenery/vehicles/car","uid":"6m788287","position":[-0.24,0.15],"rotation":20,"scale":0.8,"placement":{"mode":"surface","receiver":{"terrain":"ground","surface":"top"},"offset":0}},{"id":"silver-car","kind":"prop","asset":"scenery/vehicles/car","uid":"6m788287","position":[0,-0.08],"rotation":85,"scale":0.7,"colours":["#b8b8b8"],"placement":{"mode":"surface","receiver":{"terrain":"ground","surface":"top"},"offset":0}},{"id":"green-car","kind":"prop","asset":"scenery/vehicles/car","uid":"6m788287","position":[0.24,0.13],"rotation":150,"scale":0.8,"colours":["#14ab1a"],"placement":{"mode":"surface","receiver":{"terrain":"ground","surface":"top"},"offset":0}},{"id":"small-tree","kind":"prop","asset":"vegetation/birch-young","uid":"nz7lkr4p","position":[0.26,-0.27],"rotation":10,"scale":0.35,"placement":{"mode":"surface","receiver":{"terrain":"ground","surface":"top"},"offset":0}}]},
-{"at":[5,2],"elevation":0,"terrain":"road:4:9","appearance":{"road":{"variant":"road/rounded","material":"gravel"}}},
-{"at":[6,2],"elevation":0},
-{"at":[1,3],"elevation":0},
-{"at":[2,3],"elevation":0},
-{"at":[3,3],"elevation":0},
-{"at":[4,3],"elevation":0},
-{"at":[5,3],"elevation":0},
-{"at":[6,3],"elevation":0},
-{"at":[1,4],"elevation":0},
-{"at":[2,4],"elevation":0,"terrain":"pavement:1;heavy_industrial:2;bridge:4:9;bridge_cf:650;bridge_elev:4;bridge_rail:2:9","appearance":{"bridge":{"variant":"bridge/implicit"}},"decorations":[{"id":"elevated-wagon","kind":"prop","asset":"scenery/maglev/wagon","uid":"0zuqc9cs","group":"elevated-train","position":[0,-0.236111],"placement":{"mode":"surface","receiver":{"terrain":"bridge","surface":"deck"},"offset":0}},{"id":"elevated-cab","kind":"prop","asset":"scenery/maglev/cab","uid":"jitrin6o","group":"elevated-train","position":[0,0.236111],"placement":{"mode":"surface","receiver":{"terrain":"bridge","surface":"deck"},"offset":0}},{"id":"elevated-coupler","kind":"prop","asset":"scenery/maglev/coupler","uid":"vl3557ab","group":"elevated-train","placement":{"mode":"surface","receiver":{"terrain":"bridge","surface":"deck"},"offset":0}},{"id":"beacon-above-maglev","kind":"prop","asset":"scenery/roofs/landing-beacon-hex","uid":"bm2bbbw3","position":[0.3,0.22],"rotation":0,"scale":0.6,"placement":{"mode":"absolute","level":5},"name":"Independent object at level 5"}]},
-{"at":[3,4],"elevation":0},
-{"at":[4,4],"elevation":2,"terrain":"building:2;bldg_cf:40;bldg_elev:2;bldg_basement_type:1;cliff_top:1:9","appearance":{"building":{"variant":"buildings/saxarba/SMV_Buildings/BuildingSystem-02-Intermediate-02-Medium-1-16"}}},
-{"at":[5,4],"elevation":0},
-{"at":[6,4],"elevation":0},
-{"at":[1,5],"elevation":0},
-{"at":[2,5],"elevation":0},
-{"at":[3,5],"elevation":0},
-{"at":[4,5],"elevation":0,"appearance":{"ground":{"variant":"ground/blend/desert","strength":0.5}}},
-{"at":[5,5],"elevation":0,"decorations":[{"id":"spanning-ground-paint","kind":"decal","asset":"decal/damage/rubble-light-path","name":"One marking across several hexes","position":[-0.2,0.1],"rotation":35,"scale":2.2,"clipToHex":false,"placement":{"mode":"surface","receiver":{"terrain":"ground","surface":"top"},"offset":0}}]},
-{"at":[6,5],"elevation":0},
-{"at":[1,6],"elevation":0},
-{"at":[2,6],"elevation":0},
-{"at":[3,6],"elevation":0},
-{"at":[4,6],"elevation":0},
-{"at":[5,6],"elevation":0},
-{"at":[6,6],"elevation":0}
-]}
+{
+  "format": "megamek-board",
+  "version": 3,
+  "size": {
+    "width": 6,
+    "height": 6
+  },
+  "name": "Native editor composition examples",
+  "description": "A grouped picnic (15 tables, 2 trees) under a level-4 bridge with deck paint; three independently transformed cars and a small tree; level-2 industry below a level-4 maglev train and level-5 beacon; a building design and directional cliff edges.",
+  "sourceHeader": "# Synthetic editor example. SPDX-License-Identifier: GPL-3.0-or-later\n",
+  "tags": [
+    "editor example"
+  ],
+  "notes": [
+    {
+      "at": [
+        2,
+        2
+      ],
+      "text": [
+        "The ground picnic group remains below the bridge. Click selects the group, a second click one table. Paint targets only the deck."
+      ]
+    },
+    {
+      "at": [
+        4,
+        2
+      ],
+      "text": [
+        "Select each car and tree independently. Position, rotate, mirror, or scale it."
+      ]
+    },
+    {
+      "at": [
+        2,
+        4
+      ],
+      "text": [
+        "The maglev train rides a level-4 implicit bridge above the industrial support. The beacon has its own absolute level."
+      ]
+    }
+  ],
+  "hexes": [
+    {
+      "elevation": 0,
+      "at": [
+        1,
+        1
+      ]
+    },
+    {
+      "elevation": 0,
+      "at": [
+        2,
+        1
+      ]
+    },
+    {
+      "elevation": 0,
+      "at": [
+        3,
+        1
+      ]
+    },
+    {
+      "elevation": 0,
+      "at": [
+        4,
+        1
+      ]
+    },
+    {
+      "elevation": 0,
+      "at": [
+        5,
+        1
+      ]
+    },
+    {
+      "elevation": 0,
+      "at": [
+        6,
+        1
+      ]
+    },
+    {
+      "elevation": 0,
+      "at": [
+        1,
+        2
+      ]
+    },
+    {
+      "elevation": 0,
+      "decorations": [
+        {
+          "id": "picnic-1",
+          "kind": "prop",
+          "asset": "scenery/parks/picnic-table",
+          "uid": "8kggqvj4",
+          "group": "picnic-under-bridge",
+          "position": [
+            -0.2738,
+            0.2517
+          ],
+          "scale": 0.65,
+          "placement": {
+            "mode": "surface",
+            "receiver": {
+              "terrain": "ground",
+              "surface": "top"
+            },
+            "offset": 0.0
+          }
+        },
+        {
+          "id": "picnic-2",
+          "kind": "prop",
+          "asset": "scenery/parks/picnic-table",
+          "uid": "8kggqvj4",
+          "group": "picnic-under-bridge",
+          "position": [
+            -0.2079,
+            0.2639
+          ],
+          "scale": 0.65,
+          "placement": {
+            "mode": "surface",
+            "receiver": {
+              "terrain": "ground",
+              "surface": "top"
+            },
+            "offset": 0.0
+          }
+        },
+        {
+          "id": "picnic-3",
+          "kind": "prop",
+          "asset": "scenery/parks/picnic-table",
+          "uid": "8kggqvj4",
+          "group": "picnic-under-bridge",
+          "position": [
+            -0.2143,
+            0.3211
+          ],
+          "scale": 0.65,
+          "placement": {
+            "mode": "surface",
+            "receiver": {
+              "terrain": "ground",
+              "surface": "top"
+            },
+            "offset": 0.0
+          }
+        },
+        {
+          "id": "picnic-4",
+          "kind": "prop",
+          "asset": "scenery/parks/picnic-table",
+          "uid": "8kggqvj4",
+          "group": "picnic-under-bridge",
+          "position": [
+            -0.2143,
+            0.1822
+          ],
+          "scale": 0.65,
+          "placement": {
+            "mode": "surface",
+            "receiver": {
+              "terrain": "ground",
+              "surface": "top"
+            },
+            "offset": 0.0
+          }
+        },
+        {
+          "id": "picnic-5",
+          "kind": "prop",
+          "asset": "scenery/parks/picnic-table",
+          "uid": "8kggqvj4",
+          "group": "picnic-under-bridge",
+          "position": [
+            -0.1548,
+            0.2517
+          ],
+          "scale": 0.65,
+          "placement": {
+            "mode": "surface",
+            "receiver": {
+              "terrain": "ground",
+              "surface": "top"
+            },
+            "offset": 0.0
+          }
+        },
+        {
+          "id": "picnic-6",
+          "kind": "prop",
+          "asset": "scenery/parks/picnic-table",
+          "uid": "8kggqvj4",
+          "group": "picnic-under-bridge",
+          "position": [
+            0.0833,
+            -0.3317
+          ],
+          "scale": 0.65,
+          "placement": {
+            "mode": "surface",
+            "receiver": {
+              "terrain": "ground",
+              "surface": "top"
+            },
+            "offset": 0.0
+          }
+        },
+        {
+          "id": "picnic-7",
+          "kind": "prop",
+          "asset": "scenery/parks/picnic-table",
+          "uid": "8kggqvj4",
+          "group": "picnic-under-bridge",
+          "position": [
+            0.1493,
+            -0.3194
+          ],
+          "scale": 0.65,
+          "placement": {
+            "mode": "surface",
+            "receiver": {
+              "terrain": "ground",
+              "surface": "top"
+            },
+            "offset": 0.0
+          }
+        },
+        {
+          "id": "picnic-8",
+          "kind": "prop",
+          "asset": "scenery/parks/picnic-table",
+          "uid": "8kggqvj4",
+          "group": "picnic-under-bridge",
+          "position": [
+            0.1429,
+            -0.2622
+          ],
+          "scale": 0.65,
+          "placement": {
+            "mode": "surface",
+            "receiver": {
+              "terrain": "ground",
+              "surface": "top"
+            },
+            "offset": 0.0
+          }
+        },
+        {
+          "id": "picnic-9",
+          "kind": "prop",
+          "asset": "scenery/parks/picnic-table",
+          "uid": "8kggqvj4",
+          "group": "picnic-under-bridge",
+          "position": [
+            0.1429,
+            -0.4011
+          ],
+          "scale": 0.65,
+          "placement": {
+            "mode": "surface",
+            "receiver": {
+              "terrain": "ground",
+              "surface": "top"
+            },
+            "offset": 0.0
+          }
+        },
+        {
+          "id": "picnic-10",
+          "kind": "prop",
+          "asset": "scenery/parks/picnic-table",
+          "uid": "8kggqvj4",
+          "group": "picnic-under-bridge",
+          "position": [
+            0.2024,
+            -0.3317
+          ],
+          "scale": 0.65,
+          "placement": {
+            "mode": "surface",
+            "receiver": {
+              "terrain": "ground",
+              "surface": "top"
+            },
+            "offset": 0.0
+          }
+        },
+        {
+          "id": "picnic-11",
+          "kind": "prop",
+          "asset": "scenery/parks/picnic-table",
+          "uid": "8kggqvj4",
+          "group": "picnic-under-bridge",
+          "position": [
+            0.2143,
+            -0.1233
+          ],
+          "scale": 0.65,
+          "placement": {
+            "mode": "surface",
+            "receiver": {
+              "terrain": "ground",
+              "surface": "top"
+            },
+            "offset": 0.0
+          }
+        },
+        {
+          "id": "picnic-12",
+          "kind": "prop",
+          "asset": "scenery/parks/picnic-table",
+          "uid": "8kggqvj4",
+          "group": "picnic-under-bridge",
+          "position": [
+            0.2802,
+            -0.1111
+          ],
+          "scale": 0.65,
+          "placement": {
+            "mode": "surface",
+            "receiver": {
+              "terrain": "ground",
+              "surface": "top"
+            },
+            "offset": 0.0
+          }
+        },
+        {
+          "id": "picnic-13",
+          "kind": "prop",
+          "asset": "scenery/parks/picnic-table",
+          "uid": "8kggqvj4",
+          "group": "picnic-under-bridge",
+          "position": [
+            0.2738,
+            -0.0539
+          ],
+          "scale": 0.65,
+          "placement": {
+            "mode": "surface",
+            "receiver": {
+              "terrain": "ground",
+              "surface": "top"
+            },
+            "offset": 0.0
+          }
+        },
+        {
+          "id": "picnic-14",
+          "kind": "prop",
+          "asset": "scenery/parks/picnic-table",
+          "uid": "8kggqvj4",
+          "group": "picnic-under-bridge",
+          "position": [
+            0.2738,
+            -0.1928
+          ],
+          "scale": 0.65,
+          "placement": {
+            "mode": "surface",
+            "receiver": {
+              "terrain": "ground",
+              "surface": "top"
+            },
+            "offset": 0.0
+          }
+        },
+        {
+          "id": "picnic-15",
+          "kind": "prop",
+          "asset": "scenery/parks/picnic-table",
+          "uid": "8kggqvj4",
+          "group": "picnic-under-bridge",
+          "position": [
+            0.3333,
+            -0.1233
+          ],
+          "scale": 0.65,
+          "placement": {
+            "mode": "surface",
+            "receiver": {
+              "terrain": "ground",
+              "surface": "top"
+            },
+            "offset": 0.0
+          }
+        },
+        {
+          "id": "picnic-16",
+          "kind": "prop",
+          "asset": "vegetation/tree-broad",
+          "uid": "itf5fe2m",
+          "group": "picnic-under-bridge",
+          "position": [
+            -0.1988,
+            -0.0862
+          ],
+          "scale": 0.333333,
+          "placement": {
+            "mode": "surface",
+            "receiver": {
+              "terrain": "ground",
+              "surface": "top"
+            },
+            "offset": 0.0
+          }
+        },
+        {
+          "id": "picnic-17",
+          "kind": "prop",
+          "asset": "vegetation/birch",
+          "uid": "qw67crlm",
+          "group": "picnic-under-bridge",
+          "position": [
+            0.0245,
+            0.3346
+          ],
+          "rotation": 98.0,
+          "scale": 0.333333,
+          "placement": {
+            "mode": "surface",
+            "receiver": {
+              "terrain": "ground",
+              "surface": "top"
+            },
+            "offset": 0.0
+          }
+        },
+        {
+          "id": "bridge-marking",
+          "kind": "decal",
+          "asset": "decal/emblems/red-cross",
+          "scale": 0.263,
+          "clipToHex": true,
+          "placement": {
+            "mode": "surface",
+            "receiver": {
+              "terrain": "bridge",
+              "surface": "deck"
+            },
+            "offset": 0.0
+          }
+        }
+      ],
+      "at": [
+        2,
+        2
+      ],
+      "components": {
+        "bridge": {
+          "type": "light",
+          "connections": [
+            "n",
+            "s"
+          ],
+          "cf": 40,
+          "height": 4
+        }
+      }
+    },
+    {
+      "elevation": 0,
+      "at": [
+        3,
+        2
+      ]
+    },
+    {
+      "elevation": 0,
+      "decorations": [
+        {
+          "id": "red-car",
+          "kind": "prop",
+          "asset": "scenery/vehicles/car",
+          "uid": "6m788287",
+          "position": [
+            -0.24,
+            0.15
+          ],
+          "rotation": 20.0,
+          "scale": 0.8,
+          "placement": {
+            "mode": "surface",
+            "receiver": {
+              "terrain": "ground",
+              "surface": "top"
+            },
+            "offset": 0.0
+          }
+        },
+        {
+          "id": "silver-car",
+          "kind": "prop",
+          "asset": "scenery/vehicles/car",
+          "uid": "6m788287",
+          "position": [
+            0.0,
+            -0.08
+          ],
+          "rotation": 85.0,
+          "scale": 0.7,
+          "colours": [
+            "#b8b8b8"
+          ],
+          "placement": {
+            "mode": "surface",
+            "receiver": {
+              "terrain": "ground",
+              "surface": "top"
+            },
+            "offset": 0.0
+          }
+        },
+        {
+          "id": "green-car",
+          "kind": "prop",
+          "asset": "scenery/vehicles/car",
+          "uid": "6m788287",
+          "position": [
+            0.24,
+            0.13
+          ],
+          "rotation": 150.0,
+          "scale": 0.8,
+          "colours": [
+            "#14ab1a"
+          ],
+          "placement": {
+            "mode": "surface",
+            "receiver": {
+              "terrain": "ground",
+              "surface": "top"
+            },
+            "offset": 0.0
+          }
+        },
+        {
+          "id": "small-tree",
+          "kind": "prop",
+          "asset": "vegetation/birch-young",
+          "uid": "nz7lkr4p",
+          "position": [
+            0.26,
+            -0.27
+          ],
+          "rotation": 10.0,
+          "scale": 0.35,
+          "placement": {
+            "mode": "surface",
+            "receiver": {
+              "terrain": "ground",
+              "surface": "top"
+            },
+            "offset": 0.0
+          }
+        }
+      ],
+      "at": [
+        4,
+        2
+      ],
+      "components": {
+        "pavement": {
+          "level": 1,
+          "connections": []
+        }
+      }
+    },
+    {
+      "elevation": 0,
+      "at": [
+        5,
+        2
+      ],
+      "components": {
+        "road": {
+          "type": "gravel",
+          "connections": [
+            "n",
+            "s"
+          ],
+          "appearance": {
+            "variant": "road/rounded",
+            "material": "gravel"
+          }
+        }
+      }
+    },
+    {
+      "elevation": 0,
+      "at": [
+        6,
+        2
+      ]
+    },
+    {
+      "elevation": 0,
+      "at": [
+        1,
+        3
+      ]
+    },
+    {
+      "elevation": 0,
+      "at": [
+        2,
+        3
+      ]
+    },
+    {
+      "elevation": 0,
+      "at": [
+        3,
+        3
+      ]
+    },
+    {
+      "elevation": 0,
+      "at": [
+        4,
+        3
+      ]
+    },
+    {
+      "elevation": 0,
+      "at": [
+        5,
+        3
+      ]
+    },
+    {
+      "elevation": 0,
+      "at": [
+        6,
+        3
+      ]
+    },
+    {
+      "elevation": 0,
+      "at": [
+        1,
+        4
+      ]
+    },
+    {
+      "elevation": 0,
+      "decorations": [
+        {
+          "id": "elevated-wagon",
+          "kind": "prop",
+          "asset": "scenery/maglev/wagon",
+          "uid": "0zuqc9cs",
+          "group": "elevated-train",
+          "position": [
+            0.0,
+            -0.236111
+          ],
+          "placement": {
+            "mode": "surface",
+            "receiver": {
+              "terrain": "bridge",
+              "surface": "deck"
+            },
+            "offset": 0.0
+          }
+        },
+        {
+          "id": "elevated-cab",
+          "kind": "prop",
+          "asset": "scenery/maglev/cab",
+          "uid": "jitrin6o",
+          "group": "elevated-train",
+          "position": [
+            0.0,
+            0.236111
+          ],
+          "placement": {
+            "mode": "surface",
+            "receiver": {
+              "terrain": "bridge",
+              "surface": "deck"
+            },
+            "offset": 0.0
+          }
+        },
+        {
+          "id": "elevated-coupler",
+          "kind": "prop",
+          "asset": "scenery/maglev/coupler",
+          "uid": "vl3557ab",
+          "group": "elevated-train",
+          "placement": {
+            "mode": "surface",
+            "receiver": {
+              "terrain": "bridge",
+              "surface": "deck"
+            },
+            "offset": 0.0
+          }
+        },
+        {
+          "id": "beacon-above-maglev",
+          "kind": "prop",
+          "asset": "scenery/roofs/landing-beacon-hex",
+          "uid": "bm2bbbw3",
+          "name": "Independent object at level 5",
+          "position": [
+            0.3,
+            0.22
+          ],
+          "scale": 0.6,
+          "placement": {
+            "mode": "absolute",
+            "level": 5.0
+          }
+        }
+      ],
+      "at": [
+        2,
+        4
+      ],
+      "components": {
+        "bridge": {
+          "type": "hardened",
+          "connections": [
+            "n",
+            "s"
+          ],
+          "cf": 650,
+          "height": 4,
+          "appearance": {
+            "variant": "bridge/implicit"
+          }
+        },
+        "bridgeRail": {
+          "type": "maglev",
+          "connections": [
+            "n",
+            "s"
+          ]
+        },
+        "pavement": {
+          "level": 1,
+          "connections": []
+        },
+        "industry": {
+          "height": 2
+        }
+      }
+    },
+    {
+      "elevation": 0,
+      "at": [
+        3,
+        4
+      ]
+    },
+    {
+      "elevation": 2,
+      "at": [
+        4,
+        4
+      ],
+      "components": {
+        "building": {
+          "type": "building",
+          "weight": "medium",
+          "connections": [],
+          "cf": 40,
+          "height": 2,
+          "basement": "none"
+        },
+        "cliff": {
+          "level": 1,
+          "connections": [
+            "n",
+            "s"
+          ]
+        }
+      }
+    },
+    {
+      "elevation": 0,
+      "at": [
+        5,
+        4
+      ]
+    },
+    {
+      "elevation": 0,
+      "at": [
+        6,
+        4
+      ]
+    },
+    {
+      "elevation": 0,
+      "at": [
+        1,
+        5
+      ]
+    },
+    {
+      "elevation": 0,
+      "at": [
+        2,
+        5
+      ]
+    },
+    {
+      "elevation": 0,
+      "at": [
+        3,
+        5
+      ]
+    },
+    {
+      "elevation": 0,
+      "at": [
+        4,
+        5
+      ],
+      "components": {
+        "ground": {
+          "appearance": {
+            "variant": "ground/blend/desert",
+            "strength": 0.5
+          }
+        }
+      }
+    },
+    {
+      "elevation": 0,
+      "decorations": [
+        {
+          "id": "spanning-ground-paint",
+          "kind": "decal",
+          "asset": "decal/damage/rubble-light-path",
+          "name": "One marking across several hexes",
+          "position": [
+            -0.2,
+            0.1
+          ],
+          "rotation": 35.0,
+          "scale": 2.2,
+          "clipToHex": false,
+          "placement": {
+            "mode": "surface",
+            "receiver": {
+              "terrain": "ground",
+              "surface": "top"
+            },
+            "offset": 0.0
+          }
+        }
+      ],
+      "at": [
+        5,
+        5
+      ]
+    },
+    {
+      "elevation": 0,
+      "at": [
+        6,
+        5
+      ]
+    },
+    {
+      "elevation": 0,
+      "at": [
+        1,
+        6
+      ]
+    },
+    {
+      "elevation": 0,
+      "at": [
+        2,
+        6
+      ]
+    },
+    {
+      "elevation": 0,
+      "at": [
+        3,
+        6
+      ]
+    },
+    {
+      "elevation": 0,
+      "at": [
+        4,
+        6
+      ]
+    },
+    {
+      "elevation": 0,
+      "at": [
+        5,
+        6
+      ]
+    },
+    {
+      "elevation": 0,
+      "at": [
+        6,
+        6
+      ]
+    }
+  ]
+}

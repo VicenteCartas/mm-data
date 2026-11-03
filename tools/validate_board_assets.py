@@ -9,9 +9,8 @@ ROOT = Path(__file__).resolve().parents[1]
 BOARD = ROOT / 'data/models/board'
 # The board models' budgets, levels and sources: tool data, never shipped.
 MANIFESTS = ROOT / 'tools/board-models'
-buildings = json.loads((MANIFESTS / 'building-manifest.json').read_text())
 features = json.loads((MANIFESTS / 'manifest.json').read_text())
-catalog = dict(features, **buildings)
+catalog = dict(features)
 
 lods = {}
 for asset, entry in features.items():
@@ -23,6 +22,8 @@ for asset, entry in features.items():
         # The alien plants (Mars corals, fungal colonies) may use twice the near budgets.
         if asset.startswith('vegetation/orchard-'):
             budgets = (34000, 10000, 3200, 12)
+        elif asset.startswith('vegetation/cactus'):
+            budgets = (3600, 950, 420, 12)
         elif asset.startswith('vegetation/tree-dead'):
             budgets = (12000, 1800, 180, 12)
         elif entry.get('source') == 'tools/board-models/foliage/build_forest.py':
@@ -50,9 +51,7 @@ for asset in catalog:
         path = BOARD / (asset + '.glb')
         model = read_glb(path)
     heights = [z for mesh in model['meshes'] for z in mesh['vertices'][2::12]]
-    if asset in buildings:
-        assert min(heights) == 0 and max(heights) == 18, f'One-level building: {path}'
-    elif asset.startswith(('foliage-', 'orchard-')):
+    if asset.startswith(('foliage-', 'orchard-')):
         plant = asset.rsplit('-lod', 1)[0]
         assert abs(min(heights)) < 1e-5, f'Floating plant root: {path}'
         if level == 0:
@@ -71,11 +70,6 @@ for asset in catalog:
             assert len(indices) % 3 == 0, path
             assert all(0 <= index < len(vertices) // 12 for index in indices), path
             triangles += len(indices) // 3
-            if part['id'] == 'roof' and asset in buildings:
-                for offset in range(0, len(indices), 3):
-                    a, b, c = [vertices[index * 12:index * 12 + 3] for index in indices[offset:offset + 3]]
-                    normal_z = (b[0]-a[0])*(c[1]-a[1])-(b[1]-a[1])*(c[0]-a[0])
-                    assert normal_z > 0, f'Roof winding: {path}'
     # Plant levels keep their own budgets (above); every other model stays within 500 triangles.
     assert 0 < triangles and (asset in lods or triangles <= 500), (path, triangles)
     assert triangles == catalog[asset]['triangles'], (asset, path)
@@ -88,12 +82,6 @@ for asset in catalog:
             dependency = (path.parent / texture['filename']).resolve()
             assert dependency.is_relative_to(BOARD.resolve()), dependency
             assert dependency.is_file(), dependency
-    if asset in buildings:
-        facade = buildings[asset]['wall_texture']
-        wall = next(material for material in model['materials'] if material['id'] != 'roof')
-        assert (path.parent / wall['textures'][0]['filename']).resolve() == (BOARD / facade).resolve(), path
-        assert Image.open(BOARD / facade).size == (128, 128), path
-        assert (wall['id'] == 'shell') == buildings[asset]['full_height_facade'], path
 
-print(json.dumps({'buildings': len(buildings), 'features': len(features), 'plant_lods': len(lods),
+print(json.dumps({'features': len(features), 'plant_lods': len(lods),
                   'max_triangles': maximum}))

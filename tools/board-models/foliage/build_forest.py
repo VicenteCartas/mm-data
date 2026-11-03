@@ -31,7 +31,9 @@ TINTS = {'tree': (.89, .97, .85), 'tree-broad': (.84, .94, .79), 'tree-slender':
          'tree-volcano-crown': (.96, .90, .84), 'tree-volcano-forked': (.93, .88, .86),
          'tree-volcano-spire': (.98, .94, .89), 'willow': (.91, .97, .82), 'willow-broad': (.87, .95, .79),
          'birch': (.94, .99, .84), 'birch-tall': (.92, .99, .85), 'birch-young': (.95, 1, .86),
-         'birch-spreading': (.92, .98, .81)}
+         'birch-spreading': (.92, .98, .81), 'birch-mature': (.93, .98, .83),
+         'birch-forked': (.91, .98, .82), 'willow-arching': (.89, .96, .81),
+         'tree-volcano-upright': (.96, .91, .86), 'tree-volcano-spreading': (.94, .89, .85)}
 
 
 def surface(name):
@@ -46,7 +48,10 @@ def surface(name):
 def crown_order(polygons):
     """Nested farthest-point samples retain the same crown extremities at every distance."""
     points = np.array([p.center[:] for p in polygons])
-    chosen = list(dict.fromkeys(int(func(points[:, a])) for a in range(3) for func in (np.argmin, np.argmax)))
+    mesh = polygons[0].id_data
+    # Preserve the actual tip-bearing sprays, not just the sprays with the outermost centres.
+    chosen = list(dict.fromkeys(func(range(len(polygons)), key=lambda i: func(
+        mesh.vertices[v].co[a] for v in polygons[i].vertices)) for a in range(3) for func in (min, max)))
     distances = np.min(np.sum((points[:, None] - points[chosen]) ** 2, axis=2), axis=1)
     distances[chosen] = -1
     while len(chosen) < min(len(points), 3000):
@@ -227,10 +232,12 @@ def build(board=BOARD, names=None, source=SOURCE):
             leaves = next(o.data for o in scene.objects if o.type == 'MESH')
             paths, order = branch_paths(tree), crown_order(leaves.polygons)
             levels = {i:model(scene,i,paths,order) for i in range(3)}
-            old = read_glb(BOARD/f'vegetation/{name}.glb',3)
-            old['materials'] = [m for m in old['materials'] if m['id']=='impostor']
-            old['materials'][0]['alphaTest'] = .35 if 'volcano' in name else .2
-            levels[3] = old
+            existing = BOARD/f'vegetation/{name}.glb'
+            if existing.exists():
+                old = read_glb(existing,3)
+                old['materials'] = [m for m in old['materials'] if m['id']=='impostor']
+                old['materials'][0]['alphaTest'] = .35 if 'volcano' in name else .2
+                levels[3] = old
             path = Path(board)/f'vegetation/{name}.glb'
             path.parent.mkdir(parents=True,exist_ok=True)
             write_glb(path,levels=levels)
@@ -283,7 +290,11 @@ def build(board=BOARD, names=None, source=SOURCE):
 
 if __name__=='__main__':
     arguments=sys.argv[sys.argv.index('--')+1:] if '--' in sys.argv else []
-    board=BOARD
-    if arguments[:1]==['--out']:
-        board,arguments=Path(arguments[1]),arguments[2:]
-    build(board,set(arguments))
+    board, source = BOARD, SOURCE
+    while arguments and arguments[0] in ('--out', '--source'):
+        if arguments[0] == '--out':
+            board = Path(arguments[1])
+        else:
+            source = Path(arguments[1])
+        arguments = arguments[2:]
+    build(board, set(arguments), source)

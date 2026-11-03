@@ -342,6 +342,9 @@ def impostor(scene, model, name, images):
                ((low[0], low[1], cap), (high[0], low[1], cap), (high[0], high[1], cap), (low[0], high[1], cap)))
     for panel, (quad, turn, (size, centre)) in enumerate(zip(corners, FACES, panels)):
         rotation = turn.to_matrix()
+        positions = numpy.asarray(model['meshes'][0]['vertices']).reshape(-1, 12)[:, :3]
+        projected_z = positions @ numpy.asarray(rotation)[2]
+        bottom, top = float(projected_z.min()), float(projected_z.max())
         # Each side is lit like the surfaces its render shows, by their mean normal: not straight up (a sky-facing
         # card outshines a cactus's walls) and constant across the side (a normal that varied across a flat card
         # would darken the half turned from the light while it stays in view). The back shows the same render
@@ -357,6 +360,10 @@ def impostor(scene, model, name, images):
             for point in quad:
                 # Each corner maps to where the render placed it, in the camera's right and up axes.
                 seen = rotation @ Vector(point)
+                if panel < 2:
+                    # Fit the actual tilted silhouette to the card, not the empty corners of its bounding box.
+                    # This preserves the whole crown and keeps its visible roots at the foot of the card.
+                    seen.z = bottom + (point[2] - low[2]) / (high[2] - low[2]) * (top - bottom)
                 u = (panel + .5 + (seen.x - centre.x) / size) / 3
                 v = .5 - (seen.z - centre.z) / size
                 vertices.extend(round(value, 6) for value in (*point, *normal, sunlit, hard, 1, 1, u, v))

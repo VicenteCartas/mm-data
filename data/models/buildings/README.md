@@ -2,10 +2,10 @@
 
 Store a modelled kit as `<family>/<name>.glb`, for example `fuel_tanks/fuel_tank_light.glb`, and a generated kit as
 `<family>/<name>.json` beside its pieces, `<name>-pieces.glb`, for example `fortress_light/fortress_light_a.json`.
-Do not nest this catalog under the source tileset's `saxarba` directory. The selected tileset artwork remains
-the key for legacy fallback under `models/board/buildings`. A kit named for the design without the tileset's exit
-suffix, for example `fuel_tanks/fuel_tank_light.glb`, stands for every `fuel_tank_light_NN` key: its connection
-pieces follow the hex's exits. An exact `<name>_NN.glb` takes precedence.
+Do not nest this catalog under the source tileset's `saxarba` directory. Generic buildings select the kit by
+gameplay weight and class, including when imported from a legacy `.board`. Old roof artwork is no longer a
+3D design. Fuel-tank tileset keys such as `fuel_tank_light_NN` still resolve the shared
+`fuel_tanks/fuel_tank_light.glb`; the kit follows the hex's connections.
 
 Each file contains one building: an identity `<name>-lod0` group and, normally, optional `<name>-lod1`.
 Author no more than two levels for this work; simple kits (especially under 200 triangles) can use just `lod0`.
@@ -24,7 +24,38 @@ the full roof projection intersected with the selected modules' closed mid-store
 interior floors and struts (a storey whose walls close nothing, a hex open towards connected neighbours, keeps the
 roof projection). Keep notches and courtyards in those surfaces.
 
+## Editor palette and legacy import
+
+**Buildings**, **Fortresses**, **Hangars** and **Gun Emplacements** each expose Light, Medium, Heavy and
+Hardened directly. **Walls** has Civilian, Light, Medium, Heavy, Hardened and Castle Brian. **Looks** holds
+Lunar habitat, Glass dome and Biodome; **Specials** holds authored buildings; **Utilities** holds elevators.
+All sixteen building class/weight combinations have kits, including the diagnostic placeholders described below.
+
+Legacy `.board` import preserves a building's weight, class, height and construction factor while discarding
+its old roof-art choice. Lunar buildings use the current lunar looks; the old Mars/volcano sealed look becomes
+Glass dome. The seven retired DropShip selectors (`building:4:69` through `building:4:75`) are omitted entirely,
+including their building rule state. Ground elevation, pavement and other terrain remain.
+The removed legacy GLBs and artwork galleries are not required by this conversion.
+
 ## Connected kits
+
+Generic buildings select a modular kit by gameplay weight and class even with no connections; single-hex artwork is
+an explicit look. An isolated building can pivot about Z in the editor. Any incoming or outgoing building connection
+disables the pivot. A core-only authored GLB (base/floor/roof nodes without side tags) switches to the generic modular
+kit for that building's weight/class when connected. The editor keeps this change in the connection's undo step.
+The authored example `debug/debug-authored.glb` appears under **Specials** and follows this same contract.
+
+Building appearance stores a tint in colour slot 0, using the editor's existing colour picker. White restores the
+original artwork; another colour multiplies its surfaces in linear light. This is a whole-building tint, including
+roofs, and does not require recolour masks in existing kits. Connected hexes share the chosen tint. `.board2` version
+3 stores rotation, tint, footprint and kit variant under `components.building.appearance`.
+
+`tools/buildings/debug_placeholders.py` supplies flat diagnostic kits for the missing medium/heavy/hardened buildings
+and fortresses, all hangars, and all gun emplacements. They use the light building's `bays` JSON layout and inexpensive
+box panels: bay indices 0–5 are red, orange, yellow, green, cyan and violet; alternate base/floor modules are lighter.
+Roofs are yellow and floor/sidewalk slabs grey. These are placeholders, not weight-specific finished artwork. Each
+family has its own JSON and pieces GLB so artists can replace it independently. The script preserves existing asset
+UIDs, and registers new kit IDs once. It leaves the original light building, light fortress and lunar habitat intact.
 
 Buildings and fuel tanks connect across the hexsides their exits name. A neighbour of the same structure (building or
 fuel tank) that connects back and stands lower ends the connection at its top. A kit that changes shape with its
@@ -117,6 +148,12 @@ turned by the runtime.
   and is stretched to the storey (18 high); a pier top likewise on the roof, stretched to the parapet (or eave) and .6
   over it; a footing likewise on the ground, as modelled; a hatch or vent on the roof surface at its centre, as
   modelled.
+
+Isolated generated kits use a compact square for Square and an inset hex for Angled, with facade details and curbs
+contained inside the hex. Optional editor padding shrinks isolated buildings horizontally; connected pieces retain
+their full joining reach. Bay and habitat kits share solid inward wall backing, closed exposed wall ends and roof
+slabs. Bay specs may supply `wallInsets` per LOD when their facade skins sit behind the nominal wall line (default 0). Generated interior floors are solid slabs below their gameplay standing height, including authored multi-hex
+buildings. No-floors and sealed buildings omit intermediate floor surfaces from drawing and picking.
 
 Every surface is a board material (`structures/buildings/`, `structures/lunar/`, Material Maker projects in
 `tools/materials/structures/`): the hand-made art's atlases as image projects, the roofs, floors and sidewalks
