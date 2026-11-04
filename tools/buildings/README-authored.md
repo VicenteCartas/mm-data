@@ -10,7 +10,10 @@ at different heights. Do not use base/floor/roof module names for this form.
 
 Start from [debug_authored.py](debug_authored.py): a small, hollow building covering two hexes, with two- and
 four-level sections. [hpg_headquarters.py](hpg_headquarters.py) is a larger fixed example with decorative machinery.
-[civic_buildings.py](civic_buildings.py) builds the two-hex church and the oval arena with an open center.
+[civic_buildings.py](civic_buildings.py) builds the brutalist `frontier-church` and `civic-arena`, with an open arena
+center. The earlier designs remain separate catalog assets: `classic-church` and `neo-futurist-arena`.
+[civic_citadel.py](civic_citadel.py) builds a 14-level tower with a lower podium and annexes. Its glazed shoulder
+bays are decorative exterior geometry; the closed helpers define the occupied floors.
 
 ## Building with repeated floors
 
@@ -48,6 +51,11 @@ Use the shared `role` field and `export_model()` in [authored_examples.py](autho
 - **Tint:** mark only intended walls and panels. The example exporter reads `obj['building_paint'] = True` and writes
   material extras `mmBuildingPaint: true`. Windows, machinery and other fixed finishes use separate, unmarked
   materials. For a mixed atlas, also use `mmPaintMask: true`, with albedo alpha storing paint coverage, not opacity.
+- **Lights:** set `obj['building_emission'] = (r, g, b)` on separate lamp/display surfaces, using display-space RGB
+  values in 0..1. Keep them outside tint regions. Shared window emission maps are exported with their material.
+  For windows that illuminate after dusk, use `emissive(obj, colour, night=True)` or also set
+  `obj['building_night_emission'] = True`. The exporter writes `mmNightEmission: true`; the game fades that
+  emission with daylight while preserving the unlit glass colour. Ordinary lights remain independent.
 - **LOD:** optional roots are `<name>-lod0`, `<name>-lod1`, etc., with identity transforms; an ungrouped model also works.
   Keep module names, placement, material finishes and tint regions consistent between LODs. Export helpers once,
   outside the visible LOD roots. Stay within 65,535 visible vertices per LOD, including duplicated double-sided faces.

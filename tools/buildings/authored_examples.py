@@ -84,6 +84,28 @@ def finish(obj, key, colour, detail=False, helper=False):
     return obj
 
 
+def emissive(obj, colour, night=False):
+    """Separate untintable lamp colour, shared by the live preview and GLB exporter."""
+    assert not obj.get('building_paint', False), 'Lamp surfaces must not inherit building tint'
+    colour = tuple(colour)
+    obj['building_emission'] = colour
+    obj['building_night_emission'] = night
+    key = obj['board_material'], tuple(obj['pigment']), colour, night
+    if key not in materials:
+        mat = material(key[0], key[1]).copy()
+        mat.name += ' lamp'
+        factor = tuple(linear(c) for c in colour)
+        mat['_mm_model_emission'] = True
+        mat['_mm_emission_factor'] = factor
+        mat['_mm_night_emission'] = night
+        bsdf = mat.node_tree.nodes.get('Principled BSDF')
+        bsdf.inputs['Emission Color'].default_value = (*factor, 1)
+        bsdf.inputs['Emission Strength'].default_value = 0 if night else 1
+        materials[key] = mat
+    obj.data.materials[0] = materials[key]
+    return obj
+
+
 def box(name, center, size, key=PAINT, colour=CREAM, bevel=.35, detail=False, helper=False):
     bpy.ops.mesh.primitive_cube_add(size=1, location=center)
     obj = bpy.context.object
@@ -230,6 +252,11 @@ def project_uvs(obj):
             uv.data[li].uv = (co.y/18, co.z/18) if axis == 0 else (co.x/18, co.z/18) if axis == 1 else (co.x/18, co.y/18)
 
 
+def material_id(key, paint, emission, night=False):
+    suffix = '#emission-' + '-'.join(format(c, '.6g') for c in emission) if any(emission) else ''
+    return key + ('#paint' if paint else '') + suffix + ('#night' if night else '')
+
+
 def export_model(items, label, low=False, helper=False):
     depsgraph = bpy.context.evaluated_depsgraph_get()
     groups = {}
@@ -251,7 +278,9 @@ def export_model(items, label, low=False, helper=False):
             mesh.calc_loop_triangles()
             matrix = obj.matrix_world
             normal_matrix = matrix.to_3x3().inverted().transposed()
-            key = (obj['board_material'], bool(obj.get('building_paint', False)) and not helper)
+            emission = tuple(obj.get('building_emission', (0, 0, 0))) if not helper else (0, 0, 0)
+            night = bool(obj.get('building_night_emission', False)) and not helper
+            key = (obj['board_material'], bool(obj.get('building_paint', False)) and not helper, emission, night)
             colour = list(obj['pigment'])
             used.add(key)
             indices = parts.setdefault(key, [])
@@ -276,20 +305,26 @@ def export_model(items, label, low=False, helper=False):
         for i, (key, indices) in enumerate(parts.items()):
             part = name+'-'+str(i)
             mesh_parts.append({'id':part, 'type':'TRIANGLES', 'indices':indices})
-            node_parts.append({'meshpartid':part, 'materialid':key[0] + ('#paint' if key[1] else '')})
+            node_parts.append({'meshpartid':part, 'materialid':material_id(*key)})
         meshes.append({'attributes':['POSITION','NORMAL','COLOR','TEXCOORD0'], 'vertices':vertices, 'parts':mesh_parts})
         nodes.append({'id':name, 'parts':node_parts})
     mats = []
-    for key, paint in sorted(used):
+    for key, paint, emission, night in sorted(used):
         # All sliced and unsliced views use exactly the same shared board finishes.
         path = TEXTURES/(key+'.tres')
         import re
         albedo = re.search(r'path="([^"]+)"', path.read_text()).group(1)
         filename = '../../board/textures/'+str((Path(key).parent/albedo).as_posix())
-        mat = {'id':key + ('#paint' if paint else ''), 'diffuse':[1,1,1], 'roughness':.7, 'metallic':.1,
+        mat = {'id':material_id(key, paint, emission, night), 'diffuse':[1,1,1], 'roughness':.7, 'metallic':.1,
                'textures':[{'type':'DIFFUSE','filename':filename}]}
+        if any(emission):
+            assert not paint, 'Lamp surfaces must not inherit building tint'
+            mat['emissive'] = list(emission)
         if paint:
             mat['extras'] = {'mmBuildingPaint': True}
+        if night:
+            assert any(emission), 'Night emission needs an emissive colour'
+            mat.setdefault('extras', {})['mmNightEmission'] = True
         if key != FLAT:
             spec = read_material(path, TEXTURES)
             mat.update(roughness=spec['roughness'], metallic=spec['metallic'])
@@ -297,12 +332,21 @@ def export_model(items, label, low=False, helper=False):
                 if image:
                     mat['textures'].append({'type':kind, 'filename':'../../board/textures/'+image.relative_to(TEXTURES).as_posix()})
             # Managed finishes store glTF's G=roughness/B=metallic ORM layout.
-            if spec['roughness_map'] and (spec['roughness_map'] == spec['metallic_map'] or key == 'structures/common/steel'):
+            if spec['roughness_map'] and (spec['roughness_map'] == spec['metallic_map']
+                                         or key == 'structures/common/steel'
+                                         or (spec['metallic'] == 0 and spec['metallic_map'] is None
+                                             and spec['roughness_channel'] == 1)):
                 # Steel's ORM has B=1 throughout; its constant metallic factor
                 # therefore survives reuse of the existing roughness-only map.
+                # For nonmetallic finishes, factor0 makes B immaterial; retain G.
                 assert spec['roughness_channel'] == 1
                 assert spec['metallic_map'] is None or spec['metallic_channel'] == 2
                 mat['textures'].append({'type':'METALLIC_ROUGHNESS', 'filename':'../../board/textures/'+spec['roughness_map'].relative_to(TEXTURES).as_posix()})
+            if spec['emission'] and not any(emission):
+                # Shared window maps already isolate illuminated pixels.
+                mat['emissive'] = [1, 1, 1]
+                mat['textures'].append({'type':'EMISSIVE',
+                    'filename':'../../board/textures/'+spec['emission'].relative_to(TEXTURES).as_posix()})
         mats.append(mat)
     return {'meshes':meshes, 'nodes':nodes, 'materials':mats}
 

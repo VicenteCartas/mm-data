@@ -104,12 +104,17 @@ def write_glb(path, model=None, *, levels=None, groups=None, extras=None, linear
                 document['materials'][-1].update(alphaMode='MASK', alphaCutoff=material['alphaTest'])
             if material.get('extras'):
                 document['materials'][-1]['extras'] = material['extras']
+            if 'emissive' in material:
+                emission = material['emissive']
+                if len(emission) != 3 or any(not math.isfinite(c) or not 0 <= c <= 1 for c in emission):
+                    raise ValueError('Emissive factors must be three finite values in [0, 1]')
+                document['materials'][-1]['emissiveFactor'] = [c if linear_colors else linear(c) for c in emission]
             textures = material.get('textures', [])
             if len({t['type'] for t in textures}) != len(textures):
                 raise ValueError('Duplicate material texture role')
             for texture in textures:
-                if texture['type'] not in ('DIFFUSE', 'NORMAL', 'AMBIENT', 'METALLIC_ROUGHNESS'):
-                    raise ValueError('Expected diffuse, normal, occlusion or metallic-roughness texture')
+                if texture['type'] not in ('DIFFUSE', 'NORMAL', 'AMBIENT', 'METALLIC_ROUGHNESS', 'EMISSIVE'):
+                    raise ValueError('Expected diffuse, normal, occlusion, metallic-roughness or emissive texture')
                 index = len(document.setdefault('images', []))
                 filename = texture['filename']
                 encoded_image = texture.get('data')
@@ -135,6 +140,8 @@ def write_glb(path, model=None, *, levels=None, groups=None, extras=None, linear
                     document['materials'][-1]['normalTexture'] = {'index': index}
                 elif texture['type'] == 'METALLIC_ROUGHNESS':
                     document['materials'][-1]['pbrMetallicRoughness']['metallicRoughnessTexture'] = {'index': index}
+                elif texture['type'] == 'EMISSIVE':
+                    document['materials'][-1]['emissiveTexture'] = {'index': index}
                 else:
                     document['materials'][-1]['occlusionTexture'] = {'index': index}
 
@@ -332,13 +339,16 @@ def read_glb(path, level=0, *, linear_colors=False):
         factor = pbr.get('baseColorFactor', [1, 1, 1, 1])
         result = {'id': source['name'], 'diffuse': [v if linear_colors else display(v) for v in factor[:3]]}
         result.update(roughness=pbr.get('roughnessFactor', 1), metallic=pbr.get('metallicFactor', 1))
+        if 'emissiveFactor' in source:
+            result['emissive'] = [v if linear_colors else display(v) for v in source['emissiveFactor']]
         if source.get('alphaMode') == 'MASK':
             result['alphaTest'] = source.get('alphaCutoff', .5)
         if source.get('extras'):
             result['extras'] = source['extras']
         for kind, info in (('DIFFUSE', pbr.get('baseColorTexture')), ('NORMAL', source.get('normalTexture')),
                            ('AMBIENT', source.get('occlusionTexture')),
-                           ('METALLIC_ROUGHNESS', pbr.get('metallicRoughnessTexture'))):
+                           ('METALLIC_ROUGHNESS', pbr.get('metallicRoughnessTexture')),
+                           ('EMISSIVE', source.get('emissiveTexture'))):
             if info is None:
                 continue
             if kind == 'NORMAL' and info.get('scale', 1) != 1:

@@ -9,6 +9,29 @@ from glb_geometry import read_glb, write_glb
 
 
 class GlbMaterialsTest(unittest.TestCase):
+    def test_emission_survives_offline_round_trip_without_lighting_adjacent_materials(self):
+        lamp = {'id': 'lamp', 'emissive': [1, .5, .2],
+                'textures': [{'type': 'EMISSIVE', 'filename': 'existing-lamp.png'}]}
+        model = {'nodes': [{'id': 'root'}], 'meshes': [], 'materials': [lamp, {'id': 'wall'}]}
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / 'lamps.glb'
+            write_glb(path, model)
+            loaded = read_glb(path)
+            self.assertEqual('EMISSIVE', loaded['materials'][0]['textures'][0]['type'])
+            for actual, expected in zip(loaded['materials'][0]['emissive'], lamp['emissive']):
+                self.assertAlmostEqual(expected, actual)
+            write_glb(path, loaded)
+            raw = path.read_bytes()
+            doc = json.loads(raw[20:20 + struct.unpack_from('<I', raw, 12)[0]])
+            emission = doc['materials'][0]['emissiveFactor']
+            self.assertAlmostEqual(.214041140482, emission[1])
+            texture = doc['materials'][0]['emissiveTexture']['index']
+            self.assertEqual('existing-lamp.png', doc['images'][doc['textures'][texture]['source']]['uri'])
+            self.assertNotIn('emissiveFactor', doc['materials'][1])
+            self.assertNotIn('emissiveTexture', doc['materials'][1])
+            write_glb(path, read_glb(path, linear_colors=True), linear_colors=True)
+            self.assertEqual(emission, read_glb(path, linear_colors=True)['materials'][0]['emissive'])
+
     def test_display_rgb_is_decoded_once_and_alpha_and_linear_inputs_are_preserved(self):
         rgba = [.02, .5, .8, .37]
         decoded = [.001547987616, .214041140482, .603827338855]
