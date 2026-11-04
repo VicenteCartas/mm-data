@@ -2,6 +2,7 @@
 [ext_resource path="light-far_albedo.png" type="Texture" id=1]
 [ext_resource path="light-far_orm.png" type="Texture" id=2]
 [ext_resource path="light-far_normal.png" type="Texture" id=3]
+[ext_resource path="light-far_emission.png" type="Texture" id=5]
 [resource]
 albedo_color = Color(1.0, 1.0, 1.0, 1.0)
 albedo_texture = ExtResource( 1 )
@@ -17,3 +18,10 @@ normal_texture = ExtResource( 3 )
 ao_enabled = true
 ao_texture = ExtResource( 2 )
 ao_texture_channel = 0
+
+emission_enabled = true
+emission = Color(0, 0, 0, 1)
+emission_energy = 1.0
+emission_operator = 0
+emission_texture = ExtResource( 5 )
+metadata/mmNightEmission = true

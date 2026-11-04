@@ -10,8 +10,8 @@ at different heights. Do not use base/floor/roof module names for this form.
 
 Start from [debug_authored.py](debug_authored.py): a small, hollow building covering two hexes, with two- and
 four-level sections. [hpg_headquarters.py](hpg_headquarters.py) is a larger fixed example with decorative machinery.
-[civic_buildings.py](civic_buildings.py) builds the brutalist `frontier-church` and `civic-arena`, with an open arena
-center. The earlier designs remain separate catalog assets: `classic-church` and `neo-futurist-arena`.
+[civic_buildings.py](civic_buildings.py) builds the brutalist `frontier-church` and `civic-arena`, with an open roof
+above a closed playing court. The earlier designs remain separate catalog assets: `classic-church` and `neo-futurist-arena`.
 [civic_citadel.py](civic_citadel.py) builds a 14-level tower with a lower podium and annexes. Its glazed shoulder
 bays are decorative exterior geometry; the closed helpers define the occupied floors.
 
@@ -56,6 +56,15 @@ Use the shared `role` field and `export_model()` in [authored_examples.py](autho
   For windows that illuminate after dusk, use `emissive(obj, colour, night=True)` or also set
   `obj['building_night_emission'] = True`. The exporter writes `mmNightEmission: true`; the game fades that
   emission with daylight while preserving the unlit glass colour. Ordinary lights remain independent.
+  Shared window materials can instead set `metadata/mmNightEmission = true` in their `.tres`; this also works
+  on generated modular kits and mixed atlases whose emission image contains only the windows. An explicit
+  GLB emission colour overrides that shared window glow. The material exporter preserves this metadata.
+  To illuminate nearby surfaces, fixed buildings may also export root extras `mmNightLights`: a list of
+  `{position: [x,y,z], color: [r,g,b], power: number, size: number}`. Positions use **glTF Y-up** model units;
+  colours are linear RGB. These finite point lights fade with daylight and reach zero at twice `size`.
+  Use a few emitters at real fixtures; they illuminate terrain and models but do not cast obstacle shadows.
+  [civic_night_lighting.py](civic_night_lighting.py) supplies the arenas' fixtures and metadata. Lights follow
+  scaling, clipping and hex ownership, and wait for the final installed position during dragging.
 - **LOD:** optional roots are `<name>-lod0`, `<name>-lod1`, etc., with identity transforms; an ungrouped model also works.
   Keep module names, placement, material finishes and tint regions consistent between LODs. Export helpers once,
   outside the visible LOD roots. Stay within 65,535 visible vertices per LOD, including duplicated double-sided faces.

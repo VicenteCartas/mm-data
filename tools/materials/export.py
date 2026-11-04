@@ -99,6 +99,10 @@ def write_tres(exported, target):
         lines.pop()
     if target.exists():
         old = target.read_bytes().decode('utf-8')
+        # Engine scheduling is resource metadata, independent of Material Maker's PBR graph.
+        for metadata in [line for line in old.splitlines() if line.strip().startswith('metadata/')]:
+            if not any(line.split('=')[0].strip()==metadata.split('=')[0].strip() for line in lines):
+                lines.append(metadata)
         kept = [line.strip() for line in old.splitlines() if line.strip()]
         if len(kept) == len([line for line in lines if line.strip()]) and all(
                 NUMBER.sub('#', a) == NUMBER.sub('#', b.strip()) and all(

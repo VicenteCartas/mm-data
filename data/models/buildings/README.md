@@ -55,6 +55,13 @@ roof slabs and equipment keep their own finishes. Mixed atlases use `mmPaintMask
 Connected hexes share the chosen tint. `.board2` version
 3 stores rotation, tint, footprint and kit variant under `components.building.appearance`.
 
+Window emission uses the same day/night control as authored buildings. Shared window `.tres` resources carry
+`metadata/mmNightEmission = true`; their emission fades out in daylight without changing their albedo. Mixed
+wall/window atlases emit only through their window mask, independently of wall tint. The light building's far
+window mask is baked from the near windows via Blender MCP (`tools/buildings/bake_light_paint_mask.py`), then
+exported with Material Maker (`tools/materials/modular_window_lights.py`). Diagnostic kits without windows
+remain unlit.
+
 `tools/buildings/debug_placeholders.py` supplies flat diagnostic kits for the missing medium/heavy/hardened buildings
 and fortresses, all hangars, and all gun emplacements. They use the light building's `bays` JSON layout and inexpensive
 box panels: bay indices 0–5 are red, orange, yellow, green, cyan and violet; alternate base/floor modules are lighter.
