@@ -3566,5 +3566,89 @@
     "triangles": 1580,
     "vertices": 4740,
     "source": "tools/board-models/crystal/build_crystals.py"
+  },
+  "crystal/single-prism": {
+    "mesh": "crystal/single-prism.glb",
+    "lods": [
+      {
+        "node": "single-prism-lod0",
+        "triangles": 93,
+        "vertices": 279
+      },
+      {
+        "node": "single-prism-lod1",
+        "triangles": 93,
+        "vertices": 279
+      },
+      {
+        "node": "single-prism-lod2",
+        "triangles": 93,
+        "vertices": 279
+      },
+      {
+        "node": "single-prism-lod3",
+        "triangles": 93,
+        "vertices": 279
+      }
+    ],
+    "triangles": 93,
+    "vertices": 279,
+    "source": "tools/board-models/crystal/build_crystals.py"
+  },
+  "crystal/single-pointed": {
+    "mesh": "crystal/single-pointed.glb",
+    "lods": [
+      {
+        "node": "single-pointed-lod0",
+        "triangles": 92,
+        "vertices": 276
+      },
+      {
+        "node": "single-pointed-lod1",
+        "triangles": 92,
+        "vertices": 276
+      },
+      {
+        "node": "single-pointed-lod2",
+        "triangles": 92,
+        "vertices": 276
+      },
+      {
+        "node": "single-pointed-lod3",
+        "triangles": 92,
+        "vertices": 276
+      }
+    ],
+    "triangles": 92,
+    "vertices": 276,
+    "source": "tools/board-models/crystal/build_crystals.py"
+  },
+  "crystal/single-oblique": {
+    "mesh": "crystal/single-oblique.glb",
+    "lods": [
+      {
+        "node": "single-oblique-lod0",
+        "triangles": 92,
+        "vertices": 276
+      },
+      {
+        "node": "single-oblique-lod1",
+        "triangles": 92,
+        "vertices": 276
+      },
+      {
+        "node": "single-oblique-lod2",
+        "triangles": 92,
+        "vertices": 276
+      },
+      {
+        "node": "single-oblique-lod3",
+        "triangles": 92,
+        "vertices": 276
+      }
+    ],
+    "triangles": 92,
+    "vertices": 276,
+    "source": "tools/board-models/crystal/build_crystals.py"
   }
 }
