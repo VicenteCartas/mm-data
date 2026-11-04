@@ -28,6 +28,10 @@ test('LOD counts use referenced vertices, separate helpers, and count repeated d
     accessors: [{ count: 1000 }, { bufferView: 0, count: 3, componentType: 5121 }, { bufferView: 0, byteOffset: 3, count: 3, componentType: 5121 }], bufferViews: [{ buffer: 0, byteLength: 8 }] };
   const rows = summarize(doc, binary, 1234).rows;
   assert.deepEqual(rows.map(r => [r.name, r.vertices, r.triangles, r.primitives, r.materials]), [['LOD 0', 3, 2, 2, 1], ['LOD 1', 3, 1, 1, 1], ['Helpers', 3, 1, 1, 1]]);
+  doc.scenes[0].nodes.push(6);
+  doc.nodes.push({ name: 'building_volumes', children: [7] }, { name: 'building_volume-0', mesh: 1 });
+  const withVolumes = summarize(doc, binary, 1234).rows;
+  assert.deepEqual(withVolumes.map(r => [r.name, r.vertices, r.triangles, r.primitives, r.materials]), [['LOD 0', 3, 2, 2, 1], ['LOD 1', 3, 1, 1, 1], ['Helpers', 6, 2, 2, 2]]);
   doc.nodes[1].children = [0]; assert.throws(() => summarize(doc, binary, 1234), /Cyclic/);
 });
 test('shared materials resolve .tres and their map channels alongside GLB lamps', async () => {

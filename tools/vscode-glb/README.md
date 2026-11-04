@@ -47,8 +47,9 @@ code --install-extension tools/vscode-glb/megamek-glb-viewer.vsix
   floors or rendering passes. An assembled kit's visible triangle/mesh counts
   appear in the header.
 - Display materials, wireframe, clay, normals or UVs; adjust exposure, environment
-  illumination and background. Toggle bloom, model bounds, `cut` geometry and
-  `stand-N`, `vehicle-N`, `hide-N` direction markers.
+  illumination and background. Toggle bloom and model bounds. **Gameplay geometry & markers**
+  shows `cut` geometry, `building_volumes` and `stand-N`, `vehicle-N`, `hide-N` direction markers.
+  These guides are hidden by default and shown as wireframes, separately from the visible model.
 - **Measure two points** reports distance and axis differences in model units.
   **Save PNG** exports the viewport to a location you choose.
 - Click geometry to edit that surface in **Materials**. In **Parts**, click geometry

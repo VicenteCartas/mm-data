@@ -207,6 +207,50 @@ try {
   await page.setViewportSize({ width: 640, height: 720 }); await page.screenshot({ path: path.join(output, 'narrow-viewer.png') });
   assert.equal(await page.locator('body').evaluate(el => el.scrollWidth <= innerWidth), true);
   await page.setViewportSize({ width: 1280, height: 850 });
+  current = 'buildings/authored/hpg-headquarters.glb'; variant = '';
+  const hpgLoads = await page.evaluate(() => window.__MM_TEST__.count);
+  const hpg = await deliver(); await ready(hpgLoads + 1);
+  const volumeCount = hpg.metadata.nodes.filter(node => node.name?.startsWith('building_volume-')).length;
+  assert(volumeCount > 0);
+  assert(hpg.statistics.rows.some(row => row.name === 'Helpers' && row.meshes === volumeCount));
+  const visibleHelpers = () => page.evaluate(() => {
+    const meshes = [];
+    window.__MM_TEST__.stats.scene.traverseVisible(object => { if (object.isMesh && object.userData.mmHelper) meshes.push(object); });
+    return { count: meshes.length, wire: meshes.every(object => object.material.wireframe) };
+  });
+  for (const lod of ['0', '1']) {
+    await page.locator('#lod').selectOption(lod);
+    await page.locator('#helpers').uncheck(); assert.equal((await visibleHelpers()).count, 0);
+    await page.locator('#helpers').check(); assert.deepEqual(await visibleHelpers(), { count: volumeCount, wire: true });
+  }
+  await page.locator('#helpers').uncheck();
+  // Compare the actual exported layered reflector under the same camera and lighting.
+  const dishView = { ...await page.evaluate(() => window.__MM_TEST__.shared), lod: '0', projection: 'ortho',
+    shading: 'pbr', grid: false, helpers: false, bounds: false, wire: false, bloom: false,
+    camera: { position: [-930, 907, 110], target: [-110, 342, 10], span: 390, zoom: 1 } };
+  await page.evaluate(state => window.postMessage({ type: 'linkedView', state }, '*'), dishView);
+  for (const lod of ['0', '1']) {
+    await page.locator('#lod').selectOption(lod);
+    await page.evaluate(() => new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve))));
+    await page.locator('#screenshot').click();
+    const error = await page.evaluate(async lod => {
+      const image = new Image(); image.src = window.__MM_TEST__.screenshot; await image.decode();
+      const canvas = document.createElement('canvas'); canvas.width = image.width; canvas.height = image.height;
+      const context = canvas.getContext('2d'); context.drawImage(image, 0, 0);
+      const values = context.getImageData(0, 0, canvas.width, canvas.height).data;
+      if (lod === '0') { window.__MM_TEST__.dishPixels = values; return 0; }
+      const near = window.__MM_TEST__.dishPixels, radius = canvas.height / 780 * 290;
+      let difference = 0, count = 0;
+      for (let y = 0; y < canvas.height; y++) for (let x = 0; x < canvas.width; x++) {
+        if ((x - canvas.width / 2) ** 2 + (y - canvas.height / 2) ** 2 >= radius ** 2) continue;
+        const i = (y * canvas.width + x) * 4;
+        for (let c = 0; c < 3; c++) difference += Math.abs(values[i + c] - near[i + c]);
+        count += 3;
+      }
+      return difference / count;
+    }, lod);
+    assert(error < 1, `HPG reflector colour/shading changes across LODs: mean RGB error ${error}/255`);
+  }
   const fixture = path.join(output, 'depth-fixture.glb'); await fs.writeFile(fixture, depthFixture());
   const depth = await loadAsset(fixture, await findRoots(fixture));
   editingAsset = structuredClone(depth); editingDocument = new GlbDocument(fixture, await fs.readFile(fixture));

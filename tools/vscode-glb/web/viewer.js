@@ -8,6 +8,7 @@ import { UnrealBloomPass } from 'three/addons/postprocessing/UnrealBloomPass.js'
 import { OutputPass } from 'three/addons/postprocessing/OutputPass.js';
 import { prepareMaterials, materialFactors, materialSampling, modifyGeometry, applyColors, applyLabel } from './materials.js';
 import { displayKeys, viewState } from '../src/view-state.cjs';
+import { isHelperGroup } from '../src/stats.cjs';
 import { materialEditor } from './editor.js';
 
 const api = typeof acquireVsCodeApi === 'function' ? acquireVsCodeApi() : globalThis.__MM_TEST__?.api;
@@ -139,7 +140,7 @@ function disposeAsset() {
 }
 function clearAssembly() { if (assembly) { scene.remove(assembly); assembly = null; } if (gltf) gltf.scene.visible = true; }
 function originalName(object) { const index = gltf?.parser.associations.get(object)?.nodes; return asset?.metadata.nodes?.[index]?.name || object.name; }
-function isHelper(object) { for (let p = object; p && p !== gltf?.scene; p = p.parent) if (['cut', 'stands'].includes(originalName(p))) return true; return false; }
+function isHelper(object) { for (let p = object; p && p !== gltf?.scene; p = p.parent) if (isHelperGroup(originalName(p))) return true; return false; }
 function buildNodes() {
   gltf.scene.updateMatrixWorld(true);
   gltf.scene.traverse(object => {

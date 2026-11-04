@@ -6,20 +6,31 @@ the board. Roof equipment remains manually placed in the 3D editor.
 
 The `PanelFinish` shader contains the editable panel layout, normal relief, roughness and occlusion. `PlateStudy`
 supplies the cladding albedo. Cladding has four bays and two storeys per 36 model units. The procedural roof uses
-flush 4.5-unit metal panels with hairline seams, square X-slotted plates at the four-way joins and a finer, lighter
-grid crossing each panel centre. Broad bevels and dark grout are deliberately absent. Trim is procedural charcoal
-metal, with its own seams and fasteners instead of roof plates.
+flush 18-unit metal panels with hairline seams and square X-slotted plates at the four-way joins. A quieter 4.5-unit
+grid subdivides each panel into four sections per axis. The primary seams and connectors have shallow normal relief;
+the secondary grid is albedo-only. Trim is warm gunmetal with its own seams and fasteners instead of roof plates.
 Pressure windows and inset lights are procedural.
 Runtime maps are capped at 512×512: cladding, deck and trim use 512×512, windows use 256×256,
-and the uniform white/amber light maps use 32×32. These sizes are stored on the graphs' Material nodes.
+and the white/amber light maps use 32×32. These sizes are stored on the graphs' Material nodes.
 Structural borders, pillars and tunnel hoops use the existing palette material `structures/common/matte-steel`,
 with a charcoal vertex tint as in the fortress-wall kits.
 `dome-trim` supplies the lighter inset fittings. `dome-light` is a nonmetallic lens with emission energy 2.8,
 carried through the same model material emission used by the fortress-wall lamps.
-`dome-marker` supplies the larger amber lenses at true external corners (energy 2.2); flat-side and re-entrant
-pillars have white head lenses. Every exposed pillar face has one main fixture near its head and one small white fixture near
-its foot, irrespective of its number of storeys. Foot markers are always white, including external corners. Corner housings follow both adjoining wall faces; exterior columns
-reach ground level. Height-step endpoints are not automatically yellow corners.
+`dome-marker` supplies bounded amber lenses with a pale gold core and darker rim at true external corners
+(energy 1.25); flat-side and re-entrant
+pillars have white head lenses. Flat and inward-corner supports have one main white fixture near their head and one
+small white fixture near their foot; exterior corner supports carry a pair on each exposed face, irrespective of their
+number of storeys. Foot markers are always white, including external corners. Inward housings have a flat front across
+the corner, with the panel and both lights centered on it; their cap and shoe follow the same outline. Exterior housings
+follow both adjoining wall faces and reach ground level. Height-step endpoints are not automatically yellow corners.
+Ring piers exposed to the apron have amber heads; piers above attached lower roofs have white heads, including their
+exposed side returns. Clipped footprint corners share a fitted housing; raised corners retain their original lower
+floor and a full-width ground stem. A shallow fitted collar covers the transition without extra storey lamps.
+Pressure passages and gate hoods share segmented metal skins and bolted hoops. Fitted armor leaves, service plates,
+and small fasteners detail the gate face; a thin fitted sill meets the road at its existing height.
+Their material scale is independent
+of the roof's panel spacing. The facade foundation keeps its original height beneath a two-unit armored skirt and
+neutral framed cladding. Automatic ring pylons and yellow buttress fins have been replaced by the structural piers.
 Roof fastener relief and albedo are coordinated in `PanelFinish` so the fasteners remain visible at board scale.
 
 Export using `tools/materials/export.py structures/lunar/<name>/<name>.ptex`. This exports to a fresh temporary

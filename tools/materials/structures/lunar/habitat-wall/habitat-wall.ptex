@@ -65,6 +65,12 @@
 			"from_port": 0,
 			"to": "Material",
 			"to_port": 3
+		},
+		{
+			"from": "WallPaintMask",
+			"from_port": 0,
+			"to": "Material",
+			"to_port": 7
 		}
 	],
 	"label": "Cast concrete",
@@ -783,10 +789,33 @@
 			},
 			"seed_int": 0,
 			"type": "image"
+		},
+		{
+			"name": "WallPaintMask",
+			"node_position": {
+				"x": 1000.0,
+				"y": 700.0
+			},
+			"parameters": {},
+			"seed": 37796.0,
+			"shader_model": {
+				"code": "",
+				"global": "",
+				"inputs": [],
+				"name": "Wall panels only (exclude glazing, frames and seam)",
+				"outputs": [
+					{
+						"f": "(step(99.0, mod($uv.y*512.0,256.0))*step(mod($uv.y*512.0,256.0),251.0)) * (step(22.0,$uv.x*512.0)*step($uv.x*512.0,164.0)+step(190.0,$uv.x*512.0)*step($uv.x*512.0,335.0)+step(362.0,$uv.x*512.0)*step($uv.x*512.0,504.0))",
+						"type": "f"
+					}
+				],
+				"parameters": []
+			},
+			"type": "shader"
 		}
 	],
 	"parameters": {},
-	"project_thumbnail": "UklGRtAEAABXRUJQVlA4WAoAAAAQAAAALwAALwAAQUxQSJQCAAANoCNteyJJevXrV9HAMpNX7Q9UrMd4gGEea5ksZmYGi3n3AG12ZIzVFT0X4BmrrOXdqqiUUlooyNIJImICmFOsBzh//bn89tcvAK6K1C9SVmbLdb1uM1Y0ZXysX6yVaIx1aRmvObyDqe3OZd3edRt/+PQkGmqR5K945gZIFWIwJFLELu3cv/LMWWPifFry8D0QxFomGoxAjK2Dj374ZtIwjxtd9BN4dcwrksL6lzZvGzg/mxtu+gavDeo0msLNn+xZdX4WN7z2PXyHuo36S5fvP+L8NB1teo/QZoEuNIv7VzVMkvKibwgtFqqhubxnIHFC4id8mwWrv/STbYn/q38Y32Hhzt+8+U0NIOUV96BkqLz04VmJSHwa38jB+PWPPCtRymtuQMlSObhyUmx1GN/Iw/jOvk+tNzuwZGrZ+UPJFlI2kpY2rnEdVTZU9rqCHln3+nSRfITusfObmHwMl43XR7LuyLkVJh9Du0n2vzXbyWSTzGj8l3TIeRh/GV+WTDbJDOBYN0o2UY5Bv0fOfSius/lYCljbuBQlk2iP/YErf9hZ2Uwq+z2u4tN9nWSySA3/FVXUkysHg2YR9HO0JPLsI+uTySA1xq8QIerZD18KmkHQx9ASCObNzTd7tzDfKY4az/9N2vbJpUEXFNo/34lJE6IO9iw3gy4ktKo70JLJwa3eXzS9W4BvV9fhRkz37sj9y5d6NTWl0Pn5DtyQWb1b3fPJzXg1NaTQ0OJO3JDZvQ62bX5pPUFkjhidjh87io6YN0h688NHD7ZIFWIwJFLEWgmfv4wxJfNH9OwzK/t3LlkmGozAse+/BPWJWoPIyU9/2Hhdr3tZp81oODjWL/4AjSV1xyi2XCv6x8bSZBz5v6tKZgdWUDggFgIAAJANAJ0BKjAAMAA+kTqXR6WjIiEuOAzIsBIJaQDRCadfnA+hPYG/Vf/gddX9a/Yi/WMq00nJrLDJ2P9vRqaBIM2ipHzSYwyeO119/T6gCTC0CtvVqWy5r/CJrmp5mvvWXckDXCfJcVlh6fEjxTi4L6l+iK4gAAD+/dtHkR/eRj7Mq+xgssPppn9vd1Q5AIntmN+UiG8v71GCVvOvb//CkH8R+BEVzXcnzXwPq5KKIdjQqZufZZoSov2jx78FMd6nen1olK1BaUpjUxoItkHpGMp65X+xxvzniRONEtpLn9VsIXy9BmKHkBt7BY/7PyJNCcCKYVfzCD380srCdXYdmeOrPnuvbEdWzA/knXoAnTTLNgGjz+bfqpoa1GfkkkzWVYjcoh/uEGLhT4Soic/WV9oflevHOlImliGOEmn5I5YfHM868k9RkkTfgSkuj4mnp0afqIA0No2jp7XmqWVF+9yb/5cn/87vQvrCLe03XWBh/f5MG5PahiPDlFf5d/t9Nrvb/u1wsIjtNBSH+DX/+MUptxofoq9I+g/FLjTwwjaXMvcKgAKArtGpbpSpAInNvZug262jxxt39COkasotWatb0uXsjK29LgQFfGZAnxDXZSWafnZ9abqYiShpqhLJlwzD8vKyWi6qHxjfCtNhPlhJKzoWNJuvsZn70s0Vhv4UM+gchqmpK8FE8coBkV0UGoXwlOAAAA==",
+	"project_thumbnail": "UklGRtYEAABXRUJQVlA4WAoAAAAQAAAALwAALwAAQUxQSJQCAAANoCNteyJJevXrV9HAMpNX7Q9UrMd4gGEea5ksZmYGi3n3AG12ZIzVFT0X4BmrrOXdqqiUUlooyNIJImICmFOsBzh//bn89tcvAK6K1C9SVmbLdb1uM1Y0ZXysX6yVaIx1aRmvObyDqe3OZd3edRt/+PQkGmqR5K945gZIFWIwJFLELu3cv/LMWWPifFry8D0QxFomGoxAjK2Dj374ZtIwjxtd9BN4dcwrksL6lzZvGzg/mxtu+gavDeo0msLNn+xZdX4WN7z2PXyHuo36S5fvP+L8NB1teo/QZoEuNIv7VzVMkvKibwgtFqqhubxnIHFC4id8mwWrv/STbYn/q38Y32Hhzt+8+U0NIOUV96BkqLz04VmJSHwa38jB+PWPPCtRymtuQMlSObhyUmx1GN/Iw/jOvk+tNzuwZGrZ+UPJFlI2kpY2rnEdVTZU9rqCHln3+nSRfITusfObmHwMl43XR7LuyLkVJh9Du0n2vzXbyWSTzGj8l3TIeRh/GV+WTDbJDOBYN0o2UY5Bv0fOfSius/lYCljbuBQlk2iP/YErf9hZ2Uwq+z2u4tN9nWSySA3/FVXUkysHg2YR9HO0JPLsI+uTySA1xq8QIerZD18KmkHQx9ASCObNzTd7tzDfKY4az/9N2vbJpUEXFNo/34lJE6IO9iw3gy4ktKo70JLJwa3eXzS9W4BvV9fhRkz37sj9y5d6NTWl0Pn5DtyQWb1b3fPJzXg1NaTQ0OJO3JDZvQ62bX5pPUFkjhidjh87io6YN0h688NHD7ZIFWIwJFLEWgmfv4wxJfNH9OwzK/t3LlkmGozAse+/BPWJWoPIyU9/2Hhdr3tZp81oODjWL/4AjSV1xyi2XCv6x8bSZBz5v6tKZgdWUDggHAIAANANAJ0BKjAAMAA+kT6ZSCWjoqEquqwAsBIJZwDKu35KsCVBITPpEf4Hky+fP977gf8j/of+l63n67ewB+mxGk0nJr4Jm8tOcMkM3tR3WE5S+7n/HAXXjsTWX5wPfdbEE8oyCVd//jrKQefkV5U6LPEEy49Rlo6AAP78qPtgOaO3huBuqDib1Gkmv8RYZQPJiYuovny9ckcbpG/jH3NgdE+XUD9zjxFNal4AYb2d0YQnm3lzqtTjq7qqzkBGx3t+manjf9aWI85c9/qGTb/8OQVm9wYlOSsWHjKVHk3DMmoLX/8rxG75yT09xmL9VM84DZ/x3H+UkAghslycl1zl30oWi/2BBXeOOr2gmX2BSryWUEEifD3xn6ZeJ6QtqPuCL9sUS95d0SKCG/z/5CqIKI2L+c/rRqyBcK+MZXa+Njgo8B7yj0VkYRAd/U8wCbeXgv7ytES1mCar+vF/8uT+dupIPXfNlEQH/+GpmRCRG5gJMRDI/wpdO3qAA9pHzqcv8TH8ikPG9pN8VV30leEsR/puM75yjwKKQ0HafYVweNy+WvNcgN5cs5lhj6zHa5FL88bo3lrVqbhrb2gF7ARJwZwFrfhtfk5QuY0tj3/IZdWauocBRS3+U7zngqtZDME+xw5DfFt6vk9qwxPFm6mQB2y5oqV4SCF5iGN612+6oTEdjaeCs7GB5nEvDz2t12BeviEvw7o726aKbMmAAA==",
 	"seed_int": 0,
 	"shortdesc": "",
 	"type": "graph"

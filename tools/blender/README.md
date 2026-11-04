@@ -3,6 +3,9 @@
 Blender 5.2 add-on for assigning the shared Material Maker materials and editing the
 rigid GLBs in `mm-data`. Tested with Blender 5.2.2 on Windows.
 
+Version 1.4.1 keeps a white colour multiplier on meshes without vertex-colour attributes, including after refresh.
+For materials marked `mmPaintMask`, albedo alpha selects the vertex paint and is never treated as transparency.
+
 ## Install
 
 Run `python tools/blender/package_addon.py` from mm-data. In Blender choose **Edit →

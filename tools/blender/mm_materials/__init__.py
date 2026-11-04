@@ -2,7 +2,7 @@
 bl_info = {
     'name': 'MegaMek Materials & GLB',
     'author': 'MegaMek contributors',
-    'version': (1, 4, 0),
+    'version': (1, 4, 1),
     'blender': (5, 2, 0),
     'location': '3D View > Sidebar > MegaMek / MM Materials',
     'description': 'Assign Material Maker .tres materials and save GLBs with shared external textures',
@@ -246,7 +246,9 @@ def refresh_materials(context):
     for material in materials:
         read_material(root / material['_mm_tres'], root)
     for material in materials:
-        build_preview(material, root / material['_mm_tres'], root)
+        coloured = any(obj.type == 'MESH' and obj.data.color_attributes.active_color is not None
+                       and any(slot.material == material for slot in obj.material_slots) for obj in context.scene.objects)
+        build_preview(material, root / material['_mm_tres'], root, vertex_colors=coloured)
     show_materials(context)
     return len(materials)
 
@@ -499,7 +501,7 @@ class MM_OT_assign(bpy.types.Operator):
                     if not faces:
                         continue
                     mat = bpy.data.materials.new(path.stem)
-                    build_preview(mat, path, root)
+                    build_preview(mat, path, root, vertex_colors=obj.data.color_attributes.active_color is not None)
                     obj.data.materials.append(mat)
                     for face in faces:
                         face.material_index = len(obj.data.materials) - 1
@@ -517,7 +519,7 @@ class MM_OT_assign(bpy.types.Operator):
                     surface.update(alphaMode='MASK' if spec['transparent'] else 'OPAQUE',
                                    alphaCutoff=spec['alpha_cutoff'], doubleSided=spec['double_sided'])
                     mat['_mm_surface'] = json.dumps(surface)
-                    build_preview(mat, path, root)
+                    build_preview(mat, path, root, vertex_colors=obj.data.color_attributes.active_color is not None)
                     if obj.material_slots:
                         obj.material_slots[obj.active_material_index].material = mat
                     else:

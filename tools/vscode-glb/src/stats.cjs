@@ -1,4 +1,6 @@
 // Count referenced glTF vertices, not an entire shared POSITION buffer for every LOD.
+function isHelperGroup(name) { return ['cut', 'stands', 'building_volumes'].includes(name); }
+
 function indices(document, binary, accessorIndex) {
   const accessor = document.accessors[accessorIndex], count = accessor.count;
   if (!Number.isSafeInteger(count) || count < 0 || count > 50_000_000) throw Error('Invalid index count');
@@ -27,7 +29,7 @@ function summarize(document, binary, fileBytes) {
   function visit(index, group, ancestors) {
     if (ancestors.has(index)) throw Error('Cyclic node hierarchy');
     const node = nodes[index]; if (!node) throw Error('Invalid node reference');
-    group = node.name?.match(/-lod([0-3])$/) ? `LOD ${node.name.match(/-lod([0-3])$/)[1]}` : ['cut', 'stands'].includes(node.name) ? 'Helpers' : group;
+    group = node.name?.match(/-lod([0-3])$/) ? `LOD ${node.name.match(/-lod([0-3])$/)[1]}` : isHelperGroup(node.name) ? 'Helpers' : group;
     if (!rows.has(group)) rows.set(group, { name: group, vertices: new Map(), triangles: 0, primitives: 0, meshes: 0, materials: new Set(), nodes: 0 });
     const row = rows.get(group); row.nodes++;
     if (node.mesh !== undefined) {
@@ -50,4 +52,4 @@ function summarize(document, binary, fileBytes) {
   return { fileBytes, images: (document.images || []).length, embeddedImages: (document.images || []).filter(i => i.bufferView !== undefined).length,
     rows: [...rows.values()].filter(r => r.meshes || r.name.startsWith('LOD')).map(r => ({ ...r, vertices: [...r.vertices.values()].reduce((n, v) => n + v.size, 0), materials: r.materials.size })) };
 }
-module.exports = { summarize, indices };
+module.exports = { summarize, indices, isHelperGroup };

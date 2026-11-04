@@ -13,8 +13,11 @@ def linear_rgba(colour):
     return (*Color(colour[:3]).from_srgb_to_scene_linear(), colour[3])
 
 
-def build_preview(material, path, textures):
+def build_preview(material, path, textures, *, vertex_colors=None):
     spec = read_material(path, textures)  # Validate before replacing any nodes.
+    if vertex_colors is None:
+        vertex_colors = material.get('_mm_vertex_colors', True)
+    material['_mm_vertex_colors'] = vertex_colors
     images = {}
     for key in ('albedo', 'normal', 'roughness_map', 'metallic_map', 'ao_map', 'emission', 'sss'):
         file = spec.get(key)
@@ -81,10 +84,20 @@ def build_preview(material, path, textures):
     original = json.loads(material.get('_mm_surface', '{}'))
     if original.get('baseColorFactor', [1, 1, 1, 1]) != [1, 1, 1, 1]:
         color = mix(color, original['baseColorFactor'], 'MULTIPLY', (-200, 750))
-    vertex = tree.nodes.new('ShaderNodeVertexColor')
-    vertex.label = 'Mesh vertex colours (white when absent)'
-    vertex.location = (-400, 400)
-    color = mix(color, vertex.outputs['Color'], 'MULTIPLY', (0, 600))
+    vertex_color = (1, 1, 1, 1)
+    if vertex_colors:
+        vertex = tree.nodes.new('ShaderNodeVertexColor')
+        vertex.label = 'Mesh vertex colours'
+        vertex.location = (-400, 400)
+        vertex_color = vertex.outputs['Color']
+    if vertex_colors and material.get('mmPaintMask'):
+        mask = tree.nodes.new('ShaderNodeMixRGB')
+        mask.label = 'Paintable regions; alpha is not transparency'
+        mask.inputs[1].default_value = (1, 1, 1, 1)
+        tree.links.new(albedo.outputs['Alpha'], mask.inputs[0])
+        tree.links.new(vertex_color, mask.inputs[2])
+        vertex_color = mask.outputs[0]
+    color = mix(color, vertex_color, 'MULTIPLY', (0, 600))
     tree.links.new(color, principled.inputs['Base Color'])
     material.diffuse_color = tint
     material.roughness = max(0, min(1, spec['roughness']))
