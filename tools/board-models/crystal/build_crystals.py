@@ -1,10 +1,11 @@
 """Reproducible ruby crystal meshes; execute with Blender MCP's background executor."""
-import hashlib, json, math, random, re, sys
+import hashlib, json, math, os, random, re, sys
 from pathlib import Path
 import bpy
 from mathutils import Vector
-ROOT=Path('C:/Projects/megamek/mm-data')
-WORK=Path('C:/Projects/megamek/megamek_temp/work/crystal-cover')
+ROOT=Path(os.environ.get('MM_DATA_ROOT','C:/Projects/megamek/mm-data'))
+WORK=Path(os.environ.get('CRYSTAL_BUILD_DIR',str(Path(__file__).resolve().parent)))
+WORK.mkdir(parents=True,exist_ok=True)
 BOARD=ROOT/'data/models/board'
 sys.path.insert(0,str(ROOT/'tools'))
 from glb_geometry import write_glb
