@@ -13,6 +13,8 @@ FORMS=[('cover-low-fan',811,18,8,7.5,5,True),('cover-low-crown',812,18,6,9,5,Fal
  ('cover-low-ridge',813,18,9,7.5,5,True),('cover-spire',821,36,5,6.5,5,False),
  ('cover-forked',822,36,6,8.5,5,True),('cover-fan',823,36,8,7.8,5,True),('cover-crown',824,36,5,9,5,False)]
 FORMS += [(f'giant-level{n}',840+n,18*n,28,14+.3*n,12,False) for n in range(1,6)]
+FORMS += [('single-prism',861,90,0,14,1,False),('single-pointed',862,90,0,12.5,1,False),
+          ('single-oblique',863,90,0,18,1,False)]
 MATERIALS=[dict(id='crystal',diffuse=[1,1,1],roughness=.23,metallic=0,textures=[
  dict(id='ruby',type='DIFFUSE',filename='../textures/crystal/ruby-crystal_albedo.png')])]
 
@@ -35,7 +37,7 @@ def clip(faces, normal, distance):
         result.append(unique)
     return result
 
-def prism(rng,height,radius,origin,lean,lod):
+def prism(rng,height,radius,origin,lean,lod,cut=None):
     # Intersect planes rather than triangulating warped rings: every major facet stays optically flat.
     corners=[Vector((x,y,z)) for z in (0,height*2) for y in (-radius*3,radius*3) for x in (-radius*3,radius*3)]
     faces=[[corners[i] for i in f] for f in [(0,2,3,1),(4,5,7,6),(0,1,5,4),(2,6,7,3),(0,4,6,2),(1,3,7,5)]]
@@ -45,12 +47,19 @@ def prism(rng,height,radius,origin,lean,lod):
         faces=clip(faces,Vector((nx,ny,0)),apothem)
         # Rhombohedral terminations: broad alternating faces ending in an asymmetric basal table.
         table=rng.uniform(.48,.68) if i%2==0 else rng.uniform(.76,.88)
-        slope=apothem*(1-table)/(height*.3)
+        termination=.3
+        if cut=='prism': table=.72 if i%2==0 else .84;termination=.12
+        elif cut=='pointed': table=.06 if i%2==0 else .1;termination=.42
+        elif cut=='oblique': table=.98;termination=.12
+        slope=apothem*(1-table)/(height*termination)
         faces=clip(faces,Vector((nx,ny,slope)),apothem*table+slope*height)
         basal=apothem*.12/(height*.18)
         faces=clip(faces,Vector((nx,ny,-basal)),apothem*.88)
     tilt=math.tan(rng.uniform(math.radians(15),math.radians(30))) if rng.random()<.45 else rng.uniform(.015,.08)
     azimuth=rng.uniform(-math.pi,math.pi)
+    if cut=='prism': tilt=.025
+    elif cut=='pointed': tilt=0
+    elif cut=='oblique': tilt=math.tan(math.radians(29));azimuth=.65
     faces=clip(faces,Vector((tilt*math.cos(azimuth),tilt*math.sin(azimuth),1)),height)
     # These sparse rigid meshes keep the same optical boundaries at every LOD.
     for i in range(6):
@@ -65,6 +74,8 @@ def prism(rng,height,radius,origin,lean,lod):
     return vertices,indices
 
 def composition(name,i,rng,height,reach,radius,count):
+    if name.startswith('single-'):
+        return 0,0,height,radius,(0,0)
     if name.startswith('giant'):
         anchors=[(-9,-4),(17,8),(-19,17),(12,-19),(-10,-24),(27,-3),(-29,-1),(1,27)]
         x,y=anchors[i%len(anchors)];x+=rng.uniform(-2,2);y+=rng.uniform(-2,2)
@@ -136,14 +147,15 @@ for name,seed,height,reach,radius,count,fan in FORMS:
         rng=random.Random(seed);objects=[]
         for i in range(count):
             x,y,h,r,lean=composition(name,i,rng,height,reach,radius,count)
-            v,f=prism(random.Random(seed*100+i),h,r,(x,y),lean,lod)
+            cut=name.removeprefix('single-') if name.startswith('single-') else None
+            v,f=prism(random.Random(seed*100+i),h,r,(x,y),lean,lod,cut)
             if name.startswith('giant'):
                 near,_=prism(random.Random(seed*100+i),h,r,(x,y),lean,1)
                 norm=max(max(abs(p.y)/36,abs(p.x)/42+abs(p.y)/72) for p in near)
                 factor=min(1,.93/norm)
                 for p in v:p.x*=factor;p.y*=factor
             objects.append(make_mesh(f'{name}-lod{lod}-shard{i}',v,f,scene,'crystal'))
-        for chip in range(8 if name.startswith('giant') else 3):
+        for chip in range(0 if name.startswith('single-') else 8 if name.startswith('giant') else 3):
             crumbs=random.Random(seed*71+chip);angle=crumbs.random()*math.tau;distance=reach*crumbs.uniform(.45,1)
             size=crumbs.uniform(1.2,2.7) if name.startswith('giant') else crumbs.uniform(.45,1.1)
             v,f=prism(crumbs,size*crumbs.uniform(.7,1.5),size,(math.cos(angle)*distance,math.sin(angle)*distance),(size*.8,-size*.4),lod)
