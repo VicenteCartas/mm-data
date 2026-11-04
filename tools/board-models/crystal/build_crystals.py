@@ -53,7 +53,7 @@ def prism(rng,height,radius,origin,lean,lod):
     if lod==0:
         for i in range(6):
             angle=turn+(i+.5)*math.tau/6
-            faces=clip(faces,Vector((math.cos(angle),math.sin(angle),0)),radius*.985)
+            faces=clip(faces,Vector((math.cos(angle),math.sin(angle),0)),radius*.975)
     vertices=[];indices=[];top=max(p.z for f in faces for p in f)
     for face in faces:
         indices.append(tuple(range(len(vertices),len(vertices)+len(face))))
@@ -66,6 +66,7 @@ def composition(name,i,rng,height,reach,radius,count):
     if name.startswith('giant'):
         anchors=[(-9,-4),(17,8),(-19,17),(12,-19),(-10,-24),(27,-3),(-29,-1),(1,27)]
         x,y=anchors[i%len(anchors)];x+=rng.uniform(-2,2);y+=rng.uniform(-2,2)
+        if name=='giant-level1' and i in (1,2,3): x*=.72;y*=.72
         heights=[1,.72,.48,.4,.28,.36,.29,.32]
         h=height*(heights[i] if i<8 else rng.uniform(.1,.25))
         r=radius*(1 if i==0 else .73 if i==1 else rng.uniform(.35,.56))
@@ -138,7 +139,14 @@ for name,seed,height,reach,radius,count,fan in FORMS:
             crumbs=random.Random(seed*71+chip);angle=crumbs.random()*math.tau;distance=reach*crumbs.uniform(.45,1)
             size=crumbs.uniform(1.2,2.7) if name.startswith('giant') else crumbs.uniform(.45,1.1)
             v,f=prism(crumbs,size*crumbs.uniform(.7,1.5),size,(math.cos(angle)*distance,math.sin(angle)*distance),(size*.8,-size*.4),lod)
-            for p in v:p.z=max(0,p.z-size*.25)
+            for p in v:p.z-=size*.25
+            # An oblique break through the small crystal leaves an angular fragment, not a miniature complete prism.
+            faces=[[v[k] for k in face] for face in f]
+            faces=clip(faces,Vector((0,0,-1)),0)
+            cut=Vector((.45,-.25,1));centre=Vector((math.cos(angle)*distance,math.sin(angle)*distance,0))
+            faces=clip(faces,cut,cut.dot(centre)+size*.65)
+            v=[];f=[]
+            for face in faces:f.append(tuple(range(len(v),len(v)+len(face))));v.extend(p.copy() for p in face)
             objects.append(make_mesh(f'{name}-lod{lod}-fragment{chip}',v,f,scene,'crystal'))
         levels[lod]=model(f'{name}-lod{lod}',objects)
         for obj in objects: obj.hide_render=lod>0
