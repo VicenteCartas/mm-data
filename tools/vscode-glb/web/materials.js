@@ -1,6 +1,6 @@
 import * as THREE from 'three';
 
-const sampledMaps = ['map', 'normalMap', 'roughnessMap', 'metalnessMap', 'aoMap', 'emissiveMap', 'bumpMap'];
+const sampledMaps = ['map', 'normalMap', 'roughnessMap', 'metalnessMap', 'aoMap', 'emissiveMap', 'mmSharedEmissionMap', 'bumpMap'];
 const wrapping = { 10497: THREE.RepeatWrapping, 33071: THREE.ClampToEdgeWrapping, 33648: THREE.MirroredRepeatWrapping };
 const filtering = { 9728: THREE.NearestFilter, 9729: THREE.LinearFilter, 9984: THREE.NearestMipmapNearestFilter, 9985: THREE.LinearMipmapNearestFilter, 9986: THREE.NearestMipmapLinearFilter, 9987: THREE.LinearMipmapLinearFilter };
 
@@ -23,8 +23,22 @@ export function materialSampling(material, sampler, owned) {
   }
 }
 
+export function materialLighting(material, surface, night = false) {
+  const gltf = surface?.gltf || {}, spec = surface?.managed;
+  const ownGlow = spec?.nightEmission && gltf.emissiveFactor?.some(v => v !== 0);
+  const muted = gltf.extras?.mmEmission === 'off' || (!night && (gltf.extras?.mmNightEmission || spec?.nightEmission));
+  // Each live material clone owns its uniform. Updating it also covers cached shader programs.
+  material.mmGlow ||= { value: new THREE.Color(0, 0, 0) };
+  material.mmGlow.value.setRGB(0, 0, 0);
+  if (!muted && !ownGlow && spec && (spec.emissionOperator === 0 || !spec.maps.emission)) {
+    material.mmGlow.value.fromArray(spec.emissionColor).convertSRGBToLinear().multiplyScalar(spec.emissionEnergy);
+  }
+  material.emissiveIntensity = muted ? 0 : gltf.extensions?.KHR_materials_emissive_strength?.emissiveStrength ?? 1;
+}
+
 export function materialFactors(material, surface) {
   const gltf = surface?.gltf || {}, spec = surface?.managed, pbr = gltf.pbrMetallicRoughness || {};
+  const ownGlow = spec?.nightEmission && gltf.emissiveFactor?.some(v => v !== 0);
   material.color.fromArray(pbr.baseColorFactor || [1, 1, 1]);
   if (spec) material.color.multiply(new THREE.Color().fromArray(spec.tint).convertSRGBToLinear());
   material.opacity = pbr.baseColorFactor?.[3] ?? 1;
@@ -38,10 +52,14 @@ export function materialFactors(material, surface) {
     material.emissive.fromArray(gltf.emissiveFactor || [0, 0, 0]);
     material.emissiveIntensity = gltf.extensions?.KHR_materials_emissive_strength?.emissiveStrength ?? 1;
     if (spec?.maps.emission && !gltf.emissiveTexture) {
-      material.emissive.copy(spec.emissionOperator === 0 ? new THREE.Color().setRGB(spec.emissionEnergy, spec.emissionEnergy, spec.emissionEnergy) : new THREE.Color().fromArray(spec.emissionColor).convertSRGBToLinear().multiplyScalar(spec.emissionEnergy));
-      if (gltf.emissiveFactor?.some(v => v !== 0)) material.emissive.multiply(new THREE.Color().fromArray(gltf.emissiveFactor));
+      material.emissiveMap = ownGlow ? null : material.mmSharedEmissionMap;
+      if (!ownGlow) {
+        material.emissive.copy(spec.emissionOperator === 0 ? new THREE.Color().setRGB(spec.emissionEnergy, spec.emissionEnergy, spec.emissionEnergy) : new THREE.Color().fromArray(spec.emissionColor).convertSRGBToLinear().multiplyScalar(spec.emissionEnergy));
+        if (gltf.emissiveFactor?.some(v => v !== 0)) material.emissive.multiply(new THREE.Color().fromArray(gltf.emissiveFactor));
+      }
     }
   }
+  materialLighting(material, surface);
   material.needsUpdate = true;
 }
 
@@ -75,26 +93,25 @@ export async function prepareMaterials(gltf, asset, owned, report) {
   loaded.forEach(material => owned.add(material));
   for (const surface of asset.surfaces) {
     const material = loaded[surface.index]; if (!material) continue;
-    const spec = surface.managed; const glow = new THREE.Color(0, 0, 0);
+    const spec = surface.managed;
     if (spec) {
       try {
         material.roughnessMap = spec.maps.roughness ? await texture(spec.maps.roughness, material.map, false, spec.channels.roughness) : null;
         material.metalnessMap = spec.maps.metallic ? await texture(spec.maps.metallic, material.map, false, spec.channels.metallic) : null;
         if (!surface.gltf.normalTexture && spec.maps.normal) { material.normalMap = await texture(spec.maps.normal, material.map); material.normalScale.set(spec.normalScale, spec.normalScale); }
         if (!surface.gltf.occlusionTexture && spec.maps.ao) material.aoMap = await texture(spec.maps.ao, material.map, false, spec.channels.ao);
-        const tint = new THREE.Color().fromArray(spec.emissionColor).convertSRGBToLinear().multiplyScalar(spec.emissionEnergy);
-        if (spec.emissionOperator === 0 || !spec.maps.emission) glow.copy(tint);
         if (spec.maps.emission && !surface.gltf.emissiveTexture) {
-          material.emissiveMap = await texture(spec.maps.emission, material.map, true);
+          material.mmSharedEmissionMap = await texture(spec.maps.emission, material.map, true);
         }
         if (spec.maps.height && !material.normalMap) { material.bumpMap = await texture(spec.maps.height, material.map); material.bumpScale = spec.heightScale / 100 * (spec.heightFlip ? -1 : 1); }
       } catch (error) { report(`${surface.name}: map preview failed: ${error.message}`); }
     }
     materialFactors(material, surface);
     const paint = !!surface.gltf.extras?.mmPaintMask;
-    if (paint || glow.r || glow.g || glow.b) {
-      material.onBeforeCompile = shader => {
-        shader.uniforms.mmGlow = { value: glow };
+    const hasGlow = spec && (spec.emissionOperator === 0 || !spec.maps.emission) && spec.emissionColor.slice(0, 3).some(v => v !== 0);
+    if (paint || hasGlow) {
+      material.onBeforeCompile = function(shader) {
+        shader.uniforms.mmGlow = this.mmGlow;
         shader.fragmentShader = 'uniform vec3 mmGlow;\n' + shader.fragmentShader;
         shader.fragmentShader = shader.fragmentShader.replace('#include <emissivemap_fragment>', '#include <emissivemap_fragment>\ntotalEmissiveRadiance += mmGlow;');
         if (paint) shader.fragmentShader = shader.fragmentShader.replace('#include <color_fragment>', `
@@ -121,6 +138,8 @@ export async function prepareMaterials(gltf, asset, owned, report) {
     if (source && source !== object.material) {
       const vertexColors = object.material.vertexColors, flatShading = object.material.flatShading;
       object.material.copy(source); object.material.vertexColors = vertexColors; object.material.flatShading = flatShading;
+      object.material.mmGlow = { value: source.mmGlow.value.clone() };
+      object.material.mmSharedEmissionMap = source.mmSharedEmissionMap;
       object.material.onBeforeCompile = source.onBeforeCompile; object.material.customProgramCacheKey = source.customProgramCacheKey;
     }
     object.userData.mmMaterial = index;

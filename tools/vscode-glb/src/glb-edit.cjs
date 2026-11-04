@@ -39,10 +39,16 @@ function uniqueName(items, base) {
 }
 function properties(material, changes, managed) {
   if (!changes || typeof changes !== 'object' || Array.isArray(changes)) throw Error('Invalid material properties');
-  const allowed = ['baseColorFactor', 'emissiveFactor', 'roughnessFactor', 'metallicFactor', 'alphaMode', 'alphaCutoff', 'doubleSided'];
+  const allowed = ['baseColorFactor', 'emissiveFactor', 'emissionMode', 'roughnessFactor', 'metallicFactor', 'alphaMode', 'alphaCutoff', 'doubleSided'];
   if (Object.keys(changes).some(key => !allowed.includes(key))) throw Error('Unsupported material property');
   const factor = value => typeof value === 'number' && Number.isFinite(value) && value >= 0 && value <= 1;
   for (const [key, value] of Object.entries(changes)) {
+    if (key === 'emissionMode') {
+      if (!['inherit', 'off'].includes(value)) throw Error('Invalid emissionMode');
+      if (value === 'off') (material.extras ||= {}).mmEmission = 'off';
+      else if (material.extras) { delete material.extras.mmEmission; if (!Object.keys(material.extras).length) delete material.extras; }
+      continue;
+    }
     if (key === 'doubleSided' ? typeof value !== 'boolean' : key === 'alphaMode' ? !['OPAQUE', 'MASK', 'BLEND'].includes(value)
       : key.endsWith('ColorFactor') || key === 'emissiveFactor' ? !Array.isArray(value) || value.length !== (key === 'baseColorFactor' ? 4 : 3) || !value.every(factor) : !factor(value)) throw Error(`Invalid ${key}`);
     if (managed && ['roughnessFactor', 'metallicFactor'].includes(key)) throw Error('Shared roughness and metallic are controlled by the .tres material');
@@ -94,8 +100,11 @@ function editGlb(bytes, edit, file, shared, managed = false) {
     if (edit.kind !== 'shared' && JSON.stringify(material) === JSON.stringify(source)) return bytes;
     const users = (json.nodes || []).reduce((count, n) => count + (json.meshes?.[n.mesh]?.primitives || []).filter(p => p.material === previous).length, 0);
     if (Number.isInteger(previous) && users === targets.length) { index = previous; materials[index] = material; }
-    else { index = materials.length; material.name = uniqueName(materials, source.name || shared?.name || 'Material'); materials.push(material); }
-    if (edit.kind === 'shared') material.name = uniqueName(materials.filter((_, i) => i !== index), shared.id);
+    else { index = materials.length; material.name = uniqueName(materials, managed ? `${source.name}#surface` : source.name || shared?.name || 'Material'); materials.push(material); }
+    if (edit.kind === 'shared') {
+      const others = materials.filter((_, i) => i !== index);
+      material.name = others.some(item => item.name === shared.id) ? uniqueName(others, `${shared.id}#surface`) : shared.id;
+    }
   }
   if (index === previous && edit.kind === 'existing') return bytes;
   for (const target of targets) {

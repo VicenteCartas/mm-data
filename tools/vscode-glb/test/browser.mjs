@@ -10,6 +10,7 @@ const { html } = require('../src/html.cjs'), { loadAsset, findRoots } = require(
 const { depthFixture } = require('./depth-fixture.cjs');
 const { GlbDocument } = require('../src/document.cjs'), { materialPreview } = require('../src/material-preview.cjs');
 const { readGlb } = require('../src/assets.cjs'), { readAttribute } = require('../src/attributes.cjs');
+const { writeGlb } = require('../src/glb-edit.cjs');
 const { gitFixture } = require('./git-fixture.cjs'), { gitSource } = require('../src/git-source.cjs');
 const extension = path.resolve(import.meta.dirname, '..'), dataRoot = path.resolve(extension, '../..');
 const output = path.join(extension, 'test-output'); await fs.mkdir(output, { recursive: true });
@@ -287,6 +288,77 @@ try {
     }
   }
   await fs.rm(fixture);
+  // A flat-shaded GLTFLoader derivative with both shared constant glow and model emission.
+  // Repeated toggles must update cached programs, including each live material's custom uniform.
+  const emissionFile = path.join(output, 'emission-fixture.glb'), emissionJson = readGlb(depthFixture()).json;
+  delete emissionJson.extensionsUsed;
+  for (const material of emissionJson.materials) {
+    delete material.extensions; material.pbrMetallicRoughness.baseColorFactor = [.04, .04, .04, 1];
+    material.emissiveFactor = [.12, .06, .02];
+  }
+  const emissionBytes = writeGlb(depthFixture(), emissionJson); await fs.writeFile(emissionFile, emissionBytes);
+  const emissionAsset = await loadAsset(emissionFile, await findRoots(emissionFile));
+  for (const surface of emissionAsset.surfaces) surface.managed = {
+    maps: {}, tint: [1, 1, 1, 1], roughness: .4, metallic: .2,
+    emissionColor: [.6, .4, .2, 1], emissionEnergy: 2, emissionOperator: 0
+  };
+  editingDocument = new GlbDocument(emissionFile, emissionBytes); editingAsset = emissionAsset;
+  const emissionCount = await page.evaluate(() => window.__MM_TEST__.count);
+  await page.evaluate(message => window.postMessage(message, '*'), { type: 'asset', asset: emissionAsset, generation: ++generation, trusted: true }); await ready(emissionCount + 1);
+  await page.locator('#projection').selectOption('ortho'); await page.locator('[data-camera="top"]').click(); await page.locator('#fit').click();
+  await page.locator('[data-tab="materials"]').click(); await page.locator('#surfaceTarget').selectOption('1:0');
+  if (!await page.locator('#surfaceProperties').evaluate(element => element.open)) await page.locator('#surfaceProperties summary').click();
+  await page.evaluate(() => {
+    const test = window.__MM_TEST__;
+    test.stats.scene.traverse(object => { if (object.userData.mmSurface?.node === 1) test.emissionMesh = object; });
+    test.emissionFinish = test.emissionMesh.mmOriginalMaterial.color.toArray();
+  });
+  async function emissionBrightness() {
+    await page.locator('[data-tab="view"]').click();
+    await page.evaluate(() => new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve))));
+    await page.locator('#screenshot').click();
+    const brightness = await page.evaluate(async () => {
+      const image = new Image(); image.src = window.__MM_TEST__.screenshot; await image.decode();
+      const canvas = document.createElement('canvas'); canvas.width = image.width; canvas.height = image.height;
+      const context = canvas.getContext('2d'); context.drawImage(image, 0, 0);
+      const pixels = context.getImageData(0, 0, image.width, image.height).data;
+      let total = 0; for (let i = 0; i < pixels.length; i += 4) total += pixels[i] + pixels[i + 1] + pixels[i + 2];
+      return total / (pixels.length / 4 * 3);
+    });
+    await page.locator('[data-tab="materials"]').click();
+    return brightness;
+  }
+  const inheritedBrightness = await emissionBrightness();
+  for (let cycle = 0; cycle < 2; cycle++) {
+    await page.locator('#editEmissionMode').selectOption('off');
+    await page.waitForFunction(() => window.__MM_TEST__.emissionMesh.mmOriginalMaterial.emissiveIntensity === 0);
+    assert(inheritedBrightness > await emissionBrightness() + 3, 'Off must visibly suppress both shared and authored glow');
+    await page.locator('#editEmissionMode').selectOption('inherit');
+    await page.waitForFunction(() => window.__MM_TEST__.emissionMesh.mmOriginalMaterial.emissiveIntensity === 1);
+    assert(Math.abs(inheritedBrightness - await emissionBrightness()) < .2, 'Inherit must restore a cached shader on every toggle');
+    assert.deepEqual(await page.evaluate(() => window.__MM_TEST__.emissionMesh.mmOriginalMaterial.color.toArray()), await page.evaluate(() => window.__MM_TEST__.emissionFinish));
+  }
+  assert.equal(await page.evaluate(() => window.__MM_TEST__.count), emissionCount + 1, 'Emission edits must preserve the scene');
+  await fs.rm(emissionFile);
+  current = 'buildings/authored/civic-citadel.glb'; variant = '';
+  const citadelCount = await page.evaluate(() => window.__MM_TEST__.count), citadel = await deliver(); await ready(citadelCount + 1);
+  const glass = citadel.surfaces.filter(s => s.name.includes('fortress-glass'));
+  assert(glass.some(s => s.gltf.extras?.mmEmission === 'off') && glass.some(s => s.gltf.extras?.mmNightEmission));
+  await page.locator('[data-tab="view"]').click(); await page.locator('[data-camera="front"]').click();
+  for (const night of [false, true, false]) {
+    await page.locator('#nightLights').setChecked(night);
+    await page.waitForFunction(({ night, glass }) => {
+      let checked = 0, valid = true;
+      window.__MM_TEST__.stats.scene.traverse(object => {
+        const source = glass.find(s => s.index === object.userData.mmMaterial);
+        if (!source || !object.isMesh) return;
+        const expected = night && source.gltf.extras?.mmEmission !== 'off' ? 1 : 0;
+        checked++; valid &&= object.mmOriginalMaterial.emissiveIntensity === expected;
+      });
+      return checked > 0 && valid;
+    }, { night, glass });
+    await page.screenshot({ path: path.join(output, `citadel-${night ? 'night' : 'day'}.png`) });
+  }
   comparison = await gitFixture(output);
   const snapshot = await gitSource(comparison.file, '');
   const staged = await loadAsset(comparison.file, await findRoots(comparison.file, '', [], snapshot.io), snapshot.urlFor, '', snapshot.io); staged.revision = 'Staged';

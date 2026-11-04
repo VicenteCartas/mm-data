@@ -84,6 +84,29 @@ test('live gestures replace UV data, keep the saved baseline and produce the exa
   assert.deepEqual(next.change.before, current);
   assert.deepEqual(event.after, current, 'Later input must not alter the saved undo/redo entry');
 });
+test('surface emission can be disabled and restored without duplicating shared textures or changing other instances', async t => {
+  const { bytes, first, second, source } = await fixture(), before = readGlb(bytes);
+  const edit = { kind: 'properties', target: { node: first, primitive: 0 }, scope: 'surface', changes: { emissionMode: 'off' } };
+  const off = editGlb(bytes, edit, wall, null, true), after = readGlb(off);
+  const materialAt = (json, node) => json.materials[json.meshes[json.nodes[node].mesh].primitives[0].material];
+  const dark = materialAt(after.json, first);
+  assert.equal(dark.extras.mmEmission, 'off'); assert(dark.name.startsWith(before.json.materials[source].name + '#'));
+  assert.deepEqual(materialAt(after.json, second), before.json.materials[source]);
+  assert.deepEqual(dark.emissiveFactor, before.json.materials[source].emissiveFactor);
+  assert.deepEqual(dark.pbrMetallicRoughness, before.json.materials[source].pbrMetallicRoughness);
+  assert.deepEqual(after.json.images, before.json.images); assert.deepEqual(after.json.textures, before.json.textures);
+  assert.deepEqual(after.binary, before.binary);
+  const dir = await directory(t), file = path.join(dir, 'dark.glb');
+  const rebased = rebaseGlb(off, wall, file); await fs.writeFile(file, rebased);
+  const loaded = await loadAsset(file, await findRoots(file, root));
+  assert(loaded.surfaces.find(s => s.name === dark.name).managed, 'The cloned name must still resolve its shared material');
+  const restored = readGlb(editGlb(off, { ...edit, changes: { emissionMode: 'inherit' } }, wall, null, true));
+  const lit = materialAt(restored.json, first);
+  assert.deepEqual(lit.extras, before.json.materials[source].extras);
+  assert.deepEqual(lit.emissiveFactor, dark.emissiveFactor); assert.deepEqual(restored.binary, before.binary);
+  assert.throws(() => editGlb(bytes, { ...edit, changes: { emissionMode: 'disabled' } }, wall), /Invalid emissionMode/);
+});
+
 test('whole-material edits update every use without cloning geometry; existing embedded materials remain usable', async () => {
   const { bytes, first, source } = await fixture();
   const edited = editGlb(bytes, { kind: 'properties', target: { node: first, primitive: 0 }, scope: 'material', changes: { baseColorFactor: [.2, .4, .6, 1], emissiveFactor: [1, 0, 0] } }, wall);

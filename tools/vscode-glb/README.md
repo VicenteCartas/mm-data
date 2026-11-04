@@ -58,6 +58,12 @@ code --install-extension tools/vscode-glb/megamek-glb-viewer.vsix
   geometry counts and original node metadata, including joints and hardpoints.
 - **Materials** edits surface assignments and lists this GLB's materials, with search, map previews,
   factors, channel choices and links to their source `.tres` and images.
+- **Materials → Emission & surface properties → Emission** selects **Off** or **Inherit**.
+  Off suppresses glow on the selected surface while retaining its glass finish, textures and stored emission.
+  Inherit restores the shared and authored emission, including day/night behaviour. Use **This surface only**
+  to leave other uses of the material unchanged, or **All using this material** for every use in the GLB.
+  **View → Night lights** previews dusk-activated windows and fixtures; the default daytime preview leaves
+  them unlit. This preview switch does not change the saved model.
 - **Info** lists dependencies, diagnostics, file extras and adjacent JSON
   descriptors that reference this mesh. Nothing in those files is executed.
 

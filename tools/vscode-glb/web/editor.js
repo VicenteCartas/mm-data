@@ -42,6 +42,7 @@ export function materialEditor({ send, selectSurface, inspectMaterial, showTab, 
     $('existingMaterial').value = primitive()?.material === undefined ? '' : String(primitive().material);
     $('editTint').value = $('editTintHex').value = hex(pbr.baseColorFactor || [1, 1, 1]); $('editOpacity').value = pbr.baseColorFactor?.[3] ?? 1;
     $('editEmission').value = hex(current?.gltf.emissiveFactor || [0, 0, 0]);
+    $('editEmissionMode').value = current?.gltf.extras?.mmEmission === 'off' ? 'off' : 'inherit';
     $('editRoughness').value = current?.managed?.roughness ?? pbr.roughnessFactor ?? 1;
     $('editMetallic').value = current?.managed?.metallic ?? pbr.metallicFactor ?? 1;
     $('editRoughness').disabled = $('editMetallic').disabled = !!current?.managed; $('sharedFinish').hidden = !current?.managed;
@@ -87,7 +88,7 @@ export function materialEditor({ send, selectSurface, inspectMaterial, showTab, 
     // Keep untouched linear factors exact instead of round-tripping them through an sRGB colour picker.
     const rgb = $('editTint').value === hex(pbr.baseColorFactor || [1, 1, 1]) ? (pbr.baseColorFactor || [1, 1, 1]).slice(0, 3) : color('editTint');
     const emission = $('editEmission').value === hex(original.emissiveFactor || [0, 0, 0]) ? original.emissiveFactor || [0, 0, 0] : color('editEmission');
-    const changes = { baseColorFactor: [...rgb, Number($('editOpacity').value)], emissiveFactor: emission, alphaMode: $('editAlpha').value, alphaCutoff: Number($('editCutoff').value), doubleSided: $('editDoubleSided').checked };
+    const changes = { baseColorFactor: [...rgb, Number($('editOpacity').value)], emissiveFactor: emission, emissionMode: $('editEmissionMode').value, alphaMode: $('editAlpha').value, alphaCutoff: Number($('editCutoff').value), doubleSided: $('editDoubleSided').checked };
     if (!surface()?.managed) { changes.roughnessFactor = Number($('editRoughness').value); changes.metallicFactor = Number($('editMetallic').value); }
     live({ kind: 'properties', changes });
   }

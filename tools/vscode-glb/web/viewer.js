@@ -6,14 +6,14 @@ import { EffectComposer } from 'three/addons/postprocessing/EffectComposer.js';
 import { RenderPass } from 'three/addons/postprocessing/RenderPass.js';
 import { UnrealBloomPass } from 'three/addons/postprocessing/UnrealBloomPass.js';
 import { OutputPass } from 'three/addons/postprocessing/OutputPass.js';
-import { prepareMaterials, materialFactors, materialSampling, modifyGeometry, applyColors, applyLabel } from './materials.js';
+import { prepareMaterials, materialFactors, materialLighting, materialSampling, modifyGeometry, applyColors, applyLabel } from './materials.js';
 import { displayKeys, viewState } from '../src/view-state.cjs';
 import { isHelperGroup } from '../src/stats.cjs';
 import { materialEditor } from './editor.js';
 
 const api = typeof acquireVsCodeApi === 'function' ? acquireVsCodeApi() : globalThis.__MM_TEST__?.api;
 const $ = id => document.getElementById(id), send = (type, extra = {}) => api.postMessage({ type, ...extra });
-const state = { lod: '0', variant: '', projection: 'ortho', shading: 'pbr', wire: false, grid: true, helpers: false, bounds: false, exposure: '1', environment: '1', bloom: false, background: '#202a35', label: '', tab: 'view', syncViews: true, ...api.getState() };
+const state = { lod: '0', variant: '', projection: 'ortho', shading: 'pbr', wire: false, grid: true, helpers: false, bounds: false, exposure: '1', environment: '1', bloom: false, nightLights: false, background: '#202a35', label: '', tab: 'view', syncViews: true, ...api.getState() };
 let renderer, composer, camera, controls, asset, gltf, assembly, selected, mixer, editor, playing = false, generation = 0, loadSerial = 0, engineBusy = false, documentDirty = false;
 let receivingView = false, viewLoading = false, linkedView, syncPending = false, lastShared = '', lastSharedAt = 0, engineAllowed = false;
 const scene = new THREE.Scene(), owned = new Set(), hidden = new Set(), nodes = new Map(), alternate = new Map();
@@ -187,6 +187,7 @@ function applyDisplay() {
   const materialFor = object => {
     if (object.userData.mmHelper) return object.material;
     const source = object.mmOriginalMaterial;
+    materialLighting(source, asset.surfaces[object.userData.mmMaterial], state.nightLights);
     if (state.shading === 'pbr') { source.wireframe = state.wire; return source; }
     const key = `${source.uuid}:${state.shading}`;
     if (!alternate.has(key)) {
@@ -221,6 +222,7 @@ function previewMaterial(message) {
     object.userData.mmMaterial = update.material;
     if (!object.userData.mmLiveMaterial) {
       const source = object.mmOriginalMaterial, material = source.clone();
+      material.mmSharedEmissionMap = source.mmSharedEmissionMap;
       material.onBeforeCompile = source.onBeforeCompile; material.customProgramCacheKey = source.customProgramCacheKey;
       owned.add(material); object.mmOriginalMaterial = material; object.userData.mmLiveMaterial = true;
     }
@@ -377,7 +379,7 @@ function bind() {
   $('syncViews').checked = state.syncViews;
   $('syncViews').onchange = () => { state.syncViews = $('syncViews').checked; lastShared = ''; save(); };
   $('workingCopy').onclick = () => send('workingCopy');
-  for (const id of ['lod', 'projection', 'shading', 'wire', 'grid', 'helpers', 'bounds', 'exposure', 'environment', 'bloom', 'background', 'label']) {
+  for (const id of displayKeys) {
     const control = $(id); if (control.type === 'checkbox') control.checked = state[id]; else control.value = state[id];
     control.addEventListener('input', () => {
       state[id] = control.type === 'checkbox' ? control.checked : control.value; save();
