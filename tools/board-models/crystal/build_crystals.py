@@ -37,13 +37,13 @@ def clip(faces, normal, distance):
         result.append(unique)
     return result
 
-def prism(rng,height,radius,origin,lean,lod,cut=None):
-    # Intersect planes rather than triangulating warped rings: every major facet stays optically flat.
+def prism(rng,height,radius,origin,lean,cut=None,sides=6,terminated=True):
+    # Intersect planes rather than triangulating warped rings: every facet stays optically flat and every edge sharp.
     corners=[Vector((x,y,z)) for z in (0,height*2) for y in (-radius*3,radius*3) for x in (-radius*3,radius*3)]
     faces=[[corners[i] for i in f] for f in [(0,2,3,1),(4,5,7,6),(0,1,5,4),(2,6,7,3),(0,4,6,2),(1,3,7,5)]]
-    turn=rng.uniform(-.4,.4);apothem=radius*math.cos(math.pi/6)
-    for i in range(6):
-        angle=turn+i*math.tau/6;nx,ny=math.cos(angle),math.sin(angle)
+    turn=rng.uniform(-.4,.4);apothem=radius*math.cos(math.pi/sides)
+    for i in range(sides):
+        angle=turn+i*math.tau/sides;nx,ny=math.cos(angle),math.sin(angle)
         faces=clip(faces,Vector((nx,ny,0)),apothem)
         # Rhombohedral terminations: broad alternating faces ending in an asymmetric basal table.
         table=rng.uniform(.48,.68) if i%2==0 else rng.uniform(.76,.88)
@@ -52,19 +52,13 @@ def prism(rng,height,radius,origin,lean,lod,cut=None):
         elif cut=='pointed': table=.06 if i%2==0 else .1;termination=.42
         elif cut=='oblique': table=.98;termination=.12
         slope=apothem*(1-table)/(height*termination)
-        faces=clip(faces,Vector((nx,ny,slope)),apothem*table+slope*height)
-        basal=apothem*.12/(height*.18)
-        faces=clip(faces,Vector((nx,ny,-basal)),apothem*.88)
+        if terminated: faces=clip(faces,Vector((nx,ny,slope)),apothem*table+slope*height)
     tilt=math.tan(rng.uniform(math.radians(15),math.radians(30))) if rng.random()<.45 else rng.uniform(.015,.08)
     azimuth=rng.uniform(-math.pi,math.pi)
     if cut=='prism': tilt=.025
     elif cut=='pointed': tilt=0
     elif cut=='oblique': tilt=math.tan(math.radians(29));azimuth=.65
     faces=clip(faces,Vector((tilt*math.cos(azimuth),tilt*math.sin(azimuth),1)),height)
-    # These sparse rigid meshes keep the same optical boundaries at every LOD.
-    for i in range(6):
-        angle=turn+(i+.5)*math.tau/6
-        faces=clip(faces,Vector((math.cos(angle),math.sin(angle),0)),radius*.975)
     vertices=[];indices=[];top=max(p.z for f in faces for p in f)
     for face in faces:
         indices.append(tuple(range(len(vertices),len(vertices)+len(face))))
@@ -141,24 +135,30 @@ for spec in MATERIALS:
         mat.node_tree.links.new(tex.outputs['Color'],absorption.inputs['Color'])
         mat.node_tree.links.new(absorption.outputs['Volume'],mat.node_tree.nodes.get('Material Output').inputs['Volume'])
 manifest={};scenes=[]
+# The shards a level keeps, tallest first: a share of them at the far levels, whose pixels cannot tell the small ones.
+KEPT=(1,1,.6,.4)
 for name,seed,height,reach,radius,count,fan in FORMS:
     scene=bpy.data.scenes.new(name);scenes.append(scene);levels={}
     for lod in range(4):
         rng=random.Random(seed);objects=[]
-        for i in range(count):
-            x,y,h,r,lean=composition(name,i,rng,height,reach,radius,count)
+        shards=[composition(name,i,rng,height,reach,radius,count) for i in range(count)]
+        tallest=sorted(range(count),key=lambda i:-shards[i][2])
+        kept=set(tallest[:max(1,round(count*KEPT[lod]))])
+        for i,(x,y,h,r,lean) in enumerate(shards):
+            if i not in kept: continue
             cut=name.removeprefix('single-') if name.startswith('single-') else None
-            v,f=prism(random.Random(seed*100+i),h,r,(x,y),lean,lod,cut)
+            v,f=prism(random.Random(seed*100+i),h,r,(x,y),lean,cut)
             if name.startswith('giant'):
-                near,_=prism(random.Random(seed*100+i),h,r,(x,y),lean,1)
+                near,_=prism(random.Random(seed*100+i),h,r,(x,y),lean)
                 norm=max(max(abs(p.y)/36,abs(p.x)/42+abs(p.y)/72) for p in near)
                 factor=min(1,.93/norm)
                 for p in v:p.x*=factor;p.y*=factor
             objects.append(make_mesh(f'{name}-lod{lod}-shard{i}',v,f,scene,'crystal'))
-        for chip in range(0 if name.startswith('single-') else 8 if name.startswith('giant') else 3):
+        # Chips show only near: from the first far level on, they are under a pixel.
+        for chip in range(0 if name.startswith('single-') or lod>0 else 6 if name.startswith('giant') else 3):
             crumbs=random.Random(seed*71+chip);angle=crumbs.random()*math.tau;distance=reach*crumbs.uniform(.45,1)
             size=crumbs.uniform(1.2,2.7) if name.startswith('giant') else crumbs.uniform(.45,1.1)
-            v,f=prism(crumbs,size*crumbs.uniform(.7,1.5),size,(math.cos(angle)*distance,math.sin(angle)*distance),(size*.8,-size*.4),lod)
+            v,f=prism(crumbs,size*crumbs.uniform(.7,1.5),size,(math.cos(angle)*distance,math.sin(angle)*distance),(size*.8,-size*.4),sides=4,terminated=False)
             for p in v:p.z-=size*.25
             # An oblique break through the small crystal leaves an angular fragment, not a miniature complete prism.
             faces=[[v[k] for k in face] for face in f]
