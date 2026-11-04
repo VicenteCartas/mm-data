@@ -43,11 +43,16 @@ Generic buildings select a modular kit by gameplay weight and class even with no
 an explicit look. An isolated building can pivot about Z in the editor. Any incoming or outgoing building connection
 disables the pivot. A core-only authored GLB (base/floor/roof nodes without side tags) switches to the generic modular
 kit for that building's weight/class when connected. The editor keeps this change in the connection's undo step.
-The authored example `debug/debug-authored.glb` appears under **Specials** and follows this same contract.
+The `debug/debug-authored.glb` asset under **Specials** uses the authored-volume path, like the HPG.
+At default scale and rotation, its connected, notched wings occupy exactly two hexes: an orange two-level
+wing and a blue four-level tower, with roofs labelled 2 and 4. Closed `building_volumes` helpers follow both
+outlines. The shell has no baked interior floors; the runtime slices it by hex and creates floors that preserve
+the notches. This is a fixed model, without repeatable base/floor modules. Only the walls receive tint.
 
 Building appearance stores a tint in colour slot 0, using the editor's existing colour picker. White restores the
-original artwork; another colour multiplies its surfaces in linear light. This is a whole-building tint, including
-roofs, and does not require recolour masks in existing kits. Connected hexes share the chosen tint. `.board2` version
+original artwork; another colour multiplies only materials marked `mmBuildingPaint` in linear light. Windows,
+roof slabs and equipment keep their own finishes. Mixed atlases use `mmPaintMask` to protect their unpainted regions.
+Connected hexes share the chosen tint. `.board2` version
 3 stores rotation, tint, footprint and kit variant under `components.building.appearance`.
 
 `tools/buildings/debug_placeholders.py` supplies flat diagnostic kits for the missing medium/heavy/hardened buildings
