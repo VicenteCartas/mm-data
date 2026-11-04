@@ -142,7 +142,8 @@ def build_preview(material, path, textures, *, vertex_colors=None):
         tree.links.new(emission_color, principled.inputs['Emission Color'])
     else:
         principled.inputs['Emission Color'].default_value = emission_color
-    principled.inputs['Emission Strength'].default_value = 1 if model_emission else spec['emission_energy']
+    principled.inputs['Emission Strength'].default_value = (0 if material.get('mmEmission') == 'off'
+        else 1 if model_emission else spec['emission_energy'])
     sss = texture('sss', (-900, -1300))
     principled.inputs['Subsurface Weight'].default_value = spec['sss_strength']
     if sss:

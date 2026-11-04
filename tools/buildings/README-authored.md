@@ -59,6 +59,10 @@ Use the shared `role` field and `export_model()` in [authored_examples.py](autho
   Shared window materials can instead set `metadata/mmNightEmission = true` in their `.tres`; this also works
   on generated modular kits and mixed atlases whose emission image contains only the windows. An explicit
   GLB emission colour overrides that shared window glow. The material exporter preserves this metadata.
+  For a permanently dark surface, use `emission_off(obj)` (or `obj['building_emission_off'] = True`).
+  This exports material extras `mmEmission: "off"` without duplicating textures or erasing the original glow.
+  In the GLB editor, **Materials → Emission → Off / Inherit** changes the same override for the selected
+  surface. Inherit removes the override and restores the material's normal day/night behaviour.
   To illuminate nearby surfaces, fixed buildings may also export root extras `mmNightLights`: a list of
   `{position: [x,y,z], color: [r,g,b], power: number, size: number}`. Positions use **glTF Y-up** model units;
   colours are linear RGB. These finite point lights fade with daylight and reach zero at twice `size`.

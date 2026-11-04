@@ -106,6 +106,21 @@ def emissive(obj, colour, night=False):
     return obj
 
 
+def emission_off(obj):
+    """Keep the shared glass finish, but make this surface permanently dark."""
+    obj['building_emission_off'] = True
+    source = obj.data.materials[0]
+    key = ('emission-off', source.name)
+    if key not in materials:
+        mat = source.copy()
+        mat.name += ' emission off'
+        mat['mmEmission'] = 'off'
+        mat.node_tree.nodes.get('Principled BSDF').inputs['Emission Strength'].default_value = 0
+        materials[key] = mat
+    obj.data.materials[0] = materials[key]
+    return obj
+
+
 def box(name, center, size, key=PAINT, colour=CREAM, bevel=.35, detail=False, helper=False):
     bpy.ops.mesh.primitive_cube_add(size=1, location=center)
     obj = bpy.context.object
@@ -252,9 +267,9 @@ def project_uvs(obj):
             uv.data[li].uv = (co.y/18, co.z/18) if axis == 0 else (co.x/18, co.z/18) if axis == 1 else (co.x/18, co.y/18)
 
 
-def material_id(key, paint, emission, night=False):
+def material_id(key, paint, emission, night=False, off=False):
     suffix = '#emission-' + '-'.join(format(c, '.6g') for c in emission) if any(emission) else ''
-    return key + ('#paint' if paint else '') + suffix + ('#night' if night else '')
+    return key + ('#paint' if paint else '') + suffix + ('#night' if night else '') + ('#emission-off' if off else '')
 
 
 def export_model(items, label, low=False, helper=False):
@@ -280,7 +295,8 @@ def export_model(items, label, low=False, helper=False):
             normal_matrix = matrix.to_3x3().inverted().transposed()
             emission = tuple(obj.get('building_emission', (0, 0, 0))) if not helper else (0, 0, 0)
             night = bool(obj.get('building_night_emission', False)) and not helper
-            key = (obj['board_material'], bool(obj.get('building_paint', False)) and not helper, emission, night)
+            off = bool(obj.get('building_emission_off', False)) and not helper
+            key = (obj['board_material'], bool(obj.get('building_paint', False)) and not helper, emission, night, off)
             colour = list(obj['pigment'])
             used.add(key)
             indices = parts.setdefault(key, [])
@@ -309,13 +325,13 @@ def export_model(items, label, low=False, helper=False):
         meshes.append({'attributes':['POSITION','NORMAL','COLOR','TEXCOORD0'], 'vertices':vertices, 'parts':mesh_parts})
         nodes.append({'id':name, 'parts':node_parts})
     mats = []
-    for key, paint, emission, night in sorted(used):
+    for key, paint, emission, night, off in sorted(used):
         # All sliced and unsliced views use exactly the same shared board finishes.
         path = TEXTURES/(key+'.tres')
         import re
         albedo = re.search(r'path="([^"]+)"', path.read_text()).group(1)
         filename = '../../board/textures/'+str((Path(key).parent/albedo).as_posix())
-        mat = {'id':material_id(key, paint, emission, night), 'diffuse':[1,1,1], 'roughness':.7, 'metallic':.1,
+        mat = {'id':material_id(key, paint, emission, night, off), 'diffuse':[1,1,1], 'roughness':.7, 'metallic':.1,
                'textures':[{'type':'DIFFUSE','filename':filename}]}
         if any(emission):
             assert not paint, 'Lamp surfaces must not inherit building tint'
@@ -325,6 +341,8 @@ def export_model(items, label, low=False, helper=False):
         if night:
             assert any(emission), 'Night emission needs an emissive colour'
             mat.setdefault('extras', {})['mmNightEmission'] = True
+        if off:
+            mat.setdefault('extras', {})['mmEmission'] = 'off'
         if key != FLAT:
             spec = read_material(path, TEXTURES)
             mat.update(roughness=spec['roughness'], metallic=spec['metallic'])

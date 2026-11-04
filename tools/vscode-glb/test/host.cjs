@@ -203,6 +203,7 @@ exports.run = async () => {
     }
     await working.locator('#lod').selectOption('1'); await staged.waitForFunction(() => document.getElementById('lod').value === '1');
     assert.match(await working.locator('#status').textContent(), /15\.0/); assert.match(await staged.locator('#status').textContent(), /10\.0/);
+    await vscode.commands.executeCommand('workbench.action.focusSecondEditorGroup');
     await staged.locator('#wire').check(); await working.waitForFunction(() => document.getElementById('wire').checked);
     await staged.locator('#variant').selectOption('snow');
     for (const editor of [working, staged]) await editor.waitForFunction(() => document.getElementById('variant').value === 'snow' && document.getElementById('overlay').textContent === '');
