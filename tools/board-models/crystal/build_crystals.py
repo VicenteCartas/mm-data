@@ -48,12 +48,13 @@ def prism(rng,height,radius,origin,lean,lod):
         faces=clip(faces,Vector((nx,ny,slope)),apothem*table+slope*height)
         basal=apothem*.12/(height*.18)
         faces=clip(faces,Vector((nx,ny,-basal)),apothem*.88)
-    tilt=.22 if rng.random()<.27 else .035
-    faces=clip(faces,Vector((rng.uniform(-tilt,tilt),rng.uniform(-tilt,tilt),1)),height)
-    if lod==0:
-        for i in range(6):
-            angle=turn+(i+.5)*math.tau/6
-            faces=clip(faces,Vector((math.cos(angle),math.sin(angle),0)),radius*.975)
+    tilt=math.tan(rng.uniform(math.radians(15),math.radians(30))) if rng.random()<.45 else rng.uniform(.015,.08)
+    azimuth=rng.uniform(-math.pi,math.pi)
+    faces=clip(faces,Vector((tilt*math.cos(azimuth),tilt*math.sin(azimuth),1)),height)
+    # These sparse rigid meshes keep the same optical boundaries at every LOD.
+    for i in range(6):
+        angle=turn+(i+.5)*math.tau/6
+        faces=clip(faces,Vector((math.cos(angle),math.sin(angle),0)),radius*.975)
     vertices=[];indices=[];top=max(p.z for f in faces for p in f)
     for face in faces:
         indices.append(tuple(range(len(vertices),len(vertices)+len(face))))
@@ -107,6 +108,8 @@ def model(name,objects):
     for obj in objects:
         mesh=obj.data;mesh.calc_loop_triangles();indices=[]
         for tri in mesh.loop_triangles:
+            a,b,c=[mesh.vertices[k].co for k in tri.vertices];ab,ac=b-a,c-a
+            if ab.cross(ac).length_squared < max(1e-12,max(ab.length_squared,ac.length_squared)**2*1e-10):continue
             for li in tri.loops:
                 p=mesh.vertices[mesh.loops[li].vertex_index].co;uv=mesh.uv_layers.active.data[li].uv
                 indices.append(len(vertices)//12);vertices.extend([*p,*tri.normal,1,1,1,1,uv.x,1-uv.y])
@@ -116,11 +119,15 @@ def model(name,objects):
 for spec in MATERIALS:
     mat=bpy.data.materials.get(spec['id']) or bpy.data.materials.new(spec['id']);mat.use_nodes=True
     p=mat.node_tree.nodes.get('Principled BSDF');p.inputs['Base Color'].default_value=(*spec['diffuse'],1)
-    p.inputs['Roughness'].default_value=.18 if spec['id']=='crystal' else .9
+    p.inputs['Roughness'].default_value=.14 if spec['id']=='crystal' else .9
     if spec['id']=='crystal':
-        p.inputs['IOR'].default_value=1.76;p.inputs['Transmission Weight'].default_value=.22
+        p.inputs['Base Color'].default_value=(.98,.98,.98,1)
+        p.inputs['IOR'].default_value=1.76;p.inputs['Transmission Weight'].default_value=.85
         image=bpy.data.images.load(str(BOARD/'textures/crystal/ruby-crystal_albedo.png'));image.pack()
-        tex=mat.node_tree.nodes.new('ShaderNodeTexImage');tex.image=image;mat.node_tree.links.new(tex.outputs['Color'],p.inputs['Base Color'])
+        tex=mat.node_tree.nodes.new('ShaderNodeTexImage');tex.image=image
+        absorption=mat.node_tree.nodes.new('ShaderNodeVolumeAbsorption');absorption.inputs['Density'].default_value=.06
+        mat.node_tree.links.new(tex.outputs['Color'],absorption.inputs['Color'])
+        mat.node_tree.links.new(absorption.outputs['Volume'],mat.node_tree.nodes.get('Material Output').inputs['Volume'])
 manifest={};scenes=[]
 for name,seed,height,reach,radius,count,fan in FORMS:
     scene=bpy.data.scenes.new(name);scenes.append(scene);levels={}
