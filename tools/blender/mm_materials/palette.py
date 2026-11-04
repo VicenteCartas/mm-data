@@ -23,7 +23,7 @@ def thumbnail_path(path, root):
     signature = [(str(file), file.stat().st_mtime_ns, file.stat().st_size) for file in sorted(files)]
     # Include parsed shader parameters as well as all map timestamps. Bump the
     # version when the renderer or preview shader changes.
-    key = hashlib.sha256(json.dumps(['sphere-v1', spec, signature], sort_keys=True, default=str).encode()).hexdigest()
+    key = hashlib.sha256(json.dumps(['sphere-v2', spec, signature], sort_keys=True, default=str).encode()).hexdigest()
     return root.parents[3] / '.tmp/blender-material-previews' / (key + '.png'), spec['albedo']
 
 

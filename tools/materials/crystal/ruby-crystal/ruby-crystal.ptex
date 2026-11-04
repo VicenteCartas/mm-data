@@ -1,0 +1,958 @@
+{
+	"connections": [
+		{
+			"from": "AmbientNoise",
+			"from_port": 0,
+			"to": "base_color",
+			"to_port": 0
+		},
+		{
+			"from": "CrackWarpNoise",
+			"from_port": 0,
+			"to": "base_color",
+			"to_port": 1
+		},
+		{
+			"from": "CrackWarpNoise",
+			"from_port": 0,
+			"to": "base_color",
+			"to_port": 2
+		},
+		{
+			"from": "base_color",
+			"from_port": 0,
+			"to": "Material",
+			"to_port": 0
+		},
+		{
+			"from": "AmbientNoise",
+			"from_port": 0,
+			"to": "surface_detail",
+			"to_port": 0
+		},
+		{
+			"from": "AmbientNoise",
+			"from_port": 0,
+			"to": "surface_detail",
+			"to_port": 1
+		},
+		{
+			"from": "base_color",
+			"from_port": 1,
+			"to": "surface_detail",
+			"to_port": 2
+		},
+		{
+			"from": "surface_detail",
+			"from_port": 0,
+			"to": "Material",
+			"to_port": 4
+		},
+		{
+			"from": "surface_detail",
+			"from_port": 1,
+			"to": "Material",
+			"to_port": 6
+		},
+		{
+			"from": "surface_detail",
+			"from_port": 2,
+			"to": "Material",
+			"to_port": 2
+		},
+		{
+			"from": "Translucency",
+			"from_port": 0,
+			"to": "Material",
+			"to_port": 8
+		},
+		{
+			"from": "AmbientNoise",
+			"from_port": 0,
+			"to": "BodyOpacity",
+			"to_port": 0
+		},
+		{
+			"from": "BodyOpacity",
+			"from_port": 0,
+			"to": "Material",
+			"to_port": 7
+		}
+	],
+	"label": "Ruby crystal",
+	"longdesc": "",
+	"name": "ruby-crystal",
+	"node_position": {
+		"x": 0.0,
+		"y": 0.0
+	},
+	"nodes": [
+		{
+			"name": "CrackWarpNoise",
+			"node_position": {
+				"x": -144.0,
+				"y": 50.25
+			},
+			"parameters": {
+				"iterations": 3.0,
+				"persistence": 0.5,
+				"scale_x": 4.0,
+				"scale_y": 4.0
+			},
+			"seed": -33118.0,
+			"type": "perlin"
+		},
+		{
+			"name": "AmbientNoise",
+			"node_position": {
+				"x": 56.0,
+				"y": -361.75
+			},
+			"parameters": {
+				"iterations": 10.0,
+				"persistence": 0.9,
+				"scale_x": 2.0,
+				"scale_y": 2.0
+			},
+			"seed": -53153.0,
+			"type": "perlin"
+		},
+		{
+			"export_paths": {},
+			"name": "Material",
+			"node_position": {
+				"x": 944.0,
+				"y": -30.0
+			},
+			"parameters": {
+				"albedo_color": {
+					"a": 1.0,
+					"b": 1.0,
+					"g": 1.0,
+					"r": 1.0,
+					"type": "Color"
+				},
+				"ao": 1.0,
+				"depth_scale": 0.0,
+				"emission_energy": 0.0,
+				"flags_transparent": false,
+				"metallic": 0.0,
+				"normal": 0.05,
+				"roughness": 1.0,
+				"size": 10.0,
+				"sss": 0.18
+			},
+			"seed": -49742.0,
+			"type": "material"
+		},
+		{
+			"connections": [
+				{
+					"from": "ShardField",
+					"from_port": 0,
+					"to": "CrackRamp",
+					"to_port": 0
+				},
+				{
+					"from": "BaseTone",
+					"from_port": 0,
+					"to": "CrackComposite",
+					"to_port": 1
+				},
+				{
+					"from": "CrackRamp",
+					"from_port": 0,
+					"to": "FractureWarp",
+					"to_port": 0
+				},
+				{
+					"from": "FractureWarp",
+					"from_port": 0,
+					"to": "CrackComposite",
+					"to_port": 0
+				},
+				{
+					"from": "gen_inputs",
+					"from_port": 0,
+					"to": "BaseTone",
+					"to_port": 0
+				},
+				{
+					"from": "gen_inputs",
+					"from_port": 1,
+					"to": "FractureWarp",
+					"to_port": 1
+				},
+				{
+					"from": "gen_inputs",
+					"from_port": 2,
+					"to": "ColorizeUnused",
+					"to_port": 0
+				},
+				{
+					"from": "CrackComposite",
+					"from_port": 0,
+					"to": "gen_outputs",
+					"to_port": 0
+				},
+				{
+					"from": "FractureWarp",
+					"from_port": 0,
+					"to": "gen_outputs",
+					"to_port": 1
+				}
+			],
+			"label": "Base Color",
+			"longdesc": "",
+			"name": "base_color",
+			"node_position": {
+				"x": 256.0,
+				"y": -85.9166641235352
+			},
+			"nodes": [
+				{
+					"name": "gen_inputs",
+					"node_position": {
+						"x": -144.0,
+						"y": -85.9166641235352
+					},
+					"parameters": {},
+					"ports": [
+						{
+							"group_size": 0.0,
+							"name": "in0",
+							"type": "f"
+						},
+						{
+							"group_size": 0.0,
+							"name": "in1",
+							"type": "f"
+						},
+						{
+							"group_size": 0.0,
+							"name": "in2",
+							"type": "f"
+						}
+					],
+					"seed_int": 0,
+					"seed_locked": true,
+					"type": "ios"
+				},
+				{
+					"name": "gen_outputs",
+					"node_position": {
+						"x": 656.0,
+						"y": -85.9166641235352
+					},
+					"parameters": {},
+					"ports": [
+						{
+							"group_size": 0.0,
+							"name": "out0",
+							"type": "rgba"
+						},
+						{
+							"group_size": 0.0,
+							"name": "out1",
+							"type": "rgba"
+						}
+					],
+					"seed_int": 0,
+					"type": "ios"
+				},
+				{
+					"name": "gen_parameters",
+					"node_position": {
+						"x": -144.0,
+						"y": 114.083335876465
+					},
+					"parameters": {
+						"param0": 0.12,
+						"param1": {
+							"interpolation": 1,
+							"points": [
+								{
+									"a": 1.0,
+									"b": 0.0240000002086163,
+									"g": 0.00600000005215406,
+									"pos": 0.0,
+									"r": 0.360000014305115
+								},
+								{
+									"a": 1.0,
+									"b": 0.0299999993294477,
+									"g": 0.00800000037997961,
+									"pos": 0.35,
+									"r": 0.430000007152557
+								},
+								{
+									"a": 1.0,
+									"b": 0.0350000001490116,
+									"g": 0.00999999977648258,
+									"pos": 0.72,
+									"r": 0.5
+								},
+								{
+									"a": 1.0,
+									"b": 0.0399999991059303,
+									"g": 0.0120000001043081,
+									"pos": 1.0,
+									"r": 0.560000002384186
+								}
+							],
+							"type": "Gradient"
+						},
+						"param2": 0.04
+					},
+					"seed_int": 0,
+					"type": "remote",
+					"widgets": [
+						{
+							"label": "",
+							"linked_widgets": [
+								{
+									"node": "ShardField",
+									"widget": "sharp"
+								}
+							],
+							"name": "param0",
+							"shortdesc": "Shard sharpness",
+							"type": "linked_control"
+						},
+						{
+							"label": "",
+							"linked_widgets": [
+								{
+									"node": "BaseTone",
+									"widget": "gradient"
+								}
+							],
+							"name": "param1",
+							"shortdesc": "Base color",
+							"type": "linked_control"
+						},
+						{
+							"label": "",
+							"linked_widgets": [
+								{
+									"node": "CrackComposite",
+									"widget": "amount"
+								}
+							],
+							"name": "param2",
+							"shortdesc": "Crack contrast",
+							"type": "linked_control"
+						}
+					]
+				},
+				{
+					"name": "ShardField",
+					"node_position": {
+						"x": -165.0,
+						"y": -96.75
+					},
+					"parameters": {
+						"folds": 2.0,
+						"iter": 4.0,
+						"off": 0.0,
+						"per": 0.5,
+						"sharp": 0.12,
+						"sx": 7.0,
+						"sy": 7.0
+					},
+					"seed": 3749.0,
+					"type": "shard_fbm"
+				},
+				{
+					"name": "CrackRamp",
+					"node_position": {
+						"x": 93.0,
+						"y": -117.75
+					},
+					"parameters": {
+						"gradient": {
+							"interpolation": 1,
+							"points": [
+								{
+									"a": 1.0,
+									"b": 0.0,
+									"g": 0.0,
+									"pos": 0.0,
+									"r": 0.0
+								},
+								{
+									"a": 1.0,
+									"b": 0.150000005960464,
+									"g": 0.150000005960464,
+									"pos": 0.3,
+									"r": 0.150000005960464
+								},
+								{
+									"a": 1.0,
+									"b": 0.850000023841858,
+									"g": 0.850000023841858,
+									"pos": 0.7,
+									"r": 0.850000023841858
+								},
+								{
+									"a": 1.0,
+									"b": 1.0,
+									"g": 1.0,
+									"pos": 1.0,
+									"r": 1.0
+								}
+							],
+							"type": "Gradient"
+						}
+					},
+					"seed": -20024.0,
+					"type": "colorize"
+				},
+				{
+					"name": "BaseTone",
+					"node_position": {
+						"x": 338.0,
+						"y": -237.75
+					},
+					"parameters": {
+						"gradient": {
+							"interpolation": 1,
+							"points": [
+								{
+									"a": 1.0,
+									"b": 0.0240000002086163,
+									"g": 0.00600000005215406,
+									"pos": 0.0,
+									"r": 0.360000014305115
+								},
+								{
+									"a": 1.0,
+									"b": 0.0299999993294477,
+									"g": 0.00800000037997961,
+									"pos": 0.35,
+									"r": 0.430000007152557
+								},
+								{
+									"a": 1.0,
+									"b": 0.0350000001490116,
+									"g": 0.00999999977648258,
+									"pos": 0.72,
+									"r": 0.5
+								},
+								{
+									"a": 1.0,
+									"b": 0.0399999991059303,
+									"g": 0.0120000001043081,
+									"pos": 1.0,
+									"r": 0.560000002384186
+								}
+							],
+							"type": "Gradient"
+						}
+					},
+					"seed": -5635.0,
+					"type": "colorize"
+				},
+				{
+					"name": "ColorizeUnused",
+					"node_position": {
+						"x": 465.0,
+						"y": 33.25
+					},
+					"parameters": {
+						"gradient": {
+							"interpolation": 1,
+							"points": [
+								{
+									"a": 1.0,
+									"b": 0.0,
+									"g": 0.0,
+									"pos": 0.0,
+									"r": 0.0
+								},
+								{
+									"a": 1.0,
+									"b": 0.520833015441895,
+									"g": 0.520833015441895,
+									"pos": 1.0,
+									"r": 0.520833015441895
+								}
+							],
+							"type": "Gradient"
+						}
+					},
+					"seed": 34670.0,
+					"type": "colorize"
+				},
+				{
+					"name": "CrackComposite",
+					"node_position": {
+						"x": 541.0,
+						"y": -82.75
+					},
+					"parameters": {
+						"amount": 0.04,
+						"blend_type": 2.0
+					},
+					"seed": -50387.0,
+					"type": "blend"
+				},
+				{
+					"generic_size": 1,
+					"name": "FractureWarp",
+					"node_position": {
+						"x": 264.0,
+						"y": -13.75
+					},
+					"parameters": {
+						"amount": 0.08,
+						"eps": 0.045,
+						"mode": 0.0
+					},
+					"seed": -6133.0,
+					"type": "warp"
+				}
+			],
+			"parameters": {
+				"param0": 0.12,
+				"param1": {
+					"interpolation": 1,
+					"points": [
+						{
+							"a": 1.0,
+							"b": 0.0240000002086163,
+							"g": 0.00600000005215406,
+							"pos": 0.0,
+							"r": 0.360000014305115
+						},
+						{
+							"a": 1.0,
+							"b": 0.0299999993294477,
+							"g": 0.00800000037997961,
+							"pos": 0.35,
+							"r": 0.430000007152557
+						},
+						{
+							"a": 1.0,
+							"b": 0.0350000001490116,
+							"g": 0.00999999977648258,
+							"pos": 0.72,
+							"r": 0.5
+						},
+						{
+							"a": 1.0,
+							"b": 0.0399999991059303,
+							"g": 0.0120000001043081,
+							"pos": 1.0,
+							"r": 0.560000002384186
+						}
+					],
+					"type": "Gradient"
+				},
+				"param2": 0.04
+			},
+			"seed_int": 0,
+			"shortdesc": "",
+			"type": "graph"
+		},
+		{
+			"connections": [
+				{
+					"from": "ReliefContrast",
+					"from_port": 0,
+					"to": "ReliefComposite",
+					"to_port": 1
+				},
+				{
+					"from": "ReliefComposite",
+					"from_port": 0,
+					"to": "ReliefRamp",
+					"to_port": 0
+				},
+				{
+					"from": "ReliefRamp",
+					"from_port": 0,
+					"to": "CrystalNormal",
+					"to_port": 0
+				},
+				{
+					"from": "gen_inputs",
+					"from_port": 0,
+					"to": "ReliefComposite",
+					"to_port": 0
+				},
+				{
+					"from": "gen_inputs",
+					"from_port": 1,
+					"to": "RoughnessConst",
+					"to_port": 0
+				},
+				{
+					"from": "gen_inputs",
+					"from_port": 2,
+					"to": "ReliefContrast",
+					"to_port": 0
+				},
+				{
+					"from": "CrystalNormal",
+					"from_port": 0,
+					"to": "gen_outputs",
+					"to_port": 0
+				},
+				{
+					"from": "ReliefComposite",
+					"from_port": 0,
+					"to": "gen_outputs",
+					"to_port": 1
+				},
+				{
+					"from": "RoughnessConst",
+					"from_port": 0,
+					"to": "gen_outputs",
+					"to_port": 2
+				}
+			],
+			"label": "Surface Detail",
+			"longdesc": "",
+			"name": "surface_detail",
+			"node_position": {
+				"x": 423.563171386719,
+				"y": 129.862503051758
+			},
+			"nodes": [
+				{
+					"name": "gen_inputs",
+					"node_position": {
+						"x": 23.563159942627,
+						"y": 129.862503051758
+					},
+					"parameters": {},
+					"ports": [
+						{
+							"group_size": 0.0,
+							"name": "in0",
+							"type": "rgba"
+						},
+						{
+							"group_size": 0.0,
+							"name": "in1",
+							"type": "f"
+						},
+						{
+							"group_size": 0.0,
+							"name": "in2",
+							"type": "f"
+						}
+					],
+					"seed_int": 0,
+					"seed_locked": true,
+					"type": "ios"
+				},
+				{
+					"name": "gen_outputs",
+					"node_position": {
+						"x": 823.563171386719,
+						"y": 129.862503051758
+					},
+					"parameters": {},
+					"ports": [
+						{
+							"group_size": 0.0,
+							"name": "out0",
+							"type": "rgb"
+						},
+						{
+							"group_size": 0.0,
+							"name": "out1",
+							"type": "rgba"
+						},
+						{
+							"group_size": 0.0,
+							"name": "out2",
+							"type": "rgba"
+						}
+					],
+					"seed_int": 0,
+					"type": "ios"
+				},
+				{
+					"name": "gen_parameters",
+					"node_position": {
+						"x": 23.563159942627,
+						"y": 329.862487792969
+					},
+					"parameters": {
+						"param0": {
+							"interpolation": 1,
+							"points": [
+								{
+									"a": 1.0,
+									"b": 0.0799999982118607,
+									"g": 0.0799999982118607,
+									"pos": 0.0,
+									"r": 0.0799999982118607
+								},
+								{
+									"a": 1.0,
+									"b": 0.180000007152557,
+									"g": 0.180000007152557,
+									"pos": 1.0,
+									"r": 0.180000007152557
+								}
+							],
+							"type": "Gradient"
+						},
+						"param1": 0.004
+					},
+					"seed_int": 0,
+					"type": "remote",
+					"widgets": [
+						{
+							"label": "",
+							"linked_widgets": [
+								{
+									"node": "RoughnessConst",
+									"widget": "gradient"
+								}
+							],
+							"name": "param0",
+							"shortdesc": "Roughness",
+							"type": "linked_control"
+						},
+						{
+							"label": "",
+							"linked_widgets": [
+								{
+									"node": "CrystalNormal",
+									"widget": "param1"
+								}
+							],
+							"name": "param1",
+							"shortdesc": "Surface relief",
+							"type": "linked_control"
+						}
+					]
+				},
+				{
+					"name": "ReliefComposite",
+					"node_position": {
+						"x": 442.0,
+						"y": 175.25
+					},
+					"parameters": {
+						"amount": 0.25,
+						"blend_type": 0.0
+					},
+					"seed": 47913.0,
+					"type": "blend"
+				},
+				{
+					"name": "CrystalNormal",
+					"node_position": {
+						"x": 706.0,
+						"y": 95.25
+					},
+					"parameters": {
+						"param0": 11.0,
+						"param1": 0.004,
+						"param2": 0.0,
+						"param4": 0.0
+					},
+					"seed": 54049.0,
+					"type": "normal_map"
+				},
+				{
+					"name": "ReliefContrast",
+					"node_position": {
+						"x": 252.0,
+						"y": 178.25
+					},
+					"parameters": {
+						"gradient": {
+							"interpolation": 1,
+							"points": [
+								{
+									"a": 1.0,
+									"b": 1.0,
+									"g": 1.0,
+									"pos": 0.0,
+									"r": 1.0
+								},
+								{
+									"a": 1.0,
+									"b": 0.0,
+									"g": 0.0,
+									"pos": 1.0,
+									"r": 0.0
+								}
+							],
+							"type": "Gradient"
+						}
+					},
+					"seed": 41526.0,
+					"type": "colorize"
+				},
+				{
+					"name": "ReliefRamp",
+					"node_position": {
+						"x": 717.815795898438,
+						"y": 200.5625
+					},
+					"parameters": {
+						"gradient": {
+							"interpolation": 1,
+							"points": [
+								{
+									"a": 1.0,
+									"b": 1.0,
+									"g": 1.0,
+									"pos": 0.0,
+									"r": 1.0
+								},
+								{
+									"a": 1.0,
+									"b": 0.0,
+									"g": 0.0,
+									"pos": 1.0,
+									"r": 0.0
+								}
+							],
+							"type": "Gradient"
+						}
+					},
+					"seed": 10523.0,
+					"type": "colorize"
+				},
+				{
+					"name": "RoughnessConst",
+					"node_position": {
+						"x": 0.0,
+						"y": 0.0
+					},
+					"parameters": {
+						"gradient": {
+							"interpolation": 1,
+							"points": [
+								{
+									"a": 1.0,
+									"b": 0.0799999982118607,
+									"g": 0.0799999982118607,
+									"pos": 0.0,
+									"r": 0.0799999982118607
+								},
+								{
+									"a": 1.0,
+									"b": 0.180000007152557,
+									"g": 0.180000007152557,
+									"pos": 1.0,
+									"r": 0.180000007152557
+								}
+							],
+							"type": "Gradient"
+						}
+					},
+					"seed_int": 0,
+					"type": "colorize"
+				}
+			],
+			"parameters": {
+				"param0": {
+					"interpolation": 1,
+					"points": [
+						{
+							"a": 1.0,
+							"b": 0.0799999982118607,
+							"g": 0.0799999982118607,
+							"pos": 0.0,
+							"r": 0.0799999982118607
+						},
+						{
+							"a": 1.0,
+							"b": 0.180000007152557,
+							"g": 0.180000007152557,
+							"pos": 1.0,
+							"r": 0.180000007152557
+						}
+					],
+					"type": "Gradient"
+				},
+				"param1": 0.004
+			},
+			"seed_int": 0,
+			"shortdesc": "",
+			"type": "graph"
+		},
+		{
+			"name": "Translucency",
+			"node_position": {
+				"x": 300.0,
+				"y": 600.0
+			},
+			"parameters": {
+				"color": 1.0
+			},
+			"seed_int": 0,
+			"seed_locked": true,
+			"type": "uniform_greyscale"
+		},
+		{
+			"color": {
+				"a": 1.0,
+				"b": 0.300000011920929,
+				"g": 0.25,
+				"r": 0.200000002980232,
+				"type": "Color"
+			},
+			"name": "About",
+			"node_position": {
+				"x": -600.0,
+				"y": -400.0
+			},
+			"parameters": {},
+			"seed": 61736.0,
+			"size": {
+				"x": 900.0,
+				"y": 200.0
+			},
+			"text": "Dark garnet/ruby mineral with angular internal growth fractures, polished dielectric facets, low relief and partial light transmission. The geometry supplies the large flat facets and bevels; this graph supplies body colour, fine inclusions, roughness, normal, opacity and subsurface scattering. The same material is used by all cover heights and all five giant props. Export Godot 4 Standard.",
+			"title": "Ruby crystal — cover and giant outcrops",
+			"type": "comment"
+		},
+		{
+			"name": "BodyOpacity",
+			"node_position": {
+				"x": 550.0,
+				"y": 600.0
+			},
+			"parameters": {
+				"gradient": {
+					"interpolation": 1,
+					"points": [
+						{
+							"a": 1.0,
+							"b": 1.0,
+							"g": 1.0,
+							"pos": 0.0,
+							"r": 1.0
+						},
+						{
+							"a": 1.0,
+							"b": 1.0,
+							"g": 1.0,
+							"pos": 1.0,
+							"r": 1.0
+						}
+					],
+					"type": "Gradient"
+				}
+			},
+			"seed_int": 0,
+			"type": "colorize"
+		}
+	],
+	"parameters": {},
+	"project_thumbnail": "UklGRmQFAABXRUJQVlA4WAoAAAAQAAAALwAALwAAQUxQSJQCAAANoCNteyJJevXrV9HAMpNX7Q9UrMd4gGEea5ksZmYGi3n3AG12ZIzVFT0X4BmrrOXdqqiUUlooyNIJImICmFOsBzh//bn89tcvAK6K1C9SVmbLdb1uM1Y0ZXysX6yVaIx1aRmvObyDqe3OZd3edRt/+PQkGmqR5K945gZIFWIwJFLELu3cv/LMWWPifFry8D0QxFomGoxAjK2Dj374ZtIwjxtd9BN4dcwrksL6lzZvGzg/mxtu+gavDeo0msLNn+xZdX4WN7z2PXyHuo36S5fvP+L8NB1teo/QZoEuNIv7VzVMkvKibwgtFqqhubxnIHFC4id8mwWrv/STbYn/q38Y32Hhzt+8+U0NIOUV96BkqLz04VmJSHwa38jB+PWPPCtRymtuQMlSObhyUmx1GN/Iw/jOvk+tNzuwZGrZ+UPJFlI2kpY2rnEdVTZU9rqCHln3+nSRfITusfObmHwMl43XR7LuyLkVJh9Du0n2vzXbyWSTzGj8l3TIeRh/GV+WTDbJDOBYN0o2UY5Bv0fOfSius/lYCljbuBQlk2iP/YErf9hZ2Uwq+z2u4tN9nWSySA3/FVXUkysHg2YR9HO0JPLsI+uTySA1xq8QIerZD18KmkHQx9ASCObNzTd7tzDfKY4az/9N2vbJpUEXFNo/34lJE6IO9iw3gy4ktKo70JLJwa3eXzS9W4BvV9fhRkz37sj9y5d6NTWl0Pn5DtyQWb1b3fPJzXg1NaTQ0OJO3JDZvQ62bX5pPUFkjhidjh87io6YN0h688NHD7ZIFWIwJFLEWgmfv4wxJfNH9OwzK/t3LlkmGozAse+/BPWJWoPIyU9/2Hhdr3tZp81oODjWL/4AjSV1xyi2XCv6x8bSZBz5v6tKZgdWUDggqgIAAFAQAJ0BKjAAMAA+kTqWSCWjIiEuOAzIsBIJYgCxHyYFJ9LwB6Nttlz8G4AdYB0xj6tMo7qczsVu9PrPb9M/9H3CuiP+sfsKfsqVaKNqVQ7p3hmPeH/Di+oZRgsmmxp89RHcBuXeFe7pw2IjnEwczmZfz47ITjfFqowcNsh1O77WHKkafds/1tx2PAAA/v3a+t0JetiWni8S8c7b1NX3ETQMIb3/ijjLHSswfbFnx6ziWqBq+jxizcF6mCTwYr1QYmO7GMwCq09xK5he08zlig7+TFxNi1jM/4lJtoqkaf5n6IJuvMY+QaIpV0po7he0IvDjf/xL+MNMUaQ/Jam0Ozg3u5gTgXUO/0lM6B1j1fJnmYvT9jPl072UoYHjogNeiIydlHpGpfsP2IzicQ2b8dIVZVSBZkDWcWU708LK3GfdyFU+vRXaMw/RXjY8K46WnGf1wgW6HXDlsqTwmBVOLS6CXztTar/pZZ+SJq/k4K8VNVyBR3W2EE4gC+q7rCQji4vk4T1XtMIlF1DUSPwrvFidh/03tHDfghUNA/zRJECs9QfLKPSYThA51mwdjCImemajpAP+BfhmrxmK3A0aQVsGh8qZgXODHN+ZnnBupHL86Ygz1zlSLyHSD5n9/xdDMUw7JseR61IuzqB0lxruFlMH1t6xUkwCJqOKndPX+vyNraAaMBlbgJjmGwe4j+T9r5yK1X+OlzFBo4YIjVIA8XWyvWS8WWisDqFmCr1Ny0q4pOfyRtqEKq3CHo7+aRDcRP8ArX3347cz7qJhkhSyvsKl1JbyoaVYYCHlOnpgVzlJvtMZKJBethM7uiUJuEgwVcGwg6M7P6VhxZgpySo82M0wDGDzL+aIzhPIun9zUmJmHXdSE6ogrFcpHZkFYt+ZBYbteYKkDEAAAAA=",
+	"seed_int": 0,
+	"shortdesc": "",
+	"type": "graph"
+}

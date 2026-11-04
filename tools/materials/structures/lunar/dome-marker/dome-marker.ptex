@@ -1,0 +1,121 @@
+{
+	"connections": [
+		{
+			"from": "PanelFinish",
+			"from_port": 0,
+			"to": "Material",
+			"to_port": 0
+		},
+		{
+			"from": "PanelFinish",
+			"from_port": 0,
+			"to": "Material",
+			"to_port": 3
+		}
+	],
+	"label": "dome-marker",
+	"longdesc": "",
+	"name": "dome-marker",
+	"node_position": {
+		"x": 0.0,
+		"y": 0.0
+	},
+	"nodes": [
+		{
+			"color": {
+				"a": 1.0,
+				"b": 0.0,
+				"g": 0.0,
+				"r": 0.0,
+				"type": "Color"
+			},
+			"name": "About",
+			"node_position": {
+				"x": 0.0,
+				"y": -300.0
+			},
+			"parameters": {},
+			"seed": -300.0,
+			"size": {
+				"x": 800.0,
+				"y": 200.0
+			},
+			"text": "Lunar dome reference finish. Cladding/deck use imagegen plate-study albedo; trim and lights are procedural. The editable PanelFinish shader supplies coordinated seams, fastener relief, roughness and AO. Export stock Godot/Godot 4 Standard to a fresh prefix. Deck: 2x2 plates per 9 model units; cladding: 4 bays x 2 storeys per 36 units; trim: V along the member; window: one bounded pane. Roof equipment remains editor-authored.",
+			"title": "dome-marker",
+			"type": "comment"
+		},
+		{
+			"name": "PanelFinish",
+			"node_position": {
+				"x": 0.0,
+				"y": 0.0
+			},
+			"parameters": {},
+			"seed_int": 0,
+			"shader_model": {
+				"code": "",
+				"global": "",
+				"inputs": [],
+				"instance": "\nfloat $(name)_hash(vec2 p) { return fract(sin(dot(p,vec2(127.1,311.7)))*43758.5453); }\nfloat $(name)_noise(vec2 p, float n) {\n    vec2 i=floor(p*n), f=fract(p*n); f=f*f*(3.0-2.0*f);\n    return mix(mix($(name)_hash(mod(i,n)), $(name)_hash(mod(i+vec2(1,0),n)),f.x),\n               mix($(name)_hash(mod(i+vec2(0,1),n)), $(name)_hash(mod(i+vec2(1,1),n)),f.x),f.y);\n}\nfloat $(name)_box(vec2 p, vec2 c, vec2 r) {\n    vec2 q=abs(p-c)-r; return length(max(q,vec2(0)))+min(max(q.x,q.y),0.0);\n}\nfloat $(name)_line(float d, float width) { return 1.0-smoothstep(width,width+0.0015,abs(d)); }\nfloat $(name)_dot(vec2 p, vec2 c, float r) { return 1.0-smoothstep(r,r+0.002,length(p-c)); }\nfloat $(name)_bolts(vec2 p, vec2 inset) {\n    vec2 q=abs(p-0.5); return 1.0-smoothstep(0.018,0.025,length(q-(0.5-inset)));\n}\nfloat $(name)_plateSeam(vec2 uv) {\n    vec2 p=fract(uv*2.0);\n    float edge=min(min(p.x,1.0-p.x),min(p.y,1.0-p.y));\n    return 1.0-smoothstep(0.005,0.04,edge);\n}\n\nvec4 $(name)_pattern(vec2 uv) { return vec4(1.0,0.5,0.0,0.0); }\n\nvec3 $(name)_albedo(vec2 uv) {\n    vec4 p=$(name)_pattern(uv);\n    return vec3(p.r)*vec3(1.0,0.48,0.04);\n}\nvec3 $(name)_normal(vec2 uv) {\n    float e=1.0/1024.0;\n    float dx=($(name)_pattern(uv+vec2(e,0)).g-$(name)_pattern(uv-vec2(e,0)).g)/(2.0*e);\n    float dy=($(name)_pattern(uv+vec2(0,e)).g-$(name)_pattern(uv-vec2(0,e)).g)/(2.0*e);\n    vec3 n=normalize(vec3(-dx*.035,dy*.035,1.0));\n    // Material Maker's internal normal convention is flipped on X and Z by its exporter.\n    return n*vec3(-0.5,0.5,-0.5)+vec3(0.5);\n}\n",
+				"name": "dome-marker",
+				"outputs": [
+					{
+						"rgb": "$(name)_albedo($uv)",
+						"type": "rgb"
+					},
+					{
+						"f": ".0",
+						"type": "f"
+					},
+					{
+						"f": ".57 + $(name)_noise($uv,64.0)*0.05",
+						"type": "f"
+					},
+					{
+						"rgb": "$(name)_normal($uv)",
+						"type": "rgb"
+					},
+					{
+						"f": "1.0-$(name)_pattern($uv).b*0.22",
+						"type": "f"
+					}
+				],
+				"parameters": []
+			},
+			"type": "shader"
+		},
+		{
+			"export_paths": {},
+			"name": "Material",
+			"node_position": {
+				"x": 500.0,
+				"y": 0.0
+			},
+			"parameters": {
+				"albedo_color": {
+					"a": 1.0,
+					"b": 1.0,
+					"g": 1.0,
+					"r": 1.0,
+					"type": "Color"
+				},
+				"ao": 1.0,
+				"depth_scale": 0.5,
+				"emission_energy": 2.2,
+				"flags_transparent": false,
+				"metallic": 0.0,
+				"normal": 1.0,
+				"roughness": 0.3,
+				"size": 5.0,
+				"sss": 0.0
+			},
+			"seed": 51340.0,
+			"type": "material"
+		}
+	],
+	"parameters": {},
+	"project_thumbnail": "UklGRjYFAABXRUJQVlA4WAoAAAAQAAAALwAALwAAQUxQSJQCAAANoCNteyJJevXrV9HAMpNX7Q9UrMd4gGEea5ksZmYGi3n3AG12ZIzVFT0X4BmrrOXdqqiUUlooyNIJImICmFOsBzh//bn89tcvAK6K1C9SVmbLdb1uM1Y0ZXysX6yVaIx1aRmvObyDqe3OZd3edRt/+PQkGmqR5K945gZIFWIwJFLELu3cv/LMWWPifFry8D0QxFomGoxAjK2Dj374ZtIwjxtd9BN4dcwrksL6lzZvGzg/mxtu+gavDeo0msLNn+xZdX4WN7z2PXyHuo36S5fvP+L8NB1teo/QZoEuNIv7VzVMkvKibwgtFqqhubxnIHFC4id8mwWrv/STbYn/q38Y32Hhzt+8+U0NIOUV96BkqLz04VmJSHwa38jB+PWPPCtRymtuQMlSObhyUmx1GN/Iw/jOvk+tNzuwZGrZ+UPJFlI2kpY2rnEdVTZU9rqCHln3+nSRfITusfObmHwMl43XR7LuyLkVJh9Du0n2vzXbyWSTzGj8l3TIeRh/GV+WTDbJDOBYN0o2UY5Bv0fOfSius/lYCljbuBQlk2iP/YErf9hZ2Uwq+z2u4tN9nWSySA3/FVXUkysHg2YR9HO0JPLsI+uTySA1xq8QIerZD18KmkHQx9ASCObNzTd7tzDfKY4az/9N2vbJpUEXFNo/34lJE6IO9iw3gy4ktKo70JLJwa3eXzS9W4BvV9fhRkz37sj9y5d6NTWl0Pn5DtyQWb1b3fPJzXg1NaTQ0OJO3JDZvQ62bX5pPUFkjhidjh87io6YN0h688NHD7ZIFWIwJFLEWgmfv4wxJfNH9OwzK/t3LlkmGozAse+/BPWJWoPIyU9/2Hhdr3tZp81oODjWL/4AjSV1xyi2XCv6x8bSZBz5v6tKZgdWUDggfAIAALAOAJ0BKjAAMAA+kUCcSiWjoqGnOApIsBIJZwDMLf/qcE4Wij4Wj9QD/J8zHz57Av8g/qH/D61P7AewB+uBVppOTWWFpW6zkar6OlHcY3Poi81/tk9FHsBayO7lcs2u8JpTCxb5TSemdFOHs+3vKggeW5kVclf0r/dQJ9HHgAD+/dtG33X4608WhecTS3Tiqawrf313jXWo+60NjvhCdLDLCfUGO4695IwSZS+qkbplGBSMJLiIVrd4KZznQbmUfq3WIHj1l+CaSv45pTon+H/zGFoA0mNWRXJ72bnd3ZRqCp/LFnV5qHferrEEbauKV/08VaK7rrDURUCzQxokVb8f8KmWSRKkYiAI0Amsb7+3YIknHHjU1natCKM/qf3oqF4U1zTZCcHmStrVvYg+P3FE88r30eBX7ufzNf/2zqP1sWYCGG+TMDGTwXQHK2rHUn8fLbPbY/gxGxt2vNS+l+VE2EuqIb66NZ3cpUVxRiTtjvQuSZDL2WXgJBDb7zUi+aq0LJKNNEbCHrtScKI5kAvuJiOeKIw3/Ex/KjzvMVg0rZ+w8hYmmBvP4r5dPlYby7pWUgTlvLZpzFADOJj2FfRsBcf+Bff8Eb7PY8ZA0f3jzA5WQDKu0GkedppzDrBd8QcCXuf8X/rP0n6sjWFLviofcb+6wTjz5il07DB9FlSmI8gQgrGCh1m0GEqBGATZE6K2OqXRCcVT2iShdLp8stpZmxAdzy0yH07alookM+I0pR+oYWX+g2mI9LB91x2mx09KZxZc7OnwJaC7S7EV/72uzV/xRowPSd1LmjMCSlat7eZl5B/kgy4lx6QQisUm3bOh0iXKA/lPVIAAAA==",
+	"seed_int": 0,
+	"shortdesc": "",
+	"type": "graph"
+}

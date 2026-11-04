@@ -123,7 +123,8 @@
         "spore-pod",
         "mars-coral",
         "deadwood",
-        "blueprints"
+        "blueprints",
+        "crystals"
       ]
     },
     {
@@ -4300,6 +4301,16 @@
       "owner": "scorch",
       "section": "hazards/scorched",
       "family": "Scorched ground"
+    },
+    {
+      "id": "woods/crystal",
+      "label": "Crystal",
+      "owner": "vegetation",
+      "selectors": "",
+      "section": [
+        "vegetation/gameplay",
+        "vegetation/looks"
+      ]
     }
   ],
   "assets": [
@@ -6717,6 +6728,90 @@
       "label": "Xenobiology research station",
       "kind": "prop",
       "section": "buildings/authored"
+    },
+    {
+      "id": "crystal/cover-low-fan",
+      "label": "Crystal, low fan",
+      "kind": "prop",
+      "section": "vegetation/crystals",
+      "family": "Crystal clusters"
+    },
+    {
+      "id": "crystal/cover-low-crown",
+      "label": "Crystal, low crown",
+      "kind": "prop",
+      "section": "vegetation/crystals",
+      "family": "Crystal clusters"
+    },
+    {
+      "id": "crystal/cover-low-ridge",
+      "label": "Crystal, low ridge",
+      "kind": "prop",
+      "section": "vegetation/crystals",
+      "family": "Crystal clusters"
+    },
+    {
+      "id": "crystal/cover-spire",
+      "label": "Crystal, spire",
+      "kind": "prop",
+      "section": "vegetation/crystals",
+      "family": "Crystal clusters"
+    },
+    {
+      "id": "crystal/cover-forked",
+      "label": "Crystal, forked",
+      "kind": "prop",
+      "section": "vegetation/crystals",
+      "family": "Crystal clusters"
+    },
+    {
+      "id": "crystal/cover-fan",
+      "label": "Crystal, fan",
+      "kind": "prop",
+      "section": "vegetation/crystals",
+      "family": "Crystal clusters"
+    },
+    {
+      "id": "crystal/cover-crown",
+      "label": "Crystal, crown",
+      "kind": "prop",
+      "section": "vegetation/crystals",
+      "family": "Crystal clusters"
+    },
+    {
+      "id": "crystal/giant-level1",
+      "label": "Crystal, level 1",
+      "kind": "prop",
+      "section": "vegetation/crystals",
+      "family": "Giant crystals"
+    },
+    {
+      "id": "crystal/giant-level2",
+      "label": "Crystal, level 2",
+      "kind": "prop",
+      "section": "vegetation/crystals",
+      "family": "Giant crystals"
+    },
+    {
+      "id": "crystal/giant-level3",
+      "label": "Crystal, level 3",
+      "kind": "prop",
+      "section": "vegetation/crystals",
+      "family": "Giant crystals"
+    },
+    {
+      "id": "crystal/giant-level4",
+      "label": "Crystal, level 4",
+      "kind": "prop",
+      "section": "vegetation/crystals",
+      "family": "Giant crystals"
+    },
+    {
+      "id": "crystal/giant-level5",
+      "label": "Crystal, level 5",
+      "kind": "prop",
+      "section": "vegetation/crystals",
+      "family": "Giant crystals"
     }
   ]
 }

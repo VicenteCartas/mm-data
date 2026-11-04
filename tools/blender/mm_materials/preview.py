@@ -3,8 +3,14 @@ from pathlib import Path
 import json
 
 import bpy
+from mathutils import Color
 
 from .tres import read_material
+
+
+def linear_rgba(colour):
+    """Godot resource RGB is sRGB; alpha and glTF factors are already linear."""
+    return (*Color(colour[:3]).from_srgb_to_scene_linear(), colour[3])
 
 
 def build_preview(material, path, textures):
@@ -70,7 +76,8 @@ def build_preview(material, path, textures):
         return node.outputs[2]
 
     albedo = texture('albedo', (-900, 600))
-    color = mix(albedo.outputs['Color'], spec['tint'], 'MULTIPLY', (-400, 600))
+    tint = linear_rgba(spec['tint'])
+    color = mix(albedo.outputs['Color'], tint, 'MULTIPLY', (-400, 600))
     original = json.loads(material.get('_mm_surface', '{}'))
     if original.get('baseColorFactor', [1, 1, 1, 1]) != [1, 1, 1, 1]:
         color = mix(color, original['baseColorFactor'], 'MULTIPLY', (-200, 750))
@@ -79,7 +86,7 @@ def build_preview(material, path, textures):
     vertex.location = (-400, 400)
     color = mix(color, vertex.outputs['Color'], 'MULTIPLY', (0, 600))
     tree.links.new(color, principled.inputs['Base Color'])
-    material.diffuse_color = spec['tint']
+    material.diffuse_color = tint
     material.roughness = max(0, min(1, spec['roughness']))
     material.metallic = max(0, min(1, spec['metallic']))
     for i, role in enumerate(('roughness', 'metallic', 'ao')):
@@ -115,7 +122,7 @@ def build_preview(material, path, textures):
         tree.links.new(normal.outputs['Color'], node.inputs['Color'])
         tree.links.new(node.outputs['Normal'], principled.inputs['Normal'])
     emission = texture('emission', (-900, -1000))
-    emission_color = tuple(material['_mm_emission_factor']) + (1,) if model_emission else spec['emission_color']
+    emission_color = tuple(material['_mm_emission_factor']) + (1,) if model_emission else linear_rgba(spec['emission_color'])
     if emission:
         emission_color = mix(emission.outputs['Color'], emission_color,
                              'MULTIPLY' if model_emission or spec['emission_operator'] else 'ADD', (-150, -800))

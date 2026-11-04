@@ -1,0 +1,139 @@
+{
+	"connections": [
+		{
+			"from": "PanelFinish",
+			"from_port": 0,
+			"to": "Material",
+			"to_port": 0
+		},
+		{
+			"from": "PanelFinish",
+			"from_port": 1,
+			"to": "Material",
+			"to_port": 1
+		},
+		{
+			"from": "PanelFinish",
+			"from_port": 2,
+			"to": "Material",
+			"to_port": 2
+		},
+		{
+			"from": "PanelFinish",
+			"from_port": 3,
+			"to": "Material",
+			"to_port": 4
+		},
+		{
+			"from": "PanelFinish",
+			"from_port": 4,
+			"to": "Material",
+			"to_port": 5
+		}
+	],
+	"label": "dome-deck",
+	"longdesc": "",
+	"name": "dome-deck",
+	"node_position": {
+		"x": 0.0,
+		"y": 0.0
+	},
+	"nodes": [
+		{
+			"color": {
+				"a": 1.0,
+				"b": 0.0,
+				"g": 0.0,
+				"r": 0.0,
+				"type": "Color"
+			},
+			"name": "About",
+			"node_position": {
+				"x": 0.0,
+				"y": -300.0
+			},
+			"parameters": {},
+			"seed": -300.0,
+			"size": {
+				"x": 800.0,
+				"y": 200.0
+			},
+			"text": "Lunar dome reference finish. Cladding uses imagegen plate-study albedo; deck, trim and lights are procedural. The editable PanelFinish shader supplies coordinated seams, fastener relief, roughness and AO. Export stock Godot/Godot 4 Standard to a fresh prefix. Deck: 2x2 flush panels per 9 model units, square X-slotted join plates, lighter centre-crossing grid; cladding: 4 bays x 2 storeys per 36 units; trim: V along the member; window: one bounded pane. Roof equipment remains editor-authored.",
+			"title": "dome-deck",
+			"type": "comment"
+		},
+		{
+			"name": "PanelFinish",
+			"node_position": {
+				"x": 0.0,
+				"y": 0.0
+			},
+			"parameters": {},
+			"seed_int": 0,
+			"shader_model": {
+				"code": "",
+				"global": "",
+				"inputs": [],
+				"instance": "\nfloat $(name)_hash(vec2 p) { return fract(sin(dot(p,vec2(127.1,311.7)))*43758.5453); }\nfloat $(name)_noise(vec2 p, float n) {\n    vec2 i=floor(p*n), f=fract(p*n); f=f*f*(3.0-2.0*f);\n    return mix(mix($(name)_hash(mod(i,n)), $(name)_hash(mod(i+vec2(1,0),n)),f.x),\n               mix($(name)_hash(mod(i+vec2(0,1),n)), $(name)_hash(mod(i+vec2(1,1),n)),f.x),f.y);\n}\nfloat $(name)_box(vec2 p, vec2 c, vec2 r) {\n    vec2 q=abs(p-c)-r; return length(max(q,vec2(0)))+min(max(q.x,q.y),0.0);\n}\nfloat $(name)_line(float d, float width) { return 1.0-smoothstep(width,width+0.0015,abs(d)); }\nfloat $(name)_dot(vec2 p, vec2 c, float r) { return 1.0-smoothstep(r,r+0.002,length(p-c)); }\n\nvec4 $(name)_pattern(vec2 uv) {\n    vec2 p=fract(uv*2.0), cell=floor(fract(uv)*2.0);\n    float edge=min(min(p.x,1.0-p.x),min(p.y,1.0-p.y));\n    // Flush sheet-metal panels, with a square cross-slotted connector at each four-way join.\n    float seam=1.0-smoothstep(0.004,0.009,edge);\n    vec2 join=fract(p+0.5)-0.5;\n    float square=max(abs(join.x),abs(join.y));\n    float plate=1.0-smoothstep(0.039,0.044,square);\n    float rim=(1.0-smoothstep(0.047,0.052,square))-plate;\n    float slot=1.0-smoothstep(0.004,0.009,min(abs(join.x-join.y),abs(join.x+join.y)));\n    slot*=plate;\n    // The second grid crosses panel centres. It is lighter and has no raised/grouted relief.\n    float secondary=1.0-smoothstep(0.003,0.008,min(abs(p.x-0.5),abs(p.y-0.5)));\n    float wear=($(name)_noise(uv,16.0)-0.5)*0.030+($(name)_noise(uv,48.0)-0.5)*0.014\n               +($(name)_noise(uv,320.0)-0.5)*0.006;\n    float tone=0.755+($(name)_hash(cell)-0.5)*0.010+wear;\n    return vec4(tone-seam*(1.0-plate)*0.22+secondary*0.075+plate*0.012-rim*0.21-slot*0.28,\n                0.50-seam*(1.0-plate)*0.012+plate*0.005-slot*0.012,\n                seam*(1.0-plate)*0.14+rim*0.12+slot*0.08, plate);\n}\n\nvec3 $(name)_albedo(vec2 uv) {\n    vec4 p=$(name)_pattern(uv);\n    return vec3(p.r)*vec3(1.0,0.994,0.981);\n}\nvec3 $(name)_normal(vec2 uv) {\n    float e=1.0/1024.0;\n    float dx=($(name)_pattern(uv+vec2(e,0)).g-$(name)_pattern(uv-vec2(e,0)).g)/(2.0*e);\n    float dy=($(name)_pattern(uv+vec2(0,e)).g-$(name)_pattern(uv-vec2(0,e)).g)/(2.0*e);\n    vec3 n=normalize(vec3(-dx*.035,dy*.035,1.0));\n    // Material Maker's internal normal convention is flipped on X and Z by its exporter.\n    return n*vec3(-0.5,0.5,-0.5)+vec3(0.5);\n}\n",
+				"name": "dome-deck",
+				"outputs": [
+					{
+						"rgb": "$(name)_albedo($uv)",
+						"type": "rgb"
+					},
+					{
+						"f": ".0",
+						"type": "f"
+					},
+					{
+						"f": ".46 + $(name)_noise($uv,64.0)*0.05",
+						"type": "f"
+					},
+					{
+						"rgb": "$(name)_normal($uv)",
+						"type": "rgb"
+					},
+					{
+						"f": "1.0-$(name)_pattern($uv).b*0.22",
+						"type": "f"
+					}
+				],
+				"parameters": []
+			},
+			"type": "shader"
+		},
+		{
+			"export_paths": {},
+			"name": "Material",
+			"node_position": {
+				"x": 500.0,
+				"y": 0.0
+			},
+			"parameters": {
+				"albedo_color": {
+					"a": 1.0,
+					"b": 1.0,
+					"g": 1.0,
+					"r": 1.0,
+					"type": "Color"
+				},
+				"ao": 1.0,
+				"depth_scale": 0.5,
+				"emission_energy": 1.0,
+				"flags_transparent": false,
+				"metallic": 1.0,
+				"normal": 1.0,
+				"roughness": 1.0,
+				"size": 9.0,
+				"sss": 0.0
+			},
+			"seed": 51340.0,
+			"type": "material"
+		}
+	],
+	"parameters": {},
+	"project_thumbnail": "UklGRgQGAABXRUJQVlA4WAoAAAAQAAAALwAALwAAQUxQSJQCAAANoCNteyJJevXrV9HAMpNX7Q9UrMd4gGEea5ksZmYGi3n3AG12ZIzVFT0X4BmrrOXdqqiUUlooyNIJImICmFOsBzh//bn89tcvAK6K1C9SVmbLdb1uM1Y0ZXysX6yVaIx1aRmvObyDqe3OZd3edRt/+PQkGmqR5K945gZIFWIwJFLELu3cv/LMWWPifFry8D0QxFomGoxAjK2Dj374ZtIwjxtd9BN4dcwrksL6lzZvGzg/mxtu+gavDeo0msLNn+xZdX4WN7z2PXyHuo36S5fvP+L8NB1teo/QZoEuNIv7VzVMkvKibwgtFqqhubxnIHFC4id8mwWrv/STbYn/q38Y32Hhzt+8+U0NIOUV96BkqLz04VmJSHwa38jB+PWPPCtRymtuQMlSObhyUmx1GN/Iw/jOvk+tNzuwZGrZ+UPJFlI2kpY2rnEdVTZU9rqCHln3+nSRfITusfObmHwMl43XR7LuyLkVJh9Du0n2vzXbyWSTzGj8l3TIeRh/GV+WTDbJDOBYN0o2UY5Bv0fOfSius/lYCljbuBQlk2iP/YErf9hZ2Uwq+z2u4tN9nWSySA3/FVXUkysHg2YR9HO0JPLsI+uTySA1xq8QIerZD18KmkHQx9ASCObNzTd7tzDfKY4az/9N2vbJpUEXFNo/34lJE6IO9iw3gy4ktKo70JLJwa3eXzS9W4BvV9fhRkz37sj9y5d6NTWl0Pn5DtyQWb1b3fPJzXg1NaTQ0OJO3JDZvQ62bX5pPUFkjhidjh87io6YN0h688NHD7ZIFWIwJFLEWgmfv4wxJfNH9OwzK/t3LlkmGozAse+/BPWJWoPIyU9/2Hhdr3tZp81oODjWL/4AjSV1xyi2XCv6x8bSZBz5v6tKZgdWUDggSgMAAJATAJ0BKjAAMAA+iTiYR6UjoqEx1mwAoBEJbACdMoR5n6bywUq3VPHnOY203mA/WD1sv7N0wHUAeg15YP7HfCN+zf7Le0vc7MZ303PTu2kq1AA+wD5Fc+/1B7BHRL/Xj2AP10VFFG1Ko7yKMttD35BRdFGoZZjom3sooYsTeSyNmeFX0sg0ZevlVjgxdSeuh2HNYNVDugVEYNzuNlTP2RMBFT4c8AD+/rdarH74pMXSlveIPz7tsY7JjKRcKourKU4hfc+dmTM35+xeUr5wScP5VqvRxFRU005VT/uNM4MSy0KAY0d/gaF/R8rMDemAwZX7UPajAQz38WF3jzf38GJLRvBplja2r8f6n1MPyCRyMfxAvmd/ueXt3nf7UtXXG9UPFa4QYbrzFNrSc6kHANofzM73QrH8MtpVoIuTtWOn1l7Es1V9xWNbY1t2C+lLo8MMBwfSvYmrlATqMkTb3b5ugyuUMGgK2r0sXb35fPsUZHvwADWOmBfYjV+X9V+DcjHt1zfB783YuBIH2ROl3D4l0mS4tLX2uQLObEkiF6B6UFDVBQdc8ggeyEs0oZHx34xTQ+KsUZrRyBMOpXQ2WQ/a+Gb+OkxP2A0ri5mesECvuZJotuETQheCxPONXmM9g3AKZzMrE/GezhLIPRQgJqcPKnpFoLURspI+KZQsyOyG8rpF8sH0w88pyyPlftSf7JrqYlKnBen5nxwV/D4utf4EPraTxyjXlxYpsmp0dnhbm0stdf+LFNkzVJpbdoAnmbW4bndKW88ogd6ebpdLGC/AZATA5rXUIKxfMep3VBPfAvuVjzOD7t6n57T38zC30+lPzlLsi3wM8Dz+54Xpxfa7rAWWEqwX2ki8TwNeNQTl5UzFU3S9KNteQBlMGkOVt1OT6eZhq2OmvEZbpu+FVJ5VXAjY2KAkUIf+hH/zGTYU7/AuWYcm1ZU0xRv6Nua2jkjvVEC+0/bWFI7vMcE0945wus/YwUv76I178YTssrZTNtbIBkAnS1Sgbtk//4dC9HXc5/kllqAv3XDB0zHsMe+F4yCLX6vHSXEraugSVtWimweeffqqQXPpehCb7dMpsV8alk3QikHgRJUU2DrLpuRfYwOiQwMFYwAA",
+	"seed_int": 0,
+	"shortdesc": "",
+	"type": "graph"
+}

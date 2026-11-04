@@ -9,6 +9,34 @@ from glb_geometry import read_glb, write_glb
 
 
 class GlbMaterialsTest(unittest.TestCase):
+    def test_display_rgb_is_decoded_once_and_alpha_and_linear_inputs_are_preserved(self):
+        rgba = [.02, .5, .8, .37]
+        decoded = [.001547987616, .214041140482, .603827338855]
+        mesh = {'id': 'triangle', 'attributes': ['POSITION', 'NORMAL', 'COLOR', 'TEXCOORD0'],
+                'vertices': [value for p in ((0, 0, 0), (1, 0, 0), (0, 1, 0))
+                             for value in (*p, 0, 0, 1, *rgba, 0, 0)],
+                'parts': [{'id': 'face', 'type': 'TRIANGLES', 'indices': [0, 1, 2]}]}
+        model = {'nodes': [{'id': 'root', 'parts': [{'meshpartid': 'face', 'materialid': 'paint'}]}],
+                 'meshes': [mesh], 'materials': [{'id': 'paint', 'diffuse': rgba[:3], 'opacity': .41}]}
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / 'colour.glb'
+            for linear_input, data_colour in ((False, False), (True, False), (False, True)):
+                with self.subTest(linear_input=linear_input, data_colour=data_colour):
+                    mesh['colorData'] = data_colour
+                    write_glb(path, model, linear_colors=linear_input)
+                    raw = path.read_bytes()
+                    doc = json.loads(raw[20:20 + struct.unpack_from('<I', raw, 12)[0]])
+                    factor = doc['materials'][0]['pbrMetallicRoughness']['baseColorFactor']
+                    for actual, expected in zip(factor[:3], rgba[:3] if linear_input else decoded):
+                        self.assertAlmostEqual(expected, actual, places=7)
+                    self.assertEqual(.41, factor[3])
+                    loaded = read_glb(path, linear_colors=True)['meshes'][0]['vertices']
+                    expected_rgb = rgba[:3] if linear_input or data_colour else decoded
+                    for offset in range(0, len(loaded), 12):
+                        for actual, expected in zip(loaded[offset + 6:offset + 9], expected_rgb):
+                            self.assertAlmostEqual(expected, actual, places=7)
+                        self.assertAlmostEqual(.37, loaded[offset + 9], places=7)
+
     def test_authored_factors_and_packed_map_survive_round_trip(self):
         material = {'id': 'steel', 'diffuse': [.4, .5, .6], 'roughness': .37, 'metallic': .8,
                     'textures': [{'id': 'steel', 'type': 'METALLIC_ROUGHNESS', 'filename': 'surface.png'}]}
