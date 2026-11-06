@@ -87,6 +87,17 @@ def cylinder(kind, start, end, radius, sides, bevel=0.0, cap=True):
     return solid(obj, kind, bevel, segments=3, smooth=math.radians(50))
 
 
+def cone(kind, start, end, radius, sides):
+    start, end = Vector(start), Vector(end)
+    axis = end - start
+    bpy.ops.mesh.primitive_cone_add(vertices=sides, radius1=radius, radius2=0, depth=axis.length, location=(start + end) / 2,
+                                    end_fill_type='NGON')
+    obj = bpy.context.active_object
+    obj.rotation_mode = 'QUATERNION'
+    obj.rotation_quaternion = Vector((0, 0, 1)).rotation_difference(axis.normalized())
+    return solid(obj, kind, smooth=math.radians(50))
+
+
 def cap(kind, centre, radius, depth, sides, rings, rotation=(0, 0, 0)):
     """A shallow spherical cap (a dish), concave towards its local +Z."""
     bpy.ops.mesh.primitive_uv_sphere_add(segments=sides, ring_count=rings, radius=radius, location=(0, 0, 0))
@@ -400,7 +411,9 @@ def generator_ring(lod, slit=False, deep=.35, printed=True):
     face('shell', *(skin(f, *across[0]) for f in reversed(rows)))
     steps = 6 if full else 4
     arc = [(-4.3 * math.cos(k * math.pi / steps), 1.9 * math.sin(k * math.pi / steps)) for k in range(steps + 1)]
-    for y0, y1, cap in ((3.0, 3.5, 3.5), (-3.5, -3.0, -3.5)):
+    # The map's small units join their neighbours through these hubs.
+    hub = 3.75 if slit and printed else 3.5
+    for y0, y1, cap in ((3.0, hub, hub), (-hub, -3.0, -hub)):
         for (x0, z0), (x1, z1) in zip(arc, arc[1:]):
             face('shell', (x0, y0, z0), (x1, y0, z1), (x1, y1, z1), (x0, y1, z0))
         face('shell', *((x, cap, z) for x, z in (arc if cap > 0 else reversed(arc))))
@@ -412,6 +425,52 @@ def generator_ring(lod, slit=False, deep=.35, printed=True):
         bpy.context.collection.objects.link(obj)
         solid(obj, kind, smooth=math.radians(35))
     return Vector((21, 7))
+
+
+def twin_pipes(lod):
+    # The printed lunar map's pair of roof pipes along Y beside a generator bank: two collars, risers at their north end.
+    sides, z = (12 if lod == 0 else 6), 4.5
+    for x in (-3.2, 3.2):
+        cylinder('plate', (x, -44, z), (x, 44, z), 1.0, sides)
+        cylinder('plate', (x, 44, 0), (x, 44, z + .6), 1.7, sides)
+        cylinder('plate', (x, -44, 0), (x, -44, z), 1.0, sides)
+    for y in (0, -31.5):
+        cylinder('plate', (-7, y, z), (7, y, z), 2.4, sides)
+        if lod == 0:
+            box('dark', (0, y, z / 2), (8, 2.2, z))
+    return Vector((14, 90))
+
+
+def edge_spike(lod):
+    # The printed lunar map's pointed fitting on a roof's edge: its base on the roof, its point out along +Y past the wall.
+    sides = 10 if lod == 0 else 6
+    box('dark', (0, 0, 1.6), (7, 6, 3.2), bevel=.25 if lod == 0 else 0)
+    cylinder('dark', (0, 3, 2.2), (0, 6, 2.2), 2.6, sides)
+    cone('dark', (0, 6, 2.2), (0, 14, 2.2), 2.6, sides)
+    return Vector((7, 17))
+
+
+def twin_pipes(lod):
+    # The printed lunar map's pair of roof pipes along Y beside a generator bank: two collars, risers at their north end.
+    sides, z = (12 if lod == 0 else 6), 4.5
+    for x in (-3.2, 3.2):
+        cylinder('plate', (x, -44, z), (x, 44, z), 1.0, sides)
+        cylinder('plate', (x, 44, 0), (x, 44, z + .6), 1.7, sides)
+        cylinder('plate', (x, -44, 0), (x, -44, z), 1.0, sides)
+    for y in (0, -31.5):
+        cylinder('plate', (-7, y, z), (7, y, z), 2.4, sides)
+        if lod == 0:
+            box('dark', (0, y, z / 2), (8, 2.2, z))
+    return Vector((14, 90))
+
+
+def edge_spike(lod):
+    # The printed lunar map's pointed fitting on a roof's edge: its base on the roof, its point out along +Y past the wall.
+    sides = 10 if lod == 0 else 6
+    box('dark', (0, 0, 1.6), (7, 6, 3.2), bevel=.25 if lod == 0 else 0)
+    cylinder('dark', (0, 3, 2.2), (0, 6, 2.2), 2.6, sides)
+    cone('dark', (0, 6, 2.2), (0, 17, 2.2), 2.6, sides)
+    return Vector((7, 20))
 
 
 def radar_station(lod):
@@ -484,6 +543,7 @@ def sawtooth_skylight(lod):
 # Roof props: board objects of their own (models/board/scenery/roofs/<name>.glb).
 ROOF_PROPS = {'radar-dish': radar_dish, 'capsule-tanks': capsule_tanks, 'generator-ring': generator_ring,
               'generator-slit': lambda lod: generator_ring(lod, slit=True, deep=.5),
+              'twin-pipes': twin_pipes, 'edge-spike': edge_spike,
               'radar-station': radar_station, 'light-well': light_well, 'light-strip': light_strip,
               'solar-array': solar, 'dish-antenna': dish_antenna, 'sawtooth-skylight': sawtooth_skylight}
 # Colony detail props (models/board/scenery/colony/<name>.glb): building details the board places with precision
