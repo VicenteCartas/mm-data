@@ -491,7 +491,7 @@ def relay_head(x,y):
 def ring_parts(lod,slit,deep):
     """The prop's own arch as (kind, mesh) in prop units."""
     scene=bpy.context.scene;before=set(scene.objects)
-    generator_ring(lod,slit=slit,deep=deep)
+    generator_ring(lod,slit=slit,deep=deep,printed=False)
     bpy.context.view_layer.update()
     deps=bpy.context.evaluated_depsgraph_get();parts=[]
     for obj in [o for o in scene.objects if o not in before]:
@@ -512,7 +512,7 @@ def generator_units():
         for kind,data in parts:
             part=data.copy();part.transform(Matrix.Translation((x,y,z)) @ Matrix.Diagonal((sx,sy,sz,1)))
             obj=bpy.data.objects.new('generator ring',part);bpy.context.scene.collection.objects.link(obj)
-            if kind=='glass':
+            if kind=='core':
                 shared.finish(obj,FLAT,CYAN);shared.emissive(obj,REACTOR_BLUE)
             else:
                 shared.finish(obj,MACHINE,HOUSING)
