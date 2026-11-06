@@ -146,10 +146,10 @@ def main():
         for material in model['materials']:
             for texture in material.get('textures', []):
                 texture['filename'] = os.path.relpath(source.parent / texture['filename'], temp).replace(os.sep, '/')
-            material['extras'] = {'mmPaintMask': True, 'mmVariants': {'test': {
-                'textures': {'baseColor': material['textures'][0]['filename']}}}}
+            material['extras'] = {'mmSnow': {'textures': {'baseColor': material['textures'][0]['filename']}}}
         fixture = Path(temp) / 'metadata.glb'
-        extras = {'mmColourSlots': [{'id': 'paint', 'color': [0.4, 0.6, 0.8]}], 'mmAuthoring': {'test': True}}
+        extras = {'mmColourSlots': [{'name': 'Paint', 'colour': '#6699cc', 'presets': [['Blue', '#6699cc']]}],
+                  'authorNote': {'test': True}}
         write_glb(fixture, model, extras=extras, linear_colors=True)
         addon.open_glb(bpy.context, fixture)
         nested = Path(temp) / 'nested'
@@ -159,8 +159,7 @@ def main():
         metadata, _ = addon.glb.read_glb(metadata_file)
         assert metadata['extras'] == extras
         assert all('_COLOUR_SLOT' in p['attributes'] for m in metadata['meshes'] for p in m['primitives'])
-        assert all(m['extras']['mmPaintMask'] for m in metadata['materials'])
-        assert all(addon.glb.image_path(metadata_file, m['extras']['mmVariants']['test']['textures']['baseColor']).is_file()
+        assert all(addon.glb.image_path(metadata_file, m['extras']['mmSnow']['textures']['baseColor']).is_file()
                    for m in metadata['materials'])
         print('METADATA_OK')
 

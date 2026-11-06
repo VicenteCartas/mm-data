@@ -343,7 +343,7 @@ try {
   current = 'buildings/authored/civic-citadel.glb'; variant = '';
   const citadelCount = await page.evaluate(() => window.__MM_TEST__.count), citadel = await deliver(); await ready(citadelCount + 1);
   const glass = citadel.surfaces.filter(s => s.name.includes('fortress-glass'));
-  assert(glass.some(s => s.gltf.extras?.mmEmission === 'off') && glass.some(s => s.gltf.extras?.mmNightEmission));
+  assert(glass.some(s => s.gltf.extras?.mmEmission === 'off') && glass.some(s => s.gltf.extras?.mmEmission === 'night'));
   await page.locator('[data-tab="view"]').click(); await page.locator('[data-camera="front"]').click();
   for (const night of [false, true, false]) {
     await page.locator('#nightLights').setChecked(night);

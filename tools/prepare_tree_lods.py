@@ -381,10 +381,10 @@ def impostor(scene, model, name, images):
 
 
 def winter(model):
-    """LOD0 in its snow variant (mmVariants.snow on a canopy material): the variant's maps under its name, the
+    """LOD0 in its snow form (mmSnow on a canopy material): the snow maps under its name, the
     canopy's vertex colours times its linear colour scale, as the game builds the winter form (RigidGlb.source)."""
-    variants = {material['id']: material['extras']['mmVariants']['snow'] for material in model['materials']
-                if material['id'] != 'impostor' and 'snow' in material.get('extras', {}).get('mmVariants', {})}
+    variants = {material['id']: material['extras']['mmSnow'] for material in model['materials']
+                if material['id'] != 'impostor' and 'mmSnow' in material.get('extras', {})}
     if not variants:
         return None
     result = copy.deepcopy(model)
@@ -405,8 +405,9 @@ def winter(model):
     for material in result['materials']:
         if material['id'] in variants:
             variant = variants[material['id']]
-            material['id'] = variant['name']
-            material['textures'][0]['filename'] = variant['textures']['baseColor']
+            material['id'] = variant.get('name', material['id'])
+            if 'baseColor' in variant.get('textures', {}):
+                material['textures'][0]['filename'] = variant['textures']['baseColor']
     return result
 
 
@@ -455,7 +456,7 @@ def impostors(only=None):
                 continue
             path = BOARD / entry['mesh']
             levels = {level: read_glb(path, level, linear_colors=True) for level in range(min(3, len(entry['lods'])))}
-            # The impostor material's extras hold the winter impostor of a material variant (mmVariants.snow).
+            # The impostor material's extras hold the winter impostor (mmSnow).
             extras = next((material.get('extras') for material in levels[0]['materials']
                            if material['id'] == 'impostor'), None)
             alpha_test = next((material.get('alphaTest', .5) for material in levels[0]['materials']
@@ -464,13 +465,13 @@ def impostors(only=None):
                 model['materials'] = [material for material in model['materials'] if material['id'] != 'impostor']
             levels[3] = impostor(scene, levels[0], name, images)
             levels[3]['materials'][0]['alphaTest'] = alpha_test
-            # A winter form kept as a material variant gets its own impostor render and card colours.
+            # A winter form kept as mmSnow gets its own impostor render and card colours.
             cold = winter(levels[0])
             if cold:
                 frozen = impostor(scene, cold, name + '-snow', images)['meshes'][0]['vertices']
-                extras = {'mmVariants': {'snow': {
+                extras = {'mmSnow': {
                     'textures': {'baseColor': f'../{IMPOSTORS}/{name}-snow.png'},
-                    'colours': [frozen[i + 6:i + 10] for i in range(0, len(frozen), 12)]}}}
+                    'colours': [frozen[i + 6:i + 10] for i in range(0, len(frozen), 12)]}}
             if extras:
                 levels[3]['materials'][0]['extras'] = extras
             entry['lods'] = entry['lods'][:3] + [{'node': f'{name}-lod3', **counts(levels[3])}]

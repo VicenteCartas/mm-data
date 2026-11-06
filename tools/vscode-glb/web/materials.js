@@ -25,8 +25,9 @@ export function materialSampling(material, sampler, owned) {
 
 export function materialLighting(material, surface, night = false) {
   const gltf = surface?.gltf || {}, spec = surface?.managed;
-  const ownGlow = spec?.nightEmission && gltf.emissiveFactor?.some(v => v !== 0);
-  const muted = gltf.extras?.mmEmission === 'off' || (!night && (gltf.extras?.mmNightEmission || spec?.nightEmission));
+  const ownGlow = gltf.emissiveFactor?.some(v => v !== 0);
+  const mode = gltf.extras?.mmEmission || (spec?.nightEmission ? 'night' : 'always');
+  const muted = mode === 'off' || (!night && mode === 'night');
   // Each live material clone owns its uniform. Updating it also covers cached shader programs.
   material.mmGlow ||= { value: new THREE.Color(0, 0, 0) };
   material.mmGlow.value.setRGB(0, 0, 0);
@@ -38,14 +39,14 @@ export function materialLighting(material, surface, night = false) {
 
 export function materialFactors(material, surface) {
   const gltf = surface?.gltf || {}, spec = surface?.managed, pbr = gltf.pbrMetallicRoughness || {};
-  const ownGlow = spec?.nightEmission && gltf.emissiveFactor?.some(v => v !== 0);
+  const ownGlow = gltf.emissiveFactor?.some(v => v !== 0);
   material.color.fromArray(pbr.baseColorFactor || [1, 1, 1]);
   if (spec) material.color.multiply(new THREE.Color().fromArray(spec.tint).convertSRGBToLinear());
   material.opacity = pbr.baseColorFactor?.[3] ?? 1;
   material.roughness = spec?.roughness ?? pbr.roughnessFactor ?? 1;
   material.metalness = spec?.metallic ?? pbr.metallicFactor ?? 1;
   material.side = gltf.doubleSided ? THREE.DoubleSide : THREE.FrontSide;
-  const paint = !!gltf.extras?.mmPaintMask;
+  const paint = !!(spec ? spec.paintMask : gltf.extras?.mmPaintMask);
   material.transparent = !paint && gltf.alphaMode === 'BLEND'; material.depthWrite = !material.transparent;
   material.alphaTest = !paint && gltf.alphaMode === 'MASK' ? gltf.alphaCutoff ?? .5 : 0;
   if (material.emissive) {
@@ -55,7 +56,6 @@ export function materialFactors(material, surface) {
       material.emissiveMap = ownGlow ? null : material.mmSharedEmissionMap;
       if (!ownGlow) {
         material.emissive.copy(spec.emissionOperator === 0 ? new THREE.Color().setRGB(spec.emissionEnergy, spec.emissionEnergy, spec.emissionEnergy) : new THREE.Color().fromArray(spec.emissionColor).convertSRGBToLinear().multiplyScalar(spec.emissionEnergy));
-        if (gltf.emissiveFactor?.some(v => v !== 0)) material.emissive.multiply(new THREE.Color().fromArray(gltf.emissiveFactor));
       }
     }
   }
@@ -107,7 +107,7 @@ export async function prepareMaterials(gltf, asset, owned, report) {
       } catch (error) { report(`${surface.name}: map preview failed: ${error.message}`); }
     }
     materialFactors(material, surface);
-    const paint = !!surface.gltf.extras?.mmPaintMask;
+    const paint = !!(spec ? spec.paintMask : surface.gltf.extras?.mmPaintMask);
     const hasGlow = spec && (spec.emissionOperator === 0 || !spec.maps.emission) && spec.emissionColor.slice(0, 3).some(v => v !== 0);
     if (paint || hasGlow) {
       material.onBeforeCompile = function(shader) {

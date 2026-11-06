@@ -42,7 +42,7 @@ export function materialEditor({ send, selectSurface, inspectMaterial, showTab, 
     $('existingMaterial').value = primitive()?.material === undefined ? '' : String(primitive().material);
     $('editTint').value = $('editTintHex').value = hex(pbr.baseColorFactor || [1, 1, 1]); $('editOpacity').value = pbr.baseColorFactor?.[3] ?? 1;
     $('editEmission').value = hex(current?.gltf.emissiveFactor || [0, 0, 0]);
-    $('editEmissionMode').value = current?.gltf.extras?.mmEmission === 'off' ? 'off' : 'inherit';
+    $('editEmissionMode').value = current?.gltf.extras?.mmEmission || 'inherit';
     $('editRoughness').value = current?.managed?.roughness ?? pbr.roughnessFactor ?? 1;
     $('editMetallic').value = current?.managed?.metallic ?? pbr.metallicFactor ?? 1;
     $('editRoughness').disabled = $('editMetallic').disabled = !!current?.managed; $('sharedFinish').hidden = !current?.managed;

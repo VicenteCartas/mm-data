@@ -12,7 +12,7 @@ async function main() {
       stats.embedded += (json.images || []).some(i => i.bufferView !== undefined) ? 1 : 0;
       stats.external += (json.images || []).some(i => i.uri) ? 1 : 0;
       if (json.extras?.mmColourSlots) stats.slots.push(relative);
-      if (json.materials?.some(m => m.extras?.mmVariants)) stats.variants.push(relative);
+      if (json.materials?.some(m => m.extras?.mmSnow)) stats.variants.push(relative);
       if (json.nodes?.some(n => ['cut', 'stands'].includes(n.name))) stats.helpers.push(relative);
       if (json.nodes?.some(n => /-base\d+/.test(n.name))) stats.kits++;
       (json.extensionsUsed || []).forEach(e => stats.extensions.add(e));

@@ -314,7 +314,7 @@ def build(output):
     placements = json.loads((HERE / 'container-placements.json').read_text())
     layouts = json.loads((ROOT / 'data/models/board/scenery/layouts.json').read_text())
     materials = source[0]['materials'] + [{'id': 'containers-far', 'diffuse': [1, 1, 1],
-        'roughness': 1, 'metallic': 1, 'extras': {'mmPaintMask': True},
+        'roughness': 1, 'metallic': 1,
         'textures': [{'id': 'containers-far', 'type': 'DIFFUSE',
                       'filename': f'../../../textures/structures/common/{ATLAS}_albedo.png'}]}]
     bake(source[0], output / 'textures/structures/common')

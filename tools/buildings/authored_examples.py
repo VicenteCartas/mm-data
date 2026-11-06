@@ -340,7 +340,7 @@ def export_model(items, label, low=False, helper=False):
             mat['extras'] = {'mmBuildingPaint': True}
         if night:
             assert any(emission), 'Night emission needs an emissive colour'
-            mat.setdefault('extras', {})['mmNightEmission'] = True
+            mat.setdefault('extras', {})['mmEmission'] = 'night'
         if off:
             mat.setdefault('extras', {})['mmEmission'] = 'off'
         if key != FLAT:

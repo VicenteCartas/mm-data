@@ -18,7 +18,7 @@ function mesh(size) {
   const document = { asset: { version: '2.0' }, scene: 0, scenes: [{ nodes: [0, 1] }],
     nodes: [0, 1].map(lod => ({ name: 'review-lod' + lod, mesh: 0, scale: [size / (lod + 1), size / (lod + 1), 1] })),
     meshes: [{ primitives: [{ attributes: { POSITION: 0 }, material: 0 }] }],
-    materials: [{ name: 'review', extras: { mmVariants: { snow: { colourScale: [.5, .5, .5, 1] } } }, pbrMetallicRoughness: { baseColorTexture: { index: 0 }, metallicFactor: 0 } }],
+    materials: [{ name: 'review', extras: { mmSnow: { colourScale: [.5, .5, .5, 1] } }, pbrMetallicRoughness: { baseColorTexture: { index: 0 }, metallicFactor: 0 } }],
     textures: [{ source: 0 }], images: [{ uri: '../board/textures/review_albedo.png' }],
     buffers: [{ byteLength: 36 }], bufferViews: [{ buffer: 0, byteLength: 36 }], accessors: [{ bufferView: 0, componentType: 5126, count: 3, type: 'VEC3', min: [0, 0, 0], max: [1, 1, 0] }] };
   const raw = JSON.stringify(document), json = Buffer.from(raw.padEnd(Math.ceil(raw.length / 4) * 4));

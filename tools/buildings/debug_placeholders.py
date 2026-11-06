@@ -54,7 +54,9 @@ def node(name, part, position=(0, 0, 0)):
 def model(meshes, nodes):
     return {'meshes': meshes, 'nodes': nodes,
             'materials': [{'id': 'structures/buildings/debug-panels', 'diffuse': [1, 1, 1], 'roughness': 1, 'metallic': 0,
-                           'extras': {'mmBuildingPaint': True}}]}
+                           'extras': {'mmBuildingPaint': True},
+                           'textures': [{'type': 'DIFFUSE',
+                                         'filename': '../../board/textures/structures/buildings/debug-panels_albedo.png'}]}]}
 
 
 def panels(path):
@@ -71,12 +73,14 @@ def panels(path):
 
 
 def main():
-    # The board material contract requires an albedo image; one white pixel keeps the diagnostic colours flat.
+    # A board material's albedo identifies it, so each has its own image; one white pixel keeps the diagnostic
+    # colours flat. Authored buildings' flat GLB materials use debug-white.png, which belongs to no material.
     def chunk(kind, data):
         return struct.pack('>I', len(data)) + kind + data + struct.pack('>I', zlib.crc32(kind + data))
     png = b'\x89PNG\r\n\x1a\n' + chunk(b'IHDR', struct.pack('>2I5B', 1, 1, 8, 6, 0, 0, 0))
     png += chunk(b'IDAT', zlib.compress(b'\x00\xff\xff\xff\xff')) + chunk(b'IEND', b'')
-    (DATA / 'models/board/textures/structures/buildings/debug-white.png').write_bytes(png)
+    for image in ('debug-white', 'debug-floor_albedo', 'debug-panels_albedo', 'debug-roof_albedo'):
+        (DATA / f'models/board/textures/structures/buildings/{image}.png').write_bytes(png)
     template = json.loads((BUILDINGS / 'building_light/building_light.json').read_text())
     paths = []
     for family in ('building', 'fortress', 'hangar', 'gun_emplacement'):

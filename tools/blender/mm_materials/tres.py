@@ -48,6 +48,7 @@ def read_material(path, root):
             raise ValueError(f'Unsupported texture reference {key} = {value} in {path.name}')
         return resources[match[1].strip('"')]
 
+    paint_mask = props.get('metadata/mmPaintMask') == 'true'
     shader = kind == 'ShaderMaterial'
     if shader:
         shader_path = texture('shader')
@@ -103,6 +104,7 @@ def read_material(path, root):
     result['emission'] = texture('texture_emission' if shader else 'emission_texture') if shader or enabled('emission_enabled') else None
     result['emission_color'] = color('emission', (0, 0, 0, 1)) if not shader and enabled('emission_enabled') else (0, 0, 0, 1)
     result['emission_energy'] = number('emission_energy_multiplier', number('emission_energy', 1))
+    result['paint_mask'] = paint_mask
     result['emission_operator'] = int(number('emission_operator', 0))
     result['sss'] = texture('texture_subsurface_scattering' if shader else 'subsurf_scatter_texture') if shader or enabled('subsurf_scatter_enabled') else None
     result['sss_strength'] = number('subsurface_scattering_strength' if shader else 'subsurf_scatter_strength', 0)

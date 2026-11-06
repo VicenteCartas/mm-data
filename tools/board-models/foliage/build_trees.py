@@ -19,7 +19,7 @@ Apple trees are exported from sources/orchards.blend by build_orchards.py. This 
 parameter-grown conifers, palms, cacti and ferns, and the authored bare tree.
 Woody shrubs use sources/shrubs.blend, sources/desert-shrubs.blend and build_shrubs.py.
 
-The canopy's winter form is a material variant (mmVariants.snow): the snow cutout, with a colour scale that turns the
+The canopy's winter form is a material variant (mmSnow): the snow cutout, with a colour scale that turns the
 species' leaf tint grey. pine-tall-snow is its species' geometry with that variant
 applied, as files of their own. Afterwards refresh the impostors with Blender: tools/prepare_tree_lods.py -- impostors
 <names>. --out writes the GLBs into another board folder (its textures must resolve as ../textures from its
@@ -234,11 +234,11 @@ def materials(kind, spec, snow):
                   for suffix, role in MAPS.items()]}
     if winter and not snow:
         snowy = spec.get('snow_cutout', kind)
-        canopy['extras'] = {'mmVariants': {'snow': {
+        canopy['extras'] = {'mmSnow': {
             'name': 'canopy-snow-cutout',
             'textures': {role: f'../textures/vegetation/{snowy}-snow-cutout_{suffix}.png'
                          for role, suffix in (('baseColor', 'albedo'), ('normal', 'normal'), ('occlusion', 'orm'))},
-            'colourScale': snow_scale(spec)}}}
+            'colourScale': snow_scale(spec)}}
     role = 'snow' if snow and spec.get('source') == 'tree-dead' else spec.get('bark_role', 'bark')
     texture = spec.get('bark_texture', 'birch-bark' if role == 'bark-birch' else 'bark')
     bark = {'id': role, 'diffuse': [1, 1, 1], 'roughness': 1, 'metallic': 0,

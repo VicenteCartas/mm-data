@@ -53,7 +53,7 @@ async function readTres(file, root, resolve, io = fs) {
   const on = key => props[key] === 'true';
   const result = { file, shader, tint: color(shader ? 'albedo' : 'albedo_color', [1, 1, 1, 1]), roughness: num('roughness', 1), metallic: num('metallic', 0), normalScale: num('normal_scale', 1), maps: {},
     emissionColor: !shader && on('emission_enabled') ? color('emission', [0, 0, 0, 1]) : [0, 0, 0, 1], emissionEnergy: num('emission_energy_multiplier', num('emission_energy', 1)), emissionOperator: num('emission_operator', 0),
-    nightEmission: on('metadata/mmNightEmission'),
+    nightEmission: props['metadata/mmEmission'] === '"night"', paintMask: on('metadata/mmPaintMask'),
     heightScale: num('heightmap_scale', 5), heightFlip: on('heightmap_flip_texture'), scatter: num(shader ? 'subsurface_scattering_strength' : 'subsurf_scatter_strength', 0),
     transparent: !shader && num('transparency', 0) !== 0, alphaCutoff: num('alpha_scissor_threshold', .5), doubleSided: !shader && num('cull_mode', 0) === 2 };
   const roles = {
