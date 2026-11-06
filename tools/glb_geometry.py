@@ -31,11 +31,53 @@ def z_up(value):
     return [value[0], -value[2], value[1]]
 
 
+def fit_colours(colours, positions, indices):
+    """One part's stored vertex colours (lists, changed in place) within 0 to 1, each channel keeping its average over the
+    part's surface.
+
+    Blender's glTF exporter clips vertex colours to 0..1, so a value above 1 would silently change the moment an author
+    saved the file. Vertices over the range take 1 and the rest rise just enough to make up what they lost: the same look,
+    and the same on every later save.
+    """
+    used = sorted(set(indices))
+    if all(0 <= c <= 1 for i in used for c in colours[i]):
+        return
+    surface = dict.fromkeys(used, 1e-12)
+    for k in range(0, len(indices), 3):
+        a, b, c = (positions[i] for i in indices[k:k+3])
+        u, v = [b[j]-a[j] for j in range(3)], [c[j]-a[j] for j in range(3)]
+        area = math.hypot(u[1]*v[2]-u[2]*v[1], u[2]*v[0]-u[0]*v[2], u[0]*v[1]-u[1]*v[0])/2
+        for i in indices[k:k+3]:
+            surface[i] += area/3
+    total = sum(surface.values())
+    for channel in range(3):
+        target = min(1, sum(colours[i][channel]*surface[i] for i in used)/total)
+
+        def mean(scale):
+            return sum(min(1, max(0, colours[i][channel]*scale))*surface[i] for i in used)/total
+
+        low, high = 1, 1
+        while mean(high) < target and high < 1024:
+            high *= 2
+        for _ in range(40):
+            scale = (low+high)/2
+            if mean(scale) < target:
+                low = scale
+            else:
+                high = scale
+        scale = high
+        for i in used:
+            colours[i][channel] = min(1, max(0, colours[i][channel]*scale))
+    for i in used:
+        colours[i][3:] = [min(1, max(0, c)) for c in colours[i][3:]]
+
+
 def write_glb(path, model=None, *, levels=None, groups=None, extras=None, linear_colors=False, preserve_groups=()):
     """Export existing rigid authoring arrays, preserving node/part/material IDs.
 
     With `linear_colors=True`, pigment factors and vertex RGB are already linear; alpha is unchanged.
-    A mesh with `colorData=True` stores numeric COLOR_0 channels without any transfer function.
+    A mesh with `colorData=True` stores numeric COLOR_0 channels without any transfer function. Other vertex colours are
+    stored within 0 to 1 (fit_colours).
     A mesh may carry `slots`, one colour slot per vertex (0 none, n the model's n-th colour slot), written as the
     `_COLOUR_SLOT` attribute; `extras` become the file's extras (for example its `mmColourSlots` definitions).
     `groups` adds root groups beside the levels by name, which the game reads as data (a `cut` and its `stands`):
@@ -155,12 +197,17 @@ def write_glb(path, model=None, *, levels=None, groups=None, extras=None, linear
             for name in mesh['attributes']:
                 size = STRIDES[name]
                 values = []
-                for index in range(count):
-                    value = mesh['vertices'][index * stride + offset:index * stride + offset + size]
+                rows = [mesh['vertices'][index * stride + offset:index * stride + offset + size] for index in range(count)]
+                if name == 'COLOR' and not mesh.get('colorData', False):
+                    if not linear_colors:
+                        rows = [[*(linear(c) for c in value[:3]), value[3]] for value in rows]
+                    at = sum(STRIDES[other] for other in mesh['attributes'][:mesh['attributes'].index('POSITION')])
+                    positions = [mesh['vertices'][index * stride + at:index * stride + at + 3] for index in range(count)]
+                    for part in mesh['parts']:
+                        fit_colours(rows, positions, part['indices'])
+                for value in rows:
                     if name in ('POSITION', 'NORMAL'):
                         value = y_up(value)
-                    elif name == 'COLOR' and not (linear_colors or mesh.get('colorData', False)):
-                        value = [*(linear(c) for c in value[:3]), value[3]]
                     if not all(math.isfinite(c) for c in value):
                         raise ValueError('Non-finite vertex')
                     values.extend(value)

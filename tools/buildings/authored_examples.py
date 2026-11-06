@@ -15,7 +15,9 @@ from mathutils import Vector
 
 TOOLS = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(TOOLS))
-from glb_geometry import linear, write_glb
+from glb_geometry import display, linear, write_glb
+import building_lod
+import weathering
 # Use this checkout's shared material implementation even when Blender has an
 # older installed add-on named mm_materials in sys.modules.
 package = types.ModuleType('mm_building_materials')
@@ -272,14 +274,25 @@ def material_id(key, paint, emission, night=False, off=False):
     return key + ('#paint' if paint else '') + suffix + ('#night' if night else '') + ('#emission-off' if off else '')
 
 
-def export_model(items, label, low=False, helper=False):
+CONCRETE_FINISHES = {'structures/common/cast-concrete', 'structures/common/concrete-panels', 'structures/buildings/fortress-concrete'}
+# How rundown each building's concrete is on export (weathering.py), and the heights that shed soot onto the walls
+# below them. The habitat builds its grime with its walls instead.
+CONCRETE_WEATHER = {
+    'civic-citadel': (1.15, (54, 252)),
+    'civic-church': (1, (18, 36, 54)),
+    'civic-arena': (1, (34,)),
+    'civic-tower': (1.15, ()),
+}
+
+
+def export_model(items, label, level=0, helper=False, exact=False):
     depsgraph = bpy.context.evaluated_depsgraph_get()
     groups = {}
     for obj in items:
-        if low and obj['detail']:
+        if level and obj['detail']:
             continue
         groups.setdefault(obj.name if helper else obj['module'], []).append(obj)
-    meshes, nodes, used = [], [], set()
+    modules = []
     for index, (module, members) in enumerate(groups.items()):
         if helper:
             module = members[0]['module']
@@ -297,12 +310,15 @@ def export_model(items, label, low=False, helper=False):
             night = bool(obj.get('building_night_emission', False)) and not helper
             off = bool(obj.get('building_emission_off', False)) and not helper
             key = (obj['board_material'], bool(obj.get('building_paint', False)) and not helper, emission, night, off)
-            colour = list(obj['pigment'])
-            used.add(key)
+            pigment = list(obj['pigment'])
+            weather = mesh.color_attributes.get('weather') if not helper else None
             indices = parts.setdefault(key, [])
             for tri in mesh.loop_triangles:
                 for li in tri.loops:
-                    co = matrix @ mesh.vertices[mesh.loops[li].vertex_index].co
+                    vi = mesh.loops[li].vertex_index
+                    co = matrix @ mesh.vertices[vi].co
+                    # Optional per-vertex grime (linear grey) darkens the object's pigment.
+                    colour = [c*display(weather.data[vi].color[0]) for c in pigment] if weather else pigment
                     normal = (normal_matrix @ mesh.corner_normals[li].vector).normalized()
                     if mesh.uv_layers.active and not helper:
                         u, v = mesh.uv_layers.active.data[li].uv
@@ -317,6 +333,23 @@ def export_model(items, label, low=False, helper=False):
                         vertices.extend(vertex)
                     indices.append(dedup[vk])
             evaluated.to_mesh_clear()
+        modules.append((name, vertices, parts))
+    cell = 0
+    if level and not exact:
+        modules, cell = building_lod.simplify(modules, level, lambda key: building_lod.is_lit(material_id(*key)))
+    building = label.split('-lod')[0]
+    meshes, nodes, used = [], [], set()
+    for name, vertices, parts in modules:
+        used.update(parts)
+        if not helper and building in CONCRETE_WEATHER:
+            amount, ledges = CONCRETE_WEATHER[building]
+            selected = [p for k, p in parts.items() if k[0] in CONCRETE_FINISHES]
+            if level == 2:
+                weathering.average_weather(vertices, selected, amount, display)
+            else:
+                # A far level's stains are as coarse as its merged geometry.
+                weathering.weather_vertices(vertices, selected, [p for k, p in parts.items() if k[0] not in CONCRETE_FINISHES],
+                                            amount, ledges, display, *((6*cell, 30*cell) if level else ()))
         mesh_parts, node_parts = [], []
         for i, (key, indices) in enumerate(parts.items()):
             part = name+'-'+str(i)
@@ -329,7 +362,8 @@ def export_model(items, label, low=False, helper=False):
         # All sliced and unsliced views use exactly the same shared board finishes.
         path = TEXTURES/(key+'.tres')
         import re
-        albedo = re.search(r'path="([^"]+)"', path.read_text()).group(1)
+        # FLAT keeps the GLB's own factors: <name>_albedo.png would make it the board material of that name.
+        albedo = 'debug-white.png' if key == FLAT else re.search(r'path="([^"]+)"', path.read_text()).group(1)
         filename = '../../board/textures/'+str((Path(key).parent/albedo).as_posix())
         mat = {'id':material_id(key, paint, emission, night, off), 'diffuse':[1,1,1], 'roughness':.7, 'metallic':.1,
                'textures':[{'type':'DIFFUSE','filename':filename}]}
@@ -369,10 +403,34 @@ def export_model(items, label, low=False, helper=False):
     return {'meshes':meshes, 'nodes':nodes, 'materials':mats}
 
 
+def temporary(build):
+    """What build adds to the scene for far levels only, kept out of the other levels: shapes a grid would shred."""
+    start = len(objects)
+    build()
+    added = objects[start:]
+    del objects[start:]
+    bpy.context.view_layer.update()
+    return added
+
+
+def discard(items):
+    for obj in items:
+        data = obj.data
+        bpy.data.objects.remove(obj, do_unlink=True)
+        bpy.data.meshes.remove(data)
+
+
+def together(*models):
+    """One level out of models exported apart."""
+    materials = {m['id']: m for model in models for m in model['materials']}
+    return {'meshes': [m for model in models for m in model['meshes']], 'nodes': [n for model in models for n in model['nodes']],
+            'materials': list(materials.values())}
+
+
 def save_asset(name):
     bpy.context.view_layer.update()
     near = export_model(objects, name+'-lod0')
-    far = export_model(objects, name+'-lod1', low=True)
+    far = export_model(objects, name+'-lod1', level=1)
     data = export_model(volumes, name, helper=True)
     write_glb(DEST/(name+'.glb'), levels={0:near, 1:far}, groups={'building_volumes':data})
     for obj in objects:

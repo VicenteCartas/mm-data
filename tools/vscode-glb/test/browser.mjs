@@ -240,17 +240,19 @@ try {
       const context = canvas.getContext('2d'); context.drawImage(image, 0, 0);
       const values = context.getImageData(0, 0, canvas.width, canvas.height).data;
       if (lod === '0') { window.__MM_TEST__.dishPixels = values; return 0; }
-      const near = window.__MM_TEST__.dishPixels, radius = canvas.height / 780 * 290;
-      let difference = 0, count = 0;
+      // LOD1 drops the reflector's panels and joints but must keep its colour: each ring's average, whose worst channel this returns.
+      const near = window.__MM_TEST__.dishPixels, scale = canvas.height / 780, rings = [86, 172, 209, 290];
+      const sums = rings.map(() => [0, 0, 0, 0]);
       for (let y = 0; y < canvas.height; y++) for (let x = 0; x < canvas.width; x++) {
-        if ((x - canvas.width / 2) ** 2 + (y - canvas.height / 2) ** 2 >= radius ** 2) continue;
+        const ring = rings.findIndex(edge => Math.hypot(x - canvas.width / 2, y - canvas.height / 2) < edge * scale);
+        if (ring < 0) continue;
         const i = (y * canvas.width + x) * 4;
-        for (let c = 0; c < 3; c++) difference += Math.abs(values[i + c] - near[i + c]);
-        count += 3;
+        for (let c = 0; c < 3; c++) sums[ring][c] += values[i + c] - near[i + c];
+        sums[ring][3]++;
       }
-      return difference / count;
+      return Math.max(...sums.flatMap(([r, g, b, count]) => [r, g, b].map(value => Math.abs(value) / count)));
     }, lod);
-    assert(error < 1, `HPG reflector colour/shading changes across LODs: mean RGB error ${error}/255`);
+    assert(error < 2, `HPG reflector colour/shading changes across LODs: a ring's mean RGB moved ${error}/255`);
   }
   const fixture = path.join(output, 'depth-fixture.glb'); await fs.writeFile(fixture, depthFixture());
   const depth = await loadAsset(fixture, await findRoots(fixture));

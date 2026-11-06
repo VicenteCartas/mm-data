@@ -43,6 +43,7 @@ def materials():
     # Armor plates and covers are the unit paint role on a painted steel plate (structures/turret/turret-paint): the
     # player's camouflage paints them in game, shaded by the plate's light and dark over its finish (GpuUnitCamouflage).
     MATS['armor']=MATS['pale']=role_material('paint','structures/turret/turret-paint')
+    MATS['armor']['mmBuildingPaint']=True
     MATS['steel']=role_material('Turret | worn machined steel','structures/common/steel')
     MATS['edge']=role_material('Turret | rubbed alloy edges','structures/turret/turret-edge')
     MATS['dark']=role_material('Turret | dark mechanical steel','structures/turret/turret-dark')
