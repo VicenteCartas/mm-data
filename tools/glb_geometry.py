@@ -144,6 +144,8 @@ def write_glb(path, model=None, *, levels=None, groups=None, extras=None, linear
                 'metallicFactor': metallic, 'roughnessFactor': roughness}})
             if 'alphaTest' in material:
                 document['materials'][-1].update(alphaMode='MASK', alphaCutoff=material['alphaTest'])
+            if material.get('doubleSided'):
+                document['materials'][-1]['doubleSided'] = True
             if material.get('extras'):
                 document['materials'][-1]['extras'] = material['extras']
             if 'emissive' in material:

@@ -380,6 +380,8 @@ def export_model(items, label, level=0, helper=False, exact=False):
         if key != FLAT:
             spec = read_material(path, TEXTURES)
             mat.update(roughness=spec['roughness'], metallic=spec['metallic'])
+            if key.endswith('-cutout'):
+                mat.update(alphaTest=.5, doubleSided=True)
             for kind, image in [('NORMAL', spec['normal']), ('AMBIENT', spec['ao_map'])]:
                 if image:
                     mat['textures'].append({'type':kind, 'filename':'../../board/textures/'+image.relative_to(TEXTURES).as_posix()})

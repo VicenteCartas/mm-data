@@ -16,7 +16,7 @@ from mathutils import Vector
 
 import authored_examples as shared
 import civic_buildings as civic
-from civic_citadel import DARK, ALLOY, GLAZING, WINDOW_LIGHT
+from civic_citadel import DARK, ALLOY, GLAZING, WINDOW_LIGHT, display
 from hpg_headquarters import mesh
 from glb_geometry import linear, write_glb
 from weathering import grime
@@ -28,11 +28,13 @@ HERE = Path(__file__).resolve().parent
 REFERENCE = HERE/'references/civic-habitat-isometric-guide.png'
 CAST, STEEL, PAINT, GRILLE = shared.CONCRETE, shared.STEEL, civic.PAINT, civic.GRILLE
 PANELS = 'structures/common/concrete-panels'
-VENT = 'structures/common/vent-slots'
+SLATS = 'structures/common/louvre'
+LOUVRE = (.50, .52, .52)  # Most of the map is dark gap, so this reads as a dark panel with lit slat tops.
 PALE_GLASS, DARK_GLASS = 'structures/buildings/tower-glass', civic.GLASS
 BUSH = 'terrain/surfaces/grassland-floor'
 BUSH_COLOURS = ((.58, .68, .46), (.44, .54, .38))
 SOIL = 'terrain/surfaces/biome-soil'
+DIM_LIGHT = tuple(display(c) for c in (.028, .019, .005))  # A whole glazed roof, lit from inside.
 
 LEVEL = 18
 ROOF = 216
@@ -406,7 +408,7 @@ def core(x0, x1):
     x = (x0+x1)/2
     # A small louvre pair near the head and a beacon on top.
     for xx in (x-3.3, x+3.3):
-        wall_y('core louvre', xx-3, xx+3, y0-.05, CORE_TOP-12, CORE_TOP-5.5, VENT, (.22, .23, .23))
+        wall_y('core louvre', xx-3, xx+3, y0-.05, CORE_TOP-12, CORE_TOP-5.5, SLATS, (.42, .43, .43))
     wall_y('core louvre frame', x-6.5, x+6.5, y0-.04, CORE_TOP-12.4, CORE_TOP-5.1, PANELS, (.40, .40, .38))
     cuboid('core beacon plinth', x-1, x+1, -1, 1, CORE_TOP+.7, CORE_TOP+1.4, STEEL, DARK, omit='b')
     round_prism('core beacon pedestal', x, 0, CORE_TOP+1.4, CORE_TOP+3, .55, STEEL, DARK, 6)
@@ -426,12 +428,12 @@ def plant(name, x0, x1, y0, y1, height, fans):
     for i in range(cells):
         a = x0+(x1-x0)*i/cells+.6
         b = x0+(x1-x0)*(i+1)/cells-.6
-        wall_y(name+' louvre', a, b, y0-.05, z+2.2, z+height-1, VENT, (.30, .31, .31))
+        wall_y(name+' louvre', a, b, y0-.05, z+2.2, z+height-1, SLATS, LOUVRE)
     cells = max(1, round((y1-y0)/9))
     for i in range(cells):
         a = y0+(y1-y0)*i/cells+.6
         b = y0+(y1-y0)*(i+1)/cells-.6
-        wall_x(name+' louvre', x1+.05, a, b, z+2.2, z+height-1, VENT, (.30, .31, .31))
+        wall_x(name+' louvre', x1+.05, a, b, z+2.2, z+height-1, SLATS, LOUVRE)
     deck(name+' top', x0, x1, y0, y1, z+height+.02, PAINT, (.24, .25, .25))
     # Evenly along the unit, so that they neither touch nor overhang it.
     for i in range(fans):
@@ -464,8 +466,8 @@ def rooftop():
     plant('east plant', 52, 82, 30, 54, 12, 3)
     cuboid('smoke vent', 66, 78, 9, 21, ROOF, ROOF+5, PANELS, EDGE, omit='b')
     deck('smoke vent well', 67, 77, 10, 20, ROOF+5.02, PAINT, (.12, .13, .13))
-    wall_y('smoke vent louvre', 67, 77, 9, ROOF+.8, ROOF+4.4, VENT, (.30, .31, .31))
-    wall_x('smoke vent louvre', 78, 10, 20, ROOF+.8, ROOF+4.4, VENT, (.30, .31, .31))
+    wall_y('smoke vent louvre', 67, 77, 9, ROOF+.8, ROOF+4.4, SLATS, LOUVRE)
+    wall_x('smoke vent louvre', 78, 10, 20, ROOF+.8, ROOF+4.4, SLATS, LOUVRE)
     # The side-wall stair columns end in stair heads; lifts reach the roof through the cores.
     for x0, x1 in ((-95, -86), (86, 95)):
         cuboid('escape stair head', x0, x1, 31, 46, ROOF, ROOF+10.2, PANELS, TONES[1], omit='b')
@@ -775,7 +777,7 @@ def service_block():
     cuboid('service block roof', x0-.2, x1, y0-.2, y1+.2, z, z+.4, CAST, ROOF_DECK, omit='b')
     for x in (-115, -108.5, -102):
         ac_unit(x, y0-.02, PODIUM+3)
-    wall_x('service block vent', x0-.05, -5.4, -.6, PODIUM+1.8, PODIUM+6, VENT, (.30, .31, .31), facing=-1)
+    wall_x('service block vent', x0-.05, -5.4, -.6, PODIUM+1.8, PODIUM+6, SLATS, LOUVRE, facing=-1)
     door('service block', -109, y1, PODIUM, (0, 1))
 
 
@@ -891,7 +893,7 @@ def annex(rng):
         cuboid('annex rooflight kerb', x-9, x+9, 86, 98, top, top+1.6, PANELS, EDGE, omit='b')
         deck('annex rooflight glass', x-8.4, x+8.4, 86.6, 97.4, top+1.62, PALE_GLASS, VOID, light='off')
     cuboid('annex plant', -112, -94, 76, 96, top, top+6, PAINT, (.33, .35, .35), omit='b')
-    wall_y('annex plant louvre', -111, -95, 76, top+1, top+5, VENT, (.30, .31, .31), facing=-1)
+    wall_y('annex plant louvre', -111, -95, 76, top+1, top+5, SLATS, LOUVRE, facing=-1)
     # Inner terrace wall, with rails on the rear and east, and a raised corner planter.
     rail('annex rear rail', (98, 88, top+2.2), (x1-.6, 88, top+2.2))
     rail('annex rear rail', (98, 88, top+2.2), (98, y1, top+2.2))
@@ -952,11 +954,11 @@ def weathered_material(key, colour, cache={}):
 
 
 def surface_uvs(obj):
-    """Panels are placed by the storey grid; vent slots and shrub leaves have their own scale."""
+    """Panels are placed by the storey grid; louvre slats and shrub leaves have their own scale."""
     key = obj['board_material']
-    if key not in (PANELS, BUSH, VENT):
+    if key not in (PANELS, BUSH, SLATS):
         return
-    repeat = 5 if key == VENT else PANEL_REPEAT
+    repeat = 4 if key == SLATS else PANEL_REPEAT  # Two slats a repeat: one every 2 units.
     uv = obj.data.uv_layers.new(name='UVMap')
     verts = obj.data.vertices
     for face in obj.data.polygons:
@@ -988,6 +990,8 @@ def flush():
             obj.data.materials[0] = weathered_material(key, colour)
         if light == 'night':
             shared.emissive(obj, WINDOW_LIGHT, night=True)
+        elif light == 'dim':
+            shared.emissive(obj, DIM_LIGHT, night=True)
         elif light == 'off':
             shared.emission_off(obj)
         elif light:
