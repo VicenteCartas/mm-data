@@ -10,10 +10,13 @@ a triangle a little larger, as give-way signs are. The faces are flat artwork in
 written beside its artwork in tools/board-models/:
 - give way (yield): an inverted triangle, a red border round a white field;
 - no entry (do not enter): a red disc crossed by a white bar;
-- one-way road: a blue square with a white arrow pointing ahead.
+- one-way road: a blue square with a white arrow pointing ahead;
+- no left turn and no right turn: a red ring round a white disc, a black arrow turning that way and a red bar across
+  it.
 The game places them where a single-lane, one-way road joins a two-lane one (BoardFeatures#roadControls and
 #rampSigns): the give-way sign faces traffic merging from an entrance ramp, the no-entry sign faces the junction at
-that ramp's mouth, and the one-way sign faces traffic turning into an exit ramp. The output is deterministic.
+that ramp's mouth, and the one-way sign faces traffic turning into an exit ramp; a no-turn sign faces traffic that may
+not take an exit before the junction. The output is deterministic.
 """
 import io
 import json
@@ -34,10 +37,14 @@ MODEL_UNITS_PER_METRE = 2.8
 STRIDE = 12
 # The STOP face's artwork: its red and the light ground round the octagon; its letters' white; a sign blue.
 RED, GROUND, WHITE, BLUE = (184, 9, 6, 255), (235, 238, 235, 255), (255, 255, 255, 255), (0, 87, 160, 255)
+BLACK = (28, 28, 28, 255)
 TEXEL, SUPERSAMPLE = 128, 8
 # The STOP face's light rim round its red octagon, a share of the face's width.
 BORDER = .035
-BUILT = ('give-way-sign', 'no-entry-sign', 'one-way-sign')
+BUILT = ('give-way-sign', 'no-entry-sign', 'one-way-sign', 'no-left-turn-sign', 'no-right-turn-sign',
+         'no-straight-ahead-sign')
+# The round signs: a disc as wide as the STOP octagon across its flats.
+ROUND = ('no-entry-sign', 'no-left-turn-sign', 'no-right-turn-sign', 'no-straight-ahead-sign')
 
 
 def stop_plate():
@@ -87,7 +94,7 @@ def outline(name, measures):
         # About 900 mm a side, point down: the triangle inscribed in the artwork's circle.
         half = radius * 1.14
         points = [(half * math.cos(math.radians(a)), centre + half * math.sin(math.radians(a))) for a in (270, 30, 150)]
-    elif name == 'no-entry-sign':
+    elif name in ROUND:
         half = flats
         points = [(half * math.cos(2 * math.pi * i / 24), centre + half * math.sin(2 * math.pi * i / 24))
                   for i in range(24)]
@@ -120,6 +127,25 @@ def artwork(name):
     elif name == 'no-entry-sign':
         draw.ellipse([*at(rim, rim), *at(1 - rim, 1 - rim)], fill=RED)
         draw.rectangle([*at(.16, .41), *at(.84, .59)], fill=WHITE)
+    elif name in ('no-left-turn-sign', 'no-right-turn-sign', 'no-straight-ahead-sign'):
+        draw.ellipse([*at(rim, rim), *at(1 - rim, 1 - rim)], fill=RED)
+        draw.ellipse([*at(.16, .16), *at(.84, .84)], fill=WHITE)
+        arrow = Image.new('RGBA', (size, size), (0, 0, 0, 0))
+        pen = ImageDraw.Draw(arrow)
+        if name == 'no-straight-ahead-sign':
+            # Straight up the middle under an arrowhead.
+            pen.rectangle([*at(.45, .40), *at(.55, .80)], fill=BLACK)
+            pen.polygon([at(.5, .20), at(.66, .40), at(.34, .40)], fill=BLACK)
+        else:
+            # Drawn turning left, then mirrored for the right turn: up the middle, then off to the left under an arrowhead.
+            pen.rectangle([*at(.53, .40), *at(.63, .78)], fill=BLACK)
+            pen.rectangle([*at(.36, .33), *at(.63, .43)], fill=BLACK)
+            pen.polygon([at(.20, .38), at(.38, .22), at(.38, .54)], fill=BLACK)
+        if name == 'no-right-turn-sign':
+            arrow = arrow.transpose(Image.Transpose.FLIP_LEFT_RIGHT)
+        image.alpha_composite(arrow)
+        # The bar runs from top left to bottom right across the arrow, as on each of these signs.
+        draw.line([at(.27, .27), at(.73, .73)], fill=RED, width=round(.1 * size))
     elif name == 'one-way-sign':
         draw.rectangle([*at(rim, rim), *at(1 - rim, 1 - rim)], fill=BLUE)
         draw.rectangle([*at(.42, .4), *at(.58, .86)], fill=WHITE)
@@ -143,7 +169,7 @@ def wound(triangle, vertices, normal):
 def plate(name, measures, level):
     """The plate built as the STOP plate is: its textured face at the front, its edges and back in the rim material."""
     points, half = outline(name, measures)
-    if name == 'no-entry-sign' and level == 1:
+    if name in ROUND and level == 1:
         points = points[::2]
     centre, front, back = measures['centre'], measures['front'], measures['back']
     vertices, rim, face = [], [], []
