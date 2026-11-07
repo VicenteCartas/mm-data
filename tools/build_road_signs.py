@@ -1,197 +1,233 @@
-"""Author the one-way road signs as low-poly GLBs, without Blender.
+"""Derive the one-way road signs from the STOP sign's GLB, without Blender.
 
-Run from anywhere with plain Python 3: python3 tools/build_road_signs.py [name ...]
+Run from anywhere with plain Python 3 and Pillow: python3 tools/build_road_signs.py [name ...]
 
-Writes scenery/road/give-way-sign.glb, no-entry-sign.glb and one-way-sign.glb beside the STOP sign
-(tools/build_road_controls_blender.py), on the same conventions: physical metres here, 2.8 model units per
-metre in the GLB, the readable face towards +Y, the base at Z=0, and a detailed `-lod0` with a simple `-lod1`.
-The faces are geometry in flat sign colours, not artwork, so they need no texture and read at any distance:
+Each sign reuses scenery/road/stop-sign.glb (tools/build_road_controls_blender.py) as it ships: its post, base plate and
+collar unchanged in both levels of detail, and its plate as it is built, the same thickness and height, the same rim
+material in each level, and the same textured face mapped the same way, with only the plate's outline and its artwork
+changed. Their sizes follow the STOP plate's: a disc as wide as the octagon across its flats, a square inside that, and
+a triangle a little larger, as give-way signs are. The faces are flat artwork in the STOP face's colours and resolution,
+written beside its artwork in tools/board-models/:
 - give way (yield): an inverted triangle, a red border round a white field;
 - no entry (do not enter): a red disc crossed by a white bar;
 - one-way road: a blue square with a white arrow pointing ahead.
 The game places them where a single-lane, one-way road joins a two-lane one (BoardFeatures#roadControls and
 #rampSigns): the give-way sign faces traffic merging from an entrance ramp, the no-entry sign faces the junction at
-that ramp's mouth, and the one-way sign faces traffic turning into an exit ramp.
+that ramp's mouth, and the one-way sign faces traffic turning into an exit ramp. The output is deterministic.
 """
+import io
 import json
 import math
 import sys
 from pathlib import Path
 
+from PIL import Image, ImageDraw
+
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'tools'))
-from glb_geometry import write_glb  # noqa: E402
+from glb_geometry import read_glb, write_glb  # noqa: E402
 
-OUTPUT = ROOT / 'data/models/board/scenery/road'
+ROAD = ROOT / 'data/models/board/scenery/road'
+ARTWORK = ROOT / 'tools/board-models'
+STOP = ROAD / 'stop-sign.glb'
 MODEL_UNITS_PER_METRE = 2.8
-# The plate's back and its face: the face sits a hair in front of the plate, its design a hair in front of that.
-PLATE_BACK, PLATE_FRONT, DESIGN = .045, .095, .101
-
-MATERIALS = {
-    'metal': {'diffuse': [.53, .56, .58], 'metallic': .55, 'roughness': .5},
-    'housing': {'diffuse': [.12, .135, .15], 'metallic': .1, 'roughness': .7},
-    'sign red': {'diffuse': [.78, .05, .06], 'metallic': 0, 'roughness': .6},
-    'sign white': {'diffuse': [.93, .93, .9], 'metallic': 0, 'roughness': .6},
-    'sign blue': {'diffuse': [0, .26, .6], 'metallic': 0, 'roughness': .6},
-}
+STRIDE = 12
+# The STOP face's artwork: its red and the light ground round the octagon; its letters' white; a sign blue.
+RED, GROUND, WHITE, BLUE = (184, 9, 6, 255), (235, 238, 235, 255), (255, 255, 255, 255), (0, 87, 160, 255)
+TEXEL, SUPERSAMPLE = 128, 8
+# The STOP face's light rim round its red octagon, a share of the face's width.
+BORDER = .035
+BUILT = ('give-way-sign', 'no-entry-sign', 'one-way-sign')
 
 
-class Mesh:
-    """Flat-shaded triangles grouped by material, in authoring metres (Z up)."""
-
-    def __init__(self):
-        self.vertices = []
-        self.groups = {}
-
-    def triangle(self, material, a, b, c, normal):
-        ab = [b[i] - a[i] for i in range(3)]
-        ac = [c[i] - a[i] for i in range(3)]
-        cross = [ab[1] * ac[2] - ab[2] * ac[1], ab[2] * ac[0] - ab[0] * ac[2], ab[0] * ac[1] - ab[1] * ac[0]]
-        if sum(cross[i] * normal[i] for i in range(3)) < 0:
-            b, c = c, b
-        length = math.sqrt(sum(v * v for v in normal))
-        normal = [v / length for v in normal]
-        indices = self.groups.setdefault(material, [])
-        for point in (a, b, c):
-            indices.append(len(self.vertices) // 12)
-            self.vertices.extend((*[v * MODEL_UNITS_PER_METRE for v in point], *normal, 1, 1, 1, 1, 0, 0))
-
-    def fan(self, material, outline, normal):
-        """A convex outline, in order, facing `normal`."""
-        for i in range(1, len(outline) - 1):
-            self.triangle(material, outline[0], outline[i], outline[i + 1], normal)
-
-    def box(self, material, centre, size):
-        cx, cy, cz = centre
-        hx, hy, hz = (s / 2 for s in size)
-        for axis in range(3):
-            for sign in (-1, 1):
-                normal = [0, 0, 0]
-                normal[axis] = sign
-                u, v = [a for a in range(3) if a != axis]
-                corners = []
-                for du, dv in ((-1, -1), (1, -1), (1, 1), (-1, 1)):
-                    point = [cx, cy, cz]
-                    half = (hx, hy, hz)
-                    point[axis] += sign * half[axis]
-                    point[u] += du * half[u]
-                    point[v] += dv * half[v]
-                    corners.append(point)
-                self.fan(material, corners, normal)
-
-    def cylinder(self, material, centre, radius, height, sides):
-        cx, cy, cz = centre
-        ring = [(cx + radius * math.cos(2 * math.pi * i / sides), cy + radius * math.sin(2 * math.pi * i / sides))
-                for i in range(sides)]
-        bottom, top = cz - height / 2, cz + height / 2
-        self.fan(material, [(x, y, top) for x, y in ring], (0, 0, 1))
-        self.fan(material, [(x, y, bottom) for x, y in ring], (0, 0, -1))
-        for i in range(sides):
-            (x0, y0), (x1, y1) = ring[i], ring[(i + 1) % sides]
-            angle = 2 * math.pi * (i + .5) / sides
-            normal = (math.cos(angle), math.sin(angle), 0)
-            self.fan(material, [(x0, y0, bottom), (x1, y1, bottom), (x1, y1, top), (x0, y0, top)], normal)
-
-    def plate(self, face, back, outline):
-        """A sign plate from its convex face outline (x, z): the face towards +Y, its edges and back in `back`."""
-        self.fan(face, [(x, PLATE_FRONT, z) for x, z in outline], (0, 1, 0))
-        self.fan(back, [(x, PLATE_BACK, z) for x, z in outline], (0, -1, 0))
-        count = len(outline)
-        cx = sum(x for x, _ in outline) / count
-        cz = sum(z for _, z in outline) / count
-        for i in range(count):
-            (x0, z0), (x1, z1) = outline[i], outline[(i + 1) % count]
-            nx, nz = z1 - z0, -(x1 - x0)
-            if nx * ((x0 + x1) / 2 - cx) + nz * ((z0 + z1) / 2 - cz) < 0:
-                nx, nz = -nx, -nz
-            self.fan(back, [(x0, PLATE_BACK, z0), (x1, PLATE_BACK, z1), (x1, PLATE_FRONT, z1), (x0, PLATE_FRONT, z0)],
-                     (nx, 0, nz))
-
-    def design(self, material, outline):
-        """A convex part of the face's design, just in front of the plate."""
-        self.fan(material, [(x, DESIGN, z) for x, z in outline], (0, 1, 0))
-
-    def model(self, name):
-        parts = [{'id': name + '/' + key, 'type': 'TRIANGLES', 'indices': indices} for key, indices in self.groups.items()]
-        return {'meshes': [{'attributes': ['POSITION', 'NORMAL', 'COLOR', 'TEXCOORD0'], 'vertices': self.vertices,
-                            'parts': parts}],
-                'nodes': [{'id': name, 'parts': [{'meshpartid': name + '/' + key, 'materialid': key}
-                                                  for key in self.groups]}],
-                'materials': [{'id': key, **MATERIALS[key]} for key in self.groups]}
+def stop_plate():
+    """The STOP plate's measures in model units: its face's front and centre, its octagon's radius, its back."""
+    model = read_glb(STOP, 0)
+    mesh = model['meshes'][0]
+    vertices = mesh['vertices']
+    face = next(part for part in mesh['parts'] if part['id'].endswith('/stop face'))
+    rim = next(part for part in mesh['parts'] if part['id'].endswith('/white'))
+    corners = {tuple(vertices[i * STRIDE:i * STRIDE + 3]) for i in face['indices']}
+    centre = sum(z for _, _, z in corners) / len(corners)
+    return {'front': max(y for _, y, _ in corners), 'back': min(vertices[i * STRIDE + 1] for i in rim['indices']),
+            'centre': centre, 'radius': max(math.hypot(x, z - centre) for x, _, z in corners)}
 
 
-def pole(mesh, height, detailed):
-    """The STOP sign's post (build_road_controls_blender.detailed_pole), or one box in the distance."""
-    if detailed:
-        mesh.box('metal', (0, 0, .025), (.28, .28, .05))
-        mesh.cylinder('metal', (0, 0, height / 2 + .05), .05, height, 8)
-        mesh.cylinder('housing', (0, 0, .115), .073, .13, 8)
+def post(level, measures):
+    """The STOP sign's post, base plate and collar at one level, its plate taken away: its triangles by material."""
+    model = read_glb(STOP, level)
+    mesh = model['meshes'][0]
+    if mesh['attributes'] != ['POSITION', 'NORMAL', 'COLOR', 'TEXCOORD0']:
+        raise ValueError('Unexpected STOP sign vertex layout')
+    vertices = mesh['vertices']
+    bottom = measures['centre'] - measures['radius']
+    kept, removed = {}, 0
+    for part in mesh['parts']:
+        material = part['id'].split('/', 1)[1]
+        triangles = [part['indices'][t:t + 3] for t in range(0, len(part['indices']), 3)]
+        if material in ('stop face', 'white'):
+            removed += len(triangles)
+            continue
+        # The far level draws its plate's edges and back in the post's metal: those lie in the plate's slab.
+        on_plate = [all(vertices[i * STRIDE + 1] >= measures['back'] - 1e-4 and vertices[i * STRIDE + 2] >= bottom - 1e-3
+                        for i in triangle) for triangle in triangles]
+        removed += sum(on_plate)
+        kept[material] = [triangle for triangle, plate in zip(triangles, on_plate) if not plate]
+    # The octagon's face (6 triangles), edges (16) and back (6).
+    if removed != 28:
+        raise ValueError(f'STOP plate at level {level}: removed {removed} triangles, expected 28')
+    return vertices, kept, {material['id']: material for material in model['materials']}
+
+
+def outline(name, measures):
+    """The plate's outline (x, z) and the half-width of the square its face's artwork covers, from the STOP plate."""
+    centre, radius = measures['centre'], measures['radius']
+    flats = radius * math.cos(math.pi / 8)
+    if name == 'give-way-sign':
+        # About 900 mm a side, point down: the triangle inscribed in the artwork's circle.
+        half = radius * 1.14
+        points = [(half * math.cos(math.radians(a)), centre + half * math.sin(math.radians(a))) for a in (270, 30, 150)]
+    elif name == 'no-entry-sign':
+        half = flats
+        points = [(half * math.cos(2 * math.pi * i / 24), centre + half * math.sin(2 * math.pi * i / 24))
+                  for i in range(24)]
     else:
-        mesh.box('metal', (0, 0, height / 2), (.10, .10, height))
+        half = flats * .72
+        points = [(-half, centre - half), (half, centre - half), (half, centre + half), (-half, centre + half)]
+    return points, half
 
 
-def polygon(centre_z, radius, sides, start):
-    return [(radius * math.cos(start + 2 * math.pi * i / sides), centre_z + radius * math.sin(start + 2 * math.pi * i / sides))
-            for i in range(sides)]
+def artwork(name):
+    """The face's flat artwork in the STOP face's square, drawn large and reduced so its edges are smooth."""
+    size = TEXEL * SUPERSAMPLE
+    image = Image.new('RGBA', (size, size), GROUND)
+    draw = ImageDraw.Draw(image)
+
+    def at(u, v):
+        return u * size, v * size
+
+    # Each design stops a little short of the plate's edge, which keeps the light rim the STOP face has.
+    rim = BORDER
+
+    def inset(points, share):
+        return [((x - size / 2) * share + size / 2, (y - size / 2) * share + size / 2) for x, y in points]
+
+    if name == 'give-way-sign':
+        # Point down, inscribed in the circle the plate's corners lie on (#outline); image rows run downwards.
+        corners = [at(.5 + .5 * math.cos(math.radians(a)), .5 - .5 * math.sin(math.radians(a))) for a in (270, 30, 150)]
+        draw.polygon(inset(corners, 1 - 2 * rim), fill=RED)
+        draw.polygon(inset(corners, .58), fill=WHITE)
+    elif name == 'no-entry-sign':
+        draw.ellipse([*at(rim, rim), *at(1 - rim, 1 - rim)], fill=RED)
+        draw.rectangle([*at(.16, .41), *at(.84, .59)], fill=WHITE)
+    elif name == 'one-way-sign':
+        draw.rectangle([*at(rim, rim), *at(1 - rim, 1 - rim)], fill=BLUE)
+        draw.rectangle([*at(.42, .4), *at(.58, .86)], fill=WHITE)
+        draw.polygon([at(.5, .12), at(.78, .44), at(.22, .44)], fill=WHITE)
+    else:
+        raise ValueError(name)
+    buffer = io.BytesIO()
+    image.resize((TEXEL, TEXEL), Image.LANCZOS).save(buffer, format='PNG')
+    return buffer.getvalue()
 
 
-def give_way(detailed):
-    """An inverted equilateral triangle, 900 mm a side, its red border an eighth of its height."""
-    mesh = Mesh()
-    side, centre = .9, 2.2
-    pole(mesh, 2.38, detailed)
-    radius = side / math.sqrt(3)
-    outline = polygon(centre, radius, 3, -math.pi / 2)
-    rim = 'sign white' if detailed else 'metal'
-    mesh.plate('sign red', rim, outline)
-    mesh.design('sign white', polygon(centre, radius - .2, 3, -math.pi / 2))
-    return mesh
+def wound(triangle, vertices, normal):
+    """A triangle's corners in the order that faces {@code normal}."""
+    a, b, c = ([vertices[i * STRIDE + k] for k in range(3)] for i in triangle)
+    ab = [b[k] - a[k] for k in range(3)]
+    ac = [c[k] - a[k] for k in range(3)]
+    cross = [ab[1] * ac[2] - ab[2] * ac[1], ab[2] * ac[0] - ab[0] * ac[2], ab[0] * ac[1] - ab[1] * ac[0]]
+    return list(triangle) if sum(cross[k] * normal[k] for k in range(3)) >= 0 else [triangle[0], triangle[2], triangle[1]]
 
 
-def no_entry(detailed):
-    """A red disc 750 mm across, crossed by a white bar."""
-    mesh = Mesh()
-    centre = 2.13
-    pole(mesh, 2.08, detailed)
-    mesh.plate('sign red', 'sign white' if detailed else 'metal', polygon(centre, .375, 24 if detailed else 12, 0))
-    mesh.design('sign white', [(-.28, centre - .065), (.28, centre - .065), (.28, centre + .065), (-.28, centre + .065)])
-    return mesh
+def plate(name, measures, level):
+    """The plate built as the STOP plate is: its textured face at the front, its edges and back in the rim material."""
+    points, half = outline(name, measures)
+    if name == 'no-entry-sign' and level == 1:
+        points = points[::2]
+    centre, front, back = measures['centre'], measures['front'], measures['back']
+    vertices, rim, face = [], [], []
+
+    def vertex(x, y, z, normal, u=0, v=1):
+        vertices.extend((x, y, z, *normal, 1, 1, 1, 1, u, v))
+        return len(vertices) // STRIDE - 1
+
+    count = len(points)
+    cx, cz = sum(x for x, _ in points) / count, sum(z for _, z in points) / count
+    # Mapped as the STOP face is: u = .5 - x / 2r, v = .5 + (z - c) / 2r, stored as 1 - v.
+    ring = [vertex(x, front, z, (0, 1, 0), .5 - x / (2 * half), .5 - (z - centre) / (2 * half)) for x, z in points]
+    for i in range(1, count - 1):
+        face.extend(wound((ring[0], ring[i], ring[i + 1]), vertices, (0, 1, 0)))
+    ring = [vertex(x, back, z, (0, -1, 0)) for x, z in points]
+    for i in range(1, count - 1):
+        rim.extend(wound((ring[0], ring[i], ring[i + 1]), vertices, (0, -1, 0)))
+    for i in range(count):
+        (x0, z0), (x1, z1) = points[i], points[(i + 1) % count]
+        nx, nz = z1 - z0, -(x1 - x0)
+        if nx * ((x0 + x1) / 2 - cx) + nz * ((z0 + z1) / 2 - cz) < 0:
+            nx, nz = -nx, -nz
+        length = math.hypot(nx, nz)
+        normal = (nx / length, 0, nz / length)
+        quad = [vertex(x0, back, z0, normal), vertex(x1, back, z1, normal), vertex(x1, front, z1, normal),
+                vertex(x0, front, z0, normal)]
+        rim.extend(wound((quad[0], quad[1], quad[2]), vertices, normal))
+        rim.extend(wound((quad[0], quad[2], quad[3]), vertices, normal))
+    return vertices, rim, face
 
 
-def one_way(detailed):
-    """A blue square 600 mm a side with a white arrow pointing ahead (up)."""
-    mesh = Mesh()
-    centre = 2.13
-    pole(mesh, 2.08, detailed)
-    half = .3
-    mesh.plate('sign blue', 'sign white' if detailed else 'metal',
-               [(-half, centre - half), (half, centre - half), (half, centre + half), (-half, centre + half)])
-    mesh.design('sign white', [(-.055, centre - .22), (.055, centre - .22), (.055, centre + .04), (-.055, centre + .04)])
-    mesh.design('sign white', [(-.16, centre + .03), (.16, centre + .03), (0, centre + .23)])
-    return mesh
-
-
-BUILDERS = {'give-way-sign': give_way, 'no-entry-sign': no_entry, 'one-way-sign': one_way}
+def model(name, level, measures, image, face_file):
+    source, kept, materials = post(level, measures)
+    vertices, parts, remap = [], {}, {}
+    for material, triangles in kept.items():
+        indices = []
+        for triangle in triangles:
+            for i in triangle:
+                if i not in remap:
+                    remap[i] = len(vertices) // STRIDE
+                    vertices.extend(source[i * STRIDE:(i + 1) * STRIDE])
+                indices.append(remap[i])
+        parts[material] = indices
+    plate_vertices, rim, face = plate(name, measures, level)
+    offset = len(vertices) // STRIDE
+    vertices.extend(plate_vertices)
+    # The STOP sign's rim: white near, its post's metal far.
+    parts.setdefault('white' if level == 0 else 'metal', []).extend(i + offset for i in rim)
+    face_id = name.removesuffix('-sign').replace('-', ' ') + ' face'
+    parts[face_id] = [i + offset for i in face]
+    stop_face = materials['stop face']
+    texture = {key: value for key, value in stop_face['textures'][0].items() if key != 'data'}
+    texture.update(id=face_id, filename=face_file, data=image)
+    used = {key: materials[key] for key in parts if key in materials}
+    used[face_id] = {'id': face_id, 'diffuse': stop_face['diffuse'], 'metallic': stop_face['metallic'],
+                     'roughness': stop_face['roughness'], 'textures': [texture]}
+    return {'meshes': [{'attributes': ['POSITION', 'NORMAL', 'COLOR', 'TEXCOORD0'], 'vertices': vertices,
+                        'parts': [{'id': f'{name}/{key}', 'type': 'TRIANGLES', 'indices': indices}
+                                  for key, indices in parts.items()]}],
+            'nodes': [{'id': name, 'parts': [{'meshpartid': f'{name}/{key}', 'materialid': key} for key in parts]}],
+            'materials': list(used.values())}
 
 
 def export(name):
-    models = {level: BUILDERS[name](level == 0).model(name) for level in (0, 1)}
-    path = OUTPUT / (name + '.glb')
+    measures = stop_plate()
+    image = artwork(name)
+    face_file = f'road-{name.removesuffix("-sign")}-face.png'
+    (ARTWORK / face_file).write_bytes(image)
+    models = {level: model(name, level, measures, image, face_file) for level in (0, 1)}
+    path = ROAD / (name + '.glb')
     write_glb(path, levels=models, extras={'mmAuthoring': {
-        'metresToModelUnits': MODEL_UNITS_PER_METRE, 'front': '+Y', 'base': 'Z=0', 'source': 'tools/build_road_signs.py'}})
+        'metresToModelUnits': MODEL_UNITS_PER_METRE, 'front': '+Y', 'base': 'Z=0',
+        'source': 'tools/build_road_signs.py', 'derivedFrom': 'scenery/road/stop-sign.glb'}})
     lods = []
-    for level, model in models.items():
-        mesh = model['meshes'][0]
-        lods.append({'node': f'{name}-lod{level}',
-                     'triangles': sum(len(part['indices']) // 3 for part in mesh['parts']),
-                     'vertices': len(mesh['vertices']) // 12,
-                     'height': round(max(mesh['vertices'][2::12]), 4)})
+    for level, built in models.items():
+        mesh = built['meshes'][0]
+        lods.append({'node': f'{name}-lod{level}', 'triangles': sum(len(part['indices']) // 3 for part in mesh['parts']),
+                     'vertices': len(mesh['vertices']) // STRIDE, 'height': round(max(mesh['vertices'][2::STRIDE]), 4)})
     return {'file': str(path.relative_to(ROOT)), 'lods': lods, 'bytes': path.stat().st_size}
 
 
-def main(names=tuple(BUILDERS)):
+def main(names=BUILT):
     return [export(name) for name in names]
 
 
 if __name__ == '__main__':
-    print(json.dumps(main(tuple(sys.argv[1:]) or tuple(BUILDERS)), indent=2))
+    print(json.dumps(main(tuple(sys.argv[1:]) or BUILT), indent=2))
