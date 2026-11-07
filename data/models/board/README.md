@@ -113,7 +113,8 @@ Authoring sources and the reproducible build are in `tools/board-models/seaport/
 the source container or exporting its underlying Material Maker materials.
 
 The cargo crate's maps are baked, its olive paint worn to the metal, rusted and dirty. A
-material whose extras set `mmPaintMask` keeps a paint mask in its albedo's alpha: the slot
+material whose extras set `mmPaintMask` (a library material's `.tres`: `metadata/mmPaintMask`)
+keeps a paint mask in its albedo's alpha: the slot
 colour (the vertex colour) tints only the paint, never the bare metal, rust and grime. Its
 white vertices hold the slot's default as a ratio of 1. A material whose extras set `mmLabel`
 draws a label: each quad is one character place (its U's integer part), mapped to the first,
@@ -497,7 +498,7 @@ For 19 species the `-snow` form is a material variant of the bare GLB, not a fil
 the six `orchard-*`, `pine`, `pine-broad`, `pine-slender`, `pine-layered`,
 `tree-broad`, `birch`, `willow-broad`, `tree-layered`, `birch-spreading`,
 `birch-young`, `tree-slender`, `tree` and `birch-tall`. Their materials' extras
-`mmVariants.snow` give the snow canopy material and textures, a linear factor on
+`mmSnow` give the snow canopy material and textures, a linear factor on
 the crown's vertex colours (the snow cards drop the species' pigment) and the
 winter impostor's texture and card colours; the manifest points their `-snow`
 entry at the bare file (`"variant": "snow"`). The runtime builds the winter form
@@ -848,8 +849,8 @@ python tools/validate_board_assets.py
 `export.py` exports every Material Maker project under `tools/materials/` into `textures/`. After editing a
 plant GLB, `prepare_tree_lods.py` re-bakes its LOD3 impostor (every plant's without names); the bake preserves
 the three mesh levels, owns a temporary Blender scene and preserves the active scene. For the 19 species whose
-`-snow` form is a material variant it also renders the winter impostor (`<name>-snow.png` and its card colours,
-`mmVariants.snow` on the impostor material) from LOD0 in that variant.
+`-snow` form lives in the bare file it also renders the winter impostor (`<name>-snow.png` and its card colours,
+`mmSnow` on the impostor material) from LOD0 in that form.
 
 `validate_board_assets.py` checks each manifest entry against its GLB: the plant levels `-lod0` to `-lod3` and
 their family-specific triangle budgets, the triangle counts (at most 500 per other model),

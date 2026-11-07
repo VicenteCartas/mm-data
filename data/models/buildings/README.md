@@ -51,16 +51,15 @@ the notches. This is a fixed model, without repeatable base/floor modules. Only 
 
 Building appearance stores a tint in colour slot 0, using the editor's existing colour picker. White restores the
 original artwork; another colour multiplies only materials marked `mmBuildingPaint` in linear light. Windows,
-roof slabs and equipment keep their own finishes. Mixed atlases use `mmPaintMask` to protect their unpainted regions.
+roof slabs and equipment keep their own finishes. Mixed atlases' `.tres` set `metadata/mmPaintMask` to protect their unpainted regions.
 Connected hexes share the chosen tint. `.board2` version
 3 stores rotation, tint, footprint and kit variant under `components.building.appearance`.
 
 Window emission uses the same day/night control as authored buildings. Shared window `.tres` resources carry
-`metadata/mmNightEmission = true`; their emission fades out in daylight without changing their albedo. Mixed
+`metadata/mmEmission = "night"`; their emission fades out in daylight without changing their albedo. A model's material overrides this with `mmEmission` (`always`, `night` or `off`). Mixed
 wall/window atlases emit only through their window mask, independently of wall tint. The light building's far
-window mask is baked from the near windows via Blender MCP (`tools/buildings/bake_light_paint_mask.py`), then
-exported with Material Maker (`tools/materials/modular_window_lights.py`). Diagnostic kits without windows
-remain unlit.
+window mask is baked from the near windows via Blender MCP (`tools/buildings/bake_light_paint_mask.py`) into the
+`light-far` Material Maker project's sources. Diagnostic kits without windows remain unlit.
 
 `tools/buildings/debug_placeholders.py` supplies flat diagnostic kits for the missing medium/heavy/hardened buildings
 and fortresses, all hangars, and all gun emplacements. They use the light building's `bays` JSON layout and inexpensive
@@ -88,8 +87,8 @@ connections tags its mesh nodes after the module:
 - A symmetric kit tags `n` only (one-tag pieces) or `n` and `ne` (corner pieces, in all four link/end states);
   the runtime turns them by exact 60-degree steps for the other directions. Any other kit tags all six directions
   for every piece.
-- A material whose glTF extras hold `mmBoardUV` (units a repeat) is textured from the board position, along the
-  board's axes, whatever its UVs: a turned or neighbouring piece's floors and roofs run on without a seam.
+- A generated kit's slabs (their `repeat` in the JSON, units a repeat) are textured from the board position, along the
+  board's axes, whatever their UVs: a turned or neighbouring piece's floors and roofs run on without a seam.
 - Every variant of a module type (base, floor, roof) and every LOD has the same tagged pieces. A type may have none:
   a fuel tank's ground pipes stand in its base only. Base and floor modules, tagged pieces included, are exactly
   18 units high; a module stands on its lowest point over all its pieces.
@@ -169,7 +168,7 @@ buildings. No-floors and sealed buildings omit intermediate floor surfaces from 
 
 Every surface is a board material (`structures/buildings/`, `structures/lunar/`, Material Maker projects in
 `tools/materials/structures/`): the hand-made art's atlases as image projects, the roofs, floors and sidewalks
-tileable on the board's axes (`mmBoardUV`). The fuel tanks are generated:
+tileable on the board's axes (the kit JSON's `repeat`). The fuel tanks are generated:
 `python tools/buildings/fuel_tanks.py [weight ...]`, after the designer's kits (sizes, paint, roof rings). Each kit is
 authored stacked as built (floor at 18, roof at 36) with no coincident surfaces between its pieces. At full detail
 the base carries a nozzle in all six directions; a `link-n` pipe runs from the north one to the edge, and an `end-n`
@@ -190,7 +189,7 @@ projects in `tools/materials/structures/lunar/`); the dome glass is transparent 
 each standing on its origin, its front towards +Y: `tanks`, `plant`, `airlock` (its back on y = 0, against a facade)
 and `pylon` (a dome podium's corner block). It is modelled in Blender:
 `blender -b --factory-startup --python tools/buildings/lunar_equipment.py`. The same script writes board objects, one
-file each: roof props in `board/scenery/roofs/` (`radar-dish`, `capsule-tanks`, `generator-ring`, `radar-station`,
+file each: roof props in `board/scenery/roofs/` (`radar-dish`, `capsule-tanks`, `generator-ring`, `generator-slit`, `twin-pipes`, `edge-spike`, `radar-station`,
 `light-well`, `light-strip`, `solar-array`, `dish-antenna`, `sawtooth-skylight`), the editor's Buildings > Rooftop
 section, and colony details in `board/scenery/colony/` (`pipe-run`, `vent-unit`, `wall-tanks`, `ladder-cage`,
 `light-mast`, `airlock`, `radiator`, `vehicle-gate`; wall-mounted ones with their back on y = 0), the editor's

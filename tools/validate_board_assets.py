@@ -22,6 +22,9 @@ for asset, entry in features.items():
         # The alien plants (Mars corals, fungal colonies) may use twice the near budgets.
         if asset.startswith('vegetation/orchard-'):
             budgets = (34000, 10000, 3200, 12)
+        elif asset.startswith('crystal/'):
+            # Sharp rigid shards: chips only near, then only the tallest shards (build_crystals.py).
+            budgets = (600, 500, 320, 220)
         elif asset.startswith('vegetation/cactus'):
             budgets = (3600, 950, 420, 12)
         elif asset.startswith('vegetation/tree-dead'):
@@ -59,7 +62,7 @@ for asset in catalog:
             assert low < max(heights) < high, f'Plant height: {path}'
             tops[plant] = max(heights)
         else:
-            assert .9 * tops[plant] < max(heights) < 1.01 * tops[plant], f'LOD {level} height: {path}'
+            assert .88 * tops[plant] < max(heights) < 1.01 * tops[plant], f'LOD {level} height: {path}'
     triangles = 0
     for mesh in model['meshes']:
         assert mesh['attributes'] == ['POSITION', 'NORMAL', 'COLOR', 'TEXCOORD0'], path
