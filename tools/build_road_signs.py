@@ -1,4 +1,4 @@
-"""Derive the one-way road signs from the STOP sign's GLB, without Blender.
+"""Derive the road signs from the STOP sign's GLB, without Blender.
 
 Run from anywhere with plain Python 3 and Pillow: python3 tools/build_road_signs.py [name ...]
 
@@ -12,13 +12,22 @@ written beside its artwork in tools/board-models/:
 - no entry (do not enter): a red disc crossed by a white bar;
 - one-way road: a blue square with a white arrow pointing ahead;
 - no left turn and no right turn: a red ring round a white disc, a black arrow turning that way and a red bar across
-  it.
-The game places them where a single-lane, one-way road joins a two-lane one (BoardFeatures#roadControls and
+  it;
+- keep right (pass this side, Vienna Convention D,2): a blue disc with a white arrow pointing down to the right at 45
+  degrees;
+- direction to be followed (Vienna Convention D,1): a blue disc with a white stem rising to its centre and, from there,
+  a white arrow along each way out of a hex junction the sign allows, at its true heading from straight up: hard left
+  (120 degrees left), left (60 degrees left), ahead, right (60 degrees right) and hard right (120 degrees right). There
+  is one for each of the 31 sets of those ways, direction-sign-<arrows> listing its arrows from the left as hl, l, a, r
+  and hr: direction-sign-a, direction-sign-l-a, direction-sign-hl-r, ..., direction-sign-hl-l-a-r-hr.
+The game places the first ones where a single-lane, one-way road joins a two-lane one (BoardFeatures#roadControls and
 #rampSigns): the give-way sign faces traffic merging from an entrance ramp, the no-entry sign faces the junction at
 that ramp's mouth, and the one-way sign faces traffic turning into an exit ramp; a no-turn sign faces traffic that may
-not take an exit before the junction. The output is deterministic.
+not take an exit before the junction. A direction sign tells traffic approaching a junction which of its ways out it
+may take, and the keep-right sign which side of an obstacle to pass. The output is deterministic.
 """
 import io
+import itertools
 import json
 import math
 import sys
@@ -41,10 +50,26 @@ BLACK = (28, 28, 28, 255)
 TEXEL, SUPERSAMPLE = 128, 8
 # The STOP face's light rim round its red octagon, a share of the face's width.
 BORDER = .035
+# The ways out of a hex junction from the viewer's left, each at its true heading in degrees clockwise from straight up
+# (ahead): hard left, left, ahead, right and hard right.
+DIRECTIONS = {'hl': -120, 'l': -60, 'a': 0, 'r': 60, 'hr': 120}
+# A direction sign for each set of ways out an approach may take, its arrows listed from the left.
+DIRECTION_SIGNS = tuple('direction-sign-' + '-'.join(kept) for count in range(1, len(DIRECTIONS) + 1)
+                        for kept in itertools.combinations(DIRECTIONS, count))
 BUILT = ('give-way-sign', 'no-entry-sign', 'one-way-sign', 'no-left-turn-sign', 'no-right-turn-sign',
-         'no-straight-ahead-sign')
+         'keep-right-sign', *DIRECTION_SIGNS)
 # The round signs: a disc as wide as the STOP octagon across its flats.
-ROUND = ('no-entry-sign', 'no-left-turn-sign', 'no-right-turn-sign', 'no-straight-ahead-sign')
+ROUND = ('no-entry-sign', 'no-left-turn-sign', 'no-right-turn-sign', 'keep-right-sign', *DIRECTION_SIGNS)
+# The direction signs' arrows, in shares of the face's width: the branch point's height above the face's centre, the
+# stem's foot below the centre and the reach of every arrow's tip from the branch point; the shafts' and the heads'
+# widths and the heads' length. Neighbouring heads, 60 degrees apart, stay clear of each other and of the stem.
+BRANCH, FOOT, REACH = 0, .37, .40
+SHAFT, BARB, HEAD = .11, .24, .13
+
+
+def bare(name):
+    """The sign's name without "-sign": its face's file and material are named after it."""
+    return name.replace('-sign', '', 1)
 
 
 def stop_plate():
@@ -119,6 +144,23 @@ def artwork(name):
     def inset(points, share):
         return [((x - size / 2) * share + size / 2, (y - size / 2) * share + size / 2) for x, y in points]
 
+    def heading(origin, angle, along, across=0.):
+        """The point {@code along} from {@code origin} (x right, y up from the face's centre) on a heading
+        {@code angle} degrees clockwise from straight up, {@code across} to its right."""
+        bearing = math.radians(angle)
+        x = origin[0] + along * math.sin(bearing) + across * math.cos(bearing)
+        y = origin[1] + along * math.cos(bearing) - across * math.sin(bearing)
+        return at(.5 + x, .5 - y)
+
+    def arrow(origin, angle, start, tip, shaft, barb, head):
+        """A white arrow from {@code origin} along a heading: its shaft from {@code start} to its head's base, then its
+        head out to {@code tip}."""
+        base = tip - head
+        draw.polygon([heading(origin, angle, start, -shaft / 2), heading(origin, angle, base, -shaft / 2),
+                      heading(origin, angle, base, shaft / 2), heading(origin, angle, start, shaft / 2)], fill=WHITE)
+        draw.polygon([heading(origin, angle, tip), heading(origin, angle, base, barb / 2),
+                      heading(origin, angle, base, -barb / 2)], fill=WHITE)
+
     if name == 'give-way-sign':
         # Point down, inscribed in the circle the plate's corners lie on (#outline); image rows run downwards.
         corners = [at(.5 + .5 * math.cos(math.radians(a)), .5 - .5 * math.sin(math.radians(a))) for a in (270, 30, 150)]
@@ -127,29 +169,40 @@ def artwork(name):
     elif name == 'no-entry-sign':
         draw.ellipse([*at(rim, rim), *at(1 - rim, 1 - rim)], fill=RED)
         draw.rectangle([*at(.16, .41), *at(.84, .59)], fill=WHITE)
-    elif name in ('no-left-turn-sign', 'no-right-turn-sign', 'no-straight-ahead-sign'):
+    elif name in ('no-left-turn-sign', 'no-right-turn-sign'):
         draw.ellipse([*at(rim, rim), *at(1 - rim, 1 - rim)], fill=RED)
         draw.ellipse([*at(.16, .16), *at(.84, .84)], fill=WHITE)
-        arrow = Image.new('RGBA', (size, size), (0, 0, 0, 0))
-        pen = ImageDraw.Draw(arrow)
-        if name == 'no-straight-ahead-sign':
-            # Straight up the middle under an arrowhead.
-            pen.rectangle([*at(.45, .40), *at(.55, .80)], fill=BLACK)
-            pen.polygon([at(.5, .20), at(.66, .40), at(.34, .40)], fill=BLACK)
-        else:
-            # Drawn turning left, then mirrored for the right turn: up the middle, then off to the left under an arrowhead.
-            pen.rectangle([*at(.53, .40), *at(.63, .78)], fill=BLACK)
-            pen.rectangle([*at(.36, .33), *at(.63, .43)], fill=BLACK)
-            pen.polygon([at(.20, .38), at(.38, .22), at(.38, .54)], fill=BLACK)
+        turn = Image.new('RGBA', (size, size), (0, 0, 0, 0))
+        pen = ImageDraw.Draw(turn)
+        # Drawn turning left, then mirrored for the right turn: up the middle, then off to the left under an arrowhead.
+        pen.rectangle([*at(.53, .40), *at(.63, .78)], fill=BLACK)
+        pen.rectangle([*at(.36, .33), *at(.63, .43)], fill=BLACK)
+        pen.polygon([at(.20, .38), at(.38, .22), at(.38, .54)], fill=BLACK)
         if name == 'no-right-turn-sign':
-            arrow = arrow.transpose(Image.Transpose.FLIP_LEFT_RIGHT)
-        image.alpha_composite(arrow)
+            turn = turn.transpose(Image.Transpose.FLIP_LEFT_RIGHT)
+        image.alpha_composite(turn)
         # The bar runs from top left to bottom right across the arrow, as on each of these signs.
         draw.line([at(.27, .27), at(.73, .73)], fill=RED, width=round(.1 * size))
     elif name == 'one-way-sign':
         draw.rectangle([*at(rim, rim), *at(1 - rim, 1 - rim)], fill=BLUE)
         draw.rectangle([*at(.42, .4), *at(.58, .86)], fill=WHITE)
         draw.polygon([at(.5, .12), at(.78, .44), at(.22, .44)], fill=WHITE)
+    elif name == 'keep-right-sign':
+        # Pass this side: one arrow pointing down to the right across the disc's centre.
+        draw.ellipse([*at(rim, rim), *at(1 - rim, 1 - rim)], fill=BLUE)
+        arrow((0, 0), 135, -.35, .35, .13, .38, .22)
+    elif name in DIRECTION_SIGNS:
+        # Direction to be followed: a stem up from the disc's foot to a branch point at its centre, and from there an
+        # arrow along each way out the sign allows, at its true heading.
+        draw.ellipse([*at(rim, rim), *at(1 - rim, 1 - rim)], fill=BLUE)
+        branch = (0, BRANCH)
+        draw.polygon([heading(branch, 0, -FOOT - BRANCH, -SHAFT / 2), heading(branch, 0, 0, -SHAFT / 2),
+                      heading(branch, 0, 0, SHAFT / 2), heading(branch, 0, -FOOT - BRANCH, SHAFT / 2)], fill=WHITE)
+        # A round joint where the arrows leave the stem.
+        draw.ellipse([*at(.5 - SHAFT / 2, .5 - BRANCH - SHAFT / 2), *at(.5 + SHAFT / 2, .5 - BRANCH + SHAFT / 2)],
+                     fill=WHITE)
+        for code in name.removeprefix('direction-sign-').split('-'):
+            arrow(branch, DIRECTIONS[code], 0, REACH, SHAFT, BARB, HEAD)
     else:
         raise ValueError(name)
     buffer = io.BytesIO()
@@ -218,7 +271,7 @@ def model(name, level, measures, image, face_file):
     vertices.extend(plate_vertices)
     # The STOP sign's rim: white near, its post's metal far.
     parts.setdefault('white' if level == 0 else 'metal', []).extend(i + offset for i in rim)
-    face_id = name.removesuffix('-sign').replace('-', ' ') + ' face'
+    face_id = bare(name).replace('-', ' ') + ' face'
     parts[face_id] = [i + offset for i in face]
     stop_face = materials['stop face']
     texture = {key: value for key, value in stop_face['textures'][0].items() if key != 'data'}
@@ -236,7 +289,7 @@ def model(name, level, measures, image, face_file):
 def export(name):
     measures = stop_plate()
     image = artwork(name)
-    face_file = f'road-{name.removesuffix("-sign")}-face.png'
+    face_file = f'road-{bare(name)}-face.png'
     (ARTWORK / face_file).write_bytes(image)
     models = {level: model(name, level, measures, image, face_file) for level in (0, 1)}
     path = ROAD / (name + '.glb')
