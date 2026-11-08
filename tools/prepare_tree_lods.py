@@ -291,7 +291,7 @@ def save(values, path):
     bpy.data.images.remove(atlas)
 
 
-def impostor(scene, model, name, images):
+def impostor(scene, model, name, images, tint=None):
     """LOD3: two crossed vertical cards and a horizontal cap through the crown, textured with orthographic renders of
     `model` (the plant's coarsest mesh level) from the front, the side and above. Fixed in the plant's frame, it draws,
     shadows and picks like any mesh; seen from above, only the cap shows. Each face has a back, as the game culls back
@@ -376,6 +376,9 @@ def impostor(scene, model, name, images):
                 vertices.extend(round(value, 6) for value in (*point, *facing, *card[panel], tu, tv))
             indices.extend((base, base + 2, base + 1, base, base + 3, base + 2) if side
                            else (base, base + 1, base + 2, base, base + 2, base + 3))
+    # The colour fit to the far mesh as the game shows it at the switch (calibrate_tint.py): per card face, linear RGB.
+    for panel, factor in enumerate(tint or ()):
+        colour[:, panel * PANEL:(panel + 1) * PANEL] *= numpy.asarray(factor)
     pigment = dilate(colour, filled)
     save(numpy.concatenate([srgb(pigment), covered[..., None]], axis=2), BOARD / IMPOSTORS / (name + '.png'))
     shape = dilate(shape, filled)
@@ -473,23 +476,25 @@ def impostors(only=None):
             levels = {level: read_glb(path, level, linear_colors=True) for level in range(min(3, len(entry['lods'])))}
             # The cards stand for the coarsest mesh level, which they replace.
             source = levels[max(levels)]
-            # The impostor material's extras hold the winter impostor (mmSnow).
-            extras = next((material.get('extras') for material in levels[0]['materials']
-                           if material['id'] == 'impostor'), None)
+            # The impostor material's extras hold the winter impostor (mmSnow) and each atlas's colour fit
+            # (mmImpostorTint: per atlas, a linear RGB factor per card face), kept across rebakes.
+            extras = dict(next((material.get('extras') for material in levels[0]['materials']
+                                if material['id'] == 'impostor'), None) or {})
+            tints = extras.get('mmImpostorTint', {})
             alpha_test = next((material.get('alphaTest', .5) for material in levels[0]['materials']
                                if material['id'] == 'impostor'), .5)
             for model in levels.values():
                 model['materials'] = [material for material in model['materials'] if material['id'] != 'impostor']
-            levels[3] = impostor(scene, source, name, images)
+            levels[3] = impostor(scene, source, name, images, tints.get(name))
             levels[3]['materials'][0]['alphaTest'] = alpha_test
             # A winter form kept as mmSnow gets its own impostor renders and card colours.
             cold = winter(source)
             if cold:
-                frozen = impostor(scene, cold, name + '-snow', images)['meshes'][0]['vertices']
-                extras = {'mmSnow': {
+                frozen = impostor(scene, cold, name + '-snow', images, tints.get(name + '-snow'))['meshes'][0]['vertices']
+                extras['mmSnow'] = {
                     'textures': {'baseColor': f'../{IMPOSTORS}/{name}-snow.png',
                                  'normal': f'../{IMPOSTORS}/{name}-snow_normal.png'},
-                    'colours': [frozen[i + 6:i + 10] for i in range(0, len(frozen), 12)]}}
+                    'colours': [frozen[i + 6:i + 10] for i in range(0, len(frozen), 12)]}
             if extras:
                 levels[3]['materials'][0]['extras'] = extras
             entry['lods'] = entry['lods'][:3] + [{'node': f'{name}-lod3', **counts(levels[3])}]
