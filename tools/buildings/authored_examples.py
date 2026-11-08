@@ -382,6 +382,9 @@ def export_model(items, label, level=0, helper=False, exact=False):
             mat.update(roughness=spec['roughness'], metallic=spec['metallic'])
             if key.endswith('-cutout'):
                 mat.update(alphaTest=.5, doubleSided=True)
+            elif spec['transparent']:
+                # Glass whose .tres blends draws blended in the game, as the kits' and multi-hex domes' glass does.
+                mat['alphaMode'] = 'BLEND'
             for kind, image in [('NORMAL', spec['normal']), ('AMBIENT', spec['ao_map'])]:
                 if image:
                     mat['textures'].append({'type':kind, 'filename':'../../board/textures/'+image.relative_to(TEXTURES).as_posix()})

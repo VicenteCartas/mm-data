@@ -486,6 +486,7 @@ def utopia_pavilion(rng):
 PLATING = 'structures/frontier/plating'  # Blue-grey enamel in its albedo: drawn white.
 SOLAR = 'structures/lunar/solar-cells'
 DOME_GLASS = 'structures/lunar/dome-glass'  # The biodome's see-through glass (user, 2026-11-07).
+DUSTY_GLASS = 'structures/frontier/dusty-glass'  # Greenhouse glass under frontier dust and grime (user, 2026-11-08).
 DECK = 'structures/common/diamond-plate'
 FRAME = (.74, .76, .78)  # Light steel frames, matte (MATTE): satin steel flared white from one side.
 MATTE = 'structures/common/matte-steel'
@@ -740,7 +741,7 @@ def frontier_greenhouse(rng, kind, base=False, length=W):
     sill, depth, top = 5.2, 3.0, LEVEL-INNER
     module_face(length, [(0, length, sill, top)], foot=FOOT if base else 0.0)
     cuboid('glass sill', 0, length, -.3, 0, sill-.6, sill, STEEL, FRAME, omit='bk')
-    add('greenhouse glass', DOME_GLASS, (.92, .97, .97), [(0, 0, sill), (length, 0, sill), (length, 0, top), (0, 0, top)], [(0, 1, 2, 3)])
+    add('greenhouse glass', DUSTY_GLASS, (1, 1, 1), [(0, 0, sill), (length, 0, sill), (length, 0, top), (0, 0, top)], [(0, 1, 2, 3)])
     for x in (length/4, length*3/4):  # Ribs a module's length apart, wherever its stretches meet.
         cuboid('glass rib', x-.3, x+.3, -.3, 0, sill, top, STEEL, FRAME, omit='bkt')
     for shelf in (6.4, 10.6):
@@ -1017,7 +1018,7 @@ def frontier_variant(name, bases, floors, door, roof=PLATING, layouts=FRONTIER_F
     return {
         'name': name, 'style': 'bays', 'pieces': 'frontier-pieces.glb', 'lone': LONE, 'bandEnd': 1.75,
         'cornerRadius': 5.0, 'cornerSegments': 1,
-        'roof': {'material': roof, 'repeat': 30.0, 'inset': CHAMFER, 'heights': [0.3], 'underlay': roof == DOME_GLASS},
+        'roof': {'material': roof, 'repeat': 30.0, 'inset': CHAMFER, 'heights': [0.3], 'underlay': roof == DUSTY_GLASS},
         'floors': {'material': DECK, 'repeat': 12.0, 'inset': 3.0, 'heights': [0.05]},
         'modules': {
             'base0': run(['base-'+bay for bay in bases[0]], p, door, 'corner-base', 'base-joint'),
@@ -1047,7 +1048,7 @@ KITS = {
         frontier_variant('industrial', (['louvre', 'pipes', 'boxes'], ['boxes', 'louvre', 'slit']),
                          (['slit', 'louvre', 'pipes', 'slit'], ['louvre', 'slit', 'boxes', 'vent']), 'rollup'),
         frontier_variant('greenhouse', (['glass', 'glass-vent', 'glass'], ['glass-vent', 'glass', 'glass']),
-                         (['glass', 'glass-vent', 'glass'], ['glass', 'glass', 'glass-vent']), 'airlock', DOME_GLASS, GREENHOUSE_FITTINGS),
+                         (['glass', 'glass-vent', 'glass'], ['glass', 'glass', 'glass-vent']), 'airlock', DUSTY_GLASS, GREENHOUSE_FITTINGS),
     ]),
     'utopia': (UTOPIA_PIECES, [
         utopia_variant('terraces', (['terrace-dense', 'terrace-sparse', 'terrace-pier', 'terrace-dense', 'terrace-oval'],

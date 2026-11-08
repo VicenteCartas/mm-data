@@ -23,16 +23,15 @@ import theme_kits as k
 import utopia_buildings as u
 from civic_habitat import PAINT, STEEL, add, cuboid, deck
 from glb_geometry import write_glb
-from theme_kits import (BEVEL, BORDER, CHAMFER, DARK, DOME_GLASS, DOOR_GREY, FRAME, GREENS, LEVEL, ORANGE, PLATING, ROUND, SOLAR,
+from theme_kits import (BEVEL, BORDER, CHAMFER, DARK, DOOR_GREY, DUSTY_GLASS, FRAME, GREENS, LEVEL, ORANGE, PLATING, ROUND, SOLAR,
                         TEAL, W, facing)
 
 EXTEND = 10.0  # How far a wall's pieces go on past its ends, for the mitre to trim.
 RADIUS = 5.0  # Convex corners chamfered as the kit's: one facet, 5 back along each wall at a right angle.
 HEX_X, HEX_Y = 62.35, 72.0
 GLASS_TINT = (.92, .97, .97)
+SKYLIGHT = 'structures/lunar/skylight-glass'  # Opaque roof-light glazing: the lantern's plating lies under it.
 GROW_LIGHT = (.46, .52, .38)  # Grow lights always on, faint (user, 2026-11-08: "faint light in the serra").
-VAULT_TINT = (.74, .93, .70)  # The tunnels' glass, green with the crops behind it: dark blue at iso angles otherwise.
-VAULT_GLOW = (.06, .075, .05)  # The grow lights' faint light in the glass itself: the dome glass hides what is behind it.
 
 
 def hexc(i, j):
@@ -553,14 +552,13 @@ def glass_tunnel(cx, y0, y1, half, base, rng):
     # Glass along the vault, between ribs; the upright sides from the base's top.
     for side in range(1, len(prof)-2):
         (ax, az), (bx, bz) = prof[side], prof[side+1]
-        add('tunnel glass', DOME_GLASS, VAULT_TINT, [(cx+ax, y0, az), (cx+ax, y1, az), (cx+bx, y1, bz), (cx+bx, y0, bz)], [(3, 2, 1, 0)],
-            light=VAULT_GLOW)
+        add('tunnel glass', DUSTY_GLASS, (1, 1, 1), [(cx+ax, y0, az), (cx+ax, y1, az), (cx+bx, y1, bz), (cx+bx, y0, bz)], [(3, 2, 1, 0)])
     for sign in (-1, 1):
         x = cx+sign*half
         quad = [(x, y0, base), (x, y1, base), (x, y1, eave), (x, y0, eave)]
-        add('tunnel glass', DOME_GLASS, VAULT_TINT, quad if sign > 0 else quad[::-1], [(0, 1, 2, 3)], light=VAULT_GLOW)
+        add('tunnel glass', DUSTY_GLASS, (1, 1, 1), quad if sign > 0 else quad[::-1], [(0, 1, 2, 3)])
     gable = [(cx+x, y0, z) for x, z in prof]
-    add('tunnel gable', DOME_GLASS, VAULT_TINT, gable, [tuple(range(len(gable)))[::-1]], light=VAULT_GLOW)
+    add('tunnel gable', DUSTY_GLASS, (1, 1, 1), gable, [tuple(range(len(gable)))[::-1]])
     ribs = max(2, round((y1-y0)/19))
     for i in range(ribs+1):
         y = y0+(y1-y0)*i/ribs
@@ -573,13 +571,18 @@ def glass_tunnel(cx, y0, y1, half, base, rng):
     # Racks of greens and their lights, along the tunnel.
     for x in (-(half-3.5), 0.0, half-3.5):
         cuboid('grow rack', cx+x-2.2, cx+x+2.2, y0+3, y1-3, base, base+2.2, PAINT, (.42, .44, .46), omit='b')
-        for i in range(int((y1-y0-6)//6)):
-            yy = y0+3+i*6
-            cuboid('greens', cx+x-1.9, cx+x+1.9, yy+.4, yy+5.6, base+2.2, base+5.6, h.BUSH, (.60, .85, .40), omit='b')
+        # A soil trough on the rack, two rows of leafy greens in it.
+        cuboid('rack trough', cx+x-2.0, cx+x+2.0, y0+3.2, y1-3.2, base+2.2, base+2.8, PAINT, (.22, .19, .15), omit='b')
+        for row in (-1.05, 1.05):
+            yy = y0+4.4+rng.uniform(0, 1.2)
+            while yy < y1-4.4:
+                u.shrub(cx+x+row+rng.uniform(-.25, .25), yy, base+2.8, rng.uniform(2.4, 3.4), rng)
+                yy += rng.uniform(2.2, 2.9)
         # Under the glass over its rack: the flat top, or the chamfer over an outer rack.
         glass_z = ridge if abs(x) <= top_half else eave+(half-abs(x)-.4)/(half-top_half)*(ridge-eave)
         cuboid('grow light', cx+x-.4, cx+x+.4, y0+3, y1-3, glass_z-1.8, glass_z-1.4, PAINT, (.90, .88, .80), light=GROW_LIGHT)
     h.fixtures.append((cx, (y0+y1)/2, ridge-2))
+    u.flush_cards()
 
 
 # -- Trade Exchange: a hexagonal hall, three wings (4 hexes) ------------------------------------------
@@ -605,7 +608,7 @@ def trade_exchange():
     cap('roof plating lantern', high, LEVEL+17.0)
     roof_axes['roof plating lantern'] = (1, 0)
     sky = scaled(high, .62)
-    cap('skylight', sky, LEVEL+17.1, DOME_GLASS, GLASS_TINT)
+    cap('skylight', sky, LEVEL+17.1, SKYLIGHT, GLASS_TINT)
     for corner in sky:
         u.tube('skylight rib', [(0, 0, LEVEL+17.2), (*corner, LEVEL+17.2)], .25, k.MATTE, FRAME, sides=4)
     add('lantern light', PAINT, (.90, .80, .55), [(x, y, LEVEL+16.3) for x, y in scaled(high, .9)][::-1], [tuple(range(len(high)))],
@@ -861,7 +864,7 @@ BUILDINGS = {'trade-exchange': trade_exchange, 'command-comms': command_comms, '
              'hydroponics': hydroponics, 'fabrication-workshop': fabrication_workshop, 'cargo-terminal': cargo_terminal,
              'medical-center': medical_center}
 FINE = ('marker light', 'chevron', 'clamp', 'mullion', 'window frame', 'antenna', 'marking', 'mast brace', 'mast ring',
-        'dish feed', 'louvre', 'beacon post')
+        'dish feed', 'louvre', 'beacon post', 'planting')
 
 
 def far_piece(obj):
@@ -914,4 +917,4 @@ if __name__ == '__main__' and '--' in sys.argv:
     args = sys.argv[sys.argv.index('--')+1:]
     build(args[0])
     if len(args) > 1:
-        u.sheet(args[0], args[1], see_through=(DOME_GLASS,))
+        u.sheet(args[0], args[1], see_through=(DUSTY_GLASS,))

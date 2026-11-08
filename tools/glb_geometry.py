@@ -144,6 +144,8 @@ def write_glb(path, model=None, *, levels=None, groups=None, extras=None, linear
                 'metallicFactor': metallic, 'roughnessFactor': roughness}})
             if 'alphaTest' in material:
                 document['materials'][-1].update(alphaMode='MASK', alphaCutoff=material['alphaTest'])
+            elif material.get('alphaMode') == 'BLEND':
+                document['materials'][-1]['alphaMode'] = 'BLEND'
             if material.get('doubleSided'):
                 document['materials'][-1]['doubleSided'] = True
             if material.get('extras'):
@@ -392,6 +394,8 @@ def read_glb(path, level=0, *, linear_colors=False):
             result['emissive'] = [v if linear_colors else display(v) for v in source['emissiveFactor']]
         if source.get('alphaMode') == 'MASK':
             result['alphaTest'] = source.get('alphaCutoff', .5)
+        elif source.get('alphaMode') == 'BLEND':
+            result['alphaMode'] = 'BLEND'
         if source.get('extras'):
             result['extras'] = source['extras']
         for kind, info in (('DIFFUSE', pbr.get('baseColorTexture')), ('NORMAL', source.get('normalTexture')),
