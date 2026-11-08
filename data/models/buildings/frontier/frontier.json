@@ -1,0 +1,1597 @@
+[
+  {
+    "name": "habitat",
+    "style": "bays",
+    "pieces": "frontier-pieces.glb",
+    "lone": [
+      [
+        -20.78125,
+        -34.25
+      ],
+      [
+        20.78125,
+        -34.25
+      ],
+      [
+        20.78125,
+        34.25
+      ],
+      [
+        -20.78125,
+        34.25
+      ]
+    ],
+    "bandEnd": 1.75,
+    "cornerRadius": 5.0,
+    "cornerSegments": 1,
+    "roof": {
+      "material": "structures/frontier/plating",
+      "repeat": 30.0,
+      "inset": 2.4,
+      "heights": [
+        0.3
+      ],
+      "underlay": false
+    },
+    "floors": {
+      "material": "structures/common/diamond-plate",
+      "repeat": 12.0,
+      "inset": 3.0,
+      "heights": [
+        0.05
+      ]
+    },
+    "modules": {
+      "base0": [
+        {
+          "bays": [
+            "base-pair",
+            "base-single",
+            "base-four",
+            "base-pair",
+            "base-vent"
+          ],
+          "bay": 24.0,
+          "planar": {
+            "structures/frontier/plating": 18.0
+          },
+          "door": "airlock",
+          "round": {
+            "piece": "corner-base",
+            "length": 6.0
+          },
+          "joints": {
+            "start": "base-joint-start",
+            "end": "base-joint-end",
+            "length": 2.4
+          }
+        }
+      ],
+      "base1": [
+        {
+          "bays": [
+            "base-wide",
+            "base-pair",
+            "base-single",
+            "base-four"
+          ],
+          "bay": 24.0,
+          "planar": {
+            "structures/frontier/plating": 18.0
+          },
+          "door": "airlock",
+          "round": {
+            "piece": "corner-base",
+            "length": 6.0
+          },
+          "joints": {
+            "start": "base-joint-start",
+            "end": "base-joint-end",
+            "length": 2.4
+          }
+        }
+      ],
+      "floor0": [
+        {
+          "bays": [
+            "pair",
+            "four",
+            "single",
+            "pair",
+            "vent"
+          ],
+          "bay": 24.0,
+          "planar": {
+            "structures/frontier/plating": 18.0
+          },
+          "round": {
+            "piece": "corner",
+            "length": 6.0
+          },
+          "joints": {
+            "start": "joint-start",
+            "end": "joint-end",
+            "length": 2.4
+          }
+        }
+      ],
+      "floor1": [
+        {
+          "bays": [
+            "wide",
+            "pair",
+            "four",
+            "single",
+            "vent"
+          ],
+          "bay": 24.0,
+          "planar": {
+            "structures/frontier/plating": 18.0
+          },
+          "round": {
+            "piece": "corner",
+            "length": 6.0
+          },
+          "joints": {
+            "start": "joint-start",
+            "end": "joint-end",
+            "length": 2.4
+          }
+        }
+      ],
+      "roof0": [
+        {
+          "bays": [
+            "roof-plain",
+            "roof-pipe",
+            "roof-plain",
+            "roof-grille"
+          ],
+          "bay": 24.0,
+          "planar": {
+            "structures/frontier/plating": 18.0
+          },
+          "round": {
+            "piece": "roof-corner",
+            "length": 6.0
+          },
+          "seam": {
+            "piece": "roof-seam",
+            "length": 24.0
+          }
+        }
+      ],
+      "roof1": [
+        {
+          "bays": [
+            "roof-pipe",
+            "roof-light",
+            "roof-plain"
+          ],
+          "bay": 24.0,
+          "planar": {
+            "structures/frontier/plating": 18.0
+          },
+          "round": {
+            "piece": "roof-corner",
+            "length": 6.0
+          },
+          "seam": {
+            "piece": "roof-seam",
+            "length": 24.0
+          }
+        }
+      ]
+    },
+    "fittings": {
+      "square": {
+        "hatch": "hatch",
+        "vent": "hvac",
+        "layouts": [
+          {
+            "hatches": [],
+            "vents": [],
+            "pieces": {
+              "solar": [
+                [
+                  -5,
+                  5,
+                  0
+                ]
+              ],
+              "radome": [
+                [
+                  8,
+                  -9,
+                  0
+                ]
+              ]
+            }
+          },
+          {
+            "hatches": [],
+            "vents": [],
+            "pieces": {
+              "hvac": [
+                [
+                  0,
+                  0,
+                  0
+                ]
+              ]
+            }
+          },
+          {
+            "hatches": [],
+            "vents": [],
+            "pieces": {
+              "solar": [
+                [
+                  0,
+                  -6.5,
+                  0
+                ],
+                [
+                  0,
+                  8,
+                  0
+                ]
+              ]
+            }
+          },
+          {
+            "hatches": [],
+            "vents": [],
+            "pieces": {
+              "radome": [
+                [
+                  -9,
+                  7,
+                  0
+                ]
+              ],
+              "hatch": [
+                [
+                  8,
+                  -6,
+                  0
+                ]
+              ]
+            }
+          },
+          {
+            "hatches": [],
+            "vents": [],
+            "pieces": {
+              "hatch": [
+                [
+                  0,
+                  2,
+                  0
+                ]
+              ],
+              "beacon": [
+                [
+                  10,
+                  -9,
+                  0
+                ]
+              ]
+            }
+          },
+          {
+            "hatches": [],
+            "vents": [],
+            "pieces": {
+              "hvac": [
+                [
+                  -6,
+                  -5,
+                  90
+                ]
+              ],
+              "solar": [
+                [
+                  7,
+                  8,
+                  0
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "angled": {
+        "hatch": "hatch",
+        "vent": "hvac",
+        "layouts": [
+          {
+            "hatches": [],
+            "vents": [],
+            "pieces": {
+              "solar": [
+                [
+                  -5,
+                  5,
+                  0
+                ]
+              ],
+              "radome": [
+                [
+                  8,
+                  -9,
+                  0
+                ]
+              ]
+            }
+          },
+          {
+            "hatches": [],
+            "vents": [],
+            "pieces": {
+              "hvac": [
+                [
+                  0,
+                  0,
+                  0
+                ]
+              ]
+            }
+          },
+          {
+            "hatches": [],
+            "vents": [],
+            "pieces": {
+              "solar": [
+                [
+                  0,
+                  -6.5,
+                  0
+                ],
+                [
+                  0,
+                  8,
+                  0
+                ]
+              ]
+            }
+          },
+          {
+            "hatches": [],
+            "vents": [],
+            "pieces": {
+              "radome": [
+                [
+                  -9,
+                  7,
+                  0
+                ]
+              ],
+              "hatch": [
+                [
+                  8,
+                  -6,
+                  0
+                ]
+              ]
+            }
+          },
+          {
+            "hatches": [],
+            "vents": [],
+            "pieces": {
+              "hatch": [
+                [
+                  0,
+                  2,
+                  0
+                ]
+              ],
+              "beacon": [
+                [
+                  10,
+                  -9,
+                  0
+                ]
+              ]
+            }
+          },
+          {
+            "hatches": [],
+            "vents": [],
+            "pieces": {
+              "hvac": [
+                [
+                  -6,
+                  -5,
+                  90
+                ]
+              ],
+              "solar": [
+                [
+                  7,
+                  8,
+                  0
+                ]
+              ]
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "name": "medical",
+    "style": "bays",
+    "pieces": "frontier-pieces.glb",
+    "lone": [
+      [
+        -20.78125,
+        -34.25
+      ],
+      [
+        20.78125,
+        -34.25
+      ],
+      [
+        20.78125,
+        34.25
+      ],
+      [
+        -20.78125,
+        34.25
+      ]
+    ],
+    "bandEnd": 1.75,
+    "cornerRadius": 5.0,
+    "cornerSegments": 1,
+    "roof": {
+      "material": "structures/frontier/plating",
+      "repeat": 30.0,
+      "inset": 2.4,
+      "heights": [
+        0.3
+      ],
+      "underlay": false
+    },
+    "floors": {
+      "material": "structures/common/diamond-plate",
+      "repeat": 12.0,
+      "inset": 3.0,
+      "heights": [
+        0.05
+      ]
+    },
+    "modules": {
+      "base0": [
+        {
+          "bays": [
+            "base-med-pair",
+            "base-med-triple",
+            "base-med-single"
+          ],
+          "bay": 24.0,
+          "planar": {
+            "structures/frontier/plating": 18.0
+          },
+          "door": "airlock-med",
+          "round": {
+            "piece": "corner-base",
+            "length": 6.0
+          },
+          "joints": {
+            "start": "base-joint-start",
+            "end": "base-joint-end",
+            "length": 2.4
+          }
+        }
+      ],
+      "base1": [
+        {
+          "bays": [
+            "base-med-triple",
+            "base-med-pair",
+            "base-med-single"
+          ],
+          "bay": 24.0,
+          "planar": {
+            "structures/frontier/plating": 18.0
+          },
+          "door": "airlock-med",
+          "round": {
+            "piece": "corner-base",
+            "length": 6.0
+          },
+          "joints": {
+            "start": "base-joint-start",
+            "end": "base-joint-end",
+            "length": 2.4
+          }
+        }
+      ],
+      "floor0": [
+        {
+          "bays": [
+            "med-triple",
+            "med-pair",
+            "med-single",
+            "med-triple"
+          ],
+          "bay": 24.0,
+          "planar": {
+            "structures/frontier/plating": 18.0
+          },
+          "round": {
+            "piece": "corner",
+            "length": 6.0
+          },
+          "joints": {
+            "start": "joint-start",
+            "end": "joint-end",
+            "length": 2.4
+          }
+        }
+      ],
+      "floor1": [
+        {
+          "bays": [
+            "med-pair",
+            "med-triple",
+            "med-pair",
+            "med-single"
+          ],
+          "bay": 24.0,
+          "planar": {
+            "structures/frontier/plating": 18.0
+          },
+          "round": {
+            "piece": "corner",
+            "length": 6.0
+          },
+          "joints": {
+            "start": "joint-start",
+            "end": "joint-end",
+            "length": 2.4
+          }
+        }
+      ],
+      "roof0": [
+        {
+          "bays": [
+            "roof-plain",
+            "roof-pipe",
+            "roof-plain",
+            "roof-grille"
+          ],
+          "bay": 24.0,
+          "planar": {
+            "structures/frontier/plating": 18.0
+          },
+          "round": {
+            "piece": "roof-corner",
+            "length": 6.0
+          },
+          "seam": {
+            "piece": "roof-seam",
+            "length": 24.0
+          }
+        }
+      ],
+      "roof1": [
+        {
+          "bays": [
+            "roof-pipe",
+            "roof-light",
+            "roof-plain"
+          ],
+          "bay": 24.0,
+          "planar": {
+            "structures/frontier/plating": 18.0
+          },
+          "round": {
+            "piece": "roof-corner",
+            "length": 6.0
+          },
+          "seam": {
+            "piece": "roof-seam",
+            "length": 24.0
+          }
+        }
+      ]
+    },
+    "fittings": {
+      "square": {
+        "hatch": "hatch",
+        "vent": "hvac",
+        "layouts": [
+          {
+            "hatches": [],
+            "vents": [],
+            "pieces": {
+              "solar": [
+                [
+                  -5,
+                  5,
+                  0
+                ]
+              ],
+              "radome": [
+                [
+                  8,
+                  -9,
+                  0
+                ]
+              ]
+            }
+          },
+          {
+            "hatches": [],
+            "vents": [],
+            "pieces": {
+              "hvac": [
+                [
+                  0,
+                  0,
+                  0
+                ]
+              ]
+            }
+          },
+          {
+            "hatches": [],
+            "vents": [],
+            "pieces": {
+              "solar": [
+                [
+                  0,
+                  -6.5,
+                  0
+                ],
+                [
+                  0,
+                  8,
+                  0
+                ]
+              ]
+            }
+          },
+          {
+            "hatches": [],
+            "vents": [],
+            "pieces": {
+              "radome": [
+                [
+                  -9,
+                  7,
+                  0
+                ]
+              ],
+              "hatch": [
+                [
+                  8,
+                  -6,
+                  0
+                ]
+              ]
+            }
+          },
+          {
+            "hatches": [],
+            "vents": [],
+            "pieces": {
+              "hatch": [
+                [
+                  0,
+                  2,
+                  0
+                ]
+              ],
+              "beacon": [
+                [
+                  10,
+                  -9,
+                  0
+                ]
+              ]
+            }
+          },
+          {
+            "hatches": [],
+            "vents": [],
+            "pieces": {
+              "hvac": [
+                [
+                  -6,
+                  -5,
+                  90
+                ]
+              ],
+              "solar": [
+                [
+                  7,
+                  8,
+                  0
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "angled": {
+        "hatch": "hatch",
+        "vent": "hvac",
+        "layouts": [
+          {
+            "hatches": [],
+            "vents": [],
+            "pieces": {
+              "solar": [
+                [
+                  -5,
+                  5,
+                  0
+                ]
+              ],
+              "radome": [
+                [
+                  8,
+                  -9,
+                  0
+                ]
+              ]
+            }
+          },
+          {
+            "hatches": [],
+            "vents": [],
+            "pieces": {
+              "hvac": [
+                [
+                  0,
+                  0,
+                  0
+                ]
+              ]
+            }
+          },
+          {
+            "hatches": [],
+            "vents": [],
+            "pieces": {
+              "solar": [
+                [
+                  0,
+                  -6.5,
+                  0
+                ],
+                [
+                  0,
+                  8,
+                  0
+                ]
+              ]
+            }
+          },
+          {
+            "hatches": [],
+            "vents": [],
+            "pieces": {
+              "radome": [
+                [
+                  -9,
+                  7,
+                  0
+                ]
+              ],
+              "hatch": [
+                [
+                  8,
+                  -6,
+                  0
+                ]
+              ]
+            }
+          },
+          {
+            "hatches": [],
+            "vents": [],
+            "pieces": {
+              "hatch": [
+                [
+                  0,
+                  2,
+                  0
+                ]
+              ],
+              "beacon": [
+                [
+                  10,
+                  -9,
+                  0
+                ]
+              ]
+            }
+          },
+          {
+            "hatches": [],
+            "vents": [],
+            "pieces": {
+              "hvac": [
+                [
+                  -6,
+                  -5,
+                  90
+                ]
+              ],
+              "solar": [
+                [
+                  7,
+                  8,
+                  0
+                ]
+              ]
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "name": "industrial",
+    "style": "bays",
+    "pieces": "frontier-pieces.glb",
+    "lone": [
+      [
+        -20.78125,
+        -34.25
+      ],
+      [
+        20.78125,
+        -34.25
+      ],
+      [
+        20.78125,
+        34.25
+      ],
+      [
+        -20.78125,
+        34.25
+      ]
+    ],
+    "bandEnd": 1.75,
+    "cornerRadius": 5.0,
+    "cornerSegments": 1,
+    "roof": {
+      "material": "structures/frontier/plating",
+      "repeat": 30.0,
+      "inset": 2.4,
+      "heights": [
+        0.3
+      ],
+      "underlay": false
+    },
+    "floors": {
+      "material": "structures/common/diamond-plate",
+      "repeat": 12.0,
+      "inset": 3.0,
+      "heights": [
+        0.05
+      ]
+    },
+    "modules": {
+      "base0": [
+        {
+          "bays": [
+            "base-louvre",
+            "base-pipes",
+            "base-boxes"
+          ],
+          "bay": 24.0,
+          "planar": {
+            "structures/frontier/plating": 18.0
+          },
+          "door": "rollup",
+          "round": {
+            "piece": "corner-base",
+            "length": 6.0
+          },
+          "joints": {
+            "start": "base-joint-start",
+            "end": "base-joint-end",
+            "length": 2.4
+          }
+        }
+      ],
+      "base1": [
+        {
+          "bays": [
+            "base-boxes",
+            "base-louvre",
+            "base-slit"
+          ],
+          "bay": 24.0,
+          "planar": {
+            "structures/frontier/plating": 18.0
+          },
+          "door": "rollup",
+          "round": {
+            "piece": "corner-base",
+            "length": 6.0
+          },
+          "joints": {
+            "start": "base-joint-start",
+            "end": "base-joint-end",
+            "length": 2.4
+          }
+        }
+      ],
+      "floor0": [
+        {
+          "bays": [
+            "slit",
+            "louvre",
+            "pipes",
+            "slit"
+          ],
+          "bay": 24.0,
+          "planar": {
+            "structures/frontier/plating": 18.0
+          },
+          "round": {
+            "piece": "corner",
+            "length": 6.0
+          },
+          "joints": {
+            "start": "joint-start",
+            "end": "joint-end",
+            "length": 2.4
+          }
+        }
+      ],
+      "floor1": [
+        {
+          "bays": [
+            "louvre",
+            "slit",
+            "boxes",
+            "vent"
+          ],
+          "bay": 24.0,
+          "planar": {
+            "structures/frontier/plating": 18.0
+          },
+          "round": {
+            "piece": "corner",
+            "length": 6.0
+          },
+          "joints": {
+            "start": "joint-start",
+            "end": "joint-end",
+            "length": 2.4
+          }
+        }
+      ],
+      "roof0": [
+        {
+          "bays": [
+            "roof-plain",
+            "roof-pipe",
+            "roof-plain",
+            "roof-grille"
+          ],
+          "bay": 24.0,
+          "planar": {
+            "structures/frontier/plating": 18.0
+          },
+          "round": {
+            "piece": "roof-corner",
+            "length": 6.0
+          },
+          "seam": {
+            "piece": "roof-seam",
+            "length": 24.0
+          }
+        }
+      ],
+      "roof1": [
+        {
+          "bays": [
+            "roof-pipe",
+            "roof-light",
+            "roof-plain"
+          ],
+          "bay": 24.0,
+          "planar": {
+            "structures/frontier/plating": 18.0
+          },
+          "round": {
+            "piece": "roof-corner",
+            "length": 6.0
+          },
+          "seam": {
+            "piece": "roof-seam",
+            "length": 24.0
+          }
+        }
+      ]
+    },
+    "fittings": {
+      "square": {
+        "hatch": "hatch",
+        "vent": "hvac",
+        "layouts": [
+          {
+            "hatches": [],
+            "vents": [],
+            "pieces": {
+              "solar": [
+                [
+                  -5,
+                  5,
+                  0
+                ]
+              ],
+              "radome": [
+                [
+                  8,
+                  -9,
+                  0
+                ]
+              ]
+            }
+          },
+          {
+            "hatches": [],
+            "vents": [],
+            "pieces": {
+              "hvac": [
+                [
+                  0,
+                  0,
+                  0
+                ]
+              ]
+            }
+          },
+          {
+            "hatches": [],
+            "vents": [],
+            "pieces": {
+              "solar": [
+                [
+                  0,
+                  -6.5,
+                  0
+                ],
+                [
+                  0,
+                  8,
+                  0
+                ]
+              ]
+            }
+          },
+          {
+            "hatches": [],
+            "vents": [],
+            "pieces": {
+              "radome": [
+                [
+                  -9,
+                  7,
+                  0
+                ]
+              ],
+              "hatch": [
+                [
+                  8,
+                  -6,
+                  0
+                ]
+              ]
+            }
+          },
+          {
+            "hatches": [],
+            "vents": [],
+            "pieces": {
+              "hatch": [
+                [
+                  0,
+                  2,
+                  0
+                ]
+              ],
+              "beacon": [
+                [
+                  10,
+                  -9,
+                  0
+                ]
+              ]
+            }
+          },
+          {
+            "hatches": [],
+            "vents": [],
+            "pieces": {
+              "hvac": [
+                [
+                  -6,
+                  -5,
+                  90
+                ]
+              ],
+              "solar": [
+                [
+                  7,
+                  8,
+                  0
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "angled": {
+        "hatch": "hatch",
+        "vent": "hvac",
+        "layouts": [
+          {
+            "hatches": [],
+            "vents": [],
+            "pieces": {
+              "solar": [
+                [
+                  -5,
+                  5,
+                  0
+                ]
+              ],
+              "radome": [
+                [
+                  8,
+                  -9,
+                  0
+                ]
+              ]
+            }
+          },
+          {
+            "hatches": [],
+            "vents": [],
+            "pieces": {
+              "hvac": [
+                [
+                  0,
+                  0,
+                  0
+                ]
+              ]
+            }
+          },
+          {
+            "hatches": [],
+            "vents": [],
+            "pieces": {
+              "solar": [
+                [
+                  0,
+                  -6.5,
+                  0
+                ],
+                [
+                  0,
+                  8,
+                  0
+                ]
+              ]
+            }
+          },
+          {
+            "hatches": [],
+            "vents": [],
+            "pieces": {
+              "radome": [
+                [
+                  -9,
+                  7,
+                  0
+                ]
+              ],
+              "hatch": [
+                [
+                  8,
+                  -6,
+                  0
+                ]
+              ]
+            }
+          },
+          {
+            "hatches": [],
+            "vents": [],
+            "pieces": {
+              "hatch": [
+                [
+                  0,
+                  2,
+                  0
+                ]
+              ],
+              "beacon": [
+                [
+                  10,
+                  -9,
+                  0
+                ]
+              ]
+            }
+          },
+          {
+            "hatches": [],
+            "vents": [],
+            "pieces": {
+              "hvac": [
+                [
+                  -6,
+                  -5,
+                  90
+                ]
+              ],
+              "solar": [
+                [
+                  7,
+                  8,
+                  0
+                ]
+              ]
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "name": "greenhouse",
+    "style": "bays",
+    "pieces": "frontier-pieces.glb",
+    "lone": [
+      [
+        -20.78125,
+        -34.25
+      ],
+      [
+        20.78125,
+        -34.25
+      ],
+      [
+        20.78125,
+        34.25
+      ],
+      [
+        -20.78125,
+        34.25
+      ]
+    ],
+    "bandEnd": 1.75,
+    "cornerRadius": 5.0,
+    "cornerSegments": 1,
+    "roof": {
+      "material": "structures/lunar/dome-glass",
+      "repeat": 30.0,
+      "inset": 2.4,
+      "heights": [
+        0.3
+      ],
+      "underlay": true
+    },
+    "floors": {
+      "material": "structures/common/diamond-plate",
+      "repeat": 12.0,
+      "inset": 3.0,
+      "heights": [
+        0.05
+      ]
+    },
+    "modules": {
+      "base0": [
+        {
+          "bays": [
+            "base-glass",
+            "base-glass-vent",
+            "base-glass"
+          ],
+          "bay": 24.0,
+          "planar": {
+            "structures/frontier/plating": 18.0
+          },
+          "door": "airlock",
+          "round": {
+            "piece": "corner-base",
+            "length": 6.0
+          },
+          "joints": {
+            "start": "base-joint-start",
+            "end": "base-joint-end",
+            "length": 2.4
+          }
+        }
+      ],
+      "base1": [
+        {
+          "bays": [
+            "base-glass-vent",
+            "base-glass",
+            "base-glass"
+          ],
+          "bay": 24.0,
+          "planar": {
+            "structures/frontier/plating": 18.0
+          },
+          "door": "airlock",
+          "round": {
+            "piece": "corner-base",
+            "length": 6.0
+          },
+          "joints": {
+            "start": "base-joint-start",
+            "end": "base-joint-end",
+            "length": 2.4
+          }
+        }
+      ],
+      "floor0": [
+        {
+          "bays": [
+            "glass",
+            "glass-vent",
+            "glass"
+          ],
+          "bay": 24.0,
+          "planar": {
+            "structures/frontier/plating": 18.0
+          },
+          "round": {
+            "piece": "corner",
+            "length": 6.0
+          },
+          "joints": {
+            "start": "joint-start",
+            "end": "joint-end",
+            "length": 2.4
+          }
+        }
+      ],
+      "floor1": [
+        {
+          "bays": [
+            "glass",
+            "glass",
+            "glass-vent"
+          ],
+          "bay": 24.0,
+          "planar": {
+            "structures/frontier/plating": 18.0
+          },
+          "round": {
+            "piece": "corner",
+            "length": 6.0
+          },
+          "joints": {
+            "start": "joint-start",
+            "end": "joint-end",
+            "length": 2.4
+          }
+        }
+      ],
+      "roof0": [
+        {
+          "bays": [
+            "roof-plain",
+            "roof-pipe",
+            "roof-plain",
+            "roof-grille"
+          ],
+          "bay": 24.0,
+          "planar": {
+            "structures/frontier/plating": 18.0
+          },
+          "round": {
+            "piece": "roof-corner",
+            "length": 6.0
+          },
+          "seam": {
+            "piece": "roof-seam",
+            "length": 24.0
+          }
+        }
+      ],
+      "roof1": [
+        {
+          "bays": [
+            "roof-pipe",
+            "roof-light",
+            "roof-plain"
+          ],
+          "bay": 24.0,
+          "planar": {
+            "structures/frontier/plating": 18.0
+          },
+          "round": {
+            "piece": "roof-corner",
+            "length": 6.0
+          },
+          "seam": {
+            "piece": "roof-seam",
+            "length": 24.0
+          }
+        }
+      ]
+    },
+    "fittings": {
+      "square": {
+        "hatch": "hatch",
+        "vent": "hvac",
+        "layouts": [
+          {
+            "hatches": [],
+            "vents": [],
+            "pieces": {
+              "hvac": [
+                [
+                  0,
+                  0,
+                  0
+                ]
+              ]
+            }
+          },
+          {
+            "hatches": [],
+            "vents": [],
+            "pieces": {
+              "hatch": [
+                [
+                  -6,
+                  4,
+                  0
+                ],
+                [
+                  8,
+                  -6,
+                  0
+                ]
+              ]
+            }
+          },
+          {
+            "hatches": [],
+            "vents": [],
+            "pieces": {}
+          },
+          {
+            "hatches": [],
+            "vents": [],
+            "pieces": {
+              "hvac": [
+                [
+                  -7,
+                  6,
+                  90
+                ]
+              ]
+            }
+          },
+          {
+            "hatches": [],
+            "vents": [],
+            "pieces": {
+              "beacon": [
+                [
+                  0,
+                  10,
+                  0
+                ]
+              ]
+            }
+          },
+          {
+            "hatches": [],
+            "vents": [],
+            "pieces": {
+              "hatch": [
+                [
+                  0,
+                  0,
+                  0
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "angled": {
+        "hatch": "hatch",
+        "vent": "hvac",
+        "layouts": [
+          {
+            "hatches": [],
+            "vents": [],
+            "pieces": {
+              "hvac": [
+                [
+                  0,
+                  0,
+                  0
+                ]
+              ]
+            }
+          },
+          {
+            "hatches": [],
+            "vents": [],
+            "pieces": {
+              "hatch": [
+                [
+                  -6,
+                  4,
+                  0
+                ],
+                [
+                  8,
+                  -6,
+                  0
+                ]
+              ]
+            }
+          },
+          {
+            "hatches": [],
+            "vents": [],
+            "pieces": {}
+          },
+          {
+            "hatches": [],
+            "vents": [],
+            "pieces": {
+              "hvac": [
+                [
+                  -7,
+                  6,
+                  90
+                ]
+              ]
+            }
+          },
+          {
+            "hatches": [],
+            "vents": [],
+            "pieces": {
+              "beacon": [
+                [
+                  0,
+                  10,
+                  0
+                ]
+              ]
+            }
+          },
+          {
+            "hatches": [],
+            "vents": [],
+            "pieces": {
+              "hatch": [
+                [
+                  0,
+                  0,
+                  0
+                ]
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+]

@@ -923,9 +923,13 @@ def annex(rng):
 # -- Helpers, assembly and export -----------------------------------------------------------
 
 def helpers():
-    def box(name, x0, x1, y0, y1, top):
-        civic.helper(name, [(x0, y0+SHIFT_Y), (x1, y0+SHIFT_Y), (x1, y1+SHIFT_Y), (x0, y1+SHIFT_Y)], top)
-    box('slab', -96, 96, 0, SLAB_Y, ROOF)
+    def box(name, x0, x1, y0, y1, top, bottom=0):
+        civic.prism('building_volume '+name, [(x0, y0+SHIFT_Y), (x1, y0+SHIFT_Y), (x1, y1+SHIFT_Y), (x0, y1+SHIFT_Y)], bottom, top,
+                    shared.FLAT, (.3, .8, .65), helper=True)
+    # The loggias are open balconies on their own storeys: above the podium the slab's volume (and so the runtime's
+    # floors) stops at their back wall.
+    box('slab', -96, 96, 0, SLAB_Y, PODIUM)
+    box('slab tower', -96, 96, LOGGIA, SLAB_Y, ROOF, PODIUM)
     for x0, x1 in CORES:
         box('core', x0, x1, CORE_Y[0], CORE_Y[1], CORE_TOP-6)  # Top six units are a solid head.
     for lo, hi, y, rows, top in ((-127, -65, -85, -63, -40), (-34, 34, -79, -57, -46), (61, 124, -85, -63, -40)):

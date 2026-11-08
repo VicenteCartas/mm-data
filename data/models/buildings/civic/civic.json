@@ -1,0 +1,1092 @@
+[
+  {
+    "name": "galleries",
+    "style": "bays",
+    "pieces": "civic-pieces.glb",
+    "lone": [
+      [
+        -20.78125,
+        -34.25
+      ],
+      [
+        20.78125,
+        -34.25
+      ],
+      [
+        20.78125,
+        34.25
+      ],
+      [
+        -20.78125,
+        34.25
+      ]
+    ],
+    "bandEnd": 1.75,
+    "roof": {
+      "material": "structures/common/cast-concrete",
+      "repeat": 12.0,
+      "inset": 0.0,
+      "heights": [
+        0.3
+      ]
+    },
+    "floors": {
+      "material": "structures/common/cast-concrete",
+      "repeat": 12.0,
+      "inset": 3.0,
+      "heights": [
+        0.05
+      ]
+    },
+    "sidewalk": {
+      "material": "structures/common/cast-concrete",
+      "repeat": 12.0,
+      "width": 5.0,
+      "kerb": 0.4
+    },
+    "modules": {
+      "base0": [
+        {
+          "bays": [
+            "shop-narrow",
+            "shop-wide",
+            "shop-closed",
+            "plinth-louvre",
+            "shop-narrow"
+          ],
+          "bay": 24.0,
+          "planar": {
+            "structures/common/concrete-panels": 18.0,
+            "structures/common/cast-concrete": 12.0
+          },
+          "door": "shop-door"
+        }
+      ],
+      "base1": [
+        {
+          "bays": [
+            "plinth-slots",
+            "shop-wide",
+            "plinth-billboard",
+            "plinth-louvre",
+            "shop-closed"
+          ],
+          "bay": 24.0,
+          "planar": {
+            "structures/common/concrete-panels": 18.0,
+            "structures/common/cast-concrete": 12.0
+          },
+          "door": "plinth-door"
+        }
+      ],
+      "floor0": [
+        {
+          "bays": [
+            "gallery-a",
+            "gallery-b",
+            "gallery-c",
+            "gallery-d"
+          ],
+          "bay": 24.0,
+          "planar": {
+            "structures/common/concrete-panels": 18.0,
+            "structures/common/cast-concrete": 12.0
+          }
+        }
+      ],
+      "floor1": [
+        {
+          "bays": [
+            "gallery-b",
+            "gallery-d",
+            "gallery-a",
+            "gallery-c"
+          ],
+          "bay": 24.0,
+          "planar": {
+            "structures/common/concrete-panels": 18.0,
+            "structures/common/cast-concrete": 12.0
+          }
+        }
+      ],
+      "roof0": [
+        {
+          "bays": [
+            "parapet-plain",
+            "parapet-rail",
+            "parapet-plain",
+            "parapet-tall"
+          ],
+          "bay": 24.0,
+          "planar": {
+            "structures/common/concrete-panels": 18.0,
+            "structures/common/cast-concrete": 12.0
+          }
+        }
+      ]
+    },
+    "fittings": {
+      "square": {
+        "hatch": "hatch",
+        "vent": "vent-stack",
+        "layouts": [
+          {
+            "hatches": [],
+            "vents": [],
+            "pieces": {
+              "fan-unit": [
+                [
+                  0,
+                  0,
+                  0
+                ]
+              ]
+            }
+          },
+          {
+            "hatches": [],
+            "vents": [],
+            "pieces": {
+              "plant-room": [
+                [
+                  -6,
+                  4,
+                  0
+                ]
+              ],
+              "vent-stack": [
+                [
+                  11,
+                  -9,
+                  0
+                ]
+              ]
+            }
+          },
+          {
+            "hatches": [],
+            "vents": [],
+            "pieces": {
+              "louvre-cage": [
+                [
+                  5,
+                  -4,
+                  30
+                ]
+              ],
+              "hatch": [
+                [
+                  -10,
+                  9,
+                  0
+                ]
+              ]
+            }
+          },
+          {
+            "hatches": [],
+            "vents": [],
+            "pieces": {
+              "water-tank": [
+                [
+                  -8,
+                  -5,
+                  0
+                ]
+              ],
+              "fan-unit": [
+                [
+                  9,
+                  8,
+                  90
+                ]
+              ]
+            }
+          },
+          {
+            "hatches": [],
+            "vents": [],
+            "pieces": {
+              "hatch": [
+                [
+                  4,
+                  6,
+                  0
+                ]
+              ]
+            }
+          },
+          {
+            "hatches": [],
+            "vents": [],
+            "pieces": {
+              "vent-stack": [
+                [
+                  0,
+                  10,
+                  90
+                ]
+              ],
+              "hatch": [
+                [
+                  -7,
+                  -9,
+                  0
+                ],
+                [
+                  9,
+                  -8,
+                  0
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "angled": {
+        "hatch": "hatch",
+        "vent": "vent-stack",
+        "layouts": [
+          {
+            "hatches": [],
+            "vents": [],
+            "pieces": {
+              "fan-unit": [
+                [
+                  0,
+                  0,
+                  0
+                ]
+              ]
+            }
+          },
+          {
+            "hatches": [],
+            "vents": [],
+            "pieces": {
+              "plant-room": [
+                [
+                  -6,
+                  4,
+                  0
+                ]
+              ],
+              "vent-stack": [
+                [
+                  11,
+                  -9,
+                  0
+                ]
+              ]
+            }
+          },
+          {
+            "hatches": [],
+            "vents": [],
+            "pieces": {
+              "louvre-cage": [
+                [
+                  5,
+                  -4,
+                  30
+                ]
+              ],
+              "hatch": [
+                [
+                  -10,
+                  9,
+                  0
+                ]
+              ]
+            }
+          },
+          {
+            "hatches": [],
+            "vents": [],
+            "pieces": {
+              "water-tank": [
+                [
+                  -8,
+                  -5,
+                  0
+                ]
+              ],
+              "fan-unit": [
+                [
+                  9,
+                  8,
+                  90
+                ]
+              ]
+            }
+          },
+          {
+            "hatches": [],
+            "vents": [],
+            "pieces": {
+              "hatch": [
+                [
+                  4,
+                  6,
+                  0
+                ]
+              ]
+            }
+          },
+          {
+            "hatches": [],
+            "vents": [],
+            "pieces": {
+              "vent-stack": [
+                [
+                  0,
+                  10,
+                  90
+                ]
+              ],
+              "hatch": [
+                [
+                  -7,
+                  -9,
+                  0
+                ],
+                [
+                  9,
+                  -8,
+                  0
+                ]
+              ]
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "name": "ribbons",
+    "style": "bays",
+    "pieces": "civic-pieces.glb",
+    "lone": [
+      [
+        -20.78125,
+        -34.25
+      ],
+      [
+        20.78125,
+        -34.25
+      ],
+      [
+        20.78125,
+        34.25
+      ],
+      [
+        -20.78125,
+        34.25
+      ]
+    ],
+    "bandEnd": 1.75,
+    "roof": {
+      "material": "structures/common/cast-concrete",
+      "repeat": 12.0,
+      "inset": 0.0,
+      "heights": [
+        0.3
+      ]
+    },
+    "floors": {
+      "material": "structures/common/cast-concrete",
+      "repeat": 12.0,
+      "inset": 3.0,
+      "heights": [
+        0.05
+      ]
+    },
+    "sidewalk": {
+      "material": "structures/common/cast-concrete",
+      "repeat": 12.0,
+      "width": 5.0,
+      "kerb": 0.4
+    },
+    "modules": {
+      "base0": [
+        {
+          "bays": [
+            "shop-narrow",
+            "shop-wide",
+            "shop-closed",
+            "plinth-louvre",
+            "shop-narrow"
+          ],
+          "bay": 24.0,
+          "planar": {
+            "structures/common/concrete-panels": 18.0,
+            "structures/common/cast-concrete": 12.0
+          },
+          "door": "shop-door"
+        }
+      ],
+      "base1": [
+        {
+          "bays": [
+            "plinth-slots",
+            "shop-wide",
+            "plinth-billboard",
+            "plinth-louvre",
+            "shop-closed"
+          ],
+          "bay": 24.0,
+          "planar": {
+            "structures/common/concrete-panels": 18.0,
+            "structures/common/cast-concrete": 12.0
+          },
+          "door": "plinth-door"
+        }
+      ],
+      "floor0": [
+        {
+          "bays": [
+            "ribbon-plain",
+            "ribbon-lit",
+            "ribbon-balcony",
+            "ribbon-plain",
+            "ribbon-panel"
+          ],
+          "bay": 24.0,
+          "planar": {
+            "structures/common/concrete-panels": 18.0,
+            "structures/common/cast-concrete": 12.0
+          }
+        }
+      ],
+      "floor1": [
+        {
+          "bays": [
+            "ribbon-lit",
+            "ribbon-panel",
+            "ribbon-plain",
+            "ribbon-balcony"
+          ],
+          "bay": 24.0,
+          "planar": {
+            "structures/common/concrete-panels": 18.0,
+            "structures/common/cast-concrete": 12.0
+          }
+        }
+      ],
+      "roof0": [
+        {
+          "bays": [
+            "parapet-plain",
+            "parapet-rail",
+            "parapet-plain",
+            "parapet-tall"
+          ],
+          "bay": 24.0,
+          "planar": {
+            "structures/common/concrete-panels": 18.0,
+            "structures/common/cast-concrete": 12.0
+          }
+        }
+      ]
+    },
+    "fittings": {
+      "square": {
+        "hatch": "hatch",
+        "vent": "vent-stack",
+        "layouts": [
+          {
+            "hatches": [],
+            "vents": [],
+            "pieces": {
+              "fan-unit": [
+                [
+                  0,
+                  0,
+                  0
+                ]
+              ]
+            }
+          },
+          {
+            "hatches": [],
+            "vents": [],
+            "pieces": {
+              "plant-room": [
+                [
+                  -6,
+                  4,
+                  0
+                ]
+              ],
+              "vent-stack": [
+                [
+                  11,
+                  -9,
+                  0
+                ]
+              ]
+            }
+          },
+          {
+            "hatches": [],
+            "vents": [],
+            "pieces": {
+              "louvre-cage": [
+                [
+                  5,
+                  -4,
+                  30
+                ]
+              ],
+              "hatch": [
+                [
+                  -10,
+                  9,
+                  0
+                ]
+              ]
+            }
+          },
+          {
+            "hatches": [],
+            "vents": [],
+            "pieces": {
+              "water-tank": [
+                [
+                  -8,
+                  -5,
+                  0
+                ]
+              ],
+              "fan-unit": [
+                [
+                  9,
+                  8,
+                  90
+                ]
+              ]
+            }
+          },
+          {
+            "hatches": [],
+            "vents": [],
+            "pieces": {
+              "hatch": [
+                [
+                  4,
+                  6,
+                  0
+                ]
+              ]
+            }
+          },
+          {
+            "hatches": [],
+            "vents": [],
+            "pieces": {
+              "vent-stack": [
+                [
+                  0,
+                  10,
+                  90
+                ]
+              ],
+              "hatch": [
+                [
+                  -7,
+                  -9,
+                  0
+                ],
+                [
+                  9,
+                  -8,
+                  0
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "angled": {
+        "hatch": "hatch",
+        "vent": "vent-stack",
+        "layouts": [
+          {
+            "hatches": [],
+            "vents": [],
+            "pieces": {
+              "fan-unit": [
+                [
+                  0,
+                  0,
+                  0
+                ]
+              ]
+            }
+          },
+          {
+            "hatches": [],
+            "vents": [],
+            "pieces": {
+              "plant-room": [
+                [
+                  -6,
+                  4,
+                  0
+                ]
+              ],
+              "vent-stack": [
+                [
+                  11,
+                  -9,
+                  0
+                ]
+              ]
+            }
+          },
+          {
+            "hatches": [],
+            "vents": [],
+            "pieces": {
+              "louvre-cage": [
+                [
+                  5,
+                  -4,
+                  30
+                ]
+              ],
+              "hatch": [
+                [
+                  -10,
+                  9,
+                  0
+                ]
+              ]
+            }
+          },
+          {
+            "hatches": [],
+            "vents": [],
+            "pieces": {
+              "water-tank": [
+                [
+                  -8,
+                  -5,
+                  0
+                ]
+              ],
+              "fan-unit": [
+                [
+                  9,
+                  8,
+                  90
+                ]
+              ]
+            }
+          },
+          {
+            "hatches": [],
+            "vents": [],
+            "pieces": {
+              "hatch": [
+                [
+                  4,
+                  6,
+                  0
+                ]
+              ]
+            }
+          },
+          {
+            "hatches": [],
+            "vents": [],
+            "pieces": {
+              "vent-stack": [
+                [
+                  0,
+                  10,
+                  90
+                ]
+              ],
+              "hatch": [
+                [
+                  -7,
+                  -9,
+                  0
+                ],
+                [
+                  9,
+                  -8,
+                  0
+                ]
+              ]
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "name": "offices",
+    "style": "bays",
+    "pieces": "civic-pieces.glb",
+    "lone": [
+      [
+        -20.78125,
+        -34.25
+      ],
+      [
+        20.78125,
+        -34.25
+      ],
+      [
+        20.78125,
+        34.25
+      ],
+      [
+        -20.78125,
+        34.25
+      ]
+    ],
+    "bandEnd": 1.75,
+    "roof": {
+      "material": "structures/common/cast-concrete",
+      "repeat": 12.0,
+      "inset": 0.0,
+      "heights": [
+        0.3
+      ]
+    },
+    "floors": {
+      "material": "structures/common/cast-concrete",
+      "repeat": 12.0,
+      "inset": 3.0,
+      "heights": [
+        0.05
+      ]
+    },
+    "sidewalk": {
+      "material": "structures/common/cast-concrete",
+      "repeat": 12.0,
+      "width": 5.0,
+      "kerb": 0.4
+    },
+    "modules": {
+      "base0": [
+        {
+          "bays": [
+            "shop-narrow",
+            "shop-wide",
+            "shop-closed",
+            "plinth-louvre",
+            "shop-narrow"
+          ],
+          "bay": 24.0,
+          "planar": {
+            "structures/common/concrete-panels": 18.0,
+            "structures/common/cast-concrete": 12.0
+          },
+          "door": "shop-door"
+        }
+      ],
+      "base1": [
+        {
+          "bays": [
+            "plinth-slots",
+            "shop-wide",
+            "plinth-billboard",
+            "plinth-louvre",
+            "shop-closed"
+          ],
+          "bay": 24.0,
+          "planar": {
+            "structures/common/concrete-panels": 18.0,
+            "structures/common/cast-concrete": 12.0
+          },
+          "door": "plinth-door"
+        }
+      ],
+      "floor0": [
+        {
+          "bays": [
+            "fins-glass",
+            "fins-louvre",
+            "fins-glass",
+            "fins-blank"
+          ],
+          "bay": 24.0,
+          "planar": {
+            "structures/common/concrete-panels": 18.0,
+            "structures/common/cast-concrete": 12.0
+          }
+        }
+      ],
+      "floor1": [
+        {
+          "bays": [
+            "fins-shade",
+            "fins-glass",
+            "fins-shade",
+            "fins-blank"
+          ],
+          "bay": 24.0,
+          "planar": {
+            "structures/common/concrete-panels": 18.0,
+            "structures/common/cast-concrete": 12.0
+          }
+        }
+      ],
+      "roof0": [
+        {
+          "bays": [
+            "parapet-plain",
+            "parapet-rail",
+            "parapet-plain",
+            "parapet-tall"
+          ],
+          "bay": 24.0,
+          "planar": {
+            "structures/common/concrete-panels": 18.0,
+            "structures/common/cast-concrete": 12.0
+          }
+        }
+      ]
+    },
+    "fittings": {
+      "square": {
+        "hatch": "hatch",
+        "vent": "vent-stack",
+        "layouts": [
+          {
+            "hatches": [],
+            "vents": [],
+            "pieces": {
+              "fan-unit": [
+                [
+                  0,
+                  0,
+                  0
+                ]
+              ]
+            }
+          },
+          {
+            "hatches": [],
+            "vents": [],
+            "pieces": {
+              "plant-room": [
+                [
+                  -6,
+                  4,
+                  0
+                ]
+              ],
+              "vent-stack": [
+                [
+                  11,
+                  -9,
+                  0
+                ]
+              ]
+            }
+          },
+          {
+            "hatches": [],
+            "vents": [],
+            "pieces": {
+              "louvre-cage": [
+                [
+                  5,
+                  -4,
+                  30
+                ]
+              ],
+              "hatch": [
+                [
+                  -10,
+                  9,
+                  0
+                ]
+              ]
+            }
+          },
+          {
+            "hatches": [],
+            "vents": [],
+            "pieces": {
+              "water-tank": [
+                [
+                  -8,
+                  -5,
+                  0
+                ]
+              ],
+              "fan-unit": [
+                [
+                  9,
+                  8,
+                  90
+                ]
+              ]
+            }
+          },
+          {
+            "hatches": [],
+            "vents": [],
+            "pieces": {
+              "hatch": [
+                [
+                  4,
+                  6,
+                  0
+                ]
+              ]
+            }
+          },
+          {
+            "hatches": [],
+            "vents": [],
+            "pieces": {
+              "vent-stack": [
+                [
+                  0,
+                  10,
+                  90
+                ]
+              ],
+              "hatch": [
+                [
+                  -7,
+                  -9,
+                  0
+                ],
+                [
+                  9,
+                  -8,
+                  0
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "angled": {
+        "hatch": "hatch",
+        "vent": "vent-stack",
+        "layouts": [
+          {
+            "hatches": [],
+            "vents": [],
+            "pieces": {
+              "fan-unit": [
+                [
+                  0,
+                  0,
+                  0
+                ]
+              ]
+            }
+          },
+          {
+            "hatches": [],
+            "vents": [],
+            "pieces": {
+              "plant-room": [
+                [
+                  -6,
+                  4,
+                  0
+                ]
+              ],
+              "vent-stack": [
+                [
+                  11,
+                  -9,
+                  0
+                ]
+              ]
+            }
+          },
+          {
+            "hatches": [],
+            "vents": [],
+            "pieces": {
+              "louvre-cage": [
+                [
+                  5,
+                  -4,
+                  30
+                ]
+              ],
+              "hatch": [
+                [
+                  -10,
+                  9,
+                  0
+                ]
+              ]
+            }
+          },
+          {
+            "hatches": [],
+            "vents": [],
+            "pieces": {
+              "water-tank": [
+                [
+                  -8,
+                  -5,
+                  0
+                ]
+              ],
+              "fan-unit": [
+                [
+                  9,
+                  8,
+                  90
+                ]
+              ]
+            }
+          },
+          {
+            "hatches": [],
+            "vents": [],
+            "pieces": {
+              "hatch": [
+                [
+                  4,
+                  6,
+                  0
+                ]
+              ]
+            }
+          },
+          {
+            "hatches": [],
+            "vents": [],
+            "pieces": {
+              "vent-stack": [
+                [
+                  0,
+                  10,
+                  90
+                ]
+              ],
+              "hatch": [
+                [
+                  -7,
+                  -9,
+                  0
+                ],
+                [
+                  9,
+                  -8,
+                  0
+                ]
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+]

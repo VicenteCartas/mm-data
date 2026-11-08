@@ -27,7 +27,8 @@ SLAT = (.94, .93, .91)
 PAVE = STONE
 PAVE_TINT = (.93, .92, .88)
 DECK_TINT = (.98, .86, .70)
-TURF, TURF_TINT = STONE, (.50, .60, .30)
+TURF, TURF_TINT = 'terrain/surfaces/grassland-ground', (1, 1, 1)  # Lawn, as the modular kit's roofs (theme_kits.LAWN).
+LAWN_REPEAT = 36  # Units one lawn texture repeat covers: the board's own grass scale.
 GLASS = 'structures/buildings/tower-glass'
 GLASS_TINT = (.94, .94, .80)
 DOME_GLASS = 'structures/buildings/tower-glass'
@@ -345,7 +346,7 @@ def lump(x, y, z, width, height, tint, rng, sides=7):
             faces.append((ring*sides+i, ring*sides+j, (ring+1)*sides+j, (ring+1)*sides+i))
     for i in range(sides):
         faces.append((2*sides+i, 2*sides+(i+1) % sides, 3*sides))
-    add_mesh('planting mass', TURF, tint, verts, faces, smooth=70, stone_uv=False, uvs=[(v[0]/30, v[1]/30) for v in verts])
+    add_mesh('planting mass', STONE, tint, verts, faces, smooth=70, stone_uv=False, uvs=[(v[0]/30, v[1]/30) for v in verts])
 
 
 def tree(x, y, z, height, spread, rng):
@@ -580,7 +581,7 @@ def terrace(name, ring, above, height, next_height, arc, ids, rng, phase=0.0, ha
     everywhere = np.broadcast_to(height, (len(ring),))
     lifted = everywhere[arc]
     flat_uv = lambda *rings: [(float(q[0])/30, float(q[1])/30) for row in rings for q in row]
-    loft(name+' planter', [(lip, lifted+2.8), (planter, lifted+2.8)], TURF, TURF_TINT, closed=closed, stone_uv=False, uvs=flat_uv(lip, planter))
+    loft(name+' planter', [(lip, lifted+2.8), (planter, lifted+2.8)], TURF, TURF_TINT, closed=closed, stone_uv=False, uvs=[(float(q[0])/LAWN_REPEAT, float(q[1])/LAWN_REPEAT) for row in (lip, planter) for q in row])
     if LOD == 0:
         loft(name+' planter wall', [(planter, lifted+.3), (planter, lifted+2.8)], closed=closed, flip=True)
     room = [i for i in arc if depth[i] > width[i]+.3]
@@ -929,7 +930,7 @@ def office_tower(rng):
     outer, inmost, mid = at_inset(8), at_inset(22), at_inset(15)
     for ids in ([i for i in range(n) if -155 <= degrees[i] <= -35], [i for i in range(n) if 25 <= degrees[i] <= 120]):
         loft('roof bed', [(outer[ids], plane(outer[ids, 1])+.5), (inmost[ids], plane(inmost[ids, 1])+.5)], TURF, TURF_TINT, closed=False, stone_uv=False,
-             uvs=[(float(q[0])/30, float(q[1])/30) for ring in (outer[ids], inmost[ids]) for q in ring])
+             uvs=[(float(q[0])/LAWN_REPEAT, float(q[1])/LAWN_REPEAT) for ring in (outer[ids], inmost[ids]) for q in ring])
         plant_band('roof plants', mid, plane(mid[:, 1])+.5, ids, rng, spacing=3.2, size=(6, 10), flowers=.1, deep=4.5)
     for u in (-90, -130, 60, 95):
         k = int(np.argmin(np.abs(degrees-u)))
@@ -1014,7 +1015,7 @@ def round_bed(name, x, y, z, radius, rng, tree_height=0.0, spread=0.0):
     ring = np.array([(x+radius*math.cos(a), y+radius*math.sin(a)) for a in np.linspace(0, math.tau, count, endpoint=False)])
     loft(name+' kerb', [(ring, z), (ring, z+2.4), (offset(ring, -1), z+2.6)])
     soil = offset(ring, -1)
-    cap(name+' soil', soil, z+2.6, TURF, TURF_TINT, stone_uv=False, uvs=[(float(q[0])/30, float(q[1])/30) for q in soil])
+    cap(name+' soil', soil, z+2.6, TURF, TURF_TINT, stone_uv=False, uvs=[(float(q[0])/LAWN_REPEAT, float(q[1])/LAWN_REPEAT) for q in soil])
     plant_band(name+' plants', offset(ring, -radius*.3), z+2.4, range(count), rng, spacing=3, size=(3.5, 6), flowers=.15, deep=radius*.2)
     if tree_height:
         tree(x, y, z+2.4, tree_height, spread, rng)
@@ -1093,7 +1094,7 @@ def market_pavilion(rng):
     loft('roof', rows if LOD == 0 else [rows[k] for k in (0, 3, 4, 7, 9, 10)], closed=False, smooth=40)
     lawn = np.abs(us) < 99
     a, b = mix(.9)[lawn], mix(.2)[lawn]
-    loft('roof planting', [(a, flat[lawn]+.55), (b, flat[lawn]+.55)], TURF, TURF_TINT, closed=False, stone_uv=False, uvs=[(float(q[0])/30, float(q[1])/30) for ring in (a, b) for q in ring])
+    loft('roof planting', [(a, flat[lawn]+.55), (b, flat[lawn]+.55)], TURF, TURF_TINT, closed=False, stone_uv=False, uvs=[(float(q[0])/LAWN_REPEAT, float(q[1])/LAWN_REPEAT) for ring in (a, b) for q in ring])
     lights = [(tp([(378, 560)])[0], 26, 11, 0), (tp([(188, 695)])[0], 11, 19, -22), (tp([(555, 680)])[0], 11, 22, 22)]
     pad_sides = {0: 28, 1: 14, 2: 10}[LOD]
     pads = []
@@ -1310,7 +1311,7 @@ def sky_gardens(rng):
     slab_edge('tall roof edge', ring, roof, every)
     rail('tall roof rail', offset(ring, -.8), roof+2.8, every)
     bed = offset(ring, -.4)
-    cap('tall roof garden', bed, roof+2.4, TURF, TURF_TINT, stone_uv=False, uvs=[(float(q[0])/30, float(q[1])/30) for q in bed])
+    cap('tall roof garden', bed, roof+2.4, TURF, TURF_TINT, stone_uv=False, uvs=[(float(q[0])/LAWN_REPEAT, float(q[1])/LAWN_REPEAT) for q in bed])
     sky = tp([(253, 635)])[0]
     skylight('tall skylight', sky[0], sky[1], roof+2.5, 13, 16, rise=3.5)
     for name, points in (('tall path', [(190, 720), (215, 690), (222, 640), (240, 560), (285, 575), (300, 650), (290, 720), (250, 770), (215, 790), (185, 760)]),):
@@ -1367,7 +1368,7 @@ def sky_gardens(rng):
     slab_edge('low roof edge', ring, top_z, every)
     rail('low roof rail', offset(ring, -.8), top_z+2.8, every)
     bed = offset(ring, -.4)
-    cap('low roof', bed, top_z+2.4, TURF, TURF_TINT, stone_uv=False, uvs=[(float(q[0])/30, float(q[1])/30) for q in bed])
+    cap('low roof', bed, top_z+2.4, TURF, TURF_TINT, stone_uv=False, uvs=[(float(q[0])/LAWN_REPEAT, float(q[1])/LAWN_REPEAT) for q in bed])
     loop = arc_ring(tp([(565, 620), (610, 650), (610, 710), (590, 760), (598, 830), (565, 850), (548, 780), (560, 700), (535, 660)]), {0: 40, 1: 16, 2: 10}[LOD])
     cap('low roof deck', loop[::-1], top_z+2.6, PAVE, DECK_TINT)
     keep_path(loop, 6, top_z+2.4)
@@ -1406,7 +1407,7 @@ def sky_gardens(rng):
     for y in (south-.6, north+.6):
         block('bridge parapet', ((x0+x1)/2, y, 55.4), (x1-x0, 1.2, 2.4), STONE, STONE_TINT)
     cap('bridge garden', np.array(((x0, south+.5), (x1, south+.5), (x1, north-.5), (x0, north-.5))), 54.4, TURF, TURF_TINT, stone_uv=False,
-        uvs=[(x0/30, south/30), (x1/30, south/30), (x1/30, north/30), (x0/30, north/30)])
+        uvs=[(x0/LAWN_REPEAT, south/LAWN_REPEAT), (x1/LAWN_REPEAT, south/LAWN_REPEAT), (x1/LAWN_REPEAT, north/LAWN_REPEAT), (x0/LAWN_REPEAT, north/LAWN_REPEAT)])
     strip = np.c_[np.linspace(x0+16, x1-16, 30), np.full(30, (south+north)/2)]
     plant_band('bridge plants', strip, 54.4, range(30), rng, spacing=3.4, size=(6, 10.5), flowers=.16, deep=7)
     for x in (x0+22, x1-20):
@@ -1474,7 +1475,7 @@ def town_tower(rng):
         bed = arc_ring(arc(120, at-19, at+19, 7)+arc(101, at+19, at-19, 7), {0: 48, 1: 16, 2: 8}[LOD])
         loft('bed kerb', [(bed, 1.4), (bed, 3.4), (offset(bed, -.9), 3.6)] if LOD == 0 else [(bed, 1.4), (bed, 3.4)])
         soil = offset(bed, -.9) if LOD == 0 else bed
-        cap('bed soil', soil, 3.6 if LOD == 0 else 3.4, TURF, TURF_TINT, stone_uv=False, uvs=[(float(q[0])/30, float(q[1])/30) for q in soil])
+        cap('bed soil', soil, 3.6 if LOD == 0 else 3.4, TURF, TURF_TINT, stone_uv=False, uvs=[(float(q[0])/LAWN_REPEAT, float(q[1])/LAWN_REPEAT) for q in soil])
         mid = np.array(arc(110.5, at-17, at+17, 24 if LOD == 0 else 10))
         plant_band('bed plants', mid, 3.4, range(len(mid)), rng, spacing=2.8, size=(6, 10), flowers=.2, deep=4.5)
         for off in (-9, 9):
@@ -1491,7 +1492,7 @@ def town_tower(rng):
     slab_edge('podium edge', pod, 31, rise=3, nose=1, under=7, drop=2)
     roof = 33.2
     garden = offset(pod, -.1)
-    cap('podium roof', garden, roof, TURF, TURF_TINT, stone_uv=False, uvs=[(float(q[0])/30, float(q[1])/30) for q in garden])
+    cap('podium roof', garden, roof, TURF, TURF_TINT, stone_uv=False, uvs=[(float(q[0])/LAWN_REPEAT, float(q[1])/LAWN_REPEAT) for q in garden])
     loft('podium walk', [(pod*.72, roof+.2), (pod*.62, roof+.2)], PAVE, DECK_TINT, stone_uv=False, uvs=[(float(q[0])/30, float(q[1])/30) for ring in (pod*.72, pod*.62) for q in ring])
     keep_path(pod*.67, 4, roof)
     keep_clear(0, -56, 36, 10, roof)
@@ -1576,7 +1577,7 @@ def town_tower(rng):
     loft('crown rim', rim_rows if LOD == 0 else [rim_rows[k] for k in (0, 2, 4, 5, 7)] if LOD == 1 else [rim_rows[k] for k in (0, 2, 5, 7)])
     floor = 264.6
     bed = offset(edge, -9.2)
-    cap('crown garden', bed, floor, TURF, TURF_TINT, stone_uv=False, uvs=[(float(q[0])/30, float(q[1])/30) for q in bed])
+    cap('crown garden', bed, floor, TURF, TURF_TINT, stone_uv=False, uvs=[(float(q[0])/LAWN_REPEAT, float(q[1])/LAWN_REPEAT) for q in bed])
     loft('crown walk', [(edge*.72, floor+.25), (edge*.6, floor+.25)], PAVE, DECK_TINT, stone_uv=False, uvs=[(float(q[0])/30, float(q[1])/30) for ring in (edge*.72, edge*.6) for q in ring])
     skylight('crown dome', 0, 0, floor+.3, 22, 30, rise=19)
     keep_path(edge*.66, 4, floor)
@@ -1732,7 +1733,7 @@ def garden_habitat(rng):
     # The roof: a low wall on the open side, a pale sand floor, a winding path, the dome, plants and small trees.
     roof = decks[-1]
     loft('roof rim', [(top[arc], roof+1.6), (offset(top, -.9)[arc], roof+2.7), (offset(garden, 1.1)[arc], roof+2.7), (garden[arc], roof+1.6)], closed=False)
-    cap('roof floor', offset(garden, 1.8), roof+1.6, TURF, TURF_TINT, stone_uv=False, uvs=[(float(q[0])/30, float(q[1])/30) for q in offset(garden, 1.8)])
+    cap('roof floor', offset(garden, 1.8), roof+1.6, TURF, TURF_TINT, stone_uv=False, uvs=[(float(q[0])/LAWN_REPEAT, float(q[1])/LAWN_REPEAT) for q in offset(garden, 1.8)])
     dome = tp([(447, 687)])[0]
     skylight('roof dome', dome[0], dome[1], roof+1.7, 10.7, 14.3)
     pts = line_through(tp([(360, 712), (378, 700), (398, 716), (416, 744), (436, 760), (420, 780), (396, 776)]), {0: 5, 1: 3, 2: 2}[LOD])
@@ -2006,7 +2007,7 @@ def fabrication_works(rng):
     slab_edge('wing roof', offset(tongue, 1.4), 54, None, rise=3.2, under=6)
     cap('wing roof', offset(tongue, -.1), 56.8)
     patch = rounded_rect(wx0+2.5, wx1-2.5, wy0+2.5, wy0+26, 11, {0: 40, 1: 20, 2: 12}[LOD])
-    cap('wing roof planter', patch, 56.9, TURF, TURF_TINT, stone_uv=False, uvs=[(float(q[0])/30, float(q[1])/30) for q in patch])
+    cap('wing roof planter', patch, 56.9, TURF, TURF_TINT, stone_uv=False, uvs=[(float(q[0])/LAWN_REPEAT, float(q[1])/LAWN_REPEAT) for q in patch])
     plant_band('wing roof plants', patch, 56.9, [i for i in range(len(patch)) if patch[i, 0] > wx0+9], rng, spacing=2.6, size=(5, 8.5), flowers=.1, deep=1.6)
     for at in ((wx0+11, wy0+10),):
         tree(at[0], at[1], 56.9, rng.uniform(9, 11), rng.uniform(8, 10), rng)
@@ -2029,7 +2030,7 @@ def fabrication_works(rng):
         box = rounded_rect(x-5.5, x+5.5, bay_y-3, bay_y+3, 1.8, 24 if LOD == 0 else 12)
         soil = offset(box, -.5) if LOD == 0 else box
         loft('door planter', [(box, 1.4), (box, 3.4), (soil, 3.4)] if LOD == 0 else [(box, 1.4), (box, 3.4)])
-        cap('door planter soil', soil, 3.4, TURF, TURF_TINT, stone_uv=False, uvs=[(float(q[0])/30, float(q[1])/30) for q in soil])
+        cap('door planter soil', soil, 3.4, TURF, TURF_TINT, stone_uv=False, uvs=[(float(q[0])/LAWN_REPEAT, float(q[1])/LAWN_REPEAT) for q in soil])
         for dx in (-3, 0, 3):
             shrub(x+dx, bay_y, 3.1, rng.uniform(3.4, 5.4), rng)
         if x != wx1+2:
@@ -2047,10 +2048,12 @@ def fabrication_works(rng):
 
 def fabrication_volumes(box):
     west, east, front, back, rear, wx0, wx1, wy0, wy1 = box
-    hall = np.array(((east-.6, front+7), (west+.6, front+7), (west+.6, rear), (east-.6, rear)))[::-1]
+    # The east wall is 3.5 thick and its oval louvres open through it: the volumes stop inside its inner face.
+    inner = east-3.5
+    hall = np.array(((inner-.6, front+7), (west+.6, front+7), (west+.6, rear), (inner-.6, rear)))[::-1]
     volume_prism('building_volume halls', hall, 0, 53)
     volume_prism('building_volume roof', np.array(((east, front), (west, front), (west, rear), (east, rear)))[::-1], 53, 54)
-    deck = np.array(((east-.6, rear), (west+.6, rear), (west+.6, back-.6), (east-.6, back-.6)))[::-1]
+    deck = np.array(((inner-.6, rear), (west+.6, rear), (west+.6, back-.6), (inner-.6, back-.6)))[::-1]
     volume_prism('building_volume plant deck', deck, 0, 36)
     volume_prism('building_volume wing', offset(rounded_rect(wx0, wx1, wy0, wy1, 14.5, 48), -3.5), 0, 54)
 
@@ -2114,8 +2117,9 @@ def build(name):
     return stats
 
 
-def sheet(name, folder, width=760, height=500, samples=48):
-    """Front, side, top and isometric views in the reference's order, on its pale ground."""
+def sheet(name, folder, width=760, height=500, samples=48, see_through=()):
+    """Front, side, top and isometric views in the reference's order, on its pale ground; faces the game culls in
+    magenta, but for cutouts and the see_through board materials (glass the culled faces show through)."""
     scene = bpy.context.scene
     scene.render.engine = 'CYCLES'
     prefs = bpy.context.preferences.addons['cycles'].preferences
@@ -2139,7 +2143,8 @@ def sheet(name, folder, width=760, height=500, samples=48):
     sun.rotation_euler = (math.radians(48), 0, math.radians(38))
     shown = [obj for obj in scene.objects if obj.type == 'MESH' and not obj.hide_render]
     # Faces the game culls show magenta. Only cutouts draw both sides.
-    for mat in {obj.data.materials[0] for obj in shown if not obj['board_material'].endswith('-cutout')}:
+    for mat in {obj.data.materials[0] for obj in shown if not obj['board_material'].endswith('-cutout')
+                and obj['board_material'] not in see_through}:
         nodes, links = mat.node_tree.nodes, mat.node_tree.links
         surface = nodes['Material Output'].inputs['Surface']
         mix, culled = nodes.new('ShaderNodeMixShader'), nodes.new('ShaderNodeEmission')

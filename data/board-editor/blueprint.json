@@ -253,7 +253,8 @@
         "utilities",
         "rooftop",
         "colony",
-        "utopia"
+        "utopia",
+        "frontier"
       ],
       "subcategories": {
         "rooftop": [
@@ -261,6 +262,9 @@
         ],
         "utopia": [
           "utopia"
+        ],
+        "frontier": [
+          "frontier"
         ],
         "colony": [
           "colony"
@@ -4386,6 +4390,27 @@
       "section": "buildings/looks"
     },
     {
+      "id": "building/civic",
+      "label": "Civic",
+      "owner": "building",
+      "asset": "buildings/civic/civic",
+      "section": "buildings/looks"
+    },
+    {
+      "id": "building/utopia",
+      "label": "Utopia",
+      "owner": "building",
+      "asset": "buildings/utopia/utopia",
+      "section": "buildings/looks"
+    },
+    {
+      "id": "building/frontier",
+      "label": "Frontier",
+      "owner": "building",
+      "asset": "buildings/frontier/frontier",
+      "section": "buildings/looks"
+    },
+    {
       "id": "building/glass-dome",
       "label": "Glass dome",
       "owner": "building",
@@ -7003,6 +7028,48 @@
       "label": "Office Tower",
       "kind": "prop",
       "section": "buildings/utopia"
+    },
+    {
+      "id": "buildings/authored/frontier-trade-exchange",
+      "label": "Trade Exchange",
+      "kind": "prop",
+      "section": "buildings/frontier"
+    },
+    {
+      "id": "buildings/authored/frontier-command-comms",
+      "label": "Command & Comms",
+      "kind": "prop",
+      "section": "buildings/frontier"
+    },
+    {
+      "id": "buildings/authored/frontier-power-plant",
+      "label": "Power & Thermal Plant",
+      "kind": "prop",
+      "section": "buildings/frontier"
+    },
+    {
+      "id": "buildings/authored/frontier-hydroponics",
+      "label": "Hydroponics Facility",
+      "kind": "prop",
+      "section": "buildings/frontier"
+    },
+    {
+      "id": "buildings/authored/frontier-fabrication-workshop",
+      "label": "Fabrication Workshop",
+      "kind": "prop",
+      "section": "buildings/frontier"
+    },
+    {
+      "id": "buildings/authored/frontier-cargo-terminal",
+      "label": "Cargo Terminal",
+      "kind": "prop",
+      "section": "buildings/frontier"
+    },
+    {
+      "id": "buildings/authored/frontier-medical-center",
+      "label": "Medical Center",
+      "kind": "prop",
+      "section": "buildings/frontier"
     },
     {
       "id": "buildings/authored/civic-tower",
