@@ -27,6 +27,11 @@ views disagree its ISO view wins. A hex with paving but no volume, like a courty
 every level comes from the same code at its own detail. Its sheet shows faces the game culls in magenta.
 The game draws a floor at every level inside `building_volume` solids, so they stay behind the glass; a solid one unit
 tall at a level's top gives a roof its hexes without adding a floor.
+[frontier_buildings.py](frontier_buildings.py) builds the seven `frontier-*` buildings from their sheets in `references/` out of
+the Frontier kit's own pieces ([theme_kits.py](theme_kits.py)): each module is a box whose outline is laid with the kit's bays,
+corner facets and roof borders (`lay` clips each piece at the mitres), its roof the kit's plating along the module; hip roofs,
+lanterns, control rooms, masts, radiators, glass vaults, gables and the landing deck are modelled here in the same finishes. A
+volume stops under its building's lowest visible roof, so no runtime floor stands through a pitched roof or glass.
 
 ## Building with repeated floors
 
