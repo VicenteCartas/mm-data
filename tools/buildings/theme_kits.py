@@ -758,13 +758,15 @@ def frontier_greenhouse(rng, kind, base=False, length=W):
 
 def frontier_joint(rng, kind):
     """Where a module meets the next (BayKit joints), built for a wall's end and mirrored for its start: its vertical
-    edge bevelled as its top and bottom are, the three bevels meeting in a point at each corner, so neighbouring modules
-    part in a V groove; an amber marker by its top corner; on the ground, a skid under it."""
-    H, C, m = LEVEL, CHAMFER, CHAMFER/2
+    edge bevelled as its top and bottom are, so neighbouring modules part in a V groove. The bevels meet along the
+    corner's diagonal down to the groove's bottom at the joint line, so where the groove crosses a storey's the four
+    modules meet in one point, closed; under a roof the roof's seam carries the groove on. An amber marker by its top
+    corner; on the ground, a skid under it."""
+    H, C = LEVEL, CHAMFER
     f = FOOT if kind == 'base' else 0.0
-    bevel([(0, 0, H-C), (m, m, H-m), (0, C, H)], (0, -1, 1), lambda v: v[1])
-    bevel([(0, C, f), (m, m, m+f), (0, 0, C+f)], (0, -1, -1), lambda v: v[1])
-    bevel([(0, 0, C+f), (m, m, m+f), (C, C, C+f), (C, C, H-C), (m, m, H-m), (0, 0, H-C)], (1, -1, 0), lambda v: v[1])
+    bevel([(0, 0, H-C), (C, C, H), (0, C, H)], (0, -1, 1), lambda v: v[1])
+    bevel([(0, C, f), (C, C, f), (0, 0, C+f)], (0, -1, -1), lambda v: v[1])
+    bevel([(0, 0, C+f), (C, C, f), (C, C, H), (0, 0, H-C)], (1, -1, 0), lambda v: v[1])
     if f:
         add('foot recess', PAINT, DARK, [(0, C, 0), (C, C, 0), (C, C, f), (0, C, f)], [(0, 1, 2, 3)])
     marker(-.7, H-C-BAND/2, -BAND_OUT-.02)
@@ -821,10 +823,6 @@ def frontier_seam(rng, length=W):
     """Where a module's roof meets its neighbour's (BayKit seams): its top edge bevelled down to the joint, the
     neighbour's bevel the groove's other side; its border inside, as along its walls."""
     bevel([(0, 0, -CHAMFER), (length, 0, -CHAMFER), (length, CHAMFER, 0), (0, CHAMFER, 0)], (0, -1, 1), lambda v: CHAMFER-v[1])
-    # A dark wall on the joint line, facing this module: the groove's far side when the neighbour is as tall, and closed
-    # when it stands taller (its cap starts above this roof, nothing under it on that side).
-    wall = [(0, 0, -CHAMFER), (length, 0, -CHAMFER), (length, 0, 0), (0, 0, 0)]
-    add('seam wall', PAINT, DARK, wall, [facing(wall, (0, 1, 0))])
     cuboid('roof border', 0, length, CHAMFER+ROOF_INSET, CHAMFER+ROOF_INSET+BORDER, 0, .55, MATTE, FRAME, omit='b')
 
 
