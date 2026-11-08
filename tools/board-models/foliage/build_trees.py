@@ -1,7 +1,7 @@
 """python tools/board-models/foliage/build_trees.py [--out BOARD] [names]: the conifers', palms', cacti', shrubs' and bare trees' LOD0-2
 and their manifest counts.
 
-Most species here are grown from their parameters; bare trees use Blender-authored branch paths in sources/.
+Every species here is grown from its parameters, the bare tree from a branching skeleton (bare_skeleton).
 Every card face has its back; every card carries
 its crown's envelope normal (the game lights cards as proxies of the leaves around them, terrain-foliage.frag), and
 vertex colours shade the crown dark inside and bright at its surface. Coarser levels keep the silhouette with fewer,
@@ -16,7 +16,7 @@ to read as cover) and pine-layered a fir with open tiers.
 
 Broadleaf and volcanic trees, birches and willows are exported from sources/forest.blend by build_forest.py.
 Apple trees are exported from sources/orchards.blend by build_orchards.py. This generator retains only the
-parameter-grown conifers, palms, cacti and ferns, and the authored bare tree.
+parameter-grown conifers, palms, cacti and ferns, and the bare tree.
 Woody shrubs use sources/shrubs.blend, sources/desert-shrubs.blend and build_shrubs.py.
 
 The canopy's winter form is a material variant (mmSnow): the snow cutout, with a colour scale that turns the
@@ -73,14 +73,17 @@ CONIFERS = {
 # How each level thins a conifer: whorls kept, branches per whorl and between whorls, card width, bends on the long
 # branches, folded cards, trunk sides and rings, core cards, leader cards and stubs. A level with no branches per whorl
 # spirals single branches up the trunk instead, so a few cards cover the whole crown without gaps between tiers. Far
-# levels keep core cards: their flat branch cards alone turn edge-on to a low view.
+# levels keep core cards: their flat branch cards alone turn edge-on to a low view. The middle and far levels' widths
+# and cores are fitted to the level before at its switch, as the board renders them, and keep two thirds of the near
+# level's cover side-on: the middle level's flat cards cover about as much as the near level's folded ones, and two
+# wide cores keep the far level as light as the middle one.
 CONIFER_LEVELS = (
     dict(whorls=1, per_whorl=1, between=1, width=1, segments=2, fold=True, sides=6, rings=7, core=3, leader=2,
          stubs=True, core_width=1.1),
-    dict(whorls=.85, per_whorl=1, between=0, width=1.25, segments=1, fold=False, sides=5, rings=3, core=2, leader=1,
-         stubs=False, core_width=1.3),
-    dict(whorls=.3, per_whorl=0, between=0, width=2.1, segments=1, fold=False, sides=4, rings=2, core=3, leader=1,
-         stubs=False, core_width=1.75))
+    dict(whorls=.85, per_whorl=1, between=0, width=1.1, segments=1, fold=False, sides=5, rings=3, core=2, leader=1,
+         stubs=False, core_width=1.6),
+    dict(whorls=.3, per_whorl=0, between=0, width=2.1, segments=1, fold=False, sides=4, rings=2, core=2, leader=1,
+         stubs=False, core_width=2.1))
 # Conifer branches reaching further than this share of the crown's widest radius bend twice.
 LONG = .55
 
@@ -107,10 +110,12 @@ BROADLEAF_LEVELS = (
          even=False, cover=True, reach=1),
     dict(clumps=.17, cards=1, size=2.9, twigs=0, limbs=3, limb_sides=3, twig_sides=3, segments=1, sides=4, rings=1,
          even=True, cover=True))
-# The bare tree uses authored branch geometry and bleached wood, with snow added to upward-facing surfaces.
+# The bare tree: a grown skeleton of bleached wood (bare_skeleton), with snow added to upward-facing surfaces;
+# `radius`, its crown's widest radius as a share of the height, narrow enough for several to stand in a hex; `swell`,
+# how much thicker each level draws the wood it keeps, standing in for the twigs it drops; `branches`, the far level's.
 # Woody shrub families use the editable Blender sources and shared forest exporter (build_shrubs.py).
 DRY = {
-    'tree-dead': dict(source='tree-dead', budgets=(12000, 1800, 180), seed=51,
+    'tree-dead': dict(source='tree-dead', budgets=(12000, 1800, 180), seed=51, radius=.5, swell=(1, 1.3, 1.8), branches=15,
                       bark_role='bark', bark_texture='dead-wood', bark_maps=('albedo', 'normal', 'orm'),
                       bark=(.8, .78, .74), leaves=(.84, .8, .76), cutout='twig', far=.95, winter=False),
 }
@@ -288,8 +293,79 @@ def along_line(points, share):
 
 
 @lru_cache(maxsize=None)
-def source(name):
-    return json.loads((Path(__file__).parent / 'sources' / (name+'.json')).read_text())
+def bare_skeleton(seed, radius):
+    """The bare tree's wood, grown from its seed: a short trunk with a flared foot forks low into crooked limbs that rise
+    and spread to the crown (`radius`, a share of the height), each with side branches and those with twigs. Each branch is a polyline of [x, y, z, radius] starting on its parent (`parents`, -1 for the trunk), parents
+    first."""
+    rng = random.Random(seed)
+    reach, fork = radius * HEIGHT, HEIGHT * .17
+    branches, parents = [], []
+
+    def envelope(z):
+        """The crown's horizontal radius at height z: an ellipsoid widest at 0.6 of the height."""
+        return reach * math.sqrt(max(.04, 1 - ((z - HEIGHT * .6) / (HEIGHT * .5)) ** 2))
+
+    def grow(start, heading, span, radii, parent, segments, crook, rise):
+        points, p, d = [[*start, radii[0]]], list(start), normalized(heading)
+        for k in range(1, segments + 1):
+            # Dead wood grows crooked: each stretch turns a little and rises toward the light.
+            d = normalized(add(add(d, [rng.uniform(-crook, crook) for _ in range(3)]), [0, 0, rise]))
+            q = add(p, d, span / segments)
+            # The crown's envelope turns wood that reaches past it back in.
+            radial, limit = math.hypot(q[0], q[1]), envelope(q[2])
+            if radial > limit:
+                q[0], q[1] = q[0] * limit / radial, q[1] * limit / radial
+            q[2] = min(q[2], HEIGHT)
+            d, p = normalized(sub(q, p)), q
+            points.append([*p, radii[0] + (radii[1] - radii[0]) * k / segments])
+        branches.append(points)
+        parents.append(parent)
+        return len(branches) - 1
+
+    def along(points, share):
+        """The point, direction and radius at `share` of a polyline's length, and its length."""
+        lengths = [length(sub(b[:3], a[:3])) for a, b in zip(points, points[1:])]
+        target = share * sum(lengths)
+        for (a, b), span in zip(zip(points, points[1:]), lengths):
+            if target <= span or b is points[-1]:
+                s = min(1.0, target / (span or 1))
+                return ([a[c] + (b[c] - a[c]) * s for c in range(3)], normalized(sub(b[:3], a[:3])),
+                        a[3] + (b[3] - a[3]) * s, sum(lengths))
+            target -= span
+
+    def sprout(parent, count, spread, share, radius, depth):
+        """`count` side branches along a parent, leaving it `spread` degrees apart round it, `share` of its length long
+        (less toward its tip), `radius` of its radius there thick; with twigs of their own above depth 2."""
+        points = branches[parent]
+        phase = rng.uniform(0, math.tau)
+        for c in range(count):
+            place = .22 + .7 * (c + rng.uniform(.2, .8)) / count
+            at, tangent, r, total = along(points, place)
+            phase += 2.39996
+            side = normalized(cross(tangent, [math.cos(phase), math.sin(phase), .3]))
+            angle = math.radians(rng.uniform(*spread))
+            heading = add([x * math.cos(angle) for x in tangent], side, math.sin(angle))
+            child = grow(at, heading, max(1.2, total * (1.2 - place) * rng.uniform(*share)), (r * radius, max(.018, r * radius * .25)),
+                         parent, (3, 2, 1)[depth - 1], (.2, .3, .4)[depth - 1], (.06, .03, .02)[depth - 1])
+            if depth < 3:
+                sprout(child, rng.randint(*((3, 5) if depth == 1 else (2, 4))), (30, 55), (.5, .8), .62, depth + 1)
+
+    # The trunk, flared at its foot and leaning a little, forks at `fork`.
+    lean = [rng.uniform(-.3, .3), rng.uniform(-.3, .3)]
+    branches.append([[0, 0, 0, 1.35], [lean[0] * .3, lean[1] * .3, .9, 1.0], [lean[0], lean[1], fork, .82]])
+    parents.append(-1)
+    count = rng.randint(5, 6)
+    azimuth = rng.uniform(0, math.tau)
+    for k in range(count):
+        azimuth += math.tau / count * rng.uniform(.8, 1.2)
+        # Every other limb rises steeper, so the crown has a top.
+        tilt = math.radians(rng.uniform(16, 28) if k % 2 else rng.uniform(32, 48))
+        heading = [math.cos(azimuth) * math.sin(tilt), math.sin(azimuth) * math.sin(tilt), math.cos(tilt)]
+        start, _, _, _ = along(branches[0], rng.uniform(.82, 1.0))
+        limb = grow(start, heading, (HEIGHT - fork) * rng.uniform(.95, 1.05),
+                    (rng.uniform(.5, .62), .08), 0, 5, .14, .05)
+        sprout(limb, rng.randint(4, 6), (32, 55), (.45, .7), .55, 1)
+    return {'branches': branches, 'parents': parents, 'seed': seed}
 
 
 class Tree:
@@ -860,14 +936,14 @@ class Tree:
 
 
     def authored(self, index, thinning):
-        data=source(self.spec['source'])
+        data=bare_skeleton(self.spec['seed'], self.spec['radius'])
         dry=self.spec['source']=='tree-dead'
         branches=data['branches']
         # Near: rounded stems and fine branchlets. Far: retain the same dominant scaffold.
         cutoff=((.018,.12,.07) if dry else (.075,.24,.5))[index]
         chosen=[i for i,p in enumerate(branches) if max(q[3] for q in p)>=cutoff/thinning]
         if index==2:
-            chosen=sorted(chosen, key=lambda i:max(q[3] for q in branches[i]), reverse=True)[:12 if dry else 5]
+            chosen=sorted(chosen, key=lambda i:max(q[3] for q in branches[i]), reverse=True)[:self.spec.get('branches', 5)]
         retained=set(chosen)
         for i in chosen:
             parent=data['parents'][i]
@@ -911,7 +987,8 @@ class Tree:
                                        (-a[k]+3*b[k]-3*c[k]+d[k])*.125) for k in range(4)])
                 points=curved+[points[-1]]
             tint=(.86,.83,.77) if dry else (.92,.88,.8)
-            self.authored_tube(points, sides, tint, broken)
+            swell=self.spec.get('swell', (1, 1, 1))[index]
+            self.authored_tube([[*q[:3], q[3]*swell] for q in points], sides, tint, broken)
 
     def frond(self, base, azimuth, elevation, reach, sag, fold, segments, folded, color, centre, wide=1.0,
               sweep=0, twist=0, mirror=None):
@@ -1115,7 +1192,8 @@ def grow(kind, spec, index, thinning):
     elif kind == 'palm':
         level = PALM_LEVELS[index]
         if spec.get('natural') and index:
-            level = dict(level, fronds=.8 if index == 1 else .6, width=1.15 if index == 1 else 1.35)
+            # The far level's frond count is fitted to the middle level's cover and colour at its switch.
+            level = dict(level, fronds=.8 if index == 1 else .75, width=1.15 if index == 1 else 1.35)
         tree.palm(level, thinning)
     elif kind == 'cactus':
         tree.cactus(CACTUS_LEVELS[index], thinning)

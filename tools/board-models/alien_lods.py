@@ -41,7 +41,8 @@ SWITCH, COVERAGE, GROWTH = 48, .92, 1.25
 # weathering in linear light: crevices (Blender's vertex dirt on the sculpt) darken toward `crevice`, sky-facing skin
 # bleaches toward `bleach` and gathers `dust`, and the foot darkens toward `foot` at the ground over its lowest
 # FOOT units; `tints`, linear factors for the corner colours of each atlas quadrant (left/right, top/bottom of the
-# image), and `stalk`, the share of the height below which the top-left quadrant takes the second tint instead.
+# image), and `stalk`, the share of the height below which the top-left quadrant takes the second tint instead;
+# `far`, the far level's budget for plants whose colour needs more than BUDGETS[2] there (the cups' lips and bowls).
 FAMILIES = {
     'mars': dict(names=('tube-grove', 'tube-crown', 'organ-pipes', 'finger-spires', 'finger-crown', 'antler-crown',
                         'lattice-spires', 'fan-scalloped', 'fan-folded', 'plate-terraces', 'spiral-whorls',
@@ -55,7 +56,8 @@ FAMILIES = {
                           'spore-round'),
                    flare={}, crevice=.7, bleach=1, dust=None, foot=.5,
                    tints={(0, 0): (1, .95, .8), (0, 1): (2, 1.4, .7), (1, 0): (1, .95, .8), (1, 1): (1.3, .8, .75)},
-                   stalk=(.4, (.85, .68, .45))),
+                   stalk=(.4, (.85, .68, .45)),
+                   far=dict.fromkeys(('cup-chalice', 'cup-forked', 'cup-frilled', 'cup-trumpet'), 192)),
 }
 RETEXTURED = {'fungus': ('cliff-mycelium',)}
 MYCELIUM = {'id': 'mycelium', 'diffuse': [1, 1, 1], 'roughness': 1, 'metallic': 0, 'textures': [
@@ -269,7 +271,7 @@ def build(family_name, name):
     levels = {}
     heights = original['meshes'][0]['vertices'][2::12]
     low, high = min(heights), max(heights)
-    for index, budget in enumerate(BUDGETS):
+    for index, budget in enumerate((*BUDGETS[:2], family.get('far', {}).get(name, BUDGETS[2]))):
         while True:
             vertices, indices = decimated(data, budget)
             # Collapse moves the roots and tips a little: every level keeps the original's ground and height exactly.
