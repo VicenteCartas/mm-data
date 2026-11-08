@@ -33,8 +33,11 @@ for asset, entry in features.items():
             budgets = (32000, 10000, 2600, 12)
         elif entry.get('source') == 'tools/board-models/foliage/build_shrubs.py':
             budgets = (24000, 8000, 2200, 12)
+        elif asset.startswith(('mars/', 'fungus/')):
+            # Their far levels keep the outline the impostor shows (alien_lods.py).
+            budgets = (3200, 820, 720, 12)
         else:
-            budgets = (3200, 820, 110, 12) if asset.startswith(('mars/', 'fungus/')) else (1600, 410, 110, 12)
+            budgets = (1600, 410, 110, 12)
         for level, lod in enumerate(entry['lods']):
             assert 0 < lod['triangles'] <= budgets[level], lod
             catalog[lod['node']] = lod
@@ -54,7 +57,8 @@ for asset in catalog:
         path = BOARD / (asset + '.glb')
         model = read_glb(path)
     heights = [z for mesh in model['meshes'] for z in mesh['vertices'][2::12]]
-    if asset.startswith(('foliage-', 'orchard-')):
+    # The impostor's quad (level 3) lies flat about the plant's centre until it turns toward the camera.
+    if asset.startswith(('foliage-', 'orchard-')) and level < 3:
         plant = asset.rsplit('-lod', 1)[0]
         assert abs(min(heights)) < 1e-5, f'Floating plant root: {path}'
         if level == 0:
