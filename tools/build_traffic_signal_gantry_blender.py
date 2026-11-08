@@ -186,14 +186,7 @@ def main():
                            'vertices': len(mesh['vertices']) // 12,
                            'bounds': [[min(mesh['vertices'][axis::12]), max(mesh['vertices'][axis::12])]
                                       for axis in range(3)]})
-        placement = {'units': 'model', 'front': '+Y', 'armDirection': '+X', 'base': 'Z=0',
-                     'baseWidth': BASE_WIDTH * kit.MODEL_UNITS_PER_METRE,
-                     'armReach': REACH * kit.MODEL_UNITS_PER_METRE,
-                     'headX': [x * kit.MODEL_UNITS_PER_METRE for x in HEAD_X],
-                     'headCentreZ': HEAD_Z * kit.MODEL_UNITS_PER_METRE,
-                     'repeaterCentreZ': REPEATER_Z * kit.MODEL_UNITS_PER_METRE}
-        path = kit.write_levels(NAME, models, 'tools/build_traffic_signal_gantry_blender.py',
-                                extras={'mmRoadSignal': placement})
+        path = kit.write_levels(NAME, models)
         report = {'file': str(path), 'lods': counts, 'bytes': path.stat().st_size,
                   'metres': {'base_width': BASE_WIDTH, 'reach': REACH, 'beam_height': BEAM_HEIGHT,
                              'head_x': HEAD_X, 'head_centre_z': HEAD_Z, 'repeater_z': REPEATER_Z}}

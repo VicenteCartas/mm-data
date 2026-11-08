@@ -94,6 +94,40 @@ def image_path(glb, uri):
     return (Path(glb).parent / unquote(parsed.path)).resolve()
 
 
+def library_resource(image, textures):
+    """The library .tres, relative to textures, that this albedo image file belongs to, or None."""
+    if image.name.endswith('_albedo.png'):
+        resource = image.with_name(image.name[:-11] + '.tres')
+        if resource.is_relative_to(textures) and resource.is_file():
+            return resource.relative_to(textures).as_posix()
+    return None
+
+
+def check_kit_materials(doc, path, textures):
+    """A building kit draws its pieces as the library materials their albedo images belong to."""
+    for material in doc.get('materials', []):
+        texture = material.get('pbrMetallicRoughness', {}).get('baseColorTexture')
+        uri = doc['images'][doc['textures'][texture['index']]['source']].get('uri') if texture else None
+        if not uri or not library_resource(image_path(path, uri), textures):
+            raise ValueError(f"A building kit's pieces use library materials only, not {material.get('name')}")
+
+
+def check_part_names(doc):
+    """The game refuses a level of detail that names two parts alike."""
+    for root in doc['scenes'][0].get('nodes', []):
+        parts, meshes, pending = set(), set(), [root]
+        while pending:
+            node = doc['nodes'][pending.pop()]
+            meshes.update([node['mesh']] if 'mesh' in node else [])
+            pending.extend(node.get('children', []))
+        for mesh in meshes:
+            for primitive in doc['meshes'][mesh]['primitives']:
+                part = primitive.get('extras', {}).get('mmPart')
+                if part in parts:
+                    raise ValueError(f'Part names must be unique in a level of detail: {part}')
+                parts.update([part] if part else [])
+
+
 def validate(doc, path, models_root):
     if doc.get('skins') or doc.get('animations') or doc.get('extensionsRequired'):
         raise ValueError('This editor supports rigid GLBs without required extensions or animation tracks')
@@ -131,12 +165,18 @@ def validate(doc, path, models_root):
                 raise ValueError('Mesh needs positions and normals')
             if needs_normal and primitive.get('material') is None:
                 raise ValueError('Assign a named material to every rendered mesh face before exporting')
+    check_part_names(doc)
+    if Path(path).name.endswith('-pieces.glb'):
+        check_kit_materials(doc, path, models_root.resolve() / 'board/textures')
     names = set()
     for material in doc.get('materials', []):
         name = material.get('name')
         if not name or name in names:
             raise ValueError(f'Material names must be unique: {name}. Rename the conflicting material in Blender')
         names.add(name)
+        emission = material.get('extras', {}).get('mmEmission')
+        if emission is not None and emission not in ('always', 'night', 'off'):
+            raise ValueError(f'{name}: mmEmission must be always, night or off, not {emission}')
         if material.get('alphaMode') == 'BLEND':
             raise ValueError('The game requires opaque or alpha-tested materials, not alpha blending')
         strength = material.get('extensions', {}).get('KHR_materials_emissive_strength', {}).get('emissiveStrength', 1)
@@ -151,18 +191,19 @@ def validate(doc, path, models_root):
                     raise ValueError('For non-library materials, bake normal strength into the map')
                 if key == 'occlusionTexture' and texture.get('strength', 1) != 1:
                     raise ValueError('For non-library materials, bake occlusion strength into the map')
-        for variant in material.get('extras', {}).get('mmVariants', {}).values():
-            for uri in variant.get('textures', {}).values():
-                resolved = image_path(path, uri)
-                if not resolved.is_file() or not resolved.is_relative_to(models_root.resolve()):
-                    raise ValueError(f'Missing variant texture: {resolved}')
+        for uri in material.get('extras', {}).get('mmSnow', {}).get('textures', {}).values():
+            resolved = image_path(path, uri)
+            if not resolved.is_file() or not resolved.is_relative_to(models_root.resolve()):
+                raise ValueError(f'Missing snow texture: {resolved}')
 
 
 def ensure_lod_groups(doc, name):
     """Give new meshes the identity LOD root required by RigidGlb.loadLods."""
     nodes = doc.setdefault('nodes', [])
     scene = doc['scenes'][doc.get('scene', 0)]
-    roots = [i for i in scene.get('nodes', []) if nodes[i].get('name') not in ('cut', 'stands')]
+    # Beside its levels a model's roots may hold data: RigidGlb.CUT, STANDS, SPORES and BuildingVolumes.helper.
+    roots = [i for i in scene.get('nodes', []) if nodes[i].get('name') not in ('cut', 'stands', 'spores')
+             and not nodes[i].get('name', '').startswith('building_volume')]
     if not roots or not doc.get('meshes'):
         raise ValueError('Select at least one mesh to export')
     levels = [re.fullmatch(r'.+-lod([0-3])', nodes[i].get('name', '')) for i in roots]

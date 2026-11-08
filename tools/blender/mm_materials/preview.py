@@ -90,7 +90,7 @@ def build_preview(material, path, textures, *, vertex_colors=None):
         vertex.label = 'Mesh vertex colours'
         vertex.location = (-400, 400)
         vertex_color = vertex.outputs['Color']
-    if vertex_colors and material.get('mmPaintMask'):
+    if vertex_colors and spec['paint_mask']:
         mask = tree.nodes.new('ShaderNodeMixRGB')
         mask.label = 'Paintable regions; alpha is not transparency'
         mask.inputs[1].default_value = (1, 1, 1, 1)
@@ -150,7 +150,7 @@ def build_preview(material, path, textures, *, vertex_colors=None):
         tree.links.new(multiply(sss.outputs['Color'], spec['sss_strength'], (-150, -1100)),
                        principled.inputs['Subsurface Weight'])
     cutout = original.get('alphaMode', 'MASK' if spec['transparent'] else 'OPAQUE') == 'MASK'
-    if material.get('mmPaintMask'):
+    if spec['paint_mask']:
         cutout = False
     if cutout:
         mask = tree.nodes.new('ShaderNodeMath')
@@ -161,6 +161,7 @@ def build_preview(material, path, textures, *, vertex_colors=None):
         tree.links.new(mask.outputs[0], principled.inputs['Alpha'])
     material.use_backface_culling = not original.get('doubleSided', spec['double_sided'])
     material['_mm_tres'] = Path(path).relative_to(textures).as_posix()
+    material['_mm_paint_mask'] = spec['paint_mask']
     return spec
 
 

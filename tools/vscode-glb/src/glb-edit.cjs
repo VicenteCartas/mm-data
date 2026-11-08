@@ -27,8 +27,9 @@ function rebaseGlb(bytes, from, to) {
   const { json } = readGlb(bytes);
   const uri = value => /^[a-z][a-z\d+.-]*:/i.test(value) ? value : relativeUri(to, path.resolve(path.dirname(from), decodeURIComponent(value)));
   for (const item of [...(json.images || []), ...(json.buffers || [])]) if (item.uri) item.uri = uri(item.uri);
-  for (const material of json.materials || []) for (const variant of Object.values(material.extras?.mmVariants || {})) {
-    for (const [role, value] of Object.entries(variant.textures || {})) variant.textures[role] = uri(value);
+  for (const material of json.materials || []) {
+    const textures = material.extras?.mmSnow?.textures || {};
+    for (const [role, value] of Object.entries(textures)) textures[role] = uri(value);
   }
   return writeGlb(bytes, json);
 }
@@ -44,8 +45,8 @@ function properties(material, changes, managed) {
   const factor = value => typeof value === 'number' && Number.isFinite(value) && value >= 0 && value <= 1;
   for (const [key, value] of Object.entries(changes)) {
     if (key === 'emissionMode') {
-      if (!['inherit', 'off'].includes(value)) throw Error('Invalid emissionMode');
-      if (value === 'off') (material.extras ||= {}).mmEmission = 'off';
+      if (!['inherit', 'always', 'night', 'off'].includes(value)) throw Error('Invalid emissionMode');
+      if (value !== 'inherit') (material.extras ||= {}).mmEmission = value;
       else if (material.extras) { delete material.extras.mmEmission; if (!Object.keys(material.extras).length) delete material.extras; }
       continue;
     }
@@ -90,8 +91,9 @@ function editGlb(bytes, edit, file, shared, managed = false) {
       if (texture < 0) { texture = textures.length; textures.push({ source: image, ...(sampler === undefined ? {} : { sampler }) }); }
       material.pbrMetallicRoughness = { baseColorFactor: source.pbrMetallicRoughness?.baseColorFactor || [1, 1, 1, 1], baseColorTexture: { ...oldInfo, index: texture }, roughnessFactor: 1, metallicFactor: 0 };
       delete material.normalTexture; delete material.occlusionTexture;
+      if (material.extras) { delete material.extras.mmPaintMask; if (!Object.keys(material.extras).length) delete material.extras; } // The .tres says.
       if (edit.keepEmission === false) { delete material.emissiveTexture; delete material.emissiveFactor; if (material.extensions) delete material.extensions.KHR_materials_emissive_strength; }
-      material.alphaMode = source.extras?.mmPaintMask ? 'OPAQUE' : shared.spec.transparent ? 'MASK' : 'OPAQUE';
+      material.alphaMode = shared.spec.paintMask ? 'OPAQUE' : shared.spec.transparent ? 'MASK' : 'OPAQUE';
       if (material.alphaMode === 'MASK') material.alphaCutoff = shared.spec.alphaCutoff; else delete material.alphaCutoff;
       material.doubleSided = source.doubleSided ?? shared.spec.doubleSided;
     } else if (edit.kind === 'properties') properties(material, edit.changes, managed);

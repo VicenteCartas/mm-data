@@ -17,7 +17,7 @@
 			},
 			"parameters": {},
 			"title": "Concrete panels",
-			"text": "Shared precast concrete panels (structures/common): the medium walls' sides, 2 x 2 panels with tie holes per repeat; drawn in its own colour. Maps from sources/ (albedo, orm, normal), 256 px. The ...PNG8 groups only store exact file values; leave them. Export: File > Export material > Godot > Godot 4 Standard into data/models/board/textures/structures/common (or tools/materials/export.py), then Reload assets in the game's Tuning panel.",
+			"text": "Shared precast concrete panels (structures/common): the medium walls' sides, 2 x 2 panels with tie holes per repeat; drawn in its own colour. Maps from sources/ (albedo, orm, normal), 256 px. The ...PNG8 groups only store exact file values; leave them. Export: File > Export material > Godot > Godot 4 Standard into data/models/board/textures/structures/common (or tools/materials/export.py), then Reload assets in the game's Tuning panel. Lighten raises the source photo to a mean linear albedo of about 0.59, so that pigment and heavy grime on a building land near 0.30, in the range of real weathered concrete.",
 			"color": {
 				"type": "Color",
 				"r": 0.2,
@@ -641,15 +641,22 @@
 			},
 			"seed": 0,
 			"seed_locked": true
+		},
+		{
+			"type": "adjust_hsv",
+			"name": "Lighten",
+			"node_position": {
+				"x": 250,
+				"y": 0
+			},
+			"parameters": {
+				"hue": 0.0,
+				"saturation": 1.0,
+				"value": 1.365
+			}
 		}
 	],
 	"connections": [
-		{
-			"from": "AlbedoSource",
-			"from_port": 0,
-			"to": "AlbedoPNG8",
-			"to_port": 0
-		},
 		{
 			"from": "AlbedoPNG8",
 			"from_port": 0,
@@ -703,6 +710,18 @@
 			"from_port": 0,
 			"to": "Material",
 			"to_port": 4
+		},
+		{
+			"from": "AlbedoSource",
+			"from_port": 0,
+			"to": "Lighten",
+			"to_port": 0
+		},
+		{
+			"from": "Lighten",
+			"from_port": 0,
+			"to": "AlbedoPNG8",
+			"to_port": 0
 		}
 	]
 }

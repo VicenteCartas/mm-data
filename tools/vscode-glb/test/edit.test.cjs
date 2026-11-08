@@ -22,7 +22,7 @@ async function fixture() {
   json.scenes[json.scene || 0].nodes.push(second);
   json.nodes[first].extras = { ...(json.nodes[first].extras || {}), preserved: 'node metadata' };
   const source = json.meshes[node.mesh].primitives[0].material;
-  json.materials[source].extras = { ...json.materials[source].extras, preserved: true, mmVariants: { snow: { textures: { baseColor: '../../../board/textures/vegetation/snow_albedo.png' }, colourScale: [.5, .5, .5, 1] } } };
+  json.materials[source].extras = { ...json.materials[source].extras, preserved: true, mmSnow: { textures: { baseColor: '../../../board/textures/vegetation/snow_albedo.png' }, colourScale: [.5, .5, .5, 1] } };
   json.materials[source].emissiveFactor = [.1, .2, .3];
   const base = writeGlb(original, json), extra = Buffer.alloc(12); extra.writeUInt32LE(4); extra.writeUInt32LE(0x12345678, 4); extra.writeUInt32LE(1234, 8);
   const bytes = Buffer.concat([base, extra]); bytes.writeUInt32LE(bytes.length, 8);

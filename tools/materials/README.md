@@ -77,6 +77,7 @@ adds maps to a material with a shader, so each of these is a `ShaderMaterial` of
 | `terrain/lava/lava-flow` | `ExportMask` | `lava-flow_coverage.png`: exposed-melt coverage | `texture_coverage` |
 | `terrain/lava/lava-crust` | `ExportMask` | `lava-crust_glow.png`: crack glow | `texture_glow` |
 | `terrain/ice/ice-sheet` | `ExportCracks` | `ice-sheet_cracks.png`: cracks and bubbles | `texture_cracks` |
+| `terrain/ice/ice-sheet` | `ExportFloes` | `ice-sheet_floes.png`: joints, snow field, shard cracks and values, for the game alone | none |
 
 A stock **Export** node writes the extra map beside the others. Each of these projects'
 Material node carries its own export target, *Godot > Godot 4 ShaderMaterial*: the stock
@@ -130,12 +131,18 @@ by `tools/board-models/seaport/build_container_lods.py`; its alpha separates pai
 with dried stains, rain-streaked dirt, rust specks and blotches, chips and rust drips) and `rusted-steel` (weathered
 steel with rust patches); both read their maps from `sources/`, which `photo_sources.py` makes from a photographic
 study (its header gives the recipe). The hard tank's vents take `vent-slots` (pressed louvre slots, two across and
-eight down per repeat). The layered walls
+eight down per repeat). Authored buildings' louvres and roller shutters take `louvre`: two slats per repeat, each
+sloping back from its lip into a dark gap, at 64 pixels because nothing in it varies. The layered walls
 also take `satin-steel`, `matte-steel`, `painted-steel`, `grille`, `cast-concrete`, `concrete-panels`,
 `chain-link` and `barbed-wire`; their projects without a Material Maker graph of their own read
-their maps from `sources/`. The cargo crate's maps are baked from steel, iron and the hazard stripes. The corrugated
+their maps from `sources/`. `white-stone` is the Utopia buildings' clean stone: `cast-concrete`'s photograph with its
+contrast cut and lifted to white. The cargo crate's maps are baked from steel, iron and the hazard stripes. The corrugated
 finish, the three wall steels, the grille, the worn plate, the weathered paint and the vent slots are near white or
 flat: each model tints them with its vertex colours or colour slots.
+
+Stored vertex colours stay at or below 1, because Blender's exporter clips anything higher when an author saves the
+model. A material that would need more is too dark: raise it here with a `Lighten` node and bring down every model that
+uses it by the same factor. `glb_geometry.write_glb` fits stray values and `test_glb_materials` scans every stored model.
 
 `structures/lunar/` holds the lunar base's multi-hex buildings (models/buildings/README.md). From photographic studies,
 image projects (sources/ albedo, orm, normal, and emission where they glow): `habitat-wall` (two storeys of dark ribbed
@@ -155,7 +162,7 @@ atlases and textures as image projects (`light-cornices`, `light-walls`, `light-
 `fortress-concrete`, `fortress-roof` with the art's tint baked in, `fortress-far`), `fortress-wall` (the concrete in
 the far facade's tone, the storeys' walls), the fortress's flat colours
 (`fortress-steel`, `fortress-dark`, `fortress-glass`), and the light building's `light-roof` (a bitumen membrane) and
-`light-sidewalk` (concrete paving), tileable on the board's axes (`mmBoardUV`).
+`light-sidewalk` (concrete paving), tileable on the board's axes (the kit JSON's `repeat`).
 
 The plant cutouts made from photographic studies (`creosote-cutout`, `sagebrush-cutout`, `twig-cutout`,
 `date-palm-frond-cutout`, `willow-cutout`, `cactus-flower-cutout`, `orchard-cutout`, `volcano/cinder-cutout`) and the

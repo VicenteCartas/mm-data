@@ -123,9 +123,28 @@
         "spore-pod",
         "mars-coral",
         "deadwood",
-        "blueprints",
-        "crystals"
-      ]
+        "blueprints"
+      ],
+      "subcategories": {
+        "trees": [
+          "broadleaf",
+          "birch",
+          "pine",
+          "fruit",
+          "palm",
+          "willow",
+          "volcano"
+        ],
+        "fungi": [
+          "cliff-fungus",
+          "cup-fungus",
+          "fungus-patch",
+          "spore-pod"
+        ],
+        "mars-coral": [
+          "mars-coral"
+        ]
+      }
     },
     {
       "id": "transportation",
@@ -205,7 +224,16 @@
         "parking",
         "airfields",
         "blueprints"
-      ]
+      ],
+      "subcategories": {
+        "trains": [
+          "maglev-stock",
+          "rail-stock"
+        ],
+        "airfields": [
+          "airfields"
+        ]
+      }
     },
     {
       "id": "buildings",
@@ -224,8 +252,33 @@
         "authored",
         "utilities",
         "rooftop",
-        "colony"
-      ]
+        "colony",
+        "civic",
+        "utopia",
+        "frontier"
+      ],
+      "subcategories": {
+        "rooftop": [
+          "rooftop"
+        ],
+        "civic": [
+          "civic"
+        ],
+        "utopia": [
+          "utopia"
+        ],
+        "frontier": [
+          "frontier"
+        ],
+        "colony": [
+          "colony"
+        ]
+      },
+      "subcategoryShelf": {
+        "civic": "looks",
+        "utopia": "looks",
+        "frontier": "looks"
+      }
     },
     {
       "id": "industry",
@@ -344,9 +397,107 @@
       },
       "sections": [
         "parks",
-        "pools-sport",
-        "animals"
+        "pools-sport"
       ]
+    },
+    {
+      "id": "props",
+      "icon": {
+        "elevation": 0,
+        "theme": "grass",
+        "decorations": [
+          {
+            "id": "icon-1",
+            "kind": "prop",
+            "asset": "crystal/cover-low-crown",
+            "position": [
+              -0.2,
+              0.2
+            ],
+            "scale": 0.8,
+            "placement": {
+              "mode": "surface",
+              "receiver": {
+                "terrain": "ground",
+                "surface": "top"
+              },
+              "offset": 0.0
+            }
+          },
+          {
+            "id": "icon-2",
+            "kind": "prop",
+            "asset": "scenery/farm/cow",
+            "position": [
+              0.25,
+              -0.05
+            ],
+            "rotation": 30,
+            "scale": 3.0,
+            "placement": {
+              "mode": "surface",
+              "receiver": {
+                "terrain": "ground",
+                "surface": "top"
+              },
+              "offset": 0.0
+            }
+          },
+          {
+            "id": "icon-3",
+            "kind": "prop",
+            "asset": "scenery/flag",
+            "position": [
+              0.25,
+              0.3
+            ],
+            "placement": {
+              "mode": "surface",
+              "receiver": {
+                "terrain": "ground",
+                "surface": "top"
+              },
+              "offset": 0.0
+            }
+          },
+          {
+            "id": "icon-4",
+            "kind": "prop",
+            "asset": "scenery/parks/bench",
+            "position": [
+              -0.2,
+              -0.3
+            ],
+            "rotation": 90,
+            "scale": 2.4,
+            "placement": {
+              "mode": "surface",
+              "receiver": {
+                "terrain": "ground",
+                "surface": "top"
+              },
+              "offset": 0.0
+            }
+          }
+        ]
+      },
+      "sections": [
+        "crystal-clusters",
+        "giant-crystals",
+        "single-crystals",
+        "animals",
+        "general"
+      ],
+      "subcategories": {
+        "crystals": [
+          "crystal-clusters",
+          "giant-crystals",
+          "single-crystals"
+        ],
+        "animals": [
+          "animals"
+        ]
+      }
     },
     {
       "id": "hazards",
@@ -1182,7 +1333,7 @@
           "terrain": "bridge_elev",
           "label": "Deck height above hex level",
           "optional": false,
-          "min": 0,
+          "min": -50,
           "max": 50,
           "step": 1,
           "brush": true,
@@ -4248,6 +4399,27 @@
       "section": "buildings/looks"
     },
     {
+      "id": "building/civic",
+      "label": "Civic (Modular)",
+      "owner": "building",
+      "asset": "buildings/civic/civic",
+      "section": "buildings/civic"
+    },
+    {
+      "id": "building/utopia",
+      "label": "Utopia (Modular)",
+      "owner": "building",
+      "asset": "buildings/utopia/utopia",
+      "section": "buildings/utopia"
+    },
+    {
+      "id": "building/frontier",
+      "label": "Frontier (Modular)",
+      "owner": "building",
+      "asset": "buildings/frontier/frontier",
+      "section": "buildings/frontier"
+    },
+    {
       "id": "building/glass-dome",
       "label": "Glass dome",
       "owner": "building",
@@ -4311,13 +4483,19 @@
       "id": "scenery/steel-stick",
       "label": "Steel stick",
       "kind": "prop",
-      "section": "parks/parks"
+      "section": "props/general"
     },
     {
       "id": "scenery/flag",
       "label": "Flag",
       "kind": "prop",
-      "section": "parks/parks"
+      "section": "props/general"
+    },
+    {
+      "id": "scenery/billboard",
+      "label": "Billboard",
+      "kind": "prop",
+      "section": "transportation/roads"
     },
     {
       "id": "vegetation/birch-spreading",
@@ -4681,7 +4859,7 @@
       "id": "scenery/parks/bench",
       "label": "Bench",
       "kind": "prop",
-      "section": "parks/parks"
+      "section": "props/general"
     },
     {
       "id": "scenery/vehicles/car",
@@ -4855,7 +5033,7 @@
       "id": "scenery/parks/picnic-table",
       "label": "Picnic table",
       "kind": "prop",
-      "section": "parks/parks"
+      "section": "props/general"
     },
     {
       "id": "scenery/roofs/landing-beacon-hex",
@@ -4881,84 +5059,84 @@
       "id": "scenery/farm/pig",
       "label": "Pig",
       "kind": "prop",
-      "section": "parks/animals",
+      "section": "props/animals",
       "family": "Pig"
     },
     {
       "id": "scenery/farm/pig-brown-resting",
       "label": "Pig, brown, resting",
       "kind": "prop",
-      "section": "parks/animals",
+      "section": "props/animals",
       "family": "Pig"
     },
     {
       "id": "scenery/farm/cow",
       "label": "Cow",
       "kind": "prop",
-      "section": "parks/animals",
+      "section": "props/animals",
       "family": "Cow"
     },
     {
       "id": "scenery/farm/cow-grazing",
       "label": "Cow, grazing",
       "kind": "prop",
-      "section": "parks/animals",
+      "section": "props/animals",
       "family": "Cow"
     },
     {
       "id": "scenery/farm/cow-resting",
       "label": "Cow, resting",
       "kind": "prop",
-      "section": "parks/animals",
+      "section": "props/animals",
       "family": "Cow"
     },
     {
       "id": "scenery/farm/horse",
       "label": "Horse",
       "kind": "prop",
-      "section": "parks/animals",
+      "section": "props/animals",
       "family": "Horse"
     },
     {
       "id": "scenery/farm/horse-relaxed",
       "label": "Horse, resting",
       "kind": "prop",
-      "section": "parks/animals",
+      "section": "props/animals",
       "family": "Horse"
     },
     {
       "id": "scenery/farm/horse-brown-running",
       "label": "Horse, brown, running",
       "kind": "prop",
-      "section": "parks/animals",
+      "section": "props/animals",
       "family": "Horse"
     },
     {
       "id": "scenery/farm/horse-black-running",
       "label": "Horse, black, running",
       "kind": "prop",
-      "section": "parks/animals",
+      "section": "props/animals",
       "family": "Horse"
     },
     {
       "id": "scenery/farm/hen",
       "label": "Chicken",
       "kind": "prop",
-      "section": "parks/animals",
+      "section": "props/animals",
       "family": "Chicken"
     },
     {
       "id": "scenery/farm/rooster",
       "label": "Rooster",
       "kind": "prop",
-      "section": "parks/animals",
+      "section": "props/animals",
       "family": "Chicken"
     },
     {
       "id": "scenery/farm/bison",
       "label": "Bison",
       "kind": "prop",
-      "section": "parks/animals"
+      "section": "props/animals"
     },
     {
       "id": "scenery/construction/crawler-crane",
@@ -5026,7 +5204,7 @@
       "id": "scenery/parks/pillar",
       "label": "Pillar",
       "kind": "prop",
-      "section": "parks/parks"
+      "section": "props/general"
     },
     {
       "id": "scenery/roofs/skylight",
@@ -5098,6 +5276,24 @@
     {
       "id": "scenery/roofs/generator-ring",
       "label": "Generator ring",
+      "kind": "prop",
+      "section": "buildings/rooftop"
+    },
+    {
+      "id": "scenery/roofs/generator-slit",
+      "label": "Generator, single line",
+      "kind": "prop",
+      "section": "buildings/rooftop"
+    },
+    {
+      "id": "scenery/roofs/twin-pipes",
+      "label": "Twin pipes",
+      "kind": "prop",
+      "section": "buildings/rooftop"
+    },
+    {
+      "id": "scenery/roofs/edge-spike",
+      "label": "Roof edge spike",
       "kind": "prop",
       "section": "buildings/rooftop"
     },
@@ -6744,13 +6940,49 @@
       "id": "buildings/authored/civic-citadel",
       "label": "Civic citadel",
       "kind": "prop",
-      "section": "buildings/authored"
+      "section": "buildings/civic"
     },
     {
-      "id": "buildings/authored/frontier-church",
-      "label": "Frontier church",
+      "id": "buildings/authored/civic-habitat",
+      "label": "Civic habitat",
       "kind": "prop",
-      "section": "buildings/authored"
+      "section": "buildings/civic"
+    },
+    {
+      "id": "buildings/authored/civic-habitat2",
+      "label": "Civic habitat 02",
+      "kind": "prop",
+      "section": "buildings/civic"
+    },
+    {
+      "id": "buildings/authored/civic-commercial-center",
+      "label": "Civic commercial center",
+      "kind": "prop",
+      "section": "buildings/civic"
+    },
+    {
+      "id": "buildings/authored/civic-offices",
+      "label": "Civic offices",
+      "kind": "prop",
+      "section": "buildings/civic"
+    },
+    {
+      "id": "buildings/authored/civic-industrial-works",
+      "label": "Civic industrial works",
+      "kind": "prop",
+      "section": "buildings/civic"
+    },
+    {
+      "id": "buildings/authored/civic-medical-center",
+      "label": "Civic medical center",
+      "kind": "prop",
+      "section": "buildings/civic"
+    },
+    {
+      "id": "buildings/authored/civic-church",
+      "label": "Civic church",
+      "kind": "prop",
+      "section": "buildings/civic"
     },
     {
       "id": "buildings/authored/neo-futurist-arena",
@@ -6762,117 +6994,201 @@
       "id": "buildings/authored/civic-arena",
       "label": "Civic arena",
       "kind": "prop",
-      "section": "buildings/authored"
+      "section": "buildings/civic"
     },
     {
-      "id": "buildings/authored/tower",
-      "label": "Tower",
+      "id": "buildings/authored/utopia-garden-habitat",
+      "label": "Garden Habitat",
       "kind": "prop",
-      "section": "buildings/authored"
+      "section": "buildings/utopia"
+    },
+    {
+      "id": "buildings/authored/utopia-habitat2",
+      "label": "Sky Gardens Habitat",
+      "kind": "prop",
+      "section": "buildings/utopia"
+    },
+    {
+      "id": "buildings/authored/utopia-fabrication-works",
+      "label": "Fabrication Works",
+      "kind": "prop",
+      "section": "buildings/utopia"
+    },
+    {
+      "id": "buildings/authored/utopia-market-pavilion",
+      "label": "Market Pavilion",
+      "kind": "prop",
+      "section": "buildings/utopia"
+    },
+    {
+      "id": "buildings/authored/utopia-civic-conservatory",
+      "label": "Civic Conservatory",
+      "kind": "prop",
+      "section": "buildings/utopia"
+    },
+    {
+      "id": "buildings/authored/utopia-office-tower",
+      "label": "Office Tower",
+      "kind": "prop",
+      "section": "buildings/utopia"
+    },
+    {
+      "id": "buildings/authored/utopia-tower",
+      "label": "Office Tower",
+      "kind": "prop",
+      "section": "buildings/utopia"
+    },
+    {
+      "id": "buildings/authored/frontier-trade-exchange",
+      "label": "Trade Exchange",
+      "kind": "prop",
+      "section": "buildings/frontier"
+    },
+    {
+      "id": "buildings/authored/frontier-command-comms",
+      "label": "Command & Comms",
+      "kind": "prop",
+      "section": "buildings/frontier"
+    },
+    {
+      "id": "buildings/authored/frontier-power-plant",
+      "label": "Power & Thermal Plant",
+      "kind": "prop",
+      "section": "buildings/frontier"
+    },
+    {
+      "id": "buildings/authored/frontier-hydroponics",
+      "label": "Hydroponics Facility",
+      "kind": "prop",
+      "section": "buildings/frontier"
+    },
+    {
+      "id": "buildings/authored/frontier-fabrication-workshop",
+      "label": "Fabrication Workshop",
+      "kind": "prop",
+      "section": "buildings/frontier"
+    },
+    {
+      "id": "buildings/authored/frontier-cargo-terminal",
+      "label": "Cargo Terminal",
+      "kind": "prop",
+      "section": "buildings/frontier"
+    },
+    {
+      "id": "buildings/authored/frontier-medical-center",
+      "label": "Medical Center",
+      "kind": "prop",
+      "section": "buildings/frontier"
+    },
+    {
+      "id": "buildings/authored/civic-tower",
+      "label": "Civic tower",
+      "kind": "prop",
+      "section": "buildings/civic"
     },
     {
       "id": "crystal/cover-low-fan",
       "label": "Crystal, low fan",
       "kind": "prop",
-      "section": "vegetation/crystals",
+      "section": "props/crystal-clusters",
       "family": "Crystal clusters"
     },
     {
       "id": "crystal/cover-low-crown",
       "label": "Crystal, low crown",
       "kind": "prop",
-      "section": "vegetation/crystals",
+      "section": "props/crystal-clusters",
       "family": "Crystal clusters"
     },
     {
       "id": "crystal/cover-low-ridge",
       "label": "Crystal, low ridge",
       "kind": "prop",
-      "section": "vegetation/crystals",
+      "section": "props/crystal-clusters",
       "family": "Crystal clusters"
     },
     {
       "id": "crystal/cover-spire",
       "label": "Crystal, spire",
       "kind": "prop",
-      "section": "vegetation/crystals",
+      "section": "props/crystal-clusters",
       "family": "Crystal clusters"
     },
     {
       "id": "crystal/cover-forked",
       "label": "Crystal, forked",
       "kind": "prop",
-      "section": "vegetation/crystals",
+      "section": "props/crystal-clusters",
       "family": "Crystal clusters"
     },
     {
       "id": "crystal/cover-fan",
       "label": "Crystal, fan",
       "kind": "prop",
-      "section": "vegetation/crystals",
+      "section": "props/crystal-clusters",
       "family": "Crystal clusters"
     },
     {
       "id": "crystal/cover-crown",
       "label": "Crystal, crown",
       "kind": "prop",
-      "section": "vegetation/crystals",
+      "section": "props/crystal-clusters",
       "family": "Crystal clusters"
     },
     {
       "id": "crystal/giant-level1",
       "label": "Crystal, level 1",
       "kind": "prop",
-      "section": "vegetation/crystals",
+      "section": "props/giant-crystals",
       "family": "Giant crystals"
     },
     {
       "id": "crystal/giant-level2",
       "label": "Crystal, level 2",
       "kind": "prop",
-      "section": "vegetation/crystals",
+      "section": "props/giant-crystals",
       "family": "Giant crystals"
     },
     {
       "id": "crystal/giant-level3",
       "label": "Crystal, level 3",
       "kind": "prop",
-      "section": "vegetation/crystals",
+      "section": "props/giant-crystals",
       "family": "Giant crystals"
     },
     {
       "id": "crystal/giant-level4",
       "label": "Crystal, level 4",
       "kind": "prop",
-      "section": "vegetation/crystals",
+      "section": "props/giant-crystals",
       "family": "Giant crystals"
     },
     {
       "id": "crystal/giant-level5",
       "label": "Crystal, level 5",
       "kind": "prop",
-      "section": "vegetation/crystals",
+      "section": "props/giant-crystals",
       "family": "Giant crystals"
     },
     {
       "id": "crystal/single-prism",
       "label": "Ruby crystal, prism (level 5)",
       "kind": "prop",
-      "section": "vegetation/crystals",
+      "section": "props/single-crystals",
       "family": "Single crystals"
     },
     {
       "id": "crystal/single-pointed",
       "label": "Ruby crystal, pointed (level 5)",
       "kind": "prop",
-      "section": "vegetation/crystals",
+      "section": "props/single-crystals",
       "family": "Single crystals"
     },
     {
       "id": "crystal/single-oblique",
       "label": "Ruby crystal, oblique (level 5)",
       "kind": "prop",
-      "section": "vegetation/crystals",
+      "section": "props/single-crystals",
       "family": "Single crystals"
     }
   ]

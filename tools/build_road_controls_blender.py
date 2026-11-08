@@ -208,17 +208,14 @@ def export(name, objects_by_level):
         assert triangles == expected, (name, level, triangles)
         counts.append({'node': f'{name}-lod{level}', 'triangles': triangles,
                        'vertices': len(mesh['vertices']) // 12, 'height': max(mesh['vertices'][2::12])})
-    path = write_levels(name, models, 'tools/build_road_controls_blender.py')
+    path = write_levels(name, models)
     return {'file': str(path), 'lods': counts, 'bytes': path.stat().st_size}
 
 
-def write_levels(name, models, source, extras=None):
+def write_levels(name, models):
     """Shared native LOD packaging for pole and gantry signal variants."""
     path = OUTPUT / (name + '.glb')
-    metadata = {'mmAuthoring': {'metresToModelUnits': MODEL_UNITS_PER_METRE,
-                               'front': '+Y', 'base': 'Z=0', 'source': source}}
-    metadata.update(extras or {})
-    write_glb(path, levels=models, extras=metadata)
+    write_glb(path, levels=models)
     if any(material['id'] == 'Amber' for model in models.values() for material in model['materials']):
         # The shared rigid writer has no emissive-material input. Keep the standard
         # glTF emission on this one lamp, without changing its neutral white vertices.

@@ -243,6 +243,7 @@ def normalize_export(name, roots, kind, family, joints, points=None, emitters=No
     for root in roots: mapping.update(dict(root.get('node_names',{})))
     for node in doc['nodes']:
         if node.get('name') in mapping: node['name']=mapping[node['name']]
+        node.pop('extras',None)  # node_names: this export's name map, nothing the game reads.
     binary=raw[28+n:28+n+struct.unpack_from('<I',raw,20+n)[0]]
     # Images reference the board materials' albedo maps instead of travelling inside every GLB.
     embedded=set()

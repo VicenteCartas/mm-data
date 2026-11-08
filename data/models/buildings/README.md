@@ -51,16 +51,15 @@ the notches. This is a fixed model, without repeatable base/floor modules. Only 
 
 Building appearance stores a tint in colour slot 0, using the editor's existing colour picker. White restores the
 original artwork; another colour multiplies only materials marked `mmBuildingPaint` in linear light. Windows,
-roof slabs and equipment keep their own finishes. Mixed atlases use `mmPaintMask` to protect their unpainted regions.
+roof slabs and equipment keep their own finishes. Mixed atlases' `.tres` set `metadata/mmPaintMask` to protect their unpainted regions.
 Connected hexes share the chosen tint. `.board2` version
 3 stores rotation, tint, footprint and kit variant under `components.building.appearance`.
 
 Window emission uses the same day/night control as authored buildings. Shared window `.tres` resources carry
-`metadata/mmNightEmission = true`; their emission fades out in daylight without changing their albedo. Mixed
+`metadata/mmEmission = "night"`; their emission fades out in daylight without changing their albedo. A model's material overrides this with `mmEmission` (`always`, `night` or `off`). Mixed
 wall/window atlases emit only through their window mask, independently of wall tint. The light building's far
-window mask is baked from the near windows via Blender MCP (`tools/buildings/bake_light_paint_mask.py`), then
-exported with Material Maker (`tools/materials/modular_window_lights.py`). Diagnostic kits without windows
-remain unlit.
+window mask is baked from the near windows via Blender MCP (`tools/buildings/bake_light_paint_mask.py`) into the
+`light-far` Material Maker project's sources. Diagnostic kits without windows remain unlit.
 
 `tools/buildings/debug_placeholders.py` supplies flat diagnostic kits for the missing medium/heavy/hardened buildings
 and fortresses, all hangars, and all gun emplacements. They use the light building's `bays` JSON layout and inexpensive
@@ -88,8 +87,8 @@ connections tags its mesh nodes after the module:
 - A symmetric kit tags `n` only (one-tag pieces) or `n` and `ne` (corner pieces, in all four link/end states);
   the runtime turns them by exact 60-degree steps for the other directions. Any other kit tags all six directions
   for every piece.
-- A material whose glTF extras hold `mmBoardUV` (units a repeat) is textured from the board position, along the
-  board's axes, whatever its UVs: a turned or neighbouring piece's floors and roofs run on without a seam.
+- A generated kit's slabs (their `repeat` in the JSON, units a repeat) are textured from the board position, along the
+  board's axes, whatever their UVs: a turned or neighbouring piece's floors and roofs run on without a seam.
 - Every variant of a module type (base, floor, roof) and every LOD has the same tagged pieces. A type may have none:
   a fuel tank's ground pipes stand in its base only. Base and floor modules, tagged pieces included, are exactly
   18 units high; a module stands on its lowest point over all its pieces.
@@ -115,17 +114,32 @@ as the hex appearance `footprint` (`HexAppearance.Footprint`):
 A generated kit (`GeneratedKit`) builds both footprints from its JSON spec: an array of named variants, the first the
 default (one without variants lists one, `default`); each variant's `style` dresses the footprint's walls, `habitat` or
 `bays`. The walls are split where they cross a corner piece's cut, each end a cut, joint, corner (mitred), round or
-open end; bands along a wall (sidewalk, skirt, parapet, eave) are mitred where it turns.
+open end; bands along a wall (sidewalk, skirt, parapet, eave) are mitred where it turns. Where a cut runs slanted across a
+straight wall, both pieces show the same bays there: each lays on, past its cut, the bays the other lays.
 
 A pieces GLB holds the modelled pieces, edited in Blender: each level of detail a root `<name>-pieces-lod<n>` holding
 nodes `<piece>-lod<n>`; a node's position only lays the pieces out side by side, its rotation and scale apply. Board
-units, Z up in the board's terms (glTF Y up), materials named as board materials, vertex colours linear shades. A
-piece's x runs along its wall, left to right seen from outside, from the piece's start; its facade faces -y (Blender's
+units, Z up in the board's terms (glTF Y up), materials named as board materials with their finish (`#paint`,
+`#emission-...`, `#night`, `#emission-off`, as the exporter names them), vertex colours linear shades. The kit draws each
+finish as its own material: lit and dark glass can share one board material. A cutout (alpha mode MASK) stays
+alpha tested, as in an authored GLB, though its board material blends: leaves keep the hover cutaway. Glass on a board
+material that blends is BLEND (the exporter writes it for a transparent `.tres` that is no cutout): drawn blended, casting
+no sun shadow, in kits and authored GLBs alike. A piece's x runs along its wall, left to right seen from outside, from the piece's start; its facade faces -y (Blender's
 front view), the wall line at y 0; z up from its storey's floor.
 
 - `building_light/building_light.json` (`bays`): the light building, its pieces the hand-made art's window bays
   (`tools/buildings/art/building_light_00.glb`), six per module (`base0`, `base1`, `floor0`, `floor1`, `roof0`, the
   roof's carrying the cornice), one pier to pier per 24 of wall; a sidewalk along the ground storey.
+- `civic/civic.json` and `utopia/utopia.json` (`bays`, built with their pieces by `tools/buildings/theme_kits.py`): the
+  civic and Utopia buildings' looks as kits. Civic: brutalist concrete, shops under a deep canopy or a battered plinth at
+  the ground, variants `galleries`, `ribbons` and `offices` (fins), heavy parapets, plant on the roof. Utopia: white
+  stone with rounded corners, an arcade or a planted plinth at the ground, variants `terraces` (rounded slab edges with
+  planters) and `bands` (white bands, fins and slats), roof gardens with skylights, trees, pergolas and pavilions.
+- `frontier/frontier.json` (`bays`, `theme_kits.py`): the Frontier colony's prefab modules, one per hex's storey: blue-grey
+  plating, every module edge bevelled in light steel (modules meet in V grooves at joints, between storeys and across
+  the roof), chamfered steel corners, skids on the ground; variants `habitat` (numbered window modules, airlock),
+  `medical` (teal stripe, MED airlock), `industrial` (louvres, pipes, a roll-up door) and `greenhouse` (dusty frontier glass over the biodome's planted bed);
+  roofs with solar panels, radomes, HVAC units, hatches and beacons.
 - `fortress_light/fortress_light_a.json` (`bays`): the light fortress, its storeys' stretches the art's wall rebuilt
   low-poly to its measurements (`tools/buildings/art/fortress_light_a_52.glb`: panel face, joints, band, window recess
   and frame, door, base course) in the dark wall concrete (`structures/buildings/fortress-wall`, the art's far facade's
@@ -134,13 +148,21 @@ front view), the wall line at y 0; z up from its storey's floor.
 
 A `bays` variant: its `pieces`; the Angled `lone` outline (counter-clockwise from its front) and `bandEnd`; the `roof`
 and `floors` slabs (a board material on the board's axes, its `repeat`, an `inset` off the walls, `heights` per level
-of detail); the ground storey's `sidewalk` (`width`, `kerb`; none without); and its `modules` by role, one run per level
+of detail; a glass roof's `underlay`, the biodome's planted bed just under it); the ground storey's `sidewalk` (`width`, `kerb`; none without); and its `modules` by role, one run per level
 of detail (the last for any further). A run lays whole `bay`s of its `bays` pieces (several: chosen by the wall's place)
 stretched to fit between a `margin` at each end, a ground storey's `door` piece in a hub face's first bay and next to
 the middle of a whole hex's front; with no margin a bay more goes on past an end where the wall goes on. Whole `ends`
 stretches (`piece`, `length`) fill the margins, one `under` stretch lies along the whole wall, and `planar` materials
-are textured along the wall's line (units a repeat). Bay kits are turned: their Angled corner pieces are built once and
-turned by the runtime.
+are textured along the wall's line (units a repeat). `cornerRadius` and `cornerSegments` round convex corners into
+facets, each laid with the run's `round` stretch. A kit of modules (one per hex's storey) gives its wall runs `joints`
+(`start` and `end` pieces, `length`): a wall ends its module, its joint piece there, where a linked hexside goes on past
+it or its outline turns into a joint (Angled: each linked hexside; Square: a north or south link's hexside, and a
+diagonal link's cell, a module of its own, along its column edges), and goes on along a joint that continues it; a
+cap's wall leaves that room to the walls beside it. Its roof runs' `seam` stretch lies along each joint, the roof slab
+kept its `inset` off it, and its roofs come closed above lower neighbours (`-closed-N`) rather than rimmed by caps.
+Roof `fittings` are the habitat's (below); a layout's `pieces` also
+places any named piece (`[x, y, turn in degrees]`), and each roof module comes once per layout. Bay kits without
+fittings are turned: their Angled corner pieces are built once and turned by the runtime.
 - `lunar_habitat/lunar_habitat.json`: the lunar habitat, a kit the game generates from this spec (`HabitatKit`, both
   footprints): facades, steel piers at corners and joints, a battered steel skirt, the roof's edge rounded down into
   the walls (variant `rounded`) or a parapet (`parapet`); convex corners rounded. The spec is an array of named
@@ -169,7 +191,7 @@ buildings. No-floors and sealed buildings omit intermediate floor surfaces from 
 
 Every surface is a board material (`structures/buildings/`, `structures/lunar/`, Material Maker projects in
 `tools/materials/structures/`): the hand-made art's atlases as image projects, the roofs, floors and sidewalks
-tileable on the board's axes (`mmBoardUV`). The fuel tanks are generated:
+tileable on the board's axes (the kit JSON's `repeat`). The fuel tanks are generated:
 `python tools/buildings/fuel_tanks.py [weight ...]`, after the designer's kits (sizes, paint, roof rings). Each kit is
 authored stacked as built (floor at 18, roof at 36) with no coincident surfaces between its pieces. At full detail
 the base carries a nozzle in all six directions; a `link-n` pipe runs from the north one to the edge, and an `end-n`
@@ -190,7 +212,7 @@ projects in `tools/materials/structures/lunar/`); the dome glass is transparent 
 each standing on its origin, its front towards +Y: `tanks`, `plant`, `airlock` (its back on y = 0, against a facade)
 and `pylon` (a dome podium's corner block). It is modelled in Blender:
 `blender -b --factory-startup --python tools/buildings/lunar_equipment.py`. The same script writes board objects, one
-file each: roof props in `board/scenery/roofs/` (`radar-dish`, `capsule-tanks`, `generator-ring`, `radar-station`,
+file each: roof props in `board/scenery/roofs/` (`radar-dish`, `capsule-tanks`, `generator-ring`, `generator-slit`, `twin-pipes`, `edge-spike`, `radar-station`,
 `light-well`, `light-strip`, `solar-array`, `dish-antenna`, `sawtooth-skylight`), the editor's Buildings > Rooftop
 section, and colony details in `board/scenery/colony/` (`pipe-run`, `vent-unit`, `wall-tanks`, `ladder-cage`,
 `light-mast`, `airlock`, `radiator`, `vehicle-gate`; wall-mounted ones with their back on y = 0), the editor's

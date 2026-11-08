@@ -17,7 +17,7 @@
         "y": 190
       },
       "title": "About this material",
-      "text": "Plant texture from sources/palm-frond-cutout.png with its height fields (structure-high/low), 512 px. Pigment edits the colour and cutout; SurfaceResponse the normals, AO, roughness and light transmission. Keep the layout: the models point at its parts. The ...PNG8 groups and the nodes after them only store exact file values; leave them. Export: File > Export material > Godot > Godot 4 Standard into data/models/board/textures/vegetation, then Reload assets in the game's Tuning panel.",
+      "text": "Plant texture from sources/palm-frond-cutout.png with its height fields (structure-high/low), 512 px. Pigment edits the colour and cutout; SurfaceResponse the normals, AO, roughness and light transmission. Keep the layout: the models point at its parts. The ...PNG8 groups and the nodes after them only store exact file values; leave them. Export: File > Export material > Godot > Godot 4 Standard into data/models/board/textures/vegetation, then Reload assets in the game's Tuning panel. Lighten raises the photo so that the plants using it need no vertex colour above 1, which Blender would clip on save; their tints in build_trees.py come down by the same factor, so the result is unchanged.",
       "color": {
         "type": "Color",
         "r": 0.18,
@@ -3040,6 +3040,19 @@
         "y": 700
       },
       "seed_int": 0
+    },
+    {
+      "type": "adjust_hsv",
+      "name": "Lighten",
+      "node_position": {
+        "x": 250,
+        "y": 0
+      },
+      "parameters": {
+        "hue": 0.0,
+        "saturation": 1.0,
+        "value": 1.074
+      }
     }
   ],
   "connections": [
@@ -3047,12 +3060,6 @@
       "from": "Source",
       "from_port": 0,
       "to": "Pigment",
-      "to_port": 0
-    },
-    {
-      "from": "Pigment",
-      "from_port": 0,
-      "to": "AlphaPNG8",
       "to_port": 0
     },
     {
@@ -3210,6 +3217,18 @@
       "from_port": 2,
       "to": "Material",
       "to_port": 8
+    },
+    {
+      "from": "Pigment",
+      "from_port": 0,
+      "to": "Lighten",
+      "to_port": 0
+    },
+    {
+      "from": "Lighten",
+      "from_port": 0,
+      "to": "AlphaPNG8",
+      "to_port": 0
     }
   ]
 }

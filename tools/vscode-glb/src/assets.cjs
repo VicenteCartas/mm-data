@@ -66,8 +66,8 @@ async function loadAsset(file, roots, urlFor = p => p, variant = '', io = fs, by
   }
   const variants = new Set(), surfaces = [];
   for (const [index, material] of (json.materials || []).entries()) {
-    const changes = material.extras?.mmVariants?.[variant];
-    for (const key of Object.keys(material.extras?.mmVariants || {})) variants.add(key);
+    const changes = variant === 'snow' ? material.extras?.mmSnow : undefined;
+    if (material.extras?.mmSnow) variants.add('snow');
     if (changes) {
       if (changes.name) material.name = changes.name;
       for (const [role, uri] of Object.entries(changes.textures || {})) {

@@ -56,10 +56,9 @@ def relocate(source, target):
         if 'uri' in image:
             image['uri'] = moved(image['uri'])
     for material in gltf.get('materials', []):
-        for variant in material.get('extras', {}).get('mmVariants', {}).values():
-            textures = variant.get('textures', {})
-            for role in textures:
-                textures[role] = moved(textures[role])
+        textures = material.get('extras', {}).get('mmSnow', {}).get('textures', {})
+        for role in textures:
+            textures[role] = moved(textures[role])
     text = json.dumps(gltf, separators=(',', ':')).encode()
     text += b' ' * (-len(text) % 4)
     target.parent.mkdir(parents=True, exist_ok=True)

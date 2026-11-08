@@ -1,0 +1,233 @@
+{
+	"connections": [
+		{
+			"from": "slats",
+			"from_port": 0,
+			"to": "albedo",
+			"to_port": 0
+		},
+		{
+			"from": "slats",
+			"from_port": 0,
+			"to": "occlusion",
+			"to_port": 0
+		},
+		{
+			"from": "slats",
+			"from_port": 0,
+			"to": "normal",
+			"to_port": 0
+		},
+		{
+			"from": "albedo",
+			"from_port": 0,
+			"to": "Material",
+			"to_port": 0
+		},
+		{
+			"from": "occlusion",
+			"from_port": 0,
+			"to": "Material",
+			"to_port": 5
+		},
+		{
+			"from": "normal",
+			"from_port": 0,
+			"to": "Material",
+			"to_port": 4
+		}
+	],
+	"label": "Graph",
+	"longdesc": "",
+	"name": "louvre",
+	"node_position": {
+		"x": 0.0,
+		"y": 0.0
+	},
+	"nodes": [
+		{
+			"export_paths": {},
+			"name": "Material",
+			"node_position": {
+				"x": 0.0,
+				"y": 0.0
+			},
+			"parameters": {
+				"albedo_color": {
+					"a": 1.0,
+					"b": 1.0,
+					"g": 1.0,
+					"r": 1.0,
+					"type": "Color"
+				},
+				"ao": 1.0,
+				"depth_scale": 0.5,
+				"emission_energy": 1.0,
+				"flags_transparent": false,
+				"metallic": 0.0,
+				"normal": 1.0,
+				"roughness": 0.6,
+				"size": 6.0,
+				"sss": 0.0
+			},
+			"seed_int": 0,
+			"type": "material"
+		},
+		{
+			"name": "slats",
+			"node_position": {
+				"x": -700.0,
+				"y": 0.0
+			},
+			"parameters": {
+				"mix": 0.0,
+				"x_scale": 1.0,
+				"x_wave": 4.0,
+				"y_scale": 2.0,
+				"y_wave": 3.0
+			},
+			"seed_int": 0,
+			"type": "pattern"
+		},
+		{
+			"name": "albedo",
+			"node_position": {
+				"x": -350.0,
+				"y": -160.0
+			},
+			"parameters": {
+				"gradient": {
+					"interpolation": 1,
+					"points": [
+						{
+							"a": 1.0,
+							"b": 0.0500000007450581,
+							"g": 0.0500000007450581,
+							"pos": 0.0,
+							"r": 0.0500000007450581
+						},
+						{
+							"a": 1.0,
+							"b": 0.0599999986588955,
+							"g": 0.0599999986588955,
+							"pos": 0.28,
+							"r": 0.0599999986588955
+						},
+						{
+							"a": 1.0,
+							"b": 0.419999986886978,
+							"g": 0.419999986886978,
+							"pos": 0.45,
+							"r": 0.419999986886978
+						},
+						{
+							"a": 1.0,
+							"b": 0.779999971389771,
+							"g": 0.779999971389771,
+							"pos": 0.9,
+							"r": 0.779999971389771
+						},
+						{
+							"a": 1.0,
+							"b": 0.920000016689301,
+							"g": 0.920000016689301,
+							"pos": 1.0,
+							"r": 0.920000016689301
+						}
+					],
+					"type": "Gradient"
+				}
+			},
+			"seed_int": 0,
+			"type": "colorize"
+		},
+		{
+			"name": "occlusion",
+			"node_position": {
+				"x": -350.0,
+				"y": 40.0
+			},
+			"parameters": {
+				"gradient": {
+					"interpolation": 1,
+					"points": [
+						{
+							"a": 1.0,
+							"b": 0.200000002980232,
+							"g": 0.200000002980232,
+							"pos": 0.0,
+							"r": 0.200000002980232
+						},
+						{
+							"a": 1.0,
+							"b": 0.349999994039536,
+							"g": 0.349999994039536,
+							"pos": 0.3,
+							"r": 0.349999994039536
+						},
+						{
+							"a": 1.0,
+							"b": 1.0,
+							"g": 1.0,
+							"pos": 0.6,
+							"r": 1.0
+						},
+						{
+							"a": 1.0,
+							"b": 1.0,
+							"g": 1.0,
+							"pos": 1.0,
+							"r": 1.0
+						}
+					],
+					"type": "Gradient"
+				}
+			},
+			"seed_int": 0,
+			"type": "colorize"
+		},
+		{
+			"name": "normal",
+			"node_position": {
+				"x": -350.0,
+				"y": 240.0
+			},
+			"parameters": {
+				"buffer": 1.0,
+				"param2": 0.0,
+				"size": 6.0,
+				"strength": 1.5
+			},
+			"seed_int": 0,
+			"type": "normal_map2"
+		},
+		{
+			"color": {
+				"a": 1.0,
+				"b": 0.0,
+				"g": 0.0,
+				"r": 0.0,
+				"type": "Color"
+			},
+			"name": "About",
+			"node_position": {
+				"x": -700.0,
+				"y": -240.0
+			},
+			"parameters": {},
+			"seed_int": 0,
+			"size": {
+				"x": 300.0,
+				"y": 200.0
+			},
+			"text": "Horizontal louvre slats for walls and plant cages: two per repeat, each sloping back from its lip into the dark gap behind the next one. Lit from above the slat tops catch the light and the gaps stay black. Tint it with the model's colour. For pressed tank vents use vent-slots.",
+			"title": "Louvre",
+			"type": "comment"
+		}
+	],
+	"parameters": {},
+	"project_thumbnail": "UklGRuwEAABXRUJQVlA4WAoAAAAQAAAALwAALwAAQUxQSJQCAAANoCNteyJJevXrV9HAMpNX7Q9UrMd4gGEea5ksZmYGi3n3AG12ZIzVFT0X4BmrrOXdqqiUUlooyNIJImICmFOsBzh//bn89tcvAK6K1C9SVmbLdb1uM1Y0ZXysX6yVaIx1aRmvObyDqe3OZd3edRt/+PQkGmqR5K945gZIFWIwJFLELu3cv/LMWWPifFry8D0QxFomGoxAjK2Dj374ZtIwjxtd9BN4dcwrksL6lzZvGzg/mxtu+gavDeo0msLNn+xZdX4WN7z2PXyHuo36S5fvP+L8NB1teo/QZoEuNIv7VzVMkvKibwgtFqqhubxnIHFC4id8mwWrv/STbYn/q38Y32Hhzt+8+U0NIOUV96BkqLz04VmJSHwa38jB+PWPPCtRymtuQMlSObhyUmx1GN/Iw/jOvk+tNzuwZGrZ+UPJFlI2kpY2rnEdVTZU9rqCHln3+nSRfITusfObmHwMl43XR7LuyLkVJh9Du0n2vzXbyWSTzGj8l3TIeRh/GV+WTDbJDOBYN0o2UY5Bv0fOfSius/lYCljbuBQlk2iP/YErf9hZ2Uwq+z2u4tN9nWSySA3/FVXUkysHg2YR9HO0JPLsI+uTySA1xq8QIerZD18KmkHQx9ASCObNzTd7tzDfKY4az/9N2vbJpUEXFNo/34lJE6IO9iw3gy4ktKo70JLJwa3eXzS9W4BvV9fhRkz37sj9y5d6NTWl0Pn5DtyQWb1b3fPJzXg1NaTQ0OJO3JDZvQ62bX5pPUFkjhidjh87io6YN0h688NHD7ZIFWIwJFLEWgmfv4wxJfNH9OwzK/t3LlkmGozAse+/BPWJWoPIyU9/2Hhdr3tZp81oODjWL/4AjSV1xyi2XCv6x8bSZBz5v6tKZgdWUDggMgIAAHAMAJ0BKjAAMAA+kTqXSCWjIiEuOAswsBIJaQDMX7FSqyQf832gR6T9grybvWJ+xnsV/syVaKNoDQt51X2qd8Ic7OcM1+hP7LXp9cnh7vdfko97i66W+ajJRy1fcdIuB1oN/gvBeWLRbWQAAAD+/hNm6cXrpSsywXeVz91pJDJCkFN1jBbUa0IG2twvfRdlkw8Nyq8OWAFNjTqrjW6PZCEnuzDw4b6+wkwI5HVJweyRVdgCBePx34sTrmRoeMNuO12BcXHUtW+N9hHOc3Z2RRAIVM8xXT5X4L+YYG9iTnmvY/CgKgtsnz2ZYila5jxt+7D9+XBpDV3HYCC/ydkdZZHBP2To+Dgdff/FkAs8uYc4zp4Fnd2vcHqJa3T/967fKq+XzCV5cn4QnP8hrxCHVkgU9V9LvWwDa/y/fQns6Z9e5zFIh37IaV6Ob52lzmP8Pz9WsDi8dlUPYdkJUdHRA5lm+wJhe7/lyf/zv2Wf5WuOpT9o4GrHKNv+/tUtgY/sEWjfL2F2T6r9jtl+tyZwa+p/3kbh/8+pZ0L8Ss6bYJJQHTEoRJ4XZgcfZTEuorKu/tye0ozDsQv2TQcxBBzuALclU2ISM35Vi1rcdEMYAfSgkU/1rQUhxoszoGorG8mUgaKh0jMYpUxz9Uk8bNXSR8V7AVtP4hnOwVy7HghZrFxR7cCzyfEOAzOB5rrl+Bb8D2o3L9vzw/olo5rx3rw70FxoAHJWOEB9G4/by2SrSAYaAAA=",
+	"seed_int": 0,
+	"shortdesc": "",
+	"type": "graph"
+}

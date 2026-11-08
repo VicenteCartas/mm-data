@@ -3,8 +3,8 @@
 Blender 5.2 add-on for assigning the shared Material Maker materials and editing the
 rigid GLBs in `mm-data`. Tested with Blender 5.2.2 on Windows.
 
-Version 1.4.1 keeps a white colour multiplier on meshes without vertex-colour attributes, including after refresh.
-For materials marked `mmPaintMask`, albedo alpha selects the vertex paint and is never treated as transparency.
+Version 1.6.0. Meshes without vertex-colour attributes keep a white colour multiplier, including after refresh.
+For materials whose `.tres` sets `metadata/mmPaintMask`, albedo alpha selects the vertex paint and is never treated as transparency.
 
 ## Install
 
@@ -93,6 +93,10 @@ the game discovers the adjacent `.tres` and supplies the remaining maps and fact
 Blender shader edits to these managed materials are preview-only and are replaced by
 Reload. Change their finish in Material Maker.
 
+A building kit draws its `<kit>-pieces.glb` materials as the library materials their albedo images belong to, whatever
+they are called, so saving such a file refuses any other material. The kit's JSON sets the roof, floor and
+sidewalk materials.
+
 Previews include albedo/tint, roughness/metallic map channels and factors, OpenGL normal
 maps and strength, emission, approximate SSS, vertex colour, and alpha cutouts. AO is
 loaded for inspection; Principled has no AO input. Height/parallax and custom Godot
@@ -122,6 +126,37 @@ reproduced by Material Preview.
 
 Save texture-paint edits to their images before saving a managed GLB; the add-on checks
 for unsaved image edits. Reload discards those edits and reads the images from disk.
+
+## Game properties
+
+**N → MegaMek → Game Properties** edits the glTF extras the engine reads. Material and mesh values stay custom
+properties, so the GLB holds what the panel shows; a switched-off value leaves no extra behind. The Material section
+acts on the active slot, and its copies on selected meshes follow, because assigning makes one per object.
+
+| Control | Extra | Effect |
+| --- | --- | --- |
+| Building Tint | `mmBuildingPaint` | Takes the colour chosen for the building |
+| Paint Mask | `mmPaintMask` | Only for an image of the GLB's own: its alpha marks what a colour slot paints. A library material's `.tres` says this itself (`metadata/mmPaintMask`) |
+| Emission | `mmEmission` | From Material (no extra: what the `.tres` says, else always); Always (`always`), lit by day even if its `.tres` is night-only; Night Only (`night`); Off (`off`) |
+| Colour | `emissiveFactor` | The emission's linear RGB; black keeps a library material's own glow |
+| Label | `mmLabel` | Each quad is one character of the unit number, from the label atlas |
+| Part Name | `mmPart` | Names this material's part of the mesh; refused at Save if repeated in a level of detail |
+| Snow Form | `mmSnow` | The winter form's material name, images under `data/models`, and colour scale |
+
+Label, Part Name and Snow Form are under **Advanced**. A kit's pieces do not use Label. A snow form's per-vertex
+`colours` are kept but not edited here.
+
+Assigning from the browser keeps Building Tint: Object Mode copies the slot's material, and Edit Mode sets it when any
+selected face's material has it. Choosing a material from Blender's own slot list takes that material's values.
+
+**Colour Slots** (`mmColourSlots`, up to four): each has a name, a default colour and presets. **Assign Selected** marks
+the selected vertices (all of the selected meshes in Object Mode) in the `_COLOUR_SLOT` attribute and paints them the
+default colour, which the game reads as their shade of 1. Changing a default repaints its vertices and keeps their
+shade; removing a slot renumbers the ones after it. **Clear Selected** removes vertices from their slot and leaves their
+colour.
+
+**Night Lights** (`mmNightLights`): a position in Blender's coordinates, which are the board's, a linear colour, and a
+positive power and size. Other extras of the file are kept and listed; the game does not read them.
 
 ## Test an asset inside Blender
 
@@ -207,6 +242,9 @@ writable directory when running inside a restricted shell.
 Run `test_new_mesh.py` with the same Blender arguments for the fresh-scene workflow:
 preferences-based library discovery, assigning to a new cube, selection-only export
 from Edit Mode, automatic LOD0, external textures, white colour defaults, and re-import.
+
+`test_game_properties.py` checks the Game Properties controls against the saved GLB, and every shipped file's colour
+slots and night lights through them.
 
 `test_palette.py` checks bounded pagination with every material reachable, filter/page
 resets, selection retention on refresh, visual-library discovery, optional

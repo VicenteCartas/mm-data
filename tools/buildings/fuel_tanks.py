@@ -32,6 +32,7 @@ REPEAT = {'paint': 24.0, 'steel': 12.0, 'vent': 8.0}
 VENT = 8.0
 TEXTURES = os.path.relpath(MODELS / 'board/textures', OUT).replace(os.sep, '/') + '/'
 MATERIALS = [{'id': kind, 'diffuse': [1, 1, 1], 'roughness': 1, 'metallic': 0,
+              'extras': {'mmBuildingPaint': True} if kind == 'paint' else {},
               'textures': [{'type': 'DIFFUSE', 'filename': f'{TEXTURES}{name}_albedo.png'}]}
              for kind, name in BOARD_MATERIALS.items()]
 # Display tints over the shared materials' mean albedo, measured from the designer's atlases.

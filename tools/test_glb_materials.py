@@ -97,5 +97,51 @@ class GlbMaterialsTest(unittest.TestCase):
                         write_glb(path, {**model, 'materials': [{**material, key: value}]})
 
 
+class GlbColourRangeTest(unittest.TestCase):
+    """Blender's exporter clips vertex colours to 0..1, so a stored value above 1 would change when an author saves the file."""
+
+    @staticmethod
+    def stored(path):
+        raw = path.read_bytes()
+        length = struct.unpack_from('<I', raw, 12)[0]
+        doc = json.loads(raw[20:20 + length])
+        return raw, length, doc
+
+    def test_colours_above_one_are_fitted_keeping_each_parts_average(self):
+        # A quad: half of its surface at 1.2, half at .4, in linear values.
+        colours = [(1.2, .3, .4, 1), (1.2, .3, .4, 1), (.4, .3, .4, 1), (.4, .3, .4, 1)]
+        points = ((0, 0, 0), (1, 0, 0), (1, 1, 0), (0, 1, 0))
+        vertices = [value for p, c in zip(points, colours) for value in (*p, 0, 0, 1, *c, 0, 0)]
+        mesh = {'id': 'quad', 'attributes': ['POSITION', 'NORMAL', 'COLOR', 'TEXCOORD0'], 'vertices': vertices,
+                'parts': [{'id': 'quad', 'type': 'TRIANGLES', 'indices': [0, 1, 2, 0, 2, 3]}]}
+        model = {'nodes': [{'id': 'quad', 'parts': [{'meshpartid': 'quad', 'materialid': 'm'}]}], 'meshes': [mesh],
+                 'materials': [{'id': 'm'}]}
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / 'quad.glb'
+            write_glb(path, model, linear_colors=True)
+            loaded = read_glb(path, linear_colors=True)['meshes'][0]['vertices']
+        red = loaded[6::12]
+        self.assertAlmostEqual(1, max(red), places=6)
+        self.assertAlmostEqual(.8, sum(red) / 4, places=4)
+        self.assertAlmostEqual(.3, loaded[7], places=6)
+
+    def test_no_stored_model_holds_a_colour_outside_what_blender_keeps(self):
+        over = []
+        for path in sorted((Path(__file__).resolve().parents[1] / 'data/models').rglob('*.glb')):
+            raw, length, doc = self.stored(path)
+            for index in {p['attributes']['COLOR_0'] for mesh in doc.get('meshes', []) for p in mesh['primitives']
+                          if 'COLOR_0' in p['attributes']}:
+                accessor = doc['accessors'][index]
+                if accessor['componentType'] != 5126:
+                    continue
+                view = doc['bufferViews'][accessor['bufferView']]
+                start = 28 + length + view.get('byteOffset', 0) + accessor.get('byteOffset', 0)
+                width = {'VEC3': 3, 'VEC4': 4}[accessor['type']]
+                values = struct.unpack_from(f"<{accessor['count'] * width}f", raw, start)
+                if values and (max(values) > 1.0001 or min(values) < -.0001):
+                    over.append(f'{path.name}: {min(values):.3f} to {max(values):.3f}')
+        self.assertEqual([], over)
+
+
 if __name__ == '__main__':
     unittest.main()

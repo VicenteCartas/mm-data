@@ -2,7 +2,7 @@
 bl_info = {
     'name': 'MegaMek Materials & GLB',
     'author': 'MegaMek contributors',
-    'version': (1, 4, 1),
+    'version': (1, 6, 0),
     'blender': (5, 2, 0),
     'location': '3D View > Sidebar > MegaMek / MM Materials',
     'description': 'Assign Material Maker .tres materials and save GLBs with shared external textures',
@@ -24,6 +24,7 @@ import bpy
 from bpy.props import StringProperty, CollectionProperty, PointerProperty, EnumProperty
 from bpy_extras.io_utils import ImportHelper, ExportHelper
 
+from . import game_properties
 from . import glb
 from . import testing
 from . import palette
@@ -98,11 +99,8 @@ class glTF2ImportUserExtension:
         if not _import_path:
             return
         remember_name(source, material)
-        variant_paths = {}
-        for name, variant in (source.extras or {}).get('mmVariants', {}).items():
-            variant_paths[name] = {role: str(glb.image_path(_import_path, uri))
-                                   for role, uri in variant.get('textures', {}).items()}
-        material['_mm_variant_paths'] = json.dumps(variant_paths)
+        material['_mm_snow_paths'] = json.dumps({role: str(glb.image_path(_import_path, uri)) for role, uri
+                                                 in (source.extras or {}).get('mmSnow', {}).get('textures', {}).items()})
         material['_mm_surface'] = json.dumps({k: v for k, v in source.to_dict().items()
                                               if k in ('alphaMode', 'alphaCutoff', 'doubleSided') and v is not None})
         pbr = source.pbr_metallic_roughness
@@ -116,12 +114,9 @@ class glTF2ImportUserExtension:
                 material['_mm_sampler'] = json.dumps(gltf.data.samplers[texture.sampler].to_dict())
             image = gltf.data.images[texture.source]
             if image.uri and not image.uri.startswith('data:'):
-                path = glb.image_path(_import_path, image.uri)
-                if path.name.endswith('_albedo.png'):
-                    resource = path.with_name(path.name[:-11] + '.tres')
-                    root = textures_root(bpy.context)
-                    if resource.is_relative_to(root) and resource.is_file():
-                        material['_mm_tres'] = resource.relative_to(root).as_posix()
+                resource = glb.library_resource(glb.image_path(_import_path, image.uri), textures_root(bpy.context))
+                if resource:
+                    material['_mm_tres'] = resource
         if material.get('_mm_tres') and (source.emissive_texture or any(source.emissive_factor or [])):
             material['_mm_model_emission'] = True
             material['_mm_emission_factor'] = source.emissive_factor or [0, 0, 0]
@@ -188,11 +183,10 @@ class glTF2ExportUserExtension:
         if not _export_path:
             return
         material.name = export_name(source)
-        for name, paths in json.loads(source.get('_mm_variant_paths', '{}')).items():
-            if material.extras and name in material.extras.get('mmVariants', {}):
-                material.extras['mmVariants'][name]['textures'] = {
-                    role: quote(os.path.relpath(path, _export_path.parent).replace(os.sep, '/'), safe='/')
-                    for role, path in paths.items()}
+        if material.extras and 'mmSnow' in material.extras:
+            material.extras['mmSnow']['textures'] = {
+                role: quote(os.path.relpath(path, _export_path.parent).replace(os.sep, '/'), safe='/')
+                for role, path in json.loads(source.get('_mm_snow_paths', '{}')).items()}
         resource = source.get('_mm_tres')
         if not resource:
             return
@@ -211,14 +205,16 @@ class glTF2ExportUserExtension:
                 original.get('baseColorFactor', [1, 1, 1, 1]), io.TextureInfo(None, None, texture, 0),
                 None, None, 0, None, 1)
             material.normal_texture = material.occlusion_texture = None
-            if not source.get('_mm_model_emission'):
+            if source.get('_mm_model_emission'):
+                material.emissive_factor = list(source['_mm_emission_factor'])
+            else:
                 material.emissive_texture = None
                 material.emissive_factor = None
             material.extensions = ({key: value for key, value in (material.extensions or {}).items()
                                     if key == 'KHR_materials_emissive_strength'} or None
                                    if source.get('_mm_model_emission') else None)
             material.alpha_mode = original.get('alphaMode', 'MASK' if spec['transparent'] else 'OPAQUE')
-            if source.get('mmPaintMask'):
+            if spec['paint_mask']:
                 material.alpha_mode = 'OPAQUE'
             material.alpha_cutoff = original.get('alphaCutoff', spec['alpha_cutoff']) if material.alpha_mode == 'MASK' else None
             material.double_sided = original.get('doubleSided', spec['double_sided'])
@@ -282,6 +278,7 @@ def open_glb(context, filepath):
         scene.mm_materials.source = str(path)
         scene.mm_materials.source_hash = hashlib.sha256(path.read_bytes()).hexdigest()
         scene.mm_materials.root_extras = json.dumps(doc.get('extras', {}))
+        game_properties.load_file_extras(scene.mm_materials, doc.get('extras', {}))
         refresh_materials(context)
         preview_lod(scene.mm_materials, context)
         context.view_layer.update()
@@ -356,6 +353,7 @@ def save_glb(context, filepath, *, selected=False, snapshot=False):
     prior_mode = context.object.mode if context.object else 'OBJECT'
     if prior_mode != 'OBJECT':
         bpy.ops.object.mode_set(mode='OBJECT')
+    game_properties.sync_colours(context.scene)
     _hook_errors.clear()
     try:
         # Hooks resolve shared images against the final path, independent of the staging directory.
@@ -373,7 +371,7 @@ def save_glb(context, filepath, *, selected=False, snapshot=False):
             if result != {'FINISHED'} or _hook_errors:
                 raise ValueError('; '.join(_hook_errors) or 'Blender could not export this scene')
             doc, binary = glb.read_glb(staged)
-            extras = json.loads(state.root_extras or '{}')
+            extras = game_properties.file_extras(state)
             if extras:
                 doc['extras'] = extras
             glb.strip_editor_properties(doc)
@@ -425,6 +423,8 @@ class MMState(bpy.types.PropertyGroup):
     export_path: StringProperty(subtype='FILE_PATH')
     export_hash: StringProperty()
     root_extras: StringProperty(default='{}')
+    colour_slots: CollectionProperty(type=game_properties.MMColourSlot)
+    night_lights: CollectionProperty(type=game_properties.MMNightLight)
     materials: CollectionProperty(type=MMEntry)
     material: StringProperty(name='Material')
     lod: EnumProperty(name='Preview LOD', default='0', update=preview_lod,
@@ -501,10 +501,16 @@ class MM_OT_assign(bpy.types.Operator):
                     if not faces:
                         continue
                     mat = bpy.data.materials.new(path.stem)
+                    # The faces keep their building tint, as a replaced slot's copy does.
+                    slots = obj.data.materials
+                    if any(slots[index] and slots[index].get('mmBuildingPaint')
+                           for index in {face.material_index for face in faces} if index < len(slots)):
+                        mat['mmBuildingPaint'] = True
                     build_preview(mat, path, root, vertex_colors=obj.data.color_attributes.active_color is not None)
                     obj.data.materials.append(mat)
+                    obj.active_material_index = len(obj.data.materials) - 1
                     for face in faces:
-                        face.material_index = len(obj.data.materials) - 1
+                        face.material_index = obj.active_material_index
                     bmesh.update_edit_mesh(obj.data)
                 else:
                     # A new material retains this slot's gameplay role but does not change unselected users.
@@ -515,6 +521,7 @@ class MM_OT_assign(bpy.types.Operator):
                     if old:
                         mat['_mm_original_name'] = export_name(old)
                         mat['_mm_import_name'] = mat.name
+                        mat.pop('mmPaintMask', None)  # The .tres says whether a library material's alpha is a mask.
                     surface = json.loads(mat.get('_mm_surface', '{}'))
                     surface.update(alphaMode='MASK' if spec['transparent'] else 'OPAQUE',
                                    alphaCutoff=spec['alpha_cutoff'], doubleSided=spec['double_sided'])
@@ -665,7 +672,7 @@ class MM_PT_panel(bpy.types.Panel):
         layout.label(text='Save .blend separately to keep editor state.')
 
 
-_classes = (MMPreferences, MMEntry, MMState, MM_OT_catalog, MM_OT_default_folder, MM_OT_assign, MM_OT_reload,
+_classes = (*game_properties.GROUPS, MMPreferences, MMEntry, MMState, MM_OT_catalog, MM_OT_default_folder, MM_OT_assign, MM_OT_reload,
             MM_OT_open, MM_OT_save_as, MM_OT_export_selected, MM_OT_save, MM_PT_panel)
 
 
@@ -675,9 +682,11 @@ def register():
     bpy.types.Scene.mm_materials = PointerProperty(type=MMState)
     testing.register()
     palette.register()
+    game_properties.register()
 
 
 def unregister():
+    game_properties.unregister()
     palette.unregister()
     testing.unregister()
     del bpy.types.Scene.mm_materials

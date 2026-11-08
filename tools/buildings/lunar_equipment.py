@@ -29,15 +29,21 @@ OUT = MODELS / 'buildings/multihex'
 ROOFS = MODELS / 'board/scenery/roofs'
 COLONY = MODELS / 'board/scenery/colony'
 BOARD = {'paint': 'structures/lunar/dome-frame', 'steel': 'structures/common/steel',
+         'shell': 'structures/common/matte-steel', 'plate': 'structures/common/matte-steel',
          'grille': 'structures/common/grille', 'hazard': 'structures/common/hazard-stripes',
          'cells': 'structures/lunar/solar-cells', 'glass': 'structures/lunar/skylight-glass',
          'dark': 'structures/lunar/habitat-pier', 'beacon': 'structures/lunar/skylight-glass'}
 # Board units one texture repeat covers.
 REPEAT = {'paint': 12.0, 'steel': 8.0, 'grille': 5.2, 'hazard': 6.0, 'cells': 6.5, 'glass': 10.0, 'dark': 12.0,
-          'beacon': 10.0}
+          'beacon': 10.0, 'shell': 8.0, 'core': 10.0, 'plate': 12.0}
 TINT = {'paint': (1, 1, 1), 'steel': (.82, .82, .84), 'grille': (.75, .75, .76), 'hazard': (1, 1, 1),
-        'cells': (1, 1, 1), 'glass': (1, 1, 1), 'dark': (1, 1, 1), 'beacon': (1, .25, .2)}
+        'cells': (1, 1, 1), 'glass': (1, 1, 1), 'dark': (1, 1, 1), 'beacon': (1, .25, .2), 'plate': (.92, .92, .89)}
 DUST = (.62, .58, .53)
+# The kinds a placement can recolour, in slot order. A slot's default colour is its kind's tint.
+COLOUR_SLOTS = {'shell': {'name': 'Shell', 'colour': '#3c3f44', 'presets': [['Charcoal', '#3c3f44'], ['Steel', '#c4c8cc'], ['Roof', '#b0a997']]},
+                'core': {'name': 'Glow', 'colour': '#366383',
+                         'presets': [['Blue', '#366383'], ['Cyan', '#478a98'], ['Amber', '#8a5a18'], ['Red', '#8a241c'], ['Green', '#2c7a44']]}}
+TINT.update({kind: tuple(int(slot['colour'][i:i + 2], 16) / 255 for i in (1, 3, 5)) for kind, slot in COLOUR_SLOTS.items()})
 
 
 def reset():
@@ -79,6 +85,17 @@ def cylinder(kind, start, end, radius, sides, bevel=0.0, cap=True):
     obj.rotation_mode = 'QUATERNION'
     obj.rotation_quaternion = Vector((0, 0, 1)).rotation_difference(axis.normalized())
     return solid(obj, kind, bevel, segments=3, smooth=math.radians(50))
+
+
+def cone(kind, start, end, radius, sides):
+    start, end = Vector(start), Vector(end)
+    axis = end - start
+    bpy.ops.mesh.primitive_cone_add(vertices=sides, radius1=radius, radius2=0, depth=axis.length, location=(start + end) / 2,
+                                    end_fill_type='NGON')
+    obj = bpy.context.active_object
+    obj.rotation_mode = 'QUATERNION'
+    obj.rotation_quaternion = Vector((0, 0, 1)).rotation_difference(axis.normalized())
+    return solid(obj, kind, smooth=math.radians(50))
 
 
 def cap(kind, centre, radius, depth, sides, rings, rotation=(0, 0, 0)):
@@ -316,35 +333,144 @@ def vehicle_gate(lod):
     return Vector((24, 10))
 
 
-def generator_ring(lod):
-    # The printed lunar map's generator: an upright half ring on a base plate, lit cyan panels round its rim (from
-    # above, an oval banded in cyan), a disc and hub inside it, radiator boxes with grille tops at both ends, a ribbed
-    # feed pipe and canisters. Low enough (6 high) for the board to stretch it and keep it under half a level.
-    arc = 9 if lod == 0 else 5
-    outer, inner, depth = 6.0, 4.2, 5.4
-    for k in range(arc):
-        a0, a1 = math.pi * k / arc, math.pi * (k + 1) / arc
-        middle = (a0 + a1) / 2
-        span = 2 * outer * math.sin((a1 - a0) / 2) + .15
-        r = (outer + inner) / 2
-        centre = (r * math.cos(middle), 0, r * math.sin(middle))
-        box('paint', centre, (span, depth, outer - inner), rotation=(0, -middle + math.pi / 2, 0))
-        if 0 < k < arc - 1:
-            out = outer + .05
-            box('glass', (out * math.cos(middle), 0, out * math.sin(middle)), (span * .7, depth * .8, .12),
-                rotation=(0, -middle + math.pi / 2, 0))
-    cylinder('dark', (0, -1.8, 0), (0, 1.8, 0), inner, 24 if lod == 0 else 10)
-    cylinder('steel', (0, -2.2, 0), (0, 2.2, 0), 1.2, 12 if lod == 0 else 6)
-    for x in (-8.3, 8.3):
-        box('paint', (x, 0, 1.6), (3.6, 4.8, 3.2), bevel=.12 if lod == 0 else 0)
-        box('grille', (x, 0, 3.22), (3.0, 4.0, .04))
-    box('dark', (0, 0, .2), (21.0, 7.0, .4))
-    if lod == 0:
-        for k in range(4):
-            cylinder('steel', (2.6, -3.1 + k * .05, .4 + k * .7), (2.6, -3.1 + k * .05, .9 + k * .7), .75, 10)
-        for x in (-10.0, -9.0):
-            cylinder('steel', (x, 3.0, .4), (x, 3.0, 1.4), .45, 8)
+def generator_ring(lod, slit=False, deep=.35, printed=True):
+    # The printed lunar map's generator: a long, low, dark arch on its Y axis, closed at both side faces, with a hub
+    # where the shaft passes. Ventilation cuts `deep` through it run along the axis, so from above it is an oval banded
+    # in cyan; through them shows the lit core inside, the only part that glows. `slit` makes one long cut along the
+    # centre instead, as on the map's small units. `printed` draws the Lunar Base map's forms: near-equal rounded slots, and
+    # a line that keeps its width over a pale band across the middle. Cheap on purpose: no undersides, each cut on a
+    # segment boundary, no bevels. LOD1 drops the cuts' walls unless it is a slit.
+    full = lod == 0
+    half, height = 10.5, 3.6
+    radius = (half * half + height * height) / (2 * height)
+
+    def rise(x):
+        return math.sqrt(radius * radius - x * x) - (radius - height)
+    if slit:
+        cuts, reach = [(-.76, .76)], .55
+        rows = {-1, -.76, -.38, 0, .38, .76, 1} | ({-.72, -.57, -.16, .16, .57, .72} if printed else set())
+    else:
+        cuts, reach = [(c - w, c + w) for c, w in ((-.63, .036), (-.44, .045), (-.235, .052), (0, .06), (.235, .052),
+                                                   (.44, .045), (.63, .036))], 1.9
+        rows = {edge for cut in cuts for edge in cut} | {-1, -.83, .83, 1}
+    rows = sorted(rows)
+    across = ([(-3.0, .91, .7), (-2.16, 1, .95), (-reach, 1, 1), (reach, 1, 1), (2.16, 1, .95), (3.0, .91, .7)]
+              if full else [(-3.0, .91, .7), (-reach, 1, 1), (reach, 1, 1), (3.0, .91, .7)])
+    walls = full or slit
+    floor = deep + .03
+    meshes = {}
+
+    def face(kind, *corners):
+        points, index, faces = meshes.setdefault(kind, ([], {}, []))
+        loop = []
+        for corner in corners:
+            at = tuple(round(c, 4) for c in corner)
+            if at not in index:
+                index[at] = len(points)
+                points.append(at)
+            loop.append(index[at])
+        faces.append(tuple(loop))
+
+    def skin(f, y, stretch=1, lift=1, drop=0):
+        return f * half * stretch, y, rise(f * half) * lift - drop
+
+    def lens(f):
+        # The map's line keeps its width to rounded ends; plain, a lens.
+        return reach * .92 * (1 if printed and abs(f) < .72 else math.sqrt(max(0, 1 - (f / (cuts[0][1] + .02)) ** 2)))
+    # The arch, crowned across its width and narrower at its edges, open at each cut down to the core.
+    middle = len(across) // 2 - 1
+    for a, b in zip(rows, rows[1:]):
+        cut = any(c0 <= a and b <= c1 for c0, c1 in cuts)
+        for j, (s0, s1) in enumerate(zip(across, across[1:])):
+            if not (cut and j == middle):
+                banded = slit and printed and abs(a + b) < .32 and (j in (1, 3) or not full)
+                face('plate' if banded else 'shell', skin(a, *s0), skin(b, *s0), skin(b, *s1), skin(a, *s1))
+        if cut and walls:
+            face('shell', skin(a, -reach), skin(b, -reach), skin(b, -reach, drop=floor), skin(a, -reach, drop=floor))
+            face('shell', skin(a, reach, drop=floor), skin(b, reach, drop=floor), skin(b, reach), skin(a, reach))
+            # A dark floor round the lit core's lens shape, which is all the cut shows.
+            face('shell', skin(a, -reach, drop=floor), skin(b, -reach, drop=floor), skin(b, reach, drop=floor), skin(a, reach, drop=floor))
+        if cut and slit:
+            face('core', skin(a, -lens(a), drop=deep), skin(b, -lens(b), drop=deep), skin(b, lens(b), drop=deep), skin(a, lens(a), drop=deep))
+    for c0, c1 in cuts:
+        if not slit and full:
+            # An oval of lit core, widest at the arch's crown.
+            c, half_cut = (c0 + c1) / 2, (c1 - c0) / 2
+            wide = reach * .96 * (1 - (.18 if printed else .45) * (c / cuts[-1][1]) ** 2)
+            sides, power = (12, .55) if printed else (10, 1)
+            face('core', *(skin(c + half_cut * math.copysign(abs(math.cos(k * math.tau / sides)) ** power, math.cos(k * math.tau / sides)),
+                                wide * math.copysign(abs(math.sin(k * math.tau / sides)) ** power, math.sin(k * math.tau / sides)), drop=deep)
+                           for k in range(sides)))
+        elif not slit:
+            face('core', skin(c0, -reach - deep, drop=deep), skin(c1, -reach - deep, drop=deep), skin(c1, reach + deep, drop=deep), skin(c0, reach + deep, drop=deep))
+        if walls:
+            face('shell', skin(c0, -reach, drop=floor), skin(c0, reach, drop=floor), skin(c0, reach), skin(c0, -reach))
+            face('shell', skin(c1, -reach), skin(c1, reach), skin(c1, reach, drop=floor), skin(c1, -reach, drop=floor))
+    # Closed side faces, each with a modest half-round hub where the shaft passes.
+    face('shell', *(skin(f, *across[-1]) for f in rows))
+    face('shell', *(skin(f, *across[0]) for f in reversed(rows)))
+    steps = 6 if full else 4
+    arc = [(-4.3 * math.cos(k * math.pi / steps), 1.9 * math.sin(k * math.pi / steps)) for k in range(steps + 1)]
+    # The map's small units join their neighbours through these hubs.
+    hub = 3.75 if slit and printed else 3.5
+    for y0, y1, cap in ((3.0, hub, hub), (-hub, -3.0, -hub)):
+        for (x0, z0), (x1, z1) in zip(arc, arc[1:]):
+            face('shell', (x0, y0, z0), (x1, y0, z1), (x1, y1, z1), (x0, y1, z0))
+        face('shell', *((x, cap, z) for x, z in (arc if cap > 0 else reversed(arc))))
+    for kind, (points, _, faces) in meshes.items():
+        data = bpy.data.meshes.new(kind)
+        data.from_pydata(points, [], faces)
+        data.update()
+        obj = bpy.data.objects.new(kind, data)
+        bpy.context.collection.objects.link(obj)
+        solid(obj, kind, smooth=math.radians(35))
     return Vector((21, 7))
+
+
+def twin_pipes(lod):
+    # The printed lunar map's pair of roof pipes along Y beside a generator bank: two collars, risers at their north end.
+    sides, z = (12 if lod == 0 else 6), 4.5
+    for x in (-3.2, 3.2):
+        cylinder('plate', (x, -44, z), (x, 44, z), 1.0, sides)
+        cylinder('plate', (x, 44, 0), (x, 44, z + .6), 1.7, sides)
+        cylinder('plate', (x, -44, 0), (x, -44, z), 1.0, sides)
+    for y in (0, -31.5):
+        cylinder('plate', (-7, y, z), (7, y, z), 2.4, sides)
+        if lod == 0:
+            box('dark', (0, y, z / 2), (8, 2.2, z))
+    return Vector((14, 90))
+
+
+def edge_spike(lod):
+    # The printed lunar map's pointed fitting on a roof's edge: its base on the roof, its point out along +Y past the wall.
+    sides = 10 if lod == 0 else 6
+    box('dark', (0, 0, 1.6), (7, 6, 3.2), bevel=.25 if lod == 0 else 0)
+    cylinder('dark', (0, 3, 2.2), (0, 6, 2.2), 2.6, sides)
+    cone('dark', (0, 6, 2.2), (0, 14, 2.2), 2.6, sides)
+    return Vector((7, 17))
+
+
+def twin_pipes(lod):
+    # The printed lunar map's pair of roof pipes along Y beside a generator bank: two collars, risers at their north end.
+    sides, z = (12 if lod == 0 else 6), 4.5
+    for x in (-3.2, 3.2):
+        cylinder('plate', (x, -44, z), (x, 44, z), 1.0, sides)
+        cylinder('plate', (x, 44, 0), (x, 44, z + .6), 1.7, sides)
+        cylinder('plate', (x, -44, 0), (x, -44, z), 1.0, sides)
+    for y in (0, -31.5):
+        cylinder('plate', (-7, y, z), (7, y, z), 2.4, sides)
+        if lod == 0:
+            box('dark', (0, y, z / 2), (8, 2.2, z))
+    return Vector((14, 90))
+
+
+def edge_spike(lod):
+    # The printed lunar map's pointed fitting on a roof's edge: its base on the roof, its point out along +Y past the wall.
+    sides = 10 if lod == 0 else 6
+    box('dark', (0, 0, 1.6), (7, 6, 3.2), bevel=.25 if lod == 0 else 0)
+    cylinder('dark', (0, 3, 2.2), (0, 6, 2.2), 2.6, sides)
+    cone('dark', (0, 6, 2.2), (0, 17, 2.2), 2.6, sides)
+    return Vector((7, 20))
 
 
 def radar_station(lod):
@@ -416,6 +542,8 @@ def sawtooth_skylight(lod):
 
 # Roof props: board objects of their own (models/board/scenery/roofs/<name>.glb).
 ROOF_PROPS = {'radar-dish': radar_dish, 'capsule-tanks': capsule_tanks, 'generator-ring': generator_ring,
+              'generator-slit': lambda lod: generator_ring(lod, slit=True, deep=.5),
+              'twin-pipes': twin_pipes, 'edge-spike': edge_spike,
               'radar-station': radar_station, 'light-well': light_well, 'light-strip': light_strip,
               'solar-array': solar, 'dish-antenna': dish_antenna, 'sawtooth-skylight': sawtooth_skylight}
 # Colony detail props (models/board/scenery/colony/<name>.glb): building details the board places with precision
@@ -454,7 +582,10 @@ def collect(name):
                 u, v = [(p.y, p.z), (p.x, p.z), (p.x, p.y)][axis]
                 repeat = REPEAT[kind]
                 shade = .7 + .3 * smoothstep(0, 3.5, p.z)
-                dust = (1 - smoothstep(.2, 2.0, p.z)) * .45 + max(0.0, n.z) * .12
+                if kind in COLOUR_SLOTS:
+                    shade *= .5 + .5 * smoothstep(.15, .75, n.z)  # Dark sides and hubs, as the map draws them.
+                # No dust on a slot: lighter than a dark default, it would stay as a ratio above 1 under a light colour.
+                dust = 0 if kind in COLOUR_SLOTS else (1 - smoothstep(.2, 2.0, p.z)) * .45 + max(0.0, n.z) * .12
                 colour = [(TINT[kind][c] * (1 - dust) + DUST[c] * dust) * shade for c in range(3)]
                 vertex = (p.x, p.y, p.z, n.x, n.y, n.z, *colour, 1.0, u / repeat, -v / repeat)
                 key = tuple(round(x, 5) for x in vertex)
@@ -464,22 +595,25 @@ def collect(name):
                 corners.append(welded[key])
             faces.append(corners)
         evaluated.to_mesh_clear()
-    vertices, parts = [], []
+    vertices, parts, slots = [], [], []
     for kind, (vs, fs) in sorted(kinds.items()):
         base = len(vertices)
         vertices.extend(vs)
+        slots.extend([list(COLOUR_SLOTS).index(kind) + 1 if kind in COLOUR_SLOTS else 0] * len(vs))
         parts.append({'id': f'{name}-{kind}', 'type': 'TRIANGLES', 'indices': [i + base for f in fs for i in f]})
     node = {'id': name, 'parts': [{'meshpartid': p['id'], 'materialid': p['id'].rsplit('-', 1)[1]} for p in parts]}
     mesh = {'attributes': ['POSITION', 'NORMAL', 'COLOR', 'TEXCOORD0'],
-            'vertices': [float(x) for v in vertices for x in v], 'parts': parts}
+            'vertices': [float(x) for v in vertices for x in v], 'parts': parts, 'slots': slots}
     return mesh, node, set(kinds), sum(len(f) for _, f in kinds.values())
 
 
 def materials(kinds, folder):
     """Board materials for the kinds used, by their albedo image relative to the GLB's folder."""
     textures = os.path.relpath(MODELS / 'board/textures', folder).replace(os.sep, '/') + '/'
-    return [{'id': kind, 'diffuse': [1, 1, 1], 'roughness': 1, 'metallic': 0,
-             'textures': [{'type': 'DIFFUSE', 'filename': f'{textures}{BOARD[kind]}_albedo.png'}]}
+    return [{'id': kind, 'diffuse': [1, 1, 1], 'roughness': .5, 'metallic': 0, 'emissive': TINT[kind]} if kind == 'core'
+            else {'id': kind, 'diffuse': [1, 1, 1], 'roughness': 1, 'metallic': 0,
+                  'extras': {'mmBuildingPaint': True} if kind == 'paint' else {},
+                  'textures': [{'type': 'DIFFUSE', 'filename': f'{textures}{BOARD[kind]}_albedo.png'}]}
             for kind in sorted(kinds)]
 
 
@@ -516,8 +650,9 @@ def write_prop(folder, name, build):
         prop[level] = {'materials': materials(used, folder), 'meshes': [mesh], 'nodes': [node]}
         print(f'{name} lod{level}: {triangles} triangles')
     path = folder / f'{name}.glb'
-    write_glb(path, levels=prop)
+    write_glb(path, levels=prop, extras={'mmColourSlots': list(COLOUR_SLOTS.values())} if used & set(COLOUR_SLOTS) else None)
     print('written', path, path.stat().st_size, 'bytes')
 
 
-main()
+if __name__ == '__main__':
+    main()

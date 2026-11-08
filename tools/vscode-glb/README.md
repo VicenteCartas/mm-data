@@ -75,8 +75,8 @@ channels, normal strength, occlusion and emission are previewed alongside ordina
 glTF materials, embedded PNG/JPEG textures, vertex colours, alpha cutouts and
 double-sided surfaces. Walls retain their separate emissive lamp materials.
 
-Colour-slot presets and custom colours, paint masks, label atlases and seasonal
-`mmVariants` such as snow have preview controls. Standard glTF animation playback
+Colour-slot presets and custom colours, paint masks, label atlases and the
+`mmSnow` winter form have preview controls. Standard glTF animation playback
 is available for inspection; the engine's rigid loader rejects animation tracks
 and skins. The Info panel points out that distinction and unsupported engine
 extensions, including `KHR_materials_emissive_strength`.
@@ -109,7 +109,7 @@ View controls do not save geometry, colour-slot previews or label previews.
    and metallic; shared ones use their `.tres`. These edits do not modify library files.
 5. Use **Save GLB** / **Ctrl+S**, or **Save as…**. Normal VS Code dirty tabs,
    Undo/Redo, close prompts, File: Revert File and hot-exit backups are supported.
-   Save As rebases external image/buffer and `mmVariants` paths for its new folder.
+   Save As rebases external image/buffer and `mmSnow` paths for its new folder.
 
 Material assignment and factor edits rewrite only GLB JSON. Placement and vertex
 paint edits append UV/colour attributes while retaining the original binary data,

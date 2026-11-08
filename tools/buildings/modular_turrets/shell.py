@@ -43,6 +43,7 @@ def materials():
     # Armor plates and covers are the unit paint role on a painted steel plate (structures/turret/turret-paint): the
     # player's camouflage paints them in game, shaded by the plate's light and dark over its finish (GpuUnitCamouflage).
     MATS['armor']=MATS['pale']=role_material('paint','structures/turret/turret-paint')
+    MATS['armor']['mmBuildingPaint']=True
     MATS['steel']=role_material('Turret | worn machined steel','structures/common/steel')
     MATS['edge']=role_material('Turret | rubbed alloy edges','structures/turret/turret-edge')
     MATS['dark']=role_material('Turret | dark mechanical steel','structures/turret/turret-dark')
@@ -216,7 +217,6 @@ def turret(lod):
     global LOD,PARTS
     LOD=lod; PARTS=[]
     root=empty(f'shell-lod{lod}')
-    root['authoring_forward']='+Y'; root['gltf_forward']='-Z'; root['mount_embed_depth']=.45
     # The fixed mount remains flush with the wall or column cap as the head yaws.
     ring('Mount gasket',[(-.45,11.5),(.25,11.5)],'black',16 if lod==0 else 12)
     ring('Fixed mounting collar',[(0,14.1),(.6,14.1),(2.25,12.25),(2.75,11.7)],'dark',8,phase=math.pi/8)
@@ -234,7 +234,6 @@ def turret(lod):
     join_parts(f'shell-lod{lod}-mount',PARTS.copy(),root)
     PARTS=[]
     yaw=empty(f'shell-lod{lod}-yaw',root,(0,0,2.8))
-    yaw['role']='turret'; yaw['gltf_rotation_axis']='+Y'; yaw['retain_last_firing_direction']=True
     ring('Bearing shadow',[(2.75,9.75),(3.15,9.75)],'black',16 if lod==0 else 12)
     ring('Rotating bearing',[(3.05,9.6),(3.55,9.6),(5.7,7.9)],'dark',16 if lod==0 else 8)
     for i in range(8):

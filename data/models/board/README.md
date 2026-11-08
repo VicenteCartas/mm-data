@@ -113,7 +113,8 @@ Authoring sources and the reproducible build are in `tools/board-models/seaport/
 the source container or exporting its underlying Material Maker materials.
 
 The cargo crate's maps are baked, its olive paint worn to the metal, rusted and dirty. A
-material whose extras set `mmPaintMask` keeps a paint mask in its albedo's alpha: the slot
+material whose extras set `mmPaintMask` (a library material's `.tres`: `metadata/mmPaintMask`)
+keeps a paint mask in its albedo's alpha: the slot
 colour (the vertex colour) tints only the paint, never the bare metal, rust and grime. Its
 white vertices hold the slot's default as a ratio of 1. A material whose extras set `mmLabel`
 draws a label: each quad is one character place (its U's integer part), mapped to the first,
@@ -497,9 +498,9 @@ For 19 species the `-snow` form is a material variant of the bare GLB, not a fil
 the six `orchard-*`, `pine`, `pine-broad`, `pine-slender`, `pine-layered`,
 `tree-broad`, `birch`, `willow-broad`, `tree-layered`, `birch-spreading`,
 `birch-young`, `tree-slender`, `tree` and `birch-tall`. Their materials' extras
-`mmVariants.snow` give the snow canopy material and textures, a linear factor on
+`mmSnow` give the snow canopy material and textures, a linear factor on
 the crown's vertex colours (the snow cards drop the species' pigment) and the
-winter impostor's texture and card colours; the manifest points their `-snow`
+winter impostor's textures and quad colours; the manifest points their `-snow`
 entry at the bare file (`"variant": "snow"`). The runtime builds the winter form
 from it (`RigidGlb.source`). `pine-tall`, `tree-dead`, `willow`, `tree-forked` and
 `foliage-snow` keep their own winter GLB: their snow geometry or bark differs.
@@ -594,9 +595,9 @@ no rock or scatter geometry is generated in-game.
   growing tips, with corking concentrated at their feet; `cactus-flowers`
   with white blossoms on them; the dead tree as a bleached oak snag whose limbs
   have connected bare branches instead of a shell of twig cards; ferns grow as
-  trunkless palms. The bare trees read the Blender-authored branch paths,
-  radii, parent links and spray corners in `tools/board-models/foliage/sources/`.
-  The generator rounds those paths and retains their hierarchy at each mesh level;
+  trunkless palms. The bare tree's branches are grown from its seed (`bare_skeleton`): a low fork into crooked
+  limbs within a crown half as wide as the tree is tall, with side branches and twigs. The generator rounds those
+  paths and retains their hierarchy at each mesh level, drawing the wood it keeps thicker at the coarser levels;
   pruning a branch removes its children. Change a species or its source there and rebuild it rather than editing
   its GLB. The nineteen broadleaf, volcanic, willow and birch forms use editable branch curves and
   attached foliage in `sources/forest.blend` and `sources/forest-density.blend`, exported by `build_forest.py`.
@@ -636,21 +637,22 @@ no rock or scatter geometry is generated in-game.
   `textures/vegetation/fungus/mycelium` material, whose emission makes it glow.
   Standard glTF `MASK` materials use a 0.5 alpha threshold. The authored forest and orchard sprays use
   0.3 to retain their sparse photographed leaves under mip filtering at distance.
-  Each material's threshold is identical in color, depth and shadow passes. The forest impostors retain
-  their authored 0.2 threshold (0.35 for the open cinder crowns); the bake preserves an existing impostor's cutoff and uses each source
-  material's own cutoff when rendering its leaves and computing its lighting.
-  A `-lod3` group holds the plant's impostor: two crossed vertical cards and a
-  horizontal cap through the crown, 12 triangles with their backs, textured by
-  `textures/vegetation/impostors/<name>.png` (three 128 by 128 unlit renders of
-  LOD0 from the front and the side, both 30 degrees above the plant, and from
-  above: the game's raw albedo before lighting, the detail texel times the
-  display-space vertex colour, with edge colours dilated for the cutout). Each
-  card side's normal is the mean normal of the surfaces its render shows, so the
-  cards take the light as the plant does. The cards' vertex colour carries how
-  the plant takes the sun: red, the share of direct light its own leaves let
-  through; green, the share of bark, cactus or snow the card shows. Shrubs and
-  orchard trees carry the same level; `prepare_tree_lods.py -- impostors`
-  re-bakes it (see Editing and checks).
+  Each material's threshold is identical in color, depth and shadow passes. The bake uses each source material's own
+  cutoff when rendering its leaves and computing its lighting.
+  A `-lod3` group holds the plant's impostor, standing for its far mesh (LOD2): one quad (2 triangles, stored as a
+  horizontal square about the crown's centre on the plant's axis, as wide as the sphere there that holds the far mesh)
+  that the game turns toward the camera. `textures/vegetation/impostors/<name>.png` holds unlit renders of the far
+  mesh from 8 directions around it at 10, 35.26 (the board's isometric view), 60 and 90 degrees above the horizon,
+  48 by 48 texels each (384 by 192), with edge colours dilated for the cutout; `<name>_normal.png` holds the mean
+  normal of the surfaces each texel shows, in the plant's own axes, as short as they face different ways (a thin
+  branch's sides), and their depth along the render's view: the game lights each texel with that normal and its
+  spread, and takes its shadow and writes its depth at that surface, as the mesh's. Each pixel shows the render nearest its view (impostor-frames.glsl must match the
+  bake). The quad's vertex colour carries the plant's mean occlusion, its share of bark, cactus or snow (lit as
+  solid), and its leaves' roughness and scatter. `<name>_crown.png` is the far mesh's coverage from straight above,
+  which the game measures crown cover from. `prepare_tree_lods.py -- impostors` re-bakes them (see Editing and
+  checks); `calibrate_impostors.py` then fits each impostor's coverage and colour, per row of frames, so that it
+  covers what the far mesh covers and is as bright where the game switches to it, seen from that row's height,
+  measured in the game.
   The manifest records every level; screen-pixel thresholds live in Java's
   `TreeLod`, so no camera or game state is baked into these assets.
 - Every plant's origin is the foot of its trunk, where the board places, grounds and
@@ -660,7 +662,7 @@ no rock or scatter geometry is generated in-game.
   The compact `cactus-young` form has four unequal arms; the veteran has six main arms and two secondary forks,
   and the organ cactus has nine unequal stems. Geometry levels preserve these branches.
   Ordinary woods and jungle aim for 30%, 75% and 100% crown coverage inside each hex. Coverage uses the union of
-  LOD0 top-projection silhouettes with only small gaps closed; cacti use rotated model XY boxes at 85% width and depth
+  the crown masks' silhouettes with only small gaps closed; cacti use rotated model XY boxes at 85% width and depth
   (about 72% of their full box area), without resizing the model. Bare `tree-dead`
   contributes 15% visual cover at normal width, scaled by horizontal area, rather than filling gaps between twig pixels.
   Ordinary canopy plants are capped at 3/6/9, including palms and height-one cover shrubs. Bare trees are spread
@@ -842,19 +844,27 @@ python tools/board-models/foliage/build_trees.py [names...]
 blender --background --factory-startup --python tools/board-models/foliage/build_forest.py -- [forest-names...]
 blender --background --factory-startup --python tools/board-models/foliage/build_orchards.py -- [orchard-names...]
 blender --background --factory-startup --python tools/prepare_tree_lods.py -- impostors [names...]
+python tools/calibrate_impostors.py [--megamek PATH] [names...]
 python tools/validate_board_assets.py
 ```
 
 `export.py` exports every Material Maker project under `tools/materials/` into `textures/`. After editing a
-plant GLB, `prepare_tree_lods.py` re-bakes its LOD3 impostor (every plant's without names); the bake preserves
-the three mesh levels, owns a temporary Blender scene and preserves the active scene. For the 19 species whose
-`-snow` form is a material variant it also renders the winter impostor (`<name>-snow.png` and its card colours,
-`mmVariants.snow` on the impostor material) from LOD0 in that variant.
+plant GLB, `prepare_tree_lods.py` re-bakes its LOD3 impostor and crown mask (every plant's without names; plants
+whose fourth level is a mesh, the crystals, keep it); the bake preserves the three mesh levels and the impostor's
+cutoff and tints, owns a temporary Blender scene and preserves the active scene. For the 19 species whose `-snow` form lives
+in the bare file it also renders the winter impostor (`<name>-snow*.png` and its quad colours, `mmSnow` on the
+impostor material) from the far mesh in that form. `calibrate_impostors.py` then runs megamek's
+GpuImpostorCalibrationSmokeTest through Gradle in a megamek checkout (default: `../megamek`), which compares each
+plant's far mesh and impostor at the switch in the board's own frame at 8, 13 and 17 h, from each row's height
+(10, 35.26 and 60 degrees, and straight above), and writes each file's alpha cutoff into its GLB and, per atlas row,
+a colour factor and a coverage exponent into the atlas and its fits (`mmImpostorTint`: by atlas, per row
+[r, g, b, exponent], which a rebake applies); later runs refine them, and the same test without its property checks
+the result.
 
 `validate_board_assets.py` checks each manifest entry against its GLB: the plant levels `-lod0` to `-lod3` and
 their family-specific triangle budgets, the triangle counts (at most 500 per other model),
 understory and orchard grounding, LOD0 height and every coarser
-level's height from 10% below to 1% above it,
+mesh level's height from 10% below to 1% above it,
 embedded images and that every external texture exists inside this directory. It refuses G3DJ meshes.
 Native Java integration tests additionally check transparency, lighting,
 water animation and representative model loading.
