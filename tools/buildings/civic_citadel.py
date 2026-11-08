@@ -135,7 +135,8 @@ def facade_windows(side):
 
 def tower():
     plan = civic.rect(-36,36,-28,38)
-    helper('main shaft',plan,252)
+    # Behind its back wall (1.4 thick), which stands against the rear annex's: neither volume reaches the other's wall.
+    helper('main shaft',civic.rect(-36,36,-28,38-1.4),252)
     shell('main shaft',plan,252)
     # Primary load-bearing ribs remain pale; only wall infill carries the editor tint.
     for side in (-1,1):
@@ -257,7 +258,7 @@ def podium():
             box('annex air handler grille',(side*58,y,40.26),(11,14,.15),GRILLE,(.56,.59,.55))
         civic.guardrail('annex roof rail',(side*69.8,-40,36),(side*69.8,57,36),3.3)
     rear=civic.rect(-44,44,38,68)
-    helper('rear annex',rear,36)
+    helper('rear annex',civic.rect(-44,44,38+1.4,68),36)
     shell('rear annex',rear,36)
     civic.guardrail('rear annex roof rail',(-42,66.8,36),(42,66.8,36),3.3)
     for x in (-31,0,31):

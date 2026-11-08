@@ -244,7 +244,8 @@ def church():
         box('spine expansion joint',(0,(y0+y1)/2,44.55),(.16,y1-y0,.10),STEEL,DARK,True)
     # Rear apse keeps the original two-level envelope, finished with stepped caps.
     apse=[(-17,39),(17,39),(19,48),(14,59),(0,65),(-14,59),(-19,48)]
-    helper('apse',apse,36)
+    # Its volume starts where the nave's ends: the apse wall slants out past the nave's line before y 44.
+    helper('apse',[(-17,44),(17,44)]+apse[2:],36)
     wall_shell('apse wall',apse,36)
     prism('apse concrete roof',inset_outline(apse,.2),33.5,36.15,CONCRETE,CREAM)
     prism('apse upper blind cap',inset_outline(apse,2.5),36,39,CONCRETE,(.943,.943,.88))
@@ -257,7 +258,8 @@ def church():
                        (*tuple(mid+n*.14),10.5),(*t,0),PAINT,GOLD,.12)
     # No front wall across the portal: the tower has actual deep jambs and reveals.
     tower=rect(-12,12,-64,-39)
-    helper('tower',tower,54)
+    # Inside the side walls (x 10..12): a floor reaching their outer faces flickered on them.
+    helper('tower',rect(-10,10,-64,-39),54)
     for side in (-1,1):
         concrete_box('tower side wall',(side*11,-51.5,27),(2,25,54))
         height=79 if side<0 else 56
