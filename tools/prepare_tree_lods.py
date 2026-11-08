@@ -29,7 +29,7 @@ IMPOSTORS = 'textures/vegetation/impostors'
 # isometric view), each FRAME texels square; the atlas holds a row of azimuths per elevation, the lowest on top. The
 # game draws impostors only below TreeLod's smallest threshold (24 pixels), so FRAME texels oversample it twice.
 # impostor-frames.glsl must match these.
-AZIMUTHS, ELEVATIONS, FRAME = 8, (10, 35.26, 60, 85), 48
+AZIMUTHS, ELEVATIONS, FRAME = 8, (10, 35.26, 60, 90), 48
 # Each frame renders at this many times its texels, then averages them by alpha, as the game's cutout mip levels do
 # (GpuColorTexture.cutout): a texel keeps the colour of the leaves it shows and the share of it they cover.
 SAMPLES = 4
@@ -327,17 +327,18 @@ def save(values, path):
     bpy.data.images.remove(atlas)
 
 
-def impostor(scene, model, name, images, tint=(1, 1, 1)):
+def impostor(scene, model, name, images, fit=None):
     """LOD3: one quad the game turns toward the camera (impostor-frames.glsl), textured with orthographic renders of
     `model` (the plant's coarsest mesh level) from each frame's direction. Stored as a horizontal square through the
     impostor's centre, of the radius of the sphere about it that holds the mesh: the game reads the centre and radius
     from it, so the quad covers the plant from any side.
 
-    The colour atlas holds the unlit pigment times `tint` (the impostor material's extras `mmImpostorTint` for this
-    atlas, calibrate_impostors.py) and its coverage. The normal atlas holds, in its RGB, the normal of the
-    surface each texel shows, in the plant's own axes, and in its alpha that surface's depth along the frame's view, in
-    units of the sphere's diameter about .5: the game lights each texel with that normal and takes its shadow at that
-    depth. The quad's colour carries its texels' mean occlusion, the share of them that is bark, cactus or snow (lit as
+    The colour atlas holds the unlit pigment and its coverage, each row of frames fit to the far mesh by `fit` (the
+    impostor material's extras `mmImpostorTint` for this atlas, calibrate_impostors.py): per row a linear RGB factor
+    on the pigment and an exponent on the coverage. The normal atlas holds, in its RGB, the mean normal of the surfaces
+    each texel shows, in the plant's own axes, as short as they face different ways, and in its alpha their depth along
+    the frame's view, in units of the sphere's diameter about .5: the game lights each texel with that normal and its
+    spread, and takes its shadow and depth there. The quad's colour carries its texels' mean occlusion, the share of them that is bark, cactus or snow (lit as
     solid), and the mean roughness and scatter of the rest, the leaves, as their materials give them."""
     centre, radius = sphere(model)
     colour, covered = unpremultiplied(render(scene, model, name, images, centre, radius, 'colour'))
@@ -354,7 +355,8 @@ def impostor(scene, model, name, images, tint=(1, 1, 1)):
         rotation = numpy.asarray(turn)
         # The render's world vectors back in the plant's axes: world = turn @ local, so local = world @ turn.
         seen = normals[block] @ rotation
-        seen /= numpy.maximum(numpy.linalg.norm(seen, axis=2, keepdims=True), 1e-6)
+        # The mean of the texel's samples keeps its length (terrain-foliage.frag), past rounding.
+        seen /= numpy.maximum(numpy.linalg.norm(seen, axis=2, keepdims=True), 1)
         point = (positions[block] - numpy.asarray(origin)) @ rotation * (2 * radius)
         here = filled[block]
         frame = shape[block]
@@ -374,9 +376,12 @@ def impostor(scene, model, name, images, tint=(1, 1, 1)):
     for x, y in ((-1, -1), (1, -1), (1, 1), (-1, 1)):
         vertices.extend(round(value, 6) for value in (x * radius, y * radius, centre.z, 0, 0, 1, *card,
                                                        (x * .5 + .5) / AZIMUTHS, (top + .5 - y * .5) / len(ELEVATIONS)))
-    # The colour fit to the far mesh as the game shows it at the switch (calibrate_impostors.py), linear RGB.
-    pigment = dilate(colour * numpy.asarray(tint), filled)
-    save(numpy.concatenate([srgb(pigment), covered[..., None]], axis=2), BOARD / IMPOSTORS / (name + '.png'))
+    # The fit to the far mesh as the game shows it at the switch, per row of frames: the exponent moves where the
+    # material's alpha cutoff falls in the coverage.
+    rows = numpy.repeat(numpy.asarray(fit or [(1, 1, 1, 1)] * len(ELEVATIONS), dtype=numpy.float64), FRAME, axis=0)
+    pigment = dilate(colour * rows[:, None, :3], filled)
+    coverage = covered ** rows[:, None, 3]
+    save(numpy.concatenate([srgb(pigment), coverage[..., None]], axis=2), BOARD / IMPOSTORS / (name + '.png'))
     shape = dilate(shape, filled)
     save(numpy.concatenate([numpy.clip(shape[..., :3] * 127 + 128, 0, 255) / 255,
                             numpy.clip(shape[..., 3:] + .5, 0, 1)], axis=2), BOARD / IMPOSTORS / (name + '_normal.png'))
@@ -480,14 +485,14 @@ def impostors(only=None):
             alpha_test = (old or {}).get('alphaTest', .5)
             for model in levels.values():
                 model['materials'] = [material for material in model['materials'] if material['id'] != 'impostor']
-            tints = extras.get('mmImpostorTint', {})
-            levels[3] = impostor(scene, source, name, images, tints.get(name, (1, 1, 1)))
+            fits = extras.get('mmImpostorTint', {})
+            levels[3] = impostor(scene, source, name, images, fits.get(name))
             crown(scene, source, name, images)
             levels[3]['materials'][0]['alphaTest'] = alpha_test
             # A winter form kept as mmSnow gets its own impostor renders and quad colours.
             cold = winter(source)
             if cold:
-                frozen = impostor(scene, cold, name + '-snow', images, tints.get(name + '-snow', (1, 1, 1)))
+                frozen = impostor(scene, cold, name + '-snow', images, fits.get(name + '-snow'))
                 frozen = frozen['meshes'][0]['vertices']
                 crown(scene, cold, name + '-snow', images)
                 extras['mmSnow'] = {

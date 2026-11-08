@@ -1,20 +1,27 @@
 """Run with python tools/calibrate_impostors.py [--megamek PATH] [NAME...], after prepare_tree_lods.py's impostors.
 
 Fits each plant impostor to the far mesh it replaces where the game switches to it (TreeLod's smallest threshold,
-24 pixels), as the game draws them: its alpha cutoff, so that it covers what the far mesh covers, and its colour, so
-that it is as bright and of the same hue on average over the views and hours measured. The frames hold the far mesh's
-unlit colour, normals and depth, but at that size the mesh's detail (its leaves' maps, leaf edges fading over the
-ground) shades it differently. The colour is a linear RGB factor per atlas, kept in the impostor material's extras
-(`mmImpostorTint`, by atlas name; prepare_tree_lods.py bakes it into the atlas) and applied here to the atlas itself.
+24 pixels), as the game draws them, for each row of frames (each height the impostor is seen from): its coverage, so
+that it covers what the far mesh covers, and its colour, so that it is as bright and of the same hue on average over
+the hours measured. The frames hold the far mesh's unlit colour, normals and depth, but at that size the mesh's detail
+(its leaves' maps, its sub-pixel parts) shades and covers it somewhat differently, more so from some heights.
+
+Each file's impostor material gets the alpha cutoff that fits its impostors over all rows; each atlas row, a linear RGB
+factor on its pigment and an exponent on its coverage that moves the cutoff to where that row needs it. They are kept in
+the impostor material's extras (`mmImpostorTint`: by atlas name, per row [r, g, b, exponent]; prepare_tree_lods.py bakes
+them into a new atlas) and applied here to the atlas itself. A winter form kept in its plant's file (vegetation/pine-snow)
+has rows of its own.
 
 The game measures both: megamek's GpuImpostorCalibrationSmokeTest, run by Gradle in a megamek checkout with the GPU
 board (by default the one beside mm-data, whose build stages this mm-data's models) with
--Dmegamek.gpu.impostorCalibration. Each run starts from the present files, so a second run refines the colour. NAMEs
-(vegetation/pine, mars/fan-folded...) limit the plants it writes; a winter form kept in its plant's file
-(vegetation/pine-snow) has its own colour. The same test without the property checks the result.
+-Dmegamek.gpu.impostorCalibration. Each run starts from the present files, so a second run refines the fit: the
+coverage exponent acts on the atlas before the game filters it, which the measured cutoff assumes it does after, and
+a run or two more corrects the difference. NAMEs (vegetation/pine, mars/fan-folded...) limit the plants it writes,
+with the other forms kept in their files. The same test without the property checks the result.
 """
 import argparse
 import json
+import math
 import os
 import struct
 import subprocess
@@ -28,6 +35,7 @@ ROOT = Path(__file__).resolve().parents[1]
 BOARD = ROOT / 'data/models/board'
 IMPOSTORS = BOARD / 'textures/vegetation/impostors'
 TEST = 'megamek.client.ui.clientGUI.boardview.gpu.GpuImpostorCalibrationSmokeTest'
+ROWS = 4
 
 
 def edit_impostor(path, change):
@@ -44,29 +52,55 @@ def edit_impostor(path, change):
     path.write_bytes(data[:8] + struct.pack('<I', 12 + len(body)) + body)
 
 
-def set_cutoff(name, cutoff):
-    edit_impostor(BOARD / f'{name}.glb', lambda material: material.update(alphaCutoff=cutoff))
-
-
-def set_colour(name, ratio):
-    """A plant's impostor colour times `ratio`: its atlas's texels and its tint in the file that holds it."""
-    atlas = name.rsplit('/', 1)[-1]
+def plant_file(name):
+    """The GLB that holds a plant: its own, or for a winter form kept in its plant's file, that one."""
     path = BOARD / f'{name}.glb'
-    if not path.exists():
-        # A winter form kept in its plant's file.
-        path = BOARD / f'{name.removesuffix("-snow")}.glb'
+    return path if path.exists() else BOARD / f'{name.removesuffix("-snow")}.glb'
 
-    def scale(material):
-        tints = material.setdefault('extras', {}).setdefault('mmImpostorTint', {})
-        tints[atlas] = [round(old * factor, 4) for old, factor in zip(tints.get(atlas, (1, 1, 1)), ratio)]
-    edit_impostor(path, scale)
-    image = Image.open(IMPOSTORS / f'{atlas}.png').convert('RGBA')
-    values = numpy.asarray(image).astype(numpy.float64) / 255
-    linear = numpy.where(values[..., :3] <= .04045, values[..., :3] / 12.92, ((values[..., :3] + .055) / 1.055) ** 2.4)
-    linear = numpy.clip(linear * numpy.asarray(ratio), 0, 1)
-    encoded = numpy.where(linear <= .0031308, linear * 12.92, 1.055 * linear ** (1 / 2.4) - .055)
-    values[..., :3] = encoded
-    Image.fromarray(numpy.round(values * 255).astype(numpy.uint8), 'RGBA').save(IMPOSTORS / f'{atlas}.png')
+
+def exponent(cutoff, row_cutoff):
+    """The coverage exponent that moves a row's threshold from `row_cutoff` to the material's `cutoff`."""
+    if not 0 < row_cutoff < 1 or not 0 < cutoff < 1:
+        return 1.0
+    return min(max(math.log(cutoff) / math.log(row_cutoff), .2), 5.0)
+
+
+def fit_rows(name, rows, cutoff):
+    """A plant's rows: per row its colour ratio (far mesh to impostor) and the cutoff at which it covers what the far mesh
+    does, against the material's `cutoff`; multiplied into its tint and applied to its atlas."""
+    atlas = name.rsplit('/', 1)[-1]
+    steps = [(ratio[:3], exponent(cutoff, ratio[3])) for ratio in rows]
+
+    def change(material):
+        fits = material.setdefault('extras', {}).setdefault('mmImpostorTint', {})
+        old = fits.get(atlas) or [[1, 1, 1, 1]] * ROWS
+        fits[atlas] = [[round(o * f, 4) for o, f in zip(row[:3], colour)] + [round(row[3] * power, 4)]
+                       for row, (colour, power) in zip(old, steps)]
+    edit_impostor(plant_file(name), change)
+    path = IMPOSTORS / f'{atlas}.png'
+    values = numpy.asarray(Image.open(path).convert('RGBA')).astype(numpy.float64) / 255
+    frame = values.shape[0] // ROWS
+    for row, (colour, power) in enumerate(steps):
+        block = values[row * frame:(row + 1) * frame]
+        linear = numpy.where(block[..., :3] <= .04045, block[..., :3] / 12.92, ((block[..., :3] + .055) / 1.055) ** 2.4)
+        linear = numpy.clip(linear * numpy.asarray(colour), 0, 1)
+        block[..., :3] = numpy.where(linear <= .0031308, linear * 12.92, 1.055 * linear ** (1 / 2.4) - .055)
+        block[..., 3] = block[..., 3] ** power
+    Image.fromarray(numpy.round(values * 255).astype(numpy.uint8), 'RGBA').save(path)
+
+
+def apply(fitted, names=()):
+    """A GpuImpostorCalibrationSmokeTest result into the GLBs and atlases (only the plants `names` when given, with the
+    other forms in their files: the forms share the file's cutoff, so each takes its rows against the new one)."""
+    files = {plant_file(name) for name in names}
+    for name, rows in fitted['rows'].items():
+        if names and plant_file(name) not in files:
+            continue
+        path = plant_file(name)
+        cutoff = fitted['cutoffs'][path.relative_to(BOARD).with_suffix('').as_posix()]
+        edit_impostor(path, lambda material: material.update(alphaCutoff=cutoff))
+        fit_rows(name, rows, cutoff)
+        print(name, cutoff, [[round(value, 3) for value in row] for row in rows])
 
 
 def main():
@@ -80,14 +114,7 @@ def main():
         subprocess.run([str(gradle), ':megamek:gpuBoardSmoke', '--tests', TEST, f'-Dmegamek.gpu.impostorCalibration={target}'],
                        cwd=arguments.megamek, check=True)
         fitted = json.loads(target.read_text())
-    wanted = lambda name: not arguments.names or name in arguments.names
-    for name, cutoff in fitted['cutoffs'].items():
-        if wanted(name):
-            set_cutoff(name, cutoff)
-    for name, ratio in fitted['colours'].items():
-        if wanted(name):
-            set_colour(name, ratio)
-            print(name, fitted['cutoffs'].get(name, ''), ratio)
+    apply(fitted, arguments.names)
 
 
 if __name__ == '__main__':
