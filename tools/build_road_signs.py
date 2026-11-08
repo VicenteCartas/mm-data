@@ -293,9 +293,9 @@ def export(name):
     (ARTWORK / face_file).write_bytes(image)
     models = {level: model(name, level, measures, image, face_file) for level in (0, 1)}
     path = ROAD / (name + '.glb')
-    write_glb(path, levels=models, extras={'mmAuthoring': {
-        'metresToModelUnits': MODEL_UNITS_PER_METRE, 'front': '+Y', 'base': 'Z=0',
-        'source': 'tools/build_road_signs.py', 'derivedFrom': 'scenery/road/stop-sign.glb'}})
+    # No authoring metadata in the file, as the STOP sign it derives from has none (front +Y, base at Z=0, 2.8 model
+    # units to the metre, as the module comment says).
+    write_glb(path, levels=models)
     lods = []
     for level, built in models.items():
         mesh = built['meshes'][0]
