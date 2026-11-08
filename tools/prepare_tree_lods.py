@@ -1,9 +1,11 @@
 """Run with Blender --background --python tools/prepare_tree_lods.py -- impostors [names...].
 
-The command adds LOD3 to existing plant GLBs: three textured cards
-carrying unlit renders of LOD0, while preserving their three mesh levels.
+The command adds LOD3 to existing plant GLBs: three textured cards standing for LOD2, the level they replace, while
+preserving their three mesh levels. Each card carries two renders of LOD2 from its side: its unlit colour, and its
+surface's normal and depth, so the game lights and shadows each texel as it does LOD2's surface (terrain-foliage.frag).
 """
 import sys
+import tempfile
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from glb_geometry import read_glb, write_glb
@@ -15,7 +17,6 @@ import math
 import bpy
 import numpy
 from mathutils import Euler, Matrix, Vector
-from mathutils.bvhtree import BVHTree
 
 BOARD = Path(__file__).resolve().parents[1] / 'data/models/board'
 # The plant GLBs; their texture paths are relative to this folder.
@@ -25,26 +26,12 @@ MANIFEST = Path(__file__).resolve().parent / 'board-models/manifest.json'
 IMPOSTORS = 'textures/vegetation/impostors'
 # Pixels per card face; the game draws the cards only below TreeLod's smallest threshold.
 PANEL = 128
-
-
-def geometry(model):
-    """Weld positions for topology only; retain the authored per-corner data."""
-    vertices, shared, faces, corners = [], {}, [], []
-    mesh = model['meshes'][0]
-    source = mesh['vertices']
-    for part in mesh['parts']:
-        for offset in range(0, len(part['indices']), 3):
-            attributes = [source[i * 12:i * 12 + 12] for i in part['indices'][offset:offset + 3]]
-            face = []
-            for vertex in attributes:
-                point = tuple(vertex[:3])
-                if point not in shared:
-                    shared[point] = len(vertices)
-                    vertices.append(Vector(point))
-                face.append(shared[point])
-            faces.append(face)
-            corners.append((part['id'], attributes))
-    return vertices, faces, corners
+# Each panel renders at this many times its texels, then averages them by alpha, as the game's cutout mip levels do
+# (GpuColorTexture.cutout): a texel keeps the colour of the leaves it shows and the share of it they cover.
+SAMPLES = 4
+# A material's surface response where it has no occlusion map, as terrain-foliage.frag assumes: occlusion, roughness,
+# scatter.
+SURFACE = (1, .58, .35)
 
 
 def counts(model):
@@ -56,6 +43,11 @@ def counts(model):
 def solid(role):
     """Roles the game lights as solid rather than as a canopy (GpuTerrain.foliage)."""
     return role.startswith('bark') or role in ('cactus', 'fruit', 'coral')
+
+
+def leaf(role):
+    """Roles the game lights as leaves (GpuTerrain.foliage's part 1): neither solid, snow nor fungal tissue."""
+    return not solid(role) and role not in ('fungus', 'mycelium', 'snow', 'canopy-snow-cutout')
 
 
 def material_roles(model):
@@ -75,6 +67,8 @@ def unlit_material(role, filename, images, cutout=False, alpha_test=.5):
     """Unlit pigment; the impostor bake filters sRGB textures in linear light. A cutout (`-cutout` or alpha-tested)
     keeps only its texture's opaque texels."""
     material = bpy.data.materials.new(role)
+    # Blender renames a material whose name is taken; the role stays here.
+    material['role'] = role
     material.use_nodes = True
     material.use_backface_culling = True
     nodes, links = material.node_tree.nodes, material.node_tree.links
@@ -118,13 +112,13 @@ def unlit_material(role, filename, images, cutout=False, alpha_test=.5):
 
 
 def unlit_mesh(model, name, images):
-    """LOD0 with one vertex per corner, so every authored colour and texture coordinate survives."""
+    """A mesh level with one vertex per corner, so every authored colour, normal and texture coordinate survives."""
     mesh = model['meshes'][0]
     source = mesh['vertices']
     textures = {material['id']: material['textures'][0]['filename'] for material in model['materials']}
     cutouts = {material['id']: material['alphaTest'] for material in model['materials'] if 'alphaTest' in material}
     bound_roles = material_roles(model)
-    vertices, faces, colors, uvs, roles = [], [], [], [], []
+    vertices, faces, normals, colors, uvs, roles = [], [], [], [], [], []
     for part in mesh['parts']:
         for offset in range(0, len(part['indices']), 3):
             faces.append((len(vertices), len(vertices) + 1, len(vertices) + 2))
@@ -132,6 +126,7 @@ def unlit_mesh(model, name, images):
             for index in part['indices'][offset:offset + 3]:
                 vertex = source[index * 12:index * 12 + 12]
                 vertices.append(vertex[:3])
+                normals.append(vertex[3:6])
                 # The impostor reads the original linear glTF RGB.
                 colors.append(vertex[6:10])
                 uvs.append((vertex[10], 1 - vertex[11]))
@@ -140,9 +135,12 @@ def unlit_mesh(model, name, images):
     color = data.color_attributes.new('Color', 'FLOAT_COLOR', 'CORNER')
     uv = data.uv_layers.new(name='UV')
     for polygon in data.polygons:
+        polygon.use_smooth = True
         for loop in polygon.loop_indices:
             color.data[loop].color = colors[data.loops[loop].vertex_index]
             uv.data[loop].uv = uvs[data.loops[loop].vertex_index]
+    # The authored normals (a card's crown envelope normal), which the normal render shows.
+    data.normals_split_custom_set([normals[data.loops[loop].vertex_index] for loop in range(len(data.loops))])
     materials = {}
     for polygon, role in zip(data.polygons, roles):
         if role not in materials:
@@ -151,6 +149,40 @@ def unlit_mesh(model, name, images):
         polygon.material_index = materials[role]
     data.update()
     return data
+
+
+def show(data, model, shown, images):
+    """The unlit materials of `data` emit `shown` instead of their pigment, on the same cutout texels: 'normal' (the
+    world-space normal as 0..1), 'position' (the world-space position, a quarter of it about .5), 'surface' (the
+    material's occlusion map, or SURFACE) or 'solid' (0 for leaves, 1 for the roles the game lights otherwise)."""
+    occlusion = {material['id']: next((t['filename'] for t in material['textures'] if t['type'] == 'AMBIENT'), None)
+                 for material in model['materials']}
+    for material in data.materials:
+        role = material['role']
+        nodes, links = material.node_tree.nodes, material.node_tree.links
+        emission = next(node for node in nodes if node.type == 'EMISSION')
+        if shown in ('normal', 'position'):
+            geometry = nodes.new('ShaderNodeNewGeometry')
+            scaled = nodes.new('ShaderNodeVectorMath')
+            scaled.operation = 'MULTIPLY_ADD'
+            scaled.inputs[1].default_value = (.5,) * 3 if shown == 'normal' else (.25,) * 3
+            scaled.inputs[2].default_value = (.5,) * 3
+            links.new(geometry.outputs['Normal' if shown == 'normal' else 'Position'], scaled.inputs[0])
+            links.new(scaled.outputs[0], emission.inputs['Color'])
+        elif shown == 'surface' and occlusion.get(role):
+            key = 'data:' + occlusion[role]
+            if key not in images:
+                images[key] = bpy.data.images.load(str(PLANTS / occlusion[role]), check_existing=False)
+                images[key].colorspace_settings.name = 'Non-Color'
+            texture = nodes.new('ShaderNodeTexImage')
+            texture.image = images[key]
+            texture.interpolation = 'Linear'
+            links.new(texture.outputs['Color'], emission.inputs['Color'])
+        else:
+            for link in list(emission.inputs['Color'].links):
+                links.remove(link)
+            value = SURFACE if shown == 'surface' else (0, 0, 0) if leaf(role) else (1, 1, 1)
+            emission.inputs['Color'].default_value = (*value, 1)
 
 
 def bounds(model):
@@ -186,22 +218,27 @@ def framing(turn, low, high):
     return max(highest.x - lowest.x, highest.z - lowest.z) * 1.04, (lowest + highest) / 2
 
 
-def dilate(rgba, passes=8):
-    """Spread edge colours into transparent texels, so filtering and mipmaps never darken the cutout's rim."""
-    rgb, filled = rgba[..., :3].copy(), rgba[..., 3] > 0
+def dilate(values, filled, passes=8):
+    """Spread the covered texels' values into the empty ones around them, so filtering and mipmaps never mix in the
+    empty texels around a cutout."""
+    values, filled = values.copy(), filled.copy()
     for _ in range(passes):
         if filled.all():
             break
         for shift in ((0, 1), (0, -1), (1, 0), (-1, 0)):
             take = ~filled & numpy.roll(filled, shift, (0, 1))
-            rgb[take] = numpy.roll(rgb, shift, (0, 1))[take]
+            values[take] = numpy.roll(values, shift, (0, 1))[take]
             filled |= take
-    return numpy.concatenate([rgb, rgba[..., 3:]], axis=2)
+    return values
 
 
-def render_faces(scene, model, name, images, panels):
-    """One render of LOD0 turned toward the camera three times, each face filling its own square panel."""
+def render(scene, model, name, images, panels, shown):
+    """`model` turned toward the camera three times, each face filling its own square panel at SAMPLES times its
+    texels, its materials showing `shown` (its unlit colour, or show()'s): linear RGBA premultiplied by coverage, rows
+    top-down, averaged down to PANEL texels a panel side."""
     data = unlit_mesh(model, name, images)
+    if shown != 'colour':
+        show(data, model, shown, images)
     objects = []
     for panel, (turn, (size, centre)) in enumerate(zip(FACES, panels)):
         obj = bpy.data.objects.new(f'{name}-face{panel}', data)
@@ -210,165 +247,140 @@ def render_faces(scene, model, name, images, panels):
         obj.scale = (1 / size,) * 3
         obj.location = (panel - 1 - centre.x / size, 0, -centre.z / size)
         objects.append(obj)
-    path = BOARD / IMPOSTORS / (name + '.png')
-    path.parent.mkdir(parents=True, exist_ok=True)
-    scene.render.filepath = str(path)
-    try:
-        bpy.ops.render.render(write_still=True)
-    finally:
-        for obj in objects:
-            bpy.data.objects.remove(obj, do_unlink=True)
-        for material in list(data.materials):
-            bpy.data.materials.remove(material)
-        bpy.data.meshes.remove(data)
-    # Standard already encoded this PNG once. Dilation only copies encoded texels, never averages them.
-    rendered = bpy.data.images.load(str(path), check_existing=False)
-    rendered.colorspace_settings.name = 'Non-Color'
-    pixels = numpy.array(rendered.pixels[:], dtype=numpy.float32).reshape(PANEL, 3 * PANEL, 4)
-    bpy.data.images.remove(rendered)
-    pixels = numpy.concatenate([dilate(pixels[:, i * PANEL:(i + 1) * PANEL]) for i in range(3)], axis=1)
-    atlas = bpy.data.images.new(name + '-impostor', 3 * PANEL, PANEL, alpha=True)
+    with tempfile.TemporaryDirectory() as folder:
+        path = Path(folder) / 'render.exr'
+        scene.render.filepath = str(path)
+        try:
+            bpy.ops.render.render(write_still=True)
+        finally:
+            for obj in objects:
+                bpy.data.objects.remove(obj, do_unlink=True)
+            for material in list(data.materials):
+                bpy.data.materials.remove(material)
+            bpy.data.meshes.remove(data)
+        image = bpy.data.images.load(str(path), check_existing=False)
+        try:
+            pixels = numpy.empty(len(image.pixels), dtype=numpy.float32)
+            image.pixels.foreach_get(pixels)
+        finally:
+            bpy.data.images.remove(image)
+    side = PANEL * SAMPLES
+    pixels = pixels.reshape(side, 3 * side, 4)[::-1]
+    return pixels.reshape(PANEL, SAMPLES, 3 * PANEL, SAMPLES, 4).mean(axis=(1, 3))
+
+
+def unpremultiplied(rgba):
+    """A render's linear values where it covers anything, and its coverage."""
+    alpha = rgba[..., 3]
+    return rgba[..., :3] / numpy.maximum(alpha, 1e-6)[..., None], alpha
+
+
+def srgb(linear):
+    linear = numpy.clip(linear, 0, 1)
+    return numpy.where(linear <= .0031308, linear * 12.92, 1.055 * numpy.power(linear, 1 / 2.4) - .055)
+
+
+def save(values, path):
+    """RGBA values in 0..1, rows top-down, as an 8-bit PNG written as they are."""
+    atlas = bpy.data.images.new(path.stem, values.shape[1], values.shape[0], alpha=True)
     atlas.colorspace_settings.name = 'Non-Color'
-    atlas.pixels = pixels.ravel().tolist()
+    atlas.pixels.foreach_set(numpy.ascontiguousarray(values[::-1], dtype=numpy.float32).ravel())
     atlas.filepath_raw = str(path)
     atlas.file_format = 'PNG'
     atlas.save()
     bpy.data.images.remove(atlas)
 
 
-def shown_normal(model, toward):
-    """The mean lighting normal of the surfaces LOD0 turns toward a camera, weighted by their projected area."""
-    mesh = model['meshes'][0]
-    vertices = mesh['vertices']
-    total = Vector()
-    for part in mesh['parts']:
-        for offset in range(0, len(part['indices']), 3):
-            corners = [vertices[i * 12:i * 12 + 12] for i in part['indices'][offset:offset + 3]]
-            a, b, c = (Vector(corner[:3]) for corner in corners)
-            shown = (b - a).cross(c - a).dot(toward) / 2
-            if shown > 0:
-                total += sum((Vector(corner[3:6]) for corner in corners), Vector()) * shown
-    return total.normalized()
-
-
-# The sun directions the board's lighting spans: three elevations all round.
-SUNS = [Vector((math.cos(turn) * math.cos(elevation), math.sin(turn) * math.cos(elevation), math.sin(elevation)))
-        for elevation in map(math.radians, (30, 50, 70)) for turn in (i * math.pi / 4 for i in range(8))]
-
-
-def lighting(model, toward):
-    """How the surfaces LOD0 shows toward a camera take the sun, as terrain-foliage.frag lights them over the board's
-    sun directions: the share of direct light that gets past the plant's own leaves and branches, and the share of
-    what shows that is bark, cactus or snow, which take light straight on where leaves scatter it around. A card
-    standing inside its crown cannot take that shade from the shadow map, which would shade it with its own cards."""
-    vertices, faces, corners = geometry(model)
-    bound_roles = material_roles(model)
-    corners = [(bound_roles[part], attributes) for part, attributes in corners]
-    tree = BVHTree.FromPolygons(vertices, faces, all_triangles=True)
-    cutouts = {}
-    thresholds = {}
-    for material in model['materials']:
-        if not material['id'].endswith('-cutout'):
-            continue
-        image = bpy.data.images.load(str(PLANTS / material['textures'][0]['filename']), check_existing=True)
-        pixels = numpy.empty(len(image.pixels), dtype=numpy.float32)
-        image.pixels.foreach_get(pixels)
-        cutouts[material['id']] = pixels.reshape(image.size[1], image.size[0], 4)[:, :, 3]
-        thresholds[material['id']] = material.get('alphaTest', .5)
-
-    def covered(index, point):
-        role, attributes = corners[index]
-        if role not in cutouts:
-            return True
-        a, b, c = (vertices[v] for v in faces[index])
-        ab, ac, ap = b - a, c - a, point - a
-        denominator = ab.dot(ab) * ac.dot(ac) - ab.dot(ac) ** 2
-        if abs(denominator) < 1e-9:
-            return False
-        u = (ac.dot(ac) * ap.dot(ab) - ab.dot(ac) * ap.dot(ac)) / denominator
-        v = (ab.dot(ab) * ap.dot(ac) - ab.dot(ac) * ap.dot(ab)) / denominator
-        uv = [attributes[0][k] * (1 - u - v) + attributes[1][k] * u + attributes[2][k] * v for k in (10, 11)]
-        alpha = cutouts[role]
-        x = max(0, min(alpha.shape[1] - 1, int(uv[0] * alpha.shape[1])))
-        y = max(0, min(alpha.shape[0] - 1, int((1 - uv[1]) * alpha.shape[0])))
-        return alpha[y, x] > thresholds[role]
-
-    def blocked(point, direction):
-        # Offline alpha-aware rays prevent transparent card rectangles from darkening the distant impostor.
-        for _ in range(len(faces)):
-            hit, _, index, _ = tree.ray_cast(point, direction)
-            if hit is None:
-                return False
-            if covered(index, hit):
-                return True
-            point = hit + direction * .002
-        return False
-
-    lit = total = hard = seen = 0
-    for index, (face, (role, attributes)) in enumerate(zip(faces, corners)):
-        a, b, c = (vertices[i] for i in face)
-        normal = (b - a).cross(c - a)
-        shown = normal.dot(toward) / 2
-        if shown <= 0:
-            continue
-        normal.normalize()
-        leaves = not solid(role) and role not in ('snow', 'canopy-snow-cutout')
-        for u, v in ((1 / 3, 1 / 3), (2 / 3, 1 / 6), (1 / 6, 2 / 3), (1 / 6, 1 / 6)):
-            point = a + (b - a) * u + (c - a) * v + normal * .01
-            # A point behind the plant's nearer parts does not show on the card.
-            if not covered(index, point) or blocked(point, toward):
-                continue
-            seen += shown
-            hard += 0 if leaves else shown
-            for sun in SUNS:
-                weight = shown * max(0, .6 * normal.dot(sun) + .4 if leaves else normal.dot(sun))
-                total += weight
-                if weight and not blocked(point, sun):
-                    lit += weight
-    return (lit / total if total else 1), (hard / seen if seen else 0)
-
-
 def impostor(scene, model, name, images):
-    """LOD3: two crossed vertical cards and a horizontal cap through the crown, textured with unlit orthographic
-    renders of LOD0 from the front, the side and above. Fixed in the plant's frame, it draws, shadows and picks like
-    any mesh; seen from above, only the cap shows. Each face has a back, as the game culls back faces."""
+    """LOD3: two crossed vertical cards and a horizontal cap through the crown, textured with orthographic renders of
+    `model` (the plant's coarsest mesh level) from the front, the side and above. Fixed in the plant's frame, it draws,
+    shadows and picks like any mesh; seen from above, only the cap shows. Each face has a back, as the game culls back
+    faces; the back shows the same renders mirrored through its card.
+
+    The colour atlas holds the unlit pigment and its coverage. The normal atlas holds, in its RGB, the normal of the
+    surface each texel shows (signed, as n * 127 + 128) in the frame terrain-foliage.frag builds from the card: x along
+    the texture's u, y across it about z, the card's vertex normal, which is the direction its render looked from; and,
+    in its alpha, how far along that direction the surface stands out of the card (.5 the card itself, 0 and 1 a panel
+    side behind and in front), where the game looks up its shadow. The vertical cards stretch the silhouette along v to
+    fit it, so that point can lie up to a few units above or below the surface; measured against LOD2, placing it exactly
+    (along y as well) matched worse. Each card's colour carries its texels' mean occlusion, the share of them that is
+    bark, cactus or snow (lit as solid), and the mean roughness and scatter of the rest, the leaves, as their materials
+    give them."""
     low, high = bounds(model)
     cap = crown(model, low, high)
     panels = [framing(turn, low, high) for turn in FACES]
-    render_faces(scene, model, name, images, panels)
-    vertices, indices = [], []
+    colour, covered = unpremultiplied(render(scene, model, name, images, panels, 'colour'))
+    normals = unpremultiplied(render(scene, model, name, images, panels, 'normal'))[0] * 2 - 1
+    positions = (unpremultiplied(render(scene, model, name, images, panels, 'position'))[0] - .5) * 4
+    surface = unpremultiplied(render(scene, model, name, images, panels, 'surface'))[0]
+    hard = unpremultiplied(render(scene, model, name, images, panels, 'solid'))[0][..., 0]
+    filled = covered > 0
+    # Texels far from the plant, which dilation leaves, read as the card itself.
+    shape = numpy.tile(numpy.array((0, 0, 1, 0)), colour.shape[:2] + (1,)).astype(numpy.float64)
+    vertices, indices, card = [], [], []
     corners = (((low[0], 0, low[2]), (high[0], 0, low[2]), (high[0], 0, high[2]), (low[0], 0, high[2])),
                ((0, low[1], low[2]), (0, high[1], low[2]), (0, high[1], high[2]), (0, low[1], high[2])),
                ((low[0], low[1], cap), (high[0], low[1], cap), (high[0], high[1], cap), (low[0], high[1], cap)))
     for panel, (quad, turn, (size, centre)) in enumerate(zip(corners, FACES, panels)):
         rotation = turn.to_matrix()
-        positions = numpy.asarray(model['meshes'][0]['vertices']).reshape(-1, 12)[:, :3]
-        projected_z = positions @ numpy.asarray(rotation)[2]
-        bottom, top = float(projected_z.min()), float(projected_z.max())
-        # Each side is lit like the surfaces its render shows, by their mean normal: not straight up (a sky-facing
-        # card outshines a cactus's walls) and constant across the side (a normal that varied across a flat card
-        # would darken the half turned from the light while it stays in view). The back shows the same render
-        # mirrored, so its normal mirrors through the card.
+        positions_z = numpy.asarray(model['meshes'][0]['vertices']).reshape(-1, 12)[:, :3] @ numpy.asarray(rotation)[2]
+        bottom, top = float(positions_z.min()), float(positions_z.max())
         toward = rotation.transposed() @ Vector((0, -1, 0))
-        front = shown_normal(model, toward)
-        # The colour carries how the card takes the sun: the share its plant's own leaves let through, and how much of
-        # what it shows is bark, cactus or snow.
-        sunlit, hard = lighting(model, toward)
+        uvs = []
+        for point in quad:
+            # Each corner maps to where the render placed it, in the camera's right and up axes.
+            seen = rotation @ Vector(point)
+            if panel < 2:
+                # Fit the actual tilted silhouette to the card, not the empty corners of its bounding box.
+                # This preserves the whole crown and keeps its visible roots at the foot of the card.
+                seen.z = bottom + (point[2] - low[2]) / (high[2] - low[2]) * (top - bottom)
+            uvs.append(((panel + .5 + (seen.x - centre.x) / size) / 3, .5 - (seen.z - centre.z) / size))
+        # The card's points by texture coordinate (affine: the card is a rectangle), and the frame the game builds.
+        origin = numpy.asarray(quad[0])
+        along_u = (numpy.asarray(quad[1]) - origin) / (uvs[1][0] - uvs[0][0])
+        along_v = (numpy.asarray(quad[3]) - origin) / (uvs[3][1] - uvs[0][1])
+        normal = numpy.asarray(toward)
+        tangent = along_u - normal * (normal @ along_u)
+        tangent /= numpy.linalg.norm(tangent)
+        bitangent = numpy.cross(normal, tangent)
+        if bitangent @ along_v < 0:
+            bitangent = -bitangent
+        block = slice(panel * PANEL, (panel + 1) * PANEL)
+        u = (numpy.arange(panel * PANEL, (panel + 1) * PANEL) + .5) / (3 * PANEL)
+        v = (numpy.arange(PANEL) + .5) / PANEL
+        on_card = origin + (u[None, :, None] - uvs[0][0]) * along_u + (v[:, None, None] - uvs[0][1]) * along_v
+        # The object's transform: location + rotation @ (point / size).
+        location = numpy.array((panel - 1 - centre.x / size, 0, -centre.z / size))
+        world = positions[:, block] - location
+        point = world @ numpy.asarray(rotation) * size
+        seen = normals[:, block] @ numpy.asarray(rotation)
+        seen /= numpy.maximum(numpy.linalg.norm(seen, axis=2, keepdims=True), 1e-6)
+        here = filled[:, block]
+        # Signed: the normal in the card's frame, and the surface's depth along z in panel sides.
+        shape[:, block, 0][here] = (seen @ tangent)[here]
+        shape[:, block, 1][here] = (seen @ bitangent)[here]
+        shape[:, block, 2][here] = (seen @ normal)[here]
+        shape[:, block, 3][here] = ((point - on_card) @ normal / size)[here]
+        weight = covered[:, block]
+        total = max(float(weight.sum()), 1e-6)
+        bark = float((hard[:, block] * weight).sum()) / total
+        leaves = numpy.maximum(weight * (1 - hard[:, block]), 0)
+        leaf_total = float(leaves.sum())
+        mean = lambda channel, w, t: float((surface[:, block, channel] * w).sum()) / t if t > 1e-6 else SURFACE[channel]
+        card.append((mean(0, weight, total), bark, mean(1, leaves, leaf_total), mean(2, leaves, leaf_total)))
         plane = (Vector(quad[1]) - Vector(quad[0])).cross(Vector(quad[2]) - Vector(quad[0])).normalized()
-        for side, normal in enumerate((front, front - 2 * front.dot(plane) * plane)):
+        # The back's renders are the front's mirrored through the card: so is the direction they looked from.
+        for side, facing in enumerate((toward, toward - 2 * toward.dot(plane) * plane)):
             base = len(vertices) // 12
-            for point in quad:
-                # Each corner maps to where the render placed it, in the camera's right and up axes.
-                seen = rotation @ Vector(point)
-                if panel < 2:
-                    # Fit the actual tilted silhouette to the card, not the empty corners of its bounding box.
-                    # This preserves the whole crown and keeps its visible roots at the foot of the card.
-                    seen.z = bottom + (point[2] - low[2]) / (high[2] - low[2]) * (top - bottom)
-                u = (panel + .5 + (seen.x - centre.x) / size) / 3
-                v = .5 - (seen.z - centre.z) / size
-                vertices.extend(round(value, 6) for value in (*point, *normal, sunlit, hard, 1, 1, u, v))
+            for point, (tu, tv) in zip(quad, uvs):
+                vertices.extend(round(value, 6) for value in (*point, *facing, *card[panel], tu, tv))
             indices.extend((base, base + 2, base + 1, base, base + 3, base + 2) if side
                            else (base, base + 1, base + 2, base, base + 2, base + 3))
+    pigment = dilate(colour, filled)
+    save(numpy.concatenate([srgb(pigment), covered[..., None]], axis=2), BOARD / IMPOSTORS / (name + '.png'))
+    shape = dilate(shape, filled)
+    save(numpy.concatenate([numpy.clip(shape[..., :3] * 127 + 128, 0, 255) / 255,
+                            numpy.clip(shape[..., 3:] * .5 + .5, 0, 1)], axis=2), BOARD / IMPOSTORS / (name + '_normal.png'))
     asset = f'{name}-lod3'
     return {'id': asset,
             'meshes': [{'attributes': ['POSITION', 'NORMAL', 'COLOR', 'TEXCOORD0'], 'vertices': vertices,
@@ -377,11 +389,13 @@ def impostor(scene, model, name, images):
             'nodes': [{'id': asset, 'parts': [{'meshpartid': 'impostor', 'materialid': 'impostor'}]}],
             'materials': [{'id': 'impostor', 'diffuse': [1, 1, 1], 'alphaTest': .5, 'textures': [
                 {'id': 'impostor', 'type': 'DIFFUSE', 'filename': f'../{IMPOSTORS}/{name}.png',
+                 'wrapS': 33071, 'wrapT': 33071},
+                {'id': 'impostor-normal', 'type': 'NORMAL', 'filename': f'../{IMPOSTORS}/{name}_normal.png',
                  'wrapS': 33071, 'wrapT': 33071}]}]}
 
 
 def winter(model):
-    """LOD0 in its snow form (mmSnow on a canopy material): the snow maps under its name, the
+    """A mesh level in its snow form (mmSnow on a canopy material): the snow maps under its name, the
     canopy's vertex colours times its linear colour scale, as the game builds the winter form (RigidGlb.source)."""
     variants = {material['id']: material['extras']['mmSnow'] for material in model['materials']
                 if material['id'] != 'impostor' and 'mmSnow' in material.get('extras', {})}
@@ -429,14 +443,15 @@ def impostors(only=None):
         camera.rotation_euler = (math.pi / 2, 0, 0)
         scene.camera = camera
         scene.render.engine = 'BLENDER_EEVEE'
-        scene.render.resolution_x, scene.render.resolution_y = 3 * PANEL, PANEL
+        scene.render.resolution_x, scene.render.resolution_y = 3 * PANEL * SAMPLES, PANEL * SAMPLES
         scene.render.resolution_percentage = 100
         scene.render.film_transparent = True
         scene.render.filter_size = 1.0
-        scene.render.image_settings.file_format = 'PNG'
+        # Linear float renders: impostor() averages and encodes them itself.
+        scene.render.image_settings.file_format = 'OPEN_EXR'
         scene.render.image_settings.color_mode = 'RGBA'
-        scene.render.image_settings.color_depth = '8'
-        # Linear unlit pigment becomes an ordinary sRGB PNG; no tone map, exposure or artistic grade.
+        scene.render.image_settings.color_depth = '32'
+        # No tone map, exposure or artistic grade.
         scene.display_settings.display_device = 'sRGB'
         scene.view_settings.view_transform = 'Standard'
         scene.view_settings.look = 'None'
@@ -456,6 +471,8 @@ def impostors(only=None):
                 continue
             path = BOARD / entry['mesh']
             levels = {level: read_glb(path, level, linear_colors=True) for level in range(min(3, len(entry['lods'])))}
+            # The cards stand for the coarsest mesh level, which they replace.
+            source = levels[max(levels)]
             # The impostor material's extras hold the winter impostor (mmSnow).
             extras = next((material.get('extras') for material in levels[0]['materials']
                            if material['id'] == 'impostor'), None)
@@ -463,14 +480,15 @@ def impostors(only=None):
                                if material['id'] == 'impostor'), .5)
             for model in levels.values():
                 model['materials'] = [material for material in model['materials'] if material['id'] != 'impostor']
-            levels[3] = impostor(scene, levels[0], name, images)
+            levels[3] = impostor(scene, source, name, images)
             levels[3]['materials'][0]['alphaTest'] = alpha_test
-            # A winter form kept as mmSnow gets its own impostor render and card colours.
-            cold = winter(levels[0])
+            # A winter form kept as mmSnow gets its own impostor renders and card colours.
+            cold = winter(source)
             if cold:
                 frozen = impostor(scene, cold, name + '-snow', images)['meshes'][0]['vertices']
                 extras = {'mmSnow': {
-                    'textures': {'baseColor': f'../{IMPOSTORS}/{name}-snow.png'},
+                    'textures': {'baseColor': f'../{IMPOSTORS}/{name}-snow.png',
+                                 'normal': f'../{IMPOSTORS}/{name}-snow_normal.png'},
                     'colours': [frozen[i + 6:i + 10] for i in range(0, len(frozen), 12)]}}
             if extras:
                 levels[3]['materials'][0]['extras'] = extras

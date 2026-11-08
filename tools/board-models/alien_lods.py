@@ -11,6 +11,7 @@ The sources are the original GLBs as committed before the grown versions replace
 the tool's own output, which is already decimated.
 """
 import json
+import math
 import subprocess
 import sys
 import tempfile
@@ -18,6 +19,7 @@ from pathlib import Path
 
 import bmesh
 import bpy
+import numpy
 
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT / 'tools'))
@@ -30,6 +32,10 @@ SOURCE = 'e5e46803e5^'
 # Triangles per mesh level: twice the trees' near budgets (the user's allowance for alien plants), then the far level
 # the trees use; the impostor bake adds the fourth.
 BUDGETS = (3200, 820, 96)
+# The far level takes over from the middle one at this projected diameter (TreeLod's second threshold, in pixels). Its
+# silhouette there, from above and from the board's isometric view all round, keeps at least COVERAGE of the middle
+# level's: a sculpt's thin fans and spires collapse first, so its budget grows from BUDGETS[2] by GROWTH until they stay.
+SWITCH, COVERAGE, GROWTH = 48, .92, 1.25
 # Per family: the plants; `flare`, how far a plant opens outward as it rises (a share of its reach added per unit of
 # height, so sea fans and the lattice catch the sky and read as cover from above instead of dark upright sheets); the
 # weathering in linear light: crevices (Blender's vertex dirt on the sculpt) darken toward `crevice`, sky-facing skin
@@ -168,6 +174,38 @@ def decimated(data, budget):
     return vertices, indices
 
 
+def diagonal(vertices):
+    points = numpy.asarray(vertices, dtype=numpy.float64).reshape(-1, 12)[:, :3]
+    return float(numpy.linalg.norm(points.max(0) - points.min(0)))
+
+
+def silhouettes(vertices, indices, scale):
+    """The pixels a level covers at `scale` pixels a unit, from straight above and from the isometric view (35.26
+    degrees up) at four turns: one count per view."""
+    points = numpy.asarray(vertices, dtype=numpy.float64).reshape(-1, 12)[:, :3]
+    triangles = points[numpy.asarray(indices).reshape(-1, 3)]
+    elevation = math.atan(1 / math.sqrt(2))
+    views = [numpy.eye(3)[:2]]
+    for turn in (0, math.pi / 2, math.pi, 3 * math.pi / 2):
+        right = numpy.array((math.cos(turn), math.sin(turn), 0))
+        up = numpy.array((-math.sin(turn) * math.sin(elevation), math.cos(turn) * math.sin(elevation), math.cos(elevation)))
+        views.append(numpy.stack((right, up)))
+    counts = []
+    for axes in views:
+        flat = triangles @ axes.T * scale
+        flat -= flat.reshape(-1, 2).min(0)
+        size = int(numpy.ceil(flat.max())) + 2
+        covered = numpy.zeros((size, size), dtype=bool)
+        for a, b, c in flat:
+            low, high = numpy.floor(numpy.minimum(numpy.minimum(a, b), c)).astype(int), numpy.ceil(numpy.maximum(numpy.maximum(a, b), c)).astype(int)
+            xs, ys = numpy.meshgrid(numpy.arange(low[0], high[0] + 1) + .5, numpy.arange(low[1], high[1] + 1) + .5)
+            edges = [(q[0] - p[0]) * (ys - p[1]) - (q[1] - p[1]) * (xs - p[0]) for p, q in ((a, b), (b, c), (c, a))]
+            inside = ((edges[0] >= 0) & (edges[1] >= 0) & (edges[2] >= 0)) | ((edges[0] <= 0) & (edges[1] <= 0) & (edges[2] <= 0))
+            covered[low[1]:high[1] + 1, low[0]:high[0] + 1] |= inside
+        counts.append(int(covered.sum()))
+    return counts
+
+
 def apply(obj):
     """Bake the object's modifiers into a mesh of its own."""
     bpy.context.view_layer.update()
@@ -232,11 +270,21 @@ def build(family_name, name):
     heights = original['meshes'][0]['vertices'][2::12]
     low, high = min(heights), max(heights)
     for index, budget in enumerate(BUDGETS):
-        vertices, indices = decimated(data, budget)
-        # Collapse moves the roots and tips a little: every level keeps the original's ground and height exactly.
-        bottom, top = min(vertices[2::12]), max(vertices[2::12])
-        for i in range(2, len(vertices), 12):
-            vertices[i] = low + (vertices[i] - bottom) * (high - low) / (top - bottom)
+        while True:
+            vertices, indices = decimated(data, budget)
+            # Collapse moves the roots and tips a little: every level keeps the original's ground and height exactly.
+            bottom, top = min(vertices[2::12]), max(vertices[2::12])
+            for i in range(2, len(vertices), 12):
+                vertices[i] = low + (vertices[i] - bottom) * (high - low) / (top - bottom)
+            if index < 2 or budget >= BUDGETS[1]:
+                break
+            middle = levels[1]['meshes'][0]
+            scale = SWITCH / diagonal(middle['vertices'])
+            kept = min(far / near for far, near in zip(silhouettes(vertices, indices, scale),
+                                                       silhouettes(middle['vertices'], middle['parts'][0]['indices'], scale)))
+            if kept >= COVERAGE:
+                break
+            budget = int(budget * GROWTH)
         node = f'{name}-lod{index}'
         part = f'{node}-{material["id"]}'
         levels[index] = {'id': node, 'meshes': [{'attributes': ['POSITION', 'NORMAL', 'COLOR', 'TEXCOORD0'],
