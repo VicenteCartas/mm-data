@@ -253,12 +253,16 @@
         "utilities",
         "rooftop",
         "colony",
+        "civic",
         "utopia",
         "frontier"
       ],
       "subcategories": {
         "rooftop": [
           "rooftop"
+        ],
+        "civic": [
+          "civic"
         ],
         "utopia": [
           "utopia"
@@ -269,6 +273,11 @@
         "colony": [
           "colony"
         ]
+      },
+      "subcategoryShelf": {
+        "civic": "looks",
+        "utopia": "looks",
+        "frontier": "looks"
       }
     },
     {
@@ -4391,24 +4400,24 @@
     },
     {
       "id": "building/civic",
-      "label": "Civic",
+      "label": "Civic (Modular)",
       "owner": "building",
       "asset": "buildings/civic/civic",
-      "section": "buildings/looks"
+      "section": "buildings/civic"
     },
     {
       "id": "building/utopia",
-      "label": "Utopia",
+      "label": "Utopia (Modular)",
       "owner": "building",
       "asset": "buildings/utopia/utopia",
-      "section": "buildings/looks"
+      "section": "buildings/utopia"
     },
     {
       "id": "building/frontier",
-      "label": "Frontier",
+      "label": "Frontier (Modular)",
       "owner": "building",
       "asset": "buildings/frontier/frontier",
-      "section": "buildings/looks"
+      "section": "buildings/frontier"
     },
     {
       "id": "building/glass-dome",
@@ -6931,49 +6940,49 @@
       "id": "buildings/authored/civic-citadel",
       "label": "Civic citadel",
       "kind": "prop",
-      "section": "buildings/authored"
+      "section": "buildings/civic"
     },
     {
       "id": "buildings/authored/civic-habitat",
       "label": "Civic habitat",
       "kind": "prop",
-      "section": "buildings/authored"
+      "section": "buildings/civic"
     },
     {
       "id": "buildings/authored/civic-habitat2",
       "label": "Civic habitat 02",
       "kind": "prop",
-      "section": "buildings/authored"
+      "section": "buildings/civic"
     },
     {
       "id": "buildings/authored/civic-commercial-center",
       "label": "Civic commercial center",
       "kind": "prop",
-      "section": "buildings/authored"
+      "section": "buildings/civic"
     },
     {
       "id": "buildings/authored/civic-offices",
       "label": "Civic offices",
       "kind": "prop",
-      "section": "buildings/authored"
+      "section": "buildings/civic"
     },
     {
       "id": "buildings/authored/civic-industrial-works",
       "label": "Civic industrial works",
       "kind": "prop",
-      "section": "buildings/authored"
+      "section": "buildings/civic"
     },
     {
       "id": "buildings/authored/civic-medical-center",
       "label": "Civic medical center",
       "kind": "prop",
-      "section": "buildings/authored"
+      "section": "buildings/civic"
     },
     {
       "id": "buildings/authored/civic-church",
       "label": "Civic church",
       "kind": "prop",
-      "section": "buildings/authored"
+      "section": "buildings/civic"
     },
     {
       "id": "buildings/authored/neo-futurist-arena",
@@ -6985,7 +6994,7 @@
       "id": "buildings/authored/civic-arena",
       "label": "Civic arena",
       "kind": "prop",
-      "section": "buildings/authored"
+      "section": "buildings/civic"
     },
     {
       "id": "buildings/authored/utopia-garden-habitat",
@@ -7075,7 +7084,7 @@
       "id": "buildings/authored/civic-tower",
       "label": "Civic tower",
       "kind": "prop",
-      "section": "buildings/authored"
+      "section": "buildings/civic"
     },
     {
       "id": "crystal/cover-low-fan",
