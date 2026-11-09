@@ -123,12 +123,16 @@ def check_kit_materials(doc, path, textures):
             raise ValueError(f"A building kit's pieces use library materials only, not {material.get('name')}")
 
 
-def name_kit_materials(doc, path, textures):
+def prepare_kit_materials(doc, path, textures):
     """The game reads a piece's library material from its material's name, up to a '#' finish (GeneratedMesh#boardName)."""
     for material in doc.get('materials', []):
         board = kit_material(doc, material, path, textures)
         if board and material.get('name', '').split('#')[0] != board:
             material['name'] = board
+        # Blender's copy for a piece without UVs (texCoord -1), which the kit lays on the walls' axes, is the material.
+        for texture in [*material.values(), *material.get('pbrMetallicRoughness', {}).values()]:
+            if isinstance(texture, dict) and texture.get('texCoord') == -1:
+                texture['texCoord'] = 0
     # Blender's copies of one material become one; finishes of one library material that still differ are numbered.
     merge_identical_materials(doc)
     names = set()
@@ -205,8 +209,6 @@ def validate(doc, path, models_root):
         emission = material.get('extras', {}).get('mmEmission')
         if emission is not None and emission not in ('always', 'night', 'off'):
             raise ValueError(f'{name}: mmEmission must be always, night or off, not {emission}')
-        if material.get('alphaMode') == 'BLEND':
-            raise ValueError('The game requires opaque or alpha-tested materials, not alpha blending')
         strength = material.get('extensions', {}).get('KHR_materials_emissive_strength', {}).get('emissiveStrength', 1)
         if strength != 1:
             raise ValueError('The engine does not read KHR_materials_emissive_strength; keep GLB emission within 0–1, '

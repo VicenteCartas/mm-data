@@ -219,3 +219,20 @@ with tempfile.TemporaryDirectory(prefix='.mm-game-test-', dir=MODELS / 'building
         assert 'Part names must be unique' in str(error)
     other.mm_part = ''
     print('SLOT_REMOVAL_AND_PARTS_OK')
+
+    # Every shipped kit's pieces open and save as they are, pieces without UVs (laid on the walls' axes) and blended
+    # glass too, each material named after its library material.
+    def triangles(doc):
+        return sum(doc['accessors'][p['indices']]['count'] // 3 for mesh in doc['meshes'] for p in mesh['primitives'])
+    textures = MODELS.resolve() / 'board/textures'
+    for shipped in sorted(path for path in MODELS.glob('buildings/*/*-pieces.glb') if path.parent != temp):
+        copy = temp / shipped.name
+        shutil.copy2(shipped, copy)
+        addon.open_glb(bpy.context, copy)
+        addon.save_glb(bpy.context, copy)
+        before, after = addon.glb.read_glb(shipped)[0], addon.glb.read_glb(copy)[0]
+        assert triangles(before) == triangles(after), shipped
+        assert {n['name'] for n in before['nodes']} == {n['name'] for n in after['nodes']}, shipped
+        assert all(addon.glb.kit_material(after, item, copy, textures) == item['name'].split('#')[0]
+                   for item in after['materials']), (shipped, after['materials'])
+    print('SHIPPED_KITS_OK')

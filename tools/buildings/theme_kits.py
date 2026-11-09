@@ -333,7 +333,10 @@ def oval(rng, length=W, z0=2.6, z1=LEVEL):
     lit = rng.random() < .5
     for k in range(sides):
         j = (k+1) % sides
-        add('oval wall', WHITE_STONE, STONE_TINT, [(box[k][0], 0, box[k][1]), (box[j][0], 0, box[j][1]), (ring[j][0], 0, ring[j][1]), (ring[k][0], 0, ring[k][1])], [(0, 1, 2, 3)])
+        # Ring points that both look into a corner share it: their wall is a triangle.
+        wall = [(box[k][0], 0, box[k][1])] + ([(box[j][0], 0, box[j][1])] if box[j] != box[k] else [])
+        wall += [(ring[j][0], 0, ring[j][1]), (ring[k][0], 0, ring[k][1])]
+        add('oval wall', WHITE_STONE, STONE_TINT, wall, [tuple(range(len(wall)))])
         add('oval reveal', WHITE_STONE, STONE_SHADE, [(ring[k][0], 0, ring[k][1]), (ring[j][0], 0, ring[j][1]), (ring[j][0], 3, ring[j][1]), (ring[k][0], 3, ring[k][1])], [(0, 1, 2, 3)])
     add('oval glass', U_GLASS, GLASS_TINT, [(x, 2.95, z) for x, z in ring], [tuple(range(sides))], light='night' if lit else 'off')
 

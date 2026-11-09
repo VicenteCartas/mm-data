@@ -346,7 +346,8 @@ def save_glb(context, filepath, *, selected=False, snapshot=False):
                     read_material(textures_root(context) / mat['_mm_tres'], textures_root(context))
                     if any(n.type == 'TEX_IMAGE' and n.image and n.image.is_dirty for n in mat.node_tree.nodes):
                         raise ValueError(f'{mat.name}: save painted texture images first, or Reload Materials & Maps')
-                    if not obj.data.uv_layers:
+                    # A kit's spec may lay its pieces' materials on the walls' axes (BayKit planar): no UVs needed.
+                    if not obj.data.uv_layers and not glb.kit_pieces(path):
                         raise ValueError(f'UV unwrap {obj.name} before exporting textured materials')
         if obj.animation_data and (obj.animation_data.action or obj.animation_data.nla_tracks):
             raise ValueError(f'{obj.name}: this rigid GLB workflow does not save animation tracks')
@@ -377,7 +378,7 @@ def save_glb(context, filepath, *, selected=False, snapshot=False):
             glb.strip_editor_properties(doc)
             glb.merge_identical_materials(doc)
             if glb.kit_pieces(path):
-                glb.name_kit_materials(doc, path, (root / 'data/models').resolve() / 'board/textures')
+                glb.prepare_kit_materials(doc, path, (root / 'data/models').resolve() / 'board/textures')
             glb.ensure_lod_groups(doc, path.stem)
             glb.validate(doc, path, root / 'data/models')
             glb.write_glb(staged, doc, binary)
