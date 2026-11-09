@@ -758,15 +758,16 @@ def frontier_greenhouse(rng, kind, base=False, length=W):
 
 def frontier_joint(rng, kind):
     """Where a module meets the next (BayKit joints), built for a wall's end and mirrored for its start: its vertical
-    edge bevelled as its top and bottom are, so neighbouring modules part in a V groove. The bevels meet along the
-    corner's diagonal down to the groove's bottom at the joint line, so where the groove crosses a storey's the four
-    modules meet in one point, closed; under a roof the roof's seam carries the groove on. An amber marker by its top
+    edge bevelled as its top and bottom are, so neighbouring modules part in a V groove. At the bottom the bevels meet
+    along the corner's diagonal down to the groove's bottom at the joint line; at the top the three bevels meet in a
+    point, which the roof's seam bevel closes under a roof, or the storey above's fill (frontier_joint_fill) turns into
+    the same crossing, so where grooves cross the four modules meet in one point, closed. An amber marker by its top
     corner; on the ground, a skid under it."""
-    H, C = LEVEL, CHAMFER
+    H, C, m = LEVEL, CHAMFER, CHAMFER/2
     f = FOOT if kind == 'base' else 0.0
-    bevel([(0, 0, H-C), (C, C, H), (0, C, H)], (0, -1, 1), lambda v: v[1])
+    bevel([(0, 0, H-C), (m, m, H-m), (0, C, H)], (0, -1, 1), lambda v: v[1])
     bevel([(0, C, f), (C, C, f), (0, 0, C+f)], (0, -1, -1), lambda v: v[1])
-    bevel([(0, 0, C+f), (C, C, f), (C, C, H), (0, 0, H-C)], (1, -1, 0), lambda v: v[1])
+    bevel([(0, 0, C+f), (C, C, f), (C, C, H-C), (m, m, H-m), (0, 0, H-C)], (1, -1, 0), lambda v: v[1])
     if f:
         add('foot recess', PAINT, DARK, [(0, C, 0), (C, C, 0), (C, C, f), (0, C, f)], [(0, 1, 2, 3)])
     marker(-.7, H-C-BAND/2, -BAND_OUT-.02)
@@ -774,6 +775,14 @@ def frontier_joint(rng, kind):
     if kind == 'base':
         cuboid('skid foot', -2.8, C-.8, -.3, C+.6, 0, C*.8, PAINT, DARK, omit='b')
         marker(-1.2, C*.4, -.32)
+
+
+def frontier_joint_fill(rng):
+    """What a storey's joint (frontier_joint) gains at its top where another storey stands on it: its corner filled up to
+    the groove's bottom at the joint line, the crossing its bottom has."""
+    H, C, m = LEVEL, CHAMFER, CHAMFER/2
+    bevel([(m, m, H-m), (C, C, H), (0, C, H)], (0, -1, 1), lambda v: v[1])
+    bevel([(m, m, H-m), (C, C, H-C), (C, C, H)], (1, -1, 0), lambda v: v[1])
 
 
 def mirrored(builder, length):
@@ -909,6 +918,8 @@ FRONTIER_PIECES = {
     'corner-base': lambda rng: frontier_corner(rng, 'base'), 'corner': lambda rng: frontier_corner(rng, 'plain'),
     'joint-end': lambda rng: frontier_joint(rng, 'plain'), 'joint-start': mirrored(lambda rng: frontier_joint(rng, 'plain'), CHAMFER),
     'base-joint-end': lambda rng: frontier_joint(rng, 'base'), 'base-joint-start': mirrored(lambda rng: frontier_joint(rng, 'base'), CHAMFER),
+    'joint-end-fill': frontier_joint_fill, 'joint-start-fill': mirrored(frontier_joint_fill, CHAMFER),
+    'base-joint-end-fill': frontier_joint_fill, 'base-joint-start-fill': mirrored(frontier_joint_fill, CHAMFER),
     **kinds('roof', frontier_roof, ('plain', 'pipe', 'grille', 'light')),
     'roof-corner': lambda rng: roof_border(ROUND), 'roof-seam': frontier_seam,
     'solar': frontier_solar, 'radome': frontier_radome, 'hvac': frontier_hvac, 'hatch': frontier_hatch, 'beacon': frontier_beacon,
