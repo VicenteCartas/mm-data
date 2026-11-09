@@ -151,7 +151,9 @@ and `floors` slabs (a board material on the board's axes, its `repeat`, an `inse
 of detail; a glass roof's `underlay`, the biodome's planted bed just under it; a roof's `aol`, aviation obstruction
 lights, below); the ground storey's `sidewalk` (`width`, `kerb`; none without); and its `modules` by role, one run per level
 of detail (the last for any further). A run lays whole `bay`s of its `bays` pieces (several: chosen by the wall's place)
-stretched to fit between a `margin` at each end, a ground storey's `door` piece in a hub face's first bay and next to
+stretched to fit between a `margin` at each end, along each whole side of the outline (the nearest count; with the
+variant's `varyBays`, a bay fewer or more by the wall's place where both stretch between 0.7 and 1.5: civic, the light
+building and fortress, the placeholders; not Frontier or Utopia), a ground storey's `door` piece in a hub face's first bay and next to
 the middle of a whole hex's front; with no margin a bay more goes on past an end where the wall goes on. Whole `ends`
 stretches (`piece`, `length`) fill the margins, one `under` stretch lies along the whole wall, and `planar` materials
 are textured along the wall's line (units a repeat). `cornerRadius` and `cornerSegments` round convex corners into

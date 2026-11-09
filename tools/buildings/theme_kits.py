@@ -1002,6 +1002,7 @@ def civic_variant(name, floors):
             'roof0': run(['parapet-plain', 'parapet-rail', 'parapet-plain', 'parapet-tall'], p),
         },
         'fittings': CIVIC_FITTINGS,
+        'varyBays': True,
     }
 
 
