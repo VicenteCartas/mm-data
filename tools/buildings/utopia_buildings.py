@@ -138,8 +138,9 @@ def wrap_uv(obj, repeat=REPEAT):
             layer.data[li].uv = (co[u]/repeat, co[v]/repeat)
 
 
-def loft(name, rings, key=STONE, colour=STONE_TINT, closed=True, caps=(False, False), smooth=32, flip=False, **kw):
-    """Quads between rings [(ring, z)], z a number or one height per point. Going up, a counter-clockwise ring faces out."""
+def loft(name, rings, key=STONE, colour=STONE_TINT, closed=True, caps=(False, False), smooth=32, flip=False, weld=False, **kw):
+    """Quads between rings [(ring, z)], z a number or one height per point. Going up, a counter-clockwise ring faces out.
+    weld joins points that meet, so rings closing to a point shade smoothly across it."""
     n = len(rings[0][0])
     verts = []
     for ring, z in rings:
@@ -155,7 +156,17 @@ def loft(name, rings, key=STONE, colour=STONE_TINT, closed=True, caps=(False, Fa
         faces.append(tuple(range(n-1, -1, -1)))
     if caps[1]:
         faces.append(tuple((len(rings)-1)*n+i for i in range(n)))
-    return add_mesh(name, key, colour, verts, faces, smooth=smooth, **kw)
+    obj = add_mesh(name, key, colour, verts, faces, smooth=smooth, **kw)
+    if weld:
+        bm = bmesh.new()
+        bm.from_mesh(obj.data)
+        bmesh.ops.remove_doubles(bm, verts=bm.verts, dist=1e-3)
+        bmesh.ops.dissolve_degenerate(bm, edges=bm.edges, dist=1e-4)
+        bm.to_mesh(obj.data)
+        bm.free()
+        obj.data.shade_smooth()
+        obj.data.set_sharp_from_angle(angle=math.radians(smooth))
+    return obj
 
 
 def cap(name, ring, z, key=STONE, colour=STONE_TINT, **kw):
@@ -745,14 +756,19 @@ def outline(points):
     return spline(np.array(points, float), dense={0: 5, 1: 3, 2: 2}[LOD])
 
 
-def wrapped_skin(name, surface, top, openings, reach=math.pi, depth=4.0, key=STONE, colour=STONE_TINT, lip=.9, keep_back=False):
+def wrapped_skin(name, surface, top, openings, reach=math.pi, depth=4.0, key=STONE, colour=STONE_TINT, lip=.9, keep_back=False, columns=None):
     """Stone over the angles -reach..reach from the ground up to top(angles), with the openings cut through it.
 
     surface(angles, heights) gives each point on the wall and its outward direction, both N x 3. A lip runs round each opening.
+    columns, if given, are the sheet's upright lines (angles from -reach to reach), for walls that turn tighter in places.
     """
-    across = max(6, int({0: 96, 1: 36, 2: 16}[LOD]*reach/math.pi))
+    if columns is None:
+        across = max(6, int({0: 96, 1: 36, 2: 16}[LOD]*reach/math.pi))
+        us = np.linspace(-reach, reach, across+1)
+    else:
+        us = np.asarray(columns, float)
+        across = len(us)-1
     scale = 60  # Units per radian in the flat sheet: only proportions matter.
-    us = np.linspace(-reach, reach, across+1)
     tops = np.asarray(top(us), float)
     rows = max(2, int(tops.max()/{0: 7, 1: 24, 2: 48}[LOD]))
     shares = [j/rows for j in range(rows+1)]
@@ -800,12 +816,21 @@ def wrapped_skin(name, surface, top, openings, reach=math.pi, depth=4.0, key=STO
     data.set_sharp_from_angle(angle=math.radians(40 if LOD == 0 else 72))
     wrap_uv(obj)
     if LOD == 0:
+        # The lip is sunk into the wall and moved off the opening's edge: a corner hovering over the wall, or lying on the
+        # opening's cut face, shows as a dotted line at grazing angles. Round an opening cut from below the ground it runs
+        # straight down into the ground, where its ends are hidden.
         for points in openings:
             curve = outline(points)
-            keep = [q for q in curve if q[1] > .5]
-            u, z = np.radians(np.array(keep)[:, 0]), np.array(keep)[:, 1]
-            where, facing = surface(u, z)
-            tube(name+' lip', where+facing*.1, lip, key, colour, sides=4, closed=len(keep) == len(curve), smooth=70)
+            keep = curve[curve[:, 1] > .5]
+            closed = len(keep) == len(curve)
+            if not closed:
+                keep = np.r_[[(keep[0, 0], -1.5)], keep, [(keep[-1, 0], -1.5)]]
+            where, facing = surface(np.radians(keep[:, 0]), keep[:, 1])
+            away = np.cross(np.roll(where, -1, 0)-np.roll(where, 1, 0) if closed else np.gradient(where, axis=0), facing)
+            away /= np.linalg.norm(away, axis=1)[:, None]
+            middle = surface(np.radians(curve[:, 0].mean(keepdims=True)), curve[:, 1].mean(keepdims=True))[0]
+            away *= np.sign(np.sum((where-middle)*away))  # Away from the opening, into the stone.
+            tube(name+' lip', where+(away-facing)*lip/8, lip, key, colour, sides=4, closed=closed, smooth=70)
     return obj
 
 
@@ -957,16 +982,17 @@ def office_volumes(inside, around, entry, pull):
     volume_prism('building_volume roof', ring_on(inside, around, 60), 215, 216)
 
 
-def ring_surface(low, high, z0, z1, reach, closed=False, profile=lambda t: t, away_from=None):
-    """A wall between two plan rings of equal length, for wrapped_skin: angle -reach..reach runs along them, their right side outward (or away from a point)."""
+def ring_surface(low, high, z0, z1, reach, closed=False, profile=lambda t: t, away_from=None, along=None, facing=None):
+    """A wall between two plan rings of equal length, for wrapped_skin: angle -reach..reach runs along them, their right side outward (or away from a point).
+    along gives each point's angle where they are not evenly spaced; facing gives each point's outward direction."""
     count = len(low)
-    plain = normals(low)
-    if not closed:
+    plain = normals(low) if facing is None else facing
+    if not closed and facing is None:
         plain[0], plain[-1] = plain[1], plain[-2]
 
     def surface(angles, heights):
-        f = (np.asarray(angles)+reach)/(2*reach)*(count if closed else count-1)
         grid = np.arange(count)
+        f = np.interp(angles, along, grid) if along is not None else (np.asarray(angles)+reach)/(2*reach)*(count if closed else count-1)
         pick = lambda ring, axis: np.interp(f, grid, ring[:, axis], period=count) if closed else np.interp(f, grid, ring[:, axis])
         t = profile(np.clip((np.asarray(heights)-z0)/(z1-z0), 0, 1))[:, None]
         a, b = np.c_[pick(low, 0), pick(low, 1)], np.c_[pick(high, 0), pick(high, 1)]
@@ -1032,26 +1058,53 @@ def market_pavilion(rng):
     far = polar_ring(tp([(372, 480), (495, 515), (580, 600), (628, 700), (630, 790), (590, 880), (548, 935), (372, 960), (190, 935), (140, 870), (115, 780), (125, 690), (170, 590), (250, 515)]), hub, n)
     near = polar_ring(tp([(372, 660), (450, 680), (495, 730), (503, 800), (500, 925), (372, 955), (240, 925), (238, 800), (255, 730), (295, 680)]), hub, n)
     ids = indices_between(far, hub, -36, 214)
-    outer, inner = far[ids], near[ids]
-    m = len(ids)
-    us = np.linspace(-125, 125, m)
-    # The feet round off: outer and inner close to a tip.
-    centre_line = (outer+inner)/2
-    closing = np.sqrt(np.clip(1-(np.maximum(np.abs(us)-108, 0)/17)**2, 0, 1))[:, None]
-    outer, inner = centre_line+(outer-centre_line)*closing, centre_line+(inner-centre_line)*closing
-    reach = math.radians(125)
+    span = np.linspace(-125, 125, len(ids))
+    pick = lambda ring, u: np.c_[np.interp(u, span, ring[ids, 0]), np.interp(u, span, ring[ids, 1])]
+    # The arm runs to cap_u; each foot then closes in chords at even turns round a round end, carrying on the arm's taper.
+    cap_u = 114
+    turn = np.radians(np.linspace(0, 90, {0: 14, 1: 5, 2: 3}[LOD]+1))[1:]
+    k = len(turn)
+    end = cap_u+(125-cap_u)*np.sin(turn)
+    us = np.r_[-end[::-1], np.linspace(-cap_u, cap_u, 2*int(round(cap_u/(span[1]-span[0])))+1), end]
+    m = len(us)
+    centre, half = (pick(far, us)+pick(near, us))/2, (pick(far, us)-pick(near, us))/2
+    half_width = lambda u: np.hypot(*(pick(far, u)-pick(near, u)).T)/2
+    side = np.sign(us)*cap_u
+    held = half_width(side)+(half_width(side)-half_width(side-2*np.sign(us)))/2*(np.abs(us)-cap_u)
+    shut = np.sqrt(1-np.sin(turn)**2)
+    closing = np.r_[shut[::-1], np.ones(m-2*k), shut]
+    capped = np.abs(us) > cap_u
+    half[capped] *= (held*closing/np.hypot(*half.T))[capped, None]
+    outer, inner = centre+half, centre-half
+    # Outward directions round the whole outline, the round ends included: out of the outer ring, and into the courtyard from the inner one.
+    facing = normals(np.r_[outer, inner[-2:0:-1]])
+    out_n, in_n = facing[:m], np.r_[facing[:1], facing[m:][::-1], facing[m-1:m]]
     ease = lambda t: np.clip(t, 0, 1)**2*(3-2*np.clip(t, 0, 1))
     foot = lambda u: ease((125-np.abs(u))/26)
     lift = {0: 0, 1: .4, 2: 1.0}[LOD]
-    roof_z = lambda u: 28+24*foot(u)+lift
+    roof_z = lambda u: 34+18*foot(u)+lift
     edge_z = lambda u: roof_z(u)-8*np.exp(-(np.asarray(u)/48)**2)*foot(u)
-    # The outer wall, with its ovals and a service door.
-    outside = ring_surface(offset(outer, 3), outer, 0, 40, reach)
+    kerb = lambda u: ease((106-np.abs(u))/7)  # The planted roof's raised rim, gone on the slopes.
+    eave = lambda u: ease((110-np.abs(u))/14)  # The roof's overhang over the courtyard face, gone at the feet.
+    bend = 2.0  # The rounded rim's radius.
+    rim_z = lambda u: roof_z(u)+.9*kerb(u)
+    court_z = lambda u: eave(u)*edge_z(u)+(1-eave(u))*(roof_z(u)-bend)
+    # The outer wall wraps round both ends to the courtyard face. Along it, s runs -250+cap_u..250-cap_u: u on the outer ring, 250-|u| on an end's inner half.
+    wrap = np.r_[inner[k:0:-1], outer, inner[m-2:m-2-k:-1]]
+    wrap_n = np.r_[in_n[k:0:-1], out_n, in_n[m-2:m-2-k:-1]]
+    wrap_s = np.r_[-250-us[k:0:-1], us, 250-us[m-2:m-2-k:-1]]
+    unwrap = lambda s: np.where(np.abs(s) > 125, np.sign(s)*(250-np.abs(s)), s)
+    seam = 250-cap_u
+    batter = 3*ease((seam-np.abs(wrap_s))/(seam-cap_u))  # Out at the foot of the outer wall, none where it meets the courtyard face.
+    outside = ring_surface(wrap+wrap_n*batter[:, None], wrap, 0, 40, math.radians(seam), along=np.radians(wrap_s), facing=wrap_n, profile=lambda t: 1-(1-t)**2)
+    density = {0: 96, 1: 36, 2: 16}[LOD]*cap_u/180
     ovals = [tilted_oval(-92, 31, 20, 15, 9), tilted_oval(-62, 14, 10, 8, 1), tilted_oval(92, 31, 20, 15, -9)]
-    wrapped_skin('outer wall', outside, lambda a: roof_z(np.degrees(a))-.5, ovals, reach=reach)
+    # Narrow last columns keep the wall's shading true where it meets the courtyard face.
+    columns = np.unique(np.r_[np.linspace(-cap_u, cap_u, int(density)+1), wrap_s[np.abs(wrap_s) > cap_u], .15-seam, seam-.15])
+    wrapped_skin('outer wall', outside, lambda a: rim_z(unwrap(np.degrees(a)))-bend, ovals, reach=math.radians(seam), columns=np.radians(columns))
     around = np.radians(us)
     backed = np.abs(us) < 113
-    dark = [(ring_on(outside, around[backed], z, inset=DARK_INSET[LOD]), z) for z in (1, roof_z(us[backed])-1)]
+    dark = [(ring_on(outside, around[backed], z, inset=DARK_INSET[LOD]), z) for z in (1, rim_z(us[backed])-bend-.5)]
     loft('louvre dark', dark, FLAT, LOUVRE_BACK, closed=False, smooth=None, stone_uv=False, uvs=[(0, 0)]*(2*int(backed.sum())))
     fins('louvre', outside, around, ovals, np.arange(5.0, 52, 3), **LOUVRE, colour=SLAT)
     if LOD == 0:
@@ -1060,7 +1113,8 @@ def market_pavilion(rng):
         block('service door', (at[0, 0]+out[0, 0]*.2, at[0, 1]+out[0, 1]*.2, 5.25), (4.6, .5, 8), FRAME, (.44, .42, .38), turn=turn)
     # The courtyard face: shop arches below, long windows above, deep piers between them.
     front = inner[::-1]
-    court = ring_surface(front, front, 0, 60, reach)
+    face = slice(m-1-k, k-1, -1)  # The inner ring between the ends, from u = cap_u down to -cap_u.
+    court = ring_surface(inner[face], inner[face], 0, 60, math.radians(cap_u), facing=in_n[face])
     width = 11
     arches = []
     windows = []
@@ -1071,27 +1125,47 @@ def market_pavilion(rng):
             windows.append([(u-16, 30), (u-16, top-5), (u-12, top-2.4), (u+12, top-2.4), (u+16, top-5), (u+16, 30)])
     if LOD == 2:
         arches, windows = [pill(-104, 104, 3, 22)], [pill(-84, 84, 31, 42)]
-    wrapped_skin('courtyard face', court, lambda a: edge_z(np.degrees(a)), arches+windows, reach=reach, depth=6)
+    plain = np.linspace(-cap_u, cap_u, int(density)+1)
+    wrapped_skin('courtyard face', court, lambda a: court_z(np.degrees(a)), arches+windows, reach=math.radians(cap_u), depth=6,
+                 columns=np.radians(np.unique(np.r_[plain, .15-cap_u, cap_u-.15])))
     glass = offset(front, -6.4)
     every = range(m)
-    glazing('shops', glass, 1.3, 26, [i for i in every if abs(us[i]) < 106], rng, bay=4, warm=.85, lit=True)
+    glazing('shops', glass, 1.3, 26, [i for i in every if abs(us[i]) < 113], rng, bay=4, warm=.85, lit=True)  # Its end behind the last pier.
     glazing('upper floor', glass, 29, np.maximum(edge_z(us)-3, 29.5), [i for i in every if abs(us[i]) < 98], rng, bay=4.6, warm=.6, lit=True)
     if LOD == 0:
         door_pair(float(glass[m//2, 0]), float(glass[m//2, 1])-.1, 1.4)
-    # The balcony on the courtyard face.
+    # The balcony on the courtyard face; its ends curve back into the wall.
     gallery = [i for i in every if abs(us[i]) < 104]
-    rim = offset(front, 6)
+    reach_out = 7.5*ease((104-np.abs(us))/12)-1.5  # Its edge's nose ends inside the wall.
+    rim = offset(front, reach_out)
     slab_edge('gallery edge', rim, 26.6, gallery, rise=1.8, nose=.7, under=4)
     walk = offset(front, -6)
     loft('gallery deck', [(rim[gallery], 28.3), (walk[gallery], 28.3)], PAVE, DECK_TINT, closed=False, stone_uv=False, uvs=[(float(q[0])/30, float(q[1])/30) for ring in (rim[gallery], walk[gallery]) for q in ring])
-    rail('gallery rail', offset(rim, -.6), 28.4, gallery)
-    plant_band('gallery plants', offset(rim, -1.8), 28.4, [i for i in gallery if abs(us[i]) < 100], rng, spacing=4, size=(4.5, 8), hang=.45, deep=.5, rim=2.9)
+    rail('gallery rail', offset(front, reach_out-.6), 28.4, gallery)
+    plant_band('gallery plants', offset(front, reach_out-1.8), 28.4, [i for i in gallery if abs(us[i]) < 95], rng, spacing=4, size=(4.5, 8), hang=.45, deep=.5, rim=2.9)
     # The roof: a stone ribbon inside and out, planted between them; three oval lights on stone pads.
+    # Chords across the arm, outer edge first. A rounded rim rises from both walls' tops; over the courtyard face it grows into the overhanging eave.
     mix = lambda t: inner+(outer-inner)*t
     flat = roof_z(us)
     dip = edge_z(us)
-    rows = [(outer, flat-.5), (offset(outer, -.5), flat+.5), (mix(.96), flat+.9), (mix(.91), flat+.2), (mix(.25), flat+.2), (mix(.12), dip+(flat-dip)*.35+.8), (mix(.03), dip+.9), (inner, dip+.6), (offset(inner, -5), dip+.2), (offset(inner, -5.4), dip-1.2), (offset(inner, -1), dip-1.6)]
-    loft('roof', rows if LOD == 0 else [rows[k] for k in (0, 3, 4, 7, 9, 10)], closed=False, smooth=40)
+    p, e = kerb(us), eave(us)
+    rim_top = flat+.9*p
+    outer_top = outside(around, rim_top-bend)[0][:, :2]  # The outer wall leans out below 40: its top, where the rim starts.
+    inner_top = inner.copy()
+    inner_top[capped] = outside(np.radians(np.sign(us[capped])*(250-np.abs(us[capped]))), (flat-bend)[capped])[0][:, :2]
+    up = np.radians({0: (0, 22.5, 45, 67.5, 90), 1: (0, 45, 90), 2: (0, 90)}[LOD])
+    down = np.radians({0: (-45, -90), 1: (-90,), 2: (-90,)}[LOD])
+    rows = [(outer_top-out_n*bend*(1-math.cos(t)), rim_top-bend+bend*math.sin(t)) for t in up]
+    if LOD == 0:
+        rows.append((outer_top-out_n*(bend+.4), flat+.75*p))
+    rows.append((outer_top-out_n*(bend+1), flat+.2*p))
+    blend = lambda eaved, plain: plain+(eaved-plain)*(e[:, None] if np.ndim(plain) == 2 else e)
+    inside = [(mix(.25), flat+.2, bend+1), (mix(.12), dip+(flat-dip)*.35+.8, bend+.7), (mix(.03), dip+.9, bend+.4), (inner, dip+.6, bend+.15)]
+    rows += [(blend(at, inner_top-in_n*d), blend(z, flat)) for at, z, d in (inside if LOD == 0 else inside[::3])]
+    out, radius, top = 5*e, bend*(1-e)+.8*e, flat*(1-e)+(dip+.2)*e
+    rows += [(inner_top+in_n*(out-radius*(1-math.cos(t)))[:, None], top-radius+radius*math.sin(t)) for t in np.r_[up[::-1], down]]
+    rows.append((inner_top-in_n*.3, top-2*radius-.2))  # Back under the eave into the wall.
+    loft('roof', rows, closed=False, smooth=40, weld=True)
     lawn = np.abs(us) < 99
     a, b = mix(.9)[lawn], mix(.2)[lawn]
     loft('roof planting', [(a, flat[lawn]+.55), (b, flat[lawn]+.55)], TURF, TURF_TINT, closed=False, stone_uv=False, uvs=[(float(q[0])/LAWN_REPEAT, float(q[1])/LAWN_REPEAT) for ring in (a, b) for q in ring])
@@ -1106,13 +1180,14 @@ def market_pavilion(rng):
         cap('light pad top', offset(ring, -1.4), 53.2+lift)
         skylight('roof light', x, y, 53.3+lift, rx, ry, rise=2.8, turn=turn)
         pads.append((x, y, max(rx, ry)+8))
-    clear = lambda ring: [i for i in every if roof_z(us[i]) > 50 and all(math.hypot(ring[i, 0]-x, ring[i, 1]-y) > r for x, y, r in pads)]
+    clear = lambda ring: [i for i in every if foot(us[i]) > 11/12 and all(math.hypot(ring[i, 0]-x, ring[i, 1]-y) > r for x, y, r in pads)]
     for t, spacing in ((.8, 2.8), (.58, 3), (.36, 3)):
         ring = mix(t)
         plant_band('roof plants', ring, flat+.5, clear(ring), rng, spacing=spacing, size=(6, 10.5), flowers=.08, deep=3)
-    for t, i in ((.5, m//5), (.5, m*4//5), (.62, m//2+6), (.4, m//2-16), (.6, m*3//10), (.6, m*7//10)):
+    count = len(span)  # Trees stand at fixed angles, clear of the roof lights.
+    for t, i in ((.5, count//5), (.5, count*4//5), (.62, count//2+6), (.4, count//2-16), (.6, count*3//10), (.6, count*7//10)):
         ring = mix(t)
-        tree(ring[i, 0], ring[i, 1], flat[i]+.5, rng.uniform(10, 13), rng.uniform(10, 13), rng)
+        tree(np.interp(span[i], us, ring[:, 0]), np.interp(span[i], us, ring[:, 1]), roof_z(span[i])+.5, rng.uniform(10, 13), rng.uniform(10, 13), rng)
     # The courtyard: a round bed with a tree, two curved benches, and beds at the feet.
     cx, cy = tp([(372, 810)])[0]
     round_bed('court bed', cx, cy, 1.4, 22, rng, 27, 22)
@@ -1120,7 +1195,7 @@ def market_pavilion(rng):
     round_bench(cx, cy, 1.4, 31, -65, -5)
     if LOD == 0:
         rocks([(cx+rng.uniform(-14, 14), cy+rng.uniform(-14, 14)) for _ in range(6)], 3.8, rng)
-    base = offset(outer, 6)
+    base = outer+out_n*6
     plant_band('ground plants', base, 1.4, [i for i in every if abs(us[i]) > 84 or abs(us[i]) < 40], rng, spacing=3.6, size=(5, 9), deep=1.6)
     flush_cards()
     return outer, inner, us
