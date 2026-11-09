@@ -103,13 +103,41 @@ def library_resource(image, textures):
     return None
 
 
+def kit_pieces(path):
+    """A building kit's modelled pieces (GeneratedKit), known by the file's name."""
+    return Path(path).name.endswith('-pieces.glb')
+
+
+def kit_material(doc, material, path, textures):
+    """The library material a kit piece draws as, the one its albedo image belongs to (without .tres), or None."""
+    texture = material.get('pbrMetallicRoughness', {}).get('baseColorTexture')
+    uri = doc['images'][doc['textures'][texture['index']]['source']].get('uri') if texture else None
+    resource = library_resource(image_path(path, uri), textures) if uri else None
+    return resource.removesuffix('.tres') if resource else None
+
+
 def check_kit_materials(doc, path, textures):
     """A building kit draws its pieces as the library materials their albedo images belong to."""
     for material in doc.get('materials', []):
-        texture = material.get('pbrMetallicRoughness', {}).get('baseColorTexture')
-        uri = doc['images'][doc['textures'][texture['index']]['source']].get('uri') if texture else None
-        if not uri or not library_resource(image_path(path, uri), textures):
+        if not kit_material(doc, material, path, textures):
             raise ValueError(f"A building kit's pieces use library materials only, not {material.get('name')}")
+
+
+def name_kit_materials(doc, path, textures):
+    """The game reads a piece's library material from its material's name, up to a '#' finish (GeneratedMesh#boardName)."""
+    for material in doc.get('materials', []):
+        board = kit_material(doc, material, path, textures)
+        if board and material.get('name', '').split('#')[0] != board:
+            material['name'] = board
+    # Blender's copies of one material become one; finishes of one library material that still differ are numbered.
+    merge_identical_materials(doc)
+    names = set()
+    for material in doc.get('materials', []):
+        name, count = material.get('name'), 1
+        while name and material['name'] in names:
+            count += 1
+            material['name'] = f'{name}#{count}'
+        names.add(material.get('name'))
 
 
 def check_part_names(doc):
@@ -166,7 +194,7 @@ def validate(doc, path, models_root):
             if needs_normal and primitive.get('material') is None:
                 raise ValueError('Assign a named material to every rendered mesh face before exporting')
     check_part_names(doc)
-    if Path(path).name.endswith('-pieces.glb'):
+    if kit_pieces(path):
         check_kit_materials(doc, path, models_root.resolve() / 'board/textures')
     names = set()
     for material in doc.get('materials', []):

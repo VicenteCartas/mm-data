@@ -79,6 +79,8 @@ with tempfile.TemporaryDirectory(prefix='.mm-game-test-', dir=MODELS / 'building
     # A kit's pieces: Edit Mode makes one copy per object, and the flags reach them all.
     addon.open_glb(bpy.context, pieces)
     objects = meshes()
+    for obj in objects:
+        obj.active_material.mm_building_paint = True  # whether the shipped kit is tinted or not
     assign_faces(objects)
     material = objects[0].active_material
     assert material.get('_mm_tres') == STEEL + '.tres' and material.mm_building_paint, 'Faces keep their tint'
@@ -111,11 +113,20 @@ with tempfile.TemporaryDirectory(prefix='.mm-game-test-', dir=MODELS / 'building
     material.pop('mmEmission')
     print('MATERIAL_FLAGS_OK')
 
-    # A kit's material is the one its albedo belongs to, whatever it is called; without one, Save refuses.
+    # A kit's material is the one its albedo belongs to, whatever it is called, and saves under that name
+    # (GeneratedMesh#boardName): Blender's copies as one, a differing finish numbered; without one, Save refuses.
     material.name = 'renamed in blender'
     addon.save_glb(bpy.context, pieces)
     doc, _ = addon.glb.read_glb(pieces)
-    assert 'renamed in blender' in [item['name'] for item in doc['materials']], doc['materials']
+    assert [item['name'] for item in doc['materials']] == [STEEL], doc['materials']
+    other = objects[1].active_material
+    assert other != material
+    surface = other.get('_mm_surface', '{}')
+    other['_mm_surface'] = json.dumps(dict(json.loads(surface), doubleSided=True))
+    addon.save_glb(bpy.context, pieces)
+    doc, _ = addon.glb.read_glb(pieces)
+    assert sorted(item['name'] for item in doc['materials']) == [STEEL, STEEL + '#2'], doc['materials']
+    other['_mm_surface'] = surface
     plain = bpy.data.materials.new('no image')
     obj = objects[0]
     used = obj.material_slots[obj.active_material_index]

@@ -376,6 +376,8 @@ def save_glb(context, filepath, *, selected=False, snapshot=False):
                 doc['extras'] = extras
             glb.strip_editor_properties(doc)
             glb.merge_identical_materials(doc)
+            if glb.kit_pieces(path):
+                glb.name_kit_materials(doc, path, (root / 'data/models').resolve() / 'board/textures')
             glb.ensure_lod_groups(doc, path.stem)
             glb.validate(doc, path, root / 'data/models')
             glb.write_glb(staged, doc, binary)
