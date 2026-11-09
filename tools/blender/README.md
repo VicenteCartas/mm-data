@@ -93,9 +93,11 @@ the game discovers the adjacent `.tres` and supplies the remaining maps and fact
 Blender shader edits to these managed materials are preview-only and are replaced by
 Reload. Change their finish in Material Maker.
 
-A building kit draws its `<kit>-pieces.glb` materials as the library materials their albedo images belong to, whatever
-they are called, so saving such a file refuses any other material. The kit's JSON sets the roof, floor and
-sidewalk materials.
+A building kit draws its `<kit>-pieces.glb` materials as the library materials their albedo images belong to, so saving
+such a file refuses any other material. Save names each material after its library material, whatever it is called in
+Blender, because the game reads it from the name; finishes of one library material that differ are saved as
+`<material>#2`, `#3`. Pieces need no UVs where the kit's JSON lays their materials on the walls' axes (`planar`). The
+kit's JSON sets the roof, floor and sidewalk materials.
 
 Previews include albedo/tint, roughness/metallic map channels and factors, OpenGL normal
 maps and strength, emission, approximate SSS, vertex colour, and alpha cutouts. AO is
