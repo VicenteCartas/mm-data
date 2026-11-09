@@ -185,8 +185,9 @@ fittings are turned: their Angled corner pieces are built once and turned by the
   modelled.
 
 Aviation obstruction lights (`"aol": true` in a bays variant's `roof`, at a habitat variant's top level): every
-modular kit's roofs but Utopia's; walls carry their own red lamps. A light stands on each outer (convex) corner of a
-roof, never an inside one: 2.5 in from both walls, at a rounded corner's middle, and on an Angled roof's outer elbow
+modular kit's roofs but Utopia's; walls carry their own red lamps. They stand on hexes 7 levels high or more (about 40
+m; `ConnectedKit.LIT_LEVELS`), each roof twin's lights a node of their own (`<twin>-aol`) beside it. A light stands on
+each outer (convex) corner of a roof, never an inside one: 2.5 in from both walls, at a rounded corner's middle, and on an Angled roof's outer elbow
 where a bend's corner pieces meet. Such roofs close above lower neighbours as twins (`-closed-N`), so those corners are
 lit too. The light is `fittings/aviation-light.glb` (`python tools/buildings/aviation_light.py`, standard library
 only): a 20-triangle steel stick from 5 under the deck, buried where an edge curves or bevels away, to a square red
