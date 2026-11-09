@@ -314,6 +314,7 @@ def export_model(items, label, level=0, helper=False, exact=False):
             weather = mesh.color_attributes.get('weather') if not helper else None
             indices = parts.setdefault(key, [])
             for tri in mesh.loop_triangles:
+                corners = []
                 for li in tri.loops:
                     vi = mesh.loops[li].vertex_index
                     co = matrix @ mesh.vertices[vi].co
@@ -327,7 +328,11 @@ def export_model(items, label, level=0, helper=False, exact=False):
                         axis = max(range(3), key=lambda i: abs(normal[i]))
                         uv = (co.y/18, co.z/18) if axis == 0 else (co.x/18, co.z/18) if axis == 1 else (co.x/18, co.y/18)
                     vertex = (*co, *normal, *colour, 1, *uv)
-                    vk = tuple(round(v, 5) for v in vertex)
+                    corners.append((tuple(round(v, 5) for v in vertex), vertex))
+                # A sliver whose corners merge into fewer than three vertices draws nothing (the add-on refuses one).
+                if len({vk for vk, _ in corners}) < 3:
+                    continue
+                for vk, vertex in corners:
                     if vk not in dedup:
                         dedup[vk] = len(vertices)//12
                         vertices.extend(vertex)
