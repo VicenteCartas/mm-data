@@ -771,7 +771,8 @@ def frontier_joint(rng, kind):
     if f:
         add('foot recess', PAINT, DARK, [(0, C, 0), (C, C, 0), (C, C, f), (0, C, f)], [(0, 1, 2, 3)])
     marker(-.7, H-C-BAND/2, -BAND_OUT-.02)
-    back_wall(C, 0, H, C, DARK)
+    # Its back closes it up to the top bevel's edge, under the roof's seam bevel; the fill closes the rest.
+    add('back', CAST, DARK, [(C, C, 0), (0, C, 0), (0, C, H), (C, C, H-C)], [(0, 1, 2, 3)])
     if kind == 'base':
         cuboid('skid foot', -2.8, C-.8, -.3, C+.6, 0, C*.8, PAINT, DARK, omit='b')
         marker(-1.2, C*.4, -.32)
@@ -779,10 +780,11 @@ def frontier_joint(rng, kind):
 
 def frontier_joint_fill(rng):
     """What a storey's joint (frontier_joint) gains at its top where another storey stands on it: its corner filled up to
-    the groove's bottom at the joint line, the crossing its bottom has."""
+    the groove's bottom at the joint line, the crossing its bottom has, and its back up to the top."""
     H, C, m = LEVEL, CHAMFER, CHAMFER/2
     bevel([(m, m, H-m), (C, C, H), (0, C, H)], (0, -1, 1), lambda v: v[1])
     bevel([(m, m, H-m), (C, C, H-C), (C, C, H)], (1, -1, 0), lambda v: v[1])
+    add('back', CAST, DARK, [(C, C, H-C), (0, C, H), (C, C, H)], [(0, 1, 2)])
 
 
 def mirrored(builder, length):
