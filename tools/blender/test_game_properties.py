@@ -136,6 +136,13 @@ with tempfile.TemporaryDirectory(prefix='.mm-game-test-', dir=MODELS / 'building
         raise AssertionError('A kit piece without a library image saved')
     except ValueError as error:
         assert 'library materials only' in str(error)
+    # Named after a library material, it becomes that one on Save, its meshes still shared.
+    DEBUG = 'structures/buildings/debug-panels'
+    plain.name = DEBUG
+    addon.save_glb(bpy.context, temp / 'plain-pieces.glb')
+    doc, _ = addon.glb.read_glb(temp / 'plain-pieces.glb')
+    assert plain.get('_mm_tres') == DEBUG + '.tres' and DEBUG in [item['name'] for item in doc['materials']], doc['materials']
+    assert len(doc['meshes']) == len(addon.glb.read_glb(pieces)[0]['meshes'])
     used.material = kept
     print('KIT_MATERIALS_OK')
 

@@ -78,6 +78,17 @@ def export_name(target):
     return target.get('_mm_original_name', target.name) if target.name == target.get('_mm_import_name') else target.name
 
 
+def link_kit_material(context, material, obj):
+    """A kit's material without an image, named after a library material (GeneratedMesh#boardName), becomes that one."""
+    nodes = material.node_tree.nodes if material.node_tree else ()
+    if material.get('_mm_tres') or any(n.type == 'TEX_IMAGE' and n.image for n in nodes):
+        return
+    root = textures_root(context)
+    resource = (root / (re.sub(r'\.\d{3}$', '', export_name(material)).split('#')[0] + '.tres')).resolve()
+    if resource.is_relative_to(root.resolve()) and resource.is_file():
+        build_preview(material, resource, root.resolve(), vertex_colors=obj.data.color_attributes.active_color is not None)
+
+
 def preview_lod(state, context):
     for obj in context.scene.objects:
         ancestor, level = obj, None
@@ -342,6 +353,8 @@ def save_glb(context, filepath, *, selected=False, snapshot=False):
                 raise ValueError(f'{obj.name}: use one UV/color layer and no shape keys')
             for slot in obj.material_slots:
                 mat = slot.material
+                if mat and glb.kit_pieces(path):
+                    link_kit_material(context, mat, obj)
                 if mat and mat.get('_mm_tres'):
                     read_material(textures_root(context) / mat['_mm_tres'], textures_root(context))
                     if any(n.type == 'TEX_IMAGE' and n.image and n.image.is_dirty for n in mat.node_tree.nodes):
