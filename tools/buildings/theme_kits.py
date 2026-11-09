@@ -991,7 +991,7 @@ def civic_variant(name, floors):
     p = CIVIC_PLANAR
     return {
         'name': name, 'style': 'bays', 'pieces': 'civic-pieces.glb', 'lone': LONE, 'bandEnd': 1.75,
-        'roof': {'material': CAST, 'repeat': 12.0, 'inset': 0.0, 'heights': [0.3]},
+        'roof': {'material': CAST, 'repeat': 12.0, 'inset': 0.0, 'heights': [0.3], 'aol': True},
         'floors': {'material': CAST, 'repeat': 12.0, 'inset': 3.0, 'heights': [0.05]},
         'sidewalk': {'material': CAST, 'repeat': 12.0, 'width': 5.0, 'kerb': 0.4},
         'modules': {
@@ -1029,7 +1029,8 @@ def frontier_variant(name, bases, floors, door, roof=PLATING, layouts=FRONTIER_F
     return {
         'name': name, 'style': 'bays', 'pieces': 'frontier-pieces.glb', 'lone': LONE, 'bandEnd': 1.75,
         'cornerRadius': 5.0, 'cornerSegments': 1,
-        'roof': {'material': roof, 'repeat': 30.0, 'inset': CHAMFER, 'heights': [0.3], 'underlay': roof == DUSTY_GLASS},
+        'roof': {'material': roof, 'repeat': 30.0, 'inset': CHAMFER, 'heights': [0.3], 'underlay': roof == DUSTY_GLASS,
+                 'aol': True},
         'floors': {'material': DECK, 'repeat': 12.0, 'inset': 3.0, 'heights': [0.05]},
         'modules': {
             'base0': run(['base-'+bay for bay in bases[0]], p, door, 'corner-base', 'base-joint'),

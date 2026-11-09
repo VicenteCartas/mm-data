@@ -148,7 +148,8 @@ front view), the wall line at y 0; z up from its storey's floor.
 
 A `bays` variant: its `pieces`; the Angled `lone` outline (counter-clockwise from its front) and `bandEnd`; the `roof`
 and `floors` slabs (a board material on the board's axes, its `repeat`, an `inset` off the walls, `heights` per level
-of detail; a glass roof's `underlay`, the biodome's planted bed just under it); the ground storey's `sidewalk` (`width`, `kerb`; none without); and its `modules` by role, one run per level
+of detail; a glass roof's `underlay`, the biodome's planted bed just under it; a roof's `aol`, aviation obstruction
+lights, below); the ground storey's `sidewalk` (`width`, `kerb`; none without); and its `modules` by role, one run per level
 of detail (the last for any further). A run lays whole `bay`s of its `bays` pieces (several: chosen by the wall's place)
 stretched to fit between a `margin` at each end, a ground storey's `door` piece in a hub face's first bay and next to
 the middle of a whole hex's front; with no margin a bay more goes on past an end where the wall goes on. Whole `ends`
@@ -182,6 +183,14 @@ fittings are turned: their Angled corner pieces are built once and turned by the
   and is stretched to the storey (18 high); a pier top likewise on the roof, stretched to the parapet (or eave) and .6
   over it; a footing likewise on the ground, as modelled; a hatch or vent on the roof surface at its centre, as
   modelled.
+
+Aviation obstruction lights (`"aol": true` in a bays variant's `roof`, at a habitat variant's top level): every
+modular kit's roofs but Utopia's; walls carry their own red lamps. A light stands on each outer (convex) corner of a
+roof, never an inside one: 2.5 in from both walls, at a rounded corner's middle, and on an Angled roof's outer elbow
+where a bend's corner pieces meet. Such roofs close above lower neighbours as twins (`-closed-N`), so those corners are
+lit too. The light is `fittings/aviation-light.glb` (`python tools/buildings/aviation_light.py`, standard library
+only): a 20-triangle steel stick from 5 under the deck, buried where an edge curves or bevels away, to a square red
+lamp 6 over it, whose emission blinks (material extras `mmEmission: blink`, 1.5 s, half on).
 
 Isolated generated kits use a compact square for Square and an inset hex for Angled, with facade details and curbs
 contained inside the hex. Optional editor padding shrinks isolated buildings horizontally; connected pieces retain
